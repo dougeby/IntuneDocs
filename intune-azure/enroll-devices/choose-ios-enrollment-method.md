@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Choose how to enroll iOS devices in Intune | Intune Azure preview | Microsoft Docs
+title: Choose how to enroll iOS devices in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -22,7 +22,7 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

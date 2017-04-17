@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune? | Intune Azure preview | Microsoft Docs
+title: What are device profiles in Microsoft Intune?titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid:
 ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Configure devices** workload to manage settings and features on all of the devices you manage. You'll mostly use this workload to create device profiles, which let you manage and control a whole range of different features and functionality on the devices you manage.
+Use the Microsoft Intune **Device configuration** workload to manage settings and features on all of the devices you manage. You'll mostly use this workload to create device profiles, which let you manage and control a whole range of different features and functionality on the devices you manage.
 
 When you open this workload, you'll see the following options:
 
@@ -44,8 +44,14 @@ The workflow for creating device profiles is similar for all profiles. Read [How
 
 You can manage the following capabilities on your devices:
 
+## Device features
+
+Device features let you control features on iOS and macOS devices like AirPrint, notifications, and shared device configurations.
+For more information, see [How to configure device feature settings](how-to-configure-device-features.md)
+Supports: iOS and macOS.
+
 ## Device restrictions
-Device restrictions let you control a wide range of settings and features you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
+Device restrictions let you control a wide range of settings on devices you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
 For more information, see [How to configure device restriction settings](how-to-configure-device-restrictions.md)
 Supports: Android, iOS, macOS, Windows 10 and Windows 10 Team.
 
@@ -63,6 +69,10 @@ Supports: Android, iOS, macOS and Windows 8.1 (import only).
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use VPN profiles to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 For more information, see [How to configure VPN settings](how-to-configure-vpn-settings.md).
 Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
+
+## Education
+Lets you configure options for the Windows Take a Test app. When you configure these options, no other apps can run on the device until the test is complete.
+For more information, see [How to configure education settings](how-to-configure-education-settings.md)
 
 ## Certificates
 This profile type lets you configure trusted, SCEP, and PKCS certificates that can be assigned to devices and used to authenticate Wi-Fi, VPN, and email profiles.

@@ -6,7 +6,7 @@ description: Before you start deploying apps with Intune, take some time to fami
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -37,10 +37,10 @@ Before you start deploying apps with Microsoft Intune, take some time to familia
 
 |App type|Details|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). You can find a list of common command-line options in [Command-Line Switches for the Microsoft Windows Installer Tool](https://support.microsoft.com/en-us/kb/227091).<br><br>Any additional files and folders that the app’s setup program requires must be available from the location that you specify for the app setup files.<br><br>In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require Intune to install any command-line arguments. Check your app documentation.<br><br>If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). You can find a list of common command-line options in [Command-Line Switches for the Microsoft Windows Installer Tool](https://support.microsoft.com/kb/227091).<br><br>Any additional files and folders that the app’s setup program requires must be available from the location that you specify for the app setup files.<br><br>In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require Intune to install any command-line arguments. Check your app documentation.<br><br>If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).<br><br>This app type applies only to PCs that run the Intune software client.|
 |**App Package for Android (&#42;.apk)**|To deploy Android apps, you must have a valid .apk package.|
 |**App Package for iOS (&#42;.ipa)**|To deploy iOS apps, you must have a valid .ipa package.<br><br>The .ipa package must be signed by Apple, and the expiration date in the provisioning profile must be valid. Intune can distribute enterprise certificate iOS applications.<br><br>Not all Apple developer certificate apps are supported.<br><br>Your company must be registered for the iOS Developer Enterprise Program.<br><br>Make sure that your organization’s firewall allows access to the iOS provisioning and certification websites.<br><br>You don't need to deploy a manifest  file (.plist) with the app.|
-|**Windows Phone app package (&#42;.xap, .appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**Windows Phone app package (&#42;.xap, .appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows app package (.appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer through MDM (&#42;.msi)**|You use this app to create and deploy Windows Installer-based apps to enrolled PCs that run Windows 10. These PCs are managed through mobile device management (MDM).<br /><br />You can upload only a single file with the extension .msi.<br><br>The file's product code and product version are used for app detection.<br><br>The default restart behavior of the app will be used. Intune does not control this.<br><br>Per-user MSI packages will be installed for a single user.<br><br>Per-machine MSI packages will be installed for all users on the device.<br><br>Dual-mode MSI packages are currently installed only for all users on the device.<br><br>App updates are supported when the MSI product code of each version is the same.<br>
 All software installer app types are uploaded to your cloud storage space.
@@ -52,7 +52,7 @@ Use an external link when you have a:
 
 Apps based on external links are not stored in your Intune cloud storage space.
 ### **Managed iOS app from the app store**
-You can use managed iOS apps to manage and deploy iOS apps that are free of charge from the app store. You can also use managed iOS apps to associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
+You can use managed iOS apps to manage and deploy iOS apps that are free of charge from the app store. You can also use managed iOS apps to associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
 
 > [!TIP]
 > Options for mobile devices are not available until you [set the MDM authority](prerequisites-for-enrollment.md) to Intune.

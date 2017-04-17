@@ -1,11 +1,14 @@
 # Introduction
 ## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
+## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Get started
 <!---(introduction/get-started.md) --->
 ### [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [What's new](introduction/whats-new.md)
 ## [Known issues](introduction/known-issues-in-the-intune-preview.md)
-<!--- ## [Get support](introduction/get-support.md)
+## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
+<!---
+
 ## [Related resources](introduction/related-resources.md)
 
 ## [Get started](plan-and-design/get-started.md) --->
@@ -28,18 +31,18 @@
 ### [Set the MDM authority](enroll-devices/set-mdm-authority.md)
 ## Plan and design
 ### [Get an Apple MDM push certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Get an Apple DEP token](enroll-devices/get-apple-dep-token.md)
 ### [Choose how to enroll iOS devices](enroll-devices/choose-ios-enrollment-method.md)
 ## How to
+### [Assign licenses to users](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Enroll Android devices](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Enroll iOS devices
-#### [Enroll iOS devices using Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Enroll iOS devices using direct enrollment](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - direct enrollment](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Add Apple Configurator serial numbers](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Enroll iOS devices using the device enrollment program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Enroll devices using device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
-### [Enroll Windows devices](enroll-devices/enroll-window-devices.md)
+### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
@@ -72,7 +75,6 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## How to manage apps
 ### [Add apps](manage-apps/add-apps.md)
-#### [Android line-of-business apps](manage-apps/android-lob-app.md)
 #### [Android store apps](manage-apps/android-store-app.md)
 #### [Android LOB apps](manage-apps/android-lob-app.md)
 #### [iOS store apps](manage-apps/ios-store-app.md)
@@ -181,6 +183,8 @@
 ### [Create Android for Work compliance policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Create iOS compliance policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Create Windows compliance policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)
+### [Monitor device compliance](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

@@ -4,10 +4,10 @@
 title: Troubleshoot device enrollment| Microsoft Docs
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -39,9 +39,9 @@ Before you begin troubleshooting, check to make sure that you've configured Intu
 
 -	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-	[Set up Android device management](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
+-	[Set up Android for Work device management](/intune/deploy-use/set-up-android-for-work)
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
@@ -269,7 +269,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 
-When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification. 
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification.
 
   ![Trying to sync notification](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -277,15 +277,27 @@ If the sync is successful, you see a **Sync successful** inline notification in 
 
   ![Sync successful notification](./media/ios_cp_app_sync_successful_notification.png)
 
-If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app. 
+If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app.
 
   ![Unable to sync notification](./media/ios_cp_app_unable_to_sync_notification.png)
 
-To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device. 
+To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device.
 
   ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
 
 Once enrolled, the devices return to a healthy state and regain access to company resources.
+
+### Verify WS-Trust 1.3 is enabled
+**Issue** Device Enrollment Program (DEP) iOS devices cannot be enrolled
+
+Enrolling Device Enrollment Program devices with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user tokens. Active Directory enables this endpoint by default. You get a list of enabled endpoints by using the Get-AdfsEndpoint PowerShell cmdlet and looking for the trust/13/UsernameMixed endpoint. For example:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+For more information, see [Get-AdfsEndpoint documentation](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+For more information, see [Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). If you need additional assistance in determining if WS-Trust 1.3 Username/Mixed is enabled in your identity federation provider, please contact Microsoft Support if you use ADFS, or your 3rd party identity vendor.
+
 
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
@@ -366,7 +378,7 @@ This may be because the computer had been previously enrolled, or has the cloned
 
     > [!IMPORTANT]
     > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
-    > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756)
+    > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/kb/322756)
 
 ## General enrollment Error codes
 
@@ -386,7 +398,7 @@ This may be because the computer had been previously enrolled, or has the cloned
 |0x80043008, 0x80CF3008|Failed to start the Microsoft Online Management Updates service.|Contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |0x80043009, 0x80CF3009|The client computer is already enrolled into the service.|You must retire the client computer before you can re-enroll it in the service.|
 |0x8004300B, 0x80CF300B|The client software installation package cannot run because the version of Windows that is running on the client is not supported.|Intune does not support the version of Windows that is running on the client computer.|
-|0xAB2|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038).|
+|0xAB2|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|The connection to the service endpoint terminated.|Trial or paid account is suspended. Create a new trial or paid account and re-enroll.|
 
 

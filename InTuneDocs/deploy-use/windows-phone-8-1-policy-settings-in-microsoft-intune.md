@@ -21,7 +21,7 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -140,7 +140,7 @@ In the **Allowed and blocked apps** list, specify a list of apps that you want t
 #### How to specify URLs to app stores
 To specify an app URL in the allowed and blocked apps list, use the following format:
 
-From the [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) page, search for the app that you want to use.
+From the [Windows Phone Apps+Games](http://www.windowsphone.com/store/overview) page, search for the app that you want to use.
 
 Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the allowed or blocked apps list.
 

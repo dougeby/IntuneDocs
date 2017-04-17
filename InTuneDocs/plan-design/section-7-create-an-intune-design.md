@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -30,11 +30,11 @@ ms.suite: ems
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service which resides in the cloud.
+The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service.
 
-Although there’s minimal on-premises infrastructure requirements, it’s still recommended to work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
+Although there’s minimal on-premises infrastructure requirements, work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document all these changes, and the rationale behind it as they occur. We’ll be discussing the following areas:
+Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document these changes, and the rationale behind it as they occur. We’ll be discussing the following areas:
 
 -   The current environment
 
@@ -157,7 +157,7 @@ User and device groups determines the target of a deployment. This could include
 
 -   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Learn [how to create user and device groups](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Learn [how to create user and device groups](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### Public Key Infrastructure (PKI)
 
@@ -330,7 +330,7 @@ Below is an example of documenting the design of a VPN profile.
 
 Email profiles allow an email client to be automatically setup with connection information and setup email configuration. Intune supports email profiles on some devices.
 
--   Learn more about [email profiles](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) and what platforms are supported.
+-   Learn more about [email profiles](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) and what platforms are supported.
 
 Below is an example of documenting the design of email profiles:
 

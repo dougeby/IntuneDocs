@@ -22,7 +22,7 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -80,6 +80,6 @@ Check out these links for additional information that may be helpful during the 
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/)
 
--   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
+-   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
 
 -   [Enrollment Guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)

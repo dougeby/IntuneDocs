@@ -1,1 +1,0 @@
-redirect_url: https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune

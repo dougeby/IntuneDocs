@@ -1,11 +1,11 @@
 ---
-title: Configure certificate infrastructure for SCEP | Intune Azure preview | Microsoft Docs
+title: Configure certificate infrastructure for SCEPtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure before you create and deploy Intune SCEP certificate profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 # Configure certificate infrastructure for SCEP in Microsoft Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -110,7 +110,7 @@ In this task you will:
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
         > [!IMPORTANT]
-        > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
+        > For iOS and macOS certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
 
     -   On the **Security** tab, add the NDES service account, and give it **Enroll** permissions to the template. Intune admins who will create SCEP profiles require **Read** rights so that they can browse to the template when creating SCEP profiles.
 
@@ -120,7 +120,7 @@ In this task you will:
 3.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
-    > The iOS and Mac OS X platforms always uses the value set in the template regardless of other configurations you make.
+    > iOS and macOS always use the value set in the template regardless of other configurations you make.
 
 Here are screenshots of an example template configuration.
 

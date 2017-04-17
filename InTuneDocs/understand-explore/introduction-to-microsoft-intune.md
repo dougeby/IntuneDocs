@@ -7,7 +7,7 @@ keywords: what is Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -36,7 +36,7 @@ Intune is a cloud-based enterprise mobility management (EMM) service that helps 
 * Protect your company information by helping to control the way your workforce accesses and shares it.
 * Ensure devices and apps are compliant with company security requirements.
 
-Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Rights Management (Azure RMS) for data protection. It is the *management arm* of Microsoft Enterprise Mobility + Security (EMS), while Office 365 is the *productivity arm* of Microsoft’s mobility solution.  
+Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Information Protection for data protection. It is the *management arm* of Microsoft Enterprise Mobility + Security (EMS), while Office 365 is the *productivity arm* of Microsoft’s mobility solution.  
 
 Together, Office 365 and EMS enable your workforce to be productive on all of their devices while keeping your organization's information protected. Office 365 with EMS is a complete, integrated suite for enterprise mobility inclusive of productivity, identity, access control, management, and data protection. It gives you an effective way to deploy and operate a mobility solution in your organization.
 
@@ -76,13 +76,13 @@ That, in combination with operating system features for protecting data (for exa
 
 When you use Intune with the other services in EMS, you can provide your organization mobile app security over and above what is provided by the mobile operating system and the mobile apps themselves through app configuration. An app that is managed with EMS has access to a broader set of mobile app and data protections that includes:
 
-* [Single sign-on](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*	[Multi-factor authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [App conditional access (allow access if the mobile app contains corporate data)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Isolating corporate data from personal data inside the same app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Corporate data wipe from a mobile app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Rights management support](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*	[Multi-factor authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [App conditional access (allow access if the mobile app contains corporate data)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [Isolating corporate data from personal data inside the same app](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Corporate data wipe from a mobile app](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Rights management support](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)
 

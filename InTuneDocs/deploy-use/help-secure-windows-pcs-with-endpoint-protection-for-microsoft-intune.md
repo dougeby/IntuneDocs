@@ -4,9 +4,10 @@
 title: Endpoint Protection for Windows PCs| Microsoft Docs
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -175,11 +176,12 @@ You monitor the status of malware on your computers by using the **Protection** 
 ### How to view Recent Detection Paths for malware on computers
 Intune can display the paths of up to 10 of the most recently detected instances of malware on a device. The **Recent Detection Path** is disabled by default. To enable this view:
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** > **All Devices** > **Malware**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** > **All Devices** > **All Computers**.
+2. Right-click the computer whose recent detection paths you want to see and select **Properties**.
+3. Select **Malware** from the tabs across the top.
 
-2.  Right-click a column header. A list of available columns appears.
-
-3.  Select the **Recent Detection Paths** check box in the list. The **Recent Detection Paths** column appears and displays up to 10 of the most recently monitored malware instances on the device.
+   ![Select the Malware tab and then click the Recent Detection Paths checkbox](../media/malware-path-column.png)
+4. Right-click the column header. A list of available columns appears. Select the **Recent Detection Paths** check box in the list. The **Recent Detection Paths** column appears and displays up to 10 of the most recently monitored malware instances on the device.
 
 ## Run a malware scan or update malware definitions on a computer
 Intune can run either a full or quick malware scan by using Endpoint Protection or Windows Defender on a remotely managed PC that has the Intune client installed.
@@ -187,9 +189,6 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), go to **Groups** > **Overview** > **All Devices** > **All Computers**, and then select the computer that you want to target.
 
 2. Choose the **Remote Tasks** drop-down list, and then select the task to run on the remote computer.
-
-
-
 
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).

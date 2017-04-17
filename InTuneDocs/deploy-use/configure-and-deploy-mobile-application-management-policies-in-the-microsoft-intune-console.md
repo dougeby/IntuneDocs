@@ -6,7 +6,7 @@ description: Mobile application management policies in Microsoft Intune let you 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -46,7 +46,7 @@ Unlike other Intune policies, you do not deploy a mobile application management 
 
 To apply restrictions to an app, the app must incorporate the Microsoft Intune App SDK. There are three methods of obtaining this type of app:
 
--   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+-   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 -   **Use a wrapped app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -143,7 +143,7 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Require device compliance with corporate policy for access**|This setting allows the app to be used only when the device is not jailbroken or rooted.|
     |**Recheck the access requirements after (minutes)**|In the **Timeout** field, specify the time period before the access requirements for the app are rechecked after the app is opened.|
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
-    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
+    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is FIPS 140-2 compliant for Samsung KNOX devices only.|
     |**Block screen capture** (Android devices only)|This setting specifies that the screen capture capabilities of the device are blocked when someone is using this app.|
 
 4. When you are finished, choose **Save Policy**.

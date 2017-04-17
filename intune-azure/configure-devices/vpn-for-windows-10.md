@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 10 devices | Intune Azure preview | Microsoft Docs
+title: Intune VPN settings for Windows 10 devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

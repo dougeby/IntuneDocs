@@ -21,7 +21,7 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -45,7 +45,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run iOS 8.0 and later
 
-The Intune managed browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+The Intune managed browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Create a managed browser policy
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enroll devices - device enrollment manager | Intune Azure preview | Microsoft Docs
+title: Enroll devices - device enrollment managertitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -22,7 +22,7 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Enroll devices using device enrollment manager

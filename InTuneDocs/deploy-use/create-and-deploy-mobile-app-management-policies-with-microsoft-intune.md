@@ -20,7 +20,7 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -96,8 +96,6 @@ Follow the steps below to create app protection policies:
 
     ![Screenshot of the Add a policy blade showing that the Apps and Settings have been configured](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see the following section, "Deploy a policy to users."
 
 > [!IMPORTANT]
@@ -108,6 +106,46 @@ When you finish creating a policy as described in the previous procedure, it is 
 > -   You associate both of these policies to the same app.
 > -   The policy you created from the Azure console takes precedence, and copy is allowed.
 > -   However, status and reports in the Intune console will incorrectly indicate that copy is blocked.
+
+## Line of Business (LOB) apps (optional)
+
+Beginning with Intune 1703 version, you have the option to generally add LOB apps into Intune when creating a new app protection policy. This gives you the option to define app protection policies for LOB apps using the MAM SDK without requiring full app deployment permissions.
+
+> [!TIP] 
+> You can also add LOB apps into Intune when going through the [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) work-flow.
+
+> [!IMPORTANT]
+> If users only have specific permissions for deploying MAM apps and not full app deployment permissions, which would allow them to deploy any apps in Intune, they won’t be able to go through the Intune SDK work-flow, but they can still add their LOB apps through the MAM app protection policy creation work-flow.
+
+### To add LOB apps (iOS and Android)
+
+1.  On the Add a policy blade, choose Configure **Apps** to open the Apps blade.
+
+	![MAM Add a policy blade](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Click **More apps**, then enter the **Bundle ID** (for iOS), **package ID** (for Android), then click Select to add your LOB apps.
+
+	![MAM More apps blade](../media/AppManagement/mam-lob-apps-2.png)
+
+### To add LOB apps (Windows)
+
+> [!IMPORTANT] 
+> You need to select Windows 10 from the platform drop-down list when creating a new app protection policy.
+
+1.  On the Add a policy blade, choose **Allowed apps** or **Exempt apps** to open the Allowed or Exempt apps blade.
+
+	> [!NOTE]
+	> 
+	- **Allowed apps**: These are the apps that need to adhere to this policy.
+	- **Exempt apps**: These apps are exempt from this policy and can access corporate data without restrictions.
+<br></br>
+2. On Allowed or Exempt apps blade, click **Add apps**. You can add recommended Microsoft apps, add store or desktop apps.
+
+    a.  **Recommended apps:** a pre-populated list of (mostly Office) apps that we let admins easily import into policy.
+
+    b.  **Store apps:** Admin can add any app from the Windows store to policy.
+
+    c.  **Windows desktop apps:** Admin can add any traditional Windows desktop apps to the policy (e.g. exe, dll, etc.)
 
 ## Deploy a policy to users
 

@@ -1,11 +1,11 @@
 ---
-title: Set up a telecom expense management service | Intune Azure preview | Microsoft Docs
+title: Set up a telecom expense management servicetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Configure the Saaswedo telecom expense management service to integrate with Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Set up a telecom expense management service in Intune Azure preview
@@ -55,7 +55,7 @@ Intune currently integrates with the following telecom expense management provid
 
 ## Deploy the Intune and Datalert integrated solution
 
-Before you start, make sure that you already have an Intune and a Datalert telecom expensive management service subscription.
+Before you start, make sure that you already have an Intune and a Datalert telecom expense management service subscription.
 
 ### Step 1: Connect the Datalert service to Microsoft Intune
 
@@ -85,7 +85,7 @@ After you complete Step 1 above, your connection should be automatically enabled
 
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 
 4. On the **Device Configuration** blade, choose **Setup** > **Telecom Expense Management**. 
 
@@ -141,7 +141,9 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 ### Step 4: Add corporate paid phone lines to the Datalert console 
 
-You now have configured the Intune and Datalert services to communicate with each other. You now need to add your corporate paid phone lines to the Datalert console and define thresholds and actions for any cellular or roaming usage violations. To set these items, follow the steps in the setup wizard, under the **Settings** tab, of your Datalert console.
+You now have configured the Intune and Datalert services to communicate with each other. You now need to add your corporate paid phone lines to the Datalert console and define thresholds and actions for any cellular or roaming usage violations. 
+
+To set these items, go to the [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), and follow the steps in the setup wizard under the **Settings** tab.
 
   ![Screenshot of the Add a policy blade](../media/tem-add-phone-lines-to-datalert-console.png)
 

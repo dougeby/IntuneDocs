@@ -22,7 +22,7 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -71,7 +71,7 @@ Different administrative tasks require that you use one of the following adminis
 |**Company Portal website**     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge and mobile browsers are not supported for the admin console because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). The Intune console is moving from the Silverlight experience over a period of time; eventually, all of Intune's mobile device and application management features will be [made available in the new Microsoft Azure portal](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> Microsoft Edge and mobile browsers are not supported for the admin console because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx). The Intune console is moving from the Silverlight experience over a period of time; eventually, all of Intune's mobile device and application management features will be [made available in the new Microsoft Azure portal](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use Intune and a sign-in status of **Allowed**.

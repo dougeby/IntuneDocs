@@ -4,10 +4,10 @@
 title: Apple DEP management for iOS devices | Microsoft Docs
 description: Deploy an enrollment profile that enrolls iOS devices bought through the iOS Device Enrollment Program (DEP) “over the air” to manage Apple devices.
 keywords:
-author: staciebarker
-ms.author: stabar
-manager: arob98
-ms.date: 02/15/2017
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -33,7 +33,8 @@ ms.suite: ems
 Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device.
 
 >[!NOTE]
->This enrollment method can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
+>DEP enrollment can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
+>Also, if users enroll iOS devices (i.e. using the Company Portal app) and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
 
 ## Prerequisites for enrolling iOS devices by using Apple DEP management
 
@@ -49,7 +50,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Get an Encryption Key
 
-1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Download Encryption Key**. 
+1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Download Encryption Key**.
 
 2. Save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
@@ -81,7 +82,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 2. Provide **General** details including **Name** and **Description**, and specify whether devices assigned to the profile have user affinity or belong to a group:
 
-   - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps). Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices.
+   - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps). Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on DEP devices. Additionally, users whose passwords have expired won't be prompted to reset their password during DEP enrollment and must reset the password from a different device.
 
    > [!NOTE]
    > DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
@@ -158,11 +159,14 @@ This step synchronizes devices with the Apple DEP Service, and makes the devices
 
 ### Distribute devices to users
 
-Your corporate-owned devices can now be distributed to users. When an iOS device is turned on it will be enrolled for management by Intune.
+Your corporate-owned devices can now be distributed to users. When an iOS device is turned on it will be enrolled for management by Intune. The user device limit applies to DEP-managed devices.
+
+>[!NOTE]
+>If a user attempts to enroll a DEP device but has exceeded her device limit, enrollment will fail silently without warning the user.
 
 ## Changes to Intune group assignments
 
-Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Starting in April 2017, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

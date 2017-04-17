@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -32,9 +32,9 @@ ms.suite: ems
 
 Having an Intune support plan can be beneficial in more effectively identifying and resolving Intune related issues and improving the end user’s overall Intune experience. Here are some questions to consider when developing your Intune support plan:
 
--   Which team(s) will be responsible for providing Intune support?
+-   Which teams will be responsible for providing Intune support?
 
--   If your support organization has multiple tiers (e.g. tier 1-3), what are the Intune support responsibilities for each tier?
+-   If your support organization has multiple tiers (for example, tier 1-3), what are the Intune support responsibilities for each tier?
 
 -   What process will be used to provide Intune support?
 

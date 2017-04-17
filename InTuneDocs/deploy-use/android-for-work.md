@@ -6,7 +6,7 @@ description: Intune manages Android for Work to provide additional management ca
 keywords:
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 #ms.reviewer: chrisbal
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -47,9 +47,9 @@ Intune supplies a range of built-in general settings that you can configure on A
 
 ## App publishing and distribution
 
-The Google Play for Work service is an integral part of Android for Work app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work service. To manage and deploy apps in the Play Store, you log in as an Intune administrator to the Play for Work website and approve apps for your Intune tenant. These apps sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured in the Android app publishing console to restrict access to your organization.
+The Google Play for Work service is an integral part of Android for Work app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work service. To manage and deploy apps in the Play Store, you log in to the Google Play website with your company's administrator credentials for Google management. You can approve apps for Android for Work deployment to have them appear in devices' work profiles. These apps then sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured in the Android app publishing console to restrict access to your organization.
 
-Apps can be installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play Store on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
+Apps can be installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play for Work store on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## App configuration
 
@@ -57,15 +57,15 @@ Android for Work provides infrastructure for deploying app configuration values 
 
 ## Email configuration
 
-Android for Work doesn’t provide a default email app or native email profile object like that provided by iOS. Instead, email configurations can be set by applying app configuration settings to email apps that support them. Gmail and Nine Work are two Exchange ActiveSync (EAS) client apps in the Play Store that support configuration with Android for Work app configuration.
+Android for Work doesn’t provide a default email app or native email profile object like that which is provided by iOS. Instead, email configurations can be set by applying app configuration settings to email apps that support them. Gmail and Nine Work are two Exchange ActiveSync (EAS) client apps in the Play Store that support configuration with Android for Work app configuration.
 
-Intune provides configuration templates for Gmail and Nine Work apps. Other email apps that supports app configuration profiles can be configured with mobile app configuration policies.
+Intune provides configuration templates for Gmail and Nine Work apps when managed as work apps. Other email apps that supports app configuration profiles can be configured with mobile app configuration policies.
 
 If you are using Exchange ActiveSync conditional access for an Android for Work devices, you must use either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. Learn more about [Email profiles for company email](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## Mobile app management policies
+## App protection policies
 
-Restriction policies applied to apps enabled for mobile application management (MAM) are fully supported in the work profile and in the personal profile. You can publish line-of-business apps in the Android app publishing console at https://play.google.com/apps/publish. This console includes an option to make apps private to your organization. Learn more about [Android for Work compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md). For general information about MAM policies, see [mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+App protection policies applied are fully supported in the work profile and in the personal profile. You can publish line-of-business apps in the Android app publishing console at https://play.google.com/apps/publish. This console includes an option to make apps private to your organization. Learn more about [Android for Work compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md). For general information about app protectino policies, see [app policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## VPN profiles
 
@@ -90,5 +90,6 @@ Learn more about [Certificate profiles](secure-resource-access-with-certificate-
 Wi-Fi profiles managed by Android for Work are removed when the device is retired from Intune and the work profile is deleted. Learn more about [Wi-Fi profiles](wi-fi-connections-in-microsoft-intune.md).
 
 ## Next steps
-[Enabling Android for Work enrollment](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
-[Deploying apps for Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)
+[Enabling Android for Work enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
+
+[Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)

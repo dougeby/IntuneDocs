@@ -6,7 +6,7 @@ description: intune network bandwidth usage
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -231,6 +231,7 @@ The following table lists the ports and services that the Intune client accesses
 |Samsung KNOX Standard device communication through the firewall|To enable Samsung KNOX Standard devices to contact KNOX Standard servers through the firewall, follow the instructions on the Samsung KNOX Standard FAQ.||
 |Conditional access communication|443|204.79.197.200|
 |Documentation, Help, and support:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
+
 
 >[!div class="step-by-step"]
 

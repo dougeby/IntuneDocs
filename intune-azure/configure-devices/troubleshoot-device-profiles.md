@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshooting device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Troubleshooting device profiles in Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -37,14 +37,14 @@ When a policy or an app is deployed, Intune immediately begins attempting to not
 
 If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
 
-- iOS and Mac OS X: Every 6 hours.
+- iOS and macOS: Every 6 hours.
 - Android: Every 8 hours.
 - Windows Phone: Every 8 hours.
 - Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
 
 If the device has just enrolled, the check-in frequency will be more frequent, as follows:
 
-- iOS and Mac OS X: Every 15 minutes for 6 hours, and then every 6 hours.
+- iOS and macOS: Every 15 minutes for 6 hours, and then every 6 hours.
 - Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
 - Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
 - Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.

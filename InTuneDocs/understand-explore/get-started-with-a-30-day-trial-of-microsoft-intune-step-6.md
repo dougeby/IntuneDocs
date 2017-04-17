@@ -22,7 +22,7 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 #ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -42,7 +42,7 @@ To learn more about alerts, notifications, and reports, see [Monitoring and repo
 ## Intune capabilities
 Intune has a wide variety of capabilities beyond those shown in these short setup steps. A few examples of these capabilities include:
 
--   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) and [Manage app access to Office 365 services](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) and [Manage app access to Office 365 services](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Management of corporate-owned iOS devices.** For details, see [Enroll corporate-owned iOS devices in Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 

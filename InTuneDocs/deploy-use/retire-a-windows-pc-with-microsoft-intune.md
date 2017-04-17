@@ -4,7 +4,7 @@
 title: Retire a Windows PC | Microsoft Docs
 description: How to retire an Intune-managed Windows PC.
 keywords:
-author: staciebarkerms.author: stabar
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

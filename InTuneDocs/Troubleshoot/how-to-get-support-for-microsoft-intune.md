@@ -5,9 +5,10 @@
 title: How to get support | Microsoft Docs
 description: Support is available both online and by telephone for paid and trial subscriptions.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,17 +23,20 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# How admins get support for Microsoft Intune
+# How to get support for Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
+
+>[!IMPORTANT]
+> For technical support with products that work with Intune, and are not made by Microsoft, for example SaaSwedo, Cisco, or Lookout, contact the supplier of that product first to ensure you have configured it correctly before you open a case with Intune support.
 
 ## Find help without opening a support ticket
 
@@ -44,17 +48,22 @@ Ask a question or start a discussion with Microsoft technical experts! We provid
 
 ![Microsoft Intune TechNet Forum](./media/technet-forum-for-support.png)
 
+### Get started with the forum
+
+1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.<br>
+![Intune forum select control](./media/forum-select-intune.png)
+2. You'll now see Microsoft Intune in your list of selected forums.<br>
+![Intune selected in forums control](./media/forum-selected-intune.png)
+
 ### Microsoft Intune UserVoice product feedback site
 
-Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice. 
+Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice.
 
 ![Microsoft Intune UserVoice feedback page](./media/intune-uservoice-feedback-page.png)
 
-## Create an online support ticket
+## Create a support ticket
 
-If you are unable to find answers by using the self-help resources, you can create an online support ticket.
-
-**Please limit each support ticket to a single issue** to help us serve you better. Here's why:
+If you are unable to find answers by using the self-help resources, you can create an online support ticket. **Please limit each support ticket to a single issue** to help us serve you better. Here's why:
 
 - Support engineers who provide assistance are likely to specialize in specific areas, and it's easier to identify the right subject matter experts to help with your issue.
 - Engineering teams can prioritize their work in product areas where the most incidents are being generated.
@@ -62,12 +71,15 @@ If you are unable to find answers by using the self-help resources, you can crea
 
 Please review the [definition of a support incident](#definition-of-a-support-incident) before creating a support ticket.
 
-**To create an online support ticket**:
+### Steps to create an online support ticket
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
+
+	If you are a Premier Support customer, you should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/premier/contacts) instead.
+
 	>[!NOTE]
 	>
-	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
+	>Premier Support customers should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/premier/contacts).
 
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Support** to open a ticket.
@@ -88,9 +100,9 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 
 3.  Follow the instructions to open your request.
 
-### Create a support ticket with alternate methods
+### Steps to create a support ticket with alternate methods
 
-Follow this procedure if your support page looks like this:
+Follow this procedure if your support page in the Office 365 admin center looks like this:
 
 ![Alternate Intune support](../media/alternate-support-ui.png)
 
@@ -106,30 +118,30 @@ Follow this procedure if your support page looks like this:
 See [Contact assisted phone support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
 
 ## Track your support requests
-1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
+1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune administrator credentials.
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Service requests**. Then you can review your requests.
 
-Our initial responses to support requests depend on the severity of the issue. For the most severe issues, our first response for Professional customers is within two hours. For Premier Support customers, the response varies according to your support agreement. These are cases where:
+Our initial responses to support requests depend on the severity of the issue. For the most severe issues, our first response for Professional customers is within two hours. For Premier Support customers, the response varies according to your support agreement. A case is **most severe** when:
 
 - One or more services aren’t accessible or are unusable.
 - Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability.
 - Multiple users or services are affected.
 
-For moderately severe issues, our first response for Professional customers is within four hours. For Premier Support customers, the response varies according to your support agreement.  These are cases where:
+For moderately severe issues, our first response for Professional customers is within four hours. For Premier Support customers, the response varies according to your support agreement. A case is **moderately severe** when:
 
 - The service is usable but is not functioning as well as usual.
 - The situation has moderate business impact and can be dealt with during business hours.
 - A single user, customer, or service is partially affected.
 
-For other issues, our first response for Professional customers  is within eight hours. For Premier Support customers, the response varies according to your support agreement.  These are cases where:
+For other issues, our first response for Professional customers is within eight hours. For Premier Support customers, the response varies according to your support agreement. A case is least severe when:
 
 - The situation has minimal business impact.
 - The issue is important but does not have an immediate, significant service or productivity impact for the customer.
 - A single user is experiencing partial disruption, but an acceptable workaround exists.
 
 > [!NOTE]
-> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material. It also offers the option of opening a support request online or over the phone.
+> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) and [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) documentation to find rich self-help material. It also offers the option of opening a support request online or over the phone.
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 

@@ -6,7 +6,7 @@ description: Learn how Intune helps you manage devices through their lifecycle�
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -45,7 +45,7 @@ Getting your devices enrolled is just the first step. To take advantage of all t
 
 ## Protect
 In the modern IT world, protecting devices from unauthorized access is one of the most important tasks that you'll perform. In addition to the items in the **Configure** step of the device lifecycle, Intune provides these capabilities that help protect devices you manage from unauthorized access or malicious attacks:
-- [**Multi-factor authentication**](protect-windows-devices-with-multi-factor-authentication.md). Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Windows, Windows Phone, and Windows Mobile devices offer multi-factor authentication that requires a second level of authentication, such as a phone call or text message, before users can gain access.
+- [**Multi-factor authentication**](protect-your-devices-with-microsoft-intune.md). Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multi-factor authentication that requires a second level of authentication, such as a phone call or text message, before users can gain access.
 - [**Microsoft Passport settings**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Microsoft Passport is an alternative sign-in method that lets users use a *gesture*—such as a fingerprint or Windows Hello—to sign in without needing a password.
 - [**Policies to protect Windows PCs (with the Intune client software)**](policies-to-protect-windows-pcs-in-microsoft-intune.md). When you manage Windows PCs by using the Intune client software, policies are available that let you control settings for Endpoint Protection, software updates, and Windows Firewall on PCs that you manage.
 

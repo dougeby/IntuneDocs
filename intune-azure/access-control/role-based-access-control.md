@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Role-based access control (RBAC) for Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Intune roles (RBAC) for Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Role-based access control (RBAC) for Microsoft Intune
+# Intune roles (RBAC) for Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -71,7 +71,7 @@ You hire a new IT admin who will be in charge of deploying and managing apps to 
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Access control**.
+3. On the **Intune** blade, choose **Intune roles**.
 ![Access control workload](./media/axxess-control.png)
 1. On the **Roles** blade of the **Access control** workload, choose **Add custom**.
 2. On the **Add Custom Role** blade, enter a name and description for the new role, and then click **Permissions**.

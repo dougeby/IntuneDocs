@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure certificates with Intune
+title: How to configure certificates with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to create and assign certificates that help you secure Wi-Fi, VPN, and other connections."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -83,18 +83,18 @@ You must create a trusted certificate profile before you can create a SCEP or PK
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the trusted certificate profile.
-5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for device restriction settings:
+5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for certificate settings:
 	- **Android**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
 	- **Windows 8.1 and later**
 	- **Windows 10 and later**
-6. From the **Profile** type drop-down list, choose **Trusted certificate**.
+6. From the **Profile type** type drop-down list, choose **Trusted certificate**.
 7. Browse to the certificate you saved in task 1, then click **OK**.
 8. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
 	- **Computer certificate store - Root**

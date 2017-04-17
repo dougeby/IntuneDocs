@@ -22,7 +22,7 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 ---
 
 # Categorize devices with device group mapping in Microsoft Intune
@@ -82,7 +82,7 @@ You'll use the device category name when you create Azure Active Directory secur
 
 In this step, you'll create dynamic groups in the Azure portal based on the device category and device category name.
 
-To continue, refer to the topic [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in the Azure Active Directory documentation.
+To continue, refer to the topic [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in the Azure Active Directory documentation.
 Use the information in this topic to create a device group with an advanced rule using the **deviceCategory** attribute.
 For example (**device.deviceCategory -eq** "<*the device category name you got from the Intune administration console*>")
 

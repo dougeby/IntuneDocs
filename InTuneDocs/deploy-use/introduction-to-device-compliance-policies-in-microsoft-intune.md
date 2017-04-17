@@ -22,7 +22,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -39,7 +39,7 @@ You can use compliance policies with conditional access policies to allow only d
 You can also use compliance policies independently of conditional access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you might want to report about how many devices are not encrypted, or which devices are jailbroken or rooted. But when you use compliance policies independently, no access restrictions to company resources are in place.
 
 You deploy compliance policies to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
-To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see [Manage settings and features on your devices](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
+To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see [Manage settings and features on your devices](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 The following table lists the device types that compliance policies support. The table also describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 

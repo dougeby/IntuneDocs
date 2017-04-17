@@ -2,11 +2,11 @@
 # required metadata
 
 title: Windows edition upgrade policy settings | Microsoft Docs
-description: Learn how to automatically upgrade Windows 10 devices to the latest version with Intune.
+description: Learn how to automatically upgrade Windows 10 devices to a different version with Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,10 +18,10 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -29,7 +29,7 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade devices that run one of the following Windows 10 versions to a newer edition:
+The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade devices that run one of the following Windows 10 versions to a different edition:
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile

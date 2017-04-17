@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment | Intune Azure preview | Microsoft Docs
+title: Troubleshoot device enrollmenttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to troubleshoot device enrollment."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -22,7 +22,7 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

@@ -21,7 +21,7 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -44,7 +44,7 @@ If yes, Microsoft Intune allows you to set MAM policies for Office 365 mobile ap
 ### Additional information:
 - [End user experience](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) using MAM enabled apps.
 - [Prepare LOB apps for MAM with Intune](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners" target="_blank"> List of Microsoft Intune application partners &rarr;</a> providing MAM-enabled apps.
+- <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> List of Microsoft Intune application partners &rarr;</a> providing MAM-enabled apps.
 
 ## What should I do next?
 [Migrate from a non-Microsoft MDM solution to Microsoft Intune](/intune/deploy-use/migrate-to-intune)

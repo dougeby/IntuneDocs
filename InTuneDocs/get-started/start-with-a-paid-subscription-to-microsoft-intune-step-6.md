@@ -21,7 +21,7 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -69,7 +69,7 @@ Now that the app is availabile in Intune, you can deploy it to managed devices:
 - Deploy volume-purchased apps:
 	- [iOS - Volume-purchase Program](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
 	- [Windows Store for Business](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-	- [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
+	- [Android for Work](https://docs.microsoft.com/Intune/deploy-use/android-for-work-apps)
 
 	Once you have configured apps for deployment you can [configure apps](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) and [monitor apps](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 

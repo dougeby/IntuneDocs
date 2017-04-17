@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows Phone 8.1 | Intune Azure preview | Microsoft Docs
+title: Intune device restriction settings for Windows Phone 8.1titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Windows Phone 8.1 devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

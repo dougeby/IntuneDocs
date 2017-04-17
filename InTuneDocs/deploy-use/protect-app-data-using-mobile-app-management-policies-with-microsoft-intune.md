@@ -20,7 +20,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -39,8 +39,8 @@ You can configure app protection policies for apps running on devices that are:
 
 -   **Enrolled in a third-party MDM solution:** The devices in this category are typically corporate-owned devices.
 
-  > [!NOTE]
-  > We don't recommend using app protection policies with third-party mobile application management or secure container solutions.
+  	> [!NOTE]
+  	> We don't recommend using app protection policies with third-party mobile application management or secure container solutions.
 
 -   **Not enrolled in any MDM solution:** The devices in this category are typically employee-owned devices that are not managed or enrolled in Intune or other MDM solutions.
 

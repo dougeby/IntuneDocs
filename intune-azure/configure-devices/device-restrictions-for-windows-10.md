@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10 | Intune Azure preview | Microsoft Docs
+title: Intune device restriction settings for Windows 10titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

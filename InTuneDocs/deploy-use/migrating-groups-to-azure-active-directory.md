@@ -22,7 +22,7 @@ ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 #ms.reviewer: damionw
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -58,9 +58,9 @@ Some existing capabilities of Intune groups are not available in Azure AD:
 ## How to get ready
 
 - Read the following Azure AD topics to learn about Azure AD security groups and how they work:
-	-  [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-	-  [Managing groups in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-	-  [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+	-  [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+	-  [Managing groups in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+	-  [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Consider removing any Intune groups you no longer use before you migrate.
 -  Make sure that any admins who need to create groups are added to the **Intune Service Administrator** Azure AD role. Note that the Azure AD Service Admin role does not have **Manage Group** permissions.
 -  If you use groups with the option **Exclude specific members**, consider whether you can redesign these groups to not need exclusions, or whether you can use advanced rules in your Azure AD query to achieve the same result.
@@ -97,10 +97,4 @@ Attributes are device properties that may be used in defining groups. This table
 ## What happens to policies and apps you've already deployed?
 
 Policies and apps continue to be deployed to groups, just like before. However, you'll now manage these groups from the Azure portal, instead of the classic Intune console.
-
-
-## How to get more information
-
-Contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).	
-	 
-
+ 

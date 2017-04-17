@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started on device compliance | Intune Azure preview | Microsoft Docs
+title: Get started on device compliancetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to understand the prerequisites you need to create compliance policies in Microsoft Intune"
 keywords:
 author: NathBarnms.author: nathbarnmanager: angrobe
@@ -20,7 +20,7 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -29,20 +29,20 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In this topic, you will learn more about what you need before you can start creating a device compliance policy and a quick glance on what you can see and do in the Azure portal. If you device compliance is new
-to you, you may want to read this topic to learn what device compliance is and how you might use it in your company.
+In this topic, you'll learn the following: 
+
+- What you need before you can start creating a device compliance policy.
+- A quick glance on what you can see and do in the Intune Azure preview portal. 
+
+If you're not familiar with device compliance, you may want to read [this topic](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) to learn what device compliance is, and how you might use it in your organization.
 
 ##  Pre-requisites
-
 
 -   A subscription to Intune
 
 -   A subscription to Azure Active Directory
 
-
-
 ##  Supported Platforms:
-
 
 -   Android
 
@@ -56,8 +56,7 @@ to you, you may want to read this topic to learn what device compliance is and h
 
 ##  Azure portal workflow
 
-
-Here is an overview of how you can create and manage device compliance in the Azure portal.
+Here is an overview of how you can create and manage device compliance in the Intune Azure preview portal.
 
 <!---### Overview
 

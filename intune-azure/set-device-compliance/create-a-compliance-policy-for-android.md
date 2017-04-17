@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for Android | Intune Azure preview | Microsoft Docs
+title: How to create a compliance policy for AndroidtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create a compliance policy for Android devices."
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
@@ -20,42 +20,21 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to create a device compliance policy for Android devices in Intune Azure preview
+# How to create a device compliance policy for Android devices in Intune Azure preview portal
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
+Device compliance policies are created for each platform form the Intune Azure preview portal. 
 
-The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
+- To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic.
+- To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
 
---------------------
-
-|**policy setting**| **Android 4.0 and later, Samsung Knox Standard 4.0 and later** |
-| --- | ----|
-| **PIN or password configuration** |  Quarantined |
-| **Device encryption** | Quarantined |
-| **Jailbroken or rooted device** | Quarantined (not a setting) |
-| **email profile** | Not applicable |
-| **Minimum OS version** | Quarantined |
-| **Maximum OS version** |   Quarantined |
-| **Windows health attestation** | Not applicable |
-
---------------------------
-
-
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
-
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+
-
-- The device is blocked if a conditional access policy applies to the user.
-- The company portal notifies the user about any compliance problems.
-
-## Create a compliance policy in the Azure portal
+## To create a device compliance policy
 
 1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies**, and choose **Create**.
 2. Type a name, description and choose the platform that you want this policy to apply to.
@@ -68,7 +47,7 @@ The table below describes how noncompliant settings are managed when a complianc
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## Assign user groups
+## To assign user groups
 
 To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policies** blade.
 
@@ -78,6 +57,26 @@ To assign a compliance policy to users, choose a policy that you have configured
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
 <!---##  Compliance policy settings--->
+
+## Device health and security settings
+
+- **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.
+- **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
+
+### Important
+
+Side-loading applications require that the **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
+
+- **Require that USB debugging is disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
+- **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
+- **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level. Devices that are not at least at this patch level will be noncompliant. The date must be specified in the format YYYY-MM-DD.
+- **Require device threat protection to be enabled** : Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
+  - **None (secured)**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+  - **Low** : The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
+
+For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## System security settings
 
@@ -102,30 +101,35 @@ You have applied the policy to users.  The devices used by the users who are tar
 
 - **Require encryption on mobile device** : Set this to **Yes** to require devices to be encrypted in order to connect to resources. Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.
 
-## Device health and security settings
-
-- **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.
-- **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
-
-### Important
-
-Side-loading applications require that the **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
-
-- **Require that USB debugging is disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
-- **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
-- **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level. Devices that are not at least at this patch level will be noncompliant. The date must be specified in the format YYYY-MM-DD.
-- **Require device threat protection to be enabled** : Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
-  - **None (secured)**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
-  - **Low** : The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-  - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
-
-For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## Device property settings
 
 - **Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device, after which they can access company resources.
 - **Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.
+
+## How non-compliant settings work with conditional access policies?
+
+The table below describes how non-compliant settings are managed when a compliance policy is used with a conditional access policy.
+
+--------------------
+
+|**Policy setting**| **Android 4.0 and later, Samsung Knox Standard 4.0 and later** |
+| --- | ----|
+| **PIN or password configuration** |  Quarantined |
+| **Device encryption** | Quarantined |
+| **Jailbroken or rooted device** | Quarantined (not a setting) |
+| **email profile** | Not applicable |
+| **Minimum OS version** | Quarantined |
+| **Maximum OS version** |   Quarantined |
+| **Windows health attestation** | Not applicable |
+
+--------------------------
+
+**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
+
+**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+
+
+- The device is blocked if a conditional access policy applies to the user.
+- The company portal notifies the user about any compliance problems.
 
 <!--- ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device compliance | Intune Azure preview | Microsoft Docs
+title: Device compliancetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to learn about device compliance in Microsoft Intune"
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
@@ -20,34 +20,32 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
 # What is device compliance in Intune Azure preview?
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-To help protect company data, you need to make sure that the devices used to access company apps and data comply with certain rules. These rules might include using a PIN to access devices and encrypting data
-stored on devices. A set of such rules is called a **compliance policy**.
+Device compliance policies in Intune define the rules and settings that a device must comply with in order to be considered compliant by Intune and EMS conditional access polices. You can also use device compliance policies to monitor and remediate compliance issues with devices. 
 
-##  How should I use a device compliance policy?
-You can use compliance policy with conditional access to allow only devices that comply with compliance policy rules to access email and other services.
+These rules include the following:
 
-You can also use compliance policy independently of conditional access.
-When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you
-can get a report on how many devices are not encrypted, or which devices are jailbroken or rooted. But when you use compliance policies independently, no access restrictions to company resources are in place.
+- Use a password to access devices
+- Encryption
+- Whether the device is jail-broken or rooted
+- Minimum OS version required
+- Maximum OS version allowed
+- Require the device to be at or under the Mobile Threat Defense level
 
-You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  Concepts
-Following are some terms and concepts that are useful to understanding how to use compliance policys.
-
-### Compliance requirements
+### Device compliance requirements
 Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -70,22 +68,37 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  Differences between the classic Intune admin console and Intune in the Azure portal
+##  How should I use a device compliance policy?
 
+### Using EMS conditional access
+You can use compliance policy with EMS conditional access to allow only devices that comply with one or more device compliance policy rules to access email and other corporate resources.
 
-If you have been using the classic Intune admin console previously, note the following differences to help transition to the new device compliance workflow in the Azure portal:
+### Not using EMS conditional access
+You can also use device compliance policies independently of EMS conditional access.
+When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you
+can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted. But when you use compliance policies independently, no access restrictions to company resources are in place.
 
+You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.
+
+##  Intune classic admin console vs. Intune Azure preview portal
+
+If you have been using the Intune classic admin console, note the following differences to help transition to the new device compliance policy work-flow in the Azure portal:
 
 -   In the Azure portal, the compliance policies are created separately for each supported platform. In the Intune Admin console, one compliance policy was common to all supported platforms.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
+##  Migration from Intune classic console to Intune Azure preview portal
+
+Device compliance policies created in the [Intune classic console](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com). However, they’ll still be targeted to users and manageable via the Intune classic console.
+
+If you want to take advantage of the new device compliance related features in the Intune Azure portal, you’ll need to create new device compliance policies in the Intune Azure portal itself. If you assign a new device compliance policy in the Intune Azure portal to a user who also has been assigned with a device compliance policy from the Intune classic portal, then the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic console.
+
 ##  Next steps
 
-[Get started on compliance policys](get-started-with-device-compliance.md)
+[Get started on device compliance policies](get-started-with-device-compliance.md)
 
 
 <!---### See also

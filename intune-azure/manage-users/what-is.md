@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is the Manage Users workload? | Intune Azure preview | Microsoft Docs
+title: What is the Manage Users workload?titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to see and manage users using Microsoft Intune and Azure."
 keywords:
 author: nathbarn
@@ -22,7 +22,7 @@ ms.assetid:
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

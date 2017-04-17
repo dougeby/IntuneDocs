@@ -6,7 +6,7 @@ description: Decide how to enroll mobile devices in Intune by answering a few si
 keywords:
 author: NathBarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom: EXPIERIMENT
+ms.custom: intune-classic EXPIERIMENT
 
 ---
 # Choose how to enroll mobile devices
@@ -47,5 +47,5 @@ Your answers to this series of questions will help determine the best enrollment
 
   - **Tag with IMEI number** - By importing the international mobile equipment identity (IMEI) numbers of company-owned devices you can tag them as company-owned devices in Intune. This is the only way to identify dedicated ("single-user") Windows and Android devices as corporate-owned. iOS devices that won't be enrolled with Apple's device enrollment program or Apple Configurator can also be tagged with an IMEI number. After predeclaring the device so it will be tagged as "corporate", you can distribute devices to users. Users can then enroll their devices as a dedicated devices by installing the Company Portal to access company resources such as email, apps, and data.
 
-  > [!div class="button"]
-  [< Back](choose-how-to-enroll-devices3.md)
+> [!div class="button"]
+[< Back](choose-how-to-enroll-devices3.md)
