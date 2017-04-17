@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is Microsoft Intune device management? 
+# What is Microsoft Intune device management?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,15 +53,13 @@ Now, choose one of the following:
 		- **Lost mode** - If a device has been stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device.
 		- **Restart** - Causes the device to restart. The device owner is not automatically notified of the restart, therefore might lose work.
 		![Device overview](http://i.imgur.com/4Rx4VXm.png)
-		
+
 	- **Hardware** - See more detailed information about the device including it's free storage space, model and manufacturer, and more.
 	![Managed device hardware inventory](./media/hardware-inventory.png)
 	- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
 	![Detected applications node](./media/detected-applications.png)
 - **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions.
 ![Monitor device actions](./media/monitor-device-actions.png)
-<<<<<<< HEAD
-=======
 - **Help and Support** - Displays links to troubleshooting and support documentation.
 
 ## Available device actions
@@ -100,7 +98,7 @@ To use lost mode, the device must be a corporate-owned iOS device, enrolled thro
 ### **Locate device**
 Use this remote action to display the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into lost mode.
 1.	On the properties blade for an iOS device, choose **More** > **Locate device**.
-2.	After the device has been located, it's location is displayed on the **Locate device** blade. 
+2.	After the device has been located, it's location is displayed on the **Locate device** blade.
 	![Locate device blade](./media/locate-device.png)
 
 >[!NOTE]
@@ -116,4 +114,3 @@ Causes the device to restart. The device owner is not automatically notified of 
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
 - When you configure lost mode, we recommend that the message you enter that is displayed on the lock screen includes information that the device location can be determined.
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"

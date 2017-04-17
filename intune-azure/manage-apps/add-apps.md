@@ -7,11 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-<<<<<<< HEAD
-ms.date: 02/15/2017
-=======
 ms.date: 04/12/2017
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,17 +37,10 @@ Intune lets you add and assign these app types:
 
 The following platforms are supported. Click one of the topics for more information on how to add each app type.
 
-<<<<<<< HEAD
-- [Android line-of-business apps](/intune-azure/manage-apps/android-lob-app)
-- [Android store apps](/intune-azure/manage-apps/android-store-app)
-- [iOS line-of-business apps](/intune-azure/manage-apps/ios-lob-app)
-- [iOS store apps](/intune-azure/manage-apps/ios-store-app)
-=======
 - [Android store apps](/intune-azure/manage-apps/android-store-app)
 - [Android LOB apps](/intune-azure/manage-apps/android-lob-app)
 - [iOS store apps](/intune-azure/manage-apps/ios-store-app)
 - [iOS LOB apps](/intune-azure/manage-apps/ios-lob-app)
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 - [Web apps (for all platforms)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Windows store apps](/intune-azure/manage-apps/windows-store-app)
@@ -75,16 +64,16 @@ Requirements for cloud storage space are as follows:
 -   All app installation files must be in the same folder.
 -   The maximum file size for any file that you upload is 2 GB.
 
-## How to create and edit categories for apps 
+## How to create and edit categories for apps
 
-App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**. 
-When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure: 
+App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
+When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure:
 
-1. Sign into the Azure portal. 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**. 
-3. On the **Intune** blade, choose **Manage apps**. 
-4. In the **Mobile apps** workload, choose **Setup** > **App categories**. 
-5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions: 
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
+5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
 	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
 	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category.
 

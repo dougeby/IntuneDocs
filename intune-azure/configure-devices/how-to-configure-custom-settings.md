@@ -7,11 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-<<<<<<< HEAD
-ms.date: 02/15/2017
-=======
 ms.date: 04/12/2017
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,4 +63,3 @@ Use the information in this topic to learn the basics about configuring profiles
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
-

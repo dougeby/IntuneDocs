@@ -7,11 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-<<<<<<< HEAD
-ms.date: 02/15/2017
-=======
 ms.date: 04/12/2017
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -247,7 +243,7 @@ After you specify each app name and bundle ID, choose **Add** to append it to th
 
 ### Bundle ID reference for built-in iOS apps
 
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. 
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
 |||
 |-|-|

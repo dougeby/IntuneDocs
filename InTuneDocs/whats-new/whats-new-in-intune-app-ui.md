@@ -7,11 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-<<<<<<< HEAD
-ms.date: 02/15/2017
-=======
 ms.date: 04/18/2017
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,9 +32,6 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
-<<<<<<< HEAD
-## What's coming
-=======
 ### April 2017
 
 #### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
@@ -83,7 +76,6 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
    </table>
 </body>
 </html>
->>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 
 ### February 2017
 
