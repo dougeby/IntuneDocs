@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,20 +31,28 @@ ms.custom: intune-azure
 
 Before you can manage and assign apps for your users, you must add them to Intune. Intune supports a wide range of different app types, and the options might be different for each type.
 
-Intune supports adding and assigning these app types:
+Intune lets you add and assign these app types:
 
 ![App types supported by Intune](./media/app-types.png)
 
 The following platforms are supported. Click one of the topics for more information on how to add each app type.
 
 - [Android store apps](/intune-azure/manage-apps/android-store-app)
+- [Android LOB apps](/intune-azure/manage-apps/android-lob-app)
 - [iOS store apps](/intune-azure/manage-apps/ios-store-app)
+- [iOS LOB apps](/intune-azure/manage-apps/ios-lob-app)
 - [Web apps (for all platforms)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Windows store apps](/intune-azure/manage-apps/windows-store-app)
 
-> [!NOTE]
-> When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
+Additionally, some Microsoft apps are added automatically by Intune when you set up your tenant. You'll find a list of these later in this topic.
+
+## Before you start
+
+Consider the following points before you begin to add and assign apps.
+
+- When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
+- Some apps or items you deploy might be dependent on built-in iOS apps. For example, if you deploy a book from the iOS store, then the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
 
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
@@ -70,4 +78,33 @@ When you add an app to Intune, you are given the option to select the category y
 	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category.
 
 
+## Apps added automatically by Intune
 
+The following apps, published by Microsoft, are built-into Intune, and ready for you to assign:
+
+|||
+|-|-|
+|Name|Platform|App type|
+|Azure Information Protection|Android|Managed Android store app|
+|Dynamics CRM for Phones|Android|Managed Android store app|
+|Dynamics CRM for Tablets|Android|Managed Android store app|
+|Excel|iOS|Managed iOS store app|
+|Excel|Android|Managed Android store app|
+|Managed Browser|Android|Managed Android store app|
+|Managed Browser|iOS|Managed iOS store app|
+|Microsoft Dynamics CRM on Phones|iOS|Managed iOS store app|
+|Microsoft Dynamics CRM on Tablets|iOS|Managed iOS store app|
+|Microsoft Power BI|iOS|Managed iOS store app|
+|Microsoft Power BI|Android|Managed Android store app|
+|Microsoft SharePoint|iOS|Managed iOS store app|
+|Microsoft SharePoint|Android|Managed Android store app|
+|Microsoft Teams|Android|Managed Android store app|
+|Microsoft Teams|iOS|Managed iOS store app|
+|OneDrive|iOS|Managed iOS store app|
+|OneDrive|Android|Managed Android store app|
+|OneNote|iOS|Managed iOS store app|
+|Outlook|Android|Managed Android store app|
+|Outlook|iOS|Managed iOS store app|
+|Outlook Groups|Android|Managed Android store app|
+|Outlook Groups|iOS|Managed iOS store app|
+|PowerPoint|iOS|Managed iOS store app|
