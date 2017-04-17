@@ -31,8 +31,6 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
-## What's coming in Intune App UI
-
 ### April 2017
 
 #### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
@@ -81,11 +79,20 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 #### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal.
 
-|Before|After|
-|---|---|
-|![An image of the previous version of the loading screen, where the status simply said "installing."](./media/cp_win10_install_status_before_1704.png)|![An image of the updated version of the loading screen, which now shows an install progress bar.](./media/cp_win10_install_status_after_1704.png)|
-
-## What's been announced for UI updates for end user apps
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
 
 ### February 2017
 
