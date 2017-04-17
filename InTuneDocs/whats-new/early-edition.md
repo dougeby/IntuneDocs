@@ -62,7 +62,7 @@ Users no longer have to sign in to the Outlook app if they are signed in to the 
 
 ### Sign-in progress indicator in Android Company Portal <!--953374-->
 
-An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md). 
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 
 ## Notices
@@ -206,7 +206,7 @@ You can now create an edition upgrade policy to upgrade devices to the following
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
-You can join large numbers of Windows 10 devices to Azure Active Directory and Intune with IT automation tools. To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins the device to your Azure AD tenant using Windows Configuration Designer. Apply that package to corporate-owned devices you'd like to bulk enroll and manage.  Once the package is applied, devices connect to Azure AD, enroll in Intune, and are ready for your Azure AD users to log on.
+You can join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
 ### New MAM settings for PIN and managed storage locations <!-- 58112, 736644 -->
 
