@@ -31,23 +31,23 @@ As an IT administrator, you can give users permission to view a help desk troubl
 
 Help desk users can view the Troubleshoot workspace in the Intune console but cannot perform other administrative tasks or view other workspaces.
 
-## Select help desk users
+## Add help desk users
 
 Help desk users are Intune users with permission to view the Troubleshoot workspace in the Intune console.
 
 1. As an Intune administrator, login to the [Azure portal](https:portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**.
-2. In the left navigation blade, select **Troubleshoot**.
-![Screenshot of the Intune Troubleshoot workspace with Select User link](media/help-desk-user.png)
+2. In the left navigation blade, select **Intune roles**.
 3. Click **Select user** and then select one or more users to give help desk permissions.
 4. Click **Select**. Selected users now have help desk permissions in Intune.
 
-## Access the troubleshoot console
+## Access the Troubleshoot console
 
 Help desk users can access the Troubleshoot workspace in two ways:
-- In the [Azure portal](https:portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**, and then in the left navigation blade, select **Troubleshoot**. Other workspaces are visible in the left navigation pane, but unavailable.
+- In the [Azure portal](https:portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**, and then in the left navigation blade, select **Troubleshoot**. Other workspaces are visible in the left navigation pane, but unavailable.![Screenshot of the Intune Troubleshoot workspace with Select User link](media/help-desk-user.png)
+
 - Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser. Only the Troubleshoot console is visible.
 
-## Use the troubleshoot console
+## Use the Troubleshoot console
 
 The helpdesk user can select a user to troubleshoot by clicking **Select User**. User information can be used to help understand the current state of users and their devices.
 
