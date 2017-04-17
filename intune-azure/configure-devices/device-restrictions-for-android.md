@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android
-titleSuffix: "Intune Azure preview"
+title: Intune device restriction settings for AndroidtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +45,6 @@ ms.custom: intune-azure
 |**Screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
 |**Voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
 |**YouTube**|Allows the use of the YouTube app on the device.|No|Yes|
-|**Shared devices**|Configure a managed Samsung KNOX Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials, and the device is centrally managed whether it’s in use or not.<br>When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.|No|Yes|
 
 ## Password
 
@@ -58,18 +56,11 @@ ms.custom: intune-azure
 |**Maximum minutes of inactivity until screen locks**|Specifies the number of minutes of inactivity before the device automatically locks.|Yes|Yes|
 |**Number of sign-in failures before wiping device**|Specifies the number of sign-in failures to allow before the device is wiped.|Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
-|**Required password type**|Specifies the password complexity level that's required and whether biometric devices can be used. Choose from:<br><br>    -     **Device default**<br>-     **Low security biometric**<br>    -     **At least numeric**<br>    -     **Numeric complex** (repeating, or consecutive numbers like '1111' or '1234' are not allowed)<sup>1</sup><br>    -     **At least alphabetic**<br>    -     **At least alphanumeric**<br>    -     **At least alphanumeric with symbols**|Yes|Yes|
+|**Required password type**|Specifies the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
 |**Prevent reuse of previous passwords**|Stops the end user from creating a password they have used before.|Yes|Yes|
 |**Fingerprint unlock**|Allows the use of a fingerprint to unlock supported devices.|No|Yes|
 |**Smart Lock and other trust agents**|Lets you control the Smart Lock feature on compatible Android devices (Samsung KNOX Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes (5.0 and later)|No|
 |**Encryption**|Requires that files on the device are encrypted.|Yes|Yes|
-
-<sup>1</sup>Before you assign this setting to devices, ensure that the Company Portal app has been updated to the latest version on the targeted devices.
-
-If you configure the **Numeric complex** setting, and then assign it to a device running a version of Android earlier than 5.0, the following behavior applies.
-- If the Company Portal app is running a version prior to 1704, no PIN policy will be applied to the device and an error will be displayed in the Intune portal.
-- If the Company Portal app has been updated to the 1704 version, a simple PIN only will apply. Versions of Android earlier than 5.0 do not support this setting. No error is displayed in the Intune portal.
-
 
 ## Google Play Store
 
