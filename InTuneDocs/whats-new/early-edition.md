@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
-The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal.
+The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal. You can see the new status messages for the Company Portal app for Windows 10 on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 ### Improved status messaging in the Company Portal app for iOS <!--744866-->
 
@@ -62,7 +62,7 @@ Users no longer have to sign in to the Outlook app if they are signed in to the 
 
 ### Sign-in progress indicator in Android Company Portal <!--953374-->
 
-An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md). 
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 
 ## Notices
@@ -189,7 +189,7 @@ We've added support for additional Windows device restriction settings like addi
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added supported for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps. 
+We've added supported for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
