@@ -79,7 +79,7 @@ Bulk enrollment for Window devices requires the following:
  - Place the provisioning package on a USB drive, insert the USB drive into the device you’d like to bulk enroll, and apply it during initial setup
  - Place the provisioning package on a network folder, and apply it insert on the device you’d like to bulk enroll after initial setup
 
- For step-by-step instruction on applying a provisioning package, see [Apply a provisioning package]( (https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
+ For step-by-step instruction on applying a provisioning package, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
 3. After you apply the package, the device will automatically restart in 1 minute.
  ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-add.png)
