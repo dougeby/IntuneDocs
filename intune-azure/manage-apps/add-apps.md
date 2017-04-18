@@ -64,16 +64,16 @@ Requirements for cloud storage space are as follows:
 -   All app installation files must be in the same folder.
 -   The maximum file size for any file that you upload is 2 GB.
 
-## How to create and edit categories for apps 
+## How to create and edit categories for apps
 
-App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**. 
-When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure: 
+App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
+When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure:
 
-1. Sign into the Azure portal. 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**. 
-3. On the **Intune** blade, choose **Manage apps**. 
-4. In the **Mobile apps** workload, choose **Setup** > **App categories**. 
-5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions: 
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
+5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
 	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
 	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category.
 

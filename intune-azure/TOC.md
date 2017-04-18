@@ -43,6 +43,7 @@
 ### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
 ### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
+### [Bulk enroll Windows devices](enroll-devices/bulk-enroll-windows.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
