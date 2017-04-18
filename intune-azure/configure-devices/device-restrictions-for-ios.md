@@ -228,6 +228,128 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**Shared photo stream** - Set to **No** to disable **iCloud Photo Sharing** on the device..
 - 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or macOS device (Handoff).
 
+## Autonomous single app mode (supervised only)
+
+Use these settings to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
+
+### Settings
+
+- **App name** - Enter the name of the app as it will appear in the apps list on this blade.
+- **App Bundle ID** - Enter the bundle ID of the app. For help, see **Bundle ID reference for built-in iOS apps** in this topic.
+
+After you specify each app name and bundle ID, choose **Add** to append it to the list.
+
+- **Import** - Import a comma-separated values (.csv) file containing a list of app names, and their associated bundle IDs.
+- **Export** - Export the app names, and associated bundle IDs you have configured to a comma-separated values (.csv) file.
+
+### Bundle ID reference for built-in iOS apps
+
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. 
+
+|||
+|-|-|
+|App name|BundleID|
+|App Store|com.apple.AppStore|
+|Calculator|com.apple.calculator|
+|Calendar|com.apple.mobilecal|
+|Camera|com.apple.camera|
+|Clock|com.apple.mobiletimer|
+|Compass|com.apple.compass|
+|Contacts|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Find Friends|com.apple.mobileme.fmf1|
+|Find iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Health|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Maps|com.apple.Maps|
+|Messages|com.apple.MobileSMS|
+|Music|com.apple.Music|
+|News|com.apple.news|
+|Notes|com.apple.mobilenotes|
+|Numbers|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Photos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Reminders|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Settings|com.apple.Preferences|
+|Stocks|com.apple.stocks|
+|Tips|com.apple.tips|
+|Videos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Weather|com.apple.weather|
+
+
+## Autonomous single app mode (supervised only)
+
+Use these settings to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
+
+### Settings
+
+- **App name** - Enter the name of the app as it will appear in the apps list on this blade.
+- **App Bundle ID** - Enter the bundle ID of the app. For help, see **Bundle ID reference for built-in iOS apps** in this topic.
+
+After you specify each app name and bundle ID, choose **Add** to append it to the list.
+
+- **Import** - Import a comma-separated values (.csv) file containing a list of app names, and their associated bundle IDs.
+- **Export** - Export the app names, and associated bundle IDs you have configured to a comma-separated values (.csv) file.
+
+### Bundle ID reference for built-in iOS apps
+
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+
+|||
+|-|-|
+|App name|BundleID|
+|App Store|com.apple.AppStore|
+|Calculator|com.apple.calculator|
+|Calendar|com.apple.mobilecal|
+|Camera|com.apple.camera|
+|Clock|com.apple.mobiletimer|
+|Compass|com.apple.compass|
+|Contacts|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Find Friends|com.apple.mobileme.fmf1|
+|Find iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Health|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Maps|com.apple.Maps|
+|Messages|com.apple.MobileSMS|
+|Music|com.apple.Music|
+|News|com.apple.news|
+|Notes|com.apple.mobilenotes|
+|Numbers|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Photos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Reminders|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Settings|com.apple.Preferences|
+|Stocks|com.apple.stocks|
+|Tips|com.apple.tips|
+|Videos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Weather|com.apple.weather|
+
+
 ## Kiosk
 - 	**Activation Lock** - Enable Activation Lock on supervised iOS devices.
 - 	**App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.

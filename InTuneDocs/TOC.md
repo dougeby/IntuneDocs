@@ -76,6 +76,7 @@
 ##### [DEP enrollment](deploy-use/ios-device-enrollment-program-in-microsoft-intune.md)
 #### [Enroll with device enrollment manager](deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+#### [Bulk enroll Windows devices](deploy-use/bulk-enroll-windows.md)
 ### [MDM with Exchange ActiveSync](deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange ActiveSync on-premises](deploy-use/intune-on-premises-exchange-connector.md)
 #### [Exchange ActiveSync online](deploy-use/intune-service-to-service-exchange-connector.md)
