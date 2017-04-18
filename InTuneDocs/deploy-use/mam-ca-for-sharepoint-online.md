@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure app access for SharePoint Online | Microsoft Intune
+title: Configure app access for SharePoint Online
 description:
 keywords:
 author: andredm7
