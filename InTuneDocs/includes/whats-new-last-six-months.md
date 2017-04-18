@@ -23,7 +23,7 @@ The Company Portal app for Android will be updating its user interface for a mor
 - Navigating Apps: **All Apps** view shows a tabbed view of **Featured**, **All**, and **Categories** for easier navigation.
 - Support: **My Devices** and **Contact IT** tabs are updated to improve readability.
 
-For more details about these changes, see [UI updates for Intune end user apps](whats-new-in-intune-app-ui.md).
+For more details about these changes, see [UI updates for Intune end user apps](/intune/whats-new/whats-new-in-intune-app-ui).
 
 #### Non-managed devices can access assigned apps <!--664691-->
 
