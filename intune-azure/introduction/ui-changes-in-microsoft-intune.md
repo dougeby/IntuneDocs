@@ -39,6 +39,8 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 |Groups by IMEI (all platforms)| Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | [Device enrollment > Corporate Device Identifiers](#by-imei-all-platforms)|
 | Corporate Device Enrollment profile| Policy > Corporate Device Enrollment | [Device enrollment > Apple Enrollment > Enrollment Program Profiles](#where-did-corporate-pre-enrolled-devices-go) |
 | Corporate Device Enrollment profile | Policy > Corporate Device Enrollment | [Device enrollment > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Admin > Mobile Device Management > Android for Work | Device enrollment > Android for Work Enrollment |
+| Terms and Conditions | Policy > Terms and Conditions | Device enrollment > Terms and Conditions |
 
 
 ## Where do I manage groups?
