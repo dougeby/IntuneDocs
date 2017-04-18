@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# What is Microsoft Intune device management? 
+# What is Microsoft Intune device management?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -43,8 +43,8 @@ Now, choose one of the following:
 - **Overview** Get information about devices you've enrolled, and the operating systems each device runs.
 - **Manage** - Choose **All Devices** to see a list of all the devices you manage.
 	Select one of those devices in the list to open the <*device name*> **Overview** blade where you can select one of:
-	- **Overview**  - See general information about the device including information about it's name, the owner, whether it is a BYOD device, when it last checked-in, and more. 
-				
+	- **Overview**  - See general information about the device including information about it's name, the owner, whether it is a BYOD device, when it last checked-in, and more.
+
 	- **Hardware** - See more detailed information about the device including it's free storage space, model and manufacturer, and more.
 	![Managed device hardware inventory](./media/hardware-inventory.png)
 	- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
@@ -72,6 +72,12 @@ Generates a new passcode for the device which will be displayed on the <*device 
 ### **Bypass Activation Lock**
 This will remove the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
 
+### **Fresh Start**
+
+Removes any apps that were installed on a Windows 10 PC running the Creators Update, then automatically updates the PC to the latest version of Windows.
+This can be used to help remove pre-installed (OEM) apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued. In this case, apps and settings are removed, but the contents of the users Home folder are retained.
+
+
 ### **Lost mode**
 If an iOS device has been lost or stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device. To do this:
 1.	On the properties blade for an iOS device, choose **More** > **Lost mode**.
@@ -83,7 +89,7 @@ To use lost mode, the device must be a corporate-owned iOS device, enrolled thro
 ### **Locate device**
 Use this remote action to display the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into lost mode.
 1.	On the properties blade for an iOS device, choose **More** > **Locate device**.
-2.	After the device has been located, it's location is displayed on the **Locate device** blade. 
+2.	After the device has been located, it's location is displayed on the **Locate device** blade.
 	![Locate device blade](./media/locate-device.png)
 
 >[!NOTE]

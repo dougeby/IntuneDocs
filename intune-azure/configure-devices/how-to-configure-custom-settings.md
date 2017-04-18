@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,8 +58,8 @@ Use the information in this topic to learn the basics about configuring profiles
 	- [macOS settings](custom-for-macos.md)
 	- [Windows Phone 8.1 settings](custom-for-windows-phone-8-1.md)
 	- [Windows 10 settings](custom-for-windows-10.md)
+	- [Android for Work settings](custom-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
-
