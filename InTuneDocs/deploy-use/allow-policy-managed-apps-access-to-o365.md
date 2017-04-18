@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: App based conditional access to 0365 | Microsoft Docs
+title: App based conditional access to 0365
 description: Understand the concepts of how MAM CA can help with controlling what apps have access to O365 services.
 keywords:
 author: andredm7
@@ -44,7 +44,7 @@ Description of the abbreviations used in the diagrams:
 * **EAS**: Exchange Active Sync
 
 ## Prerequisites
-**Before** you create an App-based conditional access policy, you must have an **Enterprise Mobility + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+**Before** you create an App-based conditional access policy, you must have an **Enterprise Mobility + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
 ## Supported apps
