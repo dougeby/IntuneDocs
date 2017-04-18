@@ -42,11 +42,11 @@ Android apps in the Play store that support managed configuration options can no
 
 ### Remote assistance for Android devices <!-- 675418 -->
 
-Intune now uses the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices.
+Intune now uses the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information see [Remote control Android devices using TeamViewer](/intune-azure/manage-devices/control-android-devices-with-teamviewer).
 
 ### New Android policy for complex PINs <!-- 722069 -->
 
-You can now set a required password type of Numeric complex in an Android device profile for devices that run Android 5.0 and above.  Use this setting to prevent device users from creating a PIN that contains repeating, or consecutive numbers, like 1111, or 1234.
+You can now set a required [password](/intune-azure/configure-devices/device-restrictions-for-android#password) type of Numeric complex in an Android device profile for devices that run Android 5.0 and above.  Use this setting to prevent device users from creating a PIN that contains repeating, or consecutive numbers, like 1111, or 1234.
 
 ### Additional support for Android for Work devices
 
@@ -62,24 +62,26 @@ This Android for Work device restriction profile now has new options to help you
 
   A new custom device profile for Android for Work devices now lets you restrict whether copy and paste actions between work and personal apps are allowed.
 
+For more information, see [Device restrictions for Android for Work](/intune-azure/configure-devices/device-restrictions-for-afw).
+
 ### Assign LOB apps to iOS and Android devices <!-- 1057568 -->
 
-You can now assign line of business (LOB) apps for iOS (.ipa files) and Android (.apk files) to users or devices.
+You can now assign line of business (LOB) apps for [iOS](/intune-azure/manage-apps/ios-lob-app) (.ipa files) and [Android](/intune-azure/manage-apps/android-lob-app) (.apk files) to users or devices.
 
 ###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 
-- **Apps on Home screen** - Controls which apps users see on the Home screen of their iOS device. This policy changes the layout of the Home screen, but does not deploy any apps you specified that are not installed.
+- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](/intune-azure/configure-devices/home-screen-settings-for-ios). This policy changes the layout of the Home screen, but does not deploy any apps you specified that are not installed.
 
-- **Connections to AirPrint devices** - Controls which AirPrint devices (network printers) that end users of iOS device can connect to.
+- **Connections to AirPrint devices** - Controls which [AirPrint devices](/intune-azure/configure-devices/air-print-settings-for-ios-and-macos) (network printers) that end users of iOS device can connect to.
 
-- **Connections to AirPlay devices** - Controls which AirPlay devices (like Apple TV) that end users of iOS device can connect to.
+- **Connections to AirPlay devices** - Controls which [AirPlay devices](/intune-azure/configure-devices/airplay-settings-for-ios-devices) (like Apple TV) that end users of iOS device can connect to.
 
-- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message.
+- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Available device actions](/intune-azure/manage-devices/what-is#available-device-actions)
 
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
 
-In an Intune device restriction profile, you can now configure the following notification settings for iOS devices:
+In an Intune device restriction profile, you can now configure the following [notification settings](/intune-azure/configure-devices/app-notification-settings-for-ios) for iOS devices:
 
 - Fully turn on or off notification for a specified app.
 - Turn on or off, the notification in the notification center for a specified app.
@@ -89,11 +91,11 @@ In an Intune device restriction profile, you can now configure the following not
 
 ### Configure iOS apps to run in single app mode autonomously <!-- 737837 -->
 
-You can now use an Intune device profile to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the app's actions are complete, or you remove this policy, the device returns to its normal state.
+You can now use an Intune device profile to configure iOS devices to run specified apps in [autonomous single app mode](/intune-azure/configure-devices/device-restrictions-for-ios#autonomous-single-app-mode-supervised-only). When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the app's actions are complete, or you remove this policy, the device returns to its normal state.
 
 ### Configure trusted domains for email and web browsing on iOS devices <!-- 723765 -->
 
-From an iOS device restriction profile, you can now configure the following domain settings:
+From an iOS device restriction profile, you can now configure the following [domain settings](/intune-azure/configure-devices/device-restrictions-for-ios#domains):
 
 - **Unmarked email domains** - Emails that the user sends or receives which don't match the domains you specify here will be marked as untrusted.
 
@@ -108,27 +110,27 @@ You can now assign iOS volume-purchased (VPP) apps as **Available** installs to 
 
 ### Synchronize eBooks from Apple VPP Store <!-- 800878 -->
 
-You can now synchronize books you purchased from the Apple volume-purchase program store with Intune, and assign these to users.
+You can now [synchronize books](/intune-azure/manage-apps/ios-vpp-apps) you purchased from the Apple volume-purchase program store with Intune, and assign these to users.
 
 ### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
 
-Devices that run Samsung KNOX Standard are now supported for multi-user management by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
+Devices that run Samsung KNOX Standard are now supported for [multi-user management](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
 
-We've added support for additional Windows device restriction settings like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
+We've added support for additional [Windows device restriction settings](/intune-azure/configure-devices/device-restrictions-for-windows-10) like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added support for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
+We've added support for [multi-user management](/intune-azure/enroll-devices/enroll-windows-devices) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
-A new Fresh Start device action for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+A new [Fresh Start device action](/intune-azure/manage-devices/what-is#available-device-actions) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
 
 ### Additional Windows 10 upgrade paths <!-- 903672 -->
 
-You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+You can now create an [edition upgrade policy to upgrade devices](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade) to the following additional Windows 10 editions:
 
 - Windows 10 Professional
 - Windows 10 Professional N
@@ -137,7 +139,7 @@ You can now create an edition upgrade policy to upgrade devices to the following
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [automatic MDM enrollment](/intune-azure/enroll-devices/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
 ### New MAM settings for PIN and managed storage locations <!-- 581122, 736644 -->
 
@@ -153,9 +155,6 @@ Two new app settings are now available to help you with mobile application manag
   - Business SharePoint Online
   - Local storage
 
-### Block apps from accessing SharePoint Online <!-- 679339 -->
-
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing SharePoint Online. In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
 ## March 2017
 
