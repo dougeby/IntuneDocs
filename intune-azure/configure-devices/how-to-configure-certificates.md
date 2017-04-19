@@ -78,16 +78,16 @@ See one of the following topics for help configuring the infrastructure for each
 - [Configure and manage PKCS certificates with Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
 
 
-## Step 2 - Export your Trusted Root CA certificate
+## Step 2 - Export your trusted root CA certificate
 
 Export the Trusted Root Certification Authorities (CA) certificate as a **.cer** file from the issuing CA, or from any device that trusts your issuing CA. Do not export the private key.
 
 You'll import this certificate when you set up a trusted certificate profile.
 
-## Step 3: Create Trusted certificate profiles
+## Step 3: Create trusted certificate profiles
 You must create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. You need a trusted certificate profile and a SCEP or PKCS profile for each device platform. The flow for creating trusted certificates is similar for each device platform.
 
-### To create a Trusted certificate profile
+### To create a trusted certificate profile
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.

@@ -57,7 +57,7 @@ To use PKCS Certificate profiles, in addition to the Enterprise Certification Au
     For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-## Certificates and Templates
+## Certificates and templates
 
 |Object|Details|
 |----------|-----------|
@@ -109,13 +109,13 @@ Before you can configure certificate profiles, you must complete the following s
 
 4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the PKCS certificate profile. Set that permission on the **Security** tab of the CA computer properties.
 
-## Step 2 - Enable, install, and configure the Intune Certificate Connector
+## Step 2 - Enable, install, and configure the Intune certificate connector
 In this step you will:
 
 - Enable support for the Certificate Connector
 - Download, install, and configure the Certificate Connector.
 
-### To enable support for the Certificate Connector
+### To enable support for the certificate connector
 
 1.  Sign into the Azure portal.
 2.  Choose **More Services** > **Other** > **Intune**.
@@ -123,7 +123,7 @@ In this step you will:
 2.  On the **Device Configuration** blade, choose **Setup** > **Certificate Authority**.
 2.  Under **Step 1**, choose **Enable**.
 
-### To download, install, and configure the Certificate Connector
+### To download, install, and configure the certificate connector
 
 1.  On the **Configure devices** blade, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.

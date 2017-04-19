@@ -36,7 +36,7 @@ This topic shows how to configure your infrastructure, then create and assign Si
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
 -  **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
-The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: Use the Intune portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector.
 -  **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
@@ -54,10 +54,10 @@ From the Internet to perimeter network, allow port 443 from all hosts/IP address
 
 From the perimeter network to trusted network, allow all ports and protocols needed for domain access on the domain-joined NDES server. The NDES server needs access to the certificate servers, DNS servers, Configuration Manager servers and domain controllers.
 
-We recommend publishing the NDES server through a proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx), or a third-party proxy.
+We recommend publishing the NDES server through a proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx), or a third-party proxy.
 
 
-### Certificates and Templates
+### Certificates and templates
 
 |Object|Details|
 |----------|-----------|
@@ -136,21 +136,19 @@ Here are screenshots of an example template configuration.
 ![Template, issuance requirements tab](.\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
-    > For Application Policies (in the 4th screenshot), only add the application policies required. Confirm your choices with your security admins.
+    > For Application Policies, only add the application policies required. Confirm your choices with your security admins.
 
 
 
-To configure the CA to allow the requester to specify the validity period, on the CA run the following commands:
+To configure the CA to allow the requester to specify the validity period:
 
-   1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   2.  **net stop certsvc**
-   3.  **net start certsvc**
-
-4.  On the issuing CA, use the Certification Authority snap-in to publish the certificate template.
-
-    1.  Select the **Certificate Templates** node, click **Action**-&gt; **New** &gt; **Certificate Template to Issue**, and then select the template you created in step 2.
-
-    2.  Validate that the template published by viewing it under the **Certificate Templates** folder.
+1. On the CA run the following commands:
+	- **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+	- **net stop certsvc**
+	- **net start certsvc**
+2. On the issuing CA, use the Certification Authority snap-in to publish the certificate template.
+	Select the **Certificate Templates** node, click **Action**-&gt; **New** &gt; **Certificate Template to Issue**, and then select the template you created in step 2.
+3. Validate that the template published by viewing it under the **Certificate Templates** folder.
 
 
 #### Step 3 - Configure prerequisites on the NDES server
@@ -275,7 +273,7 @@ In this task you will:
 
     **Subject Name** - This must be equal to the DNS name of the server where you are installing the certificate (the NDES Server).
 
-##### To configure IIS Request Filtering
+##### To configure IIS request filtering
 
 1.  On the NDES Server open **IIS Manager**, select the **Default Web Site** in the **Connections** pane, and then open **Request Filtering**.
 
@@ -297,14 +295,14 @@ In this task you will:
 
 4.  Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
-#### Step 5 - Enable, install, and configure the Intune Certificate Connector
+#### Step 5 - Enable, install, and configure the Intune certificate connector
 In this task you will:
 
 Enable support for NDES in Intune.
 
 Download, install, and configure the Certificate Connector on the NDES Server.
 
-##### To enable support for the Certificate Connector
+##### To enable support for the certificate connector
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
@@ -312,7 +310,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 4. On the **Device Configuration** blade, choose **Certification Authority**.
 5.  Select **Enable Certificate Connector**.
 
-##### To download, install and configure the Certificate Connector
+##### To download, install and configure the certificate connector
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
