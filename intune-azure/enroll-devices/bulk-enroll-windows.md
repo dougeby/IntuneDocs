@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As an Intune administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To enable automatic MDM enrollment for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Adding the provisioning package joins devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
+As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
 
 Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
@@ -36,7 +36,6 @@ Azure AD users are standard users on these devices and receive assigned Intune p
 Bulk enrollment for Window devices requires the following:
 
 - Devices running Windows 10 Creator update or later
-- Azure Active Directory Premium
 - [Windows automatic enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 
 ## Create a provisioning package
@@ -49,8 +48,8 @@ Bulk enrollment for Window devices requires the following:
 
 3. A **New project** window opens where you specify the following:
   - **Name** - A name for your project
-  - **Project folder** - Where the new project provisioning package will be saved
-  - **Description** - An optional description of the package
+  - **Project folder** - Where your project will be saved
+  - **Description** - An optional description of the project
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
 4.	Enter a unique name for your devices. Names can include a serial number (%%SERIAL%%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
@@ -62,7 +61,7 @@ Bulk enrollment for Window devices requires the following:
 6.	Select **Enroll in Azure AD**, enter a **Bulk Token Expiry** date, and then select **Get Bulk Token**.
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-account.png)
 
-7. Provide your Azure AD credentials to get a bulk enrollment Azure AD token.
+7. Provide your Azure AD credentials to get a bulk token.
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-cred.png)
 
 8.	Click **Next** when **Bulk Token** is fetched successfully.
@@ -80,7 +79,7 @@ Bulk enrollment for Window devices requires the following:
  - Place the provisioning package on a USB drive, insert the USB drive into the device you’d like to bulk enroll, and apply it during initial setup
  - Place the provisioning package on a network folder, and apply it insert on the device you’d like to bulk enroll after initial setup
 
- For step-by-step instruction on preparing devices for bulk enrollment, see [Apply a provisioning package]( (https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
+ For step-by-step instruction on applying a provisioning package, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
 3. After you apply the package, the device will automatically restart in 1 minute.
  ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-add.png)

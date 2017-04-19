@@ -47,13 +47,6 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 > [!NOTE]
 > Users will appear in the Admin console only after they have enrolled a device. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.
 
-## Use School Data Sync to assign licenses to users in Intune for Education
-If you are an educational organization, you can use School Data Sync (SDS) to assign Intune for Education licenses to synced users. Just choose the Intune for Education checkbox when you're setting up your SDS profile.  
-
-![Image of SDS profile setting](./media/i4e-sds-profile-setup-setting.png)
-
-See this [overview of School Data Sync](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) to learn more about SDS.
-
 ## Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
 

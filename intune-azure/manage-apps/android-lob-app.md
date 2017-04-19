@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to add Android line-of-business apps to IntunetitleSuffix: "Intune Azure preview"
+title: How to add Android line-of-business apps to Intune
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding Android line-of-business apps to Intune."
 keywords:
 author: robstackmsft

@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -189,7 +189,7 @@ We've added support for additional Windows device restriction settings like addi
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added support for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different users log onto the device with their AAD credentials, they will receive any apps and policies that were assigned to their user name.
+We've added supported for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 

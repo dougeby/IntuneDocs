@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Enroll Windows devicestitleSuffix: "Intune Azure preview"
+title: Enroll Windows devices
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
@@ -31,9 +32,10 @@ ms.custom: intune-azure
 
 This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
 
-Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps. 
+Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
-Two factors determine how you'll enroll Windows devices:
+Two factors determine how you can simplify Windows device  enrollment:
+
 - **Do you use Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.
 - **What versions of Windows clients will enroll?** <br>Windows 10 devices can automatically enroll by adding a work or school account. Earlier versions must enroll using the Company Portal app.
 
@@ -45,7 +47,7 @@ Two factors determine how you'll enroll Windows devices:
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## Enable Windows enrollment without Azure AD Premium
-You can let users enroll their devices without Azure AD Premium automatic enrollment. Once you assign licenses to users' account, users can add that account to a Windows device and agree to enroll the device in management. Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you create DNS CNAME resource records, users connect and enroll in Intune without having to enter the Intune server name.
+You can let users enroll their devices without Azure AD Premium automatic enrollment. Once you assign licenses, users can enroll after adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure AD. Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you create DNS CNAME resource records, users connect and enroll in Intune without having to enter the Intune server name.
 
 **Step 1: Create CNAME** (optional)<br>
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.

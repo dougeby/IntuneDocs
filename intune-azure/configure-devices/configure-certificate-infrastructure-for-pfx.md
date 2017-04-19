@@ -1,11 +1,11 @@
 ---
-title: Configure Intune certificate infrastructure for PKCStitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to configure your infrastructure to use PKCS certificates with Intune."
+title: Configure and manage PKCS certificates with IntunetitleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Learn how to configure your infrastructure, then create and assign PKCS certificates with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # Configure your Microsoft Intune certificate infrastructure for PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-This topic describes what you need in order to create and deploy PKCS certificate profiles with Intune.
+This topic shows how to configure your infrastructure, then create and assign PKCS certificate profiles with Intune.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
 
@@ -57,22 +57,21 @@ To use PKCS Certificate profiles, in addition to the Enterprise Certification Au
     For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-## Certificates and Templates
+## Certificates and templates
 
 |Object|Details|
 |----------|-----------|
 |**Certificate Template**|You configure this template on your issuing CA.|
-|**Trusted Root CA certificate**|You export this as a **.cer** file from the issuing CA or any device which trusts the issuing CA, and deploy it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this as a **.cer** file from the issuing CA or any device which trusts the issuing CA, and assign it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 
 ## Configure your infrastructure
-Before you can configure certificate profiles, you must complete the following tasks. These tasks require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
+Before you can configure certificate profiles, you must complete the following steps. These steps require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
 
-- **Task 1** - Configure certificate templates on the certification authority.
-- **Task 2** - Enable, install, and configure the Intune Certificate Connector.
+- **Step 1** - Configure certificate templates on the certification authority.
+- **Step 2** - Enable, install, and configure the Intune Certificate Connector.
 
-## Task 1 - Configure certificate templates on the certification authority
-In this task, you will publish the certificate template.
+## Step 1 - Configure certificate templates on the certification authority
 
 ### To configure the certification authority
 
@@ -110,12 +109,13 @@ In this task, you will publish the certificate template.
 
 4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the PKCS certificate profile. Set that permission on the **Security** tab of the CA computer properties.
 
-## Task 2 - Enable, install, and configure the Intune Certificate Connector
-In this task you will:
+## Step 2 - Enable, install, and configure the Intune certificate connector
+In this step you will:
 
-Download, install, and configure the Certificate Connector.
+- Enable support for the Certificate Connector
+- Download, install, and configure the Certificate Connector.
 
-### To enable support for the Certificate Connector
+### To enable support for the certificate connector
 
 1.  Sign into the Azure portal.
 2.  Choose **More Services** > **Other** > **Intune**.
@@ -123,7 +123,7 @@ Download, install, and configure the Certificate Connector.
 2.  On the **Device Configuration** blade, choose **Setup** > **Certificate Authority**.
 2.  Under **Step 1**, choose **Enable**.
 
-### To download, install, and configure the Certificate Connector
+### To download, install, and configure the certificate connector
 
 1.  On the **Configure devices** blade, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
@@ -159,5 +159,52 @@ To validate that the service is running, open a browser and enter the following 
 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-### Next steps
-You are now ready to set up certificate profiles, as described in [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md).
+
+### How to create a PKCS certificate profile
+
+In the Azure Portal, select the **Configure devices** workload.
+2. On the **Device configuration** blade, choose **Manage** > **Profiles**.
+3. On the profiles blade, click **Create Profile**.
+4. On the **Create Profile** blade, enter a **Name** and **Description** for the PKCS certificate profile.
+5. From the **Platform** drop-down list, select the device platform for this PKCS certificate from:
+	- **Android**
+	- **Android for Work**
+	- **iOS**
+	- **Windows 10 and later**
+6. From the **Profile** type drop-down list, choose **PKCS certificate**.
+7. On the **PKCS Certificate** blade, configure the following settings:
+	- **Renewal threshold (%)** - Specify the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
+	- **Certificate validity period** - If you have run the **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** command on the issuing CA, which allows a custom validity period, you can specify the amount of remaining time before the certificate expires.<br>You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate.
+	- **Key storage provider (KSP)** (Windows 10) - Specify where the key to the certificate will be stored. Choose from one of the following values:
+		- **Enroll to Trusted Platform Module (TPM) KSP if present, otherwise Software KSP**
+		- **Enroll to Trusted Platform Module (TPM) KSP, otherwise fail**
+		- **Enroll to Passport, otherwise fail (Windows 10 and later)**
+		- **Enroll to Software KSP**
+	- **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx). If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
+	- **Certification authority name** - Enter the name of your certification authority.
+	- **Certificate template name** - Enter the name of a certificate template that the Network Device Enrollment Service is configured to use and that has been added to an issuing CA.
+	Make sure that the name exactly matches one of the certificate templates that are listed in the registry of the server that is running the Network Device Enrollment Service. Make sure that you specify the name of the certificate template and not the display name of the certificate template. 
+	To find the names of certificate templates, browse to the following key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. You will see the certificate templates listed as the values for **EncryptionTemplate**, **GeneralPurposeTemplate**, and **SignatureTemplate**. By default, the value for all three certificate templates is IPSECIntermediateOffline, which maps to the template display name of **IPSec (Offline request)**. 
+	- **Subject name format** - From the list, select how Intune automatically creates the subject name in the certificate request. If the certificate is for a user, you can also include the user's email address in the subject name. Choose from:
+		- **Not configured**
+		- **Common name**
+		- **Common name including email**
+		- **Common name as email**
+	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate will be used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
+	- **Extended key usage** (Android) - Choose **Add** to add values for the certificate's intended purpose. In most cases, the certificate will require **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required. 
+	- **Root Certificate** (Android) - Choose a root CA certificate profile that you have previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that will issue the certificate that you are configuring in this certificate profile. This is the trusted certificate profile that you created previously.
+8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+
+The profile will be created and appears on the profiles list blade.
+
+## How to assign the certificate profile
+
+Consider the following before you assign certificate profiles to groups:
+
+- When you assign certificate profiles to groups, the certificate file from the Trusted CA certificate profile is installed on the device. The device uses the PKCS certificate profile to create a certificate request by the device.
+- Certificate profiles install only on devices running the platform you use when you created the profile.
+- You can assign certificate profiles to user collections or to device collections.
+- To publish a certificate to a device quickly after the device enrolls, assign the certificate profile to a user group rather than to a device group. If you assign to a device group, a full device registration is required before the device receives policies.
+- Although you assign each profile separately, you also need to assign the Trusted Root CA and the PKCS profile. Otherwise, the PKCS certificate policy will fail.
+
+For information about how to assign profiles, see [How to assign device profiles](how-to-assign-device-profiles.md).
