@@ -155,6 +155,9 @@ Two new app settings are now available to help you with mobile application manag
   - Business SharePoint Online
   - Local storage
 
+### Help desk troubleshooting portal <!-- 907448 -->
+
+The new [troubleshooting portal](/intune-azure/manage-users/help-desk) lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
 
 ## March 2017
 
