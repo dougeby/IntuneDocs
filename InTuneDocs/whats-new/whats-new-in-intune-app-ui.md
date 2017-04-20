@@ -42,19 +42,43 @@ Below you can see the previous sign in experience, the new sign in experience wi
 
 __Previous sign in experience__
 
-![](./media/cp_ios_aad_signin_before_1704_001.png)
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
 
-![](./media/cp_ios_aad_signin_before_1704_002.png)
+![After tapping Sign in, the user enters their credentials on this page, which asks for a user's email and password, along with offering ways to resolve password failures.](./media/cp_ios_aad_signin_before_1704_002.png)
 
-![](./media/cp_ios_aad_signin_before_1704_003.png)
+![After providing their password, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_before_1704_003.png)
 
 __New sign in experience__
 
-![](./media/cp_ios_aad_signin_after_1704_001.png)
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_after_1704_001.png)
 
-![](./media/cp_ios_aad_signin_after_1704_002.png)
+![The user is prompted to provide just their email address rather than their email and password on the same screen.](./media/cp_ios_aad_signin_after_1704_002.png)
 
-![](./media/cp_ios_aad_signin_after_1704_003.png)
+![The user is prompted for their password after their email address has been accepted.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__New sign in experience when signing in from another device__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tap the __Sign in from another device__ link.
+
+![The user is prompted to provide just their email address rather than their email and password on the same screen. The link underneath the email field says "Sign in from another device".](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Launch a browser and go to [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![An image of the user's browser on their work computer rather than their Company Portal app. The "Device login" page displayed prompts the user for the code they received in the Company Portal app.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Enter the code you saw in the Company Portal app. When you select __Continue__, you will be able to authenticate in the using any method that is supported by your company, such as a smartcard.
+
+![The user has input their unique code into the field, and the "Device login" site has asked for confirmation that the Intune Company Portal was the correct app to receive authorization to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![A confirmation page that states that the user has now signed into the Company Portal app on their device, and that this page can be closed.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+The Company Portal app will begin signing in.
+
+![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
 
