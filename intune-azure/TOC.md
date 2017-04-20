@@ -65,6 +65,7 @@
 ## [What is user management?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Get started](manage-users/get-started-with-groups.md)
+## [Help users](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
