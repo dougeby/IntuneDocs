@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,31 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
-### April 2017
+## April 2017
 
-#### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
+### Improved sign in experience across Company Portal apps for all platforms <!--VSO TBD-->
+
+We are improving the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows.  The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
+
+Below you can see the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device.
+
+__Previous sign in experience__
+
+![](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__New sign in experience__
+
+![](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![](./media/cp_ios_aad_signin_after_1704_003.png)
+
+### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
 
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
 
@@ -55,7 +77,7 @@ The Managed Browser is receiving updated icons for both the Android and iOS vers
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
-#### Sign-in progress indicator in Android Company Portal <!--953374-->
+### Sign-in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
 
@@ -77,7 +99,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 </body>
 </html>
 
-### February 2017
+## February 2017
 
 ### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
 Beginning in March, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
