@@ -4,7 +4,9 @@
 title: Wrap iOS apps with the Intune App Wrapping Tool | Microsoft Docs
 description: Use the information in this topic to learn how to wrap your iOS apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: mtillmanms.author: mtillmanmanager: angrobe
+author: mtillman
+ms.author: mtillman
+manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
@@ -208,7 +210,7 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
-|**-v**|(Optional) Outputs verbose messages to the console.|
+|**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
 |**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See Setting app entitlements for more details.|
 |**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See Setting app entitlements for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
