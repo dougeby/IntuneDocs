@@ -1,5 +1,5 @@
 ---
-title: Help desk troubleshooting portal
+title: Help desk troubleshooting portal | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: Help desk staff use the troubleshooting portal to solve users' technical problems  
 keywords:
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 The troubleshooting portal lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
 
 ## Add help desk operators
-An Intune administrator can assign help desk operator permission to users. Help desk users can then view the Intune portal but cannot view or perform administrative tasks outside the troubleshooting workload. 
+An Intune administrator can assign help desk operator permission to users. Help desk users can then view the Intune portal but cannot view or perform administrative tasks outside the troubleshooting workload.
 
 1. As an Intune administrator, login to the [Azure portal](https:portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**.
 2. In the left navigation blade, select **Intune roles**.
