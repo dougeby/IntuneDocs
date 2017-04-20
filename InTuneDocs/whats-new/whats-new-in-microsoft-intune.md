@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,12 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 > All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## New capabilities
+
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are improving the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+
+You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](whats-new-in-intune-app-ui.md) page.
 
 ### MyApps available for Managed Browser <!--822308, 822303-->
 
