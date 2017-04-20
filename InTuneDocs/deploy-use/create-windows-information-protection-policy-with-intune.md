@@ -61,6 +61,9 @@ Additionally, you need to have the following:
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
+> [!IMPORTANT]
+> WIP does not support multi-identity, only one managed identity can exist at a time.
+
 ## To add a WIP policy
 
 After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
