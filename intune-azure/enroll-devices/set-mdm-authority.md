@@ -45,7 +45,6 @@ Possible configurations are:
 ## Set MDM authority to Intune
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-
   ![Screenshot of the Intune Troubleshoot workload with Select User link](media/set-mdm-auth.png)
 2. On the Intune blade, choose **Device enrollment**, and then choose **Overview**.
 
