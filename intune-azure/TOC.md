@@ -58,7 +58,6 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Remote control Android devices](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Manage users
