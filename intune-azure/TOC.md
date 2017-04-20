@@ -43,6 +43,7 @@
 ### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
 ### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
+### [Bulk enroll Windows devices](enroll-devices/bulk-enroll-windows.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
@@ -57,12 +58,14 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [Remote control Android devices](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Manage users
 ## [What is user management?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Get started](manage-users/get-started-with-groups.md)
+## [Help users](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
@@ -75,7 +78,9 @@
 ## How to manage apps
 ### [Add apps](manage-apps/add-apps.md)
 #### [Android store apps](manage-apps/android-store-app.md)
+#### [Android LOB apps](manage-apps/android-lob-app.md)
 #### [iOS store apps](manage-apps/ios-store-app.md)
+#### [iOS LOB apps](manage-apps/ios-lob-app.md)
 #### [Web apps](manage-apps/web-app.md)
 #### [Windows Phone 8.1 store apps](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows store apps](manage-apps/windows-store-app.md)
@@ -109,8 +114,12 @@
 ### [Configure device profiles](configure-devices/how-to-create-device-profiles.md)
 
 ### [Configure device features](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [AirPrint for iOS and MacOS](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [AirPlay for iOS](configure-devices/airplay-settings-for-ios-devices.md)
+#### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
+#### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
+#### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
+#### [Web content filter for iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +129,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [Configure email settings](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +152,7 @@
 #### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Configure Windows 10 edition upgrade settings](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Configure Windows 10 education settings](configure-devices/how-to-configure-education-settings.md)
 ### [Configure Windows Update for Business settings](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configure certificates](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +170,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [Assign device profiles](configure-devices/how-to-assign-device-profiles.md)
 ### [Monitor device profiles](configure-devices/how-to-monitor-device-profiles.md)

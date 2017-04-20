@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -92,3 +92,7 @@ If the user has already configured an email account, the result of the Intune em
 - **Windows:** An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the user.
 - **Android** An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile.
 Since Android does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
+
+### Update an email profile
+
+If you make changes to an email profile you previously assigned, end users might see a message asking them to approve the reconfiguration of their email settings.

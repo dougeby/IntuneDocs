@@ -46,7 +46,7 @@ Here’s an example on how you could communicate migration to your organization:
     -   [Download E-mail \#2 template to use in your organization.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **Email \#3:** Giving users timeline before access is impacted. Again, remind users of benefits and strategic reasons for migration. Email timing should have sliding window to match pipelining of phases. E.g. in June send email \#1 to Phase users, email \#2 to phase 2 users and email \#1 to Phase 3 users.
+-   **Email \#3:** Giving users timeline before access is impacted. Again, remind users of benefits and strategic reasons for migration. Email timing should have sliding window to match pipelining of phases. E.g. in June send email \#1 to Phase 1 users, email \#2 to phase 2 users and email \#1 to Phase 3 users.
 
     -   [Download E-mail \#3 template to use in your organization.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
