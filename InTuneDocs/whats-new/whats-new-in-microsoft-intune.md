@@ -33,7 +33,7 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 ## New capabilities
 
-### Improved sign in experience across Company Portal apps for all platforms <!--VSO TBD-->
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
 We are improving the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
