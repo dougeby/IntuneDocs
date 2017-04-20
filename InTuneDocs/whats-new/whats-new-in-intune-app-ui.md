@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,55 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
-### April 2017
+## April 2017
 
-#### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are improving the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows.  The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
+
+Below you can see the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device.
+
+__Previous sign in experience__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![After tapping Sign in, the user enters their credentials on this page, which asks for a user's email and password, along with offering ways to resolve password failures.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![After providing their password, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__New sign in experience__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![The user is prompted to provide just their email address rather than their email and password on the same screen.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![The user is prompted for their password after their email address has been accepted.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__New sign in experience when signing in from another device__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tap the __Sign in from another device__ link.
+
+![The user is prompted to provide just their email address rather than their email and password on the same screen. The link underneath the email field says "Sign in from another device".](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Launch a browser and go to [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![An image of the user's browser on their work computer rather than their Company Portal app. The "Device login" page displayed prompts the user for the code they received in the Company Portal app.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Enter the code you saw in the Company Portal app. When you select __Continue__, you will be able to authenticate in the using any method that is supported by your company, such as a smartcard.
+
+![The user has input their unique code into the field, and the "Device login" site has asked for confirmation that the Intune Company Portal was the correct app to receive authorization to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![A confirmation page that states that the user has now signed into the Company Portal app on their device, and that this page can be closed.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+The Company Portal app will begin signing in.
+
+![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
 
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
 
@@ -55,7 +101,7 @@ The Managed Browser is receiving updated icons for both the Android and iOS vers
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
-#### Sign-in progress indicator in Android Company Portal <!--953374-->
+### Sign-in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
 
@@ -77,7 +123,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 </body>
 </html>
 
-### February 2017
+## February 2017
 
 ### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
 Beginning in March, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
