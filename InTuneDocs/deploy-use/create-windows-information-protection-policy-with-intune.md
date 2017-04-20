@@ -54,7 +54,12 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 You need to configure the MAM provider before you can create a WIP app protection policy.
 
--   Learn more about how to configure your MAM provider with Intune.
+-   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10).
+
+Additionally, you need to have the following:
+
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
+-   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 ## To add a WIP policy
 
