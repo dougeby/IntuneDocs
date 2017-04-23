@@ -446,7 +446,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-plan">Plan deployment</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -456,8 +456,8 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Determine goals, objectives, and challenges</h3>
-                                            <p>Scope the goals, objectives, and challenges you need to manage as you deploy.</p>
+                                            <h3>Supported devices and browsers</h3>
+                                            <p>Read details about the devices and browsers supported by the service.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -471,12 +471,12 @@ description: Learn to use Microsoft Intune.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Identify use case scenarios</h3>
-                                            <p>Review some example use cases as you identify your deployment use case scenarios. </p>
+                                            <h3>Deployment planning, design, and implementation guide</h3>
+                                            <p>Develop a deployment plan, create a design, onboard Intune, and conduct a production rollout.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -484,18 +484,18 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Develop a rollout plan</h3>
-                                            <p>Determine the organizational groups that are targeted for your Intune rollout and the rollout timeframe for each group.</p>
+                                            <h3>Migration guide</h3>
+                                            <p>Step you through the various details involved in migrating from a third-party MDM provider to Intune.</p>
                                         </div>
                                     </div>
                                 </div>
