@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ Use the information in this topic to help you create and manage Microsoft Intune
 ## Using reports
 Intune reports provide information about software, hardware, and software licenses in your organization. Reports can help you confirm current needs and forecast future spending. The **Reports** workspace gives you the tools to create and manage reports. 
 
-### Report types
+## Report types
 
 |Report type|Description|
 |---------------|---------------|
@@ -54,8 +54,10 @@ Intune reports provide information about software, hardware, and software licens
 |**Health Attestation Reports**|Show the health of mobile devices.|
 |**Mac OS X Hardware Report**|Displays hardware details for all enrolled Mac OS X devices in the groups that you select. For information about the hardware inventory that is collected from these devices, see [Understand your devices with inventory in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X Software Report**|Displays the software that is installed on all Mac OS X devices in the groups that you selected. The report lists the software name (as a bundle ID), the short version (or friendly) name, the version, and the number of devices with the software installed.|
+|**Windows Information Protection Reports**|Shows information about Windows Information Protection (WIP) operations on devices you manage.|
+|**Health Attestation Reports**|Shows information reported by the Windows Health Attestation service for devices you managed.|
 
-#### To create a report
+## To create a report
 
 1.  In the Intune admin console, choose **Reports**. Then choose the report type that you want to generate, as described in the previous table.
 

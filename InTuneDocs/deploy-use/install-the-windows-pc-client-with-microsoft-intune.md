@@ -110,7 +110,7 @@ You can deploy the Intune client software to computers as part of an operating s
 
 ## Instruct users to self-enroll
 
-Users install the Intune client software by going to the [Company Portal website](http://portal.manage.microsoft.com). The exact information that users see in the web portal varies, depending on your account's MDM Authority and the OS platform/version of the user's PC.
+Users install the Intune client software by going to the [Company Portal website](https://portal.manage.microsoft.com). The exact information that users see in the web portal varies, depending on your account's MDM Authority and the OS platform/version of the user's PC.
 
 If users haven't been assigned an Intune license or if the organization's MDM Authority hasn't been set to Intune, users aren't shown any options to enroll.
 
