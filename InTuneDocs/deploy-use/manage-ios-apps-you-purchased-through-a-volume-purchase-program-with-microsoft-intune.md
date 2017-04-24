@@ -6,7 +6,7 @@ description: Use Intune to manage apps that you volume purchased from Apple by i
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,7 +70,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To deploy a volume-purchased app
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**. This list shows all apps that were synchronized from the Apple VPP service.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Apps** &gt; **Apps** &gt; **Volume-Purchased Apps**. This list shows all apps that were synchronized from the Apple VPP service.
 
 2.  Choose the app that you want to deploy, choose **Manage Deployment**, and then use the instructions in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to finish uploading, creation, and deployment of the app.
 
@@ -83,13 +83,10 @@ To reclaim a license, you must change the deployment action to **Uninstall**. Th
 
 When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds.
 
-> [!TIP]
-> Look at the **VPP Terms Status** column to see the acceptance status for each user to whom the app was deployed.
-
 If there are no more licenses available, the deployment will fail.
 
 ## To monitor Apple VPP apps
-You can monitor which VPP apps have been deployed, and how many licenses are used, from the **Apps** workspace in the **Managed Software** &gt; **Volume-Purchased Apps** node.
+You can monitor which VPP apps have been deployed, and how many licenses are used, from the **Apps** workspace in the **Volume-Purchased Apps** node.
 
 > [!TIP]
 > You can also use app **Filters** to examine the status of each app installation.
