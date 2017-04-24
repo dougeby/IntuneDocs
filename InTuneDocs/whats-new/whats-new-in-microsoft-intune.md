@@ -102,7 +102,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Plan for Change: Intune is changing the Intune Partner Portal experience
+### Plan for Change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
 We are removing the Intune Partner page from manage.microsoft.com beginning with the service update in mid-May 2017.  
 
