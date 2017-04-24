@@ -66,7 +66,7 @@ You must create an Active Directory user account that is used by the Intune Exch
 
 ## Download the On-premises Exchange Connector software installation package
 
-1. On a supported Windows Server operating system for the On-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant and that has a license to use Exchange Server.
+1. On a supported Windows Server operating system for the On-premises Exchange Connector, open the [Microsoft Intune administration console](https://manage.microsoft.com) (https://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant and that has a license to use Exchange Server.
 ![Open set up Exchange Connection](../media/ExchangeConnector.gif)
 
 2.  In the workspace shortcuts pane, choose **Admin**>**Mobile Device Management** > **Microsoft Exchange**>**Setup Exchange Connection**.
@@ -132,7 +132,7 @@ After the Exchange Connector sets up the connection, mobile devices that are ass
 
 ## Validate the Exchange connection
 
-After you have successfully configured the Exchange Connector, you can view the status of the connection and the last successful synchronization attempt. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose the **ADMIN** workspace. Under **Mobile Device Management**, choose **Microsoft Exchange**, and then validate that the details you provided appear under **Exchange Connection Information**.
+After you have successfully configured the Exchange Connector, you can view the status of the connection and the last successful synchronization attempt. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose the **ADMIN** workspace. Under **Mobile Device Management**, choose **Microsoft Exchange**, and then validate that the details you provided appear under **Exchange Connection Information**.
 
 
 You can also check the time and date of the last successful synchronization attempt.

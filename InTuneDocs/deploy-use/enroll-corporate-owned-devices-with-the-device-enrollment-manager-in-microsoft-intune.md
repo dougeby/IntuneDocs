@@ -72,9 +72,9 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Add a device enrollment manager
 
-1.  Ensure that the user that you want to add to the DEM account already exists. If you need to add the user, sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1.  Ensure that the user that you want to add to the DEM account already exists. If you need to add the user, sign in to the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) with your admin credentials.
+2.  Sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) with your admin credentials.
 
 3.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
 
@@ -91,7 +91,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Delete a device enrollment manager from Intune
 
-1.  Sign in to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials.
+1.  Sign in to the [Microsoft Intune admin portal](https://manage.microsoft.com) with your admin credentials.
 
 2.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
 

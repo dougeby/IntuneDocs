@@ -50,7 +50,7 @@ The following procedure describes how to create a custom rule.
 
 ## Create a default access rule
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Policy** &gt; **Exchange ActiveSync**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Exchange ActiveSync**.
 
 2.  In the **Default Rule** list, select the Access Rule that you want to apply to all mobile devices that aren't covered by a rule or personal exemption. Choose **Save**.
 
@@ -58,6 +58,6 @@ The following procedure describes how to create a custom rule:
 
 ## Create a custom access rule
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Policy** &gt; **Exchange ActiveSync**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Exchange ActiveSync**.
 
 2.  In the **Platform Exceptions** list, Choose **Add Rule**, and then create a custom rule. Choose **Save**.

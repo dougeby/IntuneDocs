@@ -61,7 +61,7 @@ If your business requires mobile device groups to help manage devices, you can o
 
 A device enrollment profile defines the settings applied to a group of devices.
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
   ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
@@ -88,7 +88,7 @@ A device enrollment profile defines the settings applied to a group of devices.
 
 ### Add iOS devices to enroll with Setup Assistant
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**.
 
    You can add devices in two ways:
 
@@ -131,7 +131,7 @@ Specify the profile to assign to added devices from the list of available profil
 
 ### Export a profile to deploy to iOS devices
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices.
 
 2. Choose **Export** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
