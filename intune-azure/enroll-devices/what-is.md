@@ -57,21 +57,20 @@ The following table shows Intune enrollment methods and the supported capabiliti
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows enrollment methods**
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No |	Yes |	No | More information coming soon|
+|**[BYOD](#byod)** | No |	Yes |	No | [More information](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android enrollment methods**
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-ios-devices-using-device-enrollment-program.md)|
+|[Android for Work](#android-for-work)| No | Yes | No| [More information](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## BYOD
@@ -115,16 +114,6 @@ To learn more about iOS enrollment, see:
 
 ## Mobile device management with Exchange ActiveSync and Intune
 Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
-
-
-## Windows PC management with Intune  
-You can also use Microsoft Intune to manage Windows PCs with the Intune client software. PCs that are managed with the Intune client can:
-
- - Report software and hardware inventories
- - Install desktop applications (for example .exe and .msi files)
- - Manage firewall settings
-
-PCs that are managed with the Intune client software cannot be fully wiped, although selective wipe is available. PCs managed with the Intune software client cannot take advantage of many Intune management features such as conditional access, VPN and Wi-Fi settings, or deployment of certificates and email configurations. More information is coming soon.
 
 ## Supported device platforms and browsers
 
