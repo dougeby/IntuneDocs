@@ -44,13 +44,13 @@ Apple restrictions prohibit line-of-business and managed App Store apps from bei
 
 Enrolled users get their apps by tapping on the following tiles on the Apps screen of the Company Portal app:
 
-- **All Apps** points to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com).
+- **All Apps** points to a list of all apps in the ALL tab of the [Company Portal website](https://portal.manage.microsoft.com).
 
 - **Featured Apps** take users to the FEATURED tab of the Company Portal website.
 
 - **Categories** points to the CATEGORIES tab of the Company Portal website.
 
- 
+
 ![iOS Company Portal apps screen](./media/ios-cp-app-main-apps-screen.png)
 
 For information on how to add apps and put them in these tiles, see [Add apps for enrolled devices to Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).

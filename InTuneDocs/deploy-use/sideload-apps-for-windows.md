@@ -61,7 +61,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
 6.  **Upload the app to Intune**<br>
     Upload the signed app file and your code-signing certificate to make the app available to your end users.
 
-    1.  In the [Intune administration console](http://manage.microsoft.com) click **Administration** &gt; **Windows Phone**.
+    1.  In the [Intune administration console](https://manage.microsoft.com) click **Administration** &gt; **Windows Phone**.
 
     2.  Click the **Upload Signed App File** and sign in with your Intune Administrator ID.
 

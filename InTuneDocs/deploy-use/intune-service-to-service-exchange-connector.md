@@ -54,7 +54,7 @@ You must also create an Exchange Online user account that is used by the Intune 
 
 ## Set up the Service to Service Connector
 
-1. Open the [Microsoft Intune administration console](http://manage.microsoft.com) with a user account that has Exchange admin rights and permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements). Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
+1. Open the [Microsoft Intune administration console](https://manage.microsoft.com) with a user account that has Exchange admin rights and permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements). Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
 
 2.  In the workspace shortcuts pane, choose **ADMIN**>**Mobile Device Management** > **Microsoft Exchange** > **Set Up Exchange Connection**.
 ![Set up service to service connector page](../media/intunesa5cservicetoserviceconnector.png)
@@ -66,6 +66,6 @@ The Service to Service Connector automatically configures and synchronizes your 
 
 ## Validate your Exchange connection
 
-After you have successfully configured the Exchange Connector, go to the [Microsoft Intune administration console](http://manage.microsoft.com). Choose **Admin**> **Mobile Device Management** > **Microsoft Exchange**. Then validate that the details you provided appear under **Exchange Connection Information**.
+After you have successfully configured the Exchange Connector, go to the [Microsoft Intune administration console](https://manage.microsoft.com). Choose **Admin**> **Mobile Device Management** > **Microsoft Exchange**. Then validate that the details you provided appear under **Exchange Connection Information**.
 
 You can also check the time and date of the last successful synchronization attempt.
