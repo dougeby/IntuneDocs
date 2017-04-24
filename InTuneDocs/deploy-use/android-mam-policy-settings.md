@@ -6,7 +6,7 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: andredm7ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,7 @@ There are two categories of policy settings: data relocation settings and access
 | **Encrypt app data** | Choose **Yes** to enable encryption of work or school data in this app. Intune uses an OpenSSL, 128-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. <br><br> The encryption method is **not** FIPS 140-2 certified.  | Yes |
 | **Disable contact sync** | Choose **Yes** to prevent the app from saving data to the native Contacts app on the device. If you choose **No**, the app can save data to the native Contacts app on the device. <br><br>When you perform a selective wipe to remove work or school data from the app, contacts synced directly from the app to the native Contacts app are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app. | No |
 | **Disable printing** | Choose **Yes** to prevent the app from printing work or school data. | No |
+| **Select which storage services corporate data can be saved to** | Users are able to save to the selected services (OneDrive for Busines, SharePoint and Local Storage). All other services will be blocked. | OneDrive for Business and SharePoint |
 
 
   >[!NOTE]
@@ -93,3 +94,4 @@ There are two categories of policy settings: data relocation settings and access
 | **Recheck the access requirements after (minutes)** | Configure the following settings: <ul><li>**Timeout**: This is the number of minutes before the access requirements (defined earlier in the policy) are rechecked. For example, an admin turns on PIN in the policy, a user opens a MAM app, and must enter a pin. When using this setting, the user would not have to enter a PIN on any MAM app for another **30 minutes** (default value).</li><li>**Offline grace period**: This is the number of minutes that MAM apps can run offline, specify the time (in minutes) before the access requirements for the app are rechecked. Default value = **720** minutes (12 hours). After this period is expired, the app will require user authentication to AAD, so the app can continue to run.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Offline interval before app data is wiped (days)** | After this many days (defined by the admin) of running offline, the app itself will do a selective wipe. This selective wipe is the same wipe as the one that can be initiated by the admin in the MAM wipe work-flow. <br><br> | 90 days |
 | **Block screen capture and Android Assistant (Android 6.0+)** | Choose **Yes** to block screen capture and the **Android Assistant** capabilities of the device when using this app. Choosing **Yes** will also blur the App-switcher preview image when using this app with a work or school account. | No |
+| **Disable app PIN when device PIN is managed** | Choose **Yes** to disable the app PIN when a device lock is detected on an enrolled device. | No |
