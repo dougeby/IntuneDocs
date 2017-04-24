@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a Windows Information Protection (WIP) app protection policy with Intune | Microsoft Docs
-description: Create a WIP app protection policy with Intune
+title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune | Microsoft Docs
+description: Create and deploy WIP app protection policy with Intune
 keywords:
 author: andredm7
 ms.author: andredm
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Create a Windows Information Protection (WIP) app protection policy with Intune
+# Create and deploy Windows Information Protection (WIP) app protection policy with Intune
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
@@ -102,10 +102,10 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 4.  Type the name of the app and the name of its publisher, and then choose **OK**.
 
-> [TIP]
-> Here’s an app example, where the **Publisher** is *CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US* and the Product **name** is *Microsoft.MicrosoftAppForWindows*.
+	> [!TIP]
+	> Here’s an app example, where the **Publisher** is *CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US* and the Product **name** is *Microsoft.MicrosoftAppForWindows*.
 
-1.  After you’ve entered the info into the fields, choose **OK** to add the app to your **Allowed apps** list.
+5.  After you’ve entered the info into the fields, choose **OK** to add the app to your **Allowed apps** list.
 
 > [!NOTE]
 > To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, then continue to add more apps. Once you’re done, choose **OK**.
@@ -174,6 +174,19 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
 > [!IMPORTANT]
 > Once you have the apps showing up in the WIP Learning logging report, you can them into your app protection policies.
+
+## To deploy your WIP app protection policy
+
+> [!IMPORTANT]
+> This applies for WIP with mobile application management (MAM) without enrollment scenario.
+
+After you created your WIP app protection policy, you need to deploy it to your organization using MAM.
+
+1.  On the **App policy** blade, choose your newly-created app protection policy, choose **User groups**, then choose **Add user group**.
+
+	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
+
+1.  Choose the group you want your policy to apply to, then click **Select** to deploy the policy.
 
 ## Next steps
 
