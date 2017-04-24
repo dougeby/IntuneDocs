@@ -106,9 +106,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 We are removing the Intune Partner page from manage.microsoft.com beginning with the service update in mid-May 2017.  
 
-Partner administrators will no longer be able to view and take action on behalf of a customer from this page, but will be able to continue providing this service at one of two other partner portals at Microsoft.
+Partner administrators will no longer be able to view and take action on behalf of their customers from the Intune Partner page, but will be able to sign in on behalf of their customers at one of two other partner portals at Microsoft.
 
-Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) will allow you to log into the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers. 
+Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) will allow you to sign into the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers. 
 
 
 ### Apple to require updates for Application Transport Security <!--748318-->
