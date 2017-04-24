@@ -66,7 +66,7 @@ Tap the __Sign in from another device__ link.
 
 ![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Launch a browser and go to [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Launch a browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![An image of the user's browser on their work computer rather than their Company Portal app. The "Device login" page displayed prompts the user for the code they received in the Company Portal app.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
