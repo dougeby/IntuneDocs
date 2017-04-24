@@ -35,7 +35,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 ## Create a terms and conditions policy
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
 	![Terms and conditions policy screenshot](./media/pol-sa-terms-conditions.png)
 
@@ -57,7 +57,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 ## Deploy a terms and conditions policy
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
 
 2.  In the **Terms and Conditions Policies** list, select the policy you want to deploy, and then click **Manage Deployment**.
 
@@ -67,7 +67,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 ## Monitor a terms and conditions policy
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
 
 2.  In the **Create New Report** window, click **View Report**. The report will open detailing which users have accepted the terms and conditions you deployed.
 
@@ -76,7 +76,7 @@ When you edit an existing terms and conditions policy, you can choose which beha
 
 ## Work with multiple versions of terms and conditions
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
 
 2.  Select the terms and conditions policy that you want to edit, and then click **Edit**.
 
