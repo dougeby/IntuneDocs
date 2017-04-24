@@ -12,7 +12,7 @@
 
 # [Get Started](get-started/get-started.md)
 ## [Set up Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prerequisites]
+### Prerequisites
 #### [Supported devices](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Network usage](get-started/network-bandwidth-use.md)
 ### [Sign in to Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Get ready to configure app protection policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy app protection policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Get ready to configure app protection policies for iOS and Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Get ready to configure app protection policies for Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
 #### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [App protection policies for Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Create and deploy app protection policies for iOS and Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and deploy WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
