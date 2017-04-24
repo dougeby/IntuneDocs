@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,8 +57,8 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-1.  In the **Manage apps** workload, choose **Manage** > **App Configuration Policies**.
+3. On the **Intune** blade, choose **Mobile apps**.
+1.  In the **Mobile apps** workload, choose **Manage** > **App Configuration Policies**.
 
 2.  In the list of policies blade, choose **Add**.
 
