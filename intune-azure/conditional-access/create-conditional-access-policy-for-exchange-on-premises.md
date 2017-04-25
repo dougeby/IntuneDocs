@@ -132,7 +132,7 @@ Beginning with Intune 1704 release, admins can create Azure AD conditional acces
 
 3. Choose **New policy** to create your new Azure AD conditional access policy.
 
-	![Azure AD conditional access policies](../media/Azure-AD-CA-Intune.png)
+	![Azure AD conditional access policies](./media/Azure-AD-CA-Intune.png)
 
 ## See also
 
