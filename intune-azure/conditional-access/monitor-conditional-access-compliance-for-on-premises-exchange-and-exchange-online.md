@@ -51,15 +51,15 @@ Beginning with Intune 1704 release, admins can see reporting information relate
 
 6.  Choose one of the three areas (**Blocked**, **Quarantine** or **Allowed**) on the chart to view your conditional access compliance reporting.
 
-    ![Conditional Access Dashboard](./media/CA-reporting-intune-1.png)
+    ![Conditional Access Dashboard](../media/CA-reporting-intune-1.png)
 
 Once you choose one of three areas, you can see more details about devices being blocked or quarantined:
 
-![Conditional access MDM device reporting blade](./media/CA-reporting-intune-2.png)
+![Conditional access MDM device reporting blade](../media/CA-reporting-intune-2.png)
 
 You can also drill down in specific devices to see more details. For example, the device chosen on the image below is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report blade.
 
-![Conditional access device detail reporting](./media/CA-reporting-intune-3.png)
+![Conditional access device detail reporting](../media/CA-reporting-intune-3.png)
 
 At the device details blade, you can see more information:
 
