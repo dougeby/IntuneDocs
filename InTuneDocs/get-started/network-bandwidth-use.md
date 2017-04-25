@@ -29,9 +29,9 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [frequently asked questions about the Intune Company Portal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
+his guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [Use managed devices to get work done](what-to-know-before-you-start-microsoft-intune.md).
 
-Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Before you set up Microsoft Intune, review this topic and other requirements listed in [Supported devices and browsers](what-to-know-before-you-start-microsoft-intune.md).
 
 Use the information in the following sections to plan for network traffic for Microsoft Intune clients.
 
