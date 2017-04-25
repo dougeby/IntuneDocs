@@ -32,25 +32,6 @@ ms.custom: intune-classic
 
 Intune manages Windows PCs using policies, similar to the way that Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization. You can read more about [GPOs](https://technet.microsoft.com/library/hh147307.aspx).
 
-## Policies and app deployments for the Intune software client
-
-While the Intune client software supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client software cannot be targeted with other Intune policies, including those **Windows** policy settings that are specific to mobile device management.
-
-When you use the Intune client software to manage Windows PCs, you can use only the policies shown under the **Computer Management** section.
-
-  ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
-
-For detailed descriptions of the policies that you can set, see:
-
-- [Use policies to help protect Windows PCs that run the Intune client software](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-In addition, when deploying apps, you can use only the Windows Installer (.exe, .msi).
-
-  ![Select platform and location for PC client software files](../media/select-platform-of-software-files-for-pc-agent.png)
-
 > [!NOTE]
 > You can manage Windows 8.1 or later devices either as PCs, by using the Intune client software, or as mobile devices by using the mobile device management (MDM) functionality. You cannot use both methods together, so carefully consider your decision before deciding to manage PCs by using the Intune client software. This topic applies only to managing devices as PCs by running the Intune client software.
 
@@ -91,12 +72,28 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 
 <!-- - **Compliance settings reporting** -->
 
+## Policies and app deployments for the Intune software client
+
+While the Intune client software supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client software cannot be targeted with other Intune policies, including those **Windows** policy settings that are specific to mobile device management.
+
+When you use the Intune client software to manage Windows PCs, you can use only the policies shown under the **Computer Management** section.
+
+  ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
+
+For detailed descriptions of the policies that you can set, see:
+
+- [Use policies to help protect Windows PCs that run the Intune client software](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
+- [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+- [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
+- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+
+In addition, when deploying apps, you can use only the Windows Installer (.exe, .msi).
+
+  ![Select platform and location for PC client software files](../media/select-platform-of-software-files-for-pc-agent.png)
+
 ## Common tasks for Windows PCs
-In the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
 
-  ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
-
-You can also use the Intune admin console to perform other common computer management tasks on Windows PCs that have the client installed:
+You can use the Intune admin console to perform other common computer management tasks on Windows PCs that have the client installed:
 - [Use policies to simplify PC management](use-policies-to-simplify-windows-pc-management.md) - Describes Intune's **Computer Management** policies and lists the settings for the Microsoft Intune Center.
 
 - [View hardware and software inventory for Windows PCs](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md) - Explains how to create a report that lists information about the hardware capabilities of PCs and the software installed on them. Also explains how to refresh PC inventory to ensure that it is current.
@@ -111,8 +108,11 @@ For more information about the above tasks, see [common computer management task
 Some management options, which can be used to manage PCs as mobile devices, cannot not used for PCs that are managed with the Intune client software:
 
 -   Full wipe (selective wipe is available)
-
 -   Conditional access
+
+Also note that in the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
+
+  ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
 
 ## Help with troubleshooting
 
