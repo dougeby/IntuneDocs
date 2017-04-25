@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,10 @@ Use this topic to learn about any known issues in the Intune preview.
 If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 If you want to request a new feature be added to Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
+
+## Azure self-service group management setting causes migration to fail
+
+If you set the option **Self-service group management enabled** to **No** in the **Group settings** > **General settings** blade of the Azure portal, then your migration to Azure will fail. Ensure this option is not selected before you are migrated.
 
 ## Groups created by Intune during migration might affect functionality of other Microsoft products
 
