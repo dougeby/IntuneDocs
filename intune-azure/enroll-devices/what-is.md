@@ -31,11 +31,11 @@ ms.custom: intune-azure
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
 
-You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). When devices are enrolled as mobile devices (not as PCs), they are issued an MDM certificate, which the devices then use to communicate with the Intune service.
+You enroll devices in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). When devices are enrolled in Intune, they are issued an MDM certificate, which the devices then use to communicate with the Intune service.
 
 The way you enroll your devices depends on the device type, ownership, and the level of management you needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements.
 
-If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment (more information is coming soon). You can manage Windows PCs as mobile devices, which is the recommended method described below. You can also manage them as PCs by using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment (more information is coming soon). You can manage Windows PCs as mobile devices, which is the recommended method described below.
 
 
 ## Overview of device enrollment methods
@@ -70,7 +70,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-ios-devices-using-device-enrollment-program.md)|
-|[Android for Work](#android-for-work)| No | Yes | No| [More information](#enroll-android-and-knox-standard-devices.md) |
+|[**Android for Work**](#android-for-work)| No | Yes | No| [More information](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## BYOD
@@ -121,4 +121,4 @@ See [Supported devices and browsers for Intune](https://docs.microsoft.com/intun
 
 ## Mobile device cleanup after MDM certificate expiration
 
-The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices (not PCs) are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate will not get renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.
+The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate will not get renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.
