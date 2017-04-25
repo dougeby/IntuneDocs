@@ -26,8 +26,9 @@ ms.custom: intune-classic
 
 ---
 
-# Manage Windows PCs with Intune PC client software
-[Enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md) is the preferred method of enrolling Windows PCs into Intune, but as an IT administrator you can alternatively choose to enroll and manage Windows PCs by installing the Intune client software, as described in this topic. The Intune software client is not supported with the enrollment as a mobile device.
+# Manage Windows PCs as computers via Intune PC client software agent
+
+[Enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md) is the preferred method of enrolling Windows PCs into Intune and allows automatic enrollment and bulk enrollment, but as an IT administrator you can alternatively choose to enroll and manage Windows PCs by installing the Intune client software agent described in this topic. The Intune software client is not supported with enrollment as a mobile device.
 
 Intune manages Windows PCs using policies, similar to the way that Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization. You can read more about [GPOs](https://technet.microsoft.com/library/hh147307.aspx).
 
@@ -91,7 +92,7 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 <!-- - **Compliance settings reporting** -->
 
 ## Common tasks for Windows PCs
-In the Intune admin console, certain sections, such as "Updates," "Protection," and "Licenses" appear only if you have enrolled devices using the Intune client software.
+In the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
 
   ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
 

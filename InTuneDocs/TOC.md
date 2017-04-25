@@ -83,11 +83,13 @@
 #### [Exchange access rules](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Manage Android for Work](deploy-use/android-for-work.md)
 
-## [Manage PCs](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Manage PCs with software agent](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
+### [Add apps for Intune client PCs](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Manage license agreements for Intune client PCs](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
-
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](deploy-use/ios-policy-settings-in-microsoft-intune.md)
@@ -123,7 +125,6 @@
 ### [Protect devices with multi-factor authentication](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
-### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Software updates](deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 #### [Windows Firewall](deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 #### [Endpoint Protection](deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
@@ -133,8 +134,6 @@
 ## [Add apps](deploy-use/add-apps.md)
 ### [Add apps for enrolled devices](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Sideload Windows apps](deploy-use/sideload-apps-for-windows.md)
-### [Add apps for Intune client PCs](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
-#### [Manage license agreements for Intune client PCs](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Deploy apps](deploy-use/deploy-apps.md)
 ### [Deploy apps to devices and PCs](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [Deploy apps to Android for Work devices](deploy-use/android-for-work-apps.md)
