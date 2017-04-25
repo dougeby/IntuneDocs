@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -79,8 +79,8 @@ You must make any changes to groups in the [Azure Portal](https://portal.azure.c
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-1. In the **Manage Apps** workload, choose **Manage** > **Apps**.
+3. On the **Intune** blade, choose **Mobile apps**.
+1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
 2. On the list of apps blade, click the app you want to assign.
 3. On the <*app name*> - **Overview** blade, choose **Manage** > **Assignments**.
 4. Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.
