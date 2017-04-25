@@ -81,11 +81,12 @@
 #### [Exchange ActiveSync on-premises](deploy-use/intune-on-premises-exchange-connector.md)
 #### [Exchange ActiveSync online](deploy-use/intune-service-to-service-exchange-connector.md)
 #### [Exchange access rules](deploy-use/exchange-access-rules-for-mobile-devices.md)
-### [Manage PCs](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
-#### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
-#### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-#### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Manage Android for Work](deploy-use/android-for-work.md)
+
+## [Manage PCs](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
+### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

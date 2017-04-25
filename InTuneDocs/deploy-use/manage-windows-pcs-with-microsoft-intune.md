@@ -75,19 +75,22 @@ The following are software requirements for installing the client software:
 |Remove incompatible client software|Before you install the Intune client software, uninstall any Configuration Manager, Operations Manager, Operations Management Suite, and Service Manager client software from that PC.|
 
 ## Computer management capabilities with the Intune client software
+In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
-After the Intune client software is installed, management capabilities include:
+-   **[Software update management](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - You can keep PCs up to date and decide when updates are applied.
 
-- [Application management](deploy-apps-in-microsoft-intune.md)
+-   **[Windows Firewall policy](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
 
-- [Real-time monitoring and Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - Endpoint Protection is the same thing as Windows Defender. Endpoint Protection applies to Windows 7 and Windows 8. For Windows 10 and later, the product name changed to Windows Defender.
+-   **[Anti-malware protection](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
-- [Windows Firewall settings management](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), hardware and software inventory, remote control (through remote assistance requests)
+-   **[Remote assistance](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
-- [Software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+-   **[Software license management](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - Track how many software licenses are available, and how many available licenses are being used.
+-   **[App deployment](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
 
-- Compliance settings reporting
+<!-- - **Compliance settings reporting** -->
 
+## Common tasks for Windows PCs
 In the Intune admin console, certain sections, such as "Updates," "Protection," and "Licenses" appear only if you have enrolled devices using the Intune client software.
 
   ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
