@@ -57,7 +57,7 @@ The following are software requirements for installing the client software:
 |Remove incompatible client software|Before you install the Intune client software, uninstall any Configuration Manager, Operations Manager, Operations Management Suite, and Service Manager client software from that PC.|
 
 ## Deploying the Intune software client
-As an Intune admin, you can make the Intune software client available to users in a variety of ways. For guidance, see [Install the Intune software client on Windows PCs](install-the-windows-pc-client-with-microsoft-intune). 
+As an Intune admin, you can make the Intune software client available to users in a variety of ways. For guidance, see [Install the Intune software client on Windows PCs](install-the-windows-pc-client-with-microsoft-intune.md).
 
 ## Computer management capabilities with the Intune client software
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
@@ -83,14 +83,7 @@ When you use the Intune client software to manage Windows PCs, you can use only 
 
   ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
 
-For detailed descriptions of the policies that you can set, see:
-
-- [Use policies to help protect Windows PCs that run the Intune client software](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-In addition, when deploying apps, you can use only the Windows Installer (.exe, .msi).
+When deploying apps, you can use only the Windows Installer (.exe, .msi).
 
   ![Select platform and location for PC client software files](../media/select-platform-of-software-files-for-pc-agent.png)
 
