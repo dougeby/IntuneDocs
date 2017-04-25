@@ -94,6 +94,8 @@
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
+### [Get ready for WIP app protection policies](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Create & assign WIP app protection policies](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)
