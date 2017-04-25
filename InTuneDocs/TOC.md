@@ -89,7 +89,7 @@
 #### [PC policies](deploy-use/use-policies-to-simplify-windows-pc-management.md)
 #### [View inventory](deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)
 #### [Retire PCs](deploy-use/retire-a-windows-pc-with-microsoft-intune.md)
-#### [Link PCs-users]deploy-use/(manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md)
+#### [Link PCs-users](deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md)
 #### [Remote assistance](deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Software updates](deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
