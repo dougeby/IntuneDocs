@@ -60,7 +60,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 ## iOS (Enterprise-signed version of Lookout app)
 
-1. Make sure **iOS management** is set up on your device. For instruction on how to setup your device for iOS management, see [Set up iOS and Mac device management](set-up-ios-and-mac-management-with-microsoft-intune.md).
+1. Make sure **iOS management** is set up on your device. For instructions on how to set up your device for iOS management, see [Set up iOS and Mac device management](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 2. **Re-sign** the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. **Before distributing the app**, you must re-sign the app with your iOS Enterprise Developer Certificate. For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) on the Lookout site.
 

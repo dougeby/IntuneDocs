@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Setup the Skycure integration with Intune | Microsoft Docs
-description: Setup the Skycure integration with Microsoft Intune.
+title: Set up the Skycure integration with Intune | Microsoft Docs
+description: Set up the Skycure integration with Microsoft Intune.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Setup the Skycure integration with Intune
+# Set up the Skycure integration with Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -58,7 +58,7 @@ Skycure supports two modes of integration with Intune:
 
 ## To set up the read-only integration between Intune and Skycure
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The Skycure admin credentials is an e-mail that must belong to a valid user in the Azure Active Directory, otherwise the login will fail. Skycure uses Azure Active Directory to authenticate its admin using Single Sign On (SSO).
 
 1.  Go to [Skycure Management Console](https://aad.skycure.com).
@@ -79,7 +79,7 @@ Skycure supports two modes of integration with Intune:
 
     ![iOS app completation screen](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Repeat the same process for the **Skycure Android** and **Management** apps.
 
 ### Add an Azure AD Security group into Skycure
