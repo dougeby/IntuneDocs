@@ -194,7 +194,8 @@
 ## [What is conditional access?](conditional-access/what-is-conditional-access.md)
 ## How to
 ### [Install Exchange on-premises connector](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Create a conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Create and assign conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Monitor conditional access compliance](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Access control
 ## [What is role-based access control?](access-control/role-based-access-control.md)
