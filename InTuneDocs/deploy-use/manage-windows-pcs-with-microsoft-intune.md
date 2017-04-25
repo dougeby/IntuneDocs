@@ -97,12 +97,12 @@ In the Intune admin console, certain sections, such as **Updates**, **Protection
   ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
 
 You can also use the Intune admin console to perform other common computer management tasks on Windows PCs that have the client installed:
+- [Use policies to simplify PC management](use-policies-to-simplify-windows-pc-management.md) - Describes Intune's **Computer Management** policies and lists the settings for the Microsoft Intune Center.
 
--   View hardware and software inventory information about managed computers
--   Remotely restart a computer
--   Retire a computer to uninstall the client software and remove it from management with Intune
--   Link users to specific managed computers
--   Respond to remote assistance requests
+- [View hardware and software inventory for Windows PCs](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md) - Explains how to create a report that lists information about the hardware capabilities of PCs and the software installed on them. Also explains how to refresh PC inventory to ensure that it is current.
+- [Retire a Windows PC](retire-a-windows-pc-with-microsoft-intune.md) - Lists the steps for retiring a Windows PC and describes what happens when you retire a PC.
+- [Manage user-device linking for Windows PCs](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) - Explains when and how you need to link a user to a PC before you deploy software to the user.
+- [Request and provide remote assistance for Windows PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Explains how Intune PC users get remote assistance help from you and describes prerequisites and TeamViewer setup.
 
 For more information about the above tasks, see [common computer management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
