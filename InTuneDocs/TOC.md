@@ -183,7 +183,7 @@
 ##### [Download iOS app configuration policy](deploy-use/download-skycure-ios-app-configuration-policy.md)
 ##### [Add and configure apps](deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md)
 ##### [Deploy apps to be used with Skycure](deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md)
-##### [Setup Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
+##### [Set up Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
 ##### [Enable Skycure in Intune ](deploy-use/enable-skycure-mobile-threat-defense-in-intune.md)
 ##### [Create Skycure compliance policy in Intune ](deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md)
 
