@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-his guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [Use managed devices to get work done](use-managed-devices-to-get-work-done.md).
+his guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [Use managed devices to get work done](https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done).
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [Supported devices and browsers](what-to-know-before-you-start-microsoft-intune.md).
 
