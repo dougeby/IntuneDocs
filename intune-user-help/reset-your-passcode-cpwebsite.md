@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ To reset your passcode:
 
   ![The reset passcode banner with its warning about resetting device passcode and how the user will be logged out. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup.png)
 
-5.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate.
+5.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate. 
 
   ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -64,6 +64,8 @@ To reset your passcode:
   **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're 		using Windows Hello facial recognition to log in, it will still be supported.
 	
   **Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode with numbers
+
+  For Android and Windows devices, the temporary password will appear in the **Device Details**. 
 
 6.  Unlock your device and set a new passcode, or change the temporary passcode by going to your device **Settings**.
 
