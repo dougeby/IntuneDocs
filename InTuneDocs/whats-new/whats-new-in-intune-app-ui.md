@@ -141,7 +141,6 @@ The Windows 10 Company Portal app will now provide app install progress bar for 
 </html>
 
 ## February 2017
->>>>>>> 55cad601d238c195a2a201dcb1aea47c443c695a
 
 ### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
 Beginning in March, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
