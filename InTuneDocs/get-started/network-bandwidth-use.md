@@ -29,11 +29,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-his guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [Use managed devices to get work done](https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done).
-
-Before you set up Microsoft Intune, review this topic and other requirements listed in [Supported devices and browsers](what-to-know-before-you-start-microsoft-intune.md).
-
-Use the information in the following sections to plan for network traffic for Microsoft Intune clients.
+This guidance helps Intune admins understand the network requirements for the Intune service. You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.
 
 ## Average network traffic
 This table lists the approximate size and frequency of common content that travels across the network for each client.
