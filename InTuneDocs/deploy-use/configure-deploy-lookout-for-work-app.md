@@ -60,7 +60,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 ## iOS (Enterprise-signed version of Lookout app)
 
-1. Make sure **iOS management** is set up on your device. For instruction on how to setup your device for iOS management, see [Set up iOS and Mac device management](set-up-ios-and-mac-management-with-microsoft-intune.md).
+1. Make sure **iOS management** is set up on your device. For instructions on how to set up your device for iOS management, see [Set up iOS and Mac device management](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 2. **Re-sign** the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. **Before distributing the app**, you must re-sign the app with your iOS Enterprise Developer Certificate. For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) on the Lookout site.
 
@@ -92,12 +92,12 @@ This article explains how to configure and deploy the Lookout for Work app for A
   Choose the **Required Install** option to require that the Lookout app be installed on the user’s device.
 
 ## What happens when the deployed app is opened on the device
-
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md
 When the user opens the Lookout for Work on the device they are prompted to activate the app, and choose the Sign in with Azure Active Directory option. A detailed walkthrough with the end-user flow can be found in the following topics:
 
-* [You are prompted to install Lookout for Work on your Android device](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+* [You are prompted to install Lookout for Work on your Android device](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [You need to resolve a threat that Lookout for Work found on your Android device](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [You need to resolve a threat that Lookout for Work found on your Android device](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## Next steps
 * [Create Lookout device compliance policy in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

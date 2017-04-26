@@ -54,7 +54,7 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 
 -   Users of previous solution could potentially access resources using un-managed devices until conditional access is enabled for those users.
 
-> [!TIP] 
+> [!TIP]
 > This is one approach among many. You may choose a simpler process that defers all conditional access until after every phase has been instructed to enroll, or a stricter process that enforces conditional access from the very beginning and requires full compliance for all access.
 
 -   Learn more about [conditional access](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access).
@@ -65,7 +65,7 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 
 -   Learn [how to configure conditional access](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
-### Task 2: Setup Intune conditional access
+### Task 2: Set up Intune conditional access
 
 Choose one of the following conditional access policy types to learn more:
 

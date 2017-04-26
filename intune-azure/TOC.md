@@ -58,7 +58,6 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Remote control Android devices](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Manage users
@@ -119,7 +118,6 @@
 #### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Web content filter for iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)

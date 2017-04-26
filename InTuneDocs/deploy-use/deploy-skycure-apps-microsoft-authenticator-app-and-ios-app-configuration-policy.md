@@ -70,4 +70,4 @@ ms.custom: intune-classic
 
 ## Next steps
 
-[Setup the Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+[Set up the Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)

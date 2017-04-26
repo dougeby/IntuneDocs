@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/20/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,10 +39,6 @@ As the public preview progresses, and more features are added, we'll let you kno
 ### Support for managed configuration options for Android apps <!-- 621621 -->
 
 Android apps in the Play store that support managed configuration options can now be configure by Intune.  This feature lets IT view the list of configuration values supported by an app, and provides a guided, first-class UI to allow them to configure those values.
-
-### Remote assistance for Android devices <!-- 675418 -->
-
-Intune now uses the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information see [Remote control Android devices using TeamViewer](/intune-azure/manage-devices/control-android-devices-with-teamviewer).
 
 ### New Android policy for complex PINs <!-- 722069 -->
 
