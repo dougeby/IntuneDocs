@@ -52,7 +52,6 @@ Use the information in this topic to learn the basics about configuring device f
 	- [Home screen layout settings for iOS](home-screen-settings-for-ios.md)
 	- [App notification settings for iOS](app-notification-settings-for-ios.md)
 	- [Shared device configuration settings for iOS](shared-device-settings-for-ios.md)
-	- [Web content filter settings for iOS](web-content-filter-settings-for-ios.md)
 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
