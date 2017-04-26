@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
-The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal.
+The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal. You can see the new status messages for the Company Portal app for Windows 10 on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 ### Improved status messaging in the Company Portal app for iOS <!--744866-->
 
