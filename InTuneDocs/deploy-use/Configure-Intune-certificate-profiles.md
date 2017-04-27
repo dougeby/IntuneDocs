@@ -62,8 +62,6 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 -  Windows Phone 8.1 and later
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Add a **Trusted Certificate Profile** policy.
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
