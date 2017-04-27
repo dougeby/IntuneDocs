@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get ready to configure app protection policies for Windows 10 | Microsoft Docs
-description: Setup mobile application management (MAM) provider in Azure AD
+description: Set up mobile application management (MAM) provider in Azure AD
 keywords:
 author: andredm7
 ms.author: andredm

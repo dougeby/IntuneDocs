@@ -88,7 +88,7 @@ All users that will be targeted for EMS/Intune and Office 365 rollout will need 
 
 #### Task 5: Set Mobile Device Management Authority to Intune
 
-Before you can begin to setup, configure, manage and enroll devices using Intune, you must set the Device Management Authority to Intune. Setting the Device Management Authority task is completed in the Intune Admin Portal, Admin workspace.
+Before you can begin to set up, configure, manage and enroll devices using Intune, you must set the Device Management Authority to Intune. Setting the Device Management Authority task is completed in the Intune Admin Portal, Admin workspace.
 
 -   Learn more about [how to set the Device Management Authority](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
 

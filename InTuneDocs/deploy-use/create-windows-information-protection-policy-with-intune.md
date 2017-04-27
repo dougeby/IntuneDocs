@@ -187,7 +187,3 @@ After you created your WIP app protection policy, you need to deploy it to your 
 	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 
 1.  Choose the group you want your policy to apply to, then click **Select** to deploy the policy.
-
-## Next steps
-
-[Deploy a WIP app protection policy with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-windows-information-protection-policy-with-intune)

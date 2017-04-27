@@ -94,6 +94,8 @@
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
+### [Get ready for WIP app protection policies](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Create & assign WIP app protection policies](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)
@@ -118,7 +120,6 @@
 #### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Web content filter for iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +195,8 @@
 ## [What is conditional access?](conditional-access/what-is-conditional-access.md)
 ## How to
 ### [Install Exchange on-premises connector](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Create a conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Create and assign conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Monitor conditional access compliance](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Access control
 ## [What is role-based access control?](access-control/role-based-access-control.md)

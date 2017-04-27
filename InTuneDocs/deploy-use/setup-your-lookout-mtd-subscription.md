@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setup your subscription with Lookout | Microsoft Docs
+title: Set up your subscription with Lookout | Microsoft Docs
 description: This topics provides details on how to configure Lookout device threat protection.
 keywords:
 author: andredm7

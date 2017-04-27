@@ -188,7 +188,7 @@
 ##### [Download iOS app configuration policy](deploy-use/download-skycure-ios-app-configuration-policy.md)
 ##### [Add and configure apps](deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md)
 ##### [Deploy apps to be used with Skycure](deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md)
-##### [Setup Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
+##### [Set up Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
 ##### [Enable Skycure in Intune ](deploy-use/enable-skycure-mobile-threat-defense-in-intune.md)
 ##### [Create Skycure compliance policy in Intune ](deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md)
 
@@ -198,9 +198,8 @@
 #### [Get ready to configure app protection policies for Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
 #### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
-#### [App protection policies for Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Create and deploy app protection policies for iOS and Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Create and assign WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
