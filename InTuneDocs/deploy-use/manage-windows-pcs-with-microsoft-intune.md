@@ -26,14 +26,17 @@ ms.custom: intune-classic
 
 ---
 
-# Manage Windows PCs as computers via Intune PC client software agent
+# Manage Windows PCs as computers via Intune software agent
 
-[Enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md) is the preferred method of enrolling Windows PCs into Intune and allows automatic enrollment and bulk enrollment, but as an IT administrator you can alternatively choose to enroll and manage Windows PCs by installing the Intune client software agent described in this topic. The Intune software client is not supported with enrollment as a mobile device.
+Intune provides a comprehensive solution for organization to manage mobile devices, including managing Windows PCs as “mobile devices,” using the simplified, “modern” device management capabilities in the Windows 10 operating system.  To provide the flexibility to best meet your organization’s management needs, Intune can also manage Windows PCs as computers by using the Intune software agent.
 
-Intune manages Windows PCs using policies, similar to the way that Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization. You can read more about [GPOs](https://technet.microsoft.com/library/hh147307.aspx).
+The Intune software agent is best suited for Windows PCs running legacy operating systems such as Windows 7. Windows 7 PCs cannot be managed as mobile devices. The Intune software client uses management capabilities like Group Policy to manage PCs from the cloud.
+
+Intune can support software client management on up to 7,000 PCs. For larger deployments, manage Windows 10 PCs as mobile devices. Each release of Intune and update of Windows 10 include management features based on the mobile device management architecture. We strongly recommend that you move your organization to Windows 10 managed as mobile devices.
+
 
 > [!NOTE]
-> You can manage Windows 8.1 or later devices either as PCs, by using the Intune client software, or as mobile devices by using the mobile device management (MDM) functionality. You cannot use both methods together, so carefully consider your decision before deciding to manage PCs by using the Intune client software. This topic applies only to managing devices as PCs by running the Intune client software.
+> You can manage Windows 8.1 and later devices either as PCs by using the Intune client software or as mobile devices. You cannot use both methods on the same device. Carefully consider before deciding to manage PCs with the Intune client software. This topic applies only to managing devices as PCs by running the Intune client software.
 
 ## Requirements for Intune PC client management
 
@@ -80,6 +83,8 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 While the Intune client software supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client software cannot be targeted with other Intune policies, including those **Windows** policy settings that are specific to mobile device management.
 
 When you use the Intune client software to manage Windows PCs, you can use only the policies shown under the **Computer Management** section.
+
+Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you manage Active Directory domain-joined computers with Intune, [ensure that Intune policies do not conflict with other GPOs](https://docs.microsoft.com/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
 
