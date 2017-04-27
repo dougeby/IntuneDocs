@@ -193,9 +193,8 @@
 #### [Get ready to configure app protection policies for Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
 #### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
-#### [App protection policies for Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Create and deploy app protection policies for iOS and Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Create and assign WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 

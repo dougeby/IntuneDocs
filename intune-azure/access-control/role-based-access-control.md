@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,9 +84,7 @@ The new role is displayed in the list on the **Roles** blade.
 ## How to assign a role
 
 1. On the **Roles** blade of the **Access control** workload, choose the built-in, or custom role you want to assign.
-2. On the <*role name*> - **Properties** blade, choose **Manage** > **Assignments**.
-	>[!TIP]
-	>On this blade, you can also edit or delete existing roles.
+2. On the <*role name*> - **Properties** blade, choose **Manage** > **Assignments**. On this blade, you can also edit or delete existing roles.
 3. On the next blade, choose **Assign**.
 4. On the **Role Assignments** blade, enter a **Name** and optional **Description** for the assignment, and then choose the following:
 	- **Members** - Select a group that contains the user you want to give the permissions to.

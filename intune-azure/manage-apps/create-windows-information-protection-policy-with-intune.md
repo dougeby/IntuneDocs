@@ -2,17 +2,18 @@
 # required metadata
 
 title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune | Microsoft Docs
-description: Create and deploy WIP app protection policy with Intune
+titleSuffix: "Intune Azure preview"
+description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
+ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 
 # optional metadata
 
@@ -22,13 +23,13 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-azure
 
 ---
 
 # Create and deploy Windows Information Protection (WIP) app protection policy with Intune
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in the mobile application management (MAM) without enrollment scenario.
 
@@ -54,7 +55,7 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 You need to configure the MAM provider before you can create a WIP app protection policy.
 
--   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10).
+-   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/intune-azure/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10).
 
 Additionally, you need to have the following:
 
