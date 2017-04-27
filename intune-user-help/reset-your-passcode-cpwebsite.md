@@ -51,7 +51,7 @@ To reset your passcode:
 
   ![The reset passcode banner with its warning about resetting device passcode and how the user will be logged out. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup.png)
 
-5.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate. 
+5.  Select **Sign out**, and you will receive one final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate. 
 
   ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
 
