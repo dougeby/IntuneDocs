@@ -45,7 +45,6 @@ For details, see [Restrict access to email and O365 services with Microsoft Intu
 - **Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 For a complete list of Intune policies, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).
 
