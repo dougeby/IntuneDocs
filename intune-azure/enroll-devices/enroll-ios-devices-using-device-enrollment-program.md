@@ -148,7 +148,7 @@ Now that Intune has been assigned permission to manage your DEP devices, you can
 >You can also assign DEP serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
 
 ## Assign a DEP profile to devices
-DEP devices managed by Intune must be assigned a DEP profile before they are enrolled. Once you assign the device a DEP profile it will be factory reset. If devices have already been distributed to users, data might be lost when the device enrolls in Intune.
+DEP devices managed by Intune must be assigned a DEP profile before they are enrolled.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
@@ -167,7 +167,7 @@ DEP devices managed by Intune must be assigned a DEP profile before they are enr
 
 ## Distribute devices to users
 
-You can now distribute corporate-owned devices to users. When an iOS DEP device is turned on, it will be enrolled for management by Intune.
+You can now distribute corporate-owned devices to users. When an iOS DEP device is turned on, it will be enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset.
 
 ### How users install and use the Company Portal on their devices
 
