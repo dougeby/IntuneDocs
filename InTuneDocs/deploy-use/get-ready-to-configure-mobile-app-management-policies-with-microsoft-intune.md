@@ -91,7 +91,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
   - To create SharePoint Online and Exchange Online work
  accounts. Exchange on-premises and SharePoint on-premises are not supported.
 
--   **Skype for Business Online setup for modern authentication**. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Skype for Business Online setup for modern authentication**. For more information, see [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) to create users. Azure AD authenticates users when they open the app and enter their work credentials.
@@ -101,7 +101,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 ### Create users and assign Microsoft Intune licenses
 
-1.  Sign in to the   [Office portal](http://portal.office.com) with your admin credentials.
+1.  Sign in to the [Office portal](https://portal.office.com) with your admin credentials.
 
 2.  Add users as described in the **Steps to complete a 30-day evaluation of Intune** section of the [Intune evaluation guide](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 

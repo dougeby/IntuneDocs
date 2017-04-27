@@ -59,20 +59,20 @@ Then, [deploy the policy](/intune/deploy-use/manage-settings-and-features-on-you
 These settings can be used to create a custom configuration for a VPN in a fictitious company called Contoso.
 For full details about all the settings you can use, see [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
-Native Contoso VPN (IKEv2):<br />
-`./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers`
+**Native Contoso VPN (IKEv2):**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
-vpn.contoso.com<br />
-`./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType`
+**vpn.contoso.com**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType
 
-Ikev2<br />
-`./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType`
+**Ikev2<br />**
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType
 
-SplitTunnel<br />
-`./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod`
+**SplitTunnel**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod
 
-Eap<br />
-`./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration`
+**Eap**<br />
+./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration
 ``` xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
    <EapMethod>

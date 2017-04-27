@@ -46,8 +46,8 @@ There are three different places to monitor the compliance status:
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-4. In the **Manage apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
+3. On the **Intune** blade, choose **Mobile apps**.
+4. In the **Mobile apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
 
 ![Summary tile on the Intune mobile application management blade](../media/app-protection-user-status-summary.png)
 

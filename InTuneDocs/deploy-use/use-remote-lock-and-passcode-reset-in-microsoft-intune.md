@@ -67,7 +67,7 @@ If a user forgets a passcode, you can help by removing the passcode from a devic
 |iOS|Supported for clearing the passcode from a device. Does not create a new temporary passcode.|
 |Android|Supported on versions earlier than Android 7.0. Creates a temporary passcode.|
 |Android for Work|Not supported|
-|Windows 10 Mobile|Supported|
+|Windows 10 mobile|Supported for Windows 10 Creator version and later mobile devices that are Azure AD joined.|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1|Not Supported|
 |Windows 8.1|Not Supported|

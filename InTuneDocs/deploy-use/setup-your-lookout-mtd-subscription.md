@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setup your subscription with Lookout | Microsoft Docs
+title: Set up your subscription with Lookout | Microsoft Docs
 description: This topics provides details on how to configure Lookout device threat protection.
 keywords:
 author: andredm7
@@ -143,4 +143,4 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 ## Watching enrollment
 Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Configure and deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md) topic.
 ## Next steps
-[Enable Lookout MTP connection Intune](enable-lookout-mtp-connection-in-intune.md)
+[Enable Lookout MTP connection Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)

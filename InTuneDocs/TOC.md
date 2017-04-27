@@ -12,7 +12,7 @@
 
 # [Get Started](get-started/get-started.md)
 ## [Set up Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prerequisites]
+### Prerequisites
 #### [Supported devices](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Network usage](get-started/network-bandwidth-use.md)
 ### [Sign in to Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -76,6 +76,7 @@
 ##### [DEP enrollment](deploy-use/ios-device-enrollment-program-in-microsoft-intune.md)
 #### [Enroll with device enrollment manager](deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+#### [Bulk enroll Windows devices](deploy-use/bulk-enroll-windows.md)
 ### [MDM with Exchange ActiveSync](deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange ActiveSync on-premises](deploy-use/intune-on-premises-exchange-connector.md)
 #### [Exchange ActiveSync online](deploy-use/intune-service-to-service-exchange-connector.md)
@@ -168,6 +169,7 @@
 ### [Allow only policy managed app access to O365 services](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Use apps with App-based CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
+#### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Protect access based on device, network, and application risk](deploy-use/mobile-threat-defense.md)
@@ -181,16 +183,18 @@
 ##### [Download iOS app configuration policy](deploy-use/download-skycure-ios-app-configuration-policy.md)
 ##### [Add and configure apps](deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md)
 ##### [Deploy apps to be used with Skycure](deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md)
-##### [Setup Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
+##### [Set up Skycure and Intune integration](deploy-use/setup-the-skycure-integration-with-Intune.md)
 ##### [Enable Skycure in Intune ](deploy-use/enable-skycure-mobile-threat-defense-in-intune.md)
 ##### [Create Skycure compliance policy in Intune ](deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Get ready to configure app protection policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy app protection policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Get ready to configure app protection policies for iOS and Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Get ready to configure app protection policies for Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
 #### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Create and deploy app protection policies for iOS and Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and assign WIP app protection policies for Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 

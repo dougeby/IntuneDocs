@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure Intune education settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure education settings on devices you manage."
+title: Configure Intune education settings for Windows 10titleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Learn how to use Intune to configure Windows 10 education settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# How to configure education settings in Microsoft Intune
+# How to configure Windows 10 education settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
