@@ -1,17 +1,21 @@
-# Introduction
+# [Introduction](/intune/understand-explore/introduction-to-microsoft-intune)
 ## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
 ## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
-## Get started
-<!---(introduction/get-started.md) --->
-### [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
+## [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [What's new](introduction/whats-new.md)
+### [What's new in the app UI](/intune/whats-new/whats-new-in-intune-app-ui)
+### [What's new archive](NEWFILE)
+## [High-level architecture](NEWFILE)
+## [Device and app lifecycles](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+### [Device lifecycle](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune)
+### [App lifecycle](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune)
+## [Common scenarios](/intune/understand-explore/common-ways-to-use-intune)
 ## [Known issues](introduction/known-issues-in-the-intune-preview.md)
 ## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
-<!---
 
-## [Related resources](introduction/related-resources.md)
+# Get started
 
-## [Get started](plan-and-design/get-started.md) --->
+# Plan deployment
 
 # [Plan and design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
 ## [Section 1: Determine deployment goals, objectives and challenges](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=%2fintune-azure%2ftoc.json)
@@ -24,6 +28,8 @@
 ## [Section 8: Intune implementation](/intune/plan-design/section-8-onboarding-process?toc=%2fintune-azure%2ftoc.json)
 ## [Section 9: Testing and validation](/intune/plan-design/section-9-test-and-validation?toc=%2fintune-azure%2ftoc.json)
 ## [Additional resources](/intune/plan-design/additional-resources?toc=%2fintune-azure%2ftoc.json)
+
+# How to
 
 # Enroll devices
 ## [What is device enrollment?](enroll-devices/what-is.md)
@@ -200,6 +206,8 @@
 
 # Access control
 ## [What is role-based access control?](access-control/role-based-access-control.md)
+
+# Monitor and troubleshoot
 
 # Develop and customize
 ## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=%2fintune-azure%2ftoc.json)
