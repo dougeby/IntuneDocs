@@ -594,7 +594,7 @@
 	}
   ,
   {
-    "source_path": "get-started/windows-pc-management-capabilities-in-microsoft-intune",
+    "source_path": "InTuneDocs/get-started/windows-pc-management-capabilities-in-microsoft-intune",
     "redirect_url": "https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune",
     "redirect_document_id": true
   }
