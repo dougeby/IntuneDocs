@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remove company data from devices with Intune
+title: Remove company data from devices with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to remove only company data from devices you manage with Intune."
 keywords:
