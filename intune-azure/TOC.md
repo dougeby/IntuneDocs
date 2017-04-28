@@ -234,7 +234,7 @@
 ## [Prepare LOB apps for MAM](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
-## [Sideload Windows apps](deploy-use/sideload-apps-for-windows?toc=/intune-azure/toc.json)
+## [Sideload Windows apps](/intune/deploy-use/sideload-apps-for-windows?toc=/intune-azure/toc.json)
 ## [Intune App SDK](/intune/develop/intune-app-sdk?toc=/intune-azure/toc.json)
 ### [Get started with Intune App SDK](/intune/develop/intune-app-sdk-get-started?toc=/intune-azure/toc.json)
 ### [Intune App SDK for iOS](/intune/develop/intune-app-sdk-?toc=/intune-azure/toc.json)
