@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activate iOS lost mode with Intune
+title: Activate iOS lost mode with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to activate lost mode on lost or stolen iOS devices."
 keywords:
