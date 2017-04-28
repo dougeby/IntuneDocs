@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remotely lock managed devices with Intune
+title: Remotely lock managed devices with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to remotely lock devices you manage."
 keywords:
