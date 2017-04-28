@@ -28,9 +28,7 @@ ms.custom: intune-classic
 
 # What is Intune for Education?
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. Intune for Education is designed to accomplish this task while meeting the specific needs of schools and school districts.
+Intune for Education is designed to enable your teachers and students to be productive while keeping school data protected. Intune is a cloud-based enterprise mobility management (EMM) service that is the foundation for Intune for Education. 
 
 ![Intune for Education console compared against Intune console.](./media/intune-azure-vs-intuneEDU.png)
 
