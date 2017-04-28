@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remotely restart devices with Intune
+title: Remotely restart devices with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to remotely restart devices using the restart device action."
 keywords:
