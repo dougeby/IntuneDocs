@@ -58,7 +58,16 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-<!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
+### [Bypass iOS Activation Lock](manage-devices/bypass-activation-lock.md)
+### [Factory reset devices](manage-devices/factory-reset.md)
+### [Manage Windows Fresh Start](manage-devices/fresh-start.md)
+### [Locate lost iOS devices](manage-devices/locate-device.md)
+### [Enable iOS lost mode](manage-devices/lost-mode.md)
+### [Remotely lock devices](manage-devices/remote-lock.md)
+### [Remove company data](manage-devices/remove-company-data.md)
+### [Reset device passcodes](manage-devices/reset-passcode.md)
+### [Restart devices](manage-devices/restart-device.md)
+### [Examine device inventory](manage-devices/device-inventory.md)
 
 # Manage users
 ## [What is user management?](manage-users/what-is.md)
