@@ -83,11 +83,16 @@
 
 ## [Manage devices](manage-devices/what-is.md)
 ### [Wipe device](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### Remote lock
-### Reset passcode
-### Bypass activation lock
-### Locate device
-### Restart device
+### [Bypass activation lock](manage-devices/bypass-activation-lock.md)
+### [Factory reset device](manage-devices/factory-reset.md)
+### [Manage Windows Fresh Start](manage-devices/fresh-start.md)
+### [Locate lost iOS device](manage-devices/locate-device.md)
+### [Enable iOS lost mode](manage-devices/lost-mode.md)
+### [Lock device](manage-devices/remote-lock.md)
+### [Remove company data](manage-devices/remove-company-data.md)
+### [Reset passcode](manage-devices/reset-passcode.md)
+### [Restart device](manage-devices/restart-device.md)
+### [Examine device inventory](manage-devices/device-inventory.md)
 
 ## [Manage users](manage-users/what-is.md)
 ### [Get started with groups](manage-users/get-started-with-groups.md)
@@ -216,7 +221,6 @@
 
 
 # Monitor and troubleshoot
-## Device inventory
 ## [Monitor telecom expenses](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
 
 
