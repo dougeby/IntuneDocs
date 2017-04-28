@@ -79,6 +79,7 @@
 #### Set up Apple School Manager
 #### [Set up with Apple Configurator](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 ### [Set up macOS enrollment](enroll-devices/enroll-macos-devices.md)
+### [Educate users](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune?toc=/intune-azure/toc.json)
 
 ## [Manage devices](manage-devices/what-is.md)
 ### [Wipe device](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
@@ -186,8 +187,8 @@
 #### Prerequisites	
 #### Set up Lookout	
 #### Set up Skycure	
-### Enable mobile threat protection in Intune	
-### Create a mobile threat protection compliance policy	
+#### Enable mobile threat protection in Intune	
+#### Create a mobile threat protection compliance policy	
 ### [Set up Windows Hello](enroll-devices/how-to-use-windows-hello.md)		
 ### Protect devices with remote actions		
 
@@ -197,19 +198,30 @@
 ### [Use the helpdesk operator role](manage-users/help-desk.md) 
 ### Custom role settings
 
-## [Set up a telecom expense management service](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
+## [Manage PCs with software agent](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Install the PC client](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Common PC management tasks](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune-azure/toc.json)
+#### [PC policies](/intune/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune-azure/toc.json) 
+#### [View inventory](/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Retire PCs](/intune/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Link PCs to users](/intune/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Remote assistance](/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Policies to protect Windows PCs](/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Software updates](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Windows Firewall](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune-azure/toc.json) 
+#### [Endpoint Protection](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Add apps for Intune client PCs](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Manage license agreements](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune-azure/toc.json) 
+### [Resolve policy conflicts](/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune-azure/toc.json) 
 
-## [Manage PCs](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune-azure/toc.json)
-### PC client capabilities
-###	[Install the PC client](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune-azure/toc.json)
-###	[Common PC management tasks](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune-azure/toc.json)
-###	[Resolve PC policy conflicts](/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune-azure/toc.json)
 
 # Monitor and troubleshoot
 ## Device inventory
+## [Monitor telecom expenses](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
+
 
 # Develop and customize
-## [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
+## [Configure custom device settings](configure-devices/how-to-configure-custom-settings.md)
 ### [Android](configure-devices/custom-for-android.md)
 #### [Wi-Fi profile with a pre-shared key](configure-devices/wi-fi-profile-with-shared-key.md)
 #### [Per-app VPN profile](configure-devices/per-app-vpn-for-android-pulse-secure.md)
@@ -222,6 +234,7 @@
 ## [Prepare LOB apps for MAM](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
+## [Sideload Windows apps](deploy-use/sideload-apps-for-windows?toc=/intune-azure/toc.json)
 ## [Intune App SDK](/intune/develop/intune-app-sdk?toc=/intune-azure/toc.json)
 ### [Get started with Intune App SDK](/intune/develop/intune-app-sdk-get-started?toc=/intune-azure/toc.json)
 ### [Intune App SDK for iOS](/intune/develop/intune-app-sdk-?toc=/intune-azure/toc.json)
