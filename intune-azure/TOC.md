@@ -40,7 +40,7 @@
 ### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune-azure/toc.json)
 ## [Migration guide](/intune/plan-design/intune-mdm-migration-guide?toc=/intune-azure/toc.json)
 ### [Prepare Intune](/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune-azure/toc.json)
-#### [Basic setup](intune/plan-design/migration-phase1-basic-setup?toc=/intune-azure/toc.json)
+#### [Basic setup](/intune/plan-design/migration-phase1-basic-setup?toc=/intune-azure/toc.json)
 #### [Configure device and app management policies](/intune/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune-azure/toc.json)
 #### [Migration considerations](/intune/plan-design/migration-phase1-special-migration-considerations?toc=/intune-azure/toc.json)
 ### [Migration campaign](/intune/plan-design/migration-phase2-migration-campaign?toc=/intune-azure/toc.json)
