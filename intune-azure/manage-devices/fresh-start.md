@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset Windows 10 devices with Intune
+title: Reset Windows 10 devices with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Fresh Start to reset Windows 10 PCs running Intune."
 keywords:
