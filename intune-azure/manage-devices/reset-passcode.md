@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset a device passcode with Intune
+title: Reset a device passcode with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to reset the passcode on devices you manage with Intune."
 keywords:
