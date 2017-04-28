@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset devices to factory settings with Intune
+title: Reset devices to factory settings with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to reset devices you manage with Intune to their factory settings."
 keywords:
