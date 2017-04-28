@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune settings for the iOS Classroom app
+title: Intune settings for the iOS Classroom app | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
