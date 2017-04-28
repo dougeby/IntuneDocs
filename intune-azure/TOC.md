@@ -92,27 +92,7 @@
 ### [Get started with groups](manage-users/get-started-with-groups.md)
 ### Add and delete users
 
-
-
-
-#### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
-
-
-# Manage users
-## [What is user management?](manage-users/what-is.md)
-<!--- Was What is users & group management--->
-## [Get started](manage-users/get-started-with-groups.md)
-## [Help users](manage-users/help-desk.md)
-<!--- ## [Plan and design](manage-users/plan-and-design.md) --->
-
-<!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
-
-# Manage apps
-## [What is app management?](manage-apps/what-is-app-management.md)
-## [What are app protection policies?](manage-apps/what-is-app-protection-policy.md)
-<!--- ## [Get started](manage-apps/get-started.md)
-## [Plan and design](manage-apps/plan-and-design.md) --->
-## How to manage apps
+## [Manage apps](manage-apps/what-is-app-management.md)
 ### [Add apps](manage-apps/add-apps.md)
 #### [Android store apps](manage-apps/android-store-app.md)
 #### [Android LOB apps](manage-apps/android-lob-app.md)
@@ -125,40 +105,31 @@
 ### [Monitor apps](manage-apps/monitor-apps.md)
 ### [Use app configuration policies](manage-apps/app-configuration-policies.md)
 ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)
-<!---Is this specific to app protection policy or more general app management?--->
 ### [Work with volume-purchased apps](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP apps](manage-apps/ios-vpp-apps.md)
 #### [Windows Store for Business apps](manage-apps/wsfb-apps.md)
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
-## How to use app protection policies
-### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
-### [Get ready for WIP app protection policies](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
-### [Create & assign WIP app protection policies](manage-apps/create-windows-information-protection-policy-with-intune.md)
+
+## [Use app protection policies](manage-apps/what-is-app-protection-policy.md)
+### [Android apps with app protection policies](manage-apps/app-protection-enabled-android-apps.md)
+### [iOS apps with app protection policies](manage-apps/app-protection-enabled-ios-apps.md)
+### [Create app protection policies](manage-apps/app-protection-policies.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)
 ### [Monitor app protection user status](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
+### [Get ready for WIP app protection policies](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Create & assign WIP app protection policies](manage-apps/create-windows-information-protection-policy-with-intune.md)
 ### [Manage data transfer between iOS apps](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-### [Android apps with app protection policies](manage-apps/app-protection-enabled-android-apps.md)
-### [iOS apps with app protection policies](manage-apps/app-protection-enabled-ios-apps.md)
 
-
-<!--- ##  [Troubleshoot apps](manage-apps/troubleshooting.md) --->
-
-# Configure devices
-## [What are device profiles?](configure-devices/what-are-device-profiles.md)
-<!---## [Get started](configure-devices/get-started.md)
-## [Plan and design](configure-devices/plan-and-design.md) --->
-## How to
+## [Configure devices](configure-devices/what-are-device-profiles.md)
 ### [Configure device profiles](configure-devices/how-to-create-device-profiles.md)
-
 ### [Configure device features](configure-devices/how-to-configure-device-features.md)
 #### [AirPrint for iOS and MacOS](configure-devices/air-print-settings-for-ios-and-macos.md)
 #### [AirPlay for iOS](configure-devices/airplay-settings-for-ios-devices.md)
 #### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
-
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -168,13 +139,11 @@
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
 #### [Android for Work](configure-devices/device-restrictions-for-afw.md)
-
 ### [Configure email settings](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
 #### [iOS](configure-devices/email-profile-settings-for-ios.md)
 #### [Windows Phone 8.1](configure-devices/email-profile-settings-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/email-profile-settings-for-windows-10.md)
-
 ### [Configure VPN settings](configure-devices/how-to-configure-vpn-settings.md)
 #### [Android](configure-devices/vpn-for-android.md)
 #### [iOS](configure-devices/vpn-for-ios.md)
@@ -182,68 +151,81 @@
 #### [Windows 8.1](configure-devices/vpn-for-windows-8-1.md)
 #### [Windows Phone 8.1](configure-devices/vpn-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/vpn-for-windows-10.md)
-
 ### [Configure Wi-Fi settings](configure-devices/how-to-configure-wi-fi-settings.md)
 #### [Android](configure-devices/wi-fi-for-android.md)
 #### [iOS](configure-devices/wi-fi-for-ios.md)
 #### [macOS](configure-devices/wi-fi-for-macos.md)
 #### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
-
 ### [Configure Windows 10 edition upgrade settings](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Configure Windows 10 education settings](configure-devices/how-to-configure-education-settings.md)
 ### [Configure Windows Update for Business settings](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configure certificates](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
-
 ### [Configure Windows Information Protection settings](configure-devices/how-to-configure-windows-information-protection.md)
-<!--- ### [Configure iOS education settings](configure-devices/education-settings-for-ios.md) --->
+### [Assign profiles](configure-devices/how-to-assign-device-profiles.md)
+### [Monitor profiles](configure-devices/how-to-monitor-device-profiles.md)
+### [Troubleshoot profiles](configure-devices/troubleshoot-device-profiles.md)
 
-### [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
-#### [Android](configure-devices/custom-for-android.md)
-##### [Wi-Fi profile with a pre-shared key](configure-devices/wi-fi-profile-with-shared-key.md)
-##### [Per-app VPN profile](configure-devices/per-app-vpn-for-android-pulse-secure.md)
-##### [Allow/block apps for Samsung KNOX Standard](configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md)
-#### [iOS](configure-devices/custom-for-ios.md)
-#### [macOS](configure-devices/custom-for-macos.md)
-#### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/custom-for-windows-10.md)
-#### [Android for Work](configure-devices/custom-android-for-work.md)
-
-### [Assign device profiles](configure-devices/how-to-assign-device-profiles.md)
-### [Monitor device profiles](configure-devices/how-to-monitor-device-profiles.md)
-### [Set up a telecom expense management service](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
-## [Troubleshoot](configure-devices/troubleshoot-device-profiles.md)
-
-# Set device compliance
-## [What is device compliance?](set-device-compliance/what-is-device-compliance.md)
-## [Get started](set-device-compliance/get-started-with-device-compliance.md)
-## How to
-### [Create Android compliance policy](set-device-compliance/create-a-compliance-policy-for-android.md)
-### [Create Android for Work compliance policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
-### [Create iOS compliance policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
-### [Create Windows compliance policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
+## [Set device compliance](set-device-compliance/what-is-device-compliance.md)
+### [Prerequisites](set-device-compliance/get-started-with-device-compliance.md)
+### [Create Android policy](set-device-compliance/create-a-compliance-policy-for-android.md)
+### [Create Android for Work policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
+### [Create iOS policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
+### [Create Windows policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
 ### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)
 ### [Monitor device compliance](set-device-compliance/monitor-intune-device-compliance-policies.md)
-<!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
-
-
-# Conditional access
-## [What is conditional access?](conditional-access/what-is-conditional-access.md)
-## How to
+## [Set up conditional access](conditional-access/what-is-conditional-access.md)
 ### [Install Exchange on-premises connector](conditional-access/install-intune-on-premises-exchange-connector.md)
 ### [Create and assign conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
 ### [Monitor conditional access compliance](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
-# Access control
-## [What is role-based access control?](access-control/role-based-access-control.md)
+## Protect data and devices
+### Set up mobile threat protection		
+#### Prerequisites	
+#### Set up Lookout	
+#### Set up Skycure	
+### Enable mobile threat protection in Intune	
+### Create a mobile threat protection compliance policy	
+### [Set up Windows Hello](enroll-devices/how-to-use-windows-hello.md)		
+### Protect devices with remote actions		
+
+## [Manage roles](access-control/role-based-access-control.md)
+### Create a custom role
+### Assign a role
+### [Use the helpdesk operator role](manage-users/help-desk.md) 
+### Custom role settings
+
+## [Set up a telecom expense management service](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
+
+## [Manage PCs](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune-azure/toc.json)
+### PC client capabilities
+###	[Install the PC client](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune-azure/toc.json)
+###	[Common PC management tasks](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune-azure/toc.json)
+###	[Resolve PC policy conflicts](/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune-azure/toc.json)
 
 # Monitor and troubleshoot
+## Device inventory
 
 # Develop and customize
-## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune-azure/toc.json)
+## [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
+### [Android](configure-devices/custom-for-android.md)
+#### [Wi-Fi profile with a pre-shared key](configure-devices/wi-fi-profile-with-shared-key.md)
+#### [Per-app VPN profile](configure-devices/per-app-vpn-for-android-pulse-secure.md)
+#### [Allow/block apps for Samsung KNOX Standard](configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md)
+### [iOS](configure-devices/custom-for-ios.md)
+### [macOS](configure-devices/custom-for-macos.md)
+### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
+### [Windows 10](configure-devices/custom-for-windows-10.md)
+### [Android for Work](configure-devices/custom-android-for-work.md)
+## [Prepare LOB apps for MAM](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
 ### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
 ## [Intune App SDK](/intune/develop/intune-app-sdk?toc=/intune-azure/toc.json)
+### [Get started with Intune App SDK](/intune/develop/intune-app-sdk-get-started?toc=/intune-azure/toc.json)
+### [Intune App SDK for iOS](/intune/develop/intune-app-sdk-?toc=/intune-azure/toc.json)
+### [Intune App SDK for Android](/intune/develop/intune-app-sdk-ios?toc=/intune-azure/toc.json)
+### [Intune App SDK Cordova plugin](/intune/develop/intune-app-sdk-cordova?toc=/intune-azure/toc.json)
+### [Intune App SDK Xamarin component](/intune/develop/intune-app-sdk-xamarin?toc=/intune-azure/toc.json)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
