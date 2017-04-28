@@ -7,7 +7,7 @@ keywords: what is Intune
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 05/02/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,8 @@ Intune is a cloud-based enterprise mobility management (EMM) service that helps 
 Intune for Education currently lets you manage Windows 10 devices with MDM capabilities, with a selection of all policies available in Intune. Intune can manage additional platforms, such as iOS and Android, and is designed to let you access the full set of policies in the same console.
 
 Intune for Education can be used by itself, or in harmony with the [full device management experience available in Intune](/understand-explore/introduction-to-microsoft-intune). It can also be used alongside the rest of the tools available in [Microsoft Education](https://microsoft.com/education), which makes it easy for you to use Intune for Education with other useful educational tools from Microsoft.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
 
 With both Intune and Intune for Education, you can:
 * Manage the mobile devices your workforce uses to access data.
