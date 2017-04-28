@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Locate lost iOS devices with Intune
+title: Locate lost iOS devices with Intune | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how locate lost or stolen iOS devices with Intune."
 keywords:
