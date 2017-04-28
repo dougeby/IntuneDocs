@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,6 +35,11 @@ As the public preview progresses, and more features are added, we'll let you kno
 > We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially before the new portal features are available. Look for these changes as they roll out later this month.
 
 ## April 2017
+
+### Support for managing the Apple Classroom app
+
+You can now manage the iOS Classroom app on iPad devices. Set up the Classroom app on the teachers iPad with the correct class and student data, then configure student iPads registered to a class, so that you can control them using the app.
+For details, see [Configure iOS education settings](configure-devices/how-to-configure-ios-edu-settings.md).
 
 ### Support for managed configuration options for Android apps <!-- 621621 -->
 
