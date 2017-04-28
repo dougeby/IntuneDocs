@@ -13,9 +13,10 @@
 ## [Known issues](introduction/known-issues-in-the-intune-preview.md)
 ## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
 
-# [Get started](/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune-azure/toc.json)
-## [Organize users and devices](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune-azure/toc.json)
-## [Create policies and publish an app](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune-azure/toc.json)
+# Get started
+## [Manage devices](/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune-azure/toc.json)
+## [Create policies](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune-azure/toc.json)
+## [Manage apps](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune-azure/toc.json)
 
 
 # Plan deployment
@@ -30,6 +31,13 @@
 ### [Implement](/intune/plan-design/section-8-onboarding-process?toc=/intune-azure/toc.json)
 ### [Test and validate](/intune/plan-design/section-9-test-and-validation?toc=/intune-azure/toc.json)
 ### [Additional resources](/intune/plan-design/additional-resources?toc=/intune-azure/toc.json)
+## Scenario implementation guides
+### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune-azure/toc.json)
+### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune-azure/toc.json)
+### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune-azure/toc.json)
+### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune-azure/toc.json)
+### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune-azure/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune-azure/toc.json)
 ## [Migration guide](/intune/plan-design/intune-mdm-migration-guide?toc=/intune-azure/toc.json)
 ### [Prepare Intune](/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune-azure/toc.json)
 #### [Basic setup](intune/plan-design/migration-phase1-basic-setup?toc=/intune-azure/toc.json)
@@ -43,11 +51,14 @@
 
 # How to
 
-## [Set up Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune?toc=/intune-azure/toc.json)			
-###	[Sign into Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1?toc=/intune-azure/toc.json)		
-###	[Configure domains](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2?toc=/intune-azure/toc.json)		
+## [Set up Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune?toc=/intune-azure/toc.json)
+### Prerequisites
+#### [Supported devices](/intune/get-started/what-to-know-before-you-start-microsoft-intune?toc=/intune-azure/toc.json)
+#### [Network bandwidth usage](/intune/get-started/what-to-know-before-you-start-microsoft-intune?toc=/intune-azure/toc.json)
+###	[Sign into Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1?toc=/intune-azure/toc.json)	
+###	[Configure domains](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2?toc=/intune-azure/toc.json)	
 ### [Set the MDM authority](enroll-devices/set-mdm-authority.md?toc=/intune-azure/toc.json)
-###	[Add users and groups](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3?toc=/intune-azure/toc.json)		
+###	[Add users and groups](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3?toc=/intune-azure/toc.json)
 ###	[Assign licenses](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune-azure/toc.json)		
 ###	[Customize Company Portal](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7?toc=/intune-azure/toc.json)		
 
@@ -80,6 +91,7 @@
 ## [Manage users](manage-users/what-is.md)
 ### [Get started with groups](manage-users/get-started-with-groups.md)
 ### Add and delete users
+
 
 
 
