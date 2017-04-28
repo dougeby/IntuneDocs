@@ -26,13 +26,13 @@ ms.custom: intune-classic
 
 ---
 
-# Manage Windows PCs as computers via Intune software agent
+# Manage Windows PCs as computers via Intune software client
 
-Intune provides a comprehensive solution for organization to manage mobile devices, including managing Windows PCs as “mobile devices,” using the simplified, “modern” device management capabilities in the Windows 10 operating system.  To provide the flexibility to best meet your organization’s management needs, Intune can also manage Windows PCs as computers by using the Intune software agent.
+Intune provides a comprehensive solution for organizations to manage mobile devices. Intune can manage Windows PCs as mobile devices using the modern device management capabilities built in to the Windows 10 operating system. To meet your organization’s management needs, Intune can also manage Windows PCs as computers with the Intune software client, This management method uses traditional computer management capabilities in the legacy Windows operating system.
 
-The Intune software agent is best suited for Windows PCs running legacy operating systems such as Windows 7. Windows 7 PCs cannot be managed as mobile devices. The Intune software client uses management capabilities like Group Policy to manage PCs from the cloud.
+The Intune software client is best suited for Windows PCs running legacy operating systems such as Windows 7 which cannot be managed as mobile devices. The Intune software client uses management capabilities like Group Policy to manage PCs from the cloud.
 
-Intune can support software client management on up to 7,000 PCs. For larger deployments, manage Windows 10 PCs as mobile devices. Each release of Intune and update of Windows 10 include management features based on the mobile device management architecture. We strongly recommend that you move your organization to Windows 10 managed as mobile devices.
+Intune supports management of Windows 10 PCs as computers using the software client for up to 7,000 PCs. For larger deployments, manage Windows 10 PCs as mobile devices. Each release of Intune and update of Windows 10 include management features based on the mobile device management architecture. We strongly recommend that you move your organization to Windows 10 managed as mobile devices.
 
 
 > [!NOTE]
