@@ -42,15 +42,15 @@ Now, you can perform the following actions. For more information, click one of t
 
 - [View device inventory](/intune-azure/manage-devices/device-inventory.md)
 - Perform remote device actions:
-	- [Remove company data](/intune-azure/manage-devices/remove-company-data.md) - 
-	- [Factory reset](/intune-azure/manage-devices/factory-reset.md) - 
-	- [Remote lock](/intune-azure/manage-devices/remote-lock.md) - 
-	- [Reset passcode](/intune-azure/manage-devices/reset-passcode.md) - 
-	- [Bypass Activation Lock](/intune-azure/manage-devices/bypass-activation-lock.md) - 
-	- [Fresh Start](/intune-azure/manage-devices/fresh-start.md) - 
-	- [Lost mode](/intune-azure/manage-devices/lost-mode.md) - 
-	- [Locate device](/intune-azure/manage-devices/locate-device.md) - 
-	- [Restart](/intune-azure/manage-devices/restart-device.md) - 
+	- [Remove company data](/intune-azure/manage-devices/remove-company-data.md) 
+	- [Factory reset](/intune-azure/manage-devices/factory-reset.md)
+	- [Remote lock](/intune-azure/manage-devices/remote-lock.md)
+	- [Reset passcode](/intune-azure/manage-devices/reset-passcode.md)
+	- [Bypass Activation Lock](/intune-azure/manage-devices/bypass-activation-lock.md)
+	- [Fresh Start](/intune-azure/manage-devices/fresh-start.md)
+	- [Lost mode](/intune-azure/manage-devices/lost-mode.md)
+	- [Locate device](/intune-azure/manage-devices/locate-device.md)
+	- [Restart](/intune-azure/manage-devices/restart-device.md)
 - Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions. 
 ![Monitor device actions](./media/monitor-device-actions.png)
 
