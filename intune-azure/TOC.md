@@ -1,70 +1,90 @@
-# [Introduction](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Introduction](/intune/understand-explore/introduction-to-microsoft-intune?toc=/intune-azure/toc.json)
 ## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
 ## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [What's new](introduction/whats-new.md)
-### [What's new in the app UI](/intune/whats-new/whats-new-in-intune-app-ui)
-### [What's new archive](NEWFILE)
-## [High-level architecture](NEWFILE)
-## [Device and app lifecycles](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-### [Device lifecycle](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune)
-### [App lifecycle](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune)
-## [Common scenarios](/intune/understand-explore/common-ways-to-use-intune)
+### [What's new in the app UI](/intune/whats-new/whats-new-in-intune-app-ui?toc=/intune-azure/toc.json)
+### What's new archive
+## High-level architecture
+## [Device and app lifecycles](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune?toc=/intune-azure/toc.json)
+### [Device lifecycle](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune?toc=/intune-azure/toc.json)
+### [App lifecycle](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune?toc=/intune-azure/toc.json)
+## [Common scenarios](/intune/understand-explore/common-ways-to-use-intune?toc=/intune-azure/toc.json)
 ## [Known issues](introduction/known-issues-in-the-intune-preview.md)
 ## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
 
-# Get started
+# [Get started](/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune-azure/toc.json)
+## [Organize users and devices](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune-azure/toc.json)
+## [Create policies and publish an app](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune-azure/toc.json)
+
 
 # Plan deployment
+## [Planning guide](/intune/plan-design/introduction?toc=/intune-azure/toc.json)
+### [Determine goals and objectives](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune-azure/toc.json)
+### [Identify scenarios](/intune/plan-design/section-2-identify-use-case-scenarios?toc=/intune-azure/toc.json)
+### [Determine requirements](/intune/plan-design/section-3-determine-use-case-requirements?toc=/intune-azure/toc.json)
+### [Develop a rollout plan](/intune/plan-design/section-4-develop-a-rollout-plan?toc=/intune-azure/toc.json)
+### [Develop a communication plan](/intune/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune-azure/toc.json)
+### [Develop a support plan](/intune/plan-design/section-6-develop-a-support-plan?toc=/intune-azure/toc.json)
+### [Design](/intune/plan-design/section-7-create-an-intune-design?toc=/intune-azure/toc.json)
+### [Implement](/intune/plan-design/section-8-onboarding-process?toc=/intune-azure/toc.json)
+### [Test and validate](/intune/plan-design/section-9-test-and-validation?toc=/intune-azure/toc.json)
+### [Additional resources](/intune/plan-design/additional-resources?toc=/intune-azure/toc.json)
+## [Migration guide](/intune/plan-design/intune-mdm-migration-guide?toc=/intune-azure/toc.json)
+### [Prepare Intune](/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune-azure/toc.json)
+#### [Basic setup](intune/plan-design/migration-phase1-basic-setup?toc=/intune-azure/toc.json)
+#### [Configure device and app management policies](/intune/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune-azure/toc.json)
+#### [Migration considerations](/intune/plan-design/migration-phase1-special-migration-considerations?toc=/intune-azure/toc.json)
+### [Migration campaign](/intune/plan-design/migration-phase2-migration-campaign?toc=/intune-azure/toc.json)
+#### [Plan communications](/intune/plan-design/migration-phase2-communication-plan?toc=/intune-azure/toc.json)
+#### [Drive adoption](/intune/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune-azure/toc.json)
+#### [Typical migration cycle](/intune/plan-design/migration-phase2-typical-migration-cycle?toc=/intune-azure/toc.json)
 
-# [Plan and design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
-## [Section 1: Determine deployment goals, objectives and challenges](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=%2fintune-azure%2ftoc.json)
-## [Section 2: Identify use case scenarios](/intune/plan-design/section-2-identify-use-case-scenarios?toc=%2fintune-azure%2ftoc.json)
-## [Section 3: Determine use case scenario requirements](/intune/plan-design/section-3-determine-use-case-requirements?toc=%2fintune-azure%2ftoc.json)
-## [Section 4: Develop a rollout plan](/intune/plan-design/section-4-develop-a-rollout-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 5: Develop a communication plan](/intune/plan-design/section-5-develop-a-rollout-communication-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 6: Develop a support plan](/intune/plan-design/section-6-develop-a-support-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 7: Create an Intune design](/intune/plan-design/section-7-create-an-intune-design?toc=%2fintune-azure%2ftoc.json)
-## [Section 8: Intune implementation](/intune/plan-design/section-8-onboarding-process?toc=%2fintune-azure%2ftoc.json)
-## [Section 9: Testing and validation](/intune/plan-design/section-9-test-and-validation?toc=%2fintune-azure%2ftoc.json)
-## [Additional resources](/intune/plan-design/additional-resources?toc=%2fintune-azure%2ftoc.json)
 
 # How to
 
-# Enroll devices
-## [What is device enrollment?](enroll-devices/what-is.md)
-## Get started
-### [Set the MDM authority](enroll-devices/set-mdm-authority.md)
-## Plan and design
-### [Get an Apple MDM push certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Choose how to enroll iOS devices](enroll-devices/choose-ios-enrollment-method.md)
-## How to
-### [Assign licenses to users](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
-### [Enroll Android devices](enroll-devices/enroll-android-and-knox-standard-devices.md)
-### Enroll iOS devices
-#### [Apple Configurator - Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Apple Configurator - direct enrollment](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
-#### [Add Apple Configurator serial numbers](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
-### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
-### [Bulk enroll Windows devices](enroll-devices/bulk-enroll-windows.md)
-### Manage device enrollment
-#### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
-#### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
-#### [Map devices to groups](enroll-devices/how-to-use-device-group-mapping.md)
-#### [Add corporate identifiers](enroll-devices/add-corporate-identifiers.md)
-#### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
-<!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
+## [Set up Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune?toc=/intune-azure/toc.json)			
+###	[Sign into Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1?toc=/intune-azure/toc.json)		
+###	[Configure domains](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2?toc=/intune-azure/toc.json)		
+### [Set the MDM authority](enroll-devices/set-mdm-authority.md?toc=/intune-azure/toc.json)
+###	[Add users and groups](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3?toc=/intune-azure/toc.json)		
+###	[Assign licenses](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune-azure/toc.json)		
+###	[Customize Company Portal](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7?toc=/intune-azure/toc.json)		
 
-# Devices and groups
-## [What is device management?](manage-devices/what-is.md)
-<!--- ## [Get started](manage-devices/get-started.md) --->
-<!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
-## How to
-### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-<!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
+## [Enroll devices](enroll-devices/what-is.md)
+### Prerequisites
+#### [Set up terms and conditions](enroll-devices/create-terms-and-conditions.md)
+#### [Set restrictions](enroll-devices/set-enrollment-restrictions.md)
+#### [Get an Apple MDM push certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
+#### [Add corporate identifiers](enroll-devices/add-corporate-identifiers.md)
+#### [Set up device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [Map devices to groups](enroll-devices/how-to-use-device-group-mapping.md)
+### Set up Windows enrollment
+#### [Auto-enroll](enroll-devices/enroll-windows-devices.md)
+#### [Bulk enroll](enroll-devices/bulk-enroll-windows.md)
+### [Set up Android enrollment](enroll-devices/enroll-android-and-knox-standard-devices.md)
+### Set up iOS enrollment
+#### [Set up device enrollment program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+#### Set up Apple School Manager
+#### [Set up with Apple Configurator](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+### [Set up macOS enrollment](enroll-devices/enroll-macos-devices.md)
+
+## [Manage devices](manage-devices/what-is.md)
+### [Wipe device](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### Remote lock
+### Reset passcode
+### Bypass activation lock
+### Locate device
+### Restart device
+
+## [Manage users](manage-users/what-is.md)
+### [Get started with groups](manage-users/get-started-with-groups.md)
+### Add and delete users
+
+
+
+#### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
+
 
 # Manage users
 ## [What is user management?](manage-users/what-is.md)
@@ -210,8 +230,8 @@
 # Monitor and troubleshoot
 
 # Develop and customize
-## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=%2fintune-azure%2ftoc.json)
-### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
-### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
-## [Intune App SDK](/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json)
+## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune-azure/toc.json)
+### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
+### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune-azure/toc.json)
+## [Intune App SDK](/intune/develop/intune-app-sdk?toc=/intune-azure/toc.json)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
