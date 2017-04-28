@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: View Intune device inventory
+title: View Intune device inventory | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
