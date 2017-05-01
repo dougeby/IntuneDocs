@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,6 +56,15 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 ### Block apps from accessing SharePoint Online <!-- 679339 -->
 
 You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
+
+### Improved app install status for the Windows 10 Company Portal app <!--676495-->
+
+New improvements for app installs started in the Windows 10 Company Portal app include: 
+-	Faster install progress reporting for MSI packages
+-	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
+-	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
+
+You can see the new progress bar on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
