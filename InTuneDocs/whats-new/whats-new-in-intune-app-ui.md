@@ -125,8 +125,11 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal.
 
+__Before__
   ![An image of the previous version of the loading screen, where the status simply said 'installing.'](./media/cp_win10_install_status_before_1704.png)
-   ![An image of the updated version of the loading screen, which now shows an install progress bar.](./media/cp_win10_install_status_after_1704.png)
+
+__After__
+  ![An image of the updated version of the loading screen, which now shows an install progress bar.](./media/cp_win10_install_status_after_1704.png)
 
 ## February 2017
 
