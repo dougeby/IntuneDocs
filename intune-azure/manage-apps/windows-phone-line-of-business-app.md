@@ -43,7 +43,7 @@ ms.custom: intune-azure
 ## Step 2 - Configure the app package file
 
 1. On the **Add app** blade, choose **App package** file.
-2. On the **App package** file blade, choose the browse button, and select an Windows Phone installation file with the extension **.xap**.
+2. On the **App package** file blade, choose the browse button, and select a Windows Phone installation file with the extension **.xap**.
 3. When you are finished, choose **OK**.
 
 
