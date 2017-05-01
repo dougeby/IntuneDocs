@@ -36,7 +36,7 @@ Intune with Skycure Mobile Threat Defense lets you detect threats on mobile devi
 
 Prerequisites for compliance policy with Skycure device threat protection:
 
--   [Setup Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Set up Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [Enable the Skycure connection in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
@@ -60,7 +60,7 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
     d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure mobile threat defense for reporting purposes only.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > If you create conditional access policies for Office 365 or other services, this compliance evaluation is assessed and non-compliant devices are blocked from accessing those services until the threat is resolved.
 
 ## <span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Next steps

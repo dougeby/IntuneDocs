@@ -4,7 +4,9 @@
 title: Wrap iOS apps with the Intune App Wrapping Tool | Microsoft Docs
 description: Use the information in this topic to learn how to wrap your iOS apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: mtillmanms.author: mtillmanmanager: angrobe
+author: mtillman
+ms.author: mtillman
+manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
@@ -111,8 +113,8 @@ You will need the following to distribute apps wrapped by Intune:
 
   ![Select In-House and Ad Hoc certificate](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
+  >[!NOTE]
+  >If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
 
 7. Click **Next** at the bottom of the page.
 
@@ -139,7 +141,6 @@ You will need the following to distribute apps wrapped by Intune:
 14. Double-click the certificate file you just downloaded to add the certificate to a keychain.
 
 15. Open **Keychain Access** again. Locate your certificate by searching for its name in the top right search bar. Right-click on the item to bring up the menu and click **Get Info**. In the example screens, we are using a development certificate instead of a production certificate.
-
 
   ![Add your certificate to a keychain](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -208,7 +209,7 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
-|**-v**|(Optional) Outputs verbose messages to the console.|
+|**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
 |**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See Setting app entitlements for more details.|
 |**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See Setting app entitlements for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|

@@ -230,7 +230,7 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 
 ## Autonomous single app mode (supervised only)
 
-Use these settings to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
+Use these settings to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
 
 ### Settings
 
@@ -244,7 +244,7 @@ After you specify each app name and bundle ID, choose **Add** to append it to th
 
 ### Bundle ID reference for built-in iOS apps
 
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. 
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
 |||
 |-|-|

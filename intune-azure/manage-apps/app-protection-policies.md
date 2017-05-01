@@ -7,7 +7,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.custom: intune-azure
 App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md).
 
 ##  Create an app protection policy
-1.  In the **Manage apps** workload, choose **Manage** > **App protection policies**.
+1.  In the **Mobile apps** workload, choose **Manage** > **App protection policies**.
 
 2.  This opens the **App protection policies** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
 

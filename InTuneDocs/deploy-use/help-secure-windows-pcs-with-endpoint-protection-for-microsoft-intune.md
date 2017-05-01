@@ -93,7 +93,7 @@ If you have set the policy values for the settings **Install Endpoint Protection
 |**Monitor file and program activity on computers**|Enables the monitoring of incoming and outgoing files, and program activity on computers. With this setting, Endpoint Protection can monitor when files and programs start to run and alert you about any actions they perform or actions that are taken on them.<br /><br />Recommended value: **Yes**|
 |**Files monitored**|Enables you to choose if only incoming, only outgoing, or all files are monitored.<br /><br />Recommended value: **Monitor all files**|
 |**Enable behavior monitoring**|Enables Microsoft Intune Endpoint Protection to check for certain patterns of suspicious activity on client computers.<br /><br />Recommended value: **Yes**|
-|**Enable Network Inspection System**|Enables Network Inspection System (NIS) on client computers. NIS uses signatures of known vulnerabilities from the [Microsoft Malware Protection Center](http://go.microsoft.com/fwlink/?LinkId=234249) to help detect and block malicious network traffic.<br /><br />Recommended value: **Yes**|
+|**Enable Network Inspection System**|Enables Network Inspection System (NIS) on client computers. NIS uses signatures of known vulnerabilities from the [Microsoft Malware Protection Center](https://go.microsoft.com/fwlink/?LinkId=234249) to help detect and block malicious network traffic.<br /><br />Recommended value: **Yes**|
 
   ![Real-time settings for Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 

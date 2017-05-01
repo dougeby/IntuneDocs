@@ -6,7 +6,7 @@ description: Microsoft Intune can help you manage iOS Activation Lock, a feature
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,8 @@ To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1
 > [!TIP]
 > Supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is generally only for corporate-owned devices.
 
+You can read more about Activation Lock [here](https://support.apple.com/en-us/HT201365).
+
 ## How Intune helps you manage Activation Lock
 Intune can request the Activation Lock status of supervised devices that run iOS 8.0 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device by using a blank user name and the code as the password.
 
@@ -58,7 +60,15 @@ Intune can request the Activation Lock status of supervised devices that run iOS
 
 -   The user gets the security benefits of the Find My iPhone app.
 
--   You can enable users to do their work and know that when a device needs to be repurposed, you can retire or unlock it.
+-   You can enable users to do their work and know that when a device needs to be re-purposed, you can retire or unlock it.
+
+## Before you start
+
+Before you can bypass Activation Lock on devices, you must enable it first. To do this:
+
+1. Use the information in the topic [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) to create an iOS [device configuration policy](/intune/deploy-use/ios-policy-settings-in-microsoft-intune).
+2. In the **Enrollment** section, of the settings page, configure the setting **Allow Activation Lock when the device is in supervised mode** to **Yes**.
+3. Save the policy, and deploy it to the devices on which you want to manage Activation Lock bypass.
 
 ## How to use Activation Lock bypass from the Intune admin console
 > [!IMPORTANT]

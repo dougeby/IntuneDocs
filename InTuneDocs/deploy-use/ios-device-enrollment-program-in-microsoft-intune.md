@@ -50,7 +50,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Get an Encryption Key
 
-1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Download Encryption Key**.
+1. As an administrative user, open the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Download Encryption Key**.
 
 2. Save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
@@ -72,13 +72,13 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Add the DEP token to Intune
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**.
 
 2. Choose **Upload the DEP Token**. **Browse** to the certificate (.p7m) file, enter your **Apple ID**, and then choose **Upload**.
 
 ### Add the Corporate Device Enrollment Policy
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
 2. Provide **General** details including **Name** and **Description**, and specify whether devices assigned to the profile have user affinity or belong to a group:
 
@@ -126,7 +126,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Assign the profile to devices
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Assign**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Assign**.
 
 2. Choose the devices to which you want to assign the profile that you created. You can choose **All devices** or select specific devices, and then select **Add**.
 
@@ -147,9 +147,9 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
 
-1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Sync now**. A sync request is sent to Apple.
+1. As an administrative user, open the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Sync now**. A sync request is sent to Apple.
 
-2. To see DEP-managed devices after synchronization, in the [Microsoft Intune administration console](http://manage.microsoft.com) go to **Groups** &gt; **All Devices** &gt; **Corporate Pre-enrolled devices** &gt; **By iOS Serial Number**. In the **By iOS Serial Number** workspace, the **State** for managed devices reads “Not contacted” until the device is powered on and runs the Setup Assistant to enroll the device.
+2. To see DEP-managed devices after synchronization, in the [Microsoft Intune administration console](https://manage.microsoft.com) go to **Groups** &gt; **All Devices** &gt; **Corporate Pre-enrolled devices** &gt; **By iOS Serial Number**. In the **By iOS Serial Number** workspace, the **State** for managed devices reads “Not contacted” until the device is powered on and runs the Setup Assistant to enroll the device.
 
    To comply with Apple’s terms for acceptable DEP traffic, Intune imposes the following restrictions:
 
@@ -166,7 +166,13 @@ Your corporate-owned devices can now be distributed to users. When an iOS device
 
 ## Changes to Intune group assignments
 
-Starting in April 2017, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Starting in April 2017, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names.
+
+Upon migration, for every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in Azure AD based on the Corporate Device Enrollment profile’s name. New profile names have the format *EnrollmentProfile:&lt;name of associated profile&gt;*. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed.
+
+This automatic group creation happens only once, during groups migration. After migration, Intune admins must create groups using the Azure portal. For details about how this affects company-owned iOS device enrollment, see [Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/).
+
+You can also [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

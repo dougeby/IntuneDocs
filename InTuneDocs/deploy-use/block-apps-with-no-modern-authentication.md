@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Block apps with no modern authentication | Microsoft Docs
+title: Block apps with no modern authentication
 description:
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article
 ms.prod:
@@ -32,7 +34,14 @@ App-based conditional access with app protection policies rely on applications u
 
 To block access to these apps we recommend the following:
 
-* Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
+* Set up ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
+* For **SharePoint Online**, disable non-modern authentication in the SharePoint Online service using the PowerShell commandlet [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) to set the legacy authentication protocols property to false:
+
+```
+ Set-SPOTenant -LegacyAuthProtocolsEnabled $false
+
+```
+
 
 >[!IMPORTANT]
 >App-based CA must not be used with Azure Active Directory (Azure AD) certificate based authentication. You can only have one of these configured at a time.

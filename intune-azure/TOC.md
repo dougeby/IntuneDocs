@@ -44,6 +44,7 @@
 ### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
 ### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
+### [Bulk enroll Windows devices](enroll-devices/bulk-enroll-windows.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
@@ -58,13 +59,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Remote control Android devices](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Manage users
 ## [What is user management?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Get started](manage-users/get-started-with-groups.md)
+## [Help users](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
@@ -94,6 +95,8 @@
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
+### [Get ready for WIP app protection policies](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Create & assign WIP app protection policies](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)
@@ -118,7 +121,6 @@
 #### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Web content filter for iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -152,6 +154,7 @@
 
 ### [Configure Windows 10 edition upgrade settings](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Configure Windows 10 education settings](configure-devices/how-to-configure-education-settings.md)
+### [Configure iOS education settings](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [Configure Windows Update for Business settings](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configure certificates](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -194,7 +197,8 @@
 ## [What is conditional access?](conditional-access/what-is-conditional-access.md)
 ## How to
 ### [Install Exchange on-premises connector](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Create a conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Create and assign conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Monitor conditional access compliance](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Access control
 ## [What is role-based access control?](access-control/role-based-access-control.md)

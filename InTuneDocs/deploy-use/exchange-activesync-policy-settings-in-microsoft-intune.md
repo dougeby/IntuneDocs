@@ -54,7 +54,7 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 |**Require encryption on storage cards**|Requires data that is stored on external storage such as an SD card to be encrypted (on supported devices).
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
--   If you want to enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
+-   If you want to enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/kb/3013816) on each device.
 
 -   If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 

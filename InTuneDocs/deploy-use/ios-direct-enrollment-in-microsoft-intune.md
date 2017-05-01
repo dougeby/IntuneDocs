@@ -39,7 +39,7 @@ When you're directly enrolling iOS devices, you can enroll a device without acqu
 
 1.  If you haven't already, create a device enrollment profile for iOS devices enrolled through Apple Configurator. A device enrollment profile defines the settings applied to devices.
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
+    1.  In the [Microsoft Intune administration console](https://manage.microsoft.com) go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
         ![Create device enrollment profile page](../media/pol-sa-corp-enroll.png)
 

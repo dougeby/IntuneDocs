@@ -63,4 +63,3 @@ Use the information in this topic to learn the basics about configuring profiles
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
-
