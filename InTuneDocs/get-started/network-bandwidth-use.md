@@ -145,14 +145,13 @@ The following tables list the ports and services that the Intune client accesses
 
 ### DNS names and services
 
-The following table identifies DNS names and their associated service purposes.
+The following table identifies DNS names and their IP addresses.
 
 |**DNS** | **Purpose** |
 |-----------|----------|
 |manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br> a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | Used for device enrollment and device check-in. <br><br>manage.microsoft.com is also used for couple of other services that are called by our services (not directly hit by any customer)|
 |sts.manage.microsoft.com |Used by Company Portal and services listed above |
 |portal.manage.microsoft.com <br>m.manage.microsoft.com <br><br>fei.&lt;MSU/ASU>.manage.microsoft.com <br> <br>portal.fei.&lt;MSU/ASU>.manage.microsoft.com <br> <br>m.fei.&lt;MSU/ASU>.manage.microsoft.com |Used by Company Portal (end user portal)|
-
 
 >[!div class="step-by-step"]
 
