@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/28/2017
+ms.date: 04/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ As the public preview progresses, and more features are added, we'll let you kno
 ### Support for managing the Apple Classroom app
 
 You can now manage the iOS Classroom app on iPad devices. Set up the Classroom app on the teachers iPad with the correct class and student data, then configure student iPads registered to a class, so that you can control them using the app.
-For details, see [Configure iOS education settings](/intune-azure/configure-devices/how-to-configure-ios-edu-settings.md).
+For details, see [Configure iOS education settings](/intune-azure/configure-devices/how-to-configure-ios-edu-settings).
 
 ### Support for managed configuration options for Android apps <!-- 621621 -->
 
