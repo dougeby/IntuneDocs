@@ -33,7 +33,7 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)**, and then choose **Add devices…**. You can add devices in two ways:
 
-    -   **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file. The details field is limited to 128 characters.
+    -   **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file. The details field is limited to 128 characters. 
 
         |||
         |-|-|

@@ -36,7 +36,7 @@ As an IT admin you can create and import a comma-separated value (.csv) file tha
 ## Add corporate identifiers
 To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. Details are limited to 128 characters and are for administrative use only. Details aren't displayed on the device. The current limit is 500 rows per .csv file.
 
-**Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file.
+**Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file. 
 
 |||
 |-|-|
@@ -46,8 +46,8 @@ To create the list, create a two-column, comma-separated value (.csv) list witho
 This .csv file when viewed in a text editor appears as:
 
 ```
-01234567 890123,device details
-02234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
