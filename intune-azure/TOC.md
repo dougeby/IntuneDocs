@@ -1,6 +1,6 @@
 # Introduction
 ## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
-## [What is Intune for Education?](/intunedocs/understand-explore/introduction-to-intune-education?toc=%2fintune%2ftoc.json)
+## [What is Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Get started
 <!---(introduction/get-started.md) --->
