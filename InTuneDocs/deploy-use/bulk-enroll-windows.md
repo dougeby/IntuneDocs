@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
