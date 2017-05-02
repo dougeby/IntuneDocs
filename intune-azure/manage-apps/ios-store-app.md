@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,10 @@ ms.custom: intune-azure
 # How to add iOS store apps to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## Before you start
+
+You can only deploy apps using this method if they are free of charge in the app store. If you want to deploy paid apps using Intune, consider using the [iOS volume-purchase program](/intune-azure/manage-apps/ios-vpp-apps).
 
 
 ## Step 1 - Search for the app in the store
