@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: How to add apps to Microsoft IntunetitleSuffix: "Intune Azure preview"
+title: How to add apps to Microsoft Intune | Microsoft Docs
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,8 +53,8 @@ The following platforms are supported.
 
 Consider the following points before you begin to add and assign apps.
 
-- When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
-- Some apps or items you deploy might be dependent on built-in iOS apps. For example, if you deploy a book from the iOS store, then the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
+- When you add and assign an app from a store, end users must have an account with that store in order to be able to install the app.
+- Some apps or items you assign might be dependent on built-in iOS apps. For example, if you assign a book from the iOS store, then the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
 
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A full subscription includes 20 GB of storage space.
