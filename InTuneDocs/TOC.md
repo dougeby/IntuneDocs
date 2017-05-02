@@ -1,5 +1,6 @@
 # Understand and Explore
 ## [Introduction to Intune](understand-explore/introduction-to-microsoft-intune.md)
+## [Intune for Education](understand-explore/introduction-to-intune-education.md)
 ## [Sign up for a free trial](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Evaluate Intune MDM](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [Create groups to organize users & devices](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
