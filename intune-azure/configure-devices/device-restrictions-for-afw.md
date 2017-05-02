@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android for Work
+title: Intune device restriction settings for Android for Work | Microsoft Docs
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
 keywords:
