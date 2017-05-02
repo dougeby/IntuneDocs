@@ -52,6 +52,10 @@ If you are an educational organization, you can use School Data Sync (SDS) to as
 
 ![Image of SDS profile setting](./media/i4e-sds-profile-setup-setting.png)
 
+When you assign an Intune for Education license, make sure that Intune A Direct license is also assigned.
+
+![Image of product license set up](./media/i4e-set-licenses.png)
+
 See this [overview of School Data Sync](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) to learn more about SDS.
 
 ## Use PowerShell to selectively manage EMS user licenses
