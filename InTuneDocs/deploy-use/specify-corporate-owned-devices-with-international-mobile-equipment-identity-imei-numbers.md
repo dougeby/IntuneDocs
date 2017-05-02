@@ -42,8 +42,8 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
         This .csv file when viewed in a text editor appears as:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Manually add device details** - Enter the IMEI number and device details of up to 15 devices.
