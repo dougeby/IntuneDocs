@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,4 +90,4 @@ To reclaim a license, you must change the assignment action to **Uninstall**. Th
 
 When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds.
 
-When you deploy a VPP app as Available, the app content and license are deployed directly from the app store.
+When you assign a VPP app as Available, the app content and license are assigned directly from the app store.

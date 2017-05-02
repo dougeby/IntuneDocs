@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,10 +34,10 @@ The [Windows Store for Business](https://www.microsoft.com/business-store) gives
 * You can synchronize the list of apps you have purchased from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console, and you can assign these like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
-* Intune blocks deployment and installation of apps if there are an insufficient number of licenses available.
+* Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
 
 ## Before you start
-Review the following information before you start syncing and deploying apps from the Windows Store for Business:
+Review the following information before you start syncing and assigning apps from the Windows Store for Business:
 * You must configure Intune as the mobile device management authority for your organization.
 * You must have signed up for an account on the Windows Store for Business.
 * Once you have associated a Windows Business Store account with Intune, you cannot change to a different account in the future.
@@ -53,7 +53,7 @@ Before you enable synchronization in the Intune console, you must configure your
 3. On the Management tools page, choose **Add a management tool**, and choose **Microsoft Intune**.
 
 > [!NOTE]
-> If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
+> If you are using more than one management tool to assign Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
 
 You can now continue, and set up synchronization in the Intune console.
 
@@ -75,12 +75,12 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Assign apps
 
-You assign apps from the store in the same way you deploy any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](deploy-apps.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
+You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](deploy-apps.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
 
-When you assign a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for a deployed app, you will not be able to deploy any more copies. You must take one of the following actions:
+When you assign a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for an assigned app, you will not be able to assign any more copies. You must take one of the following actions:
 * Uninstall the app from some devices.
-* Reduce the scope of the current deployment to target only the users you have sufficient licenses for.
+* Reduce the scope of the current assignment to target only the users you have sufficient licenses for.
 * Buy more copies of the app from the Windows Store for Business.
 
 > [!Important]
-> Deployed apps are only available to the user who originally enrolled the device. No other users can access the app.
+> Assigned apps are only available to the user who originally enrolled the device. No other users can access the app.

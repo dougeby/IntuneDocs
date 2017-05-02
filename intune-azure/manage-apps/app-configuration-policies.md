@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ If users enter these settings incorrectly, this can increase the burden on your 
 
 App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action.
 
-You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then deploy the app. The policy settings will be used whenever the app checks for them (typically, the first time it is run).
+You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings will be used whenever the app checks for them (typically, the first time it is run).
 
 > [!TIP]
 > This policy type is currently available only for devices running iOS 8.0 and later. It supports the following app installation types:

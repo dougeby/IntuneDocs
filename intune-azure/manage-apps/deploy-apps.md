@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,21 +56,21 @@ The most important thing to note is that the concept of child groups does not ex
 ||||||
 |-|-|-|-|-|
 |**Intune Classic (before tenant migration)**|-|**Intune Azure (after tenant migration is complete)**|-|**More information**|
-|**Parent group deployment intent**|**Child group deployment intent**|**Resulting assignment intent for common members of previous parent and child group**|**Resulting assignment intent action for members of parent group**|-|	
+|**Parent group assignment intent**|**Child group assignment intent**|**Resulting assignment intent for common members of previous parent and child group**|**Resulting assignment intent action for members of parent group**|-|	
 |Available|Required|Required and Available|Available|Required and Available means that apps assigned as required can also be seen in the Company Portal app.
-|Not Applicable|Available|Not Applicable|Not Applicable|Workaround: Remove the ‘Not Applicable’ deployment intent from the Intune parent group.
+|Not Applicable|Available|Not Applicable|Not Applicable|Workaround: Remove the ‘Not Applicable’ assignment intent from the Intune parent group.
 |Required|Available|Required and Available|Required|-|
 |Required and Available<sup>1</sup>|Available|Required and Available|Required and Available|-|	
 |Required|Not Applicable|Required|Required|-|	
 |Required and Available|Not Applicable|Required and Available|Required and Available|-|	
 |Required|Uninstall|Required|Required|-|	
 |Required and Available|Uninstall|Required and Available|Required and Available|-|
-<sup>1</sup> For managed iOS store apps only, when you add these to Intune and deploy them as Required, they are automatically created with both Required, and Available intents.
+<sup>1</sup> For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
 
-You can take the following actions to avoid deployment conflicts:
+You can take the following actions to avoid assignment conflicts:
 
-1.	If you previously deployed apps to related Intune parent and child groups, consider removing these deployments before your tenant migration begins.
-2.	Remove child groups from parent groups, and create a new group containing the members of the old child group. You can then create a new app deployment to this group.
+1.	If you previously assigned apps to related Intune parent and child groups, consider removing these assignments before your tenant migration begins.
+2.	Remove child groups from parent groups, and create a new group containing the members of the old child group. You can then create a new app assignment to this group.
 Notes: If the previous parent group was “All Users”, you’ll need to create a new dynamic group that does not include members of the child group.
 You must make any changes to groups in the [Azure Portal](https://portal.azure.com/) for user and device groups. The [Classic Azure Portal](https://manage.windowsazure.com/) will only allow you to make changes to user groups.
 

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ Each of these certificate types has it's own prerequisites, and infrastructure r
 	- Windows 8.1 and later
 	- Windows Phone 8.1 and later
 	- Windows 10 and later
-3. Create certificate profiles so that devices request a certificate to be used for authentication of VPN, Wi-Fi, and email access. You can create and deploy a **PKCS** or a **SCEP** certificate profile for devices running these platforms:
+3. Create certificate profiles so that devices request a certificate to be used for authentication of VPN, Wi-Fi, and email access. You can create and assign a **PKCS** or a **SCEP** certificate profile for devices running these platforms:
 	- iOS 8.0 and later
 	- Android 4.0 and later
 	- Android for Work

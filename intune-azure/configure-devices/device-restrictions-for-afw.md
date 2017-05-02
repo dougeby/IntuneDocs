@@ -66,9 +66,9 @@ For example, you push an app to the work profile that requires location access. 
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag) You can use this setting to prevent users from configuring Smart Lock.
 
 ## Custom policy settings
-Use the Microsoft Intune **Android for Work custom configuration policy** to deploy OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Microsoft Intune **Android for Work custom configuration policy** to assign OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
+This capability is intended to allow you to assign Android settings that are not configurable with Intune policies.
 Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
 
 ### General settings

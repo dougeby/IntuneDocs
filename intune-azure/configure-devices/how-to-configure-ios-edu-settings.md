@@ -75,7 +75,7 @@ You can import information into SDS by using one of the following:
 - [Find out more about Microsoft School Data Sync](https://sds.microsoft.com/)
 - [Find out more about licensing in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## Step 2 - Create and deploy an iOS Education profile in Intune
+## Step 2 - Create and assign an iOS Education profile in Intune
 
 ### Configure general settings
 
