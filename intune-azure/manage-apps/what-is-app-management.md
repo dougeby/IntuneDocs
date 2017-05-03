@@ -73,7 +73,7 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
+3. On the **Intune** blade, choose **Mobile apps**.
 
 	![The Mobile Apps workload](./media/apps-workload.png)
 
