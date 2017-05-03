@@ -29,6 +29,11 @@
 
     },
     {
+      "source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-ios.md ",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md",
       "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
