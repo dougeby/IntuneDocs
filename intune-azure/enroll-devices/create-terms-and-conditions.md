@@ -25,11 +25,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Ensure users accept company terms before they enroll devices
+# Ensure users accept company terms for access
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As an Intune admin, you can require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access company resources like apps and email. Use of this policy is optional.
+As an Intune admin, you can choose to require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access company resources like apps and email. Configuration of terms and conditions is optional.
 
 You can create and deploy multiple policies containing different terms and conditions. You can also produce versions of the same terms and conditions in different languages and then deploy these to their appropriate groups.
 
@@ -42,15 +42,15 @@ You can create and deploy multiple policies containing different terms and condi
 3. Select **Create**.
 ![Screenshot of the Intune portal showing Create button for terms and conditions](media/terms-create-terms.png)
 
-4. On the **Create Terms and Conditions** blade, specify the following information:
+4. On the expanded blade, specify the following information:
 
-   - **Display name**: Name for the terms. Users see this name in the Company Portal app.
+   - **Display name**: Name for the terms in the Intune portal. Users don't see this name.
 
-   - **Description**: Optional details that help you identify the policy in the Azure portal.
+   - **Description**: Optional details that help you identify this set of terms in the Intune portal.
 
 5. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
 
-   - **Title**: The title users see in the Company Portal.
+   - **Title**: The title that users see in the Company Portal.
 
    - **Summary of Terms**: Text that explains what it means if users accept the terms.
 
@@ -59,9 +59,9 @@ You can create and deploy multiple policies containing different terms and condi
 6. Select **Ok**.
 
 
-## Assign a terms and conditions
+## Assign terms and conditions
 
-When users in assigned groups access the Company Portal, Intune displays the terms and conditions you deployed. Users must accept these terms before they can gain access to company resources.
+You can assign terms and conditions to groups of user who must accept before enrolling. When users in assigned groups access the Company Portal, Intune displays the terms and conditions you deployed. Users must accept these terms before they can gain access to company resources.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
@@ -72,19 +72,15 @@ When users in assigned groups access the Company Portal, Intune displays the ter
 
 4. Click the **Select Group** button and in the **Select Groups** blade, select the groups you want to assign the terms, and then click **Select**.
 
-5. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups and users will see and must accept before they can enroll devices.
+5. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal.
 
-## Monitor a terms and conditions policy
+## Monitor a terms and conditions
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Terms and Conditions**.
-
-2.  In the **Create New Report** window, click **View Report**. The report will open detailing which users have accepted the terms and conditions you deployed.
-
-### Updates and version control for terms and conditions
-When you edit an existing terms and conditions policy, you can choose which behavior occurs when you deploy the policy. Use the following procedure to help you update existing terms and conditions policies.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment**, and then choose **Terms and Conditions**.
+2. In the list of terms and conditions, select the terms you want to assign, and then select **Acceptance Statuses**. 
 
 ## Work with multiple versions of terms and conditions
-You can edit your terms and conditions and manage their versions. We recommend that you increase the version number and require acceptance any time you make significant changes to your terms and conditions policy. Keep the current version number if you are fixing typos or changing formatting, for example.
+You can edit your terms and conditions and manage their versions. We recommend that you increase the version number and require acceptance any time you make significant changes to your terms and conditions. Keep the current version number if you are fixing typos or changing formatting, for example.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
