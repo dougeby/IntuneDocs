@@ -108,6 +108,8 @@ The following tables list the ports and services that the Intune client accesses
 |**Domains**|**IP address**|
 |---------------------|-----------|
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |40.86.181.86<br>13.82.59.78<br>13.74.184.100<br>40.68.188.2<br>13.75.42.6<br>52.230.25.184 |
+| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
+|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 |
 |portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com |13.64.196.170|
 |fei.msua01.manage.microsoft.com<br> portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com |40.71.34.120 |
 |fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com |13.64.198.190|
@@ -140,19 +142,3 @@ The following tables list the ports and services that the Intune client accesses
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
-| sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
-|Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | 104.40.82.191 <br>13.82.96.212 <br>52.169.9.87 <br>52.174.26.23 <br>40.83.123.72 <br>13.76.177.110 |
-
-### DNS names and services
-
-The following table identifies DNS names and their IP addresses.
-
-|**DNS** | **Purpose** |
-|-----------|----------|
-|manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br> a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com | Used for device enrollment and device check-in. <br><br>manage.microsoft.com is also used for couple of other services that are called by our services (not directly hit by any customer)|
-|sts.manage.microsoft.com |Used by Company Portal and services listed above |
-|portal.manage.microsoft.com <br>m.manage.microsoft.com <br><br>fei.&lt;MSU/ASU>.manage.microsoft.com <br> <br>portal.fei.&lt;MSU/ASU>.manage.microsoft.com <br> <br>m.fei.&lt;MSU/ASU>.manage.microsoft.com |Used by Company Portal (end user portal)|
-
->[!div class="step-by-step"]
-
->[&larr; **Prerequisites**](what-to-know-before-you-start-microsoft-intune.md)     [**Subscription** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
