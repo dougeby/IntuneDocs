@@ -51,7 +51,7 @@ Intune device management provides [these capabilities](mobile-device-management-
 
 ### Windows PC software client
 
-An [Intune software client](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition. Managing PCs with the client software provides [these capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
+An [Intune software client](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
 
 ### Exchange ActiveSync management
 

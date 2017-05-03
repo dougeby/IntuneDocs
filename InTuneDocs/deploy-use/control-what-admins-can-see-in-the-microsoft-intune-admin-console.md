@@ -43,7 +43,7 @@ You can filter the Microsoft Intune administration console view to allow your ad
     -   **Read-only access**
     -   **Helpdesk - Groups node**
 
-    Full access and read-only access are self-explanatory. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Full access and read-only access are self-explanatory. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Helpdesk - Groups Node** restricts what the admin can see and do to the following:
 

@@ -4,9 +4,10 @@
 title: Enroll with the device enrollment manager | Microsoft Docs
 description: The device enrollment manager (DEM) account can manage large numbers of shared, corporate-owned mobile devices with a single user account.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/17
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

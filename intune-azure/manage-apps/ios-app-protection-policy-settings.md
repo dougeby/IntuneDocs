@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: iOS app protection policy settingstitleSuffix: "Intune Azure preview"
+title: iOS app protection policy settings
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: This topic describes the app protection policy settings for iOS devices."
 keywords:
 author: NathBarn
@@ -73,6 +74,11 @@ There are some exempt apps and platform services that Intune app protection poli
 | **Block managed apps from running on jailbroken or rooted devices** |  Choose **Yes** to prevent this app from running on jailbroken or rooted devices. The user will continue to be able to use this app for personal tasks, but will have to use a different device to access work or school data in this app. | Yes |
 | **Recheck the access requirements after (minutes)** | Configure the following settings: <ul><li>**Timeout**: Specify the time (in minutes) before the access requirements for the app are rechecked. Default value = **30** minutes.</li><li>**Offline grace period**: If the device is offline, specify the time (in minutes) before the access requirements for the app are rechecked. Default value = **720** minutes (12 hours).</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Offline interval before app data is wiped (days)** | Work or school data in this app can be wiped if a device has been offline for more than a certain period. Specify the number of days a device can be offline before the work or school data is removed from the device. <br><br> | 90 days |
+| **Require minimum iOS operating system** | Choose **Yes** to require a minimum iOS operating system to use this app. The user will be blocked from access if the iOS version on the device does not meet the requirement. <br><br> | No |
+| **Require minimum iOS operating system (Warning only)** | Choose **Yes** to recommend a minimum iOS operating system to use this app. The user will see a notification if the iOS version on the device does not meet the requirement. This notification can be dismissed. <br><br> | No |
+| **Require minimum app version** | Choose **Yes** to require a minimum app version to use the app. The user will be blocked from access if the app version on the device does not meet the requirement.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No |
+| **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user will see a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No |
+| **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user will be blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | No |
 
 ##  Add-ins for Outlook app
 
