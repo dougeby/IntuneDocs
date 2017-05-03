@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune?titleSuffix: "Intune Azure preview"
+title: What are device profiles in Microsoft Intune? | Microsoft DocstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
 author: robstackmsft
@@ -56,17 +56,17 @@ For more information, see [How to configure device restriction settings](how-to-
 Supports: Android, iOS, macOS, Windows 10 and Windows 10 Team.
 
 ## Email
-Email profiles let you create, deploy, and monitor Exchange ActiveSync email settings on devices you manage. By deploying these settings, you ensure consistency, reduce support calls, and let end users access company email on their personal devices without any required setup on their part.
+Email profiles let you create, assign, and monitor Exchange ActiveSync email settings on devices you manage. By assigning these settings, you ensure consistency, reduce support calls, and let end users access company email on their personal devices without any required setup on their part.
 For more information, see [How to configure email settings](how-to-configure-email-settings.md)
 Supports: Android, iOS, Windows Phone 8.1 and Windows 10.
 
 ## Wi-Fi
-Use Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. When you deploy a Wi-Fi profile, your users will have access to your corporate Wi-Fi without having to configure it themselves.
+Use Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users will have access to your corporate Wi-Fi without having to configure it themselves.
 For more information, see [How to configure Wi-Fi settings](how-to-configure-wi-fi-settings.md)
 Supports: Android, iOS, macOS and Windows 8.1 (import only).
 
 ## VPN
-Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use VPN profiles to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
+Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use VPN profiles to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 For more information, see [How to configure VPN settings](how-to-configure-vpn-settings.md).
 Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
