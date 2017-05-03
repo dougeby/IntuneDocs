@@ -3,7 +3,7 @@
 
 title: App provisioning profiles | Microsoft Docs
 titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry."
+description: "Intune Azure preview: Intune gives you the tools to proactively deploy a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Use iOS mobile provisioning profile policies to prevent your apps from expiring
+# Use iOS mobile provisioning profiles to prevent your apps from expiring
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
