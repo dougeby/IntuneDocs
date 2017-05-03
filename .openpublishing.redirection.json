@@ -18,13 +18,13 @@
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-cpwebsite.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": true
 
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-ios.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
@@ -36,13 +36,13 @@
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-android.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-windows.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
