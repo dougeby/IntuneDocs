@@ -27,11 +27,11 @@ ms.custom: intune-classic
 ---
 
 # Accessibility for People with Disabilities
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] more accessible for people with disabilities.
+Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Microsoft Intune more accessible for people with disabilities.
 
 ## In This Section
 [Accessibility Features of Microsoft Intune](accessibility-features-of-microsoft-intune.md)
-Describes the accessibility features of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+Describes the accessibility features of Microsoft Intune.
 
 [Accessibility Products and Services from Microsoft](accessibility-products-and-services-from-microsoft.md)
 Describes the accessibility products and services that are available from Microsoft.
