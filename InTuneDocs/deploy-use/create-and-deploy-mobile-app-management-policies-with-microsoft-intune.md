@@ -159,7 +159,7 @@ Beginning with Intune 1703 version, you have the option to generally add LOB app
 
     You have now created a policy and deployed it to users.
 
-Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses assigned to them are affected by the policy. Users who are in the security group that you selected who don’t have a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them are not affected.
+Only users with Intune licenses assigned to them are affected by the policy. Users who are in the security group that you selected who don’t have a Intune license assigned to them are not affected.
 
 >[!IMPORTANT]
 > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected are not affected.
