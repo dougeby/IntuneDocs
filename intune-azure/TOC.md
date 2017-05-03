@@ -88,7 +88,8 @@
 #### [Windows LOB apps](manage-apps/windows-line-of-business-app.md)
 ### [Assign apps](manage-apps/deploy-apps.md)
 ### [Monitor apps](manage-apps/monitor-apps.md)
-### [Use app configuration policies](manage-apps/app-configuration-policies.md)
+### [Use app configuration profiles](manage-apps/app-configuration-policies.md)
+### [Use iOS app provisioning profiles](manage-apps/ios-app-provisioning-profile.md)
 ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Work with volume-purchased apps](manage-apps/volume-purchased-apps.md)
