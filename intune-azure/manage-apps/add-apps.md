@@ -44,7 +44,9 @@ The following platforms are supported.
 - iOS line-of-business (LOB) apps
 - Web apps
 - Windows Phone 8.1 store apps
+- Windows Phone line-of-business apps (.xap files)
 - Windows store apps
+- Windows line-of-business apps (.msi files only)
 
 >[!TIP]
 > A line-of-business (or LOB) app is one that you do not install from an app store, but install from the app installation file. For example, to install an iOS LOB app, you add the application archive file (with the extension .ipa). These are typically apps you have written in-house.
@@ -121,4 +123,6 @@ Choose one of the following topics to find out how to add apps for each platform
 - [iOS LOB apps](/intune-azure/manage-apps/ios-lob-app)
 - [Web apps (for all platforms)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+- [Windows Phone LOB apps](/intune-azure/manage-apps/windows-phone-line-of-business-app)
 - [Windows store apps](/intune-azure/manage-apps/windows-store-app)
+- [Windows LOB app](/intune-azure/manage-apps/windows-line-of-business-app)
