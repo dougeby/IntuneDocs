@@ -33,7 +33,7 @@ ms.custom: intune-classic
 ## Scenario 1: Block users from using noncompliant devices to access Exchange Online
 ### Scenario requirements
 - All users in the **Accounting** Azure Active Directory security group must be blocked from accessing Exchange Online if their device is not compliant with a compliance policy that you deployed.
-- If any users exist in this group whose devices are not supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], they must be blocked from accessing Exchange Online on that device.
+- If any users exist in this group whose devices are not supported by Intune, they must be blocked from accessing Exchange Online on that device.
 - Users in the **Finance** Azure Active Directory security group must be exempt from the policy, even if they're also in the **Accounting** security group.
 
 To accomplish this, configure a conditional access policy for Exchange Online with the following settings:
@@ -73,7 +73,7 @@ You use the following flow to decide which devices can access Exchange:
 ## Scenario 3: No Android devices can access Exchange on-premises
 ### Scenario requirements
 - All Android devices should be blocked from accessing Exchange.
-- All other supported devices can access Exchange, as long as they're managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- All other supported devices can access Exchange, as long as they're managed by Intune.
 
 To accomplish this, configure a conditional access policy for Exchange on-premises with the following settings:
 

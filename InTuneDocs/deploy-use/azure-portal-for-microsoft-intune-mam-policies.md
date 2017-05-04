@@ -43,7 +43,7 @@ The Azure portal is used to create and manage app protection policies for:
 
 ## Sign in to the Azure portal and customize your start page
 
-1.  Go the [Azure portal](https://portal.azure.com) and sign in with your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
+1.  Go the [Azure portal](https://portal.azure.com) and sign in with your Intune credentials.
 
     ![Screenshot of the Azure portal sign-in page](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
