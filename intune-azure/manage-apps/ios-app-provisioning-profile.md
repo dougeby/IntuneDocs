@@ -3,7 +3,7 @@
 
 title: App provisioning profiles | Microsoft Docs
 titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Intune gives you the tools to proactively deploy a new provisioning profile to devices that have apps that are nearing expiry."
+description: "Intune Azure preview: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -32,13 +32,13 @@ ms.custom: intune-azure
 
 ## Introduction
 
-Apple iOS line of business apps that are deployed to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
+Apple iOS line of business apps that are assigned to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
 
 - **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app will not be allowed to run.
 - **Capabilities enforcement** - iOS attempts to enforce the app's capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) that are in the app installation (.ipa) file.
 
 
-The enterprise signing certificate that you use to sign apps typically lasts for three years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively deploy a new provisioning profile to devices that have apps that are nearing expiry.
+The enterprise signing certificate that you use to sign apps typically lasts for three years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 After the certificate expires, you must sign the app again with a new certificate and embed a new provisioning profile with the key of the new certificate.
 
 

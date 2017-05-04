@@ -126,7 +126,7 @@ To specify an app URL in the apps list, use the following format:
 
 Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
-Device profiles that contain restricted app settings must be deployed to groups of users.
+Device profiles that contain restricted app settings must be assigned to groups of users.
 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -265,7 +265,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 
 >[!NOTE]
 > Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
->If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
+>If the iOS app that you specify is installed after you assign the profile, the device will not enter kiosk mode until after it is restarted.
 
 ## Safari
 - 	**Safari (supervised only)** - Specify whether the Safari browser can be used on the device.
