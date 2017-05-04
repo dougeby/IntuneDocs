@@ -4,10 +4,10 @@
 title: Accessibility Products and Services from Microsoft | Microsoft Docs
 description: Details about accessibility products and services from Microsoft.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
