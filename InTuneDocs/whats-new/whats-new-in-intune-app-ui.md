@@ -63,8 +63,6 @@ __New sign in experience when signing in from another device__
 
 Tap the __Sign in from another device__ link.
 
-![The user is prompted to provide just their email address rather than their email and password on the same screen. The link underneath the email field says "Sign in from another device".](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
-
 ![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
 Launch a browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
