@@ -31,6 +31,9 @@ Learn what updates we've made to the UI for apps that your end users will see in
 ## Coming soon in the UI
 These are the plans for ways we will be improving the user experience by updating our user interface.
 
+> [!Note]
+> Please note that the images below may be previews, and the announced product may differ from the presented versions.
+
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
 We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
@@ -76,9 +79,6 @@ Enter the code you saw in the Company Portal app. When you select __Continue__, 
 The Company Portal app will begin signing in.
 
 ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-> [!Note]
-> Please note that the images below are previews, and the announced product may differ from the presented versions.
 
 ## April 2017
 
