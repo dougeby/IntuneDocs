@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] conditional access to control access to files that are located on SharePoint Online.
+Use Microsoft Intune conditional access to control access to files that are located on SharePoint Online.
 Conditional access has two components:
 - A device compliance policy that the device must comply with in order to be considered compliant.
 - A conditional access policy where you specify the conditions that the device must meet in order to access the service.
@@ -49,20 +49,20 @@ When a user attempts to connect to a file by using a supported app such as OneDr
 
 
   To connect to the required files, a device must be:
--   **Enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or a domain-joined PC.
+-   **Enrolled** with Intune or a domain-joined PC.
 
--   **Registered** in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Registered** in Azure Active Directory (this happens automatically when the device is enrolled with Intune).
 
 
--   **Compliant** with any deployed [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies.
+-   **Compliant** with any deployed Intune compliance policies.
 
 The device state is stored in Azure Active Directory, which grants or blocks access to the files, based on the conditions that you specify.
 
 If a condition isn't met, the user sees one of the following messages when they sign in:
 
--   If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app and enroll.
+-   If the device isn't enrolled with Intune or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app and enroll.
 
--   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
+-   If the device isn't compliant, a message is displayed that directs the user to the Intune Company Portal website, where they can find information about the problem and how to remediate it.
 
 **Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -119,7 +119,7 @@ If a user is in both groups, they are exempt from the policy.
 If you haven't already done so, create a compliance policy, and deploy it to the users that the SharePoint Online policy targets.
 
 > [!NOTE]
-> While compliance policies are deployed to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
+> While compliance policies are deployed to Intune groups, conditional access policies are targeted to Azure Active Directory security groups.
 
 For details about how to configure the compliance policy, see [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -156,11 +156,11 @@ Next, configure the policy to require that only managed and compliant devices ca
 
          The conditional access policy applies to any client app that is using modern authentication on the platforms that you specify.
 
-     For Windows PCs, a PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
+     For Windows PCs, a PC must either be domain joined, or enrolled with Intune and compliant. You can set the following requirements:
 
-     -   **Devices must be domain joined or compliant.** Choose this option to require that PCs must either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If a PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Devices must be domain joined or compliant.** Choose this option to require that PCs must either be domain joined or compliant with the policies that are set in Intune. If a PC doesn't meet either of these requirements, the user is prompted to enroll the device with Intune.
 
-     -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
+     -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in Intune and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
 
 4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
 
