@@ -51,6 +51,12 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 
 You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
+### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
+Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
+
+### Improved status messaging in the Company Portal app for iOS <!--744866-->
+New, more specific error messages will now be displayed within the Company Portal app for iOS to provide more accessible information about what is happening on devices. These error cases were previously included in a general error message titled "Company Portal Temporarily Unavailable". Additionally, if a user launches the Company Portal on iOS when they do not have an Internet connection, they will now see a persistent status bar on the homepage saying "No Internet Connection."
+
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
 New improvements for app installs started in the Windows 10 Company Portal app include:
