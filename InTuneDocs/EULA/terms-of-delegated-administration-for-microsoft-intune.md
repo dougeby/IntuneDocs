@@ -4,10 +4,10 @@
 title: Terms of Delegated Administration for Microsoft Intune | Microsoft Docs
 description: If you cannot truthfully make these representations, do not accept these terms.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
