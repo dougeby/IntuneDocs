@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune Windows Phone 8.1 **Custom** profile to deploy OMA-URI settings that can be used to control features on Windows Phone 8.1 devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Microsoft Intune Windows Phone 8.1 **Custom** profile to assign OMA-URI settings that can be used to control features on Windows Phone 8.1 devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy settings that are not configurable with other Intune policies.
+This capability is intended to allow you to assign settings that are not configurable with other Intune policies.
 
 ## Custom policy settings for Windows Phone 8.1 devices
 
