@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/03/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,11 +88,11 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 	- [App protection policies](app-protection-policies.md)
 - **App selective wipe** - Remove only corporate data from a users device you select.
 	- [App selective wipe](app-selective-wipe.md)
-- **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app app can no longer be run. Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry.
+- **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.
 	- [iOS app provisioning profiles](ios-app-provisioning-profile.md)
 
 ### Monitor
-- **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the app stores.
+- **Licensed Apps** - View, assign, and monitor volume-purchased apps from the app stores.
 	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
 - **Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.
 - **App Install Status** - Shows the status of an app assignment you created.

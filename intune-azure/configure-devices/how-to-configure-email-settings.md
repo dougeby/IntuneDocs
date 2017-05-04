@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,7 +78,7 @@ If you want to remove an email profile from a device, edit the assignment and re
 
 You can help secure email profiles using one of two methods:
 
-1. **Certificates** - When you create the email profile, you choose a certificate profile that you have previously created in Intune. This is known as the identity certificate, and is used to authenticate against a trusted certificate profile (or a root certificate) to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the email connection, typically, the native mail server.
+1. **Certificates** - When you create the email profile, you choose a certificate profile that you have previously created in Intune. This is known as the identity certificate, and is used to authenticate against a trusted certificate profile (or a root certificate) to establish that the user’s device is allowed to connect. The trusted certificate is assigned to the computer that authenticates the email connection, typically, the native mail server.
 For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Intune](/intune-azure/configure-devices/how-to-configure-certificates).
 2. **User name and password** - The user authenticates to the native mail server by providing their user name and password.
 The password is not contained in the email profile, so the user needs to supply this when they connect to email.

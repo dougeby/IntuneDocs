@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune Android **Custom** profile to deploy OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Microsoft Intune Android **Custom** profile to assign OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
+This capability is intended to allow you to assign Android settings that are not configurable with Intune policies.
 
 ## Custom profile settings for Android devices
 

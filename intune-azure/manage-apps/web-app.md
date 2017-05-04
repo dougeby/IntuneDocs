@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,13 +36,13 @@ ms.custom: intune-azure
 5. Above the list of apps, choose **Add**.
 6. In the **Add App** blade, choose **App Information**.
 7. In the **Edit App** blade, configure the following information. Once you are done, click **Add**:
-	- **App URL** - Enter the URL of the web site that hosts the app you want to deploy.
+	- **App URL** - Enter the URL of the web site that hosts the app you want to assign.
 	- **App Name** - Enter the name of the app as it will be displayed in the company portal.
 	- **App Description** - Enter a description for the app. This will be displayed to end users in the company portal.
 	- **Publisher** - Enter the name of the publisher of this app.
 	- **Category (optional)** - Select one or more of the built-in app categories, or a category you created. This will make it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-	- **Require a managed browser to open this link** - When you deploy a link to a website or web app to users, they will be able to open it only in the Intune managed browser. This browser must be installed on their device.
+	- **Require a managed browser to open this link** - When you assign a link to a website or web app to users, they will be able to open it only in the Intune managed browser. This browser must be installed on their device.
 	- **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 8. When you are done, on the **Add App** blade, choose **Save**.
 

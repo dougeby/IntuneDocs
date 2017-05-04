@@ -29,9 +29,9 @@ ms.custom: intune-azure
 
 # Create Intune custom profile settings for Android for Work devices
 
-Use the Intune Android for Work custom configuration policy to deploy OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Intune Android for Work custom configuration policy to assign OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
+This capability is intended to allow you to assign Android settings that are not configurable with Intune policies. Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
 
 ## Create a custom profile
 
