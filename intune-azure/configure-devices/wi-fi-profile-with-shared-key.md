@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,7 @@ Be sure to include the dot character at the beginning.
 4. Choose **OK**, save, and then assign the policy.
 
     > [!NOTE]
-    > This policy can only be deployed to user groups.
+    > This policy can only be assigneded to user groups.
 
 The next time each device checks in, the policy will be applied, and a Wi-Fi profile will be created on the device. The device will be able to connect to the network automatically.
 

@@ -131,7 +131,7 @@ Apps that support multi-identity let you use different accounts (work and person
 
 For example, when a user starts the OneDrive app by using their work account, they can't move the files to a personal storage location. However, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
 
-All Office mobile apps support multi-identity access.
+- Learn more about the apps that support [MAM and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 
 ##  Next steps
 - [Get ready to configure app protection policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

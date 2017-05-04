@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshooting device profiles in Microsoft IntunetitleSuffix: "Intune Azure preview"
+title: Troubleshooting device profiles in Microsoft Intune | Microsoft DocstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,8 +32,8 @@ ms.custom: intune-azure
 
 The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.
 
-## How long does it take for mobile devices to get a policy or apps after they have been deployed?
-When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
+## How long does it take for mobile devices to get a policy or apps after they have been assigned?
+When a policy or an app is assigned, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
 
 If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
 
@@ -52,12 +52,12 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
 ## What actions cause Intune to immediately send a notification to a device?
-Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
+Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
 
-## If multiple policies are deployed to the same user or device, how do I know which settings will get applied?
-When two or more policies are deployed to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
+## If multiple policies are assigned to the same user or device, how do I know which settings will get applied?
+When two or more policies are assigned to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
 
 -   Compliance policy settings always have precedence over configuration policy settings.
 
@@ -65,25 +65,25 @@ When two or more policies are deployed to the same user or device, the evaluatio
 
 -   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
 
-## What happens when mobile application management policies conflict with each other? Which one will be applied to the app?
-Conflict values are the most restrictive settings available in a MAM policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
+## What happens when app protection policies conflict with each other? Which one will be applied to the app?
+Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
 
-Conflicts occur when two policy settings are the same.  For example, you configured two MAM policies that are identical except for the copy/paste setting.  In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.
+Conflicts occur when two profile settings are the same.  For example, you configured two MAM policies that are identical except for the copy/paste setting.  In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.
 
-If one policy is deployed to the app and takes effect, and then a second one is deployed, the first one will take precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding policy, then they will both be in conflict. Any conflicting settings will be set to the most restrictive values.
+If one profile is assignedd to the app and takes effect, and then a second one is assigned, the first one will take precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding profile, then they will both be in conflict. Any conflicting settings will be set to the most restrictive values.
 
 ## What happens when iOS custom policies conflict?
-Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) policy. It merely serves as the delivery mechanism.
+Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profile. It merely serves as the delivery mechanism.
 
-When you deploy a custom policy, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom policy with settings conflicts, the order in which settings are applied is random.
+When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom profile with settings conflicts, the order in which settings are applied is random.
 
-## What happens when a policy is deleted or no longer applicable?
-When you delete a policy, or you remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following lists.
+## What happens when a profile is deleted or no longer applicable?
+When you delete a profile, or you remove a device from a group to which a profile was assigned, the profile and settings will be removed from the device according to the following lists.
 
 ### Enrolled devices
 
 - Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.
-- All other policy types:
+- All other profile types:
 	- **Windows and Android devices**: Settings are not removed from the device.
 	- **Windows Phone 8.1 devices**: The following settings are removed:
 		- Require a password to unlock mobile devices
@@ -117,44 +117,13 @@ When you delete a policy, or you remove a device from a group to which a policy 
 		- Allow data roaming
 		- Allow automatic synchronization while roaming
 
-### Windows PCs running the Intune client software
+## I changed a device restriction profile, but the changes haven't taken effect
+Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive profile has already been applied to the device.
 
-- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
-- **Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.
-- **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-
-
-## How can I refresh the policies on a device to ensure that they are current (applies to Windows PCs running the Intune client software only)?
-
-1.  In any device group, select the devices on which you want to refresh the policies, and then choose **Remote Tasks** &gt; **Refresh Policies**.
-2.  Choose **Remote Tasks** in the lower-right corner of the Intune administration console to check the task status.
-
-
-
-### How do I know that my profile was assigned to a device?
-
-In the Intune admin console every device has a policy tab under **Device Properties**. Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what is actually applied when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together. Possible statuses are:
-
--   **Conforms**: the device has received the policy and reports to the service that it  conforms to the setting.
-
--   **Not applicable**: The policy setting is not applicable. For example,  email settings for iOS devices would not apply to an Android device.
-
--   **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android requires the user to enable encryption and might therefore be pending.
-
-
-> [!NOTE]
-> Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
-
-
-## I changed a device restriction policy, but the changes haven't taken effect
-Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
-
-Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
+Depending on the device platform, if you want to change the profile to a less secure value you may need to reset security policies.
 For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
 In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
-Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive policy.
-
+Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive profile.
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -501,4 +470,4 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 --->
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune-azure/introduction/how-to-get-support-for-microsoft-intune).

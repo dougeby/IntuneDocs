@@ -4,10 +4,10 @@
 title: Accessibility Features | Microsoft Docs
 description: Learn about the features of Intune that make it more accessible to people with disabilities.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Accessibility Features of Microsoft Intune
-In addition to accessibility features and tools in Microsoft Windows, the following features make [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] more accessible for people with disabilities:
+In addition to accessibility features and tools in Microsoft Windows, the following features make Microsoft Intune more accessible for people with disabilities:
 
 -   Using keyboard shortcuts
 
@@ -50,4 +50,4 @@ In addition to accessibility features and tools in Microsoft Windows, the follow
 |Move to the next application group|Up arrow|
 |Display the actions for a selected device|Right arrow|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portals are navigable using the standard Internet Explorer keyboard shortcuts.
+> Microsoft Intune portals are navigable using the standard Internet Explorer keyboard shortcuts.
