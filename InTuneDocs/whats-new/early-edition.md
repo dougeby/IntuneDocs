@@ -37,10 +37,6 @@ This page is updated periodically. Check back for additional updates.
 
 ## New capabilities
 
-### Improved status messaging in the Company Portal app for iOS <!--744866-->
-
-New, more specific error messages will now be displayed within the Company Portal app for iOS to provide more accessible information about what is happening on devices. These error cases were previously included in a general error message titled "Company Portal Temporarily Unavailable". Additionally, if a user launches the Company Portal on iOS when they do not have an Internet connection, they will now see a persistent status bar on the homepage saying "No Internet Connection."
-
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
