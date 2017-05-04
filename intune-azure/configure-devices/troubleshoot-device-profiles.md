@@ -6,7 +6,7 @@ description: "Intune Azure preview: If you're stuck, use this topic to help you 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -116,20 +116,6 @@ When you delete a profile, or you remove a device from a group to which a profil
 		- Allow voice roaming
 		- Allow data roaming
 		- Allow automatic synchronization while roaming
-
-### Windows PCs running the Intune client software
-
-- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
-- **Microsoft Intune Center settings**: Any support contact information that was configured by the profile is deleted from PCs.
-- **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
-
-
-## How can I refresh the policies on a device to ensure that they are current (applies to Windows PCs running the Intune client software only)?
-
-1.  In any device group, select the devices on which you want to refresh the policies, and then choose **Remote Tasks** &gt; **Refresh Policies**.
-2.  Choose **Remote Tasks** in the lower-right corner of the Intune administration console to check the task status.
-
 
 ## I changed a device restriction profile, but the changes haven't taken effect
 Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive profile has already been applied to the device.
@@ -484,4 +470,4 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 --->
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune-azure/introduction/how-to-get-support-for-microsoft-intune).
