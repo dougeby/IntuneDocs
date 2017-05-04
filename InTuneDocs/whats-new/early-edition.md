@@ -168,5 +168,10 @@ The user will be unable to access the targeted application if the minimum requir
 
 Furthermore, you can also configure additional settings through the Admin Console to provide a non-blocking notification that recommends an OS or application upgrade. This notification can be closed and the application may be used as normal.
 
+### Change your MDM authority without unenrolling managed devices <!--1103950-->
+
+You can change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can change your MDM authority from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa.
+
+
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
