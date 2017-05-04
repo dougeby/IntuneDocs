@@ -46,6 +46,11 @@
 
     },
     {
+      "source_path": "intune-user-help/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md",
+      "redirect_url": "https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune",
+      "redirect_document_id": false 
+    },
+    {
       "source_path": "InTuneDocs/EndUser/reset-your-device-windows.md",
       "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false

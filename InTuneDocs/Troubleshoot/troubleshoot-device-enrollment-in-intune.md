@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -259,6 +259,19 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ## iOS issues
+
+### iOS enrollment errors
+The following table lists errors that end users might see while enrolling iOS devices in Intune.
+
+|Error message|Issue|Resolution|
+|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|NoEnrollmentPolicy|No enrollment policy found|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
+|DeviceCapReached|Too many mobile devices are enrolled already.|The user must remove one of his or her currently enrolled mobile devices from the Company Portal before enrolling another. See the instructions for the type of device you're using: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), [Windows](unenroll-your-device-from-intune-windows.md).|
+|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. If the steps to get an APNs certificate were not performed, or if the APNs certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the information about how to set up users in [Sync Active Directory and add users to Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and [organizing users and devices](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. If the steps to get an APNs certificate were not performed, or if the APNs certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />For more information, review [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
+|DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you are trying to enroll is not supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
+|UserLicenseTypeInvalid|The device cannot be enrolled because the user's account is not yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br /><br />Review the following for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) and information about how to set up users in [Sync Active Directory and add users to Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and [organizing users and devices](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|MdmAuthorityNotDefined|The mobile device management authority has not been defined.<br /><br />|The mobile device management authority has not been designated in Intune.<br /><br />Review item #1 in the "Step 6: Enroll mobile devices and install an app" section in [Get started with a 30-day trial of Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### Devices are inactive or the admin console cannot communicate with them
 **Issue:** iOS devices aren’t checking in with the Intune service. Devices must check in periodically with the service to maintain access to protected corporate resources. If devices don’t check in:
