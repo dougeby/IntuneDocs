@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Set up App-based conditional access (CA) policies for SharePoint Online
+# Set up app-based conditional access (CA) policies for SharePoint Online
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
