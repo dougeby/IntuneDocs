@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+        "source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "InTuneDocs/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
         "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune",
         "redirect_document_id": true
