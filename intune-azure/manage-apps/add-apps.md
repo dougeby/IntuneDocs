@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,7 +75,7 @@ When you add an app to Intune, you are given the option to select the category y
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
+3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
 	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
