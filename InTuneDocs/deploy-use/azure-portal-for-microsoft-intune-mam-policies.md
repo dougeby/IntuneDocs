@@ -43,7 +43,7 @@ The Azure portal is used to create and manage app protection policies for:
 
 ## Sign in to the Azure portal and customize your start page
 
-1.  Go the [Azure portal](https://portal.azure.com) and sign in with your Intune credentials.
+1.  Go to the [Azure portal](https://portal.azure.com) and sign in with your Intune credentials.
 
     ![Screenshot of the Azure portal sign-in page](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -51,7 +51,7 @@ The Azure portal is used to create and manage app protection policies for:
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Choose **More services** from left menu, then type **Intune** in the text box filter.
+3.  Choose **More services** from the left menu, then type **Intune** in the text box filter.
 
 	![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/MAM-Azure-Portal-1.png)
 
