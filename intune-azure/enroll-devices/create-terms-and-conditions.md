@@ -31,10 +31,10 @@ ms.custom: intune-azure
 
 As an Intune admin, you can choose to require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access company resources like apps and email. Configuration of terms and conditions is optional.
 
-You can create multiple sets of terms and assign them to different groups to support different languages or usage conditions, for example.
+You can create multiple sets of terms and assign them to different groups, such as to support different languages.
 
 ## Create terms and conditions
-Create terms and conditions with display name and description for administrative use, and terms properties that are presented to users in the Company Portal.
+Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
@@ -53,11 +53,11 @@ Create terms and conditions with display name and description for administrative
 
    - **Title**: The title that users see in the Company Portal.
 
-   - **Summary of Terms**: Text that explains what it means if users accept the terms.
+   - **Summary of Terms**: Text that explains what it means if users accept the terms. Eg "By enrolling your device, you are agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
 
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
 
-6. Select **Ok**.
+6. Select **Ok** and then select **Create**.
 
 
 ## Assign terms and conditions
@@ -68,7 +68,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 
 2. On the Intune blade, choose **Device enrollment**, and then choose **Terms and Conditions**.
 
-3. In the list of terms and conditions, select the terms you want to assign, and then select **Assign Groups**.
+3. In the list of terms and conditions, select the terms you want to assign, and then select **Assigned Groups**.
 ![Screenshot of the Intune portal's Assign Group blade showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
 
 4. Click the **Select Group** button and in the **Select Groups** blade, select the groups you want to assign the terms, and then click **Select**.
@@ -78,15 +78,15 @@ You can assign terms and conditions to groups of user who must accept them befor
 ## Monitor a terms and conditions
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment**, and then choose **Terms and Conditions**.
-2. In the list of terms and conditions, select the terms you want to assign, and then select **Acceptance Statuses**.
+2. In the list of terms and conditions, select the terms you want to view acceptance for, and then select **Acceptance Statuses**.
 
 ## Work with multiple versions of terms and conditions
-You can edit your terms and conditions and manage their versions. We recommend that you increase the version number and require acceptance any time you make significant changes to your terms and conditions. Keep the current version number if you are fixing typos or changing formatting, for example.
+You can edit your terms and conditions and manage their versions. We recommend that you increase the version number and require acceptance any time you make significant changes to your terms and conditions. Keep the current version number if, for example, you are fixing typos or changing formatting.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the Intune blade, choose **Device enrollment**,  choose **Terms and Conditions**, and select the terms and conditions you want to modify.
+2. On the Intune blade, choose **Device enrollment**,  choose **Terms and Conditions**, select the terms and conditions you want to modify, and then select **Properties**.
 
-3. On the **Properties** blade, select **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If the changes you made make it necessary for users to re-accept the new terms, click **Require users to re-accept, and increment the version number to**
+4. On the **Properties** blade, select **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If the changes you made make it necessary for users to re-accept the new terms, click **Require users to re-accept, and increment the version number to**
 
 4.  Select **OK** and then select **Save**.
