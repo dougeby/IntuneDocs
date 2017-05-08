@@ -84,7 +84,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### Company Portal errors
 
-|Error text in Company Portal app|HTTP status code|Additional error information|
+|Error text in Company Portal|HTTP status code|Additional error information|
 |---|---|---|
 |__Internal server issue__ <br>Looks like you couldn’t reach us due to an internal error on our server. Retry and then contact your IT admin if the issue continues.|500 error|This error is likely caused by a problem on in the Intune service. The issue should be resolved on the Intune service side and is likely not due to issues on the customer side.|
 |__Temporarily unavailable__ <br>Looks like you couldn’t reach us because our service is temporarily unavailable. Retry and then contact your IT admin if the issue continues.|503 error|This is likely due to a temporary Intune service issue, such as the service being under maintenance. The issue should be resolved on the Intune service side and is likely not due to issues on the customer side.|
