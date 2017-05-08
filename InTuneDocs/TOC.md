@@ -84,7 +84,8 @@
 #### [Exchange access rules](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Manage Android for Work](deploy-use/android-for-work.md)
 
-## [Manage PCs with software agent](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Manage PCs with software client](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+### [Compare PC management](deploy-use/pc-management-comparison.md)
 ### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [PC policies](deploy-use/use-policies-to-simplify-windows-pc-management.md)
