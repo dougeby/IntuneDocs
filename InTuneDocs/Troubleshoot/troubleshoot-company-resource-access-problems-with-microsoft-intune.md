@@ -6,7 +6,7 @@ description: Error and status codes in this topic to help you troubleshoot resou
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,6 +81,18 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016341112|0x87D11388|iOS device is currently busy|
 
 ## Errors returned by iOS devices
+
+### Company Portal errors
+
+|Error text in Company Portal app|HTTP status code|Additional error information|
+|---|---|---|
+|__Internal server issue__ <br>Looks like you couldn’t reach us due to an internal error on our server. Retry and then contact your IT admin if the issue continues.|500 error|This error is likely caused by a problem on in the Intune service. The issue should be resolved on the Intune service side and is likely not due to issues on the customer side.|
+|__Temporarily unavailable__ <br>Looks like you couldn’t reach us because our service is temporarily unavailable. Retry and then contact your IT admin if the issue continues.|503 error|This is likely due to a temporary Intune service issue, such as the service being under maintenance. The issue should be resolved on the Intune service side and is likely not due to issues on the customer side.|
+|__Can’t connect to server__ <br>Looks like you couldn’t reach us. Retry and then contact your IT admin if the issue continues.|Not associated with an HTTP status code|A secure connection to the server could not be made, likely due to an SSL issue with the certs being used. This issue may be due to customer configurations not being compliant with Apple’s requirements for App Transport Security (ATS).|
+|__Something went wrong__ <br>The Company Portal client couldn’t load. Retry and then contact your IT admin if the issue continues.|400 error|Any error with an HTTP status code in the 400s that does not have a more specific error message will see this one. This is a client side error happening in the Company Portal app for iOS.|
+|__Can't reach server__ <br>Looks like you couldn’t reach us. Retry and then contact your IT admin if the issue continues.|500 error|Any error with an HTTP status code in the 500s that does not have a more specific error message will see this one. This is a service side error happening in the Intune service.|
+
+### Service errors
 
 |Status code|Hexadecimal error code|Error message|
 |---------------|--------------------------|-----------------|
