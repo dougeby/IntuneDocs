@@ -27,9 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Accessibility Features of Microsoft Intune
-In addition to accessibility features and tools in Microsoft Windows, the following features make Microsoft Intune more accessible for people with disabilities:
-
--   Using keyboard shortcuts
+In addition to accessibility features and tools in Microsoft Windows, the following features make Microsoft Intune more accessible for people with disabilities: Using keyboard shortcuts
 
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
