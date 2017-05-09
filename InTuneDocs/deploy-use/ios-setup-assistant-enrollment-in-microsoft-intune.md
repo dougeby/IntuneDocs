@@ -135,17 +135,6 @@ Specify the profile to assign to added devices from the list of available profil
 
 2. Choose **Export** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
-  To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
-
-  ```
-  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-  ```
-  With this code:
-
-  ```
-  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-  ```
-
    You will upload this profile URL to the Apple service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 ### Prepare the device with Apple Configurator
