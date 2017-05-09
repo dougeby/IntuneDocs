@@ -26,25 +26,25 @@ ms.custom: intune-classic
 
 ---
 
-# Compare managing Windows PC as computers or mobile devices
+# Compare managing Windows PCs as computers or mobile devices
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Organizations can use Microsoft Intune to manage Windows PCs either as mobile devices via mobile device management (MDM) or as computers via the Intune software client.  Microsoft recommends customers use MDM whenever possible to take advantage of the growing modern management paradigm.  To help customers better understand the differences between these options, however, the following comparison contrasts the differences between the two management options.  
+Organizations can use Microsoft Intune to manage Windows PCs either as mobile devices via mobile device management (MDM) or as computers via the Intune software client.  Microsoft recommends customers use MDM whenever possible to take advantage of the growing modern management paradigm.  To help customers better understand the differences between these options, however, the following chart compares the two management options.
 
 > [!NOTE]
-> This comparison attempts to present how each approach addresses similar scenarios, the scenarios are rarely parallel. There are differences even if the scenario is addressed by both mechanisms.
+> While this comparison attempts to present how each approach addresses similar scenarios, the scenarios are rarely identical. There are differences even if the scenario is addressed by both mechanisms.
 
-|**Capability / Scenario** |**Windows as Computer**<br>Intune software client | **Windows as Mobile Device**<br>MDM|
+|**Capability / Scenario** |**Windows as Computer**<br>Intune software client | **Windows as Mobile Device**<br>MDM management|
 |--------------|-------------------------------|-------------------------------|
-|**Operating systems** |Windows 10, Windows 8+, Windows 7, Windows Vista | WIndows 10+, Windows 8.1 |
-|**Intune Portal support** |Silverlight console only (https://manage.microsoft.com)|Azure portal (https://portal.azure.com) or Silverlight console (https://manage.microsoft.com)|
-|**Software update management**| Windows Updates<br>[Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Windows Update for Business<br> [How to configure Windows Update for Business settings with Microsoft Intune](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**Windows Firewall policy**|Available <br>[Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Not available|
-|**Anti-malware protection**|Endpoint Protection<br>[Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender settings](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
+|**Operating systems** |Windows 10, Windows 8+, Windows 7, Windows Vista | Windows 10+, Windows 8.1 |
+|**Intune Portal support** |[Silverlight console only](https://manage.microsoft.com)|[Azure portal](https://portal.azure.com) or [Silverlight console](https://manage.microsoft.com)|
+|**Software update management**| Windows Updates<br>[Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Windows Update for Business<br> [How to configure Windows Update for Business settings](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
+|**Windows Firewall policy**|Available <br>[Help protect Windows PCs using Windows Firewall policies](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Not available|
+|**Anti-malware protection**|Endpoint Protection<br>[Help secure Windows PCs with Endpoint Protection](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender settings](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
 |**Remote assistance** |TeamViewer<br>[Request and provide remote assistance for Windows PCs](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|Not available |
-|**Software license management**|Available <br>[Manage license agreements for Windows PC software in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Windows Store for Business<br>[How to manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
-|**App deployment** | Not available for Windows Store for Business<br>.exe and multi-file .msi only<br>[Add apps for Windows PCs that run the Intune software client](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Available for Windows store apps, not available for Windows apps (single file .msi only)<br>[How to add Windows store apps to Microsoft Intune](https://docs.microsoft.com/intune-azure/manage-apps/windows-store-app)|
+|**Software license management**|Available <br>[Manage license agreements for Windows PC software](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Windows Store for Business<br>[How to manage apps you purchased from the Windows Store for Business](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**App deployment** | Not available for Windows Store for Business<br>.exe and multi-file .msi only<br>[Add apps for Windows PCs that run the Intune software client](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Available for Windows store apps, not available for Windows apps (single file .msi only)<br>[How to add Windows store apps](https://docs.microsoft.com/intune-azure/manage-apps/windows-store-app)|
 |**App management**|Not available|Available <br>[What are app protection policies?](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
 |**Inventory**|Available [View hardware and software inventory for Windows PCs](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|Not available|
 |**Conditional access**|Not available|Available <br>[What is conditional access?](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access)|
