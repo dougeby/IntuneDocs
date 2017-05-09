@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
+Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
 
 The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
@@ -196,4 +196,4 @@ To find the OS version to use for the **Minimum OS required** , and **Maximum OS
 
 <!--- ## Next steps
 
-[How to monitor device compliance](monitor-device-compliance.md)--->
+[How to monitor device compliance](device-compliance-monitor.md)--->

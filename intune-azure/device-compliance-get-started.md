@@ -34,7 +34,7 @@ In this topic, you'll learn the following:
 - What you need before you can start creating a device compliance policy.
 - A quick glance on what you can see and do in the Intune Azure preview portal. 
 
-If you're not familiar with device compliance, you may want to read [this topic](what-is-device-compliance.md) to learn what device compliance is, and how you might use it in your organization.
+If you're not familiar with device compliance, you may want to read [this topic](device-compliance.md) to learn what device compliance is, and how you might use it in your organization.
 
 ##  Pre-requisites
 
@@ -76,10 +76,10 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 Compliance status validity period
 
 ##  Next steps
-[Create a compliance policy for Android](create-a-compliance-policy-for-android.md)
+[Create a compliance policy for Android](compliance-policy-create-android.md)
 
-[Create a compliance policy for Android for work](create-a-compliance-policy-for-android-for-work.md)
+[Create a compliance policy for Android for work](compliance-policy-create-android-for-work.md)
 
 [Create a compliance policy for iOS](create-a-compliance-policy-for-ios.md)
 
-[Create a compliance policy for Windows](create-a-compliance-policy-for-windows.md)
+[Create a compliance policy for Windows](compliance-policy-create-windows.md)

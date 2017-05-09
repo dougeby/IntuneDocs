@@ -62,7 +62,7 @@ Intune offers a range of capabilities to help you get the apps you need, on the 
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
 
-<sup>1</sup> Consider using [Windows Information Protection]../configure-devices/how-to-configure-windows-information-protection.md) to protect apps on devices that run Windows 10.
+<sup>1</sup> Consider using [Windows Information Protection]windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
 
 <sup>2</sup>Applies to devices managed by Intune only.
 
@@ -79,31 +79,31 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 
 ### Manage
 - **Apps** - This is where you'll add, assign, and monitor most of your apps. 
-	- [Add apps](add-apps.md)
-	- [Assign apps](deploy-apps.md)
-	- [Monitor apps](monitor-apps.md)
+	- [Add apps](apps-add.md)
+	- [Assign apps](apps-deploy.md)
+	- [Monitor apps](apps-monitor.md)
 - **App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app. For details, see:
 	- [App configuration policies](app-configuration-policies.md)
 - **App protection policies** - Lets you associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.
 	- [App protection policies](app-protection-policies.md)
 - **App selective wipe** - Remove only corporate data from a users device you select.
-	- [App selective wipe](app-selective-wipe.md)
+	- [App selective wipe](apps-selective-wipe.md)
 - **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.
-	- [iOS app provisioning profiles](ios-app-provisioning-profile.md)
+	- [iOS app provisioning profiles](app-provisioning-profile-ios.md)
 
 ### Monitor
 - **Licensed Apps** - View, assign, and monitor volume-purchased apps from the app stores.
-	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
+	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.
 - **App Install Status** - Shows the status of an app assignment you created.
 - **App protection status** - Shows the status of an app protection policy for a user you select.
 
-For details, see [Monitor apps](monitor-apps.md)
+For details, see [Monitor apps](apps-monitor.md)
 
 ### Setup
 <!--- **iOS VPP Tokens**
-	- [iOS volume-purchased apps](ios-vpp-apps.md) --->
+	- [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store for Business** - Setup integration to the Windows Store for Business. After you do this, you can synchronize purchased applications to Intune, assign them, and track your license usage. 
-	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
+	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Company Portal branding** - Customize the Company Portal to give it your company branding. 
 	- [Company portal configuration](company-portal-app.md)

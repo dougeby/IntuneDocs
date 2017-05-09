@@ -52,7 +52,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**
 >
-> For more information about app installation types, see [How to add an app to Microsoft Intune](add-apps.md).
+> For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).
 
 ## Create an app configuration policy
 
@@ -74,7 +74,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 The policy will be created and appears on the policies list blade.
 
-Then, continue to [assign](deploy-apps.md) and [monitor](monitor-apps.md) the app as usual.
+Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
 
 When the assigned app is run on a device, it will run with the settings that you configured in the app configuration policy.
 

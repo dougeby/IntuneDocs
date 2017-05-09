@@ -95,4 +95,4 @@ You must make any changes to groups in the [Azure Portal](https://portal.azure.c
 
 The app is now assigned to the group you chose.
 
-See [How to monitor apps](monitor-apps.md) for information to help you monitor app assignments.
+See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.

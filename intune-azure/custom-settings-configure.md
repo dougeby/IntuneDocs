@@ -53,13 +53,13 @@ Use the information in this topic to learn the basics about configuring profiles
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Custom**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [Android settings](custom-for-android.md)
-	- [iOS settings](custom-for-ios.md)
-	- [macOS settings](custom-for-macos.md)
-	- [Windows Phone 8.1 settings](custom-for-windows-phone-8-1.md)
-	- [Windows 10 settings](custom-for-windows-10.md)
-	- [Android for Work settings](custom-android-for-work.md)
+	- [Android settings](custom-settings-android.md)
+	- [iOS settings](custom-settings-ios.md)
+	- [macOS settings](custom settings-macos.md)
+	- [Windows Phone 8.1 settings](custom-settings-windows-phone-8-1.md)
+	- [Windows 10 settings](custom-settings-windows-10.md)
+	- [Android for Work settings](custom-settings-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).

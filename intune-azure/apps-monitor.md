@@ -33,7 +33,7 @@ Intune provides a number of ways in which you can monitor the properties of apps
 
 1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
 2. In the list of apps blade, choose the app you want to see information for. You'll then see the <*app name*> **Device install status** blade:
-![App install status blade.](./media/monitor-apps.png)
+![App install status blade.](./media/apps-monitor.png)
 
 Then, take one of the following actions to learn more about your apps, and their assignments.
 
@@ -43,8 +43,8 @@ Then, take one of the following actions to learn more about your apps, and their
 
 ## Manage
 
-- **Properties** - Let's you view and change information about the selected app. For more information about app properties, see [How to add an app to Microsoft Intune](add-apps.md).
-- **Assignments** - Provides information about assignments for this app. For more information, see [How to assign apps to groups with Microsoft Intune](deploy-apps.md).
+- **Properties** - Let's you view and change information about the selected app. For more information about app properties, see [How to add an app to Microsoft Intune](apps-add.md).
+- **Assignments** - Provides information about assignments for this app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 ## Monitor
 

@@ -83,7 +83,7 @@ The following filetypes are supported:
 |Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
 ## Next steps
-[What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md)
+[What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
 
 ### See also
 [Create and deploy app protection policies with Microsoft Intune](app-protection-policies.md)

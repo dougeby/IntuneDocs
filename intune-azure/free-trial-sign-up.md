@@ -116,7 +116,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 <!---### Intune Azure preview--->
 There are three portals you will use for the Intune Azure preview:
-- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune in the Azure portal](what-is-microsoft-intune.md).
+- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune in the Azure portal](what-is-intune.md).
 - The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
 - The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been added to Azure.
 
@@ -140,7 +140,7 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 ## Next steps
 
 ### Intune Azure preview
-Learn more about [Intune in the Azure portal preview](what-is-microsoft-intune.md)
+Learn more about [Intune in the Azure portal preview](what-is-intune.md)
 ### Classic Intune
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 

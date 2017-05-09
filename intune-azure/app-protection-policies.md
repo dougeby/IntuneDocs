@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 **If you are not in the Intune service in the Azure portal preview program**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
 
-App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md).
+App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](app-protection-policy.md).
 
 ##  Create an app protection policy
 1.  In the **Mobile apps** workload, choose **Manage** > **App protection policies**.
@@ -79,8 +79,8 @@ Only users with Microsoft Intune licenses assigned to them are affected by the p
 > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected are not affected.
 
 End users can download the apps from the App store or Google Play. For more information, see:
-* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md)
-* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md)
+* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
 
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
@@ -119,12 +119,12 @@ To see the effect of the changes immediately, the end user will have to log out 
 To see a full list of the policy settings for iOS and Android, select one of the following:
 
 > [!div class="op_single_selector"]
-- [iOS policies](ios-app-protection-policy-settings.md)
-- [Android policies](android-app-protection-policy-settings.md)
+- [iOS policies](app-protection-policy-settings-ios.md)
+- [Android policies](app-protection-policy-settings-android.md)
 
 ## Next steps
-[Monitor compliance and user status](monitor-app-protection-policies-with-microsoft-intune.md)
+[Monitor compliance and user status](app-protection-policies-monitor.md)
 
 ### See also
-* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md)
-* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md)
+* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)

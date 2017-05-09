@@ -55,7 +55,7 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 You need to configure the MAM provider before you can create a WIP app protection policy.
 
--   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.comget-ready-to-configure-app-protection-policies-for-windows-10.md).
+-   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following:
 

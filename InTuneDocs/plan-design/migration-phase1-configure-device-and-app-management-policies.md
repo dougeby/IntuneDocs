@@ -75,7 +75,7 @@ If your existing MDM solution provides a mechanism to export e-mail, Wi-Fi, and 
 
 You need to create a device configuration profile to enforce device-level settings, for example: disable camera, app-store, configure single-app mode, home screen, etc.
 
-- Learn about [device configuration profiles](https://docs.microsoft.com/intune-azure/configure-devices/how-to-create-device-profiles).
+- Learn about [device configuration profiles](https://docs.microsoft.com/intune-azure/device-profile-create).
 
 ####  Direct import of iOS configuration profiles (optional)
 

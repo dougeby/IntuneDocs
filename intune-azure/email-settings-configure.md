@@ -59,14 +59,14 @@ Use the information in this topic to learn the basics about configuring an email
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Email**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [Android settings](email-profile-settings-for-android.md)
-	- [iOS settings](email-profile-settings-for-ios.md)
-	- [Windows Phone 8.1 settings](email-profile-settings-for-windows-phone-8-1.md)
-	- [Windows 10 settings](email-profile-settings-for-windows-10.md)
+	- [Android settings](email-settings-android.md)
+	- [iOS settings](email-settings-ios.md)
+	- [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
+	- [Windows 10 settings](email-settings-windows-10.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 ## Further information
 
@@ -79,7 +79,7 @@ If you want to remove an email profile from a device, edit the assignment and re
 You can help secure email profiles using one of two methods:
 
 1. **Certificates** - When you create the email profile, you choose a certificate profile that you have previously created in Intune. This is known as the identity certificate, and is used to authenticate against a trusted certificate profile (or a root certificate) to establish that the user’s device is allowed to connect. The trusted certificate is assigned to the computer that authenticates the email connection, typically, the native mail server.
-For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Intune](how-to-configure-certificates.md).
+For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Intune](certificates-configure.md).
 2. **User name and password** - The user authenticates to the native mail server by providing their user name and password.
 The password is not contained in the email profile, so the user needs to supply this when they connect to email.
 

@@ -98,7 +98,7 @@ If you want to take advantage of the new device compliance related features in t
 
 ##  Next steps
 
-[Get started on device compliance policies](get-started-with-device-compliance.md)
+[Get started on device compliance policies](device-compliance-get-started.md)
 
 
 <!---### See also

@@ -48,7 +48,7 @@ Use the Intune iOS **Education** device profile, and the information in this top
 Consider the following before you begin to configure these settings:
 
 - Both teachers and student iPads must be enrolled in Intune
-- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either do this manually, or use [Intune app management](../manage-apps/what-is-app-management.md).
+- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either do this manually, or use [Intune app management](app-management.md).
 - You must configure certificates to authenticate connections between teacher and student devices (see Step 2)
 - Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled
 - The Classroom app runs on supervised iPads running iOS 9.3 or later
@@ -151,7 +151,7 @@ When you are finished configuring certificates, choose **OK**.
 	
 The profile will be created and appears on the profiles list blade.
 
-Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](how-to-assign-device-profiles.md).
+Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](device-profile-assign.md).
 
 ## Next steps
 

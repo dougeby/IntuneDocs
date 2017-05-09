@@ -33,27 +33,27 @@ ms.custom: intune-azure
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.
 
 >[!NOTE]
->This enrollment method can't be used with the [device enrollment manager](enroll-devices-using-device-enrollment-manager.md) method.
+>This enrollment method can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md) method.
 
 Using Apple Configurator, you can reset an iOS device to factory settings and prepare it to be set up for the device’s new user. This method requires you to connect the iOS device to a Mac computer via USB to set up corporate enrollment, and it assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include user affinity to enable the Intune Company Portal app.
 
-Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
+Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](enrollment-method-choose-ios.md).
 
 ## Prerequisites
 
 Complete the following prerequisites before setting up iOS device enrollment:
 
 - [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Set the MDM Authority](set-mdm-authority.md)
+- [Set the MDM Authority](mdm-authority-set.md)
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configure the Company Portal](../manage-apps/company-portal-app.md)
+- [Configure the Company Portal](company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
+- [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 - Ensure that you have physical access to iOS devices
 - Have the device serial numbers (see [How to get an iOS serial number](https://support.apple.com//HT204308))
 - Have USB connection cables on hand
 - Ensure that you have a Mac PC with [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) installed
-- [Add Apple Configurator serial numbers](add-apple-configurator-serial-numbers.md)
+- [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
 
 
 ## Create an Apple Configurator profile for devices
@@ -80,7 +80,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 ## Assign serial numbers to an Apple Configurator profile
 
-After you create Apple Configurator profiles, you can assign device serial numbers to the profiles. To be able to assign serial numbers, you must first add them to Intune by following the steps in [Add Apple Configurator serial numbers](add-apple-configurator-serial-numbers.md).
+After you create Apple Configurator profiles, you can assign device serial numbers to the profiles. To be able to assign serial numbers, you must first add them to Intune by following the steps in [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md).
 
 ### Assign serial numbers to Apple Configurator profiles
 

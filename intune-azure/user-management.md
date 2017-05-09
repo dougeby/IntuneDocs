@@ -47,4 +47,4 @@ To manage groups in the [Azure portal](https://portal.azure.com), search for **I
 
 ## Next step
 
-[Get started with groups](../manage-users/get-started-with-groups.md)
+[Get started with groups](groups-get-started.md)

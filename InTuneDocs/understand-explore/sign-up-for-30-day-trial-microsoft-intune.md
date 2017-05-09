@@ -33,7 +33,7 @@ ms.custom: intune-classic
 This article walks you through a sign-up for an Intune trial and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) more useful after you complete the steps in this article.
+> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](/intune-azure/what-is--intune) more useful after you complete the steps in this article.
 
 ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -143,7 +143,7 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### Intune Azure preview
-Learn more about [Intune in the Azure portal preview](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)
+Learn more about [Intune in the Azure portal preview](/intune-azure/what-is-intune)
 
 ### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:

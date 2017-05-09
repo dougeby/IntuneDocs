@@ -65,12 +65,12 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	>[!TIP]
 	>Use **Wi-fi basic** to supply basic features like the network name, and the SSID. **Wi-Fi enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. **Wi-Fi import** (for Windows 8.1 and Windows 10) lets you import Wi-Fi settings as an XML file that you previusly exported from a different device.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [Android settings](wi-fi-for-android.md)
-	- [iOS settings](wi-fi-for-ios.md)
-	- [macOS settings](wi-fi-for-macos.md)
-	- [Windows Phone 8.1 settings](wi-fi-import-for-windows-8-1.md)
+	- [Android settings](wi-fi-settings-android.md)
+	- [iOS settings](wi-fi-settings-ios.md)
+	- [macOS settings](wi-fi-settings-macos.md)
+	- [Windows Phone 8.1 settings](wi-fi-settings-import-windows-8-1.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 

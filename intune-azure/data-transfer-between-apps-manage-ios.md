@@ -105,8 +105,8 @@ After configuring the user UPN setting, you should validate the iOS app's abilit
 
 For example, the **Require app PIN** policy setting is easy to visually test on a device. If the policy setting is set to **Yes**, the end user should see a prompt to set or enter a PIN when attempting to access company data.
 
-First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. See [Validate app protection policies](validate-app-protection-policies.md) for more information on how to test app protection policy.
+First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. See [Validate app protection policies](app-protection-policies-validate.md) for more information on how to test app protection policy.
 
 
 ### See also
-[What is Intune app protection policy](what-is-app-protection-policy.md)
+[What is Intune app protection policy](app-protection-policy.md)

@@ -61,7 +61,7 @@ This type of policy can be useful when the standard Intune VPN policies do not c
 4.  After you've entered all of URI settings you need, choose **OK**, and then, on the **Create Profile** blade, choose **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
 

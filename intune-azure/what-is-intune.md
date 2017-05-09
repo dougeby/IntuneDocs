@@ -79,31 +79,31 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 
 ### Introduction and get started
-This section contains information about [what's new](whats-new.md), [known issues](known-issues-in-the-intune-preview.md), [how to get support](how-to-get-support-for-microsoft-intune.md) and how to [get started with a free trial](sign-up-free-trial-microsoft-intune.md) of Intune.
+This section contains information about [what's new](whats-new.md), [known issues](known-issues.md), [how to get support](get-support.md) and how to [get started with a free trial](free-trial-sign-up.md) of Intune.
 ### Plan and design
 Information to help you [plan and design](/intune/plan-and-design/introduction) your Intune environment.
 ### Device enrollment
-[How to get your devices managed by Intune](../enroll-devices/what-is.md).
+[How to get your devices managed by Intune](device-enrollment.md).
 ### Device compliance
-[Define a compliance level for your devices, then report about any devices which are not compliant](../set-device-compliance/what-is-device-compliance.md).
+[Define a compliance level for your devices, then report about any devices which are not compliant](device-compliance.md).
 ### Device configuration
-[Understand the profiles you can use to configure settings and features on devices you manage](../configure-devices/what-are-device-profiles.md).
+[Understand the profiles you can use to configure settings and features on devices you manage](device-profiles.md).
 ### Devices
-[Get to know the devices you manage with inventory and reports](../manage-devices/what-is.md).
+[Get to know the devices you manage with inventory and reports](device-management.md).
 ### Mobile apps
-[How to publish, manage, configure, and protect apps](../manage-apps/what-is-app-management.md).
+[How to publish, manage, configure, and protect apps](app-management.md).
 ### Conditional access
-[Restrict access to Exchange services depending on conditions you specify](../conditional-access/what-is-conditional-access.md).
+[Restrict access to Exchange services depending on conditions you specify](conditional-access.md).
 ### On-premises access
 [Configure access to Exchange ActiveSync, and Exchange on-premises](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### Users
-[Learn about the users of devices you manage and sort resources into groups](../manage-users/what-is.md).
+[Learn about the users of devices you manage and sort resources into groups](user-management.md).
 ### Groups
-[Learn about how you can use Azure Active Directory groups with Intune](../manage-users/get-started-with-groups.md)
+[Learn about how you can use Azure Active Directory groups with Intune](groups-get-started.md)
 ### Intune roles
-[Control who can perform various Intune actions, and who those actions apply to](../access-control/role-based-access-control.md). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
+[Control who can perform various Intune actions, and who those actions apply to](role-based-access-control.md). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
 ### Software updates
-[Learn about how to configure software updates for Windows 10 devices](../configure-devices/how-to-configure-windows-update-for-business.md).
+[Learn about how to configure software updates for Windows 10 devices](windows-update-for-business-configure.md).
 
 
 

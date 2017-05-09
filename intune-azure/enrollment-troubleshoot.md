@@ -30,12 +30,12 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) to find more ways to get help.
+This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/get-support) to find more ways to get help.
 
 
 ## Initial troubleshooting steps
 
-Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](enroll-android-and-knox-standard-devices.md) for links to enrollment steps for each platform.
+Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](android-knox-standard-enroll.md) for links to enrollment steps for each platform.
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
@@ -78,7 +78,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 > [!NOTE]
 
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll devices using device enrollment manager](enroll-devices-using-device-enrollment-manager.md).
+> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll devices using device enrollment manager](device-enrollment-manager-enroll.md).
 >
 > A user account that is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
@@ -102,10 +102,10 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 **Resolution:**
 
-1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](set-mdm-authority.md) for instructions.
+1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](mdm-authority-set.md) for instructions.
 
     > [!NOTE]
-    > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+    > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/get-support).
 
 2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
     If the UPN does not match the Active Directory information:
@@ -384,7 +384,7 @@ This error might occur because the computer had been previously enrolled, or has
 |0x80043007, 0x80CF3007|Could not find the certificate file in the same folder as the installer program.|Extract all files before you start the installation. Do not rename or relocate any of the extracted files: all files must exist in the same folder or the installation will fail.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|The software cannot be installed because a restart of the client computer is pending.|Restart the computer and then retry the client software installation.|
 |0x80070032|One or more prerequisites for installing the client software were not found on the client computer.|Make sure that all required updates are installed on the client computer and then retry the client software installation.|
-|0x80043008, 0x80CF3008|Failed to start the Microsoft Online Management Updates service.|Contact Microsoft Support as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).|
+|0x80043008, 0x80CF3008|Failed to start the Microsoft Online Management Updates service.|Contact Microsoft Support as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/get-support).|
 |0x80043009, 0x80CF3009|The client computer is already enrolled into the service.|You must retire the client computer before you can re-enroll it in the service.|
 |0x8004300B, 0x80CF300B|The client software installation package cannot run because the version of Windows that is running on the client is not supported.|Intune does not support the version of Windows that is running on the client computer.|
 |0xAB2|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038).|
@@ -394,4 +394,4 @@ This error might occur because the computer had been previously enrolled, or has
 
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/get-support).

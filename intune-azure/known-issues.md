@@ -34,7 +34,7 @@ ms.custom: intune-azure
 
 Use this topic to learn about any known issues in the Intune preview.
 
-If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune/troubleshoot/get-support).
 
 If you want to request a new feature be added to Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
@@ -50,7 +50,7 @@ In preparation for migration, your groups are copied from Intune to Azure AD. An
 
 Any compliance policies you created in the classic Intune portal are migrated, but are not displayed in the Azure portal. This is because of design change in the Azure portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic portal.
 Additionally, new compliance policies you create in the Azure portal will not be visible in the classic portal.
-For more information, see [What is device compliance](../set-device-compliance/what-is-device-compliance.md).
+For more information, see [What is device compliance](device-compliance.md).
 
 
 

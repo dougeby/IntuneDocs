@@ -35,7 +35,7 @@ description: Learn to use Microsoft Intune.
                             </div>
                         </li>
                         <li>
-                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
+                        <a href="/intune-azure/what-is-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -192,7 +192,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/access-control/role-based-access-control">Role-based access control for Intune</a><h3>
+                                            <h3><a href="/intune-azure/role-based-access-control">Role-based access control for Intune</a><h3>
                                             <p>Find out how you can either use the built-in roles that cover some common Intune scenarios, or create your own roles.</p>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/introduction/whats-new">
+                            <a href="/intune-azure/whats-new">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -582,7 +582,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-howto">How to</a>
                     <ul id="manage-howto" class="cardsC">    
                         <li>
-                            <a href="/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises">
+                            <a href="/intune-azure/conditional-access-exchange-create">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -601,7 +601,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/enroll-devices/set-mdm-authority">
+                            <a href="/intune-azure/mdm-authority-set">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -620,7 +620,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/configure-devices/how-to-create-device-profiles">
+                            <a href="/intune-azure/device-profile-create">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -639,7 +639,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/configure-devices/how-to-configure-device-restrictions">
+                            <a href="/intune-azure/device-restrictions-configure">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -658,7 +658,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
                         <li>
-                            <a href="/intune-azure/manage-apps/add-apps">
+                            <a href="/intune-azure/apps-add">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -677,7 +677,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
                         <li>
-                            <a href="/intune-azure/manage-apps/app-protection-policies">
+                            <a href="/intune-azure/app-protection-policies">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -696,7 +696,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
 <!--                        <li>
-                            <a href="/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune">
+                            <a href="/intune-azure/devices-wipe">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -715,7 +715,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>        
                         <li>
-                            <a href="/intune-azure/conditional-access/install-intune-on-premises-exchange-connector">
+                            <a href="/intune-azure/exchange-connector-install">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -782,7 +782,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/introduction/known-issues-in-the-intune-preview">
+                            <a href="/intune-azure/known-issues">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -839,7 +839,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/configure-devices/troubleshoot-device-profiles">
+                            <a href="/intune-azure/device-profile-troubleshoot">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

@@ -38,7 +38,7 @@ Conditional access from Enterprise Mobility + Security (EMS) harnesses the power
 
 With conditional access, you can define conditions that limit access to your corporate data based on location, device and user state, and application sensitivity.
 
-From the device perspective, Intune and Azure Active Directory work together to make sure only managed and compliant devices are allowed access to email and Office 365 services. For example, you can set a policy in Azure Active Directory to only enable computers that are domain-joined, or mobile devices that are enrolled in a mobile device management application like Intune, to have the ability to access Office 365 services. You can use to Intune to set a device compliance profile that evaluates the compliance status of the device. The compliance status is reported to Azure Active Directory to use for enforcement of the policy in Azure Active Directory when the user tries to access your company resources. To learn about device compliance in Intune, see [What is device compliance?](../set-device-compliance/what-is-device-compliance.md).
+From the device perspective, Intune and Azure Active Directory work together to make sure only managed and compliant devices are allowed access to email and Office 365 services. For example, you can set a policy in Azure Active Directory to only enable computers that are domain-joined, or mobile devices that are enrolled in a mobile device management application like Intune, to have the ability to access Office 365 services. You can use to Intune to set a device compliance profile that evaluates the compliance status of the device. The compliance status is reported to Azure Active Directory to use for enforcement of the policy in Azure Active Directory when the user tries to access your company resources. To learn about device compliance in Intune, see [What is device compliance?](device-compliance.md).
 
 Conditional access for cloud apps such as Exchange Online can be configured through Azure Active Directory. For more information, see this [article](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
@@ -54,6 +54,6 @@ When devices do not meet the conditions set, the end user is guided through the 
 
 ## Next steps
 
-[How to create a conditional access policy for Exchange on-premises](create-conditional-access-policy-for-exchange-on-premises.md)
+[How to create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
 
 [How to configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

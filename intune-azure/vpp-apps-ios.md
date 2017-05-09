@@ -80,7 +80,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 You must choose an assignment action of **Required**. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before then, and you do not have the option to assign VPP apps to device groups, contact Intune support.
 5. Once you are done, choose **Save**.
 
-See [How to monitor apps](monitor-apps.md) for information to help you monitor app assignments.
+See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
 
 ## Further information
 

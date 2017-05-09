@@ -67,6 +67,6 @@ If you are using an iOS device, when you try to add a second work account on the
 ![Screenshot of the dialog box with the blocking message and Yes and No options](./media/ios-switch-user.PNG)
 
 ## Next steps
-[What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md)
+[What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
 ### See also
 [Create and deploy app protection policies with Microsoft Intune](app-protection-policies.md)

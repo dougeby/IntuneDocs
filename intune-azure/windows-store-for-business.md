@@ -76,7 +76,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Assign apps
 
-You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](deploy-apps.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
+You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
 
 When you assign a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for an assigned app, you will not be able to assign any more copies. You must take one of the following actions:
 * Uninstall the app from some devices.

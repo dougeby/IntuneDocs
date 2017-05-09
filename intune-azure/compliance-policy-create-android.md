@@ -31,8 +31,8 @@ ms.custom: intune-azure
 
 Device compliance policies are created for each platform form the Intune Azure preview portal. 
 
-- To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic.
-- To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
+- To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic.
+- To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
 
 ## To create a device compliance policy
 
@@ -133,4 +133,4 @@ The table below describes how non-compliant settings are managed when a complian
 
 <!--- ## Next steps
 
-[How to monitor device compliance](monitor-device-compliance.md)--->
+[How to monitor device compliance](device-compliance-monitor.md)--->

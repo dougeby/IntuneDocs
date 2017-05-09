@@ -37,5 +37,5 @@ Microsoft Intune helps you manage apps that you purchased through such a program
 
 With Intune, you can manage apps that you purchased in volume from the iOS app store, and the Windows Store for Business. To discover how to manage licensed apps from each store, choose one of the topics below:
 
-[Manage iOS volume-purchased apps](ios-vpp-apps.md)
-[Manage volume-purchased apps from the Windows Store for Business](wsfb-apps.md)
+[Manage iOS volume-purchased apps](vpp-apps-ios.md)
+[Manage volume-purchased apps from the Windows Store for Business](windows-store-for-business.md)

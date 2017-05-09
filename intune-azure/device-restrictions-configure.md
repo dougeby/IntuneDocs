@@ -51,18 +51,18 @@ Use the information in this topic to learn the basics about configuring device r
 	- **Windows 10 and later**
 6. From the **Profile type** type drop-down list, choose **Device restrictions**. If you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [Android settings](device-restrictions-for-android.md)
-	- [iOS settings](device-restrictions-for-ios.md)
-	- [macOS settings](device-restrictions-for-macos.md)
-	- [Windows Phone 8.1 settings](device-restrictions-for-windows-phone-8-1.md)
-	- [Windows 8.1](device-restrictions-for-windows-8-1.md)
-	- [Windows 10 settings](device-restrictions-for-windows-10.md)
-	- [Windows 10 Team settings](device-restrictions-for-windows-10-team.md)
-	- [Android for Work settings](device-restrictions-for-afw.md)
+	- [Android settings](device-restrictions-android.md)
+	- [iOS settings](device-restrictions-ios.md)
+	- [macOS settings](device-restrictions-macos.md)
+	- [Windows Phone 8.1 settings](device-restrictions-windows-phone-8-1.md)
+	- [Windows 8.1](device-restrictions-windows-8-1.md)
+	- [Windows 10 settings](device-restrictions-windows-10.md)
+	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
+	- [Android for Work settings](device-restrictions-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 ## Example of device restriction settings
 
