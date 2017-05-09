@@ -63,7 +63,7 @@ User A works for two companies - **Company X**, and **Company Y**. User A has a 
 ####  Android
 If you are using an Android device, you may see a blocking message with instructions to remove the existing account and add a new one.  To remove the existing account, go to **Settings  &gt;General &gt; Application Manager &gt;Company Portal and select "Clear Data"**.
 
-![Screenshot of the error message and instructions to remove the account](../media/android-switch-user.png)
+![Screenshot of the error message and instructions to remove the account](./media/android-switch-user.png)
 
 ##  Viewing media files with the Azure Information Protection app (previously known as Rights Management sharing app)
 To view company AV, PDF, and image files on Android devices, use the [Azure Information Protection app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).

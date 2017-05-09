@@ -49,7 +49,7 @@ There are three different places to monitor the compliance status:
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
 
-![Summary tile on the Intune mobile application management blade](../media/app-protection-user-status-summary.png)
+![Summary tile on the Intune mobile application management blade](./media/app-protection-user-status-summary.png)
 
 -   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
 
@@ -82,11 +82,11 @@ To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **Summary** tile.
 
-	![Screenshot 3](../media/MAM-reporting-6.png)
+	![Screenshot 3](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** blade that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Select user option on the App reporting blade](../media/MAM-reporting-2.png)
+    ![Select user option on the App reporting blade](./media/MAM-reporting-2.png)
 
 3. Select the user from the list. You will see the details of the compliance status for that user.
 
@@ -97,7 +97,7 @@ The detailed view shows the error message, the app that was accessed when the er
 
 You can find the same reports from the Detailed view, and additional reports to help you with the MAM policy compliance status:
 
-![Screenshot-4](../media/MAM-reporting-7.png)
+![Screenshot-4](./media/MAM-reporting-7.png)
 
 -   **App protection user report:** It outlines the same information you can find at the **User status** report under the Detailed view section above.
 
@@ -113,7 +113,7 @@ You can find the same reports from the Detailed view, and additional reports to 
 
         -   All apps are checked in, but aren't getting any MAM policies.
 
-![Screenshot-2](../media/MAM-reporting-4.png)
+![Screenshot-2](./media/MAM-reporting-4.png)
 
 ## Table grouping
 
@@ -130,11 +130,11 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management blade, choose App protection report.
 
-	![Screenshot-6](../media/app-protection-report-csv-2.png)
+	![Screenshot-6](./media/app-protection-report-csv-2.png)
 
 2. Choose Yes to save your report, then choose Save As and select the folder you want to save the report in.
 
-	![Screenshot-7](../media/app-protection-report-csv-1.png)
+	![Screenshot-7](./media/app-protection-report-csv-1.png)
 
 ## See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)

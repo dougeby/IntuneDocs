@@ -34,11 +34,11 @@ This topic describes the user experience for apps with app protection policies. 
 If the device is **not enrolled in Intune**, the end-user will be asked to restart the app when they first use the app.  A restart is required so app protection polices can be applied to the app. The following screenshot illustrates this using the Skype app:
 
 
-![screenshot of the iOS device showing PIN prompt](../media/ios-pin-prompt.png)
+![screenshot of the iOS device showing PIN prompt](./media/ios-pin-prompt.png)
 
 For devices that are **enrolled for management in Intune**, the end-user will see a message that their app is now managed:
 
-![screenshot of the iOS device showing the managed by your company message with PIN prompt](../media/ios-managed-devices-pin-prompt.png)
+![screenshot of the iOS device showing the managed by your company message with PIN prompt](./media/ios-managed-devices-pin-prompt.png)
 
 ##  Using apps with multi-identity support
 
@@ -64,7 +64,7 @@ User A works for two companies - **Company X**, and **Company Y**. User A has a 
 
 If you are using an iOS device, when you try to add a second work account on the same device, you may see a blocking message.  The accounts will be displayed and you can choose the account you want to remove.
 
-![Screenshot of the dialog box with the blocking message and Yes and No options](../media/ios-switch-user.PNG)
+![Screenshot of the dialog box with the blocking message and Yes and No options](./media/ios-switch-user.PNG)
 
 ## Next steps
 [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md)

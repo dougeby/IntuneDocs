@@ -42,11 +42,11 @@ Before creating a Windows 10 app protection policy using, you need to enable mob
 
 2.  From the left menu, choose **Azure Active Directory**.
 
-    ![MAM provider configuration](../media/AppManagement/mam-provider-sc-1.png)
+    ![MAM provider configuration](./media/mam-provider-sc-1.png)
 
 3.  **Azure AD** blade opens, choose **Mobility (MDM and MAM)**, then click **Microsoft Intune**.
 
-    ![Mobility MDM and MAM](../media/AppManagement/mam-provider-sc-1.png)
+    ![Mobility MDM and MAM](./media/mam-provider-sc-1.png)
 
 4.  The configure blade opens, choose **Restore default MAM URLs** first, then configure the following:
 

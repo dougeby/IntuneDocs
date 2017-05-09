@@ -38,7 +38,7 @@ App protection policies can be applied to apps running on devices that may or ma
 
 2.  This opens the **App protection policies** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
 
-  ![Screenshot of the Add a policy blade](../media/app-protection-add-policy.png)
+  ![Screenshot of the Add a policy blade](./media/app-protection-add-policy.png)
 
 3.  Type a name for the policy, add a brief description, and select the platform type to create a policy for iOS or Android. You can create more than one policy for each platform.
 
@@ -66,10 +66,10 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 1.  In the **Policy** blade, choose  **User groups**, which opens the **User groups** blade. Choose **Add user group** in the **User groups** blade to open the **Add user group** blade.
 
-  ![Screenshot of the User groups blade with the Add user group menu option highlighted](../media/app-protection-policy-add-users.png)
+  ![Screenshot of the User groups blade with the Add user group menu option highlighted](./media/app-protection-policy-add-users.png)
 
 2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
-  ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](../media/azure-ad-user-group-list.png)
+  ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
 You have now created a policy and deployed it to users.
 
@@ -104,7 +104,7 @@ To see the effect of the changes immediately, the end user will have to log out 
 3.  To add a new user group to the policy, choose **Add user group**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
 
 4.  To delete a user group, highlight the user group you want to remove. Then choose the ellipses (…), and choose **Delete** to remove the user group.
-  ![Screenshot showing Delete option ](../media/app-protection-policy-delete-user.png)
+  ![Screenshot showing Delete option ](./media/app-protection-policy-delete-user.png)
 
 ### To change policy settings
 

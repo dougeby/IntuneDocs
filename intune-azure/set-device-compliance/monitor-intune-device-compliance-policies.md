@@ -53,7 +53,7 @@ In the **Device compliance dashboard**, you can monitor the Device compliance po
 
 -   Per-setting device compliance
 
-![Device compliance dashboard](../media/idc-1.png)
+![Device compliance dashboard](./media/idc-1.png)
 
 You can also view the specific compliance policies and settings that apply to an individual device, and the final compliance state for each of those settings on the device.
 
@@ -82,15 +82,15 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
 From the **Device compliance dashboard**, If you click on the Device compliance tile, you can drill-down into a specific **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by the device compliance policies.
 
-![Device compliance dashboard drill-down](../media/idc-2.png)
+![Device compliance dashboard drill-down](./media/idc-2.png)
 
 If you need more details about a specific user, you can filter the Device compliance chart report by typing the user’s e-mail alias.
 
-![Device compliance dashboard specific user](../media/idc-3.png)
+![Device compliance dashboard specific user](./media/idc-3.png)
 
 You can also click the different compliance status on the Device compliance chart to see more details about the user’s devices compliance policy statuses.
 
-![Device compliance dashboard different statuses](../media/idc-4.png)
+![Device compliance dashboard different statuses](./media/idc-4.png)
 
 #### Filter
 
@@ -126,34 +126,34 @@ If you click on **Filter button**, the filter fly-out opens with the following o
 
 If clicking the **Update button**, the fly out should close and the results should update as per the selected filter criteria.
 
-![Filter update button](../media/idc-5.png)
+![Filter update button](./media/idc-5.png)
 
 ##### Device details
 
 Clicking on a device, opens the **Devices Blade** with the device selected. This provides more details on the device compliance policy setting applied for that device.
 
-![Device compliance dashboard](../media/idc-6.png)
+![Device compliance dashboard](./media/idc-6.png)
 
 When you click on the device policy setting itself, you can see the device compliance policy name originated that device compliance setting targeted by the admin.
 
-![Device compliance setting name](../media/idc-7.png)
+![Device compliance setting name](./media/idc-7.png)
 
 ### Per-policy device compliance report
 
 This report provides you per compliance policy view and the total number of devices in each compliance state. The **Policy compliance** title is available from the **Device compliance dashboard**, and it shows all policies previously created by the admin, the platforms the policy is applied, number of compliant devices and number of non-compliant devices.
 
-![Per-policy device compliance report](../media/idc-8.png)
+![Per-policy device compliance report](./media/idc-8.png)
 
 When you click on the Policy compliance tile, then click on one of the device compliance policies, you’ll be able to see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy.
 
-![Policy compliance tile](../media/idc-9.png)
+![Policy compliance tile](./media/idc-9.png)
 
 ### Per-setting device compliance report
 
 This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms which the policy settings were applied, and the number of non-compliant devices.
 
-![Per-setting device compliance report](../media/idc-10.png)
+![Per-setting device compliance report](./media/idc-10.png)
 
 When you click on the Setting compliance tile, then click on one of the device compliance policy settings, you’ll be able to see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy setting.
 
-![Setting compliance tile](../media/idc-11.png)
+![Setting compliance tile](./media/idc-11.png)

@@ -33,7 +33,7 @@ Intune's integration with Datalert enables you to centrally set, monitor and enf
 
 The following diagram shows how Intune integrates with Datalert.
 
-  ![Diagram of Intune and Datalert integration](../media/tem-datalert-intune-solution-diagram.png)
+  ![Diagram of Intune and Datalert integration](./media/tem-datalert-intune-solution-diagram.png)
 
 Before you can use the Datalert service with Intune, you need to configure settings in the Datalert console and in Intune. The connection must be turned on for the Datalert service and for Intune. If the Datalert side of the connection is enabled, but not the Intune side, Intune receives the communication, but ignores it.
 
@@ -75,7 +75,7 @@ Before you start, make sure that you already have an Intune and a Datalert telec
 
     The following screenshot shows the green check marks that you can expect to see once the connection is successful.
 
-  ![Datalert page showing connection successful](../media/tem-mdm-configuration-mdm-server-page.png)
+  ![Datalert page showing connection successful](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### Step 2: Check that the telecom expense management feature is Active in Intune
 
@@ -91,7 +91,7 @@ After you complete Step 1 above, your connection should be automatically enabled
 
    Look for the **Active** connection status at the top of the page.
 
-  ![Azure portal showing datalert connection status Active](../media/tem-azure-portal-enable-service.png)
+  ![Azure portal showing datalert connection status Active](./media/tem-azure-portal-enable-service.png)
 
 ### Step 3: Deploy the Datalert app to corporate enrolled devices
 
@@ -103,7 +103,7 @@ Depending on your organizational needs, you'll need to create at least two devic
 
 These categories will be shown to users during enrollment. Depending on which category users choose, the enrolled device will be moved to the corresponding device group. For steps on how to create device categories, see [Map devices to groups](../enroll-devices/how-to-use-device-group-mapping.md).
 
-  ![Screenshot of the Add a policy blade](../media/tem-dynamic-membership-rules.png)
+  ![Screenshot of the Add a policy blade](./media/tem-dynamic-membership-rules.png)
 
 #### Create the Datalert app in Intune
 
@@ -121,11 +121,11 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 6. Select the **Datalert** app, and select **OK**.
 
-  ![Screenshot of the Add a policy blade](../media/tem-select-app-from-apple-app-store.png)
+  ![Screenshot of the Add a policy blade](./media/tem-select-app-from-apple-app-store.png)
 
 7. Complete the remaining steps to create an app for iOS.
 
-  ![Screenshot of the Add a policy blade](../media/tem-steps-to-create-the-app.png)
+  ![Screenshot of the Add a policy blade](./media/tem-steps-to-create-the-app.png)
 
 #### Assign the Datalert app to the corporate device group
 
@@ -137,7 +137,7 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 4. Choose whether to make the app installation required or optional for the group. The following example screenshot shows the installation as required, which means that users must install the Datalert app installation after enrolling their device.
 
-  ![Screenshot of the Add a policy blade](../media/tem-assign-datalert-app-to-device-group.png)
+  ![Screenshot of the Add a policy blade](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### Step 4: Add corporate paid phone lines to the Datalert console
 
@@ -145,7 +145,7 @@ You now have configured the Intune and Datalert services to communicate with eac
 
 To set these items, go to the [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), and follow the steps in the setup wizard under the **Settings** tab.
 
-  ![Screenshot of the Add a policy blade](../media/tem-add-phone-lines-to-datalert-console.png)
+  ![Screenshot of the Add a policy blade](./media/tem-add-phone-lines-to-datalert-console.png)
 
 
 The Datalert service is now active, and it starts monitoring data usage and disabling cellular and roaming data on devices that exceed the configured usage limits.

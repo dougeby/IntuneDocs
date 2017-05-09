@@ -42,13 +42,13 @@ To selectively remove company app data, create a wipe request by using the steps
 
 2.  Choose **More Services**, type **Intune** in the filter textbox, and select **Intune**. The Intune preview blade opens, choose the **Manage apps** blade.
 
-	![Screenshot of the New wipe request blade](../media/intune-azure-preview-blade.png)
+	![Screenshot of the New wipe request blade](./media/intune-azure-preview-blade.png)
 
 3.  On the **Mobile Apps blade**, choose **New wipe request**. The **New wipe request** blade opens.
 
 4.  Choose  **New wipe request**. The **New wipe request** blade opens.
 
-    ![Screenshot of the New wipe request blade](../media/AzurePortal_MAM_NewWipeRequest.png)
+    ![Screenshot of the New wipe request blade](./media/AzurePortal_MAM_NewWipeRequest.png)
 
 5.  Choose **User** to open the **User** blade, and select the user whose app data you want to wipe.
 
@@ -64,7 +64,7 @@ You can have a summarized report that shows the overall status of the wipe reque
 
 1.  On the **Mobile Apps - App Selective Wipe blade** blade, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
-	![Screenshot of the New wipe request blade](../media/wipe-request-status-1.png)
+	![Screenshot of the New wipe request blade](./media/wipe-request-status-1.png)
 
 Additionally, you'll be able to see the device name, and its device type, which can be helpful when reading the reports.
 
@@ -79,7 +79,7 @@ Wipes with pending status are displayed until you manually delete them.  To manu
 
 2.  Right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 
-	![Screenshot of the New wipe request blade](../media/delete-wipe-request.png)
+	![Screenshot of the New wipe request blade](./media/delete-wipe-request.png)
 
 3.  You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 

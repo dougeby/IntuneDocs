@@ -91,7 +91,7 @@ Perform the following steps to install the Intune On-premises Exchange Connector
 
 3.  In the **Microsoft Intune Exchange Connector** dialog box, select either **On-premises Microsoft Exchange Server** or **Hosted Microsoft Exchange Server**.
 
-  ![Choose your Exchange Server type](../media/intune-sa-exchange-connector-config.png)
+  ![Choose your Exchange Server type](./media/intune-sa-exchange-connector-config.png)
 
   For an On-premises Exchange server, provide either the server name or the fully-qualified domain name of the Exchange server that hosts the **Client Access Server** role.
 

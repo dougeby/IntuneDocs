@@ -159,7 +159,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
 1.  From the **App policy** blade, choose the name of your policy, then click **Required settings** from the **Add Policy** blade.
 
-	![Learning Mode screen-shot](../media/AppManagement/learning-mode-sc1.png)
+	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
 1.  Choose **Save**.
 
