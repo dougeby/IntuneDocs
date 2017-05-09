@@ -151,7 +151,7 @@ When you are finished configuring certificates, choose **OK**.
 	
 The profile will be created and appears on the profiles list blade.
 
-Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](how-to-assign-device-profiles.md).
+Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](device-profile-assign.md).
 
 ## Next steps
 

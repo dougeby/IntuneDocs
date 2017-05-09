@@ -40,7 +40,7 @@ The following table lists the requirements for the computer on which you install
 |---------------|--------------------|
 |Operating systems|Intune supports the On-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The Connector is not supported on any Server Core installation.|
 |Microsoft Exchange|On-premises Connectors require Microsoft Exchange 2010 SP1 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the **new** or **legacy** configuration, contact your account manager.|
-|Mobile device management authority| [Set the mobile device management authority to Intune](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).|
+|Mobile device management authority| [Set the mobile device management authority to Intune](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
 |Hardware|The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.|
 |Active Directory synchronization|Before you can use Connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 |Additional software|A full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
@@ -138,4 +138,4 @@ After you have successfully configured the Exchange Connector, you can view the 
 You can also check the time and date of the last successful synchronization attempt.
 
 ## Next steps
-[Create a conditional access policy for Exchange on-premises](create-conditional-access-policy-for-exchange-on-premises.md)
+[Create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)

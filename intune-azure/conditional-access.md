@@ -54,6 +54,6 @@ When devices do not meet the conditions set, the end user is guided through the 
 
 ## Next steps
 
-[How to create a conditional access policy for Exchange on-premises](create-conditional-access-policy-for-exchange-on-premises.md)
+[How to create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
 
 [How to configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

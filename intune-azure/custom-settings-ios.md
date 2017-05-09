@@ -36,7 +36,7 @@ Use the Microsoft Intune iOS custom profile to assign settings that you created 
 This capability allows you to assign iOS settings that are not configurable with other Intune profile types.
 
 
-1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
+1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
 2. On the **Create Profile** blade, specify the following:
 
 - **Custom configuration profile name** - Provide a name for the policy as it will be displayed on the device, and in Intune status.

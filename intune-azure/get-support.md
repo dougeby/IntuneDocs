@@ -116,7 +116,7 @@ Follow this procedure if your support page looks like this:
 3. Review the suggested online resources, or choose **Let us call you** to receive a call from Microsoft Support.
 
 ## Get phone support
-See [Contact assisted phone support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
+See [Contact assisted phone support for Microsoft Intune](phone-support-contact.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
 
 ## Track your support requests
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.

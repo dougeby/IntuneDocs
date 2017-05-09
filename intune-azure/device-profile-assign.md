@@ -40,4 +40,4 @@ ms.custom: intune-azure
 4. When you are done, on the **Select groups** blade, choose **Select**.
 
 ### Next steps
-See [How to monitor device profiles](how-to-monitor-device-profiles.md) for information to help you monitor device profile assignments.
+See [How to monitor device profiles](device-profile-monitor.md) for information to help you monitor device profile assignments.

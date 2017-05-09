@@ -32,9 +32,9 @@ ms.custom: intune-azure
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
  Use the Microsoft Intune **custom** profile for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows 10 makes many CSP settings available, for example, the [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
-If you are looking for a particular setting, remember that the [Windows 10 device restriction profile](/intune-azure/configure-devices/device-restrictions-for-windows-10) contains many settings that are built-in to Intune and do not require you to specify custom values.
+If you are looking for a particular setting, remember that the [Windows 10 device restriction profile](device-restrictions-windows-10.md) contains many settings that are built-in to Intune and do not require you to specify custom values.
 
-1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
+1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
 2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.
 3. On the **Custom OMA-URI Settings** blade, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.
 4. For each OMA-URI setting you want to add, enter the following information. Use the list in this topic to learn about the settings you can use:

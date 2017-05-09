@@ -40,56 +40,56 @@ When you open this workload, you'll see the following options:
 
 ## Getting started
 
-The workflow for creating device profiles is similar for all profiles. Read [How to create Microsoft Intune device configuration profiles](how-to-create-device-profiles.md) for information about how to create profiles. Then read on for specific information about creating settings for each profile type.
+The workflow for creating device profiles is similar for all profiles. Read [How to create Microsoft Intune device configuration profiles](device-profile-create.md) for information about how to create profiles. Then read on for specific information about creating settings for each profile type.
 
 You can manage the following capabilities on your devices:
 
 ## Device features
 
 Device features let you control features on iOS and macOS devices like AirPrint, notifications, and shared device configurations.
-For more information, see [How to configure device feature settings](how-to-configure-device-features.md)
+For more information, see [How to configure device feature settings](device-features-configure.md)
 Supports: iOS and macOS.
 
 ## Device restrictions
 Device restrictions let you control a wide range of settings on devices you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
-For more information, see [How to configure device restriction settings](how-to-configure-device-restrictions.md)
+For more information, see [How to configure device restriction settings](device-restrictions-configure.md)
 Supports: Android, iOS, macOS, Windows 10 and Windows 10 Team.
 
 ## Email
 Email profiles let you create, assign, and monitor Exchange ActiveSync email settings on devices you manage. By assigning these settings, you ensure consistency, reduce support calls, and let end users access company email on their personal devices without any required setup on their part.
-For more information, see [How to configure email settings](how-to-configure-email-settings.md)
+For more information, see [How to configure email settings](email-settings-configure.md)
 Supports: Android, iOS, Windows Phone 8.1 and Windows 10.
 
 ## Wi-Fi
 Use Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users will have access to your corporate Wi-Fi without having to configure it themselves.
-For more information, see [How to configure Wi-Fi settings](how-to-configure-wi-fi-settings.md)
+For more information, see [How to configure Wi-Fi settings](wi-fi-settings-configure.md)
 Supports: Android, iOS, macOS and Windows 8.1 (import only).
 
 ## VPN
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use VPN profiles to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
-For more information, see [How to configure VPN settings](how-to-configure-vpn-settings.md).
+For more information, see [How to configure VPN settings](vpn-settings-configure.md).
 Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
 ## Education
 Lets you configure options for the Windows Take a Test app. When you configure these options, no other apps can run on the device until the test is complete.
-For more information, see [How to configure education settings](how-to-configure-education-settings.md)
+For more information, see [How to configure education settings](education-settings-configure.md)
 
 ## Certificates
 This profile type lets you configure trusted, SCEP, and PKCS certificates that can be assigned to devices and used to authenticate Wi-Fi, VPN, and email profiles.
-For more information, see [How to configure certificates](how-to-configure-certificates.md)
+For more information, see [How to configure certificates](certificates-configure.md)
 Supports: Android, iOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
 ## Edition upgrade
 This profile type lets you automatically upgrade devices that run some versions of Windows 10 to a newer edition
-For more information, see [How to configure Windows 10 edition upgrades](how-to-configure-windows-10-edition-upgrade.md)
+For more information, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md)
 Supports: Windows 10 only.
 
 ## Windows Information Protection
 Windows Information Protection helps to protect against data leakage without otherwise interfering with the employee experience. It also helps to protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.
-For more information, see [How to configure Windows Information Protection](how-to-configure-windows-information-protection.md)
+For more information, see [How to configure Windows Information Protection](windows-information-protection-configure.md)
 Supports: Windows 10 only.
 
 ## Custom
 Custom settings let you assign device settings that are not built-into Intune. For example, on Android devices, you can specify OMA-URI values that configure the device. For iOS devices, you can import a configuration file you created in the Apple Configurator.
-For more information, see [How to configure custom settings](how-to-configure-custom-settings.md)
+For more information, see [How to configure custom settings](custom-settings-configure.md)
 Supports: Android, iOS, macOS and Windows Phone 8.1.

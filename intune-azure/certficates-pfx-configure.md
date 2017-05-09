@@ -128,7 +128,7 @@ In this step you will:
 1.  On the **Configure devices** blade, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
-  Run the installer on the computer that is able to connect with the Certification Authority. Choose the PKCS (PFX) Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).
+  Run the installer on the computer that is able to connect with the Certification Authority. Choose the PKCS (PFX) Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](certificates-configure.md).
 
 3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed.
 
@@ -207,4 +207,4 @@ Consider the following before you assign certificate profiles to groups:
 - To publish a certificate to a device quickly after the device enrolls, assign the certificate profile to a user group rather than to a device group. If you assign to a device group, a full device registration is required before the device receives policies.
 - Although you assign each profile separately, you also need to assign the Trusted Root CA and the PKCS profile. Otherwise, the PKCS certificate policy will fail.
 
-For information about how to assign profiles, see [How to assign device profiles](how-to-assign-device-profiles.md).
+For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).

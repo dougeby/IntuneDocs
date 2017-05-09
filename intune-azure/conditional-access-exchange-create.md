@@ -40,7 +40,7 @@ Before you can configure conditional access, verify the following:
 
 - Your Exchange version must be **Exchange 2010 SP1 or later**. Exchange server Client Access Server (CAS) array is supported.
 
-- You must use the [Exchange Active Sync on-premises Exchange connector](install-intune-on-premises-exchange-connector.md), which connects Intune to on-premises Exchange.
+- You must use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
 	>[!IMPORTANT]
 	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed **on only one machine**.
@@ -97,7 +97,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 8. On the **Exchange on-premises access** blade, choose **Yes** to enable Exchange on-premises access control.
 
   	> [!NOTE]
-  	> If you have not configured the Exchange Active Sync on-premises connector, this option will be disabled.  You must first install and configure this connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](install-intune-on-premises-exchange-connector.md)
+  	> If you have not configured the Exchange Active Sync on-premises connector, this option will be disabled.  You must first install and configure this connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)
 
 9. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 

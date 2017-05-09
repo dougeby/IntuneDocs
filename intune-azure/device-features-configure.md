@@ -47,16 +47,16 @@ Use the information in this topic to learn the basics about configuring device f
 	- **macOS**
 6. From the **Profile type** type drop-down list, choose **Device features**. 
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [AirPrint settings for iOS and MacOS](air-print-settings-for-ios-and-macos.md)
- 	- [AirPlay settings for iOS](airplay-settings-for-ios-devices.md)
-	- [Home screen layout settings for iOS](home-screen-settings-for-ios.md)
-	- [App notification settings for iOS](app-notification-settings-for-ios.md)
-	- [Shared device configuration settings for iOS](shared-device-settings-for-ios.md)
+	- [AirPrint settings for iOS and MacOS](air-print-settings-ios-macos.md)
+ 	- [AirPlay settings for iOS](airplay-settings-ios.md)
+	- [Home screen layout settings for iOS](home-screen-settings-ios.md)
+	- [App notification settings for iOS](app-notification-settings-ios.md)
+	- [Shared device configuration settings for iOS](shared-device-settings-ios.md)
 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
 

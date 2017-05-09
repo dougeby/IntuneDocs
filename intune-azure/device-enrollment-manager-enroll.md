@@ -34,7 +34,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
 
 >[!NOTE]
->The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md), [Apple Configurator with direct enrollment](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md), or [device enrollment program](enroll-ios-devices-using-device-enrollment-program.md). 
+>The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), or [device enrollment program](device-enrollment-program-enroll-ios.md). 
 
 ## Example of a device enrollment manager scenario
 

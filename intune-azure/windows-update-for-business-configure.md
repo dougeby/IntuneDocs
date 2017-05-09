@@ -58,7 +58,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	![Windows setting for diagnostic and usage data](./media/telemetry-basic.png)
 
-	You can configure this setting manually, or you can use an Intune device restriction profile for Windows 10 and later. To do this, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [How to configure device restriction settings](how-to-configure-device-restrictions.md).
+	You can configure this setting manually, or you can use an Intune device restriction profile for Windows 10 and later. To do this, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [How to configure device restriction settings](device-restrictions-configure.md).
 
 - In the classic Intune administration console, there are four settings that control software updates behavior. These settings are part of the general configuration policy for Windows 10 desktop and Mobile devices:
 	- **Allow automatic updates**

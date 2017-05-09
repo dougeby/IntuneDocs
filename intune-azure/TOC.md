@@ -1,16 +1,16 @@
 # Introduction
-## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
+## [What is the Azure portal preview?](what-is-intune.md)
 ## [What is Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
-## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
+## [Intune features in Azure](ui-changes.md)
 ## Get started
-<!---(introduction/get-started.md) --->
-### [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
-## [What's new](introduction/whats-new.md)
-## [Known issues](introduction/known-issues-in-the-intune-preview.md)
-## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
+<!---(get-started.md) --->
+### [Sign up for a free trial](free-trial-sign-up.md)
+## [What's new](whats-new.md)
+## [Known issues](known-issues.md)
+## [Get support](get-support.md)
 <!---
 
-## [Related resources](introduction/related-resources.md)
+## [Related resources](related-resources.md)
 
 ## [Get started](plan-and-design/get-started.md) --->
 
@@ -27,31 +27,31 @@
 ## [Additional resources](/intune/plan-design/additional-resources?toc=%2fintune-azure%2ftoc.json)
 
 # Enroll devices
-## [What is device enrollment?](enroll-devices/what-is.md)
+## [What is device enrollment?](device-enrollment.md)
 ## Get started
-### [Set the MDM authority](enroll-devices/set-mdm-authority.md)
+### [Set the MDM authority](mdm-authority-set.md)
 ## Plan and design
-### [Get an Apple MDM push certificate](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Choose how to enroll iOS devices](enroll-devices/choose-ios-enrollment-method.md)
+### [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
+### [Choose how to enroll iOS devices](enrollment-method-choose-ios.md)
 ## How to
 ### [Assign licenses to users](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
-### [Enroll Android devices](enroll-devices/enroll-android-and-knox-standard-devices.md)
+### [Enroll Android devices](android-knox-standard-enroll.md)
 ### Enroll iOS devices
-#### [Apple Configurator - Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Apple Configurator - direct enrollment](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
-#### [Add Apple Configurator serial numbers](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
-### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
-### [Bulk enroll Windows devices](enroll-devices/bulk-enroll-windows.md)
+#### [Apple Configurator - Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator - direct enrollment](apple-configurator-direct-enroll-ios.md)
+#### [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
+#### [DEP](device-enrollment-program-enroll-ios.md)
+### [Device enrollment manager](device-enrollment-manager-enroll.md)
+### [Enroll macOS devices](macos-enroll.md)
+### [Enroll Windows devices](windows-enroll.md)
+### [Bulk enroll Windows devices](windows-bulk-enroll.md)
 ### Manage device enrollment
-#### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
-#### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
-#### [Map devices to groups](enroll-devices/how-to-use-device-group-mapping.md)
-#### [Add corporate identifiers](enroll-devices/add-corporate-identifiers.md)
-#### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
-<!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
+#### [Create terms and conditions](terms-and-conditions-create.md)
+#### [Set enrollment restrictions](enrollment-restrictions-set.md)
+#### [Map devices to groups](device-group-mapping.md)
+#### [Add corporate identifiers](corporate-identifiers-add.md)
+#### [Use Windows Hello for Business](windows-hello.md)
+<!--- ## [Troubleshoot](troubleshooting.md) --->
 
 # Devices and groups
 ## [What is device management?](manage-devices/what-is.md)
@@ -112,75 +112,75 @@
 <!--- ##  [Troubleshoot apps](manage-apps/troubleshooting.md) --->
 
 # Configure devices
-## [What are device profiles?](configure-devices/what-are-device-profiles.md)
-<!---## [Get started](configure-devices/get-started.md)
-## [Plan and design](configure-devices/plan-and-design.md) --->
+## [What are device profiles?](device-profiles.md)
+<!---## [Get started](get-started.md)
+## [Plan and design](plan-and-design.md) --->
 ## How to
-### [Configure device profiles](configure-devices/how-to-create-device-profiles.md)
+### [Configure device profiles](device-profile-create.md)
 
-### [Configure device features](configure-devices/how-to-configure-device-features.md)
-#### [AirPrint for iOS and MacOS](configure-devices/air-print-settings-for-ios-and-macos.md)
-#### [AirPlay for iOS](configure-devices/airplay-settings-for-ios-devices.md)
-#### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
-#### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
-#### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
+### [Configure device features](device-features-configure.md)
+#### [AirPrint for iOS and MacOS](air-print-settings-ios-macos.md)
+#### [AirPlay for iOS](airplay-settings-ios.md)
+#### [Home screen layout for iOS](home-screen-settings-ios.md)
+#### [App notifications for iOS](app-notification-settings-ios.md)
+#### [Shared devices for iOS](shared-device-settings-ios.md)
 
-### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
-#### [Android](configure-devices/device-restrictions-for-android.md)
-#### [iOS](configure-devices/device-restrictions-for-ios.md)
-#### [macOS](configure-devices/device-restrictions-for-macos.md)
-#### [Windows 8.1](configure-devices/device-restrictions-for-windows-8-1.md)
-#### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
-#### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
-#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
+### [Configure device restrictions](device-restrictions-configure.md)
+#### [Android](device-restrictions-android.md)
+#### [iOS](device-restrictions-ios.md)
+#### [macOS](device-restrictions-macos.md)
+#### [Windows 8.1](device-restrictions-windows-8-1.md)
+#### [Windows Phone 8.1](device-restrictions-windows-phone-8-1.md)
+#### [Windows 10](device-restrictions-windows-10.md)
+#### [Windows 10 Team](device-restrictions-windows-10-teams.md)
+#### [Android for Work](device-restrictions-android-for-work.md)
 
-### [Configure email settings](configure-devices/how-to-configure-email-settings.md)
-#### [Android](configure-devices/email-profile-settings-for-android.md)
-#### [iOS](configure-devices/email-profile-settings-for-ios.md)
-#### [Windows Phone 8.1](configure-devices/email-profile-settings-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/email-profile-settings-for-windows-10.md)
+### [Configure email settings](email-settings-configure.md)
+#### [Android](email-settings-android.md)
+#### [iOS](email-settings-ios.md)
+#### [Windows Phone 8.1](email-settings-windows-phone-8-1.md)
+#### [Windows 10](email-settings-windows-10.md)
 
-### [Configure VPN settings](configure-devices/how-to-configure-vpn-settings.md)
-#### [Android](configure-devices/vpn-for-android.md)
-#### [iOS](configure-devices/vpn-for-ios.md)
-#### [macOS](configure-devices/vpn-for-macos.md)
-#### [Windows 8.1](configure-devices/vpn-for-windows-8-1.md)
-#### [Windows Phone 8.1](configure-devices/vpn-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/vpn-for-windows-10.md)
+### [Configure VPN settings](vpn-settings-configure.md)
+#### [Android](vpn-settings-android.md)
+#### [iOS](vpn-settings-ios.md)
+#### [macOS](vpn-settings-macos.md)
+#### [Windows 8.1](vpn-settings-windows-8-1.md)
+#### [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
+#### [Windows 10](vpn-settings-windows-10.md)
 
-### [Configure Wi-Fi settings](configure-devices/how-to-configure-wi-fi-settings.md)
-#### [Android](configure-devices/wi-fi-for-android.md)
-#### [iOS](configure-devices/wi-fi-for-ios.md)
-#### [macOS](configure-devices/wi-fi-for-macos.md)
-#### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
+### [Configure Wi-Fi settings](wi-fi-settings-configure.md)
+#### [Android](wi-fi-settings-android.md)
+#### [iOS](wi-fi-settings-ios.md)
+#### [macOS](wi-fi-settings-macos.md)
+#### [Windows 8.1 & Windows 10](wi-fi-settings-import-windows-8-1.md)
 
-### [Configure Windows 10 edition upgrade settings](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
-### [Configure Windows 10 education settings](configure-devices/how-to-configure-education-settings.md)
-### [Configure iOS education settings](configure-devices/how-to-configure-ios-edu-settings.md)
-### [Configure Windows Update for Business settings](configure-devices/how-to-configure-windows-update-for-business.md)
-### [Configure certificates](configure-devices/how-to-configure-certificates.md)
-#### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
-#### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
+### [Configure Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
+### [Configure Windows 10 education settings](education-settings-configure.md)
+### [Configure iOS education settings](education-settings-configure-ios.md)
+### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
+### [Configure certificates](certificates-configure.md)
+#### [SCEP](certificates-scep-configure.md)
+#### [PKCS](certficates-pfx-configure.md)
 
-### [Configure Windows Information Protection settings](configure-devices/how-to-configure-windows-information-protection.md)
-<!--- ### [Configure iOS education settings](configure-devices/education-settings-for-ios.md) --->
+### [Configure Windows Information Protection settings](windows-information-protection-configure.md)
+<!--- ### [Configure iOS education settings](education-settings-for-ios.md) --->
 
-### [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
-#### [Android](configure-devices/custom-for-android.md)
-##### [Wi-Fi profile with a pre-shared key](configure-devices/wi-fi-profile-with-shared-key.md)
-##### [Per-app VPN profile](configure-devices/per-app-vpn-for-android-pulse-secure.md)
-##### [Allow/block apps for Samsung KNOX Standard](configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md)
-#### [iOS](configure-devices/custom-for-ios.md)
-#### [macOS](configure-devices/custom-for-macos.md)
-#### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/custom-for-windows-10.md)
-#### [Android for Work](configure-devices/custom-android-for-work.md)
+### [Configure custom settings](custom-settings-configure.md)
+#### [Android](custom-settings-android.md)
+##### [Wi-Fi profile with a pre-shared key](wi-fi-profile-shared-key.md)
+##### [Per-app VPN profile](android-pulse-secure-per-app-vpn.md)
+##### [Allow/block apps for Samsung KNOX Standard](samsung-knox-apps-allow-block.md)
+#### [iOS](custom-settings-ios.md)
+#### [macOS](custom settings-macos.md)
+#### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+#### [Windows 10](custom-settings-windows-10.md)
+#### [Android for Work](custom-settings-android-for-work.md)
 
-### [Assign device profiles](configure-devices/how-to-assign-device-profiles.md)
-### [Monitor device profiles](configure-devices/how-to-monitor-device-profiles.md)
-### [Set up a telecom expense management service](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
-## [Troubleshoot](configure-devices/troubleshoot-device-profiles.md)
+### [Assign device profiles](device-profile-assign.md)
+### [Monitor device profiles](device-profile-monitor.md)
+### [Set up a telecom expense management service](telecom-expenses-monitor.md)
+## [Troubleshoot](device-profile-troubleshoot.md)
 
 # Set device compliance
 ## [What is device compliance?](set-device-compliance/what-is-device-compliance.md)
@@ -197,14 +197,14 @@
 
 
 # Conditional access
-## [What is conditional access?](conditional-access/what-is-conditional-access.md)
+## [What is conditional access?](conditional-access.md)
 ## How to
-### [Install Exchange on-premises connector](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Create and assign conditional access policy](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
-### [Monitor conditional access compliance](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
+### [Install Exchange on-premises connector](exchange-connector-install.md)
+### [Create and assign conditional access policy](conditional-access-exchange-create.md)
+### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 # Access control
-## [What is role-based access control?](access-control/role-based-access-control.md)
+## [What is role-based access control?](role-based-access-control.md)
 
 # Develop and customize
 ## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=%2fintune-azure%2ftoc.json)

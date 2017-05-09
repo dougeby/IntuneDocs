@@ -1,3 +1,3 @@
 ---
-redirect_url: /intune-azure/introduction/what-is-microsoft-intune
+redirect_url: /intune-azure/introduction/what-is-intune
 ---

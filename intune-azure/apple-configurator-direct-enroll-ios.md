@@ -34,11 +34,11 @@ ms.custom: intune-azure
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with **no user affinity** and requires you to USB-connect the iOS device to a Mac computer to set up corporate enrollment.
 
 >[!NOTE]
->This enrollment method can't be used with the [device enrollment manager](enroll-devices-using-device-enrollment-manager.md) method.
+>This enrollment method can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md) method.
 
 When you're directly enrolling iOS devices, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for directly enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
 
-Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
+Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](enrollment-method-choose-ios.md).
 
 
 ## Prerequisites
@@ -46,11 +46,11 @@ Other methods of enrolling iOS devices are described in [Choose how to enroll iO
 Complete the following prerequisites before setting up iOS device enrollment:
 
 - [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Set the MDM Authority](set-mdm-authority.md)
+- [Set the MDM Authority](mdm-authority-set.md)
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configure the Company Portal](../manage-apps/company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
+- [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 - Ensure that you have physical access to iOS devices
 - Have the device serial numbers (see [How to get an iOS serial number](https://support.apple.com//HT204308))
 - Have USB connection cables on hand

@@ -52,7 +52,7 @@ Use the information in this topic to learn the basics about configuring device r
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
 

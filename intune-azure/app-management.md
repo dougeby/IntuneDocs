@@ -62,7 +62,7 @@ Intune offers a range of capabilities to help you get the apps you need, on the 
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
 
-<sup>1</sup> Consider using [Windows Information Protection]../configure-devices/how-to-configure-windows-information-protection.md) to protect apps on devices that run Windows 10.
+<sup>1</sup> Consider using [Windows Information Protection]windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
 
 <sup>2</sup>Applies to devices managed by Intune only.
 
