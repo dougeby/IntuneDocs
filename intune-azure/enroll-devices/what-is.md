@@ -42,7 +42,7 @@ If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you c
 
 The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below. The following terms are used in the table:
 
-- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-devices-using-device-enrollment-program.md).
 - **Lock** - Indicates if users are prevented from unenrolling their devices from management. Users can unenroll their devices on all platforms by using their Company Portal app. They cannot use the native operating system menus to unenroll.
 
@@ -74,7 +74,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 
 ## BYOD
-"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. You can block enrollment of personally owned iOS and Android devices. See [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) for instructions.
+"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. You can block enrollment of personally owned iOS and Android devices. See [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions) for instructions.
 
 ## Corporate-owned devices
 Corporate-owned devices (COD) can be managed by using the Azure portal. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.

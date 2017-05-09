@@ -42,16 +42,16 @@ ms.custom: intune-azure
 	- **Platform** -  Select the platform type for the profile you want to create.
 	- **Profile type** - Select the type of profile you want to create. The list of available types will differ depending on the platform you chose.
 	- **Settings** - See the following topics for information about the settings for each profile type:
-		-  [Device feature settings](/intune-azure/configure-devices/how-to-configure-device-features)
-		-  [Device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-		-  [Email settings](/intune-azure/configure-devices/how-to-configure-email-settings)
-		-  [VPN settings](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-		-  [Wi-Fi settings](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-		-  [Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-		-  [Certificate settings](/intune-azure/configure-devices/how-to-configure-certificates)
-		-  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-		-  [Education settings](/intune-azure/configure-devices/how-to-configure-education-settings)
-		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
+		-  [Device feature settings](how-to-configure-device-features.md)
+		-  [Device restriction settings](how-to-configure-device-restrictions.md)
+		-  [Email settings](how-to-configure-email-settings.md)
+		-  [VPN settings](how-to-configure-vpn-settings.md)
+		-  [Wi-Fi settings](how-to-configure-wi-fi-settings.md)
+		-  [Windows 10 edition upgrade settings](how-to-configure-windows-10-edition-upgrade.md)
+		-  [Certificate settings](how-to-configure-certificates.md)
+		-  [Windows Information Protection settings](how-to-configure-windows-information-protection.md)
+		-  [Education settings](how-to-configure-education-settings.md)
+		-  [Custom settings](how-to-configure-custom-settings.md)
 
 	![Create device profile](./media/create-device-profile.png)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
@@ -61,4 +61,4 @@ If you want to go ahead and assign this profile to groups, see [How to assign de
 
 
 ### Next steps
-For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
+For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](how-to-assign-device-profiles.md).

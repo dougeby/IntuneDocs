@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 ## Before you start
 
-You can only assign apps using this method if they are free of charge in the app store. If you want to assign paid apps using Intune, consider using the [iOS volume-purchase program](/intune-azure/manage-apps/ios-vpp-apps).
+You can only assign apps using this method if they are free of charge in the app store. If you want to assign paid apps using Intune, consider using the [iOS volume-purchase program](ios-vpp-apps.md).
 
 
 ## Step 1 - Search for the app in the store
@@ -65,4 +65,4 @@ You can only assign apps using this method if they are free of charge in the app
 - **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 3. When you are done, on the **Add App** blade, choose **Save**.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](deploy-apps.md).
