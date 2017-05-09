@@ -43,8 +43,8 @@ Then, take one of the following actions to learn more about your apps, and their
 
 ## Manage
 
-- **Properties** - Let's you view and change information about the selected app. For more information about app properties, see [How to add an app to Microsoft Intune](/intune-azure/manage-apps/add-apps).
-- **Assignments** - Provides information about assignments for this app. For more information, see [How to assign apps to groups with Microsoft Intune](/intune-azure/manage-apps/deploy-apps).
+- **Properties** - Let's you view and change information about the selected app. For more information about app properties, see [How to add an app to Microsoft Intune](add-apps.md).
+- **Assignments** - Provides information about assignments for this app. For more information, see [How to assign apps to groups with Microsoft Intune](deploy-apps.md).
 
 ## Monitor
 

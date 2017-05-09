@@ -56,7 +56,7 @@ You can create VPN profiles using the following connection types:
 
 
 > [!IMPORTANT]
-> Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](/intune-azure/manage-apps/what-is-app-management) topic to help you assign the app by using Intune.  
+> Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](../manage-apps/what-is-app-management.md) topic to help you assign the app by using Intune.  
 
 Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](create-custom-vpn-profiles.md).     
 
