@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows 10 devicestitleSuffix: "Intune Azure preview"
+title: Intune custom settings for Windows 10 devices
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the settings you can use in a Windows 10 custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
- Use the Microsoft Intune **custom** profile for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows 10 makes many settings available through the [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+ Use the Microsoft Intune **custom** profile for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows 10 makes many CSP settings available, for example, the [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 If you are looking for a particular setting, remember that the [Windows 10 device restriction profile](/intune-azure/configure-devices/device-restrictions-for-windows-10) contains many settings that are built-in to Intune and do not require you to specify custom values.
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
