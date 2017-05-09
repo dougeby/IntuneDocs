@@ -101,7 +101,7 @@ To ensure that data usage from only corporate-owned lines is collected, you need
 
 Depending on your organizational needs, you'll need to create at least two device categories (for example, Corporate and Personal) and create dynamic device groups for each category. You can create more categories for your organization, as needed.
 
-These categories will be shown to users during enrollment. Depending on which category users choose, the enrolled device will be moved to the corresponding device group. For steps on how to create device categories, see [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+These categories will be shown to users during enrollment. Depending on which category users choose, the enrolled device will be moved to the corresponding device group. For steps on how to create device categories, see [Map devices to groups](../enroll-devices/how-to-use-device-group-mapping.md).
 
   ![Screenshot of the Add a policy blade](../media/tem-dynamic-membership-rules.png)
 

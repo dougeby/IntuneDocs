@@ -69,4 +69,4 @@ ms.custom: intune-azure
 1. On the **Add app** blade, verify the information you configured is correct.
 2. Choose **Add**, to upload the app to Intune.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](deploy-apps.md).

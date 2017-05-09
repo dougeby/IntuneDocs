@@ -115,7 +115,7 @@ You have applied the policy to users.  The devices used by the users who are tar
   - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as non-compliant.
   - **High:** This is the least secure. Essentially, this allows all threat levels, and perhaps only useful if you using this solution only for reporting purposes.
 
-For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## Device property settings
 

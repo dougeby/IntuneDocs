@@ -35,7 +35,7 @@ This capability is intended to allow you to assign Android settings that are not
 
 ## Create a custom profile
 
-1. Use the instructions in [How to configure custom device settings](/intune-azure/configure-devices/how-to-configure-custom-settings) to get started.
+1. Use the instructions in [How to configure custom device settings](how-to-configure-custom-settings.md) to get started.
 2. On the **Custom OMA-URI Settings** blade, choose **Add** to add a new setting.
 3. On the **Add Row** blade, configure the following:
 	- **Name** - Enter a unique name for the Android for work custom settings to help you identify it in the Intune portal.
