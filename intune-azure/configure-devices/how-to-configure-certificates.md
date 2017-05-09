@@ -75,8 +75,8 @@ You must create a separate profile for each device platform. When you create the
 
 See one of the following topics for help configuring the infrastructure for each type of certificate profile:
 
-- [Configure and manage SCEP certificates with Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configure and manage PKCS certificates with Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configure and manage SCEP certificates with Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configure and manage PKCS certificates with Intune](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## Step 2 - Export your trusted root CA certificate
@@ -123,8 +123,8 @@ If you want to go ahead and assign this profile to groups, see [How to assign de
 
 See one of the following topics for help configuring and assigning each type of certificate profile:
 
-- [Configure and manage SCEP certificates with Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configure and manage PKCS certificates with Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configure and manage SCEP certificates with Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configure and manage PKCS certificates with Intune](configure-certificate-infrastructure-for-pfx.md)
 
 After you create a trusted certificate profile, create SCEP or PKCS certificate profiles for each platform you want to use. When you create a SCEP certificate profile, you must specify a trusted certificate profile for that same platform. This links the two certificate profiles, but you still must assign each profile separately.
 

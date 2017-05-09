@@ -35,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 ## Initial troubleshooting steps
 
-Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices.md) for links to enrollment steps for each platform.
+Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](enroll-android-and-knox-standard-devices.md) for links to enrollment steps for each platform.
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
@@ -78,7 +78,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 > [!NOTE]
 
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll devices using device enrollment manager ](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
+> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll devices using device enrollment manager](enroll-devices-using-device-enrollment-manager.md).
 >
 > A user account that is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
@@ -102,7 +102,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 **Resolution:**
 
-1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) for instructions.
+1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](set-mdm-authority.md) for instructions.
 
     > [!NOTE]
     > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).

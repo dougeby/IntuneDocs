@@ -50,7 +50,7 @@ In preparation for migration, your groups are copied from Intune to Azure AD. An
 
 Any compliance policies you created in the classic Intune portal are migrated, but are not displayed in the Azure portal. This is because of design change in the Azure portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic portal.
 Additionally, new compliance policies you create in the Azure portal will not be visible in the classic portal.
-For more information, see [What is device compliance](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance).
+For more information, see [What is device compliance](../set-device-compliance/what-is-device-compliance.md).
 
 
 

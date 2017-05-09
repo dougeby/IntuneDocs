@@ -40,16 +40,16 @@ ms.custom: intune-classic
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Accessibility Features of Windows
+## Accessibility features of Windows
 [!INCLUDE[accessibility7](./includes/accessibility7_md.md)]
 
-### Free Step-by-Step Tutorials
+### Free step-by-step tutorials
 [!INCLUDE[accessibility8](./includes/accessibility8_md.md)]
 
-### Assistive Technology Products for Windows
+### Assistive technology products for Windows
 [!INCLUDE[accessibility9](./includes/accessibility9_md.md)]
 
-## Documentation in Alternative Formats
+## Documentation in alternative formats
 [!INCLUDE[accessibility10](./includes/accessibility10_md.md)]
 
 [!INCLUDE[accessibility11](./includes/accessibility11_md.md)]
@@ -62,7 +62,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[accessibility12](./includes/accessibility12_md.md)]
 
-## Customer Service for People with Hearing Impairments
+## Customer Service for people with hearing impairments
 [!INCLUDE[accessibility13](./includes/accessibility13_md.md)]
 
 -   [!INCLUDE[accessibility14](./includes/accessibility14_md.md)]
@@ -71,5 +71,5 @@ ms.custom: intune-classic
 
 [!INCLUDE[accessibility16](./includes/accessibility16_md.md)]
 
-## For More Information
+## For more information
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]

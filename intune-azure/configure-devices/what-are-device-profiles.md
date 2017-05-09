@@ -40,7 +40,7 @@ When you open this workload, you'll see the following options:
 
 ## Getting started
 
-The workflow for creating device profiles is similar for all profiles. Read [How to create Microsoft Intune device configuration profiles](/intune-azure/configure-devices/how-to-create-device-profiles) for information about how to create profiles. Then read on for specific information about creating settings for each profile type.
+The workflow for creating device profiles is similar for all profiles. Read [How to create Microsoft Intune device configuration profiles](how-to-create-device-profiles.md) for information about how to create profiles. Then read on for specific information about creating settings for each profile type.
 
 You can manage the following capabilities on your devices:
 

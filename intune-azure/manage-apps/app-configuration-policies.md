@@ -52,7 +52,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**
 >
-> For more information about app installation types, see [How to add an app to Microsoft Intune](/intune-azure/manage-apps/add-apps).
+> For more information about app installation types, see [How to add an app to Microsoft Intune](add-apps.md).
 
 ## Create an app configuration policy
 
