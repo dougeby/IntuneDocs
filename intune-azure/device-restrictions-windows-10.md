@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows 10 and later device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## General
 - 	**Screen capture (mobile only)** - Lets the user capture the device screen as an image.

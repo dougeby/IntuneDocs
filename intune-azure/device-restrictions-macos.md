@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # macOS device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## Password
 - 	**Password required** - Require the end user to enter a password to access the device.

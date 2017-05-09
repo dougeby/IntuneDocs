@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 # Use custom policies to allow and block apps for Samsung KNOX Standard devices in Microsoft Intune
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.

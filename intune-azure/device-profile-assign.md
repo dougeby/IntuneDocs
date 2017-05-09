@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to assign Microsoft Intune device profiles
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 
 1. Sign into the Azure portal.

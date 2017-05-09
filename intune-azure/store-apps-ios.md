@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add iOS store apps to Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## Before you start
 

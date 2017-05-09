@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows 10 Team device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 - **Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.
 - **PIN for wireless projection** - Specifies whether you must enter a PIN before you can use the wireless projection capabilities of the device.

@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # What's new in the Microsoft Intune preview
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 

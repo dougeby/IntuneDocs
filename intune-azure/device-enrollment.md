@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 
 # What is device enrollment?
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
 

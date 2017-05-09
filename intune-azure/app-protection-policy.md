@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # What are app protection policies?
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 

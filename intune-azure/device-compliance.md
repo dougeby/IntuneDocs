@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # What is device compliance in Intune Azure preview?
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Device compliance policies in Intune define the rules and settings that a device must comply with in order to be considered compliant by Intune and EMS conditional access polices. You can also use device compliance policies to monitor and remediate compliance issues with devices. 
 

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune AirPlay settings for iOS devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Use these settings to help connect iOS devices you manage to AirPlay compatible devices (like Apple TV's) on your network.
 With this capability you can:

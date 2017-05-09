@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Add corporate identifiers
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 As an IT admin you can create and import a comma-separated value (.csv) file that lists International Mobile Equipment Identity (IMEI) numbers to identify corporate-owned devices. Each IMEI number can have details specified in the list for administrative purposes.
 

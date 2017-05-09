@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Contact assisted phone support for Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## Phone numbers and business hours
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # VPN settings for Android devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 

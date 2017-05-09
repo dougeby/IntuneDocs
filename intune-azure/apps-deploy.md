@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to assign apps to groups with Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Once you've added an app to Intune, you'll want to get it out to users and devices. You do this by assigning it.
 

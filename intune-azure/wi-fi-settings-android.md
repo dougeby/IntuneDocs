@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Wi-Fi settings for Android devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## Wi-Fi settings for basic and enterprise profiles
 

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # What is conditional access?
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 
 In this topic we will describe conditional access as it is applies to Enterprise Mobility + Security, and follow that with conditional access capabilities in Intune.

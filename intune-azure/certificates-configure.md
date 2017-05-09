@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to configure certificates in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. These remove the need to enter user names and passwords to authenticate connections.
 

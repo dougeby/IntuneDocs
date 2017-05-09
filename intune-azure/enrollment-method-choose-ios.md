@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Choose how to enroll iOS devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic describes the methods you can use to enroll iOS devices and the prerequisites for enrollment.
 

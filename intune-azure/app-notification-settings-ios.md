@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune app notifications settings for IOS devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Lets you configure how apps installed on a device send notifications. This settings supports supervised devices running iOS 9.3 and later.
 

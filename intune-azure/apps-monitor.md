@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to monitor app information and assignments with Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Intune provides a number of ways in which you can monitor the properties of apps you manage, as well as their assignment status.
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure custom device settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## When to use custom settings
 

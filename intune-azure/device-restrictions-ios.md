@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # iOS device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## General
 - 	**Camera** - Select whether the camera on the device can be used. 	

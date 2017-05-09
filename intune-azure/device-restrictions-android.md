@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Android and Samsung KNOX Standard device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## General
 

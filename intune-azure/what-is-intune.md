@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Introduction to Microsoft Intune in the Azure portal preview
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
 The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.

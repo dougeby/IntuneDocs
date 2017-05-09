@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to configure the Microsoft Intune Company Portal app
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 

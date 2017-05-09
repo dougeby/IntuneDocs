@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure device feature settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Device restrictions let you control features on iOS and macOS devices like AirPrint, notifications, and shared device configurations.
 

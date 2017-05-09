@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add Windows Phone line-of-business (LOB) apps to Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 
 ## Step 1 - Specify the software setup file

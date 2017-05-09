@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # What is user management?
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 If you are new to Intune in the Azure portal, remember that you no longer create groups for Intune. Intune uses Azure AD groups just like many other applications that you use.
 

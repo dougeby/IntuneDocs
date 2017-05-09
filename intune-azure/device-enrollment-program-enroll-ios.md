@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll iOS devices using Device Enrollment Program
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic helps IT administrators enroll company-owned iOS devices purchased through [Apple's Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune can deploy an enrollment profile that enrolls DEP “over the air” so the administrator never has to touch each managed device. A DEP profile contains management settings that you want to apply to devices during enrollment. The enrollment package can include Setup Assistant options for the device.
 

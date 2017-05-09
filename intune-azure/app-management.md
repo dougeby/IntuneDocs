@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # What is Microsoft Intune app management?
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 
 As an IT admin, you'll likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge because:

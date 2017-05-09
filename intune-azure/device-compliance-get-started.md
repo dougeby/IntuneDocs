@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # Get started with device compliance in Intune Azure preview
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 In this topic, you'll learn the following: 
 

@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # How to create a device compliance policy for Android devices in Intune Azure preview portal
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Device compliance policies are created for each platform form the Intune Azure preview portal. 
 

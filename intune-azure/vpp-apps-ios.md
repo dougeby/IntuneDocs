@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 

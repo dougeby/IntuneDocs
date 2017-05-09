@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows 8.1 and later device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## General
 - 	**Apply all configurations to Windows 10** - Enables settings in this policy to be applied to Windows 10 devices, in addition to Windows 8.1 devices.

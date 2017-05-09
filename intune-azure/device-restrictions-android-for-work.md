@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Android for Work device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 ## Work profile settings
 - 	**Data sharing between work and personal profiles** - Use this setting to control whether apps in the work profile can share data with apps in the personal profile. Choose from:

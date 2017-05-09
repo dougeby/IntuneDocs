@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Manage volume-purchased apps with Micrsoft Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Some app stores give you the ability to purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 

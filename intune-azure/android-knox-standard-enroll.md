@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll Android devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Intune enables you to manage Android devices, including Samsung Knox Standard devices. To enable device management, your users must enroll their devices by downloading the Intune Company Portal app, which is available from Google Play, and then opening the app and following the prompts to enroll. Once Android devices are under management, you can [create compliance policies](../set-device-compliance/create-a-compliance-policy-for-android.md), [manage apps](../manage-apps/what-is-app-management.md), and more.
 

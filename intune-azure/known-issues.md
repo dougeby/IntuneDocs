@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Known issues in the Microsoft Intune preview
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 
 Use this topic to learn about any known issues in the Intune preview.

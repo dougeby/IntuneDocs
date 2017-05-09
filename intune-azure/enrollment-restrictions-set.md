@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Set enrollment restrictions 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 You can set the types and maximum number of devices that you will allow to enroll. On the Enrollment Restrictions blade, you can set:
 

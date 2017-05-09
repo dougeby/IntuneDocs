@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 # Configure and manage PKCS certificates with Intune
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic shows how to configure your infrastructure, then create and assign PKCS certificate profiles with Intune.
 

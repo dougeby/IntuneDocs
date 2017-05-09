@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune Home screen layout settings for iOS devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Use these settings to configure the layout of apps, folders, and web clips on the dock and Home screen of all iOS devices to which you assign the policy.
 

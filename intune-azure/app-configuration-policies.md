@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to use Microsoft Intune app configuration policies
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 # Troubleshooting device profiles in Microsoft Intune
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.
 

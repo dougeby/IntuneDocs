@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll macOS devices in Intune Azure preview
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](../configure-devices/custom-for-macos.md). More capabilities are coming soon.
 
