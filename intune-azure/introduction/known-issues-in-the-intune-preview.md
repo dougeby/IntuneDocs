@@ -62,5 +62,5 @@ Global Admins (also referred to as Tenant Admins) can continue to do day-to-day 
 ### Apple enrollment profile migration
 In the next few months, Intune will enable managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload an updated token, the original token will be restored in the new Azure Portal as part of migrating your Intune account. To remove this token and prevent DEP enrollment, simply delete the token in the Azure Portal. 
 
-### RBAC for
+### RBAC for Apple enrollment
 Tenant or Service Administrator Azure AD roles are required to perform Apple DEP and Apple Configurator enrollment tasks despite RBAC permissions being listed and available under the custom User role. RBAC role support for these features will be announced in the future.

@@ -113,9 +113,9 @@ After you create the profile and assign serial numbers, you have to export the p
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
+You will upload this profile URL to the Apple service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
-5. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
+5. Upload this profile URL to the Apple service using Apple Configurator to define the Intune profile used by iOS devices.
  1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
 
   > [!WARNING]
