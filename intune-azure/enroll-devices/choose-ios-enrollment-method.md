@@ -38,7 +38,7 @@ Use the following information to decide which method to use for enrolling iOS de
 
 ## User-owned iOS devices (BYOD)
 
-If users want to enroll their personal, BYOD (bring your own device) devices, the only available enrollment method is for users to download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources. You can block enrollment of personally owned iOS devices. See [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) for instructions.
+If users want to enroll their personal, BYOD (bring your own device) devices, the only available enrollment method is for users to download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources. You can block enrollment of personally owned iOS devices. See [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions) for instructions.
 
 ## Apple Configurator
 

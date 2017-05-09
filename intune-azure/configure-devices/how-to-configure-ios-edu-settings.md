@@ -48,7 +48,7 @@ Use the Intune iOS **Education** device profile, and the information in this top
 Consider the following before you begin to configure these settings:
 
 - Both teachers and student iPads must be enrolled in Intune
-- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either do this manually, or use [Intune app management](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management).
+- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either do this manually, or use [Intune app management](../manage-apps/what-is-app-management.md).
 - You must configure certificates to authenticate connections between teacher and student devices (see Step 2)
 - Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled
 - The Classroom app runs on supervised iPads running iOS 9.3 or later
@@ -73,7 +73,7 @@ You can import information into SDS by using one of the following:
 
 - [Find out more about the full experience of syncing on-premises school data to Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 - [Find out more about Microsoft School Data Sync](https://sds.microsoft.com/)
-- [Find out more about licensing in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-whatis-azure-portal)
+- [Find out more about licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 ## Step 2 - Create and assign an iOS Education profile in Intune
 
@@ -151,7 +151,7 @@ When you are finished configuring certificates, choose **OK**.
 	
 The profile will be created and appears on the profiles list blade.
 
-Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)).
+Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](how-to-assign-device-profiles.md).
 
 ## Next steps
 
