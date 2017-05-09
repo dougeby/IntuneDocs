@@ -134,4 +134,4 @@ To see or update these policies, or any policies you create in the Intune Azure 
 ![Image of user interface path to view policies](./media/image-for-faq.png)
 
 ## Next steps
-Learn more about [app protection polices](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy).
+Learn more about [app protection polices](https://docs.microsoft.comwhat-is-app-protection-policy.md).

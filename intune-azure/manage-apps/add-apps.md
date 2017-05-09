@@ -117,12 +117,12 @@ The following apps, published by Microsoft, are built-into Intune, and ready for
 
 Choose one of the following topics to find out how to add apps for each platform to Intune:
 
-- [Android store apps](/intune-azure/manage-apps/android-store-app)
-- [Android LOB apps](/intune-azure/manage-apps/android-lob-app)
-- [iOS store apps](/intune-azure/manage-apps/ios-store-app)
-- [iOS LOB apps](/intune-azure/manage-apps/ios-lob-app)
-- [Web apps (for all platforms)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows Phone LOB apps](/intune-azure/manage-apps/windows-phone-line-of-business-app)
-- [Windows store apps](/intune-azure/manage-apps/windows-store-app)
-- [Windows LOB app](/intune-azure/manage-apps/windows-line-of-business-app)
+- [Android store apps](android-store-app.md)
+- [Android LOB apps](android-lob-app.md)
+- [iOS store apps](ios-store-app.md)
+- [iOS LOB apps](ios-lob-app.md)
+- [Web apps (for all platforms)](web-app.md)
+- [Windows Phone 8.1 store apps](windows-phone-8-1-store-app.md)
+- [Windows Phone LOB apps](windows-phone-line-of-business-app.md)
+- [Windows store apps](windows-store-app.md)
+- [Windows LOB app](windows-line-of-business-app.md)

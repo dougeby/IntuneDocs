@@ -52,7 +52,7 @@ ms.custom: intune-azure
 	- **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 8. When you are done, on the **Add App** blade, choose **Save**.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](deploy-apps.md).
 
 ## Manually assign Windows 10 Company Portal app
 End users can install the Company Portal app from the Windows Store to manage devices and install apps. If, however, your business needs require that you assign the Company Portal app, you can manually assign the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Windows Store for Business.

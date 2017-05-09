@@ -38,7 +38,7 @@ An Intune administrator can assign help desk operator permission to users. Help 
 4. Type an **Assignment name** (required), an **Assignment description** (optional), and then assign **Members (Groups)** and **Scope (Groups)**.
 5. Members of the Help Desk Operator role can now use the troubleshooting portal.
 
-For more information about Intune roles, see [Intune roles (RBAC)](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control).
+For more information about Intune roles, see [Intune roles (RBAC)](../access-control/role-based-access-control.md).
 
 ## Access the troubleshooting portal
 
