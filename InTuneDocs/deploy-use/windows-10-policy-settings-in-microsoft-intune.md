@@ -34,7 +34,7 @@ This topic contains information to help you to understand the Intune policy sett
 
 You can choose from two policy types:
 
-- **Custom policy**: Use the Microsoft Intune **custom policy** for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows 10 makes many settings available through the [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+- **Custom policy**: Use the Microsoft Intune **custom policy** for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows 10 makes many CSP settings available, for example, the [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **General configuration policy**: Use this policy type when you want to select settings from the built-in list that's supplied with Microsoft Intune.
 
 ## Custom policy settings
