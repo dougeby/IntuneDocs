@@ -47,4 +47,4 @@ With both Intune and Intune for Education, you can:
 ### Next steps
 * Get familiar with the product [with a 30-day trial of Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Read about the quickest way to [start using Intune for Education](https://docs.microsoft.com/intune-education/what-is-express-configuration).
-* Dive into the [technical requirements and capabilities](/intune/get-started/what-to-know-before-you-start-microsoft-intune) of Intune.
+* Dive into the [technical requirements and capabilities]/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune) of Intune.

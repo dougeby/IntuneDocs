@@ -35,7 +35,7 @@ description: Learn to use Microsoft Intune.
                             </div>
                         </li>
                         <li>
-                        <a href="/intune-azure/what-is-intune">
+                        <a href="/intune/what-is-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -54,7 +54,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                        <a href="/intune/plan-design/introduction">
+                        <a href="/intune-classic/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -130,7 +130,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mam-faq">
+                            <a href="/intune-classic/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -158,7 +158,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></h3>
+                                            <h3><a href="/intune-classic/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></h3>
                                             <p>Consider how Intune is commonly used to solve real-world business problems.</p>
                                         </div>
                                     </div>
@@ -175,7 +175,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/whats-new/whats-new-in-intune-app-ui">UI updates for Intune end user apps</a></h3>
+                                            <h3><a href="/intune-classic/whats-new/whats-new-in-intune-app-ui">UI updates for Intune end user apps</a></h3>
                                             <p>Learn what updates we&rsquo;ve made to the UI for apps that your end users will see in the latest release.</p>
                                         </div>
                                     </div>
@@ -192,7 +192,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/role-based-access-control">Role-based access control for Intune</a><h3>
+                                            <h3><a href="/intune/role-based-access-control">Role-based access control for Intune</a><h3>
                                             <p>Find out how you can either use the built-in roles that cover some common Intune scenarios, or create your own roles.</p>
                                         </div>
                                     </div>
@@ -201,7 +201,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune/understand-explore/introduction-to-microsoft-intune">all of the Intune documentation</a>.</h3>
+                                <h3>See <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">all of the Intune documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -210,7 +210,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-intro">Introduction</a>
                     <ul id="manage-intro" class="cardsC">
                         <li>
-                            <a href="/intune/understand-explore/introduction-to-microsoft-intune">
+                            <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -229,7 +229,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/common-ways-to-use-intune">
+                            <a href="/intune-classic/understand-explore/common-ways-to-use-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -267,7 +267,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
 <!--                        <li>
-                            <a href="(/intune/whats-new/whats-new-in-microsoft-intune">
+                            <a href="/intune-classic/whats-new/whats-new-in-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -286,7 +286,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/whats-new/whats-new-in-intune-app-ui">
+                            <a href="/intune-classic/whats-new/whats-new-in-intune-app-ui">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -305,7 +305,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/whats-new">
+                            <a href="/intune/whats-new">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -325,7 +325,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune/understand-explore/introduction-to-microsoft-intune">all of the introductory documentation</a>.</h3>
+                                <h3>See <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">all of the introductory documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -334,7 +334,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-start">Get started</a>
                     <ul id="manage-start" class="cardsC">
                         <li>
-                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
+                            <a href="/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -353,7 +353,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1">
+                            <a href="/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -372,7 +372,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2">
+                            <a href="/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -391,7 +391,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3">
+                            <a href="/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -410,7 +410,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4">
+                            <a href="/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -429,7 +429,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5">
+                            <a href="/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -449,7 +449,7 @@ description: Learn to use Microsoft Intune.
                         </li>
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>Looking for all of the documentation? See <a href="/intune/get-started/get-started">all of the getting started documentation</a>.</h3>
+                                <h3>Looking for all of the documentation? See <a href="/intune-classic/get-started/get-started">all of the getting started documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -458,7 +458,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-plan">Plan deployment</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
+                            <a href="/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -477,7 +477,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/introduction">
+                            <a href="/intune-classic/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -496,7 +496,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/intune-mdm-migration-guide">
+                            <a href="/intune-classic/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -515,7 +515,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
 <!--                        <li>
-                            <a href="/intune/plan-design/section-5-develop-a-rollout-communication-plan">
+                            <a href="/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -534,7 +534,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-6-develop-a-support-plan">
+                            <a href="/intune-classic/plan-design/section-6-develop-a-support-plan">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -553,7 +553,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-7-create-an-intune-design">
+                            <a href="/intune-classic/plan-design/section-7-create-an-intune-design">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -573,7 +573,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune/plan-design/introduction">all of the plan deployment documentation</a>.</h3>
+                                <h3>See <a href="/intune-classic/plan-design/introduction">all of the plan deployment documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -582,7 +582,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-howto">How to</a>
                     <ul id="manage-howto" class="cardsC">    
                         <li>
-                            <a href="/intune-azure/conditional-access-exchange-create">
+                            <a href="/intune/conditional-access-exchange-create">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -601,7 +601,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/mdm-authority-set">
+                            <a href="/intune/mdm-authority-set">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -620,7 +620,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/device-profile-create">
+                            <a href="/intune/device-profile-create">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -639,7 +639,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/device-restrictions-configure">
+                            <a href="/intune/device-restrictions-configure">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -658,7 +658,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
                         <li>
-                            <a href="/intune-azure/apps-add">
+                            <a href="/intune/apps-add">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -677,7 +677,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
                         <li>
-                            <a href="/intune-azure/app-protection-policies">
+                            <a href="/intune/app-protection-policies">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -696,7 +696,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>     
 <!--                        <li>
-                            <a href="/intune-azure/devices-wipe">
+                            <a href="/intune/devices-wipe">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -715,7 +715,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>        
                         <li>
-                            <a href="/intune-azure/exchange-connector-install">
+                            <a href="/intune/exchange-connector-install">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -734,7 +734,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li> 
                         <li>
-                            <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+                            <a href="/intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -754,7 +754,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">all of the  how-to documentation</a>.</h3>
+                                <h3>See <a href="/intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">all of the  how-to documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -763,7 +763,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-troubleshoot">Monitor and troubleshoot</a>
                     <ul id="manage-troubleshoot" class="cardsC">
                         <li>
-                            <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
+                            <a href="/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -782,7 +782,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/known-issues">
+                            <a href="/intune/known-issues">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -801,7 +801,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
+                            <a href="/intune-classic/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -820,7 +820,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/troubleshoot/troubleshoot-device-enrollment-in-intune">
+                            <a href="/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -839,7 +839,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-azure/device-profile-troubleshoot">
+                            <a href="/intune/device-profile-troubleshoot">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -858,7 +858,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/troubleshoot/troubleshoot-email-profiles-in-microsoft-intune">
+                            <a href="/intune-classic/troubleshoot/troubleshoot-email-profiles-in-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -878,7 +878,7 @@ description: Learn to use Microsoft Intune.
                         </li>
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune">all of the troubleshooting documentation</a>.</h3>
+                                <h3>See <a href="/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune">all of the troubleshooting documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -892,7 +892,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#sdkstools-all">All</a>
                     <ul id="sdkstools-all" class="cardsC">                       
                         <li>
-                            <a href="/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json">
+                            <a href="/intune-classic/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -911,7 +911,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>                        
                         <li>
-                            <a href="/intune/develop/intune-app-sdk-get-started">
+                            <a href="/intune-classic/develop/intune-app-sdk-get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -930,7 +930,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/develop/intune-app-sdk-ios">
+                            <a href="/intune-classic/develop/intune-app-sdk-ios">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -949,7 +949,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/develop/intune-app-sdk-android">
+                            <a href="/intune-classic/develop/intune-app-sdk-android">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -987,7 +987,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune">
+                            <a href="/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -1006,7 +1006,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li><!--
                         <li>
-                            <a href="/intune/develop/intune-app-sdk-cordova">
+                            <a href="/intune-classic/develop/intune-app-sdk-cordova">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -1025,7 +1025,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/develop/intune-app-sdk-xamarin">
+                            <a href="/intune-classic/develop/intune-app-sdk-xamarin">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -1045,7 +1045,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>Looking for all of the documentation? See <a href="/intune/understand-explore/introduction-to-microsoft-intune">all of the Intune documentation</a>.</h3>
+                                <h3>Looking for all of the documentation? See <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">all of the Intune documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>

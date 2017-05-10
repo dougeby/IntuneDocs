@@ -50,9 +50,9 @@ To set the maximum number of devices that a user can enroll, see [Set device lim
 
 You'll need to tell your end users to go to Google Play to download the Intune Company Portal app, and then open the app and follow the prompts to enroll their device. The app guides users through the enrollment process, explaining what users can expect and what IT administrators can and can't see on their devices.
 
-You can also send them a link to online enrollment steps: [Enroll your Android device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android).
+You can also send them a link to online enrollment steps: [Enroll your Android device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android).
 
 For information about other end-user tasks, see these articles:
 
-- [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
-- [Using your Android device with Intune](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
+- [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Using your Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)

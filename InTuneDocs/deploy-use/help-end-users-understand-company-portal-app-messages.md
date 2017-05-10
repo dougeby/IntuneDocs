@@ -57,7 +57,7 @@ If users allow, but then later deny access, the message appears the next time us
 If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and turn it on.
 
 ### How to explain this to your users
-Send your users to [Enroll your Android device in Intune](/Intune/EndUser/enroll-your-device-in-intune-android) for more information.
+Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-your-device-in-intune-android) for more information.
 
 ## Allow Company Portal to access your contacts?
 
@@ -78,7 +78,7 @@ If users allow, but then later deny access, the message appears the next time us
 If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and turn it on.
 
 ### How to explain this to your users
-Send your users to [Enroll your Android device in Intune](/Intune/EndUser/enroll-your-device-in-intune-android) for more information.
+Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-your-device-in-intune-android) for more information.
 
 ## Allow Company Portal to access photos, media, and files on your device?
 
@@ -98,8 +98,8 @@ The second time that users sign in to the Company Portal app after denying acces
 
 
 ### How to explain this to your users
-Send your users to [Send logs to your IT admin by email](/Intune/EndUser/send-logs-to-your-it-admin-by-email-android). You can also send them to [Send logs to your IT admin by cable](/Intune/EndUser/send-logs-to-your-it-admin-by-cable-android) if you want to let them compare the two methods.
+Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). You can also send them to [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) if you want to let them compare the two methods.
 
 
 ### See also
-[What to tell your end users about using Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+[What to tell your end users about using Intune]/intune-classic/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)

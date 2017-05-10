@@ -36,7 +36,7 @@ App protection policies apply security at the app level and do not require devic
 
 ## App protection policies with LOB apps
 
-You can also extend the mobile app protection policies to your line-of-business (LOB) apps by leveraging the [Microsoft Intune App SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) or the Microsoft Intune App Wrapping Tool for both [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) and [Android](https://www.microsoft.com/download/details.aspx?id=47267) platforms.
+You can also extend the mobile app protection policies to your line-of-business /intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) or the Microsoft Intune App Wrapping Tool for both [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) and [Android](https://www.microsoft.com/download/details.aspx?id=47267) platforms.
 
 ## How do app protection policies help during migration?
 
@@ -50,10 +50,10 @@ As you disable conditional access in the old MDM provider, users can still be pr
 
 ## Task list for app protection policies
 
--   Task 1: Learn [how to get ready to configure mobile app protection](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) policies
+-   Task 1: Learn [how to get ready to configure mobile app protection]/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) policies
 
--   Task 2: Learn [how to create and deploy mobile app protection policies](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   Task 2: Learn [how to create and deploy mobile app protection policies]/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## Next steps 
 
-[Phase 1: Special migration considerations](https://docs.microsoft.com/intune/plan-design/migration-phase1-special-migration-considerations)
+[Phase 1: Special migration considerations]/intune-classic/plan-design/migration-phase1-special-migration-considerations)

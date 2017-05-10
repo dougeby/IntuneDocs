@@ -35,11 +35,11 @@ The Intune Company Portal is where users access company data and can do common t
 
 The Intune Company Portal provides users with access to company data and apps. The Company Portal is available in two forms:
 
--   **The Company Portal app**: An application that is available on devices you manage with Intune. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
-, and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **The Company Portal app**: An application that is available on devices you manage with Intune. Learn more about the Company Portal apps for [Android](/intune-user-help/using-your-android-device-with-intune), [iOS](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)
+, and [Windows](/intune-user-help/using-your-windows-device-with-intune).
 
 
-- **The Company Portal website**: A website that lets end users do most of the tasks they can do from the Company Portal app. The Intune Company Portal URL is [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
+- **The Company Portal website**: A website that lets end users do most of the tasks they can do from the Company Portal app. The Intune Company Portal URL is [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/intune-user-help/using-the-intune-company-portal-website).
 
 > [!TIP]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.

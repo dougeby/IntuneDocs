@@ -74,11 +74,11 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
   For more details, see [Configure a native client application](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
+4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune]/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
 
   ![screenshot of the apps page in the Intune administrator console with the Lookout for work app displayed in the list of apps](../media/mtp/ios-app-uploaded-intune.png)
 
-5. Create the managed app configuration policy as described in the [Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) topic.
+5. Create the managed app configuration policy as described in the [Configure iOS apps with mobile app configuration policies in Microsoft Intune]/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) topic.
 
   ![screenshot of hte create a new policy wizard with the iOS 8.0 or later app configuration policy highlighted](../media/mtp/ios-app-config.png)
 
@@ -95,9 +95,9 @@ This article explains how to configure and deploy the Lookout for Work app for A
 https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md
 When the user opens the Lookout for Work on the device they are prompted to activate the app, and choose the Sign in with Azure Active Directory option. A detailed walkthrough with the end-user flow can be found in the following topics:
 
-* [You are prompted to install Lookout for Work on your Android device](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+* [You are prompted to install Lookout for Work on your Android device](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
-* [You need to resolve a threat that Lookout for Work found on your Android device](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [You need to resolve a threat that Lookout for Work found on your Android device](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## Next steps
 * [Create Lookout device compliance policy in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

@@ -33,9 +33,9 @@ Your answers to this series of questions will help determine the best enrollment
 ## **What operating system are your shared devices running?**
 
 > [!div class="button"]
-[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[Windows >]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 > [!div class="button"]
-[Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[Android >]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 > [!div class="button"]
 [iOS >](choose-how-to-enroll-devices5.md)
 

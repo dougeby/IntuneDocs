@@ -28,7 +28,7 @@ ms.suite: ems
 
 # How to educate your end users about Microsoft Intune
 
-Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune), [protecting your email](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices), and [embedding your apps with the Intune SDK](/intune/develop/intune-app-sdk).
+Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial]/intune-classic/develop/intune-app-sdk).
 
 None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 
@@ -49,9 +49,9 @@ __How could this inconvenience my end users?__ It takes time to install apps, en
 
 Assuaging these user concerns will make your deployment smoother. We have a list of ways to consider to make it easier for your end users to embrace device management.
 
-* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting. This documentation can be found in our explanations of how to [use managed devices to get work done](/Intune/EndUser/use-managed-devices-to-get-work-done).
+* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting. This documentation can be found in our explanations of how to [use managed devices to get work done](/intune-user-help/use-managed-devices-to-get-work-done).
 
-* __Be accessible.__ End users need to know where they can get help with their devices. Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
+* __Be accessible.__ End users need to know where they can get help with their devices. Be sure that you include IT administrator contact information when you [customize the Company Portal]/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
 
 * __Be personal.__ Providing instructions that aren't specific to your deployment can make end users feel like you haven't given any thought to their experience. You can use this [customizable, end user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your end users.
 
@@ -60,7 +60,7 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 * __Be aware.__ Your end user experience will impact your productivity, and understanding their experience will make it easier for you to troubleshoot their problems when they come to you. Understanding how end users get their apps can make it much easier for you to diagnose what issues they're experiencing, and can help you fix their problems faster.
 
 * **Android**
-  * [Using an Android device with Intune](https://docs.microsoft.com/Intune/EndUser/using-your-android-device-with-intune)
+  * [Using an Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
   * [How your Android users get their apps](how-your-android-users-get-their-apps.md)
 
 * **iOS**
@@ -68,7 +68,7 @@ Assuaging these user concerns will make your deployment smoother. We have a list
   * [How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
 
 * **Windows**
-  * [Using a Windows device with Intune](https://docs.microsoft.com/Intune/EndUser/using-your-windows-device-with-intune)
+  * [Using a Windows device with Intune](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)
   * [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and we believe that this philosophy can greatly increase your end user satisfaction with Intune.

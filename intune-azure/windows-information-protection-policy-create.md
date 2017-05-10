@@ -67,7 +67,7 @@ Additionally, you need to have the following:
 
 ## To add a WIP policy
 
-After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 1.  Go to the **Intune mobile application management dashboard**, choose **All settings**, and then choose **App policy**.
 

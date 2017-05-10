@@ -39,8 +39,8 @@ To enable the Lookout MTP connection in Intune, on the **Administration** page i
 >[!IMPORTANT]
 > You **must** configure the Lookout for Work app before creating compliance policy rules and configuring conditional access. This ensures that the app is ready and available for end users to install before they can get access to email or other company resources.
 
-This completes the setup of the Lookout and Intune integration in the Intune administrator console.  The next few steps to implement this solution involve deploying the [Lookout for Work apps](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) and setting up the [compliance](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy) policy.
+This completes the setup of the Lookout and Intune integration in the Intune administrator console.  The next few steps to implement this solution involve deploying the [Lookout for Work apps]/intune-classic/deploy-use/device-threat-protection-policy) policy.
 
 
 ## Next steps
-[Configure Lookout for Work app ](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
+[Configure Lookout for Work app ]/intune-classic/deploy-use/device-threat-protection-apps)

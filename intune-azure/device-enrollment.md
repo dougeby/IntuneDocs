@@ -117,7 +117,7 @@ Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS
 
 ## Supported device platforms and browsers
 
-See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
+See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers)
 
 ## Mobile device cleanup after MDM certificate expiration
 

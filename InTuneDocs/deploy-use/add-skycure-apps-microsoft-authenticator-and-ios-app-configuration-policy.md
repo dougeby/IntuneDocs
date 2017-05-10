@@ -44,9 +44,9 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 -   Make sure you’re familiar with the process of:
 
-    -   [Adding an app into Intune](https://docs.microsoft.com/intune/deploy-use/add-apps).
+    -   [Adding an app into Intune]/intune-classic/deploy-use/add-apps).
 
-    -   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+    -   [Adding an iOS app configuration policy into Intune]/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 ## To add the Skycure app for Android
 
@@ -110,4 +110,4 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 ## Next steps
 
-[Deploy Skycure apps, Microsoft Authenticator app and iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
+[Deploy Skycure apps, Microsoft Authenticator app and iOS app configuration policy]/intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)

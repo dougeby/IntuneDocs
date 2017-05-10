@@ -50,11 +50,11 @@ Enroll Windows PCs to get the most functionality. However, the Intune software c
 - Endpoint Protection and Windows Firewall
 - Remote assistance to users using the TeamViewer software
 
-For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) and [Manage Windows PCs with Intune PC client software](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
-For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities]/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune).
+For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers]/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## Next steps
 
-- [Choose how to enroll mobile devices](/intune/get-started/choose-how-to-enroll-devices1)
-- [Manage Windows PCs with Intune PC client software](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
-- [Exchange ActiveSync mobile device management with Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+- [Choose how to enroll mobile devices]/intune-classic/get-started/choose-how-to-enroll-devices1)
+- [Manage Windows PCs with Intune PC client software]/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
+- [Exchange ActiveSync mobile device management with Microsoft Intune]/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).

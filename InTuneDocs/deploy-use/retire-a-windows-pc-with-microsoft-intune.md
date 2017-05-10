@@ -55,7 +55,7 @@ When you retire a PC:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the Group Policy Object (GPO) before you can remove the client software to prevent the software from being reinstalled.
 
-    If the Endpoint Protection client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
+    If the Endpoint Protection client fails to uninstall, read [Troubleshoot Endpoint Protection]/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
 ### See also
 

@@ -78,10 +78,10 @@ When you use Intune with the other services in EMS, you can provide your organiz
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *	[Multi-factor authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [App conditional access (allow access if the mobile app contains corporate data)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Isolating corporate data from personal data inside the same app](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Corporate data wipe from a mobile app](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [App conditional access /intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [Isolating corporate data from personal data inside the same app]/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [App protection policy /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Corporate data wipe from a mobile app]/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Rights management support](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)
@@ -118,4 +118,4 @@ The following list of business problems link to more detailed information about 
 ### Next steps
 * Read about some of the [common ways to use Intune](common-ways-to-use-intune.md).
 * Get familiar with the product [with a 30-day trial of Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
-* Dive into the [technical requirements and capabilities](/intune/get-started/what-to-know-before-you-start-microsoft-intune) of Intune.
+* Dive into the [technical requirements and capabilities]/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune) of Intune.

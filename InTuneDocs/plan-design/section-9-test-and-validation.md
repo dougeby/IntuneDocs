@@ -56,13 +56,13 @@ Design changes could be needed to accommodate unforeseen difficulties. In additi
 
 You might experience challenges or issues that require technical guidance, or specialized troubleshooting during the testing and validation process. It’s recommended to seek assistance through the Microsoft support channels.
 
--   [Learn how to get Intune support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [Learn how to get Intune support]/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
 
--   [General troubleshooting tips for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+-   [General troubleshooting tips for Microsoft Intune]/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
 
--   [Learn how to get support for Microsoft Intune.](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [Learn how to get support for Microsoft Intune.]/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
 
--   [Contact assisted phone support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Contact assisted phone support for Microsoft Intune]/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
 
 ## Functional validation testing
 

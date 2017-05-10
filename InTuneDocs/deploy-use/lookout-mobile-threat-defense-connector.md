@@ -101,4 +101,4 @@ Here are the main steps you must do to implement this solution:
 2.	[Enable Lookout Mobile Threat Defense in Intune](device-threat-protection-enable.md)
 3.  [Configure and deploy Lookout Mobile Threat Defense app](device-threat-protection-apps.md)
 4.	[Configure Lookout device compliance policy](device-threat-protection-policy.md)
-5.	[Troubleshoot Lookout Mobile Threat Defense integration](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+5.	[Troubleshoot Lookout Mobile Threat Defense integration]/intune-classic/troubleshoot/device-threat-protection-troubleshooting)

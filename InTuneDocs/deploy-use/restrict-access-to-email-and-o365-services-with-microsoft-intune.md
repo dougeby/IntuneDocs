@@ -54,7 +54,7 @@ Microsoft Intune and Azure Active Directory (Azure AD) Premium work seamlessly t
 
 - Learn more about [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Additionally, make sure the users you plan to apply conditional access policies are [assigned with the Azure AD Premium or EMS licenses](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Additionally, make sure the users you plan to apply conditional access policies are [assigned with the Azure AD Premium or EMS licenses]/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
 ### Device compliance settings
 

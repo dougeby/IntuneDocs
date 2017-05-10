@@ -80,7 +80,7 @@ Use the following steps to gather the information you need to give to the Lookou
   ![screenshot of the first time login page of the Lookout console](../media/mtp/lookout_mtp_initial_login.png)
   Once you have accepted and consented, you are redirected to the Lookout Console.
 
-  See [troubleshooting Lookout integration](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
+  See [troubleshooting Lookout integration]/intune-classic/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
 
 3.  In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
@@ -143,4 +143,4 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 ## Watching enrollment
 Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Configure and deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md) topic.
 ## Next steps
-[Enable Lookout MTP connection Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
+[Enable Lookout MTP connection Intune]/intune-classic/deploy-use/enable-lookout-mtd-connection)

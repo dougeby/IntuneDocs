@@ -55,5 +55,5 @@ Access is granted when the device is remediated:
 
 Learn how to protect access to company resource based on device, network, and application risk with:
 
-- [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
-- [Skycure](https://docs.microsoft.com/intune/deploy-use/skycure-mobile-threat-defense-connector)
+- [Lookout]/intune-classic/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure]/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)

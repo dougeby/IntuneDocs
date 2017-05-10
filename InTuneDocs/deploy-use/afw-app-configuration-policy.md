@@ -70,7 +70,7 @@ The new policy is displayed in the **Configuration Policies** node.
 ## Deploy the app configuration policy
 After you have created a mobile app configuration policy, you must deploy it to the same users to whom you deploy the app to which the settings will apply.
 
-For information about how to deploy policies, see [deploy a configuration policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
+For information about how to deploy policies, see [deploy a configuration policy]/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
 
 For information about how to deploy apps to Android for Work devices, see [How to deploy Android for Work apps with Intune](android-for-work-apps.md).
 

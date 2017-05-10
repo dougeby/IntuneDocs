@@ -114,4 +114,4 @@ Skycure syncs the devices running its Mobile Threat Defense service with the Azu
 
 ## Next steps
 
-[Enable Skycure Mobile Threat Defense in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
+[Enable Skycure Mobile Threat Defense in Intune]/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)

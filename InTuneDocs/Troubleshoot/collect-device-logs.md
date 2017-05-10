@@ -39,15 +39,15 @@ Sometimes the files don't appear, especially on newer Android devices. If this h
 
 For more information about how your users can send you data logs, see the following articles:
 
-- [Use Verbose Logging to help your IT admin fix device issues](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android): Describes how users turn on Verbose Logging, which sends you all of their data logs automatically. By default, Verbose Logging is turned on.
+- [Use Verbose Logging to help your IT admin fix device issues](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android): Describes how users turn on Verbose Logging, which sends you all of their data logs automatically. By default, Verbose Logging is turned on.
 
-- [Send Android diagnostic data logs to your IT admin using email](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
+- [Send Android diagnostic data logs to your IT admin using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
 
-- [Send diagnostic data logs to your IT admin using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Send diagnostic data logs to your IT admin using a USB cable](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
 ### iOS logs
 
-Users can send you enrollment errors, as described in [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios).
+Users can send you enrollment errors, as described in [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios).
 
 ### Mac OS X logs
 

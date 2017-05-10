@@ -55,27 +55,27 @@ Device groups are useful for managing devices without dedicated users, such as k
 
 By configuring device groups ahead of device enrollment, you can leverage device categories to auto-group devices upon enrollment to receive their group’s device policies automatically.
 
--   Learn [how to add device groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5).
+-   Learn [how to add device groups]/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5).
 
--   Learn [how to configure device categories](https://docs.microsoft.com/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
+-   Learn [how to configure device categories]/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
 
 ### Task 2: Use resource access profiles (Wi-Fi, VPN, and email certificates)
 
 Resource access profiles provision certificates and access configurations to enrolled devices.
 
-As previously discussed in the Assess MDM requirements section, you’ll need to have a [PKI infrastructure in place](https://docs.microsoft.com/intune/deploy-use/secure-resource-access-with-certificate-profiles) to deploy VPN, Wi-Fi, and e-mail certificates, if you are using certificate-based authentication.
+As previously discussed in the Assess MDM requirements section, you’ll need to have a [PKI infrastructure in place]/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) to deploy VPN, Wi-Fi, and e-mail certificates, if you are using certificate-based authentication.
 
 #### Direct import of resource access profiles (optional)
 
 If your existing MDM solution provides a mechanism to export e-mail, Wi-Fi, and VPN profiles to XML format, you might be able to leverage the XML file and just import it into Intune by using OMA-URI to create custom profiles for iOS, Android and Windows devices.
 
--   Learn how to add a custom policy for [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune), [Android](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune) and [Windows](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune) devices.
+-   Learn how to add a custom policy for [iOS]/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) devices.
 
 ### Task 3: Create and deploy device configuration profiles
 
 You need to create a device configuration profile to enforce device-level settings, for example: disable camera, app-store, configure single-app mode, home screen, etc.
 
-- Learn about [device configuration profiles](https://docs.microsoft.com/intune-azure/device-profile-create).
+- Learn about [device configuration profiles](https://docs.microsoft.com/intune/device-profile-create).
 
 ####  Direct import of iOS configuration profiles (optional)
 
@@ -83,7 +83,7 @@ You need to create a device configuration profile to enforce device-level settin
 
 -   **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
 
-- Learn how to add a custom policy for [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune#custom-policy-settings)
+- Learn how to add a custom policy for [iOS]/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune#custom-policy-settings)
 
 ### Task 4: Create and deploy device compliance policies (optional)
 
@@ -97,28 +97,28 @@ Device compliance policies evaluate security oriented settings, and provides rep
 
 See additional resources for device compliance settings:
 
--   Learn about [device compliance policies](https://docs.microsoft.com/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune).
+-   Learn about [device compliance policies]/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune).
 
--   Learn [how to create a device compliance policy](https://docs.microsoft.com/intune/deploy-use/create-a-device-compliance-policy-in-microsoft-intune).
+-   Learn [how to create a device compliance policy]/intune-classic/deploy-use/create-a-device-compliance-policy-in-microsoft-intune).
 
 ### Task 5: Publish and deploy Apps
 
 When using Intune MDM, you can provision apps by either requiring their automatic installation, or making them available in the Company Portal.
 
--   Learn [how to add apps](https://docs.microsoft.com/intune/deploy-use/add-apps).
+-   Learn [how to add apps]/intune-classic/deploy-use/add-apps).
 
--   Learn [how to deploy apps](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
+-   Learn [how to deploy apps]/intune-classic/deploy-use/deploy-apps).
 
 ### Task 6: Enable device enrollment
 
 Enrollment establishes management by provisioning control on the device.
 
--   Learn [how to get ready to enroll corporate-owned and user personal's devices](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune).
+-   Learn [how to get ready to enroll corporate-owned and user personal's devices]/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
 
--   Learn [how to enroll corporate-owned devices](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices).
+-   Learn [how to enroll corporate-owned devices]/intune-classic/deploy-use/manage-corporate-owned-devices).
 
-If you need to enroll shared or user-less devices, you can use a [device enrollment manager (DEM) account](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+If you need to enroll shared or user-less devices, you can use a [device enrollment manager /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 ## Next steps 
 
-[Phase 1: Configure App Protection Policies (optional)](https://docs.microsoft.com/intune/plan-design/migration-phase1-configure-app-protection-policies)
+[Phase 1: Configure App Protection Policies /intune-classic/plan-design/migration-phase1-configure-app-protection-policies)

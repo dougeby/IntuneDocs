@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This topic contains information to help you to understand the Intune policy settings that you can use to manage Windows 10 devices. Read this topic alongside the procedures in [Manage settings and features on your-devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) to configure built-in and custom settings for enrolled Windows 10 desktop and Windows 10 Mobile devices. You cannot use these policies with PCs that run the [Intune PC client software](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
+This topic contains information to help you to understand the Intune policy settings that you can use to manage Windows 10 devices. Read this topic alongside the procedures in [Manage settings and features on your-devices with Microsoft Intune policies]/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
 You can choose from two policy types:
 
@@ -47,7 +47,7 @@ Enter a name and an optional description for this policy to help you identify it
 
 ### OMA-URI settings
 
-For each OMA-URI setting you want to add, enter the following information. Use the [Windows 10 URI settings reference](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in this topic to learn about the settings you can use:
+For each OMA-URI setting you want to add, enter the following information. Use the [Windows 10 URI settings reference]/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in this topic to learn about the settings you can use:
 
 - **Setting name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
 - **Setting description**: Optionally, enter a description for the setting.

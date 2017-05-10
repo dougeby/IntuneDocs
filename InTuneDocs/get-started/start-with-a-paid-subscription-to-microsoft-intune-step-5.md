@@ -53,7 +53,7 @@ Device and user groups are both created in the GROUPS workspace of the Intune ad
 
 
 > [!TIP]
-> To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+> To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune]/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 
 ## Create a device group

@@ -81,7 +81,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
 
 
-For a series of questions that help you find the right method, see [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1).
+For a series of questions that help you find the right method, see [Choose how to enroll devices]/intune-classic/get-started/choose-how-to-enroll-devices1).
 
 ## BYOD
 "Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. For more information, see [Prerequisites for device enrollment](prerequisites-for-enrollment.md). ([Go back to the table](#overview-of-device-enrollment-methods))

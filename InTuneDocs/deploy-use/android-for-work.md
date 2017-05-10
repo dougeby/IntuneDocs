@@ -37,7 +37,7 @@ Android for Work management capabilities rely upon features that are part of new
 
 ## Onboarding
 
-Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. Learn more about [Enabling Android for Work enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work).
+Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. Learn more about [Enabling Android for Work enrollment]/intune-classic/deploy-use/set-up-android-for-work).
 
 ## Work profile management
 
@@ -49,7 +49,7 @@ Intune supplies a range of built-in general settings that you can configure on A
 
 The Google Play for Work service is an integral part of Android for Work app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work service. To manage and deploy apps in the Play Store, you log in to the Google Play website with your company's administrator credentials for Google management. You can approve apps for Android for Work deployment to have them appear in devices' work profiles. These apps then sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured in the Android app publishing console to restrict access to your organization.
 
-Apps can be installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play for Work store on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
+Apps can be installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play for Work store on their device. Learn more about [Deploying apps for Android for Work]/intune-classic/deploy-use/android-for-work-apps).
 
 ## App configuration
 
@@ -90,6 +90,6 @@ Learn more about [Certificate profiles](secure-resource-access-with-certificate-
 Wi-Fi profiles managed by Android for Work are removed when the device is retired from Intune and the work profile is deleted. Learn more about [Wi-Fi profiles](wi-fi-connections-in-microsoft-intune.md).
 
 ## Next steps
-[Enabling Android for Work enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
+[Enabling Android for Work enrollment]/intune-classic/deploy-use/set-up-android-for-work)
 
-[Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)
+[Deploying apps for Android for Work]/intune-classic/deploy-use/android-for-work-apps)

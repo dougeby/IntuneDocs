@@ -122,16 +122,16 @@ For more information, check [Skycure website](https://www.skycure.com/skycure-mi
 
 Here are the steps you need to complete to integrate Intune with Skycure:
 
-1.  [Configure Skycure to use Azure Active Directory Single Sign On (SSO)](https://docs.microsoft.com/intune/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [Configure Skycure to use Azure Active Directory Single Sign On /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
-2.  [Download Skycure iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
+2.  [Download Skycure iOS app configuration policy]/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
-3.  [Add Skycure apps, Microsoft Authenticator and iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+3.  [Add Skycure apps, Microsoft Authenticator and iOS app configuration policy]/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 
-4.  [Deploy Skycure apps, Microsoft Authenticator and iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
+4.  [Deploy Skycure apps, Microsoft Authenticator and iOS app configuration policy]/intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
-5.  [Set up Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+5.  [Set up Skycure integration with Intune]/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
 
-6.  [Enable Skycure Mobile Threat Defense in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
+6.  [Enable Skycure Mobile Threat Defense in Intune]/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
-7.  [Create Skycure Mobile Threat Defense compliance policy in Intune](https://docs.microsoft.com/intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
+7.  [Create Skycure Mobile Threat Defense compliance policy in Intune]/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

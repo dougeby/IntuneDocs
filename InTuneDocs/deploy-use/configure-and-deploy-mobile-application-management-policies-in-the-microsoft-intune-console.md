@@ -50,7 +50,7 @@ To apply restrictions to an app, the app must incorporate the Microsoft Intune A
 
 -   **Use a wrapped app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Write your own app that incorporates the Intune App SDK**. The Intune App SDK lets you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/intune/develop/intune-app-sdk).
+- **Write your own app that incorporates the Intune App SDK**. The Intune App SDK lets you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview]/intune-classic/develop/intune-app-sdk).
 
 For help choosing between the App Wrapping Tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 

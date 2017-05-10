@@ -314,7 +314,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To download, install and configure the certificate connector
 
 > [!NOTE]
-> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](https://docs.microsoft.com/intune/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.

@@ -44,25 +44,25 @@ Intune requires Azure Active Directory (AAD) as the identity and user grouping p
 
 -   Learn more about [multi-factor authentication requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
 
--   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
+-   Learn more about [planning your user and device groups]/intune-classic/deploy-use/plan-your-user-and-device-groups).
 
--   Learn [how to create user and device groups](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Learn [how to create user and device groups]/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
 
 ### PKI (optional)
 
-If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place](https://docs.microsoft.com/intune/deploy-use/secure-resource-access-with-certificate-profiles), ready to create and deploy certificate profiles.
+If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place]/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles), ready to create and deploy certificate profiles.
 
 More information about configuring certificates in Intune is below.
 
--   [How to configure the certificate infrastructure for SCEP](https://docs.microsoft.com/intune/deploy-use/configure-certificate-infrastructure-for-scep).
+-   [How to configure the certificate infrastructure for SCEP]/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep).
 
--   [How to configure the certificate infrastructure for PFX](https://docs.microsoft.com/intune/deploy-use/configure-certificate-infrastructure-for-pfx).
+-   [How to configure the certificate infrastructure for PFX]/intune-classic/deploy-use/configure-certificate-infrastructure-for-pfx).
 
--   [How to configure Intune certificate profiles](file:///C:/intune/deploy-use/https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles).
+-   [How to configure Intune certificate profiles]/intune-classic/deploy-use/configure-intune-certificate-profiles).
 
--   [How to configure resource access policies](https://docs.microsoft.com/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+-   [How to configure resource access policies]/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
 
 ## Task list for an Intune Setup
 
@@ -78,7 +78,7 @@ Before you can migrate to Intune, you first need an Intune subscription.
 
 ### Task 2: Assign Intune user licenses
 
--   Learn [how to assign Intune user licenses](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+-   Learn [how to assign Intune user licenses]/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
 
 -   If you have created a new Azure Active Directory tenant, learn [how to create new users or sync user from your on-premises Active Directory (AD).](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
@@ -91,8 +91,8 @@ Set your MDM authority to **Intune** to enable the Intune Azure Portal. Using a 
 > [!IMPORTANT]
 > If you are transferring your mobile device management to Intune for the first time, you should set the MDM authority to Intune.
 
--   Learn [how to set the mobile management authority](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
+-   Learn [how to set the mobile management authority]/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
 
 ## Next step
 
-[Phase 1: Configure device and app management policies](https://docs.microsoft.com/intune/plan-design/migration-phase1-configure-device-and-app-management-policies)
+[Phase 1: Configure device and app management policies]/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies)

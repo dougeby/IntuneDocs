@@ -88,4 +88,4 @@ You might want to create a dedicated user group which contain users running Skyc
 
 ## Next steps
 
-[Download Skycure iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
+[Download Skycure iOS app configuration policy]/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)

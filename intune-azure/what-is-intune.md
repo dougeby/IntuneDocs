@@ -53,7 +53,7 @@ Highlights of the new experience include:
 - Azure Active Directory (AD) groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
 
-If you are looking for documentation for the classic Intune console, see [the Intune documentation library](https://docs.microsoft.com/intune/).
+If you are looking for documentation for the classic Intune console, see [the Intune documentation library](https://docs.microsoft.com/intune-classic/).
 
 ## Before you start
 
@@ -81,7 +81,7 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 ### Introduction and get started
 This section contains information about [what's new](whats-new.md), [known issues](known-issues.md), [how to get support](get-support.md) and how to [get started with a free trial](free-trial-sign-up.md) of Intune.
 ### Plan and design
-Information to help you [plan and design](/intune/plan-and-design/introduction) your Intune environment.
+Information to help you [plan and design](/intune-classic/plan-and-design/introduction) your Intune environment.
 ### Device enrollment
 [How to get your devices managed by Intune](device-enrollment.md).
 ### Device compliance
@@ -95,7 +95,7 @@ Information to help you [plan and design](/intune/plan-and-design/introduction) 
 ### Conditional access
 [Restrict access to Exchange services depending on conditions you specify](conditional-access.md).
 ### On-premises access
-[Configure access to Exchange ActiveSync, and Exchange on-premises](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+[Configure access to Exchange ActiveSync, and Exchange on-premises](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### Users
 [Learn about the users of devices you manage and sort resources into groups](user-management.md).
 ### Groups

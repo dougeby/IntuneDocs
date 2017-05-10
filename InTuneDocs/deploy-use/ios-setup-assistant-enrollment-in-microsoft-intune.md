@@ -80,7 +80,7 @@ A device enrollment profile defines the settings applied to a group of devices.
    -   **Device group pre-assignment**&mdash;All devices deployed with this profile will initially belong to this group. You can reassign devices after enrollment.
 
    > [!Important]
-   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
+   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
 
    -  **Device Enrollment Program**&mdash;The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure that the toggle is set to **off**.
 
@@ -127,7 +127,7 @@ A device enrollment profile defines the settings applied to a group of devices.
 Specify the profile to assign to added devices from the list of available profiles, review the **Enrollment profile details**, and then choose **Finish**. Manually added devices can be assigned to any enrollment profile.
 
 > [!Important]
-> Currently, Intune let you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a profile. [Learn more](https://docs.microsoft.com/intune-azure/device-enrollment-program-enroll-ios)
+> Currently, Intune let you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a profile. [Learn more](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
 
 ### Export a profile to deploy to iOS devices
 

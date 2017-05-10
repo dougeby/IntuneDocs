@@ -38,9 +38,9 @@ ms.custom: intune-classic
 
 -   Make sure you’re familiar with the process of:
 
-    -   [Deploying an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+    -   [Deploying an app with Intune]/intune-classic/deploy-use/deploy-apps-in-microsoft-intune).
 
-    -   [Deploying an iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+    -   [Deploying an iOS app configuration policy]/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 ## To deploy Skycure apps, Microsoft Authenticator app and the iOS app configuration policy
 
@@ -70,4 +70,4 @@ ms.custom: intune-classic
 
 ## Next steps
 
-[Set up the Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
+[Set up the Skycure integration with Intune]/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)

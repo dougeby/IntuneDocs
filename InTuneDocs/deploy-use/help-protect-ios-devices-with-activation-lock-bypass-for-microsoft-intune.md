@@ -66,7 +66,7 @@ Intune can request the Activation Lock status of supervised devices that run iOS
 
 Before you can bypass Activation Lock on devices, you must enable it first. To do this:
 
-1. Use the information in the topic [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) to create an iOS [device configuration policy](/intune/deploy-use/ios-policy-settings-in-microsoft-intune).
+1. Use the information in the topic [Manage settings and features on your devices with Microsoft Intune policies]/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune).
 2. In the **Enrollment** section, of the settings page, configure the setting **Allow Activation Lock when the device is in supervised mode** to **Yes**.
 3. Save the policy, and deploy it to the devices on which you want to manage Activation Lock bypass.
 

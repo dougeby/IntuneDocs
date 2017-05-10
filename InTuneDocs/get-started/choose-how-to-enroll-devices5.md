@@ -33,11 +33,11 @@ Your answers to this series of questions will help determine the best enrollment
 ## **How will you manage shared iOS devices?**
 
 > [!div class="button"]
-[iOS DEP Enrollment >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+[iOS DEP Enrollment >]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 > [!div class="button"]
-[iOS Direct enrollment >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+[iOS Direct enrollment >]/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[DEM enrollment >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[DEM enrollment >]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Apple’s Device Enrollment Program (DEP)** - iOS devices purchased or managed with DEP can be targeted with an enrollment profile. When users power on their devices for the first time, the device downloads the DEP profile and enrolls with the profile DEP.
 

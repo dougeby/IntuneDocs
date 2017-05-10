@@ -40,27 +40,27 @@ The purpose of this guide is to step you through the various details involved in
 
 This guide includes two phases, both of which include tasks, strategies, and tactical guidance that will help you step through the end to end process of migrating to Intune MDM.
 
--   [Phase 1: Prepare Intune for Mobile device management (MDM)](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
+-   [Phase 1: Prepare Intune for Mobile device management /intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
 
-    -   [Assess your MDM migration requirements](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements)
+    -   [Assess your MDM migration requirements]/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements)
 
-    -   [Basic setup](https://docs.microsoft.com/intune/plan-design/migration-phase1-basic-setup)
+    -   [Basic setup]/intune-classic/plan-design/migration-phase1-basic-setup)
 
-    -   [Configure device and app management policies](https://docs.microsoft.com/intune/plan-design/migration-phase1-configure-device-and-app-management-policies)
+    -   [Configure device and app management policies]/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies)
 
-    -   [Configure app protection policies (optional)](https://docs.microsoft.com/intune/plan-design/migration-phase1-configure-app-protection-policies)
+    -   [Configure app protection policies /intune-classic/plan-design/migration-phase1-configure-app-protection-policies)
 
-    -   [Special migration considerations](https://docs.microsoft.com/intune/plan-design/migration-phase1-special-migration-considerations)
+    -   [Special migration considerations]/intune-classic/plan-design/migration-phase1-special-migration-considerations)
 
--   [Phase 2: Migration campaign](https://docs.microsoft.com/intune/plan-design/migration-phase2-migration-campaign)
+-   [Phase 2: Migration campaign]/intune-classic/plan-design/migration-phase2-migration-campaign)
 
-    -   [Communication Plan](https://docs.microsoft.com/intune/plan-design/migration-phase2-communication-plan)
+    -   [Communication Plan]/intune-classic/plan-design/migration-phase2-communication-plan)
 
-    -   [Drive end-user adoption with conditional access](https://docs.microsoft.com/intune/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access)
+    -   [Drive end-user adoption with conditional access]/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access)
     
-    -   [Typical Migration Cycle](https://docs.microsoft.com/intune/plan-design/migration-phase2-typical-migration-cycle)
-	    -   [Monitoring migration](https://docs.microsoft.com/intune/plan-design/migration-phase2-typical-migration-cycle#monitoring-migration)
-	    -   [Post migration](https://docs.microsoft.com/intune/plan-design/migration-phase2-typical-migration-cycle#post-migration)
+    -   [Typical Migration Cycle]/intune-classic/plan-design/migration-phase2-typical-migration-cycle)
+	    -   [Monitoring migration]/intune-classic/plan-design/migration-phase2-typical-migration-cycle#monitoring-migration)
+	    -   [Post migration]/intune-classic/plan-design/migration-phase2-typical-migration-cycle#post-migration)
 
 ## Assumptions
 
@@ -69,14 +69,14 @@ This guide includes two phases, both of which include tasks, strategies, and tac
 -   You are already familiar with Intune and its features. 
 
 > [!NOTE]
-> Check out the [Intune evaluation guide](https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune before you migrate.
+> Check out the [Intune evaluation guide]/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune before you migrate.
 
 ## Before you begin
 
 It's important to recognize that your new Intune deployment might be different from your old MDM deployment. Unlike traditional MDM services, Intune centers on identity-driven access control, and so does not require a network proxy appliance to control access to corporate data from mobile devices outside the organization's network perimeter. Microsoft offers solutions to secure data services within the cloud itself via a suite of tightly integrated cloud services, collectively referred to as the Enterprise Client + Security offering.
 
--   Review the [common ways to use Intune](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune), and begin compiling answers to the questions under the [Phase 1: Assess MDM requirements](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements).
+-   Review the [common ways to use Intune]/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements).
 
 ## Next steps
 
-[Phase 1: Prepare Intune for mobile device management (MDM)](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
+[Phase 1: Prepare Intune for mobile device management /intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)

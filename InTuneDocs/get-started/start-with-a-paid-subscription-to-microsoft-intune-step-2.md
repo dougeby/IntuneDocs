@@ -56,7 +56,7 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) to create the TXT record.
 
 	> [!TIP]
-	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
+	> Make sure to create a DNS alias /intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
 
 The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
