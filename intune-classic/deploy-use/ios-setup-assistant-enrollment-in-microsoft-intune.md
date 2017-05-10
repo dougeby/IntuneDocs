@@ -135,17 +135,6 @@ Specify the profile to assign to added devices from the list of available profil
 
 2. Choose **Export** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
-  To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
-
-  ```
-  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-  ```
-  With this code:
-
-  ```
-  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-  ```
-
    You will upload this profile URL to the Apple service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 ### Prepare the device with Apple Configurator
@@ -159,7 +148,7 @@ iOS devices are connected to the Mac computer and enrolled for mobile device man
 
 2. In the preferences pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 
-3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
+3. Enter the **Name** and **Enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
 
    You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 
