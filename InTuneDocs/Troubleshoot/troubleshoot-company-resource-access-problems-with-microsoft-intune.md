@@ -4,9 +4,10 @@
 title: Troubleshoot company resource access problems | Microsoft Docs
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
