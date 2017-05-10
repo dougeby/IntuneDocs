@@ -49,8 +49,8 @@ Looking for Intune with Configuration Manager?
 ## Step 1: Enable connections
 
 Before you enable mobile device enrollment, be sure you've done the following:
-- [Review required network URLs and ports](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
-- [Add and verify your domain name](../get-started/domain-names-for-microsoft-intune.md)
+- [Review required network URLs and ports](../get-started/network-bandwidth-use.md)
+- [Add and verify your domain name](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 
 ## Step 2: Set MDM authority
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.

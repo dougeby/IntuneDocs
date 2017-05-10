@@ -34,9 +34,9 @@ Intune with Lookout Mobile Threat Defense lets you detect threats on mobile devi
 
 Prerequisites for compliance policy with Lookout Mobile Threat Defense:
 
-- [Set up Lookout Mobile Threat Defense subscription](set-up-your-subscription-with-lookout-mtp.md)
-- [Enable the Lookout connection in Intune](enable-lookout-mtp-connection-in-intune.md)
-- [Configure and deploy the Lookout for work app](configure-and-deploy-lookout-for-work-apps.md)
+- [Set up Lookout Mobile Threat Defense subscription](setup-your-lookout-mtd-subscription.md)
+- [Enable the Lookout connection in Intune](enable-lookout-mtd-connection.md)
+- [Configure and deploy the Lookout for work app](configure-deploy-lookout-for-work-app.md)
 
 As part of the Lookout Mobile Threat Defense setup, in the [Lookout console](https://aad.lookout.com), you created a policy that classifies various threats as high, medium and low. In the Intune compliance policy, you set the maximum allowed threat level.
 

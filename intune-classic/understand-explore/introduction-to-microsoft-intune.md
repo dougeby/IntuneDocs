@@ -117,5 +117,5 @@ The following list of business problems link to more detailed information about 
 
 ### Next steps
 * Read about some of the [common ways to use Intune](common-ways-to-use-intune.md).
-* Get familiar with the product [with a 30-day trial of Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
+* Get familiar with the product [with a 30-day trial of Intune](sign-up-for-30-day-trial-microsoft-intune.md).
 * Dive into the [technical requirements and capabilities]/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune) of Intune.
