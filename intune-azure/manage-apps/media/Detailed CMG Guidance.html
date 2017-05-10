@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Detailed CMG Guidance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<style type="text/css">
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+.pl-c {
+    color: #969896;
+}
+
+.pl-c1,.pl-mdh,.pl-mm,.pl-mp,.pl-mr,.pl-s1 .pl-v,.pl-s3,.pl-sc,.pl-sv {
+    color: #0086b3;
+}
+
+.pl-e,.pl-en {
+    color: #795da3;
+}
+
+.pl-s1 .pl-s2,.pl-smi,.pl-smp,.pl-stj,.pl-vo,.pl-vpf {
+    color: #333;
+}
+
+.pl-ent {
+    color: #63a35c;
+}
+
+.pl-k,.pl-s,.pl-st {
+    color: #a71d5d;
+}
+
+.pl-pds,.pl-s1,.pl-s1 .pl-pse .pl-s2,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,.pl-sr .pl-sre,.pl-src,.pl-v {
+    color: #df5000;
+}
+
+.pl-id {
+    color: #b52a1d;
+}
+
+.pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+}
+
+.pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+}
+
+.pl-ml {
+    color: #693a17;
+}
+
+.pl-mh,.pl-mh .pl-en,.pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+}
+
+.pl-mq {
+    color: #008080;
+}
+
+.pl-mi {
+    color: #333;
+    font-style: italic;
+}
+
+.pl-mb {
+    color: #333;
+    font-weight: bold;
+}
+
+.pl-md,.pl-mdhf {
+    background-color: #ffecec;
+    color: #bd2c00;
+}
+
+.pl-mdht,.pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+}
+
+.pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+}
+
+.pl-mo {
+    color: #1d3e81;
+}
+.task-list {
+padding-left:10px;
+margin-bottom:0;
+}
+
+.task-list li {
+    margin-left: 20px;
+}
+
+.task-list-item {
+list-style-type:none;
+padding-left:10px;
+}
+
+.task-list-item label {
+font-weight:400;
+}
+
+.task-list-item.enabled label {
+cursor:pointer;
+}
+
+.task-list-item+.task-list-item {
+margin-top:3px;
+}
+
+.task-list-item-checkbox {
+display:inline-block;
+margin-left:-20px;
+margin-right:3px;
+vertical-align:1px;
+}
+</style>
+</head>
+<body>
+<h1 id="frequently-asked-questions-about-the-cloud-management-gateway-cmg-">Frequently asked questions about the Cloud Management Gateway (CMG)</h1>
+<h2 id="why-use-the-cloud-management-gateway-">Why use the cloud management gateway?</h2>
+<p>Use this role to simplify Internet-based client management in three steps from the Configuration Manager console.</p>
+<ol>
+<li>Deploy the CMG to Azure using the <a href="/sccm/core/clients/manage/setup-cloud-management-gateway">Create Cloud Management Gateway</a> wizard.</li><li>Configure the <a href="/sccm/core/servers/deploy/configure/install-site-system-roles">cloud management gateway connection point</a> site system role.</li><li><a href="/sccm/core/clients/manage/setup-cloud-management-gateway#step-7-configure-roles-for-cloud-management-gateway-traffic">Configure roles for cloud management gateway traffic</a>, like the management point, and software update point.</li></ol>
+<h2 id="how-does-the-cloud-management-gateway-work-">How does the cloud management gateway work?</h2>
+<ul>
+<li>The cloud management gateway connection point enables a consistent and high performance connection from the Internet to the cloud management gateway.</li><li>Configuration Manager publishes settings to the CMG including connection information and security settings.</li><li>The CMG authenticates and forwards Configuration Manager client requests to the cloud management gateway connection point. These requests are forwarded to roles in the corporate network according to URL mappings.</li></ul>
+<h2 id="how-is-the-cloud-management-gateway-deployed-">How is the cloud management gateway deployed?</h2>
+<p>The cloud service manager component on the service connection point handles all CMG deployment tasks. Additionally, it monitors and reports service health and logging information from Azure AD.</p>
+<h3 id="certificate-requirements">Certificate requirements</h3>
+<p>You&#39;ll need the following certificates to secure the CMG:</p>
+<ul>
+<li><strong>Management certificate</strong> - This can be any certificate including self-signed certificates. You can use a public certificate uploaded to Azure AD or a  <a href="/sccm/mdm/deploy-use/create-pfx-certificate-profiles">PFX with private key</a> imported into Configuration Manager to authenticate with Azure AD. </li><li><strong>Web service certificate</strong> -  We recommend that you use a public CA certificate to gain native trust by clients. The CName needs to be created in the public DNS registar. Wild card certificates are not supported.</li><li><strong>Root/SubCA certificates upload to CMG</strong> - The CMG needs to do full chain validation on client PKI certificates. If you use an enterprise CA for issuing client PKI certificates and their root or subordinate CA is not available on the internet, then you must upload it to the CMG.</li></ul>
+<h3 id="deployment-process">Deployment process</h3>
+<p>There two phases to the deployment:</p>
+<ul>
+<li>Deploy the cloud service<ul>
+<li>Upload your <a href="https://msdn.microsoft.com/library/azure/ee758711.aspx">Azure Service Definition Schema</a> (csdef) file</li><li>Upload your <a href="https://msdn.microsoft.com/library/azure/ee758710.aspx">Azure Service Configuration Schema</a> (cscfg) file.</li></ul>
+</li><li>Set up the CMG component on your Azure AD server, and configure endpoints, HTTP handlers, and services in Internet Information Services (IIS)</li></ul>
+<p>If you change the configuration of the CMG, a configuration deployment is initiated to the CMG.</p>
+<h2 id="how-does-the-cloud-management-gateway-help-ensure-security-">How does the cloud management gateway help ensure security?</h2>
+<p>The CMG helps ensure security in the following ways:</p>
+<ul>
+<li>Accepts and manages connections from CMG connection points including mutual SSL authentication using internal certificates and connection IDs.</li><li><p>Accepts and forwards client requests</p>
+<ul>
+<li>Pre-authenticates connections using mutual SSL on the client PKI certificate.</li><li>The certificate trust list checks the root of the client PKI certificate. You can specify this setting in the client communicate settings in site properties. Also performs the same validation as the management point for the client.</li><li>Validates received URLs</li><li>Filters received URLs to check if any connecting CMG connection point can service the URL request.  </li><li>Checks content length check for each publishing endpoint.</li><li>Uses &#39;round-robin&#39; to load balance between CMG connection points from the same site.</li></ul>
+</li><li><p>Secures the CMG connection point</p>
+<ul>
+<li>Builds consistent HTTP/TCP connections to all virtual instances of the connecting CMG. Checks and maintains connections every minute.</li><li>Mutually autheticates SSL authentication with CMG using internal certificates.</li><li>Forwards HTTP requests based on URL mappings.</li><li>Reports connection status to show admin service health status.</li><li>Reports endpoint traffic report per endpoint every 5 minutes.</li></ul>
+</li><li><p>Secure the publishing endpoint<br>Configuration Manager client facing roles like the management point, and software update point host endpoints in IIS to service client requests. Every endpoint published to the CMG has an URL mapping.<br>The external URL is the one the client uses to communicate with the CMG.<br>The internal URL is the CMG connection point used to forward requests to the internal server. </p>
+</li></ul>
+<h3 id="example-">Example:</h3>
+<p>When you enable CMG traffic on a management point, Configuration Manager creates a set of URL mappings internally for each management point server, like ccm_system, ccm_incoming, and sms_mp.<br>The external URL for the management point ccm_system endpoint might look like <strong>https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System</strong>.<br>The URL is unique for each management point. The Configuration Manager client then puts the CMG enabled MP name like <strong><CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID></strong> into its internet management point list.<br>All published external URLs are uploaded to the CMG automatically then CMG is able to do URL filtering. All URL mapping replicates to CMG connection point so it can forward to internal servers according to client requesting external URL.</p>
+<h2 id="what-ports-are-used-by-the-cloud-management-gateway-">What ports are used by the cloud management gateway?</h2>
+<ul>
+<li>No inbound ports required on premise network. Deployment of CMG will create a bunch on CMG automatically. </li><li>Besides 443, some outbound ports are required by the CMG connection point.</li></ul>
+<table>
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data flow</td>
+<td>Server</td>
+<td>Server ports</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>CMG deployment</td>
+<td>Azure</td>
+<td>443</td>
+<td>Configuration Manager service connection point</td>
+</tr>
+<tr>
+<td>Build CMG channel</td>
+<td>CMG</td>
+<td>VM instance: 1 Port: 443<br>VM instance: N (N&gt;=2 and N&lt;= 16) Ports: 10124~N 10140~N</td>
+<td>CMG Connection point</td>
+</tr>
+<tr>
+<td>Client to CMG</td>
+<td>CMG</td>
+<td>443</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>CMG connector to site role (currently management points and software update points)</td>
+<td>Site role</td>
+<td>Protocol/Ports configured on the site role</td>
+<td>CMG connection point</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-can-you-improve-performance-of-the-cloud-management-gateway">How can you improve performance of the cloud management gateway</h2>
+<ul>
+<li>If possible, configure the CMG, CMG connection point and the Configuration Manager site server in same network region to reduce latency.</li><li>Currently, the connection between the Configuration Manager client and the CMG is not region-aware.</li><li>To gain high availability, we recommend at least 2 virtual instances of the CMG and two CMG connection points per site </li><li>You can scale the CMG to support more clients by adding more VM instances. They are load balanced by the Azure AD load balancer.</li><li>Create more CMG connection points to distribute the load among them. The CMG will &#39;round-robin&#39; the traffic to its connecting CMG connection points.</li><li>Support client number per CMG VM instance is 6k in the 1702 release. When the CMG channel is under high load, the request will still be handled but might take longer than normal.</li></ul>
+<h2 id="how-can-you-monitor-the-cloud-management-gateway-">How can you monitor the cloud management gateway?</h2>
+<p>For troubleshooting deployment, use <strong>CloudMgr.log</strong> and <strong>CMGSetup.log</strong>.<br>For troubleshooting service health, use <strong>CMGService.log</strong> and <strong>SMS_CLOUD_PROXYCONNECTOR.log</strong>.<br>For troubleshooting client traffic, use <strong>CMGHttpHandler.log</strong>, <strong>CMGService.Log</strong>, and <strong>SMS_CLOUD_PROXYCONNECTOR.log</strong>.</p>
+<p>For a list of all CMG-related log files, see <a href="https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files#cloud-management-gateway">Log files in Configuration Manager</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
