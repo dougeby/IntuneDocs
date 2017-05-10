@@ -115,7 +115,7 @@ You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple vo
 
 ### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
 
-Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-knox-standard-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
+Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
 

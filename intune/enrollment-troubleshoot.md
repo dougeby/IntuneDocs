@@ -35,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 ## Initial troubleshooting steps
 
-Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](android-knox-standard-enroll.md) for links to enrollment steps for each platform.
+Before you begin troubleshooting, ensure that you configured Intune correctly to enable enrollment. See [Enroll Android and Standard Knox devices](android-enroll.md) for links to enrollment steps for each platform.
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 

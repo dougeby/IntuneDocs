@@ -951,7 +951,7 @@
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-android-and-knox-standard-devices.md",
-		"redirect_url": "/intune/android-knox-standard-enroll",
+		"redirect_url": "/intune/android-enroll",
 		"redirect_document_id": true
 	},
 	{

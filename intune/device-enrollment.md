@@ -68,9 +68,9 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](#android-knox-standard-enroll.md)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](android-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-program-enroll-ios.md)|
-|[**Android for Work**](#android-for-work)| No | Yes | No| [More information](#android-knox-standard-enroll.md) |
+|[**Android for Work**](#android-for-work)| No | Yes | No| [More information](android-enroll.md) |
 
 
 ## BYOD

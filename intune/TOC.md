@@ -35,7 +35,7 @@
 ### [Choose how to enroll iOS devices](enrollment-method-choose-ios.md)
 ## How to
 ### [Assign licenses to users](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Enroll Android devices](android-knox-standard-enroll.md)
+### [Enroll Android devices](android-enroll.md)
 ### Enroll iOS devices
 #### [Apple Configurator - Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 #### [Apple Configurator - direct enrollment](apple-configurator-direct-enroll-ios.md)
