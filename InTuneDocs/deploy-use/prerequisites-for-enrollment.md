@@ -59,7 +59,7 @@ The MDM authority defines the management service that has permission to manage a
 > Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, you cannot change it without the help of Microsoft Support. See [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
 
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
 
 2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
@@ -129,9 +129,9 @@ You use the **Office 365 management portal** to manually add cloud-based users a
 
 ### To synchronize on-premises users with Azure AD
 
-1. [Add the UPN suffix](https://technet.microsoft.com/en-us/library/cc772007.aspx) for your custom domain in your on-premises Active Directory.
+1. [Add the UPN suffix](https://technet.microsoft.com/library/cc772007.aspx) for your custom domain in your on-premises Active Directory.
 2. Set the new UPN suffix for the on-premises users that you plan to import.
-3. Run [Azure AD Connect sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
+3. Run [Azure AD Connect sync](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
 4. Once the user account information has successfully synchronized, you can then assign Microsoft Intune licenses using the [Office 365 Management Portal](https://portal.office.com/Admin/Default.aspx).
 
 ## Step 6: Enable enrollment

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+        "source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "InTuneDocs/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
         "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune",
         "redirect_document_id": true
@@ -18,25 +23,36 @@
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-cpwebsite.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": true
 
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-ios.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+
+    },
+    {
+      "source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-ios.md ",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "InTuneDocs/EndUser/reset-erase-your-lost-or-stolen-device-ios.md",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-android.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
     {
       "source_path": "InTuneDocs/EndUser/reset-your-device-windows.md",
-      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
       "redirect_document_id": false
 
     },
@@ -341,6 +357,262 @@
         "source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-ios.md",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-mtd-ios",
         "redirect_document_id": false
-    }
+    },
+	{
+		"source_path": "InTuneDocs/activate-your-product-key.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/account-portal-merged-with-Office-365.md",
+		"redirect_url": "http://aka.ms/SubManagement",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/configure-and-deploy-lookout-for-work-apps.md",
+		"redirect_url": "https://docs.microsoft.com/intune/device-threat-protection-apps",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/device-threat-protection-apps.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/configure-deploy-lookout-for-work-app",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/device-threat-protection-enable.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/device-threat-protection-policy.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/create-lookout-device-compliance-policy",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/device-threat-protection-subscription-setup.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/setup-your-lookout-mtd-subscription",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/device-threat-protection.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md",
+		"redirect_url": "https://docs.microsoft.com/intune/device-threat-protection-policy",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/enable-lookout-mtp-connection-in-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/device-threat-protection-enable",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/InTune/deploy-use/prerequisites-for-enrollment",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/multi-factor-auth-azure-ad.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/multi-factor-authentication-azure-active-directory",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/previous-intune-releases.md",
+		"redirect_url": "https://docs.microsoft.com/intune/whats-new/previous-intune-releases",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/renew-a-symantec-code-signing-certificate.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/sideload-apps-for-windows",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/restrict-access-based-on-device-network-app-risk.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/device-threat-protection",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/set-up-your-subscription-with-lookout-mtp.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/device-threat-protection-subscription-setup",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/deploy-use/whats-new-in-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/whats-new/whats-new-in-microsoft-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/acceptable-use-policy-for-microsoft-intune.md",
+		"redirect_url": "https://www.microsoft.com/online/legal/v2/?docid=13",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/microsoft-intune-privacy-statement.md",
+		"redirect_url": "https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/privacy-statement.md",
+		"redirect_url": "https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/remote-assistance-via-microsoft-easy-assist.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/sign-in-privacy-statement.md",
+		"redirect_url": "https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/EULA/terms-of-use.md",
+		"redirect_url": "https://www.microsoft.com/online/legal/v2/?docid=13",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/administrative-accounts-websites-perms.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3#grant-administrator-permissions",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/choose-how-to-enroll-devices.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices1",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "InTuneDocs/get-started/decide-how-to-enroll-devices.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/domain-names-for-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/integration-with-cloud-services.md",
+		"redirect_url": "https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/microsoft-intune-company-portal.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/network-infrastructure-requirements-for-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/network-bandwidth-use#network-communication-requirements",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/get-started/supported-mobile-devices-and-computers.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "InTuneDocs/get-started/supported-web-browsers.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-web-browsers",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/Troubleshoot/troubleshooting-lookout-integration.md",
+		"redirect_url": "https://docs.microsoft.com/intune/device-threat-protection-troubleshooting",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/enable-mfa-secure-authentication.md",
+		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-how-to-enroll-in-mfa",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/enroll-device-into-management.md",
+		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-intune-enduser-enrollment-instructions",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md",
+		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md",
+		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md",
+		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/manage-applications-without-enrolling-devices.md",
+		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-how-to-work-with-managed-apps",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/manage-your-password.md",
+		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-how-to-manage-your-password",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/modern-windows-management.md",
+		"redirect_url": "https://technet.microsoft.com/itpro/windows/manage/manage-windows-10-in-your-organization-modern-management",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/prevent-company-data-leaks-from-Office-365-mobile-apps.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/protect-pcs-against-malware-threats.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/protect-pcs-against-malware-threats",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/publish-mobile-apps-to-users.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/publish-mobile-apps-to-users",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/set-up-email-access-for-ios-devices-using-microsoft-intune.md",
+		"redirect_url": "https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/simplify-email-configuration-on-mobile-devices.md",
+		"redirect_url": "https://docs.microsoft.com/intune/get-started/simplify-email-configuration-on-mobile-devices",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md",
+		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "InTuneDocs/understand-explore/use-multi-identity.md",
+		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-how-to-use-apps-with-multi-identity-support",
+		"redirect_document_id": true
+	}
+  ,
+  {
+    "source_path": "InTuneDocs/get-started/windows-pc-management-capabilities-in-microsoft-intune",
+    "redirect_url": "https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune",
+    "redirect_document_id": true
+  }
   ]
 }

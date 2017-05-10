@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -126,7 +126,7 @@ To specify an app URL in the apps list, use the following format:
 
 Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
-Device profiles that contain restricted app settings must be deployed to groups of users.
+Device profiles that contain restricted app settings must be assigned to groups of users.
 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -164,52 +164,6 @@ Example: Search for Microsoft Word for iPad. The URL that you use will be https:
 
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the hidden or visible apps list in the same format.
 
-### App information for built-in iOS apps
-Use the information in this list to identify the name, publisher, and bundle ID of the built-in iOS apps that you might want to show or hide. If you want to show or hide all of the apps in the list, you can copy the data below into a text file with the extension **.csv**, then use the **Import** option to import all of the apps simultaneously.
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
-
 
 ## Cellular
 - 	**Data roaming** - Allow data roaming when the device is on a cellular network.
@@ -227,6 +181,67 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**Managed apps sync to cloud** - Allow apps that you manage with Intune to sync data to the user's iCloud account.
 - 	**Shared photo stream** - Set to **No** to disable **iCloud Photo Sharing** on the device..
 - 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or macOS device (Handoff).
+
+## Autonomous single app mode (supervised only)
+
+Use these settings to configure iOS devices to run specified apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
+
+### Settings
+
+- **App name** - Enter the name of the app as it will appear in the apps list on this blade.
+- **App Bundle ID** - Enter the bundle ID of the app. For help, see **Bundle ID reference for built-in iOS apps** in this topic.
+
+After you specify each app name and bundle ID, choose **Add** to append it to the list.
+
+- **Import** - Import a comma-separated values (.csv) file containing a list of app names, and their associated bundle IDs.
+- **Export** - Export the app names, and associated bundle IDs you have configured to a comma-separated values (.csv) file.
+
+### Bundle ID reference for built-in iOS apps
+
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+
+|||
+|-|-|
+|App name|BundleID|
+|App Store|com.apple.AppStore|
+|Calculator|com.apple.calculator|
+|Calendar|com.apple.mobilecal|
+|Camera|com.apple.camera|
+|Clock|com.apple.mobiletimer|
+|Compass|com.apple.compass|
+|Contacts|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Find Friends|com.apple.mobileme.fmf1|
+|Find iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Health|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Maps|com.apple.Maps|
+|Messages|com.apple.MobileSMS|
+|Music|com.apple.Music|
+|News|com.apple.news|
+|Notes|com.apple.mobilenotes|
+|Numbers|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Photos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Reminders|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Settings|com.apple.Preferences|
+|Stocks|com.apple.stocks|
+|Tips|com.apple.tips|
+|Videos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Watch|com.apple.Bridge|
+|Weather|com.apple.weather|
+
 
 ## Kiosk
 - 	**Activation Lock** - Enable Activation Lock on supervised iOS devices.
@@ -250,7 +265,7 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 
 >[!NOTE]
 > Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
->If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
+>If the iOS app that you specify is installed after you assign the profile, the device will not enter kiosk mode until after it is restarted.
 
 ## Safari
 - 	**Safari (supervised only)** - Specify whether the Safari browser can be used on the device.
@@ -259,3 +274,20 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**JavaScript** - Allow Java scripts to run in the browser.
 - 	**Fraud warnings** - Allow fraud warnings in the browser.
 - 	**Pop-ups** - Enable or disable the browser pop-up blocker.
+
+
+## Domains
+
+### Unmarked email domains
+
+In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than those you configured, the email will be marked as untrusted in the iOS Mail app.
+
+
+### Managed web domains
+
+In the **Web Domain URL** field, add one or more URLs to the list. When documents are downloaded from the domains you specify, they will be considered managed. This setting applies only to documents downloaded using the Safari browser.
+
+
+### Safari password auto fill domains
+
+In the **Domain URL** field, add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.

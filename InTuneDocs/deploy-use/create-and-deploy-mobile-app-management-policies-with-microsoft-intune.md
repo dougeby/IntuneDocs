@@ -59,7 +59,7 @@ App protection policies are created at the Azure Portal. If this is the first ti
 
 Follow the steps below to create app protection policies:
 
-1. Go to the [Azure portal](http://portal.azure.com), and enter your credentials.
+1. Go to the [Azure portal](https://portal.azure.com), and enter your credentials.
 
 2. Choose **More Services**, and type "Intune".
 
@@ -111,7 +111,7 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 Beginning with Intune 1703 version, you have the option to generally add LOB apps into Intune when creating a new app protection policy. This gives you the option to define app protection policies for LOB apps using the MAM SDK without requiring full app deployment permissions.
 
-> [!TIP] 
+> [!TIP]
 > You can also add LOB apps into Intune when going through the [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started) work-flow.
 
 > [!IMPORTANT]
@@ -129,13 +129,13 @@ Beginning with Intune 1703 version, you have the option to generally add LOB app
 
 ### To add LOB apps (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > You need to select Windows 10 from the platform drop-down list when creating a new app protection policy.
 
 1.  On the Add a policy blade, choose **Allowed apps** or **Exempt apps** to open the Allowed or Exempt apps blade.
 
 	> [!NOTE]
-	> 
+	>
 	- **Allowed apps**: These are the apps that need to adhere to this policy.
 	- **Exempt apps**: These apps are exempt from this policy and can access corporate data without restrictions.
 <br></br>
@@ -159,7 +159,7 @@ Beginning with Intune 1703 version, you have the option to generally add LOB app
 
     You have now created a policy and deployed it to users.
 
-Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses assigned to them are affected by the policy. Users who are in the security group that you selected who don’t have a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them are not affected.
+Only users with Intune licenses assigned to them are affected by the policy. Users who are in the security group that you selected who don’t have a Intune license assigned to them are not affected.
 
 >[!IMPORTANT]
 > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected are not affected.

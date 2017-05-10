@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: How to add iOS store apps to IntunetitleSuffix: "Intune Azure preview"
+title: How to add iOS store apps to Intune | Microsoft Docs
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding iOS store apps to Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +29,10 @@ ms.custom: intune-azure
 # How to add iOS store apps to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## Before you start
+
+You can only assign apps using this method if they are free of charge in the app store. If you want to assign paid apps using Intune, consider using the [iOS volume-purchase program](ios-vpp-apps.md).
 
 
 ## Step 1 - Search for the app in the store
@@ -60,4 +65,4 @@ ms.custom: intune-azure
 - **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 3. When you are done, on the **Add App** blade, choose **Save**.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](deploy-apps.md).

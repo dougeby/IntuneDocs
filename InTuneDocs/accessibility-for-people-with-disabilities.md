@@ -4,10 +4,10 @@
 title: Accessibility for People with Disabilities | Microsoft Docs
 description: Read accessibility information about Microsoft products.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,11 @@ ms.custom: intune-classic
 ---
 
 # Accessibility for People with Disabilities
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] more accessible for people with disabilities.
+Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Microsoft Intune more accessible for people with disabilities.
 
 ## In This Section
 [Accessibility Features of Microsoft Intune](accessibility-features-of-microsoft-intune.md)
-Describes the accessibility features of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+Describes the accessibility features of Microsoft Intune.
 
 [Accessibility Products and Services from Microsoft](accessibility-products-and-services-from-microsoft.md)
 Describes the accessibility products and services that are available from Microsoft.

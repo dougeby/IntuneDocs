@@ -32,7 +32,7 @@ ms.custom: intune-classic
 
 As an Intune administrator, you can enable management of Android devices, including Samsung Knox Standard devices, from the Company Portal. Users can then enroll their devices using the Company Portal app that is available from Google Play.
 
-By default, Android devices are allowed to enroll in Intune. To block Android devices from enrolling, sign to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the **Allow Android devices** check box.
+By default, Android devices are allowed to enroll in Intune. To block Android devices from enrolling, sign to the [Microsoft Intune admin portal](https://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the **Allow Android devices** check box.
 
 1.  **Set up Intune**<br>
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority) as **Microsoft Intune** and setting up MDM.

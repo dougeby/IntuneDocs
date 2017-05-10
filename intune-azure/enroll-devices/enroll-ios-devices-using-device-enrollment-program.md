@@ -41,9 +41,8 @@ This topic helps IT administrators enroll company-owned iOS devices purchased th
 2. [Create a DEP profile](#create-anapple-dep-profile)
 3. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [Synchronize DEP-managed devices](#synchronize-dep-managed-devices)
-5. Distribute devices to users
-
-
+5. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
+6. [Distribute devices to users](#distribute-devices-to-users)
 
 ## Get the Apple DEP certificate
 Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP certificate (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
@@ -52,9 +51,6 @@ To manage corporate-owned iOS devices with DEP, your organization must join Appl
 
 > [!NOTE]
 > If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
-
-
-
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment** > **Apple DEP Token**.
@@ -78,7 +74,7 @@ Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
+2. On the Intune blade, choose **Device enrollment**, and then choose **Apple Enrollment**.
 3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Profiles**.
 4. On the **Apple DEP Profiles** blade, select **Create**.
 5. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
@@ -121,6 +117,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
 
 ## Assign Apple DEP serial numbers to your MDM server
+Device serial numbers must be assigned to your Intune MDM server in the Apple DEP web portal to allow Intune to manage those devices.
 
 1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID.
 
@@ -131,10 +128,11 @@ A device enrollment profile defines the settings applied to a group of devices. 
 4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Synchronize DEP managed devices
+Now that Intune has been assigned permission to manage your DEP devices, you can synchronize Intune with the DEP service to see your managed devices in the Intune portal.
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the Intune blade of the Azure portal, choose **Enroll Devices**, and then choose **Apple Enrollment**.
+2. On the Intune blade of the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
 
 3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
 
@@ -149,12 +147,29 @@ A device enrollment profile defines the settings applied to a group of devices. 
 >[!NOTE]
 >You can also assign DEP serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
 
+## Assign a DEP profile to devices
+DEP devices managed by Intune must be assigned a DEP profile before they are enrolled.
+
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+
+2. On the Intune blade of the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then select **DEP profiles**.
+
+3. From the list of **Apple DEP Enrollment Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
+
+4. Select **Assign** and then select the DEP devices you want to assign this profile. You can filter to view DEP available devices:
+  - **unassigned**
+  - **any**
+  - **&lt;DEP profile name&gt;**
+
+  ![Screenshot of Assign button for assigning DEP profile in the Intune portal](media/dep-profile-assignment.png)
+
+5. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a DEP profile.
+
 ## Distribute devices to users
 
-You can now distribute corporate-owned devices to users. When an iOS device is turned on, it will be enrolled for management by Intune.
+You can now distribute corporate-owned devices to users. When an iOS DEP device is turned on, it will be enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset.
 
-
-## How users install and use the Company Portal on their devices
+### How users install and use the Company Portal on their devices
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
 
@@ -162,7 +177,7 @@ Devices that are configured with user affinity can install and run the Company P
 
 1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
 
-2. During setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install the Company Portal. They can also provide the ID from the iOS settings menu after setup is finished.
+2. During setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install the Company Portal. They can also provide their Apple ID in the iOS settings menu after setup is finished.
 
 3. After completing setup, users must install the Company Portal app from the App Store.
 

@@ -35,6 +35,7 @@ description: Learn to use Microsoft Intune.
                             </div>
                         </li>
                         <li>
+                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -44,14 +45,16 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune in the Azure portal preview</a></h3>
+                                            <h3>Intune in the Azure portal preview</h3>
                                             <p>As Microsoft Intune moves to the Azure portal, learn about the changes available in the new portal. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                        <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -61,14 +64,16 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/plan-design/introduction">Deployment planning and design</a></h3>
+                                            <h3>Deployment planning and design</h3>
                                             <p>Step through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -78,14 +83,16 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">How to educate your end users about Microsoft Intune</a></h3>
-                                            <p>Learn how you can get your end users to embrace the secured access that Intune provides.</p>
+                                            <h3>What is Intune for Education?</h3>
+                                            <p>Learn how to accomplish everyday things you need to do with devices in classrooms.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -95,14 +102,16 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">Work with Intune in Microsoft Graph</a></h3>
+                                            <h3>Work with Intune in Microsoft Graph</h3>
                                             <p>Use the Microsoft Graph APIs to configure Intune controls and policies.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -112,14 +121,16 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a></h3>
+                                            <h3>150+ licenses? Leverage your FastTrack benefits</h3>
                                             <p>Work with Microsoft specialists to access, remediate, enable, and drive usage of your services.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -129,12 +140,13 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/mam-faq">FAQ about MAM and app protection</a></h3>
+                                            <h3>FAQ about MAM and app protection</h3>
                                             <p>Find answers to some frequently asked questions on Intune mobile app management and Intune app protection.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
 <!--                        <li>
                             <div class="cardSize">
@@ -236,18 +248,18 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
-                            <div class="cardSize">
+                            <a href="/intune-education/what-is-intune-for-education">
+                           <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Mobile device management in Microsoft Intune</h3>
-                                            <p>Evaluate how mobile device management works in Intune.</p>
+                                            <h3>What is Intune for Education?</h3>
+                                            <p>Learn how to accomplish everyday things you need to do with devices in classrooms.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +458,7 @@ description: Learn to use Microsoft Intune.
                     <a href="#manage-plan">Plan deployment</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -456,8 +468,8 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Determine goals, objectives, and challenges</h3>
-                                            <p>Scope the goals, objectives, and challenges you need to manage as you deploy.</p>
+                                            <h3>Supported devices and browsers</h3>
+                                            <p>Read details about the devices and browsers supported by the service.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -465,26 +477,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Identify use case scenarios</h3>
-                                            <p>Review some example use cases as you identify your deployment use case scenarios. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -494,8 +487,27 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Develop a rollout plan</h3>
-                                            <p>Determine the organizational groups that are targeted for your Intune rollout and the rollout timeframe for each group.</p>
+                                            <h3>Deployment planning, design, and implementation guide</h3>
+                                            <p>Develop a deployment plan, create a design, onboard Intune, and conduct a production rollout.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Migration guide</h3>
+                                            <p>Step you through the various details involved in migrating from a third-party MDM provider to Intune.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -956,7 +968,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

@@ -46,7 +46,7 @@ Here’s an example on how you could communicate migration to your organization:
     -   [Download E-mail \#2 template to use in your organization.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **Email \#3:** Giving users timeline before access is impacted. Again, remind users of benefits and strategic reasons for migration. Email timing should have sliding window to match pipelining of phases. E.g. in June send email \#1 to Phase users, email \#2 to phase 2 users and email \#1 to Phase 3 users.
+-   **Email \#3:** Giving users timeline before access is impacted. Again, remind users of benefits and strategic reasons for migration. Email timing should have sliding window to match pipelining of phases. E.g. in June send email \#1 to Phase 1 users, email \#2 to phase 2 users and email \#1 to Phase 3 users.
 
     -   [Download E-mail \#3 template to use in your organization.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
@@ -58,7 +58,7 @@ After a certain period, you can begin enforcing compliance through conditional a
 
 Intune has additional template resources to promote device enrollment to end-users:
 
--   Refer to [What to tell your end users about using Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) for further guidance on enrollment steps per mobile OS platform
+-   Refer to [What to tell your end users about using Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) for further guidance on enrollment steps per mobile OS platform
 
 -   Download a customizable, [end-user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 

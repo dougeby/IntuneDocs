@@ -39,7 +39,7 @@ The Intune Company Portal provides users with access to company data and apps. T
 , and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **The Company Portal website**: A website that lets end users do most of the tasks they can do from the Company Portal app. The Intune Company Portal URL is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
+- **The Company Portal website**: A website that lets end users do most of the tasks they can do from the Company Portal app. The Intune Company Portal URL is [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
@@ -86,7 +86,7 @@ You can customize your Company Portal with your company logo, company name, them
     |----------|----------------|
     |Theme color|Select a theme color to apply to the Company Portal.|
     |Include company logo|When you enable this option, you can upload your company logo to show in your Company Portal. You can upload two logos: one logo that is displayed when the Company Portal background is white, and one logo that is displayed when the Company Portal background uses your selected theme color. Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.|
-    |Choose a background for [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Company Portal app|This setting affects the background for the [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] Company Portal app only.|
+    |Choose a background for Windows 8 Company Portal app|This setting affects the background for the Windows 8 Company Portal app only.|
 
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the Company Portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the Company Portal.

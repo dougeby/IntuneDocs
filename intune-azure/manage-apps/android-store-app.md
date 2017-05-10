@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,4 +52,4 @@ ms.custom: intune-azure
 	- **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 8. When you are done, on the **Add App** blade, choose **Save**.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](deploy-apps.md).

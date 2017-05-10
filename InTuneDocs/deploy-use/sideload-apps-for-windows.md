@@ -41,7 +41,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
    Join the [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) using corporate account information when logging in to purchase your company account. This request will need to be authorized by a company officer before you receive a code-signing certificate.
 
 2. **Get a company Symantec certificate**<br>
-  Purchase a certificate from the [Symantec website](http://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated in your Windows Phone Dev Center account will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
+  Purchase a certificate from the [Symantec website](http://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated in your Windows Phone Dev Center account will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
 
 3.  **Import certificates**<br>
     Once the request has been approved, you will receive an email containing instructions for importing certificates. Follow the instructions in the email to import the certificates.
@@ -61,7 +61,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
 6.  **Upload the app to Intune**<br>
     Upload the signed app file and your code-signing certificate to make the app available to your end users.
 
-    1.  In the [Intune administration console](http://manage.microsoft.com) click **Administration** &gt; **Windows Phone**.
+    1.  In the [Intune administration console](https://manage.microsoft.com) click **Administration** &gt; **Windows Phone**.
 
     2.  Click the **Upload Signed App File** and sign in with your Intune Administrator ID.
 

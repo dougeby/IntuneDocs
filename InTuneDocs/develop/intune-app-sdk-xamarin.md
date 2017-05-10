@@ -68,9 +68,9 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 2. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
 
-3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) and extract it. Both files downloaded from step 1 and step 2 should be in the same directory level.
+3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
 
-4.	In the command line as an administrator, run `Xamain.Component.exe install <.xam> file`.
+4.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
 
 5.	In Visual Studio, right click **components** in your previously created Xamarin project.
 

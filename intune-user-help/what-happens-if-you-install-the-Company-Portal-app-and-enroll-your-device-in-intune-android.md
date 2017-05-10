@@ -1,17 +1,20 @@
 ---
 # required metadata
 
-title: Installing the Company Portal app for Android | Microsoft Docs
+title: Installing the Company Portal app for Android
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 03/33/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69searchScope: - User help
+ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+searchScope:
+ - User help
 
 # optional metadata
 

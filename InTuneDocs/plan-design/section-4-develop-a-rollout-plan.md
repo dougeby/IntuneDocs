@@ -74,7 +74,7 @@ This is known as "white glove" approach, which an IT team member would assist th
 
 ### IT tech fair
 
-Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group would setup an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions and get assistance with the enrollment process. Leveraging this option can be beneficial for both IT group and the user, especially during early phases of Intune rollout.
+Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group would set up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions and get assistance with the enrollment process. Leveraging this option can be beneficial for both IT group and the user, especially during early phases of Intune rollout.
 
 Here’s an example of an Intune rollout plan with targeted groups, timelines and enrollment approaches:
 

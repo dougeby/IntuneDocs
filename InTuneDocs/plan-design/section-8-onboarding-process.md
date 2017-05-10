@@ -66,7 +66,7 @@ Here's an overview of each task when implementing Intune.
 
 As identified in the previous requirements section, an EMS or Intune subscription is required. If your organization does not have an EMS or Intune subscription, please contact Microsoft or your Microsoft Account Team regarding your interest in purchasing Enterprise Mobility + Security (EMS) or Intune.
 
--   Learn more about [how to buy Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   Learn more about [how to buy Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### Task 2: Add Office 365 subscription
 
@@ -88,7 +88,7 @@ All users that will be targeted for EMS/Intune and Office 365 rollout will need 
 
 #### Task 5: Set Mobile Device Management Authority to Intune
 
-Before you can begin to setup, configure, manage and enroll devices using Intune, you must set the Device Management Authority to Intune. Setting the Device Management Authority task is completed in the Intune Admin Portal, Admin workspace.
+Before you can begin to set up, configure, manage and enroll devices using Intune, you must set the Device Management Authority to Intune. Setting the Device Management Authority task is completed in the Intune Admin Portal, Admin workspace.
 
 -   Learn more about [how to set the Device Management Authority](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
 
@@ -120,7 +120,7 @@ Microsoft Intune supports Email, Wi-Fi and VPN profiles. Adding and deploying pr
 
 Microsoft Intune supports the deployment of Web, LOB and Public Store Apps. In addition, managing apps that have integrated the Intune SDK by associated them with MAM policies is supported. Adding and deploying apps are completed in the Intune Admin Portal, App workspace. Adding MAM policies are completed in the Intune Admin Portal, Policy workspace. Add apps as appropriate and deploy to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [add and deploy applications](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   Learn more about [add and deploy applications](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### Task 11: Add and deploy compliance policies
 

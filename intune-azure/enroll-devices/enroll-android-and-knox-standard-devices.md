@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune enables you to manage Android devices, including Samsung Knox Standard devices. To enable device management, your users must enroll their devices by downloading the Intune Company Portal app, which is available from Google Play, and then opening the app and following the prompts to enroll. Once Android devices are under management, you can [create compliance policies](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android), [manage apps](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management), and more.
+Intune enables you to manage Android devices, including Samsung Knox Standard devices. To enable device management, your users must enroll their devices by downloading the Intune Company Portal app, which is available from Google Play, and then opening the app and following the prompts to enroll. Once Android devices are under management, you can [create compliance policies](../set-device-compliance/create-a-compliance-policy-for-android.md), [manage apps](../manage-apps/what-is-app-management.md), and more.
+
+Devices that run Samsung KNOX Standard, are now supported for multi-user management by Intune. This means that end users can sign in and out of the device with their Azure AD credentials, the device is centrally managed whether it’s in use or not. When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
 
 ## Prerequisite
 
@@ -40,9 +42,9 @@ You must set the MDM authority to **Microsoft Intune** to prepare to manage mobi
 
 By default, Intune already allows enrollment of Android and Samsung Knox Standard devices.
 
-To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions).
 
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
+To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](set-enrollment-restrictions.md#set-device-limit-restrictions).
 
 ## Tell your users how to enroll their devices to access company resources
 

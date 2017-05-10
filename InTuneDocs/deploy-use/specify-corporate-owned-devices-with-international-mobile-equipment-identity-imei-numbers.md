@@ -31,9 +31,9 @@ ms.custom: intune-classic
 
 Microsoft Intune lets admins import international mobile equipment identity (IMEI) numbers for mobile device platforms by using IMEI numbers to help identify corporate-owned mobile devices. After devices are enrolled in Intune, you can see devices that have imported IMEI numbers under **Groups** > **Overview** > **All Devices**. **Device group** lists devices that have imported IMEI numbers as **Corporate** in the **Ownership** column.
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)**, and then choose **Add devices…**. You can add devices in two ways:
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)**, and then choose **Add devices…**. You can add devices in two ways:
 
-    -   **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file. The details field is limited to 128 characters.
+    -   **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file. The details field is limited to 128 characters. 
 
         |||
         |-|-|
@@ -42,8 +42,8 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
         This .csv file when viewed in a text editor appears as:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Manually add device details** - Enter the IMEI number and device details of up to 15 devices.
