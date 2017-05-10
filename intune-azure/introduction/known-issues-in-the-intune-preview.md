@@ -46,11 +46,11 @@ When you migrate from classic Intune to the Azure Portal, you might see a new gr
 
 In preparation for migration, your groups are copied from Intune to Azure AD. Any further changes you make in the classic Intune portal will be updated in the Azure AD group. However, any changes made in Azure AD will not be synchronized back to the classic Intune console. This might result in your migration to the Azure portal failing, and delays to your migration.
 
-### Compliance policies from Intune will not show up in new console 
+### Compliance policies from Intune will not show up in new console
 
 Any compliance policies you created in the classic Intune portal are migrated, but are not displayed in the Azure portal. This is because of design change in the Azure portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic portal.
 Additionally, new compliance policies you create in the Azure portal will not be visible in the classic portal.
-For more information, see [What is device compliance](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance).
+For more information, see [What is device compliance](../set-device-compliance/what-is-device-compliance.md).
 
 
 
@@ -61,3 +61,6 @@ Global Admins (also referred to as Tenant Admins) can continue to do day-to-day 
 
 ### Apple enrollment profile migration
 In the next few months, Intune will enable managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload an updated token, the original token will be restored in the new Azure Portal as part of migrating your Intune account. To remove this token and prevent DEP enrollment, simply delete the token in the Azure Portal. 
+
+### RBAC for
+Tenant or Service Administrator Azure AD roles are required to perform Apple DEP and Apple Configurator enrollment tasks despite RBAC permissions being listed and available under the custom User role. RBAC role support for these features will be announced in the future.

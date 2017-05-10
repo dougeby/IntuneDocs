@@ -46,7 +46,7 @@ Complete the following prerequisites before setting up iOS device enrollment:
 - [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Set the MDM Authority](set-mdm-authority.md)
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
+- [Configure the Company Portal](../manage-apps/company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
 - Ensure that you have physical access to iOS devices
@@ -72,7 +72,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 6. For **User Affinity**, choose whether devices with this profile will enroll with or without user affinity.
 
-   - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. User affinity should be set up for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps.
+   - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. User affinity should be set up for managed devices that belong to users and that need to use the company portal for services like installing apps.
 
    - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 

@@ -470,4 +470,4 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 --->
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune-azure/introduction/how-to-get-support-for-microsoft-intune).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](../introduction/how-to-get-support-for-microsoft-intune.md).

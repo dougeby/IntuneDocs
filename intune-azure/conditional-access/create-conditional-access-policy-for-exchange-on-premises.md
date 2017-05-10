@@ -40,7 +40,7 @@ Before you can configure conditional access, verify the following:
 
 - Your Exchange version must be **Exchange 2010 SP1 or later**. Exchange server Client Access Server (CAS) array is supported.
 
-- You must use the [Exchange Active Sync on-premises Exchange connector](https://docs.microsoft.com/intune-azure/conditional-access/install-intune-on-premises-exchange-connector), which connects Intune to on-premises Exchange.
+- You must use the [Exchange Active Sync on-premises Exchange connector](install-intune-on-premises-exchange-connector.md), which connects Intune to on-premises Exchange.
 
 	>[!IMPORTANT]
 	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed **on only one machine**.

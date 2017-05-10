@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 If you are new to Intune in the Azure portal, remember that you no longer create groups for Intune. Intune uses Azure AD groups just like many other applications that you use.
 
-To learn more about using groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
+To learn more about using groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).
 
 To manage groups in the [Azure portal](https://portal.azure.com), search for **Intune**, choose **Manage users**, and you are taken to the **Users and groups** workload where you can perform the following actions:
 
@@ -47,4 +47,4 @@ To manage groups in the [Azure portal](https://portal.azure.com), search for **I
 
 ## Next step
 
-[Get started with groups](/intune-azure/manage-users/get-started-with-groups)
+[Get started with groups](../manage-users/get-started-with-groups.md)
