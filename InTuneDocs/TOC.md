@@ -57,7 +57,7 @@
 
 # [What's new](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new in app UI](whats-new/whats-new-in-intune-app-ui.md)
-## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [What's new in the Azure preview](/intune-azure/whats-new?toc=/intune/toc.json)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use

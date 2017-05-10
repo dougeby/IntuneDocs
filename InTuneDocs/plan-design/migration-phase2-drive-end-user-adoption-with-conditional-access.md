@@ -57,7 +57,7 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 > [!TIP]
 > This is one approach among many. You may choose a simpler process that defers all conditional access until after every phase has been instructed to enroll, or a stricter process that enforces conditional access from the very beginning and requires full compliance for all access.
 
--   Learn more about [conditional access](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access).
+-   Learn more about [conditional access](https://docs.microsoft.com/intune-azure/conditional-access).
 
 ## Task list for conditional access
 
