@@ -35,7 +35,7 @@ ms.custom: intune-classic
 
 
 ## Overview
-The [Intune App SDK Xamarin component]/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
+The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune app protection policy](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
 
 You will find that you can enable SDK features without changing your app’s behavior. Once you've built the component into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune Mobile Application Management (MAM) supporting a variety of data protection features.
 
@@ -112,7 +112,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 You have completed the steps necessary to build the component into your Xamarin-based iOS app. If you are utilizing Xcode for building your project, you can use the `Intune App SDK Settings.bundle`. This will allow you to toggle Intune policy settings on and off as you build your project to test and debug. To take advantage of this bundle, follow the steps in the [Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md) and read the section on [debugging in Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications).
 
 ## Enabling MAM in your Android mobile app
-For Xamarin-based Android apps not using a UI framework, you will need to read and follow the [Intune App SDK for Android Developer Guide]. For your Xamarin-based Android app, you will need to replace class, methods, and activities with their MAM equivalent based on the [table](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) included in the guide. If your app doesn’t define an `android.app.Application` class, you will need to create one and ensure that you inherit from `MAMApplication`.
+For Xamarin-based Android apps not using a UI framework, you will need to read and follow the [Intune App SDK for Android Developer Guide]. For your Xamarin-based Android app, you will need to replace class, methods, and activities with their MAM equivalent based on the [table](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you will need to create one and ensure that you inherit from `MAMApplication`.
 
 For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.Remapper`. The tool will accomplish the class replacement for you. However, you will need to do the following steps:
 
