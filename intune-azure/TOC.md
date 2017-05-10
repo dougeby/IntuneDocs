@@ -86,6 +86,7 @@
 #### [Windows Phone LOB apps](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows store apps](manage-apps/windows-store-app.md)
 #### [Windows LOB apps](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work apps](/manage-apps/android-for-work-apps.md)
 ### [Assign apps](manage-apps/deploy-apps.md)
 ### [Monitor apps](manage-apps/monitor-apps.md)
 ### [Use app configuration profiles](manage-apps/app-configuration-policies.md)
