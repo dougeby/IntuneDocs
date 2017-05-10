@@ -1,6 +1,6 @@
 # Introduction
 ## [What is the Azure portal preview?](what-is-intune.md)
-## [What is Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
+## [What is Intune for Education?](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 ## [Intune features in Azure](ui-changes.md)
 ## Get started
 <!---(get-started.md) --->
@@ -14,17 +14,17 @@
 
 ## [Get started](plan-and-design/get-started.md) --->
 
-# [Plan and design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
-## [Section 1: Determine deployment goals, objectives and challenges](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=%2fintune-azure%2ftoc.json)
-## [Section 2: Identify use case scenarios](/intune/plan-design/section-2-identify-use-case-scenarios?toc=%2fintune-azure%2ftoc.json)
-## [Section 3: Determine use case scenario requirements](/intune/plan-design/section-3-determine-use-case-requirements?toc=%2fintune-azure%2ftoc.json)
-## [Section 4: Develop a rollout plan](/intune/plan-design/section-4-develop-a-rollout-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 5: Develop a communication plan](/intune/plan-design/section-5-develop-a-rollout-communication-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 6: Develop a support plan](/intune/plan-design/section-6-develop-a-support-plan?toc=%2fintune-azure%2ftoc.json)
-## [Section 7: Create an Intune design](/intune/plan-design/section-7-create-an-intune-design?toc=%2fintune-azure%2ftoc.json)
-## [Section 8: Intune implementation](/intune/plan-design/section-8-onboarding-process?toc=%2fintune-azure%2ftoc.json)
-## [Section 9: Testing and validation](/intune/plan-design/section-9-test-and-validation?toc=%2fintune-azure%2ftoc.json)
-## [Additional resources](/intune/plan-design/additional-resources?toc=%2fintune-azure%2ftoc.json)
+# [Plan and design](/intune-classic/plan-design/introduction?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 1: Determine deployment goals, objectives and challenges](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 2: Identify use case scenarios](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 3: Determine use case scenario requirements](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 4: Develop a rollout plan](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 5: Develop a communication plan](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 6: Develop a support plan](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 7: Create an Intune design](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 8: Intune implementation](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Section 9: Testing and validation](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Additional resources](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 
 # Enroll devices
 ## [What is device enrollment?](device-enrollment.md)
@@ -34,7 +34,7 @@
 ### [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 ### [Choose how to enroll iOS devices](enrollment-method-choose-ios.md)
 ## How to
-### [Assign licenses to users](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
+### [Assign licenses to users](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 ### [Enroll Android devices](android-knox-standard-enroll.md)
 ### Enroll iOS devices
 #### [Apple Configurator - Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
@@ -207,8 +207,8 @@
 ## [What is role-based access control?](role-based-access-control.md)
 
 # Develop and customize
-## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=%2fintune-azure%2ftoc.json)
-### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
-### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
-## [Intune App SDK](/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json)
+## [Intune App Wrapping Tool](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+### [App Wrapping Tool for iOS](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+### [App Wrapping Tool for Android](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Intune App SDK](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
