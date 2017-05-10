@@ -609,21 +609,21 @@
 		"redirect_document_id": true
 	}
   ,
-  {
+	{
     "source_path": "InTuneDocs/get-started/windows-pc-management-capabilities-in-microsoft-intune",
     "redirect_url": "https://docs.microsoft.com/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune",
     "redirect_document_id": true
-  },
+	},
   	{
 		"source_path": "intune-azure/access-control/role-based-access-control.md",
 		"redirect_url": "/intune/role-based-access-control",
 		"redirect_document_id": true
-	},,
+	},
 	{
 		"source_path": "intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises.md",
 		"redirect_url": "/intune/conditional-access-exchange-create",
 		"redirect_document_id": true
-	},,
+	},
 	{
 		"source_path": "intune-azure/conditional-access/install-intune-on-premises-exchange-connector.md",
 		"redirect_url": "/intune/exchange-connector-install",
