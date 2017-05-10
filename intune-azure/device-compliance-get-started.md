@@ -80,6 +80,6 @@ Compliance status validity period
 
 [Create a compliance policy for Android for work](compliance-policy-create-android-for-work.md)
 
-[Create a compliance policy for iOS](create-a-compliance-policy-for-ios.md)
+[Create a compliance policy for iOS](compliance-policy-create-ios.md)
 
 [Create a compliance policy for Windows](compliance-policy-create-windows.md)

@@ -54,7 +54,7 @@
 <!--- ## [Troubleshoot](troubleshooting.md) --->
 
 # Devices and groups
-## [What is device management?](what-is.md)
+## [What is device management?](device-management.md)
 <!--- ## [Get started](get-started.md) --->
 <!--- ## [Plan and design](plan-and-design.md) --->
 ## How to
@@ -188,7 +188,7 @@
 ## How to
 ### [Create Android compliance policy](compliance-policy-create-android.md)
 ### [Create Android for Work compliance policy](compliance-policy-create-android-for-work.md)
-### [Create iOS compliance policy](create-a-compliance-policy-for-ios.md)
+### [Create iOS compliance policy](compliance-policy-create-ios.md)
 ### [Create Windows compliance policy](compliance-policy-create-windows.md)
 <!---### [Create Actions for noncompliance](actions-for-noncompliance.md)--->
 ### [Monitor device compliance](compliance-policy-monitor.md)

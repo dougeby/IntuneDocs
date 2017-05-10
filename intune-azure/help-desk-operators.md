@@ -45,7 +45,7 @@ For more information about Intune roles, see [Intune roles (RBAC)](role-based-ac
 Help desk staff and Intune administrators can access the troubleshooting portal in two ways:
 - In the [Azure portal](https://portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**, and then in the left navigation blade, select **Troubleshoot**. Other workloads are visible in the left navigation blade, but unavailable.
 
-![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-operators-user.png)
+![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
 - Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser. Only the Troubleshoot portal is visible.
 
 ## Use the troubleshooting portal
