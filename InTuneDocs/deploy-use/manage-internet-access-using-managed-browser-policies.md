@@ -4,7 +4,8 @@
 title: Manage web access with the managed browser | Microsoft Docs
 description: Deploy the managed browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 05/10/2017
 ms.topic: article
@@ -34,7 +35,7 @@ The managed browser is a web browsing application that you can deploy in your or
 Because this app has integration with the Intune SDK, you can also apply app protection policies to it. These policies might include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 >[!IMPORTANT]
->The Managed Browser app only retrieves and applies Intune app protection policies when another app on the device has retrieved an app protection policy. 
+>The Managed Browser app only retrieves and applies Intune app protection policies when another app on the device has retrieved an app protection policy.<br><br> 
 >Additionally, if users install the managed browser from the app store and Intune does not manage it, the following behavior applies:<br /><br />
 **iOS** – The managed browser app can be used as a basic web browser, but some features will not be available, and it will not be able to access data from other Intune-managed apps.<br />
 **Android** – The managed browser app cannot be used.<br /><br />
