@@ -148,7 +148,7 @@ iOS devices are connected to the Mac computer and enrolled for mobile device man
 
 2. In the preferences pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 
-3. Enter the **Name** and **Enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
+3. Enter the **Hostname or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
 
    You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 
