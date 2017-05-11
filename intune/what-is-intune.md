@@ -39,6 +39,8 @@ All Intune functionality will eventually move to Azure, but you can perform many
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
 > We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration.
+>
+> Intune accounts created before January 2017 will require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
