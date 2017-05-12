@@ -82,7 +82,7 @@ If you are looking for information about other platforms, select one of the foll
   - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as non-compliant.
   - **High:** This is the least secure. Essentially, this allows all threat levels, and perhaps only useful if you using this solution only for reporting purposes.
 
-  For more details, see [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md).
+  For more details, see [Create device compliance policy](create-lookout-device-compliance-policy.md).
 
 ## Device property settings
 - **Minimum OS required:** When a device does not meet the minimum operating system (OS) version requirement, it is reported as noncompliant.
