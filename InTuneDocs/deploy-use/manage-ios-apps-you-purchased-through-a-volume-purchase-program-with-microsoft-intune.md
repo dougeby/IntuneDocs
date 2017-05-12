@@ -6,7 +6,7 @@ description: Use Intune to manage apps that you volume purchased from Apple by i
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 04/23/2017
+ms.date: 05/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,8 +43,7 @@ You purchase multiple licenses for iOS apps through the [Apple Volume Purchase P
 ## Before you start
 Before you start, you'll need to get a VPP token from Apple and upload this to your Intune account. Additionally, you should understand the following:
 
-* Each organization can have only one VPP account and token.
-* After you associate an Apple VPP account to Intune, you cannot associate a different account later. For this reason, it's very important that more than one person has the details of the account that you use.
+* Intune supports adding up to 256 VPP tokens.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
