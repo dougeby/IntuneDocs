@@ -51,6 +51,8 @@ Complete these steps to create terms and conditions. The display name and descri
 
 5. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
 
+   ![Screenshot of end user terms and conditions acceptance screen with summary of terms](./media/terms-summary-create.png)
+
    - **Title**: The title that users see in the Company Portal.
 
    - **Summary of Terms**: Text that explains what it means if users accept the terms. Eg "By enrolling your device, you are agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
@@ -58,7 +60,6 @@ Complete these steps to create terms and conditions. The display name and descri
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
 
 6. Select **Ok** and then select **Create**.
-
 
 ## Assign terms and conditions
 
@@ -74,6 +75,8 @@ You can assign terms and conditions to groups of user who must accept them befor
 4. Click the **Select Group** button and in the **Select Groups** blade, select the groups you want to assign the terms, and then click **Select**.
 
 5. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal.
+
+   ![Screenshot of end user terms and conditions acceptance screen with summary of terms](./media/terms-summary-accept.png)
 
 ## Monitor a terms and conditions
 
