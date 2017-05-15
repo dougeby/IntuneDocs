@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Manage transferring data between iOS apps |Intune Azure previewtitleSuffix: "Intune Azure preview"
+title: Manage transferring data between iOS apps |Intune Azure preview
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to understand how you can use the iOS Open-in feature and mobile app management policies to manage data transfers between apps."
 keywords:
 author: NathBarn
@@ -38,7 +39,7 @@ The **Open in management** feature for iOS devices can limit file transfers betw
 ##  Using app protection with iOS apps
 App protection policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
 
--   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only managed apps**. When the end user opens a protected file in an app that is not policy-managed, the file is unreadable.
+-   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only managed apps**. The end user will be unable to open the protected file in an app that is not policy-managed.
 
 -   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with app protection policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
 

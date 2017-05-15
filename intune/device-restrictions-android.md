@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 05/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,7 +61,7 @@ ms.custom: intune-azure
 |**Required password type**|Specifies the password complexity level that's required and whether biometric devices can be used. Choose from:<br><br>    -     **Device default**<br>-     **Low security biometric**<br>    -     **At least numeric**<br>    -     **Numeric complex** (repeating, or consecutive numbers like '1111' or '1234' are not allowed)<sup>1</sup><br>    -     **At least alphabetic**<br>    -     **At least alphanumeric**<br>    -     **At least alphanumeric with symbols**|Yes|Yes|
 |**Prevent reuse of previous passwords**|Stops the end user from creating a password they have used before.|Yes|Yes|
 |**Fingerprint unlock**|Allows the use of a fingerprint to unlock supported devices.|No|Yes|
-|**Smart Lock and other trust agents**|Lets you control the Smart Lock feature on compatible Android devices (Samsung KNOX Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes (5.0 and later)|No|
+|**Smart Lock and other trust agents**|Lets you control the Smart Lock feature on compatible Android devices (Samsung KNOX Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes (5.0 and later)|Yes|
 |**Encryption**|Requires that files on the device are encrypted.|Yes|Yes|
 
 <sup>1</sup>Before you assign this setting to devices, ensure that the Company Portal app has been updated to the latest version on the targeted devices.
