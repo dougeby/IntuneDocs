@@ -100,7 +100,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	**If the Servicing branch is set to CBB and the defferal period is 30 days**: Let's say the Feature Update X is first publically available on Windows Update as a CB in January. Four months later, in April, Feature Update X is released to CBB. The device will receive the Feature Update 30 days following this CBB release and will update in May.
 
-	- **Delivery optimization** - Choose the method for which devices will download Windows updates. For details, see [DeliveryOptimization/DEDownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
+	- **Delivery optimization** - Choose the method for which devices will download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Once you are done, click **OK**, and then on the **Create Update Ring** blade, click **Create**.
 
 The new update ring is displayed in the list of update rings.
@@ -124,7 +124,7 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 - **Setting Name**: Windows Analytics Commercial ID
 - **Setting Description**: Configuring commercial id for Windows Analytics solutions
 - **Data Type**: String
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/"MS DM Server"/CommercialID
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
 ![Windows setting for diagnostic and usage data](./media/commID.png)
