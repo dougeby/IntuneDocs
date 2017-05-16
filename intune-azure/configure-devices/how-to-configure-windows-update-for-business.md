@@ -124,7 +124,7 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 - **Setting Name**: Windows Analytics Commercial ID
 - **Setting Description**: Configuring commercial id for Windows Analytics solutions
 - **Data Type**: String
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/"MS DM Server"/CommercialID
+- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
 ![Windows setting for diagnostic and usage data](./media/commID.png)
