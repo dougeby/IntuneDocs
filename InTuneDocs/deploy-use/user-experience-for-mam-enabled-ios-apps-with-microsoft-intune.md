@@ -4,10 +4,10 @@
 title: iOS apps with app protection policies | Microsoft Docs
 description: This topic describes what to expect when your iOS app is managed by app protection policies.
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 03/06/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,11 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
- This topic describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
+ This topic describes the user experience when using apps with app protection policies applied to. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive for business location.
 
 ##  Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that app protection polices can be applied to the app. 
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection polices can be applied to the app. 
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -45,9 +45,13 @@ For devices that are **enrolled for management in Intune**, the user sees a mess
 
 ##  Use apps with multi-identity support
 
-App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
+Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while app protection policies are applied only when the apps are used in the work context.  
 
- For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, the user is prompted for a pin when they type in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, the user is prompted for a pin when they access documents that are stored in the company OneDrive for Business location.
+For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, the user is prompted for a pin when they type in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, the user is prompted for a pin when they access documents that are stored in the company OneDrive for Business location.
+
+- Learn more about the apps that support [MAM and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
+
+App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
 
 ##  Manage user accounts on the device
 

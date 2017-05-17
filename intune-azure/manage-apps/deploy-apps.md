@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 |Assign wrapped apps, or apps incorporating the Intune SDK (for app protection policies)|Yes|Yes|
 |Assign apps as Available|Yes|Yes|
 |Assign apps as Required|Yes|No|
-|Uninstall apps|Yes|Yes|
+|Uninstall apps|Yes|No|
 |End users install available apps from Company Portal app|Yes|No|
 |End users install available apps from web-based Company Portal|Yes|Yes|
 

@@ -39,6 +39,8 @@ All Intune functionality will eventually move to Azure, but you can perform many
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
 > We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration.
+>
+> Intune accounts created before January 2017 will require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
@@ -53,7 +55,7 @@ Highlights of the new experience include:
 - Azure Active Directory (AD) groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
 
-If you are looking for documentation for the classic Intune console, see [the Intune documentation library](https://docs.microsoft.com/en-us/intune/).
+If you are looking for documentation for the classic Intune console, see [the Intune documentation library](https://docs.microsoft.com/intune/).
 
 ## Before you start
 
@@ -79,34 +81,34 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 
 ### Introduction and get started
-This section contains information about [what's new](/intune-azure/introduction/whats-new), [known issues](/intune-azure/introduction/known-issues-in-the-intune-preview), [how to get support](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) and how to [get started with a free trial](/intune-azure/introduction/sign-up-free-trial-microsoft-intune) of Intune.
+This section contains information about [what's new](whats-new.md), [known issues](known-issues-in-the-intune-preview.md), [how to get support](how-to-get-support-for-microsoft-intune.md) and how to [get started with a free trial](sign-up-free-trial-microsoft-intune.md) of Intune.
 ### Plan and design
-Information to help you [plan and design](/intune-azure/plan-and-design/get-started) your Intune environment.
+Information to help you [plan and design](/intune/plan-and-design/introduction) your Intune environment.
 ### Device enrollment
-[How to get your devices managed by Intune](/intune-azure/enroll-devices/what-is).
+[How to get your devices managed by Intune](../enroll-devices/what-is.md).
 ### Device compliance
-[Define a compliance level for your devices, then report about any devices which are not compliant](/intune-azure/set-device-compliance/what-is-device-compliance).
+[Define a compliance level for your devices, then report about any devices which are not compliant](../set-device-compliance/what-is-device-compliance.md).
 ### Device configuration
-[Understand the profiles you can use to configure settings and features on devices you manage](/intune-azure/configure-devices/what-are-device-profiles).
+[Understand the profiles you can use to configure settings and features on devices you manage](../configure-devices/what-are-device-profiles.md).
 ### Devices
-[Get to know the devices you manage with inventory and reports](/intune-azure/manage-devices/what-is).
+[Get to know the devices you manage with inventory and reports](../manage-devices/what-is.md).
 ### Mobile apps
-[How to publish, manage, configure, and protect apps](/intune-azure/manage-apps/what-is-app-management).
+[How to publish, manage, configure, and protect apps](../manage-apps/what-is-app-management.md).
 ### Conditional access
-[Restrict access to Exchange services depending on conditions you specify](/intune-azure/conditional-access/what-is-conditional-access).
+[Restrict access to Exchange services depending on conditions you specify](../conditional-access/what-is-conditional-access.md).
 ### On-premises access
 [Configure access to Exchange ActiveSync, and Exchange on-premises](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### Users
-[Learn about the users of devices you manage and sort resources into groups](/intune-azure/manage-users/what-is).
+[Learn about the users of devices you manage and sort resources into groups](../manage-users/what-is.md).
 ### Groups
-[Learn about how you can use Azure Active Directory groups with Intune](/intune-azure/manage-users/get-started-with-groups)
+[Learn about how you can use Azure Active Directory groups with Intune](../manage-users/get-started-with-groups.md)
 ### Intune roles
-[Control who can perform various Intune actions, and who those actions apply to](/intune-azure/access-control/role-based-access-control). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
+[Control who can perform various Intune actions, and who those actions apply to](../access-control/role-based-access-control.md). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
 ### Software updates
-[Learn about how to configure software updates for Windows 10 devices](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
+[Learn about how to configure software updates for Windows 10 devices](../configure-devices/how-to-configure-windows-update-for-business.md).
 
 
 
 ## What's new?
 
-[Find out what's new in the preview release](/intune-azure/introduction/whats-new).
+[Find out what's new in the preview release](whats-new.md).

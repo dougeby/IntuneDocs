@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). More capabilities are coming soon.
+Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](../configure-devices/custom-for-macos.md). More capabilities are coming soon.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Set the MDM Authority](set-mdm-authority.md)
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
+- [Configure the Company Portal](../manage-apps/company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
 
@@ -47,9 +47,9 @@ Complete the following prerequisites before setting up macOS device enrollment:
 
 By default, Intune already allows enrollment of macOS devices.
 
-To block macOS devices from enrollment, see [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+To block macOS devices from enrollment, see [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions).
 
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
+To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](set-enrollment-restrictions.md#set-device-limit-restrictions).
 
 ## Tell your users how to enroll their devices to access company resources
 

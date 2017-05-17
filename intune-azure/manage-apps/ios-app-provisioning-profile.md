@@ -57,4 +57,4 @@ After the certificate expires, you must sign the app again with a new certificat
 
 ## Next steps
 
-Assign the profile to the required iOS devices. For more information, use the steps in [How to assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles).
+Assign the profile to the required iOS devices. For more information, use the steps in [How to assign device profiles](../configure-devices/how-to-assign-device-profiles.md).

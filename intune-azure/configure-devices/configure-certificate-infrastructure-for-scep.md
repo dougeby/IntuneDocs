@@ -1,11 +1,12 @@
 ---
-title: Configure and manage SCEP certificates with IntunetitleSuffix: "Intune Azure preview"
+title: Configure and manage SCEP certificates with Intune
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure, then create and assign Intune SCEP certificate profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +39,7 @@ This topic shows how to configure your infrastructure, then create and assign Si
 -  **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
 The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune Certificate Connector**: Use the Intune portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector.
+-  **Microsoft Intune Certificate Connector**: Use the Intune portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. 
 -  **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
@@ -311,6 +312,9 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 5.  Select **Enable Certificate Connector**.
 
 ##### To download, install and configure the certificate connector
+
+> [!NOTE]
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](https://docs.microsoft.com/intune/deploy-use/configure-certificate-infrastructure-for-scep#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.

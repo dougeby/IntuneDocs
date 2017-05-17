@@ -62,4 +62,4 @@ Before creating a Windows 10 app protection policy using, you need to enable mob
 
 ## Next steps
 
-[Create a WIP app protection policy](https://docs.microsoft.com/intune-azure/manage-apps/create-windows-information-protection-policy-with-intune)
+[Create a WIP app protection policy](https://docs.microsoft.comcreate-windows-information-protection-policy-with-intune.md)
