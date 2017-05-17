@@ -79,8 +79,8 @@ b. Choose the lock icon &gt;  **More information**.
 2.       Export the self-signed certificate.
 3. In a text editor, edit the exported certificate:
 
- - Delete ** -----BEGIN CERTIFICATE-----**
- - Delete ** -----END CERTIFICATE-----**
+ - Delete **-----BEGIN CERTIFICATE-----**
+ - Delete **-----END CERTIFICATE-----**
  
 Ensure all of the text is a single line
 
