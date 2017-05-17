@@ -77,7 +77,7 @@ You can now assign line of business (LOB) apps for [iOS](../manage-apps/ios-lob-
 
 - **Connections to AirPlay devices** - Controls which [AirPlay devices](../configure-devices/airplay-settings-for-ios-devices.md) (like Apple TV) that end users of iOS device can connect to.
 
-- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Available device actions](../manage-devices/what-is.md#available-device-actions)
+- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](../manage-devices/lost-mode.md)
 
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
@@ -127,7 +127,7 @@ We've added support for [multi-user management](../enroll-devices/enroll-windows
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
-A new [Fresh Start device action](../manage-devices/what-is.md#available-device-actions) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+A new [Fresh Start device action](../manage-devices/fresh-start.md) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
 
 ### Additional Windows 10 upgrade paths <!-- 903672 -->
 
