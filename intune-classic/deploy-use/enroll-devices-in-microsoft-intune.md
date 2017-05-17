@@ -4,7 +4,8 @@
 title: Enroll devices | Microsoft Docs
 description: Mobile device management (MDM) uses enrollment to bring devices into management and allow access to resources.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/10/2017
 ms.topic: article
@@ -133,4 +134,4 @@ Intune can manage the following device platforms:
 ## Next steps
 - [Prerequisites for device enrollment](prerequisites-for-enrollment.md)
 - [Manage corporate-owned devices](manage-corporate-owned-devices.md)
-- [Supported mobile  devices and computers](../get-started/supported-mobile-devices-and-computers.md)
+- [Supported mobile  devices and computers](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
