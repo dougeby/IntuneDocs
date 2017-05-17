@@ -1090,6 +1090,11 @@
 		"redirect_document_id": true
 	},
 	{
+		"source_path": "intune-azure/manage-apps/android-for-work-apps.md",
+		"redirect_url": "/intune/apps-add-android-for-work",
+		"redirect_document_id": true
+	},
+	{
 		"source_path": "intune-azure/manage-apps/android-lob-app.md",
 		"redirect_url": "/intune/lob-apps-android",
 		"redirect_document_id": true
