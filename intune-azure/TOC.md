@@ -173,35 +173,6 @@
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
 ### [Configure Windows Information Protection settings](configure-devices/how-to-configure-windows-information-protection.md)
-<<<<<<< HEAD
-<!--- ### [Configure iOS education settings](configure-devices/education-settings-for-ios.md) --->
-
-### [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
-#### [Android](configure-devices/custom-for-android.md)
-##### [Wi-Fi profile with a pre-shared key](configure-devices/wi-fi-profile-with-shared-key.md)
-##### [Per-app VPN profile](configure-devices/per-app-vpn-for-android-pulse-secure.md)
-##### [Allow/block apps for Samsung KNOX Standard](configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md)
-#### [iOS](configure-devices/custom-for-ios.md)
-#### [macOS](configure-devices/custom-for-macos.md)
-#### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
-#### [Windows 10](configure-devices/custom-for-windows-10.md)
-#### [Android for Work](configure-devices/custom-android-for-work.md)
-
-### [Assign device profiles](configure-devices/how-to-assign-device-profiles.md)
-### [Monitor device profiles](configure-devices/how-to-monitor-device-profiles.md)
-### [Set up a telecom expense management service](configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md)
-## [Troubleshoot](configure-devices/troubleshoot-device-profiles.md)
-
-# Set device compliance
-## [What is device compliance?](set-device-compliance/what-is-device-compliance.md)
-## [Get started](set-device-compliance/get-started-with-device-compliance.md)
-## How to
-### [Create Android compliance policy](set-device-compliance/create-a-compliance-policy-for-android.md)
-### [Create Android for Work compliance policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
-### [Create iOS compliance policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
-### [Create Windows compliance policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
-<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
-=======
 ### [Assign profiles](configure-devices/how-to-assign-device-profiles.md)
 ### [Monitor profiles](configure-devices/how-to-monitor-device-profiles.md)
 ### [Troubleshoot profiles](configure-devices/troubleshoot-device-profiles.md)
@@ -213,7 +184,6 @@
 ### [Create iOS policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Create Windows policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
 ### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)
->>>>>>> c1be86355fe9af0c73c991cc64d42e671c6ba8ab
 ### [Monitor device compliance](set-device-compliance/monitor-intune-device-compliance-policies.md)
 
 ## [Set up conditional access](conditional-access/what-is-conditional-access.md)
