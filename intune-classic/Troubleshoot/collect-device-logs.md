@@ -49,6 +49,8 @@ For more information about how your users can send you data logs, see the follow
 
 Users can send you enrollment errors, as described in [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios).
 
+Users can send device logs, as described in [Send iOS Device Logs](/intune-user-help/send-logs-to-your-it-admin-by-email-ios).
+
 ### Mac OS X logs
 
 1. Open the **Console** app.

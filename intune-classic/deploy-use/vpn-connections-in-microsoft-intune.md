@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -166,8 +166,8 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
 
 1. On the policy configuration page, find **On-demand rules for this VPN connection**. The columns are labeled **Match**, the condition that the rules check for, and **Action**, the action that the policy will trigger when the condition is matched.
 2. Choose **Add** to create a rule. There are two types of matches that you can set up in the rule. You can only configure one of these types per rule.
-  - **SSIDs**, which refer to wireless networks.
-  - **DNS search domains**, You can use full-qualified domain names such as *team. corp.contoso.com*, or use domains such as *contoso.com*, which is the equivalent of using * *.contoso.com*.
+  - **SSIDs** - which refer to wireless networks.
+  - **DNS search domains** - You can use full-qualified domain names such as *team. corp.contoso.com*, or use domains such as *contoso.com*, which is the equivalent of using * *.contoso.com*.
 3. Optional :provide a URL string probe, which is a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN will be established and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
 4. Choose one of these actions:
   - **Connect**
