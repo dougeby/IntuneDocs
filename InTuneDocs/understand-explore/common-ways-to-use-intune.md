@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/09/2016
+ms.date: 05/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -80,8 +80,8 @@ As an administrator, you can require users to access Office 365 from the Office 
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
-## Issue corporate-owned phones to your information workers
-Most information workers are mobile these days, making productivity on mobile devices an imperative to be competitive. These employees need seamless access to all corporate apps and data, at any time, wherever they are. You need to ensure that corporate data is secure and administrative costs are low.  
+## Issue corporate-owned phones to your employees
+Many employees are mobile these days, making productivity on mobile devices an imperative to be competitive. These employees need seamless access to all corporate apps and data, at any time, wherever they are. You need to ensure that corporate data is secure and administrative costs are low.  
 
 Intune offers [bulk provisioning and management solutions](/intune/deploy-use/manage-corporate-owned-devices) that are integrated with the major corporate device management platforms on the market today, including the Apple Device Enrollment Program and the Samsung KNOX mobile security platform. Centralized authoring of device configurations with Intune helps make provisioning of corporate devices something that can be highly automated.  
 
@@ -91,8 +91,8 @@ Then the employee launches the Intune Company Portal app to access the optional 
 
 <!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
-## Issue limited-use shared tablets to your task workers
-Task workers are increasingly making use of mobile technologies. For example, shared tablets are now commonly used by retail store employees.  Whether they're used to process a sale or instantly check inventory, tablets help create great customer interactions.
+## Issue limited-use shared tablets to your employees
+Employees are increasingly making use of mobile technologies. For example, shared tablets are now commonly used by retail store employees.  Whether they're used to process a sale or instantly check inventory, tablets help create great customer interactions.
 
 Simplicity of the user experience is critical in this case. For this reason, tablets are usually handed to employees in a limited-use mode, such that a single line-of-business app is the only thing that the employee can interact with. Intune enables you to bulk provision, secure, and centrally manage these shared [iOS](/intune/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) and [Android](/intune/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) tablets that can be configured to run in this limited-use mode.
 
