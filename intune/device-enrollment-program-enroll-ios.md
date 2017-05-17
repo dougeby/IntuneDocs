@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Enroll iOS devices - Device Enrollment ProgramtitleSuffix: "Intune Azure preview"
+title: Enroll iOS devices - Device Enrollment Program
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: nathbarn
@@ -38,7 +39,7 @@ This topic helps IT administrators enroll company-owned iOS devices purchased th
 
 **DEP Enrollment steps**
 1. [Get an Apple DEP token](#get-the-apple-dep-certificate)
-2. [Create a DEP profile](#create-anapple-dep-profile)
+2. [Create a DEP profile](#create-an-apple-dep-profile)
 3. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [Synchronize DEP-managed devices](#synchronize-dep-managed-devices)
 5. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)

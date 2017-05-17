@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune device enrollmenttitleSuffix: "Intune Azure preview"
+title: What is Microsoft Intune device enrollment
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn
@@ -61,7 +62,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No |	Yes |	No | [More information](#windows-enroll.md)|
+|**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 
 **Android enrollment methods**
@@ -70,7 +71,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](android-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-program-enroll-ios.md)|
-|[**Android for Work**](#android-for-work)| No | Yes | No| [More information](android-enroll.md) |
+|**Android for Work**| No | Yes | No| [More information](android-enroll.md) |
 
 
 ## BYOD
