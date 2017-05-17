@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Set the mobile device management authoritytitleSuffix: "Intune Azure preview"
+title: Set the mobile device management authority
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set the mobile device management authority in Intune. "
 keywords:
 author: nathbarn
@@ -33,7 +34,7 @@ The mobile device management (MDM) authority setting determines how you manage y
 
 Possible configurations are:
 
-- **Intune Standalone** - cloud-only management, which you configure by using the Azure portal. Includes the full set of capabilities that Intune offers. [Set the MDM authority in the Intune console](#mdm-authority-set-to-Intune).
+- **Intune Standalone** - cloud-only management, which you configure by using the Azure portal. Includes the full set of capabilities that Intune offers. [Set the MDM authority in the Intune console](#mdm-authority-set-to-intune).
 
 - **Intune Hybrid** - integration of the Intune cloud solution with System Center Configuration Manager. You configure Intune by using the Configuration Manager console. [Set the MDM authority in Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription).
 
