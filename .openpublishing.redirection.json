@@ -1031,7 +1031,7 @@
 	},
 	{
 		"source_path": "intune-azure/index.md",
-		"redirect_url": "/intune/index",
+		"redirect_url": "/intune/what-is-intune",
 		"redirect_document_id": true
 	},
 	{
