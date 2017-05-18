@@ -1510,7 +1510,7 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "InTuneDocs/deploy-use/deploy-apps-in-microsoft-intune.md",
+		"source_path": "intune/deploy-use/deploy-apps-in-microsoft-intune.md",
 		"redirect_url": "/intune-classic/deploy-use/deploy-apps-in-microsoft-intune",
 		"redirect_document_id": true
 	},
