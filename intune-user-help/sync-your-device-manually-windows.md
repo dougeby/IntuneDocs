@@ -77,7 +77,7 @@ There is more than one version of Windows 10, so there are two sets of steps. To
 
     ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-button.png)
 
-4. Choose the **Sync** button. Your device will be synched with Intune.
+4. Choose the **Sync** button. Your device will be synced with Intune.
 
 ### Steps to follow if you see Work access
 

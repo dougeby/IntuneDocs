@@ -2,12 +2,12 @@
 # required metadata
 
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
-description: Enroll a Windows 10 1607 device into Intune
+description: Enroll a Windows 10 1607 or higher device into Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,19 @@ ms.custom: intune-enduser
 
 # Enroll your Windows 10 device in Intune
 
+> [!NOTE]
+> Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
+1. Go to **Start**.
 
-2. Select **Accounts** > **Access work or school** > **Connect**.
+- If you are on a **Windows 10 desktop** device, go to the **Start menu**.
+- If you are on a **Windows 10 Mobile** device, go to the **Start screen** > **All Apps**.
+
+2.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
+
+3. Select **Accounts** > **Access work or school** > **Connect**.
 
     ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
