@@ -620,7 +620,7 @@
 	},
   	{
 		"source_path": "intune-azure/access-control/role-based-access-control.md",
-		"redirect_url": "/intune/role-based-access-control",
+		"redirect_url": "https://docs.microsoft.com/intune/role-based-access-control",
 		"redirect_document_id": true
 	},
 	{
