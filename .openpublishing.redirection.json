@@ -1030,16 +1030,6 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/includes/classic-portal.md",
-		"redirect_url": "/intune/classic-portal",
-		"redirect_document_id": true
-	},
-	{
-		"source_path": "intune-azure/includes/win10-automatic-enrollment-aad.md",
-		"redirect_url": "/intune/includes/win10-automatic-enrollment-aad",
-		"redirect_document_id": true
-	},
-	{
 		"source_path": "intune-azure/index.md",
 		"redirect_url": "/intune/index",
 		"redirect_document_id": true
@@ -2427,11 +2417,6 @@
 	{
 		"source_path": "intune/includes/accessibility9_md.md",
 		"redirect_url": "/intune-classic/includes/accessibility9_md",
-		"redirect_document_id": true
-	},
-	{
-		"source_path": "intune/includes/classic-portal.md",
-		"redirect_url": "/intune-classic/includes/classic-portal",
 		"redirect_document_id": true
 	},
 	{
