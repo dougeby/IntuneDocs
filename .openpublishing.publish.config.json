@@ -53,7 +53,7 @@
   "notification_subscribers": [
     ""
   ],
-  "branches_to_filter": [],
+  "branches_to_filter": ["live"],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
