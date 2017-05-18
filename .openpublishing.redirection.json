@@ -2440,11 +2440,6 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/includes/win10-automatic-enrollment-aad.md",
-		"redirect_url": "/intune-classic/includes/win10-automatic-enrollment-aad",
-		"redirect_document_id": true
-	},
-	{
 		"source_path": "intune/index.md",
 		"redirect_url": "/intune-classic/index",
 		"redirect_document_id": true
