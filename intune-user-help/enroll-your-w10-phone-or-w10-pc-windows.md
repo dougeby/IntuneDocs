@@ -7,19 +7,21 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3searchScope: - User help
+ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
+searchScope:
+ - User help
 
 # optional metadata
 
 ROBOTS:   
 #audience:
 #ms.devlang:
-ms.reviewer: jieyan
+ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -28,12 +30,11 @@ ms.custom: intune-enduser
 
 # Enroll your Windows 10 devices in Intune
 
-> [!NOTE]
-> Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
-
 Enrolling your devices into Microsoft Intune allows your Windows 10 devices to get access to your organization’s secure data, including email, files, and other resources. This is true for both Windows 10 desktop and Windows 10 Mobile devices. Enrolling your devices helps secure this access for both you and your organization, and helps keep your work data separate from your personal data.
 
 Want to know more? Find out what happens when you [enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and what that means for the [information on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+
+## Windows 10 Desktop devices
 
 1. Go to **Start**.
 
