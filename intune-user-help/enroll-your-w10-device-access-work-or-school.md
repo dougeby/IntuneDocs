@@ -38,9 +38,9 @@ ms.custom: intune-enduser
 1. Go to **Start**.
 
 - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
-- If you are on a **Windows 10 Mobile** device, go to the **Start screen** > **All Apps**.
+- If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
 
-2.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
+2.  Open the Windows **Settings** app by searching for "settings" in the search bar.
 
 3. Select **Accounts** > **Access work or school** > **Connect**.
 

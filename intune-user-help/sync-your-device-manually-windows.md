@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -95,8 +95,8 @@ There is more than one version of Windows 10, so there are two sets of steps. To
 
    The button becomes grayed out until the sync is finished.
 
-   ## Windows 10 Mobile
-   To manually sync your Windows 10 Mobile device to speed up a slow app installation:
+### Windows 10 Mobile
+To manually sync your Windows 10 Mobile device to speed up a slow app installation:
 
    1. Go to **All apps** > **Settings** > **Accounts**.
 
