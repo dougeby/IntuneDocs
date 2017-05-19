@@ -56,4 +56,4 @@ You need to log in to the Skycure Management Console to perform the next steps.
 
 ## Next steps
 
-[Add Skycure apps, Microsoft Authenticator app and the iOS configuration policy]/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+[Add Skycure apps, Microsoft Authenticator app and the iOS configuration policy](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)

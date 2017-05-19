@@ -111,7 +111,7 @@ In filtered group views, you can tailor what an IT admin can see based on the ad
 -   You want your IT admins to be able to deploy items only to specific users and devices
 -   You want your IT admins to see only the groups that are relevant to that admin
 
-You can configure filtered group views for service admins in the Intune admin console. For details, see [What to know before you start Microsoft Intune]/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+You can configure filtered group views for service admins in the Intune admin console. For details, see [What to know before you start Microsoft Intune](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
 
 After you set up filtered group views for a service admin, when the admin deploys software or policies, or runs reports, the admin can view and select only the groups that you specified. The admin also doesn't see status information on these pages of the admin console:
 

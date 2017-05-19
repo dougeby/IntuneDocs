@@ -47,4 +47,4 @@ This completes the setup of the Skycure and Intune integration in the Intune adm
 
 ## Next steps
 
-[Create Skycure Mobile Threat Defense compliance policy]/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
+[Create Skycure Mobile Threat Defense compliance policy](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

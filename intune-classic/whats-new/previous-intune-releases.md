@@ -38,7 +38,7 @@ This page is a list of announcements made in [What’s New in Microsoft Intune](
 __Improve the app provisioning profile update experience__
 Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app runs on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.
 
-The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid. For more information, see [Use iOS mobile provisioning profile policies to keep your line of business apps up to date]/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles).
+The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid. For more information, see [Use iOS mobile provisioning profile policies to keep your line of business apps up to date](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles).
 <!--- TFS 1280247--->
 
 __Xamarin SDK for Intune apps is available__
@@ -51,7 +51,7 @@ Intune increased the maximum configurable device enrollment limit from 5 to 15 d
 <!---TFS 1289896 --->
 
 __TeamViewer Integration for Windows PCs running the Intune client software__
-[TeamViewer]/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+[TeamViewer](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### Company Portal updates
@@ -62,7 +62,7 @@ When you are using conditional access, the enrollment steps for Windows 8.1, Win
 
 __Android__
 - **Android Company Portal app**<br/>
-If Android end users see an error message that says their device is missing a required certificate, they can tap a "How to resolve this" button to get [steps]/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains steps that IT administrators can use to fix the certificate issue.
+If Android end users see an error message that says their device is missing a required certificate, they can tap a "How to resolve this" button to get [steps](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains steps that IT administrators can use to fix the certificate issue.
 
 - **Restrict side-loaded app installations to enrolled devices**<br/>
 Android devices can no longer install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android.
@@ -74,11 +74,11 @@ To improve performance and scale, Intune no longer displays all Device Enrollmen
 
 The DEM user may perform actions on the local device, but remote management of other enrolled devices can only be performed from the Intune admin console. Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices.
 
-Only use DEM accounts when user-less enrollment for shared devices is unavailable. For more information, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+Only use DEM accounts when user-less enrollment for shared devices is unavailable. For more information, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 <!---TFS 1233681--->
 
 ### Change of names for Windows features
-- [Microsoft Passport for Windows]/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is now known as **Windows Hello for Business**.
+- [Microsoft Passport for Windows](/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is now known as **Windows Hello for Business**.
 - [Enterprise data protection](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) is now known as **Windows Information Protection**.
 
 
@@ -91,7 +91,7 @@ Service health information for Intune has been moved to a central location with 
 
 
 ### Device management
-- **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed. See [Windows 10 policy settings in Microsoft Intune]/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) for more information.
+- **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed. See [Windows 10 policy settings in Microsoft Intune](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) for more information.
 <!---TFS 1244478--->
 
 ### Conditional access
@@ -103,10 +103,10 @@ Service health information for Intune has been moved to a central location with 
 	* Must be compliant with any deployed Intune compliance policies
 
  End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
-- **Conditional access for browser.** You can set a conditional access policy for [Exchange Online]/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) so that they can only be accessed from supported web browsers on managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
+- **Conditional access for browser.** You can set a conditional access policy for [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) so that they can only be accessed from supported web browsers on managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online supports conditional access.** You can set a conditional access policy for [Dynamics CRM Online]/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
+- **Dynamics CRM Online supports conditional access.** You can set a conditional access policy for [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
 <!---TFS1295358--->
 
 ### Intune Company Portal updates
@@ -140,9 +140,9 @@ Service health information for Intune has been moved to a central location with 
 For more information, see [this blog post](https://blogs.technet.microsoft.com/microsoftintune/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/).
 
 ### App management
-- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android]/intune-classic/deploy-use/ios-mam-policy-settings).
+- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android](/intune-classic/deploy-use/ios-mam-policy-settings).
 
-- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies]/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Once users log in, the MAM policies will be applied.
+- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Once users log in, the MAM policies will be applied.
 
 - **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) page.
 
@@ -188,7 +188,7 @@ All of these features are also supported for hybrid customers (Configuration Man
 
 ### App management
 - **MAM user compliance.**
-You can now view the [status]/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
+You can now view the [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
    - Devices
    - Apps on the device
 
@@ -200,7 +200,7 @@ You can now view the [status]/intune-classic/deploy-use/monitor-mobile-app-manag
 
 
 - **MAM controls to prevent Outlook contacts sync (Android).**
-A new setting is available for [mobile application management]/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
+A new setting is available for [mobile application management](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
 
 ### Device management
 - **Phone number identification for corporate-owned devices.** Phones that are categorized as "Corporate" are now identified with their full phone number when, for example, you run a mobile device inventory report. BYOD phone numbers continue to be masked with ****, with only the last 4 digits displayed.

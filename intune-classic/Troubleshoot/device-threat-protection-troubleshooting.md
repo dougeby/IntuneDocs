@@ -94,4 +94,4 @@ If the new user is in an  Lookout MTP enrollment group, the device will appear o
 
 
 ### See also
-[Set up you subscription with Lookout MTP]/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)
+[Set up you subscription with Lookout MTP](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)
