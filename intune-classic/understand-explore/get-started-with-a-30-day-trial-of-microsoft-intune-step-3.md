@@ -64,7 +64,7 @@ Use user groups to deploy software and device policies. For example, set up a "M
 
 You can find the newly created group in the **Groups** list, in the **Groups** workspace under **All Users**. From here, you can also edit or delete the group.
 
-To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune]/intune-classic/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](/intune-classic/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Next steps
 [Create policies](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  

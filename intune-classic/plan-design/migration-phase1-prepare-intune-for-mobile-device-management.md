@@ -30,13 +30,13 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization. It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups, then you can begin addressing the questions under the [Assess MDM requirements section]/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements).
+Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization. It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups, then you can begin addressing the questions under the [Assess MDM requirements section](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements).
 
 ## Assess MDM requirements
 
 ### What kinds of devices do you need to manage?
 
--   Which [platforms]/intune-classic/get-started/supported-mobile-devices-and-computers) do you need to support?
+-   Which [platforms](/intune-classic/get-started/supported-mobile-devices-and-computers) do you need to support?
 
 -   Are the devices you need to support corporate or BYOD?
 
@@ -92,4 +92,4 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 ## Next steps
 
-[Phase 1: Basic Setup]/intune-classic/plan-design/migration-phase1-basic-setup)
+[Phase 1: Basic Setup](/intune-classic/plan-design/migration-phase1-basic-setup)

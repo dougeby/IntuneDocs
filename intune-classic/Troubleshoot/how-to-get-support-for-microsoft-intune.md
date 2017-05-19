@@ -40,7 +40,7 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 
 ## Find help without opening a support ticket
 
-Before creating a support ticket, check out the following resources for answers and information. You might also want to review [general troubleshooting tips for Microsoft Intune]/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+Before creating a support ticket, check out the following resources for answers and information. You might also want to review [general troubleshooting tips for Microsoft Intune](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
 
 ### Microsoft Intune TechNet forums
 

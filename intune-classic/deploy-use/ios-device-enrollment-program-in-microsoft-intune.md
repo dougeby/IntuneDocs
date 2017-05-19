@@ -92,7 +92,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
    You can also **Assign devices to the following group**. Choose **Select...** to choose a group.
 
    > [!Important]
-   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
+   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
 
 3. Enable **Configure Device Enrollment Program settings for this policy** to support DEP.
 
