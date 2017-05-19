@@ -41,7 +41,7 @@ Before you begin troubleshooting, check to make sure that you've configured Intu
 -	[Set up iOS and Mac device management](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -	[Set up Android device management](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
--	[Set up Android for Work device management]/intune-classic/deploy-use/set-up-android-for-work)
+-	[Set up Android for Work device management](/intune-classic/deploy-use/set-up-android-for-work)
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
