@@ -52,7 +52,7 @@ This type of policy can be useful when the standard Intune VPN policies do not c
 
    4.  After you've entered all of URI settings, choose **Save policy**, and then deploy the policy.
 
-Then, [deploy the policy]/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) as normal.
+Then, [deploy the policy](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) as normal.
 
 ## Example URI settings
 

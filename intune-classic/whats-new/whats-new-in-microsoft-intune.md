@@ -49,7 +49,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 
 ### Block apps from accessing SharePoint Online <!-- 679339 -->
 
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online]/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
+You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
@@ -134,5 +134,5 @@ We have made available a version of the Company Portal app for iOS through the A
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What's new in the Azure preview](https://docs.microsoft.com/intune/whats-new)
-* [What's new in the Company Portal UI]/intune-classic/whats-new/whats-new-in-company-portal-ui)
+* [What's new in the Company Portal UI](/intune-classic/whats-new/whats-new-in-company-portal-ui)
 * [What's new archive](whats-new-archive.md)

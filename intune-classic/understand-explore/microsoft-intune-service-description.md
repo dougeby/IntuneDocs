@@ -41,7 +41,7 @@ You can start to use Intune with a 30-day free trial that includes 100 user lice
 
 For a list of settings that you can set up on mobile devices, see:
 
--   [Enrolled device management capabilities of Microsoft Intune]/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Enrolled device management capabilities of Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx)
 
@@ -52,7 +52,7 @@ Because Intune is an online service, Microsoft can update it on a regular basis.
 
 Use the information in this article to help you learn about the frequency of these service updates, and the advance notification we give to you when an update might affect your use of the service.
 
-To learn about changes in the  Intune service, see [What's new in Microsoft Intune]/intune-classic/deploy-use/whats-new-in-microsoft-intune). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service and provides helpful tips to help you get the most from Intune.
+To learn about changes in the  Intune service, see [What's new in Microsoft Intune](/intune-classic/deploy-use/whats-new-in-microsoft-intune). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service and provides helpful tips to help you get the most from Intune.
 
 Important service updates will also be communicated to you in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device.
 
@@ -66,7 +66,7 @@ Here are the types of notices Microsoft provides about the Intune service:
     * New, or changed APIs – Notifying you that you need to test to ensure backward compatibility of custom apps
     * Changes to system requirements, for example, the minimum required browser version
     * Any updates that require you to act to enable the feature or to avoid service interruption to the feature.
--   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune]/intune-classic/deploy-use/whats-new-in-microsoft-intune).
+-   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](/intune-classic/deploy-use/whats-new-in-microsoft-intune).
     -   In the event of Intune service retirement, you would be notified 12 months in advance.
 
 ## Choose the management solution that’s right for you
@@ -82,10 +82,10 @@ Use these resources to learn more about Intune:
 
 - The [Microsoft Intune Trust Center](https://www.microsoft.com/server-cloud/products/intune-trust-center/) provides information about the security, privacy, and compliance practices of Intune, and it describes some of Intune's certifications.
 
-- [Enrolled device management capabilities of Microsoft Intune]/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+- [Enrolled device management capabilities of Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### See also
 [Microsoft Intune]/intune-classic/)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[What's new in Microsoft Intune]/intune-classic/deploy-use/whats-new-in-microsoft-intune)
+[What's new in Microsoft Intune](/intune-classic/deploy-use/whats-new-in-microsoft-intune)

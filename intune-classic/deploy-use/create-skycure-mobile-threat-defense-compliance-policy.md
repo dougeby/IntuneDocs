@@ -36,9 +36,9 @@ Intune with Skycure Mobile Threat Defense lets you detect threats on mobile devi
 
 Prerequisites for compliance policy with Skycure device threat protection:
 
--   [Set up Skycure integration with Intune]/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Set up Skycure integration with Intune](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
 
--   [Enable the Skycure connection in Intune]/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
+-   [Enable the Skycure connection in Intune](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you created a policy that classifies various threats as high, medium and low. You now need to set the maximum allowed threat level in the Intune compliance policy.
 
@@ -67,8 +67,8 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
 -   Create a conditional access policy for:
 
-	-   [Exchange Online]/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
-	-   [Exchange On-premises]/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
-	-   [SharePoint Online]/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
-	-   [Skype for Business Online]/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
-	-   [Dynamics CRM]/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
+	-   [Exchange Online](/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
+	-   [Exchange On-premises](/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
+	-   [SharePoint Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
+	-   [Skype for Business Online](/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
+	-   [Dynamics CRM](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)

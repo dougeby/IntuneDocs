@@ -80,7 +80,7 @@ A device enrollment profile defines the settings applied to a group of devices.
    -   **Device group pre-assignment**&mdash;All devices deployed with this profile will initially belong to this group. You can reassign devices after enrollment.
 
    > [!Important]
-   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
+   > Group assignments are moving from Intune to Azure Active Directory. Once your Intune account receives the applicable update, you won't see the **Assign devices to the following group** option. [Learn more](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments).
 
    -  **Device Enrollment Program**&mdash;The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure that the toggle is set to **off**.
 
