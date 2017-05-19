@@ -52,7 +52,7 @@ Organizations may have different tiers/levels (1-3) of support. For example, tie
 
 Tier 1 is normally the first level of support and typically the first tier to be contacted by the user for support requests. If tier 1 is unable to resolve the end user’s issue, they would escalate it to tier 2, and tier 2 would escalate it to tier 3 if needed. In addition, Microsoft support may be considered as tier 4.
 
--   Learn more about [Intune support]/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+-   Learn more about [Intune support](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 For the initial production rollout phases, organizations could have all three tiers participating in a bridge or skype call. Here’s one example of how an organization could implement their IT support/helpdesk work-flows:
 

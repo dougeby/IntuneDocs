@@ -39,16 +39,16 @@ Policies and apps are platform-specific.
 
  Device policy settings are configured and managed on a per-platform basis. The following links provide lists of available settings for their respective platforms:
 
-- [iOS]/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
-- [Android and Samsung KNOX Standard]/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
-- [Android for Work]/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+- [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
+- [Android and Samsung KNOX Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
+- [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
 - [Windows 10 /intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
-- [Windows 8.1]/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
-- [Windows Phone 8.1]/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
-- [Windows Team]/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
-- [Windows PCs running Intune software client]/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
+- [Windows 8.1](/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
+- [Windows Phone 8.1](/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
+- [Windows Team](/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
+- [Windows PCs running Intune software client](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
 
-You can learn more about how to [Manage settings and features on your devices with Microsoft Intune policies]/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+You can learn more about how to [Manage settings and features on your devices with Microsoft Intune policies](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
 
 ## Add and deploy apps
 
@@ -59,19 +59,19 @@ You can add apps to Intune and then deploy them to managed devices in two ways:
 ### Add apps
 
 First you must make apps available in Intune by one of the following methods:
-- [Add apps for enrolled devices]/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
-- [Add apps for Intune software client PCs]/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
+- [Add apps for enrolled devices](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)
+- [Add apps for Intune software client PCs](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)
 
 ### Deploy apps
 
 Now that the app is availabile in Intune, you can deploy it to managed devices:
-- [Deploy apps to devices]/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
+- [Deploy apps to devices](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Deploy volume-purchased apps:
-	- [iOS - Volume-purchase Program]/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-	- [Windows Store for Business]/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-	- [Android for Work]/intune-classic/deploy-use/android-for-work-apps)
+	- [iOS - Volume-purchase Program](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+	- [Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+	- [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
-	Once you have configured apps for deployment you can [configure apps]/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
+	Once you have configured apps for deployment you can [configure apps](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
 >[!div class="step-by-step"]
 
