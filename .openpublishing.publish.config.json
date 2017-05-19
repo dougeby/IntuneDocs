@@ -48,6 +48,22 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "intune-azure-redir",
+      "build_source_folder": "intune-azure",
+      "build_output_subfolder": "intune-azure-redir",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
@@ -82,7 +98,7 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
+  "need_generate_pdf_url_template": false,
   "Targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
