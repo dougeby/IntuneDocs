@@ -79,7 +79,7 @@ For Windows PCs managed with the Intune software client, policy errors in the po
 
 #### To resolve UAC issues
 
-1.  Retire the computer, as described in [Retire devices from Microsoft Intune management]/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management).
+1.  Retire the computer, as described in [Retire devices from Microsoft Intune management](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management).
 
 2.  Wait 20 minutes for the client software to be removed.
 

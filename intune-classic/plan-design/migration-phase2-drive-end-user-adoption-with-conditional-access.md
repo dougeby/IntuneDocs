@@ -63,24 +63,24 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 
 ### Task 1: Get ready for Intune conditional access
 
--   Learn [how to configure conditional access]/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Learn [how to configure conditional access](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 ### Task 2: Set up Intune conditional access
 
 Choose one of the following conditional access policy types to learn more:
 
--   [Exchange Online & new Exchange Online dedicated]/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
+-   [Exchange Online & new Exchange Online dedicated](/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
 
--   [Exchange on-premises & legacy Exchange Online dedicated]/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
+-   [Exchange on-premises & legacy Exchange Online dedicated](/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
 
--   [SharePoint Online]/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
+-   [SharePoint Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
 
--   [Skype for Business Online]/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
+-   [Skype for Business Online](/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
 
--   [Dynamics CRM Online]/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
+-   [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
 
--   [Example e-mail access scenarios]/intune-classic/deploy-use/restrict-email-access-example-scenarios)
+-   [Example e-mail access scenarios](/intune-classic/deploy-use/restrict-email-access-example-scenarios)
 
 ## Next steps
 
-[Phase 2: Typical Migration Cycle]/intune-classic/plan-design/migration-phase2-typical-migration-cycle)
+[Phase 2: Typical Migration Cycle](/intune-classic/plan-design/migration-phase2-typical-migration-cycle)

@@ -53,19 +53,19 @@ Enrollment must be enabled for iOS, Mac, and Android for Work devices establishi
 
 Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
-- [iOS and macOS]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Window 10 and Windows Phone]/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-- [Window PC]/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune software client)
-- [Android for Work]/intune-classic/deploy-use/set-up-android-for-work)
+- [iOS and macOS](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Window 10 and Windows Phone](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window PC](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune software client)
+- [Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
 
 Once enrollment is enabled, users can download the Company Portal app to their device and complete the device enrollment process.
 
 ### Enable company-owned device enrollment
-You can also enable a variety of [company-owned device enrollment]/intune-classic/deploy-use/manage-corporate-owned-devices) scenarios including:
-- [Apple Device Enrollment Program]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
-- [Apple Configurator Setup Assistant enrollment]/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator direct enrollment]/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
-- [Device Enrollment Manager]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+You can also enable a variety of [company-owned device enrollment](/intune-classic/deploy-use/manage-corporate-owned-devices) scenarios including:
+- [Apple Device Enrollment Program](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Apple Configurator Setup Assistant enrollment](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Apple Configurator direct enrollment](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Device Enrollment Manager](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### Next steps
 Congratulations! You have just completed the last step of the *Intune quick start guide*. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.

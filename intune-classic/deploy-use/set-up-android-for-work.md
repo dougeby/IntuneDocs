@@ -34,7 +34,7 @@ To enable management of Android for Work devices, you must add an Android for Wo
 ## Add Android for Work Binding for Intune
 
 1. **Set up Intune**<br>
-If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority]/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment) as **Microsoft Intune** and setting up MDM.
+If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment) as **Microsoft Intune** and setting up MDM.
 
 2. **Configure Android for Work binding**<br>
     As an Intune administrator, open the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **Android for Work**, and click **Configure** to open Google Play's Android for Work website. This will open in a new tab in your browser.

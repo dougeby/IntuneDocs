@@ -50,10 +50,10 @@ As you disable conditional access in the old MDM provider, users can still be pr
 
 ## Task list for app protection policies
 
--   Task 1: Learn [how to get ready to configure mobile app protection]/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) policies
+-   Task 1: Learn [how to get ready to configure mobile app protection](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) policies
 
--   Task 2: Learn [how to create and deploy mobile app protection policies]/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   Task 2: Learn [how to create and deploy mobile app protection policies](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## Next steps 
 
-[Phase 1: Special migration considerations]/intune-classic/plan-design/migration-phase1-special-migration-considerations)
+[Phase 1: Special migration considerations](/intune-classic/plan-design/migration-phase1-special-migration-considerations)

@@ -37,11 +37,11 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune]/intune-classic/deploy-use/prerequisites-for-enrollment)
--	[Set up iOS and Mac device management]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--	[Set up Windows device management]/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--	[Set up Android device management]/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
--	[Set up Android for Work device management]/intune-classic/deploy-use/set-up-android-for-work)
+-	[Get ready to enroll devices in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-	[Set up iOS and Mac device management](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-	[Set up Windows device management](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-	[Set up Android device management](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
+-	[Set up Android for Work device management](/intune-classic/deploy-use/set-up-android-for-work)
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
@@ -87,7 +87,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 > [!NOTE]
 
-> You can avoid the device enrollment cap by using Device Enrollment Manager account, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune]/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> You can avoid the device enrollment cap by using Device Enrollment Manager account, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > A user account that is added to Device Enrollment Managers account will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 

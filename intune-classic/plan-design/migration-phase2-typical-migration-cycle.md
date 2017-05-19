@@ -64,7 +64,7 @@ You should track how many users have enrolled devices after each phase so that y
 
 -   Estimate the impact of enforcing conditional access.
 
-Learn [how to monitor an Intune migration]/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
+Learn [how to monitor an Intune migration](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
 
 ## Post-migration
 
