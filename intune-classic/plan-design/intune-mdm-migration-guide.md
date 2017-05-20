@@ -40,7 +40,7 @@ The purpose of this guide is to step you through the various details involved in
 
 This guide includes two phases, both of which include tasks, strategies, and tactical guidance that will help you step through the end to end process of migrating to Intune MDM.
 
--   [Phase 1: Prepare Intune for Mobile device management /intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
+-   [Phase 1: Prepare Intune for Mobile device management] (/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
 
     -   [Assess your MDM migration requirements](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements)
 
