@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 05/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ This guide includes two phases, both of which include tasks, strategies, and tac
 
     -   [Configure device and app management policies](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies)
 
-    -   [Configure app protection policies /intune-classic/plan-design/migration-phase1-configure-app-protection-policies)
+    -   [Configure app protection policies] (/intune-classic/plan-design/migration-phase1-configure-app-protection-policies)
 
     -   [Special migration considerations](/intune-classic/plan-design/migration-phase1-special-migration-considerations)
 
@@ -79,4 +79,4 @@ It's important to recognize that your new Intune deployment might be different f
 
 ## Next steps
 
-[Phase 1: Prepare Intune for mobile device management /intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
+[Phase 1: Prepare Intune for mobile device management] (/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
