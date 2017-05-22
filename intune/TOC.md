@@ -59,6 +59,7 @@
 <!--- ## [Plan and design](plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](devices-wipe.md)
+### [Remote control Android devices](device-profile-android-teamviewer.md)
 <!--- ## [Troubleshoot](troubleshooting.md) --->
 
 # Manage users
