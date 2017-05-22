@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,10 +33,10 @@ ms.custom: intune-enduser
 > [!NOTE]
 > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
-1.  1. Go to **Start**.
+1.  Go to **Start**.
 
-- If you are on a **Windows 10 desktop** device, go to the **Start menu**.
-- If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
+  - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
+  - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
 
 2. Open the Windows **Settings** app by searching for "settings" in the search bar.
 
