@@ -71,7 +71,7 @@ Customers who want to use Intune with System Center Configuration Manager to man
 We will set Intune as the MDM authority for the trial; this will not affect your production environment unless you decide to use your trial for your production environment.
 
 1. In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Mobile Device Management**.
-2. In the **Tasks** list, choose **Set MDM Authority**. The **Set MDM Authority** dialog box opens. <!---screen shot--->
+2. In the **Tasks** list, choose **Set MDM Authority**. The **Set MDM Authority** dialog box opens.
 3. Intune requests confirmation that you want Intune as your MDM authority. Select the checkbox and then choose **Yes** to use Intune to manage mobile devices.
 
 ## Enroll your test devices into Intune
@@ -84,7 +84,7 @@ Install the **Intune Company Portal** app from Microsoft Corporation, available 
 Before users can enroll their iOS devices, you need to set up Intune to manage these devices.
 
 1. **Get a certificate signing request**<br/>
-Log on to Intune with your admin account and go to **Administration** > **Mobile Device Management** > **iOS and Mac OS X** > **Upload an APNs Certificate**, and then choose **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal. <!--- screen shot--->
+Log on to Intune with your admin account and go to **Administration** > **Mobile Device Management** > **iOS and Mac OS X** > **Upload an APNs Certificate**, and then choose **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 2.	**Get an Apple Push Notification service certificate**<BR/>
 Go to the [Apple Push Certificates Portal](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2), and sign in with your company Apple ID to create the APNs certificate by using the .csr file. After choosing **Upload on Apple's Push Certificate Portal**, you will receive a .json file that cannot be used for APNs. Complete the download, return to the Apple Push Certificates Portal for Certificates for Third-Party Servers, and then choose **Download**.<br/>
 Download the APNs (.pem) certificate, and save the file locally. This Apple ID must be used later to renew your APNs certificate.
@@ -100,24 +100,12 @@ Intune supports the following device platforms:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-The requirements to enable device managemenet depend on the platforms you want to manage.
+The requirements to enable device management depend on the platforms you want to manage.
 - **Android** mobile devices allow users to [enroll using the Company Portal app](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) available from Google Play. No additional configuration in Intune is required.
-- [Set-up requirements for **iOS and Mac OS X**]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Set-up requirements for **Windows Phone**]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
-
-<!--- ## Verify enrollment--->
-<!--- START HERE
-
-### iOS and Mac OS X
-Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+- [Set-up requirements for **iOS and Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Set-up requirements for **Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
 
-
-### Windows Phone 8.1
-Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-## Install the previously deployed app
-Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.--->
 
 
 
