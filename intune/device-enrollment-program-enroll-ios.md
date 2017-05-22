@@ -29,12 +29,12 @@ ms.custom: intune-azure
 
 # Enable iOS device enrollment with Apple's Device Enrollment Program
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic helps IT administrators  enable iOS device enrollment for devices purchased through [Apple's Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune can deploy an enrollment profile “over the air” that enrolls DEP devices into management. The administrator never has to touch each managed device. An ASM profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 
 >[!NOTE]
->DEP enrollment can't be used with the [device enrollment manager](enroll-devices-using-device-enrollment-manager.md).
+>DEP enrollment can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
 
 **DEP Enrollment steps**
@@ -53,7 +53,7 @@ Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment
 > If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
 
 **Prerequisites**
-- [Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
+- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - Signed up for [Apple's Device Enrollment Program](http://deploy.apple.com)
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>

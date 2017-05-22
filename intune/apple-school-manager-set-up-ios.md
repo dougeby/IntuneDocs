@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Set up Apple School Manager Program enrollment for iOS devicestitleSuffix: "Intune Azure preview"
+title: Set up Apple School Manager Program enrollment for iOS devices
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
 keywords:
 author: nathbarn
@@ -28,7 +29,7 @@ ms.custom: intune-azure
 
 # Enable iOS device enrollment with Apple School Manager
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic helps IT administrators enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) (ASM) program. Microsoft Intune can deploy an enrollment profile “over the air” that enrolls ASM devices into management. The administrator never has to touch each managed device. An ASM profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 
@@ -42,7 +43,7 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 7. [Distribute devices to users](#distribute-devices-to-users)
 
 >[!NOTE]
->ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](enroll-ios-devices-using-device-enrollment-program.md) or Intune's [device enrollment manager](enroll-devices-using-device-enrollment-manager.md) account.
+>ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or Intune's [device enrollment manager](device-enrollment-manager-enroll.md) account.
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a ASM profile, the device will be unenrolled from Intune.
 
 ## Get the Apple ASM certificate
@@ -51,7 +52,7 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM
 
 
 **Prerequisites**
-- [Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
+- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - Signed up for [Apple School Management](http://school.apple.com)
 
 **Step 1. Download an Intune public key certificate required to create an Apple ASM token.**<br>
