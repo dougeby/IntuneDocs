@@ -52,7 +52,6 @@
 ### [Enroll Android devices](android-enroll.md)
 ### Enroll iOS devices
 #### [DEP](device-enrollment-program-enroll-ios.md)
-#### [ASM](apple-school-manager-set-up-ios.md)
 #### [Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 #### [Direct enrollment](apple-configurator-direct-enroll-ios.md)
 #### [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
