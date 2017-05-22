@@ -39,8 +39,8 @@ This topic helps IT administrators  enable iOS device enrollment for devices pur
 
 **DEP Enrollment steps**
 1. [Get an Apple DEP token](#get-the-apple-dep-certificate)
-2. [Create a DEP profile](#create-anapple-dep-profile)
-3. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+2. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+3. [Create a DEP profile](#create-anapple-dep-profile)
 4. [Synchronize DEP-managed devices](#sync-dep-managed-devices)
 5. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
 6. [Distribute devices to users](#distribute-devices-to-users)
@@ -73,6 +73,17 @@ Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.c
 
 **Step 4. Browse to your Apple DEP token to upload.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune will automatically synchronize with your DEP account.
+
+## Assign Apple DEP serial numbers to your MDM server
+Device serial numbers must be assigned to your Intune MDM server in the Apple DEP web portal to allow Intune to manage those devices.
+
+1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) and sign in with your company Apple ID.
+
+2. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
+
+3. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
+
+4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Create an Apple DEP profile
 
@@ -120,17 +131,6 @@ A device enrollment profile defines the settings applied to a group of devices d
         - **Diagnostic Data** - If enabled, Setup Assistant prompts for this service during activation
 
 9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
-
-## Assign Apple DEP serial numbers to your MDM server
-Device serial numbers must be assigned to your Intune MDM server in the Apple DEP web portal to allow Intune to manage those devices.
-
-1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) and sign in with your company Apple ID.
-
-2. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
-
-3. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-
-4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Sync DEP managed devices
 Now that Intune has been assigned permission to manage your DEP devices, you can synchronize Intune with the DEP service to see your managed devices in the Intune portal.

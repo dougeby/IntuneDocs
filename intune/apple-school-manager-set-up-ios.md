@@ -35,9 +35,9 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 **ASM Enrollment steps**
 1. [Get an ASM token](#get-the-asm-certificate)
-2. [Create an ASM profile](#create-an-apple-dep-profile)
-3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
-4. [Assign ASM serial numbers to your Intune server](#assign-apple-asm-serial-numbers-to-your-mdm-server)
+2. [Assign ASM serial numbers to your Intune server](#assign-apple-asm-serial-numbers-to-your-mdm-server)
+3. [Create an ASM profile](#create-an-apple-dep-profile)
+4. [Connect School Data Sync](#connect-school-data-sync) (Optional)
 5. [Synchronize ASM-managed devices](#sync-asm-managed-devices)
 6. [Assign ASM profile to devices](#assign-a-asm-profile-to-devices)
 7. [Distribute devices to users](#distribute-devices-to-users)
@@ -50,27 +50,40 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM certificate (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
-
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - Signed up for [Apple School Management](http://school.apple.com)
 
 **Step 1. Download an Intune public key certificate required to create an Apple ASM token.**<br>
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment** and then select **Enrollment Program Token**.
+1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment** and then select **Enrollment Program Token**.
 2. In the **Enrollment Program Token** blade, select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
 
 **Step 2. Create and download an ASM token.**<br>
 Select **Create a token via Apple School Manager**, and sign in with your company Apple ID. You can use this Apple ID to renew your ASM token.
 
-   1.  In the [Apple School Manager portal](https://school.apple.com), go to **Apple School Manager** &gt; **Manage Servers**, and then choose **Add MDM Server**.
+   1.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then choose **Add MDM Server** (upper right).
    2.  Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
-   3.  Select **Upload your Public Key** in the Apple portal. Choose **Choose File…** to upload the .pem file.
-   4.  Select **Download Server Token** Download the server token (.p7m) file to your computer, and then choose **Save MDM Server**.
+   3.  Select **Upload File...** in the Apple portal, browse to the .pem file, and select **Save MDM Server** (lower right).
+   4.  Select **Get Token** and then download the server token (.p7m) file to your computer.
 
 **Step 3. Enter the Apple ID used to create your ASM token.**<br>This ID should be used to renew your Apple ASM token and is stored for your future reference.
 
 **Step 4. Locate and upload your token.**<br>
 Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. Intune automatically syncs your ASM devices from Apple.
+
+## Assign Apple ASM serial numbers to your MDM server
+Device serial numbers must be assigned to your Intune MDM server in the Apple ASM web portal to allow Intune to manage those devices.
+
+1. Go to the [Apple School Manager Portal](https://school.apple.com) and sign in with your company Apple ID.
+
+2. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
+
+3. 2)	Choose the action **Assign to Server**, and select the **MDM Server** you created.
+
+
+3. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
+
+4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Connect School Data Sync
 (Optional) ASM supports synching class roster data to Azure Active Directory (AD) using Microsoft School Data Sync (SDS). Complete the following steps to use SDS to sync school data.
@@ -83,8 +96,7 @@ Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. 
 ## Create an ASM profile
 A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In the [Azure portal](https://school.apple.com), choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Device enrollment**, and then choose **Apple Enrollment**.
+1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment**, and then choose **Apple Enrollment**.
 3. Under **Enrollment Program**, select **Enrollment Program Profiles**.
 4. On the **Enrollment Program Profiles** blade, select **Create**.
 5. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile that is displayed in the Intune portal.
@@ -137,17 +149,6 @@ A device enrollment profile defines the settings applied to a group of devices d
         - **Diagnostic Data** - If enabled, Setup Assistant prompts for this service during activation
 
 9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
-
-## Assign Apple ASM serial numbers to your MDM server
-Device serial numbers must be assigned to your Intune MDM server in the Apple ASM web portal to allow Intune to manage those devices.
-
-1. Go to the [Apple School Manager Portal](https://school.apple.com) (https://school.apple.com) and sign in with your company Apple ID.
-
-2. Go to  **Deployment Program** &gt; **Apple School Manager** &gt; **Manage Devices**.
-
-3. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-
-4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Sync ASM managed devices
 Now that Intune has been assigned permission to manage your ASM devices, you can synchronize Intune with the ASM service to see your managed devices in the Intune portal.
