@@ -36,7 +36,7 @@ Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased 
 
 Ensure that the user of the Azure portal has the following permissions assigned to them as an [Intune role](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control):
 - To let the admin modify the TeamViewer connector settings, grant the **Update Remote Assistance** permission.
-- To let the admin initiate a new remote assistance settings, grant the **Request Remote Assistance** permission. Users with this permission can request to initiate a session for any user; this is not limited by any Intune role assignment scope.
+- To let the admin initiate a new remote assistance settings, grant the **Request Remote Assistance** permission. Users with this permission can request to initiate a session for any user; this is not limited by any Intune role assignment scope. Intune role assignment scopes do not limit the devices or users for which Remote Assistance requests can be initiated.
 
 >[!NOTE]
 >By enabling TeamViewer, you are allowing the TeamViewer for Intune Connector to create TeamViewer sessions, read Active Directory data, and save the TeamViewer account access token.
