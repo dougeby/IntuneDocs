@@ -46,17 +46,9 @@ For example, you push an app to the work profile that requires location access. 
 	- 	**Auto grant**
 	- 	**Auto deny**
 
-
-- **Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile with the following options:
-
-	- Device-wide passcode policy - The passcode that the end user must use to unlock their entire device
-	- Define a work profile passcode policy only - end users will be prompted to enter a passcode whenever any app in the work profile is opened. 
-	- Define both a device and and work profile policy - IT has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (eg, a 4 digit PIN to unlock the device, but a 6 digit PIN to open any work app)
-
-	By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two.
-
 ### Work profile password
-- **Minimum password length** - Enter the minimum number of characters the users password must contain (from **4**-**14**)
+- **Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile. By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two.
+- **Minimum password length** - Enter the minimum number of characters the users password must contain (from **4**-**16**)
 - **Maximum minutes of inactivity until screen locks** - Select the amount of time before an inactive device automatically locks.
 - **Number of sign-in failures before wiping device** - Enter the number of times an incorrect password can be entered before all data is wiped from the device.
 - **Password expiration (days)** - Enter the number of days until an end user's password must be changed (from **1**-**255**).
@@ -98,26 +90,3 @@ For example, you push an app to the work profile that requires location access. 
 - **Prevent reuse of previous passwords** - Enter the number of new passwords that must have been used before an old one can be reused (from **1**-**24**).
 - **Fingerprint unlock** - Blocks an end user from using the device fingerprint scanner to unlock it.
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag) You can use this setting to prevent users from configuring Smart Lock.
-
-## Custom policy settings
-Use the Microsoft Intune **Android for Work custom configuration policy** to assign OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
-
-This capability is intended to allow you to assign Android settings that are not configurable with Intune policies.
-Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
-
-### General settings
-
-|Setting name|Details|
-    |----------------|--------------------|
-    |**Name** |Enter a unique name for the Android custom policy to help you identify it in the Intune console.|
-    |**Description** |Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
-
-### OMA-URI settings
-
-  |Setting name|Details|
-  |--------|--------------------|
-  |**Name** |Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
-  |**Description** |Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
-	|**OMA-URI (case sensitive)** |Specify the OMA-URI you want to supply a setting for.|
-  |**Data type** |Select the data type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
-  |**Value** |Specify the value to associate with the OMA-URI that you specified previously.|
