@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your Android device seems to be encrypted | Microsoft Docs
+title: Your Android device seems to be encrypted
 description:
 keywords:
 author: barlanmsft
