@@ -7,12 +7,12 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
+ms.assetid: 5bece2fb-28f5-4a0c-9750-b780c94fb8eb
 searchScope:
  - User help
 
@@ -21,16 +21,16 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: esmich
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
 
 ---
 
-# Send errors to your IT admin
+# Send errors to your IT admin for issues with your Windows 10 device
 
-If you get errors on your iOS device while using the Company Portal app, you can send information to help your IT admin troubleshoot the problem. You can send error information in different ways:
+If you get errors on your Windows 10 device while using the Company Portal app, you can send information to help your IT admin troubleshoot the problem. You can send error information in different ways:
 
 -   On error alert messages, tap **Report**.
 
