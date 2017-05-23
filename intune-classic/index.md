@@ -130,7 +130,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="/intune-classic/understand-explore/mam-faq">
+                            <a href="/intune/ui-changes">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -140,8 +140,8 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>FAQ about MAM and app protection</h3>
-                                            <p>Find answers to some frequently asked questions on Intune mobile app management and Intune app protection.</p>
+                                            <h3>Where did my Intune feature go in Azure?</h3>
+                                            <p>If you're familiar with Intune in the classic console, this article helps you find your feature in Intune on Azure.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">all of the Intune documentation</a>.</h3>
+                                <h3>See <a href="/intune/what-is-intune">all of the Intune documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -325,7 +325,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune-classic/understand-explore/introduction-to-microsoft-intune">all of the introductory documentation</a>.</h3>
+                                <h3>See <a href="/intune/what-is-intune">all of the introductory documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
@@ -754,7 +754,7 @@ description: Learn to use Microsoft Intune.
                         </li>-->
                         <li class="fullSpan">
                             <div class="container">
-                                <h3>See <a href="/intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">all of the  how-to documentation</a>.</h3>
+                                <h3>See <a href="/intune/device-enrollment">all of the how-to documentation</a>.</h3>
                             </div>
                         </li>
                     </ul>
