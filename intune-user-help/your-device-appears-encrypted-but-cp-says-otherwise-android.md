@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Your Android device seems to be encrypted, but Company Portal says otherwise
+title: Your Android device seems to be encrypted | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/06/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,8 @@ ms.custom: intune-enduser
 
 When you encrypt a device, you are encoding the information on it using a secret key that is known only to you and thus, prevent unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
 
+## Specific manufacturer issues
+
 Some Android devices on version 7.0+ encrypt data in ways that is inconsistent with certain Android platform standards. These devices may seem to be encrypted out of the box, but Intune recognizes the methods used as putting the device's information at risk from malicious users who have physical access to the device.
 
 > [!Note]
@@ -40,11 +42,16 @@ Some Android devices on version 7.0+ encrypt data in ways that is inconsistent w
 
 ## An incomplete list of devices
 
-If you have one of the following devices, you will experience this issue.
+If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent update.
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
 - [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
 
 ## Solutions
 
+### Add a startup PIN
+
+Certain Android devices will require you to create a startup PIN to make sure that your device is secure. There are many versions of Android from many different manufacturers. You can try to fix this issue by finding a location in your settings app to enable this option. For example, on the Samsung Galaxy S7, you enable Secure Startup by going to **Settings** > **Lock Screen and Security** > **Secure Startup**.  
+
+### Downgrade your version of Android
 If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your IT admin to resolve this issue. You can get contact information for your IT admin at the [Company Portal website](http://portal.manage.microsoft.com) for contact information.
