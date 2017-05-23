@@ -79,7 +79,6 @@
 ## [What is user management?](user-management.md)
 <!--- Was What is users & group management--->
 ## [Get started](groups-get-started.md)
-## [Help users](help-desk-operators.md)
 <!--- ## [Plan and design](plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](troubleshooting.md) --->
@@ -220,6 +219,7 @@
 
 # Access control
 ## [What is role-based access control?](role-based-access-control.md)
+## [Help users](help-desk-operators.md)
 
 # Develop and customize
 ## [Intune App Wrapping Tool](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
