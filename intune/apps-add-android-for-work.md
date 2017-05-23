@@ -50,30 +50,6 @@ Make sure you have configured Intune and Android for Work to work together in th
   ![Approve app permissions example](media/approve-app-permissions.png)
 5. After a moment, you'll see a confirmation message that the app has been approved and is available in your IT admin console.
 
-
-## Preconfigure permissions for apps
-
-You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions such as access to location or the device camera prompt users to accept or deny permissions. For example, if an app uses the device's microphone then the end user is prompted to grant the app permission to use the microphone. You can define permissions as follows: 
-- Automatically deny without notifying the user
-- Automatically approve without notifying the user
-- Prompt the user to accept or deny
-
-1. In the Intune portal, choose **Device configuration**. Under **Manage**, choose **Profiles** and then click **Create profile**.
-2. Set the following details:
-    - **Name** - The name of the profile that will appear in the Intune console
-    - **Description** - The  description of the profile that will appear in the Intune console
-    - **Platform** - Select **Android for Work**
-    - **Enrollment type** - Select **Devices with enrollment**
-3. Select **Permissions** and then choose **Add**.
-4. Select from the list of available device permissions adn then choose **OK**.
-5. Select an option for each permission to grant with this policy:
-    - **Prompt** - The device user is prompted to grant or deny permission for the app.
-    - **Auto grant** - Permission is granted automatically.
-    - **Auto deny** - Permission is denied automatically.
-
-    You can also **Remove** permissions.
-6. Permissions can now be [assigned to groups of users](device-profile-assign.md) like other profile assignments.
-
 ## Publish, then synchronize, a line of business app from the Google Play for Work store
 
 1. Go to the Google Play Developer Console, [play.google.com/apps/publish](https://play.google.com/apps/publish).
@@ -91,11 +67,10 @@ For more information about how to upload and publish Android apps, see the [Goog
 If you have approved an app from the store and don't yet see it in the **Licensed apps** node of the **Mobile apps** workload, you can force an immediate sync as follows:
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Setup** > **Android for Work**.
-5. On the Android for Work blade, choose **Sync Now**.
-6. The page also displays the time and status of the last sync.
+2. On the **Intune** blade, choose **Mobile apps**.
+3. In the **Mobile apps** workload, choose **Setup** > **Android for Work**.
+4. On the Android for Work blade, choose **Sync Now**.
+5. The page also displays the time and status of the last sync.
 
 When the app is displayed in the **Licensed apps** node of the **Mobile apps** workload, you can [assign it just like you would any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
 

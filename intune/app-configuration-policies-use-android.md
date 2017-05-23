@@ -31,12 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an Android for Work app. For example, an app might require users to specify:
-
--   A custom port number.
--   Language settings.
--   Security settings.
--   Branding settings such as a company logo.
+Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an Android for Work app.
 
 If users enter these settings incorrectly, this can increase the burden on your help desk and slow the adoption of new apps.
 
@@ -54,15 +49,12 @@ You do not assign these policies directly to users and devices. Instead, you ass
     - **Enrollment type** - Select **Devices with enrollment**
 3. Select **Configuration settings**.
 4. For **Configuration settings format**, select **Use configuration designer**.
-5. Choose **Add**. A list of  available configuration settings are displayed.  The list includes:
+5. Choose **Add**. A list of  available configuration settings is displayed.  The list includes:
     - **Configuration keys** - Name of the setting.
     - **Value type** - The setting that can be configured, for example **Boolean** or **String**.
     - **Description** - A description of the configuration setting.
 6. Select the checkboxes of settings you want to configure with this profile, and then click **OK**.
 7. A list of your selected settings is displayed with the available **Configuration value**. Specify a value for each setting, and then click **OK**.
-
-## Use JSON editor
-
 
 ## Use configuration designer
 
@@ -87,3 +79,25 @@ When the assigned app is run on a device, it will run with the settings that you
 > [!TIP]
 > If one or more app configuration policies conflict, neither policy is enforced.
 
+
+## Preconfigure permissions for apps
+
+You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions such as access to location or the device camera prompt users to accept or deny permissions. For example, if an app uses the device's microphone then the end user is prompted to grant the app permission to use the microphone. 
+
+1. Sign into the Azure portal.
+2. On the **Intune** blade, choose **Mobile apps**.
+3. In the **Mobile apps** workload, choose **App configuration Policies** > **Android for Work**.
+4. Set the following details:
+    - **Name** - The name of the profile that will appear in the Intune console
+    - **Description** - The  description of the profile that will appear in the Intune console
+    - **Platform** - Select **Android for Work**
+    - **Enrollment type** - Select **Devices with enrollment**
+5. Select **Permissions** and then choose **Add**.
+6. Select from the list of available device permissions adn then choose **OK**.
+7. Select an option for each permission to grant with this policy:
+    - **Prompt** - Prompt the user to accept or deny.
+    - **Auto grant** - Automatically approve without notifying the user.
+    - **Auto deny** - Automatically deny without notifying the user.
+8. To assign the app configuration policy, select the app configuratiopn policy, select **Assignment**, and then select **Select groups**.
+9. Select the user groups to assign, and then choose **Select**.
+10. Choose **Save** to assign the policy.
