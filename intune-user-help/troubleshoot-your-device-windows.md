@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,7 @@ Sometimes issues can occur with your Windows device that may be able to be fixed
 
 - [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
 - [I need to update your Windows device](you-need-to-update-your-windows-device.md)
+- [I need to send logs to my IT admin](send-logs-to-your-it-admin-windows.md)
 - [My Windows version isn't yet supported](your-windows-version-isnt-yet-supported.md)
 - [I need to enable Windows encryption](you-need-to-enable-windows-encryption.md)
 - [My device needs antimalware software](your-device-needs-antimalware-software.md)
