@@ -104,8 +104,9 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](mdm-authority-set.md) for instructions.
 
-    > [!NOTE]
-    > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
+    > [!NOTE]    
+    >Beginning in Configuration Manager version 1610 and Microsoft Intune version 1705, you can change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Change your MDM authority]( /sccm/mdm/deploy-use/change-mdm-authority). If you have a prior version of Configuration Manager, see [What to do if you choose the wrong MDM authority setting](http://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#contact-microsoft-support).
+
 
 2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
     If the UPN does not match the Active Directory information:
@@ -260,7 +261,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 
-When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification. 
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification.
 
   ![Trying to sync notification](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -268,11 +269,11 @@ If the sync is successful, you see a **Sync successful** inline notification in 
 
   ![Sync successful notification](./media/ios_cp_app_sync_successful_notification.png)
 
-If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app. 
+If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app.
 
   ![Unable to sync notification](./media/ios_cp_app_unable_to_sync_notification.png)
 
-To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device. 
+To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device.
 
   ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
 
@@ -318,7 +319,7 @@ Once enrolled, the devices return to a healthy state and regain access to compan
 3. Restart the SMS Executive Service or restart the CM Server.
 
 4. Get a new APN certificate and upload it. To do that, right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
-5. 
+5.
 ## Issues when using System Center Configuration Manager with Intune
 
 ### Mobile devices disappear
