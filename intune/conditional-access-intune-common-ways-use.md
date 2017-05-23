@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Common ways to use conditional access with Intune
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 You need to configure Intune mobile device compliance policy, and the Intune mobile application management (MAM) capabilities to drive conditional access compliance at your organization. Let’s talk about the common ways to use conditional access with Intune.
 
@@ -43,7 +43,7 @@ Starting at the [new Azure portal](https://docs.microsoft.com/intune-azure/intro
 
 -   Learn more about [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Learn more about [what is device compliance.](device-compliance.md)
+-   Learn more about [what is device compliance](device-compliance.md).
 
 ### Conditional access for Exchange on-premises
 
@@ -65,7 +65,7 @@ The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) record
 
 If the EAS record is brand new, and Intune is not aware of it, Intune issues a command-let that blocks access to e-mail. Here are more details on how this process works:
 
-![Exchange on-premises with CA flow-chart](../media/ca-intune-common-ways-1.png)
+![Exchange on-premises with CA flow-chart](./media/ca-intune-common-ways-1.png)
 
 1.  User tries to access corporate e-mail, which is hosted on Exchange on-premises 2010 SP1 or later.
 
@@ -104,7 +104,7 @@ Intune integrated with partners like Cisco ISE, Aruba Clear Pass, and Citrix Net
 
 Users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources based on whether the device is managed and compliant with Intune device compliance policies.
 
-![CA with Network access controls](../media/ca-intune-common-ways-2.png)
+![CA with Network access controls](./media/ca-intune-common-ways-2.png)
 
 -   Learn more about [conditional access based on network access controls](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-networks).
 
@@ -160,7 +160,7 @@ In this example, the admin has app protection policies applied to the Outlook ap
 > [!NOTE] 
 > The flowchart structure below can be used for other managed apps.
 
-![App-based ca with Intune flow-chart](../media/ca-intune-common-ways-3.png)
+![App-based ca with Intune flow-chart](./media/ca-intune-common-ways-3.png)
 
 1.  The user tries to authenticate to Azure AD from the Outlook app.
 

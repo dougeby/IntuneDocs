@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # What's conditional access?
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 This topic describes Conditional access as it applies to Enterprise Mobility + Security (EMS), and follows that with Conditional access common scenarios when using Intune.
 
@@ -40,13 +40,13 @@ You can define conditions that gate access to your corporate data based on locat
 > [!NOTE] 
 > Conditional Access also extends its capabilities to [Office 365 services](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).
 
-![Conditional access architectural diagram](../media/ca-diagram-1.png)
+![Conditional access architectural diagram](./media/ca-diagram-1.png)
 
 ## Conditional access with Intune
 
 Intune adds mobile device compliance and mobile application management capabilities to support the EMS Conditional Access solution.
 
-![Intune and conditional access when using EMS](../media/intune-with-ca-1.png)
+![Intune and conditional access when using EMS](./media/intune-with-ca-1.png)
 
 Ways to use conditional access with Intune:
 
