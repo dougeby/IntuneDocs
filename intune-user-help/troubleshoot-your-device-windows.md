@@ -34,7 +34,8 @@ Sometimes issues can occur with your Windows device that may be able to be fixed
 
 - [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
 - [I need to update your Windows device](you-need-to-update-your-windows-device.md)
-- [I need to send logs to my IT admin](send-logs-to-your-it-admin-windows.md)
+- [I need to send logs to my IT admin from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md)
+- [I need to send logs to my IT admin from the Settings app](send-logs-to-your-it-admin-settings-windows.md)
 - [My Windows version isn't yet supported](your-windows-version-isnt-yet-supported.md)
 - [I need to enable Windows encryption](you-need-to-enable-windows-encryption.md)
 - [My device needs antimalware software](your-device-needs-antimalware-software.md)

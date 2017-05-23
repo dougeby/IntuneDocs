@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 ---
 
-# Enroll your Windows 10 device in Intune
+# Send logs to your IT admin from the Company Portal app for Windows 10
 
 If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 

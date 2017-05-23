@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Enroll your Windows 10 device in Intune
 
-1.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
+1.  Open the Windows **Settings** app by searching for "settings" in the search bar.
 
 2. Select **Accounts**.
 
