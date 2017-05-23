@@ -26,7 +26,7 @@ ms.custom: intune-enduser
 ---
 
 # Using the Intune Company Portal website
-The [Company Portal website](http://portal.manage.microsoft.com) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
+The [Company Portal website](https://portal.manage.microsoft.com) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
 
 Users can do the following tasks from the Company Portal website:
 
