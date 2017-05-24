@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,21 +31,11 @@ ms.custom: intune-enduser
 
 # Your Android device seems to be encrypted, but Company Portal says otherwise
 
-When you encrypt a device, you are encoding the information on it using a secret key that is known only to you and thus, prevent unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
+When you encrypt a device, you are encoding the information on it using a secret key that is known only to you, which prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
 
-## Specific manufacturer issues
+## Common issues
 
-Some Android devices on version 7.0+ encrypt data in ways that is inconsistent with certain Android platform standards. These devices may seem to be encrypted out of the box, but Intune recognizes the methods used as putting the device's information at risk from malicious users who have physical access to the device.
-
-> [!Note]
-> Microsoft works with all listed manufacturers to resolve this issue, and will update this list accordingly as any fixes are completed.
-
-## An incomplete list of devices
-
-If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent update.
-
-- [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+Newer versions of Android, particularly starting with v7.0, require a startup passcode to make sure that your device is fully encrypted. Different device manufacturers have varying descriptions and locations for the startup passcode. Most of the time, this is referred to as "Secure Startup." 
 
 ## Solutions
 
@@ -55,3 +45,24 @@ Certain Android devices will require you to create a startup PIN to make sure th
 
 ### Downgrade your version of Android
 If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your IT admin to resolve this issue. You can get contact information for your IT admin at the [Company Portal website](http://portal.manage.microsoft.com) for contact information.
+
+## Specific manufacturer issues
+
+Some Android devices on version 7.0+ encrypt data in ways that is inconsistent with certain Android platform standards. These devices may seem to be encrypted out of the box, but Intune recognizes the methods used as putting the device's information at risk from malicious users who have physical access to the device.
+
+> [!Note]
+> Microsoft works with manufacturers to address any issues we find while testing, or that users report to us. We'll update this article whenever new information is available. 
+
+## Known devices
+
+### Known devices that can be updated to fix this issue
+
+If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent version of Android. You can instal the updates for these devices by going to **Settings** > **Update**. 
+
+- [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
+- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+
+### Known devices that currently cannot be updated to fix this issue
+
+- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)
