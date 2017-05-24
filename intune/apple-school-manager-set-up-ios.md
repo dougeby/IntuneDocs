@@ -34,21 +34,20 @@ ms.custom: intune-azure
 This topic helps IT administrators enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) (ASM) program. Microsoft Intune can deploy an enrollment profile “over the air” that enrolls ASM devices into management. The administrator never has to touch each managed device. An ASM profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 
 **ASM Enrollment steps**
-1. [Get an ASM token](#get-the-asm-certificate)
-2. [Assign ASM serial numbers to your Intune server](#assign-apple-asm-serial-numbers-to-your-mdm-server)
-3. [Create an ASM profile](#create-an-apple-dep-profile)
-4. [Connect School Data Sync](#connect-school-data-sync) (Optional)
-5. [Synchronize ASM-managed devices](#sync-asm-managed-devices)
-6. [Assign ASM profile to devices](#assign-a-asm-profile-to-devices)
-7. [Distribute devices to users](#distribute-devices-to-users)
+1. [Get an ASM token and assign devices](#get-the-asm-token-and-assign-devices)
+2. [Create an ASM profile](#create-an-apple-dep-profile)
+3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
+4. [Synchronize ASM-managed devices](#sync-asm-managed-devices)
+5. [Assign ASM profile to devices](#assign-a-asm-profile-to-devices)
+6. [Distribute devices to users](#distribute-devices-to-users)
 
 >[!NOTE]
 >ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or Intune's [device enrollment manager](device-enrollment-manager-enroll.md) account.
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a ASM profile, the device will be unenrolled from Intune.
 
-## Get the Apple ASM token
+## Get the Apple ASM token and assign devices
 
-Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM token (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
+Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM token (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles. While you are in the Apple portal you can also assign device serial numbers to manage.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)

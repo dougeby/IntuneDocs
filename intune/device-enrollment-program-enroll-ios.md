@@ -39,15 +39,14 @@ This topic helps IT administrators  enable iOS device enrollment for devices pur
 
 **DEP Enrollment steps**
 1. [Get an Apple DEP token](#get-the-apple-dep-certificate)
-2. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
-3. [Create a DEP profile](#create-anapple-dep-profile)
-4. [Synchronize DEP-managed devices](#sync-dep-managed-devices)
-5. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
-6. [Distribute devices to users](#distribute-devices-to-users)
+2. [Create a DEP profile](#create-anapple-dep-profile)
+3. [Synchronize DEP-managed devices](#sync-dep-managed-devices)
+4. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
+5. [Distribute devices to users](#distribute-devices-to-users)
 
-## Get the Apple DEP certificate
+## Get the Apple DEP token
 
-Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP certificate (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
+Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 > [!NOTE]
 > If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
@@ -68,6 +67,9 @@ Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.c
    2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
    3.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
    4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
+   5. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
+   6. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
+   7. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 **Step 3. Enter the Apple ID used to create your Apple DEP token.**<br>This ID can be used to renew your Apple DEP token.
 
@@ -79,11 +81,7 @@ Device serial numbers must be assigned to your Intune MDM server in the Apple DE
 
 1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) and sign in with your company Apple ID.
 
-2. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
 
-3. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-
-4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Create an Apple DEP profile
 
@@ -152,19 +150,16 @@ Now that Intune has been assigned permission to manage your DEP devices, you can
 >[!NOTE]
 >You can also assign DEP serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
 
-## Assign a DEP profile to devices
+## Assign a ASM profile to devices
 DEP devices managed by Intune must be assigned a DEP profile before they are enrolled.
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-
-2. On the Intune blade of the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then select **DEP profiles**.
-
-3. From the list of **Apple DEP Enrollment Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
-
-4. Select **Assign** and then select the DEP devices you want to assign this profile. You can filter to view DEP available devices:
+1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program Profiles**.
+2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
+3. Select **Assign** and then select the ASM devices you want to assign this profile. You can filter to view ASM available devices:
   - **unassigned**
   - **any**
   - **&lt;DEP profile name&gt;**
+4. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a ASM profile.
 
   ![Screenshot of Assign button for assigning DEP profile in the Intune portal](media/dep-profile-assignment.png)
 
