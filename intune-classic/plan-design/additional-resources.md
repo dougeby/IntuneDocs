@@ -70,7 +70,7 @@ Here's a list of table templates for each section:
 
 Check out these links for additional information that may be helpful during the Intune deployment planning, design and implementation process.
 
--   [Microsoft Intune Documentation Library]/intune-classic/)
+-   [Microsoft Intune Documentation Library](/intune-classic/)
 
 -   [Intune Blog](https://blogs.technet.microsoft.com/enterprisemobility/)
 

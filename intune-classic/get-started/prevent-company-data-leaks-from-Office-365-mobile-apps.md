@@ -4,7 +4,8 @@
 title: Prevent company data leaks from Office 365 mobile apps  | Microsoft Docs
 description: Use Intune to secure your organization’s data with mobile app management (MAM) policies that help prevent company data leaks from Office 365 mobile apps or other line of business (LOB) apps.
 keywords:
-author: jeffgilbms.author: jeffgilb
+author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: get-started-article
@@ -37,7 +38,7 @@ Would you like to allow your end users to access your Office 365 and LOB app dat
 If yes, Microsoft Intune allows you to set MAM policies for Office 365 mobile apps on iOS and Android, including cut/copy/paste restrictions, preventing ‘save-as’, setting PIN requirements, and the ability to remotely wipe MAM protected data.  This protects company data without requiring users to enroll their devices into an MDM solution while maintaining a great end-user experience with Office mobile apps.
 
 ## How do I do it?
-1.	Get a basic understanding of [how Intune mobile application management /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works.
+1.	Get a basic understanding of [how Intune mobile application management (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works.
 2.	Find out [what you need to do before you can create MAM policies](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in the Azure portal.
 3.	[Create and deploy MAM policies](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) with Intune.
 

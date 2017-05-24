@@ -60,7 +60,7 @@ You might experience challenges or issues that require technical guidance, or sp
 
 -   [General troubleshooting tips for Microsoft Intune](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
 
--   [Learn how to get support for Microsoft Intune.]/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [Learn how to get support for Microsoft Intune.](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 -   [Contact assisted phone support for Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
 
