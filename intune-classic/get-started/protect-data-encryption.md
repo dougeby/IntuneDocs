@@ -52,7 +52,7 @@ This guide can help you protect your company from data loss by forcing passcodes
 2.	[Get ready to configure mobile app management policies](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 3.	[Create and deploy mobile app management policies](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
-## Additional information:](/intune-classic/
-- [Find out about the end user experience for MAM enabled apps with Microsoft Intune.]](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+## Additional information:
+- [Find out about the end user experience for MAM enabled apps with Microsoft Intune.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Decide how to prepare apps for mobile application management with Microsoft Intune.](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 - [View the list of Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
