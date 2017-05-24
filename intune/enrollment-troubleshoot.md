@@ -105,7 +105,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune). See [Set the mobile device management authority](mdm-authority-set.md) for instructions.
 
     > [!NOTE]    
-    >Beginning in Configuration Manager version 1610 and Microsoft Intune version 1705, you can change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Change your MDM authority]( /sccm/mdm/deploy-use/change-mdm-authority). If you have a prior version of Configuration Manager, see [What to do if you choose the wrong MDM authority setting](http://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#contact-microsoft-support).
+    >Beginning in Configuration Manager version 1610 and Microsoft Intune version 1705, you can change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Change your MDM authority]( /sccm/mdm/deploy-use/change-mdm-authority). If you have a prior version of Configuration Manager, see [What to do if you choose the wrong MDM authority setting](http://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#contact-microsoft-support). 
 
 
 2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
