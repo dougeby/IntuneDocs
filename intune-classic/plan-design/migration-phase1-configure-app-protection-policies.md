@@ -36,7 +36,7 @@ App protection policies apply security at the app level and do not require devic
 
 ## App protection policies with LOB apps
 
-You can also extend the mobile app protection policies to your line-of-business /intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) or the Microsoft Intune App Wrapping Tool for both [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) and [Android](https://www.microsoft.com/download/details.aspx?id=47267) platforms.
+You can also extend the mobile app protection policies to your line-of-business (LOB) apps by leveraging the [Microsoft Intune App SDK](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) or the Microsoft Intune App Wrapping Tool for both [IOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) and [Android](https://www.microsoft.com/download/details.aspx?id=47267) platforms.
 
 ## How do app protection policies help during migration?
 

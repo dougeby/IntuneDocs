@@ -13,7 +13,7 @@
   - Devices running Windows 10 IoT Mobile Enterprise
   - Windows Holographic & Windows Holographic Enterprise
 
-  Customers with Enterprise Management + Security /intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
+  Customers with Enterprise Management + Security  (EMS) can also [use Azure Active Directory (AAD) to register Windows 10 devices](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
   Windows 7 and later PCs, with the exception of Windows 10 Home edition, can also be managed with the [Intune software client](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune).
 

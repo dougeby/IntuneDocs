@@ -4,8 +4,8 @@
 title: Intune Wi-Fi settings for Android devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to configure Wi-Fi connections on Android devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

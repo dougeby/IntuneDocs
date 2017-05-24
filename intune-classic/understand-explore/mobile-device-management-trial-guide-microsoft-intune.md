@@ -102,8 +102,8 @@ Intune supports the following device platforms:
 
 The requirements to enable device managemenet depend on the platforms you want to manage.
 - **Android** mobile devices allow users to [enroll using the Company Portal app](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) available from Google Play. No additional configuration in Intune is required.
-- [Set-up requirements for **iOS and Mac OS X**]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Set-up requirements for **Windows Phone**]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [Set-up requirements for **iOS and Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Set-up requirements for **Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
 <!--- ## Verify enrollment--->
 <!--- START HERE
