@@ -53,7 +53,7 @@ After you assign the policy to your Android device or user groups, users should 
 5. From the **Profile type** drop-down list, choose **VPN**.
 3. Choose **Settings** > **Configure** and then configure the VPN profile as per the settings in [How to configure VPN settings](vpn-settings-configure.md) and [Intune VPN settings for Android devices](vpn-settings-android.md).
 
-Take note of the “Connection Name” value you specify when creating the VPN profile. This will be needed in the next step. For example, **MyAppVpnProfile**.
+Take note of the **Connection Name** value you specify when creating the VPN profile. This will be needed in the next step. For example, **MyAppVpnProfile**.
 
 ## Step 2: Create a custom configuration policy
 
