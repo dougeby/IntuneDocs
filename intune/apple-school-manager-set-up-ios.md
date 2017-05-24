@@ -46,44 +46,34 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 >ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or Intune's [device enrollment manager](device-enrollment-manager-enroll.md) account.
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a ASM profile, the device will be unenrolled from Intune.
 
-## Get the Apple ASM certificate
+## Get the Apple ASM token
 
-Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM certificate (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
+Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM token (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - Signed up for [Apple School Management](http://school.apple.com)
 
 **Step 1. Download an Intune public key certificate required to create an Apple ASM token.**<br>
-1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment** and then select **Enrollment Program Token**.
-2. In the **Enrollment Program Token** blade, select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
+1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment** and then select **Enrollment program token**.
+2. In the **Enrollment program token** blade, select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
 
-**Step 2. Create and download an ASM token.**<br>
+**Step 2. Download an ASM token and assign devices.**<br>
 Select **Create a token via Apple School Manager**, and sign in with your company Apple ID. You can use this Apple ID to renew your ASM token.
 
-   1.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then choose **Add MDM Server** (upper right).
+   1.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then select **Add MDM Server** (upper right).
    2.  Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
    3.  Select **Upload File...** in the Apple portal, browse to the .pem file, and select **Save MDM Server** (lower right).
    4.  Select **Get Token** and then download the server token (.p7m) file to your computer.
+   5. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
+   6.	Choose the action **Assign to Server**, and select the **MDM Server** you created.
+   7. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
+   8. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 **Step 3. Enter the Apple ID used to create your ASM token.**<br>This ID should be used to renew your Apple ASM token and is stored for your future reference.
 
 **Step 4. Locate and upload your token.**<br>
 Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. Intune automatically syncs your ASM devices from Apple.
-
-## Assign Apple ASM serial numbers to your MDM server
-Device serial numbers must be assigned to your Intune MDM server in the Apple ASM web portal to allow Intune to manage those devices.
-
-1. Go to the [Apple School Manager Portal](https://school.apple.com) and sign in with your company Apple ID.
-
-2. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
-
-3. 2)	Choose the action **Assign to Server**, and select the **MDM Server** you created.
-
-
-3. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-
-4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 ## Connect School Data Sync
 (Optional) ASM supports synching class roster data to Azure Active Directory (AD) using Microsoft School Data Sync (SDS). Complete the following steps to use SDS to sync school data.
@@ -107,18 +97,18 @@ A device enrollment profile defines the settings applied to a group of devices d
  >[!NOTE]
  >Multifactor authentication (MFA) doesn't work during enrollment on ASM devices with user affinity. After enrollment, MFA works as expected on these devices.
 
- Apple School Manager's Shared iPad mode requires user enroll with user affinity.
+  Apple School Manager's Shared iPad mode requires user enroll with user affinity.
 
  >[!NOTE]
 	>ASM with user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) to be enabled to request user token. [Learn more about WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
-7. Select **Device Management Settings**, configure the following profile settings, and then select **Save**:
+7. Select **Device Management Settings**. These items are set during activation and cannot be changed without a factory reset. configure the following profile settings, and then select **Save**:
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. This item is set during activation and cannot be changed without a factory reset.
+	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu.
 
   - **Shared iPad** - (Requires **Enroll with User Affinity** and **Supervised** mode) Allows multiple users to log on to enrolled iPads with their managed Apple ID created in the Apple School Manager portal.
 
@@ -136,7 +126,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
 	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
-    - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
+    - **Setup Assistant Options** - These settings can be made later in the iOS **Settings** menu if excluded from Setup Assistant.
         - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
         - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
@@ -165,26 +155,21 @@ Now that Intune has been assigned permission to manage your ASM devices, you can
 
     To comply with Apple’s terms for acceptable ASM traffic, Intune imposes the following restrictions:
      -	A full ASM sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-     -	Any sync request is given 10 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+     -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
 
 >[!NOTE]
->You can also assign ASM serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
+>You can also assign ASM serial numbers to profiles from the **Enrollment Program Devices** blade.
 
 ## Assign a ASM profile to devices
 ASM devices managed by Intune must be assigned a ASM profile before they are enrolled.
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-
-2. On the Intune blade of the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then select **ASM profiles**.
-
-3. From the list of **Apple DEP Enrollment Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
-
-4. Select **Assign** and then select the ASM devices you want to assign this profile. You can filter to view ASM available devices:
+1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program profiles**.
+2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
+3. Select **Assign** and then select the ASM devices you want to assign this profile. You can filter to view ASM available devices:
   - **unassigned**
   - **any**
   - **&lt;ASM profile name&gt;**
-
-5. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a ASM profile.
+4. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a ASM profile.
 
 ## Distribute devices to users
 
