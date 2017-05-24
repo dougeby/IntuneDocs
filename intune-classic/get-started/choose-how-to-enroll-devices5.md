@@ -33,7 +33,7 @@ Your answers to this series of questions will help determine the best enrollment
 
 ## **How will you manage shared iOS devices?**
 
-> [!div class="button]
+> [!div class="button"]
 [iOS DEP Enrollment >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 > [!div class="button"]
 [iOS Direct enrollment >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
