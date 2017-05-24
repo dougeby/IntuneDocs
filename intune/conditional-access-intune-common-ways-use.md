@@ -59,7 +59,7 @@ Any device used to access Exchange on-premises is checked for compliance when de
 
 When devices do not meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device non-compliant.
 
-#### How conditional access for Exchange on-premises work?
+#### How conditional access for Exchange on-premises works?
 
 The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
