@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to use Microsoft Intune app configuration policies for Android for Work 
+# How to use Microsoft Intune app configuration policies for Android for Work
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
@@ -56,7 +56,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 6. Select the checkboxes of settings you want to configure with this profile, and then click **OK**.
 7. A list of your selected settings is displayed with the available **Configuration value**. Specify a value for each setting, and then click **OK**.
 
-## Use configuration designer
+## Use JSON editor
 
 1. In the Intune portal, choose **Mobile apps**. Under **Manage**, choose **App configuration policies** and then click **Add**.
 2. Set the following details:
@@ -82,7 +82,7 @@ When the assigned app is run on a device, it will run with the settings that you
 
 ## Preconfigure permissions for apps
 
-You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions such as access to location or the device camera prompt users to accept or deny permissions. For example, if an app uses the device's microphone then the end user is prompted to grant the app permission to use the microphone. 
+You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions such as access to location or the device camera prompt users to accept or deny permissions. For example, if an app uses the device's microphone then the end user is prompted to grant the app permission to use the microphone.
 
 1. Sign into the Azure portal.
 2. On the **Intune** blade, choose **Mobile apps**.
