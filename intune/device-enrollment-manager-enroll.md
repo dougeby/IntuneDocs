@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -34,7 +34,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
 
 >[!NOTE]
->The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), or [device enrollment program](device-enrollment-program-enroll-ios.md). 
+>The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), or [device enrollment program](device-enrollment-program-enroll-ios.md).
 
 ## Example of a device enrollment manager scenario
 
@@ -52,16 +52,16 @@ The DEM user can:
 
 Devices that are enrolled with a device enrollment manager account have the following limitations:
 
-  - There is no specific device "user." Therefore, there is no email or company data access. However VPN, for example, could still be used to provide device apps with access to data.
+  - No per-user access. Because devices don't have an assigned user, the device won't have email or company data access. VPN configurations, for example, could still be used to provide device apps with access to data.
 
-  - There is no conditional access because these are per-user scenarios.
+  - No conditional access because these are per-user scenarios.
 
   - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin has this capability, but the DEM user does not.
 
   - Only the local device appears in the Company Portal app or website.
- 
+
   - Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
- 
+
   - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator or Apple Device Enrollment Program (DEP) to enroll devices.
 
 
@@ -79,6 +79,12 @@ Devices that are enrolled with a device enrollment manager account have the foll
 3.  Select **Add**.
 
 4.  On the **Add User** blade, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
+
+## Permissions for DEM
+
+Global or Intune Service Administrator Azure AD roles are required to perform DEM enrollment tasks and to see all DEM users despite RBAC permissions being listed and available under the custom User role. If a user does not have Global administrator or Intune Service administrator role assigned to them but have read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll only be able to see the DEM users they have created. RBAC role support for these features will be announced in the future.
+
+If a user does not have Global administrator or Intune Service administrator role assigned to them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll only be able to see the DEM users they have created.
 
 ## Remove a device enrollment manager
 
