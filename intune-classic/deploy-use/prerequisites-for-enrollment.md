@@ -56,8 +56,7 @@ Before you enable mobile device enrollment, be sure you've done the following:
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
-> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, you cannot change it without the help of Microsoft Support. See [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
-
+> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the MDM authority, you might be able to change it without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
 
@@ -157,7 +156,13 @@ Now that enrollment is enabled, you should set up management to meet your busine
 
 ## What to do if you choose the wrong MDM authority setting
 
-If you decide that you've chosen the wrong MDM authority setting and need to change it, you must contact Microsoft Support. You cannot change the setting yourself. Before contacting Microsoft Support, review the following information, which describes the information that Microsoft Support will need from you to make the change.
+If you decide that you've chosen the wrong MDM authority setting and need to change it, you have the following options.
+
+### Change the MDM authority yourself
+Beginning in Configuration Manager version 1610 and Microsoft Intune version 1705, you can change the MDM authority from Microsoft Intune to Configuration Manager (hybrid) or vice versa without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Change your MDM authority]( /sccm/mdm/deploy-use/change-mdm-authority).
+
+### Contact Microsoft Support
+When you have Configuration Manager prior to version 1610, you must contact Microsoft Support. You cannot change the setting yourself. Before contacting Microsoft Support, review the following information, which describes the information that Microsoft Support will need from you to make the change.
 
 There are three possible ways that your MDM authority can be reset. In your Support request, you'll need to choose the way that applies to your situation. If the scenario you are requesting is not listed, follow up with Microsoft Support.
 
@@ -169,7 +174,7 @@ Microsoft Support will ask you to confirm the following information:
 
 If you are using coexistence, you need to verify both the Intune and Office 365 checklists.
 
-### Reset MDM authority from Intune to Configuration Manager
+#### Reset MDM authority from Intune to Configuration Manager
 
 Complete these steps before contacting Microsoft Support to reset your MDM authority.
 
@@ -183,7 +188,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 - Delete all polices that are for MDM Devices under **Policy** > **Configuration Policies**.
 - Delete all published applications that are for MDM Devices in **Apps** > **Managed Software**.
 
-### Reset MDM authority from Configuration Manager to Intune
+#### Reset MDM authority from Configuration Manager to Intune
 
 Complete these steps before contacting Microsoft Support to reset your MDM authority.
 
@@ -197,7 +202,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 - Restart the SMS Executive Service.
 - Provide us with some example users so that we can verify, after the process completes, that Configuration Manager licenses were removed.
 
-### Reset MDM authority from Office 365 to Configuration Manager
+#### Reset MDM authority from Office 365 to Configuration Manager
 
 1. Navigate to [https://protection.office.com](https://protection.office.com).
 2. Select the **Security Policies** tab, and select **Device Management**.
@@ -208,7 +213,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 >[!NOTE]
 >The iOS APsN certificate cannot be deleted and remains attached to the account.
 
-### Next steps for MDM authority resets
+#### Next steps for MDM authority resets
 
 Once Microsoft Support verifies the items on the applicable checklist, resetting the MDM authority can take up to three business days, but typically occurs within one day.
 
