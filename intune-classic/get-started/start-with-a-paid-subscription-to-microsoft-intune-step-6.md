@@ -4,7 +4,8 @@
 title: Deploy policies and apps | Microsoft Docs
 description: You can enable policy settings and deploy apps that will be applied as soon as devices are enrolled into management.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -42,7 +43,7 @@ Policies and apps are platform-specific.
 - [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android and Samsung KNOX Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
 - [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
-- [Windows 10 /intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- [Windows 10  (PC and mobile)](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 - [Windows 8.1](/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
 - [Windows Phone 8.1](/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
 - [Windows Team](/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
