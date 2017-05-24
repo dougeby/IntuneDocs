@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is conditional access?
+title: Conditional access with Intune
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune Azure preview."
 keywords:
