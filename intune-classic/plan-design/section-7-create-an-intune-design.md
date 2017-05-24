@@ -304,7 +304,7 @@ Here’s an example how you can document the certificates during the design:
 
 Wi-Fi Profiles are used to automatically connect a mobile device to a wireless network. Intune supports deploying Wi-Fi profiles to all supported platforms.
 
--   Learn more about [how Intune supports Wi-Fi profiles.]/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
+-   Learn more about [how Intune supports Wi-Fi profiles.](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
 
 Below is an example of a design for a Wi-Fi profile:
 
@@ -345,7 +345,7 @@ Intune supports delivering apps to the users or devices in multiple ways. The ty
 
 -   Learn more about [types of apps](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
--   Learn more about [iOS Volume Purchase Program for Business /intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)).
+-   Learn more about [iOS Volume Purchase Program for Business (VPP)](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)).
 
 -   Learn more about [Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 

@@ -122,7 +122,7 @@ For more information, check [Skycure website](https://www.skycure.com/skycure-mi
 
 Here are the steps you need to complete to integrate Intune with Skycure:
 
-1.  [Configure Skycure to use Azure Active Directory Single Sign On /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [Configure Skycure to use Azure Active Directory Single Sign On (SS)](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [Download Skycure iOS app configuration policy](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 

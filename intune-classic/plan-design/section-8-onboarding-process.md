@@ -96,7 +96,7 @@ Before you can begin to set up, configure, manage and enroll devices using Intun
 
 By default, in the Intune admin console, most device platforms are enabled, except for Apple devices (iOS and Mac). Before iOS devices can be enrolled and managed in Intune, the device platform must be enabled. Enabling the iOS device platform consists of a three-step process: create and download the APNs certificate and upload the APNs certificate into Intune.
 
--   Learn more about [how the iOS and Mac device management setup works.]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   Learn more about [how the iOS and Mac device management setup works.](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 
 #### Task 7: Add and deploy terms and conditions policies
 
