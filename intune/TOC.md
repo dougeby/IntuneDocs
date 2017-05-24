@@ -111,6 +111,7 @@
 #### [iOS VPP apps](vpp-apps-ios.md)
 #### [Windows Store for Business apps](windows-store-for-business.md)
 ### [Configure the Company Portal app](company-portal-app.md)
+### [Configure the Managed Browser](app-configuration-managed-browser.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](app-protection-policies.md)
 ### [Get ready for WIP app protection policies](app-protection-policies-configure-windows-10.md)
