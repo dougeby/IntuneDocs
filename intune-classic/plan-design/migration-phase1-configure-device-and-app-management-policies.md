@@ -117,8 +117,8 @@ Enrollment establishes management by provisioning control on the device.
 
 -   Learn [how to enroll corporate-owned devices](/intune-classic/deploy-use/manage-corporate-owned-devices).
 
-If you need to enroll shared or user-less devices, you can use a [device enrollment manager /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+If you need to enroll shared or user-less devices, you can use a [device enrollment manager (DEM account](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 ## Next steps 
 
-[Phase 1: Configure App Protection Policies /intune-classic/plan-design/migration-phase1-configure-app-protection-policies)
+[Phase 1: Configure App Protection Policies (optional)](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies)

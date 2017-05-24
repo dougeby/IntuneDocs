@@ -4,7 +4,8 @@
 title: Choose how to enroll mobile devices | Microsoft Docs
 description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
-author: NathBarnms.author: nathbarn
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: get-started-article
@@ -32,14 +33,14 @@ Your answers to this series of questions will help determine the best enrollment
 
 ## **Which BYOD platform do you want to enable?**
 
+> [!div  class="button"]
+[Android >](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
 > [!div class="button"]
-[Android >]/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune)
+[iOS and Mac >](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 > [!div class="button"]
-[iOS and Mac >]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+[Windows PCs >](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 > [!div class="button"]
-[Windows PCs >]/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-> [!div class="button"]
-[Windows 10 Mobile & Windows Phone >]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+[Windows 10 Mobile & Windows Phone >](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 
 
 > [!div class="button"]

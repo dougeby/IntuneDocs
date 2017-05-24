@@ -4,7 +4,8 @@
 title: Choose how to enroll mobile devices | Microsoft Docs
 description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
-author: NathBarnms.author: nathbarn
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/27/2017
 ms.topic: get-started-article
@@ -32,12 +33,12 @@ Your answers to this series of questions will help determine the best enrollment
 
 ## **How will you manage dedicated, corporate-owned devices?**
 
-  > [!div class="button"]
-[iOS DEP >]/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
-> [!div class="button"]
-[iOS Setup Assistant >]/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-> [!div class="button"]
-[Tag with IMEI >]/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+  > [!div ](/intune-classic/
+[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
+> [!div class="button"](/intune-classic/
+[iOS Setup Assistant >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="b](/intune-classic/
+[Tag with IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   You can enroll corporate-owned devices with dedicated users in the following ways:
 

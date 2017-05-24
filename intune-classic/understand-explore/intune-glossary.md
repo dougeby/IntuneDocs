@@ -61,7 +61,7 @@ ms.custom: intune-classic
 |-|-|
 |Deployment|The act of sending an app or a policy to a device or user you manage.|
 |Deployment action|A choice you make when you [deploy an app](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune). You can choose to make the app installation mandatory, optional, or you can uninstall the app.|
-|Device enrollment manager|Organizations can use Intune to manage large numbers of mobile devices with a single user account. The [device enrollment manager /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) account is a special Intune account that can enroll up to 1,000 devices.|
+|Device enrollment manager|Organizations can use Intune to manage large numbers of mobile devices with a single user account. The [device enrollment manager (DEM) account](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) account is a special Intune account that can enroll up to 1,000 devices.|
 |Device group mapping|Helps you to [automatically add devices to groups](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) based on a category of device (like "Personal", or "Sales") that you, or the end user can assign to the device.|
 
 ## E
@@ -104,8 +104,8 @@ ms.custom: intune-classic
 |||
 |-|-|
 |Managed Browser|A [web browsing application](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.|
-|Mobile application management|[Mobile application management /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
-|Mobile device management|[Mobile device management /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices.
+|Mobile application management|[Mobile application management (MAM)](/intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
+|Mobile device management|[Mobile device management (MDM)](/intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices.
 |MDM authority|The [MDM authority](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
 |Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) for iOS apps you deploy do not expire.|
 |Mobile app configuration policy|An iOS policy that is used to [supply settings to compatible iOS apps](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) when they are run, for example, a company name, or server address.|

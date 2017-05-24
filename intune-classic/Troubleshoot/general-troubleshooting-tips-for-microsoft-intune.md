@@ -61,7 +61,7 @@ After you deploy Microsoft Intune, you might encounter problems with your config
   - [Send Android enrollment errors to your IT administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   With admin console data /intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   With admin console data (for example, for policy implementation issues), examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Research the solution
 
