@@ -48,7 +48,7 @@ After you deploy the policy to your Android device or user groups, users should 
 
 > [!NOTE]
 >
-> Take note of the “VPN Connection name (displayed to users):” value you specify when creating the VPN profile. This will be needed in the next step. For example, MyAppVpnProfile.
+> Take note of the **VPN Connection name (displayed to users):** value you specify when creating the VPN profile. This will be needed in the next step. For example, MyAppVpnProfile.
 
 ### Step 2: Create a custom configuration policy
 
