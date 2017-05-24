@@ -56,7 +56,7 @@ Before you enable mobile device enrollment, be sure you've done the following:
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
-> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, you might be able to change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
+> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the MDM authority, you might be able to change it without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
 

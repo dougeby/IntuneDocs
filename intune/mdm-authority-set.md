@@ -41,7 +41,7 @@ Possible configurations are:
 - **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Office 365 Admin Center. Includes a subset of the capabilities that are available with Intune Standalone. Set the MDM authority in Office 365 Admin Center.
 
 >[!IMPORTANT]    
->Beginning in Configuration Manager version 1610 and Microsoft Intune version 1705, you can change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Change your MDM authority]( /sccm/mdm/deploy-use/change-mdm-authority). If you have a prior version of Configuration Manager, see [What to do if you choose the wrong MDM authority setting](http://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#contact-microsoft-support).
+After you set the MDM authority, you might be able to change it without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
 
 ## Set MDM authority to Intune
 
