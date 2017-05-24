@@ -4,8 +4,8 @@
 title: Wi-Fi connections | Microsoft Docs
 description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
