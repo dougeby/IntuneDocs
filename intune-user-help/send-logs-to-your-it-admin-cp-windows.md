@@ -38,4 +38,6 @@ If you get an error while you’re using the Company Portal app on your Windows 
 
   ![The Send Logs dialog from the Company Portal app's Settings page. The link to click says "Send logs - Send diagnostic logs to your IT administrator to help them solve issues within the Company Portal."](./media/w10-share-logs.png)
 
+You may also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md) to give your IT admin more help in trying to troubleshoot any issues they may find. 
+
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
