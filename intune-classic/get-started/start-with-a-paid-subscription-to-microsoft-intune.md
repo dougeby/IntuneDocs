@@ -4,7 +4,8 @@
 title: Get Started | Microsoft Docs
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -30,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This guide gets you started with your paid subscription to Microsoft Intune. Follow these steps to manage the mobile devices and Windows PCs, as well as apps in your organization. You can follow each step in order, or skip ahead if a step is not applicable to your environment or business needs. If you want to try out Intune, see the [Intune evaluation guide](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
+This guide gets you started with your paid subscription to Microsoft Intune. Follow these steps to manage the mobile devices and Windows PCs, as well as apps in your organization. You can follow each step in order, or skip ahead if a step is not applicable to your environment or business needs. If you want to try out Intune, see the [Intune evaluation guide](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).  
 
 If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
