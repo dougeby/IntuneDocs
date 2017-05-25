@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 
 ---
-# What's new in Microsoft Intune - April 2017
+# What's new in Microsoft Intune - May 2017
 Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
 
 > [!Note]
@@ -33,42 +33,21 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 ## New capabilities
 
-### MyApps available for Managed Browser <!--822308, 822303-->
+### Something
 
-Microsoft MyApps now have better support within the Managed Browser. Managed Browser users who are not targeted for management will be brought directly to the MyApps service, where they can access their admin-provisioned SaaS apps. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
+Something
 
-### New icons for the Managed Browser and the Company Portal <!--918433, 918431, 971473-->
+### Something
 
-The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S). You can see the new icon for the Managed Browser on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
+Something something
 
-The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
+## What's new in the preview of Intune in the Azure portal 
 
-### Sign-in progress indicator in Android Company Portal <!--953374-->
+Throughout the first half of 2017, we've been migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
 
-An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
+New tenants have been started to see the public preview of the new admin experience in the Azure portal this month. While in preview state, capabilities and parity with the existing Intune console will be delivered iteratively.
 
-### Block apps from accessing SharePoint Online <!-- 679339 -->
-
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
-
-### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
-Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
-
-### Improved status messaging in the Company Portal app for iOS <!--744866-->
-New, more specific error messages will now be displayed within the Company Portal app for iOS to provide more accessible information about what is happening on devices. These error cases were previously included in a general error message titled "Company Portal Temporarily Unavailable". Additionally, if a user launches the Company Portal on iOS when they do not have an Internet connection, they will now see a persistent status bar on the homepage saying "No Internet Connection."
-
-### Improved app install status for the Windows 10 Company Portal app <!--676495-->
-
-New improvements for app installs started in the Windows 10 Company Portal app include:
--	Faster install progress reporting for MSI packages
--	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
--	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
-
-You can see the new progress bar on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
-
-### Bulk Enroll Windows 10 devices <!-- 747607 -->
-
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](/intune-classic/deploy-use/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+The admin experience in the Azure portal uses the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at [what's new in the preview](/intune/whats-new).
 
 ## Notices
 
@@ -84,24 +63,9 @@ As part of the migration to Intune on Azure, we are making three appx changes:
 2. Repurposing the existing appx app type to only be targeted to PCs managed through the Intune PC agent.
 3. Converting all existing appxs into MDM appxs with the migration.
 
-#### How does this affect me?
-
 This will not impact any of your existing deployments to devices that are managed through the Intune PC agent. However, after migration, you will not be able to deploy those migrated appxs to any new devices that are managed through the Intune PC agent that were not previously targeted.
 
-#### What action do I need to take
-
 After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune on Azure](https://aka.ms/appxchange) on the Intune Support team blog.  
-
-## What's new in the public preview of the Intune admin experience on Azure <!--736542-->
-
-In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
-
-New trial tenants will start to see the public preview of the new admin experience in the Azure portal this month. While in preview state, capabilities and parity with the existing Intune console will be delivered iteratively.
-
-The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at the [new documentation](/intune/whats-new).
-
-> [!Note]
-> For the Azure portal preview, we’re rolling out the updates for this month. However, the changes may not be available right away due to how the Intune service is rolled out.  Several components of the service must be updated sequentially before the new portal features are available. Look for changes in the Azure portal preview as they roll out later this month. For the complete list of changes, see [What’s new in the Microsoft Intune preview](/intune/whats-new).
 
 ### Administration roles being replaced in Azure portal
 
