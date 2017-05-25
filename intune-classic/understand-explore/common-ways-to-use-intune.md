@@ -46,7 +46,7 @@ Following are short introductions to the six most common scenarios that rely on 
 ## Protecting your on-premises email and data so it can be safely accessed by mobile devices
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
 
-Intune and Microsoft Enterprise Mobility + Security /intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network!
+Intune and Microsoft Enterprise Mobility + Security  (EMS) provide a uniquely integrated [conditional access solution](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network!
 
 Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy.  
 
@@ -58,13 +58,13 @@ In these cases, the only way to access the corporate data is to enroll the devic
 ## Protecting your Office 365 email and data so it can be safely accessed by mobile devices
 Protecting corporate data in Office 365 (email, documents, instant messages, contacts) could not be easier for you or more seamless for your users.
 
-Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements /intune-classic/deploy-use/protect-windows-devices-with-multi-factor-authentication), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
+Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements (performed [multi-factor authentication](/intune-classic/deploy-use/multi-factor-authentication-azure-active-directory), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
 
 The Office mobile apps in their respective app stores are ready to go with data containment policies that you can configure via Intune. This enables you to prevent data from being shared with apps (for example, with native email apps) and storage locations (for example, Dropbox) that aren’t managed by IT. All this functionality is built into Office 365 and EMS. You don't have to deploy additional infrastructure to get this value.
 
 A common Office 365 deployment practice is to require devices to enroll into management if they need to be fully set up with corporate apps, certs, Wi-Fi, or VPN configurations, a common scenario for corporate-owned devices.  
 
-However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps /intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether!  
+However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps (to which you have [applied data containment policies](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether!  
 
 Either way, the Office 365 data will be secured by policies you’ve defined.
 

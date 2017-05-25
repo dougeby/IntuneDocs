@@ -52,6 +52,7 @@
 ### [Enroll Android devices](android-enroll.md)
 ### Enroll iOS devices
 #### [DEP](device-enrollment-program-enroll-ios.md)
+#### [ASM](apple-school-manager-set-up-ios.md)
 #### [Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 #### [Direct enrollment](apple-configurator-direct-enroll-ios.md)
 #### [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
@@ -112,6 +113,7 @@
 #### [iOS VPP apps](vpp-apps-ios.md)
 #### [Windows Store for Business apps](windows-store-for-business.md)
 ### [Configure the Company Portal app](company-portal-app.md)
+### [Configure the Managed Browser](app-configuration-managed-browser.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](app-protection-policies.md)
 ### [Get ready for WIP app protection policies](app-protection-policies-configure-windows-10.md)

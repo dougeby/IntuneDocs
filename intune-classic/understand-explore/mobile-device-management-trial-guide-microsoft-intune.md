@@ -91,7 +91,7 @@ Download the APNs (.pem) certificate, and save the file locally. This Apple ID m
 3.	**Add the APNs certificate to Intune**<BR/>
 In the Microsoft Intune administration console, go to **Administration** > **Mobile Device Management** > **iOS and Mac OS X** > **Upload an APNs Certificate**, and then choose **Upload the APNs certificate**. Go to the certificate (.pem) file, choose **Open**, and then enter your Apple ID. With the APNs certificate. Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
 4.	**Tell your users how to enroll their devices to get access to company resources.**<br/>
-For end-user enrollment instructions, see [Enroll your iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) and [Enroll your Mac OS X device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-mac-os-x). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+For end-user enrollment instructions, see [Enroll your iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) and [Enroll your Mac OS X device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 
 ### Learn more about device enrollment
@@ -102,8 +102,8 @@ Intune supports the following device platforms:
 
 The requirements to enable device managemenet depend on the platforms you want to manage.
 - **Android** mobile devices allow users to [enroll using the Company Portal app](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) available from Google Play. No additional configuration in Intune is required.
-- [Set-up requirements for **iOS and Mac OS X**]/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Set-up requirements for **Windows Phone**]/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+- [Set-up requirements for **iOS and Mac OS X**](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Set-up requirements for **Windows Phone**](/intune-classic/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
 <!--- ## Verify enrollment--->
 <!--- START HERE
