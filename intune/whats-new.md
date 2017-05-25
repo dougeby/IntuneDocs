@@ -77,7 +77,7 @@ You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa 
 
 - **Connections to AirPlay devices** - Controls which [AirPlay devices](airplay-settings-ios.md) (like Apple TV) that end users of iOS device can connect to.
 
-- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Available device actions](device-management.md#available-device-actions)
+- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](../manage-devices/lost-mode.md)
 
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
@@ -127,7 +127,11 @@ We've added support for [multi-user management](windows-enroll.md) for devices t
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
+<<<<<<< HEAD:intune/whats-new.md
 A new [Fresh Start device action](device-management.md#available-device-actions) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+=======
+A new [Fresh Start device action](../manage-devices/fresh-start.md) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+>>>>>>> 828db6c758723920ebacaf9e5857a36a9b945917:intune-azure/introduction/whats-new.md
 
 ### Additional Windows 10 upgrade paths <!-- 903672 -->
 
