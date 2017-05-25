@@ -4,8 +4,8 @@
 title: VPN connections | Microsoft Docs
 description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 05/15/2017
 ms.topic: article

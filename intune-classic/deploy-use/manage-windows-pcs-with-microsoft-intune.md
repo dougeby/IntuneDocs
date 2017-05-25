@@ -84,7 +84,7 @@ While the Intune client software supports [management capabilities that help pro
 
 When you use the Intune client software to manage Windows PCs, you can use only the policies shown under the **Computer Management** section.
 
-Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
+Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you manage Active Directory domain-joined computers with Intune, [ensure that Intune policies do not conflict with other GPOs](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
 
