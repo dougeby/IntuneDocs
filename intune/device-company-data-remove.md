@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Remove company data from Intune-managed devices
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Remove company data** removes only company data from devices managed by Intune. Does not remove personal data from the device. The device will no longer be managed by Intune, and will no longer be able to access corporate resources (not supported for Windows devices that are joined to Azure Active Directory).
 

@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # How to view Intune device inventory
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them. 
 

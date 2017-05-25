@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Reset the passcode on Intune-managed devices
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Reset passcode** action generates a new passcode for the device which will be displayed on the <*device name*> **Overview** blade.
 

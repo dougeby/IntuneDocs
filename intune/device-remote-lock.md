@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Remotely lock managed devices with Intune
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Remote lock** device locks the selected device. The device owner must use their passcode to unlock it. You can only remotely lock a device that has a PIN or password set.
 

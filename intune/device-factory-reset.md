@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Reset Intune-managed devices to factory settings
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Factory reset** returns a device to its default settings. The device will no longer be managed by Intune and both company and personal data are removed. You cannot undo this action.
 
