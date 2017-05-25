@@ -31,13 +31,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an Android for Work app.
+Use app configuration policies in Microsoft Intune to supply settings that might be available when users run an Android for Work app. Not all apps support app configuration. Check with the app’s developer to see whether or not they have built their app to support app configuration policies.
 
-If users enter these settings incorrectly, this can increase the burden on your help desk and slow the adoption of new apps.
+App configuration policies can help you pre-configure available app settings for your users before they run the app. Some Android apps support managed configurations options that you can configure in the Intune console with the [configuration designer](#use-configuration-designer). Some configuration settings on apps (such as those with Bundle types) cannot be configured with the configuration designer.  You will need to use the [JSON editor](#use-json-editor) for those values.   Settings are supplied to apps automatically when the app is installed.
 
-App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. Some Android apps support managed configurations options that you can configure in the Intune console with the [configuration designer](#use-configuration-designer). Others can be set by defining  values in the [JSON editor](#use-json-editor). Settings are supplied to apps automatically, and users need to take no action.
-
-You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings will be used whenever the app checks for them (typically, the first time it is run).
+You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings is used when the app checks for them, typically the first time it is run).
 
 ## Use configuration designer
 
@@ -45,16 +43,17 @@ You do not assign these policies directly to users and devices. Instead, you ass
 2. Set the following details:
     - **Name** - The name of the profile that will appear in the Intune console
     - **Description** - The  description of the profile that will appear in the Intune console
-    - **Platform** - Select **Android for Work**
-    - **Enrollment type** - Select **Devices with enrollment**
-3. Select **Configuration settings**.
-4. For **Configuration settings format**, select **Use configuration designer**.
-5. Choose **Add**. A list of  available configuration settings is displayed.  The list includes:
+    - **Platform** - Select **Android**
+    - **Device enrollment type** - **Enrolled with Intune** is pre-selected for you.
+3. Select **Associated App** to choose the app for which you want to define a configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune
+4. Select **Configuration settings**.
+5. For **Configuration settings format**, select **Use configuration designer**.
+6. Choose **Add**. A list of  available configuration settings is displayed. The list includes:
     - **Configuration keys** - Name of the setting.
     - **Value type** - The setting that can be configured, for example **Boolean** or **String**.
     - **Description** - A description of the configuration setting.
-6. Select the checkboxes of settings you want to configure with this profile, and then click **OK**.
-7. A list of your selected settings is displayed with the available **Configuration value**. Specify a value for each setting, and then click **OK**.
+7. Select the checkboxes of settings you want to configure with this profile, and then click **OK**.
+8. A list of your selected settings is displayed with the available **Configuration value**. Specify a value for each setting, and then click **OK**.
 
 ## Use JSON editor
 
@@ -62,12 +61,12 @@ You do not assign these policies directly to users and devices. Instead, you ass
 2. Set the following details:
     - **Name** - The name of the profile that will appear in the Intune console
     - **Description** - The  description of the profile that will appear in the Intune console
-    - **Platform** - Select **Android for Work**
-    - **Enrollment type** - Select **Devices with enrollment**
-2.  In the list of policies blade, choose **Add**.
-3. Select **Configuration settings**.
-4. For **Configuration settings format**, select **Enter JSON editor**.
-5. In the editor you can define JSON values for configuration settings. You can choose **Download JSON template** to download a sample file that you can then configure.
+    - **Platform** - Select **Android**
+    - **Device enrollment type** - **Enrolled with Intune** is pre-selected for you.
+3. Select **Associated App** to choose the app for which you want to define a configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune.
+5. Select **Configuration Settings**.
+6. For **Configuration settings format**, select **Enter JSON editor**.
+7. In the editor you can define JSON values for configuration settings. You can choose **Download JSON template** to download a sample file that you can then configure.
 8. When you're done, choose **OK** and then click **Add**.
 
 The policy will be created and appears on the policies list blade.
@@ -76,28 +75,23 @@ Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the ap
 
 When the assigned app is run on a device, it will run with the settings that you configured in the app configuration policy.
 
-> [!TIP]
-> If one or more app configuration policies conflict, neither policy is enforced.
-
-
-## Preconfigure permissions for apps
+## Preconfigure permissions grant state for apps
 
 You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions such as access to location or the device camera prompt users to accept or deny permissions. For example, if an app uses the device's microphone then the end user is prompted to grant the app permission to use the microphone.
 
-1. Sign into the Azure portal.
-2. On the **Intune** blade, choose **Mobile apps**.
-3. In the **Mobile apps** workload, choose **App configuration Policies** > **Android for Work**.
-4. Set the following details:
+1. In the Intune portal, choose **Mobile apps**. Under **Manage**, choose **App configuration policies** and then click **Add**.
+2. Set the following details:
     - **Name** - The name of the profile that will appear in the Intune console
     - **Description** - The  description of the profile that will appear in the Intune console
-    - **Platform** - Select **Android for Work**
-    - **Enrollment type** - Select **Devices with enrollment**
+    - **Platform** - Select **Android**
+    - **Device enrollment type** - **Enrolled with Intune** is pre-selected for you.
+3. Select **Associated App** to choose the app for which you want to define a configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune.
 5. Select **Permissions** and then choose **Add**.
-6. Select from the list of available device permissions adn then choose **OK**.
+6. 5.	Select from the list of available app permissions and then choose **OK**.
 7. Select an option for each permission to grant with this policy:
     - **Prompt** - Prompt the user to accept or deny.
     - **Auto grant** - Automatically approve without notifying the user.
     - **Auto deny** - Automatically deny without notifying the user.
-8. To assign the app configuration policy, select the app configuratiopn policy, select **Assignment**, and then select **Select groups**.
+8. To assign the app configuration policy, select the app configuration policy, select **Assignment**, and then select **Select groups**.
 9. Select the user groups to assign, and then choose **Select**.
 10. Choose **Save** to assign the policy.
