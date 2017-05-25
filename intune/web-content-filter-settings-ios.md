@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Web content filter settings for iOS devices
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 Use these settings to configure URLs that end users of web browsers, on iOS devices, can, or cannot visit. There are two methods you can use to do this.
 
