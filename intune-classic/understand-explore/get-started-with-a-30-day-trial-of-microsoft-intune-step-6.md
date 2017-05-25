@@ -50,11 +50,9 @@ Intune has a wide variety of capabilities beyond those shown in these short setu
 
 -   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
-To learn about the full capabilities of Intune, see:
-- [Enrolled device management capabilities in Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Windows PC management capabilities in Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+To learn about the full capabilities of Intune, see [Enrolled device management capabilities in Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune).
 
-To learn more about capabilities that were recently introduced to Intune, see [What's new in Microsoft Intune](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune).
+To learn more about capabilities that were recently introduced to Intune, see [What's new in Microsoft Intune](/intune-classic/whats-new/whats-new-in-microsoft-intune).
 
 Support options are described in [How to get support for Microsoft Intune](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune), and you can join discussions about Intune in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
