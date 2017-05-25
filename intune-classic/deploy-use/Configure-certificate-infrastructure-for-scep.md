@@ -2,8 +2,8 @@
 title: Configure certificate infrastructure for SCEP | Microsoft Docs
 description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/15/2016
 ms.topic: article
