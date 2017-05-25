@@ -55,4 +55,4 @@ When you add a computer:
 
 -   Your IT admin might enforce policies on the computer. For example, you might be required to set a password or PIN on the computer. Your IT admin might also limit how many times you can enter an incorrect password, and might lock you out of the computer or delete all data from your computer’s hard drive if you try too many times.
 
-If you have questions, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
