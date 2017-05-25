@@ -6,7 +6,7 @@ description: Learn how to sign line of business apps so you can use Intune to de
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod:
 ms.service:
@@ -34,14 +34,14 @@ As an Intune administrator, you can deploy line-of-business (LOB) apps to Window
 
 -   Sign company line-of-business apps so Intune can deploy them to Windows devices
 
-The steps below will help you get the required certificate and sign the apps. You will need a Windows Phone Dev Center account and then you will need to purchase a Symantec certificate.
+The steps below will help you get the required certificate and sign the apps. You will need to register as a Microsoft developer, and then purchase a Symantec certificate.
 
 
-1. **Join the Windows Phone Dev Center**<br>
-   Join the [Windows Phone Dev Center](http://go.microsoft.com/fwlink/?LinkId=268442) using corporate account information when logging in to purchase your company account. This request will need to be authorized by a company officer before you receive a code-signing certificate.
+1. **Register as a Microsoft developer**<br>
+   [Register as a Microsoft developer](http://go.microsoft.com/fwlink/?LinkId=268442) using the corporate account information you used when logging in to purchase your company account. This request will need to be authorized by a company officer before you receive a code-signing certificate.
 
 2. **Get a company Symantec certificate**<br>
-  Purchase a certificate from the [Symantec website](http://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated in your Windows Phone Dev Center account will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
+  Purchase a certificate from the [Symantec website](http://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated when you registered as a Microsoft developer will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
 
 3.  **Import certificates**<br>
     Once the request has been approved, you will receive an email containing instructions for importing certificates. Follow the instructions in the email to import the certificates.
