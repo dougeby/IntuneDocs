@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This topic helps administrators who are ready to start using Microsoft Intune to manage devices and services for their users. If you aren't ready to buy Intune, you can [evaluate the service with an Intune trial account](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).
+This topic helps administrators who are ready to start using Microsoft Intune to manage devices and services for their users. If you aren't ready to buy Intune, you can [evaluate the service with an Intune trial account](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).
 
 This guide includes:
 - [Quick start guide for Intune](start-with-a-paid-subscription-to-microsoft-intune.md) - Step-by-step instructions to transfer your trial subscription from testing to enterprise management or to set up a new subscription for your organization

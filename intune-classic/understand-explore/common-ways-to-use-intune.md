@@ -58,7 +58,7 @@ In these cases, the only way to access the corporate data is to enroll the devic
 ## Protecting your Office 365 email and data so it can be safely accessed by mobile devices
 Protecting corporate data in Office 365 (email, documents, instant messages, contacts) could not be easier for you or more seamless for your users.
 
-Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements (performed [multi-factor authentication](/intune-classic/deploy-use/protect-windows-devices-with-multi-factor-authentication), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
+Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements (performed [multi-factor authentication](/intune-classic/deploy-use/multi-factor-authentication-azure-active-directory), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
 
 The Office mobile apps in their respective app stores are ready to go with data containment policies that you can configure via Intune. This enables you to prevent data from being shared with apps (for example, with native email apps) and storage locations (for example, Dropbox) that aren’t managed by IT. All this functionality is built into Office 365 and EMS. You don't have to deploy additional infrastructure to get this value.
 
