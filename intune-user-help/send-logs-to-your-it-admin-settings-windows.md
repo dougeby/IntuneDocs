@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Send logs to your IT admin from the Settings app for Windows 10
 
-If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+If you get an error while you’re using your Windows 10 device that is managed by your company, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
 1.	Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
 2.	Go to **Accounts** > **Access work or school**.
@@ -39,5 +39,7 @@ If you get an error while you’re using the Company Portal app on your Windows 
   ![The "Access work or school screen", which presents the Export option underneath the "Related settings" heading.](./media/w10-export-logs.png)
 
 4. The logs will be saved in **C:\Users\Public\Public Documents\MDMDiagnostics**. Two files will be created: one is the log itself, and the other is a special document that allows your admin to review the logs in different programs, like Microsoft Excel. Attach both of these files to an email and send that email to your admin. If you do this more than once, simply choose the files from the day you created the logs. 
+
+You may also need to send [logs from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md) to give your IT admin more help in trying to troubleshoot any issues they may find. 
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
