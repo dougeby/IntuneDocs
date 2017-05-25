@@ -4,8 +4,8 @@
 title: Certificate profiles for resource access | Microsoft Docs
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article

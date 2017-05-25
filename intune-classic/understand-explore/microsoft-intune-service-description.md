@@ -85,7 +85,7 @@ Use these resources to learn more about Intune:
 - [Enrolled device management capabilities of Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### See also
-[Microsoft Intune]/intune-classic/)
+[Microsoft Intune](/intune-classic/)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
 [What's new in Microsoft Intune](/intune-classic/deploy-use/whats-new-in-microsoft-intune)

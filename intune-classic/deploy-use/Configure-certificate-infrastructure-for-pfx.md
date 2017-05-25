@@ -2,8 +2,8 @@
 title: Configure certificate infrastructure for PFX | Microsoft Docs
 description: Create and deploy .PFX certificate profiles.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article

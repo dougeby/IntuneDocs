@@ -172,7 +172,7 @@ In early calendar year 2017, we will be migrating our full admin experience onto
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](/intune/what-is-intune).
 
 __Telecom expense management integration in public preview of Azure portal__ <!--747605-->
-We are now beginning to preview integration with third-party telecom expense management /intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com/). To enable this feature in your trial tenant, please [contact Microsoft support](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ### New Capabilities
 
@@ -296,7 +296,7 @@ You can now prevent printing company data from apps that have MAM policies. This
 <!--TFS 1014328-->
 
 ### Support for fingerprints on Android devices
-Android mobile app management /intune-classic/deploy-use/android-mam-policy-settings).
+Android mobile app management (MAM) policies now allow users to access an app with their fingerprint instead of typing out their PIN. See this and other [mobile app management policy settings for Android here](/intune-classic/deploy-use/android-mam-policy-settings).
 
 ### Notices
 
@@ -443,7 +443,7 @@ With the release of the new RMS sharing app, we are removing the following Intun
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
 
-Instead of using the Intune Viewer apps, we recommend using the new [Rights Management app /intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. When the Intune viewer app is no longer supported, it will be removed from the Google Store and will not be available for future use.
+Instead of using the Intune Viewer apps, we recommend using the new [Rights Management app (RMS sharing) for Android](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. When the Intune viewer app is no longer supported, it will be removed from the Google Store and will not be available for future use.
 
 ### Device management
 __Android 7.0 support__

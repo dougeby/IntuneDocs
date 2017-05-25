@@ -46,11 +46,12 @@ Following are short introductions to the six most common scenarios that rely on 
 ## Protecting your on-premises email and data so it can be safely accessed by mobile devices
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
 
-Intune and Microsoft Enterprise Mobility + Security /intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network!
+
+Intune and Microsoft Enterprise Mobility + Security  (EMS) provide a uniquely integrated [conditional access solution](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network!
 
 Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy.  
 
-In these cases, the only way to access the corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data.  Additionally, Intune’s [App Wrapping Tool and App SDK](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) can  help contain the accessed data within your line of business app, so that it can’t pass corporate data to consumer apps or services.
+In these cases, the only way to access the corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) can help contain the accessed data within your line of business app, so that it can’t pass corporate data to consumer apps or services.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -58,13 +59,18 @@ In these cases, the only way to access the corporate data is to enroll the devic
 ## Protecting your Office 365 email and data so it can be safely accessed by mobile devices
 Protecting corporate data in Office 365 (email, documents, instant messages, contacts) could not be easier for you or more seamless for your users.
 
-Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements /intune-classic/deploy-use/protect-windows-devices-with-multi-factor-authentication), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
+
+Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated conditional access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements (performed [multi-factor authentication](/intune-classic/deploy-use/multi-factor-authentication-azure-active-directory), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
+
 
 The Office mobile apps in their respective app stores are ready to go with data containment policies that you can configure via Intune. This enables you to prevent data from being shared with apps (for example, with native email apps) and storage locations (for example, Dropbox) that aren’t managed by IT. All this functionality is built into Office 365 and EMS. You don't have to deploy additional infrastructure to get this value.
 
 A common Office 365 deployment practice is to require devices to enroll into management if they need to be fully set up with corporate apps, certs, Wi-Fi, or VPN configurations, a common scenario for corporate-owned devices.  
 
-However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps /intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether!  
+
+However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps (to which you have applied [data containment policies](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether!  
+
+
 
 Either way, the Office 365 data will be secured by policies you’ve defined.
 
@@ -94,13 +100,11 @@ Then the employee launches the Intune Company Portal app to access the optional 
 ## Issue limited-use shared tablets to your employees
 Employees are increasingly making use of mobile technologies. For example, shared tablets are now commonly used by retail store employees.  Whether they're used to process a sale or instantly check inventory, tablets help create great customer interactions.
 
-Simplicity of the user experience is critical in this case. For this reason, tablets are usually handed to employees in a limited-use mode, such that a single line-of-business app is the only thing that the employee can interact with. Intune enables you to bulk provision, secure, and centrally manage these shared [iOS](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) tablets that can be configured to run in this limited-use mode.
+Simplicity of the user experience is critical in this case. For this reason, tablets are usually handed to employees in a limited-use mode, such that a single line-of-business app is the only thing that the employee can interact with. Intune enables you to bulk provision, secure, and centrally manage these shared [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune#general-configuration-policy-settings) and [Android](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune#general-configuration-policy) tablets that can be configured to run in this limited-use mode.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Enable your employees to securely access Office 365 from an unmanaged public kiosk
 Sometimes your employees need to use devices, apps, or browsers that you can’t manage, such as the public computers at trade shows and in hotel lobbies.
 
-Should you allow your employees to access corporate email from them? With Intune and Microsoft Enterprise Mobility + Security, <!--you have choices. The--> the answer can simply be “no”, by [limiting email access to devices that are managed by your organization](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  This ensures that your strongly authenticated employee doesn't accidentally leave corporate data on the untrusted computer.
-
-<!-- Learn more about how to plan and deploy Intune to support kiosks. -->
+Should you allow your employees to access corporate email from them? With Intune and Microsoft Enterprise Mobility + Security, the answer can simply be “no”, by [limiting email access to devices that are managed by your organization](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).  This ensures that your strongly authenticated employee doesn't accidentally leave corporate data on the untrusted computer.

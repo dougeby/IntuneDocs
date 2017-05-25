@@ -33,7 +33,7 @@ ms.custom: intune-classic
 This article walks you through a sign-up for an Intune trial and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](/intune/what-is--intune) more useful after you complete the steps in this article.
+> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](/intune/what-is-intune) more useful after you complete the steps in this article.
 
 ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -60,7 +60,7 @@ If your trial is in the **Azure portal**, go to https://portal.azure.com and sig
 ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
