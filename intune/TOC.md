@@ -141,6 +141,7 @@
 #### [Home screen layout for iOS](home-screen-settings-ios.md)
 #### [App notifications for iOS](app-notification-settings-ios.md)
 #### [Shared devices for iOS](shared-device-settings-ios.md)
+#### [Web filter settings for iOS](web-content-filter-settings-ios.md)
 
 ### [Configure device restrictions](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)

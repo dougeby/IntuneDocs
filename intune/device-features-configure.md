@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,6 +52,7 @@ Use the information in this topic to learn the basics about configuring device f
 	- [Home screen layout settings for iOS](home-screen-settings-ios.md)
 	- [App notification settings for iOS](app-notification-settings-ios.md)
 	- [Shared device configuration settings for iOS](shared-device-settings-ios.md)
+	- [Web content filter settings for iOS](web-content-filter-settings-ios.md)
 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
