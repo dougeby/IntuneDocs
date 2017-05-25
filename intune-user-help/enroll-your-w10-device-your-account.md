@@ -32,8 +32,8 @@ ms.custom: intune-enduser
 
 1.  Open the Windows **Settings** app by searching for "settings" in the search bar.
 
-> [!NOTE]
-> Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
+  > [!NOTE]
+  > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
 2.  Go to **Start**.
 
