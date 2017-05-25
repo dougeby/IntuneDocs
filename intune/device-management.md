@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # What is Microsoft Intune device management?
 
 
-[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
 The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices. To access the workload:
 
@@ -40,16 +40,16 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 Now, you can perform the following actions. For more information, click one of the related links:
 
-- [View device inventory](/intune-azure/manage-devices/device-inventory.md)
+- [View device inventory](device-inventory.md)
 - Perform remote device actions:
-	- [Remove company data](/intune-azure/manage-devices/remove-company-data.md) 
-	- [Factory reset](/intune-azure/manage-devices/factory-reset.md)
-	- [Remote lock](/intune-azure/manage-devices/remote-lock.md)
-	- [Reset passcode](/intune-azure/manage-devices/reset-passcode.md)
-	- [Bypass Activation Lock](/intune-azure/manage-devices/bypass-activation-lock.md)
-	- [Fresh Start](/intune-azure/manage-devices/fresh-start.md)
-	- [Lost mode](/intune-azure/manage-devices/lost-mode.md)
-	- [Locate device](/intune-azure/manage-devices/locate-device.md)
-	- [Restart](/intune-azure/manage-devices/restart-device.md)
+	- [Remove company data](device-company-data-remove.md) 
+	- [Factory reset](device-factory-reset.md)
+	- [Remote lock](device-remote-lock.md)
+	- [Reset passcode](device-passcode-reset.md)
+	- [Bypass Activation Lock](device-activation-lock-bypass.md)
+	- [Fresh Start](device-fresh-start.md)
+	- [Lost mode](device-lost-mode.md)
+	- [Locate device](device-locate.md)
+	- [Restart](device-restart.md)
 - Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions. 
 ![Monitor device actions](./media/monitor-device-actions.png)
