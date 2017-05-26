@@ -660,7 +660,7 @@
 	},
 	{
 		"source_path": "intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx.md",
-		"redirect_url": "/intune/certficates-pfx-configure",
+		"redirect_url": "/intune/certificates-pfx-configure",
 		"redirect_document_id": true
 	},
 	{
