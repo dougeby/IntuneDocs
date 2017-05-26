@@ -1704,16 +1704,6 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/includes/azure_preview.md",
-		"redirect_url": "/intune/azure_preview",
-		"redirect_document_id": true
-	},
-	{
-		"source_path": "intune/index.md",
-		"redirect_url": "/intune/what-is-intune",
-		"redirect_document_id": false
-	},
-	{
 		"source_path": "intune/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
 		"redirect_url": "/intune/phone-support-contact",
 		"redirect_document_id": true
