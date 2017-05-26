@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Set terms and conditions in Microsoft IntunetitleSuffix: "Intune Azure preview"
+title: Set terms and conditions in Microsoft Intune
+titleSuffix: "Intune Azure preview"
 description: "Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: nathbarn
@@ -27,7 +28,7 @@ ms.custom: intune-azure
 
 # Ensure users accept company terms for access
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 As an Intune admin, you can choose to require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access company resources like apps and email. Configuration of terms and conditions is optional.
 
@@ -53,13 +54,20 @@ Complete these steps to create terms and conditions. The display name and descri
 
    ![Screenshot of end user terms and conditions acceptance screen with summary of terms](./media/terms-summary-create.png)
 
-   - **Title**: The title that users see in the Company Portal.
-
+   - **Title**: The name for your terms that users see in the Company Portal above the **Summary**.
    - **Summary of Terms**: Text that explains what it means if users accept the terms. Eg "By enrolling your device, you are agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
-
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
 
 6. Select **Ok** and then select **Create**.
+
+## See how terms are displayed to your users
+The following example shows the **Title** and **Summary of Terms** in the admin console and Company Portal.
+
+![Screenshot of the Title and Summary of Terms in the admin console and Company Portal.](./media/terms-summary-terms.png)
+
+The following example shows the terms and conditions in the admin console and the Company Portal.
+
+![Screenshot of terms and conditions in the admin console and Company Portal.](./media/terms-properties-terms.png)
 
 ## Assign terms and conditions
 
@@ -76,7 +84,6 @@ You can assign terms and conditions to groups of user who must accept them befor
 
 5. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal.
 
-   ![Screenshot of end user terms and conditions acceptance screen with summary of terms](./media/terms-summary-accept.png)
 
 ## Monitor a terms and conditions
 
