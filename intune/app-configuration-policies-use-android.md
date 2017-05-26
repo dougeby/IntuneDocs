@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,7 +87,7 @@ You can also preconfigure permission for apps to access Android device features.
     - **Device enrollment type** - **Enrolled with Intune** is pre-selected for you.
 3. Select **Associated App** to choose the app for which you want to define a configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune.
 5. Select **Permissions** and then choose **Add**.
-6. 5.	Select from the list of available app permissions and then choose **OK**.
+6. Select from the list of available app permissions and then choose **OK**.
 7. Select an option for each permission to grant with this policy:
     - **Prompt** - Prompt the user to accept or deny.
     - **Auto grant** - Automatically approve without notifying the user.
