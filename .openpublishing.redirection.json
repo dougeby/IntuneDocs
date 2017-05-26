@@ -2,8 +2,8 @@
   "redirections": [
     {
         "source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
-        "redirect_url": "https://docs.microsoft.com/intune/device-compliance",
-        "redirect_document_id": true
+        "redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
+        "redirect_document_id": false
     },
     {
         "source_path": "intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
@@ -310,28 +310,28 @@
     },
     {
         "source_path": "intune-azure/enroll-devices/enroll-window-devices.md",
-        "redirect_url": "https://docs.microsoft.com/intune/windows-enroll",
-        "redirect_document_id": true
+        "redirect_url": "/intune/enroll-devices/enroll-windows-devices",
+        "redirect_document_id": false
     },
     {
         "source_path": "intune-azure/enroll-devices/set-up-windows-phone-management.md",
-        "redirect_url": "https://docs.microsoft.com/intune/windows-enroll",
+        "redirect_url": "/intune/enroll-devices/enroll-windows-devices",
         "redirect_document_id": false
     },
     {
         "source_path": "intune-azure/enroll-devices/set-up-windows-device-management.md",
-        "redirect_url": "https://docs.microsoft.com/intune/windows-enroll",
+        "redirect_url": "/intune/enroll-devices/enroll-windows-devices",
         "redirect_document_id": false
     },
     {
         "source_path": "intune-azure/enroll-devices/enroll-windows-pcs-as-mobile-devices.md",
-        "redirect_url": "https://docs.microsoft.com//intune/windows-enroll",
+        "redirect_url": "/intune/enroll-devices/enroll-windows-devices",
         "redirect_document_id": false
     },
     {
         "source_path": "intune-azure/enroll-devices/ios-device-enrollment-program-devices.md",
-        "redirect_url": "https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios",
-        "redirect_document_id": true
+        "redirect_url": "/intune/enroll-devices/enroll-ios-devices-using-device-enrollment-program",
+        "redirect_document_id": false
     },
     {
         "source_path": "intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune.md",
@@ -620,681 +620,1351 @@
 	},
   	{
 		"source_path": "intune-azure/access-control/role-based-access-control.md",
-		"redirect_url": "https://docs.microsoft.com/intune/role-based-access-control",
-		"redirect_document_id": true
+		"redirect_url": "/intune/access-control/role-based-access-control",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises.md",
-		"redirect_url": "/intune/conditional-access-exchange-create",
-		"redirect_document_id": true
+		"redirect_url": "/intune/conditional-access/create-conditional-access-policy-for-exchange-on-premises",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/conditional-access/install-intune-on-premises-exchange-connector.md",
-		"redirect_url": "/intune/exchange-connector-install",
-		"redirect_document_id": true
+		"redirect_url": "/intune/conditional-access/install-intune-on-premises-exchange-connector",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md",
-		"redirect_url": "/intune/conditional-access-exchange-monitor",
-		"redirect_document_id": true
+		"redirect_url": "/intune/conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/conditional-access/what-is-conditional-access.md",
-		"redirect_url": "/intune/conditional-access",
-		"redirect_document_id": true
+		"redirect_url": "/intune/conditional-access/what-is-conditional-access",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/air-print-settings-for-ios-and-macos.md",
-		"redirect_url": "/intune/air-print-settings-ios-macos",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/air-print-settings-for-ios-and-macos",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/airplay-settings-for-ios-devices.md",
-		"redirect_url": "/intune/airplay-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/airplay-settings-for-ios-devices",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/app-notification-settings-for-ios.md",
-		"redirect_url": "/intune/app-notification-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/app-notification-settings-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx.md",
-		"redirect_url": "/intune/certificates-pfx-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/configure-certificate-infrastructure-for-pfx",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/configure-certificate-infrastructure-for-scep.md",
-		"redirect_url": "/intune/certificates-scep-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/configure-certificate-infrastructure-for-scep",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/create-custom-vpn-profiles.md",
-		"redirect_url": "/intune/custom-vpn-profiles-create",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/create-custom-vpn-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-android-for-work.md",
-		"redirect_url": "/intune/custom-settings-android-for-work",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-android-for-work",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-for-android.md",
-		"redirect_url": "/intune/custom-settings-android",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-for-android",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-for-ios.md",
-		"redirect_url": "/intune/custom-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-for-macos.md",
-		"redirect_url": "/intune/custom settings-macos",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-for-macos",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-for-windows-10.md",
-		"redirect_url": "/intune/custom-settings-windows-10",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-for-windows-10",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-for-windows-phone-8-1.md",
-		"redirect_url": "/intune/custom-settings-windows-phone-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-for-windows-phone-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md",
-		"redirect_url": "/intune/samsung-knox-apps-allow-block",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-afw.md",
-		"redirect_url": "/intune/device-restrictions-android-for-work",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-afw",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-android.md",
-		"redirect_url": "/intune/device-restrictions-android",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-android",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-ios.md",
-		"redirect_url": "/intune/device-restrictions-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-macos.md",
-		"redirect_url": "/intune/device-restrictions-macos",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-macos",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-windows-10-team.md",
-		"redirect_url": "/intune/device-restrictions-windows-10-teams",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-windows-10-team",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-windows-10.md",
-		"redirect_url": "/intune/device-restrictions-windows-10",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-windows-10",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-windows-8-1.md",
-		"redirect_url": "/intune/device-restrictions-windows-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-windows-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/device-restrictions-for-windows-phone-8-1.md",
-		"redirect_url": "/intune/device-restrictions-windows-phone-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/device-restrictions-for-windows-phone-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/email-profile-settings-for-android.md",
-		"redirect_url": "/intune/email-settings-android",
-		"redirect_document_id": true
+		"redirect_url": "/intune/nfigure-devices/email-profile-settings-for-android",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/email-profile-settings-for-ios.md",
-		"redirect_url": "/intune/email-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/email-profile-settings-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/email-profile-settings-for-windows-10.md",
-		"redirect_url": "/intune/email-settings-windows-10",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/email-profile-settings-for-windows-10",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/email-profile-settings-for-windows-phone-8-1.md",
-		"redirect_url": "/intune/email-settings-windows-phone-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/email-profile-settings-for-windows-phone-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/home-screen-settings-for-ios.md",
-		"redirect_url": "/intune/home-screen-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/home-screen-settings-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-assign-device-profiles.md",
-		"redirect_url": "/intune/device-profile-assign",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-assign-device-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-certificates.md",
-		"redirect_url": "/intune/certificates-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-certificates",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-custom-settings.md",
-		"redirect_url": "/intune/custom-settings-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-custom-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-device-features.md",
-		"redirect_url": "/intune/device-features-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-device-features",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-device-restrictions.md",
-		"redirect_url": "/intune/device-restrictions-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-device-restrictions",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-education-settings.md",
-		"redirect_url": "/intune/education-settings-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-education-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-email-settings.md",
-		"redirect_url": "/intune/email-settings-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-email-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-ios-edu-settings.md",
-		"redirect_url": "/intune/education-settings-configure-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-ios-edu-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-vpn-settings.md",
-		"redirect_url": "/intune/vpn-settings-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-vpn-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-wi-fi-settings.md",
-		"redirect_url": "/intune/wi-fi-settings-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-wi-fi-settings",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade.md",
-		"redirect_url": "/intune/edition-upgrade-configure-windows-10",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-windows-10-edition-upgrade",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-windows-information-protection.md",
-		"redirect_url": "/intune/windows-information-protection-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-windows-information-protection",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-configure-windows-update-for-business.md",
-		"redirect_url": "/intune/windows-update-for-business-configure",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-configure-windows-update-for-business",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-create-device-profiles.md",
-		"redirect_url": "/intune/device-profile-create",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-create-device-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/how-to-monitor-device-profiles.md",
-		"redirect_url": "/intune/device-profile-monitor",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/how-to-monitor-device-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/per-app-vpn-for-android-pulse-secure.md",
-		"redirect_url": "/intune/android-pulse-secure-per-app-vpn",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/per-app-vpn-for-android-pulse-secure",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md",
-		"redirect_url": "/intune/telecom-expenses-monitor",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/shared-device-settings-for-ios.md",
-		"redirect_url": "/intune/shared-device-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/shared-device-settings-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/troubleshoot-device-profiles.md",
-		"redirect_url": "/intune/device-profile-troubleshoot",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/troubleshoot-device-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-android.md",
-		"redirect_url": "/intune/vpn-settings-android",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-android",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-ios.md",
-		"redirect_url": "/intune/vpn-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-macos.md",
-		"redirect_url": "/intune/vpn-settings-macos",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-macos",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-windows-10.md",
-		"redirect_url": "/intune/vpn-settings-windows-10",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-windows-10",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-windows-8-1.md",
-		"redirect_url": "/intune/vpn-settings-windows-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-windows-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/vpn-for-windows-phone-8-1.md",
-		"redirect_url": "/intune/vpn-settings-windows-phone-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/vpn-for-windows-phone-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/what-are-device-profiles.md",
-		"redirect_url": "/intune/device-profiles",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/what-are-device-profiles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/wi-fi-for-android.md",
-		"redirect_url": "/intune/wi-fi-settings-android",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/wi-fi-for-android",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/wi-fi-for-ios.md",
-		"redirect_url": "/intune/wi-fi-settings-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/wi-fi-for-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/wi-fi-for-macos.md",
-		"redirect_url": "/intune/wi-fi-settings-macos",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/wi-fi-for-macos",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/wi-fi-import-for-windows-8-1.md",
-		"redirect_url": "/intune/wi-fi-settings-import-windows-8-1",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/wi-fi-import-for-windows-8-1",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/configure-devices/wi-fi-profile-with-shared-key.md",
-		"redirect_url": "/intune/wi-fi-profile-shared-key",
-		"redirect_document_id": true
+		"redirect_url": "/intune/configure-devices/wi-fi-profile-with-shared-key",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/add-apple-configurator-serial-numbers.md",
-		"redirect_url": "/intune/apple-configurator-serial-numbers-add",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/add-apple-configurator-serial-numbers",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/add-corporate-identifiers.md",
-		"redirect_url": "/intune/corporate-identifiers-add",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/add-corporate-identifiers",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/bulk-enroll-windows.md",
-		"redirect_url": "/intune/windows-bulk-enroll",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/bulk-enroll-windows",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/choose-ios-enrollment-method.md",
-		"redirect_url": "/intune/enrollment-method-choose-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/choose-ios-enrollment-method",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/create-terms-and-conditions.md",
-		"redirect_url": "/intune/terms-and-conditions-create",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/create-terms-and-conditions",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-android-and-knox-standard-devices.md",
-		"redirect_url": "/intune/android-enroll",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-android-and-knox-standard-devices",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md",
-		"redirect_url": "/intune/device-enrollment-manager-enroll",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-devices-using-device-enrollment-manager",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program.md",
-		"redirect_url": "/intune/device-enrollment-program-enroll-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-ios-devices-using-device-enrollment-program",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md",
-		"redirect_url": "/intune/apple-configurator-direct-enroll-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md",
-		"redirect_url": "/intune/apple-configurator-setup-assistant-enroll-ios",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-macos-devices.md",
-		"redirect_url": "/intune/macos-enroll",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-macos-devices",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/enroll-windows-devices.md",
-		"redirect_url": "/intune/windows-enroll",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/enroll-windows-devices",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/get-an-apple-mdm-push-certificate.md",
-		"redirect_url": "/intune/apple-mdm-push-certificate-get",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/get-an-apple-mdm-push-certificate",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/how-to-use-device-group-mapping.md",
-		"redirect_url": "/intune/device-group-mapping",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/how-to-use-device-group-mapping",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/how-to-use-windows-hello.md",
-		"redirect_url": "/intune/windows-hello",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/how-to-use-windows-hello",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/set-enrollment-restrictions.md",
-		"redirect_url": "/intune/enrollment-restrictions-set",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/set-enrollment-restrictions",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/set-mdm-authority.md",
-		"redirect_url": "/intune/mdm-authority-set",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/set-mdm-authority",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/troubleshoot-device-enrollment.md",
-		"redirect_url": "/intune/enrollment-troubleshoot",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/troubleshoot-device-enrollment",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/enroll-devices/what-is.md",
-		"redirect_url": "/intune/device-enrollment",
-		"redirect_document_id": true
+		"redirect_url": "/intune/enroll-devices/what-is",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/includes/azure_preview.md",
-		"redirect_url": "/intune/azure_preview",
-		"redirect_document_id": true
+		"redirect_url": "/intune/includes/azure_preview",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/index.md",
-		"redirect_url": "/intune/what-is-intune",
+		"redirect_url": "/intune/index",
 		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
+		"redirect_url": "/intune/introduction/contact-assisted-phone-support-for-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/how-to-get-support-for-microsoft-intune.md",
+		"redirect_url": "/intune/introduction/how-to-get-support-for-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/known-issues-in-the-intune-preview.md",
+		"redirect_url": "/intune/introduction/known-issues-in-the-intune-preview",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/sign-up-free-trial-microsoft-intune.md",
+		"redirect_url": "/intune/introduction/sign-up-free-trial-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/ui-changes-in-microsoft-intune.md",
+		"redirect_url": "/intune/introduction/ui-changes-in-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/what-is-microsoft-intune.md",
+		"redirect_url": "/intune/introduction/what-is-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/introduction/whats-new.md",
+		"redirect_url": "/intune/introduction/whats-new",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/add-apps.md",
+		"redirect_url": "/intune/manage-apps/add-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/android-app-protection-policy-settings.md",
+		"redirect_url": "/intune/manage-apps/android-app-protection-policy-settings",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/android-for-work-apps.md",
+		"redirect_url": "/intune/manage-apps/android-for-work-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/android-lob-app.md",
+		"redirect_url": "/intune/manage-apps/android-lob-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/android-store-app.md",
+		"redirect_url": "/intune/manage-apps/android-store-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/app-configuration-policies.md",
+		"redirect_url": "/intune/manage-apps/app-configuration-policies",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/app-protection-enabled-android-apps.md",
+		"redirect_url": "/intune/manage-apps/app-protection-enabled-android-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/app-protection-enabled-ios-apps.md",
+		"redirect_url": "/intune/manage-apps/app-protection-enabled-ios-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/app-protection-policies.md",
+		"redirect_url": "/intune/manage-apps/app-protection-policies",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/app-selective-wipe.md",
+		"redirect_url": "/intune/manage-apps/app-selective-wipe",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/company-portal-app.md",
+		"redirect_url": "/intune/manage-apps/company-portal-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/create-windows-information-protection-policy-with-intune.md",
+		"redirect_url": "/intune/manage-apps/create-windows-information-protection-policy-with-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/deploy-apps.md",
+		"redirect_url": "/intune/manage-apps/deploy-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md",
+		"redirect_url": "/intune/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/ios-app-protection-policy-settings.md",
+		"redirect_url": "/intune/manage-apps/ios-app-protection-policy-settings",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/ios-app-provisioning-profile.md",
+		"redirect_url": "/intune/manage-apps/ios-app-provisioning-profile",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/ios-lob-app.md",
+		"redirect_url": "/intune/manage-apps/ios-lob-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/ios-store-app.md",
+		"redirect_url": "/intune/manage-apps/ios-store-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/ios-vpp-apps.md",
+		"redirect_url": "/intune/manage-apps/ios-vpp-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
+		"redirect_url": "/intune/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune.md",
+		"redirect_url": "/intune/manage-apps/monitor-app-protection-policies-with-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/monitor-apps.md",
+		"redirect_url": "/intune/manage-apps/monitor-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/set-basic-data-protection-on-o365-apps-microsoft-intune.md",
+		"redirect_url": "/intune/manage-apps/set-basic-data-protection-on-o365-apps-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/validate-app-protection-policies.md",
+		"redirect_url": "/intune/manage-apps/validate-app-protection-policies",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/volume-purchased-apps.md",
+		"redirect_url": "/intune/manage-apps/volume-purchased-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/web-app.md",
+		"redirect_url": "/intune/manage-apps/web-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/what-is-app-management.md",
+		"redirect_url": "/intune/manage-apps/what-is-app-management",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/what-is-app-protection-policy.md",
+		"redirect_url": "/intune/manage-apps/what-is-app-protection-policy",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/windows-line-of-business-app.md",
+		"redirect_url": "/intune/manage-apps/windows-line-of-business-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/windows-phone-8-1-store-app.md",
+		"redirect_url": "/intune/manage-apps/windows-phone-8-1-store-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/windows-phone-line-of-business-app.md",
+		"redirect_url": "/intune/manage-apps/windows-phone-line-of-business-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/windows-store-app.md",
+		"redirect_url": "/intune/manage-apps/windows-store-app",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-apps/wsfb-apps.md",
+		"redirect_url": "/intune/manage-apps/wsfb-apps",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md",
+		"redirect_url": "/intune/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-devices/what-is.md",
+		"redirect_url": "/intune/manage-devices/what-is",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-users/get-started-with-groups.md",
+		"redirect_url": "/intune/manage-users/get-started-with-groups",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-users/help-desk.md",
+		"redirect_url": "/intune/manage-users/help-desk",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/manage-users/what-is.md",
+		"redirect_url": "/intune/manage-users/what-is",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-android-for-work.md",
+		"redirect_url": "/intune/set-device-compliance/create-a-compliance-policy-for-android-for-work",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-android.md",
+		"redirect_url": "/intune/set-device-compliance/create-a-compliance-policy-for-android",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-ios.md",
+		"redirect_url": "/intune/set-device-compliance/create-a-compliance-policy-for-ios",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-windows.md",
+		"redirect_url": "/intune/set-device-compliance/create-a-compliance-policy-for-windows",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/get-started-with-device-compliance.md",
+		"redirect_url": "/intune/set-device-compliance/get-started-with-device-compliance",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/monitor-device-compliance.md",
+		"redirect_url": "/intune/set-device-compliance/monitor-device-compliance",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/monitor-intune-device-compliance-policies.md",
+		"redirect_url": "/intune/set-device-compliance/monitor-intune-device-compliance-policies",
+		"redirect_document_id": false
+	},
+	{
+		"source_path": "intune-azure/set-device-compliance/what-is-device-compliance.md",
+		"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
+		"redirect_document_id": false
+	},
+  	{
+		"source_path": "intune/access-control/role-based-access-control.md",
+		"redirect_url": "/intune/role-based-access-control",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/conditional-access/create-conditional-access-policy-for-exchange-on-premises.md",
+		"redirect_url": "/intune/conditional-access-exchange-create",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/conditional-access/install-intune-on-premises-exchange-connector.md",
+		"redirect_url": "/intune/exchange-connector-install",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md",
+		"redirect_url": "/intune/conditional-access-exchange-monitor",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/conditional-access/what-is-conditional-access.md",
+		"redirect_url": "/intune/conditional-access",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/air-print-settings-for-ios-and-macos.md",
+		"redirect_url": "/intune/air-print-settings-ios-macos",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/airplay-settings-for-ios-devices.md",
+		"redirect_url": "/intune/airplay-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/app-notification-settings-for-ios.md",
+		"redirect_url": "/intune/app-notification-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/configure-certificate-infrastructure-for-pfx.md",
+		"redirect_url": "/intune/certficates-pfx-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/configure-certificate-infrastructure-for-scep.md",
+		"redirect_url": "/intune/certificates-scep-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/create-custom-vpn-profiles.md",
+		"redirect_url": "/intune/custom-vpn-profiles-create",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-android-for-work.md",
+		"redirect_url": "/intune/custom-settings-android-for-work",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-for-android.md",
+		"redirect_url": "/intune/custom-settings-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-for-ios.md",
+		"redirect_url": "/intune/custom-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-for-macos.md",
+		"redirect_url": "/intune/custom settings-macos",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-for-windows-10.md",
+		"redirect_url": "/intune/custom-settings-windows-10",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-for-windows-phone-8-1.md",
+		"redirect_url": "/intune/custom-settings-windows-phone-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/custom-policy-to-allow-and-block-samsung-knox-apps.md",
+		"redirect_url": "/intune/samsung-knox-apps-allow-block",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-afw.md",
+		"redirect_url": "/intune/device-restrictions-android-for-work",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-android.md",
+		"redirect_url": "/intune/device-restrictions-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-ios.md",
+		"redirect_url": "/intune/device-restrictions-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-macos.md",
+		"redirect_url": "/intune/device-restrictions-macos",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-windows-10-team.md",
+		"redirect_url": "/intune/device-restrictions-windows-10-teams",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-windows-10.md",
+		"redirect_url": "/intune/device-restrictions-windows-10",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-windows-8-1.md",
+		"redirect_url": "/intune/device-restrictions-windows-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/device-restrictions-for-windows-phone-8-1.md",
+		"redirect_url": "/intune/device-restrictions-windows-phone-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/email-profile-settings-for-android.md",
+		"redirect_url": "/intune/email-settings-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/email-profile-settings-for-ios.md",
+		"redirect_url": "/intune/email-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/email-profile-settings-for-windows-10.md",
+		"redirect_url": "/intune/email-settings-windows-10",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/email-profile-settings-for-windows-phone-8-1.md",
+		"redirect_url": "/intune/email-settings-windows-phone-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/home-screen-settings-for-ios.md",
+		"redirect_url": "/intune/home-screen-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-assign-device-profiles.md",
+		"redirect_url": "/intune/device-profile-assign",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-certificates.md",
+		"redirect_url": "/intune/certificates-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-custom-settings.md",
+		"redirect_url": "/intune/custom-settings-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-device-features.md",
+		"redirect_url": "/intune/device-features-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-device-restrictions.md",
+		"redirect_url": "/intune/device-restrictions-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-education-settings.md",
+		"redirect_url": "/intune/education-settings-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-email-settings.md",
+		"redirect_url": "/intune/email-settings-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-ios-edu-settings.md",
+		"redirect_url": "/intune/education-settings-configure-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-vpn-settings.md",
+		"redirect_url": "/intune/vpn-settings-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-wi-fi-settings.md",
+		"redirect_url": "/intune/wi-fi-settings-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-windows-10-edition-upgrade.md",
+		"redirect_url": "/intune/edition-upgrade-configure-windows-10",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-windows-information-protection.md",
+		"redirect_url": "/intune/windows-information-protection-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-configure-windows-update-for-business.md",
+		"redirect_url": "/intune/windows-update-for-business-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-create-device-profiles.md",
+		"redirect_url": "/intune/device-profile-create",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/how-to-monitor-device-profiles.md",
+		"redirect_url": "/intune/device-profile-monitor",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/per-app-vpn-for-android-pulse-secure.md",
+		"redirect_url": "/intune/android-pulse-secure-per-app-vpn",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune.md",
+		"redirect_url": "/intune/telecom-expenses-monitor",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/shared-device-settings-for-ios.md",
+		"redirect_url": "/intune/shared-device-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/troubleshoot-device-profiles.md",
+		"redirect_url": "/intune/device-profile-troubleshoot",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-android.md",
+		"redirect_url": "/intune/vpn-settings-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-ios.md",
+		"redirect_url": "/intune/vpn-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-macos.md",
+		"redirect_url": "/intune/vpn-settings-macos",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-windows-10.md",
+		"redirect_url": "/intune/vpn-settings-windows-10",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-windows-8-1.md",
+		"redirect_url": "/intune/vpn-settings-windows-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/vpn-for-windows-phone-8-1.md",
+		"redirect_url": "/intune/vpn-settings-windows-phone-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/what-are-device-profiles.md",
+		"redirect_url": "/intune/device-profiles",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/wi-fi-for-android.md",
+		"redirect_url": "/intune/wi-fi-settings-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/wi-fi-for-ios.md",
+		"redirect_url": "/intune/wi-fi-settings-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/wi-fi-for-macos.md",
+		"redirect_url": "/intune/wi-fi-settings-macos",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/wi-fi-import-for-windows-8-1.md",
+		"redirect_url": "/intune/wi-fi-settings-import-windows-8-1",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/configure-devices/wi-fi-profile-with-shared-key.md",
+		"redirect_url": "/intune/wi-fi-profile-shared-key",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/add-apple-configurator-serial-numbers.md",
+		"redirect_url": "/intune/apple-configurator-serial-numbers-add",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/add-corporate-identifiers.md",
+		"redirect_url": "/intune/corporate-identifiers-add",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/bulk-enroll-windows.md",
+		"redirect_url": "/intune/windows-bulk-enroll",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/choose-ios-enrollment-method.md",
+		"redirect_url": "/intune/enrollment-method-choose-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/create-terms-and-conditions.md",
+		"redirect_url": "/intune/terms-and-conditions-create",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-android-and-knox-standard-devices.md",
+		"redirect_url": "/intune/android-enroll",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-devices-using-device-enrollment-manager.md",
+		"redirect_url": "/intune/device-enrollment-manager-enroll",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-ios-devices-using-device-enrollment-program.md",
+		"redirect_url": "/intune/device-enrollment-program-enroll-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md",
+		"redirect_url": "/intune/apple-configurator-direct-enroll-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md",
+		"redirect_url": "/intune/apple-configurator-setup-assistant-enroll-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-macos-devices.md",
+		"redirect_url": "/intune/macos-enroll",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/enroll-windows-devices.md",
+		"redirect_url": "/intune/windows-enroll",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/get-an-apple-mdm-push-certificate.md",
+		"redirect_url": "/intune/apple-mdm-push-certificate-get",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/how-to-use-device-group-mapping.md",
+		"redirect_url": "/intune/device-group-mapping",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/how-to-use-windows-hello.md",
+		"redirect_url": "/intune/windows-hello",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/set-enrollment-restrictions.md",
+		"redirect_url": "/intune/enrollment-restrictions-set",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/set-mdm-authority.md",
+		"redirect_url": "/intune/mdm-authority-set",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/troubleshoot-device-enrollment.md",
+		"redirect_url": "/intune/enrollment-troubleshoot",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/enroll-devices/what-is.md",
+		"redirect_url": "/intune/device-enrollment",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
 		"redirect_url": "/intune/phone-support-contact",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/how-to-get-support-for-microsoft-intune.md",
+		"source_path": "intune/introduction/how-to-get-support-for-microsoft-intune.md",
 		"redirect_url": "/intune/get-support",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/known-issues-in-the-intune-preview.md",
+		"source_path": "intune/introduction/known-issues-in-the-intune-preview.md",
 		"redirect_url": "/intune/known-issues",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/sign-up-free-trial-microsoft-intune.md",
+		"source_path": "intune/introduction/sign-up-free-trial-microsoft-intune.md",
 		"redirect_url": "/intune/free-trial-sign-up",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/ui-changes-in-microsoft-intune.md",
+		"source_path": "intune/introduction/ui-changes-in-microsoft-intune.md",
 		"redirect_url": "/intune/ui-changes",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/what-is-microsoft-intune.md",
+		"source_path": "intune/introduction/what-is-microsoft-intune.md",
 		"redirect_url": "/intune/what-is-intune",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/introduction/whats-new.md",
+		"source_path": "intune/introduction/whats-new.md",
 		"redirect_url": "/intune/whats-new",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/add-apps.md",
+		"source_path": "intune/manage-apps/add-apps.md",
 		"redirect_url": "/intune/apps-add",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/android-app-protection-policy-settings.md",
+		"source_path": "intune/manage-apps/android-app-protection-policy-settings.md",
 		"redirect_url": "/intune/app-protection-policy-settings-android",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/android-for-work-apps.md",
+		"source_path": "intune/manage-apps/android-for-work-apps.md",
 		"redirect_url": "/intune/apps-add-android-for-work",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/android-lob-app.md",
+		"source_path": "intune/manage-apps/android-lob-app.md",
 		"redirect_url": "/intune/lob-apps-android",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/android-store-app.md",
+		"source_path": "intune/manage-apps/android-store-app.md",
 		"redirect_url": "/intune/store-apps-android",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/app-configuration-policies.md",
+		"source_path": "intune/manage-apps/app-configuration-policies.md",
 		"redirect_url": "/intune/app-configuration-policies",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/app-protection-enabled-android-apps.md",
+		"source_path": "intune/manage-apps/app-protection-enabled-android-apps.md",
 		"redirect_url": "/intune/app-protection-enabled-apps-android",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/app-protection-enabled-ios-apps.md",
+		"source_path": "intune/manage-apps/app-protection-enabled-ios-apps.md",
 		"redirect_url": "/intune/app-protection-enabled-apps-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/app-protection-policies.md",
+		"source_path": "intune/manage-apps/app-protection-policies.md",
 		"redirect_url": "/intune/app-protection-policies",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/app-selective-wipe.md",
+		"source_path": "intune/manage-apps/app-selective-wipe.md",
 		"redirect_url": "/intune/apps-selective-wipe",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/company-portal-app.md",
+		"source_path": "intune/manage-apps/company-portal-app.md",
 		"redirect_url": "/intune/company-portal-app",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/create-windows-information-protection-policy-with-intune.md",
+		"source_path": "intune/manage-apps/create-windows-information-protection-policy-with-intune.md",
 		"redirect_url": "/intune/windows-information-protection-policy-create",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/deploy-apps.md",
+		"source_path": "intune/manage-apps/deploy-apps.md",
 		"redirect_url": "/intune/apps-deploy",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md",
+		"source_path": "intune/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md",
 		"redirect_url": "/intune/app-protection-policies-configure-windows-10",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/ios-app-protection-policy-settings.md",
+		"source_path": "intune/manage-apps/ios-app-protection-policy-settings.md",
 		"redirect_url": "/intune/app-protection-policy-settings-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/ios-app-provisioning-profile.md",
+		"source_path": "intune/manage-apps/ios-app-provisioning-profile.md",
 		"redirect_url": "/intune/app-provisioning-profile-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/ios-lob-app.md",
+		"source_path": "intune/manage-apps/ios-lob-app.md",
 		"redirect_url": "/intune/lob-apps-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/ios-store-app.md",
+		"source_path": "intune/manage-apps/ios-store-app.md",
 		"redirect_url": "/intune/store-apps-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/ios-vpp-apps.md",
+		"source_path": "intune/manage-apps/ios-vpp-apps.md",
 		"redirect_url": "/intune/vpp-apps-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
+		"source_path": "intune/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
 		"redirect_url": "/intune/data-transfer-between-apps-manage-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune.md",
+		"source_path": "intune/manage-apps/monitor-app-protection-policies-with-microsoft-intune.md",
 		"redirect_url": "/intune/app-protection-policies-monitor",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/monitor-apps.md",
+		"source_path": "intune/manage-apps/monitor-apps.md",
 		"redirect_url": "/intune/apps-monitor",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/set-basic-data-protection-on-o365-apps-microsoft-intune.md",
+		"source_path": "intune/manage-apps/set-basic-data-protection-on-o365-apps-microsoft-intune.md",
 		"redirect_url": "/intune/O365-app-data-protection-set",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/validate-app-protection-policies.md",
+		"source_path": "intune/manage-apps/validate-app-protection-policies.md",
 		"redirect_url": "/intune/app-protection-policies-validate",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/volume-purchased-apps.md",
+		"source_path": "intune/manage-apps/volume-purchased-apps.md",
 		"redirect_url": "/intune/vpp-apps",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/web-app.md",
+		"source_path": "intune/manage-apps/web-app.md",
 		"redirect_url": "/intune/web-app",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/what-is-app-management.md",
+		"source_path": "intune/manage-apps/what-is-app-management.md",
 		"redirect_url": "/intune/app-management",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/what-is-app-protection-policy.md",
+		"source_path": "intune/manage-apps/what-is-app-protection-policy.md",
 		"redirect_url": "/intune/app-protection-policy",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/windows-line-of-business-app.md",
+		"source_path": "intune/manage-apps/windows-line-of-business-app.md",
 		"redirect_url": "/intune/lob-apps-windows",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/windows-phone-8-1-store-app.md",
+		"source_path": "intune/manage-apps/windows-phone-8-1-store-app.md",
 		"redirect_url": "/intune/store-apps-windows-phone-8-1",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/windows-phone-line-of-business-app.md",
+		"source_path": "intune/manage-apps/windows-phone-line-of-business-app.md",
 		"redirect_url": "/intune/lob-apps-windows-phone",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/windows-store-app.md",
+		"source_path": "intune/manage-apps/windows-store-app.md",
 		"redirect_url": "/intune/store-apps-windows",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-apps/wsfb-apps.md",
+		"source_path": "intune/manage-apps/wsfb-apps.md",
 		"redirect_url": "/intune/windows-store-for-business",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md",
+		"source_path": "intune/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md",
 		"redirect_url": "/intune/devices-wipe",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-devices/what-is.md",
+		"source_path": "intune/manage-devices/what-is.md",
 		"redirect_url": "/intune/device-management",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-users/get-started-with-groups.md",
+		"source_path": "intune/manage-users/get-started-with-groups.md",
 		"redirect_url": "/intune/groups-get-started",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-users/help-desk.md",
+		"source_path": "intune/manage-users/help-desk.md",
 		"redirect_url": "/intune/help-desk-operators",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/manage-users/what-is.md",
+		"source_path": "intune/manage-users/what-is.md",
 		"redirect_url": "/intune/user-management",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-android-for-work.md",
+		"source_path": "intune/set-device-compliance/create-a-compliance-policy-for-android-for-work.md",
 		"redirect_url": "/intune/compliance-policy-create-android-for-work",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-android.md",
+		"source_path": "intune/set-device-compliance/create-a-compliance-policy-for-android.md",
 		"redirect_url": "/intune/compliance-policy-create-android",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-ios.md",
+		"source_path": "intune/set-device-compliance/create-a-compliance-policy-for-ios.md",
 		"redirect_url": "/intune/compliance-policy-create-ios",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/create-a-compliance-policy-for-windows.md",
+		"source_path": "intune/set-device-compliance/create-a-compliance-policy-for-windows.md",
 		"redirect_url": "/intune/compliance-policy-create-windows",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/get-started-with-device-compliance.md",
+		"source_path": "intune/set-device-compliance/get-started-with-device-compliance.md",
 		"redirect_url": "/intune/device-compliance-get-started",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/monitor-device-compliance.md",
+		"source_path": "intune/set-device-compliance/monitor-device-compliance.md",
 		"redirect_url": "/intune/device-compliance-monitor",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/monitor-intune-device-compliance-policies.md",
+		"source_path": "intune/set-device-compliance/monitor-intune-device-compliance-policies.md",
 		"redirect_url": "/intune/compliance-policy-monitor",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune-azure/set-device-compliance/what-is-device-compliance.md",
+		"source_path": "intune/set-device-compliance/what-is-device-compliance.md",
 		"redirect_url": "/intune/device-compliance",
 		"redirect_document_id": true
 	},
