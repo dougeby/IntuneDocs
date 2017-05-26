@@ -4,7 +4,7 @@
 title: Troubleshoot email profiles | Microsoft Docs
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
-author: robstackmsftms.author: robstack
+author: lleonard-msftms.author: alleonar
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article

@@ -4,8 +4,8 @@
 title: Troubleshoot company resource access problems | Microsoft Docs
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 05/10/2017
 ms.topic: article

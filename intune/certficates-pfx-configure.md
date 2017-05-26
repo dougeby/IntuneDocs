@@ -2,8 +2,8 @@
 title: Configure and manage PKCS certificates with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure, then create and assign PKCS certificates with Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 04/22/2017
 ms.topic: article

@@ -77,4 +77,4 @@ About every eight hours, enrolled devices will:
 
 -   Send any company app inventory updates.
 
-If you have questions, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

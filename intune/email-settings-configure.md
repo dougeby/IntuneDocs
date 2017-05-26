@@ -4,8 +4,8 @@
 title: How to configure Intune email settingstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
