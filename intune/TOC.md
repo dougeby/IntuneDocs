@@ -104,7 +104,8 @@
 #### [Android for Work apps](apps-add-android-for-work.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
-### [Use app configuration profiles](app-configuration-policies.md)
+### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
+### [Android app configuration profiles](app-configuration-policies-use-android.md)
 ### [Use iOS app provisioning profiles](app-provisioning-profile-ios.md)
 ### [Selectively wipe apps](apps-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
