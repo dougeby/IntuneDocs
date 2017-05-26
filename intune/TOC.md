@@ -171,7 +171,7 @@
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
-#### [PKCS](certificates-pfx-configure.md)
+#### [PKCS](certficates-pfx-configure.md)
 ### [Configure Windows Information Protection settings](windows-information-protection-configure.md)
 ### [Assign profiles](device-profile-assign.md)
 ### [Monitor profiles](device-profile-monitor.md)
