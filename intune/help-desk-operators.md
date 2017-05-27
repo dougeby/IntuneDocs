@@ -54,6 +54,6 @@ In the troubleshooting portal, you can select **Select User** to view a users' i
 - **Tenant status** - Status for the Intune service (not user-specific)
 - **Devices**
 - **Group membership**
-- **App protection status**
+- **App protection status** 
 
 Help desk users can also perform remote tasks on devices such as **Remote lock**.
