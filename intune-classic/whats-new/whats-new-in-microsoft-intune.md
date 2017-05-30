@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,9 +33,9 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 ## New capabilities
 
-### Something
+### Change your MDM authority without unenrolling managed devices
 
-Something
+You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority-to-intune-standalone) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa. 
 
 ### Something
 
@@ -50,6 +50,14 @@ New tenants have been started to see the public preview of the new admin experie
 The admin experience in the Azure portal uses the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at [what's new in the preview](/intune/whats-new).
 
 ## Notices
+
+### IP addresses for Intune updated <!-- 1175274 -->
+
+An [updated list of DNS names and IP addresses](../get-started/network-bandwidth-use) is available for firewall proxy settings.
+
+### Use Azure Active Directory for conditional access <!-- 967947 -->
+
+Conditional access is available in the Azure Active Directory section of the Azure console and provides a more powerful and flexible framework for setting policies for cloud apps like Office 365 Exchange Online and SharePoint Online.  Use the **Conditional access in Azure Active Directory** blade to configure policies instead of the classic Intune console. Existing policies in the classic Intune console will need to be re-created in the Azure console. For more information, see [Create Azure AD conditional access policies](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
