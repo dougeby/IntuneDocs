@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,9 +50,10 @@ Help desk staff and Intune administrators can access the troubleshooting portal 
 
 ## Use the troubleshooting portal
 
-In the troubleshooting portal, you can select **Select User** to view a users' information. User information can help you understand the current state of users and their devices. The troubleshooting portal shows the following Intune user and device details:
-- User account information
-- User group membership
-- Device details
+In the troubleshooting portal, you can select **Select User** to view a users' information. User information can help you understand the current state of users and their devices. The troubleshooting portal shows the following troubleshooting details:
+- **Tenant status**
+- **Devices**
+- **Group membership**
+- **App protection status**
 
 Help desk users can also perform remote tasks on devices such as **Remote lock**.
