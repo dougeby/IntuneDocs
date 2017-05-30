@@ -82,7 +82,7 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 	- [Add apps](apps-add.md)
 	- [Assign apps](apps-deploy.md)
 	- [Monitor apps](apps-monitor.md)
-- **App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app. For details, see:
+- **App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app.
 	- [iOS app configuration policies](app-configuration-policies-use-ios.md)
 - **App protection policies** - Lets you associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.
 	- [App protection policies](app-protection-policies.md)
