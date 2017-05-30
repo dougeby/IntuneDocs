@@ -36,7 +36,7 @@ ms.custom: intune-azure
 As an IT admin, you'll likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
 - There are a wide range of device platforms and app types.
 - You might need to manage apps on company devices as well as users own devices.
-- You need to do all of this, while ensuring your network, and your data remain secure. 
+- You need to do all of this, while ensuring your network, and your data remain secure.
 
 Additionally, you might want to assign, and manage apps on devices that are not enrolled with Intune.
 
@@ -78,13 +78,12 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 	![The Mobile Apps workload](./media/apps-workload.png)
 
 ### Manage
-- **Apps** - This is where you'll add, assign, and monitor most of your apps. 
+- **Apps** - This is where you'll add, assign, and monitor most of your apps.
 	- [Add apps](apps-add.md)
 	- [Assign apps](apps-deploy.md)
 	- [Monitor apps](apps-monitor.md)
 - **App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app. For details, see:
 	- [iOS app configuration policies](app-configuration-policies-use-ios.md)
-	- [Android app configuration policies](app-configuration-policies-use-android.md)
 - **App protection policies** - Lets you associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.
 	- [App protection policies](app-protection-policies.md)
 - **App selective wipe** - Remove only corporate data from a users device you select.
@@ -104,7 +103,7 @@ For details, see [Monitor apps](apps-monitor.md)
 ### Setup
 <!--- **iOS VPP Tokens**
 	- [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store for Business** - Setup integration to the Windows Store for Business. After you do this, you can synchronize purchased applications to Intune, assign them, and track your license usage. 
+- **Windows Store for Business** - Setup integration to the Windows Store for Business. After you do this, you can synchronize purchased applications to Intune, assign them, and track your license usage.
 	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
-- **Company Portal branding** - Customize the Company Portal to give it your company branding. 
+- **Company Portal branding** - Customize the Company Portal to give it your company branding.
 	- [Company portal configuration](company-portal-app.md)
