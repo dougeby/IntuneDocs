@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 06/01/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ As the public preview progresses, and more features are added, we'll let you kno
 > [!Note]
 > We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially before the new portal features are available. Look for these changes as they roll out later this month.
 
-## May 2017
+## June 2017
 
 ### Apple School Manager (ASM) support with shared iPad <!-- 748864, 770395-->
 
