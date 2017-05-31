@@ -118,7 +118,7 @@ To learn more:
 When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features:
 The following table summarizes the Intune Graph API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
 
-Enable Access setting | Scope name
+_Enable Access_ setting | Scope name
 :--|:--
 _Perform user-impacting remote actions on Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
 _Read and write Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.ReadWrite.All](#user-content-mgd-rw)
@@ -129,7 +129,7 @@ _Read and write Microsoft Intune apps (preview)_ | [DeviceManagementApps.ReadWri
 _Read Microsoft Intune apps (preview)_ | [DeviceManagementApps.Read.All](#user-content-app-ro)
 _Read and write Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.ReadWrite.All](#user-content-cfg-rw)
 _Read Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.Read.All](#user-content-cfg-ro)
-_Read and write Microsoft Intune configuration (preview)_ | [](#user-content-)
+_Read and write Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.ReadWrite.All](#user-content-svc-rw)
 _Read Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.Read.All](#user-content-svc-ra)
 
 The table lists the settings in the order they appear in the Azure portal; the following sections describes the scopes in alphabetical order.
@@ -148,7 +148,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- **Enable Access setting**: _Read and write Microsoft Intune apps (preview)_
+- **Enable Access** setting: _Read and write Microsoft Intune apps (preview)_
 
 - Allows the same operations as _DeviceManagementApps.Read.All_
 
@@ -161,7 +161,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **Enable Access setting**: _Read Microsoft Intune device configuration and policies (preview)_
+- **Enable Access** setting: _Read Microsoft Intune device configuration and policies (preview)_
 
 - Permits read access to the following entity properties and status:
     - Device Configuration
@@ -170,7 +170,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **Enable Access setting**: _Read and write Microsoft Intune device configuration and policies (preview)_
+- **Enable Access** setting: _Read and write Microsoft Intune device configuration and policies (preview)_
 
 - Allows the same operations as _DeviceManagementConfiguration.Read.All_
 
@@ -181,7 +181,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **Enable Access setting**: _Perform user-impacting remote actions on Microsoft Intune devices (preview)_
+- **Enable Access** setting: _Perform user-impacting remote actions on Microsoft Intune devices (preview)_
 
 - Permits the following remote actions on a managed device:
     - Retire
@@ -195,7 +195,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **Enable Access setting**: _Read Microsoft Intune devices (preview)_
+- **Enable Access** setting: _Read Microsoft Intune devices (preview)_
 
 - Permits read access to the following entity properties and status:
     - Managed Device
@@ -206,7 +206,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **Enable Access setting**: _Read and write Microsoft Intune devices (preview)_
+- **Enable Access** setting: _Read and write Microsoft Intune devices (preview)_
 
 - Allows the same operations as _DeviceManagementManagedDevices.Read.All_
 
@@ -221,7 +221,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- **Enable Access setting**: _Read Microsoft Intune RBAC settings (preview)_
+- **Enable Access** setting: _Read Microsoft Intune RBAC settings (preview)_
 
 - Permits read access to the following entity properties and status:
     - Role Assignments
@@ -230,7 +230,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- **Enable Access setting**: _Read and write Microsoft Intune RBAC settings (preview)_
+- **Enable Access** setting: _Read and write Microsoft Intune RBAC settings (preview)_
 
 - Allows the same operations as _DeviceManagementRBAC.Read.All_
 
@@ -240,7 +240,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfiguration.Read.All
 
-- **Enable Access setting**: _Read Microsoft Intune configuration (preview)_
+- **Enable Access** setting: _Read Microsoft Intune configuration (preview)_
 
 - Permits read access to the following entity properties and status:
     - Device Enrollment
@@ -256,7 +256,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfiguration.ReadWrite.All
 
-- **Enable Access setting**: _Read and write Microsoft Intune configuration (preview)_
+- **Enable Access** setting: _Read and write Microsoft Intune configuration (preview)_
 
 - Allows the same operations as DeviceManagementServiceConfiguration.Read.All_
 
