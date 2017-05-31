@@ -6,7 +6,7 @@ Access to the Intune Graph API requires:
 
 - An application ID with
 
-    - Permission to call Azure AD and Graph APIs
+    - Permission to call Azure AD and Graph APIs.
     - Permission scopes relevant to the specific application tasks.
 
 - User credentials with:
@@ -75,7 +75,7 @@ To register an app to use Graph API:
 
 7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  This opens the **Enable access** blade which lists permission scopes available to your application.
 
-    <img src="media/aad-auth-role-permissions.png" width="351" height="481" />
+    <img src="media/aad-auth-role-permissions.png" width="479" height="293" />
 
     Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
 
