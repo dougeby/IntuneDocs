@@ -36,9 +36,6 @@ This topic provides guidance on how to set up app-based conditional access polic
 
 1. Go the [Azure portal](https://portal.azure.com) and sign in with your credentials.
 
-	> [!NOTE]
-	> If you're new to the Azure portal experience read the [Azure portal for app protection policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
-
 2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
 
 3. Choose **Intune App Protection** > **Intune mobile application management** > **All Settings**.
@@ -50,7 +47,7 @@ This topic provides guidance on how to set up app-based conditional access polic
 	> [!NOTE] 
 	> When you select the option to only allow apps that are supported by Intune app protection policies, a list containing **only** the supported apps is displayed.
 
-	![Screenshot of the allowed apps blade showing the list of apps](../media/mam-ca-spo-allowed-apps.png)
+	![Screenshot of the allowed apps blade showing the list of apps](./media/mam-ca-spo-allowed-apps.png)
 
 ## To assign app-based CA policies to your users
 
@@ -58,7 +55,7 @@ This topic provides guidance on how to set up app-based conditional access polic
 
 2. Select one or more user groups that should get this policy.
 
-	![Screenshot of the restricted user group blade with add user group option highlighted](../media/mam-ca-spo-restricted-groups.png)
+	![Screenshot of the restricted user group blade with add user group option highlighted](./media/mam-ca-spo-restricted-groups.png)
 
 	> [!IMPORTANT] 
 	> You may want some users in the user group you selected in the previous step not to be affected by this policy. In such cases, add the group of users to the exempted user groups list. 

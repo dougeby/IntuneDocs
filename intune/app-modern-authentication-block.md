@@ -47,4 +47,4 @@ To block access to these apps we recommend the following:
 >App-based CA must not be used with Azure Active Directory (Azure AD) certificate based authentication. You can only have one of these configured at a time.
 
 ### See also
-[Allow only apps supported by Intune to access O365 services](allow-policy-managed-apps-access-to-o365.md)
+[App-based conditional access with Intune](app-based-conditional-access-intune.md)

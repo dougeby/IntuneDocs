@@ -42,16 +42,16 @@ This topic gives you step-by-step instructions on how to set up conditional acce
 
 5.  On the **Conditional access** section, choose **Exchange Online**.
 
-	![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](../media/MAM-conditional-access-1.png)
+	![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](./media/MAM-conditional-access-1.png)
 
 6. On the **Allowed apps** blade, choose the **Allow apps that support Intune app policies** option to allow only apps that are supported by Intune app protection policies to have the ability to access Exchange Online. When you select this option, the list of supported apps is displayed.
 
-	>[!NOTE]
-	>All Exchange Active Sync mail clients, including the built-in mail clients on iOS and >Android that connect to Exchange Online, will be prevented from sending or receiving >email. Users will instead receive a single email informing them that they need to use the >Outlook mail app.
+	> [!NOTE]
+	> All Exchange Active Sync mail clients, including the built-in mail clients on iOS and Android that connect to Exchange Online, will be prevented from sending or receiving email. Users will instead receive a single email informing them that they need to use the Outlook mail app.
 
 7. To apply this policy to users, open the **Restricted user groups** blade, and choose **Add user group**. Select one or more user groups that should get this policy.
 
-	![Screenshot of the restricted user group blade with add user group option highlighted](../media/mam-ca-add-user-group.png)
+	![Screenshot of the restricted user group blade with add user group option highlighted](./media/mam-ca-add-user-group.png)
 
 8. You may want some users in the user group you selected in the previous step not to be affected by this policy. In such cases, add the group of users to the exempted user groups list. From the **Exchange Online** blade, choose **Exempted user groups**. Choose **Add user group** to open the list of user groups. Select the groups you want to exempt from this policy.
 
