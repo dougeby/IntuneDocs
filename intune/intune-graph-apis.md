@@ -121,16 +121,16 @@ The following table summarizes the Intune Graph API permission scopes.  The firs
 _Enable Access_ setting | Scope name
 :--|:--
 _Perform user-impacting remote actions on Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
-_Read and write Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.ReadWrite.All](#user-content-mgd-rw)
-_Read Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.Read.All](#user-content-mgd-ro)
-_Read and write Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.ReadWrite.All](#user-content-rac-rw)
-_Read Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.Read.All](#user-content-rac=ro)
-_Read and write Microsoft Intune apps (preview)_ | [DeviceManagementApps.ReadWrite.All](#user-content-app-rw)
-_Read Microsoft Intune apps (preview)_ | [DeviceManagementApps.Read.All](#user-content-app-ro)
-_Read and write Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.ReadWrite.All](#user-content-cfg-rw)
-_Read Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.Read.All](#user-content-cfg-ro)
-_Read and write Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.ReadWrite.All](#user-content-svc-rw)
-_Read Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.Read.All](#user-content-svc-ra)
+_Read and write Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
+_Read Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
+_Read and write Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
+_Read Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.Read.All](#rac=ro)
+_Read and write Microsoft Intune apps (preview)_ | [DeviceManagementApps.ReadWrite.All](#app-rw)
+_Read Microsoft Intune apps (preview)_ | [DeviceManagementApps.Read.All](#app-ro)
+_Read and write Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+_Read Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
+_Read and write Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
+_Read Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
 
 The table lists the settings in the order they appear in the Azure portal; the following sections describes the scopes in alphabetical order.
 
