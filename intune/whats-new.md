@@ -86,6 +86,9 @@ You can also configure additional settings to provide a non-blocking notificatio
 
 For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md).
 
+### New app configuration capabilities <!-- 677969 -->
+
+You can now apply more app configuration values than just the values available through app protection policies in the MAM without enrollment channel.
 
 ### New settings for Windows 10 devices <!-- 978585 -->
 
@@ -93,7 +96,7 @@ We've added new [Windows device restriction settings](device-restrictions-window
 
 ### Configure allowed and blocked URL lists for the Managed Browser <!-- 682960 -->
 
-You can now configure a list of allowed and blocked domains and URLs for the Intune Managed Browser using app configuration settings in the Azure portal. These settings can be configured regardless of whether it is being used on a managed or unmanaged device.
+You can now configure a list of allowed and blocked domains and URLs for the Intune Managed Browser using app configuration settings in the Azure portal. These settings can be configured regardless of whether it is being used on a managed or unmanaged device. For more information, see [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
 
 ## April 2017
 
