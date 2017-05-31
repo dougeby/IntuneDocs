@@ -108,7 +108,7 @@ For more information, see [Android for Work device restriction settings in Micro
 
 We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
 
-### Updates to certificate configuration <!-- 918991 and 823198 -->
+#### Updates to certificate configuration <!-- 918991 and 823198 -->
  
 When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure#how-to-create-a-scep-certificate-profile) . 
  
