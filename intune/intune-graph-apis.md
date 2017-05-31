@@ -47,7 +47,7 @@ To register an app to use Graph API:
 
 3.  Either choose **New application registration** to create a new application or choose an existing application.  (If you choose an existing application, skip the next step.)
 
-    <img src="./media/image1.png" width="239" height="276" />
+    <img src="./media/app-registration-manage.png" width="239" height="276" />
 
 4.  On the **Create** blade, specify the following: 
 
@@ -59,7 +59,7 @@ To register an app to use Graph API:
 
         To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-    <img src="media/image2.png" width="355" height="232" />
+    <img src="media/app-registration-redirect.png" width="355" height="232" />
 
 5.  From the application blade:
 
@@ -67,15 +67,15 @@ To register an app to use Graph API:
 
     2.  Choose **Settings** &gt; **API access** &gt; **Required permissions**.
 
-    <img src="media/image3.png" width="554" height="217" />
+    <img src="media/app-registration-req-perms.png" width="554" height="217" />
 
 6.  From the **Required Permissions** blade, choose **Add** &gt; **Add API access** &gt; **Select an API**.
 
-    <img src="media/image4.png" width="558" height="165" />
+    <img src="media/app-registration-graph-api.png" width="558" height="165" />
 
 7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  This opens the **Enable access** blade which lists permission scopes available to your application.
 
-    <img src="media/imagex.png" width="554" height="217" />
+    <img src="media/aad-auth-role-permissions.png" width="351" height="481" />
 
     Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
 
@@ -91,7 +91,7 @@ At this point, you may also:
 
     When you run the application for the first time, you're prompted to grant the app permission to perform the selected roles.
 
-    <img src="media/image5.png" width="512" height="232" />
+    <img src="media/app-registration-grant-perms.png" width="512" height="232" />
 
 - Make the app available to users outside your tenant.  (This is typically only required for partners supporting multiple tenants/organizations.)  
 
@@ -99,7 +99,7 @@ At this point, you may also:
 
     1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-    <img src="media/image7.png" width="531" height="168" />
+    <img src="media/app-registration-other-tenants.png" width="531" height="168" />
 
     2. Change the value of the `availableToOtherTenants` setting to `true`.
 
@@ -302,7 +302,7 @@ If this happens, verify that:
 
 - You've updated the application ID to one authorized to use the Graph API and the `DeviceManagementManagedDevices.Read.All` permission scope.
 
-- Your tenant credentials permit Admin functions.
+- Your tenant credentials support administrative functions.
 
 - Your code is very similar to the displayed samples. 
 
@@ -315,7 +315,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
 
 2.  Enter a name for your project and provide other details as desired.
 
-    <img src="media/image8.png" width="624" height="433" />
+    <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" />
 
 3.  Use the Solution Explorer to add the Microsoft ADAL NuGet package to the project.
 
@@ -323,7 +323,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
     2.  Choose **Manage NuGet Packages…** &gt; **Browse**.
     3.  Select `Microsoft.IdentityModel.Clients.ActiveDirectory` and then choose **Install**.
 
-    <img src="media/image9.png" width="624" height="458" />
+    <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" />
 
 4.  Add the following statements to the top of **Program.cs**:
 
@@ -544,7 +544,7 @@ To do so:
 
         1.  Choose **Add a guest user** from the **Quick tasks** panel.
 
-        <img src="media/image11.png" width="508" height="373" />
+        <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" />
 
         2.  Enter the client's email address and (optionall) add a personalized message for the invite.
 
@@ -552,7 +552,7 @@ To do so:
 
         This sends an invite to the user.
 
-        <img src="media/image12.png" width="624" height="523" />
+        <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" />
 
         The user will choose the **Get Started** link to accept your invitation.
 
@@ -560,7 +560,7 @@ To do so:
 
     Remember to add the user to other roles as needed. For example, to allow the user to manage Intune settings, they need to be either a **Global Administrator** or an **Intune Service administrator**.
 
-    <img src="media/image13.png" width="624" height="665" />
+    <img src="media/aad-multiple-tenant-add-user.png" width="624" height="665" />
 
 5.  Use http://portal.office.com to assign an Intune license to your user account.
 
