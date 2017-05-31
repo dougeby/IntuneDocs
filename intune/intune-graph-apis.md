@@ -579,17 +579,3 @@ To do so:
     ``` csharp
     string authority = "https://login.microsoftonline.com/northwind.onmicrosoft.com/";
     ```
-
-
-Resources
----------
-
-Overview of Microsoft Graph Permission Scopes:
-<https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes>
-
-Integrating Applications with Azure AD:
-<https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications>
-
-## Additional resources
-
-- [Authorize access to REST APIs with OAuth 2.0](https://www.visualstudio.com/en-us/docs/integrate/get-started/auth/oauth)
