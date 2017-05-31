@@ -63,7 +63,7 @@ Android 7.0 and above devices with a work profile managed as an Android for Work
  -Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
 - Define both a device and and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (eg, a 4 digit PIN to unlock the device, but a 6 digit PIN to open any work app)
 
-For more information, see [How to use Microsoft Intune app configuration policies for Android for Work](app-configuration-policies-use-android.md).
+For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
 
 > [!NOTE]
 > This is only available on Android 7.0 and above.  By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two. 

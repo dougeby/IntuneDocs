@@ -53,7 +53,7 @@ The admin experience in the Azure portal uses the already announced new grouping
 
 ### IP addresses for Intune updated <!-- 1175274 -->
 
-An [updated list of DNS names and IP addresses](../get-started/network-bandwidth-use) is available for firewall proxy settings.
+An [updated list of DNS names and IP addresses](../get-started/network-bandwidth-use.md) is available for firewall proxy settings.
 
 ### Use Azure Active Directory for conditional access <!-- 967947 -->
 
