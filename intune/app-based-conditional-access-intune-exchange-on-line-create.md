@@ -32,8 +32,7 @@ This topic gives you step-by-step instructions on how to set up conditional acce
 
 
 ## To create an app-based conditional access policy
-1.  Sign into the [Azure portal](https://portal.azure.com) that includes the app access feature. If you
-are new to the Azure portal experience read the [Azure portal for app protection policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
+1.  Go the [Azure portal](https://portal.azure.com) and sign in with your credentials.
 
 2.  Choose **More services**, and type: "Intune".
 
@@ -54,15 +53,18 @@ are new to the Azure portal experience read the [Azure portal for app protection
 
 	![Screenshot of the restricted user group blade with add user group option highlighted](../media/mam-ca-add-user-group.png)
 
-8. You may want some users in the user group you selected in the previous step not to be affected by this policy. In such cases, add the group of users to the exempted user groups list. From the **Exchange Online** blade, choose **Exempted user groups**. Choose **Add user group** to open the list of user groups. Select the groups you want to exempt from this policy.  
+8. You may want some users in the user group you selected in the previous step not to be affected by this policy. In such cases, add the group of users to the exempted user groups list. From the **Exchange Online** blade, choose **Exempted user groups**. Choose **Add user group** to open the list of user groups. Select the groups you want to exempt from this policy.
 
-## Modify an existing policy
-### Add or delete user groups
+## To modify or delete user groups from an existing app-based CA policy
 
-To **delete a user group** from the **restricted user groups** list, open the **Restricted user groups** blade, highlight the user group you want to delete, and click on the **ellipses(...)** to see the **Delete** option. Choose **Delete** to remove the user group from the list. You can follow the same procedure to remove a user group from the **exempted user group** list.
-
+1. Open the **Restricted user groups** blade, then highlight the user group you want to delete.
+2. Click on the ellipse to see the delete options.
+3. Choose **Delete** to remove the user group from the list.
 
 ## Next steps
-[Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
+[Block apps that do not have modern authentication](app-modern-authentication-block.md)
+
 ### See also
-[Protect app data with app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+
+[Protect app data with app protection policies](app-protection-policies.md)
+[Create app-based CA policies for SharePoint Online](app-based-conditional-access-intune-sharepoint-on-line-create.md)

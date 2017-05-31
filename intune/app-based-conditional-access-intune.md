@@ -30,11 +30,32 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-[Intune app protection policies](protect-apps-and-data-with-microsoft-intune.md) help protect your company data on devices that are enrolled for management in Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using App-based conditional access with MAM, you can create a policy that allows only mobile apps that support Intune app protection policies to access O365 services like Exchange Online.
+[Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled for management in Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using App-based conditional access with MAM, you can create a policy that allows only mobile apps that support Intune app protection policies to access O365 services like Exchange Online.
 
 For example, by only allowing the **Microsoft Outlook app** to access Exchange Online, you can **block the built-in mail apps on iOS and Android**, which don't have the data protection bein applied by Intune app protection policies to get email from **Exchange Online**. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing **SharePoint Online**.
 
-### How App-based conditional access works?
+## Prerequisites
+Before you create an App-based conditional access policy, you must have:
+
+- **Enterprise Mobility + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD.
+	- For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
+
+## Supported apps
+
+- **Exchange Online**:
+	- **Microsoft Outlook** for Android and iOS.
+<br></br>
+- **SharePoint Online**
+	- Microsoft Word for iOS and Android
+	- Microsoft Excel for iOS and Android
+	- Microsoft PowerPoint for iOS and Android
+	- Microsoft OneDrive for Business for iOS and Android
+	- Microsoft OneNote for iOS
+
+> [!IMPORTANT]
+> For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app. The OneNote app for Android does not yet support MAM without enrollment.
+
+## How App-based conditional access works?
 
 In this example, the admin has app protection policies applied to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
 
@@ -68,34 +89,9 @@ In this example, the admin has app protection policies applied to the Outlook ap
 
 11.  Corporate e-mail is delivered to the user's mailbox.
 
-## Prerequisites
-**Before** you create an App-based conditional access policy, you must have an **Enterprise Mobility + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
-
-
-## Supported apps
-**Exchange Online**:
-* **Microsoft Outlook** for Android and iOS.
-
-**SharePoint Online**
-* Microsoft Word for iOS and Android
-* Microsoft Excel for iOS and Android
-* Microsoft PowerPoint for iOS and Android
-* Microsoft OneDrive for Business for iOS and Android
-* Microsoft OneNote for iOS
-
->[!IMPORTANT]
->For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app. The OneNote app for Android does not yet support MAM without enrollment.
-
-To learn about the user experience with an app that has App-based conditional access policies, see [What to expect when using an app with conditional access rules applied to](use-apps-with-mam-ca.md).
-
-
 ## Next steps
-[Create an Exchange Online Policy for MAM apps](mam-ca-for-exchange-online.md)
+[Create an Exchange Online Policy for MAM apps](app-based-conditional-access-intune-exchange-on-line-create.md)
 
-[Create a SharePoint Online Policy for MAM apps](mam-ca-for-sharepoint-online.md)
+[Create a SharePoint Online Policy for MAM apps](app-based-conditional-access-intune-sharepoint-on-line-create.md)
 
-[Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
-
-### See also
-
-[Protect app data with app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Block apps that do not have modern authentication](app-modern-authentication-block.md)

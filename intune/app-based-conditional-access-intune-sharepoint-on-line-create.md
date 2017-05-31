@@ -78,10 +78,10 @@ This topic provides guidance on how to set up app-based conditional access polic
 
 ## Next steps
 
-[Block apps that do not use modern authentication](block-apps-with-no-modern-authentication.md)
+[Block apps that do not use modern authentication](app-modern-authentication-block.md)
 
-## See also
+### See also
 
-[Protect app data with app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protect app data with app protection policies](app-protection-policies.md)
 
-[Configure app-based CA for Exchange Online](mam-ca-for-exchange-online.md)
+[Create app-based CA policies for Exchange Online](app-based-conditional-access-intune-exchange-on-line-create.md)
