@@ -36,43 +36,24 @@ As the public preview progresses, and more features are added, we'll let you kno
 
 ## June 2017
 
-### Apple School Manager (ASM) support with shared iPad <!-- 748864, 770395-->
+### Device enrollment
+
+#### Apple School Manager (ASM) support with shared iPad <!-- 748864, 770395-->
 
 Intune now supports use of Apple School Manager (ASM) in place of Apple Device Enrollment Program to provide out-of-box enrollment of iOS devices. ASM onboarding is required to use the Classroom app for Shared iPads, and is required to enable syncing data from ASM to Azure Active Directory via Microsoft School Data Sync (SDS). For more information, see [Enable iOS device enrollment with Apple School Manager](apple-school-manager-set-up-ios.md).
 
 > [!NOTE]
 > Configuring Shared iPads to work with the Classroom app requires iOS Education configurations in Azure are that not yet available.  This functionality will be added soon.
 
-### Control website visits on iOS devices <!-- 723832 -->
+### Device management
 
-You can now control which websites users of iOS devices can visit using one of the following two methods:
-
-- Add permitted, and blocked URLs using Apples built-in web content filter.
-
-- Allow only specified websites to be accessed by the Safari browser. Bookmarks will be created in Safari for each site you specify.
-
-### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
-
-For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
-
-### Define app-specific PIN for Android for Work devices <!-- 728976, 1102534 -->
-
-Android 7.0 and above devices with a work profile managed as an Android for Work device let the administrator define a passcode policy that only applies to apps in the work profile.  Options include:
-
-- Define just a device-wide passcode policy - This is the passcode that the user must use to unlock their entire device
- -Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
-- Define both a device and and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (eg, a 4 digit PIN to unlock the device, but a 6 digit PIN to open any work app)
-
-For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
-
-> [!NOTE]
-> This is only available on Android 7.0 and above.  By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two. 
-
-### Provide remote assistance to Android devices using TeamViewer <!-- 675418 -->
+#### Provide remote assistance to Android devices using TeamViewer <!-- 675418 -->
 
 Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information, see [Provide remote assistance for Intune managed Android devices](device-profile-android-teamviewer.md).
 
-### New app protection policies conditions for MAM <!-- 679864 -->
+### App management
+
+#### New app protection policies conditions for MAM <!-- 679864 -->
 
 You can now set a requirement for MAM without enrollment users that enforces the following:
 
@@ -86,17 +67,46 @@ You can also configure additional settings to provide a non-blocking notificatio
 
 For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md).
 
-### New app configuration capabilities <!-- 677969 -->
+#### New app configuration capability for MAM without enrollment <!-- 677969 -->
 
-You can now apply more app configuration values than just the values available through app protection policies in the MAM without enrollment channel.
+You can now create app configuration policies through the MAM without enrollment channel. This feature is equivalent to the app configuration policies available in the mobile device management (MDM) app configuration. For an example of app configuration using MAM without enrollment, see  [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
 
-### New settings for Windows 10 devices <!-- 978585 -->
-
-We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
-
-### Configure allowed and blocked URL lists for the Managed Browser <!-- 682960 -->
+#### Configure allowed and blocked URL lists for the Managed Browser <!-- 682960 -->
 
 You can now configure a list of allowed and blocked domains and URLs for the Intune Managed Browser using app configuration settings in the Azure portal. These settings can be configured regardless of whether it is being used on a managed or unmanaged device. For more information, see [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
+
+### Device configuration
+
+#### Control website visits on iOS devices <!-- 723832 -->
+
+You can now control which websites users of iOS devices can visit using one of the following two methods:
+
+- Add permitted, and blocked URLs using Apples built-in web content filter.
+
+- Allow only specified websites to be accessed by the Safari browser. Bookmarks will be created in Safari for each site you specify.
+
+For more information, see [Web content filter settings for iOS devices](web-content-filter-settings-ios.md).
+
+#### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
+
+For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
+
+#### Define app-specific PIN for Android for Work devices <!-- 728976, 1102534 -->
+
+Android 7.0 and above devices with a work profile managed as an Android for Work device let the administrator define a passcode policy that only applies to apps in the work profile.  Options include:
+
+- Define just a device-wide passcode policy - This is the passcode that the user must use to unlock their entire device
+ -Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
+- Define both a device and and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (eg, a 4 digit PIN to unlock the device, but a 6 digit PIN to open any work app)
+
+For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
+
+> [!NOTE]
+> This is only available on Android 7.0 and above.  By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two. 
+
+#### New settings for Windows 10 devices <!-- 978585 -->
+
+We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
 
 ## April 2017
 
