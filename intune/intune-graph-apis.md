@@ -534,37 +534,41 @@ To do so:
 
 2.  Verify that your tenant account allows users to register applications (see **User settings**).
 
-3.  Establish a relationship between each tenant.  To do so, either:
+3.  Establish a relationship between each tenant.  
+
+    To do so, either:
 
     a. Use the [Microsoft Partner Center](https://partnercenter.microsoft.com/) to define a relationship with your client and their email address.
 
     b. Invite the user to become a guest of your tenant.
 
-        To do so from the Azure AD blade:
+To invite the user to be a guest of your tenant:
 
-        1.  Choose **Add a guest user** from the **Quick tasks** panel.
+1.  Choose **Add a guest user** from the **Quick tasks** panel.
 
-        <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" />
+    <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" />
 
-        2.  Enter the client's email address and (optionall) add a personalized message for the invite.
+2.  Enter the client's email address and (optionall) add a personalized message for the invite.
 
-        3.  Choose **Invite**.
+3.  Choose **Invite**.
 
-        This sends an invite to the user.
+This sends an invite to the user.
 
-        <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" />
+   <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" />
 
-        The user will choose the **Get Started** link to accept your invitation.
+   The user will choose the **Get Started** link to accept your invitation.
 
-4.  When the relationship is established (or your invitation has been accepted), add the user account to the **Directory role**.
+When the relationship is established (or your invitation has been accepted), add the user account to the **Directory role**.
 
-    Remember to add the user to other roles as needed. For example, to allow the user to manage Intune settings, they need to be either a **Global Administrator** or an **Intune Service administrator**.
+Remember to add the user to other roles as needed. For example, to allow the user to manage Intune settings, they need to be either a **Global Administrator** or an **Intune Service administrator**.
 
-    <img src="media/aad-multiple-tenant-add-user.png" width="624" height="665" />
+<img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" />
 
-5.  Use http://portal.office.com to assign an Intune license to your user account.
+Also:
 
-6.  Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
+- Use http://portal.office.com to assign an Intune license to your user account.
+
+- Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 
     For example, suppose your tenant domain is contosopartner.onmicrosoft.com and your client's tenant domain northwind.onmicrosoft.com, you would update your code to authenticate to your client's tenant.
 
