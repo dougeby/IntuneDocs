@@ -41,9 +41,11 @@ Intune provides device compliance policy capabilities that evaluate the complian
 
 Starting at the [new Azure portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune), device-based conditional access policies for Exchange online and other Office 365 products are configured through the Azure portal.
 
--   Learn more about [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Learn more about [conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Learn more about [what is device compliance](device-compliance.md).
+-   Learn more about [what is Intune device compliance](device-compliance.md).
+
+-   Learn more about [protecting e-mail, Office 365, and other services using conditional access with Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 ### Conditional access for Exchange on-premises
 
@@ -59,7 +61,7 @@ Any device used to access Exchange on-premises is checked for compliance when de
 
 When devices do not meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device non-compliant.
 
-#### How conditional access for Exchange on-premises works?
+#### How conditional access for Exchange on-premises works
 
 The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
@@ -112,7 +114,7 @@ Users can be allowed or denied access when trying to access corporate Wi-Fi or V
 
 Intune partnered with Mobile Threat Defense vendors that provides a security solution to detect malwares, Trojans, and other threats on mobile devices.
 
-#### How the Intune and mobile threat defense integration works?
+#### How the Intune and mobile threat defense integration works
 
 When mobile devices have the mobile threat defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
 
@@ -153,40 +155,12 @@ App-based conditional access and mobile application management add a security la
 > [!NOTE] 
 > App-based conditional access [also supports LOB apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
-### How App-based conditional access works?
-
-In this example, the admin has app protection policies applied to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
-
-> [!NOTE] 
-> The flowchart structure below can be used for other managed apps.
-
-![App-based ca with Intune flow-chart](./media/ca-intune-common-ways-3.png)
-
-1.  The user tries to authenticate to Azure AD from the Outlook app.
-
-2.  The user gets redirected to the app store to install a broker app when trying to authenticate for the first time. The broker app can be either the Microsoft Authenticator for iOS, or the Microsoft Company portal for Android devices.
-
-	> [!NOTE]
-	> In this scenario, if users try to use a native e-mail app, they’ll be redirected to the app store to then install the Outlook app.
-
-3.  The broker app gets installed on the device.
-
-4.  The broker app starts the Azure AD registration process which creates a device record in Azure AD. This is not the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
-
-5.  The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized to be used by the user.
-
-6.  The broker app requests the App Client ID to check if it’s in the policy approved list.
-
-7.  Azure AD allows the user to authenticate and use the app. If the app is not in the policy approved list, Azure AD denies access to the app.
-
-8.  Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.
-
-9.  Outlook Cloud Service communicates with Azure AD to retrieve Exchange Online service access token for the user.
-
-10.  Exchange Online allows user to get corporate e-mail.
+-   Learn more about [app-based conditional access with Intune](app-based-conditional-access-intune.md).
 
 ## Next steps
 
 [How to configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+
+[How to install on-premises Exchange connector with Intune](https://docs.microsoft.com/intune/exchange-connector-install).
 
 [How to create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
