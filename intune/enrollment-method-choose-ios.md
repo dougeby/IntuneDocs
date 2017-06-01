@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-This topic describes the methods an IT admin can use to enable iOS device enrollment and the prerequisites for enrollment.
+This topic describes the methods an IT admin can use to enable iOS device enrollment in Intune.
 
 Use the following information to decide which method to use for enrolling iOS devices. All of the following methods, except BYOD, are for enrolling corporate-owned devices.
 
