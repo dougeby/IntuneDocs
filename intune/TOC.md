@@ -51,10 +51,11 @@
 ### [Assign licenses to users](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 ### [Enroll Android devices](android-enroll.md)
 ### Enroll iOS devices
-#### [Apple Configurator - Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
-#### [Apple Configurator - direct enrollment](apple-configurator-direct-enroll-ios.md)
-#### [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
 #### [DEP](device-enrollment-program-enroll-ios.md)
+#### [ASM](apple-school-manager-set-up-ios.md)
+#### [Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Direct enrollment](apple-configurator-direct-enroll-ios.md)
+#### [Add Apple Configurator serial numbers](apple-configurator-serial-numbers-add.md)
 ### [Device enrollment manager](device-enrollment-manager-enroll.md)
 ### [Enroll macOS devices](macos-enroll.md)
 ### [Enroll Windows devices](windows-enroll.md)
@@ -73,6 +74,7 @@
 <!--- ## [Plan and design](plan-and-design.md) --->
 ## How to
 ### [Use full or selective wipe](devices-wipe.md)
+### [Remote control Android devices](device-profile-android-teamviewer.md)
 <!--- ## [Troubleshoot](troubleshooting.md) --->
 
 # Manage users
@@ -102,7 +104,7 @@
 #### [Android for Work apps](apps-add-android-for-work.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
-### [Use app configuration profiles](app-configuration-policies.md)
+### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
 ### [Use iOS app provisioning profiles](app-provisioning-profile-ios.md)
 ### [Selectively wipe apps](apps-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
@@ -110,6 +112,7 @@
 #### [iOS VPP apps](vpp-apps-ios.md)
 #### [Windows Store for Business apps](windows-store-for-business.md)
 ### [Configure the Company Portal app](company-portal-app.md)
+### [Configure the Managed Browser](app-configuration-managed-browser.md)
 ## How to use app protection policies
 ### [Create & assign app protection policies](app-protection-policies.md)
 ### [Get ready for WIP app protection policies](app-protection-policies-configure-windows-10.md)
@@ -138,6 +141,7 @@
 #### [Home screen layout for iOS](home-screen-settings-ios.md)
 #### [App notifications for iOS](app-notification-settings-ios.md)
 #### [Shared devices for iOS](shared-device-settings-ios.md)
+#### [Web filter settings for iOS](web-content-filter-settings-ios.md)
 
 ### [Configure device restrictions](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)
