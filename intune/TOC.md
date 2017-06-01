@@ -216,6 +216,7 @@
 
 # Conditional access
 ## [What is conditional access?](conditional-access.md)
+## [Common ways to use conditional access](conditional-access-intune-common-ways-use.md)
 ## How to
 ### [Install Exchange on-premises connector](exchange-connector-install.md)
 ### [Create and assign conditional access policy](conditional-access-exchange-create.md)
