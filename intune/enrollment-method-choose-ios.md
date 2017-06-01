@@ -42,11 +42,11 @@ If users want to enroll their personal, BYOD (bring your own device) devices, th
 
 ## User-owned macOS devices (BYOD)
 
-You can enable macOS device enrollment. To enable macOS enrollment, the only reuirement is an [Apple Push Notification service  certificate](apple-mdm-push-certificate-get.md). For more information, see [Enroll macOS devices](./macos-enroll)
+You can enable macOS device enrollment. To enable macOS enrollment, the only reuirement is an [Apple Push Notification service  certificate](apple-mdm-push-certificate-get.md). For more information, see [Enroll macOS devices](./macos-enroll.md)
 
 ## Apple Configurator
 
-You can enroll iOS devices by exporting a Corporate Enrollment profile and then connecting those mobile devices to a Mac that is running [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017). Apple Configurator supports two forms of enrollment:
+You can enroll iOS devices by exporting a Corporate Enrollment profile and then connecting those mobile devices to a Mac that is running Apple Configurator. Apple Configurator supports two forms of enrollment:
 
 - **Setup Assistant enrollment**: Resets the device to factory settings and prepares it for setup by the device's new user. This method requires the admin to connect the iOS device through USB to a Mac computer running Apple Configurator to preconfigure the enrollment. Devices are then delivered to their users, who run the Setup Assistant when the devices first starts. This process configures the device with users' work or school credentials and completes the enrollment process. For more information, see [Enroll iOS devices with Apple Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md).
 

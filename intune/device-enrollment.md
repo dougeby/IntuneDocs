@@ -52,7 +52,7 @@ The following table offers an overview of Intune enrollment methods with their c
 
 | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#dem)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
@@ -64,7 +64,7 @@ The following table offers an overview of Intune enrollment methods with their c
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
-|**Auto-enroll** | No |Yes |No | [More information](./windows-enroll#enable-windows-10-automatic-enrollment.md)|
+|**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Bulk enroll** |No |Yes |No | [More information](./windows-bulk-enroll.md) |
 
 **Android enrollment methods**
@@ -73,7 +73,7 @@ The following table offers an overview of Intune enrollment methods with their c
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](./android-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](./device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| No | Yes | No| [More information](./android-enroll#enable-enrollment-of-android-for-work-devices) |
+|**Android for Work**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## BYOD
