@@ -52,6 +52,7 @@ Help desk staff and Intune administrators can access the troubleshooting portal 
 
 In the troubleshooting portal, you can select **Select User** to view a users' information. User information can help you understand the current state of users and their devices. The troubleshooting portal shows the following troubleshooting details:
 - **Tenant status**
+- **User status**
 - **Devices**
 - **Group membership**
 - **App protection status**
