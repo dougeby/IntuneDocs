@@ -72,6 +72,10 @@ You can now create app configuration policies through the MAM without enrollment
 
 You can now configure a list of allowed and blocked domains and URLs for the Intune Managed Browser using app configuration settings in the Azure portal. These settings can be configured regardless of whether it is being used on a managed or unmanaged device. For more information, see [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
 
+#### App protection policy helpdesk view <!-- 1069473 -->
+
+IT Helpdesk users can now check user license status and the status of app protection policy apps assigned to users in the Troubleshooting blade. For details, see [Troubleshooting](./help-desk-operators.md).
+
 ### Device configuration
 
 #### Control website visits on iOS devices <!-- 723832 -->
