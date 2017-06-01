@@ -50,3 +50,7 @@ In Configuration Manager version 1610 or later and Microsoft Intune version 1705
 2. On the Intune blade, choose **Device enrollment**, and then choose **Overview**.
 
 3. On the **Start managing devices** blade, choose **Set MDM Authority to Intune**. A message indicates that you have successfully set your MDM authority to Intune.
+
+## Mobile device cleanup after MDM certificate expiration
+
+The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate will not get renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.
