@@ -31,9 +31,6 @@ ms.custom: intune-azure
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
-> [!Note]
-> We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially before the new portal features are available. Look for these changes as they roll out later this month.
-
 ## June 2017
 
 ### Device enrollment
@@ -65,7 +62,7 @@ This feature is available on both Android and iOS. Intune supports minimum versi
 
 You can also configure additional settings to provide a non-blocking notification that recommends an OS or application upgrade. This notification can be closed and the application may be used as normal.
 
-For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md).
+For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md) and [Android app protection policy settings](app-protection-policy-settings-android).
 
 #### New app configuration capability for MAM without enrollment <!-- 677969 -->
 
