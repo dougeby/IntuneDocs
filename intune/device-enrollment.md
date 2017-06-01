@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,66 +41,67 @@ If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you c
 
 ## Overview of device enrollment methods
 
-The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below. The following terms are used in the table:
+The following table offers an overview of Intune enrollment methods with their capabilities and requirements described below.
+**Legend**
 
-- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](devices-wipe.md).
-- **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](device-enrollment-program-enroll-ios.md).
-- **Lock** - Indicates if users are prevented from unenrolling their devices from management. Users can unenroll their devices on all platforms by using their Company Portal app. They cannot use the native operating system menus to unenroll.
-
+- **Reset required** - Device are factory reset during enrollment.
+- **User Affinity** - Associates devices with users. For more information, see [User affinity](device-enrollment-program-enroll-ios.md).
+- **Locked** - Prevents users from unenrolling devices.
 
 **iOS enrollment methods**
 
-| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
+| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
-|**[DEM](#dem)**|	No |No |No	| [More information](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get)|
+|**[DEM](#dem)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows enrollment methods**
 
-| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
+| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
+|**Auto-enroll** | No |Yes |No | [More information](./windows-enroll#enable-windows-10-automatic-enrollment.md)|
+|**Bulk enroll** |No |Yes |No | [More information](./windows-bulk-enroll.md) |
 
 **Android enrollment methods**
 
-| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
+| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](android-enroll.md)|
-|**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| No | Yes | No| [More information](android-enroll.md) |
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](./android-enroll.md)|
+|**[DEM](#dem)**|	No |No |No	|[More information](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| No | Yes | No| [More information](./android-enroll#enable-enrollment-of-android-for-work-devices) |
 
 
 ## BYOD
-"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. You can block enrollment of personally owned iOS and Android devices. See [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions) for instructions.
+"Bring your own device" users install and run the Company Portal app to enroll their devices. This lets users access company resources like email.
 
 ## Corporate-owned devices
-Corporate-owned devices (COD) can be managed by using the Azure portal. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
+The following are corporate-owned devices (COD) enrollment scenarios. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
 
 ### DEM
-Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](device-enrollment-manager-enroll.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](./device-enrollment-manager-enroll.md).
 
 ### DEP
-Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables:
+AApple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables the following functionality:
 
   -	Locked enrollment
   -	Kiosk mode and other advanced configurations and restrictions
 
-To learn more about iOS enrollment, see:
+Learn more about iOS DEP enrollment:
 
 - [Choose how to enroll iOS devices](enrollment-method-choose-ios.md)
 - [Enroll iOS devices using Device Enrollment Program](device-enrollment-program-enroll-ios.md)
-- [Go back to the table above](#overview-of-device-enrollment-methods)
 
 ### USB-SA
-IT admins use Apple Configurator, via USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS Supervised** mode, which in turn enables:
+IT admins use Apple Configurator, via USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS Supervised** mode, which in turn enables the following features:
   -	Locked enrollment
   -	Kiosk mode and other advanced configurations and restrictions
 
-To learn more about iOS enrollment, see:
+Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 
 - [Decide how to enroll iOS devices](enrollment-method-choose-ios.md)
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
@@ -115,10 +116,6 @@ To learn more about iOS enrollment, see:
 
 ## Mobile device management with Exchange ActiveSync and Intune
 Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
-
-## Supported device platforms and browsers
-
-See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers)
 
 ## Mobile device cleanup after MDM certificate expiration
 
