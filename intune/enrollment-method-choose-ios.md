@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Choose how to enroll iOS devices in IntunetitleSuffix: "Intune Azure preview"
+title: Choose how to enroll iOS devices in Intune
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: nathbarn
@@ -43,6 +44,12 @@ If users want to enroll their personal, BYOD (bring your own device) devices, th
 ## User-owned macOS devices (BYOD)
 
 You can enable macOS device enrollment. To enable macOS enrollment, the only reuirement is an [Apple Push Notification service  certificate](apple-mdm-push-certificate-get.md). For more information, see [Enroll macOS devices](./macos-enroll.md)
+
+## Enrollment program with Apple
+Apple offers device purchasing programs that include device enrollment and management infrastructure. Device purchased through one of these programs can bulk-enrolled "over the air" by assigning device serial numbers to Intune management.
+
+- **Device Enrollment Program (DEM)** - Apple's device enrollment program for organizations and enterprises. For more information, see [Enroll iOS devices using Device Enrollment Program](device-enrollment-program-enroll-ios.md).
+- **Apple School Manager (ASM)** - Apple's device enrollment program for schools. For more information see [Enable iOS device enrollment with Apple School Manager](apple-school-manager-set-up-ios.md)
 
 ## Apple Configurator
 
