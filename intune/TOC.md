@@ -213,9 +213,13 @@
 # Conditional access
 ## [What is conditional access?](conditional-access.md)
 ## [Common ways to use conditional access](conditional-access-intune-common-ways-use.md)
+## [App-based conditional access](app-based-conditional-access-intune.md)
 ## How to
 ### [Install Exchange on-premises connector](exchange-connector-install.md)
 ### [Create and assign conditional access policy](conditional-access-exchange-create.md)
+### [Set up app-based conditional access for Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
+### [Set up app-based conditional access for SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [ADAL and Intune](app-modern-authentication-block.md)
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 # Access control
