@@ -61,7 +61,7 @@ Any device used to access Exchange on-premises is checked for compliance when de
 
 When devices do not meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device non-compliant.
 
-#### How conditional access for Exchange on-premises works?
+#### How conditional access for Exchange on-premises works
 
 The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
@@ -114,7 +114,7 @@ Users can be allowed or denied access when trying to access corporate Wi-Fi or V
 
 Intune partnered with Mobile Threat Defense vendors that provides a security solution to detect malwares, Trojans, and other threats on mobile devices.
 
-#### How the Intune and mobile threat defense integration works?
+#### How the Intune and mobile threat defense integration works
 
 When mobile devices have the mobile threat defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
 

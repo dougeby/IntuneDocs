@@ -219,6 +219,7 @@
 ### [Create and assign conditional access policy](conditional-access-exchange-create.md)
 ### [Set up app-based conditional access for Exchange Online](app-based-conditional-access-intune-exchange-on-line-create.md)
 ### [Set up app-based conditional access for SharePoint Online](app-based-conditional-access-intune-sharepoint-on-line-create.md)
+### [ADAL and Intune](app-modern-authentication-block.md)
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 # Access control

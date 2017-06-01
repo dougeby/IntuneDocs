@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Block apps with no modern authentication
+title: Block apps with no modern authentication on Intune
 description:
 keywords:
 author: andredm7
