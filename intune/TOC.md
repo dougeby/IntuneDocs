@@ -217,8 +217,8 @@
 ## How to
 ### [Install Exchange on-premises connector](exchange-connector-install.md)
 ### [Create and assign conditional access policy](conditional-access-exchange-create.md)
-### [Set up app-based conditional access for Exchange Online](app-based-conditional-access-intune-exchange-on-line-create.md)
-### [Set up app-based conditional access for SharePoint Online](app-based-conditional-access-intune-sharepoint-on-line-create.md)
+### [Set up app-based conditional access for Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
+### [Set up app-based conditional access for SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)
 ### [ADAL and Intune](app-modern-authentication-block.md)
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 

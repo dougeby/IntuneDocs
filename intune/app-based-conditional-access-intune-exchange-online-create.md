@@ -67,4 +67,4 @@ This topic gives you step-by-step instructions on how to set up conditional acce
 ### See also
 
 [Protect app data with app protection policies](app-protection-policies.md)
-[Create app-based CA policies for SharePoint Online](app-based-conditional-access-intune-sharepoint-on-line-create.md)
+[Create app-based CA policies for SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)

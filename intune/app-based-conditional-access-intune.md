@@ -90,8 +90,8 @@ In this example, the admin has app protection policies applied to the Outlook ap
 11.  Corporate e-mail is delivered to the user's mailbox.
 
 ## Next steps
-[Create an Exchange Online Policy for MAM apps](app-based-conditional-access-intune-exchange-on-line-create.md)
+[Create an Exchange Online Policy for MAM apps](app-based-conditional-access-intune-exchange-online-create.md)
 
-[Create a SharePoint Online Policy for MAM apps](app-based-conditional-access-intune-sharepoint-on-line-create.md)
+[Create a SharePoint Online Policy for MAM apps](app-based-conditional-access-intune-sharepoint-online-create.md)
 
 [Block apps that do not have modern authentication](app-modern-authentication-block.md)

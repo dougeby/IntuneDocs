@@ -81,4 +81,4 @@ This topic provides guidance on how to set up app-based conditional access polic
 
 [Protect app data with app protection policies](app-protection-policies.md)
 
-[Create app-based CA policies for Exchange Online](app-based-conditional-access-intune-exchange-on-line-create.md)
+[Create app-based CA policies for Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
