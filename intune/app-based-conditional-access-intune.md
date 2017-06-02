@@ -35,7 +35,7 @@ ms.custom: intune-azure
 App-based conditional access and mobile application management adds a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online, and other Office 365 services.
 
 > [!NOTE]
-> A managed app is an app that has app protection policies applied to, and can be managed by Intune.
+> A managed app is an app that has app protection policies applied to it, and can be managed by Intune.
 
 You can block the built-in mail apps on iOS and Android when you only allow the Microsoft Outlook app to access Exchange Online. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.
 
@@ -56,6 +56,9 @@ Before you create an App-based conditional access policy, you must have:
 	- Microsoft PowerPoint for iOS and Android
 	- Microsoft OneDrive for Business for iOS and Android
 	- Microsoft OneNote for iOS
+
+	> [!NOTE] 
+	> App-based conditional access [also supports LOB apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
 ## How app-based conditional access works
 
