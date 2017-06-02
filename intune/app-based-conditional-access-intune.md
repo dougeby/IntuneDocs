@@ -30,9 +30,14 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](./includes/azure_preview.md)]
 
-[Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled for management in Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using App-based conditional access with MAM, you can create a policy that allows only mobile apps that support Intune app protection policies to access O365 services like Exchange Online.
+[Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.
 
-For example, by only allowing the **Microsoft Outlook app** to access Exchange Online, you can **block the built-in mail apps on iOS and Android**, which don't have the data protection bein applied by Intune app protection policies to get email from **Exchange Online**. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing **SharePoint Online**.
+App-based conditional access and mobile application management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online, and other Office 365 services.
+
+> [!NOTE]
+> A managed app is an app that has app protection policies applied to, and can be managed by Intune.
+
+For example, by only allowing the Microsoft Outlook app to access Exchange Online, you can block the built-in mail apps on iOS and Android, which don't have the data protection being applied by Intune app protection policies to get email from Exchange Online. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.
 
 ## Prerequisites
 Before you create an App-based conditional access policy, you must have:
@@ -43,7 +48,7 @@ Before you create an App-based conditional access policy, you must have:
 ## Supported apps
 
 - **Exchange Online**:
-	- **Microsoft Outlook** for Android and iOS.
+	- Microsoft Outlook for Android and iOS.
 <br></br>
 - **SharePoint Online**
 	- Microsoft Word for iOS and Android
@@ -55,7 +60,7 @@ Before you create an App-based conditional access policy, you must have:
 > [!IMPORTANT]
 > For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app. The OneNote app for Android does not yet support MAM without enrollment.
 
-## How app-based conditional access works?
+## How app-based conditional access works
 
 In this example, the admin has app protection policies applied to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
 
@@ -77,9 +82,9 @@ In this example, the admin has app protection policies applied to the Outlook ap
 
 5.  The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized to be used by the user.
 
-6.  The broker app requests the App Client ID to check if it’s in the policy approved list.
+6.  The broker app sends the App Client ID to Azure AD as part of the user authentication process to check if it’s in the policy approved list.
 
-7.  Azure AD allows the user to authenticate and use the app. If the app is not in the policy approved list, Azure AD denies access to the app.
+7.  Azure AD allows the user to authenticate and use the app based on the policy approved list. If the app is not in the policy approved list, Azure AD denies access to the app.
 
 8.  Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.
 
