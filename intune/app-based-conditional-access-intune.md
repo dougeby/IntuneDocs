@@ -57,9 +57,6 @@ Before you create an App-based conditional access policy, you must have:
 	- Microsoft OneDrive for Business for iOS and Android
 	- Microsoft OneNote for iOS
 
-> [!IMPORTANT]
-> For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app.
-
 ## How app-based conditional access works
 
 In this example, the admin has app protection policies applied to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
