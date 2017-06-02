@@ -58,7 +58,7 @@ Before you create an App-based conditional access policy, you must have:
 	- Microsoft OneNote for iOS
 
 > [!IMPORTANT]
-> For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app. The OneNote app for Android does not yet support MAM without enrollment.
+> For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app.
 
 ## How app-based conditional access works
 
