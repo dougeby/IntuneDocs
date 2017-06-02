@@ -84,7 +84,7 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 ### Introduction and get started
 This section contains information about [what's new](whats-new.md), [known issues](known-issues.md), [how to get support](get-support.md) and how to [get started with a free trial](free-trial-sign-up.md) of Intune.
 ### Plan and design
-Information to help you [plan and design](/intune-classic/plan-and-design/introduction) your Intune environment.
+Information to help you [plan and design](/intune-classic/plan-design/introduction) your Intune environment.
 ### Device enrollment
 [How to get your devices managed by Intune](device-enrollment.md).
 ### Device compliance
