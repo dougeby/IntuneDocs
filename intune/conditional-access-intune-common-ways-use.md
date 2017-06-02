@@ -148,13 +148,6 @@ Conditional access for PCs provide similar capabilities available for mobile dev
 
 Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
 
-A managed app is an app that has app protection policies applied to, and can be managed by Intune.
-
-App-based conditional access and mobile application management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online, and other Office 365 services. App-based conditional access can be configured in the Azure portal.
-
-> [!NOTE] 
-> App-based conditional access [also supports LOB apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
-
 -   Learn more about [app-based conditional access with Intune](app-based-conditional-access-intune.md).
 
 ## Next steps
