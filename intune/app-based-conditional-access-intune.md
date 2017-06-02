@@ -32,12 +32,12 @@ ms.custom: intune-azure
 
 [Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.
 
-App-based conditional access and mobile application management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online, and other Office 365 services.
+App-based conditional access and mobile application management adds a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online, and other Office 365 services.
 
 > [!NOTE]
 > A managed app is an app that has app protection policies applied to, and can be managed by Intune.
 
-For example, by only allowing the Microsoft Outlook app to access Exchange Online, you can block the built-in mail apps on iOS and Android, which don't have the data protection being applied by Intune app protection policies to get email from Exchange Online. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.
+You can block the built-in mail apps on iOS and Android when you only allow the Microsoft Outlook app to access Exchange Online. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.
 
 ## Prerequisites
 Before you create an App-based conditional access policy, you must have:
