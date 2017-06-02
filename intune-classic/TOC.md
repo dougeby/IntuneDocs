@@ -221,6 +221,8 @@
 ### [Retire apps ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
+## [Change your MDM authority](deploy-use/change-mdm-authority.md)
+
 ## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
 ### [Company Portal messages end users see](deploy-use/help-end-users-understand-company-portal-app-messages.md)
 ### [End user experience for Android with MAM-enabled apps](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
@@ -228,6 +230,7 @@
 ### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
 ### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
 ### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
+
 
 # Develop and Customize Apps
 ## [Overview of the Microsoft Intune App SDK](develop/intune-app-sdk.md)
