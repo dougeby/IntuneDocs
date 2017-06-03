@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -310,7 +310,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To enable support for the certificate connector
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
 4. On the **Device Configuration** blade, choose **Certification Authority**.
 5.  Select **Enable Certificate Connector**.
@@ -321,7 +321,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 > Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
 4. On the **Device Configuration** blade, choose **Certification Authority**.
 5. Choose **Download Certificate Connector**.

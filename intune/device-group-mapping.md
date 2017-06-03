@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,6 @@ You can create any device categories you want, for example:
 
 ### Step 1 - Create device categories in the Intune blade of the Azure portal
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. Choose **More Services** > **Other** > **Intune**.
 3. On the **Intune** blade, choose **Enroll devices**.
 3. In the **Enrollment** blade, choose **Device Categories**.
 4. On the **Device Categories** page, choose **Create** to add a new category.
@@ -82,7 +81,6 @@ If the **Category** column isn’t displayed, click **Columns**, choose **Catego
 ### To change the category of a device
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. Choose **More Services** > **Other** > **Intune**.
 3. On the **Intune** blade, choose **Devices & Groups**.
 4. On the **Devices and Groups** blade, choose **Manage** > **All devices**.
 5. In the list of devices, choose the device you want, then, on the device properties blade, choose **Manage** > **Properties**.
