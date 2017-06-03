@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -85,6 +85,10 @@ Before you can configure certificate profiles you must complete the following ta
 **Step 4**: Configure NDES for use with Intune
 
 **Step 5**: Enable, install, and configure the Intune Certificate Connector
+
+> [!NOTE]
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+
 
 #### Step 1 - Create an NDES service account
 
@@ -314,7 +318,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To download, install and configure the certificate connector
 
 > [!NOTE]
-> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
@@ -379,7 +383,7 @@ To validate that the service is running, open a browser and enter the following 
 		- **Common name**
 		- **Common name including email**
 		- **Common name as email**
-		- **Custom** - When you select this option, another drop-down field is displayed. You use this field to enter a custom subject name format. The two variables supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of these variables and static strings, you can create a custom subject name format, like this one: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) shows the **CertStrToName** function and its supported strings.
+		- **Custom** - When you select this option, another drop-down field is displayed. You use this field to enter a custom subject name format. The two variables supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of one or many of these variables and static strings, you can create a custom subject name format, like this one: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) shows the **CertStrToName** function and its supported strings.
 		
 	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate will be used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN. 
 	- **Key usage** - Specify key usage options for the certificate. You can choose from the following options: 
