@@ -121,6 +121,8 @@
 
 ### [Enable access to company resources](deploy-use/enable-access-to-company-resources-with-microsoft-intune.md)
 #### [Secure resource access with certificate profiles](deploy-use/secure-resource-access-with-certificate-profiles.md)
+##### [Configure certificate infrastructure for SCEP](deploy-use/configure-certificate-infrastructure-for-scep.md)
+##### [Configure certificate infrastructure for PFX](deploy-use/configure-certificate-infrastructure-for-pfx.md)
 #### [Wi-Fi connections in Intune](deploy-use/wi-fi-connections-in-microsoft-intune.md)
 #### [VPN connections in Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
