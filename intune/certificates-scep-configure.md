@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -86,9 +86,13 @@ Before you can configure certificate profiles you must complete the following ta
 
 **Step 5**: Enable, install, and configure the Intune Certificate Connector
 
+> [!NOTE]
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### Step 1 - Create an NDES service account
 
-Create a domain user account to use as the NDES service account. You will specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Localy**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
+Create a domain user account to use as the NDES service account. You will specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
 In this task you will:
@@ -248,7 +252,7 @@ In this task you will:
 
     ![Test NDES](.\media\SCEP_NDES_URL.png)
 
-    If you get a **503 Service unavailable**, check the eventviewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
+    If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 
 ##### To Install and bind certificates on the NDES Server
 
@@ -314,7 +318,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To download, install and configure the certificate connector
 
 > [!NOTE]
-> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
@@ -379,6 +383,8 @@ To validate that the service is running, open a browser and enter the following 
 		- **Common name**
 		- **Common name including email**
 		- **Common name as email**
+		- **Custom** - When you select this option, another drop-down field is displayed. You use this field to enter a custom subject name format. The two variables supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of one or many of these variables and static strings, you can create a custom subject name format, like this one: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) shows the **CertStrToName** function and its supported strings.
+		
 	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate will be used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN. 
 	- **Key usage** - Specify key usage options for the certificate. You can choose from the following options: 
 		- **Key encipherment:** Allow key exchange only when the key is encrypted. 
@@ -393,12 +399,6 @@ To validate that the service is running, open a browser and enter the following 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-
->[!Note]
-> For iOS devices only: Under Subject name format, select Custom to enter a custom subject name format.
-> The two variables currently supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
-> **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
-In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) show the **CertStrToName** function and its supported strings.
 
 ## How to assign the certificate profile
 

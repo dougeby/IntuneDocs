@@ -1,11 +1,12 @@
 ---
-title: Configure and manage PKCS certificates with IntunetitleSuffix: "Intune Azure preview"
+title: Configure and manage PKCS certificates with Intune
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure, then create and assign PKCS certificates with Intune."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 05/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -190,12 +191,13 @@ In the Azure Portal, select the **Configure devices** workload.
 		- **Common name**
 		- **Common name including email**
 		- **Common name as email**
-	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate will be used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
+	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate is used to authenticate to a Network Policy Server, set the subject alternative name to the UPN. 
+	You can also select **Custom Azure AD attribute**. When you select this option, another drop-down field is displayed. From the **Custom Azure AD attribute** drop-down field, there is one option: **Department**. When you select this option, if the department is not identified in Azure AD, the certificate is not issued. To resolve this issue, identify the department and save the changes. At the next device checkin, the problem is resolved and certificate is issued. ASN.1 is the notation used for this field. 
 	- **Extended key usage** (Android) - Choose **Add** to add values for the certificate's intended purpose. In most cases, the certificate will require **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required. 
 	- **Root Certificate** (Android) - Choose a root CA certificate profile that you have previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that will issue the certificate that you are configuring in this certificate profile. This is the trusted certificate profile that you created previously.
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create Profile** blade, and click **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and is displayed on the profiles list blade.
 
 ## How to assign the certificate profile
 
