@@ -1,67 +1,67 @@
-# [Introduction](/intune-classic/understand-explore/introduction-to-microsoft-intune?toc=/intune/toc.json)
+# [Introduction](introduction-intune.md)
 ## [What is the Azure portal preview?](what-is-intune.md)
-## [What is Intune for Education?](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune-classic/toc.json)
+## [What is Intune for Education?](introduction-intune-education.md)
 ## [Intune features in Azure](ui-changes.md)
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
-### [What's new in the app UI](/intune-classic/whats-new/whats-new-in-intune-app-ui?toc=/intune/toc.json)
-### What's new archive
-## High-level architecture
-## [Device and app lifecycles](/intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune?toc=/intune/toc.json)
-### [Device lifecycle](/intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune?toc=/intune/toc.json)
-### [App lifecycle](/intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune?toc=/intune/toc.json)
-## [Common scenarios](/intune-classic/understand-explore/common-ways-to-use-intune?toc=/intune/toc.json)
+### [What's new in the app UI](whats-new-app-ui.md)
+<!-- ### What's new archive
+## High-level architecture -->
+## [Device and app lifecycles](introduction-device-app-lifecycles.md)
+### [Device lifecycle](device-lifecycle.md)
+### [App lifecycle](app-lifecycle.md)
+## [Common scenarios](common-scenarios.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
-# Get started
+<!--# Get started
 ## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
 ## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json)
+## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
 
 
 # Plan deployment
-## [Planning guide](/intune-classic/plan-design/introduction?toc=/intune/toc.json)
-### [Determine goals and objectives](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json)
-### [Identify scenarios](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json)
-### [Determine requirements](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json)
-### [Develop a rollout plan](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json)
-### [Develop a communication plan](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json)
-### [Develop a support plan](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json)
-### [Design](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json)
-### [Implement](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json)
-### [Test and validate](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json)
-### [Additional resources](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json)
-## Scenario implementation guides
+## [Planning guide](planning-guide.md)
+### [Determine goals and objectives](planning-guide-deployment-goals)
+### [Identify scenarios](planning-guide-scenarios.md)
+### [Determine requirements](planning-guide-requirements.md)
+### [Develop a rollout plan](planning-guide-rollout-plan.md)
+### [Develop a communication plan](planning-guide-communication-plan.md)
+### [Develop a support plan](planning-guide-support-plan.md)
+### [Design](planning-guide-design.md)
+### [Implement](planning-guide-onboarding.md)
+### [Test and validate](planning-guide-test-validation.md)
+### [Additional resources](planning-guide-resources.md)
+<!-- ## Scenario implementation guides
 ### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
 ### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
-### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json)
-## [Migration guide](/intune-classic/plan-design/intune-mdm-migration-guide?toc=/intune/toc.json)
-### [Prepare Intune](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune/toc.json)
-#### [Basic setup](/intune-classic/plan-design/migration-phase1-basic-setup?toc=/intune/toc.json)
-#### [Configure device and app management policies](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune/toc.json)
-#### [Migration considerations](/intune-classic/plan-design/migration-phase1-special-migration-considerations?toc=/intune/toc.json)
-### [Migration campaign](/intune-classic/plan-design/migration-phase2-migration-campaign?toc=/intune/toc.json)
-#### [Plan communications](/intune-classic/plan-design/migration-phase2-communication-plan?toc=/intune/toc.json)
-#### [Drive adoption](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune/toc.json)
-#### [Typical migration cycle](/intune-classic/plan-design/migration-phase2-typical-migration-cycle?toc=/intune/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json) -->
+## [Migration guide](migration-guide.md)
+### [Prepare Intune](migration-guide-prepare.md)
+#### [Basic setup](migration-guide-setup.md)
+#### [Configure device and app management policies](migration-guide-configure-policies.md)
+#### [Migration considerations](migration-guide-considerations.md)
+### [Migration campaign](migration-guide-campaign.md)
+#### [Plan communications](migration-guide-communication-plan.md)
+#### [Drive adoption](migration-guide-conditional-access.md)
+#### [Typical migration cycle](migration-guide-cycle.md)
 
 
 # How to
 
-## [Set up Intune](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune?toc=/intune/toc.json)
+## [Set up Intune](setup-steps.md)
 ### Prerequisites
-#### [Supported devices](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune?toc=/intune/toc.json)
-#### [Network bandwidth usage](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune?toc=/intune/toc.json)
-###	[Sign into Intune](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1?toc=/intune/toc.json)	
-###	[Configure domains](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2?toc=/intune/toc.json)	
+#### [Supported devices](supported-devices-browsers.md)
+#### [Network bandwidth usage](network-bandwidth-use.md)
+###	[Sign into Intune](account-sign-up.md)	
+###	[Configure domains](custom-domain-name-configure.md)	
 ### [Set the MDM authority](mdm-authority-set.md)
-###	[Add users and groups](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3?toc=/intune/toc.json)
-###	[Assign licenses](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json)		
-###	[Customize Company Portal](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7?toc=/intune/toc.json)		
+###	[Add users and groups](users-permissions-add.md)
+###	[Assign licenses](licenses-assign.md)		
+###	[Customize Company Portal](company-portal-customize.md)		
 
 ## [Enroll devices](device-enrollment.md)
 ### Prerequisites
@@ -80,7 +80,7 @@
 #### Set up Apple School Manager
 #### [Set up with Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
-### [Educate users](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune?toc=/intune/toc.json)
+### [Educate users](end-user-educate.md)
 
 ## [Manage devices](device-management.md)
 ### [Wipe device](devices-wipe.md)
@@ -97,7 +97,7 @@
 
 ## [Manage users](user-management.md)
 ### [Get started with groups](groups-get-started.md)
-### Add and delete users
+<!--### Add and delete users -->
 
 ## [Manage apps](app-management.md)
 ### [Add apps](apps-add.md)
@@ -199,20 +199,20 @@
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 ## Protect data and devices
-### Set up mobile threat protection		
+<!-- ### Set up mobile threat protection		
 #### Prerequisites	
 #### Set up Lookout	
 #### Set up Skycure	
 #### Enable mobile threat protection in Intune	
 #### Create a mobile threat protection compliance policy	
 ### [Set up Windows Hello](windows-hello.md)		
-### Protect devices with remote actions		
+### Protect devices with remote actions		-->
 
 ## [Manage roles](role-based-access-control.md)
-### Create a custom role
-### Assign a role
+<!-- ### Create a custom role
+### Assign a role -->
 ### [Use the helpdesk operator role](help-desk-operators.md) 
-### Custom role settings
+<!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json) 
 ### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json) 
@@ -246,14 +246,14 @@
 ### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 ### [Windows 10](custom-settings-windows-10.md)
 ### [Android for Work](custom-settings-android-for-work.md)
-## [Prepare LOB apps for MAM](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json)
-### [App Wrapping Tool for iOS](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json)
-### [App Wrapping Tool for Android](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json)
-## [Sideload Windows apps](/intune-classic/deploy-use/sideload-apps-for-windows?toc=/intune/toc.json)
-## [Intune App SDK](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json)
-### [Get started with Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started?toc=/intune/toc.json)
-### [Intune App SDK for iOS](/intune-classic/develop/intune-app-sdk-?toc=/intune/toc.json)
-### [Intune App SDK for Android](/intune-classic/develop/intune-app-sdk-ios?toc=/intune/toc.json)
-### [Intune App SDK Cordova plugin](/intune-classic/develop/intune-app-sdk-cordova?toc=/intune/toc.json)
-### [Intune App SDK Xamarin component](/intune-classic/develop/intune-app-sdk-xamarin?toc=/intune/toc.json)
+## [Prepare LOB apps for MAM](apps-prepare-mobile-application-management.md)
+### [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md)
+### [App Wrapping Tool for Android](app-wrapper-prepare-android.md)
+## [Sideload Windows apps](app-sideload-windows.md)
+## [Intune App SDK](app-sdk.md)
+### [Get started with Intune App SDK](app-sdk-get-started.md)
+### [Intune App SDK for iOS](app-sdk-ios.md)
+### [Intune App SDK for Android](app-sdk-android.md)
+### [Intune App SDK Cordova plugin](app-sdk-cordova.md)
+### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
