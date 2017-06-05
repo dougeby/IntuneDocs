@@ -65,7 +65,7 @@ You can also configure additional settings to provide a non-blocking notificatio
 For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md) and [Android app protection policy settings](app-protection-policy-settings-android.md).
 
 #### Configure app configurations for Android for Work <!-- 621621 -->
-Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Intune portal with a configuration designer or a JSON editor. For more information, see [app configurations for Android for Work](app-configuration-policies-use-android).
+Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Intune portal with a configuration designer or a JSON editor. For more information, see [app configurations for Android for Work](app-configuration-policies-use-android.md).
 
 #### New app configuration capability for MAM without enrollment <!-- 677969 -->
 
