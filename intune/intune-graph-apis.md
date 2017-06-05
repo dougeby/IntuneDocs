@@ -1,10 +1,34 @@
-## How to access to the Intune Graph API
+---
+# required metadata
+
+title: How to use Azure AD to access the Intune Graph API
+description: Describes steps needed for apps to use Azure AD to access the Intune Graph API
+keywords: intune graphapi c# powershell permission roles
+author: lleonard-msft
+manager: angrobe
+ms.author: alleonar
+ms.date: 05/28/2017
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: [GET ONE FROM guidgenerator.com]
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+#ms.reviewer: [ALIAS]
+ms.suite: ems
+#ms.tgt_pltfrm:
+ms.custom: intune-azure
+---
 
 The [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API leverages Azure Active Directory (Azure AD) for authentication and access control.  
-
 Access to the Intune Graph API requires:
 
-- An application ID with
+- An application ID with:
 
     - Permission to call Azure AD and Graph APIs.
     - Permission scopes relevant to the specific application tasks.
@@ -41,25 +65,25 @@ To register an app to use Graph API:
 
     As appropriate, you may use:
     - The tenant admin account.
-    - A tenant user account with the _Users can register applications_ setting enabled.
+    - A tenant user account with the **Users can register applications** setting enabled.
 
 2.  From the menu, choose **Azure Active Directory** &gt; **App Registrations**.
 
-3.  Either choose **New application registration** to create a new application or choose an existing application.  (If you choose an existing application, skip the next step.)
+    <img src="./media/app-registration-manage.png" width="239" height="276" alt="The App registrations menu command" />
 
-    <img src="./media/app-registration-manage.png" width="239" height="276" />
+3.  Either choose **New application registration** to create a new application or choose an existing application.  (If you choose an existing application, skip the next step.)
 
 4.  On the **Create** blade, specify the following: 
 
     1.  A **Name** for the application (displayed when users sign in).
 
-    2.  The **Application type** and **Sign-on URL** values.
+    2.  The **Application type** and **Redirect URI** values.
 
         These vary according to your requirements. For example, if you're using an Azure AD [Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), set **Application Type** to `Native` and **Redirect URI** to `urn:ietf:wg:oauth:2.0:oob`.
 
-        To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios).
+        <img src="media/app-registration-redirect.png" width="355" height="232" alt="The Redirect URI value" />
 
-    <img src="media/app-registration-redirect.png" width="355" height="232" />
+        To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios).
 
 5.  From the application blade:
 
@@ -67,15 +91,15 @@ To register an app to use Graph API:
 
     2.  Choose **Settings** &gt; **API access** &gt; **Required permissions**.
 
-    <img src="media/app-registration-req-perms.png" width="554" height="217" />
+    <img src="media/app-registration-req-perms.png" width="554" height="217" alt="The Required permissions setting" />
 
 6.  From the **Required Permissions** blade, choose **Add** &gt; **Add API access** &gt; **Select an API**.
 
-    <img src="media/app-registration-graph-api.png" width="558" height="165" />
+    <img src="media/app-registration-graph-api.png" width="558" height="165" alt="The Microsoft Graph setting" />
 
 7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  This opens the **Enable access** blade which lists permission scopes available to your application.
 
-    <img src="media/aad-auth-role-permissions.png" width="479" height="293" />
+    <img src="media/aad-auth-role-permissions.png" width="479" height="293" alt="Intune Graph API permission scopes" />
 
     Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
 
@@ -87,11 +111,11 @@ At this point, you may also:
 
 - Choose to grant permission for all tenant accounts to use the app without providing credentials.  
 
-    To do so, choose Grant permissions and accept the subsequent confirmation prompt.
+    To do so, choose **Grant permissions** and accept the confirmation prompt.
 
     When you run the application for the first time, you're prompted to grant the app permission to perform the selected roles.
 
-    <img src="media/app-registration-grant-perms.png" width="512" height="232" />
+    <img src="media/app-registration-grant-perms.png" width="512" height="232" alt="The Grant permissions button" />
 
 - Make the app available to users outside your tenant.  (This is typically only required for partners supporting multiple tenants/organizations.)  
 
@@ -99,7 +123,7 @@ At this point, you may also:
 
     1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-    <img src="media/app-registration-other-tenants.png" width="531" height="168" />
+    <img src="media/app-registration-other-tenants.png" width="531" height="168" alt="The Edit manifest blade" />
 
     2. Change the value of the `availableToOtherTenants` setting to `true`.
 
@@ -120,17 +144,17 @@ The following table summarizes the Intune Graph API permission scopes.  The firs
 
 _Enable Access_ setting | Scope name
 :--|:--
-_Perform user-impacting remote actions on Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
-_Read and write Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
-_Read Microsoft Intune devices (preview)_ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
-_Read and write Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-_Read Microsoft Intune RBAC settings (preview)_ | [DeviceManagementRBAC.Read.All](#rac=ro)
-_Read and write Microsoft Intune apps (preview)_ | [DeviceManagementApps.ReadWrite.All](#app-rw)
-_Read Microsoft Intune apps (preview)_ | [DeviceManagementApps.Read.All](#app-ro)
-_Read and write Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
-_Read Microsoft Intune Device Configuration and Policies (preview)_ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
-_Read and write Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
-_Read Microsoft Intune configuration (preview)_ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
+__Perform user-impacting remote actions on Microsoft Intune devices (preview)__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Read and write Microsoft Intune devices (preview)__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
+__Read Microsoft Intune devices (preview)__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
+__Read and write Microsoft Intune RBAC settings (preview)__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
+__Read Microsoft Intune RBAC settings (preview)__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Read and write Microsoft Intune apps (preview)__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
+__Read Microsoft Intune apps (preview)__ | [DeviceManagementApps.Read.All](#app-ro)
+__Read and write Microsoft Intune Device Configuration and Policies (preview)__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Read Microsoft Intune Device Configuration and Policies (preview)__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
+__Read and write Microsoft Intune configuration (preview)__ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
+__Read Microsoft Intune configuration (preview)__ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
 
 The table lists the settings in the order they appear in the Azure portal; the following sections describes the scopes in alphabetical order.
 
@@ -138,7 +162,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- **Enable Access** setting: _Read Microsoft Intune apps (preview)_
+- **Enable Access** setting: __Read Microsoft Intune apps (preview)__
 
 - Permits read access to the following entity properties and status:
     - Mobile Apps
@@ -148,9 +172,9 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- **Enable Access** setting: _Read and write Microsoft Intune apps (preview)_
+- **Enable Access** setting: __Read and write Microsoft Intune apps (preview)__
 
-- Allows the same operations as _DeviceManagementApps.Read.All_
+- Allows the same operations as __DeviceManagementApps.Read.All__
 
 - Also permits changes to the following entities:
 
@@ -161,7 +185,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **Enable Access** setting: _Read Microsoft Intune device configuration and policies (preview)_
+- **Enable Access** setting: __Read Microsoft Intune device configuration and policies (preview)__
 
 - Permits read access to the following entity properties and status:
     - Device Configuration
@@ -170,9 +194,9 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **Enable Access** setting: _Read and write Microsoft Intune device configuration and policies (preview)_
+- **Enable Access** setting: __Read and write Microsoft Intune device configuration and policies (preview)__
 
-- Allows the same operations as _DeviceManagementConfiguration.Read.All_
+- Allows the same operations as __DeviceManagementConfiguration.Read.All__
 
 - Apps can also create, assign, delete, and change the following entities:
     - Device Configuration
@@ -181,7 +205,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **Enable Access** setting: _Perform user-impacting remote actions on Microsoft Intune devices (preview)_
+- **Enable Access** setting: __Perform user-impacting remote actions on Microsoft Intune devices (preview)__
 
 - Permits the following remote actions on a managed device:
     - Retire
@@ -195,7 +219,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **Enable Access** setting: _Read Microsoft Intune devices (preview)_
+- **Enable Access** setting: __Read Microsoft Intune devices (preview)__
 
 - Permits read access to the following entity properties and status:
     - Managed Device
@@ -206,9 +230,9 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **Enable Access** setting: _Read and write Microsoft Intune devices (preview)_
+- **Enable Access** setting: __Read and write Microsoft Intune devices (preview)__
 
-- Allows the same operations as _DeviceManagementManagedDevices.Read.All_
+- Allows the same operations as __DeviceManagementManagedDevices.Read.All__
 
 - Apps can also create, delete, and change the following entities:
     - Managed Device
@@ -221,7 +245,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- **Enable Access** setting: _Read Microsoft Intune RBAC settings (preview)_
+- **Enable Access** setting: __Read Microsoft Intune RBAC settings (preview)__
 
 - Permits read access to the following entity properties and status:
     - Role Assignments
@@ -230,9 +254,9 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- **Enable Access** setting: _Read and write Microsoft Intune RBAC settings (preview)_
+- **Enable Access** setting: __Read and write Microsoft Intune RBAC settings (preview)__
 
-- Allows the same operations as _DeviceManagementRBAC.Read.All_
+- Allows the same operations as __DeviceManagementRBAC.Read.All__
 
 - Apps can also create, assign, delete, and change the following entities:
     - Role Assignments
@@ -240,7 +264,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfiguration.Read.All
 
-- **Enable Access** setting: _Read Microsoft Intune configuration (preview)_
+- **Enable Access** setting: __Read Microsoft Intune configuration (preview)__
 
 - Permits read access to the following entity properties and status:
     - Device Enrollment
@@ -256,7 +280,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfiguration.ReadWrite.All
 
-- **Enable Access** setting: _Read and write Microsoft Intune configuration (preview)_
+- **Enable Access** setting: __Read and write Microsoft Intune configuration (preview)__
 
 - Allows the same operations as DeviceManagementServiceConfiguration.Read.All_
 
@@ -280,7 +304,7 @@ In each example, you'll need to specify an application ID that has at least the 
 
 When testing either example, you may receive HTTP status 403 (Forbidden) errors similar to the following: 
 
-``` html
+``` javascript
 {
   "error": {
     "code": "Forbidden",
@@ -315,7 +339,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
 
 2.  Enter a name for your project and provide other details as desired.
 
-    <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" />
+    <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
 3.  Use the Solution Explorer to add the Microsoft ADAL NuGet package to the project.
 
@@ -323,7 +347,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
     2.  Choose **Manage NuGet Packages…** &gt; **Browse**.
     3.  Select `Microsoft.IdentityModel.Clients.ActiveDirectory` and then choose **Install**.
 
-    <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" />
+    <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
 4.  Add the following statements to the top of **Program.cs**:
 
@@ -332,7 +356,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
     using System.Net.Http;
     ```
 
-5.  Add a method to create the authorization HTTP Header:
+5.  Add a method to create the authorization header:
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -546,15 +570,17 @@ To invite the user to be a guest of your tenant:
 
 1.  Choose **Add a guest user** from the **Quick tasks** panel.
 
-    <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" />
+    <img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" alt="Use Quick Tasks to add a guest user" />
 
 2.  Enter the client's email address and (optionall) add a personalized message for the invite.
+
+    <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" alt="Inviting an external user as a guest" />
 
 3.  Choose **Invite**.
 
 This sends an invite to the user.
 
-   <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" />
+   <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
    The user will choose the **Get Started** link to accept your invitation.
 
@@ -562,15 +588,13 @@ When the relationship is established (or your invitation has been accepted), add
 
 Remember to add the user to other roles as needed. For example, to allow the user to manage Intune settings, they need to be either a **Global Administrator** or an **Intune Service administrator**.
 
-<img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" />
-
 Also:
 
 - Use http://portal.office.com to assign an Intune license to your user account.
 
 - Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 
-    For example, suppose your tenant domain is contosopartner.onmicrosoft.com and your client's tenant domain northwind.onmicrosoft.com, you would update your code to authenticate to your client's tenant.
+    For example, suppose your tenant domain is `contosopartner.onmicrosoft.com` and your client's tenant domain is `northwind.onmicrosoft.com`, you would update your code to authenticate to your client's tenant.
 
     To do so in a C# application based on the earlier example, you'd change the value of the `authority` variable:
 
