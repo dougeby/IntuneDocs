@@ -42,7 +42,6 @@ Make sure you have configured Intune and Android for Work to work together in th
 
 ## Synchronize an app from the Google Play for Work store
 
-
 1. Go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work.
 2. Search the store for the app you want to assign using Intune.
 3. On the page for the app you chose, choose **Approve**. In this example, you have chosen the Microsoft Excel app.<br>
@@ -68,17 +67,16 @@ For more information about how to upload and publish Android apps, see the [Goog
 If you have approved an app from the store and don't yet see it in the **Licensed apps** node of the **Mobile apps** workload, you can force an immediate sync as follows:
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Setup** > **Android for Work**.
-5. On the Android for Work blade, choose **Sync Now**.
-6. The page also displays the time and status of the last sync.
+2. On the **Intune** blade, choose **Mobile apps**.
+3. In the **Mobile apps** workload, choose **Setup** > **Android for Work**.
+4. On the Android for Work blade, choose **Sync Now**.
+5. The page also displays the time and status of the last sync.
 
 When the app is displayed in the **Licensed apps** node of the **Mobile apps** workload, you can [assign it just like you would any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
 
 After you assign the app, it will be installed on the devices you targeted. The user of the device will not be asked to approve the installation.
 
-## Manage app permissions
+## Manage Android for Work app permissions
 Android for Work requires you approve apps in Google's managed Play web console before syncing them to Intune and assigning them to your users.  Because Android for Work allows you to silently and automatically push these apps to users' devices, you must accept the app's permissions on behalf of all your users.  End users will not see any app permissions when they install, so it's important that you read and understand these permissions.
 
 When an app developer publishes a new version of the app with updated permissions, those permissions are not automatically accepted, even if you've approved the previous permissions. Devices that running the old version of the app can still use it, but the app won't be upgraded until the new permissions are approved. Devices without the app installed cannot install the app until you approve the app's new permissions.
@@ -90,3 +88,8 @@ You should periodically visit the managed Google Play console to check for new p
 1. Visit http://play.google.com/work
 2. Sign in with the Google account you used to publish and approve the apps.
 3. Visit the **Updates** tab to see if any apps require an update.  Any listed apps require new permissions and won't assign until they are applied.  
+
+
+
+
+
