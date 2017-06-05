@@ -57,7 +57,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 ## To get and upload an Apple VPP token
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.

@@ -45,7 +45,7 @@ After the certificate expires, you must sign the app again with a new certificat
 ## How to create an iOS mobile app provisioning profile
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring +Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile apps** workload, choose **Manage** > **iOS provisioning profiles**.
 2.  In the list of profiles blade, choose **Create profile**.
