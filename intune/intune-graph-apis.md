@@ -1,3 +1,5 @@
+# How to use Azure AD to access the Intune Graph API
+
 ---
 # required metadata
 
@@ -437,7 +439,7 @@ namespace IntuneGraphExample
 }
 ```
 
-# Authenticate Azure AD (PowerShell)
+### Authenticate Azure AD (PowerShell)
 
 The following PowerShell script uses the AzureAD PowerShell module for authentication.  To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.com/en-us/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
 
@@ -497,7 +499,7 @@ function Get-AuthToken {
      
     try {
         $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList $authority
-        # https://msdn.microsoft.com/en-us/library/azure/microsoft.identitymodel.clients.activedirectory.promptbehavior.aspx
+        # https://msdn.microsoft.com/library/azure/microsoft.identitymodel.clients.activedirectory.promptbehavior.aspx
         # Change the prompt behaviour to force credentials each time: Auto, Always, Never, RefreshSession
         $platformParameters = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.PlatformParameters" -ArgumentList "Auto"
         $userId = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" -ArgumentList ($User, "OptionalDisplayableId")
