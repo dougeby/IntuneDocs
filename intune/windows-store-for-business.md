@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,7 +61,7 @@ You can now continue, and set up synchronization in the Intune console.
 ## Configure synchronization
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1. On the **Mobile Apps** blade, choose **Setup** > **Windows Store for Business**.
 2. Click **Enable**.
