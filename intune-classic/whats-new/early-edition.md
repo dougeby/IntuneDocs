@@ -90,6 +90,10 @@ The System Center Operations Manager (SCOM) management pack for Exchange connect
 
 A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permissions so that they have access to conditional access policies.
 
+### App-based conditional access for Microsoft Teams <!-- 1257019 -->
+
+The Microsoft Teams app for iOS and Android will be part of the approved apps for app-based conditional access policies for Exchange and SharePoint Online. You will be able to configure the app through the Intune App Protection blade in the Azure portal to all tenants using app-based conditional access.
+
 ## What's coming to Intune apps
 
 ### Improved notification for Samsung KNOX startup PINs <!--1087143-->
