@@ -35,7 +35,7 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 ### Change your MDM authority without unenrolling managed devices
 
-You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority-to-intune-standalone) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa. 
+You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa. 
 
 ## What's new in the preview of Intune in the Azure portal 
 
