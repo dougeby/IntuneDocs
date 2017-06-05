@@ -87,12 +87,12 @@ Before you can configure certificate profiles you must complete the following ta
 **Step 5**: Enable, install, and configure the Intune Certificate Connector
 
 > [!NOTE]
-> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 
 #### Step 1 - Create an NDES service account
 
-Create a domain user account to use as the NDES service account. You will specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Localy**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
+Create a domain user account to use as the NDES service account. You will specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
 In this task you will:
@@ -252,7 +252,7 @@ In this task you will:
 
     ![Test NDES](.\media\SCEP_NDES_URL.png)
 
-    If you get a **503 Service unavailable**, check the eventviewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
+    If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 
 ##### To Install and bind certificates on the NDES Server
 
@@ -318,7 +318,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To download, install and configure the certificate connector
 
 > [!NOTE]
-> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+> Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.

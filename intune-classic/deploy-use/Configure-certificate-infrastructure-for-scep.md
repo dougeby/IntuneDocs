@@ -50,7 +50,7 @@ I
 
 ### Network requirements
 
-From the Internet to perimeter network, allow port 443 from all hosts/IP addressess on the internet to the NDES server.
+From the Internet to perimeter network, allow port 443 from all hosts/IP addresses on the internet to the NDES server.
 
 From the perimeter network to trusted network, allow all ports and protocols needed for domain access on the domain-joined NDES server. The NDES server needs access to the certificate servers, DNS servers, Configuration Manager servers and domain controllers.
 
