@@ -53,7 +53,7 @@
     {
       "source_path": "intune-user-help/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md",
       "redirect_url": "https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "intune/EndUser/reset-your-device-windows.md",
@@ -1763,10 +1763,15 @@
 		"redirect_url": "/intune/store-apps-android",
 		"redirect_document_id": true
 	},
-	{
+  {
 		"source_path": "intune/manage-apps/app-configuration-policies.md",
 		"redirect_url": "/intune/app-configuration-policies",
 		"redirect_document_id": true
+	},
+  {
+		"source_path": "intune/app-configuration-policies.md",
+		"redirect_url": "/intune/app-configuration-policies-ios",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/manage-apps/app-protection-enabled-android-apps.md",
