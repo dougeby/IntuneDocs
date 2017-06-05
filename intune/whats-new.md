@@ -79,7 +79,6 @@ You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa 
 
 - **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](device-lost-mode.md)
 
-
 ### Restrict push notifications for iOS apps <!-- 723767 -->
 
 In an Intune device restriction profile, you can now configure the following [notification settings](app-notification-settings-ios.md) for iOS devices:
