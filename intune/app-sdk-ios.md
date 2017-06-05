@@ -82,7 +82,7 @@ To enable the Intune App SDK, follow these steps:
 
 2. **Option 2**: Link to the `libIntuneMAM.a` library. Drag the `libIntuneMAM.a` library to the **Linked Frameworks and Libraries** list of the project target.
 
-    ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
+    ![Intune App SDK iOS: linked frameworks and libraries](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
 	> [!NOTE]
 	> If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the **release** folder. The debug version has verbose output that helps troubleshoot problems with the Intune App SDK.
@@ -108,7 +108,7 @@ To enable the Intune App SDK, follow these steps:
 
 4. Add the `IntuneMAMResources.bundle` resource bundle to the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
 
-	![Intune App SDK iOS: copy bundle resources](../media/intune-app-sdk-ios-copy-bundle-resources.png)
+	![Intune App SDK iOS: copy bundle resources](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
 5. If your mobile app defines a main nib or storyboard file in its Info.plist file, cut the **Main Storyboard** or **Main Nib** field(s). In Info.plist, paste these fields and their corresponding values under a new dictionary named **IntuneMAMSettings** with the following key names, as applicable:
     * MainStoryboardFile
@@ -140,7 +140,7 @@ To enable the Intune App SDK, follow these steps:
     3. Add `com.microsoft.adalcache` to your existing access groups.
 
 		4. Add `com.microsoft.workplacejoin` to your existing access groups.
-			![Intune App SDK iOS: keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png)
+			![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
 
   	5. If you are using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
 
@@ -497,7 +497,7 @@ The app is responsible for setting the identities appropriately, whether or not 
 
 At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied. The diagrams below show how the effective identities are determined.
 
-  ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk/ios-thread-identities.png)
+  ![Intune App SDK iOS: linked frameworks and libraries](./media/ios-thread-identities.png)
 
 ### Thread queues
 

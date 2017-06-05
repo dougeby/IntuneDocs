@@ -68,7 +68,7 @@ You might experience challenges or issues that require technical guidance, or sp
 
 Functional validation consists of testing each component and configuration to determine if it is working correctly. An example of validation testing is in the table below.
 
-![Section 9 table 1](../media/section-9-image-1-table.PNG)
+![Section 9 table 1](./media/section-9-image-1-table.PNG)
 
 ## Use case validation testing
 
@@ -78,13 +78,13 @@ Use case validation testing should be performed to verify the scenarios are comp
 
 IT Admin validation testing should be performed to validate that Administrative action performed on a device or user functions correctly. Below is an example of an IT admin end to end validation scenario.
 
-![Section 9 table 2](../media/section-9-image-2-table.PNG)
+![Section 9 table 2](./media/section-9-image-2-table.PNG)
 
 ### End user
 
 End user validation testing should be performed to validate that the end user experience is as expected and presented correctly in all user communications. It is important to validate the end user experience is correct as failure to validate can lead to lower adoption rates and higher volume of helpdesk calls.
 
-![Section 9 table 3](../media/section-9-image-3-table.PNG)
+![Section 9 table 3](./media/section-9-image-3-table.PNG)
 
 ## Next Steps
 

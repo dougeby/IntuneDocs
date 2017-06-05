@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-![Intune MDM migration guide art](../media/MDM-migration-guide-art.PNG)
+![Intune MDM migration guide art](./media/MDM-migration-guide-art.PNG)
 
 A successful migration to Intune starts with a solid plan that factors in the current MDM environment, business goals and technical requirements. Additionally, you need to have the key stakeholders whose will support and collaborate with your migration plan.
 

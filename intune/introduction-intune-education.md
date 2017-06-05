@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 Intune for Education is designed to enable your teachers and students to be productive while keeping school data protected. Intune is a cloud-based enterprise mobility management (EMM) service that is the foundation for Intune for Education.
 
-![Intune for Education console compared against Intune console.](../media/intune-azure-vs-intuneEDU.png)
+![Intune for Education console compared against Intune console.](./media/intune-azure-vs-intuneEDU.png)
 
 Intune for Education lets you manage Windows 10 devices using the full MDM capabilities available in Intune. Intune can also manage additional platforms, such as iOS and Android, and is designed to let you access the full set of policies in the same console.
 
