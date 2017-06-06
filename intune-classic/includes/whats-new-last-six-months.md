@@ -8,13 +8,13 @@ Microsoft MyApps now have better support within the Managed Browser. Managed Bro
 
 #### New icons for the Managed Browser and the Company Portal <!--918433, 918431, 971473-->
 
-The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S). You can see the new icon for the Managed Browser on the [what's new in Intune app UI page](../whats-new/whats-new-in-intune-app-ui.md).
+The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S). You can see the new icon for the Managed Browser on the [what's new in Intune app UI page](/intune/whats-new-app-ui).
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
 #### Sign-in progress indicator in Android Company Portal <!--953374-->
 
-An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](../whats-new/whats-new-in-intune-app-ui.md).
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](/intune/whats-new-app-ui).
 
 #### Block apps from accessing SharePoint Online <!-- 679339 -->
 
@@ -33,7 +33,7 @@ New improvements for app installs started in the Windows 10 Company Portal app i
 -	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
 -	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
 
-You can see the new progress bar on the [what's new in Intune app UI page](../whats-new/whats-new-in-intune-app-ui.md).
+You can see the new progress bar on the [what's new in Intune app UI page](/intune/whats-new-app-ui).
 
 #### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
@@ -81,7 +81,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
-You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](../whats-new/whats-new-in-intune-app-ui.md) page.
+You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](/intune/whats-new-app-ui) page.
 
 #### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
@@ -123,7 +123,7 @@ The Company Portal app for Android will be updating its user interface for a mor
 - Navigating Apps: **All Apps** view shows a tabbed view of **Featured**, **All**, and **Categories** for easier navigation.
 - Support: **My Devices** and **Contact IT** tabs are updated to improve readability.
 
-For more details about these changes, see [UI updates for Intune end user apps](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+For more details about these changes, see [UI updates for Intune end user apps](/intune/whats-new-app-ui).
 
 #### Non-managed devices can access assigned apps <!--664691-->
 
@@ -171,7 +171,7 @@ Microsoft has announced the general availability of Microsoft Teams. The updated
 ### New Capabilities
 
 ### Modernizing the Company Portal website <!--753980-->
-The Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+The Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](/intune/whats-new-app-ui).
 
 ### Notices
 
@@ -202,7 +202,7 @@ Beginning in March, the Company Portal app for Android will follow [material des
 * __Navigation__: All Apps shows a tabbed view of Featured, All and Categories for easier navigation.
 * __Service__: My Devices and Contact IT tabs have improved readability.
 
-You can find before and after images on the [UI updates page](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+You can find before and after images on the [UI updates page](/intune/whats-new-app-ui).
 
 ### Associate multiple management tools with the Windows Store for Business <!--926135-->
 If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
@@ -244,7 +244,7 @@ End users will be given additional guidance on how to regain access to work or s
 Links inside of the Company Portal app for iOS, including those to documentation and apps, will open directly in the Company Portal app using an in-app view of Safari. This update will ship separately from the service update in January.
 
 #### Modernizing the Company Portal website <!--753980-->
-Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](/intune-classic/whats-new/whats-new-in-intune-app-ui).
+Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](/intune/whats-new-app-ui).
 
 #### New documentation for app protection policies <!--583398-->
 We have updated our documentation for admins and app developers who want to enable app protection policies (known as MAM policies) in their iOS and Android apps using the Intune App Wrapping Tool or Intune App SDK.
