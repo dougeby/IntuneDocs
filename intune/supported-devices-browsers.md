@@ -47,7 +47,7 @@ You can manage the following devices using Intune mobile device management:
 
 Intune cannot be used to manage Windows Server operating systems.
 
-Intune device management provides [these capabilities](mobile-device-management-capabilities-in-microsoft-intune.md).
+Intune device management provides [these capabilities](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune).
 
 ### Windows PC software client
 

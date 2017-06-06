@@ -54,7 +54,7 @@ This guide includes two phases, both of which include tasks, strategies, and tac
 
 -   [Phase 2: Migration campaign](migration-guide-campaign.md)
 
-    -   [Communication Plan](igration-guide-communication-plan.md)
+    -   [Communication Plan](migration-guide-communication-plan.md)
 
     -   [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md)
     

@@ -47,7 +47,7 @@ IT administrators can enforce a policy that ensures that data saved to the devic
 IT administrators can remotely wipe corporate data from an Intune-managed app. This feature is identity-based and will only delete the files associated with the corporate identity of the end user. To do that, the feature requires the app’s participation. The app can specify the identity for which the wipe should occur based on user settings. In the absence of these specified user settings from the app, the default behavior is to wipe the application directory and notify the end user that access has been removed.
 
 ### Enforce the use of a managed browser
-IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](../deploy-use/manage-internet-access-using-managed-browser-policies.md). This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
+IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
 
 ### Enforce a PIN policy
 IT administrators can require the end-user to enter a PIN before accessing corporate data in the app. This ensures that the person using the app is the same person who initially signed in with their work or school account. When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end-users against the enrolled Intune account.

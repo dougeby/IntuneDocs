@@ -94,4 +94,4 @@ After you save your changes, you can use the links provided at the bottom of the
 
 >[!div class="step-by-step"]
 
->[&larr; **Create policies and apps**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Enroll devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **Create policies and apps**](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6)       [**Enroll devices** &rarr;](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8)  

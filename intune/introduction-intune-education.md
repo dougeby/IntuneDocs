@@ -45,6 +45,6 @@ With both Intune and Intune for Education, you can:
 * Ensure devices and apps are compliant with security requirements.
 
 ### Next steps
-* Get familiar with the product [with a 30-day trial of Intune](sign-up-for-30-day-trial-microsoft-intune.md).
-* Read about the quickest way to [start using Intune for Education](https://docs.microsoft.com/intune-education/what-is-express-configuration).
+* Get familiar with the product [with a 30-day trial of Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
+* Read about the quickest way to [start using Intune for Education](/intune-education/what-is-express-configuration).
 * Dive into the [technical requirements and capabilities](/intune/supported-devices-browsers) of Intune.
