@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 1: Configure app protection policies (optional)
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 App protection policies allow you to encrypt apps, define a PIN when the app is accessed, block apps from running on jail-broken or rooted devices, and many other protections. If the user's phone is lost or stolen, you can selectively remote wipe the corporate data while leaving the personal data intact by applying mobile app protection policies.
 

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 2: Typical Migration Cycle
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 It’s common for an organization to start their Intune migration with a small pilot by targeting a subset of their users in the IT department. Additionally, your organization may need to discuss such factors as the group’s willingness for change, number of users, complexity, requirements, location, and business risk to assist in determining the migration time-frame.
 

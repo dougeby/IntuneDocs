@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
@@ -43,7 +43,7 @@ You should also familiarize yourself with [Intune network bandwidth usage](netwo
 
 You can manage the following devices using Intune mobile device management:
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 Intune cannot be used to manage Windows Server operating systems.
 

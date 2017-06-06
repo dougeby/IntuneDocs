@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Determine Intune use case scenario requirements
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 In this section, you will determine the requirements for each organizational group within each use case scenario. Going through this process will help you better prepare for the other Intune deployment planning areas like architecture and design, onboarding, and rollout. It can also help identify potential gaps, and challenges related to your Intune deployment project.
 

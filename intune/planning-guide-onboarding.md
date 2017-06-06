@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Intune implementation
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 During the onboarding phase, you’ll implement Intune into your production environment. The implementation process will consist of setting up and configuring Intune and external dependencies (if required), based on your [use case requirements](section-3-determine-use-case-requirements.md) that were reviewed in previous sections of this guide.
 

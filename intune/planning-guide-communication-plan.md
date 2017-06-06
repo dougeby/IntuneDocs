@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Develop an Intune rollout communication plan
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 We discussed identifying the organization’s groups that will be targeted for Intune management, the timelines for the Intune rollout and enrollment approaches, in the previous section, develop an Intune rollout plan. You now need to develop a communications plan for your Intune rollout. Your Intune rollout communication plan should include four areas:
 

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 1: Configure device compliance and app management policies
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 The main goal when migrating to Intune is to have all devices enrolled, and compliant with its policies. Device policies not only help you to manage corporate-owned single-user devices, but also personal (BYOD), and shared devices such as, kiosks, point-of-sales machines, tablets shared by multiple students in a classroom, or user-less devices (iOS only).
 

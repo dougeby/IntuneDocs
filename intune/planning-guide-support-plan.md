@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Develop an Intune support plan
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Having an Intune support plan can be beneficial in more effectively identifying and resolving Intune related issues and improving the end user’s overall Intune experience. Here are some questions to consider when developing your Intune support plan:
 

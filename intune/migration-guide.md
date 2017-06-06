@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Intune migration guide
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 ![Intune MDM migration guide art](./media/MDM-migration-guide-art.PNG)
 

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 2: Migration Campaign
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Organizations should a migration approaches which is most suitable for their needs and adjust implementation tactics based on their specific requirements. The remainder of this guide will equip you with the tools you need to achieve the goal of getting your user’s devices enrolled into Intune.
 

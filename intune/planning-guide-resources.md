@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Additional resources
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 ## Templates
 

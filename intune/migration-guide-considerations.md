@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 1: Special migration considerations
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 There are special migration considerations which may be applicable depending on your existing MDM provider environment.
 

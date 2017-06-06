@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Develop an Intune rollout plan
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 This section will help you to determine the organizational groups that will be targeted for your Intune rollout, as well as the rollout timeframe for each group, and the enrollment approaches that will be used.
 

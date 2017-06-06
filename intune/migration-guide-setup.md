@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Phase 1: Basic setup
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 After you assessed your environment, it’s time to setup Intune.
 

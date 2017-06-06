@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Intune testing and validation
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 The testing phase should be during and after the implementation phase, you will need to have test accounts, groups, and devices for testing all required IT (admin) and end user (use case) scenarios previously identified.
 

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 ## Communication plan
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 The communication plan is a key element in an Intune migration. You can follow the same communication plan for each phase as previously discussed under the Keys to a successful migration section.
 
