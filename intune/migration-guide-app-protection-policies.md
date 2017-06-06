@@ -56,4 +56,4 @@ As you disable conditional access in the old MDM provider, users can still be pr
 
 ## Next steps 
 
-[Phase 1: Special migration considerations](/intune-classic/plan-design/migration-phase1-special-migration-considerations)
+[Phase 1: Special migration considerations](migration-guide-considerations.md)

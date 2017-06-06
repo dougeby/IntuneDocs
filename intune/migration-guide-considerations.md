@@ -52,4 +52,4 @@ To continue using DEP to manage the devices in Intune:
 
 ## Next steps 
 
-[Phase 2: Migration campaign](/intune-classic/plan-design/migration-phase2-migration-campaign)
+[Phase 2: Migration campaign](migration-guide-campaign.md)

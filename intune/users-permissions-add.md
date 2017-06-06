@@ -107,4 +107,4 @@ Device enrollment managers are standard user accounts with additional permission
 
 >[!div class="step-by-step"]
 
->[&larr; **Domain settings**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
+>[&larr; **Domain settings**](custom-domain-name-configure.md)     [**Manage Intune licenses** &rarr;](.\licenses-assign.md)  

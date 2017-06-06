@@ -29,7 +29,7 @@ ms.custom: intune-classic
 # Microsoft Intune App SDK Cordova Plugin
 
 > [!NOTE]
-> You may wish to first read the [Get Started with Intune App SDK](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
+> You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 ## Overview
 

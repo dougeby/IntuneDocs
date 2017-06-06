@@ -95,4 +95,4 @@ Here’s an example of an Intune rollout plan with targeted groups, timelines an
 
 ## Next Section
 
-The next section provides guidance on [developing an Intune rollout communication plan](section-5-develop-a-rollout-communication-plan.md).
+The next section provides guidance on [developing an Intune rollout communication plan](planning-guide-communication-plan.md).

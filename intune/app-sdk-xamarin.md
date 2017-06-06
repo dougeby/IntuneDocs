@@ -30,7 +30,7 @@ ms.custom: intune-classic
 # Microsoft Intune App SDK Xamarin Component
 
 > [!NOTE]
-> You may wish to first read the [Get Started with Intune App SDK](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
+> You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 
 
@@ -90,7 +90,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
       ```
 
-2.	Now that the component is added and initialized, you can follow the general steps required for building the App SDK into an iOS mobile app. You can find the full documentation for enabling native iOS apps in the [Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md).
+2.	Now that the component is added and initialized, you can follow the general steps required for building the App SDK into an iOS mobile app. You can find the full documentation for enabling native iOS apps in the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md).
 3. **Important**: There are several modifications specific to Xamarin-based iOS apps. For instance, when enabling keychain groups, you'll need to add the following to include the Xamarin sample app we included in the component. Below is an example of the groups you would need to have in your Keychain Access groups:
 
       ```xml
@@ -109,10 +109,10 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
       </plist>
       ```
 
-You have completed the steps necessary to build the component into your Xamarin-based iOS app. If you are utilizing Xcode for building your project, you can use the `Intune App SDK Settings.bundle`. This will allow you to toggle Intune policy settings on and off as you build your project to test and debug. To take advantage of this bundle, follow the steps in the [Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md) and read the section on [debugging in Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications).
+You have completed the steps necessary to build the component into your Xamarin-based iOS app. If you are utilizing Xcode for building your project, you can use the `Intune App SDK Settings.bundle`. This will allow you to toggle Intune policy settings on and off as you build your project to test and debug. To take advantage of this bundle, follow the steps in the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md) and read the section on [debugging in Xcode](app-sdk-ios.md#status-result-and-debug-notifications).
 
 ## Enabling MAM in your Android mobile app
-For Xamarin-based Android apps not using a UI framework, you will need to read and follow the [Intune App SDK for Android Developer Guide]. For your Xamarin-based Android app, you will need to replace class, methods, and activities with their MAM equivalent based on the [table](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you will need to create one and ensure that you inherit from `MAMApplication`.
+For Xamarin-based Android apps not using a UI framework, you will need to read and follow the [Intune App SDK for Android Developer Guide]. For your Xamarin-based Android app, you will need to replace class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you will need to create one and ensure that you inherit from `MAMApplication`.
 
 For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.Remapper`. The tool will accomplish the class replacement for you. However, you will need to do the following steps:
 

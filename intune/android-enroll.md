@@ -90,7 +90,7 @@ You can also send them a link to online enrollment steps: [Enroll your Android d
 
 For information about other end-user tasks, see these articles:
 
-- [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
 - [Using your Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## Unbinding your Android for Work administrative account

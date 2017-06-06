@@ -57,4 +57,4 @@ After completing the sign up process you will be directed to a page used to add 
 
 >[!div class="step-by-step"]
 
->[&larr; **Prerequisites**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Domain settings** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
+>[&larr; **Prerequisites**](.\supported-devices-browsers.md)     [**Domain settings** &rarr;](custom-domain-name-configure.md)  

@@ -142,6 +142,6 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 -   Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
 ### See also
-- [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+- [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

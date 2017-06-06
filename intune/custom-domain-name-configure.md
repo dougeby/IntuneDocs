@@ -65,4 +65,4 @@ You can learn more [about your initial onmicrosoft.com domain in Office 365](htt
 
 >[!div class="step-by-step"]
 
->[&larr; **Sign in to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
+>[&larr; **Sign in to Intune**](account-sign-up.md)     [**Add users to Intune** &rarr;](.\users-permissions-add.md)  

@@ -75,4 +75,4 @@ These are the key lessons learned when migrating from a third-party MDM provide 
 
 ## Next steps
 
-[Phase 2: Communication plan](/intune-classic/plan-design/migration-phase2-communication-plan)
+[Phase 2: Communication plan](igration-guide-communication-plan.md)

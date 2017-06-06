@@ -91,7 +91,7 @@ An example of an Intune support training agenda is provided below.
 -   Q&A
 
 >[!TIP]
-> [Additional resources](additional-resources.md) provides technical resources that may be valuable for your support team to review and leverage during their ramp up of Microsoft Intune.
+> [Additional resources](planning-guide-resources.md) provides technical resources that may be valuable for your support team to review and leverage during their ramp up of Microsoft Intune.
 
 ## What opportunities are there to involve the support team earlier?
 
@@ -99,4 +99,4 @@ Involving the IT support/helpdesk staff in early stages of Intune deployment pla
 
 ## Next Section
 
-The next section provides guidance on [designing Intune](section-7-create-an-intune-design.md).
+The next section provides guidance on [designing Intune](planning-guide-design.md).

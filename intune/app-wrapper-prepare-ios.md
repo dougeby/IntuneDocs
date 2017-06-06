@@ -400,6 +400,6 @@ Use the following security and privacy best practices when you use the App Wrapp
 -   When you monitor the documents folder on your device from within a wrapped app, you might see a folder named .msftintuneapplauncher. If you change or delete this file, it might affect the correct functioning of restricted apps.
 
 ### See also
-- [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
+- [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

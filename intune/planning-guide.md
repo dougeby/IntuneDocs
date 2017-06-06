@@ -36,27 +36,27 @@ A successful Intune deployment starts with having a good plan and design. The pu
 
 This guide includes sections that will walk you through the end to end process of deploying Intune. Sections 2 – 7 are not intended to be worked on sequentially, and should be completed in parallel.
 
--   [Section 1: Determine deployment goals, objectives and challenges](section-1-determine-deployment-goals-objectives-challenges.md)
+-   [Section 1: Determine deployment goals, objectives and challenges](planning-guide-deployment-goals.md)
 
--   [Section 2: Identify use case scenarios](section-2-identify-use-case-scenarios.md)
+-   [Section 2: Identify use case scenarios](planning-guide-scenarios.md)
 
--   [Section 3: Determine use case requirements](section-3-determine-use-case-requirements.md)
+-   [Section 3: Determine use case requirements](planning-guide-requirements.md)
 
--   [Section 4: Develop a rollout plan](section-4-develop-a-rollout-plan.md)
+-   [Section 4: Develop a rollout plan](planning-guide-rollout-plan.md)
 
--   [Section 5: Develop a rollout communication plan](section-5-develop-a-rollout-communication-plan.md)
+-   [Section 5: Develop a rollout communication plan](planning-guide-communication-plan.md)
 
--   [Section 6: Develop a support plan](section-6-develop-a-support-plan.md)
+-   [Section 6: Develop a support plan](planning-guide-support-plan.md)
 
--   [Section 7: Create an Intune design](section-7-create-an-intune-design.md)
+-   [Section 7: Create an Intune design](planning-guide-design.md)
 
--   [Section 8: Intune implementation](section-8-onboarding-process.md)
+-   [Section 8: Intune implementation](planning-guide-onboarding.md)
 
--   [Section 9: Testing and validation](section-9-test-and-validation.md)
+-   [Section 9: Testing and validation](planning-guide-test-validation.md)
 
 This guide also provides additional technical information and table templates that can be used to assist you with the Intune deployment planning, design and implementation process.
 
--   [Additional resources: Links and table templates](additional-resources.md)
+-   [Additional resources: Links and table templates](planning-guide-resources.md)
 
 ## Assumptions
 
@@ -69,4 +69,4 @@ This guide also provides additional technical information and table templates th
 
 ## Next steps
 
-Let’s get started with the first section: [Determine deployment goals, objectives and challenges](section-1-determine-deployment-goals-objectives-challenges.md).
+Let’s get started with the first section: [Determine deployment goals, objectives and challenges](planning-guide-deployment-goals.md).

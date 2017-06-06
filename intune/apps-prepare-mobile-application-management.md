@@ -35,7 +35,7 @@ You can enable your apps to use mobile application management (MAM) policies by 
 ## Intune App Wrapping Tool
 The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps. The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune MAM policy.
 
-You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](app-wrapper-prepare-android.md) and [iOS App Wrapping Tool](app-wrapper-prepare-ios.md).
 
 The App Wrapping Tool does **not** support apps in the Apple App Store or Google Play Store. It also doesn't support certain features that require developer integration (see the following feature comparison table).
 
@@ -61,7 +61,7 @@ For more information about the App Wrapping Tool for MAM on devices that are not
 ## Intune App SDK
 The App SDK is designed mainly for customers who have apps in the Apple App Store or Google Play Store, and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even line-of-business apps.
 
-To learn more about the SDK, see the [Overview](../develop/intune-app-sdk.md). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md).
+To learn more about the SDK, see the [Overview](app-sdk.md). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](app-sdk-get-started.md).
 
 ### Reasons to use the SDK
 * Your app does not have built-in data protection features.
@@ -75,8 +75,8 @@ To learn more about the SDK, see the [Overview](../develop/intune-app-sdk.md). T
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Component](../develop/intune-app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](../develop/intune-app-sdk-cordova.md).|
-|**Android**| Yes - use the [Intune App SDK Xamarin Component](../develop/intune-app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](../develop/intune-app-sdk-cordova.md).|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**Android**| Yes - use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
@@ -109,6 +109,6 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Customizable Style |X|||
 ### See also
 
-[Android app wrapping tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
-[iOS app wrapping tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
+[Android app wrapping tool](app-wrapper-prepare-android.md)</br>
+[iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
 [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

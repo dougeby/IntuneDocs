@@ -45,7 +45,7 @@ Other methods of enrolling iOS devices are described in [Choose how to enroll iO
 
 Complete the following prerequisites before setting up iOS device enrollment:
 
-- [Configure domains](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Configure domains](custom-domain-name-configure.md)
 - [Set the MDM Authority](mdm-authority-set.md)
 - [Create groups](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configure the Company Portal](company-portal-app.md)

@@ -85,4 +85,4 @@ After determining what will be communicated and the method used for communicatio
 
 ## Next section
 
-The next section provides guidance on [developing a support plan](section-6-develop-a-support-plan.md).
+The next section provides guidance on [developing a support plan](planning-guide-support-plan.md).

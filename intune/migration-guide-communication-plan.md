@@ -52,7 +52,7 @@ Here’s an example on how you could communicate migration to your organization:
 
 After a certain period, you can begin enforcing compliance through conditional access policies and use it as criteria to access corporate data.
 
--   For more information, see [Drive end-user adoption with conditional access.](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access)
+-   For more information, see [Drive end-user adoption with conditional access.](migration-guide-drive-adoption.md)
 
 ## Additional communication templates
 
@@ -64,4 +64,4 @@ Intune has additional template resources to promote device enrollment to end-use
 
 ## Next steps
 
-[Phase 2: Drive end-user adoption with conditional access](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access)
+[Phase 2: Drive end-user adoption with conditional access](migration-guide-drive-adoption.md)

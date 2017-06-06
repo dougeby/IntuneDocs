@@ -121,4 +121,4 @@ If you need to enroll shared or user-less devices, you can use a [device enrollm
 
 ## Next steps 
 
-[Phase 1: Configure App Protection Policies (optional)](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies)
+[Phase 1: Configure App Protection Policies (optional)](migration-guide-app-protection-policies.md)

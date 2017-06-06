@@ -98,4 +98,4 @@ Deployment challenges are issues that are top of mind for an organization and ma
 
 ## Next steps
 
-Now that you have identified your deployment goals, objectives, and potential challenges, let’s move to the next section: [Identify use case scenarios](section-2-identify-use-case-scenarios.md).
+Now that you have identified your deployment goals, objectives, and potential challenges, let’s move to the next section: [Identify use case scenarios](planning-guide-scenarios.md).

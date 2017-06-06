@@ -30,12 +30,12 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-During the onboarding phase, you’ll implement Intune into your production environment. The implementation process will consist of setting up and configuring Intune and external dependencies (if required), based on your [use case requirements](section-3-determine-use-case-requirements.md) that were reviewed in previous sections of this guide.
+During the onboarding phase, you’ll implement Intune into your production environment. The implementation process will consist of setting up and configuring Intune and external dependencies (if required), based on your [use case requirements](planning-guide-requirements.md) that were reviewed in previous sections of this guide.
 
 The following section provides an overview of the Intune implementation process that includes requirements and high-level tasks.
 
 >[!TIP]
-> Check [Additional resources](additional-resources.md) for more information about the Intune implementation process.
+> Check [Additional resources](planning-guide-resources.md) for more information about the Intune implementation process.
 
 ## Intune requirements
 
@@ -54,7 +54,7 @@ The main Intune standalone requirements are provided below:
 -   Intune Certificate Connector (for SCEP certificate deployment, if needed)
 
 >[!TIP]
-> You can find more information about Intune standalone requirements [here](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+> You can find more information about Intune standalone requirements [here](/intune/supported-devices-browsers).
 
 ## Intune implementation process
 
@@ -78,13 +78,13 @@ This step is optional. As identified in the previous requirements section, an Of
 
 You may need to add users or security groups in AD or AAD based on your Intune deployment use case scenarios and requirements. You should review your current users and security groups in Active Directory or Azure Active Directory and determine if they fully meet your needs. New users and security groups are most commonly added in Active Directory and synchronized into Azure Active Directory via Azure AD Directory Connect.
 
--   Learn more about [how to add users/groups in Intune](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3).
+-   Learn more about [how to add users/groups in Intune](users-permissions-add.md).
 
 #### Task 4: Assign Intune and Office 365 user licenses
 
 All users that will be targeted for EMS/Intune and Office 365 rollout will need to have a license assigned to them. EMS/Intune and Office 365 license assignment can be done in the Office 365 Admin Center Portal.
 
--   Learn more about [how to assign Intune licenses](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+-   Learn more about [how to assign Intune licenses](licenses-assign.md).
 
 #### Task 5: Set Mobile Device Management Authority to Intune
 
@@ -130,7 +130,7 @@ Microsoft Intune supports Compliance policies. Adding and deploying Compliance p
 
 #### Task 12: Enable Conditional Access Policies
 
-Microsoft Intune supports Conditional Access for Exchange Online and On-premises, SharePoint Online, Skype for Business Online and Dynamics CRM Online. You enable Conditional Access policies in the Intune Admin Portal, Policy workspace. Enable and configure Conditional Access as appropriate based on your [Intune deployment use cases and requirements](section-3-determine-use-case-requirements.md).
+Microsoft Intune supports Conditional Access for Exchange Online and On-premises, SharePoint Online, Skype for Business Online and Dynamics CRM Online. You enable Conditional Access policies in the Intune Admin Portal, Policy workspace. Enable and configure Conditional Access as appropriate based on your [Intune deployment use cases and requirements](planning-guide-requirements.md).
 
 -   Learn more about [conditional access](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
@@ -145,4 +145,4 @@ Intune supports iOS, Mac OS, Android, Windows desktop and Windows mobile device 
 
 ## Next Section
 
-The next section provides guidance on [testing and validating your Intune deployment](section-9-test-and-validation.md).
+The next section provides guidance on [testing and validating your Intune deployment](planning-guide-test-validation.md).

@@ -69,4 +69,4 @@ Here are a few more examples that can be used on the "Requirements" column refer
 
 ## Next Section
 
-The next section provides guidance on [how to develop an Intune rollout plan](section-4-develop-a-rollout-plan.md).
+The next section provides guidance on [how to develop an Intune rollout plan](planning-guide-rollout-plan.md).

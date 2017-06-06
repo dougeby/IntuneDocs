@@ -214,7 +214,7 @@ It’s also recommended to know the versions to reference the list when checking
 
 Intune supports both corporate owned and BYOD ownership. A Device is considered corporate owned if enrolled by a device enrollment manager, or device enrollment program. As an example, a device could be enrolled via Apple DEP, marked as corporate, and placed in a device group that receives targeted corporate policies and apps.
 
-Refer to [Section 3: Determine use case scenario requirements](section-3-determine-use-case-requirements.md) for more information about Corporate and BYOD use cases.
+Refer to [Section 3: Determine use case scenario requirements](planning-guide-requirements.md) for more information about Corporate and BYOD use cases.
 
 ### Bulk enrollment
 
@@ -413,4 +413,4 @@ Here’s an example of how to document conditional access policies:
 
 ## Next Section
 
-The next section provides guidance on the [Intune implementation process](section-8-onboarding-process.md).
+The next section provides guidance on the [Intune implementation process](planning-guide-onboarding.md).

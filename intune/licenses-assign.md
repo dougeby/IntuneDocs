@@ -100,4 +100,4 @@ Verify with:
 
 >[!div class="step-by-step"]
 
->[&larr; **Sync users to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organize users and devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Sync users to Intune**](custom-domain-name-configure.md)     [**Organize users and devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

@@ -35,7 +35,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 ## MAM Basics
 
 
-**What is MAM?** [Intune mobile application management](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
+**What is MAM?** [Intune mobile application management](/intune/app-lifecycle) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
 **What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-enlightened apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
@@ -53,12 +53,12 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 ## Apps you can manage with app protection policies
 
-**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](../develop/intune-app-sdk.md) or wrapped by the [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
+**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](/intune/app-sdk) or wrapped by the [Intune App Wrapping Tool](../deploy-use//intune/apps-prepare-mobile-application-management) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What are the baseline requirements to use app protection policies on an Intune-enlightened app?**
-  1. The end-user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) to learn how to create Intune users in Azure Active Directory.
+  1. The end-user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](/intune/users-permissions-add) to learn how to create Intune users in Azure Active Directory.
 
-  2. The end-user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) to learn how to assign Intune licenses to end-users.
+  2. The end-user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](../get-started//intune/licenses-assign) to learn how to assign Intune licenses to end-users.
 
   3. The end-user must belong to a security group that is targeted by an app protection policy. The same app protection policy must target the specific app being used. App protection policies can be created and deployed in the Intune console in the [Azure portal](http://portal.azure.com). Security groups can currently be created in the [Office portal](http://portal.office.com).
 

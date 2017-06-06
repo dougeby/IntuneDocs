@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Get started with the Microsoft Intune App SDK
 
-This guide will help you quickly enable your mobile app for app protection policies with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK, as explained in the [Intune App SDK overview](intune-app-sdk.md).
+This guide will help you quickly enable your mobile app for app protection policies with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK, as explained in the [Intune App SDK overview](app-sdk.md).
 
 The Intune App SDK supports similar scenarios across iOS and Android, and is intended to create a consistent experience across the platforms for IT admins. But there are small differences in the support of certain features, because of platform limitations.
 
@@ -90,13 +90,13 @@ It's a good idea to sign up for a GitHub account that you can use to fork and pu
 
 You will need one of the following developer guides to help you integrate the Intune App SDK into your app:
 
-* **[Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)**: This document will walk you step-by-step through enabling your native iOS app with the Intune App SDK.
+* **[Intune App SDK for iOS Developer Guide](app-sdk-ios.md)**: This document will walk you step-by-step through enabling your native iOS app with the Intune App SDK.
 
-* **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your native Android app with the Intune App SDK.
+* **[Intune App SDK for Android Developer Guide](app-sdk-android.md)**: This document will walk you step-by-step through enabling your native Android app with the Intune App SDK.
 
-* **[Intune App SDK Cordova Plugin guide](intune-app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
+* **[Intune App SDK Cordova Plugin guide](app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
 
-* **[Intune App SDK Xamarin Component guide](intune-app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
+* **[Intune App SDK Xamarin Component guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
 
 
 

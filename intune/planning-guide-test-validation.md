@@ -88,4 +88,4 @@ End user validation testing should be performed to validate that the end user ex
 
 ## Next Steps
 
-Now that you have tested and validated your Intune functional and user case scenarios, you're ready for your Intune production rollout. Refer to [Additional resources](additional-resources.md) for more information.
+Now that you have tested and validated your Intune functional and user case scenarios, you're ready for your Intune production rollout. Refer to [Additional resources](planning-guide-resources.md) for more information.

@@ -83,4 +83,4 @@ Choose one of the following conditional access policy types to learn more:
 
 ## Next steps
 
-[Phase 2: Typical Migration Cycle](/intune-classic/plan-design/migration-phase2-typical-migration-cycle)
+[Phase 2: Typical Migration Cycle](migration-guide-cycle.md)

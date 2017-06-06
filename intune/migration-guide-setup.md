@@ -78,7 +78,7 @@ Before you can migrate to Intune, you first need an Intune subscription.
 
 ### Task 2: Assign Intune user licenses
 
--   Learn [how to assign Intune user licenses](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+-   Learn [how to assign Intune user licenses](licenses-assign.md).
 
 -   If you have created a new Azure Active Directory tenant, learn [how to create new users or sync user from your on-premises Active Directory (AD).](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
@@ -95,4 +95,4 @@ Set your MDM authority to **Intune** to enable the Intune Azure Portal. Using a 
 
 ## Next step
 
-[Phase 1: Configure device and app management policies](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies)
+[Phase 1: Configure device and app management policies](migration-guide-configure-policies.md)

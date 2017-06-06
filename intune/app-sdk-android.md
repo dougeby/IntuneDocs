@@ -30,7 +30,7 @@ ms.custom: intune-classic
 # Microsoft Intune App SDK for Android developer guide
 
 > [!NOTE]
-> You might want to first read the [Intune App SDK overview](intune-app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
+> You might want to first read the [Intune App SDK overview](app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
 
 The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as **APP** or MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
 

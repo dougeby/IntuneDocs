@@ -88,4 +88,4 @@ Here you’ll identify the mobile device platforms associated with each use case
 
 ## Next steps
 
-The next section provides guidance on [how to identify the Intune requirements for each use case scenario](section-3-determine-use-case-requirements.md).
+The next section provides guidance on [how to identify the Intune requirements for each use case scenario](planning-guide-requirements.md).
