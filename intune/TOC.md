@@ -22,7 +22,7 @@
 
 # Plan deployment
 ## [Planning guide](planning-guide.md)
-### [Determine goals and objectives](planning-guide-deployment-goals)
+### [Determine goals and objectives](planning-guide-deployment-goals.md)
 ### [Identify scenarios](planning-guide-scenarios.md)
 ### [Determine requirements](planning-guide-requirements.md)
 ### [Develop a rollout plan](planning-guide-rollout-plan.md)
