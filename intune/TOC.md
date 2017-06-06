@@ -43,10 +43,11 @@
 ### [Prepare Intune](migration-guide-prepare.md)
 #### [Basic setup](migration-guide-setup.md)
 #### [Configure device and app management policies](migration-guide-configure-policies.md)
+#### [Configure app protection policies](migration-guide-app-protection-policies.md)
 #### [Migration considerations](migration-guide-considerations.md)
 ### [Migration campaign](migration-guide-campaign.md)
 #### [Plan communications](migration-guide-communication-plan.md)
-#### [Drive adoption](migration-guide-conditional-access.md)
+#### [Drive adoption](migration-guide-drive-adoption.md)
 #### [Typical migration cycle](migration-guide-cycle.md)
 
 
