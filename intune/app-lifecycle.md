@@ -51,7 +51,7 @@ As part of the app lifecycle, new versions of apps are regularly released. Intun
 ## Protect
 
 Intune gives you many ways to help protect the data in your apps. The main methods are:
-- [Conditional access](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) controls access to email and other services based on conditions that you specify. Conditions include device types or compliance with a [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that you deployed.
+- [Conditional access](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) controls access to email and other services based on conditions that you specify. Conditions include device types or compliance with a [device compliance policy](intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) that you deployed.
 - [Mobile application management (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works with individual apps to help protect the company data that they use. For example, you can restrict copying data between unmanaged apps and apps that you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.
 
 ## Retire
