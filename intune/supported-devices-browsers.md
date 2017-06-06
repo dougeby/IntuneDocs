@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Supported devices and browsers
 
-[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions).
 

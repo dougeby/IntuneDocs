@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Overview of the app lifecycle
 
-[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 The Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app.
 

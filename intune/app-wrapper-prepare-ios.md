@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 

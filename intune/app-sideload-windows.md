@@ -26,7 +26,7 @@ ms.custom: intune-classic
 ---
 # Sign line-of-business apps so they can be deployed to Windows devices with Intune
 
-[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 As an Intune administrator, you can deploy line-of-business (LOB) apps to Windows and Windows 10 Mobile devices, including the Company Portal app. To deploy .appx or .xap apps to Windows 10 and Windows 10 mobile devices, or to deploy any LOB app to Windows 8.1 or Windows Phone 8.1 devices, you must get a **Symantec Enterprise Mobile Code Signing Certificate**. Only the Symantec certificate is trusted for these apps for the respective Windows devices. You can use your own certificate authority for Windows 10 apps and "universal" apps. This certificate is required in order to:
 
