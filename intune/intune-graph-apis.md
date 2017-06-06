@@ -1,5 +1,3 @@
-# How to use Azure AD to access the Intune Graph API
-
 ---
 # required metadata
 
@@ -26,6 +24,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
+# How to use Azure AD to access the Intune Graph API
 
 The [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API leverages Azure Active Directory (Azure AD) for authentication and access control.  
 Access to the Intune Graph API requires:
