@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # What is Intune?
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
 
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.

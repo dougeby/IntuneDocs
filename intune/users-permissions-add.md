@@ -4,7 +4,8 @@
 title: Add users and grant permissions | Microsoft Docs
 description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Add users and give administrative permission to Intune
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic tells administrators how they can add users to Intune and what administrative permissions are available in the Intune service.

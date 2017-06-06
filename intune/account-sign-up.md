@@ -4,7 +4,8 @@
 title: Sign up or sign in to Intune | Microsoft Docs
 description: How to sign up for an Intune subscription or sign in to start with your subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -27,7 +28,7 @@ ms.custom: intune-classic
 
 
 # Sign up or sign in to Intune
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic tells system administrators how they can sign up for an Intune account.

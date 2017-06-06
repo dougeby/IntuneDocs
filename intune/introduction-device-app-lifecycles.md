@@ -4,7 +4,8 @@
 title: Overview of device and app lifecycles | Microsoft Docs
 description: Overview of the device and app lifecycles with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Overview of device and app lifecycles
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Although the needs of individual organizations might differ, there are certain common steps that all organizations need to take on an ongoing basis, whatever their other operational needs. These can be grouped into two main categories, which are termed **lifecycles**. The deployment lifecycle you follow depends on the scenario you’re trying to enable. For example, you might need only the device lifecycle or the app lifecycle, or you might need both.

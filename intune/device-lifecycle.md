@@ -4,7 +4,8 @@
 title: Overview of the MDM lifecycle | Microsoft Docs
 description: Learn how Intune helps you manage devices through their lifecycle—from enrollment, through configuration, to eventual retirement.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Overview of the mobile device management (MDM) lifecycle
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 All devices that you manage have what we call a *lifecycle*. Intune can help you manage this lifecycle—from enrollment, through configuration and protection, to retiring the device when it's no longer required:

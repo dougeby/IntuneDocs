@@ -4,7 +4,8 @@
 title: Intune network bandwidth use | Microsoft Docs
 description: intune network bandwidth usage
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: get-started-article
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Intune network bandwidth use
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This guidance helps Intune admins understand the network requirements for the Intune service. You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.

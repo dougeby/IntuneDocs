@@ -4,7 +4,8 @@
 title: Customize the Company Portal | Microsoft Docs
 description: Intune Company Portal lets users do common tasks like enroll devices, install apps, and find IT department info.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 # Customize the Company Portal
-
+/intune-classic/includes/note-for-both-portals.md
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic tells administrators how they can customize the Intune Company Portal app and Company Portal website.
