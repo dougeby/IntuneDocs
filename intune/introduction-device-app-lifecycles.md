@@ -27,8 +27,8 @@ ms.custom: intune-classic
 ---
 
 # Overview of device and app lifecycles
-/intune-classic/includes/note-for-both-portals.md
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
 
 Although the needs of individual organizations might differ, there are certain common steps that all organizations need to take on an ongoing basis, whatever their other operational needs. These can be grouped into two main categories, which are termed **lifecycles**. The deployment lifecycle you follow depends on the scenario you’re trying to enable. For example, you might need only the device lifecycle or the app lifecycle, or you might need both.
 

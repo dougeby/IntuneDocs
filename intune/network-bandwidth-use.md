@@ -27,8 +27,8 @@ ms.custom: intune-classic
 ---
 
 # Intune network bandwidth use
-/intune-classic/includes/note-for-both-portals.md
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
 
 This guidance helps Intune admins understand the network requirements for the Intune service. You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.
 
