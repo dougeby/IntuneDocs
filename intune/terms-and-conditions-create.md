@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set terms and conditions in Microsoft Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune Azure"
 description: "Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: nathbarn

@@ -2,8 +2,8 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
+titleSuffix: "Intune Azure"
+description: "Intune Azure: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn
 ms.author: nathbarn
