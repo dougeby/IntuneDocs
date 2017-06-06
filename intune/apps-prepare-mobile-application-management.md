@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare line of business apps for MAM
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 You can enable your apps to use mobile application management (MAM) policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 

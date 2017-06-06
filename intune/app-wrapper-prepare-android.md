@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for Android to change the behavior of your in-house Android apps by restricting features of the app without changing the code of the app itself.
 

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Add users and give administrative permission to Intune
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 This topic tells administrators how they can add users to Intune and what administrative permissions are available in the Intune service.
 

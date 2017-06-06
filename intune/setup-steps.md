@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Intune quick start guide
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 This guide gets you started with your paid subscription to Microsoft Intune. Follow these steps to manage the mobile devices and Windows PCs, as well as apps in your organization. You can follow each step in order, or skip ahead if a step is not applicable to your environment or business needs. If you want to try out Intune, see the [Intune evaluation guide](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).  
 

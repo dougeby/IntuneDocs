@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Sign up or sign in to Intune
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 This topic tells system administrators how they can sign up for an Intune account.
 

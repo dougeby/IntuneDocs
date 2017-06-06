@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Customize the Company Portal
 
-[!INCLUDE[classic-portal](/intune-classic/includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/not-for-both-portals.md)]
 
 This topic tells administrators how they can customize the Intune Company Portal app and Company Portal website.
 
