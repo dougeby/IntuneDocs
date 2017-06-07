@@ -49,7 +49,7 @@ The admin experience in the Azure portal uses the already announced new grouping
 
 ### IP addresses for Intune updated <!-- 1175274 -->
 
-An [updated list of DNS names and IP addresses](../get-started/network-bandwidth-use.md) is available for firewall proxy settings.
+An [updated list of DNS names and IP addresses](/intune/network-bandwidth-use) is available for firewall proxy settings.
 
 ### Use Azure Active Directory for conditional access <!-- 967947 -->
 
@@ -81,7 +81,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
-You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](whats-new-in-intune-app-ui.md) page.
+You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](/intune/whats-new-app-ui) page.
 
 ### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 

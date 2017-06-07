@@ -3099,16 +3099,6 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/includes/mdm-supported-devices.md",
-		"redirect_url": "/intune-classic/includes/mdm-supported-devices",
-		"redirect_document_id": true
-	},
-	{
-		"source_path": "intune/includes/note-for-both-portals.md",
-		"redirect_url": "/intune-classic/includes/note-for-both-portals",
-		"redirect_document_id": true
-	},
-	{
 		"source_path": "intune/includes/whats-new-last-six-months.md",
 		"redirect_url": "/intune-classic/includes/whats-new-last-six-months",
 		"redirect_document_id": true

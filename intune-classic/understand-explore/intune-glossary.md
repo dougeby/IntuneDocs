@@ -34,8 +34,8 @@ ms.custom: intune-classic
 
 |||
 |-|-|
-|App SDK|The [Microsoft Intune App SDK](/intune-classic/develop/intune-app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune mobile application management policies.|
-|App Wrapping Tool|A [command line application](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) that creates a wrapper around a line of business app, which then allows the app to be managed by an Intune mobile application management policy.|
+|App SDK|The [Microsoft Intune App SDK](/intune/app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune mobile application management policies.|
+|App Wrapping Tool|A [command line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line of business app, which then allows the app to be managed by an Intune mobile application management policy.|
 |Available install|When you deploy an app with this action, it is displayed in the company portal, and users can [install it on demand](/intune-classic/deploy-use/deploy-apps).|
 |Azure Portal|A new console for Intune which will be introduced soon. At the moment, you can use the Azure portal to create [Intune MAM policies](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) for devices.|
 
@@ -69,7 +69,7 @@ ms.custom: intune-classic
 |-|-|
 |Email profile|This policy can be used to set up [email access settings](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) for specific email clients on mobile devices minimizing the amount of setup the end user has to do.|
 |EMS|Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) keeps your company data protected while enabling your users to [access the apps and content they need](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
-|End user|[Users of devices like phones and PCs](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) that are managed using Intune.|
+|End user|[Users of devices like phones and PCs](/intune/end-user-educate) that are managed using Intune.|
 |Enroll|Microsoft Intune uses [enrollment](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) to bring devices into management and allow access to resources.|
 
 ## F
@@ -104,8 +104,8 @@ ms.custom: intune-classic
 |||
 |-|-|
 |Managed Browser|A [web browsing application](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.|
-|Mobile application management|[Mobile application management (MAM)](/intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
-|Mobile device management|[Mobile device management (MDM)](/intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices.
+|Mobile application management|[Mobile application management (MAM)](/intune/app-lifecycle) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
+|Mobile device management|[Mobile device management (MDM)](/intune/device-lifecycle) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices.
 |MDM authority|The [MDM authority](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
 |Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) for iOS apps you deploy do not expire.|
 |Mobile app configuration policy|An iOS policy that is used to [supply settings to compatible iOS apps](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) when they are run, for example, a company name, or server address.|

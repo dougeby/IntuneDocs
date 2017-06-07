@@ -54,7 +54,7 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 ### What to do
 Here are the actions to take based on the user status:
 
-- If the user is not licensed for MAM, assign an Intune license to the user as described in [Manage Intune licenses](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
+- If the user is not licensed for MAM, assign an Intune license to the user as described in [Manage Intune licenses](/intune/setup-steps).
 - If the user is not licensed for O365 obtain a license for the user.
 - If a user's app is listed as **Not checked in**, check if you've correctly configured a MAM policy for that app.
 - Ensure that these conditions are applied across all users to which you want MAM policies to apply.
