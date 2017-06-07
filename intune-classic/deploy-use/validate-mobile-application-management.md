@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validate your MAM setup | Microsoft Docs
+title: Validate your MAM setup 
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
 author: andredm7

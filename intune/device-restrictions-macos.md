@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for macOStitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
+title: Intune device restriction settings for macOStitleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # macOS device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Password
 - 	**Password required** - Require the end user to enter a password to access the device.

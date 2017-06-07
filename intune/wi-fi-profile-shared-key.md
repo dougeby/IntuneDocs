@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a Wi-Fi profile with a pre-shared keytitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
+title: Create a Wi-Fi profile with a pre-shared keytitleSuffix: "Intune on Azure"
+description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 # Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Here's how to use Intune’s **Custom device profiles** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 

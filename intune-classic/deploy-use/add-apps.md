@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Add apps | Microsoft Docs
+title: Add apps 
 description: Before you start deploying apps with Intune, take some time to familiarize yourself with the concepts introduced in this topic.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 02/28/2017
 ms.topic: article

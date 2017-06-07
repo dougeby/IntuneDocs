@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollmenttitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to troubleshoot device enrollment."
+title: Troubleshoot device enrollmenttitleSuffix: "Intune on Azure"
+description: Learn how to troubleshoot device enrollment."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Troubleshoot device enrollment in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) to find more ways to get help.
 

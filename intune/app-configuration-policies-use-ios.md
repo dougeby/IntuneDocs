@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to use Intune app configuration policies for iOS | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
+title: How to use Intune app configuration policies for iOS 
+titleSuffix: "Intune on Azure"
+description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to use Microsoft Intune app configuration policies for iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an iOS app. For example, an app might require users to specify:
 

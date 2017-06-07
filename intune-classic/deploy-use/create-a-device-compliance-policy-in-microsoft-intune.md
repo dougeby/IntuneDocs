@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Create a device compliance policy | Microsoft Docs
+title: Create a device compliance policy 
 description: Create a compliance policy to help secure mobile devices and PCs used to access your company data.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod:

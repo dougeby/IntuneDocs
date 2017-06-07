@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Assign Intune licenses | Microsoft Docs
+title: Assign Intune licenses 
 description: Assign licenses to users for your Intune subscription
 keywords:
 author: lindavr

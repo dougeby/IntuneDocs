@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable access to company resources | Microsoft Docs
+title: Enable access to company resources 
 description:  Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources they need.
 keywords:
 author: lleonard-msft

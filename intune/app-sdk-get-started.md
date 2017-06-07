@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with the Microsoft Intune App SDK | Microsoft Docs
+title: Get started with the Microsoft Intune App SDK 
 description: Quickly enable your mobile app for mobile application management (MAM) with Microsoft Intune.
 keywords:
 author: mtillman

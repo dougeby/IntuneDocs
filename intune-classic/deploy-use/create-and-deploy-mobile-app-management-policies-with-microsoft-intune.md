@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and deploy MAM policies | Microsoft Docs
+title: Create and deploy MAM policies 
 description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
 author: andredm7

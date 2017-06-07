@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune onboarding process | Microsoft Docs
+title: Intune onboarding process 
 description: This article helps you with all details that need to be considered when on-boarding Intune cloud-only solution into your environment.
 keywords:
 author: andredm7

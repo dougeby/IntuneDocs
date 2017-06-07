@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set terms and conditions in Microsoft Intune
-titleSuffix: "Intune Azure"
+titleSuffix: "Intune on Azure"
 description: "Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Ensure users accept company terms for access
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As an Intune admin, you can choose to require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access company resources like apps and email. Configuration of terms and conditions is optional.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial of Microsoft Intune | Microsoft Docs
+title: Sign up for a 30-day free trial of Microsoft Intune 
 description: Sign up and set up a free, 30-day evaluation of Microsoft Intune.
 keywords:
 author: lindavr
@@ -114,8 +114,8 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
 
-### Intune Azure preview
-There are three portals you will use for the Intune Azure preview:
+### Intune on Azure
+There are three portals you will use for Intune on Azure:
 - The Office 365 Admin center ([portal.office.com](https://portal.office.com))
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com))
 - The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com))
@@ -142,8 +142,8 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 ### Classic Intune
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### Intune Azure preview
-Learn more about [Intune in the Azure portal preview](/intune/what-is-intune)
+### Intune on Azure
+Learn more about [Intune on Azure](/intune/what-is-intune)
 
 ### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune custom profile settings for Android for Work
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to create Intune custom profile settings for Android for Work devices."
+titleSuffix: "Intune on Azure"
+description: Learn how to create Intune custom profile settings for Android for Work devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

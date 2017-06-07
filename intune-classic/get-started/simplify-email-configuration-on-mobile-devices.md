@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Simplify email configuration on mobile devices | Microsoft Docs
+title: Simplify email configuration on mobile devices 
 description:
 keywords:
-author: jeffgilbms.author: jeffgilb
+author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
 ms.topic: get-started-article

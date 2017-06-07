@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll with the device enrollment manager | Microsoft Docs
+title: Enroll with the device enrollment manager 
 description: The device enrollment manager (DEM) account can manage large numbers of shared, corporate-owned mobile devices with a single user account.
 keywords:
 author: nathbarn

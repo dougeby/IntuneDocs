@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure Intune device feature settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure features on devices you manage."
+title: Configure Intune device feature settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure features on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure device feature settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Device restrictions let you control features on iOS and macOS devices like AirPrint, notifications, and shared device configurations.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Early edition | Microsoft Docs
+title: Early edition 
 description:
 keywords:
 author: mtillman
@@ -63,7 +63,7 @@ Beginning in Spring 2017, Apple has announced that they will enforce specific re
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 ### What's coming for Appx in Intune on Azure <!-- 1000270 -->
 

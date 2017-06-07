@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Communication plan | Microsoft Docs
+title: Communication plan 
 description: The purpose of this article is to provide a migration communication plan and strategy.
 keywords:
 author: andredm7

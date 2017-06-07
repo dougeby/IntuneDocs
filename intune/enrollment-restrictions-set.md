@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in IntunetitleSuffix: "Intune Azure"
-description: "Intune Azure: Restrict enrollment by platform and set a device enrollment limit in Intune. "
+title: Set enrollment restrictions in Intune
+titleSuffix: "Intune on Azure"
+description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -27,7 +28,7 @@ ms.custom: intune-azure
 
 # Set enrollment restrictions
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can set the types and maximum number of devices that you will allow to enroll. On the Enrollment Restrictions blade, you can set:
 

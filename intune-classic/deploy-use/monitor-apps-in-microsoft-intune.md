@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Monitor app deployments| Microsoft Docs
+title: Monitor app deployments
 description: Learn how to monitor apps you deployed with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 11/10/2016
 ms.topic: article

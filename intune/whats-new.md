@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: What's new in the Microsoft Intune Preview
-titleSuffix: "Intune Azure preview"
-description: Find out what's new in the Intune Azure preview
+title: What's new in the Microsoft Intune
+titleSuffix: "Intune on Azure"
+description: Find out what's new in the Intune Azure portal
 keywords:
 author: mtillman
 ms.author: mtillman
@@ -25,11 +25,9 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# What's new in the Microsoft Intune preview
+# What's new in the Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-As the public preview progresses, and more features are added, we'll let you know about them here.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## June 2017
 
@@ -291,7 +289,7 @@ You can also use these reports to drill-down into an individual device to view s
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 ## February 2017
@@ -333,7 +331,7 @@ When users’ devices lose contact with Intune, you can give them new troublesho
 
 ## December 2016 (initial release)
 
-### Telecom expense management integration in public preview of Azure portal<!--747605-->
+### Telecom expense management integration in Azure portal<!--747605-->
 We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
 - Deploy and manage apps from a store to iOS, Android, and Windows devices

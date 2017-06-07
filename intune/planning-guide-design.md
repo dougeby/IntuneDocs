@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an Intune design | Microsoft Docs
+title: Create an Intune design 
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
 author: andredm7

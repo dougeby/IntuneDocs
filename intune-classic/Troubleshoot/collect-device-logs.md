@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Collect device logs| Microsoft Docs
+title: Collect device logs
 description: Learn how to collect logs from your managed devices.
 keywords:
 author: arob98

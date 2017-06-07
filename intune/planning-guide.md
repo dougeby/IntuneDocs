@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune plan and design introduction | Microsoft Docs
+title: Intune plan and design introduction 
 description: This article is an introduction to all Intune plan, design and implementation sections. It also introduces the appendix which contain additional resources to support Intune plan, design and implementation.
 keywords:
 author: andredm7

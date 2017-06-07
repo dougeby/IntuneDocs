@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Endpoint Protection for Windows PCs| Microsoft Docs
+title: Endpoint Protection for Windows PCs
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
 author: nathbarn

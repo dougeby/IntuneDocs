@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Windows edition upgrade policy settings | Microsoft Docs
+title: Windows edition upgrade policy settings 
 description: Learn how to automatically upgrade Windows 10 devices to a different version with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 04/14/2017
 ms.topic: article

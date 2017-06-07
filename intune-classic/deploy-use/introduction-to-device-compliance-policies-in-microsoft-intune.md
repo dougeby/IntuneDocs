@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device compliance policies | Microsoft Docs
+title: Device compliance policies 
 description: This topic explains what device compliance policies are and how they work.
 keywords:
 author: andredm7

@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot client setup | Microsoft Docs
+title: Troubleshoot client setup 
 description: Troubleshoot common client setup problems.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

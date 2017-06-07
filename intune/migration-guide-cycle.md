@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How a typical Intune migration cycle works | Microsoft Docs
+title: How a typical Intune migration cycle works 
 description: The purpose of this article is to explain how an Intune migration cycle works, and give examples on how customer handle the migration cycles.
 keywords:
 author: andredm7

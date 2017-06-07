@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility Features | Microsoft Docs
+title: Accessibility Features 
 description: Learn about the features of Intune that make it more accessible to people with disabilities.
 keywords:
 author: arob98

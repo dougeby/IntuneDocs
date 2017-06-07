@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Intune for Education? | Microsoft Docs
+title: What is Intune for Education? 
 description: Learn how Intune for Education differs from the full Intune management experience.
 keywords: what is Intune
 author: barlanmsft

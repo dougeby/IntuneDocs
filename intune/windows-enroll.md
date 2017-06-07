@@ -2,8 +2,8 @@
 # required metadata
 
 title: Enroll Windows devices
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
+titleSuffix: "Intune on Azure"
+description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
 manager: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll Windows devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
 

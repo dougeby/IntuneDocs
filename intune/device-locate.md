@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Locate lost iOS devices with Intune | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how locate lost or stolen iOS devices with Intune."
+title: Locate lost iOS devices with Intune 
+titleSuffix: "Intune on Azure"
+description: Learn how locate lost or stolen iOS devices with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Locate lost or stolen iOS devices with Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The **Locate Device** device action displays the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into [lost mode](/intune-azure/manage-devices/lost-mode.md).
 

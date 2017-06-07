@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Manage iOS Activation Lock on devices | Microsoft Docs
+title: Manage iOS Activation Lock on devices 
 description: Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 7.1 and later devices.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 04/24/2017
 ms.topic: article

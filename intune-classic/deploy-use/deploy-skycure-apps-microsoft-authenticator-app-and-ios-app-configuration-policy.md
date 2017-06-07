@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy Skycure apps, Microsoft Authenticator app and iOS configuration policy | Microsoft Docs
+title: Deploy Skycure apps, Microsoft Authenticator app and iOS configuration policy 
 description: Deploy Skycure apps, Microsoft Authenticator app and iOS configuration policy into Intune classic console.
 keywords:
 author: andredm7

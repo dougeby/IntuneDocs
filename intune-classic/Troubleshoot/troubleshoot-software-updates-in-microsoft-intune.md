@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot software updates | Microsoft Docs
+title: Troubleshoot software updates 
 description: Solve software update problems in Microsoft Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article

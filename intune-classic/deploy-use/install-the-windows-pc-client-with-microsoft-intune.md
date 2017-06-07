@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Install the PC client software | Microsoft Docs
+title: Install the PC client software 
 description: Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 keywords:
 author: nathbarn

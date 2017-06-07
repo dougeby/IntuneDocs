@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Identify Intune use case scenarios | Microsoft Docs
+title: Identify Intune use case scenarios 
 description: This article helps to identify Intune use case, and sub use case scenarios for a Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7

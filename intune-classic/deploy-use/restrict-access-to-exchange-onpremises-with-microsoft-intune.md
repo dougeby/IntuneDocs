@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect email to Exchange On-prem | Microsoft Docs
+title: Protect email to Exchange On-prem 
 description: Protect and control access to company email on Exchange On-premises with conditional access.
 keywords:
 author: andredm7

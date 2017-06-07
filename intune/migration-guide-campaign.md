@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Start an Intune migration campaign | Microsoft Docs
+title: Start an Intune migration campaign 
 description: The purpose of this article is to provide guidance on how to start a migration campaign.
 keywords:
 author: andredm7

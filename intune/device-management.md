@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage devices with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to see the devices you manage with Intune, and perform various operations on them."
+titleSuffix: "Intune on Azure"
+description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # What is Microsoft Intune device management?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices. To access the workload:
 

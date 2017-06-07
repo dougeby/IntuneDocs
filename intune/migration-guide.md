@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune mobile device management (MDM) Migration Guide | Microsoft Docs
+title: Intune mobile device management (MDM) Migration Guide 
 description: The purpose of this guide is to step customers through the various details involved in migrating from a third-party MDM provider to Microsoft Intune.
 keywords:
 author: andredm7
