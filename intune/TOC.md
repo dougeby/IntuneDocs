@@ -5,7 +5,7 @@
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
-<!-- ### What's new archive
+### [What's new archive](whats-new-archive.md)
 ## High-level architecture -->
 ## [Device and app lifecycles](introduction-device-app-lifecycles.md)
 ### [Device lifecycle](device-lifecycle.md)
