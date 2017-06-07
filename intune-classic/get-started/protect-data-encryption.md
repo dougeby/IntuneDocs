@@ -54,5 +54,5 @@ This guide can help you protect your company from data loss by forcing passcodes
 
 ## Additional information:
 - [Find out about the end user experience for MAM enabled apps with Microsoft Intune.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Decide how to prepare apps for mobile application management with Microsoft Intune.](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Decide how to prepare apps for mobile application management with Microsoft Intune.](/intune/apps-prepare-mobile-application-management)
 - [View the list of Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)

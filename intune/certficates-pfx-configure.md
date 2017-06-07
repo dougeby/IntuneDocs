@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -119,7 +119,7 @@ In this step you will:
 ### To enable support for the certificate connector
 
 1.  Sign into the Azure portal.
-2.  Choose **More Services** > **Other** > **Intune**.
+2.  Choose **More Services** > **Monitoring + Management** > **Intune**.
 3.  On the **Intune** blade, choose **Configure devices**.
 2.  On the **Device Configuration** blade, choose **Setup** > **Certificate Authority**.
 2.  Under **Step 1**, choose **Enable**.
