@@ -35,6 +35,16 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
+## Week of June 9, 2017
+
+### Microsoft Intune and Conditional Access admin consoles are generally available
+
+We’re announcing the general availability of both the new Intune on Azure admin console and the Conditional Access admin console. Through Intune on Azure, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
+
+At general availability, Intune will be visible without the **preview** label in the Azure console at portal.azure.com.
+
+There is no action required for existing customers at this time, unless you have received one of a series of messages in the message center requesting that you take action so that we can migrate your groups. You may have also received a message center notice informing you that migration is taking longer due to bugs on our side. We are diligently continuing work to migrate any impacted customer.
+
 ## Week of June 2, 2017
 
 ### Change your MDM authority without unenrolling managed devices
