@@ -3104,8 +3104,8 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/index.md",
-		"redirect_url": "/intune-classic/index",
+		"source_path": "intune-classic/index.md",
+		"redirect_url": "/intune/index",
 		"redirect_document_id": true
 	},
 	{
