@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sideload apps for Windows and Windows Phone | Microsoft Docs
+title: Sideload apps for Windows and Windows Phone 
 description: Learn how to sign line of business apps so you can use Intune to deploy them.
 keywords:
 author: robstackmsft

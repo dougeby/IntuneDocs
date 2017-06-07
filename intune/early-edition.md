@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Early edition | Microsoft Docs
+title: Early edition 
 description:
 keywords:
 author: mtillman

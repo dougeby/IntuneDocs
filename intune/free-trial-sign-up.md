@@ -2,8 +2,8 @@
 # required metadata
 
 title: Sign up for a 30-day free trial
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: How to sign up for Intune on Azure."
+titleSuffix: "Intune on Azure"
+description: How to sign up for Intune on Azure."
 keywords:
 author: lindavr
 ms.author: lindavr
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Sign up for a Microsoft Intune free trial for the Azure portal preview
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This article walks you through signing up for a trial of Intune standalone for the Azure portal preview. <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
 

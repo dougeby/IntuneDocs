@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Certificate profiles for resource access | Microsoft Docs
+title: Certificate profiles for resource access 
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
 author: lleonard-msft

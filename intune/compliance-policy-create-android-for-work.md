@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for WorktitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to create a compliance policy for Android for Work devices."
+title: Create compliance policy for Android for WorktitleSuffix: "Intune on Azure"
+description: Learn how to create a compliance policy for Android for Work devices."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # How to create a device compliance policy for Android for Work devices in Intune Azure preview
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is  device compliance ](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
 

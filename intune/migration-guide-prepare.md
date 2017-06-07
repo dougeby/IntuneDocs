@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prepare Intune for mobile device management | Microsoft Docs
+title: Prepare Intune for mobile device management 
 description: The purpose of this article is to help the readers evaluate their business and technical requirements before migrating to Intune.
 keywords:
 author: andredm7

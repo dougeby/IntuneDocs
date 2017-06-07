@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use groups to manage users and devices | Microsoft Docs
+title: Use groups to manage users and devices 
 description: Create and manage groups by using the Groups workspace.
 keywords:
 author: Mtillman

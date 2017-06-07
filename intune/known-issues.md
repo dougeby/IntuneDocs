@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: "Known issues in the Microsoft Intune Preview"
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Read about known issues in the preview"
+title: "Known issues in the Microsoft Intune on Azure"
+titleSuffix: "Intune on Azure"
+description: Read about known issues in Intune"
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Known issues in the Microsoft Intune preview
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 Use this topic to learn about any known issues in the Microsoft Intune preview.

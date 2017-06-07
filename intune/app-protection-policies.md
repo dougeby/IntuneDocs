@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and deploy app protection policiestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview:  Learn how Intune app protection policies can help protect company data used by apps you manage."
+title: Create and deploy app protection policiestitleSuffix: "Intune on Azure"
+description:  Learn how Intune app protection policies can help protect company data used by apps you manage."
 keywords:
 author: NathBarn
 ms.author: nathbarn
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to create and assign app protection policies
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **If you are not in the Intune service in the Azure portal preview program**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
 

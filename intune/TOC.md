@@ -1,5 +1,5 @@
 # [Introduction](introduction-intune.md)
-## [What is the Azure portal preview?](what-is-intune.md)
+## [What is the Azure portal?](what-is-intune.md)
 ## [What is Intune for Education?](introduction-intune-education.md)
 ## [Intune features in Azure](ui-changes.md)
 ## [Sign up for a free trial](free-trial-sign-up.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lookout mobile threat defense connector | Microsoft Docs
+title: Lookout mobile threat defense connector 
 description: Protect access to company resources based on device, network and application risk with the Lookout Mobile Threat Defense connector and Intune.
 keywords:
 author: andredm7

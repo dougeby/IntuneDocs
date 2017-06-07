@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Android for Work policy settings | Microsoft Docs
+title: Android for Work policy settings 
 description: Create policies that control settings and features on Android for Work devices that you manage with Intune.
 keywords:
 author: robstackmsft

@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: View Intune device inventory | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
+title: View Intune device inventory 
+titleSuffix: "Intune on Azure"
+description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # How to view Intune device inventory
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them. 
 

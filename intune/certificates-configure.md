@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to configure certificates with Intune | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to create and assign certificates that help you secure Wi-Fi, VPN, and other connections."
+title: How to configure certificates with Intune 
+titleSuffix: "Intune on Azure"
+description: Learn how to use Intune to create and assign certificates that help you secure Wi-Fi, VPN, and other connections."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to configure certificates in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. These remove the need to enter user names and passwords to authenticate connections.
 

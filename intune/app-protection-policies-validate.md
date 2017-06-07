@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Validate your app protection policiestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
+title: Validate your app protection policiestitleSuffix: "Intune on Azure"
+description: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
 keywords:
 author: NathBarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to validate your app protection policy setup
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 This topic provides information on checking for issues after you set up an app protection policy. This guidance applies to app protection policies in the Azure portal **preview**.

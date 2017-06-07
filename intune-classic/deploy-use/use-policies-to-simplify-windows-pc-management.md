@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Use policies to simplify Windows PC management | Microsoft Docs
+title: Use policies to simplify Windows PC management 
 description: Describes the Windows PC management policies and the settings for the Microsoft Intune Center.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

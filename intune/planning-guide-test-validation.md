@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune testing and validation | Microsoft Docs
+title: Intune testing and validation 
 description: This article helps you with all details that need to be considered when testing and validating Intune cloud-only solution in your environment.
 keywords:
 author: andredm7

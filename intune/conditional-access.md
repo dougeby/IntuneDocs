@@ -2,8 +2,8 @@
 # required metadata
 
 title: Conditional access with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune Azure preview."
+titleSuffix: "Intune on Azure"
+description: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # What's conditional access?
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic describes Conditional access as it applies to Enterprise Mobility + Security (EMS), and follows that with Conditional access common scenarios when using Intune.
 

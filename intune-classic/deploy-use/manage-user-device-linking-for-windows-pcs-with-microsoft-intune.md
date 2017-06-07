@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Manage user-device linking for Windows PCs | Microsoft Docs
+title: Manage user-device linking for Windows PCs 
 description: How to link a user to an Intune-managed Windows PC.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

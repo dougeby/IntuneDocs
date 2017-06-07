@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll devices | Microsoft Docs
+title: Enroll devices 
 description: Mobile device management (MDM) uses enrollment to bring devices into management and allow access to resources.
 keywords:
 author: nathbarn

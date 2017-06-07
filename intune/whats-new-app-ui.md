@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: UI updates for Intune end user apps | Microsoft Docs
+title: UI updates for Intune end user apps 
 description: "Find out what has changed in UI for apps that work on end user devices with Intune."
 keywords:
 author: barlanmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Special migration considerations | Microsoft Docs
+title: Special migration considerations 
 description: The purpose of this article is give customer provide special migration considerations before they start a migration campaign.
 keywords:
 author: andredm7

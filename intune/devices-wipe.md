@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Full or selective wipe on devices using IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
+title: Full or selective wipe on devices using IntunetitleSuffix: "Intune on Azure"
+description: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Use full or selective wipe
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 

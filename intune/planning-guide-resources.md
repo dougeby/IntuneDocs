@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune plan and design additional resources | Microsoft Docs
+title: Intune plan and design additional resources 
 description: Appendix 1 includes links for additional Intune information that might be helpful during the Intune deployment planning and implementation process.
 keywords:
 author: andredm7

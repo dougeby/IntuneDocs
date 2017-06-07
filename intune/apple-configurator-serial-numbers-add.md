@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add Apple Configurator serial numberstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to add serial numbers to corporate-owned iOS devices using the Apple Configurator."
+title: Add Apple Configurator serial numberstitleSuffix: "Intune on Azure"
+description: Learn how to add serial numbers to corporate-owned iOS devices using the Apple Configurator."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Add Apple Configurator serial numbers
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md). You can add serial numbers one at a time, or upload a comma-separated-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices.
 

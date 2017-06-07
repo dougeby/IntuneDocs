@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Plan your user and device groups | Microsoft Docs
+title: Plan your user and device groups 
 description: Plan groups to meet your organizational needs.
 keywords:
 author: sanchusa

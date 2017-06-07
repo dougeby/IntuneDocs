@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Access corporate email with email profiles | Microsoft Docs
+title: Access corporate email with email profiles 
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
 author: robstackmsft

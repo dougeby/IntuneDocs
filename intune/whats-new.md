@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: What's new in the Microsoft Intune Preview
-titleSuffix: "Intune Azure preview"
+title: What's new in the Microsoft Intune
+titleSuffix: "Intune on Azure"
 description: Find out what's new in the Intune Azure preview
 keywords:
 author: mtillman
@@ -25,9 +25,9 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# What's new in the Microsoft Intune preview
+# What's new in the Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
@@ -333,7 +333,7 @@ When users’ devices lose contact with Intune, you can give them new troublesho
 
 ## December 2016 (initial release)
 
-### Telecom expense management integration in public preview of Azure portal<!--747605-->
+### Telecom expense management integration in Azure portal<!--747605-->
 We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
 - Deploy and manage apps from a store to iOS, Android, and Windows devices

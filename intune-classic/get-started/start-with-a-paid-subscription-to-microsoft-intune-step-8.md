@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable device enrollment | Microsoft Docs
+title: Enable device enrollment 
 description: Set MDM authority and enable enrollment for iOS, Windows, Android, and Mac devices.
 keywords:
 author: nathbarn

@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Retire a Windows PC | Microsoft Docs
+title: Retire a Windows PC 
 description: How to retire an Intune-managed Windows PC.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable device protection rule | Microsoft Docs
+title: Enable device protection rule 
 description: Enable mobile threat protection rule in the device compliance policy.
 keywords:
 author: andredm7

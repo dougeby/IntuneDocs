@@ -2,8 +2,8 @@
 # required metadata
 
 title: How to use remotely administer Android devices using TeamViewer
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to remotely administer Android devices using TeamViewer."
+titleSuffix: "Intune on Azure"
+description: Learn how to remotely administer Android devices using TeamViewer."
 keywords:
 author: robstackmsft
 ms.author: robstack

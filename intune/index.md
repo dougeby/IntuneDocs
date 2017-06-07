@@ -6,7 +6,7 @@ ms.author: apexprodleads
 ms.service: microsoft-intune
 ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
-title: Microsoft Intune Documentation | Microsoft Docs
+title: Microsoft Intune Documentation 
 description: Learn to use Microsoft Intune.
 ---
 <div id="main" class="v2">

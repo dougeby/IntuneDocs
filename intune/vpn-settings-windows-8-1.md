@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 8.1 devicestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on Windows 8.1 devices."
+title: Intune VPN settings for Windows 8.1 devicestitleSuffix: "Intune on Azure"
+description: Learn about the Intune settings you can use to configure VPN connections on Windows 8.1 devices."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # VPN settings for Windows 8.1 devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 

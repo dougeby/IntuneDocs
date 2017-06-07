@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Intune custom settings for iOS devicestitleSuffix: "Intune Azure preview"
+title: Intune custom settings for iOS devicestitleSuffix: "Intune on Azure"
 titleSuffix: Intune Azure preview
-description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
+description: Learn the settings you can use in an iOS custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Microsoft Intune custom settings for iOS devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use the Microsoft Intune iOS custom profile to assign settings that you created by using the [Apple Configurator tool](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) to iOS devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune iOS custom profile and assign the settings to users and devices in your organization.
 

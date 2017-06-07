@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial of Microsoft Intune | Microsoft Docs
+title: Sign up for a 30-day free trial of Microsoft Intune 
 description: Sign up and set up a free, 30-day evaluation of Microsoft Intune.
 keywords:
 author: lindavr

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to manage devices | Microsoft Docs
+title: Choose how to manage devices 
 description: Learn about the various ways you can enroll and manage devices.
 keywords:
 author: nathbarn

@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Intune settings for the iOS Classroom app | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
+title: Intune settings for the iOS Classroom app 
+titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # How to configure Intune settings for the iOS Classroom app
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 [Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, using the app, a teacher can:

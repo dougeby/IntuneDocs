@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new | Microsoft Docs
+title: What's new 
 description: Find out what’s new in this month’s and past releases of Microsoft Intune
 keywords:
 author: mtillman

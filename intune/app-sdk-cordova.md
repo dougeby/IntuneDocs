@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune App SDK Cordova Plugin | Microsoft Docs
+title: Microsoft Intune App SDK Cordova Plugin 
 description:
 keywords: sdk, Cordova, intune
 author: oydang

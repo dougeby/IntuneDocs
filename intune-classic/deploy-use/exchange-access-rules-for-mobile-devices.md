@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Exchange access rules for mobile devices | Microsoft Docs
+title: Exchange access rules for mobile devices 
 description: Exchange ActiveSync access rules to allow or block device connections with EAS
 keywords:
-author: andredm7ms.author: andredm
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article

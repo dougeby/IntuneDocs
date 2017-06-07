@@ -2,8 +2,8 @@
 # required metadata
 
 title: Exchange connector for on-premises EAS
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune admin console and on-premises Exchange Server"
+titleSuffix: "Intune on Azure"
+description: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune admin console and on-premises Exchange Server"
 keywords:
 author: andredm7
 ms.author: andredm
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Install the Intune On-premises Exchange Connector in Microsoft Intune Azure preview
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 To set up a connection that enables Microsoft Intune to communicate with the Exchange Server that hosts the mailboxes for the mobile devices, you must download and configure the On-premises Exchange Connector from the Intune administration console. Intune only supports one Exchange Connector connection of any type per subscription.

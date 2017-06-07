@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set basic data management on Office 365 apps - Intune Azure previewtitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Supporting documentation for the Manage Office 365 apps wizard."
+title: Set basic data management on Office 365 apps in IntunetitleSuffix: "Intune on Azure"
+description: Supporting documentation for the Manage Office 365 apps wizard."
 keywords:
 author: lindavr
 ms.author: lindavr

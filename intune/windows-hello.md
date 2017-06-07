@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for BusinesstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
+title: How to use Windows Hello for BusinesstitleSuffix: "Intune on Azure"
+description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Use Windows Hello for Business
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune integrates with Windows Hello for Business (formerly Microsoft Passport for Work), an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or a virtual smart card.
 

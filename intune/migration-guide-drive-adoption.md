@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Drive end-user adoption with conditional access | Microsoft Docs
+title: Drive end-user adoption with conditional access 
 description: The purpose of this article is to provide insights on how to leverage conditional access to drive Intune enrollment.
 keywords:
 author: andredm7

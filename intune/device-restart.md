@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Remotely restart devices with Intune | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to remotely restart devices using the restart device action."
+title: Remotely restart devices with Intune 
+titleSuffix: "Intune on Azure"
+description: Learn how to remotely restart devices using the restart device action."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Remotely restart devices with Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The **Restart** device action causes the device you choose to be restarted. The device owner is not automatically notified of the restart, therefore might lose work.
 

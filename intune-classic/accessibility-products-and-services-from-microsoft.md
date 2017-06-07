@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility Products and Services from Microsoft | Microsoft Docs
+title: Accessibility Products and Services from Microsoft 
 description: Details about accessibility products and services from Microsoft.
 keywords:
 author: arob98

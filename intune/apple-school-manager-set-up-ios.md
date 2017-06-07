@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up Apple School Manager Program enrollment for iOS devices
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
+titleSuffix: "Intune on Azure"
+description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enable iOS device enrollment with Apple School Manager
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic helps IT administrators enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) (ASM) program. Microsoft Intune can deploy an enrollment profile “over the air” that enrolls ASM devices into management. The administrator never has to touch each managed device. An ASM profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 

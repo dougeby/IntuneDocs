@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect Skype for Business Online | Microsoft Docs
+title: Protect Skype for Business Online 
 description: Protect and control access to Skype for Business Online by using conditional access.
 keywords:
 author: andredm7

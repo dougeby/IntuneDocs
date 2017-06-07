@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop an Intune rollout communication plan | Microsoft Docs
+title: Develop an Intune rollout communication plan 
 description: This article helps to develop a rollout communication plan for a Microsoft Intune cloud-only design and implementation.
 keywords:
 author: andredm7

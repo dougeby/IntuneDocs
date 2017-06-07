@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Determine Intune rollout targeted groups and timeframes | Microsoft Docs
+title: Determine Intune rollout targeted groups and timeframes 
 description: This article helps to determine rollout targeted groups and timeframes for a Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7

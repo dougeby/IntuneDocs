@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Docs
+title: Troubleshoot company resource access problems 
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
 author: lleonard-msft

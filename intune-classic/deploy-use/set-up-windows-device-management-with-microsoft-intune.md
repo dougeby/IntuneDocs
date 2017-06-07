@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Windows device management with Microsoft Intune | Microsoft Docs
+title: Set up Windows device management with Microsoft Intune 
 description: Enable mobile device management (MDM) for Windows devices with Microsoft Intune.
 keywords:
 author: NathBarn

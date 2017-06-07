@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
+title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune on Azure"
+description: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
 keywords:
 author: andredm7
 ms.author: andredm
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to create and assign a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune Azure preview
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic walks you through the process of configuring conditional access for Exchange on-premises based on device compliance.
 

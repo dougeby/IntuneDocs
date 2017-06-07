@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with groups in the Intune Azure portal previewtitleSuffix: "Intune Azure preview"
+title: Get started with groups in the IntunetitleSuffix: "Intune on Azure"
 description: Learn what's new with groups in the Intune Azure portal preview
 keywords:
 author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Get started with groups
 
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure preview](./includes/azure_portal.md)]
 
 We've heard your feedback and have made changes to how you work with groups in Microsoft Intune.
 If you are using Intune from the Azure portal, your Intune groups have been migrated to Azure Active Directory security groups.

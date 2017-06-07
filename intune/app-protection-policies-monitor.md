@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor app protection policiestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: See how many users have the policy, and drill down to find more details."
+title: How to monitor app protection policiestitleSuffix: "Intune on Azure"
+description: See how many users have the policy, and drill down to find more details."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 
 # How to monitor app protection policies
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **If you are not in the Intune preview on Azure**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
 

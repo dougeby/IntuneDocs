@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up iOS and Mac management | Microsoft Docs
+title: Set up iOS and Mac management 
 description: Enable mobile device management (MDM) for iOS devices including iPads and iPhones as well as Mac OS X devices with Microsoft Intune.
 keywords:
 author: nathbarn

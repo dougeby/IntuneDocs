@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General troubleshooting tips | Microsoft Docs
+title: General troubleshooting tips 
 description: General resources to help resolve issues with Intune.
 keywords:
 author: arob98

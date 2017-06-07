@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure Intune device restriction settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure settings and features on devices you manage."
+title: Configure Intune device restriction settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure settings and features on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Device restrictions let you control a wide range of settings and features you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
 

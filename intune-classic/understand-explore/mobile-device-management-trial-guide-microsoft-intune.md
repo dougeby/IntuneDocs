@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Evaluate mobile device management in Microsoft Intune | Microsoft Docs
+title: Evaluate mobile device management in Microsoft Intune 
 description: Evaluate MDM in your Intune free trial.
 keywords:
 author: lindavr

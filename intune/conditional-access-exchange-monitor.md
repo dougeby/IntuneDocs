@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor conditional access compliance for on-premises Exchange and Exchange Online
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune on Azure"
 description: "Monitor conditional access compliance for on-premises Exchange and Exchange Online through the Intune Azure portal"
 keywords:
 author: andredm7

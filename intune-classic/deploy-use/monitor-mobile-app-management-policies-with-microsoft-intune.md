@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Monitor MAM policies with Microsoft Intune | Microsoft Docs
+title: Monitor MAM policies with Microsoft Intune 
 description: See how many users have the policy, and drill down to find more details.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
 ms.prod:
