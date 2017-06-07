@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune app notification settings for iOS devices
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the settings you can use to control notifications from apps on iOS devices."
+titleSuffix: "Intune on Azure"
+description: Learn the settings you can use to control notifications from apps on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune app notifications settings for IOS devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Lets you configure how apps installed on a device send notifications. This settings supports supervised devices running iOS 9.3 and later.
 

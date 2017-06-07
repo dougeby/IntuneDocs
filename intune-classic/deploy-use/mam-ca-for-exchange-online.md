@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: App access for Exchange Online | Microsoft Docs
+title: App access for Exchange Online 
 description: This topic describes how you can configure a conditional access policy for MAM apps.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article
 ms.prod:

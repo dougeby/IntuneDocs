@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: How to monitor app information and assignments | Microsoft DocstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: After you've assigned an app to users or devices, use this information to help you monitor its status."
+title: How to monitor app information and assignments 
+titleSuffix: "Intune on Azure"
+description: After you've assigned an app to users or devices, use this information to help you monitor its status."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -27,7 +28,7 @@ ms.custom: intune-azure
 
 # How to monitor app information and assignments with Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune provides a number of ways in which you can monitor the properties of apps you manage, as well as their assignment status.
 

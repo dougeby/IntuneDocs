@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Full or selective wipe on devices using IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
+title: Full or selective wipe on devices using IntunetitleSuffix: "Intune on Azure"
+description: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Use full or selective wipe
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
@@ -104,8 +104,8 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|Removed.|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
+|Email|n/a (email profiles are not supported by Android devices)|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for Android is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune email settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
+title: How to configure Intune email settingstitleSuffix: "Intune on Azure"
+description: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure email settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Email profiles can be used to configure devices you manage with the settings necessary to connect to , and synchronize with company email. This can help ensure that settings are standard across all of your devices, and also help to reduce support calls from end users who do not know the correct email settings.
 
@@ -47,7 +47,7 @@ Use the information in this topic to learn the basics about configuring an email
 ## Create a device profile containing email settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.

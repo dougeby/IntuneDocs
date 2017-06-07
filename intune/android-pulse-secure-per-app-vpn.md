@@ -2,13 +2,13 @@
 # required metadata
 
 title: Per-app VPN profile for Android - Pulse Secure
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to create a per-app VPN profile for Android devices managed by Intune."
+titleSuffix: "Intune on Azure"
+description: Learn how to create a per-app VPN profile for Android devices managed by Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,11 +29,11 @@ ms.custom: intune-azure
 
 # Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps.
 
-After you assign the policy to your Android device or user groups, users should start the PulseSecure VPN. PulseSecure will then allow traffic only from the specified apps to use the open VPN connection.
+After you assign the policy to your Android device or user groups, users should start the PulseSecure VPN. PulseSecure then allows only traffic from the specified apps to use the open VPN connection.
 
 > [!NOTE]
 >
@@ -44,7 +44,7 @@ After you assign the policy to your Android device or user groups, users should 
 
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the list of profiles blade, choose **Create Profile**.
@@ -53,12 +53,12 @@ After you assign the policy to your Android device or user groups, users should 
 5. From the **Profile type** drop-down list, choose **VPN**.
 3. Choose **Settings** > **Configure** and then configure the VPN profile as per the settings in [How to configure VPN settings](vpn-settings-configure.md) and [Intune VPN settings for Android devices](vpn-settings-android.md).
 
-Take note of the **Connection Name** value you specify when creating the VPN profile. This will be needed in the next step. For example, **MyAppVpnProfile**.
+Take note of the **Connection Name** value you specify when creating the VPN profile. This name will be needed in the next step. For example, **MyAppVpnProfile**.
 
 ## Step 2: Create a custom configuration policy
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
@@ -75,8 +75,8 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
 ![Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png)
 
 ### Set your app list to blacklist or whitelist (optional)
-  You can specify a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps will connect through the VPN.
-  Alternatively, you can use the **WHITELIST** value to specify a list of apps that *can* use the VPN connection. Apps that are not on the list will not connect through the VPN.
+  You can specify a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps connect through the VPN.
+  Alternatively, you can use the **WHITELIST** value to specify a list of apps that *can* use the VPN connection. Apps that are not on the list do not connect through the VPN.
   1.	On the **Custom OMA-URI Settings** blade, choose **Add**.
   2.	Enter a setting name.
   3.	For **Data type**, specify **String**.

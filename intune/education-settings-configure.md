@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure Intune education settings for Windows 10titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure Windows 10 education settings on devices you manage."
+title: Configure Intune education settings for Windows 10titleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure Windows 10 education settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure Windows 10 education settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Education profiles let you specify details that configure the Windows Take a Test app including account details, and the test URL. When you configure this, the Take a Test app opens with the test you specify, and no other apps can be run on the device until the test is complete.
 
@@ -37,7 +37,7 @@ Use the information in this topic to learn the basics about configuring device r
 ## Create a device profile containing education profile settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.

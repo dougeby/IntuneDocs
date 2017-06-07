@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Create and deploy MAM policies | Microsoft Docs
+title: Create and deploy MAM policies 
 description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
@@ -110,9 +112,9 @@ When you finish creating a policy as described in the previous procedure, it is 
 ## Line of Business (LOB) apps (optional)
 
 Beginning with Intune 1703 version, you have the option to generally add LOB apps into Intune when creating a new app protection policy. This gives you the option to define app protection policies for LOB apps using the MAM SDK without requiring full app deployment permissions.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> You can also add LOB apps into Intune when going through the [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started) work-flow.
+> You can also add LOB apps into Intune when going through the [Intune App SDK](/intune/app-sdk-get-started) work-flow.
 
 > [!IMPORTANT]
 > If users only have specific permissions for deploying MAM apps and not full app deployment permissions, which would allow them to deploy any apps in Intune, they won’t be able to go through the Intune SDK work-flow, but they can still add their LOB apps through the MAM app protection policy creation work-flow.

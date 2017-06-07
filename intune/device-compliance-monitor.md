@@ -2,8 +2,8 @@
 # required metadata
 
 title: How to monitor device compliance
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to monitor device compliance."
+titleSuffix: "Intune on Azure"
+description: Learn how to monitor device compliance."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -26,12 +26,12 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-# How to monitor device compliance in Intune Azure preview
+# How to monitor device compliance in Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can view the summary of the status of your **compliance profiles** in the **Overview** blade.
-You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can also view the status for each policy by going to the policy blade and choosing **Reports** in the **Manage** section.  The details of the reports available for the preview are listed below.
+You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can also view the status for each policy by going to the policy blade and choosing **Reports** in the **Manage** section.  The details of the reports available are listed below.
 
 ##  Device compliance
 

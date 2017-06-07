@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Manage iOS volume-purchased apps | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
+title: Manage iOS volume-purchased apps 
+titleSuffix: "Intune on Azure"
+description: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 
@@ -57,7 +57,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 ## To get and upload an Apple VPP token
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS MAM policy settings | Microsoft Docs
+title: iOS MAM policy settings 
 description: This topic describes the mobile app management policy settings for iOS devices.
 keywords:
 author: andredm7
@@ -81,7 +81,7 @@ There are some exempt apps and platform services that Intune app protection poli
 | **Require minimum iOS operating system (Warning only)** | Choose **Yes** to require a minimum iOS operating system to use this app. The user will see a notification if the iOS version on the device does not meet the requirement. This notification can be dismissed. | No |
 | **Require minimum app version** | Choose **Yes** to require a minimum app version to use the app. The user will be blocked from access if the app version on the device does not meet the requirement.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No | 
 | **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user will see a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No | 
-| **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user will be blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | No |
+| **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user will be blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](/intune/app-sdk) <br><br> | No |
 ##  Add-ins for Outlook app
 
 Outlook recently brought add-ins to Outlook for iOS which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.

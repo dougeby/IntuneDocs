@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect email scenarios | Microsoft Docs
+title: Protect email scenarios 
 description: A few example scenarios and how they could be implemented with conditional access.
 keywords:
 author: andredm7

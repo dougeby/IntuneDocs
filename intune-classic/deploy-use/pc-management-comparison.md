@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Compare Windows PC management options | Microsoft Docs
+title: Compare Windows PC management options 
 description: Enrollment of corporate-owned iOS devices by using the Apple Device Enrollment Program (DEP) or Apple Configurator
 keywords:
 author: nathbarn

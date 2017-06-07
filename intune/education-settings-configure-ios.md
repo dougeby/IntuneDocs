@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune settings for the iOS Classroom app | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
+title: Intune settings for the iOS Classroom app 
+titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # How to configure Intune settings for the iOS Classroom app
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 [Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, using the app, a teacher can:
@@ -80,7 +80,7 @@ You can import information into SDS by using one of the following:
 ### Configure general settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3.	On the **Intune** blade, choose **Configure devices**.
 4.	On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 5.	On the profiles blade, choose **Create Profile**.

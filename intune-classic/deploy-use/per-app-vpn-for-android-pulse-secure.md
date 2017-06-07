@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Per-app VPN for Android using Pulse Secure | Microsoft Docs
+title: Per-app VPN for Android using Pulse Secure 
 description: You can create a per-app VPN profile for Android devices managed by Intune.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ After you deploy the policy to your Android device or user groups, users should 
 
 > [!NOTE]
 >
-> Take note of the **VPN Connection name (displayed to users):** value you specify when creating the VPN profile. This will be needed in the next step. For example, MyAppVpnProfile.
+> Take note of the **VPN Connection name (displayed to users):** value you specify when creating the VPN profile. This will be needed in the next step. For example, **MyAppVpnProfile**.
 
 ### Step 2: Create a custom configuration policy
 

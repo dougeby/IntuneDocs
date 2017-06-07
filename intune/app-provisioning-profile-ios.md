@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: App provisioning profiles | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
+title: App provisioning profiles 
+titleSuffix: "Intune on Azure"
+description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Use iOS mobile provisioning profiles to prevent your apps from expiring
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 
@@ -45,7 +45,7 @@ After the certificate expires, you must sign the app again with a new certificat
 ## How to create an iOS mobile app provisioning profile
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring +Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile apps** workload, choose **Manage** > **iOS provisioning profiles**.
 2.  In the list of profiles blade, choose **Create profile**.

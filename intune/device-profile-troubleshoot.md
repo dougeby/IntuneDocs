@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshooting device profiles in Microsoft Intune | Microsoft DocstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device profiles."
+title: Troubleshooting device profiles in Microsoft Intune 
+titleSuffix: "Intune on Azure"
+description: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -28,7 +30,7 @@ ms.custom: intune-azure
 # Troubleshooting device profiles in Microsoft Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.
 

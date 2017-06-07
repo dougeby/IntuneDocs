@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility for People with Disabilities | Microsoft Docs
+title: Accessibility for People with Disabilities 
 description: Read accessibility information about Microsoft products.
 keywords:
 author: arob98

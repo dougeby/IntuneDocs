@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune Wi-Fi settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
+title: How to configure Intune Wi-Fi settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure Wi-Fi settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users will have access to your corporate Wi-Fi network without having to configure it themselves.
 
@@ -51,7 +51,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 ## Create a device profile containing Wi-Fi settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.

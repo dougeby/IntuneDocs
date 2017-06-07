@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: What's new in the Microsoft Intune Preview
-titleSuffix: "Intune Azure preview"
-description: Find out what's new in the Intune Azure preview
+title: What's new in the Microsoft Intune
+titleSuffix: "Intune on Azure"
+description: Find out what's new in the Intune Azure portal
 keywords:
 author: mtillman
 ms.author: mtillman
@@ -25,11 +25,9 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# What's new in the Microsoft Intune preview
+# What's new in the Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-As the public preview progresses, and more features are added, we'll let you know about them here.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## June 2017
 
@@ -63,6 +61,9 @@ This feature is available on both Android and iOS. Intune supports minimum versi
 You can also configure additional settings to provide a non-blocking notification that recommends an OS or application upgrade. This notification can be closed and the application may be used as normal.
 
 For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md) and [Android app protection policy settings](app-protection-policy-settings-android.md).
+
+#### Configure app configurations for Android for Work <!-- 621621 -->
+Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Intune portal with a configuration designer or a JSON editor. For more information, see [Use app configurations for Android for Work](app-configuration-policies-use-android.md).
 
 #### New app configuration capability for MAM without enrollment <!-- 677969 -->
 
@@ -103,16 +104,16 @@ Android 7.0 and above devices with a work profile managed as an Android for Work
 For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
 
 > [!NOTE]
-> This is only available on Android 7.0 and above.  By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two. 
+> This is only available on Android 7.0 and above.  By default, the end user has the option to use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two.
 
 #### New settings for Windows 10 devices <!-- 978585 -->
 
 We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
 
 #### Updates to certificate configuration <!-- 918991 and 823198 -->
- 
-When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) . 
- 
+
+When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) .
+
 When creating a PKCS certificate profile, for **Subject alternative name**, the **Custom Azure AD attribute** is available. The **Department** option is available when you select **Custom Azure AD attribute**. For more information, see [How to create a PKCS certificate profile] (certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile).
 
 ## April 2017
@@ -158,8 +159,7 @@ You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa 
 
 - **Connections to AirPlay devices** - Controls which [AirPlay devices](airplay-settings-ios.md) (like Apple TV) that end users of iOS device can connect to.
 
-- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Available device actions](device-management.md#available-device-actions)
-
+- **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](device-lost-mode.md)
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
 
@@ -208,7 +208,7 @@ We've added support for [multi-user management](windows-enroll.md) for devices t
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
-A new [Fresh Start device action](device-management.md#available-device-actions) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+A new [Fresh Start device action](device-fresh-start.md) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
 
 ### Additional Windows 10 upgrade paths <!-- 903672 -->
 
@@ -289,7 +289,7 @@ You can also use these reports to drill-down into an individual device to view s
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 ## February 2017
@@ -331,7 +331,7 @@ When users’ devices lose contact with Intune, you can give them new troublesho
 
 ## December 2016 (initial release)
 
-### Telecom expense management integration in public preview of Azure portal<!--747605-->
+### Telecom expense management integration in Azure portal<!--747605-->
 We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
 - Deploy and manage apps from a store to iOS, Android, and Windows devices

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot policies | Microsoft Docs
+title: Troubleshoot policies 
 description: Troubleshoot policy configuration issues.
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Company Portal messages users may see on Android | Microsoft Docs
+title: Company Portal messages users may see on Android 
 description: Describes Company Portal app messages that Intune end users might see.
 keywords:
 author: barlanmsft

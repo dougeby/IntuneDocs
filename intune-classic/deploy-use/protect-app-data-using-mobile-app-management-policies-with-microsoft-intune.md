@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Protect app data using MAM policies | Microsoft Docs
+title: Protect app data using MAM policies 
 description: This topic explains how mobile application management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

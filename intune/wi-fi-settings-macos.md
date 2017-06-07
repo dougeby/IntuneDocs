@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for macOS devicestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to configure Wi-Fi connections on macOS devices."
+title: Intune Wi-Fi settings for macOS devicestitleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to configure Wi-Fi connections on macOS devices."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Wi-Fi settings for macOS devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Wi-Fi settings for basic and enterprise profiles
 

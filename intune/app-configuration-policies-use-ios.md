@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to use Intune app configuration policies for iOS | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
+title: How to use Intune app configuration policies for iOS 
+titleSuffix: "Intune on Azure"
+description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to use Microsoft Intune app configuration policies for iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use app configuration policies in Microsoft Intune to supply settings that might be required when users run an iOS app. For example, an app might require users to specify:
 
@@ -57,7 +57,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 ## Create an app configuration policy
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile apps** workload, choose **Manage** > **App Configuration Policies**.
 

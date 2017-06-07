@@ -1,12 +1,12 @@
 ---
 title: Configure and manage SCEP certificates with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to configure your infrastructure, then create and assign Intune SCEP certificate profiles."
+titleSuffix: "Intune on Azure"
+description: Learn how to configure your infrastructure, then create and assign Intune SCEP certificate profiles."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 # Configure and manage SCEP certificates with Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic shows how to configure your infrastructure, then create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Intune.
 
@@ -310,7 +310,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 ##### To enable support for the certificate connector
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
 4. On the **Device Configuration** blade, choose **Certification Authority**.
 5.  Select **Enable Certificate Connector**.
@@ -321,7 +321,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 > Because of a known issue, download, install, and configure the certificate connector using the following procedure: [Configure certificate infrastructure for SCEP -> Configure your infrastructure -> Task 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
 4. On the **Device Configuration** blade, choose **Certification Authority**.
 5. Choose **Download Certificate Connector**.

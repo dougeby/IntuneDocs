@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android MAM policy settings | Microsoft Docs
+title: Android MAM policy settings 
 description: This topic describes the mobile app management policy settings for Android devices.
 keywords:
 author: andredm7

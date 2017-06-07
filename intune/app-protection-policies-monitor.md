@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor app protection policiestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: See how many users have the policy, and drill down to find more details."
+title: How to monitor app protection policiestitleSuffix: "Intune on Azure"
+description: See how many users have the policy, and drill down to find more details."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 ---
 
 # How to monitor app protection policies
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**If you are not in the Intune preview on Azure**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
+**If you are not in the Azure portal**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
 
 
 You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection blade on the [Azure portal](https://portal.azure.com). You'll be able to find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
@@ -45,7 +45,7 @@ There are three different places to monitor the compliance status:
 ## Summary view
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
 

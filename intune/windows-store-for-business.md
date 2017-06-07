@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Manage apps from Windows Store for Business | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how you can sync apps into Intune from the Windows Store for Business and then assign and track them."
+title: Manage apps from Windows Store for Business 
+titleSuffix: "Intune on Azure"
+description: Learn how you can sync apps into Intune from the Windows Store for Business and then assign and track them."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to manage apps you purchased from the Windows Store for Business with Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune portal. For example:
@@ -61,7 +61,7 @@ You can now continue, and set up synchronization in the Intune console.
 ## Configure synchronization
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
 1. On the **Mobile Apps** blade, choose **Setup** > **Windows Store for Business**.
 2. Click **Enable**.

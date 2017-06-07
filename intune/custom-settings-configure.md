@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune custom device settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure custom settings on devices you manage."
+title: How to configure Intune custom device settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure custom device settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## When to use custom settings
 
@@ -40,7 +40,7 @@ Use the information in this topic to learn the basics about configuring profiles
 ## Create a device profile containing custom settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.

@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Exchange connector for Exchange Online | Microsoft Docs
+title: Exchange connector for Exchange Online 
 description: Connect Intune to Office 365 Exchange service to support Exchange ActiveSync mobile device management (MDM).
 keywords:
-author: andredm7ms.author: andredm
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -38,8 +39,8 @@ The **Service to Service Connector** supports only Exchange Online or Exchange O
 |---------------|--------------------|
 |Exchange Online configured and running|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Mobile device management authority| [Set the mobile device management authority to Microsoft Intune](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange version|Exchange Online or the new Exchange Online Dedicated service|
-|Active Directory synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
+|Microsoft Exchange version|Exchange Online or the new Exchange Online Dedicated service|/intune/users-permissions-add
+|Active Directory synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](/intune/users-permissions-add) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 
 ### Exchange cmdlet requirements
 

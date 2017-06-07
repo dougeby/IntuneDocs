@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Wipe managed company app data | Microsoft Docs
+title: Wipe managed company app data 
 description: Learn how you can selectively remove company data from devices remotely.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 01/25/2017
 ms.topic: article
 ms.prod:

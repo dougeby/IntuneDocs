@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Categorize devices with device group mapping | Microsoft Docs
+title: Categorize devices with device group mapping 
 description: Use Microsoft Intune device group mapping to group devices into categories that you define, in order to make it easier for you to manage those devices. 
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ Device group mapping uses the following workflow:
 1. Create categories that users will choose from when they enroll their device
 2. You create groups, or use existing groups for each category you want to use. Depending on the version of Intune you are using, these will either be Intune groups, or Azure Active Directory security groups.
 2. You configure rules that map the category you choose to the device group you created.
-3. When end users enroll their device, they must choose a category from the list of categories you configured. After they choose, their device is automatically added to the corresponding group you created. If a device is already enrolled, the end user will be asked to select a category the next time they access the Company Portal app.
+3. When end users of iOS and Android devices enroll their device, they must choose a category from the list of categories you configured. To assign a category to a Windows device, end users must use the Company Portal website (see **After you configure device groups** in this topic for more details).
 4. You can then deploy policies and apps to these groups.
 
 You can create any device categories you want, for example:
@@ -89,7 +89,13 @@ For example (**device.deviceCategory -eq** "<*the device category name you got f
 
 ## After you configure device groups
 
-When users enroll their device, they are presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Intune device group, or Active Directory security group that corresponds with the category they chose.
+When end users of iOS and Android devices enroll their device, they must choose a category from the list of categories you configured. After they choose a category and finish enrollment, their device is added to the Intune device group, or Active Directory security group that corresponds with the category they chose.
+
+To assign a category to a Windows device, end users must use the Company Portal website (portal.manage.microsoft.com) after enrolling the device. On a Windows device, access the website and go to **Menu** > **My Devices**. Choose an enrolled device listed on the page, then select a category. 
+
+After choosing a category, the device is automatically added to the corresponding group you created. If a device is already enrolled before you configure categories, the end user will see a notification about the device on the Company Portal website, and will be asked to select a category the next time they access the Company Portal app on iOS or Android.
+
+
 
 ### See also
 [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

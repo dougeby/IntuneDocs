@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune VPN settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure VPN connections on devices you manage."
+title: How to configure Intune VPN settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure VPN connections on devices you manage."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure VPN settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
@@ -63,7 +63,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create custom
 ## Create a device profile containing VPN settings
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
