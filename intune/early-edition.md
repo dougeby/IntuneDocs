@@ -170,4 +170,4 @@ You will be able to change your MDM authority without having to contact Microsof
 
 
 ### See also
-See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
+See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
