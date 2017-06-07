@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,12 +47,7 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 | 3 | [Configure a custom domain name](custom-domain-name-configure.md) - Use your company's domain name to manage Intune by updating your DNS registration   |
 | 4 | [Synchronize AD and add users](users-permissions-add.md) - Connect Active Directory to synchronize users or add users to Intune  |
 | 5 | [Manage Intune licenses](licenses-assign.md) - Give users permission to use Intune|
-| 6 | [Organize users and devices](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5) - Use groups to organize deployments of policy, apps, and resources |
-| 7 | [Create policies and publish an app](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6) - Enable settings and apps that can be deployed to users |
+| 6 | [Organize users and devices](groups-get-started.md) - Use groups to organize deployments of policy, apps, and resources |
+| 7 | [Create policies and publish an app](apps-add.md) - Enable settings and apps that can be deployed to users |
 | 8 | [Customize the Company Portal](company-portal-customize.md) - Customize the Company Portal app that users see when working with Intune  |
-| 9 | [Enroll mobile devices & install an app](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8) - Enable Intune management of iOS, Windows, Android, and Mac devices |
-|10 | [Next steps](/intune-classic/get-started/post-configuration-tasks) - Additional configurations and steps to get the most out of your Intune subscription|
-
-
->[!div class="step-by-step"]
-[**prerequisites** &rarr;](supported-devices-browsers.md)
+| 9 | [Enable mobile device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |

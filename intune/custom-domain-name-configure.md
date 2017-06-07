@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angerobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -62,7 +62,3 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 You can learn more [about your initial onmicrosoft.com domain in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
-
->[!div class="step-by-step"]
-
->[&larr; **Sign in to Intune**](account-sign-up.md)     [**Add users to Intune** &rarr;](.\users-permissions-add.md)  
