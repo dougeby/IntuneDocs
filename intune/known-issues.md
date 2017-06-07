@@ -38,7 +38,7 @@ If you want to report a bug that is not listed here, [open a support request](ht
 
 If you want to request a new feature for Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
-### Groups created by Intune during migration might affect functionality of other Microsoft products
+## Groups created by Intune during migration might affect functionality of other Microsoft products
 
 When you migrate from classic Intune to the Azure, you might see a new group named **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. This group contains all users in your Azure Active Directory, not only Intune licensed users. This can cause issues with other Microsoft products if you expect some existing or new users to not be a member of any groups.
 
