@@ -1029,6 +1029,11 @@
 		"redirect_document_id": false
 	},
 	{
+		"source_path": "intune-azure/index.md",
+		"redirect_url": "/intune/index",
+		"redirect_document_id": false
+	},
+	{
 		"source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
 		"redirect_url": "/intune/introduction/contact-assisted-phone-support-for-microsoft-intune",
 		"redirect_document_id": false
