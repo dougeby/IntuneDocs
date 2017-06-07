@@ -3296,7 +3296,7 @@
 	{
 		"source_path": "intune/understand-explore/common-ways-to-use-intune.md",
 		"redirect_url": "/intune-classic/understand-explore/common-ways-to-use-intune",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md",
