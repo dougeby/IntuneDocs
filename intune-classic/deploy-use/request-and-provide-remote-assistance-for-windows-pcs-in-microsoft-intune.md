@@ -28,6 +28,9 @@ ms.custom: intune-classic
 
 # Request and provide remote assistance for Windows PCs
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+
 The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.
 
 Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running the Intune software client. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance. This functionality replaces the existing Windows Remote Assistance functionality in Intune.

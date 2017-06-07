@@ -27,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Manage license agreements for Windows PC software in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements. You can also do this for Microsoft or non-Microsoft software that was purchased by other means. You can organize this information into logical groups.
 
 > [!IMPORTANT]

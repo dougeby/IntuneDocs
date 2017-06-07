@@ -28,6 +28,8 @@ ms.custom: intune-classic
 
 # Use policies to simplify Windows PC management
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 To manage Windows desktops as PCs, by running the Intune software client on them, you can use only the policies that are under **Computer Management** policies in the Intune admin console. All of the other policies listed in the admin console are for mobile devices only. Using the **Computer Management** policies, you can configure the settings in the Microsoft Intune Center, control updates to PCs, and configure Windows Firewall for PCs.
 
 ![Policies template for Windows PCs](../media/pc_policy_template.png)

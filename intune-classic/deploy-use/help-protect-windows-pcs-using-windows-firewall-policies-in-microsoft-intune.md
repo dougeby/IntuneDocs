@@ -27,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Help protect Windows PCs using Windows Firewall policies in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you to secure Windows PCs that you manage with the Intune client in a number of ways. One way in which it does this is to provide policies that enable you to configure Windows Firewall settings on PCs.
 
 If you have not yet installed the Intune Windows PC client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).

@@ -27,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Install the Intune software client on Windows PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Windows PCs can be enrolled by installing the Intune client software. The Intune client software can be installed by using the following methods:
 
 - By the IT admin, using one of these methods: manual installation, Group Policy, or installation included in a disk image
