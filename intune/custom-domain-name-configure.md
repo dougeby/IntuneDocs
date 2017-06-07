@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angerobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -56,13 +56,6 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 	- **GoDaddy users**: Office 365 Management portal redirects you to GoDaddy's login page. After you enter your credentials and accept the domain change permission agreement, the TXT record is created automatically. You can alternatively [create the TXT record](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
 	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) to create the TXT record.
 
-	> [!TIP]
-	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](/intune-classic/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
-
 The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 You can learn more [about your initial onmicrosoft.com domain in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
-
->[!div class="step-by-step"]
-
->[&larr; **Sign in to Intune**](account-sign-up.md)     [**Add users to Intune** &rarr;](.\users-permissions-add.md)  

@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 07/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,6 @@ After you've added users to your Intune subscription, we recommend that you gran
 
 ### Tenant administrator
 
-
 Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage. Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles. Intune uses the following roles:
 - **Global administrator** - Accesses all administrative features in Intune. By default the person who signs up for Intune becomes a Global admin. Global admins are the only admins who can assign other admin roles. You can have more than one global admin in your organization. As a best practice we recommend that only a few people in your company have this role to reduce the risk to your business.
 - **Billing administrator** - Makes purchases, manages subscriptions, manages support tickets, and monitors service health.
@@ -87,12 +86,12 @@ To access the Office 365 portal, your account must have a sign-in status of **Al
 
 ### Service administrator
 
-By default, Intune does not assign a service administrator. Instead, you must use a tenant administrator with the global administrator role to assign the first service administrator for your subscription. As a service administrator, you use the [Intune administrator console](https://manage.microsoft.com/) to manage day-to-day tasks for Intune. You assign service administrators from the administrator console. A service administrator requires a license to Intune to access the administration console.
+By default, Intune does not assign a service administrator. Instead, you must use a tenant administrator with the global administrator role to assign the first service administrator for your subscription. As a service administrator, you use the Intune portal to manage day-to-day tasks for Intune. You assign service administrators from the administrator console. A service administrator requires a license to Intune to access the administration console.
 
 Service administrators are assigned one of the following permissions:
 - **Full access**: Unrestricted access to all areas of the Intune administrator console, add and manage other service administrators
 - **Read-only access**: Read permission to all areas of the Intune administrator console, cannot modify data, but can run reports
-- **Helpdesk - Groups Node**: Lets the service administrator perform only tasks associated with helpdesk scenarios, see [Customize Intune console views according to admin roles](/intune-classic/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console)
+- **Helpdesk - Groups Node**: Lets the service administrator perform only tasks associated with helpdesk scenarios, see [Help desk operators](help-desk-operators.md) ([Classic console](/intune-classic/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console))
 
 As a service administrator, use this portal to manage day-to-day operations including:
 
@@ -103,8 +102,4 @@ As a service administrator, use this portal to manage day-to-day operations incl
 
 ### Device enrollment managers
 
-Device enrollment managers are standard user accounts with additional permission to enroll more many userless devices. By default, each Intune user can enroll up to fifteen devices. As an administrator, you can give a user account the device enrollment manager permission. That account can enroll large numbers of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required. For more information, see [Device enrollment manager](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
-
->[!div class="step-by-step"]
-
->[&larr; **Domain settings**](custom-domain-name-configure.md)     [**Manage Intune licenses** &rarr;](.\licenses-assign.md)  
+Device enrollment managers are standard user accounts with additional permission to enroll more many userless devices. By default, each Intune user can enroll up to fifteen devices. As an administrator, you can give a user account the device enrollment manager permission. That account can enroll large numbers of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required. For more information, see [Device enrollment manager](device-enrollment-manager-enroll.md) ([Classic console](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)).
