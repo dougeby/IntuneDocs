@@ -115,6 +115,7 @@
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
 ### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
+### [Android app configuration profiles](app-configuration-policies-use-android.md)
 ### [Use iOS app provisioning profiles](app-provisioning-profile-ios.md)
 ### [Selectively wipe apps](apps-selective-wipe.md)
 ### [Work with volume-purchased apps](vpp-apps.md)
@@ -257,4 +258,5 @@
 ### [Intune App SDK for Android](app-sdk-android.md)
 ### [Intune App SDK Cordova plugin](app-sdk-cordova.md)
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
+## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
