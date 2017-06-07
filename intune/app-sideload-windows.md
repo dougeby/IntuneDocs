@@ -6,7 +6,7 @@ description: Learn how to sign line of business apps so you can use Intune to de
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 06/07/2017
 ms.topic: article
 ms.prod:
 ms.service:
@@ -61,7 +61,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
 6.  **Upload the app to Intune**<br>
     Upload the signed app file and your code-signing certificate to make the app available to your end users.
 
-    1.  In the [Intune administration console](https://manage.microsoft.com) click **Administration** &gt; **Windows Phone**.
+    1.  In the Intune portal, click **Administration** &gt; **Windows Phone**.
 
     2.  Click the **Upload Signed App File** and sign in with your Intune Administrator ID.
 
@@ -128,7 +128,7 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
     -   `-EnterpriseId` - The enterprise ID. Either this argument or 'AetxPath' must be provided. If this argument is not provided, the enterprise ID is read from the AETX file. For example, 1000000001
 
-6.  Deploy the Windows Phone 8.1 Company Portal (SSP.appx) app. For guidance, see [Deploy apps in Microsoft Intune](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune).
+6.  Deploy the Windows Phone 8.1 Company Portal (SSP.appx) app. For guidance, see [How to add Windows Phone line-of-business (LOB) apps](lob-apps-windows-phone.md) ([Classic console](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
 
 ## How to renew the Symantec enterprise code-signing certificate
 
@@ -146,7 +146,7 @@ The Symantec certificate used to deploy Windows and Windows Phone mobile apps mu
 
 1.  Sign the latest version of your line-of-business app.
 
-2.  Open your [Intune Administration Console](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) and go to **Admin** &gt; **Mobile Device Management** &gt; **Windows Phone** and click **Upload Signed App**.
+2.  Open the Intune console and go to **Admin** &gt; **Mobile Device Management** &gt; **Windows Phone** and click **Upload Signed App**.
 
 3.  Upload the newly signed Company Portal. You’ll need the newly signed SSP.xap and the new .PFX file you received from Symantec or the Application enrollment token that was created with this new .PFX file.
 
