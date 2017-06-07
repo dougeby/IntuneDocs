@@ -105,6 +105,6 @@ This completes the Intune mobile device management guide, but you can learn more
 ## Next steps
 Learn more about other [Intune capabilities](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 
-Read about the [common ways to use Intune](common-ways-to-use-intune.md)
+Read about the [common ways to use Intune](/intune/common-scenarios)
 
 Convert to a [paid subscription](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)

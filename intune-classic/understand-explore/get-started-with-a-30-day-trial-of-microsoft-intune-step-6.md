@@ -57,6 +57,6 @@ To learn more about capabilities that were recently introduced to Intune, see [W
 Support options are described in [How to get support for Microsoft Intune](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune), and you can join discussions about Intune in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
 ## Next steps
-Read about the [common ways to use Intune](common-ways-to-use-intune.md)
+Read about the [common ways to use Intune](/intune/common-scenarios)
 
 Convert to a [paid subscription](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)

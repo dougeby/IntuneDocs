@@ -49,8 +49,8 @@ Looking for Intune with Configuration Manager?
 ## Step 1: Enable connections
 
 Before you enable mobile device enrollment, be sure you've done the following:
-- [Review required network URLs and ports](../get-started/network-bandwidth-use.md)
-- [Add and verify your domain name](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [Review required network URLs and ports](/intune/network-bandwidth-use)
+- [Add and verify your domain name](/intune/custom-domain-name-configure)
 
 ## Step 2: Set MDM authority
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
@@ -118,7 +118,7 @@ After you save your changes, you can use the links that are provided at the bott
 
 ## Step 5: Assign user licenses
 
-You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) by using your tenant administrator credentials.
 

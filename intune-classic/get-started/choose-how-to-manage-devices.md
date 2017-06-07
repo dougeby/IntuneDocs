@@ -4,7 +4,8 @@
 title: Choose how to manage devices | Microsoft Docs
 description: Learn about the various ways you can enroll and manage devices.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: get-started-article
@@ -50,8 +51,8 @@ Enroll Windows PCs to get the most functionality. However, the Intune software c
 - Endpoint Protection and Windows Firewall
 - Remote assistance to users using the TeamViewer software
 
-For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune).
-For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+For a detailed listing of the management capabilities you'll get with each method, see [Mobile device managem/intune/supported-devices-browserssoft-intune).
+For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](/intune/supported-devices-browsers#intune-supported-devices).
 
 ## Next steps
 

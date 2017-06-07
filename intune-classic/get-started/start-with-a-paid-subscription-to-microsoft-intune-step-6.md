@@ -76,4 +76,4 @@ Now that the app is availabile in Intune, you can deploy it to managed devices:
 
 >[!div class="step-by-step"]
 
->[&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](/intune/company-portal-customize)  
