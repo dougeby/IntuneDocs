@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll macOS devices in Intune Azure preview
+# Enroll macOS devices in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

@@ -45,7 +45,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Intune in the Azure portal preview</h3>
+                                            <h3>Intune in the Azure portal</h3>
                                             <p>As Microsoft Intune moves to the Azure portal, learn about the changes available in the new portal. </p>
                                         </div>
                                     </div>
@@ -793,7 +793,7 @@ description: Learn to use Microsoft Intune.
                                         </div>
                                         <div class="cardText">
                                             <h3>Known issues</h3>
-                                            <p>Read about any known issues in the Intune preview.</p>
+                                            <p>Read about any known issues in the Intune.</p>
                                         </div>
                                     </div>
                                 </div>

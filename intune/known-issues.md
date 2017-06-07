@@ -26,13 +26,13 @@ ms.custom: intune-azure
 
 ---
 
-# Known issues in the Microsoft Intune preview
+# Known issues in the Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Use this topic to learn about any known issues in the Microsoft Intune preview.
+Use this topic to learn about any known issues in the Microsoft Intune.
 
 If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 

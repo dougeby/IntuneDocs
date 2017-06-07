@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# How to create a device compliance policy for Android for Work devices in Intune Azure preview
+# How to create a device compliance policy for Android for Work devices in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

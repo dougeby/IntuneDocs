@@ -57,7 +57,7 @@
 
 # [What's new](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new in app UI](/intune/whats-new-app-ui?toc=/intune-classic/toc.json)
-## [What's new in the Azure preview](/intune/whats-new?toc=/intune-classic/toc.json&bc=/enterprise-mobility/toc.json?toc=/intune-classic/toc.json)
+## [What's new in the Azure portal](/intune/whats-new?toc=/intune-classic/toc.json&bc=/enterprise-mobility/toc.json?toc=/intune-classic/toc.json)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use

@@ -31,7 +31,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-This topic provides information on checking for issues after you set up an app protection policy. This guidance applies to app protection policies in the Azure portal **preview**.
+This topic provides information on checking for issues after you set up an app protection policy. This guidance applies to app protection policies in the Azure portal.
 
 ### Checking for symptoms
 Users are unlikely to report issues since app protection is a data protection tool. If there is a problem with the app protection configuration the user will have unrestricted access, as they would have without app protection, and would not be aware that there is an issue. For this reason we recommend that you validate your app protection configuration by piloting your app protection policies with a small group of users who can deliberately test the app protection restrictions.

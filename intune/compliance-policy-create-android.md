@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Device compliance policies are created for each platform form the Intune Azure preview portal. 
+Device compliance policies are created for each platform form the Intune Azure portal. 
 
 - To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic.
 - To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.

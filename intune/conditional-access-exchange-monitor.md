@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Monitor conditional access compliance for on-premises Exchange and Exchange Online in Intune Azure preview
+# Monitor conditional access compliance for on-premises Exchange and Exchange Online in Intune
 
 Beginning with Intune 1704 release, admins can see reporting information related to Exchange ActiveSync device records that are synchronized with Intune through either the on-premises Exchange Connector or the Intune service-to-service connector (Exchange Online connector). The conditional access compliance reporting provides a summary of devices with different synchronization states:
 

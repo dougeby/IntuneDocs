@@ -130,7 +130,7 @@ On Android, for apps that are associated with an Intune MAM policy, data is encr
 You can always edit these policy settings to meet your organization's requirements.
 
 ### How can I view and edit the policies created by the wizard?
-To see or update these policies, or any policies you create in the Intune Azure preview, from the dashboard, choose **Manage apps** > **App Protection Policies**. The list of policies will open to the right. Choose the policy you want to view to see and edit the settings. <br/>
+To see or update these policies, or any policies you create in the Intune Azure portal, from the dashboard, choose **Manage apps** > **App Protection Policies**. The list of policies will open to the right. Choose the policy you want to view to see and edit the settings. <br/>
 ![Image of user interface path to view policies](./media/image-for-faq.png)
 
 ## Next steps

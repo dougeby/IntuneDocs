@@ -2,7 +2,7 @@
 # required metadata
 title: What's new in the Microsoft Intune
 titleSuffix: "Intune on Azure"
-description: Find out what's new in the Intune Azure preview
+description: Find out what's new in the Intune Azure portal
 keywords:
 author: mtillman
 ms.author: mtillman
@@ -28,8 +28,6 @@ ms.custom: intune-azure
 # What's new in the Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-As the public preview progresses, and more features are added, we'll let you know about them here.
 
 ## June 2017
 
@@ -291,7 +289,7 @@ You can also use these reports to drill-down into an individual device to view s
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 ## February 2017

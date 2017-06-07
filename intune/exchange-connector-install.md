@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Install the Intune On-premises Exchange Connector in Microsoft Intune Azure preview
+# Install the Intune On-premises Exchange Connector in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
