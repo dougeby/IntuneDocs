@@ -282,4 +282,4 @@ In the Azure portal, you will not be able to set a default profile policy across
 We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
 
 ### See also
-See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
+See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
