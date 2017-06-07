@@ -28,6 +28,8 @@ ms.custom: intune-classic
 
 # Add apps for Windows PCs that run the Intune software client
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
 
 > [!IMPORTANT]
