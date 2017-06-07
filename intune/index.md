@@ -46,7 +46,7 @@ description: Learn to use Microsoft Intune.
                                         </div>
                                         <div class="cardText">
                                             <h3>Intune in the Azure portal</h3>
-                                            <p>As Microsoft Intune moves to the Azure portal, learn about the changes available in the new portal. </p>
+                                            <p>Microsoft Intune is available in the Azure portal. Learn about managing devices and apps in the new portal. </p>
                                         </div>
                                     </div>
                                 </div>
