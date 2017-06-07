@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Enroll devices - device enrollment managertitleSuffix: "Intune on Azure"
+title: Enroll devices - device enrollment manager
+titleSuffix: "Intune on Azure"
 description: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: nathbarn

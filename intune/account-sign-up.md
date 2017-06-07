@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angerobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -49,12 +49,7 @@ If you already have a work or school account, you will be able to simply **sign 
 ## Post sign up considerations
 If you sign up for a new subscription, you'll receive an email message that contains your account information at the email address that you provided during the sign up process. This email confirms your subscription is active.
 
-After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this quick start guide. You can also learn more [About your initial onmicrosoft.com domain in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
+After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this quick start guide. You can also learn more [About your initial onmicrosoft.com domain in Office 365](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a?ui=en-US&rs=en-US&ad=US&fromAR=1#bkmk_whydoihaveanonmicrosoft.comdomain)
 
 >[!TIP]
 > The next time you sign in to Intune you'll automatically be directed to the Intune administration console.
-
-
->[!div class="step-by-step"]
-
->[&larr; **Prerequisites**](.\supported-devices-browsers.md)     [**Domain settings** &rarr;](custom-domain-name-configure.md)  

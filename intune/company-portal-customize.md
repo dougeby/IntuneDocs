@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angerobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -58,8 +58,6 @@ Some of the tasks that users can do in the Company Portal are:
 ## Customize Company Portal settings
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. Log in to the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
 
-![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
-
 ## Company contact information and privacy statement
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
 
@@ -91,7 +89,3 @@ You can customize your Company Portal with your company logo, company name, them
 
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the Company Portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the Company Portal.
-
->[!div class="step-by-step"]
-
->[&larr; **Create policies and apps**](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6)       [**Enroll devices** &rarr;](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8)  
