@@ -5,7 +5,8 @@
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
-### [What's new archive](whats-new-archive.md)
+### [What's new archive (Azure portal)](whats-new-archive.md)
+### [What's new archive (classic portal)](whats-new-archive-classic.md)
 
 <!--## High-level architecture-->
 

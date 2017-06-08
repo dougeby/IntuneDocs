@@ -450,7 +450,7 @@
 	},
 	{
 		"source_path": "intune/deploy-use/whats-new-in-microsoft-intune.md",
-		"redirect_url": "https://docs.microsoft.com/intune-classic/whats-new/whats-new-in-microsoft-intune",
+		"redirect_url": "/intune-classic/whats-new/whats-new-in-microsoft-intune",
 		"redirect_document_id": true
 	},
 	{
@@ -3611,6 +3611,11 @@
 	{
 		"source_path": "intune-classic/develop/intune-app-sdk-xamarin.md",
 		"redirect_url": "/intune/app-sdk-xamarin",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/whats-new/whats-new-in-microsoft-intune.md",
+		"redirect_url": "/intune/whats-new",
 		"redirect_document_id": true
 	},
 	{

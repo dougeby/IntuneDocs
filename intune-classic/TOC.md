@@ -55,10 +55,10 @@
 #### [Drive adoption](/intune/migration-guide-drive-adoption?toc=/intune-classic/toc.json)
 #### [Typical migration cycle](/intune/migration-guide-cycle?toc=/intune-classic/toc.json)
 
-# [What's new](whats-new/whats-new-in-microsoft-intune.md)
+# [What's new](/intune/whats-new.md?toc=/intune-classic/toc.json)
 ## [What's new in app UI](/intune/whats-new-app-ui?toc=/intune-classic/toc.json)
-## [What's new in the Azure portal](/intune/whats-new?toc=/intune-classic/toc.json&bc=/enterprise-mobility/toc.json?toc=/intune-classic/toc.json)
-## [What's new archive](whats-new/whats-new-archive.md)
+## [What's new archive (classic portal)](/intune/whats-new-archive-classic?toc=/intune-classic/toc.json)
+## [What's new archive (Azure portal)](/intune/whats-new-archive?toc=/intune-classic/toc.json)
 
 # Deploy and Use
 ## [Overview of device and app lifecycles](/intune/introduction-device-app-lifecycles?toc=/intune-classic/toc.json)
