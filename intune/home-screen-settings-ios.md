@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune Home screen layout settings for iOS devices
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the settings you can use customize the home screen and dock on iOS devices."
+titleSuffix: "Intune on Azure"
+description: Learn the settings you can use customize the home screen and dock on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune Home screen layout settings for iOS devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use these settings to configure the layout of apps, folders, and web clips on the dock and Home screen of all iOS devices to which you assign the policy.
 

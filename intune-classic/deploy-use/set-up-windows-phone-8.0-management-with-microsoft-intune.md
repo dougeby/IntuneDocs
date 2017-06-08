@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows 8.0 Company Portal app deprecated | Microsoft Docs
+title: Windows 8.0 Company Portal app deprecated 
 description: Enable mobile device management (MDM) for Windows Phone 8.0 devices with Microsoft Intune.
 keywords:
 author: NathBarn

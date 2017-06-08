@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Evaluate mobile device management in Microsoft Intune | Microsoft Docs
+title: Evaluate mobile device management in Microsoft Intune 
 description: Evaluate MDM in your Intune free trial.
 keywords:
 author: lindavr
@@ -48,7 +48,7 @@ You can do everything in the trial version that you can do in a subscription ver
 ## What's not covered
 |If you're interested in |Read this |
 |------------------------|----------|
-|MDM in a non-test environment | [Getting started](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM in a non-test environment | [Getting started](/intune/setup-steps) |
 |MDM with Intune and System Center Configuration Manager | [Hybrid mobile device management](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Because the above guides help you set up Intune in production environments, they are longer, with many more decision points you need to work through than in the evaluation guide.

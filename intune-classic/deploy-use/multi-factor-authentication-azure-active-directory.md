@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multi-factor authentication for Intune device enrollment| Microsoft Docs
+title: Multi-factor authentication for Intune device enrollment
 description: How to require multi-factor authentication in Azure AD for device enrollment.
 keywords:
 author: robstackmsft

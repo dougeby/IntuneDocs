@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune device restriction settings for Android
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android devices."
+titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Android and Samsung KNOX Standard device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
 

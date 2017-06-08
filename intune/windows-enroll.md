@@ -2,8 +2,8 @@
 # required metadata
 
 title: Enroll Windows devices
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
+titleSuffix: "Intune on Azure"
+description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
 manager: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll Windows devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
 
@@ -76,4 +76,4 @@ In the Azure Intune portal, choose **More Services** > **Monitoring + Management
 ## Tell users how to enroll Windows devices
 Tell your users how to enroll their Windows devices and what to expect after they're brought into management. For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
+For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).

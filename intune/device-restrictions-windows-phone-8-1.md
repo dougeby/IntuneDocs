@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows Phone 8.1titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Windows Phone 8.1 devices."
+title: Intune device restriction settings for Windows Phone 8.1titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on Windows Phone 8.1 devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows Phone 8.1 device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
 - 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.

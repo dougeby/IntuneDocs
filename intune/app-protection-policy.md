@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What are app protection policiestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
+title: What are app protection policiestitleSuffix: "Intune on Azure"
+description: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
 author: NathBarn
 ms.author: nathbarn
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # What are app protection policies?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 

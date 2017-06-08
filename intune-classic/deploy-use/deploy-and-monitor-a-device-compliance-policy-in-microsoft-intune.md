@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy and monitor a compliance policy | Microsoft Docs
+title: Deploy and monitor a compliance policy 
 description: Use the step-by-step instructions in this topic to deploy and monitor a device compliance policy.
 keywords:
 author: andredm7

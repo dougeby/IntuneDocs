@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android apps with app protection policies | Microsoft Docs
+title: Android apps with app protection policies 
 description: This topic describes what to expect when your app is managed by app protection policies.
 keywords:
 author: NathBarn

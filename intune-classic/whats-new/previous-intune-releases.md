@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Previous releases | Microsoft Docs
+title: Previous releases 
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect Dynamics CRM Online | Microsoft Docs
+title: Protect Dynamics CRM Online 
 description: Protect and control access to Dynamics CRM online with  conditional access.
 keywords:
 author: andredm7

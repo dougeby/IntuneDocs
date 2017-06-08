@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Enable device enrollment | Microsoft Docs
+title: Enable device enrollment 
 description: Set MDM authority and enable enrollment for iOS, Windows, Android, and Mac devices.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -40,7 +41,7 @@ To set up mobile device management with Intune, you must first set the *mobile d
 
 2. Choose **Yes** in the MDM Authority dialog box.
 
-	![Admin console. Set mdm to Intune](./media/mdmAuthority.png)
+	![Admin console. Set mdm to Intune](../media/intune-mdm-authority.png)
 
 ## Choose how to enroll devices
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll corporate-owned iOS devices | Microsoft Docs
+title: Enroll corporate-owned iOS devices 
 description: Enrollment of corporate-owned iOS devices by using the Apple Device Enrollment Program (DEP) or Apple Configurator
 keywords:
 author: nathbarn

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Device compliancetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Use this topic to learn about device compliance in Microsoft Intune"
+title: Device compliancetitleSuffix: "Intune on Azure"
+description: Use this topic to learn about device compliance in Microsoft Intune"
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 12/07/2016
@@ -24,9 +24,9 @@ ms.custom: intune-azure
 
 ---
 
-# What is device compliance in Intune Azure preview?
+# What is device compliance in Intune?
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Device compliance policies in Intune define the rules and settings that a device must comply with in order to be considered compliant by Intune and EMS conditional access polices. You can also use device compliance policies to monitor and remediate compliance issues with devices. 
 
@@ -80,7 +80,7 @@ can get a report on how many devices are not encrypted, or which devices are jai
 
 You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.
 
-##  Intune classic admin console vs. Intune Azure preview portal
+##  Intune classic admin console vs. Intune on the Azure portal
 
 If you have been using the Intune classic admin console, note the following differences to help transition to the new device compliance policy work-flow in the Azure portal:
 
@@ -90,7 +90,7 @@ If you have been using the Intune classic admin console, note the following diff
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  Migration from Intune classic console to Intune Azure preview portal
+##  Migration from Intune classic console to Intune on the Azure portal
 
 Device compliance policies created in the [Intune classic console](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com). However, they’ll still be targeted to users and manageable via the Intune classic console.
 

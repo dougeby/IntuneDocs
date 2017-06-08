@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restrictions settings for iOStitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
+title: Intune device restrictions settings for iOStitleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # iOS device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
 - 	**Camera** - Select whether the camera on the device can be used. 	

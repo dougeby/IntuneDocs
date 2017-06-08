@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Use remote wipe to help protect data | Microsoft Docs
+title: Use remote wipe to help protect data 
 description: Intune provides selective wipe and full wipe capabilities to remove sensitive corporate data and remove access to many corporate resources.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

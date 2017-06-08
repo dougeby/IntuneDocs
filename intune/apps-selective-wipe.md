@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to wipe only corporate data from appstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to selectively wipe apps with Microsoft Intune."
+title: How to wipe only corporate data from appstitleSuffix: "Intune on Azure"
+description: Learn how to selectively wipe apps with Microsoft Intune."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to wipe only corporate data from Intune-managed apps
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 When a device is lost or stolen, or if the employee leaves your company, you want to make sure company app data is removed from the device. But you might not want to remove personal data on the device, especially if this is an employee-owned device.
 
@@ -40,7 +40,7 @@ To selectively remove company app data, create a wipe request by using the steps
 
 1.  Sign in to the [Azure portal](https://portal.azure.com).
 
-2.  Choose **More Services**, type **Intune** in the filter textbox, and select **Intune**. The Intune preview blade opens, choose the **Manage apps** blade.
+2.  Choose **More Services**, type **Intune** in the filter textbox, and select **Intune**. The Intune blade opens, choose the **Manage apps** blade.
 
 	![Screenshot of the New wipe request blade](./media/intune-azure-preview-blade.png)
 

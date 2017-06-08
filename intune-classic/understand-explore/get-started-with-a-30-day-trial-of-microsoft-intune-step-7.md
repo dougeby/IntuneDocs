@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Convert to a paid subscription | Microsoft Docs
+title: Convert to a paid subscription 
 description: What you need to know about subscriptions and licensing after you set up your free, 30-day evaluation of Intune.
 keywords:
-author: lindavrms.author: lindavr
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: get-started-article
@@ -32,8 +33,8 @@ ms.custom: intune-classic
 If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 You can convert your free Intune evaluation to a paid subscription in the following ways:
-
--   **Intune Subscription** - Licensed on a per-user basis. For more information, see [How to buy Microsoft Intune](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune) and review the additional configuration steps when you're getting started with Intune.
+/intune/setup-steps)
+-   **Intune Subscription** - Licensed on a per-user basis. For more information, see [How to buy Microsoft Intune](/intune/setup-steps) and review the additional configuration steps when you're getting started with Intune.
 
 -   **Enterprise Mobility + Security** - Provides Intune, Azure Active Directory Premium, Azure RMS services. Contact your Microsoft account manager or local reseller for more details, or [read about EMS capabilities](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx) and [pricing](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 

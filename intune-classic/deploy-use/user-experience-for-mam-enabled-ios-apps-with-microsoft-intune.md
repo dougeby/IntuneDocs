@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS apps with app protection policies | Microsoft Docs
+title: iOS apps with app protection policies 
 description: This topic describes what to expect when your iOS app is managed by app protection policies.
 keywords:
 author: andredm7

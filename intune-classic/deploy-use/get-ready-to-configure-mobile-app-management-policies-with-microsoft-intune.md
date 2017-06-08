@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prerequisites for MAM policies | Microsoft Docs
+title: Prerequisites for MAM policies 
 description: This topic describes the prerequisites for setting up users before you create mobile app management policies.
 keywords:
 author: andredm7
@@ -73,7 +73,7 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 
 * **Your organization's line-of-business apps:** You must prepare these apps to include the Intune App SDK before you can apply app protection policies.
 
-  * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](/intune/apps-prepare-mobile-application-management).
 
   * For devices that are not managed (such as employee-owned devices), or for devices that are managed by another mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to use device categories in IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices in Intune."
+title: How to use device categories in IntunetitleSuffix: "Intune on Azure"
+description: Learn how to use device categories that users can choose when they enroll their devices in Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Map device groups
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use Microsoft Intune device categories to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use the SDK to enable apps for MAM | Microsoft Docs
+title: Use the SDK to enable apps for MAM 
 description: This topic gives you a quick overview of why you should use the Intune App SDK.
 keywords:
 author: mtillman
@@ -42,7 +42,7 @@ Use the Microsoft Intune App SDK to let Intune manage certain features of your i
 
 You need access to the app's source code to use the SDK, but you can enable most of the SDK features without having to change the app's behavior.
 
-For an overview of the SDK, see the [Overview](/intune-classic/develop/intune-app-sdk-get-started).
+For an overview of the SDK, see the [Overview](/intune/app-sdk-get-started).
 
 ### See also
-[Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+[Decide how to prepare apps for mobile application management with Microsoft Intune](/intune/apps-prepare-mobile-application-management)

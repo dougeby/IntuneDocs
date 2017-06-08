@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Introduction to Intune in the Azure portal preview
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Get the basics about Intune in the Azure portal preview, and how it can help you manage your devices."
+title: Introduction to Intune on the Azure portal
+titleSuffix: "Intune on Azure"
+description: Get the basics about Intune on the Azure portal, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,25 +28,23 @@ ms.custom: intune-azure
 ---
 
 
-# Introduction to Microsoft Intune in the Azure portal preview
+# Introduction to Microsoft Intune in the Azure portal
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
-The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
-All Intune functionality will eventually move to Azure, but you can perform many Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new](#whats-new) section for details.
+The new portal offers you new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
+All Intune functionality will eventually move to Azure, but you can perform many Intune tasks in the Azure portal today. Review the [What’s new](#whats-new) section for details.
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
-> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration.
+> Existing tenants are being migrated to the new experience. You will receive a notification in the Office Message Center prior to your tenant’s migration.
 >
-> Intune accounts created before January 2017 will require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+> Intune accounts created before January 2017 will require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
 
 
-You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+You'll find new product documentation in this library, and it will be continually updated. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
 
 Highlights of the new experience include:
 
@@ -112,4 +110,4 @@ Information to help you [plan and design](/intune-classic/plan-design/introducti
 
 ## What's new?
 
-[Find out what's new in the preview release](whats-new.md).
+[Find out what's new in Intune](whats-new.md).

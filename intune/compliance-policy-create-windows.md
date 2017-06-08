@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for WindowstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to create a compliance policy for Windows devices."
+title: How to create a compliance policy for WindowstitleSuffix: "Intune on Azure"
+description: Learn how to create a compliance policy for Windows devices."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -25,10 +25,10 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-# How to create a device compliance policy for Windows devices in Intune Azure preview
+# How to create a device compliance policy for Windows devices in Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
 
