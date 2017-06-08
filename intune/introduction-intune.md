@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune 
+title: What is Microsoft Intune
 description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
 author: Lindavr
@@ -116,6 +116,6 @@ The following list of business problems link to more detailed information about 
 * [Issue limited-use shared tables to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### Next steps
-* Read about some of the [common ways to use Intune](common-scenarios.md).
+* Read about some of the [common ways to use Intune](common-scenarios.md) ([Classic console](/intune-classic/understand-explore/common-ways-to-use-intune)).
 * Get familiar with the product [with a 30-day trial of Intune](free-trial-sign-up.md) ([Classic console](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) of Intune.
+* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) ([Classic console](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) of Intune .
