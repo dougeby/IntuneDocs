@@ -32,7 +32,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Use this topic to learn about any known issues in the Microsoft Intune.
+Use this topic to learn about any known issues in Microsoft Intune.
 
 If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
 
