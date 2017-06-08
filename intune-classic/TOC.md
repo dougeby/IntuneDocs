@@ -57,7 +57,7 @@
 
 # [What's new](/intune/whats-new.md?toc=/intune-classic/toc.json)
 ## [What's new in app UI](/intune/whats-new-app-ui?toc=/intune-classic/toc.json)
-## [What's new archive (classic portal)](/intune/whats-new-archive?toc=/intune-classic/toc.json)
+## [What's new archive (classic portal)](/intune/whats-new-archive-classic?toc=/intune-classic/toc.json)
 ## [What's new archive (Azure portal)](/intune/whats-new-archive?toc=/intune-classic/toc.json)
 
 # Deploy and Use
