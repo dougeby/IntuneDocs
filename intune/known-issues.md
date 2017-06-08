@@ -51,7 +51,11 @@ Intune accounts created before January 2017 require a one-time migration before 
 -	Device Enrollment Managers
 -	Apple Volume Purchase Program
 
-Because these capabilities cannot be managed from both the classic Silverlight and Azure consoles, the migration will disable them in the classic console and enable them in the Azure console.  Management of these features will be moved to the Azure Portal. The schedule for migration has not been announced yet, but details will be made available as soon as possible. Be aware of the following change.
+Because these capabilities cannot be managed from both the classic Silverlight and Azure consoles, the migration will disable them in the classic console and enable them in the Azure console. Management of these features will be moved to the Azure Portal. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If you don’t want to wait for the general migration, you can request migration to the Azure portal now.
+
+To migrate these capabilities, you can file a [support ticket](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) requesting the DEP/VPP/DEM migration to Azure. We strongly recommend creating a trial account to test the new experience if your existing account cannot access the preview. Be aware of the following change.
+
+Be aware of the following change.
 
 #### Removes default Corporate Device Enrollment profiles in Apple DEP
 The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned prior to using the device.
