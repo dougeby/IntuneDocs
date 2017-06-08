@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -79,6 +79,23 @@ Enter the code you saw in the Company Portal app. When you select __Continue__, 
 The Company Portal app will begin signing in.
 
 ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## June 2017
+
+### Improvements to the app tiles in the Company Portal app for iOS
+We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. 
+
+**Before**
+
+![An image of the Company Portal app for iOS from before the update, which showed preset filler images for "All apps", "Featured apps," and "categories."](./media/cp_ios_homepage_before_1705.png)
+
+**After**
+![An image of the Company Portal app for iOS after the update, which now reflects the ability to select whatever colors are relevant for your organization.](./media/cp_ios_homepage_after_1705.png)
+
+### Account picker now available for the Company Portal app for iOS
+If users have used their work or school account to sign in to other Microsoft apps on their iOS device, then they may see our new account picker when signing into the Company Portal for the first time. 
+
+![An image of the account selector, which shows a test user "Robin Swanson" choosing between one of their two email addresses. There is a button underneath the two addresses that allows the user to sign in with a different account.](./media/cp_ios_multi-account-selector-after-1705.png)
 
 ## April 2017
 
