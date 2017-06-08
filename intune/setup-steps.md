@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get Started 
+title: Get Started
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
 author: nathbarn
@@ -45,9 +45,9 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 | 1  | [Prerequisites](supported-devices-browsers.md) - What you need and what to know before you start|
 | 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription to start managing your organization   |  
 | 3 | [Configure a custom domain name](custom-domain-name-configure.md) - Use your company's domain name to manage Intune by updating your DNS registration   |
-| 4 | [Synchronize AD and add users](users-permissions-add.md) - Connect Active Directory to synchronize users or add users to Intune  |
-| 5 | [Manage Intune licenses](licenses-assign.md) - Give users permission to use Intune|
-| 6 | [Organize users and devices](groups-get-started.md) - Use groups to organize deployments of policy, apps, and resources |
-| 7 | [Create policies and publish an app](apps-add.md) - Enable settings and apps that can be deployed to users |
+| 4 | [Add users and synchronize AD](users-permissions-add.md) - Connect Active Directory to synchronize users or add users to Intune  |
+| 5 | [Assign Intune licenses](licenses-assign.md) - Give users permission to use Intune|
+| 6 | [Organize user and device groups](groups-get-started.md) - Use groups to organize deployments of policy, apps, and resources |
+| 7 | [Add apps](apps-add.md) - Enable settings and apps that can be deployed to users |
 | 8 | [Customize the Company Portal](company-portal-customize.md) - Customize the Company Portal app that users see when working with Intune  |
 | 9 | [Enable mobile device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |

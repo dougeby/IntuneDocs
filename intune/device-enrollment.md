@@ -65,7 +65,7 @@ The following table offers an overview of Intune enrollment methods with their c
 |**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Bulk enroll** |No |Yes |No | [More information](./windows-bulk-enroll.md) |
+|**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
 
 **Android enrollment methods**
 

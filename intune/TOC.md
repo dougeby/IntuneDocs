@@ -5,7 +5,8 @@
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
-### [What's new archive](whats-new-archive.md)
+### [What's new archive (Azure portal)](whats-new-archive.md)
+### [What's new archive (classic portal)](whats-new-archive-classic.md)
 
 <!--## High-level architecture-->
 
@@ -56,15 +57,14 @@
 # How to
 
 ## [Set up Intune](setup-steps.md)
-### Prerequisites
-#### [Supported devices](supported-devices-browsers.md)
+### [Prerequisites](supported-devices-browsers.md)
 #### [Network bandwidth usage](network-bandwidth-use.md)
-###	[Sign into Intune](account-sign-up.md)	
-###	[Configure domains](custom-domain-name-configure.md)	
-### [Set the MDM authority](mdm-authority-set.md)
-###	[Add users and groups](users-permissions-add.md)
+###	[Sign into Intune](account-sign-up.md)
+###	[Configure domains](custom-domain-name-configure.md)
+###	[Add users](users-permissions-add.md)
 ###	[Assign licenses](licenses-assign.md)		
 ###	[Customize Company Portal](company-portal-customize.md)		
+### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
 ### Prerequisites
@@ -204,11 +204,11 @@
 
 ## Protect data and devices
 <!-- ### Set up mobile threat protection		
-#### Prerequisites	
-#### Set up Lookout	
-#### Set up Skycure	
-#### Enable mobile threat protection in Intune	
-#### Create a mobile threat protection compliance policy	
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy
 ### [Set up Windows Hello](windows-hello.md)		
 ### Protect devices with remote actions		-->
 
@@ -218,21 +218,21 @@
 ### [Use the helpdesk operator role](help-desk-operators.md)
 <!-- ### Custom role settings -->
 
-## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json) 
-### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json) 
+## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Common PC management tasks](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
-#### [PC policies](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json) 
-#### [View inventory](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json) 
-#### [Retire PCs](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json) 
-#### [Link PCs to users](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json) 
-#### [Remote assistance](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json) 
-### [Policies to protect Windows PCs](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json) 
-#### [Software updates](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json) 
-#### [Windows Firewall](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json) 
-#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json) 
-### [Add apps for Intune client PCs](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json) 
-### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json) 
-### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json) 
+#### [PC policies](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
+#### [View inventory](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Retire PCs](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json)
+#### [Link PCs to users](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+#### [Remote assistance](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Policies to protect Windows PCs](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Software updates](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json)
+#### [Windows Firewall](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json)
+#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json)
+### [Add apps for Intune client PCs](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
+### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
 
 # Monitor and troubleshoot
