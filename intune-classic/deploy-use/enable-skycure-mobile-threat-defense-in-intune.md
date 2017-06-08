@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable Skycure Mobile Threat Defense in Intune | Microsoft Docs
+title: Enable Skycure Mobile Threat Defense in Intune 
 description: Enable Skycure Mobile Threat Defense in the Intune classic console.
 keywords:
 author: andredm7

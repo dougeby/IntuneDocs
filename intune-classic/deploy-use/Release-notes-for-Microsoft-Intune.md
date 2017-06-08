@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Release notes for Microsoft Intune | Microsoft Docs
+title: Release notes for Microsoft Intune 
 description: Intune release notes
 keywords:
 author: arob98
@@ -81,7 +81,7 @@ In both cases, the resource access profile (email profile) was not removed from 
 ## Microsoft Intune App Wrapping Tool for Android has no built-in uninstall capability
 **Issue:** The **Microsoft App Wrapping Tool for Android** does not have built-in functionality for uninstalling the tool.
 
-**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool. For more about the app wrapping tool, see [Prepare Android apps for management with App Wrapping Tool](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
+**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool. For more about the app wrapping tool, see [Prepare Android apps for management with App Wrapping Tool](/intune/app-wrapper-prepare-android).
 
 ## Remote assistance is not available on computers that run Windows 8 or Windows 8.1
 **Issue:** In this release, the remote assistance feature is not available on computers that run Windows 8 or Windows 8.1.

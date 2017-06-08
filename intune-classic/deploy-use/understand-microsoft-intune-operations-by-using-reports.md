@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Understand operations by using reports | Microsoft Docs
+title: Understand operations by using reports 
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:

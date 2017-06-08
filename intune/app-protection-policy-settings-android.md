@@ -2,8 +2,8 @@
 # required metadata
 
 title: Android app protection policy settings
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: This topic describes the app protection policy settings for Android devices."
+titleSuffix: "Intune on Azure"
+description: This topic describes the app protection policy settings for Android devices."
 keywords:
 author: andredm7
 ms.author: andredm

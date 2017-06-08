@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot Lookout Integration | Microsoft Docs
+title: Troubleshoot Lookout Integration 
 description: This topic describes troubleshooting issues that commonly occur with Lookout Integration
 keywords:
 author: NathBarn

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial of Microsoft Intune | Microsoft Docs
+title: Sign up for a 30-day free trial of Microsoft Intune 
 description: Sign up and set up a free, 30-day evaluation of Microsoft Intune.
 keywords:
 author: lindavr
@@ -45,7 +45,7 @@ You can do everything in the trial version that you can do in a subscription ver
 ## Sign up for your trial
 Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page and fill out the form to sign up for a trial subscription.
 
-If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article and its evaluation guides assume that you are not using such an account.
+If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune/account-sign-up) instead. However, this article and its evaluation guides assume that you are not using such an account.
 
 > [!TIP]
 > If most of your IT operations and users are in a different locale than you, you may want to set that locale for your trial to test performance.
@@ -60,7 +60,7 @@ If your trial is in the **Azure portal**, go to https://portal.azure.com and sig
 ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](/intune/users-permissions-add) and in the [Next steps](#next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
@@ -114,8 +114,8 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
 
-### Intune Azure preview
-There are three portals you will use for the Intune Azure preview:
+### Intune on Azure
+There are three portals you will use for Intune on Azure:
 - The Office 365 Admin center ([portal.office.com](https://portal.office.com))
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com))
 - The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com))
@@ -142,8 +142,8 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 ### Classic Intune
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### Intune Azure preview
-Learn more about [Intune in the Azure portal preview](/intune/what-is-intune)
+### Intune on Azure
+Learn more about [Intune on Azure](/intune/what-is-intune)
 
 ### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:

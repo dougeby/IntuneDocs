@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
+title: Intune device restriction settings for Windows 10titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows 10 and later device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
 - 	**Screen capture (mobile only)** - Lets the user capture the device screen as an image.

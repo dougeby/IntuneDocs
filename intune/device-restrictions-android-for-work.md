@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android for Work | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
+title: Intune device restriction settings for Android for Work 
+titleSuffix: "Intune on Azure"
+description: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Android for Work device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Work profile settings
 - **Data sharing between work and personal profiles** - Use this setting to control whether apps in the work profile can share with apps in the personal profile. This setting controls sharing actions within applications (for example, the **Share…** option in the Chrome browser app) and does not apply to copy/paste clipboard behavior. Unlike [app protection policy settings](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), device restriction settings are managed from the Intune portal and use the Android for Work work profile partition to isolate managed apps. Choose from:

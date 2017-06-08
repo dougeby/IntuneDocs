@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Skycure to use Azure Active Directory Single Sign On | Microsoft Docs
+title: Configure Skycure to use Azure Active Directory Single Sign On 
 description: Configure Skycure to use Azure Active Directory Single Sign On (SSO)
 keywords:
 author: andredm7

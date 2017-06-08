@@ -450,7 +450,7 @@
 	},
 	{
 		"source_path": "intune/deploy-use/whats-new-in-microsoft-intune.md",
-		"redirect_url": "https://docs.microsoft.com/intune-classic/whats-new/whats-new-in-microsoft-intune",
+		"redirect_url": "/intune-classic/whats-new/whats-new-in-microsoft-intune",
 		"redirect_document_id": true
 	},
 	{
@@ -3099,23 +3099,13 @@
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/includes/mdm-supported-devices.md",
-		"redirect_url": "/intune-classic/includes/mdm-supported-devices",
-		"redirect_document_id": true
-	},
-	{
-		"source_path": "intune/includes/note-for-both-portals.md",
-		"redirect_url": "/intune-classic/includes/note-for-both-portals",
-		"redirect_document_id": true
-	},
-	{
 		"source_path": "intune/includes/whats-new-last-six-months.md",
 		"redirect_url": "/intune-classic/includes/whats-new-last-six-months",
 		"redirect_document_id": true
 	},
 	{
-		"source_path": "intune/index.md",
-		"redirect_url": "/intune-classic/index",
+		"source_path": "intune-classic/index.md",
+		"redirect_url": "/intune/index",
 		"redirect_document_id": true
 	},
 	{
@@ -3306,7 +3296,7 @@
 	{
 		"source_path": "intune/understand-explore/common-ways-to-use-intune.md",
 		"redirect_url": "/intune-classic/understand-explore/common-ways-to-use-intune",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md",
@@ -3386,6 +3376,251 @@
 	{
 		"source_path": "intune/whats-new/whats-new-in-microsoft-intune.md",
 		"redirect_url": "/intune-classic/whats-new/whats-new-in-microsoft-intune",
+		"redirect_document_id": true
+	},
+		{
+		"source_path": "intune-classic/understand-explore/introduction-to-microsoft-intune.md",
+		"redirect_url": "/intune/introduction-intune",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/understand-explore/introduction-to-intune-education.md",
+		"redirect_url": "/intune/introduction-intune-education",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/whats-new/whats-new-in-intune-app-ui.md",
+		"redirect_url": "/intune/whats-new-app-ui",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md",
+		"redirect_url": "/intune/introduction-device-app-lifecycles",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md",
+		"redirect_url": "/intune/device-lifecycle",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md",
+		"redirect_url": "/intune/app-lifecycle",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/understand-explore/common-ways-to-use-intune.md",
+		"redirect_url": "/intune/common-scenarios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/introduction.md",
+		"redirect_url": "/intune/planning-guide",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges.md",
+		"redirect_url": "/intune/planning-guide-deployment-goals",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-2-identify-use-case-scenarios.md",
+		"redirect_url": "/intune/planning-guide-scenarios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-3-determine-use-case-requirements.md",
+		"redirect_url": "/intune/planning-guide-requirements",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-4-develop-a-rollout-plan.md",
+		"redirect_url": "/intune/planning-guide-rollout-plan",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-5-develop-a-rollout-communication-plan.md",
+		"redirect_url": "/intune/planning-guide-communication-plan",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-6-develop-a-support-plan.md",
+		"redirect_url": "/intune/planning-guide-support-plan",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-7-create-an-intune-design.md",
+		"redirect_url": "/intune/planning-guide-design",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-8-onboarding-process.md",
+		"redirect_url": "/intune/planning-guide-onboarding",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/section-9-test-and-validation.md",
+		"redirect_url": "/intune/planning-guide-test-validation",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/additional-resources.md",
+		"redirect_url": "/intune/planning-guide-resources",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/intune-mdm-migration-guide.md",
+		"redirect_url": "/intune/migration-guide",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management.md",
+		"redirect_url": "/intune/migration-guide-prepare",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase1-basic-setup.md",
+		"redirect_url": "/intune/migration-guide-setup",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies.md",
+		"redirect_url": "/intune/migration-guide-configure-policies",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase1-configure-app-protection-policies.md",
+		"redirect_url": "/intune/migration-guide-app-protection-policies",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase1-special-migration-considerations.md",
+		"redirect_url": "/intune/migration-guide-considerations",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase2-migration-campaign.md",
+		"redirect_url": "/intune/migration-guide-campaign",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase2-communication-plan.md",
+		"redirect_url": "/intune/migration-guide-communication-plan",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access.md",
+		"redirect_url": "/intune/migration-guide-drive-adoption",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/plan-design/migration-phase2-typical-migration-cycle.md",
+		"redirect_url": "/intune/migration-guide-cycle",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune.md",
+		"redirect_url": "/intune/setup-steps",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/what-to-know-before-you-start-microsoft-intune.md",
+		"redirect_url": "/intune/supported-devices-browsers",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/network-bandwidth-use.md",
+		"redirect_url": "/intune/network-bandwidth-use",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md",
+		"redirect_url": "/intune/account-sign-up",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md",
+		"redirect_url": "/intune/custom-domain-name-configure",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md",
+		"redirect_url": "/intune/users-permissions-add",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md",
+		"redirect_url": "/intune/licenses-assign",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md",
+		"redirect_url": "/intune/company-portal-customize",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md",
+		"redirect_url": "/intune/end-user-educate",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md",
+		"redirect_url": "/intune/apps-prepare-mobile-application-management",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md",
+		"redirect_url": "/intune/app-wrapper-prepare-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md",
+		"redirect_url": "/intune/app-wrapper-prepare-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/deploy-use/sideload-apps-for-windows.md",
+		"redirect_url": "/intune/app-sideload-windows",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk.md",
+		"redirect_url": "/intune/app-sdk",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk-get-started.md",
+		"redirect_url": "/intune/app-sdk-get-started",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk-ios.md",
+		"redirect_url": "/intune/app-sdk-ios",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk-android.md",
+		"redirect_url": "/intune/app-sdk-android",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk-cordova.md",
+		"redirect_url": "/intune/app-sdk-cordova",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/develop/intune-app-sdk-xamarin.md",
+		"redirect_url": "/intune/app-sdk-xamarin",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/whats-new/whats-new-in-microsoft-intune.md",
+		"redirect_url": "/intune/whats-new",
+		"redirect_document_id": true
+	},
+	{
+		"source_path": "intune-classic/whats-new/early-edition.md",
+		"redirect_url": "/intune/early-edition",
 		"redirect_document_id": true
 	}
   ]

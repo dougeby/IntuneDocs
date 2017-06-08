@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Manage user-device linking for Windows PCs | Microsoft Docs
+title: Manage user-device linking for Windows PCs 
 description: How to link a user to an Intune-managed Windows PC.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -26,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Manage user-device linking for Windows PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client. 
 
 Before you can deploy software to a user, you must link the user to a PC. You can link a user to multiple PCs, but each PC can be linked to only one user. Users are automatically linked to any PCs that they enroll in Intune by using the company portal.

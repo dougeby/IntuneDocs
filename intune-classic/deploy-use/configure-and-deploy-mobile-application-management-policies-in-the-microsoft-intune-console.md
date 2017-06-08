@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Configure MAM policies in the Intune console | Microsoft Docs
+title: Configure MAM policies in the Intune console 
 description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: article
@@ -48,11 +49,11 @@ To apply restrictions to an app, the app must incorporate the Microsoft Intune A
 
 -   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Use a wrapped app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Use a wrapped app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](/intune/app-wrapper-prepare-ios) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](/intune/app-wrapper-prepare-android).
 
-- **Write your own app that incorporates the Intune App SDK**. The Intune App SDK lets you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/intune-classic/develop/intune-app-sdk).
-
-For help choosing between the App Wrapping Tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Write your own app that incorporates the Intune App SDK**. The Intune App SDK lets you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management
+For help choosing between the App Wrapping Tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Some managed apps, like the Outlook app for iOS and Android, support *multi-identity*. This means that Intune applies management settings only to corporate accounts or data in the app.
 

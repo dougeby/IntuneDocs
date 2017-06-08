@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Publish mobile apps to your users | Microsoft Docs
+title: Publish mobile apps to your users 
 description:
 keywords:
-author: jeffgilbms.author: jeffgilb
+author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: get-started-article

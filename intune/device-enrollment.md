@@ -2,8 +2,8 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
+titleSuffix: "Intune on Azure"
+description: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 # What is device enrollment?
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
 
@@ -65,7 +65,7 @@ The following table offers an overview of Intune enrollment methods with their c
 |**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Bulk enroll** |No |Yes |No | [More information](./windows-bulk-enroll.md) |
+|**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
 
 **Android enrollment methods**
 

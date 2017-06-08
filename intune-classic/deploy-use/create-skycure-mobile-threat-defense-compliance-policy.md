@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Skycure Mobile Threat Defense compliance policy | Microsoft Docs
+title: Create Skycure Mobile Threat Defense compliance policy 
 description: Create Skycure Mobile Threat Defense compliance policy in the Intune classic console.
 keywords:
 author: andredm7

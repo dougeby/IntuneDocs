@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Download Skycure iOS app configuration policy | Microsoft Docs
+title: Download Skycure iOS app configuration policy 
 description: Download Skycure iOS app configuration policy to use with the Skycure iOS app deployed to end-users.
 keywords:
 author: andredm7

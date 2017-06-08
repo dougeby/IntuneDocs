@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Allowed and blocked apps for KNOX | Microsoft Docs
+title: Allowed and blocked apps for KNOX 
 description: Custom profile to create a list of allowed and blocked apps for KNOX.
 keywords:
 author: robstackmsft

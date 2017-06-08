@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Enroll iOS devices- Apple Configurator-Setup AssistanttitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
+title: Enroll iOS devices- Apple Configurator-Setup Assistant
+titleSuffix: "Intune on Azure"
+description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +29,7 @@ ms.custom: intune-azure
 
 # Enroll iOS devices with Apple Configurator and Setup Assistant
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.
 
@@ -126,8 +127,8 @@ After you create the profile and assign serial numbers, you have to export the p
   10. When the iOS device finishes preparing, disconnect the USB cable.  
 6.  **Distribute devices**.
     The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
-
-    See [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune). You can also direct your end users to[Using your iOS or macOS device with Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+end-user-educate.mdend-user-educate.md
+    See [How to educate your end users about Microsoft Intune](end-user-educate.md). You can also direct your end users to[Using your iOS or macOS device with Intune](end-user-educate.md)
 
 ## How users install and use the Company Portal on their devices
 

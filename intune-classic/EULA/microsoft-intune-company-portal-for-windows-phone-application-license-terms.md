@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune Company Portal for Windows Phone Application License Terms | Microsoft Docs
+title: Microsoft Intune Company Portal for Windows Phone Application License Terms 
 description: These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you.
 keywords:
 author: arob98

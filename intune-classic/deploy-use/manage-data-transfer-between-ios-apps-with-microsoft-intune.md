@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Manage data transfer between iOS apps | Microsoft Docs
+title: Manage data transfer between iOS apps 
 description: Use this topic to understand how you can use the iOS Open in feature and mobile app management policies to manage data transfers between apps.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

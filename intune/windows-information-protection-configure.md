@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure Windows Information Protection - IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about the Intune settings you can use to manage Windows Information Protection."
+title: Configure Windows Information Protection - IntunetitleSuffix: "Intune on Azure"
+description: Learn about the Intune settings you can use to manage Windows Information Protection."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure Windows Information Protection in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leaks through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, an employee sends the latest engineering pictures from a personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to public cloud storage.
 

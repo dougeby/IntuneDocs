@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune roles (RBAC) for Microsoft IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
+title: Intune roles (RBAC) for Microsoft IntunetitleSuffix: "Intune on Azure"
+description: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Intune roles (RBAC) for Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 In simple terms, Intune **roles** (or RBAC) help you control who can perform various Intune actions, and who those actions apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
 

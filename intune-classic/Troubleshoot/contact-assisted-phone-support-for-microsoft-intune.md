@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "Contact assisted phone support | Microsoft Docs"
+title: "Contact assisted phone support "
 description: Phone numbers for Microsoft Intune help.
 keywords: business hours
 author: arob98
