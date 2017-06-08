@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune 
+title: What is Microsoft Intune
 description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
 author: Lindavr
@@ -78,11 +78,10 @@ When you use Intune with the other services in EMS, you can provide your organiz
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *	[Multi-factor authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-
-* [App conditional access (allow access if the mobile app contains corporate data)](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Isolating corporate data from personal data inside the same app](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Corporate data wipe from a mobile app](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [App conditional access - allow access if the mobile app contains corporate data](app-based-conditional-access-intune.md) ([Classic console](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
+* [Isolating corporate data from personal data inside the same app](app-protection-policy.md) ([Classic console](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
+* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](app-protection-policies.md) ([Classic console](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
+* [Corporate data wipe from a mobile app](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
 * [Rights management support](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)
@@ -117,6 +116,6 @@ The following list of business problems link to more detailed information about 
 * [Issue limited-use shared tables to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### Next steps
-* Read about some of the [common ways to use Intune](common-scenarios.md).
-* Get familiar with the product [with a 30-day trial of Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
-* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) of Intune.
+* Read about some of the [common ways to use Intune](common-scenarios.md) ([Classic console](/intune-classic/understand-explore/common-ways-to-use-intune)).
+* Get familiar with the product [with a 30-day trial of Intune](free-trial-sign-up.md) ([Classic console](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
+* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) ([Classic console](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) of Intune .

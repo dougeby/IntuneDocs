@@ -97,7 +97,3 @@ Verify with:
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
-
->[!div class="step-by-step"]
-
->[&larr; **Sync users to Intune**](custom-domain-name-configure.md)     [**Organize users and devices** &rarr;](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)  
