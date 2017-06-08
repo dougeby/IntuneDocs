@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Terms of Delegated Administration for Microsoft Intune | Microsoft Docs
+title: Terms of Delegated Administration for Microsoft Intune 
 description: If you cannot truthfully make these representations, do not accept these terms.
 keywords:
 author: arob98

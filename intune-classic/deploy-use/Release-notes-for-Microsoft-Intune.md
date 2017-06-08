@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Release notes for Microsoft Intune | Microsoft Docs
+title: Release notes for Microsoft Intune 
 description: Intune release notes
 keywords:
 author: arob98

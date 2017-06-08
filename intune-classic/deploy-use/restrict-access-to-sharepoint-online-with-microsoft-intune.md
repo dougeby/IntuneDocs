@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect SharePoint Online | Microsoft Docs
+title: Protect SharePoint Online 
 description: Protect and control access to company data on SharePoint Online by using conditional access.
 keywords:
 author: andredm7

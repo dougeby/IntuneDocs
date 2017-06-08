@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy Lookout for Work app | Microsoft Docs
+title: Deploy Lookout for Work app 
 description: Configure and deploy Lookout for Work apps for Android.
 author: andredm7
 ms.author: andredm

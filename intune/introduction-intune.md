@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune | Microsoft Docs
+title: What is Microsoft Intune 
 description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
 author: Lindavr

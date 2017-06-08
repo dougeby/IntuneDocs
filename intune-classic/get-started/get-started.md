@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get Started | Microsoft Docs
+title: Get Started 
 description: This topic provides guidance for administrators ready to deploy Microsoft Intune to the enterprise production environment they manage.
 keywords:
 author: nathbarn

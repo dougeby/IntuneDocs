@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: How your Android users get their apps | Microsoft Docs
+title: How your Android users get their apps 
 description: Methods for making Android apps available to end users
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article

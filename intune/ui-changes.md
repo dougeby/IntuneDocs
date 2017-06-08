@@ -2,8 +2,8 @@
 # required metadata
 
 title: Where did my Intune feature go in Azure?
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Helps you find Intune features in the Azure console."
+titleSuffix: "Intune on Azure"
+description: Helps you find Intune features in the Azure console."
 keywords:
 author: dagerrit
 ms.author: dagerrit

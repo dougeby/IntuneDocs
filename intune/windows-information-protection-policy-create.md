@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune | Microsoft Docs
-titleSuffix: "Intune Azure preview"
+title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune 
+titleSuffix: "Intune on Azure"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: andredm7
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Create and deploy Windows Information Protection (WIP) app protection policy with Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in the mobile application management (MAM) without enrollment scenario.
 

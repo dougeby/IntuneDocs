@@ -6,7 +6,7 @@ ms.author: apexprodleads
 ms.service: microsoft-intune
 ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
-title: Microsoft Intune Documentation | Microsoft Docs
+title: Microsoft Intune Documentation 
 description: Learn to use Microsoft Intune.
 ---
 <div id="main" class="v2">
@@ -45,8 +45,8 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Intune in the Azure portal preview</h3>
-                                            <p>As Microsoft Intune moves to the Azure portal, learn about the changes available in the new portal. </p>
+                                            <h3>Intune in the Azure portal</h3>
+                                            <p>Microsoft Intune is available in the Azure portal. Learn about managing devices and apps in the new portal. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -793,7 +793,7 @@ description: Learn to use Microsoft Intune.
                                         </div>
                                         <div class="cardText">
                                             <h3>Known issues</h3>
-                                            <p>Read about any known issues in the Intune preview.</p>
+                                            <p>Read about any known issues in the Intune.</p>
                                         </div>
                                     </div>
                                 </div>

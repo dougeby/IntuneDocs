@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to add apps to Microsoft Intune | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
+title: How to add apps to Microsoft Intune 
+titleSuffix: "Intune on Azure"
+description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add an app to Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Before you can manage and assign apps for your users, you must add them to Intune. Intune supports a wide range of different app types, and the options might be different for each type.
 

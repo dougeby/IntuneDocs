@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrating to Azure Active Directory groups| Microsoft Docs
+title: Migrating to Azure Active Directory groups
 description: How your groups will be migrated from Intune to Azure AD
 keywords:
 author: robstackmsft

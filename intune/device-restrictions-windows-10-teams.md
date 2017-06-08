@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restrictions for Windows 10 TeamtitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about the device restrictions available for Windows 10 Team devices."
+title: Intune device restrictions for Windows 10 TeamtitleSuffix: "Intune on Azure"
+description: Learn about the device restrictions available for Windows 10 Team devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Windows 10 Team device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 - **Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.
 - **PIN for wireless projection** - Specifies whether you must enter a PIN before you can use the wireless projection capabilities of the device.

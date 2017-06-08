@@ -2,8 +2,8 @@
 # required metadata
 
 title: How to monitor device profiles with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to monitor assigned Intune device profiles."
+titleSuffix: "Intune on Azure"
+description: Learn how to monitor assigned Intune device profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to monitor device profiles in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can monitor the assignment progress of Intune device profiles in two ways:
 

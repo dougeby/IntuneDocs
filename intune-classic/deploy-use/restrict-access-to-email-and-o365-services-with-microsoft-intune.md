@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect email and Office 365 | Microsoft Docs
+title: Protect email and Office 365 
 description: This topic describes how you can use conditional access to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
 author: andredm7

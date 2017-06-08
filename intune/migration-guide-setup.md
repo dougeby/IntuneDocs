@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune basic setup | Microsoft Docs
+title: Intune basic setup 
 description: The purpose of this article is to provide the necessary steps to set up Microsoft Intune.
 keywords:
 author: andredm7

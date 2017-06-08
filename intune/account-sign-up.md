@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up or sign in to Intune | Microsoft Docs
+title: Sign up or sign in to Intune 
 description: How to sign up for an Intune subscription or sign in to start with your subscription
 keywords:
 author: nathbarn

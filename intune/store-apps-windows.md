@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to add Windows store apps to IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about adding Windows store apps to Intune."
+title: How to add Windows store apps to IntunetitleSuffix: "Intune on Azure"
+description: Learn about adding Windows store apps to Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to add Windows store apps to Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Sign into the Azure portal.

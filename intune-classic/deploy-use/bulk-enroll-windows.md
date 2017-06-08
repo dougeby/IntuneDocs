@@ -1,5 +1,5 @@
 ---
-title: Bulk enrollment for Windows 10 | Microsoft Docs
+title: Bulk enrollment for Windows 10 
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
 author: NathBarn

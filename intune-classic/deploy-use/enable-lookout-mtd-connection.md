@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable Lookout MTP in Intune | Microsoft Docs
+title: Enable Lookout MTP in Intune 
 description: Enable Lookout mobile threat protection in the Intune admin console.
 keywords:
 author: andredm7

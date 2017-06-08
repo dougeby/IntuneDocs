@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect apps and data | Microsoft Docs
+title: Protect apps and data 
 description: This topic describes the various Intune features and capabilities that are available to you to help protect your company apps and data.
 keywords:
 author: andredm7

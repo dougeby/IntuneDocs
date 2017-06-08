@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Convert to a paid subscription | Microsoft Docs
+title: Convert to a paid subscription 
 description: What you need to know about subscriptions and licensing after you set up your free, 30-day evaluation of Intune.
 keywords:
 author: lindavr

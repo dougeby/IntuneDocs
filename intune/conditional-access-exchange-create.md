@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
+title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune on Azure"
+description: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
 keywords:
 author: andredm7
 ms.author: andredm
@@ -26,9 +26,9 @@ ms.custom: intune-azure
 
 ---
 
-# How to create and assign a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune Azure preview
+# How to create and assign a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic walks you through the process of configuring conditional access for Exchange on-premises based on device compliance.
 
@@ -117,12 +117,12 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 15. On the **On-premises** blade, click **Save** to save the conditional access policy.
 
-## Create Azure AD Conditional access policies in Intune Azure preview
+## Create Azure AD Conditional access policies in Intune
 
-Beginning with Intune 1704 release, admins can create Azure AD conditional access policies from the Intune Azure preview, which gives convenience so you don't need to switch between the Azure and Intune workloads.
+Beginning with Intune 1704 release, admins can create Azure AD conditional access policies from the Intune Azure portal, which gives convenience so you don't need to switch between the Azure and Intune workloads.
 
 > [!IMPORTANT]
-> You need to have an Azure AD Premium license to create Azure AD conditional access policies from Intune Azure preview portal.
+> You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
 
 ### To create Azure AD conditional access policy
 

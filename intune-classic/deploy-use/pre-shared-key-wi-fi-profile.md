@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wi-Fi using PSK | Microsoft Docs
+title: Wi-Fi using PSK 
 description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
 keywords:
 author: robstackmsft

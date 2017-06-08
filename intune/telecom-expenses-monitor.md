@@ -1,6 +1,6 @@
 ---
-title: Set up a telecom expense management servicetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Configure the Saaswedo telecom expense management service to integrate with Intune."
+title: Set up a telecom expense management servicetitleSuffix: "Intune on Azure"
+description: Configure the Saaswedo telecom expense management service to integrate with Intune."
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -24,8 +24,8 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Set up a telecom expense management service in Intune Azure preview
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# Set up a telecom expense management service in Intune
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune enables you to manage telecom expenses incurred from data usage on corporate-owned mobile devices. To enable this capability, Intune has integrated with the third-party software developer Saaswedo’s Datalert telecom expense management solution. Datalert is real-time telecom expense management software that lets you manage telecom data usage and avoid costly and unexpected data and roaming overages for your Intune-managed devices.
 
@@ -44,7 +44,7 @@ Before you can use the Datalert service with Intune, you need to configure setti
 
 ## Prerequisites
 
-- A subscription to Microsoft Intune, and access to the Azure portal, which is currently in public preview.
+- A subscription to Microsoft Intune, and access to the Azure portal.
 - A subscription to the Datalert telecom expense management service
 
 ## List of telecom expense management providers

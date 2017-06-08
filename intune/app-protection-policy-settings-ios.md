@@ -2,8 +2,8 @@
 # required metadata
 
 title: iOS app protection policy settings
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: This topic describes the app protection policy settings for iOS devices."
+titleSuffix: "Intune on Azure"
+description: This topic describes the app protection policy settings for iOS devices."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 #  iOS app protection policy settings
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 

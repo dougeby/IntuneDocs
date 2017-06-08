@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Supported devices - Microsoft Intune | Microsoft Docs
+title: Supported devices - Microsoft Intune 
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
 author: nathbarn

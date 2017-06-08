@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What is the Manage Users workload?titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to see and manage users using Microsoft Intune and Azure."
+title: What is the Manage Users workload?titleSuffix: "Intune on Azure"
+description: Learn how to see and manage users using Microsoft Intune and Azure."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # What is user management?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 If you are new to Intune in the Azure portal, remember that you no longer create groups for Intune. Intune uses Azure AD groups just like many other applications that you use.
 

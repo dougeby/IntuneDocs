@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Request and provide remote assistance for Windows PCs | Microsoft Docs
+title: Request and provide remote assistance for Windows PCs 
 description: Describes end-user and IT admin steps for providing remote assistance for Windows desktops that are being managed as PCs and for remotely starting a PC.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -26,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Request and provide remote assistance for Windows PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.
 

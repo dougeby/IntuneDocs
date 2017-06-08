@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune custom settings for Android devicestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn the settings you can use in an Android custom profile."
+title: Intune custom settings for Android devicestitleSuffix: "Intune on Azure"
+description: Learn the settings you can use in an Android custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Custom settings for Android devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use the Microsoft Intune Android **Custom** profile to assign OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 

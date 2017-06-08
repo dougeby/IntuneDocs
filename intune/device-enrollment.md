@@ -2,8 +2,8 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titleSuffix: "Intune Azure"
-description: "Intune Azure: Learn about enrollment for iOS, Android, and Windows devices."
+titleSuffix: "Intune on Azure"
+description: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 # What is device enrollment?
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
 

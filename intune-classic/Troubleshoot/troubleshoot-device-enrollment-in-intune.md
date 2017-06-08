@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment| Microsoft Docs
+title: Troubleshoot device enrollment
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: nathbarn

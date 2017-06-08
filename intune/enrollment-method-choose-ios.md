@@ -2,8 +2,8 @@
 # required metadata
 
 title: Choose how to enroll iOS devices in Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
+titleSuffix: "Intune on Azure"
+description: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Choose how to enroll iOS and macOS devices
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic describes the methods an IT admin can use to enable iOS device enrollment in Intune.
 

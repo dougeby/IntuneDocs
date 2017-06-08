@@ -1,12 +1,14 @@
 # [Introduction](introduction-intune.md)
-## [What is the Azure portal preview?](what-is-intune.md)
+## [What is the Azure portal?](what-is-intune.md)
 ## [What is Intune for Education?](introduction-intune-education.md)
 ## [Intune features in Azure](ui-changes.md)
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
-<!-- ### What's new archive
-## High-level architecture -->
+### [What's new archive](whats-new-archive.md)
+
+<!--## High-level architecture-->
+
 ## [Device and app lifecycles](introduction-device-app-lifecycles.md)
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
@@ -213,7 +215,7 @@
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [Use the helpdesk operator role](help-desk-operators.md) 
+### [Use the helpdesk operator role](help-desk-operators.md)
 <!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json) 

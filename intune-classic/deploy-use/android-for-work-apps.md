@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Deploy apps to Android for Work devices | Microsoft Docs
+title: Deploy apps to Android for Work devices 
 description: Use this topic to synchronize, then deploy app to Android for Work devices from the Google Play for Work Store.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article

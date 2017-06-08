@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create groups to organize users and devices | Microsoft Docs
+title: Create groups to organize users and devices 
 description: Create users and groups for your Intune subscription
 keywords:
 author: nathbarn
