@@ -247,7 +247,7 @@
 #### [Per-app VPN profile](android-pulse-secure-per-app-vpn.md)
 #### [Allow/block apps for Samsung KNOX Standard](samsung-knox-apps-allow-block.md)
 ### [iOS](custom-settings-ios.md)
-### [macOS](custom settings-macos.md)
+### [macOS](custom-settings-macos.md)
 ### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 ### [Windows 10](custom-settings-windows-10.md)
 ### [Android for Work](custom-settings-android-for-work.md)
