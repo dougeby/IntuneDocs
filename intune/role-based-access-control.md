@@ -46,7 +46,8 @@ Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provide
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
 
-Intune also shows three Azure AD extensions: Users, Groups and Conditional access.
+	> [!NOTE]
+	> Intune also shows three Azure AD extensions: Users, Groups and Conditional access.
 
 ## Roles created in the Intune classic console
 
@@ -88,10 +89,10 @@ The following roles are built into Intune and you can either customize these rol
 
 If none of the built-in roles suit your needs, you can create your own role. Additionally, you can create a custom role that includes any permissions required for a job function. For example, if an IT department group manages applications, policies and configuration profiles, you can add all those permissions together in one custom role.
 
-	> [!IMPORTANT]
-	> To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
-	> - **Global Administrator**
-	> - **Intune Service Administrator**
+> [!IMPORTANT]
+> To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+> - **Global Administrator**
+> - **Intune Service Administrator**
 
 ### To create a custom role
 
