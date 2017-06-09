@@ -80,7 +80,7 @@
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
 #### [Set up device enrollment program](device-enrollment-program-enroll-ios.md)
-#### Set up Apple School Manager
+#### [Set up Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [Set up with Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 ### [Educate users](end-user-educate.md)
@@ -96,6 +96,7 @@
 ### [Remove company data](device-company-data-remove.md)
 ### [Reset passcode](device-passcode-reset.md)
 ### [Restart device](device-restart.md)
+### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Examine device inventory](device-inventory.md)
 
 ## [Manage users](user-management.md)

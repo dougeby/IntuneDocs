@@ -51,5 +51,6 @@ Now, you can perform the following actions. For more information, click one of t
 	- [Lost mode](device-lost-mode.md)
 	- [Locate device](device-locate.md)
 	- [Restart](device-restart.md)
+	- [Remote control for Android](device-profile-android-teamviewer.md)
 - Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions. 
 ![Monitor device actions](./media/monitor-device-actions.png)
