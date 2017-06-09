@@ -47,7 +47,7 @@ Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provide
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
 
 	> [!NOTE]
-	> Intune also shows three Azure AD extensions: Users, Groups and Conditional access.
+	> Intune also shows three Azure AD RBAC extensions: **Users**, **Groups** and **Conditional access**.
 
 ## Roles created in the Intune classic console
 
