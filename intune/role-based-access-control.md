@@ -108,7 +108,7 @@ If none of the built-in roles suit your needs, you can create your own role. Add
 
 5. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [custom role settings reference list](#custom-role-settings-reference) later in this topic to help you.
+3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
 4. When you are done, choose **OK**.
 
@@ -127,87 +127,6 @@ If none of the built-in roles suit your needs, you can create your own role. Add
 	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
 <br></br>
 5. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
-
-## Custom role settings reference
-
-When you create a custom role, you can configure one or more of the following settings:
-
-### Device configurations
-
-|||
-|-|-|
-|**Assign**|Assign device profiles to groups.|
-|**Create**|Create device profiles.|
-|**Delete**|Delete device profiles.|
-|**Read**|Read device profiles and their properties.|
-|**Update**|Update existing device profiles.|
-
-### Managed apps
-
-|||
-|-|-|
-|**Assign**|Assign managed apps to groups.|
-|**Create**|Add new managed apps to Intune.|
-|**Delete**|Delete managed apps.|
-|**Read**|Read managed apps and their properties.|
-|**Update**|Update existing managed apps.|
-|**Wipe**|Wipe managed apps from devices.|
-
-### Managed devices
-
-|||
-|-|-|
-|**Delete**|Delete managed devices from Intune.|
-|**Read**|View information about managed devices in the Intune portal.|
-|**Update**|Update information about managed devices.|
-
-### Mobile apps
-
-|||
-|-|-|
-|**Assign**|Assign mobile apps to groups.|
-|**Create**|Add new mobile apps to Intune.|
-|**Delete**|Delete mobile apps.|
-|**Read**|Read mobile apps and their properties.|
-|**Update**|Update existing mobile apps.|
-
-### Organization
-
-|||
-|-|-|
-|**Read**|Read tenant settings.|
-|**Update**|Update tenant settings.|
-
-### Remote tasks
-
-|||
-|-|-|
-|**Bypass Activation Lock**|Remove the activation lock from an iOS device without the user’s Apple ID and password. |
-|**Disable Lost Mode**|Disable Lost Mode. Lost mode lets you specify a message and a phone number that will be displayed on the lock screen of the device.|
-|**Enable Lost Mode**|Enable Lost Mode. Lost mode lets you specify a message and a phone number that will be displayed on the lock screen of the device.|
-|**Locate Device**|-|
-|**Reboot Now**|Causes the device to restart.|
-|**Remote Lock**|Locks a device. The device owner must use their passcode to unlock it.|
-|**Reset Passcode**|Generates a new passcode for the device which will be displayed on the <device name> Overview blade.|
-|**Retire**|Removes only company data managed by Intune. Does not remove personal data from the device.|
-|**Wipe**|Returns the device to its default settings.|
-
-### Telecom expenses
-
-|||
-|-|-|
-|**Read**|Read Telecom Expense Management (TEM) settings.|
-|**Update**|Update Telecom Expense Management (TEM) settings.|
-
-### Terms and conditions
-
-|||
-|-|-|
-|**Assign**|Assign terms and conditions to groups.|
-|**Create**|Create terms and conditions settings.|
-|**Delete**|Delete terms and conditions settings.|
-|**Read**|Read terms and conditions settings in the Intune portal.|
-|**Update**|Update existing terms and conditions settings.|
 
 ## See also
 
