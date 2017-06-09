@@ -39,7 +39,7 @@ Your company's IT department can see information that is relevant to work, but n
 You can get the Company Portal two different ways:
 
 - By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your IT admin can also install the Company Portal app for you.
-- By going to the [Company Portal website](http://portal.manage.microsoft.com) that your IT admin set up.
+- By going to the [Company Portal website](https://portal.manage.microsoft.com) that your IT admin set up.
 
 ## What's the difference between the app and the website?
 There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
@@ -101,4 +101,4 @@ Microsoft recommends that you first try to see if you can fix your issue yoursel
 - [Fix common issues with your iOS device](troubleshoot-your-device-ios.md)
 - [Fix common issues with your Windows device](troubleshoot-your-device-windows.md)
 
-You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your IT admin for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](http://portal.manage.microsoft.com).
+You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your IT admin for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](https://portal.manage.microsoft.com).

@@ -7,8 +7,11 @@
         ],
         "exclude": [
           "**/obj/**",
-          "intune-azure/**",
-          "**/includes/**"
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
     ],
@@ -20,22 +23,15 @@
         ],
         "exclude": [
           "**/obj/**",
-          "intune-azure/**",
           "**/includes/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-"globalMetadata": {
-      "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "product_feedback_displaytext" : "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "searchScope": ["Intune"]
-    },
+    "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "intune-azure"
+    "dest": "intune-azure-redir"
   }
 }

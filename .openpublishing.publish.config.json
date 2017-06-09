@@ -5,8 +5,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "intune-azure",
-      "build_source_folder": "intune-azure",
-      "build_output_subfolder": "intune-azure",
+      "build_source_folder": "intune",
+      "build_output_subfolder": "intune",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": true,
@@ -20,8 +20,8 @@
     },
     {
       "docset_name": "InTuneDocs",
-      "build_source_folder": "InTuneDocs",
-      "build_output_subfolder": "InTuneDocs",
+      "build_source_folder": "intune-classic",
+      "build_output_subfolder": "intune-classic",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": true,
@@ -40,6 +40,22 @@
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "intune-azure-redir",
+      "build_source_folder": "intune-azure",
+      "build_output_subfolder": "intune-azure-redir",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
