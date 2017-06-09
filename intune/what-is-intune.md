@@ -38,12 +38,12 @@ The new portal offers you new and updated functionality in the Azure portal wher
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
-> Existing tenants are being migrated to the new experience. You will receive a notification in the Office Message Center prior to your tenant’s migration.
+> Existing tenants are being migrated to the new experience. You'll receive a notification in the Office Message Center before your tenant migrates.
 >
-> Intune accounts created before January 2017 will require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
+> Intune accounts created before January 2017 require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but we will let you know more as soon as possible. We strongly recommend creating a trial account, if your existing account cannot access the Azure portal.
 
 
-You'll find new product documentation in this library, and it will be continually updated. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
+You'll find new product documentation in this library, and it will be continually updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
 
 Highlights of the new experience include:
 
@@ -85,7 +85,7 @@ Information to help you [plan and design](/intune-classic/plan-design/introducti
 ### Device enrollment
 [How to get your devices managed by Intune](device-enrollment.md).
 ### Device compliance
-[Define a compliance level for your devices, then report about any devices which are not compliant](device-compliance.md).
+[Define a compliance level for your devices, then report any devices that are not compliant](device-compliance.md).
 ### Device configuration
 [Understand the profiles you can use to configure settings and features on devices you manage](device-profiles.md).
 ### Devices
