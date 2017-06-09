@@ -35,6 +35,8 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 - **Scope** - The users or devices that a specified person (the member) can manage.
 - **Assignment** - When the definition, members, and scope have been configured, the role is assigned.
 
+![Intune RBAC example](./media/intune-rbac-1.PNG)
+
 Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
@@ -106,7 +108,7 @@ If none of the built-in roles suit your needs, you can create your own role. Add
 
 5. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the custom role settings reference list later in this topic to help you.
+3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [custom role settings reference list](#custom-role-settings-reference) later in this topic to help you.
 
 4. When you are done, choose **OK**.
 
