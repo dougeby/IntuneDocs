@@ -90,6 +90,7 @@ We updated the design of the app tiles on the homepage to reflect the branding c
 ![An image of the Company Portal app for iOS from before the update, which showed preset filler images for "All apps", "Featured apps," and "categories."](./media/cp_ios_homepage_before_1705.png)
 
 **After**
+
 ![An image of the Company Portal app for iOS after the update, which now reflects the ability to select whatever colors are relevant for your organization.](./media/cp_ios_homepage_after_1705.png)
 
 ### Account picker now available for the Company Portal app for iOS
