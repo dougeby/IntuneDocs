@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 06/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
+## Week of June 16, 2017
+
+### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
+
+The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1704). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. 
 
 ## Week of June 9, 2017
 
@@ -53,7 +58,7 @@ If users have used their work or school account to sign in to other Microsoft ap
 
 ## Week of June 2, 2017
 
-### Change your MDM authority without unenrolling managed devices
+### Change your MDM authority without unenrolling managed devices <!--1103950-->
 
 You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa. 
 
