@@ -28,4 +28,4 @@ ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 # High-level architecture for Microsoft Intune
 This reference architecture shows options for integrating Microsoft Intune in your Azure environment with Azure Active Directory. 
 
-![High-level architectural diagram for Microsoft Intune](../media/intunearchitecture.svg)
+![High-level architectural diagram for Microsoft Intune](./media/intunearchitecture.svg)
