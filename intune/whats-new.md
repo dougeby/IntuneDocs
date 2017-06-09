@@ -37,7 +37,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of June 16, 2017
 
 ### New menu action to easily remove Company Portal. <!--1164569-->
-Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-in-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android.md).
+Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-in-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).
 
 ## Week of June 9, 2017
 
@@ -50,10 +50,10 @@ At general availability, Intune will be visible without the **preview** label in
 There is no action required for existing customers at this time, unless you have received one of a series of messages in the message center requesting that you take action so that we can migrate your groups. You may have also received a message center notice informing you that migration is taking longer due to bugs on our side. We are diligently continuing work to migrate any impacted customer.
 
 ### Improvements to the app tiles in the Company Portal app for iOS
-We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
+We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. You can see these changes on the [what's new in app UI](/intune/whats-new-app-ui) page.
 
 ### Account picker now available for the Company Portal app for iOS
-If users have used their work or school account to sign in to other Microsoft apps on their iOS device, then they may see our new account picker when signing into the Company Portal for the first time. You can see this change on the [what's new in app UI](whats-new-app-ui.md) page.
+If users have used their work or school account to sign in to other Microsoft apps on their iOS device, then they may see our new account picker when signing into the Company Portal for the first time. You can see this change on the [what's new in app UI](/intune/whats-new-app-ui) page.
 
 ## Week of June 2, 2017
 
