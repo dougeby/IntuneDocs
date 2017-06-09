@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,9 +33,8 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
+Microsoft Intune is now in the Azure portal and this means that the workflows and functionality you are used to have changed.
 The new portal offers you new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
-All Intune functionality will eventually move to Azure, but you can perform many Intune tasks in the Azure portal today. Review the [What’s new](#whats-new) section for details.
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
