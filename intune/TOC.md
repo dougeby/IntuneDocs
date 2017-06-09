@@ -80,7 +80,7 @@
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
 #### [Set up device enrollment program](device-enrollment-program-enroll-ios.md)
-#### Set up Apple School Manager
+#### [Set up Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [Set up with Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 ### [Educate users](end-user-educate.md)
