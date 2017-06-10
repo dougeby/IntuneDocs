@@ -149,7 +149,7 @@ When creating a PKCS certificate profile, for **Subject alternative name**, the 
 
 #### Configure multiple apps that can run when an Android device is in kiosk mode <!-- 662059 -->
 
-When an Android device is in kiosk mode, you could previously only configure one app that was allowed to run. You can now configure multiple apps using the app ID, store URL, or by selecting an Android app you already manage. For more information, see [Kiosk mode settings](device-restrictions-android#kiosk).
+When an Android device is in kiosk mode, you could previously only configure one app that was allowed to run. You can now configure multiple apps using the app ID, store URL, or by selecting an Android app you already manage. For more information, see [Kiosk mode settings](device-restrictions-android.md#kiosk).
 
 
 ## Notices
