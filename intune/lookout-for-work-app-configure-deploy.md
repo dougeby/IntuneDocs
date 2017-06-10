@@ -75,11 +75,11 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
 
-  ![screenshot of the apps page in the Intune administrator console with the Lookout for work app displayed in the list of apps](../media/mtp/ios-app-uploaded-intune.png)
+  ![screenshot of the apps page in the Intune administrator console with the Lookout for work app displayed in the list of apps](./media/ios-app-uploaded-intune.png)
 
 5. Create the managed app configuration policy as described in the [Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) topic.
 
-  ![screenshot of hte create a new policy wizard with the iOS 8.0 or later app configuration policy highlighted](../media/mtp/ios-app-config.png)
+  ![screenshot of hte create a new policy wizard with the iOS 8.0 or later app configuration policy highlighted](./media/ios-app-config.png)
 
 6. **To deploy the app to users**, select the Lookout for Work app, and choose **Manage Deployment**.
 

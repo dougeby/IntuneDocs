@@ -74,4 +74,4 @@ You can decide which Lookout MTD toggle options you need to enable according you
 The next two steps to fully integrate Lookout with Intune are:
 
 1. Deploy the [Lookout for Work apps](lookout-for-work-app-configure-deploy.md).
-2. Setup the [Device compliance policy](clookout-device-compliance-policy-create.md).
+2. Setup the [Device compliance policy](lookout-device-compliance-policy-create.md).

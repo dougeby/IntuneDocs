@@ -100,7 +100,7 @@ Use the following steps to gather the information you need to give to the Lookou
 
   >[!IMPORTANT]
   > The  **Display Name** is case sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
-  >![screenshot of the Azure portal, Azure Active Directory service, properties page](../media/mtp/aad-group-display-name.png)
+  >![screenshot of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
 
   The best practice is to use the default (5 minutes) for the increment of time to check for new devices.
 
