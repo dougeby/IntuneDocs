@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -138,6 +138,6 @@ You can also click **Import** to populate the list from a csv file in the format
 |||||
 |-|-|-|-|
 |Setting name|Details|Android 4.0+|Samsung KNOX Standard|
-|**Select a managed app**|Browse to, then select a managed app that can run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.|No|Yes|
+|**Select a managed app**|Choose one of the following options to add one or more apps that can run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br><br>- **Add apps by package name**<br>- **Add apps by URL**<br>- **Add managed apps**|No|Yes|
 |**Screen sleep button**|Enables or disables the screen sleep wake button on the device.|No|Yes|
 |**Volume buttons**|Enables or disables the use of the volume buttons on the device.|No|Yes|
