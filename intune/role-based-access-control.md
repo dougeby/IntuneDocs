@@ -129,8 +129,8 @@ You can create a custom role that includes any permissions required for a specif
 
 ## Next steps
 
-
+[Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
 
 ## See also
 
-- [Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+[Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
