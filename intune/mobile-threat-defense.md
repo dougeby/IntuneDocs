@@ -55,5 +55,5 @@ Access is granted when the device is remediated:
 
 Learn how to protect access to company resource based on device, network, and application risk with:
 
-- [Lookout](lookout-mobile-threat-defense-connector)
-- [Skycure](skycure-mobile-threat-defense-connector)
+- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Skycure](skycure-mobile-threat-defense-connector.md)
