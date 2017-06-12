@@ -5,7 +5,8 @@
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
-### [What's new archive](whats-new-archive.md)
+### [What's new archive (Azure portal)](whats-new-archive.md)
+### [What's new archive (classic portal)](whats-new-archive-classic.md)
 
 <!--## High-level architecture-->
 
@@ -79,7 +80,7 @@
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
 #### [Set up device enrollment program](device-enrollment-program-enroll-ios.md)
-#### Set up Apple School Manager
+#### [Set up Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [Set up with Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 ### [Educate users](end-user-educate.md)
@@ -95,6 +96,7 @@
 ### [Remove company data](device-company-data-remove.md)
 ### [Reset passcode](device-passcode-reset.md)
 ### [Restart device](device-restart.md)
+### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Examine device inventory](device-inventory.md)
 
 ## [Manage users](user-management.md)
@@ -245,7 +247,7 @@
 #### [Per-app VPN profile](android-pulse-secure-per-app-vpn.md)
 #### [Allow/block apps for Samsung KNOX Standard](samsung-knox-apps-allow-block.md)
 ### [iOS](custom-settings-ios.md)
-### [macOS](custom settings-macos.md)
+### [macOS](custom-settings-macos.md)
 ### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 ### [Windows 10](custom-settings-windows-10.md)
 ### [Android for Work](custom-settings-android-for-work.md)
