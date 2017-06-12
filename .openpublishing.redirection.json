@@ -2470,12 +2470,12 @@
 	},
 	{
 		"source_path": "intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md",
-		"redirect_url": "/intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune",
-		"redirect_document_id": true
+		"redirect_url": "/intune/introduction-device-app-lifecycles",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md",
-		"redirect_url": "/intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune",
+		"redirect_url": "/intune/device-lifecycle",
 		"redirect_document_id": true
 	},
 	{
@@ -3320,13 +3320,13 @@
 	},
 	{
 		"source_path": "intune/understand-explore/introduction-to-intune-education.md",
-		"redirect_url": "/intune-classic/understand-explore/introduction-to-intune-education",
-		"redirect_document_id": true
+		"redirect_url": "/intune/introduction-intune-education",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/understand-explore/introduction-to-microsoft-intune.md",
-		"redirect_url": "/intune-classic/understand-explore/introduction-to-microsoft-intune",
-		"redirect_document_id": true
+		"redirect_url": "/intune/introduction-intune",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/understand-explore/intune-glossary.md",
@@ -3370,8 +3370,8 @@
 	},
 	{
 		"source_path": "intune/whats-new/whats-new-in-intune-app-ui.md",
-		"redirect_url": "/intune-classic/whats-new/whats-new-in-intune-app-ui",
-		"redirect_document_id": true
+		"redirect_url": "/intune/whats-new-app-ui",
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "intune/whats-new/whats-new-in-microsoft-intune.md",
