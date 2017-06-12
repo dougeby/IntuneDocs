@@ -137,8 +137,8 @@ Azure AD and the Graph API use permission scopes to control access to corporate 
 Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties. This section summarizes the permission scopes for Intune Graph API features.
 
 To learn more:
-- [Azure AD authentication]()
-- [Application permission scopes]()
+- [Azure AD authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [Application permission scopes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)
 
 When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features:
 The following table summarizes the Intune Graph API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
