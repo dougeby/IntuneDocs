@@ -7,12 +7,12 @@ keywords: intune graphapi c# powershell permission roles
 author: lleonard-msft
 manager: angrobe
 ms.author: alleonar
-ms.date: 05/28/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: [GET ONE FROM guidgenerator.com]
+ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 
 # optional metadata
 
@@ -397,7 +397,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
 
 8.  Compile and run your program.  
 
-When you first run your program, you should receive two prompts.  The first requests your credentials and the second grants permissions for the `manmagedDevices` request.  
+When you first run your program, you should receive two prompts.  The first requests your credentials and the second grants permissions for the `managedDevices` request.  
 
 For reference, here's the completed program:
 
