@@ -7,12 +7,12 @@ keywords: intune graphapi c# powershell permission roles
 author: lleonard-msft
 manager: angrobe
 ms.author: alleonar
-ms.date: 05/28/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: [GET ONE FROM guidgenerator.com]
+ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 
 # optional metadata
 
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ---
 # How to use Azure AD to access the Intune Graph API
 
-The [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API leverages Azure Active Directory (Azure AD) for authentication and access control.  
+The [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API uses Azure Active Directory (Azure AD) for authentication and access control.  
 Access to the Intune Graph API requires:
 
 - An application ID with:
@@ -98,7 +98,7 @@ To register an app to use Graph API:
 
     <img src="media/app-registration-graph-api.png" width="558" height="165" alt="The Microsoft Graph setting" />
 
-7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  This opens the **Enable access** blade which lists permission scopes available to your application.
+7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  The **Enable access** blade opens and lists permission scopes available to your application.
 
     <img src="media/aad-auth-role-permissions.png" width="479" height="293" alt="Intune Graph API permission scopes" />
 
@@ -132,13 +132,13 @@ At this point, you may also:
 
 ## Intune permission scopes
 
-Azure AD and the Graphi API use permissions scopes to control access to corporate resources.  
+Azure AD and the Graph API use permission scopes to control access to corporate resources.  
 
 Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties. This section summarizes the permission scopes for Intune Graph API features.
 
 To learn more:
-- [Azure AD authentication]()
-- [Application permission scopes]()
+- [Azure AD authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [Application permission scopes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)
 
 When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features:
 The following table summarizes the Intune Graph API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
@@ -157,9 +157,9 @@ __Read Microsoft Intune Device Configuration and Policies (preview)__ | [DeviceM
 __Read and write Microsoft Intune configuration (preview)__ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
 __Read Microsoft Intune configuration (preview)__ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
 
-The table lists the settings in the order they appear in the Azure portal; the following sections describes the scopes in alphabetical order.
+The table lists the settings in the order they appear in the Azure portal. The following sections describe the scopes in alphabetical order.
 
-At this time, all Intune permission scopes require administrator access.  This means you'll need to provide corresponding credentials when running apps or scripts that access Intune Graph API resources.
+At this time, all Intune permission scopes require administrator access.  This means you need corresponding credentials when running apps or scripts that access Intune Graph API resources.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -329,7 +329,7 @@ If this happens, verify that:
 
 - Your tenant credentials support administrative functions.
 
-- Your code is very similar to the displayed samples. 
+- Your code is similar to the displayed samples. 
 
 
 ### Authenticate Azure AD in C\#
@@ -397,7 +397,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
 
 8.  Compile and run your program.  
 
-When you first run your program, you should receive two prompts.  The first requests your credentials and the second grants permissions for the `manmagedDevices` request.  
+When you first run your program, you should receive two prompts.  The first requests your credentials and the second grants permissions for the `managedDevices` request.  
 
 For reference, here's the completed program:
 
@@ -573,7 +573,7 @@ To invite the user to be a guest of your tenant:
 
     <img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" alt="Use Quick Tasks to add a guest user" />
 
-2.  Enter the client's email address and (optionall) add a personalized message for the invite.
+2.  Enter the client's email address and (optionally) add a personalized message for the invite.
 
     <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" alt="Inviting an external user as a guest" />
 
@@ -583,7 +583,7 @@ This sends an invite to the user.
 
    <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
-   The user will choose the **Get Started** link to accept your invitation.
+   The user needs to choose the **Get Started** link to accept your invitation.
 
 When the relationship is established (or your invitation has been accepted), add the user account to the **Directory role**.
 
