@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: What's new in the Microsoft Intune
+title: What's new in Microsoft Intune
 titleSuffix: "Intune on Azure"
 description: Find out what's new in the Intune Azure portal
 keywords:
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# What's new in the Microsoft Intune
+# What's new in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
