@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: "Known issues in the Microsoft Intune on Azure"
+title: "Known issues in Microsoft Intune on Azure"
 titleSuffix: "Intune on Azure"
 description: Read about known issues in Intune"
 keywords:
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Known issues in the Microsoft Intune
+# Known issues in Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
