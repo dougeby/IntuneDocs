@@ -31,6 +31,8 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Use these settings with an Android device restriction policy to configure devices in your organization.
+
 ## General
 
 |||||
@@ -46,7 +48,7 @@ ms.custom: intune-azure
 |**Screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
 |**Voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
 |**YouTube**|Allows the use of the YouTube app on the device.|No|Yes|
-|**Shared devices**|Configure a managed Samsung KNOX Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials. The device reamins managed whether it’s in use or not.<br>When end-users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.|No|Yes|
+|**Shared devices**|Configure a managed Samsung KNOX Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials. The device remains managed whether it’s in use or not.<br>When end-users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.|No|Yes|
 
 ## Password
 
