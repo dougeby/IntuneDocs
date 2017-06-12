@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,10 +35,10 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 **ASM Enrollment steps**
 1. [Get an ASM token and assign devices](#get-the-asm-token-and-assign-devices)
-2. [Create an ASM profile](#create-an-apple-dep-profile)
+2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
 3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
-4. [Synchronize ASM-managed devices](#sync-asm-managed-devices)
-5. [Assign ASM profile to devices](#assign-a-asm-profile-to-devices)
+4. [Sync ASM-managed devices](#sync-asm-managed-devices)
+5. [Assign ASM profile to devices](#assign-an-asm-profile-to-devices)
 6. [Distribute devices to users](#distribute-devices-to-users)
 
 >[!NOTE]
@@ -74,22 +74,14 @@ Select **Create a token via Apple School Manager**, and sign in with your compan
 **Step 4. Locate and upload your token.**<br>
 Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. Intune automatically syncs your ASM devices from Apple.
 
-## Connect School Data Sync
-(Optional) ASM supports synching class roster data to Azure Active Directory (AD) using Microsoft School Data Sync (SDS). Complete the following steps to use SDS to sync school data.
-
-1. On the **Enrollment Program Token** blade, select either the blue information banner or **Connect SDS**.
-2. Select **Allow Microsoft School Data Sync to use this token**, setting to **Allow**. This allows Intune to connect with SDS in Office 365.
-3. Select **Set up Microsoft School Data Sync** to enable the connection between ASM and Azure AD. Learn more about [how to setup School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
-4. Click **OK** to save and continue.
-
-## Create an ASM profile
+## Create an Apple enrollment profile
 A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment**, and then choose **Apple Enrollment**.
-3. Under **Enrollment Program**, select **Enrollment Program Profiles**.
-4. On the **Enrollment Program Profiles** blade, select **Create**.
-5. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile that is displayed in the Intune portal.
-6. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+1. In the Intune portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+2. Under **Enrollment Program**, select **Enrollment Program Profiles**.
+3. On the **Enrollment Program Profiles** blade, select **Create**.
+4. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile that is displayed in the Intune portal.
+5. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
 
  - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for ASM-managed devices that users log in to with their managed Apple ID.
 
@@ -103,7 +95,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
-7. Select **Device Management Settings**. These items are set during activation and cannot be changed without a factory reset. configure the following profile settings, and then select **Save**:
+6. Select **Device Management Settings**. These items are set during activation and cannot be changed without a factory reset. configure the following profile settings, and then select **Save**:
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
@@ -120,7 +112,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, select an Apple Configurator Certificate to import.
 
-8. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
+7. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
 
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
@@ -137,20 +129,21 @@ A device enrollment profile defines the settings applied to a group of devices d
         - **Siri** - If enabled, Setup Assistant prompts for this service during activation
         - **Diagnostic Data** - If enabled, Setup Assistant prompts for this service during activation
 
-9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
+8. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
+
+## Connect School Data Sync
+(Optional) ASM supports synching class roster data to Azure Active Directory (AD) using Microsoft School Data Sync (SDS). Complete the following steps to use SDS to sync school data.
+
+1. On the **Enrollment Program Token** blade, select either the blue information banner or **Connect SDS**.
+2. Select **Allow Microsoft School Data Sync to use this token**, setting to **Allow**. This allows Intune to connect with SDS in Office 365.
+3. Select **Set up Microsoft School Data Sync** to enable the connection between ASM and Azure AD. Learn more about [how to setup School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
+4. Click **OK** to save and continue.
 
 ## Sync ASM managed devices
 Now that Intune has been assigned permission to manage your ASM devices, you can synchronize Intune with the ASM service to see your managed devices in the Intune portal.
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-
-2. On the Intune blade of the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
-
-3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
-
-4. On the **Apple DEP Serial Numbers** blade, select **Sync**.
-
-5. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+1. In the Intune portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+2. Under **Enrollment Program Devices**, select **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
     To comply with Apple’s terms for acceptable ASM traffic, Intune imposes the following restrictions:
      -	A full ASM sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
@@ -159,7 +152,7 @@ Now that Intune has been assigned permission to manage your ASM devices, you can
 >[!NOTE]
 >You can also assign ASM serial numbers to profiles from the **Enrollment Program Devices** blade.
 
-## Assign a ASM profile to devices
+## Assign an ASM profile to devices
 ASM devices managed by Intune must be assigned a ASM profile before they are enrolled.
 
 1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program profiles**.
