@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,17 +44,22 @@ When you migrate from classic Intune to the Azure, you might see a new group nam
 
 ## Secondary migration required for select capabilities
 
-Intune accounts created before January 2017 require a one-time migration before these capabilities can be managed in the Azure Portal:
+Intune accounts created before January 2017 must be migrated before these capabilities can be used in the Azure portal:
+
 - Corporate Device Enrollment profiles
 - Apple Device Enrollment Program
--	Corporate Pre-enrolled devices by iOS Serial Number group
--	Device Enrollment Managers
--	Apple Volume Purchase Program
+- Corporate Pre-enrolled devices by iOS Serial Number group
+- Device Enrollment Managers
+- Apple Volume Purchase Program
 
-Because these capabilities cannot be managed from both the classic Silverlight and Azure consoles, the migration will disable them in the classic console and enable them in the Azure console. Management of these features will be moved to the Azure Portal. The schedule for migration has not been announced yet, but details will be made available as soon as possible. Be aware of the following change:
+Because these capabilities cannot be managed from both the classic Silverlight and Azure consoles, the migration:
+- Disables them in the classic console
+- Enables them in the Azure console.  
 
-#### Removes default Corporate Device Enrollment profiles in Apple DEP
-The Azure Portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure Portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
+You now manage these features in the Azure Portal. Be aware of the following change:
+
+### Removes default Corporate Device Enrollment profiles in Apple DEP
+The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
 
 ## Altering groups created by Intune during migration delays migration
 
@@ -62,8 +67,9 @@ In preparation for migration, your groups are copied from Intune to Azure AD. An
 
 ## Compliance policies from Intune do not show up in new console
 
-Any compliance policies you created in the classic Intune portal are migrated, but are not displayed in the Azure Portal. This occurs because of design changes in the Azure Portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic Intune portal.
-Additionally, new compliance policies you create in the Azure Portal are not visible in the classic Intune portal.
+Compliance policies you created in the classic portal are migrated, but are not displayed in the Azure portal because of design changes in the Azure portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic Intune portal.
+Additionally, new compliance policies you create in the Azure portal are not visible in the classic Intune portal.
+
 For more information, see [What is device compliance](device-compliance.md).
 
 ## Administration and accounts
@@ -71,7 +77,8 @@ For more information, see [What is device compliance](device-compliance.md).
 Global Admins (also referred to as Tenant Admins) can continue day-to-day administration tasks without a separate Intune or Enterprise Mobility Suite (EMS) license. However, to use the service, such as to enroll their own device, a corporate device, or use the Intune Company Portal, they need an Intune or EMS license.
 
 ## Apple enrollment profile migration
-In the next few months, Intune will enable managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload an updated token, migration will restore the original token during migrating. To remove this token and prevent DEP enrollment, delete the token in the Azure Portal. 
+
+In the next few months, Intune enables managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload a new token, the original token is restored in the Azure Portal when you migrate. To remove this token and prevent DEP enrollment, delete the token in the Azure Portal. 
 
 ## Using the numeric password type with macOS Sierra devices
 
@@ -79,3 +86,13 @@ Currently, if you select the **Numeric** **Required password type** in a device 
 This issue might be corrected in a future version of macOS.
 
 For more information about these settings, see [macOS device restriction settings in Microsoft Intune](device-restrictions-macos.md)
+
+## You cannot save a Windows Information Protection policy for some devices
+
+For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
+If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will be changed soon to be more accurate.
+
+## Status blades for migrated policies do not work
+
+You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can continue to view reports for these policies in the Classic portal.
+To view status information for migrated configuration policies, recreate them in the Azure portal.
