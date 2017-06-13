@@ -43,7 +43,6 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 >[!NOTE]
 >ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or Intune's [device enrollment manager](device-enrollment-manager-enroll.md) account.
->Also, an iOS devices enrolled with the Company Portal whose serial numbers is then imported and assigned an ASM profile will be unenrolled from Intune.
 
 ## Get the Apple ASM token and assign devices
 
