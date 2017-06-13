@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Determine Intune rollout targeted groups and timeframes 
+title: Determine rollout targeted groups and timeframes 
 description: This article helps to determine rollout targeted groups and timeframes for a Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 06/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,21 +26,21 @@ ms.custom: intune-classic
 
 ---
 
-# Develop an Intune rollout plan
+# Develop a rollout plan
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-This section will help you to determine the organizational groups that will be targeted for your Intune rollout, as well as the rollout timeframe for each group, and the enrollment approaches that will be used.
+This section helps you to determine the organizational groups that are targeted for your Intune rollout, as well as the rollout timeframe for each group, and the enrollment approaches that are going to be used.
 
-## Determine Intune rollout targeted groups and timeframes
+## Determine rollout targeted groups and timeframes
 
-It's important to first identify the groups that will be targeted with your Intune rollout. The targeted groups were previously discussed in the identify Intune use case scenarios section of this guide.
+It's important to first identify the groups that are targeted with your Intune rollout. The targeted groups were previously discussed in the identify Intune use case scenarios section of this guide.
 
-Secondly, you’ll need to determine the timeframe that each group will be targeted for the Intune rollout. This normally requires a discussion within the Intune deployment team and with targeted groups, to help determine the most appropriate rollout timeframe for each group.
+Secondly, determine the time frame that each group is targeted for the Intune rollout. This task typically requires a discussion within the Intune deployment team and with targeted groups, to help determine the most appropriate rollout time frame for each group.
 
-For example, the Intune deployment team may discuss such factors as the group’s willingness for change, number of users and devices, types of device platforms, requirements, geographic location and business risk to determine the rollout timeframe.
+For example, the Intune deployment team might discuss such factors as the group’s willingness for change, number of users and devices, types of device platforms, requirements, geographic location, and business risk to determine the rollout time frame.
 
-Organizations commonly choose to start the Intune rollout with an initial pilot, targeting a small group of users in the IT department. The pilot could then be expanded to include a broader set of IT users and participation from other organizational groups. After a successful pilot, organizations are ready to start a full production rollout, targeting the rest of the organization’s groups, some examples of different rollout groups and phases are provided below:
+Organizations commonly choose to start the Intune rollout with an initial pilot, targeting a small group of users in the IT department. The pilot can be expanded to include a broader set of IT users and participation from other organizational groups. After a successful pilot, organizations are ready to start a full production rollout, targeting the rest of the organization’s groups, some examples of different rollout groups and phases are provided below:
 
 -   **Pilot:** The first phase to rollout should be pilot users. The pilot users should understand they are the first users in a new solution and are willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases. These users should not be Executives or VIPs.
 
@@ -62,7 +62,7 @@ Here’s an example of an Intune rollout plan that includes targeted groups and 
 
 ## Determine the Intune enrollment approach
 
-Now that you have determined the targeted groups and timeframes for your Intune rollout, the next step is to choose the most appropriate Intune enrollment approach for each group. There are different enrollment approaches that organizations can use for their Intune rollout. A couple common enrollment approaches include user self-service, user assisted-enrollment, and IT tech fair.
+Now that you have determined the targeted groups and time frames for your Intune rollout, the next step is to choose the most appropriate Intune enrollment approach for each group. There are different enrollment approaches that organizations can use for their Intune rollout. A couple common enrollment approaches include user self-service, user assisted-enrollment, and IT tech fair.
 
 ### User self-service
 
@@ -70,11 +70,11 @@ With this approach, the user is responsible for enrolling their own device, usua
 
 ### User assisted-enrollment
 
-This is known as "white glove" approach, which an IT team member would assist the user through the enrollment process, in person or via Skype. This approach is commonly used with executive staff and other groups that may need more assistance during the enrollment process.
+This is known as "white glove" approach, which an IT team member would assist the user through the enrollment process, in person or with Skype. This approach is commonly used with executive staff and other groups that might need more assistance during the enrollment process.
 
 ### IT tech fair
 
-Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group would set up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions and get assistance with the enrollment process. Leveraging this option can be beneficial for both IT group and the user, especially during early phases of Intune rollout.
+Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group sets up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions, and receive assistance with the enrollment process. Leveraging this option can be beneficial for both IT group and the user, especially during early phases of Intune rollout.
 
 Here’s an example of an Intune rollout plan with targeted groups, timelines and enrollment approaches:
 

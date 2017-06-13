@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Determine Intune use case scenario requirements 
+title: Determine use case scenario requirements 
 description: This article helps to determine Intune use case, and sub use case scenario requirements for an Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 06/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,17 +26,17 @@ ms.custom: intune-classic
 
 ---
 
-# Determine Intune use case scenario requirements
+# Determine use case scenario requirements
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-In this section, you will determine the requirements for each organizational group within each use case scenario. Going through this process will help you better prepare for the other Intune deployment planning areas like architecture and design, onboarding, and rollout. It can also help identify potential gaps, and challenges related to your Intune deployment project.
+In this section, you determine the requirements for each organizational group within each use case scenario. Going through this process helps you prepare for the other Intune deployment planning areas like architecture and design, onboarding, and rollout. It can also help identify potential gaps and challenges related to your Intune deployment project.
 
-You might have different sets of requirements for each of your use case/sub use case scenarios and their associated organizational groups and mobile device platforms. For example, your corporate use case scenario requirements may require devices to enroll into Intune with a more restrictive set of device settings (e.g. PIN 6 characters, disabling cloud backup), as compared to your "Bring your own device" (BYOD) use case scenario, where it requires less restrictive settings (e.g. PIN 4 characters, allowing cloud backup).
+You might have different sets of requirements for each of your use case and sub-use case scenarios, and their associated organizational groups and mobile device platforms. For example, your corporate use case scenario requirements might require devices to enroll into Intune with a more restrictive set of device settings (for example, PIN 6 characters, disabling cloud backup), as compared to your "Bring your own device" (BYOD) use case scenario, where it requires less restrictive settings (for example, PIN 4 characters, allowing cloud backup).
 
-You may also have organizational groups for the corporate use case scenario that have different sets of requirements (e.g. PIN settings, Wi-Fi or VPN profile, apps deployed). In addition, your requirements might be determined by the mobile device platform’s capabilities (e.g. finger print reader, email profile).
+You may also have organizational groups for the corporate use case scenario that have different sets of requirements (for example, PIN settings, Wi-Fi or VPN profile, apps deployed). In addition, your requirements might be determined by the mobile device platform’s capabilities (for example, finger print reader, email profile).
 
-Here are a few examples of an organization’s use case requirements, showing different sets of requirements for each use case/sub use case scenario, organizational group and mobile device platform. You can also use the table below to enter your organization’s use case requirements:
+Here are a few examples of an organization’s use case requirements, showing different sets of requirements for each use case and sub-use case scenario, organizational group, and mobile device platform. You can also use the following table to enter your organization’s use case requirements:
 
 | **Use cases** | **Sub use cases** | **Groups** | **Device OS platforms** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|

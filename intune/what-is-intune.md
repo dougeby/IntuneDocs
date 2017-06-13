@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,17 +33,17 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune is now in the Azure portal and this means that the workflows and functionality you are used to have changed.
+Microsoft Intune is now in the Azure portal meaning that the workflows and functionality you are used to are now different.
 The new portal offers you new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
-> Existing tenants are being migrated to the new experience. You'll receive a notification in the Office Message Center before your tenant migrates.
+> Existing tenants are being migrated to the new experience. A notification is shown in the Office Message Center before your tenant migrates.
 >
-> Intune accounts created before January 2017 require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet, but we will let you know more as soon as possible. We strongly recommend creating a trial account, if your existing account cannot access the Azure portal.
+> Intune accounts created before January 2017 require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet. If your existing account cannot access the Azure portal, we recommend creating a trial account.
 
 
-You'll find new product documentation in this library, and it will be continually updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
+You can find information about the new portal in this library, and it is continually updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
 
 Highlights of the new experience include:
 
@@ -79,7 +79,7 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 
 ### Introduction and get started
-This section contains information about [what's new](whats-new.md), [known issues](known-issues.md), [how to get support](get-support.md) and how to [get started with a free trial](free-trial-sign-up.md) of Intune.
+This section contains [introductory information](introduction-intune.md) that helps you get started using Intune.
 ### Plan and design
 Information to help you [plan and design](/intune-classic/plan-design/introduction) your Intune environment.
 ### Device enrollment
