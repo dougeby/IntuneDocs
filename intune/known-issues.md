@@ -88,5 +88,5 @@ If you add additional domains (using **Advanced settings** > **Network perimeter
 
 ## Status blades for migrated policies do not work
 
-You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can still view reports for these policies in the Classic portal.
+You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can continue to view reports for these policies in the Classic portal.
 To view status information for migrated configuration policies, recreate them in the Azure portal.
