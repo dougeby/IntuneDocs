@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -79,3 +79,14 @@ Currently, if you select the **Numeric** **Required password type** in a device 
 This issue might be corrected in a future version of macOS.
 
 For more information about these settings, see [macOS device restriction settings in Microsoft Intune](device-restrictions-macos.md)
+
+
+## You cannot save a Windows Information Protection policy for devices that are not enrolled with Intune
+
+In the settings for a Windows Information Protection policy for devices that are not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field.
+If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you will be unable to save the policy. The error message you see will be changed soon to be more accurate.
+
+## Status blades for migrated policies do not work
+
+You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can still view reports for these policies in the Classic portal.
+To view status information for migrated configuration policies, recreate them in the Azure portal.
