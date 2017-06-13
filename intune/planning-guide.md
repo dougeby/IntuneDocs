@@ -64,9 +64,6 @@ This guide also provides additional technical information and table templates th
 
 -   You are already familiar with Intune and its features.
 
->[!NOTE]
-> Check the [Intune evaluation guide](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune and its capabilities.
-
 ## Next steps
 
 Let’s get started with the first section: [Determine deployment goals, objectives and challenges](planning-guide-deployment-goals.md).
