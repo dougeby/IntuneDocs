@@ -32,7 +32,7 @@ ms.custom: intune-classic
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
-The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionalty by deploying [app protection policies](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) to it.
+The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionality by deploying [app protection policies](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) to it.
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) on GitHub.
 
@@ -107,7 +107,7 @@ You will need the following to distribute apps wrapped by Intune:
 
   ![Apple Developer portal](./media/iOS-signing-cert-1.png)
 
-5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the rop right corner to add an iOS certificate.
+5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the top right corner to add an iOS certificate.
 
 6. Choose to create an **In-House and Ad Hoc** certificate under **Production**.
 
