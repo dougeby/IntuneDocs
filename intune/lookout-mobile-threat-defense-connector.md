@@ -75,7 +75,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 ![diagram showing conditional access policy granting access when device is determined to be compliant after remediation](./media/malicious-apps-unblocked.png)
 
 ### Control access based on threat to network
-Detect threats to your network such as Man-in-the-middle attacks and protect access to WiFi networks based on the device risk.
+Detect threats to your network such as man-in-the-middle attacks and protect access to WiFi networks based on the device risk.
 
 **Block network access through WiFi:**
 
