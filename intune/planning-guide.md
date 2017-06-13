@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Intune Deployment Planning, Design and Implementation Guide
+# Intune deployment planning, design and implementation guide
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -63,9 +63,6 @@ This guide also provides additional technical information and table templates th
 -   You've already evaluated Intune in a proof of concept (PoC) environment, and have decided to use it as the mobile device management solution in your organization.
 
 -   You are already familiar with Intune and its features.
-
->[!NOTE]
-> Check the [Intune evaluation guide](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune and its capabilities.
 
 ## Next steps
 

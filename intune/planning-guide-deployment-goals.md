@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Determine Intune deployment goals, objectives and challenges 
+title: Determine deployment goals, objectives and challenges 
 description: This article helps to determine deployment goals, objectives and challenges for an Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 06/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Determine Intune deployment goals, objectives and challenges
+# Determine deployment goals, objectives and challenges
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
