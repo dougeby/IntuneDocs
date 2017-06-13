@@ -144,7 +144,7 @@ After the Exchange Connector sets up the connection, mobile devices that are ass
 
 After you have successfully configured the Exchange Connector, you can view the status of the connection and the last successful synchronization attempt. To validate the Exchange Connector connection:
 
-1. On the Intune Dashboard, choose **On-premises access**. Under **Manage**, select **Exchange on-premises access** to verify the connection status.
+- On the Intune Dashboard, choose **On-premises access**. Under **Manage**, select **Exchange on-premises access** to verify the connection status.
 
 You can also check the time and date of the last successful synchronization attempt.
 
