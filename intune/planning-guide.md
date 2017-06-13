@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Intune Deployment Planning, Design and Implementation Guide
+# Intune deployment planning, design and implementation guide
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
