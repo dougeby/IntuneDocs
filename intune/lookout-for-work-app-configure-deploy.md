@@ -91,7 +91,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
   Choose the **Required Install** option to require that the Lookout app be installed on the user’s device.
 
 ## What happens when the deployed app is opened on the device
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md
+
 When the user opens the Lookout for Work on the device they are prompted to activate the app, and choose the Sign in with Azure Active Directory option. A detailed walk-through with the end-user flow can be found in the following topics:
 
 * [You are prompted to install Lookout for Work on your Android device](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)

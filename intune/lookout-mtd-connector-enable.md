@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable Lookout connector in Intune
+title: Enable Lookout Mobile Threat Defense connector in Intune
 titleSuffix: "Intune Azure preview"
 description: Enable Lookout MTD connector in Intune.
 keywords:

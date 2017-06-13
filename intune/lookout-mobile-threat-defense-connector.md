@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Lookout mobile threat defense connector with Intune
+title: Lookout Mobile Threat Defense connector with Intune
 titleSuffix: "Intune Azure preview"
-description: Set up Lookout mobile threat defense connector with Intune.
+description: Set up Lookout Mobile Threat Defense connector with Intune.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -43,13 +43,13 @@ The compliance policy in Intune includes a rule for Lookout Mobile Threat Defens
 
 If the device is found non-compliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
 
-## Supported platforms:
+## Supported platforms
 The following platforms are supported for Lookout when enrolled in Intune:
 * **Android 4.1 and later**
 * **iOS 8 and later**
 For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/articles/114094140253).
 
-## Prerequisites:
+## Prerequisites
 * Microsoft Intune subscription
 * Azure Active Directory
 * Lookout Mobile Endpoint Security enterprise subscription  
@@ -66,6 +66,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 * Accessing company apps
 
 **Block when malicious apps are detected:**
+
 ![diagram showing conditional access policy blocking access when device is determined to be non-compliant due to malicious apps on the device](./media/malicious-apps-blocked.png)
 
 **Access granted on remediation:**
@@ -76,6 +77,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 Detect threats to your network such as Man-in-the-middle attacks and protect access to WiFi networks based on the device risk.
 
 **Block network access through WiFi:**
+
 ![diagram showing conditional access blocking WiFi access based on network threats](./media/network-wifi-blocked.png)
 
 **Access granted on remediation:**

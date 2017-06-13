@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enable Skycure connector with Intune
+title: Enable Skycure Mobile Threat Defense connector with Intune
 titleSuffix: "Intune Azure preview"
-description: Enable Skycure Mobile Threat Defense with Intune.
+description: Enable Skycure Mobile Threat Defense connector with Intune.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enable Skycure Mobile Threat Defense in Intune
 
-To enable the Skycure mobile threat defense (MTD) connection in Intune, you should have already configured the [Intune Connector in the Skycure console](skycure-mtd-connector-integration.md).
+To enable the Skycure Mobile Threat Defense (MTD) connection in Intune, you should have already configured the [Intune Connector in the Skycure console](skycure-mtd-connector-integration.md).
 
 ## To enable the Skycure MTD connection in Intune
 

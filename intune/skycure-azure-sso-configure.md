@@ -47,11 +47,11 @@ You need to retrieve the Azure AD Tenant ID.
 
 ![Azure AD Dashboard](./media/skycure-sso-1.png)
 
-1.  The **Azure Active Directory** blade opens, choose **Properties**.
+3.  The **Azure Active Directory** blade opens, choose **Properties**.
 
 ![Azure AD Properties blade](./media/skycure-sso-2.png)
 
-1.  Click on the **Copy icon** under the **Tenant Directory ID** at **Azure Active Directory Properties** blade.
+4.  Click on the **Copy icon** under the **Tenant Directory ID** at **Azure Active Directory Properties** blade.
 
 > Paste the copied Directory ID value in a text file so you can use it later. The Directory ID value will be required later in the Skycure and Intune integration process.
 

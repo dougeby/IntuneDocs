@@ -37,6 +37,8 @@ Prerequisites for compliance policy with Lookout Mobile Threat Defense:
 - [Enable the Lookout connection in Intune](lookout-mtd-connector-enable.md)
 - [Configure and deploy the Lookout for work app](lookout-for-work-app-configure-deploy.md)
 
+## To create the Lookout device compliance policy
+
 As part of the Lookout Mobile Threat Defense setup, in the [Lookout console](https://aad.lookout.com), you created a policy that classifies various threats as high, medium and low. In the Intune compliance policy, you set the maximum allowed threat level.
 
 1. In the [Intune administrator console](https://manage.microsoft.com), go to the **Compliance Policies** page. You can either use an existing compliance policy or create a new one. Go to **Device Health** and enable **Device Threat Protection**.

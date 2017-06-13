@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile threat defense with Intune
+title: Mobile Threat Defense with Intune
 titleSuffix: "Intune Azure preview"
 description: "Protect access to company resources based on device risk"
 keywords:

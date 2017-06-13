@@ -57,7 +57,7 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
     c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as non-compliant.
 
-    d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure mobile threat defense for reporting purposes only.
+    d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure Mobile Threat Defense for reporting purposes only.
 
 > [!IMPORTANT]
 > If you create conditional access policies for Office 365 or other services, this compliance evaluation is assessed and non-compliant devices are blocked from accessing those services until the threat is resolved.
