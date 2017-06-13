@@ -1,5 +1,5 @@
 {
-  "redirections": [
+"redirections": [
     {
         "source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
         "redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
@@ -3378,7 +3378,7 @@
 		"redirect_url": "/intune-classic/whats-new/whats-new-in-microsoft-intune",
 		"redirect_document_id": true
 	},
-		{
+	{
 		"source_path": "intune-classic/understand-explore/introduction-to-microsoft-intune.md",
 		"redirect_url": "/intune/introduction-intune",
 		"redirect_document_id": true
