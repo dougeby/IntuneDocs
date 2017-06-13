@@ -101,7 +101,7 @@ When using Intune MDM, you can provision apps by either requiring their automati
 
 ### Task 6: Enable device enrollment
 
-Enrollment establishes management by provisioning control on the device. Learn [how to get ready to enroll corporate-owned and user personal's devices](intune/device-enrollment).
+Enrollment establishes management by provisioning control on the device. Learn [how to get ready to enroll corporate-owned and user personal's devices](/intune/device-enrollment).
 
 ## Next steps 
 
