@@ -1,6 +1,6 @@
 ---
-title: Help desk troubleshooting portal | Microsoft Docs
-titleSuffix: "Intune Azure preview"
+title: Help desk troubleshooting portal 
+titleSuffix: "Intune on Azure"
 description: Help desk staff use the troubleshooting portal to solve users' technical problems  
 keywords:
 author: NathBarn
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 ---
 # Help users with the Troubleshooting portal in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The troubleshooting portal lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
 

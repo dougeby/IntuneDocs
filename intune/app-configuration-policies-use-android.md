@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Use Intune app configuration policies for Android for Work | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an Android for Work app when it is run."
+title: Use Intune app configuration policies for Android for Work 
+titleSuffix: "Intune on Azure"
+description: Learn how to use app configuration policies to provide configuration data to an Android for Work app when it is run."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to use Microsoft Intune app configuration policies for Android for Work
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use app configuration policies in Microsoft Intune to supply settings that might be available when users run an Android for Work app. Not all apps support app configuration. Check with the app’s developer to see whether or not they have built their app to support app configuration policies.
 

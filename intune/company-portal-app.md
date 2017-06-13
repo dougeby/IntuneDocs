@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure the Company Portal apptitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how you can apply company specific branding to the Intune Company Portal app. "
+title: How to configure the Company Portal apptitleSuffix: "Intune on Azure"
+description: Learn how you can apply company specific branding to the Intune Company Portal app. "
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to configure the Microsoft Intune Company Portal app
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 

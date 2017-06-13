@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Post-configuration tasks | Microsoft Docs
+title: Post-configuration tasks 
 description: Complete optional configuration tasks to enhance mobile device management functionality.
 keywords:
 author: nathbarn

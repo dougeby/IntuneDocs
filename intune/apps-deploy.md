@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to assign apps to groups | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Once you've added an app to Intune, you'll want to assign it to groups of users or devices."
+title: How to assign apps to groups 
+titleSuffix: "Intune on Azure"
+description: Once you've added an app to Intune, you'll want to assign it to groups of users or devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to assign apps to groups with Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Once you've added an app to Intune, you'll want to get it out to users and devices. You do this by assigning it.
 
@@ -49,10 +49,10 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 > [!NOTE]
 > Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.
 
-## Changes to how you assign apps to groups in the Intune preview
+## Changes to how you assign apps to groups in the Intune
 
-In the Intune Azure preview, you no longer use Intune groups to assign apps; you now use Azure Active Directory (Azure AD) security groups. Because of this, you’ll need to learn about some changes to the way app assignments work, particularly when you have assigned apps to Intune child groups.
-The most important thing to note is that the concept of child groups does not exist in Azure AD. However, some groups might contain the same members. In this case, the behavior between classic Intune and the Intune Azure preview is different. The following table illustrates this:
+In the Intune Azure poral, you no longer use Intune groups to assign apps; you now use Azure Active Directory (Azure AD) security groups. Because of this, you’ll need to learn about some changes to the way app assignments work, particularly when you have assigned apps to Intune child groups.
+The most important thing to note is that the concept of child groups does not exist in Azure AD. However, some groups might contain the same members. In this case, the behavior between classic Intune and the Intune Azure portal is different. The following table illustrates this:
 
 ||||||
 |-|-|-|-|-|

@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: App based conditional access policy for Exchange Online with Intune | Microsoft Docs
+title: App based conditional access policy for Exchange Online with Intune 
 description: This topic describes how you can configure an app-based conditional access policy for Exchange Online with Intune.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
 ms.prod:
@@ -26,7 +28,7 @@ ms.custom: intune-azure
 
 # Set up app-based conditional access policies for Exchange Online
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic gives you step-by-step instructions on how to set up conditional access for Exchange Online to only allow mobile apps that support Intune app protection policies.
 

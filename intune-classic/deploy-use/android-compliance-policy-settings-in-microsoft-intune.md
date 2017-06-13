@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Android | Microsoft Docs
+title: Compliance policy settings for Android 
 description: This topic describes the device compliance policy settings for Android devices.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:

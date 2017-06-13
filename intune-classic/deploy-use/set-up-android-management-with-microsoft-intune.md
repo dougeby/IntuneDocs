@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Android management | Microsoft Docs
+title: Set up Android management 
 description: Enable mobile device management (MDM) for Android and KNOX Standard devices with Microsoft Intune.
 keywords:
 author: nathbarn
@@ -45,7 +45,7 @@ By default, Android devices are allowed to enroll in Intune. To block Android de
 	For end-user enrollment instructions, see [Enroll your Android device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 	For information about other end-user tasks, see these articles:
-  - [Resources about the end-user experience with Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Resources about the end-user experience with Microsoft Intune](/intune/end-user-educate)
   - [End user guidance for Android devices](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Due to the absence of Google Play Store in China, Android devices must obtain the Company Portal from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:

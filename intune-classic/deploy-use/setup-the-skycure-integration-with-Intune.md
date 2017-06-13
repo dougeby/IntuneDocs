@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up the Skycure integration with Intune | Microsoft Docs
+title: Set up the Skycure integration with Intune 
 description: Set up the Skycure integration with Microsoft Intune.
 keywords:
 author: andredm7

@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Manage web access with the Managed Browser app | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
+title: Manage web access with the Managed Browser app 
+titleSuffix: "Intune on Azure"
+description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Manage Internet access using Managed browser policies with Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The Managed Browser is a web browsing app available that you can download from public app stores for use in your organization. With Intune, the Managed Browser can be used to access corporate sites and SaaS apps with Single Sign-On via the MyApps service, while keeping web data protected. Additionally, the Managed Browser can be pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.
 

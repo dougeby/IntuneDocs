@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Intune custom device settingstitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to configure custom settings on devices you manage."
+title: How to configure Intune custom device settingstitleSuffix: "Intune on Azure"
+description: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure custom device settings in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## When to use custom settings
 
@@ -55,7 +55,7 @@ Use the information in this topic to learn the basics about configuring profiles
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
 	- [Android settings](custom-settings-android.md)
 	- [iOS settings](custom-settings-ios.md)
-	- [macOS settings](custom settings-macos.md)
+	- [macOS settings](custom-settings-macos.md)
 	- [Windows Phone 8.1 settings](custom-settings-windows-phone-8-1.md)
 	- [Windows 10 settings](custom-settings-windows-10.md)
 	- [Android for Work settings](custom-settings-android-for-work.md)

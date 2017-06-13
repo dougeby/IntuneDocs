@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Retire devices | Microsoft Docs
+title: Retire devices 
 description: Intune supports both a selective wipe and a full wipe to remove the device from Intune management by removing their policy and the company portal.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows Phone 8.1 devicestitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about the settings you can use in a Windows Phone 8.1 custom profile."
+title: Intune custom settings for Windows Phone 8.1 devicestitleSuffix: "Intune on Azure"
+description: Learn about the settings you can use in a Windows Phone 8.1 custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Custom settings for Windows Phone 8.1 devices in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use the Microsoft Intune Windows Phone 8.1 **Custom** profile to assign OMA-URI settings that can be used to control features on Windows Phone 8.1 devices. These are standard settings that many mobile device manufacturers use to control device features.
 

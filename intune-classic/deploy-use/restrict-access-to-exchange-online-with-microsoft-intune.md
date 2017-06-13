@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect email to Exchange Online | Microsoft Docs
+title: Protect email to Exchange Online 
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
 author: andredm7

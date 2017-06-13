@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Mobile threat defense | Microsoft Docs
+title: Intune Mobile threat defense 
 description: Protect access to company resources based on device risk.
 keywords:
 author: andredm7

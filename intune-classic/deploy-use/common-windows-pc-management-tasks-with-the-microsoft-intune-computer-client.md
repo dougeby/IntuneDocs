@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Common Windows PC management tasks | Microsoft Docs
+title: Common Windows PC management tasks 
 description: Learn ways that you can manage Windows PCs that run the Intune software client.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -26,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Common Windows PC management tasks with the Intune software client
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic lists tasks you can do to manage desktops that you manage as PCs by installing the Intune software client. This topic does not cover managing PCs as mobile devices. If you have not yet installed the client on your PCs, see [Install the Intune software client](install-the-windows-pc-client-with-microsoft-intune.md).
 
 

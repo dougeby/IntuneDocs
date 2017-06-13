@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set the mobile device management authority
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to set the mobile device management authority in Intune. "
+titleSuffix: "Intune on Azure"
+description: Learn how to set the mobile device management authority in Intune. "
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Set the mobile device management authority
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The mobile device management (MDM) authority setting determines how you manage your devices. As an IT admin, you must set an MDM authority before users can enroll devices for management.
 

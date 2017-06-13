@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to add web apps to IntunetitleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn about adding web apps to Intune."
+title: How to add web apps to IntunetitleSuffix: "Intune on Azure"
+description: Learn about adding web apps to Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to add web apps to Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add Skycure apps, Microsoft Authenticator app and iOS configuration policy | Microsoft Docs
+title: Add Skycure apps, Microsoft Authenticator app and iOS configuration policy 
 description: Add Skycure apps, Microsoft Authenticator app and iOS configuration policy into Intune classic console.
 keywords:
 author: andredm7

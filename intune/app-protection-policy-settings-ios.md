@@ -2,8 +2,8 @@
 # required metadata
 
 title: iOS app protection policy settings
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: This topic describes the app protection policy settings for iOS devices."
+titleSuffix: "Intune on Azure"
+description: This topic describes the app protection policy settings for iOS devices."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 #  iOS app protection policy settings
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 
@@ -79,9 +79,10 @@ There are some exempt apps and platform services that Intune app protection poli
 | **Disable app PIN when device PIN is managed** | Choose **Yes** to disable the app PIN when a device lock is detected on an enrolled device. | No |
 | **Require minimum iOS operating system** | Choose **Yes** to require a minimum iOS operating system to use this app. The user will be blocked from access if the iOS version on the device does not meet the requirement. | No |
 | **Require minimum iOS operating system (Warning only)** | Choose **Yes** to require a minimum iOS operating system to use this app. The user will see a notification if the iOS version on the device does not meet the requirement. This notification can be dismissed. | No |
-| **Require minimum app version** | Choose **Yes** to require a minimum app version to use the app. The user will be blocked from access if the app version on the device does not meet the requirement.<br><br>As apps often have distinct versioning schemes between them, the guidance is to create a policy with 1 minimum app version targeting 1 app (ie "Outlook version policy"). <br><br> | No | 
-| **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user will see a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>As apps often have distinct versioning schemes between them, the guidance is to create a policy with 1 minimum app version targeting 1 app (ie "Outlook version policy"). <br><br> | No | 
-| **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user will be blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](https://docs.microsoft.com/en-us/intune/develop/intune-app-sdk) <br><br> | No |
+| **Require minimum app version** | Choose **Yes** to require a minimum app version to use the app. The user is blocked from access if the app version on the device does not meet the requirement.<br><br>As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, "Outlook version policy"). <br><br> | No | 
+| **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user sees a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, "Outlook version policy"). <br><br> | No | 
+| **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user is blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](app-sdk.md) <br><br> | No |
+
 
 ##  Add-ins for Outlook app
 

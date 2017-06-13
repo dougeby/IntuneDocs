@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wi-Fi connections | Microsoft Docs
+title: Wi-Fi connections 
 description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
 author: lleonard-msft

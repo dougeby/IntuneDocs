@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage volume-purchased apps with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps from stores."
+titleSuffix: "Intune on Azure"
+description:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps from stores."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Manage volume-purchased apps with Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Some app stores give you the ability to purchase multiple licenses for an app that you want to run in your company. Buying licenses in bulk can help you reduce the administrative overhead of tracking multiple purchased copies of apps.
 

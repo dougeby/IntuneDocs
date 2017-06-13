@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Set up app-based conditional access policies for SharePoint Online
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic provides guidance on how to set up app-based conditional access policy for SharePoint Online. App-based CA helps admins to only allow mobile apps that have Intune app protection policies applied to.
 

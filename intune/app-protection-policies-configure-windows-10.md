@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Get ready to configure app protection policies for Windows 10 | Microsoft Docs
-titleSuffix: "Intune Azure preview"
+title: Get ready to configure app protection policies for Windows 10 
+titleSuffix: "Intune on Azure"
 description: "Setup mobile application management (MAM) provider in Azure AD"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Get ready to configure app protection policies for Windows 10
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Before creating a Windows 10 app protection policy using, you need to enable mobile application management (MAM) for Windows 10 by setting up the MAM provider in Azure AD. This configuration allows you to define the enrollment state when creating a new Windows Information Protection (WIP) policy with Intune.
 
@@ -62,4 +62,4 @@ Before creating a Windows 10 app protection policy using, you need to enable mob
 
 ## Next steps
 
-[Create a WIP app protection policy](https://docs.microsoft.comwindows-information-protection-policy-create.md)
+[Create a WIP app protection policy](windows-information-protection-policy-create.md)

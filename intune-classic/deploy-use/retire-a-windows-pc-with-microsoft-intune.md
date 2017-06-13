@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Retire a Windows PC | Microsoft Docs
+title: Retire a Windows PC 
 description: How to retire an Intune-managed Windows PC.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -26,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Retire a Windows PC
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the following steps to retire desktops that you are managing as PCs by running the Intune software client on them. When you retire a PC, it removes it from Intune management. You cannot factory reset a PC from Intune to set it back to its original factory settings.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to retire).

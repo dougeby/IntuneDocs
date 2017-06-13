@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How your Windows users get their apps | Microsoft Docs
+title: How your Windows users get their apps 
 description: Methods for making Windows apps available to users
 keywords:
 author: barlanmsft

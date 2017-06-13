@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Create groups to organize users and devices | Microsoft Docs
+title: Create groups to organize users and devices 
 description: Create users and groups for your Intune subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: get-started-article
@@ -89,5 +90,5 @@ Use user groups to deploy software and device policies. For example, set up an "
 You can find the newly created group in the **Groups** list, in the **Groups** workspace, under **All Users**. From here, you can also edit or delete the group.
 
 >[!div class="step-by-step"]
-
->[&larr; **Manage Intune licenses**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+/intune/licenses-assign
+>[&larr; **Manage Intune licenses**](/intune/licenses-assign)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

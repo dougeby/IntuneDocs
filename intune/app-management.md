@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: What is app management | Microsoft Docs
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Use this topic to learn the basics about app management with Microsoft Intune"
+title: What is app management 
+titleSuffix: "Intune on Azure"
+description: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # What is Microsoft Intune app management?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 As an IT admin, you'll likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
