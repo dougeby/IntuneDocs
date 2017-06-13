@@ -210,9 +210,9 @@
 #### Set up Lookout
 #### Set up Skycure
 #### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy
+#### Create a mobile threat protection compliance policy -->
 ### [Set up Windows Hello](windows-hello.md)		
-### Protect devices with remote actions		-->
+<!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
