@@ -79,9 +79,9 @@
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
-#### [Set up device enrollment program](device-enrollment-program-enroll-ios.md)
-#### [Set up Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Set up with Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [With Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [With Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 ### [Educate users](end-user-educate.md)
 
@@ -210,9 +210,9 @@
 #### Set up Lookout
 #### Set up Skycure
 #### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy
+#### Create a mobile threat protection compliance policy -->
 ### [Set up Windows Hello](windows-hello.md)		
-### Protect devices with remote actions		-->
+<!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
