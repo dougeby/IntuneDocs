@@ -31,30 +31,30 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The Apple Volume Purchase Program (VPP) lets you purchase multiple licenses for a book that you want to distribute to users in your company from the Business, or Education stores. This helps you reduce the administrative overhead of tracking multiple purchased copies of books.
+The Apple Volume Purchase Program (VPP) lets you purchase multiple licenses for a book that you want to distribute to users in your company. You can distribute books from the Business, or Education stores.
 
-Microsoft Intune helps you synchronize, manage, and assign books that you purchased through this program by importing the license information from the store and tracking how many of the licenses you have used.
+Microsoft Intune helps you synchronize, manage, and assign books that you purchased through this program. You can import license information from the store and track how many of the licenses you have used.
 
-The procedures to manage books are similar to those you use for [managing apps](vpp-apps-ios.md).
+The procedures to manage books are similar to [managing VPP apps](vpp-apps-ios.md).
 
 ## Manage volume-purchased books for iOS devices
-You purchase multiple licenses for iOS books through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased book use.
+You buy multiple licenses for iOS books through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased book use.
 
 ## Before you start
-Before you start, you'll need to get a VPP token from Apple and upload this to your Intune account. Additionally, you should understand the following:
+Before you start, get a VPP token from Apple and upload it to your Intune account. Additionally:
 
 * You can associate up to 256 VPP tokens with your Intune account.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
 * After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
-* Before you start to use iOS books with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that Intune created.
+* Before you start to use iOS books with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune synchronizes only data from the Apple VPP service that Intune created.
 * Currently, you can only assign books as a **Required** install. When you assign the book as a **Required** installation, each user who installs the book uses a license.
-* When you assign a book to a device, that device must have the built-in iBooks app installed. If it is not, the end user must re-install the app in order to read the book. You cannot currently use Intune to restore removed built-in apps.
+* When you assign a book to a device, that device must have the built-in iBooks app installed. If it is not, the end user must reinstall the app before they can read the book. You cannot currently use Intune to restore removed built-in apps.
 * You can only assign books from the Apple Volume Purchase Program site. You cannot upload, then assign books you created in-house.
-* You cannot currently assign books to end user categories in the same way as you do apps.
+* You cannot currently assign books to end-user categories in the same way as you do apps.
 * You cannot reclaim a license once the book is assigned.
-* When a user with an eligible device first tries to install a VPP book, they will be asked to join the Apple Volume Purchase program. They must do this before the book installation proceeds. You can also assign licenses to security groups with managed Apple IDs. If you do this, then users will not be prompted for their Apple ID when a book is installed.
+* When a user with an eligible device first tries to install a VPP book, they must join the Apple Volume Purchase program before they can install a book. You can also assign licenses to security groups with managed Apple IDs. If you do this, then users are not prompted for their Apple ID when a book is installed.
 
 ## To get and upload an Apple VPP token
 
@@ -64,7 +64,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.
 3.  On the **New VPP Token** blade, specify the following information:
-	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the Volume Purchase Program for Education. After you sign up, download the Apple VPP token for your account and select it here.
+	- **VPP token file** - Ensure you have signed for the Volume Purchase Program for Business or the Volume Purchase Program for Education. Then, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
 	- **Type of VPP account** - Choose from **Business** or **Education**.
 4. When you are done, click **Upload**.
@@ -80,7 +80,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 2. On the list of books blade, choose the book you want to assign, and then choose '**...**' > **Assign Groups**.
 3. On the <*book name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
 4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD user groups to which you want to assign the book. Device groups are currently not supported.
-You must choose an assignment action of **Required**. 
+Choose an assignment action of **Required**. 
 5. Once you are done, choose **Save**.
 
 ## Next steps
