@@ -35,7 +35,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
-## Week of June 9, 2017
+## Week of June 5, 2017
 
 ### Microsoft Intune and Conditional Access admin consoles are generally available
 
@@ -51,7 +51,7 @@ We updated the design of the app tiles on the homepage to reflect the branding c
 ### Account picker now available for the Company Portal app for iOS
 If users have used their work or school account to sign in to other Microsoft apps on their iOS device, then they may see our new account picker when signing into the Company Portal for the first time. You can see this change on the [what's new in app UI](whats-new-app-ui.md) page.
 
-## Week of June 2, 2017
+## Week of May 29, 2017
 
 ### Change your MDM authority without unenrolling managed devices
 
