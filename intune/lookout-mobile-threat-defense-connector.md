@@ -34,7 +34,7 @@ You can control mobile device access to corporate resources based on risk assess
 - Malicious apps installed
 - Malicious network profiles
 
-You can  configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies. Settings let you allow or block non-compliant devices based on detected threats.
+You can configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies. Settings let you allow or block non-compliant devices based on detected threats.
 
 ## How do Intune and Lookout Mobile Threat Defense help protect company resources?
 Lookout’s mobile app, **Lookout for work**, is installed and run on mobile devices. This app captures file system, network stack, and device and application telemetry where available, then sends it to the Lookout cloud service to assess the device's risk for mobile threats. You can change risk level classifications for threats in the Lookout console to suit your requirements.  
@@ -57,7 +57,8 @@ For additional information about platform and language support, visit the [Looko
 For more information, see [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)
 
 ## Sample scenarios
-Following are some common scenarios:
+
+Here are the common scenarios when using Lookout Mobile Threat Defense with Intune.
 
 ### Control access based on threats from malicious apps
 When malicious apps such as malware are detected on devices, you can block devices from the following until the threat is resolved:
