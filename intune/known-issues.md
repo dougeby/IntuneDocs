@@ -34,7 +34,7 @@ ms.custom: intune-azure
 
 Use this topic to learn about any known issues in Microsoft Intune.
 
-If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
+If you want to report a bug that is not listed here, [open a support request](get-support.md).
 
 If you want to request a new feature for Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
