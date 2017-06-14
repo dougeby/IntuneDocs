@@ -9,7 +9,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,14 +52,14 @@ Ask a question or start a discussion with Microsoft technical experts! We provid
 
 ### Get started with the forum
 
-1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.<br>
-![Intune forum select control](./media/forum-select-intune.png)
-2. You'll now see Microsoft Intune in your list of selected forums.<br>
+1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.<br><br>
+![Intune forum select control](./media/forum-select-intune.png)<br><br>
+2. You'll now see Microsoft Intune in your list of selected forums.<br><br>
 ![Intune selected in forums control](./media/forum-selected-intune.png)
 
 ### Microsoft Intune UserVoice product feedback site
 
-Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice. 
+Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice.
 
 ![Microsoft Intune UserVoice feedback page](./media/intune-uservoice-feedback-page.png)
 
@@ -75,11 +75,37 @@ If you are unable to find answers by using the self-help resources, you can crea
 
 Please review the [definition of a support incident](#definition-of-a-support-incident) before creating a support ticket.
 
-**To create an online support ticket**:
+You can file a support ticket for Intune in two ways:
+- [Azure portal support](#file-an-azure-support-ticket)
+- [Office 365 support](#file-an-office-365-support-ticket)
+
+### File an Azure support ticket
+As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
+
+1. Use your Intune admin credentials to logon to [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+2. Select **New support request**.
+
+	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+3. On the **Basics** blade, choose an **Issue type**. For problems using Intune, choose **Technical**.
+![Screenshot of Azure portal Basics blade with Issue type, Service, and Support plan](./media/azure-support-ticket-basics.png)
+4. For **Service**, choose **Microsoft Intune**. You can leave the default as **Technical support - included**, and then choose **Next**.
+5. On the **Problem** screen, choose **Severity**. Options include:
+	- A - Critical impact
+	- B - Moderate impact
+	- C - Minimal impact
+6. For **Problem type**, select the Intune functionality closest to your problem, and then select the **Category**. This helps us ensure your request is addressed by the best subject matter expert for your problem.
+7. Provide **Details** about your problem including error messages.
+
+	**Related help** provides resources that might help you solve your problem without filing a ticket.
+	![Screenshot of Azure portal Problem blade with Severity, Problem type, Details, When did problem start, File](./media/azure-support-ticket-problem.png)
+8. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
+9. Choose **Create** to submit your support request.
+
+### File an Office 365 support ticket
+You can also file a support ticket for Intune using the Office 365 admin center.
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 	>[!NOTE]
-	>
 	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Choose the **Admin** tile.
