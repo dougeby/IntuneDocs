@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune plan and design additional resources 
-description: Appendix 1 includes links for additional Intune information that might be helpful during the Intune deployment planning and implementation process.
+title: Templates and resources to plan and design Intune deployment
+description: Links to planning templates and additional Intune information that may be helpful during your Intune deployment planning and implementation process.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 06/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,60 +26,41 @@ ms.custom: intune-classic
 
 ---
 
-# Additional resources
+# Additional resources for planning your Intune deployment
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 ## Templates
 
-Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+Microsoft Excel templates for the tables used in the planning guide are available for [download](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
-Here's a list of table templates for each section:
+Here's a list of table templates for each section.
 
-### Deployment planning
+|Deployment planning  |Design & implementation   |Test & validation |
+|-----|----- |------|
+| Deployment goals |Current environment|Functional validation testing|
+| Deployment objectives |Devices|IT admin scenario validation testing|
+| Deployment challenges |Terms & conditions|End-user scenario validation testing|
+| Use-case scenarios |Configuration policy| |
+| Use-case scenario requirements |Certificate profile| |
+| Rollout plan |Wi-Fi profile| |
+| Rollout communication plan|VPN profile| |
+| |  Email Profile | |
+| | Applications | |
+| | Compliance policy | |
+| | Conditional access policy|-|
 
-- Deployment goals
-- Deployment objectives
-- Deployment challenges
-- Use case scenarios template
-- Use case scenario requirements template
-- Rollout plan template
-- Rollout communication plan template
-
-### Design, and implementation
-
-- Current Environment
-- Devices
-- Terms & Conditions
-- Configuration Policy
-- Certificate Profile
-- Wi-Fi Profile
-- VPN Profile
-- Email Profile
-- Applications
-- Compliance Policy
-- Conditional Access Policy
-
-### Test and validation
-
-- Functional validation testing
-- IT admin scenario validation testing
-- End user scenario validation testing
 
 ## Links
 
-Check out these links for additional information that may be helpful during the Intune deployment planning, design and implementation process.
+Check out these resources for additional information that may be helpful during the Intune deployment planning, design, and implementation process.
 
--   [Microsoft Intune Documentation Library](/intune-classic/)
+-   [Microsoft Intune documentation](/intune/) - The full set of Intune documentation.
 
--   [Intune Blog](https://blogs.technet.microsoft.com/enterprisemobility/)
+-   [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/) - Posts to help you understand how Intune fits into the larger Enterprise Mobility picture.
 
--   [Intune Roadmap ](https://www.microsoft.com/server-cloud/roadmap/)
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx) - Learn Microsoft's approach to security, privacy, compliance, and transparency in all Microsoft cloud products and services.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx)
+-   [Intune User Voice](http://microsoftintune.uservoice.com/) - Want to request a feature or vote with other customers for features? Provide feedback on Intune through User Voice. We're listening.
 
--   [Intune User Voice](http://microsoftintune.uservoice.com/)
-
--   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
-
--   [Enrollment Guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)
+-   [Enrollment guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - A set of docs you can use as is or modify as part of your communication plan with your end users to help them understand what it means to have their personal device enrolled in Intune.
