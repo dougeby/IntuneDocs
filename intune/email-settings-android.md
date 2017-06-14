@@ -26,15 +26,15 @@ ms.custom: intune-azure
 
 ---
 
-# Email profile settings for Android devices in Microsoft Intune
+# Email profile settings for Android  devices in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As an Intune admin, you can create and assign email settings to the following Android devices:
-- [Android](#android-email-settings)
+- [Android Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
-## Android email settings
+## Android Samsung KNOX Standard email settings
 - **Email server** - The host name of your Exchange server.
 - **Account name** - The display name for the email account as it appears to users on their devices.
 - **Username attribute from AAD** - This name is the attribute in Active Directory (AD) or Azure AD used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.
