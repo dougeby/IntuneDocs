@@ -76,7 +76,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 4. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions only need to be accepted once. Users with multiple devices don't have to accept on each device.
 
 
-## Monitor a terms and conditions
+## Monitor terms and conditions
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment**, and then choose **Terms and Conditions**.
 2. In the list of terms and conditions, select the terms you want to view acceptance for, and then select **Acceptance Statuses**.
