@@ -34,8 +34,7 @@ Once you have enabled your app for app protection policies, IT administrators ca
 
 The following are examples of Intune app protection features that can be enabled with the SDK.
 
-### Control users’ ability to move corporate files
-IT administrators can control where work or school data in the app can be moved. For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.
+### Control users’ ability to move corporate filesIT administrators can control where work or school data in the app can be moved. For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.
 
 ### Configure clipboard restrictions
 IT administrators can configure the clipboard behavior in Intune-managed apps. For instance, they can deploy a policy to prevent end users from cutting or copying data from the app and pasting into an unmanaged, personal app.
@@ -64,11 +63,6 @@ Multi-identity support is a feature of the SDK that enables coexistence of polic
 For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android. When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.
 
 The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.
-
-### On-demand application VPN connections with Citrix mVPN 
-You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This combination means that you can manage apps with Intune app protection policy while using Citrix’s mVPN technology. The integration with Citrix is available for with the Intune App SDK for iOS and Android, and with the Intune App Wrapping Tool (with the -citrix flag).
- 
-To learn more about Citrix MDX, see [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html).
  
 ### App protection without device enrollment
 
