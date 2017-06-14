@@ -34,7 +34,8 @@ Once you have enabled your app for app protection policies, IT administrators ca
 
 The following are examples of Intune app protection features that can be enabled with the SDK.
 
-### Control users’ ability to move corporate filesIT administrators can control where work or school data in the app can be moved. For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.
+### Control users’ ability to move corporate files
+IT administrators can control where work or school data in the app can be moved. For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.
 
 ### Configure clipboard restrictions
 IT administrators can configure the clipboard behavior in Intune-managed apps. For instance, they can deploy a policy to prevent end users from cutting or copying data from the app and pasting into an unmanaged, personal app.
