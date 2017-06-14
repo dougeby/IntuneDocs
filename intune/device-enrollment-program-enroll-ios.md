@@ -35,7 +35,6 @@ This topic helps IT administrators  enable iOS device enrollment for devices pur
 
 >[!NOTE]
 >DEP enrollment can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
->Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
 
 **DEP Enrollment steps**
 1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-certificate)
