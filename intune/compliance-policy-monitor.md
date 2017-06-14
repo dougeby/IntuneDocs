@@ -126,8 +126,6 @@ If you click on **Filter button**, the filter fly-out opens with the following o
 
 If clicking the **Update button**, the fly out should close and the results should update as per the selected filter criteria.
 
-![Filter update button](./media/idc-5.png)
-
 ##### Device details
 
 Clicking on a device, opens the **Devices Blade** with the device selected. This provides more details on the device compliance policy setting applied for that device.
