@@ -191,7 +191,7 @@
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-### Create Actions for noncompliance
+<!--### Create Actions for noncompliance-->
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)
