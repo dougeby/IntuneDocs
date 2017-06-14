@@ -29,9 +29,13 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**If you are not in the Intune service in the Azure portal program**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
+## Before you begin
+
+If you're looking for instructions in the Intune classic console, see [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](app-protection-policy.md).
+
+If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  Create an app protection policy
 1.  In the **Mobile apps** workload, choose **Manage** > **App protection policies**.
@@ -118,7 +122,6 @@ To see the effect of the changes immediately, the end user will have to log out 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following:
 
-> [!div class="op_single_selector"]
 - [iOS policies](app-protection-policy-settings-ios.md)
 - [Android policies](app-protection-policy-settings-android.md)
 
