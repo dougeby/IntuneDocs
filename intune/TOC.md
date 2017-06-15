@@ -278,6 +278,4 @@
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 
-# Glossary
-
-## [Glossary](intune-glossary.md)
+# [Glossary](intune-glossary.md)
