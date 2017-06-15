@@ -112,7 +112,7 @@
 #### [Web apps](web-app.md)
 #### [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)
 #### [Windows Phone LOB apps](lob-apps-windows-phone.md)
-#### [Windows store apps](store-apps-windows.md)
+#### [Windows Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
 #### [Office 365 apps for Windows 10](apps-add-office365.md)
