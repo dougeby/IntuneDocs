@@ -82,7 +82,7 @@ If you configure the **Numeric complex** setting, and then assign it to a device
 
 ## Restricted apps
 
-In the restricted apps list, you can configure one of the following lists for Android, and Samsung KNOX Standard devices:
+In the restricted apps list, you can configure one of the following lists for both Android, and Samsung KNOX Standard devices:
 
 A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
 An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install other apps. Apps that are managed by Intune are automatically allowed.
