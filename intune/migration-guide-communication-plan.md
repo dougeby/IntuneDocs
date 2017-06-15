@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Communication plan 
+title: Plan communications 
 description: The purpose of this article is to provide a migration communication plan and strategy.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Communication plan
+# Plan communications 
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 

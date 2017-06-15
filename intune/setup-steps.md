@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Get Started
+title: Set up Intune
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 
-# Intune quick start guide
+# Set up Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
