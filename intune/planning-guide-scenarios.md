@@ -28,8 +28,6 @@ ms.custom: intune-classic
 
 # Identify mobile device management use-case scenarios
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
 Identifying your use-case scenarios is an important part of the planning process for a successful Intune deployment. Use-case scenarios are helpful because they let you segment your users into manageable groups by user type or role, and the ownership of the user's device (for example, company or personal).
 
 Let’s discuss a few examples to help your organization identify Intune use-case scenarios, as well as organizational groups, and mobile device platforms associated with each use case.
