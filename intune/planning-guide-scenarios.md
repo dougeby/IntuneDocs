@@ -65,7 +65,7 @@ Here are a few examples of use-case and sub-use-case scenarios:
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to enter your organization’s use-case and sub-use-case scenarios.
 
-## Identify organizational groups associated with your use-case scenarios
+## Organizational groups for your scenarios
 
 Now you need to identify the organizational groups that are associated with each use-case and sub-use-case scenario. For example:
 
@@ -78,11 +78,11 @@ Now you need to identify the organizational groups that are associated with each
 | BYOD | Executive | Marketing, Sales |
 
 
-## Identify mobile device platforms for use-case scenarios
+## Mobile device platforms for your scenarios
 
 The next step is to identify the mobile device platforms associated with each use-case scenario. There may be more than one.
 
-For example, your corporate use-case scenario may support iOS and Android Samsung KNOX device platforms, and your BYOD policy may include support for additional mobile device platforms like Android (non-Samsung KNOX) and Windows 10 Mobile. Building on the preceding examples, we've associated mobile device platforms with each use-case scenario.
+For example, your corporate use-case scenario may support iOS and Android Samsung KNOX device platforms. Your BYOD policy may include support for additional mobile device platforms like Android (non-Samsung KNOX) and Windows 10 Mobile. Building on the preceding examples, we've associated mobile device platforms with each use-case scenario.
 
 | **Use cases** | **Sub-use cases** | **Groups** | **Device platforms** |   
 |:---:|:---:|:---:|:---:|
