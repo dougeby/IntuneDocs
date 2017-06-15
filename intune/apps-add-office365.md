@@ -36,11 +36,11 @@ This app type makes it easy for you to assign Office 365 ProPlus apps to devices
 
 
 - This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
-- If you do install Office on a device that already has Office installed, consider the following:
+- If you do install Office on a device that already has Office installed, read the following considerations:
 	- Regardless of the version of Office you use, you cannot install 32-bit and 64-bit Office products on the same device.
-	- You cannot install the same version of the Click-to-run, and MSI versions of Office on the same device. However, you can do this if each install of Office is a different major version.
+	- You cannot install the same version of the Click-to-run, and MSI versions of Office on the same device but you can install different major versions.
 	- If you already have an earlier version of Office that you installed using Click-To-Run, you must remove any apps that you want to replace with the newer version. For example, if you have an older version of Word on the device, and want to assign the latest version, you must remove the old version first.
-	- If you have a different version of Office 365 on your devices to which you deploy the app bundle, assigning the Office 365 ProPlus bundle to the device might mean you have to change your Office subscription level.
+	- If a device already has Office 365 installed, assigning the Office 365 ProPlus bundle to the device might mean you have to change your Office subscription level.
 	- Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 
 ## Get started
@@ -54,53 +54,53 @@ This app type makes it easy for you to assign Office 365 ProPlus apps to devices
 
 ## Configure the app bundle
 
-In this step, you'll choose the Office apps you want to assign to devices.
+In this step, choose the Office apps you want to assign to devices.
 
 1.	On the **Add App** blade, choose **Configure App Bundle**.
-2.	On the **Configure App Bundle** blade, choose the Office apps that you want to bundle together and assign to devices. In addition to the standard office apps that are included with Office 365 ProPlus, you can add additional apps to the bundle for Microsoft Visio and Microsoft Project if you own licenses for them.
+2.	On the **Configure App Bundle** blade, choose the standard Office apps that you want to bundle together and assign to devices. Additionally, you can install apps for Microsoft Visio and Microsoft Project if you own licenses for them.
 3.	When you are done, click **OK**.
 
 ## Configure app information
 
-In this step, you'll provide information about the app bundle. This will help you identify it in the Intune console, and also help end users to find it in the Company Portal app.
+In this step, provide information about the app bundle. This information helps you to identify it in the Intune console, and also help end users to find it in the Company Portal app.
 
 1.	On the **Add App** blade, choose **App Information**.
 2.	On the **App Information** blade, specify the following information: 
-	- **Bundle Name** - Enter the name of the app bundle as it will be displayed in the company portal. Make sure all bundle names that you use are unique. If the same bundle name exists twice, only one of the apps will be displayed to users in the company portal.
+	- **Bundle Name** - Enter the name of the app bundle as it is displayed in the company portal. Make sure all bundle names that you use are unique. If the same bundle name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Bundle Description** - Enter a description for the app bundle. For example, you could list the apps you've selected to include.
 	- **Publisher** - Enter the name of the publisher of the app.
-	- **Category** - Optionally, select one or more of the built-in app categories, or a category you created. This will make it easier for users to find the app bundle when they browse the company portal.
+	- **Category** - Optionally, select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app bundle when they browse the company portal.
 	- **Display this bundle as a featured app in the Company Portal** - Display the app bundle prominently on the main page of the company portal when users browse for apps.
-	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
-	- **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
+	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+	- **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
 	- **Developer** - Optionally, enter the name of the app developer.
 	- **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
 	- **Notes** - Enter any notes you would like to associate with this app.
-	- **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
+	- **Upload Icon** - Upload an icon that is displayed with the app when users browse the company portal.
 3.	When you are done, click **OK**.
 
 >[!IMPORTANT]
-> After you have created the app bundle, you cannot edit it's properties. If you want to configure different properties, delete the app bundle and create a new one.
+> After you have created the app bundle, you cannot edit its properties. To configure different properties, delete the app bundle and create a new one.
 
 ## Configure app settings
 
-In this step, you'll configure installation options for the app bundle. The settings apply to all apps you added to the bundle.
+In this step, configure installation options for the app bundle. The settings apply to all apps you added to the bundle.
 
 1.	On the **Add App** blade, choose **App Settings**.
 2.	On the **App Settings** blade, specify the following information: 
 	- **Office version** - Choose whether you want to assign the 32-bit, or 64-bit version of Office. You can install the 32-bit version on both 32-bit, and 64-bit devices, but you can only install the 64-bit version on 64-bit devices.
-	- **Update Channel** - Choose how office will be updated on devices. For information about the different update channels, see Overview of update channels for Office 365 ProPlus. Choose from: 
+	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see Overview of update channels for Office 365 ProPlus. Choose from: 
 		- **Current**
 		- **Deferred**
 		- **First Release Current**
 		- **First Release Deferred**
-	- **Automatically accept the app end user license agreement** - Select this option if you don't require end users to accept the license agreement. Intune will then automatically accept the agreement.
-	- **Use shared computer activation** - Shared computer activation is used when multiple users share the same computer. For more information, see Overview of shared computer activation for Office 365 ProPlus.
-	- **Languages** - Office automatically installs in any supported languages that are installed with Windows on the end users device. Select this option if you want to install additional languages with the bundle.
+	- **Automatically accept the app end user license agreement** - Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
+	- **Use shared computer activation** - Shared computer activation is used when multiple users share a computer. For more information, see Overview of shared computer activation for Office 365 ProPlus.
+	- **Languages** - Office automatically installs in any supported languages that are installed with Windows on the end-users device. Select this option if you want to install additional languages with the bundle.
 
 ## Finish up
 
-When you are done, on the **Add App** blade, choose **Save**. The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+When you are done, on the **Add App** blade, choose **Save**. The app you have created is displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
 
 
 ## Error codes when installing the app bundle
