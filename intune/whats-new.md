@@ -34,7 +34,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
-## Week of June 16, 2017
+## Week of June 12, 2017
 
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
 
