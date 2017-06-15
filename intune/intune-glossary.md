@@ -110,11 +110,13 @@ ms.custom: intune-azure
 |||
 |-|-|
 |Managed Browser|A [web browsing application](/intune/app-configuration-managed-browser) that you can assign in your organization by using Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.|
+|MDM authority|The [MDM authority](/intune/mdm-authority-set) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
+|Mobile app configuration policy|An [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) policy that is used to supply settings to compatible apps when they are run, for example, a company name, or server address.|
+|Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune/app-provisioning-profile-ios) for iOS apps you assign do not expire.|
 |Mobile application management|[Mobile application management (MAM)](/intune/app-lifecycle) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 |Mobile device management|[Mobile device management (MDM)](/intune/device-lifecycle) lets you enroll devices in Intune so that you can provision, configure, monitor, and manage those devices.
-|MDM authority|The [MDM authority](/intune/mdm-authority-set) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
-|Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune/app-provisioning-profile-ios) for iOS apps you assign do not expire.|
-|Mobile app configuration policy|An [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) policy that is used to supply settings to compatible apps when they are run, for example, a company name, or server address.|
+
+
 
 ## O
 |||
