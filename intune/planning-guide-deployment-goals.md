@@ -84,7 +84,7 @@ Deployment objectives are the actions your organization can take to reach its In
 
 Deployment challenges are issues that are top of mind for an organization and that may have a negative impact on deployment. Sometimes they are related to past issues from previous projects that you would like to avoid or new issues related to the current deployment effort. Listed below are some examples of Intune deployment challenges along with potential mitigations.
 
--   Support readiness and end-user experience is not included in an initial project scope. This leads to poor end-user adoption and challenges for your support organization.
+-   Support readiness and end-user experience are not included in an initial project scope. This leads to poor end-user adoption and challenges for your support organization.
 
     -   **Mitigation:** Incorporate support training. Validate the end-user experience with success metrics in your deployment plan.
 
