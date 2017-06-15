@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Assign Intune licenses 
+title: Assign Intune licenses
 description: Assign licenses to users for your Intune subscription
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 06/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,6 +57,11 @@ When you assign an Intune for Education license, make sure that Intune A Direct 
 ![Image of product license set up](./media/i4e-set-licenses.png)
 
 See this [overview of School Data Sync](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US) to learn more about SDS.
+
+## How user and device licenses affect access to services
+* Each **user** that you assign a user software license to may access and use the online services and related software (including System Center software) to manage applications and up to 15 devices.
+* Each **device** that you assign a device software license to may access and use the online services and related software (including System Center software) for use by any number of users.
+* If a device is used by more than one user, each requires a device software license or all users require a user software license.
 
 ## Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
