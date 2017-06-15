@@ -37,11 +37,11 @@ ms.custom: intune-azure
 |-|-|
 |App assignment|Lets users [find, download, and install](/intune/app-management) the apps they need. This was previously known as *app deployment*.|
 |App configuration profile|Configures an [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) app with specific settings before it runs.|
-|App protection policy|Ensures that user's apps are compliant with your [company data protection policies](/intune/app-protection-policies).|
 |App monitoring|Lets you [review recent status and activity](/intune/apps-monitor) related to app assignment.|
+|App protection data removal task|[Removes app data](/intune/app-protection-policies) from the user's device.|
+|App protection policy|Ensures that user's apps are compliant with your [company data protection policies](/intune/app-protection-policies).|
 |App SDK|The [Microsoft Intune App SDK](/intune/app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune app protection policies.|
 |App uninstall action|Lets you [uninstall apps](/intune/apps-deploy) from user's devices.|
-|App protection data removal task|[Removes app data](/intune/app-protection-policies) from the user's device.|
 |App Wrapping Tool|A [command-line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line-of-business app, letting it be managed by an Intune app protection policy.|
 |Assignment action|A choice you make when you [assign an app](/intune/apps-deploy). You can choose to make the app installation mandatory (required), optional (Available), or you can uninstall the app.|
 |Available install|When you assign an app with this action, it is displayed in the company portal, and users can [install it on demand](/intune/apps-deploy).|
