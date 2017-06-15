@@ -364,8 +364,8 @@
 		},
 		{
 			"source_path": "intune/activate-your-product-key.md",
-			"redirect_url": "https://docs.microsoft.com/intune/account-sign-up",
-			"redirect_document_id": true
+			"redirect_url": "/intune/account-sign-up",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/account-portal-merged-with-Office-365.md",
@@ -434,8 +434,8 @@
 		},
 		{
 			"source_path": "intune/deploy-use/renew-a-symantec-code-signing-certificate.md",
-			"redirect_url": "https://docs.microsoft.com/intune/app-sideload-windows",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-sideload-windows",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/restrict-access-based-on-device-network-app-risk.md",
@@ -450,7 +450,7 @@
 		{
 			"source_path": "intune/deploy-use/whats-new-in-microsoft-intune.md",
 			"redirect_url": "/intune/whats-new",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/EULA/acceptable-use-policy-for-microsoft-intune.md",
@@ -499,8 +499,8 @@
 		},
 		{
 			"source_path": "intune/get-started/domain-names-for-microsoft-intune.md",
-			"redirect_url": "https://docs.microsoft.com/intune/custom-domain-name-configure",
-			"redirect_document_id": true
+			"redirect_url": "/intune/custom-domain-name-configure",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/get-started/integration-with-cloud-services.md",
@@ -509,8 +509,8 @@
 		},
 		{
 			"source_path": "intune/get-started/microsoft-intune-company-portal.md",
-			"redirect_url": "https://docs.microsoft.com/intune/company-portal-customize",
-			"redirect_document_id": true
+			"redirect_url": "/intune/company-portal-customize",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/get-started/network-infrastructure-requirements-for-microsoft-intune.md",
@@ -1735,7 +1735,7 @@
 		{
 			"source_path": "intune/introduction/whats-new.md",
 			"redirect_url": "/intune/whats-new",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/manage-apps/add-apps.md",
@@ -2465,7 +2465,7 @@
 		{
 			"source_path": "intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-lifecycle",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md",
@@ -2475,7 +2475,7 @@
 		{
 			"source_path": "intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-lifecycle",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/per-app-vpn-for-android-pulse-secure.md",
@@ -2650,7 +2650,7 @@
 		{
 			"source_path": "intune/deploy-use/sideload-apps-for-windows.md",
 			"redirect_url": "/intune/app-sideload-windows",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/skycure-mobile-threat-defense-connector.md",
@@ -2930,7 +2930,7 @@
 		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md",
 			"redirect_url": "/intune/custom-domain-name-configure",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md",
@@ -2960,7 +2960,7 @@
 		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md",
 			"redirect_url": "/intune/company-portal-customize",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md",
@@ -3375,7 +3375,7 @@
 		{
 			"source_path": "intune/whats-new/whats-new-in-microsoft-intune.md",
 			"redirect_url": "/intune/whats-new",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/introduction-to-microsoft-intune.md",
@@ -3535,7 +3535,7 @@
 		{
 			"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md",
 			"redirect_url": "/intune/account-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md",
