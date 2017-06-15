@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Identifying your use-case scenarios is an important part of the planning process for a successful Intune deployment. Use-case scenarios are helpful because they let you segment your users into manageable groups by user type or role, and the ownership of the user's device (e.g. company or personal).
+Identifying your use-case scenarios is an important part of the planning process for a successful Intune deployment. Use-case scenarios are helpful because they let you segment your users into manageable groups by user type or role, and the ownership of the user's device (for example, company or personal).
 
 Let’s discuss a few examples to help your organization identify Intune use-case scenarios, as well as organizational groups, and mobile device platforms associated with each use case.
 
@@ -55,7 +55,7 @@ Determine if each use-case scenario also includes sub-use-cases. For example, yo
 
 Here are a few examples of use-case and sub-use-case scenarios:
 
-| **Use cases** | **Sub use cases** |
+| **Use cases** | **Sub-use cases** |
 |:---:|:---:|
 | Corporate | Information worker |              
 | Corporate | Executives |           
@@ -84,7 +84,7 @@ The next step is to identify the mobile device platforms associated with each us
 
 For example, your corporate use-case scenario may support iOS and Android Samsung KNOX device platforms, and your BYOD policy may include support for additional mobile device platforms like Android (non-Samsung KNOX) and Windows 10 Mobile. Building on the preceding examples, we've associated mobile device platforms with each use-case scenario.
 
-| **Use cases** | **Sub use cases** | **Groups** | **Device platforms** |   
+| **Use cases** | **Sub-use cases** | **Groups** | **Device platforms** |   
 |:---:|:---:|:---:|:---:|
 | Corporate | Information worker | HR, Finance | iOS |                                                           
 | Corporate | Executives | HR, Finance | iOS |                                                           
