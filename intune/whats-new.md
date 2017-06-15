@@ -34,11 +34,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
-## Week of June 16, 2017
+## Week of June 12, 2017
 
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
 
-The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1704). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. 
+The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. 
 
 ## Week of June 5, 2017
 
