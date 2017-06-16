@@ -16,6 +16,7 @@
 ## [Common scenarios](common-scenarios.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
+## [Intune service description](microsoft-intune-service-description.md)
 
 <!--# Get started
 ## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
