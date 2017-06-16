@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Develop a rollout communication plan 
-description: This article helps to develop a rollout communication plan for a Microsoft Intune cloud-only design and implementation.
+title: Develop a rollout communication plan
+description: This article helps you develop a rollout communication plan for your Intune deployment.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +28,7 @@ ms.custom: intune-classic
 
 # Develop a rollout communication plan
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-In previous sections, we discussed identifying the organization’s groups that are targeted for Intune management, the timelines for the Intune rollout, and the enrollment options. You now need to develop a communications plan for your Intune rollout. Your Intune rollout communication plan should include four areas:
+Good change management relies on clear and helpful communications about the upcoming changes. To smooth the path of your Intune deployment, your rollout communication plan should include four areas:
 
 -   What information is to be communicated
 
@@ -44,21 +42,23 @@ Let’s review each area in more detail.
 
 ## What needs to be communicated?
 
-Determining what information to be communicated depends on when in the Intune rollout process you are communicating. Some organizations might decide to communicate in waves to their organizational groups and users, starting with an Intune rollout kickoff, followed by pre-enrollment and with post-enrollment. Let’s discuss the type of information that could be communicated in each wave.
+Determining what information to be communicated depends on when in the Intune rollout process you are communicating. You might decide to communicate in waves to your organizational groups and users, starting with an Intune rollout kickoff, followed by pre-enrollment, and follow up with post-enrollment. Let’s discuss the type of information that could be communicated in each wave.
 
-**Kickoff wave:** Broad communications that introduces the Intune project itself, covering areas like what is Intune, why are they adopting Intune (for example, benefits to the organization and users) and high level plan of the deployment and rollout effort.
+**Kickoff wave** <br/>Broad communications that introduces the Intune project itself, covering areas like what is Intune, why are they adopting Intune (for example, benefits to the organization and users) and a high-level plan of the deployment and rollout effort.
 
-**Pre-enrollment wave**: Broad communications that includes additional information about Intune and complementary offerings (for example, Office, Outlook, OneDrive), user resources and specific timelines for when organization groups and users are scheduled to receive Intune.
+**Pre-enrollment wave**<br/> Broad communications that includes additional information about Intune and complementary offerings (for example, Office, Outlook, OneDrive), user resources, and specific timelines for when organization groups and users are scheduled to receive Intune.
 
-**Enrollment wave:** Communications targeting organization groups/users that are scheduled to receive Intune, informing the users that they are ready to receive Intune and providing enrollment instructions, along with contact information for requesting assistance or asking questions.
+**Enrollment wave**<br/> Communications targeting organization groups and users that are scheduled to receive Intune, informing the users that they are ready to receive Intune, and providing enrollment instructions along with contact information for getting assistance or asking questions.
 
-**Post enrollment wave:** Communications targeting organization groups/users that have enrolled in Intune, providing additional resources that might be helpful to the user and collecting feedback about their experience during and after enrollment.
+**Post enrollment wave**<br/> Communications targeting organization groups and users that have enrolled in Intune, providing additional resources that might be helpful to the user, and collecting feedback about their experience during and after enrollment.
+
+You may find this [end-user enrollment guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) helpful. You can use it as is or modify for your organization.
 
 ## Communication delivery methods
 
-There are several delivery methods you can use to communicate Intune rollout information to your targeted organizational groups and users. The following list identifies examples of communications delivery methods and the wave you can use the method with:
+There are several delivery methods you can use to communicate Intune rollout information to your targeted organizational groups and users. The following list shows some examples and the wave you can use the method with:
 
--   Organizational wide in-person or Skype meetings used for kickoff wave
+-   Organizational-wide in-person or Skype meetings used for kickoff wave
 
 -   Email used for pre-enrollment, enrollment, and post-enrollment waves
 
@@ -68,7 +68,9 @@ There are several delivery methods you can use to communicate Intune rollout inf
 
 ## Communications timeline
 
-After determining what is to be communicated and the method used for communications, the next step is to determine the timeline for your communications that includes when and who would receive the communications. For example, the initial Intune project kickoff communications can target the entire organization or just a subset, and take place over several weeks before the Intune rollout begins. After that, information could be communicated in waves to organizational groups and users, aligned with their Intune rollout schedule. The following example is a sample high-level Intune rollout communications plan:
+After determining what you need to communicated and the methods you will use, determine the timeline for your communications that includes when and who would receive the communications.
+
+For example, the initial Intune project kickoff communications can target the entire organization or just a subset, and take place over several weeks before the Intune rollout begins. After that, information could be communicated in waves to organizational groups and users, aligned with their Intune rollout schedule. The following example is a sample high-level Intune rollout communications plan:
 
   | **Communication plan** | **July** | **August** | **September** | **October** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -82,6 +84,8 @@ After determining what is to be communicated and the method used for communicati
 | Enrollment email | Third week | Third week | Third week | Third week |
 | Wave 5 | IT | Sales and Marketing | Retail | HR, Finance and Executives |
 | Post-enrollment email | Fourth week | Fourth week | Fourth week | Fourth week |
+
+You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to develop your communication plan.
 
 ## Next section
 
