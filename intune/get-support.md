@@ -6,8 +6,8 @@ title: How to get support for Microsoft Intune
 titleSuffix: "Intune on Azure"
 description: Support is available both online and by telephone for paid and trial subscriptions."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 06/14/2017
 ms.topic: article
