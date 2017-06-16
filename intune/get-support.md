@@ -49,7 +49,7 @@ If you are unable to find answers by using the self-help resources, you can crea
 - Engineering teams can prioritize their work in product areas where the most incidents are being generated.
 - It's easier to escalate challenging issues to the correct resource.
 
-### File an Azure support ticket
+### File a new support request
 As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
 
 1. Use your Intune admin credentials to log on to [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
