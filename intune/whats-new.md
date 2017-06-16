@@ -36,7 +36,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of June 12, 2017
 
-### New menu action to easily remove Company Portal. <!--1164569-->
+### New menu action to easily remove Company Portal <!--1164569-->
 Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).
 
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
