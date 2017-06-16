@@ -277,3 +277,6 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [Glossary](intune-glossary.md)
