@@ -46,7 +46,7 @@ Second, determine the time frame for each targeted group. This task typically re
 Organizations commonly choose to start the Intune rollout with an initial pilot, targeting a small group of users in the IT department. The pilot can be expanded to include a broader set of IT users and may include participation from other organizational groups.
 
 ### Pilot
-The first phase to rollout should be to pilot users. The pilot users should understand they are the first users in a new solution and be willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases. These users should not be executives or VIPs.
+The first phase to rollout should be to pilot users. The pilot users should understand they are the first users in a new solution. They must be willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases. These users should not be executives or VIPs.
 
 The pilot is a good opportunity for you to test the [challenges](planning-guide-deployment-goals.md) and refine [requirements](planning-guide-requirements) you gathered earlier.
 
@@ -89,7 +89,7 @@ This is known as a "white glove" approach. An IT team member helps the user thro
 
 ### IT tech fair
 
-Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group sets up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions, and receive assistance with the enrollment process. Leveraging this option can be beneficial for both the IT group and users, especially during early phases of Intune rollout.
+Another option for Intune user enrollment is to have an IT technical fair. At this event, the IT group sets up an Intune enrollment assistance booth where users could receive information on Intune enrollment, ask questions, and receive assistance with the enrollment process. This option can be beneficial for both the IT group and users, especially during early phases of Intune rollout.
 
 Here’s an updated example of the above Intune rollout plan to include enrollment approaches:
 
