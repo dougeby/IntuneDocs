@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -16,7 +16,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 #ms.reviewer: angrobe
