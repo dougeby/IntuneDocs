@@ -64,8 +64,7 @@ Multi-identity support is a feature of the SDK that enables coexistence of polic
 For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android. When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.
 
 The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.
-
-
+ 
 ### App protection without device enrollment
 
 >[!IMPORTANT]

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Communication plan 
+title: Plan communications 
 description: The purpose of this article is to provide a migration communication plan and strategy.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-## Communication plan
+# Plan communications 
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -58,10 +58,10 @@ After a certain period, you can begin enforcing compliance through conditional a
 
 Intune has additional template resources to promote device enrollment to end-users:
 
--   Refer to [What to tell your end users about using Microsoft Intune](/intune-classic/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) for further guidance on enrollment steps per mobile OS platform
+-   Refer to [How to educate your end users about Microsoft Intune](/intune/end-user-educate) for further guidance on enrollment steps per mobile OS platform
 
 -   Download a customizable, [end-user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 
 ## Next steps
 
-[Phase 2: Drive end-user adoption with conditional access](migration-guide-drive-adoption.md)
+[Drive end-user adoption with conditional access](migration-guide-drive-adoption.md)

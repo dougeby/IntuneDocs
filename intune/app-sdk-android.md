@@ -7,7 +7,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -327,10 +327,6 @@ SaveLocation service, String username);
 
 
 	* SaveLocation.ONEDRIVE_FOR_BUSINESS
-	* SaveLocation.SHAREPOINT
-	* SaveLocation.BOX
-	* SaveLocation.DROPBOX
-	* SaveLocation.GOOGLE_DRIVE
 	* SaveLocation.LOCAL
 	* SaveLocation.OTHER
 

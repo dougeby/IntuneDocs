@@ -30,31 +30,29 @@ ms.custom: intune-enduser
 
 # Enroll your Windows 10 device in Intune
 
-1.  Open the Windows **Settings** app by searching for "settings" in the search bar.
-
   > [!NOTE]
   > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
-2.  Go to **Start**.
+1.  Go to **Start**.
 
   - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
   - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
 
-3. Open the Windows **Settings** app by searching for "settings" in the search bar.
+2. Open the Windows **Settings** app by searching for "settings" in the search bar.
 
-4. Select **Accounts**.
+3. Select **Accounts**.
 
     ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-5. Select **Your account**.
+4. Select **Your account**.
 
     ![Select your account](./media/W10-enroll-2-accounts-your-account.png)
 
-6. Select **Add a work or school account**.
+5. Select **Add a work or school account**.
 
 	![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
 
-7. Sign in with your work or school credentials.
+6. Sign in with your work or school credentials.
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)
 

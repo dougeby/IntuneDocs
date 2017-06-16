@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune roles (RBAC) for Microsoft IntunetitleSuffix: "Intune on Azure"
-description: Learn how RBAC lets you control who can perform actions and make changes."
+title: RBAC with IntunetitleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,152 +26,111 @@ ms.custom: intune-azure
 
 ---
 
-# Intune roles (RBAC) for Microsoft Intune
+# Role-based administration control (RBAC) with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+RBAC helps you control who can perform various Intune tasks within your organization, and who those tasks apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles. A role is defined by:
 
-In simple terms, Intune **roles** (or RBAC) help you control who can perform various Intune actions, and who those actions apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
+- **Role definition**: The name of a role, the resources it manages, and the permissions granted for each resource.
+- **Members**: The user groups that are granted the permissions.
+- **Scope**: The user or device groups that the members can manage.
+- **Assignment**: When the definition, members, and scope have been configured, the role is assigned.
 
-A role is defined by:
+![Intune RBAC example](./media/intune-rbac-1.PNG)
 
-- **Definition** - The name of a role, and the permissions it configures.
-- **Members** - The user, or group of users who will be given these permissions.
-- **Scope** - The users or devices that a specified person (the member) can manage.
-- **Assignment** - When the definition, members, and scope have been configured, the role is assigned.
+Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
+
+- **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
+
+- **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, this role provides the ability to manage users, devices, and create and manage groups.
+
+	> [!IMPORTANT]
+	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
+
+	> [!TIP]
+	> Intune also shows three Azure AD extensions: **Users**, **Groups** and **Conditional access** which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
+
+## Roles created in the Intune classic console
+
+Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic console to Intune on Azure. You need to re-assign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
+
+> [!IMPORTANT]
+> You might need to keep the Intune Service Administrator access in the classic console if your admins still need access to manage PC’s using with Intune.
 
 ## Built-in roles
 
-The following roles are built into Intune and you can either customize these roles, or assign them to groups with no further configuration.
+The following roles are built into Intune and you can assign them to groups with no further configuration:
 
-- **Intune Administrator** - Has full permissions for all Intune operations.
-- **Application Manager** - Manage and deploy applications and profiles.
-- **Configuration Policy Manager** - Manage and deploy configuration settings and profiles.
-- **Helpdesk Operator** - Perform remote tasks and view user and device	information.
-- **Read Only Operator** - View information in the Intune portal without the ability to make changes.
+- **Help Desk Operator**: Performs remote tasks on users and devices and can assign applications or policies to users or devices. 
+- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment and corporate device identifiers.
+- **Read Only Operator**: Views user, device, enrollment, configuration and application information and cannot make changes to Intune.
+- **Application Manager**: Manages mobile and managed applications, and can read device information.
 
+### To assign a built-in role
 
-## Custom roles
+1. On the **Intune roles**, choose the built-in role you want to assign.
 
-If none of the built-in roles suit your needs, you can create your own role by choosing settings that span many of the capabilities of Intune. You can see a list of the available settings later in this topic.
+2. On the <*role name*> - **Properties** blade, choose **Manage**, then **Assignments**.
 
-### Example
+	> [!NOTE] 
+	> You cannot delete or edit the built-in roles
+	
+3. On the custom role blade, choose **Assign**.
 
-You hire a new IT admin who will be in charge of deploying and managing apps to users in your London office. The users are in an Azure AD group named **London**. You want to ensure the IT admin cannot deploy apps to users in any other office. You take the following actions:
-
-- Assign the built-in **Application Manager** role with the following properties:
-	- **Members** - Select a group that contains the IT admin who will be deploying apps
-	- **Scope** - Select the **London** Azure AD group.
-
-	>[!IMPORTANT]
-	>To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
-	>- **Global AAD Admin**
-	>- **Intune Service Admin**
-
-### How to create a custom role
-
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Intune roles**.
-![Access control workload](./media/axxess-control.png)
-1. On the **Roles** blade of the **Access control** workload, choose **Add custom**.
-2. On the **Add Custom Role** blade, enter a name and description for the new role, and then click **Permissions**.
-3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the custom role settings reference list later in this topic to help you.
-4. When you are done, click **OK**.
-5. On the **Add Custom Role** blade, click **Create**.
-
-The new role is displayed in the list on the **Roles** blade.
-
-## How to assign a role
-
-1. On the **Roles** blade of the **Access control** workload, choose the built-in, or custom role you want to assign.
-2. On the <*role name*> - **Properties** blade, choose **Manage** > **Assignments**. On this blade, you can also edit or delete existing roles.
-3. On the next blade, choose **Assign**.
 4. On the **Role Assignments** blade, enter a **Name** and optional **Description** for the assignment, and then choose the following:
 	- **Members** - Select a group that contains the user you want to give the permissions to.
 	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
-5. When you are done, click **OK**.
+<br></br>
+5. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
 
-The new assignment is displayed in the list of assignments.
+### Intune RBAC table
 
-## Custom role settings reference
+- Download the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to see more details on what each role can do.
 
-When you create a custom role, you can configure one or more of the following settings:
+## Custom roles
 
-### Device configurations
+You can create a custom role that includes any permissions required for a specific job function. For example, if an IT department group manages applications, policies and configuration profiles, you can add all those permissions together in one custom role.
 
-|||
-|-|-|
-|**Assign**|Assign device profiles to groups.|
-|**Create**|Create device profiles.|
-|**Delete**|Delete device profiles.|
-|**Read**|Read device profiles and their properties.|
-|**Update**|Update existing device profiles.|
+> [!IMPORTANT]
+> To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+> - **Global Administrator**
+> - **Intune Service Administrator**
 
-### Managed apps
+### To create a custom role
 
-|||
-|-|-|
-|**Assign**|Assign managed apps to groups.|
-|**Create**|Add new managed apps to Intune.|
-|**Delete**|Delete managed apps.|
-|**Read**|Read managed apps and their properties.|
-|**Update**|Update existing managed apps.|
-|**Wipe**|Wipe managed apps from devices.|
+1. Sign into the [Azure portal](https://portal.azure.com) with your Intune credentials.
 
-### Managed devices
+2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
 
-|||
-|-|-|
-|**Delete**|Delete managed devices from Intune.|
-|**Read**|View information about managed devices in the Intune portal.|
-|**Update**|Update information about managed devices.|
+3. Choose **Intune**, the Intune Dashboard opens, choose **Intune roles**.
 
-### Mobile apps
+4. On the **Intune roles** blade, choose **Intune roles**, choose **Add custom**.
 
-|||
-|-|-|
-|**Assign**|Assign mobile apps to groups.|
-|**Create**|Add new mobile apps to Intune.|
-|**Delete**|Delete mobile apps.|
-|**Read**|Read mobile apps and their properties.|
-|**Update**|Update existing mobile apps.|
+5. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-### Organization
+3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
-|||
-|-|-|
-|**Read**|Read tenant settings.|
-|**Update**|Update tenant settings.|
+4. When you are done, choose **OK**.
 
-### Remote tasks
+5. On the **Add Custom Role** blade, click **Create**. The new role is displayed in the list on the **Intune roles** blade.
 
-|||
-|-|-|
-|**Bypass Activation Lock**|Remove the activation lock from an iOS device without the user’s Apple ID and password. |
-|**Disable Lost Mode**|Disable Lost Mode. Lost mode lets you specify a message and a phone number that will be displayed on the lock screen of the device.|
-|**Enable Lost Mode**|Enable Lost Mode. Lost mode lets you specify a message and a phone number that will be displayed on the lock screen of the device.|
-|**Locate Device**|-|
-|**Reboot Now**|Causes the device to restart.|
-|**Remote Lock**|Locks a device. The device owner must use their passcode to unlock it.|
-|**Reset Passcode**|Generates a new passcode for the device which will be displayed on the <device name> Overview blade.|
-|**Retire**|Removes only company data managed by Intune. Does not remove personal data from the device.|
-|**Wipe**|Returns the device to its default settings.|
+### To assign a custom role
 
+1. On the **Intune roles**, choose the custom role you want to assign.
 
+2. On the <*role name*> - **Properties** blade, choose **Manage**, then **Assignments**. On this blade, you can also edit or delete existing roles.
 
-### Telecom expenses
+3. On the custom role blade, choose **Assign**.
 
-|||
-|-|-|
-|**Read**|Read Telecom Expense Management (TEM) settings.|
-|**Update**|Update Telecom Expense Management (TEM) settings.|
+4. On the **Role Assignments** blade, enter a **Name** and optional **Description** for the assignment, and then choose the following:
+	- **Members** - Select a group that contains the user you want to give the permissions to.
+	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
+<br></br>
+5. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
 
-### Terms and conditions
+## Next steps
 
-|||
-|-|-|
-|**Assign**|Assign terms and conditions to groups.|
-|**Create**|Create terms and conditions settings.|
-|**Delete**|Delete terms and conditions settings.|
-|**Read**|Read terms and conditions settings in the Intune portal.|
-|**Update**|Update existing terms and conditions settings.|
+[Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
+
+## See also
+
+[Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
