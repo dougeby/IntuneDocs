@@ -55,7 +55,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 2. In the Azure Help and support workspace, select **New support request**.
 
-	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+	![Screenshot of Azure portal help and support page with New support request link highlighted](../media/azure-support-ticket-link.png)
 3. On the **Basics** blade, for most Intune 	technical support issues, choose the following:
 	- **Issue type**: **Technical**
 	- **Service**: **Microsoft Intune**
@@ -64,14 +64,14 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	Choose **Next** to continue.
 4. On the **Problem** screen, specify details such as **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the best subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
 
-	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
+	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](../media/support-need-solutions.png)
 
 	Provide **Details**, **Date**, **Time** and supplemental data can help us research and resolve your problem, and then choose **Next**.
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
 ## Additional resources
-- [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
+- [Contact assisted phone support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md)
 - [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)
 - [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Billing and subscription management support](http://support.microsoft.com/oas/default.aspx?prid=15371)
