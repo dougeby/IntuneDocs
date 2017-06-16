@@ -48,9 +48,9 @@ Organizations commonly choose to start the Intune rollout with an initial pilot,
 ### Pilot
 The first phase to rollout should be to pilot users. The pilot users should understand they are the first users in a new solution. They must be willing to provide feedback to help improve configuration, documentation, notifications, and ease the way for all other users in later rollout phases. These users should not be executives or VIPs.
 
-The pilot is a good opportunity for you to test the [challenges](planning-guide-deployment-goals.md) and refine [requirements](planning-guide-requirements) you gathered earlier.
+The pilot is a good opportunity for you to test the [challenges](planning-guide-deployment-goals.md) and refine [requirements](planning-guide-requirements.md) you gathered earlier.
 
-Include your [communication](planning-guide-communication-plan.md) plan, [support](planning-guide-support-plan.md) plan, and [testing and validation](planning-guide-test-validation) to work out any problems while the impact to users is still small.
+Include your [communication](planning-guide-communication-plan.md) plan, [support](planning-guide-support-plan.md) plan, and [testing and validation](planning-guide-test-validation.md) to work out any problems while the impact to users is still small.
 
 ### Production rollout
 After a successful pilot, you're ready to start a full production rollout, targeting the rest of your organization’s groups. Some examples of different rollout groups and phases are:
