@@ -55,7 +55,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
-2. In the Azure Help and support workspace, select **New support request**.
+2. On the Azure Help and support page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](media/azure-support-ticket-link.png)
 3. On the **Basics** blade, for most Intune 	technical support issues, choose the following:
@@ -64,11 +64,11 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
 
 	Choose **Next** to continue.
-4. On the **Problem** screen, specify details such as **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the best subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
+4. On the **Problem** blade, select **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the right subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
 
 	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](media/support-need-solutions.png)
 
-	Provide **Details**, **Date**, **Time** and supplemental data can help us research and resolve your problem, and then choose **Next**.
+	Provide **Details**, **Date**, **Time** and supplemental data to help us research and resolve your problem, and then choose **Next**.
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
