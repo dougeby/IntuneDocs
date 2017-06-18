@@ -72,6 +72,9 @@ The token is displayed in the list of tokens blade.
 
 You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
 
+> [!NOTE]
+> Microsoft Intune will only sync information of Apps which are publicly available through the iTunes Store. **Custom B2B Apps for iOS** are not yet supported. If your scenario targets such apps, the app information will not be synchronized.
+
 ## To assign a volume-purchased app
 
 1. In the **Mobile Apps** workload, choose **Manage** > **Licensed Apps**.
