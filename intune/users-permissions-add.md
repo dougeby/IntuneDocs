@@ -35,7 +35,7 @@ This topic tells administrators how they can add users to Intune and what admini
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *tenant administrator*, *service administrator*, and *device enrollment manager permissions*.
 
 ## Add users to Intune
-You can manually add users to your Intune subscription via the [Office 365 portal](www.office.com/signin), but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+You can manually add users to your Intune subscription via the [Office 365 portal](https://www.office.com/signin), but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
   ![Screenshot of the Office 365 Admin](media/office-add-user.png)
 
