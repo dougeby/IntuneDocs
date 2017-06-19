@@ -34,39 +34,24 @@ This topic tells administrators how they can add users to Intune and what admini
 
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *tenant administrator*, *service administrator*, and *device enrollment manager permissions*.
 
-This topic helps you:
-
-- [Add users to Intune](#add-users-to-intune)
-- [Grant additional Intune permissions](#grant-intune-permissions) including:
-  - [Tenant administrator](#tenant-administrator)
-  - [Service administrator](#service-administrator)
-  - [Device enrollment managers](#device-enrollment-managers)
-
 ## Add users to Intune
-You can manually add users to your Intune subscription via the Office 365 portal, but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+You can manually add users to your Intune subscription via the [Office 365 portal](www.office.com/signin), but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
   ![Screenshot of the Office 365 Admin](media/office-add-user.png)
 
-### Sync Active Directory and add users to Intune
-You can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Azure Active Directory (Azure AD) which includes Intune users. Having your on-premises Active Directory service connected with all of your Azure Active Directory-based services makes managing user identity much simpler. You can also configure single sign-on features to make the authentication experience for your users familiar and easy. By linking the same [Azure AD tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) with multiple services, the user accounts that you have previously synchronized are available to all cloud-based services.
-
-### How to sync on-premises users with Azure AD
-The only tool that you need to synchronize your user accounts with Azure AD is the [Azure AD Connect wizard](https://www.microsoft.com/download/details.aspx?id=47594). The Azure AD Connect wizard provides a simplified and guided experience for connecting your on-premises identity infrastructure to the cloud.  Choose your topology and needs (single or multiple directories, password sync or federation), and the wizard will deploy and configure all components required to get your connection up and running. Including: sync services, Active Directory Federation Services (AD FS), and the Azure AD PowerShell module.
-
-> [!TIP]
-> Azure AD Connect encompasses functionality that was previously released as Dirsync and Azure AD Sync. Learn more about [directory integration](http://technet.microsoft.com/library/jj573653.aspx). To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
-
 ## Grant Intune permissions
 
-After you've added users to your Intune subscription, we recommend that you grant a few user accounts administrative permission. To administer Intune, you can give users three types of Intune permission
--   **Tenant administrator**: Use the Office 365 portal to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use Intune.
--   **Service administrator**: Use the Microsoft Intune administrator console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
--   **Device enrollment manager**: Use the Microsoft Intune administrator console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
+After you've added users to your Intune subscription, we recommend that you grant a few user accounts administrative permission. To administer Intune, you can give users three types of Intune permission:
+-   [Tenant administrator](#tenant-administrator): Use the Office 365 portal to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use Intune.
+-   [Service administrator](#service-administrator): Use the Microsoft Intune administrator console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
+-   [Device enrollment managers](#device-enrollment-managers): Use the Microsoft Intune administrator console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
 
+![Image of Office 365 portal assign Roles.](./media/office-assign-roles.png)
 
 ### Tenant administrator
 
 Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage. Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles. Intune uses the following roles:
+
 - **Global administrator** - Accesses all administrative features in Intune. By default the person who signs up for Intune becomes a Global admin. Global admins are the only admins who can assign other admin roles. You can have more than one global admin in your organization. As a best practice we recommend that only a few people in your company have this role to reduce the risk to your business.
 - **Billing administrator** - Makes purchases, manages subscriptions, manages support tickets, and monitors service health.
 - **Password administrator** - Resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
@@ -105,3 +90,12 @@ As a service administrator, use this portal to manage day-to-day operations incl
 ### Device enrollment managers
 
 Device enrollment managers are standard user accounts with additional permission to enroll more many userless devices. By default, each Intune user can enroll up to fifteen devices. As an administrator, you can give a user account the device enrollment manager permission. That account can enroll large numbers of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required. For more information, see [Device enrollment manager](device-enrollment-manager-enroll.md) ([Classic console](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)).
+
+## Sync Active Directory and add users to Intune
+You can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Azure Active Directory (Azure AD) which includes Intune users. Having your on-premises Active Directory service connected with all of your Azure Active Directory-based services makes managing user identity much simpler. You can also configure single sign-on features to make the authentication experience for your users familiar and easy. By linking the same [Azure AD tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) with multiple services, the user accounts that you have previously synchronized are available to all cloud-based services.
+
+### How to sync on-premises users with Azure AD
+The only tool that you need to synchronize your user accounts with Azure AD is the [Azure AD Connect wizard](https://www.microsoft.com/download/details.aspx?id=47594). The Azure AD Connect wizard provides a simplified and guided experience for connecting your on-premises identity infrastructure to the cloud.  Choose your topology and needs (single or multiple directories, password sync or federation), and the wizard will deploy and configure all components required to get your connection up and running. Including: sync services, Active Directory Federation Services (AD FS), and the Azure AD PowerShell module.
+
+> [!TIP]
+> Azure AD Connect encompasses functionality that was previously released as Dirsync and Azure AD Sync. Learn more about [directory integration](http://technet.microsoft.com/library/jj573653.aspx). To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).

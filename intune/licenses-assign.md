@@ -42,6 +42,8 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 
 3.  Toggle **Intune** or **Enterprise Mobility + Security** to **On**, and choose **Save**.
 
+![Image of Office 365 portal assign Product license.](./media/office-assign-license.png)
+
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
 > [!NOTE]
