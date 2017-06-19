@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Add users and grant permissions 
+title: Add users and grant permissions
 description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,9 @@ This topic helps you:
   - [Device enrollment managers](#device-enrollment-managers)
 
 ## Add users to Intune
-You can manually add users to your Intune subscription via the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+You can manually add users to your Intune subscription via the Office 365 portal, but they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+
+  ![Screenshot of the Office 365 Admin](media/office-add-user.png)
 
 ### Sync Active Directory and add users to Intune
 You can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Azure Active Directory (Azure AD) which includes Intune users. Having your on-premises Active Directory service connected with all of your Azure Active Directory-based services makes managing user identity much simpler. You can also configure single sign-on features to make the authentication experience for your users familiar and easy. By linking the same [Azure AD tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) with multiple services, the user accounts that you have previously synchronized are available to all cloud-based services.
