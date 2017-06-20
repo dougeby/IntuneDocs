@@ -51,7 +51,7 @@ ms.custom: intune-azure
 - 	**Action center notifications (mobile only)**	- Enable or disable action center notifications on the device lock screen
 (Windows 10 Mobile only).
 - 	**Cortana** - Enable or disable the Cortana voice assistant.
-- 	**Voice recording (mobile only)** - Allow or block use of the device's voice recorder.
+- 	**Voice recording (mobile only)** - Allow or block use of the device voice recorder.
 - 	**Power and sleep settings modification (desktop only)** - Prevents the end user from changing power and sleep settings on the device.
 - 	**Region settings modification (desktop only)** - Prevents the end user from changing the region settings on the device.
 - 	**Language settings modification (desktop only)** - Prevents the user from changing the language settings on the device.
