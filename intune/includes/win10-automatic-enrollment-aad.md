@@ -34,6 +34,9 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune when a
     - **MDM Discovery URL**
     - **MDM Compliance URL**
 
+    > [!IMPORTANT]
+    > If you configure both **MDM URLs** and **MAM URLs**, and then users try to workplace join their personal devices, then only MAM is enabled.
+
 6. Select **Save**.
 
 By default, two-factor authentication is not enabled for the service. However, two-factor authentication is recommended when registering a device. Before requiring two-factor authentication for this service, you must configure a two-factor authentication provider in Azure Active Directory and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
