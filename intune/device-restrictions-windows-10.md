@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10titleSuffix: "Intune on Azure"
+title: Intune device restriction settings for Windows 10
+titleSuffix: "Intune on Azure"
 description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
 keywords:
 author: robstackmsft
@@ -79,7 +80,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- 	**Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows desktop wallpaper. Users will not be able to change this.
+- 	**Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users will not be able to change this.
 
 ## Privacy
 
@@ -118,7 +119,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
 - 	**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type. This helps to minimize network bandwidth use between Edge and Microsoft services.
 -	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
-- 	**SmartScreen** - Enables or disables SmartScreen which blocks fraudulent web sites.
+- 	**SmartScreen** - Enables or disables SmartScreen, which blocks fraudulent web sites.
 - 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
 - 	**JavaScript** - Allows scripts, such as Javascript, to run in the Edge browser.
@@ -132,9 +133,9 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Extensions** - Allow the end user to install Edge extensions on the device.
 - 	**InPrivate browsing** - Prevent the end user from opening InPrivate browsing sessions.
 -	**Show first run page** – Stops the introduction page from appearing the first time you run Edge.
-	-	**First run URL** – Specifies the URL of a page that will be displayed the first time a user runs Edge (Windows 10 Mobile only).
-- 	**Homepages** - Add a list of sites that will be used as home pages in the Edge browser (desktop only).
-- 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that will be opened when Edge starts.
+	-	**First run URL** – Specifies the URL of a page that is displayed the first time a user runs Edge (Windows 10 Mobile only).
+- 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
+- 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
 - 	**Block access to about flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
 - 	**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.
 - 	**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.
@@ -163,7 +164,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Bluetooth pre-pairing** – Lets you configure specific Bluetooth devices to automatically pair with a host device.
 - 	**Bluetooth advertising** - Lets the device receive advertisements over Bluetooth.
 - 	**Device Bluetooth name** – Specify the Bluetooth name for a device. If you don’t specify a name, the default radio name is used.
-- 	**Connected devices service** – Lets you choose whether to allow the connected devices service which enables discovery and connection to other Bluetooth devices.
+- 	**Connected devices service** – Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
 - 	**NFC**	- Lets the user enable and configure Near Field Communications capabilities on the device.
 - 	**Wi-Fi** - Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
 - 	**Automatically connect to Wi-Fi hotspots** - Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
@@ -189,25 +190,25 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 - 	**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
 - 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
-- 	**Network Inspection System (NIS)**	- The Network Inspection System (NIS) helps to protect devices against network-based exploits by using the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+- 	**Network Inspection System (NIS)**	- NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
 - 	**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.
 - 	**Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
 - 	**End user access to Defender**	- Controls whether the Windows Defender user interface is hidden from end users.
-When this setting is changed, it will take effect the next time the end user's PC is restarted.
-- 	**Signature update interval (in hours)** - Specify the interval at which Defender will check for new signature files.
+When this setting is changed, it takes effect the next time the end user's PC is restarted.
+- 	**Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.
 - 	**Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.
 - 	**Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.
 - 	**CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
 - 	**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.
 - 	**Scan incoming mail messages**	- Allows Defender to scan email messages as they arrive on the device.
 - 	**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.
-- 	**Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender will be unable to remove any malware found in them.
-- 	**Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, those accessed from a UNC path).
-If the files on the drive are read-only, Defender will be unable to remove any malware found in them.
+- 	**Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender cannot remove any malware found in them.
+- 	**Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).
+If the files on the drive are read-only, Defender cannot remove any malware found in them.
 - 	**Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
-- 	**Prompt users before sample submission** - Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.
+- 	**Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
 - 	**Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
-- 	**Type of system scan to perform** - Lets you specify the level of scanning that will be performed when you schedule a system scan.
+- 	**Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.
 - 	**Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
 		- **Block**
 		- **Audit**
@@ -226,25 +227,25 @@ If the files on the drive are read-only, Defender will be unable to remove any m
 
 - 	**Files and folders to exclude from scans and real-time protection** - Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - 	**File extensions to exclude from scans and real-time protection** - Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions are not included in any real-time or scheduled scans.
-- 	**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.
+- 	**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes are not included in any real-time, or scheduled scans.
 
 
 ## Network proxy
 
-- 	**Automatically detect proxy settings** - When enabled, the device will attempt to find the path to a PAC script.
+- 	**Automatically detect proxy settings** - When enabled, the device attempts to find the path to a PAC script.
 - 	**Use proxy script** - Select this if you want to specify a path to a PAC script to configure the proxy server.
 	- 	**Setup script address URL** - Enter the URL of a PAC script you want to use to configure the proxy server.
 - 	**Use manual proxy server** - Select this if you want to manually provide proxy server information.
 	- 	**Address** - Enter the name, or IP address of the proxy server.
 	- 	**Port number** - Enter the port number of your proxy server.
 	- 	**Proxy exceptions** - Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
-	- 	**Bypass proxy server for local address** - Enable this option if you don't want to use the proxy server for local addresses on your intranet.
+	- 	**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option .
 
 
 ## Windows Spotlight
 
 
-- Windows Spotlight – Use this setting if you want to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings will not be available.
+- Windows Spotlight – Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings are not available.
 	- **Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.
 	- **Third-party suggestions in Windows Spotlight** – Stop Windows Spotlight from suggesting content that is not published by Microsoft.
 	- **Windows Tips** - Lets you block pop-up tips from displaying in Windows.
