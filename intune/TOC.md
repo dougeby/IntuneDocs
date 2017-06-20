@@ -76,7 +76,7 @@
 #### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### [Set up Windows enrollment](windows-enroll.md)
-#### [Auto-enroll](windows-enroll.md)
+#### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
 #### [With Device Enrollment Program](device-enrollment-program-enroll-ios.md)
