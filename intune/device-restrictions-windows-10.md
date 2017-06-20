@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,15 +74,29 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	- 	**Password expiration (days)** - Specifies the length of time after which the device password must be changed.
 	- 	**Prevent reuse of previous passwords** - Specifies the number of previously used passwords that are remembered by the device.
 	- 	**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
+	- 	**Simple passwords** – Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
 - 	**Encryption** - Enable encryption on targeted devices (Windows 10 Mobile only).
 
 ## Personalization
 
 - 	**Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows desktop wallpaper. Users will not be able to change this.
 
+## Privacy
+
+-	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Windows Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
+-	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+
+
 ## Locked screen experience
 
+
+- 	**Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
 - 	**Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users will not be able to change this.
+-	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
+-	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
+-	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
+-	**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.
+
 
 
 ## App Store
@@ -102,6 +116,8 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Edge Browser
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
+- 	**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type. This helps to minimize network bandwidth use between Edge and Microsoft services.
+-	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
 - 	**SmartScreen** - Enables or disables SmartScreen which blocks fraudulent web sites.
 - 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
@@ -115,13 +131,18 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Developer tools** - Prevent the end user from opening the Edge developer tools.
 - 	**Extensions** - Allow the end user to install Edge extensions on the device.
 - 	**InPrivate browsing** - Prevent the end user from opening InPrivate browsing sessions.
-- 	**First run url** - Enter the URL that the Edge browser will open the first time it's run (mobile only).
+-	**Show first run page** – Stops the introduction page from appearing the first time you run Edge.
+	-	**First run URL** – Specifies the URL of a page that will be displayed the first time a user runs Edge (Windows 10 Mobile only).
 - 	**Homepages** - Add a list of sites that will be used as home pages in the Edge browser (desktop only).
+- 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that will be opened when Edge starts.
 - 	**Block access to about flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
 - 	**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.
 - 	**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.
 - 	**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
+- 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
+-	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
@@ -132,18 +153,24 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Settings synchronization for Microsoft account** - Allow device and app settings that are associated with a Microsoft account to synchronize between devices.
 
 ## Cellular and Connectivity
+
+-	**Cellular data channel** – Stop users from using data, like browsing the web, when they are connected to a cellular network. 
 - 	**Data roaming** - Allow roaming between networks when accessing data.
 - 	**VPN over the cellular network** - Controls whether the device can access VPN connections when connected to a cellular network.
 - 	**VPN roaming over the cellular network** - Controls whether the device can access VPN connections when roaming on a cellular network.
 - 	**Bluetooth** - Controls whether the user can enable and configure Bluetooth on the device.
 - 	**Bluetooth discoverability** - Lets the device be discovered by other Bluetooth-enabled devices.
+- 	**Bluetooth pre-pairing** – Lets you configure specific Bluetooth devices to automatically pair with a host device.
 - 	**Bluetooth advertising** - Lets the device receive advertisements over Bluetooth.
-- 	**Device Bluetooth name** - Lets you specify the Bluetooth name for the device.
+- 	**Device Bluetooth name** – Specify the Bluetooth name for a device. If you don’t specify a name, the default radio name is used.
+- 	**Connected devices service** – Lets you choose whether to allow the connected devices service which enables discovery and connection to other Bluetooth devices.
 - 	**NFC**	- Lets the user enable and configure Near Field Communications capabilities on the device.
 - 	**Wi-Fi** - Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
 - 	**Automatically connect to Wi-Fi hotspots** - Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
 - 	**Manual Wi-Fi configuration** - Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
-- 	**Wi-Fi Scan Interval** - Specify how often devices scan for Wi-Fi networks.
+- 	**Wi-Fi scan interval** – Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
+-   **Bluetooth allowed services** – Specify as hex strings, a list of allowed Bluetooth services and profiles.
+
 
 ## Control Panel and Settings
 
@@ -181,6 +208,19 @@ If the files on the drive are read-only, Defender will be unable to remove any m
 - 	**Prompt users before sample submission** - Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.
 - 	**Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
 - 	**Type of system scan to perform** - Lets you specify the level of scanning that will be performed when you schedule a system scan.
+- 	**Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
+		- **Block**
+		- **Audit**
+	For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+-	**Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). The actions you can take are:
+	-	**Clean**
+	-	**Quarantine**
+	-	**Remove**
+	-	**Allow**
+	-	**User defined**
+	-	**Block**
+
+
 
 ## Defender Exclusions
 
@@ -203,9 +243,16 @@ If the files on the drive are read-only, Defender will be unable to remove any m
 
 ## Windows Spotlight
 
-- 	**Windows Spotlight** - Allow or block Windows Spotlight which provides features like tips and tricks, messages on the Windows Lock screen, and more.
-	- 	**Windows Tips** - Lets you block pop-up tips from displaying in Windows.
-	- 	**Consumer Features** - Lets you block consumer features like Start menu suggestions, and membership notifications.
+
+- Windows Spotlight – Use this setting if you want to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings will not be available.
+	- **Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.
+	- **Third-party suggestions in Windows Spotlight** – Stop Windows Spotlight from suggesting content that is not published by Microsoft.
+	- **Windows Tips** - Lets you block pop-up tips from displaying in Windows.
+	- **Consumer Features** - Lets you block consumer features like Start menu suggestions, and membership notifications.
+	- **Windows Spotlight in action center** – Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
+	- **Windows Spotlight personalization** – Stops Windows Spotlight from personalizing results based on the usage of a device.
+	- **Windows welcome experience** – Block the Windows welcome experience that shows the user information about new, or updated features.
+
 
 ## Display
 
