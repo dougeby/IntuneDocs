@@ -100,7 +100,7 @@ To register an app to use Graph API:
 
 7.  From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  The **Enable access** blade opens and lists permission scopes available to your application.
 
-    <img src="media/azure-ad-perm-scopes" width="489" height="248" alt="Intune Graph API permission scopes" />
+    <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
     Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
 
