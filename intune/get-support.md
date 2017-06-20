@@ -41,7 +41,7 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 
 ## Create an online support ticket
 
-If you are unable to find answers by using the self-help resources, you can create an online support ticket.
+If you are unable to find answers by using online documentation, you can create an online support ticket.
 
 **Limit each support ticket to a single issue**. This helps us serve you better. Here's why:
 
@@ -75,8 +75,6 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
-- [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx)
 - [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Billing and subscription management support](http://support.microsoft.com/oas/default.aspx?prid=15371)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
-- [Professional Support Options](https://support.microsoft.com/gp/offerprophone)
