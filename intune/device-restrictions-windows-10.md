@@ -42,7 +42,7 @@ ms.custom: intune-azure
 	- 		**Full** Sends the same data as Enhanced, plus additional data about the device state
 - 	**Camera** - Allow or block use of the camera on the device.
 - 	**OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
-- 	**Removable storage** - Specifies whether external storage devices such as an SD card can be used with the device.
+- 	**Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
 - 	**Geolocation** - Specifies whether the device can use location services information.
 - 	**Internet sharing** - Allow the use of Internet connection sharing on the device.
 - 	**Phone reset** - Controls whether the user can do a factory reset on their device.
