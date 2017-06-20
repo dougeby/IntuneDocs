@@ -44,7 +44,9 @@ Let’s review each area in more detail.
 
 Organizations may have different tiers or levels (1-3) of support. For example, tier 1 and 2 may be part of the support team, and tier 3 include members of the MDM team responsible for the deployment of Intune.
 
-Tier 1 is normally the first level of support and typically the first tier to be contacted by the user for support requests. If tier 1 is unable to resolve the end user’s issue, they escalate it to tier 2. Tier 2 escalates it to tier 3 if needed. In addition, Microsoft support may be considered as tier 4. Learn more about [Intune support](/intune/get-support).
+Tier 1 is normally the first level of support and typically the first tier to be contacted by the user for support requests. If tier 1 is unable to resolve the end user’s issue, they escalate it to tier 2. Tier 2 escalates it to tier 3 if needed. In addition, Microsoft support may be considered as tier 4. 
+
+Learn more about [Intune support](/intune/get-support).
 
 ## What is the support process
 
@@ -74,15 +76,15 @@ It’s important to provide Intune technical training for your IT support or hel
 
 An example of an Intune support training agenda is provided below.
 
--   Intune Support Plan Review
+-   Intune support plan review
 
--   Intune Overview
+-   Intune overview
 
--   Troubleshooting Common Issues
+-   Troubleshooting common issues
 
--   Tools and Resources
+-   Tools and resources
 
--   Q&A
+-   Q & A
 
 The [Intune documentation](https://docs.microsoft.com/en-us/intune/) provides an Intune overview,  detailed feature descriptions, and some troubleshooting information. The [Intune forum](https://social.technet.microsoft.com/Forums/en-US/home) is a community-based resource for questions and topics not covered in the Intune documentation.
 
