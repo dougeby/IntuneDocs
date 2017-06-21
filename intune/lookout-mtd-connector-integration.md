@@ -103,9 +103,9 @@ Use the following steps to gather the information you need to give to the Lookou
 	> The  **Display Name** is case sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
 	>![screenshot of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
 
-	> [!NOTE] The best practice is to use the default (5 minutes) for the increment of time to check for new devices. **Current limitations:**
-	> **Lookout cannot validate group display names:**  Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group.
-	> **Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
+	>[!NOTE] The best practice is to use the default (5 minutes) for the increment of time to check for new devices. **Current limitations:**
+	>**Lookout cannot validate group display names:**  Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group.
+	>**Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
 
 3.  Once a group is added, the next time a user opens the Lookout for Work app on their supported device, the device is activated in Lookout.
 
@@ -139,6 +139,6 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 > Risk levels are an important aspect of Mobile Threat Defense because the Intune integration calculates device compliance according to these risk levels at runtime. The Intune administrator sets a rule in policy to identify a device as non-compliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Threat Defense directly drives the device compliance calculation in Intune.
 
 ## Watching enrollment
-Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Configure and deploy Lookout for work apps](lookout-for-work-app-configure-deploy.md) topic.
+Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) topic.
 ## Next steps
 [Enable Lookout MTD connection Intune](mtd-connector-enable.md)
