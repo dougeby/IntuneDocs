@@ -170,10 +170,6 @@ For more information, see [What is Microsoft Intune device management](device-ma
 
 We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
 
-### Actions for non-compliance <!--730266-->
-
-**Actions for non-compliance** is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
-
 ### Custom app categories <!--748805-->
 
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
