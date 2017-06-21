@@ -54,8 +54,8 @@ Apps can be managed or unmanaged, as described below. The process of making apps
 **Unmanaged apps** - These are apps that cannot be managed through policies. They have not been wrapped by Intune or do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
 
 ### See also
-[Add apps with Microsoft Intune](/intune-classic/deploy-use/add-apps)
+[Add apps with Microsoft Intune](apps-add.md)
 
-[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
+[How your iOS users get their apps](end-user-apps-ios.md)
 
-[How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
+[How your Windows users get their apps](end-user-apps-windows.md)

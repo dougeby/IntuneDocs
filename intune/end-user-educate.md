@@ -63,15 +63,15 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * **Android**
   * [Using an Android device with Intune](/intune-user-help/using-your-android-device-with-intune)
-  * [How your Android users get their apps](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [How your Android users get their apps](end-user-apps-android.md)
 
 * **iOS**
   * [Using an iOS device with Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [How your iOS users get their apps](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [How your iOS users get their apps](end-user-apps-ios.md)
 
 * **Windows**
   * [Using a Windows device with Intune](/intune-user-help/using-your-windows-device-with-intune)
-  * [How your Windows users get their apps](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [How your Windows users get their apps](end-user-apps-windows.md)
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and we believe that this philosophy can greatly increase your end user satisfaction with Intune.
 
