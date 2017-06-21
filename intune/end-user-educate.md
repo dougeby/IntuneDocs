@@ -28,6 +28,8 @@ ms.suite: ems
 
 # How to educate your end users about Microsoft Intune
 
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](app-sdk.md).
 
 None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide).

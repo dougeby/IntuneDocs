@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # What to expect when your Android app is managed by app protection policies
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 This topic describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in a work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
 ##  Access apps

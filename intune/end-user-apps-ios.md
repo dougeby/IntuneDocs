@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How your iOS users get their apps
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune.
 
