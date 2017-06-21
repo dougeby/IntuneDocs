@@ -82,6 +82,13 @@ The Company Portal app will begin signing in.
 
 ## June 2017
 
+### New menu action to easily remove Company Portal <!--1164569-->
+Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user.
+
+![An image of the Android Company Portal app, with the action menu opened in the top right corner. The new "remove company portal" option is available as the third option, underneath "my profile" and "settings", and above "terms and conditions", "help and feedback", and "about".](./media/android_remove_cp_menu_action_after_1705.png)
+
+![An image of the confirmation dialog, that is available after selecting the new "remove company portal" option from the action menu. The dialog informs the user that "by removing company portal, your device will no longer be managed by your IT admin and may remove access to company data, company apps, and company email." It then asks the user to confirm that they want to remove the Company Portal app by selecting "Yes".](./media/android_remove_cp_menu_confirmation_after_1705.png)
+
 ### Improvements to the app tiles in the Company Portal app for iOS
 We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. 
 

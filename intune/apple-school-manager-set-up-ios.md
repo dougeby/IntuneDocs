@@ -43,11 +43,10 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 >[!NOTE]
 >ASM enrollment can't be used with Apple's [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or Intune's [device enrollment manager](device-enrollment-manager-enroll.md) account.
->Also, an iOS devices enrolled with the Company Portal whose serial numbers is then imported and assigned an ASM profile will be unenrolled from Intune.
 
 ## Get the Apple ASM token and assign devices
 
-Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM token (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles. While you are in the Apple portal you can also assign device serial numbers to manage.
+Before you can enroll corporate-owned iOS devices with Apple School Manager (ASM), you need an ASM token (.p7m) file from Apple. This token lets Intune sync information about ASM-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles. While you are in the Apple portal, you can also assign device serial numbers to manage.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
@@ -81,7 +80,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 2. Under **Enrollment Program**, select **Enrollment Program Profiles**.
 3. On the **Enrollment Program Profiles** blade, select **Create**.
 4. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile that is displayed in the Intune portal.
-5. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+5. For **User Affinity**, choose whether devices with this profile enroll with or without user affinity.
 
  - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for ASM-managed devices that users log in to with their managed Apple ID.
 
@@ -101,12 +100,12 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu.
 
-  - **Shared iPad** - (Requires **Enroll with User Affinity** and **Supervised** mode.) Allows multiple users logon to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal.
+  - **Shared iPad** - (Requires **Enroll with User Affinity** and **Supervised** mode.) Allows multiple users to logon to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal.
 
   >[!NOTE]
   >If **Shared iPad** mode is enabled in a profile and either **User Affinity** or **Supervised** mode is then set to **Off**, Shared iPad mode is disabled for the enrollment profile.
 
-  - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each users. The recommended value is the number of students likely to use the device over a period of time. For example, if six students will use the device regularly in the course of a week, set this number to six.  
+  - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
 	- **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
@@ -118,7 +117,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
     - **Setup Assistant Options** - If excluded from Setup Assistant options, these settings can be set later in the iOS **Settings** menu.
-        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
+        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
         - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
         - **Apple ID** - If enabled, iOS prompts users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including apps installed by Intune.
@@ -139,7 +138,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 3. To enable a connection between ASM and Azure AD, select **Set up Microsoft School Data Sync**. Learn more about [how to set up School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
 4. Click **OK** to save and continue.
 
-## Sync ASM managed devices
+## Sync ASM-managed devices
 Now that Intune has been assigned permission to manage your ASM devices, you can synchronize Intune with the ASM service to see your managed devices in the Intune portal.
 
 1. In the Intune portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
@@ -161,7 +160,7 @@ ASM devices managed by Intune must be assigned an ASM profile before they are en
   - **unassigned**
   - **any**
   - **&lt;ASM profile name&gt;**
-4. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an ASM profile.
+4. Select the devices you want to assign. The checkbox above the column selects up to 1000 listed devices. Click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an ASM profile.
 
 ## Distribute devices to users
 
