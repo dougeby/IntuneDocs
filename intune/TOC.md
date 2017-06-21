@@ -16,6 +16,7 @@
 ## [Common scenarios](common-scenarios.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
+## [Intune service description](microsoft-intune-service-description.md)
 
 <!--# Get started
 ## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
@@ -74,7 +75,7 @@
 #### [Add corporate identifiers](corporate-identifiers-add.md)
 #### [Set up device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
-### Set up Windows enrollment
+### [Set up Windows enrollment](windows-enroll.md)
 #### [Auto-enroll](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
@@ -192,7 +193,7 @@
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-### Create Actions for noncompliance
+<!--### Create Actions for noncompliance-->
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)
@@ -206,14 +207,26 @@
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 ## Protect data and devices
-<!-- ### Set up mobile threat protection		
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
+
+### [Mobile Threat Defense](mobile-threat-defense.md)
+
+#### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
+##### [Lookout and Intune integration](lookout-mtd-subscription-setup.md)
+##### [Enable Lookout in Intune](lookout-mtd-connector-enable.md)
+##### [Deploy apps to be used with Lookout](lookout-for-work-app-configure-deploy.md)
+##### [Lookout device compliance policy](lookout-device-compliance-policy-create.md)
+
+#### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
+##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
+##### [Download iOS app config policy](skycure-ios-app-configuration-policy-download.md)
+##### [Add and configure apps](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
+##### [Deploy apps to be used with Skycure](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
+##### [Enable Skycure in Intune](skycure-mtd-connector-enable.md)
+##### [Skycure device compliance policy](skycure-device-compliance-policy-create.md)
+
 ### [Set up Windows Hello](windows-hello.md)		
-<!-- ### Protect devices with remote actions -->
+<!-- ### Protect devices with remote actions		-->
 
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
@@ -265,3 +278,6 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [Glossary](intune-glossary.md)

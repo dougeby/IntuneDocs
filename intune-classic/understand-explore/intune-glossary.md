@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -16,7 +16,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 #ms.reviewer: angrobe
@@ -34,10 +34,17 @@ ms.custom: intune-classic
 
 |||
 |-|-|
+|App configuration profile|Configures an iOS app with [specific settings](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) before it runs.|
+|App deployment|Lets users [find, download, and install](/intune-classic/deploy-use/deploy-apps) the apps they need.|
+|App monitoring|Lets you [review recent status and activity](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune) related to app deployment.|
+|App protection data removal task|[Removes app data](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) from the user's device.|
+|App protection policy|Ensures that user's apps are compliant with your [company data protection policies](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).|
+|App reporting|Lets you [review historical data](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) about app deployment status and activity.|
 |App SDK|The [Microsoft Intune App SDK](/intune/app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune mobile application management policies.|
+|App uninstall action|Lets you [uninstall apps](/intune-classic/deploy-use/deploy-apps) from user's devices.|
 |App Wrapping Tool|A [command line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line of business app, which then allows the app to be managed by an Intune mobile application management policy.|
 |Available install|When you deploy an app with this action, it is displayed in the company portal, and users can [install it on demand](/intune-classic/deploy-use/deploy-apps).|
-|Azure Portal|A new console for Intune which will be introduced soon. At the moment, you can use the Azure portal to create [Intune MAM policies](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) for devices.|
+|Azure Portal|The new console for Intune which will be introduced soon. [Read more about the new portal](/intune/what-is-intune).|
 
 ## B
 |||

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Determine deployment goals, objectives and challenges 
-description: This article helps to determine deployment goals, objectives and challenges for an Microsoft Intune cloud-only implementation.
+title: Determine deployment goals, objectives, and challenges
+description: This article helps to determine deployment goals, objectives, and challenges for an Microsoft Intune cloud-only implementation.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2016
+ms.date: 06/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,15 +26,13 @@ ms.custom: intune-classic
 
 ---
 
-# Determine deployment goals, objectives and challenges
+# Determine deployment goals, objectives, and challenges
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Having a good deployment plan begins with first identifying your organization’s deployment goals and objectives, along with potential challenges. Each organization is unique and will have their own deployment goals, objectives and challenges. Let’s discuss each area in more detail.
+Having a good deployment plan begins with first identifying your organization’s deployment goals and objectives, along with potential challenges. Let’s discuss each area in more detail.
 
 ## Deployment goals
 
-Deployment goals are the long-term achievements intended by implementing Microsoft Intune in an organization. Listed below are some examples of an organization’s Intune deployment goals along with the description and business value for each.
+Deployment goals are the long-term achievements you intend to gain by deploying Intune in your organization. Listed below are some examples of such goals along with the description and business value for each.
 
 -   **Integrate with Office 365 and support the use of Office mobile apps**
 
@@ -44,13 +42,13 @@ Deployment goals are the long-term achievements intended by implementing Microso
 
 -   **Enable access to internal corporate services on mobile devices**
 
-    -   **Description:** It’s the strategic direction of the organization to enable employees to be productive wherever they need to work from, and with whichever device is most appropriate for them. This project should look to enable mobile productivity and access to corporate data in a safe manner.
+    -   **Description:** Enable employees to be productive wherever they need to work from, and with whichever device is most appropriate for them. This project should look to enable mobile productivity and access to corporate data in a safe manner.
 
-    -   **Business value:** Enabling employees to be agile and work from where they need, allows the business to be more competitive and to provide a more rewarding working environment.
+    -   **Business value:** Enabling employees to be agile and work from where they need allows the business to be more competitive and to provide a more rewarding working environment.
 
 -   **Provide data protection on mobile devices**
 
-    -   **Description:** Where data is stored on a mobile device, it should be protected from malicious and accidental loss or sharing.
+    -   **Description:** When data is stored on a mobile device, it should be protected from malicious and accidental loss or sharing.
 
     -   **Business value:** Data protection is vital to ensure that we remain competitive, and that we treat our clients and their data with the utmost diligence.
 
@@ -62,39 +60,39 @@ Deployment goals are the long-term achievements intended by implementing Microso
 
 ## Deployment objectives
 
-Deployment objectives are the actions an organization can take to reach its Microsoft Intune deployment goals. Below are listed some examples of an organization’s deployment objectives, and how each one would be accomplished.
+Deployment objectives are the actions your organization can take to reach its Intune deployment goals. Below are listed some examples of deployment objectives, and how each would be accomplished.
 
 -   **Reduce the number of device management solutions**
-<br>
-    -   **Execution:** Consolidate to a single mobile device management solution, Microsoft Intune for corporate data protection of apps and devices.
-<br></br>
+
+    -   **Implementation:** Consolidate to a single mobile device management solution: Microsoft Intune for corporate data protection of apps and devices.
+
 -   **Provide secure access to Exchange and SharePoint Online**
-<br>
-    -   **Execution:** Implement Microsoft Intune Conditional Access for Exchange and SharePoint Online.
-<br></br>
+
+    -   **Implementation:** Apply conditional access for Exchange and SharePoint Online.
+
 -   **Prevent corporate data from being stored or forwarded to non-corporate services on the mobile device**
-<br>
-    -   **Execution:** Implement Microsoft Intune App Protection Policies for Microsoft Office and LOB apps.
-<br></br>
+
+    -   **Implementation:** Apply Intune app protection policies for Microsoft Office and line-of-business apps.
+
 -   **Provide capability to wipe corporate data from the device**
-<br>
-    -   **Execution:** Enroll and manage devices with Microsoft Intune, providing the capability to perform a remote wipe of corporate data and resources when appropriate.
+
+    -   **Implementation:** Enroll devices into Intune. This gives you the capability to perform a remote wipe of corporate data and resources when appropriate.
 
 ## Deployment challenges
 
-Deployment challenges are issues that are top of mind for an organization and may have a negative impact on their deployment. Sometimes they may be related to past issues they had experienced with previous projects, and would like to avoid or new issues related to the current deployment effort. Listed below are some examples of an organization’s Microsoft Intune deployment challenges along with potential mitigations.
+Deployment challenges are issues that are top of mind for an organization and that may have a negative impact on deployment. Sometimes they are related to past issues from previous projects that you would like to avoid or new issues related to the current deployment effort. Listed below are some examples of Intune deployment challenges along with potential mitigations.
 
--   Support readiness and end user experience is not included in an initial project scope.  This results in poor end user adoption and challenges supporting the solution.
-<br>
-    -   **Mitigation:** Incorporate support training and validating the end user experience with success metrics in your deployment plan.
-<br></br>
--   Lack of clearly defined goals and success metrics result in intangible results, as well as reactive mode once issues arise.
-<br>
-    -   **Mitigation:** Define your goals and success metrics early in your project scope, and use these data points to flesh out your other rollout phases. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely) and plan to measure against your goals at each phase and to ensure your rollout project stays on track.
-<br></br>
--   Neglecting to create, validate and aggressively share a clear value proposition that resonates for your organization, often results in limited adoption and lack of return on investment (ROI).
-<br>
-    -   **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined your goals and objectives. Include these in all awareness and training activities to help ensure users understand why your organization selected Intune.
+-   Support readiness and end-user experience are not included in an initial project scope. This leads to poor end-user adoption and challenges for your support organization.
+
+    -   **Mitigation:** Incorporate support training. Validate the end-user experience with success metrics in your deployment plan.
+
+-   Lack of clearly defined goals and success metrics leads to intangible results. It may also shift your organization into reactive mode when issues arise.
+
+    -   **Mitigation:** Define your goals and success metrics early in your project scope, and use these data points to flesh out your other rollout phases. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely). Plan to measure against your goals at each phase and to ensure your rollout project stays on track.
+
+-   You neglect to create, validate, and aggressively share a clear value proposition that resonates for your organization. This often leads to limited adoption and a lack of return on investment (ROI).
+
+    -   **Mitigation:** While you may be excited to jump into your project, ensure you have clearly-defined your goals and objectives. Include these in all awareness and training activities to help ensure users understand why your organization selected Intune.
 
 ## Next steps
 

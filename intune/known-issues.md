@@ -34,7 +34,7 @@ ms.custom: intune-azure
 
 Use this topic to learn about any known issues in Microsoft Intune.
 
-If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
+If you want to report a bug that is not listed here, [open a support request](get-support.md).
 
 If you want to request a new feature for Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
@@ -56,7 +56,7 @@ Because these capabilities cannot be managed from both the classic Silverlight a
 - Disables them in the classic console
 - Enables them in the Azure console.  
 
-You now manage these features in the Azure Portal. Be aware of the following change:
+If you now manage these Intune capabilities in the Azure portal, be aware of the following change:
 
 ### Removes default Corporate Device Enrollment profiles in Apple DEP
 The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
