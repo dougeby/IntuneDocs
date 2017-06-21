@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lookout Mobile Threat Defense connector with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune on Azure"
 description: Set up Lookout Mobile Threat Defense connector with Intune.
 keywords:
 author: andredm7
@@ -99,8 +99,7 @@ Detect threats to your network such as Man-in-the-middle attacks, and prevent sy
 
 ## Next steps
 Here are the main steps you must do to implement this solution:
-1.	[Set up your Lookout subscription](lookout-mtd-subscription-setup.md)
-2.	[Enable Lookout Mobile Threat Defense in Intune](lookout-mtd-connector-enable.md)
-3.  [Configure and deploy Lookout for Work app](lookout-for-work-app-configure-deploy.md)
-4.	[Configure Lookout device compliance policy](lookout-device-compliance-policy-create.md)
-5.	[Troubleshoot Lookout Mobile Threat Defense integration](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.	[Set up your Lookout integration](lookout-mtd-connector-integration.md)
+2.	[Enable Lookout Mobile Threat Defense in Intune](mtd-connector-enable.md)
+3.  [Add and assign the Lookout for Work app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4.	[Configure Lookout device compliance policy](mtd-device-compliance-policy-create.md)

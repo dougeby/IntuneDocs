@@ -2,13 +2,13 @@
 # required metadata
 
 title: Download Skycure iOS app configuration policy to use with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune on Azure"
 description: Download Skycure iOS app configuration policy to use with Intune.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,4 +55,4 @@ You need to log in to the Skycure Management Console to perform the next steps.
 
 ## Next steps
 
-[Add Skycure apps, Microsoft Authenticator app and the iOS configuration policy](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
+[Add and assign Skycure apps, Microsoft Authenticator app and the iOS configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md)
