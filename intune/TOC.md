@@ -177,6 +177,7 @@
 ### [Configure Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
+### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
