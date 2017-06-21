@@ -103,9 +103,7 @@ Use the following steps to gather the information you need to give to the Lookou
 	> The  **Display Name** is case sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
 	>![screenshot of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
 
-	>[!NOTE] The best practice is to use the default (5 minutes) for the increment of time to check for new devices. **Current limitations:**
-	>**Lookout cannot validate group display names:**  Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group.
-	>**Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
+	>[!NOTE] The best practice is to use the default (5 minutes) for the increment of time to check for new devices. Current limitations, **Lookout cannot validate group display names:** Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group. **Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
 
 3.  Once a group is added, the next time a user opens the Lookout for Work app on their supported device, the device is activated in Lookout.
 
