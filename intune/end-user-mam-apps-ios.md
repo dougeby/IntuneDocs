@@ -75,5 +75,3 @@ If you are using an iOS device, when you try to add a second work account on tha
 
 ## Next steps
 [What to expect when your Android app is managed by app protection policies](end-user-mam-apps-android.md)
-### See also
-[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

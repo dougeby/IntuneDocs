@@ -67,7 +67,7 @@ User A works for two companies—**Company X** and **Company Y**. User A has a w
 ####  Android
 If you are using an Android device, you might see a blocking message with instructions to remove the existing account and add a new one.  To remove the existing account, go to **Settings  &gt;General &gt; Application Manager &gt;Company Portal.** Then choose **Clear Data**.
 
-![Screenshot of the error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
+![Screenshot of the error message and instructions to remove the account](./media/Android_SwitchUser.png)
 
 ##  View media files with the Azure Information Protection app
 To view company AV, PDF, and image files on Android devices, use the [Azure Information Protection app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (previously known as the Rights Management sharing app).
@@ -88,6 +88,3 @@ The following file types are supported:
 
 ## Next steps
 [What to expect when your iOS app is managed by app protection policies](end-user-mam-apps-ios.md)
-
-### See also
-[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
