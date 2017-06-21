@@ -3568,6 +3568,36 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-classic/deploy-use/help-end-users-understand-company-portal-app-messages.md",
+			"redirect_url": "/intune/end-user-company-portal-messages",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "intune-classic/deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md",
+			"redirect_url": "/intune/end-user-mam-apps-android",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "intune-classic/deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md",
+			"redirect_url": "/intune/end-user-mam-apps-ios",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "intune-classic/deploy-use/how-your-android-users-get-their-apps.md",
+			"redirect_url": "/intune/end-user-apps-android",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "intune-classic/deploy-use/how-your-ios-users-get-their-apps.md",
+			"redirect_url": "/intune/end-user-apps-ios",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "intune-classic/deploy-use/how-your-windows-users-get-their-apps.md",
+			"redirect_url": "/intune/end-user-apps-windows",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md",
 			"redirect_url": "/intune/apps-prepare-mobile-application-management",
 			"redirect_document_id": true
