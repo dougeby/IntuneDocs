@@ -66,7 +66,7 @@ You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa 
 
 ###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 
-- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps you specified that are not installed.
+- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
 - **Connections to AirPrint devices** - Controls which [AirPrint devices](air-print-settings-ios-macos.md) (network printers) that end users of iOS device can connect to.
 
@@ -105,11 +105,11 @@ You can now assign iOS volume-purchased (VPP) apps as **Available** installs to 
 
 ### Synchronize eBooks from Apple VPP Store <!-- 800878 -->
 
-You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple volume-purchase program store with Intune, and assign these to users.
+You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple volume-purchase program store with Intune, and assign the books to users.
 
 ### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
 
-Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
+Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
 
@@ -117,7 +117,7 @@ We've added support for additional [Windows device restriction settings](device-
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added support for [multi-user management](windows-enroll.md) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
+We've added support for [multi-user management](windows-enroll.md) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log into the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
@@ -134,7 +134,7 @@ You can now create an [edition upgrade policy to upgrade devices](edition-upgrad
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
 
 ### New MAM settings for PIN and managed storage locations <!-- 581122, 736644 -->
 
@@ -177,7 +177,7 @@ See [How to add an app to Intune](apps-add.md).
 
 ### Assign LOB apps to users with unenrolled devices <!--748823-->
 
-You can now assign line of business apps from the store to users whether or not their devices are enrolled with Intune. If the user's device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
+You can now assign line-of-business apps from the store to users whether or not their devices are enrolled with Intune. If the user's device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
 ### New compliance reports <!--846671-->
 
@@ -187,7 +187,7 @@ You now have compliance reports that give you the compliance posture of devices 
 - Compliance state for an individual setting
 - Compliance state for an individual policy
 
-You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
+You can also use these reports to drill down into an individual device to view specific settings and policies that affect that device.
 
 <!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 
