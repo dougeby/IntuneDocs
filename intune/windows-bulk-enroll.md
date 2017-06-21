@@ -95,7 +95,7 @@ Provisioning is intended to be used on new Windows devices. Provisioning failure
 - Scripts run by the provisioning package are run in system context, and are able to make arbitrary changes to the device file system and configurations. A malicious or bad script could put the device in a state that can only be recovered by reimaging or factory resetting the device.
 
 ### Problems with bulk enrollment and Company Portal
-If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive the following message: **Either this device isn't enrolled, or the Company Portal app can't identify it.** The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
+If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
 
 ### Conditional access
 Conditional access is not available for Windows devices enrolled using bulk enrollment.

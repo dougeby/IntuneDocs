@@ -35,7 +35,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune when a
     - **MDM Compliance URL**
 
     > [!IMPORTANT]
-    > If you configure both **MDM URLs** and **MAM URLs**, and users try to workplace join their personal devices, then only MAM is enabled. Devices are not MDM enrolled. 
+    > If a user is a member of a group that has both automatic MDM enrollment and MAM enabled, and the user tries to workplace join their personal device, then only MAM is enabled. 
 
 6. Select **Save**.
 
