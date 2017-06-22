@@ -68,15 +68,14 @@
 ### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
-### Prerequisites
-#### [Set up terms and conditions](terms-and-conditions-create.md)
-#### [Set restrictions](enrollment-restrictions-set.md)
-#### [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
-#### [Add corporate identifiers](corporate-identifiers-add.md)
-#### [Set up device enrollment manager](device-enrollment-manager-enroll.md)
+### Setup options
+#### [Terms and conditions](terms-and-conditions-create.md)
+#### [Restrictions](enrollment-restrictions-set.md)
+#### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
+#### [Corporate identifiers](corporate-identifiers-add.md)
+#### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### [Set up Windows enrollment](windows-enroll.md)
-#### [Auto-enroll](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
@@ -209,19 +208,14 @@
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
-##### [Lookout and Intune integration](lookout-mtd-subscription-setup.md)
-##### [Enable Lookout in Intune](lookout-mtd-connector-enable.md)
-##### [Deploy apps to be used with Lookout](lookout-for-work-app-configure-deploy.md)
-##### [Lookout device compliance policy](lookout-device-compliance-policy-create.md)
-
+##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
 #### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
 ##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
 ##### [Download iOS app config policy](skycure-ios-app-configuration-policy-download.md)
-##### [Add and configure apps](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [Deploy apps to be used with Skycure](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
 ##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
-##### [Enable Skycure in Intune](skycure-mtd-connector-enable.md)
-##### [Skycure device compliance policy](skycure-device-compliance-policy-create.md)
+#### [Add and assign MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Enable MTD in Intune](mtd-connector-enable.md)
+#### [Create and assign a MTD device compliance policy](mtd-device-compliance-policy-create.md)
 
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions		-->
