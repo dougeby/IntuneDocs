@@ -154,10 +154,10 @@ __Read and write Microsoft Intune apps__ | [DeviceManagementApps.ReadWrite.All](
 __Read Microsoft Intune apps__ | [DeviceManagementApps.Read.All](#app-ro)
 __Read and write Microsoft Intune Device Configuration and Policies__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
 __Read Microsoft Intune Device Configuration and Policies__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
-__Read and write Microsoft Intune configuration__ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
-__Read Microsoft Intune configuration__ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
+__Read and write Microsoft Intune configuration__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
+__Read Microsoft Intune configuration__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
 
-The table lists the settings in the order they appear in the Azure portal. The following sections describe the scopes in alphabetical order.
+The table lists the settings as they appear in the Azure portal. The following sections describe the scopes in alphabetical order.
 
 At this time, all Intune permission scopes require administrator access.  This means you need corresponding credentials when running apps or scripts that access Intune Graph API resources.
 
@@ -263,7 +263,7 @@ At this time, all Intune permission scopes require administrator access.  This m
     - Role Assignments
     - Role Definitions
 
-### <a name="svc-ro"></a>DeviceManagementServiceConfiguration.Read.All
+### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - **Enable Access** setting: __Read Microsoft Intune configuration__
 
@@ -279,11 +279,11 @@ At this time, all Intune permission scopes require administrator access.  This m
     - Branding
     - Mobile Threat Defense
 
-### <a name="svc-rw"></a>DeviceManagementServiceConfiguration.ReadWrite.All
+### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
 - **Enable Access** setting: __Read and write Microsoft Intune configuration__
 
-- Allows the same operations as DeviceManagementServiceConfiguration.Read.All_
+- Allows the same operations as DeviceManagementServiceConfig.Read.All_
 
 - Apps can also configure the following Intune features:
     - Device Enrollment
