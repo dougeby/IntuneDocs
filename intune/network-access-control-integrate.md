@@ -75,4 +75,4 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 -   [Integrate Citrix NetScaler with Intune](https://docs.citrix.com/en-us/netscaler-gateway/11-1/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 
--   [Integrate HP Aruba Clear Pass with Intune](https://community.arubanetworks.com/t5/Security/ClearPass-Extensions-Microsoft-Intune-MDM-EMM-Integration/td-p/282841)
+-   [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
