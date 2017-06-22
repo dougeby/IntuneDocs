@@ -68,15 +68,14 @@
 ### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
-### Prerequisites
-#### [Set up terms and conditions](terms-and-conditions-create.md)
-#### [Set restrictions](enrollment-restrictions-set.md)
-#### [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
-#### [Add corporate identifiers](corporate-identifiers-add.md)
-#### [Set up device enrollment manager](device-enrollment-manager-enroll.md)
+### Setup options
+#### [Terms and conditions](terms-and-conditions-create.md)
+#### [Restrictions](enrollment-restrictions-set.md)
+#### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
+#### [Corporate identifiers](corporate-identifiers-add.md)
+#### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### [Set up Windows enrollment](windows-enroll.md)
-#### [Auto-enroll](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
