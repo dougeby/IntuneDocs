@@ -208,19 +208,14 @@
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
 #### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
-##### [Lookout and Intune integration](lookout-mtd-subscription-setup.md)
-##### [Enable Lookout in Intune](lookout-mtd-connector-enable.md)
-##### [Deploy apps to be used with Lookout](lookout-for-work-app-configure-deploy.md)
-##### [Lookout device compliance policy](lookout-device-compliance-policy-create.md)
-
+##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
 #### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
 ##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
 ##### [Download iOS app config policy](skycure-ios-app-configuration-policy-download.md)
-##### [Add and configure apps](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
-##### [Deploy apps to be used with Skycure](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
 ##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
-##### [Enable Skycure in Intune](skycure-mtd-connector-enable.md)
-##### [Skycure device compliance policy](skycure-device-compliance-policy-create.md)
+#### [Add and assign MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Enable MTD in Intune](mtd-connector-enable.md)
+#### [Create and assign a MTD device compliance policy](mtd-device-compliance-policy-create.md)
 
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions		-->
