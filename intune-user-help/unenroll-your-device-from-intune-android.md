@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ To unenroll your device from Intune and remove the Company Portal app, follow th
 
   ![An image of the Android Company Portal app, with the action menu opened in the top right corner. The new "remove company portal" option is available as the third option, underneath "my profile" and "settings", and above "terms and conditions", "help and feedback", and "about".](./media/android_remove_cp_menu_action_after_1705.png)
 
-2. A confirmation will pop up, asking you if you're sure that you want to remove the Company Portal. It will provide some information about what happens when you unenroll your device. After reading over this message, tap **OK** to continue. 
+2. A confirmation will pop up, asking you if you're sure that you want to remove the Company Portal. It will provide some information about what happens when you unenroll your device. After reading over this message, tap **OK** to remove the app. 
 
   ![An image of the confirmation dialog, that is available after selecting the new "remove company portal" option from the action menu. The dialog informs the user that "by removing company portal, your device will no longer be managed by your IT admin and may remove access to company data, company apps, and company email." It then asks the user to confirm that they want to remove the Company Portal app by selecting "Yes".](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
