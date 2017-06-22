@@ -233,6 +233,7 @@
 <!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Common PC management tasks](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [PC policies](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
