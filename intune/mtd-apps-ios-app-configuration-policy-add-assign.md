@@ -2,8 +2,8 @@
 # required metadata
 
 title: Add Skycure apps into Intune
-titleSuffix: "Intune on Azure"
-description: "Add Skycure apps, Microsoft Authenticator app and iOS configuration policy into the Intune Azure portal.
+titleSuffix: Intune on Azure
+description: "Add Skycure apps, Microsoft Authenticator app and iOS configuration policy into the Intune Azure portal."
 keywords:
 author: andredm7
 ms.author: andredm
