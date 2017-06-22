@@ -84,7 +84,6 @@
 #### [With Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
-### [Educate users](end-user-educate.md)
 
 ## [Manage devices](device-management.md)
 ### [Wipe device](devices-wipe.md)
@@ -234,6 +233,7 @@
 <!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Common PC management tasks](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [PC policies](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -249,6 +249,13 @@
 ### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [Educate users](end-user-educate.md)
+### [Company Portal messages](end-user-company-portal-messages.md)
+### [MAM-enabled apps on Android](end-user-mam-apps-android.md)
+### [MAM-enabled apps on iOS](end-user-mam-apps-ios.md)
+### [How to get Android apps](end-user-apps-android.md)
+### [How to get iOS apps](end-user-apps-ios.md)
+### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
 ## [Monitor telecom expenses](telecom-expenses-monitor.md)

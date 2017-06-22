@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How your Windows users get their apps
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Use this information to understand how and where your users get the apps that you distribute through Microsoft Intune.
 
@@ -42,5 +42,5 @@ Use this information to understand how and where your users get the apps that yo
 **Unmanaged apps** can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
 
 ### See also
-[How your Android users get their apps](how-your-android-users-get-their-apps.md)</br>
-[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
+[How your Android users get their apps](end-user-apps-android.md)</br>
+[How your iOS users get their apps](end-user-apps-android.md)
