@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,8 @@ Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provide
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
 - **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, this role provides the ability to manage users, devices, and create and manage groups.
+
+- **Conditional Access Administrator:** Users with this role only have permissions to view, create, modify and delete conditional access policies.
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
