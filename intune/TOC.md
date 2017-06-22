@@ -217,6 +217,8 @@
 #### [Enable MTD in Intune](mtd-connector-enable.md)
 #### [Create and assign a MTD device compliance policy](mtd-device-compliance-policy-create.md)
 
+### [Network access control](network-access-control-integrate.md)
+
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions		-->
 
