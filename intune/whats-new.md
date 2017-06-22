@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 06/22/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,6 +35,9 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## Week of June 12, 2017
+
+### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### New menu action to easily remove Company Portal <!--1164569-->
 Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).

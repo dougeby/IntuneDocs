@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,25 @@ ms.custom: intune-classic
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
 ## Week of June 12, 2017
+
+### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management.
+
+The user will tap on the **Access Company Content** button instead of beginning to enroll the device.
+
+![An image of the Android Company Portal app, which shows in large text "Access Company Content" in the middle rather than offering immediate enrollment options as is the standard case](./media/and_access_company_content_after_1706.png)
+
+The user then is taken to the Company Portal website to authorize the app for use on their device.
+
+![An image of the Company Portal website, offering a sign in authorization after having tapped on the "Access Company Resources"](./media/and_iwp_sign_in_auth_page_after_1706.png)
+
+The Company Portal website then verifies their credentials. 
+
+![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_new_auth_page_after_1706.png)
+
+The device can still be enrolled into full management by tapping on the **action** menu.
+
+![An image of the Company Portal app for Android, showing the menu from the top right corner of the screen with an option to still enroll the device.](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
 
