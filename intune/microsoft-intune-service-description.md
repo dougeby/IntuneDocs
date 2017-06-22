@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune Service Description 
+title: Microsoft Intune Service Description
 description: Intune is a cloud-based service that helps you manage Windows, iOS, Mac OS X, Android, and Windows Mobile devices.
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 06/21/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,40 +28,44 @@ ms.custom: intune-classic
 
 # Microsoft Intune service description
 
-[!INCLUDE[both-portal](./includes/note-for-both-portals.md)]
+Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
+* Manage the mobile devices your workforce uses to access company data.
+* Manage the mobile apps your workforce uses.
+* Protect your company information by helping to control the way your workforce accesses and shares it.
+* Ensure devices and apps are compliant with company security requirements.
 
-Microsoft Intune is a cloud-based service that helps you manage devices that run Windows, Mac OS X, iOS, Android, or Windows Mobile. Intune also helps protect corporate applications and data. You can use Intune alone, or you can integrate it with System Center Configuration Manager to extend your management capabilities.
+Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Information Protection for data protection. You can also integrate it with System Center Configuration Manager to extend your management capabilities.
 
-Microsoft offers the Intune Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your Intune environment ready for use. For more about the Onboarding benefit, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).
+To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](https://docs.microsoft.com/en-us/intune/).
 
+## 30-day free trial
 You can start to use Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [go to the Intune Sign up page](https://www.microsoft.com/server-cloud/products/microsoft-intune/). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, contact your Microsoft representative to set up your free trial.
 
 > [!NOTE]
 > If your organization has a Microsoft Online Services work or school account, and you might continue with this Intune subscription in production after the trial period ends, then choose the **Sign in** option on that page and authenticate by using the Global Administrator account for your organization. This action ensures that your Intune trial links to your existing work or school account.
 
-For a list of settings that you can set up on mobile devices, see:
+<!--- For a list of settings that you can set up on mobile devices, see:
 
 -   [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
 -   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
-For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).
+For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
+## Intune Onboarding benefit
+Microsoft offers the Intune Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your Intune environment ready for use. For more about the Onboarding benefit, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).
+
 
 ## Learn how Intune service updates affect you
 
-Because Intune is an online service and because the MDM ecosystem changes frequently with mobile device OS and mobile app releases, Microsoft updates Intune regularly.
+Because the mobile device management ecosystem changes frequently with operating system updates and mobile app releases, Microsoft updates Intune regularly. There are three ways you can learn about changes in the Intune service:
 
-Use the information in this article to help you learn about the frequency of these service updates and the advance notification we give to you when an update might affect your use of the service.
+- [What's new in Microsoft Intune](whats-new.md). This topic is updated with the monthly service update and weekly when, for example, apps such as the Company Portal app are released.
 
-There are three ways to learn about changes in the Intune service:
+- Important service updates are also announced in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device. Learn more about how to work with the [Office 365 Message Center](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates).
 
-- First, review the [What's new in Microsoft Intune](whats-new.md). This list is updated with the monthly service update and weekly when, for example, apps such as the Company Portal app are released. 
+    A few helpful hints:
 
-- Second, important service updates will also be communicated to you in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device. You can find detailed information on how to work within the Office 365 Message Center [here](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates). 
-    
-    A few helpful hints: 
-
-    - The messages in the Office 365 Message Center are targeted. This means that if your company doesn’t have an Intune for EDU offer, we won’t message you about Intune for EDU. 
+    - The messages in the Office 365 Message Center are targeted. This means that if your company doesn’t have an Intune for EDU offer, we won’t message you about Intune for EDU.
 
     - Messages expire. For example, the notification that your service has been updated with a link to the What’s New page will likely expire prior to the next service update notification. Otherwise, you’d have a large backlog of posts that may no longer be relevant.
 
@@ -69,11 +73,11 @@ There are three ways to learn about changes in the Intune service:
 
     - Under Edit message center preferences, we’ll eventually have a toggle for **Intune** so you can look at those messages posted to an Intune subscription. If you see Mobile Device Management for Office 365, that is a different service, not Intune.
 
-- Third, we use two blogs to share the EMS message and the Intune support best practices: 
-    
-    - [Enterprise Mobility + Security blog](https://blogs.technet.microsoft.com/enterprisemobility/) 
+- We also use two blogs to share the EMS message and Intune support best practices:
 
-    - [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/) 
+    - [Enterprise Mobility + Security blog](https://blogs.technet.microsoft.com/enterprisemobility/)
+
+    - [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
 >You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane. You can also use the [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) to view service health.
@@ -93,23 +97,21 @@ To help you plan for service changes, we notify you at least 7-90 days prior to 
 Finally, in the rare event there’s any post-incident action needed to get your service back to normal or a large change that we deem potentially disruptive based on customer feedback, we will email the service administrators based on how your [Office 365 communication preferences](https://support.office.com/en-us/article/Change-your-contact-preferences-for-communications-from-Microsoft-6f70de1b-a64d-4498-bfbd-be8c83a9c0fc?ui=en-US&rs=en-US&ad=US) are set and whether you include a valid (and preferably work) email address.  
 
 
-## Choose the management solution that’s right for you
+<!--- ## Choose the management solution that’s right for you
 You can set up Intune in several ways to manage and help protect your company's mobile devices and computers (referred to as **devices** in this article).
 
 - **Intune stand-alone configuration.** Use the web-based admin console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure. If you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
-- **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+- **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
+## Language support
+Intune runs in the Azure portal, which supports these languages: Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, English, French, Korean, Polish, Swedish, Turkish.
 
-## Learn more about Intune
+The Intune Admin Console and the user-facing mobile experiences support Danish, Greek, Finnish, Norwegian, and Romanian, in addition to all the languages that the Azure portal supports.
+
+<!--- ## Learn more about Intune
 Use these resources to learn more about Intune:
 
 - The [Microsoft Intune Trust Center](https://www.microsoft.com/server-cloud/products/intune-trust-center/) provides information about the security, privacy, and compliance practices of Intune, and it describes some of Intune's certifications.
 
-- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
-
-### See also
-[Microsoft Intune](index.md)
-[Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
-
-[What's new in Microsoft Intune](whats-new.md)
+- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)--->
