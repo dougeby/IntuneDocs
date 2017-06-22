@@ -91,13 +91,12 @@ Users can be assigned one or more administrator permissions, which define the ad
 - **Password administrator** - (Office 365 and Intune) Resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
 - **Service administrator** - (Office 365) Opens support requests with Microsoft, and views the service dashboard and message center. They have “view only” permissions except for opening support tickets and reading them.
 - **User management administrator** - (Office 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.
-<!--
-- **Compliance administrator** -  (Intune) View and manage compliance permissions.
-- **Security Reader** - (Intune) Permission to read security information and reports.
-- **Security administrator** (Intune) Permission to view and manage security configuration and reports.
-- **Privileged role administrator** - (Intune) Permission to perform role management-related tasks.
-- **Guest inviter** (Intune) Permission to invite guest users.
-- **Conditional access administrator** - (Intune) -->
+<!-- * **Compliance administrator** -  (Intune) View and manage compliance permissions.
+* **Security Reader** - (Intune) Permission to read security information and reports.
+* **Security administrator** (Intune) Permission to view and manage security configuration and reports.
+* **Privileged role administrator** - (Intune) Permission to perform role management-related tasks.
+* **Guest inviter** (Intune) Permission to invite guest users.
+* **Conditional access administrator** - (Intune) -->
 
 By default, the account you use to create your Microsoft Intune subscription is a tenant administrator with the global administrator role. As a tenant administrator, you use the Intune administrator console to manage your subscription for Intune and assign tenant administrators from the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Use a tenant administrator with the global administration role to access the portal and assign your first service administrator. As a best practice, do not use a tenant administrator for day-to-day management tasks. A tenant administrator does not require a license to Intune to access the Intune administrator console. The tenant administrator is a common concept between Microsoft cloud services. When you subscribe to Intune, your service is a tenant of Azure AD. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx) for more information.
 
