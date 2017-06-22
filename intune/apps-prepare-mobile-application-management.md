@@ -101,11 +101,12 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Recheck the access requirements after a specified number of minutes|X|X|
 |Specify the offline grace period|X|X|
 |Block screen capture (Android only)|X|X|
+|Support for MAM without device enrollment|X|X|
 |Full Wipe|X|X|
 |Selective Wipe <br></br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as” |X||
+|Targeted Application Configuration |X||
 |Support for Multi-Identity|X||
-|Support for MAM without device enrollment|X|X|
 |Customizable Style |X|||
 ### See also
 
