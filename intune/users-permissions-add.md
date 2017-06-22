@@ -91,13 +91,7 @@ Users can be assigned one or more administrator permissions, which define the ad
 - **Password administrator** - (Office 365 and Intune) Resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
 - **Service administrator** - (Office 365) Opens support requests with Microsoft, and views the service dashboard and message center. They have “view only” permissions except for opening support tickets and reading them.
 - **User management administrator** - (Office 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.
-<!--- 
-- **Compliance administrator** -  (Intune) View and manage compliance permissions.
-- **Security Reader** - (Intune) Permission to read security information and reports.
-- **Security administrator** (Intune) Permission to view and manage security configuration and reports.
-- **Privileged role administrator** - (Intune) Permission to perform role management-related tasks.
-- **Guest inviter** (Intune) Permission to invite guest users.
-- **Conditional access administrator** - (Intune) --->
+
 By default, the account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. A administrator does not require a license to Intune to access the Intune administrator console. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx) for more information.
 
 To access the Office 365 portal, your account must have a **Sign-in allowed** set. In the Intune portal under **Profile**, set **Block sign in** to **No** to allow access. This status is different from having a license to the subscription. By default, all user accounts are **Allowed**. Users without administrator permissions can use the Office 365 portal to reset Intune passwords.
