@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Log out the current user on Intune-managed iOS devices
+# Logout the current user on Intune-managed iOS devices
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
