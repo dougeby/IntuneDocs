@@ -96,6 +96,8 @@
 ### [Remove company data](device-company-data-remove.md)
 ### [Reset passcode](device-passcode-reset.md)
 ### [Restart device](device-restart.md)
+### [Logout current user](device-logout-user.md)
+### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Examine device inventory](device-inventory.md)
 
