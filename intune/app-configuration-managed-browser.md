@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,7 @@ You can apply these settings to devices that are enrolled with Intune, enrolled 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users will be taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it will not be able to access data from other Intune-managed applications. 
 
+The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.
 
 You can create Managed Browser policies for the following device types:
 
@@ -67,8 +68,6 @@ Use the sections later in this topic to learn about the different key and value 
 10. The new configuration is created, and displayed on the **App configuration** blade.
 
 
-
-
 ## Assign the configuration settings you created
 
 You assign the settings to Azure AD groups of users. If that user has the Managed Browser app installed, then the app will be managed by the settings you specified.
@@ -78,6 +77,79 @@ You assign the settings to Azure AD groups of users. If that user has the Manage
 3. On the next blade, choose **User Groups**.
 4. On the **User groups** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
+
+## How to configure Application Proxy settings for the Managed Browser
+
+Together, the Intune Managed Browser and [Azure AD Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) can be used to support the following scenarios for end users of iOS and Android devices:
+
+- A user downloads and signs in to the Microsoft Outlook app.  Intune app protection policies are automatically applied, encrypting saved data and blocking the user from transferring corporate files to unmanaged apps or locations on the device. 
+When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in the Managed Browser app, rather than another browser.
+The Managed Browser recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and conditional access before reaching the intranet site. 
+This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.  
+
+- A remote user opens the Managed Browser application and navigates to an intranet site using the internal URL. The Managed Browser recognizes that this intranet site has been exposed to the user via the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and conditional access before reaching the intranet site.
+This site, which could previously not be found while the user was remote, is now accessible.  
+
+### Before you start
+
+- Ensure that your internal applications published through Azure AD Application Proxy.
+- To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+- You must be using minimum version 1.2.0 of the Managed Browser app.
+- Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app. 
+
+#### Step 1: Enable automatic redirection to the Managed Browser from Outlook
+Outlook must be configured with an app protection policy with the setting **Restrict web content to display in the Managed Browser** enabled.
+
+#### Step 2: Assign an app configuration policy assigned for the Managed Browser.
+This procedure configures the Managed Browser app to use app proxy redirection. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
+
+##### Key
+
+**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**
+
+ 
+##### Value
+
+**true**
+
+
+## How to configure the homepage for the Managed Browser
+
+This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
+
+### Key
+
+**com.microsoft.intune.mam.managedbrowser.homepage**
+
+### Value
+
+Specify a valid URL. Incorrect URLs will be blocked as a security measure.
+
+Example: **https://www.bing.com**
+
+
+## How to configure bookmarks for the Managed Browser
+
+This setting allows you to configure a set of bookmarks that will be available to users of the Managed Browser.
+
+- These bookmarks cannot be deleted or modified by users
+- These bookmarks will display at the top of the list. Any bookmarks that users create will be displayed below these bookmarks.
+
+Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
+
+### Key
+
+**com.microsoft.intune.mam.managedbrowser.bookmarks**
+
+### Value
+
+The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Seperate the title, and URL with the **|** character.
+
+Example: **Microsoft Bing|https://www.bing.com**
+
+To configure multiple bookmarks, sperate each pair with the double character, **||** 
+
+Example: **Bing|https://www.bing.com||Contoso|https://www.contoso.com**
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
@@ -102,26 +174,6 @@ Examples:
 
 - **URL1|URL2|URL3**
 - **http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com**
-
-See the reference section in this topic for more examples of the URL formats you can use.
-
-
-## Security and privacy for the Managed Browser
-
--   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
-
--   The Managed Browser does not use settings that users make for the built-in browser on their devices. This is because the Managed Browser does not have access to these settings.
-
--   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in a mobile application management policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can then browse any Internet sites regardless of whether they were added to a block list in the Managed Browser policy.
-
--   The Managed Browser can block access to sites only when they are accessed directly. It cannot block access when intermediate services (such as a translation service) are used to access the site.
-
--   To allow authentication, and to ensure that the Intune documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
-
-### Turn off usage data
-Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
-
-## Reference information
 
 ### URL format for allowed and blocked URLs
 Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:
@@ -172,5 +224,20 @@ Use the following information to learn about the allowed formats and wildcards t
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## Security and privacy for the Managed Browser
+
+-   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
+
+-   The Managed Browser does not use settings that users make for the built-in browser on their devices. This is because the Managed Browser does not have access to these settings.
+
+-   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in a mobile application management policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can then browse any Internet sites regardless of whether they were added to a block list in the Managed Browser policy.
+
+-   The Managed Browser can block access to sites only when they are accessed directly. It cannot block access when intermediate services (such as a translation service) are used to access the site.
+
+-   To allow authentication, and to ensure that the Intune documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
+
+### Turn off usage data
+Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
 
