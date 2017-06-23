@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add Skycure apps into Intune
+title: Add and assign MTD apps into Intune
 titleSuffix: Intune on Azure
-description: "Add Skycure apps, Microsoft Authenticator app and iOS configuration policy into the Intune Azure portal."
+description: "Add MTD apps, Microsoft Authenticator app and iOS configuration policy into the Intune on Azure"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,11 @@ ms.custom: intune-azure
 
 ---
 
-# Add and assign Skycure apps, Microsoft Authenticator app and iOS configuration policy
+# Add and assign Mobile Threat Defense (MTD) apps into Intune
 
-You can use Intune to add and deploy the Skycure apps so end-users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
+You can use Intune to add and deploy MTD apps so end-users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
-For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need the iOS app configuration policy which signals the Skycure iOS app to use Intune and Azure AD Single Sign On (SSO) so users don’t need to type username and password every time they log in the Skycure app.
+For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need the iOS app configuration policy which signals the MTD iOS app to use with Intune.
 
 > [!TIP]
 > The Intune company portal works as the broker on Android devices so users can have their identities checked by Azure AD.
