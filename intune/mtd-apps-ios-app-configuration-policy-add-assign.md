@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Add and assign Mobile Threat Defense (MTD) apps into Intune
+# Add and assign Mobile Threat Defense (MTD) apps with Intune
 
 You can use Intune to add and deploy MTD apps so end-users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
