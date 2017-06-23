@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for macOStitleSuffix: "Intune on Azure"
+title: Intune device restriction settings for macOS
+titleSuffix: "Intune on Azure"
 description: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,10 +31,12 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Use these settings to manage macOS devices in a device restriction profile.
+
 ## Password
 - 	**Password required** - Require the end user to enter a password to access the device.
 	- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
-	- 	**Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, such as **?**.
+	- 	**Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, like **?**
 	- 	**Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).
 	- 	**Simple passwords** - Allow the use of simple passwords such as **0000** or **1234**.
 	- 	**Maximum minutes after screen lock before password is required** - Specify how long the computer must be inactive before a password is required to unlock it.
@@ -50,4 +53,9 @@ An **Approved apps** list - List the apps that users are allowed to install. To 
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).
 
+## Domains
+
+### Unmarked email domains
+
+In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than one you configured, the email is marked as untrusted in the iOS Mail app.
 

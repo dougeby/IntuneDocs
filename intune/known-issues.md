@@ -56,10 +56,14 @@ Because these capabilities cannot be managed from both the classic Silverlight a
 - Disables them in the classic console
 - Enables them in the Azure console.  
 
-If you now manage these Intune capabilities in the Azure portal, be aware of the following change:
+If you now manage these Intune capabilities in the Azure portal, be aware of the following:
 
 ### Removes default Corporate Device Enrollment profiles in Apple DEP
 The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
+
+### Apple DEP token restored with migration
+
+If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure Intune portal, the original token is restored in the Azure Portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure Portal. 
 
 ## Altering groups created by Intune during migration delays migration
 
@@ -75,10 +79,6 @@ For more information, see [What is device compliance](device-compliance.md).
 ## Administration and accounts
 
 Global Admins (also referred to as Tenant Admins) can continue day-to-day administration tasks without a separate Intune or Enterprise Mobility Suite (EMS) license. However, to use the service, such as to enroll their own device, a corporate device, or use the Intune Company Portal, they need an Intune or EMS license.
-
-## Apple enrollment profile migration
-
-In the next few months, Intune enables managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload a new token, the original token is restored in the Azure Portal when you migrate. To remove this token and prevent DEP enrollment, delete the token in the Azure Portal. 
 
 ## Using the numeric password type with macOS Sierra devices
 
