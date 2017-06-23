@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,4 +50,9 @@ An **Approved apps** list - List the apps that users are allowed to install. To 
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).
 
+## Domains
+
+### Unmarked email domains
+
+In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than those you configured, the email will be marked as untrusted in the iOS Mail app.
 
