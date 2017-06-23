@@ -7,7 +7,7 @@ description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 04/12/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

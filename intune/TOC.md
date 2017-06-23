@@ -67,12 +67,12 @@
 ### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
-### Prerequisites
-#### [Set up terms and conditions](terms-and-conditions-create.md)
-#### [Set restrictions](enrollment-restrictions-set.md)
-#### [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
-#### [Add corporate identifiers](corporate-identifiers-add.md)
-#### [Set up device enrollment manager](device-enrollment-manager-enroll.md)
+### Setup options
+#### [Terms and conditions](terms-and-conditions-create.md)
+#### [Restrictions](enrollment-restrictions-set.md)
+#### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
+#### [Corporate identifiers](corporate-identifiers-add.md)
+#### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### Set up Windows enrollment
 #### [Auto-enroll](windows-enroll.md)
@@ -83,7 +83,6 @@
 #### [With Apple School Manager](apple-school-manager-set-up-ios.md)
 #### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
-### [Educate users](end-user-educate.md)
 
 ## [Manage devices](device-management.md)
 ### [Wipe device](devices-wipe.md)
@@ -209,12 +208,30 @@
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 ## Protect data and devices
+
+
+### [Mobile Threat Defense](mobile-threat-defense.md)
+
+#### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
+##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
+#### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
+##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
+##### [Download iOS app config policy](skycure-ios-app-configuration-policy-download.md)
+##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
+#### [Add and assign MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Enable MTD in Intune](mtd-connector-enable.md)
+#### [Create and assign a MTD device compliance policy](mtd-device-compliance-policy-create.md)
+
+### [Network access control](network-access-control-integrate.md)
+
+
 <!-- ### Set up mobile threat protection		
 #### Prerequisites
 #### Set up Lookout
 #### Set up Skycure
 #### Enable mobile threat protection in Intune
 #### Create a mobile threat protection compliance policy -->
+
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions -->
 
@@ -225,6 +242,7 @@
 <!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
 ### [Install the PC client](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
 ### [Common PC management tasks](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
 #### [PC policies](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
@@ -240,6 +258,13 @@
 ### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
 
+## [Educate users](end-user-educate.md)
+### [Company Portal messages](end-user-company-portal-messages.md)
+### [MAM-enabled apps on Android](end-user-mam-apps-android.md)
+### [MAM-enabled apps on iOS](end-user-mam-apps-ios.md)
+### [How to get Android apps](end-user-apps-android.md)
+### [How to get iOS apps](end-user-apps-ios.md)
+### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
 ## [Monitor telecom expenses](telecom-expenses-monitor.md)
@@ -270,4 +295,3 @@
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 # [Glossary](intune-glossary.md)
-

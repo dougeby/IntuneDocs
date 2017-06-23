@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # What to expect when your Android app is managed by app protection policies
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 This topic describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in a work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
 ##  Access apps
@@ -67,7 +67,7 @@ User A works for two companies—**Company X** and **Company Y**. User A has a w
 ####  Android
 If you are using an Android device, you might see a blocking message with instructions to remove the existing account and add a new one.  To remove the existing account, go to **Settings  &gt;General &gt; Application Manager &gt;Company Portal.** Then choose **Clear Data**.
 
-![Screenshot of the error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
+![Screenshot of the error message and instructions to remove the account](./media/Android_SwitchUser.png)
 
 ##  View media files with the Azure Information Protection app
 To view company AV, PDF, and image files on Android devices, use the [Azure Information Protection app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (previously known as the Rights Management sharing app).
@@ -87,7 +87,4 @@ The following file types are supported:
 |Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses. It can be used to protect any file type.|Text files, including XML, CSV, and so on, can be opened for viewing in the app even when they are protected. File types: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
 
 ## Next steps
-[What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-### See also
-[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+[What to expect when your iOS app is managed by app protection policies](end-user-mam-apps-ios.md)
