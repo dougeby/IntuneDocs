@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ If you lose your device PIN or password for a device that you have enrolled in I
 
 To reset your passcode:
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
+1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/intune/media/CP_hamburger_menu.png), then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device whose passcode you want to reset.
 
@@ -57,7 +57,10 @@ To reset your passcode:
 
   Different devices have different types of passcodes.
 
-  **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers
+  **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers 
+  
+  > [!NOTE]
+  > You cannot reset the passcode for devices with Android 7.0 and later. You must reset these devices to factory settings if you forget your passcode.
 
   **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint 		scanner for opening your device or making purchases, you'll need to set it up again.
 
