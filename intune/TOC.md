@@ -208,7 +208,7 @@
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 ## Protect data and devices
-<<<<<<< HEAD
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
@@ -224,14 +224,14 @@
 
 ### [Network access control](network-access-control-integrate.md)
 
-=======
+
 <!-- ### Set up mobile threat protection		
 #### Prerequisites
 #### Set up Lookout
 #### Set up Skycure
 #### Enable mobile threat protection in Intune
 #### Create a mobile threat protection compliance policy -->
->>>>>>> 75a1e571b014870564692f1856feebafbdaf7ffc
+
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions -->
 
