@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: intune-enduser
 If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](http://portal.manage.microsoft.com) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
 
 > [!NOTE]
-> It's possible that you won't see the **Reset Passcode** button on the Company Portal website. If you do not, you'll need to contact your IT admin for support through the Company Portal website.
+> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you'll need to contact your IT admin to reset the passcode for you.
 
 To reset your passcode:
 
