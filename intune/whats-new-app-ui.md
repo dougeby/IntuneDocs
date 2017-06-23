@@ -39,7 +39,7 @@ The user will tap on the **Access Company Content** button instead of beginning 
 
 The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials. 
 
-![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_new_auth_page_after_1706.png)
+![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
 The device can still be enrolled into full management by tapping on the **action** menu.
 
