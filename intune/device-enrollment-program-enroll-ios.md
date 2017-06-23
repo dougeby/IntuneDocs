@@ -57,22 +57,32 @@ Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment
 - Signed up for [Apple's Device Enrollment Program](http://deploy.apple.com)
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
-1. In the Intune portal, choose **Device enrollment**, and then choose **Apple enrollment**, choose **Enrollment Program Profile**.
+1. In the Intune portal, choose **Device enrollment**, and then choose **Apple enrollment**, choose **Enrollment Program Token**.
+![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
 2. Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
 
 **Step 2. Create and download an Apple DEP token.**<br>
-Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com), and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+Select **Create a token via Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-create.png)
 
-   1.  In Apple's [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Programs** &gt; **Manage Servers**, and then choose **Add MDM Server**.
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-sign.png)
+   1.  In Apple's [Deployment Programs portal](https://deploy.apple.com), select **Get Started** for **Device Enrollment Program**.
+   ![Screenshot of Enrollment Program clicking Get Started for the Device Enrollment Program.](./media/enrollment-program-token-started.png)
+   2. On the **Manage Servers** page, choose **Add MDM Server**.
    2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
-   3.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+   ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
+   3.  The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+   ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-choose-file.png)
    4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
+   ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-your-token.png)
    5. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
-   6. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-   7. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
+   6. Under **Choose Devices By**, specify details by device **Serial Number**.
+   ![Screenshot of specifying choose devices by serial number, setting choose action as Assign to server and selecting the server name.](./media/enrollment-program-token-specify-serial.png)
+   7. For **Choose Action**, select **Assign to Server**, select the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal displays **Assignment Complete**.
 
-**Step 3. Enter the Apple ID used to create your Apple DEP token.**<br>This ID can be used in the future to renew your Apple DEP token.
-
+**Step 3. Enter the Apple ID used to create your Apple DEP token.**<br>In the Intune portal, provide the Apple ID for future reference. Use this ID to renew your Apple DEP token to avoid needing to re-enroll all your devices.
+![Screenshot of specifying the Apple ID used to create the DEP token and browsing to the DEP token.](./media/enrollment-program-token-apple-id.png)
 **Step 4. Browse to your Apple DEP token to upload.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune will automatically synchronize with your DEP account.
 
