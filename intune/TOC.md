@@ -16,7 +16,6 @@
 ## [Common scenarios](common-scenarios.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
-## [Intune service description](microsoft-intune-service-description.md)
 
 <!--# Get started
 ## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
@@ -75,7 +74,8 @@
 #### [Corporate identifiers](corporate-identifiers-add.md)
 #### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
-### [Set up Windows enrollment](windows-enroll.md)
+### Set up Windows enrollment
+#### [Auto-enroll](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
 ### Set up iOS enrollment
@@ -95,6 +95,8 @@
 ### [Remove company data](device-company-data-remove.md)
 ### [Reset passcode](device-passcode-reset.md)
 ### [Restart device](device-restart.md)
+### [Logout current user](device-logout-user.md)
+### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Examine device inventory](device-inventory.md)
 
@@ -111,9 +113,10 @@
 #### [Web apps](web-app.md)
 #### [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)
 #### [Windows Phone LOB apps](lob-apps-windows-phone.md)
-#### [Windows store apps](store-apps-windows.md)
+#### [Windows Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
+#### [Office 365 apps for Windows 10](apps-add-office365.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
 ### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
@@ -175,6 +178,7 @@
 ### [Configure Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
+### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
@@ -190,7 +194,7 @@
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### Create Actions for noncompliance
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)
@@ -204,6 +208,7 @@
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
 ## Protect data and devices
+<<<<<<< HEAD
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
@@ -219,8 +224,16 @@
 
 ### [Network access control](network-access-control-integrate.md)
 
+=======
+<!-- ### Set up mobile threat protection		
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
+>>>>>>> 75a1e571b014870564692f1856feebafbdaf7ffc
 ### [Set up Windows Hello](windows-hello.md)		
-<!-- ### Protect devices with remote actions		-->
+<!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
@@ -280,6 +293,5 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [Glossary](intune-glossary.md)
