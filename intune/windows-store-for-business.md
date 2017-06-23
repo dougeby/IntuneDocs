@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune portal. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.
-* Apps that are synchronized appear in the Intune administration console, and you can assign these like any other apps.
+* Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
 * Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
 
@@ -41,7 +41,7 @@ The [Windows Store for Business](https://www.microsoft.com/business-store) gives
 
 Review the following information before you start syncing and assigning apps from the Windows Store for Business:
 
-- You must configure Intune as the mobile device management authority for your organization.
+- Configure Intune as the mobile device management authority for your organization.
 - You must have signed up for an account on the Windows Store for Business.
 - Once you have associated a Windows Business Store account with Intune, you cannot change to a different account in the future.
 - Apps purchased from the store cannot be manually added to or deleted from Intune. They can only be synchronized with the Windows Store for Business.
@@ -57,7 +57,7 @@ Before you enable synchronization in the Intune console, you must configure your
 3. On the Management tools page, choose **Add a management tool**, and choose **Microsoft Intune**.
 
 > [!NOTE]
-> If you are using more than one management tool to assign Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
+> You could previously only associate one management tool to assign apps with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
 
 You can now continue, and set up synchronization in the Intune console.
 
@@ -68,8 +68,8 @@ You can now continue, and set up synchronization in the Intune console.
 3. On the **Intune** blade, choose **Mobile apps**.
 1. On the **Mobile Apps** blade, choose **Setup** > **Windows Store for Business**.
 2. Click **Enable**.
-3. If you haven't already done so, click the link to sign-up for the Windows Store for Business and associate your account as detailed previously.
-5. From the **Language** drop-down list, choose the language in which apps from the Windows Store for Business will be displayed in the Intune portal. Regardless of the language in which they are displayed, they will be installed in the end user's language when available.
+3. If you haven't already done so, click the link to sign up for the Windows Store for Business and associate your account as detailed previously.
+5. From the **Language** drop-down list, choose the language in which apps from the Windows Store for Business is displayed in the Intune portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
 6. Click **Sync** to get the apps you've purchased from the Windows Store into Intune.
 
 ## Synchronize apps
@@ -81,13 +81,13 @@ You can now continue, and set up synchronization in the Intune console.
 
 You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
 
-Offline apps can be targeted to user groups, device groups or groups with users and devices.
+Offline apps can be targeted to user groups, device groups, or groups with users and devices.
 Offline apps can be installed for a specific user on a device or for all users on a device. 
 
 
-When you assign a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for an assigned app, you will not be able to assign any more copies. You must take one of the following actions:
+When you assign a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for an assigned app, you cannot assign any more copies. Take one of the following actions:
 * Uninstall the app from some devices.
-* Reduce the scope of the current assignment to target only the users you have sufficient licenses for.
+* Reduce the scope of the current assignment, targeting only the users you have sufficient licenses for.
 * Buy more copies of the app from the Windows Store for Business.
 
 
