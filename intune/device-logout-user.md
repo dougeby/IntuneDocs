@@ -3,7 +3,7 @@
 
 title: Logout the user of an iOS device with Intune 
 titleSuffix: "Intune on Azure"
-description: Learn how to log out the current user of an iOS device with Intune."
+description: Learn how to logout the current user of an iOS device with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
