@@ -1,5 +1,5 @@
 ---
-title: Help desk troubleshooting portal 
+title: Help desk troubleshooting portal
 titleSuffix: "Intune on Azure"
 description: Help desk staff use the troubleshooting portal to solve users' technical problems  
 keywords:
@@ -27,7 +27,13 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The troubleshooting portal lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
+The troubleshooting portal lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems. Organizations that include help desk operators in their staff can assign the **Help desk operator** to a group of users, who can then use the Troubleshoot blade help users.
+
+For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune displays pertinent information that can help resolve many tier-1 issues such as user status, device enrollment failure, or compliance issues. Issues addressed can include:
+- Device not responding
+-	Device not getting VPN or Wi-Fi
+-	App not behaving as expected
+
 
 ## Add help desk operators
 An Intune administrator can assign help desk operator permission to users. Help desk users can then view the Intune portal but cannot view or perform administrative tasks outside the troubleshooting workload.
@@ -42,10 +48,10 @@ For more information about Intune roles, see [Intune roles (RBAC)](role-based-ac
 ## Access the troubleshooting portal
 
 Help desk staff and Intune administrators can access the troubleshooting portal in two ways:
+- Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser. Only the Troubleshoot portal is visible.
 - In the Intune portal, select **Troubleshoot**. Other workloads are visible in the left navigation blade, but unavailable.
 
 ![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
-- Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser. Only the Troubleshoot portal is visible.
 
 ## Use the troubleshooting portal
 
