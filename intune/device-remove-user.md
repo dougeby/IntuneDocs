@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Remove a user from a shared iOS device with Inunte
+# Remove a user from a shared iOS device with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
