@@ -37,11 +37,7 @@ The user will tap on the **Access Company Content** button instead of beginning 
 
 ![An image of the Android Company Portal app, which shows in large text "Access Company Content" in the middle rather than offering immediate enrollment options as is the standard case](./media/and_access_company_content_after_1706.png)
 
-The user then is taken to the Company Portal website to authorize the app for use on their device.
-
-![An image of the Company Portal website, offering a sign in authorization after having tapped on the "Access Company Resources"](./media/and_iwp_sign_in_auth_page_after_1706.png)
-
-The Company Portal website then verifies their credentials. 
+The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials. 
 
 ![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_new_auth_page_after_1706.png)
 
