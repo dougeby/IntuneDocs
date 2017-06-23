@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,21 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 ## Week of June 12, 2017
 
+### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management.
+
+The user will tap on the **Access Company Content** button instead of beginning to enroll the device.
+
+![An image of the Android Company Portal app, which shows in large text "Access Company Content" in the middle rather than offering immediate enrollment options as is the standard case](./media/and_access_company_content_after_1706.png)
+
+The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials. 
+
+![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
+
+The device can still be enrolled into full management by tapping on the **action** menu.
+
+![An image of the Company Portal app for Android, showing the menu from the top right corner of the screen with an option to still enroll the device.](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
+
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
 
 The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app.
@@ -38,6 +53,20 @@ The Company Portal app for Windows 10 will now automatically initiate a sync for
 
 ![An image of the Windows 10 Company Portal app, with the new automatic syncing state showing with a status message indicating that the device is syncing and attempting to download the app.](./media/w10_download_pending_syncing_after_1706.png)
 
+### New guided experience for Windows 10 Company Portal <!---1058938--->
+The Company Portal app for Windows 10 will include a guided Intune walkthrough experience for devices that have not been identified or enrolled. The new experience provides step-by-step instructions that guide the user through registering into Azure Active Directory (required for Conditional Access features) and MDM enrollment (required for device management features). The guided experience will be accessible from the Company Portal home page. Users can continue to use the app if they do not complete registration and enrollment, but will experience limited functionality.
+
+This update is only visible on devices running Windows 10 Anniversary Update (build 1607) or higher.
+
+![An image of the Windows 10 Company Portal app landing page, with a status message in the middle in the "devices" list which is telling a user that the device they're on hasn't been set up for corporate use yet, and that the user should select the message to begin setup.](./media/win10_guided_enroll_select_setup_after_1706.png)
+
+![An image of the Windows 10 Company Portal app set up page, which is warning the user that they need to add a corporate account to this device, then they can enroll it into management.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+
+![An image of the Windows 10 Company Portal app add corporate account to this device page, which is telling the user that they will need to go to the Settings app and select "Connect" to complete enrollment. After they do this, the screen tells them that they will need to return to the Company Portal app to complete enrolling.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+
+![An image of the Windows 10 Company Portal app enroll into management screen, which shows a completed status message saying that the user's device is now enrolled and that they should tap the 'next' button to continue.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
+
+![An image of the Windows 10 Company Portal app completion screen, letting the user know that they're all set, and that the device is enrolled with a corporate account properly added to it.](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
 ### New menu action to easily remove Company Portal <!--1164569-->
 Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user.
