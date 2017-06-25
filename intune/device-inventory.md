@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 06/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,13 +46,14 @@ Now, choose one of the following:
 - **Manage** - Choose **All Devices** to see a list of all the devices you manage.
 	Select one of those devices in the list to open the <*device name*> **Overview** blade where you can select one of:
 	- **Overview**  - See general information about the device including information about it's name, the owner, whether it is a BYOD device, when it last checked-in, and more.
-
+	![Device overview](./media/device-overview.png)
 	- **Hardware** - See more detailed information about the device including it's free storage space, model and manufacturer, and more.
 	![Managed device hardware inventory](./media/hardware-inventory.png)
-	- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
-	![Detected applications node](./media/detected-applications.png)
+	- **Discovered apps** - Displays a list of all apps that Intune found installed on the device.
+	![Discovered apps node](./media/detected-applications.png)
+	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
+	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
 - **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions.
-![Monitor device actions](./media/monitor-device-actions.png)
-
+- **Setup** > **TeamViewer Connector** - Let's you configure remote administration on devices using the TeamViewer software. For details, see [Provide remote assistance for Intune managed Android devices](/intune/device-profile-android-teamviewer).
 
 
