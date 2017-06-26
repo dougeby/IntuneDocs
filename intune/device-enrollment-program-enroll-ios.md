@@ -102,12 +102,12 @@ A device enrollment profile defines the settings applied to a group of devices d
 ![Screenshot of choosing the create link to create a new enrollment program profile.](./media/enrollment-program-profile-create.png)
 3. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details.
 ![Screenshot of specifying the name description, and then choosing Enroll with user affinity for a new enrollment program profile.](./media/enrollment-program-profile-name.png)
-For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+For **User Affinity**, choose whether devices with this profile enroll with or without user affinity.
 
  - **Enroll with user affinity** - User are affiliated with devices during setup and can then be permitted to access company data and email. Choose **user affinity** for devices that belong to users and that need to use the company portal for services like installing apps.
 
  > [!NOTE]
- > Multifactor authentication (MFA) doesn't work during enrollment on enrollment program-managed devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on devices. Additionally, users whose passwords have expired won't be prompted to reset their password during enrollment and must reset the password from a different device.
+ > Multifactor authentication (MFA) doesn't work during enrollment on enrollment program-managed devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on devices. Additionally, users with expired passwords aren't prompted to reset their password during enrollment and must reset the password from a different device.
 
  >[!NOTE]
  >Enrollment program management with user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) to be enabled to request user token. [Learn more about WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -132,10 +132,10 @@ For **User Affinity** choose whether devices with this profile will enroll with 
 
 	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
     - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
-        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
+        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
         - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
-        - **Apple ID** - If enabled, iOS will prompt users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including those installed by Intune.
+        - **Apple ID** - If enabled, iOS prompts users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including those apps installed by Intune.
         - **Terms and Conditions** - If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation
         - **Touch ID** - If enabled, Setup Assistant prompts for this service during activation
         - **Apple Pay** - If enabled, Setup Assistant prompts for this service during activation
@@ -180,7 +180,7 @@ Devices managed by Intune must be assigned an enrollment program profile before 
 
 You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset. When the enrollment program-managed iOS device is turned on, the user sees the following:  
 
-1. **Set Up iOS device** - Users can choose from the following:
+1. **Set Up iOS device** - Users can choose from the following options:
   - **Set Up as New device**
   - **Restore from iCloud Backup**
   - **Restore from iTunes Backup**
