@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 06/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Role-based access control
 #### New role-based administration access for Intune admins   <!-- 1099990 -->  
-A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permissions so that they have access to conditional access policies.
+A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permission so that they have access to conditional access policies.
 
 
 ### Device enrollment
@@ -65,13 +65,13 @@ In this release, we've added two new remote device actions for iOS devices:
 - 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
 
-Using these remote actions, admins will be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
+Using these remote actions, admins be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
 
 During enrollment, the admin determines the maximum number of user accounts that can be cached on a device. "Remove user" allows admins to remove specific users that are cached.
 
-"Logout current user" will log out the user that's currently logged into the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
+"Logout current user" will log out the user that's currently logged in to the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
 
-"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
+"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data that is associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
 
 #### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
 In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
@@ -88,6 +88,15 @@ For more information, see [How to add Office 365 apps for Windows 10](apps-add-o
 #### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
 
 The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
+
+#### Managed browser and app proxy integration <!-- 1287310 -->
+ The Intune Managed Browser can now integrate with the Azure AD Application Proxy service to let users access internal web sites even when they are working remotely. Users of the browser simply enter the site URL as they normally would and the Managed Browser routes the request through the application proxy web gateway. For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md).
+
+
+#### New app configuration settings for the Intune Managed Browser <!-- 682951 -->
+In this release, we've added further configurations for the Intune Managed Browser app. You can now use an app configuration policy to configure the default home page and bookmarks for the browser. For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md)
+
+
 
 
 ### Device configuration  
