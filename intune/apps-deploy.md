@@ -68,4 +68,6 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 
 The app is now assigned to the group you selected.
 
+## Next steps
+
 See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
