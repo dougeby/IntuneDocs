@@ -99,3 +99,6 @@ Supports: Windows 10 only.
 Custom settings let you assign device settings that are not built-into Intune. For example, on Android devices, you can specify OMA-URI values that configure the device. For iOS devices, you can import a configuration file you created in the Apple Configurator.
 For more information, see [How to configure custom settings](custom-settings-configure.md)
 Supports: Android, iOS, macOS, and Windows Phone 8.1.
+
+## Next steps
+Choose one of the profile types from the list to get started configuring devices.
