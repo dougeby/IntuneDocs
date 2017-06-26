@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can set the following restrictions for device enrollment:
+As an Intune admin, you can determine which devices can enroll into management with Intune and what operating system versions you support. Use the Intune portal to set the following restrictions for device enrollment:
 
 - Maximum number of enrolled devices
 - Device platforms that can enroll:
@@ -44,7 +44,7 @@ As an Intune admin, you can set the following restrictions for device enrollment
 - Restrict personally owned devices (iOS, Android, macOS only)
 
 >[!NOTE]
->Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. This restriction is a best-effort barrier for non-malicious users.
+>Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. These restrictions are a best-effort barrier for non-malicious users.
 
 ## Set default enrollment restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
