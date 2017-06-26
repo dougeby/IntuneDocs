@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # The early edition for Microsoft Intune - June 2017
 
-The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on an extremely limited basis and is subject to change. Please do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Microsoft product group contact if you have any questions or concerns.
+The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on an extremely limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
 This page is updated periodically. Check back for additional updates.
 
@@ -40,7 +40,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### New app configuration settings for the Intune Managed Browser <!--- 682951 --->
 
-We will be adding further configurations for the Intune Managed Browser app. You will be able to use an app configuration policy to configure the default home page and bookmarks for the browser.
+We will add further configurations for the Intune Managed Browser app. You will be able to use an app configuration policy to configure the default home page and bookmarks for the browser.
 
 ### Restrict Android device enrollment restriction by OS version <!-- 747620 -->
 
@@ -72,7 +72,7 @@ The following settings will be available for Windows 10 device restriction profi
 
 ### Support for shared iPads with the iOS Classroom app <!-- 1044681, 854689 -->
 
-We will be expanding the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
+We will be expanding the support for managing the iOS Classroom app to include students who log in to shared iPads using their managed Apple ID.
 
 ### Office 365 ProPlus app available for Windows 10 devices <!--1121362-->
 
@@ -82,13 +82,13 @@ We're adding the new Office 365 ProPlus app type that makes it easy for you to a
 
 Intune will support uploading iOS, macOS, and Android serial numbers as corporate-owned device identifiers. You will not be able to use serial numbers to block personal devices from enrolling at this time because serial numbers are not verified during enrollment. Blocking personal devices by serial number will be released in the near future.
 
-### SCOM management pack for Exchange connector <!-- 885457 -->
+### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
 
-The System Center Operations Manager (SCOM) management pack for Exchange connector will be available to help you parse the Exchange connector logs. This will give you different ways of monitoring Intune when you need to troubleshoot issues.
+The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This will give you different ways of monitoring Intune when you need to troubleshoot issues.
 
 ### New role-based administration access for Intune admins <!-- 1099990 -->
 
-A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permissions so that they have access to conditional access policies.
+A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. You can grant Intune admins this role with its permissions so that they have access to conditional access policies.
 
 ### App-based conditional access for Microsoft Teams <!-- 1257019 -->
 
