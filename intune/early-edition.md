@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Early edition 
+title: Early edition
 description:
 keywords:
 author: mtillman
@@ -28,9 +28,9 @@ ms.custom: intune-classic
 
 # The early edition for Microsoft Intune - June 2017
 
-The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on an extremely limited basis and is subject to change. Please do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Microsoft product group contact if you have any questions or concerns. 
+The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on an extremely limited basis and is subject to change. Please do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Microsoft product group contact if you have any questions or concerns.
 
-This page is updated periodically. Check back for additional updates. 
+This page is updated periodically. Check back for additional updates.
 
 > [!Note]
 >The following changes are under development for Intune. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -40,7 +40,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### New app configuration settings for the Intune Managed Browser <!--- 682951 --->
 
-We will be adding further configurations for the Intune Managed Browser app. You will be able to use an app configuration policy to configure the default home page and bookmarks for the browser. 
+We will be adding further configurations for the Intune Managed Browser app. You will be able to use an app configuration policy to configure the default home page and bookmarks for the browser.
 
 ### Restrict Android device enrollment restriction by OS version <!-- 747620 -->
 
@@ -102,13 +102,13 @@ When end users need to set a start-up PIN on Samsung KNOX devices in order to be
 
 ### Promoting the most current version of the Company Portal for Android <!--1098661-->
 
-End users will see an in-app notification when a new recommended version of the Company Portal app for Android has been released in the app's Notifications screen. This notification will tell users that a "Company Portal update is available." Tapping the notification will open a webpage showing the list of available app stores where they can download the updated version. 
+End users will see an in-app notification when a new recommended version of the Company Portal app for Android has been released in the app's Notifications screen. This notification will tell users that a "Company Portal update is available." Tapping the notification will open a webpage showing the list of available app stores where they can download the updated version.
 
 ### Improvements to app syncing with Windows 10 Creators Update <!-- 676505 -->
 
-The Company Portal for Windows 10 will automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (1704). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. 
+The Company Portal for Windows 10 will automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app.
 
-The Company Portal for Windows 10 will also expose a refresh button to allow the user to refresh the content in the app whenever they need. 
+The Company Portal for Windows 10 will also expose a refresh button to allow the user to refresh the content in the app whenever they need.
 
 ### New guided experience for Windows 10 Company Portal <!-- 1058938 -->
 
