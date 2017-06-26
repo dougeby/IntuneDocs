@@ -127,7 +127,7 @@ For **User Affinity** choose whether devices with this profile will enroll with 
   Choose **Save**.
 
 5. Select **Setup Assistant Settings** to configure the following profile settings:
-![Screenshot of choosing the management mode with Supervised, locked enrollment, allow pairing set to deny all, and Apple Configurator Certificates greyed out for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
+![Screenshot of choosing the configure settings with available settings for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
 	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
@@ -149,24 +149,26 @@ For **User Affinity** choose whether devices with this profile will enroll with 
 ## Sync DEP managed devices
 Now that Intune has permission to manage your DEP devices, you can synchronize Intune with the DEP service to see your managed devices in the Intune portal.
 
-1. In the Intune portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
-2. Under **Manage Enrollment Program Settings**, select **Serial Numbers**.
-3. On the **Apple DEP Serial Numbers** blade, select **Sync**.
-4. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
-
+1. In the Intune portal, choose **Device enrollment** &gt;  **Apple Enrollment** &gt; **Enrollment Program Devices**.
+2. Under **Enrollment Program Devices**, select **Sync**. The **Sync** blade appears.
+![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
+3. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
     To comply with Apple’s terms for acceptable DEP traffic, Intune imposes the following restrictions:
      -	A full DEP sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
      -	Any sync request is given 10 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-
->[!NOTE]
->You can also assign DEP serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
+4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign a DEP profile to devices
 DEP devices managed by Intune must be assigned a DEP profile before they are enrolled.
 
+>[!NOTE]
+>You can also assign DEP serial numbers to profiles from the **Apple Serial Numbers** blade.
+
 1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program Profiles**.
-2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
-3. Select **Assign** and then select the DEP devices you want to assign this profile. You can filter to view DEP available devices:
+2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Assign devices**.
+![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-assign.png)
+3. Select **Assign** and then select the devices you want to assign this profile. You can filter to view available devices:
   - **unassigned**
   - **any**
   - **&lt;DEP profile name&gt;**
@@ -174,12 +176,27 @@ DEP devices managed by Intune must be assigned a DEP profile before they are enr
 
   ![Screenshot of Assign button for assigning DEP profile in the Intune portal](media/dep-profile-assignment.png)
 
-5. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a DEP profile.
+## End user experience with managed devices
 
-## Distribute devices to users
+You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset. When the enrollment program-managed iOS device is turned on, the user sees the following:  
 
-You can now distribute corporate-owned devices to users. When an iOS DEP device is turned on, it will be enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset.
+1. **Set Up iOS device** - Users can choose from the following:
+  - **Set Up as New device**
+  - **Restore from iCloud Backup**
+  - **Restore from iTunes Backup**
+2. Users are informed **Microsoft will automatically configure your device.** The following additional configuration details are also available:
 
-### How users install and use the Company Portal on their devices
+  **Configuration allows Microsoft to manage this device over the air.**
 
-Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
+  **An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely.**
+
+  **An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.**
+
+  **Configuration is provided by:<br>
+  MicrosoftIntune iOS Team<br>
+  One Microsoft Way, Redmond, WA 98052 (USA)**
+
+3. Users are prompted for their work or school username and password.
+4. Users are prompted for their Apple ID. An Apple ID is required to install the Intune Company Portal app and other apps. After credentials are provided, the device installs a management profile that cannot be removed. The Intune management profile is displayed in **Settings** > **General** > **Device Management** on the device.
+
+Users can now finish setting up their company-owned device using either the Intune Company portal or Apple Setup Assistant.
