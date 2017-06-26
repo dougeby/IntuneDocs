@@ -44,10 +44,10 @@ As an Intune admin, you can set the following restrictions for device enrollment
 - Restrict personally owned devices (iOS, Android, macOS only)
 
 >[!NOTE]
->This is not a security feature, as compromised devices can misrepresent their operating system version information. This is a best-effort barrier for non-malicious users.
+>Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. This is a best-effort barrier for non-malicious users.
 
-## Set the default number of enrolled devices
-
+## Set default enrollment restrictions
+The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
 1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
 ![Screenshot of the device restrictions workspace with the default device type restrictions and device limit restrictions.](media/device-restrictions-set-default.png)
 2. Under **Enrollment restrictions** > **Device Type Restrictions**, select **Default**.
@@ -62,34 +62,27 @@ As an Intune admin, you can set the following restrictions for device enrollment
   - **Versions** - Specify **Min** and **Max** platform operating system versions for Android and iOS devices.
   - **Personally Owned** - Specify whether to **Allow** or **Block** for Android, iOS, and macOS devices.
   ![Screenshot of the device restrictions workspace with the default device platform configurations showing versions and personally owned settings configured.](media/device-restrictions-platform-configurations.png)
+  Click **Save**.
 
-## Create device type restrictions
+## Create new enrollment restrictions
 
 1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**, and then choose **Create**.
 ![Screenshot of the device restrictions workspace with the Create button highlighted.](media/device-restrictions-create.png)
-2. Under **Device Type Restrictions**, select **Default**.
-
-3. On the **All Users** blade, select **Platforms**.
-
-4. For platforms that are allowed to enroll in Intune, select **Allow**. For platforms that you want to block from enrolling, select **Block**. Platforms are set to **Allow** by default.
-
-    >[!NOTE]
-    >These settings do not apply to or block Windows enrollments that use the Intune software client. These settings affect only enrollment using mobile device management.
-
-6. Select **Save**.
-
-7. Select **Platform Configurations**.
-
-8. Choose whether to **Allow** or **Block** personally owned iOS and Android devices from enrolling.
-
-9. Select **Save**.
-
-## Set device limit restrictions
-
-1. In the Intune portal, choose **Device enrollment**, and then choose **Enrollment restrictions**.
-
-3. Under **Device Limit Restrictions**, select **Default**.
-
-4. On the **All Users** blade, select **Device Limit**.
-
-5. Select the maximum number of devices that a user can enroll, and then select **Save**.
+2. Specify the **Name** and **Description** of the enrollment restriction for administrative purposes. These do not display to end users.
+3. Select the **Restriction Type** to create:
+  - **Device Type Restriction** - Specify platform restrictions:
+    - Device platforms that can enroll:
+      - Android
+      - iOS
+      - macOS
+      - Windows
+    - Platform operating system version (iOS and Android only)
+      - Minimum version
+      - Maximum version
+    - Restrict personally owned devices (iOS, Android, macOS only)
+  - **Device Limit Restrictions** - Specify the maximum number of enrolled devices per user
+4. Click **Create** to create the new enrollment restriction.
+5. Select **Groups Assigned** to assign these enrollment restrictions to groups of users, and then select **Assign**.
+6. Choose the groups to assign this restriction. You can multi-select groups with the **Ctrl** key. Choose **Select** to save your selections, and then **Assign** to apply the enrollment restrictions to groups.
+![Screenshot of device enrollment restrictions showing priority and properties for enrollment restrictions.](media/device-restrictions-create-list.png)
+7. You can adjust the priority of enrollment restrictions by dragging and dropping the enrollment restrictions up or down.
