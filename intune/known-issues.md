@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 06/26/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,14 +56,14 @@ Because these capabilities cannot be managed from both the classic Silverlight a
 - Disables them in the classic console
 - Enables them in the Azure console.  
 
-If you now manage these Intune capabilities in the Azure portal, be aware of the following:
+If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
 
 ### Removes default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
+The Azure Portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure Portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
 
 ### Apple DEP token restored with migration
 
-If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure Intune portal, the original token is restored in the Azure Portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure Portal. 
+If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure portal, the original token is restored in the Azure portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure portal. 
 
 ## Altering groups created by Intune during migration delays migration
 
@@ -90,9 +90,14 @@ For more information about these settings, see [macOS device restriction setting
 ## You cannot save a Windows Information Protection policy for some devices
 
 For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
-If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will be changed soon to be more accurate.
+If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will soon be changed to be more accurate.
 
 ## Status blades for migrated policies do not work
 
 You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can continue to view reports for these policies in the Classic portal.
 To view status information for migrated configuration policies, recreate them in the Azure portal.
+
+## Cisco AnyConnect VPN client support
+ 
+The latest release of the Cisco AnyConnect VPN client is not currently compatible with Intune. 
+A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
