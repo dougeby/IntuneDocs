@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,6 +81,35 @@ When the assigned app is run on a device, it will run with the settings that you
 > [!TIP]
 > If one or more app configuration policies conflict, neither policy is enforced.
 
+## Create a MAM targeted configuration policy
+MAM targeted configuration is the ability to integrate customer defined settings into normal MAM-WE operation. For example, these settings may be ones defined in customer consoles. MAM targeted configuration data can be provided via the MAM Service to MAM-WE enabled applications. The application configuration data is pushed through our MAM Service directly to the app instead of through the MDM channel. MDM app configuration policies (the above instructions) is the native solution through MDM. The key difference with MAM targeted configuration is that the device that the app runs on does not need to be MDM-enrolled. MAM targeted configuration is available on iOS and Android. For iOS, the app must have incorporated Intune APP SDK for iOS (v 7.0.1). The steps for creating a MAM targeted configuration policy are as follows: 
+1. Sign into the **Azure portal**.
+
+2. Choose **Intune > Mobile apps - App configuration policies**.
+
+3. On the **App configuration policies** blade, choose **Add**.
+
+4. Enter a **Name**, and optional **Description** for the app configuration settings and choose **Not enrolled with Intune**.
+
+5. Choose **Select required apps** and then, on the **Targeted** apps blade, choose apps for the platforms you intend. <br> 
+**Note:** For LOB apps, select **More apps**. Enter the package ID for your application.
+
+6. Choose **OK** to return to the **Add app configuration** blade.
+
+7. Choose **Define configuration**. On the **Configuration** blade, you define key and value pairs to supply configurations.
+
+8. When you are done, choose **OK**.
+
+9. On the **Add app configuration blade**, choose **Create**.
+
+The new configuration is created, and displayed on the App configuration blade. 
+
+Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
+
+When the assigned app (integrated with the Intune APP SDK) is run on a device, it will run with the settings that you configured in the MAM targeted configuration policy. The assigned app needs to have integrated the supported version of the Intune APP SDK. For more information about the app development requirements to use MAM Targeted Configuration policies, see [iOS Intune APP SDK Integration Guide](https://docs.microsoft.com/en-us/intune/app-sdk-ios).
+
+For more information about the capabilities our Graph API with respect to the MAM targeted config values, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+
 ## Information about the XML file format
 
 Intune supports the following data types in a property list:
@@ -106,10 +135,6 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) for iOS devices
 
 The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
-
-
-
-
 
 ## Example format for an app configuration XML file
 

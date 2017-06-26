@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Skycure to use Azure AD single sign on with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune on Azure"
 description: "Configure Skycure to use Azure AD single sign on with Intune"
 keywords:
 author: andredm7

@@ -137,5 +137,5 @@ Follow these steps to generate the App protection report:
 ## See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](/intune/end-user-mam-apps-android)
+* [What to expect when your iOS app is managed by app protection policies](/intune/end-user-mam-apps-ios)

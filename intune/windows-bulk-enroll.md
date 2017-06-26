@@ -1,12 +1,12 @@
 ---
-title: Bulk enrollment for Windows 10 
+title: Bulk enrollment for Windows 10
 titleSuffix: "Intune on Azure"
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,14 @@ Bulk enrollment for Window devices requires the following:
 
 ## Troubleshooting Windows bulk enrollment
 
+### Provisioning issues
 Provisioning is intended to be used on new Windows devices. Provisioning failures might require a factory reset of the device or device recovery from a boot image. These examples describe some reasons for provisioning failures:
 
 - A provisioning package that attempts to join an Active Directory domain or Azure Active Directory tenant that does not create a local account could make the device unreachable if the domain-join process fails due to lack of network connectivity.
 - Scripts run by the provisioning package are run in system context, and are able to make arbitrary changes to the device file system and configurations. A malicious or bad script could put the device in a state that can only be recovered by reimaging or factory resetting the device.
+
+### Problems with bulk enrollment and Company Portal
+If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
+
+### Conditional access
+Conditional access is not available for Windows devices enrolled using bulk enrollment.

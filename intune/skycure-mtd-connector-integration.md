@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up the Skycure integration with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Intune on Azure"
 description: Set up the Skycure integration with Microsoft Intune.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/09/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -113,4 +113,4 @@ Skycure syncs the devices running its Mobile Threat Defense service with the Azu
 
 ## Next steps
 
-[Enable Skycure Mobile Threat Defense in Intune](skycure-mtd-connector-enable.md)
+[Enable Skycure Mobile Threat Defense in Intune](mtd-connector-enable.md)
