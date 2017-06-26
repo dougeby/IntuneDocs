@@ -56,14 +56,14 @@ Because these capabilities cannot be managed from both the classic Silverlight a
 - Disables them in the classic console
 - Enables them in the Azure console.  
 
-If you now manage these Intune capabilities in the Azure portal, be aware of the following:
+If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
 
 ### Removes default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
+The Azure Portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure Portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
 
 ### Apple DEP token restored with migration
 
-If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure Intune portal, the original token is restored in the Azure Portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure Portal. 
+If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure portal, the original token is restored in the Azure portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure portal. 
 
 ## Altering groups created by Intune during migration delays migration
 
@@ -90,7 +90,7 @@ For more information about these settings, see [macOS device restriction setting
 ## You cannot save a Windows Information Protection policy for some devices
 
 For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
-If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will be changed soon to be more accurate.
+If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will soon be changed to be more accurate.
 
 ## Status blades for migrated policies do not work
 
