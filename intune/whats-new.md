@@ -4,10 +4,10 @@ title: What's new in Microsoft Intune
 titleSuffix: "Intune on Azure"
 description: Find out what's new in the Intune Azure portal
 keywords:
-author: mtillman
-ms.author: mtillman
+author: brenduns  
+ms.author: brenduns
 manager: angrobe
-ms.date: 06/22/2017
+ms.date: 06/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,83 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+
+
+<!-- Common categories:  
+  ### Role-based access control
+  ### Device enrollment
+  ### Device management
+  ### App management
+  ### Device configuration
+-->   
+
+
+
+## Week of June 26th, 2017
+
+### Role-based access control
+#### New role-based administration access for Intune admins   <!-- 1099990 -->  
+A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permissions so that they have access to conditional access policies.
+
+
+### Device enrollment
+#### Tag corporate-owned devices with serial number <!-- 1215070 -->  
+Intune now supports uploading iOS, macOS, and Android serial numbers as Corporate Device Identifiers. You can't use serial numbers to block personal devices from enrolling at this time because serial numbers are not verified during enrollment. Blocking personal devices by serial number will be released in the near future.
+
+
+### Device management
+#### New remote actions for iOS devices <!-- 854689 -->
+In this release, we've added two new remote device actions for iOS devices:
+
+- 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
+- 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
+
+
+Using these remote actions, admins will be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
+
+During enrollment, the admin determines the maximum number of user accounts that can be cached on a device. "Remove user" allows admins to remove specific users that are cached.
+
+"Logout current user" will log out the user that's currently logged into the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
+
+"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
+
+#### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
+In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
+
+
+### App management  
+#### Support for offline apps from the Windows Store for Business <!--- 777044 --->
+Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
+
+#### Easier installation of Office 365 apps <!--- 1121362 --->
+The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
+For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
+
+#### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
+
+The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
+
+
+### Device configuration  
+#### BitLocker settings for Windows 10  <!-- 951707 -->
+You can now configure BitLocker settings for Windows 10 devices using a new Intune device profile. For example, you can require that devices are encrypted, and also configure further settings that are applied when BitLocker is turned on.
+For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
+
+### New settings for Windows 10 device restriction profile <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
+
+In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
+
+ -  Windows Defender
+-  Cellular and connectivity
+-  Locked screen experience
+-  Privacy
+-  Search
+-  Windows Spotlight
+-  Edge browser
+
+For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
+
+
 
 ## Week of June 12, 2017
 
