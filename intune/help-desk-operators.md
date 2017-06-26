@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 05/30/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,8 @@ For example, when a user contacts support with a technical issue with Intune, th
 
 ## Add help desk operators
 An Intune administrator can assign help desk operator permission to users. Help desk users can then view the Intune portal but cannot view or perform administrative tasks outside the troubleshooting workload.
+
+Each help desk operator must be assigned an Intune license to access the Intune portal.
 
 1. As an Intune administrator login to Intune portal, and select **Intune roles**.
 3. On the **Intune roles** workload, select **Help Desk Operator** and then select **Assign**.
