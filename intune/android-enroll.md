@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,15 +37,13 @@ Devices that run Samsung KNOX Standard, are supported for multi-user management 
 
 ## Prerequisite
 
-You must set the MDM authority to **Microsoft Intune** to prepare to manage mobile devices. See [Set the MDM authority](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management, so you may have already set this.
+You must set the MDM authority to **Microsoft Intune** to prepare to manage mobile devices. See [Set the MDM authority](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
 
 ## Set up Android enrollment
 
 By default, Intune allows enrollment of Android and Samsung Knox Standard devices.
 
-To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 To enable device management, your users must enroll their devices by downloading the Intune Company Portal app, which is available from Google Play, and then opening the app and following the prompts to enroll. Once Android devices are managed, you [assign compliance policies](compliance-policy-create-android.md), [manage apps](app-management.md), and more.
 

@@ -44,7 +44,7 @@ As an Intune admin, you can set the following restrictions for device enrollment
 - Restrict personally owned devices (iOS, Android, macOS only)
 
 >[!NOTE]
->Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. This is a best-effort barrier for non-malicious users.
+>Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. This restriction is a best-effort barrier for non-malicious users.
 
 ## Set default enrollment restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
@@ -68,7 +68,7 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 
 1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**, and then choose **Create**.
 ![Screenshot of the device restrictions workspace with the Create button highlighted.](media/device-restrictions-create.png)
-2. Specify the **Name** and **Description** of the enrollment restriction for administrative purposes. These do not display to end users.
+2. Specify the **Name** and **Description** of the enrollment restriction for administrative purposes. These settings do not display to end users.
 3. Select the **Restriction Type** to create:
   - **Device Type Restriction** - Specify platform restrictions:
     - Device platforms that can enroll:
@@ -83,6 +83,6 @@ The default enrollment restrictions apply to all users who aren't assigned highe
   - **Device Limit Restrictions** - Specify the maximum number of enrolled devices per user
 4. Click **Create** to create the new enrollment restriction.
 5. Select **Groups Assigned** to assign these enrollment restrictions to groups of users, and then select **Assign**.
-6. Choose the groups to assign this restriction. You can multi-select groups with the **Ctrl** key. Choose **Select** to save your selections, and then **Assign** to apply the enrollment restrictions to groups.
+6. Assign this restriction to groups of users. You can multi-select groups with the **Ctrl** key. Choose **Select** to save your selections, and then **Assign** to apply the enrollment restrictions to groups.
 ![Screenshot of device enrollment restrictions showing priority and properties for enrollment restrictions.](media/device-restrictions-create-list.png)
 7. You can adjust the priority of enrollment restrictions by dragging and dropping the enrollment restrictions up or down.

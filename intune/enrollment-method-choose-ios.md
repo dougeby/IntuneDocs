@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/01/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ Use the following information to decide which method to use for enrolling iOS de
 
 ## User-owned iOS devices (BYOD)
 
-If users want to enroll their personal, BYOD (bring your own device) devices, they can download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources. To enable BYOD, the only reuirement is an [Apple Push Notification service  certificate](apple-mdm-push-certificate-get.md). You can also block enrollment of personally owned iOS devices. See [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions) for instructions.
+If users want to enroll their personal, BYOD (bring your own device) devices, they can download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources. To enable BYOD, the only reuirement is an [Apple Push Notification service  certificate](apple-mdm-push-certificate-get.md). You can also block enrollment of personally owned iOS devices. See [Set device type restrictions](enrollment-restrictions-set.md) for instructions.
 
 ## User-owned macOS devices (BYOD)
 
