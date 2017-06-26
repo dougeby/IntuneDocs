@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 06/22/2017
+ms.date: 06/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+
+## Week of June 26, 2017
+
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+
+To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
 
 ## Week of June 12, 2017
 
@@ -188,12 +196,6 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
-
-### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
-
-We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
-
-To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
 
 ### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
