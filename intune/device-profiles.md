@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -83,6 +83,11 @@ Supports: Android, iOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 ## Edition upgrade
 This profile type lets you automatically upgrade devices that run some versions of Windows 10 to a newer edition
 For more information, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md)
+Supports: Windows 10 only.
+
+## Endpoint protection
+This profile type lets you configure BitLocker settings for Windows 10 devices.
+For more information, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md)
 Supports: Windows 10 only.
 
 ## Windows Information Protection
