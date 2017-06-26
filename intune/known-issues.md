@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 06/26/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,3 +96,8 @@ If you add additional domains (using **Advanced settings** > **Network perimeter
 
 You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can continue to view reports for these policies in the Classic portal.
 To view status information for migrated configuration policies, recreate them in the Azure portal.
+
+## Cisco AnyConnect VPN client support
+ 
+The latest release of the Cisco AnyConnect VPN client is not currently compatible with Intune. 
+A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
