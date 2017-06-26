@@ -54,7 +54,7 @@ The profile is created and appears on the profiles list blade.
 
 ### Windows Settings
 
-- **Require devices to be encrypted (Desktop only)** - If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, this might make the device unstable.
+- **Require devices to be encrypted (Desktop only)** - If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable.
 - **Require Storage Card to be encrypted (mobile only)** - Enable this setting to encrypt any removable storage cards used by the device.
 
 
@@ -85,7 +85,7 @@ The profile is created and appears on the profiles list blade.
 	- **Configure storage of BitLocker recovery Information to AD DS** - Configure what parts of BitLocker recovery information are stored in Active Directory. Choose from:
 		- **Backup recovery passwords and key packages**
 		- **Backup recovery passwords only**
-	- **Require recovery information to be stored in AD DS before enabling BitLocker** - Enable this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information has been successfully stored in Active Directory.
+	- **Require recovery information to be stored in AD DS before enabling BitLocker** - Enable this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information is successfully stored in Active Directory.
 - **Enable pre-boot recovery message and URL** - Enable this setting to configure the message and URL that are displayed on the pre-boot key recovery screen.
 	- **Pre-boot recovery message** - Configure how the pre-boot recovery message displays to users. Choose from:
 		- **Use default recovery message and URL**
