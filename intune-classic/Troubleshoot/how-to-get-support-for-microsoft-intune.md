@@ -75,7 +75,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 6. Choose **Create** to submit your support request.
 
 ## Additional resources
-- [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
+- [Contact assisted phone support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md)
 - [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
