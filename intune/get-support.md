@@ -66,7 +66,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 	>[!IMPORTANT]
 	>If you have a billing or subscription question you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
-	
+
 	Choose **Next** to continue.
 4. On the **Problem** blade, select **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the right subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
 
