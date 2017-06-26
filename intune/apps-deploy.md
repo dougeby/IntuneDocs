@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Once you've added an app to Intune, you'll want to get it out to users and devices. You do this by assigning it.
+Once you've added an app to Intune, you can assign it to users and devices.
 
 Apps can be assigned to devices whether or not they are managed by Intune. Use the following table to help you understand the various options for assigning apps to users and devices:
 
@@ -63,9 +63,9 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 	- **Not Applicable** - The app is not installed or shown in the Company Portal.
 	- **Required** - The app is installed on devices in the selected groups.
 	- **Uninstall** - The app is uninstalled from devices in the selected groups.
-	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. See the table above for help.
+	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
 6. Once you are done, choose **Save**.
 
-The app is now assigned to the group you chose.
+The app is now assigned to the group you selected.
 
 See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
