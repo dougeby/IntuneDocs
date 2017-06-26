@@ -40,7 +40,7 @@ Even though the following pictures are for iOS, the process is virtually identic
 
   ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune/media/cp_ios_aad_signin_after_1704_001.png)
 
-  Don't have the Company Portal app? Find out how to install and download it for [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios) or [Android](install-the-company-portal-app-android).
+  Don't have the Company Portal app? Find out how to install and download it for [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) or [Android](install-the-company-portal-app-android.md).
 
 2. Enter your **Work or school account**.
 
