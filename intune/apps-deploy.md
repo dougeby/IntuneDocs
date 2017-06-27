@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/26/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,6 +67,46 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 6. Once you are done, choose **Save**.
 
 The app is now assigned to the group you selected.
+
+## How conflicts between app intents are resolved
+
+Sometimes, the same app is assigned to multiple groups, but with different intents. In these cases, use this table to understand the resulting intent.
+
+||||
+|-|-|-|
+|Group 1 intent|Group 2 intent|Resulting intent|
+|User Required|User Available|Required and Available|
+|User Required|User Not Available|Required|
+|User Required|User Uninstall|Required|
+|User Available|User Not Available|Not Available|
+|User Available|User Uninstall|Uninstall|
+|User Not Available|User Uninstall|Uninstall
+|User Required|Device Required|Both exists, Gateway treats required 
+|User Required|Device Uninstall|Both exists, Gateway resolves required 
+|User Available|Device Required|Both exists, Gateway resolves required (Required and Available)
+|User Available|Device Uninstall|Both exists, Gateway resolves Available.<br>App shows up in Company Portal.<br>In case if the app is already installed(as required app with previous intent) then the app gets uninstalled.<br>But if the user clicks install from the company portal then the app gets installed and uninstall intent is not honored.|
+|User Not Available|Device Required|Required|
+|User Not Available|Device Uninstall|Uninstall|
+|User Uninstall|Device Required|Both exists, Gateway resolves Required|
+|User Uninstall|Device Uninstall|Both exist, Gateway resolves Uninstall|
+|Device Required|Device Uninstall|Required|
+|User Required And Available|User Available|Required and Available|
+|User Required And Available|User Uninstall|Required and Available|
+|User Required And Available|User Not Available|Required and Available|
+|User Required And Available|Device Required|Both exists Required and Available
+|User Required And Available|Device Not Available|Required and Available|
+|User Required And Available|Device Uninstall|Both exists, gateway resolves required. Required + Available
+|User Not Available|Device Not Available|Not Available|
+|User Available|Device Not Available|Available|
+|User Required|Device Not Available|Required|
+|User Available Without enrollment|User Required and Available|Required and Available
+|User Available without enrollment|User Required|Required
+|User Available without enrollment|User Not available|Not Available
+|User Available without enrollment|User Available|Available|
+|User Available without enrollment|Device Required|Required and Available without enrollment|
+|User Available without enrollment|Device Not Available|Available without enrollment|
+|User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal then the uninstall will be honored.<br>If the user installs the app from  the company portal then the install will be prioritized over the uninstall.|
+
 
 ## Next steps
 
