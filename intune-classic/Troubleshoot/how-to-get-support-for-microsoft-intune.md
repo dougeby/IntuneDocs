@@ -42,12 +42,6 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 
 If you are unable to find answers by using online documentation, you can create an online support ticket.
 
-**Limit each support ticket to a single issue**. This helps us serve you better. Here's why:
-
-- Support engineers are likely to specialize in specific areas, and it's easier to identify the right subject matter experts to help with your issue.
-- Engineering teams can prioritize their work in product areas where the most incidents are being generated.
-- It's easier to escalate challenging issues to the correct resource.
-
 ### File a new support request
 As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
 
@@ -63,7 +57,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	- **Service**: **Microsoft Intune**
 	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
 	>[!IMPORTANT]
-	>If you have a billing or subscription question you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
+	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering please see the [Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services". If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
 
 	Choose **Next** to continue.
 4. On the **Problem** blade, select **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the right subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
