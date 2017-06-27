@@ -60,11 +60,22 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering please see the [Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services". If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
 
 	Choose **Next** to continue.
-4. On the **Problem** blade, select **Severity**, **Problem type**, and **Category** to help us ensure your request is addressed by the right subject matter expert for your problem. This also lets us provide **Related help** that might solve your problem without filing a ticket.
+4. On the **Problem** blade, to ensure your request is addressed by the right subject matter expert for your problem, select the following options:
+	- **Severity**
+	- **Problem type**
+	- **Category**
 
-	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](media/support-need-solutions.png)
+ These details also lets us provide **Related help** that might solve your problem without filing a ticket.
 
-	Provide **Details**, **Date**, **Time** and supplemental data to help us research and resolve your problem, and then choose **Next**.
+ ![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
+
+ To help us research and resolve your problem, enter the following information:
+	-	**Details**
+	- **Date**
+	- **Time**
+	- Supplemental data
+
+	Choose **Next** to continue.
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
