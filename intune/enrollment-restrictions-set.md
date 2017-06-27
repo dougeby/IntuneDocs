@@ -63,7 +63,8 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 ## Set device limit restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
 1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
-![Screenshot of the device restrictions workspace with the default device type restrictions and device limit restrictions.](media/device-restrictions-set-default.png)
 2. Choose **Enrollment restrictions** > **Device Limit Restrictions**.
 3. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
+![Screenshot of the device limit restrictions blade with the device limit restrictions.](media/device-restrictions-limit.png)
+
   Click **Save**.
