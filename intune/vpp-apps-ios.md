@@ -53,6 +53,8 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 * After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that Intune created.
 * Intune supports adding up to 256 VPP tokens.
+* If you assign a volume-purchased app for a device enrolled through a Device Enrollment Profile or Apple Configurator, only apps which are targeted to devices will work. You cannot target volume-purchased apps to users of a DEP device which does not have any user affinity.
+* A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 
 ## To get and upload an Apple VPP token
 
@@ -61,7 +63,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 3. On the **Intune** blade, choose **Mobile apps**.
 1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.
-3.  On the New VPP Token blade, specify the following information:
+3.  On the **New VPP Token** blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the Volume Purchase Program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
 	- **Type of VPP account** - Choose from **Business** or **Education**.
@@ -84,6 +86,9 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 You must choose an assignment action of **Required**. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before then, and you do not have the option to assign VPP apps to device groups, contact Intune support.
 5. Once you are done, choose **Save**.
 
+>[!NOTE]
+>The list of apps displayed is associated with a token. If you have an app which is associated with multiple VPP tokens, you will see the same app being displayed multiple times; once for each token.
+
 See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
 
 ## Further information
@@ -92,6 +97,6 @@ When you assign the app as a **Required** installation, each user who installs t
 
 To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled.
 
-When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a custom configuration policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
 
 When you assign a VPP app as Available, the app content and license are assigned directly from the app store.
