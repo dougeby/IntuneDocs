@@ -107,6 +107,8 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Available without enrollment|Device Not Available|Available without enrollment|
 |User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal then the uninstall will be honored.<br>If the user installs the app from  the company portal then the install will be prioritized over the uninstall.|
 
+>[!NOTE]
+>For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
 
 ## Next steps
 
