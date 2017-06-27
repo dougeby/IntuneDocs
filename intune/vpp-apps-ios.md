@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
