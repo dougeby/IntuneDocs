@@ -45,7 +45,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 
 
-## Week of June 26th, 2017
+## Week of June 26th, 2017 
 
 ### Role-based access control
 #### New role-based administration access for Intune admins   <!-- 1099990 -->  
