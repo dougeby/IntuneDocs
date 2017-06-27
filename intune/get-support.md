@@ -59,7 +59,7 @@ Ask a question or start a discussion with Microsoft technical experts! We provid
 
 ### Microsoft Intune UserVoice product feedback site
 
-Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice. 
+Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice.
 
 ![Microsoft Intune UserVoice feedback page](./media/intune-uservoice-feedback-page.png)
 
@@ -80,7 +80,7 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 	>[!NOTE]
 	>
-	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
+	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/premier/contacts).
 
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Support** to open a ticket.
@@ -142,7 +142,7 @@ For other issues, our first response for Professional customers  is within eight
 - A single user is experiencing partial disruption, but an acceptable workaround exists.
 
 > [!NOTE]
-> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material. It also offers the option of opening a support request online or over the phone.
+> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material. It also offers the option of opening a support request online or over the phone.
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 

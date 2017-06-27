@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ---
 # How to use Azure AD to access the Intune Graph API
 
-The [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API uses Azure Active Directory (Azure AD) for authentication and access control.  
+The [Microsoft Graph API](https://developer.microsoft.com/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API uses Azure Active Directory (Azure AD) for authentication and access control.  
 Access to the Intune Graph API requires:
 
 - An application ID with:
@@ -49,13 +49,13 @@ This article:
 
 - Provides Intune Graph API authentication examples for C# and PowerShell.
 
-- Describes how to support multiple tenants 
+- Describes how to support multiple tenants
 
 To learn more, see:
 
-- [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code)
-- [Getting start with Azure AD authentication](https://www.visualstudio.com/en-us/docs/integrate/get-started/auth/oauth)
-- [Integrating applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)
+- [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
+- [Getting start with Azure AD authentication](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
+- [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Understand OAuth 2.0](https://oauth.net/2/)
 
 ## Register apps to use Graph API
@@ -74,17 +74,17 @@ To register an app to use Graph API:
 
 3.  Either choose **New application registration** to create a new application or choose an existing application.  (If you choose an existing application, skip the next step.)
 
-4.  On the **Create** blade, specify the following: 
+4.  On the **Create** blade, specify the following:
 
     1.  A **Name** for the application (displayed when users sign in).
 
     2.  The **Application type** and **Redirect URI** values.
 
-        These vary according to your requirements. For example, if you're using an Azure AD [Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), set **Application Type** to `Native` and **Redirect URI** to `urn:ietf:wg:oauth:2.0:oob`.
+        These vary according to your requirements. For example, if you're using an Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), set **Application Type** to `Native` and **Redirect URI** to `urn:ietf:wg:oauth:2.0:oob`.
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios).
+        To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
 5.  From the application blade:
 
@@ -102,7 +102,7 @@ To register an app to use Graph API:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     For best results, choose the fewest roles needed to implement your application.
 
@@ -137,8 +137,8 @@ Azure AD and the Graph API use permission scopes to control access to corporate 
 Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties. This section summarizes the permission scopes for Intune Graph API features.
 
 To learn more:
-- [Azure AD authentication](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
-- [Application permission scopes](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)
+- [Azure AD authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [Application permission scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
 When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features:
 The following table summarizes the Intune Graph API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
@@ -303,17 +303,17 @@ This section shows how to incorporate Azure AD into your C# and PowerShell proje
 
 In each example, you'll need to specify an application ID that has at least the `DeviceManagementManagedDevices.Read.All` permission scope (discussed earlier).
 
-When testing either example, you may receive HTTP status 403 (Forbidden) errors similar to the following: 
+When testing either example, you may receive HTTP status 403 (Forbidden) errors similar to the following:
 
 ``` javascript
 {
   "error": {
     "code": "Forbidden",
-    "message": "Application is not authorized to perform this operation - Operation ID " + 
-       "(for customer support): 00000000-0000-0000-0000-000000000000 - " + 
-       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " + 
-       "Url: https://example.manage.microsoft.com/" + 
-       "Service/Resource/RESTendpoint?" + 
+    "message": "Application is not authorized to perform this operation - Operation ID " +
+       "(for customer support): 00000000-0000-0000-0000-000000000000 - " +
+       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " +
+       "Url: https://example.manage.microsoft.com/" +
+       "Service/Resource/RESTendpoint?" +
        "api-version=2017-03-06 - CustomApiErrorPhrase: ",
     "innerError": {
       "request-id": "00000000-0000-0000-0000-000000000000",
@@ -329,14 +329,14 @@ If this happens, verify that:
 
 - Your tenant credentials support administrative functions.
 
-- Your code is similar to the displayed samples. 
+- Your code is similar to the displayed samples.
 
 
 ### Authenticate Azure AD in C\#
 
-This example shows how to use C# to retrieve a list of devices associated with your Intune account. 
+This example shows how to use C# to retrieve a list of devices associated with your Intune account.
 
-1.  Start Visual Studio and then create a new Visual C# Console app (.NET Framework) project. 
+1.  Start Visual Studio and then create a new Visual C# Console app (.NET Framework) project.
 
 2.  Enter a name for your project and provide other details as desired.
 
@@ -367,7 +367,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
         Uri redirectUri = new Uri("urn:ietf:wg:oauth:2.0:oob");
         AuthenticationContext context = new AuthenticationContext(authority);
         AuthenticationResult result = await context.AcquireTokenAsync(
-            "https://graph.microsoft.com", 
+            "https://graph.microsoft.com",
             applicationId, redirectUri,
             new PlatformParameters(PromptBehavior.Auto));
         return result.CreateAuthorizationHeader();
@@ -440,7 +440,7 @@ namespace IntuneGraphExample
 
 ### Authenticate Azure AD (PowerShell)
 
-The following PowerShell script uses the AzureAD PowerShell module for authentication.  To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.com/en-us/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
+The following PowerShell script uses the AzureAD PowerShell module for authentication.  To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
 
 In this example, update the value of `$clientID` to match a valid application ID.
 
@@ -455,7 +455,7 @@ function Get-AuthToken {
 
     $userUpn = New-Object "System.Net.Mail.MailAddress" -ArgumentList $User
     $tenant = $userUpn.Host
-   
+
     Write-Host "Checking for AzureAD module..."
 
     $AadModule = Get-Module -Name "AzureAD" -ListAvailable
@@ -495,7 +495,7 @@ function Get-AuthToken {
     $redirectUri = "urn:ietf:wg:oauth:2.0:oob"
     $resourceAppIdURI = "https://graph.microsoft.com"
     $authority = "https://login.microsoftonline.com/$Tenant"
-     
+
     try {
         $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList $authority
         # https://msdn.microsoft.com/library/azure/microsoft.identitymodel.clients.activedirectory.promptbehavior.aspx
