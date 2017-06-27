@@ -45,7 +45,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 
 
-## Week of June 26th, 2017 
+## Week of June 26th, 2017
 
 ### Role-based access control
 #### New role-based administration access for Intune admins   <!-- 1099990 -->  
@@ -274,6 +274,21 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
+
+### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
+
+
+Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, please note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
+
+#### How does this affect me?
+We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Please ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.
+
+#### What do I need to do to prepare for this change?
+
+Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
+version of the Company Portal and take advantage of the new features it will offer.
+
+Go to the Intune on Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
