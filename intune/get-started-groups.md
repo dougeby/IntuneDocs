@@ -12,8 +12,8 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
-
+ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
+ 
 # optional metadata
 
 #ROBOTS:
