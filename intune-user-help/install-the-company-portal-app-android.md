@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,6 @@ The Company Portal is an app that gives you access to your company or school app
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-After you download the Company Portal app, you will likely want to [enroll your device in Intune](enroll-your-device-in-Intune-android.md) to get full access to your work information.
+After you download the Company Portal app, you will likely want to [enroll your device in Intune](enroll-your-device-in-Intune-android.md) to get full access to your work information. You can also [sign in using another device](sign-in-to-the-company-portal#signing-in-from-another-device).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
