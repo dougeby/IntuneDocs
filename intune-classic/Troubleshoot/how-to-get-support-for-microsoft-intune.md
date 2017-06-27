@@ -55,7 +55,6 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	>[!IMPORTANT]
 	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services."
 
-
 	Choose **Next** to continue.
 4. On the **Problem** blade, to ensure your request is addressed by the right subject matter expert for your problem, select the following options:
 	- **Severity**
