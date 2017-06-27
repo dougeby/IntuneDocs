@@ -44,8 +44,8 @@ To create the list, create a two-column, comma-separated value (.csv) list witho
 
 |||
 |-|-|
-|&lt;IMEI #1&gt;|&lt;Device #1 Details&gt;|
-|&lt;IMEI #2&gt;|&lt;Device #2 Details&gt;|
+|&lt;ID #1&gt;|&lt;Device #1 Details&gt;|
+|&lt;ID #2&gt;|&lt;Device #2 Details&gt;|
 
 This .csv file when viewed in a text editor appears as:
 
@@ -62,7 +62,7 @@ This .csv file when viewed in a text editor appears as:
 
 1. In the Intune portal, choose **Device enrollment** > **Enrollment Restrictions**, choose **Corporate Device Identifiers**, and then click **Add**.
 
- ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](media/add-corp-id.png)
+ ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](./media/add-corp-id.png)
 
 2. In the **Add Identifiers** blade, specify the identifier type, **IMEI** or **Serial**. You can specify whether previously imported numbers should **Overwrite details for existing identifiers**.
 
