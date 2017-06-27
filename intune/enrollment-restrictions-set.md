@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can determine which devices can enroll into management with Intune and what operating system versions you support. Use the Intune portal to set the following restrictions for device enrollment:
+As an Intune admin, you can determine which devices can enroll into management with Intune. Use the Intune portal to set the following restrictions for device enrollment:
 
 - Maximum number of enrolled devices
 - Device platforms that can enroll:
@@ -38,13 +38,10 @@ As an Intune admin, you can determine which devices can enroll into management w
   - iOS
   - macOS
   - Windows
-- Platform operating system version (iOS and Android only)
-  - Minimum version
-  - Maximum version
 - Restrict personally owned devices (iOS, Android, macOS only)
 
 >[!NOTE]
->Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system version information. These restrictions are a best-effort barrier for non-malicious users.
+>Enrollment restrictions are not a security feature. Compromised devices can misrepresent their operating system information. These restrictions are a best-effort barrier for non-malicious users.
 
 ## Set default enrollment restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
@@ -59,9 +56,8 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 
   Click **Save**.
 4. Under **All Users**, select **Platform Configurations** and select the following configurations:
-  - **Versions** - Specify **Min** and **Max** platform operating system versions for Android and iOS devices.
   - **Personally Owned** - Specify whether to **Allow** or **Block** for Android, iOS, and macOS devices.
-  ![Screenshot of the device restrictions workspace with the default device platform configurations showing versions and personally owned settings configured.](media/device-restrictions-platform-configurations.png)
+  ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
   Click **Save**.
 
 ## Create new enrollment restrictions
@@ -76,9 +72,6 @@ The default enrollment restrictions apply to all users who aren't assigned highe
       - iOS
       - macOS
       - Windows
-    - Platform operating system version (iOS and Android only)
-      - Minimum version
-      - Maximum version
     - Restrict personally owned devices (iOS, Android, macOS only)
   - **Device Limit Restrictions** - Specify the maximum number of enrolled devices per user
 4. Click **Create** to create the new enrollment restriction.
