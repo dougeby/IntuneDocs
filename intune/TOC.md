@@ -176,6 +176,7 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 & Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [Configure Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
+### [Windows 10 endpoint protection](endpoint-protection-windows-10.md)
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
