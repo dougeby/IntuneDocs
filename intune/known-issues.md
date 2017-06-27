@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/26/2017
+ms.date: 06/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -99,5 +99,11 @@ To view status information for migrated configuration policies, recreate them in
 
 ## Cisco AnyConnect VPN client support
  
-The latest release of the Cisco AnyConnect VPN client is not currently compatible with Intune. 
+The latest release of the Cisco AnyConnect VPN client (4.0.07072) is not currently compatible with Intune. 
 A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
+
+## iOS volume-purchased apps only available in default Intune tenant language
+iOS volume-purchased apps are displayed, and can be assigned only for the same country code as your Intune account. Intune only sync apps from the same iTunes locale as the Intune tenant account country code. For example, if you purchase an app which is only available in the US store, but your Intune account is German, Intune will not show that app.
+
+## Multiple copies of the same iOS volume-purchase program are uploaded
+Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.  
