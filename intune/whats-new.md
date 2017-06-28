@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 06/30/2017
+ms.date: 06/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
