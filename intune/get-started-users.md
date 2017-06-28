@@ -39,7 +39,7 @@ Azure AD manages your organization’s groups of objects – like devices and ap
 3. Once you've opened the **Users and groups** blade, select **All users**, , then select **+ New user**.
 4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
 5. Under **Groups**, choose the test group to add the user to.
-6. Save the automatically generated user password so that you can use it to log in to a test device. For a regular user, you would want to give this to them so that they could change it to something else that they will remember.
+6. Save the automatically generated user password so that you can use it to log in to a test device. You must give this to regular users so that they can change it to a normal password that they will remember.
 7. On the **User** blade, select **Create**.
 
 ## Assigning licenses to users
@@ -52,6 +52,6 @@ After you've created a user, you need to use the [Office 365 portal](http://go.m
 4. Assign the user a **Location**, then switch Intune to **on**.
 
   > ![NOTE]
-  > This will use one of your licenses for this user. If this is your live environment, you can turn this off to re-assign this license to a real user at another time.
+  > This will use one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
 
-5. Select **Save**. 
+5. Select **Save**.
