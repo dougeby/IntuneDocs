@@ -64,8 +64,8 @@ To use the Intune console for a help-desk view, a custom help desk role should h
 ## Access the troubleshooting portal
 
 Help desk staff and Intune administrators can access the troubleshooting portal in two ways:
-- Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser. .
-- In the Intune portal, select **Troubleshoot**.
+- Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser.
+- In the Intune portal, go **Help and Support** > **Troubleshoot**.
 
 ![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
 
