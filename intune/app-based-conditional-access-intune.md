@@ -56,6 +56,8 @@ Before you create an App-based conditional access policy, you must have:
 	- Microsoft PowerPoint for iOS and Android
 	- Microsoft OneDrive for Business for iOS and Android
 	- Microsoft OneNote for iOS
+<br></br>
+- **Microsoft Teams**
 
 	> [!NOTE] 
 	> App-based conditional access [also supports LOB apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
@@ -95,8 +97,6 @@ In this example, the admin has app protection policies applied to the Outlook ap
 11.  Corporate e-mail is delivered to the user's mailbox.
 
 ## Next steps
-[Create an Exchange Online Policy for MAM apps](app-based-conditional-access-intune-exchange-online-create.md)
-
-[Create a SharePoint Online Policy for MAM apps](app-based-conditional-access-intune-sharepoint-online-create.md)
+[Create an app-based conditional access policy](app-based-conditional-access-intune-create.md)
 
 [Block apps that do not have modern authentication](app-modern-authentication-block.md)
