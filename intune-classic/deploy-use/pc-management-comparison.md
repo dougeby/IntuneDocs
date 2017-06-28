@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Compare Windows PC management options 
+title: Compare Windows PC management options
 description: Enrollment of corporate-owned iOS devices by using the Apple Device Enrollment Program (DEP) or Apple Configurator
 keywords:
 author: nathbarn
@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Organizations can use Microsoft Intune to manage Windows PCs either as mobile devices with mobile device management (MDM) or as computers with the Intune software client.  Microsoft recommends that customers use the MDM Windows PC management solution whenever possible. To help you better understand the differences between these options, however, the following chart compares the two management options.
+Organizations can use Microsoft Intune to manage Windows PCs either as mobile devices with mobile device management (MDM) or as computers with the Intune software client.  Microsoft recommends that customers use the MDM management solution whenever possible. To help you better understand the differences between these options, however, the following chart compares the two management options.
 
 |**Capability / Scenario** |**Windows as Computer**<br>Intune software client | **Windows as Mobile Device**<br>MDM |
 |--------------|-------------------------------|-------------------------------|
