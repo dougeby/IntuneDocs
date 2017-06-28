@@ -2,7 +2,7 @@
 # required metadata
 
 title: Getting started with IntunetitleSuffix: "Intune on Azure"
-description: "Learn the basics of what Intune is before you get into using it."
+description:
 keywords:
 author: barlanmsft
 ms.author: barlan

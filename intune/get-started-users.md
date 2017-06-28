@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with userstitleSuffix: "Intune on Azure"
-description: Learn how you can apply company specific branding to the Intune Company Portal app. "
+description:
 keywords:
 author: barlanmsft
 ms.author: barlan
@@ -28,46 +28,30 @@ ms.custom: intune-azure
 
 # Get started with users
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+![A generic user in Azure](./media/generic-intune-user.png)
 
-The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+Azure AD manages your organization’s groups of objects – like devices and apps – and also groups of users. You can group users or devices together instead of having to manage each device individually. This lets you easily assign apps and settings to large numbers of users and devices.
 
-> [!Tip]
-> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
+## How do I create a user?
 
-Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Mobile apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Using **Search resources**, search for **Users and groups**.
+3. Once you've opened the **Users and groups** blade, select **All users**, , then select **+ New user**.
+4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
+5. Under **Groups**, choose the test group to add the user to.
+6. Save the automatically generated user password so that you can use it to log in to a test device. For a regular user, you would want to give this to them so that they could change it to something else that they will remember.
+7. On the **User** blade, select **Create**.
 
-## Company contact information and privacy statement
-The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the **Contact IT** screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
+## Assigning licenses to users
 
+After you've created a user, you need to use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) to assign an Intune license to that user. Without assigning them a license, they won't be able to enroll their device into management.
 
-|Field name|Max length|More information|
-|-|-|-|
-|**Company name**|40|This name is displayed as the title of the Company Portal.|
-|**IT department contact name**|40|This name is displayed on the **Contact IT** page.|
-|**IT department phone number**|20|This contact number is displayed on the **Contact IT** page.|
-|IT department email address|40|This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format **alias@domainname.com**.|
-|**Additional information**|120|Displayed on the **Contact IT** page.|
-|**Company privacy statement URL**|79|You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format **https://www.contoso.com**.|
+1. Sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) with the same credentials you used to sign in to Intune.
+2. Select **Users** > **Active Users**, then select the user you just created.
+3. You may need to wait a moment for all of the user's information to load. Once it loads, select **Edit** for the user's **Product licenses**.
+4. Assign the user a **Location**, then switch Intune to **on**.
 
-## Support contacts
-The support website is displayed to users in the Company Portal to enable them to access online support.
+  > ![NOTE]
+  > This will use one of your licenses for this user. If this is your live environment, you can turn this off to re-assign this license to a real user at another time.
 
-
-
-|Field name|Max length|More information|
-|-|-|-|
-|**Support website URL**|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal.|
-|**Support website name**|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Contact IT** page in the Company Portal.
-
-## Company branding customization
-You can customize your Company Portal with your company logo, company name, theme color and background.
-
-
-
-|Field name|More information|
-|-|-|
-|**Theme color**|Select a theme color to apply to the Company Portal.|
-|**Show company logo**|When you enable this option, you can upload your company logo to show in your Company Portal. You can upload two logos: one logo that is displayed when the Company Portal background is white, and one logo that is displayed when the Company Portal background uses your selected theme color. Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.<br>You can also show the company name you entered next to the uploaded logo.|
-
-After you save your changes, you can choose **Preview your settings in the Intune Web Portal** to see how your configurations will look.
+5. Select **Save**. 
