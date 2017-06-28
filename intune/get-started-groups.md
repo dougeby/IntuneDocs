@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure the Company Portal apptitleSuffix: "Intune on Azure"
+title: Get started with groupstitleSuffix: "Intune on Azure"
 description:
 keywords:
 author: barlanmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to configure the Microsoft Intune Company Portal app
+# Get started with groups
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

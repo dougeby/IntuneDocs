@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure the Company Portal apptitleSuffix: "Intune on Azure"
+title: Get started with userstitleSuffix: "Intune on Azure"
 description: Learn how you can apply company specific branding to the Intune Company Portal app. "
 keywords:
 author: barlanmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to configure the Microsoft Intune Company Portal app
+# Get started with users
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
