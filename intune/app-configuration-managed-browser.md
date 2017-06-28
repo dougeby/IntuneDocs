@@ -34,7 +34,7 @@ ms.custom: intune-azure
 The Managed Browser is a web browsing app that you can download from public app stores for use in your organization. When configured with Intune, the Managed Browser can be:
 - Used to access corporate sites and SaaS apps with Single Sign-On via the MyApps service, while keeping web data protected.
 - Pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.
-- Pre-configured with a homepage, and bookmarks you specify.
+- Pre-configured with a homepage, and bookmarks you specify (Android only).
 
 Because this app has integration with the Intune SDK, you can also apply app protection policies to it. These policies include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [What are app protection policies?](/intune/app-protection-policy)
 You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
@@ -116,7 +116,7 @@ This procedure configures the Managed Browser app to use app proxy redirection. 
 **true**
 
 
-## How to configure the homepage for the Managed Browser
+## How to configure the homepage for the Managed Browser (Android only)
 
 This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
@@ -131,7 +131,7 @@ Specify a valid URL. Incorrect URLs are blocked as a security measure.
 Example: **https://www.bing.com**
 
 
-## How to configure bookmarks for the Managed Browser
+## How to configure bookmarks for the Managed Browser (Android only)
 
 This setting allows you to configure a set of bookmarks that is available to users of the Managed Browser.
 
