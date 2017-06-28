@@ -32,28 +32,29 @@ The troubleshooting portal lets help desk operators and Intune administrators vi
 For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune displays pertinent information that can help resolve many tier-1 issues such as user status, app installation failure, or compliance issues. Issues addressed can include:
 - Device not responding
 -	Device not getting VPN or Wi-Fi
--	App not behaving as expected
+-	App installation failure
 
 
 ## Add help desk operators
 An Intune administrator can assign help desk operator permission to users in two ways:
-- Built-in **Help Desk Operator**
+- assign the built-in **Help Desk Operator** role
 - Create a custom role
 
 ### Assign help desk operator role
-As an Intune admin, you can assign the Help Desk Operator role to a user group. Members of that group can use the admin portal. Each help desk operator must have  an Intune license to access the Intune portal. Learn how to [assign Intune licenses](licenses-assign.md).
+As an Intune admin, you can assign the Help Desk Operator role to a user group. Members of that group can use the admin portal. Each help desk operator must have an Intune license to access the Intune portal. Learn how to [assign Intune licenses](licenses-assign.md).
 
-1. As an Intune administrator login to Intune portal, and select **Intune roles**.
-3. On the **Intune roles** workload, select **Help Desk Operator** and then select **Assign**.
-4. Type an **Assignment name** (required), an **Assignment description** (optional), and then assign **Members (Groups)** and **Scope (Groups)**.
-5. Members of the Help Desk Operator role can now use the troubleshooting portal.
-
-![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
+1. As an Intune administrator, login to Intune portal, and select **Intune roles**.
+2. On the **Intune roles** workload, select **Help Desk Operator** > **Assignments**, and then select **Assign**.
+  ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator with Assignments highlighted and a red box around Assign](./media/help-desk-user-assign.png)
+3. Type an **Assignment name** (required), an **Assignment description** (optional), and then assign **Members (Groups)** and **Scope (Groups)**.
+4. Members of the Help Desk Operator role can now use the troubleshooting portal.
 
 For more information about Intune roles, see [Intune roles (RBAC)](role-based-access-control.md).
 
 ### Create a custom role for troubleshooting
 As an Intune admin, you can create a custom role that lets users use the troubleshooting portal with permissions that suit your organization's needs. For more information about Intune roles, see [Intune roles (RBAC)](role-based-access-control.md).
+
+![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
 
 To use the Intune console for a help-desk view, a custom help desk role should have the following permissions:
 - MobileApps: Read
