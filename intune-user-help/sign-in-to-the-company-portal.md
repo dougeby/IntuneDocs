@@ -4,14 +4,17 @@
 title: How to sign in to the Company Portal app | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/30/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bcasearchScope: - User help
+ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
+searchScope:
+ - User help
 
 # optional metadata
 
