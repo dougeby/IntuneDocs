@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Get started with users
 
-![A generic user in Azure](./media/generic-intune-user.png)
+![A generic user in Azure](/intune/media/generic-intune-user.png)
 
 Azure AD manages your organization’s groups of objects – like devices and apps – and also groups of users. You can group users or devices together instead of having to manage each device individually. This lets you easily assign apps and settings to large numbers of users and devices.
 
