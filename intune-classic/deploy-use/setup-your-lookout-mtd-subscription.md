@@ -80,7 +80,7 @@ Use the following steps to gather the information you need to give to the Lookou
   ![screenshot of the first time login page of the Lookout console](../media/mtp/lookout_mtp_initial_login.png)
   Once you have accepted and consented, you are redirected to the Lookout Console.
 
-  See [troubleshooting Lookout integration](/intune-classic/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
+  See [troubleshooting Lookout integration](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md) for help with login problems.
 
 3.  In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
