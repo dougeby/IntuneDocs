@@ -41,6 +41,8 @@ The new portal offers you new and updated functionality in the Azure portal wher
 > Existing tenants are being migrated to the new experience. A notification is shown in the Office Message Center before your tenant migrates.
 >
 > Intune accounts created before January 2017 require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet. If your existing account cannot access the Azure portal, we recommend creating a trial account.
+>
+> Review the list of potential blockers https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
 You can find information about the new portal in this library, and it is continually updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
