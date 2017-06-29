@@ -28,3 +28,48 @@ ms.custom: intune-azure
 # Getting started enrolling devices
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+![iOS device showing the company portal app. the first screen presented to the user for the enrollment process is shown.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
+
+Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. Since your end users will interact with Intune on their devices rather than in the admin console, you want to make sure that you are fluent with the enrollment experience. This way, you can combine well-crafted compliance policies with your experience to show empathy for your users. This is especially important because your users will know exactly what information that you as an admin can see:
+
+## What IT cannot see
+* Calling and web browsing history
+* Location
+* Personal email
+* Text messages
+* Contacts
+* Passwords to your personal accounts
+* Calendar events
+* Pictures, including what's in the photos app or camera roll
+​
+## What IT can see
+* Model
+* Serial number
+* Operating system version
+* App names
+* Owner
+* Device name
+* Manufacturer (for devices not made by Apple)
+* Phone number (for work devices, the whole number. For personal devices, just the last four digits.)
+
+## How do I enroll a device?
+
+Enrolling a device is the first experience that many end users will have with accessing corporate resources. [Understanding that experience](end-user-educate.md) can help make a potentially unpleasant experience into a better one.
+
+1. Open the **App Store** and search for **Intune Company Portal**.
+2. Download the **Microsoft Intune Company Portal** app.
+3. Open the **Company Portal** app, enter your test user’s email address and password, then tap **Sign in**.
+4. Update the temporary password to a new one.
+5. On the **Company Access Setup** page, tap **Device Enrollment**.
+6. On the **Why enroll your device?** page, read about what a user can do when they enroll their device, then tap **Continue**.
+7. Review a list of what access a user gets when they enroll, then tap **Continue**.
+8. Review what IT admins can and can’t see on a device, then tap **Continue**.
+9. On the **What comes next** page, read about what happens during enrollment, then tap **Enroll**.
+10. On the **Install Profile** page, tap **Install**, then enter the device passcode if prompted.
+11. Tap **Install**.
+12. Tap **Install** again to indicate that you’ve read the warning.
+13. On the **Warning** popup, tap **Trust**.
+14. When the screen changes to show that the profile has finished installing, tap **Done**.
+15. An “Enrolling device” message shows on the screen, then shows that the device has successfully enrolled. A popup will appear asking to open the page in the Company Portal. Tap **Open**.
+16. You return to the **Company Access Setup** screen. If you have no test policies set up, then the device should appear compliant. If you have any test policies, then tapping **Device Compliance** will show that there are things that need to be done to make the device secure.
