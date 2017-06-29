@@ -4,10 +4,10 @@ title: What's new in Microsoft Intune
 titleSuffix: "Intune on Azure"
 description: Find out what's new in the Intune Azure portal
 keywords:
-author: mtillman
-ms.author: mtillman
+author: brenduns  
+ms.author: brenduns
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 06/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,13 +34,90 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 > [!Note]
 > Many of these features will eventually be supported for hybrid deployments with Configuration Manager. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
-## Week of June 26, 2017
 
-### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+<!-- Common categories:  
+  ### Role-based access control
+  ### Device enrollment
+  ### Device management
+  ### App management
+  ### Device configuration
+-->   
 
-We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
-To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
+
+## Week of June 26th, 2017
+
+### Role-based access control
+#### New role-based administration access for Intune admins   <!-- 1099990 -->  
+A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permission so that they have access to conditional access policies.
+
+
+### Device enrollment
+#### Tag corporate-owned devices with serial number <!-- 1215070 -->  
+Intune now supports uploading iOS, macOS, and Android serial numbers as Corporate Device Identifiers. You can't use serial numbers to block personal devices from enrolling at this time because serial numbers are not verified during enrollment. Blocking personal devices by serial number will be released in the near future.
+
+
+### Device management
+#### New remote actions for iOS devices <!-- 854689 -->
+In this release, we've added two new remote device actions for iOS devices:
+
+- 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
+- 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
+
+
+Using these remote actions, admins be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
+
+During enrollment, the admin determines the maximum number of user accounts that can be cached on a device. "Remove user" allows admins to remove specific users that are cached.
+
+"Logout current user" will log out the user that's currently logged in to the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
+
+"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data that is associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
+
+#### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
+In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
+
+
+### App management  
+#### Support for offline apps from the Windows Store for Business <!--- 777044 --->
+Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
+
+#### Easier installation of Office 365 apps <!--- 1121362 --->
+The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
+For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
+
+#### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
+
+The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
+
+#### Managed browser and app proxy integration <!-- 1287310 -->
+ The Intune Managed Browser can now integrate with the Azure AD Application Proxy service to let users access internal web sites even when they are working remotely. Users of the browser simply enter the site URL as they normally would and the Managed Browser routes the request through the application proxy web gateway. For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md).
+
+
+#### New app configuration settings for the Intune Managed Browser <!-- 682951 -->
+In this release, we've added further configurations for the Intune Managed Browser app. You can now use an app configuration policy to configure the default home page and bookmarks for the browser. This is currently for Android devices only, but will be available soon for iOS devices.
+For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md)
+
+
+
+
+### Device configuration  
+#### BitLocker settings for Windows 10  <!-- 951707 -->
+You can now configure BitLocker settings for Windows 10 devices using a new Intune device profile. For example, you can require that devices are encrypted, and also configure further settings that are applied when BitLocker is turned on.
+For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
+
+### New settings for Windows 10 device restriction profile <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
+
+In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
+
+ -  Windows Defender
+-  Cellular and connectivity
+-  Locked screen experience
+-  Privacy
+-  Search
+-  Windows Spotlight
+-  Edge browser
+
+For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 
 ## Week of June 12, 2017
 
@@ -196,6 +273,27 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
+
+### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
+
+
+Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, please note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
+
+#### How does this affect me?
+We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Please ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.
+
+#### What do I need to do to prepare for this change?
+
+Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
+version of the Company Portal and take advantage of the new features it will offer.
+
+Go to the Intune on Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
+
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+
+To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
 
 ### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
