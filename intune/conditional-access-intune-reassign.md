@@ -94,10 +94,10 @@ If using the **Intune classic portal** and the **Intune App Protection blade** i
 
 9. Click **Done**.
 
+	![Cloud app UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-3.png)
+
 	> [!TIP] 
 	> If you have multiple apps with the same policy, you can consider consolidating them into a single policy in the new Azure portal.
-
-	![Cloud app UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-3.png)
 
 10. Choose **Conditions** under the **Assignments** section.
 
