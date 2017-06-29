@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,7 +70,7 @@ Requirements for cloud storage space are as follows:
 
 ## How to create and edit categories for apps
 
-App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
+App categories can be used to help you sort apps to make them easier for users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure:
 
 1. Sign into the Azure portal.
@@ -126,3 +126,4 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
+- [Office 365 apps for Windows 10](apps-add-office365.md)
