@@ -210,11 +210,11 @@
 ##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
 #### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
 ##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
-##### [Download iOS app config policy](skycure-ios-app-configuration-policy-download.md)
+##### [Download an iOS app configuration policy](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
-#### [Add and assign MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Enable MTD in Intune](mtd-connector-enable.md)
-#### [Create and assign a MTD device compliance policy](mtd-device-compliance-policy-create.md)
+#### [Create an MTD device compliance policy](mtd-device-compliance-policy-create.md)
 
 ### [Network access control](network-access-control-integrate.md)
 
