@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune on Azure"
@@ -88,7 +88,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 4. Choose **Intune**, you see the **Intune Dashboard**.
 
-5.  Choose **Conditional Access**, then choose
+5.  Choose **Choose On-Premise Access**, then choose
 
 6. The **On-premises** blade shows the status of the conditional access policy and the devices that are affected by it.
 
