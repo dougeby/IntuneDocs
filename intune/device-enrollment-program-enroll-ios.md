@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 06/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,9 +70,10 @@ Select **Create a token via Apple's Device Enrollment Program** to open Apple's 
    1.  In Apple's [Deployment Programs portal](https://deploy.apple.com), select **Get Started** for **Device Enrollment Program**.
    ![Screenshot of Enrollment Program clicking Get Started for the Device Enrollment Program.](./media/enrollment-program-token-started.png)
    2. On the **Manage Servers** page, choose **Add MDM Server**.
-   2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
+   3. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
+
    ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
-   3.  The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+   4.  The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
    ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-choose-file.png)
    4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
    ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-your-token.png)
@@ -156,7 +157,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
 ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
     To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
      -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-     -	Any sync request is given 10 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+     -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
 4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign an enrollment profile to devices
