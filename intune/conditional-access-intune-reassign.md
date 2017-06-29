@@ -43,7 +43,8 @@ If you’re ready to move to the new Azure portal, you can follow the steps belo
 
 - If you have your conditional access policy settings configured to use Exchange Active Sync (EAS) in the Intune classic portal, see [instructions in this topic](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the new Azure portal**.
 
-> [!TIP] This topic provides screenshots comparing the user experience in both Intune classic portal and the new Azure portal.
+> [!TIP] 
+> This topic provides screenshots comparing the user experience in both Intune classic portal and the new Azure portal.
 
 ### To verify your device-based conditional access policies in the Intune classic portal
 
