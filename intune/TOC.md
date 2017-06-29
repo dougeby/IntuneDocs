@@ -127,16 +127,6 @@
 ### [Configure the Company Portal app](company-portal-app.md)
 ### [Configure the Managed Browser](app-configuration-managed-browser.md)
 
-## [Use app protection policies](app-protection-policy.md)
-### [Create app protection policies](app-protection-policies.md)
-#### [Android settings](app-protection-policy-settings-android.md)
-#### [iOS settings](app-protection-policy-settings-ios.md)
-### [Validate app protection policies](app-protection-policies-validate.md)
-### [Monitor app protection user status](app-protection-policies-monitor.md)
-### [Get ready for WIP app protection policies](app-protection-policies-configure-windows-10.md)
-### [Create & assign WIP app protection policies](windows-information-protection-policy-create.md)
-### [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
-
 ## [Configure devices](device-profiles.md)
 ### [Configure device profiles](device-profile-create.md)
 ### [Configure device features](device-features-configure.md)
@@ -202,7 +192,17 @@
 ### [ADAL and Intune](app-modern-authentication-block.md)
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
 
-## Protect data and devices
+## Protect app and device data
+
+### [Use app protection policies](app-protection-policy.md)
+#### [Create app protection policies](app-protection-policies.md)
+##### [Android settings](app-protection-policy-settings-android.md)
+##### [iOS settings](app-protection-policy-settings-ios.md)
+#### [Validate app protection policies](app-protection-policies-validate.md)
+#### [Monitor app protection user status](app-protection-policies-monitor.md)
+#### [Get ready for WIP app protection policies](app-protection-policies-configure-windows-10.md)
+#### [Create & assign WIP app protection policies](windows-information-protection-policy-create.md)
+#### [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
