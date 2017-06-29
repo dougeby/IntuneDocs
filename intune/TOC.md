@@ -175,6 +175,7 @@
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [Configure Windows Information Protection settings](windows-information-protection-configure.md)
+### [Monitor telecom expenses](telecom-expenses-monitor.md)
 ### [Assign profiles](device-profile-assign.md)
 ### [Monitor profiles](device-profile-monitor.md)
 ### [Troubleshoot profiles](device-profile-troubleshoot.md)
@@ -238,7 +239,7 @@
 ## [Manage roles](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [Use the helpdesk operator role](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
@@ -267,8 +268,7 @@
 ### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
-## [Monitor telecom expenses](telecom-expenses-monitor.md)
-
+## [Use the helpdesk operator role](help-desk-operators.md)
 
 # Develop and customize
 ## [Configure custom device settings](custom-settings-configure.md)
