@@ -119,8 +119,6 @@ In this release, we've added new settings for the Windows 10 device restriction 
 
 For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 
-
-
 ## Week of June 12, 2017
 
 ### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
