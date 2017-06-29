@@ -61,7 +61,7 @@ The **Intune App Protection** blade in the new Azure portal enables admins to se
 	- You should set your conditional access policy using the [Azure AD conditional access blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 <br></br>
 - Require compliant device **OR** use the approved app.
-	-   You should set your conditional access policy using the [Intune classic portal](https://manage.microsoft.com) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+	- You should set your conditional access policy using the [Intune classic portal](https://manage.microsoft.com) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 
 ## To re-assign Intune device-based conditional access policies
 
