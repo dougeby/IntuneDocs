@@ -56,9 +56,11 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 
   Click **Save**.
 4. Under **All Users**, select **Platform Configurations** and select the following configurations:
-  - **Personally Owned** - Specify whether to **Allow** or **Block** for Android, iOS, and macOS devices.
+  - **Personally Owned** - Specify whether to **Allow** or **Block** for Android and iOS devices.
   ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
   Click **Save**.
+>[!NOTE]
+>If you block personally owned Android devices from enrollment, Android for Work devices can still be enrolled.
 
 ## Set device limit restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
