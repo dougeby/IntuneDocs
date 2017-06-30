@@ -39,8 +39,15 @@ If you’re ready to move to the new Azure portal, you can follow the steps belo
 
 - Follow the steps in this topic to recreate these policies in the new Azure portal.
 
-- Disable the conditional policies in the Intune classic console once you have verified that the new policies are working as expected.
-
+- Disable the conditional policies in the Intune classic console once you have verified that the new policies are working as expected in the new Azure portal.
+	- **Before you disable** the conditional access policies in the Intune classic portal:
+<br></br>
+		- **Create an exempt group to use with the policies applied by the Intune classic portal, and use the same group to apply policies created in the new Azure portal:** This prevents the policies targeted by the Intune classic portal to be applied. The policies created and targeted to the same user group in the new Azure portal overwrite the ones applied in the Intune classic portal.
+<br></br>
+		- **Create a new group to target the conditional access policies in the new Azure portal:** If you choose this approach, you need to do the following:
+			- Remove the users from the security groups that have conditional access policies targeted to in the Intune classic portal.
+			- Once you removed the users from the group, you can delete the security groups entirely.
+<br></br>
 - If you have your conditional access policy settings configured to use Exchange Active Sync (EAS) in the Intune classic portal, see [instructions in this topic](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the new Azure portal**.
 
 ### To verify your device-based conditional access policies in the Intune classic portal
@@ -181,13 +188,9 @@ If you have configured Exchange Active Sync (EAS) settings as part of an Exchang
 ## Disable conditional access policies in the Intune classic portal
 ### Before you start
 
-Once you reassigned your conditional access policies in the new Azure portal, it's important to gradually disable the conditional access policies previously created in the Intune classic portal:
+Once you reassigned your conditional access policies in the new Azure portal, it's important to gradually disable the conditional access policies previously created in the Intune classic portal. Additionally, you might need to use the same security group to apply the conditional access policies created in the new Azure portal
 
-1. Remove the users from the security groups that have conditional access policies targeted to. These are the conditional access policies previously created in the Intune classic portal.
-
-2. Once you removed the users, you can delete the security groups.
-
-3. Disable the conditional access policies in the Intune classic portal.
+- See the [before you begin](#before-you-begin) section at the beginning of this topic before disabling your conditional access policies in the Intune classic portal.
 
 ### To disable the conditional access policies
 
