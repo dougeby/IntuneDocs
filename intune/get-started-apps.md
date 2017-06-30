@@ -33,7 +33,7 @@ ms.custom: intune-azure
 Work devices are useless without the right apps on them. Intune supports a few different ways for you to deploy apps to your corporate devices:
 
 * **Software installers**: where you upload a file that is downloaded to your users' devices
-* **External links**: for when you have an app in a public app store or a webapp
+* __External links__: for when you have an app in a public app store or a webapp
 * **Managed apps**: for iOS devices where you need additional mobile application management applied to apps available in the App Store
 
 You’re going to go through one of the quicker application deployment methods by assigning a public store app.
