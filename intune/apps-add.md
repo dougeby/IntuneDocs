@@ -126,4 +126,4 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
-- [Office 365 apps for Windows 10](apps-add-office365.md)
+
