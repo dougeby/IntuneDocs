@@ -30,6 +30,9 @@ ms.custom: intune-enduser
 
 # How do I sign in to the Company Portal app? <!--User Story 1132123-->
 
+> [!IMPORTANT]
+> This feature is in the process of rolling out. Your experience may be different. We will remove this notice when rollout is complete.
+
 You use the Company Portal app to access your company resources, like email and business apps. There are two main ways that you can sign in to the Company Portal:
 
 * Using your work email address and password

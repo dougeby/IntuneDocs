@@ -189,9 +189,10 @@
 
 ## [Set up conditional access](conditional-access.md)
 ### [Common ways to use conditional access](conditional-access-intune-common-ways-use.md)
-### [App-based conditional access](app-based-conditional-access-intune.md)
 ### [Install Exchange on-premises connector](exchange-connector-install.md)
 ### [Create and assign conditional access policy](conditional-access-exchange-create.md)
+### [Reassign conditional access policies from Intune classic portal](conditional-access-intune-reassign.md)
+### [App-based conditional access](app-based-conditional-access-intune.md)
 ### [Set up app-based conditional access](app-based-conditional-access-intune-create.md)
 ### [ADAL and Intune](app-modern-authentication-block.md)
 ### [Monitor conditional access compliance](conditional-access-exchange-monitor.md)
