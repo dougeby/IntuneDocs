@@ -51,7 +51,7 @@ After you've created a user, you need to use the [Office 365 portal](http://go.m
 3. You may need to wait a moment for all of the user's information to load. Once it loads, select **Edit** for the user's **Product licenses**.
 4. Assign the user a **Location**, then switch Intune to **on**.
 
- > ![NOTE]
+ > [!NOTE]
  > This uses one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
 
 5. Select **Save**.

@@ -28,9 +28,11 @@ ms.custom: intune-azure
 
 # Getting started with policies
 
+One of the main goals of getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices.
+
 ![Compliance dashboard with very little data](/intune/media/generic-compliance-dashboard.png)
 
-One of the main goals of getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices. Compliance policies provide the following management capabilities for mobile devices:
+Compliance policies provide the following management capabilities for mobile devices:
 
 * Regulate numbers of devices each user enrolls
 * Manage devices settings (e.g. device-level encryption, password length, camera usage)
@@ -46,7 +48,7 @@ You create compliance policies for each platform separately. For this exercise, 
 * Minimum OS version
 * Maximum OS version
 
-## How do I create a policy?
+__How do I create a policy?__
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. **Search resources**, search for **Intune**.

@@ -83,7 +83,7 @@ If [ProGuard](http://proguard.sourceforge.net/) (or any other shrinking/obfuscat
 The Azure Active Directory Authentication Libraries (ADAL) may have its own ProGuard restrictions. If your app integrates ADAL, you must follow the ADAL documentation on these restrictions.
 
 ### Entry points
-=======
+
 The Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) requires these permissions to perform brokered authentication. If these permissions are not granted to the app or are revoked by the user, authentication flows that require the broker (the Company Portal app) will be disabled.
 
 The Intune App SDK requires changes to an app's source code to enable Intune app protection policies. This is done through the replacement of the Android base classes with equivalent Intune base classes, whose names have the prefix **MAM**. The SDK classes live between the Android base class and the app's own derived version of that class. Using an activity as an example, you end up with an inheritance hierarchy that looks like: `Activity` > `MAMActivity` > `AppSpecificActivity`.
