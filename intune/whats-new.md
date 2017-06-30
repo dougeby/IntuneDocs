@@ -81,10 +81,6 @@ In this release, we've expanded the support for managing the iOS Classroom app t
 #### Support for offline apps from the Windows Store for Business <!--- 777044 --->
 Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
 
-#### Easier installation of Office 365 apps <!--- 1121362 --->
-The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
-For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
-
 #### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
 
 The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
