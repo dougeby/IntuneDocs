@@ -133,8 +133,6 @@ The **Intune App Protection** blade in the new Azure portal enables admins to se
 
 18. Choose **Require device to be marked as compliant** under **Grant Access Controls,** then click **Select**.
 
-	![Grant access UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-8.png)
-
 19. If you have a policy to require domain joined Windows devices, and you also allow Intune-enrolled and compliant Windows devices, choose **Require domain joined device** and **Require device to be marked as compliant** along with **Require one of the selected controls**.
 
 20. If you do not allow Intune enrolled and compliant Windows devices, exempt the Windows policy from the current policy and then create a separate policy with **Device platform**s set to **Windows ,** include the other conditions as set per above, and choose **Require domain joined device** under **Grant Access Controls**.
