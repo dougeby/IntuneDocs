@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/22/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ The user will tap on the **Access Company Content** button instead of beginning 
 
 ![An image of the Android Company Portal app, which shows in large text "Access Company Content" in the middle rather than offering immediate enrollment options as is the standard case](./media/and_access_company_content_after_1706.png)
 
-The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials. 
+The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials.
 
 ![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
@@ -232,7 +232,6 @@ Enter the code you saw in the Company Portal app. When you select __Continue__, 
 The Company Portal app will begin signing in.
 
 ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
