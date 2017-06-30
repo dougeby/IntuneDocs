@@ -7,7 +7,7 @@ description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 06/12/2017
+ms.date: 06/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,14 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
+This topic helps IT administrators simplify Windows enrollment for their users. Intune users can enroll their PC, Windows 10 Mobile, and Windows Phone 8.1 devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
-Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
+As an Intune admin, you can simplify  enrollment in the following ways:
+- Enable automatic enrollment (Azure AD premium required)
+- CNAME registration
+- Enable bulk enrollment  (Azure AD premium and Windows Configuration Designer required)
 
-Two factors determine how you can simplify Windows device  enrollment:
+Two factors determine how you can simplify Windows device enrollment:
 
 - **Do you use Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.
 - **What versions of Windows clients will enroll?** <br>Windows 10 devices can automatically enroll by adding a work or school account. Earlier versions must enroll using the Company Portal app.
@@ -44,10 +47,15 @@ Two factors determine how you can simplify Windows device  enrollment:
 |**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
 |**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
 
+Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
+
+**Multi-user support**<br>
+Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
+
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## Enable Windows enrollment without Azure AD Premium
-You can let users enroll their devices without Azure AD Premium automatic enrollment. Once you assign licenses, users can enroll after adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure AD. Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you create DNS CNAME resource records, users connect and enroll in Intune without having to enter the Intune server name.
+You can simplify enrollment for your users by creating a DNS alias (CNAME record type) that automatically redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.
 
 **Step 1: Create CNAME** (optional)<br>
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
