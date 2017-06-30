@@ -116,7 +116,6 @@
 #### [Windows Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
-#### [Office 365 apps for Windows 10](apps-add-office365.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
 ### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
