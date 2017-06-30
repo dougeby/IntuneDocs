@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 06/29/2017
+ms.date: 06/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,7 +90,7 @@ The Microsoft Teams app for iOS and Android is now part of approved apps for app
 
 
 #### New app configuration settings for the Intune Managed Browser <!-- 682951 -->
-In this release, we've added further configurations for the Intune Managed Browser app. You can now use an app configuration policy to configure the default home page and bookmarks for the browser. This is currently for Android devices only, but will be available soon for iOS devices.
+In this release, we've added further configurations for the Intune Managed Browser app for iOS and Android. You can now use an app configuration policy to configure the default home page and bookmarks for the browser.
 For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md)
 
 
