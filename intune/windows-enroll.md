@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic helps IT administrators simplify Windows enrollment for their users. Intune users can enroll their PC, Windows 10 Mobile, and Windows Phone 8.1 devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
+This topic helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
 As an Intune admin, you can simplify  enrollment in the following ways:
 - Enable automatic enrollment (Azure AD premium required)
@@ -40,7 +40,7 @@ As an Intune admin, you can simplify  enrollment in the following ways:
 Two factors determine how you can simplify Windows device enrollment:
 
 - **Do you use Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.
-- **What versions of Windows clients will enroll?** <br>Windows 10 devices can automatically enroll by adding a work or school account. Earlier versions must enroll using the Company Portal app.
+- **What versions of Windows clients will users enroll?** <br>Windows 10 devices can automatically enroll by adding a work or school account. Earlier versions must enroll using the Company Portal app.
 
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
@@ -50,7 +50,7 @@ Two factors determine how you can simplify Windows device enrollment:
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 
 **Multi-user support**<br>
-Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different standard users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
+Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. When standard users log on with their Azure AD credentials, they receive apps and policies assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
@@ -66,7 +66,7 @@ Although creating CNAME DNS entries is optional, CNAME records make enrollment e
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hour|
 
-If you have more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com. For example, if users at Contoso use name@contoso.com, but also use name@us.contoso.com, and name@eu.constoso.com as their email/UPN, the Contoso DNS admin would need to create the following CNAMEs.
+If you have more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com. If users at Contoso use name@contoso.com, but also use name@us.contoso.com, and name@eu.constoso.com as their email/UPN, the Contoso DNS admin should create the following CNAMEs:
 
 |Type|Host name|Points to|TTL|  
 |----------|---------------|---------------|---|
@@ -79,9 +79,9 @@ If you have more than one UPN suffix, you need to create one CNAME for each doma
 Changes to DNS records might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
 
 **Step 2: Verify CNAME** (optional)<br>
-In the Azure Intune portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
+In the Azure Intune portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
 ## Tell users how to enroll Windows devices
-Tell your users how to enroll their Windows devices and what to expect after they're brought into management. For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+Tell your users how to enroll their Windows devices and what to expect after they're brought into management. For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).
