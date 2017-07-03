@@ -32,7 +32,7 @@ ms.custom: intune-azure
 ## Before you begin
 
 > [!NOTE] 
-> The steps in this topic need to be taken in the [Check Point SandBlast Mobile MTD console](https://intune-4.eu1.locsec.net/).
+> The steps below need to be taken in the [Check Point SandBlast Mobile MTD console](https://intune-4.eu1.locsec.net/).
 
 Before starting the process of integrating Check Point SandBlast Mobile with Intune, make sure you have the following:
 
@@ -71,6 +71,8 @@ The Check Point SandBlast app authorization process consists of the following:
 4.  Choose **Microsoft Intune** from the **MDM Service** drop-down list.
 
 5.  Once you set Microsoft Intune as the MDM Service, the **Microsoft Intune Configuration** window pops up, choose the **Add to my organization** for each device platform: iOS, Android and Windows to authorize Check Point SandBlast Mobile to communicate with Intune and Azure AD.
+
+	![Check Point MTD Intune configuration](./media/checkpoint-MTD-1)
 
 	> [!IMPORTANT]
 	> You must enable all device platforms to proceed to the next step.
