@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 5/24/2017
+ms.date: 7/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,3 +76,7 @@ If you do not specify any URLs, then end users will not be able to access any we
 ## Finish up
 
 Choose **OK** to return to the **Create Profile** blade, and then choose **Create**.
+
+## Next steps
+
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).

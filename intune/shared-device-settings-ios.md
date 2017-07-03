@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,3 +42,8 @@ Shared device configuration settings let you specify optional text displayed on 
 	The information you enter will be applied to all devices you assign this profile to.
 	- **Lock screen footnote** - Enter a note that might help get the device returned if it's lost or stolen. For example: **If found, please call 'number'**.
 3. When you are finished, choose **OK** until you return to the **Create Profile** blade, then choose **Create**. 
+
+
+## Next steps
+
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).

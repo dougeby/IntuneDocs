@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -98,3 +98,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 |Wallet|com.apple.Passbook|
 |Watch|com.apple.Bridge|
 |Weather|com.apple.weather|
+
+## Next steps
+
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).

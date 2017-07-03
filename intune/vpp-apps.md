@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,8 @@ ms.custom: intune-azure
 # Manage volume-purchased apps and books with Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+## Introduction
 
 Some app stores give you the ability to purchase multiple licenses for an app or books that you want to use in your company. Buying licenses in bulk can help you reduce the administrative overhead of tracking multiple purchased copies of apps and books.
 

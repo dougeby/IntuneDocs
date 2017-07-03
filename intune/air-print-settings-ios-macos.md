@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,3 +51,8 @@ Use this procedure to add AirPrint information to the AirPrint payload so that i
 3. Continue to add as many destinations as you need. When you are finished, choose **OK**.
 
 You can also import a list of printers from a comma-separated values (.csv) file or export the list.
+
+
+## Next steps
+
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).
