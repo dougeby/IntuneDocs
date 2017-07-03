@@ -81,7 +81,7 @@ The Check Point SandBlast app authorization process consists of the following:
 
 7.  Once you enabled all device platforms, you need to enter the Azure AD security group.
 
-8.  Choose **Verify**, once the Azure AD security is successfully verified, choose **Save**.
+8.  Choose **Verify**, once the Azure AD security group is successfully verified, choose **Save**.
 
 ## Next steps
 
