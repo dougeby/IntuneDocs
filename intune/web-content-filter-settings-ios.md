@@ -31,28 +31,28 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure URLs that end users of web browsers, on iOS devices, can, or cannot visit. There are two methods you can use to do this.
+Use these settings to configure URLs that end users of web browsers, on iOS devices, can, or cannot visit. There are two methods you can use to do configure URLs:
 
-- **Configure URLs** - Use Apple’s built in web filter that looks for adult terms like profanity or sexually explicit language. This function evaluates each web page as it is loaded and attempts to identify and block unsuitable content. Additionally, you can configure URLs that will not be checked by the filter, or URLs that will always be blocked, regardless of the filter settings.
+- **Configure URLs** - Use Apple’s built-in web filter that looks for adult terms like profanity or sexually explicit language. This function evaluates each web page as it is loaded and attempts to identify and block unsuitable content. You can also configure URLs that are not checked by the filter, or URLs that are blocked, regardless of the filter settings.
 
-- **Specific websites only** (for the Safari web browser only) - These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be accessed. Use this option only if you know the exact list of URLs that can be accessed by users.
-If you do not specify any URLs, then end users will not be able to access any websites except for microsoft.com, microsoft.net, and apple.com.
+- **Specific websites only** (for the Safari web browser only) - These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be accessed. Use this option only if you know the exact list of URLs that users can access.
+If you do not specify any URLs, then end users cannot access any websites except for microsoft.com, microsoft.net, and apple.com.
 
 
 
 ## Get started
 
-1. On the **Device features** blade choose **Web Content Filter (supervised only)**.
+1. On the Device features blade, choose **Web Content Filter (supervised only)**.
 2. On the **Web Content Filter** blade, choose the **Filter type** you want to configure from:
 	- **Not Configured** - No filtering is performed.
 	- **Configure URLs**
 	- **Specific websites only**
-3. Next, depending on the filter type you are using, follow the relevant procedure below.
+3. Next, depending on the filter type you are using, use one of the following procedures:
 
 
 ## Configure URLs
 
-1. On the **Web Content Filter** blade, choose one of the following if required:
+1. On the **Web Content Filter** blade, choose one of the following settings as required:
 	- **Permitted URLs** - On the **Permitted URLs** blade, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
 	- **Blocked URLs** - On the **Blocked URLs** blade, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
 2. When you are finished, click **OK**.
@@ -60,9 +60,9 @@ If you do not specify any URLs, then end users will not be able to access any we
 
 ## Specific websites only
 
-1. On the **Web Content Filter** blade, for each web site you want to permit, enter the following:
+1. On the **Web Content Filter** blade, for each web site you want to permit, configure the following settings:
 	- **URL** - Enter the URL of the website you want to permit, for example, **http://www.contoso.com**.
-	- **Bookmark Path** - Enter the path to where you want to store the bookmark, for example **/Contoso/Business Apps**. If you don't add a bookmark, it will be added to the default bookmark folder on the device.
+	- **Bookmark Path** - Enter the path to where you want to store the bookmark, for example **/Contoso/Business Apps**. If you don't add a path, the bookmark is added to the default bookmark folder on the device.
 	- **Title** - Enter a descriptive title for the bookmark.
 2. Click **Add** after you enter the information for each website.
 3. When you are finished, click **OK**.

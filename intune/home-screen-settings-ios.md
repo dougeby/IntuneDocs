@@ -31,20 +31,20 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure the layout of apps, folders, and web clips on the dock and Home screen of all iOS devices to which you assign the policy.
+Use these settings to configure the layout of apps, folders, and web clips on the dock and Home screen of iOS.
 
 iOS devices to which you assign the profile must be in supervised mode and running iOS 9.3 or later.
 
-1. On the **Device features** blade choose **Home Screen Layout (supervised only)**.
+1. On the **Device features** blades choose **Home Screen Layout (supervised only)**.
 2. On the **Home Screen Layout (supervised only)** blade, choose whether you want to configure the **Dock**, or **Pages** layouts.
 
 ## Add items to the dock
 
-On the **Dock** blade, you can add up to 6 items or folders to the dock at the bottom of the iOS screen. However, many devices support less items than this, for example, iPhone devices support up to 4 items. In this case, only the first four items you configured will be displayed on the device.
+On the **Dock** blade, you can add up to six items or folders to the dock of the iOS screen. However, many devices support fewer items; for example, iPhone devices support up to four items. In this case, only the first four items you configured are displayed on the device.
 
 1. Choose **Add** to add an item to the dock.
 2. On the **Add Row** blade, choose whether you want to add an **App**, or a **Folder**.
-3. Using the information in the **How to add an app to the list** and **How to add a folder to the list** sections in this topic, configure the apps and folders you want to appear in the dock.
+3. Using the information in this topic, configure the apps and folders you want to appear in the dock.
 4. Continue to add items. When you are finished, click **OK** on each blade until you return to the **Create Profile** blade. Choose **Create**.
 
 >[!TIP]
@@ -56,19 +56,19 @@ In this example, you've configured the dock screen to show only the Safari, Mail
 
 ![Sample iOS dock settings](http://i.imgur.com/FfFiUcP.png)
 
-When you assign the policy to an iPhone, the result will be a dock that looks similar to this:
+When you assign the policy to an iPhone, the result is a dock that looks similar to this screenshot:
 
 ![Sample iOS dock layout on iPhone](http://i.imgur.com/bAgCe8F.png)
 
 ## Add Home screen pages
 
-Add the pages you want to appear on the home screen, and the apps that will appear on each page. Apps that you add to a page are arranged from left to right, in the order they are specified in the list. If you add more apps than can fit on a page, the apps will be moved to a subsequent page.
+Add the pages you want to appear on the home screen, and the apps that appear on each page. Apps that you add to a page are arranged from left to right, in the order they are specified in the list. If you add more apps than can fit on a page, the apps are moved to a subsequent page.
 
 
 1. On the **Pages** blade, choose **Add**.
-2. On the **Add Row** blade, enter a **Page name**. This is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+2. On the **Add Row** blade, enter a **Page name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
 3. Choose **Add**, then choose whether you want to add an **App**, or a **Folder** to the page.
-4. Using the information in the **How to add an app to the list** and **How to add a folder to the list** sections in this topic, configure the apps and folders you want to appear on the page.
+4. Using the information in this topic, configure the apps and folders you want to appear on the page.
 
 ### Example
 
@@ -76,25 +76,25 @@ In this example, you've configured a new page named **Contoso**. The page shows 
 
 ![iOS Home screen settings example](http://i.imgur.com/Jc2OxyX.png)
 
-When you assign the policy to an iPhone, the result will be a page that looks similar to this:
+When you assign the policy to an iPhone, the result is a page that looks similar to this screenshot:
 
 ![iOS device with modified home screen](http://i.imgur.com/Bd37PHa.png)
 
 ## How to add an app to the list
 
-1. Enter the **App Name**. This is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+1. Enter the **App Name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
 2. Enter the **App Bundle ID** of the app you want to display. See **Bundle ID reference for built-in iOS apps** later in this topic for help.
 3. Click **OK**, then continue to add items, up to a maximum of **6** for the device dock, and **60** for a device page.
 4. When you are finished, click **OK**.
 
 ## How to add a folder to the list
 
-Apps that you add to a page in a folder are arranged from left to right, in the order they are specified in the list. If you add more apps than can fit on a page, the apps will be moved to a subsequent page.
+Apps that you add to a page in a folder are arranged from left to right, in the order they are specified in the list. If you add more apps than can fit on a page, the apps are moved to a subsequent page.
 
-1. Enter the **Folder name**. This will be displayed to users on their device.
+1. Enter the **Folder name**. This name is displayed to users on their device.
 2. Choose **Add** to create a page in the folder. You can add up to 20 pages.
-3. On the **Add Row** blade, enter a name for the page. This is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
-3. Enter the **App Name**. This is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+3. On the **Add Row** blade, enter a name for the page. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+3. Enter the **App Name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
 2. Enter the **App Bundle ID** of the app you want to display. See **How to add an app to the list** for help.
 3. Choose **Add**. You can add up to 60 items.
 4. When you are finished, click **OK**.
