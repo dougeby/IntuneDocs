@@ -29,6 +29,9 @@ ms.custom: intune-azure
 
 # Create Mobile Threat Defense (MTD) device compliance policy with Intune
 
+> [!NOTE] 
+> This topic applies to all Mobile Threat Defense partners.
+
 Intune with MTD helps you detect threats and assess risk on mobile devices. You can create an Intune device compliance policy rule that assesses risk to determine if the device is compliant or not. You can then use a conditional access policy to block access to services based on device compliance.
 
 ## Before you begin
