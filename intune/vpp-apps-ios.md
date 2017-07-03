@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,9 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 * Intune supports adding up to 256 VPP tokens.
 * If you assign a volume-purchased app for a device enrolled through a Device Enrollment Profile or Apple Configurator, only apps that are targeted to devices work. You cannot target volume-purchased apps to users of a DEP device, which does not have any user affinity.
 * A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
+* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
+Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to 5 devices.
+
 
 ## To get and upload an Apple VPP token
 

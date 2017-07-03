@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 06/30/2017
+ms.date: 07/03/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -269,6 +269,15 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
+
+### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017
+<!-- 1327781 -->
+
+On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
+
+There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Note that there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app. 
+
+We recommend that you upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
 
