@@ -72,7 +72,7 @@ The Check Point SandBlast app authorization process consists of the following:
 
 5.  Once you set Microsoft Intune as the MDM Service, the **Microsoft Intune Configuration** window pops up, choose the **Add to my organization** for each device platform: iOS, Android and Windows to authorize Check Point SandBlast Mobile to communicate with Intune and Azure AD.
 
-	![Check Point MTD Intune configuration](./media/checkpoint-MTD-1)
+	![Check Point MTD Intune configuration](./media/checkpoint-MTD-1.PNG)
 
 	> [!IMPORTANT]
 	> You must enable all device platforms to proceed to the next step.
