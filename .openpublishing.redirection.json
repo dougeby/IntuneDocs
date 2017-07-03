@@ -1,6 +1,36 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-classic/EULA/microsoft-intune-company-portal-application-license-terms.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/microsoft-intune-company-portal-application-license-terms",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/EULA/microsoft-intune-company-portal-for-windows-phone-application-license-terms.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/microsoft-intune-company-portal-for-windows-phone-application-license-terms",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/EULA/microsoft-intune-managed-browser-for-ios.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/microsoft-intune-managed-browser-for-ios",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/EULA/terms-of-delegated-administration-for-microsoft-intune.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/terms-of-delegated-administration-for-microsoft-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/EULA/third-party-programs-notices-and-information.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/third-party-programs-notices-and-information",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/EULA/third-party-software-notices-and-information.md",
+			"redirect_url": "https://docs.microsoft.com/legal/intune/third-party-software-notices-and-information",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-azure/set-device-compliance/app-based-conditional-access-intune-sharepoint-online-create.md",
 			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
 			"redirect_document_id": false
@@ -10,7 +40,6 @@
 			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
 			"redirect_document_id": false
 		},
-		{
 			"source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
 			"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
 			"redirect_document_id": false
