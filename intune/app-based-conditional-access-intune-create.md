@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: App based conditional access policy with Intune 
+title: App based conditional access policy with Intune
 description: This topic describes how you can configure an app-based conditional access policy with Intune.
 keywords:
 author: andredm7

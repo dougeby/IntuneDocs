@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Drive end-user adoption with conditional access 
+title: Drive end-user adoption with conditional access
 description: The purpose of this article is to provide insights on how to leverage conditional access to drive Intune enrollment.
 keywords:
 author: andredm7
@@ -69,7 +69,7 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 
 Choose one of the following options:
 
--   [Configure conditional access in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [Configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [Install on-premises Exchange connector with Intune](/intune/exchange-connector-install)
 

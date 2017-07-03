@@ -35,7 +35,7 @@ ms.custom: intune-classic
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 >[!IMPORTANT]
-> For technical support with products that work with Intune but not made by Microsoft, for example SaaSwedo, Cisco, or Lookout, contact the supplier of that product first. Before you open a request with Intune support, ensure you configured the other product correctly.
+> For technical support with products that work with Intune but not made by Microsoft, for example Saaswedo, Cisco, or Lookout, contact the supplier of that product first. Before you open a request with Intune support, ensure you configured the other product correctly.
 
 ## Create an online support ticket
 
@@ -48,13 +48,13 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 2. On the Azure Help and support page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
-3. On the **Basics** blade, for most Intune 	technical support issues, choose the following options:
+3. On the **Basics** blade, for most Intune technical support issues, choose the following options:
 	- **Issue type**: **Technical**
 	- **Service**: **Microsoft Intune**
 	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
 
 	>[!IMPORTANT]
-	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services."
+	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services."
 
 	Choose **Next** to continue.
 4. On the **Problem** blade, to ensure your request is addressed by the right subject matter expert for your problem, select the following options:
@@ -82,5 +82,5 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
 - [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
-- [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US)
+- [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)

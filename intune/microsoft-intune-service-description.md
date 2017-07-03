@@ -36,7 +36,7 @@ Intune is a cloud-based enterprise mobility management (EMM) service that helps 
 
 Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Information Protection for data protection. You can also integrate it with System Center Configuration Manager to extend your management capabilities.
 
-To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](https://docs.microsoft.com/en-us/intune/).
+To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](https://docs.microsoft.com/intune/).
 
 ## 30-day free trial
 You can start to use Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [go to the Intune Sign up page](https://www.microsoft.com/server-cloud/products/microsoft-intune/). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, contact your Microsoft representative to set up your free trial.
@@ -94,7 +94,7 @@ To help you plan for service changes, we notify you at least 7-90 days prior to 
 
 - In the event of Intune service retirement, you would be notified 12 months in advance.
 
-Finally, in the rare event there’s any post-incident action needed to get your service back to normal or a large change that we deem potentially disruptive based on customer feedback, we will email the service administrators based on how your [Office 365 communication preferences](https://support.office.com/en-us/article/Change-your-contact-preferences-for-communications-from-Microsoft-6f70de1b-a64d-4498-bfbd-be8c83a9c0fc?ui=en-US&rs=en-US&ad=US) are set and whether you include a valid (and preferably work) email address.  
+Finally, in the rare event there’s any post-incident action needed to get your service back to normal or a large change that we deem potentially disruptive based on customer feedback, we will email the service administrators based on how your [Office 365 communication preferences](https://support.office.com/article/Change-your-contact-preferences-for-communications-from-Microsoft-6f70de1b-a64d-4498-bfbd-be8c83a9c0fc) are set and whether you include a valid (and preferably work) email address.  
 
 
 <!--- ## Choose the management solution that’s right for you

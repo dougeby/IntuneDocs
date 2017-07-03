@@ -17,10 +17,12 @@
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [Get started](get-started-evaluation.md)
+## [Create a group](get-started-groups.md)
+## [Create a user](get-started-users.md)
+## [Enroll devices](get-started-enroll.md)
+## [Assign policies](get-started-policies.md)
+## [Assign apps](get-started-apps.md)
 
 
 # Plan deployment
