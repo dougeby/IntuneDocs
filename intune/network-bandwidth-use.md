@@ -98,7 +98,7 @@ Intune uses no on-premises infrastructure such as servers running Intune softwar
 To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune. To manage computers that are behind a proxy server, be aware that:
 
 -   The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
--   Intune supports unauthenticated proxy servers
+-   Intune requires unauthenticated proxy server access to manage.microsoft.com for some operations such as downloading software and updates
 
 You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.
 
