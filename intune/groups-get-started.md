@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with groups in the IntunetitleSuffix: "Intune on Azure"
+title: Intune classic groups in the Azure portaltitleSuffix: "Intune on Azure"
 description: Learn what's new with groups in the Intune Azure portal
 keywords:
 author: nathbarn
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Get started with groups
+# Intune classic groups in the Azure portal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -60,7 +60,7 @@ Some of the Intune groups capabilities you previously might have used are not av
 ## What happened to Intune groups?
 When groups are migrated from the classic Intune portal to Intune in the Azure portal, the following rules are applied:
 
-| Groups in Intune|Group in Azure AD|
+| Groups in classic Intune|Groups in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Static user group|Static Azure AD security group|
 |Dynamic user group|Static Azure AD security groups with an Azure AD security group hierarchy|

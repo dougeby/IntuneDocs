@@ -2,6 +2,7 @@
 ## [What is the Azure portal?](what-is-intune.md)
 ## [What is Intune for Education?](introduction-intune-education.md)
 ## [Intune features in Azure](ui-changes.md)
+### [Changes to groups](groups-get-started.md)
 ## [Sign up for a free trial](free-trial-sign-up.md)
 ## [What's new](whats-new.md)
 ### [What's new in the app UI](whats-new-app-ui.md)
@@ -103,7 +104,6 @@
 ### [Examine device inventory](device-inventory.md)
 
 ## [Manage users](user-management.md)
-### [Get started with groups](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [Manage apps](app-management.md)
