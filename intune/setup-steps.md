@@ -49,5 +49,6 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 | 5 | [Assign licenses](licenses-assign.md) - Give users permission to use Intune|
 | 6 |  [Add groups](groups-add.md) - Use user and device groups to simplify management tasks |
 | 7 | [Add apps](apps-add.md) - Enable settings and apps that can be deployed to users |
-| 8 | [Customize Company Portal](company-portal-customize.md) - Customize the Company Portal app that users see when working with Intune  |
+| 8 | [Configure devices](device-profiles.md) - Set up profiles that manage devices and access to company resources |
+| 8 | [Customize Company Portal](company-portal-customize.md) - Customize the Intune Company Portal   |
 | 9 | [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |
