@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ Additionally, if you have created your own line of business (LOB) apps, you can 
 
 ## Before you start
 
-1. Make sure you have configured Intune and Android for Work to work together in the **Admin** tab of the Intune console.
+Make sure you have configured Intune and Android for Work to work together in the **Admin** tab of the Intune console.
 
 ## Synchronize an app from the Google Play for Work store
 
