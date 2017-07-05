@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,12 +42,12 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 
 | Steps | Status  |
 | ------------- |-------------|
-| 1  | [Prerequisites](supported-devices-browsers.md) - What you need and what to know before you start|
-| 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription to start managing your organization   |  
-| 3 | [Configure a custom domain name](custom-domain-name-configure.md) - Use your company's domain name to manage Intune by updating your DNS registration   |
-| 4 | [Add users and synchronize AD](users-permissions-add.md) - Connect Active Directory to synchronize users or add users to Intune  |
+| 1  | [Prerequisites](supported-devices-browsers.md) - Need to know info before you start|
+| 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription |  
+| 3 | [Configure a custom domain name](custom-domain-name-configure.md) - Set DNS registration to connect your company's domain name with Intune  |
+| 4 | [Add users and sync Active Directory](users-permissions-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
 | 5 | [Assign Intune licenses](licenses-assign.md) - Give users permission to use Intune|
-| 6 | [Organize user and device groups](groups-get-started.md) - Use groups to organize deployments of policy, apps, and resources |
+| 6 |  [Create groups of users and devices](groups-add.md) - Use Azure Active Directory groups to simplify management tasks |
 | 7 | [Add apps](apps-add.md) - Enable settings and apps that can be deployed to users |
 | 8 | [Customize the Company Portal](company-portal-customize.md) - Customize the Company Portal app that users see when working with Intune  |
 | 9 | [Enable mobile device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |
