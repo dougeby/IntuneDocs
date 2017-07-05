@@ -44,12 +44,13 @@ Use the following steps to create a new group.
 
 3. Choose **Membership type**:
   - **Assigned** to create group with manually assigned members. Learn more about [Azure AD assigned groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
-  ![Screenshot of Intune group properties](./media/groups-add-properties.png)
-
   - **Dynamic User** to create a user group defined with a **Dynamic query**.
   - **Dynamic Device** to create a device group defined with a **Dynamic query**.
 
-    Azure AD lets you create dynamic groups based on rules that define membership. Learn to [Create attribute-based dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+  ![Screenshot of Intune group properties](./media/groups-add-properties.png)
+
+  Azure AD lets you create dynamic groups based on rules that define membership. Learn to [Create attribute-based dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+
 4. You can select **Enable Office features** to give user group members access to shared Office 365 apps.
 5. Choose **Create** to add the new group.
 
