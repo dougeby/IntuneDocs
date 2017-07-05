@@ -50,7 +50,7 @@ Use the following steps to create a new group.
   - **Dynamic Device** to create a device group defined with a **Dynamic query**.
 
     Azure AD lets you create dynamic groups based on rules that define membership. Learn to [Create attribute-based dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
-4. You can select **Enable Office features** to give user group members access to shared Office 365 apps.
+4. You can select **Enable Office features?** to give user group members access to shared Office 365 apps.
 5. Choose **Create** to add the new group.
 
 To learn more, see [Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).
