@@ -7,7 +7,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -328,7 +328,7 @@ SaveLocation service, String username);
 
 	* SaveLocation.ONEDRIVE_FOR_BUSINESS
 	* SaveLocation.LOCAL
-	* SaveLocation.OTHER
+	* SaveLocation.SHAREPOINT
 
 The previous method of determining whether a user’s policy allowed them to save data to various locations was `getIsSaveToPersonalAllowed()` within the same **AppPolicy** class. This function is now **deprecated** and should not be used, the following invocation is equivalent to `getIsSaveToPersonalAllowed()`:
 
