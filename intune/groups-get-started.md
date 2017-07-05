@@ -33,16 +33,16 @@ ms.custom: intune-azure
 We've heard your feedback and have made changes to how you work with groups in Microsoft Intune.
 If you are using Intune from the Azure portal, your Intune groups have been migrated to Azure Active Directory security groups.
 
-The benefit to you is that you now use the same groups experience across all of you Enterprise Mobility + Security, and Azure AD apps. Additionally, you'll be able to use PowerShell and Graph API to extend and customize this new functionality.
+The benefit to you is that you now use the same groups experience across all of your Enterprise Mobility + Security, and Azure AD apps. Additionally, you can use PowerShell and Graph API to extend and customize this new functionality.
 
-Azure AD security groups support all types of Intune deployments to both users and devices. Additionally, you can use Azure AD dynamic groups that automatically update based on the attributes you supply. For example, you could create a group of devices that run iOS 9. Whenever a device running iOS 9 enrolls, the device automatically appears the dynamic group.
+Azure AD security groups support all types of Intune deployments to both users and devices. Additionally, you can use Azure AD dynamic groups that automatically update based on the attributes you supply. For example, you could create a group of devices that run iOS 9. Whenever a device running iOS 9 enrolls, the device automatically appears in the dynamic group.
 
 ## What is not available?
 
 Some of the Intune groups capabilities you previously might have used are not available in Azure AD:
 
 - The **Ungrouped Users** and **Ungrouped Devices** Intune groups are no longer available.
-- The option to **Exclude specific members** from a group does not exist in the Azure portal. You can, however, use an Azure AD security group with advanced rules to replicate this behavior. For example, to create an advanced rule that includes all people in your Sales department in a security group, but excludes those with the word "Assistant" in their title, you could use this advanced rule:
+- The option to **Exclude specific members** from a group does not exist in the Azure portal. You can, however, use an Azure AD security group with advanced rules to replicate this behavior. For example, to create an advanced rule that includes all people in your Sales department in a security group, but excludes those groups with the word "Assistant" in their title, you could use this advanced rule:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
 - The **All Exchange ActiveSync Managed Devices** group in the Intune console was not migrated to Azure AD. You can, however, still access information about EAS-managed devices from the Azure portal.
@@ -68,14 +68,14 @@ When groups are migrated from the classic Intune portal to Intune in the Azure p
 |Dynamic device group|Dynamic Azure AD security group|
 |A group with an include condition|Static Azure AD security group containing any static or dynamic members from the include condition in Intune|
 |A group with an exclude condition|Not migrated|
-|The built-in groups:<br>- **All Users**<br>- **Ungrouped Users**<br>- **All Devices**<br>- **Ungrouped devices**<br>- **All Computers**<br>- **All Mobile Devices**<br>- **All MDM managed devices**<br>- **All EAS managed devices**|Azure AD security groups|
+|The built-in groups:<br>- **All Users**<br>- **Ungrouped Users**<br>- **All Devices**<br>- **Ungrouped devices**<br>- **All Computers**<br>- **All Mobile Devices**<br>- **All-MDM managed devices**<br>- **All EAS-managed devices**|Azure AD security groups|
 
 ## Group hierarchy
 
 In the classic Intune console, all groups had a parent group. Groups could only contain members of their parent group. In Azure AD, child groups can contain members not in their parent group.
 
 ## Group attributes
-Attributes are device properties that may be used in defining groups. This table describes how those criteria will be migrated to Azure AD security groups.
+Attributes are device properties that may be used in defining groups. This table describes how those criteria migrate to Azure AD security groups.
 
 | Attribute in Intune|Attribute in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
@@ -91,4 +91,4 @@ Attributes are device properties that may be used in defining groups. This table
 
 ## What happens to policies and apps you previously deployed?
 
-Policies and apps continue to be deployed to groups, just like before. However, you'll now manage these groups from the Azure portal, instead of the classic Intune console.
+Policies and apps continue to be deployed to groups, just like before. However, you now manage these groups from the Azure portal, instead of the classic Intune console.
