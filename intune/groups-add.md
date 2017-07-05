@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 
 # Add groups in Intune
-Intune uses Azure Active Directory (AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale, from setting policies for a set of users to deploying applications to a set of devices.
+Intune uses Azure Active Directory (AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or  deploy apps to a set of devices.
 
 This topic explains how to add groups for use in Intune.
 
@@ -50,7 +50,7 @@ Use the following steps to create a new group.
   - **Dynamic Device** to create a device group defined with a **Dynamic query**.
 
     Azure AD lets you create dynamic groups based on rules that define membership. Learn to [Create attribute-based dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
-4. You can select **Enable Office features?** to give user group members access to shared Office 365 apps.
+4. You can select **Enable Office features** to give user group members access to shared Office 365 apps.
 5. Choose **Create** to add the new group.
 
 To learn more, see [Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).
