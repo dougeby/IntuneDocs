@@ -43,7 +43,7 @@ ms.custom: intune-azure
 - 	**Password expiration (days)** - Specifies the number of days before the device password must be changed.
 - 	**Prevent reuse of previous passwords** - Specifies whether the user can configure previously used passwords.
 - 	**Picture password and PIN** - Enables the use of a picture password and PIN. A picture password lets the user sign in with gestures on a picture. A PIN lets users quickly sign in with a four-digit code.
-- 	**Encryption** - Requires that files on the device are encrypted.<br>To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/en-us/kb/3013816) on each device.
+- 	**Encryption** - Requires that files on the device are encrypted.<br>To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/kb/3013816) on each device.
 If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 For encryption to work, the device must meet the [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) hardware certification requirements.
 When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user. 	

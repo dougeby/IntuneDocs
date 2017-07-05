@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/29/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using Managed browser policies with Microsoft Intune
+# Manage Internet access using Managed Browser policies with Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -57,18 +57,19 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 
 ## Create a Managed Browser app configuration
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune App Protection**.
-3. On the **Settings** blade of the Intune mobile application management dashboard, choose **App configuration**.
-4. On the **App Configuration** blade, choose **Add Config**.
-5. On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-5. Choose **Select required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
-6. Choose **OK** to return to the **Add app configuration** blade.
-7. Choose **Define configuration**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser.
-Use the sections later in this topic to learn about the different key and value pairs you can define.
-8. When you are done, click **OK**.
-9. On the **Add app configuration** blade, choose **Create**.
-10. The new configuration is created, and displayed on the **App configuration** blade.
+1.	Sign into the Azure portal.
+2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
+3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
+4.	On the **App Configuration policies** blade, choose **Add**.
+5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
+6.	For **Device enrollment** type, choose **Not enrolled with Intune**.
+7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
+8.	Choose **OK** to return to the **Add app configuration** blade.
+9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this topic to learn about the different key and value pairs you can define.
+10.	When you are done, choose **OK**.
+11.	On the **Add app configuration** blade, choose **Create**.
+12.	The new configuration is created, and displayed on the **App configuration** blade.
+
 
 
 ## Assign the configuration settings you created
