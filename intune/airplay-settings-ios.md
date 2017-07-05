@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,5 +58,7 @@ With this capability you can:
 You can also import device and passwords, and allowed destinations from a comma-separated values (csv) file.
 
 
+## Next steps
 
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).
 
