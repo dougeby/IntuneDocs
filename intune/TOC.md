@@ -64,6 +64,7 @@
 ###	[Sign into Intune](account-sign-up.md)
 ###	[Configure domains](custom-domain-name-configure.md)
 ###	[Add users](users-permissions-add.md)
+### [Add groups](groups-add.md)
 ###	[Assign licenses](licenses-assign.md)		
 ###	[Customize Company Portal](company-portal-customize.md)		
 ### [Set the MDM authority](mdm-authority-set.md)
