@@ -38,7 +38,7 @@ As an Intune admin, you can determine which devices can enroll into management w
   - iOS
   - macOS
   - Windows
-- Restrict personally owned devices (iOS, Android, macOS only)
+- Restrict personally owned devices (iOS and Android only)
 
 >[!NOTE]
 >Enrollment restrictions are not a security feature. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
@@ -59,6 +59,7 @@ The default enrollment restrictions apply to all users who aren't assigned highe
   - **Personally Owned** - Specify whether to **Allow** or **Block** for Android and iOS devices.
   ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
   Click **Save**.
+
 >[!NOTE]
 >If you block personally owned Android devices from enrollment, Android for Work devices can still be enrolled.
 
