@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Android devicestitleSuffix: "Intune on Azure"
-description: Learn about the Intune settings you can use to configure VPN connections on Android devices."
+title: Intune VPN settings for Android devices
+titleSuffix: "Intune on Azure"
+description: Learn about the Intune settings you can use to configure VPN connections on Android devices
 keywords:
 author: lleonard-msft
 ms.author: alleonar
