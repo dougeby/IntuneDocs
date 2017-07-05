@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Intune app notifications settings for IOS devices
+# Intune app notifications settings for iOS devices
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
