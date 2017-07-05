@@ -36,6 +36,8 @@ Shared device configuration settings let you specify optional text displayed on 
 >[!IMPORTANT]
 > This capability is supported on supervised devices running iOS 9.3 and later.
 
+## Create shared device settings
+
 1. On the **Device features** blade, choose **Shared Device Configuration (supervised only)**.
 2. On the **Shared Device Configuration (supervised only)** blade, configure the following settings:
 	- **Asset tag information** - Enter information about the asset tag of the device. For example: **Owned by Contoso Corp**.
