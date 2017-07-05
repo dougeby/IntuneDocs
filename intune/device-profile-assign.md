@@ -27,6 +27,8 @@ ms.custom: intune-azure
 
 ---
 
+# How to assign Microsoft Intune device profiles
+
 ## Assign a device profile
 
 1. Sign into the Azure portal.
@@ -61,5 +63,5 @@ If you include **All Devices**, but exclude **All Users**, all the devices recei
 >To exclude members from an assignment, you can use the Available, and Not applicable assignment intents. For example, you assign an app to **All corporate users** with the **Available** intent, and to **Senior Management Staff** with the **Not applicable** intent. the app is assigned to all users *except* users in the **Senior Management Staff** group. If you assign the app to **All corporate users** with the **Required** intent, the users in the **Senior Management Staff** group are not excluded.
  
  	
-### Next steps
+## Next steps
 See [How to monitor device profiles](device-profile-monitor.md) for information to help you monitor device profile assignments.
