@@ -31,18 +31,18 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-The steps in this section set up your environment for mobile device management.  
+The setup steps prepare your environment for mobile device management.  
 
 If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 >[!TIP]
->If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*, which is a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
+>If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
 ## Checklist
 
 | Steps | Status  |
 | ------------- |-------------|
-| 1  | [Prerequisites](supported-devices-browsers.md) - Need to know info before you start|
+| 1  | [Prerequisites](supported-devices-browsers.md) - Need-to-know info before you start|
 | 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription |  
 | 3 | [Configure a custom domain name](custom-domain-name-configure.md) - Set DNS registration to connect your company's domain name with Intune  |
 | 4 | [Add users and sync Active Directory](users-permissions-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
