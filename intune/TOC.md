@@ -101,6 +101,7 @@
 ### [Logout current user](device-logout-user.md)
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
+### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Examine device inventory](device-inventory.md)
 
 ## [Manage users](user-management.md)
