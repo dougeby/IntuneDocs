@@ -146,9 +146,6 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-### Key
-
-
 |||
 |-|-|
 |Key|Value|
@@ -157,10 +154,6 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
 >Additionally, make sure not to block important pages like your company websites.
-
-### Value
-
-
 
 ### URL format for allowed and blocked URLs
 Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:
