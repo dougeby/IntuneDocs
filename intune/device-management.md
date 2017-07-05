@@ -38,7 +38,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 
-Now, you can perform the following actions. For more information, click one of the related links:
+Now, you can perform the following actions:
 
 - [View device inventory](device-inventory.md)
 - Perform remote device actions:
@@ -79,5 +79,5 @@ Use the following table to understand the device platforms that are supported by
 
 ## Next steps
 
-- Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions. 
+- Choose **Device Actions** to see the status of actions taken on devices you manage. 
 ![Monitor device actions](./media/monitor-device-actions.png)

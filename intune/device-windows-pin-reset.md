@@ -34,7 +34,7 @@ The reset passcode capability for Windows devices integrates with the Microsoft 
 
 ## Before you start
 
-Before you can remotely reset the passcode on Windows devices you can manage, you'll need to onboard the PIN reset service to your Intune tenant, and configure devices you manage. Follow these instructions to get that set up:
+Before you can remotely reset the passcode on Windows devices you can manage, you must onboard the PIN reset service to your Intune tenant, and configure devices you manage. Follow these instructions to get that set up:
 
 ### Connect Intune with the PIN reset service
 
@@ -43,11 +43,11 @@ Before you can remotely reset the passcode on Windows devices you can manage, yo
 ![PIN reset service permissions page](./media/pin-reset-service-application.png)
 3. In the Azure portal, you can verify that Intune and the PIN reset service were integrated from the Enterprise applications - All applications blade as shown in the following screenshot:
 ![PIN reset service application in Azure](./media/pin-reset-service-home-screen.png)
-4. Log into [this website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) using your Intune tenant admin credentials and, again, choose **Accept** to give consent for the service to access your account.
+4. Log in to [this website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) using your Intune tenant admin credentials and, again, choose **Accept** to give consent for the service to access your account.
 
 ### Configure Windows devices to use PIN reset
 
-To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service providers (CSPs):
+To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](custom-settings-windows-10.md) to enable the feature. Configure the policy using the following Windows policy configuration service providers (CSPs):
 
 
 - **For users** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
@@ -62,7 +62,7 @@ The values for these CSPs must both be set to **True**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices** blade, choose **Manage** > **All devices**.
 5. Select the device for which you want to reset the passcode, and then, on the device properties blade, choose **New passcode**.
-6. From the confirmation that appears, choose **Yes**. The passcode is generated, and will be displayed in the portal for the next 7 days.
+6. From the confirmation that appears, choose **Yes**. The passcode is generated, and is displayed in the portal for the next seven days.
 
 ## Next steps
 

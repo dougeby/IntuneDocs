@@ -36,7 +36,13 @@ The Managed Browser is a web browsing app that you can download from public app 
 - Pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.
 - Pre-configured with a homepage, and bookmarks you specify.
 
-Because this app has integration with the Intune SDK, you can also apply app protection policies to it. These policies include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [What are app protection policies?](/intune/app-protection-policy)
+Because this app has integration with the Intune SDK, you can also apply app protection policies to it, including:
+- Controlling the use of cut, copy, and paste
+- Preventing screen captures
+- Ensuring that links to content that users select open only in other managed apps.
+
+For details, see [What are app protection policies?](/intune/app-protection-policy)
+
 You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
@@ -98,7 +104,7 @@ This site, which could previously not be found while the user was remote, is now
 - To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
 - Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
-- A can only see automatic redirection for application proxy apps which have been assigned to them.
+- A can only see automatic redirection for application proxy apps, which have been assigned to them.
 
 #### Step 1: Enable automatic redirection to the Managed Browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
