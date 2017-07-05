@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Shared Device configuration settings to display messages on the iOS device lock screen
+# Shared device configuration settings to display messages on the iOS device lock screen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
