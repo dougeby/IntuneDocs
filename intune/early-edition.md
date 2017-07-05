@@ -82,17 +82,12 @@ You can specify the app by URL, package name or from the list of apps you manage
 ### Android for Work support for Lookout <!-- 1087312 -->   
 Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You will be able to deploy the Lookout app inside or outside the container.
 
-### Checkpoint - New Mobile Threat Defense partner  <!-- 1172027 -->
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint, a mobile threat defense solution that integrates with Microsoft Intune.
+
+### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651  and  1172027 ? -->  
+You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Check Point SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
 
 #### How integration with Intune works?
-Risk is assessed based on telemetry collected from devices running Checkpoint. You can configure EMS conditional access policies based on Checkpoint risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
-
-### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651 -->  
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
-
-#### How integration with Intune works?
-Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+Risk is assessed based on telemetry collected from devices running Check Point SandBlast Mobile. You can configure EMS conditional access policies based on Check Point SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block non-compliant devices access to corporate resources based on detected threats.
 
 ### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->
 You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
