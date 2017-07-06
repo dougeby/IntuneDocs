@@ -65,6 +65,7 @@
 ###	[Sign into Intune](account-sign-up.md)
 ###	[Configure domains](custom-domain-name-configure.md)
 ###	[Add users](users-permissions-add.md)
+### [Add groups](groups-add.md)
 ###	[Assign licenses](licenses-assign.md)		
 ###	[Customize Company Portal](company-portal-customize.md)		
 ### [Set the MDM authority](mdm-authority-set.md)
@@ -101,6 +102,7 @@
 ### [Logout current user](device-logout-user.md)
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
+### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Examine device inventory](device-inventory.md)
 
 ## [Manage users](user-management.md)

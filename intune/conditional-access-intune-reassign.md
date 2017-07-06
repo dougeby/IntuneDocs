@@ -62,7 +62,7 @@ If you’re ready to move to the new Azure portal, you can follow the steps belo
 
 4.  Take notes of your conditional access settings and use these notes as reference to create the same conditional access policies in the new Azure portal.
 
-### Intune app-based conditional access in Intune App Protection blade
+### App and device-based conditional access policies working together
 
 The **Intune App Protection** blade in the new Azure portal enables admins to set app-based conditional rules so that only apps that support the Intune app protection policies are allowed access to corporate resources. You can choose to overlap these app-based conditional access policies using device-based conditional access policies. Depending on whether you want to combine the device-based and app-based conditional policies (logical AND) or provide an option (logical OR). If your conditional access policy requirements are:
 
