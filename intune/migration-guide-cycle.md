@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Phase 2: Typical Migration Cycle
+# Typical migration cycle
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -64,8 +64,7 @@ You should track how many users have enrolled devices after each phase so that y
 
 -   Estimate the impact of enforcing conditional access.
 
-Learn [how to monitor an Intune migration](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
 
 ## Post-migration
 
-You’ll need to retire the previous MDM provider and/or unsubscribe from the service after migrating to Intune. Additionally, you’ll need to remove any unneeded infrastructure requirements by following the MDM provider’s instructions.
+You’ll need to retire the previous MDM provider and unsubscribe from the service after migrating to Intune. Additionally, you’ll need to remove any unneeded infrastructure requirements by following the MDM provider’s instructions.

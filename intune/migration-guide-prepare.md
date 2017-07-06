@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -92,4 +92,4 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 ## Next steps
 
-[Phase 1: Basic Setup](migration-guide-setup.md)
+[Basic Setup](migration-guide-setup.md)

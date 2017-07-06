@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,4 +75,4 @@ These are the key lessons learned when migrating from a third-party MDM provide 
 
 ## Next steps
 
-[Phase 2: Communication plan](migration-guide-communication-plan.md)
+[Communication plan](migration-guide-communication-plan.md)

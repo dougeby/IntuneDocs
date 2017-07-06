@@ -28,6 +28,8 @@ ms.suite: ems
 
 # How to educate your end users about Microsoft Intune
 
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](app-sdk.md).
 
 None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
@@ -61,15 +63,15 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * **Android**
   * [Using an Android device with Intune](/intune-user-help/using-your-android-device-with-intune)
-  * [How your Android users get their apps](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [How your Android users get their apps](end-user-apps-android.md)
 
 * **iOS**
   * [Using an iOS device with Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [How your iOS users get their apps](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [How your iOS users get their apps](end-user-apps-ios.md)
 
 * **Windows**
   * [Using a Windows device with Intune](/intune-user-help/using-your-windows-device-with-intune)
-  * [How your Windows users get their apps](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [How your Windows users get their apps](end-user-apps-windows.md)
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and we believe that this philosophy can greatly increase your end user satisfaction with Intune.
 

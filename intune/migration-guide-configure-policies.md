@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Phase 1: Configure device compliance and app management policies
+# Configure device compliance and app management policies
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -49,33 +49,23 @@ Each device platform may offer different settings, but Intune device policies wo
 
 ### Task 1: Add device groups (optional)
 
-The [Intune classic portal](https://manage.microsoft.com/) gives you the ability to create device groups, when you need to perform a variety of administrative tasks based on device identity, instead of user identity.
+You can create device groups, when you need to perform a variety of administrative tasks based on device identity, instead of user identity.
 
 Device groups are useful for managing devices without dedicated users, such as kiosk devices, or devices shared by shift workers or assigned to a specific location.
 
-By configuring device groups ahead of device enrollment, you can leverage device categories to auto-group devices upon enrollment to receive their group’s device policies automatically.
-
--   Learn [how to add device groups](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5).
-
--   Learn [how to configure device categories](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
+By configuring device groups ahead of device enrollment, you can leverage device categories to auto-group devices upon enrollment to receive their group’s device policies automatically. [Get started with groups](/intune/groups-get-started).
 
 ### Task 2: Use resource access profiles (Wi-Fi, VPN, and email certificates)
 
 Resource access profiles provision certificates and access configurations to enrolled devices.
 
-As previously discussed in the Assess MDM requirements section, you’ll need to have a [PKI infrastructure in place](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) to deploy VPN, Wi-Fi, and e-mail certificates, if you are using certificate-based authentication.
-
-#### Direct import of resource access profiles (optional)
-
-If your existing MDM solution provides a mechanism to export e-mail, Wi-Fi, and VPN profiles to XML format, you might be able to leverage the XML file and just import it into Intune by using OMA-URI to create custom profiles for iOS, Android and Windows devices.
-
--   Learn how to add a custom policy for [iOS](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) devices.
+As previously discussed in the Assess MDM requirements section, if you are using certificate-based authentication, [configure certificates](/intune/certificates-configure).
 
 ### Task 3: Create and deploy device configuration profiles
 
 You need to create a device configuration profile to enforce device-level settings, for example: disable camera, app-store, configure single-app mode, home screen, etc.
 
-- Learn about [device configuration profiles](https://docs.microsoft.com/intune/device-profile-create).
+- Learn about [device profiles](/intune/device-profiles).
 
 ####  Direct import of iOS configuration profiles (optional)
 
@@ -83,7 +73,7 @@ You need to create a device configuration profile to enforce device-level settin
 
 -   **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
 
-- Learn how to add a custom policy for [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune#custom-policy-settings)
+- Learn how to add a custom policy for [iOS](/intune/custom-settings-ios)
 
 ### Task 4: Create and deploy device compliance policies (optional)
 
@@ -111,14 +101,8 @@ When using Intune MDM, you can provision apps by either requiring their automati
 
 ### Task 6: Enable device enrollment
 
-Enrollment establishes management by provisioning control on the device.
-
--   Learn [how to get ready to enroll corporate-owned and user personal's devices](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
-
--   Learn [how to enroll corporate-owned devices](/intune-classic/deploy-use/manage-corporate-owned-devices).
-
-If you need to enroll shared or user-less devices, you can use a [device enrollment manager (DEM account](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+Enrollment establishes management by provisioning control on the device. Learn [how to get ready to enroll corporate-owned and user personal's devices](/intune/device-enrollment).
 
 ## Next steps 
 
-[Phase 1: Configure App Protection Policies (optional)](migration-guide-app-protection-policies.md)
+[Configure App Protection Policies (optional)](migration-guide-app-protection-policies.md)

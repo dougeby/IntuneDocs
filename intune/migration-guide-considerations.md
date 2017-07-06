@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Phase 1: Special migration considerations
+# Special migration considerations
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,19 +36,8 @@ There are special migration considerations which may be applicable depending on 
 
 The Apple Device Enrollment Program (DEP) sets device configurations that cannot be removed by the end user. To retain the advanced management features of DEP, the device must be returned to the out-of-box (new) state via factory reset to enroll to Intune.
 
-To continue using DEP to manage the devices in Intune:
+To continue using DEP to manage the devices in Intune, [set up iOS device enrollment with Device Enrollment Program](/intune/device-enrollment-program-enroll-ios).
 
-1.  Onboard [DEP in Intune](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
-
-2.  Go your Apple DEP account and [re-assign the DEP device serial numbers](https://help.apple.com/deployment/business/#/tesf9562af26) from your existing MDM provider to Intune.
-
-3.  [Synchronize](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune) your DEP account with Intune
-
-4.  [Create and assign](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune) appropriate DEP enrollment profiles to the serial numbers in Intune.
-
-5.  Factory reset the devices (either remotely via your current MDM provider or manually on each device)
-
-6.  Distribute the devices to end-users.
 
 ## Next steps 
 

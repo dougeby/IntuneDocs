@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Drive end-user adoption with conditional access 
+title: Drive end-user adoption with conditional access
 description: The purpose of this article is to provide insights on how to leverage conditional access to drive Intune enrollment.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Phase 2: Drive end-user adoption with conditional access
+# Drive end-user adoption with conditional access
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
@@ -57,30 +57,28 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 > [!TIP]
 > This is one approach among many. You may choose a simpler process that defers all conditional access until after every phase has been instructed to enroll, or a stricter process that enforces conditional access from the very beginning and requires full compliance for all access.
 
--   Learn more about [conditional access](https://docs.microsoft.com/intune/conditional-access).
+-   Learn more about [conditional access](/intune/conditional-access).
 
 ## Task list for conditional access
 
-### Task 1: Get ready for Intune conditional access
+### Task 1: Decide how you are going to implement conditional access
 
--   Learn [how to configure conditional access](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+[Common ways to use conditional access](/intune/conditional-access-intune-common-ways-use).
 
 ### Task 2: Set up Intune conditional access
 
-Choose one of the following conditional access policy types to learn more:
+Choose one of the following options:
 
--   [Exchange Online & new Exchange Online dedicated](/intune-classic/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
+-   [Configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Exchange on-premises & legacy Exchange Online dedicated](/intune-classic/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
+-   [Install on-premises Exchange connector with Intune](/intune/exchange-connector-install)
 
--   [SharePoint Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
+-   [Set up app-based conditional access policies for Exchange Online](/intune/app-based-conditional-access-intune-exchange-online-create)
 
--   [Skype for Business Online](/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
+-   [Set up app-based conditional access policies for SharePoint Online](/intune/app-based-conditional-access-intune-sharepoint-online-create)
 
--   [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
-
--   [Example e-mail access scenarios](/intune-classic/deploy-use/restrict-email-access-example-scenarios)
+-   [Block apps that do not use modern authentication (ADAL)](/intune/app-modern-authentication-block)
 
 ## Next steps
 
-[Phase 2: Typical Migration Cycle](migration-guide-cycle.md)
+[Typical migration cycle](migration-guide-cycle.md)

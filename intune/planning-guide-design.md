@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create an Intune design 
+title: Create a design 
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,15 +26,15 @@ ms.custom: intune-classic
 
 ---
 
-# Create an Intune design
+# Create a design
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service.
+The section of the guide should be used in parallel with other topics in Section 2. This design is based on the information you collect and decisions you make when completing previous sections of this guide. In this design section, we focus on Intune standalone, which is a Microsoft cloud-based service.
 
-Although there’s minimal on-premises infrastructure requirements, work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
+Although there’s minimal on-premises infrastructure requirements, work on a design plan to make sure you have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document these changes, and the rationale behind it as they occur. We’ll be discussing the following areas:
+Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document these changes, and the rationale behind it as they occur. The design includes the following areas:
 
 -   The current environment
 
@@ -54,11 +54,11 @@ The first step before you can create your design is to record your current envir
 
 -   **Identity in the cloud**
 
-    -   Do you use DirSync or Azure Active Directory (AAD) Connect?
+    -   Do you use DirSync or Azure Active Directory (Azure AD) Connect?
 
     -   Is your environment Federated?
 
-    -   Is Multifactor authentication enabled?
+    -   Is multi-factor authentication enabled?
 
 -   **Email environment**
 
@@ -80,7 +80,7 @@ The first step before you can create your design is to record your current envir
 
 -   **Certificate Solution**
 
-    -   Have you implemented a Certificate solution?
+    -   Have you implemented a certificate solution?
 
     -   What type of certificates do you use?
 
@@ -110,13 +110,13 @@ Make sure to note any projects or any other plans in place to could make changes
 
 ## Choose an Intune deployment option
 
-Intune offers two deployment options: standalone and hybrid. You'll need to decide which one fits your business requirements. Standalone refers to Intune service running in the cloud, hybrid refers to the integration of Intune with System Center Configuration Manager.
+Intune offers two deployment options: standalone and hybrid. Decide which one fits your business requirements. Standalone refers to Intune service running in the cloud, hybrid refers to the integration of Intune with System Center Configuration Manager.
 
 - Learn more about [choosing between Microsoft Intune standalone and hybrid mobile device management with System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
 ## Intune tenant location
 
-If your organization has global presence, make sure to plan where your tenant will reside when subscribing to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world which are listed below:
+If your organization has global presence, make sure to plan where your tenant resides when subscribing to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world which are listed below:
 
 -   North America
 
@@ -125,11 +125,11 @@ If your organization has global presence, make sure to plan where your tenant wi
 -   Asia and Pacific
 
 >[!IMPORTANT]
-> It’s not possible to change the country/tenant location later.
+> It’s not possible to change the country and tenant location later.
 
 ## External dependencies
 
-External dependencies are services and products that are separate from Intune but are either a requirement of Intune, or might integrate with Intune. It’s important to identify requirements for any external dependencies and how it will be configured. Some examples of common external dependencies are listed below.
+External dependencies are services and products that are separate from Intune, but are either a requirement of Intune, or might integrate with Intune. It’s important to identify requirements for any external dependencies and how it is to be configured. Some examples of common external dependencies are listed below.
 
 -   Identity
 
@@ -143,7 +143,7 @@ Let’s explore in more detail these common external dependencies below
 
 Identity is how we identify the users who belong to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to leverage your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
 
-You can find more information regarding Intune’s Identity requirements below.
+You can find more information regarding Intune’s identity requirements below.
 
 -   Learn more about [identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
 
