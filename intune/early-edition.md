@@ -48,9 +48,8 @@ This page is updated periodically. Check back for additional updates.
 ## What's coming to Intune on the Azure portal
 
 ### Easier installation of Office 365 apps <!--- 1121362 --->
-The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
-For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
-
+A new **Office 365 ProPlus** app type will make it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you will be able to install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and will appear as one app in the list of apps in the Intune console.
+ 
 
 ### New device action to force devices to sync with Intune <!-- 711369 -->    
 We are adding a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
