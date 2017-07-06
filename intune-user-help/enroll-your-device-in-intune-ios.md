@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -106,6 +106,6 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
 
 > [!Note]
-> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-ios.md).
+> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using the Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
