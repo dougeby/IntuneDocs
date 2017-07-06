@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,11 +36,14 @@ The Managed Browser is a web browsing app that you can download from public app 
 - Pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.
 - Pre-configured with a homepage, and bookmarks you specify.
 
-Because this app has integration with the Intune SDK, you can also apply app protection policies to it. These policies include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [What are app protection policies?](/intune/app-protection-policy)
-You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
+Because this app has integration with the Intune SDK, you can also apply app protection policies to it, including:
+- Controlling the use of cut, copy, and paste
+- Preventing screen captures
+- Ensuring that links to content that users select open only in other managed apps.
 
->[!IMPORTANT]
->The Managed Browser app only retrieves and applies Intune app protection policies when another app on the device has retrieved an app protection policy.<br><br> 
+For details, see [What are app protection policies?](/intune/app-protection-policy)
+
+You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications. 
@@ -70,7 +73,8 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 11.	On the **Add app configuration** blade, choose **Create**.
 12.	The new configuration is created, and displayed on the **App configuration** blade.
 
-
+>[!IMPORTANT]
+>Currently, the Managed Browser relies on auto-enrollment. For app configurations to apply, another application on the device must already be managed by Intune app protection policies.
 
 ## Assign the configuration settings you created
 
@@ -99,7 +103,8 @@ This site, which could previously not be found while the user was remote, is now
 - Ensure that your internal applications published through Azure AD Application Proxy.
 - To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
-- Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app. 
+- Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
+- A can only see automatic redirection for application proxy apps, which have been assigned to them.
 
 #### Step 1: Enable automatic redirection to the Managed Browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
@@ -107,29 +112,20 @@ Outlook must be configured with an app protection policy that enables the settin
 #### Step 2: Assign an app configuration policy assigned for the Managed Browser.
 This procedure configures the Managed Browser app to use app proxy redirection. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-##### Key
-
-**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**
-
- 
-##### Value
-
-**true**
+|||
+|-|-|
+|Key|Value|
+|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
 
 ## How to configure the homepage for the Managed Browser
 
 This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-### Key
-
-**com.microsoft.intune.mam.managedbrowser.homepage**
-
-### Value
-
-Specify a valid URL. Incorrect URLs are blocked as a security measure.
-
-Example: **https://www.bing.com**
+|||
+|-|-|
+|Key|Value|
+|**com.microsoft.intune.mam.managedbrowser.homepage**|Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: **https://www.bing.com**|
 
 
 ## How to configure bookmarks for the Managed Browser
@@ -141,43 +137,23 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-### Key
-
-**com.microsoft.intune.mam.managedbrowser.bookmarks**
-
-### Value
-
-The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the **|** character.
-
-Example: **Microsoft Bing|https://www.bing.com**
-
-To configure multiple bookmarks, separate each pair with the double character, **||** 
-
-Example: **Bing|https://www.bing.com||Contoso|https://www.contoso.com**
+|||
+|-|-|
+|Key|Value|
+|**com.microsoft.intune.mam.managedbrowser.bookmarks**|The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the **&#124;** character.<br><br>Example: **Microsoft Bing&#124;https://www.bing.com**<br><br>To configure multiple bookmarks, separate each pair with the double character, **&#124;&#124;**<br><br>Example: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-### Key
-
-Choose from:
-
-- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**
-- Specify blocked URLs (all other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.BlockListURLs**
+|||
+|-|-|
+|Key|Value|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
 >Additionally, make sure not to block important pages like your company websites.
-
-### Value
-
-The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **|** character.
-
-Examples: 
-
-- **URL1|URL2|URL3**
-- **http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com**
 
 ### URL format for allowed and blocked URLs
 Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:
