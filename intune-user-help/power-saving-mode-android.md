@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power optimization is preventing email access | Microsoft Docs
-description:
+description: Find out how to turn off power optimization to make sure you get your email.
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
