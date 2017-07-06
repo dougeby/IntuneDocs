@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: An existing company email account was found | Microsoft Docs
+title: Power optimization is preventing email access | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -32,9 +32,9 @@ ms.custom: intune-enduser
 
 Enrolling your device in Intune lets you get access to company resources. One of the most common resources is email access. An issue that we have seen with accessing email on Android devices has been when battery optimization is turned on. Battery optimization saves power whenever your phone or tablet battery gets low. It may turn on automatically to try to help your device stay turned on for as long as possible. Battery optimization is partially able to help you this way because it tries to stop automatic email downloads.  
 
-The Microsoft Intune team is actively working on a solution for this issue. For now, you should remove the Company Portal and Outlook apps from the list of apps that are affected when battery saver is turned on.
+The Microsoft Intune team is actively working on a solution for this issue. You should remove the Company Portal and Outlook apps from the list of apps that are affected when battery saver is turned on.
 
-There are many Android devices that are made by many manufacturers. We cannot document the exact steps you will need to take for every device. You may need only take this action once in your system settings or twice in system settings and in separate, manufacturer-specific settings. For example, on a Google Pixel device with Android 7.0+, you would follow these steps to remove these apps from battery optimization:
+There are many Android devices that are made by many manufacturers. We cannot document the exact steps you need to take for every device. You may need to take this action in just your system settings or also in certain manufacturer-specific settings. For example, on a Google Pixel device with Android 7.0+, you would follow these steps to remove these apps from battery optimization:
 
 1. Open **Settings**.
 2. Tap **Battery** > **More** > **Battery optimization**.
