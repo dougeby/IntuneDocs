@@ -107,8 +107,12 @@ You will soon be able to set a conditional access policy that requires Mac devic
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. By December, all access to company resources, including email, will be prevented. 
 
-### Android Support Updates  <!-- ? -->
-Beginning in October, Microsoft Intune and the Intune Company Portal app will move to support Android 4.4 and higher. Users on unsupported versions of Android will not be able to access or enroll using the Company Portal app. Enrolled devices that are on the affected Android versions will continue to remain enrolled until December. If devices are still enrolled in December, they will be force-retired from Intune resulting in loss of access to company resources. If using Application Protection Policies without enrollment, applications will not receive updates, and the quality of the experience may diminish over time. To block access to company resources on applications on older operating systems, see our Conditional Access offerings.
+### End of support for Android 4.3 and lower <!---1171127--->
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+
+
+
+
 
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017 <!-- 1327781 -->  
 On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
