@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure a custom domain name 
+title: Configure a custom domain name
 description: Add a custom domain name for your Intune subscription
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 07/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 2. In the navigation pane, choose **Settings** &gt; **Domains**.
 
 3. Choose **Add domain**, and type your custom domain name.
-
+   ![Screenshot of Office 365 Admin Center with Settings > Domains selected and a new domain name being added](./media/domain-custom-add.png)
 4. The **Verify domain** dialog box opens giving you the values to create the TXT record in your DNS hosting provider.
 	- **GoDaddy users**: Office 365 Management portal redirects you to GoDaddy's login page. After you enter your credentials and accept the domain change permission agreement, the TXT record is created automatically. You can alternatively [create the TXT record](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
 	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) to create the TXT record.
