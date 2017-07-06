@@ -133,6 +133,9 @@ End users will be able to customize the color mode for the Company Portal app fo
 ### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->    
 End users will be able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
 
+### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
+End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
+
 ### Users who are signed in to Exchange can automatically access the Company Portal website on Windows 10 devices <!--1323204-->  
 Windows 10 users that are already authenticated in Exchange, who receive the conditional access quarantine email and click the link in the email, will no longer need to re-authenticate in the browser before beginning Company Access Setup.
 
