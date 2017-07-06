@@ -25,16 +25,16 @@ ms.custom: intune-enduser
 
 ---
 
-# Power saving mode may cause some issues
+# I can't get my email because of power optimization
 
 > [!IMPORTANT]
-> This issue is documented here because we have been receiving an increased number of customer reports about it. If you continue to experience this issue after you have taken these steps, please reach out to [your IT admin](https://portal.manage.microsoft.com) for additional help.
+> This issue is documented here because we have been receiving an increased number of customer reports about it. If you continue to experience this issue after you have taken these steps, contact [your IT admin](https://portal.manage.microsoft.com) for additional help.
 
-Enrolling your device in Intune lets you get access to company resources. One of the most common resources is email access. An issue that we have seen with accessing email on Android devices has been when battery optimization is turned on. Battery optimization saves power whenever your phone or tablet battery gets low. It may turn on automatically to try and help your device stay turned on for as long as possible. Battery optimization is partially able to do this because it tries to stop automatic email downloads.  
+Enrolling your device in Intune lets you get access to company resources. One of the most common resources is email access. An issue that we have seen with accessing email on Android devices has been when battery optimization is turned on. Battery optimization saves power whenever your phone or tablet battery gets low. It may turn on automatically to try to help your device stay turned on for as long as possible. Battery optimization is partially able to help you this way because it tries to stop automatic email downloads.  
 
-The Microsoft Intune team is actively working on a solution for this issue. If you are encountering it now, you should remove the Company Portal and Outlook apps from the list of apps that are affected when battery saver is turned on. Since there are many Android devices made by a variety of manufacturers, you may need to do this only once (in your system settings) or twice (in system settings and in separate, manufacturer-specific settings).
+The Microsoft Intune team is actively working on a solution for this issue. For now, you should remove the Company Portal and Outlook apps from the list of apps that are affected when battery saver is turned on.
 
-For example, on a Google Pixel device, you would follow these steps to remove these apps from battery optimization:
+There are many Android devices that are made by many manufacturers. We cannot document the exact steps you will need to take for every device. You may need only take this action once in your system settings or twice in system settings and in separate, manufacturer-specific settings. For example, on a Google Pixel device with Android 7.0+, you would follow these steps to remove these apps from battery optimization:
 
 1. Open **Settings**.
 2. Tap **Battery** > **More** > **Battery optimization**.
