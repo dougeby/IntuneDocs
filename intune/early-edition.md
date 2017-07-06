@@ -61,7 +61,7 @@ We will add further configurations for the Intune Managed Browser app. You will 
 Intune now supports restricting iOS and Android enrollment by operating system version number. Under **Intune** > **Enrollment restrictions** > **Device Type Restriction** > **Default** > **Platform restrictions**, the IT admin can now set a platform configuration to restrict enrollment between a minimum and maximum operating system value. Android operating system versions must be specified as Major.Minor.Build.Rev, where Build and Rev are optional. iOS versions must be specified as Major.Minor.Build where Build is optional.
 
 >[!NOTE]
->Does not restrict enrollment through Apple enrollment programs, which include the Apple Device Enrollment Program and Apple School Manager, or Apple Configurator.
+>This setting does not restrict enrollment through Apple enrollment programs, which include the Apple Device Enrollment Program and Apple School Manager, or Apple Configurator.
 
 ### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
 Intune now supports restricting personally owned device enrollment for iOS, Android, and macOS using device serial numbers. Some devices do not report serial numbers. Check with device manufacturers for details. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices.
