@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,6 +78,14 @@ In this release, we've expanded the support for managing the iOS Classroom app t
 
 
 ### App management  
+
+#### Changes to Intune built-in apps <!-- 1332306 -->
+
+Previously, Intune contained a number of built-in apps that you could quickly assign to devices. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
+However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
+
+
 #### Support for offline apps from the Windows Store for Business <!--- 777044 --->
 Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
 

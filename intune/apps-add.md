@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,34 +84,9 @@ When you add an app to Intune, you are given the option to select the category y
 
 ## Apps added automatically by Intune
 
-The following apps, published by Microsoft, are built-into Intune, and ready for you to assign:
-
-|||
-|-|-|
-|Name|Platform|App type|
-|Azure Information Protection|Android|Managed Android store app|
-|Dynamics CRM for Phones|Android|Managed Android store app|
-|Dynamics CRM for Tablets|Android|Managed Android store app|
-|Excel|iOS|Managed iOS store app|
-|Excel|Android|Managed Android store app|
-|Managed Browser|Android|Managed Android store app|
-|Managed Browser|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Phones|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Tablets|iOS|Managed iOS store app|
-|Microsoft Power BI|iOS|Managed iOS store app|
-|Microsoft Power BI|Android|Managed Android store app|
-|Microsoft SharePoint|iOS|Managed iOS store app|
-|Microsoft SharePoint|Android|Managed Android store app|
-|Microsoft Teams|Android|Managed Android store app|
-|Microsoft Teams|iOS|Managed iOS store app|
-|OneDrive|iOS|Managed iOS store app|
-|OneDrive|Android|Managed Android store app|
-|OneNote|iOS|Managed iOS store app|
-|Outlook|Android|Managed Android store app|
-|Outlook|iOS|Managed iOS store app|
-|Outlook Groups|Android|Managed Android store app|
-|Outlook Groups|iOS|Managed iOS store app|
-|PowerPoint|iOS|Managed iOS store app|
+Previously, Intune contained a number of built-in apps that you could quickly assign to devices. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
+However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
 
 ## Next Steps
 
