@@ -84,7 +84,7 @@ When you add an app to Intune, you are given the option to select the category y
 
 ## Apps added automatically by Intune
 
-Previously, Intune contained a number of built-in apps that you could quickly assign to devices. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
+Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
 In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
 
