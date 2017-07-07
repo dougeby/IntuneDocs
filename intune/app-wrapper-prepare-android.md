@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -127,6 +127,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 You will then be prompted for **KeyStorePassword** and **KeyPassword**. Enter the credentials you used to create the key store file.
 
 The wrapped app and a log file are generated and saved in the output path you specified.
+
+## Reusing signing certificates and wrapping apps
+Android requires that all apps must be signed by a valid certificate in order to be installed on Android devices.
+
+Wrapped apps can be signed either as part of the wrapping process or *after* wrapping using your existing signing tools (any signing information in the app before wrapping is discarded).
+ 
+If possible, the signing information that was already used during the build process should be used during wrapping. In certain organizations, this may require working with whoever owns the keystore information (ie. the app build team). 
+
+If the previous signing certificate cannot be used, or the app has not been deployed before, you may create a new signing certificate by following the instructions in the [Android Developer Guide](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+If the app has been deployed previously with a different signing certificate, the app can't be uploaded to the Intune console after upgrade. App upgrade scenarios will be broken if your app is signed with a different certificate than the one the app is built with. As such, any new signing certificates should be maintained for app upgrades. 
 
 ## Security considerations for running the App Wrapping Tool
 To prevent potential spoofing, information disclosure, and elevation of privilege attacks:
