@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,9 +35,9 @@ The Device Enrollment Program is offered by Apple to companies and organizations
 
 1.	Turn on your iPad, and proceed through the first couple of setup screens.
 2.	After you select your **Language**, connect your device to Wi-Fi.
-3.	Once you’ve connected to Wi-Fi, the **Configuration** screen will appear. This will say that **Your Company will automatically enable your iPad.**
+3.	Once you’ve connected to Wi-Fi, the **Configuration** screen will appear. This will say that **[Your Company] will automatically configure your [iPad/iPhone].**
 4.	Log in with your company **Username** and **Password**.
 5.	Agree to the **Terms and Conditions** and decide whether you want to send diagnostic information to Apple.
-6.	Once you complete your enrollment, your device may prompt you to take more actions. Some of these might be re-typing your email password or downloading an app.
+6.	Once you complete your enrollment, your device may prompt you to take more actions. Some of these might be entering your password for email access, setup a passcode, agree to application installations all based on what has been setup by your company’s Intune administrator.
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
