@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 This topic helps IT admins enable iOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune can deploy an enrollment profile “over the air” to devices purchased through DEP. The administrator never has to touch each managed device. A DEP profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 
-To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list or purchase order number of your DEP devices is also required so you can assign them to Intune for management in the Apple portal.
+To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of IDs or purchase order number is also required so you can assign them to Intune for management in the Apple portal.
 
 >[!NOTE]
 >DEP enrollment can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
@@ -50,7 +50,7 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 > [!NOTE]
-> If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
+> If you deleted an Apple DEP token from the Intune classic console and then migrated to Azure, the DEP token might be restored. You can delete the DEP token again from the Azure portal.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
@@ -116,10 +116,10 @@ For **User Affinity**, choose whether devices with this profile enroll with or w
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
 4. Select **Device Management Settings** to configure the following profile settings:
-![Screenshot of choosing the management mode with Supervised, locked enrollment, allow pairing set to deny all, and Apple Configurator Certificates grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
+![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. This item is set during activation and cannot be changed without a factory reset.
+	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
 
 	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
@@ -131,9 +131,9 @@ For **User Affinity**, choose whether devices with this profile enroll with or w
 ![Screenshot of choosing the configure settings with available settings for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
-	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
+	- **Department Phone** - Appears when the user clicks the **Need Help** button during activation.
     - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
-        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
+        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner. For example, kiosk mode restricts the device to one app.
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
         - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
         - **Apple ID** - If enabled, iOS prompts users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including those apps installed by Intune.
@@ -156,12 +156,12 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
 3. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
     To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-     -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
+     -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
      -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
 4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign an enrollment profile to devices
-Devices managed by Intune must be assigned an enrollment program profile before they are enrolled.
+You must assign an enrollment program profile to devices before they can enroll.
 
 >[!NOTE]
 >You can also assign serial numbers to profiles from the **Apple Serial Numbers** blade.
@@ -173,19 +173,19 @@ Devices managed by Intune must be assigned an enrollment program profile before 
   - **unassigned**
   - **any**
   - **&lt;profile name&gt;**
-4. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
+4. Select the devices you want to assign. The checkbox above the column selects up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
 
   ![Screenshot of Assign button for assigning enrollment program profile in the Intune portal](media/dep-profile-assignment.png)
 
-## End user experience with managed devices
+## End-user experience with managed devices
 
-You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset. When the enrollment program-managed iOS device is turned on, the user sees the following:  
+You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. An activated device cannot apply an enrollment profile until the device is factory reset. When the enrollment program-managed iOS device is turned on, the user sees the following options on their device:  
 
 1. **Set Up iOS device** - Users can choose from the following options:
   - **Set Up as New device**
   - **Restore from iCloud Backup**
   - **Restore from iTunes Backup**
-2. Users are informed **Microsoft will automatically configure your device.** The following additional configuration details are also available:
+2. Users are informed **<Your Organization> will automatically configure your device.** The following additional configuration details are also available:
 
   **Configuration allows Microsoft to manage this device over the air.**
 
@@ -194,8 +194,8 @@ You can now distribute devices to users. Devices with user affinity require each
   **An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.**
 
   **Configuration is provided by:<br>
-  MicrosoftIntune iOS Team<br>
-  One Microsoft Way, Redmond, WA 98052 (USA)**
+  <you organization> iOS Team<br>
+  <address>**
 
 3. Users are prompted for their work or school username and password.
 4. Users are prompted for their Apple ID. An Apple ID is required to install the Intune Company Portal app and other apps. After credentials are provided, the device installs a management profile that cannot be removed. The Intune management profile is displayed in **Settings** > **General** > **Device Management** on the device.
