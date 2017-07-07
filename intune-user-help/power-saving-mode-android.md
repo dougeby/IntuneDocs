@@ -41,7 +41,7 @@ There are many Android devices that are made by many manufacturers. We cannot do
 
 ## Unmodified Android devices
 
-Many manufacturers will add modifications to their Android devices. This can change certain ways you interact with the device, like themes and notifications. Google generally does not make these types of modifications to their phones. For example, on a Google Pixel device with Android 7.0 or higher, you would follow these steps to remove these apps from battery optimization:
+Many manufacturers add modifications to their Android devices. This can change certain ways you interact with the device, like themes and notifications. Google generally does not make these types of modifications to their phones. For example, on a Google Pixel device with Android 7.0 or higher, you would follow these steps to remove these apps from battery optimization:
 
 1. Open **Settings**.
 2. Tap **Battery** > **More** > **Battery optimization**.
