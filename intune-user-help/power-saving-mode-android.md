@@ -66,7 +66,7 @@ In addition, if you are using a Samsung device that has a lower version of Andro
 
 ## OnePlus devices
 
-Another example of a different way to locate these settings is through searching in the system settings. For example, on the OnePlus 3, you would follow these steps: 
+Another example of a different way to locate these settings is through searching in the system settings. For example, on a OnePlus 3 with Android 7.1.1, you would follow these steps: 
 
 1. Open **System Settings**. 
 2. Tap the **Search** button. This looks like a magnifying glass at the top right of the screen. 
