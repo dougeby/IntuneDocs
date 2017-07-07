@@ -35,7 +35,7 @@ ms.custom: intune-enduser
 
 Enrolling your device in Intune lets you get access to company resources. One of the most common resources is email access. An issue that we have seen with accessing email through Outlook for Android devices has been when battery optimization is turned on. Battery optimization may turn on automatically to try to help your device stay powered on for as long as possible. Battery optimization is partially able to help you this way because it tries to stop automatic email downloads.
 
-The Microsoft Intune team is actively working on a solution for this issue. You can avoid this issue by making sure that your device does not enter low power mode. To stop the issue from happening when you enter low power mode, you must remove the Company Portal and Outlook from the list of apps that are affected by battery optimization and power saving settings.
+The Microsoft Intune team is actively working on a solution for this issue. One way to prevent the device from entering low power mode is by making sure the battery maintains a charge of greater than 30%. To stop the issue from happening when you enter low power mode, you must remove the Company Portal and Outlook from the list of apps that are affected by battery optimization and power saving settings.
 
 There are many Android devices that are made by many manufacturers. We cannot document the exact steps you need to take for every device. You may need to take this action in just your system settings or also in certain manufacturer-specific settings. We have provided some common examples of how you can resolve this issue on Android devices.
 
