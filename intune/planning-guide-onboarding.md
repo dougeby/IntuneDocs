@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune onboarding process 
+title: Intune onboarding process
 description: This article helps you with all details that need to be considered when on-boarding Intune cloud-only solution into your environment.
 keywords:
 author: andredm7
@@ -78,7 +78,7 @@ This step is optional. As identified in the previous requirements section, an Of
 
 You may need to add users or security groups in AD or AAD based on your Intune deployment use case scenarios and requirements. You should review your current users and security groups in Active Directory or Azure Active Directory and determine if they fully meet your needs. New users and security groups are most commonly added in Active Directory and synchronized into Azure Active Directory via Azure AD Directory Connect.
 
--   Learn more about [how to add users/groups in Intune](users-permissions-add.md).
+-   Learn more about [how to add users/groups in Intune](users-add.md).
 
 #### Task 4: Assign Intune and Office 365 user licenses
 

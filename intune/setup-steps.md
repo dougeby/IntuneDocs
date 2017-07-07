@@ -45,7 +45,7 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 | 1  | [Prerequisites](supported-devices-browsers.md) - Need-to-know info before you start|
 | 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription |  
 | 3 | [Configure domain name](custom-domain-name-configure.md) - Set DNS registration to connect your company's domain name with Intune  |
-| 4 | [Add users](users-permissions-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
+| 4 | [Add users](users-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
 | 5 | [Assign licenses](licenses-assign.md) - Give users permission to use Intune|
 | 6 |  [Add groups](groups-add.md) - Use user and device groups to simplify management tasks |
 | 7 | [Add apps](apps-add.md) - Enable settings and apps that can be deployed to users |

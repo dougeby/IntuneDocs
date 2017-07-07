@@ -64,7 +64,7 @@
 #### [Network bandwidth usage](network-bandwidth-use.md)
 ###	[Sign into Intune](account-sign-up.md)
 ###	[Configure domains](custom-domain-name-configure.md)
-###	[Add users](users-permissions-add.md)
+###	[Add users](users-add.md)
 ### [Add groups](groups-add.md)
 ###	[Assign licenses](licenses-assign.md)		
 ###	[Customize Company Portal](company-portal-customize.md)		
@@ -105,7 +105,6 @@
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Examine device inventory](device-inventory.md)
 
-## [Manage users](user-management.md)
 <!--### Add and delete users -->
 
 ## [Manage apps](app-management.md)

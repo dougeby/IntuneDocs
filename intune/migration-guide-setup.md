@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune basic setup 
+title: Intune basic setup
 description: The purpose of this article is to provide the necessary steps to set up Microsoft Intune.
 keywords:
 author: andredm7
@@ -44,7 +44,7 @@ Intune requires Azure Active Directory (AAD) as the identity and user grouping p
 
 -   Learn more about [multi-factor authentication requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
 
--   Learn more about [planning your user and device groups](/intune/users-permissions-add).
+-   Learn more about [planning your user and device groups](/intune/users-add).
 
 -   Learn [how to create user and device groups](/intune/groups-get-started).
 
