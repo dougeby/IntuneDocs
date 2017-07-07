@@ -66,10 +66,17 @@ In addition, if you are using a Samsung device that has a lower version of Andro
 
 ## OnePlus devices
 
-On a OnePlus 5 device with Android 7.1.1, you would follow these steps to remove these apps from battery optimization:
+Another example of a different way to locate these settings is through searching in the system settings. For example, on the OnePlus 3, you would follow these steps: 
 
+1. Open **System Settings**. 
+2. Tap the **Search** button. This looks like a magnifying glass at the top right of the screen. 
+3. Type **battery optimization** into search, then select the **Battery Optimization** option on the **Settings** screen that appears. 
+4. Tap **Battery** > **Battery optimization**.
+5. Select the Company Portal and Outlook apps, then select **Don't optimize**. Tap **Done**.
+
+<!--On a OnePlus 5 device with Android 7.1.1, you would follow these steps to remove these apps from battery optimization:
 1. Open **Settings**.
 2. Tap **Battery** > **Battery optimization**.
-3. Select the Company Portal and Outlook apps, select **Don’t optimize**, and tap **Done**.
+3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
 Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
