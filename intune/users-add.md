@@ -40,8 +40,10 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 ### Add Intune users in the Office 365 Admin Center
 1. Sign in to [Office 365 portal](https://www.office.com/signin).
 2. In the Office 365 menu, select **Admin**.
-3. In the Admin center, select **Add a user**. 
+3. In the Admin center, select **Add a user**.
+
   ![Screenshot of the Office 365 Admin](media/office-add-user.png)
+
 4. Specify the following user details:
   - **First name**
   - **Last name**
@@ -50,7 +52,9 @@ You can manually add users to your Intune subscription via the [Office 365 porta
   - **Location**
   - **Contact information** (optional)
   - **Password** - Auto-generate or specify
+
      ![Screenshot of the Office 365 Admin](media/office-add-user-details.png)
+
 5. Assign an Intune license. Select **Product licenses** and choose the product license.
 6. Choose **Add** to create the new user.
 
