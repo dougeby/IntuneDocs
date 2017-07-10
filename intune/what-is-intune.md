@@ -99,7 +99,7 @@ Information to help you [plan and design](/intune-classic/plan-design/introducti
 ### On-premises access
 [Configure access to Exchange ActiveSync, and Exchange on-premises](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### Users
-[Learn about the users of devices you manage and sort resources into groups](user-management.md).
+[Learn about the users of devices you manage and sort resources into groups](users-add.md).
 ### Groups
 [Learn about how you can use Azure Active Directory groups with Intune](groups-get-started.md)
 ### Intune roles

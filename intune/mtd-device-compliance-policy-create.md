@@ -29,6 +29,9 @@ ms.custom: intune-azure
 
 # Create Mobile Threat Defense (MTD) device compliance policy with Intune
 
+> [!NOTE] 
+> This topic applies to all Mobile Threat Defense partners.
+
 Intune with MTD helps you detect threats and assess risk on mobile devices. You can create an Intune device compliance policy rule that assesses risk to determine if the device is compliant or not. You can then use a conditional access policy to block access to services based on device compliance.
 
 ## Before you begin
@@ -63,7 +66,7 @@ Prerequisites for device compliance policy with MTD:
 
     c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as non-compliant.
 
-    d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure Mobile Threat Defense for reporting purposes only.
+    d.  **High**: This is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
 
 8.  Click **OK** twice, then choose **Create**.
 
