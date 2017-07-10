@@ -3688,6 +3688,16 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/users-permissions-add.md",
+			"redirect_url": "/intune/users-add",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/user-management.md",
+			"redirect_url": "/intune/users-add",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/whats-new/whats-new-in-microsoft-intune.md",
 			"redirect_url": "/intune/whats-new",
 			"redirect_document_id": false
