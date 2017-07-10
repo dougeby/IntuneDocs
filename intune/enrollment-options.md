@@ -40,6 +40,7 @@ You can choose to restrict device enrollment by:
 - Device platform
 - Number of devices per user
 - Block personal devices
+
 Learn more about [enrollment restrictions](enrollment-restrictions-set.md).
 
 ## Enable Apple device enrollment
@@ -51,8 +52,8 @@ An MDM push certificate is required for iOS and macOS device enrollment. Learn m
 You can list international mobile equipment identifier (IMEI) numbers and serial numbers to identify corporate-owned devices. Learn more about [corporate identifiers](corporate-identifiers-add.md).
 
 ## Device enrollment manager
-You can make users device enrollment managers to let them enroll large numbers of mobile devices with a single user account. The device enrollment manager (DEM) account can enroll up to 1,000 devices. Learn more about [device enrollment managers](device-enrollment-manager-enroll.md).
+You can make users device enrollment managers.  DEM users can enroll large numbers of mobile devices with a single user account. The device enrollment manager (DEM) account can enroll up to 1,000 devices. Learn more about [device enrollment managers](device-enrollment-manager-enroll.md).
 
 ## Device categories
 
-You can use device categories to automatically add devices to groups based on categories that you define. This makes it easier for you to manage those devices. Learn more about [device categories](device-group-mapping.md).
+You can use device categories to automatically add devices to groups based on categories that you define. Organizing devices into groups makes it easier for you to manage those devices. Learn more about [device categories](device-group-mapping.md).
