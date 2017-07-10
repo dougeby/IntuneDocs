@@ -55,11 +55,11 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-<image here>
+![Check Point MTD block when malicious apps are detected](./media/checkpoint-MTD-2.PNG)
 
 **Access granted on remediation:**
 
-<image here>
+![Check Point MTD access granted](./media/checkpoint-MTD-3.PNG)
 
 ### Control access based on threat to network
 
@@ -67,11 +67,11 @@ Detect threats like **Man-in-the-middle** in network, and protect access to Wi
 
 **Block network access through Wi-Fi:**
 
-<image here>
+![Check Point MTD block network access through Wi-Fi](./media/checkpoint-MTD-4.PNG)
 
 **Access granted on remediation:**
 
-<image here>
+![Check Point MTD Wi-Fi access granted](./media/checkpoint-MTD-5.PNG)
 
 ### Control access to SharePoint Online based on threat to network
 
@@ -79,11 +79,11 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 **Block SharePoint Online when network threats are detected:**
 
-<image here>
+![Check Point MTD block SharePoint Online access](./media/checkpoint-MTD-6.PNG)
 
 **Access granted on remediation:**
 
-<image here> -->
+![Check Point MTD SharePoint Online access granted](./media/checkpoint-MTD-7.PNG)
 
 ## Supported platforms
 

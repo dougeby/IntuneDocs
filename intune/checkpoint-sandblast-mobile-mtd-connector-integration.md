@@ -38,7 +38,7 @@ Before starting the process of integrating Check Point SandBlast Mobile with Int
 
 -   Microsoft Intune subscription
 
--   Azure Active Directory admin credentials to perform the following operations:
+-   Azure Active Directory admin credentials to grant the following permissions:
 
     -   Sign in and read user profile
 
@@ -58,7 +58,9 @@ The Check Point SandBlast app authorization process consists of the following:
 
 -   CheckPoint SandBlast Mobile syncs with Azure AD Enrollment Group membership to populate its device’s database.
 
--   Allow the Check Point SandBlast Mobile app to sign in using Azure AD Single Sign On (SSO).
+-   Allow Check Point SandBlast admin console to use Azure AD Single Sign On (SSO).
+
+-   Allow the Check Point SandBlast Mobile app to sign in using Azure AD SSO.
 
 ## To set up Check Point SandBlast Mobile integration
 
@@ -75,7 +77,7 @@ The Check Point SandBlast app authorization process consists of the following:
 	![Check Point MTD Intune configuration](./media/checkpoint-MTD-1.PNG)
 
 	> [!IMPORTANT]
-	> You must enable all device platforms to proceed to the next step.
+	> You must add all device platforms to proceed to the next step.
 
 6.  Choose **Accept** to authorize the Check Point SandBlast Mobile app to communicate with Intune and Azure Active Directory.
 

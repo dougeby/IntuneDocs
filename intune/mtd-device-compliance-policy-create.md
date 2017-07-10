@@ -66,7 +66,7 @@ Prerequisites for device compliance policy with MTD:
 
     c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as non-compliant.
 
-    d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure Mobile Threat Defense for reporting purposes only.
+    d.  **High**: This is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
 
 8.  Click **OK** twice, then choose **Create**.
 
