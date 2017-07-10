@@ -49,7 +49,7 @@ If your device offers you the option to downgrade to Android 6.0+, then do so. T
 
 ## Specific manufacturer issues
 
-Some Android devices on version 7.0+ encrypt data in ways that are inconsistent with certain Android platform standards. These devices may appear encrypted out of the box. Intune recognizes that these devices' encryption methods put the device's information at risk. This risk primarily stems from malicious users who have physical access to the device.
+Some Android devices on version 7.0+ encrypt data in ways that are inconsistent with certain Android platform standards. These devices may appear encrypted even when they are brand new. Intune recognizes that these devices' encryption methods put the device's information at risk. This risk primarily stems from malicious users who have physical access to the device.
 
 > [!Note]
 > Microsoft works with manufacturers to address any issues we find while testing, or that users report to us. We update this article whenever new information is available. 
@@ -65,7 +65,7 @@ If you have one of the following devices, you may experience this issue if you h
 
 ### Known devices that currently cannot be updated to fix this issue
 
-You will not be able to resolve this issue for the following devices. You may need to use a different device to access company resources. 
+You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
 - [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
