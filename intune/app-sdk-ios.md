@@ -55,15 +55,25 @@ This guide covers the use of the following components of the Intune App SDK for 
 
 * **IntuneMAMResources.bundle**: A resource bundle that has resources that the SDK relies on.
 
-* **Headers**: Exposes the Intune App SDK APIs. If you use an API, you will need to include the header file that contains the API. The following header files include the API function calls required to enable the functionality of the Intune App SDK:
+* **Headers**: Exposes the Intune App SDK APIs. If you use an API, you will need to include the header file that contains the API. The following header files include the APIs, data types, and protocols which the Intune App SDK makes available to developers:
 
-	* IntuneMAMAsyncResult.h
+	* IntuneMAMAppConfig.h
+	* IntuneMAMAppConfigManager.h
 	* IntuneMAMDataProtectionInfo.h
 	* IntuneMAMDataProtectionManager.h
+	* IntuneMAMDefs.h
+	* IntuneMAMEnrollmentDelegate.h
+	* IntuneMAMEnrollmentManager.h
+	* IntuneMAMEnrollmentStatus.h
 	* IntuneMAMFileProtectionInfo.h
 	* IntuneMAMFileProtectionManager.h
-	* IntuneMAMPolicyDelegate.h
 	* IntuneMAMLogger.h
+	* IntuneMAMPolicy.h
+	* IntuneMAMPolicyDelegate.h
+	* IntuneMAMPolicyManager.h
+	* IntuneMAMVersionInfo.h
+	
+Developers can make the contents of all the above headers available by just importing IntuneMAM.h
 
 
 ## How the Intune App SDK works
@@ -150,11 +160,13 @@ To enable the Intune App SDK, follow these steps:
 	> [!NOTE]
 	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app.
 
-7. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
+8. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
-8. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+9. If the app defines Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
 
-9. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
+10. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+
+11. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
 
 
