@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,10 +32,6 @@ During the onboarding phase, you deploy Intune into your production environment.
 
 The following section provides an overview of the Intune implementation process that includes requirements and high-level tasks.
 
-<!--- Not sure this tip is much of a tip.
->[!TIP]
-> Check [Additional resources](planning-guide-resources.md) for more information about the Intune implementation process.--->
-
 ## Intune requirements
 
 The main Intune standalone requirements are:
@@ -53,7 +49,7 @@ The main Intune standalone requirements are:
 -   Intune Certificate Connector (for SCEP certificate deployment, if needed)
 
 >[!TIP]
-> See the list of [supported devices](/intune/supported-devices-browsers) for a complete list of devices you can manage with Intune.
+> See the list of [supported devices](supported-devices-browsers.md) for a complete list of devices you can manage with Intune.
 
 ## Intune implementation process
 
@@ -112,7 +108,7 @@ Intune supports two types of configuration policies, general and custom. Add the
 
 Intune supports email, Wi-Fi, and VPN profiles. Add these profiles as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [how to enable access to company resources with Intune](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+-   Learn more about [how to enable access to company resources with Intune](device-profiles.md).
 
 ### Task 10: Add and deploy apps
 
