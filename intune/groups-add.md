@@ -55,5 +55,5 @@ Use the following steps to create a new group.
 5. Choose **Create** to add the new group.
 
 ## See also
-[Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-[Intune classic groups in the Azure portal](groups-get-started.md)
+- [Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
+- [Intune classic groups in the Azure portal](groups-get-started.md)

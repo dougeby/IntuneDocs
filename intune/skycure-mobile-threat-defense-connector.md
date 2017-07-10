@@ -3,7 +3,7 @@
 
 title: Skycure connector with Intune
 titleSuffix: "Intune on Azure"
-description: Skycure connector integration with Intune.
+description: "Skycure connector integration with Intune."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -121,14 +121,10 @@ For more information, check [Skycure website](https://www.skycure.com/skycure-mi
 
 Here are the steps you need to complete to integrate Intune with Skycure:
 
-1.  [Configure Skycure to use Azure Active Directory Single Sign On (SSO)](skycure-azure-sso-configure.md)
+1.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Download Skycure iOS app configuration policy](skycure-ios-app-configuration-policy-download.md)
+2.  [Set up Skycure integration with Intune](skycure-mtd-connector-integration.md)
 
-3.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [Enable Skycure MTD connector in Intune](mtd-connector-enable.md)
 
-4.  [Set up Skycure integration with Intune](skycure-mtd-connector-integration.md)
-
-5.  [Enable Skycure Mobile Threat Defense in Intune](mtd-connector-enable.md)
-
-6.  [Create Skycure Mobile Threat Defense device compliance policy in Intune](mtd-device-compliance-policy-create.md)
+4.  [Create Skycure device compliance policy with Intune](mtd-device-compliance-policy-create.md)

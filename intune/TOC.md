@@ -62,9 +62,9 @@
 ## [Set up Intune](setup-steps.md)
 ### [Prerequisites](supported-devices-browsers.md)
 #### [Network bandwidth usage](network-bandwidth-use.md)
-###	[Sign into Intune](account-sign-up.md)
+###	[Sign in to Intune](account-sign-up.md)
 ###	[Configure domains](custom-domain-name-configure.md)
-###	[Add users](users-permissions-add.md)
+###	[Add users](users-add.md)
 ### [Add groups](groups-add.md)
 ###	[Assign licenses](licenses-assign.md)		
 ###	[Customize Company Portal](company-portal-customize.md)		
@@ -105,7 +105,6 @@
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Examine device inventory](device-inventory.md)
 
-## [Manage users](user-management.md)
 <!--### Add and delete users -->
 
 ## [Manage apps](app-management.md)
@@ -219,10 +218,13 @@
 
 #### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
+
 #### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
-##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
-##### [Download an iOS app configuration policy](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
+
+#### [Set up Check Point](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Check Point and Intune integration](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Enable MTD in Intune](mtd-connector-enable.md)
 #### [Create an MTD device compliance policy](mtd-device-compliance-policy-create.md)

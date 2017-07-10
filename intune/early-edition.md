@@ -47,6 +47,9 @@ This page is updated periodically. Check back for additional updates.
 
 ## What's coming to Intune on the Azure portal
 
+### Easier installation of Office 365 apps <!--- 1121362 --->
+A new **Office 365 ProPlus** app type will make it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you will be able to install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and will appear as one app in the list of apps in the Intune console.
+ 
 
 ### New device action to force devices to sync with Intune <!-- 711369 -->    
 We are adding a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
@@ -107,8 +110,12 @@ You will soon be able to set a conditional access policy that requires Mac devic
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. By December, all access to company resources, including email, will be prevented. 
 
-### Android Support Updates  <!-- ? -->
-Beginning in October, Microsoft Intune and the Intune Company Portal app will move to support Android 4.4 and higher. Users on unsupported versions of Android will not be able to access or enroll using the Company Portal app. Enrolled devices that are on the affected Android versions will continue to remain enrolled until December. If devices are still enrolled in December, they will be force-retired from Intune resulting in loss of access to company resources. If using Application Protection Policies without enrollment, applications will not receive updates, and the quality of the experience may diminish over time. To block access to company resources on applications on older operating systems, see our Conditional Access offerings.
+### End of support for Android 4.3 and lower <!---1171127--->
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+
+
+
+
 
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017 <!-- 1327781 -->  
 On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
@@ -132,6 +139,9 @@ End users will be able to customize the color mode for the Company Portal app fo
 
 ### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->    
 End users will be able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
+
+### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
+End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
 
 ### Users who are signed in to Exchange can automatically access the Company Portal website on Windows 10 devices <!--1323204-->  
 Windows 10 users that are already authenticated in Exchange, who receive the conditional access quarantine email and click the link in the email, will no longer need to re-authenticate in the browser before beginning Company Access Setup.
