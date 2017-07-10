@@ -77,41 +77,41 @@ The **Intune App Protection** blade in the new Azure portal enables admins to se
 
 ## To re-assign Intune device-based conditional access policies
 
-1. Go to [Conditional access in the new Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) and sign in with your credentials.
+1. Go to [Conditional access in the new Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), and sign in with your credentials.
 
 2. Choose **New policy**.
 
 3. Provide a name for the policy.
 
-4. Choose **Users and groups** under the **Assignments** section to target the new conditional access policy.
+4. Under the **Assignments section**, choose **Users and groups** to target the new conditional access policy.
 	
-	![User group UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-1.png)
+	![User group UI comparison between the Intune and Azure portals](./media/reassign-ca-1.png)
 
 	> [!IMPORTANT] 
-	> If you have all users selected in the Intune classic portal, include All users. The same applies for groups, if you have groups selected, you need to choose **select individual users and groups** to include those groups. Additionally, if you’ve have chosen the **Exempt groups** option in the Intune classic portal, you need to exclude those select groups in the new Azure portal.
+	> The selection you make for the Azure portal should correspond to the selection you made for the Intune portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
 
-5. After you chose your group, click **Select**, then **Done**.
+5. After you chose your group, click **Select**, and then click **Done**.
 
-6. Choose **Cloud apps** under the **Assignments** section.
+6. Under the **Assignments** section, choose **Cloud apps**.
 
 7. On the **Cloud apps** blade, choose **Select apps**.
 
-8. Choose the app you want to apply the new conditional access policy to, click **Select**.
+8. Choose the app you want to apply the new conditional access policy to, and click **Select**.
 
 9. Click **Done**.
 
-	![Cloud app UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-3.png)
+	![Cloud app UI comparison between the Intune and Azure portals](./media/reassign-ca-3.png)
 
 	> [!TIP] 
-	> If you have multiple apps with the same policy, you can consider consolidating them into a single policy in the new Azure portal.
+	> If you have multiple apps with the same policy, consider consolidating them into a single policy in the new Azure portal.
 
-10. Choose **Conditions** under the **Assignments** section.
+10. Under the **Assignments** section, choose **Conditions**.
 
-11. On the **Conditions** blade, choose **Device platforms**, then choose the applicable device platforms.
+11. On the **Conditions** blade, choose **Device platforms**, and then choose the applicable device platforms.
 
-12. Once you finished choosing the device platforms, click **Done** twice.
+12. When you are finished choosing the device platforms, click **Done** twice.
 
-	![Device platform UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-4.png)
+	![Device platform UI comparison between the Intune and Azure portals](./media/reassign-ca-4.png)
 
 	> [!TIP] 
 	> If you have chosen individual platforms in the Intune classic portal, choose the individual platforms in the new Azure portal.
@@ -119,27 +119,27 @@ The **Intune App Protection** blade in the new Azure portal enables admins to se
 	> [!NOTE] 
 	> You can specify the domain join or compliant options for Windows later.
 
-13. Choose **Conditions** under the **Assignments** section.
+13. Under the **Assignments** section, choose **Conditions**.
 
-14. On the **Conditions** blade, choose **Client apps**, then choose the applicable client app.
+14. On the **Conditions** blade, choose **Client apps**, and then choose the applicable client app.
 
-15. Once you finished choosing the client app, click **Done** twice.
+15. When you have finished choosing the client app, click **Done** twice.
 
-	![Client apps UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-6.png)
+	![Client apps UI comparison between the Intune and Azure portals](./media/reassign-ca-6.png)
 
-16. If you have chosen the browser settings in the Intune classic portal, select both **Browser** and **Mobile apps and desktop clients** in the new Azure portal. In case you have not chosen the browser settings in the Intune classic portal choose **Mobile apps and desktop clients** only. 
+16. If you have chosen the browser settings in the Intune classic portal, select both **Browser** and **Mobile apps and desktop clients** in the new Azure portal. In case you have not chosen the browser settings in the Intune classic portal, choose **Mobile apps and desktop clients** only. 
 
-17. Choose **Grant** under the **Access controls** section.
+17. Under the **Access controls** section, choose **Grant**.
 
-18. Choose **Require device to be marked as compliant** under **Grant Access Controls,** then click **Select**.
+18. Under **Grant Access Controls**, choose **Require device to be marked as compliant**, and then click **Select**.
 
-19. If you have a policy to require domain joined Windows devices, and you also allow Intune-enrolled and compliant Windows devices, choose **Require domain joined device** and **Require device to be marked as compliant** along with **Require one of the selected controls**.
+19. If you have a policy to require domain joined Windows devices, and you also allow Intune-enrolled and compliant Windows devices, choose **Require domain joined device** and **Require device to be marked as compliant**, along with **Require one of the selected controls**.
 
-20. If you do not allow Intune enrolled and compliant Windows devices, exempt the Windows policy from the current policy and then create a separate policy with **Device platform**s set to **Windows ,** include the other conditions as set per above, and choose **Require domain joined device** under **Grant Access Controls**.
+20. If you do not allow Intune enrolled and compliant Windows devices, exempt the Windows policy from the current policy. Then create a separate policy with **Device platforms** set to **Windows ,** include the other conditions as set per above, and choose **Require domain joined device** under **Grant Access Controls**.
 
-21. Turn on the **Enable policy** toggle on the **New** conditional access policy blade, then click **Create**.
+21. On the **New** conditional access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
 
-	![Enable ca policy UI comparison between Intune classic and the New Azure portal](./media/reassign-ca-11.png)
+	![Enable conditional access policy UI comparison between the Intune and Azure portals](./media/reassign-ca-11.png)
 
 ## To reassign Intune device-based conditional access policies for EAS clients
 
