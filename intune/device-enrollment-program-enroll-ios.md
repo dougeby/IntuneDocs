@@ -185,7 +185,7 @@ You can now distribute devices to users. Devices with user affinity require each
   - **Set Up as New device**
   - **Restore from iCloud Backup**
   - **Restore from iTunes Backup**
-2. Users are informed **<Your Organization> will automatically configure your device.** The following additional configuration details are also available:
+2. Users are informed **&lt;Your Organization&gt; will automatically configure your device.** The following additional configuration details are also available:
 
   **Configuration allows Microsoft to manage this device over the air.**
 
@@ -194,8 +194,8 @@ You can now distribute devices to users. Devices with user affinity require each
   **An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.**
 
   **Configuration is provided by:<br>
-  <you organization> iOS Team<br>
-  <address>**
+  &lt;you organization&gt; iOS Team<br>
+  &lt;address&gt;**
 
 3. Users are prompted for their work or school username and password.
 4. Users are prompted for their Apple ID. An Apple ID is required to install the Intune Company Portal app and other apps. After credentials are provided, the device installs a management profile that cannot be removed. The Intune management profile is displayed in **Settings** > **General** > **Device Management** on the device.
