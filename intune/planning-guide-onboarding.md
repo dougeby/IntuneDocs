@@ -143,6 +143,6 @@ Intune supports iOS, Mac OS, Android, Windows desktop and Windows mobile device 
 >[!TIP]
 > Check out this [Microsoft Virtual Academy Intune session module](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=PPWNoZxvD_1404778676) for more information on the Intune implementation process.
 
-## Next Section
+## Next steps
 
-The next section provides guidance on [testing and validating your Intune deployment](planning-guide-test-validation.md).
+See guidance on [testing and validating your Intune deployment](planning-guide-test-validation.md).

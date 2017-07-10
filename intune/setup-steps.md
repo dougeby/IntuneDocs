@@ -38,8 +38,6 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 >[!TIP]
 >If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
-## Checklist
-
 | Steps | Status  |
 | ------------- |-------------|
 | 1  | [Prerequisites](supported-devices-browsers.md) - Need-to-know info before you start|

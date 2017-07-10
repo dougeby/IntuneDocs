@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This topic tells system administrators how they can sign up for an Intune account.
+This topic tells system administrators how you can sign up for an Intune account.
 
 Before you sign up for Intune, determine whether you already have a Microsoft Online Services account, Enterprise Agreement, or equivalent volume licensing agreement. A Microsoft volume licensing agreement or other Microsoft cloud services subscription like Office 365 usually includes a work or school account.
 
@@ -43,7 +43,8 @@ If you already have a work or school account, **sign in** with that account and 
 ## How to sign up or sign in to Intune
 
 1.  Visit the [Intune Sign-up page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
-![Screenshot of the Microsoft Intune Trial account signup webpage](./media/account-sign-up-site.png)
+
+  ![Screenshot of the Microsoft Intune Trial account signup webpage](./media/account-sign-up-site.png)
 
 2.  On the Sign-up page, sign in or sign up to manage a new subscription of Intune.
 
