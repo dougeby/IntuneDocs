@@ -54,7 +54,7 @@ Now, choose one of the following options:
 	
 >[!NOTE]
 > Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. 
-> On Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
+> For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
 
 	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
 	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
