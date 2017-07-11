@@ -52,9 +52,7 @@ Now, choose one of the following options:
 	- **Discovered apps** - Displays a list of all apps that Intune found installed on the device.
 	![Discovered apps node](./media/detected-applications.png)
 	
->[!NOTE]
-> Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. 
-> For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
+
 
 	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
 	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
