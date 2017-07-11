@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -200,47 +200,48 @@ After you specify each app name and bundle ID, choose **Add** to append it to th
 
 This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
-|||
-|-|-|
-|App name|BundleID|
-|App Store|com.apple.AppStore|
-|Calculator|com.apple.calculator|
-|Calendar|com.apple.mobilecal|
-|Camera|com.apple.camera|
-|Clock|com.apple.mobiletimer|
-|Compass|com.apple.compass|
-|Contacts|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Find Friends|com.apple.mobileme.fmf1|
-|Find iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Health|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Maps|com.apple.Maps|
-|Messages|com.apple.MobileSMS|
-|Music|com.apple.Music|
-|News|com.apple.news|
-|Notes|com.apple.mobilenotes|
-|Numbers|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Photos|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Settings|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Tips|com.apple.tips|
-|Videos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Weather|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
+
+
+```
 
 
 ## Kiosk
