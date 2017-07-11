@@ -86,4 +86,4 @@ ms.custom: intune-azure
 
 ## Next steps
 
-Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure) to save, and assign the profile to users and devices.
+Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.
