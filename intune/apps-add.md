@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,7 @@ Previously, Intune contained a number of built-in apps that you could quickly as
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
 In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
 
-## Next Steps
+## Next steps
 
 Choose one of the following topics to find out how to add apps for each platform to Intune:
 
