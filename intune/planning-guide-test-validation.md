@@ -22,7 +22,7 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom: 
+#ms.custom:
 
 ---
 
@@ -50,7 +50,7 @@ If a design component does not exist in at least one test criteria that aligns t
 
 You may need design changes to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a change could be:
 
-<blockquote>You realize that you don’t meet the requirements of Network Device Enrollment Service (NDES), and you also learn that the VPN and Wi-Fi profiles can be configured with a root CA satisfying the same requirements without a NDES implementation.</blockquote>
+<blockquote>You realize that you don’t meet the requirements of Network Device Enrollment Service (NDES), and you also learn that the VPN and Wi-Fi profiles can be configured with a root CA satisfying the same requirements without an NDES implementation.</blockquote>
 
 You might experience challenges or issues that require technical guidance or specialized troubleshooting during the testing and validation process. We recommend that you seek assistance through the Microsoft support channels.
 
@@ -76,7 +76,7 @@ Perform IT admin validation testing to validate that administrative actions perf
 
 ### End user
 
-Perform end-user validation testing to validate that the end user experience is as expected and presented correctly in all user communications. It is important to validate that the end-user experience is correct. If you fail to validate, it can lead to lower adoption rates and higher volumes of helpdesk calls.
+Perform end-user validation testing to validate that the end-user experience is as expected and presented correctly in all user communications. It is important to validate that the end-user experience is correct. If you fail to validate, it can lead to lower adoption rates and higher volumes of helpdesk calls.
 
 ![Section 9 table 3](./media/section-9-image-3-table.PNG)
 
