@@ -66,12 +66,11 @@
 ###	[Configure domains](custom-domain-name-configure.md)
 ###	[Add users](users-add.md)
 ### [Add groups](groups-add.md)
-###	[Assign licenses](licenses-assign.md)		
-###	[Customize Company Portal](company-portal-customize.md)		
+###	[Assign licenses](licenses-assign.md)
 ### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
-### Setup options
+### [Enrollment options](enrollment-options.md)
 #### [Terms and conditions](terms-and-conditions-create.md)
 #### [Restrictions](enrollment-restrictions-set.md)
 #### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)

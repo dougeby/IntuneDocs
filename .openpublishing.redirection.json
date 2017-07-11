@@ -3711,6 +3711,11 @@
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/company-portal-customize.md",
+			"redirect_url": "/intune/company-portal-app",
+			"redirect_document_id": false
 		}
 	]
 }
