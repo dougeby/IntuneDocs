@@ -34,7 +34,7 @@ As an Intune admin, you can create and import a comma-separated value (.csv) fil
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-[Learn how to find an Apple device serial number](https://support.apple.com/HT204308).
+[Learn how to find an Apple device serial number](https://support.apple.com/HT204308).<br>
 [Learn how to find your Android device serial number](https://support.google.com/store/answer/3333000).
 
 ## Add corporate identifiers
@@ -55,7 +55,7 @@ This .csv file when viewed in a text editor appears as:
 ```
 
 > [!IMPORTANT]
-> Some Android devices have multiple IMEI numbers. Intune only reads one IMEI number per enrolled device. If you import an IMEI number but it is not the IMEI inventoried by Intune, the device is classified as a personal device instead of a company-owned device. If you import multiple IMEI numbers for a device, uninventoried numbers display **Unknown** for enrollment status.
+> Some Android devices have multiple IMEI numbers. Intune only reads one IMEI number per enrolled device. If you import an IMEI number but it is not the IMEI inventoried by Intune, the device is classified as a personal device instead of a company-owned device. If you import multiple IMEI numbers for a device, uninventoried numbers display **Unknown** for enrollment status.<br>
 >Also note:
 >Android Serial numbers are not guaranteed to be unique or present. Check with your device supplier to understand if serial number is a reliable device ID.
 >Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device. Verify the type of serial number reported by the device manufacturer.

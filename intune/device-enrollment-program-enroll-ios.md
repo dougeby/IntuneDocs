@@ -39,11 +39,11 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 >DEP enrollment can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 **Steps to enable enrollment programs from Apple**
-1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-certificate)
-2. [Create an enrollment profile](#create-anapple-enrollment-profile)
-3. [Synchronize DEP-managed devices](#sync-dep-managed-devices)
-4. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
-5. [Distribute devices to users](#distribute-devices-to-users)
+1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-token)
+2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
+3. [Synchronize DEP-managed devices](#sync-managed-device)
+4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
+5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 
 ## Get the Apple DEP token
 
@@ -207,7 +207,7 @@ You can now distribute devices to users. Devices with user affinity require each
   - **Restore from iTunes Backup**
 2. Users are informed **&lt;Your Organization&gt; will automatically configure your device.** The following additional configuration details are also available:
 
-  **Configuration allows Microsoft to manage this device over the air.**
+  **Configuration allows &lt;Your Organization&gt; to manage this device over the air.**
 
   **An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely.**
 
