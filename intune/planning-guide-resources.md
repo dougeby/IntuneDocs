@@ -22,13 +22,11 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+#ms.custom: 
 
 ---
 
 # Additional resources for planning your Intune deployment
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 ## Templates
 
@@ -51,7 +49,7 @@ Here's a list of table templates for each section.
 | | Conditional access policy|-|
 
 
-## Links
+## Further reading
 
 Check out these resources for additional information that may be helpful during the Intune deployment planning, design, and implementation process.
 
