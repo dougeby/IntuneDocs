@@ -68,7 +68,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 -   Do you need to disable device features, or restrict certain device behaviors? You can control a variety of platform-specific settings with device configuration profiles, for example:
       - Disable camera
-      - Lock to single-app mode.<br/><br/>
+      - Lock to single-app mode<br/>
 
 -   What kinds of authentication must you support? If you need certificate-based authentication, what kinds of certificates must be provisioned?
   - Intune can provision certificates with resource access profiles for enrolled devices.
@@ -77,7 +77,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 -   Do you need to support Virtual Private Network (VPN) at the device or app level?
 
     -   Intune can provision VPN configurations for third-party VPN providers.
-<br></br>
+<br/>
 -   Can temporary exceptions be made for certain requirements to avoid downtime? Or must devices with access always comply with all security requirements?
 
 ## Next steps
