@@ -42,7 +42,7 @@
 		},
         {
 			"source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
-			"redirect_url": "/intune/device-compliance.md",
+			"redirect_url": "/intune/device-compliance",
 			"redirect_document_id": false
 		},
 		{
@@ -1334,7 +1334,7 @@
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/what-is-device-compliance.md",
-			"redirect_url": "/intune/device-compliance.md",
+			"redirect_url": "/intune/device-compliance",
 			"redirect_document_id": true
 		},
 		{
