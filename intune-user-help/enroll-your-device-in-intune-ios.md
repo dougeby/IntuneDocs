@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,10 +40,10 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 **Before you start:**
 
-- Make sure that you finish enrolling after you start the steps. Pausing for more than a few minutes usually stops the process, and will require you to restart.
-- If your enrollment fails for any reason, you'll need to return to the Company Portal app to try again.
-- Make sure that your Wi-Fi is working. Otherwise, enrollment will fail.
-- If you blocked Safari on your device, unblock it. You must use Safari to enroll.
+- Make sure that you finish enrolling after you start the steps. Pausing for more than a few minutes usually stops the process, and  requires you to restart.
+- If your enrollment fails for any reason, you need to return to the Company Portal app to try again.
+- Make sure that your Wi-Fi is working. Otherwise, enrollment fails.
+- If you blocked Safari on your device, unblock it. Safari is used as part the device enrollment process. 
 
 
 **To enroll your iOS device:**
@@ -58,8 +58,8 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 	![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
+  > [!NOTE]
+  > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
 4. Review a list of what your IT admin can and can’t see on your enrolled device, and then tap **Continue**.
 
@@ -95,7 +95,7 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 	![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. On the **Company Access Setup** screen, tap **Continue**. If your IT admin set up additional security requirements, like the need to set a password, follow the on-screen instructions until you meet all the compliance requirements and are returned to the Company Access Setup screen, and then tap **Continue**.
+12. On the **Company Access Setup** screen, tap **Continue**. This screen shows you what other requirements you may have to do to make your device compliant, like setting a password. Follow the on-screen instructions until you meet all the compliance requirements. Once you finish, you are returned to the Company Access Setup screen. Tap **Continue**.
 
 	![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -106,6 +106,6 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
 
 > [!Note]
-> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-ios.md).
+> You have a few more steps to complete before your device is fully enrolled. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
