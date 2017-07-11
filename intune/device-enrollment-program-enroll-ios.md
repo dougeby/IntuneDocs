@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/30/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,39 +58,49 @@ Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 1. In the Intune portal, choose **Device enrollment**, and then choose **Apple enrollment**, choose **Enrollment Program Token**.
-![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
+
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
+
 2. Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
-![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
+
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
 
 **Step 2. Create and download an Apple DEP token.**<br>
-Select **Create a token via Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+1. Select **Create a token via Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+
   ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-create.png)
 
   ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-sign.png)
-   1.  In Apple's [Deployment Programs portal](https://deploy.apple.com), select **Get Started** for **Device Enrollment Program**.
+2.  In Apple's [Deployment Programs portal](https://deploy.apple.com), select **Get Started** for **Device Enrollment Program**.
+
    ![Screenshot of Enrollment Program clicking Get Started for the Device Enrollment Program.](./media/enrollment-program-token-started.png)
-   2. On the **Manage Servers** page, choose **Add MDM Server**.
-   3. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
+
+3. On the **Manage Servers** page, choose **Add MDM Server**.
+4. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
 
    ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
-   4.  The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+
+5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+
    ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-choose-file.png)
-   4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
+6.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
    ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-your-token.png)
-   5. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
-   6. Under **Choose Devices By**, specify how devices are identified:
+7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
+8. Under **Choose Devices By**, specify how devices are identified:
     - **Serial Number**
     - **Order Number**
     - **Upload CSV File**.
 
    ![Screenshot of specifying choose devices by serial number, setting choose action as Assign to server and selecting the server name.](./media/enrollment-program-token-specify-serial.png)
 
-   7. For **Choose Action**, select **Assign to Server**, select the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
+9. For **Choose Action**, select **Assign to Server**, select the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
 
    In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
 **Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In the Intune portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token to avoid needing to re-enroll all your devices.
+
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
+
 **Step 4. Browse to your enrollment program token to upload.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
 
@@ -100,9 +110,12 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 1. In the Intune portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
 2. Under **Enrollment Program for Apple**, select **Enrollment Program Profiles**, and then select **Create** on the **Enrollment Program Profiles** blade.
-![Screenshot of choosing the create link to create a new enrollment program profile.](./media/enrollment-program-profile-create.png)
+
+  ![Screenshot of choosing the create link to create a new enrollment program profile.](./media/enrollment-program-profile-create.png)
+
 3. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details.
-![Screenshot of specifying the name description, and then choosing Enroll with user affinity for a new enrollment program profile.](./media/enrollment-program-profile-name.png)
+
+  ![Screenshot of specifying the name description, and then choosing Enroll with user affinity for a new enrollment program profile.](./media/enrollment-program-profile-name.png)
 For **User Affinity**, choose whether devices with this profile enroll with or without user affinity.
 
  - **Enroll with user affinity** - User are affiliated with devices during setup and can then be permitted to access company data and email. Choose **user affinity** for devices that belong to users and that need to use the company portal for services like installing apps.
@@ -116,7 +129,8 @@ For **User Affinity**, choose whether devices with this profile enroll with or w
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
 4. Select **Device Management Settings** to configure the following profile settings:
-![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
+
+  ![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
 	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
@@ -128,7 +142,8 @@ For **User Affinity**, choose whether devices with this profile enroll with or w
   Choose **Save**.
 
 5. Select **Setup Assistant Settings** to configure the following profile settings:
-![Screenshot of choosing the configure settings with available settings for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
+
+  ![Screenshot of choosing the configure settings with available settings for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
 	- **Department Phone** - Appears when the user clicks the **Need Help** button during activation.
@@ -152,10 +167,13 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
 
 1. In the Intune portal, choose **Device enrollment** &gt;  **Apple Enrollment** &gt; **Enrollment Program Devices**.
 2. Under **Enrollment Program Devices**, select **Sync**. The **Sync** blade appears.
-![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
+
+  ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
 3. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
-![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
-    To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+
+  ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
+
+  To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
      -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
      -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
 4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
@@ -168,7 +186,9 @@ You must assign an enrollment program profile to devices before they can enroll.
 
 1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program Profiles**.
 2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Assign devices**.
-![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-assign.png)
+
+ ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-assign.png)
+
 3. Select **Assign** and then select the devices you want to assign this profile. You can filter to view available devices:
   - **unassigned**
   - **any**
@@ -194,8 +214,8 @@ You can now distribute devices to users. Devices with user affinity require each
   **An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.**
 
   **Configuration is provided by:<br>
-  &lt;you organization&gt; iOS Team<br>
-  &lt;address&gt;**
+  &lt;Your organization&gt; iOS Team<br>
+  &lt;Address&gt;**
 
 3. Users are prompted for their work or school username and password.
 4. Users are prompted for their Apple ID. An Apple ID is required to install the Intune Company Portal app and other apps. After credentials are provided, the device installs a management profile that cannot be removed. The Intune management profile is displayed in **Settings** > **General** > **Device Management** on the device.
