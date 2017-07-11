@@ -108,6 +108,6 @@ Here’s an updated example of the above Intune rollout plan to include enrollme
 | Self-service |  |  |  | HR, Finance |
 | White glove |  |  |  | Executives |
 
-## Next section
+## Next steps
 
 The next section provides guidance on [developing an Intune rollout communication plan](planning-guide-communication-plan.md).
