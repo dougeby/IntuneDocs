@@ -106,9 +106,7 @@ Intune integrated with partners like Cisco ISE, Aruba Clear Pass, and Citrix Net
 
 Users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources based on whether the device is managed and compliant with Intune device compliance policies.
 
-![CA with Network access controls](./media/ca-intune-common-ways-2.png)
-
--   Learn more about [conditional access based on network access controls](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-networks).
+-   Learn more about the [NAC integration with Intune](network-access-control-integrate.md).
 
 ### Conditional access based on device risk
 

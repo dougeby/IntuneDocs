@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use 
+title: Intune network bandwidth use
 description: intune network bandwidth usage
 keywords:
 author: nathbarn
@@ -98,7 +98,7 @@ Intune uses no on-premises infrastructure such as servers running Intune softwar
 To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune. To manage computers that are behind a proxy server, be aware that:
 
 -   The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
--   Intune supports unauthenticated proxy servers
+-   Intune requires unauthenticated proxy server access to manage.microsoft.com for some operations such as downloading software and updates
 
 You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.
 
@@ -143,3 +143,17 @@ The following tables list the ports and services that the Intune client accesses
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|

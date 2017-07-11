@@ -107,6 +107,9 @@ In this task you will:
 
 2.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template or copy an existing template and then edit an existing template (like the User template), for use with NDES.
 
+	>[!NOTE]
+	> The NDES certificate template must be based off a v2 Certificate Template (with Windows 2003 compatibility).
+
     The template must have the following configurations:
 
     -   Specify a friendly **Template display name** for the template.

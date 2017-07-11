@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 06/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,9 +48,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 
 By default, Intune already allows enrollment of macOS devices.
 
-To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 ## Tell your users how to enroll their devices to access company resources
 
