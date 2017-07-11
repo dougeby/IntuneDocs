@@ -113,7 +113,7 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 
 In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
 
- -  Windows Defender
+-  Windows Defender
 -  Cellular and connectivity
 -  Locked screen experience
 -  Privacy
