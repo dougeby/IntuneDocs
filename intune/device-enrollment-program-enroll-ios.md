@@ -50,7 +50,7 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 > [!NOTE]
-> If you deleted an Apple DEP token from the Intune classic console and then migrated to Azure, the DEP token might be restored. You can delete the DEP token again from the Azure portal.
+> Intune might restore a deleted Apple DEP token if you delete the token from the Intune classic console before migrating to Azure. You can delete the DEP token again from the Azure portal.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
