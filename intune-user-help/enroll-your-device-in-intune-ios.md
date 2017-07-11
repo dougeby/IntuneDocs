@@ -58,8 +58,8 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 	![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
+  > [!NOTE]
+  > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
 4. Review a list of what your IT admin can and can’t see on your enrolled device, and then tap **Continue**.
 
