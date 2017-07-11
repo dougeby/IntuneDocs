@@ -32,17 +32,17 @@
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/app-based-conditional-access-intune-sharepoint-online-create.md",
-			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
-			"redirect_document_id": false
+			"redirect_url": "/intune/app-based-conditional-access-intune-create",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/app-based-conditional-access-intune-exchange-online-create.md",
-			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
+			"redirect_url": "/intune/app-based-conditional-access-intune-create",
 			"redirect_document_id": false
 		},
         {
 			"source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
-			"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
+			"redirect_url": "/intune/device-compliance",
 			"redirect_document_id": false
 		},
 		{
@@ -1334,8 +1334,8 @@
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/what-is-device-compliance.md",
-			"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
-			"redirect_document_id": false
+			"redirect_url": "/intune/device-compliance",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune/access-control/role-based-access-control.md",
