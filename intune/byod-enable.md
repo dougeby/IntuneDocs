@@ -98,7 +98,7 @@ Intune protects company data through many technology layers. At the identity lay
 
 ### Enforce conditional access to company resources
 
-You can combine compliance policies with [conditional access policies](device-compliance.md) to check if devices meet the basic security requirements that your BYOD policy requires. If a device doesn't meet the requirements, rules are enforced and access is denied until the device meets policy requirements. This ensures that only managed and compliant devices can access company data from services like Exchange ([Exchange On-premises](exchange-connector-install.md) or [Exchange Online](app-based-conditional-access-intune-exchange-online-create.md), SharePoint Online, Skype for Business Online, and others.
+You can combine compliance policies with [conditional access policies](device-compliance.md) to check if devices meet the basic security requirements that your BYOD policy requires. If a device doesn't meet the requirements, rules are enforced and access is denied until the device meets policy requirements. This ensures that only managed and compliant devices can access company data from services like Exchange ([Exchange On-premises](exchange-connector-install.md) or [Exchange Online](conditional-access-exchange-create.md), SharePoint Online, Skype for Business Online, and others.
 <!---first link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)
 third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune). check with Andre--->
 
