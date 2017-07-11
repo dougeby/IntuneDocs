@@ -55,7 +55,6 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 -   What terms of use do you need?
 
     -   Make sure to involve your legal department early in this.
-
     -   What localization is required?
 
 -   Are the users familiar with technology and IT in general?
@@ -77,7 +76,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 -   Do you need to support Virtual Private Network (VPN) at the device or app level?
 
     -   Intune can provision VPN configurations for third-party VPN providers.
-<br/>
+<br/><br/>
 -   Can temporary exceptions be made for certain requirements to avoid downtime? Or must devices with access always comply with all security requirements?
 
 ## Next steps
