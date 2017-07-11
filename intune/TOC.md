@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # [Introduction](introduction-intune.md)
 ## [What is the Azure portal?](what-is-intune.md)
 ## [What is Intune for Education?](introduction-intune-education.md)
@@ -567,4 +566,3 @@
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 # [Glossary](intune-glossary.md)
->>>>>>> 1d6fdafef8c7e92c2e99291e1ace259bf018c7fa
