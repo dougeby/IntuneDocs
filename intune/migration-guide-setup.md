@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune basic setup
-description: The purpose of this article is to provide the necessary steps to set up Microsoft Intune.
+description: This article provides the necessary steps to set up Microsoft Intune.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -22,46 +22,42 @@ ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+#ms.custom:
 
 ---
 
 # Basic setup
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-After you assess your environment, it’s time to setup Intune.
+After you assess your environment, it’s time to set up Intune.
 
 ## External dependencies for an Intune deployment
 
 ### Identity
 
-Intune requires Azure Active Directory (AAD) as the identity and user grouping provider.
+Intune requires Azure Active Directory (AAD) as the identity and user grouping provider. Learn more about:
 
--   Learn more about [identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+-  [Identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   Learn more about [directory synchronization requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+-   [Directory synchronization requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   Learn more about [multi-factor authentication requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+-   [Multi-factor authentication (MFA) requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   Learn more about [planning your user and device groups](/intune/users-add).
+-   [Planning your user and device groups](users-add.md)
 
--   Learn [how to create user and device groups](/intune/groups-get-started).
+-   [How to create user and device groups](groups-get-started.md)
 
-If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
+If your organization is already using Office 365, Intune must use the same Azure Active Directory environment.
 
 ### PKI (optional)
 
-If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place](/intune/certificates-configure), ready to create and deploy certificate profiles.
+If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles. Learn more about configuring certificates in Intune:
 
-More information about configuring certificates in Intune is below.
-
--   [How to configure the certificate infrastructure for SCEP](/intune/certificates-scep-configure).
+-   [How to configure the certificate infrastructure for SCEP](/intune/certificates-scep-configure)
 
 -   [How to configure the certificate infrastructure for PFX](/intune/certficates-pfx-configure).
 
 
-## Task list for an Intune Setup
+## Task list for an Intune setup
 
 ### Task 1: Intune subscription
 
@@ -81,15 +77,15 @@ Before you can migrate to Intune, you first need an Intune subscription.
 
 ### Task 3: Set your MDM authority to Intune
 
-Intune can be managed through the Azure portal or the Configuration Manager Current Branch console. Unless you need to integrate Intune with a Configuration Manager Current Branch deployment, it is recommended to manage Intune from the [Azure Portal](https://portal.azure.com).
+Intune can be managed through the Azure portal or the Configuration Manager Current Branch console. Unless you need to integrate Intune with a Configuration Manager Current Branch deployment, we receommend that you manage Intune from the [Azure Portal](https://portal.azure.com).
 
 Set your MDM authority to **Intune** to enable the Intune Azure Portal. Using a different MDM authority allows Intune to transfer MDM management to alternate Microsoft management consoles. These cases are uncommon.
 
 > [!IMPORTANT]
 > If you are transferring your mobile device management to Intune for the first time, you should set the MDM authority to Intune.
 
--   Learn [how to set the mobile management authority](/intune/mdm-authority-set).
+Learn [how to set the mobile management authority](mdm-authority-set.md).
 
 ## Next step
 
-[Configure device and app management policies](migration-guide-configure-policies.md)
+Configure [device and app management policies](migration-guide-configure-policies.md).
