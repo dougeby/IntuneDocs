@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -77,7 +77,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 
 ## Run the App Wrapping Tool
 
-1.  On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window in administrator mode.
+1.  On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window.
 
 2.  From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:
 
