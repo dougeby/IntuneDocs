@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/25/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,9 +51,14 @@ Now, choose one of the following options:
 	![Managed device hardware inventory](./media/hardware-inventory.png)
 	- **Discovered apps** - Displays a list of all apps that Intune found installed on the device.
 	![Discovered apps node](./media/detected-applications.png)
+	
+
+
 	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
 	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
 - **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and their current state.
 - **Setup** > **TeamViewer Connector** - Let's you configure remote administration on devices using the TeamViewer software. For details, see [Provide remote assistance for Intune managed Android devices](/intune/device-profile-android-teamviewer).
 
-
+>[!NOTE]
+> Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. 
+> For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
