@@ -75,7 +75,7 @@ To find out more about XML property lists, see [Understanding XML Property Lists
 
 The policy will be created and appears on the policies list blade.
 
-Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
+
 
 >[!Note]
 >You can use the [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) to prepare line-of business apps to be managed by Intune app protection policies, and app configuration policies, whether the device is enrolled with Intune or not. For example, you can use an app configuration policy to configure allowed and blocked URLs for the [Intune Managed Browser](app-configuration-managed-browser.md). Once an app is compatible with these policies, you can configure them using a policy.
@@ -143,3 +143,7 @@ When you create an app configuration file, you can specify one or more of the fo
 </dict>
 
 ```
+
+## Next steps
+
+Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
