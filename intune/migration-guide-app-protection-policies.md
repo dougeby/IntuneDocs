@@ -29,7 +29,12 @@ ms.suite: ems
 # Configure app protection policies (optional)
 
 
-App protection policies allow you to encrypt apps, define a PIN when the app is accessed, block apps from running on jail-broken or rooted devices, and many other protections. If the user's phone is lost or stolen, you can selectively wipe the corporate data remotely while leaving the personal data intact.
+App protection policies allow you to:
+* Encrypt apps
+* Define a PIN when the app is accessed
+* Block apps from running on jail-broken or rooted devices, and many other protections.
+
+If the user's phone is lost or stolen, you can selectively wipe the corporate data remotely while leaving the personal data intact.
 
 App protection policies apply security at the app level and do not require device enrollment. You can use them with devices enrolled into Intune or not. Additionally, you can apply them to devices enrolled into a third-party MDM provider.
 
@@ -39,7 +44,7 @@ You can also extend the mobile app protection policies to your line-of-business 
 
 ## How do app protection policies help during migration?
 
-In a migration, you must devices from the old MDM provider and enroll them into Intune. You should plan for this and encourage your end-users to leave the old MDM provider and immediately enroll into Intune. However, during the migration there may be users who delay completing the enrollment process and whose devices are not managed by either MDM provider.
+In a migration, you must remove devices from the old MDM provider and enroll them into Intune. You should plan for this and encourage your end-users to leave the old MDM provider and immediately enroll into Intune. However, during the migration there may be users who delay completing the enrollment process and whose devices are not managed by either MDM provider.
 
 This period can leave your organization more vulnerable to device theft and corporate data loss if corporate resource access is still allowed. It may also lead to lower user productivity if corporate resource access is blocked.
 
