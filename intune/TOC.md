@@ -38,9 +38,9 @@
 ### [Implement](planning-guide-onboarding.md)
 ### [Test and validate](planning-guide-test-validation.md)
 ### [Additional resources](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Scenario implementation guides
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -230,22 +230,11 @@
 
 ### [Network access control](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection		
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
