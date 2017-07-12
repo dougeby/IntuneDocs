@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,61 +55,38 @@ You do not assign these policies directly to users and devices. Instead, you ass
 > For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).
 
 ## Create an app configuration policy
-
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Mobile apps**.
-1.  In the **Mobile apps** workload, choose **Manage** > **App Configuration Policies**.
-
-2.  In the list of policies blade, choose **Add**.
-
-3.  On the **Add Configuration Policy** blade, supply a name and an optional description for the app configuration policy.
-4.  Choose **Associated App**, then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
-5.  On the **Add Configuration Policy** blade, choose **Configuration settings** and then, on the Configuration Settings blade, choose how you want to specify the XML values that make up the configuration profile from:
-	- **Enter XML data** - enter or paste an  XML property list that contains the app configuration settings that you want. The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
-	Intune checks that the XML you entered is in a valid format. It does not check that the XML property list will work with the app that it is associated with.
-	To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
-	- **Use configuration designer** - Lets you specify XML key and value pairs directly in the portal.
-8. When you're done, go back to the **Add Configuration Policy** blade, and hit **Create**.
+1.	Sign into the Azure portal.
+2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
+3.	On the **Intune** blade, choose **Mobile apps**.
+4.	In the **Mobile apps** workload, choose **Manage** > **App Configuration Policies**.
+5.	In the list of policies blade, choose **Add**.
+6.	On the **Add Configuration Policy** blade, supply a **Name** and an optional **Description** for the app configuration policy.
+7.	For **Device enrollment type**, choose one of:
+	- **Enrolled with Intune** - For apps that have integrated the Intune App SDK and are managed by Intune.
+	- **Not enrolled with Intune** - For apps that have integrated the Intune App SDK and are not managed by Intune, or are managed by another solution.
+8.	For **Platform**, choose **iOS** (for devices enrolled with Intune only)
+9.	Choose **Associated App**, then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
+10.	On the **Add Configuration Policy** blade, choose **Configuration settings** and then, on the **Configuration Settings** blade, choose how you want to specify the XML values that make up the configuration profile from:
+	- **Enter XML data** (for devices enrolled with Intune only) - enter or paste an XML property list that contains the app configuration settings that you want. The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
+Intune checks that the XML you entered is in a valid format. It does not check that the XML property list will work with the app that it is associated with.
+To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+	- **Use configuration designer** (whether or not the device is enrolled with Intune) - Lets you specify XML key and value pairs directly in the portal.
+11.	When you're done, go back to the **Add Configuration Policy** blade, and hit **Create**.
 
 The policy will be created and appears on the policies list blade.
 
 Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
 
+>[!Note]
+>You can use the [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) to prepare line-of business apps to be managed by Intune app protection policies, and app configuration policies, whether the device is enrolled with Intune or not. For example, you can use an app configuration policy to configure allowed and blocked URLs for the [Intune Managed Browser](app-configuration-managed-browser.md). Once an app is compatible with these policies, you can configure them using a policy.
+
+
 When the assigned app is run on a device, it will run with the settings that you configured in the app configuration policy.
+See the documentation for the app you are configuring for information on what will happen if one or more app configuration policies conflict.
 
-> [!TIP]
-> If one or more app configuration policies conflict, neither policy is enforced.
+>[!Tip]
+>Additionally, you can use Graph API to accomplish these tasks. For details, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## Create a MAM targeted configuration policy
-MAM targeted configuration allows an app to receive configuration data through the Intune App SDK. The format and variants of this data must be defined and communicated to Intune customers by the application owner/developer. Intune administrators can target and deploy configuration data via the Intune Azure console. MAM targeted configuration data can be provided via the MAM Service to MAM-WE enabled applications. For example, [Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser) has allowed/blocked url list. The application configuration data is pushed through our MAM Service directly to the app instead of through the MDM channel. [MDM app configuration policies](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy) are the native solution through MDM. The key difference with MAM targeted configuration is that the device that the app runs on does not need to be MDM-enrolled. MAM targeted configuration is available on iOS and Android. For iOS, the app must have incorporated Intune APP SDK for iOS (v 7.0.1) and be participating in app config settings. The steps for creating a MAM targeted configuration policy are as follows: 
-
-1. Sign into the **Azure portal**.
-
-2. Choose **Intune > Mobile apps - App configuration policies**.
-
-3. On the **App configuration policies** blade, choose **Add**.
-
-4. Enter a **Name**, and optional **Description** for the app configuration settings and choose **Not enrolled with Intune**.
-
-5. Choose **Select required apps** and then, on the **Targeted** apps blade, choose apps for the platforms you intend. <br>
-**Note:** For LOB apps, select **More apps**. Enter the package ID for your application.
-
-6. Choose **OK** to return to the **Add app configuration** blade.
-
-7. Choose **Define configuration**. On the **Configuration** blade, you define key and value pairs to supply configurations.
-
-8. When you are done, choose **OK**.
-
-9. On the **Add app configuration blade**, choose **Create**.
-
-The new configuration is created, and displayed on the App configuration blade.
-
-Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
-
-When the assigned app (integrated with the Intune APP SDK) is run on a device, it will run with the settings that you configured in the MAM targeted configuration policy. The assigned app needs to have integrated the supported version of the Intune APP SDK. For more information about the app development requirements to use MAM Targeted Configuration policies, see [iOS Intune APP SDK Integration Guide](https://docs.microsoft.com/intune/app-sdk-ios).
-
-For more information about the capabilities our Graph API with respect to the MAM targeted config values, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
 ## Information about the XML file format
 
