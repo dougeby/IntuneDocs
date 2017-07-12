@@ -34,12 +34,14 @@ The communication plan is a key element in an Intune migration. You can follow t
 
 We recommend the following email communication plan. We've provided templates for you to adapt for your communication plan:
 
--   **Email \#1:** Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune.
+-   **Email \#1:** Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune.<br/>
+
 
     -   [Download email \#1 template](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **Email \#2:** Announce that services are now ready for access through Intune. Tell users to enroll now. Remind users of benefits and strategic reasons for migration.
+-   **Email \#2:** Announce that services are now ready for access through Intune. Tell users to enroll now. Remind users of benefits and strategic reasons for migration.<br/><br/>
+
 
     -   [Download email \#2 template](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
