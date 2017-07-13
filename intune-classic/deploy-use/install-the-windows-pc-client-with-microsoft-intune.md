@@ -2,12 +2,12 @@
 
 # required metadata
 
-title: Install the PC client software 
+title: Install the PC client software
 description: Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 keywords:
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,8 @@ Windows PCs can be enrolled by installing the Intune client software. The Intune
 The Intune client software contains the minimum software necessary to enroll the PC in Intune management. After a PC has been enrolled, the Intune client software then downloads the full client software required for PC management.
 
 This series of downloads reduces the impact on the network's bandwidth and minimizes the time required to initially enroll the PC in Intune. It also ensures that the client has the most recent software available after the second download has finished.
+
+One Intune user license allows to install the Intune client software on up to five PCs.
 
 ## Download the Intune client software
 
