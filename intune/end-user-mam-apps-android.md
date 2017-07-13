@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Android apps with app protection policies 
+title: Android apps with app protection policies
 description: This topic describes what to expect when your app is managed by app protection policies.
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article

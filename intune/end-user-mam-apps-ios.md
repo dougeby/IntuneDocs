@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: iOS apps with app protection policies 
+title: iOS apps with app protection policies
 description: This topic describes what to expect when your iOS app is managed by app protection policies.
 keywords:
-author: andredm7
-ms.author: andredm
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -34,7 +34,7 @@ ms.custom: intune-classic
 
 ##  Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection polices can be applied to the app. 
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection polices can be applied to the app.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
