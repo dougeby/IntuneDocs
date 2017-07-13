@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/01/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ ms.custom: intune-azure
 ## Step 2 - Configure the app package file
 
 1. On the **Add app** blade, choose **App package** file.
-2. On the **App package** file blade, choose the browse button, and select a Windows installation file with the extension **.msi** (other installation file types are not supported).
+2. On the **App package** file blade, choose the browse button, and select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.
 3. When you are finished, choose **OK**.
 
 
@@ -69,5 +69,7 @@ ms.custom: intune-azure
 
 1. On the **Add app** blade, verify the information you configured is correct.
 2. Choose **Add**, to upload the app to Intune.
+
+## Next steps
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
