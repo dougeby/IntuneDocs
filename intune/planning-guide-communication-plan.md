@@ -87,6 +87,6 @@ For example, the initial Intune project kickoff communications can target the en
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to develop your communication plan.
 
-## Next section
+## Next step
 
 The next section provides guidance on [developing a support plan](planning-guide-support-plan.md).
