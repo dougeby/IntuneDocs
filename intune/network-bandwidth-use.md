@@ -36,7 +36,7 @@ This guidance helps Intune admins understand the network requirements for the In
 This table lists the approximate size and frequency of common content that travels across the network for each client.
 
 > [!NOTE]
-> To ensure that computers and mobile devices receive the necessary updates and content from the Intune service, they must be periodically connected to the Internet. The time taken to receive updates or content will vary, but as a guideline, they should remain continuously connected to the Internet for at least 1 hour each day.
+> To ensure devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary, but they should remain continuously connected to the Internet for at least one hour each day.
 
 |Content type|Approximate size|Frequency and details|
 |----------------|--------------------|-------------------------|
@@ -57,12 +57,9 @@ This table lists the approximate size and frequency of common content that trave
 You can use one or more of the following methods to reduce network bandwidth use for Intune clients.
 
 ### Use a proxy server to cache content requests
-You can use a proxy server that can cache content to reduce duplicate downloads and reduce the use of network bandwidth by clients that request content from the Internet.
+A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet.
 
-A caching proxy server receives requests for content from client computers on your network, retrieves that content from the Internet, and can then cache both HTTP responses and binary downloads. The server uses the cached information to answer subsequent requests from Intune client computers.
-
-<!--
-> [!NOTE] Windows 8.1 devices enrolling through a proxy server must authenticate. If proxy server credentials aren't cached, the enrollment request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If you have users who might experience issue, instruct them to open their browser settings and save their proxy server settings to enable a connection.   -->
+A caching proxy server that receives content requests from clients can retrieve that content and cache both web responses and downloads. The server uses cached data to answer subsequent requests from clients.
 
 The following are typical settings to use for a proxy server that caches content for Intune clients.
 
@@ -79,7 +76,7 @@ Intune supports using Background Intelligent Transfer Service (BITS) on a Window
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
 ### Use BranchCache on computers
-Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems that are supported as clients also support BranchCache:
+Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems support BranchCache:
 
 - Windows 7
 - Windows 8.0
@@ -88,22 +85,26 @@ Intune clients can use BranchCache to reduce wide area network (WAN) traffic. Th
 
 To use BranchCache, the client computer must have BranchCache enabled, and then be configured for **distributed cache mode**.
 
-By default, BranchCache and distributed cache mode are enabled on a computer when the Intune client is installed. However, if the client already has Group Policy that disables BranchCache, Intune does not override that policy and BranchCache will remains disabled on that computer.
+By default, BranchCache and distributed cache mode are enabled on computers when the Intune client is installed. However, if Group Policy has disabled BranchCache, Intune does not override that policy and BranchCache remains disabled.
 
-If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and Intune Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
+If you use BranchCache, work with other administrators in your organization to manage Group Policy and Intune Firewall policy. Ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## Network communication requirements
 
-You must enable network communications between the devices you manage and use to manage your Intune subscription, and the websites required for cloud-based services.
+Enable network communications between the devices you manage and the websites required for cloud-based services.
 
 Intune uses no on-premises infrastructure such as servers running Intune software, but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
-To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune. To manage computers that are behind a proxy server, be aware that:
+To manage computers behind firewalls and proxy servers, you must enable communication for Intune.
 
 -   The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
--   Intune requires unauthenticated proxy server access to manage.microsoft.com for some operations such as downloading software and updates
+-   Intune requires unauthenticated proxy server access to manage.microsoft.com for some tasks such as downloading software and updates
 
 You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Managed devices require configurations that let **All Users** access services through firewalls.
 
@@ -160,14 +161,3 @@ The following tables list the ports and services that the Intune client accesses
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
-
-## Known issue for proxy servers
-
-### When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible cause
-**Issue:** When you enroll a Windows 8.1 device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrollment process must wait for the user to enter the credentials. But, the prompt to provide the proxy server credentials does not appear during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server. No visible indication of this failure is presented to the user.
-
-**Workaround:** For Windows 8.1 devices that must enroll on a network that requires use of an authenticated proxy server, set up and save the credentials for the proxy server prior to enrollment of the device. To set up and save the credentials on a Windows 8.1 device:
-
-1.  On the Windows 8.1 device, open Internet Explorer.
-2.  When you're prompted for the proxy server credentials, enter the credentials and then choose the option **Remember my credentials**.
-3.  Enroll the device.
