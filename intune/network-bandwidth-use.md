@@ -61,6 +61,9 @@ You can use a proxy server that can cache content to reduce duplicate downloads 
 
 A caching proxy server receives requests for content from client computers on your network, retrieves that content from the Internet, and can then cache both HTTP responses and binary downloads. The server uses the cached information to answer subsequent requests from Intune client computers.
 
+<!--
+> [!NOTE] Windows 8.1 devices enrolling through a proxy server must authenticate. If proxy server credentials aren't cached, the enrollment request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If you have users who might experience issue, instruct them to open their browser settings and save their proxy server settings to enable a connection.   -->
+
 The following are typical settings to use for a proxy server that caches content for Intune clients.
 
 |Setting|Recommended value|Details|
@@ -157,3 +160,14 @@ The following tables list the ports and services that the Intune client accesses
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+
+## Known issue for proxy servers
+
+### When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible cause
+**Issue:** When you enroll a Windows 8.1 device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrollment process must wait for the user to enter the credentials. But, the prompt to provide the proxy server credentials does not appear during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server. No visible indication of this failure is presented to the user.
+
+**Workaround:** For Windows 8.1 devices that must enroll on a network that requires use of an authenticated proxy server, set up and save the credentials for the proxy server prior to enrollment of the device. To set up and save the credentials on a Windows 8.1 device:
+
+1.  On the Windows 8.1 device, open Internet Explorer.
+2.  When you're prompted for the proxy server credentials, enter the credentials and then choose the option **Remember my credentials**.
+3.  Enroll the device.
