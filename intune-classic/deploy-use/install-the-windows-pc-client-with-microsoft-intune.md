@@ -40,7 +40,7 @@ The Intune client software contains the minimum software necessary to enroll the
 
 This series of downloads reduces the impact on the network's bandwidth and minimizes the time required to initially enroll the PC in Intune. It also ensures that the client has the most recent software available after the second download has finished.
 
-One Intune user license allows to install the Intune client software on up to five PCs.
+One Intune license allows to install the Intune client software on up to five PCs.
 
 ## Download the Intune client software
 
