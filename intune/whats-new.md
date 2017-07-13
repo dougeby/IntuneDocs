@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,6 +43,20 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Device configuration
 -->   
 
+## Week of July 24th, 2017
+#### UI updates to the Company Portal website <!--1313244-->
+We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
+
+__Enhancements to app tiles__
+App icons smaller than 79x79 pixels are now displayed with an automatically generated background based on the dominant color of the icon. This replaces the gray border that was previously visible on app tiles containing small icons. Larger icons will be resized to fill the app tile as much as possible while preserving image quality.
+
+We recommend that IT admins publish apps using icons with a minimum size of 120 x120 pixels.
+
+__Navigation changes__
+Navigation bar items have been moved to the hamburger menu in the top left. The Categories page has been removed. Users can now filter content by category while browsing.
+
+__Updates to Featured Apps__
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage. You can see what these changes look like on the [what's new in app UI](whats-new-app-ui.md) page.
 
 
 ## Week of June 26th, 2017
