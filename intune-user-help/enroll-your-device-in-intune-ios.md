@@ -33,17 +33,17 @@ ms.custom: intune-enduser
 
 If your company or school uses Microsoft Intune, you can enroll your iOS device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> If you're actually trying to enroll a macOS device, such as a MacBook Pro or iMac, [try these instructions instead](enroll-your-device-in-intune-macos.md).
+> If you're trying to enroll a macOS device, such as a MacBook Pro or iMac, [try these instructions instead](enroll-your-device-in-intune-macos.md).
 
 **Before you start:**
 
 - Make sure that you finish enrolling after you start the steps. Pausing for more than a few minutes usually stops the process, and  requires you to restart.
 - If your enrollment fails for any reason, you need to return to the Company Portal app to try again.
 - Make sure that your Wi-Fi is working. Otherwise, enrollment fails.
-- If you blocked Safari on your device, unblock it. Safari is used as part the device enrollment process. 
+- If you blocked Safari on your device, unblock it. Safari is used as part the device enrollment process.
 
 
 **To enroll your iOS device:**

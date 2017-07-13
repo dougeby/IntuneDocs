@@ -278,12 +278,16 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
+### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+
+
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017
 <!-- 1327781 -->
 
 On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
 
-There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Note that there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app. 
+There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Note that there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app.
 
 We recommend that you upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
