@@ -45,11 +45,11 @@ This page is updated periodically. Check back for additional updates.
 
 
 
-## What's coming to Intune on the Azure portal
+## Intune on the Azure portal
 
 ### Easier installation of Office 365 apps <!--- 1121362 --->
 A new **Office 365 ProPlus** app type will make it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you will be able to install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and will appear as one app in the list of apps in the Intune console.
- 
+
 
 ### New device action to force devices to sync with Intune <!-- 711369 -->    
 We are adding a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
@@ -110,7 +110,7 @@ You will soon be able to set a conditional access policy that requires Mac devic
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. By December, all access to company resources, including email, will be prevented. 
 
-### End of support for Android 4.3 and lower <!---1171127--->
+### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 
@@ -127,7 +127,7 @@ We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile a
 
 
 
-## What's coming to Intune apps
+## Intune apps
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->    
 We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
