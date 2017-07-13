@@ -44,7 +44,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 
 ## Week of July 24th, 2017
-#### UI updates to the Company Portal website <!--1313244-->
+### UI updates to the Company Portal website <!--1313244-->
 We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
 
 __Enhancements to app tiles__
@@ -58,6 +58,8 @@ Navigation bar items have been moved to the hamburger menu in the top left. The 
 __Updates to Featured Apps__
 We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage. You can see what these changes look like on the [what's new in app UI](whats-new-app-ui.md) page.
 
+### Users who are signed in to Exchange can automatically access the Company Portal website on Windows 10 devices <!--1323204-->
+End users receive quarantine emails when they are blocked from email access by conditional access policies. Windows 10 users who are already authenticated in Exchange will no longer need to re-authenticate in the browser after clicking the link to begin Company Access Setup.
 
 ## Week of June 26th, 2017
 
