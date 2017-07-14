@@ -50,11 +50,11 @@ All methods, except those in which users install the Intune client software them
 
   ![Download the Intune PC client](../media/pc-sa-client-download.png)
 
-2.  On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
+2. On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 
-The Intune client software installation package contains unique and specific information, which is available through an embedded certificate, about your account. If unauthorized users gain access to the installation package, they can enroll PCs to the account that is represented by its embedded certificate and might gain access to company resources.
+  The Intune client software installation package contains unique and specific information, which is available through an embedded certificate, about your account. If unauthorized users gain access to the installation package, they can enroll PCs to the account that is represented by its embedded certificate and might gain access to company resources.
 
-3.  Extract the contents of the installation package to the secure location on your network.
+3. Extract the contents of the installation package to the secure location on your network.
 
     > [!IMPORTANT]
     > Do not rename or remove the **ACCOUNTCERT** file that is extracted, or the client software installation will fail.
@@ -205,13 +205,10 @@ Using an elevated command prompt, run one of the following commands.
 
 **Method 1**:
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **Method 2**<br>Note that all of these agents are installed on every SKU of Windows:
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -244,7 +241,6 @@ Using an elevated command prompt, run one of the following commands.
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > Client unenrollment will leave a stale sever-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
@@ -262,10 +258,8 @@ Check "%ProgramFiles%\Microsoft\OnlineManagement" and ensure that only the follo
 
 The unenrollment process does not remove the OnlineManagement folder. Wait 30 minutes after the uninstall, and then run this command. If you run it too soon, the uninstall could be left in an unknown state. To remove the folder, start an elevated prompt and run:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### See also
+### Next steps
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Troubleshoot client setup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
