@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up the Exchange connector for on-premises EAS with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
+titleSuffix: "Intune Azure"
+description: "Intune Azure: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Set up the Intune on-premises Exchange Connector in Microsoft Intune Azure preview
+# Set up the Intune on-premises Exchange Connector in Microsoft Intune Azure
 
 On-premises Exchange Server environments can use the Intune on-premises Exchange connector to manage devices access to on-premises Exchange mailboxes based on whether or not the devices are enrolled into Intune and compliant with Intune device compliance policies. The on-premises Exchange connector is also responsible for discovering mobile devices that connect to on-premises Exchange Servers by synchronizing the existing Exchange Active Sync (EAS) record with Intune.
 
