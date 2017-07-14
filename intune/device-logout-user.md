@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,12 +33,14 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-The **Logout current user** action logs out the current user of an iOS device you choose.
+The **Logout current user** action logs out the current user on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md). 
 
 1.	Sign into the Azure portal.
 2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
 3.	On the **Intune** blade, choose **Devices**.
 4.	On the **Devices and groups** blade, choose **All devices**.
 5.	From the list of devices you manage, choose an iOS device, and then choose the **Logout current user** device remote action.
+
+## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.

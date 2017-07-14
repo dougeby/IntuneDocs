@@ -65,19 +65,11 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 
 ### Device management
 #### New remote actions for iOS devices <!-- 854689 -->
-In this release, we've added two new remote device actions for iOS devices:
+In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
 - 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
 - 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
-
-Using these remote actions, admins be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
-
-During enrollment, the admin determines the maximum number of user accounts that can be cached on a device. "Remove user" allows admins to remove specific users that are cached.
-
-"Logout current user" will log out the user that's currently logged in to the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
-
-"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data that is associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
 
 #### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
 In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
@@ -119,7 +111,7 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 
 In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
 
- -  Windows Defender
+-  Windows Defender
 -  Cellular and connectivity
 -  Locked screen experience
 -  Privacy
@@ -241,7 +233,7 @@ For apps deployed to Android for Work device work profiles, you can now configur
 Android 7.0 and above devices with a work profile managed as an Android for Work device let the administrator define a passcode policy that only applies to apps in the work profile.  Options include:
 
 - Define just a device-wide passcode policy - This is the passcode that the user must use to unlock their entire device.
- -Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
+- Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
 - Define both a device and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (for example, a four-digit PIN to unlock the device, but a six-digit PIN to open any work app).
 
 For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).

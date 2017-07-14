@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Remove user** action deletes a user you choose from the local cache on an iOS device. 
+The **Remove user** action deletes a user you choose from the local cache on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md). 
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -41,5 +41,7 @@ The **Remove user** action deletes a user you choose from the local cache on an 
 5. From the list of devices you manage, choose an iOS device.
 6. On the blade for that device, choose **Users**.
 7. From the list, right-click the user you want to remove, and then choose **Remove user**.
+
+## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
