@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Release notes for Microsoft Intune 
+title: Release notes for Microsoft Intune
 description: Intune release notes
 keywords:
 author: arob98
@@ -62,21 +62,6 @@ At this point, one of the following occurs: 
 In both cases, the resource access profile (email profile) was not removed from the device in order to prevent the unintentional removal of a user’s access to email or the client's SCEP certificate.
 
 **Workaround:** None.
-
-## When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible cause
-**Issue:** When you enroll a Windows 8.1 device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrollment process must wait for the user to enter the credentials. But, the prompt to provide the proxy server credentials does not appear during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server. No visible indication of this failure is presented to the user.
-
-**Workaround:** For Windows 8.1 devices that must enroll on a network that requires use of an authenticated proxy server, set up and save the credentials for the proxy server prior to enrollment of the device. To set up and save the credentials on a Windows 8.1 device:
-
-1.  On the Windows 8.1 device, open Internet Explorer.
-2.  When you're prompted for the proxy server credentials, enter the credentials and then choose the option **Remember my credentials**.
-3.  Enroll the device.
-
-## Windows Phone 8.1 devices fail to enroll with Microsoft Intune when device authentication is enabled in AD FS
-**Issue:** When you enroll a Windows Phone 8.1 device, enrollment fails if the optional setting for device authentication is enabled as part of the global authentication policy in Active Directory Federation Services (AD FS).
-
-**Workaround:** Disable device authentication on the AD FS server by unchecking **Enable device authentication** in **Edit Global Authentication Policy**. For more information, see [Configuring Authentication Policies](http://technet.microsoft.com/library/dn486781.aspx).
-
 
 ## Microsoft Intune App Wrapping Tool for Android has no built-in uninstall capability
 **Issue:** The **Microsoft App Wrapping Tool for Android** does not have built-in functionality for uninstalling the tool.

@@ -105,7 +105,7 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 
 In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
 
- -  Windows Defender
+-  Windows Defender
 -  Cellular and connectivity
 -  Locked screen experience
 -  Privacy
@@ -227,7 +227,7 @@ For apps deployed to Android for Work device work profiles, you can now configur
 Android 7.0 and above devices with a work profile managed as an Android for Work device let the administrator define a passcode policy that only applies to apps in the work profile.  Options include:
 
 - Define just a device-wide passcode policy - This is the passcode that the user must use to unlock their entire device.
- -Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
+- Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
 - Define both a device and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (for example, a four-digit PIN to unlock the device, but a six-digit PIN to open any work app).
 
 For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
