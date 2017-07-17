@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -101,4 +101,5 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
+- [Office 365 apps for Windows 10](apps-add-office365.md)
 
