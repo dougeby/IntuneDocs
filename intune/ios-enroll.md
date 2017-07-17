@@ -47,7 +47,7 @@ Organizations can purchase iOS devices through Apple's device enrollment program
 Apple school manager is a device purchase and enrollment program for schools. Like DEP, you can deploy a profile to enroll devices in management. Learn more about [Apple school manager](apple-school-manager-set-up-ios.md).
 
 ## Apple Configurator
-Enroll iOS devices with Apple Configurator running on a Mac computer by USB-connecting the devices and loading an enrollment profile on the devices. You can enroll devices with Apple Configurator in two ways:
+You can enroll iOS devices with Apple Configurator running on a Mac computer. To prepare devices, you USB-connect them and install an enrollment profile. You can enroll devices with Apple Configurator in two ways:
 - Setup Assistant enrollment - Factory resets the device, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.
 - Direct enrollment - Does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with no user affinity.
 
