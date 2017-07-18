@@ -40,11 +40,11 @@ Before you can enable iOS devices, complete the following steps:
 
 After these prerequisites are complete, users can install the Company Portal app to enroll their personal iOS devices, or the admin can set up corporate-owned iOS device management. Admins can also assign [device enrollment managers](device-enrollment-manager-enroll.md) who can enroll many devices with a single management account. Intune supports the following iOS company-owned device enrollment methods:
 
-## Device enrollment program
-Organizations can purchase iOS devices through Apple's device enrollment program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management. Learn more about [device enrollment program](device-enrollment-program-enroll-ios.md).
+## Device Enrollment Program
+Organizations can purchase iOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management. Learn more about [Device Enrollment Program](device-enrollment-program-enroll-ios.md).
 
-## Apple school manager
-Apple school manager is a device purchase and enrollment program for schools. Like DEP, you can deploy a profile to enroll devices in management. Learn more about [Apple school manager](apple-school-manager-set-up-ios.md).
+## Apple School Manager
+Apple School Manager is a device purchase and enrollment program for schools. Like DEP, you can deploy a profile to enroll devices in management. Learn more about [Apple School Manager](apple-school-manager-set-up-ios.md).
 
 ## Apple Configurator
 You can enroll iOS devices with Apple Configurator running on a Mac computer. To prepare devices, you USB-connect them and install an enrollment profile. You can enroll devices with Apple Configurator in two ways:
