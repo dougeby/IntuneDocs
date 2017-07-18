@@ -1,5 +1,37 @@
 {
 	"redirections": [
+
+
+		{
+			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune.md",
+			"redirect_url": "/intune/free-trial-sign-up",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "intune-classic/deploy-use/Release-notes-for-Microsoft-Intune.md",
 			"redirect_url": "/intune/whats-new",
