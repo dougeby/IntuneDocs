@@ -15,6 +15,7 @@
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
 ## [Common scenarios](common-scenarios.md)
+## [Service description](microsoft-intune-service-description.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
