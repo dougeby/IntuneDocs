@@ -2,13 +2,13 @@
 # required metadata
 
 title: Set up the Exchange connector for on-premises EAS with Intune
-titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
+titleSuffix: "Intune Azure"
+description: "Intune Azure: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Set up the Intune on-premises Exchange Connector in Microsoft Intune Azure preview
+# Set up the Intune on-premises Exchange Connector in Microsoft Intune Azure
 
 On-premises Exchange Server environments can use the Intune on-premises Exchange connector to manage devices access to on-premises Exchange mailboxes based on whether or not the devices are enrolled into Intune and compliant with Intune device compliance policies. The on-premises Exchange connector is also responsible for discovering mobile devices that connect to on-premises Exchange Servers by synchronizing the existing Exchange Active Sync (EAS) record with Intune.
 
@@ -48,8 +48,8 @@ The following table lists the requirements for the computer on which you install
 |Operating systems|Intune supports the On-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The Connector is not supported on any Server Core installation.|
 |Microsoft Exchange|On-premises Connectors require Microsoft Exchange 2010 SP1 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the **new** or **legacy** configuration, contact your account manager.|
 |Mobile device management authority| [Set the mobile device management authority to Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
-|Hardware|The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.|users-permissions-add.md
-|Active Directory synchronization|Before you can use Connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](users-permissions-add.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
+|Hardware|The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.|users-add.md
+|Active Directory synchronization|Before you can use Connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](users-add.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 |Additional software|A full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
 |Network|The computer on which you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains that are used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com.|
 

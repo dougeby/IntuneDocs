@@ -33,7 +33,7 @@ ms.custom: intune-enduser
 > [!NOTE]
 > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]
 
 1. Go to **Start**.
 

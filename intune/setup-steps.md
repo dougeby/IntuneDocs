@@ -38,17 +38,15 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 >[!TIP]
 >If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
-## Checklist
-
 | Steps | Status  |
 | ------------- |-------------|
 | 1  | [Prerequisites](supported-devices-browsers.md) - Need-to-know info before you start|
 | 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new subscription |  
 | 3 | [Configure domain name](custom-domain-name-configure.md) - Set DNS registration to connect your company's domain name with Intune  |
-| 4 | [Add users](users-permissions-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
+| 4 | [Add users](users-add.md) - Manually add users or connect Active Directory to synchronize users with Intune  |
 | 5 | [Assign licenses](licenses-assign.md) - Give users permission to use Intune|
 | 6 |  [Add groups](groups-add.md) - Use user and device groups to simplify management tasks |
 | 7 | [Add apps](apps-add.md) - Enable settings and apps that can be deployed to users |
 | 8 | [Configure devices](device-profiles.md) - Set up profiles that manage devices and access to company resources |
-| 9 | [Customize Company Portal](company-portal-customize.md) - Customize the Intune Company Portal   |
+| 9 | [Customize Company Portal](company-portal-app.md) - Customize the Intune Company Portal   |
 | 10 | [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |

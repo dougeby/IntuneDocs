@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-classic/deploy-use/Release-notes-for-Microsoft-Intune.md",
+			"redirect_url": "/intune/whats-new",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/EULA/microsoft-intune-company-portal-application-license-terms.md",
 			"redirect_url": "https://docs.microsoft.com/legal/intune/microsoft-intune-company-portal-application-license-terms",
 			"redirect_document_id": false
@@ -32,17 +37,17 @@
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/app-based-conditional-access-intune-sharepoint-online-create.md",
-			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
-			"redirect_document_id": false
+			"redirect_url": "/intune/app-based-conditional-access-intune-create",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/app-based-conditional-access-intune-exchange-online-create.md",
-			"redirect_url": "/intune/set-device-compliance/app-based-conditional-access-intune-create",
+			"redirect_url": "/intune/app-based-conditional-access-intune-create",
 			"redirect_document_id": false
 		},
         {
 			"source_path": "intune-azure/set-device-compliance/actions-for-noncompliance.md",
-			"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
+			"redirect_url": "/intune/device-compliance",
 			"redirect_document_id": false
 		},
 		{
@@ -1334,8 +1339,8 @@
 		},
 		{
 			"source_path": "intune-azure/set-device-compliance/what-is-device-compliance.md",
-			"redirect_url": "/intune/set-device-compliance/what-is-device-compliance",
-			"redirect_document_id": false
+			"redirect_url": "/intune/device-compliance",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune/access-control/role-based-access-control.md",
@@ -3688,6 +3693,16 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/users-permissions-add.md",
+			"redirect_url": "/intune/users-add",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/user-management.md",
+			"redirect_url": "/intune/users-add",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/whats-new/whats-new-in-microsoft-intune.md",
 			"redirect_url": "/intune/whats-new",
 			"redirect_document_id": false
@@ -3700,6 +3715,11 @@
     {
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/company-portal-customize.md",
+			"redirect_url": "/intune/company-portal-app",
 			"redirect_document_id": false
 		}
 	]
