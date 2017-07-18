@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-classic/deploy-use/Release-notes-for-Microsoft-Intune.md",
+			"redirect_url": "/intune/whats-new",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/EULA/microsoft-intune-company-portal-application-license-terms.md",
 			"redirect_url": "https://docs.microsoft.com/legal/intune/microsoft-intune-company-portal-application-license-terms",
 			"redirect_document_id": false
