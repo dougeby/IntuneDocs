@@ -15,6 +15,7 @@
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
 ## [Common scenarios](common-scenarios.md)
+## [Service description](microsoft-intune-service-description.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows enrollment](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
-### Set up iOS enrollment
-#### [With Device Enrollment Program](device-enrollment-program-enroll-ios.md)
-#### [With Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Set up iOS enrollment](ios-enroll.md)
+#### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
