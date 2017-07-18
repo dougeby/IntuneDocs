@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial
-titleSuffix: "Intune on Azure"
-description: How to sign up for Intune on Azure."
+title: Sign up for a 30-day free trial of Microsoft Intune
+titleSuffix:
+description: How to sign up for a 30-day free trial of Intune."
 keywords:
 author: lindavr
 ms.author: lindavr
@@ -23,19 +23,19 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom:
 
 ---
 
-# Sign up for a Microsoft Intune free trial for the Azure portal
+# Sign up for a Microsoft Intune free trial
 
 
 This article walks you through signing up for a trial of Intune standalone for the Azure portal.
 
 1. Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page and fill out the form to sign up for a trial subscription.
-account-sign-up.md
+* If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune/account-sign-up) instead.
 
-  If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Where's your company located?**.
+* If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Where's your company located?**.
 
 2. At the end of the sign-up process, you get a message with your new account information. <br/> ![Image of account  information](./media/2-end-of-sign-up-process.png) <br/>At this point, if you click **You're ready to go**, you are taken to the Office 365 Admin Center, where you can add users to your test environment. <br/><br/>However, if you want to go directly into the Intune Azure portal, open a new browser window, and enter **https://portal.azure.com** in the address bar. You are taken to the Azure sign-in page where you can use the credentials you were given to sign in. Use this address whenever you want to sign into your Intune trial. <br/> ![Image of Azure portal sign-in page](./media/azure-portal-signin.png)
 
@@ -77,8 +77,6 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 
 ### Intune on Azure
 Learn more about [Intune in the Azure portal](what-is-intune.md)
-### Classic Intune
-Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:
