@@ -29,7 +29,10 @@ ms.custom: intune-azure
 
 The troubleshooting portal lets help desk operators and Intune administrators view user information to fix user help requests. Organizations that include help desk operators in their staff can assign the **Help desk operator** to a group of users, who can then use the Troubleshoot blade to help users.
 
-For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune displays pertinent information that can help resolve many tier-1 issues such as user status, app installation failure, or compliance issues. Issues addressed can include:
+For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues including:
+- User status
+- App install failure
+- Compliance issues
 - Device not responding
 -	Device not getting VPN or Wi-Fi settings
 -	App installation failure
@@ -55,7 +58,10 @@ To add help desk users:
 
 Help desk staff and Intune administrators can access the troubleshooting portal in two ways:
 - Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser.
+  ![Screenshot of the Troubleshoot conso9le](./media/help-desk-console.png)
 - In the Intune portal, go **Help and Support** > **Troubleshoot**.
+
+Click **Select user** to view a user and that user's details.
 
 ![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
 
