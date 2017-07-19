@@ -58,7 +58,7 @@ To add help desk users:
 
 Help desk staff and Intune administrators can access the troubleshooting portal in two ways:
 - Open [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in a web browser.
-  ![Screenshot of the Troubleshoot conso9le](./media/help-desk-console.png)
+  ![Screenshot of the Troubleshoot console](./media/help-desk-console.png)
 - In the Intune portal, go **Help and Support** > **Troubleshoot**.
 
 Click **Select user** to view a user and that user's details.
