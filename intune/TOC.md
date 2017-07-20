@@ -183,13 +183,12 @@
 ### [Monitor profiles](device-profile-monitor.md)
 ### [Troubleshoot profiles](device-profile-troubleshoot.md)
 
-## [Set device compliance](device-compliance.md)
-### [Prerequisites](device-compliance-get-started.md)
+## [Set device compliance](device-compliance-get-started.md)
 ### [Create Android policy](compliance-policy-create-android.md)
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
+### [Create macOS policy](compliance-policy-create-mac-os.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-### Create Actions for noncompliance
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)
