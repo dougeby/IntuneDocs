@@ -50,7 +50,7 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 > [!NOTE]
-> Intune might restore a deleted Apple DEP token if you delete the token from the Intune classic console before migrating to Azure. You can delete the DEP token again from the Azure portal.
+> If you delete the token from the Intune classic console before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
 
 **Prerequisites**
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
@@ -126,7 +126,7 @@ For **User Affinity**, choose whether devices with this profile enroll with or w
  >[!NOTE]
  >Enrollment program management with user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) to be enabled to request user token. [Learn more about WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
+ - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) can’t work.
 
 4. Select **Device Management Settings** to configure the following profile settings:
 
@@ -176,6 +176,8 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
   To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
      -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
      -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+     - Intune syncs new and removed devices with Apple every 24 hours.
+     
 4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign an enrollment profile to devices
