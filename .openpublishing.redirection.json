@@ -1,7 +1,11 @@
 {
 	"redirections": [
 
-
+		{
+			"source_path": "intune/device-compliance.md",
+			"redirect_url": "/intune/device-compliance-get-started",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md",
 			"redirect_url": "/intune/introduction-intune",
