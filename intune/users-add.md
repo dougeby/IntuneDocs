@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 07/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,15 +47,15 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 4. Specify the following user details:
   - **First name**
   - **Last name**
-  - **Display name** - Displayed in Intune portal
-  - **User name** - UPN name in Intune portal
+  - **Display name**
+  - **User name** - Universal principle name (UPN) stored in Azure Active Directory used to access the service
   - **Location**
   - **Contact information** (optional)
   - **Password** - Auto-generate or specify
 
      ![Screenshot of the Office 365 Admin](media/office-add-user-details.png)
 
-5. Assign an Intune license. Select **Product licenses** and choose the product license.
+5. Assign an Intune license. Select **Product licenses** and choose the product license. A license including Intune is required.
 6. Choose **Add** to create the new user.
 
 ### Add Intune users in the Azure Intune portal
@@ -71,7 +71,7 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 5. Optionally, you can specify the following user properties:
   - **Profile** - Work information including **Job title** and **Department**
   -  **Groups** - Select groups to add for the user
-  - **Directory role** - Give the user administrative permissions for Intune
+  - **Directory role** - Give the user administrative permissions including an Intune service administrator role.
 
   Select **Create** to add the new user to Intune.
 6. Select **Profile**, and then choose a **Usage location** for the new user. Usage location is required before you can assign the new user an Intune license. Choose **Save** to continue.
@@ -96,7 +96,7 @@ Assign users one or more administrator permissions. These permissions define the
 - **Service administrator** - (Office 365) Opens support requests with Microsoft, and views the service dashboard and message center. They have “view only” permissions except for opening support tickets and reading them.
 - **User management administrator** - (Office 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for other admins.
 
-By default, the account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. An administrator does not require a license to Intune to access the Intune administrator console. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx) for more information.
+By default, the account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. An administrator does not require a license to Intune to access the Intune portal. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx) for more information.
 
 To access the Office 365 portal, your account must have a **Sign-in allowed** set. In the Intune portal under **Profile**, set **Block sign in** to **No** to allow access. This status is different from having a license to the subscription. By default, all user accounts are **Allowed**. Users without administrator permissions can use the Office 365 portal to reset Intune passwords.
 
