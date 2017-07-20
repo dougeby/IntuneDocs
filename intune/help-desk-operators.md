@@ -52,7 +52,7 @@ To add help desk users:
 
   ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
 
-4. To give help desk operators permission to view the service health and open support tickets for Intune, [grant users admin permission](users-add.md#grant-admin-permissions) as a **Service administrator**.
+4. To give help desk operators permission to view the service health and open support tickets for Intune, [grant users admin permissions](users-add.md#grant-admin-permissions) as a **Service administrator**. Do not give **Intune Service administrator** permission because this directory role has more rights than those needed for help desk operators. 
 
 ## Access the troubleshooting portal
 
