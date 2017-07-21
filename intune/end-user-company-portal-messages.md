@@ -104,4 +104,4 @@ Send your users to [Send logs to your IT admin by email](/intune-user-help/send-
 
 
 ### See also
-[What to tell your end users about using Intune](/intune-classic/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
+[What to tell your end users about using Intune](end-user-educate.md)
