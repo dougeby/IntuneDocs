@@ -56,16 +56,7 @@ Before running the tool, review [Security considerations for running the App Wra
     > [!NOTE]
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
 
-- Android requires all app packages (.apk) to be signed. Use Java keytool to generate credentials needed to sign the wrapped output app. For example, the following command uses the Java executable keytool.exe to generate keys that can be used by the App Wrapping Tool to sign the wrapped output app.
-
-	```
-	keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-	```
-	This example generates a key pair (a public key and associated private key of 2,048 bits) by using the RSA algorithm. It then wraps the public key into an X.509 v3 self-signed certificate, which is stored as a single-element certificate chain. This certificate chain and the private key are stored in a new keystore entry named "mykeystorefile" and identified by the alias "mykeyalias." The keystore entry is valid for 50,000 days.
-
-	The command will prompt you to provide passwords for the keystore and key. Use passwords that are secure, but make a note of them because they're needed to run the App Wrapping Tool.
-
-	For detailed documentation, read more about the Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) and Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) on the Oracle documentation website.
+- Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
 ## Install the App Wrapping Tool
 
@@ -101,7 +92,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 |**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Android requires all application packages (.apk) to be signed. Use Java keytool to generate the KeyStorePassword. Read more about Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) here.| |
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
-|**-SigAlg**&lt;SecureString&gt;| (Optional) The name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Optional) The name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Optional) The command supports common PowerShell parameters like verbose and debug. |
 
 
