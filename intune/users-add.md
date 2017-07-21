@@ -38,7 +38,7 @@ As an administrator, you can add users directly or synchronize users from your o
 You can manually add users to your Intune subscription via the [Office 365 portal](https://www.office.com/signin) or the [Azure Intune portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). An administrator can edit user accounts to assign Intune licenses. You can assign licenses in either the Office 365 portal or the Intune Azure portal. For more information on using the Office 365 portal, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### Add Intune users in the Office 365 Admin Center
-1. Sign in to [Office 365 portal](https://www.office.com/signin).
+1. Sign in to [Office 365 portal](https://www.office.com/signin) with a global administrator or user management administrator account.
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, select **Add a user**.
 
@@ -80,11 +80,24 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 
 ## Grant admin permissions
 
-After you've added users to your Intune subscription, we recommend that you grant a few users administrative permission:
--   [Global administrator](#tenant-administrator): Use the Office 365 portal to assign this type of administrator. The global admin can manage your subscription, including billing, cloud storage, and managing the users who can use Intune.
--   [Customized or limited administrator](#service-administrator): Use the Office 365 or Azure Intune console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
+After you've added users to your Intune subscription, we recommend that you grant a few users administrative permission.  To grant admin permissions, follow these steps:
 
+### Give admin permissions in Office 365
+1. Sign in to the [Office 365 portal](https://www.office.com/signin) with a global administrator account.
+2. In the Office 365 menu, select **Admin**.
+3. In the Admin center, choose **Active users** and then choose the user to give admin permissions.
+4. In the **Roles** column, choose **Edit**.
+  ![Screenshot of assign roles screen in Office 365](./media/office-assign-roles-open.png)
+5. Choose the admin permission to grant from the list of available roles.
 ![Image of Office 365 portal assigning Roles.](./media/office-assign-roles.png)
+6. Choose **Save**.
+
+### Give admin permissions in the Intune portal
+1. Sign in to the [Intune portal](https://www.office.com/signin) with a global administrator account.
+2. In the Intune portal, choose **User**, and then choose the user you want to give admin permissions.
+3. Select **Directory role**, and then select the permission.
+  ![Screenshot](./media/add-intune-directory-role.png)
+4. Choose **Save**.
 
 ### Types of administrators
 
