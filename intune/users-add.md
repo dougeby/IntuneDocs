@@ -38,7 +38,7 @@ As an administrator, you can add users directly or synchronize users from your o
 You can manually add users to your Intune subscription via the [Office 365 portal](https://www.office.com/signin) or the [Azure Intune portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). An administrator can edit user accounts to assign Intune licenses. You can assign licenses in either the Office 365 portal or the Intune Azure portal. For more information on using the Office 365 portal, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### Add Intune users in the Office 365 Admin Center
-1. Sign in to [Office 365 portal](https://www.office.com/signin).
+1. Sign in to [Office 365 portal](https://www.office.com/signin) with a global administrator or user management administrator account.
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, select **Add a user**.
 
@@ -80,11 +80,24 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 
 ## Grant admin permissions
 
-After you've added users to your Intune subscription, we recommend that you grant a few users administrative permission:
--   [Global administrator](#tenant-administrator): Use the Office 365 portal to assign this type of administrator. The global admin can manage your subscription, including billing, cloud storage, and managing the users who can use Intune.
--   [Customized or limited administrator](#service-administrator): Use the Office 365 or Azure Intune console to assign this type of administrator for day-to-day tasks including device and computer management, deploying policy and apps, and running reports.
+After you've added users to your Intune subscription, we recommend that you grant a few users administrative permission.  To grant admin permissions, follow these steps:
 
+### Give admin permissions in Office 365
+1. Sign in to the [Office 365 portal](https://www.office.com/signin) with a global administrator account.
+2. In the Office 365 menu, select **Admin**.
+3. In the Admin center, choose **Active users** and then choose the user to give admin permissions.
+4. In the **Roles** column, choose **Edit**.
+  ![Screenshot of assign roles screen in Office 365](./media/office-assign-roles-open.png)
+5. Choose the admin permission to grant from the list of available roles.
 ![Image of Office 365 portal assigning Roles.](./media/office-assign-roles.png)
+6. Choose **Save**.
+
+### Give admin permissions in the Intune portal
+1. Sign in to the [Intune portal](https://www.office.com/signin) with a global administrator account.
+2. In the Intune portal, choose **User**, and then choose the user you want to give admin permissions.
+3. Select **Directory role**, and then select the permission.
+  ![Screenshot](./media/add-intune-directory-role.png)
+4. Choose **Save**.
 
 ### Types of administrators
 
@@ -93,7 +106,7 @@ Assign users one or more administrator permissions. These permissions define the
 - **Global administrator** - (Office 365 and Intune) Accesses all administrative features in Intune. By default the person who signs up for Intune becomes a Global admin. Global admins are the only admins who can assign other admin roles. You can have more than one global admin in your organization. As a best practice, we recommend that only a few people in your company have this role to reduce the risk to your business.
 - **Billing administrator** - (Office 365 and Intune) Makes purchases, manages subscriptions, manages support tickets, and monitors service health.
 - **Password administrator** - (Office 365 and Intune) Resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
-- **Service administrator** - (Office 365) Opens support requests with Microsoft, and views the service dashboard and message center. They have “view only” permissions except for opening support tickets and reading them.
+- **Service administrator** - (Office 365 and Intune) Opens support requests with Microsoft, and views the service dashboard and message center. They have “view only” permissions except for opening support tickets and reading them. Be aware that the **Service administrator** has permission to help users and open support tickets. The **Intune service administrator** (Intune console only) has full administrative permission in Intune.
 - **User management administrator** - (Office 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for other admins.
 
 By default, the account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. An administrator does not require a license to Intune to access the Intune administrator console. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx) for more information.

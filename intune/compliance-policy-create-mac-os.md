@@ -109,6 +109,9 @@ You have different categories with different settings to choose from when creati
 
 - **Number of previous passwords to prevent reuse** : Specify the number of previously used passwords that cannot be reused.
 
+	> [!IMPORTANT]
+	> When the password requirement is changed on a macOS device it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits and the macOS device currently has a 6 digits password, the device remains compliant until the next time the user updates their password on the device.
+
 ## To create a device compliance policy
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials.
@@ -133,7 +136,7 @@ You have different categories with different settings to choose from when creati
 
 ## Assign user groups
 
-To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policies** blade.
+To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance policies** blade.
 
 1. Choose the device compliance policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
 
