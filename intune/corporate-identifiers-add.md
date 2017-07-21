@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can create and import a comma-separated value (.csv) file that lists international mobile equipment identifier (IMEI) numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate. You can only declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
+As an Intune admin, you can create and import a comma-separated value (.csv) file that lists international mobile equipment identifier (IMEI) numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
