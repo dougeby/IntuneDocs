@@ -54,6 +54,9 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 
 **Step 1. Download an Intune public key certificate required to create an Apple token.**<br>
 1. In the Azure [Intune portal](https://aka.ms/intuneportal), choose **Device enrollment** and then select **Enrollment program token**.
+
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
+
 2. In the **Enrollment program token** blade, select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
 
 **Step 2. Download a token and assign devices.**<br>
@@ -61,14 +64,19 @@ Select **Create a token via Apple School Manager**, and sign in with your compan
 
    1.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then select **Add MDM Server** (upper right).
    2.  Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
+   ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-server-assignment.png)
+
    3.  Select **Upload File...** in the Apple portal, browse to the .pem file, and select **Save MDM Server** (lower right).
    4.  Select **Get Token** and then download the server token (.p7m) file to your computer.
    5. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
+     ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-device-assignment.png)
    6.	Choose the action **Assign to Server**, and select the **MDM Server** you created.
    7. Specify how to **Choose Devices**, then provide device information and details.
    8. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 **Step 3. Enter the Apple ID used to create your Apple School Manager token.**<br>This ID should be used to renew your Apple School Manager token and is stored for your future reference.
+
+![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
 
 **Step 4. Locate and upload your token.**<br>
 Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. Intune automatically syncs your Apple School Manager devices from Apple.
@@ -95,6 +103,8 @@ A device enrollment profile defines the settings applied to a group of devices d
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affinity (including the Company Portal app used for installing line-of-business apps) do not work.
 
 6. Select **Device Management Settings**. These items are set during activation and require a factory reset to change. configure the following profile settings, and then select **Save**:
+
+  ![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
