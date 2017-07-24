@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,6 +53,7 @@ Now, you can perform the following actions:
 	- [Restart](device-restart.md)
 	- [Windows 10 PIN reset](device-windows-pin-reset.md)
 	- [Remote control for Android](device-profile-android-teamviewer.md)
+	- [Synchronize device](device-sync.md)
 
 
 ## Support for each device action
@@ -76,6 +77,7 @@ Use the following table to understand the device platforms that are supported by
 |**Fresh Start**|Windows 10 Creators update and later|No|No|No|No|
 |**New Remote Assistance session**|No|No|No|No|Yes|
 |**Remove user**|No|No|iOS 9.3 and later (shared iPad devices only)|No|No|
+|**Synchronize device**|Yes|Yes|Yes|Yes|Yes|
 
 ## Next steps
 
