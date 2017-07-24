@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,9 +64,10 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 	- **Required** - The app is installed on devices in the selected groups.
 	- **Uninstall** - The app is uninstalled from devices in the selected groups.
 	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
+6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is   run, the VPN connection will be opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
 6. Once you are done, choose **Save**.
 
-The app is now assigned to the group you selected.
+The app is now assigned to the groups you selected.
 
 ## How conflicts between app intents are resolved
 
