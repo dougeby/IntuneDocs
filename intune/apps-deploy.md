@@ -64,7 +64,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 	- **Required** - The app is installed on devices in the selected groups.
 	- **Uninstall** - The app is uninstalled from devices in the selected groups.
 	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
-6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is   run, the VPN connection will be opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
+6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is   run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
 6. Once you are done, choose **Save**.
 
 The app is now assigned to the groups you selected.
@@ -106,7 +106,7 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Available without enrollment|User Available|Available|
 |User Available without enrollment|Device Required|Required and Available without enrollment|
 |User Available without enrollment|Device Not Available|Available without enrollment|
-|User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal then the uninstall will be honored.<br>If the user installs the app from  the company portal then the install will be prioritized over the uninstall.|
+|User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal, then the uninstall is honored.<br>If the user installs the app from the company portal, then the install is prioritized over the uninstall.|
 
 >[!NOTE]
 >For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
