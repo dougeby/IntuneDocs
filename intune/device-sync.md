@@ -36,6 +36,8 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 You can synchronize all device types that are supported by Intune.
 
+## How to sync a device
+
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
