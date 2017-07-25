@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use remote wipe to help protect data 
+title: Use remote wipe to help protect data
 description: Intune provides selective wipe and full wipe capabilities to remove sensitive corporate data and remove access to many corporate resources.
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -105,8 +105,8 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|
 |Management Agent|Management profile is removed.|
-|Email|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted. If Microsoft Exchange is hosted on premises, email profiles and cached email are not removed.|
-|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
+|Email|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Outlook|Email received by the Microsoft Outlook app for iOS is removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record is removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
@@ -124,7 +124,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
 |Email|N/A. See the Outlook item.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
@@ -140,7 +140,7 @@ Performing selective wipe on an Android for Work device removes all data, apps, 
 |Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported.|Certificates removed and revoked.|
-|Email|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments.|Not supported.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.</br>**Exception**: If Microsoft Exchange is hosted on premises, email accounts are not removed.|
+|Email|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments.|Not supported.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
 |Azure Active Directory (AAD) Unjoin|No.|No.|AAD Record removed.|Not applicable. Windows 10 does not support selective wipe for Azure Active Directory joined devices.|
 
 ## Wipe encryption file system (EFS)-enabled content

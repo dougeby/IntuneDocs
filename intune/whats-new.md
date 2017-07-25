@@ -83,6 +83,10 @@ Previously, Intune contained a number of built-in apps that you could quickly as
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
 In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
 
+#### Easier installation of Office 365 apps <!--- 1121362 --->
+The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
+For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
+
 
 #### Support for offline apps from the Windows Store for Business <!--- 777044 --->
 Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
