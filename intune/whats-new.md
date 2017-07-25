@@ -43,7 +43,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Device configuration
 -->   
 
-## Week of June 23rd, 2017
+## Week of July 23rd, 2017
 
 ### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->
 End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode will default to the system setting. For Windows 10 version 1511 and earlier, the app mode will default to the light mode.
