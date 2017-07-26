@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,5 +70,11 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+
+## Next steps
+
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+
+>[!NOTE]
+>If you later remove the policy assignment, the version of Windows on the device is not reverted, and continues to function normally.
 
