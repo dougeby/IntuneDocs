@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure software updates for iOS devices
-description: Configure
+title: Configure iOS update policies
+description: Configure update policies for iOS to force supervised iOS devices to automatically install the latest available software update.
 keywords:
 author: dougeby
 manager: dougeby
@@ -25,7 +25,7 @@ ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
 
 ---
 
-# Configure software updates for supervised iOS devices
+# Configure iOS update policies
 Update policies for iOS let you force supervised iOS devices to automatically install the latest available software update. You have the option to configure the days and times when you do not want devices to install the update.
 
 ## Configure the iOS update policy
