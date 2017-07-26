@@ -54,4 +54,4 @@ When you enroll a device into management, you are giving your company permission
 **What your company might be able to see**
 
 -  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page. 
--  Location: except for [supervised iOS devices that have gone missing](https://go.microsoft.com/fwlink/?linkid=853816)
+-  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
