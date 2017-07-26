@@ -103,6 +103,7 @@
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
+### [Synchronize device](device-sync.md)
 ### [Examine device inventory](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -173,6 +174,7 @@
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
+### [Configure iOS update policies](software-updates-ios.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
