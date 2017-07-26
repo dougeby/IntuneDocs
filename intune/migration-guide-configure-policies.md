@@ -51,7 +51,7 @@ You can create device groups when you need to perform administrative tasks based
 
 Device groups are useful for managing devices that do not have dedicated users, such as kiosk devices, devices shared by shift workers, or devices assigned to a specific location.
 
-By configuring device groups ahead of device enrollment, you can use device categories to automatically join devices to groups upon enrollment. Then they will receive their group’s device policies automatically. [Get started with groups](groups-get-started.md). 
+By configuring device groups ahead of device enrollment, you can use device categories to automatically join devices to groups upon enrollment. Then they will receive their group’s device policies automatically. [Get started with groups](groups-get-started.md).
 
 ### Task 2: Use resource access profiles (Wi-Fi, VPN, and email certificates)
 
@@ -67,7 +67,7 @@ You need to create a device configuration profile to enforce device-level settin
 
 -   **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
 
-- Learn how to add a custom policy for [iOS](custom-settings-ios.md)
+- Learn how to add a custom policy for [iOS](custom-settings-ios.md).
 
 ### Task 4: Create and deploy device compliance policies (optional)
 
@@ -99,4 +99,4 @@ Device enrollment is necessary to manage the device. Learn [how to get ready to 
 
 ## Next steps
 
-[Configure app protection policies (optional)](migration-guide-app-protection-policies.md)
+[Configure app protection policies (optional)](migration-guide-app-protection-policies.md).
