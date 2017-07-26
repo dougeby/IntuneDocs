@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,14 +38,19 @@ As an Intune admin, you can determine which devices can enroll into management w
   - iOS
   - macOS
   - Windows
-- Restrict personally owned devices (iOS and Android only)
+  - Platform operating system version (iOS and Android only)
+    - Minimum version
+    - Maximum version
+  - Restrict personally owned devices (iOS, Android, macOS only)
 
 >[!NOTE]
 >Enrollment restrictions are not a security feature. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
 
 ## Set device type restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
-1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. Choose **Device enrollment** > **Enrollment restrictions**.
 ![Screenshot of the device restrictions workspace with the default device type restrictions and device limit restrictions.](media/device-restrictions-set-default.png)
 2. Under **Enrollment restrictions** > **Device Type Restrictions**, select **Default**.
 3. Under **All Users**, select **Platforms**. Choose **Allow** or **Block** for each platform:
@@ -56,6 +61,7 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 
   Click **Save**.
 4. Under **All Users**, select **Platform Configurations** and select the following configurations:
+  - **Versions** - Specify **Min** and **Max** platform operating system versions for Android and iOS devices. Operating system versions don't apply to devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
   - **Personally Owned** - Specify whether to **Allow** or **Block** for Android and iOS devices.
   ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
   Click **Save**.
@@ -65,9 +71,12 @@ The default enrollment restrictions apply to all users who aren't assigned highe
 
 ## Set device limit restrictions
 The default enrollment restrictions apply to all users who aren't assigned higher priority enrollment restrictions.  
-1. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
-2. Choose **Enrollment restrictions** > **Device Limit Restrictions**.
-3. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. Choose **Device enrollment** > **Enrollment restrictions**.
+4. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
+5. Choose **Enrollment restrictions** > **Device Limit Restrictions**.
+6. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
 ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
 
   Click **Save**.
