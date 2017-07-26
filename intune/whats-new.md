@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 07/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Device configuration
 -->   
 
+## Week of July 23rd, 2017
 
+### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->
+End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode will default to the system setting. For Windows 10 version 1511 and earlier, the app mode will default to the light mode.
+
+### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->
+End users are now able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
 
 ## Week of June 26th, 2017
 
@@ -59,19 +65,11 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 
 ### Device management
 #### New remote actions for iOS devices <!-- 854689 -->
-In this release, we've added two new remote device actions for iOS devices:
+In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
 - 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
 - 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
-
-Using these remote actions, admins be able to manage the users accounts cached on a shared iPad and also log out the user currently logged into the device.
-
-During enrollment, the admin determines the maximum number of user accounts that can be cached on a device. "Remove user" allows admins to remove specific users that are cached.
-
-"Logout current user" will log out the user that's currently logged in to the device. This action can be found at the top of the device overview blade where device actions traditionally exist.
-
-"Remove user" will delete a specified user from the local cache of the device. This action can be found by navigating to "Monitor" -> "Users" -> right click on a specific user in the list. Any data that is associated with the user account that hasn't been synced will be lost. Also, it may take up to 24 hours for the user list to reflect that the user has been removed.
 
 #### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
 In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
@@ -84,6 +82,10 @@ In this release, we've expanded the support for managing the iOS Classroom app t
 Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
 In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
+
+#### Easier installation of Office 365 apps <!--- 1121362 --->
+The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
+For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
 
 
 #### Support for offline apps from the Windows Store for Business <!--- 777044 --->
@@ -278,12 +280,16 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
+### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+
+
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017
 <!-- 1327781 -->
 
 On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
 
-There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Note that there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app. 
+There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Note that there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app.
 
 We recommend that you upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 

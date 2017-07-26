@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,6 +84,10 @@ Do not click the **Upload** button multiple times for the same VPP token. This w
 
 ## Device configuration
 
+### iOS Activation Lock bypass 
+
+Currently, you might not be able to retrieve the Activation Lock bypass code. We are aware of this issue, and it will be fixed in an upcoming release.
+
 ### You cannot save a Windows Information Protection policy for some devices
 
 For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
@@ -113,7 +117,11 @@ For more information, see [What is device compliance](device-compliance.md).
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## Data protection
+
+### iOS App Protection Policies
+
+You can define [App Protection Policies for iOS](app-protection-policy-settings-ios.md) that are available for users on devices managed through MAM without enrollment. Due to a temporary error, you can only define these policies for iOS versions with a single decimal point version rather than multiple decimal points. Instead of setting a minimum version of iOS 10.3.1, you set it for iOS 10.3. This will be resolved with a forthcoming update to the iOS SDK.
 
 
 ## Administration and accounts

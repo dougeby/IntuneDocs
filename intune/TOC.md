@@ -15,6 +15,7 @@
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
 ## [Common scenarios](common-scenarios.md)
+## [Service description](microsoft-intune-service-description.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows enrollment](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
-### Set up iOS enrollment
-#### [With Device Enrollment Program](device-enrollment-program-enroll-ios.md)
-#### [With Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Set up iOS enrollment](ios-enroll.md)
+#### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
@@ -119,6 +120,7 @@
 #### [Windows Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
+#### [Office 365 apps for Windows 10](apps-add-office365.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
 ### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
@@ -183,13 +185,12 @@
 ### [Monitor profiles](device-profile-monitor.md)
 ### [Troubleshoot profiles](device-profile-troubleshoot.md)
 
-## [Set device compliance](device-compliance.md)
-### [Prerequisites](device-compliance-get-started.md)
+## [Set device compliance](device-compliance-get-started.md)
 ### [Create Android policy](compliance-policy-create-android.md)
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
+### [Create macOS policy](compliance-policy-create-mac-os.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-### Create Actions for noncompliance
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)

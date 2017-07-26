@@ -51,11 +51,13 @@ There are three different places to monitor the compliance status:
 
 ![Summary tile on the Intune mobile application management blade](./media/app-protection-user-status-summary.png)
 
--   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
+-   **Users**: The total number of users in your company who are using an app which is associated with a policy in a work context.
 
--   **MANAGED BY POLICY**: The number of users who have used at least one of the apps in the work context.
+-   **MANAGED BY POLICY**: The number of users who have used an app who have a policy assigned to them in a work context.
 
--   **NO POLICY**: The number of users who are using the apps that are associated with the policy, but who are not targeted by the policy. You might consider adding these users to the policy.
+-   **NO POLICY**: The number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
+	> [!NOTE]
+	> If you have multiple policies per platform, a user will be considered managed by policy when they have at least one policy assigned to them.
 
 - **Flagged users**: The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
 
