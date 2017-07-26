@@ -28,7 +28,7 @@ ms.suite: ems
 
 ---
 
-# What information can my company see when I enroll my device in Intune?
+# What information can my company see when I enroll my device?
 
 When you enroll a device into management, you are giving your company permission to view certain pieces of information on your device to help protect the corporate data on the device.
 
