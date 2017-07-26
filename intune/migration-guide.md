@@ -70,7 +70,7 @@ This guide breaks down the migration into two phases, both of which include task
 
 It's important to recognize that your new Intune deployment might be different from your old MDM deployment. Unlike traditional MDM services, Intune centers on identity-driven access control, and so does not require a network proxy appliance to control access to corporate data from mobile devices outside the organization's network perimeter. Microsoft offers solutions to secure data services within the cloud itself through a suite of tightly integrated cloud services, collectively referred to as the Enterprise Client + Security offering.
 
--   Review the [common ways to use Intune](migration-guide-prepare.md#assess-mdm-requirements).
+-   Review the [common ways to use Intune](common-scenarios.md).
 
 ## Next steps
 
