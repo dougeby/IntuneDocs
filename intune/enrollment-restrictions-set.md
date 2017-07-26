@@ -66,7 +66,7 @@ The default enrollment restrictions apply to all users who aren't assigned highe
   ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
   Click **Save**.
 
->[!NOTE]
+>[!NOTE] 
 >If you block personally owned Android devices from enrollment, Android for Work devices can still be enrolled.
 
 ## Set device limit restrictions
