@@ -2,12 +2,12 @@
 # required metadata
 
 title: Enable BYOD with Microsoft Intune
-description:
+description: A high-level workflow for setting up Intune to enable a bring-your-own-device (BYOD) solution to your organization.
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ The workflow is divided into the following three processes. You can tailor aspec
 
 -   **[Enroll devices and check for compliance](#enroll-devices-and-check-for-compliance)** describes how to enable users to enroll their personal devices into management with Intune. Intune manages iOS, macOS, Android, and Windows devices. This section also describes how to deploy policies to devices and ensure they meet basic security requirements.
 
-- **[Provide access to company resources](#provide-access-to-company-resources)** shows you how IT can enable users to access company resources easily and securely. You do this by deploying access profiles to managed devices. This section also explains how to manage volume-purchased app deployments with Intune.
+- **[Provide access to company resources](#provide-access-to-company-resources)** shows you how you can enable users to access company resources easily and securely. You do this by deploying access profiles to managed devices. This section also explains how to manage volume-purchased app deployments with Intune.
 
 -   **[Protect company data](#protect-company-data)** helps you learn how to provide conditional access to company resources, prevent data loss, and remove company apps and data from devices when they are no longer needed for work or have been lost or stolen.
 
@@ -44,19 +44,17 @@ The workflow is divided into the following three processes. You can tailor aspec
 ## Before you begin
 Before users can enroll devices, you first need to prepare the Intune service itself. To do so, [assign licenses to users](licenses-assign.md) and [set the mobile device management authority](mdm-authority-set.md).
 
-While you're at it, you should also [customize the company portal](company-portal-customize.md). Add company branding and provide users with support information. This creates a trusted enrollment and support experience for your users.
+While you're at it, you should also [customize the company portal](company-portal-customize.md). Add company branding and provide users with support information. This creates a trusted enrollment and support experience for your users. You can also create [terms of use](terms-and-conditions-create.md) that users must accept before enrolling, or [device restrictions](enrollment-restrictions-set.md) to specify which platforms you support.
 
 ## Enroll devices and check for compliance
 
 After you prepare the Intune service, you need to meet the various enrollment requirements for the different device types that you want to manage. The process to enroll devices into management is straightforward, but differs slightly based on device type.
 
--   **iOS and Mac devices** You need to [get an Apple Push Notification service (APNs) certificate](apple-mdm-push-certificate-get.md) to enroll iPads, iPhones, or MacOS devices. After you've uploaded your APNs certificate to Intune, users can [enroll iOS devices](/intune-user-help/enroll-your-device-in-intune-ios) using the Company Portal app and use the Company Portal website to [enroll MacOS devices](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **iOS and Mac devices** You need to [get an Apple MDM push certificate](apple-mdm-push-certificate-get.md) to enroll iPads, iPhones, or MacOS devices. After you've uploaded your MDM push certificate to Intune, users can [enroll iOS devices](/intune-user-help/enroll-your-device-in-intune-ios) using the Company Portal app and use the Company Portal website to [enroll MacOS devices](/intune-user-help/enroll-your-device-in-intune-macos).
 
--   **Android devices** There's nothing you need to do to get the Intune service ready to enroll Android devices. Users can just [enroll their Android devices](/intune-user-help/enroll-your-device-in-intune-android.md) into management using the Company Portal app available from Google Play.
+-   **Android devices** There's nothing you need to do to get the Intune service ready to enroll Android devices. Users can just [enroll their Android devices](/intune-user-help/enroll-your-device-in-intune-android) into management using the Company Portal app available from Google Play.
 
--   **Windows Phones and PCs** You should [set a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrolling Windows devices easier. Otherwise, users can [enroll Windows devices](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows) by adding a work or school account.
-
-  - If you have Azure AD Premium, you can make it easier for your users to enroll Windows devices by [enabling the automatic enrollment](windows-enroll.md). This feature enrolls a device automatically into Intune when a user adds a work or school account to register their personal device. It also works for a company-owned device that joins your organization’s Azure AD.
+-   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. To simplify your users' experience, you can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
 
 
 ### Make sure that managed devices meet basic security requirements
@@ -67,13 +65,13 @@ When you [deploy a compliance policy](device-compliance-get-started.md) to a use
 
 ## Provide access to company resources
 
-The first thing most employees want on their mobile device is access to company email and documents. And they expect to set it up without going through complex steps or calling the help desk. Intune makes it easy for you to [create and deploy email settings](conditional-access-intune-common-ways-use.md) for native email apps that are pre-installed on mobile devices.
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+The first thing most employees want on their mobile device is access to company email and documents. And they expect to set it up without going through complex steps or calling the help desk. Intune makes it easy for you to [create and deploy email settings](email-settings-configure.md) for native email apps that are pre-installed on mobile devices.
+
 
 > [!NOTE]
 > Intune supports Android for Work email profile configuration for the Gmail and Nine Work email apps found in the Google Play store.
 
-Intune also helps you control and protect access to on-premises company data when users work offsite. Intune [Wi-Fi](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune), [VPN](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile), and email profiles work together to permit access to the files and resources that users need to do their work wherever they are. Your company's web applications and services hosted on-premises can also be securely accessed and protected using the Azure Active Directory Application Proxy and conditional access.
+Intune also helps you control and protect access to on-premises company data when users work offsite. Intune [Wi-Fi](wi-fi-settings-configure.md), [VPN](vpn-settings-configure.md), and email profiles work together to permit access to the files and resources that they need to do their work wherever they are. Your company's web applications and services hosted on-premises can also be securely accessed and protected using the Azure Active Directory Application Proxy and conditional access.
 
 ### Manage volume-purchased apps
 With Intune, it is easy to:
@@ -115,8 +113,8 @@ Use [Windows Information Protection (WIP) policies](app-protection-policies-conf
 
 ### Wipe company data while leaving personal data intact
 
-When a device is no longer needed for work, is being repurposed, or has just gone missing, you need to be able to remove company apps and data from it. To do this, you can use Intune's selective wipe and full wipe capabilities. Your users can also remotely wipe their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
+When a device is no longer needed for work, is being repurposed, or has just gone missing, you can remove company apps and data from it. To do this, you can use Intune's selective wipe and full wipe capabilities. Your users can also remotely wipe their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
 
 A [full wipe](devices-wipe.md) restores a device to its factory default settings and removes user data and settings. A [selective wipe](devices-wipe.md#selective-wipe) removes only company data from the device but leaves users’ personal data intact.
 
-Once initiated, the device immediately begins the selective wipe process to be removed from management. When the process is complete, all company data is deleted and the device name is removed from the Intune administrator console. This ends the device management lifecycle.
+Once initiated, the device immediately begins the selective wipe process to be removed from management. When the process is complete, all company data is deleted and the device name is removed from the Intune portal. This ends the device management lifecycle.
