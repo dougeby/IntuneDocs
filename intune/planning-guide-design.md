@@ -114,7 +114,7 @@ Intune offers two deployment options: standalone and hybrid. Standalone refers t
 
 ## Intune tenant location
 
-If your organization has global presence, make sure to plan where your tenant resides when you subscribe to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world which are listed below:
+If your organization has global presence, make sure to plan where your tenant resides when you subscribe to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world, which are listed below:
 
 -   North America
 
@@ -127,7 +127,7 @@ If your organization has global presence, make sure to plan where your tenant re
 
 ## External dependencies
 
-External dependencies are services and products that are separate from Intune, but are either a requirement of Intune, or might integrate with Intune. It’s important to identify requirements for any external dependencies and how to configure them. Some examples of common external dependencies are:.
+External dependencies are services and products that are separate from Intune, but are either a requirement of Intune, or might integrate with Intune. It’s important to identify requirements for any external dependencies and how to configure them. Some examples of common external dependencies are:
 
 -   Identity
 
@@ -139,7 +139,7 @@ Let’s explore in more detail these common external dependencies below
 
 ### Identity
 
-Identity is how we identify the users who belong to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to use your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important for Intune to use the same Azure AD environment.
+Identity is how we identify the users who belong to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you can use your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important for Intune to use the same Azure AD environment.
 
 Learn more about the following Intune identity requirements:
 
@@ -153,7 +153,7 @@ MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
 
 ### User and device groups
 
-User and device groups determine the target of a deployment, including policies, applications, and profiles. You’ll need to determine what user and device groups will be required.
+User and device groups determine the target of a deployment, including policies, applications, and profiles. You need to determine what user and device groups will be required.
 
 We recommend that you create all groups in the on-premises Active Directory, then synchronize to Azure AD. Learn more about user and device group planning and creation:
 
@@ -165,7 +165,7 @@ MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
 ### Public key infrastructure (PKI)
 Public key infrastructure supplies certificates to devices or users to securely authenticate to a service. Intune supports a Microsoft PKI infrastructure. Device and user certificates can be issued to a mobile device to satisfy certificate-based authentication requirements. Before you use certificates, you need to determine if you need them, if the network infrastructure can support certificate-based authentication, and if certificates are currently used in the existing environment.
 
-If you're planning to use certificates with VPN, Wi-Fi, or e-mail profiles with Intune, you need to make sure you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles.
+If you're planning to use certificates with VPN, Wi-Fi, or e-mail profiles with Intune, make sure you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles.
 
 In addition, if SCEP certificates will be issued, you need to determine which server will host the Network Device Enrollment Service (NDES) feature, and how the communication will happen.
 
@@ -182,7 +182,7 @@ MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
 
 ## Device platform considerations
 
-You need to take a closer look at the following aspects of your devices to understand how to manage them correctly.
+Take a closer look at the following aspects of your devices to understand how to manage them correctly.
 
 -   Supported device platforms
 
@@ -225,7 +225,7 @@ Refer to [Section 3: Determine use case scenario requirements](planning-guide-re
 
 ## Feature requirements
 
-In these sections, we’ll review the following features and capabilities that are aligned with your use case scenario requirements:
+In these sections, we review the following features and capabilities that are aligned with your use case scenario requirements:
 
 -   Terms and conditions policies
 
@@ -410,7 +410,7 @@ For online access, decide what platforms, and user groups will be targeted by co
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
-MAIL TO ANDRE 7/27 
+MAIL TO ANDRE 7/27
 -   [Exchange on-premises](exchange-connector-install.md)
 
 Here’s an example of how to document conditional access policies:
