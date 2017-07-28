@@ -119,7 +119,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
  - **Enroll without user affinity** - Choose for device unaffiliated with a single user. Use for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
-4. Chose **Device Management Settings** to configure the following profile settings:
+4. Choose **Device Management Settings** to configure the following profile settings:
 
   ![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
