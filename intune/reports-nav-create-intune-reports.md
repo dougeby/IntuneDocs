@@ -29,12 +29,12 @@ ms.custom: intune-classic
 
 Use the Intune Data Warehouse to build reports that provide insight into your enterprise mobile environment. For example, some of the reports include:
 -	Trend of users enrolling in Intune so you can optimize your license purchases
--	App and OS versions breakdown so you can review that state of your users
+-	App and OS versions breakdown so you can review that status of mobile devices
 -	Enrollment and device compliance trends so you can smoothly roll out policy updates
 
-The Data Warehouse provides you access to more information about devices than the Azure portal. With the Intune Data Warehouse you can access:
+The Data Warehouse provides you access to more information about your mobile environment than the Azure portal. With the Intune Data Warehouse you can access:
 
-  -  Recent Intune data
+  -  Historical Intune data
   -  Data refreshed on a daily cadence
   -  A data model using the OData standard
 
@@ -43,5 +43,5 @@ The Data Warehouse provides you access to more information about devices than th
 
 ## Next steps
 
-- Get a link and use PowerBI to get insight. For instructions, see [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
+- Get a link and use Power BI to get insight. For instructions, see [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
 - Get more information about the Intune Data Warehouse API, the data model, and relationships between entities<!-- , and an example of creating a custom client to retrieve data,--> see [Intune Data Warehouse API](reports-nav-intune-date-warehouse.md).
