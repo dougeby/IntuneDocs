@@ -2,7 +2,7 @@
 # required metadata
 title: Authorization | Microsoft Docs 
 description: Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC).
-keywords:
+keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe

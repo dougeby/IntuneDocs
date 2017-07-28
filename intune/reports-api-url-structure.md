@@ -2,7 +2,7 @@
 # required metadata
 title: API URL Structure | Microsoft Docs 
 description: Reference topic describes the API URL structure.
-keywords:
+keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
