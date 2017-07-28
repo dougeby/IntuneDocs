@@ -301,7 +301,7 @@
 #### [User](reports-ref-user.md)
 #### [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
 #### [Devices](reports-ref-devices.md)
-#### [Application](reports-ref-application-api.md)
+#### [Application](reports-ref-application.md)
 #### [Policy](reports-ref-policy.md)
 <!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
