@@ -22,7 +22,7 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: 
+ms.custom:
 
 ---
 
@@ -43,7 +43,7 @@ Together, Office 365 and EMS enable your workforce to be productive on all of th
 ## How does Intune work?
 Intune provides mobile device management (MDM) and mobile app management (MAM). Intune’s MDM and MAM features then contribute to the EMS suite of data protection and compliance scenarios.  
 
-How you’ll use the MDM/MAM features of Intune and EMS data protection depends on the [business problem you’re trying to solve](#common-business-problems-that-intune-helps-solve). For example:
+How you use the MDM/MAM features of Intune and EMS data protection depends on the [business problem you’re trying to solve](#common-business-problems-that-intune-helps-solve). For example:
 * You’ll make strong use of MDM if you're creating a pool of single-use devices to be shared by shift workers in a retail store.
 * You’ll lean on MAM and data protection if you allow your workforce to use their personal devices to access corporate data (BYOD).  
 * If you are issuing corporate phones to information workers, you’ll rely heavily on all of the technologies.
@@ -117,5 +117,5 @@ The following list of business problems link to more detailed information about 
 
 ### Next steps
 * Read about some of the [common ways to use Intune](common-scenarios.md).
-* Get familiar with the product [with a 30-day trial of Intune](free-trial-sign-up.md) .
-* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) of Intune .
+* Get familiar with the product [with a 30-day trial of Intune](free-trial-sign-up.md).
+* Dive into the [technical requirements and capabilities](supported-devices-browsers.md) of Intune.
