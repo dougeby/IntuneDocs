@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,6 +38,19 @@ Microsoft Intune helps you manage apps that you purchased through this program b
 - Importing the license information from the app store
 - Tracking how many of the licenses you have used
 - Preventing you from installing more copies of the app than you own
+
+There are two methods you can use to assign volume-purchased apps:
+
+### Device licensing
+
+When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it.
+When you assign volume-purchased apps to a device, the end user of the device does not have to supply an Apple ID to access the store. 
+
+### User licensing
+
+When you assign an app to users, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns.
+When you assign a volume-purchased app to users, each end user must have a valid Apple ID in order to access the app store.
+
 
 Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program store with Intune. Use the **Books** workload in the Intune portal to manage books. The procedures to manage books are the same as you use for managing apps.
 You must have uploaded an Apple Volume Purchase Program token before you start. Currently, you can only assign books as a **Required** install.
@@ -86,24 +99,28 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1. In the **Mobile Apps** workload, choose **Manage** > **Licensed Apps**.
-2. On the list of apps blade, choose the app you want to assign, and then choose '**...**' > **Assign Groups**.
-3. On the <*app name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
-4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
-You must choose an assignment action of **Required**. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before this date, and you do not have the option to assign VPP apps to device groups, contact Intune support.
-5. Once you are done, choose **Save**.
+1.	In the **Mobile Apps** workload, choose **Manage** > **App Licenses**.
+2.	On the list of apps blade, choose the app you want to assign, and then choose '**...**' > **Assign Groups**.
+3.	On the *<app name>* - **Assignments** blade, choose **Manage** > **Assignments**.
+4.	Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
+5.	For each group you selected, choose the following settings:
+	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end users devices will automatically get the app installed).
+When you assign a VPP app as **Available**, the app content and license are assigned directly from the app store.
+	- **License type** - Choose from **User licensing**, or **Device licensing**.
+6.	Once you are done, choose **Save**.
+
 
 >[!NOTE]
 >The list of apps displayed is associated with a token. If you have an app that is associated with multiple VPP tokens, you see the same app being displayed multiple times; once for each token.
 
-See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
-
 ## Further information
 
-When you assign the app as a **Required** installation, each user who installs the app uses a license.
-
-To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled.
+To reclaim a license, you must change the assignment action to Uninstall. The license will be reclaimed after the app is uninstalled.
 
 When a user with an eligible device first tries to install a VPP app, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
 
-When you assign a VPP app as Available, the app content and license are assigned directly from the app store.
+
+
+## Next steps
+
+See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
