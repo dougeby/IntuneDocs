@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,7 +57,7 @@ ms.custom: intune-azure
 - 	**Region settings modification (desktop only)** - Prevents the end user from changing the region settings on the device.
 - 	**Language settings modification (desktop only)** - Prevents the user from changing the language settings on the device.
 - 	**System Time modification** - Prevents the end user from changing the device date and time.
-- 	**Device name modification** - Prevents the end user from changing the device name.
+- 	**Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
 - 	**Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
 - 	**Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
 - 	**Device discovery** - Block a device from being discovered by other devices.
