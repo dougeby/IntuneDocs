@@ -255,6 +255,8 @@
 ### [Add apps for Intune client PCs](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
 ### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
+### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
 ## [Educate users](end-user-educate.md)
 ### [Company Portal messages](end-user-company-portal-messages.md)
@@ -290,5 +292,17 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Date Warehouse API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Authorization](reports-api-authorization.md)
+### [API URL Structure](reports-api-url-structure.md)
+### [Data Warehouse Data Model](reports-ref-data-model.md)
+#### [Date](reports-ref-date.md)
+#### [User](reports-ref-user.md)
+#### [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
+#### [Devices](reports-ref-devices.md)
+#### [Application](reports-ref-application-api.md)
+#### [Policy](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossary](intune-glossary.md)
