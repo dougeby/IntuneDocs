@@ -37,14 +37,15 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 
 By the way, DEP enrollment does not work with the [device enrollment  manager](device-enrollment-manager-enroll.md).
 
+<!--
 **Steps to enable enrollment programs from Apple**
 1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-token)
 2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
 3. [Synchronize DEP-managed devices](#sync-managed-device)
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
-
-**Prerequisites**
+-->
+## Prerequisites
 - Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
 - [MDM Authority](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
@@ -55,7 +56,7 @@ By the way, DEP enrollment does not work with the [device enrollment  manager](d
 
 ## Get the Apple DEP token
 
-Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP devices that your corporation owns. It also permits Intune to upload enrollment profiles to Apple and to assign devices to those profiles.
+Before you can enroll iOS devices with DEP, you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP devices that your corporation owns. It also permits Intune to upload enrollment profiles to Apple and to assign devices to those profiles.
 
 You use the Apple DEP portal to create a DEP token. You also use the DEP portal to assign devices to Intune for management.
 
@@ -106,13 +107,13 @@ Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. 
 
 ## Create an Apple enrollment profile
 
-A device enrollment profile defines the settings applied to a group of devices during enrollment.
+Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**.
-2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles**, and then choose **Create** on the **Enrollment Program Profiles** blade.
-3. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles** > **Create**.
+3. On **Create Enrollment Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  For **User Affinity**, choose whether devices with this profile enroll with or without user affinity.
+  For **User Affinity**, choose whether devices with this profile enroll with or without an assigned user.
 
  - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps.
 
@@ -189,6 +190,7 @@ You must assign an enrollment program profile to devices before they can enroll.
 
   ![Screenshot of Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
 
-You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. An activated device cannot apply an enrollment profile until the device is factory reset.
+## Distribute devices
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
 See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
