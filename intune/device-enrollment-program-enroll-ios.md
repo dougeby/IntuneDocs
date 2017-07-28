@@ -126,7 +126,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
 
-	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
 	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
 
