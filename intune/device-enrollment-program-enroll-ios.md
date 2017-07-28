@@ -64,7 +64,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 
-1. In the Intune portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
 
   ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
 
@@ -83,7 +83,6 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
 
-   ![Screenshot of choosing the public key file button and then clicking Next.](./media/enrollment-program-token-choose-file.png)
 6.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
 
 7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
@@ -98,7 +97,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
    In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
-**Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In the Intune portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token to avoid needing to re-enroll all your devices.
+**Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In Intune in the Azure portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token in the future to avoid needing to re-enroll all your devices.
 
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
 
@@ -109,7 +108,7 @@ Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. 
 
 A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**.
 2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles**, and then choose **Create** on the **Enrollment Program Profiles** blade.
 3. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -154,9 +153,9 @@ A device enrollment profile defines the settings applied to a group of devices d
 9. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
 
 ## Sync managed devices
-Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in the Intune portal.
+Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
-1. In the Intune portal, choose **Device enrollment** >  **Apple Enrollment** > **Enrollment Program Devices**.
+1. In Intune in the Azure portal, choose **Device enrollment** >  **Apple Enrollment** > **Enrollment Program Devices**.
 2. Under **Enrollment Program Devices**, choose **Sync**.
 
   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
@@ -177,7 +176,7 @@ You must assign an enrollment program profile to devices before they can enroll.
 >[!NOTE]
 >You can also assign serial numbers to profiles from the **Apple Serial Numbers** blade.
 
-1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
 2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Assign devices**.
 
  ![Screenshot of Device Assignments with Assign being selected.](./media/enrollment-program-device-assign.png)
@@ -188,8 +187,8 @@ You must assign an enrollment program profile to devices before they can enroll.
   - **&lt;profile name&gt;**
 4. Choose the devices you want to assign. The checkbox above the column selects up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
 
-  ![Screenshot of Assign button for assigning enrollment program profile in the Intune portal](media/dep-profile-assignment.png)
+  ![Screenshot of Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
 
 You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
-See [Enroll your iOS device in Intune with the Device Enrollment Program](../../intune-user-help/enroll-your-device-dep-ios.md).
+See [Enroll your iOS device in Intune with the Device Enrollment Program](../../intune-user-help/enroll-your-device-dep-ios).
