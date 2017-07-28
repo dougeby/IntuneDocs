@@ -21,6 +21,5 @@
 - Google Android for Work ([requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
 *The following models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX Standard devices: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY, and SM-G313U. These devices are managed as standard Android devices. See the [Samsung KNOX website](https://www.samsungknox.com/en) for more information. 
-<!--- Loc Comment: An additional space was erased in line 23 since it was creating a bullet point in stead of a clarification --->
 
 For a full list of devices and management methods, see [Intune supported devices](/intune/supported-devices-browsers#intune-supported-devices).
