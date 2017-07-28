@@ -191,4 +191,4 @@ You must assign an enrollment program profile to devices before they can enroll.
 
 You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
-See [Enroll your iOS device in Intune with the Device Enrollment Program](../../intune-user-help/enroll-your-device-dep-ios).
+See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
