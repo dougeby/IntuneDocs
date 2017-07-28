@@ -83,8 +83,8 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 ### Reassign a profile to device serial numbers
 
 You assign an enrollment profile when you import iOS serial numbers for Apple Configurator enrollment. Intune also lets you assign profiles from two places in the Azure portal:
-- Assign from **Apple Configurator devices**
-- Assign from **AC profiles**
+- **Apple Configurator devices**
+- **AC profiles**
 
 #### Assign from Apple Configurator devices
 1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
