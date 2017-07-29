@@ -23,13 +23,13 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# API URL Structure
+# API URL structure
 
-The Data Warehouse API endpoints read the entities for each set. The API supports a **GET** HTTP verb, and subset of query options.
+The Data Warehouse API endpoints read the entities for each set. The API supports a **GET** HTTP verb, and a subset of query options.
 
 ## Format
 
-The URL for intune uses the following format:  
+The URL for Intune uses the following format:  
 https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}
 
 The URL contains the following elements:
@@ -45,6 +45,6 @@ The URL contains the following elements:
 
 The current version of the API is: `beta`. 
 
-## OData queries options
+## OData query options
 
 The current version supports the following OData query parameters: `$skip, $top, $filter, $orderby`.

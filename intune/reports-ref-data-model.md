@@ -37,9 +37,9 @@ The warehouse exposes data in the following high-level categories:
   -  Apps and software inventory
   -  Device configuration and compliance policies
 
-## Data Model entity sets
+**Data model entity sets**
 
-Entity sets are named collections of entities in the data model. These sets contain entities that define the data collected in the model. Each entity sets provide an access point into the Data Warehouse data model. You find details about the following categories of entities:
+Entity sets are named collections of entities in the data model. These sets contain entities that define the data collected in the model. Each entity set provide an access point into the Data Warehouse data model. You find details about the following categories of entities:
 
   -  [Date](reports-ref-date.md)
   -  [User](reports-ref-user.md)

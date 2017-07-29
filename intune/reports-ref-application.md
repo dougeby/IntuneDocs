@@ -23,7 +23,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Application
+# Reference for application entities
 
 The **Application** category contains entities for mobile devices that track information such as:
 

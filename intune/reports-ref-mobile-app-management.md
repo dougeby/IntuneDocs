@@ -23,7 +23,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Mobile App Management
+# Reference for mobile app management (MAM) entities
 
 The **Mobile App Management** category contains entities for mobile apps such as:
 
@@ -73,7 +73,10 @@ The **MamApplicationInstance** entity lists managed Mobile Application Managemen
 
 ## MamCheckin
 
-The **MamCheckin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service. Note: When an app instance checks in multiple times a day, the data warehouse stores it as single check-in.
+The **MamCheckin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service. 
+
+> [!Note]  
+> When an app instance checks in multiple times a day, the data warehouse stores it as single check-in.
 
 | Property | Description | Example |
 |---------|------------|--------|

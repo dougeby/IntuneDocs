@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Devices | Microsoft Docs  
-description: {Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
+description: Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
@@ -23,7 +23,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Devices
+# Reference for devices entities
 
 The **Devices** category contains entities for mobile devices that track information such as:
 

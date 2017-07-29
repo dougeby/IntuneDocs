@@ -25,7 +25,7 @@ ms.custom: intune-classic
 
 #  Intune Data Warehouse API
 
-The Intune Data Warehouse API lets you to access your Intune data in a machine-readable format for use in your favorite analytic tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
+The Intune Data Warehouse API lets you  access your Intune data in a machine-readable format for use in your favorite analytic tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
 
   -   Request and response headers
   -   Status codes
@@ -50,14 +50,14 @@ For more information, see [Get data from the Data Warehouse API with a REST clie
 
 ## Interacting with the API
 
-The API requires must authorize with Azure AD. Azure AD uses OAuth 2.0. Once authorized, you can get data from the API using an HTTP GET verb and contacting the exposed entity collections. For details see:
+The API requires authorization with Azure AD. Azure AD uses OAuth 2.0. Once authorized, you can get data from the API using an HTTP GET verb and contacting the exposed entity collections. For details see:
 
  -  [Authorization](reports-api-authorization.md)
  -  [API URL Structure](reports-api-url-structure.md)
 
 ## Intune Data Warehouse data model
 
-OData defines an abstract data model and a protocol that let any client access information exposed by any data source. The data model documentation topic contains an explanation of the namespaces, entities, and return objects in the Intune Data warehouse data model. For more information, see [Data Warehouse Data Model](reports-ref-data-model.md).
+OData defines an abstract data model and a protocol that let any client access information exposed by any data source. The data model documentation topic contains an explanation of the namespaces, entities, and return objects in the Intune Data Warehouse data model. For more information, see [Data Warehouse Data Model](reports-ref-data-model.md).
 
 ## For more information
 

@@ -49,8 +49,8 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 
 The Power BI file (pbix) contains connection information for your tenant and a set of prebuilt reports based on the Data Warehouse data model. Open the file in Power BI Desktop and sign in to the Azure AD. The report loads the data from your Intune tenant.
 
-1.  Sign in to the Azure portal. and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
-2.  Open the **Microsoft Intune data warehouse API (Preview)** blade.
+1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
+2.  Open the **Microsoft Intune Data Aarehouse API (Preview)** blade.
 3.  Click **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
 4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second as it gets your tenant data.
 5.  Click **Refresh** to load your tenant data and review the reports.
@@ -75,7 +75,7 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 
 ## Next steps
 
-You can find the answers to questions about your environment such as the number of devices enrolled by day over the last week. You can gain insight into your Intune tenant and client population using the reports using the Intune Data Warehouse Power BI file (pbix) retrieved from the blade in Azure. However, Intune provides a number of additional ways to extend or reuse the data. There is a lot more that you can do with Power BI and the Intune Data warehouse API, for example:
+You can find the answers to questions about your environment such as the number of devices enrolled by day over the last week. You can gain insight into your Intune tenant and client population using the reports using the Intune Data Warehouse Power BI file (pbix) retrieved from the blade in Azure. However, Intune provides a number of additional ways to extend or reuse the data. There is a lot more that you can do with Power BI and the Intune Data Warehouse API, for example:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Your tenant data is organized to help you pull insight from your data. For more information about how the data is organized, see [Data Warehouse Data Model](reports-ref-data-model.md). 

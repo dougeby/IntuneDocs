@@ -23,7 +23,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Policy
+# Reference for policy entities
 
 The **Policy** category contains entities for mobile devices that track information such as:
 
@@ -57,7 +57,7 @@ The **PolicyType** entity lists types of device configuration profiles, app conf
 | PolicyTypeKey |Unique identifier of the policy in the data warehouse |1 |
 | PolicyTypeName |Name of the policy type. |Windows 10 Compliance policy |
 
-## DeviceConfigurationProfileDeviceActivity
+## DeviceConfiguration
 
 The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devices in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The entity lists how many devices are in which state on a given day over the last 30 days.
 
@@ -69,7 +69,7 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 | Error |Number of unique Devices in error state |10 |
 | Failed |Number of unique Devices in failed state |2 |
 
-## UserConfigurationProfileDeviceActivity
+## UserConfiguration
 
 The **UserConfigurationProfileDeviceActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state while the other is in an error state, we count the user in the error state.  The **UserConfigurationProfileDeviceActivity** entity lists how many users are in which state on a given day over the last 30 days.
 

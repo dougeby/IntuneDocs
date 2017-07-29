@@ -23,11 +23,11 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# User
+# Reference for user entity
 
 The **User** category contains the **User** entity that defines user and agent properties in the data model.
 
-## User
+**User**
 
 The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 

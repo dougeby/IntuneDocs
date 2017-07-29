@@ -295,14 +295,14 @@
 ## [Date Warehouse API](reports-nav-intune-date-warehouse.md)
 <!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
 ### [Authorization](reports-api-authorization.md)
-### [API URL Structure](reports-api-url-structure.md)
-### [Data Warehouse Data Model](reports-ref-data-model.md)
-#### [Date](reports-ref-date.md)
-#### [User](reports-ref-user.md)
-#### [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-#### [Devices](reports-ref-devices.md)
-#### [Application](reports-ref-application.md)
-#### [Policy](reports-ref-policy.md)
+### [API URL structure](reports-api-url-structure.md)
+### [Data Warehouse data model](reports-ref-data-model.md)
+#### [Reference for Date entity](reports-ref-date.md)
+#### [Reference for user entity](reports-ref-user.md)
+#### [Reference for mobile app management (MAM) entities](reports-ref-mobile-app-management.md)
+#### [Reference for devices entities](reports-ref-devices.md)
+#### [Reference for application entities](reports-ref-application.md)
+#### [Reference for policy entities](reports-ref-policy.md)
 <!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossary](intune-glossary.md)
