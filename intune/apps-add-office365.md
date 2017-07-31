@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,6 +40,8 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 - Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
 - If any Office apps are open when Intune installs the app suite, end users might lose data from unsaved files.
+- This installation method is not supported on Windows 10S devices.
+- If you assign this app type as Available and target multiple users with the different assignments, they will only see the most recently targeted assignment.
 
 
 ## Get started
