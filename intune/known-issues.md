@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/28/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -83,10 +83,6 @@ Do not click the **Upload** button multiple times for the same VPP token. This w
 <!-- ## Groups -->
 
 ## Device configuration
-
-### iOS Activation Lock bypass 
-
-Currently, you might not be able to retrieve the Activation Lock bypass code. We are aware of this issue, and it will be fixed in an upcoming release.
 
 ### You cannot save a Windows Information Protection policy for some devices
 
