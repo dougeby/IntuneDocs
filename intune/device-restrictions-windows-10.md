@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,14 +49,8 @@ ms.custom: intune-azure
 - 	**Phone reset** - Controls whether the user can do a factory reset on their device.
 - 	**USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.
 - 	**AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.
-- 	**Action center notifications (mobile only)**	- Enable or disable action center notifications on the device lock screen
-(Windows 10 Mobile only).
 - 	**Cortana** - Enable or disable the Cortana voice assistant.
 - 	**Voice recording (mobile only)** - Allow or block use of the device voice recorder.
-- 	**Power and sleep settings modification (desktop only)** - Prevents the end user from changing power and sleep settings on the device.
-- 	**Region settings modification (desktop only)** - Prevents the end user from changing the region settings on the device.
-- 	**Language settings modification (desktop only)** - Prevents the user from changing the language settings on the device.
-- 	**System Time modification** - Prevents the end user from changing the device date and time.
 - 	**Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
 - 	**Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
 - 	**Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
@@ -74,7 +68,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	- 	**Maximum minutes of inactivity until screen locks** - Specifies the length of time a device must be idle before the screen is locked.
 	- 	**Password expiration (days)** - Specifies the length of time after which the device password must be changed.
 	- 	**Prevent reuse of previous passwords** - Specifies the number of previously used passwords that are remembered by the device.
-	- 	**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
+	- 	**Require password when device returns from idle state (Mobile only)** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
 	- 	**Simple passwords** – Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
 - 	**Encryption** - Enable encryption on targeted devices (Windows 10 Mobile only).
 
@@ -112,6 +106,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Install app data on system volume** - Stops apps from storing data on the system volume of the device.
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.
+- 	**Apps from store only** - Configures whether users can install apps from places other than the app store.
 
 
 
@@ -119,7 +114,6 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
 - 	**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type. This helps to minimize network bandwidth use between Edge and Microsoft services.
 -	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
-- 	**SmartScreen** - Enables or disables SmartScreen, which blocks fraudulent web sites.
 - 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
 - 	**JavaScript** - Allows scripts, such as Javascript, to run in the Edge browser.
@@ -137,13 +131,16 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
 - 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
 - 	**Block access to about flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
-- 	**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.
-- 	**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.
 - 	**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
 
+## Edge Browser SmartScreen
+
+- 	**SmartScreen** - Enables or disables SmartScreen, which blocks fraudulent web sites.
+- 	**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.
+- 	**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
@@ -163,7 +160,6 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Bluetooth discoverability** - Lets the device be discovered by other Bluetooth-enabled devices.
 - 	**Bluetooth pre-pairing** – Lets you configure specific Bluetooth devices to automatically pair with a host device.
 - 	**Bluetooth advertising** - Lets the device receive advertisements over Bluetooth.
-- 	**Device Bluetooth name** – Specify the Bluetooth name for a device. If you don’t specify a name, the default radio name is used.
 - 	**Connected devices service** – Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
 - 	**NFC**	- Lets the user enable and configure Near Field Communications capabilities on the device.
 - 	**Wi-Fi** - Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
@@ -177,14 +173,19 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 - 	**Settings app** - Block access to the Windows settings app.
 	- 	**System** - Blocks access to the system area of the settings app.
+		- 	**Power and sleep settings modification (desktop only)** - Prevents the end user from changing power and sleep settings on the device.
 	- 	**Devices** - Blocks access to the devices area of the settings app.
 	- 	**Network ​Internet** - Blocks access to the network and internet area of the settings app.
 	- 	**Personalization** - Blocks access to the personalization area of the settings app.
 	- 	**Accounts** - Blocks access to the accounts area of the settings app.
 	- 	**Time and Language** - Blocks access to the time and language area of the settings app.
+		- 	**System Time modification** - Prevents the end user from changing the device date and time.
+		- 	**Region settings modification (desktop only)** - Prevents the end user from changing the region settings on the device.
+		- 	**Language settings modification (desktop only)** - Prevents the user from changing the language settings on the device.
+	- 	**Gaming** - Blocks access to the Gaming app in Settings.
 	- 	**Ease of Access** - Blocks access to the ease of access area of the settings app.
 	- 	**Privacy** - Blocks access to the privacy area of the settings app.
-	- 	**Update Security** - Blocks access to the updates and security area of the settings app.
+	- 	**Update and Security** - Blocks access to the updates and security area of the settings app.
 
 ## Defender
 
@@ -245,17 +246,17 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 ## Windows Spotlight
 
 
-- Windows Spotlight – Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings are not available.
+- **Windows Spotlight** – Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings are not available.
 	- **Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.
 	- **Third-party suggestions in Windows Spotlight** – Stop Windows Spotlight from suggesting content that is not published by Microsoft.
-	- **Windows Tips** - Lets you block pop-up tips from displaying in Windows.
 	- **Consumer Features** - Lets you block consumer features like Start menu suggestions, and membership notifications.
+	- **Windows Tips** - Lets you block pop-up tips from displaying in Windows.
 	- **Windows Spotlight in action center** – Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
 	- **Windows Spotlight personalization** – Stops Windows Spotlight from personalizing results based on the usage of a device.
 	- **Windows welcome experience** – Block the Windows welcome experience that shows the user information about new, or updated features.
 
 
-## Display
+## Projection
 
 - **User input from wireless display receivers** - Blocks user input from wireless display receivers.
 - **Projection to this PC** - Stops other devices from discovering the PC for projection.

@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -229,12 +229,18 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 ![On the left, an image of the current version of the Company Portal website with its previous version of Apps, My Devices, and Featured and Categories views. On the right, an image of the updated version of the Company Portal website with a refreshed app carousel, list of Recently Published apps, and updated Categories view.](./media/CP_Website_BeforeAfter_Feb2016.png)
 
-<!--## Coming soon in the UI
+## Coming soon in the UI
 These are the plans for ways we will be improving the user experience by updating our user interface.
 
 > [!Note]
-> Please note that the images below may be previews, and the announced product may differ from the presented versions.-->
+> Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
+### UI updates to the Company Portal website <!--1313244 part 2-->
+
+__Updates to Featured Apps__
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
+
+![The colorful tiles that show the apps. They are large squares of color underneath each app, where the color is pulled from the primary color within the app logo. The "Featured Apps" section appears across the top of the Company Portal app.](./media/cp_win10_colorful_tiles_after_1708.png)
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

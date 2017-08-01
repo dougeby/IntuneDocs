@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Deployment goals are the long-term achievements you intend to gain by deploying 
 
 -   **Integrate with Office 365 and support the use of Office mobile apps**
 
-    -   **Description:** Provide tight integration with Office 365 and the use of Office mobile applications with application protection.
+    -   **Description:** Provide tight integration with Office 365 and the use of Office mobile apps with app protection.
 
     -   **Business value:** Secure and improved user experience by allowing users to use apps they are familiar with and prefer.
 
