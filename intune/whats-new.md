@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### App management
   ### Device configuration
 -->   
+
+## Week of July 31, 2017
+
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+
+To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
+
 
 ## Week of July 23rd, 2017
 
@@ -307,12 +316,6 @@ Encourage your users to update to iOS 9.0 or later to take full advantage of new
 version of the Company Portal and take advantage of the new features it will offer.
 
 Go to the Intune on Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
-
-### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
-
-We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
-
-To see screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device, see [What's new in app UI](/intune/whats-new-app-ui).
 
 ### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
