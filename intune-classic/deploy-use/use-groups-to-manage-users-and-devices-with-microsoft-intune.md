@@ -39,6 +39,8 @@ This topic describes how to create groups in Intune. It also provides informatio
 >
 >If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
+<!----Loc Comment: [Create groups to manage users and devices with Microsoft Intune] is not working.-->
+
 This topic describes how to create Intune groups in the Intune administration console.
 
 You can create and manage groups in the **Groups** workspace in the Microsoft Intune admin console. The **Groups Overview** page shows status summaries that can help you identify and prioritize issues that require your attention. Status summaries cover these areas:
