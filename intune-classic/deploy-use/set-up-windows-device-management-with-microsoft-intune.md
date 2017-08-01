@@ -38,7 +38,7 @@ Two factors determine how you can simplify Windows device enrollment:
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
 |**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-automatic-enrollment)|
 
 <!---Loc Comment: The link [User enrollment] is not working--->
 
