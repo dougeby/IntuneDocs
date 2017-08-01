@@ -59,10 +59,10 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 >The restart required message is displayed only on devices that are not enrolled in Intune.
 
 
-4. Re-start the OneDrive for Business app. The app starts with the app protection policies turned on and you are prompted to set a PIN for the device (if you do not have a PIN configured for the device yet). <br/> ![Image of prompt to create a PIN](./media/pin-prompt-ios.png)
+4. Re-start the OneDrive for Business app. The app starts with the app protection policies turned on and you are prompted to set a PIN for the device (if you do not have a PIN configured for the device yet). <br/> ![Image of prompt to create a PIN](./media/pin-prompt-ios.png)    
 
->[!NOTE]
->Most of your users won't see this prompt. Only users who haven't enabled a PIN on their iOS device will see this prompt.
+  > [!NOTE]
+  > Most of your users won't see this prompt. Only users who haven't enabled a PIN on their iOS device will see this prompt.
 
 
 5. Once you set the PIN and confirm it, return to the OneDrive for Business app. You will see a one-time notice that your IT administrator is now protecting work data in OneDrive. <br/> ![Image of one-time notice from your IT administrator](./media/one-time-notice.png)
