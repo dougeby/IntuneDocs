@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The main Intune standalone requirements are:
 
 -   Enterprise Mobility + Security (EMS)/Intune subscription
 
--   Office 365 subscription (for Office apps and MAM policy managed apps)
+-   Office 365 subscription (for Office apps and app-protection-policy managed apps)
 
 -   Apple APNs Certificate (to enable iOS device platform management)
 
@@ -115,7 +115,7 @@ Intune supports email, Wi-Fi, and VPN profiles. Add these profiles as appropriat
 
 ### Task 10: Add and deploy apps
 
-Intune supports the deployment of web, line-of-business, and public Store apps. You can also manage apps that have integrated the Intune SDK by associating them with MAM policies. Add apps as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
+Intune supports the deployment of web, line-of-business, and public Store apps. You can also manage apps that have integrated the Intune SDK by associating them with app protection policies. Add apps as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
 -   Learn more about [adding and deploying apps](app-management.md).
 

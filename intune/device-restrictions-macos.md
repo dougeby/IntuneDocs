@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.custom: intune-azure
 Use these settings to manage macOS devices in a device restriction profile.
 
 ## Password
-- 	**Password required** - Require the end user to enter a password to access the device.
+- 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
 	- 	**Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, like **?**
 	- 	**Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).
