@@ -54,13 +54,12 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 1. Start the OneDrive for Business app to open the sign-in page.  <br/> ![Image of OneDrive sign-in screen for iOS](./media/onedrive-ios-sign-in.png)
 2. Type your work account user name. You are redirected to the Office 365 authentication page to enter your work credentials. <br/> ![Image of Office 365 sign-in page](./media/o365-sign-in-ios.png)
-3. After your credentials are successfully authenticated by Azure Active Directory, the app protection polices are applied, and you will be asked to restart the OneDrive for Business app.  <br/>![Image of restart prompt for iOS](./media/ios-restart-prompt.png)
->[!NOTE]
->The restart required message is displayed only on devices that are not enrolled in Intune.
+3. After your credentials are successfully authenticated by Azure Active Directory, the app protection polices are applied, and you will be asked to restart the OneDrive for Business app.  <br/>![Image of restart prompt for iOS](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > The restart required message is displayed only on devices that are not enrolled in Intune.
 
 
 4. Re-start the OneDrive for Business app. The app starts with the app protection policies turned on and you are prompted to set a PIN for the device (if you do not have a PIN configured for the device yet). <br/> ![Image of prompt to create a PIN](./media/pin-prompt-ios.png)    
-
   > [!NOTE]
   > Most of your users won't see this prompt. Only users who haven't enabled a PIN on their iOS device will see this prompt.
 
@@ -76,9 +75,9 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 1. Start the OneDrive for Business app to open the sign-in page.  <br/> ![Image of OneDrive app welcome screen](./media/onedrive-android-welcome.png)
 2. Type your work account user name. You are redirected to the Office 365 authentication page to enter your work credentials. <br/> ![Image of O365 sign-in on Android](./media/o365-sign-in-android.png)
-3. After your credentials are successfully authenticated by Azure Active Directory, you will see a message instructing you to install the Company Portal app, if it is not already installed on the device. Tap on **Go to store** to proceed. <br/> ![Image of message to get the Company Portal app](./media/get-company-portal-android.png) <br/>If you already have the Company Portal app installed on your phone, the OneDrive for Business app will automatically start and you can skip to the end note.
->[!IMPORTANT]
->On Android, once you set up Office apps to be managed by an app protection policy, the device user **must** install the Company Portal app to access work emails and documents, even though the end user doesn't need to open or sign into the app to actually read emails or documents.
+3. After your credentials are successfully authenticated by Azure Active Directory, you will see a message instructing you to install the Company Portal app, if it is not already installed on the device. Tap on **Go to store** to proceed. <br/> ![Image of message to get the Company Portal app](./media/get-company-portal-android.png) <br/>If you already have the Company Portal app installed on your phone, the OneDrive for Business app will automatically start and you can skip to the end note.    
+  > [!IMPORTANT]
+  > On Android, once you set up Office apps to be managed by an app protection policy, the device user **must** install the Company Portal app to access work emails and documents, even though the end user doesn't need to open or sign into the app to actually read emails or documents.
 
 4. You are now in the Google Play store where you can download and install the Company Portal app. The app helps keep the data secure and protected. <br/> ![Image of app in Google Play store](./media/google-play-get-app-android.png)
 5. After you have completed the app installation, choose **Accept** to accept the terms. The OneDrive for Business app will automatically start.
