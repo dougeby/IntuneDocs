@@ -35,6 +35,7 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 
 **Apple School Manager Enrollment steps**
 1. [Get an Apple School Manager token and assign devices](#get-the-a-token-and-assign-devices)
+<!---Loc Comment: [Get an Apple School Manager token and assign devices] is not working--->
 2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
 3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
 4. [Sync Apple School Manager-managed devices](#sync-managed-devices)
