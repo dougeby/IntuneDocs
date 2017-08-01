@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ ms.custom: intune-azure
 - **Fingerprint unlock** - Blocks an end user from using the device fingerprint scanner to unlock it.
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the work profile password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag) You can use this setting to prevent users from configuring Smart Lock.
 
-## Password
+## Device password
 
 - **Minimum password length** - Enter the minimum number of characters the users password must contain (from **4**-**14**)
 - **Maximum minutes of inactivity until screen locks** - Select the amount of time before an inactive device automatically locks.

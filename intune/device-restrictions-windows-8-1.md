@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,10 +31,11 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Apply all configurations to Windows 10** - Enables settings in this policy to be applied to Windows 10 devices, in addition to Windows 8.1 devices.
+
 - 	**Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.
 - 	**Firewall** - Requires that the Windows Firewall is turned on.
 - 	**User Account Control** - Requires the use of User Account Control (UAC) on devices.
+
 ## Password
 - 	**Required password type** - Require the end user to enter a password to access the device.
 - 	**Minimum password length** - Configures the minimum required length (in characters) for the password.
@@ -67,8 +68,10 @@ When you enforce encryption on a device, the recovery key is only accessible fro
 - 	**Enterprise mode menu access** - Lets users access the Enterprise Mode menu options from Internet Explorer.
 If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.
 - 	**Enterprise mode site list location** - Specifies the location of the list of websites that will use Enterprise Mode when it is active.
+
 ## Cellular
 - 	**Data roaming** - Enables data roaming when the device is on a cellular network.
+
 ## Cloud and Storage
 - 	**Work folders URL** - Sets the URL of the work folder to allow documents to be synchronized across devices.
 - 	**Access to Windows Mail app without a Microsoft account** - Enables access to the Windows Mail application without a Microsoft account. 	
