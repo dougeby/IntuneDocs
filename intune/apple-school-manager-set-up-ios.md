@@ -34,8 +34,7 @@ ms.custom: intune-azure
 This topic helps IT administrators enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) program. Microsoft Intune can deploy an enrollment profile “over the air” that enrolls Apple School Manager devices into management. The administrator never has to touch each managed device. The enrollment profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
 
 **Apple School Manager Enrollment steps**
-1. [Get an Apple School Manager token and assign devices](#get-the-a-token-and-assign-devices)
-<!---Loc Comment: [Get an Apple School Manager token and assign devices] is not working--->
+1. [Get an Apple School Manager token and assign devices](#get-the-apple-token-and-assign-devices)
 2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
 3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
 4. [Sync Apple School Manager-managed devices](#sync-managed-devices)
@@ -45,7 +44,7 @@ This topic helps IT administrators enable iOS device enrollment for devices purc
 >[!NOTE]
 >Apple School Manager enrollment can't be used with [Apple's DEP](device-enrollment-program-enroll-ios.md) or the [device enrollment manager](device-enrollment-manager-enroll.md).
 
-## Get the Apple a token and assign devices
+## Get the Apple token and assign devices
 
 Before you can enroll corporate-owned iOS devices with Apple School Manager, you need a token (.p7m) file from Apple. This token lets Intune sync information about Apple School Manager-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles. While you are in the Apple portal, you can also assign device serial numbers to manage.
 
