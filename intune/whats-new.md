@@ -92,13 +92,13 @@ With this release, admins can now assign the Windows Store for Business as avail
 #### UI updates to the Company Portal website <!--1313244 part 1-->
 We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
 
-__Enhancements to app tiles__   
-App icons smaller than 79x79 pixels are now displayed with an automatically generated background based on the dominant color of the icon. This replaces the gray border that was previously visible on app tiles containing small icons. Larger icons will be resized to fill the app tile as much as possible while preserving image quality.
+__Enhancements to app tiles__:  App icons will now display with an automatically generated background based on the dominant color of the icon (if it can be detected). When applicable, this background replaces the gray border that was previously visible on app tiles.
 
-We recommend that IT admins publish apps using icons with a minimum size of 120 x120 pixels.
+The Company Portal website displays large icons whenever possible in an upcoming release. We recommend that IT admins publish apps using high-resolution icons with a minimum size of 120 x120 pixels. 
 
-__Navigation changes__  
-Navigation bar items have been moved to the hamburger menu in the top left. The Categories page has been removed. Users can now filter content by category while browsing.
+__Navigation changes__: Navigation bar items are moved to the hamburger menu in the top left. The Categories page is removed. Users can now filter content by category while browsing.
+
+__Updates to Featured Apps__: We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
 
 #### iBooks support for the Company Portal website <!--1231841-->
 We've added a dedicated page to the Company Portal website that allows users to browse and download iBooks. 
