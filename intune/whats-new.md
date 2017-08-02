@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/01/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 
 ## Week of July 31, 2017
+
+### UI updates to the Company Portal website <!--1313244 part 1-->
+We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
+
+__Enhancements to app tiles__
+App icons smaller than 79x79 pixels are now displayed with an automatically generated background based on the dominant color of the icon. This replaces the gray border that was previously visible on app tiles containing small icons. Larger icons will be resized to fill the app tile as much as possible while preserving image quality.
+
+We recommend that IT admins publish apps using icons with a minimum size of 120 x120 pixels.
+
+__Navigation changes__
+Navigation bar items have been moved to the hamburger menu in the top left. The Categories page has been removed. Users can now filter content by category while browsing.
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
@@ -288,6 +299,11 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
+
+### UI updates to the Company Portal website <!--1313244 part 2-->
+
+__Updates to Featured Apps__
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage. You can see what these changes look like on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.

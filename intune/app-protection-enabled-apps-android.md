@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Android apps with app protection policiestitleSuffix: "Intune on Azure"
+title: Android apps with app protection policies
+titleSuffix: "Intune on Azure"
 description: This topic describes what to expect when your Android app is managed by app protection policies."
 keywords:
 author: NathBarn
@@ -27,7 +28,9 @@ ms.custom: intune-azure
 ---
 
 # What to expect when your Android app is managed by app protection policies 
+
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
 This topic describes the user experience for apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
 ##  Accessing apps
 
