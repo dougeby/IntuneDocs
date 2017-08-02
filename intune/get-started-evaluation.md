@@ -32,8 +32,6 @@ ms.custom: intune-azure
 
 The getting started section takes you through some tasks that help you understand how Intune can be leveraged to protect your company. 
 
-## Prerequisites
-
 Before you start, you must have an Intune admin and tenant account activated. You can sign up for those accounts [here](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Current subscribers can also complete these activities in your live tenant. These getting started articles assume that you're working on test devices. 
 
 You also need to make sure that you are the global admin for your organization to complete all of the tasks in this section. 
