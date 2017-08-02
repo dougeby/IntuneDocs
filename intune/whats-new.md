@@ -62,34 +62,45 @@ To import serial numbers, go **Device enrollment** > **Corporate device identifi
 
 ### Device management   
 
-### New device action to force devices to sync with Intune <!-- 711369 -->
+#### New device action to force devices to sync with Intune <!-- 711369 -->
 In this release, we've added a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 For details, see [Synchronize device](device-sync.md)
 
 
-### Conditional access support for Mac devices  <!-- 720172 -->
+#### Conditional access support for Mac devices  <!-- 720172 -->
 You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
 
-### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
+#### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
 A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
 
 
-### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
+#### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
 
-#### How integration with Intune works?
+##### How integration with Intune works?
 Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block non-compliant devices access to corporate resources based on detected threats.
 
 
 ### App management
 
-### Deploy an app as available in the Windows Store for Business <!-- 748101 -->
+#### Deploy an app as available in the Windows Store for Business <!-- 748101 -->
 With this release, admins can now assign the Windows Store for Business as available. When set as available, end-users can install the app from the Company Portal app or website without being redirected to the Windows Store.
 
 
 ### Intune apps  
 
-### iBooks support for the Company Portal website <!--1231841-->
+#### UI updates to the Company Portal website <!--1313244 part 1-->
+We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
+
+__Enhancements to app tiles__   
+App icons smaller than 79x79 pixels are now displayed with an automatically generated background based on the dominant color of the icon. This replaces the gray border that was previously visible on app tiles containing small icons. Larger icons will be resized to fill the app tile as much as possible while preserving image quality.
+
+We recommend that IT admins publish apps using icons with a minimum size of 120 x120 pixels.
+
+__Navigation changes__  
+Navigation bar items have been moved to the hamburger menu in the top left. The Categories page has been removed. Users can now filter content by category while browsing.
+
+#### iBooks support for the Company Portal website <!--1231841-->
 We've added a dedicated page to the Company Portal website that allows users to browse and download iBooks. 
 
 
@@ -128,6 +139,11 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
+
+### UI updates to the Company Portal website <!--1313244 part 2-->
+__Updates to Featured Apps__  
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage. You can see what these changes look like on the [what's new in app UI](whats-new-app-ui.md) page.
+
 
 ### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
+
 - 	**Camera** - Enables or blocks the device's camera.
 - 	**Copy and paste** - Enables or blocks copy and paste functionality on devices.
 - 	**Removable storage** - Lets the device use removable storage such as SD cards.
@@ -42,8 +42,8 @@ ms.custom: intune-azure
 - 	**Custom email accounts sync** - Enables the device to connect to non-Microsoft email accounts.
 
 ## Password
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
-- 	**Password required** - Require the end user to enter a password to access the device.
+
+- 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Required password type** - Specifies the type of password that will be required, such as alphanumeric or numeric only.
 	- 	**Minimum password length** - Specifies the minimum number of characters that are required in the password.
 	- 	**Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
@@ -54,12 +54,10 @@ ms.custom: intune-azure
 - 	**Encryption** - Requires that the data on supported mobile devices be encrypted.
 
 ## App Store
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
+
 - 	**App store** - Lets users connect to the app store from the device.
 
 ## Restricted apps
-
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
 
 In the restricted apps list, you can configure one of the following lists:
 
@@ -86,11 +84,11 @@ You can also click **Import** to populate the list from a csv file in the format
 
 
 ## Browser
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
+
 - 	**Web browser** - Enables or blocks the built-in web browser on devices.
 
 ## Cellular and Connectivity
-- 	**Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
+
 - 	**Wi-Fi** - Enables or disables the Wi-Fi functionality of the device.
 - 	**Wi-Fi tethering** - Enables the use of Wi-Fi tethering on the device.
 - 	**Automatically connect to Wi-Fi hotspots** - Enables the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.
