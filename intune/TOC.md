@@ -103,6 +103,7 @@
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
+### [Synchronize device](device-sync.md)
 ### [Examine device inventory](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -173,6 +174,7 @@
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
+### [Configure iOS update policies](software-updates-ios.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
@@ -253,6 +255,8 @@
 ### [Add apps for Intune client PCs](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
 ### [Manage license agreements](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
 ### [Resolve policy conflicts](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
+### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
 ## [Educate users](end-user-educate.md)
 ### [Company Portal messages](end-user-company-portal-messages.md)
@@ -288,5 +292,17 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Date Warehouse API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Authorization](reports-api-authorization.md)
+### [API URL structure](reports-api-url-structure.md)
+### [Data Warehouse data model](reports-ref-data-model.md)
+#### [Reference for Date entity](reports-ref-date.md)
+#### [Reference for user entity](reports-ref-user.md)
+#### [Reference for mobile app management (MAM) entities](reports-ref-mobile-app-management.md)
+#### [Reference for devices entities](reports-ref-devices.md)
+#### [Reference for application entities](reports-ref-application.md)
+#### [Reference for policy entities](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossary](intune-glossary.md)
