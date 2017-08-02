@@ -2,11 +2,12 @@
 # required metadata
 
 title: Configure iOS update policies
+titleSuffix: "Intune on Azure"
 description: Configure update policies for iOS to force supervised iOS devices to automatically install the latest available software update.
 keywords:
 author: dougeby
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
