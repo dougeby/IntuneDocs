@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Get started with userstitleSuffix: "Intune on Azure"
+title: Get started with users
+titleSuffix: "Intune on Azure"
 description:
 keywords:
 author: barlanmsft
@@ -28,9 +29,9 @@ ms.custom: intune-azure
 
 # Get started with users
 
-![A generic user in Azure](/intune/media/generic-intune-user.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Azure AD manages your organization’s groups of objects – like devices and apps – and also groups of users. You can group users or devices together instead of having to manage each device individually. This lets you easily assign apps and settings to large numbers of users and devices.
+Azure Active Directory manages your organization’s groups of objects – like devices and apps – and also groups of users. You can group users or devices together instead of having to manage each device individually. This lets you easily assign apps and settings to large numbers of users and devices.
 
 ## How do I create a user?
 

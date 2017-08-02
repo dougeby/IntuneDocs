@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Getting started enrolling devicestitleSuffix: "Intune on Azure"
+title: Getting started enrolling devices
+titleSuffix: "Intune on Azure"
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,8 +29,6 @@ ms.custom: intune-azure
 # Getting started enrolling devices
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![iOS device showing the company portal app. the first screen presented to the user for the enrollment process is shown.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. Since your end users will interact with Intune on their devices rather than in the admin console, you want to make sure that you are fluent with the enrollment experience. This way, you can combine well-crafted compliance policies with your experience to show empathy for your users. This is especially important because your users will know exactly what information that you as an admin can see:
 
