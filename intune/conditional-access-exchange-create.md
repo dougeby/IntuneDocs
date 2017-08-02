@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create and assign on-premises Exchange conditional access policy
