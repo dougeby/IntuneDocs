@@ -24,13 +24,23 @@ ms.custom: intune-classic
 ---
 # Intune Data Warehouse API endpoint
 
-You can authorize and then call the API endpoint to interact with the data warehouse data model with your own RESTful client.
+You can use the Intune Data Warehouse API with an account with specific role-based access controls and Azure AD credentials. You will then authorize your REST client with Azure AD using OAuth 2.0. And finally, you will form a meaningful URL to call a data warehouse resource.
+
+## Azure AD and Intune credential requirements
+
+Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC). All global administrators and Intune service administrators for your tenant have access to the API by default. Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.
+
+Requirements for accessing the API are:
+
+  -  Intune license must be assigned to the user
+  -  User must be one of:
+      -  Azure AD global administrator
+      -  An Intune service administrator
+      -  User with role-based access to **Reports** resource
 
 ## Authorization
 
 Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize access to web applications and web APIs in your Azure AD tenant. This guide is language independent, and describes how to send and receive HTTP messages without using any of our open-source libraries. The OAuth 2.0 authorization code flow is described in [section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1) of the OAuth 2.0 specification.
-
-Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC). All global administrators and Intune service administrators for your tenant have access to the API by default. Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.
 
 For more information, see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
