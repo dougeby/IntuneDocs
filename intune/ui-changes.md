@@ -30,7 +30,7 @@ ms.custom: intune-azure
 We took the opportunity to organize some tasks more logically as we moved Intune into the Azure portal. But every improvement comes with the cost of learning the new organization. So, we created this reference guide for those of you who are thoroughly familiar with Intune in the classic console and are wondering how to get something done in Intune on Azure. If this article doesn’t cover a feature you’re trying to find, please leave a comment at the end of the article so we can update it.
 ## Quick reference guide
 |Feature |Path in classic console|Path in Intune on Azure|
-|------------||---------------|---------------|
+|------------|---------------|---------------|
 |Device Enrollment Program (DEP) |Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program|[Device enrollment > Apple Enrollment > Enrollment Program Token](#where-did-apple-dep-go) |
 |Device Enrollment Program (DEP)| Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program |[Device enrollment > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-apple-dep-go) |
 |Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Device enrollment > Enrollment Restrictions](#where-did-enrollment-rules-go) |
