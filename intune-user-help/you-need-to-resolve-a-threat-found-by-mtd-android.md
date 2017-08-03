@@ -34,7 +34,7 @@ Mobile Threat Defense has found a potential threat on your Android device, and y
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Skycure](you-need-to-resolve-a-threat-found-by-skycure-android.md)
-* [Check Point SandBlast Mobile](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
+* [Check Point SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 
 To resolve the issue, open the Mobile Threat Defense app, and follow the instructions shown in the app.
 
