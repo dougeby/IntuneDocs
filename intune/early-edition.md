@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 8/2/2017
+ms.date: 8/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,7 +57,6 @@ We are adding a new device action that forces the selected device to immediately
 *Actions for non-compliance* is a new feature of compliance policies that will let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 
-
 ### Restrict Android and iOS device enrollment restriction by OS version  <!--- 1333256,  1245463 --->  
 Intune now supports restricting iOS and Android enrollment by operating system version number. Under **Intune** > **Enrollment restrictions** > **Device Type Restriction** > **Default** > **Platform restrictions**, the IT admin can now set a platform configuration to restrict enrollment between a minimum and maximum operating system value. Android operating system versions must be specified as Major.Minor.Build.Rev, where Build and Rev are optional. iOS versions must be specified as Major.Minor.Build where Build is optional.
 
@@ -89,6 +88,11 @@ We are adding new settings to the Windows 10 device restriction profile in the W
 
 For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
 
+### New device restriction settings for Windows 10   <!-- 1063965 -->
+We are adding new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
+- Windows Defender SmartScreen
+- App store
+
 
 ### Android for Work support for Lookout <!-- 1087312 -->   
 Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You will be able to deploy the Lookout app inside or outside the container.
@@ -98,7 +102,6 @@ Intune connector with Lookout will support Android for Work devices when using t
 You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
 
 You will be able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
-
 
 
 ### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->
@@ -125,9 +128,6 @@ Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher 
 
 ### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
-
-
-
 
 
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017 <!-- 1327781 -->  
@@ -160,12 +160,10 @@ We are adding **Ownership Type** to the Device Details screen on the Company Por
 ### Apps details pages will display new information for Android devices <!--1287476-->
 The apps detail page of the Company Portal app for Android will display the app categories that the IT admin has defined for that app.
 
-### Search improvements to the Company Portal website <!--1331697-->
-We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+### Intune Mobile Application Managment (MAM) dialog boxes now have a modern interface <!-- 1199015 -->
+Intune Mobile Application Management (MAM) dialog boxes have been updated to the modern look-and-feel. The dialog boxes function in the same way as the previous style.
 
-iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
-
-We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+On modern Android devices, error or notification dialog boxes displayed by Intune will now show updated look-and-feel.
 
 ### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
 The **Settings** page in the Company Portal app for Android will have a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting will vary depending on which app manages the work account. We recommend that users turn battery optimization off for better performance of work apps that sync email and data. 
