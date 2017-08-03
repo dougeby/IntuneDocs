@@ -43,13 +43,13 @@ Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provide
 
 - **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, this role provides the ability to manage users, devices, and create and manage groups.
 
-- **Conditional Access Administrator:** Users with this role only have permissions to view, create, modify and delete conditional access policies.
+- **Conditional Access Administrator:** Users with this role only have permissions to view, create, modify, and delete conditional access policies.
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
 
 	> [!TIP]
-	> Intune also shows three Azure AD extensions: **Users**, **Groups** and **Conditional access** which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
+	> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
 
 ## Roles created in the Intune classic console
 
@@ -62,9 +62,9 @@ Only Intune **Service Administrators** users with "Full" permissions get migrate
 
 The following roles are built into Intune and you can assign them to groups with no further configuration:
 
-- **Help Desk Operator**: Performs remote tasks on users and devices and can assign applications or policies to users or devices. 
-- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment and corporate device identifiers.
-- **Read Only Operator**: Views user, device, enrollment, configuration and application information and cannot make changes to Intune.
+- **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
+- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
+- **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Cannot make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, and can read device information.
 
 ### To assign a built-in role
@@ -73,9 +73,9 @@ The following roles are built into Intune and you can assign them to groups with
 
 2. On the <*role name*> - **Properties** blade, choose **Manage**, then **Assignments**.
 
-	> [!NOTE] 
+	> [!NOTE]
 	> You cannot delete or edit the built-in roles
-	
+
 3. On the custom role blade, choose **Assign**.
 
 4. On the **Role Assignments** blade, enter a **Name** and optional **Description** for the assignment, and then choose the following:
@@ -90,7 +90,7 @@ The following roles are built into Intune and you can assign them to groups with
 
 ## Custom roles
 
-You can create a custom role that includes any permissions required for a specific job function. For example, if an IT department group manages applications, policies and configuration profiles, you can add all those permissions together in one custom role.
+You can create a custom role that includes any permissions required for a specific job function. For example, if an IT department group manages applications, policies, and configuration profiles, you can add all those permissions together in one custom role.
 
 > [!IMPORTANT]
 > To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
