@@ -2,7 +2,7 @@
 # required metadata
 
 title: Drive end-user adoption with conditional access
-description: The purpose of this article is to provide insights on how to leverage conditional access to drive Intune enrollment.
+description: This article provides insights on how to use conditional access to drive Intune enrollment.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -22,15 +22,13 @@ ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+#ms.custom:
 
 ---
 
 # Drive end-user adoption with conditional access
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Enabling conditional access features with Intune, such as blocking email for un-enrolled devices, can help drive enrollment and compliance but they are not required for a migration to be successful. Your migration adoption goals and security requirements should dictate the success.
+Enabling conditional access features with Intune, such as blocking email for unenrolled devices, can help drive enrollment and compliance but they are not required for a migration to be successful. Your migration adoption goals and security requirements should dictate the success.
 
 ## Migration campaign with conditional access
 
@@ -52,18 +50,18 @@ Here is a typical approach to enhancing a migration campaign with conditional ac
 
 ### Disadvantages
 
--   Users of previous solution could potentially access resources using un-managed devices until conditional access is enabled for those users.
+-   Users of previous solution could potentially access resources using unmanaged devices until conditional access is enabled for those users.
 
-> [!TIP]
-> This is one approach among many. You may choose a simpler process that defers all conditional access until after every phase has been instructed to enroll, or a stricter process that enforces conditional access from the very beginning and requires full compliance for all access.
 
--   Learn more about [conditional access](/intune/conditional-access).
+This is one approach among many. You may choose a simpler process that defers all conditional access until after every phase has been instructed to enroll, or a stricter process that enforces conditional access from the very beginning and requires full compliance for all access.
+
+-   Learn more about [conditional access](conditional-access.md).
 
 ## Task list for conditional access
 
 ### Task 1: Decide how you are going to implement conditional access
 
-[Common ways to use conditional access](/intune/conditional-access-intune-common-ways-use).
+[Common ways to use conditional access](conditional-access-intune-common-ways-use.md).
 
 ### Task 2: Set up Intune conditional access
 
@@ -71,14 +69,14 @@ Choose one of the following options:
 
 -   [Configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Install on-premises Exchange connector with Intune](/intune/exchange-connector-install)
+-   [Install on-premises Exchange connector with Intune](exchange-connector-install.md)
 
--   [Set up app-based conditional access policies for Exchange Online](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [Set up app-based conditional access policies for Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Set up app-based conditional access policies for SharePoint Online](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [Set up app-based conditional access policies for SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Block apps that do not use modern authentication (ADAL)](/intune/app-modern-authentication-block)
+-   [Block apps that do not use modern authentication (ADAL)](app-modern-authentication-block.md)
 
 ## Next steps
 
-[Typical migration cycle](migration-guide-cycle.md)
+Learn about the [typical migration cycle](migration-guide-cycle.md).

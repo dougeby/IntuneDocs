@@ -15,6 +15,7 @@
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
 ## [Common scenarios](common-scenarios.md)
+## [Service description](microsoft-intune-service-description.md)
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
@@ -38,9 +39,9 @@
 ### [Implement](planning-guide-onboarding.md)
 ### [Test and validate](planning-guide-test-validation.md)
 ### [Additional resources](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Scenario implementation guides
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -62,16 +63,15 @@
 ## [Set up Intune](setup-steps.md)
 ### [Prerequisites](supported-devices-browsers.md)
 #### [Network bandwidth usage](network-bandwidth-use.md)
-###	[Sign into Intune](account-sign-up.md)
+###	[Sign in to Intune](account-sign-up.md)
 ###	[Configure domains](custom-domain-name-configure.md)
-###	[Add users](users-permissions-add.md)
+###	[Add users](users-add.md)
 ### [Add groups](groups-add.md)
-###	[Assign licenses](licenses-assign.md)		
-###	[Customize Company Portal](company-portal-customize.md)		
+###	[Assign licenses](licenses-assign.md)
 ### [Set the MDM authority](mdm-authority-set.md)
 
 ## [Enroll devices](device-enrollment.md)
-### Setup options
+### [Enrollment options](enrollment-options.md)
 #### [Terms and conditions](terms-and-conditions-create.md)
 #### [Restrictions](enrollment-restrictions-set.md)
 #### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
@@ -82,10 +82,10 @@
 #### [Windows enrollment](windows-enroll.md)
 #### [Bulk enroll](windows-bulk-enroll.md)
 ### [Set up Android enrollment](android-enroll.md)
-### Set up iOS enrollment
-#### [With Device Enrollment Program](device-enrollment-program-enroll-ios.md)
-#### [With Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [With Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Set up iOS enrollment](ios-enroll.md)
+#### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
@@ -105,7 +105,6 @@
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Examine device inventory](device-inventory.md)
 
-## [Manage users](user-management.md)
 <!--### Add and delete users -->
 
 ## [Manage apps](app-management.md)
@@ -120,6 +119,7 @@
 #### [Windows Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
+#### [Office 365 apps for Windows 10](apps-add-office365.md)
 ### [Assign apps](apps-deploy.md)
 ### [Monitor apps](apps-monitor.md)
 ### [iOS app configuration profiles](app-configuration-policies-use-ios.md)
@@ -183,13 +183,12 @@
 ### [Monitor profiles](device-profile-monitor.md)
 ### [Troubleshoot profiles](device-profile-troubleshoot.md)
 
-## [Set device compliance](device-compliance.md)
-### [Prerequisites](device-compliance-get-started.md)
+## [Set device compliance](device-compliance-get-started.md)
 ### [Create Android policy](compliance-policy-create-android.md)
 ### [Create Android for Work policy](compliance-policy-create-android-for-work.md)
 ### [Create iOS policy](compliance-policy-create-ios.md)
+### [Create macOS policy](compliance-policy-create-mac-os.md)
 ### [Create Windows policy](compliance-policy-create-windows.md)
-### Create Actions for noncompliance
 ### [Monitor device compliance](compliance-policy-monitor.md)
 
 ## [Set up conditional access](conditional-access.md)
@@ -219,32 +218,24 @@
 
 #### [Set up Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout and Intune integration](lookout-mtd-connector-integration.md)
+
 #### [Set up Skycure](skycure-mobile-threat-defense-connector.md)
-##### [Configure Azure AD SSO](skycure-azure-sso-configure.md)
-##### [Download an iOS app configuration policy](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure and Intune integration](skycure-mtd-connector-integration.md)
+
+#### [Set up Check Point](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Check Point and Intune integration](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Enable MTD in Intune](mtd-connector-enable.md)
 #### [Create an MTD device compliance policy](mtd-device-compliance-policy-create.md)
 
 ### [Network access control](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection		
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Set up Windows Hello](windows-hello.md)		
 <!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)

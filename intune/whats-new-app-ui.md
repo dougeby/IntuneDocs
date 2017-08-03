@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,54 @@ ms.custom: intune-classic
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of July 31, 2017
+
+### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+
+We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
+
+Below you can see the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device.
+
+__Previous sign in experience__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![After tapping Sign in, the user enters their credentials on this page, which asks for a user's email and password, along with offering ways to resolve password failures.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![After providing their password, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__New sign in experience__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![The user is prompted to provide just their email address rather than their email and password on the same screen.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![The user is prompted for their password after their email address has been accepted.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__New sign in experience when signing in from another device__
+
+![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Tap the __Sign in from another device__ link.
+
+![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Launch a browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![An image of the user's browser on their work computer rather than their Company Portal app. The "Device login" page displayed prompts the user for the code they received in the Company Portal app.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Enter the code you saw in the Company Portal app. When you select __Continue__, you will be able to authenticate in the using any method that is supported by your company, such as a smartcard.
+
+![The user has input their unique code into the field, and the "Device login" site has asked for confirmation that the Intune Company Portal was the correct app to receive authorization to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![A confirmation page that states that the user has now signed into the Company Portal app on their device, and that this page can be closed.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+The Company Portal app will begin signing in.
+
+![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## Week of June 12, 2017
 
@@ -187,51 +235,13 @@ These are the plans for ways we will be improving the user experience by updatin
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
-### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
+### UI updates to the Company Portal website <!--1313244 part 2-->
 
-We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
+__Updates to Featured Apps__
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
 
-Below you can see the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device.
+![The colorful tiles that show the apps. They are large squares of color underneath each app, where the color is pulled from the primary color within the app logo. The "Featured Apps" section appears across the top of the Company Portal app.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Previous sign in experience__
-
-![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![After tapping Sign in, the user enters their credentials on this page, which asks for a user's email and password, along with offering ways to resolve password failures.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![After providing their password, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__New sign in experience__
-
-![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![The user is prompted to provide just their email address rather than their email and password on the same screen.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![The user is prompted for their password after their email address has been accepted.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__New sign in experience when signing in from another device__
-
-![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Tap the __Sign in from another device__ link.
-
-![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Launch a browser and go to [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![An image of the user's browser on their work computer rather than their Company Portal app. The "Device login" page displayed prompts the user for the code they received in the Company Portal app.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Enter the code you saw in the Company Portal app. When you select __Continue__, you will be able to authenticate in the using any method that is supported by your company, such as a smartcard.
-
-![The user has input their unique code into the field, and the "Device login" site has asked for confirmation that the Intune Company Portal was the correct app to receive authorization to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![A confirmation page that states that the user has now signed into the Company Portal app on their device, and that this page can be closed.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-The Company Portal app will begin signing in.
-
-![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
