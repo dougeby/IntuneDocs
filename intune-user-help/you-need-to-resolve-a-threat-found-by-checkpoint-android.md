@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resolving threats found by Check Point Sandblast Mobile on Android | Microsoft Docs
+title: Resolving threats found by Check Point SandBlast Mobile on Android | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
@@ -28,21 +28,21 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Check Point Sandblast Mobile
+# You need to resolve a threat found by Check Point SandBlast Mobile
 
-Sandblast Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see depends on the issue Sandblast Mobile has detected on your device. 
+SandBlast Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see depends on the issue SandBlast Mobile has detected on your device. 
 
-To fix the issue, open the Sandblast Mobile app, and follow the instructions shown in it.
+To fix the issue, open the SandBlast Mobile app, and follow the instructions shown in it.
 
 ## What you might see if your enrolled device is blocked from accessing email or files
 
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, a message from Sandblast Mobile alerts you to take action.
+If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, a message from SandBlast Mobile alerts you to take action.
 
 Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you can follow instructions on how to fix the issue.
 
-## Example of an app that Sandblast Mobile sees as a threat
+## Example of an app that SandBlast Mobile sees as a threat
 
-If you have installed an app that Sandblast Mobile detects as a threat, the app alerts you that you have an untrustworthy app installed on your device. 
+If you have installed an app that SandBlast Mobile detects as a threat, the app alerts you that you have an untrustworthy app installed on your device. 
 
 When this happens, uninstall the app to regain access to your company email and data right away. If do not uninstall the app, you will lose access to your email and data until you do uninstall the app.
 
