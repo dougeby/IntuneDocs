@@ -42,7 +42,7 @@ Tap the **device management portal** link to go to the [Company Portal website](
 
 ## Example of an app that SandBlast Mobile Protect sees as a threat
 
-If you have installed an app that SandBlast Mobile Protect sees as a threat, the app alerts you that you have an untrustworthy app installed on your device. 
+If you have installed an app that SandBlast Mobile Protect sees as a threat, the app alerts you that an untrustworthy app is installed on your device. 
 
 When this happens, uninstall the app to regain access to your company email and data right away. If do not uninstall the app, you will lose access to your email and data until you do uninstall the app.
 
