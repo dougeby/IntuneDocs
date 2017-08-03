@@ -4,14 +4,17 @@
 title: Resolving threats found by Mobile Threat Defense apps on Android | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914fsearchScope: - User help
+ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -31,6 +34,7 @@ Mobile Threat Defense has found a potential threat on your Android device, and y
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Skycure](you-need-to-resolve-a-threat-found-by-skycure-android.md)
+* [Check Point Sandblast Mobile](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 
 To resolve the issue, open the Mobile Threat Defense app, and follow the instructions shown in the app.
 
