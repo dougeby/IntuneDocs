@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resolving threats found by Check Point SandBlast Mobile Protect on Android | Microsoft Docs
+title: Resolving threats found by SandBlast Mobile Protect on Android | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Check Point SandBlast Mobile Protect
+# You need to resolve a threat found by SandBlast Mobile Protect
 
 SandBlast Mobile Protect has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see depends on the issue that SandBlast Mobile Protect has found on your device. 
 
