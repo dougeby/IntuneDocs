@@ -8,9 +8,7 @@
 ### [What's new in the app UI](whats-new-app-ui.md)
 ### [What's new archive (Azure portal)](whats-new-archive.md)
 ### [What's new archive (classic portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [High-level architecture](high-level-architecture.md)
 ## [Device and app lifecycles](introduction-device-app-lifecycles.md)
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
