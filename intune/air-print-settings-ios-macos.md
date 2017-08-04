@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,13 +31,13 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure iOS or macOS devices to automatically connect to AirPrint compatible printers on your network. You'll need the IP address and resource path of your printers to proceed.
+Use these settings to configure iOS or macOS devices to automatically connect to AirPrint compatible printers on your network. You need the IP address and resource path of your printers to proceed.
 
 ## Find AirPrint printer information
 
 Use this procedure to add AirPrint information to the AirPrint payload so that iOS device users can print to known AirPrint printers.
 
-1. On a Mac that’s connected to the same local network (subnet) as the Airprint printers, open Terminal (from **/Applications/Utilities**)
+1. On a Mac that’s connected to the same local network (subnet) as the AirPrint printers, open Terminal (from **/Applications/Utilities**)
 2. In the Terminal, type **ippfind**, then press enter.
 3. Make a note of any printer information the command returns, for example: **ipp://myprinter.local.:631/ipp/port1**. The first part of the information is the name of your printer and the last part is the resource path.
 4. In the Terminal, type **ping myprinter.local**, then press enter.
@@ -46,8 +46,13 @@ Use this procedure to add AirPrint information to the AirPrint payload so that i
 
 ## Configure an AirPrint profile
 
-1. On the **Device features** blade choose **AirPrint**.
+1. On the **Device features** blade, choose **AirPrint**.
 2. On the **AirPrint** blade, to add an AirPrint destination, enter its **IP address** and **resource path**, and then click **Add**.
 3. Continue to add as many destinations as you need. When you are finished, choose **OK**.
 
 You can also import a list of printers from a comma-separated values (.csv) file or export the list.
+
+
+## Next steps
+
+You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).

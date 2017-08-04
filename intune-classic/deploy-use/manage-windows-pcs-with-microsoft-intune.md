@@ -28,6 +28,8 @@ ms.custom: intune-classic
 
 # Manage Windows PCs as computers via Intune software client
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune provides a comprehensive solution for organizations to manage mobile devices. Intune can manage Windows PCs as mobile devices using the modern device management capabilities built in to the Windows 10 operating system. To meet your organization’s management needs, Intune can also manage Windows PCs as computers with the Intune software client. This management method uses traditional computer management capabilities in the legacy Windows operating system.
 
 The Intune software client is best suited for Windows PCs running legacy operating systems such as Windows 7 which cannot be managed as mobile devices. The Intune software client uses management capabilities like Group Policy to manage PCs from the cloud.

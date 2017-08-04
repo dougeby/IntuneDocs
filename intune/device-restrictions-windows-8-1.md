@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,10 +31,11 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Apply all configurations to Windows 10** - Enables settings in this policy to be applied to Windows 10 devices, in addition to Windows 8.1 devices.
+
 - 	**Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.
 - 	**Firewall** - Requires that the Windows Firewall is turned on.
 - 	**User Account Control** - Requires the use of User Account Control (UAC) on devices.
+
 ## Password
 - 	**Required password type** - Require the end user to enter a password to access the device.
 - 	**Minimum password length** - Configures the minimum required length (in characters) for the password.
@@ -43,7 +44,7 @@ ms.custom: intune-azure
 - 	**Password expiration (days)** - Specifies the number of days before the device password must be changed.
 - 	**Prevent reuse of previous passwords** - Specifies whether the user can configure previously used passwords.
 - 	**Picture password and PIN** - Enables the use of a picture password and PIN. A picture password lets the user sign in with gestures on a picture. A PIN lets users quickly sign in with a four-digit code.
-- 	**Encryption** - Requires that files on the device are encrypted.<br>To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/en-us/kb/3013816) on each device.
+- 	**Encryption** - Requires that files on the device are encrypted.<br>To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/kb/3013816) on each device.
 If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 For encryption to work, the device must meet the [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) hardware certification requirements.
 When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user. 	
@@ -67,8 +68,10 @@ When you enforce encryption on a device, the recovery key is only accessible fro
 - 	**Enterprise mode menu access** - Lets users access the Enterprise Mode menu options from Internet Explorer.
 If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.
 - 	**Enterprise mode site list location** - Specifies the location of the list of websites that will use Enterprise Mode when it is active.
+
 ## Cellular
 - 	**Data roaming** - Enables data roaming when the device is on a cellular network.
+
 ## Cloud and Storage
 - 	**Work folders URL** - Sets the URL of the work folder to allow documents to be synchronized across devices.
 - 	**Access to Windows Mail app without a Microsoft account** - Enables access to the Windows Mail application without a Microsoft account. 	

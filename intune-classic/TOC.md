@@ -1,12 +1,6 @@
 # Understand and Explore
 ## [Introduction to Intune](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Intune for Education](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [Sign up for a free trial](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Evaluate Intune MDM](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [Create groups to organize users & devices](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Create policies and publish an app](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [MAM and app protection FAQ](understand-explore/mam-faq.md)
 ## [Common scenarios](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
@@ -55,10 +49,10 @@
 #### [Drive adoption](/intune/migration-guide-drive-adoption?toc=/intune-classic/toc.json)
 #### [Typical migration cycle](/intune/migration-guide-cycle?toc=/intune-classic/toc.json)
 
-# [What's new](whats-new/whats-new-in-microsoft-intune.md)
+# [What's new](/intune/whats-new?toc=/intune-classic/toc.json)
 ## [What's new in app UI](/intune/whats-new-app-ui?toc=/intune-classic/toc.json)
-## [What's new in the Azure portal](/intune/whats-new?toc=/intune-classic/toc.json&bc=/enterprise-mobility/toc.json?toc=/intune-classic/toc.json)
-## [What's new archive](whats-new/whats-new-archive.md)
+## [What's new archive (classic portal)](/intune/whats-new-archive-classic?toc=/intune-classic/toc.json)
+## [What's new archive (Azure portal)](/intune/whats-new-archive?toc=/intune-classic/toc.json)
 
 # Deploy and Use
 ## [Overview of device and app lifecycles](/intune/introduction-device-app-lifecycles?toc=/intune-classic/toc.json)
@@ -226,12 +220,12 @@
 ## [Change your MDM authority](deploy-use/change-mdm-authority.md)
 
 ## [How to educate your end users about Intune](/intune/end-user-educate?toc=/intune-classic/toc.json)
-### [Company Portal messages end users see](deploy-use/help-end-users-understand-company-portal-app-messages.md)
-### [End user experience for Android with MAM-enabled apps](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [End user experience for iOS with MAM-enabled apps](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
-### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
-### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Company Portal messages end users see](/intune/end-user-company-portal-messages?toc=/intune-classic/toc.json)
+### [End user experience for Android with MAM-enabled apps](/intune/end-user-mam-apps-android?toc=/intune-classic/toc.json)
+### [End user experience for iOS with MAM-enabled apps](/intune/end-user-mam-apps-ios?toc=/intune-classic/toc.json)
+### [How your Android users get their apps](/intune/end-user-apps-android?toc=/intune-classic/toc.json)
+### [How your iOS users get their apps](/intune/end-user-apps-ios?toc=/intune-classic/toc.json)
+### [How your Windows users get their apps](/intune/end-user-apps-windows?toc=/intune-classic/toc.json)
 
 
 # Develop and Customize Apps

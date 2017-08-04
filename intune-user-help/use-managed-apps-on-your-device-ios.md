@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,6 +41,8 @@ You get managed apps in a couple of different ways:
 -   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To learn about enrolling, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md).
 
 -   You install an app from the App Store, and then sign in with your corporate user account that is managed by Intune.
+
+Your IT admin might sometimes purchase multiple licenses for an app you install. If you see a message asking you to accept the Apple Volume Purchase Program agreement, this is normal, and you can accept it. If you don’t accept it, you won’t be able to install the app.
 
 ### What can my IT admin manage in an app?
 Here are some examples of options that your IT admin can manage in an app, and that can affect your interactions with company data on your device:

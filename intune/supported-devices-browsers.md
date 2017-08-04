@@ -61,19 +61,22 @@ Different administrative tasks require that you use one of the following adminis
 
 - [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Intune portal](https://portal.azure.com/)
-- [Classic Intune console](https://manage.microsoft.com) - Intune classic-only features including Intune PC software client and integration with Mobile Threat Defense partners
 
-Intune in the Azure portal is supported on all modern browsers.
+The following browsers are supported for these portals:
+- Microsoft Edge (latest version)
+- Microsoft Internet Explorer 11
+- Safari (latest version, Mac only)
+- Chrome (latest version)
+- Firefox (latest version)
 
 ### Intune classic portal
 
-The Intune classic portal requires Silverlight browser support.
+Intune classic-only features such as Intune PC software client and integration with Mobile Threat Defense partners are only available in the Intune classic portal (https://manage.microsoft.com). The classic Intune console requires Silverlight browser support.
 
-|Intune feature |Supported browsers|
-|---------|---------|
-|**Intune Admin console**     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox with Silverlight enabled<br />**Note:** Mozilla will remove support for Silverlight effective March 2017. [Learn more](https://go.microsoft.com/fwlink/?linkid=836872). |
-|**Office 365 Admin Portal**     |All browsers, including mobile browsers and managed browsers  |
-|**Company Portal website**     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
+The following Silverlight browsers support the classic Intune console:
+- Internet Explorer 10 or later
+- Google Chrome (versions prior to version 42)
+- Mozilla Firefox with Silverlight enabled [Learn more](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
 > Microsoft Edge and mobile browsers are not supported for the Intune classic console because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

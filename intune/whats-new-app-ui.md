@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: UI updates for Intune end user apps 
+title: UI updates for Intune end user apps
 description: "Find out what has changed in UI for apps that work on end user devices with Intune."
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,11 +28,7 @@ ms.custom: intune-classic
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
-## Coming soon in the UI
-These are the plans for ways we will be improving the user experience by updating our user interface.
-
-> [!Note]
-> Please note that the images below may be previews, and the announced product may differ from the presented versions.
+## Week of July 31, 2017
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
@@ -79,6 +75,71 @@ Enter the code you saw in the Company Portal app. When you select __Continue__, 
 The Company Portal app will begin signing in.
 
 ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## Week of June 12, 2017
+
+### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management.
+
+The user will tap on the **Access Company Content** button instead of beginning to enroll the device.
+
+![An image of the Android Company Portal app, which shows in large text "Access Company Content" in the middle rather than offering immediate enrollment options as is the standard case](./media/and_access_company_content_after_1706.png)
+
+The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials.
+
+![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
+
+The device can still be enrolled into full management by tapping on the **action** menu.
+
+![An image of the Company Portal app for Android, showing the menu from the top right corner of the screen with an option to still enroll the device.](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
+
+### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
+
+The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app.
+
+![An image of the Windows 10 Company Portal app, where the download of Microsoft Word is in a pending state from the Company Portal's app store.](./media/w10_download_pending_after_1706.png)
+
+![An image of the Windows 10 Company Portal app, with the new automatic syncing state showing with a status message indicating that the device is syncing and attempting to download the app.](./media/w10_download_pending_syncing_after_1706.png)
+
+### New guided experience for Windows 10 Company Portal <!---1058938--->
+The Company Portal app for Windows 10 will include a guided Intune walkthrough experience for devices that have not been identified or enrolled. The new experience provides step-by-step instructions that guide the user through registering into Azure Active Directory (required for Conditional Access features) and MDM enrollment (required for device management features). The guided experience will be accessible from the Company Portal home page. Users can continue to use the app if they do not complete registration and enrollment, but will experience limited functionality.
+
+This update is only visible on devices running Windows 10 Anniversary Update (build 1607) or higher.
+
+![An image of the Windows 10 Company Portal app landing page, with a status message in the middle in the "devices" list which is telling a user that the device they're on hasn't been set up for corporate use yet, and that the user should select the message to begin setup.](./media/win10_guided_enroll_select_setup_after_1706.png)
+
+![An image of the Windows 10 Company Portal app set up page, which is warning the user that they need to add a corporate account to this device, then they can enroll it into management.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+
+![An image of the Windows 10 Company Portal app add corporate account to this device page, which is telling the user that they will need to go to the Settings app and select "Connect" to complete enrollment. After they do this, the screen tells them that they will need to return to the Company Portal app to complete enrolling.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+
+![An image of the Windows 10 Company Portal app enroll into management screen, which shows a completed status message saying that the user's device is now enrolled and that they should tap the 'next' button to continue.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
+
+![An image of the Windows 10 Company Portal app completion screen, letting the user know that they're all set, and that the device is enrolled with a corporate account properly added to it.](./media/win10_guided_enroll_youre_all_set_after_1706.png)
+
+### New menu action to easily remove Company Portal <!--1164569-->
+Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user.
+
+![An image of the Android Company Portal app, with the action menu opened in the top right corner. The new "remove company portal" option is available as the third option, underneath "my profile" and "settings", and above "terms and conditions", "help and feedback", and "about".](./media/android_remove_cp_menu_action_after_1705.png)
+
+![An image of the confirmation dialog, that is available after selecting the new "remove company portal" option from the action menu. The dialog informs the user that "by removing company portal, your device will no longer be managed by your IT admin and may remove access to company data, company apps, and company email." It then asks the user to confirm that they want to remove the Company Portal app by selecting "Yes".](./media/android_remove_cp_menu_confirmation_after_1705.png)
+
+## Week of June 5, 2017
+
+### Improvements to the app tiles in the Company Portal app for iOS
+We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal.
+
+**Before**
+
+![An image of the Company Portal app for iOS from before the update, which showed preset filler images for "All apps", "Featured apps," and "categories."](./media/cp_ios_homepage_before_1705.png)
+
+**After**
+
+![An image of the Company Portal app for iOS after the update, which now reflects the ability to select whatever colors are relevant for your organization.](./media/cp_ios_homepage_after_1705.png)
+
+### Account picker now available for the Company Portal app for iOS
+If users have used their work or school account to sign in to other Microsoft apps on their iOS device, then they may see our new account picker when signing into the Company Portal for the first time.
+
+![An image of the account selector, which shows a test user "Robin Swanson" choosing between one of their two email addresses. There is a button underneath the two addresses that allows the user to sign in with a different account.](./media/cp_ios_multi-account-selector-after-1705.png)
 
 ## April 2017
 
@@ -168,6 +229,18 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 ![On the left, an image of the current version of the Company Portal website with its previous version of Apps, My Devices, and Featured and Categories views. On the right, an image of the updated version of the Company Portal website with a refreshed app carousel, list of Recently Published apps, and updated Categories view.](./media/CP_Website_BeforeAfter_Feb2016.png)
 
+## Coming soon in the UI
+These are the plans for ways we will be improving the user experience by updating our user interface.
+
+> [!Note]
+> Please note that the images below may be previews, and the announced product may differ from the presented versions.
+
+### UI updates to the Company Portal website <!--1313244 part 2-->
+
+__Updates to Featured Apps__
+We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
+
+![The colorful tiles that show the apps. They are large squares of color underneath each app, where the color is pulled from the primary color within the app logo. The "Featured Apps" section appears across the top of the Company Portal app.](./media/cp_win10_colorful_tiles_after_1708.png)
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

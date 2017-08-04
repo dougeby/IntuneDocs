@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Common ways to use Intune 
+title: Common ways to use Intune
 description: Lists six of the most common tasks that Intune helps with
 keywords:
 author: robstackmsft
@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you are brand new to enterprise mobility or migrating from another product.  
+Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you're brand new to enterprise mobility or migrating from another product.  
 
 The needs around enterprise mobility are dynamically evolving, and Microsoft's approach to addressing them is sometimes different from other solutions in the market. The best way to align around business goals is to express your goals in terms of the scenarios you want to enable for your employees, partners, and IT department.  
 

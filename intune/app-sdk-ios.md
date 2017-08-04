@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,15 +55,25 @@ This guide covers the use of the following components of the Intune App SDK for 
 
 * **IntuneMAMResources.bundle**: A resource bundle that has resources that the SDK relies on.
 
-* **Headers**: Exposes the Intune App SDK APIs. If you use an API, you will need to include the header file that contains the API. The following header files include the API function calls required to enable the functionality of the Intune App SDK:
+* **Headers**: Exposes the Intune App SDK APIs. If you use an API, you will need to include the header file that contains the API. The following header files include the APIs, data types, and protocols which the Intune App SDK makes available to developers:
 
-	* IntuneMAMAsyncResult.h
+	* IntuneMAMAppConfig.h
+	* IntuneMAMAppConfigManager.h
 	* IntuneMAMDataProtectionInfo.h
 	* IntuneMAMDataProtectionManager.h
+	* IntuneMAMDefs.h
+	* IntuneMAMEnrollmentDelegate.h
+	* IntuneMAMEnrollmentManager.h
+	* IntuneMAMEnrollmentStatus.h
 	* IntuneMAMFileProtectionInfo.h
 	* IntuneMAMFileProtectionManager.h
-	* IntuneMAMPolicyDelegate.h
 	* IntuneMAMLogger.h
+	* IntuneMAMPolicy.h
+	* IntuneMAMPolicyDelegate.h
+	* IntuneMAMPolicyManager.h
+	* IntuneMAMVersionInfo.h
+	
+Developers can make the contents of all the above headers available by just importing IntuneMAM.h
 
 
 ## How the Intune App SDK works
@@ -150,11 +160,13 @@ To enable the Intune App SDK, follow these steps:
 	> [!NOTE]
 	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app.
 
-7. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
+8. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
-8. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+9. If the app defines Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
 
-9. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
+10. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+
+11. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
 
 
@@ -463,6 +475,17 @@ MAMTelemetryDisabled| Boolean| Specifies if the SDK will not send any telemetry 
 
 > [!NOTE]
 > If your app will be released to the App Store, `MAMPolicyRequired` must be set to "NO," per App Store standards.
+
+## Enabling MAM targeted configuration for your iOS applications
+MAM targeted configuration allows an app to receive configuration data through the Intune App SDK. The format and variants of this data must be defined and communicated to Intune customers by the application owner/developer. Intune administrators can target and deploy configuration data via the Intune Azure console. As of the Intune App SDK for iOS (v 7.0.1), apps that are participating in MAM targeted configuration can be provded MAM targeted configuration data via the MAM Service. The application configuration data is pushed through our MAM Service directly to the app instead of through the MDM channel. The Intune App SDK provides a class to access the data retrieved from these consoles. Consider the following as prerequisites: <br>
+* The app needs to be MAM-WE enrolled before you access the MAM targeted config UI. For more information about MAM-WE, see [App protection policy without device enrollment in the Intune App SDK guide](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Include ```IntuneMAMAppConfigManager.h``` in your app's source file.
+* Call ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` to get the App Config Object.
+* Call the appropriate selector on ```IntuneMAMAppConfig``` object. For example, if your application's key is a string, you'd want to use ```stringValueForKey``` or ```allStringsForKey```. The ```IntuneMAMAppConfig.h header``` file talks about return values/error conditions.
+
+For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+For more information about how to create a MAM targeted app configuration policy in iOS, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
 
 ## Telemetry
 

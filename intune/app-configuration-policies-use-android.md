@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,7 +71,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 The policy will be created and appears on the policies list blade.
 
-Then, continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
+
 
 When the assigned app is run on a device, it will run with the settings that you configured in the app configuration policy.
 
@@ -95,3 +95,8 @@ You can also preconfigure permission for apps to access Android device features.
 8. To assign the app configuration policy, select the app configuration policy, select **Assignment**, and then select **Select groups**.
 9. Select the user groups to assign, and then choose **Select**.
 10. Choose **Save** to assign the policy.
+
+## Next steps
+
+Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
+

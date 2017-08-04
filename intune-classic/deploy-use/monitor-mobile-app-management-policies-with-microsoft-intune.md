@@ -49,11 +49,13 @@ On **Intune mobile application management** blade, you can see a summary of the 
 
 ![Summary tile on the Intune mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
 
--   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
+-   **Users**: The total number of users in your company who are using an app which is associated with a policy in a work context.
 
--   **MANAGED BY POLICY**: The number of users who have used at least one of the apps in the work context.
+-   **MANAGED BY POLICY**: The number of users who have used an app who have a policy assigned to them in a work context.
 
--   **NO POLICY**: The number of users who are using the apps that are associated with the policy, but who are not targeted by the policy. You might consider adding these users to the policy.
+-   **NO POLICY**: The number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
+	> [!NOTE]
+	> If you have multiple policies per platform, a user will be considered managed by policy when they have at least one policy assigned to them.
 
 - **Flagged users**: The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
 
@@ -137,5 +139,5 @@ Follow these steps to generate the App protection report:
 ## See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](/intune/end-user-mam-apps-android)
+* [What to expect when your iOS app is managed by app protection policies](/intune/end-user-mam-apps-ios)

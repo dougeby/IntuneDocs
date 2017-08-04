@@ -46,7 +46,7 @@ description: Learn to use Microsoft Intune.
                                         </div>
                                         <div class="cardText">
                                             <h3>Intune in the Azure portal</h3>
-                                            <p>As Microsoft Intune moves to the Azure portal, learn about the changes available in the new portal. </p>
+                                            <p>Microsoft Intune is available in the Azure portal. Learn about managing devices and apps in the new portal. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -54,26 +54,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                        <a href="/intune-classic/plan-design/introduction">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-featured-deploymentplanning.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Deployment planning and design</h3>
-                                            <p>Step through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/intune-education/what-is-intune-for-education">
+                         <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -85,6 +66,25 @@ description: Learn to use Microsoft Intune.
                                         <div class="cardText">
                                             <h3>What is Intune for Education?</h3>
                                             <p>Learn how to accomplish everyday things you need to do with devices in classrooms.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/intune/get-started-evaluation">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get started with Intune</h3>
+                                            <p>Learn the basics: Create a group and user. Enroll devices. Assign policies and apps.</p>
                                         </div>
                                     </div>
                                 </div>

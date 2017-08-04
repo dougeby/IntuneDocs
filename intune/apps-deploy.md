@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Once you've added an app to Intune, you'll want to get it out to users and devices. You do this by assigning it.
+Once you've added an app to Intune, you can assign it to users and devices.
 
 Apps can be assigned to devices whether or not they are managed by Intune. Use the following table to help you understand the various options for assigning apps to users and devices:
 
@@ -49,33 +49,6 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 > [!NOTE]
 > Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.
 
-## Changes to how you assign apps to groups in the Intune
-
-In the Intune Azure poral, you no longer use Intune groups to assign apps; you now use Azure Active Directory (Azure AD) security groups. Because of this, you’ll need to learn about some changes to the way app assignments work, particularly when you have assigned apps to Intune child groups.
-The most important thing to note is that the concept of child groups does not exist in Azure AD. However, some groups might contain the same members. In this case, the behavior between classic Intune and the Intune Azure portal is different. The following table illustrates this:
-
-||||||
-|-|-|-|-|-|
-|**Intune Classic (before tenant migration)**|-|**Intune Azure (after tenant migration is complete)**|-|**More information**|
-|**Parent group assignment intent**|**Child group assignment intent**|**Resulting assignment intent for common members of previous parent and child group**|**Resulting assignment intent action for members of parent group**|-|
-|Available|Required|Required and Available|Available|Required and Available means that apps assigned as required can also be seen in the Company Portal app.
-|Not Applicable|Available|Not Applicable|Not Applicable|Workaround: Remove the ‘Not Applicable’ assignment intent from the Intune parent group.
-|Required|Available|Required and Available|Required|-|
-|Required and Available<sup>1</sup>|Available|Required and Available|Required and Available|-|
-|Required|Not Applicable|Required|Required|-|
-|Required and Available|Not Applicable|Required and Available|Required and Available|-|
-|Required|Uninstall|Required|Required|-|
-|Required and Available|Uninstall|Required and Available|Required and Available|-|
-<sup>1</sup> For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
-
-You can take the following actions to avoid assignment conflicts:
-
-1.	If you previously assigned apps to related Intune parent and child groups, consider removing these assignments before your tenant migration begins.
-2.	Remove child groups from parent groups, and create a new group containing the members of the old child group. You can then create a new app assignment to this group.
-Notes: If the previous parent group was “All Users”, you’ll need to create a new dynamic group that does not include members of the child group.
-You must make any changes to groups in the [Azure Portal](https://portal.azure.com/) for user and device groups. The [Classic Azure Portal](https://manage.windowsazure.com/) will only allow you to make changes to user groups.
-
-
 ## How to assign an app
 
 1. Sign into the Azure portal.
@@ -90,9 +63,54 @@ You must make any changes to groups in the [Azure Portal](https://portal.azure.c
 	- **Not Applicable** - The app is not installed or shown in the Company Portal.
 	- **Required** - The app is installed on devices in the selected groups.
 	- **Uninstall** - The app is uninstalled from devices in the selected groups.
-	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. See the table above for help.
+	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
+6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is   run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
 6. Once you are done, choose **Save**.
 
-The app is now assigned to the group you chose.
+The app is now assigned to the groups you selected.
+
+## How conflicts between app intents are resolved
+
+Sometimes, the same app is assigned to multiple groups, but with different intents. In these cases, use this table to understand the resulting intent.
+
+||||
+|-|-|-|
+|Group 1 intent|Group 2 intent|Resulting intent|
+|User Required|User Available|Required and Available|
+|User Required|User Not Available|Required|
+|User Required|User Uninstall|Required|
+|User Available|User Not Available|Not Available|
+|User Available|User Uninstall|Uninstall|
+|User Not Available|User Uninstall|Uninstall
+|User Required|Device Required|Both exists, Gateway treats required 
+|User Required|Device Uninstall|Both exists, Gateway resolves required 
+|User Available|Device Required|Both exists, Gateway resolves required (Required and Available)
+|User Available|Device Uninstall|Both exists, Gateway resolves Available.<br>App shows up in Company Portal.<br>In case if the app is already installed(as required app with previous intent) then the app gets uninstalled.<br>But if the user clicks install from the company portal then the app gets installed and uninstall intent is not honored.|
+|User Not Available|Device Required|Required|
+|User Not Available|Device Uninstall|Uninstall|
+|User Uninstall|Device Required|Both exists, Gateway resolves Required|
+|User Uninstall|Device Uninstall|Both exist, Gateway resolves Uninstall|
+|Device Required|Device Uninstall|Required|
+|User Required And Available|User Available|Required and Available|
+|User Required And Available|User Uninstall|Required and Available|
+|User Required And Available|User Not Available|Required and Available|
+|User Required And Available|Device Required|Both exists Required and Available
+|User Required And Available|Device Not Available|Required and Available|
+|User Required And Available|Device Uninstall|Both exists, gateway resolves required. Required + Available
+|User Not Available|Device Not Available|Not Available|
+|User Available|Device Not Available|Available|
+|User Required|Device Not Available|Required|
+|User Available Without enrollment|User Required and Available|Required and Available
+|User Available without enrollment|User Required|Required
+|User Available without enrollment|User Not available|Not Available
+|User Available without enrollment|User Available|Available|
+|User Available without enrollment|Device Required|Required and Available without enrollment|
+|User Available without enrollment|Device Not Available|Available without enrollment|
+|User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal, then the uninstall is honored.<br>If the user installs the app from the company portal, then the install is prioritized over the uninstall.|
+
+>[!NOTE]
+>For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
+
+## Next steps
 
 See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
