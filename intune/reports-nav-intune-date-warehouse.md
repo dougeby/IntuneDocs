@@ -52,7 +52,7 @@ For more information, see [Get data from the Data Warehouse API with a REST clie
 
 The API requires authorization with Azure AD. Azure AD uses OAuth 2.0. Once authorized, you can get data from the API using an HTTP GET verb and contacting the exposed entity collections. For details see:
 
- -  [Authorization](reports-api-url.md#Authorization)
+ -  [Authorization](reports-api-url.md)
  -  [API URL Structure](reports-api-url.md)
 
 ## Intune Data Warehouse data model
