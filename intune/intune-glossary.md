@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune glossary
-titleSuffix: "Intune on Azure"
+titleSuffix:
 description: Learn about some of the terminology used in Microsoft Intune
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,17 +29,15 @@ ms.custom: intune-azure
 
 # Microsoft Intune glossary
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
 ## A
 
 |||
 |-|-|
 |App assignment|Lets users [find, download, and install](/intune/app-management) the apps they need. This was previously known as *app deployment*.|
-|App configuration profile|Configures an [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) app with specific settings before it runs.|
+|App configuration profile <br/><br/>App configuration policy|Available to mobile apps with vendor-specific configurations. Configures an [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) app with specific settings before it runs.|
 |App monitoring|Lets you [review recent status and activity](/intune/apps-monitor) related to app assignment.|
 |App protection data removal task|[Removes app data](/intune/app-protection-policies) from the user's device.|
-|App protection policy|Ensures that user's apps are compliant with your [company data protection policies](/intune/app-protection-policies).|
+|App protection policy|Available to mobile apps that integrate with Enterprise Mobility + Security (EMS) technologies. Ensures that user's apps are compliant with your [company data protection policies](/intune/app-protection-policies).|
 |App SDK|The [Microsoft Intune App SDK](/intune/app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune app protection policies.|
 |App uninstall action|Lets you [uninstall apps](/intune/apps-deploy) from user's devices.|
 |App Wrapping Tool|A [command-line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line-of-business app, letting it be managed by an Intune app protection policy.|
@@ -111,7 +109,7 @@ ms.custom: intune-azure
 |-|-|
 |Managed Browser|A [web browsing application](/intune/app-configuration-managed-browser) that you can assign in your organization by using Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.|
 |MDM authority|The [MDM authority](/intune/mdm-authority-set) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
-|Mobile app configuration policy|An [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) policy that is used to supply settings to compatible apps when they are run, for example, a company name, or server address.|
+|Mobile app configuration policy|Available to mobile apps with vendor-specific configurations. For example, an [iOS](/intune/app-configuration-policies-use-ios) or [Android](/intune/app-configuration-policies-use-android) policy that is used to supply settings to compatible apps when they are run, for example, a company name, or server address.|
 |Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune/app-provisioning-profile-ios) for iOS apps you assign do not expire.|
 |Mobile application management|[Mobile application management (MAM)](/intune/app-lifecycle) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 |Mobile device management|[Mobile device management (MDM)](/intune/device-lifecycle) lets you enroll devices in Intune so that you can provision, configure, monitor, and manage those devices.
@@ -139,7 +137,7 @@ ms.custom: intune-azure
 ## S
 |||
 |-|-|
-|Selective wipe|A [selective wipe](/intune/device-company-data-remove) removes only company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device.|
+|Selective wipe|A [selective wipe](/intune/device-company-data-remove) removes only company data protected by app protection policy including settings and email profiles from a device. Selective wipe leaves the user's personal data on the device.|
 |Sideloading|The action of installing a line-of-business app without accessing it from an app store.|
 |Subscription|The agreement you enter that allows you to access an Intune tenant.|
 

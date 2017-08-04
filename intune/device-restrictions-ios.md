@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,75 +31,56 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Camera** - Select whether the camera on the device can be used. 	
+	
 - 	**Diagnostic data submission** - Allow or block the device from submitting diagnostic data to Apple.
-- 	**FaceTime** - Allow the FaceTime app to be used on the device.
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.
-- 	**Siri** - Allow use of the Siri voice assistant on the device.
-	- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.
-	- 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.
-	- 	**Siri to query user-generated content from the internet (supervised only)** - Allow Siri to access websites to answer questions.
+	- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Apple Classroom app from viewing the screen of iOS devices.
+	- **Unprompted screen observation by Classroom app (supervised only)** - If allowed, teachers can silently observe the screen of students iOS devices  using the Classroom app without the students knowledge.
 - 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.
+- 	**Enterprise app trust** - Lets the user select to trust apps that were not downloaded from the app store.
+- **Account modification (supervised only)** - When blocked, this prevents the user from modifying device-specific settings from the iOS settings app, like creating new device accounts, and changing the user name or password.
+This also applies to settings accessible from the iOS settings app like Mail, Contacts, Calendar, Facebook, and Twitter. This does not apply to apps with account settings that are not configurable from the iOS settings app, for example, the Microsoft Outlook app.
+- **Enabling restrictions in the device settings (supervised only)** - Allow the user to configure device restrictions (parental controls) on the device.
+- **Use of the erase all content and settings option on the device (supervised only)** - Allow the user to use the option of erasing all content and settings on the device.
+- **Device name modification (supervised only)** - Allow the user to change the name of the device.
+- **Notification settings modification (supervised only)** - Allow the user to change the device notification settings.
+- **Wallpaper modification (supervised only)** - Allow the user to change the device wallpaper.
+- **Enterprise app trust settings modification (supervised only)** - Lets the user select to trust apps that were not downloaded from the app store.
+- **Configuration profile changes** - Allow the user to install configuration profiles.
+- **Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
+
+## Password
+- 	**Password** - Require the end user to enter a password to access the device.
+	- 	**Simple passwords** - Allow simple passwords like 0000 and 1234.
+	- 	**Required password type** - Specify the type of password that will be required, such as numeric only or alphanumeric.
+	- 	**Number of non-alphanumeric characters in password** - Specify the number of symbol characters (like **#** or **@**) that must be included in the password.
+	- 	**Minimum password length** - Specify the minimum number of characters in the password.
+	- 	**Number of sign-in failures before wiping device** - Specify the number of failed login attempts before this setting wipes the device.
+	- 	**Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must re-enter their password.
+	- 	**Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the number of minutes before the device display is turned off.
+	- 	**Password expiration (days)** - Specify the number of days before the device password must be changed.
+	- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.
+	- 	**Fingerprint unlock** - Allow using a fingerprint to unlock compatible devices.
+- **Passcode modification (supervised only)** - Stops the passcode from being changed, added, or removed. 
+	- **Fingerprint modification (supervised only)** - Stops the user from changing, adding, or removing TouchID settings.
+
+<sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
+
+## Locked Screen Experience
+
 - 	**Control Center access while device locked** - Allow the user to access the control center app when the device is locked.
 - 	**Notifications while device locked** - Allow the user to access the notifications view without unlocking the device.
 - 	**Passbook while device locked** - Allow the user to access the Passbook app while the device is locked.
 - 	**Today view while device locked** - Allow the user to see the Today view when the device is locked.
-- 	**Enterprise app trust** - Lets the user select to trust apps that were not downloaded from the app store.
-- 	**AirDrop (supervised only)** - Allow use of the AirDrop feature to exchange content with nearby devices.
-- 	**Spotlight search to return results from internet (supervised only)** - Let Spotlight search connect to the Internet to provide further results.
-- 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.
-- 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.
-- 	**Auto-correction (supervised only)** - Lets the device automatically correct misspelled words.
-- 	**Keyboard spell-check (supervised only)** - Allows the device spell checker.
-- 	**Keyboard shortcuts (supervised only)** - Allows use of keyboard shortcuts.
-- 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.
-- **Require AirPlay outgoing requests pairing password** - Require a pairing password when the user uses AirPlay to stream content to other Apple devices.
-- **Account modification (supervised only)** - When blocked, this prevents the user from modifying device-specific settings from the iOS settings app, like creating new device accounts, and changing the user name or password.
-This also applies to settings accessible from the iOS settings app like Mail, Contacts, Calendar, Facebook, and Twitter. This does not apply to apps with account settings that are not configurable from the iOS settings app, for example, the Microsoft Outlook app.
-- **Apple Watch pairing (supervised only)** - Allow the device to pair with an Apple Watch.
-- **Bluetooth modification (supervised only)** - Block the end user from changing Bluetooth settings on the device.
-- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Classroom app from observing the screen on remote devices.
-- **Enabling restrictions in the device settings (supervised only)** - Allow the user to configure device restrictions (parental controls) on the device.
-- **Use of the erase all content and settings option on the device (supervised only)** - Allow the user to use the option of erasing all content and settings on the device.
-- **Device name modification (supervised only)** - Allow the user to change the name of the device.
-- **Diagnostics submission settings modification (supervised only)** - Allow or block the device from submitting diagnostic data to Apple.
-- **Host pairing to control the devices an iOS device can pair with (supervised only)** - Allow host pairing to let the administrator control which devices an iOS device can pair with.
-- **Notification settings modification (supervised only)** - Allow the user to change the device notification settings.
-- **Passcode modification (supervised only)** - Allow the device password to be added, changed, or removed.
-- **Wallpaper modification (supervised only)** - Allow the user to change the device wallpaper.
-- **Enterprise app trust settings modification (supervised only)** - Lets the user select to trust apps that were not downloaded from the app store.
-- **Installing apps from App Store (supervised only)** - Allow the device to access the app store and install apps.
-- **Changes to the Find My Friends app settings (supervised only)** - Allow the user to change settings for the Find My Friends app.
-- **iBooks store (supervised only)** - Allow the user to browse and purchase books from the iBooks store.
-- **Messages app on the device (supervised only)** - Allow use of the Messages app to send and read text messages.
-- **Podcasts (supervised only)** - Allow use of the Podcasts app.
-- **Music service (supervised only)** - Allow use of the Apple Music app.
-- **iTunes Radio service (supervised only)** - Allow use of the iTunes Radio app.
-- **Apple News (supervised only)** - Allow use of the Apple News app.
-- **Configuration profile changes** - Allow the user to install configuration profiles.
-
-## Password
-- 	**Password required** - Require the end user to enter a password to access the device.
-- 	**Simple passwords** - Allow simple passwords like 0000 and 1234.
-- 	**Required password type** - Specify the type of password that will be required, such as numeric only or alphanumeric.
-- 	**Number of non-alphanumeric characters in password** - Specify the number of symbol characters (like **#** or **@**) that must be included in the password.
-- 	**Minimum password length** - Specify the minimum number of characters in the password.
-- 	**Number of sign-in failures before wiping device** - Specify the number of failed login attempts before this setting wipes the device.
-- 	**Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must re-enter their password.
-- 	**Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the number of minutes before the device display is turned off.
-- 	**Password expiration (days)** - Specify the number of days before the device password must be changed.
-- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.
-- 	**Fingerprint unlock** - Allow using a fingerprint to unlock compatible devices.
-
-<sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 ## App Store, Doc Viewing, Gaming
 
 
--   **App store (supervised only)** - Block access to the app store on supervised devices.
+-   **App store** - Block access to the app store on supervised devices.
+	- **Installing apps from App Store (supervised only)** - Blocks the app store from the device home screen. End users can continue to use iTunes or the Apple Configurator to install apps.
+	- **Automatic app downloads (supervised only)** - Stops apps that were purchased on another iOS device from being downloaded to this device.
 - 	**Password to access app store** - Require the user to enter a password before they can visit the app store.
 - 	**In-app purchases** - Allow store purchases to be made from within a running app.
-- 	**Automatic app downloads (supervised only)** -
 - 	**Explicit iTunes music, podcast, or news content (supervised only)** - Allow the device to access content rated as adult from the store.
 - 	**Download content from iBook store flagged as 'Erotica'** - Allow the user to download books with the "Erotica" category.
 - 	**Viewing corporate documents in unmanaged apps** - Allow corporate documents to be viewed in any app.<br>**Example:** You want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example, after a restart), it will no longer allow saving.
@@ -110,6 +91,23 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 - 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.
 - 	**Ratings region** - Choose the ratings region for which you want to configure allowed downloads, then choose the allowed ratings for **Movies** and **TV Shows**.
 - 	**Apps** - Choose the allowed age rating of apps that users will be able to download, or you can choose **Allow All Apps**.
+
+## Built-in Apps
+
+- 	**Camera** - Select whether the camera on the device can be used. 
+	- 	**FaceTime** - Allow the FaceTime app to be used on the device.
+- 	**Siri** - Allow use of the Siri voice assistant on the device.
+	- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.
+	- 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.
+	- 	**Siri to query user-generated content from the internet (supervised only)** - Allow Siri to access websites to answer questions.
+- **Apple News (supervised only)** - Allow use of the Apple News app.
+- **iBooks store (supervised only)** - Allow the user to browse and purchase books from the iBooks store.
+- **Messages app on the device (supervised only)** - Allow use of the Messages app to send and read text messages.
+- **Podcasts (supervised only)** - Allow use of the Podcasts app.
+- **Music service (supervised only)** - Allow use of the Apple Music app.
+- **iTunes Radio service (supervised only)** - Allow use of the iTunes Radio app.
+- **Changes to the Find My Friends app settings (supervised only)** - Allow the user to change settings for the Find My Friends app.
+- **Spotlight search to return results from internet (supervised only)** - Let Spotlight search connect to the Internet to provide further results.
 
 ## Restricted apps
 
@@ -139,7 +137,7 @@ Example: Search for Microsoft Word for iPad. The URL that you use will be https:
 
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
 
-## Show or hide apps
+## Show or hide apps (supervised only)
 
 In the show or hide apps list, you can configure one of the following lists (requires supervised devices running iOS 9.3 or later).
 
@@ -165,12 +163,36 @@ Example: Search for Microsoft Word for iPad. The URL that you use will be https:
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the hidden or visible apps list in the same format.
 
 
-## Cellular
+## Wireless
 - 	**Data roaming** - Allow data roaming when the device is on a cellular network.
 - 	**Global background fetch while roaming** - Allow the device to fetch data such as email while it is roaming on a cellular network.
 - 	**Voice dialing** - Allow use of the voice dialing feature on the device.
 - 	**Voice roaming** - Allow voice roaming when the device is on a cellular network.
 - 	**Changes to app cellular data usage settings (supervised only)** - Allow the user to control which apps are allowed to use cellular data.
+- 	**Personal Hotspot** - Don't allow the device to be used as a personal hotspot. This setting might not be compatible with some carriers.
+- 	**Join Wi-Fi networks only using configuration profiles (supervised only)** - Only allow the device to join Wi-Fi networks that have been configured with an Intune Wi-Fi profile.
+
+- **Cellular usage rules (managed apps only)** - Lets you define the data types that managed apps can use when on cellular networks. Choose from:
+	- **Block use of cellular data**
+	- **Block use of cellular data when roaming**
+
+## Connected Devices
+
+- 	**AirDrop (supervised only)** - Allow use of the AirDrop feature to exchange content with nearby devices.
+- 	**Apple Watch pairing (supervised only)** - Allow the device to pair with an Apple Watch.
+- 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.
+- 	**Bluetooth modification (supervised only)** - Block the end user from changing Bluetooth settings on the device.
+- 	**Host pairing to control the devices an iOS device can pair with (supervised only)** - Allow host pairing to let the administrator control which devices an iOS device can pair with.
+- 	**Require AirPlay outgoing requests pairing password** - Require a pairing password when the user uses AirPlay to stream content to other Apple devices.
+
+## Keyboard and Dictionary
+
+- 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.
+- 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.
+- 	**Auto-correction (supervised only)** - Lets the device automatically correct misspelled words.
+- 	**Keyboard spell-check (supervised only)** - Allows the device spell checker.
+- 	**Keyboard shortcuts (supervised only)** - Allows use of keyboard shortcuts.
+- 	**Dictation (supervised only)** - Stops the user from using voice input to enter text.
 
 ## Cloud and Storage
 - 	**Backup to iCloud** - Allow the user to back up the device to iCloud.
@@ -244,25 +266,24 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 ```
 
 
-## Kiosk
-- 	**Activation Lock** - Enable Activation Lock on supervised iOS devices.
+## Kiosk (supervised only)
 - 	**App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
-- 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.
-- 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.
-- 	**Mono audio** - Enable or disable the accessibility setting Mono audio.
-- 	**VoiceOver** - Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.
-- 	**Zoom** - Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.
-- 	**Auto lock** - Enable or disable automatic locking of the device.
-- 	**Ringer switch** - Enable or disable the ringer (mute) switch on the device.
-- 	**Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.
-- 	**Screen sleep button** - Enable or disable the screen sleep wake button on the device.
-- 	**Touch** - Enable or disable the touchscreen on the device.
-- 	**Volume buttons** - Enable or disable the use of the volume buttons on the device.
-- 	**Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.
-- 	**Invert colors control** - Enable or disable invert colors adjustments, which let the user adjust the invert colors function.
-- 	**Speak on selected text** - Enable or disable the Speak Selection accessibility settings, which can read aloud the text that the user selects.
-- 	**VoiceOver control** - Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).
-- 	**Zoom control** - Enable or disable zoom adjustments, which let the user adjust the zoom function.
+	- 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.
+	- 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.
+	- 	**Mono audio** - Enable or disable the accessibility setting Mono audio.
+	- 	**VoiceOver** - Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.
+	- 	**Zoom** - Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.
+	- 	**Auto lock** - Enable or disable automatic locking of the device.
+	- 	**Ringer switch** - Enable or disable the ringer (mute) switch on the device.
+	- 	**Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.
+	- 	**Screen sleep button** - Enable or disable the screen sleep wake button on the device.
+	- 	**Touch** - Enable or disable the touchscreen on the device.
+	- 	**Volume buttons** - Enable or disable the use of the volume buttons on the device.
+	- 	**Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.
+	- 	**Invert colors control** - Enable or disable invert colors adjustments, which let the user adjust the invert colors function.
+	- 	**Speak on selected text** - Enable or disable the Speak Selection accessibility settings, which can read aloud the text that the user selects.
+	- 	**VoiceOver control** - Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).
+	- 	**Zoom control** - Enable or disable zoom adjustments, which let the user adjust the zoom function.
 
 >[!NOTE]
 > Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.

@@ -31,6 +31,7 @@ The troubleshooting portal lets help desk operators and Intune administrators vi
 
 For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues including:
 - User status
+- Assignments
 - App install failure
 - Compliance issues
 - Device not responding
@@ -49,10 +50,12 @@ To add help desk users:
   - ManagedApps: Read
   - ManagedDevices: Read
   - Organization: Read
+  - DeviceCompliancePolices: Read
+  - DeviceConfigurations: Read
 
   ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
 
-4. To give help desk operators permission to view the service health and open support tickets for Intune, [grant users admin permissions](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) as a **Service administrator**. Do not give **Intune Service administrator** permission because this directory role has more rights than those needed for help desk operators. 
+4. To give help desk operators permission to view the service health and open support tickets for Intune, [grant users admin permissions](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) as a **Service administrator**. Do not give **Intune Service administrator** permission because this directory role has more rights than those needed for help desk operators.
 
 ## Access the troubleshooting portal
 
@@ -68,7 +71,7 @@ Click **Select user** to view a user and that user's details.
 ## Use the troubleshooting portal
 
 In the troubleshooting portal, you can choose **Select user** to view a users' information. User information can help you understand the current state of users and their devices. The troubleshooting portal shows the following troubleshooting details:
-- **Tenant status**
+- **Account status**
 - **User status**
 - **Devices** with device actions
 - **Group membership**
