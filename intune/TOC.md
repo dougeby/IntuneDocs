@@ -83,7 +83,7 @@
 ### [Set up iOS enrollment](ios-enroll.md)
 #### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
