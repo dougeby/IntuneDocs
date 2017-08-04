@@ -55,7 +55,10 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 3. Choose **Device enrollment** > **Apple Enrollment**.
 4. In **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
 5. On the **Apple Configurator Enrollment Profiles** blade, select **Create**.
-6. Type a **Name** and **Description** for the profile.
+6. Type a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this Name field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about Azure Active Directory dynamic groups.
+
+  ![Screenshot of the create profile screen with Enroll with user affinity selected](./media/apple-configurator-profile-create.png)
+
 7. Specify **User Affinity**:
    - **Enroll with user affinity** - The device must be affiliated with a user with Setup Assistant and can then access company data and email. User affinity is required for managed devices that belong to users and that need to use the Company Portal for services like installing apps.
    - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work. Required for direct enrollment.
