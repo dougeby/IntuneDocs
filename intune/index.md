@@ -16,11 +16,6 @@ description: Learn to use Microsoft Intune.
         <li>
             <a href="#manage">Manage</a>
             <ul id="manage">
-  <li class="fullSpan">
-                            <div class="container">
-                                <h3>See <a href="/intune/what-is-intune">all of the Intune documentation</a>.</h3>
-                            </div>
-                        </li>
                 <li>
                     <a href="#manage-featured">Featured articles</a>
                     <ul id="manage-featured" class="cardsC">
