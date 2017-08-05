@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 06/08/2017
+ms.date: 8/02/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,23 +29,200 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## June 2017
+
+### New role-based administration access for Intune admins   <!-- 1099990 -->  
+A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permission so that they have access to conditional access policies.
+
+
+### Tag corporate-owned devices with serial number <!-- 1215070 -->  
+Intune now supports uploading iOS, macOS, and Android serial numbers as Corporate Device Identifiers. You can't use serial numbers to block personal devices from enrolling at this time because serial numbers are not verified during enrollment. Blocking personal devices by serial number will be released in the near future.
+
+
+### New remote actions for iOS devices <!-- 854689 -->
+In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
+
+- 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
+- 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
+
+
+### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
+In this release, we've expanded the support for managing the iOS Classroom app to include students who log into shared iPads using their managed Apple ID.
+
+
+### Changes to Intune built-in apps <!-- 1332306 -->
+Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
+However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
+
+### Easier installation of Office 365 apps <!--- 1121362 --->
+The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
+For more information, see [How to add Office 365 apps for Windows 10](apps-add-office365.md).
+
+
+### Support for offline apps from the Windows Store for Business <!--- 777044 --->
+Offline apps you purchased from the Windows Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
+
+### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
+The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
+
+### Managed browser and app proxy integration <!-- 1287310 -->
+The Intune Managed Browser can now integrate with the Azure AD Application Proxy service to let users access internal web sites even when they are working remotely. Users of the browser simply enter the site URL as they normally would and the Managed Browser routes the request through the application proxy web gateway. For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md).
+
+### New app configuration settings for the Intune Managed Browser <!-- 682951 -->
+In this release, we've added further configurations for the Intune Managed Browser app for iOS and Android. You can now use an app configuration policy to configure the default home page and bookmarks for the browser.
+For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md)
+
+### BitLocker settings for Windows 10  <!-- 951707 -->
+You can now configure BitLocker settings for Windows 10 devices using a new Intune device profile. For example, you can require that devices are encrypted, and also configure further settings that are applied when BitLocker is turned on.
+For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
+
+### New settings for Windows 10 device restriction profile <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
+In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
+
+-  Windows Defender
+-  Cellular and connectivity
+-  Locked screen experience
+-  Privacy
+-  Search
+-  Windows Spotlight
+-  Edge browser
+
+For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
+
+
+### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
+
+### New menu action to easily remove Company Portal <!--1164569-->
+Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).
+
+### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
+The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
+
+### New guided experience for Windows 10 Company Portal <!---1058938--->
+The Company Portal app for Windows 10 will include a guided Intune walkthrough experience for devices that have not been identified or enrolled. The new experience provides step-by-step instructions that guide the user through registering into Azure Active Directory (required for Conditional Access features) and MDM enrollment (required for device management features). The guided experience will be accessible from the Company Portal home page. Users can continue to use the app if they do not complete registration and enrollment, but will experience limited functionality.
+
+This update is only visible on devices running Windows 10 Anniversary Update (build 1607) or higher. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
+
+
+### Microsoft Intune and Conditional Access admin consoles are generally available
+We’re announcing the general availability of both the new Intune on Azure admin console and the Conditional Access admin console. Through Intune on Azure, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
+
+Intune is now visible without the **preview** label in the Azure console at portal.azure.com.
+
+There is no action required for existing customers at this time, unless you have received one of a series of messages in the message center requesting that you take action so that we can migrate your groups. You may have also received a message center notice informing you that migration is taking longer due to bugs on our side. We are diligently continuing work to migrate any impacted customer.
+
+### Improvements to the app tiles in the Company Portal app for iOS
+We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. For more information, see [what's new in app UI](whats-new-app-ui.md).
+
+### Account picker now available for the Company Portal app for iOS
+Users of iOS devices might see our new account picker when they sign into the Company Portal if they use their work or school account to sign into other Microsoft apps. For more information, see [what's new in app UI](whats-new-app-ui.md).
+
+## May 2017
+
+### Change your MDM authority without unenrolling managed devices <!--1103950-->
+You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa.
+
+
+### Improved notification for Samsung KNOX startup PINs <!--1087143-->
+When end users need to set a start-up PIN on Samsung KNOX devices to become compliant with encryption, the notification displayed to end users will bring them to the exact place in the Settings app when the notification is tapped.  Previously, the notification brought the end user to the password change screen.
+
+### Device enrollment
+
+#### Apple School Manager (ASM) support with shared iPad <!-- 748864, 770395-->
+
+Intune now supports use of Apple School Manager (ASM) in place of Apple Device Enrollment Program to provide out-of-box enrollment of iOS devices. ASM onboarding is required to use the Classroom app for Shared iPads, and is required to enable syncing data from ASM to Azure Active Directory via Microsoft School Data Sync (SDS). For more information, see [Enable iOS device enrollment with Apple School Manager](apple-school-manager-set-up-ios.md).
+
+> [!NOTE]
+> Configuring Shared iPads to work with the Classroom app requires iOS Education configurations in Azure are that not yet available.  This functionality will be added soon.
+
+### Device management
+
+#### Provide remote assistance to Android devices using TeamViewer <!-- 675418 -->
+
+Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information, see [Provide remote assistance for Intune managed Android devices](device-profile-android-teamviewer.md).
+
+### App management
+
+#### New app protection policies conditions for MAM <!-- 679864 -->
+
+You can now set a requirement for MAM without enrollment users that enforces the following policies:
+
+- Minimum application version
+- Minimum operating system version
+- Minimum Intune APP SDK version of the targeted application (iOS only)
+
+This feature is available on both Android and iOS. Intune supports minimum version enforcement for OS platform versions, application versions, and Intune APP SDK. On iOS, applications that have the SDK integrated can also set a minimum version enforcement at the SDK level. The user will be unable to access the targeted application if the minimum requirements through the app protection policy are not met at the three different levels mentioned above. At this point, the user may either remove their account (for multi-identity applications), close the application, or update the version of the OS or application.
+
+You can also configure additional settings to provide a non-blocking notification that recommends an OS or application upgrade. This notification can be closed and the application may be used as normal.
+
+For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md) and [Android app protection policy settings](app-protection-policy-settings-android.md).
+
+#### Configure app configurations for Android for Work <!-- 621621 -->
+Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Intune portal with a configuration designer or a JSON editor. For more information, see [Use app configurations for Android for Work](app-configuration-policies-use-android.md).
+
+#### New app configuration capability for MAM without enrollment <!-- 677969 -->
+You can now create app configuration policies through the MAM without enrollment channel. This feature is equivalent to the app configuration policies available in the mobile device management (MDM) app configuration. For an example of app configuration using MAM without enrollment, see  [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
+
+#### Configure allowed and blocked URL lists for the Managed Browser <!-- 682960 -->
+You can now configure a list of allowed and blocked domains and URLs for the Intune Managed Browser using app configuration settings in the Azure portal. These settings can be configured regardless of whether it is being used on a managed or unmanaged device. For more information, see [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
+
+#### App protection policy helpdesk view <!-- 1069473 -->
+IT Helpdesk users can now check user license status and the status of app protection policy apps assigned to users in the Troubleshooting blade. For details, see [Troubleshooting](./help-desk-operators.md).
+
+### Device configuration
+
+#### Control website visits on iOS devices <!-- 723832 -->
+You can now control which websites users of iOS devices can visit using one of the following two methods:
+
+- Add permitted, and blocked URLs using Apples built-in web content filter.
+
+- Allow only specified websites to be accessed by the Safari browser. Bookmarks are created in Safari for each site you specify.
+
+For more information, see [Web content filter settings for iOS devices](web-content-filter-settings-ios.md).
+
+#### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
+For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
+
+#### Define app-specific PIN for Android for Work devices <!-- 728976, 1102534 -->
+Android 7.0 and above devices with a work profile managed as an Android for Work device let the administrator define a passcode policy that only applies to apps in the work profile.  Options include:
+
+- Define just a device-wide passcode policy - This is the passcode that the user must use to unlock their entire device.
+- Define just a work profile passcode policy - Users will be prompted to enter a passcode whenever any app in the work profile is opened.
+- Define both a device and work profile policy - IT admin has the choice to define both a device passcode policy and a work profile passcode policy at differing strengths (for example, a four-digit PIN to unlock the device, but a six-digit PIN to open any work app).
+
+For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
+
+> [!NOTE]
+> This is only available on Android 7.0 and above.  By default, the end user can use the two separately defined PINs or they can elect to combine the two defined PINs into the strongest of the two.
+
+#### New settings for Windows 10 devices <!-- 978585 -->
+We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
+
+#### Updates to certificate configuration <!-- 918991 and 823198 -->
+When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+
+When creating a PKCS certificate profile, for **Subject alternative name**, the **Custom Azure AD attribute** is available. The **Department** option is available when you select **Custom Azure AD attribute**. For more information, see [How to create a PKCS certificate profile] (certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile).
+
+#### Configure multiple apps that can run when an Android device is in kiosk mode <!-- 662059 -->
+When an Android device is in kiosk mode, you could previously only configure one app that was allowed to run. You can now configure multiple apps using the app ID, store URL, or by selecting an Android app you already manage. For more information, see [Kiosk mode settings](device-restrictions-android.md#kiosk).
+
+
+
 ## April 2017
 
 ### Support for managing the Apple Classroom app
-
 You can now manage the iOS Classroom app on iPad devices. Set up the Classroom app on the teachers iPad with the correct class and student data, then configure student iPads registered to a class, so that you can control them using the app.
 For details, see [Configure iOS education settings](education-settings-configure-ios.md).
 
 ### Support for managed configuration options for Android apps <!-- 621621 -->
-
 Android apps in the Play store that support managed configuration options can now be configure by Intune.  This feature lets IT view the list of configuration values supported by an app, and provides a guided, first-class UI to allow them to configure those values.
 
 ### New Android policy for complex PINs <!-- 722069 -->
-
 You can now set a required [password](device-restrictions-android.md#password) type of Numeric complex in an Android device profile for devices that run Android 5.0 and above.  Use this setting to prevent device users from creating a PIN that contains repeating, or consecutive numbers, like 1111, or 1234.
 
 ### Additional support for Android for Work devices
-
 - **Manage password and work profile settings** <!-- 612808 -->
 
   This new Android for Work device restriction policy now lets you manage password and work profile settings on Android for Work devices you manage.
@@ -61,11 +238,10 @@ This Android for Work device restriction profile now has new options to help you
 For more information, see [Device restrictions for Android for Work](device-restrictions-android-for-work.md).
 
 ### Assign LOB apps to iOS and Android devices <!-- 1057568 -->
-
 You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa files) and [Android](lob-apps-android.md) (.apk files) to users or devices.
 
-###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 
+###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 - **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
 - **Connections to AirPrint devices** - Controls which [AirPrint devices](air-print-settings-ios-macos.md) (network printers) that end users of iOS device can connect to.
@@ -75,7 +251,6 @@ You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa 
 - **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](device-lost-mode.md)
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
-
 In an Intune device restriction profile, you can now configure the following [notification settings](app-notification-settings-ios.md) for iOS devices:
 
 - Fully turn on or off notification for a specified app.
@@ -85,11 +260,9 @@ In an Intune device restriction profile, you can now configure the following [no
 - Specify whether notification sounds are allowed.
 
 ### Configure iOS apps to run in single app mode autonomously <!-- 737837 -->
-
 You can now use an Intune device profile to configure iOS devices to run specified apps in [autonomous single app mode](device-restrictions-ios.md#autonomous-single-app-mode-supervised-only). When this mode is configured, and the app is run, the device is locked so that it can only run that app. An example of this is when you configure an app that lets users take a test on the device. When the app's actions are complete, or you remove this policy, the device returns to its normal state.
 
 ### Configure trusted domains for email and web browsing on iOS devices <!-- 723765 -->
-
 From an iOS device restriction profile, you can now configure the following [domain settings](device-restrictions-ios.md#domains):
 
 - **Unmarked email domains** - Emails that the user sends or receives which don't match the domains you specify here will be marked as untrusted.
@@ -100,31 +273,24 @@ From an iOS device restriction profile, you can now configure the following [dom
 
 
 ### VPP apps available in iOS Company Portal <!-- 748782 -->
-
 You can now assign iOS volume-purchased (VPP) apps as **Available** installs to end users. End users will need an Apple Store account to install the app.
 
 ### Synchronize eBooks from Apple VPP Store <!-- 800878 -->
-
 You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple volume-purchase program store with Intune, and assign the books to users.
 
 ### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
-
 Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
-
 We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
-
 We've added support for [multi-user management](windows-enroll.md) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log into the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
-
 A new [Fresh Start device action](device-fresh-start.md) for Windows 10 PCs is now available.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
 
 ### Additional Windows 10 upgrade paths <!-- 903672 -->
-
 You can now create an [edition upgrade policy to upgrade devices](edition-upgrade-configure-windows-10.md) to the following additional Windows 10 editions:
 
 - Windows 10 Professional
@@ -133,11 +299,9 @@ You can now create an [edition upgrade policy to upgrade devices](edition-upgrad
 - Windows 10 Professional Education N
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
-
 You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
 
 ### New MAM settings for PIN and managed storage locations <!-- 581122, 736644 -->
-
 Two new app settings are now available to help you with mobile application management (MAM) scenarios:
 
 - **Disable app PIN when device PIN is managed** - Detects if a device PIN is present on the enrolled device, and if so, bypasses the app PIN triggered by the app protection policies. This setting will allow for a reduction in the number of times a PIN prompt is displayed to users opening a MAM-enabled application on an enrolled device. This feature is available for both Android and iOS.
@@ -151,13 +315,11 @@ Two new app settings are now available to help you with mobile application manag
   - Local storage
 
 ### Help desk troubleshooting portal <!-- 907448 -->
-
 The new [troubleshooting portal](help-desk-operators.md) lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
 
 ## March 2017
 
 ### Support for iOS Lost Mode <!--431695-->
-
 For iOS 9.3 and later devices, Intune added support for **Lost Mode**. You can now lock down a device to prevent all use and display a message and contact phone number of the device lock screen.
 
 The end user will not be able to unlock the device until an admin disables Lost Mode. When Lost Mode is enabled, you can use the **Locate device** action to display the geographical location of the device on a map in the Intune console.
@@ -167,20 +329,16 @@ The device must be a corporate-owned iOS device, enrolled through DEP, that is i
 For more information, see [What is Microsoft Intune device management](device-management.md)?
 
 ### Improvements to Device Actions report <!--677150-->
-
 We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
 
 ### Custom app categories <!--748805-->
-
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
 See [How to add an app to Intune](apps-add.md).
 
 ### Assign LOB apps to users with unenrolled devices <!--748823-->
-
 You can now assign line-of-business apps from the store to users whether or not their devices are enrolled with Intune. If the user's device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
 ### New compliance reports <!--846671-->
-
 You now have compliance reports that give you the compliance posture of devices in your company and allow you to quickly troubleshoot compliance-related issues encountered by your users. You can view information about
 
 - Overall compliance state of devices
@@ -197,7 +355,6 @@ You can also use these reports to drill down into an individual device to view s
 - Windows 10 Professional Education N --->
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
-
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 

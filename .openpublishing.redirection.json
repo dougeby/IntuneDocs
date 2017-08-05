@@ -3748,6 +3748,21 @@
 			"redirect_url": "/intune/early-edition",
 			"redirect_document_id": true
 		},
+		{
+			"source_path": "intune/apple-configurator-setup-assistant-enroll-ios.md",
+			"redirect_url": "/intune/apple-configurator-enroll-ios",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/apple-configurator-direct-enroll-ios.md",
+			"redirect_url": "/intune/apple-configurator-enroll-ios",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/apple-configurator-serial-numbers-add.md",
+			"redirect_url": "/intune/apple-configurator-enroll-ios",
+			"redirect_document_id": false
+		},
     {
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
