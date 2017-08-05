@@ -8,9 +8,7 @@
 ### [What's new in the app UI](whats-new-app-ui.md)
 ### [What's new archive (Azure portal)](whats-new-archive.md)
 ### [What's new archive (classic portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [High-level architecture](high-level-architecture.md)
 ## [Device and app lifecycles](introduction-device-app-lifecycles.md)
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
@@ -85,7 +83,7 @@
 ### [Set up iOS enrollment](ios-enroll.md)
 #### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
@@ -266,6 +264,8 @@
 
 # Monitor and troubleshoot
 ## [Use the helpdesk operator role](help-desk-operators.md)
+## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
+### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Develop and customize
 ## [Configure custom device settings](custom-settings-configure.md)
@@ -290,5 +290,16 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune Date Warehouse API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Data Warehouse API endpoint](reports-api-url.md)
+### [Data Warehouse data model](reports-ref-data-model.md)
+#### [Reference for Date entity](reports-ref-date.md)
+#### [Reference for user entity](reports-ref-user.md)
+#### [Reference for mobile app management (MAM) entities](reports-ref-mobile-app-management.md)
+#### [Reference for devices entities](reports-ref-devices.md)
+#### [Reference for application entities](reports-ref-application.md)
+#### [Reference for policy entities](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossary](intune-glossary.md)
