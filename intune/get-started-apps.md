@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Getting started with appstitleSuffix: "Intune on Azure"
+title: Getting started with apps
+titleSuffix: "Intune on Azure"
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +29,9 @@ ms.custom: intune-azure
 
 # Getting started with apps
 
-![An image of adding the Microsoft Word app.](/intune/media/generic-add-apps.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Work devices are useless without the right apps on them. Intune supports a few different ways for you to deploy apps to your corporate devices:
+Intune supports a few different ways for you to deploy apps to your corporate devices:
 
 * **Software installers**: where you upload a file that is downloaded to your users' devices
 * __External links__: for when you have an app in a public app store or a webapp

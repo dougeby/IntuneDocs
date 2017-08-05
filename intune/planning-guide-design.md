@@ -198,7 +198,9 @@ Let’s review these areas in more detail.
 
 You need to know what devices will be in the environment and verify whether they are supported or not by Intune when creating your design. Intune supports iOS, Android, and Windows platforms.
 
+
 [Complete list of Intune supported devices](supported-devices-browsers.md).
+
 
 ### Devices
 

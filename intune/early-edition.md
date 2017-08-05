@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 8/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,9 +26,9 @@ ms.custom: intune-classic
 
 ---
 
-# The early edition for Microsoft Intune - July 2017
+# The early edition for Microsoft Intune - August 2017
 
-The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on an extremely limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
+The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
 This page is updated periodically. Check back for additional updates.
 
@@ -47,18 +47,15 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune on the Azure portal
 
-### Easier installation of Office 365 apps <!--- 1121362 --->
-A new **Office 365 ProPlus** app type will make it easy for you to assign Office 365 ProPlus apps to devices that you manage which run the latest version of Windows 10. Additionally, you will be able to install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and will appear as one app in the list of apps in the Intune console.
+
 
 
 ### New device action to force devices to sync with Intune <!-- 711369 -->    
-We are adding a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+We are adding a new device action that forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
 ### Actions for non-compliance  <!--730266-->     
-*Actions for non-compliance* is a new feature of compliance policies that will let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
+*Actions for non-compliance* are a new feature of compliance policies that let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
-### New app configuration settings for the Intune Managed Browser <!--- 682951 --->
-We will add further configurations for the Intune Managed Browser app. You will be able to use an app configuration policy to configure the default home page and bookmarks for the browser.
 
 ### Restrict Android and iOS device enrollment restriction by OS version  <!--- 1333256,  1245463 --->  
 Intune now supports restricting iOS and Android enrollment by operating system version number. Under **Intune** > **Enrollment restrictions** > **Device Type Restriction** > **Default** > **Platform restrictions**, the IT admin can now set a platform configuration to restrict enrollment between a minimum and maximum operating system value. Android operating system versions must be specified as Major.Minor.Build.Rev, where Build and Rev are optional. iOS versions must be specified as Major.Minor.Build where Build is optional.
@@ -69,10 +66,13 @@ Intune now supports restricting iOS and Android enrollment by operating system v
 ### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
 Intune now supports restricting personally owned device enrollment for iOS, Android, and macOS using device serial numbers. Some devices do not report serial numbers. Check with device manufacturers for details. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices.
 
-To import serial numbers in the Intune portal, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file (no header, two columns for serial number and details like IMEI numbers).  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
+To import serial numbers in the Intune portal, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file. The file should contain no header, and have two columns, one for serial number and one for details like IMEI numbers.  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
 
 ### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->   
 A new policy will be available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. You will also be able to view a new report that lists iOS devices with older versions and a summary for why they are out of date.
+
+### New report that lists iOS devices with older iOS versions   <!-- 1352223 -->
+The **Out-of-date iOS Devices** report will be available from the **Software updates** workspace. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and have available updates. For each device, you can view a status for why the device has not been automatically updated. 
 
 ### New settings to allow and block apps on Samsung KNOX Standard devices  <!-- 822899,  1305423-->   
 We are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
@@ -82,27 +82,43 @@ We are adding new [device restriction settings](device-restrictions-android.md) 
 
 You can specify the app by URL, package name or from the list of apps you manage.
 
+### New settings for Windows 10 device restriction profile
+<!--- 978575, 1308849, 1308850 -->
+We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
+
+For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
+
+### New device restriction settings for Windows 10   <!-- 1063965 -->
+We are adding new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
+- Windows Defender SmartScreen
+- App store
+
+
 ### Android for Work support for Lookout <!-- 1087312 -->   
-Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You will be able to deploy the Lookout app inside or outside the container.
+Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You are able to deploy the Lookout app inside or outside the container.
 
 
-### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651  and  1172027 ? -->  
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Check Point SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
+### Intune App Protection and Citrix MDX Development Tools <!-- 709185 -->
+You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
 
-#### How integration with Intune works?
-Risk is assessed based on telemetry collected from devices running Check Point SandBlast Mobile. You can configure EMS conditional access policies based on Check Point SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block non-compliant devices access to corporate resources based on detected threats.
+You are able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
+
 
 ### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+You are able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 #### How integration with Intune works?
 Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
+### New Azure AD conditional access policy UI link from Intune  <!-- 1016201 -->
+IT admins can set app-based conditional policies via the new conditional access policy UI in Azure AD workload. The app-based conditional access policies that are in the Intune App Protection section in Azure remain there for the time being and are enforced side-by-side. There will also be a convenience link to the new conditional access policy UI in Azure AD from the Intune workload.
+
+
 ### On-premises Exchange connector high availability support  <!-- 676614 -->   
-You will be able to have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
+You are able to have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
 
 ### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->   
-The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This will give you different ways of monitoring Intune when you need to troubleshoot issues.
+The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
 ### Conditional access support for Mac devices  <!-- 720172 -->   
 You will soon be able to set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
@@ -114,13 +130,10 @@ Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher 
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 
-
-
-
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017 <!-- 1327781 -->  
 On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
 
-There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled will continue to work and all policies, configurations, and apps will continue to work as expected. Please note, there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app.
+There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled continue to work and all policies, configurations, and apps will continue to work as expected. Please note, there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app.
 
 We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
@@ -129,22 +142,33 @@ We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile a
 
 ## Intune apps
 
-### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->    
-We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
-
-You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](whats-new-app-ui.md) page.
-
 ### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->
-End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode  will default to the system setting. For desktops that run Windows 10 version 1511 and earlier, the  app mode will default to the light mode.
-
-### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->    
-End users will be able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
+End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode  defaults to the system setting. For desktops that run Windows 10 version 1511 and earlier, the  app mode will default to the light mode.
 
 ### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
 End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
 
-### Users who are signed in to Exchange can automatically access the Company Portal website on Windows 10 devices <!--1323204-->  
-Windows 10 users that are already authenticated in Exchange, who receive the conditional access quarantine email and click the link in the email, will no longer need to re-authenticate in the browser before beginning Company Access Setup.
+### Improved error message for when a user reaches the maximum number of devices allowed to enroll <!-- 1270370 -->
+Instead of a generic error message, end users see a friendly, actionable error message: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin."
+
+### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
+End users will be able to browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user will no longer receive a prompt to enroll the device. 
+
+### Inform end users what device information can be seen for iOS <!--739894-->
+We are adding **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This allows users to find out more about privacy directly from this page from the Intune end-user docs. They will also be able to locate this information on the About screen.
+
+### Apps details pages display new information for Android devices <!--1287476-->
+The apps detail page of the Company Portal app for Android will display the app categories that the IT admin has defined for that app.
+
+### Intune Mobile Application Management (MAM) dialog boxes now have a modern interface <!-- 1199015 -->
+Intune Mobile Application Management (MAM) dialog boxes have been updated to the modern look-and-feel. The dialog boxes function in the same way as the previous style.
+
+On modern Android devices, error or notification dialog boxes displayed by Intune will now show updated look-and-feel.
+
+### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
+The **Settings** page in the Company Portal app for Android will have a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting varies depending on which app manages the work account. We recommend that users turn off battery optimization for better performance of work apps that sync email and data. 
+
+
 
 
 ## Notices
