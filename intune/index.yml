@@ -1,0 +1,134 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Intune Documentation | Microsoft Docs
+metadata:
+  document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
+  title: Microsoft Intune Documentation | Microsoft Docs
+  description: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected.
+  keywords: protect, company, data, Azure, Intune, EMM, device, app, management
+  author: angrobe
+  ms.author: angrobe
+  manager: angrobe
+  ms.date: 08/06/2017
+  ms.topic: article
+  ms.prod: microsoft-intune
+  featureFlags:
+  - clicktale
+  ms.technology: azure
+  ms.devlang: na
+  ms.service: microsoft-intune
+sections:
+- items:
+  - type: markdown
+    text: |
+      Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected. Intune integrates with Azure Active Directory for identity and access control, and Azure Information Protection for data protection. 
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: https://docs.microsoft.com/en-us/intune/get-started-evaluation
+      html: <p>Protect you first device and mobile app with Intune.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Get Started
+    - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+      html: <p>Access data programmatically for your tenant</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_code-samples.svg
+      title: Code Samples
+    - href: https://docs.microsoft.com/en-us/intune/app-sdk
+      html: <p>Developer tools - Intune App SDK</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_download-install.svg
+      title: Tools
+    - href: https://docs.microsoft.com/en-us/intune/reports-nav-intune-date-warehouse
+      html: <p>Intune Data Warehouse API</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+      title: API Reference
+- title: Popular, recommended, and new articles
+  items:
+  - type: paragraph
+    text: 'Read the latest and greatest information you need to know.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program
+      title: 150+ licenses? Leverage your FastTrack benefits
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/ui-changes
+      title: Where did my Intune feature go in Azure? 
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/what-is-intune
+      title: Microsoft Intune in the Azure portal - what you need to know
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+- title: Get started 
+  items:
+  - type: paragraph
+    text: 'Learn what you should be reading for a fast start.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: https://docs.microsoft.com/en-us/intune/get-started-groups
+      title: Secure your identity
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/get-started-enroll
+      title: Enroll your device for management
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/get-started-policies
+      title: Set your device management policies
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+- title: Plan your deployment
+  items:
+  - type: paragraph
+    text: 'Step through developing a deployment plan and migrating from a third-party MDM provider to Intune.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: https://docs.microsoft.com/en-us/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune
+      title: Supported devices and browsers 
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune-classic/plan-design/introduction
+      title: Deployment planning, design, and implementation guide
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/migration-guide
+      title: Migration guide 
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+- title: Monitor and troubleshoot
+  items:
+  - type: paragraph
+    text: 'Read about and solve problems.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: https://docs.microsoft.com/en-us/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune
+      title: Get support for Intune
+      image: 
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/known-issues
+      title: Read about known issues
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://docs.microsoft.com/en-us/intune/help-desk-operators
+      title: Access the troubleshooting portal 
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
