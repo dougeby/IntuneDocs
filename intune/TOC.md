@@ -8,9 +8,7 @@
 ### [What's new in the app UI](whats-new-app-ui.md)
 ### [What's new archive (Azure portal)](whats-new-archive.md)
 ### [What's new archive (classic portal)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [High-level architecture](high-level-architecture.md)
 ## [Device and app lifecycles](introduction-device-app-lifecycles.md)
 ### [Device lifecycle](device-lifecycle.md)
 ### [App lifecycle](app-lifecycle.md)
@@ -85,7 +83,7 @@
 ### [Set up iOS enrollment](ios-enroll.md)
 #### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
@@ -103,6 +101,7 @@
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
+### [Synchronize device](device-sync.md)
 ### [Examine device inventory](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -173,6 +172,7 @@
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
+### [Configure iOS update policies](software-updates-ios.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
@@ -256,14 +256,16 @@
 
 ## [Educate users](end-user-educate.md)
 ### [Company Portal messages](end-user-company-portal-messages.md)
-### [MAM-enabled apps on Android](end-user-mam-apps-android.md)
-### [MAM-enabled apps on iOS](end-user-mam-apps-ios.md)
+### [App protection on Android](end-user-mam-apps-android.md)
+### [App protection on iOS](end-user-mam-apps-ios.md)
 ### [How to get Android apps](end-user-apps-android.md)
 ### [How to get iOS apps](end-user-apps-ios.md)
 ### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
 ## [Use the helpdesk operator role](help-desk-operators.md)
+## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
+### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Develop and customize
 ## [Configure custom device settings](custom-settings-configure.md)
@@ -276,7 +278,7 @@
 ### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 ### [Windows 10](custom-settings-windows-10.md)
 ### [Android for Work](custom-settings-android-for-work.md)
-## [Prepare LOB apps for MAM](apps-prepare-mobile-application-management.md)
+## [Prepare LOB apps for app protection](apps-prepare-mobile-application-management.md)
 ### [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md)
 ### [App Wrapping Tool for Android](app-wrapper-prepare-android.md)
 ## [Sideload Windows apps](app-sideload-windows.md)
@@ -288,5 +290,16 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune Date Warehouse API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Data Warehouse API endpoint](reports-api-url.md)
+### [Data Warehouse data model](reports-ref-data-model.md)
+#### [Reference for Date entity](reports-ref-date.md)
+#### [Reference for user entity](reports-ref-user.md)
+#### [Reference for mobile app management (MAM) entities](reports-ref-mobile-app-management.md)
+#### [Reference for devices entities](reports-ref-devices.md)
+#### [Reference for application entities](reports-ref-application.md)
+#### [Reference for policy entities](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossary](intune-glossary.md)

@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ Use app configuration policies in Microsoft Intune to supply settings that are u
 
 If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
 
-App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action.
+App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action. Apps must have been written to support the use of app configurations. Consult your app vendor for more information.
 
 You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used whenever the app checks for them (typically, the first time it is run).
 
@@ -62,8 +62,8 @@ You do not assign these policies directly to users and devices. Instead, you ass
 5.	In the list of policies blade, choose **Add**.
 6.	On the **Add Configuration Policy** blade, supply a **Name** and an optional **Description** for the app configuration policy.
 7.	For **Device enrollment type**, choose one of:
-	- **Enrolled with Intune** - For apps that have integrated the Intune App SDK and are managed by Intune.
-	- **Not enrolled with Intune** - For apps that have integrated the Intune App SDK and are not managed by Intune, or are managed by another solution.
+	- **Enrolled with Intune** - For apps that are managed by Intune.
+	- **Not enrolled with Intune** - For apps that are not managed by Intune, or are managed by another solution.
 8.	For **Platform**, choose **iOS** (for devices enrolled with Intune only)
 9.	Choose **Associated App**, then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
 10.	On the **Add Configuration Policy** blade, choose **Configuration settings**

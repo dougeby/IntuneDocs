@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices that you manage which run Windows 10. Additionally, you can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as one app in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as one app in the list of apps in the Intune console.
 
 
 ## Before you start
@@ -40,11 +40,8 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 - Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
 - If any Office apps are open when Intune installs the app suite, end users might lose data from unsaved files.
-- If you do install Office on a device that already has Office installed, read the following considerations:
-	- Regardless of the version of Office you use, you cannot install 32-bit and 64-bit Office products on the same device.
-	- You cannot install the same version of the Click-to-run, and MSI versions of Office on the same device but you can install different major versions.
-	- If you already have an earlier version of Office that you installed using Click-To-Run, you must remove any apps that you want to replace with the newer version. For example, if you have an older version of Word on the device, and want to assign the latest version, you must remove the old version first.
-	- If a device already has Office 365 installed, assigning the Office 365 ProPlus 2016 suite to the device might mean you have to change your Office subscription level.
+- This installation method is not supported on Windows 10S devices.
+- If you assign this app type as Available and target multiple users with the different assignments, they will only see the most recently targeted assignment.
 
 
 ## Get started

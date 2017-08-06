@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,10 +47,10 @@ The following upgrade paths are supported:
 
 
 ## Before you start
-Before you begin to upgrade devices to the latest version, you will need one of the following:
+Before you begin to upgrade devices to the latest version, you need one of:
 
-- A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys. or A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
-- The Windows 10 devices that you target must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
+- A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys or A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
+- The Windows 10 devices to which you assign the policy must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
 
 ## Create a device profile containing device restriction settings
 
@@ -62,13 +62,19 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the edition upgrade profile.
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Edition upgrade**.
-7. On the **Edition Upgrade** blade, configure the following:
+7. On the **Edition Upgrade** blade, configure the following settings:
 	- **Edition to upgrade from** - From the drop-down list, select the Windows 10 version that you want to upgrade on devices.
 	- **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you want to upgrade targeted devices to.
 	- **Product Key** - Specify the product key that you obtained from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices.<br>.After you create a policy that contains a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must enter the entire key again.
 	- **License File** - Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic, or Windows 10 Mobile edition that you want to upgrade targeted devices to.
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
+
+## Next steps
+
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+
+>[!NOTE]
+>If you later remove the policy assignment, the version of Windows on the device is not reverted, and continues to function normally.
 
