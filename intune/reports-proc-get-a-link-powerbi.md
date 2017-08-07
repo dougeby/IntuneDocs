@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant. The Data Warehouse Power BI file (pbix) contains connection settings to your tenant, and the following sample reports and charts: 
+You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant. The Data Warehouse Power BI file (pbix) contains connection settings to your tenant, and the following sample reports and charts:  
 
   -  Devices
   -  Enrollment
@@ -49,8 +49,11 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 
 The Power BI file (pbix) contains connection information for your tenant and a set of prebuilt reports based on the Data Warehouse data model. Open the file in Power BI Desktop and sign in to the Azure AD. The report loads the data from your Intune tenant.
 
+> [!Important]  
+> Each Power BI file (pbix) may be different depending on tenant location. If you are managing multiple Intune tenants, then be sure to use the file downloaded from the Azure portal while logged in to that tenant.  
+
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
-2.  Open the **Microsoft Intune Data Aarehouse API (Preview)** blade.
+2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
 3.  Click **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
 4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second as it gets your tenant data.
 5.  Click **Refresh** to load your tenant data and review the reports.
