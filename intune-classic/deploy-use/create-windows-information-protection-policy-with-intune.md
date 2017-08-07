@@ -43,9 +43,9 @@ Let’s talk about a few concepts when adding a WIP policy.
 -   **Exempt apps:** These apps are exempt from this policy and can access corporate data without restrictions.
 
 > [!IMPORTANT] Intune recommends adding the Company Portal app to the exempt list to allow the app to properly function. To do so, add the following **Store app** to the list of **Exempt apps**:  
->   - Name: Company Portal
->   - Publisher: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
->   - Product Name: Microsoft.CompanyPortal”
+>   - Name: Company Portal  
+>   - Publisher: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
+>   - Product Name: Microsoft.CompanyPortal”  
 
 
 ### Types of apps
