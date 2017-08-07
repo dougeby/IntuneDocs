@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can remove company data, including company apps, from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Iyou can either remove company data or factor reset the device. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
+You can remove company data, including company apps, from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, you can either **remove company data** or **factor reset** the device. Users can also issue a remote command from the Intune Company Portal to personally owned devices enrolled in Intune.
 
 > [!NOTE]
 > Before you remove a user from Azure AD, as a best practice you should first issue a **Factory reset** or **Remove company data** command to all devices associated with that user.
@@ -41,9 +41,11 @@ You can remove company data, including company apps, from Intune-managed devices
 
 ### To factory reset of a device
 
-1.  On the **Devices and groups** blade, choose **All devices**.
-2.  Choose the name of the device you want to wipe.
-3.  On the blade showing the device's name, choose **Factory reset**, and then choose **Yes** to confirm the wipe.
+1. 1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Devices and groups** blade, choose **All devices**.
+4. Choose the name of the device you want to factory reset.
+5. On the blade showing the device's name, choose **Factory reset**, and then choose **Yes** to confirm.
 
 If the device is on and connected, it takes less than 15 minutes for a factory reset command to propagate across all device types.
 
@@ -63,7 +65,7 @@ Use **remove company data** to remove company data including managed app data (w
 |Email|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
 |Outlook|Email received by the Microsoft Outlook app for iOS is removed.|
 |Azure Active Directory (AD) Unjoin|Azure AD record is removed.|
-|Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
+|Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 
 **Android**
 
@@ -81,7 +83,7 @@ Use **remove company data** to remove company data including managed app data (w
 |Email|n/a (email profiles are not supported by Android devices)|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
 |Outlook|Email received by the Microsoft Outlook app for Android is removed.|Email received by the Microsoft Outlook app for Android is removed.|
 |Azure Active Directory (AD) Unjoin|Azure AD Record removed.|Azure AD Record removed.|
-|Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
+|Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 
 **Android for Work**
 
@@ -100,17 +102,17 @@ Removing company data from an Android for Work device removes all data, apps, an
 
 ### To remove company data
 
-1. Sign in to the Azure portal.
-2. Choose More Services > Monitoring + Management > Intune.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Devices and groups** blade, choose **All devices**.
-4. Choose the name of the device you want to wipe.
-5. On the blade showing the device's name, choose **Remove company data**, and then choose **Yes** to confirm the wipe.
+4. Choose the name of the device from which you want to remove company data.
+5. On the blade showing the device's name, choose **Remove company data**, and then choose **Yes** to confirm.
 
-If the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
+If the device is on and connected, it takes less than 15 minutes for a remove data command to propagate across all device types.
 
 ## Delete devices in the Azure Active Directory portal
 
-Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to clean-up remove devices from the Azure console that you know are unreachable and unlikely to communicate with Azure again.
+Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove devices from the Azure console that you know are unreachable and unlikely to communicate with Azure again.
 
 1.  Sign in to the [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) with your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com) and then choose **Admin** &gt; **Azure AD** from using the link on the left side of the page.
 3.  Create an Azure subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
