@@ -83,7 +83,7 @@
 ### [Set up iOS enrollment](ios-enroll.md)
 #### [Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
@@ -101,6 +101,7 @@
 ### [Remove user](device-remove-user.md)
 ### [Remote control for Android](device-profile-android-teamviewer.md)
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
+### [Synchronize device](device-sync.md)
 ### [Examine device inventory](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [Configure Windows 10 education settings](education-settings-configure.md)
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
+### [Configure iOS update policies](software-updates-ios.md)
 ### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
@@ -254,8 +256,8 @@
 
 ## [Educate users](end-user-educate.md)
 ### [Company Portal messages](end-user-company-portal-messages.md)
-### [MAM-enabled apps on Android](end-user-mam-apps-android.md)
-### [MAM-enabled apps on iOS](end-user-mam-apps-ios.md)
+### [App protection on Android](end-user-mam-apps-android.md)
+### [App protection on iOS](end-user-mam-apps-ios.md)
 ### [How to get Android apps](end-user-apps-android.md)
 ### [How to get iOS apps](end-user-apps-ios.md)
 ### [How to get Windows apps](end-user-apps-windows.md)
@@ -276,7 +278,7 @@
 ### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 ### [Windows 10](custom-settings-windows-10.md)
 ### [Android for Work](custom-settings-android-for-work.md)
-## [Prepare LOB apps for MAM](apps-prepare-mobile-application-management.md)
+## [Prepare LOB apps for app protection](apps-prepare-mobile-application-management.md)
 ### [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md)
 ### [App Wrapping Tool for Android](app-wrapper-prepare-android.md)
 ## [Sideload Windows apps](app-sideload-windows.md)
