@@ -3749,6 +3749,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/apple-configurator-setup-assistant-enroll-ios.md",
 			"redirect_url": "/intune/apple-configurator-enroll-ios",
 			"redirect_document_id": false
