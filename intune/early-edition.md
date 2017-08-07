@@ -99,9 +99,6 @@ You are able to have multiple Client Access Server (CAS) roles for on-premises E
 ### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->   
 The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
-### Conditional access support for Mac devices  <!-- 720172 -->   
-You will soon be able to set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
-
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. By December, all access to company resources, including email, will be prevented. 
 
