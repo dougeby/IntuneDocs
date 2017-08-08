@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 8/3/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,29 +47,8 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune on the Azure portal
 
-
-
-
-### New device action to force devices to sync with Intune <!-- 711369 -->    
-We are adding a new device action that forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
-
 ### Actions for non-compliance  <!--730266-->     
 *Actions for non-compliance* are a new feature of compliance policies that let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
-
-
-### Restrict Android and iOS device enrollment restriction by OS version  <!--- 1333256,  1245463 --->  
-Intune now supports restricting iOS and Android enrollment by operating system version number. Under **Intune** > **Enrollment restrictions** > **Device Type Restriction** > **Default** > **Platform restrictions**, the IT admin can now set a platform configuration to restrict enrollment between a minimum and maximum operating system value. Android operating system versions must be specified as Major.Minor.Build.Rev, where Build and Rev are optional. iOS versions must be specified as Major.Minor.Build where Build is optional.
-
->[!NOTE]
->This setting does not restrict enrollment through Apple enrollment programs, which include the Apple Device Enrollment Program and Apple School Manager, or Apple Configurator.
-
-### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
-Intune now supports restricting personally owned device enrollment for iOS, Android, and macOS using device serial numbers. Some devices do not report serial numbers. Check with device manufacturers for details. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices.
-
-To import serial numbers in the Intune portal, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file. The file should contain no header, and have two columns, one for serial number and one for details like IMEI numbers.  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
-
-### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->   
-A new policy will be available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. You will also be able to view a new report that lists iOS devices with older versions and a summary for why they are out of date.
 
 ### New report that lists iOS devices with older iOS versions   <!-- 1352223 -->
 The **Out-of-date iOS Devices** report will be available from the **Software updates** workspace. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and have available updates. For each device, you can view a status for why the device has not been automatically updated. 
@@ -120,9 +99,6 @@ You are able to have multiple Client Access Server (CAS) roles for on-premises E
 ### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->   
 The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
-### Conditional access support for Mac devices  <!-- 720172 -->   
-You will soon be able to set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
-
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. By December, all access to company resources, including email, will be prevented. 
 
@@ -137,13 +113,7 @@ There is no immediate impact to any Windows Phone 8.1 device that is managed by 
 
 We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
-
-
-
 ## Intune apps
-
-### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->
-End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode  defaults to the system setting. For desktops that run Windows 10 version 1511 and earlier, the  app mode will default to the light mode.
 
 ### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
 End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
