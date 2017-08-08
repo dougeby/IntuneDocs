@@ -111,10 +111,10 @@ You can use [Intune app protection policies](app-protection-policies.md) to help
 
 Use [Windows Information Protection (WIP) policies](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
 
-### Wipe company data while leaving personal data intact
+### Remove company data while leaving personal data intact
 
-When a device is no longer needed for work, is being repurposed, or has just gone missing, you can remove company apps and data from it. To do this, you can use Intune's selective wipe and full wipe capabilities. Your users can also remotely wipe their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
+When a device is no longer needed for work, is being repurposed, or has just gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
 
-A [full wipe](devices-wipe.md) restores a device to its factory default settings and removes user data and settings. A [selective wipe](devices-wipe.md#selective-wipe) removes only company data from the device but leaves users’ personal data intact.
+A [factory reset](devices-wipe.md) restores a device to its factory default settings, removes user data and settings, and removes the device from Intune management. [Remove company data](devices-wipe.md#remove-company-data) removes only company data from the device but leaves users’ personal data intact.
 
-Once initiated, the device immediately begins the selective wipe process to be removed from management. When the process is complete, all company data is deleted and the device name is removed from the Intune portal. This ends the device management lifecycle.
+Once initiated, the device immediately begins the reset process. When the process is complete, all company data is deleted and the device name is removed from the Intune. This ends the device management lifecycle.
