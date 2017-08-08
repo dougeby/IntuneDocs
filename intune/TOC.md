@@ -87,7 +87,7 @@
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
-### [Wipe device](devices-wipe.md)
+### [Remove devices](devices-wipe.md)
 ### [Bypass activation lock](device-activation-lock-bypass.md)
 ### [Factory reset device](device-factory-reset.md)
 ### [Manage Windows Fresh Start](device-fresh-start.md)
