@@ -31,10 +31,10 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can remove company data and apps from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, you can either **remove company data** or **factory reset** the device. Users can also issue a remote command from the Intune Company Portal to personally owned devices enrolled in Intune.
+You can remove devices from Intune that are no longer needed, are being repurposed, or have gone missing. You can do this by issuing a **remove company data** or **factory reset** command. Users can also issue a remote command from the Intune Company Portal to personally owned devices enrolled in Intune.
 
 > [!NOTE]
-> Before you remove a user from Azure AD, issue a **Factory reset** or **Remove company data** command to all devices associated with that user. If you remove users with managed devices from Azure Active Directory, Intune can no longer issue factory reset or remove company data to those devices.
+> Before you remove a user from Azure Active Directory, issue a **Factory reset** or **Remove company data** command to all devices associated with that user. If you remove users with managed devices from Azure Active Directory, Intune can no longer issue factory reset or remove company data to those devices.
 
 ## Factory reset
 
