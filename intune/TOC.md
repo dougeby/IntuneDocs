@@ -18,10 +18,10 @@
 ## [Get support](get-support.md)
 
 # [Get started](get-started-evaluation.md)
-## [Create a group](get-started-groups.md)
 ## [Create a user](get-started-users.md)
-## [Enroll devices](get-started-enroll.md)
+## [Create a group](get-started-groups.md)
 ## [Assign policies](get-started-policies.md)
+## [Enroll devices](get-started-enroll.md)
 ## [Assign apps](get-started-apps.md)
 
 
