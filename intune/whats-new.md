@@ -83,8 +83,8 @@ Risk is assessed based on telemetry collected from devices running Checkpoint Sa
 
 ### App management
 
-#### Deploy an app as available in the Windows Store for Business <!-- 748101 -->
-With this release, admins can now assign the Windows Store for Business as available. When set as available, end-users can install the app from the Company Portal app or website without being redirected to the Windows Store.
+#### Deploy an app as available in the Microsoft Store for Business <!-- 748101 -->
+With this release, admins can now assign the Microsoft Store for Business as available. When set as available, end-users can install the app from the Company Portal app or website without being redirected to the Microsoft Store.
 
 
 ### Intune apps  
