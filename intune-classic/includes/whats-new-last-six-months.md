@@ -204,8 +204,8 @@ Beginning in March, the Company Portal app for Android will follow [material des
 
 You can find before and after images on the [UI updates page](/intune/whats-new-app-ui).
 
-### Associate multiple management tools with the Windows Store for Business <!--926135-->
-If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+### Associate multiple management tools with the Microsoft Store for Business <!--926135-->
+If you are using more than one management tool to deploy Microsoft Store for Business apps, previously, you could only associate one of these with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## What's new in the public preview of the Intune admin experience on Azure <!--736542-->
 
@@ -327,7 +327,7 @@ From mid-December 2016 on, users will no longer be able to use the Intune AV Pla
 __New Microsoft Intune Company Portal available for Windows 10 devices__
 Microsoft has released a new [Microsoft Intune Company Portal app for Windows 10 devices](https://www.microsoft.com/store/apps/9wzdncrfj3pz). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
 
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. For more details, go to [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Microsoft Store. For more details, go to [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __An Update on Intune and Android for Work__
