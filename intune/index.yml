@@ -1,20 +1,16 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Microsoft Intune Documentation | Microsoft Docs
+title: Microsoft Intune documentation
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
-  title: Microsoft Intune Documentation | Microsoft Docs
+  title: Microsoft Intune documentation
   description: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected.
   keywords: protect, company, data, Azure, Intune, EMM, device, app, management
-  author: angrobe
+  author: arob98
   ms.author: angrobe
   manager: angrobe
   ms.date: 08/06/2017
   ms.topic: article
-  ms.prod: microsoft-intune
-  featureFlags:
-  - clicktale
-  ms.technology: azure
   ms.devlang: na
   ms.service: microsoft-intune
 sections:
@@ -132,3 +128,4 @@ sections:
       title: Access the troubleshooting portal 
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        
