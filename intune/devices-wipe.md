@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Use factory reset or remove company data on devices using IntunetitleSuffix: "Intune on Azure"
+title: Use factory reset or remove company data on devices using Intune
+titleSuffix: "Intune on Azure"
 description: Learn how to remove company data on a device or to factory reset the device.
 keywords:
 author: nathbarn
@@ -41,7 +42,7 @@ You can remove company data, including company apps, from Intune-managed devices
 
 ### To factory reset of a device
 
-1. 1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Devices and groups** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
