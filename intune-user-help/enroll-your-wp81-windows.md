@@ -34,11 +34,11 @@ If your company or school uses Microsoft Intune, you can enroll your devices to 
 
 To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
 
--   [If your company lets you use the Company Portal from the Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [If your company lets you use the Company Portal from the Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [If you are not allowed to access the Windows Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [If you are not allowed to access the Microsoft Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## If your company lets you use the Company Portal from the Windows Store
+## If your company lets you use the Company Portal from the Microsoft Store
 Install the Company Portal app on your device:
 
 1.  Tap **Start** &gt; **Store**.
@@ -77,7 +77,7 @@ Enroll your device:
 
     ![Account added screen](./media/WP81-enroll-4-account-added.png)
 
-## If you are not allowed to access the Windows Store from your Windows Phone or if you do not have a Microsoft Account
+## If you are not allowed to access the Microsoft Store from your Windows Phone or if you do not have a Microsoft Account
 
 1.  Tap  **Settings** &gt; **workplace**.
 

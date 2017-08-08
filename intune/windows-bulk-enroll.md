@@ -40,7 +40,7 @@ Bulk enrollment for Window devices requires the following:
 
 ## Create a provisioning package
 
-1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Windows Store.
+1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store.
 ![Screenshot of the Windows Configuration Designer app Store screenshots and description](media/bulk-enroll-store.png)
 
 2. Open the **Windows Configuration Designer** app and select **Provision desktop devices**.

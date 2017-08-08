@@ -81,14 +81,14 @@ With Intune, it is easy to:
 * [Deliver store apps to managed devices](apps-deploy.md)
 * Target apps to unmanaged devices using the company portal website
 
-Intune also allows you to manage and deploy apps that you purchased in volume from the iOS app store and the Windows Store for Business. This helps you reduce the administrative overhead of tracking volume-purchased apps.
+Intune also allows you to manage and deploy apps that you purchased in volume from the iOS app store and the Microsoft Store for Business. This helps you reduce the administrative overhead of tracking volume-purchased apps.
 
 > [!TIP]
 > You can [configure Single Sign On (SSO) with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). SSO lets users sign into apps with the domain user name and password they use on-premises. Also, you can [provide internet-based access to web apps hosted on-premises](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) using the Azure Active Directory Application Proxy.
 
 -   [Manage volume-purchased apps for iOS devices](vpp-apps-ios.md). You buy multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). You need to set up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune. You can then synchronize your volume-purchase information with Intune and track your volume-purchased app use.
 
--   [Manage apps purchased from the Windows Store for Business](windows-store-for-business.md). The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
+-   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
 
 ## Protect company data
 
