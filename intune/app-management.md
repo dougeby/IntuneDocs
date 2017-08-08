@@ -93,7 +93,7 @@ You can find most things app-related in the **Mobile Apps** workload that you ca
 
 ### Monitor
 - **Licensed Apps** - View, assign, and monitor volume-purchased apps from the app stores.
-	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
+	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.
 - **App Install Status** - Shows the status of an app assignment you created.
 - **App protection status** - Shows the status of an app protection policy for a user you select.
@@ -103,7 +103,7 @@ For details, see [Monitor apps](apps-monitor.md)
 ### Setup
 <!--- **iOS VPP Tokens**
 	- [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store for Business** - Set up integration to the Windows Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.
-	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
+- **Microsoft Store for Business** - Set up integration to the Microsoft Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.
+	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Company Portal branding** - Customize the Company Portal to give it your company branding.
 	- [Company portal configuration](company-portal-app.md)

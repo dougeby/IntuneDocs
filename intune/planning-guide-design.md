@@ -360,7 +360,7 @@ You can use Intune to deliver apps to the users or devices in several ways. The 
 
 -   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Windows Store for Business apps](windows-store-for-business.md)
+-   [Microsoft Store for Business apps](windows-store-for-business.md)
 
 #### App type requirements
 
