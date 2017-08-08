@@ -4,8 +4,8 @@
 title: How to monitor app protection policiestitleSuffix: "Intune on Azure"
 description: See how many users have the policy, and drill down to find more details."
 keywords:
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article

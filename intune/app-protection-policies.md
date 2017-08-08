@@ -4,8 +4,8 @@
 title: Create and deploy app protection policiestitleSuffix: "Intune on Azure"
 description:  Learn how Intune app protection policies can help protect company data used by apps you manage."
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/24/2017
 ms.topic: article
