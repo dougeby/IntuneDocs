@@ -46,7 +46,7 @@ This reference section provides an overview of endpoints, supported HTTP methods
 
 You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a web app and a client app in Azure, grant permissions to the client. Your local client will get authorization, can then communicate with the Data Warehouse endpoints.
 
-For more information, see [Get data from the Data Warehouse API with a REST client](Get-data-REST.md)
+For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
 
 ## Interacting with the API
 

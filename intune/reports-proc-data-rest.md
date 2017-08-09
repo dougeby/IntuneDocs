@@ -157,7 +157,7 @@ You can access the following code [sample on GitHub](https://github.com/Microsof
     ![Project in Visual Studio](\media\reports-get_rest_data_in.png)
 
 7.  Replace the code in Program.cs with the following code:  
-    [!code-vb[Main](https://raw.githubusercontent.com/Microsoft/Intune-Data-Warehouse/master/Samples/CSharp/Program.cs#testsnippet "This is source file")]``
+    [!code-vb[Main](\media\intunedatawarehousesample.cs#testsnippet "This is source file")]``
 8.  Update the `TODO`s in the code sample.
 8.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
@@ -167,6 +167,6 @@ You can access the following code [sample on GitHub](https://github.com/Microsof
 
 ## Next steps
 
-You can find details on authorization, the API URL structure, and OData endpoints in the [Use the Intune Data Warehouse API](Intune-Data-Warehouse-API). 
+You can find details on authorization, the API URL structure, and OData endpoints in the [Use the Intune Data Warehouse API](reports-api-url.md). 
 
-You can also refer to the Intune Data Warehouse Data Model to find the data entities contained in the API. For more information, see [Intune Data Warehouse API Data Model](Data-Model.md)
+You can also refer to the Intune Data Warehouse Data Model to find the data entities contained in the API. For more information, see [Intune Data Warehouse API Data Model](reports-ref-data-model.md)
