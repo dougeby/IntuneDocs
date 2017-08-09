@@ -3,7 +3,7 @@
 
 title: Logout the user of an iOS device with Intune 
 titleSuffix: "Intune on Azure"
-description: Learn how to logout the current user of an iOS device with Intune."
+description: Learn how to log out the current user of an iOS device with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -33,7 +33,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-The **Logout current user** action logs out the current user on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md). 
+The **Logout current user** action logs out the current user on a shared iPad device that is configured to manage the iOS Classroom app using an [iOS education profile](education-settings-configure-ios.md). 
 
 ## Supported platforms
 

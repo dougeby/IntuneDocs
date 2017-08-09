@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Reset passcode** action generates a new passcode for the device which will be displayed on the <*device name*> **Overview** blade.
+The **Reset passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.
 
 ## Supported platforms
 

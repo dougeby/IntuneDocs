@@ -32,11 +32,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Remove company data** removes only company data from devices managed by Intune. Does not remove personal data from the device. The device will no longer be managed by Intune, and will no longer be able to access corporate resources (not supported for Windows devices that are joined to Azure Active Directory).
+The **Remove company data** device action removes only company data from devices managed by Intune. The action does not remove personal data from the device. After removal, the device is no longer managed by Intune, and can no longer access corporate resources.
 
 ## Supported platforms
 
-- Windows - Supported
+- Windows - Supported (not supported for Windows devices that are joined to Azure Active Directory)
 - Windows Phone - Supported
 - iOS - Supported
 - macOS - Supported
