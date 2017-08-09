@@ -5,8 +5,8 @@ title: Android app protection policy settings
 titleSuffix: "Intune on Azure"
 description: This topic describes the app protection policy settings for Android devices."
 keywords:
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/06/2017
 ms.topic: article
