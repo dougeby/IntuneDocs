@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,10 +49,10 @@ You can create any device categories you want, for example:
 
 ### Step 1 - Create device categories in the Intune blade of the Azure portal
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Enroll devices**.
-3. In the **Enrollment** blade, choose **Device Categories**.
+3. On the **Intune** blade, choose **Device Enrollment**.
+3. On the **Device Enrollment** blade, choose **Device Categories**.
 4. On the **Device Categories** page, choose **Create** to add a new category.
-5. In the next blade, enter a **Name** for the new category, and an optional **Description**.
+5. On the next blade, enter a **Name** for the new category, and an optional **Description**.
 6. When you are done, click **Create**. You’ll see the category you just created in the list of categories.
 
 You'll use the device category name when you create Azure Active Directory security groups in step 2.
