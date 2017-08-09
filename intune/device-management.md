@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,8 +37,9 @@ The **Devices** workload gives you insights into the devices you manage, and let
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
+4. Now, you can perform the remote device actions listed. The actions available depend on the device platform, and the configuration of the device:
 
-Now, you can perform the following actions:
+## Available device actions
 
 - [View device inventory](device-inventory.md)
 - Perform remote device actions:
@@ -55,29 +56,6 @@ Now, you can perform the following actions:
 	- [Remote control for Android](device-profile-android-teamviewer.md)
 	- [Synchronize device](device-sync.md)
 
-
-## Support for each device action
-
-Use the following table to understand the device platforms that are supported by each action.
-
-|||||||
-|-|-|-|-|-|-|
-|Device action|Windows|Windows Phone|iOS|macOS|Android|
-|**Remove company data**|Yes|Yes|Yes|Yes|Yes|
-|**Factory reset**|Windows 8.1 and later (not EAS managed devices)|Yes|Yes|No|Android for Work not supported|
-|**Delete**|Yes|Yes|Yes|Yes|Yes|
-|**Remote lock**|No|Windows Phone 8.1 and later|Yes|No|Yes|
-|**Reset passcode**|No|Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later - all|Yes|No|Earlier than Android 7, Android for Work not supported|
-|**New passcode** (for Windows 10 devices)|No|Windows 10 Creators Update and later (Azure AD joined)|No|No|Android for Work not supported|
-|**Bypass Activation Lock**|No|No|Only corporate owned devices|No|No|
-|**Lost mode**|No|No|iOS 9.3 and later, supervised, and corp owned|No|No|
-|**Locate device**|No|No|Lost mode iOS 9.3 and later, supervised, and corp owned|No|No|
-|**Logout current user**|No|No|iOS 9.3 and later (shared iPad devices only)|No|No|
-|**Restart**|Windows 8.1 and later|Windows Phone 8.1 and later|No|No|No|
-|**Fresh Start**|Windows 10 Creators update and later|No|No|No|No|
-|**New Remote Assistance session**|No|No|No|No|Yes|
-|**Remove user**|No|No|iOS 9.3 and later (shared iPad devices only)|No|No|
-|**Synchronize device**|Yes|Yes|Yes|Yes|Yes|
 
 ## Next steps
 
