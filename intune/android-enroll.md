@@ -55,7 +55,6 @@ To enable management of the work profile on devices that [support Android for Wo
 
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
-
 2. **Configure Android for Work binding**<br>
     As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
@@ -98,7 +97,7 @@ You can turn off Android for Work enrollment and management. Clicking **Unbind**
 ### How to unbind an Android for Work account
 
 1. **Unbind Android for Work binding**<br>
-    AAs an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.  On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and click **Unbind**.
+    As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.  On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and click **Unbind**.
 
 2. **Agree to delete Android for Work binding**<br>
   Click **Yes** to delete the binding and unenroll all Android for Work devices from Intune.
