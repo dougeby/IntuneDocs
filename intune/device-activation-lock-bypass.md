@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,5 +81,7 @@ The Intune **Bypass Activation Lock** remote device action removes the activatio
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices and groups** blade, choose **All devices**.
 5. From the list of devices you manage, choose a supervised iOS device, and then choose the **Bypass Activation Lock** device remote action.
+
+## Next steps
 
 You can examine the status of the unlock request on the details page for the device in the **Manage devices** workload.

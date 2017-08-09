@@ -35,6 +35,16 @@ ms.custom: intune-azure
 
 The **Logout current user** action logs out the current user on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md). 
 
+## Supported platforms
+
+- Windows - Not supported
+- Windows Phone - Not supported
+- iOS - Supported on iOS 9.3 and later (shared iPad devices only)
+- macOS - Not supported
+- Android - Not supported
+
+## How to logout the current user
+
 1.	Sign into the Azure portal.
 2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
 3.	On the **Intune** blade, choose **Devices**.

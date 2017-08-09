@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,11 +34,23 @@ ms.custom: intune-azure
 
 The **Factory reset** returns a device to its default settings. The device will no longer be managed by Intune and both company and personal data are removed. You cannot undo this action.
 
+## Supported platforms
+
+- Windows - Supported on Windows 8.1 and later (not EAS managed devices)
+- Windows Phone - Supported
+- iOS - Supported
+- macOS - Not supported
+- Android - Supported (Android for Work is not supported)
+
+## How to reset a device to factory settings
+
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices and groups** blade, choose **All devices**.
 5. From the list of devices you manage, choose a device, and then choose the **Factory reset** device remote action.
+
+## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
 

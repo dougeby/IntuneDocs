@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,14 @@ ms.custom: intune-azure
 # Reset the passcode on Windows devices integrated with the Microsoft PIN Reset Service using Intune
 
 The reset passcode capability for Windows devices integrates with the Microsoft Pin Reset Service to let you generate a new passcode for devices that run Windows 10 Mobile. The devices must be running the Windows 10 Creators Update, or later.
+
+## Supported platforms
+
+- Windows - Supported on Windows 10 Creators Update and later (Azure AD joined)
+- Windows Phone - Not supported
+- iOS - Not supported
+- macOS - Not supported
+- Android - Not supported
 
 
 ## Before you start
