@@ -25,15 +25,15 @@ ms.custom: intune-classic
 
 # Get data from the Intune Data Warehouse API with a REST client
 
-You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a native app in Azure, grant permissions to the Intune DataWare House API. Your local client gets authorization, and then the client can communicate with the Data Warehouse endpoints through the native app.
+You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. First set up a native app in Azure and grant permissions to the Intune Data Warehouse API. Your local client gets authorization, and then the client can communicate with the Data Warehouse endpoints through the native app.
 
-In this topic we will look at using both Postman, a general-purpose REST tool, and creating an HTTP client in C# to retrieve data form the data warehouse. For more information about Postman, see the [Postman](https://www.getpostman.com) site.
+In this topic we will look at using both Postman, a general-purpose REST tool, and creating an [HTTP client in C#](#Create-a-REST-client-(C#)-to-get-data-from-the-Intune-Data-Warehouse) to retrieve data form the data warehouse. For more information about Postman, see the [Postman](https://www.getpostman.com) site.
 
 The steps to set up a client to get data from the  Data Warehouse API require you to:
 
- -  Create a client app as a native app in Azure
- -  Grant the client app access to the web app
- -  Create a REST client to get the data
+1. Create a client app as a native app in Azure
+3. Grant the client app access to the web app
+3. Create a REST client to get the data
 
 Use the following steps to learn how to authorize and use Postman as a client. Postman is a commonly used tool troubleshooting and developing REST clients to work with APIs. This topic also includes a C# code sample. The sample provides an example for authorizing a client and getting data from the API.
 
@@ -68,7 +68,7 @@ You now have an app defined in Azure. Grant access from the native to the Intune
 2.  Click **Required permissions** from the **Settings** blade
 3.  Click **Add** in the **Required permissions** blade.
 4.  Click **Select an API**.
-5.  Search for the web app name. It is named `Microsoft Intune API`.
+5.  Search for the web app name. It is named **Intune Data Warehouse API**.
 6.  Click on the app in the list.
 7.  Click **Select**.
 8.  Check the **Delegated Permissions** box.
@@ -92,7 +92,7 @@ You need the following information to make a REST call using Postman:
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Callback URL     | Set this as the callback URL in your app settings page.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Token Name       | A string used to pass the credentials to the Azure app. The process generates your token so you can make a call to the Data Warehouse API.                          | Bearer                                                                                        |
-| Auth URL         | You can find your tenant ID in Azure. To find the ID,  open the Portal, choose Active Directory > Properties. Use the Directory ID number. The format looks like XXXXXXX-XXXX-XXXX-XXX-XXXXXXXXXX | https://login.microsoftonline.com/common/oauth2/authorize?resource={URL for your Tenant} |
+| Auth URL         | You can find your tenant ID in Azure. To find the ID,  open the Portal, choose **Active Directory** > **Properties**. Use the Directory ID number. The format looks like XXXXXXX-XXXX-XXXX-XXX-XXXXXXXXXX | https://login.microsoftonline.com/common/oauth2/authorize?resource={URL for your Tenant} |
 | Access Token URL | Use the same ID number as the Auth URL.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | Client ID        | You created, and noted this when creating the native app in Azure.                                                                                               | 4184c61a-e324-4f51-83d7-022b6a81b991                                                          |
 | Client Secret    | You created and noted it when adding a key the client app in Azure.                                                                                              | JZoRZGPmN9xwsUnfX9UW877dkV5Fn/qQClhr7SuyMUQ=                                                  |
