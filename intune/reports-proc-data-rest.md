@@ -44,7 +44,7 @@ running on your local machine references the Intune Data Warehouse API when the 
 
 1.  Click **New app registration**.
 
-![Intune Data Warehouse API](\media\reports-get_rest_data_client_overview.png)
+    ![Intune Data Warehouse API](media\reports-get_rest_data_client_overview.png)
 
 2.  Fill out the app details
  Type a friendly name, such as `Intune Data Warehouse Client`, for the Name.
@@ -72,7 +72,7 @@ You now have an app defined in Azure. Grant access from the native to the Intune
 7.  Click **Select**.
 8.  Check the **Delegated Permissions** box.
 
-![Enable access](\media\reports-get_rest_data_client_access.png)
+    ![Enable access](media\reports-get_rest_data_client_access.png)
 
 9.  Click **Select**.
 10.  Click **Done**.
@@ -114,16 +114,16 @@ Add the information used to request the token.
 4.	Choose the **Authorization** tab, and select **OAuth 2.0** from the Type list.
 5.	Click **Get New Access Token**.
 6.	Verify that you have already added the Callback URL to your app in Azure. The callback URL is `https://www.getpostman.com/oauth2/callback`.
-7.	Type `Bearer` for the Token Name.
+7.	Type *Bearer* for the Token Name.
 8.	Add the **Auth URL**. It should look something like: 
-`https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/'
+https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com
 9.	Add the **Access Token URL**. It should look something like: 
-`https://login.microsoftonline.com/common/oauth2/token`
-10.	Add the **Client ID** from the native app that you created in Azure and named `Intune Data Warehouse Client`. It should look something like: `4184c61a-e324-4f51-83d7-022b6a81b991`
-11.	Add the **Client Secret** that you defined as a key when creating your native app in Azure. It should look something like: `F360R69M0MS72OB6YAqTyXO9MsXZx/OJTgAE2HB4k2k=`
+https://login.microsoftonline.com/common/oauth2/token
+10.	Add the **Client ID** from the native app that you created in Azure and named `Intune Data Warehouse Client`. It should look something like: 4184c61a-e324-4f51-83d7-022b6a81b991
+11.	Add the **Client Secret** that you defined as a key when creating your native app in Azure. It should look something like: F360R69M0MS72OB6YAqTyXO9MsXZx/OJTgAE2HB4k2k=
 12.	Select **Authorization Code**, and Request access token locally.
 
-![Information for the token](media\reports-postman_getnewtoken.png)
+    ![Information for the token](media\reports-postman_getnewtoken.png)
 
 Type your credentials in the Active AD authorization page.
 
@@ -137,14 +137,14 @@ Send the call to the endpoint using Postman
 1.	Click **Send**.
 2.	The return data appears in the Postman response body.
 
-![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](media\reports-postman_200OK.png)
 
 ## Create a REST client (C#) to get data from the Intune Data Warehouse
 
 The following sample contains a simple REST client. The code uses the **httpClient** class from the .Net library. Once the client gains credentials to Azure AD, the client constructs a GET REST call to retrieve the dates entity from the Data Warehouse API.
 
-[!Note]  
-You can access the following code [sample on GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Refer to the GitHub repo for the latest changes and updates to the sample.
+> [!Note]  
+> You can access the following code [sample on GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Refer to the GitHub repo for the latest changes and updates to the sample.
 
 1.  Open **Microsoft Visual Studio**.
 2.  Choose **File** > **New Project**. Expand **Visual C#**, and choose **Console App (.Net Framework)**. 
@@ -154,7 +154,7 @@ You can access the following code [sample on GitHub](https://github.com/Microsof
 5. Click **I Accept** to accept the NuGet package license.
 6. Open `Program.cs` from the Solution Explorer.
 
-    ![Project in Visual Studio](\media\reports-get_rest_data_in.png)
+    ![Project in Visual Studio](media\reports-get_rest_data_in.png)
 
 7.  Replace the code in Program.cs with the following code:  
     ```csharp
@@ -214,7 +214,7 @@ namespace IntuneDataWarehouseSamples
 8.  Update the `TODO`s in the code sample.
 8.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
-![Date entity retrieved in JSON format.](\media\reports-get_rest_data_output.png)
+    ![Date entity retrieved in JSON format.](media\reports-get_rest_data_output.png)
 
 9.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
 
