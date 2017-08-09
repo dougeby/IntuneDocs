@@ -25,7 +25,7 @@ ms.custom: intune-classic
 
 # Get data from the Intune Data Warehouse API with a REST client
 
-You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a native app in Azure, grant permissions to the Intune DataWare House API. Your local client gets authorization, and then can communicate with the Data Warehouse endpoints through the native app.
+You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a native app in Azure, grant permissions to the Intune DataWare House API. Your local client gets authorization, and then the client can communicate with the Data Warehouse endpoints through the native app.
 
 In this topic we will look at using both Postman, a general-purpose REST tool, and creating an HTTP client in C# to retrieve data form the data warehouse. For more information about postman, see the [Postman](https://www.getpostman.com) site.
 
