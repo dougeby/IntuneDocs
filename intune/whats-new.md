@@ -66,10 +66,6 @@ To import serial numbers, go **Device enrollment** > **Corporate device identifi
 In this release, we've added a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 For details, see [Synchronize device](device-sync.md)
 
-
-#### Conditional access support for Mac devices  <!-- 720172 -->
-You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
-
 #### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
 A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
 
