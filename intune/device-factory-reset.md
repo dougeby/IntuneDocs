@@ -32,11 +32,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Factory reset** returns a device to its default settings. The device will no longer be managed by Intune and both company and personal data are removed. You cannot undo this action.
+The **Factory reset** returns a device to its default settings. The device is no longer managed by Intune and both company and personal data are removed. You cannot undo this action.
 
 ## Supported platforms
 
-- Windows - Supported on Windows 8.1 and later (not EAS managed devices)
+- Windows - Supported on Windows 8.1 and later (not EAS-managed devices)
 - Windows Phone - Supported
 - iOS - Supported
 - macOS - Not supported

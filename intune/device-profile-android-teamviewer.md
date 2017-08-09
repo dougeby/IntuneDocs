@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Provide remote assistance for Intune managed Android devices
 
-Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. Use the information in this topic to get started.
+Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to users of Android devices. Use the information in this topic to get started.
 
 ## Before you start
 
@@ -36,7 +36,7 @@ Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased 
 
 Ensure that the user of the Azure portal has the following permissions assigned to them as an [Intune role](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control):
 - To let the admin modify the TeamViewer connector settings, grant the **Update Remote Assistance** permission.
-- To let the admin initiate a new remote assistance request, grant the **Request Remote Assistance** permission. Users with the **Request Remote Assistance** permission can request to initiate a session for any user; this is not limited by any Intune role assignment scope. Intune role assignment scopes do not limit the devices or users for which Remote Assistance requests can be initiated.
+- To let the admin initiate a new remote assistance request, grant the **Request Remote Assistance** permission. Users with the **Request Remote Assistance** permission can request to initiate a session for any user. They are not limited by any Intune role assignment scope. Intune role assignment scopes do not limit the devices or users for which Remote Assistance requests can be initiated.
 
 >[!NOTE]
 >By enabling TeamViewer, you are allowing the TeamViewer for Intune Connector to create TeamViewer sessions, read Active Directory data, and save the TeamViewer account access token.
@@ -72,5 +72,5 @@ When you are finished, close the TeamViewer window.
 
 ## End-user notifications
 
-An end-user will see a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
+An end user sees a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
 
