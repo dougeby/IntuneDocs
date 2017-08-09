@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,13 @@ ms.custom: intune-azure
 
 The **Sync** device action forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
-You can synchronize all device types that are supported by Intune.
+## Supported platforms
+
+- Windows - Supported
+- Windows Phone - Supported
+- iOS - Supported
+- macOS - Supported
+- Android - Supported
 
 ## How to sync a device
 
