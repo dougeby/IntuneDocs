@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -143,13 +143,11 @@ Identity is how we identify the users who belong to your organization and are en
 
 Learn more about the following Intune identity requirements:
 
-MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
+- [Identity requirements](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
 
--   [Identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+- [Directory synchronization requirements](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
 
--   [Directory synchronization requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
-
--  [Multi-factor authentication requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+- [Multi-factor authentication requirements](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### User and device groups
 
@@ -157,10 +155,9 @@ User and device groups determine the target of a deployment, including policies,
 
 We recommend that you create all groups in the on-premises Active Directory, then synchronize to Azure AD. Learn more about user and device group planning and creation:
 
-MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
--   [Plan your user and device groups](/intune-classic/deploy-use/plan-your-user-and-device-groups).
+-   [Plan your user and device groups](users-add.md).
 
--   [Create user and device groups](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   [Create user and device groups](groups.add-md).
 
 ### Public key infrastructure (PKI)
 Public key infrastructure supplies certificates to devices or users to securely authenticate to a service. Intune supports a Microsoft PKI infrastructure. Device and user certificates can be issued to a mobile device to satisfy certificate-based authentication requirements. Before you use certificates, you need to determine if you need them, if the network infrastructure can support certificate-based authentication, and if certificates are currently used in the existing environment.
@@ -171,14 +168,14 @@ In addition, if SCEP certificates will be issued, you need to determine which se
 
 Learn more about:
 
+-   [How to configure Intune certificate profiles](certificates.configure.md)
+
 -   [How to configure the certificate infrastructure for SCEP](certificates-scep-configure.md)
 
 -   [How to configure the certificate infrastructure for PFX](certficates-pfx-configure.md)
 
-MAIL OUT TO ANDRE 7/27 ABOUT THESE LINKS
--   [How to configure Intune certificate profiles](/intune-classic/deploy-use/configure-intune-certificate-profiles)
 
--   [How to configure resource access policies](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune)
+
 
 ## Device platform considerations
 
@@ -198,9 +195,7 @@ Let’s review these areas in more detail.
 
 You need to know what devices will be in the environment and verify whether they are supported or not by Intune when creating your design. Intune supports iOS, Android, and Windows platforms.
 
-
 [Complete list of Intune supported devices](supported-devices-browsers.md).
-
 
 ### Devices
 
@@ -360,7 +355,7 @@ You can use Intune to deliver apps to the users or devices in several ways. The 
 
 -   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Microsoft Store for Business apps](windows-store-for-business.md)
+-   [Windows Store for Business apps](windows-store-for-business.md)
 
 #### App type requirements
 
@@ -408,11 +403,10 @@ You can [download a template of the above table](https://gallery.technet.microso
 
 Conditional access is used to allow only compliant devices to access email and other company resources. Intune works with Enterprise Mobility + Security (EMS) to control access to company resources. You need to decide if conditional access is required and what must be secured. Learn more about [conditional access](conditional-access.md).
 
-For online access, decide what platforms, and user groups will be targeted by conditional access policies. Also, determine whether you need to install or configure the Intune service-to-service connector for Exchange Online or Exchange on-premises. Learn more how to install and configure the Intune service-to-service connectors:
+For online access, decide what platforms, and user groups will be targeted by conditional access policies. Also, determine whether you need to install or configure the Intune service-to-service connector for Exchange Online or Exchange on-premises. Learn more how to install and configure the Intune service-to-service connectors: <!---these links are correct--->
 
 -   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
 
-MAIL TO ANDRE 7/27
 -   [Exchange on-premises](exchange-connector-install.md)
 
 Here’s an example of how to document conditional access policies:
