@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Get data from the Data Warehouse API with a REST client 
-description: {purpose}
+description: Retrieve data from the Intune Data Warehouse using a RESTful API.
 keywords:
 author: mattbriggs
 ms.author: mabrigg

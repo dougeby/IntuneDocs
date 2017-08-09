@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Relationship of Entities
-description: {purpose}
+description: Relationships are automatically detected with Power BI in the Intune Data Warehouse data model.
 keywords:
 author: mattbriggs
 ms.author: mabrigg
