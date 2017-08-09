@@ -157,7 +157,7 @@ We recommend that you create all groups in the on-premises Active Directory, the
 
 -   [Plan your user and device groups](users-add.md).
 
--   [Create user and device groups](groups.add-md).
+-   [Create user and device groups](groups-add.md).
 
 ### Public key infrastructure (PKI)
 Public key infrastructure supplies certificates to devices or users to securely authenticate to a service. Intune supports a Microsoft PKI infrastructure. Device and user certificates can be issued to a mobile device to satisfy certificate-based authentication requirements. Before you use certificates, you need to determine if you need them, if the network infrastructure can support certificate-based authentication, and if certificates are currently used in the existing environment.
@@ -168,7 +168,7 @@ In addition, if SCEP certificates will be issued, you need to determine which se
 
 Learn more about:
 
--   [How to configure Intune certificate profiles](certificates.configure.md)
+-   [How to configure Intune certificate profiles](certificates-configure.md)
 
 -   [How to configure the certificate infrastructure for SCEP](certificates-scep-configure.md)
 
