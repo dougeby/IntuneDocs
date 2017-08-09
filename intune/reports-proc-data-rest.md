@@ -157,7 +157,7 @@ You can access the following code [sample on GitHub](https://github.com/Microsof
     ![Project in Visual Studio](\media\reports-get_rest_data_in.png)
 
 7.  Replace the code in Program.cs with the following code:  
-    [!code-vb[Main](\media\intunedatawarehousesample.cs#testsnippet "This is source file")]``
+    [!code-csharp[Main](\media\intunedatawarehousesample.cs)]``
 8.  Update the `TODO`s in the code sample.
 8.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
