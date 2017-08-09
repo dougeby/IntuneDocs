@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,7 @@ The **Lost mode** device action helps you enable lost mode on lost or stolen iOS
 7. Click **OK**.
 
 When you enable lost mode, you block all use of the device. The end user cannot access the device until you disable lost mode. While lost mode is enabled, you can use the **Locate device** action to find out where the device is.
-To use lost mode, the device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode.
+To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
 
 ## Security and privacy information for the lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
