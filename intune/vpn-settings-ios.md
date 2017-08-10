@@ -84,7 +84,8 @@ If you selected **Custom VPN** as the connection type, configure these further s
 - **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
 - **Address** - Enter the proxy server address (as an IP address).
 - **Port number** - Enter the port number associated with the proxy server.
-- 
+
+<!--
 ## Set Up Per-App VPN using Microsoft Intune for iOS
 
 With the release of iOS 7, Apple introduced the Per-App VPN feature which caters to both IT Professional and end user experiences. With this feature, IT Professionals can specify which managed apps can use VPN on an Intune managed iOS device. It also makes the connection experience seamless for the user by abstracting the steps taken to connect to a VPN server when accessing corporate documents. This blog post will teach you how to set up Per-App VPN for your enterprise using Microsoft Intune (cloud only) and deliver that awesome experience to your users.
@@ -154,3 +155,5 @@ o	SonicWall
 Overall the entire Per-App VPN experience on the iOS device is invisible to the user. While it creates a great user experience, it also makes it difficult to troubleshoot any issues.
 
 If you’d like to take a deeper look into the logs/events created by the iOS device, connect your iOS device to a PC and open IPCU (iPhone Configuration Utility). You can install it from [here](http://www.microsoft.com/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1). Once you connect your iOS device, open the console on IPCU and voila – you should get a live log from the device.
+
+-->
