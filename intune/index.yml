@@ -24,12 +24,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: /intune/get-started-evaluation
-      html: <p>Protect you first device and mobile app with Intune.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: Get Started
-    - href: /intune/introduction-intune
+       - href: /intune/introduction-intune
       html: <p>Explains what Intune does and how it works.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
@@ -44,7 +39,12 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Get support
-- title: Popular, recommended, and new articles
+    - href: /intune/setup-steps
+      html: <p>Step-by-step instructions for getting Intune going.</p>
+      image:
+      src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Set up Intune
+- title: New, popular, recommended
   items:
   - type: paragraph
     text: 'Read the latest and greatest information you need to know.'
@@ -53,79 +53,73 @@ sections:
     className: cardsM
     columns: 3
     items: 
-    - href: https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program
-      title: 150+ licenses? Leverage your FastTrack benefits
+    - href: /intune/get-started-evaluation
+      title: Get started
       image: 
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/ui-changes
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+    - href: /intune/ui-changes
       title: Where did my Intune feature go in Azure? 
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/what-is-intune
-      title: Microsoft Intune in the Azure portal - what you need to know
+    - href: /intune/what-is-intune
+      title: Intune on the Azure portal
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-- title: Get started 
+    - href: /intune/high-level-architecture
+      title: Intune high-level architecture
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: /intune/reports-nav-create-intune-reports
+      title: Intune Data Warehouse (preview)
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+      title: Intune in Microsoft Graph
+      image:
+        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+    
+- title: Plan deployments 
   items:
-  - type: paragraph
-    text: 'Learn what you should be reading for a fast start.'
   - type: list
     style: cards
-    className: cardsM
-    columns: 3
+    className: unordered
     items: 
-    - href: https://docs.microsoft.com/en-us/intune/get-started-groups
-      title: Secure your identity
-      image: 
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/get-started-enroll
-      title: Enroll your device for management
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/get-started-policies
-      title: Set your device management policies
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-- title: Plan your deployment
+    - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
+    - html: <a href="/intune/migration-guide">Intune migration guide</a>
+
+- title: How to
   items:
-  - type: paragraph
-    text: 'Step through developing a deployment plan and migrating from a third-party MDM provider to Intune.'
   - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items: 
-    - href: https://docs.microsoft.com/en-us/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune
-      title: Supported devices and browsers 
-      image: 
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune-classic/plan-design/introduction
-      title: Deployment planning, design, and implementation guide
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/migration-guide
-      title: Migration guide 
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-- title: Monitor and troubleshoot
+    style: unordered
+    items:
+    - html: <a href="/intune/device-enrollment">Enroll devices</a>
+    - html: <a href="/intune/device-management">Manage devices</a>
+    - html: <a href="/intune/app-management">Manage apps</a>
+    - html: <a href="/intune/device-profiles">Configure devices</a>
+    - html: <a href="/intune/device-compliance-get-started">Set device compliance</a>
+    - html: <a href="/intune/conditional-access">Set up conditional access</a>
+    - html: <a href="/intune/app-protection-policy">Protect apps</a>
+    - html: <a href="/intune/mobile-threat-defense">Set up mobile threat defense</a>
+    - html: <a href="/intune/network-access-control-integrate">Integrate network access control</a>
+    - html: <a href="/intune/role-based-access-control">Manage roles</a>
+    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Manage PCs with the Intune software client</a>
+
+- title: Troubleshoot
   items:
-  - type: paragraph
-    text: 'Read about and solve problems.'
   - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items: 
-    - href: https://docs.microsoft.com/en-us/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune
-      title: Get support for Intune
-      image: 
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/known-issues
-      title: Read about known issues
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-    - href: https://docs.microsoft.com/en-us/intune/help-desk-operators
-      title: Access the troubleshooting portal 
-      image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-        
+    style: unordered
+    items:
+    - html: <a href="/intune/help-desk-operators">Help users with the Troubleshooting portal</a>
+    - html: <a href="/intune/known-issues">Known issues with Intune</a>
+    - html: <a href="/intune/get-support">Get support</a>
+
+- title: Develop and customize
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/intune/custom-settings-configure">Configure custom device settings</a>
+    - html: <a href="/intune/apps-prepare-mobile-application-management">Prepare line of business (LOB) apps with the Intune App Wrapper Tool</a>
+    - html: <a href="/intune/app-sdk">Prepare LOB apps with the Intune App SDK</a>
+    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>
+    - html: <a href="/intune/reports-nav-intune-date-warehouse">Intune Data Warehouse API</a>
