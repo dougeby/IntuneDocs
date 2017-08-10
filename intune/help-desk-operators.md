@@ -66,7 +66,7 @@ Help desk staff and Intune administrators can access the troubleshooting portal 
 
 Click **Select user** to view a user and that user's details.
 
-![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
+![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user-view.png)
 
 ## Use the troubleshooting portal
 
