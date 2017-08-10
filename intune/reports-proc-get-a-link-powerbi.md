@@ -63,13 +63,15 @@ The Power BI file (pbix) contains connection information for your tenant and a s
 
 With a client authenticated to Azure AD, the OData URL connects to the RESTful endpoint in the Data Warehouse API that exposes the data model to your reporting client. Follow these instructions to use Power BI Desktop to connect and create your own reports. You are not limited to Power BI Desktop, but can use your favorite analytic tool with the OData URL provided the client supports OAUTH2.0 authentication and the OData v4.0 standard.
 
-1.  Retrieve the **OData URL** from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
-2.  Open **Power BI Desktop**.
-3.  Choose **Home** > **Get Data**. Select **OData feed**.
-4.  Choose **Basic**.
-5.  Type or paste the **OData URL** into the URL box.
-6.  Click **OK**.
-7.  If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials.  
+1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
+2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
+3. Retrieve the custom feed URL from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
+4. Open **Power BI Desktop**.
+5. Choose **Home** > **Get Data**. Select **OData feed**.
+6. Choose **Basic**.
+7. Type or paste the **OData URL** into the URL box.
+8. Click **OK**.
+9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials.
     a.  Select **Organizational account**.  
     b.  Type your username and password.  
     c.  Click **Sign In.**  
@@ -82,4 +84,4 @@ You can find the answers to questions about your environment such as the number 
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Your tenant data is organized to help you pull insight from your data. For more information about how the data is organized, see [Data Warehouse Data Model](reports-ref-data-model.md). 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md).
