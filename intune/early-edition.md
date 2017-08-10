@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -114,6 +114,10 @@ There is no immediate impact to any Windows Phone 8.1 device that is managed by 
 We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
 ## Intune apps
+
+### Intune Managed Browser support for iOS and Android <!---1374196--->
+
+As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later. Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 ### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
 End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
