@@ -47,7 +47,7 @@ To add help desk users:
 3. [Assign the RBAC Help Desk Operator role](role-based-access-control.md#built-in-roles)
 
   ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
-  You can also [create a custom role](role-based-access-control.md#custom-roles) with the following permissions:
+  You can also [create a custom role](role-based-access-control.md#custom-roles) which you can further modify to give help desk operators access.  Help desk operators require the following permissions to help troubleshoot user problems:
     - MobileApps: Read
     - ManagedApps: Read
     - ManagedDevices: Read
