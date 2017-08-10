@@ -33,7 +33,7 @@ The steps to set up a client to get data from the  Data Warehouse API require yo
 3. Grant the client app access to the Microsoft Intune API
 3. Create a local REST client to get the data
 
-Use the following steps to learn how to authorize and use Postman as a client. Postman is a commonly used tool troubleshooting and developing REST clients to work with APIs. For more information about Postman, see the [Postman](https://www.getpostman.com) site. This topic also includes a C# code sample. The sample provides an example for authorizing a client and getting data from the API. In this topic we will look at using both Postman, a general-purpose REST tool, and creating an [HTTP client in C#](#Create-a-REST-client-(C#)-to-get-data-from-the-Intune-Data-Warehouse) to retrieve data form the data warehouse. 
+Use the following steps to learn how to authorize and use Postman as a client. Postman is a commonly used tool troubleshooting and developing REST clients to work with APIs. For more information about Postman, see the [Postman](https://www.getpostman.com) site. This topic also includes a C# code sample. The sample provides an example for authorizing a client and getting data from the API.
 
 ## Create a native app in Azure
 
@@ -76,7 +76,7 @@ You now have an app defined in Azure. Grant access from the native app to the Mi
 
 9.  Click **Select**.
 10.  Click **Done**.
-11.  Optionally, click **Grant Permissions** in the Required permissions blade. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+11.  Optionally, click **Grant Permissions** in the Required permissions blade. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Click **Yes**.
 
 ## Get data from the Microsoft Intune API with Postman
