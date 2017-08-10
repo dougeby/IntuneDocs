@@ -24,26 +24,26 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: https://docs.microsoft.com/en-us/intune/get-started-evaluation
+    - href: /intune/get-started-evaluation
       html: <p>Protect you first device and mobile app with Intune.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Get Started
-    - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
-      html: <p>Access data programmatically for your tenant</p>
+    - href: /intune/introduction-intune
+      html: <p>Explains what Intune does and how it works.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: Code Samples
-    - href: https://docs.microsoft.com/en-us/intune/app-sdk
-      html: <p>Developer tools - Intune App SDK</p>
+      title: What is Intune?
+    - href: /intune/free-trial-sign-up
+      html: <p>Start evaluating Intune with a free trial.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
-      title: Tools
-    - href: https://docs.microsoft.com/en-us/intune/reports-nav-intune-date-warehouse
-      html: <p>Intune Data Warehouse API</p>
+      title: Free trial
+    - href: /intune/get-support
+      html: <p>Learn how to create support tickets.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
-      title: API Reference
+      title: Get support
 - title: Popular, recommended, and new articles
   items:
   - type: paragraph
