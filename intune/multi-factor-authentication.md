@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Multi-factor authentication for Intune device enrollments
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[classic-portal](../includes/azure_portal.md)]
 
 Intune can use Azure Active Directory (AD) multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources.
 
