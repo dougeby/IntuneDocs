@@ -300,6 +300,6 @@
 #### [Reference for devices entities](reports-ref-devices.md)
 #### [Reference for application entities](reports-ref-application.md)
 #### [Reference for policy entities](reports-ref-policy.md)
-#### [Relationship of Entities](reports-api-entity-relationships.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Glossary](intune-glossary.md)

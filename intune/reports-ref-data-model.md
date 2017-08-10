@@ -48,6 +48,6 @@ Entity sets are named collections of entities in the data model. These sets cont
   -  [Application](reports-ref-application.md)
   -  [Policy](reports-ref-policy.md)
 
-## Data Model relationships
+<-- ## Data Model relationships
 
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md).
+For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
