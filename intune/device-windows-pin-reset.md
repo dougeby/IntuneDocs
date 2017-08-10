@@ -55,13 +55,14 @@ Before you can remotely reset the passcode on Windows devices you can manage, yo
 
 ### Configure Windows devices to use PIN reset
 
-To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](custom-settings-windows-10.md) to enable the feature. Configure the policy using the following Windows policy configuration service providers (CSPs):
+To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](custom-settings-windows-10.md) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
 
 
-- **For users** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **For devices** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **For devices** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
 
-The values for these CSPs must both be set to **True**.
+*tenant ID* refers to your Azure Active Directory, Directory ID which you can obtain from the **Properties** page of Azure Active Directory.
+
+Set the value for this CSP to **True**.
 
 ## Steps to reset the passcode
 
