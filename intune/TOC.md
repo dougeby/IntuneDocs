@@ -263,7 +263,7 @@
 ### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
-## [Use the helpdesk operator role](help-desk-operators.md)
+## [Help users troubleshoot problems](help-desk-operators.md)
 ## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
 ### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
