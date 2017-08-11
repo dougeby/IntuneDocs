@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,8 +28,6 @@ ms.custom: intune-azure
 ---
 
 # Getting started with apps
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune supports a few different ways for you to deploy apps to your corporate devices:
 

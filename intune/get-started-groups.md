@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,8 +26,6 @@ ms.custom: intune-azure
 ---
 
 # Get started with groups
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 [](./media/generic-users-groups.png)
 

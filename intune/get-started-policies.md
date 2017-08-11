@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,8 +28,6 @@ ms.custom: intune-azure
 ---
 
 # Getting started with policies
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 One of the main goals of getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices.
 
