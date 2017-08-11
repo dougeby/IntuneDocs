@@ -44,19 +44,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Intune apps
 -->   
 
-## Week of August 7, 2017
-
-### Monitor and troubleshoot
-
-#### Additional help desk troubleshooting details <!---  Applies to 1263399, 1326964, 1341642 --->
- 
-Intune has updated the troubleshooting display and added to the information that it provides for admins and help desk staff. You can now see an **Assignments** table that summarizes all assignments for the user based on group membership. This list includes:
-- Mobile apps
-- Compliance policies
-- Configuration profiles
- 
-In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
-
 ## Week of July 31, 2017
 
 ### Device enrollment  
@@ -81,7 +68,6 @@ For details, see [Synchronize device](device-sync.md)
 
 #### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
 A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
-
 
 #### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
@@ -112,12 +98,22 @@ We made several updates to the UI of the [Company Portal website](https://portal
 #### iBooks support for the Company Portal website <!--1231841-->
 We've added a dedicated page to the Company Portal website that allows users to browse and download iBooks. 
 
+### Monitor and troubleshoot
+
+#### Additional help desk troubleshooting details <!---  Applies to 1263399, 1326964, 1341642 --->
+ 
+Intune has updated the troubleshooting display and added to the information that it provides for admins and help desk staff. You can now see an **Assignments** table that summarizes all assignments for the user based on group membership. This list includes:
+- Mobile apps
+- Compliance policies
+- Configuration profiles
+ 
+In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
+
 ### Reporting
 
 #### Intune Data Warehouse (Public Preview)
 
 The Intune Data Warehouse samples data daily to provide a historical view of your tenant. You can access the data using a Power BI file (PBIX), an OData link that is compatible with many analytics tools, or interacting with the REST API. For more information, see [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md).
-
 
 ## Week of July 23rd, 2017
 
