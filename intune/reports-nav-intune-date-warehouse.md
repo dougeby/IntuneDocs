@@ -42,11 +42,11 @@ This reference section provides an overview of endpoints, supported HTTP methods
 > [!Important]  
 > You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates. <!--If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
 
-<!-- ## OData custom client
+## OData custom client
 
 You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a web app and a client app in Azure, grant permissions to the client. Your local client will get authorization, can then communicate with the Data Warehouse endpoints.
 
-For more information, see [Get data from the Data Warehouse API with a REST client](Get-data-REST.md) -->
+For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
 
 ## Interacting with the API
 
@@ -59,7 +59,7 @@ The API requires authorization with Azure AD. Azure AD uses OAuth 2.0. Once auth
 
 OData defines an abstract data model and a protocol that let any client access information exposed by any data source. The data model documentation topic contains an explanation of the namespaces, entities, and return objects in the Intune Data Warehouse data model. For more information, see [Data Warehouse Data Model](reports-ref-data-model.md).
 
-## For more information
+## Next steps
 
 [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
 [odata.org](http://www.odata.org)  

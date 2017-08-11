@@ -264,7 +264,7 @@
 ### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
-## [Use the helpdesk operator role](help-desk-operators.md)
+## [Help users troubleshoot problems](help-desk-operators.md)
 ## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
 ### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
@@ -292,7 +292,7 @@
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune Date Warehouse API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
 ### [Data Warehouse API endpoint](reports-api-url.md)
 ### [Data Warehouse data model](reports-ref-data-model.md)
 #### [Reference for Date entity](reports-ref-date.md)
@@ -301,6 +301,6 @@
 #### [Reference for devices entities](reports-ref-devices.md)
 #### [Reference for application entities](reports-ref-application.md)
 #### [Reference for policy entities](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Glossary](intune-glossary.md)
