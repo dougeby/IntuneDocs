@@ -25,7 +25,7 @@ sections:
     columns: 2
     items:
     - href: /intune/introduction-intune
-      html: <p>Explains what Intune does and how it works.</p>
+      html: <p>Read about what Intune does and how it works.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
       title: What is Intune?
@@ -39,11 +39,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Get support
-    - href: /intune/setup-steps
-      html: <p>Step-by-step instructions for getting Intune going.</p>
+    - href: /intune/whats-new
+      html: <p>See what's new in Intune this week.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: Set up Intune
+      title: What's new
 - title: New, popular, recommended
   items:
   - type: paragraph
@@ -54,34 +54,33 @@ sections:
     columns: 3
     items: 
     - href: /intune/get-started-evaluation
-      title: Get started
+      title: Get started with Intune
       image: 
         src: https://docs.microsoft.com/media/common/i_get-started.svg
     - href: /intune/ui-changes
-      title: Where did my Intune feature go in Azure? 
+      title: See where your Intune features in the Azure portal 
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     - href: /intune/what-is-intune
-      title: Intune on the Azure portal
+      title: Learn about Intune on the Azure portal
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     - href: /intune/high-level-architecture
-      title: Intune high-level architecture
+      title: View the Intune high-level architecture
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     - href: /intune/reports-nav-create-intune-reports
-      title: Intune Data Warehouse (preview)
+      title: Create reports with Intune Data Warehouse (preview)
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
-      title: Intune in Microsoft Graph
+      title: Automate Intune in Microsoft Graph
       image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
     
 - title: Plan deployments 
   items:
   - type: list
-    style: cards
     className: unordered
     items: 
     - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
