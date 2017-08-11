@@ -24,7 +24,7 @@ sections:
     className: cardsM
     columns: 2
     items:
-       - href: /intune/introduction-intune
+    - href: /intune/introduction-intune
       html: <p>Explains what Intune does and how it works.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
@@ -42,7 +42,7 @@ sections:
     - href: /intune/setup-steps
       html: <p>Step-by-step instructions for getting Intune going.</p>
       image:
-      src: https://docs.microsoft.com/media/common/i_get-started.svg
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
       title: Set up Intune
 - title: New, popular, recommended
   items:
