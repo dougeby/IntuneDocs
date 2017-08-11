@@ -35,7 +35,7 @@ Users are one of the core pieces of accessing Intune. Think about all the differ
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Using **Search resources**, search for **Intune**.
-3. Once you've opened the **Intune** blade, select **All users**, , then select **+ New user**.
+3. Once you've opened the **Microsoft Intune** blade, select **Users**. On the **All Users** page, select **+ New user**.
 4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
 5. Under **Groups**, choose the test group to add the user to.
 6. Save the automatically generated user password so that you can use it to log in to a test device. You must give this password to users so that they can change it to a normal password that they can remember.
