@@ -55,7 +55,7 @@ Intune now supports restricting iOS and Android enrollment by operating system v
 >Does not restrict enrollment through Apple enrollment programs or Apple Configurator.
 
 #### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
-Intune can restricts personal device enrollment by white-listing corporate device IMEI numbers. Intune has now expanded this functionality to iOS, Android, and macOS using device serial numbers. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices. Learn more about [device enrollment restrictions](enrollment-restrictions-set.md).
+Intune can restrict personal device enrollment by white-listing corporate device IMEI numbers. Intune has now expanded this functionality to iOS, Android, and macOS using device serial numbers. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices. Learn more about [device enrollment restrictions](enrollment-restrictions-set.md).
 
 To import serial numbers, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file (no header, two columns for serial number and details like IMEI numbers).  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
 
@@ -63,12 +63,11 @@ To import serial numbers, go **Device enrollment** > **Corporate device identifi
 ### Device management   
 
 #### New device action to force devices to sync with Intune <!-- 711369 -->
-In this release, we've added a new device action that forces the selected device to immediately check-in with Intune. When a device checks-in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+In this release, we've added a new device action that forces the selected device to immediately check-in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 For details, see [Synchronize device](device-sync.md)
 
 #### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
 A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
-
 
 #### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
@@ -99,12 +98,22 @@ We made several updates to the UI of the [Company Portal website](https://portal
 #### iBooks support for the Company Portal website <!--1231841-->
 We've added a dedicated page to the Company Portal website that allows users to browse and download iBooks. 
 
+### Monitor and troubleshoot
+
+#### Additional help desk troubleshooting details <!---  Applies to 1263399, 1326964, 1341642 --->
+ 
+Intune has updated the troubleshooting display and added to the information that it provides for admins and help desk staff. You can now see an **Assignments** table that summarizes all assignments for the user based on group membership. This list includes:
+- Mobile apps
+- Compliance policies
+- Configuration profiles
+ 
+In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
+
 ### Reporting
 
 #### Intune Data Warehouse (Public Preview)
 
 The Intune Data Warehouse samples data daily to provide a historical view of your tenant. You can access the data using a Power BI file (PBIX), an OData link that is compatible with many analytics tools, or interacting with the REST API. For more information, see [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md).
-
 
 ## Week of July 23rd, 2017
 
@@ -156,10 +165,10 @@ There is no immediate impact to any Windows Phone 8.1 device that is managed by 
 We recommend that you upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
-Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, please note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
+Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
 
 #### How does this affect me?
-We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Please ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.
+We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.
 
 #### What do I need to do to prepare for this change?
 Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
