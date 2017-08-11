@@ -81,7 +81,7 @@ sections:
 - title: Plan deployments 
   items:
   - type: list
-    className: unordered
+    style: unordered
     items: 
     - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
     - html: <a href="/intune/migration-guide">Intune migration guide</a>
