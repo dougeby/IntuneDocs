@@ -50,6 +50,9 @@ An MDM push certificate is required for iOS and macOS device enrollment. Learn m
 ## Corporate identifiers
 
 You can list international mobile equipment identifier (IMEI) numbers and serial numbers to identify corporate-owned devices. Learn more about [corporate identifiers](corporate-identifiers-add.md).
+## Multi-factor authentication
+
+You can require users to use an additional verification method, such as a phone, PIN or biometric data, when they enroll a device. Learn more about [multi-factor authentication](multi-factor-authentication.md).
 
 ## Device enrollment manager
 You can make users device enrollment managers.  DEM users can enroll large numbers of mobile devices with a single user account. The device enrollment manager (DEM) account can enroll up to 1,000 devices. Learn more about [device enrollment managers](device-enrollment-manager-enroll.md).

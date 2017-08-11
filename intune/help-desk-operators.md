@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ As an Intune admin, you can assign the Help Desk Operator role to a user group. 
 To add help desk users:
 1. [Add users to Intune](users-add.md) if necessary.
 2. [Create a help desk group](groups-add.md) and add users to the group.
-3. [Assign the RBAC Help Desk Operator role](role-based-access-control.md#built-in-roles)
+3. [Assign the RBAC Help Desk Operator role](role-based-access-control.md#built-in-roles).
 
   ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
   You can also [create a custom role](role-based-access-control.md#custom-roles) which you can further modify to give help desk operators access.  Help desk operators require the following permissions to help troubleshoot user problems:
@@ -65,8 +65,6 @@ Help desk staff and Intune administrators can access the troubleshooting portal 
 - Sign in to the Azure portal, choose  **More Services** > **Monitoring + Management** > **Intune**, and then go **Help and Support** > **Troubleshoot**.
 
 Click **Select user** to view a user and that user's details.
-
-![Screenshot of the Intune Troubleshoot workload with Select User link](media/help-desk-user.png)
 
 ## Use the troubleshooting portal
 
