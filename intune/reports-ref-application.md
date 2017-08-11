@@ -55,9 +55,9 @@ The **AppRevision** entity lists all the versions of apps.
 | IsCurrent |Indicates whether this App version is current or not in the data warehouse |True/False |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this app version was last modified in the data warehouse |11/23/2016 12:00:00 AM |
 
-## AppInstallerTypes
+## AppTypes
 
-The **AppInstallerTypes** entity lists the installation source of an app.
+The **AppTypes** entity lists the installation source of an app.
 
 | Property  | Description |
 |---------|------------|
@@ -83,44 +83,6 @@ The **AppInstallerTypes** entity lists the installation source of an app.
 | 11 |Windows Mobile MSI |An MSI line-of-business app |
 | 12 |Windows Phone LOB app |A Windows phone line-of-business app |
 
-## ApplicationTypes
-
-The **ApplicationTypes** entity lists possible types for an app.
-
-| Property  | Description |
-|---------|------------|
-| ApplicationTypeID |ID for the type |
-| ApplicationTypeKey |Surrogate key for the key |
-| ApplicationTypeName |App type |
-
-## Example
-
-| ApplicationTypeID  | Name | Description |
-|---------|------------|--------|
-| 0 |InHouse |An app developed in-house |
-| 1 |DeepLink |A link to an app in an app store |
-| 2 |WebLink |A link to web app |
-
-## ManagedSoftwareTypes
-
-The **ManagedSoftwareTypes** entity lists possible managed software types for an app.
-
-| Property  | Description |
-|---------|------------|
-| SoftwareTypeID |Id for the type |
-| SoftwareTypeKey |Surrogate key for the key |
-| SoftwareTypeName |Software type |
-
-## Example
-
-| SoftwareTypeID  | Name | Description |
-|---------|------------|--------|
-| 0 |Desktop |A desktop app |
-| 2 |Update |A window update |
-| 5 |SideCarAgent | |
-| 1 |Mobile |A mobile app |
-| 3 |WebLink |A weblink |
-| 4 |VppDeepLink |A link to an app in app store that is part of a VPP (Volume Purchase Program) |
 
 ## VppProgramTypes
 
