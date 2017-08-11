@@ -122,3 +122,13 @@ sections:
     - html: <a href="/intune/app-sdk">Prepare LOB apps with the Intune App SDK</a>
     - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>
     - html: <a href="/intune/reports-nav-intune-date-warehouse">Intune Data Warehouse API</a>
+
+- title: Other resources
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Read the Enterprise Mobility and Security blog</a>
+    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/"> Get help on the Intune support blog</a>
+    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Give feedback on Intune at UserVoice</a>
+    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Ask or answer questions on the Intune discussion forum</a>
