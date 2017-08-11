@@ -50,4 +50,4 @@ Entity sets are named collections of entities in the data model. These sets cont
 
 <!-- ## Data Model relationships
 
-For more information on the relationships in the data model, see [Relationships of Entities](). -->
+For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
