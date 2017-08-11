@@ -74,6 +74,7 @@
 #### [Restrictions](enrollment-restrictions-set.md)
 #### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 #### [Corporate identifiers](corporate-identifiers-add.md)
+#### [Multi-factor authentication](multi-factor-authentication.md)
 #### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### Set up Windows enrollment
