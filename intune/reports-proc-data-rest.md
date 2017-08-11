@@ -43,9 +43,9 @@ running on your local machine references the Intune Data Warehouse API when the 
 1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** blade.
 2. Click **New app registration**.
 3. Type the app details.
-    -  Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
-    -  Select **Native** for the **Application type**.
-    -  Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type 
+    1.  Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
+    2.  Select **Native** for the **Application type**.
+    3.  Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type 
      `https://www.getpostman.com/oauth2/callback`. You will use the callback for client authentication step when authenticating to Azure AD.
 4.  Click **Create**.
 
@@ -53,11 +53,11 @@ running on your local machine references the Intune Data Warehouse API when the 
 
 5. Note the **Application ID** of this app. You will use the ID in the next section.
 6. If you plan on using Postman, add a key. They key is used as the client secret with authentication to Azure AD. To add a key:
-    -  Click **Keys** under **API Access** In the Settings blade for the app.
-    -  Type a name of your key such as Client-Secret for the **Description**.
-    -  Select **1 year** for the Duration.
-    -  Click **Save**. 
-    -  Copy the value of your key. You won’t be able to retrieve the key after you close the **Settings** blade for the Keys.
+    1.  Click **Keys** under **API Access** In the Settings blade for the app.
+    2.  Type a name of your key such as Client-Secret for the **Description**.
+    3.  Select **1 year** for the Duration.
+    4.  Click **Save**. 
+    5.  Copy the value of your key. You won’t be able to retrieve the key after you close the **Settings** blade for the Keys.
 
 ## Grant the native app access to the Microsoft Intune API
 
@@ -105,13 +105,13 @@ You need the endpoint. In this example, we are going to retrieve data from the *
 
 To get a new access token for Postman, you must add the Azure AD authorization URL, add your Client ID, and Client Secret. Postman will load the authorization page where you will type your credentials.
 
-#### Add the information used to request the token.
+#### Add the information used to request the token
 
 1.	Download Postman if you do not already have it installed. To download Postman, see [www.getpostman](https://www.getpostman.com).
 2.	Open Postman. Choose the HTTP operation **GET**.
 3.	Paste the endpoint URL into the address. It should look something like:  
 
-    `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
+    `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.	Choose the **Authorization** tab, and select **OAuth 2.0** from the **Type** list.
 5.	Click **Get New Access Token**.
 6.	Verify that you have already added the Callback URL to your app in Azure. The Callback URL is `https://www.getpostman.com/oauth2/callback`.
@@ -137,10 +137,9 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 
     ![Information for the token](media\reports-postman_getnewtoken.png)
 
-14. Type your credentials in the Active AD authorization page.
-15. Type your credentials in the authorization window for your client. The list of Existing Tokens in Postman now contains the token named `Bearer.`
+14. Type your credentials in the Active AD authorization page. The list of Existing Tokens in Postman now contains the token named `Bearer`.
 16. Choose the token. Select **Header** for Add token to.
-17. Click **Use Token**. The list of headers contains the new key value of Authorization and the value `Bearer <your-authorization-token>`
+17. Click **Use Token**. The list of headers contains the new key value of Authorization and the value `Bearer <your-authorization-token>`.
 
 #### Send the call to the endpoint using Postman
 
@@ -197,8 +196,8 @@ namespace IntuneDataWarehouseSamples
     */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
-   var applicationId = "8d699e29-3b54-4c6a-91cc-e537b4680fed";
-   var warehouseUrl = "https://fef.msua01.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var applicationId = "<Application ID>";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
@@ -222,14 +221,14 @@ namespace IntuneDataWarehouseSamples
     ```
 
 8.  Update the `TODO`s in the code sample.
-8.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
+9.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
     ![Date entity retrieved in JSON format.](media\reports-get_rest_data_output.png)
 
-9.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
+10.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
 
 ## Next steps
 
-You can find details on authorization, the API URL structure, and OData endpoints in the [Use the Intune Data Warehouse API](reports-api-url.md). 
+You can find details on authorization, the API URL structure, and OData endpoints in [Use the Intune Data Warehouse API](reports-api-url.md). 
 
 You can also refer to the Intune Data Warehouse Data Model to find the data entities contained in the API. For more information, see [Intune Data Warehouse API Data Model](reports-ref-data-model.md)
