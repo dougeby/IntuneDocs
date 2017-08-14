@@ -3,7 +3,7 @@
 
 title: Getting started with apps
 titleSuffix: "Intune on Azure"
-description:
+description: Find and add apps to devices to make it possible for your employees to get work done.
 keywords:
 author: barlanmsft
 ms.author: barlan

@@ -3,7 +3,7 @@
 
 title: Get started with users
 titleSuffix: "Intune on Azure"
-description:
+description: Add a user to Intune to allow them to access company resources on mobile devices.
 keywords:
 author: barlanmsft
 ms.author: barlan

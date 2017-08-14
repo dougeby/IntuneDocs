@@ -3,7 +3,7 @@
 
 title: Getting started with policies
 titleSuffix: "Intune on Azure"
-description:
+description: Create policies to prevent users from doing unauthorized things with their devices.
 keywords:
 author: barlanmsft
 ms.author: barlan
