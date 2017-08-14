@@ -58,7 +58,7 @@ Because these capabilities cannot be managed from both the classic (Intune Silve
 - Disables them in the classic console
 - Enables them in the Azure console  
 
-After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11-15, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
+After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11-22, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
 
 If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
 
