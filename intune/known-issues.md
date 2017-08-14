@@ -46,28 +46,28 @@ When you migrate from classic Intune to the Azure portal, you might see a new gr
 
 ### Secondary migration required for select capabilities
 
-Intune accounts created before January 2017 must be migrated before these capabilities can be used in the Azure portal:
+Intune accounts created before January 2017 must be migrated before the following capabilities can be used in the Azure portal:
 
 - Corporate Device Enrollment profiles
 - Apple Device Enrollment Program
-- Corporate pre-enrolled devices by iOS serial number group
-- Device Enrollment Managers
+- Predeclare corporate devices by iOS serial number
+- Device Enrollment Manager accounts
 - Apple Volume Purchase Program
 
-Because these capabilities cannot be managed from both the classic (Intune Silverlight and Azure consoles, the migration:
+Because these capabilities cannot be managed from both the classic Intune (Silverlight) console and Azure portal, the migration:
 - Disables them in the classic console
 - Enables them in the Azure console  
 
-After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11-22, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
+After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11 and 22, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
 
 If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
 
 #### Removes default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Silverlight Intune console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
+The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the classic Intune (Silverlight) console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
 
 #### Apple DEP token restored with migration
 
-If you deleted an Apple Device Enrollment Program token in the Intune classic (Silverlight) portal and do not upload a new token to the Azure portal, the original token is restored in the Azure portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure portal.
+If you deleted an Apple Device Enrollment Program token in the classic Intune (Silverlight) portal and do not upload a new token to the Azure portal, the original token is restored in the Azure portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure portal.
 
 ### Status blades for migrated policies do not work
 
