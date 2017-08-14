@@ -264,96 +264,41 @@ The **DevicePropertyHistory** entity has the same properties as the devices tabl
 |---------|------------|
 | DateKey |Reference to date table indicating the day |
 | DeviceKey |Unique identifier of the device in the data warehouse - surrogate key. This is a reference to the Device table that contains the Intune device ID |
-| DeviceModel |Model of the device |
-| OS |OS of the device |
 | DeviceName |Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
-| SoftwareVersion |In most cases this is the OS version except in Apple platforms where it differs from OS version. |
-| Imei |IMEI number |
-| HardwareInventoryTimeUtc |The first time inventory was reported for this device. |
-| InventoryModifiedTimeUtc |The last time inventory was stored when this snapshot was taken |
-| InventoryReportingTimeUtc |The last time inventory was collected for this device. |
-| ExchangeActiveSyncId |Exchange ActiveSync Device ID |
-| ComputerSystemDescription |System description |
-| ComputerSystemName |System Name |
-| ComputerSystemManufacturer |System Manufacturer |
-| ComputerSystemModel |System Model |
-| UserName |User name |
-| OSType |OS Type |
-| OSCaption |OS Caption |
-| OSName |OS Name |
-| OSManufacturer |OS Manufacturer |
-| OSProductSuite |OS Product Suite |
-| OSProductType |OS Product Type |
-| Locale |OS Locale |
-| PhysicalMemoryCapacity |Physical Memory Capacity (in bytes) |
-| PhysicalMemoryRemovable |Physical Removable Memory (in bytes) |
-| SystemEnclosureChassisTypesInnerText |Defines the system chassis type for this device. The numbers indicate the following values:  0 or Empty = Unknown   1 = It is a Desktop   2 = It is a Laptop  3 = It is a Workstation  4 = It is an Enterprise Server  100 = It is a Phone  101 = It is a Tablet  102/103 = Another unknown type of Mobile device |
-| SystemEnclosureModel |System Enclosure model |
-| SystemEnclosureSerialNumber |System Enclosure Serial number |
-| NetworkAdapterConfigurationText |Configuration text from network adapter |
-| MacAddress |MAC address |
-| SmsID |Intune device ID |
-| CertExpiry |Expiry date of the MDM management certificate |
-| DeviceClientAgentVersion |Client Agent Version |
-| DeviceClientID |Device Client ID |
-| SerialNumber |Serial Number |
-| DeviceManufacturer |Device Manufacturer |
-| DMVersion |DM version |
-| FirmwareVersion |Firmware Version |
-| HardwareVersion |Hardware Version |
-| PlatformType |Platform Type |
-| ProcessorLevel |Processor level |
-| ProcessorRevision |Processor Revision |
-| Product |Product |
-| ProductVersion |Product version |
-| OEM |Original Equipment manufacturer |
-| DeviceBuildVersion |Device Build version |
-| Meid |Mobile equipment identifier. |
-| PhoneNumber |Phone number |
-| SubscriberCarrierNetwork |Phone Carrier Network Name |
-| CellularTechnology |Phone Carrier Network Type (CDMA/GSM) |
-| Imsi |IMSI number |
-| JailBroken |True if the device is Jail Broken or Rooted. |
-| IsActivationLockEnabled |True Is Activation Lock is Enabled |
-| DeviceType |Device Type |
-| IsSupervised |Is Supervised |
-| DeviceDisplayNumberOfColors |Device display Number Of Colors |
-| HorizontalResolution |Device horizontal screen resolution |
-| VerticalResolution |Device vertical screen resolution |
-| StorageFree |Free storage (in bytes) |
-| StorageTotal |Total storage (in bytes) |
-| ProgramFree |Free Program memory (in bytes) |
-| ProgramTotal |Total Program memory (in bytes) |
-| RemovableStorageFree |Free removable storage (in bytes) |
-| RemovableStorageTotal |Total removable storage (in bytes) |
-| DeviceMemoryDeviceCapacity |Device memory capacity |
-| DeviceMemoryAvailableDeviceCapacity |Device memory available capacity |
-| DeviceOSVersion |OS Version |
-| DeviceOSPlatform |OS platform |
-| DeviceOSLanguage |OS language |
-| PasswordMaxAttemptsBeforeWipe |Maximum allowed password attempts allowed before device wipe |
-| PasswordMinComplexChars |Minimum number of complex characters required in the password |
-| PasswordMinLength |Minimum required length of password |
-| PasswordHistory |Password - Minimum historic passwords unaccepted |
-| PasswordEnabled |Password - Enabled? |
-| PasswordExpiration |Password - Expiration date |
-| AllowRecoveryPassword |Allow password recovery |
-| PasswordAutoLockTimeout |Password - Auto lock timeout |
-| PasswordType |Password Type |
-| BacklightACTimeout |Backlight time out when plugged into power source |
-| BacklightBatTimeout |Backlight timeout on battery |
-| PowerBackupPercent |Power backup percent |
-| BatteryPercent |Remaining battery percent. |
-| PlatformID |Platform ID |
-| ExchangeDeviceID |Exchange Device ID |
-| SmsProcessorDescription |Processor description |
-| OwnerEmailAddress |Owner-s email address |
-| DeviceOSName |OS Name |
-| WifiMac |WIFI Mac address |
-| EthernetMac |Ethernet MAC address |
-| RequireEncryption |Indicates whether device is encrypted or not. |
-| ActivationLockBypassCode |Activation lock Bypass code |
-
+| DeviceTypeKey |Key of the device type attribute for this device |
+| ClientRegisterationStateKey |Key of the client registration state attribute for this device |
+| OwnerTypeKey |Key of the owner type attribute for this device: corporate, personal, or unknown. |
+| objectSourceKey |Ignore this column. |
+| CreatedDate |Date the device was enrolled on |
+| LastContact |Last known device check-in with Intune |
+| LastContactNotification |Last time Intune notified the device to check in with Intune |
+| LastContactWorkplaceJoin |The timestamp indicating last known Workplace Join state for this device. |
+| ManagementAgentKey |Key of the management agent associated with this device. |
+| ManagementStateKey |Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted. |
+| ReferenceId |The device-s ID in Azure Active Directory |
+| WorkPlaceJoinStateKey |Key of the workplace join state associated with this device. |
+| CategoryId |Ignore this column. |
+| EnrollmentTypeKey |Key of the enrollment type associated with this device, indicating method of enrollment. |
+| CertExpirationDate |Expiry date of the MDM management certificate. |
+| MdmStatusKey |A key to MdmStatus |
+| OSFamily |OS Family (Windows, iOS, Android, etc.) |
+| OSVersion |OS version |
+| OSMajorVersion |Major version component of the OS version (major.minor.build.revision) |
+| OSMinorVersion |Minor version component of the OS version (major.minor.build.revision) |
+| OSBuildNumber |Build version component of the OS version (major.minor.build.revision) |
+| OSRevisionNumber |Revision version component of the OS version (major.minor.build.revision) |
+| EasID |This devices EAS ID, if the device is managed by Exchange Active Sync. |
+| GraphDeviceIsManaged |The last management status that Intune set in AAD |
+| GraphDeviceIsCompliant |The last compliance state that Intune set in AAD |
+| SerialNumber |Serial number of the device, if available |
+| EnrolledByUser |The ID of user who enrolled this device that references the userId column in User table. |
+| RowLastModifiedDateTimeUTC |Last time this record was modified. |
+| ProcessorArchitecture |Processor architecture |
+| DeviceAction |Last device action issued, Ignore for now. |
+| Manufacturer |Manufacturer of the device |
+| Model |Model of the device |
+| LastPolicyUpdateUtc |Latest time when policy was updated on the device |
+| LastExchangeStatusUtc |Last time the device synced with exchange. |
 ## MdmDeviceInventoryHistories
 
 The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
