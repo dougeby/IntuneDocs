@@ -32,7 +32,7 @@ sections:
     - href: /intune/free-trial-sign-up
       html: <p>Start evaluating Intune with a free trial.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_free_trial.svg
+        src: https://docs.microsoft.com/media/common/i_free-trial.svg
       title: Free trial
     - href: /intune/get-support
       html: <p>Learn how to create support tickets.</p>
