@@ -5,8 +5,8 @@ title: How to add apps to Microsoft Intune
 titleSuffix: "Intune on Azure"
 description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
