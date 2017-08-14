@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Getting started with policies
+# Get started with policies
 
 One of the main goals of getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices.
 
@@ -60,3 +60,8 @@ __How do I create a policy?__
 7. Return to the **Create policy** blade, then select **Create**.
 8. Once the policy is created, select **Assignments** to assign it to your test group. Select your test group – which should have your test user in it – then assign the policy to that group by clicking **Save**.
 9. Wait a few minutes, then your enrolled device should prompt you that it needs an updated password in order to remain compliant with corporate policy. You can also manually check for this in the **Company Portal app for iOS** by tapping on the device name, then the **Sync** button.
+
+## Learn more
+
+* [Monitor Intune Device compliance policies](compliance-policy-monitor.md)
+* [Common ways to use conditional access policies with Intune](conditional-access-intune-common-ways-use.md)

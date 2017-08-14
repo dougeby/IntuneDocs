@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Managing users with Intune
+# Get started with managing users
 
 Users are one of the core pieces of accessing Intune. Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune.
 

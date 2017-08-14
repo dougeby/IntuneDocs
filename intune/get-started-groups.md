@@ -27,9 +27,7 @@ ms.custom: intune-azure
 
 # Get started with groups
 
-[](./media/generic-users-groups.png)
-
-Microsoft Intune uses Azure Active Directory (Azure AD) to [manage access to company resources](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups). This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
+Microsoft Intune uses Azure Active Directory (Azure AD) to manage access to company resources. This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
 
 __How do I create a group?__
 
@@ -42,3 +40,9 @@ __How do I create a group?__
 7. Click **Create**.
 
 If you've successfully created a group, it should appear in the list of **All groups**. If it doesn't appear there, try to create another group.
+
+
+## Learn more
+
+* [Set enrollment restrictions using groups in Intune](groups-add.md)
+* [Manage access to company resources using groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

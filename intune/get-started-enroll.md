@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Getting started enrolling devices
+# Get started enrolling devices
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. Since your end users will interact with Intune on their devices rather than in the admin console, you want to make sure that you are fluent with the enrollment experience. This way, you can combine well-crafted compliance policies with your experience to show empathy for your users. This is especially important because your users will know exactly what information that you as an admin can see:
 
@@ -70,3 +70,9 @@ Enrolling a device is the first experience that many end users will have with ac
 14. When the screen changes to show that the profile has finished installing, tap **Done**.
 15. An “Enrolling device” message shows on the screen, then shows that the device has successfully enrolled. A popup will appear asking to open the page in the Company Portal. Tap **Open**.
 16. You return to the **Company Access Setup** screen. If you have no test policies set up, then the device should appear compliant. If you have any test policies, then tapping **Device Compliance** will show that there are things that need to be done to make the device secure.
+
+## Learn more
+
+* [Enrollment options for Intune](enrollment-options.md)
+* [Enable bring your own device with Intune](byod-enable.md)
+* [Educating your end users about enrollment and device management](end-user-educate.md)
