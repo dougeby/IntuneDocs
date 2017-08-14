@@ -27,22 +27,22 @@ sections:
     - href: /intune/introduction-intune
       html: <p>Read about what Intune does and how it works.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
+        src: https://docs.microsoft.com/media/common/i_overview.svg
       title: What is Intune?
     - href: /intune/free-trial-sign-up
       html: <p>Start evaluating Intune with a free trial.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_download-install.svg
+        src: https://docs.microsoft.com/media/common/i_free_trial.svg
       title: Free trial
     - href: /intune/get-support
       html: <p>Learn how to create support tickets.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+        src: https://docs.microsoft.com/media/common/i_support.svg
       title: Get support
     - href: /intune/whats-new
       html: <p>See what's new in Intune this week.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What's new
 - title: New, popular, recommended
   items:
@@ -60,23 +60,23 @@ sections:
     - href: /intune/ui-changes
       title: See where your Intune features in the Azure portal 
       image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_guide.svg
     - href: /intune/what-is-intune
       title: Learn about Intune on the Azure portal
       image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_portal.svg
     - href: /intune/high-level-architecture
       title: View the Intune high-level architecture
       image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
     - href: /intune/reports-nav-create-intune-reports
       title: Create reports with Intune Data Warehouse (preview)
       image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_generic-database.svg
     - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
       title: Automate Intune in Microsoft Graph
       image:
-        src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
+        src: https://docs.microsoft.com/media/common/i_code-automate.svg
     
 - title: Plan deployments 
   items:
