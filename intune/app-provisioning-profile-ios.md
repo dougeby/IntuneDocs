@@ -5,8 +5,8 @@ title: App provisioning profiles
 titleSuffix: "Intune on Azure"
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/03/2017
 ms.topic: article

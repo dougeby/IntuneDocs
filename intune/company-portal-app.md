@@ -4,8 +4,8 @@
 title: How to configure the Company Portal apptitleSuffix: "Intune on Azure"
 description: Learn how you can apply company specific branding to the Intune Company Portal app. "
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
