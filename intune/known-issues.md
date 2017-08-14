@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,9 +54,11 @@ Intune accounts created before January 2017 must be migrated before these capabi
 - Device Enrollment Managers
 - Apple Volume Purchase Program
 
-Because these capabilities cannot be managed from both the classic Silverlight and Azure consoles, the migration:
+Because these capabilities cannot be managed from both the classic (Intune Silverlight and Azure consoles, the migration:
 - Disables them in the classic console
 - Enables them in the Azure console  
+
+After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11-15, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
 
 If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
 
@@ -77,7 +79,7 @@ You cannot view status information for policies that were migrated from the clas
 iOS volume-purchased apps are displayed, and can be assigned only for the same country code as your Intune account. Intune only sync apps from the same iTunes locale as the Intune tenant account country code. For example, if you purchase an app which is only available in the U.S. store, but your Intune account is German, Intune will not show that app.
 
 ### Multiple copies of the same iOS volume-purchase program are uploaded
-Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token. 
+Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.
 
 <!-- ## Groups -->
 
@@ -89,8 +91,8 @@ For devices not enrolled with Intune, you can only specify a primary domain in t
 If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will soon be changed to be more accurate.
 
 ### Cisco AnyConnect VPN client support
- 
-The latest release of the Cisco AnyConnect VPN client (4.0.07072) is not currently compatible with Intune. 
+
+The latest release of the Cisco AnyConnect VPN client (4.0.07072) is not currently compatible with Intune.
 A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
 
 ### Using the numeric password type with macOS Sierra devices
@@ -124,16 +126,3 @@ You can define [app protection policies for iOS](app-protection-policy-settings-
 Global Admins (also referred to as Tenant Admins) can continue day-to-day administration tasks without a separate Intune or Enterprise Mobility Suite (EMS) license. However, to use the service, such as to enroll their own device, a corporate device, or use the Intune Company Portal, they need an Intune or EMS license.
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 
