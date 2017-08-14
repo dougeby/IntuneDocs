@@ -56,7 +56,7 @@ Intune accounts created before January 2017 must be migrated before the followin
 
 Because these capabilities cannot be managed from both the classic Intune (Silverlight) console and Azure portal, the migration:
 - Disables them in the classic console
-- Enables them in the Azure console  
+- Enables them in the Azure portal  
 
 After September 11, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration will take place between September 11 and 22, 2017. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune Classic console.
 
