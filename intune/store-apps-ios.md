@@ -5,8 +5,8 @@ title: How to add iOS store apps to Intune
 titleSuffix: "Intune on Azure"
 description: Learn about adding iOS store apps to Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: article
