@@ -5,8 +5,8 @@ title: How to add Windows Phone line-of-business apps to Intune
 titleSuffix: "Intune on Azure"
 description: Learn about adding Windows Phone line-of-business apps to Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/12/2017
 ms.topic: article

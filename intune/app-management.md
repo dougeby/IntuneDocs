@@ -5,8 +5,8 @@ title: What is app management
 titleSuffix: "Intune on Azure"
 description: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: get-started-article
