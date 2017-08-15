@@ -1,5 +1,6 @@
 - name: Introduction
   href: introduction-intune.md
+  expanded: true
   items:
   - name: What is the Azure portal?
     href: what-is-intune.md
