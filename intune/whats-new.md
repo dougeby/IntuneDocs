@@ -44,15 +44,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Intune apps
 -->   
 
-## Week of August 14, 2017
 
-### Additional help desk troubleshooting details <!--  Applies to 1263399, 1326964, 1341642 -->
-Intune has updated the troubleshooting display and added to the information that it provides for admins and help desk staff. You can now see an **Assignments** table that summarizes all assignments for the user based on group membership. This list includes:
-- Mobile apps
-- Compliance policies
-- Configuration profiles
- 
-In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
 
 
 
