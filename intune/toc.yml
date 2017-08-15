@@ -445,40 +445,56 @@
   - name: Manage roles
     href: role-based-access-control.md
   - name: Manage PCs with software agent
-    href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json
+    href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
+    maintainContext: true
     items:
     - name: Compare PC management
-      href: /intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/pc-management-comparison
+      maintainContext: true
     - name: Install the PC client
-      href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
+      maintainContext: true
     - name: Common PC management tasks
-      href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
+      maintainContext: true
       items:
       - name: PC policies
-        href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
+        maintainContext: true
       - name: View inventory
-        href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
+        maintainContext: true
       - name: Retire PCs
-        href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
+        maintainContext: true
       - name: Link PCs to users
-        href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
+        maintainContext: true
       - name: Remote assistance
-        href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
+        maintainContext: true
     - name: Policies to protect Windows PCs
-      href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
+      maintainContext: true
       items:
       - name: Software updates
-        href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
+        maintainContext: true
       - name: Windows Firewall
-        href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
+        maintainContext: true
       - name: Endpoint Protection
-        href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json
+        href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
+        maintainContext: true
     - name: Add apps for Intune client PCs
-      href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
+      maintainContext: true
     - name: Manage license agreements
-      href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
+      maintainContext: true
     - name: Resolve policy conflicts
-      href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json
+      href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
+      maintainContext: true
   - name: Educate users
     href: end-user-educate.md
     items:
