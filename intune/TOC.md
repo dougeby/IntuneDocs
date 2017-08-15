@@ -291,7 +291,7 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune Date Warehouse API](reports-nav-intune-date-warehouse.md)
+## [Intune Data Warehouse API](reports-nav-intune-data-warehouse.md)
 ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
 ### [Data Warehouse API endpoint](reports-api-url.md)
 ### [Data Warehouse data model](reports-ref-data-model.md)
