@@ -37,7 +37,7 @@ Intune supports a few different ways for you to deploy apps to your corporate de
 
 You’re going to go through one of the quicker application deployment methods by assigning a public store app.
 
-__How do I assign a public store app?__
+## How do I assign a public store app?
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Using **Search resources**, search for **Intune**.
