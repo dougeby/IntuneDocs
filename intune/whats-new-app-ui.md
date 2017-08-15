@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,14 @@ ms.custom: intune-classic
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of August 14, 2017
+
+### Updates to the "Device Details" page on the Company Portal app for Windows 10
+
+The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
+
+[!The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## Week of July 31, 2017
 
