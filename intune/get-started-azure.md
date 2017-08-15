@@ -34,7 +34,7 @@ The Azure portal is where you can find the Intune service. There's a lot of serv
 
 The __sidebar__ on the left side of the Azure portal shows you a list of all the available Azure services. This comprehensive list can be modified from its default view so that you can keep a persistent view of the services that matter most to you. We'll use Intune as the example of a service to add to the top of the list.
 
-[!A user searching for Intune in the "More services" list.](./media/get-started-pin-intune-to-sidebar.png)
+[!A user searching for Intune in the "More services" list.](./media/azure-add-intune1.png)
 
 1. Select **More services** from the bottom of the sidebar on the left side of the page.
 2. Search for **Intune** in the filter box.
