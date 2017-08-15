@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,6 +71,9 @@ Enrolling a device is the first experience that many end users will have with ac
 15. An “Enrolling device” message shows on the screen, then shows that the device has successfully enrolled. A popup will appear asking to open the page in the Company Portal. Tap **Open**.
 16. You return to the **Company Access Setup** screen. If you have no test policies set up, then the device should appear compliant. If you have any test policies, then tapping **Device Compliance** will show that there are things that need to be done to make the device secure.
 
+## Next steps
+
+[Get started with adding apps](get-started-apps.md) - Find and add apps to devices to make it possible for your employees to get work done.
 
 ## Learn more
 

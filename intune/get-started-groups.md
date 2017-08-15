@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Get started with groupstitleSuffix: "Intune on Azure"
+title: Get started with groups
+titleSuffix: "Intune on Azure"
 description: Organize users into groups to make it easier to manage the policies and apps that they can access.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +28,8 @@ ms.custom: intune-azure
 
 # Get started with groups
 
+Groups are used to manage your users, and control your employees' access to your company resources. These resources can be part of your directory or can be external resources, like SaaS apps or SharePoint sites.
+
 Microsoft Intune uses Azure Active Directory (Azure AD) to manage access to company resources. This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
 
 __How do I create a group?__
@@ -41,6 +44,9 @@ __How do I create a group?__
 
 If you've successfully created a group, it should appear in the list of **All groups**. If it doesn't appear there, try to create another group.
 
+## Next steps
+
+[Get started with policies](get-started-policies.md) - Create policies to prevent users from doing unauthorized things with their devices.
 
 ## Learn more
 

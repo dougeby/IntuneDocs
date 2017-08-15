@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,10 @@ __How do I create a policy?__
 7. Return to the **Create policy** blade, then select **Create**.
 8. Once the policy is created, select **Assignments** to assign it to your test group. Select your test group – which should have your test user in it – then assign the policy to that group by clicking **Save**.
 9. Wait a few minutes, then your enrolled device should prompt you that it needs an updated password in order to remain compliant with corporate policy. You can also manually check for this in the **Company Portal app for iOS** by tapping on the device name, then the **Sync** button.
+
+## Next steps
+
+[Get started enrolling devices](get-started-enroll.md) - Learn the enrollment experience by going through a full enrollment experience of an iOS device.
 
 ## Learn more
 

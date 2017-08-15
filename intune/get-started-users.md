@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Get started with managing users
 
-Users are one of the core pieces of accessing Intune. Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune.
+Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune. 
 
 ## How do I create a user?
 
@@ -57,4 +57,4 @@ After you've created a user, you need to use the [Office 365 portal](http://go.m
 
 ## Next steps
 
-After you've finished creating your user, you'll need to [create a group](get-started-groups.md) to easily assign apps and settings to large numbers of users and devices.
+[Get started with groups](get-started-groups.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
