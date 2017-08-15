@@ -17,7 +17,8 @@
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
-# [Get started](get-started-evaluation.md)
+# [Get started with Intune](get-started-evaluation.md)
+## [Navigating the Azure portal](get-started-azure.md)
 ## [Create a user](get-started-users.md)
 ## [Create a group](get-started-groups.md)
 ## [Assign policies](get-started-policies.md)

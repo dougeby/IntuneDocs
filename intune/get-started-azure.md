@@ -55,6 +55,10 @@ You can also add tiles directly to your dashboard from any **ellipsis** button a
 
 This will be more relevant after you've added more content, like groups and users, to Intune.
 
+## Using services
+
+Whenever you open Intune or any other service in Azure, it will appear in a **blade**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen blade. When you select the workload, it will open that blade in the full page. Other blades will slide out from the right side of the blade when they open, and will collapse underneath the main blade that they came from. 
+
 ## Next steps
 
 * [Get started with managing users](get-started-users.md) - Add a user to Intune to allow them to access company resources on mobile devices.
