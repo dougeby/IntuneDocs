@@ -109,18 +109,16 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu.
-
-  - **Shared iPad** - (Requires **Enroll without User Affinity** and **Supervised** mode.) Allows multiple users to log on to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal.
+	 - **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu.
+   - **Shared iPad** - (Requires **Enroll without User Affinity** and **Supervised** mode.) Allows multiple users to log on to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal. Learn more about [shared iPad](education-settings-configure-ios-shared.md).
 
   >[!NOTE]
   >If **User Affinity** is set to **With user affinity**  or **Supervised** mode is set to **Off**, Shared iPad mode is disabled for the enrollment profile.
+      - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
-  - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
+    - **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-	- **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
-
-	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
+    - **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
 
 7. Choose **Setup Assistant Settings**, configure the following profile settings, and then choose **Save**:
 
