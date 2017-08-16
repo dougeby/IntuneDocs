@@ -3,12 +3,12 @@
 
 title: Get started with users
 titleSuffix: "Intune on Azure"
-description:
+description: Add a user to Intune to allow them to access company resources on mobile devices.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,17 +27,15 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started with users
+# Get started with managing users
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure Active Directory manages your organization’s groups of objects – like devices and apps – and also groups of users. You can group users or devices together instead of having to manage each device individually. This lets you easily assign apps and settings to large numbers of users and devices.
+Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune. 
 
 ## How do I create a user?
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Using **Search resources**, search for **Users and groups**.
-3. Once you've opened the **Users and groups** blade, select **All users**, , then select **+ New user**.
+2. Using **Search resources**, search for **Intune**.
+3. Once you've opened the **Microsoft Intune** blade, select **Users**. On the **All Users** page, select **+ New user**.
 4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
 5. Under **Groups**, choose the test group to add the user to.
 6. Save the automatically generated user password so that you can use it to log in to a test device. You must give this password to users so that they can change it to a normal password that they can remember.
@@ -56,3 +54,7 @@ After you've created a user, you need to use the [Office 365 portal](http://go.m
  > This uses one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
 
 5. Select **Save**.
+
+## Next steps
+
+[Get started with groups](get-started-groups.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.

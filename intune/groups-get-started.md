@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Intune classic groups in the Azure portaltitleSuffix: "Intune on Azure"
+title: Intune classic groups in the Azure portal
+titleSuffix: "Intune on Azure"
 description: Learn what's new with groups in the Intune Azure portal
 keywords:
 author: nathbarn
