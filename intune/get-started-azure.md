@@ -34,7 +34,7 @@ The Azure portal is where you can find the Intune service. There's a lot of serv
 
 The __sidebar__ on the left side of the Azure portal shows you a list of all the available Azure services. This comprehensive list can be modified from its default view so that you can keep a persistent view of the services that matter most to you. We'll use Intune as the example of a service to add to the top of the list.
 
-[!A user searching for Intune in the "More services" list.](./media/azure-add-intune1.png)
+![A user searching for Intune in the "More services" list.](./media/azure-add-intune1.png)
 
 1. Select **More services** from the bottom of the sidebar on the left side of the page.
 2. Search for **Intune** in the filter box.
@@ -45,13 +45,13 @@ The __sidebar__ on the left side of the Azure portal shows you a list of all the
 
 Your default landing page is the **dashboard**. This is where you'll customize your tiles to show information that is most relevant to you.
 
-[!An image of the generic new dashboard. It shows the sidebar with all of the services on the left, then the main dashboard in the center. The dashboard modification buttons are along the top, with tiles that offer access to all resources, quickstart tutorials, service health, and Azure marketplace.](./media/azure-default-dashboard.png)
+![An image of the generic new dashboard. It shows the sidebar with all of the services on the left, then the main dashboard in the center. The dashboard modification buttons are along the top, with tiles that offer access to all resources, quickstart tutorials, service health, and Azure marketplace.](./media/azure-default-dashboard.png)
 
 To modify your current dashboard, select the **Edit dashboard** button. If you don't want to change your default dashboard, you can also create a **New dashboard**. Creating a new dashboard gives you an empty, private dashboard with the **Tile Gallery**. This lets you add or rearrange tiles. You can find tiles by their **General** category, **Type**, through **Search**, and through a **Resource group** or **Tag**.
 
 You can also add tiles directly to your dashboard from any **ellipsis** button and selecting **Pin to dashboard**.
 
-[!A closeup of the Users and Groups > All groups location in Intune, which has the "Pin to dashboard" option visible at the far right side of a group.](./media/azure-pin-to-dashboard.png)
+![A closeup of the Users and Groups > All groups location in Intune, which has the "Pin to dashboard" option visible at the far right side of a group.](./media/azure-pin-to-dashboard.png)
 
 This will be more relevant after you've added more content, like groups and users, to Intune.
 
