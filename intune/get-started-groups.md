@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Get started with groupstitleSuffix: "Intune on Azure"
-description:
+title: Get started with groups
+titleSuffix: "Intune on Azure"
+description: Organize users into groups to make it easier to manage the policies and apps that they can access.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,20 +28,27 @@ ms.custom: intune-azure
 
 # Get started with groups
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+Groups are used to manage your users, and control your employees' access to your company resources. These resources can be part of your directory or can be external resources, like SaaS apps or SharePoint sites.
 
-[](./media/generic-users-groups.png)
+Microsoft Intune uses Azure Active Directory (Azure AD) to manage access to company resources. This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
 
-Microsoft Intune uses Azure Active Directory (Azure AD) to [manage access to company resources](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups). This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
-
-__How do I create a group?__
+## How do I create a group?
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Using **Search resources**, search for **Users and groups**.
-3. Once you've opened the **Users and groups** blade, select **All groups**.
+2. Using **Search resources**, search for **Intune**.
+3. Once you've opened the **Microsoft Intune** blade, select **Groups**.
 4. On the **Users and groups – All groups** blade, select the **New group** command.
 5. On the **Group** blade, add a **Name** and **Description** for the group.
 6. Set the **Membership type** as **Assigned**. Do not **Enable Office features** for the test group.
 7. Click **Create**.
 
 If you've successfully created a group, it should appear in the list of **All groups**. If it doesn't appear there, try to create another group.
+
+## Next steps
+
+[Get started with policies](get-started-policies.md) - Create policies to prevent users from doing unauthorized things with their devices.
+
+## Learn more
+
+* [Set enrollment restrictions using groups in Intune](groups-add.md)
+* [Manage access to company resources using groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
