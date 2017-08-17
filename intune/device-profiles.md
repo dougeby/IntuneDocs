@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -86,7 +86,7 @@ For more information, see [How to configure Windows 10 edition upgrades](edition
 Supports: Windows 10 only.
 
 ## Endpoint protection
-This profile type lets you configure BitLocker settings for Windows 10 devices.
+This profile type lets you configure BitLocker and Windows Defender settings for Windows 10 devices.
 For more information, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md)
 Supports: Windows 10 only.
 
