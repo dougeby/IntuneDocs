@@ -44,7 +44,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What's new
-- title: New
+- title: New articles
   items:
   - type: paragraph
     text: 'Read the latest and greatest information you need to know.'
