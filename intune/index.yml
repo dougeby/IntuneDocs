@@ -72,7 +72,7 @@ sections:
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/
       title: "[Blog] Learn about the new role-based access controls"
       image:
-        src: https://docs.microsoft.com/media/common/i_blog-.svg
+        src: https://docs.microsoft.com/media/common/i_blog.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/
       title: "[Blog] Understand Intune service health"
       image: 
