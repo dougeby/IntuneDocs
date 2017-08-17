@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 10 devicestitleSuffix: "Intune on Azure"
+title: Intune VPN settings for Windows 10 devices
+titleSuffix: "Intune on Azure"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
 keywords:
 author: lleonard-msft
@@ -101,10 +102,13 @@ Refer to each manufacturer's VPN documentation for more information about how to
 
 ## Conditional Access
 
-**Conditional access for this VPN connection** -
-**Single sign-on (SSO) with alternate certificate** -
-**Extended key usage** -
-**Issuer hash** -
+**Conditional access for this VPN connection** - Enables device compliance flow from the client. When enabled, the VPN client will attempt to communicate with Azure Active Directory to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure Active Directory.
+
+**Single sign-on (SSO) with alternate certificate** - For device compliance, use a certificate different from the VPN authentication certificate for Kerberos authentication. Specify the certificate with the following settings: 
+
+- **Extended key usage** - Name for extended key usage (EKU).
+- **Object Identifier** - Object identifier for EKU.
+- **Issuer hash** - Thumbprint for SSO certificate.
 
 ## DNS Settings
 
