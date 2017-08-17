@@ -24,27 +24,27 @@ sections:
     className: cardsM
     columns: 2
     items:
-    - href: /intune/introduction-intune
+    - href: introduction-intune.md
       html: <p>Read about what Intune does and how it works.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_overview.svg
       title: What is Intune?
-    - href: /intune/free-trial-sign-up
-      html: <p>Start evaluating Intune with a free trial.</p>
+    - href: get-started-evaluation.md
+      html: <p>See how Intune works with this simple tutorial.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_free-trial.svg
-      title: Free trial
-    - href: /intune/get-support
-      html: <p>Learn how to create support tickets.</p>
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Get started
+    - href: get-support.md
+      html: <p>Learn how to create a support ticket and get help when you need it.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_support.svg
       title: Get support
-    - href: /intune/whats-new
+    - href: whats-new.md
       html: <p>See what's new in Intune this week.</p>
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What's new
-- title: New, popular, recommended
+- title: New
   items:
   - type: paragraph
     text: 'Read the latest and greatest information you need to know.'
@@ -53,32 +53,38 @@ sections:
     className: cardsM
     columns: 3
     items: 
-    - href: /intune/get-started-evaluation
-      title: Get started with Intune
-      image: 
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-    - href: /intune/ui-changes
-      title: See where your Intune features in the Azure portal 
-      image:
-        src: https://docs.microsoft.com/media/common/i_guide.svg
-    - href: /intune/what-is-intune
+    - href: what-is-intune.md
       title: Learn about Intune on the Azure portal
       image:
         src: https://docs.microsoft.com/media/common/i_portal.svg
-    - href: /intune/high-level-architecture
+    - href: ui-changes.md
+      title: See where your Intune features in the Azure portal 
+      image:
+        src: https://docs.microsoft.com/media/common/i_guide.svg
+    - href: high-level-architecture.md
       title: View the Intune high-level architecture
       image:
         src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: /intune/reports-nav-create-intune-reports
+    - href: reports-nav-create-intune-reports.md
       title: Create reports with Intune Data Warehouse (preview)
       image:
         src: https://docs.microsoft.com/media/common/i_generic-database.svg
-    - href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
-      title: Automate Intune in Microsoft Graph
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/
+      title: "[Blog] Learn about the new role-based access controls"
       image:
-        src: https://docs.microsoft.com/media/common/i_code-automate.svg
+        src: https://docs.microsoft.com/media/common/i_blog.svg
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/
+      title: "[Blog] Understand Intune service health"
+      image: 
+        src: https://docs.microsoft.com/media/common/i_blog.svg
     
-- title: Plan deployments 
+- title: Videos
+  items:
+  - type: markdown
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
+
+
+- title: Planning articles 
   items:
   - type: list
     style: unordered
@@ -86,7 +92,7 @@ sections:
     - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
     - html: <a href="/intune/migration-guide">Intune migration guide</a>
 
-- title: How to
+- title: How-to articles
   items:
   - type: list
     style: unordered
@@ -103,7 +109,7 @@ sections:
     - html: <a href="/intune/role-based-access-control">Manage roles</a>
     - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Manage PCs with the Intune software client</a>
 
-- title: Troubleshoot
+- title: Troubleshooting articles
   items:
   - type: list
     style: unordered
@@ -112,7 +118,7 @@ sections:
     - html: <a href="/intune/known-issues">Known issues with Intune</a>
     - html: <a href="/intune/get-support">Get support</a>
 
-- title: Develop and customize
+- title: Developing and customizing articles
   items:
   - type: list
     style: unordered
