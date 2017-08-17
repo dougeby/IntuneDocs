@@ -1,16 +1,24 @@
 # User help for Intune
+
 ## [Use managed devices to get work done](use-managed-devices-to-get-work-done.md)
+
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+
 ## [What happens when I reset my device?](what-happens-if-you-reset-your-device-cpwebsite.md)
+
 ## [How to sign in to the Company Portal](sign-in-to-the-company-portal.md)
+
 ## [Using your Android device with Intune](using-your-android-device-with-intune.md)
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
+
 ## [Using your iOS or macOS device with Intune](using-your-iOS-or-macOS-device-with-intune.md)
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
+
 ## [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 ### [What happens when you enroll a Windows device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
+
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
