@@ -78,13 +78,13 @@ sections:
       image: 
         src: https://docs.microsoft.com/media/common/i_blog.svg
     
-- title: Updates to Intune on Azure
+- title: Videos
   items:
   - type: markdown
-    text: <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
 
 
-- title: Plan deployments 
+- title: Planning articles 
   items:
   - type: list
     style: unordered
@@ -92,7 +92,7 @@ sections:
     - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
     - html: <a href="/intune/migration-guide">Intune migration guide</a>
 
-- title: How to
+- title: How-to articles
   items:
   - type: list
     style: unordered
@@ -109,7 +109,7 @@ sections:
     - html: <a href="/intune/role-based-access-control">Manage roles</a>
     - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Manage PCs with the Intune software client</a>
 
-- title: Troubleshoot
+- title: Troubleshooting articles
   items:
   - type: list
     style: unordered
@@ -118,7 +118,7 @@ sections:
     - html: <a href="/intune/known-issues">Known issues with Intune</a>
     - html: <a href="/intune/get-support">Get support</a>
 
-- title: Develop and customize
+- title: Developing and customizing articles
   items:
   - type: list
     style: unordered
