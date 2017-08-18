@@ -51,6 +51,11 @@
 
 ## [Using your iOS or macOS device with Intune](using-your-iOS-or-macOS-device-with-intune.md)
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
+### [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
+### [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md)
+
+
 ### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 
 ## [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
