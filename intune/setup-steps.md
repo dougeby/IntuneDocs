@@ -31,14 +31,14 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-The set-up steps prepare your environment for mobile device management. Before you can let users access to company resources on devices, the device must be brought into management. This lets your company ensure that data remains safe on the device.
+These set-up steps help you enable mobile device management. Before you give users access company resources on devices or manage device settings, those devices should be brought into management. Device management lets you configure devices and set conditions for access. These can improve user experience and help protect your data.
 
 If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 >[!TIP]
 >If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
-The following steps help you set up device management. Steps such as configuring a custom domain and adding apps or configuring devices might be optional. Other steps, such as adding users and setting the MDM authority are required for most management scenarios.
+Some steps such as configuring a custom domain and adding apps or configuring devices are optional, depending upon your company's needs. Other steps, such as adding users and setting the MDM authority are required for most management scenarios that involve device management.
 
 | Steps | Status  |
 | ------------- |-------------|
