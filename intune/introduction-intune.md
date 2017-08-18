@@ -47,7 +47,7 @@ Intune is a cloud-based service in the enterprise mobility management (EMM) spac
 
 
 ## How does Intune work?
-Intune is the component of Enterprise Mobility + Security (EMS) that manages mobile devices and mobile apps. It integrates closely with other EMS components like Azure Active Directory (Azure AD) for identity and access control and Azure Information Protection for data protection. When you use it with Office 365, you can enable your workforce to be productive on all their devices, while keeping your organization's information protected.
+Intune is the component of Enterprise Mobility + Security (EMS) that manages mobile devices and apps. It integrates closely with other EMS components like Azure Active Directory (Azure AD) for identity and access control and Azure Information Protection for data protection. When you use it with Office 365, you can enable your workforce to be productive on all their devices, while keeping your organization's information protected.
 
 ![Image of Intune architecture](./media/intunearch_sm.png)
 
@@ -56,11 +56,11 @@ View a [larger version](./media/intunearchitecture.svg) of the Intune architectu
 How you use the device and app management features of Intune and EMS data protection depends on the [business problem you’re trying to solve](#common-business-problems-that-intune-helps-solve). For example:
 * You’ll make strong use of device management if you're creating a pool of single-use devices to be shared by shift workers in a retail store.
 * You’ll lean on app management and data protection if you allow your workforce to use their personal devices to access corporate data (BYOD).  
-* If you are issuing corporate phones to information workers, you’ll rely heavily on all of the technologies.
+* If you are issuing corporate phones to information workers, you’ll rely on all of the technologies.
 
 ## Intune device management explained
 Intune device management works by using the protocols or APIs that are available in the mobile operating systems. It includes tasks like:
-* Enrolling devices into management so IT has an inventory of devices that are accessing corporate services
+* Enrolling devices into management so your IT department has an inventory of devices that are accessing corporate services
 * Configuring devices to ensure they meet company security and health standards
 * Providing certificates and Wi-Fi/VPN profiles to access corporate services
 * Reporting on and measuring device compliance to corporate standards
@@ -71,12 +71,12 @@ Sometimes, people think that **access control to corporate data** is a device ma
 Intune integrates with Azure AD to enable a broad set of access control scenarios. For example, you can require a mobile device to be compliant with corporate standards that you define in Intune before the device can access a corporate service like Exchange. Likewise, you can lock down the corporate service to a specific set of mobile apps. For example, you can lock down Exchange Online to only be accessed by Outlook or Outlook Mobile.
 
 ## Intune app management explained
-When we talk about app management, we are talking about the set of things our solutions enable IT Pros to do with mobile apps, such as:
-* Publishing mobile apps to employees
-* Configuring apps
+When we talk about app management, we are talking about:
+* Assigning mobile apps to employees
+* Configuring apps with standard settings that are used when the app runs
 * Controlling how corporate data is used and shared in mobile apps
 * Removing corporate data from mobile apps   
-* Updating mobile apps
+* Updating apps
 * Reporting on mobile app inventory
 * Tracking mobile app usage
 
@@ -96,7 +96,7 @@ When you use Intune with the other services in EMS, you can provide your organiz
 
 ![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)
 
-### Intune mobile app security
+### Intune app security
 Providing app security is a part of app management, and in Intune, when we talk about mobile app security, we mean:
 * Keeping personal information isolated from corporate IT awareness
 * Restricting the actions users can take with corporate information such as copy, cut/paste, save, and view
