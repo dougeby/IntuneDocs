@@ -8,7 +8,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,21 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can create and import a comma-separated value (.csv) file that lists international mobile equipment identifier (IMEI) numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
+As an Intune admin, you can identify a device as corporate-owned in a variety of ways. Intune can collect additional information from corporate-owned devices. You can also set device restrictions devices that aren't corporate owned.
+
+A device is identified as corporate-owned if any of the following conditions are true:
+
+- Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
+- Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
+- Predeclared with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
+- Registered in Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device (Windows 10 only)
+- Specified **Corporate** in the device's **Properties**
+
+Corporate-owned devices display **Corporate** in the **Ownership** column for their device records in Intune. To view, go **Devices** > **All devices**.
+
+## Predeclare a device with IMEI or serial number
+
+As an Intune admin, you can create and import a comma-separated value (.csv) file that lists IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -60,10 +74,9 @@ This .csv file when viewed in a text editor appears as:
 >Android Serial numbers are not guaranteed to be unique or present. Check with your device supplier to understand if serial number is a reliable device ID.
 >Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device. Verify the type of serial number reported by the device manufacturer.
 
+### Add a .csv list of corporate identifiers
 
-**To add a .csv list of corporate identifiers**
-
-1. In the Intune portal, choose **Device enrollment** > **Enrollment Restrictions**, choose **Corporate Device Identifiers**, and then click **Add**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**, and then click **Add**.
 
  ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](./media/add-corp-id.png)
 
@@ -75,9 +88,11 @@ Imported devices are not necessarily enrolled. Devices can have a state of eithe
 
 ## Delete corporate identifiers
 
-1. In the Intune portal, choose **Device enrollment** > **Enrollment Restrictions**, choose **Corporate Device Identifiers**, and choose **Delete**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**.
+2. Select the device identifiers you want to delete, and choose **Delete**.
+3. Confirm the deletion.
 
-3. In the **Delete Identifiers** blade, brows to the .csv file of device IDs to delete, and then click **Delete**.
+Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices** > **All devices**, select the device, choose **Properties**, and change **Device ownership**.
 
 ## IMEI specifications
 For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).

@@ -58,7 +58,7 @@ In Configuration Manager version 1610 or later and Microsoft Intune version 1705
 
 ## Enable device enrollment
 
-With Intune set as your MDM authority, users can enroll personally owned devices and gain access to resources like email in the following ways by installing the Company Portal (iOS and Android), adding work credentials (Windows), or accessing the company portal website (iOS, Android, macOS).
+With Intune set as your MDM authority, users can enroll personally owned devices and gain access to resources like email in the following ways by installing the Company Portal (iOS and Android), adding work credentials (Windows), or accessing the Company Portal website (iOS, Android, macOS).
 
 Different platforms have the following requirements to enable or simplify enrollment:
 - **iOS** - (required) [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md) and then [enable enrollment for company-owned iOS devices](ios-enroll.md) (optional).
