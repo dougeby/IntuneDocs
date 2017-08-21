@@ -45,8 +45,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 
 
+## Week of August 21, 2017
+### App management
+#### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 
-
+End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
 
 ## Week of July 31, 2017
 ### Device enrollment  
