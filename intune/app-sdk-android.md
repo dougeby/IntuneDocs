@@ -675,6 +675,7 @@ Intune allows you to utilize all the [Auto Backup features](https://developer.an
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
 	```
 
+
 2. **[Optional]** If you implemented an optional custom BackupAgent, you need to make sure to use MAMBackupAgent or MAMBackupAgentHelper. See the following sections. Consider switching to using Intune's **MAMDefaultFullBackupAgent** (described in step 1) which provides easy back up on Android M and above.
 
 3. When you decide which type of full backup your app should receive (unfiltered, filtered, or none) you'll need to set the attribute `android:fullBackupContent`  to true, false, or an XML resource in your app.
@@ -1392,8 +1393,6 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 
  The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
 
-
-
 ## Expectations of the SDK consumer
 
 The Intune SDK maintains the contract provided by the Android API, though failure conditions may be triggered more frequently as a result of policy enforcement. These Android best practices will reduce the likelihood of failure:
@@ -1405,6 +1404,13 @@ The Intune SDK maintains the contract provided by the Android API, though failur
 * Any derived functions must call through to their super class versions.
 
 * Avoid use of any API in an ambiguous way. For example, using `Activity.startActivityForResult` without checking the requestCode will cause strange behavior.
+
+## Telemetry
+
+The Intune App SDK for Android does not control data collection from your app. By default, the Company Portal application logs telemetry data on the following usage events. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII).
+
+> [!NOTE]
+> If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## Recommended Android best practices
 
