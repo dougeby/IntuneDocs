@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The endpoint protection profile let you control security features on Windows 10 devices, like BitLocker.
+The endpoint protection profile let you control security features on Windows 10 devices, like BitLocker, and Windows Defender.
 
 Use the information in this topic to learn how to create endpoint protection profiles.
 
@@ -50,7 +50,12 @@ Use the information in this topic to learn how to create endpoint protection pro
 
 The profile is created and appears on the profiles list blade.
 
-## Endpoint protection profile settings reference
+## Windows Defender SmartScreen settings
+
+- **SmartScreen for apps and files** - Enable Windows SmartScreen for file execution, and running apps.
+- **Unverified files execution** - Block the end user from running files that have not been verified by Windows SmartScreen.
+
+## Windows encryption settings
 
 ### Windows Settings
 
