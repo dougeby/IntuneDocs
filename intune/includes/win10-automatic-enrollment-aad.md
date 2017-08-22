@@ -9,7 +9,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 
 ### Configure automatic MDM enrollment
 
-1. Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com), and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
 
   ![Screenshot of the Azure portal](../media/auto-enroll-azure-main.png)
 
