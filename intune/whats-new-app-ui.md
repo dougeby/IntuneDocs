@@ -36,11 +36,11 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to the m
 
 **Previous experience**
 
-![old interface](\media\NewUI_Old_AttachFileHandler.jpg)
+![old interface](media\NewUI_Old_AttachFileHandler.jpg)
 
 **Modern experience**
 
-![modern interface](\media\NewUI_Modern_AttachFileHandler.jpg)
+![modern interface](media\NewUI_Modern_AttachFileHandler.jpg)
 
 ## Week of August 14, 2017
 
