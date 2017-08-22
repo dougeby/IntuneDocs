@@ -36,27 +36,22 @@ Getting access to your organization’s apps, data, and resources makes it possi
   > [!NOTE]
   > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
 
-1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](http://portal.manage.microsoft.com).
-2. Log into the Company Portal website with your work or school account.
+1. On your __Dock__, find __Safari__ and open the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55770) page for the Company Portal app for macOS.
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+2. Download the app. Safari will check to make sure that the download of **CompanyPortal.dmg** is safe to open. After you open it from your **Downloads** folder, drag the **CompanyPortal** app on to the **Applications** folder.
 
-3. When you log in, you will see a screen prompting you to enroll your device by installing the Company Portal app. Click the **GET THE APP** button in the middle of the screen that downloads the app.
+3. Open your **Applications** folder or the **Launchpad**, then open **Company Portal**.
 
-4. Safari will check to make sure that the download of **CompanyPortal.dmg** is safe to open. After you open it from your **Downloads** folder, drag the **CompanyPortal** app on to the **Applications** folder.
-
-5. Open your **Applications** folder or the **Launchpad**, then open **Company Portal**.
-
-6. Your Mac will show you a message that says, **"CompanyPortal" is an application downloaded from the Internet. Are you sure you want to open it?** Click **Open**.
+4. Your Mac will show you a message that says, **"CompanyPortal" is an application downloaded from the Internet. Are you sure you want to open it?** Click **Open**.
 
   > [!NOTE]
   > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. If your computer refuses to open the Company Portal app, try [turning off Gatekeeper](https://support.apple.com/HT202491) and then opening the app.
 
-7. The first screen you see in the Company Portal app prompts you to **Sign In** with the same work or school account you used to log in to the Company Portal website.
+6. The first screen you see in the Company Portal app prompts you to **Sign In** with the same work or school account you used to log in to the Company Portal website.
 
-8. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you'll need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+7. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you'll need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-9. Your Mac will begin enrolling into management. You may be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer.
+8. Your Mac will begin enrolling into management. You may be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer.
 
   > [!NOTE]
   > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. Find out [what happens when you enroll your device in Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
