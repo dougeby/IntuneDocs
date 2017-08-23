@@ -50,11 +50,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of August 21, 2017
 
 ### Device enrollment
-## Improvements to device overview <!-- 1404453 -->  
+#### Improvements to device overview <!-- 1404453 -->  
 Improvements to the device overview now display enrolled devices but excludes devices managed by Exchange ActiveSync. Exchange ActiveSync devices do not have the same management options as enrolled devices. To view the number of enrolled devices and number of enrolled devices by platform in Intune in the Azure portal, go **Devices** > **Overview**.
 
 ### Device management
-## Improvements to device inventory collected by Intune
+#### Improvements to device inventory collected by Intune
 <!-- 961134, 1104426, 1281327, 1333543 -->
 In this release, we’ve made the following improvements to the inventory information collected by devices you manage:
  
@@ -66,14 +66,14 @@ Additionally, you can use the filter pane to search for devices by phone number.
  
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
 
-## New device restriction settings for Windows 10    
+#### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
 In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
 
 -   Windows Defender SmartScreen
 -   App store
 
-### Updates to the Windows 10 endpoint protection device profile for BitLocker settings
+#### Updates to the Windows 10 endpoint protection device profile for BitLocker settings
 <!--1459533 -->    
 In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
  
@@ -87,7 +87,7 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
 
-### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
+#### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
 End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
  
 - Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
