@@ -37,22 +37,22 @@ The **Devices** workload gives you insights into the devices you manage, and let
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
-4. You can view information about devices and perform the remote device actions listed. 
+4. You can view information about devices and perform the remote device actions listed.
 
 ## Available device actions
 The actions available depend on the device platform, and the configuration of the device.
 
 - [View device inventory](device-inventory.md)
 - Perform remote device actions:
-	- [Remove company data](device-company-data-remove.md)
-	- [Factory reset](device-factory-reset.md)
-	- [Remote lock](device-remote-lock.md)
+	- [Remove company data](devices-wipe.md#remove-company-data)
+	- [Factory reset](devices-wipe.md#factory-reset)
+	- [Remote lock](device-remote-lock.md) 
 	- [Reset passcode](device-passcode-reset.md)
-	- [Bypass Activation Lock](device-activation-lock-bypass.md)
-	- [Fresh Start](device-fresh-start.md)
-	- [Lost mode](device-lost-mode.md)
-	- [Locate device](device-locate.md)
-	- [Restart](device-restart.md)
+	- [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
+	- [Fresh Start](device-fresh-start.md) (Windows only)
+	- [Lost mode](device-lost-mode.md) (iOS only)
+	- [Locate device](device-locate.md) (iOS only)
+	- [Restart](device-restart.md) (Windows only)
 	- [Windows 10 PIN reset](device-windows-pin-reset.md)
 	- [Remote control for Android](device-profile-android-teamviewer.md)
 	- [Synchronize device](device-sync.md)
