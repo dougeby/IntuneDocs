@@ -13,7 +13,8 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -31,10 +32,10 @@ ms.custom: intune-enduser
 
 [!INCLUDE[macos-preview-1708](./includes/macos-preview-1708.md)]
 
-Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+.
+Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+.
 
   > [!NOTE]
-  > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
+  > If you want to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
 
 1. On your __Dock__, find __Safari__ and open the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55770) page for the Company Portal app for macOS.
 
@@ -51,6 +52,6 @@ Getting access to your organization’s apps, data, and resources makes it possi
 
 7. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you'll need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-8. Your Mac will begin enrolling into management. You may be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer. A message appears once you've completed Company Access Setup to let you know you're done.
+8. Your Mac will begin enrolling into management. You might be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer. A message appears once you've completed Company Access Setup to let you know you're done.
 
 Still need help? Check in with your IT administrator. You can find their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
