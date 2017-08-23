@@ -86,7 +86,7 @@
 
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
 ### [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [Reset your device](reset-erase-your-device-cpwebsite.md)
+### [Reset your device](reset-erase-your-device-cpwebsite.md)
 
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
