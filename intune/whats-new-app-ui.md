@@ -28,6 +28,7 @@ ms.custom: intune-classic
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
+
 ## Week of August 14, 2017
 
 ### Updates to the "Device Details" page on the Company Portal app for Windows 10

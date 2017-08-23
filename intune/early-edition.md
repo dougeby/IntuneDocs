@@ -62,15 +62,12 @@ We are adding new [device restriction settings](device-restrictions-android.md) 
 You can specify the app by URL, package name or from the list of apps you manage.
 
 ### New settings for Windows 10 device restriction profile
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
 
 For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
 
-### New device restriction settings for Windows 10   <!-- 1063965 -->
-We are adding new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
-- Windows Defender SmartScreen
-- App store
+
 
 
 ### Android for Work support for Lookout <!-- 1087312 -->   
@@ -125,8 +122,6 @@ End users will soon not have to enroll their device to access the Company Portal
 ### Improved error message for when a user reaches the maximum number of devices allowed to enroll <!-- 1270370 -->
 Instead of a generic error message, end users see a friendly, actionable error message: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin."
 
-### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
-End users will be able to browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user will no longer receive a prompt to enroll the device. 
 
 ### Inform end users what device information can be seen for iOS <!--739894-->
 We are adding **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This allows users to find out more about privacy directly from this page from the Intune end-user docs. They will also be able to locate this information on the About screen.
