@@ -30,9 +30,9 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 ## Week of August 21, 2017
 
-## Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
+### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
 
-Intune Mobile Application Management (MAM) dialog boxes will be updated to the modern look-and-feel. The dialog boxes will function in the same way as the previous style.
+Intune Mobile Application Management (MAM) dialog boxes will be updated to the modern look and feel. The dialog boxes will function in the same way as the previous style.
 
 **Previous experience**
 
