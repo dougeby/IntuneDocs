@@ -52,7 +52,7 @@ The Company Portal app for Windows 10 is moving the __Category__ tag from below 
 
 ## Week of July 31, 2017
 
-### ### Apps details pages will display new information for Android devices <!--1287476-->
+### Apps details pages will display new information for Android devices <!--1287476-->
 
 The apps details page of the Company Portal app for Android will now display the app categories that the IT admin has defined for that app.
 
