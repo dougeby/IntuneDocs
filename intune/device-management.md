@@ -5,10 +5,10 @@ title: Manage devices with Intune
 titleSuffix: "Intune on Azure"
 description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,14 @@ The **Devices** workload gives you insights into the devices you manage, and let
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
-4. Now, you can perform the remote device actions listed. The actions available depend on the device platform, and the configuration of the device:
+4. You can view information about devices and perform the remote device actions listed. 
 
 ## Available device actions
+The actions available depend on the device platform, and the configuration of the device.
 
 - [View device inventory](device-inventory.md)
 - Perform remote device actions:
-	- [Remove company data](device-company-data-remove.md) 
+	- [Remove company data](device-company-data-remove.md)
 	- [Factory reset](device-factory-reset.md)
 	- [Remote lock](device-remote-lock.md)
 	- [Reset passcode](device-passcode-reset.md)
@@ -59,5 +60,5 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 ## Next steps
 
-- Choose **Device Actions** to see the status of actions taken on devices you manage. 
+- Choose **Device Actions** to see the status of actions taken on devices you manage.
 ![Monitor device actions](./media/monitor-device-actions.png)
