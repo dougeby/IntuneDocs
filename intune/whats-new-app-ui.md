@@ -44,7 +44,7 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 
 ## Week of August 14, 2017
 
-### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---####--->
+### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
 
 The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
 
@@ -153,7 +153,7 @@ Based on user feedback, the Company Portal app for Android has added a new menu 
 
 ## Week of June 5, 2017
 
-### Improvements to the app tiles in the Company Portal app for iOS
+### Improvements to the app tiles in the Company Portal app for iOS <!--1230777-->
 We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal.
 
 **Before**
