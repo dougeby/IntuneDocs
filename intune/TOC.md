@@ -17,11 +17,12 @@
 ## [Known issues](known-issues.md)
 ## [Get support](get-support.md)
 
-# [Get started](get-started-evaluation.md)
-## [Create a group](get-started-groups.md)
+# [Get started with Intune](get-started-evaluation.md)
+## [Navigating the Azure portal](get-started-azure.md)
 ## [Create a user](get-started-users.md)
-## [Enroll devices](get-started-enroll.md)
+## [Create a group](get-started-groups.md)
 ## [Assign policies](get-started-policies.md)
+## [Enroll devices](get-started-enroll.md)
 ## [Assign apps](get-started-apps.md)
 
 
@@ -74,6 +75,7 @@
 #### [Restrictions](enrollment-restrictions-set.md)
 #### [Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 #### [Corporate identifiers](corporate-identifiers-add.md)
+#### [Multi-factor authentication](multi-factor-authentication.md)
 #### [Device enrollment manager](device-enrollment-manager-enroll.md)
 #### [Map devices to groups](device-group-mapping.md)
 ### Set up Windows enrollment
@@ -87,7 +89,7 @@
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
-### [Wipe device](devices-wipe.md)
+### [Remove devices](devices-wipe.md)
 ### [Bypass activation lock](device-activation-lock-bypass.md)
 ### [Factory reset device](device-factory-reset.md)
 ### [Manage Windows Fresh Start](device-fresh-start.md)
@@ -115,7 +117,7 @@
 #### [Web apps](web-app.md)
 #### [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)
 #### [Windows Phone LOB apps](lob-apps-windows-phone.md)
-#### [Windows Store apps](store-apps-windows.md)
+#### [Microsoft Store apps](store-apps-windows.md)
 #### [Windows LOB apps](lob-apps-windows.md)
 #### [Android for Work apps](apps-add-android-for-work.md)
 #### [Office 365 apps for Windows 10](apps-add-office365.md)
@@ -127,7 +129,7 @@
 ### [Selectively wipe apps](apps-selective-wipe.md)
 ### [Work with volume-purchased apps and books](vpp-apps.md)
 #### [iOS VPP apps](vpp-apps-ios.md)
-#### [Windows Store for Business apps](windows-store-for-business.md)
+#### [Microsoft Store for Business apps](windows-store-for-business.md)
 #### [iOS eBooks](vpp-ebooks-ios.md)
 ### [Configure the Company Portal app](company-portal-app.md)
 ### [Configure the Managed Browser](app-configuration-managed-browser.md)
@@ -173,7 +175,6 @@
 ### [Configure iOS education settings](education-settings-configure-ios.md)
 ### [Configure iOS education shared devices](education-settings-configure-ios-shared.md)
 ### [Configure iOS update policies](software-updates-ios.md)
-### [Configure Windows Update for Business settings](windows-update-for-business-configure.md)
 ### [Configure certificates](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -235,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [Manage roles](role-based-access-control.md)
-
+## [Manage software updates](windows-update-for-business-configure.md)
 
 ## [Manage PCs with software agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Compare PC management](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
@@ -263,7 +264,7 @@
 ### [How to get Windows apps](end-user-apps-windows.md)
 
 # Monitor and troubleshoot
-## [Use the helpdesk operator role](help-desk-operators.md)
+## [Help users troubleshoot problems](help-desk-operators.md)
 ## [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md)
 ### [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)
 
@@ -290,8 +291,8 @@
 ### [Intune App SDK Xamarin component](app-sdk-xamarin.md)
 ## [How to use Intune Graph APIs](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune Date Warehouse API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+## [Intune Data Warehouse API](reports-nav-intune-data-warehouse.md)
+### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
 ### [Data Warehouse API endpoint](reports-api-url.md)
 ### [Data Warehouse data model](reports-ref-data-model.md)
 #### [Reference for Date entity](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [Reference for devices entities](reports-ref-devices.md)
 #### [Reference for application entities](reports-ref-application.md)
 #### [Reference for policy entities](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Glossary](intune-glossary.md)

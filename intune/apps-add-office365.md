@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,7 +41,7 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 - Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
 - If any Office apps are open when Intune installs the app suite, end users might lose data from unsaved files.
 - This installation method is not supported on Windows 10S devices.
-- If you assign this app type as Available and target multiple users with the different assignments, they will only see the most recently targeted assignment.
+- Intune does not support installing Office 365 desktop apps from the Windows Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
 
 
 ## Get started

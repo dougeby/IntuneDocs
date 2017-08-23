@@ -78,7 +78,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Privacy
 
--	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Windows Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
+-	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
 
 
@@ -97,12 +97,12 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 ## App Store
 
 - 	**App store (mobile only)** - Enable or block use of the app store on Windows 10 Mobile devices.
-- 	**Auto-update apps from store** - Allows apps installed from the Windows Store to be automatically updated.
+- 	**Auto-update apps from store** - Allows apps installed from the Microsoft Store to be automatically updated.
 - 	**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.
 - 	**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
 - 	**Shared user app data** - Allows apps to share data between different users on the same device.
 - 	**Use private store only** - Enable this to only allow end users to download apps from your private store.
-- 	**Store originated app launch** - Used to disable all apps that were pre-installed on the device, or downloaded from the Windows Store.
+- 	**Store originated app launch** - Used to disable all apps that were pre-installed on the device, or downloaded from the Microsoft Store.
 - 	**Install app data on system volume** - Stops apps from storing data on the system volume of the device.
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.

@@ -5,8 +5,8 @@ title: Use Intune app configuration policies for Android for Work
 titleSuffix: "Intune on Azure"
 description: Learn how to use app configuration policies to provide configuration data to an Android for Work app when it is run."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/12/2017
 ms.topic: article

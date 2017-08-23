@@ -5,8 +5,8 @@ title: How to assign apps to groups
 titleSuffix: "Intune on Azure"
 description: Once you've added an app to Intune, you'll want to assign it to groups of users or devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article

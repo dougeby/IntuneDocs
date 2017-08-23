@@ -4,7 +4,8 @@
 title: Sideload apps for Windows and Windows Phone 
 description: Learn how to sign line of business apps so you can use Intune to deploy them.
 keywords:
-author: robstackmsft
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -71,7 +72,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
 
 ## Example: Download, sign, and deploy the Company Portal app for Windows devices
 
-You can deploy the Company Portal app to Windows devices, including Windows Phone and Windows 10 Mobile devices, with Intune instead of installing from the Windows Store. You must download the Company Portal app and sign it with your certificate.  This is only necessary if your users won't use the Company Store and you want to deploy the Company Portal to Windows Phone 8.1 devices.
+You can deploy the Company Portal app to Windows devices, including Windows Phone and Windows 10 Mobile devices, with Intune instead of installing from the Microsoft Store. You must download the Company Portal app and sign it with your certificate.  This is only necessary if your users won't use the Company Store and you want to deploy the Company Portal to Windows Phone 8.1 devices.
 
 
 1.  **Download the Company Portal**
@@ -82,7 +83,7 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
     -   WinPhoneCompanyPortal.ps1 – A PowerShell script you can use to sign the Company Portal app file so it can be deployed to Windows Phone 8.1 devices
 
-    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Windows Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Microsoft Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Download the Windows Phone SDK**
     Download the Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) and install the SDK to your computer. This SDK is needed to generate an application enrollment token.
@@ -155,12 +156,12 @@ The Symantec certificate used to deploy Windows and Windows Phone mobile apps mu
 5.  Sign all new and any updated enterprise line-of-business apps using the new certificate. Existing applications do not need to be resigned and redeployed.
 
 ## Manually deploy Windows 10 Company Portal app
-You can manually deploy the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Windows Store for Business.
+You can manually deploy the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Microsoft Store for Business.
 
  > [!NOTE]
  > This option will require deploying manual updates each time an app update is released.
 
-1. Log in to your account in the [Windows Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
+1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
 ![Image of Windows 10 all devices and Architecture X86 Package details for Download](./media/Win10CP-all-devices.png)
@@ -197,7 +198,7 @@ If the Windows 10 Company Portal app is signed and deployed in this way, you wil
 Here’s how you sign and deploy the app in this way:
 
 1. Download the Microsoft Intune Windows 10 Company Portal App Signing Script from [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  This script requires the Windows SDK for Windows 10 to be installed on the host computer. To download the Windows SDK for Windows 10, visit [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Download the Windows 10 Company Portal app from the Windows Store for Business, as detailed above.  
+2. Download the Windows 10 Company Portal app from the Microsoft Store for Business, as detailed above.  
 3. Run the script with the input parameters detailed in the script header to sign the Windows 10 Company Portal app (extracted below). Dependencies do not need to be passed into the script. These are only required when the app is being uploaded to the Intune Admin Console.
 
 |Parameter | Description|

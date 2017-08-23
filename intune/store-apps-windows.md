@@ -4,8 +4,8 @@
 title: How to add Windows store apps to IntunetitleSuffix: "Intune on Azure"
 description: Learn about adding Windows store apps to Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -55,12 +55,12 @@ ms.custom: intune-azure
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
 ## Manually assign Windows 10 Company Portal app
-End users can install the Company Portal app from the Windows Store to manage devices and install apps. If, however, your business needs require that you assign the Company Portal app, you can manually assign the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Windows Store for Business.
+End users can install the Company Portal app from the Microsoft Store to manage devices and install apps. If, however, your business needs require that you assign the Company Portal app, you can manually assign the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Microsoft Store for Business.
 
  > [!NOTE]
  > This option will require assigning manual updates each time an app update is released.
 
-1. Log in to your account in the [Windows Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
+1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
 ![Image of Windows 10 all devices and Architecture X86 Package details for Download](./media/Win10CP-all-devices.png)
@@ -97,7 +97,7 @@ If the Windows 10 Company Portal app is signed and assigned in this way, you wil
 Here’s how you sign and assign the app in this way:
 
 1. Download the Microsoft Intune Windows 10 Company Portal App Signing Script from [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  This script requires the Windows SDK for Windows 10 to be installed on the host computer. To download the Windows SDK for Windows 10, visit [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Download the Windows 10 Company Portal app from the Windows Store for Business, as detailed above.  
+2. Download the Windows 10 Company Portal app from the Microsoft Store for Business, as detailed above.  
 3. Run the script with the input parameters detailed in the script header to sign the Windows 10 Company Portal app (extracted below). Dependencies do not need to be passed into the script. These are only required when the app is being uploaded to the Intune Admin Console.
 
 |Parameter | Description|

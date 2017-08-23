@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,12 +32,24 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Reset passcode** action generates a new passcode for the device which will be displayed on the <*device name*> **Overview** blade.
+The **Reset passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.
+
+## Supported platforms
+
+- Windows - Not supported
+- Windows Phone - Supported on Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later
+- iOS - Supported
+- macOS - Not supported
+- Android - Supported on Android versions earlier than Android 7. Android for Work is not supported.
+
+## How to reset a passcode
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices and groups** blade, choose **All devices**.
 5. From the list of devices you manage, choose a device, and then choose the **Reset passcode** device remote action.
+
+## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.

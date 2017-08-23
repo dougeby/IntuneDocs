@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,9 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use these settings with an Android device restriction policy to configure devices in your organization.
+
+>[!TIP]
+>If the settings you want are not available, you might be able to configure your devices using a [custom profile](custom-settings-android.md). 
 
 ## General
 
@@ -138,3 +141,8 @@ Kiosk settings apply to Samsung KNOX Standard devices only.
 	- **Add managed apps**.
 - **Screen sleep button** - Enables or disables the screen sleep wake button on the device.
 - **Volume buttons** - Enables or disables the use of the volume buttons on the device.
+
+
+## Next steps
+
+Continue using the instructions in [How to configure device restriction settings](device-restrictions-configure.md) to create, then assign the device restriction profile.

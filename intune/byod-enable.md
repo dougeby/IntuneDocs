@@ -81,14 +81,14 @@ With Intune, it is easy to:
 * [Deliver store apps to managed devices](apps-deploy.md)
 * Target apps to unmanaged devices using the company portal website
 
-Intune also allows you to manage and deploy apps that you purchased in volume from the iOS app store and the Windows Store for Business. This helps you reduce the administrative overhead of tracking volume-purchased apps.
+Intune also allows you to manage and deploy apps that you purchased in volume from the iOS app store and the Microsoft Store for Business. This helps you reduce the administrative overhead of tracking volume-purchased apps.
 
 > [!TIP]
 > You can [configure Single Sign On (SSO) with Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). SSO lets users sign into apps with the domain user name and password they use on-premises. Also, you can [provide internet-based access to web apps hosted on-premises](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) using the Azure Active Directory Application Proxy.
 
 -   [Manage volume-purchased apps for iOS devices](vpp-apps-ios.md). You buy multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). You need to set up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune. You can then synchronize your volume-purchase information with Intune and track your volume-purchased app use.
 
--   [Manage apps purchased from the Windows Store for Business](windows-store-for-business.md). The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
+-   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
 
 ## Protect company data
 
@@ -111,10 +111,10 @@ You can use [Intune app protection policies](app-protection-policies.md) to help
 
 Use [Windows Information Protection (WIP) policies](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
 
-### Wipe company data while leaving personal data intact
+### Remove company data while leaving personal data intact
 
-When a device is no longer needed for work, is being repurposed, or has just gone missing, you can remove company apps and data from it. To do this, you can use Intune's selective wipe and full wipe capabilities. Your users can also remotely wipe their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
+When a device is no longer needed for work, is being repurposed, or has just gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
 
-A [full wipe](devices-wipe.md) restores a device to its factory default settings and removes user data and settings. A [selective wipe](devices-wipe.md#selective-wipe) removes only company data from the device but leaves users’ personal data intact.
+A [factory reset](devices-wipe.md) restores a device to its factory default settings, removes user data and settings, and removes the device from Intune management. [Remove company data](devices-wipe.md#remove-company-data) removes only company data from the device but leaves users’ personal data intact.
 
-Once initiated, the device immediately begins the selective wipe process to be removed from management. When the process is complete, all company data is deleted and the device name is removed from the Intune portal. This ends the device management lifecycle.
+Once initiated, the device immediately begins the reset process. When the process is complete, all company data is deleted and the device name is removed from the Intune. This ends the device management lifecycle.
