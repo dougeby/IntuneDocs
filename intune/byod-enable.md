@@ -109,11 +109,11 @@ With Intune app protection policies, you can choose how your data is accessed, w
 
 You can use [Intune app protection policies](app-protection-policies.md) to help protect company data that is accessed by iOS and Android devices. When you use these app-level policies, you can control how company data is used and shared by employees even if the device itself isn’t managed by Intune
 
-Use [Windows Information Protection (WIP) policies](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
+Use [Windows Information Protection (WIP) gopolicies](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
 
 ### Remove company data while leaving personal data intact
 
-When a device is no longer needed for work, is being repurposed, or has gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
+When a device is no longer needed for work, is being repurposed, or has gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devicesgit  are enrolled in Intune.
 
 A [factory reset](devices-wipe.md) restores a device to its factory default settings, removes user data and settings, and removes the device from Intune management. [Remove company data](devices-wipe.md#remove-company-data) removes only company data from the device but leaves users’ personal data intact.
 
