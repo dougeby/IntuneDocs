@@ -66,6 +66,10 @@ Additionally, you can use the filter pane to search for devices by phone number.
  
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
 
+#### Conditional access support for Mac devices 
+<!-- 720172 -->
+You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
+
 #### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
 In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
