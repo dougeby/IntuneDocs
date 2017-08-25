@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -106,7 +106,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 - 	**Install app data on system volume** - Stops apps from storing data on the system volume of the device.
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.
-- 	**Apps from store only** - Configures whether users can install apps from places other than the app store.
+- 	**Apps from the store only** - Configures whether users can install apps from places other than the app store.
 
 
 
