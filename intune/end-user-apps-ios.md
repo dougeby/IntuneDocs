@@ -37,9 +37,9 @@ Use this information to understand how and where your end users get the apps tha
 
 **Available apps**--Apps that are provided in the Company Portal app list and that a user may optionally choose to install.
 
-**Managed apps**--Apps that can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune Mobile Application Management (MAM) Software Development Kit (SDK). These apps can be managed by Intune, and application policies can be applied to them.
+**Managed apps**--Apps that can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune App Software Development Kit (SDK). These apps can be managed by Intune, and app protection policies can be applied to them.
 
-**Unmanaged apps**--Apps that can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
+**Unmanaged apps**--Apps that can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune App SDK. Application policies cannot be applied to these apps.
 
 Apple restrictions prohibit line-of-business and managed App Store apps from being listed in the Company Portal app. To get around this issue, the tiles in the Company Portal app for iOS point users to different views in a single location (the Company Portal website) for all of their apps.
 

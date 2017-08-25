@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Prepare Android apps for mobile application management with the Intune App Wrapping Tool
+# Prepare Android apps for app protection policies with the Intune App Wrapping Tool
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
