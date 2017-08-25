@@ -29,7 +29,7 @@ ms.suite: ems
 
 This topic provides a high-level workflow for setting up Intune to enable a bring-your-own-device (BYOD) solution to your organization. It organizes the task into three processes and links to supporting how-to topics.
 
-The workflow is divided into the following three processes: You can tailor aspects of each process to meet your organization’s requirements.
+The workflow is divided into the following three processes. You can tailor aspects of each process to meet your organization’s requirements.
 
 -   **[Enroll devices and check for compliance](#enroll-devices-and-check-for-compliance)** describes how to enable users to enroll their personal devices into management with Intune. Intune manages iOS, macOS, Android, and Windows devices. This section also describes how to deploy policies to devices and ensure they meet basic security requirements.
 
@@ -54,7 +54,7 @@ After you prepare the Intune service, you need to meet the various enrollment re
 
 -   **Android devices** There's nothing you need to do to get the Intune service ready to enroll Android devices. Users can just [enroll their Android devices](/intune-user-help/enroll-your-device-in-intune-android) into management using the Company Portal app available from Google Play.
 
--   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simply the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
+-   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simplify the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
 
 
 ### Make sure that managed devices meet basic security requirements
@@ -92,7 +92,7 @@ Intune also allows you to manage and deploy apps that you purchased in volume fr
 
 ## Protect company data
 
-Intune protects company data through many technology layers. At the identity layer, conditional access protects access to services. Conditional access only allows managed and compliant devices to access company resources. At the client app layer, app protection policies protects data loss.  App protection policies prevent data from moving to apps or storage locations that are not protected. These policies also let you wipe company data when a device is lost or stolen.
+Intune protects company data through many technology layers. At the identity layer, conditional access protects access to services. Conditional access only allows managed and compliant devices to access company resources. At the client app layer, app protection policies protects against data loss. App protection policies prevent data from moving to apps or storage locations that are not protected. These policies also let you wipe company data when a device is lost or stolen.
 
 ### Enforce conditional access to company resources
 
@@ -109,11 +109,11 @@ With Intune app protection policies, you can choose how your data is accessed, w
 
 You can use [Intune app protection policies](app-protection-policies.md) to help protect company data that is accessed by iOS and Android devices. When you use these app-level policies, you can control how company data is used and shared by employees even if the device itself isn’t managed by Intune
 
-Use [Windows Information Protection (WIP) gopolicies](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
+Use [Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) to do the same for managed Windows 10 devices. These policies work without interfering with the employee experience. They do not require changes to your network environment or other apps.
 
 ### Remove company data while leaving personal data intact
 
-When a device is no longer needed for work, is being repurposed, or has gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devicesgit  are enrolled in Intune.
+When a device is no longer needed for work, is being repurposed, or has gone missing, you can remove company apps and data from it. To do this, you can use Intune's remove company data and factory reset capabilities. Your users can also remotely reset their own personally owned devices from the Intune Company Portal if those devices are enrolled in Intune.
 
 A [factory reset](devices-wipe.md) restores a device to its factory default settings, removes user data and settings, and removes the device from Intune management. [Remove company data](devices-wipe.md#remove-company-data) removes only company data from the device but leaves users’ personal data intact.
 
