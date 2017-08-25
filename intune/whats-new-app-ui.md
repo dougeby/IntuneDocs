@@ -42,6 +42,7 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 
 ![modern interface](media\NewUI_Modern_AttachFileHandler.jpg)
 
+
 ## Week of August 14, 2017
 
 ### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
