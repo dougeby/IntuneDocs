@@ -57,9 +57,9 @@ If this occurs, the Company Portal app will inform and directly guide the end us
 
 Apps can be managed or unmanaged, as described below. The process of making apps managed is the same for all types of Android devices.
 
-**Managed apps** - These are apps that can be managed through policies. They have been "wrapped" by Intune or built with the Intune Mobile Application Management (MAM) Software Development Kit (SDK). These apps can be managed by Intune, and application policies can be applied to them.
+**Managed apps** - These are apps that can be managed through policies. They have been "wrapped" by Intune or built with the Intune App SDK. These apps can be managed by Intune, and application policies can be applied to them.
 
-**Unmanaged apps** - These are apps that cannot be managed through policies. They have not been wrapped by Intune or do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
+**Unmanaged apps** - These are apps that cannot be managed through policies. They have not been wrapped by Intune or do not incorporate the Intune App SDK. Application policies cannot be applied to these apps.
 
 ### See also
 [Add apps with Microsoft Intune](apps-add.md)

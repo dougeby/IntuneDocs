@@ -37,9 +37,9 @@ Use this information to understand how and where your users get the apps that yo
 
 **Available apps** are provided in the Company Portal app list and that a user might choose to install.
 
-**Managed apps** can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune Mobile Application Management (MAM) Software Development Kit (SDK). These apps can be managed by Intune, and application policies can be applied to them.
+**Managed apps** can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune App Software Development Kit (SDK). These apps can be managed by Intune, and app protection policies can be applied to them.
 
-**Unmanaged apps** can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
+**Unmanaged apps** can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune App SDK. App protection policies cannot be applied to these apps.
 
 ### See also
 [How your Android users get their apps](end-user-apps-android.md)
