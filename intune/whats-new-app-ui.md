@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-azure
 
 ---
 # UI updates for Intune end user apps
@@ -32,7 +32,7 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 ### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
 
-Intune Mobile Application Management (MAM) dialog boxes will be updated to the modern look and feel. The dialog boxes will function in the same way as the previous style.
+Intune Mobile Application Management (MAM) dialog boxes will be updated to a modern look and feel. The dialog boxes will function in the same way as the previous style.
 
 **Previous experience**
 
@@ -44,13 +44,19 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to the m
 
 ## Week of August 14, 2017
 
-### Updates to the "Device Details" page on the Company Portal app for Windows 10
+### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
 
 The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
 
 ![The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## Week of July 31, 2017
+
+### Apps details pages will display new information for Android devices <!--1287476-->
+
+The apps details page of the Company Portal app for Android will now display the app categories that the IT admin has defined for that app.
+
+![The new app details page](./media/cp_android_appdetails_after_1708.png)
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
@@ -147,7 +153,7 @@ Based on user feedback, the Company Portal app for Android has added a new menu 
 
 ## Week of June 5, 2017
 
-### Improvements to the app tiles in the Company Portal app for iOS
+### Improvements to the app tiles in the Company Portal app for iOS <!--1230777-->
 We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal.
 
 **Before**

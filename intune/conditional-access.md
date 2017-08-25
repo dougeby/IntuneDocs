@@ -44,7 +44,7 @@ You can define conditions that gate access to your corporate data based on locat
 
 ## Conditional access with Intune
 
-Intune adds mobile device compliance and mobile application management capabilities to support the EMS Conditional Access solution.
+Intune adds mobile device compliance and app management policies to support the EMS Conditional Access solution.
 
 ![Intune and conditional access when using EMS](./media/intune-with-ca-1.png)
 
