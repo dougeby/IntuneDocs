@@ -41,8 +41,7 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 **Modern experience**
 
 ![modern interface](media\NewUI_Modern_AttachFileHandler.jpg)
-=======
->>>>>>> 94682593a03112788049b9d2a0f7f97ca7f9cb83
+
 
 ## Week of August 14, 2017
 
