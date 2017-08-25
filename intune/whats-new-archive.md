@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 8/02/2017
+ms.date: 8/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,74 @@ ms.custom: intune-azure
 # What's new in the Microsoft Intune - previous months
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+## July 2017
+
+### Restrict Android and iOS device enrollment restriction by OS version  <!--- 1333256,  1245463 --->
+Intune now supports restricting iOS and Android enrollment by operating system version number. Under **Device Type Restriction**, the IT admin can now set a platform configuration to restrict enrollment between a minimum and maximum operating system value. Android operating system versions must be specified as Major.Minor.Build.Rev, where Minor, Build and Rev are optional. iOS versions must be specified as Major.Minor.Build where Minor and Build are optional. Learn more about [device enrollment restrictions](enrollment-restrictions-set.md).
+
+>[!NOTE]
+>Does not restrict enrollment through Apple enrollment programs or Apple Configurator.
+
+### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
+Intune can restrict personal device enrollment by white-listing corporate device IMEI numbers. Intune has now expanded this functionality to iOS, Android, and macOS using device serial numbers. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices. Learn more about [device enrollment restrictions](enrollment-restrictions-set.md).
+
+To import serial numbers, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file (no header, two columns for serial number and details like IMEI numbers).  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
+
+
+### New device action to force devices to sync with Intune <!-- 711369 -->
+In this release, we've added a new device action that forces the selected device to immediately check-in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it.  This action can help you to immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+For details, see [Synchronize device](device-sync.md)
+
+### Force supervised iOS devices to automatically install the latest available software update <!-- 777100 -->
+A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
+
+### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
+You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
+
+#### How integration with Intune works?
+Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block non-compliant devices access to corporate resources based on detected threats.
+
+
+### Deploy an app as available in the Microsoft Store for Business <!-- 748101 -->
+With this release, admins can now assign the Microsoft Store for Business as available. When set as available, end-users can install the app from the Company Portal app or website without being redirected to the Microsoft Store.
+
+### UI updates to the Company Portal website <!--1313244 part 1-->
+We made several updates to the UI of the [Company Portal website](https://portal.manage.microsoft.com) to enhance the end user experience.
+
+- __Enhancements to app tiles__:  App icons will now display with an automatically generated background based on the dominant color of the icon (if it can be detected). When applicable, this background replaces the gray border that was previously visible on app tiles.
+
+    The Company Portal website displays large icons whenever possible in an upcoming release. We recommend that IT admins publish apps using high-resolution icons with a minimum size of 120 x120 pixels. 
+
+- __Navigation changes__: Navigation bar items are moved to the hamburger menu in the top left. The Categories page is removed. Users can now filter content by category while browsing.
+
+- __Updates to Featured Apps__: We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
+
+### iBooks support for the Company Portal website <!--1231841-->
+We've added a dedicated page to the Company Portal website that allows users to browse and download iBooks. 
+
+
+### Additional help desk troubleshooting details <!---  Applies to 1263399, 1326964, 1341642 --->
+Intune has updated the troubleshooting display and added to the information that it provides for admins and help desk staff. You can now see an **Assignments** table that summarizes all assignments for the user based on group membership. This list includes:
+- Mobile apps
+- Compliance policies
+- Configuration profiles
+ 
+In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
+
+
+
+### Intune Data Warehouse (Public Preview)
+The Intune Data Warehouse samples data daily to provide a historical view of your tenant. You can access the data using a Power BI file (PBIX), an OData link that is compatible with many analytics tools, or interacting with the REST API. For more information, see [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md).
+
+
+### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->
+End users will be able to customize the color mode for the Company Portal app for Windows 10. The user is able to make the change in the Settings section of the Company Portal app. The change will appear after the user has restarted the app. For Windows 10 version 1607 and later, the app mode will default to the system setting. For Windows 10 version 1511 and earlier, the app mode will default to the light mode.
+
+### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->
+End users are now able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
+
+
 
 ## June 2017
 
@@ -386,53 +454,3 @@ You can now view the device category as a column in the device list. You can als
 Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
 By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For details, see [Configure Windows Update for Business settings](windows-update-for-business-configure.md).
-
-## January 2017
-
-### Assign line of business apps whether or not devices are enrolled <!--748823-->
-You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app. See [What is app management](app-management.md).
-
-### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](enrollment-troubleshoot.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
-
-## December 2016 (initial release)
-
-### Telecom expense management integration in Azure portal<!--747605-->
-We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
-
-- Deploy and manage apps from a store to iOS, Android, and Windows devices
-- Deploy and manage line of business (LOB) apps to iOS, Android, and Windows devices
-- Deploy and manage volume-purchased apps to iOS, and Windows devices
-- Deploy and manage web apps for Android, iOS, and Windows devices
-- iOS managed app configuration profiles
-- Configure app protection policies, and deploy line of business apps to devices that are not enrolled with Intune
-- VPN profiles, per-app VPN, Wi-Fi, email, and certificate profiles
-- Compliance policies
-- Conditional access for Azure AD
-- Conditional access for On-Premises Exchange
-- Device enrollment
-- Role-based access control
-
-## Deprecated features in the Azure portal
-
-### Support for row-by-row review of hardware identifiers
-The Azure portal does not support row-by-row review of hardware identifiers for IMEI numbers and Apple serial numbers. In the classic Intune console, you can import details from a comma-separated-values (.csv) file and overwrite the existing details for individual hardware identifiers. The Azure portal features a single, streamlined option that automatically overwrites details for all hardware identifiers or ignores new details for existing identifiers.
-
-#### How this affects you
-In the Azure portal, you will not be able to decide, row by row, which International Mobile Equipment Identity (IMEI) devices to update. The classic Intune console will continue to support this functionality.
-
-#### How to get ready for this change
-We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This change will coincide with the move to the Azure portal, anticipated for the first half of 2017.
-
-
-### Support for default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support the “default” Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers. This functionality, available in the classic Intune console, is being discontinued to prevent unintentionally assigned profiles. In the Azure portal, serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.
-
-#### How this affects you
-In the Azure portal, you will not be able to set a default profile policy across all Apple devices. The classic Intune console will continue to support this functionality.
-
-#### How to get ready for this change
-We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
-
-### See also
-See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
