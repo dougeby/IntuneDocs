@@ -34,9 +34,9 @@ If you decide to set up a device management system, you can. This type of app pr
 
 1. [Learn about conditional access](conditional-access.md). 
 2. [Learn about app-based conditional access](app-based-conditional-access-intune.md).
-3. [Set up app-based conditional access policies for Exchange Online](app-based-conditional-access-intune-exchange-online-create.md).
+3. [Set up app-based conditional access policies for Exchange Online](app-based-conditional-access-intune-create.md).
 4. [Block apps that cannot be managed](app-modern-authentication-block.md), specifically apps that do not use the Azure Active Directory Authentication Library (ADAL).
-5. (Optional) [Set up app-based conditional access policies for SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md). These policies block access to your company data from apps that cannot be managed and secured. The policies also limit access through SharePoint mobile. 
+5. (Optional) [Set up app-based conditional access policies for SharePoint Online](app-based-conditional-access-intune-create.md). These policies block access to your company data from apps that cannot be managed and secured. The policies also limit access through SharePoint mobile. 
 
 ## What to tell employees and students
 
