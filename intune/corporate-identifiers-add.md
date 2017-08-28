@@ -37,7 +37,7 @@ A device is identified as corporate-owned if any of the following conditions are
 - Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
 - Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
 - [Identified as corporate-owned before enrollment](#identify-corporate-owned-devices-with-imei-or-serial-number) with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
-- Registered in Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device (Windows 10 only)
+- Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device (Windows 10 only)
 - The device's properties list [device ownership as corporate](#change-device-ownership)
 
 ## Identify corporate-owned devices with IMEI or serial number
