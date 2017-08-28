@@ -68,7 +68,7 @@ The multi-identity feature helps solve the data protection problem that organiza
 ### App protection without device enrollment
 
 >[!IMPORTANT]
->Intune app protection without device enrollment is not yet available with the Intune App Wrapping Tools, Intune App SDK for Android, Intune App SDK for iOS, SDK Xamarin Component and SDK Cordova Plugin.
+>Intune app protection without device enrollment is available with the Intune App Wrapping Tools, Intune App SDK for Android, Intune App SDK for iOS, SDK Xamarin Component and SDK Cordova Plugin.
 
 Many users with personal devices want to access corporate data without enrolling their personal device with a Mobile Device Management (MDM) provider. Since MDM enrollment requires global control of the device, users are often hesitant to give control of their personal device over to their company.
 
