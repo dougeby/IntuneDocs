@@ -44,7 +44,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What's new
-- title: New articles
+- title: New articles and blog posts
   items:
   - type: paragraph
     text: 'Read the latest and greatest information you need to know.'
@@ -58,7 +58,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_portal.svg
     - href: ui-changes.md
-      title: See where your Intune features in the Azure portal 
+      title: See where your Intune features are in the Azure portal 
       image:
         src: https://docs.microsoft.com/media/common/i_guide.svg
     - href: high-level-architecture.md
@@ -81,9 +81,9 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
+    text: <iframe src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
   - type: markdown
-    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/Cn29dmgDcIw?list=PLXtHYVsvn_b-0X3R9QCJ4T-Y27DK376NR" frameborder="0" allowfullscreen></iframe>  
+    text: <iframe src="https://www.youtube.com/embed/Cn29dmgDcIw?list=PLXtHYVsvn_b-0X3R9QCJ4T-Y27DK376NR" frameborder="0" allowfullscreen></iframe>  
 
 
 - title: Planning articles 
