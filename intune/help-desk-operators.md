@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,6 @@ The troubleshooting portal lets help desk operators and Intune administrators vi
 For example, when a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues including:
 - User status
 - Assignments
-- App install failure
 - Compliance issues
 - Device not responding
 -	Device not getting VPN or Wi-Fi settings
