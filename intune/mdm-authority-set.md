@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -46,13 +46,13 @@ In Configuration Manager version 1610 or later and Microsoft Intune version 1705
 ## Set MDM authority to Intune
 
 1. In the [Azure portal](https://portal.azure.com), choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Device enrollment**, and then choose **Overview**.
-![Screenshot of Intune set mobile device management authority screen](media/set-mdm-auth.png)
-
+2. Select the orange banner to open the **Mobile Device Management Authority** setting.
 3. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
   - **Intune MDM Authority**
   - **Configuration Manager MDM Authority**
   - **None**
+
+  ![Screenshot of Intune set mobile device management authority screen](media/set-mdm-auth.png)
 
   A message indicates that you have successfully set your MDM authority to Intune.
 

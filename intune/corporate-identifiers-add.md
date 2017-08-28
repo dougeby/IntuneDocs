@@ -8,7 +8,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Add corporate identifiers
+# Identify devices as corporate-owned
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -36,15 +36,13 @@ A device is identified as corporate-owned if any of the following conditions are
 
 - Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
 - Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
-- Predeclared with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
-- Registered in Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device (Windows 10 only)
-- Specified **Corporate** in the device's **Properties**
+- [Identified as corporate-owned before enrollment](#identify-corporate-owned-devices-with-imei-or-serial-number) with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
+- Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device (Windows 10 only)
+- The device's properties list [device ownership as corporate](#change-device-ownership)
 
-Corporate-owned devices display **Corporate** in the **Ownership** column for their device records in Intune. To view, go **Devices** > **All devices**.
+## Identify corporate-owned devices with IMEI or serial number
 
-## Predeclare a device with IMEI or serial number
-
-As an Intune admin, you can create and import a comma-separated value (.csv) file that lists IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
+As an Intune admin, you can create and import a comma-separated value (.csv) file that lists IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate during device enrollment. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -86,7 +84,7 @@ This .csv file when viewed in a text editor appears as:
 
 Imported devices are not necessarily enrolled. Devices can have a state of either **Enrolled** or **Not contacted**. **Not contacted** means that the device has never communicated in with the Intune service.
 
-## Delete corporate identifiers
+### Delete corporate identifiers
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**.
 2. Select the device identifiers you want to delete, and choose **Delete**.
@@ -94,5 +92,16 @@ Imported devices are not necessarily enrolled. Devices can have a state of eithe
 
 Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices** > **All devices**, select the device, choose **Properties**, and change **Device ownership**.
 
-## IMEI specifications
+### IMEI specifications
 For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
+
+## Change device ownership
+
+Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**.
+
+**To change device ownership:**
+1. In Intune in the Azure portal, go **Devices** > **All devices**, and choose the device.
+3. Choose **Properties**.
+4. Specify **Device ownership** as **Personal** or **Corporate**.
+
+  ![Screenshot of device properties showing Device category and Device ownership options.](./media/device-properties.png)
