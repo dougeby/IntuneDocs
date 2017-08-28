@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Add corporate identifiers
+# Identify devices as corporate-owned
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
