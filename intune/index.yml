@@ -16,8 +16,7 @@ metadata:
 sections:
 - items:
   - type: markdown
-    text: |
-      Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected. Intune integrates with Azure Active Directory for identity and access control, and Azure Information Protection for data protection. 
+    text: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected. Intune integrates with Azure Active Directory for identity and access control, and Azure Information Protection for data protection. 
 - items:
   - type: list
     style: cards
@@ -44,7 +43,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: What's new
-- title: New articles
+- title: New articles and blog posts
   items:
   - type: paragraph
     text: 'Read the latest and greatest information you need to know.'
@@ -58,7 +57,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_portal.svg
     - href: ui-changes.md
-      title: See where your Intune features in the Azure portal 
+      title: See where your Intune features are in the Azure portal 
       image:
         src: https://docs.microsoft.com/media/common/i_guide.svg
     - href: high-level-architecture.md
