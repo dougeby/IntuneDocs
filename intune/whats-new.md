@@ -73,8 +73,6 @@ You can now set a conditional access policy that requires Mac devices to be enro
 #### Company Portal app for macOS is in public preview <!---1484796--->
 The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
 
-#### iOS 11 Mail app will support OAuth <!---1196951--->
-Conditional access with Intune will now have a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
 #### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
@@ -133,6 +131,10 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 
 ## What's coming
+
+#### iOS 11 Mail app will support OAuth <!---1196951--->
+Conditional access with Intune will now have a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+
 
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
