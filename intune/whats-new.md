@@ -71,7 +71,7 @@ For more details about device inventory, see [How to view Intune device inventor
 You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
 
 #### Company Portal app for macOS is in public preview <!---1484796--->
-The Company Portal app for macOS is now available as part of the public preview for conditional access in EMS. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
 
 #### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
