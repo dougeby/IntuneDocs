@@ -3739,6 +3739,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "intune/enrollment-troubleshoot.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/whats-new/whats-new-in-microsoft-intune.md",
 			"redirect_url": "/intune/whats-new",
 			"redirect_document_id": false
