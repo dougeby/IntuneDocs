@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,6 +70,9 @@ For more details about device inventory, see [How to view Intune device inventor
 <!-- 720172 -->
 You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
 
+#### Company Portal app for macOS is in public preview <!---1484796--->
+The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+
 #### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
 In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
@@ -91,12 +94,23 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
 
+### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
+The **Settings** page in the Company Portal app for Android has a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting will vary depending on which app manages the work account. We recommend that users turn battery optimization off for better performance of work apps that sync email and data. 
+
 #### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
 End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
  
 - Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 
-
+#### New settings to allow and block apps on Samsung KNOX Standard devices
+<!-- 1305423 -->  
+In this release, we are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
+ 
+- Apps that users are allowed to install
+- Apps that users are blocked from running
+- Apps that are hidden from the user on the device
+ 
+You can specify the app by URL, package name or from the list of apps you manage.
 
 
 ## Notices
