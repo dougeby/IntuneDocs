@@ -7,7 +7,7 @@ description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 06/30/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,9 +62,10 @@ Create CNAME DNS resource records for your company’s domain. For example, if y
 
 Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
-|Type|Host name|Points to|TTL|  
+|Type|Host name|Points to|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hour|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Hour|
 
 If you have more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com. If users at Contoso use name@contoso.com, but also use name@us.contoso.com, and name@eu.constoso.com as their email/UPN, the Contoso DNS admin should create the following CNAMEs:
 
