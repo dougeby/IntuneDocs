@@ -3740,7 +3740,7 @@
 		},
 		{
 			"source_path": "intune/enrollment-troubleshoot.md",
-			"redirect_url": "intune/device-enrollment",
+			"redirect_url": "/intune/device-enrollment",
 			"redirect_document_id": false
 		},
 		{
