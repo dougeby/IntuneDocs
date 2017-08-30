@@ -3299,11 +3299,6 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "intune/Troubleshoot/collect-device-logs.md",
-			"redirect_url": "/intune-classic/Troubleshoot/collect-device-logs",
-			"redirect_document_id": true
-		},
-		{
 			"source_path": "intune/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune.md",
 			"redirect_url": "/intune-classic/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune",
 			"redirect_document_id": true
