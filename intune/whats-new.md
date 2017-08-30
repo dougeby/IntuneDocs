@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,6 +90,9 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 ### App management
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
+
+### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
+The **Settings** page in the Company Portal app for Android has a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting will vary depending on which app manages the work account. We recommend that users turn battery optimization off for better performance of work apps that sync email and data. 
 
 #### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
 End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
