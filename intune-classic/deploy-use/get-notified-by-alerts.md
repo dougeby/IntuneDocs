@@ -26,7 +26,7 @@ ms.custom: intune classic
 
 ---
 
-#  Get notified by Microsoft Intune alerts
+#  Use alerts to get notified by Microsoft Intune
 
 [!INCLUDE[classic portal](../includes/classic-portal.md)]
 
@@ -34,7 +34,7 @@ Alerts keep you in touch with what's happening in Microsoft Intune. For example,
 - A problem with the Exchange Connector which affects mobile device management
 - Malware was found on a computer
 - A conflict between two Intune policies was detected
-- A Intune software client deployment fails 
+- A Intune software client deployment fails
 
 ## How alerts work
 
