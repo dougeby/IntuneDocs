@@ -28,7 +28,7 @@ ms.custom: intune classic
 
 #  Get notified by Microsoft Intune alerts
 
-[!INCLUDE[classic portal](../includes/classic portal.md)]
+[!INCLUDE[classic portal](../includes/classic-portal.md)]
 
 Alerts keep you in touch with what's happening in Microsoft Intune.
 
