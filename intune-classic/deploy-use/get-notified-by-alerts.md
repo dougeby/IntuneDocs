@@ -30,19 +30,18 @@ ms.custom: intune classic
 
 [!INCLUDE[classic portal](../includes/classic-portal.md)]
 
-Alerts keep you in touch with what's happening in Microsoft Intune.
-
-For example, alerts can notify you about the following events:
--   A problem with the Exchange Connector which affects mobile device management
--   Malware was found on a computer
--   A conflict between two Intune policies was detected
+Alerts keep you in touch with what's happening in Microsoft Intune. For example, alerts can notify you about the following events:
+- A problem with the Exchange Connector which affects mobile device management
+- Malware was found on a computer
+- A conflict between two Intune policies was detected
+- A Intune software client deployment fails 
 
 ## How alerts work
 
 Alerts are generated based on **alert types**, a set of preconfigured rules built into Intune. For example, the alert type, **Cloud storage has 10% or less free space**, alerts you when you are running out of space to store your apps in the cloud. You can enable or disable alert types and configure properties for each alert type. For example, using the above alert type, you can configure:
 
-**State:** Whether this alert type is enabled or disabled
-**Severity:** How serious is this alert?
+- **State:** Whether this alert type is enabled or disabled
+- **Severity:** How serious is this alert?
 
 |Severity|Details|
 |--|---|
