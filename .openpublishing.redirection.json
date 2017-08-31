@@ -2700,12 +2700,12 @@
 		},
 		{
 			"source_path": "intune/device-factory-reset.md",
-			"redirect_url": "/intune/devices-wipe",
+			"redirect_url": "/intune/devices-wipe#factory-reset",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/device-company-data-remove.md",
-			"redirect_url": "/intune/devices-wipe",
+			"redirect_url": "/intune/devices-wipe#remove-company-data",
 			"redirect_document_id": false
 		},
 		{
