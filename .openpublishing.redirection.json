@@ -2706,7 +2706,7 @@
 		{
 			"source_path": "intune/device-company-data-remove.md",
 			"redirect_url": "/intune/devices-wipe",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/set-up-android-management-with-microsoft-intune.md",
