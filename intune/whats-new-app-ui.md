@@ -35,19 +35,19 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
-![Selecting account type in native mail app.](ios-11-ca-email-after-1708-01.png)
+![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
 
-![After selecting Exchange, iOS device prompt asks for email address and account name.](ios-11-ca-email-after-1708-02.png)
+![After selecting Exchange, iOS device prompt asks for email address and account name.](./media/ios-11-ca-email-after-1708-02.png)
 
-![Provide email address and name for account.](ios-11-ca-email-after-1708-03.png)
+![Provide email address and name for account.](./media/ios-11-ca-email-after-1708-03.png)
 
-![Sent to external Microsoft log in page.](ios-11-ca-email-after-1708-04.png)
+![Sent to external Microsoft log in page.](./media/ios-11-ca-email-after-1708-04.png)
 
-![Providing password on Microsoft page.](ios-11-ca-email-after-1708-05.png)
+![Providing password on Microsoft page.](./media/ios-11-ca-email-after-1708-05.png)
 
-![Microsoft prompts user to enroll device into management.](ios-11-ca-email-after-1708-06.png)
+![Microsoft prompts user to enroll device into management.](./media/ios-11-ca-email-after-1708-06.png)
 
-![User is prompted to enroll from Company Portal website.](ios-11-ca-email-after-1708-07.png)
+![User is prompted to enroll from Company Portal website.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## Week of August 21, 2017
 
@@ -57,11 +57,11 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 
 **Previous experience**
 
-![old interface](media\NewUI_Old_AttachFileHandler.jpg)
+![old interface](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Modern experience**
 
-![modern interface](media\NewUI_Modern_AttachFileHandler.jpg)
+![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## Week of August 14, 2017
