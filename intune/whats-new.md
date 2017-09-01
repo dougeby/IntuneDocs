@@ -103,7 +103,7 @@ End users can now use different accounts (work and personal) with Microsoft OneN
 - Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 
 #### New settings to allow and block apps on Samsung KNOX Standard devices
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 In this release, we are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
  
 - Apps that users are allowed to install
