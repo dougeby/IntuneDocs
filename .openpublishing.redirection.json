@@ -3194,6 +3194,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/enrollment-method-choose-ios.md",
+			"redirect_url": "/intune/ios-enroll",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/plan-design/introduction.md",
 			"redirect_url": "/intune/planning-guide",
 			"redirect_document_id": true

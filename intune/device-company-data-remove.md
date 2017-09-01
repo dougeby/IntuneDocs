@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Remove company data from devices with Intune 
+title: Remove company data from devices with Intune
 titleSuffix: "Intune on Azure"
 description: Learn how to remove only company data from devices you manage with Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
