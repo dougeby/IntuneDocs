@@ -2699,6 +2699,16 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/device-factory-reset.md",
+			"redirect_url": "/intune/devices-wipe#factory-reset",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/device-company-data-remove.md",
+			"redirect_url": "/intune/devices-wipe#remove-company-data",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/deploy-use/set-up-android-management-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune",
 			"redirect_document_id": true

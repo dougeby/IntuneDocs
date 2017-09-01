@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ The actions available depend on the device platform, and the configuration of th
 - Perform remote device actions:
 	- [Remove company data](devices-wipe.md#remove-company-data)
 	- [Factory reset](devices-wipe.md#factory-reset)
-	- [Remote lock](device-remote-lock.md) 
+	- [Remote lock](device-remote-lock.md)
 	- [Reset passcode](device-passcode-reset.md)
 	- [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
 	- [Fresh Start](device-fresh-start.md) (Windows only)
