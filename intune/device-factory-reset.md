@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Reset devices to factory settings with Intune 
+title: Reset devices to factory settings with Intune
 titleSuffix: "Intune on Azure"
 description: Learn how to reset devices you manage with Intune to their factory settings."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -53,4 +53,3 @@ The **Factory reset** returns a device to its default settings. The device is no
 ## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
-
