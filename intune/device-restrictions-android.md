@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -133,9 +133,9 @@ You can also click **Import** to get the list from a csv file. Use the format <*
 
 ## Kiosk
 
-Kiosk settings apply to Samsung KNOX Standard devices only.
+Kiosk settings apply only to Samsung KNOX Standard devices, and only to apps you manage using Intune.
 
-- **Select a managed app** - Choose one of the following options to add one or more apps that can run when the device is in kiosk mode. No other apps are allowed to run on the device.
+- **Select a managed app** - Choose one of the following options to add one or more managed apps that can run when the device is in kiosk mode. No other apps are allowed to run on the device.
 	- **Add apps by package name**
 	- **Add apps by URL**
 	- **Add managed apps**.
