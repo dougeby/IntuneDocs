@@ -76,7 +76,7 @@ You will be able to configure the iOS VPP token to update all apps purchased for
 
 ### New settings for Windows 10 Team device restriction profile  <!--- 1308838  -->
 In this release, we are adding many new settings to the Windows 10 Team device restriction profile to help you control Surface Hub devices.
-For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams).
+For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
 
 ### Support for Windows 10 edition upgrade policy   <!-- 903672, 1119689 -->  
 You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education and Windows 10 Professional Education N.
