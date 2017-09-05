@@ -87,4 +87,4 @@ The Check Point SandBlast app authorization process consists of the following:
 
 ## Next steps
 
-- [Enable Check Point SandBlast Mobile connector with Intune](mtd-connector-enable.md)
+- [Set up Check Point SandBlast Mobile apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
