@@ -91,14 +91,11 @@
 ### [Set up macOS enrollment](macos-enroll.md)
 
 ## [Manage devices](device-management.md)
-### [Remove devices](devices-wipe.md)
 ### [Bypass activation lock](device-activation-lock-bypass.md)
-### [Factory reset device](device-factory-reset.md)
 ### [Manage Windows Fresh Start](device-fresh-start.md)
 ### [Locate lost iOS device](device-locate.md)
 ### [Enable iOS lost mode](device-lost-mode.md)
 ### [Lock device](device-remote-lock.md)
-### [Remove company data](device-company-data-remove.md)
 ### [Reset passcode](device-passcode-reset.md)
 ### [Restart device](device-restart.md)
 ### [Logout current user](device-logout-user.md)
@@ -107,6 +104,7 @@
 ### [Windows 10 PIN reset](device-windows-pin-reset.md)
 ### [Synchronize device](device-sync.md)
 ### [Examine device inventory](device-inventory.md)
+### [Remove devices](devices-wipe.md)
 
 <!--### Add and delete users -->
 
