@@ -1,0 +1,141 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Intune documentation
+metadata:
+  document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
+  title: Microsoft Intune documentation
+  description: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected.
+  keywords: protect, company, data, Azure, Intune, EMM, device, app, management
+  author: arob98
+  ms.author: angrobe
+  manager: angrobe
+  ms.date: 08/06/2017
+  ms.topic: article
+  ms.devlang: na
+  ms.service: microsoft-intune
+sections:
+- items:
+  - type: markdown
+    text: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected. Intune integrates with Azure Active Directory for identity and access control, and Azure Information Protection for data protection. 
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: introduction-intune.md
+      html: <p>Read about what Intune does and how it works.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_overview.svg
+      title: What is Intune?
+    - href: get-started-evaluation.md
+      html: <p>See how Intune works with this simple tutorial.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_get-started.svg
+      title: Get started
+    - href: get-support.md
+      html: <p>Learn how to create a support ticket and get help when you need it.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_support.svg
+      title: Get support
+    - href: whats-new.md
+      html: <p>See what's new in Intune this week.</p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: What's new
+- title: New articles and blog posts
+  items:
+  - type: paragraph
+    text: 'Read the latest and greatest information you need to know.'
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items: 
+    - href: what-is-intune.md
+      title: Learn about Intune on the Azure portal
+      image:
+        src: https://docs.microsoft.com/media/common/i_portal.svg
+    - href: ui-changes.md
+      title: See where your Intune features are in the Azure portal 
+      image:
+        src: https://docs.microsoft.com/media/common/i_guide.svg
+    - href: high-level-architecture.md
+      title: View the Intune high-level architecture
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+    - href: reports-nav-create-intune-reports.md
+      title: Create reports with Intune Data Warehouse (preview)
+      image:
+        src: https://docs.microsoft.com/media/common/i_generic-database.svg
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/
+      title: "[Blog] Learn about the new role-based access controls"
+      image:
+        src: https://docs.microsoft.com/media/common/i_blog.svg
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/
+      title: "[Blog] Understand Intune service health"
+      image: 
+        src: https://docs.microsoft.com/media/common/i_blog.svg
+    
+- title: Videos
+  items:
+  - type: markdown
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
+  - type: markdown
+    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/Cn29dmgDcIw?list=PLXtHYVsvn_b-0X3R9QCJ4T-Y27DK376NR" frameborder="0" allowfullscreen></iframe>  
+
+
+- title: Planning articles 
+  items:
+  - type: list
+    style: unordered
+    items: 
+    - html: <a href="/intune/planning-guide">Intune deployment planning, design, and implementation guide</a>
+    - html: <a href="/intune/migration-guide">Intune migration guide</a>
+
+- title: How-to articles
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/intune/device-enrollment">Enroll devices</a>
+    - html: <a href="/intune/device-management">Manage devices</a>
+    - html: <a href="/intune/app-management">Manage apps</a>
+    - html: <a href="/intune/device-profiles">Configure devices</a>
+    - html: <a href="/intune/device-compliance-get-started">Set device compliance</a>
+    - html: <a href="/intune/conditional-access">Set up conditional access</a>
+    - html: <a href="/intune/app-protection-policy">Protect apps</a>
+    - html: <a href="/intune/mobile-threat-defense">Set up mobile threat defense</a>
+    - html: <a href="/intune/network-access-control-integrate">Integrate network access control</a>
+    - html: <a href="/intune/role-based-access-control">Manage roles</a>
+    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Manage PCs with the Intune software client</a>
+
+- title: Troubleshooting articles
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/intune/help-desk-operators">Help users with the Troubleshooting portal</a>
+    - html: <a href="/intune/known-issues">Known issues with Intune</a>
+    - html: <a href="/intune/get-support">Get support</a>
+
+- title: Developing and customizing articles
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/intune/custom-settings-configure">Configure custom device settings</a>
+    - html: <a href="/intune/apps-prepare-mobile-application-management">Prepare line of business (LOB) apps with the Intune App Wrapper Tool</a>
+    - html: <a href="/intune/app-sdk">Prepare LOB apps with the Intune App SDK</a>
+    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>
+    - html: <a href="/intune/reports-nav-intune-date-warehouse">Intune Data Warehouse API</a>
+
+- title: Other resources
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Read the Enterprise Mobility and Security blog</a>
+    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/"> Get help on the Intune support blog</a>
+    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Give feedback on Intune at UserVoice</a>
+    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Ask or answer questions on the Intune discussion forum</a>
