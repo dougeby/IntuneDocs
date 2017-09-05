@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 09/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,6 +69,9 @@ To view the inventory that's collected by mobile devices, run the [Mobile Device
 |**Ethernet MAC**|Mac OS X devices only|
 |**Activation Lock Enabled**|iOS devices only|
 |**Encryption Enabled**|All devices|
+
+>[!NOTE]
+>Some of the above items might not be collected depending on the carrier you use with the device.
 
 ## What's collected from Windows PCs?
 > [!IMPORTANT]

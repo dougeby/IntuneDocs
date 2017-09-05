@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Windows Update for Business settings - Intune
-titleSuffix: "Intune on Azure"
+title: Manage software updates
+titleSuffix: "Configure Windows Update for Business settings - Intune"
 description: Learn how to configure Windows Update for Business settings in Intune to control updates to Windows 10 devices."
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,14 +27,13 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows Update for Business settings with Microsoft Intune
+# Manage software updates
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Introduction
-Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+Windows as a Service is the way to update Windows 10 devices. With Windows 10, new Feature Updates and Quality Updates contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
-By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
+By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update makes sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
 
 - **Windows 10 Servicing Branch**: Choose whether you want groups of devices to receive updates from the Current Branch or from the Current Branch for Business.  
 - **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. You will then have a staged update rollout so that you can review progress along the way.

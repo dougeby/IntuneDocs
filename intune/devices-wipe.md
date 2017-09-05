@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,14 +27,14 @@ ms.custom: intune-azure
 
 ---
 
-# Use factory reset or remove company data
+# Remove devices by using factory reset or remove company data
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can remove company data and apps from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, you can either **remove company data** or **factory reset** the device. Users can also issue a remote command from the Intune Company Portal to personally owned devices enrolled in Intune.
+You can remove devices from Intune that are no longer needed, are being repurposed, or have gone missing. You can do this by issuing a **remove company data** or **factory reset** command. Users can also issue a remote command from the Intune Company Portal to personally owned devices enrolled in Intune.
 
 > [!NOTE]
-> Before you remove a user from Azure AD, issue a **Factory reset** or **Remove company data** command to all devices associated with that user. If you remove users with managed devices from Azure Active Directory, Intune can no longer issue factory reset or remove company data to those devices.
+> Before you remove a user from Azure Active Directory, issue a **Factory reset** or **Remove company data** command to all devices associated with that user. If you remove users with managed devices from Azure Active Directory, Intune can no longer issue factory reset or remove company data to those devices.
 
 ## Factory reset
 
@@ -52,7 +52,7 @@ If the device is on and connected, it takes less than 15 minutes for a factory r
 
 ## Remove company data
 
-Use **remove company data** to remove company data including managed app data (where applicable), settings, and email profiles that were assigned by using Intune from a device. Remove company data leaves the user's personal data on the device. The device is removed from Intune management. The following tables describe what data is removed, and the effect on data that remains on the device after company data is removed.
+The **remove company data** command removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. Remove company data leaves the user's personal data on the device. The device is removed from Intune management. The following tables describe what data is removed, and the effect on data that remains on the device after company data is removed.
 
 ### iOS
 
@@ -68,7 +68,7 @@ Use **remove company data** to remove company data including managed app data (w
 |Azure Active Directory (AD) Unjoin|Azure AD record is removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 
-**Android**
+### Android
 
 |Data type|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -86,15 +86,15 @@ Use **remove company data** to remove company data including managed app data (w
 |Azure Active Directory (AD) Unjoin|Azure AD Record removed.|Azure AD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 
-**Android for Work**
+### Android for Work
 
 Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Factory reset is not supported for Android for Work.
 
-**Windows**
+### Windows
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Company apps and associated data installed by Intune|Files protected by EFS will have their key revoked and the user will not be able to open the files.|Will not remove company apps.|Apps originally installed through the company portal are uninstalled. Company app data is removed.|Apps are uninstalled and sideloading keys are removed.|
+|Company apps and associated data installed by Intune|Files protected by EFS will have their key revoked and the user will not be able to open the files.|Will not remove company apps.|Apps originally installed through the company portal are uninstalled. Company app data is removed.|Apps are uninstalled and sideloading keys are removed.<br>For Windows 10 version 1703 (Creator Update) and later, Office 365 ProPlus apps are not removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported.|Certificates removed and revoked.|
@@ -111,9 +111,9 @@ Removing company data from an Android for Work device removes all data, apps, an
 
 If the device is on and connected, it takes less than 15 minutes for a remove data command to propagate across all device types.
 
-## Delete devices in the Azure Active Directory portal
+## Delete devices from the Azure Active Directory portal
 
-Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove devices from the Azure console that you know are unreachable and unlikely to communicate with Azure again.
+Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove device records from the Azure console that you know are unreachable and unlikely to communicate with Azure again.
 
 1.  Sign in to the [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) with your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com) and then choose **Admin** &gt; **Azure AD** from using the link on the left side of the page.
 3.  Create an Azure subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).

@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,13 +22,63 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-azure
 
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
+## Week of August 28, 2017
+
+
+### iOS 11 Mail app will support OAuth <!---1196951--->
+
+Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+
+![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
+
+![After selecting Exchange, iOS device prompt asks for email address and account name.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Provide email address and name for account.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Sent to external Microsoft log in page.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Providing password on Microsoft page.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft prompts user to enroll device into management.](./media/ios-11-ca-email-after-1708-06.png)
+
+![User is prompted to enroll from Company Portal website.](./media/ios-11-ca-email-after-1708-07.png)
+
+## Week of August 21, 2017
+
+### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
+
+Intune Mobile Application Management (MAM) dialog boxes will be updated to a modern look and feel. The dialog boxes will function in the same way as the previous style.
+
+**Previous experience**
+
+![old interface](./media/NewUI_Old_AttachFileHandler.jpg)
+
+**Modern experience**
+
+![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
+
+
+## Week of August 14, 2017
+
+### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
+
+The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
+
+![The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
+
 ## Week of July 31, 2017
+
+### Apps details pages will display new information for Android devices <!--1287476-->
+
+The apps details page of the Company Portal app for Android will now display the app categories that the IT admin has defined for that app.
+
+![The new app details page](./media/cp_android_appdetails_after_1708.png)
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
@@ -125,7 +175,7 @@ Based on user feedback, the Company Portal app for Android has added a new menu 
 
 ## Week of June 5, 2017
 
-### Improvements to the app tiles in the Company Portal app for iOS
+### Improvements to the app tiles in the Company Portal app for iOS <!--1230777-->
 We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal.
 
 **Before**

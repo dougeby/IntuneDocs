@@ -5,10 +5,10 @@ title: Manage devices with Intune
 titleSuffix: "Intune on Azure"
 description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,49 +37,28 @@ The **Devices** workload gives you insights into the devices you manage, and let
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
+4. You can view information about devices and perform the remote device actions listed.
 
-Now, you can perform the following actions:
+## Available device actions
+The actions available depend on the device platform, and the configuration of the device.
 
 - [View device inventory](device-inventory.md)
 - Perform remote device actions:
-	- [Remove company data](device-company-data-remove.md) 
-	- [Factory reset](device-factory-reset.md)
+	- [Remove company data](devices-wipe.md#remove-company-data)
+	- [Factory reset](devices-wipe.md#factory-reset)
 	- [Remote lock](device-remote-lock.md)
 	- [Reset passcode](device-passcode-reset.md)
-	- [Bypass Activation Lock](device-activation-lock-bypass.md)
-	- [Fresh Start](device-fresh-start.md)
-	- [Lost mode](device-lost-mode.md)
-	- [Locate device](device-locate.md)
-	- [Restart](device-restart.md)
+	- [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
+	- [Fresh Start](device-fresh-start.md) (Windows only)
+	- [Lost mode](device-lost-mode.md) (iOS only)
+	- [Locate device](device-locate.md) (iOS only)
+	- [Restart](device-restart.md) (Windows only)
 	- [Windows 10 PIN reset](device-windows-pin-reset.md)
 	- [Remote control for Android](device-profile-android-teamviewer.md)
 	- [Synchronize device](device-sync.md)
 
 
-## Support for each device action
-
-Use the following table to understand the device platforms that are supported by each action.
-
-|||||||
-|-|-|-|-|-|-|
-|Device action|Windows|Windows Phone|iOS|macOS|Android|
-|**Remove company data**|Yes|Yes|Yes|Yes|Yes|
-|**Factory reset**|Windows 8.1 and later (not EAS managed devices)|Yes|Yes|No|Android for Work not supported|
-|**Delete**|Yes|Yes|Yes|Yes|Yes|
-|**Remote lock**|No|Windows Phone 8.1 and later|Yes|No|Yes|
-|**Reset passcode**|No|Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, Windows 10 Creators Update and later - all|Yes|No|Earlier than Android 7, Android for Work not supported|
-|**New passcode** (for Windows 10 devices)|No|Windows 10 Creators Update and later (Azure AD joined)|No|No|Android for Work not supported|
-|**Bypass Activation Lock**|No|No|Only corporate owned devices|No|No|
-|**Lost mode**|No|No|iOS 9.3 and later, supervised, and corp owned|No|No|
-|**Locate device**|No|No|Lost mode iOS 9.3 and later, supervised, and corp owned|No|No|
-|**Logout current user**|No|No|iOS 9.3 and later (shared iPad devices only)|No|No|
-|**Restart**|Windows 8.1 and later|Windows Phone 8.1 and later|No|No|No|
-|**Fresh Start**|Windows 10 Creators update and later|No|No|No|No|
-|**New Remote Assistance session**|No|No|No|No|Yes|
-|**Remove user**|No|No|iOS 9.3 and later (shared iPad devices only)|No|No|
-|**Synchronize device**|Yes|Yes|Yes|Yes|Yes|
-
 ## Next steps
 
-- Choose **Device Actions** to see the status of actions taken on devices you manage. 
+- Choose **Device Actions** to see the status of actions taken on devices you manage.
 ![Monitor device actions](./media/monitor-device-actions.png)
