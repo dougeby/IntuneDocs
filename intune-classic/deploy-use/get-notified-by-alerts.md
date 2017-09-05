@@ -34,7 +34,7 @@ Alerts keep you in touch with what's happening in Microsoft Intune. For example,
 - A problem with the Exchange Connector which affects mobile device management
 - Malware was found on a computer
 - A conflict between two Intune policies was detected
-- A Intune software client deployment fails
+- An Intune software client deployment fails
 
 ## How alerts work
 
