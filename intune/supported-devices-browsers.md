@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Supported devices - Microsoft Intune 
+title: Supported devices - Microsoft Intune
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,7 +71,7 @@ The following browsers are supported for these portals:
 
 ### Intune classic portal
 
-Intune classic-only features such as Intune PC software client and integration with Mobile Threat Defense partners are only available in the Intune classic portal (https://manage.microsoft.com). The classic Intune console requires Silverlight browser support.
+Intune classic-only features, such as Intune PC software client and integration with Mobile Threat Defense partners, are only available in the Intune classic portal (https://manage.microsoft.com). The Intune classic portal requires Silverlight browser support.
 
 The following Silverlight browsers support the classic Intune console:
 - Internet Explorer 10 or later
@@ -80,6 +80,5 @@ The following Silverlight browsers support the classic Intune console:
 
 > [!Note]
 > Microsoft Edge and mobile browsers are not supported for the Intune classic console because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
-
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use Intune and a sign-in status of **Allowed**.

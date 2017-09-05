@@ -4,8 +4,8 @@
 title: How to add Android store apps to IntunetitleSuffix: "Intune on Azure"
 description: Learn about adding Android store apps to Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article

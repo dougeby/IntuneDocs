@@ -5,8 +5,8 @@ title: iOS apps with app protection policies
 titleSuffix: "Intune on Azure"
 description: This topic describes what to expect when your iOS app is managed by app protection policies."
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

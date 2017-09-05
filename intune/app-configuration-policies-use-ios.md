@@ -5,8 +5,8 @@ title: How to use Intune app configuration policies for iOS
 titleSuffix: "Intune on Azure"
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/26/2017
 ms.topic: article

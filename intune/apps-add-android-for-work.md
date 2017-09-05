@@ -5,8 +5,8 @@ title: Assign apps to Android for Work devices
 titleSuffix: "Intune on Azure"
 description: Use this topic to synchronize, then assign apps to Android for Work devices from the Google Play for Work Store."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
