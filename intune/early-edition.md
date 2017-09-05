@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,10 @@ This page is updated periodically. Check back for additional updates.
 ### Google Play Protect support on Android <!-- 908720  -->  
 With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and organizations to run secure apps and secure Android images. Intune will support Google Play Protect features, including SafetyNet remote attestation.  Admins can set compliance policy requirements that require Google Play Protect be configured and healthy. The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that installed apps are verified by Google Play services.  Conditional access might block users from accessing corporate resources if a device is not compliant with Google Play Protect requirements. 
 
+### Prevent users of Android devices from changing their device date and time  <!-- 1333292 -->
+You can use an [Android custom device policy](custom-settings-android.md) to prevent Android device users from changing the device date and time.
+To do this, configure an Android custom policy with the setting URI ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange
+Set this to **TRUE**, and then assign it to the required groups.
 
 ### View app protection policy assignments for troubleshooting <!--  1475003 -->
 In this upcoming release, **App protection policy** option will be added to the **Assignments** drop-down list available on the troubleshooting blade. You can now select app protection policies to see app protection policies assigned to the selected users.
@@ -67,11 +71,6 @@ You can configure the Volume Purchase Program (VPP) country store when uploading
 > [!NOTE]  
 > Today, Intune only synchronizes VPP apps from the VPP country store that match the Intune locale in which the Intune tenant was created.
 
-### Volume Purchase Program for Business apps will now sync to your Intune Tenant <!-- 800882 -->  
-Third-party developers will be able to privately distribute apps to authorized Volume Purchase Program (VPP) for Business members specified in iTunes Connect. These VPP for Business members can sign in to the Volume Purchase Program App Store and purchase their apps.
-
-With this release, the VPP for Business apps purchased by the end user will now start syncing to their Intune tenants.
-
 ###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 
@@ -86,6 +85,9 @@ For details about Windows 10 edition upgrades, see [How to configure Windows 10 
 ### Review policy compliance for Windows 10 update rings <!-- 1352223 -->  
 You will be able to review a policy report for your Windows 10 update rings from **Software updates** > **Per update ring deployment state**. The policy report includes deployment status for the update rings that you have configured. 
 
+### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->  
+The Windows 10 Company Portal app will be updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list. 
+
 ### Remote support for Windows, and Windows Mobile devices  <!-- 1070473 -->    
 Intune will be able to use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Windows, and Windows Mobile devices.
 
@@ -98,10 +100,16 @@ You will be able to run a **Quick scan**, **Full scan**, and **Update signatures
 
 **Update signatures**: The update signature command updates Windows Defender Antivirus malware definitions and signatures. This helps ensure Windows Defender Antivirus is effective in detecting malware. This feature is for Windows 10 devices only, pending device internet connectivity. 
 
+### BitLocker device configuration <!-- 1397398 -->  
+The **Windows Encryption > Base Settings** will include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires end-user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end-user.  The new setting disables the end-user warning.
+
 ### Company Portal for Windows 8.1 and Windows Phone 8.1 moving to sustaining mode <!--1428681-->
 Beginning in October 2017, the Company Portal apps for Windows 8.1 and Windows Phone 8.1 will move to sustaining mode. This means that the apps and existing scenarios, such as enrollment and compliance, will continue to be supported for these platforms. These apps will continue to be available for download through existing release channels, such as the Microsoft Store. 
 
 Once in sustaining mode, these apps will only will receive critical security updates. There will be no additional updates or features released for these apps. For new features, we recommend that you update devices to Windows 10 or Windows 10 Mobile. 
+
+###  Block copy and paste between work and personal profiles in Android for Work <!-- 1098994 -->   
+With this release, you are able to configure the work profile for  Android for Work to block copy and paste between work and personal apps. You can find this new setting in the **Device restrictions** profile for the **Android for Work** Platform in **Work profile settings**.
 
 ### Intune MAM & Outlook for Android add-ins  <!-- 1450688 -->
 In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
@@ -118,11 +126,6 @@ Review your Exchange policies today. Inform your IT and helpdesk staff. Contact 
 
 ### User device association entity Collection added to Intune Data Warehouse data model <!-- 1187917 -->
 You will be able to build reports and data visualizations using the user device association information that associates user and device entity collections. The data model can be accessed through the Power BI file (PBIX) retrieved from the Data Warehouse Intune page, through the OData endpoint, or by developing a custom client.
-
-### Device categorization <!-- 1427491 -->  
-The enrolled devices platform chart of the **Devices > Overview** blade organizes devices by platform, including Android, iOS, macOS, Windows, and Windows Mobile.  Devices running other operating systems are grouped into "Other".  This will include devices manufactured by Blackberry, NOKIA, and others.  
-
-To learn which devices are affected in your tenant, choose **Manage > All devices** and then use **Filter** to limit the **OS** field.
 
 
 <!-- the following are present prior to 1709 -->
