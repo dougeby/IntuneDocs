@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,3 +62,4 @@ Now, choose one of the following options:
 >[!NOTE]
 > Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. 
 > For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
+> Depending on the carrier you use with devices, not all inventory items might be collected.
