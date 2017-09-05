@@ -442,11 +442,11 @@
       - name: Set up Intune for MTD
         items:
         - name: Add MTD apps
-        href: mtd-apps-ios-app-configuration-policy-add-assign.md
+          href: mtd-apps-ios-app-configuration-policy-add-assign.md
         - name: Create an MTD device compliance policy
-        href: mtd-device-compliance-policy-create.md
+          href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
-        href: mtd-connector-enable.md
+          href: mtd-connector-enable.md
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello
