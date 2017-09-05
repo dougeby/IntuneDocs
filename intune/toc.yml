@@ -479,7 +479,7 @@
         maintainContext: true
     - name: Policies to protect Windows PCs
       href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-        maintainContext: true
+      maintainContext: true
       items:
       - name: Software updates
         href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
