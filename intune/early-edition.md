@@ -111,6 +111,9 @@ Once in sustaining mode, these apps will only will receive critical security upd
 ###  Block copy and paste between work and personal profiles in Android for Work <!-- 1098994 -->   
 With this release, you are able to configure the work profile for  Android for Work to block copy and paste between work and personal apps. You can find this new setting in the **Device restrictions** profile for the **Android for Work** Platform in **Work profile settings**.
 
+### New behaviors for the Company Portal app for Android with work profiles <!---1485783--->
+When released by Apple, Intune will support iOS 11.
+
 ### Intune MAM & Outlook for Android add-ins  <!-- 1450688 -->
 In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
 
@@ -186,12 +189,6 @@ We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile a
 ### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
 The Company Portal app for Windows 10 will allow users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
 
-### Search improvements to the Company Portal website <!--1331697-->
-We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
-
-iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
-
-We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
 ### Apps that are available with or without enrollment can now be installed without being prompted for enrollment. <!-- 1334712 -->
 Company apps that have been made available with or without enrollment on the Android Company Portal app can be installed without a prompt to enroll.
