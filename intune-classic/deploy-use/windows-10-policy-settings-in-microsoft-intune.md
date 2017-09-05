@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,9 +47,9 @@ Enter a name and an optional description for this policy to help you identify it
 
 ### OMA-URI settings
 
-For each OMA-URI setting you want to add, enter the following information. Use the [Windows 10 URI settings reference](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in this topic to learn about the settings you can use:
+For each OMA-URI setting you want to add, enter the following information:
 
-- **Setting name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
+- **Setting name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings. You can find more information about URI settings at [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Setting description**: Optionally, enter a description for the setting.
 - **Data type**: Choose from the following data types:
 	- **String**

@@ -1,0 +1,599 @@
+- name: Introduction
+  href: introduction-intune.md
+  expanded: true
+  items:
+  - name: What is the Azure portal?
+    href: what-is-intune.md
+  - name: What is Intune for Education?
+    href: introduction-intune-education.md
+  - name: Intune features in Azure
+    href: ui-changes.md
+    items:
+    - name: Changes to groups
+      href: groups-get-started.md
+  - name: Sign up for a free trial
+    href: free-trial-sign-up.md
+  - name: What's new
+    href: whats-new.md
+    items:
+    - name: What's new in the app UI
+      href: whats-new-app-ui.md
+    - name: What's new archive (Azure portal)
+      href: whats-new-archive.md
+    - name: What's new archive (classic portal)
+      href: whats-new-archive-classic.md
+  - name: High-level architecture
+    href: high-level-architecture.md
+  - name: Device and app lifecycles
+    href: introduction-device-app-lifecycles.md
+    items:
+    - name: Device lifecycle
+      href: device-lifecycle.md
+    - name: App lifecycle
+      href: app-lifecycle.md
+  - name: Common scenarios
+    href: common-scenarios.md
+  - name: Service description
+    href: microsoft-intune-service-description.md
+  - name: Known issues
+    href: known-issues.md
+  - name: Get support
+    href: get-support.md
+- name: Get started with Intune
+  href: get-started-evaluation.md
+  items:
+  - name: Navigating the Azure portal
+    href: get-started-azure.md
+  - name: Create a user
+    href: get-started-users.md
+  - name: Create a group
+    href: get-started-groups.md
+  - name: Assign policies
+    href: get-started-policies.md
+  - name: Enroll devices
+    href: get-started-enroll.md
+  - name: Assign apps
+    href: get-started-apps.md
+- name: Plan deployment
+  items:
+  - name: Planning guide
+    href: planning-guide.md
+    items:
+    - name: Determine goals and objectives
+      href: planning-guide-deployment-goals.md
+    - name: Identify scenarios
+      href: planning-guide-scenarios.md
+    - name: Determine requirements
+      href: planning-guide-requirements.md
+    - name: Develop a rollout plan
+      href: planning-guide-rollout-plan.md
+    - name: Develop a communication plan
+      href: planning-guide-communication-plan.md
+    - name: Develop a support plan
+      href: planning-guide-support-plan.md
+    - name: Design
+      href: planning-guide-design.md
+    - name: Implement
+      href: planning-guide-onboarding.md
+    - name: Test and validate
+      href: planning-guide-test-validation.md
+    - name: Additional resources
+      href: planning-guide-resources.md
+  - name: Scenario implementation guides
+    items:
+    - name: BYOD
+      href: byod-enable.md
+    - name: Protect Exchange Online
+      href: exchange-online-protect.md
+    - name: Reduce help desk costs
+      href: password-reset.md
+  - name: Migration guide
+    href: migration-guide.md
+    items:
+    - name: Prepare Intune
+      href: migration-guide-prepare.md
+      items:
+      - name: Basic setup
+        href: migration-guide-setup.md
+      - name: Configure device and app management policies
+        href: migration-guide-configure-policies.md
+      - name: Configure app protection policies
+        href: migration-guide-app-protection-policies.md
+      - name: Migration considerations
+        href: migration-guide-considerations.md
+    - name: Migration campaign
+      href: migration-guide-campaign.md
+      items:
+      - name: Plan communications
+        href: migration-guide-communication-plan.md
+      - name: Drive adoption
+        href: migration-guide-drive-adoption.md
+      - name: Typical migration cycle
+        href: migration-guide-cycle.md
+- name: How to
+  items:
+  - name: Set up Intune
+    href: setup-steps.md
+    items:
+    - name: Prerequisites
+      href: supported-devices-browsers.md
+      items:
+      - name: Network bandwidth usage
+        href: network-bandwidth-use.md
+    - name: Sign in to Intune
+      href: account-sign-up.md
+    - name: Configure domains
+      href: custom-domain-name-configure.md
+    - name: Add users
+      href: users-add.md
+    - name: Add groups
+      href: groups-add.md
+    - name: Assign licenses
+      href: licenses-assign.md
+    - name: Set the MDM authority
+      href: mdm-authority-set.md
+  - name: Enroll devices
+    href: device-enrollment.md
+    items:
+    - name: Enrollment options
+      href: enrollment-options.md
+      items:
+      - name: Terms and conditions
+        href: terms-and-conditions-create.md
+      - name: Restrictions
+        href: enrollment-restrictions-set.md
+      - name: Apple MDM push certificate
+        href: apple-mdm-push-certificate-get.md
+      - name: Corporate identifiers
+        href: corporate-identifiers-add.md
+      - name: Multi-factor authentication
+        href: multi-factor-authentication.md
+      - name: Device enrollment manager
+        href: device-enrollment-manager-enroll.md
+      - name: Map devices to groups
+        href: device-group-mapping.md
+    - name: Set up Windows enrollment
+      items:
+      - name: Windows enrollment
+        href: windows-enroll.md
+      - name: Bulk enroll
+        href: windows-bulk-enroll.md
+    - name: Set up Android enrollment
+      href: android-enroll.md
+    - name: Set up iOS enrollment
+      href: ios-enroll.md
+      items:
+      - name: Device Enrollment Program
+        href: device-enrollment-program-enroll-ios.md
+      - name: Apple School Manager
+        href: apple-school-manager-set-up-ios.md
+      - name: Apple Configurator
+        href: apple-configurator-enroll-ios.md
+    - name: Set up macOS enrollment
+      href: macos-enroll.md
+  - name: Manage devices
+    href: device-management.md
+    items:
+    - name: Bypass activation lock
+      href: device-activation-lock-bypass.md
+    - name: Manage Windows Fresh Start
+      href: device-fresh-start.md
+    - name: Locate lost iOS device
+      href: device-locate.md
+    - name: Enable iOS lost mode
+      href: device-lost-mode.md
+    - name: Lock device
+      href: device-remote-lock.md
+    - name: Reset passcode
+      href: device-passcode-reset.md
+    - name: Restart device
+      href: device-restart.md
+    - name: Logout current user
+      href: device-logout-user.md
+    - name: Remove user
+      href: device-remove-user.md
+    - name: Remote control for Android
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 PIN reset
+      href: device-windows-pin-reset.md
+    - name: Synchronize device
+      href: device-sync.md
+    - name: Examine device inventory
+      href: device-inventory.md
+    - name: Remove devices
+      href: devices-wipe.md
+  - name: Manage apps
+    href: app-management.md
+    items:
+    - name: Add apps
+      href: apps-add.md
+      items:
+      - name: Android store apps
+        href: store-apps-android.md
+      - name: Android LOB apps
+        href: lob-apps-android.md
+      - name: iOS store apps
+        href: store-apps-ios.md
+      - name: iOS LOB apps
+        href: lob-apps-ios.md
+      - name: Web apps
+        href: web-app.md
+      - name: Windows Phone 8.1 store apps
+        href: store-apps-windows-phone-8-1.md
+      - name: Windows Phone LOB apps
+        href: lob-apps-windows-phone.md
+      - name: Microsoft Store apps
+        href: store-apps-windows.md
+      - name: Windows LOB apps
+        href: lob-apps-windows.md
+      - name: Android for Work apps
+        href: apps-add-android-for-work.md
+      - name: Office 365 apps for Windows 10
+        href: apps-add-office365.md
+    - name: Assign apps
+      href: apps-deploy.md
+    - name: Monitor apps
+      href: apps-monitor.md
+    - name: iOS app configuration profiles
+      href: app-configuration-policies-use-ios.md
+    - name: Android app configuration profiles
+      href: app-configuration-policies-use-android.md
+    - name: Use iOS app provisioning profiles
+      href: app-provisioning-profile-ios.md
+    - name: Selectively wipe apps
+      href: apps-selective-wipe.md
+    - name: Work with volume-purchased apps and books
+      href: vpp-apps.md
+      items:
+      - name: iOS VPP apps
+        href: vpp-apps-ios.md
+      - name: Microsoft Store for Business apps
+        href: windows-store-for-business.md
+      - name: iOS eBooks
+        href: vpp-ebooks-ios.md
+    - name: Configure the Company Portal app
+      href: company-portal-app.md
+    - name: Configure the Managed Browser
+      href: app-configuration-managed-browser.md
+  - name: Configure devices
+    href: device-profiles.md
+    items:
+    - name: Configure device profiles
+      href: device-profile-create.md
+    - name: Configure device features
+      href: device-features-configure.md
+      items:
+      - name: AirPrint for iOS and MacOS
+        href: air-print-settings-ios-macos.md
+      - name: AirPlay for iOS
+        href: airplay-settings-ios.md
+      - name: Home screen layout for iOS
+        href: home-screen-settings-ios.md
+      - name: App notifications for iOS
+        href: app-notification-settings-ios.md
+      - name: Shared devices for iOS
+        href: shared-device-settings-ios.md
+      - name: Web filter settings for iOS
+        href: web-content-filter-settings-ios.md
+    - name: Configure device restrictions
+      href: device-restrictions-configure.md
+      items:
+      - name: Android
+        href: device-restrictions-android.md
+      - name: iOS
+        href: device-restrictions-ios.md
+      - name: macOS
+        href: device-restrictions-macos.md
+      - name: Windows 8.1
+        href: device-restrictions-windows-8-1.md
+      - name: Windows Phone 8.1
+        href: device-restrictions-windows-phone-8-1.md
+      - name: Windows 10
+        href: device-restrictions-windows-10.md
+      - name: Windows 10 Team
+        href: device-restrictions-windows-10-teams.md
+      - name: Android for Work
+        href: device-restrictions-android-for-work.md
+    - name: Configure email settings
+      href: email-settings-configure.md
+      items:
+      - name: Android
+        href: email-settings-android.md
+      - name: iOS
+        href: email-settings-ios.md
+      - name: Windows Phone 8.1
+        href: email-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: email-settings-windows-10.md
+    - name: Configure VPN settings
+      href: vpn-settings-configure.md
+      items:
+      - name: Android
+        href: vpn-settings-android.md
+      - name: iOS
+        href: vpn-settings-ios.md
+      - name: macOS
+        href: vpn-settings-macos.md
+      - name: Windows 8.1
+        href: vpn-settings-windows-8-1.md
+      - name: Windows Phone 8.1
+        href: vpn-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: vpn-settings-windows-10.md
+    - name: Configure Wi-Fi settings
+      href: wi-fi-settings-configure.md
+      items:
+      - name: Android
+        href: wi-fi-settings-android.md
+      - name: iOS
+        href: wi-fi-settings-ios.md
+      - name: macOS
+        href: wi-fi-settings-macos.md
+      - name: Windows 8.1 & Windows 10
+        href: wi-fi-settings-import-windows-8-1.md
+    - name: Configure Windows 10 edition upgrade settings
+      href: edition-upgrade-configure-windows-10.md
+    - name: Windows 10 endpoint protection
+      href: endpoint-protection-windows-10.md
+    - name: Configure Windows 10 education settings
+      href: education-settings-configure.md
+    - name: Configure iOS education settings
+      href: education-settings-configure-ios.md
+    - name: Configure iOS education shared devices
+      href: education-settings-configure-ios-shared.md
+    - name: Configure iOS update policies
+      href: software-updates-ios.md
+    - name: Configure certificates
+      href: certificates-configure.md
+      items:
+      - name: SCEP
+        href: certificates-scep-configure.md
+      - name: PKCS
+        href: certficates-pfx-configure.md
+    - name: Configure Windows Information Protection settings
+      href: windows-information-protection-configure.md
+    - name: Monitor telecom expenses
+      href: telecom-expenses-monitor.md
+    - name: Assign profiles
+      href: device-profile-assign.md
+    - name: Monitor profiles
+      href: device-profile-monitor.md
+    - name: Troubleshoot profiles
+      href: device-profile-troubleshoot.md
+  - name: Set device compliance
+    href: device-compliance-get-started.md
+    items:
+    - name: Create Android policy
+      href: compliance-policy-create-android.md
+    - name: Create Android for Work policy
+      href: compliance-policy-create-android-for-work.md
+    - name: Create iOS policy
+      href: compliance-policy-create-ios.md
+    - name: Create macOS policy
+      href: compliance-policy-create-mac-os.md
+    - name: Create Windows policy
+      href: compliance-policy-create-windows.md
+    - name: Monitor device compliance
+      href: compliance-policy-monitor.md
+  - name: Set up conditional access
+    href: conditional-access.md
+    items:
+    - name: Common ways to use conditional access
+      href: conditional-access-intune-common-ways-use.md
+    - name: Install Exchange on-premises connector
+      href: exchange-connector-install.md
+    - name: Create and assign conditional access policy
+      href: conditional-access-exchange-create.md
+    - name: Reassign conditional access policies from Intune classic portal
+      href: conditional-access-intune-reassign.md
+    - name: App-based conditional access
+      href: app-based-conditional-access-intune.md
+    - name: Set up app-based conditional access
+      href: app-based-conditional-access-intune-create.md
+    - name: ADAL and Intune
+      href: app-modern-authentication-block.md
+    - name: Monitor conditional access compliance
+      href: conditional-access-exchange-monitor.md
+  - name: Protect app and device data
+    items:
+    - name: Use app protection policies
+      href: app-protection-policy.md
+      items:
+      - name: Create app protection policies
+        href: app-protection-policies.md
+        items:
+        - name: Android settings
+          href: app-protection-policy-settings-android.md
+        - name: iOS settings
+          href: app-protection-policy-settings-ios.md
+      - name: Validate app protection policies
+        href: app-protection-policies-validate.md
+      - name: Monitor app protection user status
+        href: app-protection-policies-monitor.md
+      - name: Get ready for WIP app protection policies
+        href: app-protection-policies-configure-windows-10.md
+      - name: Create & assign WIP app protection policies
+        href: windows-information-protection-policy-create.md
+      - name: Manage data transfer between iOS apps
+        href: data-transfer-between-apps-manage-ios.md
+    - name: Mobile Threat Defense
+      href: mobile-threat-defense.md
+      items:
+      - name: Set up Lookout
+        href: lookout-mobile-threat-defense-connector.md
+        items:
+        - name: Lookout and Intune integration
+          href: lookout-mtd-connector-integration.md
+      - name: Set up Skycure
+        href: skycure-mobile-threat-defense-connector.md
+        items:
+        - name: Skycure and Intune integration
+          href: skycure-mtd-connector-integration.md
+      - name: Set up Check Point
+        href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+        items:
+        - name: Check Point and Intune integration
+          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+      - name: Add MTD apps
+        href: mtd-apps-ios-app-configuration-policy-add-assign.md
+      - name: Enable MTD in Intune
+        href: mtd-connector-enable.md
+      - name: Create an MTD device compliance policy
+        href: mtd-device-compliance-policy-create.md
+    - name: Network access control
+      href: network-access-control-integrate.md
+    - name: Set up Windows Hello
+      href: windows-hello.md
+  - name: Manage roles
+    href: role-based-access-control.md
+  - name: Manage software updates
+    href: windows-update-for-business-configure.md
+  - name: Manage PCs with software agent
+    href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
+    maintainContext: true
+    items:
+    - name: Compare PC management
+      href: /intune-classic/deploy-use/pc-management-comparison
+      maintainContext: true
+    - name: Install the PC client
+      href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
+      maintainContext: true
+    - name: Common PC management tasks
+      href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
+      maintainContext: true
+      items:
+      - name: PC policies
+        href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
+        maintainContext: true
+      - name: View inventory
+        href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
+        maintainContext: true
+      - name: Retire PCs
+        href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
+        maintainContext: true
+      - name: Link PCs to users
+        href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
+        maintainContext: true
+      - name: Remote assistance
+        href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
+        maintainContext: true
+    - name: Policies to protect Windows PCs
+      href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
+      maintainContext: true
+      items:
+      - name: Software updates
+        href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
+        maintainContext: true
+      - name: Windows Firewall
+        href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
+        maintainContext: true
+      - name: Endpoint Protection
+        href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
+        maintainContext: true
+    - name: Add apps for Intune client PCs
+      href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
+      maintainContext: true
+    - name: Manage license agreements
+      href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
+      maintainContext: true
+    - name: Resolve policy conflicts
+      href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
+      maintainContext: true
+  - name: Educate users
+    href: end-user-educate.md
+    items:
+    - name: Company Portal messages
+      href: end-user-company-portal-messages.md
+    - name: App protection on Android
+      href: end-user-mam-apps-android.md
+    - name: App protection on iOS
+      href: end-user-mam-apps-ios.md
+    - name: How to get Android apps
+      href: end-user-apps-android.md
+    - name: How to get iOS apps
+      href: end-user-apps-ios.md
+    - name: How to get Windows apps
+      href: end-user-apps-windows.md
+- name: Monitor and troubleshoot
+  items:
+  - name: Help users troubleshoot problems
+    href: help-desk-operators.md
+  - name: Use the Intune Data Warehouse
+    href: reports-nav-create-intune-reports.md
+    items:
+    - name: Connect to the Data Warehouse with Power BI
+      href: reports-proc-get-a-link-powerbi.md
+- name: Develop and customize
+  items:
+  - name: Configure custom device settings
+    href: custom-settings-configure.md
+    items:
+    - name: Android
+      href: custom-settings-android.md
+      items:
+      - name: Wi-Fi profile with a pre-shared key
+        href: wi-fi-profile-shared-key.md
+      - name: Per-app VPN profile
+        href: android-pulse-secure-per-app-vpn.md
+      - name: Allow/block apps for Samsung KNOX Standard
+        href: samsung-knox-apps-allow-block.md
+    - name: iOS
+      href: custom-settings-ios.md
+    - name: macOS
+      href: custom-settings-macos.md
+    - name: Windows Phone 8.1
+      href: custom-settings-windows-phone-8-1.md
+    - name: Windows 10
+      href: custom-settings-windows-10.md
+    - name: Android for Work
+      href: custom-settings-android-for-work.md
+  - name: Prepare LOB apps for app protection
+    href: apps-prepare-mobile-application-management.md
+    items:
+    - name: App Wrapping Tool for iOS
+      href: app-wrapper-prepare-ios.md
+    - name: App Wrapping Tool for Android
+      href: app-wrapper-prepare-android.md
+  - name: Sideload Windows apps
+    href: app-sideload-windows.md
+  - name: Intune App SDK
+    href: app-sdk.md
+    items:
+    - name: Get started with Intune App SDK
+      href: app-sdk-get-started.md
+    - name: Intune App SDK for iOS
+      href: app-sdk-ios.md
+    - name: Intune App SDK for Android
+      href: app-sdk-android.md
+    - name: Intune App SDK Cordova plugin
+      href: app-sdk-cordova.md
+    - name: Intune App SDK Xamarin component
+      href: app-sdk-xamarin.md
+  - name: How to use Intune Graph APIs
+    href: intune-graph-apis.md
+  - name: Intune Graph API
+    href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
+  - name: Intune Data Warehouse API
+    href: reports-nav-intune-data-warehouse.md
+    items:
+    - name: Get data from the Data Warehouse API with a REST client
+      href: reports-proc-data-rest.md
+    - name: Data Warehouse API endpoint
+      href: reports-api-url.md
+    - name: Data Warehouse data model
+      href: reports-ref-data-model.md
+      items:
+      - name: Reference for Date entity
+        href: reports-ref-date.md
+      - name: Reference for user entity
+        href: reports-ref-user.md
+      - name: Reference for mobile app management (MAM) entities
+        href: reports-ref-mobile-app-management.md
+      - name: Reference for devices entities
+        href: reports-ref-devices.md
+      - name: Reference for application entities
+        href: reports-ref-application.md
+      - name: Reference for policy entities
+        href: reports-ref-policy.md
+- name: Glossary
+  href: intune-glossary.md
