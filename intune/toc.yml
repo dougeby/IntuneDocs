@@ -39,17 +39,19 @@
     href: known-issues.md
   - name: Get support
     href: get-support.md
-- name: Get started
+- name: Get started with Intune
   href: get-started-evaluation.md
   items:
-  - name: Create a group
-    href: get-started-groups.md
+  - name: Navigating the Azure portal
+    href: get-started-azure.md
   - name: Create a user
     href: get-started-users.md
-  - name: Enroll devices
-    href: get-started-enroll.md
+  - name: Create a group
+    href: get-started-groups.md
   - name: Assign policies
     href: get-started-policies.md
+  - name: Enroll devices
+    href: get-started-enroll.md
   - name: Assign apps
     href: get-started-apps.md
 - name: Plan deployment
@@ -81,6 +83,10 @@
     items:
     - name: BYOD
       href: byod-enable.md
+    - name: Protect Exchange Online
+      href: exchange-online-protect.md
+    - name: Reduce help desk costs
+      href: password-reset.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -140,6 +146,8 @@
         href: apple-mdm-push-certificate-get.md
       - name: Corporate identifiers
         href: corporate-identifiers-add.md
+      - name: Multi-factor authentication
+        href: multi-factor-authentication.md
       - name: Device enrollment manager
         href: device-enrollment-manager-enroll.md
       - name: Map devices to groups
@@ -166,12 +174,8 @@
   - name: Manage devices
     href: device-management.md
     items:
-    - name: Remove devices
-      href: devices-wipe.md
     - name: Bypass activation lock
       href: device-activation-lock-bypass.md
-    - name: Factory reset device
-      href: device-factory-reset.md
     - name: Manage Windows Fresh Start
       href: device-fresh-start.md
     - name: Locate lost iOS device
@@ -180,8 +184,6 @@
       href: device-lost-mode.md
     - name: Lock device
       href: device-remote-lock.md
-    - name: Remove company data
-      href: device-company-data-remove.md
     - name: Reset passcode
       href: device-passcode-reset.md
     - name: Restart device
@@ -198,6 +200,8 @@
       href: device-sync.md
     - name: Examine device inventory
       href: device-inventory.md
+    - name: Remove devices
+      href: devices-wipe.md
   - name: Manage apps
     href: app-management.md
     items:
@@ -339,8 +343,6 @@
       href: education-settings-configure-ios-shared.md
     - name: Configure iOS update policies
       href: software-updates-ios.md
-    - name: Configure Windows Update for Business settings
-      href: windows-update-for-business-configure.md
     - name: Configure certificates
       href: certificates-configure.md
       items:
@@ -444,6 +446,8 @@
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Manage software updates
+    href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
     href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
     maintainContext: true
@@ -475,7 +479,7 @@
         maintainContext: true
     - name: Policies to protect Windows PCs
       href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-      maintainContext: true
+        maintainContext: true
       items:
       - name: Software updates
         href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
@@ -512,7 +516,7 @@
       href: end-user-apps-windows.md
 - name: Monitor and troubleshoot
   items:
-  - name: Use the helpdesk operator role
+  - name: Help users troubleshoot problems
     href: help-desk-operators.md
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
@@ -569,9 +573,11 @@
     href: intune-graph-apis.md
   - name: Intune Graph API
     href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
-  - name: Intune Date Warehouse API
-    href: reports-nav-intune-date-warehouse.md
+  - name: Intune Data Warehouse API
+    href: reports-nav-intune-data-warehouse.md
     items:
+    - name: Get data from the Data Warehouse API with a REST client
+      href: reports-proc-data-rest.md
     - name: Data Warehouse API endpoint
       href: reports-api-url.md
     - name: Data Warehouse data model
