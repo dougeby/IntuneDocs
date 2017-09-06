@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,28 +28,30 @@ ms.suite: ems
 
 ---
 
-# What information can my company see when I enroll my device in Intune?
+# What information can my company see when I enroll my device?
 
-When you enroll a device into management, you are giving your company's IT department permission to access certain pieces of information on your device to help protect the corporate data on the device.
+When you enroll a device into management, you are giving your company permission to view certain pieces of information on your device to help protect the corporate data on the device.
 
-**What IT cannot see**
+**What your company can never see**
 
 - Calling and web browsing history
--	Location
-- Personal email
-- Text messages
+- Email and text messages
 - Contacts
--	Passwords to your personal accounts
-- Calendar events
+- Calendar
+-	Passwords
 - Pictures, including what's in the photos app or camera roll
 
-**What IT can see**
+**What your company can always see**
 
--   Model
--   Serial number
--   Operating system version
--   App names
--   Owner
--   Device name
--   Manufacturer (for devices not made by Apple)
--   Phone number (for work devices, the whole number. For personal devices, just the last four digits.)
+- Device model, like iPhone 7
+- Manufacturer, like Microsoft
+- Operating system, like Android 7.1
+- App names, like Microsoft Word
+- Device owner
+- Device name
+- Serial number
+
+**What your company might be able to see**
+
+-  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page. 
+-  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
