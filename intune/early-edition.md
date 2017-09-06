@@ -74,6 +74,9 @@ You can configure the Volume Purchase Program (VPP) country store when uploading
 ###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 
+### iOS 11 support <!-- 1428975 -->
+When released by Apple, Intune will support iOS 11.
+
 ### New settings for Windows 10 Team device restriction profile  <!--- 1308838  -->
 In this release, we are adding many new settings to the Windows 10 Team device restriction profile to help you control Surface Hub devices.
 For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
@@ -112,7 +115,10 @@ Once in sustaining mode, these apps will only will receive critical security upd
 With this release, you are able to configure the work profile for  Android for Work to block copy and paste between work and personal apps. You can find this new setting in the **Device restrictions** profile for the **Android for Work** Platform in **Work profile settings**.
 
 ### New behaviors for the Company Portal app for Android with work profiles <!---1485783--->
-When released by Apple, Intune will support iOS 11.
+When you enroll an Android for Work device with a work profile, it's the Company Portal app in the work profile that performs management tasks on the device. 
+Unless you are using a MAM-enabled app in the personal profile, the Company Portal app for Android no longer serves any use. To improve the work profile experience, Intune will automatically hide the personal Company Portal app after a successful work profile enrollment.
+
+The Company Portal app for Android can be enabled at any time in the personal profile by browsing for [Company Portal in the Play Store](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and tapping **Enable**.
 
 ### Intune MAM & Outlook for Android add-ins  <!-- 1450688 -->
 In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
