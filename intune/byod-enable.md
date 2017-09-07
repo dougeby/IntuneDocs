@@ -54,7 +54,7 @@ After you prepare the Intune service, you need to meet the various enrollment re
 
 -   **Android devices** There's nothing you need to do to get the Intune service ready to enroll Android devices. Users can just [enroll their Android devices](/intune-user-help/enroll-your-device-in-intune-android) into management using the Company Portal app available from Google Play.
 
--   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simplify the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
+-   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simplify the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
 
 
 ### Make sure that managed devices meet basic security requirements
