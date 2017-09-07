@@ -33,9 +33,9 @@ ms.custom: intune-azure
 This topic helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
 As an Intune admin, you can simplify  enrollment in the following ways:
-- Enable automatic enrollment (Azure AD premium required)
-- CNAME registration
-- Enable bulk enrollment  (Azure AD premium and Windows Configuration Designer required)
+- [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
+- [CNAME registration]()
+- Enable bulk enrollment  (Azure AD Premium and Windows Configuration Designer required)
 
 Two factors determine how you can simplify Windows device enrollment:
 
@@ -54,8 +54,8 @@ Devices that run the Windows 10 Creators Update, and are Azure Active Directory 
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## Enable Windows enrollment without Azure AD Premium
-You can simplify enrollment for your users by creating a DNS alias (CNAME record type) that automatically redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.
+## Simplify Windows enrollment without Azure AD Premium
+You can simplify enrollment for your users by creating a domain name server (DNS) alias (CNAME record type) that automatically redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.
 
 **Step 1: Create CNAME** (optional)<br>
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
