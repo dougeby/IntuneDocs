@@ -23,9 +23,12 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 
 4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
 
-  - **None**
-  - **Some**
-  - **All**
+  - **None** - MDM automatic enrollment disabled
+  - **Some** - Select the **Groups** that can automatically enroll their Windows 10 devices
+  - **All** - All users can automatically enroll their Windows 10 devices
+
+      > [!IMPORTANT]
+      > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
 
    ![Screenshot of the Azure portal](../media/auto-enroll-scope.png)
 
@@ -33,9 +36,6 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
     - **MDM Terms of use URL**
     - **MDM Discovery URL**
     - **MDM Compliance URL**
-
-    > [!IMPORTANT]
-    > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
 
 6. Select **Save**.
 
