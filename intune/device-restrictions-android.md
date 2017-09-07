@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -85,7 +85,7 @@ If you configure the **Numeric complex** setting, and then assign it to a device
 
 In the restricted apps list, you can configure one of the following lists for both Android, and Samsung KNOX Standard devices:
 
-A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
+A **Prohibited apps** list - List the apps (not managed by Intune) that will be reported if users install and run.
 An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install other apps. Apps that are managed by Intune are automatically allowed.
 Device profiles that contain restricted app settings must be assigned to groups of users.
 
@@ -112,6 +112,21 @@ You can also click **Import** to get the list from a csv file. Use the format <*
 - **Cookies (Samsung KNOX only)** - Allows the device web browser to use cookies.
 - **Javascript (Samsung KNOX only)** - Allows the device web browser to run Java scripts.
 - **Pop-ups (Samsung KNOX only)** - Allows the use of the pop-up blocker in the web browser.
+
+## Allow or Block apps
+
+These settings can be used to specify apps that can be installed, or launched on devices that run Samsung KNOX Standard only.
+Additionally, you can also specify installed apps that will be hidden from the device user. Users cannot run these apps.
+
+- **Apps allowed to be installed (Samsung KNOX Standard only)**
+- **Apps blocked from launching (Samsung KNOX Standard only)**
+- **Apps hidden from user (Samsung KNOX Standard only)**
+
+For each setting, configure a list of apps using one of the following:
+
+- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package. 
+- **Add apps by URL** - Enter the app name, and it's URL in the Google Play store.
+- **Add managed apps** - From the list of apps you manage with Intune, select the app you require.
 
 ## Cloud and Storage
 
