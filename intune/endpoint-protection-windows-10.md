@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune endpoint protection settings for Windows 10
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control endpoint protection settings like BitLocker on Windows 10 devices."
 keywords:
 author: robstackmsft

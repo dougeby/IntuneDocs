@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for macOS devicestitleSuffix: "Intune on Azure"
+title: Intune custom settings for macOS devicestitleSuffix: "Azure portal"
 description: Learn the settings you can use in a macOS custom profile."
 keywords:
 author: robstackmsft

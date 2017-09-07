@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Apple School Manager Program enrollment for iOS devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
 keywords:
 author: nathbarn

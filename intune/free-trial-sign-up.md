@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sign up for a 30-day free trial of Microsoft Intune
-titleSuffix:
+titleSuffix: "Azure portal"
 description: How to sign up for a 30-day free trial of Intune."
 keywords:
 author: lindavr
@@ -54,11 +54,11 @@ When you sign up for a trial, you will also receive an email message that contai
 There are three portals you use for the Intune Azure portal:
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune in the Azure portal](what-is-intune.md).
 - The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
-- The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been added to Azure.
+- The Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been added to Azure.
 
 Normally, you’ll do your work in the Intune dashboard, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
-You can go to the classic Intune admin console from the dashboard by choosing **Classic portal** at the top of your dashboard.
+You can go to the Intune admin console from the dashboard by choosing **Classic portal** at the top of your dashboard.
 
 To return to the Intune Azure portal, enter https://portal.azure.com in your browser address bar and then choose **Intune** again from the services list.
 
@@ -75,7 +75,7 @@ To get from Intune back to the Office 365 Admin center, enter https://portal.off
 
 ## Next steps
 
-### Intune on Azure
+### Intune in the Azure portal
 Learn more about [Intune in the Azure portal](what-is-intune.md)
 
 ### Integration with other products

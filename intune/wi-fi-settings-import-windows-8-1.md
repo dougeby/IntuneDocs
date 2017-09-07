@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Import Wi-Fi settings for Windows 8.1 and latertitleSuffix: "Intune on Azure"
+title: Import Wi-Fi settings for Windows 8.1 and latertitleSuffix: "Azure portal"
 description: How to import Wi-Fi settings from Windows into an Intune Wi-Fi profile."
 keywords:
 author: lleonard-msft

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and assign on-premises Exchange conditional access policy
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune."
 keywords:
 author: andredm7

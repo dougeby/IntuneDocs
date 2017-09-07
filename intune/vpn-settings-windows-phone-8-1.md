@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows Phone 8.1 devicestitleSuffix: "Intune on Azure"
+title: Intune VPN settings for Windows Phone 8.1 devicestitleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows Phone 8.1 devices."
 keywords:
 author: lleonard-msft
@@ -34,7 +34,7 @@ Depending on the settings you choose, not all values in the list below will be c
 
 ## Base VPN settings
 
-- **Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
+- **Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the Azure portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
 - **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
 - **Authentication method** - Choose how devices will authenticate to the VPN server from:
 	- **Certificates** - Under **Authentication certificate**, Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](certificates-configure.md).

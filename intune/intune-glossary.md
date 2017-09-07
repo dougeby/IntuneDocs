@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune glossary
-titleSuffix:
+titleSuffix: Azure portal
 description: Learn about some of the terminology used in Microsoft Intune
 keywords:
 author: robstackmsft
@@ -94,7 +94,7 @@ ms.custom: intune-azure
 ## I
 |||
 |-|-|
-|Intune portal|The Azure portal you use for most Intune management operations.|
+|Azure portal|The Azure portal you use for most Intune management operations.|
 |Intune software client|An alternative way of [managing some Windows PCs](/intune-classic/get-started/choose-how-to-manage-devices) for help deciding which method to use.|
 |Intune Software Publisher|A tool you use to [define apps you want to deploy and upload them to your cloud storage space](/intune-classic/deploy-use/add-apps).|
 |Inventory|Use to view the [hardware of, and the software installed](/intune/device-inventory) on devices you manage.|

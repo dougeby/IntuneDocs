@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Windows 10 edition upgrades with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to upgrade Windows 10 devices you manage to a different edition."
 keywords:
 author: robstackmsft

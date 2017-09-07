@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll iOS devices- Apple Configurator-Setup Assistant
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
 author: nathbarn

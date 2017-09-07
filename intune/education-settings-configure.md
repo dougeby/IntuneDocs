@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Intune education settings for Windows 10titleSuffix: "Intune on Azure"
+title: Configure Intune education settings for Windows 10titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure Windows 10 education settings on devices you manage."
 keywords:
 author: robstackmsft

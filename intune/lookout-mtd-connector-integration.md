@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up your Lookout integration with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Set up your Lookout subscription with Intune
 keywords:
 author: andredm7

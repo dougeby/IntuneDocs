@@ -2,7 +2,7 @@
 # required metadata
 
 title: Check Point SandBlast Mobile connector with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Check Point SandBlast integration with Intune"
 keywords:
 author: andredm7

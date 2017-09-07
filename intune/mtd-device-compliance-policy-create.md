@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Mobile Threat Defense device compliance policy with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Create Mobile Threat Defense device compliance policy in Intune"
 keywords:
 author: andredm7

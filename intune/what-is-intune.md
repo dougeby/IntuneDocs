@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Introduction to Intune on the Azure portal
-titleSuffix: "Intune on Azure"
-description: Get the basics about Intune on the Azure portal, and how it can help you manage your devices."
+title: Introduction to Intune in the Azure portal
+titlesuffix: "Azure portal"
+description: Get the basics about Intune in the Azure portal, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -80,7 +80,7 @@ Check the [Azure portal](https://docs.microsoft.com/azure/azure-preview-portal-s
 
 ## What's in this library?
 
-The documentation reflects the layout of the Intune portal to make it easier to find the information you need.
+The documentation reflects the layout of the Azure portal to make it easier to find the information you need.
 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage transferring data between iOS apps
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Use this topic to understand how you can use the iOS Open-in feature and mobile app management policies to manage data transfers between apps."
 keywords:
 author: andredm7

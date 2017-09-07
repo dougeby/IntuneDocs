@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune shared device settings for the iOS Classroom app
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
 author: robstackmsft

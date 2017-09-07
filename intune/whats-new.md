@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new in Microsoft Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Find out what's new in the Intune Azure portal
 keywords:
 author: brenduns  
@@ -128,10 +128,10 @@ IT admins can now set app-based conditional policies via the new conditional acc
 An [updated list of DNS names and IP addresses](/intune/network-bandwidth-use) is available for firewall proxy settings.
 
 ### Use Azure Active Directory for conditional access <!-- 967947 -->
-Conditional access is available in the Azure Active Directory section of the Azure console and provides a more powerful and flexible framework for setting policies for cloud apps like Office 365 Exchange Online and SharePoint Online.  Use the **Conditional access in Azure Active Directory** blade to configure policies instead of the classic Intune console. Existing policies in the classic Intune console need to be re-created in the Azure console. For more information, see [Create Azure AD conditional access policies](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+Conditional access is available in the Azure Active Directory section of the Azure portal and provides a more powerful and flexible framework for setting policies for cloud apps like Office 365 Exchange Online and SharePoint Online.  Use the **Conditional access in Azure Active Directory** blade to configure policies instead of the Intune console. Existing policies in the Intune console need to be re-created in the Azure portal. For more information, see [Create Azure AD conditional access policies](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Azure portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
 
 ### Administration roles being replaced in Azure portal
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
@@ -173,7 +173,7 @@ We are letting you know this in advance, even though we don't have specific date
 Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
 version of the Company Portal and take advantage of the new features it will offer.
 
-Go to the Intune on Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
+Go to the Intune in the Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
 
 
 ### Apple to require updates for Application Transport Security <!--748318-->

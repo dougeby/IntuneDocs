@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sync devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to synchronize devices with Intune to get the latest policies and actions."
 keywords:
 author: robstackmsft

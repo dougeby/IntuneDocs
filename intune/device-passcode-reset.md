@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset a device passcode with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to reset the passcode on devices you manage with Intune."
 keywords:
 author: robstackmsft
