@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose how to enroll Windows devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to set up enrollment of Windows devices in Microsoft Intune."
 keywords:
 author: nathbarn

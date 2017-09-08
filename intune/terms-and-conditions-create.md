@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set terms and conditions in Microsoft Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: nathbarn
@@ -37,14 +37,14 @@ You can create multiple sets of terms and assign them to different groups, such 
 ## Create terms and conditions
 Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
 
-1. In the Intune portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
+1. In the Azure portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
 2. Select **Create**.
-![Screenshot of the Intune portal showing Create button for terms and conditions](media/terms-create-terms.png)
+![Screenshot of the Azure portal showing Create button for terms and conditions](media/terms-create-terms.png)
 3. On the expanded blade, specify the following information:
 
-   - **Display name**: The name for the terms in the Intune portal. Users don't see this name.
+   - **Display name**: The name for the terms in the Azure portal. Users don't see this name.
 
-   - **Description**: Optional details that help you identify this set of terms in the Intune portal.
+   - **Description**: Optional details that help you identify this set of terms in the Azure portal.
 
 4. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
 
@@ -69,9 +69,9 @@ The following example shows the terms and conditions in the admin console and th
 
 You can assign terms and conditions to groups of user who must accept them before using the Company Portal.
 
-1. In the Intune portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
+1. In the Azure portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
 2. In the list of terms and conditions, select the terms you want to assign, and then select **Assigned Groups**.
-![Screenshot of the Intune portal's Assign Group blade showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
+![Screenshot of the Azure portal's Assign Group blade showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
 3. Click the **Select Group** button and in the **Select Groups** blade, select the groups you want to assign the terms, and then click **Select**. Dynamic groups cannot be assigned Terms and Conditions.
 4. In the **Assigned Groups** blade, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions only need to be accepted once. Users with multiple devices don't have to accept on each device.
 

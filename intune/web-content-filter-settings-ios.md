@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune web content filter settings for iOS devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the settings you can use to allow and block access to websites from iOS devices."
 keywords:
 author: robstackmsft

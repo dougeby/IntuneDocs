@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restrictions settings for iOStitleSuffix: "Intune on Azure"
+title: Intune device restrictions settings for iOStitleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
 author: robstackmsft

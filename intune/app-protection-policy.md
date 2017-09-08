@@ -2,7 +2,7 @@
 # required metadata
 
 title: What are app protection policies
-titleSuffix: "Intune on Azure"
+titleSuffix: "Azure portal"
 description: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
 author: mattbriggs

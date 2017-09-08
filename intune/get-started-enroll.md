@@ -2,7 +2,7 @@
 # required metadata
 
 title: Getting started enrolling devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the enrollment experience by going through a full enrollment experience of an iOS device.
 keywords:
 author: barlanmsft

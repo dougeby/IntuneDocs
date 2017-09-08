@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new in previous months in the Microsoft Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Review older announcements from the Intune what's new page
 keywords:
 author: mtillman
@@ -121,7 +121,7 @@ In this release, we've expanded the support for managing the iOS Classroom app t
 ### Changes to Intune built-in apps <!-- 1332306 -->
 Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
-In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Azure portal.
 
 ### Easier installation of Office 365 apps <!--- 1121362 --->
 The new **Office 365 ProPlus** app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices that you manage which run the latest version of Windows 10. Additionally, you can also install Microsoft Project, and Microsoft Visio, if you own licenses for them. The apps you want are bundled together and appear as one app in the list of apps in the Intune console.
@@ -129,7 +129,7 @@ For more information, see [How to add Office 365 apps for Windows 10](apps-add-o
 
 
 ### Support for offline apps from the Microsoft Store for Business <!--- 777044 --->
-Offline apps you purchased from the Microsoft Store for Business will now be synchronized to the Intune portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
+Offline apps you purchased from the Microsoft Store for Business will now be synchronized to the Azure portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
 
 ### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
 The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
@@ -175,9 +175,9 @@ This update is only visible on devices running Windows 10 Anniversary Update (bu
 
 
 ### Microsoft Intune and Conditional Access admin consoles are generally available
-We’re announcing the general availability of both the new Intune on Azure admin console and the Conditional Access admin console. Through Intune on Azure, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
+We’re announcing the general availability of both the new Intune in the Azure portal admin console and the Conditional Access admin console. Through Intune in the Azure portal, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
 
-Intune is now visible without the **preview** label in the Azure console at portal.azure.com.
+Intune is now visible without the **preview** label in the Azure portal at portal.azure.com.
 
 There is no action required for existing customers at this time, unless you have received one of a series of messages in the message center requesting that you take action so that we can migrate your groups. You may have also received a message center notice informing you that migration is taking longer due to bugs on our side. We are diligently continuing work to migrate any impacted customer.
 
@@ -228,7 +228,7 @@ You can also configure additional settings to provide a non-blocking notificatio
 For more information, see [iOS app protection policy settings](app-protection-policy-settings-ios.md) and [Android app protection policy settings](app-protection-policy-settings-android.md).
 
 #### Configure app configurations for Android for Work <!-- 621621 -->
-Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Intune portal with a configuration designer or a JSON editor. For more information, see [Use app configurations for Android for Work](app-configuration-policies-use-android.md).
+Some Android apps from the store support managed configuration options that let an IT admin control how an app runs in the work profile. With Intune, you can now view the configurations supported by an app, and configure them from the Azure portal with a configuration designer or a JSON editor. For more information, see [Use app configurations for Android for Work](app-configuration-policies-use-android.md).
 
 #### New app configuration capability for MAM without enrollment <!-- 677969 -->
 You can now create app configuration policies through the MAM without enrollment channel. This feature is equivalent to the app configuration policies available in the mobile device management (MDM) app configuration. For an example of app configuration using MAM without enrollment, see  [Manage Internet access using Managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).
@@ -423,7 +423,7 @@ You can also use these reports to drill down into an individual device to view s
 - Windows 10 Professional Education N --->
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Azure portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
 ## February 2017

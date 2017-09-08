@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune device restriction settings for Android
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
@@ -73,8 +73,8 @@ Use these settings with an Android device restriction policy to configure device
 <sup>1</sup> Before you assign this setting to devices, ensure to update the Company Portal app to the latest version on those devices.
 
 If you configure the **Numeric complex** setting, and then assign it to a device running a version of Android earlier than 5.0, the following behavior applies.
-- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device and an error is displayed in the Intune portal.
-- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 do not support this setting. No error is displayed in the Intune portal.
+- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device and an error is displayed in the Azure portal.
+- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 do not support this setting. No error is displayed in the Azure portal.
 
 
 ## Google Play Store

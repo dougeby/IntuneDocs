@@ -2,7 +2,7 @@
 # required metadata
 
 title: Conditional access with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Common ways to use conditional access with Intune"
 keywords:
 author: andredm7

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Android apps with app protection policies
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: This topic describes what to expect when your Android app is managed by app protection policies."
 keywords:
 author: mattbriggs

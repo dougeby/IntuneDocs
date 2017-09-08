@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: RBAC with IntunetitleSuffix: "Intune Azure preview"
+title: RBAC with IntunetitleSuffix: "Azure portal"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
 author: andredm7
@@ -37,7 +37,7 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
 
-Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
+Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
@@ -51,12 +51,12 @@ Starting at the new Intune portal, **Azure Active Directory (Azure AD)** provide
 	> [!TIP]
 	> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
 
-## Roles created in the Intune classic console
+## Roles created in the Intune classic portal
 
-Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic console to Intune on Azure. You need to re-assign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
+Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You need to re-assign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
 
 > [!IMPORTANT]
-> You might need to keep the Intune Service Administrator access in the classic console if your admins still need access to manage PC’s using with Intune.
+> You might need to keep the Intune Service Administrator access in the classic portal if your admins still need access to manage PC’s using with Intune.
 
 ## Built-in roles
 

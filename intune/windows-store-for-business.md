@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage apps from Microsoft Store for Business 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track them."
 keywords:
 author: robstackmsft
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune portal. For example:
+The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
@@ -69,7 +69,7 @@ You can now continue, and set up synchronization in the Intune console.
 1. On the **Mobile Apps** blade, choose **Setup** > **Microsoft Store for Business**.
 2. Click **Enable**.
 3. If you haven't already done so, click the link to sign up for the Microsoft Store for Business and associate your account as detailed previously.
-5. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business is displayed in the Intune portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
+5. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business is displayed in the Azure portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
 6. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 ## Synchronize apps

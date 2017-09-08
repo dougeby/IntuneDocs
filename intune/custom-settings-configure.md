@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Intune custom device settingstitleSuffix: "Intune on Azure"
+title: How to configure Intune custom device settingstitleSuffix: "Azure portal"
 description: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft

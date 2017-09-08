@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remotely lock managed devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to remotely lock devices you manage."
 keywords:
 author: robstackmsft

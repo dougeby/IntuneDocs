@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage devices with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: nathbarn
