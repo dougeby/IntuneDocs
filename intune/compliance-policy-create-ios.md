@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOStitleSuffix: "Intune on Azure"
+title: How to create a compliance policy for iOStitleSuffix: "Azure portal"
 description: Learn how to create a compliance policy for iOS devices."
 keywords:
 author: andredm7

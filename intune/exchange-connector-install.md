@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up the Exchange connector for on-premises EAS with Intune
-titleSuffix: "Intune Azure"
-description: "Intune Azure: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
+titleSuffix: "Azure portal"
+description: "Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
 keywords:
 author: andredm7
 ms.author: andredm
@@ -36,7 +36,7 @@ On-premises Exchange Server environments can use the Intune on-premises Exchange
 
 To set up a connection that enables Microsoft Intune to communicate with the on-premises Exchange Server, you need to follow the steps below:
 
-1.  Download the Intune on-premises Exchange Connector from the Intune portal.
+1.  Download the Intune on-premises Exchange Connector from the Azure portal.
 2.  Install and configure the Intune on-premises Exchange connector.
 3.  Validate the Exchange connection.
 

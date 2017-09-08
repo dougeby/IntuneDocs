@@ -25,11 +25,11 @@ ms.suite: ems
 ms.custom: intune-classic
 
 ---
-# What's new in the Intune classic console - previous months
+# What's new in the Intune classic portal - previous months
 
 [!INCLUDE[classic-portal](./includes/classic-portal.md)]
 
-This page lists new features and notices previously announced on the [What's new page](whats-new.md) for the Intune classic console.
+This page lists new features and notices previously announced on the [What's new page](whats-new.md) for the Intune classic portal.
 
 ## April 2017
 
@@ -72,7 +72,7 @@ You can see the new progress bar on the [what's new in Intune app UI page](whats
 
 You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](/intune-classic/deploy-use/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
-### What's new in the public preview of the Intune admin experience on Azure <!--736542-->
+### What's new in the public preview of Intune in the Azure portal<!--736542-->
 
 In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
 
@@ -86,13 +86,13 @@ You can find what's new in the Intune preview in Azure [here](whats-new.md).
 
 #### Direct access to Apple enrollment scenarios <!--951869-->
 
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the Azure portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
-#### What's coming for Appx in Intune on Azure <!-- 1000270 -->
+#### What's coming for Appx in Intune in the Azure portal <!-- 1000270 -->
 
-As part of the migration to Intune on Azure, we are making three appx changes:
+As part of the migration to Intune in the Azure portal, we are making three appx changes:
 
-1. Adding a new appx app type in the classic Intune console that can only be deployed to MDM-enrolled devices.
+1. Adding a new appx app type in the Intune console that can only be deployed to MDM-enrolled devices.
 2. Repurposing the existing appx app type to only be targeted to PCs managed through the Intune PC agent.
 3. Converting all existing appxs into MDM appxs with the migration.
 
@@ -102,7 +102,7 @@ This will not impact any of your existing deployments to devices that are manage
 
 ##### What action do I need to take
 
-After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune on Azure](https://aka.ms/appxchange) on the Intune Support team blog.  
+After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune in the Azure portal](https://aka.ms/appxchange) on the Intune Support team blog.  
 
 #### Administration roles being replaced in Azure portal
 
@@ -240,7 +240,7 @@ You can find before and after images on the [UI updates page](whats-new-app-ui.m
 ### Associate multiple management tools with the Microsoft Store for Business <!--926135-->
 If you are using more than one management tool to deploy Microsoft Store for Business apps, previously, you could only associate one of these with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
-## What's new in the public preview of the Intune admin experience on Azure <!--736542-->
+## What's new in the public preview of Intune in the Azure portal <!--736542-->
 
 In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
 
@@ -299,7 +299,7 @@ The Company Portal for iOS is introducing a progress bar on the launch screen to
 
 ## December 2016
 
-### Public preview of the new Intune admin experience on Azure <!--736542-->
+### Public preview of Intune in the Azure portal<!--736542-->
 In early calendar year 2017, we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs. In advance of the general availability of this portal for all Intune tenants, we're excited to announce that we will begin rolling out a preview of this new admin experience later this month to select tenants.
 
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](/intune/what-is-intune).

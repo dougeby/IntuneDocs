@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset passcode on Windows devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to reset the passcode on Windows devices integrated with the Microsoft PIN Reset Service."
 keywords:
 author: robstackmsft

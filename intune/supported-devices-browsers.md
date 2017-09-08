@@ -37,7 +37,7 @@ Before you start setting up Microsoft Intune, review the following requirements:
 - [Supported devices and computers](#intune-supported-devices)
 - [List of supported web browsers use Intune](#intune-supported-web-browsers)
 
-You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([Classic console](/intune-classic/get-started/network-bandwidth-use)) .
+You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
 
 ## Intune supported devices
 
@@ -49,7 +49,7 @@ Intune cannot be used to manage Windows Server operating systems.
 
 ### Windows PC software client
 
-An [Intune software client](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic console. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
+An [Intune software client](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
 
 <!--  ### Exchange ActiveSync management
 
@@ -60,7 +60,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Different administrative tasks require that you use one of the following administrative websites.
 
 - [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune portal](https://portal.azure.com/)
+- [Azure portal](https://portal.azure.com/)
 
 The following browsers are supported for these portals:
 - Microsoft Edge (latest version)
@@ -73,12 +73,12 @@ The following browsers are supported for these portals:
 
 Intune classic-only features, such as Intune PC software client and integration with Mobile Threat Defense partners, are only available in the Intune classic portal (https://manage.microsoft.com). The Intune classic portal requires Silverlight browser support.
 
-The following Silverlight browsers support the classic Intune console:
+The following Silverlight browsers support the Intune console:
 - Internet Explorer 10 or later
 - Google Chrome (versions prior to version 42)
 - Mozilla Firefox with Silverlight enabled [Learn more](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> Microsoft Edge and mobile browsers are not supported for the Intune classic console because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
+> Microsoft Edge and mobile browsers are not supported for the Intune classic portal because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use Intune and a sign-in status of **Allowed**.

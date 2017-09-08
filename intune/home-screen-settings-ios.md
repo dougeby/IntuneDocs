@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune Home screen layout settings for iOS devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the settings you can use customize the home screen and dock on iOS devices."
 keywords:
 author: robstackmsft
@@ -66,7 +66,7 @@ Add the pages you want to appear on the home screen, and the apps that appear on
 
 
 1. On the **Pages** blade, choose **Add**.
-2. On the **Add Row** blade, enter a **Page name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+2. On the **Add Row** blade, enter a **Page name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 3. Choose **Add**, then choose whether you want to add an **App**, or a **Folder** to the page.
 4. Using the information in this topic, configure the apps and folders you want to appear on the page.
 
@@ -82,7 +82,7 @@ When you assign the policy to an iPhone, the result is a page that looks similar
 
 ## How to add an app to the list
 
-1. Enter the **App Name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+1. Enter the **App Name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 2. Enter the **App Bundle ID** of the app you want to display. See **Bundle ID reference for built-in iOS apps** later in this topic for help.
 3. Click **OK**, then continue to add items, up to a maximum of **6** for the device dock, and **60** for a device page.
 4. When you are finished, click **OK**.
@@ -93,8 +93,8 @@ Apps that you add to a page in a folder are arranged from left to right, in the 
 
 1. Enter the **Folder name**. This name is displayed to users on their device.
 2. Choose **Add** to create a page in the folder. You can add up to 20 pages.
-3. On the **Add Row** blade, enter a name for the page. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
-3. Enter the **App Name**. This name is used for your reference in the Intune portal, and *is not displayed* on the iOS device.
+3. On the **Add Row** blade, enter a name for the page. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
+3. Enter the **App Name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 2. Enter the **App Bundle ID** of the app you want to display. See **How to add an app to the list** for help.
 3. Choose **Add**. You can add up to 60 items.
 4. When you are finished, click **OK**.

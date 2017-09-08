@@ -2,7 +2,7 @@
 # required metadata
 
 title: View Intune device inventory 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
 author: robstackmsft

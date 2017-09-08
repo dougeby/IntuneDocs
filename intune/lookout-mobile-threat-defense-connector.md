@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lookout Mobile Threat Defense connector with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Set up Lookout Mobile Threat Defense connector with Intune.
 keywords:
 author: andredm7

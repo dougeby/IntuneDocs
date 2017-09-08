@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable Mobile Threat Defense connector with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Enable Mobile Threat Defense connector in Intune.
 keywords:
 author: andredm7

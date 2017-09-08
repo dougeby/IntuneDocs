@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate conditional access policies from Intune classic portal to the Azure portal
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Migrate conditional access policies from Intune classic portal to the Azure portal.
 keywords:
 author: andredm7
@@ -39,7 +39,7 @@ If you’re ready to move to the Azure portal, follow the steps in this topic to
 
 - Follow the steps in this topic to re-create these policies in the Azure portal.
 
-- Disable the conditional policies in the Intune classic console, after you have verified that the new policies are working as expected in the Azure portal.
+- Disable the conditional policies in the Intune classic portal, after you have verified that the new policies are working as expected in the Azure portal.
 <br /><br />
 	- **Before you disable** the conditional access policies in the Intune classic portal, plan how you'll move users over to the new policy. There are two approaches:
 <br /><br />
@@ -88,7 +88,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 	![User group UI comparison between the Intune and Azure portals](./media/reassign-ca-1.png)
 
 	> [!IMPORTANT] 
-	> The selection you make for the Azure portal should correspond to the selection you made for the Intune portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
+	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
 
 5. After you choose your group, click **Select**, and then click **Done**.
 
@@ -156,7 +156,7 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 	![User group UI comparison between the Intune and Azure portals](./media/reassign-ca-12.png)
 
 	> [!IMPORTANT] 
-	> The selection you make for the Azure portal should correspond to the selection you made for the Intune portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
+	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
 
 5. After you choose your group, click **Select**, and then click **Done**.
 

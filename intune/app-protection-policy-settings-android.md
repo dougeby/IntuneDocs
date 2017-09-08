@@ -2,7 +2,7 @@
 # required metadata
 
 title: Android app protection policy settings
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: This topic describes the app protection policy settings for Android devices."
 keywords:
 author: mattbriggs

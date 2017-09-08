@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune device restriction settings for Windows 10
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
 keywords:
 author: robstackmsft

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile Threat Defense with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Azure portal"
 description: "Protect access to company resources based on device risk"
 keywords:
 author: andredm7

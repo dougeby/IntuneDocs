@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for Android devicestitleSuffix: "Intune on Azure"
+title: Intune custom settings for Android devicestitleSuffix: "Azure portal"
 description: Learn the settings you can use in an Android custom profile."
 keywords:
 author: robstackmsft

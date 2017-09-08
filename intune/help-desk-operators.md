@@ -1,6 +1,6 @@
 ---
 title: Help desk troubleshooting portal
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Help desk staff use the troubleshooting portal to solve users' technical problems  
 keywords:
 author: NathBarn
@@ -38,14 +38,14 @@ For example, when a user contacts support with a technical issue with Intune, th
 -	App installation failure
 
 ## Add help desk operators
-As an Intune admin, you can assign the Help Desk Operator role to a user group. Members of that group can use the admin portal to troubleshoot users' problems. Each help desk operator must have an Intune license to access the Intune portal. Learn how to [assign Intune licenses](licenses-assign.md).
+As an Intune admin, you can assign the Help Desk Operator role to a user group. Members of that group can use the Azure portal to troubleshoot users' problems. Each help desk operator must have an Intune license to access the Azure portal. Learn how to [assign Intune licenses](licenses-assign.md).
 
 To add help desk users:
 1. [Add users to Intune](users-add.md) if necessary.
 2. [Create a help desk group](groups-add.md) and add users to the group.
 3. [Assign the RBAC Help Desk Operator role](role-based-access-control.md#built-in-roles).
 
-  ![Screenshot of Intune portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
+  ![Screenshot of Azure portal showing the Intune roles highlighted and a list of built-in roles including Help Desk Operator](./media/help-desk-user-add.png)
   You can also [create a custom role](role-based-access-control.md#custom-roles) which you can further modify to give help desk operators access.  Help desk operators require the following permissions to help troubleshoot user problems:
     - MobileApps: Read
     - ManagedApps: Read

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for Android devicestitleSuffix: "Intune on Azure"
+title: Intune Wi-Fi settings for Android devicestitleSuffix: "Azure portal"
 description: Learn Intune configure Wi-Fi connection settings on Android and Android for Work devices."
 keywords:
 author: lleonard-msft

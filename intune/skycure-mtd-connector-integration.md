@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Skycure integration with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Set up the Skycure integration with Microsoft Intune.
 keywords:
 author: andredm7
