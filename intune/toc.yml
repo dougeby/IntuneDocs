@@ -523,55 +523,57 @@
     items:
     - name: Connect to the Data Warehouse with Power BI
       href: reports-proc-get-a-link-powerbi.md
-- name: Develop and customize
+- name: Automate and customize
   items:
-  - name: Configure custom device settings
-    href: custom-settings-configure.md
-    items:
-    - name: Android
-      href: custom-settings-android.md
+  - name: How to
+  - items:    
+    - name: Configure custom device settings
+      href: custom-settings-configure.md
       items:
-      - name: Wi-Fi profile with a pre-shared key
-        href: wi-fi-profile-shared-key.md
-      - name: Per-app VPN profile
-        href: android-pulse-secure-per-app-vpn.md
-      - name: Allow/block apps for Samsung KNOX Standard
-        href: samsung-knox-apps-allow-block.md
-    - name: iOS
-      href: custom-settings-ios.md
-    - name: macOS
-      href: custom-settings-macos.md
-    - name: Windows Phone 8.1
-      href: custom-settings-windows-phone-8-1.md
-    - name: Windows 10
-      href: custom-settings-windows-10.md
-    - name: Android for Work
-      href: custom-settings-android-for-work.md
-  - name: Prepare LOB apps for app protection
-    href: apps-prepare-mobile-application-management.md
-    items:
-    - name: App Wrapping Tool for iOS
-      href: app-wrapper-prepare-ios.md
-    - name: App Wrapping Tool for Android
-      href: app-wrapper-prepare-android.md
-  - name: Sideload Windows apps
-    href: app-sideload-windows.md
-  - name: Intune App SDK
-    href: app-sdk.md
-    items:
-    - name: Get started with Intune App SDK
-      href: app-sdk-get-started.md
-    - name: Intune App SDK for iOS
-      href: app-sdk-ios.md
-    - name: Intune App SDK for Android
-      href: app-sdk-android.md
-    - name: Intune App SDK Cordova plugin
-      href: app-sdk-cordova.md
-    - name: Intune App SDK Xamarin component
-      href: app-sdk-xamarin.md
-  - name: How to use Intune Graph APIs
-    href: intune-graph-apis.md
-  - name: Intune Graph API
+      - name: Android
+        href: custom-settings-android.md
+        items:
+        - name: Wi-Fi profile with a pre-shared key
+          href: wi-fi-profile-shared-key.md
+        - name: Per-app VPN profile
+          href: android-pulse-secure-per-app-vpn.md
+        - name: Allow/block apps for Samsung KNOX Standard
+          href: samsung-knox-apps-allow-block.md
+      - name: iOS
+        href: custom-settings-ios.md
+      - name: macOS
+        href: custom-settings-macos.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: custom-settings-windows-10.md
+      - name: Android for Work
+        href: custom-settings-android-for-work.md
+    - name: Prepare LOB apps for app protection
+      href: apps-prepare-mobile-application-management.md
+      items:
+      - name: App Wrapping Tool for iOS
+        href: app-wrapper-prepare-ios.md
+      - name: App Wrapping Tool for Android
+        href: app-wrapper-prepare-android.md
+    - name: Sideload Windows apps
+      href: app-sideload-windows.md
+    - name: Intune App SDK
+      href: app-sdk.md
+      items:
+      - name: Get started with Intune App SDK
+        href: app-sdk-get-started.md
+      - name: Intune App SDK for iOS
+        href: app-sdk-ios.md
+      - name: Intune App SDK for Android
+        href: app-sdk-android.md
+      - name: Intune App SDK Cordova plugin
+        href: app-sdk-cordova.md
+      - name: Intune App SDK Xamarin component
+        href: app-sdk-xamarin.md
+    - name: Graph APIs for Intune
+      href: intune-graph-apis.md
+  - name: Graph APIs for Intune Reference
     href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
   - name: Intune Data Warehouse API
     href: reports-nav-intune-data-warehouse.md
