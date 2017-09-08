@@ -66,6 +66,6 @@ The certificate is associated with the Apple ID used to create it. Renew the MDM
 3. Find the certificate you want to renew and select **Renew**.
 4. On the **Renew Push Certificate** screen, provide notes to help you identify the certificate in the future, select **Choose File** to browse to the new requet file you downloaded, and choose **Upload**.
 5. On the **Confirmation** screen, select **Download** and save the .pem file locally.
-6. In the Azure Azure portal, select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
+6. In the Azure portal, select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
 
 Your Apple MDM push certificate appears **Active** and has 365 days until expiration.

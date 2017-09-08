@@ -66,7 +66,7 @@ In this step, choose the Office apps you want to assign to devices.
 
 ## Configure app information
 
-In this step, provide information about the app suite. This information helps you to identify it in Intune, and also help end users to find it in the Company Portal app.
+In this step, provide information about the app suite. This information helps you to identify it in Intune, and also helps users to find it in the Company Portal app.
 
 1.	On the **Add App** blade, choose **App Suite Information**.
 2.	On the **App Suite Information** blade, specify the following information: 

@@ -35,7 +35,7 @@ This topic tells administrators how they can add users to Intune and what admini
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *global administrator* and *service administrator* permissions.
 
 ## Add users to Intune
-You can manually add users to your Intune subscription via the [Office 365 portal](https://www.office.com/signin) or the [Azure Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). An administrator can edit user accounts to assign Intune licenses. You can assign licenses in either the Office 365 portal or the Intune Azure portal. For more information on using the Office 365 portal, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+You can manually add users to your Intune subscription via the [Office 365 portal](https://www.office.com/signin) or the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). An administrator can edit user accounts to assign Intune licenses. You can assign licenses in either the Office 365 portal or the Intune Azure portal. For more information on using the Office 365 portal, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### Add Intune users in the Office 365 Admin Center
 1. Sign in to [Office 365 portal](https://www.office.com/signin) with a global administrator or user management administrator account.
@@ -58,7 +58,7 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 5. Assign an Intune license. Select **Product licenses** and choose the product license. A license including Intune is required.
 6. Choose **Add** to create the new user.
 
-### Add Intune users in the Azure Azure portal
+### Add Intune users in the Azure portal
 1. Sign in to [Azure portal](https://portal.azure.com) and go **More services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
 2. Select **Users**.
 3. In the Admin center, select **New user**.

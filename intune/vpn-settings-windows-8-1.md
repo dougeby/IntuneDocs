@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 8.1 devicestitleSuffix: "Azure portal"
+title: Intune VPN settings for Windows 8.1 devices
+titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 8.1 devices."
 keywords:
 author: lleonard-msft
@@ -35,7 +36,7 @@ Depending on the settings you choose, not all values in the list below will be c
 ## Base VPN settings
 
 
-- **Apply all settings to Windows 8.1 only** - This is a setting you can configure in the Azure portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 devices.
+- **Apply all settings to Windows 8.1 only** - This is a setting you can configure in the Intune classic portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 devices.
 - **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
 - **Servers** - Add one or more VPN servers that devices will connect to.
 	- **Add** - Opens the **Add Row** blade where you can specify the following information:
