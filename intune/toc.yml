@@ -526,7 +526,7 @@
 - name: Automate and customize
   items:
   - name: How to
-  - items:    
+    items:    
     - name: Configure custom device settings
       href: custom-settings-configure.md
       items:
