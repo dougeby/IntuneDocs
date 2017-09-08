@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add iOS store apps to Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about adding iOS store apps to Intune."
 keywords:
 author: mattbriggs

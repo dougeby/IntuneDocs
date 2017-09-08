@@ -3,7 +3,7 @@
 
 
 title: How to get support for Microsoft Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Support is available both online and by telephone for paid and trial subscriptions."
 keywords:
 author: nathbarn

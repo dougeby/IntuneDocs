@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Manage software updates
-titleSuffix: "Configure Windows Update for Business settings - Intune"
+title: Configure Windows Update for Business settings in Intune
+titleSuffix: "Azure portal"
 description: Learn how to configure Windows Update for Business settings in Intune to control updates to Windows 10 devices."
 keywords:
 author: dougeby
@@ -61,20 +61,20 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	You can configure this setting manually, or you can use an Intune device restriction profile for Windows 10 and later. To do this, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [How to configure device restriction settings](device-restrictions-configure.md).
 
-- In the classic Intune administration console, there are four settings that control software updates behavior. These settings are part of the general configuration policy for Windows 10 desktop and Mobile devices:
+- In the Intune administration console, there are four settings that control software updates behavior. These settings are part of the general configuration policy for Windows 10 desktop and Mobile devices:
 	- **Allow automatic updates**
 	- **Allow pre-release features**
 	- **Scheduled Install Day**
     - **Scheduled Install Time**
 
-  The classic console also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured in the classic Intune administration console when you migrate to the Azure portal, we strongly recommend that you do the following:
+  The classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured in the Intune administration console when you migrate to the Azure portal, we strongly recommend that you do the following:
 
 1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting is not supported in the Azure portal because it is no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.
 
   > [!NOTE]
-  > Windows 10 updates settings created in the classic console are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings will be removed from the policy.
+  > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings will be removed from the policy.
 
-2. Delete the update settings in the classic console. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there will be a conflict and no easy way to know because the setting configured in the classic console does not display in the Azure portal.
+2. Delete the update settings in the classic portal. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there will be a conflict and no easy way to know because the setting configured in the classic portal does not display in the Azure portal.
 
 ## How to create and assign update rings
 

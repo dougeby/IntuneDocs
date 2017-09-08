@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate iOS lost mode with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to activate lost mode on lost or stolen iOS devices."
 keywords:
 author: robstackmsft

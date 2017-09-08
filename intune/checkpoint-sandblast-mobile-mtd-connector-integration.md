@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Check Point SandBlast integration with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Set up the Check Point SandBlast integration with Intune"
 keywords:
 author: andredm7

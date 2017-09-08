@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune classic groups in the Azure portal
-titleSuffix: "Intune on Azure"
+titleSuffix: "Azure portal"
 description: Learn what's new with groups in the Intune Azure portal
 keywords:
 author: nathbarn
@@ -46,7 +46,7 @@ Some of the Intune groups capabilities you previously might have used are not av
 - The option to **Exclude specific members** from a group does not exist in the Azure portal. You can, however, use an Azure AD security group with advanced rules to replicate this behavior. For example, to create an advanced rule that includes all people in your Sales department in a security group, but excludes those groups with the word "Assistant" in their title, you could use this advanced rule:
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
-- The **All Exchange ActiveSync Managed Devices** group in the Intune console was not migrated to Azure AD. You can, however, still access information about EAS-managed devices from the Azure portal.
+- The **All Exchange ActiveSync Managed Devices** group in the Intune classic console was not migrated to Azure AD. You can, however, still access information about EAS-managed devices from the Azure portal.
 
 ## How to get started?
 
@@ -59,9 +59,9 @@ Some of the Intune groups capabilities you previously might have used are not av
 
 
 ## What happened to Intune groups?
-When groups are migrated from the classic Intune portal to Intune in the Azure portal, the following rules are applied:
+When groups are migrated from the Azure portal to Intune in the Azure portal, the following rules are applied:
 
-| Groups in classic Intune|Groups in Azure AD|
+| Groups in Intune|Groups in Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |Static user group|Static Azure AD security group|
 |Dynamic user group|Static Azure AD security groups with an Azure AD security group hierarchy|
@@ -73,7 +73,7 @@ When groups are migrated from the classic Intune portal to Intune in the Azure p
 
 ## Group hierarchy
 
-In the classic Intune console, all groups had a parent group. Groups could only contain members of their parent group. In Azure AD, child groups can contain members not in their parent group.
+In the Intune console, all groups had a parent group. Groups could only contain members of their parent group. In Azure AD, child groups can contain members not in their parent group.
 
 ## Group attributes
 Attributes are device properties that may be used in defining groups. This table describes how those criteria migrate to Azure AD security groups.
@@ -92,4 +92,4 @@ Attributes are device properties that may be used in defining groups. This table
 
 ## What happens to policies and apps you previously deployed?
 
-Policies and apps continue to be deployed to groups, just like before. However, you now manage these groups from the Azure portal, instead of the classic Intune console.
+Policies and apps continue to be deployed to groups, just like before. However, you now manage these groups from the Azure portal, instead of the Intune console.

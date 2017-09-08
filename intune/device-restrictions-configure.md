@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Intune device restriction settingstitleSuffix: "Intune on Azure"
+title: Configure Intune device restriction settingstitleSuffix: "Azure portal"
 description: Learn how to use Intune to configure settings and features on devices you manage."
 keywords:
 author: robstackmsft

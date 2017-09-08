@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with users
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Add a user to Intune to allow them to access company resources on mobile devices.
 keywords:
 author: barlanmsft

@@ -37,7 +37,7 @@ This page is updated periodically. Check back for additional updates.
 
 <!--
 
-## What's coming to Intune on the Azure portal  
+## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
 ## Notices
 
@@ -45,7 +45,7 @@ This page is updated periodically. Check back for additional updates.
 
 
 
-## Intune on the Azure portal
+## Intune in the Azure portal
 
 
 ### Google Play Protect support on Android <!-- 908720  -->  

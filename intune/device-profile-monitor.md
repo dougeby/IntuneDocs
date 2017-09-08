@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to monitor device profiles with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to monitor assigned Intune device profiles."
 keywords:
 author: robstackmsft

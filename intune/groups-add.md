@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set enrollment restrictions in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: nathbarn
@@ -38,8 +38,8 @@ You can add the following types of groups:
 ## Add a new group
 
 Use the following steps to create a new group.
-1. In the Intune portal, go **Groups** and then choose **New group** in the **All groups** blade.
-  ![Screenshot of the Intune portal with New Group selected](./media/groups-add-new.png)
+1. In the Azure portal, go **Groups** and then choose **New group** in the **All groups** blade.
+  ![Screenshot of the Azure portal with New Group selected](./media/groups-add-new.png)
 2. Specify the **Name** and **Description** of the new group. These properties only appear in the management portal and are not displayed to users.
 
 3. Choose **Membership type**:

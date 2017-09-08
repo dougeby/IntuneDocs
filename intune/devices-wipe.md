@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use factory reset or remove company data on devices using Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to remove company data on a device or to factory reset the device.
 keywords:
 author: nathbarn
@@ -113,7 +113,7 @@ If the device is on and connected, it takes less than 15 minutes for a remove da
 
 ## Delete devices from the Azure Active Directory portal
 
-Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove device records from the Azure console that you know are unreachable and unlikely to communicate with Azure again.
+Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove device records from the Azure portal that you know are unreachable and unlikely to communicate with Azure again.
 
 1.  Sign in to the [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) with your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com) and then choose **Admin** &gt; **Azure AD** from using the link on the left side of the page.
 3.  Create an Azure subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting device profiles in Microsoft Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
 author: robstackmsft
@@ -65,7 +65,7 @@ When two or more policies are assigned to the same user or device, the evaluatio
 
 -   The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy.
 
--   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Azure portal. You must manually resolve such conflicts.
 
 ## What happens when app protection policies conflict with each other? Which one will be applied to the app?
 Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.

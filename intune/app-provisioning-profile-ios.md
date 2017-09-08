@@ -2,7 +2,7 @@
 # required metadata
 
 title: App provisioning profiles 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
 author: mattbriggs

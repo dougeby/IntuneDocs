@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add Windows store apps to IntunetitleSuffix: "Intune on Azure"
+title: How to add Windows store apps to IntunetitleSuffix: "Azure portal"
 description: Learn about adding Windows store apps to Intune."
 keywords:
 author: mattbriggs

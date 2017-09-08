@@ -88,7 +88,7 @@ Intune also allows you to manage and deploy apps that you purchased in volume fr
 
 -   [Manage volume-purchased apps for iOS devices](vpp-apps-ios.md). You buy multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). You need to set up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune. You can then synchronize your volume-purchase information with Intune and track your volume-purchased app use.
 
--   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
+-   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Azure portal.
 
 ## Protect company data
 

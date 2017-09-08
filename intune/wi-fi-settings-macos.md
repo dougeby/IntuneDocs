@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for macOS devicestitleSuffix: "Intune on Azure"
+title: Intune Wi-Fi settings for macOS devicestitleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to configure Wi-Fi connections on macOS devices."
 keywords:
 author: lleonard-msft
