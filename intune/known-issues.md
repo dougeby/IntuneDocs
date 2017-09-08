@@ -106,7 +106,8 @@ For more information about these settings, see [macOS device restriction setting
 
 ### Compliance policies from Intune do not show up in new console
 
-Compliance policies you created in the classic portal are migrated, but are not displayed in the Azure portal because of design changes in the Azure portal. Compliance policies you created in the Intune classic portal are still enforced, but you must view and edit them in the c;assoc portal.
+Compliance policies you created in the classic portal are migrated, but are not displayed in the Azure portal because of design changes in the Azure portal. Compliance policies you created in the Intune classic portal are still enforced, but you must view and edit them in the classic portal.
+
 Additionally, new compliance policies you create in the Azure portal are not visible in the classic portal.
 
 For more information, see [What is device compliance](device-compliance.md).
