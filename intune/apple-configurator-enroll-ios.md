@@ -32,8 +32,8 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment. You can enroll devices into Intune with Apple Configurator in two ways:
-- **Setup Assistant enrollment** - Factory resets the device, prepares it to enroll during Setup Assistant.
-- **Direct enrollment** - Does not factory-reset the device and enrolls the device through iOS settings. This method only supports devices with **no user affinity**.
+- **Setup Assistant enrollment** - Factory resets the device and prepares it to enroll during Setup Assistant.
+- **Direct enrollment** - Does not factory reset the device and enrolls the device through iOS settings. This method only supports devices with **no user affinity**.
 
 Apple Configurator enrollment methods can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
@@ -45,9 +45,6 @@ Apple Configurator enrollment methods can't be used with the [device enrollment 
 - Device serial numbers (Setup Assistant enrollment only)
 - USB connection cables
 - Mac PC running [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
-
-> [!NOTE]
-> Multifactor authentication (MFA) doesn't work during DEP enrollment set up for user affinity. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
 
 ## Create an Apple Configurator profile for devices
 
@@ -64,6 +61,10 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 
 7. Specify **User Affinity**:
    - **Enroll with user affinity** - The device must be affiliated with a user with Setup Assistant and can then access company data and email. User affinity is required for managed devices that belong to users and that need to use the Company Portal for services like installing apps. Only supported for Setup Assistant enrollment. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+   > [!NOTE]
+   > Multifactor authentication (MFA) doesn't work during enrollment set up with user affinity. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+
    - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work. Required for direct enrollment.
 
 6. Select **Create** to save the profile.
@@ -118,7 +119,7 @@ After you create the profile and assign serial numbers, you must export the prof
 
 1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
   > [!WARNING]
-  > Devices reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
+  > Devices are reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
 
 2. In the **preferences** pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 3. Enter the **Host name or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
@@ -146,6 +147,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 1. Sign in to the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Export Profile** blade, choose **Download profile** to download the enrollment profile.
+
   ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-de.png)
 
 4. Transfer the file to a Mac computer running [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to iOS devices.
