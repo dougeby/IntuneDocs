@@ -2,7 +2,7 @@
 # required metadata
 
 title: Skycure connector with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Skycure connector integration with Intune."
 keywords:
 author: andredm7

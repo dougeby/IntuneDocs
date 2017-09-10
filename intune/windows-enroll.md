@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll Windows devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: nathbarn
@@ -80,7 +80,7 @@ If you have more than one UPN suffix, you need to create one CNAME for each doma
 Changes to DNS records might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
 
 **Step 2: Verify CNAME** (optional)<br>
-In the Azure Intune portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
+In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
 ## Tell users how to enroll Windows devices
 Tell your users how to enroll their Windows devices and what to expect after they're brought into management. For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).

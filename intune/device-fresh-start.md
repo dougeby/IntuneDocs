@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset Windows 10 devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Fresh Start to reset Windows 10 PCs running Intune."
 keywords:
 author: robstackmsft

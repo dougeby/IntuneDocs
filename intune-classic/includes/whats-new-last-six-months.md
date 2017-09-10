@@ -55,9 +55,9 @@ You can find what's new in the Intune preview in Azure [here](/intune/whats-new)
 
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
-#### What's coming for Appx in Intune on Azure <!-- 1000270 -->
+#### What's coming for Appx in Intune in the Azure portal <!-- 1000270 -->
 
-As part of the migration to Intune on Azure, we are making three appx changes:
+As part of the migration to Intune in the Azure portal, we are making three appx changes:
 
 1. Adding a new appx app type in the classic Intune console that can only be deployed to MDM-enrolled devices.
 2. Repurposing the existing appx app type to only be targeted to PCs managed through the Intune PC agent.
@@ -69,7 +69,7 @@ This will not impact any of your existing deployments to devices that are manage
 
 ##### What action do I need to take
 
-After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune on Azure](https://aka.ms/appxchange) on the Intune Support team blog.  
+After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune in the Azure portal](https://aka.ms/appxchange) on the Intune Support team blog.  
 
 #### Administration roles being replaced in Azure portal
 

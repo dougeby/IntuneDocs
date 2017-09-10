@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: andredm7

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Per-app VPN profile for Android - Pulse Secure
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to create a per-app VPN profile for Android devices managed by Intune."
 keywords:
 author: robstackmsft

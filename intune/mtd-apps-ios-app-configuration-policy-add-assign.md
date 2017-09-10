@@ -2,8 +2,8 @@
 # required metadata
 
 title: Add and assign MTD apps into Intune
-titleSuffix: Intune on Azure
-description: "Add MTD apps, Microsoft Authenticator app and iOS configuration policy into the Intune on Azure"
+titleSuffix: Azure portal
+description: "Add MTD apps, Microsoft Authenticator app, and iOS configuration policy with Intune in the Azure portal"
 keywords:
 author: andredm7
 ms.author: andredm
@@ -121,7 +121,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 ### For Skycure
 
--   Use the same Azure AD account previously configured in the [Skycure Management console](https://aad.skycure.com), which should be the same account used to log in into the Intune classic console.
+-   Use the same Azure AD account previously configured in the [Skycure Management console](https://aad.skycure.com), which should be the same account used to log in to the Intune classic portal.
 
 -   You need to **download** the iOS app configuration policy file: 
 	-   Go to [Skycure Management console](https://aad.skycure.com) and sign in with your admin credentials.

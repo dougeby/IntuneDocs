@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune policy allow/block apps for Samsung KNOX
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Create a custom profile to allow and block apps for Samsung KNOX Standard devices."
 keywords:
 author: robstackmsft

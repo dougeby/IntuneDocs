@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Intune device configuration profiles
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to create Intune device configuration profiles."
 keywords:
 author: robstackmsft

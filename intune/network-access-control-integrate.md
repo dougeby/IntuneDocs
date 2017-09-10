@@ -2,7 +2,7 @@
 # required metadata
 
 title: Network access control integration with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Network access control (NAC) integration with Intune
 keywords:
 author: andredm7

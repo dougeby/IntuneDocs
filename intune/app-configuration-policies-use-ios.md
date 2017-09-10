@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to use Intune app configuration policies for iOS
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: mattbriggs

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune app notification settings for iOS devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the settings you can use to control notifications from apps on iOS devices."
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add Windows Phone 8.1 store apps to IntunetitleSuffix: "Intune on Azure"
+title: How to add Windows Phone 8.1 store apps to IntunetitleSuffix: "Azure portal"
 description: Learn about adding Windows Phone 8.1 store apps to Intune."
 keywords:
 author: mattbriggs

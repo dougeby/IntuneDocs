@@ -2,8 +2,8 @@
 # required metadata
 
 title: Getting started with the Azure portal
-titleSuffix: "Intune on Azure"
-description: Learn about creating and sharing dashboards in Intune on Azure.
+titlesuffix: "Azure portal"
+description: Learn about creating and sharing dashboards in Intune in the Azure portal.
 keywords:
 author: barlanmsft
 ms.author: barlan

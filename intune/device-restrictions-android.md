@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune device restriction settings for Android
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -73,8 +73,8 @@ Use these settings with an Android device restriction policy to configure device
 <sup>1</sup> Before you assign this setting to devices, ensure to update the Company Portal app to the latest version on those devices.
 
 If you configure the **Numeric complex** setting, and then assign it to a device running a version of Android earlier than 5.0, the following behavior applies.
-- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device and an error is displayed in the Intune portal.
-- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 do not support this setting. No error is displayed in the Intune portal.
+- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device and an error is displayed in the Azure portal.
+- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 do not support this setting. No error is displayed in the Azure portal.
 
 
 ## Google Play Store
@@ -85,7 +85,7 @@ If you configure the **Numeric complex** setting, and then assign it to a device
 
 In the restricted apps list, you can configure one of the following lists for both Android, and Samsung KNOX Standard devices:
 
-A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
+A **Prohibited apps** list - List the apps (not managed by Intune) that will be reported if users install and run.
 An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install other apps. Apps that are managed by Intune are automatically allowed.
 Device profiles that contain restricted app settings must be assigned to groups of users.
 
@@ -112,6 +112,21 @@ You can also click **Import** to get the list from a csv file. Use the format <*
 - **Cookies (Samsung KNOX only)** - Allows the device web browser to use cookies.
 - **Javascript (Samsung KNOX only)** - Allows the device web browser to run Java scripts.
 - **Pop-ups (Samsung KNOX only)** - Allows the use of the pop-up blocker in the web browser.
+
+## Allow or Block apps
+
+These settings can be used to specify apps that can be installed, or launched on devices that run Samsung KNOX Standard only.
+Additionally, you can also specify installed apps that will be hidden from the device user. Users cannot run these apps.
+
+- **Apps allowed to be installed (Samsung KNOX Standard only)**
+- **Apps blocked from launching (Samsung KNOX Standard only)**
+- **Apps hidden from user (Samsung KNOX Standard only)**
+
+For each setting, configure a list of apps using one of the following:
+
+- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package. 
+- **Add apps by URL** - Enter the app name, and its URL in the Google Play store.
+- **Add managed apps** - From the list of apps you manage with Intune, select the app you require.
 
 ## Cloud and Storage
 

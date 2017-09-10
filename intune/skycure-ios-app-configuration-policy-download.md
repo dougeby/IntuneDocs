@@ -2,7 +2,7 @@
 # required metadata
 
 title: Download Skycure iOS app configuration policy to use with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Download Skycure iOS app configuration policy to use with Intune.
 keywords:
 author: andredm7
@@ -49,7 +49,7 @@ You need to log in to the Skycure Management Console to perform the next steps.
 
 3.  Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.
 
-4.  Click on the **Integration setup files** link and save the generated \*.zip file. The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in the Intune classic console.
+4.  Click on the **Integration setup files** link and save the generated \*.zip file. The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in the Intune classic portal.
 
 ![Skycure Integration setup files](./media/skycure-ios-app-2.png)
 

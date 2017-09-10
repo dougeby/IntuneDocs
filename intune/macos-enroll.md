@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll macOS devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll macOS devices in Intune."
 keywords:
 author: nathbarn
