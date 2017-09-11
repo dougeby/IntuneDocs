@@ -49,7 +49,6 @@ There are two categories of policy settings: data relocation settings and access
   >[!NOTE]
   >The encryption method for the **Encrypt app data** setting is **not** FIPS 140-2 certified.
 
-
   ## Data transfer exemptions
 
   There are some exempt apps and platform services that Intune app protection policy may allow data transfer to and from. For example, all Intune-enlightened apps on Android must be able to transfer data to and from the Google Text-to-speech, so that text from your mobile device screen can be read aloud. This list is subject to change and reflects the services and apps considered useful for secure productivity.
