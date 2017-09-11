@@ -46,6 +46,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of September 11, 2017
+
+### Device enrollment
+
+#### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
+
+End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
 
 ## Week of August 21, 2017
 
@@ -94,10 +101,6 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 
 
 ### App management
-
-#### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
-
-End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
 
 
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
