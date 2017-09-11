@@ -46,6 +46,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of September 11, 2017
+
+### Device enrollment
+
+#### Inform end users what device information can be seen for iOS <!--739894-->
+
+We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
 
 ## Week of August 21, 2017
 
