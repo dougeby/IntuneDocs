@@ -50,9 +50,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Device enrollment
 
+
 #### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
 
 End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
+
+#### Inform end users what device information can be seen for iOS <!--739894-->
+
+We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
 
 ## Week of August 21, 2017
 
@@ -132,6 +137,12 @@ IT admins can now set app-based conditional policies via the new conditional acc
 
 
 ## Notices
+
+### Company Portal for Windows 8.1 and Windows Phone 8.1 moving to sustaining mode <!--1428681-->
+
+Beginning in October 2017, the Company Portal apps for Windows 8.1 and Windows Phone 8.1 will move to sustaining mode. This means that the apps and existing scenarios, such as enrollment and compliance, will continue to be supported for these platforms. These apps will continue to be available for download through existing release channels, such as the Microsoft Store. 
+
+Once in sustaining mode, these apps will only will receive critical security updates. There will be no additional updates or features released for these apps. For new features, we recommend that you update devices to Windows 10 or Windows 10 Mobile. 
 
 ### IP addresses for Intune updated <!-- 1175274 -->
 An [updated list of DNS names and IP addresses](/intune/network-bandwidth-use) is available for firewall proxy settings.
