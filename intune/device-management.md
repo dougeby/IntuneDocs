@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage devices with Intune
-titlesuffix: "Azure portal"
+titleSuffix: "Intune on Azure"
 description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: nathbarn
@@ -32,12 +32,19 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+As an IT admin, you must ensure that managed devices are providing the resources your end users need to do their work while protecting that data from risk.
+
 The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices. To access the workload:
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
-4. You can view information about devices and perform the remote device actions listed.
+4. You can view information about devices and perform the remote device actions on the following :
+	- **Overview** - A snapshot of the enrolled devices you manage.
+	- **All devices** - A list of the enrolled devices you manage. Choose **Filter** or **Columns** to refine the information displayed. Select a device to [view device inventory](device-inventory.md).
+	- **Azure AD devices** - A list of the devices registered or joined with Azure Active Directory (AD). Learn more about [Azure AD devices management](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+	- **Device actions** - A history of the remote actions performed on devices including the action, its status, who initiated the action, and the time.
+	- **TeamViewer** - TeamViewer service allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](device-profile-android-teamviewer.md).
 
 ## Available device actions
 The actions available depend on the device platform, and the configuration of the device.

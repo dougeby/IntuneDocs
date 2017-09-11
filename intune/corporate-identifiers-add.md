@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can identify a device as corporate-owned in a variety of ways. Intune can collect additional information from corporate-owned devices. You can also set device restrictions  to prevent enrollment by devices that aren't corporate-owned.
+As an Intune admin, you can identify a device as corporate-owned in a variety of ways. Intune can collect additional information from corporate-owned devices including the full phone number of the device and an inventory of apps on the device. You can also set device restrictions to prevent enrollment by devices that aren't corporate-owned.
 
 A device is identified as corporate-owned if any of the following conditions are true:
 
