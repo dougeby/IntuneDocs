@@ -116,7 +116,7 @@ In this release, we are adding new [device restriction settings](device-restrict
 You can specify the app by URL, package name or from the list of apps you manage.
 
 #### New Azure AD app-based conditional access policy UI link from Intune
-
+<!-- 1016201 -->
 IT admins can now set app-based conditional policies via the new conditional access policy UI in the Azure AD workload. The app-based conditional access that is in the Intune App Protection section in the Azure portal will remain there for the time being and will be enforced side-by-side. There’s also a convenience link to the new conditional access policy UI in the Intune workload.
 
 - Learn more about [app-based conditional access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
