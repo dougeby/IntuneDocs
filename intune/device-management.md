@@ -38,12 +38,15 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Devices**.
-4. You can view information about devices and perform the remote device actions on the following :
-	- **Overview** - A snapshot of the enrolled devices you manage.
+3. In **Intune**, choose **Devices**.
+4. You can view information about devices and perform the remote device actions as follows:
+	- **Overview** - A snapshot of the enrolled devices you can manage.
 	- **All devices** - A list of the enrolled devices you manage. Choose **Filter** or **Columns** to refine the information displayed. Select a device to [view device inventory](device-inventory.md).
-	- **Azure AD devices** - A list of the devices registered or joined with Azure Active Directory (AD). Learn more about [Azure AD devices management](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+	- **Azure AD devices** - A list of the devices registered or joined with Azure Active Directory (AD). Learn more about [Azure AD device management](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 	- **Device actions** - A history of the remote actions performed on devices including the action, its status, who initiated the action, and the time.
+
+	![Monitor device actions](./media/monitor-device-actions.png)
+
 	- **TeamViewer** - TeamViewer service allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](device-profile-android-teamviewer.md).
 
 ## Available device actions
@@ -68,4 +71,3 @@ The actions available depend on the device platform, and the configuration of th
 ## Next steps
 
 - Choose **Device Actions** to see the status of actions taken on devices you manage.
-![Monitor device actions](./media/monitor-device-actions.png)
