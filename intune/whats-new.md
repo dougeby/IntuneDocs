@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -94,6 +94,12 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 
 
 ### App management
+
+#### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
+
+End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
+
+
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
 
