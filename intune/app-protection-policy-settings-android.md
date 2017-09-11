@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
