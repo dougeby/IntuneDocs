@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+## Week of September 11, 2017
+
+### Device enrollment
+
+#### Easier to understand phrasing for the Company Portal app for Android <!---1396349--->  
+
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
 
 
 ## Week of August 21, 2017
