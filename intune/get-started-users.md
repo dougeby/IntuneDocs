@@ -5,8 +5,8 @@ title: Get started with users
 titlesuffix: "Azure portal"
 description: Add a user to Intune to allow them to access company resources on mobile devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Get started with managing users
 
-Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune. 
+Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune.
 
 ## How do I create a user?
 
