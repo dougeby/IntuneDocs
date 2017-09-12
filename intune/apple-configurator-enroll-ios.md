@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/28/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -155,6 +155,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
   1. On a Mac computer, open Apple Configurator 2.0.
   2. Connect the iOS device to the Mac computer with a USB cord. Close Photos, iTunes, and other apps that open for the device when the device is detected.
   3. In Apple Configurator, choose the connected iOS device, and then choose the **Add** button. Options that can be added to the device appear in the drop-down list. Choose **Profiles**.
+
   ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-add-profile.png)
   4. Use the file picker to select the .mobileconfig file that you exported from Intune, and then choose **Add**. The profile is added to the device. If the device is Unsupervised, the installation requires acceptance on the device.
 6. Use the following steps to install the profile on the iOS device. The device must have already completed the Setup Assistant and be ready to use. If enrollment entails app deployments, the device should have an Apple ID set up because the app deployments requires that you have an Apple ID signed in for the App Store.
