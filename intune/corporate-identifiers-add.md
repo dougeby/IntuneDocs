@@ -30,14 +30,14 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can identify a device as corporate-owned in a variety of ways. Intune can collect additional information from corporate-owned devices. You can also set device restrictions  to prevent enrollment by devices that aren't corporate-owned.
+As an Intune admin, you can identify devices as corporate-owned to refine management and identification. Intune can perform additional management tasks and collect additional information such as the full phone number and an inventory of apps from corporate-owned devices. You can also set device restrictions to block enrollment by devices that aren't corporate-owned.
 
 A device is identified as corporate-owned if any of the following conditions are true:
 
 - Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
 - Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
 - [Identified as corporate-owned before enrollment](#identify-corporate-owned-devices-with-imei-or-serial-number) with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
-- Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device (Windows 10 only)
+- Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device
 - The device's properties list [device ownership as corporate](#change-device-ownership)
 
 ## Identify corporate-owned devices with IMEI or serial number
