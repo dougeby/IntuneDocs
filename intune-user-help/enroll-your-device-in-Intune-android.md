@@ -61,14 +61,14 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 6.  On the **Company Access Setup** screen, tap **BEGIN**.
 
-    ![Company access setup screen](../media/android_cp_enroll_02_post_1709.png)
+    ![Company access setup screen](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
 7. On the **Benefits of device management** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
 
-	![Benefits of device management screen](../media/android_cp_enroll_02_post_1709.png)
+	![Benefits of device management screen](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Review a list of what your IT admin can and can't see on your device, and then tap **CONTINUE**.
 
@@ -121,13 +121,13 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If a message indicates that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
 
-    ![Device is not compliant but is enrolled](../media/android_cp_enroll_05_post_1709.png)
+    ![Device is not compliant but is enrolled](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Device compliance issues appear that need resolution](../media/android_cp_enroll_03_post_1709.png)
+    ![Device compliance issues appear that need resolution](/intune/media/android_cp_enroll_03_post_1709.png)
 
     You can find out more about the issues by tapping on them.
 
-    ![Device compliance issues expanded](../media/android_cp_enroll_04_post_1709.png)
+    ![Device compliance issues expanded](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
 
