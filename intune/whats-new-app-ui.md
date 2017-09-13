@@ -30,7 +30,7 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 ## Week of September 11, 2017
 
-### Easier to understand phrasing for the Company Portal app for Android <!---1396349--->  
+### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
 
 The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
 
