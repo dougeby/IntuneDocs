@@ -105,7 +105,7 @@ Send your users to [Send logs to your IT admin by email](/intune-user-help/send-
 ## Your company support needs to give you access to company resources
 
 ### Where it appears
-If you have not added the Company Portal app to the Allow or exempt list, and a user attempts to sign in, the sign in will fail. The following message displays:
+If you have not added the Company Portal app to the **Allowed apps** or **Exempt apps** list, and a user attempts to sign in, the sign in will fail. The following message displays:
 
 > **Your company support needs to give you access to company resources**  
 > Your company is using Windows Information Protection policies to protect your device. Your company support will need to make sure they allow the Company Portal to access those.
