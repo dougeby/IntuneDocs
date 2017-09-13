@@ -126,7 +126,7 @@ After you create the profile and assign serial numbers, you must export the prof
 
   You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
-5.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
+5.  Select the iOS devices you want to manage, and then choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
 6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
 7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
 8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
@@ -157,7 +157,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
   3. In Apple Configurator, choose the connected iOS device, and then choose the **Add** button. Options that can be added to the device appear in the drop-down list. Choose **Profiles**.
 
     ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-add-profile.png)
-    
+
   4. Use the file picker to select the .mobileconfig file that you exported from Intune, and then choose **Add**. The profile is added to the device. If the device is Unsupervised, the installation requires acceptance on the device.
 6. Use the following steps to install the profile on the iOS device. The device must have already completed the Setup Assistant and be ready to use. If enrollment entails app deployments, the device should have an Apple ID set up because the app deployments requires that you have an Apple ID signed in for the App Store.
    1. Unlock the iOS device.
