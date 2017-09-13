@@ -4,8 +4,8 @@
 title: Allowed and blocked apps for KNOX 
 description: Custom profile to create a list of allowed and blocked apps for KNOX.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article

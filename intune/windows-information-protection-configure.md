@@ -4,8 +4,8 @@
 title: Configure Windows Information Protection - IntunetitleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to manage Windows Information Protection."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 04/14/2017
 ms.topic: article

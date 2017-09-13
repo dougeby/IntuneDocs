@@ -4,8 +4,8 @@
 title: Common ways to use Intune
 description: Lists six of the most common tasks that Intune helps with
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: get-started-article
