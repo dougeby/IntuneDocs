@@ -58,7 +58,7 @@ End users will soon not have to enroll their device to access the Company Portal
 
 The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
 
-## Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
+#### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
 
 The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list. 
 
