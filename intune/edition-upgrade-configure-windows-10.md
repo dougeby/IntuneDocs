@@ -5,8 +5,8 @@ title: Configure Windows 10 edition upgrades with Intune
 titlesuffix: "Azure portal"
 description: Learn how to use Intune to upgrade Windows 10 devices you manage to a different edition."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/26/2017
 ms.topic: article
