@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -125,6 +125,8 @@ Now that you've installed your token, you can create an enrollment profile for D
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
 	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
+
+  - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
 
 	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 

@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,17 +44,8 @@ By the way, Apple School Manager enrollment can't be used with [Apple's Device E
 - User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Devices purchased from the [Apple School Management](http://school.apple.com) program
 
-**Apple School Manager Enrollment steps**
-1. [Get an Apple School Manager token and assign devices](#get-the-apple-token-and-assign-devices)
-2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
-3. [Connect School Data Sync](#connect-school-data-sync) (Optional)
-4. [Sync Apple School Manager-managed devices](#sync-managed-devices)
-5. [Assign Apple School Manager profile to devices](#assign-a-profile-to-devices)
-6. [Distribute devices to users](#distribute-devices-to-users)
-
 >[!NOTE]
 >Multifactor authentication (MFA) doesn't work during enrollment on Apple School Manager devices with user affinity. After enrollment, MFA works as expected on these devices. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
-
 
 ## Get the Apple token and assign devices
 
@@ -110,7 +101,8 @@ A device enrollment profile defines the settings applied to a group of devices d
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
 	 - **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu.
-   - **Shared iPad** - (Requires **Enroll without User Affinity** and **Supervised** mode.) Allows multiple users to log on to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal. Learn more about [shared iPad](education-settings-configure-ios-shared.md).
+   - **Shared iPad** - (Requires **Enroll without User Affinity** and **Supervised** mode.) Allows multiple users to log on to enrolled iPads by using a managed Apple ID. Managed Apple IDs are created in the Apple School Manager portal. Learn more about [shared iPad](education-settings-configure-ios-shared.md). You should also review [Apple's shared iPad requirements](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+
    >[!NOTE]
    >If **User Affinity** is set to **With user affinity**  or **Supervised** mode is set to **Off**, Shared iPad mode is disabled for the enrollment profile.
 
