@@ -54,7 +54,7 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. Choose **Device enrollment** > **Apple Enrollment**.
 4. In **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
-5. On the **Apple Configurator Enrollment Profiles** blade, select **Create**.
+5. Under **Apple Configurator Enrollment Profiles**, select **Create**.
 6. Type a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this Name field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about Azure Active Directory dynamic groups.
 
   ![Screenshot of the create profile screen with Enroll with user affinity selected](./media/apple-configurator-profile-create.png)
@@ -95,20 +95,20 @@ You assign an enrollment profile when you import iOS serial numbers for Apple Co
 
 #### Assign from Apple Configurator devices
 1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
-3. On the **Apple Configurator Devices** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
-4. On the **Assign Profile** blade, select the **New profile** you want to assign, and then select **Assign**.
+3. Under **Apple Configurator Devices**, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
+4. Under **Assign Profile**, select the **New profile** you want to assign, and then select **Assign**.
 
 #### Assign from profiles
 1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
 2. Choose **AC Profiles**, and select the profile that you want to assign to serial numbers.
-3. In the profile blade, choose **Assigned devices**, and then choose **Assign**.
+3. In the profile, choose **Assigned devices**, and then choose **Assign**.
 4. Filter to find device serial numbers you want to assign to the profile, select the devices, and then choose **Assign**.
 
 ### Export the profile
 After you create the profile and assign serial numbers, you must export the profile from Intune as a URL. You then import it into Apple Configurator on a Mac for deployment to devices.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **AC Profiles**, and then choose the profile to export.
-2. On the blade for the profile, select **Export Profile**.
+2. On the profile, select **Export Profile**.
 
   ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-sat.png)
 3. Copy the profile URL. You can then add it in Apple Configurator later to define the Intune profile used by iOS devices.
@@ -146,7 +146,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 ### Export the profile as .mobileconfig to iOS devices
 1. Sign in to the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Export Profile** blade, choose **Download profile** to download the enrollment profile.
+3. Under **Export Profile**, choose **Download profile** to download the enrollment profile.
 
   ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-de.png)
 
