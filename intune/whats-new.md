@@ -49,10 +49,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of September 11, 2017
 
 ### Device enrollment
-
 #### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->
 
 End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
+
+
+#### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
+
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
+
 
 ## Week of August 21, 2017
 
