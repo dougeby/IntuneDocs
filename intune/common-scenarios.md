@@ -19,7 +19,7 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: robstackmsft
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
