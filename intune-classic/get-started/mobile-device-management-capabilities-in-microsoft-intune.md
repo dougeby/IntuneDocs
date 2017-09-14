@@ -4,8 +4,8 @@
 title: Enrolled device management capabilities 
 description: Read this topic to find out how Intune can help you manage devices that you enroll.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/12/2016
 ms.topic: get-started-article

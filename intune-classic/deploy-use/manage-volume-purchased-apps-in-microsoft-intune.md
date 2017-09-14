@@ -4,8 +4,8 @@
 title: Manage volume-purchased apps
 description: Learn about how to use Intune to manage apps you purchased in volume from an app store.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article

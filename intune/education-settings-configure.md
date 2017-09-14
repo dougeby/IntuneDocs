@@ -4,8 +4,8 @@
 title: Configure Intune education settings for Windows 10titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure Windows 10 education settings on devices you manage."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/12/2017
 ms.topic: article

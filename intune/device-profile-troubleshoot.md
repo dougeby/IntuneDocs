@@ -5,8 +5,8 @@ title: Troubleshooting device profiles in Microsoft Intune
 titlesuffix: "Azure portal"
 description: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article

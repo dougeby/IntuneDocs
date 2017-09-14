@@ -5,8 +5,8 @@ title: Intune settings for the iOS Classroom app
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 06/28/2017
 ms.topic: article

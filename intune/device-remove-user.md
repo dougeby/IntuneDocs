@@ -5,8 +5,8 @@ title: Remove a user from an iOS device with Intune
 titlesuffix: "Azure portal"
 description: Learn how to remove a user from a shared iOS device with Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article

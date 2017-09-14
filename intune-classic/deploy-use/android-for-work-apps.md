@@ -4,8 +4,8 @@
 title: Deploy apps to Android for Work devices 
 description: Use this topic to synchronize, then deploy app to Android for Work devices from the Google Play for Work Store.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/03/2017
 ms.topic: article
