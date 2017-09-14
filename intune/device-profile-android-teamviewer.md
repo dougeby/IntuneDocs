@@ -5,8 +5,8 @@ title: How to use remotely administer Android devices using TeamViewer
 titlesuffix: "Azure portal"
 description: Learn how to remotely administer Android devices using TeamViewer."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: article

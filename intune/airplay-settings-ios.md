@@ -5,8 +5,8 @@ title: Intune AirPlay settings for iOS devices
 titlesuffix: "Azure portal"
 description: "Learn how you can use Intune to help automatically connect iOS devices to AirPlay compatible devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 07/03/2017
 ms.topic: article

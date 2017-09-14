@@ -5,8 +5,8 @@ title: Create Intune device configuration profiles
 titlesuffix: "Azure portal"
 description: Learn how to create Intune device configuration profiles."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 05/16/2017
 ms.topic: article

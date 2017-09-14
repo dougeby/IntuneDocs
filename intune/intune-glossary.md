@@ -5,8 +5,8 @@ title: Intune glossary
 titleSuffix: Azure portal
 description: Learn about some of the terminology used in Microsoft Intune
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/28/2017
 ms.topic: get-started-article

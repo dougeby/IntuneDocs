@@ -5,8 +5,8 @@ title: View Intune device inventory
 titlesuffix: "Azure portal"
 description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: get-started-article

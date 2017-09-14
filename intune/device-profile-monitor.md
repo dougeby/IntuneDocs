@@ -5,8 +5,8 @@ title: How to monitor device profiles with Intune
 titlesuffix: "Azure portal"
 description: Learn how to monitor assigned Intune device profiles."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 03/16/2017
 ms.topic: article
