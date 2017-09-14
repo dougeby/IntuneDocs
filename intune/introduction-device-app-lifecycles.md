@@ -4,8 +4,8 @@
 title: Overview of device and app lifecycles 
 description: Overview of the device and app lifecycles with Intune.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article

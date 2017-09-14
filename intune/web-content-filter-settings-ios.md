@@ -5,8 +5,8 @@ title: Intune web content filter settings for iOS devices
 titlesuffix: "Azure portal"
 description: Learn the settings you can use to allow and block access to websites from iOS devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 7/03/2017
 ms.topic: article

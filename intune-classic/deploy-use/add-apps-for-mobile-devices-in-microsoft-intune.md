@@ -4,8 +4,8 @@
 title: Add apps for enrolled devices 
 description: Before you can deploy an app, you must add it to Intune. Then it’s available in the Intune console, where you can deploy and manage it.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/11/2017
 ms.topic: article
