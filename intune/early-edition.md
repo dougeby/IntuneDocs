@@ -40,7 +40,7 @@ This page is updated periodically. Check back for additional updates.
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
 ## Notices
-
+   
 -->
 
   
