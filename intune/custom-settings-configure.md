@@ -4,8 +4,8 @@
 title: How to configure Intune custom device settingstitleSuffix: "Azure portal"
 description: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article

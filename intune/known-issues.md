@@ -4,8 +4,8 @@ title: "Known issues in Microsoft Intune in the Azure portal"
 titlesuffix: "Azure portal"
 description: Read about known issues in Intune"
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/14/2017
 ms.topic: get-started-article

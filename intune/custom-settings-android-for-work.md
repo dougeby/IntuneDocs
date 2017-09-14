@@ -5,8 +5,8 @@ title: Intune custom profile settings for Android for Work
 titlesuffix: "Azure portal"
 description: Learn how to create Intune custom profile settings for Android for Work devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 04/12/2017
 ms.topic: article

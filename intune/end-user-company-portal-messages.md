@@ -102,6 +102,17 @@ The second time that users sign in to the Company Portal app after denying acces
 ### How to explain this to your users
 Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). You can also send them to [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) if you want to let them compare the two methods.
 
+## Your company support needs to give you access to company resources
+
+### Where it appears
+If you have not added the Company Portal app to the **Allowed apps** or **Exempt apps** list, and a user attempts to sign in, the sign in will fail. The following message displays:
+
+> **Your company support needs to give you access to company resources**  
+> Your company is using Windows Information Protection policies to protect your device. Your company support will need to make sure they allow the Company Portal to access those.
+
+### What it means
+
+Add the Company Portal the **Allowed apps** or **Exempt apps** list in the Windows Information Protection (WIP) app protection policy. For more information, see [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### See also
 [What to tell your end users about using Intune](end-user-educate.md)

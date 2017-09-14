@@ -4,8 +4,8 @@
 title: Troubleshoot policies 
 description: Troubleshoot policy configuration issues.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 01/04/2017
 ms.topic: article

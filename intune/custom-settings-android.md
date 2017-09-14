@@ -4,8 +4,8 @@
 title: Intune custom settings for Android devicestitleSuffix: "Azure portal"
 description: Learn the settings you can use in an Android custom profile."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/08/2017
 ms.topic: article

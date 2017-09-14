@@ -5,8 +5,8 @@ title: Install Office 365 ProPlus apps to Windows 10 devices using Intune
 titlesuffix: "Azure portal"
 description: "Learn how you can use Intune to make it easier to install Office 365 apps on Windows 10 devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: dougeby
+ms.author: dougeby
 manager: angrobe
 ms.date: 08/14/2017
 ms.topic: article
