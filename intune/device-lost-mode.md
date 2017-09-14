@@ -5,8 +5,8 @@ title: Activate iOS lost mode with Intune
 titlesuffix: "Azure portal"
 description: Learn how to use Intune to activate lost mode on lost or stolen iOS devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article

@@ -5,8 +5,8 @@ title: What are device profiles in Microsoft Intune?
 titlesuffix: "Azure portal"
 description: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: get-started-article
