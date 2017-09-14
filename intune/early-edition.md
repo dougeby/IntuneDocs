@@ -43,7 +43,7 @@ This page is updated periodically. Check back for additional updates.
 
 -->
 
-
+  
 
 ## Intune in the Azure portal
 
