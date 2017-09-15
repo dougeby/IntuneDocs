@@ -57,21 +57,21 @@ You can only assign apps using this method if they are free of charge in the app
 
 1. In the **Add App** blade, choose **App Information**.
 2. In the **Edit App** blade, configure the app information. Once you are done, click **Add**. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
-- **Name** - Type the name of the app for display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, the company portal displays only one of the apps to users.
-- **Description** - Type a description for the app to displayed to users in the company portal.
-- **Publisher** - Type the name of the publisher of the app.
-- **Appstore URL** - Type the app store URL of the app you want to create.
+- **Name** -- Type the name of the app for display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, the company portal displays only one of the apps to users.
+- **Description** -- Type a description for the app to displayed to users in the company portal.
+- **Publisher** -- Type the name of the publisher of the app.
+- **Appstore URL** -- Type the app store URL of the app you want to create.
 - **Store country/region** -- Select the App store country locale.
-- **Minimum operating system** - From the list, choose the minimum operating system version on which the app can be installed. The app will not be installed on a device with an earlier operating system.
+- **Minimum operating system** -- From the list, choose the minimum operating system version on which the app can be installed. The app will not be installed on a device with an earlier operating system.
 - **Applicable device type** -- From the list, choose the devices that are used by the App.
 - **Category** (optional). Select one or more of the built-in app categories, or a category you created. Categories make it easier for users to find the app when they browse the company portal.
-- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-- **Information URL** - Optionally, type the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-- **Privacy URL** - Optionally, type the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-- **Developer** - Optionally, type the name of the app developer.
-- **Owner** - Optionally, type a name for the owner of this app, for example, **HR department**.
-- **Notes** - Type any notes you would like to associate with this app.
-- **Logo** - Upload an icon that is associated with the app. The icon is displayed with the app when users browse the company portal.
+- **Display this as a featured app in the Company Portal** -- Display the app prominently on the main page of the company portal when users browse for apps.
+- **Information URL** -- Optionally, type the URL of a website that contains information about this app. The URL displays to users in the company portal.
+- **Privacy URL** -- Optionally, type the URL of a website that contains privacy information for this app. The URL displays to users in the company portal.
+- **Developer** -- Optionally, type the name of the app developer.
+- **Owner** -- Optionally, type a name for the owner of this app, for example, **HR department**.
+- **Notes** -- Type any notes you would like to associate with this app.
+- **Logo** -- Upload an icon that is associated with the app. The icon is displayed with the app when users browse the company portal.
 3. When you are done, on the **Add App** blade, choose **OK**.
 
-The app you have created display in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+The app you have created displays in the apps list, where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
