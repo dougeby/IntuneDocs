@@ -2,13 +2,13 @@
 # required metadata
 
 title: Manage iOS volume-purchased apps 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 08/18/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+# How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -53,12 +53,17 @@ When you assign volume-purchased apps to a device, the end user of the device do
 When you assign an app to users, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
 When you assign a volume-purchased app to users, each end user must have a valid, and unique Apple ID in order to access the app store.
 
-
 Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program store with Intune. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
 
-
 ## Manage volume-purchased apps for iOS devices
+
+### Supports Apple Volume Purchase Program volume-purchased apps for iOS devices
+
 Purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+
+### Supports Business-to-Business volume-purchased apps for iOS devices
+
+In addition, third-party developers can also privately distribute apps to authorized Volume Purchase Program for Business members specified in iTunes Connect. These VPP for Business members can sign in to the Volume Purchase Program App Store and purchase their apps. VPP for Business apps purchased by the end user will sync to their Intune tenants.
 
 ## Before you start
 Before you start, you need to get a VPP token from Apple and upload it to your Intune account. Additionally, you should understand the following criteria:

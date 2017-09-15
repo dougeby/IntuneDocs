@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add iOS store apps to Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about adding iOS store apps to Intune."
 keywords:
 author: mattbriggs
@@ -49,8 +49,9 @@ You can only assign apps using this method if they are free of charge in the app
 4. In the **Mobile apps** workload, choose **Manage** > Apps.
 5. Above the list of apps, choose **Add**.
 6. In the **Add App** blade, choose **Search the App Store**.
-7. In the **Apple App Store** blade, enter the name (or part of the name) in the search box. Intune will search the store and return a list of relevant results.
-8. From the list, choose the app you want, then click **OK**.
+7. In the **Apple App Store** blade, select the select the App store country locale.
+8. Type the name (or part of the name) in the search box. Intune will search the store and return a list of relevant results.
+9. From the list, choose the app you want, then click **OK**.
 
 ## Step 2 - Configure app information
 
