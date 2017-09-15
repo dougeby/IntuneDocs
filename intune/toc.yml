@@ -115,7 +115,7 @@
   - name: Set up Intune
     href: setup-steps.md
     items:
-    - name: Prerequisites
+    - name: Supported configurations
       href: supported-devices-browsers.md
       items:
       - name: Network bandwidth usage
