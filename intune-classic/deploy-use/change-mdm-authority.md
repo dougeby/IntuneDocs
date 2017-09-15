@@ -140,8 +140,8 @@ After the change in MDM authority is complete, review the following steps:
     - Configuration profiles
 - After you change to the new MDM authority, the compliance data in the Microsoft Intune administration console can take up to a week to accurately report. However, the compliance states in Azure Active Directory and on the device will be accurate so the device will still be protected.
 - Make sure the new settings that are intended to overwrite existing settings have the same name as the previous ones to ensure that the old settings are overwritten. Otherwise, the devices might end up with redundant profiles and policies.    
-  > [!TIP]   
-  > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This will help ensure that devices are protected and actively managed during the interim period.   
+   > [!TIP]   
+   > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This will help ensure that devices are protected and actively managed during the interim period.   
 -  After you change the MDM authority, perform the following steps to validate that new devices are enrolled successfully to the new authority:   
     - Enroll a new device
     - Make sure the newly enrolled device shows up in the Configuration Manager console.
