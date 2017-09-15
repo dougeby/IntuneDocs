@@ -381,9 +381,10 @@ A list of iOS enrollment errors is provided in our device-user documentation, in
 
 ## PC Issues
 
+
 |Error message|Issue|Resolution|
-|---|---|
-|**IT admin needs to assign license for access**<br></br>Your IT admin has not given you access to use this app. Please get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br></br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
+|---|---|---|
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Please get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
 
 
 
