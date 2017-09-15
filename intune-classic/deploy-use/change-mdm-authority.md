@@ -127,7 +127,7 @@ After the change in MDM authority is complete, review the following steps:
 - When the Intune service detects that a tenant’s MDM authority has changed, it will send out a notification message to all the enrolled devices to check in and synchronize with the service (this is outside of the regularly scheduled check in). Therefore, after the MDM authority for the tenant has been changed from Intune standalone to hybrid, all the devices that are powered on and online will connect with the service, receive the new MDM authority, and be managed by hybrid going forward. There will be no interruption to the management and protection of these devices.
 - Even for devices that are powered on and online during (or shortly after) the change in MDM authority, there will be a delay of up to eight hours (depending on the timing of the next scheduled regular check in) before devices are registered with the service under the new MDM authority.    
 
-  > [!IMPORTANT]
+  > [!IMPORTANT]    
   > Between the time when you change the MDM authority and when the renewed APNs certificate is uploaded to the new authority, new device enrollments and device check in for iOS devices will fail. Therefore, it is important that you review and upload the APNs certificate to the new authority as soon as possible after the change in MDM authority.
 
 - Users can quickly change to the new MDM authority by manually starting a check in from the device to the service. Users can easily do this by using the Company Portal app and initiating a device compliance check.
@@ -140,8 +140,10 @@ After the change in MDM authority is complete, review the following steps:
     - Configuration profiles
 - After you change to the new MDM authority, the compliance data in the Microsoft Intune administration console can take up to a week to accurately report. However, the compliance states in Azure Active Directory and on the device will be accurate so the device will still be protected.
 - Make sure the new settings that are intended to overwrite existing settings have the same name as the previous ones to ensure that the old settings are overwritten. Otherwise, the devices might end up with redundant profiles and policies.    
-   > [!TIP]   
-   > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This will help ensure that devices are protected and actively managed during the interim period.   
+
+  > [!TIP]    
+  > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This will help ensure that devices are protected and actively managed during the interim period.
+
 -  After you change the MDM authority, perform the following steps to validate that new devices are enrolled successfully to the new authority:   
     - Enroll a new device
     - Make sure the newly enrolled device shows up in the Configuration Manager console.
