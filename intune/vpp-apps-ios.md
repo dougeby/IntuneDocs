@@ -79,7 +79,7 @@ This is because ioS VPP user licensing can allow thousands of devices to be enro
 That means the first few DEM enrolled devices would get the VPP app installed using user licensing, and the other devices will not get the app.”
 * A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 * When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
-Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to 5 devices.
+Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to five devices.
 
 >[!IMPORTANT]
 >After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
@@ -100,7 +100,6 @@ detect the VPP app updates inside the app store and automatically push them to t
 
 The token is displayed in the list of tokens blade.
 
-
 You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
 
 > [!NOTE]
@@ -113,7 +112,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 3.	On the *<app name>* - **Assignments** blade, choose **Manage** > **Assignments**.
 4.	Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
 5.	For each group you selected, choose the following settings:
-	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end users devices will automatically get the app installed).
+	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
 	- **License type** - Choose from **User licensing**, or **Device licensing**.
 6.	Once you are done, choose **Save**.
 
