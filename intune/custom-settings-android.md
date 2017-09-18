@@ -7,7 +7,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,14 @@ ms.custom: intune-azure
 
 Use the Microsoft Intune Android **Custom** profile to assign OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to assign Android settings that are not configurable with Intune policies.
+This capability is intended to allow you to assign the following Android settings that are not configurable with Intune policies:
+
+- [Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key](/intune/wi-fi-profile-shared-key)
+- [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](/intune/android-pulse-secure-per-app-vpn)
+- [Use custom policies to allow and block apps for Samsung KNOX Standard devices in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+>[!IMPORTANT]
+>Only the settings listed above can currently be configured by this profile type. Android devices do not expose a complete list of OMA-URI settings you can configure. If you want to see further settings added, please request these on the [Intune Uservoice site](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## Custom profile settings for Android devices
 
@@ -50,8 +57,6 @@ This capability is intended to allow you to assign Android settings that are not
 
 When you complete the settings, the profile will be created and appears on the profiles list blade. If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
-For some examples of custom settings you can use, see:
 
-- [Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key](/intune/wi-fi-profile-shared-key)
-- [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](/intune/android-pulse-secure-per-app-vpn)
-- [Use custom policies to allow and block apps for Samsung KNOX Standard devices in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+
+
