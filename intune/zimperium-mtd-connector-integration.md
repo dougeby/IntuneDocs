@@ -29,6 +29,8 @@ ms.custom: intune-azure
 
 # Integrate Zimperium with Intune
 
+You need to follow the steps below to integrate the Zimperium Mobile Threat Defense solution with Intune.
+
 ## Before you begin
 
 > [!NOTE]

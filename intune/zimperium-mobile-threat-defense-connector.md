@@ -91,7 +91,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 -   **iOS 8 and later**
 
-## Pre-requisites
+## Prerequisites
 
 -   Azure Active Directory Premium
 
