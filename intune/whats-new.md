@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,10 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of September 11, 2017
 
 ### Device enrollment
+
+#### Additional push notifications for end users on the Company Portal app for Android O <!---1475932--->
+
+End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
 
 #### Inform end users what device information can be seen for iOS <!--739894--> 
 
