@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure the layout of apps and folder on the dock and Home screen of iOS.
+Use these settings to configure the layout of apps and folders on the dock and Home screen of iOS.
 
 iOS devices to which you assign the profile must be in supervised mode and running iOS 9.3 or later.
 
