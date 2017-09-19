@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restrictions settings for iOStitleSuffix: "Azure portal"
+title: Intune device restrictions settings for iOS
+titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
 author: lleonard-msft
@@ -114,7 +115,7 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 In the restricted apps list, you can configure one of the following lists:
 
 A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
-An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
+An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
 
 Users are not prevented from installing a prohibited app, but if they do so, this will be reported to you.
 
