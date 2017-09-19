@@ -102,10 +102,10 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 ## Next steps
 
-[Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 
-[Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-[Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
+- [Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
 
-[Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
+- [Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
