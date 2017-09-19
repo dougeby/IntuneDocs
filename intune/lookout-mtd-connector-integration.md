@@ -139,5 +139,7 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 
 ## Watching enrollment
 Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) topic.
+
 ## Next steps
-[Enable Lookout MTD connection Intune](mtd-connector-enable.md)
+
+[Set up Lookout apps](mtd-apps-ios-app-configuration-policy-add-assign.md)

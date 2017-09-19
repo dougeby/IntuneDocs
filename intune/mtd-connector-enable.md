@@ -32,7 +32,7 @@ ms.custom: intune-azure
 > [!NOTE] 
 > This topic applies to all Mobile Threat Defense partners.
 
-To enable the Mobile Threat Defense (MTD) connection in Intune, you should have already configured the Intune Connector in the MTD solution console.
+To enable the Mobile Threat Defense (MTD) connection in Intune, you should have already configured the Intune Connector in the MTD partner console.
 
 ## To enable the MTD connector
 
@@ -71,7 +71,3 @@ You can decide which MTD toggle options you need to enable according to your org
 
 > [!TIP]
 > You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense blade.
-
-## Next steps
-
-[Create Mobile Threat Defense device compliance policy with Intune](mtd-device-compliance-policy-create.md)
