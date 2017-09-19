@@ -434,12 +434,19 @@
         items:
         - name: Check Point and Intune integration
           href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-      - name: Add MTD apps
-        href: mtd-apps-ios-app-configuration-policy-add-assign.md
-      - name: Enable MTD in Intune
-        href: mtd-connector-enable.md
-      - name: Create an MTD device compliance policy
-        href: mtd-device-compliance-policy-create.md
+      - name: Set up Zimperium
+        href: zimperium-mobile-threat-defense-connector.md
+        items:
+        - name: Zimperium and Intune integration
+          href: zimperium-mtd-connector-integration.md
+      - name: Set up Intune for MTD
+        items:
+        - name: Add MTD apps
+          href: mtd-apps-ios-app-configuration-policy-add-assign.md
+        - name: Create an MTD device compliance policy
+          href: mtd-device-compliance-policy-create.md
+        - name: Enable MTD in Intune
+          href: mtd-connector-enable.md
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello

@@ -121,10 +121,10 @@ For more information, check [Skycure website](https://www.skycure.com/skycure-mi
 
 Here are the steps you need to complete to integrate Intune with Skycure:
 
-1.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Set up Skycure integration with Intune](skycure-mtd-connector-integration.md)
 
-2.  [Set up Skycure integration with Intune](skycure-mtd-connector-integration.md)
+- [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-3.  [Enable Skycure MTD connector in Intune](mtd-connector-enable.md)
+- [Create Skycure device compliance policy with Intune](mtd-device-compliance-policy-create.md)
 
-4.  [Create Skycure device compliance policy with Intune](mtd-device-compliance-policy-create.md)
+- [Enable Skycure MTD connector in Intune](mtd-connector-enable.md)
