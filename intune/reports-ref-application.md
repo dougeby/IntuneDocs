@@ -101,3 +101,17 @@ The **VppProgramTypes** entity lists possible VPP program types for an app.
 | 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Microsoft's VPP program |
 | 00000000-0000-0000-0000-000000000000 |Not Yet Available |Default value, No VPP |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Apple's VPP program |
+
+
+
+## ApplicationInventory
+
+The **ApplicationInventory** entity lists the applications found on the device at the time of inventory collection.
+
+| Property  | Description |
+|---------|------------|
+| DeviceKey |This is a reference to the Device table which contains the Intune device ID |
+| DateKey |Reference to date table indicating the day of inventory |
+| ApplicationName |The application Name |
+| ApplicationVersion |Version of the application |
+| BundleSize |The size of the app in bytes |
