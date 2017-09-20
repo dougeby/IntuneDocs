@@ -46,10 +46,10 @@ While Activation Lock helps secure iOS devices and improves the chances of recov
 - You need a report of all devices that have Activation Lock enabled.
 - You want to reassign some devices to a different department during a device refresh in your organization. You can only reassign devices that do not have Activation Lock enabled.
 
-To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1. Activation Lock bypass lets you remove the Activation Lock from supervised devices without the user's Apple ID and password. supervised devices can generate a device-specific Activation Lock bypass code, which is stored on Apple's activation server.
+To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1. Activation Lock bypass lets you remove the Activation Lock from supervised devices without the user's Apple ID and password. Supervised devices can generate a device-specific Activation Lock bypass code, which is stored on Apple's activation server.
 
 >[!TIP]
->supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. supervised mode is used only for corporate-owned devices.
+>supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is used only for corporate-owned devices.
 
 You can read more about Activation Lock on [Apple's web site](https://support.apple.com/HT201365).
 
