@@ -115,11 +115,7 @@
   - name: Set up Intune
     href: setup-steps.md
     items:
-<<<<<<< HEAD
-    - name: Prerequisites
-=======
     - name: Supported configurations
->>>>>>> 707b22cd2351cccbe5ae0bbbc457eed19a723e76
       href: supported-devices-browsers.md
       items:
       - name: Network bandwidth usage
@@ -438,14 +434,6 @@
         items:
         - name: Check Point and Intune integration
           href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-<<<<<<< HEAD
-      - name: Add MTD apps
-        href: mtd-apps-ios-app-configuration-policy-add-assign.md
-      - name: Enable MTD in Intune
-        href: mtd-connector-enable.md
-      - name: Create an MTD device compliance policy
-        href: mtd-device-compliance-policy-create.md
-=======
       - name: Set up Zimperium
         href: zimperium-mobile-threat-defense-connector.md
         items:
@@ -459,7 +447,6 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
->>>>>>> 707b22cd2351cccbe5ae0bbbc457eed19a723e76
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello
@@ -608,14 +595,9 @@
         href: reports-ref-application.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
-<<<<<<< HEAD
-      - name: Reference for User Device Association entity
+        name: Reference for user device associations entity
         href: reports-ref-userdeviceassociations.md
-=======
->>>>>>> 707b22cd2351cccbe5ae0bbbc457eed19a723e76
   - name: Sideload Windows apps
-    href: app-sideload-windows.md
-  - name: Use Graph APIs for Intune
     href: intune-graph-apis.md
     items:
     - name: Graph APIs for Intune Reference
