@@ -359,7 +359,7 @@ The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory
 | JailBroken |True if the device is Jail Broken or Rooted. |
 | IsActivationLockEnabled |True Is Activation Lock is Enabled |
 | DeviceType |Device Type |
-| IsSupervised |Is Supervised |
+| Issupervised |Is supervised |
 | DeviceDisplayNumberOfColors |Device display Number Of Colors |
 | HorizontalResolution |Device horizontal screen resolution |
 | VerticalResolution |Device vertical screen resolution |

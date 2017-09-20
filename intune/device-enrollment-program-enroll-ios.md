@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,10 @@ This topic helps you enable iOS device enrollment for devices purchased through 
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
-By the way, DEP enrollment does not work with the [device enrollment  manager](device-enrollment-manager-enroll.md).
+By the way, DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md).
+
+## What is supervised mode?
+Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -120,10 +123,13 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 4. Choose **Device Management Settings** to configure the following profile settings:
 
-  ![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
-	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
+  ![Screenshot of choosing the management mode. Device has the following settings: supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
+	- Supervised - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
+   > ![NOTE]
+   > Configuring a device for supervised mode cannot be done using Intune after a device has been enrolled. After enrollment, the only way to enable supervised mode is to connect an iOS device to a Mac with a USB cable and use Apple Configurator. This will reset the device and configure it in supervised mode. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3). A supervised device will say that "This iPhone is managed by Contoso." on the lock screen, and "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." in **Settings** > **General** > **About**.
+
+	- **Locked enrollment** - (Requires Management Mode = supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
 
   - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
 
@@ -152,6 +158,7 @@ Now that you've installed your token, you can create an enrollment profile for D
         - **Diagnostic Data**
 
     Choose **Save**.
+
 9. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
 
 ## Sync managed devices

@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 09/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment. You can enroll devices into Intune with Apple Configurator in two ways:
+Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) running on a Mac computer. Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment. You can enroll devices into Intune with Apple Configurator in two ways:
 - **Setup Assistant enrollment** - Factory resets the device and prepares it to enroll during Setup Assistant.
 - **Direct enrollment** - Does not factory reset the device and enrolls the device through iOS settings. This method only supports devices with **no user affinity**.
 
@@ -44,7 +44,7 @@ Apple Configurator enrollment methods can't be used with the [device enrollment 
 - [An Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 - Device serial numbers (Setup Assistant enrollment only)
 - USB connection cables
-- Mac PC running [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
+- Mac PC running [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## Create an Apple Configurator profile for devices
 
