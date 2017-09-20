@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile Threat Defense with Intune
-titleSuffix: "Intune Azure preview"
+titleSuffix: "Azure portal"
 description: "Protect access to company resources based on device risk"
 keywords:
 author: andredm7
@@ -58,3 +58,4 @@ Learn how to protect access to company resource based on device, network, and ap
 - [Lookout](lookout-mobile-threat-defense-connector.md)
 - [Skycure](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+- [Zimperium](zimperium-mobile-threat-defense-connector.md)

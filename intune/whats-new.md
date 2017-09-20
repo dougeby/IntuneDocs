@@ -1,13 +1,13 @@
 ---
 # required metadata
 title: What's new in Microsoft Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Find out what's new in the Intune Azure portal
 keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,31 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of September 11, 2017
+
+### Device enrollment
+
+#### Additional push notifications for end users on the Company Portal app for Android O <!---1475932--->
+
+End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
+
+#### Inform end users what device information can be seen for iOS <!--739894--> 
+
+We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen. 
+
+#### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->
+
+End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
+
+
+#### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
+
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
+
+#### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
+
+The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list. 
+
 
 ## Week of August 21, 2017
 
@@ -66,9 +91,15 @@ Additionally, you can use the filter pane to search for devices by phone number.
  
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
 
-#### Conditional access support for Mac devices 
+#### Conditional access support for macOS devices 
 <!-- 720172 -->
 You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
+
+- Learn more about [conditional access support for macOS devices](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+
+#### Company Portal app for macOS is in public preview <!---1484796--->
+The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+
 
 #### New device restriction settings for Windows 10    
 <!--1063965, 1308850  -->
@@ -91,12 +122,29 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 #### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
 End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
 
+### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
+The **Settings** page in the Company Portal app for Android has a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting will vary depending on which app manages the work account. We recommend that users turn battery optimization off for better performance of work apps that sync email and data. 
+
 #### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
-End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
+End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
  
 - Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 
+#### New settings to allow and block apps on Samsung KNOX Standard devices
+<!-- 1305423 822899-->  
+In this release, we are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
+ 
+- Apps that users are allowed to install
+- Apps that users are blocked from running
+- Apps that are hidden from the user on the device
+ 
+You can specify the app by URL, package name or from the list of apps you manage.
 
+#### New Azure AD app-based conditional access policy UI link from Intune
+<!-- 1016201 -->
+IT admins can now set app-based conditional policies via the new conditional access policy UI in the Azure AD workload. The app-based conditional access that is in the Intune App Protection section in the Azure portal will remain there for the time being and will be enforced side-by-side. There’s also a convenience link to the new conditional access policy UI in the Intune workload.
+
+- Learn more about [app-based conditional access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
 
 ## Notices
@@ -105,10 +153,10 @@ End users can now use different accounts (work and personal) with Microsoft OneN
 An [updated list of DNS names and IP addresses](/intune/network-bandwidth-use) is available for firewall proxy settings.
 
 ### Use Azure Active Directory for conditional access <!-- 967947 -->
-Conditional access is available in the Azure Active Directory section of the Azure console and provides a more powerful and flexible framework for setting policies for cloud apps like Office 365 Exchange Online and SharePoint Online.  Use the **Conditional access in Azure Active Directory** blade to configure policies instead of the classic Intune console. Existing policies in the classic Intune console need to be re-created in the Azure console. For more information, see [Create Azure AD conditional access policies](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+Conditional access is available in the Azure Active Directory section of the Azure portal and provides a more powerful and flexible framework for setting policies for cloud apps like Office 365 Exchange Online and SharePoint Online.  Use the **Conditional access in Azure Active Directory** blade to configure policies instead of the Intune console. Existing policies in the Intune console need to be re-created in the Azure portal. For more information, see [Create Azure AD conditional access policies](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
 
 ### Administration roles being replaced in Azure portal
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
@@ -116,6 +164,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 
 ## What's coming
+
+#### iOS 11 Mail app will support OAuth <!---1196951--->
+Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
 ### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
@@ -147,7 +198,7 @@ We are letting you know this in advance, even though we don't have specific date
 Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
 version of the Company Portal and take advantage of the new features it will offer.
 
-Go to the Intune on Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
+Go to the Intune in the Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
 
 
 ### Apple to require updates for Application Transport Security <!--748318-->

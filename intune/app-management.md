@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is app management 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
 author: mattbriggs

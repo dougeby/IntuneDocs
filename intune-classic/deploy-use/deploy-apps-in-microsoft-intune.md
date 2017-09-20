@@ -4,8 +4,8 @@
 title: How to deploy apps 
 description: Use the information in this topic to help you deploy apps with Microsoft Intune.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article

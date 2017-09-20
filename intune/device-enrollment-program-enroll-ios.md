@@ -2,13 +2,13 @@
 # required metadata
 
 title: Enroll iOS devices - Device Enrollment Program
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,6 @@ By the way, DEP enrollment does not work with the [device enrollment  manager](d
 - Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
 - [MDM Authority](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
-- User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
 > [!NOTE]
 > Multifactor authentication (MFA) doesn't work during DEP enrollment set up for user affinity. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
@@ -61,7 +60,7 @@ Before you can enroll iOS devices with DEP, you need a DEP token (.p7m) file fro
 You use the Apple DEP portal to create a DEP token. You also use the DEP portal to assign devices to Intune for management.
 
 > [!NOTE]
-> If you delete the token from the Intune classic console before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
+> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 
@@ -115,7 +114,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
   For **User Affinity**, choose whether devices with this profile enroll with or without an assigned user.
 
- - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps.
+ - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Enroll without user affinity** - Choose for device unaffiliated with a single user. Use for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
@@ -125,6 +124,8 @@ Now that you've installed your token, you can create an enrollment profile for D
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
 	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
+
+  - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
 
 	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 

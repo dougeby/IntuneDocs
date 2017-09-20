@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add apps to Microsoft Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
 author: mattbriggs
@@ -86,7 +86,7 @@ When you add an app to Intune, you are given the option to select the category y
 
 Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
 However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
-In a later release, we plan to add an easier method to select and assign built-in apps from the Intune portal.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Azure portal.
 
 ## Next steps
 

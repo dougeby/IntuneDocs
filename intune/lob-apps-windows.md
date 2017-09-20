@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add Windows line-of-business apps to Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about adding Windows line-of-business apps to Intune."
 keywords:
 author: mattbriggs

@@ -4,8 +4,8 @@
 title: Protect access to networks with Cisco ISE 
 description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy compliant before they access Wi-Fi and VPN that are controlled by Cisco ISE.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article

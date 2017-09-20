@@ -2,11 +2,11 @@
 # required metadata
 
 title: Manage web access with the Managed Browser app 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 08/02/2017
 ms.topic: article

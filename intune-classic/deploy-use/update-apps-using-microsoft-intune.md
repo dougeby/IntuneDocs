@@ -4,8 +4,8 @@
 title: Update apps 
 description: Use the information in this topic to understand how to update apps when a new version is required.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn

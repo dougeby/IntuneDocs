@@ -2,11 +2,11 @@
 # required metadata
 
 title: Getting started with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Go through a series of short hands-on exercises to learn about Intune.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -32,7 +32,7 @@ Intune is a cloud-based enterprise mobility management (EMM) service that helps 
 
 ![High-level architectural diagram for Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-We understand that getting started with managing mobile devices can be difficult, since there are many different decisions that you'll need to make on behalf of your company. These exercises take you through some tasks that help you understand how Intune can be used to protect your company resources. 
+We understand that getting started with managing mobile devices can be difficult, since there are many different decisions that you'll need to make on behalf of your company. These exercises take you through some tasks that help you understand how Intune can be used to protect your company resources.
 
 ## What are the exercises?
 

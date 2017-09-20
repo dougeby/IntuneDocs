@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,41 @@ ms.custom: intune-azure
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
+## Week of September 11, 2017
+
+### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
+
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
+
+|Before|After|
+|---|---|
+|![01](./media/android_cp_enroll_01_before_1709.png)|![01](./media/android_cp_enroll_01_post_1709.png)|
+|![02](./media/android_cp_enroll_02_before_1709.png)|![02](./media/android_cp_enroll_02_post_1709.png)|
+|![03](./media/android_cp_enroll_03_before_1709.png)|![03](./media/android_cp_enroll_03_post_1709.png)|
+|![04](./media/android_cp_enroll_04_before_1709.png)|![04](./media/android_cp_enroll_04_post_1709.png)|
+|![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
+
+
+## Week of August 28, 2017
+
+### iOS 11 Mail app will support OAuth <!---1196951--->
+
+Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+
+![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
+
+![After selecting Exchange, iOS device prompt asks for email address and account name.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Provide email address and name for account.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Sent to external Microsoft log in page.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Providing password on Microsoft page.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft prompts user to enroll device into management.](./media/ios-11-ca-email-after-1708-06.png)
+
+![User is prompted to enroll from Company Portal website.](./media/ios-11-ca-email-after-1708-07.png)
+
 ## Week of August 21, 2017
 
 ### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
@@ -36,11 +71,11 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 
 **Previous experience**
 
-![old interface](media\NewUI_Old_AttachFileHandler.jpg)
+![old interface](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Modern experience**
 
-![modern interface](media\NewUI_Modern_AttachFileHandler.jpg)
+![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## Week of August 14, 2017

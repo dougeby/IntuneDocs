@@ -2,13 +2,13 @@
 # required metadata
 
 title: Choose how to enroll Windows devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to set up enrollment of Windows devices in Microsoft Intune."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,19 @@ Before you can enable iOS devices, complete the following steps:
 - [Set up Intune](setup-steps.md) - These steps set up your Intune infrastructure. In particular, device enrollment requires that you [set your MDM authority](mdm-authority-set.md).
 - [Get an Apple MDM Push certificate](apple-mdm-push-certificate-get.md) - Apple requires a certificate to enable management of iOS and macOS devices.
 
-After these prerequisites are complete, users can install the Company Portal app to enroll their personal iOS devices, or the admin can set up corporate-owned iOS device management. Admins can also assign [device enrollment managers](device-enrollment-manager-enroll.md) who can enroll many devices with a single management account. Intune supports the following iOS company-owned device enrollment methods:
+## User-owned iOS devices (BYOD)
+
+You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the iOS Company Portal app from the App Store, and follow enrollment instructions in the app.
+
+## Company-owned iOS devices
+For organizations that purchase devices for their users, Intune supports the following iOS company-owned device enrollment methods:
+
+- Apple's Device Enrollment Program (DEP)
+- Apple School Manager
+- Apple Configurator Setup Assistant enrollment
+- Apple Configurator direct enrollment
+
+You can also enroll company-owned iOS devices with a [device enrollment manager](device-enrollment-manager-enroll.md) account.
 
 ## Device Enrollment Program
 Organizations can purchase iOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management. Learn more about [Device Enrollment Program](device-enrollment-program-enroll-ios.md).

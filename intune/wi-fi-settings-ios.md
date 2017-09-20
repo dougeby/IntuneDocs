@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for iOS devicestitleSuffix: "Intune on Azure"
+title: Intune Wi-Fi settings for iOS devicestitleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to configure Wi-Fi connections on iOS devices."
 keywords:
 author: lleonard-msft

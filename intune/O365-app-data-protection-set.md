@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set basic data management on Office 365 apps in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Supporting documentation for the Manage Office 365 apps wizard."
 keywords:
 author: lindavr

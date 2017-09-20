@@ -2,11 +2,11 @@
 # required metadata
 
 title: Intune device restrictions for Windows 10 Team
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about the device restrictions available for Windows 10 Team devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
