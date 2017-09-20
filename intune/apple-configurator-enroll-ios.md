@@ -44,7 +44,7 @@ Apple Configurator enrollment methods can't be used with the [device enrollment 
 - [An Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 - Device serial numbers (Setup Assistant enrollment only)
 - USB connection cables
-- Mac PC running [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
+- macOS computer running [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## Create an Apple Configurator profile for devices
 

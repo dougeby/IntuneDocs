@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Bypass Activation Lock on supervised iOS devices with Intune
+# Bypass Activation Lock on Supervised iOS devices with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -49,7 +49,7 @@ While Activation Lock helps secure iOS devices and improves the chances of recov
 To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1. Activation Lock bypass lets you remove the Activation Lock from supervised devices without the user's Apple ID and password. Supervised devices can generate a device-specific Activation Lock bypass code, which is stored on Apple's activation server.
 
 >[!TIP]
->supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is used only for corporate-owned devices.
+>Supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is used only for corporate-owned devices.
 
 You can read more about Activation Lock on [Apple's web site](https://support.apple.com/HT201365).
 
