@@ -1,10 +1,9 @@
 ---
 # required metadata
-
-title: How to add iOS store apps to Intune 
+title: How to add iOS store apps to Intune  | Microsoft Docs
 titlesuffix: "Azure portal"
 description: Learn about adding iOS store apps to Intune."
-keywords:
+keywords: Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
@@ -16,7 +15,6 @@ ms.technology:
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 
 # optional metadata
-
 #ROBOTS:
 #audience:
 #ms.devlang:

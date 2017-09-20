@@ -47,7 +47,7 @@ Entity sets are named collections of entities in the data model. These sets cont
   -  [Devices](reports-ref-devices.md)
   -  [Application](reports-ref-application.md)
   -  [Policy](reports-ref-policy.md)
-  -  [User Device Association](reports-ref-userdeviceassociations.md)
+  -  [User device association](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 
