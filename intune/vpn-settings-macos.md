@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune VPN settings for macOS devices 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on macOS devices."
 keywords:
 author: lleonard-msft

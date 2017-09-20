@@ -5,8 +5,8 @@
 title: Android for Work policy settings 
 description: Create policies that control settings and features on Android for Work devices that you manage with Intune.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article

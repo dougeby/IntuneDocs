@@ -2,11 +2,11 @@
 # required metadata
 
 title: How to assign device profiles with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Once you've created an Intune device profile, use this topic to learn how to assign it to devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/05/2017
 ms.topic: article

@@ -54,7 +54,7 @@ After you prepare the Intune service, you need to meet the various enrollment re
 
 -   **Android devices** There's nothing you need to do to get the Intune service ready to enroll Android devices. Users can just [enroll their Android devices](/intune-user-help/enroll-your-device-in-intune-android) into management using the Company Portal app available from Google Play.
 
--   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simplify the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
+-   **Windows Phones and PCs** Windows devices can be enrolled with additional configuration. You can enable automatic enrollment for Windows 10 PCs and Windows 10 mobile devices in Azure Active Directory (AD) Premium to simplify the end user experience. If you don't have Azure AD Premium or if you need to support Windows 8.1, you can create [a DNS alias for the enrollment server](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) to make enrollment easier.
 
 
 ### Make sure that managed devices meet basic security requirements
@@ -88,7 +88,7 @@ Intune also allows you to manage and deploy apps that you purchased in volume fr
 
 -   [Manage volume-purchased apps for iOS devices](vpp-apps-ios.md). You buy multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). You need to set up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune. You can then synchronize your volume-purchase information with Intune and track your volume-purchased app use.
 
--   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Intune portal.
+-   [Manage apps purchased from the Microsoft Store for Business](windows-store-for-business.md). The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and buy apps for your organization, individually, or in volume. By connecting the store to Intune, you can manage volume-purchased apps from the Azure portal.
 
 ## Protect company data
 

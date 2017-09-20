@@ -6,8 +6,8 @@ title: Configuration policy reference
 description: Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
 
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

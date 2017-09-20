@@ -2,7 +2,7 @@
 # required metadata
 
 title: Network access control integration with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Network access control (NAC) integration with Intune
 keywords:
 author: andredm7
@@ -73,6 +73,6 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 -   [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 
--   [Integrate Citrix NetScaler with Intune](https://docs.citrix.com/netscaler-gateway/11-1/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+-   [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 
 -   [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)

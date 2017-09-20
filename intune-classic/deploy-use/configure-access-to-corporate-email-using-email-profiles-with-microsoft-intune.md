@@ -4,8 +4,8 @@
 title: Access corporate email with email profiles 
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 04/19/2017
 ms.topic: article

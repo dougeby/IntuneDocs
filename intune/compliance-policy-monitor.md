@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor Intune device compliance policies
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to monitor device compliance policies."
 keywords:
 author: andredm7

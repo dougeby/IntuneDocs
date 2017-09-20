@@ -4,8 +4,8 @@
 title: Wi-Fi using PSK 
 description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article

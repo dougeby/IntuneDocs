@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for AndroidtitleSuffix: "Intune on Azure"
+title: How to create a compliance policy for AndroidtitleSuffix: "Azure portal"
 description: Learn how to create a compliance policy for Android devices."
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

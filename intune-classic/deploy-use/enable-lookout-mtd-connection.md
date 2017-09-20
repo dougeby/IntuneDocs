@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Enable Lookout MTD connection in the Intune classic console
+# Enable Lookout MTD connection in the Intune classic portal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
