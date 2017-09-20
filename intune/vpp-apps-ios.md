@@ -93,6 +93,10 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 4. On the **Create VPP token** blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
+	- **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
+	    > [!WARNING]  
+	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
+
 	- **Type of VPP account** - Choose from **Business** or **Education**.
 	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune updates all apps purchased for the specified token through the Intune service when the device checks-in. 
 detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
