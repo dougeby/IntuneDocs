@@ -109,7 +109,7 @@ The **EnrollmentTypes** entity indicates how a device was enrolled. The enrollme
 
 | enrollmentTypeID  | Name | Description |
 |---------|------------|--------|
-| 0 |Unknown |Unknown enrollment type |
+| 0 |Unknown |Enrollment type was not collected |
 | 1 |UserEnrollment |User initiated enrollment |
 | 2 |DeviceEnrollment |Device enrollment with user-less profile |
 | 3 |DeviceEnrollmentWithUDA |Device enrollment with UDA profile. |
