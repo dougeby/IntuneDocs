@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 You can specify which managed apps can use your VPN on Intune managed iOS devices. When you specify a Per-APP VPN in Intune, an end user automatically connects through your VPN when accessing corporate documents.
 
-## Prerequisites
+## Prerequisites for the Per-App VPN
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, provision a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
@@ -39,22 +39,28 @@ You need to:
 
  - Export a trusted root certificate exported from your VPN server.  
 Verify that your VPN server uses Certificate-based Authentication. The root certificate is issued by the CA to the VPN server. Go to your VPN’s admin console and export the certificate.
- - Add the name of the Certificate Authority (CA) that issued the certificates for authentication.  
+ - Add the name of the CA that issued the certificates for authentication.  
 If the CA presented by the device matches one of the CAs in the Trusted CA list on the VPN server, then the VPN server successfully authenticates the device.
 
-add two questions:
+## Create a  group for your VPN users
 
-are coming from a trusted source
-and who are you?
-add a step about creating a group. (create a test group .... and then make sure the group is the same in the later step.)
+You need to create an Azure Active Directory (Azure AD) group to contain the members who have access to the per-App VPN.
+
+1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
+2. Choose **Groups** and click **New group**.
+3. Type the **Name** of the group. 
+4. Type the **Description** of the group. 
+5. Select **Assigned** for the **Membership type**.
+6. Select **No** for **Enable Office features**.
+7. Search for the VPN users by name or email address in the **Members** blade.
+8. Select each user and click **Select**.
+9. Click **Create**
 
 ## Create a trusted certificate profile
 
 Import the VPN server's root certificate issued by the CA into a profile created in Intune. The trusted certificate profile instructs the iOS device to automatically trust the CA that the VPN server presents.
 
-To create a trusted certificate profile:
-
-1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**. 
+1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Device configuration**, and then click **Profiles**.
 3. Click **+ Create profile**. In **Create profile**:
     1. Type the **Name**.
@@ -69,8 +75,6 @@ To create a trusted certificate profile:
 ## Create a SCEP certificate profile
 
 The trusted root certificate profile allows the iOS to automatically trust the VPN Server. The SCEP certificate provides credentials from the iOS VPN client to the VPN server. The certificate allows the device to silently authenticate without prompting the iOS devise user for a username and password. 
-
-To create a SCEP certificate profile:
 
 1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**. 
 2. Choose **Device configuration**, and then click **Profiles**.
@@ -94,13 +98,9 @@ To create a SCEP certificate profile:
 
     ![Create a SCEP certificate profile](media\vpn-per-app-create-SCEP-cert.png)
 
-### Add an group assignment
-
 ## Create a Per-App VPN profile
 
-The VPN profile contains the SCEP certificate carrying the client credentials, the connection information to the VPN, and the Per APP VPN flag to enable the Per App VPN feature for use by an application.
-
-To create a Per-App VPN profile:
+The VPN profile contains the SCEP certificate carrying the client credentials, the connection information to the VPN, and the Per APP VPN flag to enable the Per App VPN feature for use by the iOS application.
 
 1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**. 
 2. Choose **Device configuration**, and then click **Profiles**.
@@ -126,27 +126,23 @@ To create a Per-App VPN profile:
 
     ![Create a Per-App VPN profile](media\vpn-per-app-create-VPN-profile.png)
 
-### Add an group assignment
 
 ## Associate an app with the VPN profile
 
-Once you create a Per-App VPN profile, add a managed app to Intune. Select the app and click on Manage Deployments. Then click on the VPN Profile tab and you notice the VPN you created appears in the list for VPN Policy. `This section isn't right yet`.
-
-To associate an app with the VPN profile:
+After adding your VPN profile, associate the app and Azure AD group to the profile.
 
 1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Mobile Apps**.
 3. Click **Apps**.
-4. Click **+ Add** to add your app. For more information, see [Add your app](http://www.thelink.com).
-5. Select the app from the list of apps.
-6. Click **Assignments.**
-7. Click **Select groups**, select a group, and click **Select**.
-8. Select Required.
-9. Select the VPN you defined in part three.
+6. Select the app from the list of apps.
+7. Click **Assignments.**
+8. Click **Select groups**, select the group you defined earlier. Click **Select**.
+9. Select **Required** for the **Type** in the **Assignments** blade.
+10. Select your VPN definition for the **VPNS**.
+11. Click **Save**.
 
     ![Associate an app with the VPN](media\vpn-per-app-App-to-VPN.png)
 
-### Add an group assignment
 
 ## Verify the connection on the iOS device
 
@@ -154,9 +150,9 @@ With your Per-App VPN set-up and associated with your app, verify the connection
 
 ### Before you attempt to connect
 
- - Make sure you’re running iOS 7 or later
- - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the Per-App VPN experience  
- - Must have the appropriate third-party app installed, such as:
+ - Make sure you’re running iOS 7 or later.
+ - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the Per-App VPN experience.  
+ - Makes sure you have the supported third-party VPN app installed. The following VPN apps are supported:
     - Juniper
     - Checkpoint
     - F5
@@ -164,21 +160,21 @@ With your Per-App VPN set-up and associated with your app, verify the connection
 
 ### Connect using the Per-App VPN
 
-Make sure you have a zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
+Verify the zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
 
  - The device does not ask you to trust the VPN server. That is, you do see the **Dynamic Trust** dialog box.
  - You do not have to type credentials.
  - You are connected to the VPN after tapping the connect button.
 
-To verify the connection on an iOS device:
+Verify the connection on an iOS device.
 
-1. Tap on the VPN app.
+1. Tap the VPN app.
 2. Tap on **Connect**.  
 The VPN successfully connects without any extra prompts.
 
-## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the Per-App VPN
 
-The user experiences the feature by seamlessly connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
+The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 
 `Note -- use the Apple Configurator as the supported tool. Only runs on a mac.'
 
@@ -186,7 +182,7 @@ To review event logs:
 
 1. Connect your iOS device to a PC
 2. Open the **iPhone Configuration Utility** (IPCU). If you do not have a copy, you can install it from [CompatCenter](http://www.microsoft.com/en-us/windows/compatibility/CompatCenter/ProductDetailsViewer?Name=iPhone%20Configuration%20Utility&vendor=Apple&Locale=1033%2C2057%2C3081%2C4105%2C16393&ModelOrVersion=3&BreadCrumbPath=iphone%20configuration%20utility&LastSearchTerm=iphone%2Bconfiguration%2Butility&Type=Software&tempOsid=Windows%208.1)
-3. Review the logs.
+3. Review the logs. -->
 
 ## Next steps
 
