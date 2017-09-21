@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Resolving threats found by Skycure on iOS | Microsoft Docs
-description:
+title: Resolving threats found by Symantec Endpoint Protection Mobile for iOS | Microsoft Docs
+description: Learn how to fix threats found on your Android device.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,13 +26,13 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Skycure
+# You need to resolve a threat found by Symantec Endpoint Protection Mobile
 
-Skycure has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
+Symantec Endpoint Protection Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
 
-![Out of compliance message from Lookout from Work](./media/ios-skycure-noncompliant-in-ssp.png)
+![Out of compliance message from Symantec Endpoint Protection Mobile](./media/ios-skycure-noncompliant-in-ssp.png)
 
-To resolve the issue, open the Skycure app, and follow the instructions shown in the app.
+To resolve the issue, open the Symantec Endpoint Protection Mobile app, and follow the instructions shown in the app.
 
 ## What you might see if your enrolled device is blocked from accessing email or files
 
@@ -41,9 +42,9 @@ If there is a virus or other security threat on your enrolled device, and you tr
 
 Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
 
-## Example of an app that Skycure sees as a threat
+## Example of an app that Symantec Endpoint Protection Mobile sees as a threat
 
-If you have installed an app that Skycure thinks is a threat, Skycure will notify you in the app.
+If you have installed an app that Symantec Endpoint Protection Mobile thinks is a threat, Symantec Endpoint Protection Mobile will notify you in the app.
 
 Tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
 
