@@ -67,6 +67,8 @@ In the [Microsoft Intune admin console](https://manage.microsoft.com), choose **
 
 ## Working with alerts
 
+To view alerts in the [Microsoft Intune admin console](https://manage.microsoft.com), choose **Alerts**, and then the type of alert to view.
+
 Use the following options to help you work with alerts from the Intune admin console.
 
 |Option|Description|
