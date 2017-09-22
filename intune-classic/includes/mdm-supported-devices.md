@@ -9,8 +9,8 @@
   - Windows 10 Mobile
   - Devices running Windows 10 IoT Enterprise (x86, x64)
   - Devices running Windows 10 IoT Mobile Enterprise
-  - Windows Holographic & Windows Holographic Enterprise
-  - Windows Phone 8.1, Windows 8.1 RT, PCs running Windows 8.1 (Sustaining mode) 
+  - Windows Holographic &amp; Windows Holographic Enterprise
+  - Windows Phone 8.1, Windows 8.1 RT, PCs running Windows 8.1 (Sustaining mode)
 
   Customers with Enterprise Management + Security  (EMS) can also [use Azure Active Directory (AAD) to register Windows 10 devices](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
