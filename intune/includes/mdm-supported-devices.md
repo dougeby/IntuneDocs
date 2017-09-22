@@ -1,7 +1,7 @@
 
 
 ### Apple
-  - Apple iOS 8.0 and later
+  - Apple iOS 9.0 and later
   - Mac OS X 10.9 and later
 
 ### Windows
