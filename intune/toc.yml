@@ -81,12 +81,14 @@
       href: planning-guide-resources.md
   - name: Scenario implementation guides
     items:
-    - name: BYOD
-      href: byod-enable.md
     - name: Protect Exchange Online
       href: exchange-online-protect.md
     - name: Reduce help desk costs
       href: password-reset.md
+    - name: Prevent unauthorized access
+      href: data-outside-protect.md
+    - name: BYOD
+      href: byod-enable.md
   - name: Migration guide
     href: migration-guide.md
     items:
