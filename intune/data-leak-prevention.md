@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Protect Office 365 Exchange Online without requiring device management 
-description: Give employees access to their work email. No device management required.
-keywords: Office 365 Exchange email access
+title: Prevent data leaks on non-managed devices
+description: Allow access to corporate data on devices and protect data from data leaks. 
+keywords: data protection prevent leaks device O365 Office 365
 author: arob98
 manager: angrobe
-ms.date: 08/27/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
+ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 
 # optional metadata
 
@@ -24,31 +24,45 @@ ms.suite: ems
 ms.custom: intune-azure
 
 --- 
-# Protect Office 365 Exchange Online without requiring device management
+# Prevent data leaks on non-managed devices
 
-If you want to give employees access to their work email without the overhead of setting up a device management system, you can. You can give access to Office 365 Exchange Online through Intune. To complete the necessary steps, confirm you have licenses for Microsoft 365, or Azure Active Directory (premium) and Intune. Employees need to have a [supported iOS or Android device](supported-devices-browsers.md). 
+If you allow access to company data hosted by Office 365, you can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service. 
 
-If you decide to set up a device management system, you can. This type of app protection works independently of device management. 
+App protection policies set up with Intune also work on devices managed with a non-Microsoft device management solution. The personal data on the devices is not touched; only company data is managed by the IT department. 
+
+You can set app protection policies for Office mobile apps on devices running Windows, iOS, or Android to protect company data. These policies let you set policies such as app-based PIN or company data encryption, or more advanced settings to restrict how you cut, copy, paste, and save-as features are used by users between managed and unmanaged apps. You can also remotely wipe company data without requiring users enroll devices. 
+
+Intune app protection policies are independent of device management. App protection policies let you manage Office mobile apps on both unmanaged and Intune-managed devices, as well as device managed by non-Microsoft MDM solutions. 
+
+## Before you begin
+
+The following action plan can be used when you meet the following requirements:
+* Your company is ready to transition securely to the cloud.
+* Your company uses Office 365 Exchange Online, SharePoint Online, OneDrive for Business, or Yammer.
+* Your company has licenses for Microsoft 365, Enterprise Mobility + Security (EMS), or Azure Information Protection.
+* Your company allows users to access company data from company-owned or personally-owned Windows, iOS, or Android devices. 
+* Your company does not want to require enrollment of personally-owned devices in a device management service. 
 
 ## Action plan
 
-1. [Learn about conditional access](conditional-access.md). 
-2. [Learn about app-based conditional access](app-based-conditional-access-intune.md).
-3. [Set up app-based conditional access policies for Exchange Online](app-based-conditional-access-intune-create.md).
-4. [Block apps that cannot be managed](app-modern-authentication-block.md), specifically apps that do not use the Azure Active Directory Authentication Library (ADAL).
-5. (Optional) [Set up app-based conditional access policies for SharePoint Online](app-based-conditional-access-intune-create.md). These policies block access to your company data from apps that cannot be managed and secured. The policies also limit access through SharePoint mobile. 
+For iOS and Android devices: 
+
+1. Learn how [app protection policies](app-protection-policy.md) work.
+2. Learn how to [create and deploy app protection policies](app-protection-policies.md) for Office mobile apps. 
+3. [Monitor the app protection policies](app-protection-policies-monitor.md) that you create and deploy. 
+
+For Windows 10 devices: 
+
+1. Learn [how Windows Information Protection (WIP) works](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+2. Get ready to configure [app protection policies for Windows 10](app-protection-policies-configure-windows-10.md).
+3. [Create and deploy WIP app protection policies with Intune](windows-information-protection-policy-create.md).
 
 ## What to tell employees and students
 
-* Ask your employees and students to download and install Microsoft Outlook or Microsoft SharePoint for iOS from the Apple App Store or for Android from the Google Play Store. 
-* If you block access to apps that do not use modern authentication, let the employees and students know of this restriction. 
+As appropriate, share the following links to provide additional information: 
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
+* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) 
 
 ## Next steps
-
-You have used app-based conditional access to increase the security of company data. As part of next steps, you can learn more about the other ways you can increase the protection of your company's data, including: 
-
-* Setting up [conditional access based on device compliance, device risk, location, and user attributes in Active Directory and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
-* Setting up app protection policies to help you protect your company data against intentional or unintentional data leaks. 
-* Leveraging Azure Information Protection to protect company data outside your network. 
 
 Want help enabling this or other EMS or Office 365 scenarios? If you have at least 150 licenses for Microsoft 365, Enterprise Mobility + Security, or Azure Active Directory Premium, use your [FastTrack benefits](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program). 
