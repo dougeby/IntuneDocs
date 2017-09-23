@@ -31,11 +31,11 @@ You can classify, label, and protect Office 365 documents and emails so only aut
 ## Before you begin
 
 The following action plan can be used when you meet the following requirements:
-* Your company is ready to transition securely to the cloud
-* Your company uses Office 365 Exchange Online, SharePoint Online, OneDrive for Business, or Yammer
-* Your company has licenses for Microsoft 365, Enterprise Mobility + Security (EMS), or Azure Information Protection
-* Your company works with devices running Windows 7 Service Pack 1 or later
-* Your company uses Office 365 ProPlus with 2016 apps or 2013 apps, Office Professional Plus 2016, Office Professional Plus 2013 with Service Pack 1, or Office Professional Plus 2010
+* Your company is ready to transition securely to the cloud.
+* Your company uses Office 365 Exchange Online, SharePoint Online, OneDrive for Business, or Yammer.
+* Your company has licenses for Microsoft 365, Enterprise Mobility + Security (EMS), or Azure Information Protection.
+* Your company works with devices running Windows 7 Service Pack 1 or later.
+* Your company uses Office 365 ProPlus with 2016 apps or 2013 apps, Office Professional Plus 2016, Office Professional Plus 2013 with Service Pack 1, or Office Professional Plus 2010.
 
 ## Action plan
 
@@ -43,12 +43,11 @@ Complete the [quick start tutorial for Azure Information Protection](https://doc
 
 ## What to tell employees and students
 
-You can share details of [how and when to protect documents and emails that contain sensitive information] 
-(https://docs.microsoft.com/information-protection/deploy-use/help-users).
+You can share details of [how and when to protect documents and emails that contain sensitive information](https://docs.microsoft.com/information-protection/deploy-use/help-users).
 
 ## Next steps
 
 As part of next steps, you can learn more about the other ways you can increase the protection of your company's data, including: 
 
-* Learn how to use [Azure Information Protection on iOS and Android devices](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)
-* For Windows Phone and Mac computers, learn about [Microsoft Rights Management SharePoint Application](https://technet.microsoft.com/dn451248)
+* Learn how to use [Azure Information Protection on iOS and Android devices](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* For Windows Phone and Mac computers, learn about [Microsoft Rights Management SharePoint Application](https://technet.microsoft.com/dn451248).
