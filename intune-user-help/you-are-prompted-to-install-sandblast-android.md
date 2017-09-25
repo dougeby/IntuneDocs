@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid:
+ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
 searchScope:
  - User help
 
