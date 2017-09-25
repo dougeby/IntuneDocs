@@ -87,6 +87,8 @@
       href: password-reset.md
     - name: Prevent unauthorized access
       href: data-outside-protect.md
+    - name: Prevent data leaks on non-managed devices
+      href: data-leak-prevention.md
     - name: BYOD
       href: byod-enable.md
   - name: Migration guide
