@@ -4,14 +4,16 @@
 title: Resolving threats found by Mobile Threat Defense apps on iOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befbsearchScope: - User help
+ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
+searchScope: - User help
 
 # optional metadata
 
@@ -31,6 +33,7 @@ Mobile Threat Defense has found a potential threat on your iOS device, and you m
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
+* [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 
 To resolve the issue, open the Mobile Threat Defense app, and follow the instructions shown in the app.
 
