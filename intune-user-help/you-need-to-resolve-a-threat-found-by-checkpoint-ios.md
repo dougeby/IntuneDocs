@@ -2,7 +2,7 @@
 # required metadata
 
 title: Resolving threats found by SandBlast Mobile Protect on iOS | Microsoft Docs
-description:
+description: Learn how to fix a threat found by Mobile Protect on iOS.
 keywords:
 author: barlanmsft
 ms.author: barlan

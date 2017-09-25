@@ -2,7 +2,7 @@
 # required metadata
 
 title: Resolving threats found by Mobile Threat Defense apps on iOS | Microsoft Docs
-description:
+description: Learn how to resolve threats using Mobile Threat Defense apps for iOS.
 keywords:
 author: barlanmsft
 ms.author: barlan

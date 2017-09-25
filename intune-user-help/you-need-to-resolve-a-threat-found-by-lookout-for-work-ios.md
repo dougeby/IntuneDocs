@@ -2,16 +2,18 @@
 # required metadata
 
 title: Resolving threats found by Lookout for Work on iOS | Microsoft Docs
-description:
+description: Learn how to fix a threat found by Lookout for Work on iOS.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3dsearchScope: - User help
+ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
+searchScope: - User help
 
 # optional metadata
 

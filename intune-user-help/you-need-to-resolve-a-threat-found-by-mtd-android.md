@@ -2,12 +2,12 @@
 # required metadata
 
 title: Resolving threats found by Mobile Threat Defense apps on Android | Microsoft Docs
-description: Learn how to resolve threats using Mobile Threat Defense.
+description: Learn how to resolve threats using Mobile Threat Defense apps for Android.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/21/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

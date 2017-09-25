@@ -2,12 +2,12 @@
 # required metadata
 
 title: Resolving threats found by Symantec Endpoint Protection Mobile for iOS | Microsoft Docs
-description: Learn how to fix threats found on your Android device.
+description: Learn how to fix threats found on your iOS device.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/21/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
