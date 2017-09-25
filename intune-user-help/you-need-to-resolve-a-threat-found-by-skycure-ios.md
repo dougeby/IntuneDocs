@@ -12,7 +12,8 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883searchScope: - User help
+ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
+searchScope: - User help
 
 # optional metadata
 

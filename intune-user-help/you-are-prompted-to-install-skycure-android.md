@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,8 +37,6 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 **What you need to do:**
 
 1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. You are taken to the SEP Mobile installation page in the Play Store. Install SEP Mobile, and then tap **ACCEPT** to let SEP Mobile access your device.
 

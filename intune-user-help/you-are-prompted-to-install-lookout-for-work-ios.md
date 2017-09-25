@@ -2,16 +2,18 @@
 # required metadata
 
 title: You need to install Lookout for Work on your iOS device | Microsoft Docs
-description:
+description: Learn how to install Lookout for Work for iOS.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6csearchScope: - User help
+ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+searchScope: - User help
 
 # optional metadata
 
@@ -55,4 +57,6 @@ If Lookout for Work finds a security threat on your device, you will see instruc
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Zimperium zIPS [manually from the App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

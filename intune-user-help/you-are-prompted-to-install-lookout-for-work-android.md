@@ -2,12 +2,12 @@
 # required metadata
 
 title: You need to install Lookout for Work on your Android device | Microsoft Docs
-description:
+description: Learn how to install Lookout for Work for Android.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-#ms.reviewer: jeffgilb
+#ms.reviewer: heenamac
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -82,4 +82,4 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
