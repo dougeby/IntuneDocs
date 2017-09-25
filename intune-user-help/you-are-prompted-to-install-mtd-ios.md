@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,8 @@ Before you can access your work, your IT administrator needs you to install the 
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
 * [Symantec Endpoint Protection Mobile](you-are-prompted-to-install-skycure-ios.md)
+* [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
+* [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
 **If the installation doesn't work**
 

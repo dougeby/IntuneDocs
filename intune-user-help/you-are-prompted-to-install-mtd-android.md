@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,8 @@ Before you can access your work, your company support needs you to install the S
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-are-prompted-to-install-skycure-android.md)
+* [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-android.md)
+* [Zimperium zIPS](you-are-prompted-to-install-zips-android.md)
 
 **If the installation doesn't work**
 
