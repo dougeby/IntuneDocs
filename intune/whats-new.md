@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/18/2017
+ms.date: 09/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,17 +46,20 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of September 25, 2017
+
+### Device enrollment
+
+#### Intune apps support iOS 11 <!--1428975-->
+Intune supports iOS 11. This was previously announced on the [Intune Support blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/).
+
 ## Week of September 11, 2017
 
 ### Device enrollment
 
-#### Additional push notifications for end users on the Company Portal app for Android Oreo <!---1475932--->
-
-End users will see additional notifications to indicate to them when the Company Portal app for Android Oreo is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android Oreo. 
-
 #### Inform end users what device information can be seen for iOS <!--739894--> 
 
-We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen. 
+We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
 
 #### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->
 
@@ -69,7 +72,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 
 #### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
 
-The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list. 
+The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list.
 
 
 ## Week of August 21, 2017
