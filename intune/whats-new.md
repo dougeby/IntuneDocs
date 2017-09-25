@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/18/2017
+ms.date: 09/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+## Week of September 25, 2017
+
+### Device enrollment
+
+#### Intune apps support iOS 11 <!--1428975-->
+Intune supports iOS 11. This was previously announced on the [Intune Support blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/). 
 
 ## Week of September 11, 2017
 
