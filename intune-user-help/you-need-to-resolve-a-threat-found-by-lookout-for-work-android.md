@@ -39,7 +39,7 @@ If there is a virus or other security threat on your enrolled device, and you tr
 
 ![Lookout for Work error message with link to Company Portal website](./media/mtd-go-to-device-management-portal-android.png)
 
-Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
+Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
 
 ## Example of an app that Lookout for Work sees as a threat
 
@@ -49,4 +49,4 @@ If you have installed an app that Lookout for Work thinks is a threat, you'll se
 
 After you uninstall the app, you regain access to your company email and data right away. If you ignore the request to uninstall the app, you will lose access to your email and data until you uninstall the app.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
