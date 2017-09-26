@@ -40,4 +40,4 @@ If this is happening to you, the Company Portal team needs some information to t
 4.	Open your email app, and paste that content into the body of the email. Send that email to
 <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

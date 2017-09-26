@@ -39,4 +39,4 @@ To link your computer:
 
 If you prefer to unenroll your device, use the instructions for the type of device you have: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), or [Windows](unenroll-your-device-from-intune-windows.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

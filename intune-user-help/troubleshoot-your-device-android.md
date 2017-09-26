@@ -30,7 +30,7 @@ ms.suite: ems
 
 # Fix common issues with your Android device
 
-Sometimes issues can occur with your Android device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes issues can occur with your Android device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
 
 - [Check compliance on your Android device](check-compliance-on-your-device-android.md)
 - [Use Verbose Logging to help your company support fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

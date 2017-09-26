@@ -37,4 +37,4 @@ You've already got an email account with your organization or company, and now y
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

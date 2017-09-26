@@ -44,4 +44,4 @@ If your device is set up only to get company email, and you unenroll your device
 
 For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
 
-Need help? Contact your company support (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

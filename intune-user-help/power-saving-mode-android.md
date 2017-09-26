@@ -79,4 +79,4 @@ Another example of a different way to locate these settings is through searching
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

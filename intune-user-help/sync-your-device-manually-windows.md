@@ -133,4 +133,4 @@ To manually sync your Windows Phone 8.1 device to speed up a slow app installati
 
    The message “We’re synching your account” appears at the top of the screen until your device finishes syncing.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

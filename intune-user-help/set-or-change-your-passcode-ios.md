@@ -46,4 +46,4 @@ If you have trouble setting a passcode that meets the passcode requirements, con
 2. Tap **Change Passcode** and enter your old password.
 3. Enter a new passcode that meets your company support's requirements, and then enter it again to verify it.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

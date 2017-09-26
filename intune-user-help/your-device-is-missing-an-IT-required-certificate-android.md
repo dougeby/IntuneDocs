@@ -38,9 +38,9 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 ## Identify the missing certificate by looking on a company or school PC
 
-1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your company support. For your company support's contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your company support. For your company support's contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
 
-2. Go to the [Company Portal website](http://portal.manage.microsoft.com), and sign in using your work or school credentials.
+2. Go to the [Company Portal website](https://portal.manage.microsoft.com), and sign in using your work or school credentials.
 
 3. At the far right of the browser's address bar, choose the symbol that looks like a padlock, as shown in the following screenshot.
 
@@ -72,4 +72,4 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your company support.
 
-If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your company support will need to help you install. Contact your company support for help using contact information available at the [Company Portal website](http://portal.manage.microsoft.com).
+If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your company support will need to help you install. Contact your company support for help using contact information available at the [Company Portal website](https://portal.manage.microsoft.com).

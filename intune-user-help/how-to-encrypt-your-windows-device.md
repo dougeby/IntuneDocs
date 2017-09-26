@@ -35,4 +35,4 @@ If you have a desktop device, follow the instructions below to encrypt it.
 
 2.  Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

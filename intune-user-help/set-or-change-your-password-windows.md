@@ -49,4 +49,4 @@ If your Windows device doesn't comply with your company support's password polic
 3. Enter your new password in the **New password** box, and then reenter it in the **Confirm password** box.
 4. Choose **done**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

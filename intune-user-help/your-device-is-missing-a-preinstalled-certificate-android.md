@@ -45,9 +45,9 @@ You can fix this issue by getting the required certificate from [Digicert's cert
 
 5. Close your browser and the Company Portal app.
 
-6. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you still cannot use the Company Portal app, contact your company support using the information provided on the [Company Portal website](http://portal.manage.microsoft.com) for further instructions.
+6. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you still cannot use the Company Portal app, contact your company support using the information provided on the [Company Portal website](https://portal.manage.microsoft.com) for further instructions.
 
 >[!NOTE]
 > If installing this certificate doesn't solve the issue, and you see a different "missing certificate" message, you will need to take additional steps to [install the missing certificate](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

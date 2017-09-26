@@ -36,4 +36,4 @@ Code Integrity is automatically turned on when your system actively uses Secure 
 
 If you feel comfortable with proceeding, read over the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

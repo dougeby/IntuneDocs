@@ -32,4 +32,4 @@ Your Android device is able to download and install apps that can accomplish a w
 
 You can turn on this scanning by going to **Settings** > **Google** > **Security**, and turn on **Scan device for security threats**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

@@ -36,4 +36,4 @@ Before you can access your work, your company support needs you to install the M
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

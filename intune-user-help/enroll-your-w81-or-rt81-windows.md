@@ -66,4 +66,4 @@ We also recommend that you install the Company Portal app, which lets you easily
 
 4.  Tap  either **Install** or **Free**. The option shown depends on how your company set up the app.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
