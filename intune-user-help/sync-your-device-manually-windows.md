@@ -66,7 +66,7 @@ There is more than one version of Windows 10, so there are two sets of steps. To
 
     ![Choose Access work or school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Choose your work or school account. Depending on how your IT admin has set things up, you might see two accounts that look similar to the example shown below. One account has a briefcase next to it, and the other has the Microsoft logo next to it.
+2. Choose your work or school account. Depending on how your company support has set things up, you might see two accounts that look similar to the example shown below. One account has a briefcase next to it, and the other has the Microsoft logo next to it.
 
 	- If you see the account with the briefcase, select it, and look for an **Info** button under it.
 	- If you see only the account with the Microsoft logo, select the account, and look for an **Info** button under it.
@@ -133,4 +133,4 @@ To manually sync your Windows Phone 8.1 device to speed up a slow app installati
 
    The message “We’re synching your account” appears at the top of the screen until your device finishes syncing.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

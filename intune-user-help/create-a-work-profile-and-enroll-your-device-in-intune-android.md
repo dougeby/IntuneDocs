@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Create a work profile and enroll your device in Intune
 
-Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data. Your IT admin can manage only the work profile, which contains your work data. Your IT admin cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
+Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data. Your company support can manage only the work profile, which contains your work data. Your company support cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
 
 To create a work profile:
 
@@ -47,9 +47,9 @@ To create a work profile:
 
 	![Why create a work profile](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
+4.  Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.
 
-	![What your IT admin can and can't see on your device](./media/andr-afw-what-it-can-see-on-your-device.png)
+	![What your company support can and can't see on your device](./media/andr-afw-what-it-can-see-on-your-device.png)
 
 5.  On the **What comes next** screen, read about what's going to happen next, and then tap **CONTINUE**.
 
@@ -59,7 +59,7 @@ To create a work profile:
 
 	![Give Company Portal app access to work profile](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Review the Google screen that describes what your IT administrator can do when you create a work profile, and then tap **OK**.
+7. Review the Google screen that describes what your company support can do when you create a work profile, and then tap **OK**.
 
 	![Review Google's information about work profiles](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -81,7 +81,7 @@ To create a work profile:
 
 	![Company Access Setup shows work profile and enrollment are complete](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. On the **Company Access Setup complete** screen, tap **DONE**. You may have to complete additional steps if your IT admin has added other requirements.
+12. On the **Company Access Setup complete** screen, tap **DONE**. You may have to complete additional steps if your company support has added other requirements.
 
 	![Company Access Setup is complete](./media/andr-afw-company-access-setup-complete.png)
 
@@ -89,4 +89,4 @@ To create a work profile:
 
 	![Play Store for Work apps page](./media/andr-afw-tap-work-play-store-icon.png)
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

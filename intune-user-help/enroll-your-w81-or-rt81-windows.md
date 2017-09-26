@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # How to enroll your Windows 8.1 or Windows RT 8.1 device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 To enroll your Windows 8.1 or Windows RT 8.1 device:
@@ -48,7 +48,7 @@ To enroll your Windows 8.1 or Windows RT 8.1 device:
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  In the **Allow apps and services from IT admin** dialog box, check the  **I agree** box, and then tap **Turn on**.
+5.  In the **Allow apps and services from company support** dialog box, check the  **I agree** box, and then tap **Turn on**.
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -66,4 +66,4 @@ We also recommend that you install the Company Portal app, which lets you easily
 
 4.  Tap  either **Install** or **Free**. The option shown depends on how your company set up the app.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

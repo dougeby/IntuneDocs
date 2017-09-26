@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # An existing company email account was found
 
-You've already got an email account with your organization or company, and now you want to access that account on your mobile device. Your IT admin needs your help to keep your email access secure on its journey from the person who sent it to your device. Your current email may have worked, but taking these steps will keep your information safer.
+You've already got an email account with your organization or company, and now you want to access that account on your mobile device. Your company support needs your help to keep your email access secure on its journey from the person who sent it to your device. Your current email may have worked, but taking these steps will keep your information safer.
 
 1.  Find the **Settings** for your device and remove the connection you previously set up to your company email.
 
@@ -37,4 +37,4 @@ You've already got an email account with your organization or company, and now y
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

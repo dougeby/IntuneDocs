@@ -34,7 +34,7 @@ ms.custom: intune-enduser
 When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
 
 > [!Note]
-> You might be asked to set a PIN or password before encrypting if your IT admin requires one.
+> You might be asked to set a PIN or password before encrypting if your company support requires one.
 
 If you unenroll your phone, it will remain encrypted.
 
@@ -59,7 +59,7 @@ If you unenroll your phone, it will remain encrypted.
 
 - Make sure that your device is charged and plugged in.
 - Make sure that you've set a PIN or password on your device.
-- If you've already set a PIN or password on your device, try the following steps, which your IT admin might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
+- If you've already set a PIN or password on your device, try the following steps, which your company support might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
 
 	1. Go to **Settings** > **Lock Screen and Security** > **Screen lock**. Confirm your current PIN or password.
 
@@ -73,4 +73,4 @@ If you unenroll your phone, it will remain encrypted.
 
 	6. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

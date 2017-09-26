@@ -30,8 +30,8 @@ ms.custom: intune-enduser
 
 Your organization requires that you enable Windows Secure Boot, which is a security feature that helps to protect your device.
 
-Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your IT admin for help.
+Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your company support for help.
 
-If you are using a PC, you can contact your IT admin, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
+If you are using a PC, you can contact your company support, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

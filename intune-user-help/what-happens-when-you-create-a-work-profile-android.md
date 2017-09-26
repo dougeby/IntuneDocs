@@ -32,9 +32,9 @@ A work profile is something that you set up on your device to keep your work or 
 
 When you create a work profile:
 
-- Your IT administrator can manage only the work-related email, apps, settings, and data on your device, not your personal apps or data.
+- Your company support can manage only the work-related email, apps, settings, and data on your device, not your personal apps or data.
 
-- You get work apps from the Play Store for Work. To get personal apps, you continue to go to the Google Play Store that you always use to get your personal apps. The IT administrator cannot see or manage your personal apps.
+- You get work apps from the Play Store for Work. To get personal apps, you continue to go to the Google Play Store that you always use to get your personal apps. The company support cannot see or manage your personal apps.
 
 - Work apps are separated from your personal apps, but they can both appear on your home screen at the same time. Below is an example of what you might see. Your screen might look slightly different.
 
@@ -42,9 +42,9 @@ When you create a work profile:
 
 	![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- Your company or school owns your work profile, so your IT administrator can install or remove work apps or your profile, but not your personal apps or data.
-- Your IT administrator cannot reset or wipe your device.
+- Your company or school owns your work profile, so your company support can install or remove work apps or your profile, but not your personal apps or data.
+- Your company support cannot reset or wipe your device.
 
 For the steps to create a work profile, see [Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

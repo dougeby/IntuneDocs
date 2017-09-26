@@ -43,4 +43,4 @@ To rename your device:
 
 4.  In the box where your device's name appears, type a new name for your device, and then tap the **Rename** button. Your device now appears with the new name.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

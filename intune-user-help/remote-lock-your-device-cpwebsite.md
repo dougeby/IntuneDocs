@@ -64,8 +64,8 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 	* The tile that shows the device name on the **My Devices** section of the page.
 
 > [!Note]
-> If you see a “Remote Lock failed” notification, wait a few minutes, and try to lock your device again. After you begin to retry, the status will change back to “Remote lock pending.” If the retry doesn't work, you'll need to reach out to your IT admin.
+> If you see a “Remote Lock failed” notification, wait a few minutes, and try to lock your device again. After you begin to retry, the status will change back to “Remote lock pending.” If the retry doesn't work, you'll need to reach out to your company support.
 
 If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

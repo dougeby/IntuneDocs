@@ -31,4 +31,4 @@ Your device is noncompliant with at least one of your organization's security po
 
 In the Company Portal app, tap **Check Compliance**. The Company Portal app will then tell you what is causing your device to be noncompliant.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

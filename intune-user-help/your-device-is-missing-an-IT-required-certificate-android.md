@@ -25,9 +25,9 @@ ms.suite: ems
 ms.custom: intune-enduser
 ---
 
-# Your Android device is missing a certificate required by your IT admin
+# Your Android device is missing a certificate required by your company support
 
-If your device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your IT admin, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
+If your device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your company support, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -38,7 +38,7 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 ## Identify the missing certificate by looking on a company or school PC
 
-1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your IT admin. For your IT admin's contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your company support. For your company support's contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 2. Go to the [Company Portal website](http://portal.manage.microsoft.com), and sign in using your work or school credentials.
 
@@ -46,7 +46,7 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 	![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-	If you don't see the padlock symbol, stop and contact your IT admin. The lock means that you are securely signed in, so you should not proceed unless you see that symbol.
+	If you don't see the padlock symbol, stop and contact your company support. The lock means that you are securely signed in, so you should not proceed unless you see that symbol.
 
 4. Choose **View certificates**.
 
@@ -70,6 +70,6 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 6. Close the Company Portal app.
 
-7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your IT admin.
+7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your company support.
 
-If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your IT admin will need to help you install. Contact your IT admin for help using contact information available at the [Company Portal website](http://portal.manage.microsoft.com).
+If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your company support will need to help you install. Contact your company support for help using contact information available at the [Company Portal website](http://portal.manage.microsoft.com).

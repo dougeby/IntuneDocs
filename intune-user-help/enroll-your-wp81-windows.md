@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 
 # Enroll your Windows Phone 8.1 device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
@@ -87,6 +87,6 @@ Enroll your device:
 
 4.  If prompted to install the company app or Hub, make sure the relevant box is checked, and then tap **done**.
 
-If your IT admin has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
+If your company support has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

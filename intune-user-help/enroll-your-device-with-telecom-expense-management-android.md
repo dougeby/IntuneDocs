@@ -36,7 +36,7 @@ Your organization may be using telecom expense management software to ensure tha
 
 Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) app from the Google Play Store. The Datalert app is how your organization can measure data usage. If your organization has configured the work or school enrollment option, you will be required to log in with your work or school account. If this hasn't been enabled, you will need to provide information such as your phone number and verify your device using a code to enroll into the Datalert service from the app.
 
-Tap the __next__ arrow at the top right corner of the screen to proceed. Your IT admin should tell you whether you'll sign in with your __Microsoft work or school account__ or to use your __phone number__.
+Tap the __next__ arrow at the top right corner of the screen to proceed. Your company support should tell you whether you'll sign in with your __Microsoft work or school account__ or to use your __phone number__.
 
   ![A screenshot of the Datalert app welcome screen, which prompts you to move to the next screen after providing a brief explanation about how Datalert can get you the most out of your data plan.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -68,4 +68,4 @@ Tap the __next__ arrow at the top right corner of the screen to proceed. Your IT
 
 Once you've enrolled, you will begin to see your data usage in the Datalert app.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

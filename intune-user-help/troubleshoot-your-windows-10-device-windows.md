@@ -60,6 +60,6 @@ If you followed the steps above, but still can't access your work or school emai
 
 ## Troubleshooting steps to follow if you see "Set up a work or school account"
 
-If you see a message that says __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__, then you should try to re-enter your username and password. If it still doesn't work, you should check with your IT admin for the website that you need to provide in the **Management endpoint** text box. This is a website that probably looks like **www.yourcompany.onmicrosoft.com**. 
+If you see a message that says __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__, then you should try to re-enter your username and password. If it still doesn't work, you should check with your company support for the website that you need to provide in the **Management endpoint** text box. This is a website that probably looks like **www.yourcompany.onmicrosoft.com**. 
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

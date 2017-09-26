@@ -42,4 +42,4 @@ Sometimes an app may take too long to download from the Company Portal. If this 
 
 A loading bar will appear on the screen and will load until the sync is finished.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

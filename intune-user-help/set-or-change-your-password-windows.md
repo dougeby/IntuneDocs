@@ -29,10 +29,10 @@ ms.custom: intune-enduser
 
 Accessing corporate resources, such as email and documents, is something that people need to do every day from their Windows devices. Your organization wants to make sure that your device is doing this safely. One way to make sure that your device is securely accessing these resources is requiring devices to use a password. These passwords are used, for example, to access your device from the lock screen.
 
-If your Windows device doesn't comply with your IT admin's password policy, you will see a message that briefly describes the issue and explains what you need to do to make your password meet the requirements.
+If your Windows device doesn't comply with your company support's password policy, you will see a message that briefly describes the issue and explains what you need to do to make your password meet the requirements.
 
 > [!Note]
-> Your IT admin can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters. Because more than one requirement might be set, these instructions explain only how to set or change your password. They don't explain every possible combination of requirements.
+> Your company support can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters. Because more than one requirement might be set, these instructions explain only how to set or change your password. They don't explain every possible combination of requirements.
 
 ## To change your password on Windows Phone 8.1
 
@@ -49,4 +49,4 @@ If your Windows device doesn't comply with your IT admin's password policy, you 
 3. Enter your new password in the **New password** box, and then reenter it in the **Confirm password** box.
 4. Choose **done**.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

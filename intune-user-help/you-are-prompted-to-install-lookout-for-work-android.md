@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # You need to install Lookout for Work
 
-Before you can access your work, your IT admin needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
+Before you can access your work, your company support needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
 
 If you have trouble with the installation, try the troublshooting steps at the end of this topic.
 
@@ -82,4 +82,4 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

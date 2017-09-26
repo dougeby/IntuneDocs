@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 When you use the Company Portal to reset your iPhone or iPad, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on how you are using the device, as described in the following lists.
 
-**Your IT admin manages your mobile device**
+**Your company support manages your mobile device**
 
 -   Your device won’t appear in the Company Portal anymore.
 
@@ -42,4 +42,4 @@ When you use the Company Portal to reset your iPhone or iPad, some apps and sett
 
 -   Your company email account will be deleted and unsaved email will be deleted.
 
-If you have questions, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
