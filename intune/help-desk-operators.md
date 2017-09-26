@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The Help desk operator role can use the **Troubleshoot** blade.
+The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** blade.
 
 For steps on adding a help desk operator role, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control)
 
@@ -42,7 +42,7 @@ When a user contacts support with a technical issue with Intune, the help desk o
 
 ## To review troubleshooting details
 
-In the troubleshooting blade, choose **Select user** to view user information. User information can help you understand the current state of users and their devices. 
+In the troubleshooting blade, choose **Select user** to view user information. User information can help you understand the current state of users and their devices.  
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -51,7 +51,7 @@ In the troubleshooting blade, choose **Select user** to view user information. U
 5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting blade. The following tables explains the information.
 
 > [!Note]  
-> You can also access the **troubleshooting** by pointing your browser to: [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting).
+> You can also access the **troubleshooting** by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## Areas of troubleshooting dashboard
 
@@ -110,6 +110,39 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 | Device type | The name of the type of device.                                                       |
 | Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+## App protection policies reference
+
+An app protection policy is available to mobile apps that integrate with EMS technologies. This gives a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+
+### Properties
+
+The table summarizes app protection policies status for devices managed by Intune.
+
+| Property    | Description                                                                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
+
+### Devices
+
+Devices managed by Intune or by users managed by Intune or Azure AD.
+
+| Property           | Text                                                                                                                                |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
 ## Compliance policies reference
 
@@ -206,6 +239,6 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 You can learn more about Role-based administration control (RBAC) to define roles in your organizational device, mobile application management, data protection tasks. For more information, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control).
 
-learn about any known issues in Microsoft Intune. For more information, see [Known issues in Microsoft Intune](/intune/known-issues).
+Learn about any known issues in Microsoft Intune. For more information, see [Known issues in Microsoft Intune](/intune/known-issues).
 
 Learn how to create a support ticket a get help when you need it. [Get support](/intune/get-support).
