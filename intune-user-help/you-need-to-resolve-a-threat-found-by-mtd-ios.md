@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by a Mobile Threat Defense app
 
-Mobile Threat Defense has found a potential threat on your iOS device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your IT admin has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
+Mobile Threat Defense has found a potential threat on your iOS device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your company has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-ios.md)
@@ -44,4 +44,4 @@ If you have installed an app that Mobile Threat Defense thinks is a threat, you 
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

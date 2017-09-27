@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Install Symantec Endpoint Protection Mobile on your Android device
 
-Before you can access your work, your company support needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats.
+Before you can access your work, your company needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats.
 
 If you have trouble with the installation, try the troubleshooting steps at the end of this topic.
 

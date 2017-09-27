@@ -34,7 +34,7 @@ Before you can access your work, your IT admin needs you to install the Lookout 
 
 If you have trouble with the installation, try the troubleshooting steps at the end of this topic.
 
-**What you need to do:**
+## What you need to do
 
 1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Lookout for Work from Play Store**.
 
@@ -78,7 +78,7 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
   If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
 
-**If the installation doesn't work**
+## If the installation doesn't work
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 

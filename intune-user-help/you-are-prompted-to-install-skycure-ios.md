@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Install Symantec Endpoint Protection Mobile on your iOS device
 
-Before you can access your work, your company support needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company set up SEP Mobile.
+Before you can access your work, your company needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company set up SEP Mobile.
 
 ## What you need to do
 

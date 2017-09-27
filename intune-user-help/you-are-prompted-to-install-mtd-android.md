@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 
 # Install Mobile Threat Defense on your Android device
 
-Before you can access your work, your company support needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company set it up.
+Before you can access your work, your company needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company set it up.
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-are-prompted-to-install-skycure-android.md)

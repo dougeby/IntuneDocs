@@ -46,4 +46,4 @@ If you have installed an app that SandBlast Mobile Protect sees as a threat, the
 
 When this happens, uninstall the app to regain access to your company email and data right away. If do not uninstall the app, you will lose access to your email and data until you do uninstall the app.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
