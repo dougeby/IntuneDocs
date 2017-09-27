@@ -45,10 +45,10 @@ Users can do the following tasks from the Company Portal website:
 
 -	[Sync your device manually to get apps to install more quickly](sync-your-device-manually-cpwebsite.md)
 
--   Find the IT admin's contact information, if you configured it
+-   Find the company support's contact information, if you configured it
 
 -   See details about their device, including whether it is compliant with your company's or school's policies
 
 -   Remotely manage their PC (works only for PCs)
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

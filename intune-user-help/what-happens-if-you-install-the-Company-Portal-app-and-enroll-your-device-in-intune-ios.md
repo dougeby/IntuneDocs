@@ -38,9 +38,9 @@ When you install the Company Portal app and enroll your iOS or macOS device in I
 
 -   Automatically set up your company email account.
 
-When you enroll your device in Intune, you are giving your IT admin permission to manage your device to help protect the company information on the device.
+When you enroll your device in Intune, you are giving your company support permission to manage your device to help protect the company information on the device.
 
-When your device is enrolled, your IT admin can:
+When your device is enrolled, your company support can:
 
 -   Reset your device back to manufacturer’s default settings if the device is lost or stolen.
 
@@ -66,4 +66,4 @@ When your device is enrolled, your IT admin can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
-If you have questions, contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

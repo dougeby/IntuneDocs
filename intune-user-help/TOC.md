@@ -27,7 +27,7 @@
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 
-#### [Using logs to fix issues]
+#### Using logs to fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
