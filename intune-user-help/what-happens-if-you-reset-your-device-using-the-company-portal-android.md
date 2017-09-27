@@ -32,8 +32,8 @@ When you use the Company Portal to reset your Android device, all apps, settings
 
 If you have a Samsung KNOX device, you can do a "selective wipe" by choosing the **device remove** option from the Company Portal. Selective wipe removes only:
 
-- Business apps that your IT administrator makes available to you.
+- Business apps that your company support makes available to you.
 - Email, VPN, and Wi-Fi.
-- The ability of your IT administrator to enforce certain settings.
+- The ability of your company support to enforce certain settings.
 
-If you have questions, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

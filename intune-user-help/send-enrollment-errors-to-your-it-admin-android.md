@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Send enrollment errors to your IT admin | Microsoft Docs
+title: Send enrollment errors to your company support | Microsoft Docs
 description: Send enrollment errors to your admin
 keywords:
 author: barlanmsftms.author: barlan
@@ -25,13 +25,13 @@ ms.custom: intune-enduser
 
 ---
 
-# Send enrollment errors to your IT admin
+# Send enrollment errors to your company support
 
-If you get an error while trying to enroll your Android device in Intune, you can try enrolling again by tapping **Retry**. If this doesn't work, you can send information about what's happening to your IT admin in an email by tapping **Send info**.
+If you get an error while trying to enroll your Android device in Intune, you can try enrolling again by tapping **Retry**. If this doesn't work, you can send information about what's happening to your company support in an email by tapping **Send info**.
 
-When you tap **Send info**, an email is created automatically. The email is addressed to your IT admin, and contains the information, or _logs_, that your IT admin needs to help troubleshoot your device.
+When you tap **Send info**, an email is created automatically. The email is addressed to your company support, and contains the information, or _logs_, that your company support needs to help troubleshoot your device.
 
-There are different ways you can send your device's data logs to your IT admin to get help with errors:
+There are different ways you can send your device's data logs to your company support to get help with errors:
 
 - [Use the Send Info button to email logs](send-logs-to-your-it-admin-by-email-android.md)
 - [Use a USB cable to send logs as an email attachment](send-logs-to-your-it-admin-using-cable-android.md)

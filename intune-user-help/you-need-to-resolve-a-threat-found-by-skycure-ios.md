@@ -5,15 +5,18 @@ title: Resolving threats found by Symantec Endpoint Protection Mobile for iOS | 
 description: Learn how to fix threats found on your iOS device.
 keywords:
 author: barlanmsft
-ms.author: barlan
+
+ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
-searchScope: - User help
+ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
+
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -41,7 +44,7 @@ If there is a virus or other security threat on your enrolled device, and you tr
 
 ![Skycure error message with link to Company Portal website](./media/mtd-go-to-device-management-portal-android.png)
 
-Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
+Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
 
 ## Example of an app that Symantec Endpoint Protection Mobile sees as a threat
 
@@ -51,4 +54,5 @@ Tap the app name shown at the top of your screen, and follow the instructions to
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Help your IT admin fix device issues with verbose logging | Microsoft Docs
-description: Help your IT admin fix device issues by using verbose logging
+title: Help your company support fix device issues with verbose logging | Microsoft Docs
+description: Help your company support fix device issues by using verbose logging
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
@@ -26,10 +26,10 @@ ms.custom: intune-enduser
 ---
 
 
-# Help your IT admin fix device issues with verbose logging
+# Help your company support fix device issues with verbose logging
 
-When your Android device is enrolled in Intune, you can use *verbose logging* to make the Company Portal app and Intune-managed apps record detailed logs about what's happening on your device. These logs help your IT admin fix any issues that you might have when you're using the Company Portal or an app that's managed by Intune. Verbose logging is enabled on your device  by default, and the  logs that are sent to your IT admin include your email address.
+When your Android device is enrolled in Intune, you can use *verbose logging* to make the Company Portal app and Intune-managed apps record detailed logs about what's happening on your device. These logs help your company support fix any issues that you might have when you're using the Company Portal or an app that's managed by Intune. Verbose logging is enabled on your device  by default, and the  logs that are sent to your company support include your email address.
 
 To turn verbose logging on or off, sign in to the Company Portal app using your work or school credentials, tap **Settings**, and tap the on/off button next to **Verbose Logging**.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

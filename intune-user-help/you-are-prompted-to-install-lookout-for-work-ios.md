@@ -4,7 +4,8 @@
 title: You need to install Lookout for Work on your iOS device | Microsoft Docs
 description: Learn how to install Lookout for Work for iOS.
 keywords:
-author: barlanmsft
+author: barlanmsft
+
 ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2017
@@ -13,7 +14,9 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
-searchScope: - User help
+
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -29,7 +32,9 @@ ms.custom: intune-enduser
 
 # Install Lookout for Work on your iOS device
 
+
 Before you can access your work, your company needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
+
 
 ## What you need to do
 
@@ -60,3 +65,4 @@ Before you can access your work, your company needs you to install the Lookout f
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+
