@@ -71,7 +71,7 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 6. Choose **Basic**.
 7. Type or paste the **OData URL** into the URL box.
 8. Click **OK**.
-9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials.  
+9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials. To gain access to your data, you must authorize with Azure Active Directory (Azure AD) using OAuth 2.0.  
     1.  Select **Organizational account**.  
     2.  Type your username and password.  
     3.  Click **Sign In.**  
