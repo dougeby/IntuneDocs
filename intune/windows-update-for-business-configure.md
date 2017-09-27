@@ -110,9 +110,18 @@ The new update ring is displayed in the list of update rings.
 2. On the next tab, choose **Select groups**, and then choose the groups to which you want to assign this ring.
 3. Once you are done, choose **Select** to complete the assignment.
 
-
-
 ## Update compliance reporting
+You can view update compliance in Intune or by using a free solution in the Operations Management Suite (OMS) called Update Compliance.
+
+### Review update compliance in Intune <!-- 1352223 -->
+Review a policy report to view the deployment status for the Windows 10 update rings that you have configured. 
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, choose **Software Updates**.
+4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
+5. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
+
+### Review update compliance using OMS
 You can monitor Windows 10 update rollouts by using a free solution in the Operations Management Suite (OMS) called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
 
 In the Intune console, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
@@ -129,18 +138,6 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
 ![Windows setting for diagnostic and usage data](./media/commID.png)
-
-<!--
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-4. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
--->
-
-
-
-
 
 ## How to pause updates
 You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality will automatically expire and the device will scan Windows Updates for applicable updates. Following this scan, you can pause the updates again.
