@@ -30,14 +30,14 @@ ms.custom: intune-enduser
 
 # How to reset your device passcode from the Company Portal website
 
-If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](http://portal.manage.microsoft.com) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
+If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](https://portal.manage.microsoft.com) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
 
 > [!NOTE]
-> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you'll need to contact your IT admin to reset the passcode for you.
+> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you'll need to contact your company support to reset the passcode for you.
 
 To reset your passcode:
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/intune/media/CP_hamburger_menu.png), then select __My Devices__.
+1.	On the [Company Portal website](https://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/intune/media/CP_hamburger_menu.png), then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device whose passcode you want to reset.
 
@@ -74,4 +74,4 @@ To reset your passcode:
 
 To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

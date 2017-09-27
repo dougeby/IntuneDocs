@@ -40,22 +40,22 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen.
 
-For the steps to enroll, see [Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune](enroll-your-w10-phone-or-w10-pc-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+For the steps to enroll, see [Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune](enroll-your-w10-phone-or-w10-pc-windows.md). To learn about what your company support can see on your device, see [What can my company support see when I enroll my device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 When you add a computer:
 
--   Software will be installed on your computer to let your IT admin manage the computer, and to let you access company resources like apps and support information. Your IT admin might automatically update this software.
+-   Software will be installed on your computer to let your company support manage the computer, and to let you access company resources like apps and support information. Your company support might automatically update this software.
 
 -   Intune Endpoint Protection might be installed on your computer. This software checks for viruses and malware.
 
--   Your IT admin can take an inventory of all of the software installed on the computer, including software you have personally installed.
+-   Your company support can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
 -   You might be required to accept terms and conditions.
 
--   Your IT admin can collect or delete data from your computer’s hard drive. Your IT admin might also delete the entire hard drive.
+-   Your company support can collect or delete data from your computer’s hard drive. Your company support might also delete the entire hard drive.
 
--   Your IT admin can install apps and updates on your computer.
+-   Your company support can install apps and updates on your computer.
 
--   Your IT admin might enforce policies on the computer. For example, you might be required to set a password or PIN on the computer. Your IT admin might also limit how many times you can enter an incorrect password, and might lock you out of the computer or delete all data from your computer’s hard drive if you try too many times.
+-   Your company support might enforce policies on the computer. For example, you might be required to set a password or PIN on the computer. Your company support might also limit how many times you can enter an incorrect password, and might lock you out of the computer or delete all data from your computer’s hard drive if you try too many times.
 
-If you have questions, contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

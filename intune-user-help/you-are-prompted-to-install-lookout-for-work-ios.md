@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # You need to install Lookout for Work on your iOS device
 
-Before you can access your work, your IT administrator needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
+Before you can access your work, your company support needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company support set up Lookout for Work.
 
 **What you need to do:**
 
@@ -55,4 +55,4 @@ If Lookout for Work finds a security threat on your device, you will see instruc
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
