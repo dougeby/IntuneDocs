@@ -52,9 +52,9 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. Zimperium zIPS starts to check right away for security threats on your device.
 
-9.  If Zimperium zIPS finds a security threat on your device, you will see instructions about how to fix the issue.
+   * If Zimperium zIPS finds a security threat on your device, you will see instructions about how to fix the issue.
 
-10.  If no threats are found, all three threat types will appear green.
+   * If no threats are found, all three threat types will appear green.
 
 11. The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
