@@ -28,13 +28,13 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Symantec Endpoint Protection Mobile on your Android device
+# Install Symantec Endpoint Protection Mobile on your Android device
 
 Before you can access your work, your company support needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats.
 
 If you have trouble with the installation, try the troubleshooting steps at the end of this topic.
 
-**What you need to do:**
+## What you need to do
 
 1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
 
@@ -52,8 +52,6 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. SEP Mobile starts to check right away for security threats on your device.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
-
   If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
 
   <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
@@ -64,7 +62,7 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
-**If the installation doesn't work**
+## If the installation doesn't work
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SEP Mobile [manually from the Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 

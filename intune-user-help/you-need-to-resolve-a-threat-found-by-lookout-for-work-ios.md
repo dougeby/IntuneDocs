@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Lookout for Work
+# Resolve a threat found by Lookout for Work
 
 Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
 
