@@ -61,7 +61,7 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
   > [!NOTE]
   > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
-4. Review a list of what your IT admin can and can’t see on your enrolled device, and then tap **Continue**.
+4. Review a list of what your company support can and can’t see on your enrolled device, and then tap **Continue**.
 
 	![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -108,4 +108,4 @@ Your device is now enrolled in Intune, and you are taken back to the Company Por
 > [!Note]
 > You have a few more steps to complete before your device is fully enrolled. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 # Enroll your device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your device to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment and about what your IT administrator can and can't see on your device, check out the links at the bottom of this topic.
+If your company or school uses Microsoft Intune, you can enroll your device to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment and about what your company support can and can't see on your device, check out the links at the bottom of this topic.
 
 To see enrollment instructions, use the link that matches the type of device you're using:
 
