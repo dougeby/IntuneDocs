@@ -28,11 +28,11 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Zimperium zIPS on your iOS device
+# Install Zimperium zIPS on your iOS device
 
 Before you can access your work, your company support needs you to install the Zimperium zIPS app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your company set up Zimperium zIPS.
 
-**What you need to do:**
+## What you need to do 
 
 1.	If you see a following prompt, tap **Install** to allow Zimperium zIPS to be installed on your device.
 
@@ -48,7 +48,7 @@ Before you can access your work, your company support needs you to install the Z
 
 If Zimperium zIPS finds a security threat on your device, you will see instructions on how to fix the issue.
 
-**If the installation doesn't work**
+## If the installation doesn't work
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Zimperium zIPS [manually from the App Store](https://itunes.apple.com/app/zimperium-zips/id1030924459).
 
