@@ -42,10 +42,11 @@ Use the following procedure to add devices to the Microsoft Store for Business.
 2. Click **Manage**, and then click **Devices**.
 3. Click **Add devices**, navigate to the *.csv file and select it. 
 4. Choose whether to create a new AutoPilot deployment group, or choose one from the list, and then click **Add**. Use these groups to apply AutoPilot deployment profiles to a group of devices. Click **No, thanks** if you don't want to add devices to a group. Later in Intune, you can apply a deployment profile to individual devices that you select.   
+
    ![Screenshot of Add devices to a group dialog. You can create a new group, or select a current group.](./media/autopilot-add-devices.png)    
 
-> [!NOTE]
-> You can only add devices to a group for devices that are added to the **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in the Microsoft store, and add them again.    
+    > [!NOTE]
+    > You can only add devices to a group for devices that are added to the **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in the Microsoft store, and add them again.    
 
 After the devices are added, you can synchronize your devices and manage those devices in Intune. 
 
