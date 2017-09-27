@@ -31,7 +31,7 @@ The troubleshooting portal lets help desk operators and Intune administrators vi
 
 For steps on adding a help desk operator role, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control)
 
-When a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues including:
+When a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues, including:
 
 - User status
 - Assignments
@@ -51,7 +51,7 @@ In the troubleshooting blade, choose **Select user** to view user information. U
 5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting blade. The following tables explains the information.
 
 > [!Note]  
-> You can also access the **troubleshooting** by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+> You can also access the **troubleshooting** blade by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## Areas of troubleshooting dashboard
 
@@ -69,7 +69,7 @@ You can use the **Troubleshoot** blade to review user information.
 
 ## Mobile apps reference
 
-The apps that are running on devices or devices owned by users managed by Intune and Azure AD.
+The apps that are running on devices or devices owned by users managed by Intune and Azure Active Directory (AD).
 
 ### Properties
 
