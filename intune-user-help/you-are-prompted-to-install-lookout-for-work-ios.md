@@ -47,13 +47,13 @@ Before you can access your work, your company needs you to install the Lookout f
 
 4. At the prompt asking you to allow Lookout for Work to send you notifications, tap **Allow**.
 
-  ![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
+     ![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
 
-Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
+   * Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
 
-  ![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
+     ![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
 
-If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
+   * If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
 ## If the installation doesn't work
 

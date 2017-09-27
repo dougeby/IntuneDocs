@@ -52,13 +52,11 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. SEP Mobile starts to check right away for security threats on your device.
 
-  If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
+  * If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
+  * If no threats are found, all three threat types will appear green.
 
-  If no threats are found, all three threat types will appear green.
-
-	The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+	* The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 

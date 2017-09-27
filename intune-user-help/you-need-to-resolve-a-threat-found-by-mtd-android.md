@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by a Mobile Threat Defense app
 
-Mobile Threat Defense has found a potential threat on your Android device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your compmany has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
+Mobile Threat Defense has found a potential threat on your Android device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your company has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-android.md)
