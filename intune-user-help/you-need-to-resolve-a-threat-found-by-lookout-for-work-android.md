@@ -2,16 +2,18 @@
 # required metadata
 
 title: Resolving threats found by Lookout for Work on Android | Microsoft Docs
-description:
+description: Learn how to fix a threat found by Lookout for Work on Android.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4searchScope: - User help
+ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+searchScope: - User help
 
 # optional metadata
 
@@ -25,7 +27,7 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Lookout for Work
+# Resolve a threat found by Lookout for Work
 
 Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
 
