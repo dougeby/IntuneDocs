@@ -57,7 +57,6 @@ After you add devices to the Microsoft Store for Business, you must synchronize 
 4. On the **Windows enrollment** blade, choose **Devices**.
 5. Click **Sync** to import the devices from the Microsoft Store for Business. You might have to refresh the view for the devices to display. 
 
-
 ## AutoPilot deployment profiles
 AutoPilot deployment profiles have two main parts. There are default settings that can't be changed, and optional settings that you can include. 
 
@@ -83,10 +82,11 @@ After you synchronize devices, you must create an AutoPilot deployment profile i
 6. For **Join type**, specify how devices join Active Directory (AD) in your organization:
    - **Azure AD joined**: Cloud-only without an on-premises Windows Server Active Directory.​
    - **Hybrid Azure AD joined**: Both cloud (Azure AD) and on-premises Windows Server Active Directory.
-7. For **Out-of-box experience (OOBE)**, configure the following options and then click **OK**: 
+7. For **Out-of-box experience (OOBE)**, configure the following options, and then click **OK**: 
    - **Privacy settings**: Choose whether to show privacy settings to users. 
    - **End user license agreement (EULA)**: Choose whether to show the EULA to users.
    - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
+
 The AutoPilot deployment profile is created and available to assign to devices.
 
 ### Assign an AutoPilot deployment profile
