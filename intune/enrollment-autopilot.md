@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Manage Windows AutoPilot Deployment in Intune
-description: "Learn to create and assign AutoPilot profiles in Intune to control what is included in the Windows set up experience for new Windows 10 devices."
+title: Windows AutoPilot Deployment for Windows 10
+description: "Learn to create and assign AutoPilot profiles in Intune to control what is included in the set up experience for new Windows 10 devices."
 keywords:
 author: dougeby
 ms.author: dougeby
@@ -17,14 +17,12 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ---
 
 # Manage Windows AutoPilot Deployment in Intune
-Windows AutoPilot Deployment Program simplifies device set up for IT Admins. With Microsoft Intune, you can create and then assign an *AutoPilot deployment profile* to your new Windows 10 devices. When people in your organization run the out-of-box experience (OOBE) on the device, the profile configures Windows based on the AutoPilot deployment profile you assigned to the device. Using Intune to manage AutoPilot profiles, you can monitor the AutoPilot progress of new devices through Intune enrollment, and then continue to manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot). 
-
-
+The Windows AutoPilot Deployment Program simplifies device set up for IT Admins. With Microsoft Intune, you can create and then assign an *AutoPilot deployment profile* to your new Windows 10 devices. When people in your organization run the out-of-box experience (OOBE) on the device, the profile configures Windows based on the AutoPilot deployment profile you assigned to the device. When you use Intune to manage AutoPilot profiles, you can monitor the AutoPilot progress of new devices through Intune enrollment, and then continue to manage policies, profiles, apps, etc. on the devices after they are automatically enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot). 
 
 ## Register your devices to your organization 
-To manage new Windows 10 devices using Intune, you must first register devices to your organization by adding the devices to the Microsoft Store for Business. You can also add devices using Microsoft Store for Education or the Partner Center admin portal.   
+To manage new Windows 10 devices using Intune, you must first register devices to your organization by adding them to the [Microsoft Store for Business](http://businessstore.microsoft.com). You can also add devices using [Microsoft Store for Education](https://educationstore.microsoft.com) or the Partner Center admin portal.   
  
-You will need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact or the store where you purchased the devices. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. If you would like to capture that information by yourself, you can use the Get-WindowsAutoPilotInfo PowerShell script, which will generate a .csv file with the device's hardware ID.    
+You need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact or the store where you purchased the devices. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. If you would like to capture the device information yourself, you can use the Get-WindowsAutoPilotInfo PowerShell script, which will generate a .csv file with the device's hardware ID.    
 
 ### Device information file format
 Columns in the device information file need to use this naming and be in this order:
@@ -37,7 +35,7 @@ In the .csv file, do not use spaces before or after commas that separate each co
 ![Notepad file showing example entries for Column A (Device Serial Number), Column B (Windows Product ID), and Column C (Hardware Hash).](./media/autopilot-csv.png)
 
 ### Add devices to Microsoft Store for Business or Education
-Use the following procedure to add devices to the Microsoft Store for Business.    
+Use the following procedure to add devices to the Microsoft Store for Business or Education.    
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **Add devices**, navigate to the *.csv file and select it. 
@@ -46,10 +44,9 @@ Use the following procedure to add devices to the Microsoft Store for Business.
    ![Screenshot of Add devices to a group dialog. You can create a new group, or select a current group.](./media/autopilot-add-devices.png)    
 
     > [!NOTE]
-    > You can only add devices to a group for devices that are added to the **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in the Microsoft store, and add them again.    
+    > You can only add devices to a group for the devices that are added to the **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in the Microsoft store, and then add them again.    
 
-After the devices are added, you can synchronize your devices and manage those devices in Intune. 
-
+After the devices are added, you can synchronize your devices and manage them in Intune. 
 
 ## Synchronize devices
 After you add devices to the Microsoft Store for Business, you must synchronize the devices into Intune. 
@@ -93,7 +90,7 @@ After you synchronize devices, you must create an AutoPilot deployment profile i
 The AutoPilot deployment profile is created and available to assign to devices.
 
 ### Assign an AutoPilot deployment profile
-After you create AutoPilot deployment profiles, you can assign a profile to selected devices or a deployment group. 
+After you create AutoPilot deployment profiles, you can assign a profile to selected devices. 
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -108,7 +105,7 @@ After you create AutoPilot deployment profiles, you can assign a profile to sele
 After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, you can remove the profile and assign a new profile. 
 
 > [!NOTE]
-> The new profile will only be assigned if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be assigned when another profile has been assigned. Windows would need to be reinstalled on the device for the second profile to be assigned to the device. 
+> The new profile will only be assigned if the device has not already gone through the out-of-box experience. Settings from a different profile can't be assigned when another profile has been assigned. Windows would need to be reinstalled on the device for the second profile to be assigned to the device. 
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For details, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
