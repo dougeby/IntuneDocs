@@ -47,6 +47,7 @@ AutoPilot deployment profiles have two main parts. There are default settings th
    - **Privacy settings**: Choose whether to show privacy settings to users. 
    - **End user license agreement (EULA)**: Choose whether to show the EULA to users.
    - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
+     
    > [!Note]    
    > The following settings are configured with all AutoPilot deployment profiles:
    > - Skip Cortana, OneDrive, and OEM registration setup pages
