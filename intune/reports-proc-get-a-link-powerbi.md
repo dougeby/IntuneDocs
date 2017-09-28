@@ -41,6 +41,8 @@ There are also trends highlighted for the enrollment, compliance, device configu
 
 The following steps show you how to download the Power BI file and how to use the OData link with Power BI.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## Install Power BI
 
 Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) 
