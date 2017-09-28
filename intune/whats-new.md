@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 09/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,6 +52,12 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 #### Intune apps support iOS 11 <!--1428975-->
 Intune supports iOS 11. This was previously announced on the [Intune Support blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/).
+
+### Intune apps
+
+#### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
+
+The Company Portal app for Windows 10 allows users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
 
 ## Week of September 11, 2017
 
