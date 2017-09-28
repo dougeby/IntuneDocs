@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# The early edition for Microsoft Intune - September 2017
+# The early edition for Microsoft Intune - October 2017
 
 The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
@@ -36,17 +36,114 @@ This page is updated periodically. Check back for additional updates.
 >The following changes are under development for Intune. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 <!--
-
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
 ## Notices
-   
 -->
 
-  
+
 
 ## Intune in the Azure portal
 
+### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
+Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
+
+### Troubleshoot enrollment issues  <!--- 746324 --->  
+The Troubleshoot workspace will shows user enrollment issues. Details about the issue and suggested remediation steps can help admins and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.  
+
+### Set access for apps by minimum Android security patch on the device<!-- 1278463 -->   
+An administrator will be able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
+
+> [!Note]  
+> This feature only restricts security patches released by Google on Android 6.0+ devices.
+
+### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
+You will be able to restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
+
+Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
+
+Note that Intune must be the MDM authority, the apps must already be installed on the target device, and the device must be [properly provisioned](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
+
+### Search improvements to the Company Portal website <!--1331697-->  
+We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+
+iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+
+### Assign Office 365 mobile apps to iOS and Android devices using Built-in App type <!-- 1332318 -->
+The **Built-in** app type will make it easier for you to assign Office 365 apps to the iOS and Android devices that you manage. The license for these apps are included with the Intune license. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app type information.
+
+### Improvements to device setup workflow in Company Portal <!--1490692-->  
+We are improving the device setup workflow in the Company Portal app for Android. The language will be more user-friendly and specific to your company, and we will combined screens where possible. 
+
+### Block unsupported Samsung Knox device activation  <!--- 1490695 --->  
+The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
+
+The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
+
+| **Device Name** | **Device Model Numbers** |
+| --- | --- |
+| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
+| Galaxy A5 | SM-A500G |
+| Galaxy Alpha | SM-G850M |
+| Galaxy Avant | SM-G386T |
+| Galaxy C9/C9 Pro | SM-C900F |
+| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
+| Galaxy Core Lite | SM-G3588V |
+| Galaxy Core Prime | SM-G360H |
+| Galaxy Core LTE | SM-G386F<br>SM-G386W |
+| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
+| Galaxy Grand 3 | SM-G7200 |
+| Galaxy Grand Neo | GT-I9060I |
+| Galaxy Grand Prime | SM-G530M |
+| Galaxy Grand Prime Value Edition | SM-G531H |
+| Galaxy J Max | SM-T285YD |
+| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
+| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
+| Galaxy J1 Mini | SM-J105M |
+| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
+| Galaxy J5 | SM-J500G |
+| Galaxy J7 | SM-J710F |
+| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy K Zoom | SM-C115 |
+| Galaxy Light | SGH-T399N |
+| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
+| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
+| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
+| Galaxy Note 10.1 3G | SM-P602 |
+| Galaxy NotePRO 12.2&quot; | SM-P902 |
+| Galaxy On5 | SM-G570MSM-G570Y |
+| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
+| Galaxy S2 Plus | GT-I9105P |
+| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
+| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
+| Galaxy S4 | SM-S975L |
+| Galaxy S4 Active | GT-I9295 |
+| Galaxy S4 Neo | SM-G318ML |
+| Galaxy S5 | SM-G9006W<br>SM-G900M |
+| Galaxy S5 Neo | SM-G903M |
+| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
+| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
+| Galaxy Tab A 9.7&quot; | SM-P555M |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy Tab 3 8.0&quot; | SM-T311 |
+| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
+| Galaxy Trend 2 Lite | SM-G318H |
+| Galaxy V Plus | SM-G318HZ |
+| Galaxy Young 2 Duos | SM-G130BU |
+
+
+### Citrix VPN added for Windows 10 devices <!-- 1512457 -->  
+Customer will be able to configure Citrix VPN for their Windows 10 devices. You can choose the Citrix VPN in the *Select a connection type** list in the **Base VPN** blade when configuring a VPN for Windows 10 and later.
+
+> [!Note]
+> Citrix configuration existed for iOS and Android.
+
+
+
+<!-- the following are present prior to 1710 -->
 
 ### Google Play Protect support on Android <!-- 908720  -->  
 With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and organizations to run secure apps and secure Android images. Intune will support Google Play Protect features, including SafetyNet remote attestation.  Admins can set compliance policy requirements that require Google Play Protect be configured and healthy. The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that installed apps are verified by Google Play services.  Conditional access might block users from accessing corporate resources if a device is not compliant with Google Play Protect requirements. 
@@ -74,22 +171,13 @@ You can configure the Volume Purchase Program (VPP) country store when uploading
 ###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 
-### iOS 11 support <!-- 1428975 -->
-When released by Apple, Intune will support iOS 11.
-
 ### New settings for Windows 10 Team device restriction profile  <!--- 1308838  -->
 In this release, we are adding many new settings to the Windows 10 Team device restriction profile to help you control Surface Hub devices.
 For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
 
-### Support for Windows 10 edition upgrade policy   <!-- 903672, 1119689 -->  
+### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
 You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education and Windows 10 Professional Education N.
 For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades ](edition-upgrade-configure-windows-10.md).
-
-### Review policy compliance for Windows 10 update rings <!-- 1352223 -->  
-You will be able to review a policy report for your Windows 10 update rings from **Software updates** > **Per update ring deployment state**. The policy report includes deployment status for the update rings that you have configured. 
-
-### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->  
-The Windows 10 Company Portal app will be updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list. 
 
 ### Remote support for Windows, and Windows Mobile devices  <!-- 1070473 -->    
 Intune will be able to use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Windows, and Windows Mobile devices.
@@ -137,9 +225,11 @@ Review your Exchange policies today. Inform your IT and helpdesk staff. Contact 
 You will be able to build reports and data visualizations using the user device association information that associates user and device entity collections. The data model can be accessed through the Power BI file (PBIX) retrieved from the Data Warehouse Intune page, through the OData endpoint, or by developing a custom client.
 
 
+
+
 <!-- the following are present prior to 1709 -->
 
-### Actions for non-compliance  <!--730266-->     
+### Actions for non-compliance  <!--730266  846515 -->     
 *Actions for non-compliance* are a new feature of compliance policies that let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 ### New report that lists iOS devices with older iOS versions   <!-- 1352223 -->
@@ -165,33 +255,24 @@ You are able to control mobile device access to corporate resources using condit
 #### How integration with Intune works?
 Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
-### New Azure AD conditional access policy UI link from Intune  <!-- 1016201 -->
-IT admins can set app-based conditional policies via the new conditional access policy UI in Azure AD workload. The app-based conditional access policies that are in the Intune App Protection section in Azure remain there for the time being and are enforced side-by-side. There will also be a convenience link to the new conditional access policy UI in Azure AD from the Intune workload.
-
 ### On-premises Exchange connector high availability support  <!-- 676614 -->   
 You are able to have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
 
 ### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->   
 The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
-### End of support for iOS 8.0 <!---1164477--->
-Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps.  
 
 ### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
-### Platform Support Reminder: Windows Phone 8.1 mainstream support will end July 11, 2017 <!-- 1327781 -->  
-On July 11, 2017,  the Windows Phone 8.1 platform will reach end of mainstream support. Windows 8.1 PC support is not impacted.
-
-There is no immediate impact to any Windows Phone 8.1 device that is managed by the Intune service. Devices that are enrolled continue to work and all policies, configurations, and apps will continue to work as expected. Please note, there are no improvements targeted for the Windows Phone 8.1 platform within the Intune Service, and for the Windows Phone 8.1 Company Portal app.
-
-We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile at your earliest opportunity. 
 
 
 
 
 
 ## Intune apps
+<!-- the following are present prior to 1710 -->
+
 ### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
 The Company Portal app for Windows 10 will allow users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
 
@@ -202,45 +283,22 @@ Company apps that have been made available with or without enrollment on the And
 ### iOS Company Portal display large icons <!-- 1454593 -->
 We are fixing a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website] (https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
 
-### Easier to understand phrasing for the Company Portal app for Android   <!---1396349--->    
-The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. 
-
 
 <!-- the following are present prior to 1709 -->
-
 
 ### Intune Managed Browser support for iOS and Android <!---1374196--->
 As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later. Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
-### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->  
-End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
 
 ### Improved error message for when a user reaches the maximum number of devices allowed to enroll <!-- 1270370 -->
 Instead of a generic error message, end users see a friendly, actionable error message: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin."
 
-### Inform end users what device information can be seen for iOS <!--739894-->
-We are adding **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This allows users to find out more about privacy directly from this page from the Intune end-user docs. They will also be able to locate this information on the About screen.
-
-### Apps details pages display new information for Android devices <!--1287476-->
-The apps detail page of the Company Portal app for Android will display the app categories that the IT admin has defined for that app.
-
-### Intune Mobile Application Management (MAM) dialog boxes now have a modern interface <!-- 1199015 -->
-Intune Mobile Application Management (MAM) dialog boxes have been updated to the modern look-and-feel. The dialog boxes function in the same way as the previous style.
-
-On modern Android devices, error or notification dialog boxes displayed by Intune will now show updated look-and-feel.
 
 
 
 ## Notices
 ### Apple to require updates for Application Transport Security <!--748318-->   
 Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
-
-### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
-We are removing the Intune Partner page from manage.microsoft.com beginning with the service update in mid-May 2017.  
-
-If you are a partner administrator, you will no longer be able to view and take action on behalf of your customers from the Intune Partner page, but will instead need to sign in at one of two other partner portals at Microsoft.
-
-Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) will allow you to sign into the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers.
 
 
 
