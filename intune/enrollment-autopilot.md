@@ -66,7 +66,7 @@ After you create AutoPilot deployment profiles, you can assign a profile to sele
 6. Click **Assign profile**, select the AutoPilot profile, and then click **Assign**. 
 7. Intune assigns the profile to your selected devices. Click a device to review information about the device. The AutoPilot deployment profile is listed under **Assigned profile**.  
 
-## Assign a different AutoPilot deployment profile to a device
+### Assign a different AutoPilot deployment profile
 After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
 
 > [!NOTE]
