@@ -49,3 +49,8 @@ You have applied the policy to users. The devices used by the users who are targ
 1. On the **Software updates** blade, choose **iOS Update Policies**.
 2. Select the iOS update policy that you want to update.
 3. Select **Properties** and update the restricted days information.
+
+## Monitor iOS devices with older iOS versions 
+The **Out-of-date iOS Devices** report is available from the **Software updates** workspace. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and have available updates. For each device, you can view a status for why the device has not been automatically updated. 
+1. On the **Software updates** blade, choose **iOS Update Policies**.
+2. 
