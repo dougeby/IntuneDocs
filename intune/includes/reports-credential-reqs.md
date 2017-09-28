@@ -2,7 +2,7 @@
 
 ## Azure AD and Intune credential requirements
 
-Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC). All global administrators and Intune service administrators for your tenant have access to the API by default. Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.
+Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC). All global administrators and Intune service administrators for your tenant have access to the Data warehouse by default. Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.
 
 Requirements for accessing the Intune Data Warehouse (including the API) are:
 
