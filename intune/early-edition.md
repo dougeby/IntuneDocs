@@ -332,6 +332,15 @@ Managed apps and the Company Portal app for Android will require Android 4.4 and
 
 
 ## Intune apps
+
+### Improved guidance around the request for access to contacts on Android devices <!--1484985-->
+
+The Company Portal app for Android often requires the end user to accept the Contacts permission. If an end user declines this access, they will now see an in-app notification that alerts them to grant it for conditional access. 
+
+### Secure startup remediation for Android <!--1490712-->
+
+End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
+
 <!-- the following are present prior to 1710 -->
 
 ### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
@@ -343,10 +352,6 @@ Company apps that have been made available with or without enrollment on the And
 
 ### iOS Company Portal display large icons <!-- 1454593 -->
 We are fixing a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website] (https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
-
-### Secure startup remediation for Android <!--1490712-->
-
-End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
 
 <!-- the following are present prior to 1709 -->
 
