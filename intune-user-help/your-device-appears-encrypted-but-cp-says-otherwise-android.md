@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,5 +68,4 @@ If you have one of the following devices, you may experience this issue if you h
 You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)
