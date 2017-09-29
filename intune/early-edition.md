@@ -73,12 +73,12 @@ You can now configure a greeting that appears when your users enroll Windows 10 
 
 ### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->
  
-Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of 4 components:
+Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of the following components:
 
-- **Attack Surface Reduction (ASR)** provides rules that allow you to prevent macro, script and email threats.
+- **Attack Surface Reduction (ASR)** provides rules that allow you to prevent macro, script, and email threats.
 - **Controlled Folder access** automatically blocks access to content to protected folders. 
 - **Network Filter** blocks outbound connection from any app to low rep IP/domain
-- **Exploit Protection** provides memory, control flow and policy restrictions that can be used to protect an application from exploits.
+- **Exploit Protection** provides memory, control flow, and policy restrictions that can be used to protect an application from exploits.
 
 ### Set access for apps by minimum Android security patch on the device<!-- 1278463 -->   
 An administrator will be able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
@@ -91,7 +91,11 @@ You will be able to restrict Windows 10 device users to kiosk mode, which limits
 
 Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
 
-Note that Intune must be the MDM authority, the apps must already be installed on the target device, and the device must be [properly provisioned](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
+Kiosk mode requires:
+
+- Intune must be the MDM authority.
+- The apps must already be installed on the target device.
+- The device must be [properly provisioned](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
 
 ### New device configuration profile for creating network boundaries <!-- 1311967 -->
  
@@ -104,7 +108,7 @@ We're improving our app search capabilities, starting with the [Company Portal w
 
 iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
 
-We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+We're still fine-tuning the way relevance is tracked, so let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
 ###  Two additional settings for Windows Defender Antivirus <!-- 1338409 -->
  
@@ -118,18 +122,18 @@ We're still fine-tuning the way relevance is tracked, so please let us know how 
 | Zero tolerance  | **Zero tolerance** blocks all unknown executables. |
 
 While unlikely, setting to **High** may cause some legitimate files to be detected.
-We recommend you set this to the default level, **Not configured**.
+We recommend you set File blocking level to the default, **Not configured**.
  
 **Timeout extension for file scanning by the cloud**
 | | |
 |--|--|
-| Number of seconds (0-50) | Specify the maximum amount of time that Windows Defender Antivirus should block a file while waiting for a result from the cloud. The default amount is ten seconds: any additional time specified here (up to 50 seconds) is added to those ten seconds. In most cases, the scan takes much less time than the maximum. Extending the time allows the cloud to thoroughly investigate suspicious files. We recommend that you enable this setting and specify at least 20 additional seconds. |
+| Number of seconds (0-50) | Specify the maximum amount of time that Windows Defender Antivirus should block a file while waiting for a result from the cloud. The default amount is 10 seconds: any additional time specified here (up to 50 seconds) is added to those 10 seconds. In most cases, the scan takes much less time than the maximum. Extending the time allows the cloud to thoroughly investigate suspicious files. We recommend that you enable this setting and specify at least 20 additional seconds. |
 
 ### Improvements to device setup workflow in Company Portal <!--1490692-->  
 We are improving the device setup workflow in the Company Portal app for Android. The language will be more user-friendly and specific to your company, and we will combined screens where possible. 
 
 ### Block unsupported Samsung Knox device activation  <!--- 1490695 --->  
-The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
+The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This restriction helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
 
 The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
 
@@ -226,7 +230,7 @@ In this release, we are adding many new settings to the Windows 10 Team device r
 For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
 
 ### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
-You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education and Windows 10 Professional Education N.
+You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education, and Windows 10 Professional Education N.
 For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
 ### Remote support for Windows, and Windows Mobile devices  <!-- 1070473 -->    
@@ -264,9 +268,9 @@ In a few weeks, the Office team will announce add-ins for Outlook on Android. Th
 To manage user access permissions to add-ins, work with your Exchange admin to ensure that your MAM data protection policies apply to add-ins.
 
 #### How does this affect me?
-If your Exchange policies are already set to prevent side loading add-ins or installing add-ins, then read no further. Your MAM policies will apply as expected. If, however, you have set policies in MAM to restrict cut, copy, and paste operations within Outlook on Android and have not set your add-in policy in Exchange, you should know that by default, users will be able to install add-ins to Outlook. These add-ins can access message body, subject and other message properties. You can turn off end-user ability to install add-ins by having your Exchange Admin remove the “My Marketplace Apps” and “My Custom Apps” roles. For more details, see the additional information link shared below.
+If your Exchange policies are already set to prevent side loading add-ins or installing add-ins, then read no further. Your MAM policies will apply as expected. If, however, you have set policies in MAM to restrict cut, copy, and paste operations within Outlook on Android and have not set your add-in policy in Exchange, you should know that by default, users will be able to install add-ins to Outlook. These add-ins can access message body, subject and other message properties. You can turn off the user's ability to install add-ins by having your Exchange Admin remove the “My Marketplace Apps” and “My Custom Apps” roles. 
 
-Note that the setting change in Exchange will apply to Outlook across Windows, iOS, web, Mac and mobile. 
+The setting change in Exchange will apply to Outlook across Windows, iOS, web, Mac, and mobile. 
 
 #### What do I need to do?
 Review your Exchange policies today. Inform your IT and helpdesk staff. Contact our support team with any specific questions or concerns. 
@@ -313,7 +317,7 @@ The System Center Operations Manager management pack for Exchange connector will
 
 
 ### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
-Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force-retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 
 
