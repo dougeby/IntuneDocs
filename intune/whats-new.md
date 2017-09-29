@@ -48,10 +48,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of October 2, 2017
 
-### Device enrollment
+### Intune apps
+
+#### Feedback prompts for the Company Portal app for Android <!--1165249-->
+The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app. 
 
 #### Improvements to device setup workflow in Company Portal <!--1490692-->
-We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
+We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. You can see these on the [what's new in app UI](whats-new-app-ui.md#week-of-october-2-2017) page.
+
+### Device enrollment
 
 ### Block unsupported Samsung Knox device enrollment  <!--- 1490695 --->
 
