@@ -80,6 +80,13 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 - **Network Filter** blocks outbound connection from any app to low rep IP/domain
 - **Exploit Protection** provides memory, control flow, and policy restrictions that can be used to protect an application from exploits.
 
+### App-conditional launch support <!-- 1193313 -->
+
+IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
+
+### Co-management for Windows 10 devices  <!-- 124445 -->
+Co-management is a solution that provides a bridge from traditional to modern management, and it provides you with a path to make the transition using a phased approach. At its foundation, co-management is a solution where Windows 10 devices are concurrently managed by Configuration Manager and Microsoft Intune, as well as joined to Active Directory (AD) and Azure Active Directory (Azure AD).  This configuration provides you with a path to modernize over time, at the pace that’s right for your organization if you can’t move all at once.  
+
 ### Set access for apps by minimum Android security patch on the device<!-- 1278463 -->   
 An administrator will be able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
 
