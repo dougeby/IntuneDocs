@@ -60,9 +60,9 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 
 ### Block unsupported Samsung Knox device enrollment  <!--- 1490695 --->
 
-The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid KNOX activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support KNOX while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung KNOX Standard policy settings](android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid KNOX activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support KNOX while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung KNOX Standard policy settings](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
 
-### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
+### End of support for Android 4.3 and lower <!---1171126, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 ## Week of September 25, 2017

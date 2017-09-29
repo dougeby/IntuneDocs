@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,11 @@ ms.custom: intune-azure
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of October 2, 2017
+
+#### Improvements to device setup workflow in Company Portal <!--1490692-->
+We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
 
 ## Week of September 11, 2017
 
