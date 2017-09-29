@@ -4,7 +4,11 @@
   - Apple iOS 9.0 and later
   - Mac OS X 10.9 and later
 
-### Windows
+### Google
+  - Android 4.4 and later (including Samsung KNOX Standard 4.4 and higher)*
+  - Android for Work ([requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
+
+### Microsoft
   - Windows 10 (Home, S, Pro, Education, and Enterprise versions)
   - Windows 10 Mobile
   - Devices running Windows 10 IoT Enterprise (x86, x64)
@@ -14,10 +18,6 @@
 
   Customers with Enterprise Management + Security  (EMS) can also [use Azure Active Directory (Azure AD) to register Windows 10 devices](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
-### Google
-- Google Android 4.4 and later (including Samsung KNOX Standard 4.4 and higher)*
-- Google Android for Work ([requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
-
-*The following models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX Standard devices: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY, and SM-G313U. These devices are managed as standard Android devices. See the [Samsung KNOX website](https://www.samsungknox.com/en) for more information.
+*A full list of verified Samsung KNOX Standard devices is available in the [Android and Samsung KNOX Standard policy settings](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).*
 
 For a full list of devices and management methods, see [Intune supported devices](/intune/supported-devices-browsers#intune-supported-devices).
