@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ There are a number of things you can do with Intune to make your work life easie
 
 ## Supported versions
 
-Intune currently supports Android 4.0 and later. This includes Samsung KNOX 4.0 and later devices.
+Intune currently supports Android 4.4 and later. This includes Samsung KNOX 4.4 and later devices.
 
 ## Enrolling into Intune and installing the Company Portal
 

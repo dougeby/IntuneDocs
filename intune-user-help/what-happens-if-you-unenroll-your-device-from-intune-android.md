@@ -25,7 +25,6 @@ ms.custom: intune-enduser
 
 ---
 
-
 # What happens if you unenroll your Android device from Intune?
 
 When you unenroll your Android device from Intune:

@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/28/2017
+ms.date: 10/02/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,12 +46,29 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of October 2, 2017
+
+### Device enrollment
+
+#### Improvements to device setup workflow in Company Portal <!--1490692-->
+We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
+
+### Block unsupported Samsung Knox device enrollment  <!--- 1490695 --->
+
+The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid KNOX activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support KNOX while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung KNOX Standard policy settings](android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+
+### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
+Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
+
 ## Week of September 25, 2017
 
 ### Device enrollment
 
-#### Intune apps support iOS 11 <!--1428975-->
+#### Intune supports iOS 11 <!--1428975-->
 Intune supports iOS 11. This was previously announced on the [Intune Support blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/).
+
+### End of support for iOS 8.0 <!---1164477--->
+Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
 
 ### Intune apps
 
@@ -63,7 +80,7 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ### Device enrollment
 
-#### Inform end users what device information can be seen for iOS <!--739894--> 
+#### Inform end users what device information can be seen for iOS <!--739894-->
 
 We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
 
@@ -177,17 +194,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 #### iOS 11 Mail app will support OAuth <!---1196951--->
 Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
-### End of support for iOS 8.0 <!---1164477--->
-Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
-
 ### UI updates to the Company Portal website <!--1313244 part 2-->
 __Updates to Featured Apps__  
 We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage. You can see what these changes look like on the [what's new in app UI](whats-new-app-ui.md) page.
-
-
-### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
-Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
-
 
 ### Platform Support Reminder: Windows Phone 8.1 mainstream support ended July 11, 2017
 <!-- 1327781 -->
