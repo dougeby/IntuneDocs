@@ -49,7 +49,36 @@ This page is updated periodically. Check back for additional updates.
 Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
 
 ### Troubleshoot enrollment issues  <!--- 746324 --->  
-The Troubleshoot workspace will shows user enrollment issues. Details about the issue and suggested remediation steps can help admins and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.  
+The Troubleshoot workspace will shows user enrollment issues. Details about the issue and suggested remediation steps can help admins and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.
+
+### Admins can now configure the Firewall settings on a device using a device configuration profile <!-- 951708 -->
+ 
+Admins can turn on firewall for devices, and also configure various protocols for domain, private, and public networks.  These firewall settings can be found in the "Endpoint protection" profile.
+
+### Windows Defender Application Guard helps protect devices from untrusted websites, as defined by your organization <!-- 958257 -->
+ 
+Admins can define sites as "trusted" or "corporate" using a Windows Information Protection workflow or the new "Network boundary" profile under device configurations. Any sites that aren't listed in on a 64-bit Windows 10 device’s trusted network boundary, if they are viewed with Microsoft Edge, open instead in a browser within a Hyper-V virtual computer. 
+ 
+Application Guard can be found in the device configuration profiles, in the "Endpoint protection" profile. From there, admins can configure interaction between the virtualized browser and the host machine, nontrusted sites and trusted sites, and storing data generated in the virtualized browser. To use Application Guard on a device, a network boundary first must be configured. It's important to define only one network boundary for a device.  
+
+### Windows Defender Application Guard on Windows 10 Enterprise provides mode to trust only authorized apps <!-- 1031096 -->
+ 
+With thousands of new malicious files created every day, using antivirus signature-based detection to fight against malware might no longer provide an adequate defense against new attacks. Using Windows Defender Application Guard on Windows 10 Enterprise, you can change device configuration from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You assign trust to apps in Windows Defender Application Guard.
+ 
+Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Windows Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph will be allowed to run.
+
+### New enrollment status page for Windows 10 enrollments <!--1063201-->
+
+You can now configure a greeting that appears when your end-users enroll Windows 10 devices. Use the **Enrollment Status Screen** to configure a custom message and a hyperlink to be displayed to your end users when they enroll their Windows 10 devices.  The **Enrollment Status Screen** will also give end users a view into the progress of policy settings that are being applied to their device.  
+
+### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->
+ 
+Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of 4 components:
+
+- **Attack Surface Reduction (ASR)** provides rules that allow you to prevent macro, script and email threats.
+- **Controlled Folder access** automatically blocks access to content to protected folders. 
+- **Network Filter** blocks outbound connection from any app to low rep IP/domain
+- **Exploit Protection** provides memory, control flow and policy restrictions that can be used to protect an application from exploits.
 
 ### Set access for apps by minimum Android security patch on the device<!-- 1278463 -->   
 An administrator will be able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
@@ -64,6 +93,12 @@ Kiosk mode supports two modes: **single app** (allows a user to run just one app
 
 Note that Intune must be the MDM authority, the apps must already be installed on the target device, and the device must be [properly provisioned](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
 
+### New device configuration profile for creating network boundaries <!-- 1311967 -->
+ 
+We have created a device configuration profile called **Network boundary** that can be found with your other device configuration profiles. Use this profile to define online resources that you want to be considered corporate and trusted. You must define a network boundary for a device *before* features such as Windows Defender Application Guard and Windows Information Protection can be used on the device. It’s important to define only one network boundary for each device.
+ 
+You can define enterprise cloud resources, IP address ranges, and internal proxy servers that you want to be considered trusted. Once defined, the network boundary can be consumed by other features such as Windows Defender Application Guard and Windows Information Protection.
+ 
 ### Search improvements to the Company Portal website <!--1331697-->  
 We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
 
@@ -71,8 +106,24 @@ iOS users will also receive this change, as the Company Portal website is also u
 
 We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
-### Assign Office 365 mobile apps to iOS and Android devices using Built-in App type <!-- 1332318 -->
-The **Built-in** app type will make it easier for you to assign Office 365 apps to the iOS and Android devices that you manage. The license for these apps are included with the Intune license. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app type information.
+###  Two additional settings for Windows Defender Antivirus <!-- 1338409 -->
+ 
+**File blocking level**
+
+| | |
+|---|---|
+| Not Configured | **Not Configured** uses the default Windows Defender Antivirus blocking level and provides strong detection without increasing the risk of detecting legitimate files. |
+| High | **High** applies a strong level of detection.
+| High +  | **High +** provides the High level with additional protection measures that might impact client performance.
+| Zero tolerance  | **Zero tolerance** blocks all unknown executables. |
+
+While unlikely, setting to **High** may cause some legitimate files to be detected.
+We recommend you set this to the default level, **Not configured**.
+ 
+**Timeout extension for file scanning by the cloud**
+| | |
+|--|--|
+| Number of seconds (0-50) | Specify the maximum amount of time that Windows Defender Antivirus should block a file while waiting for a result from the cloud. The default amount is ten seconds: any additional time specified here (up to 50 seconds) is added to those ten seconds. In most cases, the scan takes much less time than the maximum. Extending the time allows the cloud to thoroughly investigate suspicious files. We recommend that you enable this setting and specify at least 20 additional seconds. |
 
 ### Improvements to device setup workflow in Company Portal <!--1490692-->  
 We are improving the device setup workflow in the Company Portal app for Android. The language will be more user-friendly and specific to your company, and we will combined screens where possible. 
@@ -283,6 +334,9 @@ Company apps that have been made available with or without enrollment on the And
 ### iOS Company Portal display large icons <!-- 1454593 -->
 We are fixing a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website] (https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
 
+### Secure startup remediation for Android <!--1490712-->
+
+End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
 
 <!-- the following are present prior to 1709 -->
 
