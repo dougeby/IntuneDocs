@@ -66,4 +66,4 @@ To unenroll your device, use the link, shown in the "In this Article" section ab
 
 4.  On the **Delete account** dialog box, tap **Delete**.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

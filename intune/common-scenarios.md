@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Common ways to use Intune 
+title: Common ways to use Intune
 description: Lists six of the most common tasks that Intune helps with
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: get-started-article
@@ -19,7 +19,7 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: robstackmsft
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you are brand new to enterprise mobility or migrating from another product.  
+Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you're brand new to enterprise mobility or migrating from another product.  
 
 The needs around enterprise mobility are dynamically evolving, and Microsoft's approach to addressing them is sometimes different from other solutions in the market. The best way to align around business goals is to express your goals in terms of the scenarios you want to enable for your employees, partners, and IT department.  
 
@@ -47,11 +47,11 @@ Following are short introductions to the six most common scenarios that rely on 
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
 
 
-Intune and Microsoft Enterprise Mobility + Security  (EMS) provide a uniquely integrated [conditional access solution](conditional-access.md) ([Classic portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network!
+Intune and Microsoft Enterprise Mobility + Security  (EMS) provide a uniquely integrated [conditional access solution](conditional-access.md) ([Classic portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network.
 
-Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](certificates-configure.md) ([Classic portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy.  
+Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](certificates-configure.md) ([Classic portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. 
 
-In these cases, the only way to access the corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line of business app, so that it can’t pass corporate data to consumer apps or services.
+In these cases, the only way to access corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line of business app, so that it can’t pass corporate data to consumer apps or services.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,7 +68,7 @@ The Office mobile apps in their respective app stores are ready to go with data 
 A common Office 365 deployment practice is to require devices to enroll into management if they need to be fully set up with corporate apps, certs, Wi-Fi, or VPN configurations, a common scenario for corporate-owned devices.  
 
 
-However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps (to which you have applied [app protection policies](app-protection-policies.md) ([Classic portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether!  
+However, if your user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps (to which you have applied [app protection policies](app-protection-policies.md) ([Classic portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) and skip enrolling the device altogether.  
 
 
 
@@ -82,7 +82,7 @@ Bring your own device (BYOD) continues to grow in popularity among organizations
 
 When device enrollment is not a viable option, Intune offers an alternative BYOD approach of simply [managing the apps that contain corporate data](app-protection-policies.md) ([Classic portal](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)). Intune protects the corporate data even if the app in question accesses both corporate and personal data, as is the case for Office mobile apps.  
 
-As an administrator, you can require users to access Office 365 from the Office mobile apps and configure the apps with policies that keep the data protected (such as encrypting it, protecting it with a pin, and so on). These policies prevent data loss from unmanaged apps and storage locations--inside or outside of those apps. For example, the policies prevent a user from copying text from a corporate email profile into a consumer email profile even if both profiles are configured within Outlook Mobile. Similar configurations can be deployed for other services and applications that are required by your BYOD users.
+As an administrator, you can require users to access Office 365 from the Office mobile apps and configure the apps with policies that keep the data protected (such as encrypting it, protecting it with a pin, and so on). These app protection policies prevent data loss from unmanaged apps and storage locations -- inside or outside of those apps. For example, the policies prevent a user from copying text from a corporate email profile into a consumer email profile even if both profiles are configured within Outlook Mobile. Similar configurations can be deployed for other services and applications that are required by your BYOD users.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

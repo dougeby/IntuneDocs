@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Send errors to your IT admin | Microsoft Docs
+title: Send errors to your company support | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
@@ -28,9 +28,9 @@ ms.custom: intune-enduser
 
 ---
 
-# Send errors to your IT admin for issues with your iOS device
+# Send errors to your company support for issues with your iOS device
 
-If you get errors on your iOS device while using the Company Portal app, you can send information to help your IT admin troubleshoot the problem. You can send error information in different ways:
+If you get errors on your iOS device while using the Company Portal app, you can send information to help your company support troubleshoot the problem. You can send error information in different ways:
 
 -   On error alert messages, tap **Report**.
 
@@ -38,4 +38,4 @@ If you get errors on your iOS device while using the Company Portal app, you can
 
 -   In the Company Portal app, shake your device, then tap **Send Diagnostic Report** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

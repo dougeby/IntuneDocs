@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ If you followed the steps in [Enroll your Windows 10 Mobile or Windows 10 deskto
 
 	![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Troubleshooting steps to follow if you see Access work or school
+## Troubleshooting steps to follow if you see "Access work or school"
 
 1.  If you followed the steps above, but you still can’t access your work or school email and files, go back to **Access work or school**.
 
@@ -50,7 +50,7 @@ If you followed the steps in [Enroll your Windows 10 Mobile or Windows 10 deskto
 
 	- If you don’t see the connection information shown above, or you do see it, but it’s missing some of the options, tap **Connect**, and then sign in with your work or school credentials. You should now be connected.
 
-## Troubleshooting steps to follow if you see Your account
+## Troubleshooting steps to follow if you see "Your account"
 
 If you followed the steps above, but still can't access your work or school email, files, and other data, go back to **Accounts**, and tap **Work access**.
 
@@ -58,4 +58,8 @@ If you followed the steps above, but still can't access your work or school emai
 
 - If you don’t see your work or school account, tap **Connect**, and then sign in with your work or school credentials.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+## Troubleshooting steps to follow if you see "Set up a work or school account"
+
+If you see a message that says __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__, then you should try to re-enter your username and password. If it still doesn't work, you should check with your company support for the website that you need to provide in the **Management endpoint** text box. This is a website that probably looks like **www.yourcompany.onmicrosoft.com**. 
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

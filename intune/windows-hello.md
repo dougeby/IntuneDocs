@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for BusinesstitleSuffix: "Intune on Azure"
+title: How to use Windows Hello for BusinesstitleSuffix: "Azure portal"
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: lleonard-msft

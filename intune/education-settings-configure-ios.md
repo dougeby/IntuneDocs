@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune settings for the iOS Classroom app 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -41,14 +41,14 @@ ms.custom: intune-azure
 - Navigate students iPads to a bookmark, or chapter in a book
 - Display the screen from a student iPad on an Apple TV
 
-Use the Intune iOS **Education** device profile, and the information in this topic to help you set up the Classroom app, and the devices on which you'll use it.
+Use the Intune iOS **Education** device profile, and the information in this topic to help you set up the Classroom app, and the devices on which you use it.
 
 ## Before you start
 
 Consider the following before you begin to configure these settings:
 
 - Both teachers and student iPads must be enrolled in Intune
-- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either do this manually, or use [Intune app management](app-management.md).
+- Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either install the app manually, or use [Intune app management](app-management.md).
 - You must configure certificates to authenticate connections between teacher and student devices (see Step 2)
 - Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled
 - The Classroom app runs on supervised iPads running iOS 9.3 or later
@@ -60,9 +60,9 @@ Consider the following before you begin to configure these settings:
 Use Microsoft's School Data Sync (SDS) to import school records from an existing Student Information System (SIS) to Azure Active Directory (Azure AD).
 SDS synchronizes information from your SIS and stores it in Azure AD. Azure AD is a Microsoft management system that helps you organize users and devices. You can then use this data to help you manage your students and classes. [Learn more about how to deploy SDS](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
-### How to import data using SDS?
+### How to import data using SDS
 
-You can import information into SDS by using one of the following:
+You can import information into SDS by using one of the following methods:
 
 - [CSV files](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - Manually export and compile comma-separated value (.csv) files
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - An SIS provider that simplifies syncing with Azure AD
@@ -86,7 +86,7 @@ You can import information into SDS by using one of the following:
 5.	On the profiles blade, choose **Create Profile**.
 6.	On the **Create Profile** blade, enter a **Name** and **Description** for the iOS education profile.
 7.	From the **Platform** drop-down list, choose **iOS**.
-8.	From the **Profile type** type drop-down list, choose **Education**.
+8.	From the **Profile type** drop-down list, choose **Education**.
 9.	Choose **Settings** > **Configure**.
 
 
@@ -95,7 +95,7 @@ Next, you need certificates to establish a trust relationship between teacher an
 >[!IMPORTANT]
 >The teacher and student certificates you use must be issued by different certification authorities (CAs). You must create two new subordinate CAs connected to your existing certificate infrastructure; one for teachers, and one for students.
 
-iOS education profiles support only PFX certificates, SCEP certificates are not supported.
+iOS education profiles support only PFX certificates. SCEP certificates are not supported.
 
 Certificates you create must support server authentication in addition to user authentication.
 
@@ -149,7 +149,7 @@ When you are finished configuring certificates, choose **OK**.
 1.	On the **Education** blade, choose OK.
 2.	On the **Create Profile** blade, choose **Create**.
 	
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
 
 Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](device-profile-assign.md).
 
@@ -158,3 +158,5 @@ Assign the profile to student devices in the classroom groups that were created 
 Now, when a teacher uses the Classroom app, they will have full control over student devices.
 
 For more information about the Classroom app, see [Classroom help](https://help.apple.com/classroom/ipad/2.0/), on the Apple web site.
+
+If you want to configure shared iPad devices for students, see [How to configure Intune education settings for shared iPad devices](education-settings-configure-ios-shared.md).

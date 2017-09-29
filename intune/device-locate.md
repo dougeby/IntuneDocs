@@ -2,13 +2,13 @@
 # required metadata
 
 title: Locate lost iOS devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how locate lost or stolen iOS devices with Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,16 @@ ms.custom: intune-azure
 
 The **Locate Device** device action displays the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into [lost mode](/intune-azure/manage-devices/lost-mode.md).
 
+## Supported platforms
+
+- Windows - Not supported
+- Windows Phone - Not supported
+- iOS - Supported on iOS 9.3 and later (in Lost mode), supervised, and corp owned
+- macOS - Not supported
+- Android - Not supported
+
+## How to locate a lost or stolen device
+
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
@@ -51,3 +61,8 @@ The **Locate Device** device action displays the location of a lost or stolen iO
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
 - When you configure lost mode, we recommend that the message you enter to display on the lock screen includes information that helps someone who finds the device to return it.
+
+
+## Next steps
+
+To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.

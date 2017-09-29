@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: How to monitor app protection policiestitleSuffix: "Intune on Azure"
+title: How to monitor app protection policiestitleSuffix: "Azure portal"
 description: See how many users have the policy, and drill down to find more details."
 keywords:
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # How to monitor app protection policies
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**If you are not in the Azure portal**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
+**If you are not in the Azure portal**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the Intune classic portal.
 
 
 You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection blade on the [Azure portal](https://portal.azure.com). You'll be able to find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
@@ -51,11 +51,13 @@ There are three different places to monitor the compliance status:
 
 ![Summary tile on the Intune mobile application management blade](./media/app-protection-user-status-summary.png)
 
--   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
+-   **Users**: The total number of users in your company who are using an app which is associated with a policy in a work context.
 
--   **MANAGED BY POLICY**: The number of users who have used at least one of the apps in the work context.
+-   **MANAGED BY POLICY**: The number of users who have used an app who have a policy assigned to them in a work context.
 
--   **NO POLICY**: The number of users who are using the apps that are associated with the policy, but who are not targeted by the policy. You might consider adding these users to the policy.
+-   **NO POLICY**: The number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
+	> [!NOTE]
+	> If you have multiple policies per platform, a user will be considered managed by policy when they have at least one policy assigned to them.
 
 - **Flagged users**: The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
 

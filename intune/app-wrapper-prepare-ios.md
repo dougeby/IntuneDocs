@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,13 +26,13 @@ ms.custom: intune-classic
 
 ---
 
-# Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
+# Prepare iOS apps for app protection policies with the Intune App Wrapping Tool
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
-The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionalty by deploying [app protection policies](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) to it.
+The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionality by deploying [app protection policies](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) to it.
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) on GitHub.
 
@@ -107,7 +107,7 @@ You will need the following to distribute apps wrapped by Intune:
 
   ![Apple Developer portal](./media/iOS-signing-cert-1.png)
 
-5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the rop right corner to add an iOS certificate.
+5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the top right corner to add an iOS certificate.
 
 6. Choose to create an **In-House and Ad Hoc** certificate under **Production**.
 
@@ -196,7 +196,7 @@ Open the macOS Terminal program and navigate to the folder where you saved the a
 **Example:** The following example command runs the App Wrapping Tool on the app named MyApp.ipa. A provisioning profile and SHA-1 hash of the signing certificate are specified and used to sign the wrapped app. The output app (MyApp_Wrapped.ipa) is created and stored in your Desktop folder.
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
 ### Command-line parameters

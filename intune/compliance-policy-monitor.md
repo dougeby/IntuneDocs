@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor Intune device compliance policies
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to monitor device compliance policies."
 keywords:
 author: andredm7
@@ -125,8 +125,6 @@ If you click on **Filter button**, the filter fly-out opens with the following o
     -   Error
 
 If clicking the **Update button**, the fly out should close and the results should update as per the selected filter criteria.
-
-![Filter update button](./media/idc-5.png)
 
 ##### Device details
 

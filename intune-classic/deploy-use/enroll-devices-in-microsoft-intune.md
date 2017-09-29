@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll devices 
+title: Enroll devices
 description: Mobile device management (MDM) uses enrollment to bring devices into management and allow access to resources.
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-classic
 
 You can enroll devices, including Windows PCs, to enable mobile device management (MDM) with Microsoft Intune. This topic describes different ways to enroll mobile devices in Intune management. The way you enroll your devices depends on the device type, ownership, and the level of management that's needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements.
 
-If you use [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. Windows PCs can also be managed using [Intune client software](#manage-windows-pcs-with-intune).
+If you use [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. Windows PCs can also be managed using [Intune client software](#windows-pc-management-with-intune).
 
 By default, devices for all platforms are allowed to enroll in Intune. To block devices from enrolling, sign to the [Microsoft Intune admin portal](https://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the applicable check boxes for the platforms that you want to block.
 

@@ -4,8 +4,8 @@
 title: Android for Work app configuration policy 
 description: Use mobile app configuration policies in Intune to supply settings that might be required when users run an Android for Work app.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article

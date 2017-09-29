@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: How to add web apps to IntunetitleSuffix: "Intune on Azure"
+title: How to add web apps to IntunetitleSuffix: "Azure portal"
 description: Learn about adding web apps to Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article

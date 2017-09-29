@@ -2,7 +2,7 @@
 # required metadata
 
 title: Conditional access with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune."
 keywords:
 author: andredm7
@@ -44,7 +44,7 @@ You can define conditions that gate access to your corporate data based on locat
 
 ## Conditional access with Intune
 
-Intune adds mobile device compliance and mobile application management capabilities to support the EMS Conditional Access solution.
+Intune adds mobile device compliance and app management policies to support the EMS Conditional Access solution.
 
 ![Intune and conditional access when using EMS](./media/intune-with-ca-1.png)
 

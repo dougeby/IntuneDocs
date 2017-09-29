@@ -1,6 +1,6 @@
 ## Enable Windows 10 automatic enrollment
 
-Automatic enrollment lets users enroll their Windows 10 devices in Intune when adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure Active Directory. In the background, the user's device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
+Automatic enrollment lets users enroll their Windows 10 devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Azure Active Directory. In the background, the device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
 
 **Prerequisites**
 - Azure Active Directory Premium subscription ([trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -9,7 +9,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune when a
 
 ### Configure automatic MDM enrollment
 
-1. Sign in to the [Azure management portal](https://portal.azure.com) (https://manage.windowsazure.com), and select **Azure Active Directory**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
 
   ![Screenshot of the Azure portal](../media/auto-enroll-azure-main.png)
 
@@ -21,11 +21,14 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune when a
 
   ![Screenshot of the Azure portal](../media/auto-enroll-intune.png)
 
-4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These users’ Windows 10 devices will be automatically enrolled for management with Microsoft Intune.
+4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
 
-  - **None**
-  - **Some**
-  - **All**
+  - **None** - MDM automatic enrollment disabled
+  - **Some** - Select the **Groups** that can automatically enroll their Windows 10 devices
+  - **All** - All users can automatically enroll their Windows 10 devices
+
+      > [!IMPORTANT]
+      > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
 
    ![Screenshot of the Azure portal](../media/auto-enroll-scope.png)
 
@@ -36,4 +39,4 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune when a
 
 6. Select **Save**.
 
-By default, two-factor authentication is not enabled for the service. However, two-factor authentication is recommended when registering a device. Before requiring two-factor authentication for this service, you must configure a two-factor authentication provider in Azure Active Directory and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+By default, two-factor authentication is not enabled for the service. However, two-factor authentication is recommended when registering a device. To enable two-factor authentication, configure a two-factor authentication provider in Azure AD and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

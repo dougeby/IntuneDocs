@@ -5,8 +5,8 @@ title: Understand operations by using reports
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article

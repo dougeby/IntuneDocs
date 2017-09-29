@@ -46,12 +46,12 @@ To update the Company Portal app:
 
 ## Update the Intune Company Portal app on your Windows device
 
-1.  Navigate to the Windows Store and search for **intune company portal**.
+1.  Navigate to the Microsoft Store and search for **intune company portal**.
 
 2.  Follow the installation steps.
 
     > [!NOTE]
-    > If you are unable to access the Windows Store, contact your IT administrator.
+    > If you are unable to access the Microsoft Store, contact your company support.
 
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

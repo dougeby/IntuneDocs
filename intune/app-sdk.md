@@ -6,7 +6,7 @@ description: The Intune App SDK is available for both the iOS and Android platfo
 keywords:
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,13 +64,11 @@ Multi-identity support is a feature of the SDK that enables coexistence of polic
 For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android. When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.
 
 The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.
-
-
+ 
 ### App protection without device enrollment
 
 >[!IMPORTANT]
->Intune app protection without device enrollment is not yet available with the Intune App SDK for Android. It is available with the Intune App Wrapping Tools, SDK for iOS, SDK Xamarin Component, and SDK Cordova Plugin.
-
+>Intune app protection without device enrollment is available with the Intune App Wrapping Tools, Intune App SDK for Android, Intune App SDK for iOS, SDK Xamarin Component and SDK Cordova Plugin.
 
 Many users with personal devices want to access corporate data without enrolling their personal device with a Mobile Device Management (MDM) provider. Since MDM enrollment requires global control of the device, users are often hesitant to give control of their personal device over to their company.
 

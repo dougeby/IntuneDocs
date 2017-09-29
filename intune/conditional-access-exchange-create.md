@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Create and assign on-premises Exchange conditional access policytitleSuffix: "Intune on Azure"
-description: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
+title: Create and assign on-premises Exchange conditional access policy
+titlesuffix: "Azure portal"
+description: "Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune."
 keywords:
 author: andredm7
 ms.author: andredm
@@ -88,7 +89,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 4. Choose **Intune**, you see the **Intune Dashboard**.
 
-5.  Choose **Conditional Access**, then choose
+5. Choose **On-Premise Access**, then choose
 
 6. The **On-premises** blade shows the status of the conditional access policy and the devices that are affected by it.
 
@@ -128,11 +129,7 @@ Beginning with Intune 1704 release, admins can create Azure AD conditional acces
 
 1. In the **Intune Dashboard**, choose **Conditional access**.
 
-2. In the **Conditional access dashboard**, choose **Conditional access in Azure Active Directory**.
-
-3. Choose **New policy** to create your new Azure AD conditional access policy.
-
-	![Azure AD conditional access policies](./media/Azure-AD-CA-Intune.png)
+2. In the **Policies** blade, choose **New policy** to create your new Azure AD conditional access policy.
 
 ## See also
 

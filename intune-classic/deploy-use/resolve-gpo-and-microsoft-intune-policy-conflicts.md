@@ -4,8 +4,8 @@
 title: Resolve GPO and Intune policy conflicts 
 description: Learn how to resolve conflicts between Group Policy and Intune configuration policies.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -27,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 # Resolve Group Policy Objects (GPO) and Microsoft Intune policy conflicts
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune uses policies that help you manage settings on Windows PCs. For example, you can use a policy to control settings for the Windows Firewall on PCs. Many Intune settings are similar to settings that you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with each another.
 
 When conflicts happen, domain-level Group Policy takes precedence over Intune policy, unless the PC can’t sign in to the domain. In this case, Intune policy is applied to the client PC.

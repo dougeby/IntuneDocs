@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Windows Update for Business settings - Intune
-titleSuffix: "Intune on Azure"
+title: Configure Windows Update for Business settings in Intune
+titleSuffix: "Azure portal"
 description: Learn how to configure Windows Update for Business settings in Intune to control updates to Windows 10 devices."
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,14 +27,13 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows Update for Business settings with Microsoft Intune
+# Manage software updates
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Introduction
-Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+Windows as a Service is the way to update Windows 10 devices. With Windows 10, new Feature Updates and Quality Updates contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
-By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
+By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update makes sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
 
 - **Windows 10 Servicing Branch**: Choose whether you want groups of devices to receive updates from the Current Branch or from the Current Branch for Business.  
 - **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. You will then have a staged update rollout so that you can review progress along the way.
@@ -62,20 +61,20 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	You can configure this setting manually, or you can use an Intune device restriction profile for Windows 10 and later. To do this, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [How to configure device restriction settings](device-restrictions-configure.md).
 
-- In the classic Intune administration console, there are four settings that control software updates behavior. These settings are part of the general configuration policy for Windows 10 desktop and Mobile devices:
+- In the Intune administration console, there are four settings that control software updates behavior. These settings are part of the general configuration policy for Windows 10 desktop and Mobile devices:
 	- **Allow automatic updates**
 	- **Allow pre-release features**
 	- **Scheduled Install Day**
     - **Scheduled Install Time**
 
-  The classic console also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured in the classic Intune administration console when you migrate to the Azure portal, we strongly recommend that you do the following:
+  The classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured in the Intune administration console when you migrate to the Azure portal, we strongly recommend that you do the following:
 
 1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting is not supported in the Azure portal because it is no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.
 
   > [!NOTE]
-  > Windows 10 updates settings created in the classic console are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings will be removed from the policy.
+  > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings will be removed from the policy.
 
-2. Delete the update settings in the classic console. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there will be a conflict and no easy way to know because the setting configured in the classic console does not display in the Azure portal.
+2. Delete the update settings in the classic portal. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there will be a conflict and no easy way to know because the setting configured in the classic portal does not display in the Azure portal.
 
 ## How to create and assign update rings
 

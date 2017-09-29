@@ -2,11 +2,11 @@
 # required metadata
 
 title: "Contact Intune assisted phone support"
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Phone numbers for Microsoft Intune help."
 keywords: business hours
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 02/27/2017
 ms.topic: article

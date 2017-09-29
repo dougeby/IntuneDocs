@@ -69,7 +69,7 @@ Now that the app is availabile in Intune, you can deploy it to managed devices:
 - [Deploy apps to devices](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Deploy volume-purchased apps:
 	- [iOS - Volume-purchase Program](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-	- [Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+	- [Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
 	- [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
 	Once you have configured apps for deployment you can [configure apps](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).

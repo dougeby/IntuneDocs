@@ -2,13 +2,13 @@
 # required metadata
 
 title: Enroll iOS devices - Device Enrollment Program
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,148 +27,171 @@ ms.custom: intune-azure
 
 ---
 
-# Enable iOS device enrollment with Apple's Device Enrollment Program
+# Automatically enroll iOS devices with Apple's Device Enrollment Program
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic helps IT administrators  enable iOS device enrollment for devices purchased through [Apple's Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune can deploy an enrollment profile “over the air” that enrolls DEP devices into management. The administrator never has to touch each managed device. An ASM profile contains management settings that are applied to devices during enrollment including Setup Assistant options.
+This topic helps you enable iOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
->[!NOTE]
->DEP enrollment can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
->Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
+To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
-**DEP Enrollment steps**
-1. [Get an Apple DEP token](#get-the-apple-dep-certificate)
-2. [Create a DEP profile](#create-anapple-dep-profile)
-3. [Synchronize DEP-managed devices](#sync-dep-managed-devices)
-4. [Assign DEP profile to devices](#assign-a-dep-profile-to-devices)
-5. [Distribute devices to users](#distribute-devices-to-users)
+By the way, DEP enrollment does not work with the [device enrollment  manager](device-enrollment-manager-enroll.md).
+
+<!--
+**Steps to enable enrollment programs from Apple**
+1. [Get an Apple DEP token and assign devices](#get-the-apple-dep-token)
+2. [Create an enrollment profile](#create-an-apple-enrollment-profile)
+3. [Synchronize DEP-managed devices](#sync-managed-device)
+4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
+5. [Distribute devices to users](#end-user-experience-with-managed-devices)
+-->
+## Prerequisites
+- Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
+- [MDM Authority](mdm-authority-set.md)
+- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
+
+> [!NOTE]
+> Multifactor authentication (MFA) doesn't work during DEP enrollment set up for user affinity. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
 
 ## Get the Apple DEP token
 
-Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
+Before you can enroll iOS devices with DEP, you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP devices that your corporation owns. It also permits Intune to upload enrollment profiles to Apple and to assign devices to those profiles.
+
+You use the Apple DEP portal to create a DEP token. You also use the DEP portal to assign devices to Intune for management.
 
 > [!NOTE]
-> If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
-
-**Prerequisites**
-- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
-- Signed up for [Apple's Device Enrollment Program](http://deploy.apple.com)
+> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Device enrollment**, and then choose **Apple Enrollment**. On the Intune blade, choose **Device enrollment** > **Apple DEP Token**.
-2. Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
+
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
+
+2. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
 
 **Step 2. Create and download an Apple DEP token.**<br>
-Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com), and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+1. Choose **Create a token via Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
+2.  In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**.
 
-   1.  In Apple's [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Programs** &gt; **Manage Servers**, and then choose **Add MDM Server**.
-   2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
-   3.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
-   4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
-   5. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
-   6. Specify how you will **Choose Devices By**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
-   7. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
+3. On the **Manage Servers** page, choose **Add MDM Server**.
+4. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
 
-**Step 3. Enter the Apple ID used to create your Apple DEP token.**<br>This ID can be used to renew your Apple DEP token.
+   ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
 
-**Step 4. Browse to your Apple DEP token to upload.**<br>
-Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune will automatically synchronize with your DEP account.
+5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
 
-## Assign Apple DEP serial numbers to your MDM server
-Device serial numbers must be assigned to your Intune MDM server in the Apple DEP web portal to allow Intune to manage those devices.
+6.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
 
-1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) and sign in with your company Apple ID.
+7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
+8. Under **Choose Devices By**, specify how devices are identified:
+    - **Serial Number**
+    - **Order Number**
+    - **Upload CSV File**.
 
+   ![Screenshot of specifying choose devices by serial number, setting choose action as Assign to server and selecting the server name.](./media/enrollment-program-token-specify-serial.png)
 
+9. For **Choose Action**, choose **Assign to Server**, choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
 
-## Create an Apple DEP profile
+   In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
-A device enrollment profile defines the settings applied to a group of devices during enrollment.
+**Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In Intune in the Azure portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token in the future to avoid needing to re-enroll all your devices.
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Device enrollment**, and then choose **Apple Enrollment**.
-3. Under **Enrollment Program**, select **Enrollment Program Profiles**.
-4. On the **Enrollment Program Profiles** blade, select **Create**.
-5. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
-6. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
 
- - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on DEP devices. Additionally, users whose passwords have expired won't be prompted to reset their password during DEP enrollment and must reset the password from a different device.
+**Step 4. Browse to your enrollment program token to upload.**<br>
+Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
 
-	>[!NOTE]
-	>DEP with user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) to be enabled to request user token. [Learn more about WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+## Create an Apple enrollment profile
 
- - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
+Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-7. Select **Device Management Settings**, configure the following profile settings, and then select **Save**:
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**.
+2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles** > **Create**.
+3. On **Create Enrollment Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
+  For **User Affinity**, choose whether devices with this profile enroll with or without an assigned user.
+
+ - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+ - **Enroll without user affinity** - Choose for device unaffiliated with a single user. Use for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
+
+4. Choose **Device Management Settings** to configure the following profile settings:
+
+  ![Screenshot of choosing the management mode. Device has the following settings: Supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. This item is set during activation and cannot be changed without a factory reset.
+	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
 
-	- **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+  - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
 
-	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, select an Apple Configurator Certificate to import.
+	- **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-8. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
+	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
 
+  Choose **Save**.
+
+5. Choose **Setup Assistant Settings** to configure the following profile settings:
+
+  ![Screenshot of choosing the configure settings with available settings for a new enrollment program profile.](./media/enrollment-program-profile-settings.png)
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
-	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
+	- **Department Phone** - Appears when the user clicks the **Need Help** button during activation.
     - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
-        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
-        - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
-        - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
-        - **Apple ID** - If enabled, iOS will prompt users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including those installed by Intune.
-        - **Terms and Conditions** - If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation
-        - **Touch ID** - If enabled, Setup Assistant prompts for this service during activation
-        - **Apple Pay** - If enabled, Setup Assistant prompts for this service during activation
-        - **Zoom** - If enabled, Setup Assistant prompts for this service during activation
-        - **Siri** - If enabled, Setup Assistant prompts for this service during activation
-        - **Diagnostic Data** - If enabled, Setup Assistant prompts for this service during activation
+        - **Passcode**
+        - **Location Services**
+        - **Restore**
+        - **Apple ID**
+        - **Terms and Conditions**
+        - **Touch ID**
+        - **Apple Pay**
+        - **Zoom**
+        - **Siri**
+        - **Diagnostic Data**
 
-9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
+    Choose **Save**.
+9. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
 
-## Sync DEP managed devices
-Now that Intune has been assigned permission to manage your DEP devices, you can synchronize Intune with the DEP service to see your managed devices in the Intune portal.
+## Sync managed devices
+Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+1. In Intune in the Azure portal, choose **Device enrollment** >  **Apple Enrollment** > **Enrollment Program Devices**.
+2. Under **Enrollment Program Devices**, choose **Sync**.
 
-2. On the Intune blade of the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+  ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
+3. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
-3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
+  ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
 
-4. On the **Apple DEP Serial Numbers** blade, select **Sync**.
+  To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+     -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
+     -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+     - Intune syncs new and removed devices with Apple every 24 hours.
 
-5. On the **Sync** blade, select **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
-    To comply with Apple’s terms for acceptable DEP traffic, Intune imposes the following restrictions:
-     -	A full DEP sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-     -	Any sync request is given 10 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+## Assign an enrollment profile to devices
+You must assign an enrollment program profile to devices before they can enroll.
 
 >[!NOTE]
->You can also assign DEP serial numbers to profiles from the **Apple DEP Serial Numbers** blade.
+>You can also assign serial numbers to profiles from the **Apple Serial Numbers** blade.
 
-## Assign a ASM profile to devices
-DEP devices managed by Intune must be assigned a DEP profile before they are enrolled.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
+2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Assign devices**.
 
-1. In the Intune portal, choose **Device enrollment** > **Apple Enrollment**, and then select **Enrollment Program Profiles**.
-2. From the list of **Enrollment Program Profiles**, select the profile you want to assign to devices and then select **Device Assignments**
-3. Select **Assign** and then select the ASM devices you want to assign this profile. You can filter to view ASM available devices:
+ ![Screenshot of Device Assignments with Assign being selected.](./media/enrollment-program-device-assign.png)
+
+3. Choose **Assign** and then choose the devices you want to assign this profile. You can filter to view available devices:
   - **unassigned**
   - **any**
-  - **&lt;DEP profile name&gt;**
-4. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a ASM profile.
+  - **&lt;profile name&gt;**
+4. Choose the devices you want to assign. The checkbox above the column selects up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
 
-  ![Screenshot of Assign button for assigning DEP profile in the Intune portal](media/dep-profile-assignment.png)
+  ![Screenshot of Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
 
-5. Select the devices you want to assign. The checkbox above the column will select up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned a DEP profile.
+## Distribute devices
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
-## Distribute devices to users
-
-You can now distribute corporate-owned devices to users. When an iOS DEP device is turned on, it will be enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset.
-
-### How users install and use the Company Portal on their devices
-
-Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
+See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).

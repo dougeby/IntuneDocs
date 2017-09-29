@@ -4,8 +4,8 @@
 title: Add apps for Windows PCs that run the Intune software client
 description: Use the information in this topic to learn how to add apps for Windows PCs to Intune before you deploy them.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -27,6 +27,8 @@ ms.custom: intune-classic
 ---
 
 # Add apps for Windows PCs that run the Intune software client
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
 

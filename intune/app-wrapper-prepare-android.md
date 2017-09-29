@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Prepare Android apps for mobile application management with the Intune App Wrapping Tool
+# Prepare Android apps for app protection policies with the Intune App Wrapping Tool
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -56,16 +56,7 @@ Before running the tool, review [Security considerations for running the App Wra
     > [!NOTE]
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
 
-- Android requires all app packages (.apk) to be signed. Use Java keytool to generate credentials needed to sign the wrapped output app. For example, the following command uses the Java executable keytool.exe to generate keys that can be used by the App Wrapping Tool to sign the wrapped output app.
-
-	```
-	keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-	```
-	This example generates a key pair (a public key and associated private key of 2,048 bits) by using the RSA algorithm. It then wraps the public key into an X.509 v3 self-signed certificate, which is stored as a single-element certificate chain. This certificate chain and the private key are stored in a new keystore entry named "mykeystorefile" and identified by the alias "mykeyalias." The keystore entry is valid for 50,000 days.
-
-	The command will prompt you to provide passwords for the keystore and key. Use passwords that are secure, but make a note of them because they're needed to run the App Wrapping Tool.
-
-	For detailed documentation, read more about the Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) and Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) on the Oracle documentation website.
+- Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
 ## Install the App Wrapping Tool
 
@@ -77,7 +68,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 
 ## Run the App Wrapping Tool
 
-1.  On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window in administrator mode.
+1.  On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window.
 
 2.  From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:
 
@@ -101,7 +92,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 |**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Android requires all application packages (.apk) to be signed. Use Java keytool to generate the KeyStorePassword. Read more about Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) here.| |
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
-|**-SigAlg**&lt;SecureString&gt;| (Optional) The name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Optional) The name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Optional) The command supports common PowerShell parameters like verbose and debug. |
 
 
@@ -128,12 +119,23 @@ You will then be prompted for **KeyStorePassword** and **KeyPassword**. Enter th
 
 The wrapped app and a log file are generated and saved in the output path you specified.
 
+## Reusing signing certificates and wrapping apps
+Android requires that all apps must be signed by a valid certificate in order to be installed on Android devices.
+
+Wrapped apps can be signed either as part of the wrapping process or *after* wrapping using your existing signing tools (any signing information in the app before wrapping is discarded).
+ 
+If possible, the signing information that was already used during the build process should be used during wrapping. In certain organizations, this may require working with whoever owns the keystore information (ie. the app build team). 
+
+If the previous signing certificate cannot be used, or the app has not been deployed before, you may create a new signing certificate by following the instructions in the [Android Developer Guide](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+If the app has been deployed previously with a different signing certificate, the app can't be uploaded to Intune after upgrade. App upgrade scenarios will be broken if your app is signed with a different certificate than the one the app is built with. As such, any new signing certificates should be maintained for app upgrades. 
+
 ## Security considerations for running the App Wrapping Tool
 To prevent potential spoofing, information disclosure, and elevation of privilege attacks:
 
 -   Ensure that the input line-of-business (LOB) application, output application, and Java KeyStore are on the same Windows computer where the App Wrapping Tool is running.
 
--   Import the output application to the Intune console on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more about about Java keytool.
+-   Import the output application to Intune on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more about about Java keytool.
 
 -   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, set up the environment to be secure by using [Internet Protocol Security (IPsec)](http://wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/kb/887429).
 

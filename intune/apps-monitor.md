@@ -2,11 +2,11 @@
 # required metadata
 
 title: How to monitor app information and assignments 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: After you've assigned an app to users or devices, use this information to help you monitor its status."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article

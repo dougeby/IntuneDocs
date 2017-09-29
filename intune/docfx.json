@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -15,6 +16,7 @@
     "resource": [
       {
         "files": [
+          "**/media/**", 
           "**/*.png",
           "**/*.gif",
           "**/*.jpg"
@@ -29,7 +31,6 @@
     "overwrite": [],
     "externalReference": [],
 "globalMetadata": {
-      "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune 
-titleSuffix: "Intune on Azure"
+title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune
+titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,13 +31,13 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in the mobile application management (MAM) without enrollment scenario.
+Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in to protect apps without device enrollment.
 
 ## Before you begin
 
 Let’s talk about a few concepts when adding a WIP policy.
 
-### List of Allowed and Exempt apps
+### List of allowed and exempt apps
 
 -   **Allowed apps:** These are the apps that need to adhere to this policy.
 
@@ -45,17 +45,15 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 ### Types of apps
 
--   **Recommended apps:** a pre-populated list of (mostly Microsoft Office) apps that allow admins easily import into policy.
+-   **Recommended apps:** a pre-populated list of (mostly Microsoft Office) apps that allow you easily import into policy. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Store apps:** Admin can add any app from the Windows store to policy.
+-   **Store apps:** You can add any app from the Windows store to the policy.
 
--   **Windows desktop apps:** Admin can add any traditional Windows desktop apps to the policy (e.g. exe, dll, etc.)
+-   **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
 
 ## Pre-requisites
 
-You need to configure the MAM provider before you can create a WIP app protection policy.
-
--   Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
+You need to configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following:
 
@@ -64,12 +62,13 @@ Additionally, you need to have the following:
 
 > [!IMPORTANT]
 > WIP does not support multi-identity, only one managed identity can exist at a time.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## To add a WIP policy
 
-After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Go to the **Intune mobile application management dashboard**, choose **All settings**, and then choose **App policy**.
+1.  Go to the **Intune mobile application management dashboard**, choose **All settings**, > **App policy**.
 
 2.  In the **App policy** blade, choose **Add a policy**, then enter the following values:
 
@@ -83,7 +82,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 3.  Choose **Create**. The policy is created and appears in the table on the **App Policy** blade.
 
-## To add recommended apps to your Allowed apps list
+## To add recommended apps to your allowed apps list
 
 1.  From the **App policy** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
 
@@ -91,7 +90,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 3.  Select each app you want to access your corporate data, and then choose **OK**. The **Allowed apps** blade gets updated showing you all selected apps.
 
-## Add a Store app to your Allowed apps list
+## Add a Store app to your allowed apps list
 
 **To add a Store app**
 
@@ -111,9 +110,9 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 > [!NOTE]
 > To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, then continue to add more apps. Once you’re done, choose **OK**.
 
-## Add a Desktop app to your Allowed apps list
+## Add a desktop app to your allowed apps list
 
-**To add a Desktop app**
+**To add a desktop app**
 
 1.  From the **App policy** blade, choose the name of your policy, and then choose **Allowed apps.** The **Allowed apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 
@@ -124,67 +123,66 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 4.  After you entered the info into the fields, choose **OK** to add the app to your **Allowed apps** list.
 
 > [!NOTE]
-> To add multiple **Desktop apps** at the same time, you can click the menu **(…)** at the end of the app row, then continue to add more apps. Once you’re done, choose **OK**.
+> To add multiple **desktop apps** at the same time, you can click the menu **(…)** at the end of the app row, then continue to add more apps. Once you’re done, choose **OK**.
 
-## Windows Information Protection (WIP) Learning
-
+## WIP Learning
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 After you add the apps you want to protect with WIP, you need to apply a protection mode by using **WIP Learning**.
 
 ### Before you begin
 
-Windows Information Protection (WIP) Learning is a report that allows admins to monitor their WIP unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. The admin can export these apps from the report and add them to their WIP policies to avoid productivity disruption before they enforce WIP in “Hide Override” mode.
+WIP Learning is a report that allows you to monitor your WIP-unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. You can export these apps from the report and add them to your WIP policies to avoid productivity disruption before they enforce WIP in “Hide Override” mode.
 
 We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
 
-#### What the protection modes are?
+### What are the protection modes?
 
-- **Hide Overrides:**
-	- WIP looks for inappropriate data sharing practices and stops the user from completing the action.
-	- This can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
-<br></br>
+#### Hide Overrides
+WIP looks for inappropriate data sharing practices and stops the user from completing the action. This can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
 
-- **Allow Overrides:**
-	- WIP looks for inappropriate data sharing, warning users if they do something deemed potentially unsafe.
-	- However, this mode lets the user override the policy and share the data, logging the action to your audit log.
-<br></br>
-- **Silent:**
-	- WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Override mode.
-	- Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.
-<br></br>
-- **Off (not recommended):**
-	- WIP is turned off and doesn't help to protect or audit your data.
-	- After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
+#### Allow Overrides
+WIP looks for inappropriate data sharing, warning users if they do something deemed potentially unsafe. However, this mode lets the user override the policy and share the data, logging the action to your audit log.
 
-### To add a protection mode
+#### Silent
+WIP runs silently, logging inappropriate data sharing, without blocking anything that would have been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.
 
-1.  From the **App policy** blade, choose the name of your policy, then click **Required settings** from the **Add Policy** blade.
+#### Off (not recommended)
+WIP is turned off and doesn't help to protect or audit your data.
+
+After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
+
+### Add a protection mode
+
+1.  From the **App policy** blade, choose the name of your policy, then chose **Required settings**.
 
 	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
 1.  Choose **Save**.
 
-### To use WIP Learning
+### Use WIP Learning
 
-1. Go to the Azure Dashboard.
+1. Go to the Azure Dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
 
 3. Choose **Intune**, the **Intune dashboard** opens, choose **Mobile Apps**.
 
-4. Choose **WIP Learning** under **Monitor** section. You see the unknown apps logged by the WIP Learning.
+4. Choose **WIP Learning** under **Monitor**. You see the unknown apps logged by the WIP Learning.
 
 > [!IMPORTANT]
 > Once you have the apps showing up in the WIP Learning logging report, you can them into your app protection policies.
 
-## To deploy your WIP app protection policy
+## Deploy your WIP app protection policy
 
 > [!IMPORTANT]
-> This applies for WIP with mobile application management (MAM) without enrollment scenario.
+> This applies for WIP without device enrollment.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 After you created your WIP app protection policy, you need to deploy it to your organization using MAM.
 
-1.  On the **App policy** blade, choose your newly-created app protection policy, choose **User groups**, then choose **Add user group**.
+1.  On the **App policy** blade, choose your newly-created app protection policy, choose **User groups** > **Add user group**.
 
 	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 
-1.  Choose the group you want your policy to apply to, then click **Select** to deploy the policy.
+1.  Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.

@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: What are app protection policiestitleSuffix: "Intune on Azure"
+title: What are app protection policies
+titleSuffix: "Azure portal"
 description: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: get-started-article
@@ -70,7 +71,7 @@ There are additional benefits to using MDM with App protection  policies, and co
 
 -   Android 4 or later
 
-Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  How app protection policies protect app data
 
 ####  Apps without app protection policies
