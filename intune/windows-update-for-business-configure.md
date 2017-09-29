@@ -119,7 +119,11 @@ Review a policy report to view the deployment status for the Windows 10 update r
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Software Updates**.
 4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-5. On the **Windows 10 Updates** blade, choose **Monitor** > **Update ring deployment for devices**, **Update ring deployment for users**, or **Per-setting deployment state** to view more detailed information about update ring assignments.
+5. On the **Windows 10 Updates** blade, in the **Monitor** section, choose **Per update ring deployment state**. 
+6. Choose from the following reports to view more detailed information about update ring assignments:
+   - **Update ring deployment for devices**
+   - **Update ring deployment for users**
+   - **Per-setting deployment state**
 
 ### Review update compliance using OMS
 You can monitor Windows 10 update rollouts by using a free solution in the Operations Management Suite (OMS) called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
@@ -127,7 +131,7 @@ You can monitor Windows 10 update rollouts by using a free solution in the Opera
 In the Intune console, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+ ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 For example, you can use the following values in **Add or edit OMA-URI Setting**:
 
