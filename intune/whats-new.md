@@ -56,6 +56,12 @@ The Company Portal app for Android now requests end user feedback. This feedback
 #### Improvements to device setup workflow in Company Portal <!--1490692-->
 We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. You can see these on the [what's new in app UI](whats-new-app-ui.md#week-of-october-2-2017) page.
 
+#### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
+
+End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
+
+There are further optimizations for new UI elements that are enabled in Android O.  End users will see additional notifications that will indicate to them when Company Portal is performing background tasks such as retrieving policy from the Intune service.  This increases transparency for end users about when Company Portal is performing administrative tasks on the device.
+
 ### Device enrollment
 
 ### Block unsupported Samsung Knox device enrollment  <!--- 1490695 --->
