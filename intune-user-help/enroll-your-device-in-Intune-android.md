@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 1.  Install the free Intune Company Portal app from [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Open the Microsoft Intune Company Portal app.
+2.  Open the Company Portal app.
 
 3.  On the Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.
 

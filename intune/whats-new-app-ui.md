@@ -33,6 +33,10 @@ Learn what updates we've made to the UI for apps that your end users will see in
 #### Improvements to device setup workflow in Company Portal <!--1490692-->
 We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
 
+|Before|After|
+|---|---|
+|
+
 ## Week of September 11, 2017
 
 ### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
