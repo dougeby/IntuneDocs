@@ -43,7 +43,7 @@ To create a work profile:
 
 2. On the **Company Access Setup** screen, tap **CONTINUE**.
 
-	![Company Access Setup screen](./media/android_cp_enroll_01_1709_new.png)
+	![Company Access Setup screen](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  On the **Why create a work profile?** screen, read about what you'll be able to do, and then tap **CONTINUE**.
 
@@ -51,11 +51,11 @@ To create a work profile:
 
 4.  Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.
 
-	![What your company support can and can't see on your device](./media/android_cp_enroll_02_after_1710.png)
+	![What your company support can and can't see on your device](/intune/media/android_cp_enroll_02_after_1710.png)
 
 5.  On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
-	![What's next screen](./media/android_work_cp_enroll_03_after_1710.png)
+	![What's next screen](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. On the **Set up work profile** screen, tap **NEXT** to let the Company Portal app access the work profile.
 
@@ -81,7 +81,7 @@ To create a work profile:
 
 11. When the **You're all set!** screen shows that everything has been set up correctly, tap **DONE**.
 
-	![Company Access Setup shows work profile and enrollment are complete](./media/android_work_cp_enroll_04_after_1710.png)
+	![Company Access Setup shows work profile and enrollment are complete](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
 	You can now get company apps from the Play Store for Work.
 

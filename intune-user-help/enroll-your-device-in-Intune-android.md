@@ -59,18 +59,18 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
 6.  On the **Company Access Setup** screen, tap **CONTINUE**.
 
-    ![Company access setup screen](./media/android_cp_enroll_01_1709_new.png)
+    ![Company access setup screen](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
 7.  Review a list of what your company support can and can't see on your device, and then tap **CONTINUE**.
 
-	![Privacy settings](./media/android_cp_enroll_02_after_1710.png)
+	![Privacy settings](/intune/media/android_cp_enroll_02_after_1710.png)
 
 9.  On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
-	![What comes next screen](./media/android_cp_enroll_03_after_1710.png)
+	![What comes next screen](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step.
 
