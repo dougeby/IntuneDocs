@@ -36,7 +36,7 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 |Before|After|
 |---|---|
 |![01](./media/android_cp_enroll_01_post_1709.png)|![01](./media/android_cp_enroll_01_1709_new.png)|
-|![01a](./media/android_cp_enroll_01_before_1710.png)| *Combined with first step* |
+|![01a](./media/android_cp_enroll_01_before_1710.png)| *Combined with previous step* |
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
@@ -45,7 +45,11 @@ Additional steps have been improved on Android for Work devices.
 |Before|After|
 |---|---|
 |![04](./media/android_work_cp_enroll_01_before_1710.png)|![04](./media/android_work_cp_enroll_01_after_1710.png)|
-|![05](./media/android_work_cp_enroll_01_after_1710.png)| *Combined with first step* |
+|![05](./media/android_work_cp_enroll_02_before_1710.png)| *Combined with previous step* |
+|![06](./media/android_work_cp_enroll_03_before_1710.png)|![06](./media/android_work_cp_enroll_03_after_1710.png)|
+|![07](./media/android_work_cp_enroll_04_before_1710.png)|![07](./media/android_work_cp_enroll_04_after_1710.png)|
+|![08](./media/android_work_cp_enroll_05_before_1710.png)| *Combined with previous step* |
+
 
 We've also updated the conditional access email activation screen.
 
