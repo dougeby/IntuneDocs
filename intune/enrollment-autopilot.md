@@ -64,7 +64,7 @@ After you create AutoPilot deployment profiles, you can assign them to selected 
 3. On the **Intune** blade, choose **Device enrollment**.
 4. On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.
 5. Select the devices to which you want to assign the deployment profile. You can filter on the **Status** column to easily find devices without an assigned profile. 
-6. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. You will see a message that the synchronization is in progress.
+6. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. You will see a message that the assignment is in progress.
 6. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected. 
 
 > [!NOTE]
