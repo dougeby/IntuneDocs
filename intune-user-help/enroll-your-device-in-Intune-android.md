@@ -39,8 +39,6 @@ These enrollment instructions are for native and Samsung KNOX Android devices. S
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your company support uses this category to help check the apps that you have access to.
 
-If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your company support](send-enrollment-errors-to-your-it-admin-android.md).
-
 **To enroll your Android device:**
 
 1.  Install the free Intune Company Portal app from [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
@@ -59,24 +57,20 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  On the **Company Access Setup** screen, tap **BEGIN**.
+6.  On the **Company Access Setup** screen, tap **CONTINUE**.
 
-    ![Company access setup screen](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Company access setup screen](./media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
-7. On the **Benefits of device management** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
+7.  Review a list of what your company support can and can't see on your device, and then tap **CONTINUE**.
 
-	![Benefits of device management screen](/intune/media/android_cp_enroll_02_post_1709.png)
+	![Privacy settings](./media/android_cp_enroll_02_after_1710.png)
 
-8.  Review a list of what your company support can and can't see on your device, and then tap **CONTINUE**.
+9.  On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
-	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
-
-9.  On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
-
-	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
+	![What comes next screen](./media/android_cp_enroll_03_after_1710.png)
 
 10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step.
 
@@ -139,5 +133,7 @@ Before you try to install company apps, go to **Settings** &gt; **Security**, an
 
 > [!Note]
 > If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
+
+If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your company support](send-enrollment-errors-to-your-it-admin-android.md).
 
 Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
