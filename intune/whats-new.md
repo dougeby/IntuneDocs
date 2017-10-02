@@ -51,7 +51,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Device enrollment
 
 #### Inform end users what device information can be seen on enrolled devices <!--1165314-->
-We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the (What information can your company see?)[what-info-can-your-company-see-when-you-enroll-your-device-in-intune] article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](/intune/whats-new.md#week-of-september-11-2017). 
+We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the [What information can your company see?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune) article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](/intune/whats-new.md#week-of-september-11-2017). 
 
 ## Week of September 25, 2017
 
