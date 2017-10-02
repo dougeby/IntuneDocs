@@ -110,13 +110,6 @@ We have created a device configuration profile called **Network boundary** that 
  
 You can define enterprise cloud resources, IP address ranges, and internal proxy servers that you want to be considered trusted. Once defined, the network boundary can be consumed by other features such as Windows Defender Application Guard and Windows Information Protection.
  
-### Search improvements to the Company Portal website <!--1331697-->  
-We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
-
-iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
-
-We're still fine-tuning the way relevance is tracked, so let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
-
 ###  Two additional settings for Windows Defender Antivirus <!-- 1338409 -->
  
 **File blocking level**
@@ -327,10 +320,6 @@ The System Center Operations Manager management pack for Exchange connector will
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force-retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 
-
-
-
-
 ## Intune apps
 
 ### Improved guidance around the request for access to contacts on Android devices <!--1484985-->
@@ -342,6 +331,15 @@ The Company Portal app for Android often requires the end user to accept the Con
 End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
 
 <!-- the following are present prior to 1710 -->
+
+## Intune apps
+
+### Search improvements to the Company Portal website <!--1331697-->
+We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+
+iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months. 
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
 ### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
 The Company Portal app for Windows 10 will allow users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
