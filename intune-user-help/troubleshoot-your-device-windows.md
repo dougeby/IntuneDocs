@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,10 +30,12 @@ ms.suite: ems
 
 # Fix common issues with your Windows device
 
-Sometimes issues can occur with your Windows device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your IT admin through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes issues can occur with your Windows device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
 
 - [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
-- [I need to update your Windows device](you-need-to-update-your-windows-device.md)
+- [I need to update my Windows device](you-need-to-update-your-windows-device.md)
+- [I need to send logs to my company support from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md)
+- [I need to send logs to my company support from the Settings app](send-logs-to-your-it-admin-settings-windows.md)
 - [My Windows version isn't yet supported](your-windows-version-isnt-yet-supported.md)
 - [I need to enable Windows encryption](you-need-to-enable-windows-encryption.md)
 - [My device needs antimalware software](your-device-needs-antimalware-software.md)

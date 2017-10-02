@@ -4,14 +4,17 @@
 title: Using your iOS or macOS device with Intune | Microsoft Docs
 description: List of links to tasks that you can do on your iOS or macOS mobile device when the device is enrolled in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eafsearchScope: - User help
+ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -28,6 +31,10 @@ ms.custom: intune-enduser
 # Using your iOS or macOS device with Intune
 
 There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+
+## Supported versions
+
+Intune currently supports iOS 9.0 and later. It also supports macOS 10.9 Mavericks and later. 
 
 ## Enrolling into Intune and installing the Company Portal
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your password does not meet your IT admin's requirements | Microsoft Docs
+title: Your password does not meet your company support's requirements | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -26,9 +26,9 @@ ms.custom: intune-enduser
 
 ---
 
-# Your password does not meet your IT admin's requirements
+# Your password does not meet your company support's requirements
 
-The password that you use to access your company or school resources does not meet one or more requirements that your IT admin has set up. To fix the issue, follow the instructions that are shown on your device. Descriptions of the issues are listed below.
+The password that you use to access your company or school resources does not meet one or more requirements that your company support has set up. To fix the issue, follow the instructions that are shown on your device. Descriptions of the issues are listed below.
 
 For the steps on how to set your PIN or password, use the link that matches the type of device you have:
 
@@ -38,18 +38,18 @@ For the steps on how to set your PIN or password, use the link that matches the 
 
 PIN or password issue descriptions:
 
-- **Password does not contain complex characters**. Your IT admin requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #.
+- **Password does not contain complex characters**. Your company support requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #.
 
 - **Password is too simple and not secure enough**. Examples of simple passwords might be 1234 or 1111. If you're not sure what kinds of passwords are allowed, try making sure that your password doesn't contain sequential or repeating numbers, like the ones in the example.
 
-- **Password has expired**. Your password has expired, so you must set a new one that meets the requirements set by your IT admin.
+- **Password has expired**. Your password has expired, so you must set a new one that meets the requirements set by your company support.
 
-- **Password is not set**. Before you can access work email and data on your device, you must set a password that meets the requirements set by your IT admin.
+- **Password is not set**. Before you can access work email and data on your device, you must set a password that meets the requirements set by your company support.
 
-- **Password is too short**. Your IT admin requires you to use a longer password with more characters.
+- **Password is too short**. Your company support requires you to use a longer password with more characters.
 
-- **Your password was used too recently**. Your IT admin is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before.
+- **Your password was used too recently**. Your company support is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before.
 
-- **Password isn't complex enough to meet requirements**. Your IT admin requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. This can also be true of other accounts on your device, so be sure to check any other work accounts to ensure that your password meets the requirements set up by IT for your device.
+- **Password isn't complex enough to meet requirements**. Your company support requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. This can also be true of other accounts on your device, so be sure to check any other work accounts to ensure that your password meets the requirements set up by IT for your device.
 
-If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have trouble figuring out how to make your password comply with the requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

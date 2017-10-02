@@ -34,4 +34,4 @@ If you are trying to enroll your iOS or macOS device in Intune, and you see a sc
 2. Tap **continue.**
 3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

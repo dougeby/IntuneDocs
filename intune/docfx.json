@@ -1,0 +1,43 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "intune-azure/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/media/**", 
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "intune-azure/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+"globalMetadata": {
+      "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "searchScope": ["Intune"]
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "intune-azure"
+  }
+}

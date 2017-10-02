@@ -6,7 +6,7 @@ description: List of links to tasks that users can do on their Windows device wh
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,17 @@ ms.custom: intune-enduser
 # Using your Windows device with Intune
 
 There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+
+## Supported versions
+
+Intune currently supports the following versions of Windows.
+
+* Windows 10 (Home, Pro, Education, and Enterprise versions)
+* Windows Phone 8.1 and later
+* Windows 8.1 RT
+* Windows 8.1
+
+There are some other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens), that are supported by Intune as well. These are not listed here because they are for very specific uses.
 
 ## Enrolling into Intune and installing the Company Portal
 
