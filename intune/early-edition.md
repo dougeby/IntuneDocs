@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -192,6 +192,14 @@ We recommend upgrading eligible Windows Phone 8.1 devices to Windows 10 Mobile a
 
 
 ## Intune apps
+
+### Search improvements to the Company Portal website <!--1331697-->
+We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+
+iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months. 
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+
 ### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->
 The Company Portal app for Windows 10 will allow users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
 
