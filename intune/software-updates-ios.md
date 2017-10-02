@@ -52,7 +52,4 @@ You have applied the policy to users. The devices used by the users who are targ
 
 ## Monitor iOS devices with older iOS versions 
 <!-- 1352223 -->
-The **Out-of-date iOS Devices** report is available from the **Software updates** > **iOS Update Policies** blade. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and have available updates. For each device, you can view a status for why the device has not been automatically updated. 
-
-
 The **Out-of-date iOS Devices** report is available from the **Software updates** > **iOS Update Policies** blade. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and could not be updated. For each device, you can view a status for why the device has not been automatically updated.
