@@ -113,17 +113,25 @@ The new update ring is displayed in the list of update rings.
 ## Update compliance reporting
 You can view update compliance in Intune or by using a free solution in the Operations Management Suite (OMS) called Update Compliance.
 
-### Review update compliance in Intune <!-- 1352223 -->
+### Review update compliance in Intune 
+<!-- 1352223 -->
 Review a policy report to view the deployment status for the Windows 10 update rings that you have configured. 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Software Updates**.
 4. On the **Software Updates** blade, choose **Overview**. From here you can see general information about the status of any update rings you assigned.
-5. On the **Windows 10 Updates** blade, in the **Monitor** section, choose **Per update ring deployment state**. 
-6. Choose from the following reports to view more detailed information about update ring assignments:
-   - **Update ring deployment for devices**
-   - **Update ring deployment for users**
-   - **Per-setting deployment state**
+5. Open one of the following reports: 
+     
+   **For all deployment rings:**
+   1. On the **Software updates** > **Windows 10 Update Rings** blade. 
+   2. In the **Monitor section**, choose **Per update ring deployment state**.
+                   
+   **For specific deployment rings:** 
+   1. On the **Software updates** > **Windows 10 Update Rings** blade, choose the deployment ring to review.
+   2. In the **Monitor** section, choose from the following reports to view more detailed information about the update ring:
+      - **Update ring deployment for devices**
+      - **Update ring deployment for users**
+      - **Per-setting deployment state**
 
 ### Review update compliance using OMS
 You can monitor Windows 10 update rollouts by using a free solution in the Operations Management Suite (OMS) called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
