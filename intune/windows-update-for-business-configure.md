@@ -33,10 +33,10 @@ ms.suite: ems
 
 Windows as a Service is the way to update Windows 10 devices. With Windows 10, new Feature Updates and Quality Updates contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
-By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update makes sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
+By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update makes sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
 
 - **Windows 10 Servicing Branch**: Choose whether you want groups of devices to receive updates from the Current Branch or from the Current Branch for Business.  
-- **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. You will then have a staged update rollout so that you can review progress along the way.
+- **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. Use these settings to give you a staged update roll out so that you can review progress along the way.
 - **Pausing**: Postpone the installation of updates if you discover an issue at any point during the update rollout.
 - **Maintenance window**: Configure the hours in which updates can be installed.
 - **Update type**: Choose the types of updates that get installed. For example, Quality Updates, Feature Updates, or drivers.
@@ -72,9 +72,9 @@ After you create update rings, you assign them to groups of devices. By using up
 1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting is not supported in the Azure portal because it is no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.
 
   > [!NOTE]
-  > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings will be removed from the policy.
+  > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings continue to be applied. If you have migrated any of these settings and edit the migrated policy from the Azure portal, these settings are removed from the policy.
 
-2. Delete the update settings in the classic portal. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there will be a conflict and no easy way to know because the setting configured in the classic portal does not display in the Azure portal.
+2. Delete the update settings in the classic portal. After you migrate to the Azure portal and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values there is a conflict and no easy way to know because the setting configured in the classic portal does not display in the Azure portal.
 
 ## How to create and assign update rings
 
@@ -85,14 +85,14 @@ After you create update rings, you assign them to groups of devices. By using up
 5. On the blade showing the list of update rings, choose **Create**.
 6. On the **Create Update Ring** blade, supply a name and optional description for the update ring, and then choose **Settings**.
 7. On the **Settings** blade, configure the following information:
-	- **Servicing branch**: Set the branch for which the device will receive Windows updates (Current Branch or Current Branch for Business).
+	- **Servicing branch**: Set the branch for which the device receives Windows updates (Current Branch or Current Branch for Business).
 	- **Microsoft updates**: Choose whether to scan for app updates from Microsoft Update.
 	- **Windows drivers**: Choose whether to exclude Windows Update drivers during updates.
 	- **Automatic update behavior**: Choose how to manage automatic update behavior to scan, download, and install updates. For details, see  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
-	- **Quality update deferral period (days)** - Specify the number of days for which quality updates will be deferred. You can defer receiving these Quality Updates for a period of up to 30 days from their release.  
+	- **Quality update deferral period (days)** - Specify the number of days for which quality updates are deferred. You can defer receiving these Quality Updates for a period of up to 30 days from their release.  
 
   	Quality Updates are generally fixes and improvements to existing Windows functionality and are typically published the first Tuesday of every month, though can be released at any time by Microsoft. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability.
-	- **Feature update deferral period (days)** - Specify the number of days for which Feature Updates will be deferred. You can defer receiving these Feature Updates for a period of 180 days from their release.
+	- **Feature update deferral period (days)** - Specify the number of days for which Feature Updates are deferred. You can defer receiving these Feature Updates for a period of 180 days from their release.
 
 	Feature Updates are generally new features for Windows. After you configure the **Servicing branch** setting (**CB** or **CBB**), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.
 
@@ -144,7 +144,7 @@ The OMA-URI (case sensitive) path for configuring the commercial ID is:
 For example, you can use the following values in **Add or edit OMA-URI Setting**:
 
 - **Setting Name**: Windows Analytics Commercial ID
-- **Setting Description**: Configuring commercial id for Windows Analytics solutions
+- **Setting Description**: Configuring commercial ID for Windows Analytics solutions
 - **Data Type**: String
 - **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
