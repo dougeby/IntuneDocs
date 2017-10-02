@@ -67,11 +67,11 @@ After you create AutoPilot deployment profiles, you can assign them to selected 
 6. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. You will see a message that the synchronization is in progress.
 6. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected. 
 
-### Assign a different AutoPilot deployment profile
-After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
-
 > [!NOTE]
 > The new profile will be assigned to the device. However, the profile won’t be applied to devices that have already enrolled in Intune until after the device has been reset and reenrolled.
+
+### Assign a different AutoPilot deployment profile
+After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
 
 ## Edit an AutoPilot deployment profile 
 After you've created an AutoPilot deployment profile, you can edit certain parts of the deployment profile.   
