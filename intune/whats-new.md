@@ -1,4 +1,4 @@
-intun---
+---
 # required metadata
 title: What's new in Microsoft Intune
 titlesuffix: "Azure portal"
