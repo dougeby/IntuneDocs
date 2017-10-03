@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 ## Step 1 - Specify the software setup file
 
-1. [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]  
+<!--1. [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]-->  
 2. On the **Intune** blade, choose **Manage apps**.
 3. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 4. Above the list of apps, choose **Add**.
@@ -73,7 +73,7 @@ The app you have created will be displayed in the apps list where you can assign
 
 ## Step 5 - Update a line of business app
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+<!-- [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] -->
 
 ## Next steps
 
