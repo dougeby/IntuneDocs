@@ -73,7 +73,7 @@ The app you have created will be displayed in the apps list where you can assign
 
 ## Step 5 - Update a line of business app
 
-<!-- [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] -->
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 ## Next steps
 
