@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 ## Step 1 - Specify the software setup file
 
-1. [!INCLUDE[shared-proc-openintuneazure](./includes/shared-proc-openintuneazure.md)] 
+1. [!INCLUDE[shared-proc-openintuneazure](./includes/shared-proc-openintuneazure.md)]  
 2. On the **Intune** blade, choose **Manage apps**.
 3. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 4. Above the list of apps, choose **Add**.

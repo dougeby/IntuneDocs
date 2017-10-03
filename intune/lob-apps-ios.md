@@ -37,7 +37,7 @@ Use the information in this topic to help you add iOS line-of-business apps to I
 
 ## Step 1 - Specify the software setup file
 
-1. [!INCLUDE[shared-proc-openintuneazure](./includes/shared-proc-openintuneazure.md)] 
+1. [!INCLUDE[shared-proc-openintuneazure](./includes/shared-proc-openintuneazure.md)]  
 3. On the **Intune** blade, choose **Manage apps**.
 4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.
@@ -80,6 +80,8 @@ The app you have created appears in the apps list where you can assign it to the
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 ## Next steps
+
+The app you have created is displayed in the apps list. You can now assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
 Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
 
