@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apple DEP management for iOS devices 
-description: Deploy an enrollment profile that enrolls iOS devices bought through the iOS Device Enrollment Program (DEP) “over the air” to manage Apple devices.
+description: Deploy an enrollment profile that enrolls iOS devices bought through the iOS Device Enrollment Program (DEP) over the air to manage Apple devices.
 keywords:
 author: nathbarn
 ms.author: nathbarn
