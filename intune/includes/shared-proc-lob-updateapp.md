@@ -1,4 +1,4 @@
-1. [!INCLUDE[shared-proc-openintuneazure](./includes/shared-proc-openintuneazure.md)] 
+1. [!INCLUDE[shared-proc-openintuneazure](shared-proc-openintuneazure.md)] 
 2. Choose **Mobile Apps** > **Apps**.
 3. Find and select your app in the list of apps.
 4. Choose **Properties** in the **Overview** blade.
