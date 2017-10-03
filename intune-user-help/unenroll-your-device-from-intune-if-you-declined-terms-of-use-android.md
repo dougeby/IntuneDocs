@@ -1,21 +1,24 @@
 ---
 # required metadata
 
-title: Unenroll your device if you declined "Terms of Use" | Microsoft Docs
+title: Unenroll your device if you declined Terms of Use | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061esearchScope: - User help
+ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
+searchScope:
+ - User help
 
 # optional metadata
 
-ROBOTS:  
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal
