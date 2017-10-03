@@ -161,7 +161,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 ### Use WIP Learning
 
-1. Open the Azure portal. Choose **More services**.Type **Intune** in the text box filter.
+1. Open the Azure portal. Choose **More services**. Type **Intune** in the text box filter.
 
 3. Choose **Intune** > **Mobile Apps**.
 
