@@ -33,12 +33,11 @@ ms.custom: intune-azure
 
 ## Step 1 - Specify the software setup file
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
-5. Above the list of apps, choose **Add**.
-6. In the **Add App** blade, choose **Line-of-business app**.
+1. [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+2. On the **Intune** blade, choose **Manage apps**.
+3. In the **Mobile apps** workload, choose **Manage** > **Apps**.
+4. Above the list of apps, choose **Add**.
+5. In the **Add App** blade, choose **Line-of-business app**.
 
 ## Step 2 - Configure the app package file
 
@@ -71,3 +70,11 @@ ms.custom: intune-azure
 2. Choose **Add**, to upload the app to Intune.
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+
+## Step 5 - Update a line of business app
+
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## Next steps
+
+XXX
