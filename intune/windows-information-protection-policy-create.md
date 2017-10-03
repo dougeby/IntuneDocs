@@ -165,12 +165,11 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 3. Choose **Intune** > **Mobile Apps**.
 
-4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.
+4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.  
+ 
+    Once you have the apps showing up in the WIP Learning logging report, you can them into your app protection policies.
 
     ![Reports > Windows Information Protection learning](./media/Windows-information-protection-information.png)
-
-> [!IMPORTANT]
-> Once you have the apps showing up in the WIP Learning logging report, you can them into your app protection policies.
 
 ## Deploy your WIP app protection policy
 
