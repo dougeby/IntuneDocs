@@ -54,7 +54,7 @@ Access is granted when the device is remediated:
 
 ![Mobile Threat Defense Access granted](./media/MTD-image-2.png)
 
-> ![NOTE] 
+> [!NOTE] 
 > Using multiple Mobile Threat Defense vendors with Intune is not supported. Having multiple MTD tools enabled will force all MTD apps to be installed and scan across devices for threats.
 
 ## Mobile Threat Defense partners
