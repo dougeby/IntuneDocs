@@ -8,7 +8,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/02/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
