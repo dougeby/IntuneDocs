@@ -161,13 +161,11 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 ### Use WIP Learning
 
-1. Open the Azure portal.
+1. Open the Azure portal. Choose **More services**.Type **Intune** in the text box filter.
 
-2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
+3. Choose **Intune** > **Mobile Apps**.
 
-3. Choose **Intune**, the **Intune dashboard** opens, choose **Mobile Apps**.
-
-4. Choose *App protection status** > **Reports** > **Windows Information Protection learning**. You see the unknown apps logged by the WIP Learning.
+4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.
 
     ![Reports > Windows Information Protection learning](./media/Windows-information-protection-information.png)
 
