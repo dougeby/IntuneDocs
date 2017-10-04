@@ -67,6 +67,14 @@ End users will see additional notifications to indicate to them when the Company
 
 There are further optimizations for new UI elements that are enabled in Android O.  End users will see additional notifications that will indicate to them when Company Portal is performing background tasks such as retrieving policy from the Intune service.  This increases transparency for end users about when Company Portal is performing administrative tasks on the device.
 
+#### New behaviors for the Company Portal app for Android with work profiles <!---1485783--->
+
+When you enroll an Android for Work device with a work profile, it's the Company Portal app in the work profile that performs management tasks on the device. 
+
+Unless you are using a MAM-enabled app in the personal profile, the Company Portal app for Android no longer serves any use. To improve the work profile experience, Intune will automatically hide the personal Company Portal app after a successful work profile enrollment.
+
+The Company Portal app for Android can be enabled at any time in the personal profile by browsing for [Company Portal in the Play Store](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and tapping **Enable**.
+
 #### Company Portal for Windows 8.1 and Windows Phone 8.1 moving to sustaining mode <!--1428681-->
 
 Beginning in October 2017, the Company Portal apps for Windows 8.1 and Windows Phone 8.1 will move to sustaining mode. This means that the apps and existing scenarios, such as enrollment and compliance, will continue to be supported for these platforms. These apps will continue to be available for download through existing release channels, such as the Microsoft Store. 
