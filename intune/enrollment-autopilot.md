@@ -25,6 +25,12 @@ The Windows AutoPilot Deployment Program simplifies device provisioning. Today, 
 - [Windows automatic enrollment enabled] (https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
+## Using AutoPilot in other portals
+You have the ability to use AutoPilot in Microsoft Store for Business, for example, if you are not interested in mobile device management. While this is an option, we recommend that you only use Intune to manage your AutoPilot deployments. If you use more than one product, Intune won't do the following:
+- Display changes to profiles created in Intune, but edited in another product
+- Synchronize profiles created in another product
+- Display changes to profile assignments done in another product
+- Synchronize profile assignments done outside of Intune
 
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
@@ -54,7 +60,7 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
    > The following settings are configured with all AutoPilot deployment profiles:
    > - Skip Cortana, OneDrive, and OEM registration setup pages
    > - Automatically set up for work or school
-   > - Sign in experience with company or school brand 
+   > - Sign in experience with company or school brand    
 
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.
@@ -67,8 +73,9 @@ After you create AutoPilot deployment profiles, you can assign them to selected 
 6. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. You will see a message that the assignment is in progress.
 6. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected. 
 
-> [!NOTE]
+> [!Note]
 > The new profile will be assigned to the device. However, the profile won’t be applied to devices that have already enrolled in Intune until after the device has been reset and reenrolled.
+
 
 ### Assign a different AutoPilot deployment profile
 After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
