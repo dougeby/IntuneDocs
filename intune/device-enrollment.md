@@ -42,6 +42,7 @@ If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you c
 ## Overview of device enrollment methods
 
 The following table offers an overview of Intune enrollment methods with their capabilities and requirements described below.
+
 **Legend**
 
 - **Reset required** - Device are factory reset during enrollment.
