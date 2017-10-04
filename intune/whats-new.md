@@ -90,6 +90,10 @@ The Company Portal app only attempts to enroll supported Samsung Knox devices. T
 #### End of support for Android 4.3 and lower <!---1171126, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
+#### Inform end users what device information can be seen on enrolled devices <!--1165314-->
+We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the [What information can your company see?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017). 
+
+
 ## Week of September 25, 2017
 
 ### Device enrollment
