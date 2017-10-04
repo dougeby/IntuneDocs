@@ -25,12 +25,6 @@ The Windows AutoPilot Deployment Program simplifies device provisioning. Today, 
 - [Windows automatic enrollment enabled] (https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
-## Using AutoPilot in other portals
-If you are not interested in mobile device management, you have the ability to use AutoPilot in Microsoft Store for Business, for example. While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments. If you use Intune and another portal, Intune isn't able to:
-- Display changes to profiles created in Intune, but edited in another portal
-- Synchronize profiles created in another portal
-- Display changes to profile assignments done in another portal
-- Synchronize profile assignments done in another portal
 
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
@@ -91,6 +85,13 @@ After you've created an AutoPilot deployment profile, you can edit certain parts
 
 > [!NOTE]
 > The updated profile is assigned to devices. However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled. 
+
+## Using AutoPilot in other portals
+If you are not interested in mobile device management, you have the ability to use AutoPilot in Microsoft Store for Business, for example. While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments. If you use Intune and another portal, Intune isn't able to:
+- Display changes to profiles created in Intune, but edited in another portal
+- Synchronize profiles created in another portal
+- Display changes to profile assignments done in another portal
+- Synchronize profile assignments done in another portal
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For details, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
