@@ -94,7 +94,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 - Activation Lock Bypass 
 - Autonomous Single App Mode 
 - Web Content Filter 
-- Set background & lock screen 
+- Set background and lock screen 
 - Silent App Push 
 - Always-On VPN 
 - Allow managed app installation exclusively 
