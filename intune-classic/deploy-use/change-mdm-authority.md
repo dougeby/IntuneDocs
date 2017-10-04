@@ -30,14 +30,14 @@ Beginning in Configuration Manager version 1610, you can change your MDM authori
 > If you want to change an existing Microsoft Intune tenant configured from the Configuration Manager console (hybrid) and with the MDM authority set to **Configuration Manager** (hybrid) to **Microsoft Intune** standalone, see [Change the MDM authority from Configuration Manager (hybrid MDM) to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/change-mdm-authority). 
 
 
-### Key Considerations
+## Key Considerations
 After you switch to the new MDM authority, there will likely be transition time (up to eight hours) before the device checks in and synchronizes with the service. You are required to configure settings in the new MDM authority (hybrid) to ensure that enrolled devices will continue to be managed and protected after the change. 
 - Devices must connect with the service after the change so that the settings from the new MDM authority (Intune standalone) replace the existing settings on the device.
 - After you change the MDM authority, some of the basic settings (such as profiles) from the previous MDM authority (Intune standalone) will remain on the device for up to seven days or until the device connects to the service for the first time. It is recommended that you configure apps and settings (policies, profiles, apps, etc.) in the new MDM authority (hybrid) as soon as possible and deploy the setting to the user groups that contains users who have existing enrolled devices. As soon as a device connects to the service after the change in MDM authority, it will receive the new settings from the new MDM authority and prevent gaps in management and protection.
 - When the same device categories exist in both Intune and Configuration Manager, any device category assignments for devices are not carried over after you switch to the new MDM authority. To continue using device categories, migrated devices have to be manually added to the appropriate collections after the MDM authority is changed and the devices display in the Configuration Manager console.
 - Devices that don't have associated users (typically when you have iOS Device Enrollment Program or bulk enrollment scenarios) are not migrated to the new MDM authority. For those devices, you need to call support for assistance to move them to the new MDM authority.
 
-### Prepare to change the MDM authority to Configuration Manager (hybrid)
+## Prepare to change the MDM authority to Configuration Manager (hybrid)
 Review the following information to prepare for the change to the MDM authority:
 - You must have Configuration Manager version 1610 or higher for the option to change the MDM authority to be available.
 - It can take up to eight hours for a device to connect to the service after you change to the new MDM authority.
@@ -56,7 +56,7 @@ Review the following information to prepare for the change to the MDM authority:
     > [!IMPORTANT]  
     > If a different APNs certificate is used for hybrid, then ALL previously enrolled iOS devices become unenrolled and you have to go through the process to reenroll them. Prior to making the MDM authority change, make sure that you know exactly what APNs certificate was used to manage iOS devices in Intune. Find the same certificate listed in Apple Push Certificates Portal (https://identity.apple.com) and make sure the user whose Apple ID was used to create the original APNs certificate is identified and available to renew the same APNs certificate as part of the change to the new MDM authority.  
 
-### Change the MDM authority to Configuration Manager
+## Change the MDM authority to Configuration Manager
 The process to change the MDM authority to Configuration Manager (hybrid) includes the following high-level steps:  
 - In the Configuration Manager console, add the Microsoft Intune subscription.
 - Configure the Apple APNs certificate by using the same APNs certificate that you renewed.
@@ -72,7 +72,7 @@ The process to change the MDM authority to Configuration Manager (hybrid) includ
 6. Log in to the [Microsoft Intune administration console](http://manage.microsoft.com) using the same Intune tenant and confirm that the MDM authority has been changed to **Set to Configuration Manager**.
 
 
-### Enable iOS enrollment
+## Enable iOS enrollment
 When you have iOS devices, you must configure the APNs certificate in Configuration Manager.
 
 #### To enable iOS enrollment and configure the APNs certificate
@@ -110,7 +110,7 @@ When you have iOS devices, you must configure the APNs certificate in Configurat
 
         ![Intune Subscription properties page - iOS](../media/mdm-change-subscription-properties-ios.png)
 
-### Enable Android enrollment
+## Enable Android enrollment
 1. In the Configuration Manager console, go to **Administration** &gt; **Cloud Services** &gt; **Microsoft Intune Subscription**, and choose **Configure Platforms** &gt; **Android**.  
 2. Select **Enable Android enrollment** and click **OK**.
 
@@ -123,7 +123,7 @@ When you have iOS devices, you must configure the APNs certificate in Configurat
 2. Select the platform that you want to enable, and click **OK**.
 
 
-### Next steps
+## Next steps
 After the change in MDM authority is complete, review the following steps:
 - When the Intune service detects that a tenant’s MDM authority has changed, it sends out a notification message to all the enrolled devices to check in and synchronize with the service (this is outside of the regularly scheduled check-in). Therefore, after the MDM authority for the tenant has been changed from Intune standalone to hybrid, all the devices that are powered on and online will connect with the service, receive the new MDM authority, and be managed by hybrid. There is no interruption to the management and protection of these devices.
 - Even for devices that are powered on and online during (or shortly after) the change in MDM authority, there will be a delay of up to eight hours (depending on the timing of the next scheduled regular check in) before devices are registered with the service under the new MDM authority.    
