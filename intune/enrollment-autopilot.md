@@ -76,7 +76,6 @@ After you create AutoPilot deployment profiles, you can assign them to selected 
 > [!Note]
 > The new profile is assigned to the device. However, the profile won’t be applied to devices that have already enrolled in Intune until after the device has been reset and reenrolled.
 
-
 ### Assign a different AutoPilot deployment profile
 After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
 
