@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,5 +68,7 @@ Getting access to your organization’s apps, data, and resources makes it possi
 9. You may see some additional messages from your Mac with more details about the profile, or whether you're sure that you want to __Install__. Click __Continue__ and __Install__ through these to proceed. Once the installation finishes, you will be able to view your newly-installed __Management Profile__ in the list of __Device Profiles__.
 
  ![macOS Profile Installed](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+Some profiles may say that they're **Unverified**; as long as they're from your company, this is normal. 
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
