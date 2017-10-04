@@ -53,6 +53,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 #### Improvements to device setup workflow in Company Portal <!--1490692-->
 We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. You can see these on the [what's new in app UI](whats-new-app-ui.md#week-of-october-2-2017) page.
 
+#### Improved guidance around the request for access to contacts on Android devices <!--1484985-->
+
+The Company Portal app for Android often requires the end user to accept the Contacts permission. If an end user declines this access, they will now see an in-app notification that alerts them to grant it for conditional access. 
+
+#### Secure startup remediation for Android <!--1490712-->
+
+End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
+
 #### Additional push notifications for end users on the Company Portal app for Android O<!---1475932--->
 
 End users will see additional notifications to indicate to them when the Company Portal app for Android O is performing background tasks, such as retrieving policies from the Intune service. This increases transparency for end users about when the Company Portal is performing administrative tasks on their device. This is part of the overall [optimization of the Company Portal UI](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) for the Company Portal app for Android O. 
