@@ -353,7 +353,7 @@ We are fixing a known issue with how the iOS Company Portal displays icons in th
 
 <!-- the following are present prior to 1709 -->
 
-### Intune Managed Browser support for iOS and Android <!---1374196--->
+### Intune Managed Browser support for iOS and Android <!-- 1374196 -->
 As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later. Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 
@@ -375,6 +375,16 @@ Now that Intune’s mobile device management (MDM) and mobile application manage
 Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
 
 
+### New path for managed devices in Graph API <!-- 1586728 -->
+
+In the October Intune service release, we are making a change to the path used to access managed devices in the beta version of the Graph API. 
+
+| | |
+|--|--|
+| Current path |  https://graph.microsoft.com/beta/managedDevices |
+| New path | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
+
+Both paths will work through the month of October. After the October service release, only the new path will work.  If you are using the Graph API to access managed devices, update and verify your scripts and applications with the new path. For additional changes, check the monthly [Graph API changelog](https://developer.microsoft.com/en-us/graph/docs/concepts/changelog).
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
