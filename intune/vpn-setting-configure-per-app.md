@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up Per-App VPN in Microsoft Intune for iOS devices
 
-You can specify which managed apps can use your VPN on Intune managed iOS devices. When you specify a Per-APP VPN in Intune, an end user automatically connects through your VPN when accessing corporate documents.
+You can specify which managed apps can use your Virtual Private Network (VPN) on Intune managed iOS devices. When you specify a Per-APP VPN in Intune, an end user automatically connects through your VPN when accessing corporate documents.
 
 ## Prerequisites for the Per-App VPN
 
@@ -69,9 +69,7 @@ Import the VPN server's root certificate issued by the CA into a profile created
     3. Select **iOS** for the **Platform**.
     4. Select **Trusted certificate** for the **Profile type**.
 4. Click the folder icon and browse to your VPN certificate (.cer file) that you exported from your VPN administration console. Click OK
-
 5. Click **Create**.
-
     ![Create a trusted certificate profile](media\vpn-per-app-create-trusted-cert.png)
 
 ## Create a SCEP certificate profile
