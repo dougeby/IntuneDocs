@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Bypass Activation Lock on supervised iOS devices with Intune
+# Bypass Activation Lock on Supervised iOS devices with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
