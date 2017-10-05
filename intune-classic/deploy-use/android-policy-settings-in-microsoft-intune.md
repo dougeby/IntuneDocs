@@ -218,7 +218,7 @@ The Company Portal app only attempts Samsung KNOX activation during MDM enrollme
 
 The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
 
-| **Device Name** | **Device Model Numbers** |
+| **Device name** | **Device model numbers** |
 | --- | --- |
 | Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
 | Galaxy A5 | SM-A500G |
