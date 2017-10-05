@@ -141,7 +141,8 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 7. Select **Required** for the **Type** in the **Assignments** blade.
 8. Select your VPN definition for the **VPNS**.
  
-    > [!NOTE]  Sometimes the VPN definition takes up to a minute to retrieve the value. Wait for 3-5 minutes before your click **Save**.
+    > [!NOTE]  
+    > Sometimes the VPN definition takes up to a minute to retrieve the value. Wait for 3-5 minutes before your click **Save**.
 
 9. Click **Save**.
 
