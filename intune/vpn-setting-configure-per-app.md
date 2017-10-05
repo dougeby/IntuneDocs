@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/21/2017
+ms.date: 10/5/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,18 +33,19 @@ You can specify which managed apps can use your VPN on Intune managed iOS device
 
 ## Prerequisites for the Per-App VPN
 
-To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, provision a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
+To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
-You need to:
+Export the certificate and add the CA.
 
- - Export a trusted root certificate exported from your VPN server.  
-Verify that your VPN server uses Certificate-based Authentication. The root certificate is issued by the CA to the VPN server. Go to your VPN’s admin console and export the certificate.
- - Add the name of the CA that issued the certificates for authentication.  
-If the CA presented by the device matches one of the CAs in the Trusted CA list on the VPN server, then the VPN server successfully authenticates the device.
+1. Open the administration console on your VPN server.
+2. Verify that your VPN server uses Certificate-based Authentication. 
+3. Export the trusted root certificate file. It has a .cer extension, and you add it when creating a trusted certificate profile.
+4. Add the name of the CA that issued the certificate for authentication to the VPN server.
+    If the CA presented by the device matches one of the CAs in the Trusted CA list on the VPN server, then the VPN server successfully authenticates the device.
 
 ## Create a  group for your VPN users
 
-You need to create an Azure Active Directory (Azure AD) group to contain the members who have access to the per-App VPN.
+Create or choose an existing group in Azure Active Directory (Azure AD) to contain the members who have access to the per-App VPN.
 
 1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Groups** and click **New group**.
@@ -67,7 +68,8 @@ Import the VPN server's root certificate issued by the CA into a profile created
     2. Type the **Description**.
     3. Select **iOS** for the **Platform**.
     4. Select **Trusted certificate** for the **Profile type**.
-4. Click the folder icon and browse to your VPN certificate (.cer file). Click **OK**.
+4. Click the folder icon and browse to your VPN certificate (.cer file) that you exported from your VPN administration console. Click OK
+
 5. Click **Create**.
 
     ![Create a trusted certificate profile](media\vpn-per-app-create-trusted-cert.png)
@@ -83,26 +85,25 @@ The trusted root certificate profile allows the iOS to automatically trust the V
     2. Type the **Description**.
     3. Select **iOS** for the **Platform**.
     4. Select **SCEP certificate** for the **Profile type**.
-9. Select **Years** and type `1` for **Certificate validity period**.
-10. Select **Common name as email** for **Subject name format**.
-11. Select **Email address** and **User principle name (UPN)** for **Subject alternative name**.
-12. Select **Digital signature** for **Key usage**.
-13. Select **2048** for **Key size (bits)**.
-14. Click Root Certificate and select a SCEP certificate. Click **OK**.
-15. Type `Client Authentication` in **Name** for **Extended key usage**.
-16. Type `1.3.6.1.5.5.7.3.2` in **Object Identifier**.
-17. Click **Add**.
-18. Type the **Server URL** and click **Add**.
-19. Click **OK**.
-20. Click **Create**.
-
+4. Select **Years** and type `2` for **Certificate validity period**.
+5. Select **Common name** for **Subject name format**.
+6. Select **User principle name (UPN)** for **Subject alternative name**.
+7. Select **Digital signature** and **Key encipherment** for **Key usage**.
+8. Select **2048** for **Key size (bits)**.
+9. Click Root Certificate and select a SCEP certificate. Click **OK**.
+10. Type `Client Authentication` in **Name** for **Extended key usage**.
+11. Type `1.3.6.1.5.5.7.3.2` in **Object Identifier**.
+12. Click **Add**.
+13. Type the ***Server URL*** and click **Add**.
+14. Click **OK**.
+15. Click **Create**.
     ![Create a SCEP certificate profile](media\vpn-per-app-create-SCEP-cert.png)
 
 ## Create a Per-App VPN profile
 
 The VPN profile contains the SCEP certificate carrying the client credentials, the connection information to the VPN, and the Per APP VPN flag to enable the Per App VPN feature for use by the iOS application.
 
-1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**. 
+1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Device configuration**, and then click **Profiles**.
 3. Click **+ Create profile**. In **Create profile**:
     1. Type the **Name**.
@@ -123,7 +124,6 @@ The VPN profile contains the SCEP certificate carrying the client credentials, t
     3. Click **OK**.
 6. Click **OK**.
 7. Click **Create**.
-
     ![Create a Per-App VPN profile](media\vpn-per-app-create-VPN-profile.png)
 
 
@@ -134,15 +134,16 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 1. Open the Azure portal. Choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Mobile Apps**.
 3. Click **Apps**.
-6. Select the app from the list of apps.
-7. Click **Assignments.**
-8. Click **Select groups**, select the group you defined earlier. Click **Select**.
-9. Select **Required** for the **Type** in the **Assignments** blade.
-10. Select your VPN definition for the **VPNS**.
-11. Click **Save**.
+4. Select the app from the list of apps.
+5. Click **Assignments.**
+6. Click **Select groups**, select the group you defined earlier. Click **Select**.
+7. Select **Required** for the **Type** in the **Assignments** blade.
+8. Select your VPN definition for the **VPNS**.
+    > [!NOTE]  Sometimes the VPN definition takes up to a minute to retrieve the value. Wait for 3-5 minutes before your click **Save**.
 
+9. Click **Save**.
+  
     ![Associate an app with the VPN](media\vpn-per-app-App-to-VPN.png)
-
 
 ## Verify the connection on the iOS device
 
