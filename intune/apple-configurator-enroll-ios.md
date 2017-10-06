@@ -75,7 +75,7 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 
 **To add Apple Configurator serial numbers to Intune**
 
-1. Create a two-column, comma-separated value (.csv) list without a header. Add the serial number in the left column, and the details in the right column. The current maximum for the list is 500 rows. In a text editor, the .csv list looks like this:
+1. Create a two-column, comma-separated value (.csv) list without a header. Add the serial number in the left column, and the details in the right column. The current maximum for the list is 5,000 rows. In a text editor, the .csv list looks like this:
 
 	F7TLWCLBX196,device details</br>
 	DLXQPCWVGHMJ,device details
