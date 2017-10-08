@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 08/06/2017
+  ms.date: 10/07/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -68,12 +68,12 @@ sections:
       title: Create reports with Intune Data Warehouse (preview)
       image:
         src: https://docs.microsoft.com/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/
-      title: "[Blog] Learn about the new role-based access controls"
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/
+      title: "[Blog] PFX certificates issued using the Intune Certificate Connector"
       image:
         src: https://docs.microsoft.com/media/common/i_blog.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/
-      title: "[Blog] Understand Intune service health"
+    - href: https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/
+      title: "[Blog] Setting up communication between MAM-managed and MDM-managed apps"
       image: 
         src: https://docs.microsoft.com/media/common/i_blog.svg
     
@@ -135,6 +135,7 @@ sections:
   - type: list
     style: unordered
     items:
+    - html: <a href="https://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a>
     - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Read the Enterprise Mobility and Security blog</a>
     - html: <a href="https://blogs.technet.microsoft.com/intunesupport/"> Get help on the Intune support blog</a>
     - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Give feedback on Intune at UserVoice</a>
