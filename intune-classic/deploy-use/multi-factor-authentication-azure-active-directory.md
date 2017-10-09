@@ -17,7 +17,6 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-ROBOTS: 
 #audience:
 #ms.devlang:
 #ms.reviewer: damionw
