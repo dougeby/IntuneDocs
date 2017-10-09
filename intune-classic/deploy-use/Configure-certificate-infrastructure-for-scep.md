@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
+ROBOTS: NOINDEX,NOFOLLOW
 
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: kmyrup
