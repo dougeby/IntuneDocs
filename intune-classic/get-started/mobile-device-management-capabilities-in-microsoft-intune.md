@@ -12,11 +12,10 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
+ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: angrobe

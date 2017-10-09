@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
+ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: mghadial

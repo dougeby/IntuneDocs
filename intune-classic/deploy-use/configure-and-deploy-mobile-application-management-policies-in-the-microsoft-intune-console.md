@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
+ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: joglocke

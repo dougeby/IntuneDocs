@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
+ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fcaROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: sandera

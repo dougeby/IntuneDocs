@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
+ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb

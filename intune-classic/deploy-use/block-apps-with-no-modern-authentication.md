@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
+ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre

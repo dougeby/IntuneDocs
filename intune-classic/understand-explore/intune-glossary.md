@@ -12,7 +12,7 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 

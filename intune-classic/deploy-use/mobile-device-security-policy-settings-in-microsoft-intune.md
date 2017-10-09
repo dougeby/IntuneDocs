@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
+ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac

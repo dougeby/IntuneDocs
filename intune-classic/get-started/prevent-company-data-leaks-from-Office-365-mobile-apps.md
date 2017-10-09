@@ -12,11 +12,10 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
+ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: pchacon

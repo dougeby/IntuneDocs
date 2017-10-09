@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
+ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaabROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: karanda

@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
+ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

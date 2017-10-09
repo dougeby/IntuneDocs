@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: lpatha

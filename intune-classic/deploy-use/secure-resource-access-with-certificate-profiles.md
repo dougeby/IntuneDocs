@@ -12,11 +12,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
+ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: kmyrup
