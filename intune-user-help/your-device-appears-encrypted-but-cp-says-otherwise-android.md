@@ -61,7 +61,7 @@ Some Android devices on version 7.0+ encrypt data in ways that are inconsistent 
 If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent version of Android. You can install the updates for these devices by going to **Settings** > **Update**. 
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### Known devices that currently cannot be updated to fix this issue
 
