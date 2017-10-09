@@ -12,7 +12,8 @@ ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1ROBOTS: NOINDEX,NOFOLLOW
+ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 

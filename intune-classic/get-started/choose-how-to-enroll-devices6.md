@@ -12,11 +12,11 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91fROBOTS: NOINDEX,NOFOLLOW
+ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: dagerrit

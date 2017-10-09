@@ -12,7 +12,8 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2ROBOTS: NOINDEX,NOFOLLOW
+ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
