@@ -14,10 +14,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

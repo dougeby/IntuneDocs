@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,9 @@ ms.custom: intune-enduser
 
 # Create a work profile and enroll your device in Intune
 
-Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data. Your company support can manage only the work profile, which contains your work data. Your company support cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
+Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data.
+
+Your company support can manage only the work profile, which contains your work data. Your company support cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
 
 To create a work profile:
 
@@ -39,9 +41,9 @@ To create a work profile:
 
 	![Android Company Portal app Welcome screen](./media/and-enroll-0-welcome-screen.png)
 
-2. On the **Company Access Setup** screen, tap **BEGIN**.
+2. On the **Company Access Setup** screen, tap **CONTINUE**.
 
-	![Company Access Setup screen](./media/andr-afw-begin-company-access-setup.png)
+	![Company Access Setup screen](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  On the **Why create a work profile?** screen, read about what you'll be able to do, and then tap **CONTINUE**.
 
@@ -49,11 +51,11 @@ To create a work profile:
 
 4.  Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.
 
-	![What your company support can and can't see on your device](./media/andr-afw-what-it-can-see-on-your-device.png)
+	![What your company support can and can't see on your device](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  On the **What comes next** screen, read about what's going to happen next, and then tap **CONTINUE**.
+5.  On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
-	![What comes next screen](./media/andr-afw-what-comes-next.png)
+	![What's next screen](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. On the **Set up work profile** screen, tap **NEXT** to let the Company Portal app access the work profile.
 
@@ -77,13 +79,9 @@ To create a work profile:
 
 	You'll briefly see the message "Enrolling your device."
 
-11. When the **Company Access Setup** screen shows that everything has been set up correctly, tap **CONTINUE**.
+11. When the **You're all set!** screen shows that everything has been set up correctly, tap **DONE**.
 
-	![Company Access Setup shows work profile and enrollment are complete](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. On the **Company Access Setup complete** screen, tap **DONE**. You may have to complete additional steps if your company support has added other requirements.
-
-	![Company Access Setup is complete](./media/andr-afw-company-access-setup-complete.png)
+	![Company Access Setup shows work profile and enrollment are complete](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
 	You can now get company apps from the Play Store for Work.
 
