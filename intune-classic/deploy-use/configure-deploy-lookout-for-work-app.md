@@ -12,10 +12,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: sandera
