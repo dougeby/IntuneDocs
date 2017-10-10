@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,7 +23,6 @@ ms.reviewer: cacampbell
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
 ---
 
 # The early edition for Microsoft Intune - October 2017
