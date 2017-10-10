@@ -12,10 +12,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 #ms.reviewer: [ALIAS]
