@@ -43,7 +43,11 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 
 For details, see [What are app protection policies?](/intune/app-protection-policy)
 
-You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
+You can apply these settings to:
+
+- Devices that are enrolled with Intune
+- Enrolled with another MDM product
+- Unmanaged devices
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications. 
@@ -57,7 +61,7 @@ You can create Managed Browser policies for the following device types:
 -   Devices that run iOS 8.0 and later
 
 >[!IMPORTANT]
->As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.
+>As of October 2017, the Intune Managed Browser app on Android app supports only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.
 >Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 
@@ -70,10 +74,10 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
 4.	On the **App Configuration policies** blade, choose **Add**.
 5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-6.	For **Device enrollment** type, choose **Not enrolled with Intune**.
+6.	For **Device enrollment** type, choose **Managed devices** or **Managed apps**.
 7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
 8.	Choose **OK** to return to the **Add app configuration** blade.
-9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this topic to learn about the different key and value pairs you can define.
+9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
 10.	When you are done, choose **OK**.
 11.	On the **Add app configuration** blade, choose **Create**.
 12.	The new configuration is created, and displayed on the **App configuration** blade.
