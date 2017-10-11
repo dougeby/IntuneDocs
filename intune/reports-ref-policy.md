@@ -38,14 +38,14 @@ The **Policy** entity lists device configuration profiles, app configuration pro
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| PolicyKey |Unique Key to represent the policy in the data warehouse |123 |
-| PolicyId |Unique identifier of the Policy in the data warehouse |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |Name of the Policy |"Windows 10 Baseline" |
+| PolicyKey |Unique Key to represent the policy in the data warehouse. |123 |
+| PolicyId |Unique identifier of the Policy in the data warehouse. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |Name of the Policy. |"Windows 10 Baseline" |
 | PolicyVersion |Version of the Policy. When the policy is edited or changed, a newer version is created. |1, 2, 3 |
-| IsDeleted |Indicates whether the Policy record has been updated.  True- policy has a new record with updated fields. False- the latest record for the policy. |True/False |
-| StartDateInclusiveUTC |Date and time in UTC when the policy was created in the data warehouse |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |Date and time in UTC when IsDeleted changed to True |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |Date and time in UTC when the policy was last modified in the data warehouse |11/23/2016 12:00:00 AM |
+| IsDeleted |Indicates whether the Policy record has been updated.  <br>True- policy has a new record with updated fields. <br>False- the latest record for the policy. |True/False |
+| StartDateInclusiveUTC |Date and time in UTC when the policy was created in the data warehouse. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Date and time in UTC when the policy was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
 ## PolicyType
 
@@ -53,9 +53,9 @@ The **PolicyType** entity lists types of device configuration profiles, app conf
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| PolicyTypeId |Unique identifier of the policy in the source system |123 |
-| PolicyTypeKey |Unique identifier of the policy in the data warehouse |1 |
-| PolicyTypeName |Name of the policy type. |Windows 10 Compliance policy |
+| PolicyTypeId |Unique identifier of the policy in the source system. |123 |
+| PolicyTypeKey |Unique identifier of the policy in the data warehouse. |1 |
+| PolicyTypeName |Name of the policy type. |Windows 10 Compliance policy. |
 
 ## DeviceConfiguration
 
@@ -63,11 +63,11 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| DateKey |Date Key when the Device Configuration Profile check-in was recorded in the data warehouse |20160703 |
-| Pending |Number of unique Devices in pending state |123 |
-| Succeeded |Number of unique Devices in success state |12 |
-| Error |Number of unique Devices in error state |10 |
-| Failed |Number of unique Devices in failed state |2 |
+| DateKey |Date Key when the Device Configuration Profile check-in was recorded in the data warehouse. |20160703 |
+| Pending |Number of unique Devices in pending state. |123 |
+| Succeeded |Number of unique Devices in success state. |12 |
+| Error |Number of unique Devices in error state. |10 |
+| Failed |Number of unique Devices in failed state. |2 |
 
 ## UserConfiguration
 
@@ -75,11 +75,11 @@ The **UserConfigurationProfileDeviceActivity** entity lists the number of users 
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| DateKey |Date Key when the Device Configuration Profile check-in was recorded in the data warehouse |20160703 |
-| Pending |Number of unique Users in pending state |123 |
-| Succeeded |Number of unique Users in success state |12 |
-| Error |Number of unique Users in error state |10 |
-| Failed |Number of unique Users in failed state |2 |
+| DateKey |Date Key when the Device Configuration Profile check-in was recorded in the data warehouse. |20160703 |
+| Pending |Number of unique Users in pending state. |123 |
+| Succeeded |Number of unique Users in success state. |12 |
+| Error |Number of unique Users in error state. |10 |
+| Failed |Number of unique Users in failed state. |2 |
 
 ## PolicyTypeActivity
 
@@ -87,10 +87,10 @@ The **PolicyTypeActivity** entity lists the cumulative number of devices in the 
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| DateKey |Date Key when the device Configuration profile check-in was recorded in the data warehouse |20160703 |
-| PolicyKey |Policy Key, can be joined with Policy to get the policyName |Windows 10 baseline |
-| PolicyTypeKey |Type of Policy Key,  can be joined with Policy Type to get the policy type name |Windows10Compliance Policy |
-| Pending |Number of unique devices in pending state |123 |
-| Succeeded |Number of unique devices in success state |12 |
-| Error |Number of unique devices in error state |10 |
-| Fail- |Number of unique devices in failed state |2 |
+| DateKey |Date Key when the device Configuration profile check-in was recorded in the data warehouse. |20160703 |
+| PolicyKey |Policy Key, can be joined with Policy to get the policyName. |Windows 10 baseline |
+| PolicyTypeKey |Type of Policy Key,  can be joined with Policy Type to get the policy type name. |Windows10 Compliance Policy |
+| Pending |Number of unique devices in pending state. |123 |
+| Succeeded |Number of unique devices in success state. |12 |
+| Error |Number of unique devices in error state. |10 |
+| Fail- |Number of unique devices in failed state. |2 |

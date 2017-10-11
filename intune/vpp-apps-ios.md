@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,7 +76,8 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 * Intune supports adding up to 256 VPP tokens.
 * Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store. 
 * A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
-* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device. Do not use the Apple ID used fro the Apple Deployment Program ID. Ensure that when you set up a device for a new Intune user, you configure it with that user's unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can be used on up to five devices.
+* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
+Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to five devices.
 
 >[!IMPORTANT]
 >After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
@@ -85,9 +86,16 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1.	On the **Intune** blade, choose **Mobile apps** > **iOS VPP Tokens** under **Setup**.
 2.  On the list of VPP tokens blade, click **Create**.
 4. On the **Create VPP token** blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
+	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
+	- **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
+	    > [!WARNING]  
+	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
+
+	- **Type of VPP account** - Choose from **Business** or **Education**.
 	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune updates all apps purchased for the specified token through the Intune service when the device checks-in. 
 detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 4. When you are done, click **Upload**.
@@ -105,7 +113,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 2.	On the list of apps blade, choose the app you want to assign, and then choose **Assignments**.
 3.	On the ***App name*** - **Assignments** blade, choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
 5.	For each group you selected, choose the following settings:
-	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end-user devices will automatically get the app installed).
+	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
 	- **License type** - Choose from **User licensing**, or **Device licensing**.
 6.	Once you are done, choose **Save**.
 
