@@ -85,4 +85,4 @@ If you do not use a password to sign in to your company resources, you might use
 
   ![After going through the authentication process, the Company Portal app signs in, noting its process with a loading bar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

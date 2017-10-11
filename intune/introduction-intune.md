@@ -43,7 +43,7 @@ Intune is a cloud-based service in the enterprise mobility management (EMM) spac
 * [Issue corporate-owned phones to your workforce](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
 * [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [Issue limited-use shared tables to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
+* [Issue limited-use shared tablets to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 
 ## How does Intune work?

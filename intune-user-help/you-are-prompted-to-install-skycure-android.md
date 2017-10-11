@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,17 +28,15 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Symantec Endpoint Protection Mobile on your Android device
+# Install Symantec Endpoint Protection Mobile on your Android device
 
-Before you can access your work, your company support needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats.
+Before you can access your work, your company needs you to install the Symantec Endpoint Protection (SEP) Mobile app, which helps to protect your device by finding potential security threats.
 
 If you have trouble with the installation, try the troubleshooting steps at the end of this topic.
 
-**What you need to do:**
+## What you need to do
 
 1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. You are taken to the SEP Mobile installation page in the Play Store. Install SEP Mobile, and then tap **ACCEPT** to let SEP Mobile access your device.
 
@@ -54,20 +52,16 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. SEP Mobile starts to check right away for security threats on your device.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
 
-  If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
+  * If no threats are found, all three threat types will appear green.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  If no threats are found, all three threat types will appear green.
-
-	The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+	* The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
-**If the installation doesn't work**
+## If the installation doesn't work
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SEP Mobile [manually from the Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

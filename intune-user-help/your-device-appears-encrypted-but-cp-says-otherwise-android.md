@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Certain Android devices require you to create a startup PIN to make sure that yo
 
 ### Downgrade your version of Android
 
-If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your IT admin to resolve this issue. You can get contact information for your IT admin at the [Company Portal website](http://portal.manage.microsoft.com) for contact information.
+If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com) for contact information.
 
 ## Specific manufacturer issues
 
@@ -61,12 +61,11 @@ Some Android devices on version 7.0+ encrypt data in ways that are inconsistent 
 If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent version of Android. You can install the updates for these devices by going to **Settings** > **Update**. 
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
-- [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
+- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### Known devices that currently cannot be updated to fix this issue
 
 You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
 
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)

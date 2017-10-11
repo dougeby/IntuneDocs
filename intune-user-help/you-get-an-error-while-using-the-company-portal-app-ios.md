@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 # You get an error while using the Company Portal app
 
-If you get an error while you’re using the Company Portal app on your iOS device, you can help your IT admin troubleshoot the problem by sending them information. You can send error information in different ways:
+If you get an error while you’re using the Company Portal app on your iOS device, you can help your company support troubleshoot the problem by sending them information. You can send error information in different ways:
 
 -   Tap **Report** on error alert messages.
 
@@ -36,4 +36,4 @@ If you get an error while you’re using the Company Portal app on your iOS devi
 
 -   Shake your device while you’re in the Company Portal app, then tap **Email** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

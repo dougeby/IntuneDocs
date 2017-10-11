@@ -109,15 +109,15 @@ The **EnrollmentTypes** entity indicates how a device was enrolled. The enrollme
 
 | enrollmentTypeID  | Name | Description |
 |---------|------------|--------|
-| 0 |Unknown | Unknown enrollment type. |
-| 1 |UserEnrollment | User initiated enrollment. |
-| 2 |DeviceEnrollment | Device enrollment with user-less profile. |
-| 3 |DeviceEnrollmentWithUDA | Device enrollment with UDA profile. |
-| 4 |AzureDomainJoined | User initiated device enrollment through Azure Active Directory (Azure AD). |
-| 5 |UserEnrollmentWithServiceAccount | User initiated enrollment through service account. |
-| 6 |DepDeviceEnrollment | DEP Device enrollment with user-less profile. |
-| 7 |DepDeviceEnrollmentWithUDA | DEP Device enrollment with UDA profile. |
-| 8 |AutoEnrollment | Combined DRS and MDM Enrollment for BYOD scenario. |
+| 0 |Unknown |Enrollment type was not collected |
+| 1 |UserEnrollment |User initiated enrollment |
+| 2 |DeviceEnrollment |Device enrollment with user-less profile |
+| 3 |DeviceEnrollmentWithUDA |Device enrollment with UDA profile. |
+| 4 |AzureDomainJoined |User initiated device enrollment through Azure Active Directory |
+| 5 |UserEnrollmentWithServiceAccount |User initiated enrollment through service account |
+| 6 |DepDeviceEnrollment |DEP Device enrollment with user-less profile |
+| 7 |DepDeviceEnrollmentWithUDA |DEP Device enrollment with UDA profile |
+| 8 |AutoEnrollment |Combined DRS and MDM Enrollment for BYOD scenario |
 
 ## OwnerTypes
 
@@ -358,27 +358,27 @@ The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory
 | CellularTechnology |Phone Carrier Network Type (CDMA/GSM). |
 | Imsi |IMSI number. |
 | JailBroken |True if the device is Jail Broken or Rooted. |
-| IsActivationLockEnabled |True Is Activation Lock is Enabled. |
-| DeviceType |Device Type. |
-| IsSupervised |Is Supervised |
-| DeviceDisplayNumberOfColors |Device display Number Of Colors. |
-| HorizontalResolution |Device horizontal screen resolution. |
-| VerticalResolution |Device vertical screen resolution. |
-| StorageFree |Free storage (in bytes). |
-| StorageTotal |Total storage (in bytes). |
-| ProgramFree |Free Program memory (in bytes). |
-| ProgramTotal |Total Program memory (in bytes). |
-| RemovableStorageFree |Free removable storage (in bytes). |
-| RemovableStorageTotal |Total removable storage (in bytes). |
-| DeviceMemoryDeviceCapacity |Device memory capacity. |
-| DeviceMemoryAvailableDeviceCapacity |Device memory available capacity. |
-| DeviceOSVersion |OS Version. |
-| DeviceOSPlatform |OS platform. |
-| DeviceOSLanguage |OS language. |
-| PasswordMaxAttemptsBeforeWipe |Maximum allowed password attempts allowed before device wipe. |
-| PasswordMinComplexChars |Minimum number of complex characters required in the password. |
-| PasswordMinLength |Minimum required length of password. |
-| PasswordHistory |Password - Minimum historic passwords unaccepted. |
+| IsActivationLockEnabled |True Is Activation Lock is Enabled |
+| DeviceType |Device Type |
+| IsSupervised |Is supervised |
+| DeviceDisplayNumberOfColors |Device display Number Of Colors |
+| HorizontalResolution |Device horizontal screen resolution |
+| VerticalResolution |Device vertical screen resolution |
+| StorageFree |Free storage (in bytes) |
+| StorageTotal |Total storage (in bytes) |
+| ProgramFree |Free Program memory (in bytes) |
+| ProgramTotal |Total Program memory (in bytes) |
+| RemovableStorageFree |Free removable storage (in bytes) |
+| RemovableStorageTotal |Total removable storage (in bytes) |
+| DeviceMemoryDeviceCapacity |Device memory capacity |
+| DeviceMemoryAvailableDeviceCapacity |Device memory available capacity |
+| DeviceOSVersion |OS Version |
+| DeviceOSPlatform |OS platform |
+| DeviceOSLanguage |OS language |
+| PasswordMaxAttemptsBeforeWipe |Maximum allowed password attempts allowed before device wipe |
+| PasswordMinComplexChars |Minimum number of complex characters required in the password |
+| PasswordMinLength |Minimum required length of password |
+| PasswordHistory |Password - Minimum historic passwords unaccepted |
 | PasswordEnabled |Password - Enabled? |
 | PasswordExpiration |Password - Expiration date. |
 | AllowRecoveryPassword |Allow password recovery. |
