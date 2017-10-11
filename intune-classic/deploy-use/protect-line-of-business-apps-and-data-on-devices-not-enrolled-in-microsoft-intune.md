@@ -4,8 +4,8 @@
 title: Protect LOB apps on devices that are not enrolled 
 description: This topic describes how you can prepare your custom line-of-business apps so you can apply mobile application management policies that can help prevent data loss.
 keywords:
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article

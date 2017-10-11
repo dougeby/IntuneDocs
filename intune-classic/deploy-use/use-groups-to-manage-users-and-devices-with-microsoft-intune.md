@@ -4,8 +4,8 @@
 title: Use groups to manage users and devices 
 description: Create and manage groups by using the Groups workspace.
 keywords:
-author: Mtillman
-ms.author: mtillman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

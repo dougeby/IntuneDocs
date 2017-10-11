@@ -4,8 +4,8 @@
 title: What's new archive 
 description: Archived What's New announcements for Microsoft Intune
 keywords:
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
 ms.date: 06/08/2017
 ms.topic: article
