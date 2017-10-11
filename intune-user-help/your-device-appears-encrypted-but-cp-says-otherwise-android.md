@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,10 @@ Certain Android devices require you to create a startup PIN to make sure that yo
 ### Downgrade your version of Android
 
 If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com) for contact information.
+
+### Encrypt the entire device
+
+Some devices will give you a choice between encrypting the entire device or just the used space. Choose the option to encrypt the entire device rather than "only used space." 
 
 ## Specific manufacturer issues
 
