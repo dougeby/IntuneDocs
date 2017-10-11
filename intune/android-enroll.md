@@ -2,13 +2,13 @@
 # required metadata
 
 title: Enroll Android devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll Android devices in Intune."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,15 +37,13 @@ Devices that run Samsung KNOX Standard, are supported for multi-user management 
 
 ## Prerequisite
 
-You must set the MDM authority to **Microsoft Intune** to prepare to manage mobile devices. See [Set the MDM authority](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management, so you may have already set this.
+You must set the MDM authority to **Microsoft Intune** to prepare to manage mobile devices. See [Set the MDM authority](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
 
 ## Set up Android enrollment
 
 By default, Intune allows enrollment of Android and Samsung Knox Standard devices.
 
-To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 To enable device management, your users must enroll their devices by downloading the Intune Company Portal app, which is available from Google Play, and then opening the app and following the prompts to enroll. Once Android devices are managed, you [assign compliance policies](compliance-policy-create-android.md), [manage apps](app-management.md), and more.
 
@@ -57,7 +55,6 @@ To enable management of the work profile on devices that [support Android for Wo
 
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
-
 2. **Configure Android for Work binding**<br>
     As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
@@ -100,7 +97,7 @@ You can turn off Android for Work enrollment and management. Clicking **Unbind**
 ### How to unbind an Android for Work account
 
 1. **Unbind Android for Work binding**<br>
-    AAs an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.  On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and click **Unbind**.
+    As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.  On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and click **Unbind**.
 
 2. **Agree to delete Android for Work binding**<br>
   Click **Yes** to delete the binding and unenroll all Android for Work devices from Intune.

@@ -16,7 +16,6 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: damionw
@@ -27,6 +26,9 @@ ms.custom: intune-classic
 ---
 
 # Help secure Windows PCs with Endpoint Protection for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you to secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats, keeps malware definitions up-to date, and automatically scans computers. Endpoint Protection also provides tools that help you to manage and monitor malware attacks.
 
 If you have not yet installed the Intune client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).

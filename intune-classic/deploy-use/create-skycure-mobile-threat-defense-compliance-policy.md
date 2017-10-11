@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Skycure Mobile Threat Defense compliance policy 
-description: Create Skycure Mobile Threat Defense compliance policy in the Intune classic console.
+description: Create Skycure Mobile Threat Defense compliance policy in the Intune classic portal.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac
@@ -44,7 +44,7 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
 ## To create Skycure compliance policy
 
-1.  Go to the [Intune classic console](https://manage.microsoft.com/) then enter your credentials.
+1.  Go to the [Intune classic portal](https://manage.microsoft.com/) then enter your credentials.
 
 2.  Choose **Policy** &gt; **Compliance Policies**. You can either use an existing compliance policy or create a new one.
 

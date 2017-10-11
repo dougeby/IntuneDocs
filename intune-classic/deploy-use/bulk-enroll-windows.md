@@ -11,10 +11,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: damionw
@@ -39,7 +39,7 @@ Bulk enrollment for Window devices requires the following:
 
 ## Create a provisioning package
 
-1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Windows Store.
+1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store.
 ![Screenshot of the Windows Configuration Designer app Store screenshots and description](../media/bulk-enroll-store.png)
 
 2. Open the **Windows Configuration Designer** app and select **Provision desktop devices**.

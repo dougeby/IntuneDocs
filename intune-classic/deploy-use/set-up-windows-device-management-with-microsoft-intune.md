@@ -12,10 +12,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: damionw
@@ -37,8 +37,8 @@ Two factors determine how you can simplify Windows device enrollment:
 
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-automatic-enrollment)|
+|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-automatic-enrollment)|[User enrollment](#enable-windows-enrollment-without-automatic-enrollment)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 

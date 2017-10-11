@@ -4,19 +4,19 @@
 title: Windows 10 policy settings 
 description: Use the policy settings listed in this topic to help you configure built-in and custom settings for enrolled Windows 10 desktop and Windows 10 Mobile devices.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac
@@ -47,9 +47,9 @@ Enter a name and an optional description for this policy to help you identify it
 
 ### OMA-URI settings
 
-For each OMA-URI setting you want to add, enter the following information. Use the [Windows 10 URI settings reference](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in this topic to learn about the settings you can use:
+For each OMA-URI setting you want to add, enter the following information:
 
-- **Setting name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
+- **Setting name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings. You can find more information about URI settings at [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Setting description**: Optionally, enter a description for the setting.
 - **Data type**: Choose from the following data types:
 	- **String**

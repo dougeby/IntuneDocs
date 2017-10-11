@@ -16,7 +16,6 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: owenyen
@@ -27,6 +26,9 @@ ms.custom: intune-classic
 ---
 
 # Request and provide remote assistance for Windows PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.
 

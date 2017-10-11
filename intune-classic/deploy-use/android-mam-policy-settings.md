@@ -4,8 +4,8 @@
 title: Android MAM policy settings 
 description: This topic describes the mobile app management policy settings for Android devices.
 keywords:
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2016
 ms.topic: article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: andcerat

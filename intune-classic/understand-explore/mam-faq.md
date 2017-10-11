@@ -6,17 +6,17 @@ description: This article provides answers to some frequently asked questions on
 keywords:
 author: oydang
 ms.author: oydang
-manager: mtillman
+manager: angrobe
 ms.date: 01/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: oydang

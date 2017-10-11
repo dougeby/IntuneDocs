@@ -2,13 +2,13 @@
 # required metadata
 
 title: What is app management 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 06/04/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,10 +33,10 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-As an IT admin, you'll likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
+As an IT admin, you are responsible for making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
 - There are a wide range of device platforms and app types.
-- You might need to manage apps on company devices as well as users own devices.
-- You need to do all of this, while ensuring your network, and your data remain secure.
+- You might need to manage apps on company devices and users own devices.
+- You must ensure your network, and your data remain secure.
 
 Additionally, you might want to assign, and manage apps on devices that are not enrolled with Intune.
 
@@ -62,13 +62,13 @@ Intune offers a range of capabilities to help you get the apps you need, on the 
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
 
-<sup>1</sup> Consider using [Windows Information Protection]windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
+<sup>1</sup> Consider using [Windows Information Protection](windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
 
 <sup>2</sup>Applies to devices managed by Intune only.
 
 ## How to get started
 
-You'll find most things app-related in the **Mobile Apps** workload which you can access as follows:
+You can find most things app-related in the **Mobile Apps** workload that you can access as follows:
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -77,7 +77,7 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 	![The Mobile Apps workload](./media/apps-workload.png)
 
 ### Manage
-- **Apps** - This is where you'll add, assign, and monitor most of your apps.
+- **Apps** - This node is where you add, assign, and monitor most of your apps.
 	- [Add apps](apps-add.md)
 	- [Assign apps](apps-deploy.md)
 	- [Monitor apps](apps-monitor.md)
@@ -88,12 +88,12 @@ You'll find most things app-related in the **Mobile Apps** workload which you ca
 	- [App protection policies](app-protection-policies.md)
 - **App selective wipe** - Remove only corporate data from a users device you select.
 	- [App selective wipe](apps-selective-wipe.md)
-- **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.
+- **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.
 	- [iOS app provisioning profiles](app-provisioning-profile-ios.md)
 
 ### Monitor
 - **Licensed Apps** - View, assign, and monitor volume-purchased apps from the app stores.
-	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
+	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.
 - **App Install Status** - Shows the status of an app assignment you created.
 - **App protection status** - Shows the status of an app protection policy for a user you select.
@@ -103,7 +103,7 @@ For details, see [Monitor apps](apps-monitor.md)
 ### Setup
 <!--- **iOS VPP Tokens**
 	- [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store for Business** - Setup integration to the Windows Store for Business. After you do this, you can synchronize purchased applications to Intune, assign them, and track your license usage.
-	- [Windows Store for Business volume-purchased apps](windows-store-for-business.md)
+- **Microsoft Store for Business** - Set up integration to the Microsoft Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.
+	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Company Portal branding** - Customize the Company Portal to give it your company branding.
 	- [Company portal configuration](company-portal-app.md)

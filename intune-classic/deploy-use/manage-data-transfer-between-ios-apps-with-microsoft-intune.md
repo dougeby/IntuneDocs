@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -84,6 +84,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 | VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
 | MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **or** $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
+| ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
 
 ### Example 2: End-user experience
 

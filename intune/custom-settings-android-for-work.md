@@ -2,11 +2,11 @@
 # required metadata
 
 title: Intune custom profile settings for Android for Work
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to create Intune custom profile settings for Android for Work devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 04/12/2017
 ms.topic: article
@@ -38,7 +38,7 @@ This capability is intended to allow you to assign Android settings that are not
 1. Use the instructions in [How to configure custom device settings](custom-settings-configure.md) to get started.
 2. On the **Custom OMA-URI Settings** blade, choose **Add** to add a new setting.
 3. On the **Add Row** blade, configure the following:
-	- **Name** - Enter a unique name for the Android for work custom settings to help you identify it in the Intune portal.
+	- **Name** - Enter a unique name for the Android for work custom settings to help you identify it in the Azure portal.
 	- **Description** - Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.
 	- **OMA-URI** - Enter the OMA-URI you want to supply a setting for.
 	- **Data type** - Select the data type in which you will specify this OMA-URI setting. Choose from **String**, **String (XML file)**, **Date and time**, **Integer**, **Floating point**, **Boolean**, or **Base64 (file)**.

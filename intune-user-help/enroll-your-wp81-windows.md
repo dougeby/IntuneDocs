@@ -29,16 +29,16 @@ ms.custom: intune-enduser
 
 # Enroll your Windows Phone 8.1 device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
 
--   [If your company lets you use the Company Portal from the Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [If your company lets you use the Company Portal from the Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [If you are not allowed to access the Windows Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [If you are not allowed to access the Microsoft Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## If your company lets you use the Company Portal from the Windows Store
+## If your company lets you use the Company Portal from the Microsoft Store
 Install the Company Portal app on your device:
 
 1.  Tap **Start** &gt; **Store**.
@@ -77,7 +77,7 @@ Enroll your device:
 
     ![Account added screen](./media/WP81-enroll-4-account-added.png)
 
-## If you are not allowed to access the Windows Store from your Windows Phone or if you do not have a Microsoft Account
+## If you are not allowed to access the Microsoft Store from your Windows Phone or if you do not have a Microsoft Account
 
 1.  Tap  **Settings** &gt; **workplace**.
 
@@ -87,6 +87,6 @@ Enroll your device:
 
 4.  If prompted to install the company app or Hub, make sure the relevant box is checked, and then tap **done**.
 
-If your IT admin has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
+If your company support has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

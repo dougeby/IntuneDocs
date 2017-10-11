@@ -2,13 +2,13 @@
 # required metadata
 
 title: Remotely lock managed devices with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to remotely lock devices you manage."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,10 +34,22 @@ ms.custom: intune-azure
 
 The **Remote lock** device locks the selected device. The device owner must use their passcode to unlock it. You can only remotely lock a device that has a PIN or password set.
 
+## Supported platforms
+
+- Windows - Not supported
+- Windows Phone - Supported on Windows Phone 8.1 and later
+- iOS - Supported
+- macOS - Not supported
+- Android - Supported
+
+## How to remote lock a device
+
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices and groups** blade, choose **All devices**.
 5. From the list of devices you manage, choose a device, and then choose the **Remote lock** device remote action.
+
+## Next steps
 
 To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.

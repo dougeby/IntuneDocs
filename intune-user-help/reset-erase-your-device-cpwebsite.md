@@ -4,14 +4,17 @@
 title: Reset your device from the Company Portal website | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641searchScope: - User help
+ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -28,7 +31,7 @@ ms.custom: intune-enduser
 
 # Reset your device from the Company Portal website
 
-If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](http://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. You can use this website to do most of the same tasks that you can do when using your Company Portal app.
+If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](https://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. You can use this website to do most of the same tasks that you can do when using your Company Portal app.
 
 If you reset your device, it will no longer be listed in the Company Portal, and the device will be reset to its factory default settings.
 
@@ -37,7 +40,7 @@ If you reset your device, it will no longer be listed in the Company Portal, and
 
 To reset your device:
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
+1.	On the [Company Portal website](https://portal.manage.microsoft.com), tap the __menu__ button, then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device you want to rename.
 
@@ -51,4 +54,4 @@ To reset your device:
 
 Your device has now been reset.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

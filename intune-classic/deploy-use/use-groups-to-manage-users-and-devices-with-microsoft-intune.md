@@ -4,8 +4,8 @@
 title: Use groups to manage users and devices 
 description: Create and manage groups by using the Groups workspace.
 keywords:
-author: Mtillman
-ms.author: mtillman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: lpatha
@@ -37,7 +37,7 @@ This topic describes how to create groups in Intune. It also provides informatio
 >
 >![Screenshot of the link to Azure group management](../media/groups-link-azure.png) 
 >
->If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
+>If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups](#create-groups) in this topic.
 
 This topic describes how to create Intune groups in the Intune administration console.
 

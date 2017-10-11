@@ -26,6 +26,6 @@ ms.custom: intune-enduser
 ---
 # Your Android device's operating system version isn't yet supported
 
-With the rapid pace of development of technology, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test. It's possible that being on the newest version of Android may not work with some of your company's other tools.
+With the rapid pace of development of technology, sometimes your device could actually be ahead of what your company support has had the opportunity to test. It's possible that being on the newest version of Android may not work with some of your company's other tools.
 
-You will need to contact your IT admin to resolve this issue. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+You will need to contact your company support to resolve this issue. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

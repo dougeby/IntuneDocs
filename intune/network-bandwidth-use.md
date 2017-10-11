@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use 
+title: Intune network bandwidth use
 description: intune network bandwidth usage
 keywords:
 author: nathbarn
@@ -36,7 +36,7 @@ This guidance helps Intune admins understand the network requirements for the In
 This table lists the approximate size and frequency of common content that travels across the network for each client.
 
 > [!NOTE]
-> To ensure that computers and mobile devices receive the necessary updates and content from the Intune service, they must be periodically connected to the Internet. The time taken to receive updates or content will vary, but as a guideline, they should remain continuously connected to the Internet for at least 1 hour each day.
+> To ensure devices receive the updates and content from Intune, they must periodically connect to the Internet. The time required to receive updates or content can vary, but they should remain continuously connected to the Internet for at least one hour each day.
 
 |Content type|Approximate size|Frequency and details|
 |----------------|--------------------|-------------------------|
@@ -57,9 +57,9 @@ This table lists the approximate size and frequency of common content that trave
 You can use one or more of the following methods to reduce network bandwidth use for Intune clients.
 
 ### Use a proxy server to cache content requests
-You can use a proxy server that can cache content to reduce duplicate downloads and reduce the use of network bandwidth by clients that request content from the Internet.
+A proxy server can cache content to reduce duplicate downloads and reduce network bandwidth from content from the Internet.
 
-A caching proxy server receives requests for content from client computers on your network, retrieves that content from the Internet, and can then cache both HTTP responses and binary downloads. The server uses the cached information to answer subsequent requests from Intune client computers.
+A caching proxy server that receives content requests from clients can retrieve that content and cache both web responses and downloads. The server uses cached data to answer subsequent requests from clients.
 
 The following are typical settings to use for a proxy server that caches content for Intune clients.
 
@@ -76,7 +76,7 @@ Intune supports using Background Intelligent Transfer Service (BITS) on a Window
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
 ### Use BranchCache on computers
-Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems that are supported as clients also support BranchCache:
+Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems support BranchCache:
 
 - Windows 7
 - Windows 8.0
@@ -85,22 +85,26 @@ Intune clients can use BranchCache to reduce wide area network (WAN) traffic. Th
 
 To use BranchCache, the client computer must have BranchCache enabled, and then be configured for **distributed cache mode**.
 
-By default, BranchCache and distributed cache mode are enabled on a computer when the Intune client is installed. However, if the client already has Group Policy that disables BranchCache, Intune does not override that policy and BranchCache will remains disabled on that computer.
+By default, BranchCache and distributed cache mode are enabled on computers when the Intune client is installed. However, if Group Policy has disabled BranchCache, Intune does not override that policy and BranchCache remains disabled.
 
-If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and Intune Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
+If you use BranchCache, work with other administrators in your organization to manage Group Policy and Intune Firewall policy. Ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## Network communication requirements
 
-You must enable network communications between the devices you manage and use to manage your Intune subscription, and the websites required for cloud-based services.
+Enable network communications between the devices you manage and the websites required for cloud-based services.
 
 Intune uses no on-premises infrastructure such as servers running Intune software, but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
-To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune. To manage computers that are behind a proxy server, be aware that:
+To manage computers behind firewalls and proxy servers, you must enable communication for Intune.
 
 -   The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
--   Intune supports unauthenticated proxy servers
+-   Intune requires unauthenticated proxy server access to manage.microsoft.com for some tasks such as downloading software and updates
 
 You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Managed devices require configurations that let **All Users** access services through firewalls.
 
@@ -143,3 +147,30 @@ The following tables list the ports and services that the Intune client accesses
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|
+
+### Apple device network information
+| Hostname  | URL (IP address/subnet) | Protocol | Port | Device |
+| --- | --- | --- | --- | --- |
+|  Admin Console  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS and macOS |
+| Admin Console  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS and macOS |
+| Admin Console  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS and macOS  |
+| PI Server  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | For Apple iOS and macOS cloud messaging. |
+| Device Services  | gateway.push.apple.com | TCP | 2195 | Apple  |
+| Device Services  | feedback.push.apple.com | TCP | 2196 | Apple  |
+| Device Services  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
+| Devices (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 and 443 | Apple only. &#39;#&#39; is a random number from 0 to 200. |
+| Devices (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 or 443 | Apple only |

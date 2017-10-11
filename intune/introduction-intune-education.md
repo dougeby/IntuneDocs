@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Intune for Education? 
+title: What is Intune for Education?
 description: Learn how Intune for Education differs from the full Intune management experience.
 keywords: what is Intune
 author: barlanmsft
@@ -36,7 +36,7 @@ Intune for Education lets you manage Windows 10 devices using the full MDM capab
 
 Intune for Education can be used by itself, or in harmony with the [full device management experience available in Intune](introduction-intune.md). It can also be used alongside the rest of the tools available in [Microsoft Education](https://microsoft.com/education), which makes it easy for you to use Intune for Education with other useful educational tools from Microsoft.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 With both Intune and Intune for Education, you can:
 * Manage the mobile devices your workforce uses to access data.

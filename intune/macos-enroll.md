@@ -2,13 +2,13 @@
 # required metadata
 
 title: Enroll macOS devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll macOS devices in Intune."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](custom settings-macos.md). More capabilities are coming soon.
+Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](custom-settings-macos.md). More capabilities are coming soon.
 
 ## Prerequisites
 
@@ -48,9 +48,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 
 By default, Intune already allows enrollment of macOS devices.
 
-To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 ## Tell your users how to enroll their devices to access company resources
 

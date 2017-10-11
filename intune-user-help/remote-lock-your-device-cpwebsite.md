@@ -31,7 +31,7 @@ Accidents happen, and sometimes devices can go missing. If your device has been 
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](http://portal.manage.microsoft.com). Remote Lock works for:
+To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](https://portal.manage.microsoft.com). Remote Lock works for:
 
 * Android
 * iOS
@@ -41,7 +41,7 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 
 ## To use Remote Lock to lock your device
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
+1.	On the [Company Portal website](https://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
 
   ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
 
@@ -64,8 +64,8 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 	* The tile that shows the device name on the **My Devices** section of the page.
 
 > [!Note]
-> If you see a “Remote Lock failed” notification, wait a few minutes, and try to lock your device again. After you begin to retry, the status will change back to “Remote lock pending.” If the retry doesn't work, you'll need to reach out to your IT admin.
+> If you see a “Remote Lock failed” notification, wait a few minutes, and try to lock your device again. After you begin to retry, the status will change back to “Remote lock pending.” If the retry doesn't work, you'll need to reach out to your company support.
 
 If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

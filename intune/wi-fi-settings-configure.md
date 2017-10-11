@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Intune Wi-Fi settingstitleSuffix: "Intune on Azure"
+title: How to configure Intune Wi-Fi settingstitleSuffix: "Azure portal"
 description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
 keywords:
 author: lleonard-msft
@@ -41,6 +41,7 @@ For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set
 Wi-Fi profiles support the following device platforms:
 
 - Android 4 and later
+- Android for Work
 - iOS 8.0 and later
 - macOS (Mac OS X 10.9 and later)
 
@@ -58,6 +59,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the Wi-Fi profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply Wi-Fi settings. Currently, you can choose one of the following platforms for Wi-Fi settings:
 	- **Android**
+	- **Android for Work**
 	- **iOS**
 	- **macOS**
 	- **Windows 8.1 and later (import a profile)**
@@ -65,7 +67,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	>[!TIP]
 	>Use **Wi-fi basic** to supply basic features like the network name, and the SSID. **Wi-Fi enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. **Wi-Fi import** (for Windows 8.1 and Windows 10) lets you import Wi-Fi settings as an XML file that you previusly exported from a different device.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
-	- [Android settings](wi-fi-settings-android.md)
+	- [Android and Android for Work settings](wi-fi-settings-android.md)
 	- [iOS settings](wi-fi-settings-ios.md)
 	- [macOS settings](wi-fi-settings-macos.md)
 	- [Windows Phone 8.1 settings](wi-fi-settings-import-windows-8-1.md)
@@ -73,4 +75,3 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
-

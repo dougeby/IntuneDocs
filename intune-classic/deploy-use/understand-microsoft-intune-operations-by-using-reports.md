@@ -5,8 +5,8 @@ title: Understand operations by using reports
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
@@ -14,10 +14,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: pbala

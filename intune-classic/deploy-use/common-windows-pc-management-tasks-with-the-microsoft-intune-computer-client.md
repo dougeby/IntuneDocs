@@ -16,7 +16,6 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: owenyen
@@ -27,6 +26,9 @@ ms.custom: intune-classic
 ---
 
 # Common Windows PC management tasks with the Intune software client
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic lists tasks you can do to manage desktops that you manage as PCs by installing the Intune software client. This topic does not cover managing PCs as mobile devices. If you have not yet installed the client on your PCs, see [Install the Intune software client](install-the-windows-pc-client-with-microsoft-intune.md).
 
 

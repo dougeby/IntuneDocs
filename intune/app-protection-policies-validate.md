@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Validate your app protection policiestitleSuffix: "Intune on Azure"
+title: Validate your app protection policiestitleSuffix: "Azure portal"
 description: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angerobe
 ms.date: 01/23/2017
 ms.topic: article

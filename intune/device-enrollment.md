@@ -2,13 +2,13 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,7 @@ If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you c
 ## Overview of device enrollment methods
 
 The following table offers an overview of Intune enrollment methods with their capabilities and requirements described below.
+
 **Legend**
 
 - **Reset required** - Device are factory reset during enrollment.
@@ -65,7 +66,7 @@ The following table offers an overview of Intune enrollment methods with their c
 |**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Bulk enroll** |No |Yes |No | [More information](./windows-bulk-enroll.md) |
+|**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
 
 **Android enrollment methods**
 
@@ -77,7 +78,7 @@ The following table offers an overview of Intune enrollment methods with their c
 
 
 ## BYOD
-"Bring your own device" users install and run the Company Portal app to enroll their devices. This lets users access company resources like email.
+"Bring your own device" users install and run the Company Portal app to enroll their devices. This program lets users access company resources like email.
 
 ## Corporate-owned devices
 The following are corporate-owned devices (COD) enrollment scenarios. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
@@ -86,18 +87,59 @@ The following are corporate-owned devices (COD) enrollment scenarios. iOS device
 Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](./device-enrollment-manager-enroll.md).
 
 ### DEP
-AApple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables the following functionality:
+Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports iOS supervised mode, which enables a device to be configured with the following functionality:
 
-  -	Locked enrollment
-  -	Kiosk mode and other advanced configurations and restrictions
+- App Lock (Single App Mode) 
+- Global HTTP Proxy 
+- Activation Lock Bypass 
+- Autonomous Single App Mode 
+- Web Content Filter 
+- Set background and lock screen 
+- Silent App Push 
+- Always-On VPN 
+- Allow managed app installation exclusively 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- Host pairing 
+- Cloud Sync 
+- Spotlight search 
+- Handoff 
+- Erase device 
+- Restrictions UI 
+- Installation of configuration profiles by UI 
+- News 
+- Keyboard shortcuts 
+- Passcode modifications 
+- Device name changes 
+- Wallpaper changes 
+- Automatic app downloads 
+- Changes to enterprise app trust 
+- Apple Music 
+- Mail Drop 
+- Pair with Apple Watch 
+
+> [!NOTE]
+> Apple confirmed that certain settings will move to supervised-only in 2018. We recommend taking this into consideration when using these settings instead of waiting for Apple to migrate them to supervised-only:
+> - App installation
+> - App removal
+> - FaceTime
+> - Safari
+> - iTunes
+> - Explicit content
+> - iCloud documents and data
+> - Multiplayer gaming
+> - Add Game Center friends
 
 Learn more about iOS DEP enrollment:
 
-- [Choose how to enroll iOS devices](enrollment-method-choose-ios.md)
+- [Choose how to enroll iOS devices](ios-enroll.md)
 - [Enroll iOS devices using Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 
 ### USB-SA
-IT admins use Apple Configurator, via USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS Supervised** mode, which in turn enables the following features:
+IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
   -	Locked enrollment
   -	Kiosk mode and other advanced configurations and restrictions
 
@@ -115,7 +157,7 @@ To learn more about iOS enrollment, see:
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-direct-enroll-ios.md)
 
 ## Mobile device management with Exchange ActiveSync and Intune
-Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
+Mobile devices that aren't enrolled, but that connect to Exchange ActiveSync (EAS), can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
 
 ## Mobile device cleanup after MDM certificate expiration
 

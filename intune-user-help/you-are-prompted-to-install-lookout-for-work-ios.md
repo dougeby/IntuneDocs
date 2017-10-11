@@ -2,16 +2,21 @@
 # required metadata
 
 title: You need to install Lookout for Work on your iOS device | Microsoft Docs
-description:
+description: Learn how to install Lookout for Work for iOS.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+
+ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6csearchScope: - User help
+ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -25,11 +30,13 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Lookout for Work on your iOS device
+# Install Lookout for Work on your iOS device
 
-Before you can access your work, your IT administrator needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
 
-**What you need to do:**
+Before you can access your work, your company needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
+
+
+## What you need to do
 
 1.	If you see the following prompt, tap **Install** to allow Lookout for Work to be installed on your device.
 
@@ -45,14 +52,17 @@ Before you can access your work, your IT administrator needs you to install the 
 
 4. At the prompt asking you to allow Lookout for Work to send you notifications, tap **Allow**.
 
-  ![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
+     ![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
 
-Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
+   * Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
 
-  ![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
+     ![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
 
-If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
+   * If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
-**If the installation doesn't work**
+## If the installation doesn't work
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+

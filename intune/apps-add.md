@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to add apps to Microsoft Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,7 +70,7 @@ Requirements for cloud storage space are as follows:
 
 ## How to create and edit categories for apps
 
-App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
+App categories can be used to help you sort apps to make them easier for users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure:
 
 1. Sign into the Azure portal.
@@ -84,36 +84,11 @@ When you add an app to Intune, you are given the option to select the category y
 
 ## Apps added automatically by Intune
 
-The following apps, published by Microsoft, are built-into Intune, and ready for you to assign:
+Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, we have removed this list, and you will no longer see built-in apps.
+However, if you have already assigned any built-in apps, these will still be visible in the list of apps. You can continue to assign these apps as required.
+In a later release, we plan to add an easier method to select and assign built-in apps from the Azure portal.
 
-|||
-|-|-|
-|Name|Platform|App type|
-|Azure Information Protection|Android|Managed Android store app|
-|Dynamics CRM for Phones|Android|Managed Android store app|
-|Dynamics CRM for Tablets|Android|Managed Android store app|
-|Excel|iOS|Managed iOS store app|
-|Excel|Android|Managed Android store app|
-|Managed Browser|Android|Managed Android store app|
-|Managed Browser|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Phones|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Tablets|iOS|Managed iOS store app|
-|Microsoft Power BI|iOS|Managed iOS store app|
-|Microsoft Power BI|Android|Managed Android store app|
-|Microsoft SharePoint|iOS|Managed iOS store app|
-|Microsoft SharePoint|Android|Managed Android store app|
-|Microsoft Teams|Android|Managed Android store app|
-|Microsoft Teams|iOS|Managed iOS store app|
-|OneDrive|iOS|Managed iOS store app|
-|OneDrive|Android|Managed Android store app|
-|OneNote|iOS|Managed iOS store app|
-|Outlook|Android|Managed Android store app|
-|Outlook|iOS|Managed iOS store app|
-|Outlook Groups|Android|Managed Android store app|
-|Outlook Groups|iOS|Managed iOS store app|
-|PowerPoint|iOS|Managed iOS store app|
-
-## Next Steps
+## Next steps
 
 Choose one of the following topics to find out how to add apps for each platform to Intune:
 
@@ -126,3 +101,5 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
+- [Office 365 apps for Windows 10](apps-add-office365.md)
+

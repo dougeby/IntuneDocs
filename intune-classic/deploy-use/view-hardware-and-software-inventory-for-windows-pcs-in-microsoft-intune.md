@@ -16,7 +16,6 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: owenyen
@@ -27,6 +26,8 @@ ms.custom: intune-classic
 ---
 
 # View hardware and software inventory for Windows PCs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune collects detailed information about the hardware and software of desktops that you manage as PCs by using the Intune software client. Use the information in the following procedures to learn how to create:
 
