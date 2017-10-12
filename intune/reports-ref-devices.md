@@ -133,10 +133,25 @@ The **EnrollmentTypes** entity indicates whether a device is corporate, personal
 
 The **MdmStatuses** entity indicates compliance state of the device.
 
-| Property  | Description | Example |
+| Property  | Description |
+|---------|------------|
+| MdmStatusID |MdmStatus Identifier |Unique identifier of the compliance state |
+| MdmStatusKey |Unique identifier of compliance state in the data warehouse - surrogate key | 
+| ComplianceStatus |Compliance state of the device, Should have one of the values from the table below | 
+
+
+## Example
+
+| MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus Identifier |0 - Unknown 1 - Compliant 2 - Not Compliant |
-| MdmStatusKey |Unique identifier of compliance state in the data warehouse - surrogate key | |
+| 0 |Unknown |Device's compliance state is unknown. |
+| 1 |Compliant |The device is compliant. |
+| 2 |Noncompliant |The device is non-compliant. |
+| 3 |Conflict |The device's compliance resulted in s conflict. |
+| 4 |Error |There was error in readign the device's compliance state. |
+
+
+
 
 ## ManagementStates
 
