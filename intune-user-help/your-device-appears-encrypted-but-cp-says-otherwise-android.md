@@ -51,11 +51,10 @@ If your device offers you the option to downgrade to Android 6.0+, then do so. T
 
 Some devices will give you a choice between encrypting the entire device or just the used space. Choose the option to encrypt the entire device rather than "only used space." If you have already encrypted only the used space:
 
-1. Unenroll the device
-2. Remove it from the Company Portal
-3. Decrypt the used space
-4. Encrypt the entire device
-5. Re-enroll the device
+1. [Remove this device from the Company Portal](unenroll-your-device-from-intune-android.md)
+2. Decrypt the used space
+3. Encrypt the entire device
+4. Re-enroll the device
 
 ## Specific manufacturer issues
 
