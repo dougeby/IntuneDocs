@@ -89,6 +89,12 @@ An administrator will be able to define the minimum Android security patch that 
 > [!Note]  
 > This feature only restricts security patches released by Google on Android 6.0+ devices.
 
+### New device restriction settings for Windows 10      <!-- 1308850 -->
+-    Messaging (mobile only) - disable testing or MMS messages
+-    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
+-    Display - settings to turn on or off GDI Scaling for legacy apps
+
+
 ### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
 You will be able to restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
 
