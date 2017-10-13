@@ -157,7 +157,7 @@ With your Per-App VPN set-up and associated with your app, verify the connection
  - Make sure you’re running iOS 7 or later.
  - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the Per-App VPN experience.  
  - Makes sure you have the supported third-party VPN app installed. The following VPN apps are supported:
-    - Juniper
+    - Pulse Secure
     - Checkpoint
     - F5
     - SonicWall
