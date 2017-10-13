@@ -73,7 +73,7 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 * Before you start to use Apple VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune only synchronizes data from the Apple VPP service that Intune created.
 * Intune supports adding up to 256 VPP tokens.
 * Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store.
-* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device. Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to 5 devices.
+* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device. Ensure that when you set up a device for a new Intune user, you configure it with that user's unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can be used on up to five devices.
 * A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 * When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
 Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to five devices.
@@ -104,7 +104,7 @@ The token is displayed in the list of tokens blade.
 You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
 
 > [!NOTE]
-> Microsoft Intune only syncs information of Apps, which are publicly available through the iTunes Store. **Custom B2B Apps for iOS** are not yet supported. If your scenario targets such apps, the app information is not synchronized.
+> Microsoft Intune only syncs information of apps, which are publicly available through the iTunes Store. **Custom B2B Apps for iOS** are not yet supported. If your scenario targets such apps, the app information is not synchronized.
 
 ## To assign a volume-purchased app
 
