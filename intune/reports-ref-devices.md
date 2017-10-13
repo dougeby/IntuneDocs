@@ -73,7 +73,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 
 ## ClientRegistrationStateTypes
 
-The **ClientRegistrationStateTypes** entity represents the device type referenced by other data warehouse tables.
+The **ClientRegistrationStateTypes** entity represents the registration type referenced by other data warehouse tables.
 
 | Property  | Description |
 |---------|------------|
