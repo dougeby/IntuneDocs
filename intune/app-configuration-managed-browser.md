@@ -133,6 +133,7 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 - These bookmarks cannot be deleted or modified by users
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
+- If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
