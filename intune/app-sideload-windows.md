@@ -203,8 +203,8 @@ Here’s how you sign and deploy the app in this way:
 
 |Parameter | Description|
 | ------------- | ------------- |
-|InputWin10AppxBundle |The path to where the source appxbundle file is located |
-|OutputWin10AppxBundle |The output path for the signed appxbundle file. 
+|InputWin10AppxBundle |The path to where the source appxbundle file is located. |
+|OutputWin10AppxBundle |The output path for the signed appxbundle file. |
 |Win81Appx | The path to where the Windows 8.1 or Windows Phone 8.1 Company Portal (.APPX) file is located.|
 |PfxFilePath |The path to Symantec Enterprise Mobile Code Signing Certificate (.PFX) file. |
 |PfxPassword| The password of the Symantec Enterprise Mobile Code Signing Certificate. |
