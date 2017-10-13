@@ -340,6 +340,9 @@ End users with Android devices will be able to tap the non-compliance reason in 
 ### Redirecting macOS users to our new Company Portal app <!--1380728-->   
 When an end user logs into the Company Portal website to enroll their macOS device, they will be directed to download the new Company Portal app for macOS to complete the process. This occurs for macOS devices using OS X El Capitan 10.11 or above. 
 
+### Certificate-based authentication support on the Company Portal for iOS <!--1029830-->
+We have added support for certificate-based authentication (CBA) in the Company Portal app for iOS. Users with CBA enter their username, then tap the “Sign in with a certificate” link. CBA is already supported on the Company Portal apps for Android and Windows. You can learn more on the [sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) page.
+
 <!-- the following are present prior to 1710 -->
 
 ### Search improvements to the Company Portal website <!--1331697-->  
