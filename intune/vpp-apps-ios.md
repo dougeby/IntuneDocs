@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/15/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies of an app helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
+The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies of an app helps you reduce the administrative overhead of tracking multiple copies of purchased apps.
 
 Microsoft Intune helps you manage apps that you purchased through this program by:
 
@@ -46,14 +46,12 @@ There are two methods you can use to assign volume-purchased apps:
 When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it.
 When you assign volume-purchased apps to a device, the end user of the device does not have to supply an Apple ID to access the store. 
 
-
-
 ### User licensing
 
-When you assign an app to users, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
-When you assign a volume-purchased app to users, each end user must have a valid, and unique Apple ID in order to access the app store.
+When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
+When you assign a volume-purchased app to users, each end user must have a valid and unique Apple ID in order to access the app store.
 
-Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program store with Intune. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
+Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program (VPP) store with Intune. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
 
 ## Manage volume-purchased apps for iOS devices
 
@@ -68,13 +66,14 @@ In addition, third-party developers can also privately distribute apps to author
 ## Before you start
 Before you start, you need to get a VPP token from Apple and upload it to your Intune account. Additionally, you should understand the following criteria:
 
-* You can associate multiple volume-purchase program tokens with your Intune account.
+* You can associate multiple VPP tokens with your Intune account.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
-* Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune only synchronizes data from the Apple VPP service that Intune created.
+* Before you start to use Apple VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune only synchronizes data from the Apple VPP service that Intune created.
 * Intune supports adding up to 256 VPP tokens.
-* Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store. 
+* Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store.
+* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device. Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to 5 devices.
 * A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 * When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
 Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to five devices.
@@ -121,13 +120,29 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 >[!NOTE]
 >The list of apps displayed is associated with a token. If you have an app that is associated with multiple VPP tokens, you see the same app being displayed multiple times; once for each token.
 
+## End-User Prompts for VPP
+
+The end-user will receive prompts for VPP app installation in a number of scenarios. The following table explains each condition:
+
+| # | Scenario                                | Invite to Apple VPP program                              | App install prompt | Prompt for Apple ID |
+|---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
+| 1 | BYOD – user licensed                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – user licensed (not supervised device)     | Y                                                                                               | Y                                           | Y                                 |
+| 3 | Corp – user licensed (supervised device)         | Y                                                                                               | N                                           | Y                                 |
+| 4 | BYOD – device licensed                           | N                                                                                               | Y                                           | N                                 |
+| 5 | CORP – device licensed (not supervised device)                           | N                                                                                               | Y                                           | N                                 |
+| 6 | CORP – device licensed (supervised device)                           | N                                                                                               | N                                           | N                                 |
+| 7 | Kiosk mode (supervised device) – device licensed | N                                                                                               | N                                           | N                                 |
+| 8 | Kiosk mode (supervised device) – user licensed   | --- | ---                                          | ---                                |
+
+> [!Note]  
+> It is not recommended to assign VPP apps to Kiosk-mode devices using the VPP user licensing.
+
 ## Further information
 
 To reclaim a license, you must change the assignment action to Uninstall. The license will be reclaimed after the app is uninstalled. If you remove an app that was assigned to a user, Intune attempts to reclaim all app licenses that were associated with that user.
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
-
-
 
 ## Next steps
 
