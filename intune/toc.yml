@@ -316,6 +316,8 @@
         href: vpn-settings-android.md
       - name: iOS
         href: vpn-settings-ios.md
+      - name: Configure Per-App VPN for iOS devices
+        href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
       - name: Windows 8.1
