@@ -19,12 +19,10 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 # Enroll Windows devices using Windows AutoPilot Deployment Program
 The Windows AutoPilot Deployment Program simplifies device provisioning. Today, it takes a lot of time building and maintaining customized operating system images. You might also spend a lot of time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
 
-
 ## Prerequisites
 - [Devices must be registered to your organization](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot#registering-devices-to-your-organization)
-- [Windows automatic enrollment enabled] (https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
-
 
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
