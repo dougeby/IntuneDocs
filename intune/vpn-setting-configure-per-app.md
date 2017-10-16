@@ -97,7 +97,7 @@ The trusted root certificate profile allows the iOS to automatically trust the V
 14. Click **OK**.
 15. Click **Create**.
 
-    ![Create a SCEP certificate profile](media\vpn-per-app-create-SCEP-cert.png)
+    ![Create a SCEP certificate profile](media\vpn-per-app-create-scep-cert.png)
 
 ## Create a Per-App VPN profile
 
@@ -125,7 +125,7 @@ The VPN profile contains the SCEP certificate carrying the client credentials, t
 6. Click **OK**.
 7. Click **Create**.
 
-    ![Create a Per-App VPN profile](media\vpn-per-app-create-VPN-profile.png)
+    ![Create a Per-App VPN profile](media\vpn-per-app-create-vpn-profile.png)
 
 
 ## Associate an app with the VPN profile
@@ -146,7 +146,7 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 9. Click **Save**.
 
-    ![Associate an app with the VPN](media\vpn-per-app-App-to-VPN.png)
+    ![Associate an app with the VPN](media\vpn-per-app-app-to-vpn.png)
 
 ## Verify the connection on the iOS device
 
@@ -190,5 +190,5 @@ To review event logs:
 
 ## Next steps
 
-To review iOS settings, see [VPN settings for iOS devices in Microsoft Intune](vpn-settings-ios.md).  
-To learn more about VPN setting and Intune, see [How to configure VPN settings in Microsoft Intune](vpn-settings-configure.md).
+- To review iOS settings, see [VPN settings for iOS devices in Microsoft Intune](vpn-settings-ios.md).
+-  To learn more about VPN setting and Intune, see [How to configure VPN settings in Microsoft Intune](vpn-settings-configure.md).
