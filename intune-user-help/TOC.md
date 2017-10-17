@@ -62,6 +62,7 @@
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device with the Company Portal](enroll-your-device-in-intune-macos-cp.md)
+### [This device is a little different](device-little-different-jamf.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
