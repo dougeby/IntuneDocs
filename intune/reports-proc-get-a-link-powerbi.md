@@ -41,6 +41,8 @@ There are also trends highlighted for the enrollment, compliance, device configu
 
 The following steps show you how to download the Power BI file and how to use the OData link with Power BI.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## Install Power BI
 
 Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
@@ -71,8 +73,8 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 6. Choose **Basic**.
 7. Type or paste the **OData URL** into the URL box.
 8. Click **OK**.
-9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials.  
-    1.  Select **Work account**.  
+9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials. To gain access to your data, you must authorize with Azure Active Directory (Azure AD) using OAuth 2.0.  
+    1.  Select **Organizational account**.  
     2.  Type your username and password.  
     3.  Click **Sign In.**  
     4.  Click **Connect**.  
