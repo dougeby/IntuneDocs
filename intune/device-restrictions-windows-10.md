@@ -70,7 +70,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	- 	**Prevent reuse of previous passwords** - Specifies the number of previously used passwords that are remembered by the device.
 	- 	**Require password when device returns from idle state (Mobile only)** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
 	- 	**Simple passwords** – Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
-- 	**Encryption** - Enable encryption on targeted devices (Windows 10 Mobile only).
+- 	**Encryption** - Enable encryption on targeted devices.
 
 ## Personalization
 
