@@ -66,4 +66,4 @@ The current version of the API is: `beta`.
 
 ## OData query options
 
-The current version supports the following OData query parameters: `$skip, $top, $filter, $orderby`.
+The current version supports the following OData query parameters: `$filter, $orderby, $select, $skip,` and `$top`.
