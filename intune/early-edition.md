@@ -77,7 +77,7 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 ### App-conditional launch support <!-- 1193313 -->
 IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
 
-### App Version number for line-of-business in device install status report <!-- 1233999 -->  
+### App version number for line-of-business in device install status report <!-- 1233999 -->  
 The device install status report will display the app version number for the line-of-business apps for iOS and Android. You may use this information to troubleshoot your apps, or find devices that are running outdated app versions.
 
 ### Co-management for Windows 10 devices  <!-- 124445 -->
@@ -157,7 +157,7 @@ You will be able to create a Windows 10 edition upgrade policy that upgrades Win
 For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
 
-### Intune MAM & Outlook for Android add-ins  <!-- 1450688 -->
+### Intune MAM and Outlook for Android add-ins  <!-- 1450688 -->
 In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
 
 To manage user access permissions to add-ins, work with your Exchange admin to ensure that your MAM data protection policies apply to add-ins.
@@ -186,7 +186,7 @@ You can manage devices and apps with a combination of Citrix XenMobile MDX and M
 
 You are able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
 
-#### How integration with Intune works?
+#### How integration with Intune works
 Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
 ### On-premises Exchange connector high availability support  <!-- 676614 -->   

@@ -65,7 +65,7 @@ To learn which devices are affected in your tenant, choose **Manage > All device
 #### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->  
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
-##### How integration with Intune works?
+##### How integration with Intune works
 Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
 #### New settings for Windows 10 device restriction profile  <!--- 978575, 1308849, -->  
@@ -73,7 +73,7 @@ We are adding new settings to the Windows 10 device restriction profile in the W
 
 For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
 
-#### Remote support for Windows, and Windows Mobile devices   <!-- 1070473 -->  
+#### Remote support for Windows and Windows Mobile devices   <!-- 1070473 -->  
 Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Windows, and Windows Mobile devices.
 
 #### Scan devices with Windows Defender <!-- 1280988  1280990   -->
@@ -135,7 +135,7 @@ With this release, you are able to configure the work profile for  Android for W
 You will be able to specify the country locale during the creation of an Apple App Store managed app.
 
 > [!Note]  
-> Currently, you can only create Apple App Store managed apps that are present the US country store.
+> Currently, you can only create Apple App Store managed apps that are present in the US country store.
 
 ####  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune
@@ -255,7 +255,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
+#### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
 Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
 
 #### How does this affect me?
