@@ -255,7 +255,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
+#### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
 Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
 
 #### How does this affect me?
