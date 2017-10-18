@@ -100,7 +100,7 @@ If you currently have the certificate connector disabled, you should uninstall i
 #### New settings for Windows 10 Team device restriction profile   <!--- 1308838 -->
 In this release, we’ve added many new settings to the Windows 10 Team device restriction profile to help you control Surface Hub devices.
 
-For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams).
+For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
 
 #### Prevent users of Android devices from changing their device date and time  <!-- 1333292 -->
 You can use an [Android custom device policy](custom-settings-android.md) to prevent Android device users from changing the device date and time.
@@ -109,7 +109,7 @@ To do this, configure an Android custom policy with the setting URI ./Vendor/MSF
 Set this to **TRUE**, and then assign it to the required groups.
 
 #### BitLocker device configuration <!-- 1397398 -->
-The **Windows Encryption > Base Settings** include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires end-user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end-user.  The new setting disables the end-user warning.
+The **Windows Encryption > Base Settings** include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires end-user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end-user.  The new setting disables the end-user warning.
 
 
 ### App management
@@ -235,7 +235,7 @@ We are making a change to the path used to access managed devices in the beta ve
 | Current path |  https://graph.microsoft.com/beta/managedDevices |
 | New path | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
 
-Both paths will work through the month of October. After the October service release, only the new path will work.  If you are using the Graph API to access managed devices, update and verify your scripts and applications with the new path. For additional changes, check the monthly [Graph API changelog](https://developer.microsoft.com/en-us/graph/docs/concepts/changelog).
+Both paths will work through the month of October. After the October service release, only the new path will work.  If you are using the Graph API to access managed devices, update and verify your scripts and applications with the new path. For additional changes, check the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
