@@ -38,7 +38,7 @@ iOS users will also receive this change, as the Company Portal website is also u
 We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
 
-### iOS Company Portal display large icons <!-- 1454593 -->
+### iOS Company Portal displays large icons <!-- 1454593 -->
 This release fixes a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website](https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
 
 
