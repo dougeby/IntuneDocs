@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -137,6 +137,7 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 - These bookmarks cannot be deleted or modified by users
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
+- If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
@@ -176,15 +177,15 @@ Use the following information to learn about the allowed formats and wildcards t
 -   Use the following table to learn about the permitted patterns that you can use when you specify URLs:
 
 |URL|Details|Matches|Does not match|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80|
-    |https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80|
+|https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   The following are examples of some of the inputs that you cannot specify:
 
@@ -210,8 +211,6 @@ Use the following information to learn about the allowed formats and wildcards t
 
 ## Security and privacy for the Managed Browser
 
--   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
-
 -   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
 
 -   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
@@ -224,3 +223,14 @@ Use the following information to learn about the allowed formats and wildcards t
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
 
+-   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
+-   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
+
+-   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
+
+-   The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
+
+-   To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
+
+### Turn off usage data
+Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.

@@ -21,7 +21,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -31,9 +31,6 @@ ms.custom: intune-enduser
 # Enroll your macOS device in Intune
 
 Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your company support that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-
-  > [!NOTE]
-  > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
 
 1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
 2. Log into the Company Portal website with your work or school account.
@@ -71,6 +68,6 @@ Getting access to your organization’s apps, data, and resources makes it possi
 
  ![macOS Profile Installed](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Some profiles may say that they're **Unverified**; as long as they're from your company, this is normal. 
+Some profiles may say that they're **Unverified**; as long as they're from your company, this is normal.
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).

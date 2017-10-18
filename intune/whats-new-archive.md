@@ -4,8 +4,8 @@ title: What's new in previous months in the Microsoft Intune
 titlesuffix: "Azure portal"
 description: Review older announcements from the Intune what's new page
 keywords:
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
 ms.date: 10/19/2017
 ms.topic: get-started-article
