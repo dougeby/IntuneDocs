@@ -35,6 +35,9 @@ The endpoint protection profile let you control security features on Windows 10 
 
 Use the information in this topic to learn how to create endpoint protection profiles.
 
+> [!Note]
+> These settings are not supported on the Home and Professional editions of Windows 10.
+
 ## Create an endpoint protection profile
 
 1. Sign into the Azure portal.
