@@ -54,7 +54,7 @@ You can now use Microsoft Intune with Windows AutoPilot Deployment Program to em
 #### Quick start for device enrollment  <!-- 1425655 --> 
 Quick start is now available in **Device enrollment** and provides a table of references for managing platforms and configuring the enrollment process. A brief description of each item and links to documentation with step-by-step instructions provides useful documentation to simplify getting started.
 
-### Device categorization <!-- 1427491 -->
+#### Device categorization <!-- 1427491 -->
 The enrolled devices platform chart of the **Devices > Overview** blade organizes devices by platform, including Android, iOS, macOS, Windows, and Windows Mobile.  Devices running other operating systems are grouped into "Other."  This includes devices manufactured by Blackberry, NOKIA, and others.  
 
 To learn which devices are affected in your tenant, choose **Manage > All devices** and then use **Filter** to limit the **OS** field.
@@ -85,13 +85,13 @@ You can now run a **Quick scan**, **Full scan**, and **Update signatures** with 
 
 **Update signatures**: The update signature command updates Windows Defender Antivirus malware definitions and signatures. This helps ensure Windows Defender Antivirus is effective in detecting malware. This feature is for Windows 10 devices only, pending device internet connectivity. 
 
-### The Enable/Disable button is removed from the Intune Certificate Authority page of the Intune Azure portal  <!-- 1400455 -->
+#### The Enable/Disable button is removed from the Intune Certificate Authority page of the Intune Azure portal  <!-- 1400455 -->
  We are eliminating an extra step in setting up the certificate connector on Intune. Currently, you download the certificate connector and then enable it in the Intune console. However, if you disable the connector in the Intune console, the connector continues to issue certificates.
 
-#### How does this affect me?
+##### How does this affect me?
 Starting in October, the Enable/Disable button will no longer appear on the Certificate Authority page in the Azure portal. Connector functionality remains the same. Certificates are still deployed to devices enrolled in Intune. You can continue to download and install the certificate connector. To stop certificates from being issued, you now uninstall the certificate connector rather than disable it.
 
-#### What do I need to do to prepare for this change?
+##### What do I need to do to prepare for this change?
 If you currently have the certificate connector disabled, you should uninstall it.
 
 
@@ -146,7 +146,7 @@ For steps to set an VPP token and enable automatic updates, see [How to manage i
 
 
 
-## Monitor and troubleshoot
+### Monitor and troubleshoot
 #### User device association entity Collection added to Intune Data Warehouse data model <!-- 1187917 -->
 You can now build reports and data visualizations using the user device association information that associates user and device entity collections. The data model can be accessed through the Power BI file (PBIX) retrieved from the Data Warehouse Intune page, through the OData endpoint, or by developing a custom client.
 
@@ -216,7 +216,7 @@ We are adding **Ownership Type** to the Device Details screen on all Company Por
 #### Intune supports iOS 11 <!--1428975-->
 Intune supports iOS 11. This was previously announced on the [Intune Support blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/).
 
-### End of support for iOS 8.0 <!---1164477--->
+#### End of support for iOS 8.0 <!---1164477--->
 Managed apps and the Company Portal app for iOS will require iOS 9.0 and higher to access company resources. Devices that aren't updated before this September will no longer be able to access the Company Portal or those apps. 
 
 ### Intune apps
@@ -228,7 +228,7 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ## Notices
 
-## New path for managed devices in Graph API <!-- 1586728 -->
+### New path for managed devices in Graph API <!-- 1586728 -->
 We are making a change to the path used to access managed devices in the beta version of the Graph API. 
 
 | | |
@@ -249,7 +249,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-#### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
+### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
 Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
 
 #### How does this affect me?
@@ -267,7 +267,7 @@ Apple has announced that they will enforce specific requirements for Application
 
 We have made available a version of the Company Portal app for iOS through the Apple TestFlight program that enforces the new ATS requirements. If you would like to try it so you can test your ATS compliance, email <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a> with your first name, last name, email address, and company name. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
 
-### See also
+## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What's new in the Company Portal UI](whats-new-app-ui.md)
