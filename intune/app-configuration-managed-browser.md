@@ -43,7 +43,11 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 
 For details, see [What are app protection policies?](/intune/app-protection-policy)
 
-You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
+You can apply these settings to:
+
+- Devices that are enrolled with Intune
+- Enrolled with another MDM product
+- Unmanaged devices
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications. 
