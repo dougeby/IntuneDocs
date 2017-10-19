@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,24 @@ ms.custom: intune-azure
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of October 16, 2017
+
+### Search improvements to the Company Portal website <!--1331697-->
+We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+
+iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+
+
+### iOS Company Portal displays large icons <!-- 1454593 -->
+This release fixes a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website](https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
+
+
+
+
+
 
 ## Week of October 2, 2017
 
@@ -72,7 +90,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## Week of August 28, 2017
+## August 2017
 
 ### iOS 11 Mail app will support OAuth <!---1196951--->
 
@@ -92,7 +110,7 @@ Conditional access with Intune supports more secure authentication on iOS device
 
 ![User is prompted to enroll from Company Portal website.](./media/ios-11-ca-email-after-1708-07.png)
 
-## Week of August 21, 2017
+
 
 ### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
 
@@ -107,15 +125,13 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 ![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## Week of August 14, 2017
-
 ### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
 
 The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
 
 ![The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## Week of July 31, 2017
+## July 2017
 
 ### Apps details pages will display new information for Android devices <!--1287476-->
 
@@ -169,7 +185,7 @@ The Company Portal app will begin signing in.
 
 ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## Week of June 12, 2017
+## June 2017
 
 ### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
 Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management.
@@ -215,8 +231,6 @@ Based on user feedback, the Company Portal app for Android has added a new menu 
 ![An image of the Android Company Portal app, with the action menu opened in the top right corner. The new "remove company portal" option is available as the third option, underneath "my profile" and "settings", and above "terms and conditions", "help and feedback", and "about".](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![An image of the confirmation dialog, that is available after selecting the new "remove company portal" option from the action menu. The dialog informs the user that "by removing company portal, your device will no longer be managed by your IT admin and may remove access to company data, company apps, and company email." It then asks the user to confirm that they want to remove the Company Portal app by selecting "Yes".](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## Week of June 5, 2017
 
 ### Improvements to the app tiles in the Company Portal app for iOS <!--1230777-->
 We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal.
