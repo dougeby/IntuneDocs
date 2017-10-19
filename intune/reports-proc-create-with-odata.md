@@ -115,7 +115,7 @@ You now have an interactive filter that can be used to toggle between company ow
 1. Click **Company** to see that the company owned device distribution.
 2. Click **Personal** to see the personally owned devices.
 
-## Next Steps
+## Next steps
 
  - Learn more about [creating and managing relationships](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in the Power BI Desktop in the Power BI documentation.
  - Consult the [Intune Data Warehouse Model](https://docs.microsoft.com/intune/reports-ref-data-model).
