@@ -57,9 +57,9 @@ The Power BI file (pbix) contains connection information for your tenant and a s
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
 3.  Click **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
-4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second as it gets your tenant data.
+4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second to get your tenant data.
 5.  Click **Refresh** to load your tenant data and review the reports.
-6.  If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Work account** as your authentication method.
+6.  If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Organizational account** as your authentication method.
 
 ## Load the data in Power BI using the OData link
 
