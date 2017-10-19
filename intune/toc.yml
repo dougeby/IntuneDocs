@@ -162,6 +162,8 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Windows AutoPilot Deployment Program
+        href: enrollment-autopilot.md 
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -603,9 +605,9 @@
         href: reports-ref-application.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
+        name: Reference for user device associations entity
+        href: reports-ref-userdeviceassociations.md
   - name: Sideload Windows apps
-    href: app-sideload-windows.md
-  - name: Use Graph APIs for Intune
     href: intune-graph-apis.md
     items:
     - name: Graph APIs for Intune Reference

@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/09/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -77,7 +77,7 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 ### App-conditional launch support <!-- 1193313 -->
 IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
 
-### App Version number for line-of-business in device install status report <!-- 1233999 -->  
+### App version number for line-of-business in device install status report <!-- 1233999 -->  
 The device install status report will display the app version number for the line-of-business apps for iOS and Android. You may use this information to troubleshoot your apps, or find devices that are running outdated app versions.
 
 ### Co-management for Windows 10 devices  <!-- 124445 -->
@@ -135,66 +135,6 @@ We recommend you set File blocking level to the default, **Not configured**.
 Intune now supports Symantec Cloud CA which allows the Intune Certificate Connector to issue PKCS certificates from the Symantec Cloud CA to Intune managed devices. If you're already using the Intune Certificate Connector with Microsoft Certification Authority (CA), you can leverage the existing Intune Certificate Connector setup to add the Symantec CA support.
 
 
-### Improvements to device setup workflow in Company Portal <!--1490692-->  
-We are improving the device setup workflow in the Company Portal app for Android. The language will be more user-friendly and specific to your company, and we will combined screens where possible. 
-
-### Block unsupported Samsung Knox device activation  <!--- 1490695 --->  
-The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This restriction helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
-
-The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
-
-| **Device Name** | **Device Model Numbers** |
-| --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
-| Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
-| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
-| Galaxy Core Lite | SM-G3588V |
-| Galaxy Core Prime | SM-G360H |
-| Galaxy Core LTE | SM-G386F<br>SM-G386W |
-| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
-| Galaxy Grand 3 | SM-G7200 |
-| Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
-| Galaxy Grand Prime Value Edition | SM-G531H |
-| Galaxy J Max | SM-T285YD |
-| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
-| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
-| Galaxy J1 Mini | SM-J105M |
-| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
-| Galaxy K Zoom | SM-C115 |
-| Galaxy Light | SGH-T399N |
-| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
-| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
-| Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
-| Galaxy S2 Plus | GT-I9105P |
-| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
-| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
-| Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
-| Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
-| Galaxy Tab 3 8.0&quot; | SM-T311 |
-| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
-| Galaxy Trend 2 Lite | SM-G318H |
-| Galaxy V Plus | SM-G318HZ |
-| Galaxy Young 2 Duos | SM-G130BU |
-
 
 ### Citrix VPN added for Windows 10 devices <!-- 1512457 -->  
 Customer will be able to configure Citrix VPN for their Windows 10 devices. You can choose the Citrix VPN in the *Select a connection type* list in the **Base VPN** blade when configuring a VPN for Windows 10 and later.
@@ -211,66 +151,13 @@ Customer will be able to configure Citrix VPN for their Windows 10 devices. You 
 ### Google Play Protect support on Android <!-- 908720  -->  
 With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and organizations to run secure apps and secure Android images. Intune will support Google Play Protect features, including SafetyNet remote attestation.  Admins can set compliance policy requirements that require Google Play Protect be configured and healthy. The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that installed apps are verified by Google Play services.  Conditional access might block users from accessing corporate resources if a device is not compliant with Google Play Protect requirements. 
 
-### Prevent users of Android devices from changing their device date and time  <!-- 1333292 -->
-You can use an [Android custom device policy](custom-settings-android.md) to prevent Android device users from changing the device date and time.
-To do this, configure an Android custom policy with the setting URI ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange, set it to **TRUE**, and then assign it to the required groups.
-
-### View app protection policy assignments for troubleshooting <!--  1475003 -->
-In this upcoming release, **App protection policy** option will be added to the **Assignments** drop-down list available on the troubleshooting blade. You can now select app protection policies to see app protection policies assigned to the selected users.
-
-### Create iOS apps limited to specific regional Apple App Stores <!-- 1281692 -->
-You will be able to specify the country locale during the creation of an Apple App Store managed app.
-
-> [!NOTE]  
-> Currently, you can only create Apple App Store managed apps that are present the US country store.
-
-### Select Apple country store to sync VPP apps  <!-- 1332311 -->  
-You will be able to configure the Volume Purchase Program (VPP) country store when uploading your VPP token. Intune synchronizes VPP apps for all locales from the specified VPP country store.
-
-> [!NOTE]  
-> Today, Intune only synchronizes VPP apps from the VPP country store that match the Intune locale in which the Intune tenant was created.
-
-###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
-You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
-
-### New settings for Windows 10 Team device restriction profile  <!--- 1308838  -->
-We are adding many new settings to the Windows 10 Team device restriction profile to help you control Surface Hub devices.
-For more information about this profile, see [Windows 10 Team device restriction settings](device-restrictions-windows-10-teams.md).
 
 ### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
 You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education, and Windows 10 Professional Education N.
 For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
-### Remote support for Windows, and Windows Mobile devices  <!-- 1070473 -->    
-Intune will be able to use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Windows, and Windows Mobile devices.
 
-### Scan devices with Windows Defender <!-- 1280988  1280990   -->
-You will be able to run a **Quick scan**, **Full scan**, and **Update signatures** with Windows Defender Antivirus on managed Windows 10 devices. From the device's overview blade, choose the action to run on the device. You are prompted to confirm the action before the command is sent to the device. 
-
-**Quick scan**: A quick scan looks at locations where malware registers to start, such as registry keys and known Windows startup folders. A quick scan takes an average of five minutes. Combined with the **Always-on real-time protection** setting that scans files when they are opened, closed, and whenever a user navigates to a folder, a quick scan helps provide protection from malware that might be in the system or the kernel. Users see the scan results on their devices when it finishes. 
-
-**Full scan**: A full scan can be useful on devices that have encountered a malware threat to identify if there are any inactive components that require a more thorough clean-up, and is useful for running on-demand scans. Full scan can take an hour to run. Users see the scan results on their devices when it finishes. 
-
-**Update signatures**: The update signature command updates Windows Defender Antivirus malware definitions and signatures. This helps ensure Windows Defender Antivirus is effective in detecting malware. This feature is for Windows 10 devices only, pending device internet connectivity. 
-
-### BitLocker device configuration <!-- 1397398 -->  
-The **Windows Encryption > Base Settings** will include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end-user.  The new setting disables the end-user warning.
-
-### Company Portal for Windows 8.1 and Windows Phone 8.1 moving to sustaining mode <!--1428681-->
-Beginning in October 2017, the Company Portal apps for Windows 8.1 and Windows Phone 8.1 will move to sustaining mode. This means that the apps and existing scenarios, such as enrollment and compliance, will continue to be supported for these platforms. These apps will continue to be available for download through existing release channels, such as the Microsoft Store. 
-
-Once in sustaining mode, these apps will only receive critical security updates. There will be no additional updates or features released for these apps. For new features, we recommend that you update devices to Windows 10 or Windows 10 Mobile. 
-
-###  Block copy and paste between work and personal profiles in Android for Work <!-- 1098994 -->   
-You will be able to configure the work profile for  Android for Work to block copy and paste between work and personal apps. You can find this new setting in the **Device restrictions** profile for the **Android for Work** Platform in **Work profile settings**.
-
-### New behaviors for the Company Portal app for Android with work profiles <!---1485783--->
-When you enroll an Android for Work device with a work profile, it's the Company Portal app in the work profile that performs management tasks on the device. 
-Unless you are using a MAM-enabled app in the personal profile, the Company Portal app for Android no longer serves any use. To improve the work profile experience, Intune will automatically hide the personal Company Portal app after a successful work profile enrollment.
-
-The Company Portal app for Android can be enabled at any time in the personal profile by browsing for [Company Portal in the Play Store](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and tapping **Enable**.
-
-### Intune MAM & Outlook for Android add-ins  <!-- 1450688 -->
+### Intune MAM and Outlook for Android add-ins  <!-- 1450688 -->
 In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
 
 To manage user access permissions to add-ins, work with your Exchange admin to ensure that your MAM data protection policies apply to add-ins.
@@ -283,9 +170,6 @@ The setting change in Exchange will apply to Outlook across Windows, iOS, web, M
 #### What do I need to do?
 Review your Exchange policies today. Inform your IT and helpdesk staff. Contact our support team with any specific questions or concerns. 
 
-### User device association entity Collection added to Intune Data Warehouse data model <!-- 1187917 -->
-You will be able to build reports and data visualizations using the user device association information that associates user and device entity collections. The data model can be accessed through the Power BI file (PBIX) retrieved from the Data Warehouse Intune page, through the OData endpoint, or by developing a custom client.
-
 
 
 
@@ -293,15 +177,6 @@ You will be able to build reports and data visualizations using the user device 
 
 ### Actions for non-compliance  <!--730266  846515 -->     
 *Actions for non-compliance* are a new feature of compliance policies that will let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
-
-### New report that lists iOS devices with older iOS versions   <!-- 1352223 -->
-The **Out-of-date iOS Devices** report will be available from the **Software updates** workspace. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy and have available updates. For each device, you can view a status for why the device has not been automatically updated. 
-
-### New settings for Windows 10 device restriction profile
-<!--- 978575, 1308849, -->
-We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
-
-For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
 
 ### Android for Work support for Lookout <!-- 1087312 -->   
 Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You are able to deploy the Lookout app inside or outside the container.
@@ -311,10 +186,7 @@ You can manage devices and apps with a combination of Citrix XenMobile MDX and M
 
 You are able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
 
-### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->
-You are able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
-
-#### How integration with Intune works?
+#### How integration with Intune works
 Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
 ### On-premises Exchange connector high availability support  <!-- 676614 -->   
@@ -324,17 +196,7 @@ You are able to have multiple Client Access Server (CAS) roles for on-premises E
 The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
 
-### End of support for Android 4.3 and lower <!---1171127, 1326920 --->
-Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. Devices that aren't updated before the beginning of October will no longer be able to access the Company Portal or those apps. By December, all enrolled devices will be force-retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
-
-
 ## Intune apps
-
-### Improved guidance around the request for access to contacts on Android devices <!--1484985-->   
-The Company Portal app for Android often requires the end user to accept the Contacts permission. If an end user declines this access, they will see an in-app notification that alerts them to grant it for conditional access.
-
-### Secure startup remediation for Android <!--1490712-->     
-End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 
 ### Redirecting macOS users to our new Company Portal app <!--1380728-->   
@@ -345,22 +207,11 @@ We have added support for certificate-based authentication (CBA) in the Company 
 
 <!-- the following are present prior to 1710 -->
 
-### Search improvements to the Company Portal website <!--1331697-->  
-We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
-
-iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
-
-We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
-
-### Refresh action added to the Company Portal app for Windows 10 <!--1132468-->  
-The Company Portal app for Windows 10 will allow users to refresh the data in the app by either pulling to refresh or, on desktops, pressing F5.
 
 
 ### Apps that are available with or without enrollment can now be installed without being prompted for enrollment. <!-- 1334712 -->
 Company apps that have been made available with or without enrollment on the Android Company Portal app can be installed without a prompt to enroll.
 
-### iOS Company Portal display large icons <!-- 1454593 -->
-We are fixing a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website] (https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
 
 <!-- the following are present prior to 1709 -->
 
@@ -381,19 +232,8 @@ Now that Intune’s mobile device management (MDM) and mobile application manage
 
 Learn more about the MDM and MAM changes announced in the [Intune support team blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/).
 
-### Apple to require updates for Application Transport Security <!--748318-->   
-Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
 
 
-### New path for managed devices in Graph API <!-- 1586728 -->  
-In the October Intune service release, we are making a change to the path used to access managed devices in the beta version of the Graph API.
-
-| | |
-|--|--|
-| Current path |  https://graph.microsoft.com/beta/managedDevices |
-| New path | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-Both paths will work through the month of October. After the October service release, only the new path will work.  If you are using the Graph API to access managed devices, update and verify your scripts and applications with the new path. For additional changes, check the monthly [Graph API changelog](https://developer.microsoft.com/en-us/graph/docs/concepts/changelog).
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.

@@ -25,7 +25,7 @@ ms.custom: intune-classic
 
 #  Intune Data Warehouse API
 
-The Intune Data Warehouse API lets you  access your Intune data in a machine-readable format for use in your favorite analytic tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
+The Intune Data Warehouse API lets you access your Intune data in a machine-readable format for use in your favorite analytics tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
 
   -   Request and response headers
   -   Status codes
@@ -44,9 +44,12 @@ This reference section provides an overview of endpoints, supported HTTP methods
 
 ## OData custom client
 
-You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Microsoft Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a web app and a client app in Azure, grant permissions to the client. Your local client will get authorization, can then communicate with the Data Warehouse endpoints.
+You can access the Intune Data Warehouse data model through RESTful endpoints. To gain access to your data, your client must authorize with Azure Active Directory (Azure AD) using OAuth 2.0. You first set up a web app and a client app in Azure, grant permissions to the client. Your local client gets authorization and can then communicate with the Data Warehouse endpoints.
 
 For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md)
+
+> [!Note]  
+> You can access the [GitHub Intune Data Warehouse repo](https://github.com/Microsoft/Intune-Data-Warehouse) on Github for code samples.
 
 ## Interacting with the API
 
@@ -61,6 +64,9 @@ OData defines an abstract data model and a protocol that let any client access i
 
 ## Next steps
 
-[Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData Version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Learn more about working with Azure AD by reading the [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+
+Find OData resources at [odata.org](http://www.odata.org).
+  
+Review the OData Version 4.0 standard at [OData Version 4.0]
+(http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
