@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: User | Microsoft Docs 
+title: User - Intune Data Warehouse | Microsoft Docs 
 description: Reference topic for the User category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
