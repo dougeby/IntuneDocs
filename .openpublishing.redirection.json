@@ -119,7 +119,7 @@
 
 		},
 		{
-			"source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-ios.md ",
+			"source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-ios.md",
 			"redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
 			"redirect_document_id": false
 		},
@@ -429,17 +429,17 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-user-help/you-need-to-resolve-a-threat-found-by-device-threat-protection-android",
+			"source_path": "intune-user-help/you-need-to-resolve-a-threat-found-by-device-threat-protection-android.md",
 			"redirect_url": "https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-mtd-android",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-android",
+			"source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-android.md",
 			"redirect_url": "https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-mtd-android",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-azure/enroll-devices/get-apple-dep-token.md#get-the-apple-dep-certificate",
+			"source_path": "intune-azure/enroll-devices/get-apple-dep-token.md#get-the-apple-dep-certificate.md",
 			"redirect_url": "https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-mtd-android",
 			"redirect_document_id": false
 		},
@@ -699,7 +699,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "intune/get-started/windows-pc-management-capabilities-in-microsoft-intune",
+			"source_path": "intune/get-started/windows-pc-management-capabilities-in-microsoft-intune.md",
 			"redirect_url": "https://docs.microsoft.com/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune",
 			"redirect_document_id": true
 		},

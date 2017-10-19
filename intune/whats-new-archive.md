@@ -4,10 +4,10 @@ title: What's new in previous months in the Microsoft Intune
 titlesuffix: "Azure portal"
 description: Review older announcements from the Intune what's new page
 keywords:
-author: mtillman
-ms.author: mtillman
+author: brenduns
+ms.author: brenduns
 manager: angrobe
-ms.date: 8/23/2017
+ms.date: 10/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,99 @@ ms.custom: intune-azure
 # What's new in the Microsoft Intune - previous months
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+## September 2017
+
+### Inform end users what device information can be seen for iOS <!--739894-->
+
+We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
+
+### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->
+
+End users will soon not have to enroll their device to access the Company Portal app for Android. End users at organizations that are using App Protection Policies will no longer receive prompts to enroll their device when they open the Company Portal app. End users will also be able to install apps from the Company Portal without enrolling the device. 
+
+
+### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
+
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
+
+### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
+
+The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list.
+
+
+## August 2017
+
+### Improvements to device overview <!-- 1404453 -->  
+Improvements to the device overview now display enrolled devices but excludes devices managed by Exchange ActiveSync. Exchange ActiveSync devices do not have the same management options as enrolled devices. To view the number of enrolled devices and number of enrolled devices by platform in Intune in the Azure portal, go **Devices** > **Overview**.
+
+### Improvements to device inventory collected by Intune
+<!-- 961134, 1104426, 1281327, 1333543 -->
+In this release, we’ve made the following improvements to the inventory information collected by devices you manage:
+ 
+-   For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
+-   When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
+-   We’ve made improvements to the filter used by the **Last Check-in Date** item.
+-   In the device list, you can now display the phone number of corporate owned devices.
+Additionally, you can use the filter pane to search for devices by phone number.
+ 
+For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
+
+### Conditional access support for macOS devices 
+<!-- 720172 -->
+You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
+
+- Learn more about [conditional access support for macOS devices](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+
+### Company Portal app for macOS is in public preview <!---1484796--->
+The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+
+
+### New device restriction settings for Windows 10    
+<!--1063965, 1308850  -->
+In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
+
+-   Windows Defender SmartScreen
+-   App store
+
+### Updates to the Windows 10 endpoint protection device profile for BitLocker settings
+<!--1459533 -->    
+In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
+ 
+Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
+Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
+Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
+For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
+
+
+### New signed-in experience for Android Company Portal users and App Protection Policy users <!-- 621669 -->
+End users can now browse apps, manage devices, and view IT contact information using the Android Company Portal app without enrolling their Android devices. In addition, if an end user already uses an app protected by Intune App Protection Policies and launches the Android Company Portal, the end user no longer receive a prompt to enroll the device.
+
+### New setting in the Android Company Portal app to toggle battery optimization <!--1405990-->
+The **Settings** page in the Company Portal app for Android has a new setting that easily lets users turn off battery optimization for Company Portal and Microsoft Authenticator apps. The app name shown in the setting will vary depending on which app manages the work account. We recommend that users turn battery optimization off for better performance of work apps that sync email and data. 
+
+### Multi-identity support for OneNote for iOS      <!-- 1234281 -->
+End users can now use different accounts (work and personal) with Microsoft OneNote for iOS. App protection policies can be applied to corporate data in work notebooks without affecting their personal notebooks. For example, a policy can allow a user to find information in work notebooks, but will prevent the user from copying and pasting and corporate data from the work notebook to a personal notebook.
+ 
+- Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
+
+### New settings to allow and block apps on Samsung KNOX Standard devices
+<!-- 1305423 822899-->  
+In this release, we are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
+ 
+- Apps that users are allowed to install
+- Apps that users are blocked from running
+- Apps that are hidden from the user on the device
+ 
+You can specify the app by URL, package name or from the list of apps you manage.
+
+### New Azure AD app-based conditional access policy UI link from Intune
+<!-- 1016201 -->
+IT admins can now set app-based conditional policies via the new conditional access policy UI in the Azure AD workload. The app-based conditional access that is in the Intune App Protection section in the Azure portal will remain there for the time being and will be enforced side-by-side. There’s also a convenience link to the new conditional access policy UI in the Intune workload.
+
+- Learn more about [app-based conditional access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
+
+
 
 ## July 2017
 

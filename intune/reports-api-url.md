@@ -26,17 +26,7 @@ ms.custom: intune-classic
 
 You can use the Intune Data Warehouse API with an account with specific role-based access controls and Azure AD credentials. You will then authorize your REST client with Azure AD using OAuth 2.0. And finally, you will form a meaningful URL to call a data warehouse resource.
 
-## Azure AD and Intune credential requirements
-
-Authentication and authorization are based on Azure AD credentials and Intune role-based access control (RBAC). All global administrators and Intune service administrators for your tenant have access to the API by default. Use Intune roles to provide access for more users by giving them access to the **Reporting resource**.
-
-Requirements for accessing the API are:
-
-  -  Intune license must be assigned to the user
-  -  User must be one of:
-      -  Azure AD global administrator
-      -  An Intune service administrator
-      -  User with role-based access to **Reports** resource
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## Authorization
 
@@ -66,4 +56,4 @@ The current version of the API is: `beta`.
 
 ## OData query options
 
-The current version supports the following OData query parameters: `$skip, $top, $filter, $orderby`.
+The current version supports the following OData query parameters: `$filter, $orderby, $select, $skip,` and `$top`.

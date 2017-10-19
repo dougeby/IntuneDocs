@@ -16,7 +16,6 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: owenyen

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to use remotely administer Android devices using TeamViewer
+title: How to use remotely administer devices using TeamViewer
 titlesuffix: "Azure portal"
-description: Learn how to remotely administer Android devices using TeamViewer."
+description: Learn how to remotely administer devices using TeamViewer."
 keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,11 +26,23 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Provide remote assistance for Intune managed Android devices
+# Provide remote assistance for Intune managed devices
 
-Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to users of Android devices. Use the information in this topic to get started.
+Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to users of devices you manage. Use the information in this topic to get started.
 
 ## Before you start
+
+### Supported devices
+
+The following Intune-managed devices support remote administration:
+
+- Intune managed Android devices
+- Intune managed Windows devices running Windows 10, Windows 10 Mobile, and later.
+
+>[!NOTE]
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software
+
+
 
 ### Required permissions
 
@@ -43,7 +55,7 @@ Ensure that the user of the Azure portal has the following permissions assigned 
 
 ### Configure the Intune TeamViewer connector
 
-Before you can provide remote assistance to Android devices, you must configure the Intune TeamViewer connector, using the following steps:
+Before you can provide remote assistance to devices, you must configure the Intune TeamViewer connector, using the following steps:
 
 
 1. Sign into the Azure portal.
@@ -55,22 +67,22 @@ Before you can provide remote assistance to Android devices, you must configure 
 7. A web page opens to the TeamViewer site. Enter your TeamViewer license credentials, and then click **Sign In**.
 
 
-## How to remotely administer an Android device
+## How to remotely administer a device
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices** blade, choose **Manage** > **All devices**.
 5. Select the device that you want to remotely administer, and then, on the device properties blade, choose **More** > **New Remote Assistance Session**.
-6. After Intune connects to the TeamViewer service, you'll see some information about the Android device. Choose **Connect** to start the remote session.
+6. After Intune connects to the TeamViewer service, you'll see some information about the device. Choose **Connect** to start the remote session.
 
-![Android TeamViewer Windows](./media/android-teamviewer.png)
+![Android TeamViewer example](./media/android-teamviewer.png)
 
-In the TeamViewer window, you can perform a range of remote actions on the Android device, including remote control of the device. For full details of the actions you can perform, see the [TeamViewer documentation](https://www.teamviewer.com/support/documents/).
+In the TeamViewer window, you can perform a range of remote actions on the device, including remote control of the device. For full details of the actions you can perform, see the [TeamViewer documentation](https://www.teamviewer.com/support/documents/).
 
 When you are finished, close the TeamViewer window.
 
-## End-user notifications
+## Next steps
 
 An end user sees a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
 

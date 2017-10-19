@@ -5,10 +5,9 @@ title: You need to install Mobile Threat Defense on your iOS device | Microsoft 
 description:
 keywords:
 author: barlanmsft
-
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,6 +40,17 @@ Before you can access your work, your company needs you to install the Mobile Th
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**If the installation doesn't work**
+## Additional information your company can see
+
+Mobile Threat Defense is a way for companies to make sure that your devices are kept safe from apps that could be trying to steal corporate information. Adding this protection requires extra information to be reported about the apps on your devices to the Mobile Threat Defense service that your company is using. Your company can't see the data in your personal apps. All of the apps on your device are added to [what your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) when they use a Mobile Threat Defense service. These are the parts of the app that your company can see:
+
+*	App name
+* App ID: the unique name that identifies the app in the App Store
+*	App version and short version number: the specific release numbers for an app
+* App bundle and dynamic size: the amount of space an app uses on your device
+* App validity: whether an app is approved for use
+*	App management state: whether an app is managed by your company or if it is a personal app
+
+## If the installation doesn't work
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

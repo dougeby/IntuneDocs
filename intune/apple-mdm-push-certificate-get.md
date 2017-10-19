@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,9 +57,6 @@ Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. 
 The Apple MDM push certificate is valid for one year and must be renewed annually to maintain iOS and macOS device management. If your certificate expires, enrolled Apple devices cannot be contacted.
 
 The certificate is associated with the Apple ID used to create it. Renew the MDM push certificate with the same Apple ID used to create it.
-
-> [!NOTE]
-> The certificate is associated with the Apple ID used to create it. As a best practice, use a company Apple ID for management tasks. Never use a personal Apple ID.
 
 1. In the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Apple MDM Push Certificate**.
 2. Choose **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
