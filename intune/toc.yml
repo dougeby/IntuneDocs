@@ -461,6 +461,8 @@
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Manage operating system versions with Intune
+    href: manage-os-versions.md
   - name: Manage software updates
     href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
