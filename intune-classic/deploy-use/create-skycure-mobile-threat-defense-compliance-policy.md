@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac

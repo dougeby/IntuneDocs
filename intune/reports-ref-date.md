@@ -33,21 +33,21 @@ The **Date** entity represents dates that are referenced across multiple data wa
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| DateKey |Unique identifier for this date in the data warehouse | 20160703 |
-| FullDate |This date represented in full Date/Time format | 7/3/2016 12:00:00 AM |
-| DayOfWeek |Day of week |1 |
-| DayOfMonth |Day of month |3 |
-| DayOfYear |Day of year |185 |
-| WeekOfYear |Week of year |28 |
-| MonthOfYear |Month of the year |7 |
-| CalendarQuarter |Calendar quarter |3 |
-| CalendarYear |Calendar year |2016 |
-| DateKey |Unique identifier for this date in the data warehouse |20160703 |
-| FullDate |This date represented in full Date/Time format | 7/3/2016 12:00:00 AM |
-| DayOfWeek |Day of week |1 |
-| DayOfMonth |Day of month |3 |
-| DayOfYear |Day of year |185 |
-| WeekOfYear |Week of year |28 |
-| MonthOfYear |Month of the year |7 |
-| CalendarQuarter |Calendar quarter |3 |
-| CalendarYear |Calendar year |2016 |
+| DateKey | Unique identifier for this date in the data warehouse. | 20160703 |
+| FullDate | This date represented in full Date/Time format. | 7/3/2016 12:00:00 AM |
+| DayOfWeek | Day of week | 1 |
+| DayOfMonth | Day of month | 3 |
+| DayOfYear | Day of year | 185 |
+| WeekOfYear | Week of year | 28 |
+| MonthOfYear | Month of the year | 7 |
+| CalendarQuarter | Calendar quarter | 3 |
+| CalendarYear | Calendar year | 2016 |
+| DateKey | Unique identifier for this date in the data warehouse. | 20160703 |
+| FullDate | This date represented in full Date/Time format. | 7/3/2016 12:00:00 AM |
+| DayOfWeek | Day of week | 1 |
+| DayOfMonth | Day of month | 3 |
+| DayOfYear | Day of year | 185 |
+| WeekOfYear | Week of year | 28 |
+| MonthOfYear | Month of the year | 7 |
+| CalendarQuarter | Calendar quarter | 3 |
+| CalendarYear | Calendar year | 2016 |

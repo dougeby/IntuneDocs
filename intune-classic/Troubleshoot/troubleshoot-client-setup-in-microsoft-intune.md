@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: tscott

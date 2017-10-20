@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,11 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 
 For details, see [What are app protection policies?](/intune/app-protection-policy)
 
-You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
+You can apply these settings to:
+
+- Devices that are enrolled with Intune
+- Enrolled with another MDM product
+- Unmanaged devices
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications. 
@@ -57,7 +61,7 @@ You can create Managed Browser policies for the following device types:
 -   Devices that run iOS 8.0 and later
 
 >[!IMPORTANT]
->As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.
+>As of October 2017, the Intune Managed Browser app on Android app supports only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.
 >Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 
@@ -70,10 +74,10 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
 4.	On the **App Configuration policies** blade, choose **Add**.
 5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-6.	For **Device enrollment** type, choose **Not enrolled with Intune**.
+6.	For **Device enrollment** type, choose **Managed devices** or **Managed apps**.
 7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
 8.	Choose **OK** to return to the **Add app configuration** blade.
-9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this topic to learn about the different key and value pairs you can define.
+9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
 10.	When you are done, choose **OK**.
 11.	On the **Add app configuration** blade, choose **Create**.
 12.	The new configuration is created, and displayed on the **App configuration** blade.
@@ -133,6 +137,7 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 - These bookmarks cannot be deleted or modified by users
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
+- If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
@@ -172,15 +177,15 @@ Use the following information to learn about the allowed formats and wildcards t
 -   Use the following table to learn about the permitted patterns that you can use when you specify URLs:
 
 |URL|Details|Matches|Does not match|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80|
-    |https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80|
+|https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   The following are examples of some of the inputs that you cannot specify:
 
@@ -206,8 +211,6 @@ Use the following information to learn about the allowed formats and wildcards t
 
 ## Security and privacy for the Managed Browser
 
--   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
-
 -   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
 
 -   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
@@ -220,3 +223,14 @@ Use the following information to learn about the allowed formats and wildcards t
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
 
+-   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
+-   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
+
+-   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
+
+-   The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
+
+-   To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
+
+### Turn off usage data
+Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.

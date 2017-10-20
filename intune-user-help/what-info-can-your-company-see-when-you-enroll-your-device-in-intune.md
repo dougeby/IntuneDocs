@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,5 +53,6 @@ When you enroll a device into management, you are giving your company permission
 
 **What your company might be able to see**
 
--  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page. 
+-  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
 -  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
+- App inventory: if your company uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
