@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ When you enroll your Android device, you are giving your company support permiss
 
 -   Require you to accept terms and conditions.
 
--   Disable the camera (only on Samsung KNOX devices, not Nexus devices) to prevent you from taking pictures of sensitive work material that shouldn't be shared.
+-   Disable the camera to prevent you from taking pictures of sensitive work material that shouldn't be shared.
 
 -   Require that all data on the device is encrypted to help protect the data if the device is lost or stolen.
 
