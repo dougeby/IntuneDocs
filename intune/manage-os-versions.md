@@ -69,7 +69,7 @@ You have two different options:
 |Warn  |Block  |
 |---------|---------|
 |Warn informs the end user that they should upgrade if they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is allowed for the app and organizational data.|Block informs the end user that they must upgrade when they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is not allowed for app and organizational data.|
-|![Android update warning dialog](./media/os-version-android-warning.png)    |![App access blocked dialog](./media/os-version-app-access-blocked.png)          |
+|![Android update warning dialog](./media/os-version-update-warning.png)    |![App access blocked dialog](./media/os-version-access-blocked.png)          |
 
  
 ### In practice
