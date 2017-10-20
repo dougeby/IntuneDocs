@@ -39,7 +39,7 @@ The Data Warehouse provides you access to more information about your mobile env
   -  A data model using the OData standard
 
 > [!Important]  
-> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
 
 **Next steps**
 
