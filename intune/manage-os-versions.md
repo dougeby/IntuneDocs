@@ -26,7 +26,7 @@ ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 ---
 
 # Manage operating system versions with Intune
-On modern mobile and desktop platforms, major updates, patches, and new versions release at a rapid pace. You have controls to fully manage updates and patches on Windows, but other platforms like iOS and Android require your end user to participate in the process.  Microsoft Intune has the capabilities to help you structure your operating system version management, across platforms, today.
+On modern mobile and desktop platforms, major updates, patches, and new versions release at a rapid pace. You have controls to fully manage updates and patches on Windows, but other platforms like iOS and Android require your end user to participate in the process.  Microsoft Intune has the capabilities to help you structure your operating system version management across different platforms.
 
 Intune can help you address these common scenarios: 
 - Determine which operating system versions are on your end-user devices
@@ -62,7 +62,7 @@ Organizations are using device compliance policies for the same scenarios as enr
 For details, see [Get started with device compliance](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).
  
 ## Operating system version controls using Intune app protection policies    
-Intune app protection policies and mobile application management (MAM) access settings enable you to specify the minimum operating system version at the app layer. This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.
+Intune app protection policies and mobile application management (MAM) access settings let you to specify the minimum operating system version at the app layer. This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.
  
 You have two different options: 
 
@@ -86,7 +86,7 @@ You can use the Intune capabilities described in this article to help you move y
   - You can run a compliance report to identify users that are out of compliance. 
 - **Step 3a**: Use Intune app protection policies to block users when an app opens or resumes if the device is not running operating system v2.
 - **Step 3b**: Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant.
-  - These policies will require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device conditional access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
+  - These policies require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device conditional access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
 
 ## Next steps
 Use the following resources to manage operating system versions in your organization: 
