@@ -54,7 +54,7 @@ If your build system does not support AAR files, you may use the following files
 
 ## Requirements
 
-The Intune App SDK is a compiled Android project. As a result, it is largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 14 (Android 4.0+) through Android API 25 (Android 7.1).
+The Intune App SDK is a compiled Android project. As a result, it is largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 19 (Android 4.4+) through Android API 25 (Android 7.1).
 
 
 
