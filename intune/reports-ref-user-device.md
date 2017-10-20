@@ -22,7 +22,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ---
-# User Device Assocation
+# User Device Association
 
 The **UserDeviceAssociation** entity contains user device associations in your organization.
 

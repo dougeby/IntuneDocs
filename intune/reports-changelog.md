@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Intune Data Warehouse Changelog | Microsoft Docs 
+title: Intune Data Warehouse Change log | Microsoft Docs 
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
