@@ -381,6 +381,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Actions for noncompliance
+      href: actions-for-noncompliance.md   
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
   - name: Set up conditional access

@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/08/2017
+ms.date: 10/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -107,7 +107,7 @@ You can add an action by the time you’re creating a new device compliance poli
 
 5.  Once you're done adding your information, choose **Add**, then **OK**.
 
-## Monitor device compliance
+## Next steps
 
 You can monitor the device compliance activity by running the reports available in the device compliance blade. Learn more [how to monitor device compliance with Intune](device-compliance-monitor.md)
 
