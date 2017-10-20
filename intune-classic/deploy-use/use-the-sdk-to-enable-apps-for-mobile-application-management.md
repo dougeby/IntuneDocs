@@ -4,8 +4,8 @@
 title: Use the SDK to enable apps for MAM 
 description: This topic gives you a quick overview of why you should use the Intune App SDK.
 keywords:
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: oydang

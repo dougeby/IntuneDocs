@@ -4,9 +4,10 @@
 title: Installing the Company Portal app for iOS and macOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,9 +39,9 @@ When you install the Company Portal app and enroll your iOS or macOS device in I
 
 -   Automatically set up your company email account.
 
-When you enroll your device in Intune, you are giving your IT admin permission to manage your device to help protect the company information on the device.
+When you enroll your device in Intune, you are giving your company support permission to manage your device to help protect the company information on the device.
 
-When your device is enrolled, your IT admin can:
+When your device is enrolled, your company support can:
 
 -   Reset your device back to manufacturer’s default settings if the device is lost or stolen.
 
@@ -50,7 +51,7 @@ When your device is enrolled, your IT admin can:
 
 -   Require you to accept terms and conditions.
 
--   Enable or disable the camera on your device to prevent you from taking pictures of sensitive company data.
+-   Disable the camera on your device to prevent you from taking pictures of sensitive company data.
 
 -   Enable or disable web browsing on your device.
 
@@ -66,4 +67,4 @@ When your device is enrolled, your IT admin can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
-If you have questions, contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

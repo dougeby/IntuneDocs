@@ -2,11 +2,11 @@
 # required metadata
 
 title: Intune custom settings for Windows 10 devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about the settings you can use in a Windows 10 custom profile."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 05/09/2017
 ms.topic: article

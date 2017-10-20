@@ -12,10 +12,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: lpatha

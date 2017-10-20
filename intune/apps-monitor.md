@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to monitor app information and assignments 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: After you've assigned an app to users or devices, use this information to help you monitor its status."
 keywords:
 author: mattbriggs
@@ -50,4 +50,4 @@ Then, take one of the following actions to learn more about your apps, and their
 ## Monitor
 
 - **Device install status** - Provides detailed information for each device you assigned the selected app to including the device name, operating system, when the device last checked-in to Intune, and the status of the app installation.
-- **User install status** - Provides detailed information fro user to you assigned the selected app to including the number of installations of the app the user has on all their devices, and information about any installation failures.
+- **User install status** - Provides detailed information for user you assigned the selected app to, including the number of installations of the app the user has on all their devices, and information about any installation failures.

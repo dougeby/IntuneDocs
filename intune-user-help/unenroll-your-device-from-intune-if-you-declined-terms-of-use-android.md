@@ -1,21 +1,24 @@
 ---
 # required metadata
 
-title: Unenroll your device if you declined "Terms of Use" | Microsoft Docs
+title: Unenroll your device if you declined Terms of Use | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061esearchScope: - User help
+ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
+searchScope:
+ - User help
 
 # optional metadata
 
-ROBOTS:  
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal
@@ -44,4 +47,4 @@ To unenroll your device from Intune and uninstall the Company Portal app:
 
     You can now uninstall the Company Portal app.
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Send logs to your IT admin by email | Microsoft Docs
+title: Send logs to your company support by email | Microsoft Docs
 description: Send data logs by using email on an Android device
 keywords:
 author: barlanmsftms.author: barlan
@@ -26,14 +26,14 @@ ms.custom: intune-enduser
 ---
 
 
-# Send logs to your IT admin using email
+# Send logs to your company support using email
 
-If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+If you get an error while you’re using the Company Portal app on your Android device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
 > [!Note]
-> To make it easier for your IT admin to figure out the issue, you should turn on _verbose logging_. Verbose logging includes all relevant details in the report. Find out how to [turn on verbose logging here](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> To make it easier for your company support to figure out the issue, you should turn on _verbose logging_. Verbose logging includes all relevant details in the report. Find out how to [turn on verbose logging here](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-To send logs to your IT admin using email:
+To send logs to your company support using email:
 
 1.  Open the Company Portal app.
 
@@ -44,4 +44,4 @@ To send logs to your IT admin using email:
 
 3.  Under **Help**, tap **Get Help**.
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).

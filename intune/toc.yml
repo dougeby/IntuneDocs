@@ -81,12 +81,16 @@
       href: planning-guide-resources.md
   - name: Scenario implementation guides
     items:
-    - name: BYOD
-      href: byod-enable.md
     - name: Protect Exchange Online
       href: exchange-online-protect.md
     - name: Reduce help desk costs
       href: password-reset.md
+    - name: Prevent unauthorized access
+      href: data-outside-protect.md
+    - name: Prevent data leaks on non-managed devices
+      href: data-leak-prevention.md
+    - name: BYOD
+      href: byod-enable.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -115,7 +119,7 @@
   - name: Set up Intune
     href: setup-steps.md
     items:
-    - name: Prerequisites
+    - name: Supported configurations
       href: supported-devices-browsers.md
       items:
       - name: Network bandwidth usage
@@ -158,6 +162,8 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Windows AutoPilot Deployment Program
+        href: enrollment-autopilot.md 
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -312,6 +318,8 @@
         href: vpn-settings-android.md
       - name: iOS
         href: vpn-settings-ios.md
+      - name: Configure Per-App VPN for iOS devices
+        href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
       - name: Windows 8.1
@@ -434,18 +442,27 @@
         items:
         - name: Check Point and Intune integration
           href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-      - name: Add MTD apps
-        href: mtd-apps-ios-app-configuration-policy-add-assign.md
-      - name: Enable MTD in Intune
-        href: mtd-connector-enable.md
-      - name: Create an MTD device compliance policy
-        href: mtd-device-compliance-policy-create.md
+      - name: Set up Zimperium
+        href: zimperium-mobile-threat-defense-connector.md
+        items:
+        - name: Zimperium and Intune integration
+          href: zimperium-mtd-connector-integration.md
+      - name: Set up Intune for MTD
+        items:
+        - name: Add MTD apps
+          href: mtd-apps-ios-app-configuration-policy-add-assign.md
+        - name: Create an MTD device compliance policy
+          href: mtd-device-compliance-policy-create.md
+        - name: Enable MTD in Intune
+          href: mtd-connector-enable.md
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Manage operating system versions
+    href: manage-os-versions.md
   - name: Manage software updates
     href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
@@ -523,7 +540,9 @@
     items:
     - name: Connect to the Data Warehouse with Power BI
       href: reports-proc-get-a-link-powerbi.md
-- name: Develop and customize
+    - name: Create a report from the OData feed with Power BI
+      href: reports-proc-create-with-odata.md
+- name: Automate and customize
   items:
   - name: Configure custom device settings
     href: custom-settings-configure.md
@@ -547,33 +566,26 @@
       href: custom-settings-windows-10.md
     - name: Android for Work
       href: custom-settings-android-for-work.md
-  - name: Prepare LOB apps for app protection
-    href: apps-prepare-mobile-application-management.md
-    items:
-    - name: App Wrapping Tool for iOS
-      href: app-wrapper-prepare-ios.md
-    - name: App Wrapping Tool for Android
-      href: app-wrapper-prepare-android.md
-  - name: Sideload Windows apps
-    href: app-sideload-windows.md
-  - name: Intune App SDK
+  - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
     - name: Get started with Intune App SDK
       href: app-sdk-get-started.md
+    - name: Prepare LOB apps for app protection
+      href: apps-prepare-mobile-application-management.md
+    - name: App Wrapping Tool for iOS
+      href: app-wrapper-prepare-ios.md
     - name: Intune App SDK for iOS
       href: app-sdk-ios.md
+    - name: App Wrapping Tool for Android
+      href: app-wrapper-prepare-android.md
     - name: Intune App SDK for Android
       href: app-sdk-android.md
     - name: Intune App SDK Cordova plugin
       href: app-sdk-cordova.md
     - name: Intune App SDK Xamarin component
       href: app-sdk-xamarin.md
-  - name: How to use Intune Graph APIs
-    href: intune-graph-apis.md
-  - name: Intune Graph API
-    href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
-  - name: Intune Data Warehouse API
+  - name: Report using Intune Data Warehouse API
     href: reports-nav-intune-data-warehouse.md
     items:
     - name: Get data from the Data Warehouse API with a REST client
@@ -595,5 +607,12 @@
         href: reports-ref-application.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
+        name: Reference for user device associations entity
+        href: reports-ref-userdeviceassociations.md
+  - name: Sideload Windows apps
+    href: intune-graph-apis.md
+    items:
+    - name: Graph APIs for Intune Reference
+      href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
 - name: Glossary
   href: intune-glossary.md

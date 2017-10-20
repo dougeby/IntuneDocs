@@ -1,22 +1,22 @@
 ---
 # required metadata
 
-title: Enroll devices 
+title: Enroll devices
 description: Mobile device management (MDM) uses enrollment to bring devices into management and allow access to resources.
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: damionw

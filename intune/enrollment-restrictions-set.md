@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set enrollment restrictions in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: nathbarn
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can determine which devices can enroll into management with Intune. Use the Intune portal to set the following restrictions for device enrollment:
+As an Intune admin, you can determine which devices can enroll into management with Intune. Use the Azure portal to set the following restrictions for device enrollment:
 
 - Maximum number of enrolled devices
 - Device platforms that can enroll:
@@ -73,7 +73,7 @@ The default enrollment restrictions apply to all users.
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. Choose **Device enrollment** > **Enrollment restrictions**.
-4. In the Intune portal, choose **Device enrollment**, choose **Enrollment restrictions**.
+4. In the Azure portal, choose **Device enrollment**, choose **Enrollment restrictions**.
 5. Choose **Enrollment restrictions** > **Device Limit Restrictions**.
 6. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
 ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)

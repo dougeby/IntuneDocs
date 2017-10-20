@@ -4,8 +4,8 @@
 title: Windows 10 policy settings 
 description: Use the policy settings listed in this topic to help you configure built-in and custom settings for enrolled Windows 10 desktop and Windows 10 Mobile devices.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac

@@ -2,11 +2,11 @@
 # required metadata
 
 title: Intune device restriction settings for Android for Work 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -32,6 +32,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Work profile settings
+- 	**Copy and paste between work and personal profiles** - Controls copy and paste between work and personal apps. Choose **Block** to enabling blocking. Choose **Not configured** to disable blocking.
 - **Data sharing between work and personal profiles** - Use this setting to control whether apps in the work profile can share with apps in the personal profile. This setting controls sharing actions within applications (for example, the **Share…** option in the Chrome browser app) and does not apply to copy/paste clipboard behavior. Unlike [app protection policy settings](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), device restriction settings are managed from the Intune portal and use the Android for Work work profile partition to isolate managed apps. Choose from:
 	- **Default sharing restrictions** - This setting is the default sharing behavior of the device, which varies depending on the version of Android it is running. By default, sharing from the personal profile to the work profile is allowed. Also by default, sharing from the work profile to the personal profile is blocked. This setting prevents sharing of data from the work to the personal profile. Google does not provide a way to block sharing from the personal profile to work profile on devices running versions 6.0 and later.   
 	- **Apps in work profile can handle sharing request from personal profile** - Use this option to enable the built-in Android feature that allows sharing from the personal to work profile. When enabled, a sharing request from an app in the personal profile can share with apps in the work profile. This setting is the default behavior for Android devices running versions earlier than 6.0.

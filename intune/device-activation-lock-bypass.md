@@ -2,11 +2,11 @@
 # required metadata
 
 title: Bypass iOS Activation Lock with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to use Intune to bypass iOS Activation Lock to access locked devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/22/2017
 ms.topic: get-started-article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Bypass Activation Lock on supervised iOS devices with Intune
+# Bypass Activation Lock on Supervised iOS devices with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

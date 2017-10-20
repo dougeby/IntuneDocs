@@ -4,8 +4,8 @@
 title: Intune glossary 
 description: Learn about some of the terminology in Microsoft Intune
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/16/2017
 ms.topic: get-started-article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 #ms.reviewer: angrobe

@@ -4,8 +4,8 @@
 title: Manage Microsoft Store for Business apps 
 description: Connect Microsoft Intune to the Microsoft Store for Business if you want to manage and deploy volume-purchased apps from the Intune console
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 02/02/2017
 ms.topic: article
@@ -13,10 +13,10 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: coryfe

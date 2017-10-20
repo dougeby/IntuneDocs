@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to add Windows Phone line-of-business apps to Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about adding Windows Phone line-of-business apps to Intune."
 keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,8 +33,8 @@ ms.custom: intune-azure
 
 ## Step 1 - Specify the software setup file
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign in to the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** + **Intune**.
 3. On the **Intune** blade, choose **Manage apps**.
 4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.
@@ -71,4 +71,8 @@ ms.custom: intune-azure
 
 ## Next steps
 
-The app you have created are displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+The app you have created is displayed in the apps list. You can now assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+
+Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
+
+Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](introduction-device-app-lifecycles.md)

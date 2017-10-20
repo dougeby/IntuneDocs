@@ -2,11 +2,11 @@
 # required metadata
 
 title: Getting started with policies
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Create policies to prevent users from doing unauthorized things with their devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article

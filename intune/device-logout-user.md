@@ -2,11 +2,11 @@
 # required metadata
 
 title: Logout the user of an iOS device with Intune 
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to log out the current user of an iOS device with Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/13/2017
 ms.topic: get-started-article

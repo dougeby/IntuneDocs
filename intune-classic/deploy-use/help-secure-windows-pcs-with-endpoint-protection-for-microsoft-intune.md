@@ -16,7 +16,6 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: damionw

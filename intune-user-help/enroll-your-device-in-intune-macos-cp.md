@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ Getting access to your organization’s apps, data, and resources makes it easie
   > [!NOTE]
   > If you want to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
 
-1. On your __Dock__, find __Safari__ and open the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55770) page for the Company Portal app for macOS.
+1.  On your __Dock__, find __Safari__ and go to [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
 
 2. Download the app. Your Mac will check to make sure that the download of **CompanyPortal.dmg** is safe to open. After you open it from your **Downloads** folder, drag the **CompanyPortal** app on the **Applications** folder.
 
@@ -54,4 +54,4 @@ Getting access to your organization’s apps, data, and resources makes it easie
 
 8. Your Mac will begin enrolling into management. You might be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer. A message appears once you've completed Company Access Setup to let you know you're done.
 
-Still need help? Check in with your IT administrator. You can find their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).

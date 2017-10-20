@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Mobile Threat Defense device compliance policy with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Create Mobile Threat Defense device compliance policy in Intune"
 keywords:
 author: andredm7
@@ -41,8 +41,6 @@ As part of the MTD setup, in the MTD partner console, you created a policy that 
 Prerequisites for device compliance policy with MTD:
 
 -   Set up MTD integration with Intune
-
--   Enable the MTD connector in Intune
 
 ## To create a MTD device compliance policy
 
@@ -83,3 +81,7 @@ To assign a device compliance policy to users, choose a policy that you have pre
 
 	> [!NOTE] 
 	> You have applied the policy to users. The devices used by the users who are targeted by the policy will be evaluated for compliance.
+
+## Next steps
+
+- [Enable MTD with Intune](mtd-connector-enable.md)

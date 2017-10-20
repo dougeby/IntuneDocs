@@ -4,9 +4,9 @@
 title: Microsoft Intune App SDK for iOS developer guide 
 description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app.
 keywords:
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: mtillman
+ms.author: mabriggs
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod:
@@ -475,7 +475,7 @@ WebViewHandledURLSchemes | Array of Strings | Specifies the URL schemes that you
 > If your app will be released to the App Store, `MAMPolicyRequired` must be set to "NO," per App Store standards.
 
 ## Enabling MAM targeted configuration for your iOS applications
-MAM targeted configuration allows an app to receive configuration data through the Intune App SDK. The format and variants of this data must be defined and communicated to Intune customers by the application owner/developer. Intune administrators can target and deploy configuration data via the Intune Azure console. As of the Intune App SDK for iOS (v 7.0.1), apps that are participating in MAM targeted configuration can be provded MAM targeted configuration data via the MAM Service. The application configuration data is pushed through our MAM Service directly to the app instead of through the MDM channel. The Intune App SDK provides a class to access the data retrieved from these consoles. Consider the following as prerequisites: <br>
+MAM targeted configuration allows an app to receive configuration data through the Intune App SDK. The format and variants of this data must be defined and communicated to Intune customers by the application owner/developer. Intune administrators can target and deploy configuration data via the Intune Azure portal. As of the Intune App SDK for iOS (v 7.0.1), apps that are participating in MAM targeted configuration can be provded MAM targeted configuration data via the MAM Service. The application configuration data is pushed through our MAM Service directly to the app instead of through the MDM channel. The Intune App SDK provides a class to access the data retrieved from these consoles. Consider the following as prerequisites: <br>
 * The app needs to be MAM-WE enrolled before you access the MAM targeted config UI. For more information about MAM-WE, see [App protection policy without device enrollment in the Intune App SDK guide](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
 * Include ```IntuneMAMAppConfigManager.h``` in your app's source file.
 * Call ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` to get the App Config Object.

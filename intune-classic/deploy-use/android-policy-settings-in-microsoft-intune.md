@@ -2,22 +2,22 @@
 
 # required metadata
 
-title: Android and Samsung KNOX policy settings 
+title: Android and Samsung KNOX policy settings
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: heenamac
@@ -193,24 +193,30 @@ Intune supports a limited number of Android custom policies at present. See the 
 
 |Setting name|Details|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Android custom policy to help you identify it in the Intune console.|
-    |**Description**|Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
+    | **Name** |Enter a unique name for the Android custom policy to help you identify it in the Intune console.|
+    | **Description** |Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
 
 ### OMA-URI settings
 
    |Setting name|Details|
     |--------|--------------------|
-    |**Setting name**|Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
-    |**Setting description**|Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
-    |**Data type**|Select the data type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
-    |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
-    |**Value**|Specify the value to associate with the OMA-URI that you specified previously.|
+    | **Setting name** |Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
+    | **Setting description** |Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
+    | **Data type** |Select the data type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
+    | **OMA-URI (case sensitive)** |Specify the OMA-URI you want to supply a setting for.|
+    | **Value** |Specify the value to associate with the OMA-URI that you specified previously.|
 
 ### Examples
 
 - [Create a Wi-Fi profile with a pre-shared key](pre-shared-key-wi-fi-profile.md)
 - [Use a custom policy to create a per-app VPN profile for Android devices](per-app-vpn-for-android-pulse-secure.md)
 - [Use custom policies to allow and block apps for Samsung KNOX devices](custom-policy-to-allow-and-block-samsung-knox-apps.md)
+
+## Supported Samsung KNOX Standard devices
+
+The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify KNOX compatibility with your device reseller before you purchase and deploy Samsung devices.
+
+You can find a list of supported Samsung KNOX devices along with the list of [Intune supported devices](/intune/supported-devices-browsers.md#intune-supported-devices).
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

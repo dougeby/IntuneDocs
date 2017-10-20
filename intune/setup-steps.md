@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 
 | Steps | Status  |
 | ------------- |-------------|
-| 1  | [Prerequisites](supported-devices-browsers.md) - Need-to-know info before you start. This includes supported configurations and networking requirements.|
+| 1  | [Supported configurations](supported-devices-browsers.md) - Need-to-know info before you start. This includes supported configurations and networking requirements.|
 | 2 |  [Sign in to Intune](account-sign-up.md) - Sign in to your trial subscription or create a new Intune subscription. |  
 | 3 | [Configure domain name](custom-domain-name-configure.md) - Set DNS registration to connect your company's domain name with Intune. This gives users a familiar domain when connecting to Intune and using resources.  |
 | 4 | [Add users](users-add.md) - Manually add users or connect Active Directory to sync users with Intune. Required unless your devices are "userless" kiosk devices, for example. |

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Create and deploy Windows Information Protection (WIP) app protection policy with Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,7 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 ## Pre-requisites
 
-You need to configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following:
 
@@ -149,7 +149,7 @@ WIP runs silently, logging inappropriate data sharing, without blocking anything
 #### Off (not recommended)
 WIP is turned off and doesn't help to protect or audit your data.
 
-After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
+After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
 
 ### Add a protection mode
 
@@ -161,16 +161,13 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 ### Use WIP Learning
 
-1. Go to the Azure Dashboard. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Open the Azure portal. Choose **More services**. Type **Intune** in the text box filter.
 
-2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
+3. Choose **Intune** > **Mobile Apps**.
 
-3. Choose **Intune**, the **Intune dashboard** opens, choose **Mobile Apps**.
-
-4. Choose **WIP Learning** under **Monitor**. You see the unknown apps logged by the WIP Learning.
-
-> [!IMPORTANT]
-> Once you have the apps showing up in the WIP Learning logging report, you can them into your app protection policies.
+4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.  
+ 
+    Once you have the apps showing up in the WIP Learning logging report, you can add them to your app protection policies.
 
 ## Deploy your WIP app protection policy
 
@@ -181,7 +178,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 After you created your WIP app protection policy, you need to deploy it to your organization using MAM.
 
-1.  On the **App policy** blade, choose your newly-created app protection policy, choose **User groups** > **Add user group**.
+1.  On the **App policy** blade, choose your newly created app protection policy, choose **User groups** > **Add user group**.
 
 	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 

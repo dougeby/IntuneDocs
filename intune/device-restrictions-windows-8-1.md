@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 8.1titleSuffix: "Intune on Azure"
+title: Intune device restriction settings for Windows 8.1titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Windows 8.1 devices."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article

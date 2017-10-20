@@ -7,16 +7,16 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+ROBOTS: NOINDEX,NOFOLLOW
 
 # optional metadata
 
-#ROBOTS:
 #audience:+
 #ms.devlang:
 ms.reviewer: damionw
@@ -379,7 +379,14 @@ Examples will be added soon about what to look for in these log files.
 ### Other iOS enrollment errors
 A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
 
-## PC  Issues
+## PC Issues
+
+
+|Error message|Issue|Resolution|
+|---|---|---|
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Please get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
+
+
 
 ### The machine is already enrolled - Error hr 0x8007064c
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.

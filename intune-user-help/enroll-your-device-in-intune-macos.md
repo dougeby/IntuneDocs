@@ -7,19 +7,21 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1csearchScope: - User help
+ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
+searchScope:
+ - User help
 
 # optional metadata
 
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -28,21 +30,18 @@ ms.custom: intune-enduser
 
 # Enroll your macOS device in Intune
 
-Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your IT admin that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your company support that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-  > [!NOTE]
-  > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
-
-1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](http://portal.manage.microsoft.com).
+1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
 2. Log into the Company Portal website with your work or school account.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. When you log in, you will see any available __Home__, __Apps__, and __Categories__ tabs. This page will show whatever apps are available for you to install. If you do not have any devices enrolled yet, you'll see a notice that says **We can't show you any apps.** You can proceed by selecting __My Devices__.
+3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
 
  ![A screenshot of the landing page for the web portal with the web portal showing that no apps can be installed yet, with a My Devices button underneath.](./media/macOS_enroll_001_landing_page.png)
 
-4. On the __My Devices__ page, you will either see a list of enrolled devices or simply a banner. This depends on if you already have a device enrolled, macOS or otherwise. To enroll a device that is not listed, select the banner that says __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__.
+4. On the __My Devices__ page, you will either see a list of enrolled devices or simply a banner. This depends on if you already have a device enrolled, macOS or otherwise. To enroll a device that is not listed, select the banner that says __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__. If you don't have any enrolled devices, the banner will read **You don't have any devices enrolled. Enroll this one by tapping here.**
 
   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -69,4 +68,6 @@ Getting access to your organization’s apps, data, and resources makes it possi
 
  ![macOS Profile Installed](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Still need help? Check in with your IT administrator. You can find their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
+Some profiles may say that they're **Unverified**; as long as they're from your company, this is normal.
+
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).

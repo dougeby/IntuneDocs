@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune VPN settings for Windows 10 devices
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
 keywords:
 author: lleonard-msft

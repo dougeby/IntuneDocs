@@ -38,8 +38,8 @@ Your company's IT department can see information that is relevant to work, but n
 ## How do I get the Company Portal?
 You can get the Company Portal two different ways:
 
-- By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your IT admin can also install the Company Portal app for you.
-- By going to the [Company Portal website](https://portal.manage.microsoft.com) that your IT admin set up.
+- By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your company support can also install the Company Portal app for you.
+- By going to the [Company Portal website](https://portal.manage.microsoft.com) that your company support set up.
 
 ## What's the difference between the app and the website?
 There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
@@ -59,9 +59,9 @@ To see what you can do by using the Company Portal website versus what you can d
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
 
 ## What happens when you add a computer or device to the Company Portal?
-When you add a computer or device to the Company Portal, some software might be installed or an app might be downloaded (depending on the device). You are also giving your IT admin permission to manage your device to help protect the company information on the device.
+When you add a computer or device to the Company Portal, some software might be installed or an app might be downloaded (depending on the device). You are also giving your company support permission to manage your device to help protect the company information on the device.
 
-To learn about what your IT admin can and can't see on your device, use the link that matches the type of device you're using:
+To learn about what your company support can and can't see on your device, use the link that matches the type of device you're using:
 
 - [Installing the Company Portal app for Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installing the Company Portal app for iOS and macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -101,4 +101,4 @@ Microsoft recommends that you first try to see if you can fix your issue yoursel
 - [Fix common issues with your iOS device](troubleshoot-your-device-ios.md)
 - [Fix common issues with your Windows device](troubleshoot-your-device-windows.md)
 
-You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your IT admin for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](https://portal.manage.microsoft.com).
+You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your company support for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](https://portal.manage.microsoft.com).

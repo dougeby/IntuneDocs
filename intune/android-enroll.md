@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll Android devices in Intune
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Learn how to enroll Android devices in Intune."
 keywords:
 author: nathbarn

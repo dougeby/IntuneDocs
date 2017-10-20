@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll devices - device enrollment manager
-titleSuffix: "Intune on Azure"
+titlesuffix: "Azure portal"
 description: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: nathbarn
@@ -41,7 +41,7 @@ Users must exist in the Azure portal to be added as device enrollment managers. 
 
 A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and adds a restaurant supervisor to the DEM account, in effect giving that supervisor DEM capabilities. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
 
-Only users in the Intune console can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
+Only users in the Azure portal can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
 
 The DEM user can:
 
@@ -100,5 +100,5 @@ Removing a device enrollment manager does not affect enrolled devices. When a de
 
 ## View the properties of a device enrollment manager
 
-1. In the Intune portal, choose **Device enrollment**, and then choose **Device Enrollment Managers**.
+1. In the Azure portal, choose **Device enrollment**, and then choose **Device Enrollment Managers**.
 2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
