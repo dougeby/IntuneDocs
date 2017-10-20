@@ -25,7 +25,7 @@ ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 
 ---
 
-# Manage operting system versions with Intune
+# Manage operating system versions with Intune
 On modern mobile and desktop platforms, major updates, patches, and new versions release at a rapid pace. You have controls to fully manage updates and patches on Windows, but other platforms like iOS and Android require your end user to participate in the process.  Microsoft Intune has the capabilities to help you structure your operating system version management, across platforms, today.
 
 Intune can help you address these common scenarios: 
@@ -68,7 +68,7 @@ You have two different options:
 
 |Warn  |Block  |
 |---------|---------|
-|Warn informs the end user that they should upgrade if they launch an APP/MAM app on a device with OS version below the specified version.  App and Org data access is allowed.   |Block informs the end user that they must upgrade if they open an APP/MAM app on a device with OS version below the specified version.  App and Org data access is not allowed.         |
+|Warn informs the end user that they should upgrade if they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is allowed for the app and organizational data.|Block informs the end user that they must upgrade when they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is not allowed for app and organizational data.|
 |![Android update warning dialog](./media/os-version-android-warning.png)    |![App access blocked dialog](./media/os-version-app-access-blocked.png)          |
 
  
@@ -78,7 +78,7 @@ Organizations are using app protection policy settings today at app launch or re
 For details, see [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies)
 
 ## Managing a new operating system version roll out
-You can use the Intune capabilities described in this topic to help you move your organization to a new operating system version within the timeline you define. The following is a sample deployment model to move your users from operating system v1 to operating system v2 in seven days.
+You can use the Intune capabilities described in this article to help you move your organization to a new operating system version within the timeline you define. The following is a sample deployment model to move your users from operating system v1 to operating system v2 in seven days.
 - **Step 1**: Use enrollment restrictions to require operating system v2 as the minimum version to enroll the device. This ensures new end-user devices are compliant at enrollment time.
 - **Step 2a**: Use Intune app protection policies to warn users when the app opens or resumes that operating system v2 is required.
 - **Step 2b**. Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant. Use **Actions** for non-compliance to allow a seven day grace period and to send end users an email notification with your timeline and requirements.
@@ -86,7 +86,7 @@ You can use the Intune capabilities described in this topic to help you move you
   - You can run a compliance report to identify users that are out of compliance. 
 - **Step 3a**: Use Intune app protection policies to block users when an app opens or resumes if the device is not running operating system v2.
 - **Step 3b**: Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant.
-  - These policies will require devices to be updated for them to continue to access organational data. Protected services will be blocked when used with device conditional access. Apps enabled with an app protection policy are blocked when opened or when they access of organizational data.
+  - These policies will require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device conditional access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
 
 ## Next steps
 Use the following resources to manage operating system versions in your organization: 
