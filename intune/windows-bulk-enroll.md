@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,6 +96,10 @@ Provisioning is intended to be used on new Windows devices. Provisioning failure
 
 ### Problems with bulk enrollment and Company Portal
 If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
+
+### Bulk enrollment with Wi-Fi 
+
+Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. If you are using certificates to manage your devices' Wi-Fi, use *some other enrollment method*. 
 
 ### Conditional access
 Conditional access is not available for Windows devices enrolled using bulk enrollment.
