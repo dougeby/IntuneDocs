@@ -3803,5 +3803,10 @@
 			"redirect_url": "/intune/company-portal-app",
 			"redirect_document_id": false
 		}
+		{
+			"source_path": "intune/reports-ref-userdeviceassociations.md",
+			"redirect_url": "intune/reports-ref-devices",
+			"redirect_document_id": true
+		}
 	]
 }
