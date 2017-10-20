@@ -41,14 +41,10 @@ The warehouse exposes data in the following high-level categories:
 
 Entity sets are named collections of entities in the data model. These sets contain entities that define the data collected in the model. Each entity set provide an access point into the Data Warehouse data model. You find details about the following categories of entities:
 
+  -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)
+  -  [Devices](reports-ref-devices.md)
+  -  [Policy](reports-ref-policy.md)
+  -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)
   -  [User Device Associations](reports-ref-user-device.md)
-  -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-  -  [Devices](reports-ref-devices.md)
-  -  [Application](reports-ref-application.md)
-  -  [Policy](reports-ref-policy.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
