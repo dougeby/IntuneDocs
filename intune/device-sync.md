@@ -36,11 +36,11 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 ## Supported platforms
 
-- Windows - Supported
-- Windows Phone - Supported
-- iOS - Supported
-- macOS - Supported
-- Android - Supported
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## How to sync a device
 
@@ -50,6 +50,26 @@ The **Sync** device action forces the selected device to immediately check in wi
 4. On the **Devices and groups** blade, choose **All devices**.
 5. From the list of devices you manage, choose a device, and then choose the **Sync** remote action.
 7. Choose **Yes** to confirm the action.
+
+
+## Retriable error codes
+
+When an administrator runs the **Sync** device action, iOS and Androids apps that failed but  raised a retriable error code will be available to the device. However, apps that raised a non-retriable error code must wait for seven days before they can be made available to the device.
+
+
+| Error Code  | Suggested Description                                                                                                                  | Retriable |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | An unknown error occurred.                                                                                                             | No        |
+| 2016330897 | Your connection to Intune timed out. Reset your connection                                                                             | Yes       |
+| 2016330896 | You lost connection to the Internet. Reset your connection.                                                                            | Yes       |
+| 2016330895 | You lost connection to the Internet. Reset your connection.                                                                            | Yes       |
+| 2016330894 | You lost connection to the Internet. Reset your connection.                                                                            | Yes       |
+| 2016330893 | You lost connection to the Internet. Reset your connection.                                                                            | Yes       |
+| 2016330892 | International roaming is disabled.                                                                                                     | No        |
+| 2016330891 | The cellular data connection for this device cannot be accessed while a phone call is being made. Wait for the phone call to complete. | Yes       |
+| 2016330890 | The cellular network for this device. These devices could not be used at this time.                                                   | No        |
+| 2016330889 | The secure connection failed. Reset your connection.                                                                                   | Yes       |
+| 2016330888 | The server trust evaluation has failed.                                                                                                | No        |
 
 ## Next steps
 
