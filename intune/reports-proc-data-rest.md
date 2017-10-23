@@ -63,7 +63,7 @@ running on your local machine references the Intune Data Warehouse API when the 
 
 You now have an app defined in Azure. Grant access from the native app to the Microsoft Intune API.
 
-1.  Click the native app. You named the app something such as Intune Data Warehouse Client.
+1.  Click the native app. You named the app something such as **Intune Data Warehouse Client**.
 2.  Click **Required permissions** from the **Settings** blade
 3.  Click **Add** in the **Required permissions** blade.
 4.  Click **Select an API**.
@@ -158,14 +158,14 @@ The following sample contains a simple REST client. The code uses the **httpClie
 1.  Open **Microsoft Visual Studio**.
 2.  Choose **File** > **New Project**. Expand **Visual C#**, and choose **Console App (.Net Framework)**. 
 3.  Name the project ` IntuneDataWarehouseSamples`, browse to where you would like to save the project, and then click **OK**.
-3.  Right-click the name of the solution in the Solution Explorer, and then select **Manage NuGet Packages for Solution**. Click **Browse**, and then type `Microsoft.IdentityModel.Clients.ActiveDirectory' in the search box.
-4. Choose the package, select the **IntuneDataWarehouseSamples** project under Manage Packages for Your Solution, and then click **Install**. 
-5. Click **I Accept** to accept the NuGet package license.
-6. Open `Program.cs` from the Solution Explorer.
+4.  Right-click the name of the solution in the Solution Explorer, and then select **Manage NuGet Packages for Solution**. Click **Browse**, and then type `Microsoft.IdentityModel.Clients.ActiveDirectory` in the search box.
+5. Choose the package, select the **IntuneDataWarehouseSamples** project under Manage Packages for Your Solution, and then click **Install**. 
+6. Click **I Accept** to accept the NuGet package license.
+7. Open `Program.cs` from the Solution Explorer.
 
     ![Project in Visual Studio](media\reports-get_rest_data_in.png)
 
-7.  Replace the code in Program.cs with the following code:  
+8.  Replace the code in Program.cs with the following code:  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -220,12 +220,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  Update the `TODO`s in the code sample.
-9.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
+9.  Update the `TODO`s in the code sample.
+10.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
     ![Date entity retrieved in JSON format.](media\reports-get_rest_data_output.png)
 
-10.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
+11.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
 
 ## Next steps
 

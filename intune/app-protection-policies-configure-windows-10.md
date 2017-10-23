@@ -60,6 +60,9 @@ Before creating a Windows 10 app protection policy using, you need to enable mob
 
 5.  Once you configure these settings, choose **Save**.
 
+> [!NOTE]
+> Devices with a MAM enrollment state are required to be Azure AD joined.
+
 ## Next steps
 
 [Create a WIP app protection policy](windows-information-protection-policy-create.md)

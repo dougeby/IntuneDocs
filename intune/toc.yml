@@ -162,6 +162,8 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Windows AutoPilot Deployment Program
+        href: enrollment-autopilot.md 
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -316,6 +318,8 @@
         href: vpn-settings-android.md
       - name: iOS
         href: vpn-settings-ios.md
+      - name: Configure Per-App VPN for iOS devices
+        href: vpn-setting-configure-per-app.md
       - name: macOS
         href: vpn-settings-macos.md
       - name: Windows 8.1
@@ -377,6 +381,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Actions for noncompliance
+      href: actions-for-noncompliance.md   
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
   - name: Set up conditional access
@@ -457,6 +463,8 @@
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Manage operating system versions
+    href: manage-os-versions.md
   - name: Manage software updates
     href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
@@ -534,6 +542,8 @@
     items:
     - name: Connect to the Data Warehouse with Power BI
       href: reports-proc-get-a-link-powerbi.md
+    - name: Create a report from the OData feed with Power BI
+      href: reports-proc-create-with-odata.md
 - name: Automate and customize
   items:
   - name: Configure custom device settings
@@ -599,9 +609,9 @@
         href: reports-ref-application.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
+        name: Reference for user device associations entity
+        href: reports-ref-userdeviceassociations.md
   - name: Sideload Windows apps
-    href: app-sideload-windows.md
-  - name: Use Graph APIs for Intune
     href: intune-graph-apis.md
     items:
     - name: Graph APIs for Intune Reference

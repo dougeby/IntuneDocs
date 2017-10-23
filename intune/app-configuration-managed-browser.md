@@ -43,7 +43,11 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 
 For details, see [What are app protection policies?](/intune/app-protection-policy)
 
-You can apply these settings to devices that are enrolled with Intune, enrolled with another device management product, or to devices that are not managed.
+You can apply these settings to:
+
+- Devices that are enrolled with Intune
+- Enrolled with another MDM product
+- Unmanaged devices
 
 If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While the Managed Browser is not managed by Intune, it cannot access data from other Intune-managed applications. 
@@ -133,6 +137,7 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 - These bookmarks cannot be deleted or modified by users
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
+- If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
@@ -148,7 +153,7 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 |||
 |-|-|
 |Key|Value|
-|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
