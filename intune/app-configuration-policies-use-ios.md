@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to use Intune app configuration policies for iOS
+title: Add app configuration policies for managed iOS devices | Microsoft Docs
 titlesuffix: "Azure portal"
-description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
+description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,18 +26,15 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to use Microsoft Intune app configuration policies for iOS
+# Add app configuration policies for managed iOS devices
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use app configuration policies in Microsoft Intune to supply settings that are used when users run an iOS app. For example, an app might require users to specify:
 
 -   A custom port number.
-
 -   Language settings.
-
 -   Security settings.
-
 -   Branding settings such as a company logo.
 
 If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
