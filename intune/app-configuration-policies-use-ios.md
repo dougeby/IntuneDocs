@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,19 +52,22 @@ You do not assign these policies directly to users and devices. Instead, you ass
 > For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).
 
 ## Create an app configuration policy
-1.	Sign into the Azure portal.
-2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
-3.	On the **Intune** blade, choose **Mobile apps**.
-4.	In the **Mobile apps** workload, choose **Manage** > **App Configuration Policies**.
-5.	In the list of policies blade, choose **Add**.
-6.	On the **Add Configuration Policy** blade, supply a **Name** and an optional **Description** for the app configuration policy.
-7.	For **Device enrollment type**, choose one of:
-	- **Enrolled with Intune** - For apps that are managed by Intune.
-	- **Not enrolled with Intune** - For apps that are not managed by Intune, or are managed by another solution.
-8.	For **Platform**, choose **iOS** (for devices enrolled with Intune only)
-9.	Choose **Associated App**, then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
-10.	On the **Add Configuration Policy** blade, choose **Configuration settings**
-11. On the **Configuration Settings** blade, choose how you want to specify the XML values that make up the configuration profile from:
+
+1. Sign in to the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** + **Intune**.
+3. Choose the **Mobile apps** workload.
+4. Click **App configuration policies** in the **Manage** group, and then click **Add**.
+5. Set the following details:
+    - **Name**  
+      The name of the profile that will appear in the Azure portal.
+    - **Description**  
+      The  description of the profile that will appear in the Azure portal.
+    - **Device enrollment type**  
+      Choose **Managed devices**.
+6. Select **iOS** for the **Platform.
+7.	Choose **Associated App**, then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
+8.	On the **Add Configuration Policy** blade, choose **Configuration settings**
+9. On the **Configuration Settings** blade, choose how you want to specify the XML values that make up the configuration profile from:
 	- **Enter XML data** (for devices enrolled with Intune only) - Enter or paste an XML property list that contains the app configuration settings that you want. The format of the XML property list varies depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
 Intune checks that the XML you entered is in a valid format. It does not check that the XML property list works with the app that it is associated with.
 To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.

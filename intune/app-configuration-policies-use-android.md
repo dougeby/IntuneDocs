@@ -39,14 +39,18 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 1. Sign in to the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. Choose **Mobile apps**. Under **Manage**, choose **App configuration policies** and then click **Add**.
-4. Set the following details:
-    - **Name** - The name of the profile that will appear in the Azure portal.
-    - **Description** - The  description of the profile that will appear in the Azure portal.
-    - **Device enrollment type** - Choose **Managed devices**
-5. Select **Android** for the **Platform.
-6. Select **Associated App** to choose the app for which you want to define an  app configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune.
-7. Select **Configuration settings**. You can set configurations using:
+3. Choose the **Mobile apps** workload.
+4. Click **App configuration policies** in the **Manage** group, and then click **Add**.
+5. Set the following details:
+    - **Name**  
+      The name of the profile that will appear in the Azure portal.
+    - **Description**  
+      The  description of the profile that will appear in the Azure portal.
+    - **Device enrollment type**  
+      Choose **Managed devices**.
+6. Select **Android** for the **Platform.
+7. Select **Associated App** to choose the app for which you want to define an  app configuration policy.  Select from the list of Android for Work apps that you have approved and synchronized with Intune.
+8. Select **Configuration settings**. You can set configurations using:
     - [The configuration designer](#Use-the-configuration-designer)
     - [The JSON editor](#Use-the-JSON-editor)
 
@@ -54,7 +58,7 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 Some Android apps support managed configurations options that you can configure in the Azure portal using the configuration designer. Settings are supplied to apps automatically when the app is installed.
 
-1. For **Configuration settings format**, select **Use configuration designer**.
+1. Open the **Configuration** blade, and select **Use configuration designer**.
 2. Choose **Add**. A list of  available configuration settings is displayed. The list includes:
     - **Configuration keys** - Name of the setting.
     - **Value type** - The setting that can be configured, for example **Boolean** or **String**.
