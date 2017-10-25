@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to sign in to the Company Portal app | Microsoft Docs
-description:
+description: Find out how to sign in to the Company Portal app on multiple platforms.
 keywords:
 author: barlanmsft
 ms.author: barlan
