@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 The Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment.
 
-The data pulled from your tenant is added into a data warehouse. The warehouse is a set of entities and relationships that are meaningful to the type of questions you  want to ask. For example, you can review the number of installations of an in-house developed Android application per day over the last week to assess if there is an increasing trend of installations. The structure of the data warehouse enables you to gain insight into your mobile environment. In turn, analytic tools, such as Microsoft Power BI, can use the Data Warehouse data model to create visualizations and dynamic dashboards.
+The data pulled from your tenant is added into a data warehouse. The warehouse is a set of entities and relationships that are meaningful to the type of questions you  want to ask. For example, you can review the number of installations of an in-house developed Android application per day over the last week to assess if there is an increasing trend of installations. The structure of the data warehouse enables you to gain insight into your mobile environment. In turn, analytics tools, such as Microsoft Power BI, can use the Data Warehouse data model to create visualizations and dynamic dashboards.
 
 The Intune Data Warehouse structure uses a star-schema model. A star-schema organizes facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. A *dimension* in the context of the model is a set of categories and their hierarchical relationship. For example, days are grouped into months and months are grouped into years. A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
 
@@ -47,6 +47,7 @@ Entity sets are named collections of entities in the data model. These sets cont
   -  [Devices](reports-ref-devices.md)
   -  [Application](reports-ref-application.md)
   -  [Policy](reports-ref-policy.md)
+  -  [User device association](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 

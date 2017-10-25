@@ -41,6 +41,8 @@ There are also trends highlighted for the enrollment, compliance, device configu
 
 The following steps show you how to download the Power BI file and how to use the OData link with Power BI.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## Install Power BI
 
 Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
@@ -55,9 +57,9 @@ The Power BI file (pbix) contains connection information for your tenant and a s
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
 3.  Click **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
-4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second as it gets your tenant data.
+4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second to get your tenant data.
 5.  Click **Refresh** to load your tenant data and review the reports.
-6.  If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Work account** as your authentication method.
+6.  If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Organizational account** as your authentication method.
 
 ## Load the data in Power BI using the OData link
 
@@ -71,8 +73,8 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 6. Choose **Basic**.
 7. Type or paste the **OData URL** into the URL box.
 8. Click **OK**.
-9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials.  
-    1.  Select **Work account**.  
+9. If you have not authenticated to Azure AD for your tenant from the Power BI desktop client, type your credentials. To gain access to your data, you must authorize with Azure Active Directory (Azure AD) using OAuth 2.0.  
+    1.  Select **Organizational account**.  
     2.  Type your username and password.  
     3.  Click **Sign In.**  
     4.  Click **Connect**.  
