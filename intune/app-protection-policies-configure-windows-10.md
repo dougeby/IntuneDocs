@@ -38,7 +38,7 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
 
 ## To configure the MAM provider
 
-1. Sign in to the Azure portal and Choose **Azure Active Directory.**
+1. Sign in to the Azure portal, and choose **Azure Active Directory.**
 
 2. Choose **Mobility (MDM and MAM)** in the **Manage** group.
 
@@ -50,11 +50,11 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
       Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.
 
      - **None**  
-    Select if all users can be enrolled in MAM.  
+     Select if all users can be enrolled in MAM.  
      - **Some**  
-    Select Azure AD groups that contain users who will be enrolled in MAM.  
+     Select Azure AD groups that contain users who will be enrolled in MAM.  
      - **All**  
-    Select if all users can be enrolled in MAM.
+     Select if all users can be enrolled in MAM.  
 
     **MAM terms of use URL**  
      The URL of the terms of use endpoint of the MAM service. The terms-of-use endpoint is used to display the terms of service to end-users before enrolling their devices for management. The terms-of-use text informs users about the policies enforced on the mobile device. 
