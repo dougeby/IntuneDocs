@@ -47,23 +47,16 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
 4. Configure the settings in the  **Restore default MAM URLs** group on the **Configure** blade.
 
     **MAM user scope**  
-      Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.
-
-     - **None**  
-     Select if all users can be enrolled in MAM.  
-     - **Some**  
-     Select Azure AD groups that contain users who will be enrolled in MAM.  
-     - **All**  
-     Select if all users can be enrolled in MAM.  
+      Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.<ul><li>**None**<br>Select if all users can be enrolled in MAM.</li><li>**Some**<br>Select Azure AD groups that contain users who will be enrolled in MAM.</li><li>**All**<br>Select if all users can be enrolled in MAM.</li></ul>
 
     **MAM terms of use URL**  
-     The URL of the terms of use endpoint of the MAM service. The terms-of-use endpoint is used to display the terms of service to end-users before enrolling their devices for management. The terms-of-use text informs users about the policies enforced on the mobile device. 
+     The URL of the terms of use endpoint of the MAM service. The terms-of-use endpoint is used to display the terms of service to end-users before enrolling their devices for management. The terms-of-use text informs users about the policies enforced on the mobile device.
 
     **MAM discovery URL**  
-    The URL of the enrollment endpoint of the MAM service. The enrollment endpoint is used to enroll devices for management with the MAM service. 
+    The URL of the enrollment endpoint of the MAM service. The enrollment endpoint is used to enroll devices for management with the MAM service.
 
     **MAM compliance URL**  
-      The URL of the compliance endpoint of the MAM service. When a user is denied access to a resource from a non-compliant device, a link to the compliance URL is displayed to the user. Users can navigate to this URL hosted by the MAM service, in order to understand why their device is considered non-compliant. Users can also initiate self-service remediation so their device becomes compliant and they can continue to access resources. 
+      The URL of the compliance endpoint of the MAM service. When a user is denied access to a resource from a non-compliant device, a link to the compliance URL is displayed to the user. Users can navigate to this URL hosted by the MAM service, in order to understand why their device is considered non-compliant. Users can also initiate self-service remediation so their device becomes compliant and they can continue to access resources.
 
 5.  Click **Save**.
 
