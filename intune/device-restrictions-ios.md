@@ -8,7 +8,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,8 +50,9 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 - **Configuration profile changes** - Allow the user to install configuration profiles.
 - **Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
 
-## Device Enrollment Program
-Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports iOS supervised mode, which enables a device to be configured with the following functionality:
+## Configurations requiring supervision
+
+iOS supervised mode can only be enabled during initial device setup through Apple’s Device Enrollment Program, or by using Apple Configurator. Once supervised mode is enabled, Intune can configure a device with the following functionality:
 
 - App Lock (Single App Mode) 
 - Global HTTP Proxy 
