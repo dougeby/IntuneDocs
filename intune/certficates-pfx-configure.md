@@ -131,10 +131,6 @@ In this step you will:
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
   Run the installer on the computer that is able to connect with the Certification Authority. Choose the PKCS (PFX) Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](certificates-configure.md).
 
-3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed.
-
-    After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, choose **Next** to view the properties of that certificate. Then choose **Next**, and then **Install**.
-
 4.  After the wizard completes, but before closing the wizard, click **Launch the Certificate Connector UI**.
 
     > [!TIP]
