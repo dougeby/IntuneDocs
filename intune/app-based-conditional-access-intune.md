@@ -49,17 +49,7 @@ For more information, see [Enterprise Mobility pricing ](https://www.microsoft.c
 
 ## Supported apps
 
-- **Exchange Online**:
-	- Microsoft Outlook for Android and iOS.
-<br></br>
-- **SharePoint Online**
-	- Microsoft Word for iOS and Android
-	- Microsoft Excel for iOS and Android
-	- Microsoft PowerPoint for iOS and Android
-	- Microsoft OneDrive for Business for iOS and Android
-	- Microsoft OneNote for iOS
-<br></br>
-- **Microsoft Teams**
+A list of apps that support app-based conditional access can be found in the [Azure Active Directory conditional access technical reference documentation.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)
 
 App-based conditional access [also supports line-of-business (LOB) apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
