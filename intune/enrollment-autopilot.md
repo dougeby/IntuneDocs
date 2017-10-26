@@ -47,15 +47,15 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
    - **End-user license agreement (EULA)**: Choose whether to show the EULA to users.
    - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
 
-   > [!Note]    
-   > This setting does not apply to Global Administrator or Company Administrator accounts. These accounts cannot be standard users because they have access to all administrative features in Azure AD.
-1. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
+     > [!Note]    
+     > This setting does not apply to Global Administrator or Company Administrator accounts. These accounts cannot be standard users because they have access to all administrative features in Azure AD.
+8. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
      
-   > [!Note]    
-   > The following settings are configured with all AutoPilot deployment profiles:
-   > - Skip Cortana, OneDrive, and OEM registration setup pages
-   > - Automatically set up for work or school
-   > - Sign in experience with company or school brand    
+> [!Note]    
+> The following settings are configured with all AutoPilot deployment profiles:
+> - Skip Cortana, OneDrive, and OEM registration setup pages
+> - Automatically set up for work or school
+> - Sign in experience with company or school brand    
 
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.
