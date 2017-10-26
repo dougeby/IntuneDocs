@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -59,6 +60,8 @@ Intune has additional templates you can use to promote device enrollment with yo
 -   [How to educate your end users about Microsoft Intune](end-user-educate.md) breaks out enrollment steps by mobile OS platform.
 
 -   The [Intune end-user enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) is customizable Word doc that explains how to enroll Android, iOS, and Mac devices in Intune.
+
+-   The [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) can be customized with your company’s logo to promote adoption of Intune and EMS within your organization.
 
 ## Next steps
 
