@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,29 @@ ms.custom: intune-azure
 
 Intune provides a number of ways in which you can monitor the properties of apps you manage, as well as their assignment status.
 
-1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
-2. In the list of apps blade, choose the app you want to see information for. You'll then see the <*app name*> **Device install status** blade:
-![App install status blade.](./media/monitor-apps.png)
+1. Sign in to the Azure portal.
+2. Choose **More Services** > **Monitoring + Management** + **Intune**.
+3. In the **Mobile Apps** workload, choose **Apps** in the **Manage** group.
+     
+    ![App install status blade.](./media/monitor-apps.png)
+5. In the list of apps blade, choose an app you. You'll then see the <*app name*> **Device install status** blade.
+
+The device install status report contains the following columns:
+
+1.  **Device Name** 
+      The name of the type of device.
+2.  **User Name** 
+      The name of the user.
+3.   **Platform** 
+       The operating system installed on the device.
+4.  **Version** 
+      The version number of the application.
+5.   **Status** 
+       The possible statuses for the apps are: **Installed**, **Not Installed**, **Install Pending** and **Error**.
+6. **Status Details** 
+    A readable description of the app's status on the device.
+7. **Last Check-In** 
+     When the device last checked-in to Intune.
 
 Then, take one of the following actions to learn more about your apps, and their assignments.
 

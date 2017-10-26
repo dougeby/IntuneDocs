@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,9 +39,10 @@ The Data Warehouse provides you access to more information about your mobile env
   -  A data model using the OData standard
 
 > [!Important]  
-> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates. <!-- If you experience problems with the beta service, follow [link to feedback process]() to report the issue or provide feedback.-->
+> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
 
 **Next steps**
 
 - Get a link and use Power BI to get insight. For instructions, see [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
+- With your link, create a custom report with Power BI. For instructions, see [Create a report from the OData feed with Power BI](reports-proc-create-with-odata.md).
 - Get more information about the Intune Data Warehouse API, the data model, and relationships between entities<!-- , and an example of creating a custom client to retrieve data,--> see [Intune Data Warehouse API](reports-nav-intune-data-warehouse.md).

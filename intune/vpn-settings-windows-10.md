@@ -8,7 +8,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,14 +47,16 @@ Depending on the settings you choose, not all values in the list below will be c
 	- **Export** - Exports the list of servers to a comma-separated-values (csv) file.
 
 **Connection type** - Select the VPN connection type from the following list of vendors:
-- **Pulse Secure**
-- **F5 Edge Client**
-- **Dell SonicWALL Mobile Connect**
-- **Check Point Capsule VPN**
 - **Automatic**
+- **Check Point Capsule VPN**
+- **Citrix VPN**
+- **Dell SonicWALL Mobile Connect**
+- **F5 Edge Client**
 - **IKEv2**
 - **L2TP**
 - **PPTP**
+- **Pulse Secure**
+
 
 **Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
 
