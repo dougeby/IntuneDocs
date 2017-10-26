@@ -63,9 +63,6 @@ The Intune management extension supplements the in-box Windows 10 MDM capabiliti
 The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script is run and the run results are reported. 
  
 ## Monitor run status for PowerShell scripts
-There are two ways to monitor the run status for PowerShell scripts. 
-
-### Monitor scripts in the Azure portal
 You can monitor the run status of PowerShell scripts for users and devices in the Azure portal.
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -74,32 +71,3 @@ You can monitor the run status of PowerShell scripts for users and devices in th
 5. On the **PowerShell scripts** blade, select the script to monitor, and then choose **Monitor**, and then one of the following reports:
    - **Device status**
    - **User status**
-
-### Monitor scripts using PowerShell
-You can use PowerShell to retrieve information about your PowerShell script policies, the run status for the policies, and to check on the Intune Management Extension deployment status. 
-
-#### Information about all PowerShell script policies
-To retrieve information about all PowerShell script policies, use the following PowerShell cmdlet with the getAllScripts parameter:    
-```PS C:\> .\IntuneManagementExtension.ps1 -User <IntuneLogin> -Operation getAllScripts```
-
-![PowerShell script results for the getAllScripts operation](./media/mgmt-extension-getallscripts.png)
-
-<!-- change image with a better one -->
-
-#### Status for a specific PowerShell script policy
-To retrieve the status for a specific PowerShell script policy, use the following PowerShell cmdlet with the checkScriptResult parameter:    
-``` PS C:\> .\IntuneManagementExtension.ps1 -User <IntuneLogin> -Operation checkScriptResult -ScriptId <ScriptID>```
-
-For example, to check the status of the **Get-ExecutionPolicy** PowerShell script (shown in the previous screen shot), you would use *47159b34-585e-4fff-9b06-4f18b9df8bbd* for the ScriptID.
-
-![PowerShell script results for the checkScriptResult operation](./media/mgmt-extension-checkscriptresult.png)
-
-<!-- change image with a better one -->
-
-#### Verify Intune Management Extension deployment status
-After the PowerShell script is deployed to a group, the agent is installed when Windows 10 device synchronizes with the Intune service, which typically occurs every six to eight hours. To verify the deployment status, use the following PowerShell cmdlet with the getAgentStates parameter:     
-```PS C:\> .\IntuneManagementExtension.ps1 -User <IntuneLogin> -Operation getAgentStates```
-
-![PowerShell script results for the getAgentStates operation](./media/mgmt-extension-getagentstates.png)
-
-<!-- change image with a better one -->
