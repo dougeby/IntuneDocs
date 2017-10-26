@@ -2,12 +2,12 @@
 # required metadata
 
 title: How to sign in to the Company Portal app | Microsoft Docs
-description:
+description: Find out how to sign in to the Company Portal app on multiple platforms.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,6 +56,16 @@ Even though the following pictures are for iOS, the process is virtually identic
 4. Once the Company Portal accepts your login, it signs you in and you can begin to access your company resources.   
 
   ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## Signing in with certificate-based authentication
+
+1.	Open the Company Portal app on your device.
+
+2.	Enter your **Work or school account**.
+
+3.	Tap the **Sign in with a certificate** link.
+
+4.	Tap **Continue** to use the certificate.
 
 ## Signing in from another device
 
