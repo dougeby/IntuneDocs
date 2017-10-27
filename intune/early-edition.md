@@ -157,19 +157,6 @@ You will be able to create a Windows 10 edition upgrade policy that upgrades Win
 For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
 
-### Intune MAM and Outlook for Android add-ins  <!-- 1450688 -->
-In a few weeks, the Office team will announce add-ins for Outlook on Android. This add-in feature set already exists in Outlook on Windows, iOS, web and Mac. Because add-ins are managed via Exchange, users will be able to copy and share data and messages across Outlook and unmanaged add-in applications, unless access to add-ins is turned off by your Exchange admin. 
-
-To manage user access permissions to add-ins, work with your Exchange admin to ensure that your MAM data protection policies apply to add-ins.
-
-#### How does this affect me?
-If your Exchange policies are already set to prevent side loading add-ins or installing add-ins, then read no further. Your MAM policies will apply as expected. If, however, you have set policies in MAM to restrict cut, copy, and paste operations within Outlook on Android and have not set your add-in policy in Exchange, you should know that by default, users will be able to install add-ins to Outlook. These add-ins can access message body, subject and other message properties. You can turn off the user's ability to install add-ins by having your Exchange Admin remove the “My Marketplace Apps” and “My Custom Apps” roles.
-
-The setting change in Exchange will apply to Outlook across Windows, iOS, web, Mac, and mobile. 
-
-#### What do I need to do?
-Review your Exchange policies today. Inform your IT and helpdesk staff. Contact our support team with any specific questions or concerns. 
-
 
 
 
