@@ -8,7 +8,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 09/19/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -114,10 +114,8 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 
 In the restricted apps list, you can configure one of the following lists:
 
-A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
-An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
-
-Users are not prevented from installing a prohibited app, but if they do so, this will be reported to you.
+- A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run. Users are not prevented from installing a prohibited app, but if they do so, this will be reported to you.
+- An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed. Users are not prevented from installing an app that is not on the approved list, but if they do so, this will be reported to you.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
 
