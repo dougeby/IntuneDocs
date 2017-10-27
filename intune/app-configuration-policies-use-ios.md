@@ -30,14 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings when users run an iOS app. For example, an app might require users to specify:
-
--   A custom port number.
--   Language settings.
--   Security settings.
--   Branding settings such as a company logo.
-
-If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
+Use app configuration policies in Microsoft Intune to supply settings when users run an iOS app. You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!TIP]
 > This policy type is currently available only for devices running iOS 8.0 and later. It supports the following app installation types:
@@ -65,7 +58,7 @@ If users enter these settings incorrectly, it can increase the burden on your he
 8.	On the **Add Configuration Policy** blade, choose **Configuration settings**
 9. Select **Configuration settings format**. Select one:
     - **[Use configuration designer](#Use-the-configuration-designer)**
-    - **[Enter XML Data](#Use-the-JSON-editor)**
+    - **[Enter XML Data](#enter-xml-data)**
 10. Click **OK**, and click **Add**.
 
 ## Use configuration designer

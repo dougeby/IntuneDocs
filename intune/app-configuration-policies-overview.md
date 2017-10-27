@@ -28,45 +28,42 @@ ms.custom: intune-azure
 
 # App configuration policies for Intune
 
-Use app configuration policies in Microsoft Intune to supply settings when users run an iOS or Android app. For example, an app might require users to specify:
+Supply settings when users run an iOS or Android app with app configuration policies in Microsoft Intune. For example, an app might require users to specify:
 
-- A custom port number.
-- Language settings.
-- Security settings.
-- Branding settings such as a company logo.
+- A custom port number
+- Language settings
+- Security settings
+- Branding settings such as a company logo
 
 If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
 
-App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action. 
+App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action.
 
 You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used whenever the app checks for them (typically, the first time it is run).
 
 You have two options for how to use app configurations with Intune:
  - **Managed devices**  
-   The device is managed by Intune as a MDM solution.
+   The device is managed by Intune as the MDM provider.
  - **Managed apps**  
-   The app can be managed without device enrollment.
+   An app is managed without device enrollment.
 
 ## Apps that support app configuration
 
-Apps must have been written to support the use of app configurations. Consult your app vendor for more information.
+You can use app configuration polices for apps that support it. To support app configuration in Intune Apps must have been written to support the use of app configurations. Consult your app vendor for details.
 
-You can use app configuration polices for apps that support it 
+You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it has been developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
 
-You can use the [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) to prepare line-of-business apps to be managed by Intune app protection policies, and app configuration policies, whether the device is enrolled with Intune or not. For example, you can use an app configuration policy to configure allowed and blocked URLs for the [Intune Managed Browser](app-configuration-managed-browser.md). Once an app is compatible with these policies, you can configure them using a policy.
+## Graph API support for app configuration
 
-When the assigned app is run on a device, it runs with the settings that you configured in the app configuration policy.
-See the documentation for the app you are configuring for information about what happens if one or more app configuration policies conflict.
-
-Additionally, you can use Graph API to accomplish these tasks. For details, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+Additionally, you can use Graph API to accomplish app configuration tasks. For details, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
 ## Next steps
 
 ### Managed devices
 
  - Learn how to use app configuration with your iOS devices.  See [ Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
- - Learn how to use app configuration with your Android devices.  See [Add app configuration policies for managed Android devices](app-configuration-policies-use-ios.md).
+ - Learn how to use app configuration with your Android devices.  See [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md).
 
 ### Managed apps
 
- - Learn how to use app configuration with managed apps. See [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-overview.md).
+ - Learn how to use app configuration with managed apps. See [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).

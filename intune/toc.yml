@@ -247,7 +247,7 @@
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
-      - name: managed apps
+      - name: Managed apps
         href: app-configuration-policies-managed-app.md
     - name: Use iOS app provisioning profiles
       href: app-provisioning-profile-ios.md
