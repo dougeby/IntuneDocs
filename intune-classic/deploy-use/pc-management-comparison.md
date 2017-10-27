@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,7 @@ Organizations can use Microsoft Intune to manage Windows PCs either as mobile de
 |**Remote assistance** |TeamViewer<br>[Request and provide remote assistance for Windows PCs](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|Not available |
 |**App deployment** | Not available for Microsoft Store for Business,<br>.exe, .appx, and multi-file .msi only<br>[Add apps for Windows PCs that run the Intune software client](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Available for Microsoft Store apps and line-of-business apps<br>[How to add Windows store apps](https://docs.microsoft.com/intune/store-apps-windows)<br>[How to add Windows line-of-business (LOB) apps](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**App protection**|Not available|Available <br>[What are app protection policies?](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
+|**Health attestation**|Not available|Available|
 
 
 ### Advantages of MDM Windows PC management
