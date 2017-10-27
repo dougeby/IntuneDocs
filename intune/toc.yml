@@ -244,7 +244,7 @@
       href: app-configuration-policies-overview.md
       items:
       - name: iOS managed devices 
-        href: app-configuration-policies-use-ios.md.md
+        href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
       - name: managed apps
