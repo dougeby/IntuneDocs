@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can use app configuration policies with managed apps that support the Intune App SDK even on devies that are not enrolled. 
+You can use app configuration policies with managed apps that support the Intune App SDK even on devices that are not enrolled. 
 
 1. Sign in to the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** + **Intune**.
@@ -51,7 +51,7 @@ You can use app configuration policies with managed apps that support the Intune
 
 ## Configuration values using tokens
 
-Certain tokens can be generated and sent to the managed application by Intune. For example if you app configuration can use an email setting, you can add a dynamic email by using a token. Type the name expected by the app in the **Name** field, and then type `\{\{mail\}\}` in the **Value** field.
+Certain tokens can be generated and sent to the managed application by Intune. For example if your app configuration can use an email setting, you can add a dynamic email by using a token. Type the name expected by the app in the **Name** field, and then type `\{\{mail\}\}` in the **Value** field.
 
 Intune supports the following token types in the configuration settings:
 
