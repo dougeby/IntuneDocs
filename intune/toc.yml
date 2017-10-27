@@ -240,10 +240,15 @@
       href: apps-deploy.md
     - name: Monitor apps
       href: apps-monitor.md
-    - name: iOS app configuration profiles
-      href: app-configuration-policies-use-ios.md
-    - name: Android app configuration profiles
-      href: app-configuration-policies-use-android.md
+    - name: App configuration policies
+      href: app-configuration-policies-overview.md
+      items:
+      - name: iOS managed devices 
+        href: app-configuration-policies-use-ios.md.md
+      - name: Android managed devices
+        href: app-configuration-policies-use-android.md
+      - name: managed apps
+        href: app-configuration-policies-managed-app.md
     - name: Use iOS app provisioning profiles
       href: app-provisioning-profile-ios.md
     - name: Selectively wipe apps
