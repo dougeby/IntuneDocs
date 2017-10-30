@@ -4,10 +4,10 @@
 title: Enrollment options for Intune
 description:
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 06/07/2017
+author: arob98
+ms.author: angrobe
+nmanager: angrobe
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
