@@ -97,7 +97,7 @@ If you would like to have your app available in the Information Worker Portal an
 1. Remove the **Not Applicable** assignment for your group.
 2. Create a new group that does not include members with **Required and Available** intent assigned and assign that group as **Not Applicable**.
 
-For more information, see, [How to assign apps to groups with Microsoft Intune](apps-deploy/md).
+For more information, see, [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 > [!Note]
 > After the release you will no longer be able to view or modify Mobile Device Management (MDM) app assignments in the Intune classic console. However, you can use Azure console or the Intune Graph API to make your app assignments.
@@ -309,7 +309,7 @@ The Company Portal app for Android is adding instruction for end users to help t
 
 
 ### New 'Resolve' action available for Android devices <!---1583480--->
-The Company Portal app for Android is introducing a 'Resolve' action on the _Update device settings_ page. Selecting this option will take the end user directly to the setting that is causing their device to be noncompliant. The Company Portal app for Android currently supports this action for the [device passcode](/intune-user-help/set-your-pin-or-password-android), [device encryption](/intune-user-help/encrypt-your-device-android), [USB debugging](/intune-user-help/you-need-to-turn-off-usb-debugging-android), and [Unknown Sources](intune-user-help/you-need-to-turn-off-unknown-sources-android) settings. 
+The Company Portal app for Android is introducing a 'Resolve' action on the _Update device settings_ page. Selecting this option will take the end user directly to the setting that is causing their device to be noncompliant. The Company Portal app for Android currently supports this action for the [device passcode](/intune-user-help/set-your-pin-or-password-android), [device encryption](/intune-user-help/encrypt-your-device-android), [USB debugging](/intune-user-help/you-need-to-turn-off-usb-debugging-android), and [Unknown Sources](/intune-user-help/you-need-to-turn-off-unknown-sources-android) settings. 
 
 
 
