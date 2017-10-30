@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: angrobe
-ms.date: 07/17/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,15 +51,6 @@ Highlights of the new experience include:
 - Microsoft Graph API support to automate many actions
 - Azure Active Directory (AD) groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
-
-> [!IMPORTANT]
-> **Don’t see the new portal yet?**<br>
-> Existing tenants are being migrated to the new experience. A notification is shown in the Office Message Center before your tenant migrates.
->
-> Intune accounts created before January 2017 require a one-time migration before Apple Enrollment workflows are available in Azure. The schedule for migration has not been announced yet. If your existing account cannot access the Azure portal, we recommend creating a trial account.
->
-> Review the list of potential blockers https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
-
 
 ## Before you start
 
