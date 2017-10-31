@@ -34,7 +34,10 @@ End-user computing is going through a digital transformation. Classic, tradition
 
 MDM services, such as Microsoft Intune, can manage Windows 10 devices by using the MDM protocol. The built-in Windows 10 management client is able to communicate with Intune to perform enterprise management tasks. It helps you drive toward modern management on Windows 10 devices. However, there are certain capabilities that you might need, such as advanced device configuration, troubleshooting, and legacy Win32 app management that currently isn't available in Windows 10 MDM. For these capabilities, you might run the Intune software client on your Windows 10 devices. As a result, you are not able to use the new capabilities that Windows 10 MDM provides. [Compare the differences between the Intune software client and Windows 10 MDM](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
 
-The Intune management extension supplements the in-box Windows 10 MDM capabilities. You can create PowerShell scripts to run on the Windows 10 devices that provide the capabilities you need. For example, you can create a PowerShell script that installs a legacy Win32 app on your Windows 10 devices, upload the script to Intune, assign the script to an Azure AD group, and run the script on Windows 10 devices. You can then monitor the run status of the script on Windows 10 devices from start to finish.
+The Intune management extension supplements the in-box Windows 10 MDM capabilities. You can create PowerShell scripts to run on the Windows 10 devices that provide the capabilities you need. For example, you can create a PowerShell script that installs a legacy Win32 app on your Windows 10 devices, upload the script to Intune, assign the script to an Azure Active Directory (AD) group, and run the script on Windows 10 devices. You can then monitor the run status of the script on Windows 10 devices from start to finish.
+
+## Prerequisites
+The Intune management extension only supports devices that are joined to Azure AD. 
 
 ## Create a PowerShell script policy 
 1. Sign into the [Azure portal](https://portal.azure.com).
