@@ -37,7 +37,9 @@ MDM services, such as Microsoft Intune, can manage Windows 10 devices by using t
 The Intune management extension supplements the in-box Windows 10 MDM capabilities. You can create PowerShell scripts to run on the Windows 10 devices that provide the capabilities you need. For example, you can create a PowerShell script that installs a legacy Win32 app on your Windows 10 devices, upload the script to Intune, assign the script to an Azure Active Directory (AD) group, and run the script on Windows 10 devices. You can then monitor the run status of the script on Windows 10 devices from start to finish.
 
 ## Prerequisites
-The Intune management extension only supports devices that are joined to Azure AD. 
+The Intune management extension has the following prerequisites:
+- Devices must be joined to Azure AD
+- Devices must run Windows 10, version 1607 or later
 
 ## Create a PowerShell script policy 
 1. Sign into the [Azure portal](https://portal.azure.com).
