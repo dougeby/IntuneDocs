@@ -4,10 +4,10 @@
 title: Sign up or sign in to Intune
 description: How to sign up for an Intune subscription or sign in to start with your subscription
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 06/07/2017
+author: arob98
+ms.author: angrobe
+nmanager: angrobe
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
