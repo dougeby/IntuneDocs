@@ -156,7 +156,17 @@ The following data is not preserved:
 ### App install status report now a bar chart <!-- 1249446 -->  
 The **App install status** report accessible for each app through the **App** list in the **Mobile apps** workload will soon be rendered as a bar chart.
 
+### Add "Find my iPhone" for personal devices <!--1427287-->
+You will be able to view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
 
+### Group-assigned enrollment restrictions <!-- 747598 -->
+As an Intune administrator, you will be able to create custom Device Type and Device Limit enrollment restrictions for user groups.
+ 
+The Intune Azure Portal lets you create up to 25 instances of each restriction type which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
+ 
+All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list. 
+ 
+This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
 
 
 <!-- the following are present prior to 1711 -->
