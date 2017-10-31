@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,8 +63,7 @@ Intune supports the following token types in the configuration settings:
 - \{\{userid\}\} - (Example: **3ec2c00f-b125-4519-acf0-302ac3761822**)
 - \{\{username\}\} - (Example: **John Doe**)
 - \{\{PrimarySMTPAddress\}\} - (Example: testuser@ad.domain.com) 
-- \{\{SamAccountName\}\} - (Example: DomainName\testUser) 
-- \{\{Domain\}\} - (Example: ad.domain.com) 
+
 
 > [!Note]  
 > The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
