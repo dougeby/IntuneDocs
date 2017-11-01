@@ -5,10 +5,10 @@ title: Sign up for a 30-day free trial of Microsoft Intune
 titleSuffix: "Azure portal"
 description: How to sign up for a 30-day free trial of Intune."
 keywords:
-author: lindavr
-ms.author: lindavr
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

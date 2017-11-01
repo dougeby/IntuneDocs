@@ -4,10 +4,10 @@
 title: Intune testing and validation
 description: The details you need to consider when you are testing and validating an Intune cloud-only solution in your environment.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

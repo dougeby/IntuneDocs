@@ -5,10 +5,10 @@ title: Set up the Exchange connector for on-premises EAS with Intune
 titleSuffix: "Azure portal"
 description: "Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
