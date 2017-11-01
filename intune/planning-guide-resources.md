@@ -4,10 +4,10 @@
 title: Templates and resources to plan and design Intune deployment
 description: Links to planning templates and additional Intune information that may be helpful during your Intune deployment planning and implementation process.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

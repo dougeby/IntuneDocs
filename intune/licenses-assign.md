@@ -4,10 +4,10 @@
 title: Assign Intune licenses
 description: Assign licenses to users for your Intune subscription
 keywords:
-author: lindavr
-ms.author: lindavr
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

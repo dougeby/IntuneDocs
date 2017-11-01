@@ -4,10 +4,10 @@
 title: Intune plan and design introduction
 description: This article is an introduction to all Intune plan, design, and implementation sections. Tools to help you determine goals, use-case scenarios and requirements, create rollout and communication plans, support, testing, and validation plans.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
