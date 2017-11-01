@@ -4,10 +4,10 @@
 title: Develop a support plan
 description: This article helps you develop an Intune support plan for a Microsoft Intune deployment.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

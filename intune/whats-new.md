@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 10/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,22 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+## Week of October 30, 2017
+
+### Intune apps
+
+### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
+
+You can use tokens for dynamic values in app configurations for apps on devices that are not enrolled. For more information, see [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).
+
+## Week of October 23, 2017
+
+### Intune apps
+
+#### Certificate-based authentication support on the Company Portal for iOS <!--1029830-->
+We have added support for certificate-based authentication (CBA) in the Company Portal app for iOS. Users with CBA enter their username, then tap the “Sign in with a certificate” link. CBA is already supported on the Company Portal apps for Android and Windows. You can learn more on the [sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) page.
+
 ## Week of October 16, 2017
 
 ### Device enrollment
@@ -58,8 +74,6 @@ Quick start is now available in **Device enrollment** and provides a table of re
 The enrolled devices platform chart of the **Devices > Overview** blade organizes devices by platform, including Android, iOS, macOS, Windows, and Windows Mobile.  Devices running other operating systems are grouped into "Other."  This includes devices manufactured by Blackberry, NOKIA, and others.  
 
 To learn which devices are affected in your tenant, choose **Manage > All devices** and then use **Filter** to limit the **OS** field.
-
-
 
 ### Device management
 #### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->  
@@ -200,7 +214,7 @@ Once in sustaining mode, these apps will only will receive critical security upd
 
 #### Block unsupported Samsung Knox device enrollment  <!--- 1490695 --->
 
-The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid KNOX activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support KNOX while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung KNOX Standard policy settings](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices).
+The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid KNOX activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support KNOX while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung KNOX Standard policy settings](/intune/supported-devices-browsers.md#intune-supported-devices).
 
 #### End of support for Android 4.3 and lower <!---1171126, 1326920 --->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.

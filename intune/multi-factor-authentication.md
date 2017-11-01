@@ -5,10 +5,10 @@ title: Multi-factor authentication for Intune device enrollment
 titlesuffix: "Azure portal"
 description: How to require multi-factor authentication in Azure AD for device enrollment.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angerobe
-ms.date: 08/10/2017
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

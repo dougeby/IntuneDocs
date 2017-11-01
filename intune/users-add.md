@@ -4,10 +4,10 @@
 title: Add users and grant permissions
 description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/19/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

@@ -4,9 +4,10 @@
 title: Installing the Company Portal app for iOS and macOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +51,7 @@ When your device is enrolled, your company support can:
 
 -   Require you to accept terms and conditions.
 
--   Enable or disable the camera on your device to prevent you from taking pictures of sensitive company data.
+-   Disable the camera on your device to prevent you from taking pictures of sensitive company data.
 
 -   Enable or disable web browsing on your device.
 

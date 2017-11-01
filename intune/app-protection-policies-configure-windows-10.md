@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,34 +31,34 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Before creating a Windows 10 app protection policy using, you need to enable mobile application management (MAM) for Windows 10 by setting up the MAM provider in Azure AD. This configuration allows you to define the enrollment state when creating a new Windows Information Protection (WIP) policy with Intune.
+Enable mobile application management (MAM) for Windows 10 by setting the MAM provider in Azure AD. Setting a MAM provider in Azure AD allows you to define the enrollment state when creating a new Windows Information Protection (WIP) policy with Intune. The enrollment state can be either MAM or mobile device management (MDM).
 
 > [!NOTE]
-> The enrollment state can be either MAM or mobile device management (MDM).
+> Devices with a MAM enrollment state are required to be Azure AD joined.
 
 ## To configure the MAM provider
 
-1.  Go to the [Azure portal](https://portal.azure.com/) and sign in with your Intune credentials.
+1. Sign in to the Azure portal, and choose **Azure Active Directory.**
 
-2.  From the left menu, choose **Azure Active Directory**.
+2. Choose **Mobility (MDM and MAM)** in the **Manage** group.
 
-    ![MAM provider configuration](./media/mam-provider-sc-1.png)
+3. Click **Microsoft Intune**.
 
-3.  **Azure AD** blade opens, choose **Mobility (MDM and MAM)**, then click **Microsoft Intune**.
+4. Configure the settings in the  **Restore default MAM URLs** group on the **Configure** blade.
 
-    ![Mobility MDM and MAM](./media/mam-provider-sc-1.png)
+    **MAM user scope**  
+      Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.<ul><li>**None**<br>Select if all users can be enrolled in MAM.</li><li>**Some**<br>Select Azure AD groups that contain users who will be enrolled in MAM.</li><li>**All**<br>Select if all users can be enrolled in MAM.</li></ul>
 
-4.  The configure blade opens, choose **Restore default MAM URLs** first, then configure the following:
+    **MAM terms of use URL**  
+     The URL of the terms of use endpoint of the MAM service. The terms-of-use endpoint is used to display the terms of service to end-users before enrolling their devices for management. The terms-of-use text informs users about the policies enforced on the mobile device.
 
-    a.  MAM user scope: You can use MAM to protect corporate data on specific group of users that use Windows 10 devices or all users.
+    **MAM discovery URL**  
+    The URL of the enrollment endpoint of the MAM service. The enrollment endpoint is used to enroll devices for management with the MAM service.
 
-    b.  MAM terms of use URL: The URL of the terms of use endpoint of the MAM service. This is used to display the term of MAM service to end-users.
+    **MAM compliance URL**  
+      The URL of the compliance endpoint of the MAM service. When a user is denied access to a resource from a non-compliant device, a link to the compliance URL is displayed to the user. Users can navigate to this URL hosted by the MAM service, in order to understand why their device is considered non-compliant. Users can also initiate self-service remediation so their device becomes compliant and they can continue to access resources.
 
-    c.  MAM discovery URL: This the URL devices seek when they need to apply app protection policies.
-
-    d.  MAM compliance URL:
-
-5.  Once you configure these settings, choose **Save**.
+5.  Click **Save**.
 
 ## Next steps
 
