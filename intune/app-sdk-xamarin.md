@@ -7,7 +7,7 @@ keywords: sdk, Xamarin, intune
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 11/15/2016
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -36,6 +36,9 @@ ms.custom: intune-classic
 
 ## Overview
 The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
+
+> [!NOTE]
+> The Intune SDK for Xamarin support is currently available in preview. 
 
 The Microsoft Intune App SDK Xamarin Component lets you incorporate Intune app protection policies (also known as APP or MAM policies) into your apps developed with Xamarin. A MAM-enabled application is one that is integrated with the Intune App SDK. IT administrators can deploy app protection policies to your mobile app when Intune actively manages the app.
 
