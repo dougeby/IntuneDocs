@@ -4,10 +4,10 @@
 title: Configure a custom domain name
 description: Add a custom domain name for your Intune subscription
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

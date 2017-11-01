@@ -4,10 +4,10 @@
 title: Microsoft Intune App SDK Cordova Plugin 
 description:
 keywords: sdk, Cordova, intune
-author: oydang
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.author: oydang
-ms.date: 12/07/2016
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
