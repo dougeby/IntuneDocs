@@ -4,10 +4,10 @@
 title: Create a design
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

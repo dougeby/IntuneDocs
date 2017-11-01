@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Intune VPN settingstitleSuffix: "Azure portal"
+title: How to configure Intune VPN settings
+titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure VPN connections on devices you manage."
 keywords:
 author: lleonard-msft
@@ -42,7 +43,7 @@ You can create VPN profiles using the following connection types:
 |-|-|-|-|-|-|-|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
-|Citrix|Yes (Android only)|Yes|No|No|No|No|
+|Citrix|Yes|Yes|No|No|No|Yes|
 |F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
 |Dell SonicWALL Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
 |Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|

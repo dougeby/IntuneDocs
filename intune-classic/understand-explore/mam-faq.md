@@ -7,7 +7,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,16 +75,16 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What are the additional requirements to use the [Word, Excel, & PowerPoint](https://products.office.com/business/office) apps?**
 
-  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and can include a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. The end-user must have the [OneDrive](https://onedrive.live.com/about/) app installed to their device and sign in with their AAD account.
+  2. The end-user must have a managed location configured using the granular save as functionality under the "Prevent Save As" application protection policy setting. For example, if the managed location is OneDrive, the [OneDrive](https://onedrive.live.com/about/) app should be configured in the end user's Word, Excel or PowerPoint app.
 
-  3. The OneDrive app must be targeted by the app protection policy deployed to the end-user.
+  3. If the managed location is OneDrive, the app must be targeted by the app protection policy deployed to the end-user.
 
   >[!NOTE]
   > The Office mobile apps currently only support SharePoint Online and not SharePoint on-premises.
 
-**Why is OneDrive needed for Office?** Intune marks all data in the app as either "corporate" or "personal." Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account).
+**Why is a managed location (ie OneDrive) needed for Office?** Intune marks all data in the app as either "corporate" or "personal." Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account).
 
 **What are the additional requirements to use Skype for Business?** See [Skype for Business](https://products.office.com/skype-for-business/it-pros) license requirements.
   >[!NOTE]
@@ -107,6 +107,18 @@ This article provides answers to some frequently asked questions on Intune mobil
   2. **Is the PIN secure?** The PIN serves to allow only the correct user to access their organization's data in the app. Therefore, an end-user must sign in with their work or school account before they can set or reset their Intune app PIN. This authentication is handled by Azure Active Directory via secure token exchange and is not transparent to the Intune App SDK. From a security perspective, the best way to protect work or school data is to encrypt it. Encryption is not related to the app PIN, but is its own app protection policy.
 
   3. **How does Intune protect the PIN against brute force attacks?** As part of the app PIN policy, the IT administrator can set the maximum number of times a user can try to authenticate their PIN before locking the app. After the number of attempts has been met, the Intune App SDK can wipe the "corporate" data in the app.
+  
+**How does the Intune app PIN work between numeric type and passcode type?**
+MAM currently allows application-level PIN (iOS) with alphanumeric and special characters (called 'passcode') which requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for iOS. Without this, the passcode settings are not properly enforced for the targeted applications. Since apps will follow this integration on a rolling basis, the behavior between passcode and numeric PIN is temporarily changed for the end user and requires an important clarification. For the October 2017 release of Intune, the behaviour is as follows...
+
+Apps that have
+1. the same app publisher
+2. a passcode PIN targeted through the console and 
+3. adopted the SDK with this feature (v 7.1.12+) will be able to share the passcode between these apps. 
+
+Apps that have
+1. the same app publisher
+2. a numeric PIN targeted through the console will be able to share the numeric PIN between these apps. 
 
 **What about encryption?** IT administrators can deploy an app protection policy that requires app data to be encrypted. As part of the policy, the IT administrator can also specify when the content is encrypted.
 

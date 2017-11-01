@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Reset passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.
+The **Remove passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.
 
 ## Supported platforms
 
@@ -48,7 +48,7 @@ The **Reset passcode** action generates a new passcode for the device, which is 
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose a device, and then choose the **Reset passcode** device remote action.
+5. From the list of devices you manage, choose a device, and then choose the **Remove passcode** device remote action.
 
 ## Next steps
 

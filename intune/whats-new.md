@@ -46,6 +46,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of October 30, 2017
+
+### Intune apps
+
+### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
+
+You can use tokens for dynamic values in app configurations for apps on devices that are not enrolled. For more information, see [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).
+
 ## Week of October 23, 2017
 
 ### Intune apps

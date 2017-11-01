@@ -4,10 +4,10 @@
 title: Intune onboarding process
 description: This article helps you with all details that need to be considered when on-boarding Intune cloud-only solution into your environment.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

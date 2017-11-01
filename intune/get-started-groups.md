@@ -2,13 +2,14 @@
 # required metadata
 
 title: Get started with groups
-titleSuffix: "Azure portal"
+
+titleSuffix: "Azure portal"
 description: Organize users into groups to make it easier to manage the policies and apps that they can access.
 keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
