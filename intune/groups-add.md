@@ -5,10 +5,10 @@ title: Set enrollment restrictions in Intune
 titlesuffix: "Azure portal"
 description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -5,9 +5,9 @@ title: Protect Office 365 Exchange Online without requiring device management
 description: Give employees access to their work email. No device management required.
 keywords: Office 365 Exchange email access
 author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/27/2017
-ms.topic: article
+ms.date: 10/31/2017
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
