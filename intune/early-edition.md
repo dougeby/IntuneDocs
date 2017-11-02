@@ -314,7 +314,7 @@ The System Center Operations Manager management pack for Exchange connector will
 
 ## Intune apps
 
-#### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
+### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
 The Company Portal app for Android is adding instruction for end users to help them understand and, where possible, self-solve on new use cases. 
 
 - A new message will be displayed that explains that a compliance policy for encryption has been deployed, but the [device manufacturer isn't encrypting the device](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android) according to [Google's recommended guidelines](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStorageEncryption(android.content.ComponentName, boolean).
