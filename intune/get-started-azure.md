@@ -3,7 +3,7 @@
 
 title: Getting started with the Azure portal
 titlesuffix: "Azure portal"
-description: Learn about creating and sharing dashboards in Intune in the Azure portal.
+description: Learn about creating and sharing dashboards for Intune in the Azure portal.
 keywords:
 author: arob98
 ms.author: angrobe
@@ -28,11 +28,11 @@ ms.custom: intune-azure
 
 # Getting started with Intune in the Azure portal
 
-The Azure portal is where you can find the Intune service. There's a lot of services in Azure, many of which you may not use on a regular basis. Customizing your dashboard and sidebar can help you find the right information quickly every time you log in to manage devices with Intune.
+The Azure portal is where you can find the Intune service. There are a lot of services in Azure, many of which you may not use on a regular basis. Customizing your dashboard and sidebar can help you find the right information quickly every time you log in to manage devices with Intune.
 
 ## Changing the sidebar
 
-The __sidebar__ on the left side of the Azure portal shows you a list of all the available Azure services. This comprehensive list can be modified from its default view so that you can keep a persistent view of the services that matter most to you. We'll use Intune as the example of a service to add to the top of the list.
+The __sidebar__ on the left side of the Azure portal shows you a list of all available Azure services. This comprehensive list can be changed from the default view so that you can keep a persistent view of the services that matter most to you. We'll use Intune as the example of a service to add to the top of the list.
 
 ![A user searching for Intune in the "More services" list.](./media/azure-add-intune1.png)
 
@@ -57,7 +57,7 @@ This will be more relevant after you've added more content, like groups and user
 
 ## Using services
 
-Whenever you open Intune or any other service in Azure, it will appear in a **blade**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen blade. When you select the workload, it will open that blade in the full page. Other blades will slide out from the right side of the blade when they open, and will collapse underneath the main blade that they came from.
+Whenever you open Intune or any other service in Azure, the service is displayed in a **blade**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen blade. When you select the workload, it opens that blade in the full page. Other blades slide out from the right side of the blade when they open, and collapse underneath the main blade that they came from.
 
 ## Next steps
 
