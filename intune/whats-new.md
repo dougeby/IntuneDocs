@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/25/2017
+ms.date: 11/2/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,12 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of October 30, 2017
 
-### Intune apps
+### Device and app management integration <!-- 677972 -->   
+Now that Intune’s mobile device management (MDM) and mobile application management (MAM) are both accessible from the Azure portal, Intune started integrating the IT admin experience around application and device management. These changes are geared to simplify your device and app management experience.
+
+Learn more about the MDM and MAM changes announced in the [Intune support team blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/).
+
+
 
 ### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
 
