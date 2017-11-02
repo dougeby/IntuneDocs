@@ -153,7 +153,7 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 |||
 |-|-|
 |Key|Value|
-|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.

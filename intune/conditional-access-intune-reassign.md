@@ -88,7 +88,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 	![User group UI comparison between the Intune and Azure portals](./media/reassign-ca-1.png)
 
 	> [!IMPORTANT] 
-	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
+	> The selection you make for the Azure portal should correspond to the selection you made for the Classic portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
 
 5. After you choose your group, click **Select**, and then click **Done**.
 
