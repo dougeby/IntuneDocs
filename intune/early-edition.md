@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/30/2017
+ms.date: 11/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -167,6 +167,10 @@ The Intune Azure Portal lets you create up to 25 instances of each restriction t
 All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list. 
  
 This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
+
+### Window 10 update ring assignments are displayed <!-- 1621837 -->
+When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
+
 
 
 <!-- the following are present prior to 1711 -->
