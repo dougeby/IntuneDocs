@@ -32,7 +32,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-
+	
 - 	**Diagnostic data submission** - Allow or block the device from submitting diagnostic data to Apple.
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.
 	- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Apple Classroom app from viewing the screen of iOS devices.
@@ -50,54 +50,6 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 - **Configuration profile changes** - Allow the user to install configuration profiles.
 - **Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
 
-## Configurations requiring supervision
-
-iOS supervised mode can only be enabled during initial device setup through Apple’s Device Enrollment Program, or by using Apple Configurator. Once supervised mode is enabled, Intune can configure a device with the following functionality:
-
-- App Lock (Single App Mode) 
-- Global HTTP Proxy 
-- Activation Lock Bypass 
-- Autonomous Single App Mode 
-- Web Content Filter 
-- Set background and lock screen 
-- Silent App Push 
-- Always-On VPN 
-- Allow managed app installation exclusively 
-- iBookstore 
-- iMessages 
-- Game Center 
-- AirDrop 
-- AirPlay 
-- Host pairing 
-- Cloud Sync 
-- Spotlight search 
-- Handoff 
-- Erase device 
-- Restrictions UI 
-- Installation of configuration profiles by UI 
-- News 
-- Keyboard shortcuts 
-- Passcode modifications 
-- Device name changes 
-- Wallpaper changes 
-- Automatic app downloads 
-- Changes to enterprise app trust 
-- Apple Music 
-- Mail Drop 
-- Pair with Apple Watch 
-
-> [!NOTE]
-> Apple confirmed that certain settings will move to supervised-only in 2018. We recommend taking this into consideration when using these settings instead of waiting for Apple to migrate them to supervised-only:
-> - App installation by end users
-> - App removal
-> - FaceTime
-> - Safari
-> - iTunes
-> - Explicit content
-> - iCloud documents and data
-> - Multiplayer gaming
-> - Add Game Center friends
-
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Simple passwords** - Allow simple passwords like 0000 and 1234.
@@ -110,7 +62,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 	- 	**Password expiration (days)** - Specify the number of days before the device password must be changed.
 	- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.
 	- 	**Fingerprint unlock** - Allow using a fingerprint to unlock compatible devices.
-- **Passcode modification (supervised only)** - Stops the passcode from being changed, added, or removed.
+- **Passcode modification (supervised only)** - Stops the passcode from being changed, added, or removed. 
 	- **Fingerprint modification (supervised only)** - Stops the user from changing, adding, or removing TouchID settings.
 
 <sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
@@ -143,7 +95,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 
 ## Built-in Apps
 
-- 	**Camera** - Select whether the camera on the device can be used.
+- 	**Camera** - Select whether the camera on the device can be used. 
 	- 	**FaceTime** - Allow the FaceTime app to be used on the device.
 - 	**Siri** - Allow use of the Siri voice assistant on the device.
 	- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.
@@ -178,7 +130,9 @@ Device profiles that contain restricted app settings must be assigned to groups 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> You can also use iTunes to find the app and then use the **Copy Link** command to get the app URL.
+> You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+
+
 
 ### Additional options
 
@@ -299,7 +253,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -357,6 +311,6 @@ In the **Email Domain URL** field, add one or more URLs to the list. When end us
 In the **Web Domain URL** field, add one or more URLs to the list. When documents are downloaded from the domains you specify, they will be considered managed. This setting applies only to documents downloaded using the Safari browser.
 
 
-### Safari password autofill domains
+### Safari password auto fill domains
 
 In the **Domain URL** field, add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.
