@@ -127,7 +127,7 @@ Microsoft Intune collects data on usage statistics for your app.
 
 Line-of-business apps in Intune now display the version number for iOS and Android apps. The number displays in the Azure portal in the app list and in the app overview blade. End users can see the app number in the Company Portal app and in the web portal.
 
-## Full version number
+### Full version number
 
 The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example, 2.2(2.2.17560800)
 
