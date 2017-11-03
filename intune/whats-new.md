@@ -53,6 +53,8 @@ Now that Intune’s mobile device management (MDM) and mobile application manage
 
 Learn more about the MDM and MAM changes announced in the [Intune support team blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/).
 
+### New enrollment alerts for Apple devices <!---1471790--->
+The overview page for enrollment will show useful alerts for IT admins regarding management of Apple devices. Alerts will show up on Overview page when the Apple MDM push certificate is expiring or has already expired; when the Device Enrollment Program token is expiring or has already expired; and when there are unassigned devices in the Device Enrollment Program.
 
 
 ### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
