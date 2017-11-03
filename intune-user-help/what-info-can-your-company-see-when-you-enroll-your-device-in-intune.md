@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ When you enroll a device into management, you are giving your company permission
 
 - Device model, like iPhone 7
 - Manufacturer, like Microsoft
-- Operating system, like Android 7.1
+- Operating system, like iOS
 - App names, like Microsoft Word
 - Device owner
 - Device name
