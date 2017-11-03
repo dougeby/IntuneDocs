@@ -168,7 +168,7 @@ All the instances of a restriction type are maintained in a strictly ordered lis
  
 This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
 
-### Window 10 update ring assignments are displayed <!-- 1621837 -->
+### Windows 10 update ring assignments are displayed <!-- 1621837 -->
 When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
 
 
