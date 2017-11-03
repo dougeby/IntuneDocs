@@ -48,6 +48,24 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of October 30, 2017
 
+### iOS and Android line-of-business app version number is visible <!-- 1380712 -->
+
+Apps in Intune now display the version number for iOS and Android line-of-business apps. The number displays in the Azure portal in the app list and in the app overview blade. End users can see the app number in the Company Portal app and in the web portal.
+
+#### Full version number
+
+The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example, 2.2(2.2.17560800)
+
+The full version number has two components:
+
+ - **Version**  
+   The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
+
+ - **Build Number**  
+    The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
+
+Learn more about version numbers and developing line-of-business apps in [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md#line-of-business-app-version-numbers).
+
 ### Device and app management integration <!-- 677972 -->   
 Now that Intune’s mobile device management (MDM) and mobile application management (MAM) are both accessible from the Azure portal, Intune started integrating the IT admin experience around application and device management. These changes are geared to simplify your device and app management experience.
 
@@ -55,7 +73,6 @@ Learn more about the MDM and MAM changes announced in the [Intune support team b
 
 ### New enrollment alerts for Apple devices <!---1471790--->
 The overview page for enrollment will show useful alerts for IT admins regarding management of Apple devices. Alerts will show up on Overview page when the Apple MDM push certificate is expiring or has already expired; when the Device Enrollment Program token is expiring or has already expired; and when there are unassigned devices in the Device Enrollment Program.
-
 
 ### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
 
