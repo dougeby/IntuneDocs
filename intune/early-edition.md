@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/30/2017
+ms.date: 11/3/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -168,6 +168,10 @@ All the instances of a restriction type are maintained in a strictly ordered lis
  
 This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
 
+### Windows 10 update ring assignments are displayed <!-- 1621837 -->
+When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
+
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -310,7 +314,7 @@ The System Center Operations Manager management pack for Exchange connector will
 
 ## Intune apps
 
-#### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
+### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
 The Company Portal app for Android is adding instruction for end users to help them understand and, where possible, self-solve on new use cases. 
 
 - A new message will be displayed that explains that a compliance policy for encryption has been deployed, but the [device manufacturer isn't encrypting the device](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android) according to [Google's recommended guidelines](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStorageEncryption(android.content.ComponentName, boolean).
@@ -353,10 +357,7 @@ Instead of a generic error message, end users see a friendly, actionable error m
 
 ## Notices
 
-### Device and app management integration <!-- 677972 -->   
-Now that Intune’s mobile device management (MDM) and mobile application management (MAM) are both accessible from the Azure portal, Intune started integrating the IT admin experience around application and device management. These changes are geared to simplify your device and app management experience.
-
-Learn more about the MDM and MAM changes announced in the [Intune support team blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/).
+There are no active notices at this time.
 
 
 
