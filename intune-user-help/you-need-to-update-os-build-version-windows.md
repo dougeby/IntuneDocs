@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update your Windows 10 device  | Microsoft Docs
+title: Update your Windows 10 device | Microsoft Docs
 description: Learn how to update your Windows 10 device to access company resources.
 keywords:
 author: barlanmsft
@@ -27,8 +27,12 @@ ms.custom: intune-enduser
 
 ---
 
-# 
+# Turn on your Windows Defender Firewall
 
+Your work or school wants to ensure that devices accessing their resources are secured. One way they've chosen to make sure that your device is set up to access those resources is by turning on your Windows Defender Firewall. Here's how you can turn it on:
 
+1. Go to **Start** and open **Control Panel**.
+2. Open **System and Security** > **Windows Defender Firewall**.
+3. Choose **Customize Settings** > **Turn Windows Firewall on or off** for domain, private, and public networks. 
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
