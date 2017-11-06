@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your macOS device in Intune | Microsoft Docs
+title: Enroll your legacy macOS device in Intune | Microsoft Docs
 description: Describes how to enroll a macOS device in Intune
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
@@ -28,9 +28,9 @@ ms.custom: intune-enduser
 
 ---
 
-# Enroll your macOS device in Intune
+# Enroll your legacy macOS device in Intune
 
-These instructions will work for macOS devices on OS X El Capitan 10.11+. You can find instructions for enrolling macOS devices on previous versions of macOS [here](enroll-your-device-in-intune-macos-cp).
+These instructions will work for macOS devices on OS X Yosemite 10.10 and previous. You can find instructions for enrolling macOS devices on newer versions of macOS [here](enroll-your-device-in-intune-macos-cp).
 
 Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your company support that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
