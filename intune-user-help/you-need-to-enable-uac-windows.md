@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid:
+ms.assetid: e3ebea03-bd06-4b5e-8709-0a504c5d7bf7
 searchScope: - User help
 
 # optional metadata
@@ -26,7 +26,6 @@ ms.suite: ems
 ms.custom: intune-enduser
 
 ---
-
 
 # How to enable User Access Control
 
