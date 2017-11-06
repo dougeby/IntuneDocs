@@ -47,3 +47,4 @@ Intune currently supports macOS 10.9 Mavericks and later.
 ## Things you can do when your device is enrolled in Intune
 
 - [This device is a little different](device-little-different-jamf.md)
+- [Updating Office for macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)
