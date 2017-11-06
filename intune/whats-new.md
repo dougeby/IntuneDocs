@@ -60,9 +60,6 @@ Intune will continue to support enrolling Windows 8.1 PCs and phones. However, o
 
 
 ### Device management
-#### Google Play Protect support on Android <!-- 908720  -->  
-With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and organizations to run secure apps and secure Android images. Intune supports Google Play Protect features, including SafetyNet remote attestation.  Admins can set compliance policy requirements that require Google Play Protect be configured and healthy. The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that installed apps are verified by Google Play services.  Conditional access might block users from accessing corporate resources if a device is not compliant with Google Play Protect requirements. 
-
 #### Refresh button for Devices list    <!-- 1333581 -->
 Because the Device list does not refresh automatically, you can use the new Refresh button to update the devices that display in the list.
 
