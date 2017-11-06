@@ -55,9 +55,6 @@ End users with the managed Browser installed can now view the management status 
 
 Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
-> [!Note]
-> The Intune App SDK will soon support providing management status and troubleshooting logs through all apps that enable the setting.
-
 <!-- Note for 1710 'What's New.... -->
 
 ## Week of October 30, 2017
