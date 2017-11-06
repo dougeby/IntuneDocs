@@ -1,24 +1,26 @@
 ---
 # required metadata
 
-title: How to protect your Windows device with encryption | Microsoft Docs
-description: Describes how to encrypt a Windows device
+title: How to enable User Account Control | Microsoft Docs
+description: Learn how to enable UAC to access company resources.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7fsearchScope: - User help
+ms.assetid:
+searchScope: - User help
 
 # optional metadata
 
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: shburbid
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -26,17 +28,14 @@ ms.custom: intune-enduser
 ---
 
 
-# How to protect your Windows device using encryption
+# How to enable User Access Control
 
-When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Windows device to protect company or school data.
+Your work or school wants to ensure that devices accessing their resources are secured. One way they've chosen to make sure that your device is set up to access those resources is to keep unauthorized software from being installed on your device.
 
-> [!Note]
-> If you have a Windows phone and have enrolled it, your device will be encrypted automatically if encryption is required.
+Here's how you can change the settings for User Access Control:
 
-If you have a desktop device, the following instructions describe how to encrypt it.
-
-1.  Search for and then start the **Manage BitLocker** app.
-
-2.  Choose **Turn on BitLocker**, and then follow the instructions to encrypt each of your drives.
+1. Go to **Start** and open **Control Panel**.
+2. Open **Security and Maintenance** > **Change User Account Control settings**.
+3. On the **Choose when to be notified about changes to your computer** page, move the slider to one of the top two notches closest to **Always notify**.
 
 Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com).
