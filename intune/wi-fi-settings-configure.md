@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Intune Wi-Fi settingstitleSuffix: "Azure portal"
+title: How to configure Intune Wi-Fi settings
+titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
 keywords:
 author: lleonard-msft
@@ -65,7 +66,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- **Windows 8.1 and later (import a profile)**
 6. From the **Profile** type drop-down list, choose **Wi-Fi basic** or **Wi-Fi enterprise**.
 	>[!TIP]
-	>Use **Wi-fi basic** to supply basic features like the network name, and the SSID. **Wi-Fi enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. **Wi-Fi import** (for Windows 8.1 and Windows 10) lets you import Wi-Fi settings as an XML file that you previusly exported from a different device.
+	>Use **Wi-fi basic** to supply basic features like the network name, and the SSID. **Wi-Fi enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. **Wi-Fi import** (for Windows 8.1 and Windows 10) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
 	- [Android and Android for Work settings](wi-fi-settings-android.md)
 	- [iOS settings](wi-fi-settings-ios.md)
