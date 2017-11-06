@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/24/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,3 +41,7 @@ Sometimes issues can occur with your Windows device that may be able to be fixed
 - [My device needs antimalware software](your-device-needs-antimalware-software.md)
 - [I need to enable Secure Boot](you-need-to-enable-secure-boot-windows.md)
 - [I need to enable Code Integrity](you-need-to-enable-code-integrity.md)
+- [I need to enable my Firewall](you-need-to-enable-defender-firewall-windows.md)
+- [I need to enable UAC](you-need-to-enable-uac-windows.md)
+- [I need to update Windows](you-need-to-update-os-build-version-windows.md)
+- [I need to turn on Windows Defender](turn-on-defender-windows.md)
