@@ -98,6 +98,8 @@
 ### [Enroll your macOS device with the Company Portal](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [This device is a little different](device-little-different-jamf.md)
+### [Updating Office for macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)
+
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
