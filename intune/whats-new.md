@@ -115,8 +115,6 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 - **Network Filter** blocks outbound connection from any app to low rep IP/domain
 - **Exploit Protection** provides memory, control flow, and policy restrictions that can be used to protect an application from exploits.
 
-#### Actions for non-compliance  <!--730266  846515 -->     
-*Actions for non-compliance* are a new feature of compliance policies that let you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 #### Manage PowerShell scripts in Intune for Windows 10 devices <!-- 790537 -->
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see <link>.
