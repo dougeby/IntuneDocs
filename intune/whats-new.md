@@ -45,6 +45,20 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+## Week of November 6, 2017
+
+<!-- ### App management -->
+
+### Access to managed app logs for iOS <!-- 1469920 -->
+
+End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
+
+Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
+
+> [!Note]
+> The Intune App SDK will soon support providing management status and troubleshooting logs through all apps that enable the setting.
+
+<!-- Note for 1710 'What's New.... -->
 
 ## Week of October 30, 2017
 

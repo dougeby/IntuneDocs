@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/1006/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -208,6 +208,22 @@ Use the following information to learn about the allowed formats and wildcards t
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## How to access to managed app logs using the Managed Browser on iOS
+
+End users with the managed Browser installed on their iOS device can view the management status of all Microsoft published apps. They can send logs for troubleshooting their managed iOS apps.
+
+1. Open iOS **Settings**.
+2. Select the managed **Browser** application settings.
+3. Toggle **Enable Intune Diagnostics** to set the browser in troubleshooting mode.
+4. Open the managed **Browser**. Click **View Intune App Status** to review individual application policy settings.
+5. Press **Get Started** and **Share Logs** or **Send Logs to Microsoft** to send the troubleshooting logs to your IT administrator or Microsoft.
+
+You can also open the Browser in troubleshooting mode from within the app.
+
+1. Open the Managed Browser.
+2. Type `about:intunehelp` in the address box.
+The Browser launches troubleshooting mode.
 
 ## Security and privacy for the Managed Browser
 
