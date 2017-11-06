@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable Windows Defender Firewall | Microsoft Docs
-description: Learn how to enable your Windows 10 device to access company resources.
+description: Learn how to enable your Windows 10 device to access company resources by turning on your firewall.
 keywords:
 author: barlanmsft
 ms.author: barlan

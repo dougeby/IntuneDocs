@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1502920b-f677-498a-9c83-16122063cdff
+ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
 searchScope: - User help
 
 # optional metadata
@@ -30,6 +30,22 @@ ms.custom: intune-enduser
 
 # Turn on Windows Defender to access company resources
 
+Your work or school wants to ensure that devices accessing their resources are secured. There are a few ways that they can use [Windows Defender](https://www.microsoft.com/safety/pc-security/windows-defender.aspx), Windows' built-in protection for malicious software.
+
+There are a few settings you may need to change on your Windows Defender to fix any access issues. These steps may require you to go to a couple of different places on your computer.
+
+## Turn on Windows Defender
+
+1. In **Start**, open **Control Panel**.
+2. Open **Administrative Tools** > **Edit group policy**. This will open the **Local Group Policy Editor** in a new window.
+3. Open **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. The setting **Turn off Windows Defender Antivirus** is underneath the folders of other settings. 
+4. Open **Turn off Windows Defender Antivirus** and make sure it's set to **Enabl
+
+## Turn on Real-Time Protection
+
+
+
+## Update Windows Defender Antivirus
 
 
 
