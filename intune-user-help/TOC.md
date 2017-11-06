@@ -61,8 +61,8 @@
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
-### [Enroll your macOS device](enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device with the Company Portal](enroll-your-device-in-intune-macos-cp.md)
+### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [This device is a little different](device-little-different-jamf.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)

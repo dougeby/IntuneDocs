@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,22 @@ ms.custom: intune-enduser
 
 # Enroll your macOS device in Intune with the Company Portal app
 
-[!INCLUDE[macos-preview-1708](./includes/macos-preview-1708.md)]
+Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+. You can find instructions for enrolling macOS devices on previous versions of macOS [here](enroll-your-device-in-intune-macos-legacy).
 
-Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+.
+  1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
+  2. Log into the Company Portal website with your work or school account.
 
-  > [!NOTE]
-  > If you want to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
+    [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-1.  On your __Dock__, find __Safari__ and go to [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
+  3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
+
+   ![A screenshot of the landing page for the web portal with the web portal showing that no apps can be installed yet, with a My Devices button underneath.](./media/macOS_enroll_001_landing_page.png)
+
+  4. On the __My Devices__ page, you will either see a list of enrolled devices or simply a banner. This depends on if you already have a device enrolled, macOS or otherwise. To enroll a device that is not listed, select the banner that says __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__. If you don't have any enrolled devices, the banner will read **You don't have any devices enrolled. Enroll this one by tapping here.**
+
+    ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+
+1.  On your __Dock__, find __Safari__ and go to [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal).
 
 2. Download the app. Your Mac will check to make sure that the download of **CompanyPortal.dmg** is safe to open. After you open it from your **Downloads** folder, drag the **CompanyPortal** app on the **Applications** folder.
 
