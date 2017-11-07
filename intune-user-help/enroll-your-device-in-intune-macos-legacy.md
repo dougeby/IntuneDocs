@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Enroll your legacy macOS device in Intune
 
-These instructions will work for macOS devices on OS X Yosemite 10.10 and previous. You can find instructions for enrolling macOS devices on newer versions of macOS [here](enroll-your-device-in-intune-macos-cp).
+These instructions will work for macOS devices on OS X Yosemite 10.10 and previous. You can find instructions for enrolling macOS devices on newer versions of macOS [here](enroll-your-device-in-intune-macos-cp.md).
 
 Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your company support that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
