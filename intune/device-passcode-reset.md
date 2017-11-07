@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Reset a device passcode with Intune 
+title: Reset and remove device passcodes with Intune 
 titlesuffix: "Azure portal"
-description: Learn how to reset the passcode on devices you manage with Intune."
+description: Learn how to reset and remove the passcode on devices you manage with Intune.
 keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/06/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,10 +27,12 @@ ms.custom: intune-azure
 
 ---
 
-# Reset the passcode on Intune-managed devices
+# Reset and remove the passcode on Intune-managed devices
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+The terms *remove* and *reset* are used interchangeably in this article.
 
 The **Remove passcode** action generates a new passcode for the device, which is displayed on the <*device name*> **Overview** blade.
 
