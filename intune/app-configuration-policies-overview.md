@@ -3,7 +3,7 @@
 
 title: App configuration policies for Intune | Microsoft Docs 
 titlesuffix: "Azure portal"
-description: Learn about to use app configuration policies for Intune.
+description: Learn how to use app configuration policies for Intune.
 keywords:
 author: mattbriggs
 ms.author: mabrigg
@@ -30,10 +30,10 @@ ms.custom: intune-azure
 
 Supply settings when users run an iOS or Android app with app configuration policies in Microsoft Intune. For example, an app might require users to specify:
 
-- A custom port number
-- Language settings
-- Security settings
-- Branding settings such as a company logo
+- A custom port number.
+- Language settings.
+- Security settings.
+- Branding settings such as a company logo.
 
 If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
 
@@ -43,13 +43,13 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 You have two options for how to use app configurations with Intune:
  - **Managed devices**  
-   The device is managed by Intune as the MDM provider.
+   The device is managed by Intune as the mobile device management (MDM) provider.
  - **Managed apps**  
    An app is managed without device enrollment.
 
 ## Apps that support app configuration
 
-You can use app configuration polices for apps that support it. To support app configuration in Intune Apps must have been written to support the use of app configurations. Consult your app vendor for details.
+You can use app configuration polices for apps that support it. To support app configuration in Intune, apps must have been written to support the use of app configurations. Consult your app vendor for details.
 
 You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it has been developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
 
