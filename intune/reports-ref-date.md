@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Date | Microsoft Docs  
+title: Date  - Intune Data Warehouse | Microsoft Docs  
 description: Reference topic for the Date category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
