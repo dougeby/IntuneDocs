@@ -59,6 +59,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
   - Only the local device appears in the Company Portal app or website.
   - Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
   - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator, Apple Device Enrollment Program (DEP), or Apple School Manager (ASM) to enroll devices.
+  - (Android only) There is a limit to the amount of Android work profile devices that can be enrolled with a single DEM account.  A maximum of 10 Android work profile devices may be enrolled per DEM account.  This limitation does not apply to legacy Android enrollment.
   - Each device requires a device license. Learn more about [user and device licenses](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
