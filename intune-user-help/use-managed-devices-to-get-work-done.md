@@ -54,7 +54,7 @@ There are a few minor differences between the Company Portal app and the Company
 To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
 
 - [Using your Android device](using-your-android-device-with-intune.md)
-- [Using your iOS device](using-your-ios-or-macOS-device-with-intune.md)
+- [Using your iOS device](using-your-ios-device-with-intune.md)
 - [Using your macOS device](using-your-macos-device-with-intune.md)
 - [Using your Windows device](using-your-windows-device-with-intune.md)
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
