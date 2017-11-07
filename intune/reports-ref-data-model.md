@@ -44,6 +44,7 @@ Entity sets are named collections of entities in the data model. These sets cont
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)
   -  [Devices](reports-ref-devices.md)
+  -  [Intune Management Extension](reports-ref-intunemanagementextension.md)
   -  [Policy](reports-ref-policy.md)
   -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)

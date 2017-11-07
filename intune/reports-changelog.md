@@ -30,15 +30,16 @@ ms.custom: intune-classic
 Keep current on updates to the Intune Data Warehouse.
 
 ## 1710
-_Released October, 2017_
+_Released November, 2017_
 
 ### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
 
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the [**User entity**](reports-ref-user.md) will be populated ith the latest user data.
 
-### New entity in the in Data Warehouse data model <!-- 1479526 -->
+### New entities in the in Data Warehouse data model <!-- 1479526 --><!-- -->
 
-The entity, [**UserDeviceAssociation**](reports-ref-user-device.md), added. **UserDeviceAssociation** contains user device associations in your organization.
+ - The entity, [**UserDeviceAssociation**](reports-ref-user-device.md), added. **UserDeviceAssociation** contains user device associations in your organization.
+ - The entity, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), added. **IntuneManagementExtension** contains entities for mobile devices that track information such as version and installation status.
 
 ## Next steps
  - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases. 
