@@ -55,14 +55,14 @@ Intune can generate certain tokens and send them to the managed application. For
 
 Intune supports the following token types in the configuration settings:
 
-- \{\{userprincipalname\}\}&mdashfor example, **John@contoso.com**
-- \{\{mail\}\}&mdashfor example, **John@contoso.com**
-- \{\{partialupn\}\}&mdashfor example, **John**
-- \{\{accountid\}\}&mdashfor example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{deviceid\}\}&mdashfor example, **b9841cd9-9843-405f-be28-b2265c59ef97**
-- \{\{userid\}\}&mdashfor example, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}&mdashfor example,**John Doe**
-- \{\{PrimarySMTPAddress\}\}&mdashfor example, testuser@ad.domain.com 
+- \{\{userprincipalname\}\}—for example, **John@contoso.com**
+- \{\{mail\}\}—for example, **John@contoso.com**
+- \{\{partialupn\}\}—for example, **John**
+- \{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}—for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}—for example,**John Doe**
+- \{\{PrimarySMTPAddress\}\}—for example, testuser@ad.domain.com 
 
 
 > [!Note]  

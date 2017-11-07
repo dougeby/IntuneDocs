@@ -51,7 +51,7 @@ You have two options for how to use app configurations with Intune:
 
 You can use app configuration polices for apps that support it. To support app configuration in Intune, apps must have been written to support the use of app configurations. Consult your app vendor for details.
 
-You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it has been developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
+You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it is developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
 
 ## Graph API support for app configuration
 
