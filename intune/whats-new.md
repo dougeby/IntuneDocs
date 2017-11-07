@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/2/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+## Week of November 6, 2017
+
+<!-- ### App management -->
+
+### Access to managed app logs for iOS <!-- 1469920 -->
+
+End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
+
+Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
+
+<!-- Note for 1710 'What's New.... -->
 
 ## Week of October 30, 2017
 
@@ -71,8 +82,9 @@ Now that Intune’s mobile device management (MDM) and mobile application manage
 
 Learn more about the MDM and MAM changes announced in the [Intune support team blog](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/).
 
-### New enrollment alerts for Apple devices <!---1471790--->
+### New enrollment alerts for Apple devices <!-- 1471790 -->
 The overview page for enrollment will show useful alerts for IT admins regarding management of Apple devices. Alerts will show up on Overview page when the Apple MDM push certificate is expiring or has already expired; when the Device Enrollment Program token is expiring or has already expired; and when there are unassigned devices in the Device Enrollment Program.
+
 
 ### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
 
