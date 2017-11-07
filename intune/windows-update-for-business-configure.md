@@ -35,7 +35,7 @@ Windows as a Service is the way to update Windows 10 devices. With Windows 10, n
 
 By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update makes sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following:
 
-- **Windows 10 Servicing Branch**: Choose whether you want groups of devices to receive updates from the Semi-Annual Channel (Targeted) or from the Semi-Annual Channel.  
+- **Windows 10 Servicing Channel**: Choose whether you want groups of devices to receive updates from the Semi-Annual Channel (Targeted) or from the Semi-Annual Channel.  
 - **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. Use these settings to give you a staged update roll out so that you can review progress along the way.
 - **Pausing**: Postpone the installation of updates if you discover an issue at any point during the update rollout.
 - **Maintenance window**: Configure the hours in which updates can be installed.
@@ -85,7 +85,7 @@ After you create update rings, you assign them to groups of devices. By using up
 5. On the blade showing the list of update rings, choose **Create**.
 6. On the **Create Update Ring** blade, supply a name and optional description for the update ring, and then choose **Settings**.
 7. On the **Settings** blade, configure the following information:
-	- **Servicing branch**: Set the branch for which the device receives Windows updates (Semi-Annual Channel (Targeted) or Semi-Annual Channel.
+	- **Servicing channel**: Set the channel for which the device receives Windows updates (Semi-Annual Channel (Targeted) or Semi-Annual Channel.
 	- **Microsoft updates**: Choose whether to scan for app updates from Microsoft Update.
 	- **Windows drivers**: Choose whether to exclude Windows Update drivers during updates.
 	- **Automatic update behavior**: Choose how to manage automatic update behavior to scan, download, and install updates. For details, see  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -94,12 +94,12 @@ After you create update rings, you assign them to groups of devices. By using up
   	Quality Updates are generally fixes and improvements to existing Windows functionality and are typically published the first Tuesday of every month, though can be released at any time by Microsoft. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability.
 	- **Feature update deferral period (days)** - Specify the number of days for which Feature Updates are deferred. You can defer receiving these Feature Updates for a period of 180 days from their release.
 
-	Feature Updates are generally new features for Windows. After you configure the **Servicing branch** setting (**Semi-Annual Channel (Targeted)** or Semi-Annual Channel, you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.
+	Feature Updates are generally new features for Windows. After you configure the **Servicing channel** setting (Semi-Annual Channel (Targeted) or Semi-Annual Channel, you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.
 
 	For example:  
-	**If the Servicing branch is set to Semi-Annual Channel (Targeted)and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as aSemi-Annual Channel (Targeted)in January. The device will not receive the update until February - 30 days later.
+	**If the Servicing channel is set to Semi-Annual Channel (Targeted)and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as aSemi-Annual Channel (Targeted) in January. The device will not receive the update until February - 30 days later.
 
-	**If the Servicing branch is set to Semi-Annual Channel and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as aSemi-Annual Channel (Targeted)in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device will receive the Feature Update 30 days following this Semi-Annual Channel release and will update in May.
+	**If the Servicing channel is set to Semi-Annual Channel and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device will receive the Feature Update 30 days following this Semi-Annual Channel release and will update in May.
 
 	- **Delivery optimization** - Choose the method for which devices will download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Once you are done, click **OK**, and then on the **Create Update Ring** blade, click **Create**.
