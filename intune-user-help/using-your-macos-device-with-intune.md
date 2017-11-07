@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,4 +47,7 @@ Intune currently supports macOS 10.9 Mavericks and later.
 ## Things you can do when your device is enrolled in Intune
 
 - [This device is a little different](device-little-different-jamf.md)
-- [Updating Office for macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)
+
+## Updating the Company Portal app
+
+Updating the Company Portal app is done the same way as any other Office app, through Microsoft AutoUpdate for Mac. Find out more about [updating Microsoft apps for macOS here](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).

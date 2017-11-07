@@ -30,13 +30,16 @@ ms.custom: intune-enduser
 
 # Enroll your macOS device in Intune with the Company Portal app
 
-Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+. You can find instructions for enrolling macOS devices on previous versions of macOS [here](enroll-your-device-in-intune-macos-legacy.md).
+Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+.
+
+> [!NOTE]
+> You can find instructions for enrolling macOS devices on previous versions of macOS [here](enroll-your-device-in-intune-macos-legacy.md).
 
 1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
 
 2. Log into the Company Portal website with your work or school account.
 
-    [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
 
