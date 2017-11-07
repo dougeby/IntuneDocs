@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Microsoft Intune is a piece of software that lets organizations manage devices (
 When you enroll a device into management with Intune, your IT department can manage those work or school resources, keep the device more secure, while giving you, their employee, the freedom to use your preferred device to get your work done. A primary way this is done is by enrolling the device into management through the Company Portal.
 
 ## What information can my company see when I enroll my device in Intune?
-Your company's IT department can see information that is relevant to work, but not to your personal information. This is especially important to know if you're enrolling a personal device for use at work. We break down what they [can and can't see in the next article in the user help](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Your company's support can see information that is relevant to work, but not to your personal information. This is especially important to know if you're enrolling a personal device for use at work. We break down what they [can and can't see in the next article in the user help](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## How do I get the Company Portal?
 You can get the Company Portal two different ways:
@@ -54,7 +54,8 @@ There are a few minor differences between the Company Portal app and the Company
 To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
 
 - [Using your Android device](using-your-android-device-with-intune.md)
-- [Using your iOS or macOS device](using-your-ios-or-macOS-device-with-intune.md)
+- [Using your iOS device](using-your-ios-or-macOS-device-with-intune.md)
+- [Using your macOS device](using-your-macos-device-with-intune.md)
 - [Using your Windows device](using-your-windows-device-with-intune.md)
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
 
