@@ -268,8 +268,6 @@
       href: company-portal-app.md
     - name: Configure the Managed Browser
       href: app-configuration-managed-browser.md
-      name: Manage PowerShell scripts
-      href: intune-management-extension.md
   - name: Configure devices
     href: device-profiles.md
     items:
@@ -369,6 +367,8 @@
         href: certficates-pfx-configure.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
+    - name: Manage PowerShell scripts
+      href: intune-management-extension.md  
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Assign profiles
