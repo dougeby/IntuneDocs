@@ -53,11 +53,6 @@ Check to make sure that Real-time Protection is turned on by going to **Start** 
 
 ## Update your antivirus definitions
 
-Check to make sure that your antivirus definitions are up to date by going to **Start** and searching for **Windows Defender Security Center**. Select **Protection updates** and **Check for updates** to make sure that your device has current protection against viruses. If this option doesn't appear, do the following to enable them:
-
-1. In **Start**, open **Control Panel**.
-2. Open **Administrative Tools** > **Edit group policy**. This will open the **Local Group Policy Editor** in a new window.
-3. Open **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Security Center** > **Virus and threat protection**.
-4. Open the setting **Virus and threat protection area** and set it to **Disabled**.
+Check to make sure that your antivirus definitions are up to date by going to **Start** and searching for **Windows Defender Security Center**. Select **Protection updates** and **Check for updates** to make sure that your device has current protection against viruses. If this option doesn't appear, follow the steps in [Turn on Real-time Protection](turn-on-defender-windows.md#turn-on-real-time-protection)
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
