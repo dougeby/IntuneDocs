@@ -4,9 +4,10 @@
 title: Using your Windows device with Intune | Microsoft Docs
 description: List of links to tasks that users can do on their Windows device when their device is enrolled in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 05/08/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +34,7 @@ There are a number of things you can do with Intune to make your work life easie
 
 Intune currently supports the following versions of Windows.
 
-* Windows 10 (Home, Pro, Education, and Enterprise versions)
+* Windows 10 (Home, Pro, Education, S, and Enterprise versions)
 * Windows Phone 8.1 and later
 * Windows 8.1 RT
 * Windows 8.1

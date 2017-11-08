@@ -64,16 +64,16 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 
     ![OData feed](media/reports-create-01-odatafeed.png)
 
-9. Click **OK**.
+9. Select **OK**.
 10. Select **Organization account**, and then sign in with your Intune credentials. 
 
     ![Organizational account credentials](media/reports-create-02-org-account.png)
 
-11. Click **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse. 
+11. Select **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse. 
 
     ![The Navigator](media/reports-create-02-loadentities.png)
 
-12. Select the **devices** and the **ownerTypes** tables.  Click **Load**. Power BI loads data to the model.
+12. Select the **devices** and the **ownerTypes** tables.  Select **Load**. Power BI loads data to the model.
 
 ## Create a relationship 
 
@@ -81,8 +81,8 @@ You can import multiple tables to analyze not just the data in a single table bu
 
 ![Manage relationships](media/reports-create-03-managerelationships.png)
 
-1. Click **Manage Relationships**.
-2. Click **Autodetect...** if PowerBI has not already detected the relationships.  
+1. Select **Manage Relationships**.
+2. Select **Autodetect...** if PowerBI has not already detected the relationships.  
 The relationship is displayed in a From column to a To column. In this example, the data field **ownerTypeKey** in the **devices** table links to the data field **ownerTypeKey** in the **ownerTypes** table. You use the relationship to look up plain name of the device type code in the **devices** table.
 
 ## Create a treemap visualization
@@ -104,7 +104,7 @@ You now have a visual that shows us the distribution of manufacturers of devices
 
 You can add a filter to your treemap so that you can answer additional questions using your app. 
 
-1. Click the report canvas and then Click the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations** to add a filter.
+1. Select the report canvas, and then select the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations** to add a filter.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
    Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This is an example of how the data model supports relationships between tables.
 
@@ -112,8 +112,8 @@ You can add a filter to your treemap so that you can answer additional questions
 
 You now have an interactive filter that can be used to toggle between company owned and personally owned devices to see how the distribution changes.
 
-1. Click **Company** to see that the company owned device distribution.
-2. Click **Personal** to see the personally owned devices.
+1. Select **Company** to see that the company owned device distribution.
+2. Select **Personal** to see the personally owned devices.
 
 ## Next steps
 
