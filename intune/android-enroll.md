@@ -49,7 +49,7 @@ To enable device management, your users must enroll their devices by downloading
 
 ## Enable enrollment of Android for Work devices
 
-To enable management of the work profile on devices that [support Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), you must add an Android for Work binding to Intune. To enroll devices that support Android for Work but were previously enrolled as regular Android devices, users must unenroll the devices and then re-enroll them.
+To enable management of the work profile on devices that [support Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), you must add an Android for Work binding to Intune. To enroll devices that support Android for Work but were previously enrolled as regular Android devices, you must unenroll the devices and then re-enroll them.
 
 ## Add Android for Work binding for Intune
 

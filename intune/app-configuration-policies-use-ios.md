@@ -47,11 +47,11 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 3. Choose the **Mobile apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
-    - **Name**
+    - **Name**<br>
       The name of the profile that will appear in the Azure portal.
-    - **Description**
+    - **Description**<br>
       The description of the profile that will appear in the Azure portal.
-    - **Device enrollment type**
+    - **Device enrollment type**<br>
       Choose **Managed devices**.
 6. Select **iOS** for **Platform**.
 7.	Choose **Associated App**. Then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
@@ -68,11 +68,11 @@ You can use the configuration designer for apps on devices that are enrolled or 
 ### Add a setting
 
 1. For each key and value in the configuration, set:
-   - **Configuration key**
+   - **Configuration key**<br>
      The key that uniquely identifies the specific setting configuration.
-   - **Value type**
+   - **Value type**<br>
      The data type of the configuration value. Types include Integer, Real, String, or Boolean.
-   - **Configuration value**
+   - **Configuration value**<br>
      The value for the configuration.
 2. Choose **OK** to set your configuration settings.
 

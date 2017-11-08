@@ -62,7 +62,7 @@ Intune supports the following token types in the configuration settings:
 - \{\{deviceid\}\}—for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\}—for example, **John Doe**
-- \{\{PrimarySMTPAddress\}\}—for example, testuser@ad.domain.com 
+- \{\{PrimarySMTPAddress\}\}—for example, **testuser@ad.domain.com** 
 
 
 > [!Note]  
