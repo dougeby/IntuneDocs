@@ -3,11 +3,11 @@
 
 title: Enroll Windows devices
 titlesuffix: "Azure portal"
-description: Enable Intune mobile device management (MDM) for Windows devices."
+description: Enable Intune mobile device management (MDM) for Windows devices.
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,7 @@ As an Intune admin, you can simplify  enrollment in the following ways:
 - [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
 - [CNAME registration](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Enable bulk enrollment](windows-bulk-enroll.md) (Azure AD Premium and Windows Configuration Designer required)
+- [Add a custom message](windows-enrollment-status.md) to greet your users when they enroll and view the progress of policy settings as they're applied
 
 Two factors determine how you can simplify Windows device enrollment:
 
