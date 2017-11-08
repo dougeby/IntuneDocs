@@ -7,13 +7,14 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -39,14 +40,24 @@ There are a few settings you may need to change on your Windows Defender to fix 
 1. In **Start**, open **Control Panel**.
 2. Open **Administrative Tools** > **Edit group policy**. This will open the **Local Group Policy Editor** in a new window.
 3. Open **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. The setting **Turn off Windows Defender Antivirus** is underneath the folders of other settings. 
-4. Open **Turn off Windows Defender Antivirus** and make sure it's set to **Enabl
+4. Open **Turn off Windows Defender Antivirus** and make sure it's set to **Disabled** or **Not configured**.
 
-## Turn on Real-Time Protection
+## Turn on Real-time Protection
 
+Check to make sure that Real-time Protection is turned on by going to **Start** and searching for **Windows Defender Security Center**. Select **Virus and threat protection settings** and confirm that both **Real-time protection** and **Cloud-delivered protection** are switched to **On**. If these options aren't appearing, do the following to enable them:
 
+1. In **Start**, open **Control Panel**.
+2. Open **Administrative Tools** > **Edit group policy**. This will open the **Local Group Policy Editor** in a new window.
+3. Open **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Security Center** > **Virus and threat protection**.
+4. Open the setting **Virus and threat protection area** and set it to **Disabled**.
 
-## Update Windows Defender Antivirus
+## Update your antivirus definitions
 
+Check to make sure that your antivirus definitions are up to date by going to **Start** and searching for **Windows Defender Security Center**. Select **Protection updates** and **Check for updates** to make sure that your device has current protection against viruses. If this option doesn't appear, do the following to enable them:
 
+1. In **Start**, open **Control Panel**.
+2. Open **Administrative Tools** > **Edit group policy**. This will open the **Local Group Policy Editor** in a new window.
+3. Open **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Security Center** > **Virus and threat protection**.
+4. Open the setting **Virus and threat protection area** and set it to **Disabled**.
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
