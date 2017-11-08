@@ -125,6 +125,9 @@
 #### [My device needs antimalware software](your-device-needs-antimalware-software.md)
 #### [Enable Secure Boot](you-need-to-enable-secure-boot-windows.md)
 #### [Enable Code Integrity](you-need-to-enable-code-integrity.md)
-
+#### [I need to enable my Firewall](you-need-to-enable-defender-firewall-windows.md)
+#### [I need to enable UAC](you-need-to-enable-uac-windows.md)
+#### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
+#### [I need to turn on Windows Defender](turn-on-defender-windows.md) 
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
