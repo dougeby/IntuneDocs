@@ -47,11 +47,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 ## Week of November 6, 2017
 
-### Access to managed app logs for iOS <!-- 1469920 -->
-
-End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
-
-Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
 ### Device enrollment
 #### Co-management for Windows 10 devices  <!-- 1243445 -->
@@ -174,6 +169,13 @@ You can configure Citrix VPN for their Windows 10 devices. You can choose the Ci
 Customers can configure Wi-Fi profiles to use pre-shared keys (PSK) for WPA/WPA2 Personal connections on iOS devices. These profiles are pushed to user's device when the device is enrolled into Intune.
 
 When the profile has been pushed to the device, the next step depends on the profile configuration.  If set to connect automatically, it does so when the network is next needed.  When the profile is connects manually, the user must activate the connection manually.  
+
+### Intune apps
+#### Access to managed app logs for iOS <!-- 1469920 -->
+End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
+
+Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
+
 
 ### Monitor and troubleshoot
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
