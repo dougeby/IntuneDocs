@@ -62,7 +62,7 @@ You can view an alert for Windows AutoPilot unassigned devices to see how many d
 1. Sign into the [Azure](https://portal.azure.com/). 
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device enrollment**.
-4. Choose **Overview** to see the alert. Click the alert to see a list of AutoPilot devices. 
+4. Choose **Overview** to see the alert. Click the alert to see a list of AutoPilot devices.  
 
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.
