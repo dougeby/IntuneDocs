@@ -38,4 +38,4 @@ You can set up an Enrollment Status Screen to provide additional information to 
 
 There are four fields that you can define: the **Greeting**, the **Message**, and the **Hyperlink for Help**, where you can set the **Link Text** and the **URL for user help**.
 
-Your end users will also see the progress of the **Security**, **Networking**, **Applications**, and **Certificates** that are installing.
+Your end users will also see the progress of the security profile that is installing. 
