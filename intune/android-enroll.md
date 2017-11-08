@@ -60,7 +60,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 2. **Configure Android for Work binding**<br>
     As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-   a. On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and choose **Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+   a. On the **Intune** blade, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
    ![Screenshot showing link to configure the Android for Work binding](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
