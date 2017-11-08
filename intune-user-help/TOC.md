@@ -8,7 +8,7 @@
 
 ## [How to sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
-## [Using your Android device with Intune](using-your-android-device-with-intune.md)
+## [Using your Android device](using-your-android-device-with-intune.md)
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Enroll your device](enroll-your-device-in-Intune-android.md)
 #### [Enroll your device with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [Using your iOS or macOS device with Intune](using-your-iOS-or-macOS-device-with-intune.md)
+## [Using your iOS device](using-your-iOS-device-with-intune.md)
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
-### [Enroll your macOS device](enroll-your-device-in-intune-macos.md)
-### [Enroll your macOS device with the Company Portal](enroll-your-device-in-intune-macos-cp.md)
-### [This device is a little different](device-little-different-jamf.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [Using your macOS device](using-your-macos-device-with-intune.md)
+### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
+### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
+### [This device is a little different](device-little-different-jamf.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
