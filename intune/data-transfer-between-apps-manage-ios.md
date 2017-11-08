@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
+
 ---
 
 # How to manage data transfer between iOS apps
@@ -36,6 +37,7 @@ Protecting your company data includes making sure that file transfers are restri
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 
 The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM solution.  When the user installs the deployed app, the restrictions you set are applied.
+
 ##  Using app protection with iOS apps
 App protection policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
 
@@ -46,30 +48,25 @@ App protection policies can be used with the iOS **Open in management** feature 
 -   **Devices managed by a third party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
 To make sure that apps that you deploy using your third party MDM solution are also associated with the app protection policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#configure-user-upn-setting-for-third-party-emm) walkthrough.  When apps are deployed with the user UPN setting, the app protection policies are applied to the app when the end user signs-in using their work account.
 
-> [!IMPORTANT]
-> The user UPN setting is only required for apps deployed to devices managed by a third-party MDM.  For Intune-managed devices, this setting is not required.
-
-
-## Configure user UPN setting for third-party EMM
-Configuring the user UPN setting is **required** for devices that are managed by a third-party EMM solution. The procedure described below is a general flow on how to configure the UPN setting and the resulting end user experience:
-
+## Configure user UPN setting for Microsoft Intune or third-party EMM
+Configuring the user UPN setting is **required** for devices that are managed by Intune or a third-party EMM solution. The procedure described below is a general flow on how to configure the UPN setting and the resulting end user experience:
 
 1.  In the [Azure portal](https://portal.azure.com), [create and assign an app protection policy](app-protection-policies.md) for iOS. Configure policy settings per your company requirements and select the iOS apps that should have this policy.
 
-2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also covered by Example 1.
+2.  Deploy the apps and the email profile that you want managed through Intune or your third-party MDM solution using the generalized steps below. This experience is also covered by Example 1.
 
-  1.  Deploy the app  with the following app configuration settings:
+3.  Deploy the app  with the following app configuration settings:
 
       **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Deploy the Open in management policy using your third-party MDM provider to enrolled devices.
+4.  Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 
 
-### Example 1: Admin experience in third-party MDM console
+### Example 1: Admin experience in Intune or third-party MDM console
 
-1. Go to the admin console of your third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
+1. Go to the admin console of Intune or your third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
 
 2. In the Application Configuration section, enter the following setting:
 
@@ -79,6 +76,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
 

@@ -610,6 +610,8 @@
         href: reports-ref-date.md
       - name: Reference for devices entities
         href: reports-ref-devices.md
+      - name: Reference for Intune management extension
+        href: reports-ref-intunemanagementextension.md
       - name: Reference for mobile app management (MAM) entities
         href: reports-ref-mobile-app-management.md
       - name: Reference for policy entities

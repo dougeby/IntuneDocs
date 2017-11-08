@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,16 @@ ms.custom: intune-azure
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+
+## Week of November 6, 2017
+
+### Search improvements to the Company Portal apps and website <!--1418189-->
+The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+
+
 
 ## Week of October 16, 2017
 

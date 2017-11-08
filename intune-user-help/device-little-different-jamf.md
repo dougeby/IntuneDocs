@@ -2,7 +2,7 @@
 # required metadata
 
 title: This device is a little different | Microsoft Docs
-description: Learn more about your Intune-enabled macOS device managed by JAMF.
+description: Learn more about your Intune-enabled macOS device managed by Jamf.
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
@@ -28,10 +28,10 @@ ms.custom: intune-enduser
 
 ---
 
-# Performing actions on a macOS device managed by JAMF
+# Performing actions on a macOS device managed by Jamf
 
 Your company uses a combination of tools to make sure that your macOS device can access company resources safely. To make sure that your device can access these resources, you need to go to **Applications** > **Self Service**, and make sure that your device is compliant with company policies or to perform any other actions on your device.
 
-If you are on the macOS device with the compliance issues that is managed by JAMF, click the **Resolve** button to launch **Self Service**.
+If you are on the macOS device with the compliance issues that is managed by Jamf, click the **Resolve** button to launch **Self Service**.
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
