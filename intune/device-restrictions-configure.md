@@ -65,7 +65,7 @@ Use the information in this topic to learn the basics about configuring device r
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
-<!--  Stubbing out for now; investigating for future use.
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
 ## Example of device restriction settings
 
