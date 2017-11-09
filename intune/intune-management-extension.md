@@ -7,7 +7,7 @@ description: Learn how to upload PowerShell scripts in Intune to run on Windows 
 keywords:
 author: dougeby
 manager: angrobe
-ms.date: 10/17/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
