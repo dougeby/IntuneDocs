@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Configure Intune device restriction settingstitleSuffix: "Azure portal"
+title: Configure Intune device restriction settings
+titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure settings and features on devices you manage."
 keywords:
 author: lleonard-msft
@@ -64,9 +65,12 @@ Use the information in this topic to learn the basics about configuring device r
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
+<!--  Stubbing out for now; investigating for future use.
+
 ## Example of device restriction settings
 
 In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
+-->
