@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
