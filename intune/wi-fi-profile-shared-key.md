@@ -217,7 +217,5 @@ You can also create an XML file from an existing Wi-Fi connection:
 Before you deploy a Wi-Fi profile with PSK, verify that the device can connect to the endpoint directly.
 
 When rotating keys (passwords or passphrases), expect downtime and plan deployments accordingly. Consider pushing new Wi-Fi profiles during non-working hours. Also, warn users that connectivity may be impacted.
- 
-To ensure a smooth transition experience and deliver timely policy updates, devices must keep at least one open communication channel to Intune. To do this, use cellular connectivity or provide guest Wi-Fi access that connects users only to Intune endpoints.
 
-
+To ensure a smooth transition experience, make sure the end user’s device has an alternate connection to the Internet. For example, the end user must be able to switch back to Guest WiFi (or some other WiFi network) or have cellular connectivity to communicate with Intune. This allows the user to continue to receive policy updates when the corporate WiFi Profile is updated on the device.
