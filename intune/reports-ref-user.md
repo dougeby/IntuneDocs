@@ -33,7 +33,7 @@ The **User** entity lists all the Azure Active Directory (Azure AD) users with a
 
 The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
 
-You can use the **Current Users** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).]
+You can use the **Current Users** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).
 
 | Property  | Description | Example |
 |---------|------------|--------|

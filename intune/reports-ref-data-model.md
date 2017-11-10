@@ -31,6 +31,8 @@ The data pulled from your tenant is added into a data warehouse. The warehouse i
 
 The Intune Data Warehouse structure uses a star-schema model. A star-schema organizes facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. A *dimension* in the context of the model is a set of categories and their hierarchical relationship. For example, days are grouped into months and months are grouped into years. A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
 
+A data snapshot is collected and stored in the warehouse on a daily cadence at Midnight UTC. A month of snapshots is stored.
+
 The warehouse exposes data in the following high-level categories:
   -  App protection enabled apps and usage
   -  Enrolled devices, properties, and inventory
