@@ -163,7 +163,9 @@
       - name: Bulk enroll
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
-        href: enrollment-autopilot.md 
+        href: enrollment-autopilot.md
+      - name: Enrollment Status Screen
+        href: windows-enrollment-status.md   
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -243,7 +245,7 @@
     - name: App configuration policies
       href: app-configuration-policies-overview.md
       items:
-      - name: iOS managed devices 
+      - name: iOS managed devices
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
@@ -365,6 +367,8 @@
         href: certficates-pfx-configure.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
+    - name: Manage PowerShell scripts
+      href: intune-management-extension.md  
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Assign profiles
@@ -387,7 +391,7 @@
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
     - name: Actions for noncompliance
-      href: actions-for-noncompliance.md   
+      href: actions-for-noncompliance.md
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
   - name: Set up conditional access
@@ -556,11 +560,11 @@
   - name: Configure custom device settings
     href: custom-settings-configure.md
     items:
+    - name: Wi-Fi profile with a pre-shared key
+      href: wi-fi-profile-shared-key.md
     - name: Android
       href: custom-settings-android.md
       items:
-      - name: Wi-Fi profile with a pre-shared key
-        href: wi-fi-profile-shared-key.md
       - name: Per-app VPN profile
         href: android-pulse-secure-per-app-vpn.md
       - name: Allow/block apps for Samsung KNOX Standard

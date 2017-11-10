@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/7/2017
+ms.date: 11/8/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,11 +47,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 ## Week of November 6, 2017
 
-### Access to managed app logs for iOS <!-- 1469920 -->
-
-End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
-
-Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
 ### Device enrollment
 #### Co-management for Windows 10 devices  <!-- 1243445 -->
@@ -66,6 +61,8 @@ As an Intune administrator, you can now specify a minimum and maximum version of
 
 Intune will continue to support enrolling Windows 8.1 PCs and phones. However, only Windows 10 versions can be set with minimum and maximum limits. To permit enrollment of 8.1 devices, leave the minimum limit empty.
 
+#### Alerts for Windows AutoPilot unassigned devices  <!-- 1631236 -->
+A new alert is available for Windows AutoPilot unassigned devices on the **Microsoft Intune** > **Device enrollment** > **Overview** page. This alert shows how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them. For more information, see [Enroll Windows devices using Windows AutoPilot deployment program](https://docs.microsoft.com/intune/enrollment-autopilot).
 
 ### Device management
 #### Refresh button for Devices list    <!-- 1333581 -->
@@ -122,7 +119,7 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 
 
 #### Manage PowerShell scripts in Intune for Windows 10 devices <!-- 790537 -->
-The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see <link>.
+The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
 #### New device restriction settings for Windows 10      <!-- 1308850 -->
 -    Messaging (mobile only) - disable testing or MMS messages
@@ -174,6 +171,13 @@ You can configure Citrix VPN for their Windows 10 devices. You can choose the Ci
 Customers can configure Wi-Fi profiles to use pre-shared keys (PSK) for WPA/WPA2 Personal connections on iOS devices. These profiles are pushed to user's device when the device is enrolled into Intune.
 
 When the profile has been pushed to the device, the next step depends on the profile configuration.  If set to connect automatically, it does so when the network is next needed.  When the profile is connects manually, the user must activate the connection manually.  
+
+### Intune apps
+#### Access to managed app logs for iOS <!-- 1469920 -->
+End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
+
+Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
+
 
 ### Monitor and troubleshoot
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
