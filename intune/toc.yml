@@ -560,11 +560,11 @@
   - name: Configure custom device settings
     href: custom-settings-configure.md
     items:
+    - name: Wi-Fi profile with a pre-shared key
+      href: wi-fi-profile-shared-key.md
     - name: Android
       href: custom-settings-android.md
       items:
-      - name: Wi-Fi profile with a pre-shared key
-        href: wi-fi-profile-shared-key.md
       - name: Per-app VPN profile
         href: android-pulse-secure-per-app-vpn.md
       - name: Allow/block apps for Samsung KNOX Standard
