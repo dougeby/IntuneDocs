@@ -48,4 +48,5 @@ Entity sets are named collections of entities in the data model. These sets cont
   -  [Policy](reports-ref-policy.md)
   -  [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
   -  [User](reports-ref-user.md)
+  -  [Current User](reports-ref-current-user.md)
   -  [User Device Associations](reports-ref-user-device.md)

@@ -6,12 +6,12 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 11/9/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
+ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 
 # optional metadata
 #ROBOTS:
@@ -23,17 +23,13 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Reference for user entity
+# Reference for current user entity
 
-The **User** category contains the **User** entity that defines user and agent properties in the data model.
+The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. That is, if a user has been removed, they will not be present in the data collection period. For a collection that contains a history of changes in user states over the last month, see [Reference for user entity](reports-ref-user.md).
 
 **User**
 
 The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
-
-The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
-
-You can use the **Current Users** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).]
 
 | Property  | Description | Example |
 |---------|------------|--------|
