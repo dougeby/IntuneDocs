@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Create a Wi-Fi profile with a pre-shared keytitleSuffix: "Azure portal"
+title: Create a Wi-Fi profile with a pre-shared key
+titleSuffix: "Azure portal"
 description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.custom: intune-azure
 
 
 ---
-# Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key
+# Use a custom device profile to create a Wi-Fi profile with a pre-shared key
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Here's how to use Intune’s **Custom device profiles** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
@@ -211,3 +212,12 @@ You can also create an XML file from an existing Wi-Fi connection:
     It’s best to use a computer that has not connected to many wireless networks, because you’ll have to search through each profile to find the right one.
 3.     Search through the XML files to locate the one with the right name.
 4.     After you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
+
+## Best practices
+Before you deploy a Wi-Fi profile with PSK, verify that the device can connect to the endpoint directly.
+
+When rotating keys (passwords or passphrases), expect downtime and plan deployments accordingly. Consider pushing new Wi-Fi profiles during non-working hours. Also, warn users that connectivity may be impacted.
+ 
+To ensure a smooth transition experience and deliver timely policy updates, devices must keep at least one open communication channel to Intune. To do this, use cellular connectivity or provide guest Wi-Fi access that connects users only to Intune endpoints.
+
+
