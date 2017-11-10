@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-classic
 
 # Data Warehouse data model
 
-The Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment. The view is composed things that have a relationship and exist in time.
+The Intune Data Warehouse samples data daily to provide a historical view of your continually changing environment of mobile devices. The view is composed of related things in time.
 
 ## Things: entity sets
 
@@ -36,9 +36,7 @@ The warehouse exposes data in the following high-level areas:
   -  Apps and software inventory
   -  Device configuration and compliance policies
 
-These areas contain the entities, or things, that are meaningful to your Intune environment. An entity collection is a named set of entities in the data model. These sets define the data collected in the model. Each entity set provide an access point into the data model. 
-
-You find details about the entity sets in the following topics:
+These areas contain the entities, or things, that are meaningful to your Intune environment. You find details about the entity sets in the following topics:
 
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)
@@ -52,9 +50,9 @@ You find details about the entity sets in the following topics:
 
 ## Relationships: star-schema model
 
-The warehouse uses a set of entities and relationships that are meaningful to the type of questions you want to ask. For example, you can review the number of installations of an in-house developed Android application per day over the last week to assess if there is an increasing trend of installations. The structure of the data warehouse enables you to gain insight into your mobile environment. In turn, analytics tools, such as Microsoft Power BI, can use the Data Warehouse data model to create visualizations and dynamic dashboards.
+The warehouse organizes the entities in relationships that are meaningful to the type of questions you want to ask. For example, you can review the number of installations of an in-house developed Android application. The structure of the data warehouse enables you to gain insight into your mobile environment. In turn, analytics tools, such as Microsoft Power BI, can use the Data Warehouse data model to create visualizations and dynamic dashboards.
 
-The entities and relationships are organized in a star-schema model. A star-schema correlates facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. A *dimension* in the context of the model is a set of categories and their hierarchical relationship. For example, days are grouped into months and months are grouped into years. A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
+The entities and relationships use a star-schema model. A star-schema correlates facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. A *dimension* in the context of the model is a set of categories and their hierarchical relationship. For example, days are grouped into months and months are grouped into years. A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
 
 ## Time: daily snapshots
 
@@ -62,23 +60,21 @@ The warehouse is downstream from your Intune data. Intune takes a daily snapshot
 
 ## Entity lifetime representation in the warehouse
 
-The data model is designed to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
+You can use the month of data snapshots to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
 
-To provide this insight, the data warehouse stores historical information. This means it tracks the lifetimes of entities. The warehouse records when an entity was created, when the state of the entity changes, and when an entity is deleted. With the history captured with daily snapshots, you can compare one day to the previous day and so on.
+To provide this insight, the data warehouse stores historical information. This means it tracks the lifetimes of entities. The warehouse records when an entity was created when the state of the entity changes, and when an entity is deleted. With the history captured with daily snapshots of quantitative measurements, you can compare one day to the previous day and so on.
 
-These snapshots are stored in your warehouse fact tables. The fact tables store a history of daily snapshots. A single snapshot holds the quantitative measurements that exist on the day of the snapshot. 
-
-Working with entity lifetimes can be confusing since your entities are changing state. That means if you look at a snapshot on day 30, a user record may not exist in an active state in the data. On day 29-28 the entity record may exist as active. And then before day 28 not existed at all.
+Working with entity lifetimes can be confusing since your entities are changing state. That means if you look at a snapshot on day 30, a user record may not exist in an active state in the data. On day 29-28 the entity record may exist as active. And then before day 28, the user did not exist at all.
 
 This may be clearer if we walk through the lifetime of an entity.
 
-Assume a user **John Smith** gets assigned a license on 06/01/2017, then the **User** table would have the following entry: 
+Assume a user, **John Smith**, gets assigned a license on 06/01/2017, then the **User** table would have the following entry: 
  
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
  
-John Smith gives up his license on 07/25/2017. The **User** table has the following entries. Changes in existing records are `marked`.) 
+John Smith gives up his license on 07/25/2017. The **User** table has the following entries. Changes in existing records are `marked`. 
 
 | DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
@@ -101,7 +97,7 @@ A person wanting to see only existing users would want to apply a filter where `
 
 ## Dimension tables in the entity lifetime
 
-In order to store the history of state changes in entities, Intune does not delete records but rather marks the record a deleted. This is called a self-delete. The dimension tables use various metadata columns to track the lifetime of records. 
+In order to store the history of state changes in entities, Intune doesn't delete records. Instead it marks the record as deleted. This is called a soft-delete. The dimension tables use various metadata columns to track the lifetime of records. 
 
 The most commonly used metadata columns are: 
 
@@ -113,9 +109,9 @@ The most commonly used metadata columns are:
 
 Any metadata column starting with the prefix **Row**, such as **RowLastModifiedDateTimeUTC**, indicates when a record was created or modified in the Intune Data Warehouse. The warehouse is downstream from the data in Intune. This value has no relationship to the lifetime of the entity in Intune.  
  
-Any person wanting to see only those dimension entities that currently exist would want to apply a filter where **IsDeleted = FALSE**. 
+Any person wanting to see only those dimension entities that currently exist would want to apply a filter where **IsDeleted = FALSE**.
 
 ## Next Steps
 
- - Learn more about working with data warehoues in the [SQL Data Warehouse Documentation](https://docs.microsoft.com/azure/sql-data-warehouse/).
- - Learn about working with Power BI and a data warehouse in [Visualize data with Power BI](https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-get-started-visualize-with-power-bi). 
+ - Learn more about working with data warehouses in the [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - Learn about working with Power BI and a data warehouse in [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
