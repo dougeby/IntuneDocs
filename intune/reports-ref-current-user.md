@@ -25,7 +25,7 @@ ms.custom: intune-classic
 
 # Reference for current user entity
 
-The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. That is, if a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user states over the last month, see [Reference for user entity](reports-ref-user.md).
+The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. That is, if a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state over the last month, see [Reference for user entity](reports-ref-user.md).
 
 **User**
 
