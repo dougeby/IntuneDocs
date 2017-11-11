@@ -224,6 +224,10 @@ You can use tokens for dynamic values in app configurations for apps on devices 
 #### Certificate-based authentication support on the Company Portal for iOS <!--1029830-->
 We have added support for certificate-based authentication (CBA) in the Company Portal app for iOS. Users with CBA enter their username, then tap the “Sign in with a certificate” link. CBA is already supported on the Company Portal apps for Android and Windows. You can learn more on the [sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) page.
 
+## Apps that are available with or without enrollment can now be installed without being prompted for enrollment. <!-- 1334712 -->
+
+Company apps that have been made available with or without enrollment on the Android Company Portal app can now be installed without a prompt to enroll.
+
 ## Week of October 16, 2017
 ### Device enrollment
 #### Windows AutoPilot Deployment Program support in Microsoft Intune  <!-- 747617  -->
