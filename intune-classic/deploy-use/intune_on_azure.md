@@ -41,7 +41,9 @@ The Intune PC Client management workflows use the [Silverlight-based Intune Admi
 Because of the switch to Azure AD Groups, “group-based” filtering in the Silverlight console dashboard views has changed slightly. To filter in the updated Silverlight UI, follow these steps:
 
 1. Select a view.
-2. In the filter box in the upper right-hand corner, enter the name of the group that you want to filter by and press enter.  This will filter the list view to the devices in that particular group.
+2. In the **Filters** box, enter the name of the group that you want to filter by and press enter. This will filter the list view to the devices in that particular group.
+
+   ![](media/intune_on_azure/image01.png)
 
 ## Manage Windows 10 devices by using MDM
 
@@ -59,8 +61,8 @@ For a detailed comparison between PC Client and MDM capabilities, see [Compare m
 
 To switch from managing Windows 10 devices with the Intune PC Client to managing with MDM, follow these steps:
 
-1. In the Silverlight console, perform a Selective wipe of the device. This un-enrolls the device from the PC Client.
-
+1. In the Silverlight console, perform a **Selective wipe** of the device. This un-enrolls the device from the PC Client.
+  ![](media/intune_on_azure/image02.png)
 2. Re-enroll the device by using [MDM (and/or Azure AD Join)](https://docs.microsoft.com/en-us/intune/windows-enroll). 
 
 ## Next steps
