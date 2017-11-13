@@ -7,7 +7,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -165,7 +165,24 @@ To enable the Intune App SDK, follow these steps:
 
 11. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
+## Using the Intune MAM Configurator Tool
 
+The Intune MAM Configurator Tool now handles all info.plist manipulation that is needed to integrate our SDK manually. You can find it in the repo for the Intune App SDK for iOS. Any additional app specific settings such as multi-ID, AAD settings, etc are not handled by this tool. The tool has 3 parameters:
+ 
+|Property|How to use it|
+|---------------|--------------------------------|
+|- i |	`<Path to the input plist>` |
+|- e | The entitlements files |
+|- o |	(Optional) `<Path for the changed input plist>` |
+	
+The Intune MAM Configurator Tool can be used to update:
+* Any of your app's Main Storyboard and/or Main Nib files into the IntuneMAMSettings.
+* Any of your app's defined URL schemes in its Info.plist file with the -intunemam suffix, for each URL scheme.
+* Any of your app's defined Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
+* Any of your app's app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the AppGroupIdentifiers key as an array of strings.
+
+	
+>[!NOTE] If you decide to use this tool instead of manual info.plist manipulation, we recommend it be rerun whenever changes to your app's info.plist or entitlements have been made.
 
 ## Configure Azure Active Directory Authentication Library (ADAL)
 
