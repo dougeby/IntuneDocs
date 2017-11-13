@@ -33,10 +33,10 @@ When using Intune on Azure to manage your organization’s Windows devices, cons
 
 ## Legacy PC Client features are only available in the Silverlight console
 
-The Intune PC Client management workflows use the [Silverlight-based Intune Admin Console](https://manage.microsoft.com/). This means two things:
+The Intune PC Client management workflows use the [Silverlight-based Intune Admin Console](https://manage.microsoft.com/), which has the following consequences:
 
 - For all non-grouping management tasks using the Intune PC Client, you must use the Silverlight console.
-- When managing groups, you must use the [Intune on Azure Portal](https://portal.azure.com/). This is because Intune now uses Azure AD Groups instead of legacy Intune Groups. 
+- When managing groups, you must use the [Intune on Azure portal](https://portal.azure.com/). This requirement exists because Intune now uses Azure AD Groups instead of legacy Intune Groups. 
 
 Because of the switch to Azure AD Groups, “group-based” filtering in the Silverlight console dashboard views has changed slightly. To filter in the updated Silverlight UI, follow these steps:
 
@@ -55,17 +55,17 @@ For Windows 7, which can’t be managed by using MDM, we will continue to suppor
 
 ## MDM Capabilities
 
-For a detailed comparison between PC Client and MDM capabilities, see [Compare managing Windows PCs as computers or mobile devices](https://docs.microsoft.com/en-us/intune-classic/deploy-use/pc-management-comparison). MDM updates will continue to bring new management capabilities to MDM-enrolled, Windows 10 devices, inclusive of evaluating options for Win 32 apps. Please view the [What’s New](https://docs.microsoft.com/intune/whats-new) for the latest release additions to the service.
+For a detailed comparison between PC Client and MDM capabilities, see [Compare managing Windows PCs as computers or mobile devices](https://docs.microsoft.com/en-us/intune-classic/deploy-use/pc-management-comparison). MDM updates will continue to bring new management capabilities to MDM-enrolled, Windows 10 devices, inclusive of evaluating options for Win 32 apps. View the [What’s New](https://docs.microsoft.com/intune/whats-new) for the latest release additions to the service.
 
 ## Switch from PC Client to MDM
 
 To switch from managing Windows 10 devices with the Intune PC Client to managing with MDM, follow these steps:
 
-1. In the Silverlight console, perform a **Selective wipe** of the device. This un-enrolls the device from the PC Client.
+1. In the Silverlight console, perform a **Selective wipe** to un-enroll the device from the PC Client.
   ![](media/intune_on_azure/image02.png)
 2. Re-enroll the device by using [MDM (and/or Azure AD Join)](https://docs.microsoft.com/en-us/intune/windows-enroll). 
 
 ## Next steps
-[Enrol Windows devices](Intune/windows-enroll.md)
+[Enroll Windows devices](Intune/windows-enroll.md)
 
  
