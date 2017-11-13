@@ -5,8 +5,9 @@ title: Adding Enrollment Status Screens
 titlesuffix: "Azure portal"
 description: Greet your users who are enrolling Windows 10 devices.
 keywords:
-author: barlan
-manager: barlanmsft
+author: barlanmsft
+ms.author: barlan
+manager: arob98
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
