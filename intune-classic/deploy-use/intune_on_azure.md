@@ -66,6 +66,6 @@ To switch from managing Windows 10 devices with the Intune PC Client to managing
 2. Re-enroll the device by using [MDM (and/or Azure AD Join)](https://docs.microsoft.com/en-us/intune/windows-enroll). 
 
 ## Next steps
-[Enroll Windows devices](Intune/windows-enroll.md)
+[Enroll Windows devices](../intune/windows-enroll.md)
 
  
