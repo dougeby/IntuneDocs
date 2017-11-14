@@ -36,7 +36,7 @@ The Settings page in the Company Portal app for Windows 10 has been updated to m
 
 |Before|After|
 |---|---|
-|![01](./intune-user-help/media/w10-share-logs.png)|![02](./intune-user-help/media/w10-share-logs-after-1711.png)
+|![01](/intune-user-help/media/w10-share-logs.png)|![02](/intune-user-help/media/w10-share-logs-after-1711.png)
 
 ### Search improvements to the Company Portal apps and website <!--1418189-->
 The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
