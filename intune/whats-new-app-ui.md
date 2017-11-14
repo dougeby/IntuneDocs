@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,12 +31,17 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 ## Week of November 6, 2017
 
+#### Updates to the Company Portal app for Windows 10 <!--1299474-->
+The Settings page in the Company Portal app for Windows 10 has been updated to make the settings and intended user actions to be more consistent across all settings. It has also been updated to match the layout of other Windows apps.
+
+|Before|After|
+|---|---|
+|![01](./intune-user-help/media/w10-share-logs.png)|![02](./intune-user-help/media/w10-share-logs-after-1711.png)
+
 ### Search improvements to the Company Portal apps and website <!--1418189-->
 The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
 
 We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
-
-
 
 ## Week of October 16, 2017
 
@@ -50,10 +55,6 @@ We're still fine-tuning the way relevance is tracked, so please let us know how 
 
 ### iOS Company Portal displays large icons <!-- 1454593 -->
 This release fixes a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website](https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
-
-
-
-
 
 
 ## Week of October 2, 2017
