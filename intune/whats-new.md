@@ -173,11 +173,20 @@ Customers can configure Wi-Fi profiles to use pre-shared keys (PSK) for WPA/WPA2
 When the profile has been pushed to the device, the next step depends on the profile configuration.  If set to connect automatically, it does so when the network is next needed.  When the profile is connects manually, the user must activate the connection manually.  
 
 ### Intune apps
+
 #### Access to managed app logs for iOS <!-- 1469920 -->
 End users with the managed Browser installed can now view the management status of all Microsoft published apps and send logs for troubleshooting their managed iOS apps.
 
 Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
+#### Updates to the Company Portal app for Windows 10 <!--1299474-->
+The Settings page in the Company Portal app for Windows 10 has been updated to make the settings and intended user actions to be more consistent across all settings. It has also been updated to match the layout of other Windows apps. You can find before/after images in the [what's new in app UI](whats-new-app-ui.md) page.
+
+#### Inform end users what device information can be seen for Windows 10 devices <!--1337920-->
+We have added **Ownership Type** to the Device Details screen on the Company Portal app for Windows 10. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the **About** screen.
+
+#### Feedback prompts for the Company Portal app for Android <!--1165249-->
+The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
 ### Monitor and troubleshoot
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
@@ -185,14 +194,6 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 
 ## Week of October 30, 2017
-
-### Intune apps 
-
-#### Inform end users what device information can be seen for Windows 10 devices <!--1337920-->
-We have added **Ownership Type** to the Device Details screen on the Company Portal app for Windows 10. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the **About** screen.
-
-#### Feedback prompts for the Company Portal app for Android <!--1165249-->
-The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app. 
 
 ### App management
 
@@ -221,12 +222,12 @@ Learn more about the MDM and MAM changes announced in the [Intune support team b
 ### New enrollment alerts for Apple devices <!-- 1471790 -->
 The overview page for enrollment will show useful alerts for IT admins regarding management of Apple devices. Alerts will show up on Overview page when the Apple MDM push certificate is expiring or has already expired; when the Device Enrollment Program token is expiring or has already expired; and when there are unassigned devices in the Device Enrollment Program.
 
-
 ### Support token replacement for app configuration without device enrollment <!-- 1080364 -->
 
 You can use tokens for dynamic values in app configurations for apps on devices that are not enrolled. For more information, see [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).
 
 ## Week of October 23, 2017
+
 ### Intune apps
 #### Certificate-based authentication support on the Company Portal for iOS <!--1029830-->
 We have added support for certificate-based authentication (CBA) in the Company Portal app for iOS. Users with CBA enter their username, then tap the “Sign in with a certificate” link. CBA is already supported on the Company Portal apps for Android and Windows. You can learn more on the [sign in to the Company Portal app](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) page.
