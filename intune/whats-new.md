@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/13/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -119,6 +119,10 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 
 
 #### Manage PowerShell scripts in Intune for Windows 10 devices <!-- 790537 -->
+
+> [!Note]
+> This feature is rolling out so it is not yet available for all customers.
+
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
 #### New device restriction settings for Windows 10      <!-- 1308850 -->
