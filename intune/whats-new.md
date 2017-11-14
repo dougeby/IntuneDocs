@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/13/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
