@@ -148,12 +148,6 @@ Intune and Azure Active Directory work together to make sure only managed apps c
 
 -   Learn more about [app-based conditional access with Intune](app-based-conditional-access-intune.md).
 
-### Conditional access for Apple devices
-
-Conditional access is also available for Macs through integration with Jamf Pro.
-
-- Learn more about [managing compliance for macOS](conditional-access-integrate-jamf.md)
-
 ## Next steps
 
 [How to configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
