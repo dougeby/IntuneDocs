@@ -64,7 +64,7 @@ Ways to use conditional access with Intune:
 
         -   Bring your own device (BYOD)
 
--   **app-based conditional access**
+-   **App-based conditional access**
 
 ## Next steps
 
