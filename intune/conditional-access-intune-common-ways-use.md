@@ -152,7 +152,7 @@ Intune and Azure Active Directory work together to make sure only managed apps c
 
 Conditional access is also available for Macs through integration with Jamf Pro.
 
-- Learn more about [managing compliance for macOS](conditional-access-jamf.md)
+- Learn more about [managing compliance for macOS](conditional-access-integrate-jamf.md)
 
 ## Next steps
 
