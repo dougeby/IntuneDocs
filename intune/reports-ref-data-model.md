@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 11/10/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,66 +52,16 @@ These areas contain the entities, or things, that are meaningful to your Intune 
 
 The warehouse organizes the entities in relationships that are meaningful to the type of questions you want to ask. For example, you can review the number of installations of an in-house developed Android application. The structure of the data warehouse enables you to gain insight into your mobile environment. In turn, analytics tools, such as Microsoft Power BI, can use the Data Warehouse data model to create visualizations and dynamic dashboards.
 
-The entities and relationships use a star-schema model. A star-schema correlates facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. A *dimension* in the context of the model is a set of categories and their hierarchical relationship. For example, days are grouped into months and months are grouped into years. A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
+The entities and relationships use a star-schema model. A star-schema correlates facts over the dimension of time. A *fact* in the context of the model is a quantitative measurement such as the number of devices, number of apps, or time of enrollment. Fact tables store a lot of data. They can get very large, and so they typically limit information to 30 days. A *dimension* provides context to the facts. Where the fact measures what happened, the dimensions indicate to whom it happened. Dimension tables, such as the like the **User** table are smaller and can retrain data for longer periods of time= than fact tables. 
+
+A star-schema model is optimized for flexibility and data analysis so that you can create the reports needed to understand your evolving mobile environment.
 
 ## Time: daily snapshots
 
-The warehouse is downstream from your Intune data. Intune takes a daily snapshot at Midnight UTC and stores the snapshot in the warehouse. The warehouse keeps a month of snapshots representing your Intune data.
-
-## Entity lifetime representation in the warehouse
-
-You can use the month of data snapshots to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
-
-To provide this insight, the data warehouse stores historical information. This means it tracks the lifetimes of entities. The warehouse records when an entity was created when the state of the entity changes, and when an entity is deleted. With the history captured with daily snapshots of quantitative measurements, you can compare one day to the previous day and so on.
-
-Working with entity lifetimes can be confusing since your entities are changing state. That means if you look at a snapshot on day 30, a user record may not exist in an active state in the data. On day 29-28 the entity record may exist as active. And then before day 28, the user did not exist at all.
-
-This may be clearer if we walk through the lifetime of an entity.
-
-Assume a user, **John Smith**, gets assigned a license on 06/01/2017, then the **User** table would have the following entry: 
- 
-| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
-| -- | -- | -- | -- | -- |
-| John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
- 
-John Smith gives up his license on 07/25/2017. The **User** table has the following entries. Changes in existing records are `marked`. 
-
-| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
-| -- | -- | -- | -- | -- |
-| John Smith | FALSE | 06/01/2017 | `07/26/2017` | `FALSE` 
-| John Smith | TRUE | 07/26/2017 | 12/31/9999 | TRUE 
-
-The first row indicates John Smith existed in Intune from 06/01/2017 to 07/25/2017. The second record indicates that the user was deleted on 07/25/2017 and is no longer present in Intune.
-
-Now let assume John Smith gets a new license assigned on 08/31/2017, then the User table would have the following entries:
- 
-| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
-| -- | -- | -- | -- | -- |
-| John Smith | FALSE | 06/01/2017 | 07/26/2017 | FALSE 
-| John Smith | TRUE | 07/26/2017 | `08/31/2017` | `FALSE` 
-| John Smith | FALSE | 08/31/2017 | 12/31/9999 | TRUE 
- 
-A person wanting to see the current state of all users would want to apply a filter where `IsCurrent = TRUE`. 
- 
-A person wanting to see only existing users would want to apply a filter where `IsCurrent = TRUE AND IsDeleted = FALSE`.
-
-## Dimension tables in the entity lifetime
-
-In order to store the history of state changes in entities, Intune doesn't delete records. Instead it marks the record as deleted. This is called a soft-delete. The dimension tables use various metadata columns to track the lifetime of records. 
-
-The most commonly used metadata columns are: 
-
-| Metadata Property Name  | Interpretation of Values |
-|--|--|
-| IsDeleted | Indicates whether the entity was deleted in Intune. |
-| StartDateInclusiveUTC  | The UTC date the entity was loaded into the Intune Data Warehouse. The entity may have been created before it was imported into the Intune Data Warehouse. |
-| DeletedDateUTC  | The UTC date that the entity was deleted in Intune. |  
-
-Any metadata column starting with the prefix **Row**, such as **RowLastModifiedDateTimeUTC**, indicates when a record was created or modified in the Intune Data Warehouse. The warehouse is downstream from the data in Intune. This value has no relationship to the lifetime of the entity in Intune.  
- 
-Any person wanting to see only those dimension entities that currently exist would want to apply a filter where **IsDeleted = FALSE**.
+The warehouse is downstream from your Intune data. Intune takes a daily snapshot at Midnight UTC and stores the snapshot in the warehouse. The duration of held snapshots vary from fact table to fact table. Some may hold seven days, others 30 days, and some even longer durations.
 
 ## Next Steps
 
- - Learn more about working with data warehouses in the [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - Learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
+  - Learn more about working with data warehouses in the [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
  - Learn about working with Power BI and a data warehouse in [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

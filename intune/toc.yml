@@ -608,6 +608,8 @@
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
+      - name: User lifetime representation in the Intune Data Warehouse
+        href: reports-ref-user-timeline.md
       - name: Reference for application entities
         href: reports-ref-application.md
       - name: Reference for current user entity

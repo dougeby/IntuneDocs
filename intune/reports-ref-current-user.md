@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,8 @@ ms.custom: intune-classic
 
 # Reference for current user entity
 
-The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. That is, if a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state over the last month, see [Reference for user entity](reports-ref-user.md).
+The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory Users that are currently assigned a license. The license could be an Intune license, a Hybrid license or a Microsoft Office 3065 license. If a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
+
 
 **User**
 
@@ -36,11 +37,9 @@ The **User** entity lists all the Azure Active Directory (Azure AD) users with a
 | UserKey |Unique identifier of the user in the data warehouse - surrogate key. |123 |
 | UserId |Unique identifier of the user  - similar to UserKey, but is a natural key. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Email address of the user. |John@constoso.com |
+| UPN | User principal name of the user. | John@constoso.com |
 | DisplayName |Display name of the user. |John |
 | IntuneLicensed |Specifies if this user is Intune licensed or not. |True/False |
-| IsDeleted |Indicates whether this user record has been updated.  True- this user has a new record with updated fields in this table. False- the latest record for this user. |True/False |
 | StartDateInclusiveUTC |Date and time in UTC when this user was created in the data warehouse. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
-| IsCurrent |Indicates whether this user record is current or not in the data warehouse. |True/False |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this user was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 

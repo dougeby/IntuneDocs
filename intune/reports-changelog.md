@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,11 +32,11 @@ Keep current on updates to the Intune Data Warehouse.
 ## 1710
 _Released November  2017_
 
-### A new entity collection named current user is limited to currently active user data <!-- 1544273 -->
+### A new entity collection named Current User is limited to currently active user data <!-- 1544273 -->
 
-The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
+The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the User and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
 
-In contrast, the new **Current User** entity collection contains users who have been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](reports-ref-current-user.md).
+In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](reports-ref-current-user.md).
 
 ## 1709
 _Released October  2017_
