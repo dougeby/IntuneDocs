@@ -186,8 +186,15 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Week of October 30, 2017
 
+### Intune apps 
+
+#### Inform end users what device information can be seen for Windows 10 devices <!--1337920-->
+We have added **Ownership Type** to the Device Details screen on the Company Portal app for Windows 10. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the **About** screen.
+
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
 The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app. 
+
+### App management
 
 ### iOS and Android line-of-business app version number is visible <!-- 1380712 -->
 
