@@ -188,8 +188,18 @@ We have added **Ownership Type** to the Device Details screen on the Company Por
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
 The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
-#### Update to what device details your company may see <!--1616825-->
-The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. 
+#### Update to what device details an organization can see <!--1616825-->
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.
+
+#### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
+
+The Company Portal app for Android has added instruction for end users to help them understand and, where possible, self-solve on new use cases.
+- End users will be guided to the (Azure Active Directory portal)[https://account.activedirectory.windowsazure.com/r/#/profile] to remove a device if they have reached the maximum number of devices that they are allowed to add.
+- End users are given steps to follow to help them [fix activation errors on Samsung KNOX devices](https://go.microsoft.com/fwlink/?linkid=859718) or to [turn off power-saving mode](/intune-user-help/power-saving-mode-android). If neither of those solutions resolve their issue, we will provide an explanation of how to [submit logs to Microsoft](/intune-user-help/send-logs-to-microsoft-ios).
+
+#### New 'Resolve' action available for Android devices <!---1583480--->
+
+The Company Portal app for Android is introducing a 'Resolve' action on the _Update device settings_ page. Selecting this option will take the end user directly to the setting that is causing their device to be noncompliant. The Company Portal app for Android currently supports this action for the [device passcode](/intune-user-help/set-your-pin-or-password-android), [device encryption](/intune-user-help/encrypt-your-device-android), [USB debugging](/intune-user-help/you-need-to-turn-off-usb-debugging-android), and [Unknown Sources](intune-user-help/you-need-to-turn-off-unknown-sources-android) settings.
 
 ### Monitor and troubleshoot
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
