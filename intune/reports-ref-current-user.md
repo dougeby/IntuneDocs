@@ -42,4 +42,3 @@ The **User** entity lists all the Azure Active Directory (Azure AD) users with a
 | IntuneLicensed |Specifies if this user is Intune licensed or not. |True/False |
 | StartDateInclusiveUTC |Date and time in UTC when this user was created in the data warehouse. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this user was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
-
