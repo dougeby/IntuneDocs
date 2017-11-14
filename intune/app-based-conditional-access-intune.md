@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: App based conditional access with Intune
+title: App-based conditional access with Intune
 description: Understand the concepts of how app-based conditional access works with Intune.
 keywords:
 author: andredm7
@@ -26,13 +26,13 @@ ms.custom: intune-azure
 
 ---
 
-# app-based conditional access with Intune
+# App-based conditional access with Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 [Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.
 
-app-based conditional access and mobile app management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online and other Office 365 services.
+App-based conditional access and mobile app management add a security layer by making sure only mobile apps that support Intune app protection policies can access Exchange online and other Office 365 services.
 
 > [!NOTE]
 > A managed app is an app that has app protection policies applied to it, and can be managed by Intune.
@@ -51,7 +51,7 @@ For more information, see [Enterprise Mobility pricing ](https://www.microsoft.c
 
 A list of apps that support app-based conditional access can be found in the [Azure Active Directory conditional access technical reference documentation.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)
 
-app-based conditional access [also supports line-of-business (LOB) apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
+App-based conditional access [also supports line-of-business (LOB) apps](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
 ## How app-based conditional access works
 
