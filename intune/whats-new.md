@@ -188,6 +188,9 @@ We have added **Ownership Type** to the Device Details screen on the Company Por
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
 The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
+#### Update to what device details your company may see <!--1616825-->
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. 
+
 ### Monitor and troubleshoot
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** will be populated with the latest user data.
