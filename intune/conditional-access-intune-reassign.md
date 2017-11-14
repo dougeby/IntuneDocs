@@ -207,5 +207,5 @@ After you have reassigned your conditional access policies in the Azure portal, 
 ## See also
 
 - [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md)
-- [App-based conditional access with Intune](app-based-conditional-access-intune.md)
+- [app-based conditional access with Intune](app-based-conditional-access-intune.md)
 - [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
