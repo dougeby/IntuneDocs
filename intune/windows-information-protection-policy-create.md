@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -131,13 +131,13 @@ After you add the apps you want to protect with WIP, you need to apply a protect
 
 ### Before you begin
 
-WIP Learning is a report that allows you to monitor your WIP-unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. You can export these apps from the report and add them to your WIP policies to avoid productivity disruption before they enforce WIP in “Hide Override” mode.
+WIP Learning is a report that allows you to monitor your WIP-unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. You can export these apps from the report and add them to your WIP policies to avoid productivity disruption before they enforce WIP in “Block” mode.
 
-We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Hide Overrides**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 ### What are the protection modes?
 
-#### Hide Overrides
+#### Block
 WIP looks for inappropriate data sharing practices and stops the user from completing the action. This can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
 
 #### Allow Overrides
