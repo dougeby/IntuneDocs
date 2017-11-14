@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.custom: intune-enduser
 When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
 
 > [!Note]
-> You might be asked to set a PIN or password before encrypting if your company support requires one.
+> Certain Android devices, including some made by Huawei and those made by Vivo and OPPO, cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 If you unenroll your phone, it will remain encrypted.
 
@@ -44,9 +44,6 @@ If you unenroll your phone, it will remain encrypted.
     (On some phones, you’ll need to choose **Storage** > **Storage encryption** or **Storage** > **Lock screen and security** > **Other security settings** to find the "Encrypt" option).
 
 3.  Follow the onscreen instructions. During encryption, your device might restart several times.
-
-> [!Note]
-> Certain Android devices cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### What to do if you have issues
 **Issue**: You have already encrypted your device, and you see one of the following:
