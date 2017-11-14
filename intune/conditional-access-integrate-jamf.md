@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Integrate Jamf Pro with Intune conditional access
 
-[!INCLUDE][azure_portal](./includes/azure_portal.md)]
+[!INCLUDE][azure_portal](/includes/azure_portal.md)]
 
 [!INCLUDE][macos-preview-1708](/intune-user-help/includes/macos-preview-1708.md]
 

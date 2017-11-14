@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Assign conditional access policies to Macs with Jamf Pro
 
-[!INCLUDE][azure_portal](./includes/azure_portal.md)]
+[!INCLUDE][azure_portal](/includes/azure_portal.md)]
 
 [!INCLUDE][macos-preview-1708](/intune-user-help/includes/macos-preview-1708.md]
 
@@ -55,9 +55,9 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 ## Direct your users to register Jamf Pro-managed devices with Azure Active Directory
 
 > [!NOTE]
-> You need to [deploy the Company Portal](conditional-access-assign-jamf#require-the-company-portal-app-for-macos) for macOS before going through the next steps.  
+> You need to [deploy the Company Portal](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) for macOS before going through the next steps.  
 
-End users need to launch the Company Portal app as a Jamf Self Service policy to register the device with Azure AD as a device managed by Jamf Pro. If not, the user will only be registered with Azure AD. 
+End users need to launch the Company Portal app as a Jamf Self Service policy to register the device with Azure AD as a device managed by Jamf Pro. If not, the user will only be registered with Azure AD.
 
 1. In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.
 2. Configure the **Conditional Access** payload, including the trigger and execution frequency. Set the priority to **After**.
