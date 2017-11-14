@@ -75,3 +75,8 @@ The most commonly used metadata columns are:
 Any metadata column starting with the prefix **Row**, such as **RowLastModifiedDateTimeUTC**, indicates when a record was created or modified in the Intune Data Warehouse. The warehouse is downstream from the data in Intune. This value has no relationship to the lifetime of the entity in Intune.  
  
 Any person wanting to see only those dimension entities that currently exist would want to apply a filter where **IsDeleted = FALSE**.
+
+## Next steps
+
+ - Learn more about the **Current User** entity, see [Reference for current user entity](reports-ref-current-user.md).
+ - Learn more about the **User** entity, see [Reference for user entity](reports-ref-user.md).
