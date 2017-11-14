@@ -142,7 +142,7 @@ Conditional access for PCs provide similar capabilities available for mobile dev
 
 -   **Workplace join and Intune management:** Here the user can join their personal devices to access corporate resources and services. You can use Workplace join and enroll devices into Intune to receive device-level policies, which is also another option to evaluate conditional access criteria.
 
-## App-based conditional access
+## app-based conditional access
 
 Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
 
