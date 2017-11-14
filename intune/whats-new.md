@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/8/2017
+ms.date: 11/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -184,11 +184,18 @@ Learn how to enable the troubleshooting mode in the Managed Browser on an iOS de
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** will be populated with the latest user data.
 
 
-
-
-
-
 ## Week of October 30, 2017
+
+### Intune apps 
+
+#### Inform end users what device information can be seen for Windows 10 devices <!--1337920-->
+We have added **Ownership Type** to the Device Details screen on the Company Portal app for Windows 10. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the **About** screen.
+
+#### Feedback prompts for the Company Portal app for Android <!--1165249-->
+The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app. 
+
+### App management
+
 ### iOS and Android line-of-business app version number is visible <!-- 1380712 -->
 
 Apps in Intune now display the version number for iOS and Android line-of-business apps. The number displays in the Azure portal in the app list and in the app overview blade. End users can see the app number in the Company Portal app and in the web portal.
