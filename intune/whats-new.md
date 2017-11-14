@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/13/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,13 +45,19 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
-## Week of November 6, 2017
 
+## Week of November 13, 2017
+
+## Intune Apps
+
+#### Company Portal app for macOS is available <!--1541700-->
+The Intune Company Portal on macOS has an updated experience, which has been optimized to cleanly display all the information and compliance notifications your users need for all the devices they have enrolled. And, once the Intune Company Portal has been deployed to a device, Microsoft AutoUpdate for macOS will provide updates to it. You can download the new Intune Company Portal for macOS by logging into the Intune Company Portal website from a macOS device.
+
+## Week of November 6, 2017
 
 ### Device enrollment
 #### Co-management for Windows 10 devices  <!-- 1243445 -->
 Co-management is a solution that provides a bridge from traditional to modern management, and it provides you with a path to make the transition using a phased approach. At its foundation, co-management is a solution where Windows 10 devices are concurrently managed by Configuration Manager and Microsoft Intune, as well as joined to Active Directory (AD) and Azure Active Directory (Azure AD).  This configuration provides you with a path to modernize over time, at the pace that’s right for your organization if you can’t move all at once.  
-
 
 #### New enrollment status page for Windows 10 enrollments <!--1063201-->    
 You can now configure a greeting that appears when your users enroll Windows 10 devices. Use the **Enrollment Status Screen** to configure a custom message and a hyperlink to be displayed to your end users when they enroll their Windows 10 devices.  The **Enrollment Status Screen** will also give end users a view into the progress of policy settings that are being applied to their device.  
@@ -65,6 +71,7 @@ Intune will continue to support enrolling Windows 8.1 PCs and phones. However, o
 A new alert is available for Windows AutoPilot unassigned devices on the **Microsoft Intune** > **Device enrollment** > **Overview** page. This alert shows how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them. For more information, see [Enroll Windows devices using Windows AutoPilot deployment program](https://docs.microsoft.com/intune/enrollment-autopilot).
 
 ### Device management
+
 #### Refresh button for Devices list    <!-- 1333581 -->
 Because the Device list does not refresh automatically, you can use the new Refresh button to update the devices that display in the list.
 
@@ -119,6 +126,10 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 
 
 #### Manage PowerShell scripts in Intune for Windows 10 devices <!-- 790537 -->
+
+> [!Note]
+> This feature is rolling out so it is not yet available for all customers.
+
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
 #### New device restriction settings for Windows 10      <!-- 1308850 -->
@@ -452,6 +463,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 
 ## What's coming
+
+### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747--->
+Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
 Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
