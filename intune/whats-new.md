@@ -48,7 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of November 13, 2017
 
-## Intune Apps
+### Intune Apps
 
 #### Company Portal app for macOS is available <!--1541700-->
 The Intune Company Portal on macOS has an updated experience, which has been optimized to cleanly display all the information and compliance notifications your users need for all the devices they have enrolled. And, once the Intune Company Portal has been deployed to a device, Microsoft AutoUpdate for macOS will provide updates to it. You can download the new Intune Company Portal for macOS by logging into the Intune Company Portal website from a macOS device.
@@ -190,7 +190,12 @@ End users with the managed Browser installed can now view the management status 
 
 Learn how to enable the troubleshooting mode in the Managed Browser on an iOS device, see [How to access to managed app logs using the Managed Browser on iOS](app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios).
 
+#### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!---1417174--->
+
+We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text. You can see this updated workflow on the [what's new in app UI page](whats-new-app-ui.md). 
+
 ### Monitor and troubleshoot
+
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** will be populated with the latest user data.
 
