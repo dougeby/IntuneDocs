@@ -37,7 +37,6 @@ To unenroll your device from Intune, use these steps or watch this video:
 
 > [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
 
-
 1.  In the Company Portal app, under **My Devices**, select the device you want to unenroll.
 
 2.  Tap  **Remove** > **Remove**.
