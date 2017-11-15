@@ -35,7 +35,7 @@ Learn what updates we've made to the UI for apps that your end users will see in
 We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text.
 
 > [!NOTE]
-> We use the company name you have set in the Azure Portal in **Microsoft Intune** > **Mobile Apps** > **Company Portal branding** > **Company name**. If you have not set this value, we will use the tenant name set in **Azure Active Directory** > **Properties** > **Name**. If you have not set a company name in Company Portal branding and don’t want your tenant name to be displayed, we recommend that you set the company name in the Company Portal branding tab. If you don’t want this string to dis in the header in Company Portal, you can deselect the checkbox to “Show company name next to logo.”
+> We use the company name you have set in the Azure Portal in **Microsoft Intune** > **Mobile Apps** > **Company Portal branding** > **Company name**. If you have not set this value, we will use the tenant name set in **Azure Active Directory** > **Properties** > **Name**. If you have not set a company name in Company Portal branding and don’t want your tenant name to be displayed, we recommend that you set the company name in the Company Portal branding tab. If you don’t want this string to show in the header in Company Portal, you can deselect the checkbox to “Show company name next to logo.”
 
 |Before|After|
 |---|---|
