@@ -165,7 +165,7 @@
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
       - name: Enrollment Status Screen
-        href: windows-enrollment-status.md   
+        href: windows-enrollment-status.md
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -368,7 +368,7 @@
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts
-      href: intune-management-extension.md  
+      href: intune-management-extension.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Assign profiles

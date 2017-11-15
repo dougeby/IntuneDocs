@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,11 +69,11 @@ If the EAS record is brand new, and Intune is not aware of it, Intune issues a c
 
 ![Exchange on-premises with CA flow-chart](./media/ca-intune-common-ways-1.png)
 
-1.  User tries to access corporate e-mail, which is hosted on Exchange on-premises 2010 SP1 or later.
+1.  User tries to access corporate email, which is hosted on Exchange on-premises 2010 SP1 or later.
 
-2.  If the device is not managed by Intune, it will be blocked access to e-mail. Intune sends block notification to the EAS client.
+2.  If the device is not managed by Intune, it will be blocked access to email. Intune sends block notification to the EAS client.
 
-3.  EAS receives block notification, moves the device to quarantine, and sends the quarantine e-mail with remediation steps that contain links so the users can enroll their devices.
+3.  EAS receives block notification, moves the device to quarantine, and sends the quarantine email with remediation steps that contain links so the users can enroll their devices.
 
 4.  The Workplace join process happens, which is the first step to have the device managed by Intune.
 
@@ -97,7 +97,7 @@ Intune evaluates and manage the device state.
 
 Exchange server provides API and infrastructure to move devices to its quarantine.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Keep in mind that the user who’s using the device must have a compliance profile assigned to them so the device to be evaluated for compliance. If no compliance policy is deployed to the user, the device is treated as compliant and no access restrictions are applied.
 
 ### Conditional access based on network access control
@@ -112,9 +112,9 @@ Users can be allowed or denied access when trying to access corporate Wi-Fi or V
 
 Intune partnered with Mobile Threat Defense vendors that provides a security solution to detect malwares, Trojans, and other threats on mobile devices.
 
-#### How the Intune and mobile threat defense integration works
+#### How the Intune and Mobile Threat Defense integration works
 
-When mobile devices have the mobile threat defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
+When mobile devices have the Mobile Threat Defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
 
 The Intune and mobile threat defense integration plays a factor at the conditional access decisions based on device risk.
 
@@ -134,7 +134,7 @@ Conditional access for PCs provide similar capabilities available for mobile dev
 
     -   Is the PC encrypted?
 
-    -   Is Malware installed? Is it up-to-date?
+    -   Is malware installed? Is it up-to-date?
 
     -   Is the device jailbroken or rooted?
 
