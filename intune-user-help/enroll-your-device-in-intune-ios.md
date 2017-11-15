@@ -58,7 +58,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-3-cp-enroll-1711.png)|Tap on **Get your device managed** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
 |![What can my company see screen.](./media/ios-4-cp-enroll-1711.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
 |![What's next screen.](./media/ios-5-cp-enroll-1711.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Next**.|
-|![Loading screen after tapping Next on What's next.](./media/ios-6-cp-enroll-1711.png)|x|
+|![Loading screen after tapping Next on What's next.](./media/ios-6-cp-enroll-1711.png)||
 |![Switched out to Safari for enrolling.](./media/ios-7-cp-enroll-1711.png)|You're sent to Safari to get management information for your device.|
 |![System prompt to ask for Settings app to be opened.](./media/ios-8-cp-enroll-1711.png)|Tap **Allow** to open the Settings app to download the configuration profile. You install this to let your company manage corporate information on your device.|
 |![Profile open in settings.](./media/ios-9-cp-enroll-1711.png)|Tap **Install**.|
