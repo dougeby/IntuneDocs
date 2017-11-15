@@ -49,13 +49,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of November 13, 2017
 
 ### Intune Apps
-
 #### Company Portal app for macOS is available <!--1541700-->
 The Intune Company Portal on macOS has an updated experience, which has been optimized to cleanly display all the information and compliance notifications your users need for all the devices they have enrolled. And, once the Intune Company Portal has been deployed to a device, Microsoft AutoUpdate for macOS will provide updates to it. You can download the new Intune Company Portal for macOS by logging into the Intune Company Portal website from a macOS device.
 
 #### Microsoft Planner is now part of the mobile app management (MAM) list of approved apps  <!-- 1248473 -->
 The Microsoft Planner app for iOS and Android is now part of the approved apps for mobile app management (MAM). The app can be configured through the Intune App Protection blade in the Azure portal to all tenants.
 - Learn more the [MAM list of approved apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+#### Per-App VPN requirement update frequency on iOS devices   <!-- 1547061 -->  
+Administrators may now remove Per-App VPN requirements for apps on iOS devices; affected devices will after their next Intune check-in, which generally occurs within 15 minutes.  
 
 ### Monitor and troubleshoot
 #### Support for System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
