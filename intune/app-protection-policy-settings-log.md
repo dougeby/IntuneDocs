@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Review app protection logs in the Managed Browser
 
-You can access the logs through the Managed Browser in troubleshooting mode on a mobile client. The following table shows the name of the settings stored in the app logs. 
+You can access the logs through the Managed Browser in troubleshooting mode on a mobile client. The following table shows the name of the settings stored the logs.
 
 ## App protection policy settings
 
@@ -68,4 +68,4 @@ You can access the logs through the Managed Browser in troubleshooting mode on a
 
  - To learn more about the Managed Browser, see [Manage Internet access using Managed Browser policies with Microsoft Intune](app-configuration-managed-browser.md).
  - To learn more about using policies with the Managed Browser, see [Manage Internet access using Managed Browser policies with Microsoft Intune](app-configuration-managed-browser.md).
- - To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md).
+ - To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
