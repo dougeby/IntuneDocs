@@ -48,7 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of November 13, 2017
 
-## Intune Apps
+### Intune Apps
 
 #### Company Portal app for macOS is available <!--1541700-->
 The Intune Company Portal on macOS has an updated experience, which has been optimized to cleanly display all the information and compliance notifications your users need for all the devices they have enrolled. And, once the Intune Company Portal has been deployed to a device, Microsoft AutoUpdate for macOS will provide updates to it. You can download the new Intune Company Portal for macOS by logging into the Intune Company Portal website from a macOS device.
