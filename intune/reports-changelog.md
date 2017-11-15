@@ -34,14 +34,14 @@ _Released November  2017_
 
 ### A new entity collection named Current User is limited to currently active user data <!-- 1544273 -->
 
-The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the User and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
+The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
 
 In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](reports-ref-current-user.md).
 
 ## 1709
 _Released October  2017_
 
-### User device association entity Collection added to Intune Data Warehouse data model <!-- 1187917 -->
+### User device association entity collection added to Intune Data Warehouse data model <!-- 1187917 -->
 
 You can now build reports and data visualizations using the user device association information that associates user and device entity collections. The data model can be accessed through the Power BI file (PBIX) retrieved from the Data Warehouse Intune page, through the OData endpoint, or by developing a custom client. For more information, see the [User Device Association](reports-ref-user-device.md).
 

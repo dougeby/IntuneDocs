@@ -23,7 +23,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-## User lifetime representation in the Intune Data Warehouse
+# User lifetime representation in the Intune Data Warehouse
 
 You can use the month of data snapshots stored in the Intune Data Warehouse to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
 
@@ -78,5 +78,5 @@ Any person wanting to see only those dimension entities that currently exist wou
 
 ## Next steps
 
- - Learn more about the **Current User** entity, see [Reference for current user entity](reports-ref-current-user.md).
- - Learn more about the **User** entity, see [Reference for user entity](reports-ref-user.md).
+ - To learn more more about the **Current User** entity, see [Reference for current user entity](reports-ref-current-user.md).
+ - To learn more more about the **User** entity, see [Reference for user entity](reports-ref-user.md).

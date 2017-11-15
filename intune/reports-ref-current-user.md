@@ -25,10 +25,10 @@ ms.custom: intune-classic
 
 # Reference for current user entity
 
-The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory Users that are currently assigned a license. The license could be an Intune license, a Hybrid license or a Microsoft Office 3065 license. If a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
+The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory users that are currently assigned a license. The license could be an Intune license, a Hybrid license, or a Microsoft Office 365 license. If a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
 
 
-**User**
+## User
 
 The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
@@ -42,3 +42,7 @@ The **User** entity lists all the Azure Active Directory (Azure AD) users with a
 | IntuneLicensed |Specifies if this user is Intune licensed or not. |True/False |
 | StartDateInclusiveUTC |Date and time in UTC when this user was created in the data warehouse. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this user was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+
+## Next steps
+ - You can use the **Users** entity collection to expand the user data to users who who are not currently active. For more information, see [Reference for user entity](reports-ref-user.md). 
+ - Learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
