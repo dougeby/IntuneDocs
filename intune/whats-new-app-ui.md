@@ -55,7 +55,7 @@ The Settings page in the Company Portal app for Windows 10 has been updated to m
 
 |Before|After|
 |---|---|
-|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+|![01](/intune-user-help/media/w10-share-logs.png)|![02](/intune-user-help/media/w10-share-logs-after-1711.png)
 
 
 ### Search improvements to the Company Portal apps and website <!--1418189-->
