@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,9 +49,19 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of November 13, 2017
 
 ### Intune Apps
-
 #### Company Portal app for macOS is available <!--1541700-->
 The Intune Company Portal on macOS has an updated experience, which has been optimized to cleanly display all the information and compliance notifications your users need for all the devices they have enrolled. And, once the Intune Company Portal has been deployed to a device, Microsoft AutoUpdate for macOS will provide updates to it. You can download the new Intune Company Portal for macOS by logging into the Intune Company Portal website from a macOS device.
+
+#### Microsoft Planner is now part of the mobile app management (MAM) list of approved apps  <!-- 1248473 -->
+The Microsoft Planner app for iOS and Android is now part of the approved apps for mobile app management (MAM). The app can be configured through the Intune App Protection blade in the Azure portal to all tenants.
+- Learn more the [MAM list of approved apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+#### Per-App VPN requirement update frequency on iOS devices   <!-- 1547061 -->  
+Administrators may now remove Per-App VPN requirements for apps on iOS devices; affected devices will after their next Intune check-in, which generally occurs within 15 minutes.  
+
+### Monitor and troubleshoot
+#### Support for System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
+The System Center Operations Manager (SCOM) management pack for Exchange connector is now available to help you parse the Exchange connector logs. This gives you different ways of monitoring the service when you need to troubleshoot issues.
 
 ## Week of November 6, 2017
 
@@ -192,7 +202,7 @@ Learn how to enable the troubleshooting mode in the Managed Browser on an iOS de
 
 #### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!---1417174--->
 
-We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text. You can see this updated workflow on the [what's new in app UI page](whats-new-app-ui.md). 
+We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text. You can see this updated workflow on the [what's new in app UI page](whats-new-app-ui.md).
 
 ### Monitor and troubleshoot
 
