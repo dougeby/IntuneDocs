@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll your iOS device in Intune | Microsoft Docs
-description: Describes how to enroll an iOS device in Intune
+title: Set up access to your company resources | Microsoft Docs
+description: Describes how to get your iOS device managed by Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
@@ -29,81 +29,57 @@ ms.custom: intune-enduser
 ---
 
 
-# Enroll your iOS device in Intune
+# Set up access to your company resources
 
-If your company or school uses Microsoft Intune, you can enroll your iOS device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+Your company has lots of proprietary information, from email, to files, networks, and more. Your company is using Microsoft Intune to help protect that information when you access it from your iOS device. This lets them manage those resources, keep them more secure, and give you the freedom to use your preferred device to get your work done.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > If you're trying to access company email in the Mail app, it's likely that you were prompted to manage your device to keep it secure. Follow the instructions below to get access to your email and other company resources on your iOS device.
 
-**Before you start:**
+## Before you start
 
-- Make sure that you finish enrolling after you start the steps. Pausing for more than a few minutes usually stops the process, and  requires you to restart.
-- If your enrollment fails for any reason, you need to return to the Company Portal app to try again.
-- Make sure that your Wi-Fi is working. Otherwise, enrollment fails.
-- If you blocked Safari on your device, unblock it. Safari is used as part the device enrollment process.
+- Make sure that you finish the entire process once you start. Pausing for more than a few minutes usually stops your progress and requires you to start over.
+- If this process should fail, you need to return to the Company Portal app to try again.
+- Make sure that your Wi-Fi is working, and that Safari works on your device.
+- Download the [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
-**To enroll your iOS device:**
+## Using the Company Portal app to set up access
 
-1.  Follow the steps in [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+|What you see|Explanation|
+|---|---|
+|![](./media/ios-0-cp-enroll-1711.png)|x|
+|![](./media/ios-0a-cp-enroll-1711.png)|x|
+|![](./media/ios-0b-cp-enroll-1711.png)|x|
+|![](./media/ios-1-cp-enroll-1711.png)|x|
+|![](./media/ios-2-cp-enroll-1711.png)|x|
+|![](./media/ios-3-cp-enroll-1711.png)|x|
+|![](./media/ios-4-cp-enroll-1711.png)|x|
+|![](./media/ios-5-cp-enroll-1711.png)|x|
+|![](./media/ios-6-cp-enroll-1711.png)|x|
+|![](./media/ios-7-cp-enroll-1711.png)|x|
+|![](./media/ios-8-cp-enroll-1711.png)|x|
+|![](./media/ios-9-cp-enroll-1711.png)|x|
+|![](./media/ios-10-cp-enroll-1711.png)|x|
+|![](./media/ios-11-cp-enroll-1711.png)|x|
+|![](./media/ios-12-cp-enroll-1711.png)|x|
+|![](./media/ios-13-cp-enroll-1711.png)|x|
+|![](./media/ios-14-cp-enroll-1711.png)|x|
+|![](./media/ios-15-cp-enroll-1711.png)|x|
+|![](./media/ios-16-cp-enroll-1711.png)|x|
+|![](./media/ios-17-cp-enroll-1711.png)|x|
+|![](./media/ios-18-cp-enroll-1711.png)|x|
+|![](./media/ios-19-cp-enroll-1711.png)|x|
+|![](./media/ios-20-cp-enroll-1711.png)|x|
+|![](./media/ios-21-cp-enroll-1711.png)|x|
+|![](./media/ios-22-cp-enroll-1711.png)|x|
+|![](./media/ios-23-cp-enroll-1711.png)|x|
+|![](./media/ios-24-cp-enroll-1711.png)|x|
+|![](./media/ios-25-cp-enroll-1711.png)|x|
 
-2. On the **Company Access Setup** page, tap **Begin**.
-
-	![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **Continue**.
-
-	![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
-
-4. Review a list of what your company support can and can’t see on your enrolled device, and then tap **Continue**.
-
-	![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  On the **What comes next** screen, read about what happens during enrollment, and then tap **Enroll**.
-
- 	![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  On the **Install Profile** screen, tap **Install**, and enter your passcode, if prompted.
-
-	![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  Tap **Install**.
-
-	![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  Tap **Install** to indicate that you've read the warning.
-
-   	![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  Tap **Trust**.
-
-   	![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  When the screen changes to show that the profile has finished installing, Tap **Done**.
-
- 	![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-	An “Enrolling device” message shows on the screen.
-
-11.  When a message asks if you want to open the page in the Company Portal, tap **Open**.
-
-	![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. On the **Company Access Setup** screen, tap **Continue**. This screen shows you what other requirements you may have to do to make your device compliant, like setting a password. Follow the on-screen instructions until you meet all the compliance requirements. Once you finish, you are returned to the Company Access Setup screen. Tap **Continue**.
-
-	![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. Tap **Done**.
-
-	![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
+Your device is now enrolled in Intune.
 
 > [!Note]
 > You have a few more steps to complete before your device is fully enrolled. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
