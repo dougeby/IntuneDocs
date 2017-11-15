@@ -608,19 +608,23 @@
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
+      - name: User lifetime representation in the Intune Data Warehouse
+        href: reports-ref-user-timeline.md
       - name: Reference for application entities
         href: reports-ref-application.md
+      - name: Reference for current user entity
+        href: reports-ref-current-user.md
       - name: Reference for date entity
         href: reports-ref-date.md
       - name: Reference for devices entities
         href: reports-ref-devices.md
-      - name: Reference for Intune management extension
+      - name: Reference for Intune management extension entity
         href: reports-ref-intunemanagementextension.md
       - name: Reference for mobile app management (MAM) entities
         href: reports-ref-mobile-app-management.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
-      - name: Reference for user device association
+      - name: Reference for user device association entity
         href: reports-ref-user-device.md
       - name: Reference for user entity
         href: reports-ref-user.md
