@@ -54,7 +54,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Azure AD sign in prompt.](./media/ios-0a-cp-enroll-1711.png)|Enter your company email address, then tap **Next**.|
 |![Azure AD password prompt.](./media/ios-0b-cp-enroll-1711.png)|Enter your password, then tap **Sign in**.|
 |![Loading company resources splash screen.](./media/ios-1-cp-enroll-1711.png)|Wait for this to load.|
-|![Terms and conditions.](./media/ios-2-cp-enroll-1711.png)|Read and *Accept All** of the Terms and Conditions.|
+|![Terms and conditions.](./media/ios-2-cp-enroll-1711.png)|Read and **Accept All** of the Terms and Conditions.|
 |![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-3-cp-enroll-1711.png)|Tap on **Get your device managed** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
 |![What can my company see screen.](./media/ios-4-cp-enroll-1711.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
 |![What's next screen.](./media/ios-5-cp-enroll-1711.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Next**.|
