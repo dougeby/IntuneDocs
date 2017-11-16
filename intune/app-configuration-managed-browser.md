@@ -225,6 +225,8 @@ You can also open the Browser in troubleshooting mode from within the app.
 2. Type `about:intunehelp` in the address box.
 The Browser launches troubleshooting mode.
 
+For a list of the settings stored in the app logs, see [Review app protection logs in the Managed Browser](app-protection-policy-settings-log.md).
+
 ## Security and privacy for the Managed Browser
 
 -   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
