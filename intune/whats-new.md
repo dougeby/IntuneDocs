@@ -454,9 +454,9 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ## Notices
 
-### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
+### Deprecating support for OS X Yosemite 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
 
-We are announcing that we will begin deprecation of enrollment for devices with OS X Mavericks 10.10 and previous versions of macOS in February 2018. Intune fully supports OS X Yosemite 10.11 and newer.
+We are announcing that we will begin deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
 
 ### New path for managed devices in Graph API <!-- 1586728 -->
 We are making a change to the path used to access managed devices in the beta version of the Graph API. 
