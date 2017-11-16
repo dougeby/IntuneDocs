@@ -147,7 +147,7 @@ To enable the Intune App SDK, follow these steps:
 
 		![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-  	5. If you are using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
+  	4. If you are using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
 
 			* `$(AppIdentifierPrefix)com.microsoft.intune.mam`
 			* `$(AppIdentifierPrefix)com.microsoft.adalcache`
