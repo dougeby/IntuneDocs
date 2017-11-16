@@ -161,11 +161,11 @@ You need a root or intermediate CA certificate on each device for authentication
    * **Certificate template name** - This option is the name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
    * **Subject name format** - Set this option to **Common name** unless otherwise required.
    * **Subject alternative name** - Set this option to **User principal name (UPN)** unless otherwise required.
-   * **Extended key usage** - As long as you used the default settings in step 10 in the preceding section **Configure certificate templates on the certification authority**, add the following **Predefined values** from the selection box:
+   * **Extended key usage** - As long as you used the default settings in Step 10 in the preceding section **Configure certificate templates on the certification authority**, add the following **Predefined values** from the selection box:
       * **Any Purpose**
       * **Client Authentication**
       * **Secure Email**
-   * **Root Certificate** - (For Android Profiles) This option is the .cer file exported in step 3 under the previous section [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca).
+   * **Root Certificate** - (For Android Profiles) This option is the .cer file exported in Step 3 under the previous section [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca).
 
 5. Click **OK**, then click **Create** to save your profile.
 6. To assign the new profile to one or more devices, see the article [How to assign Microsoft Intune device profiles](device-profile-assign.md).
