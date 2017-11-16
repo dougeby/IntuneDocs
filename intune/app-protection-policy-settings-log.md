@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: app protection policy logs
+title: App protection policy logs
 titlesuffix: "Azure portal"
 description: This topic describes the record of app protection policy settings stored in the app logs.
 keywords:
