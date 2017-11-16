@@ -425,6 +425,8 @@
           href: app-protection-policy-settings-android.md
         - name: iOS settings
           href: app-protection-policy-settings-ios.md
+        - name: Review app protection logs in the Managed Browser
+          href: app-protection-policy-settings-log.md
       - name: Validate app protection policies
         href: app-protection-policies-validate.md
       - name: Monitor app protection user status
