@@ -386,6 +386,8 @@ To validate that the service is running, open a browser and enter the following 
 		- **Common name**
 		- **Common name including email**
 		- **Common name as email**
+		- **IMEI (International Mobile Equipment Identity)**
+		- **Serial number**
 		- **Custom** - When you select this option, another drop-down field is displayed. You use this field to enter a custom subject name format. The two variables supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of one or many of these variables and static strings, you can create a custom subject name format, like this one: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) shows the **CertStrToName** function and its supported strings.
 		
 	- **Subject alternative name** - Specify how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you selected a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate will be used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN. 
