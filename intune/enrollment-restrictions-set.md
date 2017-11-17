@@ -35,13 +35,14 @@ As an Intune admin, you can determine which devices can enroll into management w
 - Maximum number of enrolled devices
 - Device platforms that can enroll:
   - Android
+  - Android for Work
   - iOS
   - macOS
   - Windows
 - Platform operating system version for iOS, Android, and Windows (only Windows 10 versions may be used, leave this blank if Windows 8.1 is allowed)
   - Minimum version
   - Maximum version
-- Restrict personally owned devices (iOS, Android, macOS only)
+- Restrict personally owned devices (iOS, Android, Android for Work, macOS only)
 
 >[!NOTE]
 >Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
