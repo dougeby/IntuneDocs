@@ -57,8 +57,10 @@ If you are already using Intune Certificate Connector for an existing Microsoft 
    > After installing Windows Updates, restart the computer.
 
 4. Install .NET Framework 3.5.
-   * Open Control Panel > Programs and Features > Turn Windows features on or off
-      * Select **.NET Framework 3.5** and install it.
+
+    a. Open Control Panel > Programs and Features > Turn Windows features on or off
+
+    b. Select **.NET Framework 3.5** and install it.
 
 ## Install the Symantec Registration Authorization Certificate
 
@@ -140,7 +142,7 @@ Use the following steps to get the Registration Authorization (RA) certificate f
 
     i. Click **Finish**. This imports the RA Certificate into the Local Machine-Personal store along with its private key.  
 
-6. Export and import the private key certificate
+6. Export and import the private key certificate:
 
     a. Expand **Certificates (Local Machine)** > **Personal** > **Certificates**.
 
@@ -168,10 +170,11 @@ Use the following steps to get the Registration Authorization (RA) certificate f
 
 If you are already using the latest Intune Certificate Connector for an existing Microsoft CA and want to add Symantec CA support, skip this step. Otherwise, download the latest Intune Certificate Connector from the Intune admininstration portal and follow these instructions.
 
-   1. Sign in to https://portal.azure.com using your Intune tenant admin credentials and search for Intune resources.
-   2. Download NDESConnectorSetup.exe from**Microsoft Intune** > **Device Configuration** > **Certification Authority** > **Download the certificate connector link**
-   3. Run NDESConnectorSetup.exe with elevated privileges. 
-      - On the **Installation Options** screen, select **PFX Distribution** as shown in the following screen shot.  Complete the remaining setup with the default selections.
+1. Sign in to https://portal.azure.com using your Intune tenant admin credentials and search for Intune resources.
+2. Download NDESConnectorSetup.exe from**Microsoft Intune** > **Device Configuration** > **Certification Authority** > **Download the certificate connector link**
+3. Run NDESConnectorSetup.exe with elevated privileges.
+
+    a. On the **Installation Options** screen, select **PFX Distribution** as shown in the following screen shot.  Complete the remaining setup with the default selections.
 
    > [!IMPORTANT]
    > If you want to configure Intune Certificate Connector to issue certificates from a Microsoft CA and a Symantec CA, select **SCEP and PFX Profile Distribution**. Complete the remaining setup with the default selections.
@@ -184,14 +187,14 @@ Intune Certificate Connector is installed at `%ProgramFiles%\Microsoft Intune` b
 
 1. Open %ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config file in Notepad.
 
-  - Update the RACertThumbprint key value with the cert thumbprint value you copied in the previous section.  The following is an example:
+    a. Update the RACertThumbprint key value with the cert thumbprint value you copied in the previous section.  The following is an example:
 
    ```
    <add key="RACertThumbprint"
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
- - Save and close the file.
+    b. Save and close the file.
 
 2. Open services.msc.
 
@@ -220,7 +223,7 @@ If you are already using Intune Certificate Connector for an existing Microsoft 
 
 The PKCS Certificates deployed for Intune managed devices must be chained with a Trusted Root Certificate. This requires you to create an Intune Trusted Certificate Profile with the root certificate obtained from the Symantec CA.
 
-1. Get a Trusted Root Certificate from the Symantec CA
+1. Get a Trusted Root Certificate from the Symantec CA:
 
     a. Logon to Symantec CA Admin portal.
 
@@ -230,7 +233,7 @@ The PKCS Certificates deployed for Intune managed devices must be chained with a
 
     d. Click Download root certificate to download the Trusted Root Certificate.
 
-2. Create a Trusted Certificate Profile in the Intune administration portal.
+2. Create a Trusted Certificate Profile in the Intune administration portal:
 
     a. Sign in to the [Azure portal](https://portal.azure.com) using Intune tenant admin credentials and search for Intune resources.
 
