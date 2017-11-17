@@ -54,6 +54,7 @@ The default enrollment restrictions apply to all users and userless enrollments.
 4. Under **Enrollment restrictions** > **Device Type Restrictions**, select **Default**.
 5. Under **All Users**, select **Platforms**. Choose **Allow** or **Block** for each platform:
   - **Android**
+  - **Android for Work**
   - **iOS**
   - **macOS**
   - **Windows**
