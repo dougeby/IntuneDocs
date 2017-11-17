@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/20/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Create a device compliance policy for macOS devices (preview) with Intune
+# Create a device compliance policy for macOS devices with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
