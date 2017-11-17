@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,9 +56,9 @@ If you are already using Intune Certificate Connector for an existing Microsoft 
    > [!IMPORTANT]
    > After installing Windows Updates, restart the computer.
 
-4. Install .NET Framework 3.5.
+4. Install .NET Framework 3.5:
 
-    a. Open Control Panel > Programs and Features > Turn Windows features on or off
+    a. Open **Control Panel** > **Programs and Features** > **Turn Windows features on or off**
 
     b. Select **.NET Framework 3.5** and install it.
 
