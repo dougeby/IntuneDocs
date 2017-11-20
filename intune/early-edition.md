@@ -7,7 +7,7 @@ keywords:
 author: brenduns  
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - November 2017
+# The early edition for Microsoft Intune - December 2017
 
 The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
@@ -43,7 +43,102 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune in the Azure portal
 
+### App Protection Policies  <!-- 679615 -->
+Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
+### Revoking iOS Volume-Purchase Program apps  <!-- 820863 -->
+For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you will be able to revoke the associated device based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
+
+### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
+You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
+
+### Delete an iOS  Volume Purchasing Program token <!-- 820879 -->
+You will be able to delete the iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token.
+
+### Network Access Control (NAC) device check-in reporting  <!-- 1232250 -->
+Before this change, IT admins couldn't determine from the Intune side whether a NAC-managed device was communicating with their NAC solution or not. When a NAC-managed device isn't communicating with their NAC solution, the device is considered non-compliant by the NAC solution, and therefore blocked by the NAC solution itself and subsequently blocked by conditional access policies that rely on the device compliance state.
+
+With this change, IT admins can see which NAC-managed devices have successfully communicated with their NAC solution or not. This new capability consists of two new monitoring functions located in the Device compliance workload within Intune, the statistics are shown as below:
+- **Average NAC calls in the last hour**
+- **Last NAC incoming request (date/time)**
+
+### New iOS device action   <!-- 1244701 -->
+You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
+
+### Palo Alto VPN now supported <!-- 1333680 eeready -->
+The **Connection type** list will include Palo Alto VPN when you configure your base VPN.
+
+### Multiple connector support for SCEP and PFX certificate handling <!-- 1361755 eeready -->
+Customers who use the on-premise NDES connector to deliver certificates to devices will be able to configure multiple connectors in a single tenant.
+
+This new capability supports the following scenario:
+
+- **High availability**
+
+    Each NDES connector pulls certificate requests from Intune.  If one NDES connector goes offline, the other connector can continue to process requests.
+
+### New automatic redeployment setting <!-- 1469168 -->
+This setting allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device will be automatically reconfigured and reenrolled into management.
+
+This setting can be found under Windows 10 -> Device restrictions -> General -> Automatic redeployment.
+
+### Install Office apps on macOS devices <!-- 1494311 -->
+You will be able to install Office apps on macOS devices. This new app type will allow you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdater (MAU), to help keep your apps secure and up-to-date.
+
+### Surface Hub resource account supported <!-- 1566442 eeready -->
+A new device action will be added so administrators can define and update the resource account associated with a Surface Hub.
+
+The resource account is used by a Surface Hub to authenticate with Skype/Exchange so it can join a meeting. You can create a unique resource account so the Surface Hub appears in the meeting as the conference room. For example, the resource account might appear as *Conference Room B41/6233*. The resource account (known as the device account) for the Surface Hub typically needs to be configured for the conference room location and when other resource account parameters need to be changed.
+
+When administrators want to update the resource account on a device, they must provide the current Active Directory/Azure Active Directory credentials associated with the device. If password rotation is on for the device, administrators must go to Azure Active Directory to find the password.
+
+> [!NOTE]
+> All fields get sent down in a bundle and overwrite all fields that were previously configured. Empty fields also overwrite existing fields.
+
+The following are the settings administrators can configure:
+
+- **Resource account**  
+
+   - **Active Directory user**   
+   Domainname\username or User Principle Name (UPN): user@domainname.com
+   - **Password**
+
+
+- **Optional resource account parameters** (must be set using the specified resource account)
+   - **Password rotation period**   
+     Ensures the account password is updated automatically by the Surface Hub every week for security reasons. To configure any parameters after this has been enabled, the account in Azure Active Directory must have the password reset first.
+
+   - **SIP (Session Initiation Protocol) address**    
+     Only used when autodiscovery fails.
+
+   - **Email**    
+     Email address of the device/resource account.
+
+   - **Exchange server**    
+     Only required when autodiscovery fails.
+
+   - **Calendar sync**    
+     Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
+
+### Intune now provides the Account Move operation  <!-- 1573558, 1579830 -->
+The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to another. The **Account Move** can be used for both customer-initiated scenarios, when you call the Intune support team requesting it, and it can also be a Microsoft-driven scenario where Microsoft needs to make adjustments to the service in the back-end. During the **Account Move**, the tenant enters in read-only mode (ROM). Service operations like enrolling, renaming devices, updating compliance status will fail during the ROM period.
+
+### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
+Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end-users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
+
+These are the pillars admins can hide from the Windows Defender Security Center device configuration profile settings:
+- Virus and threat protection
+- Device performance and health
+- Firewall and network protections
+- App and browser control
+- Family options
+
+IT admins can also customize which notifications users receive. For example, you can configure whether the users receive all notifications generated by visible pillars in the WDSC, or only critical notifications. Non-critical notifications include periodic summaries of Windows Defender Antivirus activity and notifications when scans have completed. All other notifications are considered critical. Additionally, you can also customize the notification content itself, for example, you can provide the IT contact information to embed in the notifications that appear on the users' devices.
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
 The **Built-in** app type will make it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
 
