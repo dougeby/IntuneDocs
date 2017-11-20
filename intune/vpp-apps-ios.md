@@ -8,7 +8,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,24 +31,26 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies of an app helps you reduce the administrative overhead of tracking multiple copies of purchased apps.
+The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company.
 
-Microsoft Intune helps you manage apps that you purchased through this program by:
+Microsoft Intune helps you manage multiple copies of apps purchased through this program by:
 
-- Reporting license information from the app store
-- Tracking how many of the licenses you have used
-- Helping you to not install more copies of the app than you own
+- Reporting license information from the app store.
+- Tracking how many of the licenses you have used.
+- Helping you to not install more copies of the app than you own.
 
 There are two methods you can use to assign volume-purchased apps:
 
 ### Device licensing
 
-When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it.
+When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it. 
+
 When you assign volume-purchased apps to a device, the end user of the device does not have to supply an Apple ID to access the store. 
 
 ### User licensing
 
 When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
+
 When you assign a volume-purchased app to users, each end user must have a valid and unique Apple ID in order to access the app store.
 
 Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program (VPP) store with Intune. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
@@ -86,7 +88,7 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 1.	On the **Intune** blade, choose **Mobile apps** > **iOS VPP Tokens** under **Setup**.
-2.  On the list of VPP tokens blade, click **Create**.
+2.  On the list of VPP tokens blade, select **Create**.
 4. On the **Create VPP token** blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
@@ -97,14 +99,11 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 	- **Type of VPP account** - Choose from **Business** or **Education**.
 	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune updates all apps purchased for the specified token through the Intune service when the device checks-in. 
 detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
-4. When you are done, click **Upload**.
+4. When you are done, select **Upload**.
 
 The token is displayed in the list of tokens blade.
 
 You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
-
-> [!NOTE]
-> Microsoft Intune only syncs information of apps, which are publicly available through the iTunes Store. **Custom B2B Apps for iOS** are not yet supported. If your scenario targets such apps, the app information is not synchronized.
 
 ## To assign a volume-purchased app
 
@@ -140,7 +139,7 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 
 ## Further information
 
-To reclaim a license, you must change the assignment action to Uninstall. The license will be reclaimed after the app is uninstalled. If you remove an app that was assigned to a user, Intune attempts to reclaim all app licenses that were associated with that user.
+To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled. If you remove an app that was assigned to a user, Intune attempts to reclaim all app licenses that were associated with that user.
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
 
