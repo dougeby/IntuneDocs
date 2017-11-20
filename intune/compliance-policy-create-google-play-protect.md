@@ -55,7 +55,7 @@ The compliance policy that requires these settings can then be targeted to a gro
     > [!Note]  
     > On the legacy Android platform, this feature is a compliance setting. Intune can only check whether this setting is enabled at the device level. On devices with work profiles, formerly Android for Work, this setting can be found as a configuration policy setting. This allows administrators to enable the setting for a device.
 
-    If your enterprise uses Android work profiles, you can enabled **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [How to create a device compliance policy for Android for Work devices in Intune](compliance-policy-create-android-for-work.md).
+    If your enterprise uses Android work profiles, you can enabled **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android for Work device restriction settings in Microsoft Intune](device-restrictions-android-for-work.md).
 
  - **SafetyNet device attestation**  
    Set the level of SafetyNet device attestation integrity that must be met. Levels include **Not configured**, **Check basic integrity**, and **Check basic integrity & certified devices**.
