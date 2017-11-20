@@ -88,8 +88,9 @@ ms.custom: intune-azure
 ## System security
 
  - **Threat scan on apps** - Enforce that the **Verify Apps** setting is on for work and personal profiles.
-    > [!Note]  
-    > This setting will only work for devices that are Android O and above. 
+
+   > [!Note]  
+   > This setting will only work for devices that are Android O and above. 
 
 ## Next steps
 
