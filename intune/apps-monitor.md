@@ -70,7 +70,7 @@ The number of apps with an unknown status.
 
 ### Device status
 
-Device status. A bar chart that displays the install status of the app on devices. Click the graph to open a list of details about the device status. The details table includes the following columns:
+Device status. A donut chart that displays the install status of the app on devices. Click the graph to open a list of details about the device status. The details table includes the following columns:
 
  - **Device name**  
 Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices.
@@ -90,7 +90,7 @@ Date of the device last sync with Intune.
 
 ### User status
 
-User status. A bar chart that displays the install status of the app for users. Click the graph to open a list of details about the device status. The details table includes the following columns:
+User status. A donut chart that displays the install status of the app for users. Click the graph to open a list of details about the device status. The details table includes the following columns:
  - **Name**  
 The name of the user in Azure AD.
  - **User name**  
