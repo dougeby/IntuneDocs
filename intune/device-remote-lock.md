@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/21/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,9 @@ The **Remote lock** device locks the selected device. The device owner must use 
 - Windows - Not supported
 - Windows Phone - Supported on Windows Phone 8.1 and later
 - iOS - Supported
-- macOS - Not supported
+- macOS - Supported
+    > [!Note]  
+    > Set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 - Android - Supported
 
 ## How to remote lock a device
