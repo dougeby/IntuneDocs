@@ -238,6 +238,8 @@
         href: apps-add-android-for-work.md
       - name: Office 365 apps for Windows 10
         href: apps-add-office365.md
+      - name: Office 365 apps for mobile devices
+        href: apps-add-office365-mobile.md
     - name: Assign apps
       href: apps-deploy.md
     - name: Monitor apps
