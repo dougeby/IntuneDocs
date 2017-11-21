@@ -387,7 +387,7 @@
     - name: Create Android for Work policy
       href: compliance-policy-create-android-for-work.md
     - name: Create a policy to enable Google Play Protect
-      hef: compliance-policy-create-google-play-protect.md
+      href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
       href: compliance-policy-create-ios.md
     - name: Create macOS policy
