@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,3 +69,8 @@ End users need to launch the Company Portal app through Jamf Self Service to reg
 2. Configure the **Conditional Access** payload, including the trigger and execution frequency. Set the priority to **After**.
 3. Click the **Scope** tab, and scope the policy to all targeted devices.
 4. Click the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
+
+## Next steps
+
+- [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
