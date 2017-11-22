@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,12 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (e.g., sending warning emails) to noncompliant users and groups.
 2. Search for your desired groups, then apply the policies to them.
 
-## Require the Company Portal app for macOS
+## Deploy the Company Portal app for macOS
+
+There are two ways that you can deploy the Company Portal app for macOS in Jamf Pro:
+
+- make the Company Portal app deployment available in Jamf Self Service, or,
+- as a background installation so that users will follow the procedure below:
 
 1. On a macOS device, go to https://aka.ms/macoscompanyportal to download the current version of the Company Portal app for macOS.
 2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
@@ -63,7 +68,10 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 > [!NOTE]
 > You need to [deploy the Company Portal](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) for macOS before going through the next steps.  
 
-End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro.
+End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro. This will require your end users to take action. We recommend that you [contact your end user](end-user-educate.md) through email, Jamf Pro notifications, or any other methods of notifying your end users to click the button in Jamf Self Service.
+
+> [!WARNING]
+> The Company Portal app must be launched from Jamf Self Service to begin device registration. Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device. If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.
 
 1. In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.
 2. Configure the **Conditional Access** payload, including the trigger and execution frequency. Set the priority to **After**.
