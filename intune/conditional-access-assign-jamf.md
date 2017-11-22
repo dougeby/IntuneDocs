@@ -63,7 +63,7 @@ There are two ways that you can deploy the Company Portal app for macOS in Jamf 
 9. Configure the settings for the package.
 10. Click the **Scope** tab to specify on which computers the Company Portal app should be installed. Click **Save**. The policy will run scoped devices the next time the selected trigger occurs on the computer and meets the criteria in the **General** payload.
 
-## Create a policy in Jamf Pro to have users register their devices with Azure Active Directory"
+## Create a policy in Jamf Pro to have users register their devices with Azure Active Directory
 
 > [!NOTE]
 > You need to [deploy the Company Portal](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) for macOS before going through the next steps.  
