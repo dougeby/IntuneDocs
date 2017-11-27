@@ -83,7 +83,6 @@ The default enrollment restrictions apply to all users.
 4. In the Azure portal, choose **Device enrollment**, choose **Enrollment restrictions**.
 5. Choose **Enrollment restrictions** > **Device Limit Restrictions**.
 6. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
+    ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
 
-  ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
-
-  Click **Save**.
+    Click **Save**.
