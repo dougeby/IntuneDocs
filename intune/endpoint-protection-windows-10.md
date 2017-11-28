@@ -126,10 +126,10 @@ The profile is created and appears on the profiles list blade.
 
 Brief explanation on Windows Defender and components
 
+### Network isolation policies (find a place for these somewhere in the docs if not here)
+
+
 ### Windows Defender Application Guard
-
-
-### Windows Defender Credential Guard
 
 
 ### Windows Defender Device Guard
@@ -146,10 +146,10 @@ Brief explanation on Windows Defender and components
 Link to [Windows Hello for Business](windows-hello.md)
 
 
-### Network isolation policies (find a place for these somewhere in the docs if not here)
 
 
-### Windows Defender Security Center Client Customization and Notification Branding
+
+### Windows Defender Security Center
 
 
 
