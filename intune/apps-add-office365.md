@@ -143,7 +143,3 @@ The following table lists common error codes you might encounter and their meani
 ## Next steps
 
 You can now assign the apps the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
-
- 	 	 	 
-
-
