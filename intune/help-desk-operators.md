@@ -29,6 +29,8 @@ ms.custom: intune-azure
 
 The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** blade.
 
+The **Troubleshoot** blade also shows user enrollment issues. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions. 
+
 For steps on adding a help desk operator role, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control)
 
 When a user contacts support with a technical issue with Intune, the help desk operator enters the user's name. Intune shows useful data that can help resolve many tier-1 issues, including:
@@ -36,7 +38,7 @@ When a user contacts support with a technical issue with Intune, the help desk o
 - User status
 - Assignments
 - Compliance issues
-- Device not responding
+- Device not
 - Device not getting VPN or Wi-Fi settings
 - App installation failure
 
