@@ -40,6 +40,7 @@ The **Remote lock** device locks the selected device. The device owner must use 
 - Windows Phone - Supported on Windows Phone 8.1 and later
 - iOS - Supported
 - macOS - Supported
+
     > [!Note]  
     > Set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 - Android - Supported

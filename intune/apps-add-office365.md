@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install Office 365 ProPlus apps to Windows 10 devices using Intune
+title: Install Office 365 apps to mobile devices using Intune
 titlesuffix: "Azure portal"
 description: "Learn how you can use Intune to make it easier to install Office 365 apps on Windows 10 devices."
 keywords:
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as one app in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
 
 
 ## Before you start
