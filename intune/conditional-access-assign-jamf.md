@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,8 +49,8 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 
 There are two ways that you can deploy the Company Portal app for macOS in Jamf Pro:
 
-- make the Company Portal app deployment available in Jamf Self Service, or,
-- as a background installation so that users will follow the procedure below:
+- Make the Company Portal app deployment available in Jamf Self Service, or,
+- As a background installation so that users will follow the procedure below:
 
 1. On a macOS device, go to https://aka.ms/macoscompanyportal to download the current version of the Company Portal app for macOS.
 2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
@@ -74,7 +74,7 @@ End users need to launch the Company Portal app through Jamf Self Service to reg
 > The Company Portal app must be launched from Jamf Self Service to begin device registration. Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device. If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.
 
 1. In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.
-2. Configure the **Conditional Access** payload, including the trigger and execution frequency. Set the priority to **After**.
+2. Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency. Set the priority to **After**.
 3. Click the **Scope** tab, and scope the policy to all targeted devices.
 4. Click the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
 
