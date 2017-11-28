@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for BusinesstitleSuffix: "Azure portal"
+title: How to use Windows Hello for Business
+titleSuffix: "Azure portal"
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +20,7 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+ms.reviewer: davidra
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -57,7 +58,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2.  On the Intune blade, choose **Enroll devices**, and then choose **Manage** > **Windows Hello for Business**.
+2.  On the Intune blade, choose **Endpoint Protection**, and then choose **Manage** > **Windows Hello for Business**.
 
 3.  On the blade that opens, choose the **Default** settings.
 
@@ -81,7 +82,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
  - **Require lowercase letters in PIN**/**Require uppercase letters in PIN**/**Require special characters in PIN**. You can enforce a stronger PIN by requiring the use of uppercase letters, lowercase letters, and special characters in the PIN. Choose from:
 
 	 - **Allowed**. Users can use the character type in their PIN, but it is not mandatory.
-	
+
 	 - **Required**. Users must include at least one of the character types in their PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 
 	 - **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)<br>Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

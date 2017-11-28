@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,9 +60,9 @@ The profile is created and appears on the profiles list blade.
 
 ## Windows encryption settings
 
-### Windows Settings
+### Windows settings
 
-- **Require devices to be encrypted (Desktop only)** - If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable.
+- **Require devices to be encrypted (desktop only)** - If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable.
 - **Require Storage Card to be encrypted (mobile only)** - Enable this setting to encrypt any removable storage cards used by the device.
 
 
@@ -120,8 +120,49 @@ The profile is created and appears on the profiles list blade.
 ### BitLocker removable data-drive settings
 
 - **Deny write access to removable data-drive not protected by BitLocker** - Specify whether BitLocker encryption is required for removable storage drives.
-	- **Block write access to devices configured in another organization** - Specify whether removable data drives that belong to another organization can be written to.
+- **Block write access to devices configured in another organization** - Specify whether removable data drives that belong to another organization can be written to.
 
+## Windows Defender
+
+Brief explanation on Windows Defender and components
+
+### Windows Defender Application Guard
+
+
+### Windows Defender Credential Guard
+
+
+### Windows Defender Device Guard
+
+
+### Windows Defender Exploit Guard
+
+
+### Windows Defender Firewall
+
+
+### Windows Hello for Business
+
+Link to [Windows Hello for Business](windows-hello.md)
+
+
+### Network isolation policies (find a place for these somewhere in the docs if not here)
+
+
+### Windows Defender Security Center Client Customization and Notification Branding
+
+
+
+
+## Windows Defender Advance Threat Protection
+
+Brief explanation of WDATP
+
+### Onboarding and offboarding
+
+
+
+### Configuring settings
 
 
 ## Next steps
