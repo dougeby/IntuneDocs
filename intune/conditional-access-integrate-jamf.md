@@ -70,7 +70,7 @@ You can connect Intune with Jamf Pro by:
   > [!IMPORTANT]
   > The Application Key is only shown once during this process. Be sure to save it somewhere where you can easily retrieve it.
 
-8. Navigate to **All Settings** > **API Access** > **Required Permissions** and delete all permissions.
+8. Open **Settings**, then navigate to **API Access** > **Required Permissions** and delete all permissions.
 
   > [!NOTE]
   > Add a new required permission. The application can have only work properly if it has the single required permission.
