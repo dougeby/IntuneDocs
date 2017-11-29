@@ -50,7 +50,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Device enrollment
  
-#### Troubleshoot enrollment issues  <!--- 746324 ---> 
+#### Troubleshoot enrollment issues  <!-- 746324 --> 
 
 The **Troubleshoot** workspace now shows user enrollment issues. Details about the issue and suggested remediation steps can 
 help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors 
@@ -136,7 +136,7 @@ The following data is not retained:
 - User installed apps (store and Win32 apps)
 - Non-default device settings
 
-#### Disallow date/time changes to Samsung KNOX devices <!---1468103 --->
+#### Disallow date/time changes to Samsung KNOX devices <!--1468103 -->
 New KNOX setting to prevent changes to date & time.
 
 ### Monitor and troubleshoot
@@ -154,15 +154,6 @@ Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu i
 ### Role-based access control
 #### On-premises Exchange connector high availability support  <!-- 676614 -->
 You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
-
-
-
-
-
-
-
-
-
 
 
 ## Week of November 20, 2017
