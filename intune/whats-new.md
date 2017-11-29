@@ -46,6 +46,28 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+
+## Week of November 20, 2017
+
+### App management
+
+#### Google Play Protect support on Android <!-- 908720 -->
+
+With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and
+organizations to run secure apps and secure Android images. Intune will support Google Play Protect features, including SafetyNet
+remote attestation. Admins can set compliance policy requirements that require Google Play Protect be configured and healthy.
+The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is
+healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that
+installed apps are verified by Google Play services. Conditional access might block users from accessing corporate resources
+if a device is not compliant with Google Play Protect requirements.
+
+- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+
+#### Text protocol allowed from managed Apps <!-- 1414050  -->
+
+Apps managed by the Intune App SDK will be able to send SMS messages.
+
+
 ## Week of November 13, 2017
 
 ### Intune Apps
