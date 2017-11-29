@@ -40,7 +40,7 @@ The following steps are required to set up Lookout Mobile Threat Defense subscri
 | 5 | [Configure error report email recipient information](#configure-error-report-email-recipient-information) |
 | 6 | [Configure enrollment settings](#configure-enrollment-settings) |
 | 7 | [Configure email notifications](#configure-email-notifications) |
-| 8 | [onfigure threat classification](#configure-threat-classification) |
+| 8 | [Configure threat classification](#configure-threat-classification) |
 | 9 | [Watching enrollment](#watching-enrollment) |
 
 > [!IMPORTANT]
