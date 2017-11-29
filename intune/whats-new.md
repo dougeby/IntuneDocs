@@ -69,7 +69,7 @@ This functionality will be released with the migration of Android for Work setti
 #### Support for multiple Network Device Enrollment Service (NDES) connectors <!-- 1528104 -->
 
 NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP). 
-With this update, multiple NDES connectors will be supported. 
+With this update, multiple NDES connectors are supported. 
 
 #### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
  
@@ -77,7 +77,7 @@ With this update, multiple NDES connectors will be supported.
  
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
  
-By default, your Android for Work devices settings will be the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
+By default, your Android for Work devices settings are the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
  
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
  
@@ -169,7 +169,7 @@ New KNOX setting to prevent changes to date & time.
 
 ### Monitor and troubleshoot
 #### Window 10 update ring assignments are displayed <!-- 1621837 -->
-When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
+When you are **Troubleshooting,** for the user you are viewing, you are able to see any Windows 10 update rings assignments.  
 
 #### Windows Defender Advanced Threat Protection reporting frequency settings  <!--- 1455974  --->
 Windows Defender Advanced Threat Protection (WDATP) service allows admins to manage reporting frequency for managed devices. With the new **Expedite telemetry reporting frequency** option, WDATP collects data and assesses risks more frequently. The default for reporting optimizes speed and performance. Increasing the frequency of reporting can be valuable for high-risk devices. This setting can be found in the **Windows Defender ATP** profile in **Device configurations**.
@@ -202,7 +202,7 @@ if a device is not compliant with Google Play Protect requirements.
 
 #### Text protocol allowed from managed Apps <!-- 1414050  -->
 
-Apps managed by the Intune App SDK will be able to send SMS messages.
+Apps managed by the Intune App SDK are able to send SMS messages.
 
 ## Week of November 13, 2017
 
@@ -258,13 +258,13 @@ In this release, we've added the following new items to the [inventory taken by 
 
 ### App management
 #### Set access for apps by minimum Android security patch on the device<!-- 1278463 -->   
-An administrator will be able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
+An administrator is able to define the minimum Android security patch that must be installed on the device in order to gain access to a managed application under a managed account.
 
 > [!Note]  
 > This feature only restricts security patches released by Google on Android 6.0+ devices.
 
 #### App-conditional launch support <!-- 1193313 -->
-IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e., WXP, Outlook, Managed Browser, Yammer) to integrate the Intune App SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
+IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user is required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e., WXP, Outlook, Managed Browser, Yammer) to integrate the Intune App SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
 
 #### App Version number for line-of-business in device install status report <!-- 1233999 -->
 With this release, the Device install status report displays the app version number for the line-of-business apps for iOS and Android. You may use this information to troubleshoot your apps, or find devices that are running outdated app versions.
@@ -282,7 +282,7 @@ Application Guard can be found in the device configuration profiles, in the "End
 #### Windows Defender Application Guard on Windows 10 Enterprise provides mode to trust only authorized apps <!-- 1031096 -->    
 With thousands of new malicious files created every day, using antivirus signature-based detection to fight against malware might no longer provide an adequate defense against new attacks. Using Windows Defender Application Guard on Windows 10 Enterprise, you can change device configuration from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You assign trust to apps in Windows Defender Application Guard.
 
-Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Windows Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph will be allowed to run.
+Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Windows Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph are allowed to run.
 
 #### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->   
 Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of the following components:
@@ -362,7 +362,7 @@ We've improved the device setup workflow in the Company Portal app for iOS. The 
 ### Monitor and troubleshoot
 
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
-The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** will be populated with the latest user data.
+The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** is populated with the latest user data.
 
 
 ## Week of October 30, 2017
@@ -407,7 +407,7 @@ The Settings page in the Company Portal app for Windows 10 has been updated to m
 We have added **Ownership Type** to the Device Details screen on the Company Portal app for Windows 10. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the **About** screen.
 
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
-The Company Portal app for Android now requests end user feedback. This feedback will be sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
+The Company Portal app for Android now requests end user feedback. This feedback is sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
 #### Update to what device details an organization can see <!--1616825-->
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.
