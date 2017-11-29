@@ -73,7 +73,7 @@ There are two ways that you can deploy the Company Portal app for macOS in Jamf 
 End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro. This will require your end users to take action. We recommend that you [contact your end user](end-user-educate.md) through email, Jamf Pro notifications, or any other methods of notifying your end users to click the button in Jamf Self Service.
 
 > [!WARNING]
-> The Company Portal app must be launched from Jamf Self Service to begin device registration. <br>Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device. If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.
+> The Company Portal app must be launched from Jamf Self Service to begin device registration. <br><br>Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device. If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.
 
 1. In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.
 2. Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency. Set the priority to **After**.
