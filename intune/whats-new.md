@@ -71,6 +71,34 @@ This functionality will be released with the migration of Android for Work setti
 NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP). 
 With this update, multiple NDES connectors will be supported. 
 
+#### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
+ 
+**Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
+ 
+Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
+ 
+By default, your Android for Work devices settings will be the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
+ 
+If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
+ 
+When working with the new settings, consider the following:
+ 
+##### If you have never previously onboarded Android for Work enrollment
+ 
+The new Android for Work platform is blocked in the default Device Type Restrictions. After you onboard the feature, you can allow devices to enroll with Android for Work. To do so, change the default or create a new Device Type Restriction to supersede the default Device Type Restriction.
+ 
+##### If you have onboarded Android for Work enrollment
+ 
+If you’ve previously onboarded, your situation depends on the setting you chose:
+ 
+| Setting | Android for Work status in default Device Type Restriction | Notes |
+| --- | --- | --- |
+| **Manage all devices as Android** | Blocked | All Android devices must enroll without Android for Work. |
+| **Manage supported devices as Android for Work** | Allowed | All Android devices that support Android for Work must enroll with Android for Work. |
+| **Manage supported devices for users only in these groups as Android for Work** | Blocked | A separate Device Type Restriction policy was created to override the default. This policy defines the groups you previously selected to allow Android for Work enrollment. Users within the selected groups will continue to be allowed to enroll their Android for Work devices. All other users are restricted from enrolling with Android for Work. |
+ 
+In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
+
 ### App management
   
 #### App install report updated to include Install Pending status <!-- 1249446 -->  
@@ -109,7 +137,7 @@ You can lock a lost macOS device, and set a 6-digit recovery PIN. When locked, t
 
 For more information, see [Remotely lock managed devices with Intune](device-remote-lock.md).
 
-### New SCEP profile details supported <!-- 1559808 -->
+#### New SCEP profile details supported <!-- 1559808 -->
 
 Administrators are now able to set additional settings when creating a SCEP profile on Windows, iOS, macOS, and Android platforms.  Administrators can set IMEI, serial number, or common name including email in the subject name format.
 
@@ -119,7 +147,7 @@ Beginning in early 2018, Jamf will send macOS device state information to Intune
 #### Update to what device details your company may see <!--1616825 -->
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. 
 
-### Retain data during a factory reset  <!--1588489 -->
+#### Retain data during a factory reset  <!--1588489 -->
 When resetting Windows to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
 
 The following data is retained through a factory reset:
@@ -574,6 +602,34 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 
 ## Notices
+
+### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
+ 
+**Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
+ 
+Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
+ 
+By default, your Android for Work devices settings will be the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
+ 
+If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
+ 
+When working with the new settings, consider the following:
+ 
+#### If you have never previously onboarded Android for Work enrollment
+ 
+The new Android for Work platform is blocked in the default Device Type Restrictions. After you onboard the feature, you can allow devices to enroll with Android for Work. To do so, change the default or create a new Device Type Restriction to supersede the default Device Type Restriction.
+ 
+#### If you have onboarded Android for Work enrollment
+ 
+If you’ve previously onboarded, your situation depends on the setting you chose:
+ 
+| Setting | Android for Work status in default Device Type Restriction | Notes |
+| --- | --- | --- |
+| **Manage all devices as Android** | Blocked | All Android devices must enroll without Android for Work. |
+| **Manage supported devices as Android for Work** | Allowed | All Android devices that support Android for Work must enroll with Android for Work. |
+| **Manage supported devices for users only in these groups as Android for Work** | Blocked | A separate Device Type Restriction policy was created to override the default. This policy defines the groups you previously selected to allow Android for Work enrollment. Users within the selected groups will continue to be allowed to enroll their Android for Work devices. All other users are restricted from enrolling with Android for Work. |
+ 
+In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
 ### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
 
