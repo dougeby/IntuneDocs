@@ -46,8 +46,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
-<<<<<<< HEAD
-=======
 ## Week of November 27, 2017
 
 ### Device enrollment
@@ -186,7 +184,6 @@ Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu i
 You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
 
 
->>>>>>> 6dbbee00ff49ee72bc3a96c04e14db9497399840
 ## Week of November 20, 2017
 
 ### App management
@@ -207,10 +204,6 @@ if a device is not compliant with Google Play Protect requirements.
 
 Apps managed by the Intune App SDK will be able to send SMS messages.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6dbbee00ff49ee72bc3a96c04e14db9497399840
 ## Week of November 13, 2017
 
 ### Intune Apps
