@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ As an Intune admin, you can determine which devices can enroll into management w
   - iOS
   - macOS
   - Windows
-- Platform operating system version for iOS, Android, and Windows (only Windows 10 versions may be used, leave this blank if Windows 8.1 is allowed)
+- Platform operating system version for iOS, Android, Android for Work, and Windows (only Windows 10 versions may be used, leave this blank if Windows 8.1 is allowed)
   - Minimum version
   - Maximum version
 - Restrict personally owned devices (iOS, Android, Android for Work, macOS only)
@@ -59,11 +59,10 @@ The default enrollment restrictions apply to all users and userless enrollments.
     - **iOS**
     - **macOS**
     - **Windows**
-
     Click **Save**.
 
 6. Under **All Users**, select **Platform Configurations** and select the following configurations. For each platform allowed, you can configure the following options:
-    - **Versions** - Specify the **Min** and **Max** platform operating system versions for Android, iOS, or Windows devices. Android supports major.minor.rev.build. iOS supports major.minor.rev. Windows supports major.minor.rev.build for Windows 10 only. Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app. 
+    - **Versions** - Specify the **Min** and **Max** platform operating system versions for Android, iOS, or Windows devices. Android and Android for Work support major.minor.rev.build. iOS supports major.minor.rev. Windows supports major.minor.rev.build for Windows 10 only. Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app. 
     - **Personally Owned** - Specify whether to **Allow** or **Block** for Android, iOS, and macOS devices.
 
     ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
