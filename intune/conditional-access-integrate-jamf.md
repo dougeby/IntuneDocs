@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/28/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -98,7 +98,7 @@ You can connect Intune with Jamf Pro by:
 
 ## Set up compliance policies and register devices
 
-After you finish configuring integration between Intune and Jamf, you can [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
+After you finish configuring integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
 
 ## Information shared from Jamf Pro to Intune
 
