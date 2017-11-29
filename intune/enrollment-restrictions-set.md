@@ -59,9 +59,8 @@ The default enrollment restrictions apply to all users and userless enrollments.
     - **iOS**
     - **macOS**
     - **Windows**
-    Click **Save**.
-
-6. Under **All Users**, select **Platform Configurations** and select the following configurations. For each platform allowed, you can configure the following options:
+6. Click **Save**.
+7. Under **All Users**, select **Platform Configurations** and select the following configurations. For each platform allowed, you can configure the following options:
     - **Versions** - Specify the **Min** and **Max** platform operating system versions for Android, iOS, or Windows devices. Android and Android for Work support major.minor.rev.build. iOS supports major.minor.rev. Windows supports major.minor.rev.build for Windows 10 only. Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app. 
     - **Personally Owned** - Specify whether to **Allow** or **Block** for Android, iOS, and macOS devices.
 
@@ -84,4 +83,4 @@ The default enrollment restrictions apply to all users.
 6. Under **All Users**, select **Device Limit**. Specify the maximum number of enrolled devices per user.  
     ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
 
-    Click **Save**.
+7. Click **Save**.
