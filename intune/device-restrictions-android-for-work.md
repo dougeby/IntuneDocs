@@ -85,6 +85,13 @@ ms.custom: intune-azure
 - **Fingerprint unlock** - Blocks an end user from using the device fingerprint scanner to unlock it.
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag). You can use this setting to prevent users from configuring Smart Lock.
 
+## System security
+
+ - **Threat scan on apps** - Enforce that the **Verify Apps** setting is on for work and personal profiles.
+
+   > [!Note]  
+   > This setting will only work for devices that are Android O and above. 
+
 ## Next steps
 
 Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.

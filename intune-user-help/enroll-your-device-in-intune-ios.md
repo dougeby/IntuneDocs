@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,7 +55,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Azure AD password prompt.](./media/ios-0b-cp-enroll-1711.png)|Enter your password, then tap **Sign in**.|
 |![Loading company resources splash screen.](./media/ios-1-cp-enroll-1711.png)|Wait for this to load.|
 |![Terms and conditions.](./media/ios-2-cp-enroll-1711.png)|Read and **Accept All** of the Terms and Conditions.|
-|![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-3-cp-enroll-1711.png)|Tap on **Get your device managed** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
+|![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-3-cp-enroll-1711.png)|Tap on **Begin** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
 |![What can my company see screen.](./media/ios-4-cp-enroll-1711.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
 |![What's next screen.](./media/ios-5-cp-enroll-1711.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Next**.|
 |![Loading screen after tapping Next on What's next.](./media/ios-6-cp-enroll-1711.png)||
@@ -73,7 +73,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Loading company resources screen.](./media/ios-18-cp-enroll-1711.png)|Wait for this to load.|
 |![Select device category in company portal app.](./media/ios-19-cp-enroll-1711.png)|Select the best category for your device. This usually has to do with who owns the device, or where it's located most of the time.|
 |![Category selected.](./media/ios-20-cp-enroll-1711.png)||
-|![Device management successful; now need to update settings.](./media/ios-21-cp-enroll-1711.png)|You've successfully gotten your device managed. There are likely still settings, like the length of your password, that your company may need you to update. Tap **Update device settings** to proceed.|
+|![Device management successful; now need to update settings.](./media/ios-21-cp-enroll-1711.png)|You've successfully gotten your device managed. There are likely still settings, like the length of your password, that your company may need you to update. Tap **Continue** to proceed.|
 |![Confirming device settings.](./media/ios-22-cp-enroll-1711.png)|Company Portal will check to see if any of your settings need to be updated.|
 |![Settings check finished, with an incorrect OS version](./media/ios-23-cp-enroll-1711.png)|Company Portal will provide instructions on how you can fix any issues with your settings. Once you finish fixing the issues, tap **Check Settings**.|
 |![Confirming device settings loading screen](./media/ios-24-cp-enroll-1711.png)|Your device will check to see if your settings are secure enough to access company resources.|

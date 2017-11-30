@@ -75,6 +75,7 @@ The app you have created will be displayed in the apps list where you can assign
 ## Step 5 - Update a line-of-business app
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+Note: For the Intune service to successfully deploy a new APK file to the device you must increment the android:versionCode string in the AndroidManifest.xml file in your APK package
 
 ## Next steps
 

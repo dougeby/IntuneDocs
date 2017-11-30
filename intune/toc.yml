@@ -365,6 +365,8 @@
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
+      - name: Symantec PKI Manager Web Service
+        href: certificates-symantec-configure.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts
@@ -384,6 +386,8 @@
       href: compliance-policy-create-android.md
     - name: Create Android for Work policy
       href: compliance-policy-create-android-for-work.md
+    - name: Create a policy to enable Google Play Protect
+      href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
       href: compliance-policy-create-ios.md
     - name: Create macOS policy
@@ -425,6 +429,8 @@
           href: app-protection-policy-settings-android.md
         - name: iOS settings
           href: app-protection-policy-settings-ios.md
+        - name: Review app protection logs in the Managed Browser
+          href: app-protection-policy-settings-log.md
       - name: Validate app protection policies
         href: app-protection-policies-validate.md
       - name: Monitor app protection user status
