@@ -163,11 +163,11 @@ Now that you've installed your token, you can create an enrollment profile for D
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
-1. In Intune in the Azure portal, choose **Device enrollment** >  **Apple Enrollment** > **Enrollment Program Devices**.
-2. Under **Enrollment Program Devices**, choose **Sync**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
-3. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+  
+2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
 
@@ -176,7 +176,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
      -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
      - Intune syncs new and removed devices with Apple every 24 hours.
 
-4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
+3. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign an enrollment profile to devices
 You must assign an enrollment program profile to devices before they can enroll.
