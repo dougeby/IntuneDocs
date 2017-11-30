@@ -4,10 +4,10 @@
 title: Early edition
 description:
 keywords:
-author: brenduns  
-ms.author: brenduns
+author: ErikjeMS  
+ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - December 2017
+# The early edition for Microsoft Intune - November 2017
 
 The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
@@ -43,144 +43,17 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune in the Azure portal
 
-### App Protection Policies  <!-- 679615 -->
-Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
-### Revoking iOS Volume-Purchase Program apps  <!-- 820863 -->
-For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you will be able to revoke the associated device based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
-
-### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
-You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
-
-### Delete an iOS  Volume Purchasing Program token <!-- 820879 -->
-You will be able to delete the iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token.
-
-### Network Access Control (NAC) device check-in reporting  <!-- 1232250 -->
-Before this change, IT admins couldn't determine from the Intune side whether a NAC-managed device was communicating with their NAC solution or not. When a NAC-managed device isn't communicating with their NAC solution, the device is considered non-compliant by the NAC solution, and therefore blocked by the NAC solution itself and subsequently blocked by conditional access policies that rely on the device compliance state.
-
-With this change, IT admins can see which NAC-managed devices have successfully communicated with their NAC solution or not. This new capability consists of two new monitoring functions located in the Device compliance workload within Intune, the statistics are shown as below:
-- **Average NAC calls in the last hour**
-- **Last NAC incoming request (date/time)**
-
-### New iOS device action   <!-- 1244701 -->
-You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
-
-### Palo Alto VPN now supported <!-- 1333680 eeready -->
-The **Connection type** list will include Palo Alto VPN when you configure your base VPN.
-
-### Multiple connector support for SCEP and PFX certificate handling <!-- 1361755 eeready -->
-Customers who use the on-premise NDES connector to deliver certificates to devices will be able to configure multiple connectors in a single tenant.
-
-This new capability supports the following scenario:
-
-- **High availability**
-
-    Each NDES connector pulls certificate requests from Intune.  If one NDES connector goes offline, the other connector can continue to process requests.
-
-### New automatic redeployment setting <!-- 1469168 -->
-This setting allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device will be automatically reconfigured and reenrolled into management.
-
-This setting can be found under Windows 10 -> Device restrictions -> General -> Automatic redeployment.
-
-### Install Office apps on macOS devices <!-- 1494311 -->
-You will be able to install Office apps on macOS devices. This new app type will allow you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdater (MAU), to help keep your apps secure and up-to-date.
-
-### Surface Hub resource account supported <!-- 1566442 eeready -->
-A new device action will be added so administrators can define and update the resource account associated with a Surface Hub.
-
-The resource account is used by a Surface Hub to authenticate with Skype/Exchange so it can join a meeting. You can create a unique resource account so the Surface Hub appears in the meeting as the conference room. For example, the resource account might appear as *Conference Room B41/6233*. The resource account (known as the device account) for the Surface Hub typically needs to be configured for the conference room location and when other resource account parameters need to be changed.
-
-When administrators want to update the resource account on a device, they must provide the current Active Directory/Azure Active Directory credentials associated with the device. If password rotation is on for the device, administrators must go to Azure Active Directory to find the password.
-
-> [!NOTE]
-> All fields get sent down in a bundle and overwrite all fields that were previously configured. Empty fields also overwrite existing fields.
-
-The following are the settings administrators can configure:
-
-- **Resource account**  
-
-   - **Active Directory user**   
-   Domainname\username or User Principle Name (UPN): user@domainname.com
-   - **Password**
-
-
-- **Optional resource account parameters** (must be set using the specified resource account)
-   - **Password rotation period**   
-     Ensures the account password is updated automatically by the Surface Hub every week for security reasons. To configure any parameters after this has been enabled, the account in Azure Active Directory must have the password reset first.
-
-   - **SIP (Session Initiation Protocol) address**    
-     Only used when autodiscovery fails.
-
-   - **Email**    
-     Email address of the device/resource account.
-
-   - **Exchange server**    
-     Only required when autodiscovery fails.
-
-   - **Calendar sync**    
-     Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
-
-### Intune now provides the Account Move operation  <!-- 1573558, 1579830 -->
-The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to another. The **Account Move** can be used for both customer-initiated scenarios, when you call the Intune support team requesting it, and it can also be a Microsoft-driven scenario where Microsoft needs to make adjustments to the service in the back-end. During the **Account Move**, the tenant enters in read-only mode (ROM). Service operations like enrolling, renaming devices, updating compliance status will fail during the ROM period.
-
-### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
-Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end-users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
-
-These are the pillars admins can hide from the Windows Defender Security Center device configuration profile settings:
-- Virus and threat protection
-- Device performance and health
-- Firewall and network protections
-- App and browser control
-- Family options
-
-IT admins can also customize which notifications users receive. For example, you can configure whether the users receive all notifications generated by visible pillars in the WDSC, or only critical notifications. Non-critical notifications include periodic summaries of Windows Defender Antivirus activity and notifications when scans have completed. All other notifications are considered critical. Additionally, you can also customize the notification content itself, for example, you can provide the IT contact information to embed in the notifications that appear on the users' devices.
-
-
-
-
-<!-- the following are present prior to 1712 -->
 ### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
 The **Built-in** app type will make it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
 
 ### Single Sign-on support for iOS <!-- 1333645 -->  
 You will be able to use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm.
 
-### iOS 11 app inventory API for Mobile Threat Detection <!-- 1391759 -->
-Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Thread Detection (MTD) providers to fetch, such as Lookout for Work. You will be able to collect app inventory from the users of iOS 11+ devices.
-
-**App inventory**  
-Inventories from both corporate-owned iOS 11+ and personally owned devices are sent to your MTD service provider. Data in the app inventory includes:
-
- - App ID
- - App Version
- - App Short Version
- - App Name
- - App Bundle Size
- - App Dynamic Size
- - App is validated or not
- - App is managed or not
-
-### Audit updates <!-- 1412961 -->  
-Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
-
-Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.   
-
-### Text protocol allowed from managed Apps <!-- 1414050  -->
-Apps managed by the Intune App SDK will be able to send SMS messages.
-
-### Remotely restart iOS device (supervised only) <!-- 1424595 -->
-You will be able to trigger a supervised iOS 10.3+ device to restart using a device action. For more information on using the device restart action, see [Remotely restart devices with Intune](device-restart.md).
-
-> [!Note]  
-> This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
-
 ### Remotely lock managed macOS device with Intune <!-- 1437691 -->
 You will be able to lock a lost macOS device, and set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 
 For more information, see [Remotely lock managed devices with Intune](device-remote-lock.md).
-
-### Windows Defender Advanced Threat Protection reporting frequency settings  <!--- 1455974  --->
-Windows Defender Advanced Threat Protection (WDATP) service allows admins to manage reporting frequency for managed devices. With the new **Expedite telemetry reporting frequency** option, WDATP collects data and assesses risks more frequently. The default for reporting optimizes speed and performance. Increasing the frequency of reporting can be valuable for high-risk devices. This setting can be found in the **Windows Defender ATP** profile in **Device configurations**.
 
 ### Assignment conflict resolution has changed for iOS store apps <!-- 1480316 -->
 End users might experience a change in the availability of iOS store apps. Currently, an app that has been assigned to two groups with a conflict between **Required and Available** and **Not Applicable**, resolves to **Required and Available**. With the change, an app experiencing this conflict resolves to **Not Applicable**.
@@ -222,74 +95,16 @@ In all cases, your intended regulation is preserved. No action is required on yo
 
 These changes will begin rollout with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account.
 
-### Support for multiple Network Device Enrollment Service (NDES) connectors <!-- 1528104 -->
-NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP). With this update, multiple NDES connectors will be supported.
-
-### New SCEP profile details supported <!-- 1559808 -->
-Administrators will be able to set additional settings when creating a SCEP profile on Windows, iOS, macOS, and Android platforms.  Administrators can set IMEI, serial number, or common name including email in the subject name format.
-
 ### Configure an iOS app PIN <!-- 1586774 -->
 Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
 
-### Retain data during a factory reset  <!-- 1588489 -->
-We are adding support for a new capability to Windows Factory reset. Now, admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
- 
-The following data is retained through a factory reset:
-- User accounts associated with the device
-- Machine state (domain join, AADJ)
-- MDM enrollment
-- OEM installed apps (store and Win32 apps)
-- User profile
-- User data outside of user profile
-- User autologon
- 
-The following data is not preserved:
-- User files
-- User installed apps (store and Win32 apps)
-- Non-default device settings 
-
-### App install status report now a bar chart <!-- 1249446 -->  
-The **App install status** report accessible for each app through the **App** list in the **Mobile apps** workload will soon be rendered as a bar chart.
-
 ### Add "Find my iPhone" for personal devices <!--1427287-->
 You will be able to view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
-
-### Group-assigned enrollment restrictions <!-- 747598 -->
-As an Intune administrator, you will be able to create custom Device Type and Device Limit enrollment restrictions for user groups.
- 
-The Intune Azure Portal lets you create up to 25 instances of each restriction type which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
- 
-All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list. 
- 
-This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
-
-### Windows 10 update ring assignments are displayed <!-- 1621837 -->
-When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
-
-
 
 <!-- the following are present prior to 1711 -->
 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
 Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
-
-### Troubleshoot enrollment issues  <!--- 746324 --->  
-The Troubleshoot workspace will show user enrollment issues. Details about the issue and suggested remediation steps can help admins and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -316,14 +131,11 @@ You can manage devices and apps with a combination of Citrix XenMobile MDX and M
 
 You are able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
 
-
-### On-premises Exchange connector high availability support  <!-- 676614 -->   
-You are able to have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
-
 ### System Center Operations Manager management pack for Exchange connector <!-- 885457 -->   
 The System Center Operations Manager management pack for Exchange connector will be available to help you parse the Exchange connector logs. This management pack gives you different ways of monitoring Intune when you need to troubleshoot issues.
 
-
+### On-premises Exchange connector high availability support  <!-- 676614 -->   
+You are able to have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
 
 
 
