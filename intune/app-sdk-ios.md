@@ -178,9 +178,9 @@ The Intune MAM Configurator Tool can be used to update:
 * Any of your app's defined URL schemes in its Info.plist file with the -intunemam suffix, for each URL scheme.
 * Any of your app's defined Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
 * Any of your app's app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the AppGroupIdentifiers key as an array of strings.
-
 	
->[!NOTE] If you decide to use this tool instead of manual info.plist manipulation, we recommend it be rerun whenever changes to your app's info.plist or entitlements have been made.
+> [!Note]
+> If you decide to use this tool instead of manual info.plist manipulation, we recommend it be rerun whenever changes to your app's info.plist or entitlements have been made.
 
 ## Configure Azure Active Directory Authentication Library (ADAL)
 
