@@ -74,7 +74,7 @@ You must create a separate profile for each device platform. When you create the
 - Whether you plan to use SCEP or PKCS profiles, you must download and configure the Microsoft Intune Certificate Connector.
 
 
-## Step 1- Configure your certificate infrastructure
+## Step 1: Configure your certificate infrastructure
 
 See one of the following topics for help configuring the infrastructure for each type of certificate profile:
 
@@ -82,7 +82,7 @@ See one of the following topics for help configuring the infrastructure for each
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
 
 
-## Step 2 - Export your trusted root CA certificate
+## Step 2: Export your trusted root CA certificate
 
 Export the Trusted Root Certification Authorities (CA) certificate as a **.cer** file from the issuing CA, or from any device that trusts your issuing CA. Do not export the private key.
 

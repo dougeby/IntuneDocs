@@ -7,7 +7,7 @@ description: Enable Intune mobile device management (MDM) for Windows devices.
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 11/28/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -92,3 +92,7 @@ Tell your users how to enroll their Windows devices and what to expect after the
 For end user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).
+
+## Next steps
+
+- [Considerations when managing Windows devices using Intune on Azure](/intune-classic/deploy-use/intune-on-azure.md).
