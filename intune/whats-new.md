@@ -148,7 +148,7 @@ Beginning in early 2018, Jamf will send macOS device state information to Intune
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. 
 
 #### Retain data during a factory reset  <!--1588489 -->
-When resetting Windows to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
+When resetting Windows 10 version 1709 and later to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
 
 The following data is retained through a factory reset:
 - User accounts associated with the device
@@ -164,9 +164,6 @@ The following data is not retained:
 - User installed apps (store and Win32 apps)
 - Non-default device settings
 
-#### Disallow date/time changes to Samsung KNOX devices <!--1468103 -->
-New KNOX setting to prevent changes to date & time.
-
 ### Monitor and troubleshoot
 #### Window 10 update ring assignments are displayed <!-- 1621837 -->
 When you are **Troubleshooting,** for the user you are viewing, you are able to see any Windows 10 update rings assignments.  
@@ -178,10 +175,6 @@ Windows Defender Advanced Threat Protection (WDATP) service allows admins to man
 Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
 
 Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.   
-
-### Role-based access control
-#### On-premises Exchange connector high availability support  <!-- 676614 -->
-You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to other CASs. This feature ensures that the service is not interrupted.
 
 
 ## Week of November 20, 2017
