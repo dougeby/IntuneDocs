@@ -61,12 +61,12 @@ Default restrictions are automatically provided for both device type and device 
 4. Choose **Create restriction**.
 5. Give the restriction a name and description.
 6. Choose a **Restriction type** and then click **Create**.
-7. Click **Assignments** > **+ Select groups**.
-8. Under **Select groups**, select one or more groups, and then click **Select**. The restriction only applies to groups to which it is assigned. If you don't assign a restriction to at least one group, it won't have any effect.
-9. Click **Save**.
-10. For device limit restrictions, you can click **Device limit** to change the maximum number of devices that a user can enroll.
-11. For device type restrictions, you can click **Platforms** and **Platform configurations** to allow or block various platforms and versions.
-12. The new restriction is created with a priority of one. You can [change the priority](#change-enrollment-restriction-priority).
+7. For device limit restrictions, click **Device limit** to set the maximum number of devices that a user can enroll.
+8. For device type restrictions, click **Platforms** and **Platform configurations** to allow or block various platforms and versions.
+9. Click **Assignments** > **+ Select groups**.
+10. Under **Select groups**, select one or more groups, and then click **Select**. The restriction only applies to groups to which it is assigned. If you don't assign a restriction to at least one group, it won't have any effect.
+11. Click **Save**.
+12. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
 
 ## Set device type restrictions
 
@@ -76,9 +76,9 @@ You can change the settings for a device type restriction by following these ste
 2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Under **Device Type Restrictions**, choose the restriction that you want to set.
-5. Under **All Users**, select **Platforms**. Choose **Allow** or **Block** for each platform listed.
+5. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
 6. Click **Save**.
-7. Under **All Users**, select **Platform Configurations** and select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
+7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations** and select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
   - Android and Android for Work support major.minor.rev.build.
   - iOS supports major.minor.rev.
   - Windows supports major.minor.rev.build for Windows 10 only.
@@ -109,7 +109,7 @@ You can change the settings for a device limit restriction by following these st
 
 Priority is used when a user exists in multiple groups that are assigned restrictions. Users are subject only to the highest priority restriction assigned to a group that they are in. For example, Joe is in a group A assigned to priority 5 restrictions and group B assigned to priority 2 restrictions. Joe is only subject to the priority 2 restrictions. 
 
-When you create a restriction, it is added to the top of the list (priority 1).
+When you create a restriction, it is added to the list just above the default.
 
 Device enrollment includes default restrictions for both device type and device limit restrictions. These two restrictions apply to all users unless they are overridden by higher-priority restrictions. 
 
