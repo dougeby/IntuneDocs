@@ -402,8 +402,8 @@ We have added **Ownership Type** to the Device Details screen on the Company Por
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
 The Company Portal app for Android now requests end user feedback. This feedback is sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
-#### Update to what device details an organization can see <!--1616825-->
-The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.
+<!-- #### Update to what device details an organization can see 616825
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.-->
 
 #### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
 
