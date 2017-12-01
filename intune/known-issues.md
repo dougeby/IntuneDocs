@@ -40,6 +40,10 @@ If you want to request a new feature for Intune, consider filing a report on our
 
 ## Migration
 
+### Intune legacy PC client features are only available in the Silverlight console
+
+The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+
 ### Groups created by Intune during migration might affect functionality of other Microsoft products
 
 When you migrate from Intune to the Azure portal, you might see a new group named **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. This group contains all users in your Azure Active Directory, not only Intune licensed users. This usage can cause issues with other Microsoft products if you expect some existing or new users to not be a member of any groups.

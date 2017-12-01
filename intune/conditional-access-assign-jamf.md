@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,7 @@ There are two ways that you can deploy the Company Portal app for macOS in Jamf 
 - Make the Company Portal app deployment available in Jamf Self Service, or,
 - As a background installation so that users will follow the procedure below:
 
-1. On a macOS device, go to https://aka.ms/macoscompanyportal to download the current version of the Company Portal app for macOS.
+1. On a macOS device, download the current version of the [Company Portal app for macOS](https://go.microsoft.com/fwlink/?linkid=862280).
 2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
 3. Create a new package with the Company Portal app for macOS, then click **Save**.
 4. Open **Computers** > **Policies**, then select **New**.
