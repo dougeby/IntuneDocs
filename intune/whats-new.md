@@ -144,8 +144,8 @@ Administrators are now able to set additional settings when creating a SCEP prof
 #### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747 --->
 Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
 
-#### Update to what device details your company may see <!--1616825 -->
-The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. 
+<!-- #### Update to what device details your company may see -1616825
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
 
 #### Retain data during a factory reset  <!--1588489 -->
 When resetting Windows 10 version 1709 and later to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
@@ -272,8 +272,8 @@ Admins can define sites as "trusted" or "corporate" using a Windows Information 
 
 Application Guard can be found in the device configuration profiles, in the "Endpoint protection" profile. From there, admins can configure interaction between the virtualized browser and the host machine, nontrusted sites and trusted sites, and storing data generated in the virtualized browser. To use Application Guard on a device, a network boundary first must be configured. It's important to define only one network boundary for a device.  
 
-#### Windows Defender Application Guard on Windows 10 Enterprise provides mode to trust only authorized apps <!-- 1031096 -->    
-With thousands of new malicious files created every day, using antivirus signature-based detection to fight against malware might no longer provide an adequate defense against new attacks. Using Windows Defender Application Guard on Windows 10 Enterprise, you can change device configuration from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You assign trust to apps in Windows Defender Application Guard.
+#### Windows Defender Application Control on Windows 10 Enterprise provides mode to trust only authorized apps <!-- 1031096 -->    
+With thousands of new malicious files created every day, using antivirus signature-based detection to fight against malware might no longer provide an adequate defense against new attacks. Using Windows Defender Application Control on Windows 10 Enterprise, you can change device configuration from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You assign trust to apps in Windows Defender Application Control.
 
 Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Windows Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph are allowed to run.
 
@@ -402,8 +402,8 @@ We have added **Ownership Type** to the Device Details screen on the Company Por
 #### Feedback prompts for the Company Portal app for Android <!--1165249-->
 The Company Portal app for Android now requests end user feedback. This feedback is sent directly to Microsoft, and provide end users with an opportunity to review the app in the public Google Play store. Feedback is not required, and can easily be dismissed so users can continue using the app.
 
-#### Update to what device details an organization can see <!--1616825-->
-The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.
+<!-- #### Update to what device details an organization can see 1616825
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.-->
 
 #### Helping your users help themselves with the Company Portal app for Android <!---1573324, 1573150, 1558616, 1564878--->
 
@@ -602,9 +602,6 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ## Notices
 
-<<<<<<< HEAD
-### Deprecating support for OS X Yosemite 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
-=======
 ### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
  
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
@@ -634,8 +631,6 @@ If you’ve previously onboarded, your situation depends on the setting you chos
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
 ### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
->>>>>>> 6dbbee00ff49ee72bc3a96c04e14db9497399840
-
 We are announcing that we will begin deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
 
 ### New path for managed devices in Graph API <!-- 1586728 -->
