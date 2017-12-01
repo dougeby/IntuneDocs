@@ -4,8 +4,8 @@
 title: Early edition
 description:
 keywords:
-author: brenduns  
-ms.author: brenduns
+author: ErikjeMS  
+ms.author: erikje
 manager: angrobe
 ms.date: 11/29/2017
 ms.topic: article
