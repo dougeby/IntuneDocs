@@ -4,8 +4,8 @@ title: What's new in Microsoft Intune
 titlesuffix: "Azure portal"
 description: Find out what's new in the Intune Azure portal
 keywords:
-author: brenduns  
-ms.author: brenduns
+author: ErikjeMS  
+ms.author: erikje
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: get-started-article
