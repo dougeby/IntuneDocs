@@ -43,7 +43,7 @@ Your company has lots of proprietary information, from email, to files, networks
 - Make sure that you finish the entire process once you start. Pausing for more than a few minutes usually stops your progress and requires you to start over.
 - If this process should fail, you need to return to the Company Portal app to try again.
 - Make sure that your Wi-Fi is working, and that Safari works on your device.
-- Download the [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## Using the Company Portal app to set up access to company resources
