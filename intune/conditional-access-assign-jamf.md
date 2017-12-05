@@ -47,10 +47,7 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 
 ## Deploy the Company Portal app for macOS in Jamf Pro
 
-There are two ways that you can deploy the Company Portal app for macOS in Jamf Pro:
-
-- Make the Company Portal app deployment available in Jamf Self Service, or,
-- As a background installation so that users will follow the procedure below:
+You should deploy the Company Portal app for macOS in Jamf Pro as a background installation following the procedure below:
 
 1. On a macOS device, download the current version of the [Company Portal app for macOS](https://go.microsoft.com/fwlink/?linkid=862280).
 2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
