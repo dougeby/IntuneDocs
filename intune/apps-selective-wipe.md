@@ -33,7 +33,7 @@ ms.custom: intune-azure
 When a device is lost or stolen, or if the employee leaves your company, you want to make sure company app data is removed from the device. But you might not want to remove personal data on the device, especially if this is an employee-owned device.
 
 >[!NOTE]
-> The iOS and Android platforms are the two platforms we currently support for wiping corporate data from Intune-managed apps.
+> The iOS and Android platforms are the two platforms currently supported for wiping corporate data from Intune managed apps.
 
 To selectively remove company app data, create a wipe request by using the steps in this topic. After the request is finished, the next time the app runs on the device, company data is removed from the app.
 
