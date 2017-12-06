@@ -100,8 +100,9 @@
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md )
 
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
-### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
-### [This device is a little different](device-little-different-jamf.md)
+#### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
+#### [Updating your macOS device](you-need-to-update-your-macos-device.md)
+#### [This device is a little different](device-little-different-jamf.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
