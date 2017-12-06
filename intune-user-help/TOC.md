@@ -104,7 +104,7 @@
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
 #### [This device is a little different](device-little-different-jamf.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
-
+#### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
