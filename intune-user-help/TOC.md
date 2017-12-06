@@ -4,9 +4,9 @@
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [What happens when I reset my device?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [How to sign in to the Company Portal](sign-in-to-the-company-portal.md)
+## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
 ## [Using your Android device](using-your-android-device-with-intune.md)
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -97,11 +97,15 @@
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
+### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
 ### [This device is a little different](device-little-different-jamf.md)
 
+
+
+
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [What happens when you enroll a Windows device with another version of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Enrolling other versions of Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
 ### [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +132,6 @@
 #### [I need to enable my Firewall](you-need-to-enable-defender-firewall-windows.md)
 #### [I need to enable UAC](you-need-to-enable-uac-windows.md)
 #### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
-#### [I need to turn on Windows Defender](turn-on-defender-windows.md) 
+#### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
