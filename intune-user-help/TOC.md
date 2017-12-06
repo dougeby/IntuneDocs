@@ -97,11 +97,11 @@
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
-### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
+### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md )
+
+### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
+### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 ### [This device is a little different](device-little-different-jamf.md)
-
-
-
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
