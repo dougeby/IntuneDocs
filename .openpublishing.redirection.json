@@ -2,6 +2,11 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/turn-off-microsoft-usage-data-collection-apple.md",
+			"redirect_url": "/intune/turn-off-microsoft-usage-data-collection-ios",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/device-compliance.md",
 			"redirect_url": "/intune/device-compliance-get-started",
 			"redirect_document_id": false
