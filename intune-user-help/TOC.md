@@ -98,7 +98,7 @@
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md )
-### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-macos.md)
+### [Submit Company Portal errors](send-errors-data-collect-macos.md)
 
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
