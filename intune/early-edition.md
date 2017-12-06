@@ -4,10 +4,10 @@
 title: Early edition
 description:
 keywords:
-author: brenduns  
-ms.author: brenduns
+author: ErikjeMS  
+ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -145,42 +145,14 @@ The **Built-in** app type will make it easier for you to create and assign Offic
 ### Single Sign-on support for iOS <!-- 1333645 -->  
 You will be able to use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm.
 
-### iOS 11 app inventory API for Mobile Threat Detection <!-- 1391759 -->
-Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Thread Detection (MTD) providers to fetch, such as Lookout for Work. You will be able to collect app inventory from the users of iOS 11+ devices.
-
-**App inventory**  
-Inventories from both corporate-owned iOS 11+ and personally owned devices are sent to your MTD service provider. Data in the app inventory includes:
-
- - App ID
- - App Version
- - App Short Version
- - App Name
- - App Bundle Size
- - App Dynamic Size
- - App is validated or not
- - App is managed or not
-
-### Audit updates <!-- 1412961 -->  
-Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
-
-Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.   
-
 ### Text protocol allowed from managed Apps <!-- 1414050  -->
 Apps managed by the Intune App SDK will be able to send SMS messages.
-
-### Remotely restart iOS device (supervised only) <!-- 1424595 -->
-You will be able to trigger a supervised iOS 10.3+ device to restart using a device action. For more information on using the device restart action, see [Remotely restart devices with Intune](device-restart.md).
-
-> [!Note]  
-> This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
 
 ### Remotely lock managed macOS device with Intune <!-- 1437691 -->
 You will be able to lock a lost macOS device, and set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 
 For more information, see [Remotely lock managed devices with Intune](device-remote-lock.md).
 
-### Windows Defender Advanced Threat Protection reporting frequency settings  <!--- 1455974  --->
-Windows Defender Advanced Threat Protection (WDATP) service allows admins to manage reporting frequency for managed devices. With the new **Expedite telemetry reporting frequency** option, WDATP collects data and assesses risks more frequently. The default for reporting optimizes speed and performance. Increasing the frequency of reporting can be valuable for high-risk devices. This setting can be found in the **Windows Defender ATP** profile in **Device configurations**.
 
 ### Assignment conflict resolution has changed for iOS store apps <!-- 1480316 -->
 End users might experience a change in the availability of iOS store apps. Currently, an app that has been assigned to two groups with a conflict between **Required and Available** and **Not Applicable**, resolves to **Required and Available**. With the change, an app experiencing this conflict resolves to **Not Applicable**.
@@ -222,75 +194,17 @@ In all cases, your intended regulation is preserved. No action is required on yo
 
 These changes will begin rollout with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account.
 
-### Support for multiple Network Device Enrollment Service (NDES) connectors <!-- 1528104 -->
-NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP). With this update, multiple NDES connectors will be supported.
-
-### New SCEP profile details supported <!-- 1559808 -->
-Administrators will be able to set additional settings when creating a SCEP profile on Windows, iOS, macOS, and Android platforms.  Administrators can set IMEI, serial number, or common name including email in the subject name format.
 
 ### Configure an iOS app PIN <!-- 1586774 -->
 Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
 
-### Retain data during a factory reset  <!-- 1588489 -->
-We are adding support for a new capability to Windows Factory reset. Now, admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
- 
-The following data is retained through a factory reset:
-- User accounts associated with the device
-- Machine state (domain join, AADJ)
-- MDM enrollment
-- OEM installed apps (store and Win32 apps)
-- User profile
-- User data outside of user profile
-- User autologon
- 
-The following data is not preserved:
-- User files
-- User installed apps (store and Win32 apps)
-- Non-default device settings 
-
-### App install status report now a bar chart <!-- 1249446 -->  
-The **App install status** report accessible for each app through the **App** list in the **Mobile apps** workload will soon be rendered as a bar chart.
-
 ### Add "Find my iPhone" for personal devices <!--1427287-->
 You will be able to view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
-
-### Group-assigned enrollment restrictions <!-- 747598 -->
-As an Intune administrator, you will be able to create custom Device Type and Device Limit enrollment restrictions for user groups.
- 
-The Intune Azure Portal lets you create up to 25 instances of each restriction type which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
- 
-All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list. 
- 
-This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
-
-### Windows 10 update ring assignments are displayed <!-- 1621837 -->
-When you are **Troubleshooting,** for the user you are viewing, you will be able to see any Windows 10 update rings assignments.  
-
-
 
 <!-- the following are present prior to 1711 -->
 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
 Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
-
-### Troubleshoot enrollment issues  <!--- 746324 --->  
-The Troubleshoot workspace will show user enrollment issues. Details about the issue and suggested remediation steps can help admins and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- the following are present prior to 1710 -->

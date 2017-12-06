@@ -7,7 +7,7 @@ description: Enable Intune mobile device management (MDM) for Windows devices.
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 This topic helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
-As an Intune admin, you can simplify  enrollment in the following ways:
+As an Intune admin, you can simplify enrollment in the following ways:
 - [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
 - [CNAME registration](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Enable bulk enrollment](windows-bulk-enroll.md) (Azure AD Premium and Windows Configuration Designer required)
@@ -84,6 +84,15 @@ Changes to DNS records might take up to 72 hours to propagate. You cannot verify
 In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
 ## Tell users how to enroll Windows devices
-Tell your users how to enroll their Windows devices and what to expect after they're brought into management. For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+Tell your users how to enroll their Windows devices and what to expect after they're brought into management.
+
+> [!NOTE]
+> End users must access the Company Portal website through Microsoft Edge to view Windows apps that you've assigned for specific versions of Windows. Other browsers, including Google Chrome, Mozilla Firefox, and Internet Explorer do not support this type of filtering.
+
+For end user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).
+
+## Next steps
+
+- [Considerations when managing Windows devices using Intune on Azure](/intune-classic/deploy-use/intune-on-azure.md).

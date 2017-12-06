@@ -164,8 +164,6 @@
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Enrollment Status Screen
-        href: windows-enrollment-status.md
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
