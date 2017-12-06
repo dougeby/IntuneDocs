@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/06/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -654,7 +654,10 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747--->
+### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 --> 
+We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade in the classic portal and through the classic Azure AD experience in the [Windows Azure Portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access** or **Intune** > **Conditional Access**.
+
+### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!--1592747-->
 Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
