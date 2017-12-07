@@ -6,7 +6,7 @@ keywords:
 author:
 ms.author: pfetty
 manager: angrobe
-ms.date:12/8/2017
+ms.date: 12/8/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
