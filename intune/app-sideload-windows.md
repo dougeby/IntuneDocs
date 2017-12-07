@@ -2,6 +2,7 @@
 # required metadata
 
 title: Sideload apps for Windows and Windows Phone 
+titlesuffix: "Azure portal"
 description: Learn how to sign line of business apps so you can use Intune to deploy them.
 keywords:
 author: erikre
