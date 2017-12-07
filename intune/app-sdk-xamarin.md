@@ -4,9 +4,9 @@
 title: Microsoft Intune App SDK Xamarin Component 
 description:
 keywords: sdk, Xamarin, intune
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikres
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod:

@@ -4,8 +4,8 @@
 title: Wrap Android apps with App Wrapping Tool 
 description: Use the information in this article to learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: mattbriggs
-ms.author: mabriggs
+author: erikre
+ms.author: erikres
 manager: angrobe
 ms.date: 07/07/2017
 ms.topic: article

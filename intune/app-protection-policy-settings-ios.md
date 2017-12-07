@@ -5,8 +5,8 @@ title: iOS app protection policy settings
 titlesuffix: "Azure portal"
 description: This topic describes the app protection policy settings for iOS devices."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/21/2017
 ms.topic: article
