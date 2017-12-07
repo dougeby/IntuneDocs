@@ -6,8 +6,8 @@ title: What are app protection policies
 titleSuffix: "Azure portal"
 description: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 12/01/2017
 ms.topic: get-started-article
