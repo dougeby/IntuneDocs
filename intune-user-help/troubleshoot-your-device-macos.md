@@ -35,6 +35,5 @@ Sometimes issues can occur with your macOS device that may be able to be fixed t
 - [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 - [Updating your macOS device](you-need-to-update-your-macos-device.md)
 - [Errors you might see if you use Jamf Self Service](device-little-different-jamf.md)
-- [My device is already enrolled](device-already-enrolled-jamf.md)
 - [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
