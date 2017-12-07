@@ -124,7 +124,7 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
 
 ### Device management
 
-## On-premises Exchange connector high availability support  <!-- 676614 -->
+#### On-premises Exchange connector high availability support  <!-- 676614 -->
 You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to aother CAS. This feature ensures that the service is not interrupted.
 
 #### Remotely restart iOS device (supervised only) <!-- 1424595 -->
