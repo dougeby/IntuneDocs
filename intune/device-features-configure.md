@@ -8,7 +8,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ Use the information in this topic to learn the basics about configuring device f
 	- [Configure Intune for iOS device Single Sign-on](sso-ios.md)
 	- [Web content filter settings for iOS](web-content-filter-settings-ios.md)
 
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create Profile** blade, and click **Create**.
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
