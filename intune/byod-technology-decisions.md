@@ -51,7 +51,7 @@ MAM without MDM is very popular for organizations that support BYOD. You can dri
 
 **Compliance** – Some organizations need to comply with policies that require less management capabilities on personal devices. For example, MAM is only able to remove corporate data from the apps, as opposed to MDM which is able to remove all data from the device.
 
-DIAGRAM
+![Image comparing device and app management on mobile devices](./media/byod-app-device-mgmt.png)
 
 Learn more about [device management and app management lifecycles](introduction-device-app-lifecycles.md).
 
@@ -87,4 +87,4 @@ Still, many organizations often have specific risks they’re concerned about.  
 ## Next steps
 Now it’s time to decide if you are going to enable BYOD in your organization by focusing on device management, app management, or a combination of the two. The implementation choice is yours, where you can rest assured that the identity and security features available with Azure AD will be available regardless.
 
-Use the Intune [Planning Guide](planning-guide.md) to map out your next level of planning. 
+Use the Intune [Planning Guide](planning-guide.md) to map out your next level of planning.
