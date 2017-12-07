@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,16 +76,16 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    - **Manage supported devices as Android for Work**. All devices that support Android for Work are enrolled as Android for Work devices. Any Android device that does not support Android for Work is enrolled as a conventional Android device.
    - **Manage supported devices for users only in these user groups as Android for Work**. You can target Android for Work management to a limited set of users. Only members of the selected groups who enroll a device that supports Android for Work are enrolled as Android for Work devices. All others are enrolled as Android devices. This is useful during Android for Work pilots.
 
-## Approve the Intune Company Portal app in the managed Google Play store
-You need to "Approve" the Intune Company Portal app in the managed Google Play store to ensure that it continues to receive automatic app updates. If you don't approve it, the Company Portal will eventually become out of date and may not get important bug fixes or new features when Microsoft releases them.
+## Approve the Company Portal app in the managed Google Play store
+You need to approve the Company Portal app for Android in the managed Google Play store to ensure that it receives automatic app updates. If you don't approve it, the Company Portal will eventually become out of date and may not receive important bug fixes or new features when Microsoft releases them.
 
-To Approve the Intune Company Portal, follow these steps:
+Follow these steps to approve the Intune Company Portal:
 
-1.  Browse to the Intune Company Portal in the managed Google Play store by clicking this link: [Intune Company Portal app](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)
-2.  Sign into the managed Google Play store with the same Google account that you used to configure the Android for Work binding.
-3.  Click "Approve."  This will open a new dialog.
-4.  Click "Approve" again after reviewing the permissions.  These permissions are necessary to allow Intune Company Portal to manage the work profile on the device.
-5.  Select "Keep approved when app requests new permissions," and then click "Save."
+1.  Download the Company Portal app from the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+2.  Sign into the managed Google Play store with the same Google account that you used to configure the binding for Android for Work.
+3.  Click **Approve.**  This will open a new dialog.
+4.  Review the permissions in this dialog, then click **Approve**. You need these to allow these permissions in order to allow the Company Portal app to manage the work profile on the device.
+5.  Select **Keep approved when app requests new permissions**, then click **Save.**
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:
