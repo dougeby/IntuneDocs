@@ -2,6 +2,7 @@
 # required metadata
 
 title: Overview of the app lifecycle 
+titlesuffix: "Azure portal"
 description: Learn about the lifecycle of Intune managed apps, from adding them, to their eventual retirement.
 keywords:
 author: erikre
