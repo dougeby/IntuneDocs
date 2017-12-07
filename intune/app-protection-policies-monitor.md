@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor app protection policiestitleSuffix: "Azure portal"
+title: How to monitor app protection policies 
+titleSuffix: "Azure portal"
 description: See how many users have the policy, and drill down to find more details."
 keywords:
 author: erikre
