@@ -6,7 +6,7 @@ description:
 keywords: sdk, Xamarin, intune
 author: erikre
 manager: angrobe
-ms.author: erikres
+ms.author: erikre
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod:
