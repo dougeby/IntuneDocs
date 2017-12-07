@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Validate your app protection policiestitleSuffix: "Azure portal"
+title: Validate your app protection policies 
+titleSuffix: "Azure portal"
 description: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
 keywords:
 author: erikre
