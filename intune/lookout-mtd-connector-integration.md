@@ -40,7 +40,7 @@ The following steps are required to set up Lookout Mobile Threat Defense subscri
 | 5 | [Configure error report email recipient information](#configure-error-report-email-recipient-information) |
 | 6 | [Configure enrollment settings](#configure-enrollment-settings) |
 | 7 | [Configure email notifications](#configure-email-notifications) |
-| 8 | [onfigure threat classification](#configure-threat-classification) |
+| 8 | [Configure threat classification](#configure-threat-classification) |
 | 9 | [Watching enrollment](#watching-enrollment) |
 
 > [!IMPORTANT]
@@ -78,7 +78,7 @@ Use the following steps to gather the information you need to give to the Lookou
 2.  The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
 
 	![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
-	> [NOTE] 
+	> [!NOTE] 
 	> See [troubleshooting Lookout integration](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
 
 3.  In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
@@ -92,7 +92,7 @@ Use the following steps to gather the information you need to give to the Lookou
 ## Configure enrollment groups
 1. As a best practice, create an Azure AD security group in the [Azure AD management portal](https://manage.windowsazure.com) containing a small number of users to test Lookout integration.
 
-	> [NOTE] 
+	> [!NOTE] 
 	> All the Lookout-supported, Intune-enrolled devices of users in an enrollment group in Azure AD that are identified and supported are enrolled and eligible for activation in Lookout MTD console.
 
 2. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Enrollment Management** to define a set of users whose devices should be enrolled with Lookout. Add the Azure AD security group **Display Name** for enrollment.
