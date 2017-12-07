@@ -5,8 +5,8 @@ title: Android app protection policy settings
 titlesuffix: "Azure portal"
 description: This topic describes the app protection policy settings for Android devices."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/6/2017
 ms.topic: article
