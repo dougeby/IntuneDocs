@@ -124,6 +124,9 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
 
 ### Device management
 
+## On-premises Exchange connector high availability support  <!-- 676614 -->
+You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to aother CAS. This feature ensures that the service is not interrupted.
+
 #### Remotely restart iOS device (supervised only) <!-- 1424595 -->
 
 You can now trigger a supervised iOS 10.3+ device to restart using a device action. For more information on using the device restart action, see [Remotely restart devices with Intune](device-restart.md).
