@@ -6,7 +6,7 @@ description: Quickly enable your mobile app for mobile application management (M
 keywords:
 author: erikre
 manager: angrobe
-ms.author: erikres
+ms.author: erikre
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod:
