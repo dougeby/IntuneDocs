@@ -24,13 +24,30 @@ ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 #ms.custom:
 
 ---
-Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions or remote tasks generate audit events that you can review.   
-Auditing records activity that generates a change in Intune.  Create, Update (edit), Delete, Assign actions or remote tasks all generate audit events.  They are displayed under the MONITOR group – as the menu “Audit Logs”.  You can view an audit event detail in production tenants now, but if you need a sample, let me know and I can get one for you.  
+Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions, or remote tasks, generate audit events that you can review. You can review audit logs for most Intune workloads. 
 
-By default, the UI displays the last 30 days of audit events.  Each workload has a menu item that pre-filters out the category of audit events that are associated with that blade.  A separate filter option allows the ability to change to different categories, and event action details within that category. Search is allowed by UPN (e.g. user who did the action).  A date range filter allows 24 hours, 7 days or 30 day options.  
+## Review audit logs for Intune workloads
+Review audit logs in the Monitoring group for each Intune workload.  
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, choose the workload for which you want to review audit logs.
+4. In the **Monitoring** group for the workload, choose **Audit logs**.
+
+## Filter audit events
+Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days or 30 day options. By default, the last 30 days of audit events are displayed.
+
+## Review audit events
+Each audit log contains the following sections: 
+
+- Activity
+- Activity Status
+- Intitiated by (Actor)
+- Target
+
+
+## Use Graph API to retrieve up to 1 year of audit events
+There is a graph API also to retrieve up to 1 year’s audit events – https://graph.microsoft.com/beta/managedDevices/auditEvents
 
 Each audit event has an Actor which contains the UPN of the user performing the activity, and the application they used to make the change.  The audit event lists the changed properties and before/after values of those properties.
 
-There is a graph API also to retrieve up to 1 year’s audit events – https://graph.microsoft.com/beta/managedDevices/auditEvents
 
-Let me know if you need a demo, or help with displaying events.
