@@ -177,7 +177,10 @@ Windows Defender Advanced Threat Protection (WDATP) service allows admins to man
 #### Audit updates <!-- 1412961 -->  
 Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
 
-Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.   
+Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload. 
+
+### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
+You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
 
 
 ## Week of November 20, 2017
