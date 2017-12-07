@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: RBAC with IntunetitleSuffix: "Azure portal"
+title: RBAC with Intune
+titleSuffix: "Azure portal"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
 author: andredm7
@@ -41,7 +42,7 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
-- **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, this role provides the ability to manage users, devices, and create and manage groups.
+- **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, other than any superseding Azure restrictions, this role provides the ability to manage users, devices, and create and manage Intune groups.
 
 - **Conditional Access Administrator:** Users with this role only have permissions to view, create, modify, and delete conditional access policies.
 
