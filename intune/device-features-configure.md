@@ -46,7 +46,7 @@ Use the information in this topic to learn the basics about configuring device f
 5. From the **Platform** drop-down list, select the device platform to which you want to apply the settings. Currently, you can choose one of the following platforms for device features:
 	- **iOS**
 	- **macOS**
-6. From the **Profile type** type drop-down list, choose **Device features**. 
+6. From the **Profile type** drop-down list, choose **Device features**. 
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
 	- [AirPrint settings for iOS and MacOS](air-print-settings-ios-macos.md)
  	- [AirPlay settings for iOS](airplay-settings-ios.md)
@@ -58,7 +58,7 @@ Use the information in this topic to learn the basics about configuring device f
 
 8. When you're done, go back to the **Create Profile** blade, and click **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
