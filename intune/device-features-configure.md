@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Configure Intune device feature settingstitleSuffix: "Azure portal"
+title: Configure Intune device feature settings
+titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure features on devices you manage."
 keywords:
 author: lleonard-msft
@@ -52,6 +53,7 @@ Use the information in this topic to learn the basics about configuring device f
 	- [Home screen layout settings for iOS](home-screen-settings-ios.md)
 	- [App notification settings for iOS](app-notification-settings-ios.md)
 	- [Shared device configuration settings for iOS](shared-device-settings-ios.md)
+	- [Configure Intune for iOS device Single Sign-on](sso-ios.md)
 	- [Web content filter settings for iOS](web-content-filter-settings-ios.md)
 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
