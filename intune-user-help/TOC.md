@@ -98,11 +98,11 @@
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
-### [Submit Company Portal errors](send-errors-data-collect-macos.md)
 
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
+### [Submit Company Portal errors](send-errors-data-collect-macos.md)
 #### [This device is a little different](device-little-different-jamf.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
