@@ -136,7 +136,7 @@ You can now trigger a supervised iOS 10.3+ device to restart using a device acti
 
 #### Single Sign-on support for iOS <!-- 1333645 -->  
 
-You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. 
+You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](sso-ios.md).
 
 
 #### Remotely lock managed macOS device with Intune <!-- 1437691 -->
