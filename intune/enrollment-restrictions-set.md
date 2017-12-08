@@ -33,7 +33,10 @@ ms.custom: intune-azure
 As an Intune administrator, you can create and manage enrollment restrictions which define the number and types of devices that can enroll into management with Intune. You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
 
 >[!NOTE]
->Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users. 
+>Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
+
+>[!NOTE]
+>The group-assigned enrollment restriction and priority functionality mentioned below are in the process of being rolled out across the Intune customer base. Until this roll out is complete, you might not have access to the group and priority features. 
 
 The specific enrollment restrictions that you can create include:
 

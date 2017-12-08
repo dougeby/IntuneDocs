@@ -46,6 +46,16 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+
+
+## Week of December 4, 2017
+
+### Monitor and troubleshoot
+
+#### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
+You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
+
+
 ## Week of November 27, 2017
 
 ### Device enrollment
@@ -138,6 +148,9 @@ You can now trigger a supervised iOS 10.3+ device to restart using a device acti
 
 You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](sso-ios.md).
 
+#### Add "Find my iPhone" for personal devices <!--1427287-->
+You can now view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
+
 
 #### Remotely lock managed macOS device with Intune <!-- 1437691 -->
 
@@ -184,8 +197,7 @@ Intune auditing provides a record of change operations related to Intune.  All c
 
 Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload. 
 
-### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
-You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
+
 
 
 ## Week of November 20, 2017
