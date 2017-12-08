@@ -2,6 +2,11 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/byod-enable.md",
+			"redirect_url": "/intune/byod-technology-decisions",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/device-compliance.md",
 			"redirect_url": "/intune/device-compliance-get-started",
 			"redirect_document_id": false
