@@ -134,6 +134,11 @@ You can now trigger a supervised iOS 10.3+ device to restart using a device acti
 > [!Note]
 > This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
 
+#### Single Sign-on support for iOS <!-- 1333645 -->  
+
+You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. 
+
+
 #### Remotely lock managed macOS device with Intune <!-- 1437691 -->
 
 You can lock a lost macOS device, and set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
