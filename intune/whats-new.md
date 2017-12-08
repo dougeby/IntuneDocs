@@ -52,7 +52,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Monitor and troubleshoot
 
-### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
+#### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
 You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
 
 
