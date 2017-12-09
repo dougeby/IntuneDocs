@@ -70,7 +70,7 @@
 #### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Manually sync your device](sync-your-device-manually-ios.md)
 
-### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
+#### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 #### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 #### [Send errors to your company](send-errors-to-your-it-admin-ios.md)
 #### [Send errors to Microsoft](send-logs-to-microsoft-ios.md)
@@ -102,7 +102,8 @@
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
-### [Submit Company Portal errors](send-errors-data-collect-macos.md)
+#### [Submit Company Portal errors](send-errors-macos.md)
+#### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-macos.md)
 #### [This device is a little different](device-little-different-jamf.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
