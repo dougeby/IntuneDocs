@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -105,22 +105,10 @@ You need a root or intermediate CA certificate on each device for authentication
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Navigate to **Intune**, **Device configuration**, **Certification Authority**, and click **Download the certificate connector**.
-   * Save the download to a location where you can access it on the server where you will install it.
-3. Log in to the server where you will install the Microsoft Intune Certificate Connector.
-4. Run the installer and accept the default location. It installs the connector to C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
-
-      a. On the Installer Options page chose **PFX Distribution** and click **Next**.
-
-   b. Click **Install** and wait for installation to complete.
-
-   c. On the completion page, check the box labeled **Launch Intune Connector** and click **Finish**.
-
-5. The NDES Connector window should now open to the **Enrollment** tab. To enable the connection to Intune, you must click **Sign In** and provide an account with administrative permissions.
-6. On the **Advanced** tab, you can leave the radio button **Use this computer's SYSTEM account (default)** selected.
-7. Click **Apply** then **Close**.
-8. Now go back on the Azure portal. Under **Intune**, **Device configuration**, **Certification Authority**, you should see a green check mark and the word **Active** under **Connection status** after a few minutes. This confirmation lets you know that your connector server can communicate with Intune.
+1. In the Azure portal, select **More Services** > **Monitoring + Management** > **Intune**.
+2. On the **Intune** blade, select **Device Configuration**. 
+3. On the **Device Configuration** blade, select **Certification Authority**. 
+4. Click **Add** and select **Download Connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
 
 ## Create a device configuration profile
 
@@ -173,4 +161,4 @@ You need a root or intermediate CA certificate on each device for authentication
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Download the certificate connector from the Azure portal"
+[ConnectorDownload]: ./media/certificationauthority.png "Download the certificate connector from the Azure portal"
