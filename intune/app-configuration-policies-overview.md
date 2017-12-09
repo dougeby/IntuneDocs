@@ -5,8 +5,8 @@ title: App configuration policies for Intune | Microsoft Docs
 titlesuffix: "Azure portal"
 description: Learn how to use app configuration policies for Intune.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article

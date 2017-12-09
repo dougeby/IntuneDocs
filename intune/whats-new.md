@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/06/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,16 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+
+
+## Week of December 4, 2017
+
+### Monitor and troubleshoot
+
+#### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
+You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
+
 
 ## Week of November 27, 2017
 
@@ -124,12 +134,23 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
 
 ### Device management
 
+#### On-premises Exchange connector high availability support  <!-- 676614 -->
+You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to aother CAS. This feature ensures that the service is not interrupted.
+
 #### Remotely restart iOS device (supervised only) <!-- 1424595 -->
 
 You can now trigger a supervised iOS 10.3+ device to restart using a device action. For more information on using the device restart action, see [Remotely restart devices with Intune](device-restart.md).
 
 > [!Note]
 > This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
+
+#### Single Sign-on support for iOS <!-- 1333645 -->  
+
+You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](sso-ios.md).
+
+#### Add "Find my iPhone" for personal devices <!--1427287-->
+You can now view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
+
 
 #### Remotely lock managed macOS device with Intune <!-- 1437691 -->
 
@@ -174,7 +195,9 @@ Windows Defender Advanced Threat Protection (WDATP) service allows admins to man
 #### Audit updates <!-- 1412961 -->  
 Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
 
-Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.   
+Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload. 
+
+
 
 
 ## Week of November 20, 2017
@@ -654,7 +677,10 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747--->
+### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 --> 
+We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure Portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
+
+### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!--1592747-->
 Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->

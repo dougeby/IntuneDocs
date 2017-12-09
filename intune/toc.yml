@@ -89,8 +89,8 @@
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
       href: data-leak-prevention.md
-    - name: BYOD
-      href: byod-enable.md
+    - name: Compare MDM and MAM
+      href: byod-technology-decisions.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -284,6 +284,8 @@
         href: app-notification-settings-ios.md
       - name: Shared devices for iOS
         href: shared-device-settings-ios.md
+      - name: Configure Intune for iOS device single sign-on
+        href: sso-ios.md
       - name: Web filter settings for iOS
         href: web-content-filter-settings-ios.md
     - name: Configure device restrictions

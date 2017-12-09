@@ -5,6 +5,11 @@
 			"source_path": "intune/turn-off-microsoft-usage-data-collection-apple.md",
 			"redirect_url": "/intune/turn-off-microsoft-usage-data-collection-ios",
 			"redirect_document_id": false
+    },
+    {
+			"source_path": "intune/byod-enable.md",
+			"redirect_url": "/intune/byod-technology-decisions",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune/device-compliance.md",

@@ -5,8 +5,8 @@ title: Add app configuration policies for managed apps without device enrollment
 titlesuffix: "Azure portal"
 description: Learn how to use app configuration policies for managed apps without device enrollment.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
