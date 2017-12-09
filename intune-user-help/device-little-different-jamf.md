@@ -34,12 +34,8 @@ Your company uses a combination of tools to make sure that your macOS device can
 
 If you are on the macOS device with the compliance issues that is managed by Jamf, click the **Resolve** button to launch **Self Service**.
 
-## What to do if you see "AccountNotOnboarded"
+__What to do if you see "AccountNotOnboarded" or "Device is already enrolled"__
 
 If you've opened the Company Portal app and a message appears that says, "AccountNotOnboarded," you need to quit the Company Portal app, and go to **Applications** > **Self Service**. Your company will have a device registration policy that you need to install. Click on the policy to install it, then open the Company Portal again.
-
-## What to do if you see "Device is already enrolled"
-
-If you've opened the Company Portal app and a message appears that says, "Device is already enrolled," you need to
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
