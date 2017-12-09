@@ -3,10 +3,10 @@ title: Configure and manage SCEP certificates with Intune
 titlesuffix: "Azure portal"
 description: Learn how to configure your infrastructure, then create and assign Intune SCEP certificate profiles."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -91,7 +91,7 @@ Before you can configure certificate profiles you must complete the following ta
 Create a domain user account to use as the NDES service account. You specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
-In this task you will:
+In this task you:
 
 -   Configure a certificate template for NDES
 
@@ -156,7 +156,7 @@ To configure the CA to allow the requester to specify the validity period:
 
 
 #### Step 3 - Configure prerequisites on the NDES server
-In this task you will:
+In this task you:
 
 -   Add NDES to a Windows Server and configure IIS to support NDES
 
@@ -167,7 +167,7 @@ In this task you will:
 
 
 
-   1.  On the server that will hosts NDES, you must log on as an **Enterprise Administrator**, and then use the [Add Roles and Features Wizard](https://technet.microsoft.com/library/hh831809.aspx) to install NDES:
+   1.  On the server that hosts NDES, log on as an **Enterprise Administrator**, and then use the [Add Roles and Features Wizard](https://technet.microsoft.com/library/hh831809.aspx) to install NDES:
 
     1.  In the Wizard, select **Active Directory Certificate Services** to gain access to the AD CS Role Services. Select the **Network Device Enrollment Service**, uncheck **Certification Authority**, and then complete the wizard.
 
@@ -197,7 +197,7 @@ In this task you will:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### Step 4 - Configure NDES for use with Intune
-In this task you will:
+In this task you:
 
 -   Configure NDES for use with the issuing CA
 
@@ -242,7 +242,7 @@ In this task you will:
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (decimal)|
 
 
-4. In IIS manager, choose **Default Web Site** -> **Request Filtering** -> **Edit Feature Setting**, and change the **Maximum URL length** and **Maximum query string** to *65534*, as shown.
+4. In IIS manager, select **Default Web Site** -> **Request Filtering** -> **Edit Feature Setting**, and change the **Maximum URL length** and **Maximum query string** to *65534*, as shown.
 
     ![IIS max URL and query length](.\media\SCEP_IIS_max_URL.png)
 
@@ -258,7 +258,7 @@ In this task you will:
 1.  On your NDES Server, request and install a **server authentication** certificate from your internal CA or public CA. You then bind this SSL certificate in IIS.
 
     > [!TIP]
-    > After you bind the SSL certificate in IIS, you will also install a client authentication certificate. This certificate can be issued by any CA that is trusted by the NDES Server. Although it is not a best practice, you can use the same certificate for both server and client authentication as long as the certificate has both Enhance Key Usages (EKUs). Review the following steps for information about these authentication certificates.
+    > After you bind the SSL certificate in IIS, install a client authentication certificate. This certificate can be issued by any CA that is trusted by the NDES Server. Although it is not a best practice, you can use the same certificate for both server and client authentication as long as the certificate has both Enhance Key Usages (EKUs). Review the following steps for information about these authentication certificates.
 
     1.  After you obtain the server authentication certificate, open **IIS Manager**, select the **Default Web Site** in the **Connections** pane, and then click **Bindings** in the **Actions** pane.
 
@@ -300,32 +300,19 @@ In this task you will:
 4. Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
 #### Step 5 - Enable, install, and configure the Intune certificate connector
-In this task you will:
+In this task you:
 
 - Enable support for NDES in Intune.
 
-- Download, install, and configure the Certificate Connector on the NDES Server.
-
-   > [!NOTE]
-   > To support high availability, you can install multiple Certificate Connector instances.
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### To enable support for the certificate connector
-
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-4. On the **Device Configuration** blade, choose **Certification Authority**.
-5.  Select **Enable Certificate Connector**.
+- Download, install, and configure the Certificate Connector on a server in your environment. To support high availability, you can install multiple Certificate Connectors on different servers.
 
 ##### To download, install and configure the certificate connector
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-4. On the **Device Configuration** blade, choose **Certification Authority**.
-5. Choose **Download Certificate Connector**.
+2. Select **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, select **Device Configuration**.
+4. On the **Device Configuration** blade, select **Certification Authority**.
+5. Click **Add** and select **Download Connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
 6.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on a Windows Server 2012 R2 server. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
@@ -361,17 +348,17 @@ To validate that the service is running, open a browser and enter the following 
 ## How to create a SCEP certificate profile
 
 1. In the Azure portal, select the **Configure devices** workload.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
+2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
+3. On the profiles blade, select **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the SCEP certificate profile.
-5. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can choose one of the following platforms for device restriction settings:
+5. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can select one of the following platforms for device restriction settings:
 	- **Android**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
 	- **Windows 8.1 and later**
 	- **Windows 10 and later**
-6. From the **Profile** type drop-down list, choose **SCEP certificate**.
+6. From the **Profile** type drop-down list, select **SCEP certificate**.
 7. On the **SCEP Certificate** blade, configure the following settings:
 	- **Certificate validity period** - If you have run the **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** command on the issuing CA, which allows a custom validity period, you can specify the amount of remaining time before the certificate expires.<br>You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
 	- **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10) - Specify where the key to the certificate is stored. Choose from one of the following values:
@@ -395,7 +382,7 @@ To validate that the service is running, open a browser and enter the following 
 	- **Key size (bits)** - Select the number of bits that is contained in the key. 
 	- **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10) - Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support. 
 	- **Root Certificate** - Choose a root CA certificate profile that you have previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile. 
-	- **Extended key usage** - Choose **Add** to add values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required. 
+	- **Extended key usage** - Select **Add** to add values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required. 
 	- **Enrollment Settings**
 		- **Renewal threshold (%)** - Specify the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
 		- **SCEP Server URLs** - Specify one or more URLs for the NDES Servers that issues certificates via SCEP. 
