@@ -306,7 +306,7 @@ In this task you:
 - Download, install, and configure the Certificate Connector on a server in your environment. To support high availability, you can install multiple Certificate Connectors on different servers.
 
 ##### To download, install, and configure the certificate connector
-![ConnectorDownload](./media/certificationauthority.png)
+![ConnectorDownload](./media/certificationauthority.png)  
 
 1. Sign into the Azure portal. 
 2. Select **More Services** > **Monitoring + Management** > **Intune**.
