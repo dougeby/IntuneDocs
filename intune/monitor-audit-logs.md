@@ -26,6 +26,13 @@ ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 ---
 Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions, or remote tasks, generate audit events that you can review. You can review audit logs for most Intune workloads. 
 
+## Who can access the data?
+Users with the following permissions can review audit logs:
+- Global Admins
+- Intune Service admins
+- Users with audit/read permissions
+
+
 ## Review audit logs for Intune workloads
 Review audit logs in the Monitoring group for each Intune workload.  
 1. Sign into the [Azure portal](https://portal.azure.com).
@@ -42,10 +49,7 @@ Each audit log contains the following sections:
 - 
 
 
-## Who can access the data?
-* Users in the Security Admin or Security Reader role
-* Global Admins
-* Individual users (non-admins) can see their own activities
+
 
 
 ## Audit logs
