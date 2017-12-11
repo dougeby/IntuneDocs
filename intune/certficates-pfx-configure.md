@@ -109,6 +109,16 @@ You need a root or intermediate CA certificate on each device for authentication
 2. On the **Intune** blade, select **Device Configuration**. 
 3. On the **Device Configuration** blade, select **Certification Authority**. 
 4. Click **Add** and select **Download Connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
+5.	Log in to the server where you will install the Microsoft Intune Certificate Connector.
+6.	Run the installer and accept the default location. It installs the connector to C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
+    1. On the Installer Options page chose **PFX Distribution** and click **Next**.
+    2. Click **Install** and wait for installation to complete.
+    3. On the Completion page, check the box labeled **Launch Intune Connector** and click **Finish**.
+7.	The NDES Connector window should now open to the **Enrollment** tab. To enable the connection to Intune, click **Sign In** and provide an account with administrative permissions.
+8.	On the **Advanced** tab, you can leave the radio button **Use this computer's SYSTEM account (default)** selected.
+9.	Click **Apply** then **Close**.
+10.	Now go back on the Azure portal. After a few minutes, you should see a green check mark and the word **Active** under **Connection status** in **Intune** > **Device Configuration** > **Certification Authority**. This confirmation lets you know that your connector server can communicate with Intune.
+
 
 ## Create a device configuration profile
 
@@ -161,4 +171,4 @@ You need a root or intermediate CA certificate on each device for authentication
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificationauthority.png "Download the certificate connector from the Azure portal"
+[ConnectorDownload]: ./media/certificates-download-connector.png "Download the certificate connector from the Azure portal"  
