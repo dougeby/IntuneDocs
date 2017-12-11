@@ -5,8 +5,8 @@ title: Intune VPN settings for Windows 10 devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/20/2017
 ms.topic: article

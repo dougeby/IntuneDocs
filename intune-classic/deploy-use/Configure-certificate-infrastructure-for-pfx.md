@@ -2,8 +2,8 @@
 title: Configure certificate infrastructure for PFX 
 description: Create and deploy .PFX certificate profiles.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article

@@ -5,8 +5,8 @@ title: Intune device restriction settings for Android
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 09/07/2017
 ms.topic: article
