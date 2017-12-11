@@ -4,8 +4,8 @@
 title: Policies to protect Windows PCs
 description: Use these policies to help you ensure the security of Windows PCs when they are managed by the Intune client software.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
