@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for iOS devicestitleSuffix: "Azure portal"
+title: Intune Wi-Fi settings for iOS devices
+titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to configure Wi-Fi connections on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

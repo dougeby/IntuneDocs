@@ -2,8 +2,8 @@
 title: Configure certificate infrastructure for SCEP 
 description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/15/2016
 ms.topic: article
