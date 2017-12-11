@@ -171,4 +171,4 @@ You need a root or intermediate CA certificate on each device for authentication
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificationauthority.png "Download the certificate connector from the Azure portal"  
+[ConnectorDownload]: ./media/certificates-download-connector.png "Download the certificate connector from the Azure portal"  
