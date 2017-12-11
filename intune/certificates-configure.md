@@ -5,8 +5,8 @@ title: How to configure certificates with Intune
 titlesuffix: "Azure portal"
 description: Learn how to use Intune to create and assign certificates that help you secure Wi-Fi, VPN, and other connections."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/28/2017
 ms.topic: article
