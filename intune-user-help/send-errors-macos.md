@@ -47,4 +47,4 @@ Sometimes the Company Portal app may act unexpectedly. These issues are ones tha
 
 If you need to send diagnostic reports to the Microsoft team that develops the Company Portal app, you'll need to provide some information to try and diagnose the root cause. Instead of sending it to your company support team, use <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">this email template</a> to send it to Microsoft.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
