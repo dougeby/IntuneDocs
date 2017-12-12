@@ -38,4 +38,4 @@ __What to do if you see "AccountNotOnboarded" or "Device is already enrolled"__
 
 If you've opened the Company Portal app and a message appears that says, "AccountNotOnboarded," you need to quit the Company Portal app, and go to **Applications** > **Self Service**. Your company will have a device registration policy that you need to install. Click on the policy to install it, then open the Company Portal again.
 
-Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

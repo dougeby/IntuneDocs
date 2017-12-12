@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Fix common issues with your macOS device
 
-Sometimes issues can occur with your macOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
+Sometimes issues can occur with your macOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 - [Updating your macOS device](you-need-to-update-your-macos-device.md)

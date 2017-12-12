@@ -31,4 +31,4 @@ ms.custom: intune-enduser
 
 The serial number for your device uniquely identifies it, and can help your company support with certain tasks, like replacing your device with a new one. To locate the serial number, go to the **Apple menu** > **About This Mac**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

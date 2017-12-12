@@ -45,7 +45,7 @@ Certain Android devices require you to create a startup PIN to make sure that yo
 
 ### Downgrade your version of Android
 
-If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com) for contact information.
+If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information.
 
 ### Encrypt the entire device
 

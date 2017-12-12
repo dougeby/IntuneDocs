@@ -40,4 +40,4 @@ If you get an error while you’re using the Company Portal app on your Windows 
 
 You may also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md) to give your company support more help in trying to troubleshoot any issues they may find.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

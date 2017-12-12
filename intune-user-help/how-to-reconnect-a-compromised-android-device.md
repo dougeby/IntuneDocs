@@ -30,4 +30,4 @@ ms.custom: intune-enduser
 
 Your company support detected that you are using a rooted device. "Rooted" means that the device has been changed to enable access to the operating system, which can compromise security and might be a threat to your company resources. When this happens, your device can no longer access company resources.
 
-Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

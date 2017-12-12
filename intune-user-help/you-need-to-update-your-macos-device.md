@@ -33,4 +33,4 @@ ms.custom: intune-enduser
 
 Update your macOS device by clicking **App Store** > **Updates**. Select the newest macOS update available, then click the **Update** button.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

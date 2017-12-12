@@ -99,7 +99,7 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
     The key to remember is that these are actions that are taken in the name of security. Your company support isn't trying to violate your privacy or erase your information for no reason, but wants to make sure that corporate data is kept safe.
 
-    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://portal.manage.microsoft.com) if you have questions specific to your individual organization's use.
+    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) if you have questions specific to your individual organization's use.
 
 12.  Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
 
@@ -136,4 +136,4 @@ Before you try to install company apps, go to **Settings** &gt; **Security**, an
 
 If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your company support](send-enrollment-errors-to-your-it-admin-android.md).
 
-Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

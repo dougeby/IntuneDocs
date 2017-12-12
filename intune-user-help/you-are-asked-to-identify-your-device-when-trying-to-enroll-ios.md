@@ -35,4 +35,4 @@ If you are trying to enroll your iOS device in Intune, and you see a screen that
 2. Tap **continue.**
 3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
