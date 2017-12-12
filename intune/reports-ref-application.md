@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: Application | Microsoft Docs 
+title: Application | Microsoft Docs
 description: Reference topic for the Application category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ The **AppTypes** entity lists the installation source of an app.
 | AppTypeKey |Surrogate key for the key |
 | AppTypeName |App type |
 
-## Example
+### Example
 
 | AppTypeID  | Name | Description |
 |---------|------------|--------|
@@ -92,9 +92,9 @@ The **VppProgramTypes** entity lists possible VPP program types for an app.
 |---------|------------|
 | VppProgramTypeID | ID for the type. |
 | VppProgramTypeKey | Surrogate key for the key. |
-| VppProgramTypeName | Vpp Program type. |
+| VppProgramTypeName | VPP Program type. |
 
-## Example
+### Example
 
 | VppProgramID  | Name | Description |
 |---------|------------|--------|
@@ -115,3 +115,26 @@ The **ApplicationInventory** entity lists the applications found on the device a
 | ApplicationName | The application name. |
 | ApplicationVersion | Version of the application. |
 | BundleSize | The size of the app in bytes. |
+
+## MobileAppInstallState
+
+The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
+
+| Property | Description |
+|---|---|
+| AppInstallStateKey | The unique ID of the app install state for your account. |
+| AppInstallState | Enum value of the app install state. |
+| AppInstallStateName | Name of the app install state. |
+
+## MobileAppDeviceUserInstallStatus
+
+The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
+
+| Property | Description |
+|---|---|
+| DateKey | Key of the date when the app install status was recorded. |
+| AppKey | Key of the mobile app used to identify an instance of AppRevision. |
+| DeviceKey | Key of a targeted device used to identify an instance of Device. |
+| UserKey | Key of a targeted user used to identify an instance of User. |
+|AppInstallStateKey | Key of the app install state used to identify an instance of MobileAppInstallState. |
+| ErrorCode | The error code returned by the app installer, the mobile platform or the service pertaining to the installation of the app. |
