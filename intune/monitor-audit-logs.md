@@ -65,6 +65,6 @@ By clicking an item in the list view, you get all available details about it.
 ## Filter audit events
 Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days, or 30 day options. By default, the last 30 days of audit events are displayed.
 
-## Use Graph API to retrieve up to 1 year of audit events
-For details about how to use the graph API to retrieve up to 1 year or audit events,
+## Use Graph API to retrieve audit events
+For details about how to use the graph API to retrieve up to 1 year or audit events, see 
 [List auditEvents](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).
