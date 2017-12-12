@@ -550,6 +550,8 @@
   items:
   - name: Help users troubleshoot problems
     href: help-desk-operators.md
+  - name: Audit logs for Intune activities
+    href: monitor-audit-logs.md  
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
     items:
