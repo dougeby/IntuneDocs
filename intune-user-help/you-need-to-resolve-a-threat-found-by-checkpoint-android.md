@@ -38,7 +38,7 @@ To fix the issue, open the SandBlast Mobile Protect app, and follow the instruct
 
 If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, a message from SandBlast Mobile Protect alerts you to take action.
 
-Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com), where you can follow instructions on how to fix the issue.
+Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), where you can follow instructions on how to fix the issue.
 
 ## Example of an app that SandBlast Mobile Protect sees as a threat
 
@@ -46,4 +46,4 @@ If you have installed an app that SandBlast Mobile Protect sees as a threat, the
 
 When this happens, uninstall the app to regain access to your company email and data right away. If do not uninstall the app, you will lose access to your email and data until you do uninstall the app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

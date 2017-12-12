@@ -36,4 +36,4 @@ If you have a Samsung KNOX device, you can do a "selective wipe" by choosing the
 - Email, VPN, and Wi-Fi.
 - The ability of your company support to enforce certain settings.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
