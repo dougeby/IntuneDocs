@@ -31,7 +31,7 @@ Audit logs provide you with a record of activities that generate a change in Mic
 Users with the following permissions can review audit logs:
 - Global Administrator
 - Intune Service Administrator
-- Users in a role with **Audit data** - **Read** permissions
+- Administrators assigned to an Intune role with **Audit data** - **Read** permissions
 
 ## Audit logs for Intune workloads
 You can review audit logs in the Monitoring group for each Intune workload.  
