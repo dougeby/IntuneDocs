@@ -43,7 +43,7 @@ You can review audit logs in the Monitoring group for each Intune workload.
 ## Review audit events
 ![Audit logs](./media/monitor-audit-logs.png "Audit logs")
 
-An audit log has a default list view that shows the following:    
+An audit log has a default list view that shows the following items:    
 
 - date and time of the occurrence
 - Initiated by (Actor)
@@ -57,14 +57,14 @@ By clicking an item in the list view, you get all available details about it.
 ![Audit logs](./media/monitor-audit-log-detail.png "Audit logs")
 
 > [!Note]    
-> The **Initiated by (actor)** section in the audit log details provides information about who performed the activity and from where it was performed. For example, if you perform the activiy in Intune in the Azure portal, **Application** always lists **Microsoft Intune portal extension** and the **Application ID** always uses the same GUID. 
+> The **Initiated by (actor)** section in the audit log details provides information about who performed the activity and from where it was performed. For example, if you perform the activity in Intune in the Azure portal, **Application** always lists **Microsoft Intune portal extension** and the **Application ID** always uses the same GUID. 
 >    
 > The **Target(s)** section can list multiple targets and the properties that were changed.  
 
 
 ## Filter audit events
-Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days, or 30 day options. By default, the last 30 days of audit events are displayed.
+Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days, or 30-day options. By default, the last 30 days of audit events are displayed.
 
 ## Use Graph API to retrieve audit events
-For details about how to use the graph API to retrieve up to 1 year or audit events, see 
+For details about how to use the graph API to retrieve up to one year of audit events, see 
 [List auditEvents](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).
