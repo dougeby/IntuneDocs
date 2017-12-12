@@ -7,7 +7,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -398,6 +398,18 @@ Use the following security and privacy best practices when you use the App Wrapp
 -   iOS apps that include a file upload dialog box can allow users to circumvent, cut, copy, and paste restrictions applied to the app. For example, a user could use the file upload dialog box to upload a screenshot of the app data.
 
 -   When you monitor the documents folder on your device from within a wrapped app, you might see a folder named .msftintuneapplauncher. If you change or delete this file, it might affect the correct functioning of restricted apps.
+
+## Getting logs for your wrapped applications
+Use the following steps to get logs for your wrapped applications during troubleshooting.
+
+1. Go to the iOS Settings page on your device and select your LOB app.
+2. Toggle the Diagnostics Console to the on position.
+3. Launch your LOB application.
+4. Click on the "Get Started" link.
+5. You can now share logs through email or copying them to a OneDrive location.
+
+>[!NOTE]
+The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
