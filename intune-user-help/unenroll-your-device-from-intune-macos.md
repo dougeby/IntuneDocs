@@ -57,4 +57,4 @@ When you unenroll your device from Intune, here's what happens:
 
 -   Devices that are configured for email only won't appear in the Company Portal app or website anymore.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
