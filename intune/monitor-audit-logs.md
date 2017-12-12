@@ -32,107 +32,45 @@ Users with the following permissions can review audit logs:
 - Intune Service Administrator
 - Users in a role with **Audit data** - **Read** permissions
 
-## Review audit logs for Intune workloads
-Review audit logs in the Monitoring group for each Intune workload.  
+## Audit logs for Intune workloads
+You can review audit logs in the Monitoring group for each Intune workload.  
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose the workload for which you want to review audit logs.
 4. In the **Monitoring** group for the workload, choose **Audit logs**.
 
-## Filter audit events
-Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days or 30 day options. By default, the last 30 days of audit events are displayed.
-
 ## Review audit events
-An audit log has a default list view that shows:
+![Audit logs](./media/monitor-audit-logs.png "Audit logs")
 
-- the date and time of the occurrence
-- the initiator / actor (*who*) of an activity 
-- the activity (*what*) 
-- the target
+An audit log has a default list view that shows the following:    
 
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/61.png "Audit logs")
-
-
-
-
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/18.png "Audit logs")
-
-You can customize the list view by clicking **Columns** in the toolbar.
-
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/19.png "Audit logs")
-
-This enables you to display additional fields or remove fields that are already displayed.
-
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/21.png "Audit logs")
-
+- date and time of the occurrence
+- Initiated by (Actor)
+- Activity
+- Target(s)
+- Category
+- Status
 
 By clicking an item in the list view, you get all available details about it.
 
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/22.png "Audit logs")
+![Audit logs](./media/monitor-audit-log-detail.png "Audit logs")
 
+> [!Note]    
+> The **Initiated by (actor)** section in the audit log details provides information about who performed the activity and from where it was performed. For example, if you perform the activiy in Intune in the Azure portal, **Application** always lists **Microsoft Intune portal extension** and the **Application ID** always uses the same GUID. 
+>    
+> The **Target(s)** section can list multiple targets and the properties that were changed.  
+
+
+## Filter audit events
+Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days or 30 day options. By default, the last 30 days of audit events are displayed.
 
 ## Filtering audit logs
 
 To narrow down the reported data to a level that works for you, you can filter the audit data using the following fields:
 
-- Date range
-- Initiated by (Actor)
 - Category
-- Activity resource type
 - Activity
-
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/23.png "Audit logs")
-
-
-The **date range** filter enables to you to define a timeframe for the returned data.  
-Possible values are:
-
-- 1 month
-- 7 days
-- 24 hours
-- Custom
-
-When you select a custom timeframe, you can configure a start time and an end time.
-
-The **initiated by** filter enables you to define an actor's name or its universal principal name (UPN).
-
-The **category** filter lets you select one of the following filter:
-
-- All
-- Core category
-- Core directory
-- Self-service password management
-- Self-service group management
-- Account provisioning- Automated password rollover
-- Invited users
-- MIM service
-- Identity Protection
-- B2C
-
-The **activity resource type** filter lets you select one of the following filters:
-
-- All 
-- Group
-- Directory
-- User
-- Application
-- Policy
-- Device
-- Other
-
-When you select **Group** as **activity resource type**, you get an additional filter category that enables you to also provide a **Source**:
-
-- Azure AD
-- O365
-
-
-The **activity** filter is based on the category and Activity resource type selection you make. You can select a specific activity you want to see or choose all. 
-
-You can get the list of all Audit Activities using the Graph API https://graph.windows.net/$tenantdomain/activities/auditActivityTypes?api-version=beta, where $tenantdomain = your domain name or refer to the article [audit report events](active-directory-reporting-audit-events.md).
-Activity
-- Activity Status
-- Intitiated by (Actor): Each audit event has an Actor which contains the UPN of the user performing the activity, and the application they used to make the change.  The audit event lists the changed properties and before/after values of those properties.
-- Target
+- Date range
 
 ## Use Graph API to retrieve up to 1 year of audit events
 For details about how to use the graph API to retrieve up to 1 year’s audit events, see https://graph.microsoft.com/beta/managedDevices/auditEvents.
