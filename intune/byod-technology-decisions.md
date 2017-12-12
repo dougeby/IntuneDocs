@@ -71,7 +71,7 @@ Still, many organizations often have specific risks they’re concerned about.  
 |Unauthorized data access | Require device enrollment | Require protected app |
 |Unauthorized data access | Require specific location | Require specific location |
 | | | |
-|Compromised user account| Require MFA | Rquire MFA|
+|Compromised user account| Require MFA | Require MFA|
 |Compromised user account | Block high risk users | Block high risk users |
 |Compromised user account | Device PIN | App PIN |
 | | | |
