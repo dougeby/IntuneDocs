@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: Intune email settings for Android and Android for Work devicestitleSuffix: "Azure portal"
+title: Intune email settings for Android and Android for Work devices
+titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure email connections on Android devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/15/2017
 ms.topic: article

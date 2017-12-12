@@ -5,8 +5,8 @@ title: What is app management
 titlesuffix: "Azure portal"
 description: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: get-started-article

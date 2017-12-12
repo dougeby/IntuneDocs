@@ -30,7 +30,7 @@ ms.suite: ems
 
 # Fix common issues with your Windows device
 
-Sometimes issues can occur with your Windows device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
+Sometimes issues can occur with your Windows device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
 - [I need to update my Windows device](you-need-to-update-your-windows-device.md)

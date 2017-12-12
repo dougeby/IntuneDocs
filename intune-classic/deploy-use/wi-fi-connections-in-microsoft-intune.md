@@ -4,8 +4,8 @@
 title: Wi-Fi connections 
 description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article

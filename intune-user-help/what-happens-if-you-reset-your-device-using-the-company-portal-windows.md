@@ -39,4 +39,4 @@ When you use the Company Portal app or [Company Portal website](reset-erase-your
 |Your device can access company email only|**Windows Phone 8.1**<br />Your device won’t appear in the company portal anymore, and your company email account and unsaved email will be deleted.<br /><br />**Windows 7 or Windows Vista**<br />You cannot reset a computer that's running Windows 7 or earlier that's used for email only.<br /><br />**Windows 8.1 and Windows 8**<br />Your device won’t appear in the company portal anymore, and your company email account and unsaved email will be deleted.|
 |PCs and laptops|**Windows 8.1 and Windows 8**<br />You cannot reset a computer that's running Windows 8 or Windows 8.1 unless it's used for email only.<br /><br />**Windows 7 or Windows Vista**<br />You cannot reset a computer that's running Windows 7 or earlier.|
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

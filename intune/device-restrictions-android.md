@@ -5,10 +5,10 @@ title: Intune device restriction settings for Android
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.custom: intune-azure
 Use these settings with an Android device restriction policy to configure devices in your organization.
 
 >[!TIP]
->If the settings you want are not available, you might be able to configure your devices using a [custom profile](custom-settings-android.md). 
+>If the settings you want are not available, you might be able to configure your devices using a [custom profile](custom-settings-android.md).
 
 ## General
 
@@ -49,6 +49,7 @@ Use these settings with an Android device restriction policy to configure device
 - **Voice assistant (Samsung KNOX only)** - Allows the use of voice assistant software on the device.
 - **YouTube (Samsung KNOX only)** - Allows the use of the YouTube app on the device.
 - **Shared devices (Samsung KNOX only)** - Configure a managed Samsung KNOX Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials. The device remains managed whether it’s in use or not.<br>When used in conjunction with a SCEP certificate profile, this feature allows end users to share a device with the same set of apps for all users, but with their own SCEP user cert.  When users sign out, all app data is cleared.  This feature is limited to LOB apps only.
+- **Block date and time changes (Samsung KNOX)** - Prevent the user from changing the date and time settings on the device. 
 
 ## Password
 
@@ -124,7 +125,7 @@ Additionally, you can also specify installed apps that will be hidden from the d
 
 For each setting, configure a list of apps using one of the following:
 
-- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package. 
+- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package.
 - **Add apps by URL** - Enter the app name, and its URL in the Google Play store.
 - **Add managed apps** - From the list of apps you manage with Intune, select the app you require.
 

@@ -5,8 +5,8 @@ title: App protection policy logs
 titlesuffix: "Azure portal"
 description: This topic describes the record of app protection policy settings stored in the app logs.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/15/2017
 ms.topic: article
