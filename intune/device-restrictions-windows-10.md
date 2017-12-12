@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,31 +32,32 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Screen capture (mobile only)** - Lets the user capture the device screen as an image.
-- 	**Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
-- 	**Manual unenrollment** - Lets the user manually delete the workplace account from the device.
-- 	**Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
-- 	**Diagnostic data submission** - Possible values are:
+- **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
+- **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
+- **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
+- **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
+- **Diagnostic data submission** - Possible values are:
 	- **None** - No data is sent to Microsoft
 	- **Basic** - Limited information is sent to Microsoft
 	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
 	- **Full** Sends the same data as Enhanced, plus additional data about the device state
-- 	**Camera** - Allow or block use of the camera on the device.
-- 	**OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
-- 	**Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
-- 	**Geolocation** - Specifies whether the device can use location services information.
-- 	**Internet sharing** - Allow the use of Internet connection sharing on the device.
-- 	**Phone reset** - Controls whether the user can do a factory reset on their device.
-- 	**USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.
-- 	**AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.
-- 	**Cortana** - Enable or disable the Cortana voice assistant.
-- 	**Voice recording (mobile only)** - Allow or block use of the device voice recorder.
-- 	**Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
-- 	**Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
-- 	**Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
-- 	**Device discovery** - Block a device from being discovered by other devices.
-- 	**Task Switcher (mobile only)** - Blocks the task switcher on the device.
-- 	**SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Camera** - Allow or block use of the camera on the device.
+- **OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
+- **Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
+- **Geolocation** - Specifies whether the device can use location services information.
+- **Internet sharing** - Allow the use of Internet connection sharing on the device.
+- **Phone reset** - Controls whether the user can do a factory reset on their device.
+- **USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.
+- **AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.
+- **Cortana** - Enable or disable the Cortana voice assistant.
+- **Voice recording (mobile only)** - Allow or block use of the device voice recorder.
+- **Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
+- **Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
+- **Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
+- **Device discovery** - Block a device from being discovered by other devices.
+- **Task Switcher (mobile only)** - Blocks the task switcher on the device.
+- **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. 
 
 
 ## Password
