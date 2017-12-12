@@ -49,7 +49,7 @@ Use these settings with an Android device restriction policy to configure device
 - **Voice assistant (Samsung KNOX only)** - Allows the use of voice assistant software on the device.
 - **YouTube (Samsung KNOX only)** - Allows the use of the YouTube app on the device.
 - **Shared devices (Samsung KNOX only)** - Configure a managed Samsung KNOX Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials. The device remains managed whether it’s in use or not.<br>When used in conjunction with a SCEP certificate profile, this feature allows end users to share a device with the same set of apps for all users, but with their own SCEP user cert.  When users sign out, all app data is cleared.  This feature is limited to LOB apps only.
-- **Block date and time changes (Samsung KNOX)** - Prevent users from changing the date and time settings on the device. 
+- **Block date and time changes (Samsung KNOX)** - Prevent the user from changing the date and time settings on the device. 
 
 ## Password
 
