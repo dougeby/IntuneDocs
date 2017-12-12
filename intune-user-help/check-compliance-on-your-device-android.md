@@ -33,4 +33,4 @@ If your device hasn't checked in with Intune in a while, you might not be able t
 
 2. Tap **Check Compliance**.
 
-If you are unable to reset your lost or stolen device, ask your company support to reset it for you. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you are unable to reset your lost or stolen device, ask your company support to reset it for you. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

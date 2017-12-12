@@ -65,9 +65,6 @@ With this change, IT admins can see which NAC-managed devices have successfully 
 ### New iOS device action   <!-- 1244701 -->
 You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
-### Palo Alto VPN now supported <!-- 1333680 eeready -->
-The **Connection type** list will include Palo Alto VPN when you configure your base VPN.
-
 ### Multiple connector support for SCEP and PFX certificate handling <!-- 1361755 eeready -->
 Customers who use the on-premise NDES connector to deliver certificates to devices will be able to configure multiple connectors in a single tenant.
 

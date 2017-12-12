@@ -2,13 +2,18 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/byod-enable.md",
+			"redirect_url": "/intune/byod-technology-decisions",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/device-compliance.md",
 			"redirect_url": "/intune/device-compliance-get-started",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-user-help/turn-off-microsoft-usage-data-collection-ios.md",
-			"redirect_url": "/intune-user-help/turn-off-microsoft-usage-data-collection-apple",
+			"source_path": "intune-user-help/turn-off-microsoft-usage-data-collection-apple.md",
+			"redirect_url": "/intune-user-help/turn-off-microsoft-usage-data-collection-ios",
 			"redirect_document_id": true
 		},
 		{
@@ -98,7 +103,7 @@
 		},
 		{
 			"source_path": "intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
-			"redirect_url": "https://docs.microsoft.com/une/end-user-educate",
+			"redirect_url": "https://docs.microsoft.com/intune/end-user-educate",
 			"redirect_document_id": true
 		},
 		{
