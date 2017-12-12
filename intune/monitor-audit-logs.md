@@ -28,10 +28,9 @@ Audit logs provide you with a record of activities that generate a change in Mic
 
 ## Who can access the data?
 Users with the following permissions can review audit logs:
-- Global Admins
-- Intune Service admins
-- Users with audit/read permissions
-
+- Global Administrator
+- Intune Service Administrator
+- Users in a role with **Audit data** - **Read** permissions
 
 ## Review audit logs for Intune workloads
 Review audit logs in the Monitoring group for each Intune workload.  
@@ -44,27 +43,17 @@ Review audit logs in the Monitoring group for each Intune workload.
 Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days or 30 day options. By default, the last 30 days of audit events are displayed.
 
 ## Review audit events
-Each audit log contains the following sections: 
-
-- 
-
-
-
-
-
-## Audit logs
-
-The audit logs in Azure Active Directory provide records of system activities for compliance.  
-Your first entry point to all auditing data is **Audit logs** in the **Activity** section of **Azure Active Directory**.
-
-![Audit logs](./media/active-directory-reporting-activity-audit-logs/61.png "Audit logs")
-
 An audit log has a default list view that shows:
 
 - the date and time of the occurrence
 - the initiator / actor (*who*) of an activity 
 - the activity (*what*) 
 - the target
+
+![Audit logs](./media/active-directory-reporting-activity-audit-logs/61.png "Audit logs")
+
+
+
 
 ![Audit logs](./media/active-directory-reporting-activity-audit-logs/18.png "Audit logs")
 
@@ -107,7 +96,7 @@ When you select a custom timeframe, you can configure a start time and an end ti
 
 The **initiated by** filter enables you to define an actor's name or its universal principal name (UPN).
 
-The **category** filter enables you to select one of the following filter:
+The **category** filter lets you select one of the following filter:
 
 - All
 - Core category
@@ -120,7 +109,7 @@ The **category** filter enables you to select one of the following filter:
 - Identity Protection
 - B2C
 
-The **activity resource type** filter enables you to select one of the following filters:
+The **activity resource type** filter lets you select one of the following filters:
 
 - All 
 - Group
@@ -146,7 +135,7 @@ Activity
 - Target
 
 ## Use Graph API to retrieve up to 1 year of audit events
-There is a graph API also to retrieve up to 1 year’s audit events – https://graph.microsoft.com/beta/managedDevices/auditEvents
+For details about how to use the graph API to retrieve up to 1 year’s audit events, see https://graph.microsoft.com/beta/managedDevices/auditEvents.
 
 
 
