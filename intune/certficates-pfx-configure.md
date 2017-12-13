@@ -59,10 +59,11 @@ You need a root or intermediate CA certificate on each device for authentication
 
    For example:
 
+4.  After the wizard completes, but before closing the wizard, click **Launch the Certificate Connector UI**.
+
    `certutil -ca.cert certnew.cer`
 
    For more information, see [Certutil tasks for managing certificates](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
-
 
 ## Configure certificate templates on the certification authority
 
