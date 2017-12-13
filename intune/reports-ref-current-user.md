@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: User - Intune Data Warehouse | Microsoft Docs 
+title: Current User - Intune Data Warehouse | Microsoft Docs
 description: Reference topic for the User category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,14 +23,14 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# Reference for current user entity
+# Reference for Current User entity
 
-The **Current User** category contains user and agent properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory users that are currently assigned a license. The license could be an Intune license, a Hybrid license, or a Microsoft Office 365 license. If a user has been removed, they will not be represented for the data collection period. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
+The **Current User** category contains user properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory users that are currently assigned a license. The license could be an Intune license, a Hybrid license, or a Microsoft Office 365 license. If a user has been removed, they will not be represented in the Current User collection. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
 
 
-## User
+## Current User
 
-The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
+The **Current User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
 | Property  | Description | Example |
 |---------|------------|--------|
@@ -44,5 +44,5 @@ The **User** entity lists all the Azure Active Directory (Azure AD) users with a
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this user was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
 ## Next steps
- - You can use the **Users** entity collection to expand the user data to users who who are not currently active. For more information, see [Reference for user entity](reports-ref-user.md). 
+ - You can use the **Users** entity collection to expand the user data to users who are not currently active. For more information, see [Reference for user entity](reports-ref-user.md).
  - Learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
