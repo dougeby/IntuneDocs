@@ -52,4 +52,4 @@ If Zimperium zIPS finds a security threat on your device, you will see instructi
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Zimperium zIPS [manually from the App Store](https://itunes.apple.com/app/zimperium-zips/id1030924459).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

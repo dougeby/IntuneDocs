@@ -5,10 +5,10 @@ title: Android app protection policy settings
 titlesuffix: "Azure portal"
 description: This topic describes the app protection policy settings for Android devices."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,4 +96,5 @@ There are two categories of policy settings: data relocation settings and access
 | **Require minimum Android operating system (Warning only)** | Choose **Yes** to require a minimum Android operating system to use this app. The user will see a notification if the Android version on the device does not meet the requirement. This notification can be dismissed. | No |
 | **Require minimum app version** | Choose **Yes** to require a minimum app version to use the app. The user will be blocked from access if the app version on the device does not meet the requirement.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No | 
 | **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user will see a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>When selecting apps to target, please note that apps often have distinct versioning schemes between them.<br><br> | No | 
-
+| **Require Minimum Android Patch Version** | Choose **Yes** to require a minimum Android security patch released by Google. The user will be blocked from access if the Android security patch on the device does not meet the requirement. | No |
+| **Require Minimum Android Patch Version (Warning Only)** | Choose **Yes** to require a minimum Android security patch released by Google. The user will see a notification if the Android security patch on the device does not meet the requirement. This notification can be dismissed. | No |

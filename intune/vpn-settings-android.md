@@ -5,8 +5,8 @@ title: Intune VPN settings for Android devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Android devices
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/15/2017
 ms.topic: article

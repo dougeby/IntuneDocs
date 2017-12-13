@@ -5,8 +5,8 @@ title: Intune device restriction settings for Android for Work
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -84,6 +84,13 @@ ms.custom: intune-azure
 - **Prevent reuse of previous passwords** - Enter the number of new passwords that must have been used before an old one can be reused (from **1**-**24**).
 - **Fingerprint unlock** - Blocks an end user from using the device fingerprint scanner to unlock it.
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag). You can use this setting to prevent users from configuring Smart Lock.
+
+## System security
+
+ - **Threat scan on apps** - Enforce that the **Verify Apps** setting is on for work and personal profiles.
+
+   > [!Note]  
+   > This setting will only work for devices that are Android O and above. 
 
 ## Next steps
 

@@ -89,8 +89,8 @@
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
       href: data-leak-prevention.md
-    - name: BYOD
-      href: byod-enable.md
+    - name: Compare MDM and MAM
+      href: byod-technology-decisions.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -163,7 +163,7 @@
       - name: Bulk enroll
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
-        href: enrollment-autopilot.md 
+        href: enrollment-autopilot.md
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -240,10 +240,15 @@
       href: apps-deploy.md
     - name: Monitor apps
       href: apps-monitor.md
-    - name: iOS app configuration profiles
-      href: app-configuration-policies-use-ios.md
-    - name: Android app configuration profiles
-      href: app-configuration-policies-use-android.md
+    - name: App configuration policies
+      href: app-configuration-policies-overview.md
+      items:
+      - name: iOS managed devices
+        href: app-configuration-policies-use-ios.md
+      - name: Android managed devices
+        href: app-configuration-policies-use-android.md
+      - name: Managed apps
+        href: app-configuration-policies-managed-app.md
     - name: Use iOS app provisioning profiles
       href: app-provisioning-profile-ios.md
     - name: Selectively wipe apps
@@ -279,6 +284,8 @@
         href: app-notification-settings-ios.md
       - name: Shared devices for iOS
         href: shared-device-settings-ios.md
+      - name: Configure Intune for iOS device single sign-on
+        href: sso-ios.md
       - name: Web filter settings for iOS
         href: web-content-filter-settings-ios.md
     - name: Configure device restrictions
@@ -358,8 +365,12 @@
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
+      - name: Symantec PKI Manager Web Service
+        href: certificates-symantec-configure.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
+    - name: Manage PowerShell scripts
+      href: intune-management-extension.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Assign profiles
@@ -375,6 +386,8 @@
       href: compliance-policy-create-android.md
     - name: Create Android for Work policy
       href: compliance-policy-create-android-for-work.md
+    - name: Create a policy to enable Google Play Protect
+      href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
       href: compliance-policy-create-ios.md
     - name: Create macOS policy
@@ -382,7 +395,7 @@
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
     - name: Actions for noncompliance
-      href: actions-for-noncompliance.md   
+      href: actions-for-noncompliance.md
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
   - name: Set up conditional access
@@ -416,6 +429,8 @@
           href: app-protection-policy-settings-android.md
         - name: iOS settings
           href: app-protection-policy-settings-ios.md
+        - name: Review app protection logs in the Managed Browser
+          href: app-protection-policy-settings-log.md
       - name: Validate app protection policies
         href: app-protection-policies-validate.md
       - name: Monitor app protection user status
@@ -537,9 +552,13 @@
   items:
   - name: Help users troubleshoot problems
     href: help-desk-operators.md
+  - name: Audit logs for Intune activities
+    href: monitor-audit-logs.md  
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
     items:
+    - name: Change log for the Data Warehouse
+      href: reports-changelog.md
     - name: Connect to the Data Warehouse with Power BI
       href: reports-proc-get-a-link-powerbi.md
     - name: Create a report from the OData feed with Power BI
@@ -549,11 +568,11 @@
   - name: Configure custom device settings
     href: custom-settings-configure.md
     items:
+    - name: Wi-Fi profile with a pre-shared key
+      href: wi-fi-profile-shared-key.md
     - name: Android
       href: custom-settings-android.md
       items:
-      - name: Wi-Fi profile with a pre-shared key
-        href: wi-fi-profile-shared-key.md
       - name: Per-app VPN profile
         href: android-pulse-secure-per-app-vpn.md
       - name: Allow/block apps for Samsung KNOX Standard
@@ -597,20 +616,26 @@
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
-      - name: Reference for Date entity
-        href: reports-ref-date.md
-      - name: Reference for user entity
-        href: reports-ref-user.md
-      - name: Reference for mobile app management (MAM) entities
-        href: reports-ref-mobile-app-management.md
-      - name: Reference for devices entities
-        href: reports-ref-devices.md
+      - name: User lifetime representation in the Intune Data Warehouse
+        href: reports-ref-user-timeline.md
       - name: Reference for application entities
         href: reports-ref-application.md
+      - name: Reference for current user entity
+        href: reports-ref-current-user.md
+      - name: Reference for date entity
+        href: reports-ref-date.md
+      - name: Reference for devices entities
+        href: reports-ref-devices.md
+      - name: Reference for Intune management extension entity
+        href: reports-ref-intunemanagementextension.md
+      - name: Reference for mobile app management (MAM) entities
+        href: reports-ref-mobile-app-management.md
       - name: Reference for policy entities
         href: reports-ref-policy.md
-        name: Reference for user device associations entity
-        href: reports-ref-userdeviceassociations.md
+      - name: Reference for user device association entity
+        href: reports-ref-user-device.md
+      - name: Reference for user entity
+        href: reports-ref-user.md
   - name: Sideload Windows apps
     href: intune-graph-apis.md
     items:

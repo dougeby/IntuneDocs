@@ -7,7 +7,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,10 @@ If you want to report a bug that is not listed here, [open a support request](ge
 If you want to request a new feature for Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
 ## Migration
+
+### Intune legacy PC client features are only available in the Silverlight console
+
+The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
 
 ### Groups created by Intune during migration might affect functionality of other Microsoft products
 

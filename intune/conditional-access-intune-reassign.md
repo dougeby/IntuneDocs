@@ -88,7 +88,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 	![User group UI comparison between the Intune and Azure portals](./media/reassign-ca-1.png)
 
 	> [!IMPORTANT] 
-	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
+	> The selection you make for the Azure portal should correspond to the selection you made for the Classic portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
 
 5. After you choose your group, click **Select**, and then click **Done**.
 
@@ -207,5 +207,5 @@ After you have reassigned your conditional access policies in the Azure portal, 
 ## See also
 
 - [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md)
-- [App-based conditional access with Intune](app-based-conditional-access-intune.md)
+- [app-based conditional access with Intune](app-based-conditional-access-intune.md)
 - [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

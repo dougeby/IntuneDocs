@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: This device is a little different | Microsoft Docs
-description: Learn more about your Intune-enabled macOS device managed by JAMF.
+title: Errors you might see if you use Jamf Self Service | Microsoft Docs
+description: Learn more about your Intune-enabled macOS device managed by Jamf.
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,10 +28,14 @@ ms.custom: intune-enduser
 
 ---
 
-# Performing actions on a macOS device managed by JAMF
+# Performing actions on a macOS device managed by Jamf
 
 Your company uses a combination of tools to make sure that your macOS device can access company resources safely. To make sure that your device can access these resources, you need to go to **Applications** > **Self Service**, and make sure that your device is compliant with company policies or to perform any other actions on your device.
 
-If you are on the macOS device with the compliance issues that is managed by JAMF, click the **Resolve** button to launch **Self Service**.
+If you are on the macOS device with the compliance issues that is managed by Jamf, click the **Resolve** button to launch **Self Service**.
 
-Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
+__What to do if you see "AccountNotOnboarded" or "Device is already enrolled"__
+
+If you've opened the Company Portal app and a message appears that says, "AccountNotOnboarded," you need to quit the Company Portal app, and go to **Applications** > **Self Service**. Your company will have a device registration policy that you need to install. Click on the policy to install it, then open the Company Portal again.
+
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

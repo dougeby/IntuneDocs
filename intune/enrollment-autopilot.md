@@ -7,7 +7,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,13 +46,23 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
    - **Privacy settings**: Choose whether to show privacy settings to users. 
    - **End-user license agreement (EULA)**: Choose whether to show the EULA to users.
    - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
+
+     > [!Note]    
+     > This setting does not apply to Global Administrator or Company Administrator accounts. These accounts cannot be standard users because they have access to all administrative features in Azure AD.
 8. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
      
-   > [!Note]    
-   > The following settings are configured with all AutoPilot deployment profiles:
-   > - Skip Cortana, OneDrive, and OEM registration setup pages
-   > - Automatically set up for work or school
-   > - Sign in experience with company or school brand    
+> [!Note]    
+> The following settings are configured with all AutoPilot deployment profiles:
+> - Skip Cortana, OneDrive, and OEM registration setup pages
+> - Automatically set up for work or school
+> - Sign in experience with company or school brand    
+
+## Alerts for Windows AutoPilot unassigned devices  <!-- 163236 -->
+You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them. 
+1. Sign into the [Azure](https://portal.azure.com/). 
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+3. On the **Intune** blade, choose **Device enrollment**.
+4. Choose **Overview** to see the alert. Click the alert to see a list of AutoPilot devices.  
 
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.

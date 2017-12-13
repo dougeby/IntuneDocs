@@ -5,8 +5,8 @@ title: Intune email settings for Windows Phone 8.1
 titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure email connections on Windows Phone 8.1 devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

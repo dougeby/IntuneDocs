@@ -4,9 +4,10 @@
 title: Set or change your passcode | Microsoft Docs
 description: Set or change your passcode
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +44,7 @@ If you have trouble setting a passcode that meets the passcode requirements, con
 
 1. Tap **Settings** > **Touch ID & Passcode**.
 2. Enter your passcode. The **Touch ID & Passcode** menu opens.
-2. Tap **Change Passcode** and enter your old password.
+2. Tap **Change Passcode** and enter your old passcode.
 3. Enter a new passcode that meets your company support's requirements, and then enter it again to verify it.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

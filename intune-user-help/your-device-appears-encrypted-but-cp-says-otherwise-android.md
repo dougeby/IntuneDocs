@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Your Android device seems to be encrypted
-description:
+title: Your Android device seems to be encrypted | Microsoft Docs
+description: 
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Certain Android devices require you to create a startup PIN to make sure that yo
 
 ### Downgrade your version of Android
 
-If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com) for contact information.
+If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information.
 
 ### Encrypt the entire device
 
@@ -76,5 +76,7 @@ If you have one of the following devices, you may experience this issue if you h
 
 You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
 
-- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [OPPO devices](http://www.oppo.com/en/smartphones)
+- [Vivo devices](https://www.vivo.co.in)
 - [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)

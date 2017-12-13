@@ -5,10 +5,10 @@ title: Set up the Exchange connector for on-premises EAS with Intune
 titleSuffix: "Azure portal"
 description: "Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -140,13 +140,18 @@ After the Exchange Connector sets up the connection, mobile devices that are ass
 > [!NOTE]
 > If you have installed the On-premises Exchange Connector, and if at some point you delete the Exchange connection, you must uninstall the On-premises Exchange Connector from the computer onto which it was installed.
 
-## Validate the Exchange connection
+## Monitor the Exchange connector activity
 
 After you have successfully configured the Exchange Connector, you can view the status of the connection and the last successful synchronization attempt. To validate the Exchange Connector connection:
 
-- On the Intune Dashboard, choose **On-premises access**. Under **Manage**, select **Exchange on-premises access** to verify the connection status.
+1. On the Intune Dashboard, choose **On-premises access**.
+2. Under **Manage**, select **Exchange on-premises access** to verify the connection status.
 
 You can also check the time and date of the last successful synchronization attempt.
+
+### System Center Operations Manager (SCOM) management pack
+
+Beginning with the Intune 1710 release, you can use the [SCOM management pack for Exchange connector and Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
 
 ## Next steps
 [Create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)

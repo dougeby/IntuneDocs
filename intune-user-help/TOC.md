@@ -4,11 +4,11 @@
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [What happens when I reset my device?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [How to sign in to the Company Portal](sign-in-to-the-company-portal.md)
+## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
-## [Using your Android device with Intune](using-your-android-device-with-intune.md)
+## [Using your Android device](using-your-android-device-with-intune.md)
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Enroll your device](enroll-your-device-in-Intune-android.md)
 #### [Enroll your device with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -26,6 +26,7 @@
 
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
+#### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
 
 #### Using logs to fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -56,27 +57,24 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [Using your iOS or macOS device with Intune](using-your-iOS-or-macOS-device-with-intune.md)
+## [Using your iOS device](using-your-iOS-device-with-intune.md)
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
-### [Enroll your macOS device](enroll-your-device-in-intune-macos.md)
-### [Enroll your macOS device with the Company Portal](enroll-your-device-in-intune-macos-cp.md)
-### [This device is a little different](device-little-different-jamf.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
 ### [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
-### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 ### [Unenroll your device](unenroll-your-device-from-intune-ios.md)
 #### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Manually sync your device](sync-your-device-manually-ios.md)
 
-### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
+#### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 #### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 #### [Send errors to your company](send-errors-to-your-it-admin-ios.md)
 #### [Send errors to Microsoft](send-logs-to-microsoft-ios.md)
+#### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 #### [An error appeared](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -95,10 +93,24 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [Using your macOS device](using-your-macos-device-with-intune.md)
+### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
+### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
+### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
+
+### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
+#### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
+#### [Updating your macOS device](you-need-to-update-your-macos-device.md)
+#### [Submit Company Portal errors](send-errors-macos.md)
+#### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-macos.md)
+#### [This device is a little different](device-little-different-jamf.md)
+#### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [What happens when you enroll a Windows device with another version of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Enrolling other versions of Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
 ### [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -122,6 +134,9 @@
 #### [My device needs antimalware software](your-device-needs-antimalware-software.md)
 #### [Enable Secure Boot](you-need-to-enable-secure-boot-windows.md)
 #### [Enable Code Integrity](you-need-to-enable-code-integrity.md)
-
+#### [I need to enable my Firewall](you-need-to-enable-defender-firewall-windows.md)
+#### [I need to enable UAC](you-need-to-enable-uac-windows.md)
+#### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
+#### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)

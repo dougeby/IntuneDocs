@@ -49,4 +49,4 @@ The Company Portal is an app that gives you access to your company or school app
 
 After you download the Company Portal app, you will likely want to [enroll your device in Intune](enroll-your-device-in-Intune-android.md) to get full access to your work information. You can also [sign in using another device](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

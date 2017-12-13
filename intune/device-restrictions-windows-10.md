@@ -5,8 +5,8 @@ title: Intune device restriction settings for Windows 10
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
@@ -37,10 +37,10 @@ ms.custom: intune-azure
 - 	**Manual unenrollment** - Lets the user manually delete the workplace account from the device.
 - 	**Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
 - 	**Diagnostic data submission** - Possible values are:
-	- 		**None** No data is sent to Microsoft
-	- 		**Basic** Limited information is sent to Microsoft
-	- 		**Enhanced** Enhanced diagnostic data is sent to Microsoft
-	- 		**Full** Sends the same data as Enhanced, plus additional data about the device state
+	- **None** - No data is sent to Microsoft
+	- **Basic** - Limited information is sent to Microsoft
+	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
+	- **Full** Sends the same data as Enhanced, plus additional data about the device state
 - 	**Camera** - Allow or block use of the camera on the device.
 - 	**OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
 - 	**Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
@@ -111,6 +111,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 
 ## Edge Browser
+
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
 - 	**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type. This helps to minimize network bandwidth use between Edge and Microsoft services.
 -	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
@@ -186,6 +187,44 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	- 	**Ease of Access** - Blocks access to the ease of access area of the settings app.
 	- 	**Privacy** - Blocks access to the privacy area of the settings app.
 	- 	**Update and Security** - Blocks access to the updates and security area of the settings app.
+
+## Kiosk
+
+-   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supported by the policy.  Options include:
+
+      - **Not Configured** (default) - The policy does not enable a kiosk mode. 
+      - **Single app kiosk** - The profile enables the device as a single app kiosk.
+      - **Multi-app kiosk** - The profile enables the device as a multi-app kiosk.
+
+    Single app kiosks require the following settings:
+
+      - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app.  For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
+
+         For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
+
+      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app.  To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+    Multi app kiosks require a kiosk configuration.  Use the **Add** button to create a kiosk configuration or select an existing one.
+
+    Muti-app kiosk configurations include the following settings:
+
+    - **Kiosk configuration name** - A friendly name used to identify a given configuration.
+
+    - One or more **kiosk apps** consisting of:
+
+        - **App Type** which specifies the type of the kiosk app.  Supported values include:   
+
+            - **Win32 App** - A traditional desktop app.  (You'll need the fully qualified pathname of the executable, with respect to the device.)
+
+            - **UWP App** - A Universal Windows app.  You'll need the [AUMID for the app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+
+    - **Taskbar** indicates whether the taskbar is displayed (**Enabled**) or hidden (**Not configured**) on the kiosk.
+
+    - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration.  The account may be local to the device or an Azure AD account login associated with the kiosk app.  Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
 
 ## Defender
 

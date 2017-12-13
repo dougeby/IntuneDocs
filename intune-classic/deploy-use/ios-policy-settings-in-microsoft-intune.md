@@ -4,10 +4,10 @@
 title: iOS policy settings 
 description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -345,7 +345,7 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple

@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,49 @@ ms.custom: intune-azure
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
+## Week of November 27, 2017
+
+### New "Device Categories" step in guided setup for the Company Portal app for Windows 10 <!---1335292--->
+
+If you've enabled [device group mapping](device-group-mapping.md), the Company Portal app for Windows 10 now walks your users through selecting a device category after enrolling their device.
+
+![Device group mapping category](./media/w10_cp_category_device_setup_after_1711.png)
+
+## Week of November 13, 2017
+
+### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!---1417174--->
+
+We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text.
+
+> [!NOTE]
+> We use the company name you have set in the Azure Portal in **Microsoft Intune** > **Mobile Apps** > **Company Portal branding** > **Company name**. If you have not set this value, we will use the tenant name set in **Azure Active Directory** > **Properties** > **Name**. If you have not set a company name in Company Portal branding and don’t want your tenant name to be displayed, we recommend that you set the company name in the Company Portal branding tab. If you don’t want this string to show in the header in Company Portal, you can deselect the checkbox to “Show company name next to logo.”
+
+|Before|After|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Combined with previous step*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
+
+## Week of November 6, 2017
+
+### Updates to the Company Portal app for Windows 10 <!--1299474-->
+The Settings page in the Company Portal app for Windows 10 has been updated to make the settings and intended user actions to be more consistent across all settings. It has also been updated to match the layout of other Windows apps.
+
+|Before|After|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
+
+### Search improvements to the Company Portal apps and website <!--1418189-->
+The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
+
+We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
+
 ## Week of October 16, 2017
 
 ### Search improvements to the Company Portal website <!--1331697-->
@@ -40,10 +83,6 @@ We're still fine-tuning the way relevance is tracked, so please let us know how 
 
 ### iOS Company Portal displays large icons <!-- 1454593 -->
 This release fixes a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website](https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
-
-
-
-
 
 
 ## Week of October 2, 2017

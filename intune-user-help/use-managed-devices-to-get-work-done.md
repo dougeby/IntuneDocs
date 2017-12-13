@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,13 +33,13 @@ Microsoft Intune is a piece of software that lets organizations manage devices (
 When you enroll a device into management with Intune, your IT department can manage those work or school resources, keep the device more secure, while giving you, their employee, the freedom to use your preferred device to get your work done. A primary way this is done is by enrolling the device into management through the Company Portal.
 
 ## What information can my company see when I enroll my device in Intune?
-Your company's IT department can see information that is relevant to work, but not to your personal information. This is especially important to know if you're enrolling a personal device for use at work. We break down what they [can and can't see in the next article in the user help](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Your company's support can see information that is relevant to work, but not to your personal information. This is especially important to know if you're enrolling a personal device for use at work. We break down what they [can and can't see in the next article in the user help](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## How do I get the Company Portal?
 You can get the Company Portal two different ways:
 
 - By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your company support can also install the Company Portal app for you.
-- By going to the [Company Portal website](https://portal.manage.microsoft.com) that your company support set up.
+- By going to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) that your company support set up.
 
 ## What's the difference between the app and the website?
 There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
@@ -54,7 +54,8 @@ There are a few minor differences between the Company Portal app and the Company
 To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
 
 - [Using your Android device](using-your-android-device-with-intune.md)
-- [Using your iOS or macOS device](using-your-ios-or-macOS-device-with-intune.md)
+- [Using your iOS device](using-your-ios-device-with-intune.md)
+- [Using your macOS device](using-your-macos-device-with-intune.md)
 - [Using your Windows device](using-your-windows-device-with-intune.md)
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
 
@@ -64,8 +65,9 @@ When you add a computer or device to the Company Portal, some software might be 
 To learn about what your company support can and can't see on your device, use the link that matches the type of device you're using:
 
 - [Installing the Company Portal app for Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Installing the Company Portal app for iOS and macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Installing the Company Portal app for Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Installing the Company Portal app for iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Installing the Company Portal app for macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Installing the Company Portal app for Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## What kind of computers or devices can you add to the Company Portal?
 -   Apple devices using iOS (such as iPhone and iPad) and macOS (such as MacBook and iMac)
@@ -82,7 +84,8 @@ You can either remove or reset a computer or device from the Company Portal. The
 When you *remove* a computer or device from the Company Portal, you are unenrolling your device from Intune. Once you unenroll, you won’t be able to access the Company Portal from that device anymore, and some company data might be removed from your device. To see how to remove your device from the Company Portal, choose one of the following links:
 
 - [Unenrolling your Android device](unenroll-your-device-from-intune-android.md)
-- [Unenrolling your iOS or macOS device](unenroll-your-device-from-intune-ios.md)
+- [Unenrolling your iOS device](unenroll-your-device-from-intune-ios.md)
+- [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
 - [Unenrolling your Windows device](unenroll-your-device-from-intune-windows.md)
 
 When you *reset* a computer or device, the Company Portal tries to reset your computer or device back the manufacturer’s default settings. Resetting your device removes all company and personal data from the device! If you have lost your device, you can also reset it remotely from the Company Portal website.
@@ -99,6 +102,7 @@ Microsoft recommends that you first try to see if you can fix your issue yoursel
 
 - [Fix common issues with your Android device](troubleshoot-your-device-android.md)
 - [Fix common issues with your iOS device](troubleshoot-your-device-ios.md)
+- [Fix common issues with your macOS device](troubleshoot-your-device-macos.md)
 - [Fix common issues with your Windows device](troubleshoot-your-device-windows.md)
 
-You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your company support for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](https://portal.manage.microsoft.com).
+You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your company support for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

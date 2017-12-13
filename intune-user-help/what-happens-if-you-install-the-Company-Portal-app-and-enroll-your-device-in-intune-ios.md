@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Installing the Company Portal app for iOS and macOS | Microsoft Docs
+title: Installing the Company Portal app for iOS | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +27,9 @@ ms.custom: intune-enduser
 ---
 
 
-# What happens if you install the Company Portal app and enroll your iOS or macOS device in Intune?
+# What happens if you install the Company Portal app and enroll your iOS device in Intune?
 
-When you install the Company Portal app and enroll your iOS or macOS device in Intune, you can use the Company Portal app to:
+When you install the Company Portal app and enroll your iOS device in Intune, you can use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files.
 
@@ -67,4 +67,4 @@ When your device is enrolled, your company support can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

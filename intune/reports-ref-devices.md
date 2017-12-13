@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Devices | Microsoft Docs  
+title: Devices  - Intune Data Warehouse | Microsoft Docs  
 description: Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: mattbriggs
@@ -133,10 +133,23 @@ The **EnrollmentTypes** entity indicates whether a device is corporate, personal
 
 The **MdmStatuses** entity indicates compliance state of the device.
 
-| Property  | Description | Example |
+| Property  | Description |
+|---------|------------|
+| MdmStatusID |Unique identifier of the compliance state |
+| MdmStatusKey |Unique identifier of compliance state in the data warehouse - surrogate key | 
+| ComplianceStatus |Compliance state of the device, Should have one of the values from the table below | 
+
+
+## Example
+
+| MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus Identifier |0 - Unknown <br>1 - Compliant <br>2 - Not Compliant |
-| MdmStatusKey |Unique identifier of compliance state in the data warehouse - surrogate key | |
+| 0 |Unknown |Device's compliance state is unknown. |
+| 1 |Compliant |The device is compliant. |
+| 2 |Noncompliant |The device is non-compliant. |
+| 3 |Conflict |The device's compliance resulted in s conflict. |
+| 4 |Error |There was error in readign the device's compliance state. |
+
 
 ## ManagementStates
 

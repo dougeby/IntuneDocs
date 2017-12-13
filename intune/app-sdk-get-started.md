@@ -4,10 +4,10 @@
 title: Get started with the Microsoft Intune App SDK 
 description: Quickly enable your mobile app for mobile application management (MAM) with Microsoft Intune.
 keywords:
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
-ms.date: 12/15/2016
+ms.author: erikre
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -119,8 +119,50 @@ Microsoft Intune collects data on usage statistics for your app.
 
     * If you choose not to send SDK telemetry data to Microsoft Intune from your app, you must disable telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the IntuneMAMSettings dictionary.
 
-
 * **Intune App SDK for Android**: Telemetry data is not logged through the SDK.
+
+ iOS and Android line-of-business app version number is visible <!-- 1380712 -->
+
+## Line-of-business app version numbers
+
+Line-of-business apps in Intune now display the version number for iOS and Android apps. The number displays in the Azure portal in the app list and in the app overview blade. End users can see the app number in the Company Portal app and in the web portal.
+
+### Full version number
+
+The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example, 2.2(2.2.17560800)
+
+The full version number has two components:
+
+ - **Version**  
+   The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
+
+ - **Build Number**  
+    The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
+
+### Version and build number in Android and iOS
+
+Android and iOS both use version and build numbers in reference to apps. However, both operating systems have meanings that are OS-specific. The following table explains how these terms are related.
+
+When you are developing a line-of-business application for use in Intune, remember to use both the version and the build number. Intune App management features rely on a meaningful **CFBundleVersion** (for iOS) and **PackageVersionCode** (for Android). These numbers are included in the app manifest. 
+
+Intune|iOS|Android|Description|
+|---|---|---|---|
+Version number|CFBundleShortVersionString|PackageVersionName |This number indicates a specific release of the app for end users.|
+Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate an iteration in the app code.|
+
+#### iOS
+
+- **CFBundleShortVersionString**  
+    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.​
+ - **CFBundleVersion**  
+    The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
+
+#### Android
+
+ - **PackageVersionName**  
+    The version number shown to users. This attribute can be set as a raw string or as a reference to a string resource. The string has no other purpose than to be displayed to users.
+ - **PackageVersionCode**  
+    An internal version number. This number is used only to determine whether one version is more recent than another, with higher numbers indicating more recent versions. This is not the version 
 
 ## Next steps after integration
 

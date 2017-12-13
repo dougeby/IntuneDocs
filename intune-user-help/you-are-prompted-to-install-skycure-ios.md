@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ If SEP Mobile finds a security threat on your device, you will see instructions 
 
 ## If the installation doesn't work
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Zimperium zIPS [manually from the App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SEP Mobile [manually from the App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
