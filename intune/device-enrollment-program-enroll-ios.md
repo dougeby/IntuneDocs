@@ -65,7 +65,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 > [!NOTE]
 > If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
 
-### Step 1. Download the Intune public key certificate required to create the token.**
+### Step 1. Download the Intune public key certificate required to create the token.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Tokens** > **Add**.
 
@@ -75,7 +75,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
   ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
 
-### Step 2. Use your key to download a token from Apple.**
+### Step 2. Use your key to download a token from Apple.
 
 1. Choose **Create a token for Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
 2.  In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**.
@@ -100,13 +100,13 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
    In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
-### Step 3. Save the Apple ID used to create this token.**
+### Step 3. Save the Apple ID used to create this token.
 
 In Intune in the Azure portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token in the future to avoid needing to re-enroll all your devices.
 
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
 
-### Step 4. Upload your token.**
+### Step 4. Upload your token.
 In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**, and then choose **Create**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
 
 ## Create an Apple enrollment profile
