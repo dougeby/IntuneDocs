@@ -419,6 +419,10 @@
       href: app-modern-authentication-block.md
     - name: Monitor conditional access compliance
       href: conditional-access-exchange-monitor.md
+    - name: Integrate Jamf Pro with Intune for compliance
+      href: conditional-access-integrate-jamf.md
+    - name: Enforce compliance on Macs managed with Jamf Pro
+      href: conditional-access-assign-jamf.md
   - name: Protect app and device data
     items:
     - name: Use app protection policies
