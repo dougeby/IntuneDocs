@@ -43,7 +43,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
   ### Intune apps
   ### Monitor and troubleshoot
-
+ 
 -->   
 
 ## Week of December 11, 2017
