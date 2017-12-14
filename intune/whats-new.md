@@ -43,7 +43,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
   ### Intune apps
   ### Monitor and troubleshoot
-
+ 
 -->   
 
 ## Week of December 11, 2017
@@ -77,11 +77,6 @@ Each NDES connector pulls certificate requests from Intune.  If one NDES connect
 
 When you create a SCEP certificate profile in Intune, you can now use the AAD_DEVICE_ID variable when you build the custom subject name.   When the certificate is requested using this SCEP profile, the variable is replaced with the AAD device ID of the device making the certificate request.
 
-#### New automatic redeployment setting <!-- 1469168 -->
-
-This setting allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device will be automatically reconfigured and reenrolled into management.
-
-This setting can be found under Windows 10 -> Device restrictions -> General -> Automatic redeployment.
 
 ### Device management
 
