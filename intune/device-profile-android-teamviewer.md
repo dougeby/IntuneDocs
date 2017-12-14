@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased 
 Intune-managed Android and Windows devices support remote administration.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software. 
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software. You still need to manage devices using the [PC client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) in the Intune classic portal.
 
 
 
@@ -82,4 +82,3 @@ When you are finished, close the TeamViewer window.
 ## Next steps
 
 An end user sees a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
-

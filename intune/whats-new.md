@@ -46,7 +46,10 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of December 11, 2017
 
+#### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747 --->
+You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
 
 ## Week of December 4, 2017
 
@@ -59,58 +62,58 @@ You can specify denied apps in Intune. If an app is denied, it is blocked from a
 ## Week of November 27, 2017
 
 ### Device enrollment
- 
-#### Troubleshoot enrollment issues  <!-- 746324 --> 
 
-The **Troubleshoot** workspace now shows user enrollment issues. Details about the issue and suggested remediation steps can 
-help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors 
-might not have remediation suggestions. 
+#### Troubleshoot enrollment issues  <!-- 746324 -->
+
+The **Troubleshoot** workspace now shows user enrollment issues. Details about the issue and suggested remediation steps can
+help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors
+might not have remediation suggestions.
 
 #### Group-assigned enrollment restrictions <!-- 747598 -->
- 
+
 As an Intune administrator, you can now [create custom Device Type and Device Limit enrollment restrictions for user groups](enrollment-restrictions-set.md).
- 
+
 The Intune Azure Portal lets you create up to 25 instances of each restriction type which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
- 
-All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list. 
- 
+
+All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list.
+
 This functionality will be released with the migration of Android for Work settings from the Android For Work enrollment menu to the Enrollment Restrictions menu. Since this migration may take several days, your account may be upgraded for other parts of the November release before you see group assignment become enabled for Enrollment Restrictions.
 
 #### Support for multiple Network Device Enrollment Service (NDES) connectors <!-- 1528104 -->
 
-NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP). 
-With this update, multiple NDES connectors are supported. 
+NDES allows mobile devices running without domain credentials to obtain certificates based on the Simple Certificate Enrollment Protocol (SCEP).
+With this update, multiple NDES connectors are supported.
 
 #### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
- 
+
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
- 
+
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
- 
+
 By default, your Android for Work devices settings are the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
- 
+
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
- 
+
 When working with the new settings, consider the following:
- 
+
 ##### If you have never previously onboarded Android for Work enrollment
- 
+
 The new Android for Work platform is blocked in the default Device Type Restrictions. After you onboard the feature, you can allow devices to enroll with Android for Work. To do so, change the default or create a new Device Type Restriction to supersede the default Device Type Restriction.
- 
+
 ##### If you have onboarded Android for Work enrollment
- 
+
 If you’ve previously onboarded, your situation depends on the setting you chose:
- 
+
 | Setting | Android for Work status in default Device Type Restriction | Notes |
 | --- | --- | --- |
 | **Manage all devices as Android** | Blocked | All Android devices must enroll without Android for Work. |
 | **Manage supported devices as Android for Work** | Allowed | All Android devices that support Android for Work must enroll with Android for Work. |
 | **Manage supported devices for users only in these groups as Android for Work** | Blocked | A separate Device Type Restriction policy was created to override the default. This policy defines the groups you previously selected to allow Android for Work enrollment. Users within the selected groups will continue to be allowed to enroll their Android for Work devices. All other users are restricted from enrolling with Android for Work. |
- 
+
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
 ### App management
-  
+
 #### App install report updated to include Install Pending status <!-- 1249446 -->  
 
 The **App install status** report accessible for each app through the **App** list in the **Mobile apps** workload now contains an **Install Pending** count for Users and Devices.
@@ -139,7 +142,7 @@ We have a new process and tools for moving users and their devices from hybrid M
 - Copy policies and profiles from the Configuration Manager console to Intune in the Azure portal
 - Move a subset of users to Intune in the Azure portal, while keeping the rest in hybrid MDM
 - Migrate devices to Intune in the Azure portal without needing to re-enroll them
- 
+
 For details, see [Migrate hybrid MDM users and devices to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 #### On-premises Exchange connector high availability support  <!-- 676614 -->
@@ -170,14 +173,11 @@ For more information, see [Remotely lock managed devices with Intune](device-rem
 
 Administrators are now able to set additional settings when creating a SCEP profile on Windows, iOS, macOS, and Android platforms.  Administrators can set IMEI, serial number, or common name including email in the subject name format.
 
-#### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747 --->
-Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
-
 <!-- #### Update to what device details your company may see -1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
 
 #### Retain data during a factory reset  <!--1588489 -->
-When resetting Windows 10 version 1709 and later to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset. 
+When resetting Windows 10 version 1709 and later to factory settings, a new capability is available. Admins can specify if device enrollment and other provisioned data are retained on a device through a factory reset.
 
 The following data is retained through a factory reset:
 - User accounts associated with the device
@@ -187,7 +187,7 @@ The following data is retained through a factory reset:
 - User profile
 - User data outside of user profile
 - User autologon
- 
+
 The following data is not retained:
 - User files
 - User installed apps (store and Win32 apps)
@@ -201,9 +201,9 @@ When you are **Troubleshooting,** for the user you are viewing, you are able to 
 Windows Defender Advanced Threat Protection (WDATP) service allows admins to manage reporting frequency for managed devices. With the new **Expedite telemetry reporting frequency** option, WDATP collects data and assesses risks more frequently. The default for reporting optimizes speed and performance. Increasing the frequency of reporting can be valuable for high-risk devices. This setting can be found in the **Windows Defender ATP** profile in **Device configurations**.
 
 #### Audit updates <!-- 1412961 -->  
-Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year. 
+Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year.
 
-Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload. 
+Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.
 
 
 
@@ -634,31 +634,31 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 ## Notices
 
 ### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
- 
+
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
- 
+
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
- 
+
 By default, your Android for Work devices settings will be the same as your settings for your Android devices. However, after you change your Android for Work settings that will no longer be the case.
- 
+
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
- 
+
 When working with the new settings, consider the following:
- 
+
 #### If you have never previously onboarded Android for Work enrollment
- 
+
 The new Android for Work platform is blocked in the default Device Type Restrictions. After you onboard the feature, you can allow devices to enroll with Android for Work. To do so, change the default or create a new Device Type Restriction to supersede the default Device Type Restriction.
- 
+
 #### If you have onboarded Android for Work enrollment
- 
+
 If you’ve previously onboarded, your situation depends on the setting you chose:
- 
+
 | Setting | Android for Work status in default Device Type Restriction | Notes |
 | --- | --- | --- |
 | **Manage all devices as Android** | Blocked | All Android devices must enroll without Android for Work. |
 | **Manage supported devices as Android for Work** | Allowed | All Android devices that support Android for Work must enroll with Android for Work. |
 | **Manage supported devices for users only in these groups as Android for Work** | Blocked | A separate Device Type Restriction policy was created to override the default. This policy defines the groups you previously selected to allow Android for Work enrollment. Users within the selected groups will continue to be allowed to enroll their Android for Work devices. All other users are restricted from enrolling with Android for Work. |
- 
+
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
 ### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
@@ -685,7 +685,7 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 ## What's coming
 
-### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 --> 
+### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 -->
 We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure Portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
 
 ### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!--1592747-->
