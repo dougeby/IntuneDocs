@@ -34,7 +34,7 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon.
 
-![Error message that occurs during account move](account-move-rom-iwp-user-1712.png)
+![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)
 
 ## Week of November 27, 2017
 
