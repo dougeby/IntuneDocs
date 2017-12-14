@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: How to configure Intune email settingstitleSuffix: "Azure portal"
+title: How to configure Intune email settings
+titleSuffix: "Azure portal"
 description: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article

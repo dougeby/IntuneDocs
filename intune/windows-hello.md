@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for BusinesstitleSuffix: "Azure portal"
+title: How to use Windows Hello for Business
+titleSuffix: "Azure portal"
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

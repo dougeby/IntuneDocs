@@ -5,8 +5,8 @@ title: Intune device restrictions settings for iOS
 titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -47,7 +47,7 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 - **Notification settings modification (supervised only)** - Allow the user to change the device notification settings.
 - **Wallpaper modification (supervised only)** - Allow the user to change the device wallpaper.
 - **Enterprise app trust settings modification (supervised only)** - Lets the user select to trust apps that were not downloaded from the app store.
-- **Configuration profile changes** - Allow the user to install configuration profiles.
+- **Configuration profile changes (supervised only)** - Allow the user to install configuration profiles.
 - **Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
 
 ## Configurations requiring supervision

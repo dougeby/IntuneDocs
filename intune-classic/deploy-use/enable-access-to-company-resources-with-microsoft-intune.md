@@ -4,8 +4,8 @@
 title: Enable access to company resources 
 description:  Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources they need.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article

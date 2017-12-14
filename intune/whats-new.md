@@ -143,7 +143,7 @@ We have a new process and tools for moving users and their devices from hybrid M
 For details, see [Migrate hybrid MDM users and devices to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 #### On-premises Exchange connector high availability support  <!-- 676614 -->
-You can now have multiple Client Access Server (CAS) roles for on-premises Exchange connector. For example, if the main CAS fails, the Exchange connector receives a query to fall back to aother CAS. This feature ensures that the service is not interrupted.
+After the Exchange connector creates a connection to Exchange using the specified CAS, the connector now has the ability to discovery other CASs. If the primary CAS becomes unavailable, the connector will failover to another CAS, if available, until the primary CAS becomes available. For details, see [On-premises Exchange connector high availability support](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
 
 #### Remotely restart iOS device (supervised only) <!-- 1424595 -->
 

@@ -37,4 +37,4 @@ If your company support has configured a VPN application to enable you to  conne
 3.  Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

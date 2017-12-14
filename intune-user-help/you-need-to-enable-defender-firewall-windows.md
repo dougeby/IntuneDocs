@@ -36,4 +36,4 @@ Your work or school wants to ensure that devices accessing their resources are s
 2. Open **System and Security** > **Windows Defender Firewall**.
 3. Choose **Customize Settings** > **Turn Windows Firewall on or off** for domain, private, and public networks.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
