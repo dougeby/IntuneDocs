@@ -34,9 +34,6 @@ This app type makes it easy for you to assign Office 365 apps to macOS devices. 
 
 ## Before you start
 
->[!IMPORTANT]
->This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
-
 - Devices to which you deploy these apps must be running macOS 10.10 or later.
 - Intune only supports adding Office apps included with Office 2016 for Mac suite.
 - If any Office apps are opened when Intune installs the app suite, end users might lose data from unsaved files.
@@ -72,7 +69,7 @@ Provide information about the app suite. This information helps you to identify 
 
 ## Configure app assignments
 
-In this step, configure the assignments for the app suite.
+In this step, configure the assignments for the app suite. Note that the available app type is coming soon.
 
 1.	Select the app suite in the list of apps, and select **Assignments**.
 2.	Choose **Select groups**.
