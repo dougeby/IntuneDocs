@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of December 11, 2017
 
 #### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747 --->
-You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf).
+You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
 
 ## Week of December 4, 2017
 
