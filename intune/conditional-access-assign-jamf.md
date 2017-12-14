@@ -17,7 +17,7 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 
 # optional metadata
 
-#ROBOTS: NOINDEX, NOFOLLOW
+#ROBOTS: 
 #audience:
 #ms.devlang:
 ms.reviewer: elocholi
