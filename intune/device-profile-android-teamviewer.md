@@ -37,7 +37,7 @@ Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased 
 Intune-managed Android and Windows devices support remote administration.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software. For devices using the [PC client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json).
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software. You still need to manage devices using the [PC client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) in the Intune classic portal.
 
 
 
