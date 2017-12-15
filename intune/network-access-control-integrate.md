@@ -81,7 +81,7 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
  - ISE Api exposed by intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups)
  - ISE reports compliance as true only if MDMStatus == 1 (Compliant)
- - ISE has a feature which requests from Intune the Url to redirect to in case the user device is non-compliant or is not enrolled (https://portal.manage.microsoft.com/networkaccesscontrol/index). The recommendation is for them to configure ISE in such a way that they allow users to redirect to this Url  automatically when they are non-compliant, so they can get compliant.
+ - ISE has a feature which requests from Intune the Url to redirect to in case the user device is non-compliant or is not enrolled (https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this Url automatically when they are non-compliant, so they can get compliant.
 
 ## Next steps
 
