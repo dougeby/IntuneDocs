@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: Intune Data Warehouse Change log | Microsoft Docs 
+title: Intune Data Warehouse Change log | Microsoft Docs
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
+author: erikre
 ms.author: mabrigg
-manager: angrobe
-ms.date: 11/14/2017
+manager: erikre
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ _Released November  2017_
 
 ### A new entity collection named Current User is limited to currently active user data <!-- 1544273 -->
 
-The **Users** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
+The **Users** entity collection contains all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
 
 In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](reports-ref-current-user.md).
 
@@ -51,5 +51,5 @@ You can now build reports and data visualizations using the user device associat
  - The entity, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), added. **IntuneManagementExtension** contains entities for mobile devices that track information such as version and installation status.
 
 ## Next steps
- - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases. 
+ - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
  - Read the [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882).

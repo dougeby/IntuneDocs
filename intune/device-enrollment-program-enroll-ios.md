@@ -38,7 +38,7 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 By the way, DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 ## What is supervised mode?
-Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
+Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -69,7 +69,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Tokens** > **Add**.
 
-  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace.](./media/enrollment-program-token-add.png)
+    ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
