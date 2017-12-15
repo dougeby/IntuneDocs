@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +17,7 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 
 # optional metadata
 
-#ROBOTS: NOINDEX, NOFOLLOW
+#ROBOTS: 
 #audience:
 #ms.devlang:
 ms.reviewer: elocholi
@@ -31,11 +31,6 @@ ms.custom: intune-azure
 |Applies to: Intune in the Azure portal |
 |--|
 |Looking for documentation about Intune in the classic portal? [Go here](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Currently in Private Preview|
-|--|
-|The features described in this topic are only available to customers currently in private preview. This message will be removed when it has been released for all customers.|
 | |
 
 If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end users' Macs, you can use Microsoft Intune compliance policies with Azure Active Directory conditional access to ensure that devices in your organization are compliant.
@@ -65,7 +60,7 @@ You can connect Intune with Jamf Pro by:
 4. Select **Web app / API**.
 5. Specify the **Sign-On URL** using your Jamf Pro instance URL.
 6. Click **Create application**.
-7. Save the newly-created **Application ID**, then open **Settings** and navigate to **API Access** > **Keys** to create a new Application Key. Enter a **Description**, how long to wait before it **Expires**, then save the Application Key. 
+7. Save the newly-created **Application ID**, then open **Settings** and navigate to **API Access** > **Keys** to create a new Application Key. Enter a **Description**, how long to wait before it **Expires**, then save the Application Key.
 
   > [!IMPORTANT]
   > The Application Key is only shown once during this process. Be sure to save it somewhere where you can easily retrieve it.
