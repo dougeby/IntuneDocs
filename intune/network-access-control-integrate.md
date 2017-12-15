@@ -77,7 +77,7 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 9.  Connection is successfully established which allows the device access to corporate resources.
 
->[! INFORMATION]
+>![INFORMATION]
 > Cisco ISE specific notes:
 > - ISE Api exposed by intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups)
 > - ISE reports compliance as true only if MDMStatus == 1 (Compliant)
