@@ -12,8 +12,8 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-user-help/turn-off-microsoft-usage-data-collection-ios.md",
-			"redirect_url": "/intune-user-help/turn-off-microsoft-usage-data-collection-apple",
+			"source_path": "intune-user-help/turn-off-microsoft-usage-data-collection-apple.md",
+			"redirect_url": "/intune-user-help/turn-off-microsoft-usage-data-collection-ios",
 			"redirect_document_id": true
 		},
 		{
