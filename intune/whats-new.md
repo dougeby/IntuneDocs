@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 12/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -80,7 +80,7 @@ When you create a SCEP certificate profile in Intune, you can now use the AAD_DE
 
 ### Device management
 
-### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!-- 1592747 -->
+#### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!-- 1592747 -->
 You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
 
 #### New iOS device action   <!-- 1424701 -->
