@@ -73,7 +73,7 @@ This new capability supports the following scenario:
 
 Each NDES connector pulls certificate requests from Intune.  If one NDES connector goes offline, the other connector can continue to process requests.
 
-### Customer subject name can use AAD_DEVICE_ID variable  <!-- 1468599 -->
+#### Customer subject name can use AAD_DEVICE_ID variable  <!-- 1468599 -->
 
 When you create a SCEP certificate profile in Intune, you can now use the AAD_DEVICE_ID variable when you build the custom subject name.   When the certificate is requested using this SCEP profile, the variable is replaced with the AAD device ID of the device making the certificate request.
 
@@ -153,7 +153,7 @@ In contrast, the new **Current User** entity collection only contains users who 
 In this release, we've updated a few of the Graph API's for Intune that are in beta. Please check out the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) for more information.
 
 
-#### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!---1592747 --->
+### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!-- 1592747 -->
 You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
 
 ## Week of December 4, 2017
@@ -278,12 +278,6 @@ For more information, see [Remotely lock managed devices with Intune](device-rem
 
 Administrators are now able to set additional settings when creating a SCEP profile on Windows, iOS, macOS, and Android platforms.  Administrators can set IMEI, serial number, or common name including email in the subject name format.
 
-<<<<<<< HEAD
-#### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!-- 1592747 -->
-Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
-
-=======
->>>>>>> e5f05b6a99a0d90a7e396b607d1060ee22459809
 <!-- #### Update to what device details your company may see -1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
 
@@ -744,16 +738,12 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ## Notices
 
-<<<<<<< HEAD
 ### Plan for Change: Easy Assist End-of-Life <!-- 1556480 -->
 Intune uses the Microsoft Easy Assist for PC management remote assistance. One thing you may not know is that Microsoft Easy Assist is a component of Office Live Meeting, a service that is being deprecated December 31, 2017. Therefore, Intune’s Easy Assist offering will also reach end of life on December 31, 2017.
 
 ### Manage Android for Work devices independently from Android devices <!-- 1490731 -->
- 
-=======
-### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
 
->>>>>>> e5f05b6a99a0d90a7e396b607d1060ee22459809
+### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
 
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
