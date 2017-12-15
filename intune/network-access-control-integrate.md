@@ -39,11 +39,9 @@ NAC solutions are responsible for checking the device enrollment and compliance 
 
 If the device is enrolled and compliant with Intune, the NAC solution should allow the device access to corporate resources. For example, users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources.
 
-## Feature behavior
+## Feature behaviors
 
-Devices which are actively syncing to Intune cannot move from Compliant/Noncompliant to Not Sync’d (or Unknown).
-
-- The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
+Devices which are actively syncing to Intune cannot move from **Compliant** / **Noncompliant** to **Not Sync’d** (or **Unknown**). The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
 
 For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
 
