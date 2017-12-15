@@ -41,9 +41,11 @@ If the device is enrolled and compliant with Intune, the NAC solution should all
 
 ## Feature behavior
 
-- Devices which are actively syncing to Intune cannot move from Compliant/Noncompliant to Not Sync’d (or Unknown).  
-    - The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  Which means, for a customer, the devices have always been in this state due to some other problem with their enrollment. No mass change.
-- For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
+Devices which are actively syncing to Intune cannot move from Compliant/Noncompliant to Not Sync’d (or Unknown).
+
+    - The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
+
+For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
 
 ## NAC and conditional access
 
@@ -75,7 +77,7 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 9.  Connection is successfully established which allows the device access to corporate resources.
 
->[!INFORMATION ]
+>[! INFORMATION]
 > Cisco ISE specific notes:
 > - ISE Api exposed by intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups)
 > - ISE reports compliance as true only if MDMStatus == 1 (Compliant)
