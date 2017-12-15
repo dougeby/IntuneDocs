@@ -43,7 +43,7 @@ If the device is enrolled and compliant with Intune, the NAC solution should all
 
 Devices which are actively syncing to Intune cannot move from Compliant/Noncompliant to Not Sync’d (or Unknown).
 
-    - The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
+- The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
 
 For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
 
