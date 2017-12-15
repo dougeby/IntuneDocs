@@ -741,9 +741,7 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 ### Plan for Change: Easy Assist End-of-Life <!-- 1556480 -->
 Intune uses the Microsoft Easy Assist for PC management remote assistance. One thing you may not know is that Microsoft Easy Assist is a component of Office Live Meeting, a service that is being deprecated December 31, 2017. Therefore, Intune’s Easy Assist offering will also reach end of life on December 31, 2017.
 
-### Manage Android for Work devices independently from Android devices <!-- 1490731 -->
-
-### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
+### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->    
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
 
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
