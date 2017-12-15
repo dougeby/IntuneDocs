@@ -59,23 +59,23 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 ![How NAC works with Intune](./media/ca-intune-common-ways-2.png)
 
-1.  Register the NAC partner solution with Azure Active Directory (AAD), and grant delegated permissions to the Intune NAC API.
+1. Register the NAC partner solution with Azure Active Directory (AAD), and grant delegated permissions to the Intune NAC API.
 
-2.  Configure the NAC partner solution with the appropriate settings including the Intune discovery URL.
+2. Configure the NAC partner solution with the appropriate settings including the Intune discovery URL.
 
-3.  Configure the NAC partner solution for certificate authentication.
+3. Configure the NAC partner solution for certificate authentication.
 
-4.  User connects to corporate Wi-Fi access point or makes a VPN connection request.
+4. User connects to corporate Wi-Fi access point or makes a VPN connection request.
 
-5.  NAC partner solution forwards the device information to Intune, and asks Intune about the device enrollment and compliance state.
+5. NAC partner solution forwards the device information to Intune, and asks Intune about the device enrollment and compliance state.
 
-6.  If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
+6. If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
 
-7.  The device attempts to re-verify its compliance and/or the enrollment state.
+7. The device attempts to re-verify its compliance and/or the enrollment state.
 
-8.  Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
+8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 
-9.  Connection is successfully established which allows the device access to corporate resources.
+9. Connection is successfully established which allows the device access to corporate resources.
 
 ## Integration specific notes
 
