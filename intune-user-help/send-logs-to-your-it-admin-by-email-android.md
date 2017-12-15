@@ -44,4 +44,4 @@ To send logs to your company support using email:
 
 3.  Under **Help**, tap **Get Help**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

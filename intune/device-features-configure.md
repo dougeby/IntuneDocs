@@ -5,8 +5,8 @@ title: Configure Intune device feature settings
 titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure features on devices you manage."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/7/2017
 ms.topic: article

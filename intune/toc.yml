@@ -198,7 +198,7 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
-    - name: Remote control for Android
+    - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
         href: apps-add-android-for-work.md
       - name: Office 365 apps for Windows 10
         href: apps-add-office365.md
+      - name: Office 365 apps for macOS
+        href: apps-add-office365-macos.md        
     - name: Assign apps
       href: apps-deploy.md
     - name: Monitor apps
@@ -417,6 +419,10 @@
       href: app-modern-authentication-block.md
     - name: Monitor conditional access compliance
       href: conditional-access-exchange-monitor.md
+    - name: Integrate Jamf Pro with Intune for compliance
+      href: conditional-access-integrate-jamf.md
+    - name: Enforce compliance on Macs managed with Jamf Pro
+      href: conditional-access-assign-jamf.md
   - name: Protect app and device data
     items:
     - name: Use app protection policies
@@ -552,6 +558,8 @@
   items:
   - name: Help users troubleshoot problems
     href: help-desk-operators.md
+  - name: Audit logs for Intune activities
+    href: monitor-audit-logs.md
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
     items:

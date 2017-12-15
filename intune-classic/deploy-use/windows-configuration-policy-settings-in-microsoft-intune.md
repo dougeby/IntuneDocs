@@ -4,8 +4,8 @@
 title: Windows policy settings 
 description: Use the Intune Windows general configuration policy (Windows 8.1 and later) to configure settings for enrolled Windows 8, and Windows 8.1 devices.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

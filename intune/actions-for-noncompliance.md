@@ -33,7 +33,7 @@ The **actions for non-compliance** allow you to configure a time-ordered sequenc
 
 There are two types of actions:
 
--   **Notify end-users via e-mail**: You can customize your email notification before sending it to the end user. Intune provides customization of the subject, message body, including company logo, and contact information.
+-   **Notify end-users via e-mail**: You can customize your email notification before sending it to the end user. Intune provides customization of the recipients, subject, and message body, including company logo, and contact information.
 
 -   **Mark device non-compliant**: You can determine a schedule in number of days after the device should be marked not compliant. This can be immediately, but you can also give the user a grace period to be compliant with your device compliance policies.
 

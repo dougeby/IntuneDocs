@@ -5,8 +5,8 @@ title: Intune device restrictions settings for iOS
 titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
