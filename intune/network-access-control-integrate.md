@@ -5,10 +5,10 @@ title: Network access control integration with Intune
 titlesuffix: "Azure portal"
 description: Network access control (NAC) integration with Intune
 keywords:
-author: andredm7
-ms.author: andredm
+author: bruceperlerMS
+ms.author: bruceper
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,15 +39,21 @@ NAC solutions are responsible for checking the device enrollment and compliance 
 
 If the device is enrolled and compliant with Intune, the NAC solution should allow the device access to corporate resources. For example, users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources.
 
+## Feature behavior
+
+- Devices which are actively syncing to Intune cannot move from Compliant/Noncompliant to Not Sync’d (or Unknown).  
+    - The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  Which means, for a customer, the devices have always been in this state due to some other problem with their enrollment. No mass change.
+- For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
+
 ## NAC and conditional access
 
-NAC works with with conditional access to provide access control decisions.
+NAC works with conditional access to provide access control decisions.
 
 - See [common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) for more details.
 
 ## How the NAC integration works
 
-Here’s an overview on how the NAC integration works when integrated with Intune, the first three steps explain the onboarding process. Once the NAC solution is integrated with Intune, steps 4-9 describe the on-going operation.
+Here’s an overview on how the NAC integration works when integrated with Intune. The first three steps, 1-3, explain the onboarding process. Once the NAC solution is integrated with Intune, steps 4-9 describe the on-going operation.
 
 ![How NAC works with Intune](./media/ca-intune-common-ways-2.png)
 
@@ -68,6 +74,12 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 8.  Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 
 9.  Connection is successfully established which allows the device access to corporate resources.
+
+>[!INFORMATION ]
+> Cisco ISE specific notes:
+> - ISE Api exposed by intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups)
+> - ISE reports compliance as true only if MDMStatus == 1 (Compliant)
+> - ISE has a feature which requests from Intune the Url to redirect to in case the user device is non-compliant or is not enrolled (https://portal.manage.microsoft.com/networkaccesscontrol/index). The recommendation is for them to configure ISE in such a way that they allow users to redirect to this Url  automatically when they are non-compliant, so they can get compliant.
 
 ## Next steps
 
