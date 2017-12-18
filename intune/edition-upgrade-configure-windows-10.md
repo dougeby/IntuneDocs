@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,15 +28,23 @@ ms.custom: intune-azure
 ---
 
 # How to configure Windows 10 edition upgrades in Microsoft Intune
-
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the information in this topic to learn how to configure a Windows 10 edition upgrade profile. This profile lets you automatically upgrade devices that run Windows 10 edition to a different edition. The following table provides information about the supported upgrade paths for Windows 10 editions in the policy:
+Use the information in this article to learn how to configure a Windows 10 edition upgrade profile. This profile lets you automatically upgrade devices that run Windows 10 edition to a different edition. 
+
+## Before you start
+Before you begin to upgrade devices to the latest version, you need one of:
+
+- A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys or A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
+- The Windows 10 devices to which you assign the policy must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
+
+## Supported edition upgrades in the profile
+The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 
 ![supported](./media/check_grn.png)  (X) = not supported    
 ![unsupported](./media/x_blk.png)    (green checkmark) = supported    
 
-|Source edition\Target edition|Education|Education N|Pro Education|Pro Education N|Enterprise|Enterprise N|Professional|Professional N|Mobile|Holographic for Business|
+|Upgrade from edition\Upgrade to edition|Education|Education N|Pro Education|Pro Education N|Enterprise|Enterprise N|Professional|Professional N|Mobile Enterprise|Holographic for Business|
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 |Pro|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
 |Pro N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
@@ -51,14 +59,9 @@ Use the information in this topic to learn how to configure a Windows 10 edition
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)
 
-## Before you start
-Before you begin to upgrade devices to the latest version, you need one of:
 
-- A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys or A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
-- The Windows 10 devices to which you assign the policy must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
 
 ## Create a device profile containing device restriction settings
-
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
@@ -68,10 +71,9 @@ Before you begin to upgrade devices to the latest version, you need one of:
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Edition upgrade**.
 7. On the **Edition Upgrade** blade, configure the following settings:
-	- **Edition to upgrade from** - From the drop-down list, select the Windows 10 version that you want to upgrade on devices.
 	- **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you want to upgrade targeted devices to.
 	- **Product Key** - Specify the product key that you obtained from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices.<br>.After you create a policy that contains a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must enter the entire key again.
-	- **License File** - Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic, or Windows 10 Mobile edition that you want to upgrade targeted devices to.
+	- **License File** - Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic or Windows 10 Mobile edition to which you want to upgrade targeted devices.
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile is created and appears on the profiles list blade.
