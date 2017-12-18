@@ -86,6 +86,7 @@ The following lists provide the supported upgrade paths for Windows 10 edition u
 
 **Windows 10 Mobile Enterprise**
 - Windows 10 Mobile
+
 <!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 
 ![supported](./media/check_grn.png)  (X) = not supported    
@@ -105,8 +106,6 @@ The following lists provide the supported upgrade paths for Windows 10 edition u
 |Core N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
-
-
 
 ## Create a device profile containing device restriction settings
 1. Sign into the Azure portal.
