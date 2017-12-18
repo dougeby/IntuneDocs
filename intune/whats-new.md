@@ -50,6 +50,9 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Device configuration
 
+#### Support for additional source editions in the Windows 10 edition upgrade policy  <!-- 903672,  1119689 -->
+You can now use the Windows 10 edition upgrade policy to upgrade from additional Windows 10 editions (Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Cloud, etc.). Prior to this release, the supported edition upgrade paths were more limited. For details, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
+
 #### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
 
 Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end-users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
