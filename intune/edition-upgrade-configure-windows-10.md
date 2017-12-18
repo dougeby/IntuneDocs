@@ -38,8 +38,55 @@ Before you begin to upgrade devices to the latest version, you need one of:
 - A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys or A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
 - The Windows 10 devices to which you assign the policy must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
 
-## Supported edition upgrades in the profile
-The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
+## Supported upgrade paths for the Windows 10 edition upgrade profile
+The following lists provide the supported upgrade paths for Windows 10 edition upgrade profile:
+
+**Windows 10 Education**
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows 10 Cloud
+- Windows 10 Enterprise
+- Windows 10 Core
+    
+**Windows 10 Education N edition**    
+- Windows 10 Pro N edition
+- Windows 10 Pro Education N edition
+- Windows 10 Cloud N edition
+- Windows 10 Enterprise N edition
+- Windows 10 Core N edition
+    
+**Windows 10 Enterprise**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Enterprise N edition**
+- Windows 10 Pro N edition
+- Windows 10 Cloud N edition
+- Windows 10 Core N edition
+    
+**Windows 10 Pro**
+- Windows 10 Cloud
+    
+**Windows 10 Pro N edition**
+- Windows 10 Cloud N edition
+    
+**Windows 10 Pro Education**
+- Windows 10 Pro
+- Windows 10 Cloud
+- Windows 10 Core
+    
+**Windows 10 Pro Education N edition**
+- Windows 10 Pro N edition
+- Windows 10 Cloud N edition
+- Windows 10 Core N edition
+
+**Windows 10 Holographic for Business**
+- Windows 10 Holographic
+
+**Windows 10 Mobile Enterprise**
+- Windows 10 Mobile
+<!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 
 ![supported](./media/check_grn.png)  (X) = not supported    
 ![unsupported](./media/x_blk.png)    (green checkmark) = supported    
@@ -57,7 +104,7 @@ The following table provides information about the supported upgrade paths for W
 |Core|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png) 	|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
 |Core N|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
-|Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)
+|Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
 
 
