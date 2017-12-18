@@ -50,21 +50,8 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Device configuration
 
-#### Support for Windows 10 edition upgrade policy  <!-- 903672,  1119689 -->
-You can now create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to one of the following editions:
-
-- Windows 10 Education
-- Windows 10 Education N edition
-- Windows 10 Enterprise
-- Windows 10 Enterprise N edition
-- Windows 10 Pro
-- Windows 10 Pro N edition
-- Windows 10 Pro Education
-- Windows 10 Pro Education N edition
-- Windows 10 Holographic for Business
-- Windows 10 Mobile Enterprise
-
-For details, see [How to configure Windows 10 edition upgrades ](edition-upgrade-configure-windows-10.md).
+#### Support for additional source editions in the Windows 10 edition upgrade policy  <!-- 903672,  1119689 -->
+You can now use the Windows 10 edition upgrade policy to upgrade from additional Windows 10 editions (Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Cloud, etc.). Prior to this release, the supported edition upgrade paths were more limited. For details about the supported edition upgrade paths, see How to configure Windows 10 edition upgrades. For details, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
 #### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
 
