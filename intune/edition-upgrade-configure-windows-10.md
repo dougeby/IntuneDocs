@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 12/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ The following upgrade paths are supported:
 - From Windows 10 Pro to Windows 10 Enterprise
 - From Windows 10 Home to Windows 10 Education
 - From Windows 10 Mobile to Windows 10 Mobile Enterprise
-- From Windows 10 Holographic Pro to Windows 10 Holographic Enterprise
+- From Windows 10 Holographic to Windows 10 Holographic for Business
 
 
 ## Before you start
@@ -63,7 +63,6 @@ Before you begin to upgrade devices to the latest version, you need one of:
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Edition upgrade**.
 7. On the **Edition Upgrade** blade, configure the following settings:
-	- **Edition to upgrade from** - From the drop-down list, select the Windows 10 version that you want to upgrade on devices.
 	- **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you want to upgrade targeted devices to.
 	- **Product Key** - Specify the product key that you obtained from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices.<br>.After you create a policy that contains a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must enter the entire key again.
 	- **License File** - Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic, or Windows 10 Mobile edition that you want to upgrade targeted devices to.
