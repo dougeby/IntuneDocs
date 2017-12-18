@@ -39,7 +39,7 @@ Before you begin to upgrade devices to the latest version, you need one of:
 - The Windows 10 devices to which you assign the policy must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
 
 ## Supported upgrade paths for the Windows 10 edition upgrade profile
-The following lists provide the supported upgrade paths for Windows 10 edition upgrade profile:
+The following lists provide the supported upgrade paths for the Windows 10 edition upgrade profile. The Windows 10 edition to upgrade to is in bold followed by the list of supported editions that you can upgrade from:
 
 **Windows 10 Education**
 - Windows 10 Pro
