@@ -8,7 +8,7 @@ keywords:
 author: bruceperlerMS
 ms.author: bruceper
 manager: angrobe
-ms.date: 12/15/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ For devices that are blocked from access to resources, the blocking service shou
 
 NAC works with conditional access to provide access control decisions.
 
-- See [common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) for more details.
+- See [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) for more details.
 
 ## How the NAC integration works
 
@@ -75,7 +75,7 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 9. Connection is successfully established which allows the device access to corporate resources.
 
-## Integration specific notes
+## Integration specifics
 
 ### Cisco ISE
 
