@@ -47,9 +47,7 @@ For devices that are blocked from access to resources, the blocking service shou
 
 ## NAC and conditional access
 
-NAC works with conditional access to provide access control decisions.
-
-- See [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) for more details.
+NAC works with conditional access to provide access control decisions. For more details, see [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md).
 
 ## How the NAC integration works
 
@@ -58,21 +56,13 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 ![How NAC works with Intune](./media/ca-intune-common-ways-2.png)
 
 1. Register the NAC partner solution with Azure Active Directory (AAD), and grant delegated permissions to the Intune NAC API.
-
 2. Configure the NAC partner solution with the appropriate settings including the Intune discovery URL.
-
 3. Configure the NAC partner solution for certificate authentication.
-
 4. User connects to corporate Wi-Fi access point or makes a VPN connection request.
-
 5. NAC partner solution forwards the device information to Intune, and asks Intune about the device enrollment and compliance state.
-
 6. If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
-
 7. The device attempts to reverify its compliance and/or the enrollment state.
-
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
-
 9. Connection is successfully established which allows the device access to corporate resources.
 
 ## Integration specifics
@@ -81,12 +71,10 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 - The ISE API exposed by Intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups).
 - ISE reports compliance as true only if `MDMStatus == 1` (Compliant).
-- ISE has a feature, which requests from Intune the URL to redirect to in case the user device is non-compliant or is not enrolled. [Network Access Control portal](https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this URL automatically when they are non-compliant, so they can get compliant.
+- ISE has a feature, which requests from Intune the URL to redirect to in case the user device is non-compliant or is not enrolled, [Network Access Control portal](https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this URL automatically when they are non-compliant, so they can get compliant.
 
 ## Next steps
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
-
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-
 - [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
