@@ -41,9 +41,9 @@ If the device is enrolled and compliant with Intune, the NAC solution should all
 
 ## Feature behaviors
 
-Devices which are actively syncing to Intune cannot move from **Compliant** / **Noncompliant** to **Not Sync’d** (or **Unknown**). The Unknown state is reserved for newly enrolled devices which have not yet been evaluated for compliance.  This means, for a customer, the devices have always been in this state due to some other problem with their enrollment.
+Devices that are actively syncing to Intune cannot move from **Compliant** / **Noncompliant** to **Not Synched** (or **Unknown**). The **Unknown** state is reserved for newly enrolled devices that have not yet been evaluated for compliance.
 
-For devices that are blocked from access to resources, the blocking service should redirect all users to https://portal.manage.microsoft.com to determine why the device is blocked.  If the users visit this page, their devices will be synchronously re-evaluated for compliance.
+For devices that are blocked from access to resources, the blocking service should redirect all users to the [management portal](https://portal.manage.microsoft.com) to determine why the device is blocked.  If the users visit this page, their devices are synchronously reevaluated for compliance.
 
 ## NAC and conditional access
 
@@ -69,7 +69,7 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 6. If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
 
-7. The device attempts to re-verify its compliance and/or the enrollment state.
+7. The device attempts to reverify its compliance and/or the enrollment state.
 
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 
@@ -79,14 +79,14 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 
 ### Cisco ISE
 
- - ISE Api exposed by intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups)
- - ISE reports compliance as true only if MDMStatus == 1 (Compliant)
- - ISE has a feature which requests from Intune the Url to redirect to in case the user device is non-compliant or is not enrolled (https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this Url automatically when they are non-compliant, so they can get compliant.
+- The ISE API exposed by Intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups).
+- ISE reports compliance as true only if `MDMStatus == 1` (Compliant).
+- ISE has a feature, which requests from Intune the URL to redirect to in case the user device is non-compliant or is not enrolled. [Network Access Control portal](https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this URL automatically when they are non-compliant, so they can get compliant.
 
 ## Next steps
 
--   [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
+- [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 
--   [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 
--   [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
