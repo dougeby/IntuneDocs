@@ -90,6 +90,7 @@ Now that you've installed your token, you can create an enrollment profile for A
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
+    
 4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager's Shared iPad mode requires user enroll without user affinity.
 
@@ -155,7 +156,7 @@ Now that you've installed your token, you can create an enrollment profile for A
 
 Now that Intune has been assigned permission to manage your Apple School Manager devices, you can synchronize Intune with the Apple service to see your managed devices in Intune.
 
-1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
+In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/device-enrollment-program-enroll-ios/image06.png)
   
   To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
