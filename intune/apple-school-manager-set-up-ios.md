@@ -97,6 +97,7 @@ Now that you've installed your token, you can create an enrollment profile for A
     - **Enroll without User Affinity** - Choose this option for devices unaffiliated with a single user, such as a shared device. Use this for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
 5. If you chose **Enroll with User Affinity**, you have the option to let users authenticate with Company Portal instead of the Apple Setup Assistant.
+
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
