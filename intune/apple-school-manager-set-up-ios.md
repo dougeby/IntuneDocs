@@ -55,7 +55,7 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > **Add**.
 
-  ![Add token.](./media/apple-school-manager-set-up-ios/image01.png)
+  ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. In the **Enrollment program token** blade, choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
      ![Enrollment Program Token blade.](./media/device-enrollment-program-enroll-ios/image01.png)
