@@ -65,14 +65,6 @@ Here’s an overview on how the NAC integration works when integrated with Intun
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
 
-## Integration specifics
-
-### Cisco ISE
-
-- The ISE API exposed by Intune takes in MacAddress/IMEI/UDID/MEID (ie: No AAD lookups).
-- ISE reports compliance as true only if `MDMStatus == 1` (Compliant).
-- ISE has a feature, which requests from Intune the URL to redirect to in case the user device is non-compliant or is not enrolled, [Network Access Control portal](https://portal.manage.microsoft.com/networkaccesscontrol/index). We recommend you configure ISE such that you allow users to redirect to this URL automatically when they are non-compliant, so they can get compliant.
-
 ## Next steps
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
