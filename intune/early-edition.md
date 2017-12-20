@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - December 2017
+# The early edition for Microsoft Intune - January 2018
 
 The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
@@ -42,6 +42,59 @@ This page is updated periodically. Check back for additional updates.
 
 
 ## Intune in the Azure portal
+
+### New option for user authentication for Apple bulk enrollment <!-- 747625 -->
+Intune will give you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
+
+- Apple Device Enrollment Program
+- Apple School Manager
+- Apple Configurator Enrollment
+
+When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
+
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+
+### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
+Intune will support enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+
+After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
+
+### Select device categories by using the Access Work or School settings <!-- 1058963 eeready --> 
+If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
+
+### Including and excluding app assignment based on groups <!-- 1406920 -->
+
+During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude. You'll also be able to use the pre-created groups (All Users, All Devices and All Users+Devices) as included groups.
+
+### Remote "Erase" command support <!-- 1438084 -->
+
+Admins will be able to issue an Erase command remotely.
+
+> [!IMPORTANT]
+> The erase command can’t be reversed and should be used with caution.
+
+The erase command removes all data, including the operating system, from a device. It also removes the device from Intune management. No warning is issued to the user and the erasure occurs immediately upon issuing the command.
+
+You will be able to configure a 6-digit recovery PIN. This PIN can be used to unlock the erased device, at which point reinstallation of the operating system will begin. After erasure has started, the PIN appears in a status bar on the device’s overview blade in Intune. The PIN will remain as long as the erasure is underway. After erasure is complete, the device disappears entirely from Intune management. Be sure to record the recovery PIN so that whoever is restoring the device can use it.
+
+### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
+
+A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
+
+### Website Learning Mode <!-- 1631908 -->
+
+Intune will introduce an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you will be able to view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
+
+
+### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 --> 
+We will simplify where you configure and manage conditional access. You will configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you will also be able to access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
+
+###  Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
+
+The overview page will show alerts for expired tokens and tokens that will soon expire. When you click on an alert for a single token, you'll go to the token's details page.  If you click on alert with multiple tokens, you'll go to a list of all tokens with their status. Admins should renew their tokens before the expiration date.
+
+
+<!-- the following are present prior to 1801 -->
 
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
