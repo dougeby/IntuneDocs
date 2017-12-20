@@ -62,6 +62,10 @@ After migration, the beta Graph APIs and published scripts for managing Apple DE
 ### Select device categories by using the Access Work or School settings <!-- 1058963 eeready --> 
 If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
 
+### Targeting compliance policies to devices in device groups <!--1307012 -->
+
+You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups. 
+
 ### Including and excluding app assignment based on groups <!-- 1406920 -->
 
 During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude. You'll also be able to use the pre-created groups (All Users, All Devices and All Users+Devices) as included groups.
@@ -84,6 +88,11 @@ A new setting in the Windows Information Protection (WIP) policy will allow you 
 ### Website Learning Mode <!-- 1631908 -->
 
 Intune will introduce an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you will be able to view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
+
+#### Updates to compliance emails <!--1637547 -->
+
+When an email is sent to report a noncompliant device, details about the noncompliant device will be included. The following article will be updated to indicate this fact: [Automate actions for noncompliance](#actions-for-noncompliance).
+
 
 
 ### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 --> 
