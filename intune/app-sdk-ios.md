@@ -105,28 +105,20 @@ To enable the Intune App SDK, follow these steps:
 
 	![Intune App SDK iOS: copy bundle resources](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-3. Add these iOS frameworks to the project:
-    * MessageUI.framework
-    * Security.framework
-    * MobileCoreServices.framework
-    * SystemConfiguration.framework
-    * libsqlite3.tbd
-    * libc++.tbd
-    * ImageIO.framework
-    * LocalAuthentication.framework
-    * AudioToolbox.framework
+	Add these iOS frameworks to the project:
+    		* MessageUI.framework
+    		* Security.framework
+    		* MobileCoreServices.framework
+    		* SystemConfiguration.framework
+    		* libsqlite3.tbd
+    		* libc++.tbd
+    		* ImageIO.framework
+    		* LocalAuthentication.framework
+    		* AudioToolbox.framework
+		* QuartzCore.framework
+		* WebKit.framework
 
-4. If your mobile app defines a main nib or storyboard file in its Info.plist file, cut the **Main Storyboard** or **Main Nib** field(s). In Info.plist, paste these fields and their corresponding values under a new dictionary named **IntuneMAMSettings** with the following key names, as applicable:
-    * MainStoryboardFile
-    * MainStoryboardFile~ipad
-    * MainNibFile
-    * MainNibFile~ipad
-	> [!NOTE]
-  > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
-
-	You can view Info.plist in raw format (to see the key names) by right-clicking anywhere in the document body and changing the view type to **Show Raw Keys/Values**.
-
-5. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
+3. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
   > [!NOTE]
 	> Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. For example:
@@ -137,7 +129,7 @@ To enable the Intune App SDK, follow these steps:
 	</array>
 	```
 
-6. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
+4. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
 
     1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
@@ -153,34 +145,18 @@ To enable the Intune App SDK, follow these steps:
 			* `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
 	> [!NOTE]
-	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 6) should have caused Xcode to generate one for your app.
+	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app.
 
-7. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
+5. Include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Be sure to save your changes before proceeding to the next step.
 
-8. If the app defines Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
-
-9. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
-
-10. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
-
-## Using the Intune MAM Configurator Tool
-
-The Intune MAM Configurator Tool now handles all info.plist manipulation that is needed to integrate our SDK manually. You can find it in the repo for the Intune App SDK for iOS. Any additional app specific settings such as multi-ID, AAD settings, etc are not handled by this tool. The tool has 3 parameters:
- 
+6. Use the IntuneMAMConfigurator tool that is included in the [SDK repo](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) to finish configuring your app's Info.plist. The tool has 3 parameters:
 |Property|How to use it|
 |---------------|--------------------------------|
 |- i |	`<Path to the input plist>` |
-|- e | The entitlements files |
-|- o |	(Optional) `<Path for the changed input plist>` |
-	
-The Intune MAM Configurator Tool can be used to update:
-* Any of your app's Main Storyboard and/or Main Nib files into the IntuneMAMSettings.
-* Any of your app's defined URL schemes in its Info.plist file with the -intunemam suffix, for each URL scheme.
-* Any of your app's defined Document types in its Info.plist file, for each item's "Document Content Type UTIs" array, add a duplicate entry for each string with a "com.microsoft.intune.mam." prefix.
-* Any of your app's app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the AppGroupIdentifiers key as an array of strings.
-	
-> [!Note]
-> If you decide to use this tool instead of manual info.plist manipulation, we recommend it be rerun whenever changes to your app's info.plist or entitlements have been made.
+|- e | `<Path to the entitlements file>` |
+|- o |	(Optional) `<Path to the output plist>` |
+
+If the '-o' parameter is not specified, the input file will be modified in-place. The tool is idempotent, and should be rerun whenever changes to the app's Info.plist or entitlements have been made. You should also download and run the latest version of the tool when updating the Intune SDK, in case Info.plist config requirements have changed in the latest release.
 
 ## Configure Azure Active Directory Authentication Library (ADAL)
 
@@ -212,9 +188,9 @@ Follow the instructions below if you want to share ADAL tokens between apps sign
 
 1. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-2. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
+2. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` to the keychain access groups.
 
-3. If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
+3. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
 ### Configure ADAL settings for the Intune App SDK
 
