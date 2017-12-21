@@ -43,6 +43,10 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune in the Azure portal
 
+### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546 -->
+
+End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
+
 ### New option for user authentication for Apple bulk enrollment <!-- 747625 -->
 Intune will give you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
 
@@ -101,6 +105,9 @@ We will simplify where you configure and manage conditional access. You will con
 ###  Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
 
 The overview page will show alerts for expired tokens and tokens that will soon expire. When you click on an alert for a single token, you'll go to the token's details page.  If you click on alert with multiple tokens, you'll go to a list of all tokens with their status. Admins should renew their tokens before the expiration date.
+
+#### Approve the Company Portal app for Android for Work <!--1797090 -->
+If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store. 
 
 
 <!-- the following are present prior to 1801 -->
