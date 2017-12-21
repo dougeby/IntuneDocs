@@ -1,4 +1,4 @@
-- name: Introduction
+- name: Overview
   href: introduction-intune.md
   expanded: true
   items:
@@ -22,16 +22,6 @@
       href: whats-new-archive.md
     - name: What's new archive (classic portal)
       href: whats-new-archive-classic.md
-  - name: High-level architecture
-    href: high-level-architecture.md
-  - name: Device and app lifecycles
-    href: introduction-device-app-lifecycles.md
-    items:
-    - name: Device lifecycle
-      href: device-lifecycle.md
-    - name: App lifecycle
-      href: app-lifecycle.md
-  - name: Common scenarios
     href: common-scenarios.md
   - name: Service description
     href: microsoft-intune-service-description.md
@@ -39,7 +29,7 @@
     href: known-issues.md
   - name: Get support
     href: get-support.md
-- name: Get started with Intune
+- name: Quickstarts
   href: get-started-evaluation.md
   items:
   - name: Navigating the Azure portal
@@ -54,6 +44,30 @@
     href: get-started-enroll.md
   - name: Assign apps
     href: get-started-apps.md
+- name: Tutorials
+  items:
+  - name: Protect Exchange Online
+    href: exchange-online-protect.md
+  - name: Reduce help desk costs
+    href: password-reset.md
+  - name: Prevent unauthorized access
+    href: data-outside-protect.md
+  - name: Prevent data leaks on non-managed devices
+    href: data-leak-prevention.md
+  - name: Compare MDM and MAM
+    href: byod-technology-decisions.md
+- name: Concepts
+  items:
+  - name: High-level architecture
+    href: high-level-architecture.md
+  - name: Device and app lifecycles
+    href: introduction-device-app-lifecycles.md
+    items:
+    - name: Device lifecycle
+      href: device-lifecycle.md
+    - name: App lifecycle
+      href: app-lifecycle.md
+  - name: Common scenarios
 - name: Plan deployment
   items:
   - name: Planning guide
@@ -79,18 +93,6 @@
       href: planning-guide-test-validation.md
     - name: Additional resources
       href: planning-guide-resources.md
-  - name: Scenario implementation guides
-    items:
-    - name: Protect Exchange Online
-      href: exchange-online-protect.md
-    - name: Reduce help desk costs
-      href: password-reset.md
-    - name: Prevent unauthorized access
-      href: data-outside-protect.md
-    - name: Prevent data leaks on non-managed devices
-      href: data-leak-prevention.md
-    - name: Compare MDM and MAM
-      href: byod-technology-decisions.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -114,7 +116,7 @@
         href: migration-guide-drive-adoption.md
       - name: Typical migration cycle
         href: migration-guide-cycle.md
-- name: How to
+- name: How-To Guides
   items:
   - name: Set up Intune
     href: setup-steps.md
@@ -593,7 +595,9 @@
       href: custom-settings-windows-10.md
     - name: Android for Work
       href: custom-settings-android-for-work.md
-  - name: Protect apps with Intune App SDK
+- name: SDKs and APIs 
+  items:
+   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
     - name: Get started with Intune App SDK
@@ -647,5 +651,7 @@
     items:
     - name: Graph APIs for Intune Reference
       href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
-- name: Glossary
-  href: intune-glossary.md
+- name: Resources 
+  items:
+  - name: Glossary
+    href: intune-glossary.md
