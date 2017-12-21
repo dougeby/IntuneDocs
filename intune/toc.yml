@@ -597,7 +597,7 @@
       href: custom-settings-android-for-work.md
 - name: SDKs and APIs 
   items:
-   - name: Protect apps with Intune App SDK
+  - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
     - name: Get started with Intune App SDK
