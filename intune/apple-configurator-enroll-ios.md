@@ -120,7 +120,7 @@ After you create the profile and assign serial numbers, you must export the prof
 3. Enter the **Host name or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
     You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
-5.  Select the iOS devices you want to manage, and then choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
+5.  Select the iOS devices you want to manage, and then choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual**, and then choose **Next**.
 6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
 7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
 8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
@@ -142,7 +142,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Apple Configurator** > **Profiles** >  choose the profile to export > **Export Profile**.
 2. Under **Direct enrollment**, choose **Download profile**, and save the file.
 3. Transfer the file to a Mac computer running [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to iOS devices.
-4. Prepare the device with Apple Configurator by using the following steps.
+4. Prepare the device with Apple Configurator by using the following steps:
     1. On a Mac computer, open Apple Configurator 2.0.
     2. Connect the iOS device to the Mac computer with a USB cord. Close Photos, iTunes, and other apps that open for the device when the device is detected.
     3. In Apple Configurator, choose the connected iOS device, and then choose the **Add** button. Options that can be added to the device appear in the drop-down list. Choose **Profiles**.
