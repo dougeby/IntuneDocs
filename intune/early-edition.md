@@ -93,24 +93,21 @@ A new setting in the Windows Information Protection (WIP) policy will allow you 
 
 Intune will introduce an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you will be able to view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
 
-#### Updates to compliance emails <!--1637547 -->
+### Updates to compliance emails <!--1637547 -->
 
 When an email is sent to report a noncompliant device, details about the noncompliant device will be included. The following article will be updated to indicate this fact: [Automate actions for noncompliance](#actions-for-noncompliance).
-
-
 
 ### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 --> 
 We will simplify where you configure and manage conditional access. You will configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you will also be able to access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
 
 ###  Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
-
 The overview page will show alerts for expired tokens and tokens that will soon expire. When you click on an alert for a single token, you'll go to the token's details page.  If you click on alert with multiple tokens, you'll go to a list of all tokens with their status. Admins should renew their tokens before the expiration date.
 
-#### Approve the Company Portal app for Android for Work <!--1797090 -->
-If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store. 
-
 ### Remote printing over a secure network <!-- 1709994  -->
-PrinterOn’s wireless mobile printing solutions enables users to remotely print from anywhere at any time over a secure network. PrinterOn has integrated with the Intune APP SDK for both iOS and Android. You can target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users can download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
+PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
+
+### Approve the Company Portal app for Android for Work <!--1797090 -->
+If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store. 
 
 <!-- the following are present prior to 1801 -->
 
