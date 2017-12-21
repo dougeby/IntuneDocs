@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: User - Intune Data Warehouse | Microsoft Docs 
+title: User - Intune Data Warehouse | Microsoft Docs
 description: Reference topic for the User category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,13 +25,13 @@ ms.custom: intune-classic
 
 # Reference for user entity
 
-The **User** category contains the **User** entity that defines user and agent properties in the data model.
+The **User** category contains the **User** entity that defines user properties in the data model.
 
 ## User
 
 The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
-The **User** entity collection contains data from the last month. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
+The **User** entity collection contains user data. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
 
 | Property  | Description | Example |
 |---------|------------|--------|
@@ -48,5 +48,5 @@ The **User** entity collection contains data from the last month. These records 
 | RowLastModifiedDateTimeUTC |Date and time in UTC when the record was last modified in the data warehouse  |11/23/2016 12:00:00 AM |
 
 ## Next steps
- - You can use the **Current User** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md). 
+ - You can use the **Current User** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).
  - To learn more more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
