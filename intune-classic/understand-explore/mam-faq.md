@@ -7,7 +7,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -108,17 +108,11 @@ This article provides answers to some frequently asked questions on Intune mobil
 
   3. **How does Intune protect the PIN against brute force attacks?** As part of the app PIN policy, the IT administrator can set the maximum number of times a user can try to authenticate their PIN before locking the app. After the number of attempts has been met, the Intune App SDK can wipe the "corporate" data in the app.
   
-**How does the Intune app PIN work between numeric type and passcode type?**
-MAM currently allows application-level PIN (iOS) with alphanumeric and special characters (called 'passcode') which requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for iOS. Without this, the passcode settings are not properly enforced for the targeted applications. Since apps will follow this integration on a rolling basis, the behavior between passcode and numeric PIN is temporarily changed for the end user and requires an important clarification. For the October 2017 release of Intune, the behaviour is as follows...
+  4. **Why do I have to set a PIN twice on apps from same publisher?**
+MAM (on iOS) currently allows application-level PIN with alphanumeric and special characters (called 'passcode') which requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for iOS. Without this, the passcode settings are not properly enforced for the targeted applications. This was a feature released in the Intune SDK for iOS v. 7.1.12. <br> In order to support this feature and ensure backward compatibility with previous versions of the Intune SDK for iOS, all PINs (either numeric or passcode) in 7.1.12+ are handled separately from the numeric PIN in previous versions of the SDK. Therefore, if a device has applications with Intune SDK for iOS versions before 7.1.12 AND after 7.1.12 from the same publisher, they will have to set up two PINs. <br><br> That being said, the two PINs (for each app) are not related in any way i.e. they must adhere to the app protection policy that’s applied to the app. As such, *only* if apps A and B have the same policies applied (with respect to PIN), user may setup the same PIN twice. <br><br> This behaviour is specific to the PIN on iOS applications that are enabled with Intune Mobile App Management. Over time, as applications adopt later versions of the Intune SDK for iOS, having to set a PIN twice on apps from the same publisher becomes less of an issue. Please see the note below for an example.
 
-Apps that have
-1. the same app publisher
-2. a passcode PIN targeted through the console and 
-3. adopted the SDK with this feature (v 7.1.12+) will be able to share the passcode between these apps. 
-
-Apps that have
-1. the same app publisher
-2. a numeric PIN targeted through the console will be able to share the numeric PIN between these apps. 
+>[!NOTE]
+> For example, if app A is built with a version prior to 7.1.12 and app B is built with a version greater than or equal to 7.1.12 from the same publisher, the end user will need to set up PINs separately for A and B if both are installed on an iOS device. <br> If an app C that has SDK version 7.1.9 is installed on the device, it will share the same PIN as app A. <br> An app D built with 7.1.14 will share the same PIN as app B. <br> If only apps A and C are installed on a device, then one PIN will need to be set. The same applies to if only apps B and D are installed on a device.
 
 **What about encryption?** IT administrators can deploy an app protection policy that requires app data to be encrypted. As part of the policy, the IT administrator can also specify when the content is encrypted.
 
