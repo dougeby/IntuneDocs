@@ -53,9 +53,6 @@ Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can 
 - [MDM Authority](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
-> [!NOTE]
-> Multifactor authentication (MFA) doesn't work during DEP enrollment if you have profile properties set to **Use with User Affinity** and you aren't using a Company Portal. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
-
 ## Get an Apple DEP token
 
 Before you can enroll iOS devices with DEP, you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP devices that your corporation owns. It also permits Intune to upload enrollment profiles to Apple and to assign devices to those profiles.
@@ -123,6 +120,10 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 5. If you chose **Enroll with User Affinity**, you have the option to let users authenticate with Company Portal instead of the Apple Setup Assistant.
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
+
+    > [!NOTE]
+    > Multifactor authentication (MFA) doesn't work during DEP enrollment if you have profile properties set to **Use with User Affinity** and you aren't using a Company Portal. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.

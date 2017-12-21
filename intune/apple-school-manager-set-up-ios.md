@@ -44,9 +44,6 @@ Apple School Manager enrollment can't be used with [Apple's Device Enrollment Pr
 - User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Devices purchased from the [Apple School Management](http://school.apple.com) program
 
->[!NOTE]
->Multifactor authentication (MFA) doesn't work during enrollment on Apple School Manager devices if you have profile properties set to **Use with User Affinity** and you aren't using a Company Portal. After enrollment, MFA works as expected on these devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
-
 ## Get an Apple token and assign devices
 
 Before you can enroll corporate-owned iOS devices with Apple School Manager, you need a token (.p7m) file from Apple. This token lets Intune sync information about Apple School Manager-participating devices. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles. While you are in the Apple portal, you can also assign device serial numbers to manage.
@@ -99,6 +96,10 @@ Now that you've installed your token, you can create an enrollment profile for A
 5. If you chose **Enroll with User Affinity**, you have the option to let users authenticate with Company Portal instead of the Apple Setup Assistant.
 
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
+
+    >[!NOTE]
+    >Multifactor authentication (MFA) doesn't work during enrollment on Apple School Manager devices if you have profile properties set to **Use with User Affinity** and you aren't using a Company Portal. After enrollment, MFA works as expected on these devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
