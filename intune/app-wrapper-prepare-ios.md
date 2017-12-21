@@ -402,8 +402,8 @@ Use the following security and privacy best practices when you use the App Wrapp
 ## Getting logs for your wrapped applications
 Use the following steps to get logs for your wrapped applications during troubleshooting.
 
-1. Go to the iOS Settings page on your device and select your LOB app.
-2. Toggle the Diagnostics Console to the on position.
+1. Go to the iOS Settings app on your device and select your LOB app.
+2. Toggle the **Diagnostics Console** to **On**.
 3. Launch your LOB application.
 4. Click on the "Get Started" link.
 5. You can now share logs through email or copying them to a OneDrive location.
