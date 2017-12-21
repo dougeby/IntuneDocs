@@ -109,6 +109,8 @@ The overview page will show alerts for expired tokens and tokens that will soon 
 #### Approve the Company Portal app for Android for Work <!--1797090 -->
 If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store. 
 
+### Remote printing over a secure network <!-- 1709994  -->
+PrinterOn’s wireless mobile printing solutions enables users to remotely print from anywhere at any time over a secure network. PrinterOn has integrated with the Intune APP SDK for both iOS and Android. You can target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users can download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
 
 <!-- the following are present prior to 1801 -->
 
