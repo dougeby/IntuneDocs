@@ -216,35 +216,39 @@
     - name: Add apps
       href: apps-add.md
       items:
-      - name: Android store apps
-        href: store-apps-android.md
-      - name: Android LOB apps
-        href: lob-apps-android.md
-      - name: iOS store apps
-        href: store-apps-ios.md
-      - name: iOS LOB apps
-        href: lob-apps-ios.md
+      - name: Store apps
+        items:
+        - name: Android store apps
+          href: store-apps-android.md
+        - name: iOS store apps
+          href: store-apps-ios.md
+        - name: Windows Phone 8.1 store apps
+          href: store-apps-windows-phone-8-1.md
+        - name: Microsoft Store apps
+          href: store-apps-windows.md
+        - name: Android for Work apps
+          href: apps-add-android-for-work.md
+        - name: Office 365 apps for Windows 10
+          href: apps-add-office365.md
+        - name: Office 365 apps for macOS
+          href: apps-add-office365-macos.md        
+      - name: Build your app (LOB)
+        items:
+        - name: Android LOB apps
+          href: lob-apps-android.md
+        - name: iOS LOB apps
+          href: lob-apps-ios.md
+        - name: Windows Phone LOB apps
+          href: lob-apps-windows-phone.md
+        - name: Windows LOB apps
+          href: lob-apps-windows.md
       - name: Web apps
         href: web-app.md
-      - name: Windows Phone 8.1 store apps
-        href: store-apps-windows-phone-8-1.md
-      - name: Windows Phone LOB apps
-        href: lob-apps-windows-phone.md
-      - name: Microsoft Store apps
-        href: store-apps-windows.md
-      - name: Windows LOB apps
-        href: lob-apps-windows.md
-      - name: Android for Work apps
-        href: apps-add-android-for-work.md
-      - name: Office 365 apps for Windows 10
-        href: apps-add-office365.md
-      - name: Office 365 apps for macOS
-        href: apps-add-office365-macos.md        
-    - name: Assign apps
+    - name: Deploy apps
       href: apps-deploy.md
     - name: Monitor apps
       href: apps-monitor.md
-    - name: App configuration policies
+    - name: Configure apps
       href: app-configuration-policies-overview.md
       items:
       - name: iOS managed devices
