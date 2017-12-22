@@ -5,8 +5,8 @@ title: Enroll Android devices in Intune | Microsoft Docs
 titlesuffix: "Azure portal"
 description: Learn how to enroll Android devices in Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS 
+ms.author: erikje
 manager: angrobe
 ms.date: 12/07/2017
 ms.topic: article

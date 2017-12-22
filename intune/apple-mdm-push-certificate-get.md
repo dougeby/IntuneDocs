@@ -5,8 +5,8 @@ title: Get an Apple MDM Push certificate
 titlesuffix: "Azure portal"
 description: Learn the steps for getting an Apple MDM Push certificate to manage iOS devices with Intune."
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS 
+ms.author: erikje
 manager: angrobe
 ms.date: 10/04/2017
 ms.topic: article
