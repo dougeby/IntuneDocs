@@ -4,8 +4,8 @@
 title: Enable BYOD with Microsoft Intune
 description: A high-level workflow for setting up Intune to enable a bring-your-own-device (BYOD) solution to your organization.
 keywords:
-author: lindavr
-ms.author: lindavr
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/26/2017
 ms.topic: article

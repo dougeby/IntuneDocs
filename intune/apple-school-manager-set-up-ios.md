@@ -5,8 +5,8 @@ title: Set up Apple School Manager Program enrollment for iOS devices
 titlesuffix: "Azure portal"
 description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS 
+ms.author: erikje
 manager: angrobe
 ms.date: 09/13/2017
 ms.topic: article
