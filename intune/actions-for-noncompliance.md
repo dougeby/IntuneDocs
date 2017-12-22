@@ -5,8 +5,8 @@ title: Actions for noncompliance with Intune
 titleSuffix: "Intune on Azure"
 description: "Learn how to create actions for noncompliance with Intune"
 keywords:
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/21/2017
 ms.topic: article
