@@ -5,8 +5,8 @@ title: How to wipe only corporate data from apps
 titleSuffix: "Azure portal"
 description: Learn how to selectively wipe apps with Microsoft Intune."
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/05/2017
 ms.topic: article

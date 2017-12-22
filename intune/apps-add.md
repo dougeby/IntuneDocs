@@ -5,8 +5,8 @@ title: How to add apps to Microsoft Intune
 titlesuffix: "Azure portal"
 description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
