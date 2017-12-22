@@ -44,7 +44,7 @@
     href: get-started-enroll.md
   - name: Assign apps
     href: get-started-apps.md
-- name: Tutorials
+- name: Scenario implementation guides
   items:
   - name: Protect Exchange Online
     href: exchange-online-protect.md
