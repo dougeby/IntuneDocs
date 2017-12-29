@@ -177,6 +177,7 @@ Follow the steps below to link your app to the ADAL binaries:
 1. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) on how to download ADAL using Git submodules or CocoaPods.
 
 2. Add the the ADAL framework (option 1) or static library (option 2) to your project:
+	
 	**Option 1 (recommended)**: Drag `ADAL.framework` to the **Embedded Binaries** list of the project target.
 	
 	**Option 2**: Drag the `libADALiOS.a` library to the **Linked Frameworks and Libraries** list of the project target. Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the Xcode UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries.
@@ -228,8 +229,7 @@ To receive Intune app protection policy, apps must initiate an enrollment reques
 
 ### Apps that use ADAL
 
-Apps which already use ADAL should call the `registerAndEnrollAccount` method on the `IntuneMAMEnrollmentManager` instance 
-after the user has been successfully authenticated:
+Apps which already use ADAL should call the `registerAndEnrollAccount` method on the `IntuneMAMEnrollmentManager` instance after the user has been successfully authenticated:
 
 ```objc
 /*
