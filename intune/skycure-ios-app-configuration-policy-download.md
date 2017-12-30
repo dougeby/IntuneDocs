@@ -5,10 +5,10 @@ title: Download Skycure iOS app configuration policy to use with Intune
 titlesuffix: "Azure portal"
 description: Download Skycure iOS app configuration policy to use with Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
