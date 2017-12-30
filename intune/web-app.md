@@ -5,7 +5,7 @@ title: How to add web apps to Intune
 titleSuffix: "Azure portal"
 description: Learn about adding web apps to Intune."
 keywords:
-author: mattbriggs
+author: erikre
 ms.author: erikre
 manager: angrobe
 ms.date: 12/06/2017

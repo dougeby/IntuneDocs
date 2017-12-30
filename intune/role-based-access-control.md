@@ -5,8 +5,8 @@ title: RBAC with Intune
 titleSuffix: "Azure portal"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/21/2017
 ms.topic: article

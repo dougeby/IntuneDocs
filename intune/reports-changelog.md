@@ -4,8 +4,8 @@ title: Intune Data Warehouse Change log | Microsoft Docs
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: erikre
-ms.author: mabrigg
-manager: erikre
+ms.author: erikre
+manager: angrobe
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod:

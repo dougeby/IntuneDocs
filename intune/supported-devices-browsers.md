@@ -4,8 +4,8 @@
 title: Supported devices - Microsoft Intune
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS  
+ms.author: erikje
 manager: angrobe
 ms.date: 11/06/2017
 ms.topic: get-started-article

@@ -8,7 +8,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
