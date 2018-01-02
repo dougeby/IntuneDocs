@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Unenroll your macOS device from Intune
 
-When you unenroll your macOS device from Intune, your device will no longer be able to access company resources and will no longer be managed by Intune.
+When you unenroll your macOS device from Intune, your device is no longer able to access company resources.
 
 Follow these steps to unenroll your macOS device from management:
 
@@ -41,11 +41,11 @@ Follow these steps to unenroll your macOS device from management:
 
 When you unenroll your device from Intune, here's what happens:
 
--   Your device won’t appear in the Company Portal anymore.
+-   Your device doesn’t appear in the Company Portal.
 
--   You can’t install apps from the Company Portal anymore.
+-   You can’t install apps from the Company Portal.
 
--   Any settings that were changed on your device when you added it (for example, disabling the camera, or requiring a certain password length) will no longer apply.
+-   Any settings that were changed on your device when you added it (e.g., disabling the camera, or requiring a certain password length) no longer apply.
 
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
@@ -55,6 +55,6 @@ When you unenroll your device from Intune, here's what happens:
 
 -   Company email access may be removed from the device.
 
--   Devices that are configured for email only won't appear in the Company Portal app or website anymore.
+-   Devices that are configured for email only no longer appear in the Company Portal app or website.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
