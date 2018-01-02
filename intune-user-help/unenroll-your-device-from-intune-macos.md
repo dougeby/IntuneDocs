@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Unenroll your macOS device from Intune
 
-When you unenroll your iOS device from Intune, your device will no longer be able to access company resources and will no longer be managed by Intune.
+When you unenroll your macOS device from Intune, your device will no longer be able to access company resources and will no longer be managed by Intune.
 
 Follow these steps to unenroll your macOS device from management:
 
@@ -53,7 +53,7 @@ When you unenroll your device from Intune, here's what happens:
 
 -   You might not be able to connect to your company network using Wi-Fi or a virtual private network (VPN) anymore.
 
--   Company email profiles are removed from the device.
+-   Company email access may be removed from the device.
 
 -   Devices that are configured for email only won't appear in the Company Portal app or website anymore.
 
