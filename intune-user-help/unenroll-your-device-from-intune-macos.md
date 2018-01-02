@@ -45,7 +45,7 @@ When you unenroll your device from Intune, here's what happens:
 
 -   You can’t install apps from the Company Portal.
 
--   Any settings that were changed on your device when you added it (e.g., password length) no longer apply.
+-   Any settings that were changed on your device when you added it (like password length) no longer apply.
 
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
