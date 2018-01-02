@@ -33,6 +33,7 @@
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Submit enrollment errors](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Send errors to Microsoft](send-logs-to-microsoft-android.md)
 
 ### Operating system questions
 #### [Update your device](you-need-to-update-your-android-device.md)
