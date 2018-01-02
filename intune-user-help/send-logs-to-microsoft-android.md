@@ -38,6 +38,6 @@ If this is happening to you, the Company Portal team needs some information to t
 2.	Go to __Settings__ > __Privacy__ > __Diagnostics & Usage__ > __Diagnostics & Usage Data__. This is a list of app activities that have happened, ranging from crashes to general usage patterns, and it does not contain any personal information. This list is organized from most recent to oldest. If you were able to reproduce the issue, this should be the first item that appears on the list of app activity on this page. If you were unable to reproduce the issue, scroll down until you find the first item that begins with “Company Portal”, then tap it to open it.
 3.	Press and hold, then drag the little blue dots up and down until all of the text in the report has been selected. Tap __Copy__ in the popup menu.
 4.	Open your email app, and paste that content into the body of the email. Send that email to
-<a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
+<a href="mailto:wintunedroidfbk@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">wintunedroidfbk@microsoft.com</a>.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
