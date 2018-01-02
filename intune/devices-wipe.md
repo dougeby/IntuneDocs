@@ -84,7 +84,7 @@ The **remove company data** command removes managed app data (where applicable),
 
 ### Android
 
-|Data type|Android|Android Samsung KNOX Standard|
+|Data type|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|
