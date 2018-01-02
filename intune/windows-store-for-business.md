@@ -5,8 +5,8 @@ title: Manage apps from Microsoft Store for Business
 titlesuffix: "Azure portal"
 description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track them."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: article
