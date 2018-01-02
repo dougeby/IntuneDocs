@@ -257,23 +257,25 @@
         href: app-configuration-policies-use-android.md
       - name: Managed apps
         href: app-configuration-policies-managed-app.md
-    - name: Use iOS app provisioning profiles
-      href: app-provisioning-profile-ios.md
-    - name: Selectively wipe apps
-      href: apps-selective-wipe.md
-    - name: Work with volume-purchased apps and books
-      href: vpp-apps.md
+      - name: Use iOS app provisioning profiles
+        href: app-provisioning-profile-ios.md
+      - name: Work with volume-purchased apps and books
+        href: vpp-apps.md
+        items:
+        - name: iOS VPP apps
+          href: vpp-apps-ios.md
+        - name: Microsoft Store for Business apps
+          href: windows-store-for-business.md
+        - name: iOS eBooks
+          href: vpp-ebooks-ios.md
+      - name: Configure the Company Portal app
+        href: company-portal-app.md
+      - name: Configure the Managed Browser
+        href: app-configuration-managed-browser.md
+    - name: Protect apps
       items:
-      - name: iOS VPP apps
-        href: vpp-apps-ios.md
-      - name: Microsoft Store for Business apps
-        href: windows-store-for-business.md
-      - name: iOS eBooks
-        href: vpp-ebooks-ios.md
-    - name: Configure the Company Portal app
-      href: company-portal-app.md
-    - name: Configure the Managed Browser
-      href: app-configuration-managed-browser.md
+      - name: Selectively wipe apps
+        href: apps-selective-wipe.md
   - name: Configure devices
     href: device-profiles.md
     items:
