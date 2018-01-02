@@ -22,7 +22,6 @@
       href: whats-new-archive.md
     - name: What's new archive (classic portal)
       href: whats-new-archive-classic.md
-    href: common-scenarios.md
   - name: Service description
     href: microsoft-intune-service-description.md
   - name: Known issues
@@ -68,6 +67,7 @@
     - name: App lifecycle
       href: app-lifecycle.md
   - name: Common scenarios
+    href: common-scenarios.md
 - name: Plan deployment
   items:
   - name: Planning guide
