@@ -115,8 +115,8 @@ To enable the Intune App SDK, follow these steps:
     		* ImageIO.framework
     		* LocalAuthentication.framework
     		* AudioToolbox.framework
-		* QuartzCore.framework
-		* WebKit.framework
+    		* QuartzCore.framework
+    		* WebKit.framework
 
 3. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
