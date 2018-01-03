@@ -45,11 +45,11 @@ You can manage the following devices using Intune mobile device management:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### Supported Samsung KNOX Standard devices
+### Supported Samsung Knox Standard devices
 
-The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify KNOX compatibility with your device reseller before you purchase and deploy Samsung devices.
+The Company Portal app only attempts Samsung Knox activation during MDM enrollment if the device appears in the [list of supported Knox devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid Knox activation errors that prevent MDM enrollment. Devices that don't support Samsung Knox activation enroll as standard Android devices. A Samsung device might have some model numbers that support Knox, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
 
-The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
+The following list of Samsung device models do not support Knox and are enrolled as native Android devices by the Company Portal app for Android:
 
 | **Device Name** | **Device Model Numbers** |
 | --- | --- |
