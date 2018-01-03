@@ -4,8 +4,8 @@
 title: How to add Windows Phone 8.1 store apps to IntunetitleSuffix: "Azure portal"
 description: Learn about adding Windows Phone 8.1 store apps to Intune."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
