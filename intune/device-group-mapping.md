@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: How to use device categories in IntunetitleSuffix: "Azure portal"
+title: How to use device categories in Intune
+titleSuffix: "Azure portal"
 description: Learn how to use device categories that users can choose when they enroll their devices in Intune."
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
