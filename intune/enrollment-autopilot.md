@@ -4,8 +4,8 @@
 title: Enroll Windows devices using Windows AutoPilot Deployment Program
 description: "Learn how to enroll new Windows 10 devices using Windows AutoPilot Deployment program."
 keywords:
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 11/08/2017
 ms.topic: article
