@@ -3,8 +3,8 @@
 title: Get data from the Data Warehouse API with a REST client 
 description: Retrieve data from the Intune Data Warehouse using a RESTful API.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article

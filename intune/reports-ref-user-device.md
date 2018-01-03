@@ -3,8 +3,8 @@
 title: User Device Association - Intune Data Warehouse | Microsoft Docs 
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/19/2017
 ms.topic: article

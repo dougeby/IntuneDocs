@@ -3,8 +3,8 @@
 title: Intune Data Warehouse API endpoint | Microsoft Docs 
 description: Reference topic describes the API URL structure.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
