@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 # Outlook won't sync managed email when battery optimization for Android is turned on
 
 > [!IMPORTANT]
-> This issue is documented here because we have been receiving an increased number of customer reports about it. If you continue to experience this issue after you have taken these steps, contact [your company support](https://portal.manage.microsoft.com) for additional help.
+> This issue is documented here because we have been receiving an increased number of customer reports about it. If you continue to experience this issue after you have taken these steps, contact [your company support](https://portal.manage.microsoft.com#HelpDeskDialog) for additional help.
 
 Enrolling your device in Intune lets you get access to company resources. One of the most common resources is email access. An issue that we have seen with accessing email through Outlook for Android devices has been when battery optimization is turned on. Battery optimization may turn on automatically to try to help your device stay powered on for as long as possible. Battery optimization is partially able to help you this way because it tries to stop automatic email downloads.
 
@@ -79,4 +79,4 @@ Another example of a different way to locate these settings is through searching
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

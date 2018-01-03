@@ -5,8 +5,8 @@ title: Enroll macOS devices in Intune
 titlesuffix: "Azure portal"
 description: Learn how to enroll macOS devices in Intune."
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 nmanager: angrobe
 ms.date: 10/30/2017
 ms.topic: article

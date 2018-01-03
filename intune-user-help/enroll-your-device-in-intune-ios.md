@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Your company has lots of proprietary information, from email, to files, networks
 - Make sure that you finish the entire process once you start. Pausing for more than a few minutes usually stops your progress and requires you to start over.
 - If this process should fail, you need to return to the Company Portal app to try again.
 - Make sure that your Wi-Fi is working, and that Safari works on your device.
-- Download the [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## Using the Company Portal app to set up access to company resources
@@ -64,7 +64,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Profile open in settings.](./media/ios-9-cp-enroll-1711.png)|Tap **Install**.|
 |![Installing profile modal dialog from bottom of screen.](./media/ios-10-cp-enroll-1711.png)|Tap **Install**.|
 |![Profile is installing loading screen.](./media/ios-11-cp-enroll-1711.png)|Wait for this to load.|
-|![Profile management warning screen.](./media/ios-12-cp-enroll-1711.png)|This warning, written by Apple, lets you know more about what types of actions could be taken on a device under management. Find out more about [what information your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Profile management warning screen.](./media/ios-12-cp-enroll-1711.png)|This warning, written by Apple, lets you know more about what types of actions could be taken on a device under management. Find out more about [what information your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
 |![System prompt asking about trust on remote management.](./media/ios-13-cp-enroll-1711.png)|Tap **Trust** to allow your company to manage corporate information and settings on your device.|
 |![Profile finishing installing load screen.](./media/ios-14-cp-enroll-1711.png)|Wait for this to load.|
 |![Profile installed screen.](./media/ios-15-cp-enroll-1711.png)|Your profile is installed and your device's corporate information and settings are much closer to being managed.|
@@ -82,4 +82,4 @@ Your company has lots of proprietary information, from email, to files, networks
 > [!Note]
 > You may have a few more steps to complete before your device is fully managed. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

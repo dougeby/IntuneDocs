@@ -5,8 +5,8 @@ title: Intune custom settings for Windows 10 devices
 titlesuffix: "Azure portal"
 description: Learn about the settings you can use in a Windows 10 custom profile."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 05/09/2017
 ms.topic: article

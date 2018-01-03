@@ -4,8 +4,8 @@
 title: Certificate profiles for resource access 
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
