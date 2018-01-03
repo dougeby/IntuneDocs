@@ -3,8 +3,8 @@
 title: Application | Microsoft Docs
 description: Reference topic for the Application category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
