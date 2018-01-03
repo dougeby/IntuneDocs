@@ -27,12 +27,14 @@
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
+#### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 
 #### Using logs to fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Submit enrollment errors](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Send errors to Microsoft](send-logs-to-microsoft-android.md)
 
 ### Operating system questions
 #### [Update your device](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 #### [Send errors to your company](send-errors-to-your-it-admin-ios.md)
 #### [Send errors to Microsoft](send-logs-to-microsoft-ios.md)
+#### [An existing company email account was found](existing-company-email-account-found.md)
 #### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 #### [An error appeared](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Enrolling other versions of Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
-### [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Enroll your Windows 10 device](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
+#### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
-
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
 ### [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)

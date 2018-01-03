@@ -5,8 +5,8 @@ title: Enroll devices - device enrollment manager
 titlesuffix: "Azure portal"
 description: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 11/08/2017
 ms.topic: article

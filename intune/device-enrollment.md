@@ -5,8 +5,8 @@ title: What is Microsoft Intune device enrollment
 titlesuffix: "Azure portal"
 description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/29/2017
 ms.topic: get-started-article

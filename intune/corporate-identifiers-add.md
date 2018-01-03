@@ -5,8 +5,8 @@ title: Add corporate identifiers to Intune
 titlesuffix: "Azure portal"
 description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune. "
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 08/23/2017
 ms.topic: article
