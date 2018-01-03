@@ -27,12 +27,14 @@
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
+#### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 
 #### Using logs to fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Submit enrollment errors](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Send errors to Microsoft](send-logs-to-microsoft-android.md)
 
 ### Operating system questions
 #### [Update your device](you-need-to-update-your-android-device.md)
