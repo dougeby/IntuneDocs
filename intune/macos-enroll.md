@@ -52,7 +52,7 @@ To block macOS devices from enrollment, see [Set device type restrictions](enrol
 
 ## Tell your users how to enroll their devices to access company resources
 
-You'll need to tell your end users to go to the [Company Portal website](http://portal.manage.microsoft.com), and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Tell your end users to go to the [Company Portal website](http://portal.manage.microsoft.com) and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 For information about other end-user tasks, see these articles:
 
