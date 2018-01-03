@@ -5,8 +5,8 @@ title: Enroll iOS devices - Device Enrollment Program
 titlesuffix: "Azure portal"
 description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/03/2017
 ms.topic: article

@@ -5,8 +5,8 @@ title: Choose how to enroll Windows devices in Intune
 titlesuffix: "Azure portal"
 description: Learn how to set up enrollment of Windows devices in Microsoft Intune."
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
