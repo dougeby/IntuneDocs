@@ -109,13 +109,13 @@
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [Enrolling Windows 10 devices](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Enrolling other versions of Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
-### [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Enroll your Windows 10 device](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
+#### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
-
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
 ### [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)
