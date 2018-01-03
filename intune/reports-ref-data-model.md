@@ -3,7 +3,7 @@
 title: Data Warehouse data model | Microsoft Docs 
 description: The Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment.
 keywords: Intune Data Warehouse
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017

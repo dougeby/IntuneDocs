@@ -5,7 +5,7 @@ title: How to add Android line-of-business apps to Intune
 titlesuffix: "Azure portal"
 description: Learn about adding Android line-of-business apps to Intune."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: angrobe
 ms.date: 10/12/2017
