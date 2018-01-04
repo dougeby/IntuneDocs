@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/14/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,6 @@ If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end us
 
 You need the following to configure conditional access with Jamf Pro:
 
-- Access to the Intune Private Preview for macOS conditional access
 - Jamf Pro 10.1.0 or later
 - [Company Portal app for macOS](https://aka.ms/macoscompanyportal)
 - macOS devices with OS X 10.11 Yosemite or later
