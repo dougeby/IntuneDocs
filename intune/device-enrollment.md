@@ -73,7 +73,7 @@ The following table offers an overview of Intune enrollment methods with their c
 | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](./android-enroll.md)|
-|**[DEM](#dem)**|	No |No |No	|[More information](./device-enrollment-program-enroll-ios.md)|
+|**[DEM](#dem)**|	No |No |No	|[More information](./device-enrollment-manager-enroll)|
 |**Android for Work**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
