@@ -43,6 +43,12 @@ Before you begin troubleshooting, check to make sure that you've configured Intu
 -	[Set up Android device management](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
 -	[Set up Android for Work device management](/intune-classic/deploy-use/set-up-android-for-work)
 
+You can also make sure that the time and date on the user's device are set correctly:
+
+1. Restart the device.
+2. Make sure that the time and date are set close to GMT standards (+ or - 12 hours) relative to the end user's time zone.
+3. Uninstall and reinstall the Intune company portal (if applicable).
+
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
 - [Send Android enrollment errors to your IT admin](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
