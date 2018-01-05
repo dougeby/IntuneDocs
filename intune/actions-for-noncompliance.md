@@ -39,25 +39,19 @@ There are two types of actions:
 
 ## Before you begin
 
-You need to have at least one device compliance policy created to set up actions for non-compliance.
-
--   Learn how to create a device compliance policy for:
+- You need to have at least one device compliance policy created to set up actions for non-compliance. Learn how to create a device compliance policy for the following platforms:
 
     -   [Android](compliance-policy-create-android.md)
-
     -   [Android for Work](compliance-policy-create-android-for-work.md)
-
     -   [iOS](compliance-policy-create-ios.md)
-    
     -   [macOS](compliance-policy-create-mac-os.md)
-
     -   [Windows](compliance-policy-create-windows.md)
 
-You need to have Azure AD conditional access set up ready when planning to use device compliance policies to block devices from using corporate resources.
+- You need to have Azure AD conditional access set up ready when planning to use device compliance policies to block devices from using corporate resources. Learn [how to setup EMS conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
-- Learn [how to setup EMS conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+- You need to have a notification message template created. The notification message template is used later in the process of creating actions for non-compliance to send e-mail to your users.
 
-Additionally, you need to have a notification message template created. The notification message template is used later in the process of creating actions for non-compliance to send e-mail to your users.
+- You need to configure Exchange Online to accept email from IntuneNotificationService@microsoft.com to allow Intune to send the email notification. For details, see [Configure message delivery restrictions for a mailbox](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
 
 ### To create a notification message template
 
@@ -104,8 +98,6 @@ You can add an action by the time you’re creating a new device compliance poli
 3.  On the **device compliance policy properties** blade, choose **Actions for noncompliance**.
 
 4.  On the **Actions for noncompliance** blade, choose **Add** to specify action parameters. You can choose the message template previously created, additional recipients, and the grace period schedule. You can specify the number of days (0 to 365) on the schedule, then you can enforce the conditional access policies. If you specify **0** number of days, this means conditional access must **immediately** block access to corporate resources once the devices are non-compliant with device compliance policies.
-    > [!Important]    
-    > Regardless of the actions that you choose, at a minimum, you must choose the **Block in AAD** action or the device might be compliant in Azure Active Directory, but non-compliant in Configuration Manager or Intune. 
 
 5.  Once you're done adding your information, choose **Add**, then **OK**.
 
