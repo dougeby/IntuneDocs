@@ -34,7 +34,7 @@ ms.custom: intune-azure
 
 Microsoft Intune integrates with Windows Hello for Business (formerly Microsoft Passport for Work), an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or a virtual smart card.
 
-Hello for Business lets you use a *user gesture* to sign in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
+Windows Hello for Business lets you use a *user gesture* to sign in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
 
 Intune integrates with Hello for Business in two ways:
 
