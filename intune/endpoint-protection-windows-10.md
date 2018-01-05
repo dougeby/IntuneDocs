@@ -183,50 +183,78 @@ Help [prevent actions and apps](https://docs.microsoft.com/windows/threat-protec
 
 #### Rules to prevent Office Macro threats
 
-https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionMenu/deviceConfiguration/menuContent/configuration
+Block Office apps from taking the following actions:
+
+- **Office apps injecting into other processes (no exceptions)**
+- **Office apps/macros creating executable content**
+- **Office apps launching child processes**
+- **Win32 imports from Office macro code**
+
+#### Rules to prevent script threats
+
+Block these to help prevent against script threats:
+
+- **Obfuscated js/vbs/ps/macro code**
+- **js/vbs executing payload downloaded from Internet (no exceptions)**
+
+#### Rules to prevent email threats
+
+Block this to help prevent email threats:
+
+- **Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)**
+
+#### Attack Surface Reduction exceptions
+
+- **Files and folder to exclude from attack surface reduction rules** - Import/add a list of locations to exclude from the configured rules.
 
 ### Controlled folder access
 
+Help protect valuable data from malicious apps and threats, such as ransomware.
+
+- **Folder protection** - Protect files and folders from unwanted changes by malicious apps. You can import a **List of apps that have access to protected folders** or add them manually. You can also add a **List of additional folders that need to be protected** with an upload or adding them manually.
+
 ### Network filtering
+
+Block outbound connections from any app to low reputation IP/domains.
 
 ### Exploit protection
 
+Block **User editing of the exploit protection interface** by uploading an XML file that allows you to configure memory, control flow, and policy restrictions that can be used to block an application from exploits.
+
+To enable exploit protection, create an XML file representing the system and application mitigation settings of your choice. You can do so using one of two methods:
+
+ 1. PowerShell: Use one or more of the Get-ProcessMitigation, Set-ProcessMitigation, and ConvertTo-ProcessMitigationPolicy PowerShell cmdlets to configure mitigation settings and export an XML representation of them.
+
+ 2. Windows Defender Security Center UI: In the Windows Defender Security Center, click on App & browser control and then scroll to the bottom of the resulting screen to find Exploit Protection. First, use the System settings and Program settings tabs to configure mitigation settings. Then, find the Export settings link at the bottom of the screen to export an XML representation of them.
+
 ## Windows Defender Application Control
+
+Use **Application control code integrity policies** to choose additional apps that either need to be audited by, or can be trusted to run by Windows Defender Application Control. Windows components and all apps from Windows store are automatically trusted to run.
+
+Applications will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs.
 
 ## Windows Defender Security Center
 
+The Windows Defender Security Center app operates as a separate app or process from each of the individual features, and will display notifications through the Action Center. It acts as a collector or single place to see the status and perform some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
 
+#### Windows Defender Security Center app and notifications
 
-### Network isolation policies (find a place for these somewhere in the docs if not here)
+Block end user access to the various areas of the Windows Defender Security Center app. Hiding a section will also block related notifications.
 
+- **Virus and threat protection**
+- **Device performance and health**
+- **Firewall and network protection**
+- **App and browser control**
+- **Family options**
+- **Notifications from the displayed areas of app** - Choose which notifications to display to end users. Non-critical notifications include summaries of Windows Defender Antivirus activity, including notifications when scans have completed. All other notifications are considered critical.
 
+#### IT contact Information
 
+Provide IT contact information to appear in Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. You must define the **IT organizaiton name** and at least one of the following contact options:
 
-
-### Windows Defender Device Guard
-
-
-### Windows Hello for Business
-
-[Windows Hello for Business](windows-hello.md) lets you use a *user gesture* to sign in, instead of a password.
-
-
-
-### Windows Defender Security Center
-
-
-
-
-## Windows Defender Advance Threat Protection
-
-Brief explanation of WDATP
-
-### Onboarding and offboarding
-
-
-
-### Configuring settings
-
+- **IT department phone number or Skype ID**
+- **IT department email address**
+- **IT support website URL**
 
 ## Next steps
 
