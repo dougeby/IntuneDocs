@@ -34,7 +34,6 @@ The **actions for non-compliance** allow you to configure a time-ordered sequenc
 There are two types of actions:
 
 -   **Notify end-users via e-mail**: You can customize your email notification before sending it to the end user. Intune provides customization of the recipients, subject, and message body, including company logo, and contact information.
-
 -   **Mark device non-compliant**: You can determine a schedule in number of days after the device is marked not compliant. You can configure the action to take effect immediately or give the user a grace period to be compliant with your device compliance policies.
 
 ## Before you begin
@@ -56,15 +55,10 @@ There are two types of actions:
 ### To create a notification message template
 
 1. Go to the [Intune on Azure portal](https://portal.azure.com), and sign in with your Intune credentials.
-
 2. Choose **More services** from the left menu, then type **Intune** in the text box filter.
-
 3. Choose **Intune**
-
 4. Choose **Device compliance**, then choose **Notifications** under the **Manage** section.
-
 5. Choose **Create notification**, then enter the following information:
-
     - Name
     - Subject
     - Message
