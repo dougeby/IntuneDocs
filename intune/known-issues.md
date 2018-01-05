@@ -40,34 +40,13 @@ If you want to request a new feature for Intune, consider filing a report on our
 
 ## Migration
 
+### Intune legacy PC client features are only available in the Silverlight console
+
+The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+
 ### Groups created by Intune during migration might affect functionality of other Microsoft products
 
 When you migrate from Intune to the Azure portal, you might see a new group named **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. This group contains all users in your Azure Active Directory, not only Intune licensed users. This usage can cause issues with other Microsoft products if you expect some existing or new users to not be a member of any groups.
-
-### Secondary migration required for select capabilities
-
-Intune accounts created before January 2017 must be migrated before the following capabilities can be used in the Azure portal:
-
-- Corporate Device Enrollment profiles
-- Apple Device Enrollment Program
-- Predeclare corporate devices by iOS serial number
-- Device Enrollment Manager accounts
-- Apple Volume Purchase Program
-
-Because these capabilities cannot be managed from both the Intune (Silverlight) console and Azure portal, the migration:
-- Disables them in the classic portal
-- Enables them in the Azure portal  
-
-After September 22, 2017, the migration of these features will be merged into the primary migration to Azure. If your account was already migrated to use the Azure portal, this secondary migration may have been completed by now. If not, these capabilities will be migrated to Azure by November. Once your account’s migration begins, it will complete the same day. Migration can take up to 6 hours from the time these features are disabled in the Intune classic portal.
-
-If you now manage these Intune capabilities in the Azure portal, be aware of the following points:
-
-#### Removes default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support a default Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) devices. This functionality, available in the Intune (Silverlight) console, is discontinued to prevent unintentional profile assignment. When DEP serial numbers sync in the Azure portal, no Corporate Device Enrollment profile is assigned. An enrollment profile must be assigned before using the device.
-
-#### Apple DEP token restored with migration
-
-If you deleted an Apple Device Enrollment Program token in the Intune (Silverlight) portal and do not upload a new token to the Azure portal, the original token is restored in the Azure portal when you migrate. To remove this token and prevent DEP enrollment, delete the token from the Azure portal.
 
 ### Status blades for migrated policies do not work
 
@@ -80,6 +59,9 @@ iOS volume-purchased apps are displayed, and can be assigned only for the same c
 
 ### Multiple copies of the same iOS volume-purchase program are uploaded
 Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.
+
+### Assigning Office 365 to macOS devices
+The feature to assign Office 365 to macOS devices with Microsoft Intune will be available once our UI update is complete.
 
 <!-- ## Groups -->
 

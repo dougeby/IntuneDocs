@@ -54,4 +54,4 @@ To update the Company Portal app:
     > If you are unable to access the Microsoft Store, contact your company support.
 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -4,8 +4,8 @@
 title: VPN connections 
 description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 05/15/2017
 ms.topic: article

@@ -5,8 +5,8 @@ title: Enroll iOS devices - Device Enrollment Program
 titlesuffix: "Azure portal"
 description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/03/2017
 ms.topic: article
@@ -84,7 +84,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
    ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
 
-5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.  
 
 
 7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
@@ -163,11 +163,11 @@ Now that you've installed your token, you can create an enrollment profile for D
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
-1. In Intune in the Azure portal, choose **Device enrollment** >  **Apple Enrollment** > **Enrollment Program Devices**.
-2. Under **Enrollment Program Devices**, choose **Sync**.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
-3. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+  
+2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
 
@@ -176,7 +176,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
      -	Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
      - Intune syncs new and removed devices with Apple every 24 hours.
 
-4. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
+3. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
 ## Assign an enrollment profile to devices
 You must assign an enrollment program profile to devices before they can enroll.
@@ -200,4 +200,4 @@ You must assign an enrollment program profile to devices before they can enroll.
 ## Distribute devices
 You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
-See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
+See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios). 

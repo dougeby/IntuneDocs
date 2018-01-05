@@ -53,4 +53,4 @@ Mobile Threat Defense is a way for companies to make sure that your devices are 
 
 ## If the installation doesn't work
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -89,8 +89,8 @@
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
       href: data-leak-prevention.md
-    - name: BYOD
-      href: byod-enable.md
+    - name: Compare MDM and MAM
+      href: byod-technology-decisions.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -164,8 +164,6 @@
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Enrollment Status Screen
-        href: windows-enrollment-status.md
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -200,7 +198,7 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
-    - name: Remote control for Android
+    - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
@@ -238,6 +236,8 @@
         href: apps-add-android-for-work.md
       - name: Office 365 apps for Windows 10
         href: apps-add-office365.md
+      - name: Office 365 apps for macOS
+        href: apps-add-office365-macos.md        
     - name: Assign apps
       href: apps-deploy.md
     - name: Monitor apps
@@ -286,6 +286,8 @@
         href: app-notification-settings-ios.md
       - name: Shared devices for iOS
         href: shared-device-settings-ios.md
+      - name: Configure Intune for iOS device single sign-on
+        href: sso-ios.md
       - name: Web filter settings for iOS
         href: web-content-filter-settings-ios.md
     - name: Configure device restrictions
@@ -417,6 +419,10 @@
       href: app-modern-authentication-block.md
     - name: Monitor conditional access compliance
       href: conditional-access-exchange-monitor.md
+    - name: Integrate Jamf Pro with Intune for compliance
+      href: conditional-access-integrate-jamf.md
+    - name: Enforce compliance on Macs managed with Jamf Pro
+      href: conditional-access-assign-jamf.md
   - name: Protect app and device data
     items:
     - name: Use app protection policies
@@ -552,6 +558,8 @@
   items:
   - name: Help users troubleshoot problems
     href: help-desk-operators.md
+  - name: Audit logs for Intune activities
+    href: monitor-audit-logs.md
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
     items:
@@ -573,7 +581,7 @@
       items:
       - name: Per-app VPN profile
         href: android-pulse-secure-per-app-vpn.md
-      - name: Allow/block apps for Samsung KNOX Standard
+      - name: Allow/block apps for Samsung Knox Standard
         href: samsung-knox-apps-allow-block.md
     - name: iOS
       href: custom-settings-ios.md

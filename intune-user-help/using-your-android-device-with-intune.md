@@ -35,7 +35,7 @@ There are a number of things you can do with Intune to make your work life easie
 
 ## Supported versions
 
-Intune currently supports Android 4.4 and later. This includes Samsung KNOX 4.4 and later devices.
+Intune currently supports Android 4.4 and later. This includes Samsung Knox 4.4 and later devices.
 
 ## Enrolling into Intune and installing the Company Portal
 

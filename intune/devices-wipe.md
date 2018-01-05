@@ -46,7 +46,21 @@ You can remove devices from Intune that are no longer needed, are being repurpos
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Devices and groups** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
-5. On the blade showing the device's name, choose **Factory reset**, and then choose **Yes** to confirm.
+5. On the blade showing the device's name, choose **Factory reset**
+6. For Windows 10 version 1709 or higher, there is an additional option to "Retain enrollment state and user account". 
+    
+    |Retained through a factory reset|Not retained|
+    | -------------|------------|
+    |User accounts associated with the device|User files|
+    |Machine state \(domain join, Azure Active Directory-joined)| User installed apps \(store and Win32 apps)|
+    |MDM enrollment|Non-default device settings|
+    |OEM installed apps \(store and Win32 apps)||
+    |User profile||
+    |User data outside of user profile||
+    |User autologon|| 
+    
+         
+7. Choose **Yes** to confirm the factory reset.
 
 If the device is on and connected, it takes less than 15 minutes for a factory reset command to propagate across all device types.
 
@@ -70,7 +84,7 @@ The **remove company data** command removes managed app data (where applicable),
 
 ### Android
 
-|Data type|Android|Android Samsung KNOX Standard|
+|Data type|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|

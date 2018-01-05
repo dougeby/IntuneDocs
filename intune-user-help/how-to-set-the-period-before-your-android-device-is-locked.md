@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 
 To reconnect to your work, you’ll need to set the password timeout on your device by following the steps for the type of device you have.
 
-## Native (non-Samsung KNOX) device
+## Native (non-Samsung Knox) device
 
 1.  In **Settings** on your device, tap **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).
 
@@ -37,7 +37,7 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 2.  Select the password timeout value.
 
-## Samsung KNOX device
+## Samsung Knox device
 
 1.  In **Settings** on your device, tap **Lock screen and security** &gt; **Lock automatically**.
 
@@ -45,4 +45,4 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 2.  Select a password timeout value.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

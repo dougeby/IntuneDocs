@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Intune policy allow/block apps for Samsung KNOX
+title: Intune policy allow/block apps for Samsung Knox
 titlesuffix: "Azure portal"
-description: Create a custom profile to allow and block apps for Samsung KNOX Standard devices."
+description: Create a custom profile to allow and block apps for Samsung Knox Standard devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 
 ---
-# Use custom policies to allow and block apps for Samsung KNOX Standard devices in Microsoft Intune
+# Use custom policies to allow and block apps for Samsung Knox Standard devices in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -36,7 +36,7 @@ Use the procedures in this topic to create a Microsoft Intune custom policy that
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
 - A list of apps that users of the device are allowed to install from the Google Play store. Only the apps you list can be installed. No other apps can be installed from the store.
 
-These settings can only be used by devices that run Samsung KNOX Standard.
+These settings can only be used by devices that run Samsung Knox Standard.
 
 ## Create an allowed or blocked app list
 

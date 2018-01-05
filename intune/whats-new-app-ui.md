@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,22 @@ ms.custom: intune-azure
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of December 11, 2017
+
+### End user messaging for accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon.
+
+![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)
+
+## Week of November 27, 2017
+
+### New "Device Categories" step in guided setup for the Company Portal app for Windows 10 <!---1335292--->
+
+If you've enabled [device group mapping](device-group-mapping.md), the Company Portal app for Windows 10 now walks your users through selecting a device category after enrolling their device.
+
+![Device group mapping category](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## Week of November 13, 2017
 

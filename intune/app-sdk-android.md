@@ -4,10 +4,10 @@
 title: Microsoft Intune App SDK for Android developer guide
 description: The Microsoft Intune App SDK for Android lets you incorporate Intune mobile app management (MAM) into your Android app.
 keywords: SDK
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
-ms.date: 09/01/2017
+ms.author: erikre
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,14 @@ The Intune App SDK consists of the following files:
 * **Microsoft.Intune.MAM.SDK.aar**: The SDK components, with the exception of the Support.V4 and Support.V7 JAR files. This file can be used in place of the individual components if your build system supports AAR files.
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**: The interfaces necessary to enable MAM in apps that use the Android v4 support library. Apps that need this support must reference the JAR file directly.
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**: The interfaces necessary to enable MAM in apps that use the Android v7 support library. Apps that need this support must reference the JAR file directly.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: This jar contains
+  stubs for Android system classes which are present only on newer
+  devices but which are referenced by methods in MAMActivity. Newer
+  devices will ignore these stub classes. This jar is necessary only
+  if your app performs reflection on classes deriving from
+  MAMActivity, and most apps do not need to include it. If you use
+  this jar, you must be careful to exclude all its classes from
+  ProGuard. They will all be under the "android" root package
 * **proguard.txt**: Contains ProGuard rules which must be applied if building with ProGuard.
 * **CHANGELOG.txt**: Provides a record of changes made in each SDK version.
 * **THIRDPARTYNOTICES.TXT**:  An attribution notice that acknowledges third-party and/or OSS code that will be compiled into your app.
@@ -54,8 +62,7 @@ If your build system does not support AAR files, you may use the following files
 
 ## Requirements
 
-The Intune App SDK is a compiled Android project. As a result, it is largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 19 (Android 4.4+) through Android API 25 (Android 7.1).
-
+The Intune App SDK is a compiled Android project. As a result, it is largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 19 (Android 4.4+) through Android API 26 (Android 8.0).
 
 
 ### Company Portal app
@@ -90,12 +97,21 @@ The Intune App SDK requires changes to an app's source code to enable Intune app
 
 For example, when `AppSpecificActivity` interacts with its parent (for example, calling `super.onCreate()`), `MAMActivity` is the super class.
 
-Typical Android apps have a single mode and can access the system through their [**Context**](https://developer.android.com/reference/android/content/Context.html) object. Apps that have integrated the Intune App SDK, on the other hand, have dual modes. These apps continue to access the system through the `Context` object. Depending on the base `Activity` used, the `Context` object will be provided by Android or will intelligently multiplex between a restricted view of the system and the Android-provided `Context`. After you derive from one of the MAM entry points, it's safe to use `Context` as you would normally -- for example, starting `Activity` classes and using `PackageManager`.
+Typical Android apps have a single mode and can access the system 
+through their 
+[**Context**](https://developer.android.com/reference/android/content/Context.html) object. Apps 
+that have integrated the Intune App SDK, on the other hand, have dual 
+modes. These apps continue to access the system through the `Context` 
+object. Depending on the base `Activity` used, the `Context` object 
+will be provided by Android or will intelligently multiplex between a 
+restricted view of the system and the Android-provided
+ `Context`. After you derive from one of the MAM entry points, it's safe 
+to use `Context` as you would normally -- for example, starting `Activity` classes and using `PackageManager`.
 
 
 ## Replace classes, methods, and activities with their MAM equivalent
 
-Android base classes must be replaced with their respective MAM equivalents. To do so, find all instances of the classes listed in the following table and replace them with the Intune App SDK equivalent.
+Android base classes must be replaced with their respective MAM equivalents. To do so, find all instances of the classes listed in the following table and replace them with the Intune App SDK equivalent. Most of these are classes which your app classes will inherit from, but some (e.g. MediaPlayer) will be classes your app uses without deriving.
 
 | Android base class | Intune App SDK replacement |
 |--|--|
@@ -110,7 +126,7 @@ Android base classes must be replaced with their respective MAM equivalents. To 
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
 | android.app.NativeActivity | MAMNativeActivity |
-| android.app.PendingIntent | MAMPendingIntent (see notes below) |
+| android.app.PendingIntent | MAMPendingIntent (see [Pending Intent](#pendingintent)) |
 | android.app.Service | MAMService |
 | android.app.TabActivity | MAMTabActivity |
 | android.app.TaskStackBuilder | MAMTaskStackBuilder |
@@ -121,17 +137,22 @@ Android base classes must be replaced with their respective MAM equivalents. To 
 | android.content.BroadcastReceiver | MAMBroadcastReceiver |
 | android.content.ContentProvider | MAMContentProvider |
 | android.os.Binder | MAMBinder (Only necessary if the Binder is not generated from an Android Interface Definition Language (AIDL) interface) |
+| android.media.MediaPlayer | MAMMediaPlayer |
+| android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 
+> [!NOTE]
+> Even if your application does not have a need for its own derived `Application` class, [see `MAMApplication` below](#mamapplication)
 
 ### Microsoft.Intune.MAM.SDK.Support.v4.jar:
 
-| Android Class	Intune MAM | Intune App SDK replacement |
+| Android Class Intune MAM | Intune App SDK replacement |
 |--|--|
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
 | android.support.v4.app.Fragment | MAMFragment
+| android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
 
@@ -139,14 +160,15 @@ Android base classes must be replaced with their respective MAM equivalents. To 
 
 |Android Class | Intune App SDK replacement |
 |--|--|
-|android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
-
+|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### Renamed Methods
 
 
 In many cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (generally suffixed with `MAM`) that you should override instead. For example, when deriving from `MAMActivity`, instead of overriding `onCreate()` and calling `super.onCreate()`, `Activity` must override `onMAMCreate()` and call `super.onMAMCreate()`. The Java compiler should enforce the final restrictions to prevent accidental override of the original method instead of the MAM equivalent.
 
+### MAMApplication
+Due to constraints within the MAM SDK, you **must** create a subclass of `com.microsoft.intune.mam.client.app.MAMApplication` and set it as the name of the `Application` class used in your manifest. `MAMApplication` is abstract and requires an override for `byte[] getADALSecretKey`, please see the Javadoc on that function for more information about how to implement it.
 ### PendingIntent
 Instead of `PendingIntent.get*`, you must use the `MAMPendingIntent.get*` method. After this, you can use the resultant `PendingIntent` as usual.
 
@@ -205,8 +227,7 @@ public interface MAMLogHandlerWrapper {
 
 ## Enable features that require app participation
 
-There are several app protection policies the SDK cannot implement on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following `AppPolicy` interface. To retrieve an `AppPolicy` instance, use
-`MAMPolicyManager.getPolicy`.
+There are several app protection policies the SDK cannot implement on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following `AppPolicy` interface. To retrieve an `AppPolicy` instance, use `MAMPolicyManager.getPolicy`.
 
 ```java
 /**
@@ -264,6 +285,15 @@ boolean getIsManagedBrowserRequired();
 boolean getIsContactSyncAllowed();
 
 /**
+ * This method is intended for diagnostic/telemetry purposes only. It can be used to discover whether
+ * file encryption is in use. File encryption is transparent to the app, and the app should not need
+ * to make any business logic decisions based on this.
+ * 
+ * @return True if file encryption is in use.
+ */
+boolean diagnosticIsFileEncryptionInUse();
+
+/**
  * Return the policy in string format to the app.
  *  
  * @return The string representing the policy.
@@ -282,7 +312,8 @@ String toString();
 If the app has its own PIN user experience, you might want to disable it if the IT administrator has configured the SDK to prompt for an app PIN. To determine if the IT administrator has deployed the app PIN policy to this app, for the current end user, call the following method:
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsPinRequired();
+
+MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
 ### Example: Determine the primary Intune user
@@ -320,16 +351,16 @@ Many apps implement features that allow the end user to save files locally or to
 To determine if the policy is enforced, make the following call:
 
 ```java
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-```
+``````
 
 ... where `service` is one of the following SaveLocations:
 
 
-	* SaveLocation.ONEDRIVE_FOR_BUSINESS
-	* SaveLocation.LOCAL
-	* SaveLocation.SHAREPOINT
+    * SaveLocation.ONEDRIVE_FOR_BUSINESS
+    * SaveLocation.LOCAL
+    * SaveLocation.SHAREPOINT
 
 The previous method of determining whether a user’s policy allowed them to save data to various locations was `getIsSaveToPersonalAllowed()` within the same **AppPolicy** class. This function is now **deprecated** and should not be used, the following invocation is equivalent to `getIsSaveToPersonalAllowed()`:
 
@@ -352,13 +383,13 @@ Your app must register for notifications from the SDK by creating a `MAMNotifica
 ```java
 @Override
 public void onCreate() {
-	super.onCreate();
-	MAMComponents.get(MAMNotificationReceiverRegistry.class)
-		.registerReceiver(
-			new ToastNotificationReceiver(),
-			MAMNotificationType.WIPE_USER_DATA);
-	}
-```
+  super.onCreate();
+  MAMComponents.get(MAMNotificationReceiverRegistry.class)
+    .registerReceiver(
+      new ToastNotificationReceiver(),
+      MAMNotificationType.WIPE_USER_DATA);
+  }
+``````
 
 ### MAMNotificationReceiver
 
@@ -378,18 +409,18 @@ The `MAMNotificationReceiver` interface as defined in the SDK is included below 
  */
 public interface MAMNotificationReceiver {
 
-	/**
-	 * A notification was received.
-	 *
-	 * @param notification
-	 *            The notification that was received.
-	 * @return The receiver should return true if it handled the
-	 *   notification without error (or if it decided to ignore the
-	 *   notification). If the receiver tried to take some action in
-	 *   response to the notification but failed to complete that
-	 *   action it should return false.
-	 */
-	boolean onReceive(MAMNotification notification);
+    /**
+     * A notification was received.
+     *
+     * @param notification
+     *            The notification that was received.
+     * @return The receiver should return true if it handled the
+     *   notification without error (or if it decided to ignore the
+     *   notification). If the receiver tried to take some action in
+     *   response to the notification but failed to complete that
+     *   action it should return false.
+     */
+    boolean onReceive(MAMNotification notification);
 }
 
 ```
@@ -424,17 +455,17 @@ To configure your app and enable proper authentication, add the following to the
 
 ```xml
 <meta-data
-	android:name="com.microsoft.intune.mam.aad.Authority"
-	android:value="https://AAD authority/" />
+    android:name="com.microsoft.intune.mam.aad.Authority"
+    android:value="https://AAD authority/" />
 <meta-data
-	android:name="com.microsoft.intune.mam.aad.ClientID"
+    android:name="com.microsoft.intune.mam.aad.ClientID"
     android:value="your-client-ID-GUID" />
 <meta-data
-	android:name="com.microsoft.intune.mam.aad.NonBrokerRedirectURI"
-	android:value="your-redirect-URI" />
+    android:name="com.microsoft.intune.mam.aad.NonBrokerRedirectURI"
+    android:value="your-redirect-URI" />
 <meta-data
-	android:name="com.microsoft.intune.mam.aad.SkipBroker"
-	android:value="[true | false]" />
+    android:name="com.microsoft.intune.mam.aad.SkipBroker"
+    android:value="[true | false]" />
 ```
 
 ### ADAL metadata
@@ -446,9 +477,9 @@ To configure your app and enable proper authentication, add the following to the
 * **NonBrokerRedirectURI** is the AAD redirect URI to use in broker-less cases. If none is specified, a default value of `urn:ietf:wg:oauth:2.0:oob` is used. This default is suitable for most apps.
 
 * **SkipBroker** is used in case the ClientID has not been configured to use the broker redirect URI. The default value is "false."
-	* For apps that **do not integrate ADAL** and **do not want to participate in device-wide brokered authentication/SSO**, this should be set to "true." When this value is "true," the only redirect URI that will be used is NonBrokerRedirectURI.
+    * For apps that **do not integrate ADAL** and **do not want to participate in device-wide brokered authentication/SSO**, this should be set to "true." When this value is "true," the only redirect URI that will be used is NonBrokerRedirectURI.
 
-	* For apps that do support device-wide SSO brokering, this should be "false." When the value is "false," the SDK will select a broker between the result of [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) and NonBrokerRedirectURI, based on the availability of the broker on the system. In general, the broker will be available from the Company Portal app or Azure Authenticator app.
+    * For apps that do support device-wide SSO brokering, this should be "false." When the value is "false," the SDK will select a broker between the result of [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) and NonBrokerRedirectURI, based on the availability of the broker on the system. In general, the broker will be available from the Company Portal app or Azure Authenticator app.
 
 ### Common ADAL configurations
 
@@ -456,30 +487,29 @@ The following are common ways an app can be configured with ADAL. Find your app'
 
 1. **App does not integrate ADAL:**
 
-	| Required ADAL parameter | Value |
-	|--|--|
-	| Authority | Desired environment where AAD accounts have been configured |
-	| SkipBroker | True |
+    | Required ADAL parameter | Value |
+    |--|--|
+    | Authority | Desired environment where AAD accounts have been configured |
+    | SkipBroker | True |
 
 2. **App integrates ADAL:**
 
-	|Required ADAL parameter| Value |
-	|--|--|
-	| Authority | Desired environment where AAD accounts have been configured |
-	| ClientID | The app's ClientID (generated by Azure AD when the app is registered) |
-	| NonBrokerRedirectURI | A valid redirect URI for the app, or `urn:ietf:wg:oauth:2.0:oob` 
-	. <br><br> Make sure to configure the value as an acceptable redirect URI for your app's ClientID.
-	| SkipBroker | False |
+    |Required ADAL parameter| Value |
+    |--|--|
+    | Authority | Desired environment where AAD accounts have been configured |
+    | ClientID | The app's ClientID (generated by Azure AD when the app is registered) |
+    | NonBrokerRedirectURI | A valid redirect URI for the app, or `urn:ietf:wg:oauth:2.0:oob`by default. <br><br> Make sure to configure the value as an acceptable redirect URI for your app's ClientID.
+    | SkipBroker | False |
 
 
 3. **App integrates ADAL but does not support brokered authentication/device-wide SSO:**
 
-	|Required ADAL parameter| Value |
-	|--|--|
-	| Authority | Desired environment where AAD accounts have been configured |
-	| ClientID | The app's ClientID (generated by Azure AD when the app is registered) |
-	| NonBrokerRedirectURI | A valid redirect URI for the app, or `urn:ietf:wg:oauth:2.0:oob` by default. <br><br> Make sure to configure the value as an acceptable redirect URI for your app's ClientID.
-	| SkipBroker | **True** |
+    |Required ADAL parameter| Value |
+    |--|--|
+    | Authority | Desired environment where AAD accounts have been configured |
+    | ClientID | The app's ClientID (generated by Azure AD when the app is registered) |
+    | NonBrokerRedirectURI | A valid redirect URI for the app, or `urn:ietf:wg:oauth:2.0:oob` by default. <br><br> Make sure to configure the value as an acceptable redirect URI for your app's ClientID.
+    | SkipBroker | **True** |
 
 ## App protection policy without device enrollment
 
@@ -510,8 +540,8 @@ To implement APP-WE integration, your app must register the user account with th
 
 3. When a user account is completely removed, the app should call `unregisterAccountForMAM()` to remove the account from Intune management.
 
-	> [!NOTE]
-	> If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
+    > [!NOTE]
+    > If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
 
 
 ### MAMEnrollmentManager
@@ -534,22 +564,22 @@ The `MAMEnrollmentManager` instance returned is guaranteed not to be null. The A
 package com.microsoft.intune.mam.policy;
 
 public interface MAMEnrollmentManager {
-	public enum Result {
-		AUTHORIZATION_NEEDED,
-		NOT_LICENSED,
-		ENROLLMENT_SUCCEEDED,
-		ENROLLMENT_FAILED,
-		WRONG_USER,
-		MDM_ENROLLED,
-		UNENROLLMENT_SUCCEEDED,
-		UNENROLLMENT_FAILED,
-		PENDING,
-		COMPANY_PORTAL_REQUIRED;
-	}
+    public enum Result {
+        AUTHORIZATION_NEEDED,
+        NOT_LICENSED,
+        ENROLLMENT_SUCCEEDED,
+        ENROLLMENT_FAILED,
+        WRONG_USER,
+        MDM_ENROLLED,
+        UNENROLLMENT_SUCCEEDED,
+        UNENROLLMENT_FAILED,
+        PENDING,
+        COMPANY_PORTAL_REQUIRED;
+    }
 
     //Authentication methods
     interface MAMServiceAuthenticationCallback {
-		String acquireToken(String upn, String aadId, String resourceId);
+        String acquireToken(String upn, String aadId, String resourceId);
     }
     void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
     void updateToken(String upn, String aadId, String resourceId, String token);
@@ -567,7 +597,7 @@ This section describes the authentication API methods in `MAMEnrollmentManager` 
 
 ```java
 interface MAMServiceAuthenticationCallback {
-		String acquireToken(String upn, String aadId, String resourceId);
+        String acquireToken(String upn, String aadId, String resourceId);
 }
 void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
 void updateToken(String upn, String aadId, String resourceId, String token);
@@ -596,8 +626,8 @@ Result getRegisteredAccountStatus(String upn);
 1. To register an account for management, the app should call `registerAccountForMAM()`. A user account is identified by both its UPN and its AAD user ID. The tenant ID is also required to associate enrollment data with the user's AAD tenant. The SDK may attempt to enroll the app for the given user in the MAM service; if enrollment fails, it will periodically retry enrollment until the account is unregistered. The retry period will typically be 12-24 hours. The SDK provides the status of enrollment attempts asynchronously via notifications.
 
 2. Because AAD authentication is required, the best time to register the user account is after the user has signed into the app and is successfully authenticated using ADAL.
-	* The user's AAD ID and tenant ID are returned from the ADAL authentication call as part of the [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) object. The tenant ID comes from the `AuthenticationResult.getTenantID()` method.
-	* Information about the user is found in a sub-object of type `UserInfo` that comes from `AuthenticationResult.getUserInfo()`, and the AAD user ID is retrieved from that object by calling `UserInfo.getUserId()`.
+    * The user's AAD ID and tenant ID are returned from the ADAL authentication call as part of the [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) object. The tenant ID comes from the `AuthenticationResult.getTenantID()` method.
+    * Information about the user is found in a sub-object of type `UserInfo` that comes from `AuthenticationResult.getUserInfo()`, and the AAD user ID is retrieved from that object by calling `UserInfo.getUserId()`.
 
 3. To unregister an account from Intune management, the app should call `unregisterAccountForMAM()`. If the account has been successfully enrolled and is managed, the SDK will unenroll the account and wipe its data. Periodic enrollment retries for the account will be stopped. The SDK provides the status of unenrollment request asynchronously via notifications.
 
@@ -648,7 +678,7 @@ A new type of `MAMNotification` has been added in order to inform the app that t
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
-	MAMEnrollmentManager.Result getEnrollmentResult();
+    MAMEnrollmentManager.Result getEnrollmentResult();
 }
 
 ```
@@ -672,9 +702,9 @@ Intune allows you to utilize all the [Auto Backup features](https://developer.an
 
 1. If your app does **not** use its own custom BackupAgent, use the default MAMBackupAgent to allow for automatic full backups that are Intune policy compliant. If you do this, you can ignore the `android:fullBackupOnly` manifest attribute, as it’s not applicable for our backup agent. Place the following in the app manifest:
 
-	```xml
+    ```xml
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
-	```
+    ```
 
 
 2. **[Optional]** If you implemented an optional custom BackupAgent, you need to make sure to use MAMBackupAgent or MAMBackupAgentHelper. See the following sections. Consider switching to using Intune's **MAMDefaultFullBackupAgent** (described in step 1) which provides easy back up on Android M and above.
@@ -683,29 +713,29 @@ android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackup
 
 4. Then, you _**must**_ copy whatever you put into `android:fullBackupContent` into a metadata tag named `com.microsoft.intune.mam.FullBackupContent` in the manifest.
 
-	**Example 1**: If you want your app to have full backups without exclusions, set both the `android:fullBackupContent` attribute and `com.microsoft.intune.mam.FullBackupContent` metadata tag to **true**:
+    **Example 1**: If you want your app to have full backups without exclusions, set both the `android:fullBackupContent` attribute and `com.microsoft.intune.mam.FullBackupContent` metadata tag to **true**:
 
-	```xml
-	android:fullBackupContent="true"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
-	```
+    ```xml
+    android:fullBackupContent="true"
+    ...
+    <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
+    ```
 
-	**Example 2**: If you want your app to use its custom BackupAgent and opt out of full, Intune policy compliant, automatic backups, you must set the attribute and metadata tag to **false**:
+    **Example 2**: If you want your app to use its custom BackupAgent and opt out of full, Intune policy compliant, automatic backups, you must set the attribute and metadata tag to **false**:
 
-	```xml
-	android:fullBackupContent="false"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
-	```
+    ```xml
+    android:fullBackupContent="false"
+    ...
+    <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
+    ```
 
-	**Example 3**: If you want your app to have full backups according to your custom rules defined in an XML file, please set the attribute and metadata tag to the same XML resource:
+    **Example 3**: If you want your app to have full backups according to your custom rules defined in an XML file, please set the attribute and metadata tag to the same XML resource:
 
-	```xml
-	android:fullBackupContent="@xml/my_scheme"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />  
-	```
+    ```xml
+    android:fullBackupContent="@xml/my_scheme"
+    ...
+    <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />  
+    ```
 
 
 ### Key/Value Backup
@@ -748,11 +778,11 @@ A BackupAgent allows you to be much more explicit about what data is backed up. 
 
 The Data Backup guide specifies a general algorithm for restoring your application’s data and provides a code sample in the [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) section. In order to have a successful multi-identity restore, you must follow the general structure provided in this code sample with special attention to the following:
 
-1.	You must utilize a `while(data.readNextHeader())`* loop to go through the backup entities.
+1.  You must utilize a `while(data.readNextHeader())`* loop to go through the backup entities.
 
-2.	You must call `data.skipEntityData()`* if `data.getKey()`* does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed.
+2.  You must call `data.skipEntityData()`* if `data.getKey()`* does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed.
 
-3.	Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
+3.  Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
 
 * Where `data` is the local variable name for the **BackupDataInput** that is passed to your app upon restore.
 
@@ -781,8 +811,8 @@ By default, all apps are considered to be single-identity apps. You can declare 
 
 ```xml
   <meta-data
-  	android:name="com.microsoft.intune.mam.MAMMultiIdentity"
-  	android:value="true" />
+    android:name="com.microsoft.intune.mam.MAMMultiIdentity"
+    android:value="true" />
 ```
 
 ### Setting the Identity
@@ -819,16 +849,15 @@ The following methods in `MAMPolicyManager` may be used to set the identity and 
 
   public static String getCurrentThreadIdentity();
 
-  /**
-   * Get the currently applicable app policy. Same as
-   * MAMComponents.get(AppPolicy.class). This method does
-   * not take the context identity into account.
+/**
+   * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy();
 
   /**
-  * Get the current app policy. This does NOT take the UI (Context) identity into account.
-   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
+  * Get the current app policy. This DOES take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use this function.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -866,21 +895,21 @@ launch requirements (e.g. presses the back button on the PIN screen).
 In the case of setting a Context identity, the result is reported asynchronously. If the Context is an Activity, the SDK doesn't know if the identity change succeeded until after conditional launch is performed -- which may require the user to enter a PIN or corporate credentials. The app is expected to implement a `MAMSetUIIdentityCallback` to receive this result, you can pass null for this parameter.
 
 ```java
-	public interface MAMSetUIIdentityCallback {
-		void notifyIdentityResult(MAMIdentitySwitchResult identitySwitchResult);
+    public interface MAMSetUIIdentityCallback {
+        void notifyIdentityResult(MAMIdentitySwitchResult identitySwitchResult);
   }
 ```
 
 You can also set the identity of an activity directly through a method in `MAMActivity` instead of calling `MAMPolicyManager.setUIPolicyIdentity`. Use following method to do so:
 
 ```java
-	 public final void switchMAMIdentity(final String newIdentity);
+     public final void switchMAMIdentity(final String newIdentity);
 ```
 
 You can also override a method in `MAMActivity` if you want the app to be notified of the result of attempts to change the identity of that activity.
 
 ``` java
-	public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
+    public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
 ```
 
 >[!NOTE]
@@ -908,15 +937,15 @@ In addition to the app's ability to set the identity, a thread or a context's id
 
   ```java
   public void onMAMIdentitySwitchRequired(final String identity,
-  	final AppIdentitySwitchResultCallback callback);
+    final AppIdentitySwitchResultCallback callback);
   ```
 
   In the `MAMActivity` class , an additional parameter is present in the method:
 
   ```java
   public void onMAMIdentitySwitchRequired(final String identity,
-  	final AppIdentitySwitchReason reason,
-  	final AppIdentitySwitchResultCallback callback);
+    final AppIdentitySwitchReason reason,
+    final AppIdentitySwitchResultCallback callback);
   ```
 
   * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
@@ -924,17 +953,17 @@ In addition to the app's ability to set the identity, a thread or a context's id
 
   * The `AppIdentitySwitchResultCallback` is as follows:
 
-  	```java
-  	public interface AppIdentitySwitchResultCallback {
-  		/**
-  		 * @param result
-  		 *            whether the identity switch can proceed.
-  		 */
-  		void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-  	}
-  	```
+    ```java
+    public interface AppIdentitySwitchResultCallback {
+        /**
+         * @param result
+         *            whether the identity switch can proceed.
+         */
+        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+    }
+    ```
 
-  	Where ```AppIdentitySwitchResult``` is either SUCCESS or FAILURE.
+    Where ```AppIdentitySwitchResult``` is either SUCCESS or FAILURE.
 
 The method `onMAMIdentitySwitchRequired` is called for all implicit identity changes except for those made through a Binder returned from `MAMService.onMAMBind`. The default implementations of `onMAMIdentitySwitchRequired` immediately call:
 
@@ -952,74 +981,100 @@ The method `onMAMIdentitySwitchRequired` is called for all implicit identity cha
 
   * In an **Activity**, when a switch to the empty identity is requested with the reason as RESUME_CANCELLED, the app must modify the resumed activity to display data consistent with that identity switch.  If this is not possible, the app should refuse the switch, and the user will be asked again to comply with policy for the resuming identity (e.g. by being presented with the app PIN entry screen).
 
-	> [!NOTE]
-	> A multi-identity app will always receive incoming data from both managed and unmanaged apps. It is the responsibility of the app to treat data from managed identities in a managed manner.
+    > [!NOTE]
+    > A multi-identity app will always receive incoming data from both managed and unmanaged apps. It is the responsibility of the app to treat data from managed identities in a managed manner.
 
   If a requested identity is managed (use `MAMPolicyManager.getIsIdentityManaged` to check), but the app is not able to use that account (e.g. because accounts, such as email accounts, must be set up in the app first) then the identity switch should be refused.
 
+### Preserving Identity In Async Operations
+It is common for operations on the UI thread to dispatch background tasks to another thread. A multi-identity app will want to make sure that these background tasks operate with the appropriate identity, which is often the same identity used by the activity which dispatched them. The MAM SDK provides `MAMAsyncTask` and `MAMIdentityExecutors` as a convenience to aid in preserving the identity.
+#### MAMAsyncTask
 
+To use `MAMAsyncTask`, simply inherit from it instead of AsyncTask and replace overrides of `doInBackground` and `onPreExecute` with `doInBackgroundMAM` and `onPreExecuteMAM` respectively. The `MAMAsyncTask` constructor takes an activity context. For example:
+
+```java
+  AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
+
+    @Override
+    protected Object doInBackgroundMAM(final Object[] params) {
+        // Do operations.
+    }
+    
+    @Override
+    protected void onPreExecuteMAM() {
+        // Do setup.
+    };
+```
+
+### MAMIdentityExecutors
+`MAMIdentityExecutors` allows you to wrap an existing `Executor` or `ExecutorService` instance as an identity-preserving `Executor`/`ExecutorService` with `wrapExecutor` and `wrapExecutorService` methods. For example
+
+```java
+  Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
+  ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
+```
 
   ### File Protection
 
   Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity will be used for both file encryption and selective wipe. Only files whose identity is managed and has policy requiring encryption will be encrypted. The SDK's default selective functionality wipe will only wipe files associated with the managed identity for which a wipe has been requested. The app may query or change a file’s identity using the `MAMFileProtectionManager` class.
 
   ```java
-	public final class MAMFileProtectionManager {
-	/**
-		 * Protect a file. This will synchronously trigger whatever protection is required for the 
+    public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
            file, and will tag the file for future protection changes.
 
-		 *
-		 * @param identity
-		 *            Identity to set.
-		 * @param file
-		 *            File to protect.
-		 * @throws IOException
-		 *             If the file cannot be changed.
-		 */
-		public static void protect(final File file, final String identity) throws IOException;
-		
-		/**
-		* Protect a file obtained from a content provider. This is intended to be used for
-		* sdcard (whether internal or removable) files accessed through the Storage Access Framework.
-		* It may also be used with descriptors referring to private files owned by this app.
-		* It is not intended to be used for files owned by other apps and such usage will fail. If
-		* creating a new file via a content provider exposed by another MAM-integrated app, the new
-		* file identity will automatically be set correctly if the ContentResolver in use was
-		* obtained via a Context with an identity or if the thread identity is set.
-		*
-		* This will synchronously trigger whatever protection is required for the file, and will tag
-		* the file for future protection changes. If an identity is set on a directory, it is set
-		* recursively on all files and subdirectories. If MAM is operating in offline mode, this
-		* method will silently do nothing.
-		*
-		* @param identity
-		* 		Identity to set.
-		* @param file
-		* 		File to protect.
-		*
-		* @throws IOException
-		* 		If the file cannot be protected.
+         *
+         * @param identity
+         *            Identity to set.
+         * @param file
+         *            File to protect.
+         * @throws IOException
+         *             If the file cannot be changed.
+         */
+        public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
 
-		*/
-		public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
-		/**
-		 * Get the protection info on a file.
-		 *
-		 * @param file
-		 *            File or directory to get information on.
-		 * @return File protection info, or null if there is no protection info.
-		 * @throws IOException
-		 *             If the file cannot be read or opened.
-		 */
-		public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
+        /**
+         * Get the protection info on a file.
+         *
+         * @param file
+         *            File or directory to get information on.
+         * @return File protection info, or null if there is no protection info.
+         * @throws IOException
+         *             If the file cannot be read or opened.
+         */
+        public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
 
-	}
+    }
 
-	public interface MAMFileProtectionInfo {
-		String getIdentity();
-	}
+    public interface MAMFileProtectionInfo {
+        String getIdentity();
+    }
 
   ```
 #### App Responsibility
@@ -1043,7 +1098,7 @@ An example flow might look something like the following:
     * if(info) 
         MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
     * The app waits until a result is reported to callback
-	* If the reported result is a failure, the app does not display the document.
+    * If the reported result is a failure, the app does not display the document.
   * The app opens and renders the file
 
 ## Offline Scenarios
@@ -1075,100 +1130,100 @@ information -- encryption is guaranteed to be disabled during the notification.
 ```java
 
 public final class MAMDataProtectionManager {
-	/**
-	 * Protect a stream. This will return a stream containing the protected
-	 * input.
-	 *
-	 * @param identity
-	 *            Identity to set.
-	 * @param input
-	 *            Input data to protect, read sequentially. This function
-	 *            will change the position of the stream but may not have
-	 *            read the entire stream by the time it returns. The
-	 *            returned stream will wrap this one. Calls to read on the
-	 *            returned stream may cause further reads on the original
-	 *            input stream. Callers should not expect to read directly
-	 *            from the input stream after passing it to this method.
-	 *            Calling close on the returned stream will close this one.
-	 * @return Protected input data.
-	 * @throws IOException
-	 *             If the data could not be protected
-	 */
-	public static InputStream protect(final InputStream input, final String identity);
+    /**
+     * Protect a stream. This will return a stream containing the protected
+     * input.
+     *
+     * @param identity
+     *            Identity to set.
+     * @param input
+     *            Input data to protect, read sequentially. This function
+     *            will change the position of the stream but may not have
+     *            read the entire stream by the time it returns. The
+     *            returned stream will wrap this one. Calls to read on the
+     *            returned stream may cause further reads on the original
+     *            input stream. Callers should not expect to read directly
+     *            from the input stream after passing it to this method.
+     *            Calling close on the returned stream will close this one.
+     * @return Protected input data.
+     * @throws IOException
+     *             If the data could not be protected
+     */
+    public static InputStream protect(final InputStream input, final String identity);
 
-	/**
-	 * Protect a byte array. This will return protected bytes.
-	 *
-	 * @param identity
-	 *            Identity to set.
-	 * @param input
-	 *            Input data to protect.
-	 * @return Protected input data.
-	 * @throws IOException
-	 *             If the data could not be protected
-	 */
-	public static byte[] protect(final byte[] input, final String identity) throws IOException;
+    /**
+     * Protect a byte array. This will return protected bytes.
+     *
+     * @param identity
+     *            Identity to set.
+     * @param input
+     *            Input data to protect.
+     * @return Protected input data.
+     * @throws IOException
+     *             If the data could not be protected
+     */
+    public static byte[] protect(final byte[] input, final String identity) throws IOException;
 
-	/**
-	 * Unprotect a stream. This will return a stream containing the
-	 * unprotected input.
-	 *
-	 * @param input
-	 *            Input data to protect, read sequentially.
-	 * @return Protected input data.
-	 * @throws IOException
-	 *             If the data could not be unprotected
-	 */
-	public static InputStream unprotect(final InputStream input) throws IOException;
+    /**
+     * Unprotect a stream. This will return a stream containing the
+     * unprotected input.
+     *
+     * @param input
+     *            Input data to protect, read sequentially.
+     * @return Protected input data.
+     * @throws IOException
+     *             If the data could not be unprotected
+     */
+    public static InputStream unprotect(final InputStream input) throws IOException;
 
-	/**
-	 * Unprotect a byte array. This will return unprotected bytes.
-	 *
-	 * @param input
-	 *            Input data to protect.
-	 * @return Protected input data.
-	 * @throws IOException
-	 *             If the data could not be unprotected
-	 */
-	public static byte[] unprotect(final byte[] input) throws IOException;
+    /**
+     * Unprotect a byte array. This will return unprotected bytes.
+     *
+     * @param input
+     *            Input data to protect.
+     * @return Protected input data.
+     * @throws IOException
+     *             If the data could not be unprotected
+     */
+    public static byte[] unprotect(final byte[] input) throws IOException;
 
-	/**
-	 * Get the protection info on a stream.
-	 *
-	 * @param input
-	 *            Input stream to get information on. Either this input
-	 *            stream must have been returned by a previous call to
-	 *            protect OR input.markSupported() must return true.
-	 *            Otherwise it will be impossible to get protection info
-	 *            without advancing the stream position. The stream must be
-	 *            positioned at the beginning of the protected data.
-	 * @return Data protection info, or null if there is no protection
-	 *            info.
-	 * @throws IOException
-	 *             If the input cannot be read.
-	 */
-	public static MAMDataProtectionInfo getProtectionInfo(final InputStream input) throws IOException;
+    /**
+     * Get the protection info on a stream.
+     *
+     * @param input
+     *            Input stream to get information on. Either this input
+     *            stream must have been returned by a previous call to
+     *            protect OR input.markSupported() must return true.
+     *            Otherwise it will be impossible to get protection info
+     *            without advancing the stream position. The stream must be
+     *            positioned at the beginning of the protected data.
+     * @return Data protection info, or null if there is no protection
+     *            info.
+     * @throws IOException
+     *             If the input cannot be read.
+     */
+    public static MAMDataProtectionInfo getProtectionInfo(final InputStream input) throws IOException;
 
-	/**
-	 * Get the protection info on a stream.
-	 *
-	 * @param input
-	 *            Input bytes to get information on. These must be bytes
-	 *            returned by a previous call to protect() or a copy of
-	 *            such bytes.
-	 * @return Data protection info, or null if there is no protection
-	 *            info.
-	 * @throws IOException
-	 *             If the input cannot be read.
-	 */
-	public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
+    /**
+     * Get the protection info on a stream.
+     *
+     * @param input
+     *            Input bytes to get information on. These must be bytes
+     *            returned by a previous call to protect() or a copy of
+     *            such bytes.
+     * @return Data protection info, or null if there is no protection
+     *            info.
+     * @throws IOException
+     *             If the input cannot be read.
+     */
+    public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
 
 ```
 
 ### Content Providers
 
-If the app provides corporate data other than a **ParcelFileDescriptor** through a **ContentProvider**, the app must call the method `isProvideContentAllowed(String)` in `MAMContentProvider`, passing the owner identity's UPN (user principal name) for the content. If this function returns false, the content *may not* be returned to the caller. File descriptors returned through a content provider are handled automatically based on the file identity.
+If the app provides corporate data other than a **ParcelFileDescriptor** through a **ContentProvider**, the app must call the method `isProvideContentAllowed(String)` in `MAMContentProvider`, passing the owner identity's UPN (user principal name) for the content. If this function returns false, the content *must not* be returned to the caller. File descriptors returned through a content provider are handled automatically based on the file identity.
 
 ### Selective Wipe
 
@@ -1193,14 +1248,14 @@ MAMAppConfig appConfig = configManager.getAppConfig(identity);
 LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
 String valueToUse = null;
 if (appConfig.hasConflict("foo")) {
-	List<String> values = appConfig.getAllStringsForKey("foo");
-	for (String value : values) {
-		if (isCorrectValue(value)) {
-			valueToUse = value;
-		}
-	}
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
 } else {
-	valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
 }
 LOGGER.info("Found value " + valueToUse);
 ```
@@ -1209,113 +1264,113 @@ LOGGER.info("Found value " + valueToUse);
 
 ```
 public interface MAMAppConfig {
-	/**
-	 * Conflict resolution types for Boolean values.
-	 */
-	enum BooleanQueryType {
-		/**
-		 * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-		 */
-		Any,
-		/**
-		 * In case of conflict, returns true if any of the values are true.
-		 */
-		Or,
-		/**
-		 * In case of conflict, returns false if any of the values are false.
-		 */
-		And
-	}
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
 
-	/**
-	 * Conflict resolution types for integer and double values.
-	 */
-	enum NumberQueryType {
-		/**
-		 * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-		 */
-		Any,
-		/**
-		 * In case of conflict, returns the minimum Integer.
-		 */
-		Min,
-		/**
-		 * In case of conflict, returns the maximum Integer.
-		 */
-		Max
-	}
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
 
-	/**
-	 * Conflict resolution types for Strings.
-	 */
-	enum StringQueryType {
-		/**
-		 * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-		 */
-		Any,
-		/**
-		 * In case of conflict, returns the first result ordered alphabetically.
-		 */
-		Min,
-		/**
-		 * In case of conflict, returns the last result ordered alphabetically.
-		 */
-		Max
-	}
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
 
-	/**
-	 * Retrieve the List of Dictionaries containing all the custom
-	 *  config data sent by the MAMService. This will return every
-	 * Application Configuration setting available for this user, one
-	 *  mapping for each policy applied to the user.
-	 */
-	List<Map<String, String>> getFullData();
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
 
-	/**
-	 * Returns true if there is more than one targeted custom config setting for the key provided. 
-	 */
-	boolean hasConflict(String key);
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
 
-	/**
-	 * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
-	 * null if none exists or it cannot be coerced.
-	 */
-	Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
 
-	/**
-	 * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
-	 */
-	Long getIntegerForKey(String key, NumberQueryType queryType);
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
 
-	/**
-	 * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
-	 */
-	Double getDoubleForKey(String key, NumberQueryType queryType);
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
 
-	/**
-	 * @return a String value for the given key, or null if none exists.
-	 */
-	String getStringForKey(String key, StringQueryType queryType);
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
 
-	/**
-	 * Like getBooleanForKey except returns all values if multiple are present.
-	 */
-	List<Boolean> getAllBooleansForKey(String key);
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
 
-	/**
-	 * Like getIntegerForKey except returns all values if multiple are present.
-	 */
-	List<Long> getAllIntegersForKey(String key);
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
 
-	/**
-	 * Like getDoubleForKey except returns all values if multiple are present.
-	 */
-	List<Double> getAllDoublesForKey(String key);
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
 
-	/**
-	 * Like getStringForKey except returns all values if multiple are present.
-	 */
-	List<String> getAllStringsForKey(String key);
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
 }
 ```
 
@@ -1371,29 +1426,37 @@ Below is the complete list of allowed style attributes, the UI elements they con
 
 For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an issue. Specifically, the following limitations may occur:
 
-1.	The 65K limit on fields.
-2.	The 65K limit on methods.
+1.  The 65K limit on fields.
+2.  The 65K limit on methods.
 
 ### Policy enforcement limitations
 
 * **Screen Capture**: The SDK is unable to enforce a new screen capture setting value in Activities that have already gone through Activity.onCreate. This can result in a period of time where the app has been configured to disable screenshots but screenshots can still be taken.
 
 * **Using Content Resolvers**: The "transfer or receive" Intune policy may block or partially block the use of a content resolver to access the content provider in another app. This will cause ContentResolver methods to return null or throw a failure value (e.g. `openOutputStream` will throw `FileNotFoundException` if blocked). The app can determine whether a failure to write data through a content resolver was caused by policy (or would be caused by policy) by making the call:
-	```java
-	MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
-	```
-	or if there is no associated activity
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    or if there is no associated activity
 
-	```java
-	MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
-	```
+    ```java
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
+    ```
 
-	In this second case, multi-identity apps must take care to set the thread identity appropriately (or pass an explicit identity to the `getPolicy` call).
-	
+    In this second case, multi-identity apps must take care to set the thread identity appropriately (or pass an explicit identity to the `getPolicy` call).
+    
 ### Exported services
 
  The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
 
+### Reflection limitations
+Some of the MAM base classes (e.g. MAMActivity, MAMDocumentsProvider)
+contain methods (based on the original Android base classes) which use
+parameter or return types only present above certain API levels. For
+this reason, it may not always be possible to use reflection to
+enumerate all methods of app components. This restriction is not
+limited to MAM, it is the same restriction which would apply if the
+app itself implemented these methods from the Android base classes.
 ## Expectations of the SDK consumer
 
 The Intune SDK maintains the contract provided by the Android API, though failure conditions may be triggered more frequently as a result of policy enforcement. These Android best practices will reduce the likelihood of failure:

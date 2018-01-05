@@ -1,11 +1,12 @@
----
+﻿---
 # required metadata
 
-title: Create and deploy app protection policiestitleSuffix: "Azure portal"
+title: Create and deploy app protection policies 
+titleSuffix: "Azure portal"
 description:  Learn how Intune app protection policies can help protect company data used by apps you manage."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 04/24/2017
 ms.topic: article

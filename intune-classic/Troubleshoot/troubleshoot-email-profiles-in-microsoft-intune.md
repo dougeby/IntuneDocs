@@ -4,8 +4,8 @@
 title: Troubleshoot email profiles 
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
