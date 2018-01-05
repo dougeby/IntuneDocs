@@ -173,9 +173,17 @@ These settings apply specifically to operating system data drives.
 - **Write access to removable data-drive not protected by BitLocker** - Specify whether BitLocker encryption is required for removable storage drives.
   - **Write access to devices configured in another organization** - Specify whether removable data drives that belong to another organization can be written to.
 
-## Windows Defender Exploit Guard https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionMenu/deviceConfiguration/menuContent/configuration
+## Windows Defender Exploit Guard
+
+Use [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) to manage and reduce the attack surface of apps used by your employees.
 
 ### Attack Surface Reduction
+
+Help [prevent actions and apps](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) that are typically used by exploit-seeking malware to infect machines.
+
+#### Rules to prevent Office Macro threats
+
+https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionMenu/deviceConfiguration/menuContent/configuration
 
 ### Controlled folder access
 
