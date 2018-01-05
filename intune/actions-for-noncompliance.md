@@ -51,7 +51,7 @@ There are two types of actions:
 
 - You need to have a notification message template created. The notification message template is used later in the process of creating actions for non-compliance to send e-mail to your users.
 
-- You need to configure Exchange Online to accept email from IntuneNotificationService@microsoft.com to allow Intune to send the email notification. For details, see [Configure message delivery restrictions for a mailbox](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
+- You need to configure Exchange Online to accept email from *IntuneNotificationService@microsoft.com* to allow Intune to send the email notification. For details, see [Configure message delivery restrictions for a mailbox](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
 
 ### To create a notification message template
 
