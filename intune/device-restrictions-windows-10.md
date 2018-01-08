@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/5/2018
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -253,7 +253,8 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Display
 
-- **Turn on GDI scaling for apps**<br>**Turn off GDI scaling for apps**
+- **Turn on GDI scaling for apps**
+- **Turn off GDI scaling for apps**
 
   GDI DPI Scaling lets apps that are not DPI aware to become per-monitor DPI aware. Specify the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to both turn on and turn off on an app, scaling is turned off for the app.
 
@@ -273,9 +274,9 @@ You can add apps that should have a different privacy behavior from what you def
 
       - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
+    Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
 
-    Muti-app kiosk configurations include the following settings:
+    Multi-app kiosk configurations include the following settings:
 
     - **Kiosk configuration name** - A friendly name used to identify a given configuration.
 
@@ -386,7 +387,7 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 
   Specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data is not transmitted and remains on the local device.​
 
-   Examples formats:​
+   Example formats:​
 
    IPv4: 192.246.246.106:100​<br>
  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100​<br> 
