@@ -30,7 +30,7 @@ ms.suite: ems
 
 # Fix common issues with your Samsung Knox device
 
-Sometimes issues can occur with your Samsung Knox device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Sometimes issues can occur with your Samsung Knox device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend that you [contact the Android Company Portal team](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
 
 ## Network activation error
 
@@ -38,7 +38,7 @@ The message you see might look like:
 
 |Error message|What you should try|
 |---|---|
-|**Samsung Knox activation error** - The Samsung Knox license couldn't be activated. Switch to a different wireless or cellular network to try again.|Your device can't get activated on its current network. If you're on cellular data, switch to a Wi-Fi network and try again.|
+|**Samsung Knox activation error** - The Samsung Knox license couldn't be activated. Switch to a different wireless or cellular network to try again.|Your device can't get activated on its current network. If you're on cellular data, switch to a Wi-Fi network and try again, or vice-cersa.|
 
 ## License activation error
 
