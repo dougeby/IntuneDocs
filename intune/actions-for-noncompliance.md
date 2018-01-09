@@ -8,19 +8,17 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/21/2017
+ms.date: 2/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -33,7 +31,9 @@ The **actions for non-compliance** allow you to configure a time-ordered sequenc
 
 There are two types of actions:
 
--   **Notify end-users via e-mail**: You can customize your email notification before sending it to the end user. Intune provides customization of the recipients, subject, and message body, including company logo, and contact information.
+-   **Notify end-users via email**: You can customize your email notification before sending it to the end user. Intune allows you to customize the recipients, subject, and message body, including company logo, and contact information.
+
+    Additionally, Intune includes details about the non-compliant device in the email notification.
 
 -   **Mark device non-compliant**: You can determine a schedule in number of days after the device should be marked not compliant. This can be immediately, but you can also give the user a grace period to be compliant with your device compliance policies.
 
@@ -57,7 +57,7 @@ You need to have Azure AD conditional access set up ready when planning to use d
 
 - Learn [how to setup EMS conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
-Additionally, you need to have a notification message template created. The notification message template is used later in the process of creating actions for non-compliance to send e-mail to your users.
+Additionally, you need to have a notification message template created. The notification message template is used later in the process of creating actions for non-compliance to send email to your users.
 
 ### To create a notification message template
 
@@ -77,11 +77,11 @@ Additionally, you need to have a notification message template created. The noti
 
     c.  Message
 
-    d.  E-mail header – Include company logo
+    d.  email header – Include company logo
 
-    e.  E-mail footer – Include company name
+    e.  email footer – Include company name
 
-    f.  E-mail footer – Include contact information
+    f.  email footer – Include contact information
 
 ![notification message template example](./media/actionsfornoncompliance-1.PNG)
 
