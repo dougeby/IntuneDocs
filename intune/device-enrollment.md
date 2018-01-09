@@ -39,9 +39,9 @@ As you can see in the following tables, there are several methods to enroll your
 | **Method** |	**Reset Required** |	[**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)	|	**Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 | |	Devices are factory reset during enrollment. |	Associates each device with a user.| Users can’t unenroll devices.	| |
-|**[BYOD](#bring-your-own-device-BYOD)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
+|**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
 
@@ -49,8 +49,8 @@ As you can see in the following tables, there are several methods to enroll your
 
 | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No |	Yes |	No | [More information](windows-enroll.md)|
-|**[DEM](#dem)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | No |	Yes |	No | [More information](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
 
@@ -58,22 +58,22 @@ As you can see in the following tables, there are several methods to enroll your
 
 | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](./android-enroll.md)|
-|**[DEM](#dem)**|	No |No |No	|[More information](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## Bring your own device (BYOD)
-Personal phones, tables, or PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
+## Bring your own device
+Bring your own devices (BYOD) include personal phones, tables, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
 
-## Corporate-owned device (COD)
-Phones, tablets, or PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as company-owned.
+## Corporate-owned device
+Corporate-owned devices (COD) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as company-owned.
 
-### Device enrollment manager (DEM)
-DEM is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](./device-enrollment-manager-enroll.md).
+### Device enrollment manager
+Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](./device-enrollment-manager-enroll.md).
 
-### Apple Device Enrollment Program (DEP)
-DEP management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports iOS supervised mode, which enables a device to be configured with specific functionality.
+### Apple Device Enrollment Program
+Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports iOS supervised mode, which enables a device to be configured with specific functionality.
 
 Learn more about iOS DEP enrollment:
 
