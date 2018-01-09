@@ -39,7 +39,7 @@ As you can see in the following tables, there are several methods to enroll your
 | **Method** |	**Reset Required** |	[**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)	|	**Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 | |	Devices are factory reset during enrollment. |	Associates each device with a user.| Users can’t unenroll devices.	| |
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
+|**[BYOD](#bring-your-own-device-BYOD)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#dem)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
