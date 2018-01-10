@@ -18,6 +18,7 @@
   - Windows Holographic & Windows Holographic Enterprise
 
     For information about managing Microsoft HoloLens devices, see [Enroll HoloLens in MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+
   - Windows Phone 8.1, Windows 8.1 RT, PCs running Windows 8.1 (Sustaining mode)
 
 > [!NOTE]
