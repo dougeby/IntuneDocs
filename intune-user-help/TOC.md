@@ -118,6 +118,7 @@
 #### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
 #### [Enroll your Windows 10 device](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
 #### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
 #### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
