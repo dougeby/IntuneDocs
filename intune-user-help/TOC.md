@@ -6,6 +6,8 @@
 
 ## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
 ## [Using your Android device](using-your-android-device-with-intune.md)
