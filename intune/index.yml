@@ -26,22 +26,22 @@ sections:
     - href: introduction-intune.md
       html: <p>Read about what Intune does and how it works.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_overview.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: What is Intune?
     - href: get-started-evaluation.md
       html: <p>See how Intune works with this simple tutorial.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: Get started
     - href: get-support.md
       html: <p>Learn how to create a support ticket and get help when you need it.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_support.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
       title: Get support
     - href: whats-new.md
       html: <p>See what's new in Intune this week.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: What's new
 - title: New articles and blog posts
   items:
@@ -55,27 +55,27 @@ sections:
     - href: what-is-intune.md
       title: Learn about Intune on the Azure portal
       image:
-        src: https://docs.microsoft.com/media/common/i_portal.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
       title: See where your Intune features are in the Azure portal 
       image:
-        src: https://docs.microsoft.com/media/common/i_guide.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
     - href: high-level-architecture.md
       title: View the Intune high-level architecture
       image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
     - href: enrollment-autopilot.md 
       title: Windows AutoPilot Deployment Program support in Microsoft Intune
       image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
       title: "[Blog] Security enhancements in the Intune service "
       image:
-        src: https://docs.microsoft.com/media/common/i_blog.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
       title: "[Blog] Troubleshooting Portal makes diagnosing and resolving end user issues easier"
       image: 
-        src: https://docs.microsoft.com/media/common/i_blog.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     
 - title: Videos
   items:
@@ -129,7 +129,7 @@ sections:
     - html: <a href="/intune/apps-prepare-mobile-application-management">Prepare line of business (LOB) apps with the Intune App Wrapper Tool</a>
     - html: <a href="/intune/app-sdk">Prepare LOB apps with the Intune App SDK</a>
     - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Working with Intune in Microsoft Graph</a>
-    - html: <a href="/intune/reports-nav-intune-date-warehouse">Intune Data Warehouse API</a>
+    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune Data Warehouse API</a>
 
 - title: Other resources
   items:
