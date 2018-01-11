@@ -7,7 +7,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 12/21/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,19 +96,26 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What is the purpose of multi-identity support?** Multi-identity support allows apps with both "corporate" and consumer audiences (ie. the Office apps) to be released publicly with Intune app protection capabilities for the "corporate" accounts.
 
-**When does the PIN screen show up?** The Intune PIN screen only appears when the user is trying to access "corporate" data in the app. For example, in the Word/Excel/PowerPoint apps, it would appear when the end-user attempts to open a document from OneDrive for Business (assuming you successfully deployed an app protection policy enforcing PIN).
-
 **What about Outlook and multi-identity?** Because Outlook has a combined email view of both personal and "corporate" emails, the Outlook app prompts for the Intune PIN on launch.
 
 **What is the Intune app PIN?** The Personal Identification Number (PIN) is a passcode used to verify that the correct user is accessing the organization's data in an application.
 
   1. **When is the user prompted to enter their PIN?** Intune will only prompt for the user's app PIN when the user is about to access "corporate" data. In multi-identity apps such as Word/Excel/PowerPoint, the user is prompted for their PIN when they try to open a "corporate" document or file. In single-identity apps, such as line-of-business apps enlightened using the Intune App Wrapping Tool, the PIN is prompted at launch, because the Intune App SDK knows the user's experience in the app is always "corporate."
 
-  2. **Is the PIN secure?** The PIN serves to allow only the correct user to access their organization's data in the app. Therefore, an end-user must sign in with their work or school account before they can set or reset their Intune app PIN. This authentication is handled by Azure Active Directory via secure token exchange and is not transparent to the Intune App SDK. From a security perspective, the best way to protect work or school data is to encrypt it. Encryption is not related to the app PIN, but is its own app protection policy.
+2. **How often will the user be prompted for the Intune PIN?**
+The IT admin can define the Intune app protection policy setting 'Recheck the access requirements after (minutes)' in the Intune admin console. This setting specifies the amount of time before the access requirements are checked on the device, and the application PIN screen is shown again. However, important details about PIN that affect how often the user will be prompted are: 
 
-  3. **How does Intune protect the PIN against brute force attacks?** As part of the app PIN policy, the IT administrator can set the maximum number of times a user can try to authenticate their PIN before locking the app. After the number of attempts has been met, the Intune App SDK can wipe the "corporate" data in the app.
+* **The PIN is shared among apps of the same publisher to improve usability:** On iOS, one app PIN is shared amongst all apps **of the same publisher**. On Android, one app PIN is shared amongst all apps.
+* **The rolling nature of the timer associated with the PIN:** Once a PIN is entered to access an app (app A), and the app leaves the foreground (main input focus) on the device, the PIN timer gets reset for that PIN. Any app (app B) that shares this PIN will not prompt the user for PIN entry because the timer has reset. The prompt will show up again once the 'Recheck the access requirements after (minutes)' value is met again. 
+
+>[!NOTE] 
+> In order to verify the user's access requirements more often (i.e PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+
+  3. **Is the PIN secure?** The PIN serves to allow only the correct user to access their organization's data in the app. Therefore, an end-user must sign in with their work or school account before they can set or reset their Intune app PIN. This authentication is handled by Azure Active Directory via secure token exchange and is not transparent to the Intune App SDK. From a security perspective, the best way to protect work or school data is to encrypt it. Encryption is not related to the app PIN, but is its own app protection policy.
+
+  4. **How does Intune protect the PIN against brute force attacks?** As part of the app PIN policy, the IT administrator can set the maximum number of times a user can try to authenticate their PIN before locking the app. After the number of attempts has been met, the Intune App SDK can wipe the "corporate" data in the app.
   
-  4. **Why do I have to set a PIN twice on apps from same publisher?**
+  5. **Why do I have to set a PIN twice on apps from same publisher?**
 MAM (on iOS) currently allows application-level PIN with alphanumeric and special characters (called 'passcode') which requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for iOS. Without this, the passcode settings are not properly enforced for the targeted applications. This was a feature released in the Intune SDK for iOS v. 7.1.12. <br> In order to support this feature and ensure backward compatibility with previous versions of the Intune SDK for iOS, all PINs (either numeric or passcode) in 7.1.12+ are handled separately from the numeric PIN in previous versions of the SDK. Therefore, if a device has applications with Intune SDK for iOS versions before 7.1.12 AND after 7.1.12 from the same publisher, they will have to set up two PINs. <br><br> That being said, the two PINs (for each app) are not related in any way i.e. they must adhere to the app protection policy that’s applied to the app. As such, *only* if apps A and B have the same policies applied (with respect to PIN), user may setup the same PIN twice. <br><br> This behaviour is specific to the PIN on iOS applications that are enabled with Intune Mobile App Management. Over time, as applications adopt later versions of the Intune SDK for iOS, having to set a PIN twice on apps from the same publisher becomes less of an issue. Please see the note below for an example.
 
 >[!NOTE]
