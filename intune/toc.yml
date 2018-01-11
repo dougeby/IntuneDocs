@@ -580,7 +580,7 @@
         items:
         - name: Per-app VPN profile
           href: android-pulse-secure-per-app-vpn.md
-        - name: Allow/block apps for Samsung KNOX Standard
+        - name: Allow/block apps for Samsung Knox Standard 
           href: samsung-knox-apps-allow-block.md
       - name: iOS
         href: custom-settings-ios.md
