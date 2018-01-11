@@ -74,7 +74,7 @@
 #### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Manually sync your device](sync-your-device-manually-ios.md)
 
-#### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
+### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 #### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 #### [Send errors to your company](send-errors-to-your-it-admin-ios.md)
 #### [Send errors to Microsoft](send-logs-to-microsoft-ios.md)
