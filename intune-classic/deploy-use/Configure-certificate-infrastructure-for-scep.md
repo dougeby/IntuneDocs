@@ -341,6 +341,9 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 
     Click **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
 
+    > [!NOTE]
+    > If you get a **User name is not recognized** error when signing into NDESConnectorUI.exe, it usually means you've used an account that does not have a valid Intune license. Assign the account an Intune or EMS license and retry the operation.
+
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 
     Select the **Advanced** tab, and then provide credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority, and then click **Apply**.
