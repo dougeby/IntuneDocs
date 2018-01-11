@@ -84,7 +84,7 @@ The **remove company data** command removes managed app data (where applicable),
 
 ### Android
 
-|Data type|Android|Android Samsung KNOX Standard|
+|Data type|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|
@@ -96,7 +96,7 @@ The **remove company data** command removes managed app data (where applicable),
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
 |Email|n/a (email profiles are not supported by Android devices)|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for Android is removed.|Email received by the Microsoft Outlook app for Android is removed.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|
 |Azure Active Directory (AD) Unjoin|Azure AD Record removed.|Azure AD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 

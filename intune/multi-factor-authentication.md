@@ -5,10 +5,10 @@ title: Multi-factor authentication for Intune device enrollment
 titlesuffix: "Azure portal"
 description: How to require multi-factor authentication in Azure AD for device enrollment.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,9 @@ When you enable MFA, end users must supply two forms of credentials to enroll a 
 ## Configure Intune to require multi-factor authentication at device enrollment
 
 To require MFA when a device is enrolled, follow these steps:
+
+[!Important]
+>You must have an Azure Active Directory Premium P1 or above assigned to your users to implement this policy.
 
 >[!Important]
 >Do not configure **Device based access rules** for Microsoft Intune enrollment.

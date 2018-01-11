@@ -3,8 +3,8 @@ title: Help desk troubleshooting portal| Microsoft Docs
 titlesuffix: "Azure portal"
 description: Help desk staff use the troubleshooting portal to solve users' technical problems  
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/26/2017
 ms.topic: article

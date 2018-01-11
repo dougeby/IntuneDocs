@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,7 +81,7 @@ You need to approve the Company Portal app for Android in the managed Google Pla
 
 Follow these steps to approve the Intune Company Portal:
 
-1.  Download the Company Portal app from the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Browse to the Company Portal app on the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Sign into the managed Google Play store with the same Google account that you used to configure the binding for Android for Work.
 3.  Click **Approve.**  This will open a new dialog.
 4.  Review the permissions in this dialog, then click **Approve**. You need these to allow these permissions in order to allow the Company Portal app to manage the work profile on the device.

@@ -78,7 +78,7 @@ User affinity is required to support the following:
 
   If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
 
-6. On the next screen, the user must confirm the serial number of the new device. The user can tap the link **confirm the Serial Number** to launch the Settings app to verify the serial number. The user must then enter the last four characters of the serial number into the Company Portal app.
+6. On the next screen, the user must confirm the serial number of the new device. The user can tap the link **confirm the Serial Number** which will launch instructions to use the Settings app to verify the serial number. The user must then enter the last four characters of the serial number into the Company Portal app.
 
   This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
 
