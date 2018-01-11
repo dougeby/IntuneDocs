@@ -8,7 +8,7 @@ author: arob98
 ms.author: angrobe
 nmanager: angrobe
 ms.date: 10/30/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

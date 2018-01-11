@@ -8,7 +8,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -60,8 +60,6 @@ iOS volume-purchased apps are displayed, and can be assigned only for the same c
 ### Multiple copies of the same iOS volume-purchase program are uploaded
 Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.
 
-### Assigning Office 365 to macOS devices
-The feature to assign Office 365 to macOS devices with Microsoft Intune will be available once our UI update is complete.
 
 <!-- ## Groups -->
 
