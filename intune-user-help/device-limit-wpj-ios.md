@@ -2,6 +2,7 @@
 # required metadata
 
 title: Registered device limit has been reached | Microsoft Docs
+titlesuffix: Intune Company Portal
 description:
 keywords:
 author: barlanmsft
