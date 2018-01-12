@@ -8,7 +8,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -103,6 +103,18 @@ The **remove company data** command removes managed app data (where applicable),
 ### Android for Work
 
 Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Factory reset is not supported for Android for Work.
+
+
+### macOS
+
+|Data type|macOS|
+|-------------|-------|
+|Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
+|Wi-Fi and VPN profile settings|Removed.|
+|Certificate profile settings|Certificates that were deployed through MDM are removed and revoked.|
+|Management Agent|Management profile is removed.|
+|Outlook|If conditional access is enabled, no new mail will be received by the device.|
+|Azure Active Directory (AD) Unjoin|Azure AD record is removed.|
 
 ### Windows
 

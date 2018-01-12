@@ -231,7 +231,7 @@
         - name: Office 365 apps for Windows 10
           href: apps-add-office365.md
         - name: Office 365 apps for macOS
-          href: apps-add-office365-macos.md        
+          href: apps-add-office365-macos.md
       - name: Build your app (LOB)
         items:
         - name: Android LOB apps
@@ -567,7 +567,7 @@
     - name: Audit logs for Intune activities
       href: monitor-audit-logs.md
     - name: Review app protection logs
-      href: app-protection-policy-settings-log.md      
+      href: app-protection-policy-settings-log.md
   - name: Automate and customize
     items:
     - name: Configure custom device settings
@@ -580,7 +580,7 @@
         items:
         - name: Per-app VPN profile
           href: android-pulse-secure-per-app-vpn.md
-        - name: Allow/block apps for Samsung Knox Standard 
+        - name: Allow/block apps for Samsung Knox Standard
           href: samsung-knox-apps-allow-block.md
       - name: iOS
         href: custom-settings-ios.md
@@ -592,7 +592,9 @@
         href: custom-settings-windows-10.md
       - name: Android for Work
         href: custom-settings-android-for-work.md
-- name: Developer guidance 
+    - name: Sideload Windows line-of-business apps
+      href: app-sideload-windows.md
+- name: Developer guidance
   items:
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
@@ -657,7 +659,7 @@
     items:
     - name: Graph APIs for Intune Reference
       href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
-- name: Resources 
+- name: Resources
   items:
   - name: Glossary
     href: intune-glossary.md

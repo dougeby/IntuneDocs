@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,7 +54,5 @@ When you unenroll your device from Intune, here's what happens:
 -   You might not be able to connect to your company network using Wi-Fi or a virtual private network (VPN) anymore.
 
 -   Company email access may be removed from the device.
-
--   Devices that are configured for email only no longer appear in the Company Portal app or website.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
