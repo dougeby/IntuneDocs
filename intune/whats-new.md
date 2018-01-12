@@ -50,6 +50,9 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Device configuration
 
+#### New automatic redeployment setting <!-- 1469168 -->
+The **Automatic redeployment** setting allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. This setting can be found under Windows 10 -> Device restrictions -> General -> Automatic redeployment. For details, see [Intune device restriction settings for Windows 10](device-restrictions-windows-10.md#general)
+
 #### Support for additional source editions in the Windows 10 edition upgrade policy  <!-- 903672,  1119689 -->
 You can now use the Windows 10 edition upgrade policy to upgrade from additional Windows 10 editions (Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Cloud, etc.). Prior to this release, the supported edition upgrade paths were more limited. For details, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
 
