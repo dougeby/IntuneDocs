@@ -136,7 +136,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="https://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a>
+    - html: <a href="at https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a>
     - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Read the Enterprise Mobility and Security blog</a>
     - html: <a href="https://blogs.technet.microsoft.com/intunesupport/"> Get help on the Intune support blog</a>
     - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Give feedback on Intune at UserVoice</a>
