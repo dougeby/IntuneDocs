@@ -7,6 +7,16 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/skycure-azure-sso-configure.md",
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/skycure-ios-app-configuration-policy-download.md",
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/device-compliance.md",
 			"redirect_url": "/intune/device-compliance-get-started",
 			"redirect_document_id": false
