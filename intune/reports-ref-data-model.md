@@ -17,7 +17,7 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
