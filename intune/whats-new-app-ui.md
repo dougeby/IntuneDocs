@@ -393,8 +393,7 @@ These are the plans for ways we will be improving the user experience by updatin
 
 We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
 
-We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. To sign up for TestFlight access, email [CompanyPortalBeta@microsoft.com](mailto:CompanyPortalBeta@microsoft.com) with your first name, last name, email address, and company name.
-
+We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
 ![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
 
 ### UI updates to the Company Portal website <!--1313244 part 2-->
