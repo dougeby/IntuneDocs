@@ -62,7 +62,10 @@ The certificate is associated with the Apple ID used to create it. Renew the MDM
 2. Choose **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 3. Find the certificate you want to renew and select **Renew**.
 4. On the **Renew Push Certificate** screen, provide notes to help you identify the certificate in the future, select **Choose File** to browse to the new requet file you downloaded, and choose **Upload**.
-5. On the **Confirmation** screen, select **Download** and save the .pem file locally.
-6. In the Azure portal, select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
+   > [!TIP]
+   > A Certificate can be identified by its UID. Examine the **Subject ID** in the certificate details to find the GUID portion of the UID. 
+ 
+6. On the **Confirmation** screen, select **Download** and save the .pem file locally.
+7. In the Azure portal, select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
 
 Your Apple MDM push certificate appears **Active** and has 365 days until expiration.
