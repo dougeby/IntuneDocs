@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,10 +53,10 @@ When a policy or an app is assigned, Intune immediately begins attempting to not
 
 If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
 
-- iOS and macOS: Every 6 hours.
-- Android: Every 8 hours.
-- Windows Phone: Every 8 hours.
-- Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
+- iOS and macOS: Every six hours.
+- Android: Every eight hours.
+- Windows Phone: Every eight hours.
+- Windows 8.1 and Windows 10 PCs enrolled as devices: Every eight hours.
 
 If the device has just enrolled, the check-in frequency will be more frequent, as follows:
 
@@ -66,6 +66,8 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 - Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
+
+For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day or more. Intune sends requests at various intervals for a device to check-in with the service. However it is still up to the device to actually do so. After initial enrollment, depending on the type of device enrollment and the policies and profiles assigned to a device, how long it takes a device to complete that check-in cannot be predicted. However, once the device is enrolled and all initial policies have been applied, the device should check for new policies approximately every six hours.
 
 ## What actions cause Intune to immediately send a notification to a device?
 Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
