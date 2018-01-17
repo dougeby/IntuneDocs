@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/12/2018
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -217,10 +217,6 @@ For details about Windows 10 edition upgrades, see [How to configure Windows 10 
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### Android for Work support for Lookout <!-- 1087312 -->   
-Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You are able to deploy the Lookout app inside or outside the container.
 
 ### Intune App Protection and Citrix MDX Development Tools <!-- 709185 -->
 You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
