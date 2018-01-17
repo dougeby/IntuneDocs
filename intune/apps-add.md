@@ -129,8 +129,8 @@ When you add an app to Intune, you are given the option to select the category y
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
-	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
-	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category.
+	- **Create a category** - Select **Add** to display the **Create category** blade, then add a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
+	- **Edit a category** - For any category in the list, choose '**...**'. This option displays a pop-up menu allowing you to **Pin to dashboard** or **Delete** the category.
 
 ## Apps added automatically by Intune
 
