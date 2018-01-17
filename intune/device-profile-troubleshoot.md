@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/09/2017
+ms.date: 1/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,42 +51,44 @@ There are some additional best practices that you can follow:
 ## How long does it take for mobile devices to get a policy or apps after they have been assigned?
 When a policy or an app is assigned, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
 
-If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
+If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts. If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device gets the policy on its next scheduled check-in with the Intune service as follows:
 
-- iOS and macOS: Every 6 hours.
-- Android: Every 8 hours.
-- Windows Phone: Every 8 hours.
-- Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
+- iOS and macOS: Every six hours.
+- Android: Every eight hours.
+- Windows Phone: Every eight hours.
+- Windows 8.1 and Windows 10 PCs enrolled as devices: Every eight hours.
 
-If the device has just enrolled, the check-in frequency will be more frequent, as follows:
+If the device has just enrolled, the check-in frequency is more frequent, as follows:
 
-- iOS and macOS: Every 15 minutes for 6 hours, and then every 6 hours.
-- Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
-- Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
-- Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.
+- iOS and macOS: Every 15 minutes for six hours, and then every six hours.
+- Android: Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours.
+- Windows Phone: Every five minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours.
+- Windows PCs enrolled as devices: Every three minutes for 30 minutes, and then every eight hours.
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
+For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day or more. Intune sends requests at various intervals for a device to check in with the service. However it is still up to the device to actually do so. After initial enrollment, depending on the type of device enrollment and the policies and profiles assigned to a device, how long it takes a device to complete that check-in cannot be predicted. However, once the device is enrolled and all initial policies have been applied, the device should check for new policies approximately every six hours.
+
 ## What actions cause Intune to immediately send a notification to a device?
-Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
+Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in. When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment, Intune immediately begins trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
 
-## If multiple policies are assigned to the same user or device, how do I know which settings will get applied?
+## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
 When two or more policies are assigned to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
 
 -   Compliance policy settings always have precedence over configuration policy settings.
 
 -   The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy.
 
--   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Azure portal. You must manually resolve such conflicts.
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict is displayed in the Azure portal. You must manually resolve such conflicts.
 
-## What happens when app protection policies conflict with each other? Which one will be applied to the app?
-Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
+## What happens when app protection policies conflict with each other? Which one is applied to the app?
+Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset). The number entry fields are set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
 
-Conflicts occur when two profile settings are the same.  For example, you configured two MAM policies that are identical except for the copy/paste setting.  In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.
+Conflicts occur when two profile settings are the same. For example, you configured two MAM policies that are identical except for the copy/paste setting. In this scenario, the copy/paste setting is set to the most restrictive value, but the rest of the settings is applied as configured.
 
-If one profile is assignedd to the app and takes effect, and then a second one is assigned, the first one will take precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding profile, then they will both be in conflict. Any conflicting settings will be set to the most restrictive values.
+If one profile is assigned to the app and takes effect, and then a second one is assigned, the first one takes precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding profile, then they are both in conflict. Any conflicting settings are set to the most restrictive values.
 
 ## What happens when iOS custom policies conflict?
 Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profile. It merely serves as the delivery mechanism.
@@ -94,7 +96,7 @@ Intune does not evaluate the payload of Apple Configuration files or a custom Op
 When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom profile with settings conflicts, the order in which settings are applied is random.
 
 ## What happens when a profile is deleted or no longer applicable?
-When you delete a profile, or you remove a device from a group to which a profile was assigned, the profile and settings will be removed from the device according to the following lists.
+When you delete a profile, or you remove a device from a group to which a profile was assigned, the profile and settings are removed from the device according to the following lists.
 
 ### Enrolled devices
 
@@ -137,8 +139,8 @@ When you delete a profile, or you remove a device from a group to which a profil
 Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive profile has already been applied to the device.
 
 Depending on the device platform, if you want to change the profile to a less secure value you may need to reset security policies.
-For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
-In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
+For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**. Select the **User Accounts** applet.
+In the left-hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive profile.
 
 
