@@ -751,6 +751,10 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ## Notices
 
+### Plan for Change: Use Intune on Azure now for your MDM management
+Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on April 2, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
+
+
 ### Plan for Change: Easy Assist End-of-Life <!-- 1556480 -->
 Intune uses the Microsoft Easy Assist for PC management remote assistance. One thing you may not know is that Microsoft Easy Assist is a component of Office Live Meeting, a service that is being deprecated December 31, 2017. Therefore, Intune’s Easy Assist offering will also reach end of life on December 31, 2017.
 
