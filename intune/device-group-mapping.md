@@ -91,7 +91,7 @@ If the **Category** column isn’t displayed, click **Columns**, choose **Catego
 When end users enroll their device, they must choose a category from the list of categories you configured. After they choose a category and finish enrollment, their device is added to the Intune device group, or Active Directory security group that corresponds with the category they chose.
 
 > [!NOTE]
-> End users of Windows 10 devices will not see the category selection list when enrolling by using **Settings** > **Accounts** > **Access work or school** > **Enroll only in device management**].
+> End users of Windows 10 devices will not see the category selection list when enrolling by using **Settings** > **Accounts** > **Access work or school** > **Enroll only in device management**.
 
 After enrolling, your end users can always select a category later using the Company Portal website (portal.manage.microsoft.com. Have the user access the Company Portal website and go to **My Devices**. They can choose an enrolled device listed on the page, then select a category.
 
