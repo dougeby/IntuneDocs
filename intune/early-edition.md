@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/12/2018
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -193,7 +193,7 @@ Soon you will be able to require a PIN for targeted iOS apps. You can configure 
 
 We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
 
-We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. To sign up for TestFlight access, email [CompanyPortalBeta@microsoft.com](mailto:CompanyPortalBeta@microsoft.com) with your first name, last name, email address, and company name.
+We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
 
 ![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -217,10 +217,6 @@ For details about Windows 10 edition upgrades, see [How to configure Windows 10 
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### Android for Work support for Lookout <!-- 1087312 -->   
-Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You are able to deploy the Lookout app inside or outside the container.
 
 ### Intune App Protection and Citrix MDX Development Tools <!-- 709185 -->
 You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
