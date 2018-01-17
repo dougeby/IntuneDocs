@@ -88,7 +88,7 @@ If the **Category** column isn’t displayed, click **Columns**, choose **Catego
 
 ## After you configure device groups
 
-When end users of iOS and Android devices enroll their device, they must choose a category from the list of categories you configured. After they choose a category and finish enrollment, their device is added to the Intune device group, or Active Directory security group that corresponds with the category they chose.
+When end users enroll their device, they must choose a category from the list of categories you configured. After they choose a category and finish enrollment, their device is added to the Intune device group, or Active Directory security group that corresponds with the category they chose.
 
 Regardless of platform, your end users can always go to portal.manage.microsoft.com after enrolling the device. Have the user access the Company Portal website and go to **My Devices**. They can choose an enrolled device listed on the page, then select a category.
 
