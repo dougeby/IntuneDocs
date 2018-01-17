@@ -80,12 +80,9 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>
+    text: ">[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]"
   - type: markdown
-    text: <iframe width="560" height="315" src="https://www.youtube.com/embed/Cn29dmgDcIw?list=PLXtHYVsvn_b-0X3R9QCJ4T-Y27DK376NR" frameborder="0" allowfullscreen></iframe>  
-
-
-
+    text: ">[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]"
 - title: Planning articles 
   items:
   - type: list
