@@ -34,14 +34,14 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 
 Intune lets you add and assign these app types:
 
-|                 App Type                 |                                Installation                                |          Updates          |
-|:----------------------------------------:|:--------------------------------------------------------------------------:|:-------------------------:|
-|              Apps on the web             |    Intune creates a shortcut to the   web app on the device home screen    | App updates are automatic |
-| Apps written in-house (line-of-business) | Intune installs the app on the   device (you supply the installation file) |  You must update the app  |
-|            Apps from the store           |                   Intune installs the app on the   device                  | App updates are automatic |
+|                 App Type                 	|                                Installation                                	|          Updates          	|
+|:----------------------------------------:	|:--------------------------------------------------------------------------:	|:-------------------------:	|
+| Apps on the web                          	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
+| Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
+| Apps from the store                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
+
 
 The following platforms are supported:
-
 - Store apps
     - Android store apps
     - iOS store apps
@@ -56,6 +56,7 @@ The following platforms are supported:
     - Windows Phone line-of-business (LOB) apps (.xap files)
     - Windows line-of-business (LOB) apps (.msi files only)
 - Web apps
+
 
 >[!TIP]
 > A line-of-business (LOB) app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by choosing **Line-of-business app** as the **App type** from the **Add app** blade. Then, select the app package file (extension .ipa). These types of apps are typically written in-house.
@@ -133,7 +134,6 @@ When you add an app to Intune, you are given the option to select the category y
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
 	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
 	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category.
-
 
 ## Apps added automatically by Intune
 
