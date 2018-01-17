@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ This page is updated periodically. Check back for additional updates.
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices 
+## Notices
 -->
 
 
@@ -45,7 +45,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546 -->
 
-End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
+End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ### New option for user authentication for Apple bulk enrollment <!-- 747625 -->
 Intune will give you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
@@ -63,12 +63,12 @@ Intune will support enrolling devices from up to 100 different Apple Device Enro
 
 After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
 
-### Select device categories by using the Access Work or School settings <!-- 1058963 eeready --> 
+### Select device categories by using the Access Work or School settings <!-- 1058963 eeready -->
 If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
 
 ### Targeting compliance policies to devices in device groups <!--1307012 -->
 
-You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups. 
+You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups.
 
 ### Including and excluding app assignment based on groups <!-- 1406920 -->
 
@@ -97,7 +97,7 @@ Intune will introduce an extension of Windows Information Protection (WIP) Learn
 
 When an email is sent to report a noncompliant device, details about the noncompliant device will be included. The following article will be updated to indicate this fact: [Automate actions for noncompliance](#actions-for-noncompliance).
 
-### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 --> 
+### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 -->
 We will simplify where you configure and manage conditional access. You will configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you will also be able to access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
 
 ###  Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
@@ -110,7 +110,7 @@ PrinterOn’s wireless mobile printing solutions will enable users to remotely p
 If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
 
 ### Microsoft Graph API for Intune - General Availability  <!-- 1833289 -->
-Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph. 
+Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
 
 <!-- the following are present prior to 1801 -->
 
@@ -189,6 +189,14 @@ These changes will begin rollout with the November update, but may take time to 
 ### Configure an iOS app PIN <!-- 1586774 -->
 Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
 
+### User experience update for the Company Portal app for iOS <!--1412866-->
+
+We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
+
+We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
+
+![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
+
 
 <!-- the following are present prior to 1711 -->
 
@@ -209,10 +217,6 @@ For details about Windows 10 edition upgrades, see [How to configure Windows 10 
 
 <!-- the following are present prior to 1709 -->
 
-
-
-### Android for Work support for Lookout <!-- 1087312 -->   
-Intune connector with Lookout will support Android for Work devices when using the Lookout for Work app. You are able to deploy the Lookout app inside or outside the container.
 
 ### Intune App Protection and Citrix MDX Development Tools <!-- 709185 -->
 You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
