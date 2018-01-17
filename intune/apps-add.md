@@ -30,18 +30,17 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Before you can assign, monitor, configure, or protect apps, you must add them to Intune. Intune supports a wide range of different app types, and the available options differ for each app type.
+Before you can assign, monitor, configure, or protect apps, you must add them to Intune. Intune supports a wide range of different app types. The available options differ for each app type.
 
 Intune lets you add and assign these app types:
-
-|                 App Type                 	|                                Installation                                	|          Updates          	|
-|:----------------------------------------:	|:--------------------------------------------------------------------------:	|:-------------------------:	|
+| App Type                                 	| Installation                                                               	| Updates                   	|
+|------------------------------------------	|----------------------------------------------------------------------------	|---------------------------	|
 | Apps on the web                          	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
 | Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
 | Apps from the store                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 
 
-The following platforms are supported:
+In addition to web apps, Intune supports the following specific platforms for store apps and LOB apps:
 - Store apps
     - Android store apps
     - iOS store apps
@@ -55,8 +54,6 @@ The following platforms are supported:
     - iOS line-of-business (LOB) apps
     - Windows Phone line-of-business (LOB) apps (.xap files)
     - Windows line-of-business (LOB) apps (.msi files only)
-- Web apps
-
 
 >[!TIP]
 > A line-of-business (LOB) app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by choosing **Line-of-business app** as the **App type** from the **Add app** blade. Then, select the app package file (extension .ipa). These types of apps are typically written in-house.
@@ -82,10 +79,10 @@ Once you have added an app to Intune, you assign a group of users that can use t
 Use the [Intune deployment planning, design and implementation guide](planning-guide.md) to help determine how you identify the organizational groups that are associated with each use-case and sub-use-case app scenario. For details about assigning apps to groups, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). 
 
 ### Determine the type of app for your solution
-As previously mentioned, you can choose between:
-- Apps on the web - A web app is a client-server application. The server provides the web app, which  includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. This type of app is separately maintained on the Web. You use Intune to point to this app type. You also assign which groups of users can access this app. Note that Android does not support web apps.
-- Apps written in-house (line-of-business) - Apps created in-house are line-of-business (LOB) apps. The functionality of this type of app has been created for one of the Intune supported platforms, such as Windows, iOS, or Android. Your organization creates and provides you with updates as a separate file. You provide updates of the app to users by adding and deploying the updates using Intune. 
-- Apps from the store - A store app is an app that has been uploaded to either the Windows store, the iOS store, or Android store. The provider of the store app maintains and provides updates to the app. You select the app from the store list and add it using Intune as an available app for your users.
+You can choose between the following app types:
+- **Apps on the web** - A web app is a client-server application. The server provides the web app, which  includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. This type of app is separately maintained on the Web. You use Intune to point to this app type. You also assign which groups of users can access this app. Note that Android does not support web apps.
+- **Apps written in-house (line-of-business)** - Apps created in-house are line-of-business (LOB) apps. The functionality of this type of app has been created for one of the Intune supported platforms, such as Windows, iOS, or Android. Your organization creates and provides you with updates as a separate file. You provide updates of the app to users by adding and deploying the updates using Intune. 
+- **Apps from the store** - A store app is an app that has been uploaded to either the Windows store, the iOS store, or Android store. The provider of the store app maintains and provides updates to the app. You select the app from the store list and add it using Intune as an available app for your users.
 
 When determining the needed apps for your organization, consider how these apps integrate with cloud services, what data the apps access, whether the apps are available to BYOD users, and whether the apps require internet access.
 
