@@ -35,7 +35,7 @@ ms.custom: intune-classic
 
 
 ## Overview
-The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
+The [Intune App SDK Xamarin component](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
 
 > [!NOTE]
 > Support for the Intune SDK for Xamarin is currently available in preview. 
@@ -71,7 +71,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 2. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
 
-3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
+3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
 
 4.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
 
