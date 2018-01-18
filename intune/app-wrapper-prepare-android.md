@@ -151,6 +151,31 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
+## Requiring Intune app protection policies in order to use your wrapped Android LOB app (optional)
+
+The following is guidance for ensuring your Android LOB apps can be used only by Intune protected users on their device. 
+
+### General Requirements
+* The Intune SDK team will require your app's Application ID. This can be found in the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
+	 
+### Working with the Intune SDK
+These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
+
+1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> The term "client id" is the same as the term "application id" from the Azure Portal tied to your app. 
+* To enable SSO, "Common ADAL configuration" #2 is what is needed.
+
+2. Enable default enrollment by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
+
+3. Enable MAM policy required by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> This forces apps to download the Company Portal on the device and complete the default enrollment flow before use.
+
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
