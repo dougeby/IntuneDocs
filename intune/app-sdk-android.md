@@ -7,7 +7,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Intune App SDK overview](app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as **APP** or MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
+The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as **APP** or MAM policies) into your native Android app. An Intune-managed application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-managed app when Intune actively manages the app.
 
 
 ## What's in the SDK
@@ -69,11 +69,11 @@ The Intune App SDK is a compiled Android project. As a result, it is largely una
 The Intune App SDK for Android relies on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) app on the device to enable app protection policies. The Company Portal retrieves app protection policies from the Intune service. When the app initializes, it loads policy and code to enforce that policy from the Company Portal.
 
 > [!NOTE]
-> When the Company Portal app is not on the device, an Intune-enlightened app behaves the same as a normal app that does not support Intune app protection policies.
+> When the Company Portal app is not on the device, an Intune-managed app behaves the same as a normal app that does not support Intune app protection policies.
 
 For app protection without device enrollment, the user is _**not**_ required to enroll the device by using the Company Portal app.
 
-## SDK Integration
+## SDK integration
 
 ### Build integration
 
@@ -918,7 +918,7 @@ You can also override a method in `MAMActivity` if you want the app to be notifi
 
 ### Implicit Identity Changes
 
-In addition to the app's ability to set the identity, a thread or a context's identity may change based on data ingress from another Intune-enlightened app that has app protection policy.
+In addition to the app's ability to set the identity, a thread or a context's identity may change based on data ingress from another Intune-managed app that has app protection policy.
 
 #### Examples
 
@@ -1420,18 +1420,22 @@ Below is the complete list of allowed style attributes, the UI elements they con
 | Accent color | PIN box border when highlighted <br> Hyperlinks |accent_color | Color |
 | App logo | Large icon that appears in the Intune app PIN screen | logo_image | Drawable |
 
-## Requiring Intune app protection policies in order to use your Intune SDK-integrated Android app (optional)
-The following is guidance for ensuring your Android LOB apps can be used only by Intune protected users on their device. This is **not** recomended for store apps which can be used by non-Intune users. 
+## Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional)
+
+The following is guidance for requiring user prompt on app launch for an automatic APP-WE service enrollment (we call this **default enrollment** in this section), requiring Intune app protection policies to allow only Intune protected users to use your SDK-integrated Android LOB app. It also covers how to enable SSO for your SDK-integrated Android LOB app. This is **not** supported for store apps which can be used by non-Intune users.
+
+> [!NOTE] 
+> The benefits of **default enrollment** include a simplified method of obtaining policy from APP-WE service for an app on the device.
 
 ### General Requirements
-* The Intune SDK team will require your app's Application ID. This can be found in the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
+* The Intune SDK team will require your app's Application ID. A way to find this is through the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
 	 
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
 1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
-> The term "client id" is the same as the term "application id" from the Azure Portal tied to your app. 
+> The term "client id" tied to your app is the same as the term "application id" from the Azure Portal. 
 * To enable SSO, "Common ADAL configuration" #2 is what is needed.
 
 2. Enable default enrollment by putting the following value in the manifest:
@@ -1442,7 +1446,7 @@ These instructions are specific to all Android and Xamarin apps who wish to requ
 3. Enable MAM policy required by putting the following value in the manifest:
 ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
 > [!NOTE] 
-> This forces apps to download the Company Portal on the device and complete the default enrollment flow before use.
+> This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 
 ## Limitations
 
@@ -1471,7 +1475,7 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
     
 ### Exported services
 
- The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
+ The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to a managed app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
 
 ### Reflection limitations
 Some of the MAM base classes (e.g. MAMActivity, MAMDocumentsProvider)
