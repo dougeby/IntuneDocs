@@ -109,6 +109,9 @@ PrinterOn’s wireless mobile printing solutions will enable users to remotely p
 ### Approve the Company Portal app for Android for Work <!--1797090 -->
 If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
 
+### FaceID on iOS devices <!-- 1807377 -->
+Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
+
 ### Microsoft Graph API for Intune - General Availability  <!-- 1833289 -->
 Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
 
