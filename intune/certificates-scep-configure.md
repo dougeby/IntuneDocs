@@ -6,12 +6,11 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 
 
 # optional metadata
@@ -91,7 +90,7 @@ Before you can configure certificate profiles you must complete the following ta
 Create a domain user account to use as the NDES service account. You specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
-In this task you:
+In this task, you will:
 
 -   Configure a certificate template for NDES
 
@@ -197,7 +196,7 @@ In this task you:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### Step 4 - Configure NDES for use with Intune
-In this task you:
+In this task, you will:
 
 -   Configure NDES for use with the issuing CA
 
@@ -300,7 +299,7 @@ In this task you:
 4. Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
 #### Step 5 - Enable, install, and configure the Intune certificate connector
-In this task you:
+In this task, you will:
 
 - Enable support for NDES in Intune.
 - Download, install, and configure the Certificate Connector on a server in your environment. To support high availability, you can install multiple Certificate Connectors on different servers.
@@ -332,6 +331,9 @@ In this task you:
 5.  In the **Certificate Connector** UI:
 
     Click **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+
+    > [!IMPORTANT]
+    > The user account must be assigned a valid Intune license. If the user account does not have a valid Intune license, then NDESConnectorUI.exe fails.
 
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 
