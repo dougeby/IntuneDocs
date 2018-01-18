@@ -32,8 +32,6 @@ ms.custom: intune-classic
 > [!NOTE]
 > You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
-
-
 ## Overview
 The [Intune App SDK Xamarin component](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
 
@@ -113,3 +111,35 @@ For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.R
 ## Next steps
 
 You have completed the basic steps of building the component into your app. Now you can follow the steps included in the Xamarin Android sample app. We have provided two samples, one for Xamarin.Forms and another for Android.
+
+## Requiring Intune app protection policies in order to use your Xamarin-based Android LOB app (optional) 
+
+The following is guidance for ensuring Xamarin-based Android LOB apps can be used only by Intune protected users on their device. 
+
+### General Requirements
+* The Intune SDK team will require your app's Application ID. This can be found in the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
+	 
+### Working with the Intune SDK
+These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
+
+1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> The term "client id" is the same as the term "application id" from the Azure Portal tied to your app. 
+* To enable SSO, "Common ADAL configuration" #2 is what is needed.
+
+2. Enable default enrollment by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
+
+3. Enable MAM policy required by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> This forces apps to download the Company Portal on the device and complete the default enrollment flow before use.
+
+### Working with ADAL
+These instructions are a requirement for .NET/Xamarin apps who wish to require Intune app protection policies for use on a end user device.
+
+1. Follow all the steps defined in the ADAL documentation under [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android).
+> [!NOTE] 
+> The version that .NET ADAL will be releasing next (3.17.4) is expected to contain the fix required to make this work.
