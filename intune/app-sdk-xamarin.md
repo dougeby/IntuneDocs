@@ -44,14 +44,12 @@ The Microsoft Intune App SDK Xamarin Component lets you incorporate Intune app p
 
 ## What's supported?
 
-### Developer machines
+### Developer machines and tools
 * macOS
-
 
 ### Mobile app platforms
 * Android
 * iOS
-
 
 ### Intune Mobile Application Management scenarios
 
@@ -67,18 +65,15 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 ## Get started
 
-1.	Download **Xamarin-component.exe** from [here](https://components.xamarin.com/submit/xpkg) and extract it.
+1. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
 
-2. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
+2.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
 
-3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
+3.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
 
-4.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
+4.	In Visual Studio, right-click **components** in your previously created Xamarin project.
 
-5.	In Visual Studio, right-click **components** in your previously created Xamarin project.
-
-6.	Select **Edit Components** and add the Intune App SDK component you’ve downloaded locally to your computer.
-
+5.	Select **Edit Components** and add the Intune App SDK component you’ve downloaded locally to your computer.
 
 
 ## Enabling Intune app protection polices in your iOS mobile app
@@ -100,7 +95,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## Enabling app protection policies in your Android mobile app
+## Enabling Intune app protection policies in your Android mobile app
 For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`.
 
 For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.Remapper`. The tool accomplishes the class replacement for you. However, you need to do the following steps:
