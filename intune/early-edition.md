@@ -126,13 +126,6 @@ For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, 
 ### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
 You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
 
-### Network Access Control (NAC) device check-in reporting  <!-- 1232250 -->
-Before this change, IT admins couldn't determine from the Intune side whether a NAC-managed device was communicating with their NAC solution or not. When a NAC-managed device isn't communicating with their NAC solution, the device is considered non-compliant by the NAC solution, and therefore blocked by the NAC solution itself and subsequently blocked by conditional access policies that rely on the device compliance state.
-
-With this change, IT admins can see which NAC-managed devices have successfully communicated with their NAC solution or not. This new capability consists of two new monitoring functions located in the Device compliance workload within Intune, the statistics are shown as below:
-- **Average NAC calls in the last hour**
-- **Last NAC incoming request (date/time)**
-
 ### New iOS device action   <!-- 1244701 -->
 You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
