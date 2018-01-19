@@ -315,6 +315,8 @@
         href: device-restrictions-windows-10.md
       - name: Windows 10 Team
         href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
     - name: Configure email settings
