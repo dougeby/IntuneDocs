@@ -72,7 +72,7 @@ You will be able to target compliance policies to users in user groups. You'll b
 
 ### Including and excluding app assignment based on groups <!-- 1406920 -->
 
-During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude. You'll also be able to use the pre-created groups (All Users, All Devices and All Users+Devices) as included groups.
+During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude.
 
 ### Remote "Erase" command support <!-- 1438084 -->
 

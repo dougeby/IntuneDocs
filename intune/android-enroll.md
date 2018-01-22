@@ -64,7 +64,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    ![Screenshot showing link to configure the Android for Work binding](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
-   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console.
+   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
    c. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.
