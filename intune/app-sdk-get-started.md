@@ -7,7 +7,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ You *do not need* to register your app. For internal line-of-business apps, the 
 
 ### If your app will be released to a public app store, like the Apple App Store or Google Play:
 
-You _**must**_ first register your app with Microsoft Intune and agree to the registration terms. IT administrators can then apply app protection policy to the enlightened app, which will be listed as an Intune app partner.
+You _**must**_ first register your app with Microsoft Intune and agree to the registration terms. IT administrators can then apply app protection policy to the managed app, which will be listed as an Intune app partner.
 
 Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). There, the app's icon will be displayed to show that it supports Intune app protection policies.
 
@@ -66,8 +66,6 @@ If your app's deep link changes in the future, you will need to re-register your
 > [!NOTE]
 > Please inform us if you update your app with a new version of the Intune App SDK.
 
-
-
 ## Download the SDK files
 
 The Intune App SDKs for native iOS and Android are hosted on a Microsoft GitHub account. These public repositories have the SDK files for native iOS and Android, respectively:
@@ -81,10 +79,6 @@ If your app is a Xamarin or Cordova app, please use these SDK variants:
 * [Intune App SDK Cordova Plugin](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 It's a good idea to sign up for a GitHub account that you can use to fork and pull from our repositories. GitHub lets developers communicate with our product team, open issues and receive quick responses, view release notes, and provide feedback to Microsoft. For questions on the Intune App SDK GitHub, contact msintuneappsdk@microsoft.com.
-
-
-
-
 
 ## Enable your iOS or Android app for app protection policy
 
@@ -108,9 +102,6 @@ You will need one of the following developer guides to help you integrate the In
  
  * The [AAD Client ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
  
- 
- 
-
 ## Configure Telemetry for your app
 
 Microsoft Intune collects data on usage statistics for your app.
@@ -119,7 +110,10 @@ Microsoft Intune collects data on usage statistics for your app.
 
     * If you choose not to send SDK telemetry data to Microsoft Intune from your app, you must disable telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the IntuneMAMSettings dictionary.
 
-* **Intune App SDK for Android**: Telemetry data is not logged through the SDK.
+* **Intune App SDK for Android**: The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs telemetry data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII). 
+
+	* If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+
 
  iOS and Android line-of-business app version number is visible <!-- 1380712 -->
 
@@ -129,7 +123,7 @@ Line-of-business apps in Intune now display the version number for iOS and Andro
 
 ### Full version number
 
-The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example, 2.2(2.2.17560800)
+The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example, 2.2(2.2.17560800). 
 
 The full version number has two components:
 
@@ -169,7 +163,7 @@ Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate
 ### Test your app
 After you finish the necessary steps to integrate your iOS or Android app with the Intune App SDK, you will need to ensure that all the app protection policies are enabled and functioning for the user and the IT admin. To test your integrated app, you will need the following:
 
-* **Microsoft Intune test account**: To test your Intune-enlightened app against Intune app protection features, you will need a Microsoft Intune account.
+* **Microsoft Intune test account**: To test your Intune-managed app against Intune app protection features, you will need a Microsoft Intune account.
 
 	* If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step. The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.
 
@@ -177,7 +171,7 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 
 * **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](/intune-classic/deploy-use/ios-mam-policy-settings) and [Android app protection policies](/intune-classic/deploy-use/android-mam-policy-settings).
 
-* **Troubleshoot**: If you run into any issues while manually testing your app's user experience, check out the [Troubleshooting MAM](/intune-classic/troubleshoot/troubleshoot-mam). This article offers help for common issues, dialogs, and error messages that may be experienced in Intune-enlightened apps. 
+* **Troubleshoot**: If you run into any issues while manually testing your app's user experience, check out the [Troubleshooting MAM](/intune-classic/troubleshoot/troubleshoot-mam). This article offers help for common issues, dialogs, and error messages that may be experienced in Intune-managed apps. 
 
 ### Badge your app (optional)
 
