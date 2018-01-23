@@ -47,8 +47,8 @@ Remote lock is supported for the following platforms:
 |Windows 10 Mobile|Yes|
 |Windows Phone|Yes, for Windows Phone 8.1 and later|
 
-    > [!Note]  
-    > For macOS devices, you set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
+> [!NOTE]  
+> For macOS devices, you set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 
 ## How to remote lock a device
 
