@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/11/2018
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,16 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+## Week of January 22, 2018
+
+### Intune Apps
+
+#### Remote lock available in Company Portal app for Windows 10 <!--676506-->
+End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
+
+#### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
+End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ## Week of December 11, 2017
 
@@ -805,9 +815,13 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 ### Administration roles being replaced in Azure portal
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
-
-
 ## What's coming
+
+### User experience update for the Company Portal app for iOS <!--1412866-->
+
+We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
+
+We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access.
 
 ### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 -->
 We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure Portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.

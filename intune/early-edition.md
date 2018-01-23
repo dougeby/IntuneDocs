@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/17/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,7 +72,7 @@ You will be able to target compliance policies to users in user groups. You'll b
 
 ### Including and excluding app assignment based on groups <!-- 1406920 -->
 
-During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude. You'll also be able to use the pre-created groups (All Users, All Devices and All Users+Devices) as included groups.
+During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude.
 
 ### Remote "Erase" command support <!-- 1438084 -->
 
@@ -125,13 +125,6 @@ For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, 
 
 ### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
 You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
-
-### Network Access Control (NAC) device check-in reporting  <!-- 1232250 -->
-Before this change, IT admins couldn't determine from the Intune side whether a NAC-managed device was communicating with their NAC solution or not. When a NAC-managed device isn't communicating with their NAC solution, the device is considered non-compliant by the NAC solution, and therefore blocked by the NAC solution itself and subsequently blocked by conditional access policies that rely on the device compliance state.
-
-With this change, IT admins can see which NAC-managed devices have successfully communicated with their NAC solution or not. This new capability consists of two new monitoring functions located in the Device compliance workload within Intune, the statistics are shown as below:
-- **Average NAC calls in the last hour**
-- **Last NAC incoming request (date/time)**
 
 ### New iOS device action   <!-- 1244701 -->
 You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
@@ -196,7 +189,7 @@ Soon you will be able to require a PIN for targeted iOS apps. You can configure 
 
 We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
 
-We will be offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
+We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
 
 ![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
 
