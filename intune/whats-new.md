@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/18/2018
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,16 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+## Week of January 22, 2018
+
+### Intune Apps
+
+#### Remote lock available in Company Portal app for Windows 10 <!--676506-->
+End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
+
+#### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
+End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ## Week of December 11, 2017
 
