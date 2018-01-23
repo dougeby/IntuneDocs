@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Remotely lock managed devices with Intune 
+title: Remotely lock managed devices with Intune
 titlesuffix: "Azure portal"
 description: Learn how to use Intune to remotely lock devices you manage."
 keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,14 +36,19 @@ The **Remote lock** device locks the selected device. The device owner must use 
 
 ## Supported platforms
 
-- Windows - Not supported
-- Windows Phone - Supported on Windows Phone 8.1 and later
-- iOS - Supported
-- macOS - Supported
+Remote lock is supported for the following platforms:
 
-    > [!Note]  
-    > Set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
-- Android - Supported
+|Platform|Support status|
+|---|---|
+|Android|Yes|
+|iOS|Yes|
+|macOS|Yes|
+|Windows 10|Yes|
+|Windows 10 Mobile|Yes|
+|Windows Phone|Yes, for Windows Phone 8.1 and later|
+
+> [!NOTE]  
+> For macOS devices, you set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
 
 ## How to remote lock a device
 
