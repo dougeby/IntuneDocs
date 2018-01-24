@@ -7,13 +7,8 @@ description: Learn how to configure Windows Update for Business settings in Intu
 keywords:
 author: dougeby
 ms.author: dougeby
-<<<<<<< HEAD
-manager: angrobe
-ms.date: 1/24/2018
-=======
 manager: dougeby
 ms.date: 11/01/2017
->>>>>>> c6819bd1db18f6b88a5d5cd087c46a12778cbc0c
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
