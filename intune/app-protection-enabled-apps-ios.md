@@ -7,7 +7,7 @@ description: This topic describes what to expect when your iOS app is managed by
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

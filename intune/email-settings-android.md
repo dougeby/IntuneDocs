@@ -7,7 +7,7 @@ description: Learn about the Intune settings you can use to configure email conn
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod:

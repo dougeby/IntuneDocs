@@ -7,7 +7,7 @@ description: Learn how to set up enrollment of Windows devices in Microsoft Intu
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

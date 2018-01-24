@@ -7,7 +7,7 @@ description: Learn how to enroll corporate-owned iOS devices using the Device En
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod:

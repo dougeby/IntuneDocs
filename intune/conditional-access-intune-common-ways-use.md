@@ -7,7 +7,7 @@ description: "Common ways to use conditional access with Intune"
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:

@@ -5,7 +5,7 @@ title: You need to update your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/20/2016
 ms.topic: article
 ms.prod:

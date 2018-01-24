@@ -7,8 +7,13 @@ description: Learn how to use Intune to configure custom settings on devices you
 keywords:
 author: vhorne
 ms.author: victorh
+<<<<<<< HEAD
 manager: angrobe
 ms.date: 1/24/2018
+=======
+manager: dougeby
+ms.date: 06/03/2017
+>>>>>>> c6819bd1db18f6b88a5d5cd087c46a12778cbc0c
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

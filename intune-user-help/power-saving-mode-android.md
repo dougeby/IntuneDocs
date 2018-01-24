@@ -6,7 +6,7 @@ description: Find out how to turn off power optimization for Android to make sur
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article
 ms.prod:

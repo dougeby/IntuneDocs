@@ -7,7 +7,7 @@ description: "Create and deploy WIP app protection policy with Intune"
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod:

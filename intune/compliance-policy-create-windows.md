@@ -7,8 +7,13 @@ description: Learn how to create a compliance policy for Windows devices."
 keywords:
 author: andredm7
 ms.author: andredm
+<<<<<<< HEAD
 manager: angrobe
 ms.date: 1/24/2018
+=======
+manager: dougeby
+ms.date: 12/07/2016
+>>>>>>> c6819bd1db18f6b88a5d5cd087c46a12778cbc0c
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

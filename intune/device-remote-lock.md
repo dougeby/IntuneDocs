@@ -7,7 +7,7 @@ description: Learn how to use Intune to remotely lock devices you manage."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/22/2018
 ms.topic: article
 ms.prod:

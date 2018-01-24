@@ -5,7 +5,7 @@ description: Create a treemap visualization using Power BI Desktop with an inter
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod:

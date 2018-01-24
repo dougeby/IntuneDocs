@@ -7,7 +7,7 @@ description: Learn how to enroll Android devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/10/2017
 ms.topic: article
 ms.prod:

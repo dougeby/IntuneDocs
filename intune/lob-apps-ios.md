@@ -7,7 +7,7 @@ description: Learn about adding iOS line-of-business apps to Intune."
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/3/2017
 ms.topic: article
 ms.prod:

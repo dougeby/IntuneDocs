@@ -7,7 +7,7 @@ description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod:

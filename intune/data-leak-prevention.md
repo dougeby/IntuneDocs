@@ -5,7 +5,7 @@ title: Prevent data leaks on non-managed devices
 description: Allow access to corporate data on devices and protect data from data leaks. 
 keywords: data protection prevent leaks device O365 Office 365
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod:
