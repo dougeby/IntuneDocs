@@ -195,12 +195,11 @@ To find the OS version to use for the **Minimum OS required**, and **Maximum OS 
 
 ## Windows Holographic for Business support
 
-Windows Holographic for Business supports the following settings:
+Windows Holographic for Business supports the following setting:
 
-- System Security
-   - Encryption
+- System Security / Encryption
 
-      - **Encryption of data storage on device**.
+  **Encryption of data storage on device**.
 
 <!--- ## Next steps
 
