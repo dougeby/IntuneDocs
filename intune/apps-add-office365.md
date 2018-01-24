@@ -35,7 +35,7 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 ## Before you start
 
 >[!IMPORTANT]
->This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device. We provide user help for this scenario [here](/intune-user-help/install-office-windows.md)
+>This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device. We provide user help for this scenario [here](/intune-user-help/install-office-windows.md).
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 - Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
