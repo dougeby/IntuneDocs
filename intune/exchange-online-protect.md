@@ -6,7 +6,7 @@ description: Give employees access to their work email. No device management req
 keywords: Office 365 Exchange email access
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.prod:
 ms.service: microsoft-intune

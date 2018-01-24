@@ -6,7 +6,7 @@ description: Methods for making iOS apps available to end users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/28/2016
 ms.topic: article
 ms.prod:

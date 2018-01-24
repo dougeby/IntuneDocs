@@ -7,7 +7,7 @@ description: Add a user to Intune to allow them to access company resources on m
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

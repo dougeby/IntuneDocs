@@ -7,7 +7,7 @@ description: Learn how to create Intune device configuration profiles."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 05/16/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: This topic describes the app protection policy settings for iOS dev
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:

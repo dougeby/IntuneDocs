@@ -6,7 +6,7 @@ description: Use the information in this article to learn how to wrap your Andro
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:

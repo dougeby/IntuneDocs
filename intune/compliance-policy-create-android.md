@@ -4,7 +4,7 @@
 title: How to create a compliance policy for AndroidtitleSuffix: "Azure portal"
 description: Learn how to create a compliance policy for Android devices."
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7ms.author: andredmmanager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

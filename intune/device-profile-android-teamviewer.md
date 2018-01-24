@@ -7,7 +7,7 @@ description: Learn how to remotely administer devices using TeamViewer."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/14/2017
 ms.topic: article
 ms.prod:

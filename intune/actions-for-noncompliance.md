@@ -7,7 +7,7 @@ description: "Learn how to create actions for noncompliance with Intune"
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2017
 ms.topic: article
 ms.prod:

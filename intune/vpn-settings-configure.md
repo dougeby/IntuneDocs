@@ -7,7 +7,7 @@ description: Learn how to use Intune to configure VPN connections on devices you
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/03/2017
 ms.topic: article
 ms.prod:

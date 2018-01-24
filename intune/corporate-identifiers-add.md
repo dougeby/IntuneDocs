@@ -7,7 +7,7 @@ description: Learn how to add corporate identifiers (enrollment method, IMEI and
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod:

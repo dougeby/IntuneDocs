@@ -7,7 +7,7 @@ description: "Intune Azure preview: Learn how RBAC lets you control who can perf
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod:

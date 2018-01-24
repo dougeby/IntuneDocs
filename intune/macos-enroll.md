@@ -7,7 +7,7 @@ description: Learn how to enroll macOS devices in Intune."
 keywords:
 author: ErikjeMS
 ms.author: erikje
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Use an Intune custom profile to create a Wi-Fi profile with a pre-s
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod:

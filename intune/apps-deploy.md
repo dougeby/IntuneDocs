@@ -7,7 +7,7 @@ description: Once you've added an app to Intune, you'll want to assign it to gro
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/24/2017
 ms.topic: article
 ms.prod:

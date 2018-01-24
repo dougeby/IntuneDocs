@@ -7,7 +7,7 @@ description: Learn how to monitor device compliance policies."
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/10/2017
 ms.topic: article
 ms.prod:
