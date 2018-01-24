@@ -179,6 +179,9 @@ You will need the following to distribute apps wrapped by Intune:
 
 4.  Open the **IntuneMAMPackager** folder and save its contents to your macOS computer. You are now ready to run the App Wrapping Tool.
 
+> [!NOTE]
+> The Intune MAM Packager may get mounted separately on your macOS computer and may result in a "file not found" error when running the wrapping commands. As such, moving the contents of the IntuneMAMPackager folder will allow for the path to the packager to be found during wrapping.
+
 ## Run the App Wrapping Tool
 
 ### Use terminal
