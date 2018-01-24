@@ -65,9 +65,7 @@ Windows Holographic for Business supports the following custom settings:
 
 ## How to find the policies you can configure
 
-You can find a complete list of all configuration service providers (CSPs) that Windows Holographic supports in [CSPs supported in Windows Holographic](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens).
-
-Not all settings are compatible with all Windows Holographic versions. The table in the Windows topic tells you which versions are supported for each CSP.
+You can find a complete list of all configuration service providers (CSPs) that Windows Holographic supports in [CSPs supported in Windows Holographic](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens). Not all settings are compatible with all Windows Holographic versions. The table in the Windows topic tells you which versions are supported for each CSP.
 
 Additionally, Intune does not support all of the settings listed in the topic. To find out if Intune supports the setting you want, open the topic for that setting. Each setting page shows it’s supported operation. To work with Intune, the setting must support the **Add** or **Replace** operations.
 
