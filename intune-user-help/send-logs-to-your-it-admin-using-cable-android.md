@@ -5,7 +5,7 @@ title: Send logs to your company support using a USB cable | Microsoft Docs
 description: Send data logs by using a USB cable
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
