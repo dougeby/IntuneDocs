@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Check compliance on your Android device | Microsoft Docs
+title: Installing Office 365 on your Windows 10 device | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
@@ -27,12 +27,14 @@ ms.custom: intune-enduser
 
 ---
 
-# Check compliance on your Android device
+# Installing Office 365 on your Windows 10 device
 
-If your device hasn't checked in with Intune in a while, you might not be able to access your company or school resources. To regain access, try the following:
+There are many ways you can install the Office suite on to your Windows 10 device. Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal.
 
-1. Open the Android Company Portal app on your device.
+*image of company portal app store with conflicting versions of office side by side*
 
-2. Tap **Check Compliance**.
+When your company makes Office available, you should only install one version of Office. If you try to install both, you'll remove the one you had installed first.
 
-If you are unable to reset your lost or stolen device, ask your company support to reset it for you. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+*image of Office apps being installed, possibly with different version numbers that match up to company portal app store listings*
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
