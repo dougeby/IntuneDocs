@@ -64,8 +64,8 @@ To create a device profile containing device restriction settings:
 	- [Windows Phone 8.1 settings](device-restrictions-windows-phone-8-1.md)
 	- [Windows 8.1](device-restrictions-windows-8-1.md)
 	- [Windows 10 settings](device-restrictions-windows-10.md)
-	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
 	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
+	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
 	- [Android for Work settings](device-restrictions-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
