@@ -7,7 +7,7 @@ description: This topic describes the record of app protection policy settings s
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
 ms.prod:

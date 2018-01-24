@@ -6,7 +6,7 @@ description: Learn how Intune for Education differs from the full Intune managem
 keywords: what is Intune
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
 ms.prod:

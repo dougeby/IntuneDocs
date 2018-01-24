@@ -7,7 +7,7 @@ description: Learn how to configure Intune for iOS device single sign-on."
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod:

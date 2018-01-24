@@ -6,7 +6,7 @@ description: "Find out what has changed in UI for apps that work on end user dev
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod:

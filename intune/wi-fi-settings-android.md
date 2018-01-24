@@ -7,7 +7,7 @@ description: Learn Intune configure Wi-Fi connection settings on Android and And
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod:

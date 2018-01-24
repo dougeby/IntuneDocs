@@ -7,7 +7,7 @@ description: Learn how to remotely restart devices using the restart device acti
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/21/2017
 ms.topic: article
 ms.prod:

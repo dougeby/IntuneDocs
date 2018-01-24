@@ -5,7 +5,7 @@ description: Reference topic for the IntuneManagementExtension Entity category o
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

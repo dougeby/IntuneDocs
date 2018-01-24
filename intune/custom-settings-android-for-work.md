@@ -7,7 +7,7 @@ description: Learn how to create Intune custom profile settings for Android for 
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article
 ms.prod:

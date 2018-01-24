@@ -8,7 +8,7 @@ description: Use this topic to learn to protect your company data with Microsoft
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
 ms.prod:

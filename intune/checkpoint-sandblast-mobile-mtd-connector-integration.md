@@ -7,7 +7,7 @@ description: "Set up the Check Point SandBlast integration with Intune"
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: Audit logs for Intune activities
 description: Learn how to review audit logs that record Intune activies 
 keywords: 
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod:

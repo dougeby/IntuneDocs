@@ -7,7 +7,7 @@ description: If you're stuck, use this topic to help you solve problems with Int
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
 ms.prod:

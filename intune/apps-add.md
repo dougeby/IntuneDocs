@@ -7,7 +7,7 @@ description: These procedures help you get your apps into Intune ready to be ass
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod:

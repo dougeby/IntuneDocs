@@ -7,7 +7,7 @@ description: "Learn how you can use Intune to make it easier to install Office 3
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/13/2017
 ms.topic: article
 ms.prod:

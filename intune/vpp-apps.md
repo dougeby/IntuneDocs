@@ -7,7 +7,7 @@ description:  Learn about how you can use Intune to manage and monitor your use 
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

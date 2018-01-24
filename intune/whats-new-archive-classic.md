@@ -6,7 +6,7 @@ description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod:

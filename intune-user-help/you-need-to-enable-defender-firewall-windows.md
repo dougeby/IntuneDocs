@@ -6,7 +6,7 @@ description: Learn how to enable your Windows 10 device to access company resour
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

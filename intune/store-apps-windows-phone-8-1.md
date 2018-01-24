@@ -6,7 +6,7 @@ description: Learn about adding Windows Phone 8.1 store apps to Intune."
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod:

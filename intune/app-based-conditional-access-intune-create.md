@@ -6,7 +6,7 @@ description: This topic describes how you can configure an app-based conditional
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn the Intune settings you can use to control endpoint protectio
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
 ms.prod:

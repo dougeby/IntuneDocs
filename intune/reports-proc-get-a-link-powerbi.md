@@ -5,7 +5,7 @@ description: You can download a file for use with Microsoft Power BI that allows
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod:

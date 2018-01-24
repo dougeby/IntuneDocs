@@ -6,7 +6,7 @@ description: Describes the Company Portal website and provides links to steps fo
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod:

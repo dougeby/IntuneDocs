@@ -7,7 +7,7 @@ description: Learn how you can sync apps into Intune from the Microsoft Store fo
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod:
