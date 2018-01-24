@@ -126,7 +126,7 @@ MAM (on iOS) currently allows application-level PIN with alphanumeric and specia
 
 **How does Intune remotely wipe data?** Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using factory reset or remove company data](devices-wipe.md#factory-reset). For more information about selective wipe using MAM, see [Remove company data](devices-wipe.md#remove-company-data) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
-  1. **What is factory reset?** [Factory reset](devices-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+  1. **What is factory reset?** [Factory reset](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
   > Factory reset can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
@@ -150,7 +150,7 @@ MAM (on iOS) currently allows application-level PIN with alphanumeric and specia
 **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?** Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, Intune _**encrypts "corporate" data before it is shared outside the app**_. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
 
 ### See also
-- [Implement your Intune plan]([)planning-guide-onboarding.md)
+- [Implement your Intune plan](planning-guide-onboarding.md)
 - [Intune testing and validation](planning-guide-test-validation.md)
 - [Android mobile app management policy settings in Microsoft Intune](app-protection-policy-settings-android.md)
 - [iOS mobile app management policy settings](app-protection-policy-settings-ios.md)
