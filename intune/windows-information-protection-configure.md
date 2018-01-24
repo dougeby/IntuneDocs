@@ -7,7 +7,7 @@ description: Learn about the Intune settings you can use to manage Windows Infor
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod:

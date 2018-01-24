@@ -7,7 +7,7 @@ description: How to require multi-factor authentication in Azure AD for device e
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ description: Learn how to configure your infrastructure, then create and assign 
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod:

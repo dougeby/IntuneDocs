@@ -7,7 +7,7 @@ description: This article provides a migration communication plan and strategy.
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod:

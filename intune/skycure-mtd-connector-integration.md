@@ -7,7 +7,7 @@ description: Set up the Skycure integration with Microsoft Intune.
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: The information in this topic helps you decide when you should use 
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 08/02/2017
 ms.topic: article
 ms.prod:

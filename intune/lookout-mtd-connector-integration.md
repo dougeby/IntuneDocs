@@ -7,7 +7,7 @@ description: Set up your Lookout subscription with Intune
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Share information with your end users to make your Intune deploymen
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
 ms.prod:

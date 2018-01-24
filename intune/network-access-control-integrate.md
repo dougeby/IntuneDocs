@@ -7,7 +7,7 @@ description: Network access control (NAC) integration with Intune
 keywords:
 author: bruceperlerMS
 ms.author: bruceper
-manager: angrobe
+manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod:

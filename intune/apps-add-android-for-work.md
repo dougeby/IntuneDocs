@@ -7,7 +7,7 @@ description: Use this topic to synchronize, then assign apps to Android for Work
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/13/2017
 ms.topic: article
 ms.prod:

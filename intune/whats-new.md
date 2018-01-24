@@ -6,7 +6,7 @@ description: Find out what's new in the Intune Azure portal
 keywords:
 author: ErikjeMS  
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/22/2018
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn how to create a per-app VPN profile for Android devices manag
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod:
