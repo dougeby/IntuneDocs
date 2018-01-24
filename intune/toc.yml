@@ -124,7 +124,7 @@
     - name: Supported configurations
       href: supported-devices-browsers.md
       items:
-      - name: Network bandwidth usage
+      - name: Network configuration
         href: network-bandwidth-use.md
     - name: Sign in to Intune
       href: account-sign-up.md
