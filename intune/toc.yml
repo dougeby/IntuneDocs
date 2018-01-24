@@ -198,6 +198,8 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Erase device
+      href: device-erase.md
     - name: Remote control for Android
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
