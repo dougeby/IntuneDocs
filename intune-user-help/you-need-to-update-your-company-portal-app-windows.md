@@ -5,7 +5,7 @@ title: You need to update your Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:

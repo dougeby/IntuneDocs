@@ -7,7 +7,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
