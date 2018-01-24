@@ -6,7 +6,7 @@ description: "Learn how to enroll new Windows 10 devices using Windows AutoPilot
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod:

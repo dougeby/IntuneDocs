@@ -5,7 +5,7 @@ title: Prevent unauthorized access to company data
 description: Prevent unauthorized access to your company data when shared outside the company network. 
 keywords: Office 365 O365 Azure Information Protection data protect outside network company data 
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: "Set terms and conditions that users see in the Company Portal for 
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

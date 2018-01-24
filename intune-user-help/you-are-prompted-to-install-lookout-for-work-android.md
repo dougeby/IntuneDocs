@@ -6,7 +6,7 @@ description: Learn how to install Lookout for Work for Android.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: What happens if you reset your device? | Microsoft Docs
 description: Learn more about what happens when you reset your device for each of Intune's supported platforms.
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article
 ms.prod:

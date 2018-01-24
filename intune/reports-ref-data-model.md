@@ -5,7 +5,7 @@ description: The Intune Data Warehouse samples data daily to provide a historica
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:

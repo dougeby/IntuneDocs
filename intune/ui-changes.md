@@ -7,7 +7,7 @@ description: Helps you find Intune features in the Azure portal."
 keywords:
 author: dagerrit
 ms.author: dagerrit
-manager: angrobe
+manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
 ms.prod:

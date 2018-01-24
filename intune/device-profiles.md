@@ -7,7 +7,7 @@ description: Learn about Intune device profiles and how they can help manage and
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod:

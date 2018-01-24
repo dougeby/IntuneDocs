@@ -4,7 +4,7 @@
 title: Intune device compliance policiestitleSuffix: "Azure portal"
 description: Use this topic to learn about device compliance in Microsoft Intune"
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7ms.author: andredmmanager: dougeby
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod:

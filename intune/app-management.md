@@ -7,7 +7,7 @@ description: Use this topic to learn the basics about app management with Micros
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod:

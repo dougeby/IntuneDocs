@@ -7,7 +7,7 @@ description: After you've assigned an app to users or devices, use this informat
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/21/2017
 ms.topic: article
 ms.prod:

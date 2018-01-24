@@ -7,7 +7,7 @@ description: Learn how to create a compliance policy for Android devices to enab
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod:

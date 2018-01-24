@@ -5,7 +5,7 @@ title: You need to enable encryption | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn how to remove a user from a shared iOS device with Intune."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod:
