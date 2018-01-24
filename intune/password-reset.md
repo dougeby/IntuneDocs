@@ -5,7 +5,7 @@ title: Reduce help desk costs
 description: Reducing help desk costs with self-service password reset 
 keywords: Azure Active Directory SSPR password reset
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 08/27/2017
 ms.topic: article
 ms.prod:

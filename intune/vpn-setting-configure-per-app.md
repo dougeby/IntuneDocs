@@ -7,7 +7,7 @@ description: Specify which managed apps can use your VPN on Intune managed iOS d
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/5/2017
 ms.topic: article
 ms.prod:

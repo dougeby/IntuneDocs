@@ -5,9 +5,9 @@ title: Install Office 365 apps to mobile devices using Intune
 titlesuffix: "Azure portal"
 description: "Learn how you can use Intune to make it easier to install Office 365 apps on Windows 10 devices."
 keywords:
-author: dougeby
-ms.author: dougeby
-manager: angrobe
+author: barlan
+ms.author: barlanmsft
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod:

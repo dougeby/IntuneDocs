@@ -6,7 +6,7 @@ description: Find out ways to solve common issues with your Samsung Knox device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod:

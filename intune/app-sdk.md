@@ -6,7 +6,7 @@ description: The Intune App SDK is available for both the iOS and Android platfo
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 08/24/2017
 ms.topic: article
 ms.prod:

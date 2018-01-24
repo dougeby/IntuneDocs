@@ -7,7 +7,7 @@ description: Learn about some of the terminology used in Microsoft Intune
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description:  Learn how Intune app protection policies can help protect company 
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod:

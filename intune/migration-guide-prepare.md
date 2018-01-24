@@ -6,7 +6,7 @@ description: Evaluate your business and technical requirements before migrating 
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod:

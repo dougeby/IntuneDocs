@@ -5,7 +5,7 @@ description: Create and assign PKCS certificates with Intune."
 keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn how to use Intune to activate lost mode on lost or stolen iOS
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod:

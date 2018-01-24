@@ -7,7 +7,7 @@ description: Learn how to see the devices you manage with Intune, and perform va
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod:
