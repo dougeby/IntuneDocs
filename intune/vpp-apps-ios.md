@@ -137,9 +137,15 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 > [!Note]  
 > It is not recommended to assign VPP apps to Kiosk-mode devices using the VPP user licensing.
 
-## Further information
+## Revoking app licenses and deleting tokens <!-- 820863 -->
 
-To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled. If you remove an app that was assigned to a user, Intune attempts to reclaim all app licenses that were associated with that user.
+For a given device that has one or more iOS volume-purchase program (VPP) apps, you can revoke the associated device-based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment action of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune attempts to reclaim all app licenses that were associated with that user.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
+
+<!-- 820870 -->You can revoke the license of all VPP apps for a given VPP token. To do this, you must revoke all app licenses before deleting the token.
+
+## Further information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
 
