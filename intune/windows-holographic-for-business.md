@@ -45,6 +45,9 @@ For more information about Microsoft Intune support, see the following topics:
 
 ## Windows Hello for Business
 - [Use Windows Hello for Business](windows-hello.md)
+
+## VPN settings
+- [How to configure VPN settings in Microsoft Intune](vpn-settings-configure.md)
  
 
 
