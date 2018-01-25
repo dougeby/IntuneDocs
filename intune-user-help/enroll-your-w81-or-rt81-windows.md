@@ -5,7 +5,7 @@ title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:

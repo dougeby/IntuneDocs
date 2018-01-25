@@ -6,7 +6,7 @@ description: Learn about adding Android store apps to Intune."
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: article
 ms.prod:

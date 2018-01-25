@@ -6,7 +6,7 @@ description:  Synchronize on-premises users with Azure AD and grant administrato
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:

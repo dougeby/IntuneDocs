@@ -7,7 +7,7 @@ description: Learn how to use app configuration policies for Intune.
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Lists six of the most common tasks that Intune helps with
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn the Intune settings you can use to control device settings an
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/8/2018
 ms.topic: article
 ms.prod:
@@ -56,7 +56,7 @@ ms.custom: intune-azure
 - **Device discovery** - Block a device from being discovered by other devices.
 - **Task Switcher (mobile only)** - Blocks the task switcher on the device.
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
-<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
+- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 
 
 ## Password

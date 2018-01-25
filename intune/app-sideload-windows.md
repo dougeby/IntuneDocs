@@ -6,7 +6,7 @@ description: Learn how to sign line of business apps so you can use Intune to de
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod:

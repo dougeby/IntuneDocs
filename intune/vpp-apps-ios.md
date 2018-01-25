@@ -7,7 +7,7 @@ description: Learn about how you can sync apps you purchased in volume from the 
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/13/2017
 ms.topic: article
 ms.prod:

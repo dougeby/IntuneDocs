@@ -7,7 +7,7 @@ description: "Use compliance to help secure Jamf-managed devices."
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/14/2017
 ms.topic: article
 ms.prod:

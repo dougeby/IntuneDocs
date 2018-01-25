@@ -8,7 +8,7 @@ description: Support is available both online and by telephone for paid and tria
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod:

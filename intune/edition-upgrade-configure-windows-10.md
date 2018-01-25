@@ -7,7 +7,7 @@ description: Learn how to use Intune to upgrade Windows 10 devices you manage to
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/17/2017
 ms.topic: article
 ms.prod:

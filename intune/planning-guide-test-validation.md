@@ -6,7 +6,7 @@ description: The details you need to consider when you are testing and validatin
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

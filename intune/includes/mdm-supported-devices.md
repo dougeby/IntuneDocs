@@ -13,6 +13,7 @@
 - Android for Work [(requirements)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
 
 ### Microsoft
+
 - Windows 10 (Home, S, Pro, Education, and Enterprise versions)
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)

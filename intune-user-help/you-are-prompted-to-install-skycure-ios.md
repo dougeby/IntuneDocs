@@ -6,7 +6,7 @@ description: Learn how to install SEP Mobile on your iOS device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:

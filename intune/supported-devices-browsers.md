@@ -6,8 +6,9 @@ description: Lists supported device platforms and browsers for Intune device man
 keywords:
 author: ErikjeMS  
 ms.author: erikje
-manager: angrobe
-ms.date: 01/10/2018
+manager: dougeby
+ms.date: 01/03/2018
+
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

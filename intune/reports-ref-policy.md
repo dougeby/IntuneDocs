@@ -5,7 +5,7 @@ description: Reference topic for the Policy category of entity collections in th
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

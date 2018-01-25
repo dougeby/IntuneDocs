@@ -6,7 +6,7 @@ description: Learn how to create a compliance policy for macOS devices."
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod:

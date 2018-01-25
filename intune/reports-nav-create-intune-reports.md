@@ -5,7 +5,7 @@ description: Use the Intune Data Warehouse to build reports providing insight in
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

@@ -6,7 +6,7 @@ description: A list of what IT can and can't see on your managed device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod:

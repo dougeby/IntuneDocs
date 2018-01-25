@@ -7,7 +7,7 @@ description: Learn how to use device categories that users can choose when they 
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 12/11/2017
 ms.topic: article
 ms.prod:

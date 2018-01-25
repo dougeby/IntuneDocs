@@ -6,7 +6,7 @@ description: This article helps you to create a design for a Microsoft Intune cl
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
@@ -355,7 +355,7 @@ You can use Intune to deliver apps to the users or devices in several ways. The 
 
 -   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Windows Store for Business apps](windows-store-for-business.md)
+-   [Microsoft Store for Business apps](windows-store-for-business.md)
 
 #### App type requirements
 

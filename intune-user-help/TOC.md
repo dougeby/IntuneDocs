@@ -6,6 +6,8 @@
 
 ## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
 ## [Using your Android device](using-your-android-device-with-intune.md)
@@ -72,11 +74,12 @@
 #### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Manually sync your device](sync-your-device-manually-ios.md)
 
-#### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
+### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 #### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 #### [Send errors to your company](send-errors-to-your-it-admin-ios.md)
 #### [Send errors to Microsoft](send-logs-to-microsoft-ios.md)
 #### [An existing company email account was found](existing-company-email-account-found.md)
+#### [Device limit has been reached](device-limit-wpj-ios.md)
 #### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 #### [An error appeared](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -110,12 +113,14 @@
 #### [This device is a little different](device-little-different-jamf.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+#### [Device limit has been reached](device-limit-wpj-macos.md)
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 #### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
 #### [Enroll your Windows 10 device](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
 #### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
 #### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)

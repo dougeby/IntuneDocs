@@ -7,7 +7,7 @@ description: "Skycure connector integration with Intune."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
 ms.prod:

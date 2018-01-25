@@ -6,7 +6,7 @@ description: Learn how to resolve threats using Mobile Threat Defense apps for A
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
