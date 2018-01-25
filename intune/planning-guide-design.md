@@ -6,7 +6,7 @@ description: This article helps you to create a design for a Microsoft Intune cl
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

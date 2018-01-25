@@ -5,7 +5,7 @@ title: Send enrollment errors to your company support | Microsoft Docs
 description: Send enrollment errors to your admin
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:

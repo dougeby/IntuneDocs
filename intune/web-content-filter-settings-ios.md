@@ -7,7 +7,7 @@ description: Learn the settings you can use to allow and block access to website
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod:

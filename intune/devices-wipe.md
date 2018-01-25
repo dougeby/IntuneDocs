@@ -7,7 +7,7 @@ description: Learn how to remove company data on a device or to factory reset th
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod:

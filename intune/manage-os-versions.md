@@ -5,7 +5,7 @@ title: Manage operating system versions with Intune
 description: Learn how to manage operating system versions across platforms with Microsoft Intune. 
 keywords:
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod:

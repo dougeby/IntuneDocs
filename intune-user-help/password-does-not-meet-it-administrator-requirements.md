@@ -5,7 +5,7 @@ title: Your password does not meet your company support's requirements | Microso
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/10/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: "Setup mobile application management (MAM) provider in Azure AD"
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod:

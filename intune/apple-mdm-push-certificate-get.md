@@ -7,7 +7,7 @@ description: Learn the steps for getting an Apple MDM Push certificate to manage
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
 ms.prod:

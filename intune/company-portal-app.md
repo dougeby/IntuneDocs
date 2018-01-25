@@ -6,7 +6,7 @@ description: Learn how you can apply company specific branding to the Intune Com
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod:

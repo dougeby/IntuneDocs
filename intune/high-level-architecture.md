@@ -5,7 +5,7 @@ title: High-level architecture for Microsoft Intune
 description:
 keywords:
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod:

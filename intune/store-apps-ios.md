@@ -6,7 +6,7 @@ description: Learn about adding iOS store apps to Intune."
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod:

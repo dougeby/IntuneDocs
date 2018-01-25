@@ -5,7 +5,7 @@ description: Reference topic for the Application category of entity collections 
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/11/2017
 ms.topic: article
 ms.prod:

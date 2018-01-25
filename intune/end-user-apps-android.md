@@ -6,7 +6,7 @@ description: Methods for making Android apps available to end users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
 ms.prod:

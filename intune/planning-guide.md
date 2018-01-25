@@ -6,7 +6,7 @@ description: This article is an introduction to all Intune plan, design, and imp
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

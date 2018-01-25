@@ -6,7 +6,7 @@ description: Learn how to create a compliance policy for Android for Work device
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

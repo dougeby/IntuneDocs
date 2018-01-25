@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to wrap your iOS app
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
