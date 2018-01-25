@@ -7,7 +7,7 @@ description: Once you've created an Intune device profile, use this topic to lea
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod:

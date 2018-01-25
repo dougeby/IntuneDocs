@@ -5,10 +5,10 @@ title: Create and deploy Windows Information Protection (WIP) app protection pol
 titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 11/13/2017
+author: arob98
+ms.author: angrobe
+manager: dougeby
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -7,7 +7,7 @@ description: Learn how to monitor assigned Intune device profiles."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

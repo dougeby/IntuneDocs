@@ -5,9 +5,9 @@ title: How to add iOS line-of-business apps to Intune
 titlesuffix: "Azure portal"
 description: Learn about adding iOS line-of-business apps to Intune."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 10/3/2017
 ms.topic: article
 ms.prod:

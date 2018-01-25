@@ -7,7 +7,7 @@ description: This topic describes the record of app protection policy settings s
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Review app protection logs in the Managed Browser
+# Review client app protection logs
 
 You can access the logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
 

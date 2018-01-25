@@ -7,7 +7,7 @@ description: "Add MTD apps, Microsoft Authenticator app, and iOS configuration p
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

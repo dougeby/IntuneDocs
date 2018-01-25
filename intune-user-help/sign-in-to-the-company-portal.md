@@ -6,7 +6,7 @@ description: Find out how to sign in to the Company Portal app on multiple platf
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod:

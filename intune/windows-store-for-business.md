@@ -5,9 +5,9 @@ title: Manage apps from Microsoft Store for Business
 titlesuffix: "Azure portal"
 description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track them."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod:
@@ -36,7 +36,7 @@ The [Microsoft Store for Business](https://www.microsoft.com/business-store) giv
 * Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
 * Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
-* Apps managed by Windows Store for Business will automatically revoke licenses when a user leaves the enterprise, or when the administrator removes the user and the user devices.
+* Apps managed by Microsoft Store for Business will automatically revoke licenses when a user leaves the enterprise, or when the administrator removes the user and the user devices.
 
 ## Before you start
 

@@ -6,7 +6,7 @@ description:
 keywords: sdk, Cordova, intune
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
@@ -20,7 +20,7 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

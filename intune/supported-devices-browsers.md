@@ -4,10 +4,11 @@
 title: Supported devices - Microsoft Intune
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 11/06/2017
+author: ErikjeMS  
+ms.author: erikje
+manager: dougeby
+ms.date: 01/03/2018
+
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,30 +27,33 @@ ms.custom: intune-classic
 
 ---
 
-# Supported devices and browsers
+# Supported operating systems and browsers
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
-- [Supported devices and computers](#intune-supported-devices)
+- [Supported operating systems](#intune-supported-operating-systems)
 - [List of supported web browsers use Intune](#intune-supported-web-browsers)
 
 You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
 
-## Intune supported devices
+## Intune supported operating systems
 
-You can manage the following devices using Intune mobile device management:
+You can manage devices running the following operating systems:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### Supported Samsung KNOX Standard devices
+### Supported Samsung Knox Standard devices
 
-The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify KNOX compatibility with your device reseller before you purchase and deploy Samsung devices.
+The Company Portal app only attempts Samsung Knox activation during MDM enrollment if the device appears in the [list of supported Knox devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid Knox activation errors that prevent MDM enrollment. Devices that don't support Samsung Knox activation enroll as standard Android devices. A Samsung device might have some model numbers that support Knox, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
 
-The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
+> [!NOTE]
+> Enrolling Samsung Knox devices may require you to [enable access to Samsung servers](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+
+The following list of Samsung device models do not support Knox and are enrolled as native Android devices by the Company Portal app for Android:
 
 | **Device Name** | **Device Model Numbers** |
 | --- | --- |
@@ -88,7 +92,6 @@ The following list of Samsung device models do not support KNOX and are enrolled
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune cannot be used to manage Windows Server operating systems.
 
 ### Windows PC software client
 

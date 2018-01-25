@@ -7,7 +7,7 @@ description: Learn the settings you can use to control notifications from apps o
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

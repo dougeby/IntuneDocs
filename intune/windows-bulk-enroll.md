@@ -3,9 +3,9 @@ title: Bulk enrollment for Windows 10
 titlesuffix: "Azure portal"
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
-author: NathBarn
-ms.author: NathBarn
-manager: angrobe
+author: Erikje
+ms.author: erikje
+manager: dougeby
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod:
@@ -33,8 +33,6 @@ Azure AD users are standard users on these devices and receive assigned Intune p
 
 ## Prerequisites for Windows devices bulk enrollment
 
-Bulk enrollment for Window devices requires the following:
-
 - Devices running Windows 10 Creator update or later
 - [Windows automatic enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment)
 
@@ -46,16 +44,16 @@ Bulk enrollment for Window devices requires the following:
 2. Open the **Windows Configuration Designer** app and select **Provision desktop devices**.
 ![Screenshot of selecting Provision desktop devices in the Windows Configuration Designer app](media/bulk-enroll-select.png)
 
-3. A **New project** window opens where you specify the following:
+3. A **New project** window opens where you specify the following information:
   - **Name** - A name for your project
-  - **Project folder** - Where your project will be saved
+  - **Project folder** - Save location for the project
   - **Description** - An optional description of the project
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
 4.	Enter a unique name for your devices. Names can include a serial number (%%SERIAL%%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
-5.	Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If this isn’t configured, a wired network connection is required when the device is first started.
+5.	Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.
 ![Screenshot of enabling Wi-Fi including Network SSID and Network type options in the Windows Configuration Designer app](media/bulk-enroll-network.png)
 
 6.	Select **Enroll in Azure AD**, enter a **Bulk Token Expiry** date, and then select **Get Bulk Token**.
@@ -81,7 +79,7 @@ Bulk enrollment for Window devices requires the following:
 
  For step-by-step instruction on applying a provisioning package, see [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
-3. After you apply the package, the device will automatically restart in 1 minute.
+3. After you apply the package, the device will automatically restart in one minute.
  ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-add.png)
 
 4. When the device restarts, it connects to the Azure Active Directory and enrolls in Microsoft Intune.
@@ -92,14 +90,14 @@ Bulk enrollment for Window devices requires the following:
 Provisioning is intended to be used on new Windows devices. Provisioning failures might require a factory reset of the device or device recovery from a boot image. These examples describe some reasons for provisioning failures:
 
 - A provisioning package that attempts to join an Active Directory domain or Azure Active Directory tenant that does not create a local account could make the device unreachable if the domain-join process fails due to lack of network connectivity.
-- Scripts run by the provisioning package are run in system context, and are able to make arbitrary changes to the device file system and configurations. A malicious or bad script could put the device in a state that can only be recovered by reimaging or factory resetting the device.
+- Scripts run by the provisioning package are run in system context. The scripts are able to make arbitrary changes to the device file system and configurations. A malicious or bad script could put the device in a state that can only be recovered by reimaging or factory resetting the device.
 
 ### Problems with bulk enrollment and Company Portal
 If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
 
 ### Bulk enrollment with Wi-Fi 
 
-Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. You'll need to use [device-level certificates](certificates-configure.md) to manage these connections. 
+Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. You must use [device-level certificates](certificates-configure.md) to manage these connections. 
 
 ### Conditional access
 Conditional access is not available for Windows devices enrolled using bulk enrollment.

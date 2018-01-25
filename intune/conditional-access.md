@@ -7,7 +7,7 @@ description: Learn how to define the conditions users and devices must meet to a
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod:

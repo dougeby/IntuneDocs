@@ -7,8 +7,8 @@ description: Learn the Intune settings you can use to configure Wi-Fi connection
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 02/15/2017
+manager: dougeby
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

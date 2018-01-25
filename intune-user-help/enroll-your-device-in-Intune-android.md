@@ -6,7 +6,7 @@ description: Describes how to enroll an Android device in Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
@@ -35,7 +35,7 @@ If your company or school uses Microsoft Intune, you can enroll your Android dev
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-These enrollment instructions are for native and Samsung KNOX Android devices. Samsung KNOX is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung KNOX device, go to **Settings** > **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
+These enrollment instructions are for native and Samsung Knox Android devices. Samsung Knox is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung Knox device, go to **Settings** > **About device**. If you don't see "Knox version" listed there, you have a native Android device.
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your company support uses this category to help check the apps that you have access to.
 
@@ -105,9 +105,9 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
     ![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  If you are using a Samsung KNOX device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
+13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
-    ![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
     This screen shows that your device is being enrolled.
 

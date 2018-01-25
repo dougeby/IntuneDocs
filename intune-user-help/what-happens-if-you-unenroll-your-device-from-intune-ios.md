@@ -5,7 +5,7 @@ title: What happens if you unenroll your iOS or macOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
 ms.prod:

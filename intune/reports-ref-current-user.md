@@ -5,7 +5,7 @@ description: Reference topic for the User category of entity collections in the 
 keywords: Intune Data Warehouse
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

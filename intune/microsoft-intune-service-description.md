@@ -6,7 +6,7 @@ description: Intune is a cloud-based service that helps you manage Windows, iOS,
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:

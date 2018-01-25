@@ -5,7 +5,7 @@ title: How do I find the serial number on my iOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

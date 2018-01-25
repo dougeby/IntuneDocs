@@ -6,7 +6,7 @@ description: Lists six of the most common tasks that Intune helps with
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: get-started-article
 ms.prod:
@@ -89,7 +89,7 @@ As an administrator, you can require users to access Office 365 from the Office 
 ## Issue corporate-owned phones to your employees
 Many employees are mobile these days, making productivity on mobile devices an imperative to be competitive. These employees need seamless access to all corporate apps and data, at any time, wherever they are. You need to ensure that corporate data is secure and administrative costs are low.  
 
-Intune offers [bulk provisioning and management solutions](device-enrollment.md) ([Classic portal](/intune-classic/deploy-use/manage-corporate-owned-devices)) that are integrated with the major corporate device management platforms on the market today, including the Apple Device Enrollment Program and the Samsung KNOX mobile security platform. Centralized authoring of device configurations with Intune helps make provisioning of corporate devices something that can be highly automated.  
+Intune offers [bulk provisioning and management solutions](device-enrollment.md) ([Classic portal](/intune-classic/deploy-use/manage-corporate-owned-devices)) that are integrated with the major corporate device management platforms on the market today, including the Apple Device Enrollment Program and the Samsung Knox mobile security platform. Centralized authoring of device configurations with Intune helps make provisioning of corporate devices something that can be highly automated.  
 
 Picture this: hand an employee an unopened iPhone box. The employee powers it on and is walked through a corporate-branded setup flow where they must authenticate themselves. The iPhone is seamlessly configured with [security policies](device-profiles.md) ([Classic portal](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)).
 

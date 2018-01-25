@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Apply compliance policies to Jamf-managed devices
+title: Enforce compliance policies to Jamf-managed devices
 titlesuffix: "Azure portal"
 description: "Use compliance to help secure Jamf-managed devices."
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 12/05/2017
+manager: dougeby
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +17,7 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 
 # optional metadata
 
-#ROBOTS: NOINDEX, NOFOLLOW
+#ROBOTS: 
 #audience:
 #ms.devlang:
 ms.reviewer: elocholi
@@ -31,11 +31,6 @@ ms.custom: intune-azure
 |Applies to: Intune in the Azure portal |
 |--|
 |Looking for documentation about Intune in the classic portal? [Go here](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Currently in Private Preview|
-|--|
-|The features described in this topic are only available to customers currently in private preview. This message will be removed when it has been released for all customers.|
 | |
 
 You can use Azure Active Directory and Microsoft Intune's conditional access policies ensure that your end users are compliant with organizational requirements. You can apply these policies to Macs that are [managed with Jamf Pro](conditional-access-integrate-jamf.md). This requires access to both the Intune and Jamf Pro consoles.
@@ -53,7 +48,7 @@ You should deploy the Company Portal app for macOS in Jamf Pro as a background i
 2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
 3. Create a new package with the Company Portal app for macOS, then click **Save**.
 4. Open **Computers** > **Policies**, then select **New**.
-5. Use the **General** payload to configure settings for the policy. These settings should be: 
+5. Use the **General** payload to configure settings for the policy. These settings should be:
    - Trigger: select **Enrollment Complete** and **Recurring Check-in**
    - Execution Frequency: select **Once per computer**
 6. Select the **Packages** payload and click **Configure**.

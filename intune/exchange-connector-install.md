@@ -7,7 +7,7 @@ description: "Use Connector tool to enable communication between the Intune and 
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
@@ -139,6 +139,13 @@ After the Exchange Connector sets up the connection, mobile devices that are ass
 
 > [!NOTE]
 > If you have installed the On-premises Exchange Connector, and if at some point you delete the Exchange connection, you must uninstall the On-premises Exchange Connector from the computer onto which it was installed.
+
+## On-premises Exchange connector high availability support 
+After the Exchange connector creates a connection to Exchange using the specified CAS, the connector has the ability to discovery other CASs. If the primary CAS becomes unavailable, the connector will failover to another CAS, if available, until the primary CAS becomes available. This feature is on by default. You can turn this feature off by using the following procedure:
+1. On the server where the Exchange Connector is installed, go to %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
+2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
+3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.    
+
 
 ## Monitor the Exchange connector activity
 

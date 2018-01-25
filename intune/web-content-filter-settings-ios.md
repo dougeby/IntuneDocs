@@ -7,13 +7,12 @@ description: Learn the settings you can use to allow and block access to website
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 7/03/2017
+manager: dougeby
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 
 # optional metadata
 
@@ -53,8 +52,11 @@ If you do not specify any URLs, then end users cannot access any websites except
 ## Configure URLs
 
 1. On the **Web Content Filter** blade, choose one of the following settings as required:
-	- **Permitted URLs** - On the **Permitted URLs** blade, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
-	- **Blocked URLs** - On the **Blocked URLs** blade, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
+   - **Permitted URLs** - On the **Permitted URLs** blade, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
+     > [!NOTE]
+     > The URLs you specify here are the ones you do not want to subject to the Apple web filter. These URLs do not represent a list of the only web sites allowed. If that is what you want, use **Specific websites only**.
+
+   - **Blocked URLs** - On the **Blocked URLs** blade, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
 2. When you are finished, click **OK**.
 
 

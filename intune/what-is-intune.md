@@ -7,7 +7,7 @@ description: Get the basics about Intune in the Azure portal, and how it can hel
 keywords:
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod:
