@@ -115,19 +115,6 @@ Two new privacy settings will be available for devices:
 
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
-### New inventory information for Windows devices <!-- 1333569 -->
-
-For Windows devices, the following new inventory information will be available per device in the **Hardware** tab.
-- TPM
-- Antivirus
-- Antispyware
-- Firewall
-- UAC
-- Battery
-- Domain name
-
-For more information on how this data is retrieved by the CSP, see the DeviceGuard entires in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
-
 ### macOS Company Portal support for enrollments that use the Device Enrollment Manager <!-- 1352411 -->
 
 Users will be able to use the Device Enrollment Manager when enrolling with the macOS Company Portal.
@@ -142,6 +129,24 @@ A new setting in the Windows Information Protection (WIP) policy will allow you 
 
 ### Line-of-business (LOB) app support for macOS <-- 1473977 -->
 Intune will provide the capability to install macOS LOB apps. LOB apps are apps where you supply the installation file and use Intune to install the app on the device. As part of macOS LOB app support, you must use the Microsoft Intune App Wrapping Tool for macOS to pre-process macOS line-of-business (LOB) apps.
+
+### Configure resource account settings for Surface Hubs <!-- 1475674 -->
+
+You will be able to remotely configure resource account settings for Surface Hubs.
+
+The resource account is used by a Surface Hub to authenticate against Skype/Exchange so it can join a meeting. 
+You will want to create a unique resource account so the Surface Hub can show up in the meeting as the conference room. 
+For example, a resource account such as **Conference Room B41/6233**.
+
+> [!NOTE]
+> - If you leave fields blank you will override previously configured attributes on the device.
+>
+> - Resource Account properties can change dynamically on the Surface Hub. For example, if password rotation is on. So, it's possible that the values 
+in the Azure console will take some time to reflect the reality on the device. 
+>
+>   To understand what is currently configured on the Surface Hub, the Resource Account information can be included in hardware inventory 
+(which already has a 7 day interval) or as read-only properties. To enhance the accuracy after the remote action has taken place, you can get the state 
+of the parameters immediately after running the action to update the account/parameters on the Surface Hub.
 
 ### iOS app provisioning configuration <!-- 1581650 -->
 You will be able to assign iOS app provisioning profiles to prevent your apps from expiring by including or excluding security groups.
@@ -170,11 +175,26 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard.
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
+### New Windows Defender Application Guard settings <!-- 1631890 -->
+
+- **Enable graphics acceleration**
+
+Administrators will be able to enable a virtual graphics processor for Windows Defender Application Guard. This setting allows the CPU to offload graphics rendering to the vGPU. This can improve performance when working with graphics intense websites or watching video within the container.
+
+- **SaveFilestoHost**
+
+Administrators will be able to enable files to pass from Microsoft Edge running in the container to the host file system. Turning this on will allow users to download files from Microsoft Edge in the container to the host file system.
+
 ### See enrollment restrictions per user <!-- 1634444 -->
 On the troubleshooting blade, you will be able to see the enrollment restrictions that are in effect for each user.
 
 ### Configuring a self-updating mobile MSI app <!-- 1740840 -->
 You will be able to configure a known self-updating mobile MSI app to ignore the version check process. This capability is useful to avoid getting into race condition. For instance, this could occur when the app being auto-updated by the app developer and is also being updated by Intune. Both could try to enforce a version of the app on Windows client, which could create a conflict.
+
+### Additions to System Security settings for Windows 10 and later compliance policies <!--1704133 -->
+
+Additions to the Windows 10 compliance settings will be available, including requiring Firewall and Windows Defender Antivirus. 
+
 
 ### Related sets of app licenses supported in Intune <!-- 1864117 -->
 Intune in the Azure portal will support related sets of app licenses as a single app item in the UI. In addition, any Offline Licensed apps synced from Microsoft Store for Business will be consolidated into a single app entry and any deployment details from the individual packages will be migrated over to the single entry. To view related sets of app licenses in the Azure portal, select **App licenses** from the **Mobile apps** blade.
@@ -260,7 +280,7 @@ You will be able to revoke the license of all iOS Volume Purchasing Program (VPP
 ### New iOS device action   <!-- 1244701 -->
 You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
-### Intune now provides the Account Move operation  <!-- 1573558, 1579830 -->
+### Intune provides the Account Move operation  <!-- 1573558, 1579830 -->
 The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to another. The **Account Move** can be used for both customer-initiated scenarios, when you call the Intune support team requesting it, and it can also be a Microsoft-driven scenario where Microsoft needs to make adjustments to the service in the back-end. During the **Account Move**, the tenant enters in read-only mode (ROM). Service operations like enrolling, renaming devices, updating compliance status will fail during the ROM period.
 
 
