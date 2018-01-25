@@ -6,13 +6,8 @@ description:
 keywords:
 author: ErikjeMS  
 ms.author: erikje
-<<<<<<< HEAD
-manager: angrobe
-ms.date: 01/24/2018
-=======
 manager: dougeby
-ms.date: 01/18/2018
->>>>>>> 29a11082f1164ae9ef62f749278c57f629e7733f
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
