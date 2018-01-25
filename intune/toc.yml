@@ -126,6 +126,8 @@
       items:
       - name: Network configuration
         href: network-bandwidth-use.md
+      - name: Windows Holographic for Business
+        href: windows-holographic-for-business.md
     - name: Sign in to Intune
       href: account-sign-up.md
     - name: Configure domains

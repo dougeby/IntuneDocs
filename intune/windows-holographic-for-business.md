@@ -1,0 +1,46 @@
+---
+# required metadata
+title: Microsoft Intune supports devices running Window Holographic for Business
+titleSuffix: "Azure portal"
+description: Learn how Microsoft Intune supports devices running Window Holographic for Business
+keywords:
+author: vhorne
+ms.author: victorh
+manager: dougeby
+ms.date: 1/25/2018
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.suite: ems
+#ms.tgt_pltfrm:
+ms.custom: intune-azure
+
+---
+
+# Window Holographic for Business support
+
+
+Microsoft Intune supports devices running Window Holographic for Business, such as the [Microsoft Hololens](https://docs.microsoft.com/en-us/hololens/).
+
+See the following topics for more information about the setting supported in Microsoft Intune.
+
+## Device restrictions
+- [Windows Holographic for Business device restriction settings in Microsoft Intune](device-restrictions-windows-holographic.md)
+## Custom settings
+- [Custom device settings for Windows Holographic for Business devices in Microsoft Intune](custom-settings-windows-holographic.md)
+## Compliance policy
+- [How to create a device compliance policy for Windows devices in Intune](compliance-policy-create-windows.md)
+## Software updates
+- [Manage software updates](windows-update-for-business-configure.md)
+## Windows Hello for Business
+- [Use Windows Hello for Business](windows-hello.md)
+ 
+
+
