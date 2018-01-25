@@ -193,7 +193,10 @@ You will be able to configure a known self-updating mobile MSI app to ignore the
 
 ### Additions to System Security settings for Windows 10 and later compliance policies <!--1704133 -->
 
-Additions to the Windows 10 compliance settings will be available, including requiring Firewall and Windows Defender Antivirus. 
+Additions to the Windows 10 compliance settings will be available, including requiring Firewall and Windows Defender Antivirus.
+
+### Including and excluding app assignment based on groups for Android Enterprise <!-- 1813081 -->
+During app assignment and after selecting an assignment type, Android Enterprise (formerly known as Android for Work) will support exclude functionality.
 
 
 ### Related sets of app licenses supported in Intune <!-- 1864117 -->
