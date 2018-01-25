@@ -7,19 +7,17 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: davidra
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -48,7 +46,7 @@ Intune integrates with Hello for Business in two ways:
 
 >In the Anniversary Update, these two PINS were merged into one single device PIN.
 Any Intune configuration policies you set to control the device PIN, and additionally, any Windows Hello for Business policies you configured, now both set this new PIN value.
-If you have set both policy types to control the PIN, the Windows Hello for Business policy will be applied on both Windows 10 desktop and mobile devices.
+If you have set both policy types to control the PIN, the Windows Hello for Business policy is applied on both Windows 10 desktop and mobile devices.
 To ensure policy conflicts are resolved and that the PIN policy is applied correctly, update your Windows Hello for Business Policy to match the settings in your configuration policy, and ask your users to sync their devices in the Company Portal app.
 
 
@@ -67,16 +65,16 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
-	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices will not be changed. All other settings on the blade are unavailable.
+	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the blade are unavailable.
 
-6.  If you selected **Enabled** in the previous step, configure the required settings that will be applied to all enrolled Windows 10 and Windows 10 Mobile devices.
+6.  If you selected **Enabled** in the previous step, configure the required settings that is applied to all enrolled Windows 10 and Windows 10 Mobile devices.
 
  - **Use a Trusted Platform Module (TPM)**. A TPM chip provides an additional layer of data security.<br>Choose one of the following values:
 
 	 - **Required** (default). Only devices with an accessible TPM can provision Windows Hello for Business.
 	 - **Preferred**. Devices first attempt to use a TPM. If this is not available, they can use software encryption.
 
- - **Require minimum PIN length**/**Require maximum PIN length**. Configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is 6 characters, but you can enforce a minimum length of 4 characters. The maximum PIN length is 127 characters.
+ - **Require minimum PIN length**/**Require maximum PIN length**. Configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is six characters, but you can enforce a minimum length of four characters. The maximum PIN length is 127 characters.
 
  - **Require lowercase letters in PIN**/**Require uppercase letters in PIN**/**Require special characters in PIN**. You can enforce a stronger PIN by requiring the use of uppercase letters, lowercase letters, and special characters in the PIN. Choose from:
 
@@ -99,6 +97,18 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
  - **Use phone sign-in**. If this option is set to **Yes**, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure Active Directory joined, and the companion device must be configured with a Windows Hello for Business PIN.
 
+## Windows Holographic for Business support
+
+Windows Holographic for Business supports the following Windows Hello for Business settings:
+
+- Use a Trusted Platform Module (TPM)
+- Minimum PIN length
+- Maximum PIN length
+- Lowercase letters in PIN
+- Uppercase letters in PIN
+- Special characters in PIN
+- PIN expiration (days)
+- Remember PIN history
 
 ## Further information
 For more information about Microsoft Passport, see [the guide](https://technet.microsoft.com/library/mt589441.aspx) in the Windows 10 documentation.
