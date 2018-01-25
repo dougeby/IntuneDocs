@@ -7,7 +7,7 @@ description: How to sign up for a 30-day free trial of Intune."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod:

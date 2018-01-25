@@ -3,9 +3,9 @@
 title:  Intune Date Warehouse API  | Microsoft Docs 
 description: You can use the API to build reports that provide insight into your enterprise mobile environment.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

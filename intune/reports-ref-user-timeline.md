@@ -3,9 +3,9 @@
 title: Data Warehouse User Entity Timeline | Microsoft Docs 
 description: The Intune Data Warehouse represents Users in a timeline.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

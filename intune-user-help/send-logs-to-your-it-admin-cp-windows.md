@@ -6,7 +6,7 @@ description: Enroll a Windows 10 1511+ device into Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod:

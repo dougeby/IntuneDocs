@@ -7,7 +7,7 @@ description: Learn how to enroll corporate-owned iOS devices using the Device En
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod:
@@ -85,6 +85,10 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
    ![Screenshot of adding an MDM server name for DEP and then clicking Next.](./media/enrollment-program-token-add-server.png)
 
 5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.  
+<<<<<<< HEAD
+
+=======
+>>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
 
 7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
 8. Under **Choose Devices By**, specify how devices are identified:
@@ -168,9 +172,9 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
   
 2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
-  ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
+   ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
 
-  To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+   To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
      -  A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
      -  Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
      - Intune syncs new and removed devices with Apple every 24 hours.

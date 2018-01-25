@@ -6,8 +6,8 @@ description: "Find out what has changed in UI for apps that work on end user dev
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 12/11/2017
+manager: dougeby
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,14 @@ ms.custom: intune-azure
 ---
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+
+## Week of December 11, 2017
+
+### End user messaging for accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon.
+
+![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)
 
 ## Week of November 27, 2017
 
@@ -381,12 +389,22 @@ These are the plans for ways we will be improving the user experience by updatin
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
+### User experience update for the Company Portal app for iOS <!--1412866-->
+
+We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
+
+We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access.
+
+![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
+
 ### UI updates to the Company Portal website <!--1313244 part 2-->
 
 __Updates to Featured Apps__
 We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
 
 ![The colorful tiles that show the apps. They are large squares of color underneath each app, where the color is pulled from the primary color within the app logo. The "Featured Apps" section appears across the top of the Company Portal app.](./media/cp_win10_colorful_tiles_after_1708.png)
+
+
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

@@ -3,9 +3,9 @@
 title: IntuneManagementExtension Entity | Microsoft Docs 
 description: Reference topic for the IntuneManagementExtension Entity category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

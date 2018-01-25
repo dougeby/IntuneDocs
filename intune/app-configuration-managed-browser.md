@@ -7,7 +7,7 @@ description: Deploy the Managed Browser application to restrict web browsing and
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

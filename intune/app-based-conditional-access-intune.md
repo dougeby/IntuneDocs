@@ -4,9 +4,9 @@
 title: App-based conditional access with Intune
 description: Understand the concepts of how app-based conditional access works with Intune.
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
+author: arob98
+ms.author: angrobe
+manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
 ms.prod:

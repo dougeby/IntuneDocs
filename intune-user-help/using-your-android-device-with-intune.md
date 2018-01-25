@@ -6,7 +6,7 @@ description: List of links to tasks that end users can do on their Android mobil
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
@@ -35,7 +35,7 @@ There are a number of things you can do with Intune to make your work life easie
 
 ## Supported versions
 
-Intune currently supports Android 4.4 and later. This includes Samsung KNOX 4.4 and later devices.
+Intune currently supports Android 4.4 and later. This includes Samsung Knox 4.4 and later devices.
 
 ## Enrolling into Intune and installing the Company Portal
 

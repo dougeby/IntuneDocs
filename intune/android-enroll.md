@@ -5,10 +5,10 @@ title: Enroll Android devices in Intune | Microsoft Docs
 titlesuffix: "Azure portal"
 description: Learn how to enroll Android devices in Intune.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 12/07/2017
+author: ErikjeMS 
+ms.author: erikje
+manager: dougeby
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    ![Screenshot showing link to configure the Android for Work binding](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
-   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console.
+   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
    c. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.
@@ -81,7 +81,7 @@ You need to approve the Company Portal app for Android in the managed Google Pla
 
 Follow these steps to approve the Intune Company Portal:
 
-1.  Download the Company Portal app from the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Browse to the Company Portal app on the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Sign into the managed Google Play store with the same Google account that you used to configure the binding for Android for Work.
 3.  Click **Approve.**  This will open a new dialog.
 4.  Review the permissions in this dialog, then click **Approve**. You need these to allow these permissions in order to allow the Company Portal app to manage the work profile on the device.

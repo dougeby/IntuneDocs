@@ -7,7 +7,7 @@ description: Learn how to use Intune to create and assign certificates that help
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod:

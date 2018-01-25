@@ -7,7 +7,7 @@ description: Restrict enrollment by platform and set a device enrollment limit i
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod:

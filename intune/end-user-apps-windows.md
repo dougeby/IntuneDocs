@@ -6,7 +6,7 @@ description: Methods for making Windows apps available to users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

@@ -7,13 +7,12 @@ description: Learn the Intune settings you can use to control device settings an
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/23/2017
+manager: dougeby
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 
 # optional metadata
 
@@ -32,31 +31,32 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## General
-- 	**Screen capture (mobile only)** - Lets the user capture the device screen as an image.
-- 	**Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
-- 	**Manual unenrollment** - Lets the user manually delete the workplace account from the device.
-- 	**Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
-- 	**Diagnostic data submission** - Possible values are:
+- **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
+- **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
+- **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
+- **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
+- **Diagnostic data submission** - Possible values are:
 	- **None** - No data is sent to Microsoft
 	- **Basic** - Limited information is sent to Microsoft
 	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
 	- **Full** Sends the same data as Enhanced, plus additional data about the device state
-- 	**Camera** - Allow or block use of the camera on the device.
-- 	**OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
-- 	**Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
-- 	**Geolocation** - Specifies whether the device can use location services information.
-- 	**Internet sharing** - Allow the use of Internet connection sharing on the device.
-- 	**Phone reset** - Controls whether the user can do a factory reset on their device.
-- 	**USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.
-- 	**AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.
-- 	**Cortana** - Enable or disable the Cortana voice assistant.
-- 	**Voice recording (mobile only)** - Allow or block use of the device voice recorder.
-- 	**Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
-- 	**Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
-- 	**Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
-- 	**Device discovery** - Block a device from being discovered by other devices.
-- 	**Task Switcher (mobile only)** - Blocks the task switcher on the device.
-- 	**SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Camera** - Allow or block use of the camera on the device.
+- **OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
+- **Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
+- **Geolocation** - Specifies whether the device can use location services information.
+- **Internet sharing** - Allow the use of Internet connection sharing on the device.
+- **Phone reset** - Controls whether the user can do a factory reset on their device.
+- **USB connection (mobile only)** - Controls whether devices can access external storage devices through a USB connection.
+- **AntiTheft mode (mobile only)** - Configure whether Windows Antitheft mode is enabled.
+- **Cortana** - Enable or disable the Cortana voice assistant.
+- **Voice recording (mobile only)** - Allow or block use of the device voice recorder.
+- **Device name modification** - Prevents the end user from changing the device name (Windows 10 Mobile only)
+- **Add provisioning packages** - Blocks the run time configuration agent that installs provisioning packages.
+- **Remove provisioning packages** - Blocks the run time configuration agent that removes provisioning packages.
+- **Device discovery** - Block a device from being discovered by other devices.
+- **Task Switcher (mobile only)** - Blocks the task switcher on the device.
+- **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 
 
 ## Password
@@ -74,19 +74,68 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- 	**Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users will not be able to change this.
+- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
 
 ## Privacy
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
 
+You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
+
+### Exceptions
+
+- **Account information** - Define whether this app can access the user name, picture, and other contact info.
+- **Background apps** - Define whether this app can run in the background.
+- **Calendar** - Define whether this app can access the calendar.
+- **Call history** - Define whether this app can access my call history.
+- **Camera** - Define whether this app can access the camera.
+- **Contacts** - Define whether this app can access contacts.
+- **Email** - Define whether this app can access and send email.
+- **Location** - Define whether this app can access location information.
+- **Messaging** - Define whether this app can read or send text or MMS messages.
+- **Microphone** - Define whether this app can use the microphone.
+- **Motion** - Define whether this app can access device motion information.
+- **Notifications** - Define whether this app can access notifications.
+- **Phone** - Define whether this app can access the phone.
+- **Radios** - Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
+- **Tasks** - Define whether this app can access your tasks.
+- **Trusted devices** - Define whether this app can use trusted devices (hardware you've already connected or that comes with this PC, tablet, or phone). For example: TVs, projectors, and so on.
+- **Feedback and diagnostics** - Define whether this app can access diagnostic information.
+- **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
+
+## Per-app privacy exceptions
+
+You can add apps that should have a different privacy behavior from what you defined in “Default privacy”.
+
+- **Package Name** - App package family name.
+- **App Name** - The name of the app.
+
+### Exceptions
+
+- **Account information** - Define whether this app can access the user name, picture, and other contact info.
+- **Background apps** - Define whether this app can run in the background.
+- **Calendar** - Define whether this app can access the calendar.
+- **Call history** - Define whether this app can access my call history.
+- **Camera** - Define whether this app can access the camera.
+- **Contacts** - Define whether this app can access contacts.
+- **Email** - Define whether this app can access and send email.
+- **Location** - Define whether this app can access location information.
+- **Messaging** - Define whether this app can read or send text or MMS messages.
+- **Microphone** - Define whether this app can use the microphone.
+- **Motion** - Define whether this app can access device motion information.
+- **Notifications** - Define whether this app can access notifications.
+- **Phone** - Define whether this app can access the phone.
+- **Radios** - Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
+- **Tasks** - Define whether this app can access your tasks.
+- **Trusted devices** - Define whether this app can use trusted devices (hardware you've already connected or that comes with this PC, tablet, or phone). For example: TVs, projectors, and so on.
+- **Feedback and diagnostics** - Define whether this app can access diagnostic information.
+- **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
 
 ## Locked screen experience
 
-
-- 	**Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- 	**Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users will not be able to change this.
+- **Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
+- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
 -	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
@@ -131,17 +180,17 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	-	**First run URL** – Specifies the URL of a page that is displayed the first time a user runs Edge (Windows 10 Mobile only).
 - 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
 - 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
-- 	**Block access to about flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
+- 	**Block access to About flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
 - 	**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
 
-## Edge Browser SmartScreen
+## Windows Defender Smart Screen
 
-- 	**SmartScreen** - Enables or disables SmartScreen, which blocks fraudulent web sites.
-- 	**Smart screen prompt override** - Allow the end user to bypass SmartScreen filter warnings about potentially malicious websites.
-- 	**Smart screen prompt override for files** - Allow the end user to bypass SmartScreen filter warnings about downloading potentially malicious files.
+- **SmartScreen for Microsoft Edge** - Enable Edge SmartScreen for accessing site and file downloads.
+- **Malicious site access** - Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
+- **Unverified file download** - Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
@@ -188,9 +237,30 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 	- 	**Privacy** - Blocks access to the privacy area of the settings app.
 	- 	**Update and Security** - Blocks access to the updates and security area of the settings app.
 
-## Kiosk
+## Start
 
--   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supported by the policy.  Options include:
+- **Unpin apps from task bar** - Stop the user from unpinning apps from the Start menu.
+- **Documents on Start** - Hide or show the Documents folder in the Windows Start menu.
+- **Downloads on Start** - Hide or show the Downloads folder in the Windows Start menu.
+- **File Explorer on Start** - Hide or show the File Explorer app in the Windows Start menu.
+- **HomeGroup on Start** - Hide or show the HomeGroup folder in the Windows Start menu.
+- **Music on Start** - Hide or show the Music folder in the Windows Start menu.
+- **Network on Start** - Hide or show the Network folder in the Windows Start menu.
+- **Personal folder on Start** - Hide or show the Personal folder in the Windows Start menu.
+- **Pictures on Start** - Hide or show the folder for pictures in the Windows Start menu.
+- **Settings on Start** - Hide or show the Settings app in the Windows Start menu.
+- **Videos on Start** - Hide or show the folder for videos in the Windows Start menu.
+
+## Display
+
+- **Turn on GDI scaling for apps**
+- **Turn off GDI scaling for apps**
+
+  GDI DPI Scaling lets apps that are not DPI aware to become per-monitor DPI aware. Specify the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to both turn on and turn off on an app, scaling is turned off for the app.
+
+## Kiosk (Preview)
+
+-   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
 
       - **Not Configured** (default) - The policy does not enable a kiosk mode. 
       - **Single app kiosk** - The profile enables the device as a single app kiosk.
@@ -198,25 +268,25 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
     Single app kiosks require the following settings:
 
-      - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app.  For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
+      - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
 
          For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
 
-      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app.  To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi app kiosks require a kiosk configuration.  Use the **Add** button to create a kiosk configuration or select an existing one.
+    Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
 
-    Muti-app kiosk configurations include the following settings:
+    Multi-app kiosk configurations include the following settings:
 
     - **Kiosk configuration name** - A friendly name used to identify a given configuration.
 
     - One or more **kiosk apps** consisting of:
 
-        - **App Type** which specifies the type of the kiosk app.  Supported values include:   
+        - **App Type** that specifies the type of the kiosk app.  Supported values include:   
 
-            - **Win32 App** - A traditional desktop app.  (You'll need the fully qualified pathname of the executable, with respect to the device.)
+            - **Win32 App** - A traditional desktop app. (You need the fully qualified pathname of the executable, with respect to the device.)
 
-            - **UWP App** - A Universal Windows app.  You'll need the [AUMID for the app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 
@@ -224,9 +294,9 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
     - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration.  The account may be local to the device or an Azure AD account login associated with the kiosk app.  Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
+    - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration. The account may be local to the device or an Azure AD account login associated with the kiosk app. Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
 
-## Defender
+## Windows Defender Antivirus
 
 - 	**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
 - 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
@@ -263,7 +333,7 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 
 
 
-## Defender Exclusions
+### Windows Defender Antivirus Exclusions
 
 - 	**Files and folders to exclude from scans and real-time protection** - Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - 	**File extensions to exclude from scans and real-time protection** - Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions are not included in any real-time or scheduled scans.
@@ -279,7 +349,7 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 	- 	**Address** - Enter the name, or IP address of the proxy server.
 	- 	**Port number** - Enter the port number of your proxy server.
 	- 	**Proxy exceptions** - Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
-	- 	**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option .
+	- 	**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option.
 
 
 ## Windows Spotlight
@@ -301,16 +371,42 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **Projection to this PC** - Stops other devices from discovering the PC for projection.
 - **Require PIN for pairing** - Require a PIN when connecting to a projection device.
 
-## Start
+## Cloud Printer
 
-- **Unpin apps from task bar** - Stop the user from unpinning apps from the Start menu.
-- **Documents on Start** - Hide or show the Documents folder in the Windows Start menu.
-- **Downloads on Start** - Hide or show the Downloads folder in the Windows Start menu.
-- **File Explorer on Start** - Hide or show the File Explorer app in the Windows Start menu.
-- **HomeGroup on Start** - Hide or show the HomeGroup folder in the Windows Start menu.
-- **Music on Start** - Hide or show the Music folder in the Windows Start menu.
-- **Network on Start** - Hide or show the Network folder in the Windows Start menu.
-- **Personal folder on Start** - Hide or show the Personal folder in the Windows Start menu.
-- **Pictures on Start** - Hide or show the folder for pictures in the Windows Start menu.
-- **Settings on Start** - Hide or show the Settings app in the Windows Start menu.
-- **Videos on Start** - Hide or show the folder for videos in the Windows Start menu.
+- **Printer discovery URL** -Endpoint for discovering cloud printers.
+- **Printer access authority URL** - Authentication endpoint for acquiring OAuth tokens.
+- **Azure native client app GUID** - GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+- **Print service resource URI** - OAuth resource URI for print service as configured in Azure portal.
+- **Maximum printers to query (Mobile only)** - Maximum number of printers that should be queried from a discovery endpoint.
+- **Printer discovery service resource URI** - OAuth resource URI for printer discovery service as configured in the Azure portal.
+
+## Reporting and Telemetry
+
+- **Share usage data** - Select level of diagnostic data submission.
+- **Telemetry proxy server**
+
+  Specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data is not transmitted and remains on the local device.​
+
+   Example formats:​
+
+   IPv4: 192.246.246.106:100​<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100​<br> 
+ FQDN: www.contoso.com:345
+
+## Messaging
+
+- **Message sync (mobile only)** - Disable Messaging Everywhere and text message backup and restore.
+- **MMS (mobile only)** - Disable the MMS send/receive functionality on the device.
+- **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@ description: Learn the Intune settings you can use to display information on the
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

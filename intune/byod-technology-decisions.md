@@ -3,9 +3,9 @@
 title: Technology decisions for BYOD with EMS
 description: Key technology decisions to enable BYOD and protect corporate data with Microsoft Enterprise Mobility + Security.
 keywords:
-author:
-ms.author: pfetty
-manager: angrobe
+author: arob98
+ms.author: angrobe
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your iOS or macOS mobile 
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod:

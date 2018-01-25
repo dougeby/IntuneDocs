@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: How to use Azure AD to access the Intune Graph API
-description: Describes steps needed for apps to use Azure AD to access the Intune Graph API
+title: How to use Azure AD to access Intune APIs in Microsoft Graph
+description: Describes steps needed for apps to use Azure AD to access the Intune APIs in Microsoft Graph.
 keywords: intune graphapi c# powershell permission roles
 author: vhorne
-manager: angrobe
+manager: dougeby
 ms.author: victorh
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,14 +24,14 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
-# How to use Azure AD to access the Intune Graph API
+# How to use Azure AD to access the Intune APIs in Microsoft Graph
 
-The [Microsoft Graph API](https://developer.microsoft.com/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Graph API uses Azure Active Directory (Azure AD) for authentication and access control.  
-Access to the Intune Graph API requires:
+The [Microsoft Graph API](https://developer.microsoft.com/graph/) now supports Microsoft Intune with specific APIs and permission roles.  The Microsoft Graph API uses Azure Active Directory (Azure AD) for authentication and access control.  
+Access to the Intune APIs in Microsoft Graph requires:
 
 - An application ID with:
 
-    - Permission to call Azure AD and Graph APIs.
+    - Permission to call Azure AD and the Microsoft Graph APIs.
     - Permission scopes relevant to the specific application tasks.
 
 - User credentials with:
@@ -43,11 +43,11 @@ Access to the Intune Graph API requires:
 
 This article:
 
-- Shows how to register an application with access to the Graph API and relevant permission roles.
+- Shows how to register an application with access to the Microsoft Graph API and relevant permission roles.
 
-- Describes the Intune Graph API permission roles.
+- Describes the Intune API permission roles.
 
-- Provides Intune Graph API authentication examples for C# and PowerShell.
+- Provides Intune API authentication examples for C# and PowerShell.
 
 - Describes how to support multiple tenants
 
@@ -58,9 +58,9 @@ To learn more, see:
 - [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Understand OAuth 2.0](https://oauth.net/2/)
 
-## Register apps to use Graph API
+## Register apps to use the Microsoft Graph API
 
-To register an app to use Graph API:
+To register an app to use Microsoft Graph API:
 
 1.  Sign into [the Azure portal](https://portal.azure.com) using administrative credentials.
 
@@ -132,16 +132,16 @@ At this point, you may also:
 
 ## Intune permission scopes
 
-Azure AD and the Graph API use permission scopes to control access to corporate resources.  
+Azure AD and Microsoft Graph use permission scopes to control access to corporate resources.  
 
-Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties. This section summarizes the permission scopes for Intune Graph API features.
+Permission scopes (also called the _OAuth scopes_) control access to specific Intune entities and their properties. This section summarizes the permission scopes for Intune API features.
 
 To learn more:
 - [Azure AD authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Application permission scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-When you grant permission to the Graph API, you can specify the following scopes to control access to Intune features:
-The following table summarizes the Intune Graph API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
+When you grant permission to Microsoft Graph, you can specify the following scopes to control access to Intune features:
+The following table summarizes the Intune API permission scopes.  The first column shows the name of the feature as displayed in the Azure portal and the second column provides the permission scope name.
 
 _Enable Access_ setting | Scope name
 :--|:--
@@ -159,7 +159,7 @@ __Read Microsoft Intune configuration__ | [DeviceManagementServiceConfig.Read.Al
 
 The table lists the settings as they appear in the Azure portal. The following sections describe the scopes in alphabetical order.
 
-At this time, all Intune permission scopes require administrator access.  This means you need corresponding credentials when running apps or scripts that access Intune Graph API resources.
+At this time, all Intune permission scopes require administrator access.  This means you need corresponding credentials when running apps or scripts that access Intune API resources.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -325,7 +325,7 @@ When testing either example, you may receive HTTP status 403 (Forbidden) errors 
 
 If this happens, verify that:
 
-- You've updated the application ID to one authorized to use the Graph API and the `DeviceManagementManagedDevices.Read.All` permission scope.
+- You've updated the application ID to one authorized to use the Microsoft Graph API and the `DeviceManagementManagedDevices.Read.All` permission scope.
 
 - Your tenant credentials support administrative functions.
 

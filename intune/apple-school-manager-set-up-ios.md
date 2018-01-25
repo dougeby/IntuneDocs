@@ -7,7 +7,7 @@ description: Learn how to set up Apple School Manager program enrollment for cor
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod:

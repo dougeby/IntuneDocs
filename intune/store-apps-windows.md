@@ -4,9 +4,9 @@
 title: How to add Windows store apps to IntunetitleSuffix: "Azure portal"
 description: Learn about adding Windows store apps to Intune."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: article
 ms.prod:

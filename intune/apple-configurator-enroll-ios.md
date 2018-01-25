@@ -7,7 +7,7 @@ description: Learn how to use the Apple Configurator to enroll corporate-owned i
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod:

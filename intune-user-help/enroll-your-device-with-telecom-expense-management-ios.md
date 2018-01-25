@@ -6,7 +6,7 @@ description: Learn how to enroll an iOS device into telecom expense management.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod:

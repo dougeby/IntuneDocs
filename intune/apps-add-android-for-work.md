@@ -5,9 +5,9 @@ title: Assign apps to Android for Work devices
 titlesuffix: "Azure portal"
 description: Use this topic to synchronize, then assign apps to Android for Work devices from the Google Play for Work Store."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 06/13/2017
 ms.topic: article
 ms.prod:

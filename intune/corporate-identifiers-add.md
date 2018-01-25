@@ -5,10 +5,10 @@ title: Add corporate identifiers to Intune
 titlesuffix: "Azure portal"
 description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune. "
 keywords:
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 08/23/2017
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,13 +32,15 @@ ms.custom: intune-azure
 
 As an Intune admin, you can identify devices as corporate-owned to refine management and identification. Intune can perform additional management tasks and collect additional information such as the full phone number and an inventory of apps from corporate-owned devices. You can also set device restrictions to block enrollment by devices that aren't corporate-owned.
 
-A device is identified as corporate-owned if any of the following conditions are true:
+At the time of enrollment, Intune automatically assigns corporate-owned status to devices that are:
 
 - Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
 - Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
 - [Identified as corporate-owned before enrollment](#identify-corporate-owned-devices-with-imei-or-serial-number) with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
 - Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device
-- The device's properties list [device ownership as corporate](#change-device-ownership)
+- Set as corporate in the [device's properties list](#change-device-ownership)
+
+After enrollment, you can [change the ownership setting](#change-device-ownership) between **Personal** and **Corporate**.
 
 ## Identify corporate-owned devices with IMEI or serial number
 

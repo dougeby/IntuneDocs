@@ -7,8 +7,8 @@ description: How to import Wi-Fi settings from Windows into an Intune Wi-Fi prof
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 06/03/2017
+manager: dougeby
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

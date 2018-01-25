@@ -5,7 +5,7 @@ title: Send logs to your company support by email | Microsoft Docs
 description: Send data logs by using email on an Android device
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

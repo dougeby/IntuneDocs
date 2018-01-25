@@ -6,7 +6,7 @@ description: Describes how to enroll a macOS device in Intune
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

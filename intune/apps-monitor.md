@@ -5,9 +5,9 @@ title: How to monitor app information and assignments
 titlesuffix: Azure portal
 description: After you've assigned an app to users or devices, use this information to help you monitor its status.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 11/21/2017
 ms.topic: article
 ms.prod:
