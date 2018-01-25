@@ -45,6 +45,16 @@ As you can see in the following tables, there are several methods to enroll your
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
 
+
+## macOS enrollment methods
+
+| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**|	No |No |No	| [More information](./device-enrollment-manager-enroll.md)|
+
+
+
 ## Windows enrollment methods
 
 | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
