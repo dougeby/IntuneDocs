@@ -35,6 +35,6 @@ You can erase all data from a macOS device, including the operating system. The 
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices** > **All devices** > choose the device you want to erase.
 ![Screenshot](./media/device-erase/choosedevice.png)
-2. Click **More** > **Erase** > provide a 6-digit number for the **Recovery Pin**. This is the pin that you must give to the user so that they can reinstall the operating system on their device.
+2. Click **More** > **Erase** > provide a 6-digit number for the **Recovery Pin**. This is the pin that you must give to the user so that they can reinstall the operating system on their device. Be sure to make a note of this pin because it won't be visible after the erase action completes.
 ![Screenshot](./media/device-erase/providepin.png)
 3. Click **OK** to erase the device.
