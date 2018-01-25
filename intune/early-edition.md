@@ -42,6 +42,10 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune in the Azure portal
 
+
+<!-- 1801 start -->
+
+
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
@@ -98,6 +102,10 @@ Offline apps purchased from the Windows Store for Business will be synchronized 
 
 ### Reset passwords for Android O devices <!-- 1238299 -->
 You'll be able to reset the passwords for enrolled Android O devices. When you send a "Reset password" request to an Android O device, it sets a new device unlock password or a managed profile challenge to the current user. The password or challenge is sent based on whether the device has a profile owner or a device owner, and immediately takes effect.
+
+### Local device security option settings <!-- 1251887 -->
+You will be to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
+
 
 ### Microsoft Intune Government <!--1285219 -->
 
