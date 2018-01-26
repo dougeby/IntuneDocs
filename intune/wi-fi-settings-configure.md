@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users will have access to your corporate Wi-Fi network without having to configure it themselves.
+Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users have access to your corporate Wi-Fi network without having to configure it themselves.
 
 For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set up all iOS devices to connect to this network. Here's the process:
 
@@ -69,12 +69,12 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
 
    The **Wi-Fi import** profile (for Windows 8.1 and later) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
-1. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
+1. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
 	- [Android and Android for Work settings](wi-fi-settings-android.md)
 	- [iOS settings](wi-fi-settings-ios.md)
 	- [macOS settings](wi-fi-settings-macos.md)
 	- [Windows 8.1 and later settings](wi-fi-settings-import-windows-8-1.md) (including Windows Holographic for Business)
 1. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
