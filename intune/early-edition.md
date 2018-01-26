@@ -106,7 +106,6 @@ You'll be able to reset the passwords for enrolled Android O devices. When you s
 ### Local device security option settings <!-- 1251887 -->
 You will be to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
-
 ### New printer settings for education profiles <!-- 1308900 -->
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
