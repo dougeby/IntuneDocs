@@ -49,7 +49,7 @@ In Windows, use the **netsh wlan** utility to export an existing Wi-Fi profile t
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the device restriction profile.
 
    > [!WARNING]
-   > The name **must** be the same as the name attribute in the Wi-Fi profile xml, otherwise it will fail.
+   > The name **must** be the same as the name attribute in the Wi-Fi profile xml, otherwise it fails.
 
 5. From the **Platform** drop-down list, choose **Windows 8.1 and later**.
 6. From the **Profile** type drop-down list, choose **Wi-Fi import**.
