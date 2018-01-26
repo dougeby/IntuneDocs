@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# How to add built-In apps to Microsoft Intune
+# How to add built-in apps to Microsoft Intune
 
 The **built-in** app type makes it easy for you to assign curated managed apps, such as Office 365 apps, to iOS and Android devices. You can assign specific apps for this app type, such as Excel, Power BI, SharePoint, Teams, OneDrive, Outlook, Skype, and others. After adding an app, you will see the app type as either **Built-in iOS app** or **Built-in Android app**. By using the built-in app type, you can choose which of these specific apps to provide to device users.
 
