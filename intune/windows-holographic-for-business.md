@@ -7,7 +7,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,6 +48,9 @@ For more information about Microsoft Intune support, see the following topics:
 
 ## VPN settings
 - [How to configure VPN settings in Microsoft Intune](vpn-settings-configure.md)
+
+## Wi-Fi settings
+- [How to configure Wi-Fi settings in Microsoft Intune](wi-fi-settings-configure.md) 
  
 
 

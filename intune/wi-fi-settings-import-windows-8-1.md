@@ -8,19 +8,17 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -31,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file.
+For devices that run Windows 8.1, Windows 10 desktop or mobile, or Windows Holographic for Business, you can import a Wi-Fi configuration profile that was previously exported to a file.
 
 ## Export Wi-Fi settings from a Windows device
 
