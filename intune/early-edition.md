@@ -135,7 +135,7 @@ Two new settings will be available for devices with the Edge browser: **Path to 
 
 A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
 
-### Line-of-business (LOB) app support for macOS <-- 1473977 -->
+### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Intune will provide the capability to install macOS LOB apps. LOB apps are apps where you supply the installation file and use Intune to install the app on the device. As part of macOS LOB app support, you must use the Microsoft Intune App Wrapping Tool for macOS to pre-process macOS line-of-business (LOB) apps.
 
 ### Configure resource account settings for Surface Hubs <!-- 1475674 -->
