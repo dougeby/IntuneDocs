@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - January 2018
+# The early edition for Microsoft Intune - February 2018
 
 The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
@@ -106,11 +106,6 @@ You'll be able to reset the passwords for enrolled Android O devices. When you s
 ### Local device security option settings <!-- 1251887 -->
 You will be to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
-
-### Microsoft Intune Government <!--1285219 -->
-
-The Microsoft Intune Government offering will deliver an application and mobile management service build on top of Azure Government that provides government agencies and their partners access to the same set of solutions and features publicly available to our commercial customers. It is also FedRAMP High complaint.
-
 ### New printer settings for education profiles <!-- 1308900 -->
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
@@ -135,7 +130,7 @@ Two new settings will be available for devices with the Edge browser: **Path to 
 
 A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
 
-### Line-of-business (LOB) app support for macOS <-- 1473977 -->
+### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Intune will provide the capability to install macOS LOB apps. LOB apps are apps where you supply the installation file and use Intune to install the app on the device. As part of macOS LOB app support, you must use the Microsoft Intune App Wrapping Tool for macOS to pre-process macOS line-of-business (LOB) apps.
 
 ### Configure resource account settings for Surface Hubs <!-- 1475674 -->

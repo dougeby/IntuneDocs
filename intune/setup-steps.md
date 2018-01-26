@@ -7,7 +7,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,3 +54,4 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 | 8 | [Configure devices](device-profiles.md) - Set up profiles that manage device settings. Device profiles can preconfigure settings for email, VPN, Wi-Fi, and device features. They can also restrict devices to help protect both devices and data.  |
 | 9 | [Customize Company Portal](company-portal-app.md) - Customize the Intune Company Portal that users use to enroll devices and install apps. These settings appear in both the Company Portal app and the Intune Company Portal website. |
 | 10 | [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices by setting the MDM authority and enabling specific platforms. |
+| 11 | [Configure app policies](app-protection-policy.md) - Supply specific settings based on app protection policies in Microsoft Intune. |
