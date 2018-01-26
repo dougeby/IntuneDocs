@@ -42,7 +42,7 @@ To manage devices that run Windows Holographic with Microsoft Intune, you must c
 
 3.	In the **Create profile** blade, type a name for the profile, select **Windows 10 and later** for the platform, and select **Edition upgrade** for the profile type. Click **Settings Configure**.
 
-5. In the **Edition Upgrade** blade, on **Edition to upgrade to**, select **Windows 10 Holographic for Business**. On **License File**, browse to and select the XML license file that was provided when you purchased the Commercial Suite.
+5. In the **Edition Upgrade** blade, on **Edition to upgrade to**, select **Windows 10 Holographic for Business**. On **License File**, browse to and select the XML license file that was provided to you.
 
     ![Enter the XML file name](media/Holographic-edition-upgrade.png)
  
