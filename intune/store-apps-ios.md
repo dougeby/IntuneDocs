@@ -38,6 +38,8 @@ Use the information in this topic to help you add iOS store apps to Intune.
 
 You can only assign apps using this method if they are free of charge in the app store. If you want to assign paid apps using Intune, consider using the [iOS volume-purchase program](vpp-apps-ios.md).
 
+>[!NOTE]
+>Chrome and Edge are the recommended browsers when working with Microsoft Intune.
 
 ## Step 1 - Search for the app in the store
 
