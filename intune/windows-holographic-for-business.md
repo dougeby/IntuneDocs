@@ -62,7 +62,7 @@ Next, you assign the Edition Upgrade profile to selected groups or devices.
 When these users or devices are enrolled in Intune, the Edition Upgrade profile is applied. 
 
 
-For more information about groups, see [Get started with groups](get-started-groups.md)
+For more information about groups, see [Get started with groups](get-started-groups.md).
 
 For more information about Microsoft Intune support for Windows Holographic for Business, see the following topics:
 
