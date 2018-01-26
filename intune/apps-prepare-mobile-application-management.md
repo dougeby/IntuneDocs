@@ -108,6 +108,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Targeted Application Configuration |X||
 |Support for Multi-Identity|X||
 |Customizable Style |X|||
+|On-demand application VPN connections with Citrix mVPN|X|X| 
+
 ## Next steps
 
 To learn more about app protection policies and Intune, see the following topics:
