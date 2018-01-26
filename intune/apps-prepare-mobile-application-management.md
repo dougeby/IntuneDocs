@@ -52,7 +52,6 @@ For more information about the App Wrapping Tool for app protection policies on 
 
 
 ### Supported app development platforms
-
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Yes|Yes|
@@ -108,10 +107,11 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Targeted Application Configuration |X||
 |Support for Multi-Identity|X||
 |Customizable Style |X|||
+|On-demand application VPN connections with Citrix mVPN|X|X|
 ## Next steps
 
 To learn more about app protection policies and Intune, see the following topics:
 
-  -  [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
+  - [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
   - [iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
   - [Use the SDK to enable apps for mobile application management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
