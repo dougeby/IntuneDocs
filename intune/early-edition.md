@@ -168,7 +168,6 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 |Setting name  |Setting options  |Description  |
 |---------|---------|---------|
-|Execution of password-protected executable content from email|Block, Audit, Not configured|Prevent password-protected executable files downloaded over email from running.|
 |Advanced ransomware protection|Enabled, Audit, Not configured|Use aggressive ransomware protection.|
 |Flag credential stealing from the Windows local security authority subsystem|Enabled, Audit, Not configured|Flag credential stealing from the Windows local security authority subsystem (lsass.exe).|
 |Process creation from PSExec and WMI commands|Block, Audit, Not configured|Block process creations originating from PSExec and WMI commands.|
