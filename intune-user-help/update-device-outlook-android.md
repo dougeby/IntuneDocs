@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 The Outlook app helps millions of users connect all their email accounts, calendars, and files in one convenient spot for [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.
 
 >[!NOTE]
-> Looking for instructions for iOS devices? [Learn more](update-device-ios.md).
+> Looking for instructions for iOS devices? [Learn more](update-device-outlook-ios.md).
 
 Sometimes installing an app can fail, especially if your device isn't up-to-date. If you this a message like this, you need to update your Android device before trying again.
 
