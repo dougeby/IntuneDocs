@@ -56,7 +56,7 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
     The URL of the enrollment endpoint of the MAM service. The enrollment endpoint is used to enroll devices for management with the MAM service.
 
     **MAM compliance URL**  
-      The URL of the compliance endpoint of the MAM service. When a user is denied access to a resource from a non-compliant device, a link to the compliance URL is displayed to the user. Users can navigate to this URL hosted by the MAM service, in order to understand why their device is considered non-compliant. Users can also initiate self-service remediation so their device becomes compliant and they can continue to access resources.
+      The URL of the compliance endpoint of the MAM service. When a user is denied access to a resource from a noncompliant device, a link to the compliance URL is displayed to the user. Users can navigate to this URL hosted by the MAM service, in order to understand why their device is considered noncompliant. Users can also initiate self-service remediation so their device becomes compliant and they can continue to access resources.
 
 5.  Click **Save**.
 
