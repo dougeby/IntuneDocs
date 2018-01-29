@@ -7,7 +7,7 @@ description: Use the device enrollment manager account to enroll devices in Intu
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: article
 ms.prod:

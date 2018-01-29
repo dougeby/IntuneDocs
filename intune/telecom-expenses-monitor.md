@@ -5,7 +5,7 @@ description: Configure the Saaswedo telecom expense management service to integr
 keywords: Saaswedo
 author: ErikjeMS  
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

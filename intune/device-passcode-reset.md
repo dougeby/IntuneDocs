@@ -7,7 +7,7 @@ description: Learn how to reset and remove the passcode on devices you manage wi
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

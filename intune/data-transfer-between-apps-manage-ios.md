@@ -7,7 +7,7 @@ description: Use this topic to understand how you can use the iOS Open-in featur
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
 
--   Prevent company data loss  by configuring an app protection policy for the apps, which we will refer to as **policy-managed**  apps. See [all the Intune-enlightened apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+-   Prevent company data loss  by configuring an app protection policy for the apps, which we will refer to as **policy-managed**  apps. See [all the Intune-managed apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 

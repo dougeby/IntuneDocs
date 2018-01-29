@@ -5,7 +5,7 @@ title: Microsoft Intune App SDK for iOS developer guide
 description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app.
 keywords:
 author: erikre
-manager: angrobe
+manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
 ms.topic: article

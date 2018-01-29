@@ -7,7 +7,7 @@ description: Learn how to use Fresh Start to reset Windows 10 PCs running Intune
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod:

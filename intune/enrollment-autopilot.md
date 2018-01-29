@@ -6,7 +6,7 @@ description: "Learn how to enroll new Windows 10 devices using Windows AutoPilot
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod:
@@ -100,6 +100,7 @@ If you are not interested in mobile device management, you have the ability to u
 - Synchronize profiles created in another portal
 - Display changes to profile assignments done in another portal
 - Synchronize profile assignments done in another portal
+- Display changes to the device list that were made in another portal
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)

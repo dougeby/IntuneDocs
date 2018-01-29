@@ -7,7 +7,7 @@ description: Learn about the settings you can use in a Windows 10 custom profile
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod:

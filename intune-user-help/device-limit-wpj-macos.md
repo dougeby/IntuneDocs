@@ -7,8 +7,8 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 01/11/2018
+manager: dougeby
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # The limit of devices you can register has been reached
 
-Every company sets a limit to the number of devices that each person can use to access company resources. This helps keep company information safe, and makes sure that each user is authorized to access it from specific devices and locations. There are two things that you can do if you see a message that tells you that you **Couldn't register your device** because you've reached the limit of the number of devices:
+Every company sets a limit to the number of devices that each person can use to access company resources. This helps keep company information safe, and makes sure that each user is authorized to access it from specific devices and locations. There are three things that you can do if you see a message that tells you that you **Couldn't register your device** because you've reached the limit of the number of devices:
 
 1. Remove one of your devices from management in the Company Portal. 
 2. Remove one of your devices from the [MyApps portal](https://myapps.microsoft.com) and select **Profile** in the top-right corner of the page. 

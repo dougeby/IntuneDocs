@@ -7,7 +7,7 @@ description: "Configure conditional access for Exchange on-premises and legacy E
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod:

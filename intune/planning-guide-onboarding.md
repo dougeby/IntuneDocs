@@ -6,7 +6,7 @@ description: This article helps you with all details that need to be considered 
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Learn how to use app configuration policies for managed apps withou
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod:

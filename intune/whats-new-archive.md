@@ -6,7 +6,7 @@ description: Review older announcements from the Intune what's new page
 keywords:
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: Use managed apps on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/14/2017
 ms.topic: article
 ms.prod:

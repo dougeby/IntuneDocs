@@ -5,7 +5,7 @@ description: Retrieve data from the Intune Data Warehouse using a RESTful API.
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod:

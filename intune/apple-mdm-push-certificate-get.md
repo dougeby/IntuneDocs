@@ -7,8 +7,8 @@ description: Learn the steps for getting an Apple MDM Push certificate to manage
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
-ms.date: 1/16/2018
+manager: dougeby
+ms.date: 1/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
