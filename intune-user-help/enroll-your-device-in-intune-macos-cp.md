@@ -39,7 +39,7 @@ Getting access to your organization’s apps, data, and resources makes it easie
 
 2. Log into the Company Portal website with your work or school account.
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
 
@@ -64,7 +64,7 @@ Getting access to your organization’s apps, data, and resources makes it easie
 
 9. The first screen you see in the Company Portal app prompts you to **Sign In** with the same work or school account you used to log in to the Company Portal website.
 
-10. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you'll need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+10. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 11. Your Mac will begin enrolling into management. You might be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer. A message appears once you've completed Company Access Setup to let you know you're done.
 

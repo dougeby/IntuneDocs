@@ -59,7 +59,7 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+-   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
 -   3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
