@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Including and excluding app assignments
+title: Include and exclude app assignments
 titlesuffix: "Azure portal"
 description: "Learn how you can use Intune to include and exclude app assignments."
 keywords:
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Including and excluding app assignments in Microsoft Intune
+# Include and exclude app assignments in Microsoft Intune
 
 Using Intune, you can determine who has access to an app by assigning the groups to include, as well as exclude. You include and exlude app assignments by assigning an app configuration policy to a group of users using a combination of include and exclude group assignments. After selecting an available app, you can choose how the app is assigned. This capability can be useful when you make the app available by including a large group, and then narrow the selected users by also excluding a smaller group, such as a test group or executive group. 
 
