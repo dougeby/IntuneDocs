@@ -39,7 +39,7 @@ You can control mobile device access to corporate resources using conditional ac
 
 -   Vulnerabilities defense
 
-You can configure conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+You can configure conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 ## How do Intune and Skycure help protect your company resources?
 
@@ -47,7 +47,7 @@ Skycure mobile app for Android or iOS captures file system, network stack, devic
 
 The Intune device compliance policy includes a rule for Skycure Mobile Threat Defense, which is based on the Skycure risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 
-If the device is found non-compliant, access to resources like Exchange Online and SharePoint Online are blocked. Users on blocked devices receive guidance from the Skycure mobile app to resolve the issue and regain access to corporate resources.
+If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online are blocked. Users on blocked devices receive guidance from the Skycure mobile app to resolve the issue and regain access to corporate resources.
 
 Intune supports two modes of integration with Skycure:
 

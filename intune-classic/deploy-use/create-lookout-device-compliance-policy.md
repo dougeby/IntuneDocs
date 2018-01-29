@@ -44,14 +44,14 @@ As part of the Lookout Mobile Threat Defense setup, in the [Lookout console](htt
   ![screenshot showing the device threat protection rule setting in ](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Select the **Maximum allowed threat level**:
-  * **None (Secured)**: This is the most secure.  The device cannot have any threats present and still access company resources.  If any threats are found, the device is evaluated as non-compliant.  
-  * **Low**: The device is compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
-  * **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as non-compliant.
+  * **None (Secured)**: This is the most secure.  The device cannot have any threats present and still access company resources.  If any threats are found, the device is evaluated as noncompliant.  
+  * **Low**: The device is compliant if only low level threats are present. Anything higher puts the device in a noncompliant status.
+  * **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as noncompliant.
   * **High**: This is the least secure. This allows all threat levels, and uses Lookout mobile threat protection for reporting purposes only.
 
 ![screenshot showing the threat level option for the device threat protection rule setting](../media/mtp/mtp-compliance-policy-setting.png)
 
-If you create conditional access policies for Office 365 or other services, this compliance evaluation is assessed and non-compliant devices are blocked from accessing those services until the threat is resolved.
+If you create conditional access policies for Office 365 or other services, this compliance evaluation is assessed and noncompliant devices are blocked from accessing those services until the threat is resolved.
 
 ## Monitor device threats
 To see the compliance state of a device, go to the [Intune administrator console](https://manage.microsoft.com) and view **All Devices**.
