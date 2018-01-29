@@ -28,10 +28,10 @@ ms.custom: intune-enduser
 
 # You need to update your iOS device to install the Outlook app
 
-The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for [iOS](https://itunes.apple.com/app/microsoft-outlook-email-calendar/id951937596) devices. 
+The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for [iOS](https://itunes.apple.com/app/microsoft-outlook-email-calendar/id951937596) devices.
 
 >[!NOTE]
-> Looking for instructions for Android devices? [Learn more](update-device-android.md).
+> Looking for instructions for Android devices? [Learn more](update-device-outlook-android.md).
 
 Sometimes installing an app can fail, especially if your device isn't up to date. If you see a message like this when trying to install Outlook, you'll need to update your iOS device before trying to install it again.
 
