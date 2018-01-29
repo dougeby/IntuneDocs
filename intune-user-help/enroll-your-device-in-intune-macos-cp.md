@@ -39,7 +39,7 @@ Getting access to your organization’s apps, data, and resources makes it easie
 
 2. Log into the Company Portal website with your work or school account.
 
-[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
 
