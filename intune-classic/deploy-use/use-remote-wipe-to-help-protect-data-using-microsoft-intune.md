@@ -116,9 +116,9 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|
-|Unmanaged line of business apps|Apps and data remain installed.|Apps are uninstalled and data local to the app is removed as a result. No data outside the app (for example, on an SD card) is removed.|
+|Unmanaged line-of-business apps|Apps and data remain installed.|Apps are uninstalled and data local to the app is removed as a result. No data outside the app (for example, on an SD card) is removed.|
 |Managed Google Play apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted, but aren't removed.|
-|Managed line of business apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted and unusable, but aren't removed.|
+|Managed line-of-business apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (for example, an SD card) remain encrypted and unusable, but aren't removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|

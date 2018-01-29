@@ -144,7 +144,7 @@ You can now control mobile device access to corporate resources using conditiona
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block non-compliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 

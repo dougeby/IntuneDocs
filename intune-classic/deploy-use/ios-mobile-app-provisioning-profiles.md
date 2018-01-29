@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Apple iOS line of business apps that are deployed to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
+Apple iOS line-of-business apps that are deployed to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
 
 - **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app will not be allowed to run.
 - **Capabilities enforcement** - iOS attempts to enforce the app's capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) that are in the app installation (.ipa) file.
@@ -41,7 +41,7 @@ After the certificate expires, you must sign the app again with a new certificat
 
 
 
-## How to find out when a line of business app will expire
+## How to find out when a line-of-business app will expire
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Apps** > **Apps**.
 2. In the list of apps, look at the **Expiration date** column to see the expiry date for the app. You can also set the **Filters** drop-down list to **Expired/about to expire** to see only the apps for which you must take action.

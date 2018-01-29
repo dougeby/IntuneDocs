@@ -106,9 +106,9 @@ For more details, see [Enable device threat protection rule in the compliance po
 - **Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device, after which they can access company resources.
 - **Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.
 
-## How non-compliant settings work with conditional access policies?
+## How noncompliant settings work with conditional access policies?
 
-The table below describes how non-compliant settings are managed when a compliance policy is used with a conditional access policy.
+The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
 --------------------
 

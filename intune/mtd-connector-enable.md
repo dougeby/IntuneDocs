@@ -57,10 +57,10 @@ To enable the Mobile Threat Defense (MTD) connection in Intune, you should have 
 You can decide which MTD toggle options you need to enable according to your organization's requirements. Here's more details:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-	- **Mark as non-compliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device non-compliant.
+	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-	- **Mark as non-compliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device non-compliant.
+	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Block unsupported OS versions**: Block if the device is running an operating system less than the minimum supported version.
 
