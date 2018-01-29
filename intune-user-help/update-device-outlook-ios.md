@@ -1,9 +1,10 @@
 ---
 # required metadata
 title: You need to update your iOS device to install Outlook | Microsoft Docs
+titleSuffix: Microsoft Intune
 description:
 keywords:
-author: barlanmsft
+author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 01/29/2018
@@ -12,7 +13,8 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 48ef8e17-db03-4a1b-95a2-bc594979734c
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 
