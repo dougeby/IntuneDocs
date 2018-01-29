@@ -37,6 +37,6 @@ Your work or school wants to ensure that devices accessing their resources are s
 2. Go to **Settings** > **System** > **About** > **OS Build**.
 3. If the OS Build is lower than what your company wants you to use, select **Update** to update to a newer version of Windows.
 
-If your Windows version is newer than what your company supports, you'll need to [try some different steps to fix the issue](your-windows-version-isnt-yet-supported.md)
+If your Windows version is newer than what your company supports, you need to [try some different steps to fix the issue](your-windows-version-isnt-yet-supported.md)
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
