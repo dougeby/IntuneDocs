@@ -252,6 +252,7 @@
         href: apps-add-bulit-in.md        
     - name: Deploy apps
       href: apps-deploy.md
+      items:
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
     - name: Monitor apps
