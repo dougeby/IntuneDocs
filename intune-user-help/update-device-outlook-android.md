@@ -28,12 +28,12 @@ ms.custom: intune-enduser
 
 # You need to update your Android device to install the Outlook app
 
-The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.
+The Outlook app helps millions of users connect all their email accounts, calendars, and files in one convenient spot for [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.
 
 >[!NOTE]
 > Looking for instructions for iOS devices? [Learn more](update-device-ios.md).
 
-Sometimes installing an app can fail, especially if your device isn't up to date. If you see a message like this when trying to install Outlook, you'll need to update your iOS device before trying to install it again.
+Sometimes installing an app can fail, especially if your device isn't up-to-date. If you this a message like this, you need to update your Android device before trying again.
 
 Go to **Settings**, and then use the **update** or **system update** option.
 
