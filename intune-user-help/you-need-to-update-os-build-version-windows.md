@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Update your Windows 10 device
 
-Your work or school wants to ensure that devices accessing their resources are secured. One way they've chosen to make sure that your device is set up to access those resources is to make sure that your devices are up to date. On your device, this is called the "OS Build". Here's how you can update your Windows 10 device:
+Your work or school wants to ensure that devices accessing their resources are secured. One way they've chosen to make sure that your device is set up to access those resources is to make sure that your devices are up-to-date. On your device, this is called the "OS Build". Here's how you can update your Windows 10 device:
 
 1. In **Start**, open **Settings**.
 2. Go to **Settings** > **System** > **About** > **OS Build**.
