@@ -125,7 +125,7 @@ Additionally, you can also specify installed apps that will be hidden from the d
 
 For each setting, configure a list of apps using one of the following:
 
-- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package.
+- **Add apps by package name** - Primarily used for line-of-business apps. Enter the app name, and the name of the app package.
 - **Add apps by URL** - Enter the app name, and its URL in the Google Play store.
 - **Add managed apps** - From the list of apps you manage with Intune, select the app you require.
 
