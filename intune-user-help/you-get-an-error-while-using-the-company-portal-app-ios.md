@@ -5,7 +5,7 @@ title: You get an error in the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -36,4 +36,4 @@ If you get an error while you’re using the Company Portal app on your iOS devi
 
 -   Shake your device while you’re in the Company Portal app, then tap **Email** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

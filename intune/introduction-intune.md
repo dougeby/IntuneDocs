@@ -6,7 +6,7 @@ description: Learn how Intune is the mobile device management(MDM) and mobile ap
 keywords: what is Intune
 author: Lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod:

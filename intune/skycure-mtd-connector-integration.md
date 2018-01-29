@@ -5,10 +5,10 @@ title: Set up the Skycure integration with Intune
 titlesuffix: "Azure portal"
 description: Set up the Skycure integration with Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/21/2017
+author: arob98
+ms.author: angrobe
+manager: dougeby
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -5,7 +5,7 @@ title: What happens if you reset your Android device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -30,10 +30,10 @@ ms.custom: intune-enduser
 
 When you use the Company Portal to reset your Android device, all apps, settings, and personal data on your device are deleted. This reset sets your device back to its factory default settings.
 
-If you have a Samsung KNOX device, you can do a "selective wipe" by choosing the **device remove** option from the Company Portal. Selective wipe removes only:
+If you have a Samsung Knox device, you can do a "selective wipe" by choosing the **device remove** option from the Company Portal. Selective wipe removes only:
 
 - Business apps that your company support makes available to you.
 - Email, VPN, and Wi-Fi.
 - The ability of your company support to enforce certain settings.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,7 +5,7 @@ title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -66,4 +66,4 @@ We also recommend that you install the Company Portal app, which lets you easily
 
 4.  Tap  either **Install** or **Free**. The option shown depends on how your company set up the app.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

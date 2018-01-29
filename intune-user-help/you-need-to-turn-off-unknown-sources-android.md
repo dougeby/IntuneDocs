@@ -5,7 +5,7 @@ title: You need to turn off Unknown sources | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
@@ -33,4 +33,4 @@ If you see the message, â€œInstallation from Unknown sources must be disabled,â€
 
 After you turn off **Unknown sources**, it may take a few minutes before you can continue to use your Android device to access company or school data.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

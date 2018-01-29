@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows Phone 8.1titleSuffix: "Azure portal"
+title: Intune device restriction settings for Windows Phone 8.1
+titleSuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on Windows Phone 8.1 devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:

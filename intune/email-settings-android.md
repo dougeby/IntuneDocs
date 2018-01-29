@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Intune email settings for Android and Android for Work devicestitleSuffix: "Azure portal"
+title: Intune email settings for Android and Android for Work devices
+titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure email connections on Android devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod:
@@ -31,10 +32,10 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 As an Intune admin, you can create and assign email settings to the following Android devices:
-- [Android Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
+- [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
-## Android Samsung KNOX Standard email settings
+## Android Samsung Knox Standard email settings
 - **Email server** - The host name of your Exchange server.
 - **Account name** - The display name for the email account as it appears to users on their devices.
 - **Username attribute from AAD** - This name is the attribute in Active Directory (AD) or Azure AD used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.

@@ -5,9 +5,9 @@ title: Enroll iOS devices- Apple Configurator-Setup Assistant
 titlesuffix: "Azure portal"
 description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
+author: ErikjeMS 
+ms.author: erikje
+manager: dougeby
 ms.date: 10/03/2017
 ms.topic: article
 ms.prod:

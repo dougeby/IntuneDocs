@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Intune email settings for iOS devicestitleSuffix: "Azure portal"
+title: Intune email settings for iOS devices
+titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure email connections on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 02/24/2017
 ms.topic: article
 ms.prod:

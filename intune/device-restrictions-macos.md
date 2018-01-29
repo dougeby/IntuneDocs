@@ -5,9 +5,9 @@ title: Intune device restriction settings for macOS
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:

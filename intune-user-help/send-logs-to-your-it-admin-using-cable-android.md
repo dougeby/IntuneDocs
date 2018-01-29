@@ -5,7 +5,7 @@ title: Send logs to your company support using a USB cable | Microsoft Docs
 description: Send data logs by using a USB cable
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 If you get an error while you’re using the Company Portal app on your Android device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
 > [!Note]
-> Before you start, make sure that you have your company support's email address handy. You can find this on the [Company Portal website](https://portal.manage.microsoft.com) or in your Company Portal app.
+> Before you start, make sure that you have your company support's email address handy. You can find this on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) or in your Company Portal app.
 
 1.  On the error screen, tap **Send Info**. When you see a message asking which method you want to use to send the logs, choose the option that will save the files to your device.
 
@@ -41,4 +41,4 @@ If you get an error while you’re using the Company Portal app on your Android 
 
 4.  Select the files, and attach them to an email. Send this email to your company support.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

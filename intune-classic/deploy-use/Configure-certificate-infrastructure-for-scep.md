@@ -2,10 +2,10 @@
 title: Configure certificate infrastructure for SCEP 
 description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -340,6 +340,9 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 5.  In the **Certificate Connector** UI:
 
     Click **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+
+    > [!NOTE]
+    > If you get a **User name is not recognized** error when signing into NDESConnectorUI.exe, it usually means you've used an account that does not have a valid Intune license. Assign the account an Intune or EMS license and retry the operation.
 
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 

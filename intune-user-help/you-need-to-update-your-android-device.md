@@ -5,7 +5,7 @@ title: You need to update your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
@@ -31,4 +31,4 @@ ms.custom: intune-enduser
 
 Update your Android device by tapping **Settings** > **About phone**. In the __Settings__ section, tap __Check for Updates__ and install the available update.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

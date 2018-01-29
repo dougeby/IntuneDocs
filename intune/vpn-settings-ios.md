@@ -5,10 +5,10 @@ title: Intune VPN settings for iOS devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.date: 02/15/2017
+author: vhorne
+ms.author: victorh
+manager: dougeby
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

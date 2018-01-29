@@ -5,7 +5,7 @@ title: Manually sync your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
@@ -42,4 +42,4 @@ Sometimes an app may take too long to download from the Company Portal. If this 
 
 A loading bar will appear on the screen and will load until the sync is finished.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,7 +5,7 @@ title: Set or change your password | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
@@ -49,4 +49,4 @@ If your Windows device doesn't comply with your company support's password polic
 3. Enter your new password in the **New password** box, and then reenter it in the **Confirm password** box.
 4. Choose **done**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

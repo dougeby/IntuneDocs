@@ -6,7 +6,7 @@ description: Describes how to enroll an Android device in Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod:
@@ -35,7 +35,7 @@ If your company or school uses Microsoft Intune, you can enroll your Android dev
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-These enrollment instructions are for native and Samsung KNOX Android devices. Samsung KNOX is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung KNOX device, go to **Settings** > **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
+These enrollment instructions are for native and Samsung Knox Android devices. Samsung Knox is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung Knox device, go to **Settings** > **About device**. If you don't see "Knox version" listed there, you have a native Android device.
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your company support uses this category to help check the apps that you have access to.
 
@@ -99,15 +99,15 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
     The key to remember is that these are actions that are taken in the name of security. Your company support isn't trying to violate your privacy or erase your information for no reason, but wants to make sure that corporate data is kept safe.
 
-    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://portal.manage.microsoft.com) if you have questions specific to your individual organization's use.
+    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) if you have questions specific to your individual organization's use.
 
 12.  Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
 
     ![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  If you are using a Samsung KNOX device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
+13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
-    ![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Samsung Knox privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
     This screen shows that your device is being enrolled.
 
@@ -136,4 +136,4 @@ Before you try to install company apps, go to **Settings** &gt; **Security**, an
 
 If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your company support](send-enrollment-errors-to-your-it-admin-android.md).
 
-Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

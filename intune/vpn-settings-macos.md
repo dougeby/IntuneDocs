@@ -5,10 +5,10 @@ title: Intune VPN settings for macOS devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on macOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.date: 05/04/2017
+author: vhorne
+ms.author: victorh
+manager: dougeby
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

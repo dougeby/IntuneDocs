@@ -6,7 +6,7 @@ description: Learn how to install SandBlast Mobile Protect on your iOS device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
@@ -52,4 +52,4 @@ If SandBlast Mobile Protect finds a security threat on your device, you will see
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SandBlast Mobile Protect [manually from the App Store](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

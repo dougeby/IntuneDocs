@@ -4,7 +4,7 @@ title: You need to upgrade your device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
@@ -36,4 +36,4 @@ Go to **Settings**, and then use the **update** or **system update** option.
 ## If you have an iOS device
 Tap **Settings** > **General** > **Software Update**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

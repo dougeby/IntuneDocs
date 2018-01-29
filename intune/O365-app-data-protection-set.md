@@ -7,7 +7,7 @@ description: Supporting documentation for the Manage Office 365 apps wizard."
 keywords:
 author: lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:

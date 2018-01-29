@@ -6,9 +6,9 @@ description: Review older announcements from the Intune what's new page
 keywords:
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -104,7 +104,7 @@ End users can now use different accounts (work and personal) with Microsoft OneN
  
 - Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 
-### New settings to allow and block apps on Samsung KNOX Standard devices
+### New settings to allow and block apps on Samsung Knox Standard devices
 <!-- 1305423 822899-->  
 In this release, we are adding new [device restriction settings](device-restrictions-android.md) that let you specify the following app lists:
  
@@ -286,8 +286,8 @@ Users of iOS devices might see our new account picker when they sign into the Co
 You can now change your MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. In the Configuration Manager console, you can [change your MDM authority](/sccm/mdm/deploy-use/change-mdm-authority) from Set to Configuration Manager (hybrid) to Microsoft Intune (standalone) or vice versa.
 
 
-### Improved notification for Samsung KNOX startup PINs <!--1087143-->
-When end users need to set a start-up PIN on Samsung KNOX devices to become compliant with encryption, the notification displayed to end users will bring them to the exact place in the Settings app when the notification is tapped.  Previously, the notification brought the end user to the password change screen.
+### Improved notification for Samsung Knox startup PINs <!--1087143-->
+When end users need to set a start-up PIN on Samsung Knox devices to become compliant with encryption, the notification displayed to end users will bring them to the exact place in the Settings app when the notification is tapped.  Previously, the notification brought the end user to the password change screen.
 
 ### Device enrollment
 
@@ -364,7 +364,7 @@ We've added new [Windows device restriction settings](device-restrictions-window
 #### Updates to certificate configuration <!-- 918991 and 823198 -->
 When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
 
-When creating a PKCS certificate profile, for **Subject alternative name**, the **Custom Azure AD attribute** is available. The **Department** option is available when you select **Custom Azure AD attribute**. For more information, see [How to create a PKCS certificate profile] (certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile).
+When creating a PKCS certificate profile, for **Subject alternative name**, the **Custom Azure AD attribute** is available. The **Department** option is available when you select **Custom Azure AD attribute**. For more information, see [How to create a PKCS certificate profile](certficates-pfx-configure.md#create-a-device-configuration-profile).
 
 #### Configure multiple apps that can run when an Android device is in kiosk mode <!-- 662059 -->
 When an Android device is in kiosk mode, you could previously only configure one app that was allowed to run. You can now configure multiple apps using the app ID, store URL, or by selecting an Android app you already manage. For more information, see [Kiosk mode settings](device-restrictions-android.md#kiosk).
@@ -439,8 +439,8 @@ You can now assign iOS volume-purchased (VPP) apps as **Available** installs to 
 ### Synchronize eBooks from Apple VPP Store <!-- 800878 -->
 You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple volume-purchase program store with Intune, and assign the books to users.
 
-### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
-Devices that run Samsung KNOX Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
+### Multi-user management for Samsung Knox Standard devices <!-- 971988 -->
+Devices that run Samsung Knox Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
 We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.

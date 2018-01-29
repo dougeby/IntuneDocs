@@ -6,7 +6,7 @@ description: Describes the Company Portal website and provides links to steps fo
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 ---
 
 # Using the Intune Company Portal website
-The [Company Portal website](https://portal.manage.microsoft.com) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
+The [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
 
 Users can do the following tasks from the Company Portal website:
 
@@ -51,4 +51,4 @@ Users can do the following tasks from the Company Portal website:
 
 -   Remotely manage their PC (works only for PCs)
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

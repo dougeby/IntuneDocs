@@ -6,7 +6,7 @@ description: Learn how to enable UAC to access company resources.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -37,4 +37,4 @@ Here's how you can change the settings for User Access Control:
 2. Open **Security and Maintenance** > **Change User Account Control settings**.
 3. On the **Choose when to be notified about changes to your computer** page, move the slider to one of the top two notches closest to **Always notify**.
 
-Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

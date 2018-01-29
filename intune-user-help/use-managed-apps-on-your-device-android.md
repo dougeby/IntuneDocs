@@ -5,7 +5,7 @@ title: Use managed apps on your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
@@ -76,4 +76,4 @@ Some common apps that your IT department might manage are:
 
 -   Microsoft Word, Excel, and PowerPoint
 
-Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

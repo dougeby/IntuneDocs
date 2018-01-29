@@ -7,9 +7,9 @@ description: Learn how to synchronize devices with Intune to get the latest poli
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

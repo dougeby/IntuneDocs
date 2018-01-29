@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -58,4 +58,4 @@ When you add a computer:
 
 -   Your company support might enforce policies on the computer. For example, you might be required to set a password or PIN on the computer. Your company support might also limit how many times you can enter an incorrect password, and might lock you out of the computer or delete all data from your computer’s hard drive if you try too many times.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

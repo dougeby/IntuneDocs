@@ -7,7 +7,7 @@ description: Go through a series of short hands-on exercises to learn about Intu
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

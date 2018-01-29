@@ -5,9 +5,9 @@ title: Intune app notification settings for iOS devices
 titlesuffix: "Azure portal"
 description: Learn the settings you can use to control notifications from apps on iOS devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

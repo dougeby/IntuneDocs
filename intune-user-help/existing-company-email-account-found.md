@@ -5,7 +5,7 @@ title: An existing company email account was found | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
@@ -37,4 +37,4 @@ You've already got an email account with your organization or company, and now y
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

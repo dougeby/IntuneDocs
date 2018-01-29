@@ -5,7 +5,7 @@ title: You need to turn off USB debugging | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
@@ -33,4 +33,4 @@ You can turn off USB debugging by going to **Settings** > **Developer options**,
 
 After you turn off **USB debugging**, wait a few minutes, then you should be able to to use your Android device to access company or school data as usual.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

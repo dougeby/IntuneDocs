@@ -5,9 +5,9 @@ title: Android apps with app protection policies
 titlesuffix: "Azure portal"
 description: This topic describes what to expect when your Android app is managed by app protection policies."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

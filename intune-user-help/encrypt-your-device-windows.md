@@ -5,7 +5,7 @@ title: How to protect your Windows device with encryption | Microsoft Docs
 description: Describes how to encrypt a Windows device
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -39,4 +39,4 @@ If you have a desktop device, the following instructions describe how to encrypt
 
 2.  Choose **Turn on BitLocker**, and then follow the instructions to encrypt each of your drives.
 
-Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

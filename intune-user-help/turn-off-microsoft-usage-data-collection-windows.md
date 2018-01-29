@@ -5,7 +5,7 @@ title: How to turn off Microsoft data collection for Windows | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -32,4 +32,4 @@ Microsoft automatically collects certain data about our products and services. W
 
 If you wish to turn off the collection of usage data on your Windows device, find the **Usage Data** setting in the Company Portal app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,9 +5,9 @@ title: How to add Android line-of-business apps to Intune
 titlesuffix: "Azure portal"
 description: Learn about adding Android line-of-business apps to Intune."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod:
@@ -75,6 +75,7 @@ The app you have created will be displayed in the apps list where you can assign
 ## Step 5 - Update a line-of-business app
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+Note: For the Intune service to successfully deploy a new APK file to the device you must increment the android:versionCode string in the AndroidManifest.xml file in your APK package
 
 ## Next steps
 

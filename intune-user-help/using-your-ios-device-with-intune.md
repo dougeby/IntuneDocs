@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your iOS device when the 
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:

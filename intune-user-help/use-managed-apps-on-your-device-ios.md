@@ -5,7 +5,7 @@ title: Use managed apps on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/14/2017
 ms.topic: article
 ms.prod:
@@ -65,4 +65,4 @@ Here are some examples of options that your company support can manage in an app
 
 -   Data encryption requirements
 
-Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

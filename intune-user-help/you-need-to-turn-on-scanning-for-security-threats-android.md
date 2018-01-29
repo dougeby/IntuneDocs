@@ -5,7 +5,7 @@ title: You need to turn on security threat scanning | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -32,4 +32,4 @@ Your Android device is able to download and install apps that can accomplish a w
 
 You can turn on this scanning by going to **Settings** > **Google** > **Security**, and turn on **Scan device for security threats**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,9 +5,9 @@ title: Set up Apple School Manager Program enrollment for iOS devices
 titlesuffix: "Azure portal"
 description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
+author: ErikjeMS 
+ms.author: erikje
+manager: dougeby
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod:
@@ -142,9 +142,10 @@ A device enrollment profile defines the settings applied to a group of devices d
 ## Sync managed devices
 Now that Intune has been assigned permission to manage your Apple School Manager devices, you can synchronize Intune with the Apple service to see your managed devices in Intune.
 
-1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
-2. Under **Enrollment Program Devices**, choose **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
-3. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+
+  ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
+2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
 

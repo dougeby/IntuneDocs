@@ -6,7 +6,7 @@ description: Learn how to resolve threats using Mobile Threat Defense apps for A
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
@@ -45,5 +45,5 @@ If you have installed an app that Mobile Threat Defense thinks is a threat, you 
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 

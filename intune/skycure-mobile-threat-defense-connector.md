@@ -5,10 +5,10 @@ title: Skycure connector with Intune
 titlesuffix: "Azure portal"
 description: "Skycure connector integration with Intune."
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/09/2017
+author: arob98
+ms.author: angrobe
+manager: dougeby
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

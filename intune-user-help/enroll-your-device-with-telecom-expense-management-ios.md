@@ -6,7 +6,7 @@ description: Learn how to enroll an iOS device into telecom expense management.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod:
@@ -69,4 +69,4 @@ Select the appropriate option, and you will receive a notification to install th
 
 Once you've enrolled, you will begin to see your data usage in the Datalert app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

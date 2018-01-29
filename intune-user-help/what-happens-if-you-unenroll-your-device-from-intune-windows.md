@@ -5,7 +5,7 @@ title: What happens if you unenroll your Windows device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -89,4 +89,4 @@ When you remove your Windows RT device, the following happens:
 
 -   Any settings that were changed on your device when you added it (for example, disabling the camera or requiring a certain password length) no longer apply.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

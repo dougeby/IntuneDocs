@@ -4,14 +4,16 @@
 title: Lock your device from the Company Portal | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+author: barlanmsft
+ms.author: barlan
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42bsearchScope: - User help
+ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+searchScope: - User help
 
 # optional metadata
 
@@ -31,19 +33,18 @@ Accidents happen, and sometimes devices can go missing. If your device has been 
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](https://portal.manage.microsoft.com). Remote Lock works for:
+To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). Remote Lock works for:
 
 * Android
 * iOS
 * macOS
+* Windows 10
 * Windows 10 Mobile (if the device already had a passcode set)
 * Windows Phone 8.1 (if the device already had a passcode set)
 
 ## To use Remote Lock to lock your device
 
-1.	On the [Company Portal website](https://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
-
-  ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
+1.	On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button, then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device you want to lock.
 
@@ -68,4 +69,4 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 
 If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

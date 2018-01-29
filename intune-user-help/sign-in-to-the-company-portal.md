@@ -6,7 +6,7 @@ description: Find out how to sign in to the Company Portal app on multiple platf
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
@@ -95,4 +95,4 @@ If you do not use a password to sign in to your company resources, you might use
 
   ![After going through the authentication process, the Company Portal app signs in, noting its process with a loading bar.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

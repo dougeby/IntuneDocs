@@ -5,10 +5,10 @@ title: Intune VPN settings for Android devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Android devices
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.date: 06/15/2017
+author: vhorne
+ms.author: victorh
+manager: dougeby
+ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,4 +69,3 @@ Depending on the settings you choose, not all values listed below are configurab
 	- **F5 Edge Client**
 	- **Pulse Secure**
 
-- **Split tunneling** - Enable to let certain web traffic use the VPN connection when the VPN while other traffic uses the internet. Disable this setting if you want all traffic to use the VPN when active.

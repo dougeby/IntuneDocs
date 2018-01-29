@@ -6,7 +6,7 @@ description: Learn how to enable your Windows 10 device to access company resour
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -36,4 +36,4 @@ Your work or school wants to ensure that devices accessing their resources are s
 2. Open **System and Security** > **Windows Defender Firewall**.
 3. Choose **Customize Settings** > **Turn Windows Firewall on or off** for domain, private, and public networks.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,9 +5,9 @@ title: Intune shared device configuration settings for iOS
 titlesuffix: "Azure portal"
 description: Learn the Intune settings you can use to display information on the iOS device lock screen."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

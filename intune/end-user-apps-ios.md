@@ -6,7 +6,7 @@ description: Methods for making iOS apps available to end users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/28/2016
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

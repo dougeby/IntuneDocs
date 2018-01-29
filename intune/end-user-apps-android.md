@@ -6,7 +6,7 @@ description: Methods for making Android apps available to end users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

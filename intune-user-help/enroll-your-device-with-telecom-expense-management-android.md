@@ -6,7 +6,7 @@ description: Learn how to enroll an Android device into telecom expense manageme
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod:
@@ -68,4 +68,4 @@ Tap the __next__ arrow at the top right corner of the screen to proceed. Your co
 
 Once you've enrolled, you will begin to see your data usage in the Datalert app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

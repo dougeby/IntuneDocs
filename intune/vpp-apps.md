@@ -5,9 +5,9 @@ title: Manage volume-purchased apps and books with Intune
 titlesuffix: "Azure portal"
 description:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps and books from stores."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

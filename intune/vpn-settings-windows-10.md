@@ -5,22 +5,20 @@ title: Intune VPN settings for Windows 10 devices
 titlesuffix: "Azure portal"
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
-ms.date: 10/20/2017
+author: vhorne
+ms.author: victorh
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -31,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Depending on the settings you choose, not all values in the list below will be configurable.
+Depending on the settings you choose, not all values in the following list  will be configurable.
 
 
 ## Base VPN settings
@@ -87,6 +85,8 @@ Depending on the settings you choose, not all values in the list below will be c
 ```
 
 Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.
+
+For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
 
 **Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 - **Split tunneling routes for this VPN connection** - Add optional routes for third-party VPN providers. Specify a destination prefix, and a prefix size for each.

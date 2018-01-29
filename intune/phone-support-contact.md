@@ -7,7 +7,7 @@ description: Phone numbers for Microsoft Intune help."
 keywords: business hours
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 02/27/2017
 ms.topic: article
 ms.prod:
@@ -20,7 +20,7 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

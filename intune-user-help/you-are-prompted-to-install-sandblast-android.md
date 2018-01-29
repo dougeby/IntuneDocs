@@ -6,7 +6,7 @@ description: Learn how to install SandBlast Mobile Protect on your Android devic
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
@@ -64,4 +64,4 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SandBlast Mobile Protect [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

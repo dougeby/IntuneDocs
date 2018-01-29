@@ -5,9 +5,9 @@ title: Enroll macOS devices in Intune
 titlesuffix: "Azure portal"
 description: Learn how to enroll macOS devices in Intune."
 keywords:
-author: arob98
-ms.author: angrobe
-nmanager: angrobe
+author: ErikjeMS
+ms.author: erikje
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:
@@ -52,7 +52,7 @@ To block macOS devices from enrollment, see [Set device type restrictions](enrol
 
 ## Tell your users how to enroll their devices to access company resources
 
-You'll need to tell your end users to go to the [Company Portal website](http://portal.manage.microsoft.com), and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Tell your end users to go to the [Company Portal website](http://portal.manage.microsoft.com) and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 For information about other end-user tasks, see these articles:
 

@@ -5,7 +5,7 @@ title: What happens if you reset your iOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
@@ -42,4 +42,4 @@ When you use the Company Portal to reset your iPhone or iPad, some apps and sett
 
 -   Your company email account will be deleted and unsaved email will be deleted.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

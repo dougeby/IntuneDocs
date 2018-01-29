@@ -5,9 +5,9 @@ title: Add app configuration policies for managed iOS devices | Microsoft Docs
 titlesuffix: "Azure portal"
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

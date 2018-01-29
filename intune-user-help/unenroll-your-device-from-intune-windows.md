@@ -5,7 +5,7 @@ title: Unenroll your Windows device from Intune | Microsoft Docs
 description: Describes how to unenroll a Windows device from Intune
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -66,4 +66,4 @@ To unenroll your device, use the link, shown in the "In this Article" section ab
 
 4.  On the **Delete account** dialog box, tap **Delete**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

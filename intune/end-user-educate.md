@@ -6,7 +6,7 @@ description: Share information with your end users to make your Intune deploymen
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
 ms.prod:
@@ -66,7 +66,7 @@ Assuaging these user concerns will make your deployment smoother. We have a list
   * [How your Android users get their apps](end-user-apps-android.md)
 
 * **iOS**
-  * [Using an iOS device with Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
+  * [Using an iOS device with Intune](/intune-user-help/using-your-ios-device-with-intune)
   * [How your iOS users get their apps](end-user-apps-ios.md)
 
 * **Windows**

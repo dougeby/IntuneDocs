@@ -6,7 +6,7 @@ description: Enroll a Windows 10 1511 device into Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 05/25/2017
 ms.topic: article
 ms.prod:
@@ -42,4 +42,4 @@ If you get an error while you’re using your Windows 10 device that is managed 
 
 You may also need to send [logs from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md) to give your company support more help in trying to troubleshoot any issues they may find. 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

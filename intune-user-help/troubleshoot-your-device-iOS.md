@@ -6,7 +6,7 @@ description: Find out ways to solve common issues with your iOS device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod:
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Fix common issues with your iOS device
 
-Sometimes issues can occur with your iOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com).
+Sometimes issues can occur with your iOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [I need to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [I need to send errors to my company support](send-errors-to-your-it-admin-ios.md)

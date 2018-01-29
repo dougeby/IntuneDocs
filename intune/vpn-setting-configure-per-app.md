@@ -5,9 +5,9 @@ title: Set up Per-App VPN in Microsoft Intune for iOS devices
 titleSuffix: "Intune on Azure"
 description: Specify which managed apps can use your VPN on Intune managed iOS devices.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 10/5/2017
 ms.topic: article
 ms.prod:

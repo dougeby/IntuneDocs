@@ -1,14 +1,15 @@
 ---
 # required metadata
 
-title: RBAC with IntunetitleSuffix: "Azure portal"
+title: RBAC with Intune
+titleSuffix: "Azure portal"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 06/21/2017
-ms.topic: article
+author: arob98
+ms.author: angrobe
+manager: dougeby
+ms.date: 01/17/2018
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -41,7 +42,7 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
-- **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, this role provides the ability to manage users, devices, and create and manage groups.
+- **Intune Service Administrator:** Users with this role have global permissions within Intune when the service is present. Additionally, other than any superseding Azure restrictions, this role provides the ability to manage users, devices, and create and manage Intune groups.
 
 - **Conditional Access Administrator:** Users with this role only have permissions to view, create, modify, and delete conditional access policies.
 
@@ -66,6 +67,18 @@ The following roles are built into Intune and you can assign them to groups with
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Cannot make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, and can read device information.
+- **School Administrator**: Manages Windows 10 devices in [Intune for Education](introduction-intune-education.md), and can take the following actions: 
+
+|Permission|Operation|
+|---|---|
+|Audit Data|Read|
+|DeviceConfigurations|Assign, Create, Delete, Read, Update|
+|Device Enrollment Managers|Read, Update|
+|Managed Devices|Read, Update<!--, Delete [To be added in 1803]-->|
+|Mobile apps|Assign, Create, Delete, Read, Update|
+|Reports|Read|
+|Remote Actions|Clean PC, Reboot, Remote Lock, Retire, Sync Devices, Wipe|
+|Organization|Read|
 
 ### To assign a built-in role
 

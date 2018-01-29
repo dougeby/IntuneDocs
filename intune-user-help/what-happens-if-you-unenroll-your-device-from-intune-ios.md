@@ -5,7 +5,7 @@ title: What happens if you unenroll your iOS or macOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
@@ -46,4 +46,4 @@ When you unenroll your iOS or macOS device from Intune:
 
 For instructions on how to unenroll, see [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md).
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

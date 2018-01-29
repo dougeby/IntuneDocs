@@ -5,7 +5,7 @@ title: Your device is noncompliant | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -31,4 +31,4 @@ Your device is noncompliant with at least one of your organization's security po
 
 In the Company Portal app, tap **Check Compliance**. The Company Portal app will then tell you what is causing your device to be noncompliant.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

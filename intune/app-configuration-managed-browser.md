@@ -5,9 +5,9 @@ title: Manage web access with the Managed Browser app
 titlesuffix: "Azure portal"
 description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -74,7 +74,7 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
 4.	On the **App Configuration policies** blade, choose **Add**.
 5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-6.	For **Device enrollment** type, choose **Managed devices** or **Managed apps**.
+6.	For **Device enrollment** type, choose **Managed apps**.
 7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
 8.	Choose **OK** to return to the **Add app configuration** blade.
 9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
@@ -106,8 +106,9 @@ The Intune Managed Browser and [Azure AD Application Proxy]( https://docs.micros
 
 - Set up your internal applications through the Azure AD Application Proxy.
 	- To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-	- You must be using minimum version 1.2.0 of the Managed Browser app.
-	- Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
+- You must be using minimum version 1.2.0 of the Managed Browser app.
+- Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
+Note: Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser.
 
 #### Step 1: Enable automatic redirection to the Managed Browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
@@ -224,6 +225,8 @@ You can also open the Browser in troubleshooting mode from within the app.
 1. Open the Managed Browser.
 2. Type `about:intunehelp` in the address box.
 The Browser launches troubleshooting mode.
+
+For a list of the settings stored in the app logs, see [Review app protection logs in the Managed Browser](app-protection-policy-settings-log.md).
 
 ## Security and privacy for the Managed Browser
 

@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
@@ -64,5 +64,5 @@ Before you can access your work, your company needs you to install the Lookout f
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 

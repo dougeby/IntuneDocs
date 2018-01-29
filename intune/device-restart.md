@@ -7,9 +7,9 @@ description: Learn how to remotely restart devices using the restart device acti
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 04/27/2017
-ms.topic: get-started-article
+manager: dougeby
+ms.date: 11/21/2017
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -38,7 +38,10 @@ The **Restart** device action causes the device you choose to be restarted. The 
 
 - Windows - Supported on Windows 8.1 and later
 - Windows Phone - Supported on Windows Phone 8.1 and later
-- iOS - Not supported
+- iOS - Supported
+
+    > [!Note]  
+    > This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
 - macOS - Not supported
 - Android - Not supported
 

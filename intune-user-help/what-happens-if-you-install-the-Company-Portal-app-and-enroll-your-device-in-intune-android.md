@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
@@ -62,4 +62,4 @@ After your device is added to the Company Portal, approximately every eight hour
 
 -   Send any company app inventory updates. (These updates do not have personal information.)
 
-Need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

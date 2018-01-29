@@ -7,8 +7,8 @@ description: Learn how to remove company data on a device or to factory reset th
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 08/31/2017
+manager: dougeby
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,21 @@ You can remove devices from Intune that are no longer needed, are being repurpos
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Devices and groups** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
-5. On the blade showing the device's name, choose **Factory reset**, and then choose **Yes** to confirm.
+5. On the blade showing the device's name, choose **Factory reset**
+6. For Windows 10 version 1709 or higher, there is an additional option to "Retain enrollment state and user account". 
+    
+    |Retained through a factory reset|Not retained|
+    | -------------|------------|
+    |User accounts associated with the device|User files|
+    |Machine state \(domain join, Azure Active Directory-joined)| User installed apps \(store and Win32 apps)|
+    |MDM enrollment|Non-default device settings|
+    |OEM installed apps \(store and Win32 apps)||
+    |User profile||
+    |User data outside of user profile||
+    |User autologon|| 
+    
+         
+7. Choose **Yes** to confirm the factory reset.
 
 If the device is on and connected, it takes less than 15 minutes for a factory reset command to propagate across all device types.
 
@@ -70,7 +84,7 @@ The **remove company data** command removes managed app data (where applicable),
 
 ### Android
 
-|Data type|Android|Android Samsung KNOX Standard|
+|Data type|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|
@@ -82,13 +96,25 @@ The **remove company data** command removes managed app data (where applicable),
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
 |Email|n/a (email profiles are not supported by Android devices)|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for Android is removed.|Email received by the Microsoft Outlook app for Android is removed.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.|
 |Azure Active Directory (AD) Unjoin|Azure AD Record removed.|Azure AD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be removed. <br /> <br />Currently, only Outlook app is supported.
 
 ### Android for Work
 
 Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Factory reset is not supported for Android for Work.
+
+
+### macOS
+
+|Data type|macOS|
+|-------------|-------|
+|Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
+|Wi-Fi and VPN profile settings|Removed.|
+|Certificate profile settings|Certificates that were deployed through MDM are removed and revoked.|
+|Management Agent|Management profile is removed.|
+|Outlook|If conditional access is enabled, no new mail will be received by the device.|
+|Azure Active Directory (AD) Unjoin|Azure AD record is removed.|
 
 ### Windows
 

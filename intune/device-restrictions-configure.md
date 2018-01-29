@@ -5,9 +5,9 @@ title: Configure Intune device restriction settings
 titleSuffix: "Azure portal"
 description: Learn how to use Intune to configure settings and features on devices you manage."
 keywords:
-author: lleonard-msft
-ms.author: alleonar
-manager: angrobe
+author: vhorne
+ms.author: victorh
+manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article
 ms.prod:

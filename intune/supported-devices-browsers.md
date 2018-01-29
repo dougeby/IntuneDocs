@@ -4,10 +4,11 @@
 title: Supported devices - Microsoft Intune
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 10/09/2017
+author: ErikjeMS  
+ms.author: erikje
+manager: dougeby
+ms.date: 01/03/2018
+
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,38 +27,37 @@ ms.custom: intune-classic
 
 ---
 
-# Supported devices and browsers
+# Supported operating systems and browsers
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
-- [Supported devices and computers](#intune-supported-devices)
+- [Supported operating systems](#intune-supported-operating-systems)
 - [List of supported web browsers use Intune](#intune-supported-web-browsers)
 
 You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
 
-## Intune supported devices
+## Intune supported operating systems
 
-You can manage the following devices using Intune mobile device management:
+You can manage devices running the following operating systems:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### Supported Samsung KNOX Standard devices
+### Supported Samsung Knox Standard devices
 
-The Company Portal app only attempts Samsung KNOX activation during MDM enrollment if the device appears in the [list of supported KNOX devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid KNOX activation errors that prevent MDM enrollment. Devices that don't support Samsung KNOX activation enroll as standard Android devices. A Samsung device might have some model numbers that support KNOX, while others don't. Verify KNOX compatibility with your device reseller before you purchase and deploy Samsung devices.
+The Company Portal app only attempts Samsung Knox activation during MDM enrollment if the device appears in the [list of supported Knox devices](https://www.samsungknox.com/knox-supported-devices/knox-workspace). This helps avoid Knox activation errors that prevent MDM enrollment. Devices that don't support Samsung Knox activation enroll as standard Android devices. A Samsung device might have some model numbers that support Knox, while others don't. Verify Knox compatibility with your device reseller before you purchase and deploy Samsung devices.
 
-The following list of Samsung device models do not support KNOX and are enrolled as native Android devices by the Company Portal app for Android:
+> [!NOTE]
+> Enrolling Samsung Knox devices may require you to [enable access to Samsung servers](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-| **Device name** | **Device model numbers** |
+The following list of Samsung device models do not support Knox and are enrolled as native Android devices by the Company Portal app for Android:
+
+| **Device Name** | **Device Model Numbers** |
 | --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
 | Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
 | Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
 | Galaxy Core Lite | SM-G3588V |
 | Galaxy Core Prime | SM-G360H |
@@ -65,45 +65,33 @@ The following list of Samsung device models do not support KNOX and are enrolled
 | Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
 | Galaxy Grand 3 | SM-G7200 |
 | Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
 | Galaxy Grand Prime Value Edition | SM-G531H |
 | Galaxy J Max | SM-T285YD |
 | Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
 | Galaxy J1 Ace | SM-J110F<br>SM-J110H |
 | Galaxy J1 Mini | SM-J105M |
 | Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M |
 | Galaxy K Zoom | SM-C115 |
 | Galaxy Light | SGH-T399N |
 | Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
 | Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
 | Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
 | Galaxy S2 Plus | GT-I9105P |
 | Galaxy S3 Mini | SM-G730A<br>SM-G730V |
 | Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
 | Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
 | Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy S5 | SM-G9006W |
+| Galaxy S6 Edge | 404SC |
+| Galaxy Tab A 7.0&quot; | SM-T280<br>SM-T285 |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116<br>SM-T210<br>SM-T211 |
 | Galaxy Tab 3 8.0&quot; | SM-T311 |
 | Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
 | Galaxy Trend 2 Lite | SM-G318H |
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune cannot be used to manage Windows Server operating systems.
 
 ### Windows PC software client
 

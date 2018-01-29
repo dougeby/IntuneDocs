@@ -5,7 +5,7 @@ title: How do I find the serial number on my iOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -33,4 +33,4 @@ The serial number for your device uniquely identifies it, and can help your comp
 2. Tap the __Settings__ app, then __General__.
 3. Tap __About__, then scroll to __Serial Number__.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

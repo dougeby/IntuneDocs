@@ -5,7 +5,7 @@ title: Your password does not meet your company support's requirements | Microso
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/10/2017
 ms.topic: article
 ms.prod:
@@ -52,4 +52,4 @@ PIN or password issue descriptions:
 
 - **Password isn't complex enough to meet requirements**. Your company support requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. This can also be true of other accounts on your device, so be sure to check any other work accounts to ensure that your password meets the requirements set up by IT for your device.
 
-If you have trouble figuring out how to make your password comply with the requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have trouble figuring out how to make your password comply with the requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

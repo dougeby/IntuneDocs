@@ -5,7 +5,7 @@ title: Send logs to your company support by email | Microsoft Docs
 description: Send data logs by using email on an Android device
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -44,4 +44,4 @@ To send logs to your company support using email:
 
 3.  Under **Help**, tap **Get Help**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

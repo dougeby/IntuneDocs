@@ -5,11 +5,11 @@ title: View Intune device inventory
 titlesuffix: "Azure portal"
 description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 09/05/2017
-ms.topic: get-started-article
+author: arob98
+ms.author: angrobe
+nmanager: dougeby
+ms.date: 11/10/2017
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -46,20 +46,11 @@ Now, choose one of the following options:
 - **Manage** - Choose **All Devices** to see a list of all the devices you manage.
 	Select one of those devices in the list to open the <*device name*> **Overview** blade where you can select one of:
 	- **Overview**  - See general information about the device including its name, owner, whether it is a BYOD device, when it checked-in, and more.
-	![Device overview](./media/device-overview.png)
 	- **Hardware** - See more detailed information about the device including its free storage space, model and manufacturer, and more.
-	![Managed device hardware inventory](./media/hardware-inventory.png)
 	- **Discovered apps** - Displays a list of all apps that Intune found installed on the device.
-	![Discovered apps node](./media/detected-applications.png)
-	
-
-
 	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
 	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
 - **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and their current state.
 - **Setup** > **TeamViewer Connector** - Let's you configure remote administration on devices using the TeamViewer software. For details, see [Provide remote assistance for Intune managed Android devices](/intune/device-profile-android-teamviewer).
 
->[!NOTE]
-> Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. 
-> For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device.
-> Depending on the carrier you use with devices, not all inventory items might be collected.
+Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device. Depending on the carrier you use with devices, not all inventory items might be collected.

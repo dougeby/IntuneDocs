@@ -5,7 +5,7 @@ title: You need to update your Windows device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -38,4 +38,4 @@ For computers running Windows, search for **operating system** and follow the pr
 
 For Windows 10 and Windows 8.1, type __Windows version__ into the __search bar__. Under __Can I help?__, select __windows version__. The version number will appear. This number will look something like __10.0.14393.447__.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

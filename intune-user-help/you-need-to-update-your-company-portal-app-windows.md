@@ -5,7 +5,7 @@ title: You need to update your Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
@@ -29,4 +29,4 @@ ms.custom: intune-enduser
 
 You need to update your Company Portal app in order to continue to access things like your corporate email, contacts, and documents. To fix this, open the **Microsoft Store** and install the new version of the **Company Portal** app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

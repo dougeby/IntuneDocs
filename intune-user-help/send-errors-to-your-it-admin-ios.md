@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod:
@@ -38,4 +38,4 @@ If you get errors on your iOS device while using the Company Portal app, you can
 
 -   In the Company Portal app, shake your device, then tap **Send Diagnostic Report** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -6,7 +6,7 @@ description: Learn how to update your Windows 10 device to access company resour
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -39,4 +39,4 @@ Your work or school wants to ensure that devices accessing their resources are s
 
 If your Windows version is newer than what your company supports, you'll need to [try some different steps to fix the issue](your-windows-version-isnt-yet-supported.md)
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

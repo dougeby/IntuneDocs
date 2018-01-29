@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -67,4 +67,4 @@ When your device is enrolled, your company support can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

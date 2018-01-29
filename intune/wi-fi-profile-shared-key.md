@@ -7,8 +7,8 @@ description: Use an Intune custom profile to create a Wi-Fi profile with a pre-s
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 11/10/2017
+manager: dougeby
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,9 +34,9 @@ Here's how to use Intune’s **Custom device profiles** to create a Wi-Fi profil
 
 > [!NOTE]
 -	You might find it easier to copy the code from a computer that connects to that network, as described below.
-- For Android, you also have the option of using this [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) provided by Johnathon Biersack.
+- For Android, you also have the option of using this [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) provided by Johnathon Biersack.
 -	You can add multiple networks and keys by adding more OMA-URI settings.
--  For iOS, use Apple Configurator on a Mac station to set up the profile. Alternatively, use this [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) provided by Johnathon Biersack.
+-  For iOS, use Apple Configurator on a Mac station to set up the profile. Alternatively, use this [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) provided by Johnathon Biersack.
 
 
 1.	To create a Wi-Fi profile with a pre-shared key for Android or Windows or an EAP-based Wi-Fi profile, when you create a device profile choose **Custom** for that device platform rather than a Wi-Fi profile.

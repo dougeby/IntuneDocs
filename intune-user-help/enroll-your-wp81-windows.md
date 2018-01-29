@@ -6,7 +6,7 @@ description: Describes how to enroll a Windows Phone 8.1 device in Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
@@ -89,4 +89,4 @@ Enroll your device:
 
 If your company support has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,7 +5,7 @@ title: You need to enable encryption | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod:
@@ -30,4 +30,4 @@ When you encrypt a device, you are wrapping the information on it in a layer of 
 
 BitLocker is software that encrypts your drive and helps to protect your data. Follow [these instructions](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) on how to enable BitLocker on Windows 10 devices.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -5,9 +5,9 @@ title: Get ready to configure app protection policies for Windows 10
 titlesuffix: "Azure portal"
 description: "Setup mobile application management (MAM) provider in Azure AD"
 keywords:
-author: mattbriggs
-ms.author: mabrigg
-manager: angrobe
+author: erikre
+ms.author: erikre
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod:

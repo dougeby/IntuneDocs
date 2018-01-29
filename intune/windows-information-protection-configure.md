@@ -1,18 +1,18 @@
 ---
 # required metadata
 
-title: Configure Windows Information Protection - IntunetitleSuffix: "Azure portal"
+title: Configure Windows Information Protection - Intune
+titleSuffix: "Azure portal"
 description: Learn about the Intune settings you can use to manage Windows Information Protection."
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 04/14/2017
+author: arob98
+ms.author: angrobe
+manager: dougeby
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 
 # optional metadata
 
@@ -40,4 +40,8 @@ This Intune policy manages the list of apps protected by Windows Information Pro
 > To use the Windows 10 Company Portal app with Windows Information Protection, you must add the Company Portal app under the Windows Information Protection mode of **Exempt**. 
 
 ### Next steps
-For more information, see [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+For more information, see:
+-  [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+- [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
+- [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+- [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)

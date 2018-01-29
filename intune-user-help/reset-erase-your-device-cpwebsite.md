@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
 ms.prod:
@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Reset your device from the Company Portal website
 
-If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](https://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. You can use this website to do most of the same tasks that you can do when using your Company Portal app.
+If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. You can use this website to do most of the same tasks that you can do when using your Company Portal app.
 
 If you reset your device, it will no longer be listed in the Company Portal, and the device will be reset to its factory default settings.
 
@@ -40,7 +40,7 @@ If you reset your device, it will no longer be listed in the Company Portal, and
 
 To reset your device:
 
-1.	On the [Company Portal website](https://portal.manage.microsoft.com), tap the __menu__ button, then select __My Devices__.
+1.	On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button, then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device you want to rename.
 
@@ -54,4 +54,4 @@ To reset your device:
 
 Your device has now been reset.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
