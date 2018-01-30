@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 #### New functionality for the "Resolve" action for Android devices <!---1583480--->
 
-The Company Portal app for Android is expanding the "Resolve" action for **Update device settings** to resolve [device encryption issues](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android.md).
+The Company Portal app for Android is expanding the "Resolve" action for **Update device settings** to resolve [device encryption issues](/intune-user-help/encrypt-your-device-android.md).
 
 ## Week of January 22, 2018
 
