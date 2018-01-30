@@ -32,7 +32,7 @@ The **early edition** provides a list of features that are coming in upcoming re
 This page is updated periodically. Check back for additional updates.
 
 > [!Note]
->The following changes are under development for Intune. For more information about new hybrid features, check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+>The following changes are under development for Intune. For more information about new hybrid features, check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 <!--
 ## What's coming to Intune in the Azure portal  
@@ -56,7 +56,7 @@ Intune will give you the option to authenticate devices by using the Company Por
 
 When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
 
-When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point, the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
 
 ### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
 Intune will support enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
@@ -80,7 +80,7 @@ PrinterOn’s wireless mobile printing solutions will enable users to remotely p
 
 
 ### Microsoft Graph API for Intune - General Availability  <!-- 1833289 -->
-Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
+Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners, and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
 
 <!-- the following are present prior to 1801 -->
 
@@ -111,7 +111,7 @@ If you would like to have your app available in the Information Worker Portal an
 1. Remove the **Not Applicable** assignment for your group.
 2. Create a new group that does not include members with **Required and Available** intent assigned and assign that group as **Not Applicable**.
 
-For more information, see, [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
+For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 > [!Note]
 > After the release you will no longer be able to view or modify Mobile Device Management (MDM) app assignments in the Intune classic console. However, you can use Azure console or the Intune Graph API to make your app assignments.
@@ -123,7 +123,7 @@ By default, your Android for Work devices settings will be the same as your sett
  
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
 
-When working with the new settings, consider the following:
+When working with the new settings, consider the following issues:
 
 #### If you have never previously onboarded Android for Work enrollment
 The new Android for Work platform is blocked in the default Device Type Restrictions. After you onboard the feature, you can allow devices to enroll with Android for Work. To do so, change the default or create a new Device Type Restriction to supersede the default Device Type Restriction.
@@ -174,7 +174,7 @@ You are able to find a code repository that contains the Intune App Wrapping Too
 <!-- the following are present prior to 1711 -->
 
 
-### Redirecting macOS users to our new Company Portal app <!--1380728-->   
+### Redirecting macOS users to the new Company Portal app <!--1380728-->   
 When an end user logs into the Company Portal website to enroll their macOS device, they will be directed to download the new Company Portal app for macOS to complete the process. This occurs for macOS devices using OS X El Capitan 10.11 or above. 
 
 
