@@ -105,18 +105,18 @@ To enable the Intune App SDK, follow these steps:
 
 	![Intune App SDK iOS: copy bundle resources](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-	Add these iOS frameworks to the project:
-    		* MessageUI.framework
-    		* Security.framework
-    		* MobileCoreServices.framework
-    		* SystemConfiguration.framework
-    		* libsqlite3.tbd
-    		* libc++.tbd
-    		* ImageIO.framework
-    		* LocalAuthentication.framework
-    		* AudioToolbox.framework
-    		* QuartzCore.framework
-    		* WebKit.framework
+	Add these iOS frameworks to the project:  
+    		* MessageUI.framework  
+    		* Security.framework  
+    		* MobileCoreServices.framework  
+    		* SystemConfiguration.framework  
+    		* libsqlite3.tbd  
+    		* libc++.tbd  
+    		* ImageIO.framework  
+    		* LocalAuthentication.framework  
+    		* AudioToolbox.framework  
+    		* QuartzCore.framework  
+    		* WebKit.framework  
 
 3. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
