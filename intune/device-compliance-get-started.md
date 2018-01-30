@@ -142,7 +142,7 @@ The following table summarizes the previous points:
 |NonCompliant |Yesterday’s date|NonCompliant|
 |NonCompliant |Tomorrow’s date|InGracePeriod|
 
-For more information about monitoring device complaince policies, see [Monitor Intune Device compliance policies](compliance-policy-monitor.md).
+For more information about monitoring device compliance policies, see [Monitor Intune Device compliance policies](compliance-policy-monitor.md).
 
 ### Assigning a resulting compliance policy status
 
