@@ -41,23 +41,22 @@ The following device restriction settings are supported on devices running Windo
 
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
-	- 	**Require password when device returns from idle state (Mobile only)** - Specifies that the user must enter a password to unlock the device.
+	- 	**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device.
 
 
 
 ## App Store
 
-- 	**App store (mobile only)** - Enable or block use of the app store on Windows 10 Mobile devices.
+- 	**App store** - Enable or block use of the app store on devices.
 - 	**Auto-update apps from store** - Allows apps installed from the Microsoft Store to be automatically updated.
 - 	**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.
 - 	**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
 
 ## Edge Browser
 
-- 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
-
+- 	**Microsoft Edge browser** - Allow the use of the Edge web browser on the device.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
-- 	**Pop-ups** - Blocks pop-up windows in the browser (Applies to Windows 10 desktop only).
+- 	**Pop-ups** - Blocks pop-up windows in the browser (applies to Windows 10 desktop only).
 - 	**Search suggestions** - Lets your search engine suggest sites as you type search phrases.
 - 	**Password Manager** - Enable or disable the Edge Password Manager feature.
 - **Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.

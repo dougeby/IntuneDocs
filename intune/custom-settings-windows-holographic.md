@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
- Use the Microsoft Intune **custom** profile for Windows Holographic for Business to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows Holographic for Business makes many configuration service providers (CSPs) settings available. For a CSP overview, see [Policy Configuration Service Provider (Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). For specific CSPs supported by Windows Holographic, see [CSPs supported in Windows Holographic](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens).
+ Use the Microsoft Intune **custom** profile for Windows Holographic for Business to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on devices. Windows Holographic for Business makes many configuration service providers (CSPs) settings available. For a CSP overview, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). For specific CSPs supported by Windows Holographic, see [CSPs supported in Windows Holographic](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
 If you are looking for a particular setting, remember that the [Windows Holographic for Business device restriction profile](device-restrictions-windows-holographic.md) contains many built-in settings and do not require you to specify custom values.
 
