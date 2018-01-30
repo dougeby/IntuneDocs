@@ -57,9 +57,9 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 7.	Choose **Associated App**. Then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
 8.	On the **Add Configuration Policy** blade, choose **Configuration settings**.
 9. Select **Configuration settings format**. Select one of the following:
-    - **[Use configuration designer](#Use-the-configuration-designer)**
+    - **[Use configuration designer](#use-configuration-designer)**
     - **[Enter XML data](#enter-xml-data)**
-10. Choose **OK**, and then choose **Add**.
+10. Once you have added your XML information, choose **OK**, and then choose **Add**.
 
 ## Use configuration designer
 
