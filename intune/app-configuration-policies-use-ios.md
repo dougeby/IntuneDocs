@@ -34,8 +34,8 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 
 You can assign an application configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy will apply. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**,  **All Devices**, and **All Users + All Devices**. 
 
-[!NOTE]
-> Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommended that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.
+>[!NOTE]
+>Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommended that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.
 
 Once you have selected the included groups for your application configuration policy, you can also choose the specific groups to exclude.
 
@@ -67,7 +67,7 @@ Once you have selected the included groups for your application configuration po
     - **[Use configuration designer](#use-configuration-designer)**
     - **[Enter XML data](#enter-xml-data)**
 10. Once you have added your XML information, choose **OK**, and then choose **Add** to add the configuration policy. The overview blade for the configuration policy will be displayed.
-11. Select **Assignments** to display the include and exclude options for apply the policy to groups of users. 
+11. Select **Assignments** to display the include and exclude options. 
 
     ![Policy assignments](./media/app-config-policy01.png)
 12. Select **All Users** on the **Include** tab.
