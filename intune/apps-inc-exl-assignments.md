@@ -40,13 +40,13 @@ When you exclude groups from an assignment, you must exclude only user or only d
 
 ## Including and excluding groups when assigning apps 
 To use the include and exclude assignment to assign an app to groups:
-1. Select **Mobile apps** from the Microsoft Intune blade. The **Mobile apps** blade is displayed.
+1. Select **Mobile apps** from the Microsoft Intune blade.
 2. Select **Apps** from the **Mobile apps** blade. The list of added apps is displayed.
 3. Select the app that you want to assign. A dashboard is displayed related to the app. 
-4. Select **Assignments** from the app blade. The **Assignments** blade for the app is displayed.
+4. Select **Assignments** from the app blade. 
 
     ![Intune app assignments](./media/apps-inc-exl-01.png)
-5. Select **Add group** on the app **Assignments** blade. The **Add group** blade is displayed.
+5. Select **Add group** on the app **Assignments** blade. 
 6. Select an **Assignment type** from the available assignment types on the **Add group** blade.
 7. Select **Available with or without enrollment** as the assignment type.
 
@@ -60,7 +60,7 @@ To use the include and exclude assignment to assign an app to groups:
 
     ![Intune app assignments - Include groups](./media/apps-inc-exl-03.png)
 10. Click **OK** to set the group to include.
-11. Select **Excluded Groups** on the **Add group** blade to select the groups of users that you want to make this app unavailable. The **Select groups** blade is displayed.
+11. Select **Excluded Groups** on the **Add group** blade to select the groups of users that you want to make this app unavailable. 
 12. Select the groups to exclude, which makes this app unavailable.
 
     ![Intune app assignments - Exclude groups](./media/apps-inc-exl-04.png)
