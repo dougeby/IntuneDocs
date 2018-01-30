@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -148,6 +148,8 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 
 >[!NOTE]
 >Intune cannot revoke app licenses after a token has been deleted. 
+
+<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
 
 ## Further information
 
