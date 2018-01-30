@@ -29,17 +29,17 @@ ms.custom: intune-azure
 
 # Include and exclude app assignments in Microsoft Intune
 
-Using Intune, you can determine who has access to an app by assigning the groups to include, as well as exclude. You include and exclude app assignments to a group of users or devices by using a combination of include and exclude group assignments. After selecting an app, you can choose how the app is assigned. This capability can be useful when you make the app available by including a large group, and then narrow the selected users by also excluding a smaller group, such as a test group or executive group. 
+Using Intune, you can determine who has access to an app by assigning the groups to include, as well as exclude. You include and exclude app assignments to a group of users or devices by using a combination of include and exclude group assignments. After selecting an app, you can choose how the app is assigned. This capability can be useful when you make the app available by including a large group, and then narrow the selected users by also excluding a smaller group. The smaller group could be a test group or executive group. 
 
 When you exclude groups from an assignment, you must exclude only user or only device groups, not a mixture of groups. Intune does not consider user to device association when excluding groups. Including user groups while excluding device groups is unlikely to produce the results you need, as inclusion will take precedence over exclusion. For example, if you target an iOS app to **All Users** and exclude **All iPads**, the net result will be that any user using an iPad will still get the app. If, however, you target the iOS app to **All Devices** and exclude **All iPads**, the deployment will be successful.  
 
 >[!NOTE]
 >When setting a group assignment for an app, the **Not Applicable** type is deprecated and replaced with exclude group functionality. 
 >
->Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommend that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.  
+>Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommended that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.  
 
 ## Including and excluding groups when assigning apps 
-To use the include and exclude assignment to assign an app to groups:
+To assign an app to groups using the include and exclude assignment:
 1. Select **Mobile apps** from the Microsoft Intune blade.
 2. Select **Apps** from the **Mobile apps** blade. The list of added apps is displayed.
 3. Select the app that you want to assign. A dashboard is displayed related to the app. 
@@ -54,7 +54,7 @@ To use the include and exclude assignment to assign an app to groups:
 8. Select **Included Groups** to select the group of users that you want to make this app available.
 
     >[!NOTE]
-    >When adding a group, if any other group has already been included for a given assignment type, it will be pre-selected and unchangeable for other include assignment types. Therefore, that group that has been used cannot be used as an excluded group.
+    >When adding a group, if any other group has already been included for a given assignment type, it will be pre-selected and unchangeable for other include assignment types. Therefore, that group that has been used, cannot be used as an excluded group.
 
 9. Select **Yes** to make this app available to all users.
 
