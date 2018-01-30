@@ -70,47 +70,14 @@ If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune
 
 You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups.
 
-### Including and excluding app assignment based on groups <!-- 1406920 -->
-
-During app assignment and after selecting an assignment type, you'll be able to select the groups to include, as well as the groups to exclude.
-
-### Remote "Erase" command support <!-- 1438084 -->
-
-Admins will be able to issue an Erase command remotely.
-
-> [!IMPORTANT]
-> The erase command can’t be reversed and should be used with caution.
-
-The erase command removes all data, including the operating system, from a device. It also removes the device from Intune management. No warning is issued to the user and the erasure occurs immediately upon issuing the command.
-
-You will be able to configure a 6-digit recovery PIN. This PIN can be used to unlock the erased device, at which point reinstallation of the operating system will begin. After erasure has started, the PIN appears in a status bar on the device’s overview blade in Intune. The PIN will remain as long as the erasure is underway. After erasure is complete, the device disappears entirely from Intune management. Be sure to record the recovery PIN so that whoever is restoring the device can use it.
-
 ### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
 
 A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
 
-### Website Learning Mode <!-- 1631908 -->
-
-Intune will introduce an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you will be able to view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
-
-### Updates to compliance emails <!--1637547 -->
-
-When an email is sent to report a noncompliant device, details about the noncompliant device will be included. The following article will be updated to indicate this fact: [Automate actions for noncompliance](#actions-for-noncompliance).
-
-### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 -->
-We will simplify where you configure and manage conditional access. You will configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you will also be able to access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
-
-###  Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
-The overview page will show alerts for expired tokens and tokens that will soon expire. When you click on an alert for a single token, you'll go to the token's details page.  If you click on alert with multiple tokens, you'll go to a list of all tokens with their status. Admins should renew their tokens before the expiration date.
-
 ### Remote printing over a secure network <!-- 1709994  -->
 PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
 
-### Approve the Company Portal app for Android for Work <!--1797090 -->
-If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
 
-### FaceID on iOS devices <!-- 1807377 -->
-Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
 
 ### Microsoft Graph API for Intune - General Availability  <!-- 1833289 -->
 Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
@@ -119,9 +86,6 @@ Intune APIs in Microsoft Graph will provide programmatic access to data and meth
 
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
-
-### Revoking iOS Volume-Purchase Program apps  <!-- 820863 -->
-For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you will be able to revoke the associated device based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
 
 ### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
 You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
@@ -137,12 +101,8 @@ The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to anothe
 
 
 <!-- the following are present prior to 1712 -->
-### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
-The **Built-in** app type will make it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
 
 
-### Assignment conflict resolution has changed for iOS store apps <!-- 1480316 -->
-End users might experience a change in the availability of iOS store apps. Currently, an app that has been assigned to two groups with a conflict between **Required and Available** and **Not Applicable**, resolves to **Required and Available**. With the change, an app experiencing this conflict resolves to **Not Applicable**.
 
 The change addresses the confusion when one app is assigned to multiple groups with different app intents.
 
@@ -198,17 +158,6 @@ We are offering a pre-release version of the updated Company Portal app for iOS 
 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
 Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
-
-
-<!-- the following are present prior to 1710 -->
-
-
-
-### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
-You will be able to create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education, and Windows 10 Professional Education N.
-For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
-
-
 
 
 <!-- the following are present prior to 1709 -->
