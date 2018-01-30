@@ -56,7 +56,7 @@ The Company Portal app for Android is expanding the "Resolve" action for **Updat
 
 ## Week of January 22, 2018
 
-### Intune Apps
+### Intune apps
 
 #### Remote lock available in Company Portal app for Windows 10 <!--676506-->
 End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
