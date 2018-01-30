@@ -33,7 +33,7 @@ ms.custom: intune-enduser
 If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
 
 > [!NOTE]
-> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you'll need to contact your company support to reset the passcode for you.
+> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you need to contact your company support to reset the passcode for you.
 
 To reset your passcode:
 
@@ -62,7 +62,7 @@ To reset your passcode:
   > [!NOTE]
   > You cannot reset the passcode for devices with Android 7.0 and later. You must reset these devices to factory settings if you forget your passcode.
 
-  **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint 		scanner for opening your device or making purchases, you'll need to set it up again.
+  **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint 		scanner for opening your device or making purchases, you need to set it up again.
 
   **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're 		using Windows Hello facial recognition to log in, it will still be supported.
 	

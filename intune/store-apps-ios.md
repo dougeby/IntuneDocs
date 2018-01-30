@@ -38,6 +38,8 @@ Use the information in this topic to help you add iOS store apps to Intune.
 
 You can only assign apps using this method if they are free of charge in the app store. If you want to assign paid apps using Intune, consider using the [iOS volume-purchase program](vpp-apps-ios.md).
 
+>[!NOTE]
+>Chrome and Edge are the recommended browsers when working with Microsoft Intune.
 
 ## Step 1 - Search for the app in the store
 
@@ -66,9 +68,9 @@ You can only assign apps using this method if they are free of charge in the app
 - **Display this as a featured app in the Company Portal** -- Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** -- Optionally, type the URL of a website that contains information about this app. The URL displays to users in the company portal.
 - **Privacy URL** -- Optionally, type the URL of a website that contains privacy information for this app. The URL displays to users in the company portal.
-- **Developer** -- Optionally, type the name of the app developer. This field is only visible an administrator and will not be visible to end-users.
-- **Owner** -- Optionally, type a name for the owner of this app, for example, **HR department**.  This field is only visible an administrator and will not be visible to end-users.
-- **Notes** -- Type any notes you would like to associate with this app. This field is only visible an administrator and will not be visible to end-users.
+- **Developer** -- Optionally, type the name of the app developer. This field is only visible an administrator and will not be visible to end users.
+- **Owner** -- Optionally, type a name for the owner of this app, for example, **HR department**.  This field is only visible an administrator and will not be visible to end users.
+- **Notes** -- Type any notes you would like to associate with this app. This field is only visible an administrator and will not be visible to end users.
 - **Logo** -- Upload an icon that is associated with the app. The icon is displayed with the app when users browse the company portal.
 3. When you are done, on the **Add App** blade, choose **OK**.
 

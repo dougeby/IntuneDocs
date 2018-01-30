@@ -182,4 +182,4 @@ These instructions are specific to all Android and Xamarin apps who wish to requ
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [Use the SDK to enable apps for mobile application management](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)
