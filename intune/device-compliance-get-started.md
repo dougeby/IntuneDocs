@@ -133,7 +133,7 @@ Specifically, if a device has a NonCompliant status for an assigned compliance p
 - the device has a grace period that is expired, then the assigned value for the compliance policy is NonCompliant.
 - the device has a grace period that is in the future, then the assigned value for the compliance policy is InGracePeriod.
 
-The following table summarizes the previous points.
+The following table summarizes the previous points:
 
 
 |Actual compliance status|Value of assigned grace period|Effective compliance status|
@@ -141,6 +141,8 @@ The following table summarizes the previous points.
 |NonCompliant |No grace period assigned |NonCompliant |
 |NonCompliant |Yesterday’s date|NonCompliant|
 |NonCompliant |Tomorrow’s date|InGracePeriod|
+
+For more information about monitoring device complaince policies, see [Monitor Intune Device compliance policies](compliance-policy-monitor.md).
 
 ### Assigning a resulting compliance policy status
 
