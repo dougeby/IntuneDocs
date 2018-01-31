@@ -60,7 +60,7 @@ To assign an app to groups using the include and exclude assignment:
 
     ![Intune app assignments - Include groups](./media/apps-inc-exl-03.png)
 10. Click **OK** to set the group to include.
-11. Select **Excluded Groups** on the **Add group** blade to select the groups of users that you want to make this app unavailable. 
+11. Select **Excluded Groups** to select the groups of users that you want to make this app unavailable. 
 12. Select the groups to exclude, which makes this app unavailable.
 
     ![Intune app assignments - Exclude groups](./media/apps-inc-exl-04.png)
