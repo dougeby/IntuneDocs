@@ -8,19 +8,17 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -48,8 +46,8 @@ Use these settings to manage macOS devices in a device restriction profile.
 
 In the restricted apps list, you can configure one of the following lists:
 
-A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
-An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
+- A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run. Users are not prevented from installing a prohibited app, but if they do so, this will be reported to you.
+- An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed. Users are not prevented from installing an app that is not on the approved list, but if they do so, this will be reported to you.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).
 
