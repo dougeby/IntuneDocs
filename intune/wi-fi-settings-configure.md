@@ -8,19 +8,17 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -31,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users will have access to your corporate Wi-Fi network without having to configure it themselves.
+Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users have access to your corporate Wi-Fi network without having to configure it themselves.
 
 For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set up all iOS devices to connect to this network. Here's the process:
 
@@ -46,7 +44,7 @@ Wi-Fi profiles support the following device platforms:
 - iOS 8.0 and later
 - macOS (Mac OS X 10.9 and later)
 
-For devices running Windows 8.1, Windows 10, and Windows 10 Mobile, you can import a Wi-Fi configuration that was previously exported from another device.
+For devices running Windows 8.1, Windows 10, Windows 10 Mobile, and Windows Holographic for Business, you can import a Wi-Fi configuration that was previously exported from another device.
 
 Use the information in this topic to learn the basics about configuring a Wi-Fi profile, and then read further topics for each platform to learn about device specifics.
 
@@ -64,13 +62,19 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- **iOS**
 	- **macOS**
 	- **Windows 8.1 and later (import a profile)**
-6. From the **Profile** type drop-down list, choose **Wi-Fi basic** or **Wi-Fi enterprise**. You can use **Wi-fi basic** to supply basic features like the network name, and the SSID. **Wi-Fi enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. **Wi-Fi import** (for Windows 8.1 and Windows 10) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
-7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
+
+   > [!IMPORTANT]
+   > If you are creating a profile for devices running Windows 10 or Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
+
+6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
+
+   The **Wi-Fi import** profile (for Windows 8.1 and later) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
+1. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
 	- [Android and Android for Work settings](wi-fi-settings-android.md)
 	- [iOS settings](wi-fi-settings-ios.md)
 	- [macOS settings](wi-fi-settings-macos.md)
-	- [Windows Phone 8.1 settings](wi-fi-settings-import-windows-8-1.md)
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+	- [Windows 8.1 and later settings](wi-fi-settings-import-windows-8-1.md) (including Windows Holographic for Business)
+1. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
