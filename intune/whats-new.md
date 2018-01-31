@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,6 +66,9 @@ Admins can issue an Erase command remotely.
 The erase command removes all data, including the operating system, from a device. It also removes the device from Intune management. No warning is issued to the user and the erasure occurs immediately upon issuing the command.
 
 You must configure a 6-digit recovery PIN. This PIN can be used to unlock the erased device, at which point reinstallation of the operating system will begin. After erasure has started, the PIN appears in a status bar on the device’s overview blade in Intune. The PIN will remain as long as the erasure is underway. After erasure is complete, the device disappears entirely from Intune management. Be sure to record the recovery PIN so that whoever is restoring the device can use it.
+
+### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 --> 
+You can revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
 
 ### App management
 

@@ -87,9 +87,6 @@ Intune APIs in Microsoft Graph will provide programmatic access to data and meth
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
-### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 -->
-You will be able to revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
-
 ### New iOS device action   <!-- 1244701 -->
 You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
