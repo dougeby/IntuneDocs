@@ -2,7 +2,7 @@
 # required metadata
 
 title: Include and exclude app assignments
-titlesuffix: "Azure portal"
+titlesuffix: "Microsoft Intune"
 description: "Learn how you can use Intune to include and exclude app assignments."
 keywords:
 author: Erikre
@@ -43,10 +43,10 @@ To assign an app to groups using the include and exclude assignment:
 1. Select **Mobile apps** from the Microsoft Intune blade.
 2. Select **Apps** from the **Mobile apps** blade. The list of added apps is displayed.
 3. Select the app that you want to assign. A dashboard is displayed related to the app. 
-4. Select **Assignments** from the app blade. 
+4. Select **Assignments** under the **Manage** section. 
 
     ![Intune app assignments](./media/apps-inc-exl-01.png)
-5. Select **Add group** on the app **Assignments** blade. 
+5. Select **Add group** to add the groups of users who are assigned the app. 
 6. Select an **Assignment type** from the available assignment types on the **Add group** blade.
 7. Select **Available with or without enrollment** as the assignment type.
 
@@ -72,4 +72,6 @@ When making group assignments, groups that have already been assigned or selecte
 
 ![Intune app assignments - Complete](./media/apps-inc-exl-05.png)
 
-For more information about including and excluding group assignments for apps, see the [Microsoft Intune Blog](https://aka.ms/new_app_assignment_process).
+## Next steps
+
+* For more information about including and excluding group assignments for apps, see the [Microsoft Intune Blog](https://aka.ms/new_app_assignment_process).
