@@ -47,7 +47,7 @@ To manage devices that run Windows Holographic with Microsoft Intune, you must c
 5.	Click **OK**, and then click **Create** to create the profile.
 
 
-### Deploy the Edition Upgrade policy
+## Deploy the Edition Upgrade policy
 
 Next, you assign the Edition Upgrade profile to selected groups or devices.
 
@@ -59,6 +59,7 @@ Next, you assign the Edition Upgrade profile to selected groups or devices.
 
 When these users or devices are enrolled in Intune, the Edition Upgrade profile is applied. 
 
+## Next steps
 
 For more information about groups, see [Get started with groups](get-started-groups.md).
 

@@ -128,6 +128,8 @@
         href: network-bandwidth-use.md
       - name: Windows Holographic for Business
         href: windows-holographic-for-business.md
+      - name: Upgrade Windows Holographic
+        href: holographic-upgrade.md
     - name: Sign in to Intune
       href: account-sign-up.md
     - name: Configure domains
