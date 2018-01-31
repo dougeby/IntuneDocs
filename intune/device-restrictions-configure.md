@@ -31,7 +31,13 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Device restrictions let you control a wide range of settings and features you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
+Device restrictions let you control a wide range of settings and features you manage across a range of categories such as:
+- Security
+- Browser
+- Hardware
+- Data sharing settings
+
+For example, you can create a device restriction profile that prevents users of iOS devices from accessing the device camera.
 
 Use the information in this topic to learn the basics about configuring device restriction profiles, and then read further topics for each platform to learn about device specifics.
 
@@ -50,8 +56,8 @@ To create a device profile containing device restriction settings:
 	- **Windows Phone 8.1**
 	- **Windows 8.1 and later**
 	- **Windows 10 and later**
-6. From the **Profile type** type drop-down list, choose **Device restrictions**. If you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
-7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
+6. From the **Profile type** drop-down list, choose **Device restrictions**. If you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
+7. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
 	- [Android settings](device-restrictions-android.md)
 	- [iOS settings](device-restrictions-ios.md)
 	- [macOS settings](device-restrictions-macos.md)
@@ -59,10 +65,11 @@ To create a device profile containing device restriction settings:
 	- [Windows 8.1](device-restrictions-windows-8-1.md)
 	- [Windows 10 settings](device-restrictions-windows-10.md)
 	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
+	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
 	- [Android for Work settings](device-restrictions-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
