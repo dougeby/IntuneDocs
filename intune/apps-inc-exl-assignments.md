@@ -54,7 +54,7 @@ To assign an app to groups using the include and exclude assignment:
 8. Select **Included Groups** to select the group of users that you want to make this app available.
 
     >[!NOTE]
-    >When adding a group, if any other group has already been included for a given assignment type, it will be pre-selected and unchangeable for other include assignment types. Therefore, that group that has been used, cannot be used as an excluded group.
+    >When adding a group, if any other group has already been included for a given assignment type, it will be pre-selected and unchangeable for other include assignment types. Therefore, that group that has been used, cannot be used as an included group.
 
 9. Select **Yes** to make this app available to all users.
 
