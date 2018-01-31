@@ -171,8 +171,6 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
  
     Once you have the apps showing up in the WIP Learning logging report, you can add them to your app protection policies.
 
-
-
 ## Deploy your WIP app protection policy
 
 > [!IMPORTANT]
