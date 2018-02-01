@@ -126,10 +126,6 @@
       items:
       - name: Network configuration
         href: network-bandwidth-use.md
-      - name: Windows Holographic for Business
-        href: windows-holographic-for-business.md
-      - name: Upgrade Windows Holographic
-        href: holographic-upgrade.md
     - name: Sign in to Intune
       href: account-sign-up.md
     - name: Configure domains
@@ -553,6 +549,11 @@
     - name: Resolve policy conflicts
       href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
       maintainContext: true
+  - name: Manage devices running Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: Upgrade Windows Holographic
+      href: holographic-upgrade.md
   - name: Educate users
     href: end-user-educate.md
     items:

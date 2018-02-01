@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # Upgrade devices running Windows Holographic to Windows Holographic for Business
 
 
-To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile to upgrade the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft Hololens, you can purchase the Commercial Suite to obtain the required license for the upgrade. For more information, see [Unlock Windows Holographic for Business features](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
+To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile to upgrade the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can purchase the Commercial Suite to obtain the required license for the upgrade. For more information, see [Unlock Windows Holographic for Business features](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
 
 ## To set up an Edition Upgrade device configuration profile
 

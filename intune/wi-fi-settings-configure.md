@@ -64,7 +64,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- **Windows 8.1 and later (import a profile)**
 
    > [!IMPORTANT]
-   > If you are creating a profile for devices running Windows 10 or Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
+   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
 
 6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
 
