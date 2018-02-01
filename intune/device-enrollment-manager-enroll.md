@@ -70,7 +70,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Add a device enrollment manager
 
-1.  In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**, and then choose **Device enrollment managers**.
+1.  In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Device enrollment managers**.
 
 2.  Select **Add**.
 
