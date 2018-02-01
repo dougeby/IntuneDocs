@@ -86,7 +86,7 @@ An example of an Intune support training agenda is provided below.
 
 -   Q & A
 
-The [Intune documentation](https://docs.microsoft.com/intune/) provides an Intune overview,  detailed feature descriptions, and some troubleshooting information. The [Intune forum](https://social.technet.microsoft.com/Forums/en-US/home) is a community-based resource for questions and topics not covered in the Intune documentation.
+The [Intune documentation](https://docs.microsoft.com/intune/) provides an Intune overview,  detailed feature descriptions, and some troubleshooting information. The [Intune forum](https://social.technet.microsoft.com/Forums/home) is a community-based resource for questions and topics not covered in the Intune documentation.
 
 ## What opportunities are there to involve the support team earlier?
 
