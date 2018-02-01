@@ -260,7 +260,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Kiosk (Preview)
 
--   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+-   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
 
       - **Not Configured** (default) - The policy does not enable a kiosk mode. 
       - **Single app kiosk** - The profile enables the device as a single app kiosk.
@@ -272,7 +272,7 @@ You can add apps that should have a different privacy behavior from what you def
 
          For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
 
-      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
     Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
 
@@ -286,13 +286,13 @@ You can add apps that should have a different privacy behavior from what you def
 
             - **Win32 App** - A traditional desktop app. (You need the fully qualified pathname of the executable, with respect to the device.)
 
-            - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+        - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 
     - **Taskbar** indicates whether the taskbar is displayed (**Enabled**) or hidden (**Not configured**) on the kiosk.
 
-    - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration. The account may be local to the device or an Azure AD account login associated with the kiosk app. Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
 
