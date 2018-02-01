@@ -44,7 +44,7 @@ Organizations are using device type restrictions to control access to organizati
 1. Use minimum operating system version to keep end users on current and supported platforms in your organization. 
 2. Leave maximum operating system unspecified (no limit) or set it to the last validated version in your organization to allow time for internal testing of new operating system releases.
 
-For details, see [Set device type restrictions](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions).
+For details, see [Set device type restrictions](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions).
  
 ## Operating system version reporting and compliance with Intune MDM device compliance policies
 Intune MDM device compliance policies provide you the following tools: 
@@ -59,7 +59,7 @@ Like enrollment restrictions, device compliance policies include both minimum an
 ### In practice
 Organizations are using device compliance policies for the same scenarios as enrollment restrictions. These policies keep users on current, validated operating system versions in your organization. When end-user devices fall out of compliance, access to organizational resources can be blocked via conditional access until end users are within the supported operating system range for your organization. End users are notified that they are out of compliance and they are provided the steps to regain access.   
 
-For details, see [Get started with device compliance](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).
+For details, see [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started).
  
 ## Operating system version controls using Intune app protection policies    
 Intune app protection policies and mobile application management (MAM) access settings let you to specify the minimum operating system version at the app layer. This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.
@@ -91,6 +91,6 @@ You can use the Intune capabilities described in this article to help you move y
 ## Next steps
 Use the following resources to manage operating system versions in your organization: 
 
-- [Set device type restrictions](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Get started with device compliance](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [Set device type restrictions](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies)

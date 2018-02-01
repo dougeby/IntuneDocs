@@ -89,7 +89,7 @@ Depending on the settings you choose, not all values in the following list is co
 
 For more information about writing custom XML commands, see each manufacturer's VPN documentation.
 
-For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
 **Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 - **Split tunneling routes for this VPN connection** - Add optional routes for third-party VPN providers. Specify a destination prefix, and a prefix size for each.

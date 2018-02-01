@@ -158,7 +158,7 @@ You can also check the time and date of the last successful synchronization atte
 
 ### System Center Operations Manager (SCOM) management pack
 
-Beginning with the Intune 1710 release, you can use the [SCOM management pack for Exchange connector and Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
+Beginning with the Intune 1710 release, you can use the [SCOM management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
 
 ## Next steps
 [Create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
