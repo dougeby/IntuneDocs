@@ -549,7 +549,7 @@
     - name: Resolve policy conflicts
       href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
       maintainContext: true
-  - name: Manage devices running Windows Holographic
+  - name: Manage Windows Holographic
     href: windows-holographic-for-business.md
     items:
     - name: Upgrade Windows Holographic

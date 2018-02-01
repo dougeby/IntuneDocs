@@ -24,7 +24,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Window Holographic with Microsoft Intune
+# Manage devices running Window Holographic with Microsoft Intune
 
 
 Microsoft Intune supports devices running Window Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
