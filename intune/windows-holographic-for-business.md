@@ -1,13 +1,13 @@
 ---
 # required metadata[](holographic-upgrade.md)
-title: Microsoft Intune supports devices running Window Holographic for Business
+title: Manage Windows Holographic with Microsoft Intune
 titleSuffix: "Azure portal"
-description: Learn how Microsoft Intune supports devices running Window Holographic for Business
+description: Learn how Microsoft Intune supports devices running Windows Holographic for Business
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 2/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,12 +24,12 @@ ms.custom: intune-azure
 
 ---
 
-# Window Holographic for Business support
+# Manage devices running Windows Holographic with Microsoft Intune
 
 
-Microsoft Intune supports devices running Window Holographic for Business, such as the [Microsoft Hololens](https://docs.microsoft.com/en-us/hololens/).
+Microsoft Intune supports devices running Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
-To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile to upgrade the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft Hololens, you can purchase the Commercial Suite to obtain the required license for the upgrade.
+To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile to upgrade the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can purchase the Commercial Suite to obtain the required license for the upgrade.
 
 For more information, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md).
 
