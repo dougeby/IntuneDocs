@@ -37,6 +37,8 @@ For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set
 2. Assign the profile to a group containing all users of iOS devices.
 3. Users find the new Contoso Wi-Fi network in the list of wireless networks on their device and can easily connect to it.
 
+## Supported device platforms
+
 Wi-Fi profiles support the following device platforms:
 
 - Android 4 and later
@@ -77,4 +79,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 1. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile is created and appears on the profiles list blade.
+
+## Next steps
+
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
