@@ -117,7 +117,7 @@ You can use compliance policy with conditional access to allow only devices that
 ### Without conditional access
 You can also use device compliance policies independently of conditional access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted. But when you use compliance policies independently, no access restrictions to company resources are in place.
 
-You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles in Microsoft Intune](device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 ##  Using device compliance policies in the Intune classic portal vs. Azure portal
 
