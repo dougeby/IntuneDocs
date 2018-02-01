@@ -133,7 +133,7 @@ After you add the apps you want to protect with WIP, you need to apply a protect
 
 WIP Learning is a report that allows you to monitor your WIP-enabled apps and WIP-unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. You can export these apps from the report and add them to your WIP policies to avoid productivity disruption before they enforce WIP in “Block” mode.
 
-<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
 
 When working with WIP-enabled apps and WIP-unknown apps, we recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
