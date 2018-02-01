@@ -55,6 +55,9 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 
 ## Add Android for Work binding for Intune
 
+> [!NOTE]
+> Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings in order to successfully complete.  Please ensure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.
+
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
 2. **Configure Android for Work binding**<br>
