@@ -4,10 +4,10 @@
 title: Microsoft Intune App SDK Cordova Plugin 
 description:
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,12 +28,15 @@ ms.custom: intune-classic
 ---
 # Microsoft Intune App SDK Cordova Plugin
 
-> [!NOTE]
-> You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
+> [!IMPORTANT]
+> Intune is ending support for the Microsoft Intune App SDK Cordova Plugin on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead. For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For more information about this change, see the [Notices](whats-new.md#notices) section of [What's new in Microsoft Intune](whats-new.md).
 
 ## Overview
 
 The [Intune App SDK Cordova Plugin](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Cordova. The plugin allows developers to integrate Intune app and data protection features into their Cordova-based app.
+
+> [!NOTE]
+> You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 You will find that you can enable SDK features without changing your app's behavior. Once you have built the plugin into your iOS or Android app, the Microsoft Intune administrator will be able to deploy Intune app protection policy, which consists of a variety of data protection features. The plugin is built so that most of the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for Intune app protection quickly. To get started, follow the steps below based on your target platform.
 
