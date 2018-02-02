@@ -78,9 +78,9 @@ If you are looking for information about other platforms, select one of the foll
 - **Minimum Android security patch level**: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
 - **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the device threat protection solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
 
-  - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as non-compliant.
-  - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
-  - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as non-compliant.
+  - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+  - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as noncompliant.
   - **High:** This is the least secure. Essentially, this allows all threat levels, and perhaps only useful if you using this solution only for reporting purposes.
 
   For more details, see [Create device compliance policy](create-lookout-device-compliance-policy.md).

@@ -42,7 +42,7 @@ ms.custom: intune-classic
 |App reporting|Lets you [review historical data](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) about app deployment status and activity.|
 |App SDK|The [Microsoft Intune App SDK](/intune/app-sdk) lets you add functionality to your in-house written apps that enables them to be managed by Intune mobile application management policies.|
 |App uninstall action|Lets you [uninstall apps](/intune-classic/deploy-use/deploy-apps) from user's devices.|
-|App Wrapping Tool|A [command line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line of business app, which then allows the app to be managed by an Intune mobile application management policy.|
+|App Wrapping Tool|A [command line application](/intune/apps-prepare-mobile-application-management) that creates a wrapper around a line-of-business app, which then allows the app to be managed by an Intune mobile application management policy.|
 |Available install|When you deploy an app with this action, it is displayed in the company portal, and users can [install it on demand](/intune-classic/deploy-use/deploy-apps).|
 |Azure Portal|The new console for Intune which will be introduced soon. [Read more about the new portal](/intune/what-is-intune).|
 

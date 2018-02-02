@@ -102,7 +102,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
    In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
-**Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In Intune in the Azure portal, provide the Apple ID for future reference. Use this ID to renew your enrollment program token in the future to avoid needing to re-enroll all your devices.
+**Step 3. Enter the Apple ID used to create your enrollment program token.**<br>In Intune in the Azure portal, provide the Apple ID for future reference.
 
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
 

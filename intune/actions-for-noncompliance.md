@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Automate actions for noncompliance
 
-The **actions for non-compliance** allow you to configure a time-ordered sequence of actions that are applied to devices that don't meet the compliance policy criteria. By default, when a device is detected to not meet the compliance policy criteria, Intune immediately marks it as non compliant, then Azure AD Conditional Access blocks the device. The **actions for non-compliance** give you more flexibility to decide what to do when a device is not compliant. For example, you can decide to not block the device immediately, then give the user a grace period to be compliant.
+The **actions for noncompliance** allow you to configure a time-ordered sequence of actions that are applied to devices that don't meet the compliance policy criteria. By default, when a device is detected to not meet the compliance policy criteria, Intune immediately marks it as non compliant, then Azure AD Conditional Access blocks the device. The **actions for noncompliance** give you more flexibility to decide what to do when a device is not compliant. For example, you can decide to not block the device immediately, then give the user a grace period to be compliant.
 
 There are two types of actions:
 
@@ -87,10 +87,10 @@ Additionally, you need to have a notification message template created. The noti
 
 Once you're done adding the information, choose **Create**. The Notification message template is available for use.
 
-> [!NOTE] 
+> [!NOTE]
 > You can also edit a Notification template previously created.
 
-## To create actions for non-compliance
+## To create actions for noncompliance
 
 > [!TIP]
 > By default, Intune provides one action pre-defined in the actions for noncompliance section. The action marks the device as not compliant after it is detected to not meet your device compliance policy criteria. You can customize how long after the detection the device gets marked as not compliant. The action cannot be removed.
@@ -109,4 +109,3 @@ You can add an action when you create a new device compliance policy or when you
 
 ## Next steps
 You can monitor the device compliance activity by running the reports available in the device compliance blade. For details, see [How to monitor device compliance with Intune](device-compliance-monitor.md).
-

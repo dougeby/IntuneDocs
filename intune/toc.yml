@@ -319,6 +319,8 @@
         href: device-restrictions-windows-10.md
       - name: Windows 10 Team
         href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
     - name: Configure email settings
@@ -549,6 +551,11 @@
     - name: Resolve policy conflicts
       href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
       maintainContext: true
+  - name: Manage Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: Upgrade Windows Holographic
+      href: holographic-upgrade.md
   - name: Educate users
     href: end-user-educate.md
     items:
@@ -594,6 +601,8 @@
         href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
+      - name: Windows Holographic for Business
+        href: custom-settings-windows-holographic.md
       - name: Android for Work
         href: custom-settings-android-for-work.md
     - name: Sideload Windows line-of-business apps

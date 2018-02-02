@@ -31,13 +31,13 @@ ms.custom: intune-azure
 
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Check Point SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Check Point SandBlast Mobile app.
 
-You can configure conditional access policies based on Check Point SandBlast Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+You can configure conditional access policies based on Check Point SandBlast Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 ## How do Intune and Check Point SandBlast Mobile help protect your company resources?
 
 Check Point Sandblast Mobile app for Android and iOS captures file system, network stack, device and application telemetry where available, then sends the telemetry data to the Check Point SandBlast cloud service to assess the device's risk for mobile threats.
 
-The Intune device compliance policy includes a rule for Check Point SandBlast Mobile Threat Defense, which is based on the Check Point SandBlast risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found non-compliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Check Point SandBlast mobile app installed in their devices to resolve the issue and regain access to corporate resources.
+The Intune device compliance policy includes a rule for Check Point SandBlast Mobile Threat Defense, which is based on the Check Point SandBlast risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found noncompliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Check Point SandBlast mobile app installed in their devices to resolve the issue and regain access to corporate resources.
 
 <!-- ## Sample scenarios
 

@@ -119,7 +119,7 @@ In the **Error Management** option, enter the email address that should receive 
 ![screenshot of the Intune connector error management page](./media/lookout-mtp-connector-error-notifications.png)
 
 ## Configure enrollment settings
-In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as non-compliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
 
 ![Lookout enrollment settings](./media/lookout-console-enrollment-settings.png)
 
@@ -135,7 +135,7 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 ![screenshot of the policy page showing threat and classifications](./media/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Risk levels are an important aspect of Mobile Threat Defense because the Intune integration calculates device compliance according to these risk levels at runtime. The Intune administrator sets a rule in policy to identify a device as non-compliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Threat Defense directly drives the device compliance calculation in Intune.
+> Risk levels are an important aspect of Mobile Threat Defense because the Intune integration calculates device compliance according to these risk levels at runtime. The Intune administrator sets a rule in policy to identify a device as noncompliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Threat Defense directly drives the device compliance calculation in Intune.
 
 ## Watching enrollment
 Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) topic.

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,15 +46,23 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of January 29, 2018
+
+### Intune apps 
+
+#### New functionality for the "Resolve" action for Android devices <!--1583480-->
+
+The Company Portal app for Android is expanding the "Resolve" action for **Update device settings** to resolve [device encryption issues](/intune-user-help/encrypt-your-device-android).
+
 ## Week of January 22, 2018
 
-### Intune Apps
+### Intune apps
 
 #### Remote lock available in Company Portal app for Windows 10 <!--676506-->
 End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
 
 #### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
-End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
+End users with Windows devices will be able to tap the noncompliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ## Week of December 11, 2017
 
@@ -605,7 +613,7 @@ To learn which devices are affected in your tenant, choose **Manage > All device
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 ##### How integration with Intune works
-Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 #### New settings for Windows 10 device restriction profile  <!--- 978575, 1308849, -->  
 We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
@@ -706,7 +714,7 @@ The Company Portal app for Android often requires the end user to accept the Con
 
 #### Secure startup remediation for Android <!--1490712-->
 
-End users with Android devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
+End users with Android devices will be able to tap the noncompliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue. 
 
 #### Additional push notifications for end users on the Company Portal app for Android Oreo <!--1475932-->
 
