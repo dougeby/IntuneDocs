@@ -77,8 +77,8 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 
 1. Create a two-column, comma-separated value (.csv) list without a header. Add the serial number in the left column, and the details in the right column. The current maximum for the list is 5,000 rows. In a text editor, the .csv list looks like this:
 
-	F7TLWCLBX196,device details</br>
-	DLXQPCWVGHMJ,device details
+  F7TLWCLBX196,device details</br>
+  DLXQPCWVGHMJ,device details
 
    Learn [how to find an iOS device serial number](https://support.apple.com/HT204073).
 2. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
@@ -170,3 +170,5 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 7. On the iOS device, open **Settings** and go to **General** > **Device Management** > **Management Profile**. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
 
 8. Distribute devices. The iOS device is now enrolled in Intune and managed.
+
+
