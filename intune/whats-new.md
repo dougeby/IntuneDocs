@@ -46,7 +46,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
-
 ## Week of January 29, 2018
 
 ### Device enrollment
@@ -67,7 +66,7 @@ The erase command removes all data, including the operating system, from a devic
 
 You must configure a 6-digit recovery PIN. This PIN can be used to unlock the erased device, at which point reinstallation of the operating system will begin. After erasure has started, the PIN appears in a status bar on the device’s overview blade in Intune. The PIN will remain as long as the erasure is underway. After erasure is complete, the device disappears entirely from Intune management. Be sure to record the recovery PIN so that whoever is restoring the device can use it.
 
-### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 --> 
+#### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 --> 
 You can revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
 
 ### App management
@@ -110,15 +109,20 @@ Starting with this release, you must configure and manage your Conditional Acces
 
 When an email is sent to report a noncompliant device, details about the noncompliant device are included. 
 
+
 ## Week of January 22, 2018
 
-### Intune Apps
+### Intune apps
+
+#### New functionality for the "Resolve" action for Android devices <!--1583480-->
+
+The Company Portal app for Android is expanding the "Resolve" action for **Update device settings** to resolve [device encryption issues](/intune-user-help/encrypt-your-device-android).
 
 #### Remote lock available in Company Portal app for Windows 10 <!--676506-->
 End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
 
 #### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
-End users with Windows devices will be able to tap the non-compliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
+End users with Windows devices will be able to tap the noncompliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ## Week of December 11, 2017
 
@@ -579,9 +583,6 @@ We've improved the device setup workflow in the Company Portal app for iOS. The 
 
 #### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** is populated with the latest user data.
-
-
-
 
 
 ## Notices

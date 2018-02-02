@@ -362,7 +362,7 @@ A new policy is available from the Software updates workspace where you can for
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
 
 #### How integration with Intune works?
-Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block non-compliant devices access to corporate resources based on detected threats.
+Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block noncompliant devices access to corporate resources based on detected threats.
 
 
 ### Deploy an app as available in the Microsoft Store for Business <!-- 748101 -->

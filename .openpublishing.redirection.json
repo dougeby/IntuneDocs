@@ -7,6 +7,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-user-help/you-need-to-upgrade-your-device-to-install-the-outlook-app.md",
+			"redirect_url": "/intune-user-help/update-device-outlook-ios",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/skycure-azure-sso-configure.md",
 			"redirect_url": "/intune/skycure-mtd-connector-integration",
 			"redirect_document_id": false

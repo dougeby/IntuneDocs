@@ -31,13 +31,13 @@ ms.custom: intune-azure
 
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Zimperium app.
 
-You can configure conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+You can configure conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 ## How do Intune and Zimperium help protect your company resources?
 
 Zimperium app for Android and iOS captures file system, network stack, device and application telemetry where available, then sends the telemetry data to the Zimperium cloud service to assess the device's risk for mobile threats.
 
-The Intune device compliance policy includes a rule for Zimperium Mobile Threat Defense, which is based on the Zimperium risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found non-compliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Zimperium app installed in their devices to resolve the issue and regain access to corporate resources.
+The Intune device compliance policy includes a rule for Zimperium Mobile Threat Defense, which is based on the Zimperium risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found noncompliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Zimperium app installed in their devices to resolve the issue and regain access to corporate resources.
 
 ## Sample scenarios
 

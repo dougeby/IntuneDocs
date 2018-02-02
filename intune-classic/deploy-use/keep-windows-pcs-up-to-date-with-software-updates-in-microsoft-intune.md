@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software updates for Windows PCs 
-description: Intune helps you to keep your managed computers up to date by ensuring the latest patches and software updates are quickly installed.
+description: Intune helps you to keep your managed computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 keywords:
 author: arob98
 ms.author: angrobe
@@ -25,11 +25,11 @@ ms.custom: intune-classic
 
 ---
 
-# Keep Windows PCs up to date with software updates in Microsoft Intune
+# Keep Windows PCs up-to-date with software updates in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up to date by ensuring the latest patches and software updates are quickly installed.
+Microsoft Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 
 If you have not yet installed the Intune client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -40,7 +40,7 @@ When new updates are available from Microsoft Update, or you have created a thir
 
 As updates are approved and installed, you can examine the success or failure of the installation in the **Updates** workspace of the Intune console.
 
-The following sections will help you to keep software up to date on your managed computers.
+The following sections will help you to keep software up-to-date on your managed computers.
 
 ## Before you start
 Before you begin to create and approve software updates, configure and deploy polices to your computers that control when and how the updates are installed.
