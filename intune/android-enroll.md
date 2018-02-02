@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,6 +54,9 @@ To enable management of the work profile on devices that [support Android for Wo
 If you're enrolling Android for Work devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
 ## Add Android for Work binding for Intune
+
+> [!NOTE]
+> Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings in order to successfully complete.  Please ensure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.
 
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
