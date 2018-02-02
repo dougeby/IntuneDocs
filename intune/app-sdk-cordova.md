@@ -74,7 +74,7 @@ Cordova apps built with the Intune App SDK Cordova Plugin can now receive Intune
 
 
 
-## Quick start
+## Quickstart
 
 1. Update your version of ADAL:
 
