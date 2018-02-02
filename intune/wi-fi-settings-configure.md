@@ -37,6 +37,8 @@ For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set
 2. Assign the profile to a group containing all users of iOS devices.
 3. Users find the new Contoso Wi-Fi network in the list of wireless networks on their device and can easily connect to it.
 
+## Supported device platforms
+
 Wi-Fi profiles support the following device platforms:
 
 - Android 4 and later
@@ -64,7 +66,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- **Windows 8.1 and later (import a profile)**
 
    > [!IMPORTANT]
-   > If you are creating a profile for devices running Windows 10 or Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
+   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
 
 6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
 
@@ -77,4 +79,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 1. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile is created and appears on the profiles list blade.
+
+## Next steps
+
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
