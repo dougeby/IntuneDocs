@@ -105,9 +105,9 @@ You need to have the following subscriptions to use device compliance policies w
 
 ## How Intune device compliance policies work with Azure AD
 
-When a device is enrolled into Intune, the Azure AD registration process happens, which updates the device atributes with more information into Azure AD. One of the key device information is the device compliance status, which is used by conditional access policies to block or allow access to e-mail and other corporate resources.
+When a device is enrolled into Intune, the device follows the Azure AD registration process, which updates the device attributes providing more information to Azure AD. One of the key device details is the device compliance status, which is used by conditional access policies to block or allow access to e-mail and other corporate resources.
 
-- Learn more about [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
+- Learn more about [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
 
 ##  Ways to use device compliance policies
 
