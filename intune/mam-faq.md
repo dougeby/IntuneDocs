@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 01/26/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,12 +34,12 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What is MAM?** [Intune mobile application management](/intune/app-lifecycle) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
-**What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-managed apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
+**What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM without enrollment (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-managed apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What device configurations does MAM support?** Intune MAM supports two configurations:
   1. **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Azure portal at https://portal.azure.com.
 
-  2. **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at http://portal.azure.com.
+  2. **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at http://portal.azure.com. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all.
 
 
 ## App protection policies
@@ -50,7 +50,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 ## Apps you can manage with app protection policies
 
-**Which apps can be managed by app protection policies?** Any app that has been managed by the [Intune App SDK](/intune/app-sdk) or wrapped by the [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) can be managed using Intune app protection policies. See the official list of [Intune-managed apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
+**Which apps can be managed by app protection policies?** Any app that has been integrated with the [Intune App SDK](/intune/app-sdk) or wrapped by the [Intune App Wrapping Tool](/intune/apps-prepare-mobile-application-management) can be managed using Intune app protection policies. See the official list of [Intune-managed apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What are the baseline requirements to use app protection policies on an Intune-managed app?**
   1. The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](/intune/users-permissions-add) to learn how to create Intune users in Azure Active Directory.
@@ -130,7 +130,7 @@ This article provides answers to some frequently asked questions on Intune mobil
   >[!NOTE]
   > Factory reset can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
-  2. **What is selective wipe for MDM?** See [Remove company data](devices-wipe.md#remove-company-data)(devices-wipe.md#remove-company-data) to read about removing company data.
+  2. **What is selective wipe for MDM?** See [Remove devices - Remove company data](devices-wipe.md#remove-company-data) to read about removing company data.
 
   3. **What is selective wipe for MAM?** Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
