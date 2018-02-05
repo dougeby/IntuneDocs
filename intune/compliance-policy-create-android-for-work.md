@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for WorktitleSuffix: "Azure portal"
+title: Create compliance policy for Android for Work
+titleSuffix: "Azure portal"
 description: Learn how to create a compliance policy for Android for Work devices."
 keywords:
 author: andredm7
@@ -114,8 +115,6 @@ You have applied the policy to users.  The devices used by the users who are tar
   - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as noncompliant.
   - **High:** This is the least secure. Essentially, this allows all threat levels, and perhaps only useful if you using this solution only for reporting purposes.
-
-For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## Device property settings
 

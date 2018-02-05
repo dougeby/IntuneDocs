@@ -1,10 +1,13 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for AndroidtitleSuffix: "Azure portal"
+title: How to create a compliance policy for Android
+titleSuffix: "Azure portal"
 description: Learn how to create a compliance policy for Android devices."
 keywords:
-author: andredm7ms.author: andredmmanager: dougeby
+author: andredm7
+ms.author: andredm
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
@@ -75,8 +78,6 @@ Side-loading applications require that the **Unknown sources** setting is enable
   - **Low** : The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
   - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
-
-For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## System security settings
 
