@@ -54,7 +54,7 @@ Device compliance policies are created for each platform form the Intune Azure p
 
 To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policies** blade.
 
-1. Choose the policy and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
+1. Choose the policy and choose **Assignments**. You can then select **Azure Active Directory security groups** and assign the groups to the policy.
 2. Choose **Select groups** to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this policy to apply to and choose **Select**. Choosing **Select**  deploys the policy to users.
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
@@ -74,16 +74,16 @@ Side-loading applications require that the **Unknown sources** setting is enable
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
 - **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level. Devices that are not at least at this patch level will be noncompliant. The date must be specified in the format YYYY-MM-DD.
 - **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
-  - **None (secured)**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+  - **None (secured)**: This threat level is the most secure. It means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High**: This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
+  - **High**: This threat level is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
 
 ## System security settings
 
 ### Password
 
-- **Require a password to unlock mobile devices**: Set this to **Yes** to require users to enter a password before they can access their device.
+- **Require a password to unlock mobile devices**: Select **Yes** to require users to enter a password before they can access their device.
 - **Minimum password length**: Specify the minimum number of digits or characters that the user&#39;s password must have.
 - **Password quality**: This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
   - **Low security biometric**
@@ -100,7 +100,7 @@ Side-loading applications require that the **Unknown sources** setting is enable
 
 ### Encryption
 
-- **Require encryption on mobile device**: Set this to **Yes** to require devices to be encrypted in order to connect to resources. Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.
+- **Require encryption on mobile device**: Select **Yes** to require devices to be encrypted in order to connect to resources. Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.
 
 ## Device property settings
 
