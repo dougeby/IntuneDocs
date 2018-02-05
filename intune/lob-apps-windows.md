@@ -70,7 +70,7 @@ ms.custom: intune-azure
 1. On the **Add app** blade, verify you configured the app information correctly.
 2. Choose **Add**, to upload the app to Intune.
 
-## Step 5 - Update a line of business app
+## Step 5 - Update a line-of-business app
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

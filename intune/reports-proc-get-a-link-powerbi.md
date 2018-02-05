@@ -45,7 +45,7 @@ The following steps show you how to download the Power BI file and how to use th
 
 ## Install Power BI
 
-Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
+Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## Load the data and reports using the Power BI file (pbix)
 

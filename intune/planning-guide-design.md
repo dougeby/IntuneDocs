@@ -143,11 +143,11 @@ Identity is how we identify the users who belong to your organization and are en
 
 Learn more about the following Intune identity requirements:
 
-- [Identity requirements](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
+- [Identity requirements](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions).
 
-- [Directory synchronization requirements](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
+- [Directory synchronization requirements](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-- [Multi-factor authentication requirements](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+- [Multi-factor authentication requirements](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### User and device groups
 
@@ -387,9 +387,9 @@ App protection policies minimize data loss by defining how the application manag
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your app protection policy needs.
 #### Compliance policies
 
-Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or non-compliant. The compliance status can then be used to restrict or allow access to company resources. If conditional access is required, we recommend that you design a [device compliance policy](device-compliance.md).
+Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or noncompliant. The compliance status can then be used to restrict or allow access to company resources. If conditional access is required, we recommend that you design a [device compliance policy](device-compliance.md).
 
-Refer to requirements and use cases to determine how many device compliance policies you need and which user groups are the target user groups. Additionally, you need to decide how long a device can be offline without checking in before it’s considered non-compliant.
+Refer to requirements and use cases to determine how many device compliance policies you need and which user groups are the target user groups. Additionally, you need to decide how long a device can be offline without checking in before it’s considered noncompliant.
 
 Below is an example of how to design a compliance policy:
 
@@ -413,7 +413,7 @@ Here’s an example of how to document conditional access policies:
 
 | **Service** | **Platforms for Modern Authentication** | **Basic Authentication** | **Use cases** |   
 |:---:|:---:|:---:|:---:|
-| Exchange online | iOS, Android | Block non-compliant devices on platforms supported by Intune | Corporate, BYOD |
+| Exchange online | iOS, Android | Block noncompliant devices on platforms supported by Intune | Corporate, BYOD |
 | SharePoint online | iOS, Android |  | Corporate, BYOD |
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your conditional access policy needs.

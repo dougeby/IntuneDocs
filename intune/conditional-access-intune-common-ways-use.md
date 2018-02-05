@@ -59,7 +59,7 @@ You can configure advanced settings in conditional access for more granular cont
 
 Any device used to access Exchange on-premises is checked for compliance when device compliance and conditional access policies are applied.
 
-When devices do not meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device non-compliant.
+When devices do not meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device noncompliant.
 
 #### How conditional access for Exchange on-premises works
 
