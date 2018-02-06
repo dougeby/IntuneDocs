@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -171,6 +171,10 @@ You can also use device compliance policies independently of conditional access.
 
 You deploy compliance policy to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance. To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see Manage settings and features on your devices.
 
+#### Actions for non-compliance
+
+The actions for noncompliance allow you to configure a time-ordered sequence of actions that are applied to devices that don't meet the compliance policy criteria. For more information, see [Automate actions for noncompliance](actions-for-noncompliance.md).
+
 ##  Using device compliance policies in the Intune classic portal vs. Azure portal
 
 Note the main differences to help you transition to the new device compliance policy work-flow in the Azure portal.
@@ -190,10 +194,12 @@ If you want to take advantage of the new device compliance-related features in t
 
 ##  Next steps
 
-Create a device compliance policy for the following platforms:
+- Create a device compliance policy for the following platforms:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- For information about the Intune Data Warehouse policy entities, see [Reference for policy entities](reports-ref-policy.md).
