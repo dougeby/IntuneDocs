@@ -68,6 +68,8 @@
       href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
+  - name: MAM FAQ
+    href: mam-faq.md    
 - name: Plan deployment
   items:
   - name: Planning guide
