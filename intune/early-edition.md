@@ -45,6 +45,10 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1802 start -->
 
+### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
+
+On the Enrollment Overview page, you can view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you can drill into details to find troubleshooting advice and remediation suggestions.
+
 ### Prevent end users from adding or removing accounts in the work profile <!-- 1728700 -->    
 When you deploy the Gmail app into an Android for Work profile, you will be able to prevent end users from adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
 
