@@ -1378,9 +1378,9 @@ public interface MAMAppConfig {
 App config adds a new notification type:
 * **REFRESH_APP_CONFIG**: This notification is sent in a `MAMUserNotification` and informs the app that new app config data is available.
 
-For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android).
+For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
 ## Style Customization (optional)
 
@@ -1433,7 +1433,7 @@ The following is guidance for requiring user prompt on app launch for an automat
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
-1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > The term "client id" tied to your app is the same as the term "application id" from the Azure Portal. 
 * To enable SSO, "Common ADAL configuration" #2 is what is needed.
@@ -1502,7 +1502,7 @@ The Intune SDK maintains the contract provided by the Android API, though failur
 The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs telemetry data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII).
 
 > [!NOTE]
-> If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+> If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## Recommended Android best practices
 

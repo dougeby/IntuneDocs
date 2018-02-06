@@ -105,18 +105,18 @@ To enable the Intune App SDK, follow these steps:
 
 	![Intune App SDK iOS: copy bundle resources](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-	Add these iOS frameworks to the project:
-    		* MessageUI.framework
-    		* Security.framework
-    		* MobileCoreServices.framework
-    		* SystemConfiguration.framework
-    		* libsqlite3.tbd
-    		* libc++.tbd
-    		* ImageIO.framework
-    		* LocalAuthentication.framework
-    		* AudioToolbox.framework
-    		* QuartzCore.framework
-    		* WebKit.framework
+	Add these iOS frameworks to the project:  
+    		* MessageUI.framework  
+    		* Security.framework  
+    		* MobileCoreServices.framework  
+    		* SystemConfiguration.framework  
+    		* libsqlite3.tbd  
+    		* libc++.tbd  
+    		* ImageIO.framework  
+    		* LocalAuthentication.framework  
+    		* AudioToolbox.framework  
+    		* QuartzCore.framework  
+    		* WebKit.framework  
 
 3. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
@@ -476,9 +476,9 @@ MAM targeted configuration allows an app to receive configuration data through t
 * Call ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` to get the App Config Object.
 * Call the appropriate selector on ```IntuneMAMAppConfig``` object. For example, if your application's key is a string, you'd want to use ```stringValueForKey``` or ```allStringsForKey```. The ```IntuneMAMAppConfig.h header``` file talks about return values/error conditions.
 
-For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-For more information about how to create a MAM targeted app configuration policy in iOS, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+For more information about how to create a MAM targeted app configuration policy in iOS, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 
 ## Telemetry
 

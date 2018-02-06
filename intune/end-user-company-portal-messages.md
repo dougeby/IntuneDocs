@@ -100,7 +100,7 @@ The second time that users sign in to the Company Portal app after denying acces
 
 
 ### How to explain this to your users
-Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). You can also send them to [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) if you want to let them compare the two methods.
+Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). 
 
 ## Your company support needs to give you access to company resources
 
