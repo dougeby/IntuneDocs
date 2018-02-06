@@ -70,7 +70,7 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 
 ## UserConfiguration
 
-The **DeviceConfigurationProfileUserActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state while the other is in an error state, we count the user in the error state.  The **DeviceConfigurationProfileUserActivity** entity lists how many users are in which state on a given day over the last 30 days.
+The **DeviceConfigurationProfileUserActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted.  The **DeviceConfigurationProfileUserActivity** entity lists how many users are in which state on a given day over the last 30 days.
 
 | Property  | Description | Example |
 |---------|------------|--------|
