@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-##  Temporary user interface differences
+###  Temporary user interface differences
 
 The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
 

@@ -13,7 +13,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
+ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 
 # optional metadata
 
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## Temporary user interface differences
+### Temporary user interface differences
 
 The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
 
