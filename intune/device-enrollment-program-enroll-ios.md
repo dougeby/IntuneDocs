@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,6 +41,7 @@ If your **Device enrollment** page looks like the image below, your account has 
 If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this other help page](device-enrollment-program-enroll-ios-newui.md).
 ![New user interface](./media/appleenroll-newui.png)
 
+## iOS device enrollment
 
 This topic helps you enable iOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
