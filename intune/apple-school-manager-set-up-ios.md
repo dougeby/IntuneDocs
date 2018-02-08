@@ -31,15 +31,18 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-###  Temporary user interface differences
-
-The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
-
-If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
-![Old user interface](./media/appleenroll-oldui.png)
-
-If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this help page](apple-school-manager-set-up-ios-newui.md).
-![New user interface](./media/appleenroll-newui.png)
+> [!NOTE]
+> ### Temporary user interface differences
+>
+>The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
+>
+>If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
+>
+>![Old user interface](./media/appleenroll-oldui.png)
+>
+>If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this help page](apple-school-manager-set-up-ios-newui.md).
+>
+>![New user interface](./media/appleenroll-newui.png)
 
 
 
