@@ -73,7 +73,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
 
-4.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
+4.	In the command line as an administrator, run `mono Xamarin.Component.exe install <.xam> file`.
 
 5.	In Visual Studio, right-click **components** in your previously created Xamarin project.
 
