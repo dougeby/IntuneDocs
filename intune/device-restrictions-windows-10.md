@@ -274,7 +274,7 @@ You can add apps that should have a different privacy behavior from what you def
 
       - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
+    [Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
 
     Multi-app kiosk configurations include the following settings:
 
