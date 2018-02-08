@@ -46,6 +46,32 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of February 5, 2018
+
+### Device enrollment
+
+#### New option for user authentication for Apple bulk enrollment <!-- 747625 eeready -->
+
+> [!NOTE]
+> New tenants will see this right away. For existing tenants, this feature is being rolled out through April. Until this roll out is complete, you might not have access to these new features.
+
+Intune now gives you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
+
+- Apple Device Enrollment Program
+- Apple School Manager
+- Apple Configurator Enrollment
+
+When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
+
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+
+#### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 eeready -->
+
+Intune now supports enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+
+After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
+
+
 ## Week of January 29, 2018
 
 ### Device enrollment
