@@ -80,6 +80,7 @@ Windows devices are currently not supported. However, when you enroll Windows 10
 
 When apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
 
+
 ### Data protection with app protection policies
 
 ![Image that shows how company data is protect when App protection policies are applied ](./media/apps-with-protection-policies.png)
@@ -142,3 +143,6 @@ For example, when a user starts the OneDrive app by using their work account, th
 ##  Next steps
 
 [How to create and deploy app protection policies with Microsoft Intune](app-protection-policies.md)
+
+## See also
+3rd party apps such as the Salesforce mobile app work with Intune in specific ways to protect corporate data. To learn more about how the Salesforce app in particular works with Intune (including MDM app configurations settings), see [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).
