@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Intune Data Warehouse application-only authentication
 
-You can set up an application using Azure Active Directory (Azure AD) and authenticate to the Intune Data Warehouse. This process is useful for websites, apps, and background processes where the application should not have access to user credentials. Using the below steps, you will authorize your application with Azure AD using OAuth 2.0.
+You can set up an application using Azure Active Directory (Azure AD) and authenticate to the Intune Data Warehouse. This process is useful for websites, apps, and background processes where the application should not have access to user credentials. Using the following steps, you authorize your application with Azure AD using OAuth 2.0.
 
 ## Authorization
 
@@ -38,11 +38,11 @@ Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize acce
 
 ## Azure KeyVault
 
-The below process uses a private method to process and convert an app key. This private method has been named SecureString. As an alternative, you could use Azure KeyVault to store the app key. For more information, see [Key Vault](https://azure.microsoft.com/services/key-vault/).
+The following process uses a private method to process and convert an app key. This private method has been named SecureString. As an alternative, you could use Azure KeyVault to store the app key. For more information, see [Key Vault](https://azure.microsoft.com/services/key-vault/).
 
 ## Create a Web App
 
-In this section, you will provide details about the Web app you would like Intune to point to. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. This type of app is separately maintained on the Web. You use Intune to grant a web app access to Intune. The data flow is initiated by the web app. 
+In this section, you provide details about the Web app you would like Intune to point to. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. This type of app is separately maintained on the Web. You use Intune to grant a web app access to Intune. The data flow is initiated by the web app. 
 
 1.	Sign in to the [Azure portal](https://portal.azure.com).
 2.	Using **Search resources, services and docs** field near the top of the Azure portal, search for **Azure Active Directory**.
@@ -53,7 +53,7 @@ In this section, you will provide details about the Web app you would like Intun
 
     - An app name, such as *Intune App-Only Auth*.
     - The **Application type**. Choose **Web app / API** to add an app that represents a web application, a web API, or both.
-    - The **Sign-on URL** of the application. This is the location users will automatically navigate to during the authentication process. They will be required to prove that they are who they say they are. For more information, see What is application access and single sign-on with Azure Active Directory?.
+    - The **Sign-on URL** of the application. This is the location users automatically navigate to during the authentication process. They are required to prove that they are who they say they are. For more information, see [What is application access and single sign-on with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
 
 7.	Click **Create** at the bottom of the **Create** blade.
 
@@ -61,7 +61,7 @@ In this section, you will provide details about the Web app you would like Intun
 
 ## Create a key
 
-In this section, you will have Azure AD generate a key value for your app.
+In this section, Azure AD generates a key value for your app.
 
 1.	On the **App registrations** blade, select your newly created app to display the app blade.
 2.	Select **Settings** near the top of the blade to display the **Settings** blade.
@@ -70,16 +70,16 @@ In this section, you will have Azure AD generate a key value for your app.
 5.	Click **Save** to save and update the application's keys.
 6.	You must copy the generated key value (base64 encoded).
 
-    [!NOTE] The key value will disappear after you leave the **keys** blade. You won't be able to retrieve the key from this blade later. Copy it to use later.
+    [!NOTE] The key value disappears after you leave the **keys** blade. You cannot retrieve the key from this blade later. Copy it to use later.
 
 ## Grant application permissions
 
-In this section, you will grant permissions to the applications.
+In this section, you grant permissions to the applications.
 
 1.	Select **Required permissions** on the **Settings** blade.
 2.	Click **Add**.
 3.	Select **Add an API** to display the **Select an API** blade.
-4.	Select **Microsoft Intune API (MicrosoftIntuneAPI)** and then click **Select** from the **Select an API** blade. The **Select permissions** step will be selected and the **Enable Access** blade will be displayed.
+4.	Select **Microsoft Intune API (MicrosoftIntuneAPI)** and then click **Select** from the **Select an API** blade. The **Select permissions** step is selected and the **Enable Access** blade is displayed.
 5.	Choose the **Get data warehouse information from Microsoft Intune** option from the **Application Permissions** section.
 6.	Click **Select** from the **Enable Access** blade.
 7.	Click **Done** from the **Add API access** blade.
@@ -95,7 +95,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 4.	In **Solution Explorer**, select **Program.cs** to display the code.
 5.	In the pop-up menu, select **Add** > **New item**. The **Add New Item** dialog box is displayed.
 6.	On the left, under **Visual C#**, select **Code**.
-7.	Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs* and click **Add**.
+7.	Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs*, and click **Add**.
 8.	Add the following code within the <code>Main</code> method:
 
     ``` csharp
@@ -156,7 +156,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
     </configuration>
     ``` 
 
-15.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app related values.
+15.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
 16.	Build your app.
 
     [!NOTE] To see additional implementation code, see Intune-Data-Warehouse code example.
