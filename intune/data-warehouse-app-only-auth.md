@@ -57,7 +57,8 @@ In this section, you provide details about the Web app you would like Intune to 
 
 7.	Click **Create** at the bottom of the **Create** blade.
 
-    [!NOTE] Copy the **Application ID** from the **Registered app** blade to use later.
+    >[!NOTE] 
+    > Copy the **Application ID** from the **Registered app** blade to use later.
 
 ## Create a key
 
@@ -70,7 +71,8 @@ In this section, Azure AD generates a key value for your app.
 5.	Click **Save** to save and update the application's keys.
 6.	You must copy the generated key value (base64 encoded).
 
-    [!NOTE] The key value disappears after you leave the **keys** blade. You cannot retrieve the key from this blade later. Copy it to use later.
+    >[!NOTE] 
+    > The key value disappears after you leave the **keys** blade. You cannot retrieve the key from this blade later. Copy it to use later.
 
 ## Grant application permissions
 
@@ -159,7 +161,8 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 15.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
 16.	Build your app.
 
-    [!NOTE] To see additional implementation code, see Intune-Data-Warehouse code example.
+    >[!NOTE] 
+    > To see additional implementation code, see Intune-Data-Warehouse code example.
 
 ## Next Steps
 Learn more about Azure Key Vault by reviewing [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
