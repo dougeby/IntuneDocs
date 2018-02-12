@@ -7,7 +7,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,7 +55,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2.  On the Intune blade, choose **Endpoint Protection**, and then choose **Manage** > **Windows Hello for Business**.
+2.  On the Intune blade, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
 
 3.  On the blade that opens, choose the **Default** settings.
 
