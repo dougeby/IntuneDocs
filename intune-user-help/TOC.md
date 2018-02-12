@@ -150,3 +150,4 @@
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
+### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
