@@ -71,6 +71,8 @@ Intune now supports enrolling devices from up to 100 different Apple Device Enro
 
 After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
 
+### Remote printing over a secure network <!-- 1709994  -->
+PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
 
 ## Week of January 29, 2018
 
