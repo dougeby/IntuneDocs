@@ -651,6 +651,8 @@
       href: reports-proc-data-rest.md
     - name: Data Warehouse API endpoint
       href: reports-api-url.md
+    - name: Data Warehouse application-only authentication
+      href: data-warehouse-app-only-auth.md      
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
