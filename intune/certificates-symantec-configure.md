@@ -37,7 +37,7 @@ The Symantec PKI Manager Web Service is referred as Symantec CA throughout this 
 * SCEP Certificates from a Microsoft CA
 * PKCS Certificates from a Symantec CA
 
-If you want to use Intune Certificate Connector for Microsoft CA and Symantec CA, you must complete the Intune Certificate Connector confuration for the Microsoft CA first then follow these steps to configure it for the Symantec CA.  For more details about configuring Intune Certificate Connector for a Microsoft CA, see [How to configure certificates in Microsoft Intune](certificates-configure.md).
+If you want to use Intune Certificate Connector for Microsoft CA and Symantec CA, you must complete the Intune Certificate Connector configuration for the Microsoft CA first then follow these steps to configure it for the Symantec CA.  For more details about configuring Intune Certificate Connector for a Microsoft CA, see [How to configure certificates in Microsoft Intune](certificates-configure.md).
 
 ## Prepare to install Intune Certificate Connector
 
