@@ -81,9 +81,9 @@ The overview page now shows alerts for expired tokens and tokens that will soon 
 
 ### Device management
 
-#### Remote "Erase" command support <!-- 1438084 -->
+#### Remote "Erase" command support for macOS devices <!-- 1438084 -->
 
-Admins can issue an Erase command remotely.
+Admins can issue an Erase command remotely for macOS devices.
 
 > [!IMPORTANT]
 > The erase command can’t be reversed and should be used with caution.
