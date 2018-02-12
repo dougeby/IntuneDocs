@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -142,3 +142,27 @@ The following table contains the platform types of all assigned policies. Polici
 |PolicyPlatformTypeId      |The unique identifier for the policy platform type.|1|
 |PolicyPlatformTypeName      |The name for the policy platform type.|AndroidForWork |
 
+### PolicyDeviceActivity
+
+The following table lists the number of devices in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The PolicyDeviceActivity entity lists how many devices are in which state on a given day over the last 30 days.
+
+|Property  |Description  |Example  |
+|---------|---------|---------|
+|DateKey|Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.|20160703|
+|Pending|Number of unique Devices in pending state.|123|
+|Succeeded|Number of unique Devices in success state.|12|
+PolicyKey|Policy Key, can be joined with Policy to get the policyName.|Windows 10 baseline|
+|Error|Number of unique Devices in error state.|10|
+|Failed|Number of unique Devices in failed state.|2|
+
+### PolicyUserActivity 
+
+The following table lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The PolicyUserActivity entity lists how many users are in which state on a given day over the last 30 days.
+
+|Property  |Description  |Example  |
+|---------|---------|---------|
+|DateKey|Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.|20160703|
+|Pending|Number of unique Devices in pending state.|123|
+|Succeeded|Number of unique Devices in success state.|12|
+PolicyKey|Policy Key, can be joined with Policy to get the policyName.|Windows 10 baseline|
+|Error|Number of unique Devices in error state.|10|
