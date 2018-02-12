@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/09/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ The following process uses a private method to process and convert an app key. T
 
 ## Create a Web App
 
-In this section, you provide details about the Web app you would like Intune to point to. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. This type of app is separately maintained on the Web. You use Intune to grant a web app access to Intune. The data flow is initiated by the web app. 
+In this section, you provide details about the Web app you would like to point to at Intune. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. This type of app is separately maintained on the Web. You use Intune to grant a web app access to Intune. The data flow is initiated by the web app. 
 
 1.	Sign in to the [Azure portal](https://portal.azure.com).
 2.	Using **Search resources, services and docs** field near the top of the Azure portal, search for **Azure Active Directory**.
@@ -162,7 +162,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 16.	Build your app.
 
     >[!NOTE] 
-    > To see additional implementation code, see Intune-Data-Warehouse code example.
+    > To see additional implementation code, see [Intune-Data-Warehouse code example](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
 ## Next Steps
 Learn more about Azure Key Vault by reviewing [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
