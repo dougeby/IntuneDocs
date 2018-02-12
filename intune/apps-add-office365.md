@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune
+# How to assign Office 365 ProPlus apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 ProPlus apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
 
 
 ## Before you start
@@ -38,7 +38,7 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 >This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
-- Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
+- Intune only supports adding Office apps from the Office 365 ProPlus suite.
 - If any Office apps are open when Intune installs the app suite, installation may fail and end users may lose data from unsaved files.
 - This installation method is not supported on Windows 10S, Windows Home, Windows Team, Windows Holographic, and Windows Holographic for Business devices.
 - Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
