@@ -464,7 +464,7 @@
       href: conditional-access-integrate-jamf.md
     - name: Enforce compliance on Macs managed with Jamf Pro
       href: conditional-access-assign-jamf.md
-  - name: Protect app and device data
+  - name: Protect device data
     items:
     - name: Mobile Threat Defense
       href: mobile-threat-defense.md
