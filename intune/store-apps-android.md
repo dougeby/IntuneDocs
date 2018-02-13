@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Before you assign an app to a device or a group of users, you must first add the app to Microsoft Intune. The following steps allow you to add an Android store app to Intune from the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
@@ -39,7 +40,7 @@ ms.custom: intune-azure
 6. On the **Add App** blade, select **Android** under the available **Store app** types.
 7. Select **Configure** to configure the app information the following information:  Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
 	- **Name** - Enter the name of the app as it will be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
-	- **Description** - Enter a description for the app. This will be displayed to users in the company portal.
+	- **Description** - Enter a description for the app. This description will be displayed to users in the company portal.
 	- **Publisher** - Enter the name of the publisher of the app.
 	- **Appstore URL** - Enter the app store URL of the app you want to create.
 	- **Minimum operating system** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
@@ -50,11 +51,11 @@ ms.custom: intune-azure
 	- **Developer** (optional) - Enter the name of the app developer.
 	- **Owner** (optional) - Enter a name for the owner of this app, for example, **HR department**.
 	- **Notes** (optional) - Enter any notes you would like to associate with this app.
-	- **Logo** (optional) - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
+	- **Logo** (optional) - Upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
 8. Click **OK** when you have completed setting the app information.
 9. Click **Add** to add the app.
 
-The app you have created will be displayed in the apps list where you can assign it to the groups you choose. 
+The app you've created is displayed in the apps list where you can assign it to the groups you choose. 
 
 ##Next steps
 
