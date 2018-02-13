@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/19/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,7 +47,6 @@ The following device restriction settings are supported on devices running Windo
 
 ## App Store
 
-- 	**App store** - Enable or block use of the app store on devices.
 - 	**Auto-update apps from store** - Allows apps installed from the Microsoft Store to be automatically updated.
 - 	**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.
 - 	**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
