@@ -7,7 +7,7 @@ keywords: what is Intune
 author: Lindavr
 ms.author: lindavr
 manager: dougeby
-ms.date: 07/28/2017
+ms.date: 02/12/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
