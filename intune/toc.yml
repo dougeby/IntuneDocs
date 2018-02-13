@@ -251,7 +251,7 @@
       - name: Web apps
         href: web-app.md
       - name: Built-in apps
-        href: apps-add-bulit-in.md        
+        href: apps-add-built-in.md        
     - name: Deploy apps
       href: apps-deploy.md
       items:
