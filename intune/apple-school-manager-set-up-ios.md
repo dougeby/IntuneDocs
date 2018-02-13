@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,19 @@ ms.custom: intune-azure
 # Enable iOS device enrollment with Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### Temporary user interface differences
+>
+>The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
+>
+>If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
+>
+>![Old user interface](./media/appleenroll-oldui.png)
+>
+>If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this help page](apple-school-manager-set-up-ios-newui.md).
+>
+>![New user interface](./media/appleenroll-newui.png)
 
 This topic helps you enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) program. Using Intune with Apple School Manager, you can enroll large numbers of iOS devices without ever touching them. When a student or teacher turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
