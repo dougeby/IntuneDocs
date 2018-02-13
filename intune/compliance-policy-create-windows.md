@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 1/24/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -201,6 +201,10 @@ Windows Holographic for Business supports the following setting:
 
   **Encryption of data storage on device**.
 
-<!--- ## Next steps
+To verify device encryption on the Microsoft HoloLens, see [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## Next steps
+
+See the following topic to learn how you can monitor device compliance:
+
+- [How to monitor device compliance](device-compliance-monitor.md)
