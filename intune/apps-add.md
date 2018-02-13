@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -154,5 +154,5 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
 - [Office 365 apps for Windows 10](apps-add-office365.md)
-- [Built-in apps](apps-add-bulit-in.md)
+- [Built-in apps](apps-add-built-in.md)
 
