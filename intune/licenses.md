@@ -52,3 +52,5 @@ The following table shows which versions of Intune are available in each license
 
 A proper license is required if a user benefits directly or indirectly from any feature covered by that license.
 
+To assign a license to a user, see the [Assign Intune licenses to your user accounts article](licenses-assign.md).
+
