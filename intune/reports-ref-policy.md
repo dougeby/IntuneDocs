@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 2/12/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -92,7 +92,7 @@ The **PolicyTypeActivity** entity lists the cumulative number of devices in the 
 | Pending |Number of unique devices in pending state. |123 |
 | Succeeded |Number of unique devices in success state. |12 |
 | Error |Number of unique devices in error state. |10 |
-| Fail- |Number of unique devices in failed state. |2 |
+| Failed |Number of unique devices in failed state. |2 |
 
 ## Compliance Policy
 
