@@ -40,7 +40,7 @@ Similar to other Azure services, Microsoft Intune is available in the Azure port
     * [Where did my features go in Azure?](ui-changes.md) is a reference to show you the specific workflows and UIs that have changed with the move to Azure.
     * [Intune classic groups in the Azure portal](groups-get-started.md) explains the implications of the shift to Azure Active Directory security groups for group management.
 
-This topic, as well as the entire Microsoft Intune documentation set, is continually updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
+This topic, as well as the entire Microsoft Intune documentation set, is continuously updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
 
 Highlights of the Microsoft Intune experience in the Azure portal include:
 
@@ -67,13 +67,17 @@ Currently, the following browsers are supported:
 
 Check the [Azure portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) for the latest information about supported browsers.
 
+## Microsoft Intune in the Azure portal
+
+The [Azure portal](https://portal.azure.com) is where you can find the Microsoft Intune service. There are several services in Azure, many of which you may not use on a regular basis. For a quick guide to customize your portal experience, see [Getting started with Intune in the Azure portal](get-started-azure.md).
+
 ## The Microsoft Intune documentation
 
 The documentation reflects the layout of the Azure portal to make it easier to find the information you need.
 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 
-| Documentation section                                        | Description                                                                                                                                                                                                                                                                                      |
+| Section                                                      | Description                                                                                                                                                                                                                                                                                      |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Introduction and get started](introduction-intune.md)       | Understand the fundamentals of Intune, including: - Common solutions - The way Microsoft Intune works - Device management in Intune - App management in Intune - Enterprise Mobility Management (EMM) with and without device enrollment                                                         |
 | [Plan and design](planning-guide.md)                         | Guidance to help you successfully plan and design your Microsoft Intune environment.                                                                                                                                                                                                             |
