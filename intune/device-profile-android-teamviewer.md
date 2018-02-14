@@ -80,4 +80,4 @@ When you are finished, close the TeamViewer window.
 
 ## Next steps
 
-An end user sees a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
+An end user sees a notification flag on the Company Portal app icon on their device, and also sees a notification when they open the app. They can then accept the remote assistance request.
