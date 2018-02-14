@@ -138,6 +138,8 @@
       href: groups-add.md
     - name: Assign licenses
       href: licenses-assign.md
+    - name: Intune licenses
+      href: licenses.md
     - name: Set the MDM authority
       href: mdm-authority-set.md
   - name: Enroll devices
