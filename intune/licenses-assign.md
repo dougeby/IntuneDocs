@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Whether you manually add users or synchronize from your on-premises Active Directory, you must first assign each user an Intune license before users can enroll their devices in Intune. For a list of licenses, see the [Licenses that include Intune article](licenses.md).
+Whether you manually add users or synchronize from your on-premises Active Directory, you must first assign each user an Intune license before users can enroll their devices in Intune. For a list of licenses, see [Licenses that include Intune](licenses.md).
 
 ## Assign an Intune license in the Office 365 Admin center
 
