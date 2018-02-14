@@ -3,12 +3,12 @@
 
 title: Intune device restriction settings for Windows 10
 titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
+description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,6 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -34,6 +33,8 @@ ms.custom: intune-azure
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
 - **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
+   - This policy setting is not applied if the computer is Azure Active Directory joined and auto-enrollment is enabled. 
+   - This policy setting does not apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
 - **Diagnostic data submission** - Possible values are:
 	- **None** - No data is sent to Microsoft
