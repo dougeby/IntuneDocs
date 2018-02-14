@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
