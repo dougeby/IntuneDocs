@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/14/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,7 +75,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
+- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
 
 ## Privacy
 
