@@ -55,19 +55,15 @@ App protection polices are only applied in the work context. Therefore, the app 
 
 ##  Manage user accounts on the device
 
-Intune supports the deployment of app protection policies to  one user account per device only.
+Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
 
-* Depending on the app that you are using, the second user might be blocked on the device. However, in all cases, only the first user who gets the app protection policies is affected by the policy.
-  * **Microsoft Word**, **Excel**, and **PowerPoint** don't block a second user account, but the second user account is not affected by the app protection policies.  
-
-  * For **OneDrive** and **Outlook apps**, you can only use one work account. You can't add multiple work accounts for these apps. You can however, remove a user and add a different user on the device.
-
-* If a device has existing multiple user accounts before the app protection policies are deployed, the account that the app protection policies are deployed to first is managed by Intune app protection policies.
-
+When there is a managed account in an application:
+*	If a user attempts to add a second managed account, the user will be asked to select which managed account to use.  The other account will be removed.
+*	If the IT admins adds policy to a second existing account, the user will be asked to select which managed account to use.  The other account will be removed.
 
 Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
 
-User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy, but not the account that's associated with Company Y. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X.
+User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy first. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X and add the user account that's associated with Company Y.
 
 ### Add a second account
 
