@@ -62,9 +62,7 @@ There are additional benefits to using MDM with app protection policies, and com
 - **App protection policies make sure that the app-layer protections are in place.** For example, you can have a policy that requires a PIN to open an app in a work context, prevents data from being shared between apps, and prevents company app data from being saved to a personal storage location.
 
 ## Devices that support MAM
-App protection policies are currently supported on:
--   iOS 8.1 or later
--   Android 4 or later
+Intune app protection policies platform support is aligned with Office application platform support. For details, see [Office System Requirements](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Windows devices are not supported in the MAM without enrollment scenario. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
