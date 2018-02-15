@@ -49,6 +49,6 @@ After enrollment, the only way to turn on supervised mode is to connect an iOS d
 ## Identify a supervised device
 
 To determine if a device is supervised, check the lock screen or **About** page:
-- On the lock screen, it will say **This iPhone is managed by "Company Name".**
-- On the **About** page, it will say **This iPhone is supervised. Company name can monitor your Internet traffic and locate this device.**
+- On the device's lock screen, it will say **This iPhone is managed by "Company Name".**
+- On the device's **About** page, it will say **This iPhone is supervised. Company name can monitor your Internet traffic and locate this device.**
 
