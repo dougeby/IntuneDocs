@@ -4,16 +4,18 @@
 title: Installing Office 365 on your Windows 10 device | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/24/2018
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 42e26c51-5373-4c2e-9321-34d85560f3d1
-searchScope: - User help
+
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -31,10 +33,8 @@ ms.custom: intune-enduser
 
 There are many ways you can install the Office suite on to your Windows 10 device. Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal.
 
-*image of company portal app store with conflicting versions of office side by side*
+<!--*image of company portal app store with conflicting versions of office side by side*-->
 
 When your company makes Office available, you should only install one version of Office. If you try to install both, you'll remove the one you had installed first.
-
-*image of Office apps being installed, possibly with different version numbers that match up to company portal app store listings*
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
