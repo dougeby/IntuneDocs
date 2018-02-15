@@ -8,6 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/03/2018
+
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,22 +27,22 @@ ms.custom: intune-classic
 
 ---
 
-# Supported devices and browsers
+# Supported operating systems and browsers
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
-- [Supported devices and computers](#intune-supported-devices)
+- [Supported operating systems](#intune-supported-operating-systems)
 - [List of supported web browsers use Intune](#intune-supported-web-browsers)
 
 You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
 
-## Intune supported devices
+## Intune supported operating systems
 
-You can manage the following devices using Intune mobile device management:
+You can manage devices running the following operating systems:
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -91,7 +92,6 @@ The following list of Samsung device models do not support Knox and are enrolled
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune cannot be used to manage Windows Server operating systems.
 
 ### Windows PC software client
 
@@ -113,7 +113,10 @@ The following browsers are supported for these portals:
 - Microsoft Internet Explorer 11
 - Safari (latest version, Mac only)
 - Chrome (latest version)
-- Firefox (latest version)
+- Mozilla Firefox with Silverlight enabled [Learn more (versions prior to version 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+
+
+
 
 ### Intune classic portal
 

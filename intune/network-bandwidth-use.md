@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use
-description: intune network bandwidth usage
+title: Intune network configuration requirements and bandwidth
+description:
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Intune network bandwidth use
+# Intune network configuration requirements and bandwidth
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,21 +27,22 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune
+# How to assign Office 365 ProPlus apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 ProPlus apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
 
 
 ## Before you start
 
 >[!IMPORTANT]
->This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device. We provide user help for this scenario [here](/intune-user-help/install-office-windows.md).
+>This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
-- Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
-- If any Office apps are open when Intune installs the app suite, end users might lose data from unsaved files.
-- This installation method is not supported on Windows 10S devices.
+- Intune only supports adding Office apps from the Office 365 ProPlus suite.
+- If any Office apps are open when Intune installs the app suite, installation may fail and end users may lose data from unsaved files.
+- This installation method is not supported on Windows 10S, Windows Home, Windows Team, Windows Holographic, and Windows Holographic for Business devices.
 - Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
+- Multiple required or available app assignments are not additive. A later app assignment will overwrite pre-existing installed app assignments. For example, if the first set of Office apps contains Word, and the later one does not, then Word will be uninstalled. This does not apply to any Visio or Project applications.
 
 
 ## Get started

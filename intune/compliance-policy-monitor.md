@@ -67,7 +67,7 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
 -   **In-grace period:** The device was targeted by the admin with one or more device compliance policy settings, but the user hasn’t applied the policies yet, which means the device is not-compliant, but it’s in the grace-period defined by the admin.
 
-    -   Learn more about Actions for non-compliant devices.
+    -   Learn more about Actions for noncompliant devices.
 
 -   **Device not synced:** The device failed to report its device compliance policy status because one of the following:
 
@@ -138,7 +138,7 @@ When you click on the device policy setting itself, you can see the device compl
 
 ### Per-policy device compliance report
 
-This report provides you per compliance policy view and the total number of devices in each compliance state. The **Policy compliance** title is available from the **Device compliance dashboard**, and it shows all policies previously created by the admin, the platforms the policy is applied, number of compliant devices and number of non-compliant devices.
+This report provides you per compliance policy view and the total number of devices in each compliance state. The **Policy compliance** title is available from the **Device compliance dashboard**, and it shows all policies previously created by the admin, the platforms the policy is applied, number of compliant devices and number of noncompliant devices.
 
 ![Per-policy device compliance report](./media/idc-8.png)
 
@@ -148,7 +148,7 @@ When you click on the Policy compliance tile, then click on one of the device co
 
 ### Per-setting device compliance report
 
-This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms which the policy settings were applied, and the number of non-compliant devices.
+This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms which the policy settings were applied, and the number of noncompliant devices.
 
 ![Per-setting device compliance report](./media/idc-10.png)
 

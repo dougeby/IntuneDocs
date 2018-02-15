@@ -30,8 +30,9 @@
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
+#### [Update your device to install Outlook](update-device-outlook-android.md)
 
-#### Using logs to fix issues
+#### Using logs to help fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
@@ -85,6 +86,7 @@
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [Updating your iOS device](you-need-to-update-your-ios-device.md)
+#### [Update your device to install Outlook](update-device-outlook-ios.md)
 #### [My version of iOS isn't yet supported](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense
@@ -149,3 +151,4 @@
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
+### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)

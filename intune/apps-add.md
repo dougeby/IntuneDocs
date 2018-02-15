@@ -5,10 +5,10 @@ title: How to add apps to Microsoft Intune
 titlesuffix: "Azure portal"
 description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,6 +38,7 @@ Intune lets you add and assign these app types:
 | Apps on the web                          	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
 | Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
 | Apps from the store                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
+| Apps that are built-in                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 
 
 In addition to web apps, Intune supports the following specific platforms for store apps and LOB apps:
@@ -54,6 +55,7 @@ In addition to web apps, Intune supports the following specific platforms for st
     - iOS line-of-business (LOB) apps
     - Windows Phone line-of-business (LOB) apps (.xap files)
     - Windows line-of-business (LOB) apps (.msi files only)
+- Built-in apps    
 
 >[!TIP]
 > A line-of-business (LOB) app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by choosing **Line-of-business app** as the **App type** from the **Add app** blade. Then, select the app package file (extension .ipa). These types of apps are typically written in-house.
@@ -152,4 +154,5 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Windows store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
 - [Office 365 apps for Windows 10](apps-add-office365.md)
+- [Built-in apps](apps-add-built-in.md)
 

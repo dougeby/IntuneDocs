@@ -45,7 +45,7 @@ The following table lists the requirements for the computer on which you install
 
 |Requirement|More information|
 |---------------|--------------------|
-|Operating systems|Intune supports the On-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The Connector is not supported on any Server Core installation.|
+|Operating systems|Intune supports the On-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.<br /><br />The Connector is not supported on any Server Core installation.|
 |Microsoft Exchange|On-premises Connectors require Microsoft Exchange 2010 SP1 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the **new** or **legacy** configuration, contact your account manager.|
 |Mobile device management authority| [Set the mobile device management authority to Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
 |Hardware|The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.|users-add.md
@@ -158,7 +158,7 @@ You can also check the time and date of the last successful synchronization atte
 
 ### System Center Operations Manager (SCOM) management pack
 
-Beginning with the Intune 1710 release, you can use the [SCOM management pack for Exchange connector and Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
+Beginning with the Intune 1710 release, you can use the [SCOM management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
 
 ## Next steps
 [Create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)

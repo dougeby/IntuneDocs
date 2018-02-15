@@ -58,18 +58,18 @@ Prerequisites for device compliance policy with MTD:
 
 7.  On the **Device Health** blade, choose the Mobile Threat Level from the drop-down list under the **Require the device to be at or under the Mobile threat Defense Level**.
 
-    a.  **Secured**: This is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as non-compliant.
+    a.  **Secured**: This is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
 
-    b.  **Low**: The device is compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
+    b.  **Low**: The device is compliant if only low level threats are present. Anything higher puts the device in a noncompliant status.
 
-    c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as non-compliant.
+    c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as noncompliant.
 
     d.  **High**: This is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
 
 8.  Click **OK** twice, then choose **Create**.
 
 > [!IMPORTANT]
-> If you create conditional access policies for Office 365 or other services, the device compliance evaluation is assessed and non-compliant devices are blocked from accessing corporate resources until the threat is resolved in the device.
+> If you create conditional access policies for Office 365 or other services, the device compliance evaluation is assessed and noncompliant devices are blocked from accessing corporate resources until the threat is resolved in the device.
 
 ## To assign a MTD device compliance policy
 

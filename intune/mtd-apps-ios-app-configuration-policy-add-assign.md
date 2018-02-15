@@ -80,7 +80,7 @@ For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout
 
 Enable Azure Active Directory authentication for the iOS users by doing the following:
 
-1. Go to the [Azure portal](https://portal.sazure.com), sign in with your credentials, then navigate to the application page.
+1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
   
 2. Add the **Lookout for Work iOS app** as a **native client application**.
 
