@@ -54,4 +54,4 @@ To determine if a device is supervised, check the lock screen or **About** page:
 
 ## Next steps
 
-To manage other device management options, see [What is Microsoft Intune device management?](device-management.md).
+For other device management options, see [What is Microsoft Intune device management?](device-management.md).
