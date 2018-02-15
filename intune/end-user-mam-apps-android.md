@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/06/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: andcerat
+ms.reviewer: tisilver
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
