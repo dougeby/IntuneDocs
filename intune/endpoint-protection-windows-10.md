@@ -233,6 +233,8 @@ Use **Application control code integrity policies** to choose additional apps th
 
 Applications will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs.
 
+Once enabled, Application Control can only disabled by changing the mode from "Enforce" to "Audit only". Changing the mode from "Enforce" to "Not Configured" will result in Application Control continuing to be enforced on assigned devices.
+
 ## Windows Defender Security Center
 
 The Windows Defender Security Center app operates as a separate app or process from each of the individual features, and will display notifications through the Action Center. It acts as a collector or single place to see the status and perform some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
