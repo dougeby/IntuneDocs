@@ -196,6 +196,8 @@
       href: device-locate.md
     - name: Enable iOS lost mode
       href: device-lost-mode.md
+    - name: Turn on iOS supervised mode
+      href: device-supervised-mode.md
     - name: Lock device
       href: device-remote-lock.md
     - name: Reset passcode

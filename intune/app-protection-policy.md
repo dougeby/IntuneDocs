@@ -68,8 +68,7 @@ There are additional benefits to using MDM with App protection  policies, and co
 
 
 ### Supported platforms for app protection polices
--   iOS 9 or later
--   Android 4.4 or later
+Intune app protection policies platform support is aligned with Office application platform support. For details, see [Office System Requirements](https://products.office.com/en-US/office-system-requirements).
 
 Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  How app protection policies protect app data

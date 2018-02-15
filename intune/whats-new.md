@@ -611,6 +611,44 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
+### Plan for Change: Update where you Configure your App Protection Policies
+
+Starting in March of 2018, we’re going to temporarily redirect you from the Intune App Protection service blade in the Azure portal to the Mobile app blade within Intune in the Azure portal. Note that all of your App protection policies are already on the Mobile app blade in Intune under app configuration. Instead of going to Intune App Protection, you’ll just go to Intune. In April, we will stop the redirection and fully remove the Intune App Protection service blade, again it is duplicating what is now built into Intune. 
+
+#### How does this affect me?
+This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
+
+#### What do I need to do to prepare for this change?
+Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
+
+**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
+
+### Updated: New security enhancements in the Intune service  <!-- 1637539 -->   
+
+We’re rolling out security enhancements in the Intune service. As a part of this change, with the March update to the Intune service, you will have a toggle in the Intune on Azure console to turn this security feature on or off. When the feature is on, devices with no compliance policy assigned to them will be marked as ‘not compliant’.
+
+**Hybrid customers**: We will not be introducing this change for hybrid customers at this time. You do not need to take any action. However, we highly encourage you to ensure that your devices have at least one compliance policy assigned to them.
+
+#### How does this affect me?
+
+When we start rolling this change out in the March update, this feature will affect you differently depending on whether you already have compliance policies assigned or not.
+
+- If you are a new or existing tenant and do not have any compliance policies assigned to your devices, the toggle will be automatically set to **compliant**. The feature will be off as a default setting in the console. There will be no end user impact.
+- If you are an existing tenant and you have any devices with a compliance policy assigned to them, the toggle will automatically be set to ‘not compliant’. The feature will be on as a default setting, when the March update rolls out. 
+
+If you use compliance policies with Conditional Access (CA), and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
+ 
+#### What do I need to do to prepare for this change?  
+
+If you use Conditional Access, we recommend you have this feature turned on and leave the toggle set to **Not compliant**. To avoid loss of email access for your end users, please ensure that all your devices have at least one compliance policy assigned to them. Here are some changes we’re making to help you do this:   
+
+- We’ve introduced a report called **Devices without compliance policy** in the Intune portal, which you can use to identify all the devices in your environment that do not have a compliance policy assigned. 
+- There is an **All Users** option to make it easy to assign a compliance policy to all users.
+
+If you choose to leave the toggle turned off, no further action is required on your part.
+
+**Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
+
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
 - End users will be prompted for credentials to receive Intune policy on first launch.
