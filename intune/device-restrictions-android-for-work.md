@@ -52,9 +52,9 @@ ms.custom: intune-azure
 
 - **Add and remove accounts**
 
-   Prevents end users from adding or removing accounts in the work profile.
+   Prevents end users from manually adding or removing accounts in the work profile.
 
-   For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in the work profile.
+   For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in this work profile.
 
 ### Work profile password
 - **Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile. By default, the end user has the option to use the two separately defined PINs or they can elect to combine them into the stronger of the two.
