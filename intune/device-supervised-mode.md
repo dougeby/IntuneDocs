@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Turn on iOS Supervised mode with Intune 
+title: Turn on iOS supervised mode with Intune 
 titlesuffix: "Azure portal"
-description: Learn how to turn on iOS Supervised mode with Intune.
+description: Learn how to turn on iOS supervised mode with Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -52,3 +52,6 @@ To determine if a device is supervised, check the lock screen or **About** page:
 - On the device's lock screen, it will say **This iPhone is managed by "Company Name".**
 - On the device's **About** page, it will say **This iPhone is supervised. Company name can monitor your Internet traffic and locate this device.**
 
+## Next steps
+
+For other device management options, see [What is Microsoft Intune device management?](device-management.md)
