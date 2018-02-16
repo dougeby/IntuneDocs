@@ -157,10 +157,10 @@ When you click on the Setting compliance tile, then click on one of the device c
 ## Threat agent status report
 
 This report allows you to view the status and health of the Windows Defender agent. Using a status roll-up report in  **Device Compliance**, you can see devices that need any of the following actions:
-- signature update
-- restart
-- manual intervention
-- full scan
-- other agent states requiring intervention
+- Signature update
+- Restart
+- Manual intervention
+- Full scan
+- Other agent states requiring intervention
 
 A drill-in report for each status category lists the individual PCs that need attention, and the PCs that report as **Clean**.
