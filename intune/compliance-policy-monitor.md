@@ -163,6 +163,4 @@ This report allows you to view the status and health of the Windows Defender age
 - full scan
 - other agent states requiring intervention
 
-In certain cases, remote remediation actions can be taken such as triggering a signature update. The report also indicates the number of PCs reporting as **Clean**.
- 
 A drill-in report for each status category lists the individual PCs that need attention, and the PCs that report as **Clean**.
