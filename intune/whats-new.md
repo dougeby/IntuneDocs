@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,7 +90,7 @@ You can now use Jamf to send macOS device state information to Intune, which wil
 
 You can now shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
-#### Disallow date/time changes to Samsung Knox devices <!-- 1468103 -->
+#### Disallow date/time changes to Samsung Knox devices <!--1468103-->
 
 We've added a new feature that allows you to block date and time changes on Samsung Knox devices. You can find this in **Device configuration profiles** > **Device restrictions (Android)** > **General**.
 
