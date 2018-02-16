@@ -30,7 +30,8 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This topic describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in a work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
+This article describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in a work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a OneDrive for Business location.
+
 ##  Access apps
 
 The Company Portal app is required for all apps that are associated with app protection policies on Android devices.
@@ -51,8 +52,8 @@ For example, the user gets a PIN prompt when accessing work data. For the **Outl
 Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
 
 When there is a managed account in an application:
-*	If a user attempts to add a second managed account, the user will be asked to select which managed account to use.  The other account will be removed.
-*	If the IT admins adds policy to a second existing account, the user will be asked to select which managed account to use.  The other account will be removed.
+*	If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
+*	If the IT admin adds a policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
 
 Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
 
