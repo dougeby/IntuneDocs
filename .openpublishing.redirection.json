@@ -37,6 +37,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-macos-legacy.md",
+			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md",
 			"redirect_url": "/intune/introduction-intune",
 			"redirect_document_id": false
