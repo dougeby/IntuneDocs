@@ -63,7 +63,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 7. Choose **OK** to save this configuration. You are now back in the **Add a policy** blade. 
 8. Choose **Create** to create the policy and save your settings.
 
-When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies#deploy-a-policy-to-users)."
+When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users)."
 
 ## Data transfer exceptions
 As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. The unmanaged apps that you included in the exception list must be trusted by IT. 
