@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,6 +71,12 @@ End users need to launch the Company Portal app through Jamf Self Service to reg
 2. Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency.
 3. Click the **Scope** tab, and scope the policy to all targeted devices.
 4. Click the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
+
+## Removing a Jamf-managed device from Intune
+
+You can't remove a Jamf-managed device from Intune. You have to remove Jamf-managed devices from Jamf Pro, which will then remove it from Intune. 
+
+Learn how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
 
 ## Next steps
 
