@@ -85,9 +85,6 @@ For example, you can add the Webex package as an exception to the MAM data trans
 
 You will be able to customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune will determine the text color that provides the highest level of contrast between the text color and the background color per [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20). You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
 
-### Select device categories by using the Access Work or School settings <!-- 1058963 --> 
-If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
-
 ### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --> 
 
 New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added: 
