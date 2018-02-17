@@ -136,7 +136,7 @@ You can add apps that should have a different privacy behavior from what you def
 ## Locked screen experience
 
 - **Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
+- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
 -	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
