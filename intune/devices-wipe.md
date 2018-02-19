@@ -42,9 +42,9 @@ You can remove devices from Intune that are no longer needed, are being repurpos
 
 ### To factory reset a device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Devices and groups** blade, choose **All devices**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Devices** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
 5. On the blade showing the device's name, choose **Factory reset**
 6. For Windows 10 version 1709 or higher, there is an additional option to "Retain enrollment state and user account". 
@@ -129,9 +129,9 @@ Removing company data from an Android for Work device removes all data, apps, an
 
 ### To remove company data
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Devices and groups** blade, choose **All devices**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Devices** blade, choose **All devices**.
 4. Choose the name of the device from which you want to remove company data.
 5. On the blade showing the device's name, choose **Remove company data**, and then choose **Yes** to confirm.
 
@@ -141,9 +141,9 @@ If the device is on and connected, it takes less than 15 minutes for a remove da
 
 Due to communication issues or missing devices, you might need to delete devices from Azure Active Directory (AD). The delete command does not remove a device from management but you can use **Delete** to remove device records from the Azure portal that you know are unreachable and unlikely to communicate with Azure again.
 
-1.  Sign in to the [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) with your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com) and then choose **Admin** &gt; **Azure AD** from using the link on the left side of the page.
+1.  Sign in to the [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) with your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com) and then choose **Admin centers** &gt; **Azure AD** from using the link on the left side of the page.
 3.  Create an Azure subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
-4.  Select **Active Directory** and then select your organization.
+4.  Select **Azure Active Directory** and then select your organization.
 5.  Select the **Users** tab.
 6.  Select the user whose devices you want to delete.
 7.  Choose **Devices**.

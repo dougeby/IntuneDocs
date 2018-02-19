@@ -42,9 +42,7 @@ This topic provides instructions on how to set up app-based conditional access p
 
 3.  Choose **Intune App Protection**.
 
-4.  On the **Intune mobile application management** blade choose **All Settings**.
-
-5.  On the **Conditional access** section, choose **Exchange Online**.
+4.  On the **Intune App Protection** under the **Conditional access** section, choose **Exchange Online**.
 
 	![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](./media/MAM-conditional-access-1.png)
 
@@ -83,7 +81,7 @@ Beginning with Intune 1708 release, IT admins can create app-based conditional a
 
 4. Once you enter a policy name and configure the settings available in the **Assignments** section, then choose **Grant** under the **Access controls** section.
 
-5. Choose **Require approved client app**, choose **Select**, then choose **OK** to save the new policy.
+5. Choose **Require approved client app**, choose **Select**, then choose **Create** to save the new policy.
 
 ## Next steps
 [Block apps that do not have modern authentication](app-modern-authentication-block.md)
