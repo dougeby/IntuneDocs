@@ -210,7 +210,7 @@ Use the following information to learn about the allowed formats and wildcards t
 
     -   http://www.contoso.com: /&#42;
 
-## How to access managed app logs using the Managed Browser on iOS
+## How to access to managed app logs using the Managed Browser on iOS
 
 End users with the managed Browser installed on their iOS device can view the management status of all Microsoft published apps. They can send logs for troubleshooting their managed iOS apps.
 
