@@ -64,7 +64,7 @@ There are some exempt apps and platform services that Intune app protection poli
 |<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
 |<code>calshow</code> | Native Calendar |
 
-For more information, see [Data transfer policy exceptions for apps](app-protection-policy-settings-ios.md). 
+For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md). 
 
 ## Access settings
 
