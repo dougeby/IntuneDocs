@@ -43,43 +43,43 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 1. Choose **Mobile apps**, then choose **Manage** > **App protection policies**.
 
-2.  This opens the **App protection policies** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
+2.  This action opens the **App protection policies** pane, where you create new policies and edit existing policies. Choose **Add a policy**.
 
-    ![Screenshot of the Add a policy blade](./media/app-protection-add-policy.png)
+    ![Screenshot of the Add a policy pane](./media/app-protection-add-policy.png)
 
 3.  Type a name for the policy, add a brief description, and select the platform type to create a policy for iOS or Android. You can create more than one policy for each platform.
 
-4.  Choose **Apps** to open the **Apps blade**, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you are creating. Once you have selected the apps, choose **Select** at the bottom of the **Apps** blade to save your selection.
+4.  Choose **Apps** to open the **Apps pane**, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you are creating. Once you have selected the apps, choose **Select** at the bottom of the **Apps** pane to save your selection.
 
     > [!IMPORTANT]
     > You must select at least one app to create a policy.
 
-5.  On the **Add a policy blade**, choose **Configure required settings** to open the policy settings blade.
+5.  On the **Add a policy pane**, choose **Configure required settings** to open the policy settings pane.
 
     There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps, while the access polices determine how the end user accesses the apps in a work context.
     To get you started, the policy settings have default values. You do not have to make any changes if the default values meet your requirements.
 
     > [!TIP]
-    > These policy settings are enforced only when using apps in the work context.  When the end user uses the app to do a personal task, they will not be affected by these policies.
+    > These policy settings are enforced only when using apps in the work context.  When the end user uses the app to do a personal task, they are not affected by these policies.
 
 
 
-6.  Choose **OK** to save this configuration. You are now back in the **Add a policy** blade. Choose **Create** to create the policy and save your settings.
+6.  Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
 
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see the following section, "Deploy a policy to users."
 
 ## Deploy a policy to users
 
-1. In the **App protection policies** blade, select a policy.
+1. In the **App protection policies** pane, select a policy.
 
-1. In the **Policy** blade, choose  **Assignments**, which opens the **Intune App Protection - Assignments** blade. Choose **Select groups to include** in the **Assignments** blade to open the **Select groups to include** blade.
+1. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
 
-   ![Screenshot of the Assignments blade with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
+   ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
 
-2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+2.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
   
-    ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
 You have now created a policy and deployed it to users.
 
@@ -95,21 +95,21 @@ End users can download the apps from the App store or Google Play. For more info
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
 
-To see the effect of the changes immediately, the end user will have to log out of the app, and sign back in.
+To see the effect of the changes immediately, the end user must log out of the app, and sign back in.
 
 ### To change the list of apps associated with the policy
 
-1.  In  the **App protection policies** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
+1.  In  the **App protection policies** pane, choose the policy you want to change to open a pane specific to the policy you just selected.
 
-2.  In the policy blade, choose **Targeted apps** to open the list of apps.
+2.  In the policy pane, choose **Targeted apps** to open the list of apps.
 
 3.  Remove or add apps from the list and choose the **Save** icon to save your changes.
 
 ### To change the list of user groups
 
-1.  In  the **App protection policies** blade, choose the policy you want to change. This opens the blade specific to the policy you selected.
+1.  In  the **App protection policies** pane, choose the policy you want to change to open the pane specific to the policy you selected.
 
-2.  In the policy blade, choose **Assignments** to open the **Intune App Protection - Assignments** blade that shows the list of current user groups who have this policy.
+2.  In the policy pane, choose **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
 
 3.  To add a new user group to the policy, on the **Include** tab choose **Select groups to include**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
 
@@ -117,10 +117,10 @@ To see the effect of the changes immediately, the end user will have to log out 
 
 ### To change policy settings
 
-1.  In the **App protection policies** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
+1.  In the **App protection policies** pane, choose the policy you want to change to open a pane specific to the policy you just selected.
 
 
-2.  Choose **Policy settings** to open the **Policy settings** blade.
+2.  Choose **Policy settings** to open the **Policy settings** pane.
 
 3.  Change the settings, and choose the **Save** icon to save your changes.
 
