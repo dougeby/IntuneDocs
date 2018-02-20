@@ -58,11 +58,11 @@ There are some exempt apps and platform services that Intune app protection poli
 
 | App/service name(s) | Description |
 | ---- | --- |
-|tel; telprompt | Native phone app |
-| skype | Skype |
-| app-settings | Device settings |
-| itms; itmss; itms-apps; itms-appss; itms-services | App Store |
-| calshow | Native Calendar |
+|<code>tel; telprompt</code> | Native phone app |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Device settings |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
+|<code>calshow</code> | Native Calendar |
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policy-settings-ios.md). 
 
