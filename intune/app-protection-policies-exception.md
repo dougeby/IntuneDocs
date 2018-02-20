@@ -40,10 +40,10 @@ This feature applies when you create an Intune Application Protection Policy wit
 You can configure this feature to enable exceptions to the Intune MAM App Protection policy **restrict data transfer**. This policy is only required if you want to allow data to be transferred to an app that does not support Intune APP. This policy allows applications managed by Intune, with data transfer settings set to **Managed apps only**, to invoke unmanaged applications based on URL protocol (iOS) or package name (Android). Intune adds vital native applications to the default list of exceptions. 
 
 ### iOS data transfer exceptions
-For a policy targeting iOS, you can configure data transfer exceptions by URL protocol. To add an exception, check the documentation provided by the developer of the app to find information about supported URL protocols. For additional information about iOS data transfer exceptions, see [iOS app protection policy settings - Data transfer exemptions](app-protection-policy-settings-ios.md#Data-transfer-exemptions).
+For a policy targeting iOS, you can configure data transfer exceptions by URL protocol. To add an exception, check the documentation provided by the developer of the app to find information about supported URL protocols. For additional information about iOS data transfer exceptions, see [iOS app protection policy settings - Data transfer exemptions](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 ### Android data transfer exceptions
-For a policy targeting Android, you can configure data transfer exceptions by app package name. You can check the **Google Play** store page for the app you would like to add an exception for to find the app package name. For additional information about Android data transfer exceptions, see [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#Data-transfer-exemptions).
+For a policy targeting Android, you can configure data transfer exceptions by app package name. You can check the **Google Play** store page for the app you would like to add an exception for to find the app package name. For additional information about Android data transfer exceptions, see [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#data-transfer-exemptions).
 
 #### Example
 By adding the **Webex** package as an exception to the MAM data transfer policy, Webex links inside a managed Outlook email message are allowed to open directly in the Webex application. Data transfer is still restricted in other unmanaged apps.
@@ -57,5 +57,5 @@ By adding the **Webex** package as an exception to the MAM data transfer policy,
 ## Next steps
 
 - [Create and deploy app protection policies](app-protection-policies.md)
-- [iOS app protection policy settings - Data transfer exemptions](app-protection-policy-settings-ios.md#Data-transfer-exemptions)
-- [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#Data-transfer-exemptions)
+- [iOS app protection policy settings - Data transfer exemptions](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#data-transfer-exemptions)
