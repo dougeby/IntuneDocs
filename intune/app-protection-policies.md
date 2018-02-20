@@ -46,8 +46,8 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
 3.  Type a name for the policy, add a brief description, and select the platform type for your policy. Note at you can create more than one policy for each platform.
 
-4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you are creating. 
-5. Once you have selected the apps, choose **Select** to save your selection.
+4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating. 
+5. Once you've selected the apps, choose **Select** to save your selection.
 
     > [!IMPORTANT]
     > You must select at least one app to create a policy.
@@ -60,7 +60,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
     > [!TIP]
     > These policy settings are enforced only when using apps in the work context. When end user uses the app to do a personal task, they aren't be affected by these policies.
 
-7. Choose **OK** to save this configuration. You are now back in the **Add a policy** blade. 
+7. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade. 
 8. Choose **Create** to create the policy and save your settings.
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users)."
@@ -74,12 +74,12 @@ When you finish creating a policy as described in the previous procedure, it is 
 2.  A list of user groups is displayed on the **Add user group** blade. This list is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
   ![Screenshot of the Add user group information showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
-You have now created a policy and deployed it to users.
+You've now created a policy and deployed it to users.
 
 Only users with assigned Microsoft Intune licenses are affected by the policy. Users in the selected security group that don’t have an assigned Intune license aren't affected.
 
 >[!IMPORTANT]
-> If you are using Intune with Configuration Manager to manage your devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected aren't affected.
+> If you're using Intune with Configuration Manager to manage your devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected aren't affected.
 
 End users can download the apps from the App store or Google Play. For more information, see:
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
