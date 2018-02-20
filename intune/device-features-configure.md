@@ -37,12 +37,12 @@ Use the information in this topic to learn the basics about configuring device f
 
 ## Create a device profile containing device restriction settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the device features profile.
+2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
+3. On the profiles blade, choose **Create profile**.
+4. On the **Create profile** blade, enter a **Name** and **Description** for the device features profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply the settings. Currently, you can choose one of the following platforms for device features:
 	- **iOS**
 	- **macOS**
@@ -56,7 +56,7 @@ Use the information in this topic to learn the basics about configuring device f
 	- [Configure Intune for iOS device Single Sign-on](sso-ios.md)
 	- [Web content filter settings for iOS](web-content-filter-settings-ios.md)
 
-8. When you're done, go back to the **Create Profile** blade, and click **Create**.
+8. When you're done, select **OK**, go back to the **Create profile** blade, and choose **Create**.
 
 The profile is created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
