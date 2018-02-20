@@ -35,14 +35,15 @@ The compliance policy that requires these settings can then be targeted to a gro
 
 ## Create a compliance policy
 
-1. Sign in to the Azure portal. Choose **More Services** > **Monitoring + Management** + **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 2. Choose **Device compliance** in the **Manage** group. 
-3. Choose **Policies**, and choose **Create Policy**.
+3. Choose **Policies**, and choose **Create policy**.
 4. Type the policy **Name** and **Description**.
 5. Select **Android** for the Platform.
 6. Choose **Settings** > **Device Health**.
 7. Configure the **Google Play Protect** settings.
-8. When you have set the Google Play Protect settings, specify the **Security** and **Device property** settings. When you are done, choose **OK**.
+8. When you have set the Google Play Protect settings, specify the **System Security** and **Device Properties** settings. When you are done, choose **OK**.
 
 ## Configure the Google Play Protect settings
 
