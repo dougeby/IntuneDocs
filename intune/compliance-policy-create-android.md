@@ -64,7 +64,7 @@ You have applied the policy to users.  The devices used by the users who are tar
 
 ## Device health and security settings
 
-- **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.
+- **Device must not be jailbroken or rooted**: If you enable this setting, jailbroken devices will be evaluated as noncompliant.
 - **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
 
 ### Important
@@ -74,11 +74,11 @@ Side-loading applications require that the **Unknown sources** setting is enable
 - **Require that USB debugging is disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
 - **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level. Devices that are not at least at this patch level will be noncompliant. The date must be specified in the format YYYY-MM-DD.
-- **Require device threat protection to be enabled** : Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
+- **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
   - **None (secured)**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
-  - **Low** : The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-  - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
+  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
 
 For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
@@ -86,29 +86,29 @@ For more details, see [Enable device threat protection rule in the compliance po
 
 ### Password
 
-- **Require a password to unlock mobile devices** : Set this to **Yes** to require users to enter a password before they can access their device.
-- **Minimum password length** : Specify the minimum number of digits or characters that the user&#39;s password must have.
-- **Password quality** : This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
+- **Require a password to unlock mobile devices**: Set this to **Yes** to require users to enter a password before they can access their device.
+- **Minimum password length**: Specify the minimum number of digits or characters that the user&#39;s password must have.
+- **Password quality**: This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
   - **Low security biometric**
   - **Required**
   - **At least numeric**
   - **At least alphabetic**
   - **At least alphanumeric**
   - **Alphanumeric with symbols**
-- **Minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.
+- **Minutes of inactivity before password is required**: Specify the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
-- **Remember password history** : Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
-- **Prevent reuse of previous passwords** : If you selected **Remember password history** , specify the number of previously used passwords that cannot be reused.
-- **Require a password when the device returns from an idle state** : Use this setting together with the **Minutes of inactivity before password is required** setting. The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
+- **Remember password history**: Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
+- **Prevent reuse of previous passwords**: If you selected **Remember password history**, specify the number of previously used passwords that cannot be reused.
+- **Require a password when the device returns from an idle state**: Use this setting together with the **Minutes of inactivity before password is required** setting. The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
 
 ### Encryption
 
-- **Require encryption on mobile device** : Set this to **Yes** to require devices to be encrypted in order to connect to resources. Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.
+- **Require encryption on mobile device**: Set this to **Yes** to require devices to be encrypted in order to connect to resources. Devices are encrypted when you choose the setting **Require a password to unlock mobile devices**.
 
 ## Device property settings
 
-- **Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device, after which they can access company resources.
-- **Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.
+- **Minimum OS required**: When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device, after which they can access company resources.
+- **Maximum OS version allowed**: When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.
 
 ## How noncompliant settings work with conditional access policies?
 
@@ -130,7 +130,7 @@ The table below describes how noncompliant settings are managed when a complianc
 
 **Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
 
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+
+**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:+
 
 - The device is blocked if a conditional access policy applies to the user.
 - The company portal notifies the user about any compliance problems.

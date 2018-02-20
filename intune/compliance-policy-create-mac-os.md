@@ -59,7 +59,7 @@ The table below describes how noncompliant settings are managed when a complianc
 
 **Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:
+**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
 
 - The device is blocked if a conditional access policy applies to the user.
 - The company portal notifies the user about any compliance problems.
@@ -76,42 +76,42 @@ You have different categories with different settings to choose from when creati
 
 ### Device Health
 
-- **Require a system integrity protection** : Set this to **Require** to check if your macOS devices have system integrity protection enabled.
+- **Require a system integrity protection**: Set this to **Require** to check if your macOS devices have system integrity protection enabled.
 
 ### Device properties
 
-- **Minimum OS version** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade appears. The user can choose to upgrade their device. After that, they can access company resources.
+- **Minimum OS version**: When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade appears. The user can choose to upgrade their device. After that, they can access company resources.
 
-- **Maximum OS version** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Maximum OS version**: When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
 ### System security settings
 
 #### Password
 
-- **Require a password to unlock mobile devices** : Set this to **Require** so users need to enter a password before they can access their device.
+- **Require a password to unlock mobile devices**: Set this to **Require** so users need to enter a password before they can access their device.
 
-- **Simple passwords** : Set this to **Block** so user can't create a simple password like **1234** or **1111**.
+- **Simple passwords**: Set this to **Block** so user can't create a simple password like **1234** or **1111**.
 
-- **Minimum password length** : Specify the minimum number of digits or characters that the password must have.
+- **Minimum password length**: Specify the minimum number of digits or characters that the password must have.
 
-- **Password type** : Specify whether the user must create an **Alphanumeric** password or a **Numeric** password.
+- **Password type**: Specify whether the user must create an **Alphanumeric** password or a **Numeric** password.
 
-- **Number of non-alphanumeric character in password** : If you set **Required password type** to **Alphanumeric** , use this setting to specify the minimum number of character sets that the password must have. 
+- **Number of non-alphanumeric character in password**: If you set **Required password type** to **Alphanumeric**, use this setting to specify the minimum number of character sets that the password must have. 
 
 	> [!NOTE]
-	> Setting a higher number will require the user to create a password that is more complex.
+	> Setting a higher number requires the user to create a password that is more complex.
 
 	> [!IMPORTANT]
 	> For macOS devices, this setting refers to the number of special characters (for example, **!** , **#** , **&amp;** ) that must be included in the password.
 
-- **Maximum minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.
+- **Maximum minutes of inactivity before password is required**: Specify the idle time before the user must reenter their password.
 
 - **Password expiration (days)**: Select the number of days (between 1 and 250) before the password expires and they must create a new one.
 
-- **Number of previous passwords to prevent reuse** : Specify the number of previously used passwords that cannot be reused.
+- **Number of previous passwords to prevent reuse**: Specify the number of previously used passwords that cannot be reused.
 
 	> [!IMPORTANT]
-	> When the password requirement is changed on a macOS device it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits and the macOS device currently has a 6 digits password, the device remains compliant until the next time the user updates their password on the device.
+	> When the password requirement is changed on a macOS device it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits and the macOS device currently has a six-digit password, the device remains compliant until the next time the user updates their password on the device.
 
 ## To create a device compliance policy
 
