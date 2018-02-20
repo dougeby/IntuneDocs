@@ -124,8 +124,8 @@ Requirements for cloud storage space are as follows:
 App categories can be used to help you sort apps to make them easier for users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**.
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure:
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:

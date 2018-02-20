@@ -45,10 +45,10 @@ There are three different places to monitor the compliance status:
 
 ## Summary view
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
+4. In the **Mobile apps** workload, choose **Monitor** > **App protection status**, to see the summary view:
 
 ![Summary tile on the Intune mobile application management blade](./media/app-protection-user-status-summary.png)
 
@@ -131,7 +131,7 @@ You can export all your app protection policy activities to a single .csv file. 
 
 Follow these steps to generate the App protection report:
 
-1. On the Intune mobile application management blade, choose App protection report.
+1. On the Intune mobile application management blade, choose **App protection report**.
 
 	![Screenshot-6](./media/app-protection-report-csv-2.png)
 

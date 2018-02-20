@@ -39,11 +39,13 @@ App protection policies can be applied to apps running on devices that may or ma
 If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  Create an app protection policy
-1.  In the **Mobile apps** workload, choose **Manage** > **App protection policies**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Choose **Mobile apps**, then choose **Manage** > **App protection policies**.
 
 2.  This opens the **App protection policies** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
 
-  ![Screenshot of the Add a policy blade](./media/app-protection-add-policy.png)
+    ![Screenshot of the Add a policy blade](./media/app-protection-add-policy.png)
 
 3.  Type a name for the policy, add a brief description, and select the platform type to create a policy for iOS or Android. You can create more than one policy for each platform.
 
@@ -69,12 +71,15 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 ## Deploy a policy to users
 
-1.  In the **Policy** blade, choose  **User groups**, which opens the **User groups** blade. Choose **Add user group** in the **User groups** blade to open the **Add user group** blade.
+1. In the **App protection policies** blade, select a policy.
 
-  ![Screenshot of the User groups blade with the Add user group menu option highlighted](./media/app-protection-policy-add-users.png)
+1. In the **Policy** blade, choose  **Assignments**, which opens the **Intune App Protection - Assignments** blade. Choose **Select groups to include** in the **Assignments** blade to open the **Select groups to include** blade.
+
+   ![Screenshot of the Assignments blade with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
 
 2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
-  ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+  
+    ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
 You have now created a policy and deployed it to users.
 
@@ -94,7 +99,7 @@ To see the effect of the changes immediately, the end user will have to log out 
 
 ### To change the list of apps associated with the policy
 
-1.  In  the **App policy** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
+1.  In  the **App protection policies** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
 
 2.  In the policy blade, choose **Targeted apps** to open the list of apps.
 
@@ -102,18 +107,17 @@ To see the effect of the changes immediately, the end user will have to log out 
 
 ### To change the list of user groups
 
-1.  In  the **App policy** blade, choose the policy you want to change. This opens the blade specific to the policy you selected.
+1.  In  the **App protection policies** blade, choose the policy you want to change. This opens the blade specific to the policy you selected.
 
-2.  In the policy blade, choose **User groups** to open the **User group** blade that shows the list of current user groups who have this policy.
+2.  In the policy blade, choose **Assignments** to open the **Intune App Protection - Assignments** blade that shows the list of current user groups who have this policy.
 
-3.  To add a new user group to the policy, choose **Add user group**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+3.  To add a new user group to the policy, on the **Include** tab choose **Select groups to include**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
 
-4.  To delete a user group, highlight the user group you want to remove. Then choose the ellipses (…), and choose **Delete** to remove the user group.
-  ![Screenshot showing Delete option ](./media/app-protection-policy-delete-user.png)
+4.  To delete a user group, on the **Exclude** tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.
 
 ### To change policy settings
 
-1.  In the **App policy** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
+1.  In the **App protection policies** blade, choose the policy you want to change. This opens a blade specific to the policy you just selected.
 
 
 2.  Choose **Policy settings** to open the **Policy settings** blade.

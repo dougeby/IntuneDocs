@@ -51,21 +51,20 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 
 ## How to assign an app
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
 2. On the list of apps blade, click the app you want to assign.
 3. On the <*app name*> - **Overview** blade, choose **Manage** > **Assignments**.
-4. Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.
+4. Choose **Add Group** then, on the **Add group** blade, choose the Azure AD groups to include or exclude from assigning the app.
 5. For each app you choose, choose an **assignment type** for the app from:
-	- **Available** - Users install the app from the Company Portal app or website.
-	- **Not Applicable** - The app is not installed or shown in the Company Portal.
+	- **Available for enrolled devices** - Users install the app from the Company Portal app or website.
+	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
 	- **Required** - The app is installed on devices in the selected groups.
 	- **Uninstall** - The app is uninstalled from devices in the selected groups.
-	- **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune.
-6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is   run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
-6. Once you are done, choose **Save**.
+6. **For iOS apps only** - If you have created an iOS VPN profile that contains per-app VPN settings, you can select it under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
+6. Once you are done, choose **OK** and then choose **Save**.
 
 The app is now assigned to the groups you selected.
 

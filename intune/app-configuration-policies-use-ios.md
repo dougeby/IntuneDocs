@@ -49,8 +49,8 @@ Once you have selected the included groups for your application configuration po
 
 ## Create an app configuration policy
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Choose the **Mobile apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
@@ -61,8 +61,8 @@ Once you have selected the included groups for your application configuration po
     - **Device enrollment type**<br>
       Choose **Managed devices**.
 6. Select **iOS** for **Platform**.
-7.	Choose **Associated App**. Then, on the **Associated App** blade, choose the managed app to which you want to apply the configuration.
-8.	On the **Add Configuration Policy** blade, choose **Configuration settings**.
+7.	Choose **Associated app**. Then, on the **Associated app** blade, choose the managed app to which you want to apply the configuration and select **OK**.
+8.	On the **Add configuration policy** blade, choose **Configuration settings**.
 9. Select **Configuration settings format**. Select one of the following:
     - **[Use configuration designer](#use-configuration-designer)**
     - **[Enter XML data](#enter-xml-data)**

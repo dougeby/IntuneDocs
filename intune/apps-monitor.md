@@ -32,9 +32,9 @@ ms.custom: intune-azure
 
 Intune provides a number of ways in which you can monitor the properties of apps you manage, as well as their assignment status.
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. In the **Mobile Apps** workload, choose **Apps** in the **Manage** group.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Choose **Mobile Apps**, then choose **Apps** in the **Manage** group.
 5. In the list of apps blade, choose an app. You'll then see the <*app name*> **Device install status** blade.
 
 ## App overview blade
