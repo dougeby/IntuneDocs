@@ -88,7 +88,7 @@ For example, when a user connects to any of these sites, the iOS device uses the
 > [!NOTE]
 > These URLs must be properly formatted FQDN. Apple requires these to be in the form `http://<yourURL.domain>`
 
-The URL matching patterns must begin with either `http://` or `https://`. A simple string match is performed, so the URL prefix `http://www.contoso.com/` does not match `http://www.contoso.com:80/`. With iOS 9.0 or later, however, a single wildcard * may be used to specify all matching values. For example, `http://*.contoso.com/`  matches both `http://store.contoso.com/` and `http://www.contoso.com`.
+The URL matching patterns must begin with either `http://` or `https://`. A simple string match is performed, so the URL prefix `http://www.contoso.com/` does not match `http://www.contoso.com:80/`. With iOS 9.0 or later, however, a single wildcard \* may be used to specify all matching values. For example, `http://*.contoso.com/`  matches both `http://store.contoso.com/` and `http://www.contoso.com`.
 The patterns `http://.com` and `https://.com` match all HTTP and HTTPS URLs, respectively.
 
 ### Apps that will use Single Sign On
