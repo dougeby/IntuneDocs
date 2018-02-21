@@ -31,15 +31,15 @@ ms.custom: intune-azure
 
 ## Assign a device profile
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Device configuration**.
-1. On the **Device configuration** blade, choose **Manage** > **Profiles**.
-2. In the list of profiles blade, choose the profile you want to manage, and then, on the <*profile name*> **Reports** blade, choose **Manage** > **Assignments**.
+2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
+2. In the list of profiles, choose the profile you want to manage, and then, on the <*profile name*> **Device configuration profile** blade, choose **Manage** > **Assignments**.
 3. On the next blade, choose either **Include** (to include groups) or **Exclude** (to exclude groups), then choose **Select groups**.
 ![Include and exclude groups from a profile assignment.](./media/group-include-exclude.png)
 4. On the **Select groups** blade, choose the Azure AD groups, which you want to include in, or exclude from the assignment. You can hold down the **CTRL** key to select multiple groups.
-4. When you are done, on the **Select groups** blade, choose **Select**.
+4. When you are done, on the **Select groups** blade, choose **Save**.
 
 
 
