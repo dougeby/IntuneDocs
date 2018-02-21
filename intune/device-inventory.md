@@ -37,7 +37,7 @@ The **Devices** workload gives you insights into the devices you manage, includi
 To view device inventory:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
 
 Now, choose one of the following options:
