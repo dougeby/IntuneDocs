@@ -37,7 +37,7 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Choose the **Mobile apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
@@ -84,7 +84,7 @@ When the assigned app is run on a device, it runs with the settings that you con
 You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions—such as access to location or the device camera—prompt users to accept or deny permissions. For example, if an app uses the device's microphone, the user is prompted to grant the app permission to use the microphone.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Choose **Mobile apps**.
 3. Under **Manage**, choose **App configuration policies**, and then choose **Add**.
 4. Set the following details:

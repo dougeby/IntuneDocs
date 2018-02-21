@@ -70,7 +70,7 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 ## Create a Managed Browser app configuration
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
 4.	On the **App configuration policies** blade, choose **Add**.
 5.	On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.

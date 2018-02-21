@@ -38,7 +38,7 @@ This article provides instructions on how to set up app-based conditional access
 ## To create an app-based conditional access policy
 1.  Go the [Azure portal](https://portal.azure.com) and sign in with your credentials.
 
-2.  Choose **More services**, and type: "Intune".
+2.  Choose **All services**, and type: "Intune".
 
 3.  Choose **Intune App Protection**.
 

@@ -43,7 +43,7 @@ You can remove devices from Intune that are no longer needed, are being repurpos
 ### To factory reset a device
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Devices** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
 5. On the blade showing the device's name, choose **Factory reset**
@@ -130,7 +130,7 @@ Removing company data from an Android for Work device removes all data, apps, an
 ### To remove company data
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Devices** blade, choose **All devices**.
 4. Choose the name of the device from which you want to remove company data.
 5. On the blade showing the device's name, choose **Remove company data**, and then choose **Yes** to confirm.
