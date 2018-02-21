@@ -225,9 +225,6 @@ Intune will support enrolling devices from up to 100 different Apple Device Enro
 
 After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
 
-### Select device categories by using the Access Work or School settings <!-- 1058963 -->
-If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
-
 ### Targeting compliance policies to devices in device groups <!--1307012 -->
 
 You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups.
