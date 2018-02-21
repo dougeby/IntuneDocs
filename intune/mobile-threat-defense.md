@@ -5,8 +5,8 @@ title: Mobile Threat Defense with Intune
 titleSuffix: "Azure portal"
 description: "Protect access to company resources based on device risk"
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article

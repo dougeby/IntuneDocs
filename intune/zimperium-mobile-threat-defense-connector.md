@@ -5,8 +5,8 @@ title: Zimperium MTD connector with Intune
 titleSuffix: Intune on Azure
 description: "Zimperium connector integration with Intune"
 keywords:
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article

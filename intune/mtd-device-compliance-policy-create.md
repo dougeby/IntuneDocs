@@ -5,8 +5,8 @@ title: Create Mobile Threat Defense device compliance policy with Intune
 titlesuffix: "Azure portal"
 description: "Create Mobile Threat Defense device compliance policy in Intune"
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article

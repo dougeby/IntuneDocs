@@ -5,8 +5,8 @@ title: Integrate Zimperium with Intune
 titleSuffix: Intune on Azure
 description: "Integrate Intune with Zimperium"
 keywords:
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
