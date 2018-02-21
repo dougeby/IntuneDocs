@@ -53,8 +53,9 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	- **Service**: **Microsoft Intune**
 	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
 
-	>[!IMPORTANT]
-	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services."
+	>[!IMPORTANT for Premier customers]
+	>- If you are a Premier customer and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
+	>- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
 
 	Choose **Next** to continue.
 4. On the **Problem** blade, to ensure your request is addressed by the right subject matter expert for your problem, select the following options:
@@ -81,6 +82,5 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
-- [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
