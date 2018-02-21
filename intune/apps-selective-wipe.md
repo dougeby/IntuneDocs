@@ -44,7 +44,7 @@ To selectively remove company app data, create a wipe request by using the steps
 
 1.  Sign in to the [Azure portal](https://portal.azure.com).
 
-2.  Choose **More Services**, type **Intune** in the filter textbox, and select **Intune**. The Intune pane opens, choose the **Mobile apps** pane.
+2.  Choose **All services**, type **Intune** in the filter textbox, and select **Intune**. The Intune pane opens, choose the **Mobile apps** pane.
 
 	![Screenshot of the Microsoft Intune pane](./media/apps-selective-wipe01.png)
 

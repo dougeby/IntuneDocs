@@ -40,7 +40,7 @@ Device compliance policies are created for each platform form the Intune Azure p
 ## To create a device compliance policy
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 1. From the **Intune** pane, choose **Device compliance**. Under **Manage**, choose **Policies** and choose **Create policy**.
 3. Choose **Settings Configure** to specify the **System Security**, **Device Health**, and **Device Properties** settings here. When you are done, choose **OK**.
 

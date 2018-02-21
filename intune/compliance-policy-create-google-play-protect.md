@@ -36,7 +36,7 @@ The compliance policy that requires these settings can then be targeted to a gro
 ## Create a compliance policy
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 2. Choose **Device compliance** in the **Manage** group. 
 3. Choose **Policies**, and choose **Create policy**.
 4. Type the policy **Name** and **Description**.

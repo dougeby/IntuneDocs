@@ -94,7 +94,7 @@ You must create a trusted certificate profile before you can create a SCEP or PK
 ### To create a trusted certificate profile
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** pane, choose **Device configuration**.
 2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
 3. On the profiles pane, choose **Create profile**.

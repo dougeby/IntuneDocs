@@ -119,7 +119,7 @@ You have different categories with different settings to choose from when creati
 
 2. After you've successfully signed in, you can see the **Azure Dashboard**.
 
-3. Choose **More services** from the left menu, then type **Intune** in the text box filter.
+3. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 4. Choose **Intune**, you can see the **Intune Dashboard**.
 

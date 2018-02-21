@@ -107,7 +107,7 @@ You need a root or intermediate CA certificate on each device for authentication
 ![ConnectorDownload][ConnectorDownload]
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 2. On the **Intune** blade, select **Device configuration**. 
 3. On the **Device configuration** blade, select **Certification Authority**. 
 4. Click **Add** and select **Download the connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
