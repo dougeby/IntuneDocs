@@ -37,7 +37,7 @@ As an IT admin, you must ensure that managed devices are providing the resources
 The **Devices** workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices. To access the workload:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. In **Intune**, choose **Devices**.
 4. You can view information about devices and perform the remote device actions as follows:
 	- **Overview** - A snapshot of the enrolled devices you can manage.
