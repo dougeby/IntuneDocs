@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
