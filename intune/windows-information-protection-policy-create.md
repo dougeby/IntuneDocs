@@ -5,9 +5,9 @@ title: Create and deploy Windows Information Protection (WIP) app protection pol
 titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: Erikre
+ms.author: erikre
+manager: doubeby
 ms.date: 02/16/2018
 ms.topic: article
 ms.prod:
@@ -169,7 +169,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
  
     Once you have the apps showing up in the WIP Learning logging report, you can add them to your app protection policies.
 
-## Allow Windows Search Indexer to search encrypted items <!-- 1469193 -->
+## Allow Windows Search Indexer to search encrypted items
 Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it indexes items that are encrypted, such as the Windows Information Protection (WIP) protected files.
 
 This app protection policy option is in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**. 
