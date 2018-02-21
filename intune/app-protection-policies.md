@@ -40,7 +40,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
 ##  Create an app protection policy
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 1. Choose **Mobile apps**, then choose **Manage** > **App protection policies**.
 
 2.  This action opens the **App protection policies** pane, where you create new policies and edit existing policies. Choose **Add a policy**.

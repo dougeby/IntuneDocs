@@ -44,7 +44,7 @@ You can only assign apps using this method if they are free of charge in the app
 ## Step 1 - Search for the app in the store
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Manage > Apps**.
 5. Above the list of apps, choose **Add**.

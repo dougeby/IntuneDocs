@@ -71,7 +71,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 You can find most things app-related in the **Mobile Apps** workload that you can access as follows:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 
 	![The Mobile Apps workload](./media/apps-workload.png)

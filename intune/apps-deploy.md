@@ -52,7 +52,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 ## How to assign an app
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
 2. On the list of apps blade, click the app you want to assign.
