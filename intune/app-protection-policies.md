@@ -44,7 +44,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
   ![Screenshot of the 'Add a policy'](./media/app-protection-add-policy.png)
 
-3.  Type a name for the policy, add a brief description, and select the platform type for your policy. Note at you can create more than one policy for each platform.
+3.  Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
 4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating. 
 5. Once you've selected the apps, choose **Select** to save your selection.
