@@ -38,7 +38,7 @@ This action can be used to help remove pre-installed (OEM) apps that are often d
 ## How to use Fresh Start
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** pane, choose **Devices**.
 4. On the **Devices** pane, choose **All devices**.
 5. From the list of devices you manage, choose a Windows 10 desktop device, and then choose the **Fresh Start** device remote action.
