@@ -8,7 +8,7 @@ description: Organize users into groups to make it easier to manage the policies
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod:

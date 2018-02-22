@@ -5,7 +5,7 @@ description: Reference topic for the Devices category of entity collections in t
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -146,7 +146,7 @@ The **MdmStatuses** entity indicates compliance state of the device.
 |---------|------------|--------|
 | 0 |Unknown |Device's compliance state is unknown. |
 | 1 |Compliant |The device is compliant. |
-| 2 |Noncompliant |The device is non-compliant. |
+| 2 |Noncompliant |The device is noncompliant. |
 | 3 |Conflict |The device's compliance resulted in s conflict. |
 | 4 |Error |There was error in readign the device's compliance state. |
 

@@ -8,7 +8,7 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/27/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

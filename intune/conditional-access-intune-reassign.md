@@ -7,7 +7,7 @@ description: Migrate conditional access policies from Intune classic portal to t
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod:

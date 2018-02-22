@@ -6,7 +6,7 @@ description: Enroll a Windows 10 1511 device into Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod:
@@ -56,7 +56,7 @@ ms.custom: intune-enduser
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)
 
-Still can't access your work or school email, files, or other data? Try to fix your access by [troubleshooting issues with your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). If it still doesn't work, you'll need to contact your company support for further help.
+Still can't access your work or school email, files, or other data? Try to fix your access by [troubleshooting issues with your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). If it still doesn't work, you need to contact your company support for further help.
 
 An easy way to get help from your company support is through the contact information available in the Company Portal app, which also lets you find and download recommended and required apps for your daily work. It's possible that you already have the Company Portal app installed on your device. A quick way to check is to look for __Company Portal__ in your __All apps__ list.
 

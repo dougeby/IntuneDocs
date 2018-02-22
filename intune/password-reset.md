@@ -5,7 +5,7 @@ title: Reduce help desk costs
 description: Reducing help desk costs with self-service password reset 
 keywords: Azure Active Directory SSPR password reset
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 08/27/2017
 ms.topic: article
 ms.prod:
@@ -41,7 +41,7 @@ You can allow employees to reset work and school account passwords without help 
 ## Next steps
 
 Learn more about the following topics:
-* [Password best practices](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [Password best practices](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licensing self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 Want help enabling this or other EMS or Office 365 scenarios? If you have at least 150 licenses for Microsoft 365, Enterprise Mobility + Security, or Azure Active Directory Premium, use your [FastTrack benefits](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).

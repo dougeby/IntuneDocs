@@ -6,7 +6,7 @@ description: This guide walks you through the various details involved in migrat
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/11/2017
 ms.topic: article
 ms.prod:

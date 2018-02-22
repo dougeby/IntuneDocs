@@ -95,7 +95,7 @@ A device may be blocked from Conditional Access without receiving an activation 
 - Check the Exchange Connector logs for sendemail activity and check for errors. An example of the command to search for is SendEmail from notification account to useremail.
 - Before the Exchange Connector blocks the device, it sends the activation email. If the device is offline, it may not receive the activation email. Check if the device email client has email retrieval using Push instead of Poll as this could also cause the user to miss the email. Switch to Poll and see if the device receives the email.
 
-## Non-compliant device not blocked
+## Noncompliant device not blocked
 
 If you encounter a device that is not compliant but continues to have access, take the following steps.
 

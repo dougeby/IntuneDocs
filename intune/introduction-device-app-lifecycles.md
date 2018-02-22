@@ -6,7 +6,7 @@ description: Overview of the device and app lifecycles with Intune.
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

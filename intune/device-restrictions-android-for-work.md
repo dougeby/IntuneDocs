@@ -7,13 +7,12 @@ description: Learn the Intune settings you can use to control device settings an
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 2/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 
 # optional metadata
 
@@ -59,7 +58,7 @@ ms.custom: intune-azure
 ### Work profile password
 - **Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile. By default, the end user has the option to use the two separately defined PINs or they can elect to combine them into the stronger of the two.
 - **Minimum password length** - Enter the minimum number of characters the user's password must contain (from **4**-**16**)
-- **Maximum minutes of inactivity until screen locks** - Select the amount of time before the work profile locks. The user must then enter their credentials to regain access.
+- **Maximum minutes of inactivity until work profile locks** - Select the amount of time before the work profile locks. The user must then enter their credentials to regain access.
 - **Number of sign-in failures before wiping device** - Enter the number of times an incorrect password can be entered before the work profile is wiped from the device.
 - **Password expiration (days)** - Enter the number of days until an end user's password must be changed (from **1**-**255**).
 - **Required password type** - Select the type of password that must be set on the device. Choose from:

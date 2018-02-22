@@ -7,7 +7,7 @@ description: Learn the Intune settings you can use to configure Wi-Fi connection
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
@@ -39,6 +39,7 @@ ms.custom: intune-azure
 - **SSID** - Short for service set identifier. This is the real name of the wireless network that devices will connect to. However, users only see the network name you created above when they choose the connection.
 - **Connect automatically** - Makes the device connect whenever it is in the range of this network.
 - **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
+- **Pre-shared key** - 
 - **Proxy settings** - Choose from:
 	- **None** - No proxy settings will be configured.
 	- **Manual** - Enter the **Proxy server address** (as an IP address), and it's associated **Port number**.

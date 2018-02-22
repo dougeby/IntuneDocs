@@ -7,7 +7,7 @@ description: Learn the Intune settings you can use to control device settings an
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/11/2017
 ms.topic: article
 ms.prod:
@@ -100,7 +100,7 @@ In the [Apps section of Google Play](https://play.google.com/store/apps), search
 
 Open the installation page for the app, and then copy the URL to the clipboard. You can now use this URL in either the compliant or noncompliant apps list.
 
-Example: Search Google Play for Microsoft Office Mobile. Use the URL: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Example: Search the [Apps section of Google Play](https://play.google.com/store/apps) for **Microsoft Planner**. Use the URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### Additional options
 
@@ -125,7 +125,7 @@ Additionally, you can also specify installed apps that will be hidden from the d
 
 For each setting, configure a list of apps using one of the following:
 
-- **Add apps by package name** - Primarily used for line of business apps. Enter the app name, and the name of the app package.
+- **Add apps by package name** - Primarily used for line-of-business apps. Enter the app name, and the name of the app package.
 - **Add apps by URL** - Enter the app name, and its URL in the Google Play store.
 - **Add managed apps** - From the list of apps you manage with Intune, select the app you require.
 

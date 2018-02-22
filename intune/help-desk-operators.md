@@ -5,7 +5,7 @@ description: Help desk staff use the troubleshooting portal to solve users' tech
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
 ms.prod:

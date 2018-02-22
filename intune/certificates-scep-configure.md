@@ -5,13 +5,12 @@ description: Learn how to configure your infrastructure, then create and assign 
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 12/09/2017
+manager: dougeby
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 
 
 # optional metadata
@@ -39,7 +38,7 @@ This topic shows how to configure your infrastructure, then create and assign Si
 -  **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
 The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. 
+-  **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector. 
 -  **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
@@ -91,7 +90,7 @@ Before you can configure certificate profiles you must complete the following ta
 Create a domain user account to use as the NDES service account. You specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
-In this task you:
+In this task, you will:
 
 -   Configure a certificate template for NDES
 
@@ -197,7 +196,7 @@ In this task you:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### Step 4 - Configure NDES for use with Intune
-In this task you:
+In this task, you will:
 
 -   Configure NDES for use with the issuing CA
 
@@ -300,10 +299,10 @@ In this task you:
 4. Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
 #### Step 5 - Enable, install, and configure the Intune certificate connector
-In this task you:
+In this task, you will:
 
 - Enable support for NDES in Intune.
-- Download, install, and configure the Certificate Connector on a server in your environment. To support high availability, you can install multiple Certificate Connectors on different servers.
+- Download, install, and configure the Certificate Connector on the server hosting the Network Device Enrollment Service (NDES) role a server in your environment. To increase scalability of the NDES implementation in your organization, you can install multiple NDES servers with a Microsoft Intune Certificate Connector on each NDES server.
 
 ##### To download, install, and configure the certificate connector
 ![ConnectorDownload](./media/certificates-download-connector.png)   
@@ -313,7 +312,7 @@ In this task you:
 3. On the **Intune** blade, select **Device Configuration**.
 4. On the **Device Configuration** blade, select **Certification Authority**.
 5. Click **Add** and select **Download Connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
-6.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on a Windows Server 2012 R2 server. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
+6.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on the server hosting the Network Device Enrollment Service (NDES) role. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
@@ -332,6 +331,9 @@ In this task you:
 5.  In the **Certificate Connector** UI:
 
     Click **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+
+    > [!IMPORTANT]
+    > The user account must be assigned a valid Intune license. If the user account does not have a valid Intune license, then NDESConnectorUI.exe fails.
 
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 
