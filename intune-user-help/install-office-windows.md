@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: intune-enduser
 
 There are many ways you can install the Office suite on to your Windows 10 device. Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal.
 
-<!--*image of company portal app store with conflicting versions of office side by side*-->
+![The Company Portal app for Windows 10 showing 2 versions of Office side by side.](./media/multiple-office-installs-cp-win10.png)
 
 When your company makes Office available, you should only install one version of Office. If you try to install both, you'll remove the one you had installed first.
 
