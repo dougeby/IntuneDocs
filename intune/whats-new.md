@@ -181,10 +181,118 @@ Offline apps that you purchased from the Microsoft Store for Business are now sy
 
 When you deploy the Gmail app into an Android for Work profile, you can now prevent end users from manually adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
 
+## Week of February 5, 2018
+
+### Device enrollment
+
+#### New option for user authentication for Apple bulk enrollment <!-- 747625 eeready -->
+
+> [!NOTE]
+> New tenants see this right away. For existing tenants, this feature is being rolled out through April. Until this roll out is complete, you might not have access to these new features.
+
+Intune now gives you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
+
+- Apple Device Enrollment Program
+- Apple School Manager
+- Apple Configurator Enrollment
+
+When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
+
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so doesn't receive configurations or policies of user groups. It only receives configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point, the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+
+#### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 eeready -->
+
+Intune now supports enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+
+After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
+
+### Remote printing over a secure network <!-- 1709994  -->
+PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
+
+## Week of January 29, 2018
+
+### Device enrollment
+
+#### Alerts for expired tokens and tokens that will soon expire <!-- 1639263 -->
+The overview page now shows alerts for expired tokens and tokens that will soon expire. When you click on an alert for a single token, you'll go to the token's details page.  If you click on alert with multiple tokens, you'll go to a list of all tokens with their status. Admins should renew their tokens before the expiration date.
+
+### Device management
+
+#### Remote "Erase" command support for macOS devices <!-- 1438084 -->
+
+Admins can issue an Erase command remotely for macOS devices.
+
+> [!IMPORTANT]
+> The erase command can’t be reversed and should be used with caution.
+
+The erase command removes all data, including the operating system, from a device. It also removes the device from Intune management. No warning is issued to the user and the erasure occurs immediately upon issuing the command.
+
+You must configure a 6-digit recovery PIN. This PIN can be used to unlock the erased device, at which point reinstallation of the operating system will begin. After erasure has started, the PIN appears in a status bar on the device’s overview blade in Intune. The PIN will remain as long as the erasure is underway. After erasure is complete, the device disappears entirely from Intune management. Be sure to record the recovery PIN so that whoever is restoring the device can use it.
+
+#### Revoke licenses for an iOS Volume Purchasing Program token <!-- 820870 --> 
+You can revoke the license of all iOS Volume Purchasing Program (VPP) apps for a given VPP Token.
+
+### App management
+
+#### Revoking iOS Volume-Purchase Program apps  <!-- 820863 -->
+For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you can revoke the associated device-based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
+
+#### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
+The **Built-in** app type makes it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
+
+#### Including and excluding app assignment based on groups <!-- 1406920 -->
+
+During app assignment and after selecting an assignment type, you can select the groups to include, as well as the groups to exclude.
+
+#### Website Learning Mode <!-- 1631908 -->
+
+Intune now has an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
+
+#### Approve the Company Portal app for Android for Work <!--1797090 -->
+If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
+
+#### FaceID on iOS devices <!-- 1807377 -->
+Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
+
+### Device configuration
+
+#### You can assign an application configuration policy to groups by including and excluding assignments  <!-- 1480316 --> 
+
+You can assign an application configuration policy to a group of users and devices by using a combination of including and excluding assignments. Assignments can be chosen as either a custom selection of groups or as a virtual group. A virtual group can include **All users**, **All Device**, or **All Users + All Devices**.
+
+#### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
+You can create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education, and Windows 10 Professional Education N.
+For details about Windows 10 edition upgrades, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
+
+#### Conditional Access policies for Intune is only available from the Azure portal  <!-- 1737088 1634311 -->
+
+Starting with this release, you must configure and manage your Conditional Access policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
+
+#### Updates to compliance emails <!--1637547 -->
+
+When an email is sent to report a noncompliant device, details about the noncompliant device are included. 
+
+
+## Week of January 22, 2018
+
+### Intune apps
+
+#### New functionality for the "Resolve" action for Android devices <!--1583480-->
+
+The Company Portal app for Android is expanding the "Resolve" action for **Update device settings** to resolve [device encryption issues](/intune-user-help/encrypt-your-device-android).
+
+#### Remote lock available in Company Portal app for Windows 10 <!--676506-->
+End users can now remotely lock their devices from the Company Portal app for Windows 10. This will not be displayed for the local device they're actively using.
+
+#### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
+End users with Windows devices will be able to tap the noncompliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
 ## Week of December 11, 2017
 
 ### Device configuration
+
+#### New automatic redeployment setting <!-- 1469168 -->
+The **Automatic redeployment** setting allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. This setting can be found under Windows 10 > Device restrictions > General > Automatic redeployment. For details, see [Intune device restriction settings for Windows 10](device-restrictions-windows-10.md#general).
 
 #### Support for additional source editions in the Windows 10 edition upgrade policy  <!-- 903672,  1119689 -->
 You can now use the Windows 10 edition upgrade policy to upgrade from additional Windows 10 editions (Windows 10 Pro, Windows 10 Pro for Education, Windows 10 Cloud, etc.). Prior to this release, the supported edition upgrade paths were more limited. For details, see [How to configure Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md).
