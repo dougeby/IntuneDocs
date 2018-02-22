@@ -5,8 +5,8 @@ title: Lookout Mobile Threat Defense connector with Intune
 titlesuffix: "Azure portal"
 description: Set up Lookout Mobile Threat Defense connector with Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article

@@ -68,8 +68,7 @@ There are additional benefits to using MDM with App protection  policies, and co
 
 
 ### Supported platforms for app protection polices
--   iOS 9 or later
--   Android 4.4 or later
+Intune app protection policies platform support is aligned with Office application platform support. For details, see [Office System Requirements](https://products.office.com/en-US/office-system-requirements).
 
 Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  How app protection policies protect app data
@@ -79,6 +78,7 @@ Windows devices are currently not supported. However, when you enroll Windows 10
 ![Image that shows data can move freely between apps when there are no App protection policies in place](./media/apps-without-protection-policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
+
 
 ### Data protection with app protection policies
 
@@ -142,3 +142,6 @@ For example, when a user starts the OneDrive app by using their work account, th
 ##  Next steps
 
 [How to create and deploy app protection policies with Microsoft Intune](app-protection-policies.md)
+
+## See also
+3rd party apps such as the Salesforce mobile app work with Intune in specific ways to protect corporate data. To learn more about how the Salesforce app in particular works with Intune (including MDM app configurations settings), see [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

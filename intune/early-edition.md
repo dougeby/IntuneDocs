@@ -45,6 +45,10 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1802 start -->
 
+### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
+
+On the Enrollment Overview page, you will be able to view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you will be able to drill into details to find troubleshooting advice and remediation suggestions.
+
 ### Prevent end users from adding or removing accounts in the work profile <!-- 1728700 -->    
 When you deploy the Gmail app into an Android for Work profile, you will be able to prevent end users from adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
 
@@ -80,9 +84,6 @@ For example, you can add the Webex package as an exception to the MAM data trans
 ### Customize your Company Portal themes with hex codes <!--1049561 eeready-->
 
 You will be able to customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune will determine the text color that provides the highest level of contrast between the text color and the background color per [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20). You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
-
-### Select device categories by using the Access Work or School settings <!-- 1058963 --> 
-If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
 
 ### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --> 
 
@@ -223,9 +224,6 @@ When using the Company Portal option, Intune skips user authentication in the iO
 Intune will support enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
 
 After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
-
-### Select device categories by using the Access Work or School settings <!-- 1058963 -->
-If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school** or during the out-of-box experience.
 
 ### Targeting compliance policies to devices in device groups <!--1307012 -->
 

@@ -34,8 +34,8 @@ ms.custom: intune-azure
 
 Device compliance policies are created for each platform form the Intune Azure portal. 
 
-- To learn more about what compliance policy is see [What is a device compliance](device-compliance.md) topic.
-- To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
+- To learn more about compliance policies, see [What is a device compliance](device-compliance.md).
+- To learn about the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
 
 ## To create a device compliance policy
 
@@ -43,7 +43,6 @@ Device compliance policies are created for each platform form the Intune Azure p
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 1. From the **Intune** pane, choose **Device compliance**. Under **Manage**, choose **Policies** and choose **Create policy**.
 3. Choose **Settings Configure** to specify the **System Security**, **Device Health**, and **Device Properties** settings here. When you are done, choose **OK**.
-
 <!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
@@ -57,7 +56,6 @@ To assign a compliance policy to users, choose a policy that you have configured
 
 1. Choose the policy and choose **Assignments**. This opens the pane where you can select **Azure Active Directory security groups** and assign them to the policy.
 2. Choose **Selected groups** to open the pane that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this policy to apply to and choose **Save** to deploy the policy to users.
-
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
 <!---##  Compliance policy settings--->
