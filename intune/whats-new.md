@@ -102,18 +102,6 @@ For example, you can add the Webex package as an exception to the MAM data trans
 #### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
 A setting in the Windows Information Protection (WIP) policy now allows you to control whether WIP-encrypted data is included in Windows search results. Set this app protection policy option by selecting **Allow Windows Search Indexer to search encrypted items** in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**. For more information, see [Allow Windows Search Indexer to search encrypted items](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items).
 
-#### New Windows Defender Application Guard settings <!-- 1631890 -->
-
-- **Enable graphics acceleration**
-
-Administrators can now enable a virtual graphics processor for Windows Defender 
-Application Guard.  This setting allows the CPU to offload graphics rendering to the vGPU.  This can improve performance when working with graphics intense websites or watching video within the container.
-
-- **SaveFilestoHost**
-
-Administrators can now enable files to pass from Microsoft Edge running in the 
-container to the host file system.  Turning this on allows users to download files from Microsoft Edge in the container to the host file system
-
 #### Configuring a self-updating mobile MSI app <!-- 1740840 -->
 You can configure a known self-updating mobile MSI app to ignore the version check process. This capability is useful to avoid getting into a race condition. For instance, this type of race condition could occur when the app being auto-updated by the app developer is also being update by Intune. Both could try to enforce a version of the app on a Windows client, which could create a conflict. For these automatically updated MSI apps, you can configure the **Ignore app version** setting in the **App information** blade. When this setting is switched to **Yes**, Microsoft Intune will ignore the app version installed on the Windows client. 
 
