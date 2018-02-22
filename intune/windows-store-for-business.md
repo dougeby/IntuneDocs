@@ -5,10 +5,10 @@ title: Manage apps from Microsoft Store for Business
 titlesuffix: "Azure portal"
 description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track them."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 11/20/2017
+manager: dougeby
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ The [Microsoft Store for Business](https://www.microsoft.com/business-store) giv
 * Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
 * Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
-* Apps managed by Windows Store for Business will automatically revoke licenses when a user leaves the enterprise, or when the administrator removes the user and the user devices.
+* Apps managed by Microsoft Store for Business will automatically revoke licenses when a user leaves the enterprise, or when the administrator removes the user and the user devices.
 
 ## Before you start
 
@@ -44,12 +44,15 @@ Review the following information before you start syncing and assigning apps fro
 
 - Configure Intune as the mobile device management authority for your organization.
 - You must have signed up for an account on the Microsoft Store for Business.
-- Once you have associated a Windows Business Store account with Intune, you cannot change to a different account in the future.
+- Once you have associated a Microsoft Business Store account with Intune, you cannot change to a different account in the future.
 - Apps purchased from the store cannot be manually added to or deleted from Intune. They can only be synchronized with the Microsoft Store for Business.
-- Intune synchronizes both online and offline licensed apps you have purchased from the Microsoft Store for Business.
-- Only offline apps that are free of charge can be synced to Intune.
+- Both online and offline licensed apps that you have purchased from the Microsoft Store for Business are synced into the Intune portal. You can then deploy these apps to device groups or user groups. 
+- Online app installations are managed by the store.
+- Offline apps that are free of charge can also be synced to Intune. These apps are installed by Intune, not by the store.
 - To use this capability, devices must be joined to Active Directory Domain Services, or workplace-joined.
 - Enrolled devices must be using the 1511 release of Windows 10 or later.
+
+Additionally, related sets and Offline Licensed apps synced from the Microsoft Store for Business will now be consolidated into a single app entry in the UI. Any deployment details from the individual packages will be migrated over to the single entry. To view related sets in the Azure portal, select **App licenses** from the **Mobile apps** blade.
 
 ## Associate your Microsoft Store for Business account with Intune
 Before you enable synchronization in the Intune console, you must configure your store account to use Intune as a management tool:
@@ -67,11 +70,12 @@ You can now continue, and set up synchronization in the Intune console.
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Mobile apps**.
-1. On the **Mobile Apps** blade, choose **Setup** > **Microsoft Store for Business**.
-2. Click **Enable**.
-3. If you haven't already done so, click the link to sign up for the Microsoft Store for Business and associate your account as detailed previously.
-5. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business is displayed in the Azure portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
-6. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
+4. On the **Mobile Apps** blade, choose **Setup** > **Microsoft Store for Business**.
+5. Click **Enable**.
+6. If you haven't already done so, click the link to sign up for the Microsoft Store for Business and associate your account as detailed previously.
+7. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business is displayed in the Azure portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
+8. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
+9. Click **Save**.
 
 ## Synchronize apps
 
