@@ -58,7 +58,7 @@ The Zimperium app authorization process follows:
 
 -   Allow the Zimperium service to communicate information related to device health state back to Intune.
 
--   Zimperium syncs with Azure AD Enrollment Group membership to populate its device’s database.
+-   Zimperium syncs with Azure Active Directory (AD) Enrollment Group membership to populate its device’s database.
 
 -   Allow Zimperium admin console to use Azure AD Single Sign On (SSO).
 
@@ -81,7 +81,7 @@ The Zimperium app authorization process follows:
 
 6.  Choose **Accept** to authorize the Zimperium app to communicate with Intune and Azure Active Directory.
 
-7.  After you added the **Zimperium zConsole** and the **zIPS iOS and Android** apps to Azure AD, add the Azure AD security groups so Zimperium can synchronize the Azure AD security group with its service.
+7.  After you added the **Zimperium zConsole** and the **zIPS iOS and Android** apps to Azure AD, add the Azure AD security groups. This allows Zimperium to synchronize the Azure AD security group with its service.
 
 8.  Choose **Finish** to save the configuration and start the first Azure AD security group synchronization.
 
