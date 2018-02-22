@@ -7,13 +7,8 @@ description: "This topic describes the app protection policy settings for Androi
 keywords:
 author: Erikre
 ms.author: erikre
-<<<<<<< HEAD
-manager: doubeby
-ms.date: 02/20/2018
-=======
 manager: dougeby
-ms.date: 02/15/2018
->>>>>>> ec834941bdda7e95a6150f6b341da1d5ac284718
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,9 +24,7 @@ ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
 ---
-
 # Android app protection policy settings
 The policy settings that are described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
