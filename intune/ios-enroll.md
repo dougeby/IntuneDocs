@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Choose how to enroll Windows devices in Intune
+title: Choose how to enroll iOS devices in Intune
 titlesuffix: "Azure portal"
-description: Learn how to set up enrollment of Windows devices in Microsoft Intune."
+description: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -40,7 +40,7 @@ Before you can enable iOS devices, complete the following steps:
 
 ## User-owned iOS devices (BYOD)
 
-You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the iOS Company Portal app from the App Store, and follow enrollment instructions in the app.
+You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
 
 ## Company-owned iOS devices
 For organizations that purchase devices for their users, Intune supports the following iOS company-owned device enrollment methods:

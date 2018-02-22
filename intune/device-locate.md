@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Locate Device** device action displays the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into [lost mode](/intune-azure/manage-devices/lost-mode.md).
+The **Locate Device** device action displays the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into [lost mode](device-lost-mode.md).
 
 ## Supported platforms
 
@@ -44,11 +44,11 @@ The **Locate Device** device action displays the location of a lost or stolen iO
 
 ## How to locate a lost or stolen device
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose an iOS device, and then choose the **Locate Device** remote action.
+4. On the **Devices** blade, choose **All devices**.
+5. From the list of devices you manage, choose an iOS device, choose **...More**, and then choose the **Locate device** remote action.
 6. After the device has been located, it's location is displayed on the **Locate device** blade.
 	![Locate device blade](./media/locate-device.png)
 
@@ -65,4 +65,4 @@ The **Locate Device** device action displays the location of a lost or stolen iO
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
+To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.
