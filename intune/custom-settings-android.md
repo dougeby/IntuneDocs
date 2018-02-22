@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,8 +45,8 @@ This capability is intended to allow you to assign the following Android setting
 ## Custom profile settings for Android devices
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
-2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.
-3. On the **Edit Row** blade, configure the following values for each setting:
+2. On the **Custom OMA-URI Settings** pane, choose **Add** to add a new setting.
+3. On the **Add Row** pane, configure the following for each setting:
 	- **Name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
 	- **Description** - Provide a description that gives an overview of the setting and other relevant information to help you locate it.
 	- **Data type** - Select the data type in which you will specify this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
@@ -56,7 +56,7 @@ This capability is intended to allow you to assign the following Android setting
 
 ## Next steps
 
-When you complete the settings, the profile will be created and appears on the profiles list blade. If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+When you complete the settings, the profile will be created and appears on the profiles list pane. If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
 
