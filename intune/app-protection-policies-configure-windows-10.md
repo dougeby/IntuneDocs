@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,7 +47,7 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
 4. Configure the settings in the  **Restore default MAM URLs** group on the **Configure** blade.
 
    **MAM user scope**  
-   Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.<ul><li>**None**<br>Select if all users can be enrolled in MAM.</li><li>**Some**<br>Select Azure AD groups that contain users who will be enrolled in MAM.</li><li>**All**<br>Select if all users can be enrolled in MAM.</li></ul>
+   Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.<ul><li>**None**<br>Select if no users can be enrolled in MAM.</li><li>**Some**<br>Select Azure AD groups that contain users who will be enrolled in MAM.</li><li>**All**<br>Select if all users can be enrolled in MAM.</li></ul>
 
    **MAM terms of use URL**  
    The MAM terms of use URL is not supported for Microsoft Intune. This input box must be left blank for protection policies to apply.
