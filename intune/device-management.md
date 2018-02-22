@@ -5,10 +5,10 @@ title: Manage devices with Intune
 titleSuffix: "Intune on Azure"
 description: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,7 +47,9 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 	![Monitor device actions](./media/monitor-device-actions.png)
 
-	- **TeamViewer** - TeamViewer service allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](device-profile-android-teamviewer.md).
+	- **Audit logs** - Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Learn more about [Audit logs](monitor-audit-logs.md).
+	- **TeamViewer Connector** - TeamViewer service allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](device-profile-android-teamviewer.md).
+	- **Help and Support** - Troubleshoot, request support, or view Intune status.	
 
 ## Available device actions
 The actions available depend on the device platform, and the configuration of the device.
