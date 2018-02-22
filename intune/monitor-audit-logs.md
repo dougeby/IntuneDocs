@@ -25,7 +25,7 @@ ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 
 ---
 # Audit logs for Intune activities
-Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions, or remote tasks, generate audit events that you can review. You can review audit logs for most Intune workloads. 
+Audit logs provide you with a record of activities that generate a change in Microsoft Intune. Create, Update (edit), Delete, and Assign actions, or remote tasks, generate audit events that you can review. You can review audit logs for most Intune workloads. Auditing is enabled by default for all customers and can't be disabled. Audit events began being recorded on the feature release date of December 2017; prior events are unavailable.
 
 ## Who can access the data?
 Users with the following permissions can review audit logs:
