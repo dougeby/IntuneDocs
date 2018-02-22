@@ -151,7 +151,7 @@ For each setting, configure a list of apps using one of the following:
 
 Kiosk settings apply only to Samsung Knox Standard devices, and only to apps you manage using Intune.
 
-- **Select a managed app** - Choose one of the following options to add one or more managed apps that can run when the device is in kiosk mode. No other apps are allowed to run on the device.
+- **Select a managed app** - Choose one of the following options to add one or more managed apps that can run when the device is in kiosk mode. No other apps are allowed to run on the device. Note that pre-installed browsers apps are not able to be defined as an app allowed to run while the device is in kiosk mode. If a browser is required, consider using the Intune Managed Browser app.
 	- **Add apps by package name**
 	- **Add apps by URL**
 	- **Add managed apps**.
