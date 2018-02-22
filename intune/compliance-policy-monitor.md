@@ -128,7 +128,7 @@ If clicking the **Update button**, the fly out should close and the results shou
 
 ##### Device details
 
-Clicking on a device, opens the **Devices Blade** with the device selected, which provides more details on the device compliance policy setting applied for that device.
+Clicking on a device, opens the **Devices Pane** with the device selected, which provides more details on the device compliance policy setting applied for that device.
 
 When you click on the device policy setting itself, you can see the device compliance policy name originated that device compliance setting targeted by the admin.
 
