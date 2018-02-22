@@ -100,7 +100,7 @@ In the [Apps section of Google Play](https://play.google.com/store/apps), search
 
 Open the installation page for the app, and then copy the URL to the clipboard. You can now use this URL in either the compliant or noncompliant apps list.
 
-Example: Search Google Play for Microsoft Office Mobile. Use the URL: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Example: Search the [Apps section of Google Play](https://play.google.com/store/apps) for **Microsoft Planner**. Use the URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### Additional options
 

@@ -231,7 +231,9 @@ To enable exploit protection, create an XML file representing the system and app
 
 Use **Application control code integrity policies** to choose additional apps that either need to be audited by, or can be trusted to run by Windows Defender Application Control. Windows components and all apps from Windows store are automatically trusted to run.
 
-Applications will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs.
+Applications will not be blocked when running in **audit only** mode. **Audit only** mode logs all events in local client logs.
+
+Once enabled, Application Control can only be disabled by changing the mode from **Enforce** to **Audit only**. Changing the mode from **Enforce** to **Not Configured** results in Application Control continuing to be enforced on assigned devices.
 
 ## Windows Defender Security Center
 

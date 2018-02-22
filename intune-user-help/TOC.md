@@ -104,7 +104,6 @@
 ## [Using your macOS device](using-your-macos-device-with-intune.md)
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
-### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
 
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Send logs to from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md)
 #### [Send logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md)
 #### [My Windows version isn't yet supported](your-windows-version-isnt-yet-supported.md)
+#### [Installing Office 365 on your Windows 10 device](install-office-windows.md)
 #### [Enable Windows encryption](you-need-to-enable-windows-encryption.md)
 #### [My device needs antimalware software](your-device-needs-antimalware-software.md)
 #### [Enable Secure Boot](you-need-to-enable-secure-boot-windows.md)
@@ -150,3 +150,4 @@
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
+### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)

@@ -5,8 +5,8 @@ title: Create Mobile Threat Defense device compliance policy with Intune
 titlesuffix: "Azure portal"
 description: "Create Mobile Threat Defense device compliance policy in Intune"
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -30,13 +30,13 @@ ms.custom: intune-azure
 # Create Mobile Threat Defense (MTD) device compliance policy with Intune
 
 > [!NOTE] 
-> This topic applies to all Mobile Threat Defense partners.
+> This information applies to all Mobile Threat Defense partners.
 
 Intune with MTD helps you detect threats and assess risk on mobile devices. You can create an Intune device compliance policy rule that assesses risk to determine if the device is compliant or not. You can then use a conditional access policy to block access to services based on device compliance.
 
 ## Before you begin
 
-As part of the MTD setup, in the MTD partner console, you created a policy that classifies various threats as high, medium and low. You now need to set the Mobile Threat Defense level in the Intune device compliance policy.
+As part of the MTD setup, in the MTD partner console, you created a policy that classifies various threats as high, medium, and low. You now need to set the Mobile Threat Defense level in the Intune device compliance policy.
 
 Prerequisites for device compliance policy with MTD:
 
@@ -58,13 +58,13 @@ Prerequisites for device compliance policy with MTD:
 
 7.  On the **Device Health** blade, choose the Mobile Threat Level from the drop-down list under the **Require the device to be at or under the Mobile threat Defense Level**.
 
-    a.  **Secured**: This is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+    a.  **Secured**: This level is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
 
-    b.  **Low**: The device is compliant if only low level threats are present. Anything higher puts the device in a noncompliant status.
+    b.  **Low**: The device is compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
 
-    c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high level threats are detected, the device is determined as noncompliant.
+    c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high-level threats are detected, the device is determined as noncompliant.
 
-    d.  **High**: This is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
+    d.  **High**: This level is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
 
 8.  Click **OK** twice, then choose **Create**.
 
@@ -75,12 +75,12 @@ Prerequisites for device compliance policy with MTD:
 
 To assign a device compliance policy to users, choose a policy that you have previously configured. Existing policies can be found in the **Device Compliance policies** blade.
 
-1. Choose the policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
+1. Choose the policy you want to assign to users and choose **Assignments**. This action opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
 
 2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
 
 	> [!NOTE] 
-	> You have applied the policy to users. The devices used by the users who are targeted by the policy will be evaluated for compliance.
+	> You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
 

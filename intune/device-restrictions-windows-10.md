@@ -3,12 +3,12 @@
 
 title: Intune device restriction settings for Windows 10
 titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
+description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,6 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -34,12 +33,10 @@ ms.custom: intune-azure
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
 - **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
+   - This policy setting is not applied if the computer is Azure Active Directory joined and auto-enrollment is enabled. 
+   - This policy setting does not apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
-- **Diagnostic data submission** - Possible values are:
-	- **None** - No data is sent to Microsoft
-	- **Basic** - Limited information is sent to Microsoft
-	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
-	- **Full** Sends the same data as Enhanced, plus additional data about the device state
+
 - **Camera** - Allow or block use of the camera on the device.
 - **OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
 - **Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
@@ -56,6 +53,7 @@ ms.custom: intune-azure
 - **Device discovery** - Block a device from being discovered by other devices.
 - **Task Switcher (mobile only)** - Blocks the task switcher on the device.
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 
 
@@ -74,7 +72,7 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
+- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
 
 ## Privacy
 
@@ -135,7 +133,7 @@ You can add apps that should have a different privacy behavior from what you def
 ## Locked screen experience
 
 - **Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
+- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
 -	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
@@ -274,7 +272,7 @@ You can add apps that should have a different privacy behavior from what you def
 
       - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
+    [Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
 
     Multi-app kiosk configurations include the following settings:
 
