@@ -43,25 +43,25 @@ You can only assign apps using this method if they are free of charge in the app
 
 ## Step 1 - Search for the app in the store
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-4. In the **Mobile apps** workload, choose **Manage** > Apps.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** blade, choose **Mobile apps**.
+4. In the **Mobile apps** workload, choose **Manage > Apps**.
 5. Above the list of apps, choose **Add**.
-6. In the **Add App** blade, choose **Search the App Store**.
-7. In the **Apple App Store** blade, select the App store country locale.
+6. In the **App type** field, select **iOS**.
+6. Choose **Search the App Store**.
+7. In the **Search the App Store** blade, select the App store country locale.
 8. Type the name (or part of the name) in the search box. Intune searches the store and return a list of relevant results.
-9. From the list, choose the app you want, then click **OK**.
+9. From the list, choose the app you want, then click **Select**.
 
 ## Step 2 - Configure app information
 
-1. In the **Add App** blade, choose **App Information**.
-2. In the **Edit App** blade, configure the app information. Once you are done, click **Add**. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
+1. In the **Add app** blade, choose **App information**.
+2. In the **App information** blade, configure the app information. Once you are done, click **Add**. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
 - **Name** -- Type the name of the app for display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, the company portal displays only one of the apps to users.
 - **Description** -- Type a description for the app to displayed to users in the company portal.
 - **Publisher** -- Type the name of the publisher of the app.
 - **Appstore URL** -- Type the app store URL of the app you want to create.
-- **Store country/region** -- Select the App store country locale.
 - **Minimum operating system** -- From the list, choose the minimum operating system version on which the app can be installed. The app will not be installed on a device with an earlier operating system.
 - **Applicable device type** -- From the list, choose the devices that are used by the App.
 - **Category** (optional). Select one or more of the built-in app categories, or a category you created. Categories make it easier for users to find the app when they browse the company portal.

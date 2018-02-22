@@ -44,17 +44,17 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 ## How to sync a device
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose a device, and then choose the **Sync** remote action.
+4. On the **Devices** blade, choose **All devices**.
+5. From the list of devices you manage, choose a device, choose **...More**, and then choose the **Sync** remote action.
 7. Choose **Yes** to confirm the action.
 
 
 ## Retriable error codes
 
-When an administrator runs the **Sync** device action, iOS and Androids apps that failed but  raised a retriable error code will be available to the device. However, apps that raised a non-retriable error code must wait for seven days before they can be made available to the device.
+When an administrator runs the **Sync** device action, iOS and Androids apps that failed but raised a retriable error code will be available to the device. However, apps that raised a non-retriable error code must wait for seven days before they can be made available to the device.
 
 
 | Error Code  | Suggested Description                                                                                                                  | Retriable |
@@ -73,4 +73,4 @@ When an administrator runs the **Sync** device action, iOS and Androids apps tha
 
 ## Next steps
 
-Choose **Device Actions** to see the status of the sync action. 
+Choose **Device actions** to see the status of the sync action. 

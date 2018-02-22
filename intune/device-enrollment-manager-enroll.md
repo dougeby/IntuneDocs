@@ -93,7 +93,7 @@ Removing a device enrollment manager does not affect enrolled devices. When a de
 
 **To remove a device enrollment manager**
 
-1. In the [Azure portal](https://portal.azure.com), choose **More Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. In the [Azure portal](https://portal.azure.com), choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 2. On the Intune blade, choose **Device enrollment**, and then choose **Device enrollment managers**.
 3. On the **Device enrollment managers** blade, select the DEM user, and select **Delete**.
 
