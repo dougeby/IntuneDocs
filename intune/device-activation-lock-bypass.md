@@ -76,11 +76,11 @@ Before you can bypass Activation Lock on devices, you must enable it by followin
 
 The Intune **Bypass Activation Lock** remote device action removes the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose a supervised iOS device, and then choose the **Bypass Activation Lock** device remote action.
+4. On the **Devices** blade, choose **All devices**.
+5. From the list of devices you manage, choose a supervised iOS device, choose **...More**, and then choose the **Bypass Activation Lock** device remote action.
 
 ## Next steps
 
