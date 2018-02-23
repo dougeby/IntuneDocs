@@ -36,7 +36,7 @@ If you are looking for a particular setting, remember that the [Windows 10 devic
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
 1. On the **Custom OMA-URI Settings** pane, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.
-1. For each OMA-URI setting you want to add, enter the following information. Use the list in this topic to learn about the settings you can use:
+1. For each OMA-URI setting you want to add, enter the following information. Use the list in this article to learn about the settings you can use:
 	- **Name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
 	- **Description** - Optionally, enter a description for the setting.
 	- **OMA-URI (case sensitive)** - Specify the OMA-URI you want to supply a setting for.
@@ -62,8 +62,8 @@ In the following screenshot, the setting **Connectivity/AllowVPNOverCellular** h
 
 You’ll find a complete list of all configuration service providers (CSPs) that Windows 10 supports in the [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) in the Windows documentation library.
 
-Not all settings are compatible with all Windows 10 versions. The table in the Windows topic tells you which versions are supported for each CSP.
+Not all settings are compatible with all Windows 10 versions. The table in the Windows article tells you which versions are supported for each CSP.
 
-Additionally, Intune does not support all of the settings listed in the topic. To find out if Intune supports the setting you want, open the topic for that setting. Each setting page shows it’s supported operation. To work with Intune, the setting must support the **Add** or **Replace** operations.
+Additionally, Intune does not support all of the settings listed in the article. To find out if Intune supports the setting you want, open the article for that setting. Each setting page shows it’s supported operation. To work with Intune, the setting must support the **Add** or **Replace** operations.
 
 
