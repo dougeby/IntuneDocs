@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,15 +28,15 @@ ms.custom: intune-azure
 ---
 # Monitor Intune Device compliance policies
 
-Compliance reports help admins to analyze the compliance posture of devices in their organization, and quickly troubleshoot compliance related issues encountered by users inside their organization. You can view information about the overall compliance state of devices, compliance state for an individual setting, compliance state for an individual policy and drill down into individual devices to view specific settings and policies that affect the device.
+Compliance reports help admins to analyze the compliance posture of devices in their organization, and quickly troubleshoot compliance-related issues encountered by users inside their organization. You can view information about the overall compliance state of devices, compliance state for an individual setting, compliance state for an individual policy and drill down into individual devices to view specific settings and policies that affect the device.
 
 ## Before you begin
 
-Follow the steps below to find the **Intune Device compliance dashboard** in the Azure portal:
+Follow these steps to find the **Intune Device compliance dashboard** in the Azure portal:
 
 1.  Go to the [Azure Portal](https://portal.azure.com), and sign in with your Intune credentials.
 
-2.  Choose **More services** from the left menu, then type **Intune** in the text box filter.
+2.  Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 3.  Choose **Intune** &gt; **Device compliance** &gt; **Overview**, then the **Device compliance dashboard** opens.
 
@@ -45,7 +45,7 @@ Follow the steps below to find the **Intune Device compliance dashboard** in the
 
 ## Device compliance dashboard
 
-In the **Device compliance dashboard**, you can monitor the Device compliance policy states, which provides different reports within different tiles that give you the compliance posture of devices in your organization. You can view the following reports:
+In the **Device compliance dashboard**, you can monitor the Device compliance policy states, which provide different reports within different tiles that give you the compliance posture of devices in your organization. You can view the following reports:
 
 -   Overall device compliance aggregate
 
@@ -69,18 +69,18 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
     -   Learn more about Actions for noncompliant devices.
 
--   **Device not synced:** The device failed to report its device compliance policy status because one of the following:
+-   **Device not synced:** The device failed to report its device compliance policy status because one of the following reasons:
 
     -   **Unknown**: The device is offline or failed to communicate with Intune or Azure AD for other reasons.
 
     -   **Error**: The device failed to communicate with Intune and Azure AD, and received an error message with the reason.
 
 > [!IMPORTANT] 
-> Devices that are enrolled into Intune, but not targeted by any device compliance policies will be included in this report under the **Compliant** bucket.
+> Devices that are enrolled into Intune, but not targeted by any device compliance policies are included in this report under the **Compliant** bucket.
 
 #### Drill-down option
 
-From the **Device compliance dashboard**, If you click on the Device compliance tile, you can drill-down into a specific **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by the device compliance policies.
+From the **Device compliance dashboard**, If you click on the Device compliance tile, you can drill down into a specific **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by the device compliance policies.
 
 ![Device compliance dashboard drill-down](./media/idc-2.png)
 
@@ -128,13 +128,9 @@ If clicking the **Update button**, the fly out should close and the results shou
 
 ##### Device details
 
-Clicking on a device, opens the **Devices Blade** with the device selected. This provides more details on the device compliance policy setting applied for that device.
-
-![Device compliance dashboard](./media/idc-6.png)
+Clicking on a device, opens the **Devices Pane** with the device selected, which provides more details on the device compliance policy setting applied for that device.
 
 When you click on the device policy setting itself, you can see the device compliance policy name originated that device compliance setting targeted by the admin.
-
-![Device compliance setting name](./media/idc-7.png)
 
 ### Per-policy device compliance report
 
@@ -142,16 +138,13 @@ This report provides you per compliance policy view and the total number of devi
 
 ![Per-policy device compliance report](./media/idc-8.png)
 
-When you click on the Policy compliance tile, then click on one of the device compliance policies, you’ll be able to see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy.
-
-![Policy compliance tile](./media/idc-9.png)
+When you click on the Policy compliance tile, then click on one of the device compliance policies, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy.
 
 ### Per-setting device compliance report
 
-This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms which the policy settings were applied, and the number of noncompliant devices.
+This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms to which the policy settings were applied, and the number of noncompliant devices.
 
 ![Per-setting device compliance report](./media/idc-10.png)
 
 When you click on the Setting compliance tile, then click on one of the device compliance policy settings, you’ll be able to see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy setting.
 
-![Setting compliance tile](./media/idc-11.png)
