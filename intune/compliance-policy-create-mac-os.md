@@ -30,7 +30,6 @@ ms.custom: intune-azure
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
 ## Before you begin
 
 Before creating and assigning a device compliance policy, review the Intune device compliance policy concepts.

@@ -3,7 +3,7 @@
 
 title: How to create a compliance policy for Windows
 titleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for Windows devices."
+description: Learn how to create a compliance policy for Windows devices.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -47,7 +47,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 -------------------------------
 
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
+**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
 
@@ -85,8 +85,8 @@ You have applied the policy to users. The devices used by the users who are targ
 ### Password
 
 - **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.
-- **Allow simple passwords:** Set this to **Yes** to let users create simple passwords such as &#39; '**1234**'; or ' **1111**'.
-- **Minimum password length:** Specify the minimum number of digits or characters that the user&#39;s password must contain.
+- **Allow simple passwords:** Set this to **Yes** to let users create simple passwords such as '**1234**' or '**1111**'.
+- **Minimum password length:** Specify the minimum number of digits or characters that the user's password must contain.
 - **Required password type:** Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
 
 For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
@@ -100,7 +100,7 @@ For devices that run Windows and accessed with a Microsoft account, the complian
 Setting a higher number for this setting will require users to create passwords that are more complex. For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
 
 - **Minutes of inactivity before password is required:** Specifies the idle time before the user must reenter their password.
-- **Password expiration (days):** Select the number of days before the user&#39;s password expires and they must create a new one.
+- **Password expiration (days):** Select the number of days before the user's password expires and they must create a new one.
 - **Remember password history:** Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 - **Prevent reuse of previous passwords:** If **Remember password history** is selected, specify the number of previously used passwords that cannot be re-used.
 - **Require a password when the device returns from an idle state:** This setting should be used together with the **Minutes of inactivity before password is required** setting. The end users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
@@ -135,7 +135,7 @@ For information on how the HAS service works, see [Health Attestation CSP](https
 
 - **Minimum password length:** - Supported on Windows 8.1.
 
-Specify the minimum number of digits or characters that the user&#39;s password must contain.
+Specify the minimum number of digits or characters that the user's password must contain.
 
 For devices that are accessed with a Microsoft Account, the compliance policy fails to evaluate correctly if **Minimum password length** is greater than eight characters or if **Minimum number of character sets** is more than two characters.
 
@@ -157,7 +157,7 @@ Specify the idle time before the user must reenter their password.
 
 - **Password expiration (days):** -Supported on Windows RT, Windows RT 8.1, and Windows 8.1.
 
-Select the number of days before the user&#39;s password expires and they must create a new one.
+Select the number of days before the user's password expires and they must create a new one.
 
 - **Remember password history:** - Supported on Windows RT, Windows RT, and Windows 8.1.
 
@@ -190,10 +190,10 @@ When a device has an earlier version that the specified OS version, it is report
 
 When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-To find the OS version to use for the **Minimum OS required**, and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.+
+To find the OS version to use for the **Minimum OS required**, and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.
 
 - Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
-- PCs running Windows 10, the version should be set as &quot;10.0&quot;+ the OS Build number returned by the winver command.
+- PCs running Windows 10, the version should be set as "10.0"+ the OS Build number returned by the winver command.
 
 ## Windows Holographic for Business support
 
