@@ -5,8 +5,8 @@ title: Enable Mobile Threat Defense connector with Intune
 titlesuffix: "Azure portal"
 description: Enable Mobile Threat Defense connector in Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article

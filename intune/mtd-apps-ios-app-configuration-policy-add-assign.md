@@ -5,8 +5,8 @@ title: Add and assign MTD apps into Intune
 titleSuffix: Azure portal
 description: "Add MTD apps, Microsoft Authenticator app, and iOS configuration policy with Intune in the Azure portal"
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
