@@ -32,7 +32,7 @@ ms.custom: intune-azure
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md).
 
 > [!Note]
-> For information on new functionality in hybrid mobile device management (MDM), check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
 <!-- Common categories:  
@@ -46,6 +46,34 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of February 5, 2018
+
+### Device enrollment
+
+#### New option for user authentication for Apple bulk enrollment <!-- 747625 eeready -->
+
+> [!NOTE]
+> New tenants see this right away. For existing tenants, this feature is being rolled out through April. Until this roll out is complete, you might not have access to these new features.
+
+Intune now gives you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
+
+- Apple Device Enrollment Program
+- Apple School Manager
+- Apple Configurator Enrollment
+
+When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
+
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so doesn't receive configurations or policies of user groups. It only receives configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point, the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+
+#### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 eeready -->
+
+Intune now supports enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+
+After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
+
+### Remote printing over a secure network <!-- 1709994  -->
+PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
+
 ## Week of January 29, 2018
 
 ### Device enrollment
@@ -55,9 +83,9 @@ The overview page now shows alerts for expired tokens and tokens that will soon 
 
 ### Device management
 
-#### Remote "Erase" command support <!-- 1438084 -->
+#### Remote "Erase" command support for macOS devices <!-- 1438084 -->
 
-Admins can issue an Erase command remotely.
+Admins can issue an Erase command remotely for macOS devices.
 
 > [!IMPORTANT]
 > The erase command can’t be reversed and should be used with caution.
@@ -72,7 +100,7 @@ You can revoke the license of all iOS Volume Purchasing Program (VPP) apps for a
 ### App management
 
 #### Revoking iOS Volume-Purchase Program apps  <!-- 820863 -->
-For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you can revoke the associated device based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
+For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you can revoke the associated device-based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
 
 #### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
 The **Built-in** app type makes it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
@@ -95,7 +123,7 @@ Intune app protection policies now support a setting that controls FaceID on iOS
 
 #### You can assign an application configuration policy to groups by including and excluding assignments  <!-- 1480316 --> 
 
-You can assign an application configuration policy to a group of users and devices by using a combination of including and excluding assignments. Assignments can be chosen as either a custom selection of groups or as a virtual group. A virtual group can include **All users**, **All Device** or **All Users + All Devices**.
+You can assign an application configuration policy to a group of users and devices by using a combination of including and excluding assignments. Assignments can be chosen as either a custom selection of groups or as a virtual group. A virtual group can include **All users**, **All Device**, or **All Users + All Devices**.
 
 #### Support for Windows 10 edition upgrade policy   <!-- 903672(archived), 1119689 -->  
 You can create a Windows 10 edition upgrade policy that upgrades Windows 10 devices to Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education, and Windows 10 Professional Education N.
@@ -136,7 +164,7 @@ You can now use the Windows 10 edition upgrade policy to upgrade from additional
 
 #### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
 
-Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end-users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
+Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
 
 These are the pillars admins can hide from the Windows Defender Security Center device configuration profile settings:
 - Virus and threat protection
@@ -173,7 +201,7 @@ You can now shut down iOS 10.3 supervised devices. This action shuts down the de
 
 #### Disallow date/time changes to Samsung Knox devices <!-- 1468103 -->
 
-We've added a new feature that allows you to block date and time changes on Samsung Knox devices. You can find this in **Device configuration profiles** > **Device restrictions (Android)** > **General**.
+You can now block date and time changes on Samsung Knox devices. You can find this feature in **Device configuration profiles** > **Device restrictions (Android)** > **General**.
 
 #### Surface Hub resource account supported <!-- 1566442  -->
 
@@ -218,7 +246,7 @@ The following are the settings administrators can configure:
      Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
 
 #### Install Office apps on macOS devices <!-- 1494311 -->
-You will now be able to install Office apps on macOS devices. This new app type will allow you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep your apps secure and up-to-date.
+You will now be able to install Office apps on macOS devices. This new app type allows you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep your apps secure and up-to-date.
 
 ### App management
 
@@ -244,7 +272,7 @@ In contrast, the new **Current User** entity collection only contains users who 
 
 ### Updated Graph APIs <!-- 1736360 -->
 
-In this release, we've updated a few of the Graph API's for Intune that are in beta. Please check out the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) for more information.
+We've updated a few of the Graph APIs for Intune that are in beta. Check out the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) for more information.
 
 
 ## Week of December 4, 2017
@@ -269,7 +297,7 @@ might not have remediation suggestions.
 
 As an Intune administrator, you can now [create custom Device Type and Device Limit enrollment restrictions for user groups](enrollment-restrictions-set.md).
 
-The Intune Azure Portal lets you create up to 25 instances of each restriction type which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
+The Intune Azure portal lets you create up to 25 instances of each restriction type, which can then be assigned to user groups. Group-assigned restrictions override the default restrictions.
 
 All the instances of a restriction type are maintained in a strictly ordered list. This order defines a priority value for conflict resolution. A user impacted by more than one restriction instance is only restricted by the instance with the highest priority value. You can change a given instance's priority by dragging it to a different position in the list.
 
@@ -282,7 +310,7 @@ With this update, multiple NDES connectors are supported.
 
 #### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->
 
-**Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
+**Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll-out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
 
 Intune supports managing enrollment of Android for Work devices independently from the Android platform. These settings are managed under **Device Enrollment** > **Enrollment restrictions** > **Device Type Restrictions**. (They were previously located under **Device Enrollment** > **Android for Work Enrollment** > **Android for Work Enrollment Settings**.)
 
@@ -290,7 +318,7 @@ By default, your Android for Work devices settings are the same as your settings
 
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
 
-When working with the new settings, consider the following:
+When working with the new settings, consider the following points:
 
 ##### If you have never previously onboarded Android for Work enrollment
 
@@ -312,7 +340,7 @@ In all cases, your intended regulation is preserved. No action is required on yo
 
 #### App install report updated to include Install Pending status <!-- 1249446 -->  
 
-The **App install status** report accessible for each app through the **App** list in the **Mobile apps** workload now contains an **Install Pending** count for Users and Devices.
+The **App install status** report, accessible for each app through the **App** list in the **Mobile apps** workload, now contains an **Install Pending** count for Users and Devices.
 
 #### iOS 11 app inventory API for Mobile Threat Detection <!-- 1391759 -->
 
@@ -334,7 +362,7 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
 ### Device management
 
 #### Migrate hybrid MDM users and devices to Intune standalone <!-- 1463747 wnready -->
-We have a new process and tools for moving users and their devices from hybrid MDM to Intune in the Azure portal, which allow you to do the following:
+New processes and tools are now available for moving users and their devices from hybrid MDM to Intune in the Azure portal, allowing you to do the following tasks:
 - Copy policies and profiles from the Configuration Manager console to Intune in the Azure portal
 - Move a subset of users to Intune in the Azure portal, while keeping the rest in hybrid MDM
 - Migrate devices to Intune in the Azure portal without needing to re-enroll them
@@ -342,7 +370,7 @@ We have a new process and tools for moving users and their devices from hybrid M
 For details, see [Migrate hybrid MDM users and devices to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 #### On-premises Exchange connector high availability support  <!-- 676614 -->
-After the Exchange connector creates a connection to Exchange using the specified CAS, the connector now has the ability to discovery other CASs. If the primary CAS becomes unavailable, the connector will failover to another CAS, if available, until the primary CAS becomes available. For details, see [On-premises Exchange connector high availability support](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
+After the Exchange connector creates a connection to Exchange using the specified CAS, the connector now has the ability to discovery other CASs. If the primary CAS becomes unavailable, the connector will fail over to another CAS, if available, until the primary CAS becomes available. For details, see [On-premises Exchange connector high availability support](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support).
 
 #### Remotely restart iOS device (supervised only) <!-- 1424595 -->
 
@@ -377,7 +405,7 @@ When resetting Windows 10 version 1709 and later to factory settings, a new capa
 
 The following data is retained through a factory reset:
 - User accounts associated with the device
-- Machine state (domain join, Azure Active Directory-joined )
+- Machine state (domain join, Azure Active Directory-joined)
 - MDM enrollment
 - OEM installed apps (store and Win32 apps)
 - User profile
@@ -397,7 +425,7 @@ When you are **Troubleshooting,** for the user you are viewing, you are able to 
 Windows Defender Advanced Threat Protection (WDATP) service allows admins to manage reporting frequency for managed devices. With the new **Expedite telemetry reporting frequency** option, WDATP collects data and assesses risks more frequently. The default for reporting optimizes speed and performance. Increasing the frequency of reporting can be valuable for high-risk devices. This setting can be found in the **Windows Defender ATP** profile in **Device configurations**.
 
 #### Audit updates <!-- 1412961 -->  
-Intune auditing provides a record of change operations related to Intune.  All create, update, delete and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year.
+Intune auditing provides a record of change operations related to Intune.  All create, update, delete, and remote task operations are captured and retained for one year.  The Azure portal provides a view of the last 30 days of audit data in each workload, and is filterable.  A corresponding Graph API allows retrieval of the auditing data stored for the last year.
 
 Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu item for each workload.
 
@@ -411,12 +439,11 @@ Auditing is found under the **MONITOR** group. There is an **Audit Logs** menu i
 #### Google Play Protect support on Android <!-- 908720 -->
 
 With the release of Android Oreo, Google introduces a suite of security features called Google Play Protect that allow users and
-organizations to run secure apps and secure Android images. Intune will support Google Play Protect features, including SafetyNet
-remote attestation. Admins can set compliance policy requirements that require Google Play Protect be configured and healthy.
+organizations to run secure apps and secure Android images. Intune now supports Google Play Protect features, including SafetyNet
+remote attestation. Admins can set compliance policy requirements that require Google Play Protect to be configured and healthy.
 The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is
 healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that
-installed apps are verified by Google Play services. Conditional access might block users from accessing corporate resources
-if a device is not compliant with Google Play Protect requirements.
+installed apps are verified by Google Play services. If a device is not compliant with Google Play Protect requirements, conditional access might block users from accessing corporate resources.
 
 - Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
 
@@ -439,16 +466,13 @@ Administrators may now remove Per-App VPN requirements for apps on iOS devices; 
 
 ### Monitor and troubleshoot
 #### Support for System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
-The System Center Operations Manager (SCOM) management pack for Exchange connector is now available to help you parse the Exchange connector logs. This gives you different ways of monitoring the service when you need to troubleshoot issues.
+The System Center Operations Manager (SCOM) management pack for Exchange connector is now available to help you parse the Exchange connector logs. This feature gives you different ways of monitoring the service when you need to troubleshoot issues.
 
 ## Week of November 6, 2017
 
 ### Device enrollment
 #### Co-management for Windows 10 devices  <!-- 1243445 -->
 Co-management is a solution that provides a bridge from traditional to modern management, and it provides you with a path to make the transition using a phased approach. At its foundation, co-management is a solution where Windows 10 devices are concurrently managed by Configuration Manager and Microsoft Intune, as well as joined to Active Directory (AD) and Azure Active Directory (Azure AD).  This configuration provides you with a path to modernize over time, at the pace that’s right for your organization if you can’t move all at once.  
-
-#### New enrollment status page for Windows 10 enrollments <!--1063201-->    
-You can now configure a greeting that appears when your users enroll Windows 10 devices. Use the **Enrollment Status Screen** to configure a custom message and a hyperlink to be displayed to your end users when they enroll their Windows 10 devices.  The **Enrollment Status Screen** will also give end users a view into the progress of policy settings that are being applied to their device.  
 
 #### Restrict Windows Enrollment by OS version <!-- 245498 -->
 As an Intune administrator, you can now specify a minimum and maximum version of Windows 10 for device enrollments. You can set these restrictions in the **Platform Configurations** blade.
@@ -464,10 +488,10 @@ A new alert is available for Windows AutoPilot unassigned devices on the **Micro
 Because the Device list does not refresh automatically, you can use the new Refresh button to update the devices that display in the list.
 
 #### Support for Symantec Cloud Certification Authority (CA)  <!-- 1333638 -->    
-Intune now supports Symantec Cloud CA which allows the Intune Certificate Connector to issue PKCS certificates from the Symantec Cloud CA to Intune managed devices. If you're already using the Intune Certificate Connector with Microsoft Certification Authority (CA), you can leverage the existing Intune Certificate Connector setup to add the Symantec CA support.
+Intune now supports Symantec Cloud CA, which allows the Intune Certificate Connector to issue PKCS certificates from the Symantec Cloud CA to Intune managed devices. If you're already using the Intune Certificate Connector with Microsoft Certification Authority (CA), you can use the existing Intune Certificate Connector setup to add the Symantec CA support.
 
 #### New items added to device inventory   <!--1404455 -->
-In this release, we've added the following new items to the [inventory taken by enrolled devices](device-inventory.md):
+The following new items are now available to the [inventory taken by enrolled devices](device-inventory.md):
 
 - Wi-Fi MAC address
 - Total storage space
@@ -484,7 +508,7 @@ An administrator is able to define the minimum Android security patch that must 
 > This feature only restricts security patches released by Google on Android 6.0+ devices.
 
 #### App-conditional launch support <!-- 1193313 -->
-IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user is required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (i.e., WXP, Outlook, Managed Browser, Yammer) to integrate the Intune App SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
+IT admins can now set a requirement through the Azure admin portal to enforce a passcode instead a numeric PIN through the mobile app management (MAM) when the application launch. If configured, the user is required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. This release of Intune will enable this feature **on iOS only**. Intune supports passcode in a similar way to numeric PIN, it sets a minimum length, allowing repeat characters and sequences. This feature requires the participation of applications (that is, WXP, Outlook, Managed Browser, Yammer) to integrate the Intune App SDK with the code for this feature in place for the passcode settings to be enforced in the targeted applications.
 
 #### App Version number for line-of-business in device install status report <!-- 1233999 -->
 With this release, the Device install status report displays the app version number for the line-of-business apps for iOS and Android. You may use this information to troubleshoot your apps, or find devices that are running outdated app versions.
@@ -495,14 +519,14 @@ With this release, the Device install status report displays the app version num
 Admins can turn on firewall for devices, and also configure various protocols for domain, private, and public networks.  These firewall settings can be found in the "Endpoint protection" profile.
 
 #### Windows Defender Application Guard helps protect devices from untrusted websites, as defined by your organization <!-- 958257 -->   
-Admins can define sites as "trusted" or "corporate" using a Windows Information Protection workflow or the new "Network boundary" profile under device configurations. Any sites that aren't listed in on a 64-bit Windows 10 device’s trusted network boundary, if they are viewed with Microsoft Edge, open instead in a browser within a Hyper-V virtual computer.
+Admins can define sites as "trusted" or "corporate" using a Windows Information Protection workflow or the new "Network boundary" profile under device configurations. If they are viewed with Microsoft Edge, any sites that aren't listed in on a 64-bit Windows 10 device’s trusted network boundary open instead in a browser within a Hyper-V virtual computer.
 
 Application Guard can be found in the device configuration profiles, in the "Endpoint protection" profile. From there, admins can configure interaction between the virtualized browser and the host machine, nontrusted sites and trusted sites, and storing data generated in the virtualized browser. To use Application Guard on a device, a network boundary first must be configured. It's important to define only one network boundary for a device.  
 
 #### Windows Defender Application Control on Windows 10 Enterprise provides mode to trust only authorized apps <!-- 1031096 -->    
 With thousands of new malicious files created every day, using antivirus signature-based detection to fight against malware might no longer provide an adequate defense against new attacks. Using Windows Defender Application Control on Windows 10 Enterprise, you can change device configuration from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You assign trust to apps in Windows Defender Application Control.
 
-Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps will not be blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Microsoft Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph are allowed to run.
+Using Intune, you can configure the application control policies either in "audit only" mode or enforce mode. Apps aren't blocked when running in “audit only” mode. “Audit only” mode logs all events in local client logs. You can also configure whether only Windows components and Microsoft Store apps are allowed to run or whether additional apps with good reputations as defined by the Intelligent Security Graph are allowed to run.
 
 #### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->   
 Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of the following components:
@@ -534,7 +558,7 @@ Kiosk mode requires:
 - The device must be [properly provisioned](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions).
 
 #### New device configuration profile for creating network boundaries <!-- 1311967 -->   
-We have created a device configuration profile called **Network boundary** that can be found with your other device configuration profiles. Use this profile to define online resources that you want to be considered corporate and trusted. You must define a network boundary for a device *before* features such as Windows Defender Application Guard and Windows Information Protection can be used on the device. It’s important to define only one network boundary for each device.
+A new device configuration profile called **Network boundary** can be found with your other device configuration profiles. Use this profile to define online resources that you want to be considered corporate and trusted. You must define a network boundary for a device *before* features such as Windows Defender Application Guard and Windows Information Protection can be used on the device. It’s important to define only one network boundary for each device.
 
 You can define enterprise cloud resources, IP address ranges, and internal proxy servers that you want to be considered trusted. Once defined, the network boundary can be consumed by other features such as Windows Defender Application Guard and Windows Information Protection.
 
@@ -551,7 +575,7 @@ You can define enterprise cloud resources, IP address ranges, and internal proxy
 While unlikely, setting to **High** may cause some legitimate files to be detected.
 We recommend you set File blocking level to the default, **Not configured**.
 
-**Timeout extension for file scanning by the cloud**  
+**Time out extension for file scanning by the cloud**  
 
 | | |
 |--|--|
@@ -577,7 +601,7 @@ Learn how to enable the troubleshooting mode in the Managed Browser on an iOS de
 
 #### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!-- 1417174 -->
 
-We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text. You can see this updated workflow on the [what's new in app UI page](whats-new-app-ui.md).
+The device setup workflow has been improved in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. The language is more specific to your company by using your company name throughout the setup text. You can see this updated workflow on the [what's new in app UI page](whats-new-app-ui.md).
 
 ### Monitor and troubleshoot
 
@@ -586,6 +610,51 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 
 ## Notices
+
+### Plan for Change: Update where you Configure your App Protection Policies
+
+Starting in March of 2018, we’re going to temporarily redirect you from the Intune App Protection service blade in the Azure portal to the Mobile app blade within Intune in the Azure portal. Note that all of your App protection policies are already on the Mobile app blade in Intune under app configuration. Instead of going to Intune App Protection, you’ll just go to Intune. In April, we will stop the redirection and fully remove the Intune App Protection service blade, again it is duplicating what is now built into Intune. 
+
+#### How does this affect me?
+This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
+
+#### What do I need to do to prepare for this change?
+Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
+
+**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
+
+### Updated: New security enhancements in the Intune service  <!-- 1637539 -->   
+
+We’re rolling out security enhancements in the Intune service. As a part of this change, with the March update to the Intune service, you will have a toggle in the Intune on Azure console to turn this security feature on or off. When the feature is on, devices with no compliance policy assigned to them will be marked as ‘not compliant’.
+
+**Hybrid customers**: We will not be introducing this change for hybrid customers at this time. You do not need to take any action. However, we highly encourage you to ensure that your devices have at least one compliance policy assigned to them.
+
+#### How does this affect me?
+
+When we start rolling this change out in the March update, this feature will affect you differently depending on whether you already have compliance policies assigned or not.
+
+- If you are a new or existing tenant and do not have any compliance policies assigned to your devices, the toggle will be automatically set to **compliant**. The feature will be off as a default setting in the console. There will be no end user impact.
+- If you are an existing tenant and you have any devices with a compliance policy assigned to them, the toggle will automatically be set to ‘not compliant’. The feature will be on as a default setting, when the March update rolls out. 
+
+If you use compliance policies with Conditional Access (CA), and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
+ 
+#### What do I need to do to prepare for this change?  
+
+If you use Conditional Access, we recommend you have this feature turned on and leave the toggle set to **Not compliant**. To avoid loss of email access for your end users, please ensure that all your devices have at least one compliance policy assigned to them. Here are some changes we’re making to help you do this:   
+
+- We’ve introduced a report called **Devices without compliance policy** in the Intune portal, which you can use to identify all the devices in your environment that do not have a compliance policy assigned. 
+- There is an **All Users** option to make it easy to assign a compliance policy to all users.
+
+If you choose to leave the toggle turned off, no further action is required on your part.
+
+**Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
+
+### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
+Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
+- End users will be prompted for credentials to receive Intune policy on first launch.
+- Apps should be released to the app store targeted for Intune users, for example “Contoso App for Intune”. 
+
+For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For any issues or questions, contact [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com). 
 
 ### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on April 2, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
@@ -603,7 +672,7 @@ By default, your Android for Work devices settings will be the same as your sett
 
 If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
 
-When working with the new settings, consider the following:
+When working with the new settings, consider the following points:
 
 #### If you have never previously onboarded Android for Work enrollment
 
@@ -622,10 +691,10 @@ If you’ve previously onboarded, your situation depends on the setting you chos
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
 ### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
-We are announcing that we will begin deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
+Deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS will begin in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
 
 ### New path for managed devices in Graph API <!-- 1586728 -->
-We are making a change to the path used to access managed devices in the beta version of the Graph API. 
+The path used to access managed devices in the beta version of the Graph API is changing. 
 
 | | |
 |--|--|
@@ -636,7 +705,7 @@ Both paths will work through the month of October. After the October service rel
 
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the Azure portal.
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
 
 ### Administration roles being replaced in Azure portal
 The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
@@ -650,13 +719,13 @@ We will be releasing a major user experience update to the Company Portal app fo
 We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access.
 
 ### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 -->
-We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure Portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
+We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
 
 ### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!--1592747-->
 Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
 
 ### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
-Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a very short period of time. However, note that if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
+Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a short period of time. However, if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
 
 #### How does this affect me?
 We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.

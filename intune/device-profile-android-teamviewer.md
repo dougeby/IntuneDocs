@@ -3,12 +3,12 @@
 
 title: How to use remotely administer devices using TeamViewer
 titlesuffix: "Azure portal"
-description: Learn how to remotely administer devices using TeamViewer."
+description: Learn how to remotely administer devices using TeamViewer.
 keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,6 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: davidra
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -37,7 +36,7 @@ Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased 
 Intune-managed Android and Windows devices support remote administration.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software. You still need to manage devices using the [PC client](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) in the Intune classic portal.
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) and Windows 10 S are not supported by the TeamViewer software.
 
 
 
@@ -81,4 +80,4 @@ When you are finished, close the TeamViewer window.
 
 ## Next steps
 
-An end user sees a notification flag on the Company Portal app icon on their device, and also see a notification when they open the app. They can then accept the remote assistance request.
+An end user sees a notification flag on the Company Portal app icon on their device, and also sees a notification when they open the app. They can then accept the remote assistance request.

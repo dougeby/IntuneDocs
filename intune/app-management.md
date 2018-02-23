@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,7 +58,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 |Mandatory install of apps on devices (Required)<sup>2</sup>|Yes|Yes|Yes|Yes|
 |Optional installation on devices from the Company Portal (Available install)|Yes|Yes|Yes|Yes|
 |Install shortcut to an app on the web (web clip)|Yes|Yes|Yes|Yes|
-|In-house (line-of-business) apps|Yes|Yes|No|No|
+|In-house (line-of-business) apps|Yes|Yes|No|Yes|
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
 
