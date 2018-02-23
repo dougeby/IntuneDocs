@@ -7,7 +7,7 @@ description: Learn the settings you can use in an Android custom profile."
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod:

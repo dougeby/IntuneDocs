@@ -7,13 +7,12 @@ description: Learn how to configure Windows Update for Business settings in Intu
 keywords:
 author: dougeby
 ms.author: dougeby
-manager: angrobe
-ms.date: 11/01/2017
+manager: dougeby
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 
 # optional metadata
 
@@ -52,8 +51,9 @@ After you create update rings, you assign them to groups of devices. By using up
 - Windows Update supports the following Windows 10 versions:
 	- Windows 10
 	- Windows 10 Team (for Surface Hub devices)
+	- [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Devices running Windows 10 Mobile and Windows 10 Holographic are not supported.
+ Devices running Windows 10 Mobile are not supported.
 
 - On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to at least **Basic**.
 
@@ -96,7 +96,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	Feature Updates are generally new features for Windows. After you configure the **Servicing channel** setting (Semi-Annual Channel (Targeted) or Semi-Annual Channel, you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.
 
-	For example:  
+	For example:
 	**If the Servicing channel is set to Semi-Annual Channel (Targeted)and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as aSemi-Annual Channel (Targeted) in January. The device will not receive the update until February - 30 days later.
 
 	**If the Servicing channel is set to Semi-Annual Channel and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device will receive the Feature Update 30 days following this Semi-Annual Channel release and will update in May.
@@ -162,3 +162,11 @@ You can pause a device from receiving Feature Updates or Quality Updates for a p
 > [!IMPORTANT]
 > When you issue a pause command, devices receive this command when they next check into the service. It's possible that before they check in, they might install a scheduled update.
 > Additionally, if a targeted device is turned off when you issue the pause command, when you turn it on, it might download and install scheduled updates before it checks in with Intune.
+
+## Windows Holographic for Business Support
+
+Windows Holographic for Business supports the following settings:
+
+- **Automatic update behavior**
+- **Microsoft product updates**
+- **Servicing channel**

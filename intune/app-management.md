@@ -7,7 +7,7 @@ description: Use this topic to learn the basics about app management with Micros
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod:
@@ -58,7 +58,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 |Mandatory install of apps on devices (Required)<sup>2</sup>|Yes|Yes|Yes|Yes|
 |Optional installation on devices from the Company Portal (Available install)|Yes|Yes|Yes|Yes|
 |Install shortcut to an app on the web (web clip)|Yes|Yes|Yes|Yes|
-|In-house (line-of-business) apps|Yes|Yes|No|No|
+|In-house (line-of-business) apps|Yes|Yes|No|Yes|
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
 
@@ -70,8 +70,8 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 You can find most things app-related in the **Mobile Apps** workload that you can access as follows:
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 
 	![The Mobile Apps workload](./media/apps-workload.png)

@@ -5,9 +5,9 @@ title: Add and assign MTD apps into Intune
 titleSuffix: Azure portal
 description: "Add MTD apps, Microsoft Authenticator app, and iOS configuration policy with Intune in the Azure portal"
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
+author: msmimart
+ms.author: mimart
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
@@ -80,7 +80,7 @@ For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout
 
 Enable Azure Active Directory authentication for the iOS users by doing the following:
 
-1. Go to the [Azure portal](https://portal.sazure.com), sign in with your credentials, then navigate to the application page.
+1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
   
 2. Add the **Lookout for Work iOS app** as a **native client application**.
 

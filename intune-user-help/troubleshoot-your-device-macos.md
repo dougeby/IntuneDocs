@@ -6,7 +6,7 @@ description: Find out ways to solve common issues with your iOS device.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:

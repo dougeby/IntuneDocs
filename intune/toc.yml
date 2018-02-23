@@ -1,4 +1,4 @@
-- name: Introduction
+- name: Overview
   href: introduction-intune.md
   expanded: true
   items:
@@ -22,24 +22,13 @@
       href: whats-new-archive.md
     - name: What's new archive (classic portal)
       href: whats-new-archive-classic.md
-  - name: High-level architecture
-    href: high-level-architecture.md
-  - name: Device and app lifecycles
-    href: introduction-device-app-lifecycles.md
-    items:
-    - name: Device lifecycle
-      href: device-lifecycle.md
-    - name: App lifecycle
-      href: app-lifecycle.md
-  - name: Common scenarios
-    href: common-scenarios.md
   - name: Service description
     href: microsoft-intune-service-description.md
   - name: Known issues
     href: known-issues.md
   - name: Get support
     href: get-support.md
-- name: Get started with Intune
+- name: Quickstarts
   href: get-started-evaluation.md
   items:
   - name: Navigating the Azure portal
@@ -54,6 +43,33 @@
     href: get-started-enroll.md
   - name: Assign apps
     href: get-started-apps.md
+- name: Scenario implementation guides
+  items:
+  - name: Protect Exchange Online
+    href: exchange-online-protect.md
+  - name: Reduce help desk costs
+    href: password-reset.md
+  - name: Prevent unauthorized access
+    href: data-outside-protect.md
+  - name: Prevent data leaks on non-managed devices
+    href: data-leak-prevention.md
+  - name: Compare MDM and MAM
+    href: byod-technology-decisions.md
+- name: Concepts
+  items:
+  - name: High-level architecture
+    href: high-level-architecture.md
+  - name: Device and app lifecycles
+    href: introduction-device-app-lifecycles.md
+    items:
+    - name: Device lifecycle
+      href: device-lifecycle.md
+    - name: App lifecycle
+      href: app-lifecycle.md
+  - name: Common scenarios
+    href: common-scenarios.md
+  - name: MAM FAQ
+    href: mam-faq.md    
 - name: Plan deployment
   items:
   - name: Planning guide
@@ -79,18 +95,6 @@
       href: planning-guide-test-validation.md
     - name: Additional resources
       href: planning-guide-resources.md
-  - name: Scenario implementation guides
-    items:
-    - name: Protect Exchange Online
-      href: exchange-online-protect.md
-    - name: Reduce help desk costs
-      href: password-reset.md
-    - name: Prevent unauthorized access
-      href: data-outside-protect.md
-    - name: Prevent data leaks on non-managed devices
-      href: data-leak-prevention.md
-    - name: Compare MDM and MAM
-      href: byod-technology-decisions.md
   - name: Migration guide
     href: migration-guide.md
     items:
@@ -114,7 +118,7 @@
         href: migration-guide-drive-adoption.md
       - name: Typical migration cycle
         href: migration-guide-cycle.md
-- name: How to
+- name: How-To Guides
   items:
   - name: Set up Intune
     href: setup-steps.md
@@ -122,7 +126,7 @@
     - name: Supported configurations
       href: supported-devices-browsers.md
       items:
-      - name: Network bandwidth usage
+      - name: Network configuration
         href: network-bandwidth-use.md
     - name: Sign in to Intune
       href: account-sign-up.md
@@ -134,6 +138,8 @@
       href: groups-add.md
     - name: Assign licenses
       href: licenses-assign.md
+    - name: Intune licenses
+      href: licenses.md
     - name: Set the MDM authority
       href: mdm-authority-set.md
   - name: Enroll devices
@@ -164,6 +170,8 @@
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
+      - name: Enrollment Status Screen
+        href: windows-enrollment-status.md
     - name: Set up Android enrollment
       href: android-enroll.md
     - name: Set up iOS enrollment
@@ -188,6 +196,8 @@
       href: device-locate.md
     - name: Enable iOS lost mode
       href: device-lost-mode.md
+    - name: Turn on iOS supervised mode
+      href: device-supervised-mode.md
     - name: Lock device
       href: device-remote-lock.md
     - name: Reset passcode
@@ -198,6 +208,8 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Erase device
+      href: device-erase.md
     - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
@@ -214,35 +226,44 @@
     - name: Add apps
       href: apps-add.md
       items:
-      - name: Android store apps
-        href: store-apps-android.md
-      - name: Android LOB apps
-        href: lob-apps-android.md
-      - name: iOS store apps
-        href: store-apps-ios.md
-      - name: iOS LOB apps
-        href: lob-apps-ios.md
+      - name: Store apps
+        items:
+        - name: Android store apps
+          href: store-apps-android.md
+        - name: iOS store apps
+          href: store-apps-ios.md
+        - name: Windows Phone 8.1 store apps
+          href: store-apps-windows-phone-8-1.md
+        - name: Microsoft Store apps
+          href: store-apps-windows.md
+        - name: Android for Work apps
+          href: apps-add-android-for-work.md
+        - name: Office 365 apps for Windows 10
+          href: apps-add-office365.md
+        - name: Office 365 apps for macOS
+          href: apps-add-office365-macos.md
+      - name: Build your app (LOB)
+        items:
+        - name: Android LOB apps
+          href: lob-apps-android.md
+        - name: iOS LOB apps
+          href: lob-apps-ios.md
+        - name: Windows Phone LOB apps
+          href: lob-apps-windows-phone.md
+        - name: Windows LOB apps
+          href: lob-apps-windows.md
       - name: Web apps
         href: web-app.md
-      - name: Windows Phone 8.1 store apps
-        href: store-apps-windows-phone-8-1.md
-      - name: Windows Phone LOB apps
-        href: lob-apps-windows-phone.md
-      - name: Microsoft Store apps
-        href: store-apps-windows.md
-      - name: Windows LOB apps
-        href: lob-apps-windows.md
-      - name: Android for Work apps
-        href: apps-add-android-for-work.md
-      - name: Office 365 apps for Windows 10
-        href: apps-add-office365.md
-      - name: Office 365 apps for macOS
-        href: apps-add-office365-macos.md        
-    - name: Assign apps
+      - name: Built-in apps
+        href: apps-add-built-in.md        
+    - name: Deploy apps
       href: apps-deploy.md
+      items:
+      - name: Include and exclude apps
+        href: apps-inc-exl-assignments.md      
     - name: Monitor apps
       href: apps-monitor.md
-    - name: App configuration policies
+    - name: Configure apps
       href: app-configuration-policies-overview.md
       items:
       - name: iOS managed devices
@@ -251,23 +272,45 @@
         href: app-configuration-policies-use-android.md
       - name: Managed apps
         href: app-configuration-policies-managed-app.md
-    - name: Use iOS app provisioning profiles
-      href: app-provisioning-profile-ios.md
-    - name: Selectively wipe apps
-      href: apps-selective-wipe.md
-    - name: Work with volume-purchased apps and books
-      href: vpp-apps.md
+      - name: Use iOS app provisioning profiles
+        href: app-provisioning-profile-ios.md
+      - name: Work with volume-purchased apps and books
+        href: vpp-apps.md
+        items:
+        - name: iOS VPP apps
+          href: vpp-apps-ios.md
+        - name: Microsoft Store for Business apps
+          href: windows-store-for-business.md
+        - name: iOS eBooks
+          href: vpp-ebooks-ios.md
+      - name: Configure the Company Portal app
+        href: company-portal-app.md
+      - name: Configure the Managed Browser
+        href: app-configuration-managed-browser.md
+    - name: Protect apps
       items:
-      - name: iOS VPP apps
-        href: vpp-apps-ios.md
-      - name: Microsoft Store for Business apps
-        href: windows-store-for-business.md
-      - name: iOS eBooks
-        href: vpp-ebooks-ios.md
-    - name: Configure the Company Portal app
-      href: company-portal-app.md
-    - name: Configure the Managed Browser
-      href: app-configuration-managed-browser.md
+      - name: Selectively wipe apps
+        href: apps-selective-wipe.md
+      - name: Use app protection policies
+        href: app-protection-policy.md
+        items:
+        - name: Create app protection policies
+          href: app-protection-policies.md
+          items:
+          - name: Android settings
+            href: app-protection-policy-settings-android.md
+          - name: iOS settings
+            href: app-protection-policy-settings-ios.md
+        - name: Validate app protection policies
+          href: app-protection-policies-validate.md
+        - name: Monitor app protection user status
+          href: app-protection-policies-monitor.md
+        - name: Get ready for WIP app protection policies
+          href: app-protection-policies-configure-windows-10.md
+        - name: Create & assign WIP app protection policies
+          href: windows-information-protection-policy-create.md
+        - name: Manage data transfer between iOS apps
+          href: data-transfer-between-apps-manage-ios.md
   - name: Configure devices
     href: device-profiles.md
     items:
@@ -307,6 +350,8 @@
         href: device-restrictions-windows-10.md
       - name: Windows 10 Team
         href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
     - name: Configure email settings
@@ -423,7 +468,7 @@
       href: conditional-access-integrate-jamf.md
     - name: Enforce compliance on Macs managed with Jamf Pro
       href: conditional-access-assign-jamf.md
-  - name: Protect app and device data
+  - name: Protect device data
     items:
     - name: Use app protection policies
       href: app-protection-policy.md
@@ -541,6 +586,11 @@
     - name: Resolve policy conflicts
       href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
       maintainContext: true
+  - name: Manage Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: Upgrade Windows Holographic
+      href: holographic-upgrade.md
   - name: Educate users
     href: end-user-educate.md
     items:
@@ -556,45 +606,44 @@
       href: end-user-apps-ios.md
     - name: How to get Windows apps
       href: end-user-apps-windows.md
-- name: Monitor and troubleshoot
-  items:
-  - name: Help users troubleshoot problems
-    href: help-desk-operators.md
-  - name: Audit logs for Intune activities
-    href: monitor-audit-logs.md
-  - name: Use the Intune Data Warehouse
-    href: reports-nav-create-intune-reports.md
+  - name: Monitor and troubleshoot
     items:
-    - name: Change log for the Data Warehouse
-      href: reports-changelog.md
-    - name: Connect to the Data Warehouse with Power BI
-      href: reports-proc-get-a-link-powerbi.md
-    - name: Create a report from the OData feed with Power BI
-      href: reports-proc-create-with-odata.md
-- name: Automate and customize
-  items:
-  - name: Configure custom device settings
-    href: custom-settings-configure.md
+    - name: Help users troubleshoot problems
+      href: help-desk-operators.md
+    - name: Audit logs for Intune activities
+      href: monitor-audit-logs.md
+    - name: Review app protection logs
+      href: app-protection-policy-settings-log.md
+  - name: Automate and customize
     items:
-    - name: Wi-Fi profile with a pre-shared key
-      href: wi-fi-profile-shared-key.md
-    - name: Android
-      href: custom-settings-android.md
+    - name: Configure custom device settings
+      href: custom-settings-configure.md
       items:
-      - name: Per-app VPN profile
-        href: android-pulse-secure-per-app-vpn.md
-      - name: Allow/block apps for Samsung Knox Standard
-        href: samsung-knox-apps-allow-block.md
-    - name: iOS
-      href: custom-settings-ios.md
-    - name: macOS
-      href: custom-settings-macos.md
-    - name: Windows Phone 8.1
-      href: custom-settings-windows-phone-8-1.md
-    - name: Windows 10
-      href: custom-settings-windows-10.md
-    - name: Android for Work
-      href: custom-settings-android-for-work.md
+      - name: Wi-Fi profile with a pre-shared key
+        href: wi-fi-profile-shared-key.md
+      - name: Android
+        href: custom-settings-android.md
+        items:
+        - name: Per-app VPN profile
+          href: android-pulse-secure-per-app-vpn.md
+        - name: Allow/block apps for Samsung Knox Standard
+          href: samsung-knox-apps-allow-block.md
+      - name: iOS
+        href: custom-settings-ios.md
+      - name: macOS
+        href: custom-settings-macos.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: custom-settings-windows-10.md
+      - name: Windows Holographic for Business
+        href: custom-settings-windows-holographic.md
+      - name: Android for Work
+        href: custom-settings-android-for-work.md
+    - name: Sideload Windows line-of-business apps
+      href: app-sideload-windows.md
+- name: Developer guidance
+  items:
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
@@ -614,6 +663,15 @@
       href: app-sdk-cordova.md
     - name: Intune App SDK Xamarin component
       href: app-sdk-xamarin.md
+  - name: Use the Intune Data Warehouse
+    href: reports-nav-create-intune-reports.md
+    items:
+    - name: Change log for the Data Warehouse
+      href: reports-changelog.md
+    - name: Connect to the Data Warehouse with Power BI
+      href: reports-proc-get-a-link-powerbi.md
+    - name: Create a report from the OData feed with Power BI
+      href: reports-proc-create-with-odata.md
   - name: Report using Intune Data Warehouse API
     href: reports-nav-intune-data-warehouse.md
     items:
@@ -621,6 +679,8 @@
       href: reports-proc-data-rest.md
     - name: Data Warehouse API endpoint
       href: reports-api-url.md
+    - name: Data Warehouse application-only authentication
+      href: data-warehouse-app-only-auth.md      
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
@@ -644,10 +704,12 @@
         href: reports-ref-user-device.md
       - name: Reference for user entity
         href: reports-ref-user.md
-  - name: Sideload Windows apps
+  - name: Use Azure AD to access Intune APIs in Microsoft Graph
     href: intune-graph-apis.md
     items:
-    - name: Graph APIs for Intune Reference
-      href: https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview
-- name: Glossary
-  href: intune-glossary.md
+    - name: Intune API reference
+      href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+- name: Resources
+  items:
+  - name: Glossary
+    href: intune-glossary.md

@@ -77,7 +77,7 @@ Use the following information to help you troubleshoot common client setup probl
 This may be caused by the absence of critical software updates on the PC.
 
 **Resolution:**
-Ensure that your software update policy enables installation of critical updates, as described in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+Ensure that your software update policy enables installation of critical updates, as described in [Keep Windows PCs up-to-date with software updates in Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## Microsoft Intune policy-related errors in policyplatform.log

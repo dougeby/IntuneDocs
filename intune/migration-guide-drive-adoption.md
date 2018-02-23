@@ -6,7 +6,7 @@ description: This article provides insights on how to use conditional access to 
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod:

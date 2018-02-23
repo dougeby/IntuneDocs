@@ -7,7 +7,7 @@ description: "Monitor conditional access compliance for on-premises Exchange and
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod:

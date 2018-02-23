@@ -6,7 +6,7 @@ description: Describes how to enroll an iOS device in Intune with DEP
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article
 ms.prod:

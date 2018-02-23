@@ -5,7 +5,7 @@ description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

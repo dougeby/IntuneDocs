@@ -7,7 +7,7 @@ description: Learn how to create Intune device configuration profiles."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 05/16/2017
 ms.topic: article
 ms.prod:
@@ -32,12 +32,12 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-2. On the blade showing the list of profiles, choose **Create Profile**.
-3. On the **Create Profile** blade, specify the following items:
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** blade, choose **Device configuration**.
+2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
+2. On the blade showing the list of profiles, choose **Create profile**.
+3. On the **Create profile** blade, specify the following items:
 	- **Name** - Enter a descriptive name for the new profile.
 	- **Description** -  Enter an optional description for the profile.
 	- **Platform** -  Select the platform type for the profile you want to create.

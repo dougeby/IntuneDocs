@@ -5,9 +5,9 @@ title: Lookout Mobile Threat Defense connector with Intune
 titlesuffix: "Azure portal"
 description: Set up Lookout Mobile Threat Defense connector with Intune.
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
+author: msmimart
+ms.author: mimart
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod:
@@ -34,14 +34,14 @@ You can control mobile device access to corporate resources based on risk assess
 - Malicious apps installed
 - Malicious network profiles
 
-You can configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies. Settings let you allow or block non-compliant devices based on detected threats.
+You can configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies. Settings let you allow or block noncompliant devices based on detected threats.
 
 ## How do Intune and Lookout Mobile Threat Defense help protect company resources?
 Lookout’s mobile app, **Lookout for work**, is installed and run on mobile devices. This app captures file system, network stack, and device and application telemetry where available, then sends it to the Lookout cloud service to assess the device's risk for mobile threats. You can change risk level classifications for threats in the Lookout console to suit your requirements.  
 
 The compliance policy in Intune includes a rule for Lookout Mobile Threat Defense based on Lookout risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 
-If the device is found non-compliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
+If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
 
 ## Supported platforms
 The following platforms are supported for Lookout when enrolled in Intune:
@@ -68,7 +68,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![diagram showing conditional access policy blocking access when device is determined to be non-compliant due to malicious apps on the device](./media/malicious-apps-blocked.png)
+![diagram showing conditional access policy blocking access when device is determined to be noncompliant due to malicious apps on the device](./media/malicious-apps-blocked.png)
 
 **Access granted on remediation:**
 

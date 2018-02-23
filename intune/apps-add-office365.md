@@ -7,8 +7,8 @@ description: "Learn how you can use Intune to make it easier to install Office 3
 keywords:
 author: dougeby
 ms.author: dougeby
-manager: angrobe
-ms.date: 08/14/2017
+manager: dougeby
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune
+# How to assign Office 365 ProPlus apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 ProPlus apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
 
 
 ## Before you start
@@ -38,10 +38,11 @@ This app type makes it easy for you to assign Office 365 ProPlus 2016 apps to de
 >This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
-- Intune only supports adding Office apps from the Office 365 ProPlus 2016 suite.
-- If any Office apps are open when Intune installs the app suite, end users might lose data from unsaved files.
-- This installation method is not supported on Windows 10S devices.
-- Intune does not support installing Office 365 desktop apps from the Windows Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
+- Intune only supports adding Office apps from the Office 365 ProPlus suite.
+- If any Office apps are open when Intune installs the app suite, installation may fail and end users may lose data from unsaved files.
+- This installation method is not supported on Windows 10S, Windows Home, Windows Team, Windows Holographic, and Windows Holographic for Business devices.
+- Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
+- Multiple required or available app assignments are not additive. A later app assignment will overwrite pre-existing installed app assignments. For example, if the first set of Office apps contains Word, and the later one does not, then Word will be uninstalled. This does not apply to any Visio or Project applications.
 
 
 ## Get started
@@ -69,7 +70,7 @@ In this step, choose the Office apps you want to assign to devices.
 In this step, provide information about the app suite. This information helps you to identify it in Intune, and also helps users to find it in the Company Portal app.
 
 1.	On the **Add App** blade, choose **App Suite Information**.
-2.	On the **App Suite Information** blade, specify the following information: 
+2.	On the **App Suite Information** blade, specify the following information:
 	- **Suite Name** - Enter the name of the app suite as it is displayed in the company portal. Make sure all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Suite Description** - Enter a description for the app suite. For example, you could list the apps you've selected to include.
 	- **Publisher** - Enter the name of the publisher of the app.
@@ -88,9 +89,9 @@ In this step, provide information about the app suite. This information helps yo
 In this step, configure installation options for the app suite. The settings apply to all apps you added to the suite.
 
 1.	On the **Add App** blade, choose **App Suite Settings**.
-2.	On the **App Suite Settings** blade, specify the following information: 
+2.	On the **App Suite Settings** blade, specify the following information:
 	- **Office version** - Choose whether you want to assign the 32-bit, or 64-bit version of Office. You can install the 32-bit version on both 32-bit, and 64-bit devices, but you can only install the 64-bit version on 64-bit devices.
-	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see Overview of update channels for Office 365 ProPlus. Choose from: 
+	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see Overview of update channels for Office 365 ProPlus. Choose from:
 		- **Current**
 		- **Deferred**
 		- **First Release Current**
@@ -110,19 +111,19 @@ When you are done, on the **Add App** blade, choose **Save**. The app you have c
 
 The following table lists common error codes you might encounter and their meaning.
 
-### Status for Office CSP: 
+### Status for Office CSP:
 
 ||||
 |-|-|-|
 |Status|Phase|Description|
 |1460 (ERROR_TIMEOUT)|Download|Failed to download the Office Deployment Tool|	 
-|13 (ERROR_INVALID_DATA)|-|Cannot verify the signature of the downloaded Office Deployment Tool| 
+|13 (ERROR_INVALID_DATA)|-|Cannot verify the signature of the downloaded Office Deployment Tool|
 |Error code from CertVerifyCertificateChainPolicy|-|Failed certification check for the downloaded Office Deployment Tool|	 
-|997|WIP|Installing| 
+|997|WIP|Installing|
 |0|After installation|Installation succeeded|	 
 |1603 (ERROR_INSTALL_FAILURE)|-|Failed any prerequisite check, like:<br>- SxS (Tried to install when 2016 MSI is installed)<br>- version mismatch<br>- etc.|	 
 |0x8000ffff (E_UNEXPECTED)|-|Tried to uninstall when there is no Click-to-run Office on the machine.|	 
-|17002|-|Failed to complete the scenario (install). Possible reasons:<br>- Install canceled by user<br>- Install canceled by another installation<br>- Out of disk space during installation<br>- Unknown language ID| 
+|17002|-|Failed to complete the scenario (install). Possible reasons:<br>- Install canceled by user<br>- Install canceled by another installation<br>- Out of disk space during installation<br>- Unknown language ID|
 |17004|-|Unknown SKUs|	 
 
 
@@ -130,15 +131,15 @@ The following table lists common error codes you might encounter and their meani
 
 |||||
 |-|-|-|-|
-|Scenario|Return code|UI|Note| 
-|Uninstall effort when there is no active Click-to-run installation|-2147418113, 0x8000ffff or 2147549183|Error Code: 30088-1008<br>Error Code: 30125-1011 (404)|Office Deployment Tool| 
-|Install when there is MSI version installed|1603|-|Office Deployment Tool| 
-|Installation canceled by user, or by another installation|17002|-|Click-to-run| 
-|Try to install 64-bit on a device that has 32-bit installed.|1603|-|Office Deployment Tool return code| 
-|Try to install an unknown SKU (not a legitimate use case for Office CSP since we should only pass in valid SKUs)|17004|-|Click-to-run| 
-|Lack of space|17002|-|Click-to-run| 
-|The click-to-run client failed to start (unexpected)|17000|-|Click-to-run| 
-|The click-to-run client failed to queue scenario (unexpected)|17001|-|Click-to-run| 
+|Scenario|Return code|UI|Note|
+|Uninstall effort when there is no active Click-to-run installation|-2147418113, 0x8000ffff or 2147549183|Error Code: 30088-1008<br>Error Code: 30125-1011 (404)|Office Deployment Tool|
+|Install when there is MSI version installed|1603|-|Office Deployment Tool|
+|Installation canceled by user, or by another installation|17002|-|Click-to-run|
+|Try to install 64-bit on a device that has 32-bit installed.|1603|-|Office Deployment Tool return code|
+|Try to install an unknown SKU (not a legitimate use case for Office CSP since we should only pass in valid SKUs)|17004|-|Click-to-run|
+|Lack of space|17002|-|Click-to-run|
+|The click-to-run client failed to start (unexpected)|17000|-|Click-to-run|
+|The click-to-run client failed to queue scenario (unexpected)|17001|-|Click-to-run|
 
 ## Next steps
 

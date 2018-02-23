@@ -7,7 +7,7 @@ description: Learn how to configure Intune for iOS device single sign-on."
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod:
@@ -88,14 +88,14 @@ For example, when a user connects to any of these sites, the iOS device uses the
 > [!NOTE]
 > These URLs must be properly formatted FQDN. Apple requires these to be in the form `http://<yourURL.domain>`
 
-The URL matching patterns must begin with either `http://` or `https://`. A simple string match is performed, so the URL prefix `http://www.contoso.com/` does not match `http://www.contoso.com:80/`. With iOS 9.0 or later, however, a single wildcard * may be used to specify all matching values. For example, `http://*.contoso.com/`  matches both `http://store.contoso.com/` and `http://www.contoso.com`.
+The URL matching patterns must begin with either `http://` or `https://`. A simple string match is performed, so the URL prefix `http://www.contoso.com/` does not match `http://www.contoso.com:80/`. With iOS 9.0 or later, however, a single wildcard \* may be used to specify all matching values. For example, `http://*.contoso.com/`  matches both `http://store.contoso.com/` and `http://www.contoso.com`.
 The patterns `http://.com` and `https://.com` match all HTTP and HTTPS URLs, respectively.
 
 ### Apps that will use Single Sign On
 
 Indicate which apps on an end user’s device that can use the Single Sign on payload.
 
-The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the * wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
+The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the *\ wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
 
 The **App Name** field is used to add a user-friendly name to help you identify the bundle ID.
 

@@ -5,9 +5,9 @@ title: Integrate Zimperium with Intune
 titleSuffix: Intune on Azure
 description: "Integrate Intune with Zimperium"
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: msmimart
+ms.author: mimart
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod:
@@ -36,7 +36,7 @@ Complete the following steps to integrate the Zimperium Mobile Threat Defense so
 > [!NOTE]
 > The following steps are to be completed in the [Zimperium MTD console](https://staging2-console.zimperium.com).
 
-Before starting the process of integrating Zimperium with Intune, make sure you have the following:
+Before starting the process of integrating Zimperium with Intune, make sure you have the following subscription and credentials:
 
 -   Microsoft Intune subscription
 
@@ -58,7 +58,7 @@ The Zimperium app authorization process follows:
 
 -   Allow the Zimperium service to communicate information related to device health state back to Intune.
 
--   Zimperium syncs with Azure AD Enrollment Group membership to populate its device’s database.
+-   Zimperium syncs with Azure Active Directory (AD) Enrollment Group membership to populate its device’s database.
 
 -   Allow Zimperium admin console to use Azure AD Single Sign On (SSO).
 
@@ -81,7 +81,7 @@ The Zimperium app authorization process follows:
 
 6.  Choose **Accept** to authorize the Zimperium app to communicate with Intune and Azure Active Directory.
 
-7.  After you added the **Zimperium zConsole** and the **zIPS iOS and Android** apps to Azure AD, add the Azure AD security groups so Zimperium can synchronize the Azure AD security group with its service.
+7.  After you added the **Zimperium zConsole** and the **zIPS iOS and Android** apps to Azure AD, add the Azure AD security groups. This addition allows Zimperium to synchronize the Azure AD security group with its service.
 
 8.  Choose **Finish** to save the configuration and start the first Azure AD security group synchronization.
 

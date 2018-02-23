@@ -7,7 +7,7 @@ description: Learn about how you can sync books you purchased in volume from the
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod:

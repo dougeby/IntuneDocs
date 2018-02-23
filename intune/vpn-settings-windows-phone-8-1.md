@@ -7,7 +7,7 @@ description: Learn about the Intune settings you can use to configure VPN connec
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod:

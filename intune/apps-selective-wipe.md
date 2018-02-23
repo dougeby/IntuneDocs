@@ -7,7 +7,7 @@ description: Learn how to selectively wipe apps with Microsoft Intune."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2017
 ms.topic: article
 ms.prod:

@@ -7,7 +7,7 @@ description: Intune gives you the tools to proactively assign a new provisioning
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 05/03/2017
 ms.topic: article
 ms.prod:
@@ -32,9 +32,9 @@ ms.custom: intune-azure
 
 ## Introduction
 
-Apple iOS line of business apps that are assigned to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
+Apple iOS line-of-business apps that are assigned to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
 
-- **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app will not be allowed to run.
+- **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app is not allowed to run.
 - **Capabilities enforcement** - iOS attempts to enforce the app's capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) that are in the app installation (.ipa) file.
 
 
@@ -44,12 +44,12 @@ After the certificate expires, you must sign the app again with a new certificat
 
 ## How to create an iOS mobile app provisioning profile
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring +Management** > **Intune**.
-3. On the **Intune** blade, choose **Mobile apps**.
-1.  In the **Mobile apps** workload, choose **Manage** > **iOS provisioning profiles**.
-2.  In the list of profiles blade, choose **Create profile**.
-3. In the **Create profile** blade, configure the following values:
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Mobile apps**.
+1.  In the **Mobile apps** workload, choose **Manage** > **iOS app provisioning profiles**.
+2.  In the list of profiles pane, choose **Create profile**.
+3. In the **Create profile** pane, configure the following values:
 	- **Name** - Provide a name for this mobile provisioning profile.
 	- **Description** - Optionally, provide a description for the policy.
 	- **Upload profile file** - Choose **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
