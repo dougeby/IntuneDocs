@@ -7,7 +7,7 @@ description: Supporting documentation for the Manage Office 365 apps wizard."
 keywords:
 author: lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
@@ -134,4 +134,4 @@ To see or update these policies, or any policies you create in the Intune Azure 
 ![Image of user interface path to view policies](./media/image-for-faq.png)
 
 ## Next steps
-Learn more about [app protection polices](https://docs.microsoft.comapp-protection-policy.md).
+Learn more about [app protection polices](app-protection-policy.md).

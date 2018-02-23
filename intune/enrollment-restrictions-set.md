@@ -7,8 +7,8 @@ description: Restrict enrollment by platform and set a device enrollment limit i
 keywords:
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 11/29/2017
+manager: dougeby
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +17,7 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 
 # optional metadata
 
-#ROBOTS: 
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: dagerrit
@@ -36,7 +36,7 @@ As an Intune administrator, you can create and manage enrollment restrictions wh
 >Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
 
 >[!NOTE]
->The group-assigned enrollment restriction and priority functionality mentioned below are in the process of being rolled out across the Intune customer base. Until this roll out is complete, you might not have access to the group and priority features. 
+>The group-assigned enrollment restriction and priority functionality mentioned below are in the process of being rolled out across the Intune customer base. Until this roll out is complete, you might not have access to the group and priority features.
 
 The specific enrollment restrictions that you can create include:
 
@@ -85,7 +85,7 @@ You can change the settings for a device type restriction by following these ste
   - Android and Android for Work support major.minor.rev.build.
   - iOS supports major.minor.rev.
   - Windows supports major.minor.rev.build for Windows 10 only.
-  Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app. 
+  Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
 8. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 
     ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
@@ -108,15 +108,19 @@ You can change the settings for a device limit restriction by following these st
     ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
 6. Click **Save**.
 
+Your end user will see a notification that will tell them when they have met their limit of enrolled devices. For example, on iOS, it would look like this:
+
+![Screenshot of the iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## Change enrollment restriction priority
 
-Priority is used when a user exists in multiple groups that are assigned restrictions. Users are subject only to the highest priority restriction assigned to a group that they are in. For example, Joe is in a group A assigned to priority 5 restrictions and group B assigned to priority 2 restrictions. Joe is only subject to the priority 2 restrictions. 
+Priority is used when a user exists in multiple groups that are assigned restrictions. Users are subject only to the highest priority restriction assigned to a group that they are in. For example, Joe is in a group A assigned to priority 5 restrictions and group B assigned to priority 2 restrictions. Joe is only subject to the priority 2 restrictions.
 
 When you create a restriction, it is added to the list just above the default.
 
-Device enrollment includes default restrictions for both device type and device limit restrictions. These two restrictions apply to all users unless they are overridden by higher-priority restrictions. 
+Device enrollment includes default restrictions for both device type and device limit restrictions. These two restrictions apply to all users unless they are overridden by higher-priority restrictions.
 
-You can change the priority of any non-default restriction. 
+You can change the priority of any non-default restriction.
 
 **To change restriction priority**
 
@@ -125,8 +129,3 @@ You can change the priority of any non-default restriction.
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Hover over the restriction in the priority list.
 5. Using the three vertical dots, drag the priority to the desired position in the list.
-
-
-
-
-

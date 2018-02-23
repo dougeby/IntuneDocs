@@ -7,7 +7,7 @@ description: Learn how to enroll macOS devices in Intune."
 keywords:
 author: ErikjeMS
 ms.author: erikje
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:
@@ -57,4 +57,4 @@ Tell your end users to go to the [Company Portal website](http://portal.manage.m
 For information about other end-user tasks, see these articles:
 
 - [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
-- [Using your iOS or macOS device with Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
+- [Using your macOS device with Intune](/intune-user-help/using-your-macos-device-with-intune)

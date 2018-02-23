@@ -7,7 +7,7 @@ description: "Learn how you can use Intune to help automatically connect iOS dev
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

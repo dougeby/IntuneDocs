@@ -5,7 +5,7 @@ description: Reference topic describes the API URL structure.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

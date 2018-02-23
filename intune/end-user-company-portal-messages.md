@@ -6,7 +6,7 @@ description: Describes Company Portal app messages that Intune end users might s
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/09/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -100,7 +100,7 @@ The second time that users sign in to the Company Portal app after denying acces
 
 
 ### How to explain this to your users
-Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). You can also send them to [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) if you want to let them compare the two methods.
+Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). 
 
 ## Your company support needs to give you access to company resources
 

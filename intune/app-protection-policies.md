@@ -55,24 +55,29 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 6.  Choose **Configure required settings** on the **Add a policy** blade to open **Settings**.
 
     There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps. The access polices determine how the end user accesses the apps in a work context.
-    To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes/
+    To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes.
 
     > [!TIP]
-    > These policy settings are enforced only when using apps in the work context. When end user uses the app to do a personal task, they aren't be affected by these policies.
+    > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
 
-7. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade. 
-8. Choose **Create** to create the policy and save your settings.
+7.  Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
+8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade. 
+9. Choose **Create** to create the policy and save your settings.
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users)."
 
 ## Deploy a policy to users
 
-1.  In the **Policy** blade, choose  **User groups**, which opens the **User groups** details. Choose **Add user group** to open the **Add user group** details.
 
-  ![Screenshot of the User groups information with the Add user group menu option highlighted](./media/app-protection-policy-add-users.png)
+1. In the **App protection policies** pane, select a policy.
 
-2.  A list of user groups is displayed on the **Add user group** blade. This list is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
-  ![Screenshot of the Add user group information showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+1. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
+
+   ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
+
+2.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+  
+    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
 You've now created a policy and deployed it to users.
 
@@ -88,33 +93,32 @@ End users can download the apps from the App store or Google Play. For more info
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies, users who are already signed in to the apps won’t see the changes for an 8-hour period.
 
-To see the effect of the changes immediately, the end user will have to log out of the app, and sign back in.
+To see the effect of the changes immediately, the end user must log out of the app, and sign back in.
 
 ### To change the list of apps associated with the policy
 
-1.  In  the **App policy** blade, choose the policy you want to change. This selection shows the details specific to the policy you selected.
+1.  In  the **App protection policies** pane, choose the policy you want to change to open a pane specific to the policy you just selected.
 
-2.  Choose **Targeted apps** to open the list of apps.
+2.  In the policy pane, choose **Targeted apps** to open the list of apps.
 
 3.  Remove or add apps from the list and choose the **Save** icon to save your changes.
 
 ### To change the list of user groups
 
-1.  In  the **App policy** blade, choose the policy you want to change. This selection shows the details specific to the policy you selected.
 
-2.  Choose **User groups** to open the **User group** details that shows the list of current user groups who have this policy.
+1.  In  the **App protection policies** pane, choose the policy you want to change to open the pane specific to the policy you selected.
 
-3.  To add a new user group to the policy, choose **Add user group**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+2.  In the policy pane, choose **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
 
-4.  To delete a user group, highlight the user group you want to remove. Then choose the ellipses (…), and choose **Delete** to remove the user group.
-  ![Screenshot showing Delete option ](./media/app-protection-policy-delete-user.png)
+3.  To add a new user group to the policy, on the **Include** tab choose **Select groups to include**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+
+4.  To delete a user group, on the **Exclude** tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.
 
 ### To change policy settings
 
-1.  In the **App policy** blade, choose the policy you want to change. This selection shows the details specific to the policy you selected.
+1.  In the **App protection policies** pane, choose the policy you want to change to open a pane specific to the policy you just selected.
 
-
-2.  Choose **Policy settings** to open the **Policy settings** details.
+2.  Choose **Policy settings** to open the **Policy settings** pane.
 
 3.  Change the settings, and choose the **Save** icon to save your changes.
 

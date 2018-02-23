@@ -6,7 +6,7 @@ titlesuffix: "Azure portal"
 description: Learn how to upload PowerShell scripts in Intune to run on Windows 10 devices. 
 keywords:
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod:

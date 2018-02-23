@@ -7,7 +7,7 @@ description: Learn how to configure Intune to create connections to corporate em
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod:

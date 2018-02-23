@@ -7,7 +7,7 @@ description: Learn about the device restrictions available for Windows 10 Team d
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:

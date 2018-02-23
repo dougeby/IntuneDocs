@@ -5,7 +5,7 @@ description: You can download a file for use with Microsoft Power BI that allows
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -45,7 +45,7 @@ The following steps show you how to download the Power BI file and how to use th
 
 ## Install Power BI
 
-Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
+Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## Load the data and reports using the Power BI file (pbix)
 

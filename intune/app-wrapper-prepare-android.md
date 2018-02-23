@@ -6,8 +6,8 @@ description: Use the information in this article to learn how to wrap your Andro
 keywords:
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 07/07/2017
+manager: dougeby
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -56,7 +56,7 @@ Before running the tool, review [Security considerations for running the App Wra
     > [!NOTE]
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
 
-- Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
+- Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
 ## Install the App Wrapping Tool
 
@@ -87,7 +87,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 |Property|Information|Example|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Path of the source Android app (.apk).| |
-|**-OutputPath**&lt;String&gt;|Path to the output Android app. If this is the same directory path as InputPath, the packaging will fail.| |
+ |**-OutputPath**&lt;String&gt;|Path to the output Android app. If this is the same directory path as InputPath, the packaging will fail.| |
 |**-KeyStorePath**&lt;String&gt;|Path to the keystore file that has the public/private key pair for signing.|By default, keystore files are stored in "C:\Program Files (x86)\Java\jreX.X.X_XX\bin." |
 |**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Android requires all application packages (.apk) to be signed. Use Java keytool to generate the KeyStorePassword. Read more about Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) here.| |
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
@@ -119,6 +119,14 @@ You will then be prompted for **KeyStorePassword** and **KeyPassword**. Enter th
 
 The wrapped app and a log file are generated and saved in the output path you specified.
 
+## How often should I rewrap my Android application with the Intune App Wrapping Tool?
+The main scenarios in which you would need to rewrap your applications are as follows:
+* The application itself has released a new version. The previous version of the app was wrapped and uploaded to the Intune console.
+* The Intune App Wrapping Tool for Android has released a new version that enables key bug fixes, or new, specific Intune application protection policy features. This happens every 6-8 weeks through GitHub repo for the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
+
+Some best practices for rewrapping include: 
+* Maintaining signing certificates used during the build process, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+
 ## Reusing signing certificates and wrapping apps
 Android requires that all apps must be signed by a valid certificate in order to be installed on Android devices.
 
@@ -143,7 +151,35 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
+## Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your wrapped Android LOB app, and enabling ADAL SSO (optional)
+
+The following is guidance for requiring user prompt on app launch for an automatic APP-WE service enrollment (we call this **default enrollment** in this section), requiring Intune app protection policies to allow only Intune protected users to use your wrapped Android LOB app. It also covers how to enable SSO for your wrapped Android LOB app. 
+
+> [!NOTE] 
+> The benefits of **default enrollment** include a simplified method of obtaining policy from APP-WE service for an app on the device.
+
+### General Requirements
+* The Intune SDK team will require your app's Application ID. A way to find this is through the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
+	 
+### Working with the Intune SDK
+These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
+
+1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> The term "client id" tied to your app is the same as the term "application id" from the Azure Portal tied to your app. 
+* To enable SSO, "Common ADAL configuration" #2 is what is needed.
+
+2. Enable default enrollment by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
+
+3. Enable MAM policy required by putting the following value in the manifest:
+```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
+
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [Use the SDK to enable apps for mobile application management](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)

@@ -7,9 +7,9 @@ description: Learn how to reset and remove the passcode on devices you manage wi
 keywords:
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -46,12 +46,12 @@ The **Remove passcode** action generates a new passcode for the device, which is
 
 ## How to reset a passcode
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose a device, and then choose the **Remove passcode** device remote action.
+4. On the **Devices** blade, choose **All devices**.
+5. From the list of devices you manage, select a device, choose **...More**, and then choose the **Remove passcode** device remote action.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
+To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.

@@ -6,7 +6,7 @@ description: Learn how to fix a threat found by Mobile Protect on Android.
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:

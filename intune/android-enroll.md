@@ -7,8 +7,8 @@ description: Learn how to enroll Android devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
-manager: angrobe
-ms.date: 12/07/2017
+manager: dougeby
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,6 +55,9 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 
 ## Add Android for Work binding for Intune
 
+> [!NOTE]
+> Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings in order to successfully complete.  Please ensure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.
+
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
 2. **Configure Android for Work binding**<br>
@@ -64,24 +67,23 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    ![Screenshot showing link to configure the Android for Work binding](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
-   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console.
+   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
    c. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.
 
 ## Specify Android for Work enrollment settings
-   Android for Work is supported on only certain Android devices. See Google's [Android for Work requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"). Any device that supports Android for Work also supports conventional Android management. Intune lets you specify how devices that support Android for Work should be managed:
+Android for Work is supported on only certain Android devices. See Google's [Android for Work requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android for Work also supports conventional Android management. Intune lets you specify how devices that support Android for Work should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
 
-   - **Manage all devices as Android**. All Android devices, including devices that support Android for Work, will be enrolled as conventional Android devices.
-   - **Manage supported devices as Android for Work**. All devices that support Android for Work are enrolled as Android for Work devices. Any Android device that does not support Android for Work is enrolled as a conventional Android device.
-   - **Manage supported devices for users only in these user groups as Android for Work**. You can target Android for Work management to a limited set of users. Only members of the selected groups who enroll a device that supports Android for Work are enrolled as Android for Work devices. All others are enrolled as Android devices. This is useful during Android for Work pilots.
+- **Block (set by default)**:  All Android devices, including devices that support Android for Work, will be enrolled as conventional Android devices.
+- **Allow**: All devices that support Android for Work are enrolled as Android for Work devices. Any Android device that does not support Android for Work is enrolled as a conventional Android device.
 
 ## Approve the Company Portal app in the managed Google Play store
 You need to approve the Company Portal app for Android in the managed Google Play store to ensure that it receives automatic app updates. If you don't approve it, the Company Portal will eventually become out of date and may not receive important bug fixes or new features when Microsoft releases them.
 
 Follow these steps to approve the Intune Company Portal:
 
-1.  Download the Company Portal app from the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Browse to the Company Portal app on the [managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Sign into the managed Google Play store with the same Google account that you used to configure the binding for Android for Work.
 3.  Click **Approve.**  This will open a new dialog.
 4.  Review the permissions in this dialog, then click **Approve**. You need these to allow these permissions in order to allow the Company Portal app to manage the work profile on the device.

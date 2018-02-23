@@ -7,7 +7,7 @@ description: Learn about the Intune settings you can use to configure VPN connec
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod:
@@ -69,4 +69,3 @@ Depending on the settings you choose, not all values listed below are configurab
 	- **F5 Edge Client**
 	- **Pulse Secure**
 
-- **Split tunneling** - Enable to let certain web traffic use the VPN connection when the VPN while other traffic uses the internet. Disable this setting if you want all traffic to use the VPN when active.
