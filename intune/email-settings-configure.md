@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,17 +47,19 @@ Use the information in this topic to learn the basics about configuring an email
 
 ## Create a device profile containing email settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the email profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the email profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply email settings. Currently, you can choose one of the following platforms for email device settings:
 	- **Android** (Samsung Android Knox Standard only)
 	- **Android for Work**
 	- **iOS**
+	- **macOS**
 	- **Windows Phone 8.1**
+	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Email**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
@@ -65,9 +67,9 @@ Use the information in this topic to learn the basics about configuring an email
 	- [iOS settings](email-settings-ios.md)
 	- [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
 	- [Windows 10 settings](email-settings-windows-10.md)
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create profile** pane, and hit **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile will be created and appears on the profiles list pane.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 ## Further information

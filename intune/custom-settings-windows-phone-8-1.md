@@ -43,7 +43,7 @@ This capability is intended to allow you to assign settings that are not configu
 	- **Name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
 	- **Description** - Provide a description that gives an overview of the setting and other relevant information to help you locate it.
 	- **OMA-URI** - Specify the OMA-URI you want to supply a setting for.
-	- **Data type** - Select the data type in which to specify this OMA-URI setting. Choose from **String**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
-	- **Value** - Enter the value you want to associate with the OMA-URI you entered.
+	- **Data type** - Select the data type in which to specify this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, **Boolean**, or **Base64**.
+	- **Value** - Enter the value or file you want to associate with the OMA-URI you entered.
 
 4. Click **OK** once you are done, then continue to add more settings as required.
