@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -93,12 +93,12 @@ You must create a trusted certificate profile before you can create a SCEP or PK
 
 ### To create a trusted certificate profile
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the trusted certificate profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the trusted certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for certificate settings:
 	- **Android**
 	- **iOS**
@@ -112,9 +112,9 @@ You must create a trusted certificate profile before you can create a SCEP or PK
 	- **Computer certificate store - Root**
 	- **Computer certificate store - Intermediate**
 	- **User certificate store - Intermediate**
-8. When you're done, choose **OK**, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
