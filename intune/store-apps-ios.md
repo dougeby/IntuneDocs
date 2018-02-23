@@ -7,7 +7,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 Use the information in this topic to help you add iOS store apps to Intune.
 
 >[!NOTE]
->While users of iOS devices can remove some of the built-in iOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
+>While users of iOS devices can remove some of the built-in iOS apps like Stocks and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually reinstall them.
 
 ## Before you start
 
@@ -46,9 +46,9 @@ You can only assign apps using this method if they are free of charge in the app
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Manage > Apps**.
-5. Above the list of apps, choose **Add**.
-6. In the **App type** field, select **iOS**.
+4. In the **Mobile apps** workload, choose **Apps** under the **Manage** section.
+5. Choose **Add** on the right side of the **Apps** pane.
+6. In the **App type** list, select **iOS** under the available **Store app** types.
 6. Choose **Search the App Store**.
 7. In the **Search the App Store** blade, select the App store country locale.
 8. Type the name (or part of the name) in the search box. Intune searches the store and return a list of relevant results.
@@ -56,8 +56,8 @@ You can only assign apps using this method if they are free of charge in the app
 
 ## Step 2 - Configure app information
 
-1. In the **Add app** blade, choose **App information**.
-2. In the **App information** blade, configure the app information. Once you are done, click **Add**. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
+1. In the **Add app** blade, choose **App information** to configure the app.
+2. In the **App information** blade, add the app information. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
 - **Name** -- Type the name of the app for display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, the company portal displays only one of the apps to users.
 - **Description** -- Type a description for the app to displayed to users in the company portal.
 - **Publisher** -- Type the name of the publisher of the app.
@@ -72,6 +72,11 @@ You can only assign apps using this method if they are free of charge in the app
 - **Owner** -- Optionally, type a name for the owner of this app, for example, **HR department**.  This field is only visible an administrator and will not be visible to end users.
 - **Notes** -- Type any notes you would like to associate with this app. This field is only visible an administrator and will not be visible to end users.
 - **Logo** -- Upload an icon that is associated with the app. The icon is displayed with the app when users browse the company portal.
-3. When you are done, on the **Add App** blade, choose **OK**.
+3. When you are done, click **OK** on the **Add information** blade.
+4. Click **Add** on the **Add app** blade. 
 
-The app you have created displays in the apps list, where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+The app you have created displays in the apps list, where you can assign it to the groups you choose. 
+
+## Next steps
+
+- [How to assign apps to groups](apps-deploy.md)
