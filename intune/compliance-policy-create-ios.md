@@ -62,7 +62,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-1. From the **Intune** pane, choose **Device compliance**. Under **Manage**, choose **Policies** and choose **Create Policy**.
+1. From the **Intune** pane, choose **Device compliance**. Under **Manage**, choose **Policies**, and choose **Create Policy**.
 2. Type a name, description, and choose the platform that you want this policy to apply to.
 3. Choose **Compliance requirements** to specify the **System Security**, **Device Health**, and **Device Properties** settings here, When you are done, choose **OK**.
 
