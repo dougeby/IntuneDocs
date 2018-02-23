@@ -78,6 +78,9 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
+
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -183,6 +186,8 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+-  **Path to favorites file** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
+-  **Changes to Favorites** - Set this to **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 
