@@ -3837,11 +3837,6 @@
 			"source_path": "intune/reports-ref-userdeviceassociations.md",
 			"redirect_url": "intune/reports-ref-devices",
 			"redirect_document_id": true
-		},
-		{
-    			"source_path": "intune/windows-enrollment-status.md",
-    			"redirect_url": "/intune/windows-enroll",
-    			"redirect_document_id": false
 		}
 	]
 }

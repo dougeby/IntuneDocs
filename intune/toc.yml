@@ -470,6 +470,30 @@
       href: conditional-access-assign-jamf.md
   - name: Protect device data
     items:
+    - name: Use app protection policies
+      href: app-protection-policy.md
+      items:
+      - name: Create app protection policies
+        href: app-protection-policies.md
+        items:
+        - name: Android settings
+          href: app-protection-policy-settings-android.md
+        - name: iOS settings
+          href: app-protection-policy-settings-ios.md
+        - name: Data transfer policy exceptions
+          href: app-protection-policies-exception.md          
+        - name: Review app protection logs in the Managed Browser
+          href: app-protection-policy-settings-log.md
+      - name: Validate app protection policies
+        href: app-protection-policies-validate.md
+      - name: Monitor app protection user status
+        href: app-protection-policies-monitor.md
+      - name: Get ready for WIP app protection policies
+        href: app-protection-policies-configure-windows-10.md
+      - name: Create & assign WIP app protection policies
+        href: windows-information-protection-policy-create.md
+      - name: Manage data transfer between iOS apps
+        href: data-transfer-between-apps-manage-ios.md
     - name: Mobile Threat Defense
       href: mobile-threat-defense.md
       items:
