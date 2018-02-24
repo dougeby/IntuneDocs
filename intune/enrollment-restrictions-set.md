@@ -59,7 +59,6 @@ Default restrictions are automatically provided for both device type and device 
 ## Create a restriction
 
 1. Sign in to the Azure portal.
-
 2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Choose **Create restriction**.
@@ -88,7 +87,6 @@ You can change the settings for a device type restriction by following these ste
     - Windows supports major.minor.rev.build for Windows 10 only.
   Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
 8. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
-
     ![Device restrictions workspace with the default device platform configurations showing personally owned settings configured](media/device-restrictions-platform-configurations.png)
 9. Select **Save**.
 
@@ -106,7 +104,6 @@ You can change the settings for a device limit restriction by following these st
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Under **Device Limit Restrictions**, choose the restriction that you want to set.
 5. Choose **Device Limit**, and then in the drop-down list, select the maximum number of devices a user can enroll.
-
     ![Device limit restrictions blade with the device limit restrictions](./media/device-restrictions-limit.png)
 6. Select **Save**.
 
@@ -127,7 +124,6 @@ You can change the priority of any non-default restriction.
 ### Change restriction priority
 
 1. Sign in to the Azure portal.
-
 2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Hover over the restriction in the priority list.
