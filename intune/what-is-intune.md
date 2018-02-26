@@ -5,9 +5,9 @@ title: Introduction to Intune in the Azure portal
 titlesuffix: "Azure portal"
 description: Get the basics about Intune in the Azure portal, and how it can help you manage your devices."
 keywords:
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 02/14/2018
 ms.topic: get-started-article
 ms.prod:
