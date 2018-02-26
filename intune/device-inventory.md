@@ -7,7 +7,7 @@ description: Learn how to view the devices you manage with Intune, and understan
 keywords:
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod:
