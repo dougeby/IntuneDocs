@@ -130,10 +130,6 @@ in the Azure console will take some time to reflect the reality on the device.
 (which already has a 7 day interval) or as read-only properties. To enhance the accuracy after the remote action has taken place, you can get the state 
 of the parameters immediately after running the action to update the account/parameters on the Surface Hub.
 
-#### New Windows Defender Exploit Guard settings <!-- 631893 -->
-
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities are now available. These settings can be found at: Device configuration\Profiles\
-Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 ##### Attack Surface Reduction
 
