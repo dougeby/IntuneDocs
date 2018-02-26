@@ -35,7 +35,7 @@ ms.custom: intune-classic
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 >[!IMPORTANT]
-> For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, ensure you configured the other product correctly.
+> For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
 
 ## Create an online support ticket
 
@@ -52,7 +52,6 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
     - **Issue type**: **Technical**
     - **Service**: **Microsoft Intune**
     - **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
-
     >[!IMPORTANT]
     >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
     >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
@@ -76,7 +75,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
     - Supplemental data
 
     Choose **Next**.
-	
+
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
