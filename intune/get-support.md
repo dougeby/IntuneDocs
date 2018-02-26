@@ -59,6 +59,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 	Choose **Next** to continue.
 4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
+
 	- **Severity**
 	- **Problem type**
 	- **Category**
@@ -68,7 +69,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
 
 	To help the support team research and resolve your problem, enter the following information:
-	-	**Details**
+	- **Details**
 	- **Date**
 	- **Time**
 	- Supplemental data
