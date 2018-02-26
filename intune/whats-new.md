@@ -130,10 +130,6 @@ in the Azure console will take some time to reflect the reality on the device.
 (which already has a 7 day interval) or as read-only properties. To enhance the accuracy after the remote action has taken place, you can get the state 
 of the parameters immediately after running the action to update the account/parameters on the Surface Hub.
 
-#### New Windows Defender Exploit Guard settings <!-- 631893 -->
-
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities are now available. These settings can be found at: Device configuration\Profiles\
-Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 ##### Attack Surface Reduction
 
@@ -231,16 +227,6 @@ The **Built-in** app type makes it easier for you to create and assign Office 36
 #### Including and excluding app assignment based on groups <!-- 1406920 -->
 
 During app assignment and after selecting an assignment type, you can select the groups to include, as well as the groups to exclude.
-
-#### Website Learning Mode <!-- 1631908 -->
-
-Intune now has an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
-
-#### Approve the Company Portal app for Android for Work <!--1797090 -->
-If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
-
-#### FaceID on iOS devices <!-- 1807377 -->
-Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
 
 ### Device configuration
 
