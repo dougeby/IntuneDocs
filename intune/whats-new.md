@@ -228,16 +228,6 @@ The **Built-in** app type makes it easier for you to create and assign Office 36
 
 During app assignment and after selecting an assignment type, you can select the groups to include, as well as the groups to exclude.
 
-#### Website Learning Mode <!-- 1631908 -->
-
-Intune now has an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
-
-#### Approve the Company Portal app for Android for Work <!--1797090 -->
-If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
-
-#### FaceID on iOS devices <!-- 1807377 -->
-Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
-
 ### Device configuration
 
 #### You can assign an application configuration policy to groups by including and excluding assignments  <!-- 1480316 --> 
