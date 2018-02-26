@@ -39,7 +39,7 @@ You can set up an application using Azure Active Directory (Azure AD) and authen
 ### Azure AD and Intune credential requirements <!-- 2077525 -->
 
 - An Intune license is no longer required to be assigned to the user when accessing the Intune Data Warehouse (including the API).
-- The Intune role name has been chagned from **Reports** to **Intune data warehouse**. 
+- The Intune role name has been changed from **Reports** to **Intune data warehouse**. 
 
     For more information, see [Azure AD and Intune credential requirements](reports-api-url.md#azure-ad-and-intune-credential-requirements).
 

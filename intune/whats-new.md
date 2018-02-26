@@ -6,9 +6,9 @@ description: Find out what's new in the Intune Azure portal
 keywords:
 author: ErikjeMS  
 ms.author: erikje
-manager: dougeby
-ms.date: 02/01/2018
-ms.topic: article
+manager: angrobe
+ms.date: 01/02/2018
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md).
 
 > [!Note]
-> For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> For information on new functionality in hybrid mobile device management (MDM), check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
 <!-- Common categories:  
@@ -45,6 +45,125 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Monitor and troubleshoot
 
 -->   
+
+
+## Week of February 19, 2018
+### Device enrollment
+#### New option for user authentication for Apple bulk enrollment <!-- 747625 -->
+
+New tenants will see this right away. For existing tenants, this feature is being rolled out through April. Until this roll out is complete, you might not have access to these new features.
+
+ Intune now gives you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
+ 
+- Apple Device Enrollment Program
+- Apple School Manager
+- Apple Configurator Enrollment
+ 
+When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
+ 
+When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
+
+#### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
+ 
+Intune now supports enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+
+After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
+
+#### See enrollment restrictions per user <!-- 1634444 eeready wnready -->
+On the **Troubleshoot** blade, you can now see the enrollment restrictions that are in effect for each user by selecting **Enrollment restrictions** from the **Assignments** list.
+
+### Device management
+#### Windows defender health status and threat status reports <!--854704 -->
+
+Understanding Windows Defender's health and status is key to managing Windows PCs.  With this update, Intune adds new reports and actions to the status and health of the Windows Defender agent. Using a status roll up report in the Device Compliance workload, you can see devices that need any of the following:
+- signature update
+- Restart
+- manual intervention
+- full scan
+- other agent states requiring intervention
+
+A drill-in report for each status category lists the individual PCs that need attention, or those that report as **Clean**.
+
+#### New privacy settings for device restrictions <!--1308926 -->
+Two new privacy settings are now available for devices:
+- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
+
+#### New settings for the Edge browser <!--1469166 -->
+Two new settings are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**. 
+
+### App management
+#### Protocol exceptions for applications <!--1035509 -->
+
+You can now create exceptions to the Intune Mobile Application Management (MAM) data transfer policy to open specific unmanaged applications. Such applications must be trusted by IT. Other than the exceptions you create, data transfer is still restricted to applications that are managed by Intune when your data transfer policy is set to **managed apps only**. You can create the restrictions by using protocols (iOS) or packages (Android).
+ 
+For example, you can add the Webex package as an exception to the MAM data transfer policy. This will allow Webex links in a managed Outlook email message to open directly in the Webex application. Data transfer will still be restricted in other unmanaged applications. For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
+
+#### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
+A setting in the Windows Information Protection (WIP) policy now allows you to control whether WIP-encrypted data is included in Windows search results. Set this app protection policy option by selecting **Allow Windows Search Indexer to search encrypted items** in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**. For more information, see [Allow Windows Search Indexer to search encrypted items](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items).
+
+#### Configuring a self-updating mobile MSI app <!-- 1740840 -->
+You can configure a known self-updating mobile MSI app to ignore the version check process. This capability is useful to avoid getting into a race condition. For instance, this type of race condition could occur when the app being auto-updated by the app developer is also being update by Intune. Both could try to enforce a version of the app on a Windows client, which could create a conflict. For these automatically updated MSI apps, you can configure the **Ignore app version** setting in the **App information** blade. When this setting is switched to **Yes**, Microsoft Intune will ignore the app version installed on the Windows client. 
+
+#### Related sets of app licenses supported in Intune <!-- 1864117 -->
+Intune in the Azure portal now supports related sets of app licenses as a single app item in the UI. In addition, any Offline Licensed apps synced from Microsoft Store for Business will be consolidated into a single app entry and any deployment details from the individual packages will be migrated over to the single entry. To view related sets of app licenses in the Azure portal, select **App licenses** from the **Mobile apps** blade.
+
+### Device configuration
+#### Windows Information Protection (WIP) file extensions for automatic encryption <!-- 1463582 -->
+A setting in the Windows Information Protection (WIP) policy now lets you specify which file extensions are automatically encrypted when copying from a Server Message Block (SMB) share within the corporate boundary, as defined in the WIP policy.
+
+#### Configure resource account settings for Surface Hubs
+
+You can now remotely configure resource account settings for Surface Hubs.
+
+The resource account is used by a Surface Hub to authenticate against Skype/Exchange so it can join a meeting. 
+You will want to create a unique resource account so the Surface Hub can show up in the meeting as the conference room. 
+For example, a resource account such as **Conference Room B41/6233**.
+
+> [!NOTE]
+> - If you leave fields blank you will override previously configured attributes on the device.
+>
+> - Resource Account properties can change dynamically on the Surface Hub. For example, if password rotation is on. So, it's possible that the values 
+in the Azure console will take some time to reflect the reality on the device. 
+>
+>   To understand what is currently configured on the Surface Hub, the Resource Account information can be included in hardware inventory 
+(which already has a 7 day interval) or as read-only properties. To enhance the accuracy after the remote action has taken place, you can get the state 
+of the parameters immediately after running the action to update the account/parameters on the Surface Hub.
+
+
+##### Attack Surface Reduction
+
+
+|Setting name  |Setting options  |Description  |
+|---------|---------|---------|
+|Execution of password-protected executable content from email|Block, Audit, Not configured|Prevent password-protected executable files downloaded over email from running.|
+|Advanced ransomware protection|Enabled, Audit, Not configured|Use aggressive ransomware protection.|
+|Flag credential stealing from the Windows local security authority subsystem|Enabled, Audit, Not configured|Flag credential stealing from the Windows local security authority subsystem (lsass.exe).|
+|Process creation from PSExec and WMI commands|Block, Audit, Not configured|Block process creations originating from PSExec and WMI commands.|
+|Untrusted and unsigned processes that run from USB|Block, Audit, Not configured|Block untrusted and unsigned processes that run from USB.|
+|Executables that don’t meet a prevalence, age, or trusted list criteria|Block, Audit, Not configured|Block executable files from running unless they meet a prevalence, age, or trusted list criteria.|
+
+##### Controlled folder access
+
+|Setting name  |Setting options  |Description  |
+|---------|---------|---------|
+|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
+**Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
+
+#### Additions to System Security settings for Windows 10 and later compliance policies <!--1704133-->
+
+Additions to the Windows 10 compliance settings are now available, including requiring Firewall and Windows Defender Antivirus. 
+
+
+### Role-based access control
+### Intune apps
+#### Support for offline apps from the Microsoft Store for Business <!--1222672-->
+Offline apps that you purchased from the Microsoft Store for Business are now synchronized to the Azure portal. You can deploy these apps to device groups or user groups. Offline apps are installed by Intune, not by the store.
+
+#### Prevent end users from manually adding or removing accounts in the work profile <!-- 1728700 -->
+
+When you deploy the Gmail app into an Android for Work profile, you can now prevent end users from manually adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
 
 ## Week of February 5, 2018
 
@@ -103,21 +222,11 @@ You can revoke the license of all iOS Volume Purchasing Program (VPP) apps for a
 For a given device that has one or more iOS Volume-Purchase Program (VPP) apps, you can revoke the associated device-based app license for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. For more information, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
 
 #### Assign Office 365 mobile apps to iOS and Android devices using built-in app type <!-- 1332318 -->
-The **Built-in** app type makes it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
+The **Built-in** app type makes it easier for you to create and assign Office 365 apps to the iOS and Android devices that you manage. These apps include 0365 apps such as Word, Excel, PowerPoint, and OneDrive. You can assign specific apps to the app type and edit the app information configuration.
 
 #### Including and excluding app assignment based on groups <!-- 1406920 -->
 
 During app assignment and after selecting an assignment type, you can select the groups to include, as well as the groups to exclude.
-
-#### Website Learning Mode <!-- 1631908 -->
-
-Intune now has an extension of Windows Information Protection (WIP) Learning mode. In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies.
-
-#### Approve the Company Portal app for Android for Work <!--1797090 -->
-If your organization uses Android for Work, you'll need to manually approve the Company Portal app for Android so that it will continue to receive automatic updates from the managed Google Play store.
-
-#### FaceID on iOS devices <!-- 1807377 -->
-Intune app protection policies now support a setting that controls FaceID on iOS devices. This setting is for devices that supports the FaceID functionality (currently only the iPhone X). This setting is separate from the TouchID controls currently supported. Organizations have the ability to choose whether to trust FaceID as a valid PIN prompt as an alternative to the TouchID controls.
 
 ### Device configuration
 
@@ -164,7 +273,7 @@ You can now use the Windows 10 edition upgrade policy to upgrade from additional
 
 #### New Windows Defender Security Center (WDSC) device configuration profile settings <!-- 1335507 -->
 
-Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
+Intune adds a new section of device configuration profile settings under the Endpoint protection named **Windows Defender Security Center**. IT admins can configure which pillars of the Windows Defender Security Center app end-users can access. If an IT admin hides a pillar in the Windows Defender Security Center app, all notifications related to the hidden pillar do not display on the user's device.
 
 These are the pillars admins can hide from the Windows Defender Security Center device configuration profile settings:
 - Virus and threat protection
@@ -201,7 +310,7 @@ You can now shut down iOS 10.3 supervised devices. This action shuts down the de
 
 #### Disallow date/time changes to Samsung Knox devices <!-- 1468103 -->
 
-You can now block date and time changes on Samsung Knox devices. You can find this feature in **Device configuration profiles** > **Device restrictions (Android)** > **General**.
+We've added a new feature that allows you to block date and time changes on Samsung Knox devices. You can find this in **Device configuration profiles** > **Device restrictions (Android)** > **General**.
 
 #### Surface Hub resource account supported <!-- 1566442  -->
 
@@ -246,7 +355,7 @@ The following are the settings administrators can configure:
      Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
 
 #### Install Office apps on macOS devices <!-- 1494311 -->
-You will now be able to install Office apps on macOS devices. This new app type allows you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep your apps secure and up-to-date.
+You will now be able to install Office apps on macOS devices. This new app type will allow you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep your apps secure and up-to-date.
 
 ### App management
 
@@ -272,8 +381,7 @@ In contrast, the new **Current User** entity collection only contains users who 
 
 ### Updated Graph APIs <!-- 1736360 -->
 
-We've updated a few of the Graph APIs for Intune that are in beta. Check out the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) for more information.
-
+In this release, we've updated a few of the Graph API's for Intune that are in beta. Please check out the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog) for more information.
 
 ## Week of December 4, 2017
 
