@@ -3,12 +3,12 @@
 
 title: Android app protection policy settings
 titlesuffix: "Azure portal"
-description: This topic describes the app protection policy settings for Android devices."
+description: "This topic describes the app protection policy settings for Android devices."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,9 +24,7 @@ ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
 ---
-
 # Android app protection policy settings
 The policy settings that are described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
@@ -36,7 +34,7 @@ There are two categories of policy settings: data relocation settings and access
 | Setting | How to use | Default value(s) |
 |------|------|------|
 | **Prevent Android backups** | Choose **Yes** to prevent this app from backing up work or school data to the [Android Backup Service](https://developer.android.com/google/backup/index.html) Choose **No** to allow this app to back up work or school data.| Yes |
-| **Allow app to transfer data to other apps** | Specify what apps can receive data from this app: <ul><li> **Policy managed apps**: Allow transfer only to other policy-managed apps.</li> <li>**All apps**: Allow transfer to any app. </li> <li>**None**: Do not allow data transfer to any app, including other policy-managed apps.</li></ul> <p>There are some exempt apps and services to which Intune may allow data transfer. See  [Data transfer exemptions](#Data-transfer-exemptions) for a full list of apps and services.<p>**Note:** Intune does not currently support the Android Instant Apps feature. Intune will block any data connection to or from the app.  See the Android Developer documentation for more information about [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p>| All apps |
+| **Allow app to transfer data to other apps** | Specify what apps can receive data from this app: <ul><li> **Policy managed apps**: Allow transfer only to other policy-managed apps.</li> <li>**All apps**: Allow transfer to any app. </li> <li>**None**: Do not allow data transfer to any app, including other policy-managed apps.</li></ul> <p>There are some exempt apps and services to which Intune may allow data transfer by default. In addition, you can create your own exemptions if you need to allow data to be transferred to an app that does not support Intune APP. See [Data transfer exemptions](#Data-transfer-exemptions) for more information.<p>**Note:** Intune does not currently support the Android Instant Apps feature. Intune will block any data connection to or from the app.  See the Android Developer documentation for more information about [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p>| All apps |
 | **Allow app to receive data from other apps** | Specify what apps can transfer data to this app: <ul><li>**Policy managed apps**: Allow transfer only from other policy-managed apps.</li><li>**All apps**: Allow data transfer from any app.</li><li>**None**: Do not allow data transfer from any app, including other policy-managed apps. </li></ul> <p>There are some exempts apps and services from which Intune may allow data transfer. See  [Data transfer exemptions](#Data-transfer-exemptions) for a full list of apps and services. | All apps |
 | **Prevent "Save As"** | Choose **Yes** to disable the use of the Save As option in this app. Choose **No** if you want to allow the use of Save As. <p><br>**Select which storage services corporate data can be saved to** <br>Users are able to save to the selected services (OneDrive for Busines, SharePoint and Local Storage). All other services will be blocked.</p> | No <br><br> 0 selected |
 | **Restrict cut, copy and paste with other apps** | Specify when cut, copy, and paste actions can be used with this app. Choose from: <ul><li>**Blocked**:  Do not allow cut, copy, and paste actions between this app and any other app.</li><li>**Policy managed apps**: Allow cut, copy, and paste actions between this app and other policy-managed apps.</li><li>**Policy managed with paste in**: Allow cut or copy between this app and other policy-managed apps. Allow data from any app to be pasted into this app.</li><li>**Any app**: No restrictions for cut, copy, and paste to and from this app. | Any app |
@@ -79,7 +77,7 @@ There are two categories of policy settings: data relocation settings and access
   | com.android.providers.media | Android media content provider | The media content provider allowed only for the ringtone selection action. |
   | com.google.android.gms; com.google.android.gsf | Google Play Services packages | These packages are allowed for Google Cloud Messaging actions, such as push notifications. |
 
-
+For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md). 
 
 ##  Access settings
 
