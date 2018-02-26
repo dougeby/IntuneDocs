@@ -5,10 +5,10 @@ title: How to assign apps to groups
 titlesuffix: "Azure portal"
 description: Once you've added an app to Intune, you'll want to assign it to groups of users or devices."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,11 +43,13 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 |Assign apps as Available|Yes|Yes|
 |Assign apps as Required|Yes|No|
 |Uninstall apps|Yes|No|
+|Receive app updates from Intune|Yes|No|
 |End users install available apps from Company Portal app|Yes|No|
 |End users install available apps from web-based Company Portal|Yes|Yes|
 
 > [!NOTE]
-> Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.
+> Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.<br></br>
+> To receive app updates on devices that are not enrolled with Intune, device users must navigate to their company portal and manually install app updates.
 
 ## How to assign an app
 
@@ -56,7 +58,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 3. On the **Intune** blade, choose **Mobile apps**.
 1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
 2. On the list of apps blade, click the app you want to assign.
-3. On the <*app name*> - **Overview** blade, choose **Manage** > **Assignments**.
+3. On the **Overview** blade, choose **Manage** > **Assignments**.
 4. Choose **Add Group** then, on the **Add group** blade, choose the Azure AD groups to include or exclude from assigning the app.
 5. For each app you choose, choose an **assignment type** for the app from:
 	- **Available for enrolled devices** - Users install the app from the Company Portal app or website.
