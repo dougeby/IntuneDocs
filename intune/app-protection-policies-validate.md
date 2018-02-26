@@ -7,7 +7,7 @@ description: This topics describes how you can test and validate if your app pro
 keywords:
 author: erikre
 ms.author: erikre
-manager: angerobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
