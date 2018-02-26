@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -91,7 +91,7 @@ In this step, configure installation options for the app suite. The settings app
 1.	On the **Add App** blade, choose **App Suite Settings**.
 2.	On the **App Suite Settings** blade, specify the following information:
 	- **Office version** - Choose whether you want to assign the 32-bit, or 64-bit version of Office. You can install the 32-bit version on both 32-bit, and 64-bit devices, but you can only install the 64-bit version on 64-bit devices.
-	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/en-us/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choose from:
+	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choose from:
 		- **Monthly**
 		- **Monthly (Targeted)**
 		- **Semi-Annual**
