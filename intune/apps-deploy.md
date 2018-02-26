@@ -48,7 +48,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 |End users install available apps from web-based Company Portal|Yes|Yes|
 
 > [!NOTE]
-> Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.<br></br>
+> Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.<br></br><br></br>
 > To receive app updates on devices that are not enrolled with Intune, device users must navigate to their company portal and manually install app updates.
 
 ## How to assign an app
