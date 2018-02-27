@@ -35,7 +35,7 @@ ms.custom: intune-classic
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 >[!IMPORTANT]
-> For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, ensure you configured the other product correctly.
+> For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
 
 ## Create an online support ticket
 
@@ -48,32 +48,37 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 2. On the Azure Help and support page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+
 3. On the **Basics** blade, for most Intune technical support issues, choose the following options:
-	- **Issue type**: **Technical**
-	- **Service**: **Microsoft Intune**
-	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
-
+    - **Issue type**: **Technical**
+    - **Service**: **Microsoft Intune**
+    - **Support plan**: **Technical support - included**  (for Intune technical issues, support is complimentary) or **Premier**
+    
 	>[!IMPORTANT]
-	>- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
-	>- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
+    >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
+    >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
 
-	Choose **Next** to continue.
+    Choose **Next** to continue.
+
 4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
-	- **Severity**
-	- **Problem type**
-	- **Category**
 
-	These details also let us provide **Related help** that might solve your problem without filing a ticket.
+    - **Severity**
+    - **Problem type**
+    - **Category**
 
-	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
+    These details also let us provide **Related help** that might solve your problem without filing a ticket.
 
-	To help the support team research and resolve your problem, enter the following information:
-	-	**Details**
-	- **Date**
-	- **Time**
-	- Supplemental data
+    ![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
 
-	Choose **Next**.
+    To help the support team research and resolve your problem, enter the following information:
+    
+    - **Details**
+    - **Date**
+    - **Time**
+    - **Supplemental data**
+
+    Choose **Next**.
+
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
