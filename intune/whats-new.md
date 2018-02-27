@@ -719,6 +719,29 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
+
+### Coming Soon: Workflow Updates to Intune Administration UI
+
+Intune is updating the admin experience in the March service release. You don’t need to take any action, but we wanted you to be aware of this as part of Microsoft’s commitment to transparency. When Android or Apple device management is enabled, Intune sends device and user information to integrate with these 3rd party services to manage their respective devices. The enhanced admin UI experience we are introducing in the March service release will provide greater transparency to the data that is shared. There is no end user impact to any of these UI changes.
+
+#### How does this affect me?
+
+Scenarios that will add a consent to share data windows include:
+- When you enable Android for Work 
+- When you enable and upload Apple MDM push certificates 
+- When enabling any of the Apple services such as Device Enrollment Program, School Manager, and Volume Purchasing Program
+
+In each case, the consent is strictly related to running a mobile device management service, such as confirming that an IT Admin has authorized Google or Apple devices to enroll. Documentation to address what information is shared when the new workflows go live is available here:
+- [Data Intune sends to Google](data-intune-sends-to-google.md)
+- [Data Intune sends to Apple](data-intune-sends-to-apple.md)
+
+#### What do I need to do to prepare for this change?
+
+There is nothing you need to do to prepare for this change, since these are minor workflow UI updates. 
+For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
+
+
+
 ### Plan for Change: Update where you Configure your App Protection Policies
 
 Starting in March of 2018, we’re going to temporarily redirect you from the Intune App Protection service blade in the Azure portal to the Mobile app blade within Intune in the Azure portal. Note that all of your App protection policies are already on the Mobile app blade in Intune under app configuration. Instead of going to Intune App Protection, you’ll just go to Intune. In April, we will stop the redirection and fully remove the Intune App Protection service blade, again it is duplicating what is now built into Intune. 
