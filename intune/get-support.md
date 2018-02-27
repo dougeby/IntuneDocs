@@ -48,6 +48,7 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 2. On the Azure Help and support page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+	
 3. On the **Basics** blade, for most Intune technical support issues, choose the following options:
     - **Issue type**: **Technical**
     - **Service**: **Microsoft Intune**
