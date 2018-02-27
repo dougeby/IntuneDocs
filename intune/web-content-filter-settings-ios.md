@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,8 +41,9 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 ## Get started
 
-1. On the Device features blade, choose **Web Content Filter (supervised only)**.
-2. On the **Web Content Filter** blade, choose the **Filter type** you want to configure from:
+1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md). 
+1. On the **Device features** pane, choose **Web Content Filter (supervised only)**.
+2. On the **Web Content Filter** pane, choose the **Filter type** you want to configure from:
 	- **Not Configured** - No filtering is performed.
 	- **Configure URLs**
 	- **Specific websites only**
@@ -51,18 +52,18 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 ## Configure URLs
 
-1. On the **Web Content Filter** blade, choose one of the following settings as required:
-   - **Permitted URLs** - On the **Permitted URLs** blade, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
+1. On the **Web Content Filter** pane, choose one of the following settings as required:
+   - **Permitted URLs** - On the **Permitted URLs** pane, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
      > [!NOTE]
      > The URLs you specify here are the ones you do not want to subject to the Apple web filter. These URLs do not represent a list of the only web sites allowed. If that is what you want, use **Specific websites only**.
 
-   - **Blocked URLs** - On the **Blocked URLs** blade, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
+   - **Blocked URLs** - On the **Blocked URLs** pane, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
 2. When you are finished, click **OK**.
 
 
 ## Specific websites only
 
-1. On the **Web Content Filter** blade, for each web site you want to permit, configure the following settings:
+1. On the **Web Content Filter** pane, for each web site you want to permit, configure the following settings:
 	- **URL** - Enter the URL of the website you want to permit, for example, **http://www.contoso.com**.
 	- **Bookmark Path** - Enter the path to where you want to store the bookmark, for example **/Contoso/Business Apps**. If you don't add a path, the bookmark is added to the default bookmark folder on the device.
 	- **Title** - Enter a descriptive title for the bookmark.
@@ -77,7 +78,7 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 ## Finish up
 
-Choose **OK** to return to the **Create Profile** blade, and then choose **Create**.
+Choose **OK** to return to the **Create Profile** pane, and then choose **Create**.
 
 ## Next steps
 
