@@ -43,11 +43,11 @@ You’re going to go through one of the quicker application deployment methods b
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Mobile Apps**, then select **Apps**.
 4. Select **Add**, then select **iOS** as the **App type**.
-5. Choose **Select app** to display the **Search the App Store** blade.
+5. Choose **Select app** to display the **Search the App Store** pane.
 6. In the text box, search for an app to assign to the device. Choose the app, then click **Select**.
-7. In the **Add app** blade, select **App information**, then make sure that all of the app information populated. You can add other optional details to help you organize this app, like **Owner**, **Notes**, **Developer**, and a **Privacy URL** for your company’s privacy policy.
+7. In the **Add app** pane, select **App information**, then make sure that all of the app information populated. You can add other optional details to help you organize this app, like **Owner**, **Notes**, **Developer**, and a **Privacy URL** for your company’s privacy policy.
 8. Make sure that you’ve selected **Yes** for **Display this as a featured app in the Company Portal**, then select **OK**.
-9. Select **Add** from the **Add app** blade to add the app. This will take you to that app’s **Overview**. Choose **Assignments**, then click **Add group** to assign it to your test group. Make the app **Available** for download. The app should then appear as a **Featured App** on your test device.
+9. Select **Add** from the **Add app** pane to add the app. This action takes you to that app’s **Overview**. Choose **Assignments**, then click **Add group** to assign it to your test group. Make the app **Available** for download. The app should then appear as a **Featured App** on your test device.
 
 ## Learn more
 
