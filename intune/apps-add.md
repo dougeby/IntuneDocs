@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to add apps to Microsoft Intune 
-titlesuffix: "Azure portal"
-description: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
+titlesuffix: 
+description: Learn how to add apps to Microsoft Intune so you can assign apps to users and devices. Intune supports a wide range of different app types.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
