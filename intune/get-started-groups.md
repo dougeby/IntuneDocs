@@ -9,7 +9,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,11 +36,13 @@ Microsoft Intune uses Azure Active Directory (Azure AD) to manage access to comp
 ## How do I create a group?
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Using **Search resources**, search for **Intune**.
-3. Once you've opened the **Microsoft Intune** blade, select **Groups**.
-4. On the **Users and groups – All groups** blade, select the **New group** command.
-5. On the **Group** blade, add a **Name** and **Description** for the group.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Once you've opened the **Microsoft Intune** pane, select **Groups**.
+4. On the **Users and groups – All groups** pane, select the **New group** command.
+5. On the **Group** pane, choose a **Group type**.
+5. Add a **Name** and **Description** for the group.
 6. Set the **Membership type** as **Assigned**. Do not **Enable Office features** for the test group.
+7. Select **Members** for the group.
 7. Click **Create**.
 
 If you've successfully created a group, it should appear in the list of **All groups**. If it doesn't appear there, try to create another group.
