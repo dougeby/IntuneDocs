@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,17 +40,18 @@ To take advantage of iOS device Single Sign-on, you must have the following cond
 
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade, choose **Profiles**.
-3. On the profiles blade, choose **Create Profile**, provide a name and description, and configure the following settings:
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+3. Provide a name and description, and configure the following settings:
    - **Platform**: Choose **iOS**. 
    - **Profile type**: Choose **Device features**.
-4. On the **Device features** blade, choose **Single Sign On**.
+4. On the **Device features** pane, choose **Single Sign On**.
 
-   ![Single Sign On blade](./media/sso-blade.png)
+   ![Single Sign On pane](./media/sso-blade.png)
 
-2. Use the following summary table to help you fill in the fields on the **Single Sign On** blade. For details, see the sections after the table.
+2. Use the following summary table to help you fill in the fields on the **Single Sign On** pane. For details, see the sections after the table.
    
    |Field  |Notes|
    |---------|---------|
