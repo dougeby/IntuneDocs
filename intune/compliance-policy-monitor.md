@@ -8,7 +8,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 2/22/2018
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -146,11 +146,7 @@ When you click on the Policy compliance tile, then click on one of the device co
 
 ## Setting compliance report
 
-<<<<<<< HEAD
 This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms that the policy settings are applied, and the number of noncompliant devices.
-=======
-This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms which the policy settings were applied, and the number of noncompliant devices.
->>>>>>> ec834941bdda7e95a6150f6b341da1d5ac284718
 
 ![Per-setting device compliance report](./media/idc-10.png)
 
