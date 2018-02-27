@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,15 +39,15 @@ You’re going to go through one of the quicker application deployment methods b
 
 ## How do I assign a public store app?
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Using **Search resources**, search for **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Mobile Apps**, then select **Apps**.
-4. Select **Add**, then select **iOS** under **Store app** as the **App type**.
+4. Select **Add**, then select **iOS** as the **App type**.
 5. Choose **Select app** to display the **Search the App Store** blade.
 6. In the text box, search for an app to assign to the device. Choose the app, then click **Select**.
 7. In the **Add app** blade, select **App information**, then make sure that all of the app information populated. You can add other optional details to help you organize this app, like **Owner**, **Notes**, **Developer**, and a **Privacy URL** for your company’s privacy policy.
 8. Make sure that you’ve selected **Yes** for **Display this as a featured app in the Company Portal**, then select **OK**.
-9. Select **Add** from the **Add app** blade to add the app. This will take you to that app’s **Overview**. Choose **Assignments**, then click **Select groups** to assign it to your test group. Make the app **Available** for download. The app should then appear as a **Featured App** on your test device.
+9. Select **Add** from the **Add app** blade to add the app. This will take you to that app’s **Overview**. Choose **Assignments**, then click **Add group** to assign it to your test group. Make the app **Available** for download. The app should then appear as a **Featured App** on your test device.
 
 ## Learn more
 

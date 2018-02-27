@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,9 +38,11 @@ You can add the following types of groups:
 ## Add a new group
 
 Use the following steps to create a new group.
-1. In the Azure portal, go **Groups** and then choose **New group** in the **All groups** blade.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Groups** and then choose **New group** in the **All groups** pane.
   ![Screenshot of the Azure portal with New Group selected](./media/groups-add-new.png)
-2. Specify the **Name** and **Description** of the new group. These properties only appear in the management portal and are not displayed to users.
+2. Specify a **Group type**, the **Name**, and **Description** of the new group. These properties only appear in the management portal and are not displayed to users.
 
 3. Choose **Membership type**:
   - **Assigned** to create group with manually assigned members. Learn more about [Azure AD assigned groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
