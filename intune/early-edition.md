@@ -47,6 +47,40 @@ This page is updated periodically. Check back for additional updates.
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
 Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
 
+### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
+In the Azure portal, Intune will alert you to line-of-business apps that are about to expire.
+
+### New Management name column <!-- 1333586 -->
+A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
+- Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
+- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
+ 
+This is an optional column in the devices blade. It will not be available by default and you can only access it via the column selector. The device name is not affected by this new column.
+
+### New settings for Windows Defender Security Center notifications device configuration profile <!-- 1631906 -->
+
+Three new settings will be added to the Windows Defender Security Center (WDSC) notifications device configuration profile.
+
+Administrators will be able to:
+
+- Hide the Identity pillar
+- Hide the Hardware pillar and its sub-settings
+- Hide the Ransomware pillar (Onedrive for Business file restoration)
+
+When you hide these pillars from the WDSC app, end users will not be able to configure these settings, and all notifications associated with the hidden components will not be generated.
+
+### MAM policies targeted based on management state <!-- 1665993 -->
+
+You will be able to target MAM policies based on the management state of the device:
+
+- **iOS devices** - you will be able to target unmanaged devices (MAM only) or Intune managed devices.
+- **Android devices** - you will be able to target unmanaged devices, Intune managed devices, and Intune managed Android Enterprise Profiles (formerly Android for Work).
+
+### Configure Gatekeeper to control macOS app download source <!-- 1690459-->
+
+You will be able to configure Gatekeeper to protect your devices from apps by controlling where the apps can be downloaded from. You will be able to configure the following download sources: **Mac App Store**, **Mac App Store and identified developers**, or **Anywhere**. You will also be able to configure whether users can install an app using control-click to override these Gatekeeper controls.
+
+These settings can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
 
 
 
