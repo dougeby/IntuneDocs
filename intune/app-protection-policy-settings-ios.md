@@ -79,6 +79,8 @@ There are some exempt apps and platform services that Intune app protection poli
 | **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user sees a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, "Outlook version policy"). <br><br> This policy setting format supports either major.minor, major.minor.build, major.minor.build.revision. <br><br> **Note:** Requires app to have Intune SDK version 7.0.1 or above. | No | 
 | **Require minimum Intune app protection policy SDK version** | Choose **Yes** to require a minimum Intune app protection policy SDK version on the app to use. The user is blocked from access if the app’s Intune app protection policy SDK version does not meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](app-sdk.md). <br><br> This policy setting format supports either major.minor, major.minor.build, major.minor.build.revision. <br><br> **Note:** Requires app to have Intune SDK version 7.0.1 or above. | No |
 
+> [!NOTE]
+> To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on iOS, see [Intune MAM frequently asked questions](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
 
 ##  Add-ins for Outlook app
 
