@@ -42,6 +42,13 @@ This page is updated periodically. Check back for additional updates.
 
 ## Intune in the Azure portal
 
+<!-- 1803 start -->
+
+### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
+Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
+
+
+
 
 <!-- 1802 start -->
 
