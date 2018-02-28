@@ -193,6 +193,10 @@ After migration, the beta Graph APIs and published scripts for managing Apple DE
 ### Remote printing over a secure network <!-- 1709994  -->
 PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
 
+### macOS Company Portal support for enrollments that use the Device Enrollment Manager <!-- 1352411 -->
+
+Users can now use the Device Enrollment Manager when enrolling with the macOS Company Portal.
+
 ## Week of January 29, 2018
 
 ### Device enrollment
