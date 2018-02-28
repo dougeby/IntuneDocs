@@ -20,7 +20,7 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
