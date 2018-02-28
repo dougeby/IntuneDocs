@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,27 +33,28 @@ ms.custom: intune-azure
 
 ## Step 1 - Specify the software setup file
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.
-6. In the **Add App** blade, choose **Line-of-business app**.
+6. In the **Add app** pane, choose **Line-of-business app**.
 
 ## Step 2 - Configure the app package file
 
-1. On the **Add app** blade, choose **App package** file.
-2. On the **App package** file blade, choose the browse button, and select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.
+1. On the **Add app** pane, choose **App package** file.
+2. On the **App package** file pane, choose the browse button, and select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.
 3. When you are finished, choose **OK**.
 
 
 ## Step 3 - Configure app information
 
-1. On the **Add app** blade, choose **App package** file.
-2. On the **App information** blade, configure the following information (some of the values in this blade might be automatically filled-in):
+1. On the **Add app** pane, choose **App package** file.
+2. On the **App information** pane, configure the following information (some of the values in this pane might be automatically filled-in):
 	- **Name** - Enter the name of the app as it is displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Description** - Enter a description for the app. The description is displayed to users in the company portal.
 	- **Publisher** - Enter the name of the publisher of the app.
+	- **Ignore app version** - Set to **Yes** if app is automatically updated by the app developer.
 	- **Category** - Select one or more of the built-in app categories, or a category you created. Categorizing apps makes it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL** - Optionally, enter the URL of a website that contains information about the app. The URL is displayed to users in the company portal.
@@ -67,7 +68,7 @@ ms.custom: intune-azure
 
 ## Step 4 - Finish up
 
-1. On the **Add app** blade, verify you configured the app information correctly.
+1. On the **Add app** pane, verify you configured the app information correctly.
 2. Choose **Add**, to upload the app to Intune.
 
 ## Step 5 - Update a line-of-business app
