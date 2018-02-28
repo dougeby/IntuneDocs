@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
+Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following lists:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
 - A list of apps that users of the device are allowed to install from the Google Play store. Only the apps you list can be installed. No other apps can be installed from the store.
@@ -42,14 +42,14 @@ These settings can only be used by devices that run Samsung Knox Standard.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade, choose **Manage** > **Profiles**.
-2. In the list of profiles blade, choose **Create profile**.
-3. On the **Create profile** blade, enter a **Name** and optional **Description** for this device profile.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
+2. In the list of profiles pane, choose **Create profile**.
+3. On the **Create profile** pane, enter a **Name** and optional **Description** for this device profile.
 2. Choose a **Platform** of **Android**, and a **Profile type** of **Custom**.
 3. Click **Settings**.
-3. On the **Custom OMA-URI Settings** blade, choose **Add**.
-4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following:
+3. On the **Custom OMA-URI Settings** pane, choose **Add**.
+4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following settings:
 
 ### For a list of apps that are blocked from running on the device:
 
@@ -66,7 +66,7 @@ These settings can only be used by devices that run Samsung Knox Standard.
 - **Data type** - From the drop-down list, choose **String**.
 - **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-4. Click **OK**, and then, on the **Create Profile** blade, choose **Create**.
+4. Click **OK**, and then, on the **Create Profile** pane, choose **Create**.
 
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
