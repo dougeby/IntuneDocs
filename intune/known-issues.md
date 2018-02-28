@@ -4,10 +4,10 @@ title: "Known issues in Microsoft Intune in the Azure portal"
 titlesuffix: "Azure portal"
 description: Read about known issues in Intune"
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
