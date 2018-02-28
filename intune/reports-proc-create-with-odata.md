@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,9 +52,9 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 > [!Note]  
 > You need permission to **Reports** in Intune. For more information, see [Authorization](reports-api-url.md).
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. Open the **Intune Data Warehouse** blade.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Open the **Intune Data Warehouse** pane.
 4. Copy the custom feed URL. For example:
 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Open Power BI Desktop.
