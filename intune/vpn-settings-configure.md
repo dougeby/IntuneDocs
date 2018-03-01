@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to configure Intune VPN settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure VPN connections on devices you manage."
+title: How to configure VPN settings in Microsoft Intune
+titleSuffix: 
+description: Learn how to use Microsoft Intune to configure virtual private network (VPN) connections on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh

@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Company Portal messages users may see on Android 
-description: Describes Company Portal app messages that Intune end users might see.
+title: Company Portal messages users may see on devices 
+titlesuffix: Microsoft Intune
+description: Understand the different messages that end users may see in the Company Portal.
 keywords:
 author: barlanmsft
 ms.author: barlan
@@ -33,7 +34,7 @@ ms.suite: ems
 > [!NOTE]
 > The following information applies only on devices with Android 6.0+.
 
-At different points in the enrollment process, end users will see two different messages that could be cause for concern.
+Understand the different messages that end users may see in the Company Portal. These message are commonly displayed at different points in the enrollment process. Learn where the messages appear, what the messages mean, and what happens if users deny access. Additionally, learn how to best explain the messages to users.
 
 - __Allow Company Portal to make and manage phone calls?__
 - __Allow Company Portal to access photos, media, and files on your device?__

@@ -2,8 +2,8 @@
 # required metadata
 
 title: How to configure Intune Wi-Fi settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
+titleSuffix: Microsoft Intune
+description: Learn how to use Microsoft Intune to configure Wi-Fi connections on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh
