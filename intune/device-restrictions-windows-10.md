@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Windows 10 and later device restriction settings in Microsoft Intune
+#Microsoft Intune Windows 10 and later device restriction settings
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
