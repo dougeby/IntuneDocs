@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices.
+title: Microsoft Intune device restriction settings for Windows 10
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/21/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,7 @@ ms.custom: intune-azure
 ---
 
 # Windows 10 and later device restriction settings in Microsoft Intune
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
