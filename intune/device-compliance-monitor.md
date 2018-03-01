@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How to monitor device compliance
-titlesuffix: "Azure portal"
+title: Monitor device compliance
+titlesuffix: "Microsoft Intune"
 description: Learn how to monitor device compliance."
 keywords:
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-# How to monitor device compliance in Intune
+# Monitor device compliance in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
