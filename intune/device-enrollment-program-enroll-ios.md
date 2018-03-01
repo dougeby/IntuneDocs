@@ -98,10 +98,6 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
    ![Adding an MDM server name for DEP and then clicking Next](./media/enrollment-program-token-add-server.png)
 
 5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.  
-<<<<<<< HEAD
-
-=======
->>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
 
 7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
 8. Under **Choose Devices By**, specify how devices are identified:
