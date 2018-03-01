@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll devices - device enrollment manager
-titlesuffix: "Azure portal"
+title: Enroll devices using a device enrollment manager account
+titlesuffix: "Microsoft Intune"
 description: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: ErikjeMS
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Enroll devices using device enrollment manager
+# Enroll devices by using a device enrollment manager account
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
