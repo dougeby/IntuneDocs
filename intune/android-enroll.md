@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll Android devices in Intune | Microsoft Docs
-titlesuffix: "Azure portal"
+title: Enroll Android devices in Intune
+titlesuffix: "Microsoft Intune"
 description: Learn how to enroll Android devices in Intune.
 keywords:
 author: ErikjeMS 
@@ -64,7 +64,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
     As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
    a. On the **Intune** blade, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
-   ![Screenshot showing link to configure the Android for Work binding](./media/android-work-bind.png)
+   ![Android for Work enrollment screen](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
    On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
