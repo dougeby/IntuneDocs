@@ -2,12 +2,13 @@
 # required metadata
 
 title: Benefits of Intune App SDK 
-description: The Intune App SDK is available for both the iOS and Android platform, and enables mobile app management features with Microsoft Intune.
+titlesuffix: Microsoft Intune
+description: The Intune App SDK is available for both the iOS and Android platforms, and enables mobile app management features with Microsoft Intune.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +28,7 @@ ms.custom: intune-classic
 ---
 
 # Intune App SDK overview
-The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. You will find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize our APIs to customize your app behavior for features that require your app participation.
+The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. You'll find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize the APIs to customize your app behavior for features that require your app participation.
 
 Once you have enabled your app for app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.
 
@@ -48,7 +49,7 @@ IT administrators can enforce a policy that ensures that data saved to the devic
 IT administrators can remotely wipe corporate data from an Intune-managed app. This feature is identity-based and will only delete the files associated with the corporate identity of the end user. To do that, the feature requires the app’s participation. The app can specify the identity for which the wipe should occur based on user settings. In the absence of these specified user settings from the app, the default behavior is to wipe the application directory and notify the end user that access has been removed.
 
 ### Enforce the use of a managed browser
-IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
+IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). This functionality ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
 
 ### Enforce a PIN policy
 IT administrators can require the end-user to enter a PIN before accessing corporate data in the app. This ensures that the person using the app is the same person who initially signed in with their work or school account. When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end-users against the enrolled Intune account.
