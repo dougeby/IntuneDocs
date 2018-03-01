@@ -44,6 +44,12 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1803 start -->
 
+#### Multiple Exchange Connector support <!-- 2070451 -->
+
+You'll no longer be limited to one Microsoft Intune Exchange Connector per tenant. Intune will support multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
+
+With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
+
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
 Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
 
@@ -113,31 +119,35 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
  
-#### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
+### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
 
 You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
-#### Appthority - New Mobile Threat Defense partner <!-- 1169252 -->
+### Appthority - New Mobile Threat Defense partner <!-- 1169252 -->
 
 You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Appthority, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
-#### Multiple Exchange Connector support <!-- 2070451 -->
-
-You'll no longer be limited to one Microsoft Intune Exchange Connector per tenant. Intune will support multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
-
-With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
-
-#### Support coming for new Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
+### Support coming for new Cisco AnyConnect client for iOS <!-- 1333708 -->
 
 New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
 
 > [!NOTE]
 > This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
 
-##### More information
+#### More information
 
 You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app.
 
+### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
+
+We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
+
+### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
+You will be able to create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories.
+
+#### Company Portal for Android visual updates <!--976944 -->
+
+We'll be updating the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. We'll publish images of the new icons to the [What's new in app UI](whats-new-app-ui.md) article when the app releases. 
 
 
 <!-- 1802 start -->
