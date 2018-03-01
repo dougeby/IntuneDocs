@@ -2,8 +2,8 @@
 # required metadata
 
 title: Add corporate identifiers to Intune
-titlesuffix: "Azure portal"
-description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune. "
+titlesuffix: "Microsoft Intune"
+description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -78,7 +78,7 @@ This .csv file when viewed in a text editor appears as:
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**, and then click **Add**.
 
- ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](./media/add-corp-id.png)
+ ![Corporate device identifier workspace with the Add button highlighted](./media/add-corp-id.png)
 
 2. In the **Add Identifiers** blade, specify the identifier type: **IMEI** or **Serial**. You can specify whether previously imported numbers should **Overwrite details for existing identifiers**.
 
@@ -106,4 +106,4 @@ Devices properties display **Ownership** for each device records in Intune. As a
 3. Choose **Properties**.
 4. Specify **Device ownership** as **Personal** or **Corporate**.
 
-  ![Screenshot of device properties showing Device category and Device ownership options.](./media/device-properties.png)
+  ![Device properties showing Device category and Device ownership options](./media/device-properties.png)
