@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Intune
-titlesuffix: "Azure portal"
-description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
+title: Set enrollment restrictions in Microsoft Intune
+titlesuffix:
+description: Restrict enrollment by platform and set a device enrollment limit in Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune administrator, you can create and manage enrollment restrictions which define the number and types of devices that can enroll into management with Intune. You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
+As an Intune administrator, you can create and manage enrollment restrictions. These restrictions define the number and types of devices that can enroll into management with Intune. You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
 
 >[!NOTE]
 >Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
@@ -88,7 +88,7 @@ You can change the settings for a device type restriction by following these ste
   Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
 8. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 
-    ![Screenshot of the device restrictions workspace with the default device platform configurations showing personally owned settings configured.](media/device-restrictions-platform-configurations.png)
+    ![Screenshot of the device restrictions workspace with the default device platform configured for personally owned devices](media/device-restrictions-platform-configurations.png)
 9. Click **Save**.
 
 >[!NOTE]
@@ -105,7 +105,7 @@ You can change the settings for a device limit restriction by following these st
 3. Choose **Device enrollment** > **Enrollment restrictions**.
 4. Under **Device Limit Restrictions**, choose the restriction that you want to set.
 5. Choose **Device Limit** and then, in the drop-down list, select the maximum number of devices a user can enroll.
-    ![Screenshot of the device limit restrictions blade with the device limit restrictions.](./media/device-restrictions-limit.png)
+    ![Screenshot of the device limit restrictions blade](./media/device-restrictions-limit.png)
 6. Click **Save**.
 
 Your end user will see a notification that will tell them when they have met their limit of enrolled devices. For example, on iOS, it would look like this:
