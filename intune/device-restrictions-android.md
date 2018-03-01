@@ -84,7 +84,7 @@ If you configure the **Numeric complex** setting, and then assign it to a device
 
 In the restricted apps list, you can configure one of the following lists for both Android, and Samsung Knox Standard devices:
 
-A **Prohibited apps** list - List the apps (not managed by Intune) that will be reported if users install and run.
+A **Prohibited apps** list - List the apps (not managed by Intune) that is reported if users install and run.
 An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install other apps. Apps that are managed by Intune are automatically allowed.
 Device profiles that contain restricted app settings must be assigned to groups of users.
 
@@ -115,7 +115,7 @@ You can also click **Import** to get the list from a csv file. Use the format <*
 ## Allow or Block apps
 
 These settings can be used to specify apps that can be installed, or launched on devices that run Samsung Knox Standard only.
-Additionally, you can also specify installed apps that will be hidden from the device user. Users cannot run these apps.
+Additionally, you can also specify installed apps that are hidden from the device user. Users cannot run these apps.
 
 - **Apps allowed to be installed (Samsung Knox Standard only)**
 - **Apps blocked from launching (Samsung Knox Standard only)**
