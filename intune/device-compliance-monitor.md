@@ -31,21 +31,21 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 You can view the summary of the status of your **compliance profiles** in the **Overview** blade.
-You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can also view the status for each policy by going to the policy blade and choosing **Reports** in the **Manage** section.  The details of the reports available are listed below.
+You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can view the policy status on the policy blade under **Manage** > **Reports**.
 
 ##  Device compliance
 
-The summarized view of the device compliance report shows starts with showing you the aggregated information about the number of devices that are reporting as one of the following:
+The summarized view of the device compliance report lists aggregated information about the number of devices that are reporting in one of the following states:
 
-- **Compliant**: Device has been evaluated for compliance recently and has been determined as compliant with the compliance profile settings you specified.
+- **Compliant**: The device has recently been evaluated and complies with the compliance profile settings you specified.
 - **Noncompliant**: The device has been evaluated and determined as noncompliant.  If there was a grace period specified in the profile, the grace period has expired putting the device in a noncompliant status.
-- **Grace period**: Device has been evaluated and determined as noncompliant. However, the grace period still applies before the device is actually marked as noncompliant.
+- **Grace period**: Device has been evaluated and determined as noncompliant. However, the grace period still applies before the device is marked as noncompliant.
 
 You can drill down on each section to see more details on the individual devices and users.
 
 ## Setting compliance
 
-The setting compliance report provides the details for each compliance settings such as:
+The setting compliance report provides the details for each compliance setting such as:
 
 - Number of devices that are noncompliant with the setting.
 - The platform that the setting is applied to.
