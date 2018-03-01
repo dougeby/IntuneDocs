@@ -139,7 +139,7 @@ You can monitor Windows 10 update rollouts by using a free solution in the Opera
 In the Intune console, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+ ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 For example, you can use the following values in **Add or edit OMA-URI Setting**:
 
