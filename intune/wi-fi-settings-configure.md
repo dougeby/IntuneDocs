@@ -2,8 +2,8 @@
 # required metadata
 
 title: How to configure Intune Wi-Fi settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
+titleSuffix: Microsoft Intune
+description: Learn how to use Microsoft Intune to configure Wi-Fi connections on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh
@@ -52,7 +52,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 
 ## Create a device profile containing Wi-Fi settings
 
-1. Sign into the Azure portal.
+1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
@@ -66,9 +66,9 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- **Windows 8.1 and later (import a profile)**
 
    > [!IMPORTANT]
-   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
+   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform doesn't include a Wi-Fi profile type. 
 
-6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
+6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the Extensible Authentication Protocol (EAP), if your Wi-Fi network uses this protocol. 
 
    The **Wi-Fi import** profile (for Windows 8.1 and later) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
 1. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
