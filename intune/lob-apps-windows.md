@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to add Windows line-of-business apps to Intune 
-titlesuffix: "Azure portal"
-description: Learn about adding Windows line-of-business apps to Intune."
+title: How to add Windows line-of-business apps to Microsoft Intune 
+titlesuffix: 
+description: Learn how to add Windows line-of-business (LOB) apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
