@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Remove a user from an iOS device with Intune 
-titlesuffix: "Azure portal"
-description: Learn how to remove a user from a shared iOS device with Intune."
+title: Remove a user from an iOS device with Microsoft Intune 
+titlesuffix:
+description: Learn how to remove a user from a shared iOS device with Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Remove a user from a shared iOS device with Intune
+# Remove a user from a shared iOS device
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
