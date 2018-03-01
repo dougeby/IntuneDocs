@@ -99,15 +99,15 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.  
 
-7. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
-8. Under **Choose Devices By**, specify how devices are identified:
+6. Go to  **Deployment Programs** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
+7. Under **Choose Devices By**, specify how devices are identified:
     - **Serial Number**
     - **Order Number**
     - **Upload CSV File**.
 
    ![Specifying choose devices by serial number, setting choose action as Assign to server and selecting the server name](./media/enrollment-program-token-specify-serial.png)
 
-9. For **Choose Action**, choose **Assign to Server**, choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
+8. For **Choose Action**, choose **Assign to Server**, choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
 
    In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
 
