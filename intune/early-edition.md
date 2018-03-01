@@ -82,6 +82,39 @@ You will be able to configure Gatekeeper to protect your devices from apps by co
 
 These settings can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
 
+### Configure the Mac application firewall <!-- 1690461 -->
+
+You will be able to configure the Mac application firewall. You can use this to control connections on a per-application basis, rather than on a per-port basis. This makes it easier to get the benefits of firewall protection, and helps prevent undesirable apps from taking control of network ports open for legitimate apps.
+ 
+This feature can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
+
+Once you enable the Firewall setting, you can configure the firewall using two strategies:
+
+- Block all incoming connections
+
+   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections will be blocked for all apps. 
+
+- Allow or block specific apps
+
+   You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
+ 
+#### More information
+
+- Block all incoming connections
+
+   This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
+   - configd - implements DHCP and other network configuration services
+   - mDNSResponder - implements Bonjour
+   - racoon -  implements IPSec
+
+   To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
+
+- Stealth mode
+
+   Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
+ 
+
+
 
 
 <!-- 1802 start -->
@@ -90,39 +123,10 @@ These settings can be found under **Device configuration** -> **Create profile**
 
 On the Enrollment Overview page, you will be able to view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you will be able to drill into details to find troubleshooting advice and remediation suggestions.
 
-### Prevent end users from adding or removing accounts in the work profile <!-- 1728700 -->    
-When you deploy the Gmail app into an Android for Work profile, you will be able to prevent end users from adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
-
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
-### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
-
-Intune will support enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
-
-After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
-
-### Windows defender health status and threat status reports <!--854704 -->
-
-Understanding Windows Defender's health and status is key to managing Windows PCs.  Intune will add new reports and actions to the status and health of the Windows Defender agent. Using a status roll up report in the Device Compliance workload, you'll be able to see devices that need any of the following:
-
-- signature update
-- restart
-- manual intervention
-- full scan
-- other agent states requiring intervention
-
-In certain cases, remote remediation actions can be taken such as triggering a signature update.  The report also indicates the number of PCs reporting as **Clean**.
-
-A drill-in report for each status category lists the individual PCs that need attention, or those that report as **Clean**.
-
-### Protocol exceptions for applications <!--1035509 eeready-->
-
-You will be able to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy to open specific unmanaged applications. Such applications must be trusted by IT. Other than the exceptions you create, data transfer will still be restricted to applications that are managed by Intune when your data transfer policy is set to **managed apps only**. You can create the restrictions by using protocols (iOS) or packages (Android).
-
-For example, you can add the Webex package as an exception to the MAM data transfer policy. This will allow Webex links in a managed outlook email message to open directly in the Webex application. Data transfer will still be restricted in other unmanaged applications.
-
-### Customize your Company Portal themes with hex codes <!--1049561 eeready-->
+### Customize your Company Portal themes with hex codes <!--1049561 -->
 
 You will be able to customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune will determine the text color that provides the highest level of contrast between the text color and the background color per [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20). You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
 
@@ -141,9 +145,6 @@ New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/acces
 
   - The "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified.
 
-### Synchronize and deploy sparsely bundled Windows Store for Business apps <!--1222672 -->
-Offline apps purchased from the Windows Store for Business will be synchronized to the Intune portal. You can then deploy these apps to device groups or user groups. Offline apps are installed by Intune rather than the store.
-
 ### Reset passwords for Android O devices <!-- 1238299 -->
 You'll be able to reset the passwords for enrolled Android O devices. When you send a "Reset password" request to an Android O device, it sets a new device unlock password or a managed profile challenge to the current user. The password or challenge is sent based on whether the device has a profile owner or a device owner, and immediately takes effect.
 
@@ -154,25 +155,9 @@ You will be to enable security settings on Windows 10 devices using the new Loca
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
 
-### New privacy settings for device restrictions <!--1308926 -->
-
-Two new privacy settings will be available for devices:
-
-- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
-
-- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
-
 ### macOS Company Portal support for enrollments that use the Device Enrollment Manager <!-- 1352411 -->
 
 Users will be able to use the Device Enrollment Manager when enrolling with the macOS Company Portal.
-
-#### New settings for the Edge browser <!--1469166 -->
-
-Two new settings will be available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**. 
-
-### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
-
-A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
 
 ### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Intune will provide the capability to install macOS LOB apps. LOB apps are apps where you supply the installation file and use Intune to install the app on the device. As part of macOS LOB app support, you must use the Microsoft Intune App Wrapping Tool for macOS to pre-process macOS line-of-business (LOB) apps.
@@ -231,48 +216,14 @@ Administrators will be able to enable a virtual graphics processor for Windows D
 
 Administrators will be able to enable files to pass from Microsoft Edge running in the container to the host file system. Turning this on will allow users to download files from Microsoft Edge in the container to the host file system.
 
-### See enrollment restrictions per user <!-- 1634444 -->
-On the troubleshooting blade, you will be able to see the enrollment restrictions that are in effect for each user.
-
-### Configuring a self-updating mobile MSI app <!-- 1740840 -->
-You will be able to configure a known self-updating mobile MSI app to ignore the version check process. This capability is useful to avoid getting into race condition. For instance, this could occur when the app being auto-updated by the app developer and is also being updated by Intune. Both could try to enforce a version of the app on Windows client, which could create a conflict.
-
-### Additions to System Security settings for Windows 10 and later compliance policies <!--1704133 -->
-
-Additions to the Windows 10 compliance settings will be available, including requiring Firewall and Windows Defender Antivirus.
-
 ### Including and excluding app assignment based on groups for Android Enterprise <!-- 1813081 -->
 During app assignment and after selecting an assignment type, Android Enterprise (formerly known as Android for Work) will support exclude functionality.
 
-
-### Related sets of app licenses supported in Intune <!-- 1864117 -->
-Intune in the Azure portal will support related sets of app licenses as a single app item in the UI. In addition, any Offline Licensed apps synced from Microsoft Store for Business will be consolidated into a single app entry and any deployment details from the individual packages will be migrated over to the single entry. To view related sets of app licenses in the Azure portal, select **App licenses** from the **Mobile apps** blade.
-
 <!-- the following are present prior to 1802 -->
-
-### New option for user authentication for Apple bulk enrollment <!-- 747625 -->
-Intune will give you the option to authenticate devices by using the Company Portal app for the following enrollment methods:
-
-- Apple Device Enrollment Program
-- Apple School Manager
-- Apple Configurator Enrollment
-
-When using the Company Portal option, Azure Active Directory multi-factor authentication can be enforced without blocking these enrollment methods.
-
-When using the Company Portal option, Intune skips user authentication in the iOS Setup Assistant for user affinity enrollment. This means that the device is initially enrolled as a userless device, and so won't receive configurations or policies of user groups. It will only receive configurations and policies for device groups. However, Intune will automatically install the Company Portal app on the Device. The first user to launch and sign in to the Company Portal app will be associated with the device in Intune. At this point, the user will receive configurations and policies of their user groups. The user association cannot be changed without re-enrollment.
-
-### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
-Intune will support enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
-
-After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
 
 ### Targeting compliance policies to devices in device groups <!--1307012 -->
 
 You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups.
-
-### Windows Information Protection (WIP) encrypted data in Windows search results <!-- 1469193 -->
-
-A new setting in the Windows Information Protection (WIP) policy will allow you to control whether WIP-encrypted data is included in Windows search results.
 
 ### Remote printing over a secure network <!-- 1709994  -->
 PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
@@ -307,14 +258,6 @@ For more information, see [How to assign apps to groups with Microsoft Intune](a
 
 ### Configure an iOS app PIN <!-- 1586774 -->
 Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
-
-### User experience update for the Company Portal app for iOS <!--1412866-->
-
-We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
-
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. 
-
-![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
 
 <!-- the following are present prior to 1711 -->
 
