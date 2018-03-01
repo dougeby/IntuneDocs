@@ -1,37 +1,35 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Android devices."
+title: Microsoft Intune device restriction settings for Android
+titlesuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running Android.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Android and Samsung Knox Standard device restriction settings in Microsoft Intune
+# Microsoft Intune Android and Samsung Knox Standard device restriction settings 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings with an Android device restriction policy to configure devices in your organization.
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Android.
 
 >[!TIP]
 >If the settings you want are not available, you might be able to configure your devices using a [custom profile](custom-settings-android.md).
