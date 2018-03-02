@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new archive 
+title: What's new in Microsoft Intune classic portal archive
 description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: brenduns
