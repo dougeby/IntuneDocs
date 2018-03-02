@@ -1,13 +1,13 @@
 ---
 # required metadata
-title: How to use Windows Hello for Business
-titleSuffix: "Azure portal"
+title: How to integrate Windows Hello for Business with Microsoft Intune
+titleSuffix:
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,14 +24,14 @@ ms.custom: intune-azure
 
 ---
 
-# Use Windows Hello for Business
+# Integrate Windows Hello for Business with Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune integrates with Windows Hello for Business (formerly Microsoft Passport for Work), an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or a virtual smart card.
+You can integrate Windows Hello for Business (formerly Microsoft Passport for Work) with Microsoft Intune.
 
-Hello for Business lets you use a *user gesture* to sign in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
+ Hello for Business is an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or a virtual smart card. It lets you use a *user gesture* to sign in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
 
 Intune integrates with Hello for Business in two ways:
 
@@ -55,19 +55,19 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2.  On the Intune blade, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
+2.  On the Intune page, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
 
-3.  On the blade that opens, choose the **Default** settings.
+3.  On the page that opens, choose the **Default** settings.
 
-4.  On the **All Users** blade, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
+4.  On the **All Users** page, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
 
-5. On the **All Users** blade, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
+5. On the **All Users** page, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
-	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the blade are unavailable.
+	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the page are unavailable.
 
-6.  If you selected **Enabled** in the previous step, configure the required settings that is applied to all enrolled Windows 10 and Windows 10 Mobile devices.
+6.  If you selected **Enabled** in the previous step, configure the required settings that are applied to all enrolled Windows 10 and Windows 10 Mobile devices.
 
  - **Use a Trusted Platform Module (TPM)**. A TPM chip provides an additional layer of data security.<br>Choose one of the following values:
 
