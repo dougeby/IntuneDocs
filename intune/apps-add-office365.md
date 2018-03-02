@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Install Office 365 apps to mobile devices using Intune
-titlesuffix: "Azure portal"
-description: "Learn how you can use Intune to make it easier to install Office 365 apps on Windows 10 devices."
+title: Install Office 365 apps to devices using Microsoft Intune
+titlesuffix: 
+description: Learn how you can use Microsoft Intune to make it easier to install Office 365 apps on Windows 10 devices."
 keywords:
 author: Erikre
 ms.author: erikre

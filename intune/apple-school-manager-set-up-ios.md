@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up Apple School Manager Program enrollment for iOS devices
-titlesuffix: "Azure portal"
-description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune"
+titlesuffix: "Microsoft Intune"
+description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enable iOS device enrollment with Apple School Manager
+# Set up iOS device enrollment with Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -38,13 +38,13 @@ ms.custom: intune-azure
 >
 >If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
 >
->![Old user interface](./media/appleenroll-oldui.png)
+>![Old Intune user interface](./media/appleenroll-oldui.png)
 >
 >If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this help page](apple-school-manager-set-up-ios-newui.md).
 >
->![New user interface](./media/appleenroll-newui.png)
+>![New Intune user interface](./media/appleenroll-newui.png)
 
-This topic helps you enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) program. Using Intune with Apple School Manager, you can enroll large numbers of iOS devices without ever touching them. When a student or teacher turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
+This topic helps you set up iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) program. Using Intune with Apple School Manager, you can enroll large numbers of iOS devices without ever touching them. When a student or teacher turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable Apple School Manager enrollment, you use both the Intune and Apple School Manager portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
@@ -67,7 +67,7 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 **Step 1. Download an Intune public key certificate required to create an Apple token.**<br>
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** and then choose **Enrollment program token**.
 
-  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/enrollment-program-token-download.png)
+  ![Enrollment Program Token pane in Apple Certificates workspace to download public key](./media/enrollment-program-token-download.png)
 
 2. In the **Enrollment program token** blade, choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
 
@@ -75,19 +75,19 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 1. Choose **Create a token via Apple School Manager**, and sign in with your company Apple ID. You can use this Apple ID to renew your Apple School Manager token.
 2.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then choose **Add MDM Server** (upper right).
 3.  Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
-   ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-server-assignment.png)
+   ![Apple School Manager portal with Serial Number option selected](./media/asm-server-assignment.png)
 
 4.  Choose **Upload File...** in the Apple portal, browse to the .pem file, and choose **Save MDM Server** (lower right).
 5.  Choose **Get Token** and then download the server token (.p7m) file to your computer.
 6. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
-     ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-device-assignment.png)
+     ![Apple School Manager portal with Serial Number option selected](./media/asm-device-assignment.png)
 7.	Choose the action **Assign to Server**, and choose the **MDM Server** you created.
 8. Specify how to **Choose Devices**, then provide device information and details.
 9. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
 **Step 3. Enter the Apple ID used to create your Apple School Manager token.**<br>This ID should be used to renew your Apple School Manager token and is stored for your future reference.
 
-![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/enrollment-program-token-apple-id.png)
+![Specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token](./media/enrollment-program-token-apple-id.png)
 
 **Step 4. Locate and upload your token.**<br>
 Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. Intune automatically syncs your Apple School Manager devices from Apple.
@@ -109,7 +109,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 
 6. Choose **Device Management Settings**. These items are set during activation and require a factory reset to change. configure the following profile settings, and then choose **Save**:
 
-  ![Screenshot of choosing the management mode. Device has the following settings: supervised, locked enrollment, allow pairing set to deny all. Apple Configurator Certificates is grayed out for a new enrollment program profile.](./media/enrollment-program-profile-mode.png)
+  ![Choosing the management mode](./media/enrollment-program-profile-mode.png)
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
@@ -157,10 +157,10 @@ Now that Intune has been assigned permission to manage your Apple School Manager
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
-  ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/enrollment-program-device-sync.png)
+  ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
 2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
-  ![Screenshot of Sync blade with Request sync link being chosen.](./media/enrollment-program-device-request-sync.png)
+  ![Sync blade with Request sync link being chosen](./media/enrollment-program-device-request-sync.png)
 
   To comply with Apple’s terms for acceptable traffic, Intune imposes the following restrictions:
    -	A full sync can run no more than once every seven days. During a full sync, Intune refreshes every serial number that Apple has assigned to Intune whether the serial has previously been synced or not. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
@@ -175,7 +175,7 @@ Apple School Manager devices managed by Intune must be assigned an enrollment pr
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program profiles**.
 2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Device Assignments**
 
- ![Screenshot of Device Assignments with Assign being selected.](./media/enrollment-program-device-assign.png)
+ ![Device Assignments with Assign selected.](./media/enrollment-program-device-assign.png)
 
 3. Choose **Assign** and then choose the Apple School Manager devices you want to assign this profile. You can filter to view available devices:
   - **unassigned**
@@ -183,7 +183,7 @@ Apple School Manager devices managed by Intune must be assigned an enrollment pr
   - **&lt;profile name&gt;**
 4. Choose the devices you want to assign. The checkbox above the column selects up to 1000 listed devices. Click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
 
-  ![Screenshot of Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
+  ![Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
 
 ## Distribute devices to users
 
