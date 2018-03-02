@@ -5,9 +5,9 @@ title: Create and deploy Windows Information Protection (WIP) app protection pol
 titlesuffix: "Azure portal"
 description: "Create and deploy WIP app protection policy with Intune"
 keywords:
-author: arob98
-ms.author: angrobe
-manager: dougeby
+author: Erikre
+ms.author: erikre
+manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
@@ -39,7 +39,7 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 ### List of allowed and exempt apps
 
--   **Allowed apps:** These are the apps that need to adhere to this policy.
+-   **Allowed apps:** These apps are the apps that need to adhere to this policy.
 
 -   **Exempt apps:** These apps are exempt from this policy and can access corporate data without restrictions.
 
@@ -55,7 +55,7 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).
 
-Additionally, you need to have the following:
+Additionally, you need to have the following license and update:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -66,7 +66,7 @@ Additionally, you need to have the following:
 
 ## To add a WIP policy
 
-After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
@@ -92,7 +92,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 1.  From the **App protection policies** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
 
-2.  From the **Allowed apps** blade, choose **Add apps**. The **Add apps** blade opens, showing you all apps that are part of this list.
+2.  From the **Allowed apps** blade, choose **Add apps**. The **Add apps** information shows you all apps that are part of this list.
 
 3.  Select each app you want to access your corporate data, and then choose **OK**. The **Allowed apps** blade gets updated showing you all selected apps.
 
@@ -104,7 +104,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 2.  From the **Allowed apps** blade, choose **Add apps**.
 
-3.  On the **Add apps** blade, choose **Store apps** from the dropdown list. The blade changes to show boxes for you to add a **publisher** and app **name**.
+3.  On the **Add apps** blade, choose **Store apps** from the dropdown list. The information changes to show boxes for you to add a **publisher** and app **name**.
 
 4.  Type the name of the app and the name of its publisher, and then choose **OK**.
 
@@ -149,7 +149,7 @@ When working with WIP-enabled apps and WIP-unknown apps, we recommend that you s
 WIP looks for inappropriate data sharing practices and stops the user from completing the action. This can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
 
 #### Allow Overrides
-WIP looks for inappropriate data sharing, warning users if they do something deemed potentially unsafe. However, this mode lets the user override the policy and share the data, logging the action to your audit log.
+WIP looks for inappropriate data sharing, warning users when they do something deemed potentially unsafe. However, this mode lets the user override the policy and share the data, logging the action to your audit log.
 
 #### Silent
 WIP runs silently, logging inappropriate data sharing, without blocking anything that would have been prompted for employee interaction while in Allow Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.
@@ -157,11 +157,11 @@ WIP runs silently, logging inappropriate data sharing, without blocking anything
 #### Off (not recommended)
 WIP is turned off and doesn't help to protect or audit your data.
 
-After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
+After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Note that previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.
 
 ### Add a protection mode
 
-1.  From the **App policy** blade, choose the name of your policy, then chose **Required settings**.
+1.  From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
 
 	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
@@ -177,10 +177,23 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
  
     Once you have the apps showing up in the WIP Learning logging report, you can add them to your app protection policies.
 
+## Allow Windows Search Indexer to search encrypted items
+Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it indexes items that are encrypted, such as the Windows Information Protection (WIP) protected files.
+
+This app protection policy option is in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**. 
+
+When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified.
+
+When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are many WIP protected media files on the device.
+
+## Add encrypted file extensions
+
+In addition to setting the **Allow Windows Search Indexer to search encrypted items** option, you can specify a list of file extensions. Files with these extensions are encrypted when copying from a Server Message Block (SMB) share within the corporate boundary as defined in the network location list. When this policy is not specified, the existing auto-encryption behavior is applied. When this policy is configured, only files with the extensions in the list will be encrypted.
+
 ## Deploy your WIP app protection policy
 
 > [!IMPORTANT]
-> This applies for WIP without device enrollment.
+> This information applies for WIP without device enrollment.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -190,4 +203,8 @@ After you created your WIP app protection policy, you need to deploy it to your 
 
 	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 
-1.  Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
+2.  Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
+
+## Next steps
+
+- Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 

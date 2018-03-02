@@ -2,11 +2,11 @@
 # required metadata
 
 title: How to wipe only corporate data from apps
-titleSuffix: "Azure portal"
-description: Learn how to selectively wipe apps with Microsoft Intune."
+titleSuffix: Microsoft Intune
+description: Learn how to selectively wipe apps with Microsoft Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-When a device is lost or stolen, or if the employee leaves your company, you want to make sure company app data is removed from the device. But you might not want to remove personal data on the device, especially if this is an employee-owned device.
+When a device is lost or stolen, or if the employee leaves your company, you want to make sure company app data is removed from the device. But you might not want to remove personal data on the device, especially if the device is an employee-owned device.
 
 >[!NOTE]
 > The iOS and Android platforms are the two platforms currently supported for wiping corporate data from Intune managed apps.
@@ -38,7 +38,7 @@ When a device is lost or stolen, or if the employee leaves your company, you wan
 To selectively remove company app data, create a wipe request by using the steps in this topic. After the request is finished, the next time the app runs on the device, company data is removed from the app.
 
 >[!IMPORTANT]
-> Contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently, this only applies to the Microsoft Outlook app.
+> Contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source can't be wiped. Currently, this only applies to the Microsoft Outlook app.
 
 ## Create a wipe request
 
@@ -70,14 +70,14 @@ You can have a summarized report that shows the overall status of the wipe reque
 
 	![Screenshot of the wipe request status in the App selective wipe pane](./media/wipe-request-status-1.png)
 
-Additionally, you'll be able to see the device name, and its device type, which can be helpful when reading the reports.
+Additionally, you are able to see the device name, and its device type, which can be helpful when reading the reports.
 
 >[!IMPORTANT]
 > The user must open the app for the wipe to occur, and the wipe may take up to 30 minutes after the request was made.
 
 ## Delete a wipe request
 
-Wipes with pending status are displayed until you manually delete them.  To manually delete a wipe request:
+Wipes with pending status are displayed until you manually delete them. To manually delete a wipe request:
 
 1.  On the **Mobile Apps - App selective wipe** pane.
 

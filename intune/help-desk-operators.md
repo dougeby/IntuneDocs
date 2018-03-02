@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** pane.
 
-The **Troubleshoot** pane also shows user enrollment issues. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions. 
+The **Troubleshoot** pane also shows user enrollment issues. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.
 
 For steps on adding a help desk operator role, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control)
 
@@ -57,7 +57,7 @@ In the troubleshooting pane, choose **Select user** to view user information. Us
 
 ## Areas of troubleshooting dashboard
 
-You can use the **Troubleshoot** pane to review user information. 
+You can use the **Troubleshoot** pane to review user information.
 
 ![](/intune/media/troubleshooting-dash.png)
 

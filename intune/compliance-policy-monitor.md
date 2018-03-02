@@ -3,24 +3,22 @@
 
 title: Monitor Intune device compliance policies
 titlesuffix: "Azure portal"
-description: Learn how to monitor device compliance policies."
+description: Learn how to monitor device compliance policies
 keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -34,13 +32,13 @@ Compliance reports help admins to analyze the compliance posture of devices in t
 
 Follow these steps to find the **Intune Device compliance dashboard** in the Azure portal:
 
-1.  Go to the [Azure Portal](https://portal.azure.com), and sign in with your Intune credentials.
+1.  Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials.
 
 2.  Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 3.  Choose **Intune** &gt; **Device compliance** &gt; **Overview**, then the **Device compliance dashboard** opens.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Devices must be enrolled into Intune to receive device compliance policies.
 
 ## Device compliance dashboard
@@ -75,18 +73,18 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
     -   **Error**: The device failed to communicate with Intune and Azure AD, and received an error message with the reason.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Devices that are enrolled into Intune, but not targeted by any device compliance policies are included in this report under the **Compliant** bucket.
 
 #### Drill-down option
 
 From the **Device compliance dashboard**, If you click on the Device compliance tile, you can drill down into a specific **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by the device compliance policies.
 
-![Device compliance dashboard drill-down](./media/idc-2.png)
+![Device compliance dashboard drill down](./media/idc-2.png)
 
 If you need more details about a specific user, you can filter the Device compliance chart report by typing the user’s e-mail alias.
 
-![Device compliance dashboard specific user](./media/idc-3.png)
+![Device compliance dashboard-specific user](./media/idc-3.png)
 
 You can also click the different compliance status on the Device compliance chart to see more details about the user’s devices compliance policy statuses.
 
@@ -106,7 +104,7 @@ If you click on **Filter button**, the filter fly-out opens with the following o
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -140,11 +138,10 @@ This report provides you per compliance policy view and the total number of devi
 
 When you click on the Policy compliance tile, then click on one of the device compliance policies, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy.
 
-### Per-setting device compliance report
+## Setting compliance report
 
 This report allows you to view, per compliance setting, the total number of devices in each compliance state. The **Settings compliance** title is available from the **Device compliance dashboard**, and it shows all device compliance policy settings from all device compliance policies created by the admin, the platforms to which the policy settings were applied, and the number of noncompliant devices.
 
 ![Per-setting device compliance report](./media/idc-10.png)
 
-When you click on the Setting compliance tile, then click on one of the device compliance policy settings, you’ll be able to see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy setting.
-
+When you click on the Setting compliance tile, then click on one of the device compliance policy settings, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy setting.

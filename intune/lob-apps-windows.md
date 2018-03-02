@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to add Windows line-of-business apps to Intune 
-titlesuffix: "Azure portal"
-description: Learn about adding Windows line-of-business apps to Intune."
+title: How to add Windows line-of-business apps to Microsoft Intune
+titlesuffix:
+description: Learn how to add Windows line-of-business (LOB) apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -30,6 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+A line-of-business (LOB) app is one that you add from an app installation file. These types of apps are typically written in-house. The following steps provide guidance to help you add a Windows LOB app to Microsoft Intune.
 
 ## Step 1 - Specify the software setup file
 
@@ -74,6 +75,10 @@ ms.custom: intune-azure
 ## Step 5 - Update a line-of-business app
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## Configuring a self-updating mobile MSI app to ignore the version check process
+
+You can configure a known self-updating mobile MSI app to ignore the version check process. Some MSI installer based apps are automatically updated by the app developer. For these automatically updated MSI apps, you can configure the **Ignore app version** setting in the **App information** blade. When this setting is switched to **Yes**, Microsoft Intune will not enforce the app version installed on the Windows client. This capability is useful to avoid getting into a race condition. For instance, this type of race condition could occur when the app being automatically updated by the app developer is also being update by Intune. Both could try to enforce a version of the app on a Windows client, which could create a conflict.
 
 ## Next steps
 

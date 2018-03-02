@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to configure Intune VPN settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure VPN connections on devices you manage."
+title: How to configure VPN settings in Microsoft Intune
+titleSuffix: 
+description: Learn how to use Microsoft Intune to configure virtual private network (VPN) connections on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh
@@ -54,7 +54,7 @@ You can create VPN profiles using the following connection types:
 
 
 > [!IMPORTANT]
-> Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](app-management.md) topic to help you assign the app by using Intune.  
+> Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](app-management.md) article to help you assign the app by using Intune.  
 
 Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](custom-vpn-profiles-create.md).     
 
@@ -94,7 +94,7 @@ VPN profiles can use a number of different connection types and protocols from d
 
 ### Certificates
 
-When you create the VPN profile, you choose a SCEP or PKCS certificate profile that you previously created in Intune. This is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is assigned to the computer that authenticates the VPN connection, typically, the VPN server.
+When you create the VPN profile, you choose a SCEP or PKCS certificate profile that you previously created in Intune. This profile is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is assigned to the computer that authenticates the VPN connection, typically, the VPN server.
 
 For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Microsoft Intune](certificates-configure.md).
 
