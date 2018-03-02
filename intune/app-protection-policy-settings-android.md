@@ -98,5 +98,5 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 | **Require Minimum Android Patch Version (Warning Only)** | Choose **Yes** to require a minimum Android security patch released by Google. The user will see a notification if the Android security patch on the device does not meet the requirement. This notification can be dismissed.<br><br> This policy setting format supports the date format of YYYY-MM-DD. | No |
 
 > [!NOTE]
-> To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-Android).
+> To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](mam-faq.md#app-experience-on-Android).
 
