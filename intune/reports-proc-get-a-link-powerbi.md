@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Connect to the Data Warehouse with Power BI | Microsoft Docs
-description: You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant.
+title: Connect to the Data Warehouse with Power BI
+titlesuffix: Microsoft Intune
+description: You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Microsoft Intune tenant.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +28,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant. The Data Warehouse Power BI file (pbix) contains connection settings to your tenant, and the following sample reports and charts:  
+You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant. The Data Warehouse Power BI file (pbix) contains connection settings to your tenant, as well as the following sample reports and charts:  
 
   -  Devices
   -  Enrollment
