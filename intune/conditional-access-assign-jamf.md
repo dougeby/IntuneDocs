@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enforce compliance policies to Jamf-managed devices
-titlesuffix: "Azure portal"
-description: "Use compliance to help secure Jamf-managed devices."
+title: Device compliance policy for Jamf devices
+titlesuffix: Microsoft Intune
+description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article

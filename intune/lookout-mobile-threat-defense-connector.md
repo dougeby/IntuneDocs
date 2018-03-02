@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Lookout Mobile Threat Defense connector with Intune
-titlesuffix: "Azure portal"
-description: Set up Lookout Mobile Threat Defense connector with Intune.
+title: Lookout MTD connector with Microsoft Intune
+titlesuffix:
+description: Learn about integrating Intune with Lookout Mobile Threat Defense (MTD) to control mobile device access to your corporate resources.
 keywords:
 author: msmimart
 ms.author: mimart

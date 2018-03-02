@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Set up the Exchange connector for on-premises EAS with Intune
-titleSuffix: "Azure portal"
-description: "Use Connector tool to enable communication between the Intune and on-premises Exchange Server"
+title: Set up Microsoft Intune on-premises Exchange connector
+titleSuffix:
+description: Use the on-premises Exchange connector to manage device access to Exchange mailboxes based on Intune enrollment and Exchange Active Sync (EAS).
 keywords:
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up the Intune on-premises Exchange Connector in Microsoft Intune Azure
 
-On-premises Exchange Server environments can use the Intune on-premises Exchange connector to manage devices access to on-premises Exchange mailboxes based on whether or not the devices are enrolled into Intune and compliant with Intune device compliance policies. The on-premises Exchange connector is also responsible for discovering mobile devices that connect to on-premises Exchange Servers by synchronizing the existing Exchange Active Sync (EAS) record with Intune.
+On-premises Exchange Server environments can use the Intune on-premises Exchange connector to manage device access to on-premises Exchange mailboxes based on whether or not the devices are enrolled into Intune and compliant with Intune device compliance policies. The on-premises Exchange connector is also responsible for discovering mobile devices that connect to on-premises Exchange Servers by synchronizing the existing Exchange Active Sync (EAS) record with Intune.
 
 > [!IMPORTANT]
 > Intune only supports one on-premises Exchange Connector connection of any type per subscription.
@@ -99,7 +99,7 @@ Perform the following steps to install the Intune On-premises Exchange Connector
 
 3.  In the **Microsoft Intune Exchange Connector** dialog box, select either **On-premises Microsoft Exchange Server** or **Hosted Microsoft Exchange Server**.
 
-  ![Choose your Exchange Server type](./media/intune-sa-exchange-connector-config.png)
+  ![Image showing where to choose your Exchange Server type](./media/intune-sa-exchange-connector-config.png)
 
   For an On-premises Exchange server, provide either the server name or the fully-qualified domain name of the Exchange server that hosts the **Client Access Server** role.
 

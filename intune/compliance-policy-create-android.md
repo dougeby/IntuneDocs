@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for Android
-titleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for Android devices."
+title: Create Android device compliance policy in Microsoft Intune
+titleSuffix:
+description: Create a Microsoft Intune device compliance policy for Android devices so you can specify requirements that a device must meet to be compliant.
 keywords:
 author: andredm7
 ms.author: andredm
@@ -32,10 +32,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Device compliance policies are created for each platform form the Intune Azure portal. 
+An Intune device compliance policy for Android specifies the rules and settings that Android devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal. 
 
-- To learn more about compliance policies, see [What is a device compliance](device-compliance.md).
-- To learn about the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+To learn more about compliance policies and the prerequisites you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
 
 ## To create a device compliance policy
 
