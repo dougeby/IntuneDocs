@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Create Mobile Threat Defense device compliance policy with Intune
-titlesuffix: "Azure portal"
-description: "Create Mobile Threat Defense device compliance policy in Intune"
+title: Create MTD device compliance policy with Microsoft Intune
+titlesuffix:
+description: Create an Intune device compliance policy that uses your MTD partner threat levels to determine if a mobile device can access company resources.
 keywords:
 author: msmimart
 ms.author: mimart

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Create and assign on-premises Exchange conditional access policy
-titlesuffix: "Azure portal"
-description: "Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune."
+title: Create Exchange conditional access policy
+titlesuffix: Microsoft Intune
+description: Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/14/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# How to create and assign a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune
+# Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

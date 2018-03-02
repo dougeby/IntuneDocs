@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Intune endpoint protection settings for Windows 10
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control endpoint protection settings like BitLocker on Windows 10 devices."
+title: Microsoft Intune endpoint protection settings for Windows 10
+titlesuffix:
+description: Learn the Intune settings you can use to control endpoint protection settings like BitLocker on Windows 10 devices.
 keywords:
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 01/16/2018
 ms.topic: article
@@ -27,11 +27,11 @@ ms.custom: intune-azure
 
 ---
 
-# Endpoint protection settings for Windows 10 and later in Microsoft Intune
+# Create endpoint protection settings for Windows 10 and later in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The endpoint protection profile let you control security features on Windows 10 devices, like BitLocker and Windows Defender.
+The endpoint protection profile lets you control security features on Windows 10 devices, like BitLocker and Windows Defender.
 
 Use the information in this topic to learn how to create endpoint protection profiles.
 

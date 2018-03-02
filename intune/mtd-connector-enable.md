@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enable Mobile Threat Defense connector with Intune
+title: Enable Mobile Threat Defense connector in Microsoft Intune
 titlesuffix: "Azure portal"
-description: Enable Mobile Threat Defense connector in Intune.
+description: Enable the connector between your Mobile Threat Defense (MTD) partner and Microsoft Intune.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -27,12 +27,12 @@ ms.custom: intune-azure
 
 ---
 
-# Enable Mobile Threat Defense in Intune
+# Enable the Mobile Threat Defense connector in Intune
 
 > [!NOTE] 
 > This topic applies to all Mobile Threat Defense partners.
 
-To enable the Mobile Threat Defense (MTD) connection in Intune, you should have already configured the Intune Connector in the MTD partner console.
+During Mobile Threat Defense (MTD) setup, you've configured a policy for classifying threats in your MTD partner console and you've created the device compliance policy in Intune. If you've already configured the Intune connector in the MTD partner console, you can now enable the MTD connection in Intune.
 
 ## To enable the MTD connector
 
@@ -54,7 +54,7 @@ To enable the Mobile Threat Defense (MTD) connection in Intune, you should have 
 
 ## MTD toggle options
 
-You can decide which MTD toggle options you need to enable according to your organization's requirements. Here's more details:
+You can decide which MTD toggle options you need to enable according to your organization's requirements. Here are more details:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
 	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.

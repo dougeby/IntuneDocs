@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Getting started with policies
-titlesuffix: "Azure portal"
-description: Create policies to prevent users from doing unauthorized things with their devices.
+title: Getting started with policies in Microsoft Intune
+titlesuffix:
+description: Create policies to help protect corporate data and manage the devices end users use to access company resources.
 keywords:
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -27,9 +27,9 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started with policies
+# Get started with creating policies
 
-One of the main goals of getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices.
+One of the main goals when getting started with Intune is enrolling devices to make sure that they are compliant with corporate policies. Compliance policies not only help you to manage specialized device types, such as corporate-owned kiosks, but also personal (Bring Your Own) devices, tablets, and user-less devices.
 
 ![Compliance dashboard with very little data](/intune/media/generic-compliance-dashboard.png)
 
