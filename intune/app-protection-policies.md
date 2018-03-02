@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and deploy app protection policies 
+title: Create and deploy app protection policies
 titleSuffix: "Azure portal"
 description: "Learn how Intune app protection policies help protect company data."
 keywords:
@@ -39,14 +39,14 @@ App protection policies can be applied to apps running on devices that may or ma
 If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  Create an app protection policy
-1.  In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies. 
-2. Choose **Add a policy**. 
+1.  In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+2. Choose **Add a policy**.
 
   ![Screenshot of the 'Add a policy'](./media/app-protection-add-policy.png)
 
 3.  Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
-4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating. 
+4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating.
 5. Once you've selected the apps, choose **Select** to save your selection.
 
     > [!IMPORTANT]
@@ -61,7 +61,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
     > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
 
 7.  Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
-8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade. 
+8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade.
 9. Choose **Create** to create the policy and save your settings.
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users)."
@@ -76,7 +76,7 @@ When you finish creating a policy as described in the previous procedure, it is 
    ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
 
 2.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
-  
+
     ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
 You've now created a policy and deployed it to users.

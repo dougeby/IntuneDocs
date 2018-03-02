@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Use the following steps to learn how to authorize and access the API with a REST
 Create a native app in Azure. This native app is the client app. The client
 running on your local machine references the Intune Data Warehouse API when the local client requests credentials. 
 
-1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** blade.
+1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** pane.
 2. Select **New app registration**.
 3. Type the app details.
     1.  Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
@@ -58,8 +58,8 @@ running on your local machine references the Intune Data Warehouse API when the 
 You now have an app defined in Azure. Grant access from the native app to the Microsoft Intune API.
 
 1.  Select the native app. You named the app something such as **Intune Data Warehouse Client**.
-2.  Select **Required permissions** from the **Settings** blade
-3.  Select **Add** in the **Required permissions** blade.
+2.  Select **Required permissions** from the **Settings** pane
+3.  Select **Add** in the **Required permissions** pane.
 4.  Select **Select an API**.
 5.  Search for the web app name. It is named **Microsoft Intune API**.
 6.  Select the app in the list.
@@ -70,7 +70,7 @@ You now have an app defined in Azure. Grant access from the native app to the Mi
 
 9.  Select **Select**.
 10.  Select **Done**.
-11.  Optionally, Select **Grant Permissions** in the Required permissions blade. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+11.  Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Select **Yes**.
 
 ## Get data from the Microsoft Intune API with Postman
@@ -93,10 +93,10 @@ You need the following information to make a REST call using Postman:
 
 ### OData endpoint
 
-You also need the endpoint. To get your Data Warehouse endpoint, you will need the custom feed URL. You can get the OData endpoint from the Data Warehouse blade.
+You also need the endpoint. To get your Data Warehouse endpoint, you will need the custom feed URL. You can get the OData endpoint from the Data Warehouse pane.
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Set up Intune Data Warehouse** under **Other tasks**.
 4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
