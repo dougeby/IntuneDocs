@@ -30,17 +30,17 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.
+Troubleshoot common issues using Intune device profiles.
 
 ## Why doesn't a user get a new profile when changing a password or passphrase on an existing Wi-Fi profile? 
-You create a corporate Wi-Fi profile, deploy the profile to a group, change the password, and save the profile. When this happens, some users may not get the new profile.
+You create a corporate Wi-Fi profile, deploy the profile to a group, change the password, and save the profile. When the profile changes, some users may not get the new profile.
 
 To mitigate this issue, set up guest Wi-Fi. If the corporate Wi-Fi fails, users can connect to the guest Wi-Fi. Be sure to enable any automatically connect settings. Deploy the guest Wi-Fi profile to all users.
 
-There are some additional best practices:  
+Some additional recommendations:  
 
-- Since the Wi-Fi network you're connecting to takes a password or passphrase, make sure you can connect to the Wi-Fi router directly. You can test with an iOS device.
-- After you successfully connect to the Wi-Fi endpoint (Wi-Fi router), note the SSID and the credential used (this is the password or passphrase).
+- Since the Wi-Fi network you're connecting to uses a password or passphrase, make sure you can connect to the Wi-Fi router directly. You can test with an iOS device.
+- After you successfully connect to the Wi-Fi endpoint (Wi-Fi router), note the SSID and the credential used (this value is the password or passphrase).
 - Enter the SSID and credential (password or passphrase) in the Pre-Shared Key field. 
 - Deploy to a test group that has limited number of users, preferably only the IT team. 
 - Sync your iOS device to Intune. Enroll if you haven’t already enrolled. 
@@ -48,7 +48,7 @@ There are some additional best practices:
 - Roll out to larger groups and eventually to all expected users in your organization. 
 
 ## How long does it take for mobile devices to get a policy or apps after they have been assigned?
-When a policy or an app is assigned, Intune immediately begins notifying the device to check in with the Intune service. This typically takes less than five minutes.
+When a policy or an app is assigned, Intune immediately begins notifying the device to check in with the Intune service. The notification typically takes less than five minutes.
 
 If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts. If the device is offline (for example, it is turned off, or not connected to a network), it might not receive the notifications. In this case, the device gets the policy on its next scheduled check-in with the Intune service as follows:
 
@@ -57,7 +57,7 @@ If a device doesn't check in to get the policy after the first notification is s
 - Windows Phone: Every eight hours
 - Windows 8.1 and Windows 10 PCs enrolled as devices: Every eight hours
 
-If the device has just enrolled, the check-in frequency is more frequent, as follows:
+If the device is recently enrolled, the check-in frequency is more frequent, as follows:
 
 - iOS and macOS: Every 15 minutes for six hours, and then every six hours
 - Android: Every three minutes for 15 minutes, then every 15 minutes for two hours, and then every eight hours
@@ -66,21 +66,21 @@ If the device has just enrolled, the check-in frequency is more frequent, as fol
 
 To immediately check for the policy anytime, users can open the Company Portal app, and sync the device.
 
-For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day or more. Intune sends requests at various intervals for a device to check in with the service. However it is still up to the device to check in. After initial enrollment, depending on the type of device enrollment and the policies and profiles assigned to a device, the time it takes a device to complete the check-in is unpredictable. However, once the device is enrolled and all initial policies have been applied, the device should check for new policies approximately every six hours.
+For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day or more. Intune sends requests at various intervals for a device to check in with the service. However it is still up to the device to check in. After initial enrollment, depending on the type of device enrollment and the policies and profiles assigned to a device, the time it takes a device to complete the check-in is unpredictable. However, once the device is enrolled, and all initial policies are applied, the device typically checks for new policies about every six hours.
 
 ## What actions cause Intune to immediately send a notification to a device?
-Devices check in with Intune when they receive a notification to check in, or during their regularly scheduled check-in. When you target a device or user with an action (wipe, lock, passcode reset, app assignment, profile assignment (Wi-Fi, VPN, email, etc.), or policy assignment), Intune immediately notifies the device to check in with the Intune service to receive these updates.
+Devices check in with Intune when they receive a notification to check in, or during their regularly scheduled check-in. When you target a device or user with an action, such as wipe, lock, passcode reset, app assignment, profile assignment, or policy assignment, then Intune immediately notifies the device to check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
 
 ## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
-When two or more policies are assigned to the same user or device, the evaluation for which setting is applied occurs at the individual setting level:
+If two or more policies are assigned to the same user or device, then which settings apply occur at the individual setting level:
 
 -   Compliance policy settings always have precedence over configuration policy settings
 
--   The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy
+-   If a compliance policy is evaluated against the same setting in a different compliance policy, then the most restrictive compliance policy setting applies.
 
--   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict is displayed in the Azure portal. Manually resolve these conflicts.
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict displays in the Azure portal. In this scenario, manually resolve these conflicts.
 
 ## What happens when app protection policies conflict with each other? Which one is applied to the app?
 Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset). The number entry fields are set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
@@ -92,10 +92,10 @@ If one profile is assigned to the app and takes effect, and then a second one is
 ## What happens when iOS custom policies conflict?
 Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profile. It merely serves as the delivery mechanism.
 
-When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom profile with settings conflicts, settings are applied randomly.
+When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. If a custom profile and its settings conflicts, then the settings are applied randomly.
 
 ## What happens when a profile is deleted or no longer applicable?
-When you delete a profile, or you remove a device from a group that has the profile, the profile and settings are removed from the device according to the following lists.
+When you delete a profile, or you remove a device from a group that has the profile, the profile and settings are removed from the device according to the following lists:
 
 - Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.
 - All other profile types:  

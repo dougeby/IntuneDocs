@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create certificates profile in Microsoft Intune - Azure | Microsoft Docs 
-description: For your devices, add or create a certificate profile by configuring SCEP or PKCS certificate environment, export the public certificate, create the profile in the Azure portal, and then assign SCEP or PKCS to the certificate profiles in Microsoft InTune in the Azure portal
+description: For your devices, add or create a certificate profile by configuring SCEP or PKCS certificate environment, export the public certificate, create the profile in the Azure portal, and then assign SCEP or PKCS to the certificate profiles in Microsoft Intune in the Azure portal
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. When you use certificates, you don't need to enter user names and passwords to authenticate connections 
 
-You can use Intune to assign these certificates to devices you manage. InTune supports assigning and managing the following certificate types:
+You can use Intune to assign these certificates to devices you manage. Intune supports assigning and managing the following certificate types:
 
 - Simple Certificate Enrollment Protocol (SCEP)
 - PKCS#12 (or PFX)
@@ -108,9 +108,9 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 
     For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:  
 
-	    - **Computer certificate store - Root**
-	    - **Computer certificate store - Intermediate**
-	    - **User certificate store - Intermediate**
+    - **Computer certificate store - Root**
+    - **Computer certificate store - Intermediate**
+    - **User certificate store - Intermediate**
 
 6. Select **OK** to save your changes, and select **Create** to save your new profile.
 

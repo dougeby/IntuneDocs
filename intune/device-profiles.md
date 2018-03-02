@@ -39,7 +39,7 @@ Microsoft Intune includes settings and features that you can enable or disable o
 This topic provides an overview of the different profiles you can create for your devices. Use these profiles to allow and or prevent some features on the devices.
 
 ## Before you begin
-To see the available features, open the [Azure portal](https://portal.azure.com), and open your InTune resource. 
+To see the available features, open the [Azure portal](https://portal.azure.com), and open your Intune resource. 
 
 **Device configuration** includes the following options:
 
@@ -120,7 +120,7 @@ This feature supports:
 - Windows 10
 
 ## Edition upgrade profile
-[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md)automatically upgrades devices that run some versions of Windows 10 to a newer edition.
+[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
 
 This feature supports: Windows 10 only
 

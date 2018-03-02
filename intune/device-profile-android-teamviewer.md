@@ -24,22 +24,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Use TeamViewer to remotely administer InTune devices
+# Use TeamViewer to remotely administer Intune devices
 
-Devices managed by InTune can be administered remotely using [TeamViewer](https://www.teamviewer.com). TeamViewer is a 3rd party program that you purchase separately. This topic shows you how to configure TeamViewer within InTune, and to remotely administer a device. 
+Devices managed by Intune can be administered remotely using [TeamViewer](https://www.teamviewer.com). TeamViewer is a third party program that you purchase separately. This topic shows you how to configure TeamViewer within Intune, and to remotely administer a device. 
 
 ## Prerequisites
 
-- Use a supported device. Intune-managed Android and Windows devices support remote administration. TeamViewer may not support Windows Holographic (HoloLens), Windows Team (Surface Hub), or Windows 10 S. For supportability, we suggest referring to [TeamViewer](https://www.teamviewer.com) for any updates.
+- Use a supported device. Intune-managed Android and Windows devices support remote administration. TeamViewer may not support Windows Holographic (HoloLens), Windows Team (Surface Hub), or Windows 10 S. For supportability, see [TeamViewer](https://www.teamviewer.com) for any updates.
 
-- The InTune administrator within the Azure portal must have following [Intune roles](role-based-access-control.md):  
+- The Intune administrator within the Azure portal must have following [Intune roles](role-based-access-control.md):  
 
     - **Update Remote Assistance**: Allows administrators to modify the TeamViewer connector settings
-    - **Request Remote Assistance**: Allows administrators to start a new remote assistance session for any user. Users with this role are not limited by any InTune role within a scope. Also, user or device groups assigned an InTune role within a scope can also request remote assistance. 
+    - **Request Remote Assistance**: Allows administrators to start a new remote assistance session for any user. Users with this role are not limited by any Intune role within a scope. Also, user or device groups assigned an Intune role within a scope can also request remote assistance. 
 
-- Download and install [TeamViewer](https://www.teamviewer.com). 
+- A [TeamViewer](https://www.teamviewer.com) account with the sign-in credentials
 
-By enabling TeamViewer, you are allowing the TeamViewer for Intune Connector to create TeamViewer sessions, read Active Directory data, and save the TeamViewer account access token.
+By using TeamViewer, you're allowing the TeamViewer for Intune Connector to create TeamViewer sessions, read Active Directory data, and save the TeamViewer account access token.
 
 ## Configure the TeamViewer connector
 
@@ -62,7 +62,7 @@ After the connector is configured, you're ready to remotely administer a device.
 
 ![Use TeamViewer to remotely administer Android device - example](./media/android-teamviewer.png)
 
-When you start a remote session, an end user sees a notification flag on the Company Portal app icon on their device, and also sees a notification when they open the app. The user can then accept the remote assistance request.
+When you start a remote session, an end user sees a notification flag on the Company Portal app icon on their device. A notification also displays when the app opens. The user can then accept the remote assistance request.
 
 In TeamViewer, you can complete a range of actions on the device, including taking control of the device. For full details of what you can do, see the [TeamViewer guidance](https://www.teamviewer.com/support/documents/).
 
