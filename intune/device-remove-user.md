@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Remove a user from an iOS device with Intune 
-titlesuffix: "Azure portal"
-description: Learn how to remove a user from a shared iOS device with Intune."
+title: Remove a user from an iOS device with Microsoft Intune 
+titlesuffix:
+description: Learn how to remove a user from a shared iOS device with Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Remove a user from a shared iOS device with Intune
+# Remove a user from a shared iOS device
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -44,8 +44,8 @@ The **Remove user** action deletes a user you choose from the local cache on a s
 
 ## How to remove a user
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Devices**.
 4. On the **Devices** blade, choose **All devices**.
 5. From the list of devices you manage, choose an iOS device.
@@ -54,4 +54,4 @@ The **Remove user** action deletes a user you choose from the local cache on a s
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
+To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.

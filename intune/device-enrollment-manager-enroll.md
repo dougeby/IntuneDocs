@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll devices - device enrollment manager
-titlesuffix: "Azure portal"
+title: Enroll devices using a device enrollment manager account
+titlesuffix: "Microsoft Intune"
 description: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: ErikjeMS
@@ -26,22 +26,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Enroll devices using device enrollment manager
+# Enroll devices by using a device enrollment manager account
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
 
-Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
+Users must exist in the [Azure portal](https://portal.azure.com) to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
 
 >[!NOTE]
->The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md), or [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md). It also can't be used to enroll macOS devices.
+>The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md), or [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## Example of a device enrollment manager scenario
 
 A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and adds a restaurant supervisor to the DEM account, in effect giving that supervisor DEM capabilities. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
 
-Only users in the Azure portal can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
+Only users in the [Azure portal](https://portal.azure.com) can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
 
 The DEM user can:
 
@@ -93,11 +93,11 @@ Removing a device enrollment manager does not affect enrolled devices. When a de
 
 **To remove a device enrollment manager**
 
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
-2. On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
-3. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Remove**.
+1. In the [Azure portal](https://portal.azure.com), choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. On the Intune blade, choose **Device enrollment**, and then choose **Device enrollment managers**.
+3. On the **Device enrollment managers** blade, select the DEM user, and select **Delete**.
 
 ## View the properties of a device enrollment manager
 
-1. In the Azure portal, choose **Device enrollment**, and then choose **Device Enrollment Managers**.
-2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
+1. In the [Azure portal](https://portal.azure.com), choose **Device enrollment**, and then choose **Device enrollment managers**.
+2. On the **Device enrollment managers** blade, right-click the DEM user, and select **Properties**.

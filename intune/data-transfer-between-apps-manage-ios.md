@@ -5,8 +5,8 @@ title: Manage transferring data between iOS apps
 titlesuffix: "Azure portal"
 description: Use this topic to understand how you can use the iOS Open-in feature and mobile app management policies to manage data transfers between apps."
 keywords:
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article

@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Set up Per-App VPN in Microsoft Intune for iOS devices
-titleSuffix: "Intune on Azure"
-description: Specify which managed apps can use your VPN on Intune managed iOS devices.
+title: Set up per-app VPN in Microsoft Intune for iOS devices
+titleSuffix: 
+description: Specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# Set up Per-App VPN in Microsoft Intune for iOS devices
+# Set up per-app Virtual Private Network (VPN) in Intune for iOS devices
 
-You can specify which managed apps can use your Virtual Private Network (VPN) on Intune managed iOS devices. When you specify a Per-APP VPN in Intune, an end user automatically connects through your VPN when accessing corporate documents.
+You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
 
 ## Prerequisites for the Per-App VPN
 

@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll iOS devices- Apple Configurator-Setup Assistant
-titlesuffix: "Azure portal"
-description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
+title: Enroll iOS devices using the Apple Configurator
+titlesuffix: "Microsoft Intune"
+description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -38,11 +38,11 @@ ms.custom: intune-azure
 >
 >If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
 >
->![Old user interface](./media/appleenroll-oldui.png)
+>![Old Intune user interface](./media/appleenroll-oldui.png)
 >
 >If your **Device enrollment** page looks like the image below, you have the updated user interfaces.  Go to [this help page](apple-configurator-enroll-ios-newui.md).
 >
->![New user interface](./media/appleenroll-newui.png)
+>![New Intune user interface](./media/appleenroll-newui.png)
 
 Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) running on a Mac computer. Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment. You can enroll devices into Intune with Apple Configurator in two ways:
 - **Setup Assistant enrollment** - Factory resets the device and prepares it to enroll during Setup Assistant.
@@ -70,7 +70,7 @@ A device enrollment profile defines the settings applied during enrollment. Thes
 5. Under **Apple Configurator Enrollment Profiles**, select **Create**.
 6. Type a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this Name field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about Azure Active Directory dynamic groups.
 
-  ![Screenshot of the create profile screen with Enroll with user affinity selected](./media/apple-configurator-profile-create.png)
+  ![The create profile screen with Enroll with user affinity selected](./media/apple-configurator-profile-create.png)
 
 7. Specify **User Affinity**:
    - **Enroll with user affinity** - The device must be affiliated with a user with Setup Assistant and can then access company data and email. User affinity is required for managed devices that belong to users and that need to use the Company Portal for services like installing apps. Only supported for Setup Assistant enrollment. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -123,7 +123,7 @@ After you create the profile and assign serial numbers, you must export the prof
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **AC Profiles**, and then choose the profile to export.
 2. On the profile, select **Export Profile**.
 
-  ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-sat.png)
+  ![Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-sat.png)
 3. Copy the profile URL. You can then add it in Apple Configurator later to define the Intune profile used by iOS devices.
 
   Next you import this profile to Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
@@ -161,7 +161,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. Under **Export Profile**, choose **Download profile** to download the enrollment profile.
 
-  ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-de.png)
+  ![Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-de.png)
 
 4. Transfer the file to a Mac computer running [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to iOS devices.
 5. Prepare the device with Apple Configurator by using the following steps.
@@ -169,7 +169,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
   2. Connect the iOS device to the Mac computer with a USB cord. Close Photos, iTunes, and other apps that open for the device when the device is detected.
   3. In Apple Configurator, choose the connected iOS device, and then choose the **Add** button. Options that can be added to the device appear in the drop-down list. Choose **Profiles**.
 
-    ![Screenshot Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-add-profile.png)
+    ![Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-add-profile.png)
 
   4. Use the file picker to select the .mobileconfig file that you exported from Intune, and then choose **Add**. The profile is added to the device. If the device is Unsupervised, the installation requires acceptance on the device.
 6. Use the following steps to install the profile on the iOS device. The device must have already completed the Setup Assistant and be ready to use. If enrollment entails app deployments, the device should have an Apple ID set up because the app deployment requires that you have an Apple ID signed in for the App Store.

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices.
+title: Microsoft Intune device restriction settings for Windows 10
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/20/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,8 @@ ms.custom: intune-azure
 
 ---
 
-# Windows 10 and later device restriction settings in Microsoft Intune
+#Microsoft Intune Windows 10 and later device restriction settings
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -36,11 +37,7 @@ ms.custom: intune-azure
    - This policy setting is not applied if the computer is Azure Active Directory joined and auto-enrollment is enabled. 
    - This policy setting does not apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
-- **Diagnostic data submission** - Possible values are:
-	- **None** - No data is sent to Microsoft
-	- **Basic** - Limited information is sent to Microsoft
-	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
-	- **Full** Sends the same data as Enhanced, plus additional data about the device state
+
 - **Camera** - Allow or block use of the camera on the device.
 - **OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
 - **Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
@@ -57,6 +54,7 @@ ms.custom: intune-azure
 - **Device discovery** - Block a device from being discovered by other devices.
 - **Task Switcher (mobile only)** - Blocks the task switcher on the device.
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 
 
@@ -81,6 +79,9 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
+
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -186,6 +187,8 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+-  **Favorites List** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
+-  **Restrict changes to Favorites** - Set this to **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 

@@ -5,10 +5,10 @@ title: Conditional access with Intune
 titlesuffix: "Azure portal"
 description: "Common ways to use conditional access with Intune"
 keywords:
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You need to configure Intune mobile device compliance policy, and the Intune mobile application management (MAM) capabilities to drive conditional access compliance at your organization. Let’s talk about the common ways to use conditional access with Intune.
+There are two main types of conditional access with Intune. The first type is deviced-based conditional access. The second type is app-based conditional access. You need to configure the related compliance policies to drive conditional access compliance at your organization.
+
+The below information helps you understand how to use the Intune mobile *device* compliance capabilities and the Intune mobile *application* management (MAM) capabilities. 
 
 ## Device-based conditional access
 
@@ -39,11 +41,11 @@ Intune and Azure Active Directory work together to make sure only managed and co
 
 Intune provides device compliance policy capabilities that evaluate the compliance status of the devices. The compliance status is reported to Azure Active Directory that uses it to enforce the conditional access policy created in Azure Active Directory when the user tries to access company resources.
 
-Starting at the [new Azure portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune), device-based conditional access policies for Exchange online and other Office 365 products are configured through the Azure portal.
+Device-based conditional access policies for Exchange online and other Office 365 products are configured through the [Azure portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 -   Learn more about [conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Learn more about [what is Intune device compliance](device-compliance.md).
+-   Learn more about [Intune device compliance](device-compliance.md).
 
 -   Learn more about [protecting e-mail, Office 365, and other services using conditional access with Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage web access with the Managed Browser app 
-titlesuffix: "Azure portal"
-description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
+titlesuffix: Microsoft Intune
+description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
 author: erikre
 ms.author: erikre
@@ -69,17 +69,17 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 
 ## Create a Managed Browser app configuration
 
-1.	Sign into the Azure portal.
-2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
-4.	On the **App Configuration policies** blade, choose **Add**.
-5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
+4.	On the **App configuration policies** blade, choose **Add**.
+5.	On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
 6.	For **Device enrollment** type, choose **Managed apps**.
-7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
-8.	Choose **OK** to return to the **Add app configuration** blade.
-9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
+7.	Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
+8.	Choose **OK** to return to the **Add configuration policy** blade.
+9.	Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
 10.	When you are done, choose **OK**.
-11.	On the **Add app configuration** blade, choose **Create**.
+11.	On the **Add configuration policy** blade, choose **Add**.
 12.	The new configuration is created, and displayed on the **App configuration** blade.
 
 >[!IMPORTANT]
@@ -89,10 +89,10 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 
 You assign the settings to Azure AD groups of users. If that user has the Managed Browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Settings** blade of the Intune mobile application management dashboard, choose **App configuration**.
+1. On the **Mobile apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
-3. On the next blade, choose **User Groups**.
-4. On the **User groups** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+3. On the next blade, choose **Assignments**.
+4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
 
 ## How to configure Application Proxy settings for the Managed Browser

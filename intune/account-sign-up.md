@@ -6,7 +6,7 @@ description: How to sign up for an Intune subscription or sign in to start with 
 keywords:
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:
