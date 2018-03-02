@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure the layout of apps and folders on the dock and home screen of devices running iOS.
+Use these settings to configure the app layout and folders on the dock and home screen of devices running iOS.
 
 Devices running iOS with an assigned profile must be in supervised mode and run iOS 9.3 or later.
 
@@ -52,11 +52,11 @@ On the **Dock** page, you can add up to six items or folders to the dock of the 
 
 In this example, you've configured the dock screen to show only the Safari, Mail, and Stocks apps. In the following image, the Mail app is selected to illustrate its properties:
 
-![Sample iOS dock settings](http://i.imgur.com/FfFiUcP.png)
+![Sample iOS dock settings](./media/FfFiUcP.png)
 
 When you assign the policy to an iPhone, the result is a dock that looks similar to this screenshot:
 
-![Sample iOS dock layout on iPhone](http://i.imgur.com/bAgCe8F.png)
+![Sample iOS dock layout on iPhone](./media/bAgCe8F.png)
 
 ## Add Home screen pages
 
@@ -72,11 +72,11 @@ Add the pages you want to appear on the home screen, and the apps that appear on
 
 In this example, you've configured a new page named **Contoso**. The page shows only the Find Friends, and Settings apps. In the following image, the Settings app is selected to illustrate its properties:
 
-![iOS Home screen settings example](http://i.imgur.com/Jc2OxyX.png)
+![iOS Home screen settings example](./media/Jc2OxyX.png)
 
 When you assign the policy to an iPhone, the result is a page that looks similar to this screenshot:
 
-![iOS device with modified home screen](http://i.imgur.com/Bd37PHa.png)
+![iOS device with modified home screen](./media/Bd37PHa.png)
 
 ## How to add an app to the list
 
