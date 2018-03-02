@@ -48,7 +48,7 @@ To take advantage of iOS device Single Sign-on, you must have the following cond
    - **Profile type**: Choose **Device features**.
 4. On the **Device features** page, choose **Single Sign On**.
 
-   ![Single Sign On page](./media/sso-page.png)
+   ![Single Sign On page](./media/sso-blade.png)
 
 2. Use the following summary table to help you fill in the fields on the **Single Sign On** page. For details, see the sections after the table.
    
