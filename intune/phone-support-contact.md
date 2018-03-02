@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: "Contact Intune assisted phone support"
-titlesuffix: "Azure portal"
-description: Phone numbers for Microsoft Intune help."
+title: Contact assisted phone support for Microsoft Intune
+titlesuffix: Microsoft Intune
+description: Lists the the phone numbers for Microsoft Intune phone support.
 keywords: business hours
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2017
 ms.topic: article
@@ -30,6 +30,9 @@ ms.custom: intune-classic
 # Contact assisted phone support for Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+This topic lists the contact information for the Microsoft Intune assisted phone support.
 
 ## Phone numbers and business hours
 
