@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: How to assign device profiles with Intune
-titlesuffix: "Azure portal"
-description: Once you've created an Intune device profile, use this topic to learn how to assign it to devices."
+title: Assign device profiles in Microsoft Intune - Azure | Microsoft Docs
+description: Use the Azure portal to assign device profiles and policies to users and devices, and how to exclude groups from a profile assignment in Microsoft InTune
 keywords:
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/05/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,41 +26,38 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Microsoft Intune device profiles
+# Assign user and device profiles in Microsoft Intune 
+
+After you create a profile, you can assign the profile to Azure Active Directory groups.
 
 ## Assign a device profile
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
-2. In the list of profiles, choose the profile you want to manage, and then, on the <*profile name*> **Device configuration profile** blade, choose **Manage** > **Assignments**.
-3. On the next blade, choose either **Include** (to include groups) or **Exclude** (to exclude groups), then choose **Select groups**.
-![Include and exclude groups from a profile assignment.](./media/group-include-exclude.png)
-4. On the **Select groups** blade, choose the Azure AD groups, which you want to include in, or exclude from the assignment. You can hold down the **CTRL** key to select multiple groups.
-4. When you are done, on the **Select groups** blade, choose **Save**.
+1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
+2. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. 
+3. In the list of profiles, select the profile you want to assign, and then select **Assignments**.
+4. Choose to **Include** groups or **Exclude** groups, then **Select groups**:  
 
+    ![Include or exclude groups from a profile assignment](./media/group-include-exclude.png)
 
+5. When you select your groups, you're choosing an Azure Activity Directory group. To select multiple groups, hold down the **CTRL** key.
+6. When done, **Save** your changes.
 
-## How to exclude groups from a device profile assignment
+## Exclude groups from a profile assignment
 
-Intune device configuration profiles let you exclude groups from policy assignment. For example, you could assign a device profile to the **All corporate users** group, but exclude any members of the **Senior Management Staff** group.
+Intune device configuration profiles let you exclude groups from policy assignment. For example, you can assign a device profile to the **All corporate users** group, but exclude any members of the **Senior Management Staff** group.
 
-When you exclude groups from an assignment, exclude only user, or only device groups, not a mixture of groups. Intune does not take into account any user to device association when excluding groups. Including user groups while excluding device groups is unlikely to produce the results you need. 
-In case where mixed groups are used, or there are other conflicts, inclusion takes precedence over exclusion.
+When you exclude groups from an assignment, exclude only users, or only exclude device groups (not a mixture of groups), Intune doesn't consider any user-to-device relationship. Including user groups while excluding device groups many not create the results you expect. When mixed groups are used, or if there are other conflicts, inclusion takes precedence over exclusion.
 
 For example, you want to assign a device profile to all devices in your organization, except kiosk devices. You include the **All Users** group, but exclude the **All Devices** group.
 
 In this case, all your users and their devices get the policy, even if the user’s device is part of the **All Devices** group. 
 
-Exclusion only evaluates the direct members of the groups, and does not include devices that are associated with a user. However, devices that don't have a user do not get the policy because they have no association to the **All Users** group. 
+Exclusion only looks at the direct members of the groups, and doesn't include devices that are associated with a user. However, devices that don't have a user don't get the policy. This occurs because those devices have no relationship to the **All Users** group. 
 
-If you include **All Devices**, but exclude **All Users**, all the devices receive the policy. The intent in this case is to exclude devices that have an associated user from this policy. However, it does not because the exclusion feature only compares direct group members. 
+If you include **All Devices**, and exclude **All Users**, then all the devices receive the policy. In this scenario, the intent is to exclude devices that have an associated user from this policy. However, it doesn't exclude the devices because the exclusion only compares direct group members. 
 
->[!Tip]
->Exclusions are not currently available for compliance policies or app assignment. 
->To exclude members from an assignment, you can use the Available, and Not applicable assignment intents. For example, you assign an app to **All corporate users** with the **Available** intent, and to **Senior Management Staff** with the **Not applicable** intent. the app is assigned to all users *except* users in the **Senior Management Staff** group. If you assign the app to **All corporate users** with the **Required** intent, the users in the **Senior Management Staff** group are not excluded.
- 
+>[!TIP]
+>Exclusions aren't available for compliance policies or app assignment. To exclude members from an assignment, you can use the **Available**, and **Not applicable** assignments. For example, you assign an app to **All corporate users** with the **Available** intent, and assign the app to **Senior Management Staff** with the **Not applicable** intent. The app is assigned to all users *except* users in the **Senior Management Staff** group. If you assign the app to **All corporate users** with the **Required** intent, the users in the **Senior Management Staff** group are also included.
  	
 ## Next steps
-See [How to monitor device profiles](device-profile-monitor.md) for information to help you monitor device profile assignments.
+See [How to monitor device profiles](device-profile-monitor.md) for guidance on monitoring device profile assignments.

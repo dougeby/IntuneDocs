@@ -2,12 +2,13 @@
 # required metadata
 
 title: Block apps with no modern authentication on Intune
-description:
+titleSuffix: Microsoft Intune
+description: Learn about blocking apps that do not use modern authentication (ADAL).
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
