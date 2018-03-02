@@ -67,7 +67,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade. 
 9. Choose **Create** to create the policy and save your settings.
 
-When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users)."
+When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## Deploy a policy to users
 
