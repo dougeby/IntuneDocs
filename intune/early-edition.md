@@ -56,6 +56,10 @@ Customers will be able to deploy required line-of-business Windows 10 apps to in
 ### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
 In the Azure portal, Intune will alert you to line-of-business apps that are about to expire.
 
+### Enhanced jailbreak detection <!-- 846515 -->
+
+Enhanced jailbreak detection is a new compliance setting that will improve how Intune evaluates jailbroken devices. The setting will cause the device to check-in with Intune more frequently, which will use the device’s location services and will impact battery usage.
+
 ### New Management name column <!-- 1333586 -->
 A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
 - Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
