@@ -60,4 +60,4 @@ Eventually, it's likely that apps that you deployed become outdated and need to 
 
 ## Next steps:
 
-- Learn about [app management in Microsoft Intune](app-management)
+- Learn about [app management in Microsoft Intune](app-management.md)
