@@ -96,3 +96,7 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 | **Require minimum app version (Warning only)** | Choose **Yes** to recommend a minimum app version to use this app. The user will see a notification if the app version on the device does not meet the requirement. This notification can be dismissed.<br><br>As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, "Outlook version policy"). <br><br> This policy setting format supports either major.minor, major.minor.build, major.minor.build.revision.| No | 
 | **Require Minimum Android Patch Version** | Choose **Yes** to require a minimum Android security patch released by Google. The user will be blocked from access if the Android security patch on the device does not meet the requirement.<br><br> This policy setting format supports the date format of YYYY-MM-DD. | No |
 | **Require Minimum Android Patch Version (Warning Only)** | Choose **Yes** to require a minimum Android security patch released by Google. The user will see a notification if the Android security patch on the device does not meet the requirement. This notification can be dismissed.<br><br> This policy setting format supports the date format of YYYY-MM-DD. | No |
+
+> [!NOTE]
+> To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](mam-faq.md#app-experience-on-Android).
+
