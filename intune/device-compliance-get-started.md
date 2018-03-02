@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Intune device compliance policies
-titleSuffix: "Azure portal"
-description: Use this topic to learn about device compliance in Microsoft Intune"
+title: Microsoft Intune device compliance policies
+titleSuffix:
+description: Learn about device compliance in Microsoft Intune
 keywords:
 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 
 ms.topic: article
 ms.prod:
@@ -27,13 +27,12 @@ ms.custom: intune-azure
 
 ---
 
-# Get started with Intune device compliance policies
+# Get started with Microsoft Intune device compliance policies
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## What is device compliance in Intune?
-
-Intune device compliance policies define the rules and settings that a device must comply with in order to be considered compliant by Intune.
+Intune device compliance policies define the rules and settings that a device must comply with to be considered compliant by Intune.
 
 These rules include the following:
 
@@ -51,7 +50,7 @@ These rules include the following:
 
 You can also use device compliance policies to monitor the compliance status in your devices.
 
-### Device compliance requirements
+## Device compliance requirements
 
 Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 

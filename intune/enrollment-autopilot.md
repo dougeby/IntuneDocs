@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Enroll Windows devices using Windows AutoPilot Deployment Program
-description: "Learn how to enroll new Windows 10 devices using Windows AutoPilot Deployment program."
+title: Enroll devices using Windows AutoPilot Deployment Program
+titleSuffix: Microsoft Intune
+description: Learn how to enroll Windows 10 devices using Windows AutoPilot Deployment program.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -16,7 +17,7 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 
 ---
 
-# Enroll Windows devices using Windows AutoPilot Deployment Program
+# Enroll Windows devices by using the Windows AutoPilot Deployment Program
 The Windows AutoPilot Deployment Program simplifies device provisioning. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## Prerequisites

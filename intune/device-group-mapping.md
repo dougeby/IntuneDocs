@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to use device categories in Intune
-titleSuffix: "Azure portal"
-description: Learn how to use device categories that users can choose when they enroll their devices in Intune."
+title: How to categorize devices into groups in Intune
+titleSuffix: "Microsoft Intune"
+description: Learn how to categorize devices into groups for easier management.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Map device groups
+# Categorize devices into groups for easier management
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

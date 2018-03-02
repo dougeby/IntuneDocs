@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: What is app management 
-titlesuffix: "Azure portal"
-description: Use this topic to learn the basics about app management with Microsoft Intune"
+title: What is app management in Microsoft Intune
+titlesuffix:
+description: Learn the basics of app management with Microsoft Intune.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,14 +33,14 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-As an IT admin, you are responsible for making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
+Microsoft Intune allows you, as the IT admin, to mange the mobile apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. As part of this functionality, one of your priorities is to make sure that your end users have access to the apps they need to do their work. This can be a challenge because:
 - There are a wide range of device platforms and app types.
 - You might need to manage apps on both company devices and user's own devices.
 - You must ensure your network and your data remain secure.
 
 Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune.
 
-Intune offers a range of capabilities to help you get the apps you need on the devices you want.
+Intune offers a range of capabilities to help you get the apps you need on the devices you want. The following table provides a summary of app manaagement capabilities. Below the table is a starting point to understand Microsoft Intune in the Azure portal.
 
 ## App management capabilities by platform
 
@@ -106,18 +106,22 @@ For more details, see [Monitor apps](apps-monitor.md).
 ### Setup
 - **iOS VPP tokens** - Apply and view your iOS Volume Purchase Program (VPP) licenses.
 	- [iOS volume-purchased apps](vpp-apps-ios.md)
-- **Windows enterprise certificate** - Apply or view the status of a code-signing certificate used to distribute line-of-business apps to your managed Windows devices. 
-- **Windows Symantec certificate** - Apply or view the status of a Symantec code-signing certificate which is needed to distribute XAP and WP8.x appx files to Windows 10 Mobile devices. 
+- **Windows enterprise certificate** - Apply or view the status of a code-signing certificate used to distribute line-of-business apps to your managed Windows devices.
+- **Windows Symantec certificate** - Apply or view the status of a Symantec code-signing certificate which is needed to distribute XAP and WP8.x appx files to Windows 10 Mobile devices.
 - **Microsoft Store for Business** - Set up integration to the Microsoft Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.
 	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Windows side loading keys** - You can add a Windows side loading key that can be used to install an app directly to devices rather than publishing and downloading the app from the Windows store.
-	- [Side load a Windows app](app-sideload-windows.md) 
+	- [Side load a Windows app](app-sideload-windows.md)
 - **Company Portal branding** - Customize the Company Portal to give it your company branding.
 	- [Company portal configuration](company-portal-app.md)
 - **App categories** - Add, pin, and delete app category names.
 - **Android for Work** - Approve and sync the apps you have approved for your enterprise.
-	- [Android for Work apps](apps-add-android-for-work.md) 
+	- [Android for Work apps](apps-add-android-for-work.md)
 
 ### Help and Support
 - **Help and support** - Troubleshoot, request support, or view Intune status.
 	- [Troubleshoot problems](help-desk-operators.md)
+
+## Next steps
+
+- [How to add an app to Microsoft Intune](apps-add.md)

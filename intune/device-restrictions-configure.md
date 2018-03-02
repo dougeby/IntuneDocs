@@ -1,26 +1,24 @@
 ---
 # required metadata
 
-title: Configure Intune device restriction settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure settings and features on devices you manage."
+title: Configure Microsoft Intune device restriction settings
+titleSuffix:
+description: Learn how to use Microsoft Intune to configure settings and features on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -39,16 +37,16 @@ Device restrictions let you control a wide range of settings and features you ma
 
 For example, you can create a device restriction profile that prevents users of iOS devices from accessing the device camera.
 
-Use the information in this topic to learn the basics about configuring device restriction profiles, and then read further topics for each platform to learn about device specifics.
+Learn device restriction profile basics, and then read further articles for each platform to learn about device specifics.
 
-To create a device profile containing device restriction settings:
+## Create a device profile containing device restriction settings
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
-3. On the **Profiles** blade, choose **Create profile**.
-4. On the **Create profile** blade, enter a **Name** and **Description** for the device restriction profile.
+3. On the **Intune** page, choose **Device configuration**.
+2. On the **Device configuration** page under the **Manage** section, choose **Profiles**.
+3. On the **Profiles** page, choose **Create profile**.
+4. On the **Create profile** page, enter a **Name** and **Description** for the device restriction profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
 	- **iOS**
@@ -67,9 +65,9 @@ To create a device profile containing device restriction settings:
 	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
 	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
 	- [Android for Work settings](device-restrictions-android-for-work.md)
-8. When you're done, go back to the **Create profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create profile** page, and click **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list page.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

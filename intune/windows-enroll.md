@@ -6,7 +6,8 @@ titlesuffix: "Azure portal"
 description: Enable Intune mobile device management (MDM) for Windows devices.
 keywords:
 author: ErikjeMS
-manager: erikje
+ms.author: erikje
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
 ms.prod:

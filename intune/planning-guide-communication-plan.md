@@ -6,7 +6,7 @@ description: This article helps you develop a rollout communication plan for you
 keywords:
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:

@@ -1,13 +1,12 @@
 ---
 # required metadata
 
-title: Get started with groups
-
-titleSuffix: "Azure portal"
+title: Create a group in Microsoft Intune
+titleSuffix: 
 description: Organize users into groups to make it easier to manage the policies and apps that they can access.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
@@ -27,9 +26,9 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started with groups
+# Create a group to manage your users and data access
 
-Groups are used to manage your users, and control your employees' access to your company resources. These resources can be part of your directory or can be external resources, like SaaS apps or SharePoint sites.
+Groups are used to manage your users and control your employees' access to your company resources. These resources can be part of your directory or can be external resources, like SaaS apps or SharePoint sites.
 
 Microsoft Intune uses Azure Active Directory (Azure AD) to manage access to company resources. This access is controlled using roles in the directory. Intune then manages this access for mobile devices, which allows members of that group to access resources.
 

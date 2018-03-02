@@ -4,8 +4,8 @@
 title: App based conditional access policy with Intune
 description: This topic describes how you can configure an app-based conditional access policy with Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
