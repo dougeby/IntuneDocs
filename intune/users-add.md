@@ -85,8 +85,11 @@ After you've added users to your Intune subscription, we recommend that you gran
 1. Sign in to the [Office 365 portal](https://www.office.com/signin) with a global administrator account.
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, choose **Active users** and then choose the user to give admin permissions.
+
 4. In the **Roles** column, choose **Edit**.
-![Screenshot of Admin user](./media/office-assign-roles-open.png)
+
+    ![Screenshot of Admin user](./media/office-assign-roles-open.png)
+
 5. Choose the admin permission to grant from the list of available roles.
 ![Screenshot of  assigning Roles](./media/office-assign-roles.png)
 6. Choose **Save**.
