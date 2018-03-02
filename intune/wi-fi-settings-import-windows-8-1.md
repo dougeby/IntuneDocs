@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# How to import Wi-Fi settings for Windows 8.1 and later devices in Microsoft Intune
+# Import Wi-Fi settings for Windows 8.1 and later devices in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -43,20 +43,20 @@ In Windows, use the **netsh wlan** utility to export an existing Wi-Fi profile t
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, click **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the device restriction profile.
+3. On the **Intune** page, choose **Device configuration**.
+2. On the **Device Configuration** page, choose **Manage** > **Profiles**.
+3. On the profiles page, click **Create Profile**.
+4. On the **Create Profile** page, enter a **Name** and **Description** for the device restriction profile.
 
    > [!WARNING]
    > The name **must** be the same as the name attribute in the Wi-Fi profile xml, otherwise it fails.
 
 5. From the **Platform** drop-down list, choose **Windows 8.1 and later**.
 6. From the **Profile** type drop-down list, choose **Wi-Fi import**.
-7. On the **Wi-Fi Basic** blade, configure the following settings:
+7. On the **Wi-Fi Basic** page, configure the following settings:
 	- **Connection name** Enter the name of the Wi-Fi connection. This name is displayed to end users when they browse available Wi-Fi networks.
 	- **Profile XML** Click the browse button to select the XML file containing the Wi-Fi profile settings that you want to import into Intune.
 	- **File contents** Displays the XML code for the configuration profile you selected.
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create Profile** page, and hit **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list page.
