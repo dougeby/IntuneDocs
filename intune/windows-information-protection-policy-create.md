@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,9 +68,15 @@ Additionally, you need to have the following:
 
 After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Go to the **Intune mobile application management dashboard**, choose **All settings**, > **App policy**.
+1. Sign into the [Azure portal](https://portal.azure.com).
 
-2.  In the **App policy** blade, choose **Add a policy**, then enter the following values:
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+
+3. On the **Intune** blade, choose **Mobile apps**.
+
+1.  In the **Intune mobile application management dashboard**, choose **App protection policies**.
+
+2.  In the **App protection policies** blade, choose **Add a policy**, then enter the following values:
 
     a.  **Name:** Type a name (required) for your new policy.
 
@@ -84,7 +90,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 ## To add recommended apps to your allowed apps list
 
-1.  From the **App policy** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
+1.  From the **App protection policies** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
 
 2.  From the **Allowed apps** blade, choose **Add apps**. The **Add apps** blade opens, showing you all apps that are part of this list.
 
@@ -159,11 +165,11 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
-1.  Choose **Save**.
+1.  Select a setting and then choose **Save**.
 
 ### Use WIP Learning
 
-1. Open the Azure portal. Choose **More services**. Type **Intune** in the text box filter.
+1. Open the [Azure portal](https://portal.azure.com). Choose **All services**. Type **Intune** in the text box filter.
 
 3. Choose **Intune** > **Mobile Apps**.
 
