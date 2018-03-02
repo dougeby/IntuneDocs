@@ -2,8 +2,8 @@
 # required metadata
 
 title: Android apps with app protection policies
-titlesuffix: "Azure portal"
-description: This topic describes what to expect when your Android app is managed by app protection policies."
+titlesuffix: Microsoft Intune
+description: Learn what to expect from an Android app that has protection policies."
 keywords:
 author: erikre
 ms.author: erikre
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic describes the user experience for apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
+This topic describes the user experience for Androids apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
 ##  Accessing apps
 
 The Company Portal app is required for all apps associated with app protection policies on Android devices.

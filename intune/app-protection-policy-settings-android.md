@@ -2,8 +2,8 @@
 # required metadata
 
 title: Android app protection policy settings
-titlesuffix: "Azure portal"
-description: "This topic describes the app protection policy settings for Android devices."
+titlesuffix: Microsoft Intune
+description: This topic describes the app protection policy settings for Android devices.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 # Android app protection policy settings
-The policy settings that are described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
+This topic describes the app protection policy settings for Android devices. The policy settings that are described can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
 
 ##  Data relocation settings
