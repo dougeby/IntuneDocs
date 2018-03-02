@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Assign Intune licenses
-description: Assign licenses to users for your Intune subscription
+title: Assign Microsoft Intune licenses
+description: Assign licenses to users so they can enroll in Intune
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Assign Intune licenses to your user accounts
+# Assign licenses to users so they can enroll devices in Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -42,7 +42,7 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 
 3.  Toggle **Intune** or **Enterprise Mobility + Security** to **On**, and choose **Save**.
 
-  ![Image of Office 365 portal assign Product license.](./media/office-assign-license.png)
+  ![Screenshot of the Office 365 portal Product licenses section.](./media/office-assign-license.png)
 
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
@@ -52,11 +52,11 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 ## Use School Data Sync to assign licenses to users in Intune for Education
 If you are an educational organization, you can use School Data Sync (SDS) to assign Intune for Education licenses to synced users. Just choose the Intune for Education checkbox when you're setting up your SDS profile.  
 
-![Image of SDS profile setting](./media/i4e-sds-profile-setup-setting.png)
+![Screenshot of SDS profile setting](./media/i4e-sds-profile-setup-setting.png)
 
 When you assign an Intune for Education license, make sure that Intune A Direct license is also assigned.
 
-![Image of product license set up](./media/i4e-set-licenses.png)
+![Screenshot of product license set up](./media/i4e-set-licenses.png)
 
 See this [overview of School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) to learn more about SDS.
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Intune for iOS device single sign-on
-titlesuffix: "Azure portal"
-description: Learn how to configure Intune for iOS device single sign-on."
+title: Configure Microsoft Intune for iOS device single sign-on
+titlesuffix:
+description: Learn how to configure Microsoft Intune for iOS device single sign-on.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Intune for iOS device single sign-on
+# Configure Microsoft Intune for iOS device single sign-on
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,16 +41,16 @@ To take advantage of iOS device Single Sign-on, you must have the following cond
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade, choose **Profiles**.
-3. On the profiles blade, choose **Create Profile**, provide a name and description, and configure the following settings:
+3. On the **Intune** page, choose **Device configuration**.
+2. On the **Device configuration** page, choose **Profiles**.
+3. On the profiles page, choose **Create Profile**, provide a name and description, and configure the following settings:
    - **Platform**: Choose **iOS**. 
    - **Profile type**: Choose **Device features**.
-4. On the **Device features** blade, choose **Single Sign On**.
+4. On the **Device features** page, choose **Single Sign On**.
 
-   ![Single Sign On blade](./media/sso-blade.png)
+   ![Single Sign On page](./media/sso-blade.png)
 
-2. Use the following summary table to help you fill in the fields on the **Single Sign On** blade. For details, see the sections after the table.
+2. Use the following summary table to help you fill in the fields on the **Single Sign On** page. For details, see the sections after the table.
    
    |Field  |Notes|
    |---------|---------|
