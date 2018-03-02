@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Review client app protection logs
 
-earn about the settings you can review in the app protection logs. Access logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
+Learn about the settings you can review in the app protection logs. Access logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
 
 ## App protection policy settings
 
