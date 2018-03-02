@@ -1,6 +1,6 @@
 ---
 title: Bulk enrollment for Windows 10
-titlesuffix: "Azure portal"
+titlesuffix: Microsoft Intune
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
 author: Erikje
