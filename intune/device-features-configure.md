@@ -58,7 +58,9 @@ Use the information in this article to learn the basics about configuring device
 8. When you're done, select **OK**, go back to the **Create profile** page, and choose **Create**.
 
 The profile is created and appears on the profiles list page.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+## Next steps
+
+If you want to assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
 
