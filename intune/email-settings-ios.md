@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Email profile settings for devices running iOS in Microsoft Intune
+# Email profile settings in Microsoft Intune for devices running iOS 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
