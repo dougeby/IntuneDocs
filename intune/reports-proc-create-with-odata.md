@@ -87,7 +87,7 @@ You can import multiple tables to analyze not just the data in a single table bu
 
 The relationship is displayed in a From column to a To column. In this example, the data field **ownerTypeKey** in the **devices** table links to the data field **ownerTypeKey** in the **ownerTypes** table. You use the relationship to look up plain name of the device type code in the **devices** table.
 
-## Create a tree map visualization
+## Create a treemap visualization
 
 A treemap chart shows hierarchical data as boxes with in boxes. Each branch of the hierarchy is a box contains smaller boxes showing subbranches. You can use Power BI desktop to create a treemap of your Intune data.
 
