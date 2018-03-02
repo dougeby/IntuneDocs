@@ -3,7 +3,7 @@
 
 title: Android apps with app protection policies
 titlesuffix: Microsoft Intune
-description: Learn what to expect from an Android app that has protection policies."
+description: Learn what to expect from an Android app that has protection policies.
 keywords:
 author: erikre
 ms.author: erikre
@@ -31,40 +31,40 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic describes the user experience for Androids apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
+Learn what expect from Androids apps with app protection policies. App protection polices are applied only when apps are used in the work context. For example, when you access an app with a work account, or when you access files stored in your company OneDrive location.
 ##  Accessing apps
 
-The Company Portal app is required for all apps associated with app protection policies on Android devices.
+The Company Portal app is required for all apps on Android devices that have app protection policies.
 
-For devices not enrolled in Intune, the Company Portal app must be installed on the device. However, user does not have to launch  or sign into the Company Portal app before they can use apps managed by app protection policies.
-The Company Portal app is a way for Intune to share data in a secure location, hence this is a requirement even if the device is not enrolled in Intune.
+Install the Company Portal on all devices that aren't enrolled in Intune. Users aren't required to sign in to the Company Portal app to use apps that have app protection policies.
+The Company Portal app lets you share data in a secure location. So it's a requirement even for unenrolled devices.
 
 
 ##  Using apps with multi-identity support
 
-App protection polices are only applied in the work context when using the app, so you may see different app behaviors depending on the context: work or personal.
+App protection policies only take effect when a user tries to access work-related data.  You may see different behaviors if the user accesses the app for personal use.
 
-For apps that support multi-identity, Intune only applies the app protection policies when the end-user is using the app in the work context.  For example, the end-user will get a PIN prompt when accessing work data.  For the **Outlook app**, the end-user is prompted for a PIN on launching the app. For the **OneDrive app**, this happens when the end-user types in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, this happens when the end-user accesses documents stored in the company OneDrive for Business location.
+Some apps support multi-identity. In this case, Intune only applies app protection policies when a user accesses work data.  For example, a user may get a PIN prompt.  In the **Outlook app**, a prompt occurs when a user launches the app. In the **OneDrive app**, a prompt occurs when a user types in the work account.  In Microsoft **Word**, **PowerPoint**, and **Excel**, a prompt occurs when a user accesses company OneDrive documents.
 ##  Managing user accounts on the device
 
-Intune only supports deploying app protection policies to only one user account per device.
+Intune supports deploying app protection policies to one user account per device.
 
 * Depending on the app that you are using, the second user may or may not be blocked on the device. However, in all cases, only the first user who gets the app protection policies is affected by the policy.
 
-  * **Microsoft Word**, **Excel**, and **PowerPoint** don't block a second user account, but the second user account is not affected by the app protection policies.
+  * **Microsoft Word**, **Excel**, and **PowerPoint** won't block access to an additional user account. However, the user account will not be affected by the app protection policies.
 
-  * For **OneDrive and Outlook apps**, you can only use one work account.  Adding multiple work accounts are blocked on these apps.  You can however, remove a user and add a different user on the device.
-
-
-* If a device has existing multiple user accounts before the app protection policies are deployed, the account that the app protection policies is deployed to first is managed by Intune app protection policies.
+  * For **OneDrive and Outlook apps**, you can only use one work account.  Adding multiple work accounts are blocked on these apps.  However, you can remove a user from a device, and then add a different user to the device.
 
 
-Read the example scenario below to get a deeper understanding of how multiple user accounts are treated.
+* Prior to app protection policy deployment, a device may have multiple existing user accounts. In this case, the first account that the app protection policies are deployed to is managed by Intune app protection policies.
 
-User A works for two companies - **Company X**, and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account associated with **Company X** will get the app protection policy, but not the account associated with Company Y. If you want the user account associated with Company Y to be managed by the app protection policies, you must remove the user account associated with Company X.
+
+Read the following example scenario to learn how Intune handles multiple user accounts.
+
+User A works for two companies: **Company X**, and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account associated with **Company X** will get the app protection policy, but not the account associated with Company Y. To have the Company Y user account managed by the app protection policies, User A must remove the Company X user account.
 ### Adding a second account
 ####  Android
-If you are using an Android device, you may see a blocking message with instructions to remove the existing account and add a new one.  To remove the existing account, go to **Settings  &gt;General &gt; Application Manager &gt;Company Portal and select "Clear Data"**.
+You may receive a prompt to remove the existing account and add a new one.  To remove the existing account, go to **Settings  &gt;General &gt; Application Manager &gt;Company Portal. Then select "Clear Data."**
 
 ![Screenshot of the error message and instructions to remove the account](./media/android-switch-user.png)
 
@@ -83,7 +83,7 @@ The following filetypes are supported:
 ------------
 |**pfile**|**text**|
 |----|----|
-|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile is a generic “wrapper” format for protected files. It encapsulates the encrypted content and the Azure Information Protection licenses. It can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
 ## Next steps
 [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
