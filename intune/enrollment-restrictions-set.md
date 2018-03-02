@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Intune
-titlesuffix: "Azure portal"
-description: Restrict enrollment by platform, and set a device enrollment limit in Intune.
+title: Set enrollment restrictions in Microsoft Intune
+titlesuffix:
+description: Restrict enrollment by platform and set a device enrollment limit in Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,6 +90,7 @@ You can change the settings for a device type restriction by following these ste
     ![Device restrictions workspace with the default device platform configurations showing personally owned settings configured](media/device-restrictions-platform-configurations.png)
 9. Select **Save**.
 
+
 >[!NOTE]
 >- If you block personally owned Android devices from enrollment, personally owned Android for Work devices can still enroll.
 >- By default, your Android for Work devices settings are the same as your settings for your Android devices. After you change your Android for Work settings, that's no longer the case.
@@ -106,6 +107,7 @@ You can change the settings for a device limit restriction by following these st
 5. Choose **Device Limit**, and then in the drop-down list, select the maximum number of devices a user can enroll.
     ![Device limit restrictions blade with the device limit restrictions](./media/device-restrictions-limit.png)
 6. Select **Save**.
+
 
 Users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 

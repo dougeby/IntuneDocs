@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,7 +66,7 @@ You can use the **Troubleshoot** blade to review user information.
 | 1.   | Account status  | Shows the status of the current Intune tenant as **Active** or **Inactive**.       |
 | 2.   | User selection  | The name of the currently selected user. Click **Change user** to choose a new user.       |
 | 3.   | User status  | Displays the status of the user's Intune license, number of devices, each device compliance, number of apps, and app compliance.       |
-| 4.   | User information  | Use the list to select the details to review in the blade. <br>You can select: <ul><li>Mobile apps<li>App protection policies<li>Compliance policies<li> Configuration policies</ul>      |
+| 4.   | User information  | Use the list to select the details to review in the blade. <br>You can select: <ul><li>Mobile apps<li>App protection policies<li>Compliance policies<li> Configuration policies<li> Enrollment restrictions</ul>      |
 | 5.   | Group membership  | Yadda       |
 
 ## Mobile apps reference

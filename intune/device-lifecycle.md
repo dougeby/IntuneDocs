@@ -1,36 +1,34 @@
 ---
 # required metadata
 
-title: Overview of the MDM lifecycle 
-description: Learn how Intune helps you manage devices through their lifecycle—from enrollment, through configuration, to eventual retirement.
+title: Overview of the Microsoft Intune MDM lifecycle 
+description: Learn how Intune helps you manage devices through their lifecycle - from enrollment, through configuration, to eventual retirement.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
 ---
 
-# Overview of the mobile device management (MDM) lifecycle
+# Overview of the Microsoft Intune mobile device management (MDM) lifecycle
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-All devices that you manage have what we call a *lifecycle*. Intune can help you manage this lifecycle—from enrollment, through configuration and protection, to retiring the device when it's no longer required:
+All devices that you manage have a *lifecycle*. Intune can help you manage this lifecycle: from enrollment, through configuration and protection, to retiring the device when it's no longer required.
 
 ![The device lifecycle](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -45,7 +43,7 @@ Getting your devices enrolled is just the first step. To take advantage of all t
 - [**Windows PC management policies (with the Intune client software)**](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client). While enrolling Windows PCs with Intune gives you the most device management capabilities, Intune continues to support managing Windows PCs with the Intune client software. If you need information about some of the tasks that you can perform with PCs, start here.
 
 ## Protect
-In the modern IT world, protecting devices from unauthorized access is one of the most important tasks that you'll perform. In addition to the items in the **Configure** step of the device lifecycle, Intune provides these capabilities that help protect devices you manage from unauthorized access or malicious attacks:
+In the modern IT world, protecting devices from unauthorized access is one of the most important tasks that you perform. In addition to the items in the **Configure** step of the device lifecycle, Intune provides these capabilities that help protect devices you manage from unauthorized access or malicious attacks:
 - [**Multi-factor authentication**](/intune-classic/deploy-use/protect-your-devices-with-microsoft-intune). Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multi-factor authentication that requires a second level of authentication, such as a phone call or text message, before users can gain access.
 - [**Windows Hello for Business settings**](windows-hello.md) ([Classic portal](/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)). Windows Hello for Business is an alternative sign-in method that lets users use a *gesture*—such as a fingerprint or Windows Hello—to sign in without needing a password.
 - [**Policies to protect Windows PCs (with the Intune client software)**](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune). When you manage Windows PCs by using the Intune client software, policies are available that let you control settings for Endpoint Protection, software updates, and Windows Firewall on PCs that you manage.

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Assign apps to Android for Work devices 
-titlesuffix: "Azure portal"
-description: Use this topic to synchronize, then assign apps to Android for Work devices from the Google Play for Work Store."
+titlesuffix: Microsoft Intune
+description: Understand how to synchronize and assign apps to Android for Work devices from the Google Play for Work Store."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,8 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You assign apps to Android for Work devices in a different way than you assign them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log on to the store, browse for the apps you want, and approve them.
-The app then appears in the **Licensed apps** node of the Azure portal. From here, you can manage assignment of the app in the same way you would assign any other app.
+Android for Work is a program for Android devices. All apps you install on Android for Work devices come from the Google Play for Work store. You assign apps to Android for Work devices in a different way than you assign them to standard Android devices. You log on to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal. From here, you can manage assignment of the app in the same way you would assign any other app.
 
 Additionally, if you have created your own line of business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.

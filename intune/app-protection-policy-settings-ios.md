@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,8 +38,8 @@ There are two categories of policy settings: data relocation settings and access
 
 | Setting | How to use | Default value |
 |------|------|------|
-| **Prevent iTunes and iCloud backups** | Choose **Yes** to disable backup of all managed files to iTunes and iCloud. Choose **No** to allow this app to back up managed files to iTunes and iCloud.| Yes |
-| **Allow app to transfer data to other apps** | Specify what apps can receive data from this app: <ul><li> **Policy managed apps**: Allow transfer only to other policy-managed apps.</li> <li>**All apps**: Allow transfer to any app. </li> <li>**None**: Do not allow data transfer to any app, including other policy-managed apps.</li></ul> Additionally, if you set this option to **Policy managed apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked. <br><br> There are some exempt apps and services to which Intune may allow data transfer. See [data transfer exemptions](#data-transfer-exemptions) for a full list of apps and services. | All apps |
+| **Prevent iTunes and iCloud backups** | Choose **Yes** to prevent this app from backing up work or school data to iTunes and iCloud. Choose **No** to allow this app to back up of work or school data to iTunes and iCloud.| Yes |
+| **Allow app to transfer data to other apps** | Specify what apps can receive data from this app: <ul><li> **Policy managed apps**: Allow transfer only to other policy-managed apps.</li> <li>**All apps**: Allow transfer to any app. </li> <li>**None**: Do not allow data transfer to any app, including other policy-managed apps.</li></ul> Additionally, if you set this option to **Policy managed apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked. <br><br> There are some exempt apps and services to which Intune may allow data transfer by default. In addition, you can create your own exemptions if you need to allow data to be transferred to an app that does not support Intune APP. See [data transfer exemptions](#data-transfer-exemptions) for more information. | All apps |
 | **Allow app to receive data from other apps** | Specify what apps can transfer data to this app: <ul><li>**Policy managed apps**: Allow transfer only from other policy-managed apps.</li><li>**All apps**: Allow data transfer from any app.</li><li>**None**: Do not allow data transfer from any app, including other policy-managed apps.</li></ul> There are some exempt apps and services from which Intune may allow data transfer. See [data transfer exemptions](#data-transfer-exemptions) for a full list of apps and services. Multi-identity MAM enabled applications on non-enrolled iOS devices ignore this policy and allow all incoming data. | All apps |
 | **Prevent "Save As"** | Choose **Yes** to disable the use of the Save As option in this app. Choose **No** if you want to allow the use of Save As. | No |
 | **Restrict cut, copy and paste with other apps** | Specify when cut, copy, and paste actions can be used with this app. Choose from: <ul><li>**Blocked**:  Do not allow cut, copy, and paste actions between this app and any other app.</li><li>**Policy managed apps**: Allow cut, copy, and paste actions between this app and other policy-managed apps.</li><li>**Policy managed with paste in**: Allow cut or copy between this app and other policy-managed apps. Allow data from any app to be pasted into this app.</li><li>**Any app**: No restrictions for cut, copy, and paste to and from this app. | Any app |
@@ -59,13 +59,12 @@ There are some exempt apps and platform services that Intune app protection poli
 | App/service name(s) | Description |
 | ---- | --- |
 |<code>tel; telprompt</code> | Native phone app |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Device settings |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
-| <code>calshow</code> | Native Calendar |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Device settings |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
+|<code>calshow</code> | Native Calendar |
 
-
-
+For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md). 
 
 ## Access settings
 

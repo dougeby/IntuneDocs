@@ -2,13 +2,13 @@
 # required metadata
 
 title: Introduction to Intune in the Azure portal
-titlesuffix: "Azure portal"
-description: Get the basics about Intune in the Azure portal, and how it can help you manage your devices."
+titlesuffix: 
+description: Microsoft Intune is available in the Azure portal. Get the basics about Intune in the Azure portal.
 keywords:
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
-ms.date: 02/14/2018
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
