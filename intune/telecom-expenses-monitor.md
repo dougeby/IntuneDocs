@@ -1,7 +1,7 @@
 ---
 title: Set up a telecom expense management service
-titleSuffix: "Azure portal"
-description: Configure the Saaswedo telecom expense management service to integrate with Intune."
+titleSuffix: Microsoft Intune
+description: Integrate Intune with the Saaswedo telecom expense management service.
 keywords: Saaswedo
 author: ErikjeMS  
 ms.author: erikje
@@ -76,7 +76,7 @@ Before you start, make sure that you already have an Intune and a Datalert telec
 
     The following screenshot shows the green check marks that you can expect to see once the connection is successful.
 
-  ![Datalert page showing connection successful](./media/tem-mdm-configuration-mdm-server-page.png)
+  ![Datalert page showing successful connection](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### Step 2: Check that the telecom expense management feature is Active in Intune
 
@@ -92,7 +92,7 @@ After you complete Step 1 above, your connection should be automatically enabled
 
    Look for the **Active** connection status at the top of the page.
 
-  ![Azure portal showing datalert connection status Active](./media/tem-azure-portal-enable-service.png)
+  ![Intune page showing datalert connection status Active](./media/tem-azure-portal-enable-service.png)
 
 ### Step 3: Deploy the Datalert app to corporate enrolled devices
 

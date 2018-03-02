@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Supported devices - Microsoft Intune
+title: Operating systems and browsers supported by Microsoft Intune
+titleSuffix: 
 description: Lists supported device platforms and browsers for Intune device management
 keywords:
 author: ErikjeMS  
@@ -31,14 +32,9 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions).
+Before setting up Microsoft Intune, review the supported operating systems and browsers.
 
-Before you start setting up Microsoft Intune, review the following requirements:
-
-- [Supported operating systems](#intune-supported-operating-systems)
-- [List of supported web browsers use Intune](#intune-supported-web-browsers)
-
-You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
+For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions). You should also familiarize yourself with [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)) .
 
 ## Intune supported operating systems
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set terms and conditions in Microsoft Intune
-titlesuffix: "Azure portal"
-description: "Set terms and conditions that users see in the Company Portal for Intune. "
+titlesuffix: 
+description: Set terms and conditions that users see in the Company Portal for Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Ensure users accept company terms for access
+# Manage your company's terms and conditions for user access
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
