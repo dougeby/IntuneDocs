@@ -44,6 +44,13 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 
+## User-owned iOS devices (BYOD)
+
+You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the macOS Company Portal app from the App Store, and follow enrollment instructions in the app.
+
+## Company-owned iOS devices
+For organizations that purchase devices for their users, Intune supports enrolling company-owned macOS devices with a [device enrollment manager](device-enrollment-manager-enroll.md) account.
+
 ## Set up macOS enrollment
 
 By default, Intune already allows enrollment of macOS devices.

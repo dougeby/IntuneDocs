@@ -2,11 +2,11 @@
 # required metadata
 
 title: Create a Wi-Fi profile with a pre-shared key
-titleSuffix: "Azure portal"
-description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
+titleSuffix: Microsoft Intune
+description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key.
 keywords:
-author: arob98
-ms.author: angrobe
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article

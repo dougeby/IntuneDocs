@@ -2,8 +2,8 @@
 # required metadata
 
 title: Get an Apple MDM Push certificate
-titlesuffix: "Azure portal"
-description: Learn the steps for getting an Apple MDM Push certificate to manage iOS devices with Intune."
+titlesuffix: "Microsoft Intune"
+description: Learn the steps for getting an Apple MDM Push certificate to manage iOS devices with Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -39,7 +39,7 @@ In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > 
 **Step 1. Download the Intune certificate signing request required to create an Apple MDM push certificate.**<br>
 Select **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-  ![Screenshot showing the Configure MDM Push Certificate screen with MDM Push not set up.](./media/create-mdm-push-certificate.png)
+  ![The Configure MDM Push Certificate screen with MDM Push not set up.](./media/create-mdm-push-certificate.png)
 
 **Step 2. Create an Apple MDM push certificate.**<br>
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID, and then click **Create a Certificate**. Select **Choose File** and browse to the certificate signing request file, and then choose **Upload**. On the Confirmation page, choose **Download** to the download the certificate (.pem)  file, and save the file locally.

@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Use the Intune Data Warehouse | Microsoft Docs 
-description: Use the Intune Data Warehouse to build reports providing insight into your enterprise mobile environment. 
+title: Use the Intune Data Warehouse 
+titlesuffix: Microsoft Intune
+description: Use the Intune Data Warehouse to build reports that provide insight into your enterprise mobile environment. 
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
