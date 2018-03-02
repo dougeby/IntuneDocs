@@ -88,7 +88,7 @@ After you've added users to your Intune subscription, we recommend that you gran
 4. In the **Roles** column, choose **Edit**.
 ![Screenshot of Admin user](./media/office-assign-roles-open.png)
 5. Choose the admin permission to grant from the list of available roles.
-![Screenshot of  assigning Roles.](./media/office-assign-roles.png)
+![Screenshot of  assigning Roles](./media/office-assign-roles.png)
 6. Choose **Save**.
 
 ### Give admin permissions in the Azure portal
