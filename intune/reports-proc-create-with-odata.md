@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Create a report from the OData feed with Power BI | Microsoft Docs
+title: Create a report from the OData feed with Power BI
+titlesuffix: Microsoft Intune
 description: Create a treemap visualization using Power BI Desktop with an interactive filter from the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +30,7 @@ In this tutorial, you're going to create a treemap visualization using Power BI 
 
 ### Overview of creating the chart
 
-To create this chart, you will:
+To create this chart, you must:
 1. Install Power BI Desktop if you don't already have it.
 2. Connect to the Intune Data Warehouse data model and retrieve current data for the model.
 3. Create or manage the data model relationships.
@@ -82,10 +83,11 @@ You can import multiple tables to analyze not just the data in a single table bu
 ![Manage relationships](media/reports-create-03-managerelationships.png)
 
 1. Select **Manage Relationships**.
-2. Select **Autodetect...** if PowerBI has not already detected the relationships.  
+2. Select **Autodetect...** if PowerBI has not already detected the relationships.
+
 The relationship is displayed in a From column to a To column. In this example, the data field **ownerTypeKey** in the **devices** table links to the data field **ownerTypeKey** in the **ownerTypes** table. You use the relationship to look up plain name of the device type code in the **devices** table.
 
-## Create a treemap visualization
+## Create a tree map visualization
 
 A treemap chart shows hierarchical data as boxes with in boxes. Each branch of the hierarchy is a box contains smaller boxes showing subbranches. You can use Power BI desktop to create a treemap of your Intune data.
 
@@ -95,8 +97,9 @@ A treemap chart shows hierarchical data as boxes with in boxes. Each branch of t
 2. In the data model, find the **devices** table.
 3. Expand the **devices table** and select the **manufacturer** data field in the **Fields** panel.
 4. Drag the **manufacturer** data field to the Treemap chart on the report canvas.
-5. Drag the **deviceKey** data field from the **devices** table to the **Values** section under the **Visualizations** pane and drop on the box labeled **Drag data field here**.  
-You now have a visual that shows us the distribution of manufacturers of devices within your organization.
+5. Drag the **deviceKey** data field from the **devices** table to the **Values** section under the **Visualizations** pane and drop on the box labeled **Drag data field here**.
+
+You now have a visual that shows you the distribution of manufacturers of devices within your organization.
 
 ![Treemap with data](media/reports-create-06-treemapwdata.png)
 
@@ -106,11 +109,11 @@ You can add a filter to your treemap so that you can answer additional questions
 
 1. Select the report canvas, and then select the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations** to add a filter.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
-   Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This is an example of how the data model supports relationships between tables.
+   Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This result provides an example of how the data model supports relationships between tables.
 
 ![Treemap with filter](media/reports-create-08_ownertype.png)
 
-You now have an interactive filter that can be used to toggle between company owned and personally owned devices to see how the distribution changes.
+You now have an interactive filter that can be used to toggle between company owned and personally owned devices. Use this filter to see how the distribution changes.
 
 1. Select **Company** to see that the company owned device distribution.
 2. Select **Personal** to see the personally owned devices.

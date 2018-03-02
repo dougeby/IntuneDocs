@@ -1,12 +1,13 @@
 ---
 # required metadata
 title: Get data from the Data Warehouse API with a REST client 
+titlesuffix: Microsoft Intune
 description: Retrieve data from the Intune Data Warehouse using a RESTful API.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,7 +67,7 @@ You now have an app defined in Azure. Grant access from the native app to the Mi
 7.  Select **Select**.
 8.  Check the **Delegated Permissions** box to add **Get data warehouse information from Microsoft Intune**.
 
-    ![Enable access](media\reports-get_rest_data_client_access.png)
+    ![Enable access - Microsot Intune API](media\reports-get_rest_data_client_access.png)
 
 9.  Select **Select**.
 10.  Select **Done**.
