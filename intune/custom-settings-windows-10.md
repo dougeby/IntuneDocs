@@ -9,7 +9,7 @@ author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
-ms.article: article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
