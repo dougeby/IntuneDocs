@@ -43,7 +43,7 @@ Remote lock is supported for the following platforms:
 |Android|Yes|
 |iOS|Yes|
 |macOS|Yes|
-|Windows 10|Yes|
+|Windows 10 desktop|No|
 |Windows 10 Mobile|Yes|
 |Windows Phone|Yes, for Windows Phone 8.1 and later|
 
