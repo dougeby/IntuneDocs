@@ -1,26 +1,24 @@
 ---
 # required metadata
 
-title: Intune shared device configuration settings for iOS
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to display information on the iOS device lock screen."
+title: Microsoft Intune shared device configuration settings for iOS
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to display information on the iOS device lock screen.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -30,6 +28,8 @@ ms.custom: intune-azure
 # Shared device configuration settings to display messages on the iOS device lock screen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+This article shows you the Microsoft Intune settings you can use to display information on the iOS device lock screen.
 
 Shared device configuration settings let you specify optional text displayed on the login window and lock screen. For example, you can enter an "If Lost, Return to" message and Asset Tag Information. 
 
