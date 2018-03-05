@@ -40,18 +40,19 @@ To take advantage of iOS device Single Sign-on, you must have the following cond
 
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** page, choose **Device configuration**.
-2. On the **Device configuration** page, choose **Profiles**.
-3. On the profiles page, choose **Create Profile**, provide a name and description, and configure the following settings:
-   - **Platform**: Choose **iOS**. 
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5. On the profiles pane, choose **Create profile**.
+6. Provide a name and description, and configure the following settings:
+   - **Platform**: Choose **iOS**.
    - **Profile type**: Choose **Device features**.
-4. On the **Device features** page, choose **Single Sign On**.
+7. On the **Device features** pane, choose **Single Sign On**.
 
-   ![Single Sign On page](./media/sso-blade.png)
+   ![Single Sign On pane](./media/sso-blade.png)
 
-2. Use the following summary table to help you fill in the fields on the **Single Sign On** page. For details, see the sections after the table.
-   
+8. Use the following summary table to help you fill in the fields on the **Single Sign On** pane. For details, see the sections after the table.
+
    |Field  |Notes|
    |---------|---------|
    |**Username attribute from AAD**|The attribute that Intune looks at for each user in AAD and populates the respective field (such as UPN) before generating the XML payload that gets installed on the device.|
@@ -101,7 +102,7 @@ The **App Name** field is used to add a user-friendly name to help you identify 
 
 ### Credential renewal certificate
 
-If you authenticate your end users with certificates (not passwords), then use this field to select the SCEP or PFX certificate that is deployed to the user as the authentication certificate. Typically, this is the same certificate that is deployed to the user for other profiles such as VPN, WiFi, or Email.
+If you authenticate your end users with certificates (not passwords), then use this field to select the SCEP or PFX certificate that is deployed to the user as the authentication certificate. Typically, this is the same certificate that is deployed to the user for other profiles such as VPN, Wi-Fi, or email.
 
 ## Next steps
 

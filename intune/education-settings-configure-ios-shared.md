@@ -8,7 +8,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,12 +69,12 @@ You can import information into SDS by using one of the following methods:
 
 ### Configure general settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-4. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-5. On the profiles blade, choose **Create Profile**.
-6. On the **Create Profile** blade, enter a **Name** and **Description** for the iOS education profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5. On the profiles pane, choose **Create profile**.
+6. On the **Create profile** pane, enter a **Name** and **Description** for the iOS education profile.
 7. From the **Platform** drop-down list, choose **iOS**.
 8. From the **Profile type** drop-down list, choose **Education**.
 9. Choose **Settings** > **Configure**.
@@ -90,7 +90,7 @@ Certificates you create must support server authentication in addition to user a
 
 ### Configure teacher certificates
 
-On the **Education** blade, choose **Teacher certificates**.
+On the **Education** pane, choose **Teacher certificates**.
 
 #### Configure teacher root certificate
 
@@ -103,7 +103,7 @@ Under **Teacher PKCS#12 certificate**, configure the following values:
 - **Subject name format** - Intune automatically prefixes the certificate common name with **leader**, for the teacher certificate, and **member**, for the student certificate.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported.
 - **Certification authority name** - Enter the name of your certification authority.
-- **Certificate template name **- Enter the name of a certificate template that has been added to an issuing CA.
+- **Certificate template name**- Enter the name of a certificate template that has been added to an issuing CA.
 - **Renewal threshold (%)** - Specify the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
 - **Certificate validity period** - Specify the amount of remaining time before the certificate expires. You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA certificate.
 
@@ -111,8 +111,8 @@ When you have finished configuring teacher certificates, choose **OK**.
 
 ### Configure student certificates
 
-1. On the **Education blade**, choose **Student certificates**.
-2. On the **Student certificates** blade, from the **Student device certificates type** list, choose **Shared iPad**.
+1. On the **Education pane**, choose **Student certificates**.
+2. On the **Student certificates** pane, from the **Student device certificates type** list, choose **Shared iPad**.
 
 #### Configure student root certificate
 
@@ -133,78 +133,78 @@ When you are finished configuring certificates, choose **OK**.
 
 ### Complete Certificate Setup
 
-1. On the **Education** blade, choose **OK**.
-2. On the **Create Profile** blade, choose **Create**.
+1. On the **Education** pane, choose **OK**.
+2. On the **Create profile** pane, choose **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 ## Step 3 - Create a device category
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Device enrollment**.
-4. On the **Enrollment - Overview** blade, choose **Device Categories**.
-5. On the **Enrollment - Device Categories** blade, choose **Create**.
-6. On the **Create device category** blade, enter a **Name** and **Description** for the category.
-7. On the **Create device category** blade, choose **Create**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device enrollment**.
+4. On the **Device enrollment - Overview** pane, choose **Device categories**.
+5. On the **Device enrollment - Device Categories** pane, choose **Create**.
+6. On the **Create device category** pane, enter a **Name** and **Description** for the category.
+7. On the **Create device category** pane, choose **Create**.
 
-The device category is created in the **Enrollment – Device Categories** blade.
+The device category is created in the **Enrollment – Device Categories** pane.
 
 ## Step 4 – Create a dynamic group
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Groups**.
-4. On the **Users and Groups – All Groups** blade, choose **New Group**.
-5. On the **Group** blade, enter a **Name** and **Description** for the group.
-6. From the **Membership Type** drop-down list, choose **Dynamic Device**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Groups**.
+4. On the **Users and Groups – All Groups** pane, choose **New group**.
+5. On the **Group** pane, choose a **Group type** and then enter a **Name** and **Description** for the group.
+6. From the **Membership type** drop-down list, choose **Dynamic Device**.
 7. Choose **Dynamic device members** to create membership rules.
-8. On the **Dynamic membership rules** blade:
+8. On the **Dynamic membership rules** pane:
 1. Select **deviceCategory** from the **Add devices where** drop-down list.
-2. Choose **Equals**
-3. Enter the device category you created in the blank text box
-9. On the **Dynamic membership rules** blade, choose **Add query**.
-10. On the **Group** blade, choose **Create**.
+2. Choose **Equals**.
+3. Enter the device category you created in the blank text box.
+9. On the **Dynamic membership rules** pane, choose **Add query**.
+10. On the **Group** pane, choose **Create**.
 
-The dynamic group is created in the **Users and Groups – All Groups** blade.
+The dynamic group is created in the **Users and Groups – All Groups** pane.
 
 ## Step 5 – Assign a device to a category (Carts)
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. On the **Devices – All devices** blade, choose a device.
-6. On the device blade, choose **Properties**.
-7. On the device’s properties blade, enter the device category in the **Device category** text box.
-8. On the device blade, choose **Save**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Devices**.
+4. On the **Devices** pane, choose **All devices**.
+5. On the **Devices – All devices** pane, choose a device.
+6. On the device pane, choose **Properties**.
+7. On the device’s properties pane, enter the device category in the **Device category** text box.
+8. On the device pane, choose **Save**.
 
 The device is now associated to the device category. Repeat this process for all the devices you want to associate to the device category you created.
 
 ## Step 6 – Create classroom profiles
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-4. On the **Device Configuration** blade, choose **Manage** > **Cart Profiles**.
-5. On the profiles blade, choose **Create Profile**.
-6. On the **Create Association** blade, enter a **Name** and **Description**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane, choose **Manage** > **Cart Profiles**.
+5. On the profiles pane, choose **Create Profile**.
+6. On the **Create Association** pane, enter a **Name** and **Description**.
 7. Choose **Select Classes** > **Configure** to associate groups to the Cart Profile.
 8. Choose the classes to include to the Cart Profile then choose **Select**. 
 9. Choose **Select Carts** > **Configure** to associate groups to the Cart Profile.
 10. Choose the groups to include to the Cart Profile then choose **Select**.
-11. On the **Create Association** blade, choose **Save** to save the Cart Profile.
+11. On the **Create Association** pane, choose **Save** to save the Cart Profile.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 ## Step 7 - Assign the Cart Profile to Classes
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
-4. On the **Device Configuration** blade, choose **Monitor** > **Assignment status**.
-5. On the **Assignment status** blade, select the **Cart Profile** you created.
-6. On the **Cart Profile** blade choose **Assignments** and then, under **Include** choose **Select groups to include**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane, choose **Monitor** > **Assignment status**.
+5. On the **Assignment status** pane, select the **Cart Profile** you created.
+6. On the **Cart Profile** pane choose **Assignments** and then, under **Include** choose **Select groups to include**.
 7. Select the classes you want the cart profile to target (do not select a group), then choose **Select**. 
 8. When you are finished, choose **Save**.
 

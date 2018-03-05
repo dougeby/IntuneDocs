@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,22 +33,22 @@ ms.custom: intune-azure
 
 The endpoint protection profile let you control security features on Windows 10 devices, like BitLocker and Windows Defender.
 
-Use the information in this topic to learn how to create endpoint protection profiles.
+Use the information in this article to learn how to create endpoint protection profiles.
 
 > [!Note]
 > These settings are not supported on the Home and Professional editions of Windows 10.
 
 ## Create an endpoint protection profile
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
+2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
 3. On the profiles blade, choose **Create profile**.
 4. On the **Create profile** blade, enter a **Name** and **Description** for the device features profile.
 5. From the **Platform** drop-down list, select **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Endpoint protection**.
-7. Configure the settings you want. Use the details in this topic to help you understand what each setting does. When you are finished, choose **OK**.
+7. Configure the settings you want. Use the details in this article to help you understand what each setting does. When you are finished, choose **OK**.
 8. Go back to the **Create profile** blade, and choose **Create**.
 
 The profile is created and appears on the profiles list blade.
@@ -63,6 +63,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 - **Print from virtual browser** - Allow PDF, XPS, local, and/or network printers to print content from the virtual browser.
 - **Collect logs** - Collect logs for events that occur within an Application Guard browsing session.
 - **Retain user-generated browser data** - Allow user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session to be saved.
+- **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session by enabling access to a virtual graphics processing unit..
 
 
 ## Windows Defender Firewall
@@ -104,9 +105,9 @@ These settings are applicable to specific network types, including **Domain (wor
 - **SmartScreen for apps and files** - Enable Windows SmartScreen for file execution, and running apps.
 - **Unverified files execution** - Block the end user from running files that have not been verified by Windows SmartScreen.
 
-## Windows encryption
+## Windows Encryption
 
-### Windows settings
+### Windows Settings
 
 These settings apply to all versions of Windows 10.
 

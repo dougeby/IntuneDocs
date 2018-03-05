@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Microsoft Intune home screen layout settings for devices running iOS 
+title: Microsoft Intune home screen layout settings for devices running iOS
 titlesuffix: "Azure portal"
 description: Learn the settings you can use customize the home screen and dock on devices running iOS.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Microsoft Intune home screen layout settings for devices running iOS 
+# Microsoft Intune home screen layout settings for devices running iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -33,20 +33,21 @@ Use these settings to configure the app layout and folders on the dock and home 
 
 Devices running iOS with an assigned profile must be in supervised mode and run iOS 9.3 or later.
 
-1. On the **Device configuration**, **Create profile**, **Device features** page, choose **Home Screen Layout (supervised only)**.
-2. On the **Home Screen Layout (supervised only)** page, choose whether you want to configure the **Dock**, or **Pages** layouts.
+1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md).
+2. On the **Device features** pane choose **Home Screen Layout (supervised only)**.
+3. On the **Home Screen Layout (supervised only)** pane, choose whether you want to configure the **Dock**, or **Pages** layouts.
 
 ## Add items to the dock
 
-On the **Dock** page, you can add up to six items or folders to the dock of the iOS screen. However, many devices support fewer items; for example, iPhone devices support up to four items. In this case, only the first four items you configured are displayed on the device.
+On the **Dock** pane, you can add up to six items or folders to the dock of the iOS screen. However, many devices support fewer items; for example, iPhone devices support up to four items. In this case, only the first four items you configured are displayed on the device.
 
 1. Choose **Add** to add an item to the dock.
-2. On the **Add Row** page, choose whether you want to add an **App**, or a **Folder**.
+2. On the **Add Row** pane, choose whether you want to add an **App**, or a **Folder**.
 3. Using the information in this topic, configure the apps and folders you want to appear in the dock.
-4. Continue to add items. When you are finished, click **OK** on each page until you return to the **Create Profile** page. Choose **Create**.
+4. Continue to add items. When you are finished, click **OK** on each pane until you return to the **Create Profile** pane. Choose **Create**.
 
 >[!TIP]
-> You can drag and drop items in any Home screen and pages lists to reorder them. 
+> You can drag and drop items in any Home screen and pages lists to reorder them.
 
 ### Example
 
@@ -62,9 +63,8 @@ When you assign the policy to an iPhone, the result is a dock that looks similar
 
 Add the pages you want to appear on the home screen, and the apps that appear on each page. Apps that you add to a page are arranged from left to right, in the order they are specified in the list. If you add more apps than can fit on a page, the apps are moved to a subsequent page.
 
-
-1. On the **Pages** page, choose **Add**.
-2. On the **Add Row** page, enter a **Page name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
+1. On the **Pages** pane, choose **Add**.
+2. On the **Add Row** pane, enter a **Page name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 3. Choose **Add**, then choose whether you want to add an **App**, or a **Folder** to the page.
 4. Using the information in this topic, configure the apps and folders you want to appear on the page.
 
@@ -91,7 +91,7 @@ Apps that you add to a page in a folder are arranged from left to right, in the 
 
 1. Enter the **Folder name**. This name is displayed to users on their device.
 2. Choose **Add** to create a page in the folder. You can add up to 20 pages.
-3. On the **Add Row** page, enter a name for the page. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
+3. On the **Add Row** pane, enter a name for the page. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 3. Enter the **App Name**. This name is used for your reference in the Azure portal, and *is not displayed* on the iOS device.
 2. Enter the **App Bundle ID** of the app you want to display. See **How to add an app to the list** for help.
 3. Choose **Add**. You can add up to 60 items.
@@ -100,7 +100,7 @@ Apps that you add to a page in a folder are arranged from left to right, in the 
 
 ## Bundle ID reference for built-in iOS apps
 
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. 
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
 |||
 |-|-|

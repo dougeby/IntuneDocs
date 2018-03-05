@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,9 +61,9 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
 2. **Configure Android for Work binding**<br>
-    As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
 
-   a. On the **Intune** blade, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+   a. On the **Intune** pane, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Managed Google Play – Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
    ![Android for Work enrollment screen](./media/android-work-bind.png)
 
    b. **Sign in to Google**<br>
@@ -112,7 +112,7 @@ You can turn off Android for Work enrollment and management. Choosing **Unbind**
 ### To unbind an Android for Work account
 
 1. **Unbind Android for Work binding**<br>
-    As an Intune administrator, in the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.  On the **Intune** blade, choose **Device enrollment**, > **Android for Work Enrollment**, and then choose **Unbind**.
+    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.  On the **Intune** pane, choose **Device enrollment**, > **Android for Work Enrollment**, and then choose **Unbind**.
 
 2. **Agree to delete Android for Work binding**<br>
   Choose **Yes** to delete the binding and unenroll all Android for Work devices from Intune.

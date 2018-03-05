@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/17/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -108,21 +108,21 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
 ## Create a device profile containing device restriction settings
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the edition upgrade profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the edition upgrade profile.
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Edition upgrade**.
-7. On the **Edition Upgrade** blade, configure the following settings:
+7. On the **Edition Upgrade** pane, configure the following settings:
 	- **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you want to upgrade targeted devices to.
 	- **Product Key** - Specify the product key that you obtained from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices.<br>.After you create a policy that contains a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must enter the entire key again.
 	- **License File** - Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic or Windows 10 Mobile edition to which you want to upgrade targeted devices.
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create profile** pane, and hit **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 ## Next steps
 

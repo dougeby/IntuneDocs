@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,22 +41,23 @@ In Windows, use the **netsh wlan** utility to export an existing Wi-Fi profile t
 
 ## Import the Wi-Fi settings into Intune
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** page, choose **Device configuration**.
-2. On the **Device Configuration** page, choose **Manage** > **Profiles**.
-3. On the profiles page, click **Create Profile**.
-4. On the **Create Profile** page, enter a **Name** and **Description** for the device restriction profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5. On the profiles pane, click **Create profile**.
+6. On the **Create profile** pane, enter a **Name** and **Description** for the device restriction profile.
+
 
    > [!WARNING]
    > The name **must** be the same as the name attribute in the Wi-Fi profile xml, otherwise it fails.
 
-5. From the **Platform** drop-down list, choose **Windows 8.1 and later**.
-6. From the **Profile** type drop-down list, choose **Wi-Fi import**.
-7. On the **Wi-Fi Basic** page, configure the following settings:
+7. From the **Platform** drop-down list, choose **Windows 8.1 and later**.
+8. From the **Profile type** drop-down list, choose **Wi-Fi import**.
+9. On the **Wi-Fi** pane, configure the following settings:
 	- **Connection name** Enter the name of the Wi-Fi connection. This name is displayed to end users when they browse available Wi-Fi networks.
 	- **Profile XML** Click the browse button to select the XML file containing the Wi-Fi profile settings that you want to import into Intune.
 	- **File contents** Displays the XML code for the configuration profile you selected.
-8. When you're done, go back to the **Create Profile** page, and hit **Create**.
+10. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
-The profile is created and appears on the profiles list page.
+The profile is created and appears on the profiles list pane.
