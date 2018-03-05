@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: View Intune device inventory 
+title: View Intune device inventory
 titlesuffix: "Azure portal"
 description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
 keywords:
 author: arob98
 ms.author: angrobe
-manager: dougeby
-ms.date: 11/10/2017
+nmanager: dougeby
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them. 
+The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them.
 
 To view device inventory:
 

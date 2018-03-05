@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,9 +53,9 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 > [!Note]  
 > You need permission to **Reports** in Intune. For more information, see [Authorization](reports-api-url.md).
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. Open the **Intune Data Warehouse** blade.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Open the **Intune Data Warehouse** pane.
 4. Copy the custom feed URL. For example:
 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Open Power BI Desktop.
@@ -66,17 +66,17 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
     ![OData feed](media/reports-create-01-odatafeed.png)
 
 9. Select **OK**.
-10. Select **Organization account**, and then sign in with your Intune credentials. 
+10. Select **Organization account**, and then sign in with your Intune credentials.
 
     ![Organizational account credentials](media/reports-create-02-org-account.png)
 
-11. Select **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse. 
+11. Select **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse.
 
     ![The Navigator](media/reports-create-02-loadentities.png)
 
 12. Select the **devices** and the **ownerTypes** tables.  Select **Load**. Power BI loads data to the model.
 
-## Create a relationship 
+## Create a relationship
 
 You can import multiple tables to analyze not just the data in a single table but related data across tables.  PowerBI has a feature called **autodetect** that attempts to find and create relationships for you. The tables in the Data Warehouse have been built to work with PowerBI's autodetect feature. However, even if PowerBI doesn't automatically find the relationships you still manage the relationships.
 
@@ -97,19 +97,21 @@ A treemap chart shows hierarchical data as boxes with in boxes. Each branch of t
 2. In the data model, find the **devices** table.
 3. Expand the **devices table** and select the **manufacturer** data field in the **Fields** panel.
 4. Drag the **manufacturer** data field to the Treemap chart on the report canvas.
-5. Drag the **deviceKey** data field from the **devices** table to the **Values** section under the **Visualizations** pane and drop on the box labeled **Drag data field here**.
+5. Drag the **deviceKey** data field from the **devices** table to the **Values** section under the **Visualizations** pane and drop on the box labeled **Drag data field here**.  
 
-You now have a visual that shows you the distribution of manufacturers of devices within your organization.
+You now have a visual that shows the distribution of manufacturers of devices within your organization.
 
 ![Treemap with data](media/reports-create-06-treemapwdata.png)
 
 ## Add a filter
 
-You can add a filter to your treemap so that you can answer additional questions using your app. 
+You can add a filter to your treemap so that you can answer additional questions using your app.
 
-1. To add a filter, select the report canvas, and then select the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations**.
+
+1. To add a filter, select the report canvas, and then select the **Slicer icon** (![Treemap with data](media/reports-create-slicer.png)) under **Visualizations**.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
-   Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This result provides an example of how the data model supports relationships between tables.
+
+   Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This example shows how the data model supports relationships between tables.
 
 ![Treemap with filter](media/reports-create-08_ownertype.png)
 

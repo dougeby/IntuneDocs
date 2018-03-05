@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to assign apps to groups in Microsoft Intune
-titlesuffix: 
+titlesuffix:
 description: Once you've added an app to Microsoft Intune, you'll want to assign it to groups of users or devices."
 keywords:
 author: Erikre
@@ -83,8 +83,8 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Available|User Not Available|Not Available|
 |User Available|User Uninstall|Uninstall|
 |User Not Available|User Uninstall|Uninstall
-|User Required|Device Required|Both exists, Gateway treats required 
-|User Required|Device Uninstall|Both exists, Gateway resolves required 
+|User Required|Device Required|Both exists, Gateway treats required
+|User Required|Device Uninstall|Both exists, Gateway resolves required
 |User Available|Device Required|Both exists, Gateway resolves required (Required and Available)
 |User Available|Device Uninstall|Both exists, Gateway resolves Available.<br>App shows up in Company Portal.<br>In case if the app is already installed(as required app with previous intent) then the app gets uninstalled.<br>But if the user clicks install from the company portal then the app gets installed and uninstall intent is not honored.|
 |User Not Available|Device Required|Required|

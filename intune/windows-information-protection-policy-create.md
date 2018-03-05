@@ -45,17 +45,17 @@ You must understand a few concepts when adding a WIP policy:
 
 ### Types of apps
 
--   **Recommended apps:** A pre-populated list of (mostly Microsoft Office) apps that allow you easily import into policy. 
+-   **Recommended apps:** A pre-populated list of (mostly Microsoft Office) apps that allow you easily import into policy.
 -   **Store apps:** You can add any app from the Windows store to the policy.
 -   **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
 
-## Pre-requisites
+## Prerequisites
 
 You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following license and update:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
@@ -65,7 +65,7 @@ Additionally, you need to have the following license and update:
 
 After you set up Intune in your organization, you can create a WIP-specific policy.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **All Services** > **Intune**.
 3. Select **Mobile apps** on the **Microsoft Intune** blade.
 4. Select **App protection policies** on the **Mobile apps** blade.
@@ -121,7 +121,7 @@ After you add the apps you want to protect with WIP, you need to apply a protect
 
 WIP Learning is a report that allows you to monitor your WIP-enabled apps and WIP-unknown apps. The unknown apps are the ones not deployed by your organization’s IT department. You can export these apps from the report and add them to your WIP policies to avoid productivity disruption before they enforce WIP in “Block” mode.
 
-<!-- 1631908 --> 
+<!-- 1631908 -->
 In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
 
 When working with WIP-enabled apps and WIP-unknown apps, we recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
@@ -148,22 +148,22 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
-2.  Choose **Save**.
+1.  Select a setting and then choose **Save**.
 
 ### Use WIP Learning
 
-1. Open the Azure portal. Choose **More services**. Type **Intune** in the text box filter.
+1. Open the [Azure portal](https://portal.azure.com). Choose **All services**. Type **Intune** in the text box filter.
 
 3. Choose **Intune** > **Mobile Apps**.
 
 4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.  
- 
+
     Once you have the apps showing up in the WIP Learning logging report, you can add them to your app protection policies.
 
 ## Allow Windows Search Indexer to search encrypted items
 Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it indexes items that are encrypted, such as the Windows Information Protection (WIP) protected files.
 
-This app protection policy option is in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**. 
+This app protection policy option is in the **Advanced settings** of the Windows Information Protection policy. The app protection policy must be set to the *Windows 10* platform and the app policy **Enrollment state** must be set to **With enrollment**.
 
 When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified.
 
@@ -190,4 +190,4 @@ After you created your WIP app protection policy, you need to deploy it to your 
 
 ## Next steps
 
-- Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).

@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,8 +35,9 @@ Lets you configure how apps installed on a device send notifications. These sett
 
 ## Configure settings
 
-1. On the Device features blade, choose **App Notifications (supervised only)**.
-2. On the **App Notifications** blade, choose **Add**, and then configure the following values:
+1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md). 
+1. On the **Device features** pane, choose **App Notifications (supervised only)**.
+2. On the **App Notifications** pane, choose **Add**, and then configure the following values:
 	- **App bundle ID** - Enter the **App Bundle ID** of the app you want to configure. See **Bundle ID reference for built-in iOS apps** later in this topic for help.
 	- **App name** - Enter the name of the app you want to configure. This name is not displayed on the device and is used to help you identify the app in the list.
 	- **Publisher** - Enter the publisher of the app you want to configure. The publisher name is not displayed on the device, and is used only to help you identify the app in the list.
@@ -50,7 +51,7 @@ Lets you configure how apps installed on a device send notifications. These sett
 		- **Badge on app icon** - Enable this setting to add a badge to the app icon to indicate the app sent a notification.
 		- **Sounds** - Enable this setting to play a sound when a notification is delivered.
 3. Continue to add as many apps as you need. When you are finished, choose **OK**.
-4. Choose **OK** until you return to the **Create Profile** blade, then choose **Create**. 
+4. Choose **OK** until you return to the **Create profile** pane, then choose **Create**. 
 
 
 ## Bundle ID reference for built-in iOS apps

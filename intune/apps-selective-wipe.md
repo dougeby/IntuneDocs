@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,23 +44,21 @@ To selectively remove company app data, create a wipe request by using the steps
 
 1.  Sign in to the [Azure portal](https://portal.azure.com).
 
-2.  Choose **More Services**, type **Intune** in the filter textbox, and select **Intune**. The Intune blade opens. Select **Mobile apps**.
+2.  Choose **All services**, type **Intune** in the filter textbox, and select **Intune**. The Intune pane opens, choose the **Mobile apps** pane.
 
-	![Screenshot of the Microsoft Intune blade](./media/apps-selective-wipe01.png)
+	![Screenshot of the Microsoft Intune pane](./media/apps-selective-wipe01.png)
 
-3.  On the **Mobile apps blade**, choose **App selective wipe**.
+3.  On the **Mobile apps pane**, choose **App selective wipe**.
 
 4.  Choose  **New wipe request**. The **New wipe request** pane opens.
 
     ![Screenshot of the New wipe request pane](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Choose **User** to open the **User** blade, and select the user whose app data you want to wipe.
+5.  Choose a user and then choose **Select** to select the user whose app data you want to wipe.
 
-6.  Next, choose **Device** from the **New wipe request** blade. This action opens the **Select Device** blade. This lists all the devices associated with the selected user. Also, this pane provides the device name, which is a friendly name defined by the user, and the device type, which specifies the device platform. 
+6.  Next, choose **Device** from the **New wipe request** pane. This opens the **Select Device** pane that lists all the devices associated with the selected user, and also provides two columns, the device name, which is a friendly name defined by the user, and the device type, its device platform. Select the device you want to wipe.
 
-7. From the list, select the device you want to wipe.
-
-8.  You are now back on the **New wipe request** blade. Choose **Ok** to make a wipe request.
+7.  You are now back on the **New wipe request** pane. Choose **OK** to make a wipe request.
 
 The service creates and tracks a separate wipe request for each protected app on the device, and the user associated with the wipe request.
 
@@ -68,7 +66,7 @@ The service creates and tracks a separate wipe request for each protected app on
 
 You can have a summarized report that shows the overall status of the wipe request, and includes the number of pending requests and failures. To get more details, follow these steps:
 
-1.  On the **Mobile Apps - App selective wipe** blade, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
+1.  On the **Mobile Apps - App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
 	![Screenshot of the wipe request status in the App selective wipe pane](./media/wipe-request-status-1.png)
 
@@ -81,7 +79,7 @@ Additionally, you are able to see the device name, and its device type, which ca
 
 Wipes with pending status are displayed until you manually delete them. To manually delete a wipe request:
 
-1.  Open the **Mobile Apps - App selective wipe** blade.
+1.  On the **Mobile Apps - App selective wipe** pane.
 
 2.  From the list, right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 

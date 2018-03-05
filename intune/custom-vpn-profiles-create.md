@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,26 +42,28 @@ This type of policy can be useful when the standard Intune VPN policies do not c
 
 ## To create a custom configuration policy:
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-5. On the profiles blade, choose **Create Profile**.
-6. On the **Create Profile** blade, enter a **Name** and **Description** for the VPN profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5. On the profiles pane, choose **Create profile**.
+6. On the **Create profile** pane, enter a **Name** and **Description** for the VPN profile.
 7. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for custom device settings:
 	- **Android**
+	- **Android for Work**
 	- **iOS** (configured using a file you exported from Apple Configurator).
 	- **macOS** (configured using a file you exported from Apple Configurator).
 	- **Windows Phone 8.1**
+	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Custom**.
-7. On the **Custom OMA-URI Settings** blade, for each URI setting you want to specify, choose **Add**, provide the requested information, then choose **OK**. Here's an example:
+7. On the **Custom OMA-URI Settings** pane, for each URI setting you want to specify, choose **Add**, provide the requested information, then choose **OK**. Here's an example:
 
    ![VPN profile custom configuration dialog box](./media/Intune_Add_VPN_URI.png)
 
-4.  After you've entered all of URI settings you need, choose **OK**, and then, on the **Create Profile** blade, choose **Create**.
+4.  After you've entered all of URI settings you need, choose **OK**, and then, on the **Create profile** pane, choose **Create**.
 
-The profile will be created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 
