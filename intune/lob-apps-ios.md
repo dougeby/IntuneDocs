@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to add iOS line-of-business apps to Intune
-titlesuffix: "Azure portal"
-description: Learn about adding iOS line-of-business apps to Intune."
+title: How to add iOS line-of-business apps to Microsoft Intune
+titlesuffix: 
+description: Learn about adding iOS line-of-business (LOB) apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the information in this topic to help you add iOS line-of-business apps to Intune.
+Use the information in this article to help you add iOS line-of-business apps to Microsoft Intune.
 
 >[!NOTE]
 >While users of iOS devices can remove some of the built-in iOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
