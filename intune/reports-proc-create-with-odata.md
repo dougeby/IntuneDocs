@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 # Create a report from the OData feed with Power BI
 
-In this tutorial, you're going to create a treemap visualization using Power BI Desktop with an interactive filter. For example, your CFO might like to how the overall distribution of devices compares to just company owned to personal devices. The treemap provides insight into the total number of device types. You can review the number of iOS, Android, and Windows devices that are either company owned or personally owned.
+This article explains how to create a treemap visualization using Power BI Desktop with an interactive filter. For example, your CFO might like to how the overall distribution of devices compares to just company owned to personal devices. The treemap provides insight into the total number of device types. You can review the number of iOS, Android, and Windows devices that are either company owned or personally owned.
 
 ### Overview of creating the chart
 
@@ -107,7 +107,7 @@ You now have a visual that shows you the distribution of manufacturers of device
 
 You can add a filter to your treemap so that you can answer additional questions using your app. 
 
-1. Select the report canvas, and then select the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations** to add a filter.
+1. To add a filter, select the report canvas, and then select the **Slicer icon** ( ![Treemap with data](media/reports-create-slicer.png) ) under **Visualizations**.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
    Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This result provides an example of how the data model supports relationships between tables.
 
