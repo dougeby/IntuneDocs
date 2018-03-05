@@ -102,7 +102,7 @@ For detailed specifications about International Mobile Equipment Identifiers, se
 Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**.
 
 **To change device ownership:**
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), go **Devices** > **All devices**, and choose the device.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), go to **Devices** > **All devices**, and choose the device.
 3. Choose **Properties**.
 4. Specify **Device ownership** as **Personal** or **Corporate**.
 
