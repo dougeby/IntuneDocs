@@ -58,38 +58,34 @@ Default restrictions are automatically provided for both device type and device 
 
 ## Create a restriction
 
-1. Sign into the Azure portal.
-2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
-3. Choose **Device enrollment** > **Enrollment restrictions**.
-4. Choose **Create restriction**.
-5. Give the restriction a name and description.
-6. Choose a **Restriction type** and then click **Create**.
-7. For device limit restrictions, click **Device limit** to set the maximum number of devices that a user can enroll.
-8. For device type restrictions, click **Platforms** and **Platform configurations** to allow or block various platforms and versions.
-9. Click **Assignments** > **+ Select groups**.
-10. Under **Select groups**, select one or more groups, and then click **Select**. The restriction only applies to groups to which it is assigned. If you don't assign a restriction to at least one group, it won't have any effect.
-11. Click **Save**.
-12. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Enrollment restrictions**.
+2. Choose **Create restriction**.
+3. Give the restriction a name and description.
+4. Choose a **Restriction type** and then click **Create**.
+5. For device limit restrictions, click **Device limit** to set the maximum number of devices that a user can enroll.
+6. For device type restrictions, click **Platforms** and **Platform configurations** to allow or block various platforms and versions.
+7. Click **Assignments** > **+ Select groups**.
+8. Under **Select groups**, select one or more groups, and then click **Select**. The restriction only applies to groups to which it is assigned. If you don't assign a restriction to at least one group, it won't have any effect.
+9. Click **Save**.
+10. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
 
 ## Set device type restrictions
 
 You can change the settings for a device type restriction by following these steps:
 
-1. Sign into the Azure portal.
-2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
-3. Choose **Device enrollment** > **Enrollment restrictions**.
-4. Under **Device Type Restrictions**, choose the restriction that you want to set.
-5. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
-6. Click **Save**.
-7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations** and select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Enrollment restrictions**.
+2. Under **Device Type Restrictions**, choose the restriction that you want to set.
+3. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
+4. Click **Save**.
+5. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations** and select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
   - Android and Android for Work support major.minor.rev.build.
   - iOS supports major.minor.rev.
   - Windows supports major.minor.rev.build for Windows 10 only.
   Operating system versions don't apply to Apple devices enrolling with Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
-8. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
+6. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 
     ![Screenshot of the device restrictions workspace with the default device platform configured for personally owned devices](media/device-restrictions-platform-configurations.png)
-9. Click **Save**.
+7. Click **Save**.
 
 >[!NOTE]
 >- If you block personally owned Android devices from enrollment, personally owned Android for Work devices can still enroll.
@@ -100,13 +96,11 @@ You can change the settings for a device type restriction by following these ste
 
 You can change the settings for a device limit restriction by following these steps:
 
-1. Sign into the Azure portal.
-2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
-3. Choose **Device enrollment** > **Enrollment restrictions**.
-4. Under **Device Limit Restrictions**, choose the restriction that you want to set.
-5. Choose **Device Limit** and then, in the drop-down list, select the maximum number of devices a user can enroll.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Enrollment restrictions**.
+2. Under **Device Limit Restrictions**, choose the restriction that you want to set.
+3. Choose **Device Limit** and then, in the drop-down list, select the maximum number of devices a user can enroll.
     ![Screenshot of the device limit restrictions blade](./media/device-restrictions-limit.png)
-6. Click **Save**.
+4. Click **Save**.
 
 Your end user will see a notification that will tell them when they have met their limit of enrolled devices. For example, on iOS, it would look like this:
 
@@ -124,8 +118,6 @@ You can change the priority of any non-default restriction.
 
 **To change restriction priority**
 
-1. Sign into the Azure portal.
-2. Choose **More Services**, search for **Intune**, and then choose **Intune**.
-3. Choose **Device enrollment** > **Enrollment restrictions**.
-4. Hover over the restriction in the priority list.
-5. Using the three vertical dots, drag the priority to the desired position in the list.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Enrollment restrictions**.
+2. Hover over the restriction in the priority list.
+3. Using the three vertical dots, drag the priority to the desired position in the list.

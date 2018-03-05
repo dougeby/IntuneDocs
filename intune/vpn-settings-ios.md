@@ -1,33 +1,31 @@
 ---
 # required metadata
 
-title: Intune VPN settings for iOS devices
-titlesuffix: "Azure portal"
-description: Learn about the Intune settings you can use to configure VPN connections on iOS devices."
+title: Microsoft Intune VPN settings for devices running iOS
+titlesuffix:
+description: Learn about the Intune settings you can use to configure VPN connections on devices running iOS.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# VPN settings for iOS devices in Microsoft Intune
+# Configure VPN settings in Microsoft Intune for devices running iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -68,7 +66,7 @@ If you selected **Custom VPN** as the connection type, configure these further s
 - **On-demand rules** - This lets you configure conditional rules that control when the VPN connection is initiated. For example, you could create a condition where the VPN connection is only used when a device is not connected to one of your company Wi-Fi networks. Alternatively, you could create a condition where, if a device cannot access a DNS search domain you specify, then the VPN connection is not initiated.
 
 	- **SSIDs or DNS search domains** - Select whether this condition uses wireless network **SSIDs**, or **DNS search domains**. Choose Add to configure one or more SSIDs or search domains.
-	- **URL string probe** - Optionally, provide a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN connection is initiated and the device connects to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.
+	- **URL string probe** - Optionally, provide a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN connection is initiated and the device connects to the target URL. The user does not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.
 	- **Domain action** - Choose one of the following items:
 		- Connect if needed - 
 		- Never connect - 
@@ -81,6 +79,6 @@ If you selected **Custom VPN** as the connection type, configure these further s
 
 ## Proxy settings
 
-- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**), which contains the configuration file.
 - **Address** - Enter the proxy server address (as an IP address).
 - **Port number** - Enter the port number associated with the proxy server.
