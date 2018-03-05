@@ -123,14 +123,6 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
  
-### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
-
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
-
-### Appthority - New Mobile Threat Defense partner <!-- 1169252 -->
-
-You will be able to control mobile device access to corporate resources using conditional access based on risk assessment conducted by Appthority, a Mobile Threat Defense solution that integrates with Microsoft Intune.
-
 ### Support coming for new Cisco AnyConnect client for iOS <!-- 1333708 -->
 
 New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
