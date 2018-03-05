@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll Windows devices
-titlesuffix: "Azure portal"
-description: Enable Intune mobile device management (MDM) for Windows devices.
+title: Set up enrollment for Windows devices by using Microsoft Intune
+titlesuffix:
+description: Set up enrollment for Windows devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll Windows devices
+# Set up enrollment for Windows devices
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

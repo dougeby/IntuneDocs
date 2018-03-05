@@ -26,9 +26,10 @@ ms.custom: intune-azure
 ---
 
 # Microsoft Intune iOS device restriction settings
-This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running iOS.
 
 ## General
 
