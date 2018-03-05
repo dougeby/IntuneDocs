@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic walks you through the process of configuring conditional access for Exchange on-premises based on device compliance.
+This article shows you how to configure conditional access for Exchange on-premises based on device compliance.
 
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager. To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.
 
@@ -44,7 +44,7 @@ Before you can configure conditional access, verify the following:
 - You must use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
 	>[!IMPORTANT]
-	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed **on only one machine**.
+	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. You should also make sure the exchange connector for your tenant is installed **on only one machine**.
 
 - The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
@@ -102,7 +102,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 9. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 
-10. If you want to exclude a certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
+10. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
 
 11. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device is not compliant and they want to access Exchange on-premises. The message template uses Markup language.  You will also see the preview of how the message looks as you type.
 	> [!TIP]
@@ -120,7 +120,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 ## Create Azure AD Conditional access policies in Intune
 
-Beginning with Intune 1704 release, admins can create Azure AD conditional access policies from the Intune Azure portal, which gives convenience so you don't need to switch between the Azure and Intune workloads.
+Beginning with Intune 1704 release, admins can create Azure AD conditional access policies from the Intune Azure portal so you don't need to switch between the Azure and Intune workloads.
 
 > [!IMPORTANT]
 > You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
