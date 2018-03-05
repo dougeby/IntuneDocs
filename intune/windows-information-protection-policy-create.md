@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: doubeby
-ms.date: 02/16/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in to protect apps without device enrollment.
+Beginning with the Intune 1704 release, you can use app protection policies with Windows 10 in to protect apps without device enrollment.
 
 ## Before you begin
 
@@ -51,13 +51,13 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 -   **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
 
-## Pre-requisites
+## Prerequisites
 
 You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following license and update:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
@@ -68,9 +68,15 @@ Additionally, you need to have the following license and update:
 
 After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
-1.  Go to the **Intune mobile application management dashboard**, choose **All settings**, > **App policy**.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2.  In the **App policy** blade, choose **Add a policy**, then enter the following values:
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+
+3. On the **Intune** blade, choose **Mobile apps**.
+
+1.  In the **Intune mobile application management dashboard**, choose **App protection policies**.
+
+2.  In the **App protection policies** blade, choose **Add a policy**, then enter the following values:
 
     a.  **Name:** Type a name (required) for your new policy.
 
@@ -84,7 +90,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 ## To add recommended apps to your allowed apps list
 
-1.  From the **App policy** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
+1.  From the **App protection policies** blade, choose the name of your policy, then choose **Allowed apps** from the **Add a policy** blade. The **Allowed apps** blade opens, showing you all apps that are already included in the list for this app protection policy.
 
 2.  From the **Allowed apps** blade, choose **Add apps**. The **Add apps** information shows you all apps that are part of this list.
 
@@ -159,11 +165,11 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
 
-2.  Choose **Save**.
+1.  Select a setting and then choose **Save**.
 
 ### Use WIP Learning
 
-1. Open the Azure portal. Choose **More services**. Type **Intune** in the text box filter.
+1. Open the [Azure portal](https://portal.azure.com). Choose **All services**. Type **Intune** in the text box filter.
 
 3. Choose **Intune** > **Mobile Apps**.
 
@@ -201,4 +207,4 @@ After you created your WIP app protection policy, you need to deploy it to your 
 
 ## Next steps
 
-- Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
