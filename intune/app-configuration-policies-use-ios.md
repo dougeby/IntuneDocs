@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add app configuration policies for managed iOS devices | Microsoft Docs
-titlesuffix: "Azure portal"
+title: Add app configuration policies for managed iOS devices
+titlesuffix: Microsoft Intune
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
 author: erikre
@@ -69,14 +69,14 @@ Once you have selected the included groups for your application configuration po
 10. Once you have added your XML information, choose **OK**, and then choose **Add** to add the configuration policy. The overview pane for the configuration policy is displayed.
 11. Select **Assignments** to display the include and exclude options. 
 
-    ![Policy assignments](./media/app-config-policy01.png)
+    ![Screenshot of Policy assignments Include tab](./media/app-config-policy01.png)
 12. Select **All Users** on the **Include** tab.
 
-    ![Policy assignments - All Users](./media/app-config-policy02.png)
+    ![Screenshot of Policy assignments - All Users dropdown option](./media/app-config-policy02.png)
 13. Select the **Exclude** tab. 
 14. Click **Select groups to exclude** to display the related pane.
 
-    ![Policy assignments - Select groups to exclude](./media/app-config-policy03.png)
+    ![Screenshot of Policy assignments - Select groups to exclude blade](./media/app-config-policy03.png)
 15. Choose the groups you want to exclude and then click **Select**.
 
     >[!NOTE]

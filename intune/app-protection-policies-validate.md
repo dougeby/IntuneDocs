@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Validate your app protection policies
-titleSuffix: "Azure portal"
-description: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
+title: Validate your app protection policy setup
+titleSuffix: Microsoft Intune
+description: Learn how to test that your app protection policy is set up and working correctly.
 keywords:
 author: erikre
 ms.author: erikre
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-This topic provides information on checking for issues after you set up an app protection policy. This guidance applies to app protection policies in the Azure portal.
+Validate that your app protection policy is correctly set up and working. This guidance applies to app protection policies in the Azure portal.
 
 ### Checking for symptoms
 Users are unlikely to report issues since app protection is a data protection tool. If there is a problem with the app protection configuration the user has unrestricted access, as they would have without app protection, and do not know that there is an issue. For this reason, we recommend that you validate your app protection configuration by piloting your app protection policies with a small group of users who can deliberately test the app protection restrictions.

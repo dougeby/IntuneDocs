@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Get started with users
-titlesuffix: "Azure portal"
-description: Add a user to Intune to allow them to access company resources on mobile devices.
+title: Get started managing users
+titlesuffix: Microsoft Intune
+description: Add a user to Intune and assign them a license so they can access company resources on mobile devices.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started with managing users
+# Get started managing users
 
 Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune.
 

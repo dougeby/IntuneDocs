@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/04/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,37 +46,13 @@ The first time you sign on to the Intune [Azure portal](https://portal.azure.com
 
 When you sign up for a trial, you will also receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your trial is active.
 
-
-
 ## Keeping the admin experiences straight
 
-
-There are three portals you use for the Intune Azure portal:
-- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune in the Azure portal](what-is-intune.md).
-- The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
-- The Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been added to Azure.
-
-Normally, you’ll do your work in the Intune dashboard, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
-
-You can go to the Intune admin console from the dashboard by choosing **Classic portal** at the top of your dashboard.
-
-To return to the Intune Azure portal, enter https://portal.azure.com in your browser address bar and then choose **Intune** again from the services list.
-
- ![Image of Intune dashboard](./media/intune-azure-dashboard.png)
-
-
-You use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
-
-![Image of Office 365 Admin center](./media/office-admin-center.png)
-
-To go from the Office 365 Admin center to the Intune dashboard, enter https://portal.azure.com in your browser address bar. Choose **Intune** in the services list.
-
-To get from Intune back to the Office 365 Admin center, enter https://portal.office.com in your browser address bar. If you are already logged into Intune, you will be taken directly to the Office 365 Admin Center.
+There are two portals that you might use:
+- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
+- The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
 
 ## Next steps
-
-### Intune in the Azure portal
-Learn more about [Intune in the Azure portal](what-is-intune.md)
 
 ### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:

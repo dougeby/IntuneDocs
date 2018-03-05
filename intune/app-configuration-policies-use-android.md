@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Add app configuration policies for managed Android devices | Microsoft Docs
-titlesuffix: "Azure portal"
-description: Learn how to use app configuration policies to provide configuration data to an Android for Work app when it is run.
+title: Add app configuration policies for managed Android devices
+titlesuffix: Microsoft Intune
+description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android for Work app.
 keywords:
 author: erikre
 ms.author: erikre
