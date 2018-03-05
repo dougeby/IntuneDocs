@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to add Android line-of-business apps to Intune
-titlesuffix: "Azure portal"
-description: Learn about adding Android line-of-business apps to Intune."
+title: How to add Android line-of-business apps to Microsoft Intune
+titlesuffix:
+description: Learn about adding Android line-of-business (LOB) apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,31 +30,33 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+A line-of-business (LOB) app is one that you add from an app installation file. These types of apps are typically written in-house.
 
 ## Step 1 - Specify the software setup file
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.
-6. In the **Add App** blade, choose **Line-of-business app**.
+6. In the **Add app** pane, choose **Line-of-business app**.
 
 ## Step 2 - Configure the app package file
 
-1. On the **Add app** blade, choose **App package** file.
-2. On the **App package** file blade, choose the browse button, and select an Android installation file with the extension **.apk**.
+1. On the **Add app** pane, choose **App package file**.
+2. On the **App package file** pane, choose the browse button, and select an Android installation file with the extension **.apk**.
 3. When you are finished, choose **OK**.
 
 
 ## Step 3 - Configure app information
 
-1. On the **Add app** blade, choose **App package** file.
-2. On the **App information** blade, add the details for your app. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
+1. On the **Add app** pane, choose **App package** file.
+2. On the **App information** pane, add the details for your app. Depending on the app you have chosen, some of the values in this pane might have been automatically filled-in:
 	- **Name** - Enter the name of the app to display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
 	- **Description** - Enter the description of the app to be displayed to users in the company portal.
 	- **Publisher** - Enter the name of the publisher of the app.
 	- **Minimum Operating System** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
+	- **Ignore app version** - Set to **Yes** if app is automatically updated by the app developer.
 	- **Category** - Select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
@@ -67,7 +69,7 @@ ms.custom: intune-azure
 
 ## Step 4 - Finish up
 
-1. On the **Add app** blade, verify your app details.
+1. On the **Add app** pane, verify your app details.
 2. Choose **Add**, to upload the app to Intune.
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
@@ -76,7 +78,7 @@ The app you have created will be displayed in the apps list where you can assign
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
-> [!Note] 
+> [!Note]
 > For the Intune service to successfully deploy a new APK file to the device you must increment the android:versionCode string in the AndroidManifest.xml file in your APK package.
 
 ## Next steps

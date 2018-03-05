@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create certificates profile in Microsoft Intune - Azure | Microsoft Docs 
+title: Create certificates profile in Microsoft Intune - Azure | Microsoft Docs
 description: For your devices, add or create a certificate profile by configuring SCEP or PKCS certificate environment, export the public certificate, create the profile in the Azure portal, and then assign SCEP or PKCS to the certificate profiles in Microsoft Intune in the Azure portal
 keywords:
 author: MandiOhlinger
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. When you use certificates, you don't need to enter user names and passwords to authenticate connections 
+When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. When you use certificates, you don't need to enter user names and passwords to authenticate connections
 
 You can use Intune to assign these certificates to devices you manage. Intune supports assigning and managing the following certificate types:
 
@@ -91,10 +91,13 @@ You import this certificate when you set up a trusted certificate profile.
 ## Step 3: Create trusted certificate profiles
 Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates is similar for each device platform.
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
-2. In **Microsoft Intune**, select **Device configuration**, select **Profiles**. and then select **Create Profile**.
-3. Enter a **Name** and **Description** for the trusted certificate profile.
-4. For the **Platform**, select the device platform for this trusted certificate: 
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the trusted certificate profile.
+5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for certificate settings:
 
 	- **Android**
 	- **Android for Work**
@@ -104,15 +107,13 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 
-5. For the **Profile type**, choose **Trusted certificate**. Browse to the certificate (*CertificateName*.cer) you previously saved (step 2).
-
-    For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:  
-
-    - **Computer certificate store - Root**
-    - **Computer certificate store - Intermediate**
-    - **User certificate store - Intermediate**
-
-6. Select **OK** to save your changes, and select **Create** to save your new profile.
+6. From the **Profile type** drop-down list, choose **Trusted certificate**.
+7. Browse to the certificate you saved in task 1, then click **OK**.
+8. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
+	- **Computer certificate store - Root**
+	- **Computer certificate store - Intermediate**
+	- **User certificate store - Intermediate**
+8. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
 The profile is created and appears on the list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 

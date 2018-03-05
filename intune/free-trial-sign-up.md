@@ -39,8 +39,8 @@ This article walks you through signing up for a trial of Intune standalone for t
 
 2. At the end of the sign-up process, you get a message with your new account information. <br/> ![Image of account  information](./media/2-end-of-sign-up-process.png) <br/>At this point, if you click **You're ready to go**, you are taken to the Office 365 Admin Center, where you can add users to your test environment. <br/><br/>However, if you want to go directly into the Intune Azure portal, open a new browser window, and enter **https://portal.azure.com** in the address bar. You are taken to the Azure sign-in page where you can use the credentials you were given to sign in. Use this address whenever you want to sign into your Intune trial. <br/> ![Image of Azure portal sign-in page](./media/azure-portal-signin.png)
 
-The first time you sign on to the Intune Azure portal, you may not see Intune on your Azure dashboard. To add the Intune service to your Azure dashboard:
-1. Choose **More services >** in the list of Azure services to the left of the dashboard, and enter **Intune** in the search box.
+The first time you sign on to the Intune [Azure portal](https://portal.azure.com), you may not see Intune on your Azure dashboard. To add the Intune service to your Azure dashboard:
+1. Choose **All services >** in the list of Azure services to the left of the dashboard, and enter **Intune** in the search box.
 2. Choose **Intune** from the list, and select the star to add the service to the list of services.<br/> ![Image of selecting Intune from services list](./media/azure-add-intune1.png)
 3. Then choose **Intune** in the list of services to open the Intune dashboard.
 
