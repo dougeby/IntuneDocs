@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This article shows you the Micrsoft Intune settings you can use to control browser URL access from devices running iOS.
+This article shows you the Microsoft Intune settings you can use to control browser URL access from devices running iOS.
 
 There are two methods you can use to configure URLs:
 
