@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 02/08/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,8 +63,8 @@ Apple Configurator enrollment methods can't be used with the [device enrollment 
 
 A device enrollment profile defines the settings applied during enrollment. These settings are applied only once. Follow these steps to create an enrollment profile to enroll iOS devices with Apple Configurator.
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Choose **Device enrollment** > **Apple Enrollment**.
 4. In **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
 5. Under **Apple Configurator Enrollment Profiles**, select **Create**.
@@ -94,7 +94,7 @@ A device enrollment profile defines the settings applied during enrollment. Thes
   DLXQPCWVGHMJ,device details
 
    Learn [how to find an iOS device serial number](https://support.apple.com/HT204073).
-2. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+2. In Intune in the [Azure portal](https://portal.azure.com), choose **Device enrollment**, and then choose **Apple Enrollment**.
 3. Under **Manage Apple Configurator Enrollment Settings**, select **Apple Configurator Devices**.
 4. Select **Add**.
 5. Select an **Enrollment profile** to apply to the serial numbers you're importing. If you import a file with new details that overwrites existing details, select **Overwrite details for existing identifiers**.
@@ -107,12 +107,12 @@ You assign an enrollment profile when you import iOS serial numbers for Apple Co
 - **AC profiles**
 
 #### Assign from Apple Configurator devices
-1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+1. In Intune in the [Azure portal](https://portal.azure.com), choose **Device enrollment**, and then choose **Apple Enrollment**.
 3. Under **Apple Configurator Devices**, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
 4. Under **Assign Profile**, select the **New profile** you want to assign, and then select **Assign**.
 
 #### Assign from profiles
-1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+1. In Intune in the [Azure portal](https://portal.azure.com), choose **Device enrollment**, and then choose **Apple Enrollment**.
 2. Choose **AC Profiles**, and select the profile that you want to assign to serial numbers.
 3. In the profile, choose **Assigned devices**, and then choose **Assign**.
 4. Filter to find device serial numbers you want to assign to the profile, select the devices, and then choose **Assign**.
@@ -120,7 +120,7 @@ You assign an enrollment profile when you import iOS serial numbers for Apple Co
 ### Export the profile
 After you create the profile and assign serial numbers, you must export the profile from Intune as a URL. You then import it into Apple Configurator on a Mac for deployment to devices.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **AC Profiles**, and then choose the profile to export.
+1. In Intune in the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple enrollment** > **AC Profiles**, and then choose the profile to export.
 2. On the profile, select **Export Profile**.
 
   ![Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-sat.png)
@@ -157,8 +157,8 @@ When you directly enroll iOS devices with Apple Configurator, you can enroll a d
 Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, cannot be installed.
 
 ### Export the profile as .mobileconfig to iOS devices
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Under **Export Profile**, choose **Download profile** to download the enrollment profile.
 
   ![Export Profile for Setup Assistant Enrollment with Profile URL highlighted](./media/ios-apple-configurator-expor-de.png)
