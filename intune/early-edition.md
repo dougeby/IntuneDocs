@@ -186,13 +186,6 @@ You will be to enable security settings on Windows 10 devices using the new Loca
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
 
-### macOS Company Portal support for enrollments that use the Device Enrollment Manager <!-- 1352411 -->
-
-Users will be able to use the Device Enrollment Manager when enrolling with the macOS Company Portal.
-
-### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
-Intune will provide the capability to install macOS LOB apps. LOB apps are apps where you supply the installation file and use Intune to install the app on the device. As part of macOS LOB app support, you must use the Microsoft Intune App Wrapping Tool for macOS to pre-process macOS line-of-business (LOB) apps.
-
 ### Configure resource account settings for Surface Hubs <!-- 1475674 -->
 
 You will be able to remotely configure resource account settings for Surface Hubs.
