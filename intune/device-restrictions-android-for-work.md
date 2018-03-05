@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android for Work 
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
+title: Microsoft Intune device restriction settings for Android for Work 
+titlesuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running Android for Work.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/22/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,14 +19,15 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Android for Work device restriction settings in Microsoft Intune
+# Microsoft Intune Android for Work device restriction settings
+
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -98,8 +99,8 @@ ms.custom: intune-azure
  - **Threat scan on apps** - Enforce that the **Verify Apps** setting is on for work and personal profiles.
 
    > [!Note]  
-   > This setting will only work for devices that are Android O and above. 
+   > This setting only works for devices that are Android O and above. 
 
 ## Next steps
 
-Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.
+Use the information in [How to configure device restriction settings](device-restrictions-configure.md) to save and assign the profile to users and devices.

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Choose how to enroll iOS devices in Intune
-titlesuffix: "Azure portal"
-description: Learn how to set up enrollment of iOS devices in Microsoft Intune."
+titlesuffix: Microsoft Intune
+description: Set up enrollment of iOS devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje

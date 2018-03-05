@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage apps from Microsoft Store for Business 
-titlesuffix: "Azure portal"
-description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track them."
+titlesuffix: Microsoft Intune
+description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track these apps.
 keywords:
 author: Erikre
 ms.author: erikre

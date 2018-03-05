@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll macOS devices in Intune
-titlesuffix: "Azure portal"
-description: Learn how to enroll macOS devices in Intune."
+title: Set up enrollment for macOS devices
+titlesuffix: Microsoft Intune
+description: Learn how to set up enrollment for macOS devices in Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll macOS devices in Intune
+# Set up enrollment for macOS devices in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

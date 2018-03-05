@@ -1,12 +1,12 @@
 ---
-title: Help desk troubleshooting portal| Microsoft Docs
-titlesuffix: "Azure portal"
-description: Help desk staff use the troubleshooting portal to solve users' technical problems  
+title: Help desk troubleshooting portal
+titlesuffix: Microsoft Intune
+description: Help desk staff use the troubleshooting portal to solve users' technical problems.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,7 +23,7 @@ ms.reviewer: sumitp
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
-# Use the troubleshooting portal to help users
+# Use the troubleshooting portal to help users at your company
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

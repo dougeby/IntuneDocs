@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to add Android store apps to Intune
-titleSuffix: "Azure portal"
-description: Learn about adding Android store apps to Intune."
+title: How to add Android store apps to Microsoft Intune
+titleSuffix: 
+description: Learn about adding Android store apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre

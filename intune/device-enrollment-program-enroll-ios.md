@@ -80,7 +80,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
 
   ![Enrollment Program Token pane in Apple Certificates workspace](./media/enrollment-program-token-add.png)
 
@@ -122,7 +122,7 @@ Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. 
 
 Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment**.
 2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles** > **Create**.
 3. On **Create Enrollment Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -175,7 +175,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
   
@@ -196,7 +196,7 @@ You must assign an enrollment program profile to devices before they can enroll.
 >[!NOTE]
 >You can also assign serial numbers to profiles from the **Apple Serial Numbers** blade.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
 2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Assign devices**.
 
  ![Device Assignments with Assign selected](./media/enrollment-program-device-assign.png)

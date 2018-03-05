@@ -2,11 +2,11 @@
 # required metadata
 
 title: Set the mobile device management authority
-titlesuffix: "Azure portal"
-description: Learn how to set the mobile device management authority in Intune. "
+titlesuffix: Microsoft Intune
+description: Set the mobile device management authority in Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article

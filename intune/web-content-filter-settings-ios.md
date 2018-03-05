@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune web content filter settings for iOS devices
-titlesuffix: "Azure portal"
-description: Learn the settings you can use to allow and block access to websites from iOS devices."
+title: Microsoft Intune web content filter settings for iOS devices
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to allow and block access to websites from devices running iOS.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,20 +30,19 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to configure URLs that end users of web browsers, on iOS devices, can, or cannot visit. There are two methods you can use to do configure URLs:
+This article shows you the Microsoft Intune settings you can use to control browser URL access from devices running iOS.
+
+There are two methods you can use to configure URLs:
 
 - **Configure URLs** - Use Apple’s built-in web filter that looks for adult terms like profanity or sexually explicit language. This function evaluates each web page as it is loaded and attempts to identify and block unsuitable content. You can also configure URLs that are not checked by the filter, or URLs that are blocked, regardless of the filter settings.
 
 - **Specific websites only** (for the Safari web browser only) - These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be accessed. Use this option only if you know the exact list of URLs that users can access.
 If you do not specify any URLs, then end users cannot access any websites except for microsoft.com, microsoft.net, and apple.com.
 
-
-
 ## Get started
 
-1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md). 
-1. On the **Device features** pane, choose **Web Content Filter (supervised only)**.
-2. On the **Web Content Filter** pane, choose the **Filter type** you want to configure from:
+1. On the Device features page, choose **Web Content Filter (supervised only)**.
+2. On the **Web Content Filter** page, choose the **Filter type** you want to configure from:
 	- **Not Configured** - No filtering is performed.
 	- **Configure URLs**
 	- **Specific websites only**
@@ -52,12 +51,12 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 ## Configure URLs
 
-1. On the **Web Content Filter** pane, choose one of the following settings as required:
-   - **Permitted URLs** - On the **Permitted URLs** pane, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
+1. On the **Web Content Filter** page, choose one of the following settings as required:
+   - **Permitted URLs** - On the **Permitted URLs** page, enter the URLs you want to allow (bypassing the Apple web filter), and choose enter after each.
      > [!NOTE]
      > The URLs you specify here are the ones you do not want to subject to the Apple web filter. These URLs do not represent a list of the only web sites allowed. If that is what you want, use **Specific websites only**.
 
-   - **Blocked URLs** - On the **Blocked URLs** pane, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
+   - **Blocked URLs** - On the **Blocked URLs** page, enter the URLs you want to block (regardless of the Apple web filter settings), and choose enter after each.
 2. When you are finished, click **OK**.
 
 
@@ -70,7 +69,7 @@ If you do not specify any URLs, then end users cannot access any websites except
 2. Click **Add** after you enter the information for each website.
 3. When you are finished, click **OK**.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > The following URLs are permitted automatically by Intune.
 > - www.microsoft.com
 > - www.microsoft.net
