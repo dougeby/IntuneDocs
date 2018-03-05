@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 10 devices
-titlesuffix: "Azure portal"
-description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices."
+title: Microsoft Intune VPN settings for Windows 10 devices
+titlesuffix:
+description: Learn about the Intune settings you can use to configure VPN connections on devices running Windows 10.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/26/2018
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,9 +25,11 @@ ms.custom: intune-azure
 
 ---
 
-# VPN settings for Windows 10 devices in Microsoft Intune
+# Configure VPN settings in Microsoft Intune for devices running Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+This article shows you the Intune settings you can use to configure VPN connections on devices running Windows 10.
 
 Depending on the settings you choose, not all values in the following list is configurable.
 
@@ -40,7 +42,7 @@ Depending on the settings you choose, not all values in the following list is co
 
 - **Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **Servers** - Add one or more VPN servers that devices connect to.
-	- **Add** - Opens the **Add Row** blade where you can specify the following information:
+	- **Add** - Opens the **Add Row** page where you can specify the following information:
 		- **Description** - Specify a descriptive name for the server like **Contoso VPN server**.
 		- **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
 		- **Default server** - Enables this server as the default server that devices use to establish the connection. Make sure to set only one server as the default.
@@ -91,7 +93,7 @@ For more information about writing custom XML commands, see each manufacturer's 
 
 For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
-**Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
+**Split tunneling** - **Enable** or **Disable** this option that lets devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 - **Split tunneling routes for this VPN connection** - Add optional routes for third-party VPN providers. Specify a destination prefix, and a prefix size for each.
 
 ## Apps and Traffic Rules
