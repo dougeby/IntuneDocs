@@ -1,37 +1,35 @@
 ---
 # required metadata
 
-title: Intune email settings for Android and Android for Work devices
-titleSuffix: "Azure portal"
-description: Learn about the Intune settings you can use to configure email connections on Android devices."
+title: Microsoft Intune email settings for devices running Android and Android for Work
+titleSuffix:
+description: Learn about the Microsoft Intune settings you can use to configure email settings on devices running Android and Android for Work.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Email profile settings for Android  devices in Microsoft Intune
+# Email profile settings in Microsoft Intune for devices running Android and Android for Work
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-As an Intune admin, you can create and assign email settings to the following Android devices:
+As an Intune administrator, you can create and assign email settings to the following Android devices:
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
@@ -65,7 +63,7 @@ As an Intune admin, you can create and assign email settings to the following An
 
 - **Email app** - Select either **Gmail** or **Nine Work**
 - **Email server** - The host name of your Exchange server.
-- **Username attribute from AAD** - This name is the attribute in Active Directory (AD) or Azure AD, that will be used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.
+- **Username attribute from AAD** - This name is the attribute in Active Directory (AD) or Azure AD, that is used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.
 - **Email address attribute from AAD** - How the email address for the user on each device is generated. Select **User Principal Name** to use the full principal name as the email address or **User name**.
 - **Authentication method** - Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created to authenticate the Exchange connection.

@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: Intune network configuration requirements and bandwidth
-description:
+title: Network requirements and bandwidth details for Microsoft Intune
+titlesuffix: 
+description: Review network configuration requirements and bandwidth details for Intune.
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article

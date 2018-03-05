@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Network access control integration with Intune
-titlesuffix: "Azure portal"
+title: Network access control integration with Microsoft Intune
+titlesuffix:
 description: Network access control (NAC) integration with Intune
 keywords:
-author: bruceperlerMS
-ms.author: bruceper
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article

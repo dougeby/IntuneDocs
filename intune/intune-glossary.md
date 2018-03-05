@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Intune glossary
-titleSuffix: Azure portal
-description: Learn about some of the terminology used in Microsoft Intune
+title: Microsoft Intune glossary
+titleSuffix: Microsoft Intune
+description: Learn the meanings of the terminology used in Microsoft Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
@@ -28,6 +28,7 @@ ms.custom: intune-azure
 ---
 
 # Microsoft Intune glossary
+Learn the definitions of common terms used throughout Microsoft Intune.
 
 ## A
 

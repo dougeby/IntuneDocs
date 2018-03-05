@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: App provisioning profiles 
-titlesuffix: "Azure portal"
+title: iOS app provisioning profiles in Microsoft Intune
+titlesuffix: 
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Use iOS mobile provisioning profiles to prevent your apps from expiring
+# Use iOS mobile provisioning profiles in Intune to prevent your apps from expiring
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

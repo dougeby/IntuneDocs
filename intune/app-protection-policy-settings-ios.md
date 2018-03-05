@@ -2,8 +2,8 @@
 # required metadata
 
 title: iOS app protection policy settings
-titlesuffix: "Azure portal"
-description: This topic describes the app protection policy settings for iOS devices."
+titlesuffix: Microsoft Intune
+description: This topic describes the app protection policy settings for iOS devices.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 #  iOS app protection policy settings
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
+The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Add a Policy** > **Settings** blade in the Azure portal.
 
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term ***policy-managed apps*** refers to apps that are configured with app protection policies.
 

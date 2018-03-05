@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Enroll Windows devices using Windows AutoPilot Deployment Program
-description: "Learn how to enroll new Windows 10 devices using Windows AutoPilot Deployment program."
+title: Enroll devices using Windows AutoPilot Deployment Program
+titleSuffix: Microsoft Intune
+description: Learn how to enroll Windows 10 devices using Windows AutoPilot Deployment program.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -16,7 +17,7 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 
 ---
 
-# Enroll Windows devices using Windows AutoPilot Deployment Program
+# Enroll Windows devices by using the Windows AutoPilot Deployment Program
 The Windows AutoPilot Deployment Program simplifies device provisioning. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## Prerequisites
@@ -27,29 +28,25 @@ The Windows AutoPilot Deployment Program simplifies device provisioning. Buildin
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
 
-1. Sign into [Azure](https://portal.azure.com/).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. Under **Intune**, choose **Device enrollment**.
-4. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.
-5. Click **Sync** to import your registered devices. A message displays that the synchronization is in progress.
-6. Refresh the view to see the new devices. The process might take a few minutes to complete, depending on how many devices are being synchronized.  
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal, choose **Device enrollment**.
+2. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.
+3. Click **Sync** to import your registered devices. A message displays that the synchronization is in progress.
+4. Refresh the view to see the new devices. The process might take a few minutes to complete, depending on how many devices are being synchronized.  
 
 ## Create an AutoPilot deployment profile
 AutoPilot deployment profiles are used to configure the AutoPilot devices.
-1. Sign into the [Azure](https://portal.azure.com/). 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. Under **Intune**, choose **Device enrollment**.
-4. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**.
-5. Click **Create Profile**, and choose a name and optional description. 
-6. For **Join type**, select **Azure AD joined**.​
-7. For **Out-of-box experience (OOBE)**, configure the following options, and then click **OK**: 
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
+2. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**.
+3. Click **Create Profile**, and choose a name and optional description. 
+4. For **Join type**, select **Azure AD joined**.​
+5. For **Out-of-box experience (OOBE)**, configure the following options, and then click **OK**: 
    - **Privacy settings**: Choose whether to show privacy settings to users. 
    - **End-user license agreement (EULA)**: Choose whether to show the EULA to users.
    - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
 
      > [!Note]    
      > This setting does not apply to Global Administrator or Company Administrator accounts. These accounts cannot be standard users because they have access to all administrative features in Azure AD.
-8. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
+6. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
      
 > [!Note]    
 > The following settings are configured with all AutoPilot deployment profiles:
@@ -59,21 +56,17 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 
 ## Alerts for Windows AutoPilot unassigned devices  <!-- 163236 -->
 You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them. 
-1. Sign into the [Azure](https://portal.azure.com/). 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. Under **Intune**, choose **Device enrollment**.
-4. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
+2. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
 
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.
 
-1. Sign into the [Azure](https://portal.azure.com/). 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. Under **Intune**, choose **Device enrollment**.
-4. On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.
-5. Select the devices to which you want to assign the deployment profile. You can filter on the **Status** column to easily find devices without an assigned profile. 
-6. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. A message displays that the assignment is in progress.
-7. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected. 
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
+2. On the **Windows enrollment** blade, in the **Windows AutoPilot Deployment Program** section, choose **Devices**.
+3. Select the devices to which you want to assign the deployment profile. You can filter on the **Status** column to easily find devices without an assigned profile. 
+4. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. A message displays that the assignment is in progress.
+5. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected. 
 
 > [!Note]
 > The new profile is assigned to the device. For devices that have already enrolled in Intune, the profile is applied after the device is reset and reenrolled.
@@ -83,13 +76,11 @@ After you've assigned an AutoPilot deployment profile to a device, if you decide
 
 ## Edit an AutoPilot deployment profile 
 After you've created an AutoPilot deployment profile, you can edit certain parts of the deployment profile.   
-1. Sign into the [Azure](https://portal.azure.com/). 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. Under **Intune**, choose **Device enrollment**.
-4. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**. 
-5. Select the profile you would like to edit. 
-6. Click **Properties** on the left to change the name or description of the deployment profile. Click **Save** after you make changes. 
-7. Click **Settings** to make changes to the OOBE settings. Click **Save** after you make changes. 
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
+2. Under **Windows enrollment**, in the **Windows AutoPilot Deployment Program** section, choose **Deployment Profiles**. 
+3. Select the profile you would like to edit. 
+4. Click **Properties** on the left to change the name or description of the deployment profile. Click **Save** after you make changes. 
+5. Click **Settings** to make changes to the OOBE settings. Click **Save** after you make changes. 
 
 > [!NOTE]
 > The updated profile is assigned to devices. However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled. 

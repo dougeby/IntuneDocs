@@ -1,6 +1,6 @@
 ---
 title: Bulk enrollment for Windows 10
-titlesuffix: "Azure portal"
+titlesuffix: Microsoft Intune
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
 author: Erikje
@@ -39,7 +39,7 @@ Azure AD users are standard users on these devices and receive assigned Intune p
 ## Create a provisioning package
 
 1. Download [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store.
-![Screenshot of the Windows Configuration Designer app Store screenshots and description](media/bulk-enroll-store.png)
+![Screenshot of the Windows Configuration Designer app Store](media/bulk-enroll-store.png)
 
 2. Open the **Windows Configuration Designer** app and select **Provision desktop devices**.
 ![Screenshot of selecting Provision desktop devices in the Windows Configuration Designer app](media/bulk-enroll-select.png)
@@ -51,23 +51,24 @@ Azure AD users are standard users on these devices and receive assigned Intune p
 ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
 4.	Enter a unique name for your devices. Names can include a serial number (%%SERIAL%%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
-![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-device.png)
+
+    ![Screenshot of specifying name and product key in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
 5.	Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.
 ![Screenshot of enabling Wi-Fi including Network SSID and Network type options in the Windows Configuration Designer app](media/bulk-enroll-network.png)
 
 6.	Select **Enroll in Azure AD**, enter a **Bulk Token Expiry** date, and then select **Get Bulk Token**.
-![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-account.png)
+![Screenshot of account management in the Windows Configuration Designer app](media/bulk-enroll-account.png)
 
 7. Provide your Azure AD credentials to get a bulk token.
-![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-cred.png)
+![Screenshot of signing in to the Windows Configuration Designer app](media/bulk-enroll-cred.png)
 
 8.	Click **Next** when **Bulk Token** is fetched successfully.
 
 9. Optionally, you can **Add applications** and **Add certificates**. These apps and certificates are provisioned on the device.
 
 10. Optionally, you can password protect your provisioning package.  Click **Create**.
-![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-create.png)
+![Screenshot of package protection in the Windows Configuration Designer app](media/bulk-enroll-create.png)
 
 ## Provision devices
 

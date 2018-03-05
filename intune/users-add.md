@@ -2,10 +2,11 @@
 # required metadata
 
 title: Add users and grant permissions
-description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
+titlesuffix: Microsoft Intune
+description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
@@ -26,11 +27,9 @@ ms.custom: intune-classic
 
 ---
 
-# Add users and give administrative permission to Intune
+# Add users and grant administrative permission to Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
-
-This topic tells administrators how they can add users to Intune and what administrative permissions are available in the Intune service.
 
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *global administrator* and *service administrator* permissions.
 
@@ -42,7 +41,7 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, select **Add a user**.
 
-  ![Screenshot of the Office 365 Admin](media/office-add-user.png)
+  ![Screenshot of the Add user section](media/office-add-user.png)
 
 4. Specify the following user details:
   - **First name**
@@ -53,7 +52,7 @@ You can manually add users to your Intune subscription via the [Office 365 porta
   - **Contact information** (optional)
   - **Password** - Auto-generate or specify
 
-     ![Screenshot of the Office 365 Admin](media/office-add-user-details.png)
+     ![Screenshot of the new user section](media/office-add-user-details.png)
 
 5. Assign an Intune license. Select **Product licenses** and choose the product license. A license including Intune is required.
 6. Choose **Add** to create the new user.
@@ -62,11 +61,11 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 1. Sign in to [Azure portal](https://portal.azure.com) and go **More services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
 2. Select **Users**.
 3. In the Admin center, select **New user**.
-  ![Screenshot of the Office 365 Admin](media/intune-add-user.png)
+  ![Screenshot of add New User](media/intune-add-user.png)
 4. Specify the following user details:
   - **Name**
   - **User name** - The new name in Azure Active Directory portal
-  ![Screenshot of the Office 365 Admin](media/intune-add-user-info.png)
+  ![Screenshot of adding name and user name](media/intune-add-user-info.png)
   Choose **OK** to continue.
 5. Optionally, you can specify the following user properties:
   - **Profile** - Work information including **Job title** and **Department**
@@ -75,7 +74,7 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 
   Select **Create** to add the new user to Intune.
 6. Select **Profile**, and then choose a **Usage location** for the new user. Usage location is required before you can assign the new user an Intune license. Choose **Save** to continue.
-    ![Screenshot of the Office 365 Admin](media/intune-add-user-loc.png)
+    ![Screenshot of usage location](media/intune-add-user-loc.png)
 7. Select **Licenses** and then choose **Assign** to assign an Intune license for this user. An Intune license is required to enroll devices or access company resources. Select **Products**, choose the license type, choose **Select**, and then choose **Assign**.
 
 ## Grant admin permissions
@@ -86,17 +85,20 @@ After you've added users to your Intune subscription, we recommend that you gran
 1. Sign in to the [Office 365 portal](https://www.office.com/signin) with a global administrator account.
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, choose **Active users** and then choose the user to give admin permissions.
+
 4. In the **Roles** column, choose **Edit**.
-  ![Screenshot of assign roles screen in Office 365](./media/office-assign-roles-open.png)
+
+    ![Screenshot of Admin user](./media/office-assign-roles-open.png)
+
 5. Choose the admin permission to grant from the list of available roles.
-![Image of Office 365 portal assigning Roles.](./media/office-assign-roles.png)
+![Screenshot of  assigning Roles](./media/office-assign-roles.png)
 6. Choose **Save**.
 
 ### Give admin permissions in the Azure portal
 1. Sign in to the [Azure portal](https://www.office.com/signin) with a global administrator account.
 2. In the Azure portal, choose **User**, and then choose the user you want to give admin permissions.
 3. Select **Directory role**, and then select the permission.
-  ![Screenshot](./media/add-intune-directory-role.png)
+  ![Screenshot of Directory role](./media/add-intune-directory-role.png)
 4. Choose **Save**.
 
 ### Types of administrators
