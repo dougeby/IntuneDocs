@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Beginning with Intune 1704 release, you can use app protection policies with Windows 10 in to protect apps without device enrollment.
+Beginning with the Intune 1704 release, you can use app protection policies with Windows 10 in to protect apps without device enrollment.
 
 ## Before you begin
 
@@ -51,13 +51,13 @@ Let’s talk about a few concepts when adding a WIP policy.
 
 -   **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
 
-## Pre-requisites
+## Prerequisites
 
 You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).
 
 Additionally, you need to have the following license and update:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license.
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
@@ -68,7 +68,7 @@ Additionally, you need to have the following license and update:
 
 After you set up Intune in your organization, you can create a WIP-specific policy through the [Azure portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 
@@ -207,4 +207,4 @@ After you created your WIP app protection policy, you need to deploy it to your 
 
 ## Next steps
 
-- Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+Learn more about Windows Information Protection, see [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
