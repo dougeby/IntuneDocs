@@ -3,7 +3,7 @@
 
 title: Windows Intune device restrictions for Windows 10 Team
 titlesuffix:
-description: Learn about the device restrictions available for devices runningWindows 10 Team.
+description: Learn about the device restrictions available for devices running Windows 10 Team.
 keywords:
 author: vhorne
 ms.author: victorh
