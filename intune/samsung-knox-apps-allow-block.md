@@ -40,13 +40,13 @@ These settings can only be used by devices that run Samsung Knox Standard.
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-2. In the list of profiles blade, choose **Create Profile**.
-3. On the **Create Profile** blade, enter a **Name** and optional **Description** for this device profile.
+3. On the **Intune** page, choose **Device configuration**.
+2. On the **Device Configuration** page, choose **Manage** > **Profiles**.
+2. In the list of profiles page, choose **Create Profile**.
+3. On the **Create Profile** page, enter a **Name** and optional **Description** for this device profile.
 2. Choose a **Platform type** of **Android**, and a Profile type of **Custom**.
 3. Click **Settings**.
-3. On the **Custom OMA-URI Settings** blade, choose **Add**.
+3. On the **Custom OMA-URI Settings** page, choose **Add**.
 4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following:
 
    For a list of apps that are blocked from running on the device:
@@ -64,7 +64,7 @@ These settings can only be used by devices that run Samsung Knox Standard.
    - **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
    - **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-4. Click **OK**, and then, on the **Create Profile** blade, choose **Create**.
+4. Click **OK**, and then, on the **Create Profile** page, choose **Create**.
 
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
