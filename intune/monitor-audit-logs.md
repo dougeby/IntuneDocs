@@ -6,7 +6,7 @@ description: Learn how to review audit logs that record Intune activies
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,8 +36,8 @@ Users with the following permissions can review audit logs:
 ## Audit logs for Intune workloads
 You can review audit logs in the Monitoring group for each Intune workload.  
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose the workload for which you want to review audit logs.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose the workload for which you want to review audit logs, for example, **Devices**.
 4. In the **Monitoring** group for the workload, choose **Audit logs**.
 
 ## Review audit events
@@ -47,6 +47,7 @@ An audit log has a default list view that shows the following items:
 
 - date and time of the occurrence
 - Initiated by (Actor)
+- Application Name
 - Activity
 - Target(s)
 - Category
@@ -63,7 +64,7 @@ By clicking an item in the list view, you get all available details about it.
 
 
 ## Filter audit events
-Each workload has a menu item that pre-filters the category of audit events associated with that blade. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days, or 30-day options. By default, the last 30 days of audit events are displayed.
+Each workload has a menu item that pre-filters the category of audit events associated with that pane. A separate filter option lets you change to different categories, and event action details within that category. You can search by UPN (for example, the user who did the action). A date range filter allows 24 hours, 7 days, or 30-day options. By default, the last 30 days of audit events are displayed.
 
 ## Use Graph API to retrieve audit events
 For details about how to use the graph API to retrieve up to one year of audit events, see 

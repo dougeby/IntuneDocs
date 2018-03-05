@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ Prerequisites for device compliance policy with MTD:
 
 1.  Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
 
-2.  On the **Azure Dashboard**, choose **More services** from the left menu, then type **Intune** in the text box filter.
+2.  On the **Azure Dashboard**, choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 3.  Choose **Intune**, the **Intune Dashboard** opens.
 
@@ -54,9 +54,9 @@ Prerequisites for device compliance policy with MTD:
 
 5.  Choose **Create policy**, enter the device compliance **Name**, **Description**, select the **Platform**, then choose **Configure** under the **Settings** section.
 
-6.  On the **compliance policy** blade, choose **Device Health**.
+6.  On the **compliance policy** pane, choose **Device Health**.
 
-7.  On the **Device Health** blade, choose the Mobile Threat Level from the drop-down list under the **Require the device to be at or under the Mobile threat Defense Level**.
+7.  On the **Device Health** pane, choose the Mobile Threat Level from the drop-down list under the **Require the device to be at or under the Device Threat Level**.
 
     a.  **Secured**: This level is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
 
@@ -73,11 +73,11 @@ Prerequisites for device compliance policy with MTD:
 
 ## To assign a MTD device compliance policy
 
-To assign a device compliance policy to users, choose a policy that you have previously configured. Existing policies can be found in the **Device Compliance policies** blade.
+To assign a device compliance policy to users, choose a policy that you have previously configured. Existing policies can be found in the **Device compliance – policies** pane.
 
-1. Choose the policy you want to assign to users and choose **Assignments**. This action opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
+1. Choose the policy you want to assign to users and choose **Assignments**. This action opens the pane where you can select **Azure Active Directory security groups** and assign them to the policy.
 
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
+2. Choose **Select groups to include** to open the pane that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
 
 	> [!NOTE] 
 	> You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.

@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to add Windows store apps to Microsoft Intune
-titleSuffix: 
+titleSuffix:
 description: Learn about adding Windows store apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,27 +33,25 @@ ms.custom: intune-azure
 Before you can assign, monitor, configure, or protect apps, you must add them to Intune. The following steps allow you to add a Windows store app to Microsoft Intune.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Manage apps**.
-4. In the **Mobile apps** workload, choose **Apps** from the **Manage** section.
-5. Choose **Add** above the list.
-6. Select **Windows** from the available **Store app** types in the list.
-7. Choose **App information** to configure the app information.
-8. In the **App information** blade, configure the following information: Depending on the app you have chosen, some of the values in this pane might be automatically filled-in:
-	- **App Name** - Enter the name of the app as it will be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
-	- **Description** - Enter a description for the app. This description will be displayed to users in the company portal.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Mobile apps**.
+4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
+5. Above the list of apps, choose **Add**.
+6. In the **Add app** pane, choose an **App type** of **Windows** and choose **App information**.
+7. In the **App information** pane, configure the following information. Once you are done, click **OK**. Depending on the app you have chosen, some of the values in this pane might have been automatically filled-in:
+	- **Name** - Enter the name of the app as it will be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
+	- **Description** - Enter a description for the app to be displayed to users in the company portal.
 	- **Publisher** - Enter the name of the publisher of the app.
-	- **Appstore URL** - Enter the app store URL of the app you want to create. 
-	- **Category** (optional) - Select one or more of the app categories, or a category you created. Adding this information will make it easier for users to find the app when they browse the company portal.
+	- **Appstore URL** - Enter the app store URL of the app you want to create.
+	- **Category (optional)** - Select one or more of the built-in app categories, or a category you created, which makes it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-	- **Information URL** (optional) - Enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
-	- **Privacy URL** (optional) - Enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
-	- **Developer** (optional) - Enter the name of the app developer.
-	- **Owner** (optional) - Enter a name for the owner of this app, for example, **HR department**.
-	- **Notes** (optional) - Enter any notes you would like to associate with this app.
-	- **Upload Icon** - Upload an icon that will be associated with the app. This icon will be displayed with the app when users browse the company portal.
-1. Click **OK** when you have entered in all app information needed.
-2. Click **Add** on the **Add app** blade.
+	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
+	- **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
+	- **Developer** - Optionally, enter the name of the app developer.
+	- **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
+	- **Notes** - Enter any notes you would like to associate with this app.
+	- **Logo** - Upload an icon to be associated with the app. This icon that is displayed with the app when users browse the company portal.
+8. When you are done, on the **Add app** pane, choose **Add**.
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
@@ -75,10 +73,10 @@ End users can install the Company Portal app from the Microsoft Store to manage 
 
 5. Before uploading the Company Portal app to Intune, create a folder (for example: C:&#92;Company Portal) with the packages structured in the following way:
   - Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
-  
+
     ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
 
-  - Place the nine dependencies packages in the Dependencies folder. If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error: 
+  - Place the nine dependencies packages in the Dependencies folder. If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error:
 
       ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and assign this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
 
