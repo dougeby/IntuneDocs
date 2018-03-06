@@ -33,7 +33,7 @@ This article shows you the Intune settings you can use to configure VPN connecti
 
 Depending on the settings you choose, not all values in the following list are configurable.
 
-## **Base VPN settings**
+## Base VPN settings
 
 **Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
