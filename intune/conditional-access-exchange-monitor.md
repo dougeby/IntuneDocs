@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Monitor conditional access compliance for on-premises Exchange and Exchange Online
-titlesuffix: "Azure portal"
-description: "Monitor conditional access compliance for on-premises Exchange and Exchange Online through the Intune Azure portal"
+title: Monitor Exchange conditional access in Microsoft Intune
+titlesuffix:
+description: Monitor conditional access compliance for on-premises Exchange and Exchange Online through the Intune Azure portal.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -51,13 +51,13 @@ Beginning with Intune 1704 release, admins can see reporting information relate
 
 6.  Choose one of the three areas (**Allowed**, **Blocked**, or **Quarantine**) on the chart to view your conditional access compliance reporting.
 
-    ![Conditional Access Dashboard](./media/CA-reporting-intune-1.png)
+    ![Image of the Conditional Access Dashboard](./media/CA-reporting-intune-1.png)
 
 Once you choose one of three areas, you can see more details about devices being allowed, blocked, or quarantined.
 
 You can also drill down in specific devices to see more details. For example, the device chosen on the following image is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report pane.
 
-![Conditional access device detail reporting](./media/CA-reporting-intune-3.png)
+![Image of Conditional access device detail reporting](./media/CA-reporting-intune-3.png)
 
 At the device details pane, you can see more information:
 
