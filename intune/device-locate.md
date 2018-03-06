@@ -36,7 +36,7 @@ To get the location of a lost or stolen iOS device on a map, use the **Locate De
 
 - iOS 9.3 and later
 
-This feature is **not** supported for the following: 
+This feature is **not** supported for the following systems: 
 - Windows
 - Windows Phone
 - macOS
@@ -48,14 +48,14 @@ This feature is **not** supported for the following:
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, choose **...More**, and then choose the **Locate device** remote action.
-5. After the device is located, it's location is displayed on the **Locate device** blade.
+5. After the device is located, its location is displayed in **Locate device**.
 	![Locate device using Intune in Azure](./media/locate-device.png)
 
 >[!NOTE]
 >For privacy purposes, the distance you can zoom into the map is limited.
 
 ## Security and privacy information for lost mode and locate device actions
-- No device location information is sent to Intune until you turn this action on.
+- No device location information is sent to Intune until you turn on this action.
 - When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
