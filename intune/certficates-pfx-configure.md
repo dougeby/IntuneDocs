@@ -28,6 +28,8 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Certificates are used to authenticate and secure access to your corporate resoruces, such as a VPN or your WiFi network. This article shows you how to export a PKCS certificate, and then add the certificate to an Intune profile. 
+
 ## Requirements
 
 To use PKCS certificates with Intune, be sure you have the following infrastructure:
