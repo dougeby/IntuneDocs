@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Email profile settings for Windows 10 devices in Microsoft Intune
+# Email profile settings in Microsoft Intune for devices running Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
