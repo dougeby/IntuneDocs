@@ -1,26 +1,24 @@
 ---
 # required metadata
 
-title: Intune shared device configuration settings for iOS
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to display information on the iOS device lock screen."
+title: Microsoft Intune shared device configuration settings for iOS
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to display information on the iOS device lock screen.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -31,6 +29,8 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+This article shows you the Microsoft Intune settings you can use to display information on the iOS device lock screen.
+
 Shared device configuration settings let you specify optional text displayed on the login window and lock screen. For example, you can enter an "If Lost, Return to" message and Asset Tag Information. 
 
 >[!IMPORTANT]
@@ -38,12 +38,13 @@ Shared device configuration settings let you specify optional text displayed on 
 
 ## Create shared device settings
 
-1. On the **Device features** blade, choose **Shared Device Configuration (supervised only)**.
-2. On the **Shared Device Configuration (supervised only)** blade, configure the following settings:
+1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md). 
+1. On the **Device features** pane, choose **Shared Device Configuration (supervised only)**.
+2. On the **Shared Device Configuration (supervised only)** pane, configure the following settings:
 	- **Asset tag information** - Enter information about the asset tag of the device. For example: **Owned by Contoso Corp**.
 	The information you enter is applied to all devices you assign this profile to.
 	- **Lock screen footnote** - If the device is lost or stolen, enter a note that might help get the device returned. For example: **If found, call 'number'**.
-3. When you are finished, choose **OK** until you return to the **Create Profile** blade, then choose **Create**. 
+3. When you are finished, choose **OK** until you return to the **Create profile** pane, then choose **Create**. 
 
 
 ## Next steps

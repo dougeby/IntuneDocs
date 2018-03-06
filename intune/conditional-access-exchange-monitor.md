@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,23 +43,23 @@ Beginning with Intune 1704 release, admins can see reporting information relate
 
 2.  After you've successfully signed in, you see the **Azure Dashboard**.
 
-3.  Choose **More services** from the left menu, then type **Intune** in the text box filter.
+3.  Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 4.  Choose **Intune**, you see the **Intune Dashboard**.
 
-5.  Choose **Conditional Access**, then choose **Overview**.
+5.  Choose **Conditional access**, then choose **Overview**.
 
-6.  Choose one of the three areas (**Blocked**, **Quarantine**, or **Allowed**) on the chart to view your conditional access compliance reporting.
+6.  Choose one of the three areas (**Allowed**, **Blocked**, or **Quarantine**) on the chart to view your conditional access compliance reporting.
 
     ![Image of the Conditional Access Dashboard](./media/CA-reporting-intune-1.png)
 
 Once you choose one of three areas, you can see more details about devices being allowed, blocked, or quarantined.
 
-You can also drill down in specific devices to see more details. For example, the device chosen on the following image is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report blade.
+You can also drill down in specific devices to see more details. For example, the device chosen on the following image is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report pane.
 
 ![Image of Conditional access device detail reporting](./media/CA-reporting-intune-3.png)
 
-At the device details blade, you can see more information:
+At the device details pane, you can see more information:
 
 -   **Overview:** You can see device properties like: OS version, device model, ownership, serial number, device manufacturer, phone number, and last time the device checked in.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new in previous months in the Microsoft Intune
-titlesuffix: "Azure portal"
+titlesuffix: 
 description: Review older announcements from the Intune what's new page
 keywords:
 author: brenduns

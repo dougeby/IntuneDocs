@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -307,11 +307,11 @@ In this task, you will:
 ##### To download, install, and configure the certificate connector
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Sign into the Azure portal. 
-2. Select **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, select **Device Configuration**.
-4. On the **Device Configuration** blade, select **Certification Authority**.
-5. Click **Add** and select **Download Connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, select **Device configuration**.
+4. On the **Device configuration** pane, select **Certification Authority**.
+5. Click **Add** and select **Download the connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
 6.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on the server hosting the Network Device Enrollment Service (NDES) role. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
@@ -349,10 +349,10 @@ To validate that the service is running, open a browser and enter the following 
 
 ## How to create a SCEP certificate profile
 
-1. In the Azure portal, select the **Configure devices** workload.
-2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
-3. On the profiles blade, select **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the SCEP certificate profile.
+1. In the Azure portal, select the **Device configuration** workload.
+2. On the **Device configuration** pane, select **Manage** > **Profiles**.
+3. On the profiles pane, select **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the SCEP certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can select one of the following platforms for device restriction settings:
 	- **Android**
 	- **iOS**
@@ -361,7 +361,7 @@ To validate that the service is running, open a browser and enter the following 
 	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, select **SCEP certificate**.
-7. On the **SCEP Certificate** blade, configure the following settings:
+7. On the **SCEP Certificate** pane, configure the following settings:
 	- **Certificate validity period** - If you have run the **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** command on the issuing CA, which allows a custom validity period, you can specify the amount of remaining time before the certificate expires.<br>You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
 	- **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10) - Specify where the key to the certificate is stored. Choose from one of the following values:
 		- **Enroll to Trusted Platform Module (TPM) KSP if present, otherwise Software KSP**
@@ -388,9 +388,9 @@ To validate that the service is running, open a browser and enter the following 
 	- **Enrollment Settings**
 		- **Renewal threshold (%)** - Specify the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
 		- **SCEP Server URLs** - Specify one or more URLs for the NDES Servers that issues certificates via SCEP. 
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. Select **OK**, and then go back to the **Create profile** pane, and select **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 ## How to assign the certificate profile
 

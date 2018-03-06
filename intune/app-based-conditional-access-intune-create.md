@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: App based conditional access policy with Intune
-description: This topic describes how you can configure an app-based conditional access policy with Intune.
+title: Set up app based conditional access policy with Intune
+description: Learn how to create an app-based conditional access policy with Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,11 +26,11 @@ ms.custom: intune-azure
 
 ---
 
-# Set up app-based conditional access policies
+# Set up app-based conditional access policies with Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This article provides instructions on how to set up app-based conditional access policies for apps that are part of the list of approved apps. The list of approved apps consists of apps that were tested by Microsoft.
+This article describes on how to set up app-based conditional access policies for apps that are part of the list of approved apps. The list of approved apps consists of apps that were tested by Microsoft.
 
 > [!IMPORTANT]
 > This article walks through the steps to add an app-based conditional access policy using Exchange Online, but you can use the same steps when adding other apps like SharePoint Online, Microsoft Teams, etc. from the list of approved apps.

@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,13 +38,13 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 1. Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials. After you've successfully signed in, you see the **Azure Dashboard**.
 
-2. On the **Azure Dashboard**, choose **More services** from the left menu, then type **Intune** in the text box filter.
+2. On the **Azure Dashboard**, choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-3. Choose **Intune**, the **Intune Dashboard** opens.
+3. Choose **Intune**; the **Intune Dashboard** opens.
 
 4. On the **Intune Dashboard**, choose **Device compliance**, then choose **Mobile Threat Defense** under the **Setup** section.
 
-5. On the **Mobile Threat Defense** blade, choose **Add**.
+5. On the **Mobile Threat Defense** pane, choose **Add**.
 
 6. Choose your MTD solution as the **Mobile Threat Defense connector to setup** from the drop-down list.
 
@@ -70,4 +70,4 @@ You can decide which MTD toggle options you need to enable according to your org
 > You must add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
 
 > [!TIP]
-> You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense blade.
+> You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense pane.

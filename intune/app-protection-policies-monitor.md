@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to monitor app protection policies 
-titleSuffix: "Azure portal"
-description: See how many users have the policy, and drill down to find more details."
+titleSuffix: Microsoft Intune
+description: Monitor the compliance status of mobile app management policies in Intune.
 keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: intune-azure
 **If you are not in the Azure portal**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the Intune classic portal.
 
 
-You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection pane on the [Azure portal](https://portal.azure.com). You can find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
+Monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection pane on the [Azure portal](https://portal.azure.com). Find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status:
 
@@ -85,11 +85,11 @@ To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **Summary** tile.
 
-	![Screenshot 3](./media/MAM-reporting-6.png)
+	![Screenshot highlighting the Summary tile on the Intune mobile application management, Settings blade](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** pane that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Select user option on the App reporting pane](./media/MAM-reporting-2.png)
+    ![Screenshot highlighting the Select user option on the App reporting pane](./media/MAM-reporting-2.png)
 
 3. Select the user from the list. You can see the details of the compliance status for that user.
 
@@ -100,7 +100,7 @@ The detailed view shows the error message, the app that was accessed when the er
 
 You can find the same reports from the Detailed view, and additional reports to help you with the MAM policy compliance status:
 
-![Screenshot-4](./media/MAM-reporting-7.png)
+![Screenshot highlighting 2 reports available in the Settings pane](./media/MAM-reporting-7.png)
 
 -   **App protection user report:** It outlines the same information you can find at the **User status** report under the Detailed view section above.
 
@@ -116,7 +116,7 @@ You can find the same reports from the Detailed view, and additional reports to 
 
         -   All apps are checked in, but aren't getting any MAM policies.
 
-![Screenshot-2](./media/MAM-reporting-4.png)
+![Screenshot showing a user's App reporting blade with a table of details for 3 registered apps](./media/MAM-reporting-4.png)
 
 ## Table grouping
 
@@ -133,11 +133,11 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
-	![Screenshot-6](./media/app-protection-report-csv-2.png)
+	![Screenshot highlighting the App protection download link on the Intune mobile application management pane](./media/app-protection-report-csv-2.png)
 
 2. Choose Yes to save your report, then choose Save As and select the folder you want to save the report in.
 
-	![Screenshot-7](./media/app-protection-report-csv-1.png)
+	![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
 
 ## See also
 [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)

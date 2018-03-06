@@ -95,7 +95,7 @@ Go to the certificate (.p7m) file, choose **Open**, and then choose **Upload**. 
 ## Create an Apple enrollment profile
 A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In Intune in the Azure portal, choose **Device enrollment**, and then choose **Apple Enrollment**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**, and then choose **Apple Enrollment**.
 2. Under **Enrollment Program**, choose **Enrollment Program Profiles**.
 3. On the **Enrollment Program Profiles** blade, choose **Create**.
 4. On the **Create Enrollment Profile** blade, enter a **Name** and **Description** for the profile that is displayed in Intune.
@@ -155,7 +155,7 @@ A device enrollment profile defines the settings applied to a group of devices d
 ## Sync managed devices
 Now that Intune has been assigned permission to manage your Apple School Manager devices, you can synchronize Intune with the Apple service to see your managed devices in Intune.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
 2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
@@ -172,7 +172,7 @@ Now that Intune has been assigned permission to manage your Apple School Manager
 ## Assign a profile to devices
 Apple School Manager devices managed by Intune must be assigned an enrollment profile before they are enrolled.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program profiles**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program profiles**.
 2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Device Assignments**
 
  ![Device Assignments with Assign selected.](./media/enrollment-program-device-assign.png)

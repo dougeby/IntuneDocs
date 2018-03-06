@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up Intune
+title: Set up Microsoft Intune
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-These set-up steps help you enable mobile device management (MDM). Devices must be managed before you can give users access to company resources or manage settings on those devices.
+These set-up steps help you enable mobile device management (MDM) by using Intune. Devices must be managed before you can give users access to company resources or manage settings on those devices.
 
 Some steps, such as setting up an Intune subscription and setting the MDM authority, are required for most scenarios. Other steps, such as configuring a custom domain or adding apps, are optional depending upon your company's needs.
 

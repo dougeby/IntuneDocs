@@ -8,7 +8,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Remote lock is supported for the following platforms:
 |Android|Yes|
 |iOS|Yes|
 |macOS|Yes|
-|Windows 10|Yes|
+|Windows 10 desktop|No|
 |Windows 10 Mobile|Yes|
 |Windows Phone|Yes, for Windows Phone 8.1 and later|
 

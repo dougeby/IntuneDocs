@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add app configuration policies for managed apps without device enrollment | Microsoft Docs 
-titlesuffix: "Azure portal"
-description: Learn how to use app configuration policies for managed apps without device enrollment.
+title: Configuration policies for managed apps without device enrollment
+titlesuffix: Microsoft Intune
+description: Learn how to configure policies for managed apps without device enrollment.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/05/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

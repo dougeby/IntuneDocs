@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Intune
-titlesuffix: "Azure portal"
-description: Restrict enrollment by platform and set a device enrollment limit in Intune. "
+title: Add groups to organize users and devices
+titlesuffix: Microsoft Intune
+description: Add groups to organize users and devices by geography, department, or hardware specifics.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Add groups in Intune
+# Add groups to organize users and devices
 Intune uses Azure Active Directory (AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or  deploy apps to a set of devices.
 
 This topic explains how to add groups for use in Intune.
@@ -38,16 +38,18 @@ You can add the following types of groups:
 ## Add a new group
 
 Use the following steps to create a new group.
-1. In the Azure portal, go **Groups** and then choose **New group** in the **All groups** blade.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Groups** and then choose **New group** in the **All groups** pane.
   ![Screenshot of the Azure portal with New Group selected](./media/groups-add-new.png)
-2. Specify the **Name** and **Description** of the new group. These properties only appear in the management portal and are not displayed to users.
+2. Specify a **Group type**, the **Name**, and **Description** of the new group. These properties only appear in the management portal and are not displayed to users.
 
 3. Choose **Membership type**:
   - **Assigned** to create group with manually assigned members. Learn more about [Azure AD assigned groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
   - **Dynamic User** to create a user group defined with a **Dynamic query**.
   - **Dynamic Device** to create a device group defined with a **Dynamic query**.
 
-  ![Screenshot of Intune group properties with Name, Description, Membership type, Enable Office features, and Members](./media/groups-add-properties.png)
+  ![Screenshot of Intune group properties](./media/groups-add-properties.png)
 
   Azure AD lets you create dynamic groups based on rules that define membership. Learn to [create attribute-based dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
