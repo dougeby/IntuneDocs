@@ -1,12 +1,11 @@
 ---
-title: Configure and manage PKCS certificates with Intune
-titleSuffix: "Intune on Azure"
-description: Create and assign PKCS certificates with Intune."
+title: Use PKCS certificates with Microsoft Intune - Azure | Micrososft Docs
+description: Add or create Public Key Cryptography Standards certificates with Microsoft Intune, including the steps to export a root certificate, configure the certificate template, download and install the Microsoft Intune Certificate Connector, create a device configuration profile, create a PKCS Certificate profile in Azure and your Certificate Authority
 keywords:
-author: MicrosoftGuyJFlo
-ms.author: joflore
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,37 +24,39 @@ ms.custom: intune-azure
 
 
 ---
-# Configure and manage PKCS certificates with Intune
+# Configure and use PKCS certificates with Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Certificates are used to authenticate and secure access to your corporate resources, such as a VPN or your WiFi network. This article shows you how to export a PKCS certificate, and then add the certificate to an Intune profile. 
+
 ## Requirements
 
-To use PKCS certificates with Intune, you must have the following infrastructure:
+To use PKCS certificates with Intune, be sure you have the following infrastructure:
 
 * An existing Active Directory Domain Services (AD DS) domain configured.
  
-  If you need more information about how to install and configure AD DS see the article [AD DS Design and Planning](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
+  For more information about installing and configuring AD DS, see [AD DS Design and Planning](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
 * An existing Enterprise Certification Authority (CA) configured.
 
-  If you need more information about how to install and configure Active Directory Certificate Services (AD CS) see the article [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393).
+  For more information on installing and configuring Active Directory Certificate Services (AD CS), see [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]
   > Intune requires you to run AD CS with an Enterprise Certification Authority (CA), not a Standalone CA.
 
 * A client that has connectivity to the Enterprise CA.
 * An exported copy of your root certificate from your Enterprise CA.
-* The Microsoft Intune Certificate Connector (NDESConnectorSetup.exe) downloaded from your Intune Portal.
-* A Windows Server available to host the Microsoft Intune Certificate Connector (NDESConnectorSetup.exe).
+* The Microsoft Intune Certificate Connector (NDESConnectorSetup.exe) downloaded from your Intune portal.
+* A Windows Server to host the Microsoft Intune Certificate Connector (NDESConnectorSetup.exe).
 
 ## Export the root certificate from the Enterprise CA
 
-You need a root or intermediate CA certificate on each device for authentication with VPN, WiFi, and other resources. The following steps explain how to get the required certificate from your Enterprise CA.
+To authenticate with VPN, WiFi, and other resources, a root or intermediate CA certificate is needed on each device. The following steps explain how to get the required certificate from your Enterprise CA.
 
-1. Log in to your Enterprise CA with an account that has administrative privileges.
+1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open a command prompt as an administrator.
-3. Export the Root CA Certificate to a location where you can access it later.
+3. Export the Root CA Certificate (.cer) to a location where you can access it later.
 
    For example:
 
@@ -67,107 +68,105 @@ You need a root or intermediate CA certificate on each device for authentication
 
 ## Configure certificate templates on the certification authority
 
-1. Log in to your Enterprise CA with an account that has administrative privileges.
-2. Open the **Certification Authority** console.
-3. Right-click **Certificate Templates** and choose **Manage**.
-4. Locate the **User** certificate template, right-click it and choose **Duplicate Template**. A window opens, **Properties of New Template**.
-5. On the **Compatibility** tab
+1. Sign in to your Enterprise CA with an account that has administrative privileges.
+2. Open the **Certification Authority** console, right-click **Certificate Templates**, and select **Manage**.
+3. Locate the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
+4. On the **Compatibility** tab: 
    * Set **Certification Authority** to **Windows Server 2008 R2**
    * Set **Certificate recipient** to **Windows 7 / Server 2008 R2**
-6. On the **General** tab:
+5. On the **General** tab:
    * Set **Template display name** to something meaningful to you.
 
    > [!WARNING]
-   > **Template name** by default is the same as **Template display name** with *no spaces*. Note the template name for later use.
+   > **Template name** by default is the same as **Template display name** with *no spaces*. Note the template name, you need it later.
 
-7. On the **Request Handling** tab, check the **Allow private key to be exported** box.
-8. On the **Cryptography** tab, confirm that the **Minimum key size** is set to 2048.
-9. On the **Subject Name** tab, choose the radio button **Supply in the request**.
-10. On the **Extensions** tab, confirm that you see Encrypting File System, Secure Email, and Client Authentication under **Application Policies**.
+6. In **Request Handling**, select **Allow private key to be exported**.
+7. In **Cryptography**, confirm that the **Minimum key size** is set to 2048.
+8. In **Subject Name**, choose **Supply in the request**.
+9. In **Extensions**, confirm that you see Encrypting File System, Secure Email, and Client Authentication under **Application Policies**.
     
       > [!IMPORTANT]
-      > For iOS and macOS certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure that **Signature is proof of origin** is not selected.
+      > For iOS and macOS certificate templates, go to the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** isn't selected.
 
-11. On the **Security** tab, add the Computer Account for the server where you install the Microsoft Intune Certificate Connector.
+10. In **Security**, add the Computer Account for the server where you install the Microsoft Intune Certificate Connector.
     * Allow this account **Read** and **Enroll** permissions.
-12. Click **Apply**, then click **OK** to save the certificate template.
-13. Close the **Certificate Templates Console**.
-14. From the **Certification Authority** console, right-click **Certificate Templates**, **New**, **Certificate Template to Issue**.
-    * Choose the template that you created in the preceding steps and click **OK**.
-15. For the server to manage certificates on behalf of Intune enrolled devices and users, follow these steps:
+11. Select **Apply**, then **OK** to save the certificate template.
+12. Close the **Certificate Templates Console**.
+13. From the **Certification Authority** console, right-click **Certificate Templates**, **New**, **Certificate Template to Issue**.
+    * Choose the template that you created in the preceding steps, and select **OK**.
+14. For the server to manage certificates on behalf of Intune enrolled devices and users, follow these steps:
 
     a. Right-click the Certification Authority, choose **Properties**.
 
     b. On the security tab, add the Computer account of the server where you run the Microsoft Intune Certificate Connector.
       * Grant **Issue and Manage Certificates** and **Request Certificates** Allow permissions to the computer account.
-16. Log out of the Enterprise CA.
+15. Sign out of the Enterprise CA.
 
 ## Download install and configure the Microsoft Intune Certificate Connector
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-2. On the **Intune** blade, select **Device configuration**. 
-3. On the **Device configuration** blade, select **Certification Authority**. 
-4. Click **Add** and select **Download the connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
-5.	Log in to the server where you will install the Microsoft Intune Certificate Connector.
-6.	Run the installer and accept the default location. It installs the connector to C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
-    1. On the Installer Options page chose **PFX Distribution** and click **Next**.
-    2. Click **Install** and wait for installation to complete.
-    3. On the Completion page, check the box labeled **Launch Intune Connector** and click **Finish**.
-7.	The NDES Connector window should now open to the **Enrollment** tab. To enable the connection to Intune, click **Sign In** and provide an account with administrative permissions.
-8.	On the **Advanced** tab, you can leave the radio button **Use this computer's SYSTEM account (default)** selected.
-9.	Click **Apply** then **Close**.
-10.	Now go back on the Azure portal. After a few minutes, you should see a green check mark and the word **Active** under **Connection status** in **Intune** > **Device Configuration** > **Certification Authority**. This confirmation lets you know that your connector server can communicate with Intune.
+1. In the [Azure portal](https://portal.azure.com), select **All services**, and filter for **Intune**. Select **Microsoft Intune**, and then select **Device Configuration**. 
+2. Select **Certification Authority**, select **Add**, and then select **Download the Connector file**. Save the download to a location where you can access it from the server where it will be installed. 
+3. Sign in to this server, and run the installer: 
 
+    1. Accept the default location. It installs the connector to `\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe`.
+    2. In Installer Options, select **PFX Distribution**, and select **Next**.
+    3. **Install**, and wait for installation to complete.
+    4. When it completes, check **Launch Intune Connector**, and then **Finish**.
+
+4. The NDES Connector window should open to the **Enrollment** tab. To enable the connection to Intune, select **Sign In**, and enter an account with global administrative permissions.
+5. On the **Advanced** tab, leave **Use this computer's SYSTEM account (default)** selected.
+6. **Apply**, and then **Close**.
+7. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few minutes, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
 
 ## Create a device configuration profile
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Navigate to **Intune**, **Device configuration**, **Profiles**, and click **Create profile**.
+2. Go to **Intune**, **Device configuration**, **Profiles**, and select **Create profile**.
 
    ![NavigateIntune][NavigateIntune]
 
-3. Populate the following information:
+3. Enter the following properties:
    * **Name** for the profile
    * Optionally set a description
    * **Platform** to deploy the profile to
    * Set **Profile type** to **Trusted certificate**
-4. Navigate to **Settings** and provide the .cer file Root CA Certificate exported previously.
+
+4. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
    > [!NOTE]
-   > Depending on the Platform you chose in **Step 3** you may or may not have an option to choose the **Destination store** for the certificate.
+   > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
 
    ![ProfileSettings][ProfileSettings]
 
-5. Click **OK** then **Create** to save your profile.
-6. To assign the new profile to one or more devices see [How to assign Microsoft Intune device profiles](device-profile-assign.md).
+5. Select **OK**, and then **Create** to save your profile.
+6. To assign the new profile to one or more devices, see [How to assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Create a PKCS Certificate profile
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Navigate to **Intune**, **Device configuration**, **Profiles**, and click **Create profile**.
-3. Populate the following information:
+2. Go to **Intune**, **Device configuration**, **Profiles**, and select **Create profile**.
+3. Enter the following properties:
    * **Name** for the profile
    * Optionally set a description
    * **Platform** to deploy the profile to
    * Set **Profile type** to **PKCS Certificate**
-4. Navigate to **Settings** and provide the following information:
+4. Go to **Settings**, and enter the following properties:
    * **Renewal threshold (%)** - Recommended is 20%.
-   * **Certificate validity period** - If you did not change the certificate template this option should be set to one year.
-   * **Certification authority** - This option is the internal fully qualified domain name (FQDN) of your Enterprise CA.
-   * **Certification authority name** - This option is the name of your Enterprise CA and may be different than the previous item.
-   * **Certificate template name** - This option is the name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
+   * **Certificate validity period** - If you didn't change the certificate template, this option may be set to one year.
+   * **Certification authority** - Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.
+   * **Certification authority name** - Lists the name of your Enterprise CA, and it may be different than the previous item.
+   * **Certificate template name** - The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
    * **Subject name format** - Set this option to **Common name** unless otherwise required.
    * **Subject alternative name** - Set this option to **User principal name (UPN)** unless otherwise required.
-   * **Extended key usage** - As long as you used the default settings in Step 10 in the preceding section **Configure certificate templates on the certification authority**, add the following **Predefined values** from the selection box:
+   * **Extended key usage** - As long as you used the default settings in Step 10 in the [Configure certificate templates on the certification authority](#configure-certificate-templates-on-the-certification-authority) section (in this article), add the following **Predefined values** from the selection:
       * **Any Purpose**
       * **Client Authentication**
       * **Secure Email**
-   * **Root Certificate** - (For Android Profiles) This option is the .cer file exported in Step 3 under the previous section [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca).
+   * **Root Certificate** - (For Android Profiles) Lists the .cer file exported in Step 3 in the [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca) section (in this article).
 
-5. Click **OK**, then click **Create** to save your profile.
+5. Select **OK**, then **Create** to save your profile.
 6. To assign the new profile to one or more devices, see the article [How to assign Microsoft Intune device profiles](device-profile-assign.md).
 
 

@@ -29,6 +29,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+This article shows you the Intune settings you can use to configure VPN connections on devices running Android.
+
+
 You can configure VPN settings for the following platforms:
 
 - [Android](#android-vpn-settings)

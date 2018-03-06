@@ -1,35 +1,36 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows Phone 8.1
-titleSuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows Phone 8.1 devices."
+title: Microsoft Intune device restriction settings for Windows Phone 8.1
+titleSuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows Phone 8.1.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Windows Phone 8.1 device restriction settings in Microsoft Intune
+# Microsoft Intune Windows Phone 8.1 device restriction settings
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows Phone 8.1.
+
 
 ## General
 
@@ -45,7 +46,7 @@ ms.custom: intune-azure
 ## Password
 
 - 	**Password** - Require the end user to enter a password to access the device.
-	- 	**Required password type** - Specifies the type of password that will be required, such as alphanumeric or numeric only.
+	- 	**Required password type** - Specifies the type of password that is required, such as alphanumeric or numeric only.
 	- 	**Minimum password length** - Specifies the minimum number of characters that are required in the password.
 	- 	**Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
 	- 	**Number of sign-in failures before wiping device** - Specifies the number of times an incorrect password can be entered before the device is wiped.
@@ -75,13 +76,13 @@ From the [Windows Phone Store](https://www.microsoft.com/store/apps/windows-phon
 
 Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the allowed or blocked apps list.
 
-Example: Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Example: Search the store for the Skype app. The URL you use is **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 
 ### Additional options
 
-You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
+You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <app publisher>, or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
 
 
 ## Browser
