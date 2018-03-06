@@ -38,7 +38,7 @@ To use PKCS certificates with Intune, be sure you have the following infrastruct
 
 * An existing Enterprise Certification Authority (CA) configured.
 
-  Fore more information on installing and configuring Active Directory Certificate Services (AD CS), see [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393).
+  For more information on installing and configuring Active Directory Certificate Services (AD CS), see [Active Directory Certificate Services Step-by-Step Guide](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]
   > Intune requires you to run AD CS with an Enterprise Certification Authority (CA), not a Standalone CA.
@@ -50,7 +50,7 @@ To use PKCS certificates with Intune, be sure you have the following infrastruct
 
 ## Export the root certificate from the Enterprise CA
 
-A root or intermediate CA certificate is needed on each device for authentication with VPN, WiFi, and other resources. The following steps explain how to get the required certificate from your Enterprise CA.
+To authenticate with VPN, WiFi, and other resources, a root or intermediate CA certificate is needed on each device. The following steps explain how to get the required certificate from your Enterprise CA.
 
 1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open a command prompt as an administrator.
@@ -84,7 +84,7 @@ A root or intermediate CA certificate is needed on each device for authenticatio
 9. In **Extensions**, confirm that you see Encrypting File System, Secure Email, and Client Authentication under **Application Policies**.
     
       > [!IMPORTANT]
-      > For iOS and macOS certificate templates, on the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** is not selected.
+      > For iOS and macOS certificate templates, go to the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** isn't selected.
 
 10. In **Security**, add the Computer Account for the server where you install the Microsoft Intune Certificate Connector.
     * Allow this account **Read** and **Enroll** permissions.
@@ -131,10 +131,10 @@ A root or intermediate CA certificate is needed on each device for authenticatio
    * **Platform** to deploy the profile to
    * Set **Profile type** to **Trusted certificate**
 
-4. Go to **Settings**, and enter the .cer file Root CA Certificate your previously exported.
+4. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
    > [!NOTE]
-   > Depending on the Platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
+   > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
 
    ![ProfileSettings][ProfileSettings]
 
@@ -158,11 +158,11 @@ A root or intermediate CA certificate is needed on each device for authenticatio
    * **Certificate template name** - The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
    * **Subject name format** - Set this option to **Common name** unless otherwise required.
    * **Subject alternative name** - Set this option to **User principal name (UPN)** unless otherwise required.
-   * **Extended key usage** - As long as you used the default settings in Step 10 in the [Configure certificate templates on the certification authority](#configure-certificate-templates-on-the-certification-authority) section (in this topic), add the following **Predefined values** from the selection:
+   * **Extended key usage** - As long as you used the default settings in Step 10 in the [Configure certificate templates on the certification authority](#configure-certificate-templates-on-the-certification-authority) section (in this article), add the following **Predefined values** from the selection:
       * **Any Purpose**
       * **Client Authentication**
       * **Secure Email**
-   * **Root Certificate** - (For Android Profiles) Lists the .cer file exported in Step 3 in the [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca) section (in this topic).
+   * **Root Certificate** - (For Android Profiles) Lists the .cer file exported in Step 3 in the [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca) section (in this article).
 
 5. Select **OK**, then **Create** to save your profile.
 6. To assign the new profile to one or more devices, see the article [How to assign Microsoft Intune device profiles](device-profile-assign.md).
