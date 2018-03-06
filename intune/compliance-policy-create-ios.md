@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOS
-titleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for iOS devices."
+title: Create an iOS device compliance policy in Microsoft Intune
+titleSuffix:
+description: Create a Microsoft Intune device compliance policy for iOS devices so you can specify requirements that a device must meet to be compliant.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is, see [what is a device compliance](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md) topic.
+An Intune device compliance policy for iOS specifies the rules and settings that iOS devices must meet to be considered compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies and the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md) topic.
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
