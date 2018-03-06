@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to add Windows Phone 8.1 store apps to Intune
-titleSuffix: "Azure portal"
-description: Learn about adding Windows Phone 8.1 store apps to Intune."
+title: How to add Windows Phone 8.1 store apps to Microsoft Intune
+titleSuffix: 
+description: Learn about adding Windows Phone 8.1 store apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Before you assign an app to a device or a group of users, you must first add the app to Microsoft Intune. The following steps allow you to add an Windows Phone 8.1 store app to Intune from the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
@@ -53,3 +54,7 @@ ms.custom: intune-azure
 8. When you are done, on the **Add app** pane, choose **Add**.
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+
+## Next steps
+
+- [How to assign apps to groups](apps-deploy.md)

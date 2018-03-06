@@ -40,7 +40,7 @@ Microsoft Intune allows you, as the IT admin, to mange the mobile apps that your
 
 Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune.
 
-Intune offers a range of capabilities to help you get the apps you need on the devices you want. The following table provides a summary of app manaagement capabilities. Below the table is a starting point to understand Microsoft Intune in the Azure portal.
+Intune offers a range of capabilities to help you get the apps you need on the devices you want. The following table provides a summary of app management capabilities. Below the table is a starting point to understand Microsoft Intune in the Azure portal.
 
 ## App management capabilities by platform
 
@@ -57,7 +57,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 |Assign and track volume-purchased apps from an app store|No|No|No|Yes|
 |Mandatory install of apps on devices (Required)<sup>2</sup>|Yes|Yes|Yes|Yes|
 |Optional installation on devices from the Company Portal (Available install)|Yes|Yes|Yes|Yes|
-|Install shortcut to an app on the web (web clip)|Yes|Yes|Yes|Yes|
+|Install shortcut to an app on the web (web link)|Yes|Yes|Yes|Yes|
 |In-house (line-of-business) apps|Yes|Yes|No|Yes|
 |Apps from a store|Yes|Yes|Yes|Yes|
 |Update apps|Yes|Yes|Yes|Yes|
@@ -76,25 +76,29 @@ You can find most things app-related in the **Mobile Apps** workload that you ca
 
 	![The Mobile Apps workload](./media/apps-workload.png)
 
+The information below corresponds with the options available in the **Mobile apps** blade.
+
 ### Manage
-- **Apps** - This node is where you add, assign, and monitor most of your apps.
+- **Apps** - Select this option to add, view, assign, and monitor the apps your workforce use. For more information, see the following articles:
 	- [Add apps](apps-add.md)
 	- [Assign apps](apps-deploy.md)
 	- [Monitor apps](apps-monitor.md)
-- **App configuration policies** - App configuration policies let you supply settings that might be required when a user runs an app.
-	- [iOS app configuration policies](app-configuration-policies-use-ios.md)
-	- [Android app configuration policies](app-configuration-policies-use-android.md)
-- **App protection policies** - Lets you associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.
+- **App configuration policies** - App configuration policies allow you to supply settings that might be required when a user runs an app. For more information, see the following articles:
+    - [App configuration policies for Intune](app-configuration-policies-overview.md)
+    	- [iOS app configuration policies](app-configuration-policies-use-ios.md)
+    	- [Android app configuration policies](app-configuration-policies-use-android.md)
+- **App protection policies** - App protection policies allow you to associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app. For more information, see the following article:
 	- [App protection policies](app-protection-policies.md)
-- **App selective wipe** - Remove only corporate data from a users device you select.
+- **App selective wipe** - Remove only corporate data from a users device that you select. For more information, see the following article:
 	- [App selective wipe](apps-selective-wipe.md)
-- **iOS provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry.
+- **iOS app provisioning profiles** - iOS apps include a provisioning profile and code that is signed by a certificate. When the certificate expires, the app can no longer be run. Intune gives you the tools to proactively assign a new provisioning profile policy to devices that have apps that are nearing expiry. For more information, see the following article:
 	- [iOS app provisioning profiles](app-provisioning-profile-ios.md)
 
 For more details, see [Manage apps](app-management.md).
 
 ### Monitor
-- **App licenses** - View, assign, and monitor volume-purchased apps from the app stores.
+- **App licenses** - View, assign, and monitor volume-purchased apps from the app stores. For more information, see the following articles:
+    - [iOS volume-purchased program (VPP) apps](vpp-apps-ios.md)
 	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
 - **Discovered Apps** - Shows all apps that were assigned by Intune and installed on a device.
 - **App Install Status** - Shows the status of an app assignment you created.
@@ -108,18 +112,18 @@ For more details, see [Monitor apps](apps-monitor.md).
 	- [iOS volume-purchased apps](vpp-apps-ios.md)
 - **Windows enterprise certificate** - Apply or view the status of a code-signing certificate used to distribute line-of-business apps to your managed Windows devices.
 - **Windows Symantec certificate** - Apply or view the status of a Symantec code-signing certificate which is needed to distribute XAP and WP8.x appx files to Windows 10 Mobile devices.
-- **Microsoft Store for Business** - Set up integration to the Microsoft Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage.
+- **Microsoft Store for Business** - Set up integration to the Microsoft Store for Business. Afterwards, you can synchronize purchased applications to Intune, assign them, and track your license usage. For more information, see the following article:
 	- [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md)
-- **Windows side loading keys** - You can add a Windows side loading key that can be used to install an app directly to devices rather than publishing and downloading the app from the Windows store.
+- **Windows side loading keys** - You can add a Windows side loading key that can be used to install an app directly to devices rather than publishing and downloading the app from the Windows store. For more information, see the following article:
 	- [Side load a Windows app](app-sideload-windows.md)
-- **Company Portal branding** - Customize the Company Portal to give it your company branding.
+- **Company Portal branding** - Customize the Company Portal to give it your company branding. For more information, see the following article:
 	- [Company portal configuration](company-portal-app.md)
 - **App categories** - Add, pin, and delete app category names.
-- **Android for Work** - Approve and sync the apps you have approved for your enterprise.
+- **Android for Work** - Approve and sync the apps you have approved for your enterprise. For more information, see the following article:
 	- [Android for Work apps](apps-add-android-for-work.md)
 
 ### Help and Support
-- **Help and support** - Troubleshoot, request support, or view Intune status.
+- **Help and support** - Troubleshoot, request support, or view Intune status. For more information, see the following article:
 	- [Troubleshoot problems](help-desk-operators.md)
 
 ## Next steps

@@ -7,7 +7,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,23 +41,18 @@ You can only assign apps using this method if they are free of charge in the app
 >[!NOTE]
 >Chrome and Edge are the recommended browsers when working with Microsoft Intune.
 
-## Step 1 - Search for the app in the store
-
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
 4. In the **Mobile apps** workload, choose **Apps** under the **Manage** section.
 5. Choose **Add** on the right side of the **Apps** pane.
 6. In the **App type** list, select **iOS** under the available **Store app** types.
-6. Choose **Search the App Store**.
-7. In the **Search the App Store** blade, select the App store country locale.
-8. Type the name (or part of the name) in the search box. Intune searches the store and return a list of relevant results.
-9. From the list, choose the app you want, then click **Select**.
-
-## Step 2 - Configure app information
-
-1. In the **Add app** blade, choose **App information** to configure the app.
-2. In the **App information** blade, add the app information. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
+7. Choose **Search the App Store**.
+8. In the **Search the App Store** blade, select the App store country locale.
+9. Type the name (or part of the name) in the search box. Intune searches the store and return a list of relevant results.
+10. From the list, choose the app you want, then click **Select**.
+11. In the **Add app** blade, choose **App information** to configure the app.
+12. In the **App information** blade, add the app information. Depending on the app you have chosen, some of the values in this blade might have been automatically filled-in:
 - **Name** -- Type the name of the app for display in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, the company portal displays only one of the apps to users.
 - **Description** -- Type a description for the app to displayed to users in the company portal.
 - **Publisher** -- Type the name of the publisher of the app.

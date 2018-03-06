@@ -30,32 +30,38 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Before you can assign, monitor, configure, or protect apps, you must add them to Intune. Intune supports a wide range of different app types. The available options differ for each app type.
+Before you can assign, monitor, configure, or protect apps, you must add them to Microsoft Intune.
 
-Intune lets you add and assign these app types:
+The users of apps and devices at your company (your company's workforce) may have several app requirements. Before adding apps to Intune and making them available to your workforce, you must assess and understand a few app fundementals. You must understand the different types of apps available for Intune. You will need to assess the app requirements, such as the the needed platforms and capabilities needed for your workforce. Also, you must determine whether you will use Intune to manage the devices (including apps), or have Intune manage apps without managing devices. You must determine who in your workforce will need different apps and different capabilities. The information provided in this article will help you get started.
+
+Intune supports a wide range of different app types. The available options differ for each app type. Intune lets you add and assign these app types:
+
 | App Type                                 	| Installation                                                               	| Updates                   	|
 |------------------------------------------	|----------------------------------------------------------------------------	|---------------------------	|
-| Apps on the web                          	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
+| Apps from the store (store apps)         	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 | Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
-| Apps from the store                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
-| Apps that are built-in                      	| Intune installs the app on the   device                                    	| App updates are automatic 	|
+| Apps that are built-in (built-in apps)   	| Intune installs the app on the   device                                    	| App updates are automatic 	|
+| Apps on the web (web link)               	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
 
+ You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** blade will be displayed and allow you to select the **App type**. The following table lists the available app types in Microsoft Intune.
 
-In addition to web apps, Intune supports the following specific platforms for store apps and LOB apps:
-- Store apps
-    - Android store apps
-    - iOS store apps
-    - Windows Phone 8.1 store apps
-    - Windows store apps
-    - Android for Work apps
-    - Office 365 apps for Windows
-    - Office 365 apps for macOS
-- Build your app - Line-of-business (LOB)
-    - Android line-of-business (LOB) apps
-    - iOS line-of-business (LOB) apps
-    - Windows Phone line-of-business (LOB) apps (.xap files)
-    - Windows line-of-business (LOB) apps (.msi files only)
-- Built-in apps    
+| App   Type                  | Platform Details                                       | Add to Microsoft Intune                                                                                                                                                                        |   |   |
+|-----------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Store app                  | [Android store apps](store-apps-android.md)                                     | Select **Android** as the **app type** and enter the Google Play store   URL for the app.                                                                                                      |   |   |
+| Store app                            | [iOS store apps](store-apps-ios.md)                                         | Select **iOS** as the **app type**, search for the app, and select the   app within Intune.                                                                                                    |   |   |
+| Store app                            | [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)                           | Select **Windows Phone 8.1** as the **app type** and enter the Microsoft   store URL for the app.                                                                                              |   |   |
+| Store app                            | [Microsoft store apps](store-apps-windows.md)                                     | Select **Windows** as the **app type** and enter the Microsoft store URL   for the app.                                                                                                        |   |   |
+| Store app                            | [Android for Work apps](apps-add-android-for-work.md)                                  | Find and approve the Android for Work app from the Google Play for Work   store.                                                                                                               |   |   |
+| Store app (Office 365)     | [Office 365 apps for Windows 10](apps-add-office365.md)                            | Select **Windows 10** under the **Office 365 Suite** as the **app type**,   then select the Office 365 app that you want to install.                                                           |   |   |
+| Store app (Office 365)                            | [Office 365 apps for macOS](apps-add-office365-macos.md)                              | Select **macOS** under the **Office 365 Suite** as the **app type** and   then select the Office 365 app suite.                                                                                |   |   |
+| Line-of-business (LOB) app | [Android line-of-business (LOB) apps](lob-apps-android.md)                    | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an Android installation file with the extension **.apk**.                              |   |   |
+| Line-of-business (LOB) app | [iOS line-of-business (LOB) apps](lob-apps-ios.md)                        | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.ipa**.                                  |   |   |
+| Line-of-business (LOB) app | [Windows Phone line-of-business (LOB) apps](lob-apps-windows-phone.md) | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.xap**.                                  |   |   |
+| Line-of-business (LOB) app | [Windows line-of-business (LOB) apps](lob-apps-windows.md) | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.msi**, **.appx**, or   **.appxbundle**. |   |   |
+| Built-in app               | [Built-in iOS app](apps-add-built-in.md)                                       | Select **Built-In app** as the **app type** and then select the bulit-in   app from the list of provided apps.                                                                                 |   |   |
+| Built-in app               | [Built-in Android app](apps-add-built-in.md)                                   | Select **Built-In app** as the **app type** and then select the bulit-in   app from the list of provided apps.                                                                                 |   |   |
+| Web app                     | [Web apps](web-app.md)                                            | Select **Web link** as the **app type** and enter a valid URL   pointing to the Web app.                                                                                                       |   |   |
+   
 
 >[!TIP]
 > A line-of-business (LOB) app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by choosing **Line-of-business app** as the **App type** from the **Add app** blade. Then, select the app package file (extension .ipa). These types of apps are typically written in-house.
@@ -76,15 +82,17 @@ Using Intune to manage apps (Mobile Application Management) without managing the
 For more information, [Compare MDM and MAM](byod-technology-decisions.md).
 
 ### Determine who will use the app
-Once you have added an app to Intune, you assign a group of users that can use the app. First, you must determine the appropriate group that should have access to the app based on the sensitivity of the data the app contains. You may need to include or exclude certain types of roles within your organization. For example, only certain LOB apps may be required for your sales group, whereas people focused on engineering, finance, HR, or legal may not need to use the LOB apps. In addition, your sales group may need additional data protection and access to internal corporate services on their mobile devices. You must determine how this group will connect to resources using the app. Will the data the app accesses live in the cloud or on-premise? Also, how will the users connect to resources using the app. Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This type of access is typically done using [Intune-managed certificates](certificates-configure.md) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line-of-business app, so that it can’t pass corporate data to consumer apps or services.
+
+When determining the required apps your workforce needs, consider the different groups of users who use different apps. Knowing these groups is also helpful after you have added an app. Once you have added an app, you assign a group of users that can use the app. First, you must determine the appropriate group that should have access to the app based on the sensitivity of the data the app contains. You may need to include or exclude certain types of roles within your organization. For example, only certain LOB apps may be required for your sales group, whereas people focused on engineering, finance, HR, or legal may not need to use the LOB apps. In addition, your sales group may need additional data protection and access to internal corporate services on their mobile devices. You must determine how this group will connect to resources using the app. Will the data the app accesses live in the cloud or on-premise? Also, how will the users connect to resources using the app. Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This type of access is typically done using [Intune-managed certificates](certificates-configure.md) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line-of-business app, so that it can’t pass corporate data to consumer apps or services.
 
 Use the [Intune deployment planning, design and implementation guide](planning-guide.md) to help determine how you identify the organizational groups that are associated with each use-case and sub-use-case app scenario. For details about assigning apps to groups, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 ### Determine the type of app for your solution
+
 You can choose between the following app types:
-- **Apps on the web** - A web app is a client-server application. The server provides the web app, which  includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. This type of app is separately maintained on the Web. You use Intune to point to this app type. You also assign which groups of users can access this app. Note that Android does not support web apps.
+- **Apps from the store** - A store app is an app that has been uploaded to either the Microsoft store, the iOS store, or Android store. The provider of the store app maintains and provides updates to the app. You select the app from the store list and add it using Intune as an available app for your users.
 - **Apps written in-house (line-of-business)** - Apps created in-house are line-of-business (LOB) apps. The functionality of this type of app has been created for one of the Intune supported platforms, such as Windows, iOS, or Android. Your organization creates and provides you with updates as a separate file. You provide updates of the app to users by adding and deploying the updates using Intune.
-- **Apps from the store** - A store app is an app that has been uploaded to either the Windows store, the iOS store, or Android store. The provider of the store app maintains and provides updates to the app. You select the app from the store list and add it using Intune as an available app for your users.
+- **Apps on the web** - A web app is a client-server application. The server provides the web app, which  includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. This type of app is separately maintained on the Web. You use Intune to point to this app type. You also assign which groups of users can access this app. Note that Android does not support web apps.
 
 When determining the needed apps for your organization, consider how these apps integrate with cloud services, what data the apps access, whether the apps are available to BYOD users, and whether the apps require internet access.
 
@@ -103,7 +111,7 @@ Intune-managed apps can also enable app protection without requiring enrollment,
 In addition to web apps, store apps, and LOB apps, you should also be aware of the destintion of volume-purchase-program apps and licensed apps, such as:     
 - **Apple Volume Purchasing Program for Business (iOS and MacOS)** - The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company. For more information, see [Manage iOS volume-purchased apps](vpp-apps-ios.md).
 - **Android for Work (Android)** - You assign apps to Android for Work devices in a different way than you assign them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log on to the store, browse for the apps you want, and approve them. The app then appears in the Licensed apps node of the Azure portal. From here, you can manage assignment of the app in the same way you would assign any other app.
-- **Windows Store for Business (Windows 10)** - The Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For more information, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
+- **Microsoft Store for Business (Windows 10)** - The Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For more information, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
 
 ## Before you start
 Consider the following points before you begin to add and assign apps.
@@ -114,7 +122,7 @@ Consider the following points before you begin to add and assign apps.
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A full subscription includes 20 GB of storage space.
 
-You can purchase additional storage for Intune using your original purchase method.  If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Otherwise, contact your partner or sales associate.
+You can purchase additional storage for Intune using your original purchase method. If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions). Otherwise, contact your partner or sales associate.
 
 Requirements for cloud storage space are as follows:
 
@@ -129,7 +137,7 @@ When you add an app to Intune, you are given the option to select the category y
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** blade, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Setup** > **App categories**.
+4. In the **Mobile apps** workload, choose **App categories** from the **Setup** section. 
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions:
 	- **Create a category** - Select **Add** to display the **Create category** blade, then add a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
 	- **Edit a category** - For any category in the list, choose '**...**'. This option displays a pop-up menu allowing you to **Pin to dashboard** or **Delete** the category.
@@ -138,7 +146,6 @@ When you add an app to Intune, you are given the option to select the category y
 
 Previously, Intune contained a number of built-in apps that you could quickly assign. Based on your feedback, this list was removed and you will no longer see built-in apps.
 However, if you have already assigned any built-in apps, these apps will still be visible in the list of apps. You can continue to assign these apps as required.
-In a later release, we plan to add an easier method to select and assign built-in apps from the Azure portal.
 
 ## Next steps
 
@@ -151,7 +158,8 @@ Choose one of the following topics to find out how to add apps for each platform
 - [Web apps (for all platforms)](web-app.md)
 - [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)
-- [Windows store apps](store-apps-windows.md)
+- [Microsoft store apps](store-apps-windows.md)
 - [Windows LOB app](lob-apps-windows.md)
 - [Office 365 apps for Windows 10](apps-add-office365.md)
+- [Office 365 apps for macOS](apps-add-office365-macos.md)
 - [Built-in apps](apps-add-built-in.md)

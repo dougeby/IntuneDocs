@@ -61,26 +61,34 @@ End users can install the Company Portal app from the Microsoft Store to manage 
  > [!NOTE]
  > This option will require assigning manual updates each time an app update is released.
 
-1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
-2. Once the app has been acquired, select the app in the **Inventory** page.  
-3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
+### Configure settings to show offline apps
+1. Go to the [Microsoft Store for Business](https://www.microsoft.com/business-store) and make sure you are signed-in with your admin account.
+2. Select the **Manage** tab near the top of the window.
+3. Select **Settings** on the left navigation column.
+4. Set **Show offline apps** in the **Shopping experinece** section to **On**. This will show offline licensed apps in the Microsoft Store for Business.
 
-    ![Image of Windows 10 all devices and Architecture X86 Package details for Download](./media/Win10CP-all-devices.png)
+### Download the pffline Company Portal app
+1. Search and select the **Company Portal** app.
+2. Set the **License type** to **Offline**.
+3. Click **Get the app** to acquire and add the offline Company Portal app to your inventory.
+4. Click **Manage** on the **Company portal** app page.
+5. Select **Windows 10 all devices** as the **Platform**, then select the appropriate **Minimum version**, **Architecture**, and Download app metadata** values. 
+6. Click **Download** to save the file to your local machine.
 
-4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
+    ![Image of Windows 10 all devices and Architecture X86 package details for Download](./media/Win10CP-all-devices.png)
 
-    ![Image of dependency files to Download](./media/Win10CP-dependent-files.png)
-
-5. Before uploading the Company Portal app to Intune, create a folder (for example: C:&#92;Company Portal) with the packages structured in the following way:
+7. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 12 packages.
+8. Before uploading the Company Portal app to Intune, create a folder (for example: C:&#92;Company Portal) with the packages structured in the following way:
   - Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
 
     ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
 
-  - Place the nine dependencies packages in the Dependencies folder. If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error:
+  - Place the dependency packages in the *Dependencies* folder. If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error:
 
       ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and assign this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
 
-6. Return to Intune, then upload the Company Portal app as a new app. Assign it as a required app to the desired set of target users.  
+9. Return to Microsoft Intune in the Azure portal.
+10. Upload the Company Portal app as a new app. Assign it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  
 
@@ -88,7 +96,7 @@ See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https:/
 If your users have already installed the Windows 8.1 or Windows Phone 8.1 Company Portal apps from the Store, then they should be automatically updated to the new version with no action required from you or your user. If the update does not happen, ask your users to check that they have enabled autoupdates for Store apps on their devices.   
 
 ### How do I upgrade my sideloaded Windows 8.1 Company Portal app to the Windows 10 Company Portal app?
-Our recommended migration path is to delete the assignment for the Windows 8.1 Company Portal app by setting the assignment action to “Uninstall”. Once this setting made, the Windows 10 Company Portal app can be assigned using any of the above options.  
+Our recommended migration path is to delete the assignment for the Windows 8.1 Company Portal app by setting the assignment action to "Uninstall". Once this setting made, the Windows 10 Company Portal app can be assigned using any of the above options.  
 
 If you need to sideload the app and assigned the Windows 8.1 Company Portal without signing it with the Symantec Certificate, follow the steps in the Assign directly via Intune section above to complete the upgrade.
 
