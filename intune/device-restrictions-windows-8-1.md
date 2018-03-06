@@ -1,35 +1,36 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 8.1
-titleSuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 8.1 devices."
+title: Microsoft Intune device restriction settings for devices running Windows 8.1
+titleSuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows 8.1.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Windows 8.1 and later device restriction settings in Microsoft Intune
+# Microsoft Intune Windows 8.1 and later device restriction settings
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 8.1 and later.
+
 
 ## General
 
@@ -58,7 +59,7 @@ When you enforce encryption on a device, the recovery key is only accessible fro
 - 	**SmartScreen** - Enables or disables warnings for potential fraudulent websites.
 - 	**JavaScript** - Enables the browser to run scripts, such as Java script.
 - 	**Pop-ups** - Enables or disables the browser pop-up blocker.
-- 	**Send do-not-track headers** - Sends a do not track header to visited sites in Internet Explorer.
+- 	**Send do-not-track headers** - Sends a do-not-track header to visited sites in Internet Explorer.
 - 	**Plugins** - Enables users to add plug-ins to Internet Explorer.
 - 	**Single word entry on intranet site** - Enables use of a single word to direct Internet Explorer to a web site, such as Bing.
 - 	**Auto detect of intranet site** - Helps configure security for intranet sites in Internet Explorer.
@@ -68,7 +69,7 @@ When you enforce encryption on a device, the recovery key is only accessible fro
 - 	**High security for restricted sites** - Configures the security level for the restricted sites zone.
 - 	**Enterprise mode menu access** - Lets users access the Enterprise Mode menu options from Internet Explorer.
 If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.
-- 	**Enterprise mode site list location** - Specifies the location of the list of websites that will use Enterprise Mode when it is active.
+- 	**Enterprise mode site list location** - Specifies the location of the list of websites that use Enterprise Mode when it is active.
 
 ## Cellular
 - 	**Data roaming** - Enables data roaming when the device is on a cellular network.
