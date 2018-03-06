@@ -1,26 +1,24 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows Phone 8.1 devices
-titleSuffix: "Azure portal"
-description: Learn about the Intune settings you can use to configure VPN connections on Windows Phone 8.1 devices."
+title: Microsoft Intune VPN settings for Windows Phone 8.1 devices
+titleSuffix:
+description: Learn about the Intune settings you can use to configure VPN connections on devices running Windows Phone 8.1.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
