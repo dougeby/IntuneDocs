@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# VPN settings for macOS devices in Microsoft Intune
+# Configure VPN settings in Microsoft Intune for devices running macOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

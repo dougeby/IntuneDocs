@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# VPN settings for Windows Phone 8.1 devices in Microsoft Intune
+# Configure VPN settings in Microsoft Intune for devices running Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
