@@ -50,12 +50,12 @@ The **Sync** device action forces the selected device to immediately check in wi
 5. Select **Yes** to confirm.
 
 
-## Retriable error codes
+## Retryable error codes
 
-When an administrator runs the **Sync** device action, iOS and Androids apps that failed but raised a retriable error code are available to the device. However, apps that raised a non-retriable error code must wait for seven days before they  are made available to the device.
+When an administrator runs the **Sync** device action, iOS and Android apps that failed, and raised a retryable error code are still available to the device. However, apps that raised a non-retryable error code must wait seven days before they're available to the device.
 
 
-| Error Code  | Suggested Description | Retriable |
+| Error Code  | Suggested Description | Retryable |
 |---|---|---|
 | 2016330898 | An unknown error occurred. | No |
 | 2016330897 | Your connection to Intune timed out. Reset your connection. | Yes |
