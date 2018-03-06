@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,7 +67,7 @@ End users can install the Company Portal app from the Microsoft Store to manage 
 3. Select **Settings** on the left navigation column.
 4. Set **Show offline apps** in the **Shopping experinece** section to **On**. This will show offline licensed apps in the Microsoft Store for Business.
 
-### Download the pffline Company Portal app
+### Download the offline Company Portal app
 1. Search and select the **Company Portal** app.
 2. Set the **License type** to **Offline**.
 3. Click **Get the app** to acquire and add the offline Company Portal app to your inventory.
