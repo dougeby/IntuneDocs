@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
