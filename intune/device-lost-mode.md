@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Activate iOS lost mode with Intune 
-titlesuffix: "Azure portal"
-description: Learn how to use Intune to activate lost mode on lost or stolen iOS devices."
+title: Activate iOS lost mode with Microsoft Intune - Azure | Microsoft Docs
+description: Turn on or start Lost mode to customize a message that displays on the lock screen of a lost or stolen iOS device using Microsoft Intune. And, get details on the security and privacy information when using the Lost mode action.
 keywords:
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,42 +26,40 @@ ms.custom: intune-azure
 
 ---
 
-# Activate lost mode on iOS devices
-
+# Enable lost mode on iOS devices with Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Lost mode** device action helps you enable lost mode on lost or stolen iOS devices. This mode lets you specify a message and a phone number that is displayed on the lock screen of the device.
+The **Lost mode** device action helps you enable lost mode on lost or stolen iOS devices. This mode lets you enter a message and a phone number that displays on the lock screen of the device. To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
 
 ## Supported platforms
 
-- Windows - Not supported
-- Windows Phone - Not supported
-- iOS - Supported on iOS 9.3 and later, supervised, and corp owned
-- macOS - Not supported
-- Android - Not supported
+- iOS 9.3 and later
 
-## How to activate lost mode
+This feature is **not** supported for the following: 
+- Windows
+- Windows Phone
+- macOS
+- Android
+
+## Enable lost mode
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. From the list of devices you manage, choose an iOS device, choose **...More**, and then choose the **Lost mode** remote action.
-6. On the **Lost mode** blade, enable lost mode. Then, enter the message to be displayed, and optionally, a contact phone number.
-7. Click **OK**.
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Devices**, and then select **All devices**.
+4. From the list of devices you manage, choose an iOS device, choose **...More**, and then choose the **Lost mode** remote action.
+5. In **Lost mode**, enable this feature. Then, enter the message to display, and a contact phone number.
+6. Select **OK** to save your changes.
 
-When you enable lost mode, you block all use of the device. The end user cannot access the device until you disable lost mode. While lost mode is enabled, you can use the **Locate device** action to find out where the device is.
-To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
+When you enable lost mode, all use of the device is blocked. The end user cannot access the device until you disable lost mode. While lost mode is enabled, use the [Locate device](device-locate.md) action to find the device.
 
 ## Security and privacy information for the lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
 - When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
-- We recommend that the message you enter to display on the lock screen includes information that helps someone who finds the device to return it.
+- In the message you enter to display on the lock screen, be sure to include specific details to return the lost device.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.
-
+To see the status of enabling Lost mode, open **Devices**, and select **Device actions**.

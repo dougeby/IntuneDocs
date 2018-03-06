@@ -1,33 +1,31 @@
 ---
 # required metadata
 
-title: Intune custom settings for macOS devices
-titleSuffix: "Azure portal"
-description: Learn the settings you can use in a macOS custom profile."
+title: Microsoft Intune custom settings for devices running macOS
+titleSuffix:
+description: Learn the settings you can use in a macOS custom profile.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Custom settings for macOS devices in Microsoft Intune
+# Microsoft Intune custom device settings for devices running macOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,10 +35,10 @@ This capability allows you to assign macOS settings that are not configurable wi
 
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
-2. On the **Custom Configuration Profile** pane, configure the following for each setting:
+2. On the **Custom Configuration Profile** pane, configure each of the following settings:
 
-- **Custom configuration profile name** - Provide a name for the policy as it will be displayed on the device, and in Intune status.
+- **Custom configuration profile name** - Provide a name for the policy as displayed on the device, and in Intune status.
 - **Configuration profile file** - Browse to the configuration profile that you created by using the Apple Configurator.
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of macOS on the devices to which you assign the macOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
-The file you imported will be displayed in the **File contents** area of the pane.
+The file you imported is displayed in the **File contents** area of the pane.

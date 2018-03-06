@@ -2,25 +2,23 @@
 # required metadata
 
 title: How to create custom VPN profiles with Microsoft Intune
-titleSuffix: "Azure portal"
+titleSuffix:
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -29,16 +27,15 @@ ms.custom: intune-azure
 
 # How to create custom VPN profiles in Microsoft Intune
 
-## Create a custom configuration
-You can use Intune custom configuration polices to create VPN profiles for:
+You can use Intune custom configuration polices to create VPN profiles for the following platforms:
 
-* Devices that run Android 4 and later
+* Android 4 and later
 * Enrolled devices that run Windows 8.1 and later
-* Devices that run Windows Phone 8.1 and later
+* Windows Phone 8.1 and later
 * Enrolled devices that run Windows 10 desktop 
-* Devices that run Windows 10 Mobile
+* Windows 10 Mobile
 
-This type of policy can be useful when the standard Intune VPN policies do not contain the settings you want to use.
+This type of policy can be useful when the standard Intune VPN policies don't have the settings you want to use.
 
 ## To create a custom configuration policy:
 

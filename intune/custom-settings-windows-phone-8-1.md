@@ -1,33 +1,31 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows Phone 8.1 devices
-titleSuffix: "Azure portal"
-description: Learn about the settings you can use in a Windows Phone 8.1 custom profile."
+title: Microsoft Intune custom settings for devices running Windows Phone 8.1 
+titleSuffix:
+description: Learn about the settings you can use in a Windows Phone 8.1 custom profile.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Custom settings for Windows Phone 8.1 devices in Microsoft Intune
+# Microsoft Intune custom device settings for devices running Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
