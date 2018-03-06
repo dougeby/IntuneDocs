@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for Work
-titleSuffix:
-description: Learn how to create a compliance policy for Android for Work devices."
+title: Create Android for Work compliance policy
+titleSuffix: Microsoft Intune
+description: Create an Intune device compliance policy for Android for Work devices so you can specify requirements that a device must meet to be compliant.
 keywords:
 author: msmimart
 ms.author: mimart
