@@ -50,15 +50,29 @@ You'll no longer be limited to one Microsoft Intune Exchange Connector per tenan
 
 With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
 
-### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
-Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
+### Support coming for new Cisco AnyConnect client for iOS <!-- 1333708 -->
 
-### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
-In the Azure portal, Intune will alert you to line-of-business apps that are about to expire.
+New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
+
+> [!NOTE]
+> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
+
+#### More information
+
+You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app. 
+
+Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
 
 ### Enhanced jailbreak detection <!-- 846515 -->
 
 Enhanced jailbreak detection is a new compliance setting that will improve how Intune evaluates jailbroken devices. The setting will cause the device to check-in with Intune more frequently, which will use the device’s location services and will impact battery usage.
+
+### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
+Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
+
+### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
+In the Azure portal, Intune will alert you to line-of-business apps that are about to expire. Upon uploading a new version of the line-of-business app, Intune will remove the expiration notification from the app list.
+
 
 ### New Management name column <!-- 1333586 -->
 A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
@@ -123,24 +137,12 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
  
-### Support coming for new Cisco AnyConnect client for iOS <!-- 1333708 -->
-
-New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
-
-> [!NOTE]
-> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
-
-#### More information
-
-You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app. 
-
-Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
 We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
-### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
+### Custom Book categories for volume-purchase program (VPP) eBooks <!-- 1488911 -->
 You will be able to create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories.
 
 #### Company Portal for Android visual updates <!--976944 -->
@@ -153,9 +155,6 @@ We'll be updating the Company Portal app for Android to follow Android's [Materi
 ### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
 
 On the Enrollment Overview page, you will be able to view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you will be able to drill into details to find troubleshooting advice and remediation suggestions.
-
-### App Protection Policies  <!-- 679615 -->
-Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
 ### Customize your Company Portal themes with hex codes <!--1049561 -->
 
@@ -185,24 +184,6 @@ You will be to enable security settings on Windows 10 devices using the new Loca
 ### New printer settings for education profiles <!-- 1308900 -->
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
-
-### Configure resource account settings for Surface Hubs <!-- 1475674 -->
-
-You will be able to remotely configure resource account settings for Surface Hubs.
-
-The resource account is used by a Surface Hub to authenticate against Skype/Exchange so it can join a meeting. 
-You will want to create a unique resource account so the Surface Hub can show up in the meeting as the conference room. 
-For example, a resource account such as **Conference Room B41/6233**.
-
-> [!NOTE]
-> - If you leave fields blank you will override previously configured attributes on the device.
->
-> - Resource Account properties can change dynamically on the Surface Hub. For example, if password rotation is on. So, it's possible that the values 
-in the Azure console will take some time to reflect the reality on the device. 
->
->   To understand what is currently configured on the Surface Hub, the Resource Account information can be included in hardware inventory 
-(which already has a 7 day interval) or as read-only properties. To enhance the accuracy after the remote action has taken place, you can get the state 
-of the parameters immediately after running the action to update the account/parameters on the Surface Hub.
 
 ### iOS app provisioning configuration <!-- 1581650 -->
 You will be able to assign iOS app provisioning profiles to prevent your apps from expiring by including or excluding security groups.
@@ -249,21 +230,10 @@ During app assignment and after selecting an assignment type, Android Enterprise
 
 You will be able to target compliance policies to users in user groups. You'll be able to target compliance policies to devices in device groups.
 
-### Remote printing over a secure network <!-- 1709994  -->
-PrinterOn’s wireless mobile printing solutions will enable users to remotely print from anywhere at any time over a secure network. PrinterOn will integrate with the Intune APP SDK for both iOS and Android. You will be able to target app protection policies to this app through the Intune **App protection policies** blade in the admin console. End users will be able to download the app 'PrinterOn for Microsoft' through the Play Store or iTunes to use within their Intune ecosystem.
-
-
-
-### Microsoft Graph API for Intune - General Availability  <!-- 1833289 -->
-Intune APIs in Microsoft Graph will provide programmatic access to data and methods for automating administrative actions for the Intune service.  With the **General Availability** of these APIs, customers, partners, and developers will be able to leverage the APIs to integrate with in-house or commercial solutions relating to or requiring the support of Intune, or other Microsoft services available through Microsoft Graph.
-
 <!-- the following are present prior to 1801 -->
 
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
-
-### New iOS device action   <!-- 1244701 -->
-You can shut down iOS 10.3 supervised devices. This action shuts down the device immediately without warning to the end user. The **Shut down (supervised only)** action can be found at the device properties when you select a device in the **Device** workload.
 
 ### Intune provides the Account Move operation  <!-- 1573558, 1579830 -->
 The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to another. The **Account Move** can be used for both customer-initiated scenarios, when you call the Intune support team requesting it, and it can also be a Microsoft-driven scenario where Microsoft needs to make adjustments to the service in the back-end. During the **Account Move**, the tenant enters in read-only mode (ROM). Service operations like enrolling, renaming devices, updating compliance status will fail during the ROM period.
@@ -288,21 +258,12 @@ Soon you will be able to require a PIN for targeted iOS apps. You can configure 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
 Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
 
-<!-- the following are present prior to 1709 -->
-### Intune App Protection and Citrix MDX Development Tools <!-- 709185 -->
-You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology.
-
-You are able to find a code repository that contains the Intune App Wrapping Tool and Intune App SDK for iOS and Android, integrating with Citrix MDX mVPN technology.
-
 <!-- the following are present prior to 1711 -->
 
 ### Redirecting macOS users to the new Company Portal app <!--1380728-->   
 When an end user logs into the Company Portal website to enroll their macOS device, they will be directed to download the new Company Portal app for macOS to complete the process. This occurs for macOS devices using OS X El Capitan 10.11 or above. 
 
 <!-- the following are present prior to 1709 -->
-
-### Intune Managed Browser support for iOS and Android <!-- 1374196 -->
-As of October 2017, the Intune Managed Browser app on Android app will support only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later. Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 ### Improved error message for when a user reaches the maximum number of devices allowed to enroll <!-- 1270370 -->
 Instead of a generic error message, end users with Android devices see a friendly, actionable error message: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin."
