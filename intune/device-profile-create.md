@@ -35,7 +35,7 @@ ms.custom: intune-azure
 
 2. In **Microsoft Intune**, select **Device configuration**, select **Profiles**, and then select **Create Profile**.
 
-3. Enter the following properties: 
+3. Enter the following properties:
 
 	- **Name**: Enter a descriptive name for the new profile
 	- **Description**: Optional but recommended. Enter an description for the profile.
@@ -65,7 +65,7 @@ ms.custom: intune-azure
 
 	![Enter the settings to create a device profile](./media/create-device-profile.png)
 
-4. Select **Create** when finished. 
+4. Select **Create** when finished.
 
 The profile is created and appears in the list. To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 

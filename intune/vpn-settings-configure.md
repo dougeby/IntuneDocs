@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,12 +60,12 @@ Learn how to  create custom VPN profiles by using URI settings in [Create custom
 
 ## Create a device profile containing VPN settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the VPN profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the VPN profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for VPN device settings:
 	- **Android**
 	- **Android for Work**
@@ -82,9 +82,9 @@ Learn how to  create custom VPN profiles by using URI settings in [Create custom
 	- [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
 	- [Windows 8.1 settings](vpn-settings-windows-8-1.md)
 	- [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
-8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+8. When you're done, go back to the **Create profile** pane, and select **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
 
 

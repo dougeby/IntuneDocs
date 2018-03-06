@@ -118,7 +118,6 @@ A root or intermediate CA certificate is needed on each device for authenticatio
 6. **Apply**, and then **Close**.
 7. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few minutes, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
 
-
 ## Create a device configuration profile
 
 1. Sign in to the [Azure portal](https://portal.azure.com).

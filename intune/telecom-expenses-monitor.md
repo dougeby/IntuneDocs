@@ -6,7 +6,7 @@ keywords: Saaswedo
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -82,13 +82,13 @@ Before you start, make sure that you already have an Intune and a Datalert telec
 
 After you complete Step 1 above, your connection should be automatically enabled, and a connection status of **Active** should be showing in the Azure portal. These steps show you how to check for the **Active** status.
 
-1. Sign in to the Azure portal.
+1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 
-3. On the **Intune** blade, choose **Device configuration**.
+3. On the **Intune** pane, choose **Device configuration**.
 
-4. On the **Device Configuration** blade, choose **Setup** > **Telecom Expense Management**.
+4. On the **Device configuration** pane, choose **Setup** > **Telecom Expense Management**.
 
    Look for the **Active** connection status at the top of the page.
 
@@ -106,15 +106,15 @@ Depending on your organizational needs, create at least two device categories (f
 
 These categories will be shown to users during enrollment. Depending on which category users choose, the enrolled device will be moved to the corresponding device group. For steps on how to create device categories, see [Map devices to groups](device-group-mapping.md).
 
-  ![Screenshot of the Add a policy blade](./media/tem-dynamic-membership-rules.png)
+  ![Screenshot of the Add a policy pane](./media/tem-dynamic-membership-rules.png)
 
 #### Create the Datalert app in Intune
 
 Follow these steps to create the Datalert app in Intune for each platform. iOS is used as an example in these steps.
 
-1. On the **Intune** blade of the Azure portal, choose **Mobile apps**.
+1. On the **Intune** pane of the [Azure portal](https://portal.azure.com), choose **Mobile apps**.
 
-2. On the **Mobile apps** blade, choose **Manage** > **Apps**.
+2. On the **Mobile apps** pane, choose **Manage** > **Apps**.
 
 3. Select **Add** to add an app.
 
@@ -122,25 +122,25 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 5. In **Search the App Store**, look for the Datalert app by typing **Datalert** in the search window.
 
-6. Select the **Datalert** app, and select **OK**.
+6. Select the **Datalert** app, and choose **Select**.
 
-  ![Screenshot of the Add a policy blade](./media/tem-select-app-from-apple-app-store.png)
+   ![Screenshot of the Add a policy pane](./media/tem-select-app-from-apple-app-store.png)
 
 7. Complete the remaining steps to create an app for iOS.
 
-  ![Screenshot of the Add a policy blade](./media/tem-steps-to-create-the-app.png)
+   ![Screenshot of the Add a policy pane](./media/tem-steps-to-create-the-app.png)
 
 #### Assign the Datalert app to the corporate device group
 
-1. Select the iOS Datalert app that you created in the previous step.
+1. From the **Mobile apps - Apps** pane, select the iOS Datalert app that you created in the previous step.
 
-2. On the **Apps** blade, go to **Manage** > **Assignments**.
+2. On the **Apps** pane, choose **Manage** > **Assignments**.
 
-3. Choose **Select groups**, and follow the steps to select the corporate device group.
+3. Choose **Add group**, and follow the steps to select the corporate device group.
 
 4. Choose whether to make the app installation required or optional for the group. The following example screenshot shows the installation as required, which means that users must install the Datalert app installation after enrolling their device.
 
-  ![Screenshot of the Add a policy blade](./media/tem-assign-datalert-app-to-device-group.png)
+  ![Screenshot of the Add a policy pane](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### Step 4: Add corporate paid phone lines to the Datalert console
 
@@ -148,7 +148,7 @@ You now have configured the Intune and Datalert services to communicate with eac
 
 To set these items, go to the [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), and follow the steps in the setup wizard under the **Settings** tab.
 
-  ![Screenshot of the Add a policy blade](./media/tem-add-phone-lines-to-datalert-console.png)
+  ![Screenshot of the Add a policy pane](./media/tem-add-phone-lines-to-datalert-console.png)
 
 
 The Datalert service is now active, and it starts monitoring data usage and disabling cellular and roaming data on devices that exceed the configured usage limits.
@@ -168,7 +168,7 @@ If you disable the Datalert service in the Azure portal:
 
 **To turn off the service**
 
-1. On the **Telecom Expense Management** blade in the Azure portal, select **Disable**.
+1. On the **Telecom Expense Management** pane in the Azure portal, select **Disable**.
 
 2. Select **Save**.
 

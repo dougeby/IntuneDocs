@@ -7,7 +7,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,19 +53,19 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 ## Create a Windows Hello for Business policy
 
-1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+1.  In the the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
 
-2.  On the Intune page, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
+2.  On the Intune pane, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
 
-3.  On the page that opens, choose the **Default** settings.
+3.  On the pane that opens, choose the **Default** settings.
 
-4.  On the **All Users** page, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
+4.  On the **All Users** pane, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
 
-5. On the **All Users** page, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
+5. On the **All Users** pane, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
-	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the page are unavailable.
+	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.
 
 6.  If you selected **Enabled** in the previous step, configure the required settings that are applied to all enrolled Windows 10 and Windows 10 Mobile devices.
 
@@ -74,9 +74,9 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 	 - **Required** (default). Only devices with an accessible TPM can provision Windows Hello for Business.
 	 - **Preferred**. Devices first attempt to use a TPM. If this is not available, they can use software encryption.
 
- - **Require minimum PIN length**/**Require maximum PIN length**. Configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is six characters, but you can enforce a minimum length of four characters. The maximum PIN length is 127 characters.
+ - **Minimum PIN length**/**Maximum PIN length**. Configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is six characters, but you can enforce a minimum length of four characters. The maximum PIN length is 127 characters.
 
- - **Require lowercase letters in PIN**/**Require uppercase letters in PIN**/**Require special characters in PIN**. You can enforce a stronger PIN by requiring the use of uppercase letters, lowercase letters, and special characters in the PIN. Choose from:
+ - **Lowercase letters in PIN**/**Uppercase letters in PIN**/**Special characters in PIN**. You can enforce a stronger PIN by requiring the use of uppercase letters, lowercase letters, and special characters in the PIN. Choose from:
 
 	 - **Allowed**. Users can use the character type in their PIN, but it is not mandatory.
 
@@ -95,7 +95,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
  - **Use enhanced anti-spoofing, when available**. Configures whether the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).<br>If this is set to **Yes**, Windows requires all users to use anti-spoofing for facial features when that is supported.
 
- - **Use phone sign-in**. If this option is set to **Yes**, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure Active Directory joined, and the companion device must be configured with a Windows Hello for Business PIN.
+ - **Allow phone sign-in**. If this option is set to **Yes**, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure Active Directory joined, and the companion device must be configured with a Windows Hello for Business PIN.
 
 ## Windows Holographic for Business support
 

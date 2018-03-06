@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,10 +37,10 @@ This capability allows you to assign macOS settings that are not configurable wi
 
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
-2. On the **Create Profile** blade, specify the following:
+2. On the **Custom Configuration Profile** pane, configure the following for each setting:
 
 - **Custom configuration profile name** - Provide a name for the policy as it will be displayed on the device, and in Intune status.
 - **Configuration profile file** - Browse to the configuration profile that you created by using the Apple Configurator.
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of macOS on the devices to which you assign the macOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
-The file you imported will be displayed in the **File contents** area of the blade.
+The file you imported will be displayed in the **File contents** area of the pane.
