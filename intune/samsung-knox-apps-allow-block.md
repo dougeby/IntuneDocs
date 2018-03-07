@@ -1,37 +1,35 @@
 ---
 # required metadata
 
-title: Intune policy allow/block apps for Samsung Knox
-titlesuffix: "Azure portal"
-description: Create a custom profile to allow and block apps for Samsung Knox Standard devices."
+title: Microsoft Intune policy to allow/block apps for Samsung Knox
+titlesuffix:
+description: Create a custom profile to allow and block apps for Samsung Knox Standard devices.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 
 ---
-# Use custom policies to allow and block apps for Samsung Knox Standard devices in Microsoft Intune
+# Use custom policies in Microsoft Intune to allow and block apps for Samsung Knox Standard devices 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following lists:
+Use the procedure in this article to create a Microsoft Intune custom policy that creates one of the following:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
 - A list of apps that users of the device are allowed to install from the Google Play store. Only the apps you list can be installed. No other apps can be installed from the store.
@@ -51,20 +49,20 @@ These settings can only be used by devices that run Samsung Knox Standard.
 3. On the **Custom OMA-URI Settings** pane, choose **Add**.
 4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following settings:
 
-### For a list of apps that are blocked from running on the device:
+   For a list of apps that are blocked from running on the device:
 
-- **Name** - Enter **PreventStartPackages**.
-- **Description** - Enter an optional description like 'List of apps that are blocked from running.'
-- 	**OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-- 	**Data type** - From the drop-down list, choose **String**.
-- 	**Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   - **Name** - Enter **PreventStartPackages**.
+   - **Description** - Enter an optional description like 'List of apps that are blocked from running.'
+   - 	**Data type** - From the drop-down list, choose **String**.
+   - 	**OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - 	**Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-### For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
-- **Name** - Enter **AllowInstallPackages**.
-- **Description** - Enter an optional description like 'List of apps that users can install from Google Play.'
-- **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-- **Data type** - From the drop-down list, choose **String**.
-- **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
+   - **Name** - Enter **AllowInstallPackages**.
+   - **Description** - Enter an optional description like 'List of apps that users can install from Google Play.'
+   - **Data type** - From the drop-down list, choose **String**.
+   - **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
 4. Click **OK**, and then, on the **Create Profile** pane, choose **Create**.
 
