@@ -38,34 +38,35 @@ The users of apps and devices at your company (your company's workforce) may hav
 
 Intune supports a wide range of different app types. The available options differ for each app type. Intune lets you add and assign these app types:
 
-| App Type                                 	| Installation                                                               	| Updates                   	|
+| App Types                                 	| Installation                                                               	| Updates                   	|
 |------------------------------------------	|----------------------------------------------------------------------------	|---------------------------	|
 | Apps from the store (store apps)         	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 | Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
 | Apps that are built-in (built-in apps)   	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 | Apps on the web (web link)               	| Intune creates a shortcut to the   web app on the device home screen       	| App updates are automatic 	|
 
-*** App details
+### Specific app type details
  
-The following table lists the available app types in Microsoft Intune.
+The following table lists the specific app types in Microsoft Intune.
+
+| **App   Specific Type**                         | **General App Type**             | **App Specific Procedures**                                                                                                                                                 |
+|---------------------------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Android   store apps                        | Store   app                  | Select **Android** as the **app type** and enter the Google   Play store URL for the app.                                                                                       |
+| iOS   store apps                            | Store   app                  | Select **iOS** as the **app type**, search for the app, and   select the app within Intune.                                                                                     |
+| Windows   Phone 8.1 store apps              | Store   app                  | Select **Windows Phone 8.1** as the **app type** and enter the   Microsoft store URL for the app.                                                                               |
+| Microsoft   store apps                      | Store   app                  | Select **Windows** as the **app type** and enter the   Microsoft store URL for the app.                                                                                         |
+| Android   for Work apps                     | Store   app                  | Find   and approve the Android for Work app from the Google Play for Work store.                                                                                        |
+| Office   365 apps for Windows 10            | Store   app (Office 365)     | Select **Windows 10** under the **Office 365 Suite** as the **app type**, then select the Office 365   app that you want to install.                                                |
+| Office   365 apps for macOS                 | Store   app (Office 365)     | Select **macOS** under the **Office 365 Suite** as the **app type** and then select the   Office 365 app suite.                                                                     |
+| Android   line-of-business (LOB) apps       | Line-of-business   (LOB) app | Select **Line-of-business** app as   the **app type**,   select the **App package file**, and then enter an Android installation file with the   extension **.apk**.                    |
+| iOS   line-of-business (LOB) apps           | Line-of-business   (LOB) app | Select **Line-of-business** app as   the **app type**,   select the **App package file**, and then enter an iOS installation file with the   extension **.ipa**.                        |
+| Windows   Phone line-of-business (LOB) apps | Line-of-business   (LOB) app | Select **Line-of-business** app as   the **app type**,   select the **App package file**, and then enter an iOS installation file with the   extension **.xap**.                        |
+| Windows   line-of-business (LOB) apps       | Line-of-business   (LOB) app | Select Line-of-business app as   the app type,   select the App package file, and then enter an iOS installation file with the   extension **.msi**, **.appx**, or **.appxbundle**. |
+| Built-in   iOS app                          | Built-in   app               | Select **Built-In app** as the **app type** and then select the   bulit-in app from the list of provided apps.                                                                  |
+| Built-in   Android app                      | Built-in   app               | Select **Built-In app** as the **app type** and then select the   bulit-in app from the list of provided apps.                                                                  |
+| Web   apps                                  | Web   app                    | Select **Web link** as the **app type** and enter a valid URL   pointing to the Web app.                                                                                        |
 
 
-| App   Type                  | Platform Details                                       | Add to Microsoft Intune                                                                                                                                                                        |   |   |
-|-----------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| Store app                  | [Android store apps](store-apps-android.md)                                     | Select **Android** as the **app type** and enter the Google Play store   URL for the app.                                                                                                      |   |   |
-| Store app                            | [iOS store apps](store-apps-ios.md)                                         | Select **iOS** as the **app type**, search for the app, and select the   app within Intune.                                                                                                    |   |   |
-| Store app                            | [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)                           | Select **Windows Phone 8.1** as the **app type** and enter the Microsoft   store URL for the app.                                                                                              |   |   |
-| Store app                            | [Microsoft store apps](store-apps-windows.md)                                     | Select **Windows** as the **app type** and enter the Microsoft store URL   for the app.                                                                                                        |   |   |
-| Store app                            | [Android for Work apps](apps-add-android-for-work.md)                                  | Find and approve the Android for Work app from the Google Play for Work   store.                                                                                                               |   |   |
-| Store app (Office 365)     | [Office 365 apps for Windows 10](apps-add-office365.md)                            | Select **Windows 10** under the **Office 365 Suite** as the **app type**,   then select the Office 365 app that you want to install.                                                           |   |   |
-| Store app (Office 365)                            | [Office 365 apps for macOS](apps-add-office365-macos.md)                              | Select **macOS** under the **Office 365 Suite** as the **app type** and   then select the Office 365 app suite.                                                                                |   |   |
-| Line-of-business (LOB) app | [Android line-of-business (LOB) apps](lob-apps-android.md)                    | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an Android installation file with the extension **.apk**.                              |   |   |
-| Line-of-business (LOB) app | [iOS line-of-business (LOB) apps](lob-apps-ios.md)                        | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.ipa**.                                  |   |   |
-| Line-of-business (LOB) app | [Windows Phone line-of-business (LOB) apps](lob-apps-windows-phone.md) | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.xap**.                                  |   |   |
-| Line-of-business (LOB) app | [Windows line-of-business (LOB) apps](lob-apps-windows.md) | Select **Line-of-business app** as the **app type**,  select the **App package file**, and then   enter an iOS installation file with the extension **.msi**, **.appx**, or   **.appxbundle**. |   |   |
-| Built-in app               | [Built-in iOS app](apps-add-built-in.md)                                       | Select **Built-In app** as the **app type** and then select the bulit-in   app from the list of provided apps.                                                                                 |   |   |
-| Built-in app               | [Built-in Android app](apps-add-built-in.md)                                   | Select **Built-In app** as the **app type** and then select the bulit-in   app from the list of provided apps.                                                                                 |   |   |
-| Web app                     | [Web apps](web-app.md)                                            | Select **Web link** as the **app type** and enter a valid URL   pointing to the Web app.                                                                                                       |   |   |
    
 You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** blade will be displayed and allow you to select the **App type**. 
 
