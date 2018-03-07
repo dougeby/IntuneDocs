@@ -28,16 +28,16 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune may not have all the built-in settings you need or want. Or you may want to use a settling available in other device profiles. To add these settings, create a device profile, and configure the profile with custom device settings.
+Intune may not have all the built-in settings you need or want. Or you may want to use a setting available in other device profiles. To add these settings, create a device profile, and configure the profile with custom device settings.
 
 This article lists the basic steps to create a profile with custom settings. It also includes links to dig deeper into creating custom settings with the different platforms.
 
 ## Custom settings on different platforms
-Custom settings are configured differently for each platform. For example, to control feature on Android and Windows devices, you can enter Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values. For Apple devices, you can import a file you created with the [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
+Custom settings are configured differently for each platform. For example, to control features on Android and Windows devices, you can enter Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values. For Apple devices, you can import a file you created with the [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 ## Create the profile
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Device configuration**, select **Profiles**, and then choose **Create profile**.
 4. Enter a **Name** and **Description** for the custom profile.
@@ -52,7 +52,7 @@ Custom settings are configured differently for each platform. For example, to co
 	- **Windows 10 and later**
 
 6. From the **Profile** type drop-down list, choose **Custom**.
-7. Depending on the platform you chose, the settings you can configure are different. The following links provide more details on the custom settings for each platform:
+7. Depending on the platform you choose, the settings you can configure are different. The following links provide more details on the custom settings for each platform:
 
 	- [Android settings](custom-settings-android.md)
 	- [iOS settings](custom-settings-ios.md)
