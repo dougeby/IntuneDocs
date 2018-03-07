@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for macOS
-titleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for macOS devices.
+title: Create a macOS device compliance policy in Microsoft Intune
+titleSuffix:
+description: Create a Microsoft Intune device compliance policy for macOS devices so you can specify requirements that a device must meet to be compliant.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,8 @@ ms.custom: intune-azure
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+An Intune device compliance policy for macOS specifies the rules and settings that macOS devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal.
 
 ## Before you begin
 
@@ -114,17 +116,17 @@ You have different categories with different settings to choose from when creati
 
 2. After you've successfully signed in, you can see the **Azure Dashboard**.
 
-3. Choose **More services** from the left menu, then type **Intune** in the text box filter.
+3. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
 4. Choose **Intune**, you can see the **Intune Dashboard**.
 
 5. Choose **Device compliance**, then choose **Policies** under **Manage**.
 
-6. Choose **Create Policy**.
+6. Choose **Create policy**.
 
 7. Type a name, description, and choose the platform that you want this policy to apply to.
 
-8. The **macOS compliance policy** blade opens, choose the device compliance setting categories **Security**, **Device health**, and **Device property** to specify your settings.
+8. The **Mac compliance policy** pane opens, choose the device compliance setting categories **System Security**, **Device Health**, and **Device Properties** to specify your settings.
 
 10. Once you are done choosing your settings, choose **OK** under each device compliance setting category.
 
@@ -132,15 +134,15 @@ You have different categories with different settings to choose from when creati
 
 ## Assign user groups
 
-To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance policies** blade.
+To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Device compliance - Policies** pane.
 
-1. Choose the device compliance policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
+1. Choose the device compliance policy you want to assign to users and choose **Assignments**. This opens the pane where you can select **Azure Active Directory security groups** and assign them to the policy.
 
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups.
+2. Choose **Selected groups** to open the pane that displays the Azure AD security groups.
 
-3. Choose **Select** then **Save** to assign the device compliance policy to Azure AD security groups.
+3. Choose **Save** to assign the device compliance policy to Azure AD security groups.
 
-4. Once you're done assigning the device compliance policy to your groups, you can close the **Assignments** blade.
+4. Once you're done assigning the device compliance policy to your groups, you can close the **Assignments** pane.
 
 	> [!TIP]
 	> By default, devices check for compliance every eight hours but users can force this process through the Intune company portal app.

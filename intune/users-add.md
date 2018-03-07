@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,8 +58,8 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 6. Choose **Add** to create the new user.
 
 ### Add Intune users in the Azure portal
-1. Sign in to [Azure portal](https://portal.azure.com) and go **More services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
-2. Select **Users**.
+1. Sign in to [Azure portal](https://portal.azure.com) and go **All services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
+2. Select **Users** > **All users**.
 3. In the Admin center, select **New user**.
   ![Screenshot of add New User](media/intune-add-user.png)
 4. Specify the following user details:
@@ -112,7 +112,7 @@ Assign users one or more administrator permissions. These permissions define the
 - **User administrator** - (Office 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can’t delete a global admin, create other admin roles, or reset passwords for other admins.
 - **Intune Service administrator** - All Intune Global administrator permissions except permission to create administrators with **Directory Role** options.
 
-The account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. While an administrator does not require an Intune license to access the Intune on Azure portal, in order to perform certain management tasks, such as setting up the Exchange service Connector,  an Intune license is required. 
+The account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, do not use a global administrator for day-to-day management tasks. While an administrator does not require an Intune license to access the Intune on Azure portal, in order to perform certain management tasks, such as setting up the Exchange service Connector,  an Intune license is required.
 
 To access the Office 365 portal, your account must have a **Sign-in allowed** set. In the Azure portal under **Profile**, set **Block sign in** to **No** to allow access. This status is different from having a license to the subscription. By default, all user accounts are **Allowed**. Users without administrator permissions can use the Office 365 portal to reset Intune passwords.
 

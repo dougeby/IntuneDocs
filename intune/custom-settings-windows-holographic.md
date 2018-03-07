@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows Holographic for Business devices
-titlesuffix: "Azure portal"
-description: Learn about the settings you can use in a Windows Holographic for Business custom profile."
+title: Microsoft Intune custom settings for Windows Holographic for Business devices
+titlesuffix:
+description: Learn about the settings you can use in a Windows Holographic for Business custom profile.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 2/26/2018
+ms.date: 3/6/2018
 ms.article: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Custom device settings for Windows Holographic for Business devices in Microsoft Intune
+# Microsoft Intune custom device settings for devices running Windows Holographic for Business
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

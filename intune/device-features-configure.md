@@ -8,7 +8,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Use the information in this article to learn the basics about configuring device
 5. From the **Platform** drop-down list, select the device platform to which you want to apply the settings. Currently, you can choose one of the following platforms for device features:
 	- **iOS**
 	- **macOS**
-6. From the **Profile type** drop-down list, choose **Device features**. 
+6. From the **Profile type** drop-down list, choose **Device features**.
 7. Depending on the platform you chose, the settings you can configure is different. Go to one of the following articles for detailed settings for each platform:
 	- [AirPrint settings for iOS and MacOS](air-print-settings-ios-macos.md)
  	- [AirPlay settings for iOS](airplay-settings-ios.md)
@@ -61,6 +61,3 @@ The profile is created and appears on the profiles list page.
 ## Next steps
 
 If you want to assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
-
-
-

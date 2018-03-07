@@ -29,6 +29,8 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+This article shows you the Intune settings you can use to configure VPN connections on devices running iOS.
+
 Depending on the settings you choose, not all values in the following list are configurable.
 
 ## Base VPN settings

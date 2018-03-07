@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for Work
-titleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for Android for Work devices."
+title: Create Android for Work compliance policy
+titleSuffix: Microsoft Intune
+description: Create an Intune device compliance policy for Android for Work devices so you can specify requirements that a device must meet to be compliant.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about compliance policies, see [What is  device compliance](device-compliance.md). To learn about the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+An Intune device compliance policy for Android for Work specifies the rules and settings that Android for Work devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal. To learn more about compliance policies and the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
@@ -57,12 +57,14 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Create a compliance policy in the Azure portal
 
-1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies** and choose **Create**.
-2. Type a name, a description, and choose the platform that you want this policy to apply to.
-3. Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings. When you are done, click **Ok**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. From the **Intune** pane, choose **Device compliance**. Under **Manage**, choose **Policies** and choose **Create policy**.
+2. Type a name, description and choose the platform that you want this policy to apply to.
+3. Choose **Settings Configure** to specify the **System Security**, **Device Health**, and **Device Properties** settings here. When you are done, choose **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -70,10 +72,10 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Assign user groups
 
-To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policy** blade.
+To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Device compliance – Policies** pane.
 
-1. Choose the policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
+1. Choose the policy you want to assign to users and choose **Assignments**. This opens the pane where you can select **Azure Active Directory security groups** and assign them to the policy.
+2. Choose **Selected groups** to open the pane that displays the Azure AD security groups.  Choosing **Save**  deploys the policy to users.
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 

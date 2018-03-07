@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,10 +67,11 @@ For more information about how to upload and publish Android apps, see the [Goog
 
 If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Mobile apps** workload, force an immediate sync as follows:
 
-1. Sign into the Azure portal.
-2. On the **Intune** blade, choose **Mobile apps**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. On the **Intune** pane, choose **Mobile apps**.
 3. In the **Mobile apps** workload, choose **Setup** > **Android for Work**.
-4. On the Android for Work blade, choose **Sync Now**.
+4. On the Android for Work pane, choose **Sync**.
 5. The page also displays the time and status of the last sync.
 
 When the app is displayed in the **Licensed apps** node of the **Mobile apps** workload, you can [assign it just like you would assign any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
