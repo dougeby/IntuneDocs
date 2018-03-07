@@ -38,7 +38,7 @@ The users of apps and devices at your company (your company's workforce) may hav
 
 Intune supports a wide range of different app types. The available options differ for each app type. Intune lets you add and assign these app types:
 
-| App Types                                 	| Installation                                                               	| Updates                   	|
+| **App Types**                                 	| **Installation**                                                               	| **Updates**                   	|
 |------------------------------------------	|----------------------------------------------------------------------------	|---------------------------	|
 | Apps from the store (store apps)         	| Intune installs the app on the   device                                    	| App updates are automatic 	|
 | Apps written in-house (line-of-business) 	| Intune installs the app on the   device (you supply the installation file) 	| You must update the app   	|
@@ -47,9 +47,9 @@ Intune supports a wide range of different app types. The available options diffe
 
 ### Specific app type details
  
-The following table lists the specific app types in Microsoft Intune.
+The following table lists the specific app types and how you can add them from the **Add app** blade in Microsoft Intune:
 
-| **App   Specific Type**                         | **General App Type**             | **App Specific Procedures**                                                                                                                                                 |
+| **App   Specific Type**                         | **General Type**             | **App Specific Procedures**                                                                                                                                                 |
 |---------------------------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android   store apps                        | Store   app                  | Select **Android** as the **app type** and enter the Google   Play store URL for the app.                                                                                       |
 | iOS   store apps                            | Store   app                  | Select **iOS** as the **app type**, search for the app, and   select the app within Intune.                                                                                     |
@@ -65,7 +65,6 @@ The following table lists the specific app types in Microsoft Intune.
 | Built-in   iOS app                          | Built-in   app               | Select **Built-In app** as the **app type** and then select the   bulit-in app from the list of provided apps.                                                                  |
 | Built-in   Android app                      | Built-in   app               | Select **Built-In app** as the **app type** and then select the   bulit-in app from the list of provided apps.                                                                  |
 | Web   apps                                  | Web   app                    | Select **Web link** as the **app type** and enter a valid URL   pointing to the Web app.                                                                                        |
-
 
    
 You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** blade will be displayed and allow you to select the **App type**. 
