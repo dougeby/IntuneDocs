@@ -83,9 +83,10 @@ End users can install the Company Portal app from the Microsoft Store to manage 
 
     ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
 
-  - Place the dependency packages in the *Dependencies* folder. If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error:
+  - Place the dependency packages in the *Dependencies* folder. 
 
-      ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and assign this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
+     > [!NOTE]
+     > If the dependencies are not placed in the correct format, Intune will not be able to recognize and upload the files during the package upload, causing the upload to fail and display and error.
 
 9. Return to Microsoft Intune in the Azure portal.
 10. Upload the Company Portal app as a new app. Assign it as a required app to the desired set of target users.  
