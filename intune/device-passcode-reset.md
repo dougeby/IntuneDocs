@@ -26,8 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Reset and remove the passcode on Intune-managed devices
-
+# Reset or remove a device passcode in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
