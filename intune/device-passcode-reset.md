@@ -46,7 +46,7 @@ This feature is **not** supported for the following systems:
 
 ## Reset a passcode
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, select a device, choose **...More**, and then choose the **Remove passcode** device remote action.
