@@ -24,7 +24,7 @@ ms.custom: intune-azure
 
 ---
 
-# Create a profile with custom settings in Microsoft Intune
+# Create a profile with custom settings in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
