@@ -809,9 +809,6 @@ If you’ve previously onboarded, your situation depends on the setting you chos
 
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
-### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
-Deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS will begin in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
-
 ### Direct access to Apple enrollment scenarios <!--951869-->
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
 
