@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Select **Download your CSR** to download and save the request file locally. The 
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID, and then click **Create a Certificate**. Select **Choose File** and browse to the certificate signing request file, and then choose **Upload**. On the Confirmation page, choose **Download** to the download the certificate (.pem)  file, and save the file locally.
 
 > [!NOTE]
-> The certificate is associated with the Apple ID used to create it. As a best practice, use a company Apple ID for management tasks. Never use a personal Apple ID.
+> The certificate is associated with the Apple ID used to create it. As a best practice, use a company Apple ID for management tasks and make sure the mailbox is monitored by more than one person like a distribution list. Never use a personal Apple ID.
 
 **Step 3. Enter the Apple ID used to create your Apple MDM push certificate.**<br>
 Record this ID as a reminder for when you need to renew this certificate.
