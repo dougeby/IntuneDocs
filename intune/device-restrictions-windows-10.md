@@ -274,7 +274,7 @@ You can add apps that should have a different privacy behavior from what you def
 
       - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
 
-         For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
+         For devices in public environments, use accounts with minimal privileges to prevent unauthorized activity.  
 
       - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
