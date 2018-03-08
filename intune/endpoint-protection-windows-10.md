@@ -63,7 +63,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 - **Print from virtual browser** - Allow PDF, XPS, local, and/or network printers to print content from the virtual browser.
 - **Collect logs** - Collect logs for events that occur within an Application Guard browsing session.
 - **Retain user-generated browser data** - Allow user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session to be saved.
-- **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session by enabling access to a virtual graphics processing unit..
+- **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session by enabling access to a virtual graphics processing unit.
 
 
 ## Windows Defender Firewall
@@ -253,11 +253,95 @@ Block end user access to the various areas of the Windows Defender Security Cent
 
 #### IT contact Information
 
-Provide IT contact information to appear in Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. You must define the **IT organizaiton name** and at least one of the following contact options:
+Provide IT contact information to appear in Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. You must define the **IT organization name** and at least one of the following contact options:
 
 - **IT department phone number or Skype ID**
 - **IT department email address**
 - **IT support website URL**
+
+## Local device security options
+
+Use these settings to enable security settings on Windows 10 devices.
+
+### Accounts settings
+
+- **Add new Microsoft accounts** - Prevent users from adding new Microsoft accounts to this computer.
+- **Remote log on without password** - Enable local accounts that are not password-protected to log on from locations other than the physical device.
+
+#### Admin
+
+- **Local admin account** - Determine whether the local Administrator account is enabled or disabled.
+- **Rename admin account** - Define a different account name to be associated with the security identifier (SID) for the Administrator account.
+
+#### Guest
+
+- **Guest account** - Determine if the Guest account is enabled or disabled.
+- **Rename guest account** - Define a different account name to be associated with the security identifier (SID) for the Guest account.
+
+### Devices settings
+
+- **Undock device without logon** - Prevent a portable computer from being undocked without having to log in.
+- **Install printer drivers for shared printers** - Restrict installing printer drivers as part of connecting to a shared printer to admins only.
+- **Restrict CD-ROM access to local active user** - Enabling this setting allows only interactively logged on user to access CD-ROM media
+- **Format and eject removable media** - Define who is allowed to format and eject removable NTFS media
+    - **Not configured**
+    - **Administrators and Power Users**
+    - **Administrators and Interactive Users**
+
+### Interactive Logon settings
+
+- **Minutes of activity until screen saver activates** - Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs.
+- **Require CTRL+ALT+DEL to log on** - Require CTRL+ALT+DEL to be pressed before a user can log on.
+
+#### Display
+
+- **User information on lock screen** - Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown.
+    - **User display name only**
+    - **Do not display user information**
+    - **Not configured** - User display name, domain, and user name
+- **Hide last signed-in user** - Do not display the username of the last person who signed in on this device.
+- **Hide username at sign-in** - Do not display the username of the person signing in to this device after credentials are entered and before the device’s desktop is shown.
+- **Logon message title** - Set message title for users attempting to log in.
+- **Logon message text** - Set message text for users attempting to log in.
+
+### Network access and security settings
+
+- **PKU2U authentication requests** - Block PKU2U authentication requests to this device to use online identities.
+- **Restrict remote RPC connections to SAM** - Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.
+- **Security descriptor**
+
+### Recovery Console and shutdown settings
+
+- **Clear virtual memory pagefile when shutting down** - Clear the virtual memory pagefile when the device is powered down.
+- **Shutdown without logon** - Block the option to shut down the computer from the Windows logon screen. In this case, users must be able to log on to the computer successfully and before they can perform a system shutdown.
+
+### User account control settings
+
+- **UIA integrity without secure location** - Enable apps from unsecure locations in the file system to run with UIAccess integrity level.
+- **Virtualize file and registry write failures to per-user locations** - Determine whether app write failures are redirected to defined registry and file system locations instead of causing the app to fail.
+- **Only elevate executable files that are signed and validated** - Enforce PKI certification path validation for a given executable file before it is permitted to run.
+
+### UIA elevation prompt behavior settings
+
+- **Elevation prompt for admins** - Define the behavior of the elevation prompt for admins in Admin Approval Mode.
+    - **Elevate without prompting**
+    - **Prompt for credentials on the secure desktop**
+    - **Prompt for consent on the secure desktop**
+    - **Prompt for credentials**
+    - **Prompt for consent**
+    - **Not configured** - Prompt for consent for non-Windows binaries
+- **Elevation prompt for standard users** - Define the behavior of the elevation prompt for standard users.
+    - **Automatically deny elevation requests**
+    - **Prompt for credentials on the secure desktop**
+    - **Not configured** - Prompt for credentials
+- **Route elevation prompts to user’s interactive desktop** - Enable all elevation requests to go to the interactive user's desktop rather than the secure desktop. Prompt behavior policy settings for admins and standard users are used.
+- **Elevated prompt for app installations** - App installations requiring elevated privileges will prompt for admin credentials.
+- **UIA elevation prompt without secure desktop** - Allow UIAccess apps to prompt for elevation without using the secure desktop.
+
+### Admin Approval Mode settings
+
+- **Admin approval Mode for Built-in Administrator** - Defines whether the built-in admin account uses Admin Approval Mode or runs all apps with full admin privileges.
+- **Run all admins in Admin Approval Mode** - Define whether Admin Approval Mode and all UAC policy settings are enabled.
 
 ## Next steps
 
