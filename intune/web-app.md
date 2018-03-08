@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: intune-azure
 Before you can manage and assign an app for your users, add the app to Intune. Intune supports a variety of app types including web apps.
 
 > [!Note]
-> Web apps are not supported on Android for Work devices.
+> Web apps are not supported on Android for Work devices and MacOS.
 
 Complete the following steps to add an app to Intune as a shortcut to an app on the web:
 
