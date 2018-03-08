@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How to add web apps to Intune
-titleSuffix: "Azure portal"
-description: Learn about adding web apps to Intune."
+title: How to add web apps to Microsoft Intune
+titleSuffix: 
+description: Learn about adding web apps to Microsoft Intune.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Before you can manage and assign an app for your users, add the app to Intune. Intune supports a variety of app types including web apps.
+Intune supports a variety of app types including web apps. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. A web app is separately maintained on the Web. You use Microsoft Intune to point to this app type. You also assign which groups of users can access this app. 
+
+Before you can manage and assign an app for your users, add the app to Intune. Intune creates a shortcut to the web app on the user's device home screen.
 
 > [!Note]
 > Web apps are not supported on Android for Work devices.
@@ -56,4 +58,6 @@ Complete the following steps to add an app to Intune as a shortcut to an app on 
 9. When you are done, on the **Add information** pane, select **Ok**.
 10. Then, from the **Add app** pane, select **Add**.
 
-The app you have created is displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+## Next steps
+
+- The app you have created is displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
