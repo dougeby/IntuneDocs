@@ -30,9 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Custom** profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features on Android devices. These settings are typically used by mobile device manufacturers to control features on the device.
+Custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features on Android devices. These settings are typically used by mobile device manufacturers to control features on the device.
 
-Using a custom profile, you can configure and assign the following Android settings: These settings aren't built in to the Intune policies:
+Using a custom profile, you can configure and assign the following Android settings. These settings aren't built in to the Intune policies:
 
 - [Create a Wi-Fi profile with a pre-shared key](/intune/wi-fi-profile-shared-key)
 - [Create a per-app VPN profile](/intune/android-pulse-secure-per-app-vpn)
