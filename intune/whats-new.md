@@ -782,9 +782,6 @@ For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
 
 
-### Plan for Change: Easy Assist End-of-Life <!-- 1556480 -->
-Intune uses the Microsoft Easy Assist for PC management remote assistance. One thing you may not know is that Microsoft Easy Assist is a component of Office Live Meeting, a service that is being deprecated December 31, 2017. Therefore, Intune’s Easy Assist offering will also reach end of life on December 31, 2017.
-
 ### Manage Android for Work devices independently from Android devices <!-- 1490731 EEready-->    
 **Note**: The following changes will start rolling out with the November update, but may take time to execute on your account. You will receive a confirmation notification in the Office 365 portal when these changes are effective for your account. After the roll out, you’ll have additional manageability options. There will be no change to the end user experience during the rollout.
 
@@ -812,25 +809,8 @@ If you’ve previously onboarded, your situation depends on the setting you chos
 
 In all cases, your intended regulation is preserved. No action is required on your part to maintain the global or per-group allowance of Android for Work in your environment.
 
-### Deprecating support for OS X Mavericks 10.10 and previous versions of macOS <!--1489263, plan for change for 1802-->
-Deprecation of enrollment for devices with OS X Yosemite 10.10 and previous versions of macOS will begin in February 2018. Intune fully supports OS X El Capitan 10.11 and newer.
-
-### New path for managed devices in Graph API <!-- 1586728 -->
-The path used to access managed devices in the beta version of the Graph API is changing. 
-
-| | |
-|--|--|
-| Current path |  https://graph.microsoft.com/beta/managedDevices |
-| New path | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-Both paths will work through the month of October. After the October service release, only the new path will work.  If you are using the Graph API to access managed devices, update and verify your scripts and applications with the new path. For additional changes, check the monthly [Graph API changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
-
-
 ### Direct access to Apple enrollment scenarios <!--951869-->
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
-
-### Administration roles being replaced in Azure portal
-The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to reassign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ## What's coming
 
@@ -839,25 +819,6 @@ The existing mobile application management (MAM) administration roles (Contrib
 We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
 
 We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access.
-
-### Conditional Access policies for Intune will only be available from the Azure portal  <!-- 1737088 -->
-We are simplifying where you configure and manage conditional access. Currently, you can manage conditional access from the Intune App Protection (MAM) blade, and through the classic Azure AD experience in the [Windows Azure portal](https://manage.windowsazure.com). Starting in January, you will only be able to configure and manage your policies in the [Azure portal](https://portal.azure.com) from **Azure Active Directory** > **Conditional Access**. For your convenience, you can also access this blade from Intune in the Azure portal at **Intune** > **Conditional Access**.
-
-### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!--1592747-->
-Beginning in early 2018, Jamf will send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365.
-
-### Changes in support for the Intune iOS Company Portal app  <!-- 1164474  -->
-Coming soon, there will be a new version of the Microsoft Intune Company Portal app for iOS that will support only devices running iOS 9.0 or later. The version of the Company Portal that supports iOS 8 will still be available for a short period of time. However, if you also use MAM-enabled iOS apps we support iOS 9.0 and later, so you'll want to ensure your end users update to the latest OS. 
-
-#### How does this affect me?
-We are letting you know this in advance, even though we don't have specific dates, so you have time to plan. Ensure your users are updated to iOS 9+ and when the Company Portal app releases, request that your end users update their Company Portal app.
-
-#### What do I need to do to prepare for this change?
-Encourage your users to update to iOS 9.0 or later to take full advantage of new Intune features.  Encourage users to install the new
-version of the Company Portal and take advantage of the new features it will offer.
-
-Go to the Intune in the Azure portal and view Devices > All Devices and filter by iOS version to see any current devices with operating systems earlier than iOS 9.
-
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
