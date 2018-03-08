@@ -235,21 +235,6 @@ You will be able to target compliance policies to users in user groups. You'll b
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
-### Intune provides the Account Move operation  <!-- 1573558, 1579830 -->
-The **Account Move** migrates a tenant from one Azure Scale Unit (ASU) to another. The **Account Move** can be used for both customer-initiated scenarios, when you call the Intune support team requesting it, and it can also be a Microsoft-driven scenario where Microsoft needs to make adjustments to the service in the back-end. During the **Account Move**, the tenant enters in read-only mode (ROM). Service operations like enrolling, renaming devices, updating compliance status will fail during the ROM period.
-
-The change addresses the confusion when one app is assigned to multiple groups with different app intents.
-
-If you would like to have your app available in the Information Worker Portal and the Company Portal before the November service release, you have two options:
-
-1. Remove the **Not Applicable** assignment for your group.
-2. Create a new group that does not include members with **Required and Available** intent assigned and assign that group as **Not Applicable**.
-
-For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md).
-
-> [!Note]
-> After the release you will no longer be able to view or modify Mobile Device Management (MDM) app assignments in the Intune classic console. However, you can use Azure console or the Intune Graph API to make your app assignments.
-
 ### Configure an iOS app PIN <!-- 1586774 -->
 Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
 
