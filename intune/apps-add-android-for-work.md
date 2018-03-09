@@ -55,7 +55,7 @@ Make sure you have configured Intune and Android for Work to work together in th
 
     ![Example - Approve app permissions](media/approve-app-permissions.png)
 
-5. Choose the how to handle new app perimssion requests. Thenn, select **Save** to save how new app permission requests will be handled.</br>
+5. Choose how to handle new app permission requests. Then, select **Save** to save how new app permission requests will be handled.</br>
 
     ![Example - Save new app perimssion requests](media/approve-app-settings.png)</br>
 
