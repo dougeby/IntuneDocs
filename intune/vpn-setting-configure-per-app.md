@@ -32,6 +32,11 @@ ms.custom: intune-azure
 You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
 
 ## Prerequisites for the Per-App VPN
+You can configure Per-App VPN connections with the following VPN providers:
+ - Pulse Secure
+ - Checkpoint
+ - F5
+ - SonicWall
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
