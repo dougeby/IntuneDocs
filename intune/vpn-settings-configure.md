@@ -43,7 +43,7 @@ You can create VPN profiles using the following connection types:
 |Cisco (IPSec)|No|Yes|No|No|No|No|
 |Citrix|Yes|Yes|No|No|No|Yes|
 |F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
-|Dell SonicWALL Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
+|SonicWall Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
 |Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco AnyConnect|Yes|Yes|Yes|No|No|No|
 |Automatic|No|No|No|No|No|Yes|
