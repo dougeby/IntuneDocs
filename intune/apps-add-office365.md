@@ -3,12 +3,12 @@
 
 title: Install Office 365 apps to devices using Microsoft Intune
 titlesuffix: 
-description: Learn how you can use Microsoft Intune to make it easier to install Office 365 apps on Windows 10 devices."
+description: Learn how you can use Microsoft Intune to make it easier to install Office 365 apps on Windows 10 devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Office 365 ProPlus apps to Windows 10 devices with Microsoft Intune
+# How to assign Office 365 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 ProPlus apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client, and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps you want appear as a single entry in the list of apps in the Intune console.
 
 
 ## Before you start
@@ -38,7 +38,7 @@ This app type makes it easy for you to assign Office 365 ProPlus apps to devices
 >This method of installing Office is only supported if no other versions of Microsoft Office are installed on the device.
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
-- Intune only supports adding Office apps from the Office 365 ProPlus suite.
+- Intune only supports adding Office apps from the Office 365 suite.
 - If any Office apps are open when Intune installs the app suite, installation may fail and end users may lose data from unsaved files.
 - This installation method is not supported on Windows 10S, Windows Home, Windows Team, Windows Holographic, and Windows Holographic for Business devices.
 - Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
@@ -47,12 +47,13 @@ This app type makes it easy for you to assign Office 365 ProPlus apps to devices
 
 ## Get started
 
-1.	Sign into the Azure portal.
-2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
+1.	Sign into the [Azure portal](https://portal.azure.com).
+2.	Choose **All Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3.	On the **Intune** blade, choose **Mobile apps**.
-4.	In the **Mobile apps** workload, choose **Manage** > **Apps**.
+4.	In the **Mobile apps** workload, choose **Apps** from the **Manage** section.
 5.	Above the list of apps, choose **Add**.
-6.	On the **Add App** blade, choose **Office 365 ProPlus Suite (Windows 10)**.
+6.	On the **App type** list on the **Add apps** blade, select **Windows 10** under the **Office 365 Suite**.
+    You can now configure the app suite.
 
 ## Configure the app suite
 
@@ -67,7 +68,7 @@ In this step, choose the Office apps you want to assign to devices.
 
 ## Configure app information
 
-In this step, provide information about the app suite. This information helps you to identify it in Intune, and also helps users to find it in the Company Portal app.
+In this step, you must provide information about the app suite. This information helps you to identify the app suite in Intune, and also helps users to find it in the Company Portal app.
 
 1.	On the **Add App** blade, choose **App Suite Information**.
 2.	On the **App Suite Information** blade, specify the following information:
@@ -81,7 +82,7 @@ In this step, provide information about the app suite. This information helps yo
 	- **Developer** - Optionally, enter the name of the app developer.
 	- **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
 	- **Notes** - Enter any notes you would like to associate with this app.
-	- **Upload Icon** - Upload an icon that is displayed with the app when users browse the company portal.
+	- **Logo** - Upload an icon that is displayed with the app when users browse the company portal.
 3.	When you are done, click **OK**.
 
 ## Configure app settings
@@ -90,14 +91,14 @@ In this step, configure installation options for the app suite. The settings app
 
 1.	On the **Add App** blade, choose **App Suite Settings**.
 2.	On the **App Suite Settings** blade, specify the following information:
-	- **Office version** - Choose whether you want to assign the 32-bit, or 64-bit version of Office. You can install the 32-bit version on both 32-bit, and 64-bit devices, but you can only install the 64-bit version on 64-bit devices.
+	- **Office version** - Choose whether you want to assign the 32-bit, or 64-bit version of Office. You can install the 32-bit version on both 32-bit and 64-bit devices, but you can only install the 64-bit version on 64-bit devices.
 	- **Update Channel** - Choose how office is updated on devices. For information about the different update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choose from:
 		- **Monthly**
 		- **Monthly (Targeted)**
 		- **Semi-Annual**
 		- **Semi-Annual (Targeted)**
 	- **Automatically accept the app end user license agreement** - Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
-	- **Use shared computer activation** - Shared computer activation is used when multiple users share a computer. For more information, see Overview of shared computer activation for Office 365 ProPlus.
+	- **Use shared computer activation** - Shared computer activation is used when multiple users share a computer. For more information, see Overview of shared computer activation for Office 365.
 	- **Languages** - Office automatically installs in any supported languages that are installed with Windows on the end-users device. Select this option if you want to install additional languages with the app suite.
 
 >[!IMPORTANT]
@@ -105,7 +106,7 @@ In this step, configure installation options for the app suite. The settings app
 
 ## Finish up
 
-When you are done, on the **Add App** blade, choose **Save**. The app you have created is displayed in the apps list.
+When you are done, on the **Add App** blade, choose **Add**. The app you have created is displayed in the apps list.
 
 ## Error codes when installing the app suite
 
@@ -143,4 +144,4 @@ The following table lists common error codes you might encounter and their meani
 
 ## Next steps
 
-You can now assign the apps the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+- You can now assign the apps the groups you choose, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
