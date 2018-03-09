@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title:Configure VPN settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
-description: Learn about the Intune settings you can use to configure VPN connections on devices running Windows 10.
+title: View VPN settings in Microsoft Intune - Azure | Microsoft Docs
+description: Learn and read about the what the VPN settings in Microsoft Intune are used for, and what they do, including traffic rules, conditional access, and DNS and proxy settings for Windows 10 devices and Windows Holographic for Business devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Configure VPN settings in Microsoft Intune for devices running Windows 10
+# Read about the VPN settings in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
