@@ -7,7 +7,7 @@ keywords: intune graphapi c# powershell permission roles
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ This article:
 
 - Provides Intune API authentication examples for C# and PowerShell.
 
-- Describes how to support multiple tenants
+- Describes how to support multiple tenants.
 
 To learn more, see:
 
@@ -102,7 +102,7 @@ To register an app to use Microsoft Graph API:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     For best results, choose the fewest roles needed to implement your application.
 
@@ -145,7 +145,7 @@ The following table summarizes the Intune API permission scopes.  The first colu
 
 _Enable Access_ setting | Scope name
 :--|:--
-__Perform user-impacting remote actions on Microsoft Intune devices__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Perform user-impacting remote actions on Microsoft Intune devices__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Read and write Microsoft Intune devices__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Read Microsoft Intune devices__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Read and write Microsoft Intune RBAC settings__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -591,7 +591,7 @@ Remember to add the user to other roles as needed. For example, to allow the use
 
 Also:
 
-- Use http://portal.office.com to assign an Intune license to your user account.
+- Use https://portal.office.com to assign an Intune license to your user account.
 
 - Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 
