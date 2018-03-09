@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,5 +55,8 @@ Complete the following steps to add an app to Intune as a shortcut to an app on 
 	- **Logo** - Upload a logo that is associated with the app. This logo is the logo that is displayed with the app when users browse the company portal.
 9. When you are done, on the **Add information** pane, select **Ok**.
 10. Then, from the **Add app** pane, select **Add**.
+
+> [!Note]
+> Web apps deployed to Android devices are displayed in the Intune Widget that the user needs to add to his/her homescreen to see the web apps.
 
 The app you have created is displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
