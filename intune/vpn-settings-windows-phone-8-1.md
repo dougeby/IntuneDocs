@@ -54,7 +54,7 @@ Depending on the settings you choose, not all values in the following list are c
 
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 	- **Check Point Capsule VPN**
-	- **Dell SonicWALL Mobile Connect**
+	- **SonicWall Mobile Connect**
 	- **F5 Edge Client**
 	- **Pulse Secure**
 
@@ -79,7 +79,7 @@ Depending on the settings you choose, not all values in the following list are c
 	<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**Example for Dell SonicWALL Mobile Connect:**
+**Example for SonicWall Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
