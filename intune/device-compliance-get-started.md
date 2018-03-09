@@ -81,7 +81,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 You need to have the following subscriptions to use device compliance policies with Intune:
 
-- Intune EMS
+- Intune
 
 - Azure AD Premium
 
