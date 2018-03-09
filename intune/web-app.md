@@ -33,7 +33,7 @@ ms.custom: intune-azure
 Before you can manage and assign an app for your users, add the app to Intune. Intune supports a variety of app types including web apps.
 
 > [!Note]
-> Web apps are not supported on Android for Work devices.
+> Web apps are not supported on Android for Work devices and macOS.
 
 Complete the following steps to add an app to Intune as a shortcut to an app on the web:
 
@@ -57,6 +57,4 @@ Complete the following steps to add an app to Intune as a shortcut to an app on 
 10. Then, from the **Add app** pane, select **Add**.
 
 > [!Note]
-> Web apps deployed to Android devices are displayed in the Intune Widget that the user needs to add to his/her homescreen to see the web apps.
-
-The app you have created is displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+> Users need to add the Intune widget to their home screen to display web apps that have been assigned to Android devices.
