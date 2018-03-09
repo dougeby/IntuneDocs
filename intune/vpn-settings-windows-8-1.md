@@ -48,13 +48,13 @@ Depending on the settings you choose, not all values in the following list are c
 
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 - **Check Point Capsule VPN**
-- **Dell SonicWALL Mobile Connect**
+- **SonicWall Mobile Connect**
 - **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-- **Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
+- **Login group or domain** (SonicWall Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
 
 - **Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features.
 
@@ -76,7 +76,7 @@ Depending on the settings you choose, not all values in the following list are c
 
 ```
 
-**Example for Dell SonicWALL Mobile Connect:**
+**Example for SonicWall Mobile Connect:**
 ```
 	<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
