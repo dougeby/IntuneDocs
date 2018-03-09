@@ -33,6 +33,7 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 
 ## General
 
+- 	**Share usage data** - Allow or block the device from sending diagnostic and usage telemetry data to Apple.
 - 	**Diagnostic data submission** - Allow or block the device from submitting diagnostic data to Apple.
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.
 	- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Apple Classroom app from viewing the screen of iOS devices.
@@ -220,8 +221,8 @@ You can also click **Import** to populate the list from a csv file in the format
 - 	**Join Wi-Fi networks only using configuration profiles (supervised only)** - Only allow the device to join Wi-Fi networks that have been configured with an Intune Wi-Fi profile.
 
 - **Cellular usage rules (managed apps only)** - Lets you define the data types that managed apps can use when on cellular networks. Choose from:
-	- **Block use of cellular data**
-	- **Block use of cellular data when roaming**
+	- **Block use of cellular data** - You can block use of cellular data for ** All managed apps** or **Choose specific apps**.
+	- **Block use of cellular data when roaming** - You can block use of cellular data when roaming for ** All managed apps** or **Choose specific apps**.
 
 ## Connected Devices
 

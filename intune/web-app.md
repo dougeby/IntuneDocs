@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ Intune supports a variety of app types including web apps. A web app is a client
 Before you can manage and assign an app for your users, add the app to Intune. Intune creates a shortcut to the web app on the user's device home screen.
 
 > [!Note]
-> Web apps are not supported on Android for Work devices.
+> Web apps are not supported on Android for Work devices and macOS.
 
 Complete the following steps to add an app to Intune as a shortcut to an app on the web:
 
@@ -57,6 +57,9 @@ Complete the following steps to add an app to Intune as a shortcut to an app on 
 	- **Logo** - Upload a logo that is associated with the app. This logo is the logo that is displayed with the app when users browse the company portal.
 9. When you are done, on the **Add information** pane, select **Ok**.
 10. Then, from the **Add app** pane, select **Add**.
+
+> [!Note]
+> Users need to add the Intune widget to their home screen to display web apps that have been assigned to Android devices.
 
 ## Next steps
 
