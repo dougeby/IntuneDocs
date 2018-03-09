@@ -79,7 +79,7 @@ You can find most things app-related in the **Mobile Apps** workload that you ca
 The information below corresponds with the options available in the **Mobile apps** blade.
 
 ### Manage
-- **Apps** - Select this option to add, view, assign, and monitor the apps your workforce use. For more information, see the following articles:
+- **Apps** - Select this option to add, view, assign, and monitor the apps your workforce uses. For more information, see the following articles:
 	- [Add apps](apps-add.md)
 	- [Assign apps](apps-deploy.md)
 	- [Monitor apps](apps-monitor.md)
