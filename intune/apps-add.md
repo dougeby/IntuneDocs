@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 Before you can assign, monitor, configure, or protect apps, you must add them to Microsoft Intune.
 
-The users of apps and devices at your company (your company's workforce) may have several app requirements. Before adding apps to Intune and making them available to your workforce, you must assess and understand a few app fundementals. You must understand the different types of apps available for Intune. You will need to assess the app requirements, such as the the needed platforms and capabilities needed for your workforce. Also, you must determine whether you will use Intune to manage the devices (including apps), or have Intune manage apps without managing devices. You must determine who in your workforce will need different apps and different capabilities. The information provided in this article will help you get started.
+The users of apps and devices at your company (your company's workforce) may have several app requirements. Before adding apps to Intune and making them available to your workforce, you must assess and understand a few app fundamentals. You must understand the different types of apps available for Intune. You will need to assess the app requirements, such as the needed platforms and capabilities needed for your workforce. Also, you must determine whether you will use Intune to manage the devices (including apps), or have Intune manage apps without managing devices. You must determine who in your workforce will need different apps and different capabilities. The information provided in this article will help you get started.
 
 ## App types in Microsoft Intune
 
@@ -111,10 +111,10 @@ Intune lets you modify the functionality of apps that you deploy to help align t
 - Configuring web links to open inside the Intune Managed Browser app
 - Enabling multi-identity use and app-level conditional access
 
-Intune-managed apps can also enable app protection without requiring enrollment, giving you the choice to apply data loss prevention policies without managing the user's device. Additonally, you can incorporate mobile app management in your mobile and line-of-business apps using the Intune App software development kit and app wrapping tool. For more inforamtion about these tools, see [Intune App SDK overview](app-sdk.md).
+Intune-managed apps can also enable app protection without requiring enrollment, giving you the choice to apply data loss prevention policies without managing the user's device. Additionally, you can incorporate mobile app management in your mobile and line-of-business apps using the Intune App software development kit and app wrapping tool. For more information about these tools, see [Intune App SDK overview](app-sdk.md).
 
 ### Understanding licensed apps
-In addition to web apps, store apps, and LOB apps, you should also be aware of the destintion of volume-purchase-program apps and licensed apps, such as:     
+In addition to web apps, store apps, and LOB apps, you should also be aware of the destination of volume-purchase-program apps and licensed apps, such as:     
 - **Apple Volume Purchasing Program for Business (iOS and MacOS)** - The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company. For more information, see [Manage iOS volume-purchased apps](vpp-apps-ios.md).
 - **Android for Work (Android)** - You assign apps to Android for Work devices in a different way than you assign them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log on to the store, browse for the apps you want, and approve them. The app then appears in the Licensed apps node of the Azure portal. From here, you can manage assignment of the app in the same way you would assign any other app.
 - **Microsoft Store for Business (Windows 10)** - The Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For more information, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
