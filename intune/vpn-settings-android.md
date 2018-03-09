@@ -48,7 +48,7 @@ Depending on the settings you choose, not all the following values are configura
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 	- **Check Point Capsule VPN**
 	- **Cisco AnyConnect**
-	- **Dell SonicWALL Mobile Connect**
+	- **SonicWall Mobile Connect**
 	- **F5 Edge Client**
 	- **Pulse Secure**
 	- **Citrix**
@@ -66,7 +66,7 @@ Depending on the settings you choose, not all the following values are configura
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 	- **Check Point Capsule VPN**
 	- **Cisco AnyConnect**
-	- **Dell SonicWALL Mobile Connect**
+	- **SonicWall Mobile Connect**
 	- **F5 Edge Client**
 	- **Pulse Secure**
 
