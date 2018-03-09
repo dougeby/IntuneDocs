@@ -58,7 +58,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 3. On the **Intune** blade, choose **Mobile apps**.
 1. In the **Mobile apps** workload, **Apps** from the **Manage** section.
 2. On the list of apps blade, click the app you want to assign.
-3. On the app specific **Overview** blade, choose **Assignments** from the **Manage** section.
+3. On the app-specific **Overview** blade, choose **Assignments** from the **Manage** section.
 4. Choose **Add Group** to display the **Add group** blade related to the app.
 5. For the specific app, choose an **assignment type** for the app from:
 	- **Available for enrolled devices** - Users install the app from the Company Portal app or website.
@@ -73,7 +73,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 7. Click **Select** once you have selected one or more groups to include.
 8. Click **OK** on the **Assign** blade to complete the included group selection.
 9. Click **Exclude Groups** if you choose to exclude any groups of users from being affected by this app assignment.
-10. If you have choosen to exclude any groups, click **Select** on the **Select groups** blade.
+10. If you have chosen to exclude any groups, click **Select** on the **Select groups** blade.
 11. Click **OK** on the **Add group** blade.
 12. Click **Save** on app **Assignments** blade to save your assignments.
 
@@ -119,7 +119,7 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br>If the user didn’t install the app from the company portal, then the uninstall is honored.<br>If the user installs the app from the company portal, then the install is prioritized over the uninstall.|
 
 >[!NOTE]
->For managed iOS store apps only, when you add these to Intune and assign them as Required, they are automatically created with both Required, and Available intents.
+>For managed iOS store apps only, when you add these apps to Microsoft Intune and assign them as **Required**, they are automatically created with both **Required**, and **Available** intents.
 
 ## Next steps
 

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Include and exclude app assignments in Microsoft Intune
 
-Using Intune, you can determine who has access to an app by assigning the groups to include, as well as exclude. However, before you assign groups for the app, you set the assignment type of an app, which makes the app available, required, or uninstalls the app. 
+Using Intune, you can determine who has access to an app by assigning the groups to include, as well as exclude. However, before you assign groups to the app, you must set the assignment type of an app. The assignment type makes the app available, required, or uninstalls the app. 
 
 When focusing on the availability of an app, you include and exclude app assignments to a group of users or devices by using a combination of include and exclude group assignments. This capability can be useful when you make the app available by including a large group, and then narrow the selected users by also excluding a smaller group. The smaller group could be a test group or executive group. 
 
@@ -51,7 +51,7 @@ To assign an app to groups using the include and exclude assignment:
 
     ![Intune app assignments](./media/apps-inc-exl-01.png)
 7. Select **Add group** to add the groups of users who are assigned the app. 
-8. Select an **Assignment type** from the available assignment types on the **Add group** blade.
+8. Select an **Assignment type** from the available assignment types on the **Add group** pane.
 9. Select **Available with or without enrollment** as the assignment type.
 
     ![Intune app assignments - Add group](./media/apps-inc-exl-02.png)
