@@ -93,4 +93,4 @@ A user status list is displayed when you select **User install status** in the *
 ## Next steps
 
 - To learn more about working with your Intune data, see the [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md).
-- To learn about app configuration policies, see [App configuration policies for Intune](app-configuration-policies-overview).
+- To learn about app configuration policies, see [App configuration policies for Intune](app-configuration-policies-overview.md).
