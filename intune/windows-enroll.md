@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -91,6 +91,9 @@ Tell your users how to enroll their Windows devices and what to expect after the
 > End users must access the Company Portal website through Microsoft Edge to view Windows apps that you've assigned for specific versions of Windows. Other browsers, including Google Chrome, Mozilla Firefox, and Internet Explorer do not support this type of filtering.
 
 For end user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). You can also tell users to review [What can my IT admin see on my device](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+>[!IMPORTANT]
+> If you do not have Auto-MDM enrollment enabled, but you have Windows 10 devices that have been joined to Azure AD, two records will be visible in the Intune console after enrollment. You can stop this by making sure that users with Azure AD joined devices go to **Accounts** > **Access work or school** and **Connect** using the same account. 
 
 For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](end-user-educate.md).
 
