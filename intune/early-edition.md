@@ -151,6 +151,10 @@ You will be able to create custom eBook categories and then assign VPP eBooks to
 
 We'll be updating the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. We'll publish images of the new icons to the [What's new in app UI](whats-new-app-ui.md) article when the app releases. 
 
+### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+
+The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
+
 
 <!-- 1802 start -->
 

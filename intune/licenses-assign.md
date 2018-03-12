@@ -65,6 +65,17 @@ See this [overview of School Data Sync](https://support.office.com/article/Overv
 * Each **device** that you assign a device software license to may access and use the online services and related software (including System Center software) for use by any number of users.
 * If a device is used by more than one user, each requires a device software license or all users require a user software license.
 
+## Understanding the type of licenses you have purchased
+
+How you purchased Intune determines your subscription information:
+
+- If you purchased Intune through an Enterprise Agreement, you can find your subscription information in the Volume License portal under **Subscriptions**.
+- If you purchased Intune through a Cloud Solution Provider, check with your reseller.
+- If you purchased Intune with a CC# or Invoice, then your licenses will be user-based.
+
+
+
+
 ## Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
 
