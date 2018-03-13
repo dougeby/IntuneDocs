@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 03/13/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,17 +52,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 #### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
  
-Intune now supports enrolling devices from up to 100 different Apple Device Enrollment Program (DEP) or Apple School Manager accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
+Intune now supports enrolling devices from up to 100 different [Apple Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) or [Apple School Manager](apple-school-manager-set-up-ios.md) accounts. Each token uploaded can be managed separately for enrollment profiles and devices. A different enrollment profile can be automatically assigned per DEP/School Manager token uploaded. If multiple School Manager tokens are uploaded, only one can be shared with Microsoft School Data Sync at a time.
 
 After migration, the beta Graph APIs and published scripts for managing Apple DEP or ASM over Graph will no longer work. New beta Graph APIs are in development and will be released after the migration.
 
 #### See enrollment restrictions per user <!-- 1634444 eeready wnready -->
-On the **Troubleshoot** blade, you can now see the enrollment restrictions that are in effect for each user by selecting **Enrollment restrictions** from the **Assignments** list.
+On the **Troubleshoot** blade, you can now see the [enrollment restrictions](enrollment-restrictions-set.md) that are in effect for each user by selecting **Enrollment restrictions** from the **Assignments** list.
 
 ### Device management
 #### Windows defender health status and threat status reports <!--854704 -->
 
-Understanding Windows Defender's health and status is key to managing Windows PCs.  With this update, Intune adds new reports and actions to the status and health of the Windows Defender agent. Using a status roll up report in the Device Compliance workload, you can see devices that need any of the following:
+Understanding Windows Defender's health and status is key to managing Windows PCs.  With this update, Intune adds new reports and actions to the status and health of the Windows Defender agent. Using a status roll up report in the [Device Compliance workload](compliance-policy-monitor.md), you can see devices that need any of the following:
 - signature update
 - Restart
 - manual intervention
@@ -72,12 +72,12 @@ Understanding Windows Defender's health and status is key to managing Windows PC
 A drill-in report for each status category lists the individual PCs that need attention, or those that report as **Clean**.
 
 #### New privacy settings for device restrictions <!--1308926 -->
-Two new privacy settings are now available for devices:
+[Two new privacy settings](device-restrictions-windows-10.md#privacy) are now available for devices:
 - **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
 #### New settings for the Edge browser <!--1469166 -->
-Two new settings are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**. 
+[Two new settings](device-restrictions-windows-10.md#edge-browser) are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**. 
 
 ### App management
 #### Protocol exceptions for applications <!--1035509 -->
