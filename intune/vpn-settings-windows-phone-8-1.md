@@ -54,11 +54,11 @@ Depending on the settings you choose, not all values in the following list are c
 
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 	- **Check Point Capsule VPN**
-	- **Dell SonicWALL Mobile Connect**
+	- **SonicWall Mobile Connect**
 	- **F5 Edge Client**
 	- **Pulse Secure**
 
-- **Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
+- **Login group or domain** (SonicWall Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
 - **Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features.
 - **Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses.
 
@@ -79,7 +79,7 @@ Depending on the settings you choose, not all values in the following list are c
 	<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**Example for Dell SonicWALL Mobile Connect:**
+**Example for SonicWall Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 

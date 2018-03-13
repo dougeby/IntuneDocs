@@ -73,6 +73,8 @@ Customers will be able to deploy required line-of-business Windows 10 apps to in
 ### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
 In the Azure portal, Intune will alert you to line-of-business apps that are about to expire. Upon uploading a new version of the line-of-business app, Intune will remove the expiration notification from the app list.
 
+### Company Portal enrollment improved <!-- 1874230-->
+Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
 
 ### New Management name column <!-- 1333586 -->
 A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
@@ -148,6 +150,10 @@ You will be able to create custom eBook categories and then assign VPP eBooks to
 #### Company Portal for Android visual updates <!--976944 -->
 
 We'll be updating the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. We'll publish images of the new icons to the [What's new in app UI](whats-new-app-ui.md) article when the app releases. 
+
+### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+
+The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
 
 
 <!-- 1802 start -->

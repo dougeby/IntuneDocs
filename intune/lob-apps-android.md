@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,10 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A line-of-business (LOB) app is one that you add from an app installation file. These types of apps are typically written in-house.
+A line-of-business (LOB) app is an app that you add to Intune from an app installation file. These types of apps are typically written in-house. Intune installs the LOB app on the users device. 
+
+> [!Note]
+> For more information about line-of-business (LOB) apps from the Google Play for Work store, see [Working with a line-of-business app from the Google Play for Work store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store). 
 
 ## Step 1 - Specify the software setup file
 
@@ -83,8 +86,8 @@ The app you have created will be displayed in the apps list where you can assign
 
 ## Next steps
 
-The app you have created is displayed in the apps list. You can now assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+- The app you have created is displayed in the apps list. You can now assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
-Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
+- Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
 
-Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](introduction-device-app-lifecycles.md)
+- Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](introduction-device-app-lifecycles.md)

@@ -61,14 +61,6 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 > - Automatically set up for work or school
 > - Sign in experience with company or school brand    
 
-## Alerts for Windows AutoPilot unassigned devices  <!-- 163236 -->
-You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them.
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Under **Intune**, choose **Device enrollment**.
-4. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
-
 ## Assign an AutoPilot deployment profile
 After you create AutoPilot deployment profiles, you can assign them to selected devices.
 
@@ -107,6 +99,15 @@ If you are not interested in mobile device management, you have the ability to u
 - Display changes to profile assignments done in another portal
 - Synchronize profile assignments done in another portal
 - Display changes to the device list that were made in another portal
+
+## Alerts for Windows AutoPilot unassigned devices  <!-- 163236 -->
+You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them.
+
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Under **Intune**, choose **Device enrollment**.
+4. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
+
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
