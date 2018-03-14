@@ -5,10 +5,10 @@ title: Add app configuration policies for managed Android devices
 titlesuffix: Microsoft Intune
 description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android for Work app.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings when users run an Android for Work app. You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to provide configuration settings for an Android for Work app. To configure the app, you select the settings from an available list in Intune. Also, you do not assign these configuration policies directly to users and devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
@@ -41,15 +41,12 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 3. Choose the **Mobile apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
-    - **Name**  
-      The name of the profile that will appear in the Azure portal.
-    - **Description**  
-      The  description of the profile that will appear in the Azure portal.
-    - **Device enrollment type**  
-      Choose **Managed devices**.
+    - **Name** - The name of the profile that will appear in the Azure portal.
+    - **Description** - The  description of the profile that will appear in the Azure portal.
+    - **Device enrollment type** - Choose **Managed devices**.
 6. Select **Android for Work** for **Platform**.
 7. Select **Associated App** to choose the app for which you want to define an  app configuration policy. Select from the list of Android for Work apps that you have approved and synchronized with Intune.
-8. Select **Configuration settings**. You can set configurations by using:
+8. Select **Permissions**. You can set configurations by using:
     - [Configuration designer](#Use-the-configuration-designer)
     - [JSON editor](#Enter-the-JSON-editor)
 9. Choose **OK**, and then choose **Add**.

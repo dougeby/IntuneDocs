@@ -5,10 +5,10 @@ title: Add app configuration policies for managed iOS devices
 titlesuffix: Microsoft Intune
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings when users run an iOS app. You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to provide custom configuration settings for an iOS app. These configuration settings allow an app to be customized based on the suppliers direction. You must get these configuration settings (keys and values) from the supplier of the app. To configure the app, you specify the settings as keys and values, or as XML containing the keys and values. Also, you do not assign these configuration policies directly to users and devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
 
 You can assign an application configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**,  **All Devices**, and **All Users + All Devices**. 
 
@@ -54,18 +54,16 @@ Once you have selected the included groups for your application configuration po
 3. Choose the **Mobile apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
-    - **Name**<br>
-      The name of the profile that appears in the Azure portal.
-    - **Description**<br>
-      The description of the profile that appears in the Azure portal.
-    - **Device enrollment type**<br>
-      Choose **Managed devices**.
+    - **Name** - The name of the profile that appears in the Azure portal.
+    - **Description** - The description of the profile that appears in the Azure portal.
+    - **Device enrollment type** - Choose **Managed devices**.
 6. Select **iOS** for **Platform**.
 7.	Choose **Associated app**. Then, on the **Associated app** pane, choose the managed app to which you want to apply the configuration and select **OK**.
 8.	On the **Add configuration policy** pane, choose **Configuration settings**.
-9. Select **Configuration settings format**. Select one of the following:
-    - **[Use configuration designer](#use-configuration-designer)**
-    - **[Enter XML data](#enter-xml-data)**
+9. Select **Configuration settings format**. Select one of the following to add XML information:
+    - **Use configuration designer**
+    - **Enter XML data**<br></br>
+    For details about using the configuration designer, see [Use configuration designer](#use-configuration-designer). For details about entering XML data, see [Enter XML data](#enter-xml-data). 
 10. Once you have added your XML information, choose **OK**, and then choose **Add** to add the configuration policy. The overview pane for the configuration policy is displayed.
 11. Select **Assignments** to display the include and exclude options. 
 
@@ -85,17 +83,14 @@ Once you have selected the included groups for your application configuration po
 
 ## Use configuration designer
 
-You can use the configuration designer for apps on devices that are enrolled or not enrolled in Intune. The designer lets you configure specific configuration keys and values. You must also specify the data type for each value. Settings are supplied to apps automatically when they're installed.
+Microsoft Intune provides configuration settings that are unique to an app. You can use the configuration designer for apps on devices that are enrolled or not enrolled in Microsoft Intune. The designer lets you configure specific configuration keys and values that helps you create the underlying XML. You must also specify the data type for each value. These settings are supplied to apps automatically when the apps are installed.
 
 ### Add a setting
 
 1. For each key and value in the configuration, set:
-   - **Configuration key**<br>
-     The key that uniquely identifies the specific setting configuration.
-   - **Value type**<br>
-     The data type of the configuration value. Types include Integer, Real, String, or Boolean.
-   - **Configuration value**<br>
-     The value for the configuration.
+   - **Configuration key** - The key that uniquely identifies the specific setting configuration.
+   - **Value type** - The data type of the configuration value. Types include Integer, Real, String, or Boolean.
+   - **Configuration value** - The value for the configuration.
 2. Choose **OK** to set your configuration settings.
 
 ### Delete a setting
@@ -170,4 +165,4 @@ Additionally, Intune supports the following token types in the property list:
 
 ## Next steps
 
-Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app as usual.
+Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app.
