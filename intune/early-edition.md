@@ -164,7 +164,7 @@ After a compliance or configuration policy is applied to an iOS device, users wi
 ### Enable Bluetooth contact sharing - Android for Work <!--1098983 eeready-->
 By default, Android prevents contacts in the work profile from syncing with Bluetooth devices. As a result, work profile contacts are not displayed on caller ID for Bluetooth devices.
 
-Ther will be three new settings in **Android for Work** > **Device restrictions** > **Work profile settings**:
+There will be three new settings in **Android for Work** > **Device restrictions** > **Work profile settings**:
 - Contact sharing via Bluetooth
 - Display work contacts caller-id in personal profile
 - Search work contacts from personal profile
