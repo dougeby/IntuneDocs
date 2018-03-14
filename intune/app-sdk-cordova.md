@@ -2,12 +2,12 @@
 # required metadata
 
 title: Microsoft Intune App SDK Cordova Plugin 
-description:
+description: The Intune App SDK Cordova Plugin allows developers to integrate Intune app and data protection features into their Cordova-based app.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
