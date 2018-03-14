@@ -155,6 +155,23 @@ We'll be updating the Company Portal app for Android to follow Android's [Materi
 
 The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
 
+### Use fully distinguished name as subject for SCEP certificate <!--2221763 eeready-->
+When you create a SCEP certificate profile, you enter the Subject Name. You'll be able use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD. 
+
+### iOS devices are prompted for a PIN every 15 minutes <!--1550837 eeready-->
+After a compliance or configuration policy is applied to an iOS device, users will be prompted to set a PIN every 15 minutes. Users will be continually prompted until a PIN is set.
+
+### Enable Bluetooth contact sharing - Android for Work <!--1098983 eeready-->
+By default, Android prevents contacts in the work profile from syncing with Bluetooth devices. As a result, work profile contacts are not displayed on caller ID for Bluetooth devices.
+
+Ther will be three new settings in **Android for Work** > **Device restrictions** > **Work profile settings**:
+- Contact sharing via Bluetooth
+- Display work contacts caller-id in personal profile
+- Search work contacts from personal profile
+
+The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
+
+Applies to: Android work profile devices on Android OS v6.0 and newer.
 
 <!-- 1802 start -->
 
