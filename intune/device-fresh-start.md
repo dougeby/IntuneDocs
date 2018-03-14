@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset Windows 10 devices with Microsoft Intune - Azure | Microsoft Docs
-description: Use Fresh Start to remove or uninstall apps on Windows 10 PCs using Microsoft Intune, including pre-installed apps from OEMs. Can also keep contents of Home folder using the if user data is retained setting. 
+description: Use Fresh Start to remove or uninstall apps on Windows 10 PCs by using Microsoft Intune. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Fresh Start** device action removes any apps that are installed on a Windows 10 PC running the Creators Update. Then, it automatically updates the PC to the latest version of Windows.
+The **Fresh Start** device action removes any apps that are installed on a Windows 10 PC that is running the Creators Update. Then, it automatically updates the PC to the latest version of Windows.
 
 This action helps remove pre-installed (OEM) apps that are typically installed with a new PC. To keep the contents of the user's Home folder, and only remove apps and settings, use the `if user data is retained` setting.
 
