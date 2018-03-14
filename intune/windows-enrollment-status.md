@@ -34,8 +34,6 @@ When an end user enrolls a Windows device, they expect to be able to access ever
 
 You can set up an Enrollment Status Screen to provide additional information to your end users to keep them informed as to what is actually happening after the enrollment process. This is located in **Device enrollment** > **Windows enrollment** > **Enrollment Status Screen**.
 
-![Windows 10 Enrollment Status Screen.](win10-enrollment-status-admin-setup.png)
-
 There are four fields that you can define: the **Greeting**, the **Message**, and the **Hyperlink for Help**, where you can set the **Link Text** and the **URL for user help**.
 
 Your end users will also see the progress of the **Security**, **Networking**, **Applications**, and **Certificates** that are installing.
