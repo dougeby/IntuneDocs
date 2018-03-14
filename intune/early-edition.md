@@ -194,29 +194,6 @@ For education profiles, new settings will be available under the **Printers** ca
 ### iOS app provisioning configuration <!-- 1581650 -->
 You will be able to assign iOS app provisioning profiles to prevent your apps from expiring by including or excluding security groups.
 
-### New Windows Defender Exploit Guard settings <!-- 631893 -->
-
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities will be available. These settings can be found at: Device configuration\Profiles\
-Create profile\Endpoint protection\Windows Defender Exploit Guard.
-
-#### Attack Surface Reduction
-
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Advanced ransomware protection|Enabled, Audit, Not configured|Use aggressive ransomware protection.|
-|Flag credential stealing from the Windows local security authority subsystem|Enabled, Audit, Not configured|Flag credential stealing from the Windows local security authority subsystem (lsass.exe).|
-|Process creation from PSExec and WMI commands|Block, Audit, Not configured|Block process creations originating from PSExec and WMI commands.|
-|Untrusted and unsigned processes that run from USB|Block, Audit, Not configured|Block untrusted and unsigned processes that run from USB.|
-|Executables that don’t meet a prevalence, age, or trusted list criteria|Block, Audit, Not configured|Block executable files from running unless they meet a prevalence, age, or trusted list criteria.|
-
-#### Controlled folder access
-
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
-Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
-**Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
-
 ### New Windows Defender Application Guard settings <!-- 1631890 -->
 
 - **Enable graphics acceleration**
