@@ -47,7 +47,36 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 
 
+
+
+
+## Week of March 12, 2018
+
+### New Windows Defender Exploit Guard settings <!-- 1631893 -->
+
+Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities are now available. These settings can be found at: Device configuration\Profiles\
+Create profile\Endpoint protection\Windows Defender Exploit Guard.
+
+#### Attack Surface Reduction
+
+|Setting name  |Setting options  |Description  |
+|---------|---------|---------|
+|Advanced ransomware protection|Enabled, Audit, Not configured|Use aggressive ransomware protection.|
+|Flag credential stealing from the Windows local security authority subsystem|Enabled, Audit, Not configured|Flag credential stealing from the Windows local security authority subsystem (lsass.exe).|
+|Process creation from PSExec and WMI commands|Block, Audit, Not configured|Block process creations originating from PSExec and WMI commands.|
+|Untrusted and unsigned processes that run from USB|Block, Audit, Not configured|Block untrusted and unsigned processes that run from USB.|
+|Executables that don’t meet a prevalence, age, or trusted list criteria|Block, Audit, Not configured|Block executable files from running unless they meet a prevalence, age, or trusted list criteria.|
+
+#### Controlled folder access
+
+|Setting name  |Setting options  |Description  |
+|---------|---------|---------|
+|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
+**Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
+
 ## Week of February 19, 2018
+
 ### Device enrollment
 
 #### Intune support for multiple Apple DEP / Apple School Manager accounts <!-- 747685 -->
@@ -443,7 +472,7 @@ The **App install status** report, accessible for each app through the **App** l
 
 #### iOS 11 app inventory API for Mobile Threat Detection <!-- 1391759 -->
 
-Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Thread Detection (MTD) providers to fetch, such as Lookout for Work. You can collect an app inventory from the users of iOS 11+ devices.
+Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Threat Detection (MTD) providers to fetch, such as Lookout for Work. You can collect an app inventory from the users of iOS 11+ devices.
 
 **App inventory**  
 Inventories from both corporate-owned iOS 11+ and personally owned devices are sent to your MTD service provider. Data in the app inventory includes:
