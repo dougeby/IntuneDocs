@@ -65,7 +65,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 ## Get started
 
-1. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
+1. Read the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) for the Microsoft Intune MAM Xamarin Component.
 
 2.	Download the Intune App SDK Xamarin Component NuGet packages from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin). These packages will be available on Nuget.org soon.  
 
