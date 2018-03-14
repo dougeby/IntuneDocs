@@ -75,6 +75,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard.
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
+## Week of February 19, 2018
 
 ### Device enrollment
 
