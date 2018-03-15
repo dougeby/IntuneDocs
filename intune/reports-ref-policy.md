@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: Policy | Microsoft Docs
+title: Policy
+titlesuffix: Microsoft Intune 
 description: Reference topic for the Policy category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre

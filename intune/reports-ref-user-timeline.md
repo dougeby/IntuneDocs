@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Data Warehouse User Entity Timeline | Microsoft Docs 
-description: The Intune Data Warehouse represents Users in a timeline.
+title: Data Warehouse User Entity Timeline
+titlesuffix: Microsoft Intune 
+description: Learn how the Intune Data Warehouse represents Users in a timeline.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,7 +24,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# User lifetime representation in the Intune Data Warehouse
+# User lifetime representation in the Microsoft Intune Data Warehouse
 
 You can use the month of data snapshots stored in the Intune Data Warehouse to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
 
