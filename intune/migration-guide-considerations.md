@@ -2,12 +2,13 @@
 # required metadata
 
 title: Special migration considerations
-description: This article provides special migration considerations before you start a migration campaign.
+titlesuffix: Microsoft Intune
+description: This article provides special migration considerations before you start a migration campaign to Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

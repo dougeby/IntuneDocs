@@ -2,12 +2,13 @@
 # required metadata
 
 title: Drive end-user adoption with conditional access
-description: This article provides insights on how to use conditional access to drive Intune enrollment.
+titlesuffix: Microsoft Intune
+description: Learn how to use conditional access to drive enrollment in Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# Drive end-user adoption with conditional access
+# Drive end-user adoption with conditional access in Microsoft Intune
 
 Enabling conditional access features with Intune, such as blocking email for unenrolled devices, can help drive enrollment and compliance but they are not required for a migration to be successful. Your migration adoption goals and security requirements should dictate the success.
 
