@@ -2,12 +2,12 @@
 # required metadata
 
 title: Microsoft Intune App SDK Cordova Plugin 
-description:
+description: The Intune App SDK Cordova Plugin allows developers to integrate Intune app and data protection features into their Cordova-based app.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,11 +38,11 @@ The [Intune App SDK Cordova Plugin](/intune-classic/deploy-use/protect-app-data-
 > [!NOTE]
 > You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
-You will find that you can enable SDK features without changing your app's behavior. Once you have built the plugin into your iOS or Android app, the Microsoft Intune administrator will be able to deploy Intune app protection policy, which consists of a variety of data protection features. The plugin is built so that most of the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for Intune app protection quickly. To get started, follow the steps below based on your target platform.
+You will find that you can enable SDK features without changing your app's behavior. Once you have built the plugin into your iOS or Android app, the Microsoft Intune administrator will be able to deploy Intune app protection policy, which consists of a variety of data protection features. The plugin is built so that most of the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for Intune app protection quickly. To get started, follow the following steps based on your target platform.
 
 ## Supported Platforms
 
-* The plugin works on Windows, Mac and Linux OS
+* The plugin works on Windows, Mac, and Linux OS
 * The plugin works for Android apps with `minSdkVersion` >= 14 and `targetSdkVersion` <= 24
 * The plugin works for iOS apps targeted for iOS 9.0 and above.
 
@@ -70,7 +70,7 @@ Cordova apps built with the Intune App SDK Cordova Plugin can now receive Intune
 * Version 0.8.0+ of the [Azure Active Directory Authentication Libraries (ADAL) plugin for Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) is required.
 
 > [!NOTE]
-> Due to an Apache Cordova bug the filed [here](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), apps that already have the plugin dependency will not automatically upgrade the plugin to the requested version.
+> Due to an Apache Cordova bug, the filed [here](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), apps that already have the plugin dependency will not automatically upgrade the plugin to the requested version.
 
 
 
@@ -102,7 +102,7 @@ This setup only supports a single target and will perform the configuration on t
 
 1. Import this plugin with the latest Cordova tools. The plugin will be automatically invoked as an `after_compile` step.
 
-2. The plugin will create a Intune-enabled version of a built apk (Android API 14+) at the end of the build process. The build output will contain a `[Project]-intunewrapped-[Build_Configuration].apk` (e.g. `helloWorld-intunewrapped-debug.apk`).
+2. The plugin will create an Intune-enabled version of a built apk (Android API 14+) at the end of the build process. The build output will contain a `[Project]-intunewrapped-[Build_Configuration].apk` (for example, `helloWorld-intunewrapped-debug.apk`).
 
 > [!NOTE]
 > The plugin only supports gradle builds.
@@ -124,19 +124,19 @@ The plugin automatically recognizes signing information you have provided to Cor
 
 See [the Cordova gradle signing information](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) for more information about the expected format.
 
-We currently don't support the ability to provide signing information in `build.json` or arbitrary locations provided via parameters to Cordova build.
+Intune currently doesn't support the ability to provide signing information in `build.json` or arbitrary locations provided via parameters to Cordova build.
 
 ## Debugging from Visual Studio
 
-After launching the app for the first time you should see a dialog notifying you that the app is managed by Intune. Hit "Don't show again" and click the debug/run button again from VS for breakpoints to be hit.
+After launching the app for the first time, you should see a dialog notifying you that the app is managed by Intune. Hit "Don't show again" and click the debug/run button again from VS for breakpoints to be hit.
 
 ## Known Limitations
 
 ### Android
 
 * MultiDex support is incomplete.
-* App must have `minSdkVersion` of 14 and `targetSdkVersion` of 24 or below. We currently don't support apps targeting API 25
-* We cannot re-sign apps that were signed with the V2 Signature Scheme. When V2-signed apps are wrapped by the plugin, the wrapped output .apk will be unsigned.
+* App must have `minSdkVersion` of 14 and `targetSdkVersion` of 24 or below. Intune currently doesn't support apps targeting API 25
+* Intune cannot re-sign apps that were signed with the V2 Signature Scheme. When V2-signed apps are wrapped by the plugin, the wrapped output .apk will be unsigned.
 *
   * You can disable Cordova's default V2 Signing by adding the following to your `build-extras.gradle` file:
 
@@ -163,6 +163,6 @@ After launching the app for the first time you should see a dialog notifying you
 
 ### iOS
 
-* Whenever you modify the list of UTI's under the **CFBundleDocumentTypes** node of the **Info.plist** file, you must clear the Intune UTI's in the Imported UTI's section of the same plist file (**UTImportedTypeDeclarations** node) before building again. All of the Intune UTI's will start with the prefix `com.microsoft.intune.mam`.
+* Whenever you modify the list of UTIs under the **CFBundleDocumentTypes** node of the **Info.plist** file, you must clear the Intune UTIs in the Imported UTIs section of the same plist file (**UTImportedTypeDeclarations** node) before building again. All of the Intune UTIs will start with the prefix `com.microsoft.intune.mam`.
 
 * If you want to remove the Intune App SDK for Cordova plugin from your Cordova project, you must also remove the iOS platform and re-add it, in order to undo some of the Intune configuration in the .xcodeproj and .plist files.
