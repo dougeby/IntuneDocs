@@ -29,7 +29,7 @@ ms.suite: ems
 
 # Special migration considerations
 
-There are special migration considerations which may apply depending on your existing MDM provider environment.
+There are special migration considerations that may apply depending on your existing MDM provider environment.
 
 ## Factory reset for Apple’s Device Enrollment Program (DEP)
 
