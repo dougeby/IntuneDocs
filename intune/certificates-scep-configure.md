@@ -1,10 +1,9 @@
 ---
-title: Configure and manage SCEP certificates with Intune
-titlesuffix: "Azure portal"
-description: Learn how to configure your infrastructure, then create and assign Intune SCEP certificate profiles."
+title: Configure and manage SCEP certificates with Microsoft Intune
+description: Learn how to configure your infrastructure, then create and assign Intune Simple Certificate Enrollment Protocol (SCEP) certificate profiles in Microsoft Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -23,7 +22,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
-# Configure and manage SCEP certificates with Intune
+# Configure and manage SCEP certificates with Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This topic shows how to configure your infrastructure, then create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Intune.

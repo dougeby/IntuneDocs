@@ -2,12 +2,13 @@
 # required metadata
 
 title: Intune onboarding process
-description: This article helps you with all details that need to be considered when on-boarding Intune cloud-only solution into your environment.
+titlesuffix: Microsoft Intune
+description: This article helps you with all details that need to be considered when on-boarding Microsoft Intune cloud-only solution into your environment.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.custom: intune-classic
 
 ---
 
-# Implement your Intune plan
+# Implement your Microsoft Intune plan
 
 During the onboarding phase, you deploy Intune into your production environment. The implementation process consists of setting up and configuring Intune and external dependencies (if required) based on your [use-case requirements](planning-guide-requirements.md).
 
