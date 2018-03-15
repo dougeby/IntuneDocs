@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set basic data management on Office 365 apps in Intune
-titlesuffix: "Azure portal"
-description: Supporting documentation for the Manage Office 365 apps wizard."
+title: Data management of Office 365 apps in Microsoft Intune
+titlesuffix: 
+description: Learn about data management of Office 365 apps in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 
-# How your users will experience basic protection on managed Office 365 apps
+# How your users will experience basic protection on managed Office 365 apps in Microsoft Intune
 
 The **Manage Office 365 apps** wizard creates an app protection policy for each device platform.
 
