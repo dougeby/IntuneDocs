@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Manage iOS volume-purchased apps | Microsoft Docs
-titlesuffix: "Azure portal"
-description: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
+title: Manage iOS volume-purchased apps in Microsoft Intune
+titlesuffix: 
+description: Learn about how you can sync apps you purchased in volume from the iOS store into Microsoft Intune and then manage and track their usage.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
