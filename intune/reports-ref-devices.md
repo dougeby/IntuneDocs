@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Devices  - Intune Data Warehouse | Microsoft Docs  
+title: Devices - Intune Data Warehouse
+titlesuffix: Microsoft Intune
 description: Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
