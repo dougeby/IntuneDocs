@@ -28,6 +28,9 @@ ms.custom: intune-classic
 
 # Android app protection policy settings in Microsoft Intune
 
+> [!IMPORTANT]
+> The content on this page is largely outdated as Intune app protection policies have migrated entirely to the Azure Portal. We recommend referencing [Intune app protection policies for Android](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android) in our Azure Portal docs.
+
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The app policy settings that are described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) on the **Settings** blade in the Azure portal.
