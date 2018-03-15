@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset device passcodes with Microsoft Intune - Azure | Microsoft Docs
-description: Remove or reset the passcode using the Remove passcode code action on devices you manage or monitor with Intune.
+description: Remove or reset the passcode by using the remove passcode action on devices you manage or monitor with Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -34,11 +34,12 @@ To create a new passcode for a device, use the **Remove passcode** action.
 
 ## Supported platforms
 
-- Windows Phone 8.1 to Windows 10 Creators update not Azure AD joined, and Windows 10 Creators Update and later
+- Windows Phone 8.1 (not joined to Azure Active Directory), including releases up to Windows 10 Creators Update
+- Windows 10 Creators Update and later
 - iOS
 - Android versions earlier than Android 7
 
-This feature is **not** supported for the following systems:
+This feature is not supported for the following systems:
 
 - Windows
 - macOS
@@ -49,7 +50,7 @@ This feature is **not** supported for the following systems:
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
-4. From the list of devices you manage, select a device, choose **...More**, and then choose the **Remove passcode** device remote action.
+4. From the list of devices you manage, select a device, and choose **...More**. Then choose the **Remove passcode** device remote action.
 
 ## Next steps
 

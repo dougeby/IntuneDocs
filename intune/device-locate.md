@@ -2,7 +2,7 @@
 # required metadata
 
 title: Find lost iOS devices with Microsoft Intune - Azure | Microsoft Docs
-description: Locate lost or stolen iOS devices by using the Locate Device feature in Microsoft Intune. Get details on security and privacy information when using the Locate Device action.
+description: Locate lost or stolen iOS devices by using the locate device feature in Microsoft Intune. Get details on security and privacy information when using the locate device action.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-To get the location of a lost or stolen iOS device on a map, use the **Locate Device** action. The device must be a corporate-owned iOS device, enrolled through the device enrollment program, and be in supervised mode. Before you use this action, be sure the device is in [lost mode](device-lost-mode.md).
+To get the location of a lost or stolen iOS device on a map, use the **Locate device** action. The device must be a corporate-owned iOS device, enrolled through the device enrollment program, and be in supervised mode. Before you use this action, be sure the device is in [lost mode](device-lost-mode.md).
 
 ## Supported platforms
 
@@ -54,7 +54,7 @@ This feature is not supported for the following systems:
 >[!NOTE]
 >For privacy reasons, the distance you can zoom into the map is limited.
 
-## Security and privacy information for lost mode and Locate Device actions
+## Security and privacy information for lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
 - When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
@@ -63,4 +63,4 @@ This feature is not supported for the following systems:
 
 ## Next steps
 
-To see the status of enabling Locate Device, open **Devices**, and select **Device actions**.
+To see the status of enabling locate device, open **Devices**, and select **Device actions**.
