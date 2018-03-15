@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/12/2018
+ms.date: 3/15/2018
 
 ms.topic: article
 ms.prod:
@@ -165,7 +165,9 @@ For devices in device groups, the **Compliance policy settings** (Azure portal >
 
 If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Not compliant**. If you use conditional access, we recommended you leave the default setting of **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
 
-To learn about how long it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+To learn the time it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+Compliance reports are a great way to check the status of devices. See [Monitor compliance policies](compliance-policy-monitor.md) for guidance.
 
 ### Actions for noncompliance
 You can configure a time-ordered sequence of actions that apply to devices that don't meet the compliance policy criteria. These actions for noncompliance can be automated, as described in [Automate actions for noncompliance](actions-for-noncompliance.md).
