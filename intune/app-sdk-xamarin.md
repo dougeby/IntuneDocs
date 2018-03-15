@@ -90,7 +90,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
       ```
 
 ## Enabling app protection policies in your Android mobile app
-Add the Microsoft.Intune.MAM.Xamarin.Android NuGet package to your Xamarin.Android project
+Add the Microsoft.Intune.MAM.Xamarin.Android NuGet package to your Xamarin.Android project.
 
 For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`.
 
@@ -100,7 +100,7 @@ For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.R
 
 2.  Add the following line to your Android csproj (replace "x.x.x.x" with the actual package version):
   ```xml
- <Import Project="packages\\Microsoft.Intune.MAM.Remapper.Tasks.x.x.x.x\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
+ <Import Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.x.x.x.x\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
 3.  Set the build action of the added `remapping-config.json` file to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper NuGet package.
