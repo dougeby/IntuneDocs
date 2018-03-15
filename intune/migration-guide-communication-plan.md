@@ -2,13 +2,14 @@
 ---
 # required metadata
 
-title: Plan communications
-description: This article provides a migration communication plan and strategy.
+title: Plan migration communications
+titlesuffix: Microsoft Intune
+description: This article provides a migration communication plan and strategy when migrating to Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
