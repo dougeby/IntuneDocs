@@ -391,7 +391,7 @@ These are the plans for ways we will be improving the user experience by updatin
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
-We’re introducing a new Company Portal website experience in April, with User Interface (UI) updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user- friendly experience.
+We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
@@ -401,7 +401,10 @@ We’ve added some new features, based on feedback from customers like you, that
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.
 
-![A sample image of the updated website alongside the previous version on the right.](./media/iwp-beforeafter-1803.png)
+|Updated|Previous|
+|---|---|
+|![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
+|![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|
 
 ### User experience update for the Company Portal app for iOS <!--1412866-->
 
