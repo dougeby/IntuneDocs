@@ -65,7 +65,7 @@ Different platforms have the following requirements to enable or simplify enroll
 - **iOS** - (required) [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md) and then [enable enrollment for company-owned iOS devices](ios-enroll.md) (optional).
 - **Android** - (optional) [Enable Android work profiles](android-enroll.md)
 - **Windows** - (optional) Enable [Automatic enrollment](windows-enroll.md) or [bulk enrollment](windows-bulk-enroll.md)
-- **macOS** - No requirements
+- **macOS** - (required) [Get an Apple MDM Push Certificate](apple-mdm-push-certificate-get.md).
 
 
 ## Mobile device cleanup after MDM certificate expiration

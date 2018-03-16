@@ -2,8 +2,8 @@
 # required metadata
 
 title: Enroll iOS devices - Device Enrollment Program
-titlesuffix: "Azure portal"
-description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program (new UI)."
+titleSuffix: Microsoft Intune
+description: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program (new UI).
 keywords:
 author: ErikjeMS
 ms.author: erikje
