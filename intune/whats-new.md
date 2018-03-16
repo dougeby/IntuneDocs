@@ -384,11 +384,6 @@ You can delete the iOS Volume Purchasing Program (VPP) token using the console. 
 
 ### Intune apps
 
-#### End user messaging for accounts <!--1573558 for 1712-->
-
-Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. You can see this error in the [what's new in app UI](whats-new-app-ui.md).
-
-
 
 ### Role-based access control
 
