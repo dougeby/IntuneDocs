@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -388,6 +388,20 @@ These are the plans for ways we will be improving the user experience by updatin
 
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
+
+### New user experience update for the Company Portal website <!--2000968-->
+
+We’re introducing a new Company Portal website experience in April, with User Interface (UI) updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user- friendly experience.
+
+We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
+
+-	UI improvements throughout the website
+-	Ability to share direct links to apps
+- Improved performance for large app catalogs
+
+You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.
+
+![A sample image of the updated website alongside the previous version on the right.](./media/iwp-beforeafter-1803.png)
 
 ### User experience update for the Company Portal app for iOS <!--1412866-->
 
