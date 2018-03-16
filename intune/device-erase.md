@@ -2,8 +2,8 @@
 # required metadata
 
 title: Erase a macOS device
-titlesuffix: "Azure portal"
-description: Learn how to erase all data, including the operating system, from a macOS device."
+titleSuffix: Microsoft Intune
+description: Learn how to erase all data, including the operating system, from a macOS device.
 keywords:
 author: ErikjeMS
 ms.author: erikje
