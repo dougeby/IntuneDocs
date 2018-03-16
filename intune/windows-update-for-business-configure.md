@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Configure Windows Update for Business settings in Intune
-titleSuffix: "Azure portal"
-description: Learn how to configure Windows Update for Business settings in Intune to control updates to Windows 10 devices."
+title: Configure Windows Update for Business settings in Microsoft Intune
+titleSuffix: 
+description: Learn how to configure Windows Update for Business settings in Microsoft Intune to control updates to Windows 10 devices.
 keywords:
 author: dougeby
 ms.author: dougeby
@@ -149,7 +149,7 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 - **Data Type**: String
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
-![Windows setting for diagnostic and usage data](./media/commID.png)
+![OMA-URI Setting - Add Row](./media/commID.png)
 
 ## How to pause updates
 You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality will automatically expire and the device will scan Windows Updates for applicable updates. Following this scan, you can pause the updates again.
