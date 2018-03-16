@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,13 +28,7 @@ ms.custom: intune-azure
 # UI updates for Intune end user apps
 Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
-## Week of December 11, 2017
-
-### End user messaging for accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon.
-
-![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)
+<!---End user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## Week of November 27, 2017
 
@@ -388,6 +382,23 @@ These are the plans for ways we will be improving the user experience by updatin
 
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
+
+### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
+
+We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+
+We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
+
+-	UI improvements throughout the website
+-	Ability to share direct links to apps
+- Improved performance for large app catalogs
+
+You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.
+
+|Updated|Previous|
+|---|---|
+|![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
+|![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|
 
 ### User experience update for the Company Portal app for iOS <!--1412866-->
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Data transfer policy exceptions for apps 
-titleSuffix: "Azure portal"
-description: "Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy."
+titleSuffix: Microsoft Intune
+description: Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy.
 keywords:
 author: Erikre
 ms.author: erikre

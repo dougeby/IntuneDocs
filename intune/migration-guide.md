@@ -31,7 +31,7 @@ ms.suite: ems
 
 ![Microsoft Intune MDM migration guide art](./media/MDM-migration-guide-art.PNG)
 
-A successful migration to Microsoft Intune starts with a solid plan that factors in your current mobile device management (MDM) environment, business goals, and technical requirements. Additionally, you need to have the key stakeholders whose will support and collaborate with your migration plan.
+A successful migration to Microsoft Intune starts with a solid plan that factors in your current mobile device management (MDM) environment, business goals, and technical requirements. Additionally, you need to include the key stakeholders who will support and collaborate with your migration plan.
 
 This guide walks you through the various details involved in migrating from a third-party MDM provider to Intune.
 
