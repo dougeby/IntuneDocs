@@ -2,6 +2,7 @@
 # required metadata
 
 title: How to use Azure AD to access Intune APIs in Microsoft Graph
+titlesuffix: Microsoft Intune
 description: Describes steps needed for apps to use Azure AD to access the Intune APIs in Microsoft Graph.
 keywords: intune graphapi c# powershell permission roles
 author: vhorne

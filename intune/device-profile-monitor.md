@@ -5,8 +5,8 @@ title: How to monitor device profiles with Intune
 titlesuffix: Microsoft Intune
 description: Learn how to monitor assigned Microsoft Intune device profiles.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article

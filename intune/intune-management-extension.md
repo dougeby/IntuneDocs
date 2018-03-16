@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Manage PowerShell scripts in Intune for Windows 10 devices
-titlesuffix: "Azure portal"
-description: Learn how to upload PowerShell scripts in Intune to run on Windows 10 devices. 
+title: Manage PowerShell scripts in Microsoft Intune for Windows 10 devices
+titlesuffix: 
+description: Learn how to upload PowerShell scripts in Microsoft Intune to run on Windows 10 devices. 
 keywords:
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018

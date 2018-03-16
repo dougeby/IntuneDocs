@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune AirPlay settings for iOS devices
-titlesuffix: "Azure portal"
-description: "Learn how you can use Intune to help automatically connect iOS devices to AirPlay compatible devices."
+titlesuffix: Microsoft Intune
+description: Learn how you can use Microsoft Intune to help automatically connect iOS devices to AirPlay compatible devices.
 keywords:
 author: vhorne
 ms.author: victorh

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Microsoft Intune custom settings for devices running iOS 
-titleSuffix: "Azure portal"
-description: Learn the settings you can use in an iOS custom profile.
+titleSuffix:
+description: Learn the settings you can use in an iOS custom profile in Microsoft Intune.
 keywords:
 author: vhorne
 ms.author: victorh

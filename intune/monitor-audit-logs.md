@@ -1,9 +1,10 @@
 ---
 # required metadata
 
-title: Audit logs for Intune activities
-description: Learn how to review audit logs that record Intune activies 
+title: Audit logs for Microsoft Intune activities
+description: Learn how to review audit logs that record Microsoft Intune activities.
 keywords: 
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
