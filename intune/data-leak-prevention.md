@@ -2,11 +2,13 @@
 # required metadata
 
 title: Prevent data leaks on non-managed devices
-description: Allow access to corporate data on devices and protect data from data leaks. 
+titlesuffix: Microsoft Intune
+description: Allow access to corporate data on devices and protect data from data leaks using Microsoft Intune. 
 keywords: data protection prevent leaks device O365 Office 365
-author: arob98
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 
 --- 
-# Prevent data leaks on non-managed devices
+# Prevent data leaks on non-managed devices using Microsoft Intune
 
 If you allow access to company data hosted by Office 365, you can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service. 
 
