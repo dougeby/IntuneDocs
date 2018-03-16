@@ -389,7 +389,7 @@ These are the plans for ways we will be improving the user experience by updatin
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
-### New user experience update for the Company Portal website <!--2000968-->
+### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
 
 We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 
