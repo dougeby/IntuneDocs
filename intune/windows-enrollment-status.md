@@ -2,7 +2,7 @@
 # required metadata
 
 title: Adding Enrollment Status Screens
-titlesuffix: "Azure portal"
+titleSuffix: Microsoft Intune
 description: Greet your users who are enrolling Windows 10 devices.
 keywords:
 author: ErikjeMS

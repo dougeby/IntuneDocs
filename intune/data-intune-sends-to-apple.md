@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data Intune sends to Apple
-titlesuffix: "Azure portal"
+titleSuffix: Microsoft Intune
 description: List of data that Intune sends to Apple.
 keywords:
 author: ErikjeMS
