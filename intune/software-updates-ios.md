@@ -60,7 +60,7 @@ The profile is created and appears on the iOS update policies list pane. Apple M
 To assign an iOS update policy to users, choose a policy that you have configured. Existing policies are found in the **Software updates** > **iOS Update Policies** pane.
 
 1. Choose the policy you want to assign to users and choose **Assignments**. The pane where you can select Azure Active Directory security groups and assign them to the policy is opened.
-2. Choose **Selected groups** to open the pane that displays the Azure AD security groups. Determine who has access to an app by assigning the groups to include, as well as exclude.
+2. Choose **Selected groups** to open the pane that displays the Azure AD security groups. Determine who has access to the policy by assigning the groups to include, as well as exclude.
 3. Choose **Save** to deploy the policy to users.
 
 You have applied the policy to your users or devices. The devices used by the users who are targeted by the policy are evaluated for update compliance. This policy also supports userless devices.
