@@ -29,7 +29,7 @@ ms.custom: intune-classic
 #  iOS mobile app protection policy settings
 
 > [!IMPORTANT]
-> The content on this page is largely outdated as Intune app protection policies have migrated entirely to the Azure Portal. We recommend referencing [Intune app protection policies for iOS](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-ios) in our Azure Portal docs.
+> The content on this page is now largely out of date, as Intune app protection policies have migrated entirely to the Azure Portal. Learn more about [Intune app protection policies for iOS in the Azure portal](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
