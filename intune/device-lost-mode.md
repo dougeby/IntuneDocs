@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate iOS lost mode with Microsoft Intune - Azure | Microsoft Docs
-description: Turn on or start lost mode to customize a message that displays on the lock screen of a lost or stolen iOS device by using Microsoft Intune. And, get details on security and privacy information when you are using the lost mode action.
+description: Turn on or start lost mode to customize a message that appears on the lock screen of a lost or stolen iOS device by using Microsoft Intune. And, get details on security and privacy information when you are using the lost mode action.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Lost mode** device action helps you enable lost mode on lost or stolen iOS devices. This mode lets you enter a message and a phone number that displays on the lock screen of the device. To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
+The **Lost mode** device action helps you enable lost mode on lost or stolen iOS devices. This mode lets you enter a message and a phone number that appears on the lock screen of the device. To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
 
 ## Supported platforms
 
@@ -48,17 +48,17 @@ This feature is not supported for the following:
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Lost mode** remote action.
-5. In **Lost mode**, enable this feature. Then, enter the message to display, and a contact phone number.
+5. In **Lost mode**, enable this feature. Then, enter the message to show, and a contact phone number.
 6. Select **OK** to save your changes.
 
 When you enable lost mode, all use of the device is blocked. The end user cannot access the device until you disable lost mode. While lost mode is enabled, use the [Locate device](device-locate.md) action to find the device.
 
 ## Security and privacy information for the lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
-- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
+- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and shown in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
-- In the message you enter to display on the lock screen, be sure to include specific details to return the lost device.
+- In the message you enter to show on the lock screen, be sure to include specific details to return the lost device.
 
 ## Next steps
 

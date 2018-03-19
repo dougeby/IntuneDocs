@@ -51,7 +51,7 @@ This article shows you how to view all your devices, and their properties in the
    - **Monitor**: Choose **Device actions** to see a list of actions that are done on devices you manage, and their current state. **Audit logs** show the status of different tasks.
    - **Setup** > **TeamViewer Connector**: Configure remote administration on devices by using the TeamViewer software. For details, see [Provide remote assistance for Intune managed Android devices](device-profile-android-teamviewer.md).
 
-Intune collects an app list only on corporate-owned devices. Apps aren't checked on personal devices. For Windows 10 PCs, only modern apps are listed for corporate-owned devices. Intune doesn't collect information about Win32 apps on the device. Depending on the carrier used by the devices, not all apps may be collected.
+Intune collects an app list only on corporate-owned devices. Apps aren't checked on personal devices. For Windows 10 PCs, only modern apps are listed for corporate-owned devices. Intune doesn't collect information about Win32 apps on the device. Depending on the carrier used by the devices, not all apps might be collected.
 
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.

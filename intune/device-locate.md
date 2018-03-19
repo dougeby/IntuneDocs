@@ -48,7 +48,7 @@ This feature is not supported for the following systems:
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Locate device** remote action.
-5. After the device is located, its location is displayed in **Locate device**.
+5. After the device is located, its location is shown in **Locate device**.
 	![Screenshot of Locate device using Intune in Azure](./media/locate-device.png)
 
 >[!NOTE]
@@ -56,10 +56,10 @@ This feature is not supported for the following systems:
 
 ## Security and privacy information for lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
-- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
+- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and shown in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
-- When you configure lost mode, you can customize a message that displays on the lock screen. In this message, to help the person that finds the device, be sure to include specific details to return the lost device.
+- When you configure lost mode, you can customize a message that appears on the lock screen. In this message, to help the person that finds the device, be sure to include specific details to return the lost device.
 
 ## Next steps
 
