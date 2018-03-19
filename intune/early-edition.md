@@ -177,7 +177,7 @@ Intune gives you control on installing automatic updates using [Windows Update R
 
 ### Disable checks on device restart <!--1805490 -->
 
-Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**. 
+Intune gives you control to [manage software updates](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**. 
 
 <!-- 1802 start -->
 
