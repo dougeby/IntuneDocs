@@ -1,8 +1,8 @@
 ---
 # required metadata[](holographic-upgrade.md)
 title: Manage Windows Holographic with Microsoft Intune
-titleSuffix: "Azure portal"
-description: Learn how Microsoft Intune supports devices running Windows Holographic for Business
+titleSuffix: 
+description: Learn how Microsoft Intune supports devices running Windows Holographic for Business.
 keywords:
 author: vhorne
 ms.author: victorh

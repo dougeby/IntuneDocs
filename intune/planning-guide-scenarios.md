@@ -2,12 +2,13 @@
 # required metadata
 
 title: Identify use case scenarios
+titlesuffix: Microsoft Intune
 description: This article helps you identify Intune use-case and sub-use-case scenarios for a Microsoft Intune cloud-only implementation.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

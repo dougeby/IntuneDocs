@@ -78,8 +78,6 @@ Use the following steps to gather the information you need to give to the Lookou
 2.  The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
 
 	![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
-	> [!NOTE] 
-	> See [troubleshooting Lookout integration](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
 
 3.  In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
