@@ -862,6 +862,6 @@ We have made available a version of the Company Portal app for iOS through the A
 
 ## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
 * [What's new in the Company Portal UI](whats-new-app-ui.md)
 * [What's new in previous months](whats-new-archive.md)
