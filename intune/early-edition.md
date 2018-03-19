@@ -171,6 +171,14 @@ The Intune administrator can configure these settings to enable sharing. This is
 
 Applies to: Android work profile devices on Android OS v6.0 and newer.
 
+#### Schedule your automatic updates <!--1805514 -->
+
+Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). You'll be able to schedule reoccurring updates, including the week, the day, and the time. 
+
+## Disable checks on device restart <!--1805490 -->
+
+Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**. 
+
 <!-- 1802 start -->
 
 ### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
