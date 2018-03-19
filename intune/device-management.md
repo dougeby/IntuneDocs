@@ -41,7 +41,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 3. In **Intune**, choose **Devices**.
 4. You can view information about devices and perform the remote device actions as follows:
 	- **Overview**: A snapshot of the enrolled devices you can manage.
-	- **All devices**: A list of the enrolled devices you manage. Choose **Filter** or **Columns** to refine the information displayed. Select a device to [view device inventory](device-inventory.md).
+	- **All devices**: A list of the enrolled devices you manage. Choose **Filter** or **Columns** to refine the information shown. Select a device to [view device inventory](device-inventory.md).
 	- **Azure AD devices**: A list of the devices registered or joined with Azure Active Directory (Azure AD). Learn more about [Azure AD device management](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 	- **Device actions**: A history of the remote actions performed on devices, including the action, its status, who initiated the action, and the time.
 

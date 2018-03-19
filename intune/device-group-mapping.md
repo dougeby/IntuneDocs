@@ -73,7 +73,7 @@ After you configure device groups, and users enroll their device, they are prese
 
 3.	In the list of devices, examine the **Device category** column.
 
-If the **Device category** column isn’t displayed, select **Columns**. Choose **Device category** from the list, and then select **Apply**.
+If the **Device category** column isn’t shown, select **Columns**. Choose **Device category** from the list, and then select **Apply**.
 
 ### To change the category of a device
 
