@@ -261,9 +261,9 @@ Provide IT contact information to appear in Windows Defender Security Center app
 
 ## Local device security options
 
-Use these settings to enable security settings on Windows 10 devices.
+Use these options to configure the local security settings on Windows 10 devices.
 
-### Accounts settings
+### Account settings
 
 - **Add new Microsoft accounts** - Prevent users from adding new Microsoft accounts to this computer.
 - **Remote log on without password** - Enable local accounts that are not password-protected to log on from locations other than the physical device.
@@ -278,12 +278,12 @@ Use these settings to enable security settings on Windows 10 devices.
 - **Guest account** - Determine if the Guest account is enabled or disabled.
 - **Rename guest account** - Define a different account name to be associated with the security identifier (SID) for the Guest account.
 
-### Devices settings
+### Device settings
 
 - **Undock device without logon** - Prevent a portable computer from being undocked without having to log in.
 - **Install printer drivers for shared printers** - Restrict installing printer drivers as part of connecting to a shared printer to admins only.
 - **Restrict CD-ROM access to local active user** - Enabling this setting allows only interactively logged on user to access CD-ROM media
-- **Format and eject removable media** - Define who is allowed to format and eject removable NTFS media
+- **Format and eject removable media** - Define who is allowed to format and eject removable NTFS media:
     - **Not configured**
     - **Administrators and Power Users**
     - **Administrators and Interactive Users**
@@ -295,7 +295,7 @@ Use these settings to enable security settings on Windows 10 devices.
 
 #### Display
 
-- **User information on lock screen** - Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown.
+- **User information on lock screen** - Configure the user information that is displayed when the session is locked. If not configured, user display name, domain, and username are shown.
     - **User display name only**
     - **Do not display user information**
     - **Not configured** - User display name, domain, and user name
@@ -323,14 +323,14 @@ Use these settings to enable security settings on Windows 10 devices.
 
 ### UIA elevation prompt behavior settings
 
-- **Elevation prompt for admins** - Define the behavior of the elevation prompt for admins in Admin Approval Mode.
+- **Elevation prompt for admins** - Define the behavior of the elevation prompt for admins in Admin Approval Mode:
     - **Elevate without prompting**
     - **Prompt for credentials on the secure desktop**
     - **Prompt for consent on the secure desktop**
     - **Prompt for credentials**
     - **Prompt for consent**
     - **Not configured** - Prompt for consent for non-Windows binaries
-- **Elevation prompt for standard users** - Define the behavior of the elevation prompt for standard users.
+- **Elevation prompt for standard users** - Define the behavior of the elevation prompt for standard users:
     - **Automatically deny elevation requests**
     - **Prompt for credentials on the secure desktop**
     - **Not configured** - Prompt for credentials
