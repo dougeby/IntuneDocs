@@ -58,7 +58,7 @@ Check out these resources for additional information that may be helpful during 
 
 -   [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/) - Posts to help you understand how Intune fits into the larger Enterprise Mobility picture.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx) - Learn Microsoft's approach to security, privacy, compliance, and transparency in all Microsoft cloud products and services.
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - Learn Microsoft's approach to security, privacy, compliance, and transparency in all Microsoft cloud products and services.
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) - Want to request a feature or vote with other customers for features? Provide feedback on Intune through User Voice. We're listening.
 
