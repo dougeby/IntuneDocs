@@ -253,7 +253,7 @@ Block end user access to the various areas of the Windows Defender Security Cent
 
 #### IT contact Information
 
-Provide IT contact information to appear in Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. You must define the **IT organization name** and at least one of the following contact options:
+Provide IT contact information to appear in the Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. You must define the **IT organization name** and at least one of the following contact options:
 
 - **IT department phone number or Skype ID**
 - **IT department email address**
