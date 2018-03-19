@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Turn on iOS supervised mode with Intune 
-titlesuffix: "Azure portal"
+title: Turn on iOS supervised mode with Microsoft Intune 
+titleSuffix: 
 description: Learn how to turn on iOS supervised mode with Intune.
 keywords:
 author: ErikjeMS

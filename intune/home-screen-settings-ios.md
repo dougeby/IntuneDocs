@@ -2,8 +2,8 @@
 # required metadata
 
 title: Microsoft Intune home screen layout settings for devices running iOS
-titlesuffix: "Azure portal"
-description: Learn the settings you can use customize the home screen and dock on devices running iOS.
+titleSuffix: 
+description: Learn about the settings in Microsoft Intune that you can use customize the home screen and dock on devices running iOS.
 keywords:
 author: vhorne
 ms.author: victorh
