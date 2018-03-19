@@ -172,8 +172,8 @@ The following table lists errors that end users might see while enrolling Androi
 
 |Error message|Issue|Resolution|
 |---|---|---|
-|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Please get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br><br>See information about how to [assign Intune licenses to your user accounts](/intune/licenses-assign.md).
-|**IT admin needs to set MDM authority**<br>Looks like your IT admin has not set an MDM authority. Please get help from your IT admin or try again later.|The mobile device management authority has not been defined.|The mobile device management authority has not been designated in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set.md).|
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Please get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br><br>See information about how to [assign Intune licenses to your user accounts](/intune/licenses-assign).
+|**IT admin needs to set MDM authority**<br>Looks like your IT admin has not set an MDM authority. Please get help from your IT admin or try again later.|The mobile device management authority has not been defined.|The mobile device management authority has not been designated in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set).|
 
 
 ### Devices fail to check in with the Intune service and display as "Unhealthy" in the Intune admin console
@@ -385,7 +385,7 @@ Examples will be added soon about what to look for in these log files.
 
 
 ### Other iOS enrollment errors
-A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
+A list of iOS enrollment errors is provided in our documentation, in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).
 
 ## PC Issues
 

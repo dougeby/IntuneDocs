@@ -65,7 +65,7 @@ You can create Managed Browser policies for the following device types:
 >Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 
-The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ## Conditional Access for the Intune Managed Browser
 
