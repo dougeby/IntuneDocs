@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,7 +69,7 @@ Use the information in this article to help you add Windows Phone line-of-busine
 ## Step 4 - Finish up
 
 1. On the **Add app** pane, verify that you configured the information correctly.
-2. Choose **Add**, to upload the app to Intune.
+2. Choose **Add** to upload the app to Intune.
 
 ## Next steps
 
