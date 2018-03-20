@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Use factory reset or remove company data on devices using Intune
-titlesuffix: "Azure portal"
+title: Use factory reset or remove company data on devices using Microsoft Intune
+titlesuffix:
 description: Learn how to remove company data on a device or to factory reset the device.
 keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ You can remove devices from Intune that are no longer needed, are being repurpos
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Devices** blade, choose **All devices**.
 4. Choose the name of the device you want to factory reset.
-5. On the blade showing the device's name, choose **Factory reset**
+5. On the blade showing the device's name, choose **Factory reset**.
 6. For Windows 10 version 1709 or higher, there is an additional option to "Retain enrollment state and user account". 
     
     |Retained through a factory reset|Not retained|

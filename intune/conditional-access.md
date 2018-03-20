@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Conditional access with Intune
-titlesuffix: "Azure portal"
-description: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune."
+title: Conditional access with Microsoft Intune
+titlesuffix:
+description: Learn how to define the conditions users, devices, and apps must meet to access company resources in Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-This topic describes Conditional access as it applies to Enterprise Mobility + Security (EMS), and follows that with Conditional access common scenarios when using Intune.
+Conditional access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. In this topic, learn about device-based and app-based conditional access, and find common scenarios for using conditional access with Intune.
 
 Enterprise Mobility + Security (EMS) Conditional Access is not a standalone product, it’s a solution that takes part on all services and products that are part of the EMS. It provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
 

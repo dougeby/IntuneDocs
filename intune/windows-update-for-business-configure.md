@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Windows Update for Business settings in Intune
-titleSuffix: "Azure portal"
-description: Learn how to configure Windows Update for Business settings in Intune to control updates to Windows 10 devices."
+title: Configure Windows Update for Business settings in Microsoft Intune
+titleSuffix: 
+description: Learn how to configure Windows Update for Business settings in Microsoft Intune to control updates to Windows 10 devices.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,20 +78,21 @@ After you create update rings, you assign them to groups of devices. By using up
 
 ## How to create and assign update rings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Manage** > **Windows 10 Update Rings**.
-5. On the blade showing the list of update rings, choose **Create**.
-6. On the **Create Update Ring** blade, supply a name and optional description for the update ring, and then choose **Settings**.
-7. On the **Settings** blade, configure the following information:
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Software updates**.
+4. On the **Software updates** pane, choose **Manage** > **Windows 10 Update Rings**.
+5. On the pane showing the list of update rings, choose **Create**.
+6. On the **Create Update Ring** pane, supply a name and optional description for the update ring, and then choose **Settings – Configure**.
+7. On the **Settings** pane, configure the following information:
 	- **Servicing channel**: Set the channel for which the device receives Windows updates (Semi-Annual Channel (Targeted) or Semi-Annual Channel.
-	- **Microsoft updates**: Choose whether to scan for app updates from Microsoft Update.
+	- **Microsoft product updates**: Choose whether to scan for app updates from Microsoft Update.
 	- **Windows drivers**: Choose whether to exclude Windows Update drivers during updates.
 	- **Automatic update behavior**: Choose how to manage automatic update behavior to scan, download, and install updates. For details, see  [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
 	- **Quality update deferral period (days)** - Specify the number of days for which quality updates are deferred. You can defer receiving these Quality Updates for a period of up to 30 days from their release.  
 
   	Quality Updates are generally fixes and improvements to existing Windows functionality and are typically published the first Tuesday of every month, though can be released at any time by Microsoft. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability.
+
 	- **Feature update deferral period (days)** - Specify the number of days for which Feature Updates are deferred. You can defer receiving these Feature Updates for a period of 180 days from their release.
 
 	Feature Updates are generally new features for Windows. After you configure the **Servicing channel** setting (Semi-Annual Channel (Targeted) or Semi-Annual Channel, you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.
@@ -101,13 +102,13 @@ After you create update rings, you assign them to groups of devices. By using up
 
 	**If the Servicing channel is set to Semi-Annual Channel and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device will receive the Feature Update 30 days following this Semi-Annual Channel release and will update in May.
 
-	- **Delivery optimization** - Choose the method for which devices will download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. Once you are done, click **OK**, and then on the **Create Update Ring** blade, click **Create**.
+	- **Delivery optimization download mode** - Choose the method for which devices will download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Once you are done, click **OK**, and then on the **Create Update Ring** pane, click **Create**.
 
 The new update ring is displayed in the list of update rings.
 
 1. To assign the ring, in the list of update rings, select a ring, and then on the <*ring name*> tab, choose **Assignments**.
-2. On the next tab, choose **Select groups**, and then choose the groups to which you want to assign this ring.
+2. On the next tab, choose **Select groups to include**, and then choose the groups to which you want to assign this ring.
 3. Once you are done, choose **Select** to complete the assignment.
 
 ## Update compliance reporting
@@ -116,22 +117,21 @@ You can view update compliance in Intune or by using a free solution in the Oper
 ### Review update compliance in Intune 
 <!-- 1352223 -->
 Review a policy report to view the deployment status for the Windows 10 update rings that you have configured. 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Overview**. From here, you can see general information about the status of any update rings you assigned.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Software updates**.
+4. On the **Software updates** pane, choose **Overview**. From here, you can see general information about the status of any update rings you assigned.
 5. Open one of the following reports: 
      
    **For all deployment rings:**
-   1. On the **Software updates** > **Windows 10 Update Rings** blade. 
+   1. On the **Software updates** > **Windows 10 Update Rings** pane. 
    2. In the **Monitor section**, choose **Per update ring deployment state**.
                    
    **For specific deployment rings:** 
-   1. On the **Software updates** > **Windows 10 Update Rings** blade, choose the deployment ring to review.
+   1. On the **Software updates** > **Windows 10 Update Rings** pane, choose the deployment ring to review.
    2. In the **Monitor** section, choose from the following reports to view more detailed information about the update ring:
-      - **Update ring deployment for devices**
-      - **Update ring deployment for users**
-      - **Per-setting deployment state**
+      - **Device status**
+      - **User status**
 
 ### Review update compliance using OMS
 You can monitor Windows 10 update rollouts by using a free solution in the Operations Management Suite (OMS) called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
@@ -139,25 +139,25 @@ You can monitor Windows 10 update rollouts by using a free solution in the Opera
 In the Intune console, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+ ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 For example, you can use the following values in **Add or edit OMA-URI Setting**:
 
 - **Setting Name**: Windows Analytics Commercial ID
 - **Setting Description**: Configuring commercial ID for Windows Analytics solutions
+- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **Data Type**: String
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
-![Windows setting for diagnostic and usage data](./media/commID.png)
+![OMA-URI Setting - Add Row](./media/commID.png)
 
 ## How to pause updates
 You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality will automatically expire and the device will scan Windows Updates for applicable updates. Following this scan, you can pause the updates again.
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Software Updates**.
-4. On the **Software Updates** blade, choose **Manage** > **Windows 10 Update Rings**.
-5. On the blade showing the list of update rings, choose the ring you want to pause, and then, choose **...** > **Pause Quality** > or **Pause Feature**, depending on the type of updates you want to pause.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Software updates**.
+4. On the **Software updates** pane, choose **Manage** > **Windows 10 Update Rings**.
+5. On the pane showing the list of update rings, choose the ring you want to pause, and then, choose **...** > **Pause Quality** > or **Pause Feature**, depending on the type of updates you want to pause.
 
 > [!IMPORTANT]
 > When you issue a pause command, devices receive this command when they next check into the service. It's possible that before they check in, they might install a scheduled update.

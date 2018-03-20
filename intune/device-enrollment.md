@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titlesuffix: "Azure portal"
+titlesuffix: "Microsoft Intune"
 description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
 author: ErikjeMS
@@ -44,6 +44,14 @@ As you can see in the following tables, there are several methods to enroll your
 |**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
+
+## macOS enrollment methods
+
+| **Method** |  **Reset Required** |  **User Affinity** | **Locked** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| No |No |No  | [More information](./device-enrollment-manager-enroll.md)|
+
 
 ## Windows enrollment methods
 

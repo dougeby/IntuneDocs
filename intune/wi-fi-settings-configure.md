@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to configure Intune Wi-Fi settings
-titleSuffix: "Azure portal"
-description: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
+titleSuffix: Microsoft Intune
+description: Learn how to use Microsoft Intune to configure Wi-Fi connections on devices you manage.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,23 +52,25 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 
 ## Create a device profile containing Wi-Fi settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-3. On the profiles blade, choose **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the Wi-Fi profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+3. On the profiles pane, choose **Create profile**.
+4. On the **Create profile** pane, enter a **Name** and **Description** for the Wi-Fi profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply Wi-Fi settings. Currently, you can choose one of the following platforms for Wi-Fi settings:
 	- **Android**
 	- **Android for Work**
 	- **iOS**
 	- **macOS**
-	- **Windows 8.1 and later (import a profile)**
+	- **Windows Phone 8.1**
+	- **Windows 8.1 and later**
+	- **Windows 10 and later**
 
    > [!IMPORTANT]
-   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform does not include a Wi-Fi profile type. 
+   > If you are creating a profile for devices running Windows 10, including Windows Holographic for Business, you must choose the **Windows 8.1 and later** platform. The **Windows 10 and later** platform doesn't include a Wi-Fi profile type. 
 
-6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the  Extensible Authentication Protocol (EAP) if your Wi-Fi network uses this. 
+6. For Apple or Android devices, on the **WiFi type** drop-down list, choose **Basic** or **Enterprise**. You can use **Basic** to supply basic features like the network name, and the SSID. **Enterprise** lets you supply more advanced information like the Extensible Authentication Protocol (EAP), if your Wi-Fi network uses this protocol. 
 
    The **Wi-Fi import** profile (for Windows 8.1 and later) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
 1. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
@@ -76,9 +78,9 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 	- [iOS settings](wi-fi-settings-ios.md)
 	- [macOS settings](wi-fi-settings-macos.md)
 	- [Windows 8.1 and later settings](wi-fi-settings-import-windows-8-1.md) (including Windows Holographic for Business)
-1. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+1. When you're done, go back to the **Create Profile** pane, and hit **Create**.
 
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 ## Next steps
 

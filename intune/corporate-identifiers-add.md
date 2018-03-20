@@ -2,13 +2,13 @@
 # required metadata
 
 title: Add corporate identifiers to Intune
-titlesuffix: "Azure portal"
-description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune. "
+titlesuffix: "Microsoft Intune"
+description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,9 +76,9 @@ This .csv file when viewed in a text editor appears as:
 
 ### Add a .csv list of corporate identifiers
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**, and then click **Add**.
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**, and then click **Add**.
 
- ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](./media/add-corp-id.png)
+ ![Corporate device identifier workspace with the Add button highlighted](./media/add-corp-id.png)
 
 2. In the **Add Identifiers** blade, specify the identifier type: **IMEI** or **Serial**. You can specify whether previously imported numbers should **Overwrite details for existing identifiers**.
 
@@ -88,11 +88,11 @@ Imported devices are not necessarily enrolled. Devices can have a state of eithe
 
 ### Delete corporate identifiers
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**.
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**.
 2. Select the device identifiers you want to delete, and choose **Delete**.
 3. Confirm the deletion.
 
-Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices** > **All devices**, select the device, choose **Properties**, and change **Device ownership**.
+Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices**, select the device, choose **Properties**, and change **Device ownership**.
 
 ### IMEI specifications
 For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -102,8 +102,8 @@ For detailed specifications about International Mobile Equipment Identifiers, se
 Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**.
 
 **To change device ownership:**
-1. In Intune in the Azure portal, go **Devices** > **All devices**, and choose the device.
+1. In [Intune in the Azure portal](https://portal.azure.com), go to **Devices** and choose the device.
 3. Choose **Properties**.
 4. Specify **Device ownership** as **Personal** or **Corporate**.
 
-  ![Screenshot of device properties showing Device category and Device ownership options.](./media/device-properties.png)
+  ![Device properties showing Device category and Device ownership options](./media/device-properties.png)

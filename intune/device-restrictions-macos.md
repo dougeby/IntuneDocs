@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for macOS
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
+title: Microsoft Intune device restriction settings for macOS
+titlesuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running macOS.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,11 +25,11 @@ ms.custom: intune-azure
 
 ---
 
-# macOS device restriction settings in Microsoft Intune
+# Microsoft Intune macOS device restriction settings
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use these settings to manage macOS devices in a device restriction profile.
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running macOS.
 
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
@@ -55,5 +55,5 @@ To configure the list, click **Add**, then specify a name of your choice, option
 
 ### Unmarked email domains
 
-In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than one you configured, the email is marked as untrusted in the iOS Mail app.
+In the **Email Domain URL** field, add one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the iOS Mail app.
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Manage iOS volume-purchased apps | Microsoft Docs
-titlesuffix: "Azure portal"
-description: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
+title: Manage iOS volume-purchased apps in Microsoft Intune
+titlesuffix: 
+description: Learn about how you can sync apps you purchased in volume from the iOS store into Microsoft Intune and then manage and track their usage.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -85,11 +85,11 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 
 ## To get and upload an Apple VPP token
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-1.	On the **Intune** blade, choose **Mobile apps** > **iOS VPP Tokens** under **Setup**.
-2.  On the list of VPP tokens blade, select **Create**.
-4. On the **Create VPP token** blade, specify the following information:
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1.	On the **Intune** pane, choose **Mobile apps** > **iOS VPP tokens** under **Setup**.
+2.  On the list of VPP tokens pane, select **Create**.
+4. On the **Create VPP token** pane, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
 	- **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
@@ -99,17 +99,17 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 	- **Type of VPP account** - Choose from **Business** or **Education**.
 	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune updates all apps purchased for the specified token through the Intune service when the device checks-in.
 detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
-4. When you are done, select **Upload**.
+4. When you are done, select **Create**.
 
-The token is displayed in the list of tokens blade.
+The token is displayed in the list of tokens pane.
 
 You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
 
 ## To assign a volume-purchased app
 
-1.	On the **Intune** blade, choose **Mobile apps** > **Apps** under **Manage**.
-2.	On the list of apps blade, choose the app you want to assign, and then choose **Assignments**.
-3.	On the ***App name*** - **Assignments** blade, choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
+1.	On the **Intune** pane, choose **Mobile apps** > **Apps** under **Manage**.
+2.	On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
+3.	On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
 5.	For each group you selected, choose the following settings:
 	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
 	- **License type** - Choose from **User licensing**, or **Device licensing**.
@@ -139,18 +139,20 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 
 ## Revoking app licenses and deleting tokens 
 
-<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+<!-- 820863 -->  
+For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
 
 >[!NOTE]
 >Intune will retrieve all user licensed iOS VPP apps licenses when an employee leaves the company and is no longer part of the AAD groups.
 
-<!-- 820879 -->
+<!-- 820879 -->  
 You can delete an iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
 
 >[!NOTE]
 >Intune cannot revoke app licenses after a token has been deleted. 
 
-<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+<!-- 820870 -->  
+To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
 
 ## Further information
 

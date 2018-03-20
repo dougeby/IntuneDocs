@@ -2,12 +2,13 @@
 # required metadata
 
 title: Intune plan and design introduction
-description: This article is an introduction to all Intune plan, design, and implementation sections. Tools to help you determine goals, use-case scenarios and requirements, create rollout and communication plans, support, testing, and validation plans.
+titlesuffix: Microsoft Intune
+description: This article is an introduction to all Microsoft Intune plan, design, and implementation sections. Tools to help you determine goals, use-case scenarios and requirements, create rollout and communication plans, support, testing, and validation plans.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-A successful Intune deployment starts with having a good plan and design. The purpose of this guide is to step you through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.
+A successful Microsoft Intune deployment starts with having a good plan and design. The purpose of this guide is to step you through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.
 
 ## What’s included in this guide?
 

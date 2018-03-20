@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom settings for Android devices
-titleSuffix: "Azure portal"
-description: Learn the settings you can use in an Android custom profile."
+title: Add custom settings for Android devices in Microsoft Intune - Azure | Microsoft Docs
+description: Add or create a custom profile for Android devices to create a WiFi profile with a pre-shared key, create a per-app VPN profile, or allow/block apps for Samsung Knox Standard devices in Microsoft Intune
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,37 +26,37 @@ ms.custom: intune-azure
 
 ---
 
-# Custom settings for Android devices in Microsoft Intune
+# Custom settings for Android devices - Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the Microsoft Intune Android **Custom** profile to assign OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
+Custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features on Android devices. These settings are typically used by mobile device manufacturers to control features on the device.
 
-This capability is intended to allow you to assign the following Android settings that are not configurable with Intune policies:
+Using a custom profile, you can configure and assign the following Android settings. These settings aren't built in to the Intune policies:
 
-- [Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key](/intune/wi-fi-profile-shared-key)
-- [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](/intune/android-pulse-secure-per-app-vpn)
-- [Use custom policies to allow and block apps for Samsung Knox Standard devices in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+- [Create a Wi-Fi profile with a pre-shared key](/intune/wi-fi-profile-shared-key)
+- [Create a per-app VPN profile](/intune/android-pulse-secure-per-app-vpn)
+- [Allow and block apps for Samsung Knox Standard devices](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
->Only the settings listed above can currently be configured by this profile type. Android devices do not expose a complete list of OMA-URI settings you can configure. If you want to see further settings added, please request these on the [Intune Uservoice site](https://microsoftintune.uservoice.com/forums/291681-ideas).
+> Only the settings listed can be configured by this profile type. Android devices don't expose a complete list of OMA-URI settings you can configure. If you'd like to see more settings, then vote for more settings at the [Intune Uservoice site](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## Custom profile settings for Android devices
 
-1. Use the instructions in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
-2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.
-3. On the **Edit Row** blade, configure the following values for each setting:
-	- **Name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
-	- **Description** - Provide a description that gives an overview of the setting and other relevant information to help you locate it.
-	- **Data type** - Select the data type in which you will specify this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
-	- **OMA-URI** - Specify the OMA-URI you want to supply a setting for.
-	- **Value** - Enter the value you want to associate with the OMA-URI you entered.
-4. Click **OK** once you are done, then continue to add more settings as required.
+1. Sign in to the [Azure portal](https://portal.azure.com). 
+2. Select **All Services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Create a custom profile using the Android platform. [Configure custom device settings in Microsoft Intune](custom-settings-configure.md) lists the steps.
+4. In **Custom OMA-URI Settings**, select **Add**, and then select **Add Row**.
+5. Enter the following properties:
+
+  - **Name** - Enter a unique name for the OMA-URI setting so you can easily find it.
+  - **Description** - Enter a description that gives an overview of the setting, and any other important details.
+  - **Data type** - Enter the data type you use for this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
+  - **OMA-URI** - Enter the OMA-URI you want.
+  - **Value** - Enter the value you want to associate with the OMA-URI you entered.
+
+6. Select **OK** to save your changes. Continue to add more settings as needed.
 
 ## Next steps
 
-When you complete the settings, the profile will be created and appears on the profiles list blade. If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
-
-
-
-
+When you complete the settings, the profile is created, and appears in the list. To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).

@@ -1,13 +1,13 @@
 ---
 # required metadata
-title: "Known issues in Microsoft Intune in the Azure portal"
-titlesuffix: "Azure portal"
-description: Read about known issues in Intune"
+title: Known issues in Microsoft Intune
+titlesuffix: Microsoft Intune
+description: Read about known issues in Microsoft Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

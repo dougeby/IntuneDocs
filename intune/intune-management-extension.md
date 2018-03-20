@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Manage PowerShell scripts in Intune for Windows 10 devices
-titlesuffix: "Azure portal"
-description: Learn how to upload PowerShell scripts in Intune to run on Windows 10 devices. 
+title: Manage PowerShell scripts in Microsoft Intune for Windows 10 devices
+titlesuffix: 
+description: Learn how to upload PowerShell scripts in Microsoft Intune to run on Windows 10 devices. 
 keywords:
+ms.author: dougeby
 author: dougeby
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,24 +44,24 @@ The Intune management extension has the following prerequisites:
 
 ## Create a PowerShell script policy 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, choose **Add script**.
-6. On the **Add PowerShell Script** blade, enter a **Name** and **Description** for the PowerShell script.
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane, choose **Manage** > **PowerShell scripts**.
+5. On the **PowerShell scripts** pane, choose **Add**.
+6. On the **Add PowerShell Script** pane, enter a **Name** and **Description** for the PowerShell script.
 7. For **Script location**, browse for the PowerShell script. The script must be less than 10 KB (ASCII) or 5 KB (Unicode).
 8. Choose **Configure**, and then choose whether to run the script with the user's credentials on the device (**Yes**) or system context(**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
-  ![Add PowerShell script blade](./media/mgmt-extension-add-script.png)
+  ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
 9. Choose whether the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 
 10. Click **OK** and then click **Create** to save the script.
 
 ## Assign a PowerShell script policy
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, select the script to assign, and then choose **Manage** > **Assignments**.
-  ![Add PowerShell script blade](./media/mgmt-extension-assignments.png)
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane, choose **Manage** > **PowerShell scripts**.
+5. On the **PowerShell scripts** pane, select the script to assign, and then choose **Manage** > **Assignments**.
+  ![Add PowerShell script pane](./media/mgmt-extension-assignments.png)
  
 6. Choose **Select Groups** to list available Azure AD groups. 
 7. Select one or more groups that contain the users whose devices will receive the script, and then click **Select** to assign the policy to the selected groups.
@@ -70,9 +71,9 @@ The Intune management extension synchronizes to Intune once every hour. After yo
 ## Monitor run status for PowerShell scripts
 You can monitor the run status of PowerShell scripts for users and devices in the Azure portal.
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, select the script to monitor, and then choose **Monitor**, and then one of the following reports:
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane, choose **Manage** > **PowerShell scripts**.
+5. On the **PowerShell scripts** pane, select the script to monitor, and then choose **Monitor**, and then one of the following reports:
    - **Device status**
    - **User status**

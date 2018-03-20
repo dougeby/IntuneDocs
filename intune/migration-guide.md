@@ -2,12 +2,13 @@
 # required metadata
 
 title: Intune mobile device management migration guide
+titlesuffix: Microsoft Intune
 description: This guide walks you through the various details involved in migrating from a third-party MDM provider to Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +29,9 @@ ms.suite: ems
 
 # Intune migration guide
 
-![Intune MDM migration guide art](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM migration guide art](./media/MDM-migration-guide-art.PNG)
 
-A successful migration to Intune starts with a solid plan that factors in your current mobile device management (MDM) environment, business goals, and technical requirements. Additionally, you need to have the key stakeholders whose will support and collaborate with your migration plan.
+A successful migration to Microsoft Intune starts with a solid plan that factors in your current mobile device management (MDM) environment, business goals, and technical requirements. Additionally, you need to include the key stakeholders who will support and collaborate with your migration plan.
 
 This guide walks you through the various details involved in migrating from a third-party MDM provider to Intune.
 

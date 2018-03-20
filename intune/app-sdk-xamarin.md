@@ -2,12 +2,12 @@
 # required metadata
 
 title: Microsoft Intune App SDK Xamarin Component 
-description:
+description: The Intune App SDK Xamarin component enables Intune app protection policy in iOS and Android apps built with Xamarin. 
 keywords: sdk, Xamarin, intune
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 02/08/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,8 +31,6 @@ ms.custom: intune-classic
 
 > [!NOTE]
 > You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
-
-
 
 ## Overview
 The [Intune App SDK Xamarin component](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
@@ -67,29 +65,20 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
 
 ## Get started
 
-1.	Download **Xamarin-component.exe** from [here](https://components.xamarin.com/submit/xpkg) and extract it.
+1. Read the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) for the Microsoft Intune MAM Xamarin Component.
 
-2. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
-
-3.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
-
-4.	In the command line as an administrator, run `mono Xamarin.Component.exe install <.xam> file`.
-
-5.	In Visual Studio, right-click **components** in your previously created Xamarin project.
-
-6.	Select **Edit Components** and add the Intune App SDK component you’ve downloaded locally to your computer.
-
-
+2.	Download the Intune App SDK Xamarin Component NuGet packages from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin). These packages will be available on Nuget.org soon.  
 
 ## Enabling Intune app protection polices in your iOS mobile app
-1.	Follow the general steps required for integrating the Intune App SDK into an iOS mobile app. You can begin with step 3 of the integration instructions from the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md#build-the-sdk-into-your-mobile-app).
+1. Add the `Microsoft.Intune.MAM.Xamarin.iOS` NuGet package to your Xamarin.iOS project.
+2.	Follow the general steps required for integrating the Intune App SDK into an iOS mobile app. You can begin with step 3 of the integration instructions from the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). You can skip the final step in that section of running the IntuneMAMConfigurator, as this tool is included in the Microsoft.Intune.MAM.Xamarin.iOS package and will be run automatically at build time.
     **Important**: Enabling keychain sharing for an app is slightly different in Visual Studio from Xcode. Open the app's Entitlements plist and make sure the "Enable Keychain" option is enabled and the appropriate keychain sharing groups are added in that section. Then, ensure the Entitlements plist is specified in the "Custom Entitlements" field of the project's "iOS Bundle Signing" options for all the appropriate Configuration/Platform combinations.
-2.	Once the component is added and the app is properly configured, your app can begin using the Intune SDK's APIs. To do so, you must include the following namespace:
+3.	Once the component is added and the app is properly configured, your app can begin using the Intune SDK's APIs. To do so, you must include the following namespace:
 
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-3.    To begin receiving app protection policies, your app must enroll in the Intune MAM service. If your app already uses the Azure Active Directory Authentication Library (ADAL) to authenticate users, your app should provide the user's UPN to the IntuneMAMEnrollmentManager's registerAndEnrollAccount method after it has successfully authenticated:
+4. To begin receiving app protection policies, your app must enroll in the Intune MAM service. If your app already uses the Azure Active Directory Authentication Library (ADAL) to authenticate users, your app should provide the user's UPN to the IntuneMAMEnrollmentManager's registerAndEnrollAccount method after it has successfully authenticated:
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
@@ -101,16 +90,17 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
       ```
 
 ## Enabling app protection policies in your Android mobile app
+Add the `Microsoft.Intune.MAM.Xamarin.Android` NuGet package to your Xamarin.Android project.
+
 For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`.
 
 For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.Remapper`. The tool accomplishes the class replacement for you. However, you need to do the following steps:
 
-1.  Add a reference to the `Microsoft.Intune.MAM.Remapper.Tasks` NuGet package version 0.1.0.0 or greater.
+1.  Add the `Microsoft.Intune.MAM.Remapper.Tasks` NuGet package.
 
-2.  Add the following line to your Android csproj:
+2.  Add the following line to your Android csproj (replace "x.x.x.x" with the actual package version):
   ```xml
-  <Import
-  Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
+ <Import Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.x.x.x.x\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
 3.  Set the build action of the added `remapping-config.json` file to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper NuGet package.

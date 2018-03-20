@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices.
+title: Microsoft Intune device restriction settings for Windows 10
+titlesuffix:
+description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/21/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,8 @@ ms.custom: intune-azure
 
 ---
 
-# Windows 10 and later device restriction settings in Microsoft Intune
+#Microsoft Intune Windows 10 and later device restriction settings
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -78,6 +79,9 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
+
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -183,6 +187,8 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+-  **Favorites List** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
+-  **Restrict changes to Favorites** - Set this to **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 
@@ -268,7 +274,7 @@ You can add apps that should have a different privacy behavior from what you def
 
       - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
 
-         For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
+         For devices in public environments, use accounts with minimal privileges to prevent unauthorized activity.  
 
       - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 

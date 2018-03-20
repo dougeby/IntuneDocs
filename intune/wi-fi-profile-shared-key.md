@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Create a Wi-Fi profile with a pre-shared key
-titleSuffix: "Azure portal"
-description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
+title: Create WiFi profile with pre-shared key - Microsoft Intune - Azure | Micrososft Docs
+description: Use a custom profile to create a Wi-Fi profile with a pre-shared key, and get sample XML code for Android, Windows, and EAP-based Wi-Fi profiles in Microsoft Intune
 keywords:
-author: arob98
-ms.author: angrobe
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,58 +26,58 @@ ms.custom: intune-azure
 
 
 ---
-# Use a custom device profile to create a Wi-Fi profile with a pre-shared key
+# Use a custom device profile to create a WiFi profile with a pre-shared key - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Here's how to use Intune’s **Custom device profiles** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
+Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks, or wireless LANs. With Intune, you can create a WiFi profile using a pre-shared key. To create the profile, use the **Custom device profiles** feature within Intune. This article also includes some examples of how to create an EAP-based Wi-Fi profile.
 
-> [!NOTE]
--	You might find it easier to copy the code from a computer that connects to that network, as described below.
-- For Android, you also have the option of using this [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) provided by Johnathon Biersack.
--	You can add multiple networks and keys by adding more OMA-URI settings.
--  For iOS, use Apple Configurator on a Mac station to set up the profile. Alternatively, use this [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) provided by Johnathon Biersack.
+## Before you begin
 
+- It may be easier to copy the code from a computer that connects to that network, as described later in this article.
+- For Android, you can also use the [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
+- You can add multiple networks and keys by adding more OMA-URI settings.
+- For iOS, use Apple Configurator on a Mac station to set up the profile. Or, use [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
 
-1.	To create a Wi-Fi profile with a pre-shared key for Android or Windows or an EAP-based Wi-Fi profile, when you create a device profile choose **Custom** for that device platform rather than a Wi-Fi profile.
+## Create a custom profile
+You can create a custom profile with a pre-shared key for Android, Windows, or an EAP-based Wi-Fi profile. To create the profile using the Azure portal, see [Create custom device settings](custom-settings-configure.md). When you create the device profile, choose **Custom** for your device platform. Don't select the Wi-Fi profile. When you choose custom, be sure to: 
 
-2.	Provide a name and description.
-3.	Add a new OMA-URI setting:
+1. Enter a name and description of the profile.
+2. Add a new OMA-URI setting with the following properties: 
 
-   a.	Enter a name for this Wi-Fi network setting.
+   a. Enter a name for this Wi-Fi network setting
 
-   b.	Enter a description of the OMA-URI setting or leave blank.
+   b. (Optional) Enter a description of the OMA-URI setting, or leave it blank
 
-   c.	**Data Type**: Set to **String**.
+   c. Set the **Data Type** to **String**
 
-   d.	**OMA-URI**:
+   d. **OMA-URI**:
 
     - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-Be sure to include the dot character at the beginning.
+    > Be sure to include the dot character at the beginning.
 
-    SSID is the SSID for which you’re creating the policy. For example,
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID is the SSID for which you’re creating the policy. For example, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Value Field** is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
-4. Choose **OK**, save, and then assign the policy.
+  e. **Value Field** is where you paste your XML code. See the examples within this article. Update each value to match your network settings. The comments section of the code includes some pointers.
+3. Select **OK**, save, and then assign the policy.
 
     > [!NOTE]
     > This policy can only be assigned to user groups.
 
-The next time each device checks in, the policy will be applied, and a Wi-Fi profile will be created on the device. The device will be able to connect to the network automatically.
+The next time each device checks in, the policy is applied, and a Wi-Fi profile is created on the device. The device can then connect to the network automatically.
 
-## Android or Windows Wi-Fi profile
+## Android or Windows Wi-Fi profile example
 
-Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
+The following example includes the XML code for an Android or Windows Wi-Fi profile. 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`must be set to **false**, as **true** could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+> `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
 >
 >  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
->  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but will still be provisioned with the profile.
+>  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but the device still contains the profile.
 
 ```
 <!--
@@ -122,8 +121,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## EAP-based Wi-Fi profile
-Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
+## EAP-based Wi-Fi profile example
+The following example includes the XML code for an EAP-based Wi-Fi profile:
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -206,16 +205,18 @@ Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
 ```
 
 ## Create the XML file from an existing Wi-Fi connection
-You can also create an XML file from an existing Wi-Fi connection:
-1. On a computer that is connected to or has recently connected to the wireless network, open the following folder: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+You can also create an XML file from an existing Wi-Fi connection using the following steps: 
 
-    It’s best to use a computer that has not connected to many wireless networks, because you’ll have to search through each profile to find the right one.
-3.     Search through the XML files to locate the one with the right name.
-4.     After you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
+1. On a computer that is connected to, or has recently connected to the wireless network, open the `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` folder.
+
+  It’s best to use a computer that hasn't connected to many wireless networks. Otherwise, you may have to search through each profile to find the correct one.
+
+2. Search through the XML files to locate the file with the correct name.
+3. After you have the correct XML file, copy and paste the XML code into the **Data** field of the OMA-URI settings page.
 
 ## Best practices
-Before you deploy a Wi-Fi profile with PSK, verify that the device can connect to the endpoint directly.
+- Before you deploy a Wi-Fi profile with PSK, confirm that the device can connect to the endpoint directly.
 
-When rotating keys (passwords or passphrases), expect downtime and plan deployments accordingly. Consider pushing new Wi-Fi profiles during non-working hours. Also, warn users that connectivity may be impacted.
+- When rotating keys (passwords or passphrases), expect downtime and plan your deployments accordingly. Consider pushing new Wi-Fi profiles during non-working hours. Also, warn users that connectivity may be impacted.
 
-To ensure a smooth transition experience, make sure the end user’s device has an alternate connection to the Internet. For example, the end user must be able to switch back to Guest WiFi (or some other WiFi network) or have cellular connectivity to communicate with Intune. This allows the user to continue to receive policy updates when the corporate WiFi Profile is updated on the device.
+- To ensure a smooth transition, make sure the end user’s device has an alternate connection to the Internet. For example, the end user must be able to switch back to Guest WiFi (or some other WiFi network) or have cellular connectivity to communicate with Intune. The extra connection allows the user to receive policy updates when the corporate WiFi Profile is updated on the device.

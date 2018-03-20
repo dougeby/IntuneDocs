@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Sign up or sign in to Intune
-description: How to sign up for an Intune subscription or sign in to start with your subscription
+title: Sign up or sign in to Microsoft Intune
+description: How to sign up for an Microsoft Intune subscription or sign in to start with your subscription.
 keywords:
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
-ms.date: 10/30/2017
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 
-# Sign up or sign in to Intune
+# Sign up or sign in to Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -44,7 +44,7 @@ If you already have a work or school account, **sign in** with that account and 
 
 1.  Visit the [Intune Sign-up page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Screenshot of the Microsoft Intune Trial account signup webpage](./media/account-sign-up-site.png)
+  ![Screenshot of the Microsoft Intune Trial account signup web page](./media/account-sign-up-site.png)
 
 2.  On the Sign-up page, sign in or sign up to manage a new subscription of Intune.
 

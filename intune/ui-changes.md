@@ -2,11 +2,11 @@
 # required metadata
 
 title: Where did my Intune feature go in Azure?
-titlesuffix: "Azure portal"
-description: Helps you find Intune features in the Azure portal."
+titleSuffix: Microsoft Intune
+description: Helps you find Microsoft Intune features in the Azure portal.
 keywords:
-author: dagerrit
-ms.author: dagerrit
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article

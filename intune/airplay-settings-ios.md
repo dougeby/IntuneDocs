@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune AirPlay settings for iOS devices
-titlesuffix: "Azure portal"
-description: "Learn how you can use Intune to help automatically connect iOS devices to AirPlay compatible devices."
+titlesuffix: Microsoft Intune
+description: Learn how you can use Microsoft Intune to help automatically connect iOS devices to AirPlay compatible devices.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,19 +39,20 @@ With this capability you can:
 
 ## Get started
 
-1. On the **Device features** blade, choose **AirPlay**.
-2. On the **AirPlay** blade, choose one or both of the following actions:
+1. From [Intune in the Azure Portal](https://portal.azure.com), navigate to [**Device features** in the device configuration area](device-features-configure.md). 
+1. On the **Device features** pane, choose **AirPlay**.
+2. On the **AirPlay** pane, choose one or both of the following actions:
 
 ## Configure a device and password list
 
-1. On the **Passwords** blade, enter the **Device Name** and **Password** of an AirPlay device, for example **Contoso Apple TV**.
+1. On the **Passwords** pane, enter the **Device Name** and **Password** of an AirPlay device, for example **Contoso Apple TV**.
 2. After entering the device details, click **Add**. The device appears in the **Device Name** list.
 3. Continue to add devices. When you are finished, choose **OK**.
 
 
 ## Configure allowed destinations
 
-1. On the **Allowed destinations (supervised only)** blade, enter the **Device ID** of an AirPlay device, for example 52:46:CD:51:83:4C.
+1. On the **Allowed destinations (supervised only)** pane, enter the **Device ID** of an AirPlay device, for example 52:46:CD:51:83:4C.
 2. After entering the device ID, click **Add**. The ID appears in the **Device ID** list.
 3. Continue to add devices. When you are finished, choose **OK**.
 

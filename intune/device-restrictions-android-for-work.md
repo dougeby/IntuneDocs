@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android for Work 
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Android for Work devices."
+title: Microsoft Intune device restriction settings for Android for Work 
+titlesuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running Android for Work.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,18 +19,22 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Android for Work device restriction settings in Microsoft Intune
+# Microsoft Intune Android for Work device restriction settings
+
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## Work profile settings
+
+### General Settings
+
 - 	**Copy and paste between work and personal profiles** - Controls copy and paste between work and personal apps. Choose **Block** to enabling blocking. Choose **Not configured** to disable blocking.
 - **Data sharing between work and personal profiles** - Use this setting to control whether apps in the work profile can share with apps in the personal profile. This setting controls sharing actions within applications (for example, the **Share…** option in the Chrome browser app) and does not apply to copy/paste clipboard behavior. Unlike [app protection policy settings](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), device restriction settings are managed from the Intune portal and use the Android for Work work profile partition to isolate managed apps. Choose from:
 	- **Default sharing restrictions** - This setting is the default sharing behavior of the device, which varies depending on the version of Android it is running. By default, sharing from the personal profile to the work profile is allowed. Also by default, sharing from the work profile to the personal profile is blocked. This setting prevents sharing of data from the work to the personal profile. Google does not provide a way to block sharing from the personal profile to work profile on devices running versions 6.0 and later.   
@@ -45,6 +49,12 @@ ms.custom: intune-azure
 	- 	**Auto deny**
 
 	The grant state for permissions can be further defined for specific apps by defining an App Configuration policy for an individual app (under **Mobile Apps** > **App configuration policies**).
+
+- **Add and remove accounts**
+
+   Prevents end users from manually adding or removing accounts in the work profile.
+
+   For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in this work profile.
 
 ### Work profile password
 - **Require Work Profile Password** - (Android 7.0 and above with work profile enabled) Define a passcode policy that applies just to the apps in the work profile. By default, the end user has the option to use the two separately defined PINs or they can elect to combine them into the stronger of the two.
@@ -89,8 +99,8 @@ ms.custom: intune-azure
  - **Threat scan on apps** - Enforce that the **Verify Apps** setting is on for work and personal profiles.
 
    > [!Note]  
-   > This setting will only work for devices that are Android O and above. 
+   > This setting only works for devices that are Android O and above. 
 
 ## Next steps
 
-Use the information in the topic, [How to configure device restriction settings](device-restrictions-configure.md) to save, and assign the profile to users and devices.
+Use the information in [How to configure device restriction settings](device-restrictions-configure.md) to save and assign the profile to users and devices.

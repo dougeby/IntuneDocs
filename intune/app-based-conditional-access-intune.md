@@ -2,10 +2,10 @@
 # required metadata
 
 title: App-based conditional access with Intune
-description: Understand the concepts of how app-based conditional access works with Intune.
+description: Learn how app-based conditional access works with Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -60,7 +60,7 @@ In this example, the admin has applied app protection policies to the Outlook ap
 > [!NOTE]
 > The flowchart structure below can be used for other managed apps.
 
-![app-based conditional access with Intune flow-chart](./media/ca-intune-common-ways-3.png)
+![App-based conditional access process illustrated in a flow-chart](./media/ca-intune-common-ways-3.png)
 
 1.  The user tries to authenticate to Azure AD from the Outlook app.
 

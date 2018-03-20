@@ -1,37 +1,35 @@
 ---
 # required metadata
 
-title: Intune policy allow/block apps for Samsung Knox
-titlesuffix: "Azure portal"
-description: Create a custom profile to allow and block apps for Samsung Knox Standard devices."
+title: Microsoft Intune policy to allow/block apps for Samsung Knox
+titlesuffix:
+description: Create a custom profile to allow and block apps for Samsung Knox Standard devices.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 
 ---
-# Use custom policies to allow and block apps for Samsung Knox Standard devices in Microsoft Intune
+# Use custom policies in Microsoft Intune to allow and block apps for Samsung Knox Standard devices 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
+Use the procedure in this article to create a Microsoft Intune custom policy that creates one of the following:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
 - A list of apps that users of the device are allowed to install from the Google Play store. Only the apps you list can be installed. No other apps can be installed from the store.
@@ -40,33 +38,33 @@ These settings can only be used by devices that run Samsung Knox Standard.
 
 ## Create an allowed or blocked app list
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-2. In the list of profiles blade, choose **Create Profile**.
-3. On the **Create Profile** blade, enter a **Name** and optional **Description** for this device profile.
-2. Choose a **Platform type** of **Android**, and a Profile type of **Custom**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
+2. In the list of profiles pane, choose **Create profile**.
+3. On the **Create profile** pane, enter a **Name** and optional **Description** for this device profile.
+2. Choose a **Platform** of **Android**, and a **Profile type** of **Custom**.
 3. Click **Settings**.
-3. On the **Custom OMA-URI Settings** blade, choose **Add**.
-4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following:
+3. On the **Custom OMA-URI Settings** pane, choose **Add**.
+4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following settings:
 
-### For a list of apps that are blocked from running on the device:
+   For a list of apps that are blocked from running on the device:
 
-- **Name** - Enter **PreventStartPackages**.
-- **Description** - Enter an optional description like 'List of apps that are blocked from running.'
-- 	**Data type** - From the drop-down list, choose **String**.
-- 	**OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-- 	**Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   - **Name** - Enter **PreventStartPackages**.
+   - **Description** - Enter an optional description like 'List of apps that are blocked from running.'
+   - 	**Data type** - From the drop-down list, choose **String**.
+   - 	**OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - 	**Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-### For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
-- **Name** - Enter **AllowInstallPackages**.
-- **Description** - Enter an optional description like 'List of apps that users can install from Google Play.'
-- **Data type** - From the drop-down list, choose **String**.
-- **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-- **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
+   - **Name** - Enter **AllowInstallPackages**.
+   - **Description** - Enter an optional description like 'List of apps that users can install from Google Play.'
+   - **Data type** - From the drop-down list, choose **String**.
+   - **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-4. Click **OK**, and then, on the **Create Profile** blade, choose **Create**.
+4. Click **OK**, and then, on the **Create Profile** pane, choose **Create**.
 
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.

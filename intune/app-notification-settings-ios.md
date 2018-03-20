@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune app notification settings for iOS devices
-titlesuffix: "Azure portal"
-description: Learn the settings you can use to control notifications from apps on iOS devices."
+title: Create app notifications for iOS devices - Microsoft Intune - Azure | Microsoft Docs
+description: Add or create app notifications for iOS devices in Microsoft Intune. Choose which apps to send notifications, configure the notification settings on the lock screen, enable sound, choose the type of alert, and add a badge.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,35 +26,39 @@ ms.custom: intune-azure
 
 ---
 
-# Intune app notifications settings for iOS devices
+# Configure app notifications settings on iOS devices in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Lets you configure how apps installed on a device send notifications. These settings support supervised devices running iOS 9.3 and later.
+Configure how installed apps on an iOS device send notifications. These settings support supervised devices running iOS 9.3 and later.
 
-## Configure settings
+## Add the app notification
 
-1. On the Device features blade, choose **App Notifications (supervised only)**.
-2. On the **App Notifications** blade, choose **Add**, and then configure the following values:
-	- **App bundle ID** - Enter the **App Bundle ID** of the app you want to configure. See **Bundle ID reference for built-in iOS apps** later in this topic for help.
-	- **App name** - Enter the name of the app you want to configure. This name is not displayed on the device and is used to help you identify the app in the list.
-	- **Publisher** - Enter the publisher of the app you want to configure. The publisher name is not displayed on the device, and is used only to help you identify the app in the list.
-	- **Notifications** - Enable or disable the app from sending notifications to the device. If you disable this setting, the following settings are also disabled.
-		- **Show in Notification Center** - Enable this setting to allow the app to show notifications in the device Notification Center.
-		- **Show in Lock Screen** - Enable this setting to see notifications from the app on the device lock screen.
-		- **Alert type** - Select the type of notification you want when the device is unlocked from:
-			- **None** - No notification is displayed.
-			- **Banner** - A banner is briefly displayed showing the notification.
-			- **Modal** - The notification is displayed and the user must manually dismiss it before you can continue to use the device.
-		- **Badge on app icon** - Enable this setting to add a badge to the app icon to indicate the app sent a notification.
-		- **Sounds** - Enable this setting to play a sound when a notification is delivered.
-3. Continue to add as many apps as you need. When you are finished, choose **OK**.
-4. Choose **OK** until you return to the **Create Profile** blade, then choose **Create**. 
+1. Sign in to the [Azure Portal](https://portal.azure.com).
+2. Within your iOS or macOS profile, select **Device features**. [iOS or macOS device features](device-features-configure.md) lists the steps to create a profile.
+3. Select **App Notifications (supervised only)**, and then select **Add**: 
+  ![Add app notification in iOS or macOS profile in Intune](./media/ios-macos-app-notifications.png)
+4. Enter the following properties:
 
+  - **App bundle ID**: Enter the **App Bundle ID** of the app you want to configure. **Bundle ID reference for built-in iOS apps** (in this article) provides some help.
+  - **App name**: Enter the name of the app you want to configure. This name is not displayed on the device and is used to help you identify the app in the list.
+  - **Publisher**: Enter the publisher of the app you want to configure. The publisher name is not displayed on the device, and is used only to help you identify the app in the list.
+  - **Notifications**: Enable or disable the app from sending notifications to the device. If you disable this setting, the following settings are also disabled.
+    - **Show in Notification Center** - Enable this setting to allow the app to show notifications in the device Notification Center.
+    - **Show in Lock Screen** - Enable this setting to see notifications from the app on the device lock screen.
+    - **Alert type** - Select the type of notification you want when the device is unlocked from:
+      - **None** - No notification is displayed.
+      - **Banner** - A banner is briefly displayed showing the notification.
+      - **Modal** - The notification is displayed and the user must manually dismiss it before you can continue to use the device.
+    - **Badge on app icon** - Enable this setting to add a badge to the app icon to indicate the app sent a notification.
+    - **Sounds** - Enable this setting to play a sound when a notification is delivered.
+
+5. Continue to add as many apps as you need. When finished adding apps, select **OK**.
+6. Select **Create** to save your profile.
 
 ## Bundle ID reference for built-in iOS apps
 
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. 
+The following list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, it's best to contact your software vendor.
 
 |||
 |-|-|
@@ -101,4 +104,4 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 
 ## Next steps
 
-You can now assign the device profile to the groups you choose. For details, see [How to assign device profiles](device-profile-assign.md).
+Assign the device profile to the groups you choose. [How to assign device profiles](device-profile-assign.md) lists the steps.

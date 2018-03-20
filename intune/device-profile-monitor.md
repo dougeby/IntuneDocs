@@ -2,13 +2,13 @@
 # required metadata
 
 title: How to monitor device profiles with Intune
-titlesuffix: "Azure portal"
-description: Learn how to monitor assigned Intune device profiles."
+titlesuffix: Microsoft Intune
+description: Learn how to monitor assigned Microsoft Intune device profiles.
 keywords:
-author: arob98
-ms.author: angrobe
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

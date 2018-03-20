@@ -2,11 +2,12 @@
 # required metadata
 
 title: Develop a rollout communication plan
-description: This article helps you develop a rollout communication plan for your Intune deployment.
+titlesuffix: Microsoft Intune
+description: This article helps you develop a rollout communication plan for your Microsoft Intune deployment.
 keywords:
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod:

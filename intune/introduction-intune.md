@@ -2,12 +2,12 @@
 # required metadata
 
 title: What is Microsoft Intune
-description: Learn how Intune is the mobile device management(MDM) and mobile app management (MAM) component of the Enterprise Mobility + Security solution and how it helps you protect company data.
+description: Learn how Intune is the mobile device management (MDM) and mobile app management (MAM) component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

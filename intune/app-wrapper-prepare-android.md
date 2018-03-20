@@ -2,12 +2,12 @@
 # required metadata
 
 title: Wrap Android apps with the Intune App Wrapping Tool 
-description: Use the information in this article to learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
+description: Learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,8 +37,6 @@ The tool is a Windows command-line application that runs in PowerShell and creat
 
 Before running the tool, review [Security considerations for running the App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, go to the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) on GitHub.
 
-
-
 ## Fulfill the prerequisites for using the App Wrapping Tool
 
 -   You must run the App Wrapping Tool on a Windows computer running Windows 7 or later.
@@ -57,6 +55,8 @@ Before running the tool, review [Security considerations for running the App Wra
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
 
 - Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
+
+- (Optional) Enable Multidex within the input app. Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX files are a part of the compilation of an Android app. In this scenario, best practice would be to enable Multidex within the app itself. In certain organizations, this may require working with whoever compiles the app (ie. the app build team). 
 
 ## Install the App Wrapping Tool
 
@@ -165,6 +165,7 @@ The following is guidance for requiring user prompt on app launch for an automat
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
 1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+
 > [!NOTE] 
 > The term "client id" tied to your app is the same as the term "application id" from the Azure Portal tied to your app. 
 * To enable SSO, "Common ADAL configuration" #2 is what is needed.

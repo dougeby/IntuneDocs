@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new archive 
+title: What's new in Microsoft Intune classic portal archive
 description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: brenduns
@@ -286,7 +286,7 @@ The following articles have been updated:
 
 * [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Get started with the Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Intune App SDK for iOS developer guide](app-sdk-ios.md)
 
 The following articles are new additions to the docs library:

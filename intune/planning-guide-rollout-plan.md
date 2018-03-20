@@ -2,12 +2,13 @@
 # required metadata
 
 title: Determine groups targeted for rollout and timeframes
-description: This article helps you decide which groups to roll out to Intune and timeframes for those deployments.
+titlesuffix: Microsoft Intune
+description: This article helps you decide which groups to roll out to Microsoft Intune and timeframes for those deployments.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

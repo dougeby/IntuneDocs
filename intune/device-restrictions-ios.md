@@ -1,38 +1,39 @@
 ---
 # required metadata
 
-title: Intune device restrictions settings for iOS
-titleSuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
+title: Microsoft Intune device restrictions settings for iOS
+titleSuffix:
+description: Learn the Intune settings you can use to control device settings and functionality on devices running iOS.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# iOS device restriction settings in Microsoft Intune
+# Microsoft Intune iOS device restriction settings
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running iOS.
+
 ## General
 
+- 	**Share usage data** - Allow or block the device from sending diagnostic and usage telemetry data to Apple.
 - 	**Diagnostic data submission** - Allow or block the device from submitting diagnostic data to Apple.
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.
 	- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Apple Classroom app from viewing the screen of iOS devices.
@@ -101,11 +102,11 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Simple passwords** - Allow simple passwords like 0000 and 1234.
-	- 	**Required password type** - Specify the type of password that will be required, such as numeric only or alphanumeric.
+	- 	**Required password type** - Specify the type of password that is required, such as numeric only or alphanumeric.
 	- 	**Number of non-alphanumeric characters in password** - Specify the number of symbol characters (like **#** or **@**) that must be included in the password.
 	- 	**Minimum password length** - Specify the minimum number of characters in the password.
 	- 	**Number of sign-in failures before wiping device** - Specify the number of failed login attempts before this setting wipes the device.
-	- 	**Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must re-enter their password.
+	- 	**Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must reenter their password.
 	- 	**Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the number of minutes before the device display is turned off.
 	- 	**Password expiration (days)** - Specify the number of days before the device password must be changed.
 	- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.
@@ -113,7 +114,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - **Passcode modification (supervised only)** - Stops the passcode from being changed, added, or removed.
 	- **Fingerprint modification (supervised only)** - Stops the user from changing, adding, or removing TouchID settings.
 
-<sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
+<sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after five minutes, and the device will be locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock five minutes later.
 
 ## Locked Screen Experience
 
@@ -139,7 +140,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - 	**Game Center (supervised only)** - Block or enable the use of the Game Center app.
 - 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.
 - 	**Ratings region** - Choose the ratings region for which you want to configure allowed downloads, then choose the allowed ratings for **Movies** and **TV Shows**.
-- 	**Apps** - Choose the allowed age rating of apps that users will be able to download, or you can choose **Allow All Apps**.
+- 	**Apps** - Choose the allowed age rating of apps that users can download, or you can choose **Allow All Apps**.
 
 ## Built-in Apps
 
@@ -162,8 +163,8 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 
 In the restricted apps list, you can configure one of the following lists:
 
-- A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run. Users are not prevented from installing a prohibited app, but if they do so, this will be reported to you.
-- An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed. Users are not prevented from installing an app that is not on the approved list, but if they do so, this will be reported to you.
+- A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run. Users are not prevented from installing a prohibited app, but if they do so, this is reported to you.
+- An **Approved apps** list - List the apps that users are allowed to install. Users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed. Users are not prevented from installing an app that is not on the approved list, but if they do so, this is reported to you.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
 
@@ -175,7 +176,7 @@ Using a search engine, find the app that you want to use in the iTunes App Store
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
 Device profiles that contain restricted app settings must be assigned to groups of users.
 
-Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Example: Search for Microsoft Word for iPad. The URL that you use is https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > You can also use iTunes to find the app and then use the **Copy Link** command to get the app URL.
@@ -188,8 +189,8 @@ You can also click **Import** to populate the list from a csv file in the format
 
 In the show or hide apps list, you can configure one of the following lists (requires supervised devices running iOS 9.3 or later).
 
-A **Hidden apps** list - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
-An **Visible apps** list - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+A **Hidden apps** list - Specify a list of apps that is hidden from users. Users cannot view, or launch these apps.
+A **Visible apps** list - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
 
@@ -200,7 +201,7 @@ To specify an app URL in the apps list, use the following format:
 Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
 
-Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Example: Search for Microsoft Word for iPad. The URL that you use is https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
@@ -220,8 +221,8 @@ You can also click **Import** to populate the list from a csv file in the format
 - 	**Join Wi-Fi networks only using configuration profiles (supervised only)** - Only allow the device to join Wi-Fi networks that have been configured with an Intune Wi-Fi profile.
 
 - **Cellular usage rules (managed apps only)** - Lets you define the data types that managed apps can use when on cellular networks. Choose from:
-	- **Block use of cellular data**
-	- **Block use of cellular data when roaming**
+	- **Block use of cellular data** - You can block use of cellular data for ** All managed apps** or **Choose specific apps**.
+	- **Block use of cellular data when roaming** - You can block use of cellular data when roaming for ** All managed apps** or **Choose specific apps**.
 
 ## Connected Devices
 
@@ -234,7 +235,7 @@ You can also click **Import** to populate the list from a csv file in the format
 
 ## Keyboard and Dictionary
 
-- 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.
+- 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up its definition.
 - 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.
 - 	**Auto-correction (supervised only)** - Lets the device automatically correct misspelled words.
 - 	**Keyboard spell-check (supervised only)** - Allows the device spell checker.
@@ -244,9 +245,9 @@ You can also click **Import** to populate the list from a csv file in the format
 ## Cloud and Storage
 - 	**Backup to iCloud** - Allow the user to back up the device to iCloud.
 - 	**Document sync to iCloud (supervised only)** - Allow document and key-value synchronization to your iCloud storage space.
-- 	**Photo stream syncing to iCloud** - Lets users enable **My Photo Stream** on their device which allow photos to sync to iCloud and be available on all the users devices.
+- 	**Photo stream syncing to iCloud** - Lets users enable **My Photo Stream** on their device, which allows photos to sync to iCloud and be available on all the users devices.
 - 	**Encrypted backup** - Require any device backups to be encrypted.
-- 	**iCloud Photo Library** - If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.
+- 	**iCloud Photo Library** - If set to **No**, disables the use of iCloud photo library, which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device is removed from the device if this is set to **No**.
 - 	**Managed apps sync to cloud** - Allow apps that you manage with Intune to sync data to the user's iCloud account.
 - 	**Shared photo stream** - Set to **No** to disable **iCloud Photo Sharing** on the device..
 - 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or macOS device (Handoff).
@@ -257,7 +258,7 @@ Use these settings to configure iOS devices to run specified apps in autonomous 
 
 ### Settings
 
-- **App name** - Enter the name of the app as it will appear in the apps list on this blade.
+- **App name** - Enter the name of the app as it appears in the apps list on this blade.
 - **App Bundle ID** - Enter the bundle ID of the app. For help, see **Bundle ID reference for built-in iOS apps** in this topic.
 
 After you specify each app name and bundle ID, choose **Add** to append it to the list.
@@ -314,7 +315,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 
 
 ## Kiosk (supervised only)
-- 	**App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
+- 	**App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps are allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
 	- 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.
 	- 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.
 	- 	**Mono audio** - Enable or disable the accessibility setting Mono audio.
@@ -349,12 +350,12 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 
 ### Unmarked email domains
 
-In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than those you configured, the email will be marked as untrusted in the iOS Mail app.
+In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than those you configured, the email is marked as untrusted in the iOS Mail app.
 
 
 ### Managed web domains
 
-In the **Web Domain URL** field, add one or more URLs to the list. When documents are downloaded from the domains you specify, they will be considered managed. This setting applies only to documents downloaded using the Safari browser.
+In the **Web Domain URL** field, add one or more URLs to the list. When documents are downloaded from the domains you specify, they are considered managed. This setting applies only to documents downloaded using the Safari browser.
 
 
 ### Safari password autofill domains

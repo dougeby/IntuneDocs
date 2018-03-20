@@ -236,6 +236,9 @@
           href: store-apps-windows-phone-8-1.md
         - name: Microsoft Store apps
           href: store-apps-windows.md
+          items:
+          - name: Manually add Company Portal app
+            href: store-apps-company-portal-app.md
         - name: Android for Work apps
           href: apps-add-android-for-work.md
         - name: Office 365 apps for Windows 10
@@ -441,6 +444,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Evaluate policy
+      href: policy-evaluate.md
     - name: Actions for noncompliance
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
@@ -582,6 +587,10 @@
       href: end-user-apps-ios.md
     - name: How to get Windows apps
       href: end-user-apps-windows.md
+    - name: Data Intune sends to Apple
+      href: data-intune-sends-to-apple.md
+    - name: Data Intune sends to Google
+      href: data-intune-sends-to-google.md
   - name: Monitor and troubleshoot
     items:
     - name: Help users troubleshoot problems

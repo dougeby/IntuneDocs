@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Intune for iOS device single sign-on
-titlesuffix: "Azure portal"
-description: Learn how to configure Intune for iOS device single sign-on."
+title: Configure Microsoft Intune for iOS device single sign-on
+titlesuffix:
+description: Learn how to configure Microsoft Intune for iOS device single sign-on.
 keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Intune for iOS device single sign-on
+# Configure Microsoft Intune for iOS device single sign-on
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -40,18 +40,19 @@ To take advantage of iOS device Single Sign-on, you must have the following cond
 
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade, choose **Profiles**.
-3. On the profiles blade, choose **Create Profile**, provide a name and description, and configure the following settings:
-   - **Platform**: Choose **iOS**. 
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+4. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5. On the profiles pane, choose **Create profile**.
+6. Provide a name and description, and configure the following settings:
+   - **Platform**: Choose **iOS**.
    - **Profile type**: Choose **Device features**.
-4. On the **Device features** blade, choose **Single Sign On**.
+7. On the **Device features** pane, choose **Single Sign On**.
 
-   ![Single Sign On blade](./media/sso-blade.png)
+   ![Single Sign On pane](./media/sso-blade.png)
 
-2. Use the following summary table to help you fill in the fields on the **Single Sign On** blade. For details, see the sections after the table.
-   
+8. Use the following summary table to help you fill in the fields on the **Single Sign On** pane. For details, see the sections after the table.
+
    |Field  |Notes|
    |---------|---------|
    |**Username attribute from AAD**|The attribute that Intune looks at for each user in AAD and populates the respective field (such as UPN) before generating the XML payload that gets installed on the device.|
@@ -95,13 +96,13 @@ The patterns `http://.com` and `https://.com` match all HTTP and HTTPS URLs, res
 
 Indicate which apps on an end user’s device that can use the Single Sign on payload.
 
-The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the *\ wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
+The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the \* wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
 
 The **App Name** field is used to add a user-friendly name to help you identify the bundle ID.
 
 ### Credential renewal certificate
 
-If you authenticate your end users with certificates (not passwords), then use this field to select the SCEP or PFX certificate that is deployed to the user as the authentication certificate. Typically, this is the same certificate that is deployed to the user for other profiles such as VPN, WiFi, or Email.
+If you authenticate your end users with certificates (not passwords), then use this field to select the SCEP or PFX certificate that is deployed to the user as the authentication certificate. Typically, this is the same certificate that is deployed to the user for other profiles such as VPN, Wi-Fi, or email.
 
 ## Next steps
 

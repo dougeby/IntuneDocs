@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune classic groups in the Azure portal
-titleSuffix: "Azure portal"
-description: Learn what's new with groups in the Intune Azure portal
+titleSuffix: Microsoft Intune
+description: Learn what's new with groups in the Microsoft Intune Azure portal.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angerobe
-ms.date: 01/18/2017
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Intune classic groups in the Azure portal
+# Microsoft Intune classic groups in the Azure portal
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

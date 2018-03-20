@@ -2,9 +2,9 @@
 # required metadata
 
 title: Microsoft Intune App SDK for iOS developer guide 
-description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app.
+description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies (also known as APP or MAM policies) into your native iOS app.
 keywords:
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
@@ -476,7 +476,7 @@ MAM targeted configuration allows an app to receive configuration data through t
 * Call ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` to get the App Config Object.
 * Call the appropriate selector on ```IntuneMAMAppConfig``` object. For example, if your application's key is a string, you'd want to use ```stringValueForKey``` or ```allStringsForKey```. The ```IntuneMAMAppConfig.h header``` file talks about return values/error conditions.
 
-For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+For more information about the capabilities of the Graph API, see [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 For more information about how to create a MAM targeted app configuration policy in iOS, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 

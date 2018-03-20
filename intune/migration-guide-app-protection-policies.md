@@ -2,12 +2,13 @@
 # required metadata
 
 title: Configure app protection policies during an Intune migration
-description: This article provides the necessary steps to set up app protection policies during an Intune migration.
+titlesuffix: Microsoft Intune
+description: This article provides the necessary steps to set up app protection policies during a Microsoft Intune migration.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

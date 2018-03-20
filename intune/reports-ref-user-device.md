@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: User Device Association - Intune Data Warehouse | Microsoft Docs 
+title: User Device Association - Intune Data Warehouse
+titlesuffix: Microsoft Intune 
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

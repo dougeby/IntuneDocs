@@ -4,10 +4,10 @@
 title: Microsoft Intune App SDK for Android developer guide
 description: The Microsoft Intune App SDK for Android lets you incorporate Intune mobile app management (MAM) into your Android app.
 keywords: SDK
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/18/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -1378,7 +1378,7 @@ public interface MAMAppConfig {
 App config adds a new notification type:
 * **REFRESH_APP_CONFIG**: This notification is sent in a `MAMUserNotification` and informs the app that new app config data is available.
 
-For more information about the capabilities of the Graph API with respect to the MAM targeted configuration values, see [Graph API Reference MAM Targeted Config]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+For more information about the capabilities of the Graph API, see the [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 

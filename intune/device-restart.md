@@ -2,13 +2,13 @@
 # required metadata
 
 title: Remotely restart devices with Intune 
-titlesuffix: "Azure portal"
-description: Learn how to remotely restart devices using the restart device action."
+titlesuffix: Microsoft Intune
+description: Learn how to remotely restart devices using the restart device action in Microsoft Intune.
 keywords:
-author: arob98
-ms.author: angrobe
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

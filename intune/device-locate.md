@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Locate lost iOS devices with Intune 
-titlesuffix: "Azure portal"
-description: Learn how locate lost or stolen iOS devices with Intune."
+title: Find lost iOS devices with Microsoft Intune - Azure | Microsoft Docs
+description: Locate lost or stolen iOS devices by using the locate device feature in Microsoft Intune. Get details on security and privacy information when using the locate device action.
 keywords:
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,40 +28,39 @@ ms.custom: intune-azure
 
 # Locate lost or stolen iOS devices with Intune
 
-
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Locate Device** device action displays the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into [lost mode](device-lost-mode.md).
+To get the location of a lost or stolen iOS device on a map, use the **Locate device** action. The device must be a corporate-owned iOS device, enrolled through the device enrollment program, and be in supervised mode. Before you use this action, be sure the device is in [lost mode](device-lost-mode.md).
 
 ## Supported platforms
 
-- Windows - Not supported
-- Windows Phone - Not supported
-- iOS - Supported on iOS 9.3 and later (in Lost mode), supervised, and corp owned
-- macOS - Not supported
-- Android - Not supported
+- iOS 9.3 and later
 
-## How to locate a lost or stolen device
+This feature is not supported for the following systems: 
+- Windows
+- Windows Phone
+- macOS
+- Android
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. From the list of devices you manage, choose an iOS device, choose **...More**, and then choose the **Locate device** remote action.
-6. After the device has been located, it's location is displayed on the **Locate device** blade.
-	![Locate device blade](./media/locate-device.png)
+## Locate a lost or stolen device
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Devices**, and then select **All devices**.
+4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Locate device** remote action.
+5. After the device is located, its location is shown in **Locate device**.
+	![Screenshot of Locate device using Intune in Azure](./media/locate-device.png)
 
 >[!NOTE]
->For privacy purposes, the distance you can zoom into the map is limited.
+>For privacy reasons, the distance you can zoom into the map is limited.
 
-## Security and privacy information for the lost mode and locate device actions
-- No device location information is sent to Intune until you turn this action on.
-- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and displayed in the Azure portal.
+## Security and privacy information for lost mode and locate device actions
+- No device location information is sent to Intune until you turn on this action.
+- When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and shown in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
-- Location data is encrypted, both while stored, and while being transmitted.
-- When you configure lost mode, we recommend that the message you enter to display on the lock screen includes information that helps someone who finds the device to return it.
-
+- Location data is encrypted, both while stored and while being transmitted.
+- When you configure lost mode, you can customize a message that appears on the lock screen. In this message, to help the person that finds the device, be sure to include specific details to return the lost device.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.
+To see the status of enabling locate device, open **Devices**, and select **Device actions**.
