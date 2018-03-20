@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create device profiles in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure a device profile in Microsoft Intune, including selecting the platform type, and configuring the settings within the Azure portal
+description: Add or configure a device profile in Microsoft Intune, including selecting the platform type, and configuring the settings within the Azure portal.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -33,12 +33,12 @@ ms.custom: intune-azure
 ## Create the profile
 1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
 
-2. In **Microsoft Intune**, select **Device configuration**, select **Profiles**, and then select **Create Profile**.
+2. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. Then select **Create Profile**.
 
 3. Enter the following properties:
 
-	- **Name**: Enter a descriptive name for the new profile
-	- **Description**: Optional but recommended. Enter an description for the profile.
+	- **Name**: Enter a descriptive name for the new profile.
+	- **Description**: Enter a description for the profile. (This is optional, but recommended.)
 	- **Platform**: Select the platform type:  
 
 		- **Android**
@@ -63,11 +63,11 @@ ms.custom: intune-azure
 		-  [Education settings](education-settings-configure.md)
 		-  [Custom settings](custom-settings-configure.md)
 
-	![Enter the settings to create a device profile](./media/create-device-profile.png)
+	![Screenshot of Create profile](./media/create-device-profile.png)
 
 4. Select **Create** when finished.
 
-The profile is created and appears in the list. To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+The profile is created, and appears in the list.
 
 
 ## Next steps
