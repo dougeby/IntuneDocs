@@ -151,7 +151,7 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 
 ![OMA-URI Setting - Edit Row](./media/commID-edit.png)
 
-> ![NOTE]
+> [!NOTE]
 > For more information about MS DM Server, see [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
 ## How to pause updates
