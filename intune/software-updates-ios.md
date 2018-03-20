@@ -32,10 +32,6 @@ Software update policies let you force supervised iOS devices running iOS 10.3 a
 
 When the device checks in, about every 8 hours, if there is an update available and it is not during a restricted time, the device will attempt to download and install the latest OS update. There is no user interaction needed to update the device. The policy would not prevent a user from updating the OS.
 
-
-
-Update policies for iOS let you force supervised iOS devices to automatically install the latest available software update. You have the option to configure the days and times when you do not want devices to install the update.
-
 ## Configure the iOS update policy
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
