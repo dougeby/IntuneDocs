@@ -130,6 +130,19 @@ Clicking on a device, opens the **Devices Pane** with the device selected, which
 
 When you click on the device policy setting itself, you can see the device compliance policy name originated that device compliance setting targeted by the admin.
 
+### Devices without compliance policy
+This report identifies devices that do not have any compliance policies assigned to them. With the introduction of the security setting that marks all devices without compliance policies as "not compliant," it's important to be able to identify these devices. Then you can assign at least one compliance policy to them.
+
+> [!NOTE]
+> The new security setting is configurable in the Intune portal. Select **Device compliance**, and under **Setup**, choose **Compliance policy settings**. Then use the toggle to set **Treat "No Policy Assigned" devices as** to either **Compliant** or **Not compliant**. Read more about this [security enhancement in the Intune service](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Image showing Devices without compliance policy report](./media/idc-12.png)
+
+The **Devices without compliance policy** tile is available from the Device compliance dashboard, and it shows all devices without a compliance policy, the user of the device, the compliance status, and the device model.
+
+> [!NOTE]
+> Users who are assigned a compliance policy of any type will not show up in the report, regardless of device platform. For example, if you have unintentionally assigned a Windows compliance policy to a user with an Android device, the device will not show up in the report. However, Intune will consider that Android device not compliant. To avoid issues, we recommend that you create policies for each device platform and deploy them to all users.
+
 ### Per-policy device compliance report
 
 This report provides you per compliance policy view and the total number of devices in each compliance state. The **Policy compliance** title is available from the **Device compliance dashboard**, and it shows all policies previously created by the admin, the platforms the policy is applied, number of compliant devices and number of noncompliant devices.
