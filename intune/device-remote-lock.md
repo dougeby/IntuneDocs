@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lock devices with Microsoft Intune - Azure | Microsoft Docs
-description: Use Remote Lock action in Microsoft Intune to lock a device that is protected by a PIN or password. 
+description: Use the Remote lock action in Microsoft Intune to lock a device that is protected by a PIN or password. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -30,11 +30,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Remote lock** device locks the device. To unlock it, the device owner enters their passcode. You can remotely lock devices that have a PIN or password set. Devices that don't have a PIN or passcode can't be remotely locked.
+The **Remote lock** device action locks the device. To unlock the device, the device owner enters their passcode. You can remotely lock devices that have a PIN or password set. Devices that don't have a PIN or password can't be remotely locked.
 
 ## Supported platforms
 
-Remote lock is supported for the following platforms:
+**Remote lock** is supported for the following platforms:
 
 - Android
 - iOS
@@ -42,19 +42,20 @@ Remote lock is supported for the following platforms:
 - Windows 10 Mobile
 - Windows Phone 8.1 and later
 
-It is **not** supported for:
+**Remote lock** is *not* supported for:
 - Windows 10 desktop
 
 > [!NOTE]
-> For macOS devices, you set a 6-digit recovery PIN. When locked, the **Device overview** displays the PIN until another device action is sent.
+> For macOS devices, you set a 6-digit recovery PIN. When the device is locked, the **Device overview** displays the PIN until another device action is sent.
 
 ## Remote lock a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Devices**, and then select **All devices**.
-4. From the list of devices, select a device, and then select the **Remote lock** action.
+2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
+3. Select **Devices** > **All devices**.
+4. In the list of devices, select a device, and then select the **Remote lock** action.
 
 ## Next steps
 
-To see the status of this action, open **Device actions** (Microsoft Intune > Devices). See [Available actions](device-management.md) for more actions to help manage your devices.
+- To see the status of this action, select **Microsoft Intune** > **Devices** > **Device actions**. 
+- For more actions that can help you manage your devices, see [Available actions](device-management.md).
