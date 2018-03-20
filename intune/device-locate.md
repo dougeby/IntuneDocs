@@ -58,7 +58,7 @@ This feature is not supported for the following systems:
 - No device location information is sent to Intune until you turn on this action.
 - When you use the locate device action, the latitude and longitude coordinates of the device are sent to Intune, and shown in the Azure portal.
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
-- Location data is encrypted, both while stored, and while being transmitted.
+- Location data is encrypted, both while stored and while being transmitted.
 - When you configure lost mode, you can customize a message that appears on the lock screen. In this message, to help the person that finds the device, be sure to include specific details to return the lost device.
 
 ## Next steps
