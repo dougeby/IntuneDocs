@@ -71,9 +71,6 @@ Use the information in this article to help you add Windows Phone line-of-busine
 1. On the **Add app** pane, verify that you configured the information correctly.
 2. Choose **Add** to upload the app to Intune.
 
-> [!Note]
-> In the Azure portal, Intune will alert you to line-of-business apps that are about to expire. Upon uploading a new version of the line-of-business app, Intune will remove the expiration notification from the app list.
-
 ## Next steps
 
 - The app you have created is displayed in the apps list. You can now assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).

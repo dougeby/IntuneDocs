@@ -79,9 +79,6 @@ The app you have created will be displayed in the apps list where you can assign
 
 ## Step 5 - Update a line-of-business app
 
-> [!Note]
-> In the Azure portal, Intune will alert you to line-of-business apps that are about to expire. Upon uploading a new version of the line-of-business app, Intune will remove the expiration notification from the app list.
-
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!Note]
