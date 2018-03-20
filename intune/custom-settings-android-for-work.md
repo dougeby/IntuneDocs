@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune custom profile settings for Android for Work
-titlesuffix: "Azure portal"
-description: Learn how to create Intune custom profile settings for Android for Work devices."
+titlesuffix: Microsoft Intune
+description: Learn how to create Microsoft Intune custom profile settings for Android for Work devices.
 keywords:
 author: vhorne
 ms.author: victorh

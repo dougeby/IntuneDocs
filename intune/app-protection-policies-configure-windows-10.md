@@ -2,8 +2,8 @@
 # required metadata
 
 title: Get ready to configure app protection policies for Windows 10 
-titlesuffix: "Azure portal"
-description: "Setup mobile application management (MAM) provider in Azure AD"
+titleSuffix: Microsoft Intune
+description: Setup mobile application management (MAM) provider in Azure AD.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Get ready to configure app protection policies for Windows 10
+# Get ready to configure app protection policies for Windows 10 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

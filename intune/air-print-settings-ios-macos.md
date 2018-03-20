@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune AirPrint settings for iOS and macOS devices
-titlesuffix: "Azure portal"
-description: Learn how you can use Intune to help automatically connect iOS and macOS devices to AirPrint compatible printers."
+titlesuffix: Microsoft Intune
+description: Learn how you can use Microsoft Intune to help automatically connect iOS and macOS devices to AirPrint compatible printers.
 keywords:
 author: vhorne
 ms.author: victorh

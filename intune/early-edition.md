@@ -155,6 +155,29 @@ We'll be updating the Company Portal app for Android to follow Android's [Materi
 
 The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
 
+### Use fully distinguished name as subject for SCEP certificate <!--2221763 eeready-->
+When you create a SCEP certificate profile, you enter the Subject Name. You'll be able use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD. 
+
+### iOS devices are prompted for a PIN every 15 minutes <!--1550837 eeready-->
+After a compliance or configuration policy is applied to an iOS device, users will be prompted to set a PIN every 15 minutes. Users will be continually prompted until a PIN is set.
+
+### Enable Bluetooth contact sharing - Android for Work <!--1098983 eeready-->
+By default, Android prevents contacts in the work profile from syncing with Bluetooth devices. As a result, work profile contacts are not displayed on caller ID for Bluetooth devices.
+
+There will be a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+- Contact sharing via Bluetooth
+
+The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
+
+Applies to: Android work profile devices on Android OS v6.0 and newer.
+
+### Schedule your automatic updates <!--1805514 -->
+
+Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). You'll be able to schedule reoccurring updates, including the week, the day, and the time. 
+
+### Disable checks on device restart <!--1805490 -->
+
+Intune gives you control to [manage software updates](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**. 
 
 <!-- 1802 start -->
 
@@ -193,29 +216,6 @@ For education profiles, new settings will be available under the **Printers** ca
 
 ### iOS app provisioning configuration <!-- 1581650 -->
 You will be able to assign iOS app provisioning profiles to prevent your apps from expiring by including or excluding security groups.
-
-### New Windows Defender Exploit Guard settings <!-- 631893 -->
-
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities will be available. These settings can be found at: Device configuration\Profiles\
-Create profile\Endpoint protection\Windows Defender Exploit Guard.
-
-#### Attack Surface Reduction
-
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Advanced ransomware protection|Enabled, Audit, Not configured|Use aggressive ransomware protection.|
-|Flag credential stealing from the Windows local security authority subsystem|Enabled, Audit, Not configured|Flag credential stealing from the Windows local security authority subsystem (lsass.exe).|
-|Process creation from PSExec and WMI commands|Block, Audit, Not configured|Block process creations originating from PSExec and WMI commands.|
-|Untrusted and unsigned processes that run from USB|Block, Audit, Not configured|Block untrusted and unsigned processes that run from USB.|
-|Executables that don’t meet a prevalence, age, or trusted list criteria|Block, Audit, Not configured|Block executable files from running unless they meet a prevalence, age, or trusted list criteria.|
-
-#### Controlled folder access
-
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
-Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
-**Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
 ### New Windows Defender Application Guard settings <!-- 1631890 -->
 

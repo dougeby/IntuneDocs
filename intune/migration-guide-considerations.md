@@ -2,12 +2,13 @@
 # required metadata
 
 title: Special migration considerations
-description: This article provides special migration considerations before you start a migration campaign.
+titlesuffix: Microsoft Intune
+description: This article provides special migration considerations before you start a migration campaign to Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +29,7 @@ ms.suite: ems
 
 # Special migration considerations
 
-There are special migration considerations which may apply depending on your existing MDM provider environment.
+There are special migration considerations that may apply depending on your existing MDM provider environment.
 
 ## Factory reset for Apple’s Device Enrollment Program (DEP)
 
