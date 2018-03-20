@@ -31,12 +31,12 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can monitor the assignment progress of Intune device profiles in two ways:
+You can monitor the assignment progress of Intune device profiles in two ways.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. In the **Intune** pane, select **Device configuration**.
 4. In the **Device configuration** pane, in the **Manage** section, select **Profiles**.
-5. In the pane that shows the list of profiles, select the profile that you want to manage. Then, either:
+5. In the pane that shows the list of profiles, select the profile that you want to manage. Then, do one of the following:
 	- In the <*profile name*> **Device configuration profile** pane, to see basic information about the profile and its assignments, select **Overview**.
 	- In the <*profile name*> **Device configuration profile** pane, to see more detailed information about the profile and its assignments, select **Assignments**.
