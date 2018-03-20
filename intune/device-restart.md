@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-The **Restart** device action causes the device you choose to be restarted. The device owner is not automatically notified of the restart, therefore might lose work.
+The **Restart** device action causes the device you choose to be restarted. The device owner isn't automatically notified of the restart, and they might lose work.
 
 ## Supported platforms
 
@@ -41,18 +41,18 @@ The **Restart** device action causes the device you choose to be restarted. The 
 - iOS - Supported
 
     > [!Note]  
-    > This command requires a supervised devices and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices will not rejoin a Wi-Fi network after restart; after restart, they may not be able to communicate with the server.
+    > This command requires a supervised device and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices don't rejoin a Wi-Fi network after restart. After restart, the device might not be able to communicate with the server.
 - macOS - Not supported
 - Android - Not supported
 
-## How to restart a device
+## Restart a device
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. From the list of devices you manage, choose a device, choose **...More**, and then choose the **Restart** device remote action.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. In the **Intune** pane, select **Devices**.
+4. In the **Devices** pane, select **All devices**.
+5. In the list of devices that you manage, select a device, select **More**, and then select the **Restart** device remote action.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices** blade, choose **Device actions**.
+- To see the status of the **Restart** device action, select **Devices** > **Device actions**.
