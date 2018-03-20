@@ -3,7 +3,7 @@
 
 title: Microsoft Intune custom settings for devices running macOS
 titleSuffix:
-description: Learn the settings you can use in a macOS custom profile.
+description: Learn the settings you can use in a macOS custom profile in Microsoft Intune.
 keywords:
 author: vhorne
 ms.author: victorh

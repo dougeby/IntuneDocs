@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: UI updates for Intune end user apps
-description: "Find out what has changed in UI for apps that work on end user devices with Intune."
+title: UI updates for Intune end-user apps
+titlesuffix: Microsoft Intune
+description: Find out what has changed in UI for apps that work on end-user devices with Microsoft Intune.
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,16 +26,10 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-# UI updates for Intune end user apps
-Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+# UI updates for Intune end-user apps
+Learn what updates have been made to the UI for apps that your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
-## Week of December 11, 2017
-
-### End user messaging for accounts <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon.
-
-![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## Week of November 27, 2017
 
@@ -126,7 +121,7 @@ We've also updated the conditional access email activation screen.
 
 ### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
 
-The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end-users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
 
 |Before|After|
 |---|---|
@@ -149,7 +144,7 @@ Conditional access with Intune supports more secure authentication on iOS device
 
 ![Provide email address and name for account.](./media/ios-11-ca-email-after-1708-03.png)
 
-![Sent to external Microsoft log in page.](./media/ios-11-ca-email-after-1708-04.png)
+![Sent to external Microsoft login page.](./media/ios-11-ca-email-after-1708-04.png)
 
 ![Providing password on Microsoft page.](./media/ios-11-ca-email-after-1708-05.png)
 
@@ -188,13 +183,13 @@ The apps details page of the Company Portal app for Android will now display the
 
 ### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
-We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.  
 
-Below you can see the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device.
+Below you can see the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device.
 
 __Previous sign in experience__
 
-![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
+![The Company Portal sign-in page, with an icon of a person in front of a graphical representation of a website. The "Sign in" button is Underneath. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![After tapping Sign in, the user enters their credentials on this page, which asks for a user's email and password, along with offering ways to resolve password failures.](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -212,9 +207,9 @@ __New sign in experience__
 
 __New sign in experience when signing in from another device__
 
-![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+![The Company Portal sign-in page, with an icon of a person in front of a graphical representation of a website. Underneath is the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-Tap the __Sign in from another device__ link.
+Tap the __Sign-in from another device__ link.
 
 ![Instructions are provided to go to the aka.ms/devicelogin page with a unique passcode from your work computer, then to use the code to sign in.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -234,7 +229,7 @@ The Company Portal app will begin signing in.
 
 ## June 2017
 
-### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
+### Company Portal app for Android now has a new end-user experience for App Protection Policies
 Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management.
 
 The user will tap on the **Access Company Content** button instead of beginning to enroll the device.
@@ -243,7 +238,7 @@ The user will tap on the **Access Company Content** button instead of beginning 
 
 The user then is taken to the Company Portal website to authorize the app for use on their device, where the Company Portal website verifies their credentials.
 
-![An image of the Company Portal website, confirming the sign in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
+![An image of the Company Portal website, confirming the sign-in.](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
 The device can still be enrolled into full management by tapping on the **action** menu.
 
@@ -264,9 +259,9 @@ This update is only visible on devices running Windows 10 Anniversary Update (bu
 
 ![An image of the Windows 10 Company Portal app landing page, with a status message in the middle in the "devices" list which is telling a user that the device they're on hasn't been set up for corporate use yet, and that the user should select the message to begin setup.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![An image of the Windows 10 Company Portal app set up page, which is warning the user that they need to add a corporate account to this device, then they can enroll it into management.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![An image of the Windows 10 Company Portal app setup page, which is warning the user that they need to add a corporate account to this device, then they can enroll it into management.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![An image of the Windows 10 Company Portal app add corporate account to this device page, which is telling the user that they will need to go to the Settings app and select "Connect" to complete enrollment. After they do this, the screen tells them that they will need to return to the Company Portal app to complete enrolling.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![An image of the Windows 10 Company Portal app adds corporate account to this device page, which is telling the user that they will need to go to the Settings app and select "Connect" to complete enrollment. After they do this, the screen tells them that they will need to return to the Company Portal app to complete enrolling.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![An image of the Windows 10 Company Portal app enroll into management screen, which shows a completed status message saying that the user's device is now enrolled and that they should tap the 'next' button to continue.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -318,7 +313,7 @@ The Managed Browser is receiving updated icons for both the Android and iOS vers
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
-### Sign-in progress indicator in Android Company Portal <!--953374-->
+### Sign in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
 
@@ -327,13 +322,13 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -341,7 +336,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 </html>
 
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
-The Windows 10 Company Portal app now provides an install progress bar on the app details page. This is supported for modern apps on devices running the Windows 10 Anniversary Update and up..
+The Windows 10 Company Portal app now provides an install progress bar on the app details page. This is supported for modern apps on devices running the Windows 10 Anniversary Update and up.
 
 __Before__
   ![An image of the previous version of the loading screen, where the status simply said 'installing.'](./media/cp_win10_install_status_before_1704.png)
@@ -389,11 +384,28 @@ These are the plans for ways we will be improving the user experience by updatin
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
+### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
+
+We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+
+We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
+
+-	UI improvements throughout the website
+-	Ability to share direct links to apps
+- Improved performance for large app catalogs
+
+You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end-user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.
+
+|Updated|Previous|
+|---|---|
+|![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
+|![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|
+
 ### User experience update for the Company Portal app for iOS <!--1412866-->
 
 We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
 
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access.
+We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. For the latest information on this update, see https://aka.ms/iOS_companyportal_update.
 
 ![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -408,5 +420,5 @@ We've added a dedicated page to the site where users can browse apps that you've
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
 * [What's new in Intune](https://docs.microsoft.com/intune/whats-new)

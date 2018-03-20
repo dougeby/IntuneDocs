@@ -40,7 +40,7 @@ The Data Warehouse provides you access to more information about your mobile env
   -  A data model using the OData standard
 
 > [!Note]
-> If you are a using hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune, you want to retrieve your data from SCCM. The Intune Data Warehouse only contains Intune data. You can use an SCCM Power BI dashboard for your custom reports. For more information, see "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)." and "[Create a Power BI report and dashboard](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)."
+> If you are a using hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune, you want to retrieve your data from SCCM. The Intune Data Warehouse only contains Intune data. You can use an SCCM Power BI dashboard for your custom reports. For more information, see "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" and "[Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
 
 
 > [!Important]  

@@ -2,11 +2,13 @@
 # required metadata
 
 title: Prevent unauthorized access to company data
-description: Prevent unauthorized access to your company data when shared outside the company network. 
+titlesuffix: Microsoft Intune
+description: Prevent unauthorized access to your company data when shared outside the company network using Microsoft Intune. 
 keywords: Office 365 O365 Azure Information Protection data protect outside network company data 
-author: arob98
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 
 --- 
-# Prevent unauthorized access to company data 
+# Prevent unauthorized access to company data using Microsoft Intune
 
 You can classify, label, and protect Office 365 documents and emails so only authorized users have access to the data. The settings are managed automatically after IT administrators or users set the rules and conditions. Alternatively, the IT team can provide recommended settings for users to follow. Administrators and users can also revoke access to data already shared with others without assistance from another authority. The result of this work is to control who opens or updates protected data, even when the data leaves the company's network. 
 
