@@ -139,17 +139,20 @@ You can monitor Windows 10 update rollouts by using a free solution in the Opera
 In the Intune console, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+ ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 For example, you can use the following values in **Add or edit OMA-URI Setting**:
 
 - **Setting Name**: Windows Analytics Commercial ID
 - **Setting Description**: Configuring commercial ID for Windows Analytics solutions
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Data Type**: String
 - **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
 
-![OMA-URI Setting - Add Row](./media/commID.png)
+![OMA-URI Setting - Edit Row](./media/commID-edit.png)
+
+> ![NOTE]
+> For more information about MS DM Server, see [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
 ## How to pause updates
 You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality will automatically expire and the device will scan Windows Updates for applicable updates. Following this scan, you can pause the updates again.
