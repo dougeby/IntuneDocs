@@ -5,8 +5,8 @@ title: Microsoft Intune VPN settings for Windows 8.1 devices
 titleSuffix:
 description: Learn about the Intune settings you can use to configure VPN connections on devices running Windows 8.1.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

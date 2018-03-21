@@ -5,8 +5,8 @@ title: Intune AirPrint settings for iOS and macOS devices
 titlesuffix: Microsoft Intune
 description: Learn how you can use Microsoft Intune to help automatically connect iOS and macOS devices to AirPrint compatible printers.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article

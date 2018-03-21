@@ -5,8 +5,8 @@ title: Remotely restart devices with Intune
 titlesuffix: Microsoft Intune
 description: Learn how to remotely restart devices using the restart device action in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
