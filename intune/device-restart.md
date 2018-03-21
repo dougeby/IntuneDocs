@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Remotely restart devices with Intune 
-titlesuffix: Microsoft Intune
-description: Learn how to remotely restart devices using the restart device action in Microsoft Intune.
+title: Restart devices with Microsoft Intune - Azure | Microsoft Docs
+description: Restart Windows and iOS devices using Microsoft Intune in the Azure portal using the Restart remote action.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,10 +47,9 @@ The **Restart** device action causes the device you choose to be restarted. The 
 ## Restart a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Devices**.
-4. In the **Devices** pane, select **All devices**.
-5. In the list of devices that you manage, select a device, select **More**, and then select the **Restart** device remote action.
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Devices** > **All devices**.
+4. In the list of devices that you manage, select a device, select **More**, and then select the **Restart** device remote action.
 
 ## Next steps
 
