@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title: Factory reset or remove company data on devices using Microsoft Intune
-titlesuffix:
-description: Learn how to remove company data on a device or factory reset the device by using Microsoft Intune.
+title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
+description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from your Azure Active Directory.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -40,11 +39,11 @@ You can remove devices from Intune that are no longer needed, being repurposed, 
 
 The **Factory reset** action restores a device to its factory default settings. A factory reset restores all company and user data and settings. The device is removed from Intune management. A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
 
-### To factory reset a device
+### Factory reset a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Devices** pane, select **All devices**.
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Devices** > **All devices**.
 4. Select the name of the device that you want to factory reset.
 5. In the pane that shows the device name, select **Factory reset**.
 6. For Windows 10 version 1709 or later, you also have the **Retain enrollment state and user account** option. 
@@ -129,7 +128,7 @@ Removing company data from an Android for Work device removes all data, apps, an
 |Email|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows.|Not supported.|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows. Removes mail accounts that were provisioned by Intune.|
 |Azure AD unjoin|No.|No.|The Azure AD record is removed.|Not applicable. On Windows 10, you can't remove company data for Azure AD-joined devices.|
 
-### To remove company data
+### Remove company data
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
