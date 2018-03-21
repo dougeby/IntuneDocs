@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,10 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 
 ## Week of March 12, 2018
+
+#### Company Portal app for Android visual updates <!--976944 -->
+
+We've updated the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. You can see the images of the new icons in the [What's new in app UI](whats-new-app-ui.md) article.
 
 ### New Windows Defender Exploit Guard settings <!-- 1631893 -->
 
