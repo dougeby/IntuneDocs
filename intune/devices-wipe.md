@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
-description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from your Azure Active Directory.
+description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -121,7 +121,7 @@ Removing company data from an Android for Work device removes all data, apps, an
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8.1 and Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creator Update) and later, Office 365 ProPlus apps aren't removed.|
+|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creators Update) and later, Office 365 ProPlus apps aren't removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|Certificates are removed and revoked.|Not supported.|Certificates are removed and revoked.|
