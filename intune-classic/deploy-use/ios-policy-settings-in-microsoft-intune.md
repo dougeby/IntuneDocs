@@ -6,7 +6,7 @@ description: Create policies that control settings and features on iOS devices t
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod:

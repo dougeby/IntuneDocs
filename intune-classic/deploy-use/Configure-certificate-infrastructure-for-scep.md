@@ -4,7 +4,7 @@ description: Infrastructure for creating and deploying SCEP certificate profiles
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/11/2018
 ms.topic: article
 ms.prod:

@@ -5,8 +5,8 @@ title: Get notified by alerts | Microsoft Docs
 description: Learn how alerts keep you in touch with what's happening in Microsoft Intune.
 keywords:
 author: nathbarn
-ms.author: angrobe
-manager: angrobe
+ms.author: dougeby
+manager: dougeby
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod:

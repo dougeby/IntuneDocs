@@ -6,7 +6,7 @@ description: Create mobile app management policies by using the Azure portal. Th
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 10/22/2016
 ms.topic: article
 ms.prod:

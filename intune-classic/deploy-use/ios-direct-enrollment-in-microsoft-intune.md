@@ -6,7 +6,7 @@ description: Use the Apple Configurator tool to directly enroll corporate-owned 
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod:

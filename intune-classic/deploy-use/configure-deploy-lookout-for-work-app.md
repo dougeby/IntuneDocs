@@ -5,7 +5,7 @@ title: Deploy Lookout for Work app
 description: Configure and deploy Lookout for Work apps for Android.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
 ms.prod:

@@ -4,9 +4,9 @@
 title: Accessibility Products and Services from Microsoft 
 description: Details about accessibility products and services from Microsoft.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:

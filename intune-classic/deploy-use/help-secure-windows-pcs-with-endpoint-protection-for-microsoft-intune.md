@@ -6,7 +6,7 @@ description: Secure your managed computers with Endpoint Protection, which provi
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
 ms.prod:
