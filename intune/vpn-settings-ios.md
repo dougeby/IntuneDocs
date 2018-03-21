@@ -5,8 +5,8 @@ title: Microsoft Intune VPN settings for devices running iOS
 titlesuffix:
 description: Learn about the Intune settings you can use to configure VPN connections on devices running iOS.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
