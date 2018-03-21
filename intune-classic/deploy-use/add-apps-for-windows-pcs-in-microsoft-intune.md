@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to add apps for Wind
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/16/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Use this topic to help you filter the Intune admin console view to 
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

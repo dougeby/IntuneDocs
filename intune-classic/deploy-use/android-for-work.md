@@ -5,7 +5,7 @@ title: About Android for Work
 description: Intune manages Android for Work to provide additional management capabilities and privacy when people use their Android devices for work.
 keywords:
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/22/2017
 ms.topic: article
 ms.prod:

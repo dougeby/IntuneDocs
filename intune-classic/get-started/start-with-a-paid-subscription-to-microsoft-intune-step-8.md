@@ -6,7 +6,7 @@ description: Set MDM authority and enable enrollment for iOS, Windows, Android, 
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
 ms.prod:

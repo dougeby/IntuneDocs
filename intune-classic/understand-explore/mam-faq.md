@@ -6,7 +6,7 @@ description: This article provides answers to some frequently asked questions on
 keywords:
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:

@@ -5,8 +5,8 @@ title: Configure iOS software update policies in Microsoft Intune
 titlesuffix:
 description: Configure update policies for iOS to force supervised iOS devices to automatically install the latest available software update.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/19/2018
 ms.topic: article
@@ -63,4 +63,4 @@ You have applied the policy to your users or devices. The devices used by the us
 
 ## Monitor iOS device installation failures
 <!-- 1352223 -->
-The **Installation Failures for iOS Devices** report is available from the **Software updates** pane. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy, attempted an update, and could not be updated. For each device, you can view a status for why the device has not been automatically updated. Healthy, up-to-date devices will not show up in the list. We define up-to-date as the latest update that the device itself can support.
+The **Installation failures for iOS devices** report is available from the **Software updates** pane. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy, attempted an update, and could not be updated. For each device, you can view a status for why the device has not been automatically updated. Healthy, up-to-date devices will not show up in the list. We define up-to-date as the latest update that the device itself can support.

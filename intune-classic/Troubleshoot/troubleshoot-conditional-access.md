@@ -6,7 +6,7 @@ description: What to do when your users fail to get access to resources through 
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:

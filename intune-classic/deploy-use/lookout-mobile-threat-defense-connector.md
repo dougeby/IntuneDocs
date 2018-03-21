@@ -6,7 +6,7 @@ description: Protect access to company resources based on device, network and ap
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:

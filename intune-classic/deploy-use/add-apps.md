@@ -6,7 +6,7 @@ description: Before you start deploying apps with Intune, take some time to fami
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
 ms.prod:

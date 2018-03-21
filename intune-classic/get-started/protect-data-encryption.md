@@ -4,9 +4,9 @@
 title: Protecting company data with data encryption 
 description: This guide can help you protect your company from data loss by forcing a passcode and data encryption using a policy on  mobile apps.
 keywords: encryption, PIN, data
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
 ms.prod:

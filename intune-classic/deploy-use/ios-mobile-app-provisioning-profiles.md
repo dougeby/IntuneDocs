@@ -6,7 +6,7 @@ description: Intune gives you the tools to proactively deploy a new provisioning
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

@@ -48,7 +48,7 @@ This topic helps you enable iOS device enrollment for devices purchased through 
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
-By the way, DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md).
+DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md). Also, macOS doesn't currrently support DEP.
 
 ## What is supervised mode?
 Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 

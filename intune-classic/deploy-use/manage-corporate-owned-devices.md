@@ -6,7 +6,7 @@ description: Enroll corporate-owned devices in a variety of ways, based on the t
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod:

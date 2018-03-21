@@ -6,7 +6,7 @@ description: Use the step-by-step instructions in this topic to create and deplo
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

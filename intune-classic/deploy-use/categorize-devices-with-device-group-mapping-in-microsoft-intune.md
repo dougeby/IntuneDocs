@@ -6,7 +6,7 @@ description: Use Microsoft Intune device group mapping to group devices into cat
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/06/2017
 ms.topic: article
 ms.prod:
