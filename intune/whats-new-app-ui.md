@@ -35,7 +35,17 @@ Learn what updates have been made to the UI for apps that your end users will se
 
 #### Company Portal for Android visual updates <!--976944 -->
 
-We've updated the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. 
+We've updated the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines.
+
+|Before|After|
+|---|---|
+|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
+|![04](./mediaandroid_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
+|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+
 
 ## Week of November 27, 2017
 
