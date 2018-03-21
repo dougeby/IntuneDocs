@@ -6,7 +6,7 @@ description: Intune can help you to secure PCs you manage with the Intune client
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

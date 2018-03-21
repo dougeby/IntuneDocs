@@ -6,7 +6,7 @@ description: Create users and groups for your Intune subscription
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
 ms.prod:

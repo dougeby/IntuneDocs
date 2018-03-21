@@ -6,7 +6,7 @@ description: Use the Connector tool to enable communication between the Intune a
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Use this topic to understand how you can use the iOS Open in featur
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

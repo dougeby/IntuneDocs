@@ -20,7 +20,7 @@ ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: angrobe
+#ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure

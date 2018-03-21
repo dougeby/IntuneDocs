@@ -4,9 +4,9 @@
 title: Intune glossary 
 description: Learn about some of the terminology in Microsoft Intune
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 #audience:
 #ms.devlang:
-#ms.reviewer: angrobe
+#ms.reviewer: dougeby
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

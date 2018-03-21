@@ -6,7 +6,7 @@ description: This topic describes the prerequisites for setting up users before 
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2016
 ms.topic: article
 ms.prod:

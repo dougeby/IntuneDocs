@@ -6,7 +6,7 @@ description: Enroll corporate-owned iOS devices by using the Apple Configurator 
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
 ms.prod:

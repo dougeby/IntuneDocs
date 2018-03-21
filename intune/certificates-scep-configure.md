@@ -22,7 +22,9 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
+
 # Configure and use SCEP certificates with Intune
+
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 This article shows how to configure your infrastructure, then create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Intune.
@@ -155,6 +157,7 @@ Configure the CA to allow the requester to enter the validity period:
 
 #### Step 3 - Configure prerequisites on the NDES server
 In this task, you:
+
 
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group

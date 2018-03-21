@@ -6,7 +6,7 @@ description:
 keywords:
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 12/22/2016
 ms.topic: article
 ms.prod:
