@@ -158,6 +158,7 @@ Configure the CA to allow the requester to enter the validity period:
 #### Step 3 - Configure prerequisites on the NDES server
 In this task, you:
 
+
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group
 - Set the SPN for the NDES Service account
