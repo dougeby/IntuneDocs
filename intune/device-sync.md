@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sync devices with Microsoft Intune - Azure | Micrososft Docs
-description: Synchronize devices registered or managed with Microsoft Intune to get the latest policies and actions. Includes the steps to synchronize using the Azure portal, and lists the error codes that can be retried.
+description: Synchronize devices that are registered or managed with Microsoft Intune to get the latest policies and actions. Includes the steps to sync by using the Azure portal, and lists the error codes that can be retried.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Sync devices to get the latest policies and actions - Intune
+# Sync devices to get the latest policies and actions with Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -43,19 +43,19 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 ## Sync a device
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter for **Intune**, and select **Microsoft Intune**. 
-3. In **Intune**, select **Devices**, and select **All devices**.
-4. From the list of devices you manage, choose a device, choose **...More**, and then select the **Sync** action.
-5. Select **Yes** to confirm.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter for **Intune**, and then select **Microsoft Intune**. 
+3. In **Intune**, select **Devices** > **All devices**.
+4. In the list of devices you manage, select a device, select **More**, and then select **Sync**.
+5. To confirm, select **Yes**.
 
 
 ## Retryable error codes
 
-When an administrator runs the **Sync** device action, iOS and Android apps that failed, and raised a retryable error code are still available to the device. However, apps that raised a non-retryable error code must wait seven days before they're available to the device.
+When an administrator runs the **Sync** device action, iOS and Android apps that failed and raised a retryable error code are still available to the device. However, apps that raised a nonretryable error code must wait seven days before they're available to the device.
 
 
-| Error Code  | Suggested Description | Retryable |
+| Error code  | Suggested description | Retryable |
 |---|---|---|
 | 2016330898 | An unknown error occurred. | No |
 | 2016330897 | Your connection to Intune timed out. Reset your connection. | Yes |
@@ -69,6 +69,6 @@ When an administrator runs the **Sync** device action, iOS and Android apps that
 | 2016330889 | The secure connection failed. Reset your connection. | Yes|
 | 2016330888 | The server trust evaluation has failed. | No|
 
-## Next step
+## Next steps
 
-Choose **Device actions** to see the status of the sync action. 
+- To see the status of the sync action, select **Device actions**. 
