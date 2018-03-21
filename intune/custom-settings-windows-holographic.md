@@ -5,9 +5,9 @@ title: Microsoft Intune custom settings for Windows Holographic for Business dev
 titlesuffix:
 description: Learn about the settings you can use in a Windows Holographic for Business custom profile.
 keywords:
-author: vhorne
-ms.author: victorh
-manager: dougeby
+author: MandiOhlinger
+ms.author: mandia
+manager: angrobe
 ms.date: 3/6/2018
 ms.article: article
 ms.prod:

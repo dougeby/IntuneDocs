@@ -5,8 +5,8 @@ title: Microsoft Intune device restriction settings for Windows Holographic for 
 titleSuffix: 
 description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows Holographic for Business.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

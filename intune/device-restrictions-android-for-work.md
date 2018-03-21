@@ -5,8 +5,8 @@ title: Microsoft Intune device restriction settings for Android for Work
 titlesuffix:
 description: Learn the Intune settings you can use to control device settings and functionality on devices running Android for Work.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
