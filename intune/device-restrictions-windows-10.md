@@ -5,8 +5,8 @@ title: Microsoft Intune device restriction settings for Windows 10
 titlesuffix:
 description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
