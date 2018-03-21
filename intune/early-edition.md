@@ -147,10 +147,6 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 ### Custom Book categories for volume-purchase program (VPP) eBooks <!-- 1488911 -->
 You will be able to create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories.
 
-#### Company Portal for Android visual updates <!--976944 -->
-
-We'll be updating the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. We'll publish images of the new icons to the [What's new in app UI](whats-new-app-ui.md) article when the app releases.
-
 ### HoloLens and Surface Hub now appear in device lists <!--1725868-->
 
 We are adding support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
