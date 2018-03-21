@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Create Windows device compliance policy in Microsoft Intune
-titleSuffix:
+title: Create Windows device compliance policy in Microsoft Intune - Azure | Microsoft Docs
 description: Create a Microsoft Intune device compliance policy for Windows devices so you can specify requirements that a device must meet to be compliant.
 keywords:
 author: msmimart
@@ -182,7 +181,7 @@ For information on how the HAS service works, see [Health Attestation CSP](https
 
 - **Minimum OS required:** - Supported on Windows 8.1, and Windows 10.
 
-Specify the major.minor.build number here. The version number must correspond to the version returned by the ```winver``` command.
+Specify the major.minor.build.CU number here. The version number must correspond to the version returned by the ```winver``` command.
 
 When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
