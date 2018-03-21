@@ -101,7 +101,7 @@ For details about email profile, see [Configure access to corporate email using 
 ### Password
 
 > [!NOTE]
-> After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
+> After a compliance or configuration policy is applied to an iOS device, users are prompted to set a passcode every 15 minutes. Users are continually prompted until a passcode is set.
 
 - **Require a password to unlock mobile devices**: Set to **Yes** to require the user to enter a password before they can access their device. iOS devices that use a password are encrypted.
 - **Simple passwords**: Set to **Yes** to let the user create a password like **1234** or **1111**.
