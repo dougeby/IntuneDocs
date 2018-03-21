@@ -6,7 +6,7 @@ description: Enable mobile threat protection rule in the device compliance polic
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2017
 ms.topic: article
 ms.prod:

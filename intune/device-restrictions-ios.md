@@ -5,8 +5,8 @@ title: Microsoft Intune device restrictions settings for iOS
 titleSuffix:
 description: Learn the Intune settings you can use to control device settings and functionality on devices running iOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article

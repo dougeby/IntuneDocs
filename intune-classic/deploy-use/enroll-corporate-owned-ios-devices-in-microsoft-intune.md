@@ -6,7 +6,7 @@ description: Enrollment of corporate-owned iOS devices by using the Apple Device
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/21/2017
 ms.topic: article
 ms.prod:

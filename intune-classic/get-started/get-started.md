@@ -5,7 +5,7 @@ title: Get Started
 description: This topic provides guidance for administrators ready to deploy Microsoft Intune to the enterprise production environment they manage.
 keywords:
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/07/2017
 ms.topic: article
 ms.prod:

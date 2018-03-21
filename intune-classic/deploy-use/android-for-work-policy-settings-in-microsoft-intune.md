@@ -7,7 +7,7 @@ description: Create policies that control settings and features on Android for W
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
 ms.prod:

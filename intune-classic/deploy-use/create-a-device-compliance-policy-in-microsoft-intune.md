@@ -6,7 +6,7 @@ description: Create a compliance policy to help secure mobile devices and PCs us
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod:

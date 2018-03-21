@@ -6,7 +6,7 @@ description: This topic describes the device compliance policy settings for Andr
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:

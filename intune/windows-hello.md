@@ -4,8 +4,8 @@ title: How to integrate Windows Hello for Business with Microsoft Intune
 titleSuffix:
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article

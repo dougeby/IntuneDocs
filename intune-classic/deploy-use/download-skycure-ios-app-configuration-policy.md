@@ -6,7 +6,7 @@ description: Download Skycure iOS app configuration policy to use with the Skycu
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

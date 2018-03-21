@@ -6,7 +6,7 @@ description: Create Skycure Mobile Threat Defense compliance policy in the Intun
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

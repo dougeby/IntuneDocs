@@ -4,9 +4,9 @@
 title: "Contact assisted phone support "
 description: Phone numbers for Microsoft Intune help.
 keywords: business hours
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod:

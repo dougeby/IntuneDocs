@@ -4,7 +4,7 @@ description: Create a bulk enrollment package for Microsoft Intune
 keywords:
 author: NathBarn
 ms.author: NathBarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/18/2017
 ms.topic: article
 ms.prod:

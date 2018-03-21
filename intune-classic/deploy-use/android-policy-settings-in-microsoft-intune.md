@@ -7,7 +7,7 @@ description: Create policies that control settings and features on Android devic
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
 ms.prod:

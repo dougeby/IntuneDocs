@@ -6,7 +6,7 @@ description: This topic helps you solve app deployment problems with Microsoft I
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 09/27/2016
 ms.topic: article
 ms.prod:

@@ -4,7 +4,7 @@ description: Create and deploy .PFX certificate profiles.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
 ms.prod:

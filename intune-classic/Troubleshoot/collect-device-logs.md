@@ -4,9 +4,9 @@
 title: Collect device logs
 description: Learn how to collect logs from your managed devices.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 02/07/2017
 ms.topic: article
 ms.prod:
