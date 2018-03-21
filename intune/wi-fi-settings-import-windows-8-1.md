@@ -5,8 +5,8 @@ title: Import Wi-Fi settings for Windows 8.1 and later
 titleSuffix: Microsoft Intune
 description: How to import Wi-Fi settings from Windows into an Intune Wi-Fi profile.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article

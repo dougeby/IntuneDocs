@@ -5,8 +5,8 @@ title: Configure Microsoft Intune Wi-Fi settings for devices running Android
 titleSuffix:
 description: Learn Intune  Wi-Fi configuration settings on devices running Android and Android for Work.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article

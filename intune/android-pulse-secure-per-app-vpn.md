@@ -5,8 +5,8 @@ title: Per-app VPN profile for Android - Pulse Secure
 titlesuffix: Microsoft Intune
 description: Learn how to create a per-app VPN profile for Android devices managed by Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article

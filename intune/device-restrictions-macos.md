@@ -5,8 +5,8 @@ title: Microsoft Intune device restriction settings for macOS
 titlesuffix:
 description: Learn the Intune settings you can use to control device settings and functionality on devices running macOS.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

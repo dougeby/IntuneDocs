@@ -5,8 +5,8 @@ title: Intune custom profile settings for Android for Work
 titlesuffix: Microsoft Intune
 description: Learn how to create Microsoft Intune custom profile settings for Android for Work devices.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article

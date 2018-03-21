@@ -4,8 +4,8 @@
 title: Device restrictions for Android for Work in Microsoft Intune - Azure | Microsoft Docs
 description: On devices running Android for Work, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
