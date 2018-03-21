@@ -4,8 +4,8 @@ title: Manage Windows Holographic with Microsoft Intune
 titleSuffix: 
 description: Learn how Microsoft Intune supports devices running Windows Holographic for Business.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 2/1/2018
 ms.topic: article

@@ -5,8 +5,8 @@ title: How to configure VPN settings in Microsoft Intune
 titleSuffix: 
 description: Learn how to use Microsoft Intune to configure virtual private network (VPN) connections on devices you manage.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article

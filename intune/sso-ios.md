@@ -5,8 +5,8 @@ title: Configure Microsoft Intune for iOS device single sign-on
 titlesuffix:
 description: Learn how to configure Microsoft Intune for iOS device single sign-on.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article

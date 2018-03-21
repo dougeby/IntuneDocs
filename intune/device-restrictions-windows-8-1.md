@@ -5,8 +5,8 @@ title: Microsoft Intune device restriction settings for devices running Windows 
 titleSuffix:
 description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows 8.1.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

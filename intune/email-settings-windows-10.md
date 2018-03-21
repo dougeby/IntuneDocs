@@ -5,8 +5,8 @@ title: Microsoft Intune email settings for devices running Windows 10
 titleSuffix:
 description: Learn about the Microsoft Intune settings you can use to configure email settings on devices running Windows 10.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

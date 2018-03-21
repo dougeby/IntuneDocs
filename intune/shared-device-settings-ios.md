@@ -5,8 +5,8 @@ title: Microsoft Intune shared device configuration settings for iOS
 titlesuffix:
 description: Learn the Microsoft Intune settings you can use to display information on the iOS device lock screen.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
