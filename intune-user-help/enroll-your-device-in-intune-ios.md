@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ searchScope:
 # optional metadata
 
 ROBOTS:  
-#audience:
+#audience: NOINDEX,NOFOLLOW
 #ms.devlang:
 ms.reviewer: esmich
 ms.suite: ems
@@ -32,8 +32,6 @@ ms.custom: intune-enduser
 # Set up access to your company resources
 
 Your company has lots of proprietary information, from email, to files, networks, and more. Your company is using Microsoft Intune to help protect that information when you access it from your iOS device. This lets them manage those resources, keep them more secure, and give you the freedom to use your preferred device to get your work done.
-
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > If you're trying to access company email in the Mail app, it's likely that you were prompted to manage your device to keep it secure. Follow the instructions below to get access to your email and other company resources on your iOS device.
@@ -50,15 +48,15 @@ Your company has lots of proprietary information, from email, to files, networks
 
 |What you see|Explanation|
 |---|---|
-|![Company Portal sign in screen, with "Sign in" button on bottom.](./media/ios-0-cp-enroll-1711.png)|Open the Company Portal app and tap **Sign in**.|
-|![Azure AD sign in prompt.](./media/ios-0a-cp-enroll-1711.png)|Enter your company email address, then tap **Next**.|
-|![Azure AD password prompt.](./media/ios-0b-cp-enroll-1711.png)|Enter your password, then tap **Sign in**.|
-|![Loading company resources splash screen.](./media/ios-1-cp-enroll-1711.png)|Wait for this to load.|
-|![Terms and conditions.](./media/ios-2-cp-enroll-1711.png)|Read and **Accept All** of the Terms and Conditions.|
-|![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-3-cp-enroll-1711.png)|Tap on **Begin** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
-|![What can my company see screen.](./media/ios-4-cp-enroll-1711.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
-|![What's next screen.](./media/ios-5-cp-enroll-1711.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Next**.|
-|![Loading screen after tapping Next on What's next.](./media/ios-6-cp-enroll-1711.png)||
+|![Company Portal sign in screen, with "Sign in" button on bottom.](./media/ios-01-cp-enroll-1802.png)|Open the Company Portal app and tap **Sign in**.|
+|![Azure AD sign in prompt.](./media/ios-02-cp-enroll-1802.png)|Enter your company email address, then tap **Next**.|
+|![Azure AD password prompt.](./media/ios-03-cp-enroll-1802.png)|Enter your password, then tap **Sign in**.|
+|![Loading company resources splash screen.](./media/ios-04-cp-enroll-1802.png)|Wait for this to load.|
+|![Terms and conditions page.](./media/ios-05-cp-enroll-1802.png)|Read and **Accept All** of the Terms and Conditions.|
+|![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-06-cp-enroll-1802.png)|Tap on **Begin** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
+|![What can my company see screen.](./media/ios-07-cp-enroll-1802.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
+|![What's next screen.](./media/ios-08-cp-enroll-1802.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Continue**.|
+|![Loading screen after tapping Next on What's next.](./media/ios-09-cp-enroll-1802.png)|Wait for this to load.|
 |![Switched out to Safari for enrolling.](./media/ios-7-cp-enroll-1711.png)|You're sent to Safari to get management information for your device.|
 |![System prompt to ask for Settings app to be opened.](./media/ios-8-cp-enroll-1711.png)|Tap **Allow** to open the Settings app to download the configuration profile. You install this to let your company manage corporate information on your device.|
 |![Profile open in settings.](./media/ios-9-cp-enroll-1711.png)|Tap **Install**.|
@@ -70,14 +68,14 @@ Your company has lots of proprietary information, from email, to files, networks
 |![Profile installed screen.](./media/ios-15-cp-enroll-1711.png)|Your profile is installed and your device's corporate information and settings are much closer to being managed.|
 |![Switched out to Safari for enrolling.](./media/ios-16-cp-enroll-1711.png)|You're sent back to Safari to finish getting management information for your device. |
 |![System prompt to open company portal.](./media/ios-17-cp-enroll-1711.png)|Tap **Open**.|
-|![Loading company resources screen.](./media/ios-18-cp-enroll-1711.png)|Wait for this to load.|
-|![Select device category in company portal app.](./media/ios-19-cp-enroll-1711.png)|Select the best category for your device. This usually has to do with who owns the device, or where it's located most of the time.|
-|![Category selected.](./media/ios-20-cp-enroll-1711.png)||
-|![Device management successful; now need to update settings.](./media/ios-21-cp-enroll-1711.png)|You've successfully gotten your device managed. There are likely still settings, like the length of your password, that your company may need you to update. Tap **Continue** to proceed.|
-|![Confirming device settings.](./media/ios-22-cp-enroll-1711.png)|Company Portal will check to see if any of your settings need to be updated.|
-|![Settings check finished, with an incorrect OS version](./media/ios-23-cp-enroll-1711.png)|Company Portal will provide instructions on how you can fix any issues with your settings. Once you finish fixing the issues, tap **Check Settings**.|
-|![Confirming device settings loading screen](./media/ios-24-cp-enroll-1711.png)|Your device will check to see if your settings are secure enough to access company resources.|
-|![Successfully enrolled and updated settings](./media/ios-25-cp-enroll-1711.png)|Congratulations! Your device is now enrolled in Intune.|
+|![Loading company resources screen.](./media/ios-21-cp-enroll-1802.png)|Wait for this to load.|
+|![Select device category in company portal app.](./media/ios-22-cp-enroll-1802.png)|Select the best category for your device. This usually has to do with who owns the device, or where it's located most of the time.|
+|![Category selected.](./media/ios-23-cp-enroll-1802.png)||
+|![Device management successful; now need to update settings.](./media/ios-24-cp-enroll-1802.png)|You've successfully gotten your device managed. There are likely still settings, like the length of your password, that your company may need you to update. Tap **Continue** to proceed.|
+|![Confirming device settings.](./media/ios-25-cp-enroll-1802.png)|Company Portal will check to see if any of your settings need to be updated.|
+|![Settings check finished, with an incorrect OS version](./media/ios-26-cp-enroll-1802.png)|Company Portal will provide instructions on how you can fix any issues with your settings. Once you finish fixing the issues, tap **Check Settings**.|
+|![Confirming device settings loading screen](./media/ios-27-cp-enroll-1802.png)|Your device will check to see if your settings are secure enough to access company resources.|
+|![Successfully enrolled and updated settings](./media/ios-28-cp-enroll-1802.png)|Congratulations! Your device is now enrolled in Intune.|
 
 > [!Note]
 > You may have a few more steps to complete before your device is fully managed. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
