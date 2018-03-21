@@ -6,7 +6,7 @@ description: Custom profile to create a list of allowed and blocked apps for KNO
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
 ms.prod:

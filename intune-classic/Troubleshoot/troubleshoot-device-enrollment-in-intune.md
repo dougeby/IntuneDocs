@@ -6,7 +6,7 @@ description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod:

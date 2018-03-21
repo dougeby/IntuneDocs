@@ -4,9 +4,9 @@
 title: Accessibility for People with Disabilities 
 description: Read accessibility information about Microsoft products.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: reference
 ms.prod:

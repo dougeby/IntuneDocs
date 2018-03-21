@@ -6,7 +6,7 @@ description: This topic describes the rules and settings that you can set in a c
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod:

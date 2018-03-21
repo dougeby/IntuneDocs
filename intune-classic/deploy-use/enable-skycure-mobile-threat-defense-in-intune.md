@@ -6,7 +6,7 @@ description: Enable Skycure Mobile Threat Defense in the Intune classic portal.
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

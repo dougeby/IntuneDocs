@@ -6,7 +6,7 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2016
 ms.topic: article
 ms.prod:

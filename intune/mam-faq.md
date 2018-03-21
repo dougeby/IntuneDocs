@@ -6,7 +6,7 @@ description: This article provides answers to some frequently asked questions on
 keywords:
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
 ms.prod:

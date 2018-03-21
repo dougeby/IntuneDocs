@@ -6,7 +6,7 @@ description: Use this topic to synchronize, then deploy app to Android for Work 
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: This topic describes how you can configure a conditional access pol
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/15/2016
 ms.topic: article
 ms.prod:

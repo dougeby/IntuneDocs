@@ -6,7 +6,7 @@ description: Learn ways that you can manage Windows PCs that run the Intune soft
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod:

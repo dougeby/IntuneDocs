@@ -6,7 +6,7 @@ description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:

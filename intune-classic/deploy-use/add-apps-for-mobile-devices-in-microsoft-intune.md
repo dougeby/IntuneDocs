@@ -6,7 +6,7 @@ description: Before you can deploy an app, you must add it to Intune. Then it’
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
