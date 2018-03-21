@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Frequently asked questions about MAM and app protection
