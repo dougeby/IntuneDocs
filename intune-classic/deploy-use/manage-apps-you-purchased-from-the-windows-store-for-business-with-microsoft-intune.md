@@ -6,7 +6,7 @@ description: Connect Microsoft Intune to the Microsoft Store for Business if you
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
 ms.prod:

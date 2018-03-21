@@ -6,7 +6,7 @@ description: Use the Intune Exchange ActiveSync policy to configure settings tha
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

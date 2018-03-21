@@ -6,8 +6,8 @@ metadata:
   title: Microsoft Intune documentation
   description: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected.
   keywords: protect, company, data, Azure, Intune, EMM, device, app, management
-  author: arob98
-  ms.author: angrobe
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page

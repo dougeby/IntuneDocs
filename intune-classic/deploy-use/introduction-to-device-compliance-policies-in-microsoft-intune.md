@@ -6,7 +6,7 @@ description: This topic explains what device compliance policies are and how the
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

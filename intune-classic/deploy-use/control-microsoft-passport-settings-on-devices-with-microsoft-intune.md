@@ -6,7 +6,7 @@ description: Learn how Intune integrates with Windows Hello for Business, an alt
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 09/27/2016
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Configure Skycure to use Azure Active Directory Single Sign On (SSO
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:

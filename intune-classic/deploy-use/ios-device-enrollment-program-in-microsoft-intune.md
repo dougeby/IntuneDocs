@@ -6,7 +6,7 @@ description: Deploy an enrollment profile that enrolls iOS devices bought throug
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
 ms.prod:
@@ -34,7 +34,8 @@ Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that 
 
 >[!NOTE]
 >DEP enrollment can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
->Also, if users enroll iOS devices (i.e. using the Company Portal app) and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
+>Additionally, if users enroll iOS devices (i.e. using the Company Portal app) and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
+> Also, macOS doesn't currrently support DEP.
 
 ## Prerequisites for enrolling iOS devices by using Apple DEP management
 

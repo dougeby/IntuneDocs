@@ -6,7 +6,7 @@ description:  Wi-Fi, VPN, and email profiles work together to help your users ga
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
 ms.prod:

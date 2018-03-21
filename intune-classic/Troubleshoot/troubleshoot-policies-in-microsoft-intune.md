@@ -6,7 +6,7 @@ description: Troubleshoot policy configuration issues.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
 ms.prod:

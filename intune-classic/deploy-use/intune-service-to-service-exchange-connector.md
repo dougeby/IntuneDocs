@@ -6,7 +6,7 @@ description: Connect Intune to Office 365 Exchange service to support Exchange A
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Exchange ActiveSync access rules to allow or block device connectio
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
