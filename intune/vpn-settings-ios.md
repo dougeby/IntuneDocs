@@ -2,12 +2,12 @@
 # required metadata
 
 title: VPN settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: Learn about the Intune settings you can use to configure VPN connections on devices running iOS.
+description: View the avialable virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/21/2018
+ms.date: 3/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

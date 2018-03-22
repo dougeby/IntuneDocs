@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create VPN device profile in Microsoft Intune - Azure | Microsoft Docs
-description: Learn how to use Microsoft Intune to configure virtual private network (VPN) connections on devices you manage.
+description: For iOS devices, view the virtual private network (VPN) connection types, create a VPN device profile in the Azure portal,and see your options to secure the VPN profile with certificates, or username and password in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
