@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/15/2018
+ms.date: 3/21/2018
 
 ms.topic: article
 ms.prod:
@@ -158,7 +158,7 @@ You can also use device compliance policies without any conditional access. When
 ## Ways to deploy device compliance policies
 You can deploy compliance policy to users in user groups, or devices in device groups. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
 
-For devices in device groups, the **Compliance policy settings** (Azure portal > Device compliance) includes a **Treat No policy assigned devices** property. This property has two values:
+For devices in device groups, the **Compliance policy settings** (Azure portal > Device compliance) includes a **Mark devices with no compliance policy assigned as** property. This property has two values:
 
 - **Compliant**: security feature off
 - **Not compliant** (default): security feature on
