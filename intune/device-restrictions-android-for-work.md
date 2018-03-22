@@ -55,8 +55,6 @@ This article lists the Microsoft Intune device restrictions settings that you ca
 
    For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in this work profile.
 
-- **Contact sharing via Bluetooth**: Enables access to work contacts from another device, such as a car, that is paired using Bluetooth. By default, this setting is not configured, and work profile contacts aren't shown. Select **Enable** to allow this sharing, and show work profile contacts. This setting applies to Android work profile devices on Android OS v6.0 and newer.
-
 ### Work profile password
 
 - **Require Work Profile Password**: Applies to Android 7.0 and above with work profile enabled. Define a passcode policy that applies only to the apps in the work profile. By default, the end user can use the two separately defined PINs, or users can choose to combine the PINs into the stronger of the two PINs.
