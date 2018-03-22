@@ -55,11 +55,11 @@ With an Intune on-premises Exchange connector, you can manage device access to y
 New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
 
 > [!NOTE]
-> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
+> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS.
 
 #### More information
 
-You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app. 
+You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app.
 
 Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
 
@@ -68,7 +68,7 @@ Network access control (NAC) integration will not work for the new AnyConnect cl
 Enhanced jailbreak detection is a new compliance setting that will improve how Intune evaluates jailbroken devices. The setting will cause the device to check-in with Intune more frequently, which will use the device’s location services and will impact battery usage.
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
-Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. 
+Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
 
 ### Expiring line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
 In the Azure portal, Intune will alert you to line-of-business apps that are about to expire. Upon uploading a new version of the line-of-business app, Intune will remove the expiration notification from the app list.
@@ -77,10 +77,10 @@ In the Azure portal, Intune will alert you to line-of-business apps that are abo
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
 
 ### New Management name column <!-- 1333586 -->
-A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
+A new column named **Management name** will be added to the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula:
 - Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
-- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
- 
+- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+
 This is an optional column in the devices blade. It will not be available by default and you can only access it via the column selector. The device name is not affected by this new column.
 
 ### New settings for Windows Defender Security Center notifications device configuration profile <!-- 1631906 -->
@@ -111,19 +111,19 @@ These settings can be found under **Device configuration** -> **Create profile**
 ### Configure the Mac application firewall <!-- 1690461 -->
 
 You will be able to configure the Mac application firewall. You can use this to control connections on a per-application basis, rather than on a per-port basis. This makes it easier to get the benefits of firewall protection, and helps prevent undesirable apps from taking control of network ports open for legitimate apps.
- 
+
 This feature can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
 
 Once you enable the Firewall setting, you can configure the firewall using two strategies:
 
 - Block all incoming connections
 
-   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections will be blocked for all apps. 
+   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections will be blocked for all apps.
 
 - Allow or block specific apps
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
- 
+
 #### More information
 
 - Block all incoming connections
@@ -138,7 +138,7 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Stealth mode
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
- 
+
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
@@ -147,16 +147,16 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 ### Custom Book categories for volume-purchase program (VPP) eBooks <!-- 1488911 -->
 You will be able to create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories.
 
-#### Company Portal for Android visual updates <!--976944 -->
+### HoloLens and Surface Hub now appear in device lists <!--1725868-->
 
-We'll be updating the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines. We'll publish images of the new icons to the [What's new in app UI](whats-new-app-ui.md) article when the app releases. 
+We are adding support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 ### Edge mobile support for Intune app protection policies <!-- 1817882 -->
 
 The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
 
 ### Use fully distinguished name as subject for SCEP certificate <!--2221763 eeready-->
-When you create a SCEP certificate profile, you enter the Subject Name. You'll be able use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD. 
+When you create a SCEP certificate profile, you enter the Subject Name. You'll be able use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
 ### iOS devices are prompted for a PIN every 15 minutes <!--1550837 eeready-->
 After a compliance or configuration policy is applied to an iOS device, users will be prompted to set a PIN every 15 minutes. Users will be continually prompted until a PIN is set.
@@ -173,11 +173,11 @@ Applies to: Android work profile devices on Android OS v6.0 and newer.
 
 ### Schedule your automatic updates <!--1805514 -->
 
-Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). You'll be able to schedule reoccurring updates, including the week, the day, and the time. 
+Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). You'll be able to schedule reoccurring updates, including the week, the day, and the time.
 
 ### Disable checks on device restart <!--1805490 -->
 
-Intune gives you control to [manage software updates](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**. 
+Intune gives you control to [manage software updates](windows-update-for-business-configure.md). The **Restart checks** property will be added and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
 
 <!-- 1802 start -->
 
@@ -187,15 +187,15 @@ On the Enrollment Overview page, you will be able to view the trend of enrollmen
 
 ### Customize your Company Portal themes with hex codes <!--1049561 -->
 
-You will be able to customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune will determine the text color that provides the highest level of contrast between the text color and the background color per [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20). You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
+You will be able to customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune will determine the text color that provides the highest level of contrast between the text color and the background color per [WCAG 2.0 standards](http://www.w3.org/TR/WCAG20). You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**.
 
-### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --> 
+### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 -->
 
-New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added: 
+New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added:
 
 - Platform Security Level: specify whether Platform Security Level is enabled at the next reboot. Virtualization-based security requires Secure Boot. Virtualization-based security can optionally be enabled with the use of direct memory access (DMA) protections. DMA protections require hardware support and will only be enabled on correctly configured devices.
-- Virtualization Based Security: specify whether virtualization-based security is enabled at the next reboot. 
-- Windows Defender Credential Guard: turn on Credential Guard with virtualization-based security to help protect credentials at the next reboot when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Options available include **Disabled**, **Enabled with UEFI lock**, **Enabled without lock**, and **Not configured**. 
+- Virtualization Based Security: specify whether virtualization-based security is enabled at the next reboot.
+- Windows Defender Credential Guard: turn on Credential Guard with virtualization-based security to help protect credentials at the next reboot when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Options available include **Disabled**, **Enabled with UEFI lock**, **Enabled without lock**, and **Not configured**.
   - The "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option.
 
   - The "Enabled with UEFI lock" option ensures that Credential Guard cannot be disabled with registry key or by using Group Policy. To disable Credential Guard after using this setting, you must set the Group Policy to "Disabled" and remove the security functionality from each computer, with a physically present user, in order to clear configuration persisted in UEFI. As long as the UEFI configuration persists Credential Guard is enabled.
@@ -212,7 +212,7 @@ You will be to enable security settings on Windows 10 devices using the new Loca
 
 ### New printer settings for education profiles <!-- 1308900 -->
 
-For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**. 
+For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
 
 ### iOS app provisioning configuration <!-- 1581650 -->
 You will be able to assign iOS app provisioning profiles to prevent your apps from expiring by including or excluding security groups.
@@ -269,5 +269,3 @@ There are no active notices at this time.
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
-
-
