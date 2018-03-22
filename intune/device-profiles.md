@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -127,6 +127,8 @@ This feature supports: Windows 10 only
 ## Endpoint protection profile
 [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) configures BitLocker and Windows Defender settings for Windows 10 devices.
 
+To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
 This feature supports: Windows 10 only
 
 ## Windows Information Protection profile
@@ -137,7 +139,7 @@ This feature supports: Windows 10 only
 ## Custom profile
 [Custom settings](custom-settings-configure.md) includes the ability to assign device settings that are not built-into Intune. For example, on Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator. 
 
-This feature supports: 
+This feature supports:
 
 - Android
 - iOS
