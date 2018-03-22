@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: How to configure VPN settings in Microsoft Intune
-titleSuffix: 
+title: Create VPN device profile in Microsoft Intune - Azure | Microsoft Docs
 description: Learn how to use Microsoft Intune to configure virtual private network (VPN) connections on devices you manage.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,13 +24,13 @@ ms.custom: intune-azure
 
 ---
 
-# How to configure VPN settings in Microsoft Intune
+# Configure VPN settings in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
-For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks and can connect with minimal effort.
+For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings to connect to the corporate network. Then you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks, and can connect with minimal effort.
 
 ## VPN connection types
 
@@ -52,41 +51,36 @@ You can create VPN profiles using the following connection types:
 |PPTP|No|No|No|No|No|Yes|
 |Custom|No|Yes|Yes|No|No|No|
 
-
 > [!IMPORTANT]
 > Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](app-management.md) article to help you assign the app by using Intune.  
 
-Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](custom-vpn-profiles-create.md).     
+Learn how to create custom VPN profiles by using URI settings in [Create custom VPN profiles](custom-vpn-profiles-create.md).
 
 ## Create a device profile containing VPN settings
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Device configuration**.
-2. On the **Device configuration** pane, choose **Manage** > **Profiles**.
-3. On the profiles pane, choose **Create profile**.
-4. On the **Create profile** pane, enter a **Name** and **Description** for the VPN profile.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Device configuration** > **Profiles** > **Create profile**.
+4. Enter a **Name** and **Description** for the VPN profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for VPN device settings:
-	- **Android**
-	- **Android for Work**
-	- **iOS**
-	- **macOS**
-	- **Windows Phone 8.1**
-	- **Windows 8.1 and later**
-	- **Windows 10 and later**
+  - **Android**
+  - **Android for Work**
+  - **iOS**
+  - **macOS**
+  - **Windows Phone 8.1**
+  - **Windows 8.1 and later**
+  - **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **VPN**.
-7. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
-	- [Android and Android for Work settings](vpn-settings-android.md)
-	- [iOS settings](vpn-settings-ios.md)
-	- [macOS settings](vpn-settings-macos.md)
-	- [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
-	- [Windows 8.1 settings](vpn-settings-windows-8-1.md)
-	- [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
-8. When you're done, go back to the **Create profile** pane, and select **Create**.
+7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
+  - [Android and Android for Work settings](vpn-settings-android.md)
+  - [iOS settings](vpn-settings-ios.md)
+  - [macOS settings](vpn-settings-macos.md)
+  - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
+  - [Windows 8.1 settings](vpn-settings-windows-8-1.md)
+  - [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
+8. When you're done, **Create** your profile
 
-The profile is created and appears on the profiles list pane.
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
-
+The profile is created and appears on the profiles list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
 ## Methods of securing VPN profiles
 
@@ -94,7 +88,7 @@ VPN profiles can use a number of different connection types and protocols from d
 
 ### Certificates
 
-When you create the VPN profile, you choose a SCEP or PKCS certificate profile that you previously created in Intune. This profile is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is assigned to the computer that authenticates the VPN connection, typically, the VPN server.
+When you create the VPN profile, you choose a SCEP or PKCS certificate profile that you previously created in Intune. This profile is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you create to allow the user’s device to connect. The trusted certificate is assigned to the computer that authenticates the VPN connection, typically, the VPN server.
 
 For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Microsoft Intune](certificates-configure.md).
 
