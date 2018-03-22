@@ -80,8 +80,12 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
     ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
 
-2. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
-  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/device-enrollment-program-enroll-ios/image02.png)
+2. Grant permission to Microsoft to send user and device information to Apple by selecting **I agree**.
+  
+  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
+
+3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+
 
 ### Step 2. Use your key to download a token from Apple.
 
