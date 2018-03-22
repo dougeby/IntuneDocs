@@ -36,8 +36,6 @@ Some app stores give you the ability to purchase multiple licenses for an app or
 
 Microsoft Intune helps you manage apps and books that you purchased through such a program. You import license information from the store, and track how many licenses you have used. This process helps to ensure that you don't install more copies of the app or book than you own.
 
-You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [How to create and edit categories](apps-add.md#how-to-create-and-edit-categories-for-apps).
-
 ## Which types of apps and books can you manage?
 
 With Intune, you can manage apps and books that you purchased in volume from the iOS store, and manage apps that you purchased from the Microsoft Store for Business. To discover how to manage licensed apps from each store, choose one of the following topics:
