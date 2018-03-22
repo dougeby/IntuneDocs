@@ -5,7 +5,7 @@ description: Key technology decisions to enable BYOD and protect corporate data 
 keywords:
 author: dougeby
 ms.author: pfetty
-manager: angrobe
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod:

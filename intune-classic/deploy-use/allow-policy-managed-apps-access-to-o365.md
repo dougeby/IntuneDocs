@@ -6,7 +6,7 @@ description: Understand the concepts of how MAM CA can help with controlling wha
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: "Change your MDM authority to Configuration Manager (hybrid MDM)"
 description: "Learn how to change the MDM authority from Intune standalone to Configuration Manager (hybrid MDM)."
 keywords:
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Solve problems while using Microsoft Intune endpoint protection.
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod:

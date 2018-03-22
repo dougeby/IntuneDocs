@@ -6,7 +6,7 @@ description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

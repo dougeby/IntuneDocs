@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune settings for the iOS Classroom app 
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
+titleSuffix: Microsoft Intune
+description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices.
 keywords:
 author: barlanmsft
 ms.author: barlan
@@ -66,7 +66,6 @@ You can import information into SDS by using one of the following methods:
 
 - [CSV files](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - Manually export and compile comma-separated value (.csv) files
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - An SIS provider that simplifies syncing with Azure AD
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - An identity management solution that syncs directly with Azure AD
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - A CSV format that you can export and convert to sync with Azure AD
 
 ### Find out more

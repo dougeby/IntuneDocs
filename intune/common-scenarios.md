@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Common ways to use Intune
-description: Lists six of the most common tasks that Intune helps with
+title: Common ways to use Microsoft Intune
+description: Learn about six of the most common tasks that Microsoft Intune can help you manage.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,14 +19,14 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
 ---
 
-# Common ways to use Intune
+# Common ways to use Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

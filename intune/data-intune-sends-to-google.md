@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data Intune sends to Google
-titlesuffix: "Azure portal"
+titleSuffix: Microsoft Intune
 description: List of data that Intune sends to Google.
 keywords:
 author: ErikjeMS

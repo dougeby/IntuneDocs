@@ -6,7 +6,7 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2017
 ms.topic: article
 ms.prod:
@@ -27,6 +27,9 @@ ms.custom: intune-classic
 ---
 
 #  iOS mobile app protection policy settings
+
+> [!IMPORTANT]
+> The content on this page is now largely out of date, as Intune app protection policies have migrated entirely to the Azure Portal. Learn more about [Intune app protection policies for iOS in the Azure portal](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

@@ -6,7 +6,7 @@ description: You can enable policy settings and deploy apps that will be applied
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
 ms.prod:

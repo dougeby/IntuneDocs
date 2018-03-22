@@ -6,7 +6,7 @@ description: Enable Lookout mobile threat protection in the Intune admin console
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod:

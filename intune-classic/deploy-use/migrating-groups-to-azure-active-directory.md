@@ -4,7 +4,7 @@
 title: Migrating to Azure Active Directory groups
 description: How your groups will be migrated from Intune to Azure AD
 keywords:
-author: arob98
+author: dougeby
 ms.author: angrobe
 manager: angerobe
 ms.date: 12/22/2016

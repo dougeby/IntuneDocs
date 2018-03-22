@@ -6,7 +6,7 @@ description: The device enrollment manager (DEM) account can manage large number
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Intune supplies a range of built-in general settings that you can c
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:

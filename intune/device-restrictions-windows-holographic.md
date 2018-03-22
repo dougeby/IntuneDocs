@@ -2,12 +2,12 @@
 # required metadata
 
 title: Microsoft Intune device restriction settings for Windows Holographic for Business
-titlesuffix: "Azure portal"
+titleSuffix: 
 description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows Holographic for Business.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
 ms.prod:

@@ -6,7 +6,7 @@ description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod:

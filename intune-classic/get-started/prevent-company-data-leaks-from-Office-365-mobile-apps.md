@@ -6,7 +6,7 @@ description: Use Intune to secure your organization’s data with mobile app man
 keywords:
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
 ms.prod:

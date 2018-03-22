@@ -2,12 +2,13 @@
 # required metadata
 
 title: Configure device compliance and app management policies during an Intune migration
-description: This article provides the necessary steps to configure device compliance and app management policies during an Intune migration.
+titlesuffix: Microsoft Intune
+description: This article provides the necessary steps to configure device compliance and app management policies during a Microsoft Intune migration.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# Configure device compliance and app management policies
+# Configure device compliance and app management policies when migrating to Microsoft Intune
 
 The main goal when migrating to Intune is to have all devices enrolled in Intune and compliant with its policies. Device policies not only help you to manage corporate-owned single-user devices, but also personal (BYOD), and shared devices such as kiosks, point-of-sales machines, tablets shared by multiple students in a classroom, or user-less devices (iOS only).
 

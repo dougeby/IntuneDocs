@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enable Google Play Protect compliance with Intune
-titleSuffix: Azure portal
+title: Enable Google Play Protect compliance with Microsoft Intune
+titleSuffix: 
 description: Learn how to create a compliance policy for Android devices to enable Google Play Protect.
 keywords:
 author: Erikre

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data Intune sends to Apple
-titlesuffix: "Azure portal"
+titleSuffix: Microsoft Intune
 description: List of data that Intune sends to Apple.
 keywords:
 author: ErikjeMS
@@ -36,7 +36,7 @@ When any of the following Apple services are enabled on a device, Microsoft Intu
 
 - [Apple Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md)
 - [Apple MDM Push certificate (APNS)](apple-mdm-push-certificate-get.md)
-- [Apple School Manager (ASM)](https://docs.microsoft.com/en-us/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync.md)
+- [Apple School Manager (ASM)](https://docs.microsoft.com/schooldatasync/apple-school-manager-integration-with-intune-for-education-and-school-data-sync)
 - [Apple Volume Purchase Program (VPP)](vpp-apps-ios.md)
 
 Before Microsoft Intune can establish a connection, you must create an Apple account for each of the Apple services.

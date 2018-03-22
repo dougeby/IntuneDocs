@@ -6,7 +6,7 @@ description: Troubleshoot common client setup problems.
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/22/2017
 ms.topic: article
 ms.prod:

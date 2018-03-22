@@ -6,7 +6,7 @@ description: Complete optional configuration tasks to enhance mobile device mana
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic

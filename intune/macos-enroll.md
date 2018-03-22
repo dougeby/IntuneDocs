@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,9 +59,20 @@ To block macOS devices from enrollment, see [Set device type restrictions](enrol
 
 ## Tell your users how to enroll their devices to access company resources
 
-Tell your end users to go to the [Company Portal website](http://portal.manage.microsoft.com) and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Tell your end users to go to the [Company Portal website](https://portal.manage.microsoft.com) and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 For information about other end-user tasks, see these articles:
 
 - [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
 - [Using your macOS device with Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## Enroll virtual macOS machines for testing
+
+> [!NOTE]
+> macOS virtual machines are only supported for testing. You should not use macOS virtual machines as production devices for your end users. 
+
+You can enroll macOS virtual machines for testing using either Parallels Desktop or VMware Fusion. 
+
+For Parallels Desktop, you need to set the hardware type and the serial number for the virtual machines so that Intune can recognize them. Follow Parallels' instructions for [setting hardware type](http://kb.parallels.com/123594) and [serial number](http://kb.parallels.com/123455) to set up the necessary settings for testing. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
+
+For VMware Fusion, you need to [edit the .vmx file](https://kb.vmware.com/s/article/1014782) to set the virtual machine's hardware model and serial number. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 

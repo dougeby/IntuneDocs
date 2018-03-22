@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune basic setup
+title: Microsoft Intune basic setup
 description: This article provides the necessary steps to set up Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Basic setup
 
-After you assess your environment, it’s time to set up Intune.
+After you assess your environment, it’s time to set up Microsoft Intune.
 
 ## External dependencies for an Intune deployment
 
