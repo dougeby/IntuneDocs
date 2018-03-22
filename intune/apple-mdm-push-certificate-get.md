@@ -37,14 +37,14 @@ ms.custom: intune-azure
 In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in the [Azure portal](https://portal.azure.com).
 
 ###Step 1. Grant Microsoft permission to send user and device information to Apple
-Choose **I agree.** to give Microsoft permission to send data to Apple.
+Select **I agree.** to give Microsoft permission to send data to Apple.
 
-###tep 2. Download the Intune certificate signing request required to create an Apple MDM push certificate
+![The Configure MDM Push Certificate screen with MDM Push not set up.](./media/create-mdm-push-certificate.png)
+
+###Step 2. Download the Intune certificate signing request required to create an Apple MDM push certificate
 Select **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-  ![The Configure MDM Push Certificate screen with MDM Push not set up.](./media/create-mdm-push-certificate.png)
-
-###Step 3. Create an Apple MDM push certificate
+  ###Step 3. Create an Apple MDM push certificate
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID, and then click **Create a Certificate**. Select **Choose File** and browse to the certificate signing request file, and then choose **Upload**. On the Confirmation page, choose **Download** to the download the certificate (.pem)  file, and save the file locally.
 
 > [!NOTE]
