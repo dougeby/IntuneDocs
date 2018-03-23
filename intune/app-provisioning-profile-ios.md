@@ -3,12 +3,12 @@
 
 title: iOS app provisioning profiles in Microsoft Intune
 titlesuffix:
-description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry."
+description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Use iOS mobile provisioning profiles in Intune to prevent your apps from expiring
+# Use iOS app provisioning profiles to prevent your apps from expiring
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,6 +41,7 @@ Apple iOS line-of-business apps that are assigned to iPhones and iPads are built
 The enterprise signing certificate that you use to sign apps typically lasts for three years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 After the certificate expires, you must sign the app again with a new certificate and embed a new provisioning profile with the key of the new certificate.
 
+As the admin, you can include and exclude security groups to assign iOS app provisioning configuration. For example, you can assign an iOS app provisioning configuration to All Users, but exclude an executive group.
 
 ## How to create an iOS mobile app provisioning profile
 
