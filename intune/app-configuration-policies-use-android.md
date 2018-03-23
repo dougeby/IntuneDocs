@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings when users run an Android for Work app. You do not assign these policies directly to users and devices. Instead, you associate a policy with an app, and then assign the app. The policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to supply settings to Android for Work apps. The app developer must expose Android managed app configuration settings in order to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
@@ -56,16 +56,27 @@ Use app configuration policies in Microsoft Intune to supply settings when users
 
 ## Use the configuration designer
 
-You can use the configuration designer for apps on devices that are enrolled or not enrolled in Intune. The designer lets you configure specific configuration keys and values. You must also specify the data type for each value.
+You can use the configuration designer for Android apps that support configuration. Configuration will apply on devices that are enrolled in Intune. The designer lets you configure specific configuration values for the settings than an app exposes.
 
+Select **Add** to select the list of configuration settings that you want to specify for the app.  
 For each key and value in the configuration, set:
 
-  - **Configuration key**  
-     The key that uniquely identifies the specific setting configuration.
   - **Value type**  
-    The data type of the configuration value. Types include Integer, Real, String, or Boolean.
+    The data type of the configuration value. For String value types, you can optionally choose a variable or certificate profile as the value type.
   - **Configuration value**  
-    The value for the configuration. 
+    The value for the configuration. If you select variable or certificate for the value type, you can choose from a list of variables or certificate profiles in the configuration value dropdown.  If you choose a certificate, the certificate alias of the cert deployed to the device will be populated at runtime.
+    
+### Supported variables for configuration values
+
+You can choose the following options if you choose variable as the value type:
+- User Principal Name — for example, **John@contoso.com**
+- Mail — for example, **John@contoso.com**
+- Partian UPN — for example, **John**
+- Account ID — for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- Device ID — for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- User ID — for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- User Name —for example, **John Doe**
+
 
 ## Enter the JSON editor
 
