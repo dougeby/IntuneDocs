@@ -254,10 +254,6 @@ Using Azure Active Directory (Azure AD), you will be able to restrict access to 
 ### Redirecting macOS users to the new Company Portal app <!--1380728-->   
 When an end user logs into the Company Portal website to enroll their macOS device, they will be directed to download the new Company Portal app for macOS to complete the process. This occurs for macOS devices using OS X El Capitan 10.11 or above. 
 
-<!-- the following are present prior to 1709 -->
-
-### Improved error message for when a user reaches the maximum number of devices allowed to enroll <!-- 1270370 -->
-Instead of a generic error message, end users with Android devices see a friendly, actionable error message: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin."
 
 
 
