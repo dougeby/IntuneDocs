@@ -104,7 +104,9 @@ For apps utilizing Xamarin.Forms or other UI frameworks, we have provided a tool
 
 2.  Set the build action of the `remapping-config.json` file that's included with the Nuget package to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper NuGet package.
 
-3.  Perform the rest of the steps in [Intune App SDK for Android Developer Guide](app-sdk-android.md) that are applicable to your app.
+3.  Add a call to Xamarin.Forms.Forms.Init(Context, Bundle) in your MAMApplication's OnMAMCreate function because, with Intune management, your application can be started while in the background.
+
+4.  Perform the rest of the steps in [Intune App SDK for Android Developer Guide](app-sdk-android.md) that are applicable to your app.
 
 > [!NOTE]
 > The build action of remapping-config.json can sometimes be reset when updating the Microsoft.Intune.MAM.Remapper.Tasks package which would cause your builds to fail.
@@ -112,3 +114,5 @@ For apps utilizing Xamarin.Forms or other UI frameworks, we have provided a tool
 ## Next steps
 
 You have completed the basic steps of setting your app up for Intune management. Now you can follow the steps included in the integration guides for each of platforms listed above. We have provided three sample applications, one for Xamarin.Forms with Android and iOS sub projects, another for iOS and another for Android. You can find them here: **TODO**
+
+If you are experiencing issues using this product, please create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
