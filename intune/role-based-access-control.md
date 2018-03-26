@@ -65,7 +65,8 @@ The following roles are built into Intune and you can assign them to groups with
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Cannot make changes to Intune.
-- **Application Manager**: Manages mobile and managed applications, and can read device information.
+- **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
+- **Intune Role Administrator**: Manages custom Intune roles and add assignments for built-in Intune roles. It is the only Intune role that can assign permissions to Administrators.
 - **School Administrator**: Manages Windows 10 devices in [Intune for Education](introduction-intune-education.md), and can take the following actions: 
 
 |Permission|Operation|
