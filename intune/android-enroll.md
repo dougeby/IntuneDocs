@@ -64,12 +64,11 @@ If you haven’t already, prepare for mobile device management by  [setting the 
     
    a. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal), select **Device enrollment** > **Android enrollment** > **Managed Google Play**.
    ![Android for Work enrollment screen](./media/android-work-bind.png)
-    
+
    b. Select **I agree** to grant Microsoft permission Microsoft to [send user and device information to Apple](data-intune-sends-to-google.md). 
    
    c. Select **Launch Google to connect now.** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
   
-
    d. **Sign in to Google**<br>
    On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
