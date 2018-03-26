@@ -1420,7 +1420,8 @@ Below is the complete list of allowed style attributes, the UI elements they con
 | Accent color | PIN box border when highlighted <br> Hyperlinks |accent_color | Color |
 | App logo | Large icon that appears in the Intune app PIN screen | logo_image | Drawable |
 
-## Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional)
+## Working with APP-WE service enrollment, SDK-integrated Android LOB app, and ADAL SSO (optional)
+<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 The following is guidance for requiring user prompt on app launch for an automatic APP-WE service enrollment (we call this **default enrollment** in this section), requiring Intune app protection policies to allow only Intune protected users to use your SDK-integrated Android LOB app. It also covers how to enable SSO for your SDK-integrated Android LOB app. This is **not** supported for store apps which can be used by non-Intune users.
 
