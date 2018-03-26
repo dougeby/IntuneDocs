@@ -61,15 +61,19 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
 2. **Configure Android for Work binding**<br>
-    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
-
-   a. On the **Intune** pane, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Managed Google Play – Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+    
+   a. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal), select **Device enrollment** > **Android enrollment** > **Managed Google Play**.
    ![Android for Work enrollment screen](./media/android-work-bind.png)
+    
+   b. Select **I agree** to grant Microsoft permission Microsoft to [send user and device information to Apple](data-intune-sends-to-google.md). 
+   
+   c. Select **Launch Google to connect now.** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+  
 
-   b. **Sign in to Google**<br>
+   d. **Sign in to Google**<br>
    On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
-   c. **Provide organization details**<br>
+   e. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.
 
 ## Specify Android for Work enrollment settings
