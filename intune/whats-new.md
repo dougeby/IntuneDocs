@@ -62,10 +62,6 @@ You can customize theme color in the Company Portal apps using hex codes. When y
 
 Android Enterprise (formerly known as Android for Work) supports including and excluding groups, but does not support the pre-created **All Users** and **All Devices** built-in groups. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
 
-
-
-
-### Device enrollment
 ### Device management
 
 #### Enhanced jailbreak detection <!-- 846515 -->
