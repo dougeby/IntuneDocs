@@ -156,20 +156,12 @@ To configure the CA to allow the requester to specify the validity period:
 #### Step 3 - Configure prerequisites on the NDES server
 In this task you:
 
-<<<<<<< HEAD
-
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group
 - Set the SPN for the NDES Service account
-=======
--   Add NDES to a Windows Server and configure IIS to support NDES
->>>>>>> parent of 3365d47d4... Merge branch 'release-intune-1803' into master
-
--   Add the NDES Service account to the IIS_IUSR group
-
--   Set the SPN for the NDES Service account
-
-
+- Add NDES to a Windows Server and configure IIS to support NDES
+- Add the NDES Service account to the IIS_IUSR group
+- Set the SPN for the NDES Service account
 
 
    1.  On the server that hosts NDES, log on as an **Enterprise Administrator**, and then use the [Add Roles and Features Wizard](https://technet.microsoft.com/library/hh831809.aspx) to install NDES:
