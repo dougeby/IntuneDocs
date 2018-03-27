@@ -1,13 +1,12 @@
 ---
 # required metadata
-title: Known issues in Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Known issues in Microsoft Intune - Azure | Microsoft Docs
 description: Read about known issues in Microsoft Intune.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,11 +31,11 @@ ms.custom: intune-azure
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Use this topic to learn about any known issues in Microsoft Intune.
+Use this article to learn about any known issues in Microsoft Intune.
 
 If you want to report a bug that is not listed here, [open a support request](get-support.md).
 
-If you want to request a new feature for Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
+If you want to request a new feature for Intune, consider filing a report on [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
 ## Migration
 
@@ -50,12 +49,12 @@ When you migrate from Intune to the Azure portal, you might see a new group name
 
 ### Status blades for migrated policies do not work
 
-You cannot view status information for policies that were migrated from the classic portal in the Azure portal. However, you can continue to view reports for these policies in the classic portal. To view status information for migrated configuration policies, recreate them in the Azure portal.
+You cannot view status information for policies that were migrated from the Azure classic portal in the Azure portal. However, you can continue to view reports for these policies in the classic portal. To view status information for migrated configuration policies, recreate them in the Azure portal.
 
 ## Apps
 
 ### iOS volume-purchased apps only available in default Intune tenant language
-iOS volume-purchased apps are displayed, and can be assigned only for the same country code as your Intune account. Intune only sync apps from the same iTunes locale as the Intune tenant account country code. For example, if you purchase an app which is only available in the U.S. store, but your Intune account is German, Intune will not show that app.
+iOS volume-purchased apps are displayed, and can be assigned only for the same country code as your Intune account. Intune only syncs apps from the same iTunes locale as the Intune tenant account country code. For example, if you purchase an app only available in a U.S. store, but your Intune account is German, Intune does not show that app.
 
 ### Multiple copies of the same iOS volume-purchase program are uploaded
 Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.
@@ -70,10 +69,10 @@ Do not click the **Upload** button multiple times for the same VPP token. This w
 For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
 If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will soon be changed to be more accurate.
 
-### Cisco AnyConnect VPN client support
+### Cisco AnyConnect and Cisco Legacy AnyConnect VPN client support - iOS
 
-The latest release of the Cisco AnyConnect VPN client (4.0.07072) is not currently compatible with Intune.
-A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
+On iOS devices, network access control (NAC) integration does not work with the new Cisco AnyConnect client. We are working with Cisco to provide NAC integration in a future Intune release.
+
 
 ### Using the numeric password type with macOS Sierra devices
 

@@ -4,8 +4,8 @@
 title: Device restrictions for Android for Work in Microsoft Intune - Azure | Microsoft Docs
 description: On devices running Android for Work, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -54,6 +54,8 @@ This article lists the Microsoft Intune device restrictions settings that you ca
    Prevents end users from manually adding or removing accounts in the work profile.
 
    For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in this work profile.
+
+- **Contact sharing via Bluetooth**: Enables access to work contacts from another device, such as a car, that is paired using Bluetooth. By default, this setting is not configured, and work profile contacts aren't shown. Select **Enable** to allow this sharing, and show work profile contacts. This setting applies to Android work profile devices on Android OS v6.0 and newer.
 
 ### Work profile password
 
