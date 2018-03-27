@@ -29,22 +29,186 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md).
+Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
 
 > [!Note]
 > For information on new functionality in hybrid mobile device management (MDM), check out our [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
 <!-- Common categories:  
+  ### App management
   ### Device enrollment
   ### Device management
-  ### App management
   ### Device configuration
-  ### Role-based access control
   ### Intune apps
   ### Monitor and troubleshoot
-
+  ### Role-based access control
+  
 -->   
+
+## Week of March 26, 2018
+
+### App management
+
+#### Alerts for expiring iOS line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
+
+In the Azure portal, Intune will alert you to iOS line-of-business apps that are about to expire. Upon uploading a new version of the iOS line-of-business app, Intune removes the expiration notification from the app list. This expiration notification will only be active for newly uploaded iOS line-of-business apps. 
+
+#### Customize your Company Portal themes with hex codes <!--1049561 -->
+
+You can customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune determines the text color that provides the highest level of contrast between the text color and the background color. You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
+
+### Including and excluding app assignment based on groups for Android Enterprise <!-- 1813081 -->
+
+Android Enterprise (formerly known as Android for Work) supports including and excluding groups, but does not support the pre-created **All Users** and **All Devices** built-in groups. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
+
+
+
+
+### Device enrollment
+### Device management
+
+#### Enhanced jailbreak detection <!-- 846515 -->
+
+Enhanced jailbreak detection is a new compliance setting that improves how Intune evaluates jailbroken devices. The setting causes the device to check-in with Intune more frequently, which uses the device’s location services and impacts battery usage.
+
+#### Reset passwords for Android O devices <!-- 1238299 -->
+You can now reset the passwords for enrolled Android O devices. When you send a "Reset password" request to an Android O device, it sets a new device unlock password or a managed profile challenge to the current user. The password or challenge is sent based on whether the device has a profile owner or a device owner, and immediately takes effect.
+
+#### Targeting compliance policies to devices in device groups <!--1307012 -->
+
+You can target compliance policies to users in user groups. With this update, you can target compliance policies to devices in device groups. Devices targeted as part of device groups will not receive any compliance actions.
+
+#### New Management name column <!-- 1333586 -->
+ A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
+- Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
+- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
+ 
+This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
+
+#### Support for new Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
+
+New VPN profiles created for Cisco AnyConnect for iOS will now work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
+
+> [!NOTE]
+> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
+
+##### More information
+
+You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app.
+
+Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
+
+#### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
+After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
+
+#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
+
+We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
+
+#### Schedule your automatic updates <!--1805514 -->
+Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
+
+#### Use fully distinguished name as subject for SCEP certificate <!--2221763 -->
+When you create a SCEP certificate profile, you enter the Subject Name. With this update, you can use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD. 
+
+### Device configuration
+
+#### Enable Bluetooth contact sharing - Android for Work <!--1098983 -->
+By default, Android prevents contacts in the work profile from syncing with Bluetooth devices. As a result, work profile contacts are not displayed on caller ID for Bluetooth devices.
+
+With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+- Contact sharing via Bluetooth
+
+The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
+
+#### Local device security option settings <!-- 1251887 -->
+You can now enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
+
+#### Configure Gatekeeper to control macOS app download source <!-- 1690459 -->
+
+You can configure Gatekeeper to protect your devices from apps by controlling where the apps can be downloaded from. You can configure the following download sources: **Mac App Store**, **Mac App Store and identified developers**, or **Anywhere**. You can configure whether users can install an app using control-click to override these Gatekeeper controls.
+
+These settings can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
+
+#### Configure the Mac application firewall <!-- 1690461 -->
+
+You can configure the Mac application firewall. You can use this to control connections on a per-application basis, rather than on a per-port basis. This makes it easier to get the benefits of firewall protection, and helps prevent undesirable apps from taking control of network ports open for legitimate apps.
+ 
+This feature can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
+
+Once you enable the Firewall setting, you can configure the firewall using two strategies:
+
+- Block all incoming connections
+
+   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections are blocked for all apps. 
+
+- Allow or block specific apps
+
+   You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
+ 
+##### More information
+
+- Block all incoming connections
+
+   This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
+   - configd - implements DHCP and other network configuration services
+   - mDNSResponder - implements Bonjour
+   - racoon -  implements IPSec
+
+   To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
+
+- Stealth mode
+
+   Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
+ 
+#### Disable checks on device restart <!--1805490 -->
+Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
+
+
+
+### Intune apps
+
+#### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
+You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+
+#### New Windows Defender Application Guard settings <!-- 1631890 -->
+
+- **Enable graphics acceleration**: Administrators can enable a virtual graphics processor for Windows Defender Application Guard. This setting allows the CPU to offload graphics rendering to the vGPU. This can improve performance when working with graphics intense websites or watching video within the container.
+
+- **SaveFilestoHost**: Administrators can enable files to pass from Microsoft Edge running in the container to the host file system. Turning this on allows users to download files from Microsoft Edge in the container to the host file system.
+
+#### MAM protection policies targeted based on management state <!-- 1665993 -->
+You can target MAM policies based on the management state of the device:
+- **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
+- **Android devices** - You can target unmanaged devices, Intune managed devices, and Intune managed Android Enterprise Profiles (formerly Android for Work).
+For more information, see [Target app protection policies based on device management state](app-protection-policies.md#target-app-protection-policies-based-on-device-management-state).
+
+   
+
+
+### Monitor and troubleshoot
+### Role-based access control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
