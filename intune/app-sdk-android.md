@@ -7,7 +7,7 @@ keywords: SDK
 author: erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/18/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -514,22 +514,22 @@ The Intune SDK team will require your app's Application ID (Client ID). This can
 
 ### Conditional Access
 
-Conditional Access (CA) is an Azure Active Directory [feature](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal) which can be used to control access to AAD resources. [Intune administrators can define CA rules](https://docs.microsoft.com/en-us/intune/conditional-access) which allow resource access only from devices or apps which are managed by Intune. In order to ensure that your app is able to access resources when appropriate, it is necessary to follow the steps below. If your app does not acquire any AAD access tokens, or access only resources which cannot be CA-protected, you may skip these steps.
+Conditional Access (CA) is an Azure Active Directory [feature](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) which can be used to control access to AAD resources. [Intune administrators can define CA rules](https://docs.microsoft.com/intune/conditional-access) which allow resource access only from devices or apps which are managed by Intune. In order to ensure that your app is able to access resources when appropriate, it is necessary to follow the steps below. If your app does not acquire any AAD access tokens, or access only resources which cannot be CA-protected, you may skip these steps.
 
 1. Follow [ADAL integration guidelines](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    See especially Step 11 for Broker usage.
 
-2. [Register your application with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). The redirect URI can be found in the ADAL integration guidelines above.
+2. [Register your application with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). The redirect URI can be found in the ADAL integration guidelines above.
 
 3. Set the manifest meta-data parameters per [Common ADAL configurations](#common-adal-configurations), item 2, above.
 
-4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
+4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
 * That sign-in to your app prompts for installation and enrollment of the Intune Company Portal
 * That after enrollment, sign-in to your app completes successfully.
 
-5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based conditional access](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
+5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based conditional access](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
 
-6. Once your app has been added to the approved list, validate by [Configuring app-based CA](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) and ensuring that sign-in to your app completes successfully.
+6. Once your app has been added to the approved list, validate by [Configuring app-based CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) and ensuring that sign-in to your app completes successfully.
 
 ## App protection policy without device enrollment
 
