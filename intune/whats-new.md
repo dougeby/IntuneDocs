@@ -182,36 +182,7 @@ You can create custom eBook categories and then assign VPP eBooks to those custo
 You can target MAM policies based on the management state of the device:
 - **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
 - **Android devices** - You can target unmanaged devices, Intune managed devices, and Intune managed Android Enterprise Profiles (formerly Android for Work).
-For more information, see [Target app protection policies based on device management state](app-protection-policies.md#target-app-protection-policies-based-on-device-management-state).
-
-   
-
-
-### Monitor and troubleshoot
-### Role-based access control
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
 
 ## Week of March 12, 2018
