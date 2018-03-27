@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Get started with device compliance policies - Intune
+# Get started with device compliance policies in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

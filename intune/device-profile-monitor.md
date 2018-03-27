@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: How to monitor device profiles with Intune
-titlesuffix: Microsoft Intune
-description: Learn how to monitor assigned Microsoft Intune device profiles.
+title: See device profiles with Microsoft Intune - Azure | Microsoft Docs
+description: View the profile details on devices, and see which devices have Microsoft Intune device profiles assigned or deployed.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,17 +26,15 @@ ms.custom: intune-azure
 
 ---
 
-# How to monitor device profiles in Microsoft Intune
+# Monitor device profiles in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-You can monitor the assignment progress of Intune device profiles in two ways:
+You can monitor the assignment progress of Intune device profiles in two ways.
 
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Device configuration**.
-2. On the **Device configuration** blade under the **Manage** section, choose **Profiles**.
-2. In the list of profiles blade, choose the profile you want to manage, and then, either:
-	- On the <*profile name*> **Device configuration profile** blade, choose **Overview** to see basic information about the profile and its assignments.
-	- On the <*profile name*> **Device configuration profile** blade, choose **Assignments** to see more detailed information about the profile and its assignments.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Device configuration** > **Profiles**.
+4. In the the list of profiles, select the profile that you want to manage. Then, do one of the following:
+	- In the <*profile name*> **Device configuration profile** pane, to see basic information about the profile and its assignments, select **Overview**.
+	- In the <*profile name*> **Device configuration profile** pane, to see more detailed information about the profile and its assignments, select **Assignments**.

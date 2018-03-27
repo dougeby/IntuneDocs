@@ -28,6 +28,9 @@ ms.custom: intune-azure
 
 Compliance reports help admins to analyze the compliance posture of devices in their organization, and quickly troubleshoot compliance-related issues encountered by users inside their organization. You can view information about the overall compliance state of devices, compliance state for an individual setting, compliance state for an individual policy and drill down into individual devices to view specific settings and policies that affect the device.
 
+> [!NOTE]
+> We’re introducing some security enhancements, based on your feedback, in the Intune service in March. Depending on how your compliance policies are configured, you may need to take action to avoid loss of email access for your end users. For details, see [Upcoming security enhancements](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
 ## Before you begin
 
 Follow these steps to find the **Intune Device compliance dashboard** in the Azure portal:

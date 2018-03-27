@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create iOS device compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create a Microsoft Intune device compliance policy for iOS devices to enter an email account, check jailborken devices, check the  minimum and maximum operating system, and set the password restrictions, including password length and device inactivity.
+description: Create a Microsoft Intune device compliance policy for iOS devices to enter an email account, check jailbroken devices, check the minimum and maximum operating system, and set the password restrictions, including password length and device inactivity.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
