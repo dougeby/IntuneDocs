@@ -62,6 +62,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 - **Collect logs** - Collect logs for events that occur within an Application Guard browsing session.
 - **Retain user-generated browser data** - Allow user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session to be saved.
 - **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session by enabling access to a virtual graphics processing unit.
+- **Download files to host file system** - Allow users to download files from the virtualized browser onto the host operating system.
 
 ## Windows Defender Firewall
 
