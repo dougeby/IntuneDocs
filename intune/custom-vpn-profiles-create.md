@@ -1,5 +1,7 @@
 ---
 # required metadata
+redirect_url: /intune/custom-settings-configure/
+redirect_document_id: TRUE
 
 title: How to create custom VPN profiles with Microsoft Intune
 titleSuffix:
@@ -16,7 +18,7 @@ ms.technology:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX
 #audience:
 #ms.devlang:
 ms.suite: ems
@@ -62,7 +64,3 @@ This type of policy can be useful when the standard Intune VPN policies don't ha
 
 The profile is created and appears on the profiles list pane.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
-
-
-
-
