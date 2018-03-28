@@ -67,11 +67,7 @@ Android Enterprise (formerly known as Android for Work) supports including and e
 
 #### New security enhancements in the Intune service  <!-- 1637539 -->   
 
-We’re introducing a toggle in Intune on Azure that Intune standalone customers can use to treat devices without any policy assigned as **Compliant** (security feature off) or treat these devices as **Not compliant** (security feature on). This toggle is set to turn on the feature by default, but you can turn it off in the console if you choose to. If you use Conditional Access, we recommend you do not turn off this feature and leave the toggle set to **Not compliant**.  This feature is being introduced in the March update and will roll out completely over the next few days.
-
-**Hybrid customers**: We will not be introducing this change for hybrid customers at this time. You do not need to take any action. However, we highly encourage you to ensure that your devices have at least one compliance policy assigned to them.
-
-##### How does this feature affect me?
+We’ve introduced a toggle in Intune on Azure that Intune standalone customers can use to treat devices without any policy assigned as **Compliant** (security feature off) or treat these devices as **Not compliant** (security feature on). This will ensure access to resources only after device compliance has been evaluated.
 
 This feature will affect you differently depending on whether you already have compliance policies assigned or not.
 
@@ -80,14 +76,7 @@ This feature will affect you differently depending on whether you already have c
 
 If you use compliance policies with Conditional Access (CA), and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
 
-##### What do I need to do to prepare for this change?  
-
-If you use Conditional Access, we recommend you have this feature turned on and leave the toggle set to **Not compliant**. To avoid loss of email access for your end users, ensure that all your devices have at least one compliance policy assigned to them. Here are some changes we’re making to help:   
-
-- We’ve introduced a report called **Devices without compliance policy** in the Intune portal, which you can use to identify all the devices in your environment that do not have a compliance policy assigned.
-- There is an **All Users** option to make it easy to assign a compliance policy to all users.
-
-If you choose to leave the toggle turned off, no further action is required on your part.
+Please note that although the default toggle status will be displayed in the UI immediately when the Intune service is updated for the March service, this toggle status will not be enforced right away. Any changes you make to the toggle will not impact device compliance until we flight your tenant to have a working toggle. We’ll inform you via the Message center when we finish flighting your tenant. This could take up to a few days after your Intune service is updated for March.
 
 **Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
 
