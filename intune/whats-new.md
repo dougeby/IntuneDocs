@@ -82,19 +82,6 @@ You can target compliance policies to users in user groups. With this update, yo
  
 This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
 
-#### Support for new Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
-
-New VPN profiles created for Cisco AnyConnect for iOS will now work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
-
-> [!NOTE]
-> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS. 
-
-##### More information
-
-You need to create a new iOS Cisco AnyConnect VPN profile to support the new app because the new Cisco AnyConnect app and Cisco Legacy AnyConnect app are separate apps. If you are managing the AnyConnect client in your environment, you need to deploy the new Cisco AnyConnect app as well. To complete an upgrade, you also need to delete your Cisco Legacy AnyConnect VPN profile and remove the Cisco Legacy AnyConnect app.
-
-Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
-
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
