@@ -98,6 +98,8 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 
 Once the above policy is configured, users will be forced to use the Intune Managed Browser to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they will see a notice that the Intune Managed Browser must be used instead.
 
+The Managed Browser does not support classic Conditional Access policies. For more information, see [Migrate classic policies in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
+
 ##  Single Sign-on to Azure AD-connected web apps in the Intune Managed Browser
 
 The Intune Managed Browser application on iOS and Android can now take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of the Intune Managed Browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
