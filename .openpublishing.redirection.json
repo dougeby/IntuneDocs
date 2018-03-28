@@ -1471,7 +1471,7 @@
 		{
 			"source_path": "intune/configure-devices/create-custom-vpn-profiles.md",
 			"redirect_url": "/intune/custom-settings-configure",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/custom-android-for-work.md",
