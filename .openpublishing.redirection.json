@@ -1586,7 +1586,7 @@
 		{
 			"source_path": "intune/configure-devices/how-to-configure-custom-settings.md",
 			"redirect_url": "/intune/custom-settings-configure",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/how-to-configure-device-features.md",
