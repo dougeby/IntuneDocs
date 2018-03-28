@@ -1,8 +1,5 @@
 ---
 # required metadata
-redirect_url: /intune/custom-settings-configure/
-redirect_document_id: TRUE
-
 title: How to create custom VPN profiles with Microsoft Intune
 titleSuffix:
 description: Use custom configurations to create VPN profiles in Intune.

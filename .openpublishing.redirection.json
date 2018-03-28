@@ -2,6 +2,11 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/custom-vpn-profiles-create.md",
+			"redirect_url": "/intune/custom-settings-configure",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/byod-enable.md",
 			"redirect_url": "/intune/byod-technology-decisions",
 			"redirect_document_id": true

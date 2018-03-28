@@ -53,7 +53,6 @@ The following device restriction settings are supported on devices running Windo
 
 ## Edge Browser
 
-- 	**Microsoft Edge browser** - Allow the use of the Edge web browser on the device.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
 - 	**Pop-ups** - Blocks pop-up windows in the browser (applies to Windows 10 desktop only).
 - 	**Search suggestions** - Lets your search engine suggest sites as you type search phrases.
