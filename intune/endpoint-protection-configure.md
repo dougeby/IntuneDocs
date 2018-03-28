@@ -47,3 +47,6 @@ This article shows you how to create a profile. Then, select your device platfor
 8. When you're done, go back to the **Create profile** page, and click **Create**.
 
 The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
+
+## Next step
+To assign a profile to groups, see [assign device profiles](device-profile-assign.md).
