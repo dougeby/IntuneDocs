@@ -1470,7 +1470,7 @@
 		},
 		{
 			"source_path": "intune/configure-devices/create-custom-vpn-profiles.md",
-			"redirect_url": "/intune/custom-vpn-profiles-create",
+			"redirect_url": "/intune/custom-settings-configure",
 			"redirect_document_id": true
 		},
 		{
