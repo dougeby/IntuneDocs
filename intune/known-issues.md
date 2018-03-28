@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,9 +69,8 @@ Do not click the **Upload** button multiple times for the same VPP token. This w
 For devices not enrolled with Intune, you can only specify a primary domain in the **Corporate Identify** field in the settings for a Windows Information Protection policy.
 If you add additional domains (using **Advanced settings** > **Network perimeter** > **Add a protected domain**), you cannot save the policy. The error message you see will soon be changed to be more accurate.
 
-### Cisco AnyConnect and Cisco Legacy AnyConnect VPN client support - iOS
-
-On iOS devices, network access control (NAC) integration does not work with the new Cisco AnyConnect client. We are working with Cisco to provide NAC integration in a future Intune release.
+### Cisco AnyConnect VPN client support
+The latest release of the Cisco AnyConnect VPN client (4.0.07072) is not currently compatible with Intune. A future Intune update will include compatibility with this VPN client version. Until then, we recommend that you do not update your Cisco AnyConnect VPN client, and continue to use the existing version.
 
 
 ### Using the numeric password type with macOS Sierra devices
