@@ -71,12 +71,12 @@ We’ve introduced a toggle in Intune on Azure that Intune standalone customers 
 
 This feature affects you differently depending on whether you already have compliance policies assigned or not.
 
-- If you are a new or existing tenant and do not have any compliance policies assigned to your devices, the toggle is automatically set to **Compliant**. The feature is off as a default setting in the console. There is no end user impact.
-- If you are an existing tenant and you have any devices with a compliance policy assigned to them, the toggle is automatically set to **Not compliant**. The feature is on as a default setting, as the March update rolls out.
+- If you are a new or existing account and do not have any compliance policies assigned to your devices, the toggle is automatically set to **Compliant**. The feature is off as a default setting in the console. There is no end user impact.
+- If you are an existing account and you have any devices with a compliance policy assigned to them, the toggle is automatically set to **Not compliant**. The feature is on as a default setting, as the March update rolls out.
 
 If you use compliance policies with Conditional Access (CA) and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
 
-Please note that although the default toggle status is displayed in the UI immediately with the Intune service March updates, this toggle status is not enforced right away. Any changes you make to the toggle will not impact device compliance until we flight your tenant to have a working toggle. We’ll inform you via the Message center when we finish flighting your tenant. This could take up to a few days after your Intune service is updated for March.
+Please note that although the default toggle status is displayed in the UI immediately with the Intune service March updates, this toggle status is not enforced right away. Any changes you make to the toggle will not impact device compliance until we flight your account to have a working toggle. We’ll inform you via the Message center when we finish flighting your account. This could take up to a few days after your Intune service is updated for March.
 
 **Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
 
