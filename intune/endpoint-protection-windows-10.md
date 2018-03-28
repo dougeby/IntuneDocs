@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Endpoint protection settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-titlesuffix:
-description: Learn the Intune settings you can use to control endpoint protection settings like BitLocker on Windows 10 devices.
+title: Add endpoint protection on Windows 10 in Microsoft Intune - Azure | Microsoft Docs
+description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Create endpoint protection settings for Windows 10 and later in Microsoft Intune
+# Endpoint protection settings for Windows 10 (and later) in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,19 +36,6 @@ Use the information in this article to learn how to create endpoint protection p
 
 > [!Note]
 > These settings are not supported on the Home and Professional editions of Windows 10.
-
-## Create an endpoint protection profile
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device configuration** > **Profiles** > **Create profile**.
-4. Enter a **Name** and **Description** for the device features profile.
-5. From the **Platform** drop-down list, select **Windows 10 and later**.
-6. From the **Profile type** drop-down list, choose **Endpoint protection**.
-7. Configure the settings you want. Use the details in this article to help you understand what each setting does. When you are finished, choose **OK**.
-8. Go back to **Create profile**, and choose **Create**.
-
-The profile is created and appears on the profiles list.
 
 ## Windows Defender Application Guard
 
@@ -350,4 +336,4 @@ Use these options to configure the local security settings on Windows 10 devices
 
 ## Next steps
 
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
