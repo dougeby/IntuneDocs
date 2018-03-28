@@ -39,6 +39,8 @@ When you exclude groups from an app assignment, you must exclude only user or on
 >When setting a group assignment for an app, the **Not Applicable** type is deprecated and replaced with exclude group functionality. 
 >
 >Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommended that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.  
+>
+>Android Enterprise (formerly known as Android for Work) supports including and excluding groups, but does not support the pre-created **All Users** and **All Devices** built-in groups.
 
 ## Including and excluding groups when assigning apps 
 To assign an app to groups using the include and exclude assignment:
