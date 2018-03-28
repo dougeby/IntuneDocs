@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/22/2018
+ms.date: 3/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,17 +42,12 @@ Depending on the settings you choose, not all values in the following list are c
 - **Connection type**: Select the VPN connection type from the following list of vendors:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
-  - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**
   - **Custom VPN**
-
-    > [!NOTE]
-    > - **Cisco Legacy AnyConnect VPN** profiles are for the [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x, and older versions
-    > - **Cisco AnyConnect VPN** profiles are for the [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x, and newer versions
 
 - **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 
