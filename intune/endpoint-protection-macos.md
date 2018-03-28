@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add endpoint protection on macOS in Microsoft Intune - Azure | Microsoft Docs
-description: On macOS devices, use the gatekeeper go determine where apps can be installed, including the mac app store. Also enable or configure a firewall allow specific apps, blocks specifics apps, use stealth mode, and even block certain types of incoming connections using Microsoft Intune.
+description: On macOS devices, use the gatekeeper to determine where apps can be installed, including the mac app store. Also enable or configure a firewall allow specific apps, blocks specifics apps, use stealth mode, and even block certain types of incoming connections using Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
