@@ -6168,7 +6168,6 @@
 02/01/2018  08:05 PM             3,695 custom-settings-windows-10.md
 02/02/2018  09:19 AM             4,090 custom-settings-windows-holographic.md
 02/01/2018  08:05 PM             2,106 custom-settings-windows-phone-8-1.md
-02/01/2018  08:05 PM             2,600 custom-vpn-profiles-create.md
 02/01/2018  08:05 PM             3,949 data-leak-prevention.md
 02/01/2018  08:05 PM             2,734 data-outside-protect.md
 02/01/2018  08:05 PM             7,136 data-transfer-between-apps-manage-ios.md
