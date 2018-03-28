@@ -62,7 +62,23 @@ You can customize theme color in the Company Portal apps using hex codes. When y
 
 Android Enterprise (formerly known as Android for Work) supports including and excluding groups, but does not support the pre-created **All Users** and **All Devices** built-in groups. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
 
+
 ### Device management
+
+#### New security enhancements in the Intune service  <!-- 1637539 -->   
+
+We’ve introduced a toggle in Intune on Azure that Intune standalone customers can use to treat devices without any policy assigned as **Compliant** (security feature off) or treat these devices as **Not compliant** (security feature on). This will ensure access to resources only after device compliance has been evaluated.
+
+This feature affects you differently depending on whether you already have compliance policies assigned or not.
+
+- If you are a new or existing tenant and do not have any compliance policies assigned to your devices, the toggle is automatically set to **Compliant**. The feature is off as a default setting in the console. There is no end user impact.
+- If you are an existing tenant and you have any devices with a compliance policy assigned to them, the toggle is automatically set to **Not compliant**. The feature is on as a default setting, as the March update rolls out.
+
+If you use compliance policies with Conditional Access (CA) and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
+
+Please note that although the default toggle status is displayed in the UI immediately with the Intune service March updates, this toggle status is not enforced right away. Any changes you make to the toggle will not impact device compliance until we flight your tenant to have a working toggle. We’ll inform you via the Message center when we finish flighting your tenant. This could take up to a few days after your Intune service is updated for March.
+
+**Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
 
 #### Enhanced jailbreak detection <!-- 846515 -->
 
@@ -897,31 +913,6 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 **Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
-### Updated: New security enhancements in the Intune service  <!-- 1637539 -->   
-
-We’re rolling out security enhancements in the Intune service. As a part of this change, with the March update to the Intune service, you will have a toggle in the Intune on Azure console to turn this security feature on or off. When the feature is on, devices with no compliance policy assigned to them will be marked as ‘not compliant’.
-
-**Hybrid customers**: We will not be introducing this change for hybrid customers at this time. You do not need to take any action. However, we highly encourage you to ensure that your devices have at least one compliance policy assigned to them.
-
-#### How does this affect me?
-
-When we start rolling this change out in the March update, this feature will affect you differently depending on whether you already have compliance policies assigned or not.
-
-- If you are a new or existing tenant and do not have any compliance policies assigned to your devices, the toggle will be automatically set to **compliant**. The feature will be off as a default setting in the console. There will be no end user impact.
-- If you are an existing tenant and you have any devices with a compliance policy assigned to them, the toggle will automatically be set to ‘not compliant’. The feature will be on as a default setting, when the March update rolls out.
-
-If you use compliance policies with Conditional Access (CA), and have the feature turned on, any devices without at least one compliance policy assigned to them will now be blocked by CA. End users associated with these devices, who were previously allowed access to email, will lose their access unless you assign at least one compliance policy to all devices.   
-
-#### What do I need to do to prepare for this change?  
-
-If you use Conditional Access, we recommend you have this feature turned on and leave the toggle set to **Not compliant**. To avoid loss of email access for your end users, please ensure that all your devices have at least one compliance policy assigned to them. Here are some changes we’re making to help you do this:   
-
-- We’ve introduced a report called **Devices without compliance policy** in the Intune portal, which you can use to identify all the devices in your environment that do not have a compliance policy assigned.
-- There is an **All Users** option to make it easy to assign a compliance policy to all users.
-
-If you choose to leave the toggle turned off, no further action is required on your part.
-
-**Additional Information**: [https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
 
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
