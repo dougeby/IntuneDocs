@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Endpoint protection settings on Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: On Windows 10 devices, use endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
+title: Add endpoint protection on Windows 10 in Microsoft Intune - Azure | Microsoft Docs
+description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Create endpoint protection settings for Windows 10 and later in Microsoft Intune
+# Endpoint protection settings for Windows 10 (and later) in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

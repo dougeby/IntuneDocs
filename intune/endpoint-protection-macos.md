@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure endpoint protection on macOS in Microsoft Intune - Azure | Microsoft Docs
-description: On macOS devices, use the gatekeeper go determine where apps can be installed, including the mac app store. Also enable a firewall allow specific apps, blocks specifics apps, use stealth mode, and even block certain types of incoming connections using Microsoft Intune.
+title: Add endpoint protection on macOS in Microsoft Intune - Azure | Microsoft Docs
+description: On macOS devices, use the gatekeeper go determine where apps can be installed, including the mac app store. Also enable or configure a firewall allow specific apps, blocks specifics apps, use stealth mode, and even block certain types of incoming connections using Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -39,11 +39,11 @@ This article shows you the endpoint protection settings that you can configure f
 
 ## Firewall
 
-Use this to control connections on a per-application basis, rather than on a per-port basis. This makes it easier to get the benefits of firewall protection, and helps prevent undesirable apps from taking control of network ports open for legitimate apps.
+Use the firewall to control connections per-application, rather than per-port. Using per-application settings makes it easier to get the benefits of firewall protection. It also helps prevent undesirable apps from taking control of network ports that are open for legitimate apps.
 
 - **Use firewall to protect devices from unauthorized network access by controlling connections on a per-app basis.**
   - **Firewall**: Enable Firewall to configure how incoming connections are handled in your environment.
-  - **Incoming connections**: Block all incoming connections except those required for basic Internet services, such as DHCP, Bonjour, and IPSec. This also blocks all sharing services, such as File Sharing and Screen Sharing. If you using sharing services, then keep this setting as **Not configured**.
+  - **Incoming connections**: Block all incoming connections except the connections required for basic Internet services, such as DHCP, Bonjour, and IPSec. This feature also blocks all sharing services, such as File Sharing and Screen Sharing. If you're using sharing services, then keep this setting as **Not configured**.
 
 - **Allow or block incoming connections for specific apps**
   - **Apps allowed**: Select the apps that are explicitly allowed to receive incoming connections.
