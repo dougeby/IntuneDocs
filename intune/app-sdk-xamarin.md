@@ -51,10 +51,9 @@ The Microsoft Intune App SDK Xamarin Bindings let you incorporate Intune app pro
 
 ### Intune Mobile Application Management scenarios
 
-* Intune APP-WE (without enrollment)
+* Intune APP-WE (without device enrollment)
 * Intune MDM-enrolled devices
 * Third-party EMM-enrolled devices
-* Unmanaged devices (not enrolled with any MDM)
 
 Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intune app protection policies on both Intune mobile device management (MDM) enrolled devices and unenrolled devices.
 
@@ -115,4 +114,4 @@ For apps utilizing Xamarin.Forms or other UI frameworks, we have provided a tool
 
 You have completed the basic steps of setting your app up for Intune management. Now you can follow the steps included in the integration guides for each of platforms listed above. We have provided three sample applications, one for Xamarin.Forms with Android and iOS sub projects, another for iOS and another for Android. You can find them here: **TODO**
 
-If you are experiencing issues using this product, please create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
+If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
