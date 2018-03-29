@@ -51,7 +51,7 @@ Your company has lots of proprietary information, from email, to files, networks
 |What you see|Explanation|
 |---|---|
 |![Company Portal sign in screen, with "Sign in" button on bottom.](./media/ios-0-cp-enroll-1711.png)|Open the Company Portal app and tap **Sign in**.|
-|![Azure AD sign in prompt.](./media/ios-0a-cp-enroll-1711.png)|Enter your company email address, then tap **Next**.|
+|![Azure AD sign in prompt.](./media/ios-0a-cp-enroll-1711.png)|Enter your company sign-in name, then tap **Next**.|
 |![Azure AD password prompt.](./media/ios-0b-cp-enroll-1711.png)|Enter your password, then tap **Sign in**.|
 |![Loading company resources splash screen.](./media/ios-1-cp-enroll-1711.png)|Wait for this to load.|
 |![Terms and conditions.](./media/ios-2-cp-enroll-1711.png)|Read and **Accept All** of the Terms and Conditions.|
