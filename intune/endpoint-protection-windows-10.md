@@ -7,7 +7,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,8 +46,8 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 - **External content on enterprise sites** - Block content from unapproved websites from loading.
 - **Print from virtual browser** - Allow PDF, XPS, local, and/or network printers to print content from the virtual browser.
 - **Collect logs** - Collect logs for events that occur within an Application Guard browsing session.
-- **Retain user-generated browser data** - Allow user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session to be saved.
-- **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session by enabling access to a virtual graphics processing unit.
+- **Retain user-generated browser data** - Save user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session.
+- **Graphics acceleration** - Load graphics-intensive websites faster when working within the Application Guard virtual browsing session. Websites load faster by enabling access to a virtual graphics processing unit.
 - **Download files to host file system** - Allow users to download files from the virtualized browser onto the host operating system.
 
 ## Windows Defender Firewall
@@ -178,7 +178,7 @@ Block Office apps from taking the following actions:
 
 #### Rules to prevent script threats
 
-Block these to help prevent against script threats:
+Block the following to help prevent against script threats:
 
 - **Obfuscated js/vbs/ps/macro code**
 - **js/vbs executing payload downloaded from Internet (no exceptions)**
@@ -188,12 +188,15 @@ Block these to help prevent against script threats:
 
 #### Rules to prevent email threats
 
-Block this to help prevent email threats:
+Block the following to help prevent email threats:
 
 - **Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)**
 
 #### Rules to protect against ransomware
 - **Advanced ransomware protection**
+
+> [!TIP]
+> [Reduce attack surfaces with Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) provides more details on these rules.
 
 #### Attack Surface Reduction exceptions
 
@@ -233,7 +236,7 @@ The Windows Defender Security Center app operates as a separate app or process f
 
 #### Windows Defender Security Center app and notifications
 
-Block end user access to the various areas of the Windows Defender Security Center app. Hiding a section will also block related notifications.
+Block end-user access to the various areas of the Windows Defender Security Center app. Hiding a section will also block related notifications.
 
 - **Virus and threat protection**
 - **Device performance and health**
