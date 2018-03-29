@@ -69,18 +69,6 @@ Customers will be able to deploy required line-of-business Windows 10 apps to in
 ### Company Portal enrollment improved <!-- 1874230-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
 
-### New settings for Windows Defender Security Center notifications device configuration profile <!-- 1631906 -->
-
-Three new settings will be added to the Windows Defender Security Center (WDSC) notifications device configuration profile.
-
-Administrators will be able to:
-
-- Hide the Identity pillar
-- Hide the Hardware pillar and its sub-settings
-- Hide the Ransomware pillar (Onedrive for Business file restoration)
-
-When you hide these pillars from the WDSC app, end users will not be able to configure these settings, and all notifications associated with the hidden components will not be generated.
-
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
 We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
