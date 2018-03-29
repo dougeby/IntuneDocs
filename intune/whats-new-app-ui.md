@@ -39,7 +39,7 @@ We've improved the language in the Company Portal for Windows 10 to be more user
 |Before|After|
 |---|---|
 |![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
-|![02](./media/windows_view_policy_issues_before_1803.png|![02](./media/windows_view_policy_issues_after_1803.png)
+|![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
 ## Week of March 12, 2018
 
