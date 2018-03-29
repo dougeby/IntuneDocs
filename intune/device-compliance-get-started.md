@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 3/28/2018
 
 ms.topic: article
 ms.prod:
@@ -175,6 +175,8 @@ For devices in device groups, the **Compliance policy settings** (Azure portal >
   - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant.
 
 - **Compliance status validity period (days)**: Enter the time period that devices report the status for all received compliance policies. Devices that don't return the status within this time period are treated as noncompliant. The default value is 30 days.
+
+All devices have a **Default Device Compliance Policy** (Azure portal > Device compliance > Policy compliance). Use this default policy to monitor these settings.
 
 To learn the time it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
