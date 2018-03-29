@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/29/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Intune apps
   ### Monitor and troubleshoot
   ### Role-based access control
-  
+
 -->   
 
 ## Week of March 26, 2018
@@ -52,11 +52,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 #### Alerts for expiring iOS line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
 
-In the Azure portal, Intune will alert you to iOS line-of-business apps that are about to expire. Upon uploading a new version of the iOS line-of-business app, Intune removes the expiration notification from the app list. This expiration notification will only be active for newly uploaded iOS line-of-business apps. 
+In the Azure portal, Intune will alert you to iOS line-of-business apps that are about to expire. Upon uploading a new version of the iOS line-of-business app, Intune removes the expiration notification from the app list. This expiration notification will only be active for newly uploaded iOS line-of-business apps.
 
 #### Customize your Company Portal themes with hex codes <!--1049561 -->
 
-You can customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune determines the text color that provides the highest level of contrast between the text color and the background color. You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**. 
+You can customize theme color in the Company Portal apps using hex codes. When you enter your hex code, Intune determines the text color that provides the highest level of contrast between the text color and the background color. You can preview both the text color and your company logo against the color in **Mobile apps** > **Company Portal**.
 
 ### Including and excluding app assignment based on groups for Android Enterprise <!-- 1813081 -->
 
@@ -92,10 +92,10 @@ You can now reset the passwords for enrolled Android O devices. When you send a 
 You can target compliance policies to users in user groups. With this update, you can target compliance policies to devices in device groups. Devices targeted as part of device groups will not receive any compliance actions.
 
 #### New Management name column <!-- 1333586 -->
- A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula: 
+ A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula:
 - Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
-- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime> 
- 
+- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+
 This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
 
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
@@ -109,7 +109,7 @@ We added support for showing Intune-enrolled HoloLens and Surface Hub devices to
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
 
 #### Use fully distinguished name as subject for SCEP certificate <!--2221763 -->
-When you create a SCEP certificate profile, you enter the Subject Name. With this update, you can use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD. 
+When you create a SCEP certificate profile, you enter the Subject Name. With this update, you can use the fully distinguished name as the subject. For **Subject Name**,  select **Custom**, and then enter `CN={{OnPrem_Distinguished_Name}}`. To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
 ### Device configuration
 
@@ -133,19 +133,19 @@ These settings can be found under **Device configuration** -> **Create profile**
 #### Configure the Mac application firewall <!-- 1690461 -->
 
 You can configure the Mac application firewall. You can use this to control connections on a per-application basis, rather than on a per-port basis. This makes it easier to get the benefits of firewall protection, and helps prevent undesirable apps from taking control of network ports open for legitimate apps.
- 
+
 This feature can be found under **Device configuration** -> **Create profile** -> **macOS** -> **Endpoint protection**.
 
 Once you enable the Firewall setting, you can configure the firewall using two strategies:
 
 - Block all incoming connections
 
-   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections are blocked for all apps. 
+   You can block all incoming connections for the targeted devices. If you choose to do this, incoming connections are blocked for all apps.
 
 - Allow or block specific apps
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
- 
+
 ##### More information
 
 - Block all incoming connections
@@ -160,7 +160,7 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Stealth mode
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
- 
+
 #### Disable checks on device restart <!--1805490 -->
 Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
 
@@ -187,11 +187,14 @@ You can target MAM policies based on the management state of the device:
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
+#### Improvements to the language in the Company Portal app for Windows <!---1683758--->
+We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
+
 
 ## Week of March 12, 2018
 
-### Azure Active Directory web sites can require the Intune Managed Browser app and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 --> 
- 
+### Azure Active Directory web sites can require the Intune Managed Browser app and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->
+
 Using Azure Active Directory (Azure AD), you can now restrict access to web sites on mobile devices to the Intune Managed Browser app. In the Managed Browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
 
 #### Company Portal app for Android visual updates <!--976944 -->
