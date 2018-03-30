@@ -164,6 +164,15 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 #### Disable checks on device restart <!--1805490 -->
 Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
 
+### Intune administration
+
+#### Workflow Updates to Intune Administration UI <!-- 1740475 -->
+
+Intune has updated the admin experience to provide greater transparency to when we send device and user information to integrate with 3rd party services such as Android or Apple device management. Scenarios that have added a consent to share data include:
+- When you enable Android for Work
+- When you enable and upload Apple MDM push certificates
+- When enabling any of the Apple services such as Device Enrollment Program, School Manager, or Volume Purchasing Program
+For more information on Microsoft’s GDPR compliance, see [Trust Center - Assess your GDPR compliance](https://aka.ms/trust_center_info).
 
 
 ### Intune apps
@@ -881,21 +890,6 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
-
-### Coming Soon: Workflow Updates to Intune Administration UI
-
-Intune is updating the admin experience in the March service release. You don’t need to take any action, but we wanted you to be aware of this as part of Microsoft’s commitment to transparency. When Android or Apple device management is enabled, Intune sends device and user information to integrate with these 3rd party services to manage their respective devices. The enhanced admin UI experience we are introducing in the March service release will provide greater transparency to the data that is shared. There is no end user impact to any of these UI changes.
-
-#### How does this affect me?
-
-Scenarios that will add a consent to share data windows include:
-- When you enable Android for Work
-- When you enable and upload Apple MDM push certificates
-- When enabling any of the Apple services such as Device Enrollment Program, School Manager, and Volume Purchasing Program
-
-In each case, the consent is strictly related to running a mobile device management service, such as confirming that an IT Admin has authorized Google or Apple devices to enroll. Documentation to address what information is shared when the new workflows go live is available here:
-- [Data Intune sends to Google](data-intune-sends-to-google.md)
-- [Data Intune sends to Apple](data-intune-sends-to-apple.md)
 
 #### What do I need to do to prepare for this change?
 
