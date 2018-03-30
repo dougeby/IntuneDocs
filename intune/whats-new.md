@@ -170,8 +170,7 @@ You now have the option to select the following Windows 10 Insider Preview servi
 - Windows Insider build &#8208; Slow
 - Release Windows Insider build 
 
-For more information about these channels, see [Windows Insider Program for Business flight rings](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business#flight-rings). 
-
+For more information about these channels, see [Manage Insider Preview Builds](https://insider.windows.com/en-us/for-business-organization-admin/).   
 For more information about creating deployment channels in Intune, see [Manage software updates in Intune](windows-update-for-business-configure.md).
 
 ### Intune apps
