@@ -164,17 +164,6 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 #### Disable checks on device restart <!--1805490 -->
 Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
 
-### Intune administration
-
-#### Workflow Updates to Intune Administration UI <!-- 1740475 -->
-
-Intune has updated the admin experience to provide greater transparency to when we send device and user information to integrate with 3rd party services such as Android or Apple device management. Scenarios that have added a consent to share data include:
-- When you enable Android for Work
-- When you enable and upload Apple MDM push certificates
-- When enabling any of the Apple services such as Device Enrollment Program, School Manager, or Volume Purchasing Program
-For more information on Microsoft’s GDPR compliance, see [Trust Center - Assess your GDPR compliance](https://aka.ms/trust_center_info).
-
-
 ### Intune apps
 
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
