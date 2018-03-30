@@ -31,6 +31,23 @@ Learn what updates have been made to the UI for apps that your end users will se
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## Week of April 2, 2018
+
+#### User experience update for the Company Portal app for iOS <!--1412866 -->
+We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
+
+You'll also see:
+- Support for iPhone X.
+- Faster app launch and loading responses, to save users time.
+- Additional progress bars to provide users with the most up-to-date status information.
+- Improvements to the way users upload logs, so if something goes wrong, it's easier to report.  
+
+|Before|After|
+|---|---|
+|![01](/intune/media/cp_iosRedesign_before_1803_01.png)|![01](/intune/media/cp_iosRedesign_after_1803_01.png)|
+|*Combined with previous step*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
+|![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
+
 ## Week of March 29, 2018
 
 #### Improvements to the language in the Company Portal app for Windows <!---1683758--->
@@ -50,7 +67,8 @@ We've updated the Company Portal app for Android to follow Android's [Material D
 |Before|After|
 |---|---|
 |![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
-|![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
+|![02](./media/android_contact_it_before_1803.png)|![02]
+(./media/android_contact_it_after_1803.png)|
 |![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
 |![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
 |![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
