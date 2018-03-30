@@ -48,10 +48,10 @@ This topic helps you enable iOS device enrollment for devices purchased through 
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
-DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md). Also, macOS doesn't currrently support DEP.
+DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md). Also, macOS doesn't currently support DEP.
 
 ## What is supervised mode?
-Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
+Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -178,7 +178,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
   ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
-  
+
 2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
    ![Sync blade with Request sync link selected](./media/enrollment-program-device-request-sync.png)
@@ -212,6 +212,4 @@ You must assign an enrollment program profile to devices before they can enroll.
 ## Distribute devices
 You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
-See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios). 
-
-
+See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).

@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/15/2018
+ms.date: 3/28/2018
 
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Get started with device compliance policies - Intune
+# Get started with device compliance policies in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -158,12 +158,25 @@ You can also use device compliance policies without any conditional access. When
 ## Ways to deploy device compliance policies
 You can deploy compliance policy to users in user groups, or devices in device groups. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
 
-For devices in device groups, the **Compliance policy settings** (Azure portal > Device compliance) includes a **Treat No policy assigned devices** property. This property has two values:
+For devices in device groups, the **Compliance policy settings** (Azure portal > Device compliance) includes
 
-- **Compliant**: security feature off
-- **Not compliant** (default): security feature on
+- **Mark devices with no compliance policy assigned as**: This property has two values:
 
-If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Not compliant**. If you use conditional access, we recommended you leave the default setting of **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
+  - **Compliant**: security feature off
+  - **Not compliant** (default): security feature on
+
+  If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Not compliant**. If you use conditional access, we recommended you leave the default setting of **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
+
+- **Enhanced jailbreak detection**: When enabled, this setting causes iOS devices to check-in with Intune more frequently. Enabling this property uses the device’s location services, and impacts battery usage. The user location data is not stored by Intune.
+
+  Enabling this setting requires devices to:
+  - Enable location services at the OS level
+  - Allow the company portal to use location services
+  - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant.
+
+- **Compliance status validity period (days)**: Enter the time period that devices report the status for all received compliance policies. Devices that don't return the status within this time period are treated as noncompliant. The default value is 30 days.
+
+All devices have a **Default Device Compliance Policy** (Azure portal > Device compliance > Policy compliance). Use this default policy to monitor these settings.
 
 To learn the time it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

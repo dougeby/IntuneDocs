@@ -46,7 +46,6 @@ This also applies to settings accessible from the iOS settings app like Mail, Co
 - **Use of the erase all content and settings option on the device (supervised only)** - Allow the user to use the option of erasing all content and settings on the device.
 - **Device name modification (supervised only)** - Allow the user to change the name of the device.
 - **Notification settings modification (supervised only)** - Allow the user to change the device notification settings.
-- **Wallpaper modification (supervised only)** - Allow the user to change the device wallpaper.
 - **Enterprise app trust settings modification (supervised only)** - Lets the user select to trust apps that were not downloaded from the app store.
 - **Configuration profile changes (supervised only)** - Allow the user to install configuration profiles.
 - **Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
@@ -80,7 +79,6 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - Keyboard shortcuts 
 - Passcode modifications 
 - Device name changes 
-- Wallpaper changes 
 - Automatic app downloads 
 - Changes to enterprise app trust 
 - Apple Music 

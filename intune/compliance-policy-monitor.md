@@ -28,6 +28,9 @@ ms.custom: intune-azure
 
 Compliance reports help admins to analyze the compliance posture of devices in their organization, and quickly troubleshoot compliance-related issues encountered by users inside their organization. You can view information about the overall compliance state of devices, compliance state for an individual setting, compliance state for an individual policy and drill down into individual devices to view specific settings and policies that affect the device.
 
+> [!NOTE]
+> We’re introducing some security enhancements, based on your feedback, in the Intune service in March. Depending on how your compliance policies are configured, you may need to take action to avoid loss of email access for your end users. For details, see [Upcoming security enhancements](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
 ## Before you begin
 
 Follow these steps to find the **Intune Device compliance dashboard** in the Azure portal:
@@ -129,6 +132,19 @@ If clicking the **Update button**, the fly out should close and the results shou
 Clicking on a device, opens the **Devices Pane** with the device selected, which provides more details on the device compliance policy setting applied for that device.
 
 When you click on the device policy setting itself, you can see the device compliance policy name originated that device compliance setting targeted by the admin.
+
+### Devices without compliance policy
+This report identifies devices that do not have any compliance policies assigned to them. With the introduction of the security setting that marks all devices without compliance policies as "not compliant," it's important to be able to identify these devices. Then you can assign at least one compliance policy to them.
+
+> [!NOTE]
+> The new security setting is configurable in the Intune portal. Select **Device compliance**, and under **Setup**, choose **Compliance policy settings**. Then use the toggle to set **Mark devices with no compliance policy assigned as** to either **Compliant** or **Not compliant**. Read more about this [security enhancement in the Intune service](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Image showing Devices without compliance policy report](./media/idc-12.png)
+
+The **Devices without compliance policy** tile is available from the Device compliance dashboard, and it shows all devices without a compliance policy, the user of the device, the compliance status, and the device model.
+
+> [!NOTE]
+> Users who are assigned a compliance policy of any type will not show up in the report, regardless of device platform. For example, if you have unintentionally assigned a Windows compliance policy to a user with an Android device, the device will not show up in the report. However, Intune will consider that Android device not compliant. To avoid issues, we recommend that you create policies for each device platform and deploy them to all users.
 
 ### Per-policy device compliance report
 

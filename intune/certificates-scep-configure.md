@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -157,7 +157,6 @@ Configure the CA to allow the requester to enter the validity period:
 
 #### Step 3 - Configure prerequisites on the NDES server
 In this task, you:
-
 
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group
@@ -372,7 +371,13 @@ To validate that the service is running, open a browser, and enter the following
       - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
       - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
+      > [!TIP]
+      > To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
       By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
+
+
+
 
   - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate is used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
   - **Key usage**: Enter the key usage options for the certificate. Your options:

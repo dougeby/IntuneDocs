@@ -2,6 +2,11 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/custom-vpn-profiles-create.md",
+			"redirect_url": "/intune/custom-settings-configure",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/byod-enable.md",
 			"redirect_url": "/intune/byod-technology-decisions",
 			"redirect_document_id": true
@@ -1465,8 +1470,8 @@
 		},
 		{
 			"source_path": "intune/configure-devices/create-custom-vpn-profiles.md",
-			"redirect_url": "/intune/custom-vpn-profiles-create",
-			"redirect_document_id": true
+			"redirect_url": "/intune/custom-settings-configure",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/custom-android-for-work.md",
@@ -1581,7 +1586,7 @@
 		{
 			"source_path": "intune/configure-devices/how-to-configure-custom-settings.md",
 			"redirect_url": "/intune/custom-settings-configure",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/how-to-configure-device-features.md",
