@@ -899,6 +899,20 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 **Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
+### Plan for Change: Windows Company Portal Send Feedback Option may no longer work  
+The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
+### How does this affect me?  
+If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
+- Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
+- Windows Phone 8.1 Company Portal app  
+  
+For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
+### What do I need to do to prepare for this change?  
+lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
+- Use the Feedback Hub app on Windows 10
+- Send an email to WinCPfeedback@microsoft.com  
+
+Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
 
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
