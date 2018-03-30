@@ -39,21 +39,21 @@ Even though the following pictures are for iOS, the process is virtually identic
 
 ## Signing in with your email address and password
 
-1. Open the Company Portal app on your device and tap **Sign in**.
+1. Open the Company Portal app on your device and tap **Sign In**.
 
   ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the text "Get access to company resources and keep them secure," and the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
   Don't have the Company Portal app? Find out how to install and download it for [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) or [Android](install-the-company-portal-app-android.md).
 
-2. Enter your **Work or school account**.
+2. Enter your **Work or school account** and tap **Next**.
 
   ![The user is prompted to provide just their email address rather than their email and password on the same screen.](/intune-user-help/media/cp_ios_aad_signin_after_1804_002.png)
 
-3. Wait a moment for your email address to be accepted, then enter your password.
+3. Enter your password and tap **Sign In**.
 
   ![The user is prompted for their password after their email address has been accepted.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. Once the Company Portal accepts your login, it signs you in and you can begin to access your company resources.   
+4. After the Company Portal accepts your login, it signs you in and you can begin to access your company resources.   
 
   ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
