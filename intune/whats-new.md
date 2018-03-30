@@ -899,7 +899,7 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 **Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
-### Plan for Change: Windows Company Portal Send Feedback Option may no longer work  
+### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
 ### How does this affect me?  
 If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
