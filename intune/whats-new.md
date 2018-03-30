@@ -172,7 +172,7 @@ You now have the option to select the following Windows 10 Insider Preview servi
 
 For more information about these channels, see [Windows Insider Program for Business flight rings](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business#flight-rings). 
 
-For more information about creating deployment channels in Intune, see [Configure Windows Update for Business in Microsoft Intune](windows-update-for-business-configure.md)
+For more information about creating deployment channels in Intune, see [Manage software updates in Intune](windows-update-for-business-configure.md).
 
 ### Intune apps
 
