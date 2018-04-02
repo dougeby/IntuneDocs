@@ -73,10 +73,6 @@ Users enrolling a device by using the Company Portal on Windows 10 build 1703 an
 
 We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
-### Edge mobile support for Intune app protection policies <!-- 1817882 -->
-
-The Microsoft Edge browser for mobile devices will support app protection policies defined in Intune.
-
 <!-- 1802 start -->
 
 ### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->

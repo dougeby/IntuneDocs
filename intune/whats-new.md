@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/2/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,9 @@ You'll also see:
 - Improvements to the way users upload logs, so if something goes wrong, it's easier to report.  
 
 To see the updated look go to [What's new in the app UI](whats-new-app-ui.md).
+
+### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
+You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy, select **Mobile apps** from the **Microsoft Intune** blade within the Azure portal. On the **Mobile apps** blade, select **App protection policies**.
 
 ## Week of March 26, 2018
 
@@ -116,9 +119,7 @@ This is an optional column in the devices blade. It isn't available by default a
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
-#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 
-We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Schedule your automatic updates <!--1805514 -->
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
@@ -190,6 +191,12 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 ### Intune apps
 
+#### Company Portal enrollment improved <!-- 1874230 eeready-->
+Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
+
+#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
+We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
+
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
 You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
 
@@ -211,6 +218,14 @@ For more information, see [Target app protection policies based on device manage
 
 #### Improvements to the language in the Company Portal app for Windows <!---1683758--->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
+
+#### New additions to our docs about user privacy <!---1440709--->
+As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
+
+- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
+- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
+- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
 
 
 ## Week of March 12, 2018
