@@ -188,7 +188,7 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 ### Intune apps
 
-### Company Portal enrollment improved <!-- 1874230 eeready-->
+#### Company Portal enrollment improved <!-- 1874230 eeready-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
 
 #### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
@@ -215,6 +215,14 @@ For more information, see [Target app protection policies based on device manage
 
 #### Improvements to the language in the Company Portal app for Windows <!---1683758--->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
+
+#### New additions to our docs about user privacy <!---1440709--->
+As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
+
+- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
+- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
+- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
 
 
 ## Week of March 12, 2018
