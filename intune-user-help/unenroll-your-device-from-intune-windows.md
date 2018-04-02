@@ -65,7 +65,7 @@ If your device is registered with Intune, but you no longer want to use your Win
 
 4.  On the **Delete account** dialog box, tap **Delete**.
 
-## Removing data collected by the Company Portal app
+## Remove data collected by the Company Portal app
 
 There are two kinds of data that the Company Portal stores on your Windows device:
 
