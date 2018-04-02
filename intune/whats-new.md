@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 04/2/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,21 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of April 2, 2018
+
+### Intune apps
+
+### User experience update for the Company Portal app for iOS <!--1412866 -->
+We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
+
+You'll also see:
+- Support for iPhone X.
+- Faster app launch and loading responses, to save users time.
+- Additional progress bars to provide users with the most up-to-date status information.
+- Improvements to the way users upload logs, so if something goes wrong, it's easier to report.  
+
+To see the updated look go to [What's new in the app UI](whats-new-app-ui.md).
 
 ## Week of March 26, 2018
 
@@ -163,6 +178,15 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
 #### Disable checks on device restart <!--1805490 -->
 Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
+
+#### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
+You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
+- Windows Insider build &#8208; Fast
+- Windows Insider build &#8208; Slow
+- Release Windows Insider build 
+
+For more information about these channels, see [Manage Insider Preview Builds](https://insider.windows.com/en-us/for-business-organization-admin/).   
+For more information about creating deployment channels in Intune, see [Manage software updates in Intune](windows-update-for-business-configure.md).
 
 ### Intune apps
 
@@ -899,6 +923,20 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 **Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
+### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
+The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
+### How does this affect me?  
+If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
+- Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
+- Windows Phone 8.1 Company Portal app  
+  
+For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
+### What do I need to do to prepare for this change?  
+lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
+- Use the Feedback Hub app on Windows 10
+- Send an email to WinCPfeedback@microsoft.com  
+
+Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
 
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
@@ -925,12 +963,6 @@ We’ve added some new features, based on feedback from customers like you, that
 - Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
-
-### User experience update for the Company Portal app for iOS <!--1412866-->
-
-We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
-
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. For the latest information on this update, see https://aka.ms/iOS_companyportal_update.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
