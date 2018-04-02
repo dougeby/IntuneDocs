@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Unenroll your device if you declined Terms of Use | Microsoft Docs
+title: Remove your device from management if you declined Terms of Use | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 03/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,15 +29,17 @@ ms.custom: intune-enduser
 ---
 
 
-# Unenroll your device if you declined "Terms of Use"
+# Remove your device from management if you declined "Terms of Use"
 
-The best way to unenroll your Android device is to accept the terms of use, sign in to the Company Portal app, and then use [these instructions](unenroll-your-device-from-intune-android.md) to unenroll. However, if you declined the terms of use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries, so you need to use these "workaround" instructions to unenroll your device.
+If you declined the terms of use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries, so you need to use these "workaround" instructions to remove your device from Intune.
 
-When you uninstall the Company Portal app, you are also unenrolling your device from Intune. Your device will no longer be able to access company resources. For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+When you uninstall the Company Portal app, you are also removing your device from Intune. Your device will no longer be able to access company resources. For more about what happens when you remove your device from management, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Before you can uninstall the Company Portal app, you have to go to the **Device administrators** setting, and turn off **Company Portal**. The steps may differ a little, depending on which Android device you have.
 
-To unenroll your device from Intune and uninstall the Company Portal app:
+## Removing the device from the Company Portal app
+
+To remove your device from Intune and uninstall the Company Portal app:
 
 1.  Go to **Settings** &gt; **Security &amp; Screen Lock** &gt; **Device administrators**.
 
@@ -46,5 +48,13 @@ To unenroll your device from Intune and uninstall the Company Portal app:
 2.  Uncheck the box next to, or turn off, **Company Portal**.
 
     You can now uninstall the Company Portal app.
+
+## Removing your personal information after removing the Company Portal
+
+To remove all data that the Company Portal app for Android stores on your device:
+
+  -	Clear app data in Applications -> Click on app -> button "Clear data"
+  -	Delete the folder '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
+
 
 Still need help? Contact your company support (check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

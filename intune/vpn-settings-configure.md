@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,13 +24,21 @@ ms.custom: intune-azure
 
 ---
 
-# Configure VPN settings in Microsoft Intune
+# Create VPN profiles in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings to connect to the corporate network. Then you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks, and can connect with minimal effort.
+
+You can use Intune custom configuration polices to create VPN profiles for the following platforms:
+
+* Android 4 and later
+* Enrolled devices that run Windows 8.1 and later
+* Windows Phone 8.1 and later
+* Enrolled devices that run Windows 10 desktop
+* Windows 10 Mobile
 
 ## VPN connection types
 
@@ -54,7 +62,7 @@ You can create VPN profiles using the following connection types:
 > [!IMPORTANT]
 > Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](app-management.md) article to help you assign the app by using Intune.  
 
-Learn how to create custom VPN profiles by using URI settings in [Create custom VPN profiles](custom-vpn-profiles-create.md).
+Learn how to  create custom VPN profiles by using URI settings in [Create a profile with custom settings](custom-settings-configure.md).
 
 ## Create a device profile containing VPN settings
 

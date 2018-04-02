@@ -125,6 +125,16 @@ To see the effect of the changes immediately, the end user must log out of the a
 
 3.  Change the settings, and choose the **Save** icon to save your changes.
 
+## Target app protection policies based on device management state
+In many organizations it’s common to allow end users to use both Intune Mobile Device Management (MDM) managed devices, such as corporate owned devices, and un-managed devices protected with only Intune app protection policies, such as BYO devices.
+
+Because Intune app protection policies are targeted to a user’s identity, the protection settings for a user traditionally apply to both enrolled (MDM managed) and non-enrolled devices (no MDM). Therefore, you can target an Intune app protection policy to either Intune enrolled or un-enrolled iOS and Android devices. You can have one protection policy for un-managed devices in which strict data loss prevention (DLP) controls are in place, and a separate protection policy for MDM managed devices, where the DLP controls may be a little more relaxed. 
+
+To create these policies, browse to **Mobile apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
+
+> [!NOTE]
+> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state ](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:
 

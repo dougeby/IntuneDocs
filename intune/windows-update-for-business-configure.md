@@ -33,7 +33,14 @@ Windows as a Service is the way to update Windows 10 devices. With Windows 10, n
 
 By using Windows Update for Business, you simplify the update management experience. You don’t need to approve individual updates for groups of devices. You can manage risk in your environments by configuring an update rollout strategy. And Windows Update makes sure that updates are installed at the right time. Microsoft Intune provides the ability to configure update settings on devices, and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. Use Intune to configure and manage **Windows 10 update rings**. An update ring includes a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following settings:
 
-- **Windows 10 Servicing Channel**: Choose whether you want groups of devices to receive updates from the Semi-Annual Channel (Targeted), or from the Semi-Annual Channel.
+- **Windows 10 Servicing Channel**: Choose the servicing channel from which you want groups of devices to receive updates. The following channels are available: 
+  - Semi&#8208;Annual Channel
+  - Semi&#8208;Annual Channel (Targeted)
+  - Windows Insider &#8208; Fast
+  - Windows Insider &#8208; Slow
+  - Release Windows Insider 
+      
+  For details on the available servicing channels, see [Overview for Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
 - **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. Use these settings to stage your update roll-out so you can review progress along the way.
 - **Pausing**: Postpone the installation of updates if you discover an issue at any point during the update rollout.
 - **Maintenance window**: Configure the hours in which updates can be installed.
@@ -83,7 +90,7 @@ After you create update rings, you assign them to groups of devices. By using up
 4. Enter a name, a description (optional), and then choose **Configure**.
 5. In **Settings**, enter the following information:
 
-  - **Servicing channel**: Set the channel for which the device receives Windows updates (Semi-Annual Channel (Targeted) or Semi-Annual Channel.
+  - **Servicing channel**: Set the channel from which the device receives Windows updates.
   - **Microsoft product updates**: Choose to scan for app updates from Microsoft Update.
   - **Windows drivers**: Choose to exclude Windows Update drivers during updates.
   - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -97,7 +104,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
   - **Feature update deferral period (days)**: Enter the number of days for which Feature Updates are deferred. You can defer receiving Feature Updates up to 180 days from their release.
 
-    Feature Updates are typically new features for Windows. After you configure the **Servicing channel** setting (Semi-Annual Channel (Targeted) or Semi-Annual Channel), you can define if, and how long, you are to defer receiving Feature Updates after they're available on Windows Update.
+    Feature Updates are typically new features for Windows. After you configure the **Servicing channel** setting, you can define if, and how long, you are to defer receiving Feature Updates after they're available on Windows Update.
 
     For example:
     **If the Servicing channel is set to Semi-Annual Channel (Targeted), and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. The device does not receive the update until February - 30 days later.
