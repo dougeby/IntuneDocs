@@ -47,7 +47,7 @@ To remove your device from Intune and the Company Portal app, follow these steps
 
   ![An image of the confirmation dialog, that is available after selecting the new "remove company portal" option from the action menu. The dialog informs the user that "by removing company portal, your device will no longer be managed by your company support and may remove access to company data, company apps, and company email." It then asks the user to confirm that they want to remove the Company Portal app by selecting "Yes".](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-## Removing your personal information after removing the Company Portal
+## Removing data collected by the Company Portal app
 
 To remove all data that the Company Portal app for Android stores on your device:
 
