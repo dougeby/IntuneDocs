@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/2/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -116,9 +116,7 @@ This is an optional column in the devices blade. It isn't available by default a
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
-#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 
-We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Schedule your automatic updates <!--1805514 -->
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
@@ -189,6 +187,12 @@ For more information about these channels, see [Manage Insider Preview Builds](h
 For more information about creating deployment channels in Intune, see [Manage software updates in Intune](windows-update-for-business-configure.md).
 
 ### Intune apps
+
+### Company Portal enrollment improved <!-- 1874230 eeready-->
+Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
+
+#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
+We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
 You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
