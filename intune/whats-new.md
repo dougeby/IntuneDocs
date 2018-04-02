@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 04/2/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,21 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of April 2, 2018
+
+### Intune apps
+
+### User experience update for the Company Portal app for iOS <!--1412866 -->
+We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
+
+You'll also see:
+- Support for iPhone X.
+- Faster app launch and loading responses, to save users time.
+- Additional progress bars to provide users with the most up-to-date status information.
+- Improvements to the way users upload logs, so if something goes wrong, it's easier to report.  
+
+To see the updated look go to [What's new in the app UI](whats-new-app-ui.md).
 
 ## Week of March 26, 2018
 
@@ -948,12 +963,6 @@ We’ve added some new features, based on feedback from customers like you, that
 - Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
-
-### User experience update for the Company Portal app for iOS <!--1412866-->
-
-We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
-
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. For the latest information on this update, see https://aka.ms/iOS_companyportal_update.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
