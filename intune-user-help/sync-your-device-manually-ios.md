@@ -31,11 +31,11 @@ ms.custom: intune-enduser
 
 # Sync your iOS device manually
 
-Sometimes an app may take too long to download from the Company Portal. If this happens to you, you can try to manually sync your device. This means that you are telling your device to try again to get the information it may be struggling to download.
+Sometimes an app may take too long to download from the Company Portal. If this happens to you, try to manually sync your device. This will attempt to get the information your device was unable to download.
 
 1. Open the Company Portal app.
 
-2. Tap **Devices**. If you have multiple devices, choose the device that you're currently using from the list. If you only have one device, you will go directly to the device details screen.
+2. Tap **Devices**. If you have multiple devices, you'll see a list of devices. Choose the device that you're currently using. If you only have one device, you will go directly to the device details screen.
 
     ![Screenshot of the Devices screen, showing two devices. The top device has text that says "This is the iPhone 6 Plus that you're currenty using."](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
