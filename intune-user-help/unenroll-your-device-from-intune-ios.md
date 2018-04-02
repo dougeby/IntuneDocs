@@ -67,7 +67,7 @@ To remove your device from Intune, use these steps or watch this video:
 
   -   Devices that are configured for email only won't appear in the Company Portal app or website anymore.
 
-## Removing your personal information after removing the Company Portal
+## Removing data collected by the Company Portal app
 
 There are three places the Company Portal stores local data on your device.
 

@@ -54,7 +54,6 @@ The DEM user can:
 Devices that are enrolled with a device enrollment manager account have the following limitations:
 
   - No per-user access. Because devices don't have an assigned user, the device has no email or company data access. VPN configurations, for example, could still be used to provide device apps with access to data.
-  - No conditional access because these scenarios are per-user.
   - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin can do unenroll.
   - Only the local device appears in the Company Portal app or website.
   - Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
