@@ -164,6 +164,15 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 #### Disable checks on device restart <!--1805490 -->
 Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
 
+#### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
+You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
+- Windows Insider build &#8208; Fast
+- Windows Insider build &#8208; Slow
+- Release Windows Insider build 
+
+For more information about these channels, see [Manage Insider Preview Builds](https://insider.windows.com/en-us/for-business-organization-admin/).   
+For more information about creating deployment channels in Intune, see [Manage software updates in Intune](windows-update-for-business-configure.md).
+
 ### Intune apps
 
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
