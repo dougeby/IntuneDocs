@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,21 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of April 2, 2018
+
+### Intune apps
+
+### User experience update for the Company Portal app for iOS <!--1412866 -->
+We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
+
+You'll also see:
+- Support for iPhone X.
+- Faster app launch and loading responses, to save users time.
+- Additional progress bars to provide users with the most up-to-date status information.
+- Improvements to the way users upload logs, so if something goes wrong, it's easier to report.  
+
+To see the updated look go to [What's new in the app UI](whats-new-app-ui.md).
 
 ## Week of March 26, 2018
 
@@ -101,9 +116,7 @@ This is an optional column in the devices blade. It isn't available by default a
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
-#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 
-We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Schedule your automatic updates <!--1805514 -->
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
@@ -175,6 +188,12 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 ### Intune apps
 
+#### Company Portal enrollment improved <!-- 1874230 eeready-->
+Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
+
+#### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
+We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
+
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
 You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
 
@@ -196,6 +215,14 @@ For more information, see [Target app protection policies based on device manage
 
 #### Improvements to the language in the Company Portal app for Windows <!---1683758--->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
+
+#### New additions to our docs about user privacy <!---1440709--->
+As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
+
+- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
+- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
+- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
+- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
 
 
 ## Week of March 12, 2018
@@ -948,12 +975,6 @@ We’ve added some new features, based on feedback from customers like you, that
 - Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
-
-### User experience update for the Company Portal app for iOS <!--1412866-->
-
-We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
-
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. For the latest information on this update, see https://aka.ms/iOS_companyportal_update.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
