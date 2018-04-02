@@ -444,14 +444,6 @@ You don't need to take any action to prepare for this change. We’ll let you kn
 |![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
 |![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|
 
-### User experience update for the Company Portal app for iOS <!--1412866-->
-
-We will be releasing a major user experience update to the Company Portal app for iOS. The update will feature a complete visual redesign, which includes a modernized look and feel with increased usability and accessibility. All current iOS Company Portal functionality will be maintained.
-
-We are offering a pre-release version of the updated Company Portal app for iOS through the Apple TestFlight program for you to use and to provide feedback. Sign up at https://aka.ms/intune_ios_cp_testflight for TestFlight access. For the latest information on this update, see https://aka.ms/iOS_companyportal_update.
-
-![teaser images for new ios company portal app](./media/ios-cp-app-redesign-1801-teaser.png)
-
 ### UI updates to the Company Portal website <!--1313244 part 2-->
 
 __Updates to Featured Apps__
