@@ -4,8 +4,8 @@
 title: Installing the Company Portal app for iOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article

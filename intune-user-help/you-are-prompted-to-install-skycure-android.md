@@ -4,8 +4,8 @@
 title: You need to install Symantec Endpoint Protection Mobile on your Android device | Microsoft Docs
 description: Learn how to install SEP Mobile on your Android device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article

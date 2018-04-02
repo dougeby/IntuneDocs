@@ -4,8 +4,8 @@
 title: Install the Company Portal app | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article

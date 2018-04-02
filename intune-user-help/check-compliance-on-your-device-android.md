@@ -4,7 +4,7 @@
 title: Check compliance on your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsadms.author: lanewsad
 manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article

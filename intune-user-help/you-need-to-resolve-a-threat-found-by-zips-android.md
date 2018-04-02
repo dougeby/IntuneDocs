@@ -4,8 +4,8 @@
 title: Resolving threats found by Zimperium zIPS on Android | Microsoft Docs
 description: Learn how to fix threats found on your Android device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article

@@ -4,8 +4,8 @@
 title: iOS apps with app protection policies
 description: This topic describes what to expect when your iOS app is managed by app protection policies.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article

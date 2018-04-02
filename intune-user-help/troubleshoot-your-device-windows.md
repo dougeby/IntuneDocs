@@ -4,8 +4,8 @@
 title: Fix common issues with your Windows device | Microsoft Docs
 description: Find out ways to solve common issues with your Windows device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article

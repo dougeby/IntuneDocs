@@ -4,8 +4,8 @@
 title: You need to install Symantec Endpoint Protection Mobile on your iOS device | Microsoft Docs
 description: Learn how to install SEP Mobile on your iOS device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article

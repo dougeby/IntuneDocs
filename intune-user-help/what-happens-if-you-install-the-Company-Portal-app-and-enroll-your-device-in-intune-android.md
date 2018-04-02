@@ -4,8 +4,8 @@
 title: Installing the Company Portal app for Android
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article

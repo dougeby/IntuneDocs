@@ -4,8 +4,8 @@
 title: How to sign in to the Company Portal app | Microsoft Docs
 description: Find out how to sign in to the Company Portal app on multiple platforms.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: article

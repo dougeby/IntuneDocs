@@ -4,7 +4,7 @@
 title: You need to update your Windows device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsadms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article

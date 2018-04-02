@@ -4,8 +4,8 @@
 title: Remove your Windows device from Intune | Microsoft Docs
 description: Describes how to remove a Windows device from Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/28/2018
 ms.topic: article

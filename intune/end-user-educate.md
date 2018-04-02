@@ -4,8 +4,8 @@
 title: How to educate your end users about Microsoft Intune | Microsoft Intune
 description: Share information with your end users to make your Intune deployment successful.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article

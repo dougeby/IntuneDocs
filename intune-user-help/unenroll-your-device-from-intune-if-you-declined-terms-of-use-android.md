@@ -4,8 +4,8 @@
 title: Remove your device from management if you declined Terms of Use | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/23/2018
 ms.topic: article

@@ -4,8 +4,8 @@
 title: How to turn off Microsoft data collection for iOS devices | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/19/2017
 ms.topic: article

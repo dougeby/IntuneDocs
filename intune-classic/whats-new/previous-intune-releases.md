@@ -4,8 +4,8 @@
 title: Previous releases 
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article

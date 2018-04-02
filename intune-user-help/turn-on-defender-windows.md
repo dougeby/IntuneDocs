@@ -4,8 +4,8 @@
 title: Turn on Windows Defender | Microsoft Docs
 description: Learn how to turn on Windows Defender to access company resources.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article

@@ -4,8 +4,8 @@
 title: Enroll your iOS device with Device Enrollment Program | Microsoft Docs
 description: Describes how to enroll an iOS device in Intune with DEP
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/12/2018
 ms.topic: article
