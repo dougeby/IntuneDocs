@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by Lookout for Work
 
-Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
-
-![Out of compliance message from Lookout from Work](./media/ios-lfw-noncompliant-in-ssp.png)
+Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files.
 
 To resolve the issue, open the Lookout for Work app, and follow the instructions shown in the app.
 

@@ -48,8 +48,6 @@ You'll also see:
 |*Combined with previous step*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-## Week of March 29, 2018
-
 #### Improvements to the language in the Company Portal app for Windows <!---1683758--->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company.
 
