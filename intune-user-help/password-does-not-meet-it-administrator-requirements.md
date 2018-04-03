@@ -4,7 +4,7 @@
 title: Your password does not meet your company support's requirements | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsadms.author: lanewsad
 manager: dougeby
 ms.date: 02/10/2017
 ms.topic: article

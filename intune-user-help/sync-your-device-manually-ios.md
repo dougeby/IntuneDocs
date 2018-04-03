@@ -4,8 +4,8 @@
 title: Manually sync your iOS device | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: article

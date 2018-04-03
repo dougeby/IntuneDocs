@@ -4,8 +4,8 @@
 title: How to remove your Android device from Intune | Microsoft Docs
 description: Describes how to unenroll an Android device from Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/23/2018
 ms.topic: article

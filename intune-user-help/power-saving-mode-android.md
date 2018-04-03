@@ -4,8 +4,8 @@
 title: Power optimization is preventing email access | Microsoft Docs
 description: Find out how to turn off power optimization for Android to make sure you get your email.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article

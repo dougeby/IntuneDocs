@@ -4,8 +4,8 @@
 title: How your iOS users get their apps 
 description: Methods for making iOS apps available to end users
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/28/2016
 ms.topic: article

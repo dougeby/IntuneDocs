@@ -5,8 +5,8 @@ title: UI updates for Intune end-user apps
 titlesuffix: Microsoft Intune
 description: Find out what has changed in UI for apps that work on end-user devices with Microsoft Intune.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/29/2018
 ms.topic: article

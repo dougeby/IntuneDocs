@@ -4,8 +4,8 @@
 title: Using your iOS or macOS device with Intune | Microsoft Docs
 description: List of links to tasks that you can do on your iOS or macOS mobile device when the device is enrolled in Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/07/2017
 ms.topic: article

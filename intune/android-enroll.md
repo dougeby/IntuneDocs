@@ -53,6 +53,8 @@ To enable management of the work profile on devices that [support Android for Wo
 
 If you're enrolling Android for Work devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
+For more information, see [Data Intune sends to Google](data-intune-sends-to-google.md).
+
 ## Add Android for Work binding for Intune
 
 > [!NOTE]
@@ -65,7 +67,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    a. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal), select **Device enrollment** > **Android enrollment** > **Managed Google Play**.
    ![Android for Work enrollment screen](./media/android-work-bind.png)
 
-   b. Select **I agree** to grant Microsoft permission to [send user and device information to Apple](data-intune-sends-to-google.md). 
+   b. Select **I agree** to grant Microsoft permission to [send user and device information to Google](data-intune-sends-to-google.md). 
    
    c. Select **Launch Google to connect now** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
   
