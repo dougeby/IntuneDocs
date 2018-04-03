@@ -4,8 +4,8 @@
 title: How to reset your passcode from the Company Portal website | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 06/23/2017
 ms.topic: article

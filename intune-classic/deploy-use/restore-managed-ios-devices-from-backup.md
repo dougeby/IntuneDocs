@@ -4,8 +4,8 @@
 title: Restore Intune managed iOS devices from backup 
 description: Provide guidance to end users on how to re-enroll their devices after restoring from backup.
 keywords: restore, managed, iOS
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article

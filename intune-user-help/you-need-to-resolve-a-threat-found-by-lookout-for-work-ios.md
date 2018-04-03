@@ -4,9 +4,9 @@
 title: Resolving threats found by Lookout for Work on iOS | Microsoft Docs
 description: Learn how to fix a threat found by Lookout for Work on iOS.
 keywords:
-author: barlanmsft
+author: lenewsad
 
-ms.author: barlan
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article

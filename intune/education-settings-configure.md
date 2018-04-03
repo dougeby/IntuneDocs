@@ -5,8 +5,8 @@ title: Configure Intune education settings for Windows 10
 titleSuffix: Microsoft Intune
 description: Learn how to use Intune to configure Windows 10 education settings on devices you manage.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article

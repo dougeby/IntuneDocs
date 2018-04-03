@@ -4,8 +4,8 @@
 title: How your Android users get their apps 
 description: Methods for making Android apps available to end users
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article

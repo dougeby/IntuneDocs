@@ -4,9 +4,8 @@
 title: Remove your Windows device from Intune | Microsoft Docs
 description: Describes how to remove a Windows device from Intune
 keywords:
-author: barlanmsft
-
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/28/2018
 ms.topic: article
@@ -65,7 +64,7 @@ If your device is registered with Intune, but you no longer want to use your Win
 
 4.  On the **Delete account** dialog box, tap **Delete**.
 
-## Remove data collected by the Company Portal app
+## Removing your personal information after removing the Company Portal
 
 There are two kinds of data that the Company Portal stores on your Windows device:
 
@@ -81,6 +80,5 @@ There are a few steps you need to take to completely delete this information.
 ### Reset the Company Portal
 
 You can reset the rest of the Company Portal's app data by resetting the app in Settings. Open **Settings** > **Apps & Features** > **Company Portal** > **Advanced options** > **Reset**.
-
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

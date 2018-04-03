@@ -4,7 +4,7 @@
 title: Set how much time before your screen locks | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsadms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article

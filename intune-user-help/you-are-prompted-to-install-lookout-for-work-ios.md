@@ -4,9 +4,9 @@
 title: You need to install Lookout for Work on your iOS device | Microsoft Docs
 description: Learn how to install Lookout for Work for iOS.
 keywords:
-author: barlanmsft
+author: lenewsad
 
-ms.author: barlan
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: article

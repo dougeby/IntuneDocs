@@ -4,8 +4,8 @@
 title: Set your PIN or password | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/07/2018
 ms.topic: article

@@ -4,8 +4,8 @@
 title: You need to install Lookout for Work on your Android device | Microsoft Docs
 description: Learn how to install Lookout for Work for Android.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article

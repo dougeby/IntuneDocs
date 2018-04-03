@@ -4,8 +4,8 @@
 title: Enroll your iOS device in telecom expense management with Intune
 description: Learn how to enroll an iOS device into telecom expense management.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
