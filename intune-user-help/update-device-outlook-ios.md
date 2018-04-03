@@ -4,8 +4,8 @@ title: You need to update your iOS device to install Outlook | Microsoft Docs
 titleSuffix: Microsoft Intune
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/29/2018
 ms.topic: article

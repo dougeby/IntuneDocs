@@ -4,8 +4,8 @@
 title: Send logs to your company support for Windows 10 devices | Microsoft Docs
 description: Enroll a Windows 10 1511+ device into Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article

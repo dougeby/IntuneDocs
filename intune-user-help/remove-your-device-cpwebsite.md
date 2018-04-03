@@ -4,7 +4,7 @@
 title: Remove your device from the Company Portal | Microsoft Docs
 description: Remove a device from the Company Portal
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsadms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article

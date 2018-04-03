@@ -4,8 +4,8 @@
 title: Enroll your macOS device in Intune with Company Portal | Microsoft Docs
 description: Describes how to enroll a macOS device in Intune with Company Portal app
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
