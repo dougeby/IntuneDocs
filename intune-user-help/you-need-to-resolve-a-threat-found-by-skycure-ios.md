@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by Symantec Endpoint Protection Mobile
 
-Symantec Endpoint Protection Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
-
-![Out of compliance message from Symantec Endpoint Protection Mobile](./media/ios-skycure-noncompliant-in-ssp.png)
+Symantec Endpoint Protection Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. 
 
 To resolve the issue, open the Symantec Endpoint Protection Mobile app, and follow the instructions shown in the app.
 
