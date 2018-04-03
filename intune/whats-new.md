@@ -227,6 +227,14 @@ As part of our effort to give end users more control over their data and privacy
 - **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
 - **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
 
+## Week of March 19, 2018
+
+### Export all devices into CSV files in IE, Edge, or Chrome <!-- 2258071 -->
+In **Devices** > **All devices**, you can **Export** the devices into a CSV formatted list. Internet Explorer (IE) users with >10,000 devices can successfully export their devices into multiple files. Each file has up to 10,000 devices.
+
+Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
+
+[Manage devices](device-management.md) provides more details on what you can do with devices you manage.
 
 ## Week of March 12, 2018
 
