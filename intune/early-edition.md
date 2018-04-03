@@ -46,7 +46,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --><!--from 1802-->
 
-New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added:
+New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added:
 
 - Platform Security Level: specify whether Platform Security Level is enabled at the next reboot. Virtualization-based security requires Secure Boot. Virtualization-based security can optionally be enabled with the use of direct memory access (DMA) protections. DMA protections require hardware support and will only be enabled on correctly configured devices.
 - Virtualization Based Security: specify whether virtualization-based security is enabled at the next reboot.
