@@ -53,6 +53,8 @@ To enable management of the work profile on devices that [support Android for Wo
 
 If you're enrolling Android for Work devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
+For more information, see [Data Intune sends to Google](data-intune-sends-to-google.md).
+
 ## Add Android for Work binding for Intune
 
 > [!NOTE]
