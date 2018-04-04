@@ -32,7 +32,7 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 - **Role definition**: The name of a role, the resources it manages, and the permissions granted for each resource.
 - **Members**: The user groups that are granted the permissions.
-- **Scope**: The user or device groups that the members can manage.
+- **Scope**: The user or device groups that the members can target for app or policy deployment, or perform remote tasks.
 - **Assignment**: When the definition, members, and scope have been configured, the role is assigned.
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
