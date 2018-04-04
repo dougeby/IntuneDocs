@@ -70,7 +70,7 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 #### Alerts for expiring iOS line-of-business (LOB) apps for Microsoft Intune <!-- 748789 -->
 
-In the Azure portal, Intune will alert you to iOS line-of-business apps that are about to expire. Upon uploading a new version of the iOS line-of-business app, Intune removes the expiration notification from the app list. This expiration notification will only be active for newly uploaded iOS line-of-business apps.
+In the Azure portal, Intune will alert you to iOS line-of-business apps that are about to expire. Upon uploading a new version of the iOS line-of-business app, Intune removes the expiration notification from the app list. This expiration notification will only be active for newly uploaded iOS line-of-business apps. A warning appears 30 days before the iOS LOB app provisioning profile expires. When it expires, the alert changes to Expired.
 
 #### Customize your Company Portal themes with hex codes <!--1049561 -->
 
