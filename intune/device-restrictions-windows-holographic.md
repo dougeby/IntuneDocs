@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune device restriction settings for Windows Holographic for Business
-titleSuffix: 
-description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows Holographic for Business.
+title: Device restrictions for Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
+description: Read about and configure device restriction settings in Microsoft Intune for Windows Holographic for Business, including unenrollment, geolocation, passwords, install apps from app store, cookies and pop ups in Edge, Windows Defender, search, cloud and storage, bluetooth connectivity, system time, and usage data in Azure.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/3/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +36,9 @@ The following device restriction settings are supported on devices running Windo
 - **Cortana** - Enable or disable the Cortana voice assistant.
 - **Geolocation** - Specifies whether the device can use location services information.
 
-
-
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device.
-
-
 
 ## App Store
 
@@ -65,7 +60,6 @@ The following device restriction settings are supported on devices running Windo
 
 ## Search
 - **Search location** -Specify if search can use location. information
-
 
 ## Cloud and Storage
 - 	**Microsoft account** - Lets the user associate a Microsoft account with the device.
