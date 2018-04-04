@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune App SDK Xamarin Bindings 
-description: The Intune App SDK Xamarin Bindings enables Intune app protection policy in iOS and Android apps built with Xamarin. 
+description: The Intune App SDK Xamarin Bindings enable Intune app protection policy in iOS and Android apps built with Xamarin. 
 keywords: sdk, Xamarin, intune
 author: Erikre
 manager: dougeby
@@ -33,7 +33,7 @@ ms.custom: intune-classic
 > You may wish to first read the [Get Started with Intune App SDK](app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 ## Overview
-The [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) enables [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
+The [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) enable [Intune app protection policy](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The bindings allow developers to easily build in Intune app protection features into their Xamarin-based app.
 
 The Microsoft Intune App SDK Xamarin Bindings let you incorporate Intune app protection policies (also known as APP or MAM policies) into your apps developed with Xamarin. A MAM-enabled application is one that is integrated with the Intune App SDK. IT administrators can deploy app protection policies to your mobile app when Intune actively manages the app.
 
@@ -57,17 +57,15 @@ The Microsoft Intune App SDK Xamarin Bindings let you incorporate Intune app pro
 
 Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intune app protection policies on both Intune mobile device management (MDM) enrolled devices and unenrolled devices.
 
-## Get started
+## Before starting
 
-1. Read the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) for the Microsoft Intune MAM Xamarin Bindings.
-
-2.	Download the Intune App SDK Xamarin Bindings NuGet packages from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin). These packages will be available on Nuget.org soon.  
+Read the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf) for the Microsoft Intune MAM Xamarin Bindings.
 
 ## Enabling Intune app protection polices in your iOS mobile app
-1. Add the `Microsoft.Intune.MAM.Xamarin.iOS` NuGet package to your Xamarin.iOS project.
+1. Add the [Microsoft.Intune.MAM.Xamarin.iOS NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) to your Xamarin.iOS project.
 2.	Follow the general steps required for integrating the Intune App SDK into an iOS mobile app. You can begin with step 3 of the integration instructions from the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). You can skip the final step in that section of running the IntuneMAMConfigurator, as this tool is included in the Microsoft.Intune.MAM.Xamarin.iOS package and will be run automatically at build time.
     **Important**: Enabling keychain sharing for an app is slightly different in Visual Studio from Xcode. Open the app's Entitlements plist and make sure the "Enable Keychain" option is enabled and the appropriate keychain sharing groups are added in that section. Then, ensure the Entitlements plist is specified in the "Custom Entitlements" field of the project's "iOS Bundle Signing" options for all the appropriate Configuration/Platform combinations.
-3.	Once the component is added and the app is properly configured, your app can begin using the Intune SDK's APIs. To do so, you must include the following namespace:
+3.	Once the bindings are added and the app is properly configured, your app can begin using the Intune SDK's APIs. To do so, you must include the following namespace:
 
       ```csharp
       using Microsoft.Intune.MAM;
@@ -84,7 +82,7 @@ Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intu
       ```
 
 ## Enabling app protection policies in your Android mobile app
-Add the [Microsoft.Intune.MAM.Xamarin.Android](**TODO: GET LINK**) NuGet package to your Xamarin.Android project.
+Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
 
 For Xamarin.Android apps, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md) fully, including replacing class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. 
 
@@ -99,7 +97,7 @@ For Xamarin.Android apps, you need to read and follow the [Intune App SDK for An
 
 For apps utilizing Xamarin.Forms or other UI frameworks, we have provided a tool called `Microsoft.Intune.MAM.Remapper`. The tool accomplishes the class replacement for you. To use it, do the following:
 
-1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks/) NuGet package to your project.
+1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project.
 
 2.  Set the build action of the `remapping-config.json` file that's included with the Nuget package to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper NuGet package.
 
