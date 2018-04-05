@@ -89,10 +89,10 @@ The settings listed in this section are supported on Windows Phone 8.1 and later
 - **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.
 - **Allow simple passwords:** Set this to **Yes** to let users create simple passwords such as '**1234**' or '**1111**'.
 - **Minimum password length:** Specify the minimum number of digits or characters that the user's password must contain.
-- **Required password type:** Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
 
   For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
-
+- **Required password type:** Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
+  
 - **Minimum number of character sets:** If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
   - Lowercase letters
   - Uppercase letters
