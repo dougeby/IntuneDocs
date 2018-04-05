@@ -79,16 +79,19 @@ You have applied the policy to users. The devices used by the users who are targ
 
 <!---## Compliance policy settings--->
 
-## System security settings
+## Compliance policy settings for Windows Phone devices
 
-### Password
+The settings listed in this section are supported on Windows Phone 8.1 and later.
+### System security settings
+
+#### Password
 
 - **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.
 - **Allow simple passwords:** Set this to **Yes** to let users create simple passwords such as '**1234**' or '**1111**'.
 - **Minimum password length:** Specify the minimum number of digits or characters that the user's password must contain.
 - **Required password type:** Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
 
-For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
+  For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
 
 - **Minimum number of character sets:** If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
   - Lowercase letters
@@ -96,7 +99,7 @@ For devices that run Windows and accessed with a Microsoft account, the complian
   - Symbols
   - Numbers
 
-Setting a higher number for this setting will require users to create passwords that are more complex. For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
+  Setting a higher number for this setting will require users to create passwords that are more complex. For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
 
 - **Minutes of inactivity before password is required:** Specifies the idle time before the user must reenter their password.
 - **Password expiration (days):** Select the number of days before the user's password expires and they must create a new one.
@@ -104,15 +107,16 @@ Setting a higher number for this setting will require users to create passwords 
 - **Prevent reuse of previous passwords:** If **Remember password history** is selected, specify the number of previously used passwords that cannot be re-used.
 - **Require a password when the device returns from an idle state:** This setting should be used together with the **Minutes of inactivity before password is required** setting. The end users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
 
-**This setting only applies to Windows 10 Mobile devices.**
+> [!NOTE]
+> This setting only applies to Windows 10 Mobile devices.
 
-### Encryption
+#### Encryption
 
 - **Require encryption on mobile device:** Set this to **Yes** to require the device to be encrypted in order to connect to resources.
 
 
 
-## Device health settings
+### Device health settings
 
 - **Require devices to be reported as healthy:** You can set a rule to require that **Windows 10 Mobile** devices must be reported as healthy in new or existing Compliance Policies. If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for the following data points:
   - **BitLocker is enabled:** When BitLocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer
@@ -121,53 +125,56 @@ Setting a higher number for this setting will require users to create passwords 
 
 For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Device property settings
+### Device property settings
 
 - **Minimum OS required:** When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 - **Maximum OS version allowed:** When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
 <!---## Compliance policy settings for Windows PCs--->
 
-## System security settings
+## Compliance policy settings for Windows PCs
 
-### Password
+The settings listed in this section are supported on Windows PCs.
+### System security settings
+
+#### Password
 
 - **Minimum password length:** - Supported on Windows 8.1.
 
-Specify the minimum number of digits or characters that the user's password must contain.
+  Specify the minimum number of digits or characters that the user's password must contain.
 
-For devices that are accessed with a Microsoft Account, the compliance policy fails to evaluate correctly if **Minimum password length** is greater than eight characters or if **Minimum number of character sets** is more than two characters.
+  For devices that are accessed with a Microsoft Account, the compliance policy fails to evaluate correctly if **Minimum password length** is greater than eight characters or if **Minimum number of character sets** is more than two characters.
 
 - **Required password type:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1
 
-Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
+  Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
 
 - **Minimum number of character sets:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1. If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
   - Lowercase letters
   - Uppercase letters
   - Symbols
-  - Numbers: Setting a higher number for this setting requires users to create passwords that are more complex.
+  - Numbers 
 
-For devices that are accessed with a Microsoft Account, the compliance policy fails to evaluate correctly if **Minimum password length** is greater than eight characters or if **Minimum number of character sets** is more than two characters.
+    Setting a higher number for this setting requires users to create passwords that are more complex. For devices that are accessed with a Microsoft Account, the compliance policy fails to evaluate correctly if **Minimum password length** is greater than eight characters or if **Minimum number of character sets** is more than two characters.
 
 - **Minutes of inactivity before password is required:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1
 
-Specify the idle time before the user must reenter their password.
+  Specify the idle time before the user must reenter their password.
 
 - **Password expiration (days):** -Supported on Windows RT, Windows RT 8.1, and Windows 8.1.
 
-Select the number of days before the user's password expires and they must create a new one.
+  Select the number of days before the user's password expires and they must create a new one.
 
 - **Remember password history:** - Supported on Windows RT, Windows RT, and Windows 8.1.
 
-Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
+  Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 
 - **Prevent reuse of previous passwords:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1
 
-If **Remember password history:** is selected, specify the number of previously used passwords that cannot be reused.
+  If **Remember password history:** is selected, specify the number of previously used passwords that cannot be reused.
 
 
-## Device health settings
+### Device health settings
 
 - **Require devices to be reported as healthy:** - Supported on Windows 10 devices. You can set a rule to require that Windows 10 devices must be reported as healthy in new or existing Compliance Policies. If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for the following data points:
   - **BitLocker is enabled:** When BitLocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer
@@ -177,17 +184,17 @@ If **Remember password history:** is selected, specify the number of previously 
 
 For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Device property settings
+### Device property settings
 
 - **Minimum OS required:** - Supported on Windows 8.1, and Windows 10.
 
-Specify the major.minor.build.CU number here. The version number must correspond to the version returned by the ```winver``` command.
+  Specify the major.minor.build.CU number here. The version number must correspond to the version returned by the ```winver``` command.
 
-When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
+  When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
 - **Maximum OS version allowed:** - Supported on Windows 8.1, and Windows 10.
 
-When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+  When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
 To find the OS version to use for the **Minimum OS required**, and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.
 
