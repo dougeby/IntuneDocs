@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,7 @@ You can use Intune custom configuration polices to create VPN profiles for the f
 * Windows Phone 8.1 and later
 * Enrolled devices that run Windows 10 desktop
 * Windows 10 Mobile
+* Windows Holographic for Business
 
 ## VPN connection types
 
