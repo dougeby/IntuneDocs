@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Configure Microsoft Intune for iOS device single sign-on
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases this requires the user to type the same credentials multiple times, which can be frustrating for users. To improve the user experience, developers can create apps that use single sign-on, reducing the number of times a user must provide credentials.
 

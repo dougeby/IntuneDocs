@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 # Categorize devices with device group mapping in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use Microsoft Intune **device group mapping** to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices. 
 
@@ -71,10 +71,10 @@ Due to the phased implementation of Azure Active Directory-based security groups
 
 ### Step 1 - Create device categories in the Intune administration console
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
-3. In the **Administration** workspace, expand **Mobile Device Management**, and then choose **Device Categories**.
-4. On the **Device Categories** page, you'll see a list where you can configure device categories: 
-- You can enter a name, then click **Add**, to add it as a new device category.
-- Additionally, you can select a category and then **Delete** it.
+2. In the **Administration** workspace, expand **Mobile Device Management**, and then choose **Device Categories**.
+3. On the **Device Categories** page, you'll see a list where you can configure device categories: 
+4. You can enter a name, then click **Add**, to add it as a new device category.
+5. Additionally, you can select a category and then **Delete** it.
 
 You'll use the device category name when you create Azure Active Directory security groups in step 2.
 

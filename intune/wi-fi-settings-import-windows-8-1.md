@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Import Wi-Fi settings for Windows 8.1 and later devices in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 For devices that run Windows 8.1, Windows 10 desktop or mobile, or Windows Holographic for Business, you can import a Wi-Fi configuration profile that was previously exported to a file.
 

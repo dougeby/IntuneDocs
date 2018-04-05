@@ -34,7 +34,7 @@ If you've seen a message that says your “Minimum Android security patch level 
 
 If you have a Samsung device, go to **Settings** > **About phone**, and check to see if the word "Knox" is anywhere onscreen. If so, follow the Samsung Knox directions below.
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 ## For most Android devices (non-Samsung Knox)
 

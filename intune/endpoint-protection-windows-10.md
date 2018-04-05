@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Endpoint protection settings for Windows 10 (and later) in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The endpoint protection profile lets you control security features on Windows 10 devices, like BitLocker and Windows Defender.
 

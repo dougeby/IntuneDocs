@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Create policies and publish apps
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic tells Intune administrators how they can create policies and publish apps that they can then deploy to managed devices.
 
@@ -68,12 +68,12 @@ First you must make apps available in Intune by one of the following methods:
 Now that the app is availabile in Intune, you can deploy it to managed devices:
 - [Deploy apps to devices](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Deploy volume-purchased apps:
-	- [iOS - Volume-purchase Program](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-	- [Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-	- [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS - Volume-purchase Program](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
 	Once you have configured apps for deployment you can [configure apps](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
->[!div class="step-by-step"]
-
->[&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](/intune/company-portal-customize)  

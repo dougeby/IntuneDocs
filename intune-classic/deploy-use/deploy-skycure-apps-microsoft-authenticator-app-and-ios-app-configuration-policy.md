@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Deploy Skycure apps, Microsoft Authenticator app and iOS app configuration policy
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## Before you begin
 

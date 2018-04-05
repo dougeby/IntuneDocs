@@ -25,10 +25,10 @@ ms.custom: intune-azure
 
 ---
 
-#Microsoft Intune Windows 10 and later device restriction settings
+# Microsoft Intune Windows 10 and later device restriction settings
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
@@ -302,38 +302,38 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Windows Defender Antivirus
 
-- 	**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
-- 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
-- 	**Network Inspection System (NIS)**	- NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
-- 	**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.
-- 	**Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
-- 	**End user access to Defender**	- Controls whether the Windows Defender user interface is hidden from end users.
-When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- 	**Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.
-- 	**Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.
-- 	**Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.
-- 	**CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
-- 	**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.
-- 	**Scan incoming mail messages**	- Allows Defender to scan email messages as they arrive on the device.
-- 	**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.
-- 	**Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender cannot remove any malware found in them.
-- 	**Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).
-If the files on the drive are read-only, Defender cannot remove any malware found in them.
-- 	**Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
-- 	**Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
-- 	**Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
-- 	**Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.
-- 	**Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
-		- **Block**
-		- **Audit**
-	For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
--	**Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). The actions you can take are:
-	-	**Clean**
-	-	**Quarantine**
-	-	**Remove**
-	-	**Allow**
-	-	**User defined**
-	-	**Block**
+- **Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
+- **Behavior monitoring** - Lets Defender check for certain known patterns of suspicious activity on devices.
+- **Network Inspection System (NIS)** - NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+- **Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.
+- **Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
+- **End user access to Defender** - Controls whether the Windows Defender user interface is hidden from end users.
+  When this setting is changed, it takes effect the next time the end user's PC is restarted.
+- **Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.
+- **Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.
+- **Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.
+- **CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
+- **Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.
+- **Scan incoming mail messages** - Allows Defender to scan email messages as they arrive on the device.
+- **Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.
+- **Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender cannot remove any malware found in them.
+- **Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).
+  If the files on the drive are read-only, Defender cannot remove any malware found in them.
+- **Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
+- **Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
+- **Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
+- **Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.
+- **Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
+      - **Block**
+      - **Audit**
+  For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+- **Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). The actions you can take are:
+  -   **Clean**
+  -   **Quarantine**
+  -   **Remove**
+  -   **Allow**
+  -   **User defined**
+  -   **Block**
 
 
 
@@ -394,8 +394,8 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
    Example formats:​
 
    IPv4: 192.246.246.106:100​<br>
- IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100​<br> 
- FQDN: www.contoso.com:345
+  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100 <br> 
+  FQDN: www.contoso.com:345
 
 ## Messaging
 

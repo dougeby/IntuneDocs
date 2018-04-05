@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Create groups to organize users and devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic tells administrators how they can create groups of users in Intune.
 
@@ -89,6 +89,6 @@ Use user groups to deploy software and device policies. For example, set up an "
 
 You can find the newly created group in the **Groups** list, in the **Groups** workspace, under **All Users**. From here, you can also edit or delete the group.
 
->[!div class="step-by-step"]
-/intune/licenses-assign
->[&larr; **Manage Intune licenses**](/intune/licenses-assign)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign
+> [&larr; **Manage Intune licenses**](/intune/licenses-assign)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

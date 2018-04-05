@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect access to SharePoint Online with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use Microsoft Intune conditional access to control access to files that are located on SharePoint Online.
 Conditional access has two components:
@@ -86,16 +86,16 @@ You can protect access to SharePoint Online when **iOS** and **Android** devices
 The following are supported:
 - Windows 8.1 and later (when PCs are enrolled with Intune)
 - Windows 7.0, Windows 8.1, or Windows 10 (when PCs are domain joined),
-> [!NOTE]
->To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
+  > [!NOTE]
+  >To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
   - You must set up domain-joined PCs to [automatically register](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory. The Azure AD Device Registration service will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
 
   - If the policy is set to require a domain join and the PC isn't domain joined, a message is displayed to contact the IT admin.
 
   - If the policy is set to require a domain join or compliance, and the PC doesn't meet either requirement, a message is displayed with instructions about how to install the Company Portal app and enroll.
-  >[!NOTE]
-  >Conditional access is not supported on PCs that are running the Intune computer client.
+    >[!NOTE]
+    >Conditional access is not supported on PCs that are running the Intune computer client.
 
 [Office 365 modern authentication must be enabled](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
 
@@ -137,24 +137,24 @@ Next, configure the policy to require that only managed and compliant devices ca
 > You can also create a conditional access policy for Intune devices in the Azure AD management console (the policy is referred to as the **device-based conditional access policy** in Azure AD). In addition, you can create other conditional access policies like multi-factor authentication. You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
-![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
+   ![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  Select **Enable conditional access policy for SharePoint Online**.
+2. Select **Enable conditional access policy for SharePoint Online**.
 
-3.  Under **Application access**, you can choose to apply the conditional access policy to:
+3. Under **Application access**, you can choose to apply the conditional access policy to:
 
-    -   **All platforms**
+   - **All platforms**
 
-        This requires that any device used to access **SharePoint Online** is enrolled in Intune and is compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform isn't currently supported by Intune, access to **SharePoint Online** is blocked.
+     This requires that any device used to access **SharePoint Online** is enrolled in Intune and is compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform isn't currently supported by Intune, access to **SharePoint Online** is blocked.
 
-        Selecting the **All platforms** option means that Azure Active Directory applies this policy to all authentication requests, regardless of the platform that is reported by the client application. All platforms are required to be enrolled and become compliant, except for:
-        *	Windows devices, which are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
-	    * Unsupported platforms like Mac. However, apps using modern authentication that come from these platforms are still blocked.
+     Selecting the **All platforms** option means that Azure Active Directory applies this policy to all authentication requests, regardless of the platform that is reported by the client application. All platforms are required to be enrolled and become compliant, except for:
+     *   Windows devices, which are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
+     * Unsupported platforms like Mac. However, apps using modern authentication that come from these platforms are still blocked.
 
-    -   **Specific platforms**
+   - **Specific platforms**
 
-         The conditional access policy applies to any client app that is using modern authentication on the platforms that you specify.
+      The conditional access policy applies to any client app that is using modern authentication on the platforms that you specify.
 
      For Windows PCs, a PC must either be domain joined, or enrolled with Intune and compliant. You can set the following requirements:
 
@@ -162,28 +162,28 @@ Next, configure the policy to require that only managed and compliant devices ca
 
      -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in Intune and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
 
-4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
+4. Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
 
-  On **Android** devices, users must enable browser access. To do this, a user must choose the **Enable Browser Access** option on the enrolled device as follows:
-  1.	Open the **Company Portal** app.
-  2.	Go to the **Settings** page from the ellipsis (…) or hardware menu button.
-  3.	Press the **Enable Browser Access** button.
-  4.    In the Chrome browser, sign out of Office 365 and restart Chrome.
+   On **Android** devices, users must enable browser access. To do this, a user must choose the **Enable Browser Access** option on the enrolled device as follows:
+   1.    Open the **Company Portal** app.
+   2.    Go to the **Settings** page from the ellipsis (…) or hardware menu button.
+   3.    Press the **Enable Browser Access** button.
+   4.    In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-  On **iOS** and **Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate, as shown in the following screenshots. The user must select this certificate before they can use the browser.
+   On **iOS** and **Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate, as shown in the following screenshots. The user must select this certificate before they can use the browser.
 
-  **iOS**
+   **iOS**
 
-  ![Screenshot of the certificate prompt on an iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Screenshot of the certificate prompt on an iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy applies to. You can choose to target this to all users or just a select group of users.
+   ![Screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
+5. Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy applies to. You can choose to target this to all users or just a select group of users.
 
-6.  Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
+6. Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
 
-7.  When you're done, choose **Save**.
+7. When you're done, choose **Save**.
 
 You don't have to deploy the conditional access policy—it takes effect immediately.
 

@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Understand Microsoft Intune operations by using reports
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you create and manage Microsoft Intune reports that provide information about software, hardware, and software licenses in your organization.
 

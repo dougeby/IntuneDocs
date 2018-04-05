@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Remove devices by using factory reset or remove company data
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this by using the **Remove company data** or **Factory reset** actions. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 

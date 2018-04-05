@@ -12,7 +12,9 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bdsearchScope: - User help
+ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -68,10 +70,10 @@ There is more than one version of Windows 10, so there are two sets of steps. To
 
 2. Choose your work or school account. Depending on how your company support has set things up, you might see two accounts that look similar to the example shown below. One account has a briefcase next to it, and the other has the Microsoft logo next to it.
 
-	- If you see the account with the briefcase, select it, and look for an **Info** button under it.
-	- If you see only the account with the Microsoft logo, select the account, and look for an **Info** button under it.
+   - If you see the account with the briefcase, select it, and look for an **Info** button under it.
+   - If you see only the account with the Microsoft logo, select the account, and look for an **Info** button under it.
 
-    ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-info-button.png)
+     ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-info-button.png)
 
 3. Choose the **Info** button. A dialog opens that looks similar to the example below.
 

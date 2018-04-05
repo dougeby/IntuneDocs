@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # AirPrint settings for iOS and macOS devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use these settings to configure iOS or macOS devices to automatically connect to AirPrint compatible printers on your network. You need the IP address and resource path of your printers to proceed.
 

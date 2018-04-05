@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Data Intune sends to Google
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 When Android device management is enabled on a device, Microsoft Intune establishes a connection with Google and shares user and device information with Google. Before Microsoft Intune can establish a connection, you must create a Google account.
 

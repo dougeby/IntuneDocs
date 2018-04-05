@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Restore Intune managed iOS devices from backup
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 There will be cases when you or your users will need to restore an iOS device from a backup, such as when a user gets a new device. This topic explains additional steps that you might have to take to set up Intune management after restoring the device.
 

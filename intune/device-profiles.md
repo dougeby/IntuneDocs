@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # What are Microsoft Intune device profiles?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. Some profile examples include: 
 

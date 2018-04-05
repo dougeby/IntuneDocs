@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Get ready to configure app protection policies in the Azure portal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes the prerequisites and the steps you must complete **before** you can create app protection policies in the Azure portal.
 
@@ -79,19 +79,19 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 
 ## Prerequisites
 
--   **A Microsoft Intune subscription**. Users need Intune licenses to get apps that have app protection policies.
-You   already have an Intune subscription if you are currently using Intune to manage your devices. You also have an Intune subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying Intune to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune page](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **A Microsoft Intune subscription**. Users need Intune licenses to get apps that have app protection policies.
+  You   already have an Intune subscription if you are currently using Intune to manage your devices. You also have an Intune subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying Intune to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune page](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    To verify if you have an Intune subscription, in the Office portal, go to the **Billing** page.  If you have a subscription, you should see Intune as **Active** in the subscriptions.
+  To verify if you have an Intune subscription, in the Office portal, go to the **Billing** page.  If you have a subscription, you should see Intune as **Active** in the subscriptions.
 
--   **An Office 365 subscription**, which is required for the following:
+- **An Office 365 subscription**, which is required for the following:
 
   - To apply app protection policies to apps with multiple-identity support.
 
   - To create SharePoint Online and Exchange Online work
- accounts. Exchange on-premises and SharePoint on-premises are not supported.
+  accounts. Exchange on-premises and SharePoint on-premises are not supported.
 
--   **Skype for Business Online setup for modern authentication**. For more information, see [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Skype for Business Online setup for modern authentication**. For more information, see [Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) to create users. Azure AD authenticates users when they open the app and enter their work credentials.

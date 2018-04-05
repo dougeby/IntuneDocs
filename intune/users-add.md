@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Add users and grant administrative permission to Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *global administrator* and *service administrator* permissions.
 
@@ -41,16 +41,16 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 2. In the Office 365 menu, select **Admin**.
 3. In the Admin center, select **Add a user**.
 
-  ![Screenshot of the Add user section](media/office-add-user.png)
+   ![Screenshot of the Add user section](media/office-add-user.png)
 
 4. Specify the following user details:
-  - **First name**
-  - **Last name**
-  - **Display name**
-  - **User name** - Universal principle name (UPN) stored in Azure Active Directory used to access the service
-  - **Location**
-  - **Contact information** (optional)
-  - **Password** - Auto-generate or specify
+   - **First name**
+   - **Last name**
+   - **Display name**
+   - **User name** - Universal principle name (UPN) stored in Azure Active Directory used to access the service
+   - **Location**
+   - **Contact information** (optional)
+   - **Password** - Auto-generate or specify
 
      ![Screenshot of the new user section](media/office-add-user-details.png)
 
@@ -61,18 +61,18 @@ You can manually add users to your Intune subscription via the [Office 365 porta
 1. Sign in to [Azure portal](https://portal.azure.com) and go **All services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
 2. Select **Users** > **All users**.
 3. In the Admin center, select **New user**.
-  ![Screenshot of add New User](media/intune-add-user.png)
+   ![Screenshot of add New User](media/intune-add-user.png)
 4. Specify the following user details:
-  - **Name**
-  - **User name** - The new name in Azure Active Directory portal
-  ![Screenshot of adding name and user name](media/intune-add-user-info.png)
-  Choose **OK** to continue.
+   - **Name**
+   - **User name** - The new name in Azure Active Directory portal
+   ![Screenshot of adding name and user name](media/intune-add-user-info.png)
+   Choose **OK** to continue.
 5. Optionally, you can specify the following user properties:
-  - **Profile** - Work information including **Job title** and **Department**
-  -  **Groups** - Select groups to add for the user
-  - **Directory role** - Give the user administrative permissions including an Intune service administrator role.
+   - **Profile** - Work information including **Job title** and **Department**
+   -  **Groups** - Select groups to add for the user
+   - **Directory role** - Give the user administrative permissions including an Intune service administrator role.
 
-  Select **Create** to add the new user to Intune.
+   Select **Create** to add the new user to Intune.
 6. Select **Profile**, and then choose a **Usage location** for the new user. Usage location is required before you can assign the new user an Intune license. Choose **Save** to continue.
     ![Screenshot of usage location](media/intune-add-user-loc.png)
 7. Select **Licenses** and then choose **Assign** to assign an Intune license for this user. An Intune license is required to enroll devices or access company resources. Select **Products**, choose the license type, choose **Select**, and then choose **Assign**.

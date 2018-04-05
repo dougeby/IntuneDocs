@@ -4,14 +4,17 @@
 title: You need to turn off USB debugging | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71searchScope: - User help
+ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
+searchScope:
+ - User help
 
 # optional metadata
 

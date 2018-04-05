@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Microsoft Intune Windows 8.1 and later device restriction settings
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 8.1 and later.
 

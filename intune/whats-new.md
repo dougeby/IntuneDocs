@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # What's new in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
 
@@ -111,8 +111,8 @@ You can target compliance policies to users in user groups. With this update, yo
 
 #### New Management name column <!-- 1333586 -->
  A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula:
-- Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
-- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+- Default name for all devices: <username><em><devicetype></em><enrollmenttimestamp>
+- For bulk added devices: <PackageId/ProfileId><em><DeviceType></em><EnrollmentTime>
 
 This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
 
@@ -167,18 +167,18 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Block all incoming connections
 
    This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
-   - configd - implements DHCP and other network configuration services
-   - mDNSResponder - implements Bonjour
-   - racoon -  implements IPSec
+  - configd - implements DHCP and other network configuration services
+  - mDNSResponder - implements Bonjour
+  - racoon -  implements IPSec
 
-   To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
+    To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
 
 - Stealth mode
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
 
 #### Disable checks on device restart <!--1805490 -->
-Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
+Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
 
 #### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
 You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
@@ -248,7 +248,7 @@ We've updated the Company Portal app for Android to follow Android's [Material D
 
 ### New Windows Defender Exploit Guard settings <!-- 1631893 -->
 
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities are now available. These settings can be found at: Device configuration\Profiles\
+Six new <strong>Attack Surface Reduction</strong> settings and expanded <strong>Controlled folder access: Folder protection</strong> capabilities are now available. These settings can be found at: Device configuration\Profiles\
 Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 #### Attack Surface Reduction
@@ -263,9 +263,10 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 #### Controlled folder access
 
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+|              Setting name               |                                                              Setting options                                                              | Description |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Folder protection (already implemented) | Not configured, Enable, Audit only (already implemented)<br><br> <strong>New</strong><br>Block disk modification, Audit disk modification |             |
+
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
@@ -355,9 +356,10 @@ of the parameters immediately after running the action to update the account/par
 
 ##### Controlled folder access
 
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+|              Setting name               |                                                              Setting options                                                              | Description |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Folder protection (already implemented) | Not configured, Enable, Audit only (already implemented)<br><br> <strong>New</strong><br>Block disk modification, Audit disk modification |             |
+
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
@@ -802,7 +804,7 @@ A new alert is available for Windows AutoPilot unassigned devices on the **Micro
 #### Refresh button for Devices list    <!-- 1333581 -->
 Because the Device list does not refresh automatically, you can use the new Refresh button to update the devices that display in the list.
 
-#### Support for Symantec Cloud Certification Authority (CA)  <!-- 1333638 -->    
+#### Support for Symantec Cloud Certification Authority (CA)  <!-- 1333638 -->    
 Intune now supports Symantec Cloud CA, which allows the Intune Certificate Connector to issue PKCS certificates from the Symantec Cloud CA to Intune managed devices. If you're already using the Intune Certificate Connector with Microsoft Certification Authority (CA), you can use the existing Intune Certificate Connector setup to add the Symantec CA support.
 
 #### New items added to device inventory   <!--1404455 -->
@@ -856,15 +858,15 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
-#### New device restriction settings for Windows 10      <!-- 1308850 -->
--    Messaging (mobile only) - disable testing or MMS messages
--    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
--    Display - settings to turn on or off GDI Scaling for legacy apps
+#### New device restriction settings for Windows 10      <!-- 1308850 -->
+-    Messaging (mobile only) - disable testing or MMS messages
+-    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
+-    Display - settings to turn on or off GDI Scaling for legacy apps
 
 #### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
-You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
+You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
 
-Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
+Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
 
 Kiosk mode requires:
 
@@ -952,7 +954,7 @@ The Windows Company Portal app has a **Send Feedback** option allowing users to 
 If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
 - Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
 - Windows Phone 8.1 Company Portal app  
-  
+
 For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
 ### What do I need to do to prepare for this change?  
 lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
@@ -981,8 +983,8 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
--	UI improvements throughout the website
--	Ability to share direct links to apps
+-   UI improvements throughout the website
+-   Ability to share direct links to apps
 - Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
