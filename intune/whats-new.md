@@ -62,7 +62,7 @@ You'll also see:
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
 ### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
-You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**.
+You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Week of March 26, 2018
 
