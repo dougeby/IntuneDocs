@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: How to add Windows store apps to Microsoft Intune
+title: How to add Microsoft Store apps to Microsoft Intune
 titleSuffix:
-description: Learn about adding Windows store apps to Microsoft Intune.
+description: Learn about adding Microsoft Store (Windows Store) apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -26,11 +26,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# How to add Windows store apps to Microsoft Intune
+# Add Microsoft Store apps to Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Before you can assign, monitor, configure, or protect apps, you must add them to Intune. The following steps allow you to add a Windows store app to Microsoft Intune.
+Before you can assign, monitor, configure, or protect apps, you must add them to Intune. The following steps allow you to add a Microsoft Store app to Microsoft Intune.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
