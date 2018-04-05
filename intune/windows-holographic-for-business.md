@@ -1,12 +1,12 @@
 ---
 # required metadata[](holographic-upgrade.md)
 title: Manage Windows Holographic devices with Microsoft Intune - Azure | Microsoft Docs
-description: Using Microsoft Intune, you can complete different tasks on devices running Windows Holographic for Business, including configure the company portal, create a compliance policy, customize OMA-URI settings, deploy apps, categorize devices in groups, create profiles, restrict devices, enable software updates, set terms and conditions, configure VPN and Wi-Fi settings, and use Hello for Business.
+description: Using Microsoft Intune, you can complete different tasks on devices running Windows Holographic for Business, including configure the Company Portal, create a compliance policy, customize OMA-URI settings, deploy apps, categorize devices in groups, create profiles, restrict devices, enable software updates, set terms and conditions, configure VPN and Wi-Fi settings, and use Hello for Business.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/4/2018
+ms.date: 4/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,49 +31,58 @@ To manage devices that run Windows Holographic with Microsoft Intune, you must c
 
 To help manage and customize your devices running Windows Holographic for Business, you can use the tasks in this article. For example, you can manage software updates, configure VPN settings, and more.
 
-## Company portal
+## Company Portal
 **[Configure the Company Portal app](company-portal-app.md)**
 
-Intune includes the company portal, which is where users access company data, enroll devices, install apps, contact your IT department, and more. You can customize the Company portal app for your devices running Windows Holographic for Business.
+Intune includes the Company Portal, which is where users access company data, enroll devices, install apps, contact your IT department, and more. You can customize the Company Portal app for your devices running Windows Holographic for Business.
 
 ## Compliance policy
 **[Create a device compliance policy](compliance-policy-create-windows.md)**
 
-Compliance policies are rules and settings that devices must meet to be compliant. You can use these policies with conditional access to block access to company resources for devices that are not-compliant. In Intune, you can create compliance policies to allow or block access for devices running Windows Holographic for Business.
+Compliance policies are rules and settings that devices must meet to be compliant. You can use these policies with conditional access to block access to company resources for devices that are not-compliant. In Intune, you can create compliance policies to allow or block access for devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
 
-## Custom settings
-**[Custom device settings](custom-settings-windows-holographic.md)**
-
-To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
+See also **[Get started with compliance policies](device-compliance-get-started.md)**.
 
 ## Deploy apps
 **[Add apps to Intune](apps-add.md)**
 
 Using Intune, you can add apps to your devices running Windows Holographic for Business. There are many ways to deploy apps, including:
 
-- [Add Windows store apps](store-apps-windows.md)
+- [Add Microsoft Store apps](store-apps-windows.md)
 - [Add apps you create](lob-apps-windows.md)
-- [Assign apps to groups](https://docs.microsoft.com/en-us/intune/apps-deploy.md)
+- [Assign apps to groups](apps-deploy.md)
 
-## Device categories
+## Device categories and groups
 **[Categorize devices into groups](device-group-mapping.md)**
 
 Using Intune, you can create device categories to automatically add devices to groups based on categories that you create, such as Sales, Accounting, Human Resources, and so on. The idea is to make it easier to manage your devices running Windows Holographic for Business.
-
-## Device compliance policy
-**[Get started with compliance policies](device-compliance-get-started.md), and [create your own policy](compliance-policy-create-windows.md)**
-
-Compliance policies define rules for devices, such as requiring encryption. You can create a compliance policy for your devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
 
 ## Device configuration profiles 
 **[Get started with configuration profiles](device-profiles.md), and [create your own profile](device-profile-create.md)**
 
 Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Cortana, or uses Windows Defender Smart Screen on your devices running Windows Holographic for Business.
 
-## Device restrictions
+In you profiles, you can use OMA-URI to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
+
+#### Custom settings
+**[Custom device settings](custom-settings-windows-holographic.md)**
+
+To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
+
+#### Restrictions
 **[Update the device restriction settings](device-restrictions-windows-holographic.md)**
 
 Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from an app store, enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
+
+#### VPN settings
+**[Configure VPN settings](vpn-settings-configure.md)**
+
+Virtual private networks (VPNs) give your users secure remote access to your company network. In Intune, you can create a VPN profile that includes specific settings for your devices running Windows Holographic for Business. For example, you can create a VPN profile so all Windows Holographic for Business devices use Citrix VPN as the connection type.
+
+#### Wi-Fi settings
+**[Configure Wi-Fi settings](wi-fi-settings-configure.md)**
+
+You can also create a Wi-Fi profile in Intune to assign wireless network settings to your Windows Holographic for Business devices. When you assign a Wi-Fi profile, your end users get corporate network access, without any network configuration. For example, you can create a Wi-Fi network dedicated to only your Windows Holographic for Business devices.
 
 ## Software updates
 **[Manage software updates](windows-update-for-business-configure.md)**
@@ -83,17 +92,7 @@ Intune includes a feature called update rings for Windows 10 devices. These upda
 ## Terms and conditions
 **[Set your company's terms and conditions for user access](terms-and-conditions-create.md)**
 
-Before users can enroll devices and access your company apps, including email, you can require that users accept your company's terms and conditions. In Intune, you can define how the terms and conditions are shown in the Company portal, and also assign these terms and conditions to devices running Windows Holographic for Business.
-
-## VPN settings
-**[Configure VPN settings](vpn-settings-configure.md)**
-
-Virtual private networks (VPNs) give your users secure remote access to your company network. In Intune, you can create a VPN profile that includes specific settings for your devices running Windows Holographic for Business. For example, you can create a VPN profile so all Windows Holographic for Business devices use Citrix VPN as the connection type.
-
-## Wi-Fi settings
-**[Configure Wi-Fi settings](wi-fi-settings-configure.md)**
-
-You can also create a Wi-Fi profile in Intune to assign wireless network settings to your Windows Holographic for Business devices. When you assign a Wi-Fi profile, your end users get corporate network access, without any network configuration. For example, you can create a Wi-Fi network dedicated to only your Windows Holographic for Business devices.
+Before users can enroll devices and access your company apps, including email, you can require that users accept your company's terms and conditions. In Intune, you can define how the terms and conditions are shown in the Company Portal, and also assign these terms and conditions to devices running Windows Holographic for Business.
 
 ## Windows Hello for Business
 **[Use Windows Hello for Business](windows-hello.md)**

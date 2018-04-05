@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/3/2018
+ms.date: 4/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -290,23 +290,8 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 
 - **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
 
-- **Start menu layout** - Enter an XML file that describes how the apps appear on the Start menu. For example, save the following sample as an XML file, and then select this XML file for your layout:
+- **Start menu layout** - Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
 
-    ```xml
-    <LayoutModificationTemplate
-        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-        xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-        Version="1">
-      <RequiredStartGroupsCollection>
-        <RequiredStartGroups>
-          <AppendGroup Name="">
-            <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
-          </AppendGroup>
-        </RequiredStartGroups>
-      </RequiredStartGroupsCollection>
-     </LayoutModificationTemplate>
-    ```
 
   [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
 
