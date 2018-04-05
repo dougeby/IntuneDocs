@@ -62,7 +62,7 @@ Using Intune, you can create device categories to automatically add devices to g
 
 Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. For example, you can create a profile that enables Cortana, or uses Windows Defender Smart Screen on your devices running Windows Holographic for Business.
 
-In you profiles, you can use OMA-URI to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
+In your profiles, you can use OMA-URI to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
 
 #### [Custom device settings](custom-settings-windows-holographic.md)
 
