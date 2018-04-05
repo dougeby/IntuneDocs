@@ -70,7 +70,7 @@ To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings
 
 #### [Device restrictions](device-restrictions-windows-holographic.md)
 
-Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from an app store, enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
+Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
 
 #### [Configure VPN](vpn-settings-configure.md)
 
@@ -93,4 +93,4 @@ Before users can enroll devices and access your company apps, including email, y
 ## Windows Hello for Business
 **[Use Windows Hello for Business](windows-hello.md)**
 
-Hello for Business is an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or a virtual smart card. With Hello for Business, your Windows Holographic for Business devices can sign in with a PIN with a minimum length set by you.
+Hello for Business is an alternative sign-in method that uses an Azure Active Directory account to replace a password, smart card, or a virtual smart card. With Hello for Business, your Windows Holographic for Business devices can sign in with a PIN with a minimum length set by you.
