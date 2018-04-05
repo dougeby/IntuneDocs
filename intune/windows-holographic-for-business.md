@@ -64,23 +64,19 @@ Intune includes settings and features that you can enable or disable on differen
 
 In you profiles, you can use OMA-URI to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
 
-#### Custom settings
-**[Custom device settings](custom-settings-windows-holographic.md)**
+#### [Custom device settings](custom-settings-windows-holographic.md)
 
 To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
 
-#### Restrictions
-**[Update the device restriction settings](device-restrictions-windows-holographic.md)**
+#### [Update the device restriction settings](device-restrictions-windows-holographic.md)
 
 Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from an app store, enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
 
-#### VPN settings
-**[Configure VPN settings](vpn-settings-configure.md)**
+#### [Configure VPN settings](vpn-settings-configure.md)
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. In Intune, you can create a VPN profile that includes specific settings for your devices running Windows Holographic for Business. For example, you can create a VPN profile so all Windows Holographic for Business devices use Citrix VPN as the connection type.
 
-#### Wi-Fi settings
-**[Configure Wi-Fi settings](wi-fi-settings-configure.md)**
+#### [Configure Wi-Fi settings](wi-fi-settings-configure.md)
 
 You can also create a Wi-Fi profile in Intune to assign wireless network settings to your Windows Holographic for Business devices. When you assign a Wi-Fi profile, your end users get corporate network access, without any network configuration. For example, you can create a Wi-Fi network dedicated to only your Windows Holographic for Business devices.
 
