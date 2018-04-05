@@ -76,8 +76,8 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
-|**Android**| Yes - use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
