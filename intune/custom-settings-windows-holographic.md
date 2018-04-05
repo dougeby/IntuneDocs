@@ -32,6 +32,7 @@ ms.custom: intune-azure
 
 If you are looking for a particular setting, remember that the [Windows Holographic for Business device restriction profile](device-restrictions-windows-holographic.md) contains many built-in settings and do not require you to specify custom values.
 
+## Create the custom OMA-URI profile
 1. Use the instructions in [Configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
 2. On **Create Profile**, choose **Settings** to add one or more OMA-URI settings.
 3. On **Custom OMA-URI Settings**, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.

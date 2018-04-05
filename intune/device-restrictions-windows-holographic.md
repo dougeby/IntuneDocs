@@ -24,7 +24,7 @@ ms.custom: intune-azure
 
 ---
 
-# Microsoft Intune Windows Holographic for Business device restriction settings
+# Device restriction settings for Windows Holographic for Business in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

@@ -23,7 +23,7 @@ ms.custom: intune-azure
 
 ---
 
-# Tasks devices running Windows Holographic with Intune
+# Customize devices running Windows Holographic with Intune
 
 Microsoft Intune supports devices running Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
