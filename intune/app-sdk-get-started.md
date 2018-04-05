@@ -75,7 +75,7 @@ The Intune App SDKs for native iOS and Android are hosted on a Microsoft GitHub 
 
 If your app is a Xamarin or Cordova app, please use these SDK variants:
 
-* [Intune App SDK Xamarin Component](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune App SDK Cordova Plugin](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 It's a good idea to sign up for a GitHub account that you can use to fork and pull from our repositories. GitHub lets developers communicate with our product team, open issues and receive quick responses, view release notes, and provide feedback to Microsoft. For questions on the Intune App SDK GitHub, contact msintuneappsdk@microsoft.com.
@@ -90,7 +90,7 @@ You will need one of the following developer guides to help you integrate the In
 
 * **[Intune App SDK Cordova Plugin guide](app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
 
-* **[Intune App SDK Xamarin Component guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
+* **[Intune App SDK Xamarin Bindings guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Xamarin for Intune app protection policies.
 
 
 
