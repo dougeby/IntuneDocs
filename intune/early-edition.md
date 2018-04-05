@@ -81,8 +81,8 @@ New rules will be available that let you automatically remove devices that haven
 ### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
 You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows AutoPilot profiles** > **Create New** > **Enrollment settings**. 
 
-### Advanced Thread Protection integrated with Intune <!-- 1629303 -->
-[Advanced Thread Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
+### Advanced Threat Protection integrated with Intune <!-- 1629303 -->
+[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
 
 ### Uninstall the latest from Windows 10 software updates <!-- 1732948 -->
 Should you discover a breaking issue on your Windows 10 machines, you will be able to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update will only be available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
@@ -131,6 +131,9 @@ In a future update, admins will be to enable Always On for Windows 10 VPN profil
 - The network on the device changes
 - The screen on the device turns back on after being turned off
 
+### Improved error messaging for Apple MDM Push Certificate upload failure <!-- 2172331 -->
+
+The error message will explain that the same Apple ID must be used when renewing an existing MDM certificate.
 
 <!-- 1803 start -->
 
