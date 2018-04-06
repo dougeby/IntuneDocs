@@ -191,6 +191,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
+- **Display web results in search** - Block or allow web results to appear in searches made on the device.
 
 ## Cloud and Storage
 - 	**Microsoft account** - Lets the user associate a Microsoft account with the device.
