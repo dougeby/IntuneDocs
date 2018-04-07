@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -121,7 +121,7 @@ To enable the Intune App SDK, follow these steps:
 3. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
   > [!NOTE]
-	> Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. For example:
+	> Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. YOURBUNDLESEEDID is typically a 32-bit hex number. For example:
 	```xml
 	<key>keychain-access-groups</key>
 	<array>
