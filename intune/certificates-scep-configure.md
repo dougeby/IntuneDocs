@@ -405,6 +405,6 @@ Consider the following before you assign certificate profiles to groups:
 - Although you assign each profile separately, you also need to assign the Trusted Root CA and the SCEP or PKCS profile. Otherwise, the SCEP or PKCS certificate policy fails.
 
     > [!NOTE]
-    > For iOS you should expect to see multiple copies of the certificate in the management profile
+    > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
     
 For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).
