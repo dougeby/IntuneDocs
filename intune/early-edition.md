@@ -63,6 +63,13 @@ New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/acces
 
 Intune admins will be able to set an application launch requirement to enforce a passcode instead of a numeric MAM PIN. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. Intune supports passcode in a similar way to the existing numeric PIN... being able to set a minimum length, allowing repeat characters and sequences through the admin console. This feature requires the latest version of Company Portal on Android. This feature is already available for iOS.
 
+###  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
+Two new properties will be available to block when you configure device restrictions for Android devices: 
+- Camera: Blocks access to all cameras on the device
+- Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
+
+Applies to Android for Work.
+
 ### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Microsoft Intune will provide the capability to install macOS LOB apps from the Azure portal. You will be able to add a macOS LOB app to Intune after it has been pre-processed by the tool available in GitHub. In the Azure portal, choose **Mobile apps** from the **Intune** blade. On the **Mobile apps** blade, choose **Apps** > **Add**. On the **Add App** blade, select **Line-of-business app**. 
 
@@ -134,6 +141,14 @@ In a future update, admins will be to enable Always On for Windows 10 VPN profil
 ### Improved error messaging for Apple MDM Push Certificate upload failure <!-- 2172331 -->
 
 The error message will explain that the same Apple ID must be used when renewing an existing MDM certificate.
+
+###  Device profile chart and status list show all devices in a group <!-- 1449153 eeready -->
+When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
+
+In a future update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) will only show the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
+
+While this update is being made, the graphical user chart is temporarily removed. 
+
 
 <!-- 1803 start -->
 
