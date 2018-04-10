@@ -132,7 +132,7 @@ Because Intune app protection policies are targeted to a user’s identity, the 
 To create these policies, browse to **Mobile apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
 
 > [!NOTE]
-> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state ](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:

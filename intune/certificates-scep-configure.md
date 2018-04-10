@@ -130,15 +130,15 @@ In this task, you:
 
 Example template configuration:
 
-![Template, request handling tab](.\media\scep_ndes_request_handling.png)
+![Template, request handling tab](./media/scep_ndes_request_handling.png)
 
-![Template, subject name tab](.\media\scep_ndes_subject_name.jpg)
+![Template, subject name tab](./media/scep_ndes_subject_name.jpg)
 
-![Template, security tab](.\media\scep_ndes_security.jpg)
+![Template, security tab](./media/scep_ndes_security.jpg)
 
-![Template, extensions tab](.\media\scep_ndes_extensions.jpg)
+![Template, extensions tab](./media/scep_ndes_extensions.jpg)
 
-![Template, issuance requirements tab](.\media\scep_ndes_issuance_reqs.jpg)
+![Template, issuance requirements tab](./media/scep_ndes_issuance_reqs.jpg)
 
 > [!IMPORTANT]
 > For Application Policies, only add the application policies required. Confirm your choices with your security admins.
@@ -234,12 +234,12 @@ In this task, you:
 
 4. In IIS manager, select **Default Web Site** > **Request Filtering** > **Edit Feature Setting**. Change the **Maximum URL length** and **Maximum query string** to *65534*, as shown:
 
-    ![IIS max URL and query length](.\media\SCEP_IIS_max_URL.png)
+    ![IIS max URL and query length](./media/SCEP_IIS_max_URL.png)
 
 5. Restart the server. Running **iisreset** on the server is not sufficient to finalize these changes.
 6. Browse to `http://*FQDN*/certsrv/mscep/mscep.dll`. You should see an NDES page similar to the following:
 
-    ![Test NDES](.\media\SCEP_NDES_URL.png)
+    ![Test NDES](./media/SCEP_NDES_URL.png)
 
     If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 
