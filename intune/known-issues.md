@@ -28,8 +28,7 @@ ms.custom: intune-azure
 # Known issues in Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use this article to learn about any known issues in Microsoft Intune.
 

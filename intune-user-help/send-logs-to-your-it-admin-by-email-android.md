@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/10/2018
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,7 +47,9 @@ To email logs to your company support:
 	> [!NOTE]
 	> **Menu** could be a software button or a hardware button, depending on which Android device you have.
 
+
 3.  Tap **Send Email & Upload Logs**.
 4.  After the upload is complete, tap your email app. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you encountered.
+
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

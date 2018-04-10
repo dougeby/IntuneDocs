@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 # Change log for the Intune Data Warehouse API
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 This article lists the Microsoft Intune device restrictions settings that you can configure for devices running Android for Work.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Work profile settings
 

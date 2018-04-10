@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Supported operating systems and browsers
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Before setting up Microsoft Intune, review the supported operating systems and browsers.
 
@@ -40,7 +40,7 @@ For help installing Intune on your device, see [using managed devices to get wor
 
 You can manage devices running the following operating systems:
 
-[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 ### Supported Samsung Knox Standard devices
 

@@ -26,7 +26,7 @@ ms.custom: intune-classic
 ---
 # Configure certificate infrastructure
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
@@ -41,21 +41,21 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 ## On-premises infrastructure description
 
 
--    **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
+- **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
 
--  **Certification Authority**: An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
-    If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
+- **Certification Authority**: An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
+   If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
--  **Computer that can communicate with Certification Authority**: Alternatively, use the Certification Authority computer itself.
--  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
--  **Web Application Proxy server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
-    -  Allows devices to receive certificates using an Internet connection.
-    -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
+- **Computer that can communicate with Certification Authority**: Alternatively, use the Certification Authority computer itself.
+- **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
+- **Web Application Proxy server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
+   -  Allows devices to receive certificates using an Internet connection.
+   -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
 
- > [!NOTE]           
-> -    The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service (NDES). This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
->-  Also, the server that hosts WAP must have an SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
-    For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
+  > [!NOTE]           
+  > -    The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service (NDES). This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
+  >-  Also, the server that hosts WAP must have an SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
+   For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Certificates and Templates
@@ -126,36 +126,36 @@ Download, install, and configure the Certificate Connector.
 
 ##### To download, install, and configure the Certificate Connector
 
-1.  Open the [Intune administration console](https://manage.microsoft.com), and then choose **Admin** &gt; **Mobile Device Management** &gt; **Certificate Connector** &gt; **Download Certificate Connector**.
+1. Open the [Intune administration console](https://manage.microsoft.com), and then choose **Admin** &gt; **Mobile Device Management** &gt; **Certificate Connector** &gt; **Download Certificate Connector**.
 
-2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
+2. After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
 
-  Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
+   Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
 
    <!-- Not sure about step 3 below -->
 
-3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed in Task 3.
+3. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed in Task 3.
 
-    After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, choose **Next** to view the properties of that certificate. Then choose **Next**, and then **Install**.
+   After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, choose **Next** to view the properties of that certificate. Then choose **Next**, and then **Install**.
 
-4.  After the wizard completes, but before closing the wizard, click **Launch the Certificate Connector UI**.
+4. After the wizard completes, but before closing the wizard, click **Launch the Certificate Connector UI**.
 
-    > [!TIP]
-    > If you close the wizard before launching the Certificate Connector UI, you can reopen it by running the following command:
-    >
-    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+   > [!TIP]
+   > If you close the wizard before launching the Certificate Connector UI, you can reopen it by running the following command:
+   >
+   > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5.  In the **Certificate Connector** UI:
+5. In the **Certificate Connector** UI:
 
-    a. Choose **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+   a. Choose **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
 
-    b. Select the **Advanced** tab, and then provide credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority.
+   b. Select the **Advanced** tab, and then provide credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority.
 
-    c. Choose **Apply**.
+   c. Choose **Apply**.
 
-    You can now close the Certificate Connector UI.
+   You can now close the Certificate Connector UI.
 
-6.  Open a command prompt and type **services.msc**. Then press **Enter**, right-click the **Intune Connector Service**, and choose **Restart**.
+6. Open a command prompt and type **services.msc**. Then press **Enter**, right-click the **Intune Connector Service**, and choose **Restart**.
 
 
 ### Next steps

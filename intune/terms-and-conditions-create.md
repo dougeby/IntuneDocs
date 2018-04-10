@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Manage your company's terms and conditions for user access
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune admin, you can require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access resources like company apps and email. Configuration of terms and conditions is optional.
 

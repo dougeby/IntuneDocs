@@ -28,7 +28,7 @@ ms.suite: ems
 
 # How to educate your end users about Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](app-sdk.md).
 

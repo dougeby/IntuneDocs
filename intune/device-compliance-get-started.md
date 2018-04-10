@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Get started with device compliance policies in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Compliance requirements are essentially rules, such as requiring a device PIN, or requiring encryption. Device compliance policies define these rules and settings that a device must follow to be considered compliant. These rules include:
 

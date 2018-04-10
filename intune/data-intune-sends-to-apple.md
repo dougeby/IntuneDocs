@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # Data Intune sends to Apple
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 When any of the following Apple services are enabled on a device, Microsoft Intune establishes a connection with Apple and shares user and device information with Apple: 
 

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enroll Android devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune administrator, you can manage Android devices, including Samsung Knox Standard devices. You can also manage the work profile [Android for Work devices](#enable-enrollment-of-android-for-work-devices).
 

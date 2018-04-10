@@ -27,18 +27,18 @@ ms.custom: intune-classic EXPIERIMENT
 ---
 # Choose how to enroll mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 
 ## **How will you manage dedicated, corporate-owned devices?**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[iOS Setup Assistant >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Tag with IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [iOS Setup Assistant >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [Tag with IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   You can enroll corporate-owned devices with dedicated users in the following ways:
 
@@ -49,4 +49,4 @@ Your answers to this series of questions will help determine the best enrollment
   - **Tag with IMEI number** - By importing the international mobile equipment identity (IMEI) numbers of company-owned devices you can tag them as company-owned devices in Intune. This is the only way to identify dedicated ("single-user") Windows and Android devices as corporate-owned. iOS devices that won't be enrolled with Apple's device enrollment program or Apple Configurator can also be tagged with an IMEI number. After predeclaring the device so it will be tagged as "corporate", you can distribute devices to users. Users can then enroll their devices as a dedicated devices by installing the Company Portal to access company resources such as email, apps, and data.
 
 > [!div class="button"]
-[< Back](choose-how-to-enroll-devices3.md)
+> [< Back](choose-how-to-enroll-devices3.md)

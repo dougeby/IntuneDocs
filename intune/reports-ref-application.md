@@ -131,11 +131,13 @@ The **MobileAppInstallState** entity represents the install state for a mobile a
 
 The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
 
-| Property | Description |
-|---|---|
-| DateKey | Key of the date when the app install status was recorded. |
-| AppKey | Key of the mobile app used to identify an instance of AppRevision. |
-| DeviceKey | Key of a targeted device used to identify an instance of Device. |
-| UserKey | Key of a targeted user used to identify an instance of User. |
-|AppInstallStateKey | Key of the app install state used to identify an instance of MobileAppInstallState. |
-| ErrorCode | The error code returned by the app installer, the mobile platform or the service pertaining to the installation of the app. |
+
+|      Property      |                                                         Description                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Key of the date when the app install status was recorded.                                  |
+|       AppKey       |                             Key of the mobile app used to identify an instance of AppRevision.                              |
+|     DeviceKey      |                              Key of a targeted device used to identify an instance of Device.                               |
+|      UserKey       |                                Key of a targeted user used to identify an instance of User.                                 |
+| AppInstallStateKey |                     Key of the app install state used to identify an instance of MobileAppInstallState.                     |
+|     ErrorCode      | The error code returned by the app installer, the mobile platform or the service pertaining to the installation of the app. |
+

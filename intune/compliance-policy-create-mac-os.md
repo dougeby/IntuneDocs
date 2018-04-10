@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Create a device compliance policy for macOS devices with Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 An Intune device compliance policy for macOS specifies the rules and settings that macOS devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal.
 
