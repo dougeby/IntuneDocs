@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -259,7 +259,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
-- **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+- **Kiosk mode** - Identifies the type of kiosk mode supported by the policy. Options include:
 
   - **Not Configured** (default) - The policy does not enable a kiosk mode. 
   - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
