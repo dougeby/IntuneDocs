@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 04/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -938,7 +938,14 @@ The first version of the Intune Data Warehouse data model only contained recent,
 There is nothing you need to do to prepare for this change, since these are minor workflow UI updates.
 For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
 
-
+### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune 
+We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
+ 
+#### How does this affect me? 
+Our records indicate that you are using the Windows 10 > Device Restrictions > Kiosk (preview) setting. This will be renamed in May, to Windows 10 > Device Restrictions > Kiosk (obsolete) in the UI to indicate that it is no longer recommended for use. It will, however, continue to function until the July update to Intune. Then, it will be made obsolete in the backend and will no longer work. As an alternative, we’re releasing a new Device configuration profile in May: Windows 10 > Kiosk, containing the settings to configure Kiosks on Windows 10 RS4 and later.
+ 
+#### What do I need to do to prepare for this change?  
+When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
 ### Plan for Change: Update where you Configure your App Protection Policies
 
