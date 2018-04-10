@@ -91,9 +91,6 @@ You will be able to prevent the installation of consumer apps and experiences on
 ### Advanced Threat Protection integrated with Intune <!-- 1629303 -->
 [Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
 
-### Uninstall the latest from Windows 10 software updates <!-- 1732948 -->
-Should you discover a breaking issue on your Windows 10 machines, you will be able to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update will only be available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
-
 ### New enrollment steps for users on devices with macOS High Sierra 10.13.2+ <!--1734567 -->
 macOS high Sierra 10.13.2 introduced the concept of "User Approved" MDM enrollment. In the future, approved enrollments will allow Intune to manage some security-sensitive settings. For more information, see Apple's support documentation here: https://support.apple.com/HT208019.
 

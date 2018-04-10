@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 04/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -142,9 +142,6 @@ With this update, there is a new setting in **Android for Work** > **Device rest
 - Contact sharing via Bluetooth
 
 The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
-
-#### Local device security option settings <!-- 1251887 -->
-You can now enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
 #### Configure Gatekeeper to control macOS app download source <!-- 1690459 -->
 
@@ -938,7 +935,14 @@ The first version of the Intune Data Warehouse data model only contained recent,
 There is nothing you need to do to prepare for this change, since these are minor workflow UI updates.
 For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
 
+### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
+We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
 
+#### How does this affect me? 
+Our records indicate that you are using the Windows 10 > Device Restrictions > Kiosk (preview) setting. This will be renamed in May, to Windows 10 > Device Restrictions > Kiosk (obsolete) in the UI to indicate that it is no longer recommended for use. It will, however, continue to function until the July update to Intune. Then, it will be made obsolete in the backend and will no longer work. As an alternative, we’re releasing a new Device configuration profile in May: Windows 10 > Kiosk, containing the settings to configure Kiosks on Windows 10 RS4 and later.
+
+#### What do I need to do to prepare for this change?  
+When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
 ### Plan for Change: Update where you Configure your App Protection Policies
 
@@ -954,13 +958,15 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 ### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
-### How does this affect me?  
+
+#### How does this affect me?  
 If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
 - Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
 - Windows Phone 8.1 Company Portal app  
   
 For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
-### What do I need to do to prepare for this change?  
+
+#### What do I need to do to prepare for this change?  
 lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
 - Use the Feedback Hub app on Windows 10
 - Send an email to WinCPfeedback@microsoft.com  
@@ -981,6 +987,9 @@ Over a year ago, we announced [public preview of Intune on Azure](https://cloudb
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
 
 ## What's coming
+
+### Local device security option settings <!-- 1251887 -->
+You'll be able to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
