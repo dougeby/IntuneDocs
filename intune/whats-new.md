@@ -143,9 +143,6 @@ With this update, there is a new setting in **Android for Work** > **Device rest
 
 The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
 
-#### Local device security option settings <!-- 1251887 -->
-You can now enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
-
 #### Configure Gatekeeper to control macOS app download source <!-- 1690459 -->
 
 You can configure Gatekeeper to protect your devices from apps by controlling where the apps can be downloaded from. You can configure the following download sources: **Mac App Store**, **Mac App Store and identified developers**, or **Anywhere**. You can configure whether users can install an app using control-click to override these Gatekeeper controls.
@@ -981,6 +978,9 @@ Over a year ago, we announced [public preview of Intune on Azure](https://cloudb
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
 
 ## What's coming
+
+### Local device security option settings <!-- 1251887 -->
+You'll be able to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
