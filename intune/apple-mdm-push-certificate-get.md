@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune enables mobile device management (MDM) of iPads, iPhones, and Mac computers and gives users access to company email and apps. An Apple MDM Push certificate is required for Intune to manage iOS and MacOS devices. After you add the certificate to Intune, your users can enroll their devices using:
+Intune enables mobile device management (MDM) of iPads, iPhones, and Mac computers and gives users access to company email and apps. An Apple MDM Push certificate is required for Intune to manage iOS and macOS devices. After you add the certificate to Intune, your users can enroll their devices using:
 
 - The Company Portal app.
 
