@@ -183,10 +183,6 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 
 <!-- 1802 start -->
 
-### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
-
-On the Enrollment Overview page, you will be able to view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you will be able to drill into details to find troubleshooting advice and remediation suggestions.
-
 ### New printer settings for education profiles <!-- 1308900 -->
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
