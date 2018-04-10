@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,7 @@ You can use Intune custom configuration polices to create VPN profiles for the f
 * Windows Phone 8.1 and later
 * Enrolled devices that run Windows 10 desktop
 * Windows 10 Mobile
+* Windows Holographic for Business
 
 ## VPN connection types
 
@@ -71,21 +72,21 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 3. Select **Device configuration** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the VPN profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for VPN device settings:
-   - **Android**
-   - **Android for Work**
-   - **iOS**
-   - **macOS**
-   - **Windows Phone 8.1**
-   - **Windows 8.1 and later**
-   - **Windows 10 and later**
+  - **Android**
+  - **Android for Work**
+  - **iOS**
+  - **macOS**
+  - **Windows Phone 8.1**
+  - **Windows 8.1 and later**
+  - **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **VPN**.
 7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
-   - [Android and Android for Work settings](vpn-settings-android.md)
-   - [iOS settings](vpn-settings-ios.md)
-   - [macOS settings](vpn-settings-macos.md)
-   - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
-   - [Windows 8.1 settings](vpn-settings-windows-8-1.md)
-   - [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
+  - [Android and Android for Work settings](vpn-settings-android.md)
+  - [iOS settings](vpn-settings-ios.md)
+  - [macOS settings](vpn-settings-macos.md)
+  - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
+  - [Windows 8.1 settings](vpn-settings-windows-8-1.md)
+  - [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
 8. When you're done, **Create** your profile
 
 The profile is created and appears on the profiles list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).

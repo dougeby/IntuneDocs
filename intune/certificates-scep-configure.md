@@ -406,4 +406,7 @@ Consider the following before you assign certificate profiles to groups:
 - To publish a certificate to a device quickly after the device enrolls, assign the certificate profile to a user group rather than to a device group. If you assign to a device group, a full device registration is required before the device receives policies.
 - Although you assign each profile separately, you also need to assign the Trusted Root CA and the SCEP or PKCS profile. Otherwise, the SCEP or PKCS certificate policy fails.
 
+    > [!NOTE]
+    > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
+    
 For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).

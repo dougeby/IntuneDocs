@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune device restriction settings for Windows 10
-titlesuffix:
+title: Device restriction settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
 description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +24,7 @@ ms.custom: intune-azure
 
 ---
 
-# Microsoft Intune Windows 10 and later device restriction settings
+# Device restriction for Windows 10 (and newer) settings in Intune
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,7 +56,6 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 
-
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
 	- 	**Required password type** - Specifies whether the password must be numeric only, or alphanumeric.
@@ -81,7 +79,6 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
 - **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
-
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -143,8 +140,6 @@ You can add apps that should have a different privacy behavior from what you def
 -	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
 -	**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.
 
-
-
 ## App Store
 
 - 	**App store (mobile only)** - Enable or block use of the app store on Windows 10 Mobile devices.
@@ -158,8 +153,6 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.
 - 	**Apps from the store only** - Configures whether users can install apps from places other than the app store.
-
-
 
 ## Edge Browser
 
@@ -198,6 +191,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
+- **Display web results in search** - Block or allow web results to appear in searches made on the device.
 
 ## Cloud and Storage
 - 	**Microsoft account** - Lets the user associate a Microsoft account with the device.
@@ -221,7 +215,6 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Manual Wi-Fi configuration** - Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
 - 	**Wi-Fi scan interval** – Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
 -   **Bluetooth allowed services** – Specify as hex strings, a list of allowed Bluetooth services and profiles.
-
 
 ## Control Panel and Settings
 
@@ -264,85 +257,89 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Kiosk (Preview)
 
--   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
-      - **Not Configured** (default) - The policy does not enable a kiosk mode. 
-      - **Single app kiosk** - The profile enables the device as a single app kiosk.
-      - **Multi-app kiosk** - The profile enables the device as a multi-app kiosk.
+- **Kiosk mode** - Identifies the type of kiosk mode supported by the policy. Options include:
 
-    Single app kiosks require the following settings:
+  - **Not Configured** (default) - The policy does not enable a kiosk mode. 
+  - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
+  - **Multi-app kiosk** - The profile enables the device to run multiple apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need, and removing from their view the apps they don’t need.
 
-      - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
+#### Single app kiosks
+Enter the following settings:
 
-         For devices in public environments, use accounts with minimal privileges to prevent unauthorized activity.  
+- **User account** - Enter the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, enter the account using the `domain\username@tenant.org` format. 
 
-      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `AzureAD\user@contoso.com` format.
 
-    [Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
+- **Application user model ID (AUMID) of app** - Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi-app kiosk configurations include the following settings:
+#### Multi-app kiosks
+[Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) use a kiosk configuration that lists the allowed apps, and other settings. 
 
-    - **Kiosk configuration name** - A friendly name used to identify a given configuration.
+Use the **Add** button to create a kiosk configuration (or select an existing configuration). Then, enter the following settings:
 
-    - One or more **kiosk apps** consisting of:
+- **Kiosk configuration name** - Enter a friendly name used to identify the configuration.
 
-        - **App Type** that specifies the type of the kiosk app.  Supported values include:   
+- **Kiosk apps** - Enter the apps that are available on the Start menu. The apps you add are the only apps the user can open.
 
-            - **Win32 App** - A traditional desktop app. (You need the fully qualified pathname of the executable, with respect to the device.)
+  - **App Type** - Choose the type of the kiosk app:
+    - **Win32 App** - A traditional desktop app. You need the fully qualified pathname of the executable, with respect to the device.
+    - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identifier** - Enter the fully qualified pathname for the executable file (Win32 apps), or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 
-        - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+- **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
 
-    - **Taskbar** indicates whether the taskbar is displayed (**Enabled**) or hidden (**Not configured**) on the kiosk.
+- **Start menu layout** - Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
 
-    - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration. The account may be local to the device or an Azure AD account login associated with the kiosk app. Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
+  [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
+
+- **Assigned users** - Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account login associated with the kiosk app.
+
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
 ## Windows Defender Antivirus
 
-- **Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
-- **Behavior monitoring** - Lets Defender check for certain known patterns of suspicious activity on devices.
-- **Network Inspection System (NIS)** - NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
-- **Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.
-- **Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
-- **End user access to Defender** - Controls whether the Windows Defender user interface is hidden from end users.
-  When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- **Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.
-- **Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.
-- **Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.
-- **CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
-- **Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.
-- **Scan incoming mail messages** - Allows Defender to scan email messages as they arrive on the device.
-- **Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.
-- **Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender cannot remove any malware found in them.
-- **Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).
-  If the files on the drive are read-only, Defender cannot remove any malware found in them.
-- **Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
-- **Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
-- **Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
-- **Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.
-- **Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
-      - **Block**
-      - **Audit**
-  For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). The actions you can take are:
-  -   **Clean**
-  -   **Quarantine**
-  -   **Remove**
-  -   **Allow**
-  -   **User defined**
-  -   **Block**
-
-
+- 	**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.
+- 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
+- 	**Network Inspection System (NIS)**	- NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+- 	**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.
+- 	**Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
+- 	**End user access to Defender**	- Controls whether the Windows Defender user interface is hidden from end users.
+When this setting is changed, it takes effect the next time the end user's PC is restarted.
+- 	**Signature update interval (in hours)** - Specify the interval at which Defender checks for new signature files.
+- 	**Monitor file and program activity** - Allows Defender to monitor file and program activity on devices.
+- 	**Days before deleting quarantined malware** - Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed.
+- 	**CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
+- 	**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.
+- 	**Scan incoming mail messages**	- Allows Defender to scan email messages as they arrive on the device.
+- 	**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.
+- 	**Scan mapped network drives during a full scan** - Lets Defender scan files on mapped network drives.<br>If the files on the drive are read-only, Defender cannot remove any malware found in them.
+- 	**Scan files opened from network folders** - Lets Defender scan files on shared network drives (for example, files accessed from a UNC path).
+If the files on the drive are read-only, Defender cannot remove any malware found in them.
+- 	**Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
+- 	**Prompt users before sample submission** - Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
+- 	**Time to perform a daily quick scan** - Lets you schedule a quick scan that occurs daily at the time you select.
+- 	**Type of system scan to perform** - Lets you specify the level of scanning that is performed when you schedule a system scan.
+- 	**Detect potentially unwanted applications**  – Choose the level of protection when Windows detects potentially unwanted applications from:
+		- **Block**
+		- **Audit**
+	For more information about potentially unwanted apps, see [this topic](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+-	**Actions on detected malware threats** – Enable this option to specify the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). The actions you can take are:
+	-	**Clean**
+	-	**Quarantine**
+	-	**Remove**
+	-	**Allow**
+	-	**User defined**
+	-	**Block**
 
 ### Windows Defender Antivirus Exclusions
 
 - 	**Files and folders to exclude from scans and real-time protection** - Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - 	**File extensions to exclude from scans and real-time protection** - Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions are not included in any real-time or scheduled scans.
 - 	**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes are not included in any real-time, or scheduled scans.
-
 
 ## Network proxy
 
@@ -355,9 +352,7 @@ You can add apps that should have a different privacy behavior from what you def
 	- 	**Proxy exceptions** - Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
 	- 	**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option.
 
-
 ## Windows Spotlight
-
 
 - **Windows Spotlight** – Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings are not available.
 	- **Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.
@@ -367,7 +362,6 @@ You can add apps that should have a different privacy behavior from what you def
 	- **Windows Spotlight in action center** – Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
 	- **Windows Spotlight personalization** – Stops Windows Spotlight from personalizing results based on the usage of a device.
 	- **Windows welcome experience** – Block the Windows welcome experience that shows the user information about new, or updated features.
-
 
 ## Projection
 
@@ -394,23 +388,11 @@ You can add apps that should have a different privacy behavior from what you def
    Example formats:​
 
    IPv4: 192.246.246.106:100​<br>
-  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100 <br> 
-  FQDN: www.contoso.com:345
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100​<br> 
+ FQDN: www.contoso.com:345
 
 ## Messaging
 
 - **Message sync (mobile only)** - Disable Messaging Everywhere and text message backup and restore.
 - **MMS (mobile only)** - Disable the MMS send/receive functionality on the device.
 - **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
-
-
-
-
-
-
-
-
-
-
-
-
