@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Manage volume-purchased apps and books with Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 

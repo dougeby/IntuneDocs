@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Enroll corporate-owned devices with the device enrollment manager in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices (that is, with no user affinity) rather than personal ("BYOD") devices.  
 
@@ -73,22 +73,22 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Add a device enrollment manager
 
-1.  Ensure that the user that you want to add to the DEM account already exists. If you need to add the user, sign in to the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1. Ensure that the user that you want to add to the DEM account already exists. If you need to add the user, sign in to the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) with your admin credentials.
+2. Sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) with your admin credentials.
 
-3.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
+3. In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
 
-4.  Choose **Add…**. The **Add Device Enrollment Manager** dialog box opens.
+4. Choose **Add…**. The **Add Device Enrollment Manager** dialog box opens.
 
-5.  Enter the **User ID** of the Intune account, and then choose **OK**.
+5. Enter the **User ID** of the Intune account, and then choose **OK**.
 
-    The DEM user can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices. For the end-user enrollment steps for each platform, see:
+   The DEM user can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices. For the end-user enrollment steps for each platform, see:
 
-  - [Enroll your iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Enroll your Android device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Enroll your iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Enroll your Android device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## Delete a device enrollment manager from Intune
 

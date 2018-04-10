@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Configure a custom domain name
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 This topic tells administrators how you can create a DNS CNAME to simplify and customize your logon experience using Microsoft Intune.
 

@@ -29,7 +29,7 @@ ms.suite: ems
 
 # Help end users understand Company Portal app messages
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > The following information applies only on devices with Android 6.0+.

@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Android for Work policy settings in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on [Android for Work devices](android-for-work.md).
 

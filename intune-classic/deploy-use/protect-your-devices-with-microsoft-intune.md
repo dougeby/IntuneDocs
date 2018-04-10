@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect devices with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offers a full set of capabilities to help you protect the devices you manage, and the data stored on those devices. Read this topic to learn the basics of these capabilities and to find out how to learn more.
 

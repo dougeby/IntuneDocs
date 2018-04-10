@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Device restriction settings for Windows Holographic for Business in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The following device restriction settings are supported on devices running Windows Holographic for Business, such as Microsoft Hololens.
 

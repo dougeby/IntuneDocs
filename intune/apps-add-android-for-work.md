@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How to assign apps to Android for Work devices with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work is a program for Android devices. All apps you install on Android for Work devices come from the Google Play for Work store. You assign apps to Android for Work devices in a different way than you assign them to standard Android devices. You log on to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal. From here, you can manage assignment of the app in the same way you would assign any other app.
 
@@ -49,7 +49,7 @@ Make sure you have configured Intune and Android for Work to work together in th
 
     ![Example - Approve app in the Google Play for Work store](media/approve.png)</br>
     
-  A window for the app opens asking you to give permissions for the app to perform various operations. 
+   A window for the app opens asking you to give permissions for the app to perform various operations. 
 
 4. Select **Approve** to accept the app permissions and continue.</br>
 

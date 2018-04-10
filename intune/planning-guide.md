@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Intune deployment planning, design, and implementation guide
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](./includes/note-for-both-portals.md)]
 
 A successful Microsoft Intune deployment starts with having a good plan and design. The purpose of this guide is to step you through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.
 

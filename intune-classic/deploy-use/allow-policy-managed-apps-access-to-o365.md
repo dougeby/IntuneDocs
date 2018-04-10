@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Allow only mobile apps that support Intune app protection policies to access Office 365 services
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [Intune app protection policies](protect-apps-and-data-with-microsoft-intune.md) help protect your company data on devices that are enrolled for management in Intune. You can also use app protection policies on **employee owned devices that are not enrolled for management in Intune**.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using app-based conditional access with MAM, you can create a policy that allows only mobile apps that support Intune app protection policies to access O365 services like Exchange Online.
 

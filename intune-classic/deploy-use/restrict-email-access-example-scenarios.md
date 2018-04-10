@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect access to email with Microsoft Intune: Example scenarios
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## Scenario 1: Block users from using noncompliant devices to access Exchange Online
 ### Scenario requirements
@@ -58,9 +58,9 @@ The following flow is used in the scenario to decide which devices can access Ex
 
 To accomplish this, configure the following conditional access policy for Exchange on-premises with the following settings:
 
--   Choose the option **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled in Microsoft Intune**. By choosing this option, you enable the conditional access policy, which requires that all devices must be enrolled in Microsoft Intune and meet the compliancy policy rules before they can access Exchange.
+- Choose the option **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled in Microsoft Intune**. By choosing this option, you enable the conditional access policy, which requires that all devices must be enrolled in Microsoft Intune and meet the compliancy policy rules before they can access Exchange.
 
--   For advanced Exchange Active Sync settings, create:
+- For advanced Exchange Active Sync settings, create:
 
   -   A platform exception that allows devices that run iOS to access Exchange.   
 

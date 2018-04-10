@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Create a device compliance policy in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic outlines the steps you can use to create a compliance policy that a device must follow in order to be considered compliant.
 
@@ -61,6 +61,7 @@ To specify the time the device has to check in before a device is considered not
 The following table lists the compliance policy settings and the platforms on which they are supported.
 
 -------------
+
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
 |Require a password to unlock mobile devices|iOS 6 and later|Android 4.0 and later <br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later|
@@ -84,9 +85,9 @@ The following table lists the compliance policy settings and the platforms on wh
 
 Select one of the following to learn more about compliance settings supported on each platform:
 > [!div class="op_single_selector"]
-- [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Windows and Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for Windows and Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## Next steps

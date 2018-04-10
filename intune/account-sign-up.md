@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Sign up or sign in to Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 This topic tells system administrators how you can sign up for an Intune account.
 
@@ -42,11 +42,11 @@ If you already have a work or school account, **sign in** with that account and 
 
 ## How to sign up or sign in to Intune
 
-1.  Visit the [Intune Sign-up page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Visit the [Intune Sign-up page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
-  ![Screenshot of the Microsoft Intune Trial account signup web page](./media/account-sign-up-site.png)
+   ![Screenshot of the Microsoft Intune Trial account signup web page](./media/account-sign-up-site.png)
 
-2.  On the Sign-up page, sign in or sign up to manage a new subscription of Intune.
+2. On the Sign-up page, sign in or sign up to manage a new subscription of Intune.
 
 ## Post sign up considerations
 After you sign up for a new subscription, you receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your subscription is active.

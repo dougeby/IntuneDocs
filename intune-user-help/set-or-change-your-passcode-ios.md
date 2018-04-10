@@ -4,7 +4,8 @@
 title: Set or change your passcode | Microsoft Docs
 description: Set or change your passcode
 keywords:
-author: lenewsad
+author: lenewsad
+
 ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
@@ -12,7 +13,9 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253searchScope: - User help
+ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+ - User help
 
 # optional metadata
 

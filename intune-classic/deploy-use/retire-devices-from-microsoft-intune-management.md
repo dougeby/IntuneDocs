@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Retire devices from Intune management
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management.
 

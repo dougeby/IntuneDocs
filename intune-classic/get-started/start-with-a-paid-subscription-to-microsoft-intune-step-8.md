@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Enable enrollment for mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes how an Intune administrator can enable mobile device enrollment. For help using Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions).
 
@@ -72,4 +72,4 @@ You can also enable a variety of [company-owned device enrollment](/intune-class
 Congratulations! You have just completed the last step of the *Intune quick start guide*. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
 
 >[!div class="step-by-step"]
->[&larr; **Enroll devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** &rarr;](.\post-configuration-tasks.md)  
+>[&larr; **Enroll devices**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** &rarr;](./post-configuration-tasks.md)  

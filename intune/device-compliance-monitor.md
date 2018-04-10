@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 # Monitor device compliance in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can view the summary of the status of your **compliance profiles** in the **Overview** blade.
 You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can view the policy status on the policy blade under **Manage** > **Reports**.

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Device logs
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As part of your troubleshooting efforts you might want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you need to access to the device to get these logs or request from the user that they collect the logs and send them to you.
 

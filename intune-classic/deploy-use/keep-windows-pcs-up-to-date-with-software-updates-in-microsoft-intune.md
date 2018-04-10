@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 # Keep Windows PCs up-to-date with software updates in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 

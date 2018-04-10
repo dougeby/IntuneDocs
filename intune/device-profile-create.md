@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Create a device profile in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Create the profile
 1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
@@ -37,33 +37,33 @@ ms.custom: intune-azure
 
 3. Enter the following properties:
 
-	- **Name**: Enter a descriptive name for the new profile.
-	- **Description**: Enter a description for the profile. (This is optional, but recommended.)
-	- **Platform**: Select the platform type:  
+   - **Name**: Enter a descriptive name for the new profile.
+   - **Description**: Enter a description for the profile. (This is optional, but recommended.)
+   - **Platform**: Select the platform type:  
 
-		- **Android**
-		- **Android for Work**
-		- **iOS**
-		- **macOS**
-		- **Windows Phone 8.1**
-		- **Windows 8.1 and later**
-		- **Windows 10 and later**
+       - **Android**
+       - **Android for Work**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 and later**
+       - **Windows 10 and later**
 
-	- **Profile type**: Select the type you want to create. The list depends on the platform you choose.
-	- **Settings**: The following topics describe the settings for each profile type:
+   - **Profile type**: Select the type you want to create. The list depends on the platform you choose.
+   - **Settings**: The following topics describe the settings for each profile type:
 
-		-  [Device feature settings](device-features-configure.md)
-		-  [Device restriction settings](device-restrictions-configure.md)
-		-  [Email settings](email-settings-configure.md)
-		-  [VPN settings](vpn-settings-configure.md)
-		-  [Wi-Fi settings](wi-fi-settings-configure.md)
-		-  [Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
-		-  [Certificate settings](certificates-configure.md)
-		-  [Windows Information Protection settings](windows-information-protection-configure.md)
-		-  [Education settings](education-settings-configure.md)
-		-  [Custom settings](custom-settings-configure.md)
+       -  [Device feature settings](device-features-configure.md)
+       -  [Device restriction settings](device-restrictions-configure.md)
+       -  [Email settings](email-settings-configure.md)
+       -  [VPN settings](vpn-settings-configure.md)
+       -  [Wi-Fi settings](wi-fi-settings-configure.md)
+       -  [Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
+       -  [Certificate settings](certificates-configure.md)
+       -  [Windows Information Protection settings](windows-information-protection-configure.md)
+       -  [Education settings](education-settings-configure.md)
+       -  [Custom settings](custom-settings-configure.md)
 
-	![Screenshot of Create profile](./media/create-device-profile.png)
+     ![Screenshot of Create profile](./media/create-device-profile.png)
 
 4. Select **Create** when finished.
 

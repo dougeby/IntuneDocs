@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Microsoft Intune Android and Samsung Knox Standard device restriction settings 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Android.
 

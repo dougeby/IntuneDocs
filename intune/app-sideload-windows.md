@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 # Sign line-of-business apps so they can be deployed to Windows devices with Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 As an Intune administrator, you can deploy line-of-business (LOB) apps to Windows and Windows 10 Mobile devices, including the Company Portal app. To deploy .appx or .xap apps to Windows 10 and Windows 10 mobile devices, or to deploy any LOB app to Windows 8.1 or Windows Phone 8.1 devices, you must get a **Symantec Enterprise Mobile Code Signing Certificate**. Only the Symantec certificate is trusted for these apps for the respective Windows devices. You can use your own certificate authority for Windows 10 apps and "universal" apps. This certificate is required in order to:
 
@@ -169,11 +169,11 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
 
 ![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
 5. Before uploading the Company Portal app to Intune, create a folder (e.g., C:&#92;Company Portal) with the packages structured in the following way:
-  1. Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
-  ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
-  2. Place the nine dependencies packages in the Dependencies folder.  
-  If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
-  ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and deploy this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
+   1. Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
+   ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
+   2. Place the nine dependencies packages in the Dependencies folder.  
+   If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
+   ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and deploy this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
 6. Return to Intune, then upload the Company Portal app as a new app. Deploy it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  
@@ -201,13 +201,14 @@ Here’s how you sign and deploy the app in this way:
 2. Download the Windows 10 Company Portal app from the Microsoft Store for Business, as detailed above.  
 3. Run the script with the input parameters detailed in the script header to sign the Windows 10 Company Portal app (extracted below). Dependencies do not need to be passed into the script. These are only required when the app is being uploaded to the Intune Admin Console.
 
-|Parameter | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |The path to where the source appxbundle file is located. |
-|OutputWin10AppxBundle |The output path for the signed appxbundle file. |
-|Win81Appx | The path to where the Windows 8.1 or Windows Phone 8.1 Company Portal (.APPX) file is located.|
-|PfxFilePath |The path to Symantec Enterprise Mobile Code Signing Certificate (.PFX) file. |
-|PfxPassword| The password of the Symantec Enterprise Mobile Code Signing Certificate. |
-|PublisherId |The Publisher ID of the enterprise. If absent, the 'Subject' field of the Symantec Enterprise Mobile Code Signing Certificate is used.|
-|SdkPath | The path to the root folder of the Windows SDK for Windows 10. This argument is optional and defaults to ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       Parameter       |                                                                    Description                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             The path to where the source appxbundle file is located.                                              |
+| OutputWin10AppxBundle |                                                  The output path for the signed appxbundle file.                                                  |
+|       Win81Appx       |                          The path to where the Windows 8.1 or Windows Phone 8.1 Company Portal (.APPX) file is located.                           |
+|      PfxFilePath      |                                   The path to Symantec Enterprise Mobile Code Signing Certificate (.PFX) file.                                    |
+|      PfxPassword      |                                     The password of the Symantec Enterprise Mobile Code Signing Certificate.                                      |
+|      PublisherId      |      The Publisher ID of the enterprise. If absent, the 'Subject' field of the Symantec Enterprise Mobile Code Signing Certificate is used.       |
+|        SdkPath        | The path to the root folder of the Windows SDK for Windows 10. This argument is optional and defaults to ${env:ProgramFiles(x86)}\Windows Kits\10 |
+
 The script will output the signed version of the Windows 10 Company Portal app when it has finished running. You can then deploy the signed version of the app as an LOB app via Intune, which will upgrade the currently deployed versions to this new app.  

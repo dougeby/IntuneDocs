@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Manually add the Windows 10 Company Portal app using Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 End users can install the Company Portal app from the Microsoft Store to manage devices and install apps. If, however, your business needs require that you assign the Company Portal app, you can manually assign the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Microsoft Store for Business.
 
@@ -53,11 +53,11 @@ End users can install the Company Portal app from the Microsoft Store to manage 
 
 7. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 12 packages.
 8. Before uploading the Company Portal app to Intune, create a folder (for example: C:&#92;Company Portal) with the packages structured in the following way:
-  - Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
+   - Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
 
-    ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
+     ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
 
-  - Place the dependency packages in the *Dependencies* folder. 
+   - Place the dependency packages in the *Dependencies* folder. 
 
      > [!NOTE]
      > If the dependencies are not placed in the correct format, Intune will not be able to recognize and upload the files during the package upload, causing the upload to fail and display and error.
@@ -90,14 +90,15 @@ Here’s how you sign and assign the app in this way:
 2. Download the Windows 10 Company Portal app from the Microsoft Store for Business, as detailed above.  
 3. Run the script with the input parameters detailed in the script header to sign the Windows 10 Company Portal app (extracted below). Dependencies do not need to be passed into the script. These are only required when the app is being uploaded to the Intune Admin Console.
 
-|Parameter | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |The path to where the source appxbundle file is located |
-|OutputWin10AppxBundle |The output path for the signed appxbundle file.  Win81Appx The path to where the Windows 8.1 or Windows Phone 8.1 Company Portal (.APPX) file is located.|
-|PfxFilePath |The path to Symantec Enterprise Mobile Code Signing Certificate (.PFX) file. |
-|PfxPassword| The password of the Symantec Enterprise Mobile Code Signing Certificate. |
-|PublisherId |The Publisher ID of the enterprise. If absent, the 'Subject' field of the Symantec Enterprise Mobile Code Signing Certificate is used.|
-|SdkPath | The path to the root folder of the Windows SDK for Windows 10. This argument is optional and defaults to ${env:ProgramFiles(x86)}\Windows Kits\10|
+|       Parameter       |                                                                        Description                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  The path to where the source appxbundle file is located                                                  |
+| OutputWin10AppxBundle | The output path for the signed appxbundle file.  Win81Appx The path to where the Windows 8.1 or Windows Phone 8.1 Company Portal (.APPX) file is located. |
+|      PfxFilePath      |                                       The path to Symantec Enterprise Mobile Code Signing Certificate (.PFX) file.                                        |
+|      PfxPassword      |                                         The password of the Symantec Enterprise Mobile Code Signing Certificate.                                          |
+|      PublisherId      |          The Publisher ID of the enterprise. If absent, the 'Subject' field of the Symantec Enterprise Mobile Code Signing Certificate is used.           |
+|        SdkPath        |     The path to the root folder of the Windows SDK for Windows 10. This argument is optional and defaults to ${env:ProgramFiles(x86)}\Windows Kits\10     |
+
 The script will output the signed version of the Windows 10 Company Portal app when it has finished running. You can then assign the signed version of the app as an LOB app via Intune, which will upgrade the currently assigned versions to this new app.  
 
 ## Next steps

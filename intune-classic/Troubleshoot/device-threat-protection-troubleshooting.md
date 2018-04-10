@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot Lookout Integration with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes some common issues you may encounter with your Lookout mobile threat protection (MTP) setup.
 

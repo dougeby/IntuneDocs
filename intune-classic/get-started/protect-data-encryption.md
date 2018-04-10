@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Quick Start Guide: Protect company data with data encryption
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can help you prevent data loss from Office mobile apps in a variety of ways, including:
 - By encrypting corporate data with the highest level of device encryption provided by iOS and Android.

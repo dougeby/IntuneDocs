@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enable iOS device enrollment with Apple School Manager
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### Temporary user interface differences
@@ -65,7 +65,7 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > **Add**.
 
-  ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
+   ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. In the **Enrollment program token** blade, choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple School Manager portal.
      ![Enrollment Program Token blade.](./media/device-enrollment-program-enroll-ios/image02.png)
@@ -100,7 +100,7 @@ Now that you've installed your token, you can create an enrollment profile for A
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
-    
+
 4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager's Shared iPad mode requires user enroll without user affinity.
 
@@ -118,8 +118,8 @@ Now that you've installed your token, you can create an enrollment profile for A
 
     Users are notified that their devices are supervised in two ways:
 
-    - The lock screen says: "This iPhone is managed by Contoso."
-    - The **Settings** > **General** > **About** screen says: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device."
+   - The lock screen says: "This iPhone is managed by Contoso."
+   - The **Settings** > **General** > **About** screen says: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device."
 
      > [!NOTE]
      > A device enrolled without supervision can only be reset to supervised by using the Apple Configurator. Resetting the device in this manner requires connecting an iOS device to a Mac with a USB cable. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3).
@@ -130,32 +130,34 @@ Now that you've installed your token, you can create an enrollment profile for A
 
 9. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-9. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
+10. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-10. Choose **OK**.
+11. Choose **OK**.
 
-11. Choose **Setup Assistant Settings** to configure the following profile settings:
+12. Choose **Setup Assistant Settings** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-    | Setting | Description |
-    | --- | --- |
-    | **Department Name** | Appears when users tap **About Configuration** during activation. |
-    | **Department Phone** | Appears when the user clicks the **Need Help** button during activation. |
-    | **Setup Assistant Options** | The following optional settings can be set up later in the iOS **Settings** menu. |
-    | **Passcode** | Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
-    | **Location Services** | If enabled, Setup Assistant prompts for the service during activation. |
-    | **Restore** | If enabled, Setup Assistant prompts for iCloud backup during activation. |
-    | **iCloud and Apple ID** | If enabled, Setup Assistant prompts the user to sign in an Apple ID and the Apps & Data screen will allow the device to be restored from iCloud backup. |
-    | **Terms and Conditions** | If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation. |
-    | **Touch ID** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Apple Pay** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Zoom** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Siri** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Diagnostic Data** | If enabled, Setup Assistant prompts for this service during activation. |
 
-12. Choose **OK**.
+    |                 Setting                  |                                                                                               Description                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>Department Name</strong>     |                                                             Appears when users tap <strong>About Configuration</strong> during activation.                                                              |
+    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation.                                                          |
+    | <strong>Setup Assistant Options</strong> |                                                     The following optional settings can be set up later in the iOS <strong>Settings</strong> menu.                                                      |
+    |        <strong>Passcode</strong>         | Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
+    |    <strong>Location Services</strong>    |                                                                 If enabled, Setup Assistant prompts for the service during activation.                                                                  |
+    |         <strong>Restore</strong>         |                                                                If enabled, Setup Assistant prompts for iCloud backup during activation.                                                                 |
+    |   <strong>iCloud and Apple ID</strong>   |                         If enabled, Setup Assistant prompts the user to sign in an Apple ID and the Apps & Data screen will allow the device to be restored from iCloud backup.                         |
+    |  <strong>Terms and Conditions</strong>   |                                                   If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation.                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |     <strong>Diagnostic Data</strong>     |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
 
-13. To save the profile, choose **Create**.
+
+13. Choose **OK**.
+
+14. To save the profile, choose **Create**.
 
 ## Connect School Data Sync
 (Optional) Apple School Manager supports synchronizing class roster data to the Azure Active Directory (AD) using Microsoft School Data Sync (SDS). You can only sync one token with SDS. If you set up another token with School Data Sync, SDS will be removed from the token that previously had it. A new connection will replace the current token. Complete the following steps to use SDS to sync school data.
@@ -172,7 +174,7 @@ Now that Intune has been assigned permission to manage your Apple School Manager
 
 In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/device-enrollment-program-enroll-ios/image06.png)
-  
+
   To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
   - A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
   - Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.

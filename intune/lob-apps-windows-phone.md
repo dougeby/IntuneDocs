@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add Windows Phone line-of-business (LOB) apps to Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use the information in this article to help you add Windows Phone line-of-business apps to Microsoft Intune. A line-of-business (LOB) app is an app that you add to Intune from an app installation file. These types of apps are typically written in-house. Intune installs the LOB app on the users device. 
 

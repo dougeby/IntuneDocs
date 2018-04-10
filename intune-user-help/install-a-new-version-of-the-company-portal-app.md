@@ -4,14 +4,17 @@
 title: How to update the Company Portal app | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490searchScope: - User help
+ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+searchScope:
+ - User help
 
 
 # optional metadata
