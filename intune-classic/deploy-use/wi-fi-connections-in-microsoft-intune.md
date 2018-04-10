@@ -34,7 +34,7 @@ Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users
 
 For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to set up all iOS devices to connect to this network. Here's the process:
 
-![Wi-Fi profile process summary](..\media\wi-fi-process-diagram.png)
+![Wi-Fi profile process summary](../media/wi-fi-process-diagram.png)
 
 1.   Create a Wi-Fi profile that contains the settings that are necessary to connect to the **Contoso Wi-Fi** wireless network.
 
