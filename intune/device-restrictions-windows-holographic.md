@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,7 +78,7 @@ The following device restriction settings are supported on devices running Windo
 
 A kiosk device typically runs a specific app. Users are prevented from accessing any features or functions on the device outside of the kiosk app.
 
-- **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+- **Kiosk mode** - Identifies the type of kiosk mode supported by the policy. Options include:
 
   - **Not Configured** (default) - The policy does not enable a kiosk mode. 
   - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
