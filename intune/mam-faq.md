@@ -68,7 +68,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 - The end user must have an [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) mailbox and license linked to their Azure Active Directory account.
 
   >[!NOTE]
-  > The Outlook mobile app currently only supports Microsoft Exchange Online and does not support Exchange on-premises or Exchange in Office 365 Dedicated.
+  > The Outlook mobile app currently only supports Intune App Protection for Microsoft Exchange Online and [Exchange Server with hybrid modern authentication](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) and does not support Exchange in Office 365 Dedicated.
 
 **What are the additional requirements to use the [Word, Excel, and PowerPoint](https://products.office.com/business/office) apps?**
 

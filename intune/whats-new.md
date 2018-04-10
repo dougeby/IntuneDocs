@@ -46,11 +46,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of April 9, 2018
+
+#### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
+
+On the Enrollment Overview page, you can view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table,you can drill into details to find troubleshooting advice and remediation suggestions.
+
 ## Week of April 2, 2018
 
 ### Intune apps
 
-### User experience update for the Company Portal app for iOS <!--1412866 -->
+#### User experience update for the Company Portal app for iOS <!--1412866 -->
 We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
 
 You'll also see:
@@ -61,7 +67,7 @@ You'll also see:
 
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
-### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
+#### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
 You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Week of March 26, 2018

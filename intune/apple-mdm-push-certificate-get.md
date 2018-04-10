@@ -31,7 +31,16 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
- Intune enables mobile device management (MDM) of iPads, iPhones, and Mac computers and gives users access to company email and apps. An MDM Push certificate is required for Intune to manage iOS and Mac devices. After you add the certificate to Intune, your users can install the Company Portal app to enroll their devices. You can also set up corporate-owned iOS device management with Apple's Device Enrollment Program or enroll devices using Apple Configurator, for example. For more information about enrollment options, see [Choose how to enroll iOS devices](enrollment-method-choose-ios.md).
+Intune enables mobile device management (MDM) of iPads, iPhones, and Mac computers and gives users access to company email and apps. An Apple MDM Push certificate is required for Intune to manage iOS and MacOS devices. After you add the certificate to Intune, your users can enroll their devices using:
+
+- The Company Portal app.
+
+- Apple's bulk enrollment methods like the Device Enrollment Program, Apple School Manager, or Apple Configurator.
+
+For more information about enrollment options, see [Choose how to enroll iOS devices](enrollment-method-choose-ios.md).
+
+When a push certificate expires, you must renew it. When renewing, make sure to use the same Apple ID that you used when you first created the push certificate.
+
 
 ## Steps to get your certificate
 In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in the [Azure portal](https://portal.azure.com).
