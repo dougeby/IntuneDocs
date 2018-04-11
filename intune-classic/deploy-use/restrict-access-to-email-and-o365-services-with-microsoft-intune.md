@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect access to email, Office 365, and other services with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You can protect access to your company email, Office 365 services like **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online**, **Skype for Business Online**, and other services by using Enterprise Mobility + Security (EMS) Conditional Access. This capability allows you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the conditional access rules that you set either in the Intune admin console, or Azure classic portal.
 ## How does conditional access work?
@@ -77,12 +77,12 @@ Unlike other Intune policies, you don't deploy conditional access policies. Inst
 
 2. [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-2.  Create a conditional access policy for one of the following Microsoft cloud services/product:
+3. Create a conditional access policy for one of the following Microsoft cloud services/product:
 
-  - [Create a conditional access policy for Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Create a conditional access policy for Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Create a conditional access policy for new Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Create a conditional access policy for legacy Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Create a conditional access policy for SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Create a conditional access policy for Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Create a conditional access policy for Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Create a conditional access policy for Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Create a conditional access policy for Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Create a conditional access policy for new Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Create a conditional access policy for legacy Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Create a conditional access policy for SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Create a conditional access policy for Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Create a conditional access policy for Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

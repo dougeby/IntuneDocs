@@ -28,16 +28,16 @@ ms.custom: intune-classic EXPIERIMENT
 
 # Choose how to enroll mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 
 ## **Do employees bring their own devices (BYOD) or are devices provided by your organization (COD)?**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md)
+> [BYOD >](choose-how-to-enroll-devices2.md)
 > [!div class="button"]
-[COD >](choose-how-to-enroll-devices3.md)
+> [COD >](choose-how-to-enroll-devices3.md)
 
 - **Users-owned devices** - "BYOD” (Bring your own device) enrollment – Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.  
 

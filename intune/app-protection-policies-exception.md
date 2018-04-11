@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data transfer policy exceptions for apps 
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. The unmanaged apps that you included in the exception list must be trusted by IT. 
 

@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # Android and Samsung KNOX Standard policy settings in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 

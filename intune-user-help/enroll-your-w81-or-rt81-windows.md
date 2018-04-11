@@ -4,14 +4,17 @@
 title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0csearchScope: - User help
+ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -38,12 +38,12 @@ This article shows you how to create a profile. Then, select your device platfor
 3. Select **Device configuration** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the endpoint protection profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:
-  - **macOS**
-  - **Windows 10 and later**
+   - **macOS**
+   - **Windows 10 and later**
 6. From the **Profile type** drop-down list, choose **Endpoint protection**. 
 7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
-  - [macOS settings](endpoint-protection-macos.md)
-  - [Windows 10 settings](endpoint-protection-windows-10.md)
+   - [macOS settings](endpoint-protection-macos.md)
+   - [Windows 10 settings](endpoint-protection-windows-10.md)
 8. When you're done, go back to the **Create profile** page, and click **Create**.
 
 The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).

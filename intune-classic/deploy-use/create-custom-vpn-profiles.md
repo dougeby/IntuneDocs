@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Custom configurations for Microsoft Intune VPN profiles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## Create a custom configuration
 You can use Intune custom configuration polices to create VPN profiles for:
@@ -44,13 +44,13 @@ This type of policy can be useful when the standard Intune VPN policies do not c
 
 ## To create a custom configuration policy:
 
-   1. In the [Intune admin console](https://manage.microsoft.com), choose **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
-   2. Enter a name for the policy.
-   3. For each URI setting you want to specify, choose **Add**, and provide the requested information. Here's an example:
+1. In the [Intune admin console](https://manage.microsoft.com), choose **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
+2. Enter a name for the policy.
+3. For each URI setting you want to specify, choose **Add**, and provide the requested information. Here's an example:
 
    ![VPN profile custom configuration dialog box](./media/Intune_Add_VPN_URI.png)
 
-   4.  After you've entered all of URI settings, choose **Save policy**, and then deploy the policy.
+4. After you've entered all of URI settings, choose **Save policy**, and then deploy the policy.
 
 Then, [deploy the policy](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) as normal.
 

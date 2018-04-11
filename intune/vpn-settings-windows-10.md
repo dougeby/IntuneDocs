@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Read about the VPN settings in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can configure VPN connections using Intune. This article describes these settings, the traffic rules, conditional access, and DNS & proxy settings.
 

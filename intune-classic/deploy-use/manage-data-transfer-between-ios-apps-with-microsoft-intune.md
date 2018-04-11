@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Manage data transfer between iOS apps with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
@@ -56,17 +56,17 @@ To make sure that apps that you deploy using your third party MDM solution are a
 Configuring the user UPN setting is **required** for devices that are managed by a third-party EMM solution. The procedure described below is a general flow on how to configure the UPN setting and the resulting end user experience:
 
 
-1.  In the Azure portal, [configure an app protection policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
+1. In the Azure portal, [configure an app protection policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
 
-2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also covered by Example 1.
+2. Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also covered by Example 1.
 
-  1.  Deploy the app  with the following app configuration settings:
+   1. Deploy the app  with the following app configuration settings:
 
       **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Deploy the Open in management policy using your third-party MDM provider to enrolled devices.
+   2. Deploy the Open in management policy using your third-party MDM provider to enrolled devices.
 
 
 ### Example 1: Admin experience in third-party MDM console
@@ -75,9 +75,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2. In the Application Configuration section, enter the following setting:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
+   The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |

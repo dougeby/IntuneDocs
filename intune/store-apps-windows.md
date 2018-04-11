@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Add Microsoft Store apps to Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Before you can assign, monitor, configure, or protect apps, you must add them to Intune. The following steps allow you to add a Microsoft Store app to Microsoft Intune.
 
@@ -56,5 +56,4 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. 
 
 ## Next steps
-
 - [How to assign apps to groups](apps-deploy.md)

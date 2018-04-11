@@ -4,7 +4,8 @@
 title: Installing the Company Portal app for iOS | Microsoft Docs
 description:
 keywords:
-author: lenewsad
+author: lenewsad
+
 ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
@@ -12,7 +13,9 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: a2467c02-aac5-41c8-b788-cbda830941efsearchScope: - User help
+ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
+searchScope:
+ - User help
 
 # optional metadata
 

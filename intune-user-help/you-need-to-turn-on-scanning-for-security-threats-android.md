@@ -4,14 +4,17 @@
 title: You need to turn on security threat scanning | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504dsearchScope: - User help
+ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+ - User help
 
 
 # optional metadata

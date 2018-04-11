@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 # Manage license agreements for Windows PC software in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements. You can also do this for Microsoft or non-Microsoft software that was purchased by other means. You can organize this information into logical groups.
 
@@ -64,13 +64,13 @@ Intune Volume Licensing agreements provide license information for software that
 
         -   The file can contain either two or three columns; two for agreement pairs alone, or three if you want to add a friendly name for each agreement pair.
 
-        -   The total number of characters in an agreement number pair cannot exceed 16 ASCII characters.
+        -   The total number of characters in an agreement number pair cannot exceed 16 ASCII characters.
 
         -   Only ASCII characters are supported.
 
         -   The following characters are not allowed in the agreement name: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaces are allowed in the name.
 
-        -   The file name must be no more than 128 characters in length.
+        -   The file name must be no more than 128 characters in length.
 
         -   The file must contain at least one agreement pair, and cannot contain more than 5,000 agreement pairs.
 
@@ -94,7 +94,7 @@ Intune Volume Licensing agreements provide license information for software that
 
         -   **Agreement name** - Specify a unique name for the agreement.
 
-            The agreement name can have a maximum of 256 characters, and cannot contain the following characters: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaces are allowed in the name.
+            The agreement name can have a maximum of 256 characters, and cannot contain the following characters: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaces are allowed in the name.
 
         -   **Authorization/Agreement number** - Enter the authorization/agreement number of the license pair.
 
@@ -147,7 +147,7 @@ You can also add other types of license agreements to Intune in addition to Micr
 
 4.  In the **Add Agreement Details** area, specify the following:
 
-    -   **Agreement name** (required). The agreement name can have a maximum of 256 characters, and cannot contain the following characters: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaces are allowed in the name.
+    -   **Agreement name** (required). The agreement name can have a maximum of 256 characters, and cannot contain the following characters: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Spaces are allowed in the name.
 
     -   **Publisher** (required). When you start to type a publisher name, the service retrieves all publisher names that contain the letters that you type. For example, if you type “soft,” the service retrieves all publisher names that contain “soft” as part of the name, such as “Microsoft” and “Microsoft Research.” The publisher names are retrieved from the Software Asset Catalog. You must select the publisher before you can enter the product title.
 
@@ -179,10 +179,12 @@ The **All Agreements** list view is displayed.
 ## Manage license agreements
 Software licensing agreements can be added to license groups. You can use license groups to organize your license agreements in units that are logical for your organization. Additionally, you can delete license agreements you previously created.
 
-|||
-|-|-|
-|Task|Details|
-|Create a license group|On the **Overview** page of the **Licenses** workspace, choose **Create License Group** from the **Tasks** menu. **Note:** You can create a maximum total of 500 license groups.|
-|Rename a license group|In the **Licenses** workspace, choose a license group, and then choose **Edit License Group** from the **Tasks** Menu.|
-|Delete a license group|In the **Licenses** workspace, choose a license group, and then choose **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
-|Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then choose **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, choose **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Task            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
+|   Create a license group   |                                                            On the <strong>Overview</strong> page of the <strong>Licenses</strong> workspace, choose <strong>Create License Group</strong> from the <strong>Tasks</strong> menu. <strong>Note:</strong> You can create a maximum total of 500 license groups.                                                             |
+|   Rename a license group   |                                                                                                      In the <strong>Licenses</strong> workspace, choose a license group, and then choose <strong>Edit License Group</strong> from the <strong>Tasks</strong> Menu.                                                                                                       |
+|   Delete a license group   |                                 In the <strong>Licenses</strong> workspace, choose a license group, and then choose <strong>Delete License Group</strong> from the <strong>Tasks</strong> Menu. <strong>Tip:</strong> Any licenses that were in the deleted group are moved to the <strong>Unassigned agreements</strong> license group.                                 |
+| Delete a license agreement | In the <strong>Licenses</strong> workspace, choose an agreement, and then choose <strong>Delete</strong>. <strong>Tip:</strong> After you delete Volume Licensing agreements, to update the license information, choose <strong>Refresh Now</strong> on the <strong>Licenses Overview</strong> page or on the <strong>General</strong> tab for a specific license group. |
+

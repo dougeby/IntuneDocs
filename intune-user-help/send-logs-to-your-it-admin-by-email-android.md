@@ -4,14 +4,17 @@
 title: Send logs to your company support by email | Microsoft Docs
 description: Send data logs by using email on an Android device
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94searchScope: - User help
+ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 #  iOS app protection policy settings
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Add a Policy** > **Settings** blade in the Azure portal.
 

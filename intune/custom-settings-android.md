@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Custom settings for Android devices - Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features on Android devices. These settings are typically used by mobile device manufacturers to control features on the device.
 
@@ -49,11 +49,11 @@ Using a custom profile, you can configure and assign the following Android setti
 4. In **Custom OMA-URI Settings**, select **Add**, and then select **Add Row**.
 5. Enter the following properties:
 
-  - **Name** - Enter a unique name for the OMA-URI setting so you can easily find it.
-  - **Description** - Enter a description that gives an overview of the setting, and any other important details.
-  - **Data type** - Enter the data type you use for this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
-  - **OMA-URI** - Enter the OMA-URI you want.
-  - **Value** - Enter the value you want to associate with the OMA-URI you entered.
+   - **Name** - Enter a unique name for the OMA-URI setting so you can easily find it.
+   - **Description** - Enter a description that gives an overview of the setting, and any other important details.
+   - **Data type** - Enter the data type you use for this OMA-URI setting. Choose from **String**, **String (XML)**, **Date and time**, **Integer**, **Floating point**, or **Boolean**.
+   - **OMA-URI** - Enter the OMA-URI you want.
+   - **Value** - Enter the value you want to associate with the OMA-URI you entered.
 
 6. Select **OK** to save your changes. Continue to add more settings as needed.
 

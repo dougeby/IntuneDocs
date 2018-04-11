@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Create VPN profiles in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to assign VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 

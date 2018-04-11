@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Set up an Enrollment Status Screen
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 When an end user enrolls a Windows device, they expect to be able to access everything they need to be productive immediately after enrollment. What end users don't recognize is that content, apps, policies, and settings are still being delivered to their devices after enrollment completes.
 
