@@ -40,7 +40,7 @@ This article shows you the Wi-Fi settings you can configure in Microsoft Intune 
 - **Proxy settings** - Choose from:
     - **None** - No proxy settings are configured.
     - **Manual** - Enter the **Proxy server address** (as an IP address), and it's associated **Port number**.
-    - **Automatic** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com), which contains the configuration file.
+    - **Automatic** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**), which contains the configuration file.
 
 ## Wi-Fi settings for basic profiles only
 
