@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # iOS policy settings in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on iOS devices. Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.
 
@@ -50,20 +50,22 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Security settings
 All settings apply to iOS 8.0 and later.
 
-|Setting name|Details|
-|----------------|-------|
-|**Require a password to unlock mobile devices**|Specify whether the user is required to enter a password to access their device.|
-|**Required password type**|Specify the type of password that will be required, such as numeric only or alphanumeric.|
-|**Number of complex characters required in password**|Specify the number of symbol characters (like **#** or **@**) that must be included in the password.|
-|**Minimum password length**|Specify the minimum number of characters in the password.|
-|**Allow simple passwords**|Allow simple passwords like **0000** and **1234**.|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Specify the number of failed login attempts before this setting wipes the device.|
-|**Minutes of inactivity before password is required**<sup>1</sup>|Specify how long the device can remain idle before the user must re-enter their password.|
-|**Password expiration (days)**|Specify the number of days before the device password must be changed.|
-|**Remember password history**|Specify whether the user can use passwords that they have previously used.|
-|**Remember password history** – **Prevent reuse of previous passwords**|Specify the number of previously used passwords that the device remembers.|
-|**Minutes of inactivity before screen turns off**<sup>1</sup>|Specify the number of minutes before the device display is turned off.|
-|**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|
+
+|                                           Setting name                                            |                                                            Details                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Require a password to unlock mobile devices</strong>                    |                        Specify whether the user is required to enter a password to access their device.                        |
+|                              <strong>Required password type</strong>                              |                   Specify the type of password that will be required, such as numeric only or alphanumeric.                    |
+|                <strong>Number of complex characters required in password</strong>                 | Specify the number of symbol characters (like <strong>#</strong> or <strong>@</strong>) that must be included in the password. |
+|                             <strong>Minimum password length</strong>                              |                                   Specify the minimum number of characters in the password.                                    |
+|                              <strong>Allow simple passwords</strong>                              |                          Allow simple passwords like <strong>0000</strong> and <strong>1234</strong>.                          |
+|     <strong>Number of repeated sign-in failures to allow before the device is wiped</strong>      |                       Specify the number of failed login attempts before this setting wipes the device.                        |
+|          <strong>Minutes of inactivity before password is required</strong><sup>1</sup>           |                   Specify how long the device can remain idle before the user must re-enter their password.                    |
+|                            <strong>Password expiration (days)</strong>                            |                             Specify the number of days before the device password must be changed.                             |
+|                            <strong>Remember password history</strong>                             |                           Specify whether the user can use passwords that they have previously used.                           |
+| <strong>Remember password history</strong> – <strong>Prevent reuse of previous passwords</strong> |                           Specify the number of previously used passwords that the device remembers.                           |
+|            <strong>Minutes of inactivity before screen turns off</strong><sup>1</sup>             |                             Specify the number of minutes before the device display is turned off.                             |
+|                             <strong>Allow fingerprint unlock</strong>                             |                                        Allow using a fingerprint to unlock the device.                                         |
+
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 ### System settings
@@ -91,7 +93,7 @@ All settings apply to iOS 8.0 and later.
 |**Allow managed apps to sync data to iCloud**|Allow apps that you manage with Intune to sync data to the user's iCloud account.|
 |**Allow Handoff to continue activities on another device**|Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device.|
 |**Allow iCloud Photo Sharing**|Set to **No** to disable **iCloud Photo Sharing** on the device.|
-|**Allow iCloud Photo Library**|If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.|
+|**Allow iCloud Photo Library**|If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.   Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.|
 
 ### Application settings for the browser
 All settings apply to iOS 8.0 and later.
@@ -185,25 +187,26 @@ Policies containing compliant and noncompliant app settings must be deployed to 
 
 ### Kiosk mode settings
 
-|Setting name|Details|
-|----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Choose **Browse**, and then specify the managed app or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.|
-|**Allow touch**|Enable or disable the touchscreen on the device.|
-|**Allow screen rotation**|Enable or disable changing the screen orientation when the user rotates the device.|
-|**Allow volume buttons**|Enable or disable the use of the volume buttons on the device.|
-|**Allow ringer switch**|Enable or disable the ringer (mute) switch on the device.|
-|**Allow screen sleep wake button**|Enable or disable the screen sleep wake button on the device.|
-|**Allow auto lock**|Enable or disable automatic locking of the device.|
-|**Enable mono audio**|Enable or disable the accessibility setting **Mono audio**.|
-|**Enable voice over**|Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.|
-|**Enable voice over adjustments**|Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).|
-|**Enable zoom**|Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.|
-|**Enable zoom adjustments**|Enable or disable zoom adjustments, which let the user adjust the zoom function.|
-|**Enable invert colors**|Enable or disable the **Invert Colors** accessibility setting, which adjusts the display to help users with visual impairments.|
-|**Enable invert colors adjustments**|Enable or disable invert colors adjustments, which let the user adjust the invert colors function.|
-|**Enable assistive touch**|Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.|
-|**Enable assistive touch adjustments**|Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.|
-|**Enable speech selection**|Enable or disable the **Speak Selection** accessibility settings, which can read aloud the text that the user selects.|
+|                                            Setting name                                            |                                                                                                                                      Details                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Select a managed app that will be allowed to run when the device is in kiosk mode</strong> | Choose <strong>Browse</strong>, and then specify the managed app or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic. |
+|                                    <strong>Allow touch</strong>                                    |                                                                                                                  Enable or disable the touchscreen on the device.                                                                                                                  |
+|                               <strong>Allow screen rotation</strong>                               |                                                                                                Enable or disable changing the screen orientation when the user rotates the device.                                                                                                 |
+|                               <strong>Allow volume buttons</strong>                                |                                                                                                           Enable or disable the use of the volume buttons on the device.                                                                                                           |
+|                                <strong>Allow ringer switch</strong>                                |                                                                                                             Enable or disable the ringer (mute) switch on the device.                                                                                                              |
+|                          <strong>Allow screen sleep wake button</strong>                           |                                                                                                           Enable or disable the screen sleep wake button on the device.                                                                                                            |
+|                                  <strong>Allow auto lock</strong>                                  |                                                                                                                 Enable or disable automatic locking of the device.                                                                                                                 |
+|                                 <strong>Enable mono audio</strong>                                 |                                                                                                      Enable or disable the accessibility setting <strong>Mono audio</strong>.                                                                                                      |
+|                                 <strong>Enable voice over</strong>                                 |                                                                               Enable or disable the accessibility setting <strong>VoiceOver</strong>, which reads aloud text on the device display.                                                                                |
+|                           <strong>Enable voice over adjustments</strong>                           |                                                                  Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).                                                                   |
+|                                    <strong>Enable zoom</strong>                                    |                                                                         Enable or disable the <strong>Zoom</strong> accessibility setting, which lets the user use touch to zoom in to the device display.                                                                         |
+|                              <strong>Enable zoom adjustments</strong>                              |                                                                                                  Enable or disable zoom adjustments, which let the user adjust the zoom function.                                                                                                  |
+|                               <strong>Enable invert colors</strong>                                |                                                                    Enable or disable the <strong>Invert Colors</strong> accessibility setting, which adjusts the display to help users with visual impairments.                                                                    |
+|                         <strong>Enable invert colors adjustments</strong>                          |                                                                                         Enable or disable invert colors adjustments, which let the user adjust the invert colors function.                                                                                         |
+|                              <strong>Enable assistive touch</strong>                               |                                                     Enable or disable the <strong>Assistive Touch</strong> accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.                                                     |
+|                        <strong>Enable assistive touch adjustments</strong>                         |                                                                                       Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.                                                                                       |
+|                              <strong>Enable speech selection</strong>                              |                                                                        Enable or disable the <strong>Speak Selection</strong> accessibility settings, which can read aloud the text that the user selects.                                                                         |
+
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
@@ -354,8 +357,6 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

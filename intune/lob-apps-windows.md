@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add Windows line-of-business (LOB) apps to Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 A line-of-business (LOB) app is one that you add from an app installation file. These types of apps are typically written in-house. The following steps provide guidance to help you add a Windows LOB app to Microsoft Intune.
 
@@ -74,7 +74,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 ## Step 5 - Update a line-of-business app
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 ## Configuring a self-updating mobile MSI app to ignore the version check process
 

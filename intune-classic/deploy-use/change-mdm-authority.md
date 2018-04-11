@@ -79,16 +79,16 @@ When you have iOS devices, you must configure the APNs certificate in Configurat
 
 1. **Download a certificate signing request**
 
-    1. In the Configuration Manager console, go to **Administration** &gt; **Cloud Services** &gt; **Microsoft Intune Subscriptions**, and select **Create APNs certificate request** to open the **Request Apple Push Notification Service Certificate Signing Request** dialog box.  
-    2. **Browse** to the path to save the new certificate signing request (.csr) file. Save the certificate signing request (.csr) file locally.  
-    3. Click **Download**. The new Microsoft Intune .csr file downloads and is saved by Configuration Manager.   
+   1. In the Configuration Manager console, go to **Administration** &gt; **Cloud Services** &gt; **Microsoft Intune Subscriptions**, and select **Create APNs certificate request** to open the **Request Apple Push Notification Service Certificate Signing Request** dialog box.  
+   2. **Browse** to the path to save the new certificate signing request (.csr) file. Save the certificate signing request (.csr) file locally.  
+   3. Click **Download**. The new Microsoft Intune .csr file downloads and is saved by Configuration Manager.   
 
-    > [!IMPORTANT]
-    > You must download a new certificate signing request. Do not use an existing file or it fails.  
+      > [!IMPORTANT]
+      > You must download a new certificate signing request. Do not use an existing file or it fails.  
 
-2.  Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844), and sign-in with the **same** Apple ID that was used to previously create and renew the APNs certificate that you used in Intune standalone.
+2. Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844), and sign-in with the **same** Apple ID that was used to previously create and renew the APNs certificate that you used in Intune standalone.
 
-    ![Apple Push Certificates Portal sign-in page](../media/mdm-change-apns-portal.png)
+   ![Apple Push Certificates Portal sign-in page](../media/mdm-change-apns-portal.png)
 
 3. Select the APNs certificate that you used in Intune standalone, and then click **Renew**.
 

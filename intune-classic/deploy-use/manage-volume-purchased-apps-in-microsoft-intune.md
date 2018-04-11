@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Manage volume-purchased apps using Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Some app stores give you the ability to purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 

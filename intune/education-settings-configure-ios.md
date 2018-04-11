@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # How to configure Intune settings for the iOS Classroom app
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 [Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, using the app, a teacher can:

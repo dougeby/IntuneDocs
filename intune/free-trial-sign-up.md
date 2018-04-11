@@ -33,7 +33,7 @@ ms.custom:
 This article walks you through signing up for a trial of Intune standalone for the Azure portal.
 
 1. Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page and fill out the form to sign up for a trial subscription.
-* If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune/account-sign-up) instead.
+2. If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune/account-sign-up) instead.
 
 * If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Where's your company located?**.
 

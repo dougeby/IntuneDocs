@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Exchange access rules for mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Exchange access rules for mobile devices determine the level of access that those devices have to Exchange ActiveSync. These settings affect all mobile devices, including those that aren't enrolled in Microsoft Intune. You can start off by defining a **Default Rule**, which applies to any mobile device that does not have a custom rule applied to it.
 
@@ -42,11 +42,13 @@ The following table contains the access levels that are managed by Exchange Acti
 
 An access strategy is a combination of a **Default Rule** and **Platform Exceptions** that apply to all mobile devices that are connected to Exchange. The following table lists some example access strategies.
 
-|Access strategy|Description|
-|-------------------|---------------|
-|Allow list|You can use an *allow list* to grant access to a list of known devices and restrict access for all other devices. To do this, you must create custom rules for device platforms that are allowed to access a user's mailbox. As soon as you create such a rule, you must set the default access rule to block or quarantine all other devices. To add a new device to the allow list, create a new custom rule.|
-|Block list|You can use a *block list* to grant access to all devices by default, but to block access for a set of devices that you do not want to access your organization. Create a block list by creating custom rules to block device platforms that you do not want to sync with the organization’s mailboxes. We recommend setting the default rule to allow access to all devices that are not explicitly blocked by the existing rules. To add a new device or set of devices to the block list, create a new custom rule.|
-|Mixed allow and block|In addition to creating allow and block lists, you can quarantine new mobile devices as they are introduced into the organization while you evaluate them. For example, if you have a block list for mobile devices that are not allowed within your organization, and an allow list for mobile devices that are allowed within the organization, you can set the default rule to quarantine. All other devices are automatically quarantined. This lets you discover new devices as they are introduced to the organization and decide whether to add them to the allow or block lists.|
+
+|    Access strategy    |                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Allow list       |                                                                                  You can use an <em>allow list</em> to grant access to a list of known devices and restrict access for all other devices. To do this, you must create custom rules for device platforms that are allowed to access a user's mailbox. As soon as you create such a rule, you must set the default access rule to block or quarantine all other devices. To add a new device to the allow list, create a new custom rule.                                                                                  |
+|      Block list       |                              You can use a <em>block list</em> to grant access to all devices by default, but to block access for a set of devices that you do not want to access your organization. Create a block list by creating custom rules to block device platforms that you do not want to sync with the organization’s mailboxes. We recommend setting the default rule to allow access to all devices that are not explicitly blocked by the existing rules. To add a new device or set of devices to the block list, create a new custom rule.                               |
+| Mixed allow and block | In addition to creating allow and block lists, you can quarantine new mobile devices as they are introduced into the organization while you evaluate them. For example, if you have a block list for mobile devices that are not allowed within your organization, and an allow list for mobile devices that are allowed within the organization, you can set the default rule to quarantine. All other devices are automatically quarantined. This lets you discover new devices as they are introduced to the organization and decide whether to add them to the allow or block lists. |
+
 The following procedure describes how to create a custom rule.
 
 ## Create a default access rule

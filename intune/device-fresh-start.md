@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # Use Fresh Start to reset Windows 10 devices with Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The **Fresh Start** device action removes any apps that are installed on a Windows 10 PC that is running the Creators Update. Then, it automatically updates the PC to the latest version of Windows.
 

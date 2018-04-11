@@ -28,7 +28,7 @@ ms.custom: apps
 
 # Overview of the app lifecycle in Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app. By understanding these phases, you'll have a the details you need to get started with app management in Intune.
 

@@ -44,11 +44,11 @@ Tap the __next__ arrow at the top right corner of the screen to proceed. Your co
 
 1. Select __Enroll with Microsoft account__.
 
-  ![An image of the Settings screen of the Datalert app, which offers a phone number field to enroll a device on the top half of the screen and "enroll with Microsoft account" on the bottom, so long as you have a Microsoft Office 365 account and an Intune subscription.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![An image of the Settings screen of the Datalert app, which offers a phone number field to enroll a device on the top half of the screen and "enroll with Microsoft account" on the bottom, so long as you have a Microsoft Office 365 account and an Intune subscription.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. Choose your work or school account from the available accounts. If your account is not listed, you can sign in to it using the **Add account** button.
 
-  ![A screenshot of the "Pick account" screen, showing a sample account and the Add account button.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![A screenshot of the "Pick account" screen, showing a sample account and the Add account button.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. Datalert setup will work for a few moments, then should complete. Tap __Finish__ when it completes.
 
@@ -56,15 +56,15 @@ Tap the __next__ arrow at the top right corner of the screen to proceed. Your co
 
 1. Provide your device's phone number.
 
-  ![A screenshot of the Datalert app requesting a phone number.](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![A screenshot of the Datalert app requesting a phone number.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. You will then receive a verification code through an SMS message. Provide the code and tap __OK__.
 
-  ![A screenshot of the Datalert app requesting the SMS verification code.](./media/and-enroll-14-tem-datalert-sms.png)
+   ![A screenshot of the Datalert app requesting the SMS verification code.](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. Once you've provided the verification code, Datalert setup will complete. Tap __Finish__ and you will be able to monitor your data from the Datalert app.
 
-  ![A screenshot of the Datalert app monitoring today's data usage.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![A screenshot of the Datalert app monitoring today's data usage.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 Once you've enrolled, you will begin to see your data usage in the Datalert app.
 

@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Reset or remove a device passcode in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 To create a new passcode for a device, use the **Remove passcode** action.
 

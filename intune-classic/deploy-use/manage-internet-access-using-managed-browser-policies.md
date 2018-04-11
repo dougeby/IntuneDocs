@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Manage Internet access using managed browser policies with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 The managed browser is a web browsing application that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.
 
@@ -105,52 +105,52 @@ Microsoft automatically collects anonymous data about the performance and use of
 ### URL format for allowed and blocked URLs
 Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:
 
--   You can use the wildcard symbol (**&#42;**) according to the rules in the following permitted patterns list.
+- You can use the wildcard symbol (**&#42;**) according to the rules in the following permitted patterns list.
 
--   Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
+- Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
 
--   You can specify port numbers in the address. If you do not specify a port number, the values used will be:
+- You can specify port numbers in the address. If you do not specify a port number, the values used will be:
 
-    -   Port 80 for http
+  -   Port 80 for http
 
-    -   Port 443 for https
+  -   Port 443 for https
 
-    Using wildcards for the port number is not supported. For example, **http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** are not supported.
+  Using wildcards for the port number is not supported. For example, <strong>http&colon;//www&period;contoso&period;com:*;</strong> and <strong>http&colon;//www&period;contoso&period;com: /*;</strong> are not supported.
 
--   Use the following table to learn about the permitted patterns that you can use when you specify URLs:
+- Use the following table to learn about the permitted patterns that you can use when you specify URLs:
 
-|URL|Details|Matches|Does not match|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80||
-    |https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Details                      |                                                Matches                                                |                                Does not match                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Matches a single page               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Matches a single page               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Matches all URLs that begin with www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Matches all subdomains under contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Matches a single folder              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Matches a single page, by using a port number   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Matches a single, secure page           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Matches a single folder and all subfolders    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   The following are examples of some of the inputs that you cannot specify:
+- The following are examples of some of the inputs that you cannot specify:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP addresses
+  - IP addresses
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### How conflicts between the allow and block list are resolved
 If multiple managed browser policies are deployed to a device and the settings conflict, both the mode (allow or block) and the URL lists are evaluated for conflicts. In case of a conflict, the following behavior applies:

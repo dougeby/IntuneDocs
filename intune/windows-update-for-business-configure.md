@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Manage software updates in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows as a Service is the way to update Windows 10 devices. With Windows 10, new Feature Updates and Quality Updates includes the contents of all previous updates. As long as you've installed the latest update, you know your Windows 10 devices are up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
@@ -59,7 +59,7 @@ After you create update rings, you assign them to groups of devices. By using up
   - Windows 10 Team (for Surface Hub devices)
   - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Devices running Windows 10 Mobile aren't supported.
+  Devices running Windows 10 Mobile aren't supported.
 
 - On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to at least **Basic**.
 
@@ -77,8 +77,8 @@ After you create update rings, you assign them to groups of devices. By using up
 
 1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting is not supported in the Azure portal because it is no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.
 
-  > [!NOTE]
-  > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings are applied. If you migrate any of these settings, and edit the migrated policy from the Azure portal, these settings are removed from the policy.
+   > [!NOTE]
+   > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings are applied. If you migrate any of these settings, and edit the migrated policy from the Azure portal, these settings are removed from the policy.
 
 2. Delete the update settings in the classic portal. After you migrate to the Azure portal, and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values, there is a conflict. There isn't an easy way to know because the setting configured in the classic portal does not display in the Azure portal.
 
@@ -90,28 +90,28 @@ After you create update rings, you assign them to groups of devices. By using up
 4. Enter a name, a description (optional), and then choose **Configure**.
 5. In **Settings**, enter the following information:
 
-  - **Servicing channel**: Set the channel from which the device receives Windows updates.
-  - **Microsoft product updates**: Choose to scan for app updates from Microsoft Update.
-  - **Windows drivers**: Choose to exclude Windows Update drivers during updates.
-  - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-    - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
+   - **Servicing channel**: Set the channel from which the device receives Windows updates.
+   - **Microsoft product updates**: Choose to scan for app updates from Microsoft Update.
+   - **Windows drivers**: Choose to exclude Windows Update drivers during updates.
+   - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
 
-  - **Restart checks**: Enabled by default. When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.
+   - **Restart checks**: Enabled by default. When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.
 
-  - **Quality update deferral period (days)**: Enter the number of days for which quality updates are deferred. You can defer receiving these Quality Updates up to 30 days from their release.
+   - **Quality update deferral period (days)**: Enter the number of days for which quality updates are deferred. You can defer receiving these Quality Updates up to 30 days from their release.
 
-    Quality Updates are typically fixes and improvements to existing Windows functionality, and are published the first Tuesday of every month. Though they can be released at any time by Microsoft. You can define if, and how long, you are to defer receiving Quality Updates after they're available on Windows Update.
+     Quality Updates are typically fixes and improvements to existing Windows functionality, and are published the first Tuesday of every month. Though they can be released at any time by Microsoft. You can define if, and how long, you are to defer receiving Quality Updates after they're available on Windows Update.
 
-  - **Feature update deferral period (days)**: Enter the number of days for which Feature Updates are deferred. You can defer receiving Feature Updates up to 180 days from their release.
+   - **Feature update deferral period (days)**: Enter the number of days for which Feature Updates are deferred. You can defer receiving Feature Updates up to 180 days from their release.
 
-    Feature Updates are typically new features for Windows. After you configure the **Servicing channel** setting, you can define if, and how long, you are to defer receiving Feature Updates after they're available on Windows Update.
+     Feature Updates are typically new features for Windows. After you configure the **Servicing channel** setting, you can define if, and how long, you are to defer receiving Feature Updates after they're available on Windows Update.
 
-    For example:
-    **If the Servicing channel is set to Semi-Annual Channel (Targeted), and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. The device does not receive the update until February - 30 days later.
+     For example:
+     **If the Servicing channel is set to Semi-Annual Channel (Targeted), and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. The device does not receive the update until February - 30 days later.
 
-    **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.
+     **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.
 
-  - **Delivery optimization download mode**: Choose the method for which devices download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Delivery optimization download mode**: Choose the method for which devices download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 6. When done, select **OK**. In **Create Update Ring**, select **Create**.
 

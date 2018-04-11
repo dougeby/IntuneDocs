@@ -24,7 +24,7 @@ ms.custom: intune-classic
 ---
 # Help protect your devices with remote lock and passcode reset
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune provides both remote lock and passcode reset capabilities.
 

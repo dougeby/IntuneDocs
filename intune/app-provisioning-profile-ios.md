@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Use iOS app provisioning profiles to prevent your apps from expiring
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 

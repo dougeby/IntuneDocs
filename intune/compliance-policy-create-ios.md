@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Add a device compliance policy for iOS devices in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 An Intune iOS device compliance policy determines the rules and settings that iOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies and the prerequisites you need before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
 

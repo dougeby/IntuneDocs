@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 # Manage Android for Work devices with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Android for Work is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android for Work provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device.
 

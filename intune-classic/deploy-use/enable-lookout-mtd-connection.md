@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Enable Lookout MTD connection in the Intune classic portal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 To enable the Lookout Mobile Threat Defense (MTD) connection in Intune, you should have already configured the Intune Connector in the Lookout console.  If you have not already done so, you should [Set up your Lookout Mobile Threat Defense subscription](setup-your-lookout-mtd-subscription.md).
 

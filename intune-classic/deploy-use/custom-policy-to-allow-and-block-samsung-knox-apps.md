@@ -28,7 +28,7 @@ ms.custom: intune-classic
 ---
 # Use custom policies to allow and block apps for Samsung KNOX Standard devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
@@ -45,21 +45,21 @@ These settings can only be used by devices that run Samsung KNOX Standard.
 4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following:
 	For a list of apps that are blocked from running on the device:
 	
-	- **Setting name.** Enter **PreventStartPackages**.
-	- **Setting description.** Enter an optional description like 'List of apps that are blocked from running.'
-	- 	**Data type.** From the drop-down list, choose **String**.
-	- 	**OMA-URI.** Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-	- 	**Value.** Enter a list of the app package names you want to block. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   - **Setting name.** Enter **PreventStartPackages**.
+   - **Setting description.** Enter an optional description like 'List of apps that are blocked from running.'
+   - **Data type.** From the drop-down list, choose **String**.
+   - **OMA-URI.** Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **Value.** Enter a list of the app package names you want to block. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-	For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
+     For a list of apps that users are allowed to install from the Google Play store while excluding all other apps:
 
-	- **Setting name.** Enter **AllowInstallPackages**.
-	- **Setting description.** Enter an optional description like 'List of apps that users can install from Google Play.'
-	- **Data type.** From the drop-down list, choose **String**.
-	- **OMA-URI.** Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-	- **Value.** Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
+   - **Setting name.** Enter **AllowInstallPackages**.
+   - **Setting description.** Enter an optional description like 'List of apps that users can install from Google Play.'
+   - **Data type.** From the drop-down list, choose **String**.
+   - **OMA-URI.** Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Value.** Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-4. Click **OK**, and then click **Save Policy**. 
+5. Click **OK**, and then click **Save Policy**. 
 
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.

@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # Device restriction for Windows 10 (and newer) settings in Intune
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
