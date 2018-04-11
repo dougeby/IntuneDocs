@@ -189,9 +189,6 @@ For education profiles, new settings will be available under the **Printers** ca
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
-### Configure an iOS app PIN <!-- 1586774 -->
-Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
-
 <!-- the following are present prior to 1711 -->
 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
