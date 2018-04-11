@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ Getting access to your organization’s apps, data, and resources makes it easie
 > [!NOTE]
 > You can find instructions for enrolling macOS devices on previous versions of macOS [here](enroll-your-device-in-intune-macos-legacy.md).
 
-1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
 
 2. Log into the Company Portal website with your work or school account.
 
