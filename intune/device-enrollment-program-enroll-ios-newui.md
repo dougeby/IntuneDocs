@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Automatically enroll iOS devices with Apple's Device Enrollment Program
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### Temporary user interface differences
@@ -81,8 +81,8 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
     ![Get an enrollment program token.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Grant permission to Microsoft to send user and device information to Apple by selecting **I agree**.
-  
-  ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
+
+   ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
 3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
@@ -145,12 +145,12 @@ Now that you've installed your token, you can create an enrollment profile for D
 
     Users are notified that their devices are supervised in two ways:
 
-    - The lock screen says: "This iPhone is managed by Contoso."
-    - The **Settings** > **General** > **About** screen says: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device."
+   - The lock screen says: "This iPhone is managed by Contoso."
+   - The **Settings** > **General** > **About** screen says: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device."
 
      > [!NOTE]
      > A device enrolled without supervision can only be reset to supervised by using the Apple Configurator. Resetting the device in this manner requires connecting an iOS device to a Mac with a USB cable. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3).
-     
+
 7. Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you cannot change this setting without factory resetting the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
 
 8. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
@@ -162,21 +162,23 @@ Now that you've installed your token, you can create an enrollment profile for D
 11. Choose **Setup Assistant Settings** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-    | Setting | Description |
-    | --- | --- |
-    | **Department Name** | Appears when users tap **About Configuration** during activation. |
-    | **Department Phone** | Appears when the user clicks the **Need Help** button during activation. |
-    | **Setup Assistant Options** | The following optional settings can be set up later in the iOS **Settings** menu. |
-    | **Passcode** | Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
-    | **Location Services** | If enabled, Setup Assistant prompts for the service during activation. |
-    | **Restore** | If enabled, Setup Assistant prompts for iCloud backup during activation. |
-    | **iCloud and Apple ID** | If enabled, Setup Assistant prompts the user to sign in an Apple ID and the Apps & Data screen will allow the device to be restored from iCloud backup. |
-    | **Terms and Conditions** | If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation. |
-    | **Touch ID** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Apple Pay** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Zoom** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Siri** | If enabled, Setup Assistant prompts for this service during activation. |
-    | **Diagnostic Data** | If enabled, Setup Assistant prompts for this service during activation. |
+
+    |                 Setting                  |                                                                                               Description                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>Department Name</strong>     |                                                             Appears when users tap <strong>About Configuration</strong> during activation.                                                              |
+    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation.                                                          |
+    | <strong>Setup Assistant Options</strong> |                                                     The following optional settings can be set up later in the iOS <strong>Settings</strong> menu.                                                      |
+    |        <strong>Passcode</strong>         | Prompt for passcode during activation. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
+    |    <strong>Location Services</strong>    |                                                                 If enabled, Setup Assistant prompts for the service during activation.                                                                  |
+    |         <strong>Restore</strong>         |                                                                If enabled, Setup Assistant prompts for iCloud backup during activation.                                                                 |
+    |   <strong>iCloud and Apple ID</strong>   |                         If enabled, Setup Assistant prompts the user to sign in an Apple ID and the Apps & Data screen will allow the device to be restored from iCloud backup.                         |
+    |  <strong>Terms and Conditions</strong>   |                                                   If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation.                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+    |     <strong>Diagnostic Data</strong>     |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
+
 
 12. Choose **OK**.
 
@@ -186,12 +188,12 @@ Now that you've installed your token, you can create an enrollment profile for D
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
-  ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/device-enrollment-program-enroll-ios/image06.png)
-  
-  To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-  - A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-  - Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-  - Intune syncs new and removed devices with Apple every 24 hours.
+   ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/device-enrollment-program-enroll-ios/image06.png)
+
+   To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+   - A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
+   - Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+   - Intune syncs new and removed devices with Apple every 24 hours.
 
 ## Assign an enrollment profile to devices
 You must assign an enrollment program profile to devices before they can enroll.

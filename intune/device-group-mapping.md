@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Categorize devices into groups for easier management
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use Microsoft Intune device categories to automatically add devices to groups based on categories that you define. This makes it easier for you to manage those devices.
 

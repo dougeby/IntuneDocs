@@ -123,13 +123,13 @@ At this point, you may also:
 
     To do so:
 
-    1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
+  1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. Change the value of the `availableToOtherTenants` setting to `true`.
+  2. Change the value of the `availableToOtherTenants` setting to `true`.
 
-    3. Save your changes.
+  3. Save your changes.
 
 ## Intune permission scopes
 

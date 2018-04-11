@@ -4,7 +4,8 @@
 title: Your Windows version isn't yet supported | Microsoft Docs
 description:
 keywords:
-author: lenewsad
+author: lenewsad
+
 ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
@@ -13,7 +14,9 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
-searchScope: - User help
+
+searchScope:
+ - User help
 
 # optional metadata
 

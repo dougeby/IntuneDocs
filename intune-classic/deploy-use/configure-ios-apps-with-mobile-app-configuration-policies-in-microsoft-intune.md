@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Configure iOS apps with mobile app configuration policies in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
 
@@ -67,8 +67,8 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 
 4.  In the **Mobile App Configuration Policy** section of the page, in the box, enter or paste an  XML property list that contains the app configuration settings that you want. The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
 
-	> [!TIP]
-	> To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+    > [!TIP]
+    > To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
 
 5.  Click **Validate** to ensure that the XML that you entered is in a valid property list format.
 
@@ -82,14 +82,14 @@ The new policy is displayed in the **Configuration Policies** node.
 ## Information about the XML file format
 
 Intune supports the following data types in a property list:
-	
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; or &lt;false /&gt;
-	 
+
 For more information about data types, see [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
 
 Additionally, Intune supports the following token types in the property list:
@@ -102,7 +102,7 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{username\}\} - (Example: **John Doe**)
 - \{\{serialnumber\}\} - (Example: **F4KN99ZUG5V2**) for iOS devices
 - \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) for iOS devices
-	
+
 The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
 
 ## Associate a mobile app configuration policy with an app
@@ -144,5 +144,4 @@ When you create a mobile app configuration file, you can specify one or more of 
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

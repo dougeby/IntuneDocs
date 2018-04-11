@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Enroll iOS devices with Apple Configurator by using Setup Assistant
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user.
 
@@ -64,7 +64,7 @@ A device enrollment profile defines the settings applied to a group of devices.
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
-  ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
+   ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
 2. Enter details for the device profiles:
 
@@ -85,7 +85,7 @@ A device enrollment profile defines the settings applied to a group of devices.
 
    -  **Device Enrollment Program**&mdash;The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure that the toggle is set to **off**.
 
-3.  Choose **Save Profile** to add the profile.
+3. Choose **Save Profile** to add the profile.
 
 ### Add iOS devices to enroll with Setup Assistant
 
@@ -95,29 +95,29 @@ A device enrollment profile defines the settings applied to a group of devices.
 
    ![Add devices dialog box](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Upload a CSV file containing serial numbers**&mdash;Create a comma-separated value (.csv) list of two columns without a header, limited to 5,000 devices or 5 MB per .csv file.
+   - **Upload a CSV file containing serial numbers**&mdash;Create a comma-separated value (.csv) list of two columns without a header, limited to 5,000 devices or 5 MB per .csv file.
 
-    |||
-    |-|-|
-    |&lt;Serial #1&gt;|&lt;Device #1 Details&gt;|
-    |&lt;Serial#2&gt;|&lt;Device #2 Details&gt;|
+     |||
+     |-|-|
+     |&lt;Serial #1&gt;|&lt;Device #1 Details&gt;|
+     |&lt;Serial#2&gt;|&lt;Device #2 Details&gt;|
 
-  When viewed in a text editor, this .csv file appears as:
+   When viewed in a text editor, this .csv file appears as:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Manually add device details**&mdash;Enter the serial number and any notes or details for up to 15 devices.
+   -  **Manually add device details**&mdash;Enter the serial number and any notes or details for up to 15 devices.
 
-  On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details.
+   On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details.
 
-  > [!NOTE]
-  > In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual serial numbers. In the new Azure portal, you’ll only be able to overwrite the details for all serial numbers or to ignore new details for all serial numbers.
+   > [!NOTE]
+   > In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual serial numbers. In the new Azure portal, you’ll only be able to overwrite the details for all serial numbers or to ignore new details for all serial numbers.
 
-  > [!NOTE]
-  > If you want to remove corporate-owned devices from Intune management later, you might need to go to **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** and remove the device serial number from Intune in order to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you'll need to verify that only active devices’ serial numbers are present in that group.
+   > [!NOTE]
+   > If you want to remove corporate-owned devices from Intune management later, you might need to go to **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** and remove the device serial number from Intune in order to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you'll need to verify that only active devices’ serial numbers are present in that group.
 
 2. Choose **Next**.
 
@@ -142,7 +142,7 @@ Specify the profile to assign to added devices from the list of available profil
 
 iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
-1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
+1. On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
 
    > [!WARNING]
    > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
@@ -153,12 +153,12 @@ iOS devices are connected to the Mac computer and enrolled for mobile device man
 
    You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 
-4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
+4. Connect the iOS mobile devices to the Mac computer with a USB adapter.
 
-    > [!WARNING]
-    > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you start Setup Assistant.
+   > [!WARNING]
+   > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you start Setup Assistant.
 
-5.  Choose **Prepare**. On the Prepare iOS Device pane, select **Manual** and then choose **Next**.
+5. Choose **Prepare**. On the Prepare iOS Device pane, select **Manual** and then choose **Next**.
 
 6. On the Enroll in MDM Server pane, select the server name you created, and then choose **Next**.
 

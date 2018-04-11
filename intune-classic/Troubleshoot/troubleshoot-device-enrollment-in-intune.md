@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot device enrollment in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -92,9 +92,9 @@ Administrators can delete devices in the Azure Active Directory portal.
 8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
 
 > [!NOTE]
-
+> 
 > You can avoid the device enrollment cap by using Device Enrollment Manager account, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > A user account that is added to Device Enrollment Managers account will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
 ### Company Portal Temporarily Unavailable
@@ -161,7 +161,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
-**Resolution:** Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+<strong>Resolution:</strong> Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
 
 
 ## Android issues
@@ -202,27 +202,27 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 1. Launch the Smart Manager app on the device.
 
-  ![Select Smart Manager icon on device](./media/smart-manager-app-icon.png)
+   ![Select Smart Manager icon on device](./media/smart-manager-app-icon.png)
 
 2. Choose the **Battery** tile.
 
-  ![Select the Battery tile](./media/smart-manager-battery-tile.png)
+   ![Select the Battery tile](./media/smart-manager-battery-tile.png)
 
 3. Under **App power saving** or **App optimization**, select **Detail**.
 
-  ![Select Detail under App power saving or App optimization](./media/smart-manager-app-power-saving-detail.png)
+   ![Select Detail under App power saving or App optimization](./media/smart-manager-app-power-saving-detail.png)
 
 4. Choose **Company Portal** from the list of apps.
 
-  ![Select Company Portal from the apps list](./media/smart-manager-company-portal.png)
+   ![Select Company Portal from the apps list](./media/smart-manager-company-portal.png)
 
 5. Choose **Turned off**.
 
-  ![Select Turned off from App optimization dialog](./media/smart-manager-app-optimization-turned-off.png)
+   ![Select Turned off from App optimization dialog](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Under **App power saving** or **App optimization**, confirm that Company Portal is turned off.
 
-  ![Verify that Company Portal is turned off](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Verify that Company Portal is turned off](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### Profile installation failed

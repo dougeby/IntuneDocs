@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Configure a certificate profile for your devices in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can authenticate these connections by using certificates. When you use certificates, you don't need to enter user names and passwords to authenticate connections
 

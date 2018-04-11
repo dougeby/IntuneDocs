@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 
 # Configure Windows 10 edition upgrade profile in Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configure an upgrade profile in Intune to automatically upgrade devices that run Windows 10 edition to a different edition. Also see the supported upgrade paths.
 
@@ -134,10 +134,10 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
 6. From the **Profile type** drop-down list, choose **Edition upgrade**.
 7. In the **Edition Upgrade** properties, enter the following settings:
-  - **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you're upgrading the targeted devices to.
-  - **Product Key** - Enter the product key that you received from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices. 
+   - **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you're upgrading the targeted devices to.
+   - **Product Key** - Enter the product key that you received from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices. 
     After you create a policy that contains a product key, the key cannot be updated, and is hidden for security reasons. To change the product key, enter the entire key again.
-  - **License File** - Choose **Browse** to select the license file you received from Microsoft. This license file contains license information for the Windows Holographic or Windows 10 Mobile edition you are upgrading the targeted devices to.
+   - **License File** - Choose **Browse** to select the license file you received from Microsoft. This license file contains license information for the Windows Holographic or Windows 10 Mobile edition you are upgrading the targeted devices to.
 8. When done, select **Create** to save your changes.
 
 The profile is created and is listed in the profiles.

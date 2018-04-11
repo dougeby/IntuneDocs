@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 # Overview of the Microsoft Intune mobile device management (MDM) lifecycle
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 All devices that you manage have a *lifecycle*. Intune can help you manage this lifecycle: from enrollment, through configuration and protection, to retiring the device when it's no longer required.
 

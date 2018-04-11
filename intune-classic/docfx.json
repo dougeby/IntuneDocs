@@ -13,8 +13,8 @@
       }
     ],
     "resource": [
-        {
-          "files": [
+      {
+        "files": [
           "**/images/**",
           "**/*.png",
           "**/*.jpg",
@@ -22,7 +22,7 @@
           "**/*.bmp",
           "**/*.html",
           "**/*.css"
-          ],
+        ],
         "exclude": [
           "**/obj/**",
           "_themes/**"
@@ -34,10 +34,14 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "contributors_to_exclude": [ "herohua" ],
-      "searchScope": ["Intune"],
+      "contributors_to_exclude": [
+        "herohua"
+      ],
+      "searchScope": [
+        "Intune"
+      ],
       "_op_documentIdPathDepotMapping": {
         "EndUser/": {
           "depot_name": "Azure.EndUser",
@@ -60,6 +64,7 @@
           "folder_relative_path_in_docset": "."
         }
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }

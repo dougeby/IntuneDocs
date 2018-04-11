@@ -4,7 +4,8 @@
 title: Resolving threats found by Lookout for Work on Android | Microsoft Docs
 description: Learn how to fix a threat found by Lookout for Work on Android.
 keywords:
-author: lenewsad
+author: lenewsad
+
 ms.author: lanewsad
 manager: dougeby
 ms.date: 03/17/2017
@@ -12,8 +13,10 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
-searchScope: - User help
+ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+
+searchScope:
+ - User help
 
 # optional metadata
 

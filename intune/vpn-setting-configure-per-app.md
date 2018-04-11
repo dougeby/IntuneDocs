@@ -73,7 +73,7 @@ Import the VPN server's root certificate issued by the CA into a profile created
 4. Click the folder icon and browse to your VPN certificate (.cer file) that you exported from your VPN administration console. Click **OK**.
 5. Click **Create**.
 
-    ![Create a trusted certificate profile](media\vpn-per-app-create-trusted-cert.png)
+    ![Create a trusted certificate profile](./media/vpn-per-app-create-trusted-cert.png)
 
 ## Create a SCEP certificate profile
 
@@ -100,7 +100,7 @@ The trusted root certificate profile allows the iOS to automatically trust the V
 14. Click **OK**.
 15. Click **Create**.
 
-    ![Create a SCEP certificate profile](media\vpn-per-app-create-scep-cert.png)
+    ![Create a SCEP certificate profile](./media/vpn-per-app-create-scep-cert.png)
 
 ## Create a Per-App VPN profile
 
@@ -129,7 +129,7 @@ The VPN profile contains the SCEP certificate carrying the client credentials, t
 6. Click **OK**.
 7. Click **Create**.
 
-    ![Create a Per-App VPN profile](media\vpn-per-app-create-vpn-profile.png)
+    ![Create a Per-App VPN profile](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## Associate an app with the VPN profile
@@ -152,7 +152,7 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 9. Click **OK** and click **Save**.
 
-    ![Associate an app with the VPN](media\vpn-per-app-app-to-vpn.png)
+    ![Associate an app with the VPN](./media/vpn-per-app-app-to-vpn.png)
 
 ## Verify the connection on the iOS device
 

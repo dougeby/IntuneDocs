@@ -28,9 +28,9 @@ ms.custom: intune-classic
 
 # Download Skycure iOS app configuration policy
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-##Before you begin
+## Before you begin
 
 You need to log in to the Skycure Management Console to perform the next steps.
 

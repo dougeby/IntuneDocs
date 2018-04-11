@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 This page is a list of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## July 2016
 
@@ -103,12 +103,12 @@ Service health information for Intune has been moved to a central location with 
 	* Must be managed by Intune
 	* Must be compliant with any deployed Intune compliance policies
 
- End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
+  End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
 - **Conditional access for browser.** You can set a conditional access policy for [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) so that they can only be accessed from supported web browsers on managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any noncompliance issues before they can complete sign-in.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online supports conditional access.** You can set a conditional access policy for [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any noncompliance issues before sign-in can complete.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### Intune Company Portal updates
 
@@ -189,19 +189,19 @@ All of these features are also supported for hybrid customers (Configuration Man
 
 ### App management
 - **MAM user compliance.**
-You can now view the [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
-   - Devices
-   - Apps on the device
+  You can now view the [status](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
+  - Devices
+  - Apps on the device
 
-   Status values:
+    Status values:
 
-   **Checked in**: Indicates the policy was deployed to the user, and app was used in work context, and successfully received the policy.
+    **Checked in**: Indicates the policy was deployed to the user, and app was used in work context, and successfully received the policy.
 
     **Not checked in**: Indicates the policy was deployed to the user, but app has not been used in the work context since then.
 
 
 - **MAM controls to prevent Outlook contacts sync (Android).**
-A new setting is available for [mobile application management](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
+  A new setting is available for [mobile application management](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
 
 ### Device management
 - **Phone number identification for corporate-owned devices.** Phones that are categorized as "Corporate" are now identified with their full phone number when, for example, you run a mobile device inventory report. BYOD phone numbers continue to be masked with ****, with only the last 4 digits displayed.
@@ -225,6 +225,6 @@ When Windows 10 Mobile and Windows Phone 8.1 users are installing line-of-busine
 
 Before these statuses were added, users got confused if an app installation took a long time, because they saw only an “Installing” status, which might remain on the screen for hours. Adding the new statuses means that, instead of calling support, users can now tap the "Waiting for device to sync" link and follow the instructions to force the sync process to resume.
 
->[!div class="step-by-step"]
-
->[&larr; **What's new in Intune**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **What's new in Intune**](whats-new-in-microsoft-intune.md)    
