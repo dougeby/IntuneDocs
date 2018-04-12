@@ -30,7 +30,7 @@ ms.custom:
 
 By requesting an account move, you are requesting that your data center is changed to another location. After the move, your Data Warehouse will reset and begin recording data at the new location based on the specified the day your move begins. To back up your previous Data Warehouse data, please complete the following steps **prior** to your account move. Most Data Warehouse tables retain data for 30 days, so any data gap in these tables will no longer be available 30 days after your account move. To learn more about the retention periods for specific tables, see [User lifetime representation in the Microsoft Intune Data Warehouse](reports-ref-user-timeline.md). 
 
-##Back up your Data Warehouse data 
+## Back up your Data Warehouse data 
 
 To back up your Data Warehouse data, you must save your Data Warehouse data into a *.csv* file using the  Data Warehouse API:  
 
