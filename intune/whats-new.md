@@ -48,7 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of April 9, 2018
 
-### Updated Help experience on Company Portal app for Android <!-- 1631531 -->
+#### Updated Help experience on Company Portal app for Android <!-- 1631531 -->
 
 We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
 - Upload diagnostic logs to Microsoft.
