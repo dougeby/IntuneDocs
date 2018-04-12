@@ -64,7 +64,8 @@ To use ATP with Intune, be sure you have the following configured, and ready to 
     1. Select **Settings** > **Advanced features**.
     2. For **Microsoft Intune connection**, choose **On**:
 
-      ![Alt text](./media/atp-security-center-intune-toggle.png)
+        ![Alt text](./media/atp-security-center-intune-toggle.png)
+
     3. Select **Save preferences**.
 
 You typically do this task once. So if ATP is already enabled in your Intune resource, then you don't need to do it again.
