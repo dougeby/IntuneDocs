@@ -22,7 +22,7 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+/ms.custom: intune-azure
 ---
 
 # What's new in Microsoft Intune
@@ -53,7 +53,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
 - Upload diagnostic logs to Microsoft.
 - Send an email that describes the problem and incident ID to a company support person.  
-To check out the updated help experience go to [Send logs using email](intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](intune-user-help/send-logs-to-microsoft-android.md).
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
 
 
 #### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
