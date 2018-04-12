@@ -95,7 +95,8 @@ The next steps show you how to onboard using Intune.
 
 This zip file includes **WindowsDefenderATP.onboarding**, which you need in the next steps.
 
-#### Create the ATP configuration profile - ??? Need human-speak descriptions of the properties
+#### Create the ATP configuration profile
+
 This profile uses the onboarding package you downloaded in the previous steps.
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
