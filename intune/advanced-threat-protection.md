@@ -156,6 +156,7 @@ Next, monitor the state of devices that have the ATP compliance policy.
 3. Find your ATP policy in the list, and see which devices are compliant or noncompliant.
 
 ## More good stuff
+[Windows Defender ATP conditional access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
 [Windows Defender ATP risk dashboard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection)  
 [Get started with device compliance policies](device-compliance-get-started.md)  
 [Conditional access in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
