@@ -26,7 +26,6 @@ ms.suite: ems
 ---
 
 # What's new in Microsoft Intune
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
@@ -48,11 +47,12 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of April 9, 2018
 
-#### Updated Help experience on Company Portal app for Android <!-- 1631531 -->
+#### Updated help experience in Company Portal app for Android <!-- 1631531 -->
 
 We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
 - Upload diagnostic logs to Microsoft.
 - Send an email that describes the problem and incident ID to a company support person.  
+
 To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
 
 
