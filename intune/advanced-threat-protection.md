@@ -61,11 +61,11 @@ To use ATP with Intune, be sure you have the following configured, and ready to 
     ![Alt text](./media/atp-device-compliance-open-windows-defender.png)
 
 4. In the **Windows Defender Security Center**:
-  1. Select **Settings** > **Advanced features**.
-  2. For **Microsoft Intune connection**, choose **On**:
+    1. Select **Settings** > **Advanced features**.
+    2. For **Microsoft Intune connection**, choose **On**:
 
       ![Alt text](./media/atp-security-center-intune-toggle.png)
-  3. Select **Save preferences**.
+    3. Select **Save preferences**.
 
 You typically do this task once. So if ATP is already enabled in your Intune resource, then you don't need to do it again.
 
@@ -75,7 +75,7 @@ Windows Defender includes an onboard configuration package that is installed on 
 
 Once you onboard a device using configuration package, then you don't need to do it again. This is typically a one-time task.
 
-### Download configuration package
+#### Download configuration package
 
 1. In the [Windows Defender Security Center](https://securitycenter.windows.com), select **Settings** > **Onboarding**.
 2. Enter the following settings:
@@ -85,7 +85,7 @@ Once you onboard a device using configuration package, then you don't need to do
 
 This zip file includes **WindowsDefenderATP.onboarding**, which you need in the next steps.
 
-### Create the ATP configuration profile - ??? Need human-speak descriptions of the properties
+#### Create the ATP configuration profile - ??? Need human-speak descriptions of the properties
 This profile uses the onboarding package you downloaded in the previous steps.
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
@@ -102,7 +102,7 @@ This profile uses the onboarding package you downloaded in the previous steps.
 
 7. Select **OK**, and **Create** to save your changes, which creates the profile.
 
-## Create the ATP compliance policy for your devices
+## Create the compliance policy
 The compliance policy determines an acceptable level of risk on a device.
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
@@ -112,18 +112,18 @@ The compliance policy determines an acceptable level of risk on a device.
 5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
 
   - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-  - **Low**: The device is compliant if only low-level threats exist. Devices with Medium or High threat levels are not compliant.
+  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-  - **High**: This level is the least secure, and allows all threat levels. So devices that are High, Medium or Low are considered compliant.
+  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 
-## Assign the policy to your groups
+## Assign the policy
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device compliance** > **Policies**> select your ATP compliance policy.
 3. Select **Assignments**.
-4. Include or exclude your Azure AD groups to assign them the policy
+4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
 ## Create an Azure AD conditional access policy
