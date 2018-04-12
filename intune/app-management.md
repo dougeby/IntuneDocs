@@ -65,7 +65,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 <sup>2</sup>Applies to devices managed by Intune only.
 
-## Microsoft HoloLens and Intune
+## Windows Holographic for Business and Intune
 
 Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal or deploy them from the Microsoft Store for Business. For more information about deploying Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md). For more information about deploying apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). For more information about developing apps for Microsoft HoloLens, see [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
 

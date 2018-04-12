@@ -43,7 +43,7 @@ Compliance policies are rules and settings that devices must meet to be complian
 
 See also **[Get started with compliance policies](device-compliance-get-started.md)**.
 
-## Deploy apps
+## Deploy and manage apps
 **[Add apps to Intune](apps-add.md)**
 
 Using Intune, you can add apps to your devices running Windows Holographic for Business. There are many ways to deploy apps, including:
@@ -51,6 +51,8 @@ Using Intune, you can add apps to your devices running Windows Holographic for B
 - [Add Microsoft Store apps](store-apps-windows.md)
 - [Add apps you create](lob-apps-windows.md)
 - [Assign apps to groups](apps-deploy.md)
+
+For additional information, see [Windows Holographic for Business and Intune](app-management.md#windows-holographic-for-business-and-intune).
 
 ## Device categories and groups
 **[Categorize devices into groups](device-group-mapping.md)**
