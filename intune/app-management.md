@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 04/11/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,6 +64,13 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 <sup>1</sup> Consider using [Windows Information Protection](windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
 
 <sup>2</sup>Applies to devices managed by Intune only.
+
+## Microsoft HoloLens and Intune
+
+Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal or deploy them from the Microsoft Store for Business. For more information about deploying Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md). For more information about deploying apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). For more information about developing apps for Microsoft HoloLens, see [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
+
+> [!Note]
+> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
 
 ## How to get started
 
