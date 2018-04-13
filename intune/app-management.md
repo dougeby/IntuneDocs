@@ -39,7 +39,7 @@ As an IT admin, you can use Microsoft Intune to manage the mobile apps that your
 
 Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune.
 
-Intune offers a range of capabilities to help you get the apps you need on the devices you want to install them on. The following table provides a summary of app management capabilities: 
+Intune offers a range of capabilities to help you get the apps you need on the devices you want to run them on. The following table provides a summary of app management capabilities: 
 
 ## App management capabilities by platform
 
@@ -108,7 +108,7 @@ For more information about this section, see [Manage apps](app-management.md).
 For more information about this section, see [Monitor apps](apps-monitor.md).
 
 ### Set up
-- **iOS VPP tokens**: Apply and view your iOS Volume Purchase Program (VPP) licenses.
+- **iOS VPP tokens**: Apply and view your iOS Volume Purchase Program (VPP) licenses. For more information, see:
     - [iOS volume-purchased apps](vpp-apps-ios.md)
 - **Windows enterprise certificate**: Apply or view the status of a code-signing certificate that's used to distribute line-of-business apps to your managed Windows devices.
 - **Windows Symantec certificate**: Apply or view the status of a Symantec code-signing certificate, which is needed to distribute XAP and WP8.x appx files to Windows 10 Mobile devices.
