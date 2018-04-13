@@ -106,7 +106,7 @@ Note that although the default toggle status is displayed in the UI immediately 
 
 #### Enhanced jailbreak detection <!-- 846515 -->
 
-Enhanced jailbreak detection is a new compliance setting that improves how Intune evaluates jailbroken devices. The setting causes the device to check-in with Intune more frequently, which uses the device’s location services and impacts battery usage. This feature is temporarily hidden while we fix an issue.
+Enhanced jailbreak detection is a new compliance setting that improves how Intune evaluates jailbroken devices. The setting causes the device to check-in with Intune more frequently, which uses the device’s location services and impacts battery usage.
 
 #### Reset passwords for Android O devices <!-- 1238299 -->
 You'll be able to reset the passwords for enrolled Android 8.0 devices with Work profiles. When you send a "Reset password" request to an Android 8.0 device, it sets a new device unlock password or a managed profile challenge to the current user. The password or challenge is sent and immediately takes effect.
