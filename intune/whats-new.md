@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/10/2018
+ms.date: 04/12/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,10 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+/ms.custom: intune-azure
 ---
 
 # What's new in Microsoft Intune
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
@@ -47,6 +46,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->   
 
 ## Week of April 9, 2018
+
+#### Updated help experience in Company Portal app for Android <!-- 1631531 -->
+
+We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
+- Upload diagnostic logs to Microsoft.
+- Send an email that describes the problem and incident ID to a company support person.  
+
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
+
 
 #### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
 
@@ -219,10 +227,10 @@ You can target MAM policies based on the management state of the device:
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
-#### Improvements to the language in the Company Portal app for Windows <!---1683758--->
+#### Improvements to the language in the Company Portal app for Windows <!-- 1683758 -->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
 
-#### New additions to our docs about user privacy <!---1440709--->
+#### New additions to our docs about user privacy <!-- 1440709 -->
 As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
 
 - **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
@@ -969,7 +977,7 @@ If you do not have the Windows Company Portal app installed for end users, pleas
 For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
 
 #### What do I need to do to prepare for this change?  
-lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
+Please inform your users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
 - Use the Feedback Hub app on Windows 10
 - Send an email to WinCPfeedback@microsoft.com  
 
