@@ -65,7 +65,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 <sup>2</sup> Applies to devices managed by Intune only.
 
-## How to get started
+## Get started
 
 You can find most app-related information in the **Mobile Apps** workload, which you can access by doing the following:
 
