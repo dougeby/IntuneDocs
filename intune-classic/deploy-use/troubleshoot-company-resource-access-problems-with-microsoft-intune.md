@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot company resource access problems with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 

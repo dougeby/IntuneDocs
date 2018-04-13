@@ -29,8 +29,7 @@ ms.custom: intune-azure
 
 # How to validate your app protection policy setup
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Validate that your app protection policy is correctly set up and working. This guidance applies to app protection policies in the Azure portal.
 

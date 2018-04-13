@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot mobile application management
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 If you are having problems with Intune mobile application management, start here. This topic contains some common problems and questions you might have and provides solutions and answers.
 

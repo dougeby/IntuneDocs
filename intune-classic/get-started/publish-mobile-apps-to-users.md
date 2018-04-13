@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Quick Start Guide: Publish mobile apps to your users
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can help increase your end users’ productivity by quickly and easily giving them access to the mobile and desktop apps they need from the devices of their choice. Making apps easily available to end users reduces the time and effort users spend searching for and installing the correct apps, which reduces helpdesk calls when users cannot find the apps they need.   
 

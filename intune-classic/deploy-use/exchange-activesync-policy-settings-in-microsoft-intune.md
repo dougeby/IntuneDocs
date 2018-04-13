@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Exchange ActiveSync policy settings in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings that control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
@@ -49,10 +49,11 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 
 ## Encryption settings
 
-|Setting name|Details|
-|----------------|---|
-|**Require encryption on mobile device**<sup>1</sup>|Requires the data on a device to be encrypted when supported.<br><br>For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the **Require a password to unlock mobile devices** setting.|
-|**Require encryption on storage cards**|Requires data that is stored on external storage such as an SD card to be encrypted (on supported devices).
+|                           Setting name                           |                                                                                                                                    Details                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Require encryption on mobile device</strong><sup>1</sup> | Requires the data on a device to be encrypted when supported.<br><br>For Windows Phone 8 devices, you must set this to <strong>Yes</strong>.<br /><br />To enable encryption on iOS devices, enable the <strong>Require a password to unlock mobile devices</strong> setting. |
+|       <strong>Require encryption on storage cards</strong>       |                                                                                  Requires data that is stored on external storage such as an SD card to be encrypted (on supported devices).                                                                                  |
+
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
 -   If you want to enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](https://support.microsoft.com/kb/3013816) on each device.

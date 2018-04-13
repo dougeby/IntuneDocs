@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Configure Skycure to use Azure Active Directory Single Sign On (SSO)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure AD SSO is used when you integrate Intune with Skycure. Here are the main benefits:
 

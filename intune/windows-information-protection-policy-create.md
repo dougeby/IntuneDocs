@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Create and deploy Windows Information Protection (WIP) app protection policy with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can use app protection policies with Windows 10 apps to protect apps without device enrollment.
 

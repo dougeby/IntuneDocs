@@ -4,14 +4,17 @@
 title: What happens if you reset your iOS device? | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0fsearchScope: - User help
+ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Add iOS or macOS device feature settings in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Device features let you control a range of settings and features on iOS and macOS devices, such as:
 

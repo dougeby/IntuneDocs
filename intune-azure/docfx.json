@@ -32,6 +32,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "intune-azure-redir"
+    "dest": "intune-azure-redir",
+    "markdownEngineName": "markdig"
   }
 }

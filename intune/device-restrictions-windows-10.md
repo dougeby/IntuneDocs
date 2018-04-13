@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 # Device restriction for Windows 10 (and newer) settings in Intune
 This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
@@ -191,6 +191,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
+- **Display web results in search** - Block or allow web results to appear in searches made on the device.
 
 ## Cloud and Storage
 - 	**Microsoft account** - Lets the user associate a Microsoft account with the device.
@@ -258,7 +259,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
-- **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+- **Kiosk mode** - Identifies the type of kiosk mode supported by the policy. Options include:
 
   - **Not Configured** (default) - The policy does not enable a kiosk mode. 
   - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.

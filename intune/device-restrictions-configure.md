@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Configure device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Device restrictions let you control a wide range of settings and features you manage across a range of categories such as:
 - Security

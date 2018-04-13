@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Create a profile with custom settings in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune may not have all the built-in settings you need or want. Or you may want to use a setting available in other device profiles. To add these settings, create a device profile, and configure the profile with custom device settings.
 

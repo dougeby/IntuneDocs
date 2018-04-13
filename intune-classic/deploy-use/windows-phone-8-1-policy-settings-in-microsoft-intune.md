@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Windows Phone 8.1 policy settings in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Windows Phone 8.1 devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
@@ -48,18 +48,18 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 
 ### Password settings
 
-|Setting name|Details|
-|----------------|------|
-|**Require a password to unlock mobile devices**|Specifies whether users must enter a password to access their devices.|
-|**Required password type**|Specifies the type of password that will be required, such as alphanumeric or numeric only.|
-|**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this specifies the number of symbols that must be included in the password.|
-|**Minimum password length**|Specifies the minimum number of characters that are required in the password.|
-|**Allow simple passwords**|Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of times an incorrect password can be entered before the device is wiped.|
-|**Minutes of inactivity before the screen turns off**|Specifies the amount of time a device must remain idle before the screen is automatically locked.|
-|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
-|**Remember password history**|Specifies whether previously used passwords are remembered to prevent the user from using them again.|
-|**Remember password history** – **Prevent reuse of previous passwords**|Specifies how many previously used passwords are remembered.|
+|                                           Setting name                                            |                                                                                                                                    Details                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Require a password to unlock mobile devices</strong>                    |                                                                                                     Specifies whether users must enter a password to access their devices.                                                                                                     |
+|                              <strong>Required password type</strong>                              |                                                                                          Specifies the type of password that will be required, such as alphanumeric or numeric only.                                                                                           |
+|            <strong>Required password type – Minimum number of character sets</strong>             | Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this specifies the number of symbols that must be included in the password. |
+|                             <strong>Minimum password length</strong>                              |                                                                                                 Specifies the minimum number of characters that are required in the password.                                                                                                  |
+|                              <strong>Allow simple passwords</strong>                              |                                                                                                     Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.                                                                                                     |
+|     <strong>Number of repeated sign-in failures to allow before the device is wiped</strong>      |                                                                                         Specifies the number of times an incorrect password can be entered before the device is wiped.                                                                                         |
+|                <strong>Minutes of inactivity before the screen turns off</strong>                 |                                                                                       Specifies the amount of time a device must remain idle before the screen is automatically locked.                                                                                        |
+|                            <strong>Password expiration (days)</strong>                            |                                                                                                    Specifies the number of days before the device password must be changed.                                                                                                    |
+|                            <strong>Remember password history</strong>                             |                                                                                     Specifies whether previously used passwords are remembered to prevent the user from using them again.                                                                                      |
+| <strong>Remember password history</strong> – <strong>Prevent reuse of previous passwords</strong> |                                                                                                          Specifies how many previously used passwords are remembered.                                                                                                          |
 
 ### Encryption settings
 
@@ -124,14 +124,15 @@ In the **Allowed and blocked apps** list, specify a list of apps that you want t
 > [!NOTE]
 > A single policy can only contain a list of allowed or blocked apps. You cannot specify both in the same policy.
 
-|Setting name|Details|
-|----------------|--------------------|
-|**Block devices from opening the listed apps**|Lists the apps that are not managed by Intune, and which users are not allowed to install and run.|
-|**Allow devices to install only the listed apps**|Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, the URL to the app in the app store, and the app publisher (optional). For more help, see How to specify URLs to app stores later in this topic.
-|**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
-|**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
-|**Delete**|Deletes the selected app from the list.|
+|                          Setting name                          |                                                                                                      Details                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Block devices from opening the listed apps</strong>   |                                                        Lists the apps that are not managed by Intune, and which users are not allowed to install and run.                                                         |
+| <strong>Allow devices to install only the listed apps</strong> |                                 Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.                                 |
+|                      <strong>Add</strong>                      | Adds an app to the selected list. Specify a name of your choice, the URL to the app in the app store, and the app publisher (optional). For more help, see How to specify URLs to app stores later in this topic. |
+|                  <strong>Import Apps</strong>                  |                              Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.                               |
+|                     <strong>Edit</strong>                      |                                                                          Lets you edit the name, publisher, and URL of the selected app.                                                                          |
+|                    <strong>Delete</strong>                     |                                                                                      Deletes the selected app from the list.                                                                                      |
+
 > [!IMPORTANT]
 > If you specify a list of allowed apps for Windows Phone 8.1 devices, you must add the Company Portal app to this list or it will be blocked.
 

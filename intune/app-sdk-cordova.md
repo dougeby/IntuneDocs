@@ -78,16 +78,16 @@ Cordova apps built with the Intune App SDK Cordova Plugin can now receive Intune
 
 1. Update your version of ADAL:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Add the Intune App SDK for Cordova plugin:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## Build the plugin into your iOS app
 
@@ -137,7 +137,7 @@ After launching the app for the first time, you should see a dialog notifying yo
 * MultiDex support is incomplete.
 * App must have `minSdkVersion` of 14 and `targetSdkVersion` of 24 or below. Intune currently doesn't support apps targeting API 25
 * Intune cannot re-sign apps that were signed with the V2 Signature Scheme. When V2-signed apps are wrapped by the plugin, the wrapped output .apk will be unsigned.
-*
+  *
   * You can disable Cordova's default V2 Signing by adding the following to your `build-extras.gradle` file:
 
   ```gradle

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enroll Android devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune administrator, you can manage Android devices, including Samsung Knox Standard devices. You can also manage the work profile [Android for Work devices](#enable-enrollment-of-android-for-work-devices).
 
@@ -121,3 +121,14 @@ You can turn off Android for Work enrollment and management. Choosing **Unbind**
 
 2. **Agree to delete Android for Work binding**<br>
   Choose **Yes** to delete the binding and unenroll all Android for Work devices from Intune.
+
+## End user experience when enrolling a Samsung Knox device
+There are several considerations when enrolling Samsung Knox devices:
+-	Even if no policies require a PIN, the device must have at least a four digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
+-	There is no user interaction for Workplace Join Certificates (WPJ).
+-	The user is prompted with Service Enrollment info and what the app can do.
+-	The user is prompted with Knox Enrollment info and what Knox can do.
+-	If an Encryption Policy is enforced, users are required to set a six Character Complex password for the device passcode.
+-	There are no additional user prompts to install certificates pushed by a service for Company Resource Access.
+- Some older Knox devices will prompt the user for additional certificates used for Company Resource Access.
+- If a Samsung Mini device fails to install the WPJ with either the **Certificate Not Found** or **Unable to Register Device** errors, install the latest Samsung Firmware Updates.

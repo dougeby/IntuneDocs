@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Azure portal for Intune app protection policies
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 The Azure portal is used to create and manage app protection policies for:
 
@@ -37,9 +37,9 @@ The Azure portal is used to create and manage app protection policies for:
 - Apps running on devices that are **not enrolled** in any MDM solution.
 - Apps running on devices that are **enrolled in a third-party MDM solution**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The Azure portal is the new admin console for creating app protection policies, but you can also create an app protection policy that supports apps for devices enrolled into Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for MDM scenarios.
-
+> 
 > You might not see all the app protection policy settings available on the Intune admin console. Additionally, if you create app protection policies both on the Intune admin console and in the Azure portal, the policies created in the Azure portal will override the ones created on the Intune admin console. In this scenario, the Azure portal app protection policies will be applied to the apps and deployed to users.
 
 

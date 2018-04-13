@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Validating your mobile application management setup
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic provides information on checking for issues after you set up mobile application management (MAM). This guidance applies to MAM policies in the Azure portal.
 
@@ -49,7 +49,7 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 
 2. Choose a user from the list or search for and choose a user, then choose **Select user**. At the top of the **App reporting** column you will see whether the user is licensed for MAM. Below that you will see whether the user is licensed for O365 and the app status for all of the user's devices.
 
-![App statuts for MAM](..\media\ts-mam-user-apps.png)
+![App statuts for MAM](../media/ts-mam-user-apps.png)
 
 ### What to do
 Here are the actions to take based on the user status:
@@ -60,6 +60,6 @@ Here are the actions to take based on the user status:
 - Ensure that these conditions are applied across all users to which you want MAM policies to apply.
 
 ### See also
-[Get ready to configure mobile app management policies with Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Get ready to configure mobile app management policies with Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Protect app data using mobile app management policies with Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protect app data using mobile app management policies with Microsoft Intune](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

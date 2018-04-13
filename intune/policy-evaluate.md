@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
 
 # Evaluate how many users are targeted by a policy
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can use the **Evaluate** button to find out how many users are targeted by a device compliance or device configuration policy. This feature only calculates users, not devices.
 

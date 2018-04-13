@@ -4,14 +4,17 @@
 title: You need to update your Windows device | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4searchScope: - User help
+ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -27,7 +30,7 @@ ms.custom: intune-enduser
 
 # You need to update your Windows device
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 For mobile devices running Windows, update your device by navigating to **Settings** > **phone update** > **check for updates**.
 

@@ -160,10 +160,12 @@ PolicyKey|Policy Key, can be joined with Policy to get the policyName.|Windows 1
 
 The following table lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The PolicyUserActivity entity lists how many users are in which state on a given day over the last 30 days.
 
-|Property  |Description  |Example  |
-|---------|---------|---------|
-|DateKey|Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.|20160703|
-|Pending|Number of unique Devices in pending state.|123|
-|Succeeded|Number of unique Devices in success state.|12|
-PolicyKey|Policy Key, can be joined with Policy to get the policyName.|Windows 10 baseline|
-|Error|Number of unique Devices in error state.|10|
+
+| Property  |                                         Description                                         |       Example       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Date Key when the Device Configuration Profile check-in was recorded in the data warehouse. |      20160703       |
+|  Pending  |                         Number of unique Devices in pending state.                          |         123         |
+| Succeeded |                         Number of unique Devices in success state.                          |         12          |
+| PolicyKey |                Policy Key, can be joined with Policy to get the policyName.                 | Windows 10 baseline |
+|   Error   |                          Number of unique Devices in error state.                           |         10          |
+

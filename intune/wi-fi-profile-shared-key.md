@@ -27,9 +27,13 @@ ms.custom: intune-azure
 
 ---
 # Use a custom device profile to create a WiFi profile with a pre-shared key - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks, or wireless LANs. With Intune, you can create a WiFi profile using a pre-shared key. To create the profile, use the **Custom device profiles** feature within Intune. This article also includes some examples of how to create an EAP-based Wi-Fi profile.
+
+> [!IMPORTANT]
+>- Using a pre-shared key with Windows 10 causes a remediation error to appear in Intune. When this happens, the Wi-Fi profile is properly assigned to the device, and the profile works as expected.
+>- If you export a Wi-Fi profile that includes a pre-shared key, be sure the file is protected. The key is in plain text, so it's your responsibility to protect the key.
 
 ## Before you begin
 
@@ -52,15 +56,15 @@ You can create a custom profile with a pre-shared key for Android, Windows, or a
 
    d. **OMA-URI**:
 
-    - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Be sure to include the dot character at the beginning.
+     > [!NOTE]
+     > Be sure to include the dot character at the beginning.
 
-    SSID is the SSID for which you’re creating the policy. For example, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID is the SSID for which you’re creating the policy. For example, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Value Field** is where you paste your XML code. See the examples within this article. Update each value to match your network settings. The comments section of the code includes some pointers.
+   e. **Value Field** is where you paste your XML code. See the examples within this article. Update each value to match your network settings. The comments section of the code includes some pointers.
 3. Select **OK**, save, and then assign the policy.
 
     > [!NOTE]
@@ -209,7 +213,7 @@ You can also create an XML file from an existing Wi-Fi connection using the foll
 
 1. On a computer that is connected to, or has recently connected to the wireless network, open the `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` folder.
 
-  It’s best to use a computer that hasn't connected to many wireless networks. Otherwise, you may have to search through each profile to find the correct one.
+   It’s best to use a computer that hasn't connected to many wireless networks. Otherwise, you may have to search through each profile to find the correct one.
 
 2. Search through the XML files to locate the file with the correct name.
 3. After you have the correct XML file, copy and paste the XML code into the **Data** field of the OMA-URI settings page.
