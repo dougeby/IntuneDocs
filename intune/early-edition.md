@@ -117,6 +117,9 @@ Currently, AutoPilot deployment profiles can be assigned to selected devices. To
 ### Play sounds on iOS when in Lost mode <!-- 1629303 -->
 When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can play a sound (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode , or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
 
+### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
+If an end user uninstalls a required app, Intune will automatically reinstall the app within 24 hours rather than waiting for the 7 day re-evaluation cycle.
+
 ### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You'll be able to use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
