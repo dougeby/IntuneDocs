@@ -71,11 +71,7 @@ Some common apps that your IT department might manage are:
 
 -   Intune Managed Browser
 
--   Intune image Viewer
-
--   Intune PDF Viewer
-
--   Intune AV player
+-   Microsoft Azure Information Protection Viewer
 
 -   Microsoft Word, Excel, and PowerPoint
 
