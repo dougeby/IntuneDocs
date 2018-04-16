@@ -43,7 +43,7 @@ Compliance policies are rules and settings that devices must meet to be complian
 
 See also **[Get started with compliance policies](device-compliance-get-started.md)**.
 
-## Deploy apps
+## Deploy and manage apps
 **[Add apps to Intune](apps-add.md)**
 
 Using Intune, you can add apps to your devices running Windows Holographic for Business. There are many ways to deploy apps, including:
@@ -51,6 +51,16 @@ Using Intune, you can add apps to your devices running Windows Holographic for B
 - [Add Microsoft Store apps](store-apps-windows.md)
 - [Add apps you create](lob-apps-windows.md)
 - [Assign apps to groups](apps-deploy.md)
+
+Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal or deploy them from the Microsoft Store for Business. For more information about related areas, see the following:
+- To deploy Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md).
+- To deploy apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). 
+- To learn about app management with Microsoft Intune, see [What is app management in Microsoft Intune](app-management.md).
+- To learn more about developing apps for Microsoft HoloLens, see [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
+
+> [!NOTE]
+> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+
 
 ## Device categories and groups
 **[Categorize devices into groups](device-group-mapping.md)**
