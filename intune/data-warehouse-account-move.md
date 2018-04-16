@@ -77,7 +77,7 @@ After the Data Warehouse account move, you'll see in Intune that the Data Wareho
 
 ## Data Warehouse move example 
 
-Customer X requests an account move to begin on 1/06/2018. Previous to 1/06/2018, the customer will see UI alerts for upcoming changes beside Data Warehouse dependent graphs in the Azure portal. The customer will click these UI alerts to see documentation detailing steps to take if they wish to back up their previous Data Warehouse. On 1/06/2018, the Data Warehouse and the charts it supports will reset and begin storing data in the new data center.  
+Customer X requests an account move to begin on 1/06/2018. In response to the request, the customer will receive a link to see documentation detailing steps to take if they wish to back up their previous Data Warehouse. On 1/06/2018, the Data Warehouse and the charts it supports will reset and begin storing data in the new data center. 
 
 ## Next steps
 
