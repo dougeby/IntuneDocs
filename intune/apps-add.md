@@ -50,13 +50,13 @@ The following table lists the specific app types and how you can add them in the
 | Android for Work apps | Store app  | Find and approve the Android for Work app from the Google Play for Work store.  |
 | Office 365 apps for Windows 10  | Store app (Office 365) | Select **Windows 10** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app that you want to install.  |
 | Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
-| Android line-of-business (LOB) apps | LOB app. | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
+| Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
 | iOS LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an iOS installation file with the extension **.ipa**.  |
 | Windows Phone LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an iOS installation file with the extension **.xap**.  |
 | Windows LOB apps | LOB app | Select **Line-of-business** app as the app type, select the **App package file**, and then enter an iOS installation file with the extension **.msi**, **.appx**, or **.appxbundle**. |
 | Built-in iOS app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
-| Web apps  | Web app  | Select **Web link** as the **app type** and enter a valid URL pointing to the Web app.  |
+| Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
 
 You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed and allows you to select the **App type**. 
 
@@ -132,7 +132,7 @@ Requirements for cloud storage space are as follows:
 - All app installation files must be in the same folder.
 - The maximum file size for any file that you upload is 2 GB.
 
-## How to create and edit categories for apps
+## Create and edit categories for apps
 
 App categories can be used to help you sort apps to make them easier for users to find in the company portal. You can assign one or more categories to an app, for example, *Developer apps* or *Communication apps*.
 
@@ -149,14 +149,13 @@ When you add an app to Intune, you are given the option to select the category y
 	- To edit a category, select the ellipsis (**...**) next to the category, and then select **Pin to dashboard** or **Delete**.
 6. Select **Create**.
 
-## Apps added automatically by Intune
+## Apps that are added automatically by Intune
 
-Previously, Intune contained a number of built-in apps that you could quickly assign. Based on Intune customer feedback, we removed this list, and the built-in apps are no longer displayed.
-However, if you have already assigned any built-in apps, the apps remain visible in the list of apps. You can continue to assign the apps as required.
+Previously, Intune contained a number of built-in apps that you could quickly assign. Based on Intune customer feedback, we removed this list, and the built-in apps are no longer displayed. However, if you have already assigned any built-in apps, the apps remain visible in the list of apps. You can continue to assign the apps as required.
 
 ## Next steps
 
-To learn how to add apps for each platform to Intune,:
+To learn how to add apps for each platform to Intune, see:
 
 - [Android store apps](store-apps-android.md)
 - [Android LOB apps](lob-apps-android.md)
