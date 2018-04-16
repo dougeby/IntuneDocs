@@ -170,6 +170,9 @@ Now that you've installed your token, you can create an enrollment profile for D
 
      Choose **Save**.
 
+>[!NOTE]
+>Starting with iOS 11, if you want to enable restore from iCloud backup you must show both "Restore" and "Apple ID" under Setup Assistant Options.
+
 6. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
 
 ## Sync managed devices
