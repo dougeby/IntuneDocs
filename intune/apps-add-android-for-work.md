@@ -95,7 +95,7 @@ Periodically visit the managed Google Play console to check for new permissions.
 
 Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis. 
 
-## Work with a line-of-business app from the Google Play for Work store
+## Working with a line-of-business app from the Google Play for Work store
 
 1. Sign in to the [Google Play Developer Console](https://play.google.com/apps/publish) with the same account you used to configure the connection between Intune and Android for Work.  
     If you are signing in for the first time, you must register and pay a fee to become a member of the Google Developer program.
