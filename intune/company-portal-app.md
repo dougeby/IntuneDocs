@@ -38,12 +38,14 @@ The Microsoft Intune company portal is where users access company data and can d
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Mobile apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.		
 
 ## Company contact information and privacy statement		
-The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the **Contact IT** screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.		
+The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the **Contact IT** screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
+
+Fields marked with an asterisk (*) are mandatory.		
 
 
 |                   Field name                   | Max length |                                                                                                 More information                                                                                                 |
 |------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         <strong>Company name</strong>          |     40     |                                                                            This name is displayed as the title of the Company Portal.                                                                            |
+|         <strong>Company name*</strong>          |     40     |                                                                            This name is displayed as the title of the Company Portal.                                                                            |
 |  <strong>IT department contact name</strong>   |     40     |                                                                         This name is displayed on the <strong>Contact IT</strong> page.                                                                          |
 |  <strong>IT department phone number</strong>   |     20     |                                                                    This contact number is displayed on the <strong>Contact IT</strong> page.                                                                     |
 |  <strong>IT department email address</strong>  |     40     |                       This contact address is displayed on the <strong>Contact IT</strong> page. You must enter a valid email address in the format <strong>alias@domainname.com</strong>.                       |
