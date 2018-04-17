@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: What's new in Microsoft Intune
+title: What's new in Microsoft Intune - Azure | Microsoft Docs
 titlesuffix:
 description: Find out what's new in the Intune Azure portal
 keywords:
@@ -44,7 +44,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
-
 ## Week of April 9, 2018
 
 #### Updated help experience in Company Portal app for Android <!-- 1631531 -->
