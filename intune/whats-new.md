@@ -44,16 +44,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
-## Week of April 16, 2018
-
-#### Advanced Threat Protection (ATP) and Intune are fully integrated
-
-In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) conditional access policy can then block access to different apps within your organization.
-
-This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
-
-See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
-
 ## Week of April 9, 2018
 
 #### Updated help experience in Company Portal app for Android <!-- 1631531 -->
