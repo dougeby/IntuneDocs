@@ -380,6 +380,7 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 
 ## Local Printer
 - **Printers** - List of local printers that have been added.
+- **Default printer** - Set the default printer.
 - **User access to add new printers** - Allow or block use of local printers.
 
 ## Reporting and Telemetry
