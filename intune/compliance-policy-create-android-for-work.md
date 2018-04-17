@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-An Intune device compliance policy for Android for Work specifies the rules and settings that Android for Work devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal. To learn more about compliance policies and the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+An Intune device compliance policy for Android for Work specifies the rules and settings that these devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources. You can also get device reports, and take actions for non-compliance. You create device compliance policies for different platforms in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
@@ -55,7 +55,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Create a device compliance policy
 
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]  
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
 5. For **Platform**, select **Android for Work**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
@@ -68,11 +68,11 @@ The following table describes how noncompliant settings are managed when a compl
 ## Device health
 
 - **Rooted devices**: If you enable this setting, jailbroken devices are evaluated as noncompliant.
-- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
-  - **Secured**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level:
+  - **Secured**: This option is the most secure, and means that the device cannot have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High**: This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
+  - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 - **Google Play Services is configured**: Require that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices.
 - **Up-to-date security provider**: Require that an up-to-date security provider can protect a device from known vulnerabilities.
 - **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
@@ -82,20 +82,20 @@ The following table describes how noncompliant settings are managed when a compl
 
 #### Threat scan on apps
 
-On devices with work profiles (Android for Work), the **Threat scan on apps** setting can be found as a configuration policy setting. This allows administrators to enable the setting for a device.
+On devices with work profiles (Android for Work), the **Threat scan on apps** setting can be found as a configuration policy setting. Administrators can enable the setting for a device.
 
 If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android for Work device restriction settings in Intune](device-restrictions-android-for-work.md).
 
 ## Device property settings
 
-- **Minimum OS version**: When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
-- **Maximum OS version**: When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device, and then access company resources.
+- **Maximum OS version**: When a device is using an OS version later than the version in the rule, access to company resources is blocked. And, the user is asked to contact their IT admin. Until there is a rule change to allow the OS version, the device cannot access company resources.
 
 ## System security settings
 
 ### Password
 
-- **Require a password to unlock mobile devices**: Set this to **Yes** to require users to enter a password before they can access their device.
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
 - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
 - **Required password type**: Choose if a password should have only numeric characters, or if there should be a mix of numbers and other characters. Choose from:
   - **Device Default**
@@ -106,8 +106,8 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
   - **At least alphanumeric**
   - **At least alphanumeric with symbols**
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
-- **Number of previous password to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously-used passwords.
+- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
 ### Encryption
 
@@ -129,4 +129,5 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
 You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)

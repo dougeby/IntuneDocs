@@ -30,9 +30,11 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-An Intune iOS device compliance policy determines the rules and settings that iOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies and the prerequisites you need before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+An Intune iOS device compliance policy determines the rules and settings that iOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
+
+---------------------------
 
 | **Policy setting** | **iOS 8.0 and later** |
 | --- | --- |
@@ -44,6 +46,8 @@ The following table describes how noncompliant settings are managed when a compl
 | **Maximum OS version** | Quarantined |
 | **Windows health attestation** | Not applicable |
 
+---------------------------
+
 **Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
@@ -53,7 +57,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Create a device compliance policy
 
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]  
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
 5. For **Platform**, select **iOS**. Choose **Settings Configure**, and enter the **Email**, **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
@@ -65,7 +69,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Email
 
-- **Require mobile devices to have a managed email profile**: If you set this to Require, then devices that don't have an email profile managed by Intune are considered not-compliant. A device may not have a managed email profile when it is not correctly targeted, or if the user has manually setup the email account on the device.
+- **Require mobile devices to have a managed email profile**: If you set this to Require, then devices that don't have an email profile managed by Intune are considered not-compliant. A device may not have a managed email profile when it's not correctly targeted, or if the user manually setup the email account on the device.
 
   The device is considered noncompliant in the following situations:
   - The email profile is deployed to a user group other than the user group that the compliance policy targets.
@@ -78,11 +82,11 @@ For details about email profile, see [Configure access to corporate email using 
 ## Device health
 
 - **Jailbroken devices**: If you enable this setting, jailbroken devices are not compliant.
-- **Require the device to be at or under the Device Threat Level** (iOS 8.0 and newer): Choose the maximum threat level to mark devices as noncompliant. Devices which exceed this threat level get marked as noncompliant:
-  - **Secured**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+- **Require the device to be at or under the Device Threat Level** (iOS 8.0 and newer): Choose the maximum threat level to mark devices as noncompliant. Devices that exceed this threat level get marked as noncompliant:
+  - **Secured**: This option is the most secure, as the device can't have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-  - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High**: This is the least secure. Essentially, this allows all threat levels. It could be useful if you're using this solution only for reporting purposes.
+  - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
 ## Device properties
 
@@ -96,7 +100,7 @@ For details about email profile, see [Configure access to corporate email using 
 > [!NOTE]
 > After a compliance or configuration policy is applied to an iOS device, users are prompted to set a passcode every 15 minutes. Users are continually prompted until a passcode is set.
 
-- **Require a password to unlock mobile devices**: Choose to **Require** that users enter a password before they can access their device. iOS devices that use a password are encrypted.
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. iOS devices that use a password are encrypted.
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Required password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
@@ -105,8 +109,8 @@ For details about email profile, see [Configure access to corporate email using 
     Setting a higher number requires the user to create a password that is more complex.
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
-- **Number of previous passwords to prevent reuse**: Enter the number of previously-used passwords that cannot be used.
+- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 
 ## Assign user groups
 
@@ -117,4 +121,5 @@ For details about email profile, see [Configure access to corporate email using 
 You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)

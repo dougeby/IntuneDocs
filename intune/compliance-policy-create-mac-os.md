@@ -29,9 +29,11 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-An Intune macOS device compliance policy determines the rules and settings that macOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies and the prerequisites you need before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+An Intune macOS device compliance policy determines the rules and settings that macOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy:
+
+---------------------------
 
 | Policy setting | macOS 10.11 and later |
 | --- | --- |
@@ -40,6 +42,8 @@ The following table describes how noncompliant settings are managed when a compl
 | **Email profile** | Quarantined |
 |**Minimum OS version** | Quarantined |
 | **Maximum OS version** | Quarantined |
+
+---------------------------
 
 **Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
 
@@ -51,7 +55,6 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-
 5. For **Platform**, select **macOS**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
 
 ## Device Health
@@ -60,9 +63,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Device properties
 
-- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade appears. The user can choose to upgrade their device. After that, they can access company resources.
-
-- **Maximum OS version**: When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade appears. The end user can choose to upgrade their device, and then get access to company resources.
+- **Maximum OS version**: When a device is using an OS version later than the version specified in the rule, access to company resources is blocked. The user is asked to contact their IT admin. Until there is a rule change to allow the OS version, this device can't access company resources.
 
 ## System security settings
 
@@ -72,20 +74,20 @@ The following table describes how noncompliant settings are managed when a compl
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
-- **Number of non-alphanumeric characters in password**: Enter the minimum number of special characters (&, #, %, !, and so on) that must included in the password.
+- **Number of non-alphanumeric characters in password**: Enter the minimum number of special characters (&, #, %, !, and so on) that must be included in the password.
 
     Setting a higher number requires the user to create a password that is more complex.
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
-- **Number of previous passwords to prevent reuse**: Enter the number of previously-used passwords that cannot be used.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 
 	> [!IMPORTANT]
 	> When the password requirement is changed on a macOS device, it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits, and the macOS device currently has a six digits password, then the device remains compliant until the next time the user updates their password on the device.
 
 ### Encryption
 
-- **Encryption of data storage on a device**: Set this to **Require** so data storage on devices is encrypted.
+- **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
 
 ## Assign user groups
 
@@ -99,4 +101,5 @@ The following table describes how noncompliant settings are managed when a compl
 You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)

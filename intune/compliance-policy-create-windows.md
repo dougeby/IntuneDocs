@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-An Intune device compliance policy for Windows specifies the rules and settings that Windows devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources, and you can get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal. To learn more about compliance policies and the prerequisites that you need to address before creating a compliance policy, see [Get started with device compliance](device-compliance-get-started.md).
+An Intune device compliance policy for Windows specifies the rules and settings that Windows devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources. You can also get device reports and take actions for non-compliance. You create device compliance policies for each platform in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
@@ -55,7 +55,6 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-
 5. For **Platform**, select **Windows Phone 8.1**, **Windows 8.1 and later**, or **Windows 10 and later**.
 6. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
 
@@ -75,8 +74,8 @@ These policy settings apply to devices running the following platforms:
 
 ### Device properties
 
-- **Minimum OS required**: When a device doesn't meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
-- **Maximum OS version allowed**: When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Minimum OS required**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device, and then get access to company resources.
+- **Maximum OS version allowed**: When a device is using an OS version later than the version specified in the rule, access to company resources is blocked. The user is asked to contact their IT admin. Until there is a rule change to allow the OS version, this device can't access company resources.
 
 Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
 
@@ -88,11 +87,13 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 
-  For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
+  For devices that run Windows and are accessed with a Microsoft account, the compliance policy fails to evaluate correctly:
+  - If minimum password length is greater than eight characters
+  - Or, if minimum number of character sets is more than two
 
 - **Password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
   
-  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
+  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
     - Lowercase letters
     - Uppercase letters
     - Symbols
@@ -102,7 +103,7 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
-- **Number of previous passwords to prevent reuse**: Enter the number of previously-used passwords that cannot be used.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 
 #### Encryption
 
@@ -112,16 +113,16 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 ### Device health
 
-- **Require BitLocker**: When BitLocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
-- **Require Secure Boot to be enabled on the device**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
-- **Require code integrity**: Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
-- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from your defense threat services as a condition for compliance. Choose the maximum allowed threat level, which is one of the following:
-  - **Secured**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
+- **Require BitLocker**: When BitLocker is on, the device can protect data stored on the drive from unauthorized access when the system is turned off, or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data. It also helps to ensure that a computer is not tampered with, even if it's left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
+- **Require Secure Boot to be enabled on the device**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies the signature before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
+- **Require code integrity**: Code integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. Or whether a system file has been modified by malicious software run by a user account with administrator privileges.
+- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from your defense threat services as a condition for compliance. Choose the maximum allowed threat level:
+  - **Secured**: This option is the most secure, as the device can't have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-  - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High**: This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
+  - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
-For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
+See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details on how the HAS service works.
 
 ### Device properties
 
@@ -162,12 +163,12 @@ For information on how the HAS service works, see [Health Attestation CSP](https
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
-- **Number of previous passwords to prevent reuse**: Enter the number of previously-used passwords that cannot be used.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
 ### Encryption
 
-- **Encryption of data storage on a device**: Set this to **Require** so data storage on devices is encrypted.
+- **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
 
 ## Windows Holographic for Business
 
@@ -180,7 +181,7 @@ To verify device encryption on the Microsoft HoloLens, see [Verify device encryp
 ## Surface Hub
 Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AD)).
 
-See [Set up enrollment for Windows devices](windows-enroll.md) for guidance.
+See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 
 ## Assign user groups
 
@@ -191,4 +192,5 @@ See [Set up enrollment for Windows devices](windows-enroll.md) for guidance.
 You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)
