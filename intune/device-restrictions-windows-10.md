@@ -378,6 +378,10 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **Maximum printers to query (Mobile only)** - Maximum number of printers that should be queried from a discovery endpoint.
 - **Printer discovery service resource URI** - OAuth resource URI for printer discovery service as configured in the Azure portal.
 
+## Local Printer
+- **Printers** - List of local printers that have been added.
+- **User access to add new printers** - Allow or block use of local printers.
+
 ## Reporting and Telemetry
 
 - **Share usage data** - Select level of diagnostic data submission.
