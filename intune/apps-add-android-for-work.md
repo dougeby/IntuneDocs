@@ -113,5 +113,5 @@ Alternatively, you can configure Google Play to automatically reapprove app perm
 
 ## Next steps
 
-- [Assign apps to groups](apps-deploy.md)
+- [Assign apps to groups](apps-deploy.md) 
 
