@@ -53,6 +53,11 @@ When you create a new VPN profile for iOS, there are now two options: **Cisco An
 > [!NOTE]
 > This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android for Work, and macOS platforms.
 
+#### Jamf-enrolled macOS devices can now register with Intune <!-- 2370684 -->
+
+Versions 1.3 and 1.4 of the macOS company portal did not successfully register Jamf devices with Intune. Version 1.4.2 of the macOS portal fixes this issue.
+
+
 ## Week of April 9, 2018
 
 #### Updated help experience in Company Portal app for Android <!-- 1631531 -->
