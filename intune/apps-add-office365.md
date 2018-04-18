@@ -110,7 +110,7 @@ In this step, configure installation options for the app suite. The settings app
 
 When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list.
 
-## Error codes when installing the app suite
+## Errors during installation of the app suite
 
 The following tables list common error codes you might encounter and their meaning.
 
