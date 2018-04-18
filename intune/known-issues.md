@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,7 +70,7 @@ If you add additional domains (using **Advanced settings** > **Network perimeter
 
 ### Cisco AnyConnect and Cisco Legacy AnyConnect VPN client support - iOS
 
-On iOS devices, network access control (NAC) integration does not work with the new Cisco AnyConnect client. We are working with Cisco to provide NAC integration in a future Intune release.
+On iOS devices, network access control (NAC) integration does not work with the new Cisco AnyConnect client. 
 
 [Create VPN profiles in Intune](vpn-settings-ios.md) provides more details on the Cisco AnyConnect and Cisco Legacy AnyConnect clients.
 
