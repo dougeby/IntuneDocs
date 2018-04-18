@@ -63,9 +63,9 @@ Add Office 365 from the **Apps** pane.
 	- **Owner**: Microsoft appears as the owner.
 	- **Notes**: Optionally, enter any notes that you want to associate with this app.
 	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
-9.	Select **OK**.
-10. On the **Add app** pane, select **Add**.
-    The suite appears in the list of apps as a single entry.
+9. Select **OK**.
+10. On the **Add app** pane, select **Add**.  
+	The suite appears in the list of apps as a single entry.
 
 ## Configure app assignments
 
