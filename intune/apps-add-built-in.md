@@ -29,9 +29,9 @@ ms.custom: intune-azure
 
 # Add built-in apps to Microsoft Intune
 
-The *built-in* app type makes it easy for you to assign curated managed apps, such as Office 365 apps, to iOS and Android devices. You can assign specific apps for this app type, such as Excel, OneDrive, Outlook, Skype, and others. After adding an app, you'll see the app type as either *Built-in iOS app* or *Built-in Android app*. By using the built-in app type, you can choose which of these specific apps to publish to device users.
+The *built-in* app type makes it easy for you to assign curated managed apps, such as Office 365 apps, to iOS and Android devices. You can assign specific apps for this app type, such as Excel, OneDrive, Outlook, Skype, and others. After you add an app, the app type is displayed as either *Built-in iOS app* or *Built-in Android app*. By using the built-in app type, you can choose which of these apps to publish to device users.
 
-In earlier editions of the Intune console, Intune provided several default managed Office 365 apps, such as Outlook and OneDrive. The app types for these managed apps were tagged as *Managed iOS Store App* or *Managed Android App*. Instead of using these app types, we recommend that you use the built-in app type. The built-in app type provides additional flexibility to edit and delete office 365 apps.
+In earlier versions of the Intune console, Intune provided several default managed Office 365 apps, such as Outlook and OneDrive. The app types for these managed apps were tagged as *Managed iOS Store App* or *Managed Android App*. Instead of using these app types, we recommend that you use the built-in app type. By using the built-in app type, you have the additional flexibility to edit and delete Office 365 apps.
 
 >[!NOTE]
 >Default Office 365 apps that are tagged as *Managed iOS Store* and *Managed Android App* are removed from the app list when all assignments are deleted.
