@@ -77,8 +77,8 @@ In this step, you provide information about the app suite. This information help
 	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Suite Description**: Enter a description for the app suite. For example, you could list the apps you've selected to include.
 	- **Publisher**: Enter the name of the publisher of the app.
-	- **Category**: Optionally, select one or more of the built-in app categories, or a category you created. This option makes it easier for users to find the app suite when they browse the company portal.
-	- **Display this as a featured app in the Company Portal**: Display the app suite prominently on the main page of the company portal when users browse for apps.
+	- **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app suite when they browse the company portal.
+	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
 	- **Developer**: Optionally, enter the name of the app developer.
