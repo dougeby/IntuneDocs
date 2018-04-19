@@ -71,7 +71,7 @@ Some trend charts in your view of the Azure portal will reset. You may back up t
     - For top enrollment failures this week, copy this [enrollment failures query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) and paste it into [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
     > [!NOTE]
-    > You must have a valid authenticaltion token to access the device device enrollment data. 
+    > You must have a valid authenticaltion token to access the device enrollment data. 
 
 ## After a Data Warehouse account move
 
