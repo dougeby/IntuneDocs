@@ -86,7 +86,7 @@ To authenticate with VPN, WiFi, and other resources, a root or intermediate CA c
 9. In **Extensions**, confirm that you see Encrypting File System, Secure Email, and Client Authentication under **Application Policies**.
     
       > [!IMPORTANT]
-      > For iOS and macOS certificate templates, go to the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** isn't selected.
+      > For iOS certificate templates, go to the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** isn't selected.
 
 10. In **Security**, add the Computer Account for the server where you install the Microsoft Intune Certificate Connector.
     * Allow this account **Read** and **Enroll** permissions.
