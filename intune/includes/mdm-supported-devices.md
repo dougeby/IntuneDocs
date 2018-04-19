@@ -14,6 +14,7 @@
 
 ### Microsoft
 
+- Surface Hub
 - Windows 10 (Home, S, Pro, Education, and Enterprise versions)
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)

@@ -596,6 +596,10 @@
       href: data-intune-sends-to-apple.md
     - name: Data Intune sends to Google
       href: data-intune-sends-to-google.md
+    - name: Data Apple sends to Intune
+      href: data-apple-sends-to-intune.md
+    - name: Data Google sends to Intune
+      href: data-google-sends-to-intune.md
   - name: Monitor and troubleshoot
     items:
     - name: Help users troubleshoot problems

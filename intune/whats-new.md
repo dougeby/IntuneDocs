@@ -1,13 +1,13 @@
 ---
 # required metadata
-title: What's new in Microsoft Intune
+title: What's new in Microsoft Intune - Azure | Microsoft Docs
 titlesuffix:
 description: Find out what's new in the Intune Azure portal
 keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/17/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,19 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+## Week of April 16, 2018
+
+#### Use Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
+
+When you create a new VPN profile for iOS, there are now two options: **Cisco AnyConnect** and **Cisco Legacy AnyConnect**. Cisco AnyConnect profiles support 4.0.7x and newer versions. Existing iOS Cisco AnyConnect VPN profiles are labeled **Cisco Legacy AnyConnect**, and continue to work with Cisco AnyConnect 4.0.5x and older versions, as they do today.
+
+> [!NOTE]
+> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android for Work, and macOS platforms.
+
+#### Jamf-enrolled macOS devices can now register with Intune <!-- 2370684 -->
+
+Versions 1.3 and 1.4 of the macOS company portal did not successfully register Jamf devices with Intune. Version 1.4.2 of the macOS portal fixes this issue.
+
 
 ## Week of April 9, 2018
 
@@ -53,7 +66,7 @@ We've updated the help experience in the Company Portal app for Android to align
 - Upload diagnostic logs to Microsoft.
 - Send an email that describes the problem and incident ID to a company support person.  
 
-To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android).
 
 
 #### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
