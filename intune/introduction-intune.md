@@ -28,7 +28,7 @@ ms.custom:
 
 # What is Intune?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune is a cloud-based service in the enterprise mobility management (EMM) space that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.

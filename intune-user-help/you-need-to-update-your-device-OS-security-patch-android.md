@@ -4,8 +4,8 @@
 title: You need to update your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
@@ -34,7 +34,7 @@ If you've seen a message that says your “Minimum Android security patch level 
 
 If you have a Samsung device, go to **Settings** > **About phone**, and check to see if the word "Knox" is anywhere onscreen. If so, follow the Samsung Knox directions below.
 
-[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
+[!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 ## For most Android devices (non-Samsung Knox)
 

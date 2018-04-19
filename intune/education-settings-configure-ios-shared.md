@@ -5,8 +5,8 @@ title: Intune shared device settings for the iOS Classroom app
 titleSuffix: Microsoft Intune
 description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # How to configure Intune education settings for shared iPad devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune supports the iOS Classroom app that helps teachers to guide learning, and control student devices in the classroom. In addition, to the Classroom app, Apple supports the ability for student iPad devices to be configured such that multiple students can share a single device. This document guides you to achieve this goal with Intune.
 

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Erase all data from a macOS device
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can erase all data from a macOS device, including the operating system. The device will also be removed from Intune management. No warning will be given to the end user.
 

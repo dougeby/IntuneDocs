@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Remove devices by using factory reset or remove company data
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this by using the **Remove company data** or **Factory reset** actions. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
@@ -79,7 +79,7 @@ The following tables describe what data is removed, and the effect of the **Remo
 |Certificate profile settings|Certificates are removed and revoked.|
 |Management agent|The management profile is removed.|
 |Email|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|
-|Outlook|Email that's received by the Microsoft Outlook app for iOS is removed.|
+|Outlook|Email that's received by the Microsoft Outlook app for iOS is removed. This requires that the Outlook mobile app be deployed as a Required app to iOS users first.|
 |Azure AD unjoin|The Azure AD record is removed.|
 |Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 

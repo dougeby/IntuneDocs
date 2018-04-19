@@ -4,8 +4,8 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
@@ -40,13 +40,13 @@ Want to know more? Find out what happens when you [enroll your device in Intune]
 
 2. Type the phrase "about your PC" into the __search bar__, then select __About your PC__.
 
- ![search settings for about your pc](media/searching_for_about_your_pc.png)
+   ![search settings for about your pc](media/searching_for_about_your_pc.png)
 
-3.	In your __Settings__, you will see a list of information about the version of Windows 10 that is installed on your PC. Within this list, locate the __Version__.
+3. In your __Settings__, you will see a list of information about the version of Windows 10 that is installed on your PC. Within this list, locate the __Version__.
 
- ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)
+   ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)
 
-4.	If your version is __1607 or higher__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
+4. If your version is __1607 or higher__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
 ## Windows 10 Mobile devices		
 

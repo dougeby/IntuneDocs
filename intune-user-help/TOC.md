@@ -128,7 +128,7 @@
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
-### [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)
+### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
 ### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)

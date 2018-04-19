@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Post-configuration tasks
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 After you complete the initial configuration steps for an Intune  paid subscription, you should consider enabling additional mobile device management functionality.
 

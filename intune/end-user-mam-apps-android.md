@@ -4,8 +4,8 @@
 title: Android apps with app protection policies
 description: This topic describes what to expect when your app is managed by app protection policies.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # What to expect when your Android app is managed by app protection policies
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 This article describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in a work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a OneDrive for Business location.
 

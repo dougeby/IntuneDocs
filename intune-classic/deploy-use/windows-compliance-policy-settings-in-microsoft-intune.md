@@ -28,15 +28,15 @@ ms.custom: intune-classic
 
 # Compliance policy settings for Windows devices in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to devices running the Windows operating system. The following sections describe the supported Windows versions.
 
 If you are looking for information about other platforms, select one of these:
 > [!div class="op_single_selector"]
-- [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Compliance policy settings for Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## Compliance policy settings for Windows Phone devices
 The settings listed in this section are supported on Windows Phone 8.1 and later.
@@ -96,7 +96,7 @@ character sets that the password must have. The four character sets are:
   > Windows devices do not support third-party **Early Launch Anti Malware** (ELAM) software installed as part of the Device health attestation.
 
   For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-###  Device property settings
+  ###  Device property settings
 - **Minimum OS required**: When a device does not meet the minimum OS
     version requirement, it is reported as noncompliant.
     A link with information on how to upgrade is displayed. The user can choose to upgrade their device, and then they can access company resources.
@@ -171,4 +171,4 @@ To find the OS version to use for the **Minimum OS required** and **Maximum OS v
 - Windows 8.1 PCs return a version of **6.3**. If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
 
 - For PCs running Windows 10, the version should be set as **10.0** plus the OS build number that the **winver** command returns. For example, it might be something like 10.0.10586.
-> ![OS build version highlighted in the "About Windows" dialog box](./media/ca_win10-os-version.png)
+  > ![OS build version highlighted in the "About Windows" dialog box](./media/ca_win10-os-version.png)

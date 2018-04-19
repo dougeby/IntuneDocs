@@ -4,8 +4,8 @@
 title: Update your Windows 10 device | Microsoft Docs
 description: Learn how to update your Windows 10 device to access company resources.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article

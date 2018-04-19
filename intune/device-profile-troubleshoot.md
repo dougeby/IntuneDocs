@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Common issues and resolutions with device profiles in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Troubleshoot common issues using Intune device profiles.
 

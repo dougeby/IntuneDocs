@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # What are common ways to use conditional access with Intune?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 There are two types of conditional access with Intune: device-based conditional access and app-based conditional access. You need to configure the related compliance policies to drive conditional access compliance at your organization. Conditional access is commonly used to do things like allow or block access to Exchange on-premises, control access to the network, or integrate with a Mobile Threat Defense solution.
 

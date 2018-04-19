@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot the Exchange Connector
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes how to troubleshoot issues that may be related to the Intune Exchange Connector.
 
@@ -41,8 +41,8 @@ Check the configuration of the Exchange Connector and then see if the problem ha
 - When configuring the Exchange Connector, specify a Client Access Server (CAS) that is as close as possible to the server hosting the Exchange Connector. Communication latency between the CAS and the Exchange Connector could result in device discovery delays, particularly when using O365 Dedicated.
 - Be aware that there is a time lag between Exchange Connector synchronizations with the Exchange CAS. A full sync takes place once a day, and a delta (quick) sync takes place every two hours. There is a likelihood that a user with a newly-enrolled device will experience a delay in getting access.
 - 
-## Exchange ActiveSync device not discovered from Exchange
-Check to see if the Exchange Connector is syncing with the Exchange server. To do so, locate logs for a full sync or a delta sync. See Exchange Connector Logs. If a full sync or delta sync has completed successfully since the device joined, you've eliminated this as the source of the issue. If no sync has taken place, collect the sync logs and attach them to your support request.
+  ## Exchange ActiveSync device not discovered from Exchange
+  Check to see if the Exchange Connector is syncing with the Exchange server. To do so, locate logs for a full sync or a delta sync. See Exchange Connector Logs. If a full sync or delta sync has completed successfully since the device joined, you've eliminated this as the source of the issue. If no sync has taken place, collect the sync logs and attach them to your support request.
 
 - If a user doesn't have an Intune license, the Exchange connector won’t discover their devices.
 - If a user’s Primary SMTP address is different than their UPN in AAD, the Exchange Connector will not discover any devices for that Intune/AAD user. Fix the primary SMTP address.

@@ -4,8 +4,8 @@
 title: How your Android users get their apps 
 description: Methods for making Android apps available to end users
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How your Android users get their apps
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox Standard devices).
 

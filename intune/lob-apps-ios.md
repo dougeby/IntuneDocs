@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to add iOS line-of-business (LOB) apps to Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use the information in this article to help you add iOS line-of-business apps to Microsoft Intune.
 
@@ -79,7 +79,7 @@ The app you have created appears in the apps list where you can assign it to the
 
 ## Step 5 - Update a line-of-business app
 
-[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]  
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
 > For the Intune service to successfully deploy a new IPA file to the device you must increment the *CFBundleVersion* string in the *Info.plist* file in your IPA package.

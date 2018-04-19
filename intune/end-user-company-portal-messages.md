@@ -5,8 +5,8 @@ title: Company Portal messages users may see on devices
 titlesuffix: Microsoft Intune
 description: Understand the different messages that end users may see in the Company Portal.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.suite: ems
 
 # Help end users understand Company Portal app messages
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > The following information applies only on devices with Android 6.0+.

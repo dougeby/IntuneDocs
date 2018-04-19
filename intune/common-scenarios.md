@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Common ways to use Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you're brand new to enterprise mobility or migrating from another product.  
 

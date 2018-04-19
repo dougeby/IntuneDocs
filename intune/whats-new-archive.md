@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: What's new in previous months in the Microsoft Intune
+title: What's new in previous months in the Microsoft Intune - Azure | Microsoft Docs
 titlesuffix: 
 description: Review older announcements from the Intune what's new page
 keywords:
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # What's new in the Microsoft Intune - previous months
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## October 2017
 
@@ -577,7 +577,7 @@ For more information, see [Android for Work device restriction settings in Micro
 We've added new [Windows device restriction settings](device-restrictions-windows-10.md) that control features like wireless displays, device discovery, task switching, and SIM card error messages.
 
 #### Updates to certificate configuration <!-- 918991 and 823198 -->
-When creating a SCEP certificate profile, for **Subject name format**, the **Custom** option is available for iOS, Android, and Windows devices. Before this update, the **Custom** field was available for iOS devices only. For more information, see [ How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+When creating a SCEP certificate profile, for <strong>Subject name format</strong>, the <strong>Custom</strong> option is available for iOS, Android, and Windows devices. Before this update, the <strong>Custom</strong> field was available for iOS devices only. For more information, see [Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
 When creating a PKCS certificate profile, for **Subject alternative name**, the **Custom Azure AD attribute** is available. The **Department** option is available when you select **Custom Azure AD attribute**. For more information, see [How to create a PKCS certificate profile](certficates-pfx-configure.md#create-a-device-configuration-profile).
 

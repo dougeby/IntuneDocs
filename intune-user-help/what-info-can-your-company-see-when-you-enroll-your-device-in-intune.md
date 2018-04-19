@@ -4,8 +4,8 @@
 title: What info can your company see when you enroll your device? | Microsoft Docs
 description: A list of what IT can and can't see on your managed device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article

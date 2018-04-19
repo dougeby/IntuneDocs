@@ -4,8 +4,8 @@
 title: Using your Android device with Intune | Microsoft Docs
 description: List of links to tasks that end users can do on their Android mobile device when the device is enrolled in Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
@@ -50,11 +50,11 @@ Intune currently supports Android 4.4 and later. This includes Samsung Knox 4.4 
 - [Set your PIN or password](set-your-pin-or-password-android.md)
 - [Install your company's Virtual Private Network (VPN)](install-your-companys-virtual-private-network-VPN-android.md)
 - [Set the amount of time before your device is locked](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-android.md)
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-android.md)
 - [Unenroll your device if you declined Terms of Use](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [What happens if you reset your Android device using the Company Portal app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
