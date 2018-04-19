@@ -51,7 +51,7 @@ Add Office 365 from the **Apps** pane.
 6. In the **App type** list, in the **Office 365 Suite** group, select **macOS**.
 7. To get information about the app suite, select **App Suite Information**.  
     This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
-8. Do the following:
+8. Enter the following information:
 	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Suite Description**: Enter a description for the app suite.
 	- **Publisher**: Microsoft appears as the publisher.
