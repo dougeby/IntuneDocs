@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Set up your Lookout integration with Intune
-titlesuffix: "Azure portal"
-description: Set up your Lookout subscription with Intune
+title: Set up your Lookout integration with Microsoft Intune
+titlesuffix:
+description: Learn about integrating Intune with Lookout Mobile Threat Defense to control mobile device access to your corporate resources.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -60,34 +60,32 @@ Use the following steps to gather the information you need to give to the Lookou
 2. When you choose the name of your subscription, the resulting URL includes the subscription ID.  If you have any issues finding your subscription ID, see this [Microsoft support article](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) for tips on finding your subscription ID.
 
 3. Find your Azure AD Group ID. The Lookout console supports 2 levels of access:  
-  * **Full Access:** The Azure AD admin can create a group for users that have Full Access and optionally create a group for users that will have Restricted Access.  Only users in these groups will be able to login to the **Lookout console**.
-  * **Restricted Access:** The users in this group will have no access to several configuration and enrollment-related modules of the Lookout console, and have read-only access to the **Security Policy** module of the Lookout console.  
+   * **Full Access:** The Azure AD admin can create a group for users that have Full Access and optionally create a group for users that will have Restricted Access.  Only users in these groups will be able to login to the **Lookout console**.
+   * **Restricted Access:** The users in this group will have no access to several configuration and enrollment-related modules of the Lookout console, and have read-only access to the **Security Policy** module of the Lookout console.  
 
-	> [!TIP] 
-	> For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/articles/114094105653) on the Lookout website.
+     > [!TIP] 
+     > For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/articles/114094105653) on the Lookout website.
 
-	> [!NOTE] 
-	> The **Group Object ID** is on the **Properties** page of the group in the **Azure AD management portal**.
+     > [!NOTE] 
+     > The **Group Object ID** is on the **Properties** page of the group in the **Azure AD management portal**.
 
 4. Once you have gathered this information, contact Lookout support (email: enterprisesupport@lookout.com). Lookout Support will work with your primary contact to onboard your subscription and create your Lookout Enterprise account, using the information that you collected.
 
 ## Configure your subscription
 
-1. After Lookout support creates your Lookout Enterprise account, an email from Lookout is sent to the primary contact for your company with a link to the login url:https://aad.lookout.com/les?action=consent.
+1. After Lookout support creates your Lookout Enterprise account, an email from Lookout is sent to the primary contact for your company with a link to the login url:<https://aad.lookout.com/les?action=consent>.
 
-2.  The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
+2. The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
 
-	![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
-	> [!NOTE] 
-	> See [troubleshooting Lookout integration](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) for help with login problems.
+   ![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
 
-3.  In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
+3. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
-	![screenshot of the Lookout console with the connectors tab open, and Intune option highlighted](./media/lookout_mtp_setup-intune-connector.png)
+   ![screenshot of the Lookout console with the connectors tab open, and Intune option highlighted](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  Go **Connectors** > **Connection Settings** and specify the **Heartbeat Frequency** in minutes.
+4. Go **Connectors** > **Connection Settings** and specify the **Heartbeat Frequency** in minutes.
 
-	![screenshot of the connection settings tab with showing heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
+   ![screenshot of the connection settings tab with showing heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
 
 ## Configure enrollment groups
 1. As a best practice, create an Azure AD security group in the [Azure AD management portal](https://manage.windowsazure.com) containing a small number of users to test Lookout integration.

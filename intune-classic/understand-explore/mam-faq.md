@@ -6,7 +6,7 @@ description: This article provides answers to some frequently asked questions on
 keywords:
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Frequently asked questions about MAM and app protection
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.
 
@@ -66,23 +66,23 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What are the additional requirements to use the [Outlook mobile app](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. The end-user must have the Outlook mobile app installed to their device.
+1. The end-user must have the Outlook mobile app installed to their device.
 
-  2. The end-user must have an [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) mailbox and license linked to their Azure Active Directory account.
+2. The end-user must have an [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) mailbox and license linked to their Azure Active Directory account.
 
-  >[!NOTE]
-  > The Outlook mobile app currently only supports Microsoft Exchange Online and does not support Exchange on-premises or Exchange in Office 365 Dedicated.
+   >[!NOTE]
+   > The Outlook mobile app currently only supports Microsoft Exchange Online and does not support Exchange on-premises or Exchange in Office 365 Dedicated.
 
 **What are the additional requirements to use the [Word, Excel, & PowerPoint](https://products.office.com/business/office) apps?**
 
-  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and can include a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and can include a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. The end-user must have a managed location configured using the granular save as functionality under the "Prevent Save As" application protection policy setting. For example, if the managed location is OneDrive, the [OneDrive](https://onedrive.live.com/about/) app should be configured in the end user's Word, Excel or PowerPoint app.
+2. The end-user must have a managed location configured using the granular save as functionality under the "Prevent Save As" application protection policy setting. For example, if the managed location is OneDrive, the [OneDrive](https://onedrive.live.com/about/) app should be configured in the end user's Word, Excel or PowerPoint app.
 
-  3. If the managed location is OneDrive, the app must be targeted by the app protection policy deployed to the end-user.
+3. If the managed location is OneDrive, the app must be targeted by the app protection policy deployed to the end-user.
 
-  >[!NOTE]
-  > The Office mobile apps currently only support SharePoint Online and not SharePoint on-premises.
+   >[!NOTE]
+   > The Office mobile apps currently only support SharePoint Online and not SharePoint on-premises.
 
 **Why is a managed location (ie OneDrive) needed for Office?** Intune marks all data in the app as either "corporate" or "personal." Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account).
 
@@ -129,15 +129,15 @@ MAM (on iOS) currently allows application-level PIN with alphanumeric and specia
 
 **How does Intune remotely wipe data?** Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Help protect your data with full or selective wipe using Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). For more information about selective wipe using MAM, see [Wipe managed company app data with Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **What is full wipe?** [Full wipe](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
-  >[!NOTE]
-  > Full wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
+1. **What is full wipe?** [Full wipe](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+   >[!NOTE]
+   > Full wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
-  2. **What is selective wipe for MDM?** See [Help protect your data with full or selective wipe using Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) to read about selective wipe.
+2. **What is selective wipe for MDM?** See [Help protect your data with full or selective wipe using Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) to read about selective wipe.
 
-  3. **What is selective wipe for MAM?** Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [Wipe managed company app data with Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **What is selective wipe for MAM?** Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [Wipe managed company app data with Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **How quickly does selective wipe for MAM happen?** If the user is using the app when selective wipe is initiated, the Intune App SDK checks every 30 minutes for a selective wipe request from the Intune MAM service. It also checks for selective wipe when the user launches the app for the first time and signs in with their work or school account.
+4. **How quickly does selective wipe for MAM happen?** If the user is using the app when selective wipe is initiated, the Intune App SDK checks every 30 minutes for a selective wipe request from the Intune MAM service. It also checks for selective wipe when the user launches the app for the first time and signs in with their work or school account.
 
 **Why don't On-Premises (on-prem) services work with Intune protected apps?** Intune app protection depends on the identity of the user to be consistent between the application and the Intune App SDK. The only way to guarantee that is through modern authentication. There are scenarios in which apps may work with an on-prem configuration, but they are neither consistent nor guaranteed.
 

@@ -6,7 +6,7 @@ description: Use the information in this topic to help you deploy apps with Micr
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 ---
 # Deploy apps in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you deploy apps with Microsoft Intune.
 

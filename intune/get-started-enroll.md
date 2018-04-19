@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Getting started enrolling devices
-titlesuffix: "Azure portal"
+title: Understand the iOS device enrollment experience
+titlesuffix: Microsoft Intune
 description: Learn the enrollment experience by going through a full enrollment experience of an iOS device.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started enrolling devices
+# Understand the user's experience enrolling an iOS device
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. Since your end users will interact with Intune on their devices rather than in the admin console, you want to make sure that you are fluent with the enrollment experience. This way, you can combine well-crafted compliance policies with your experience to show empathy for your users. This is especially important because your users will know exactly what information that you as an admin can see:
 
@@ -40,7 +40,7 @@ Microsoft Intune helps you enable your workforce with mobile devices while keepi
 | Passwords to your personal accounts | Device name |
 | Calendar events | Manufacturer (for devices not made by Apple) |
 | Pictures, including what's in the photos app or camera roll | Phone number (for work devices, the whole number. For personal devices, just the last four digits.) |
-​
+
 ## How do I enroll a device?
 
 Enrolling a device is the first experience that many end users will have with accessing corporate resources. [Understanding that experience](end-user-educate.md) can help make a potentially unpleasant experience into a better one.

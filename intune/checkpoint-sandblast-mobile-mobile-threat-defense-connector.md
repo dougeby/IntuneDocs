@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Check Point SandBlast Mobile connector with Intune
-titlesuffix: "Azure portal"
-description: "Check Point SandBlast integration with Intune"
+title: Check Point SandBlast MTD with Microsoft Intune
+titlesuffix:
+description: Learn about integrating Intune with Check Point SandBlast Mobile Threat Defense to control mobile device access to your corporate resources.
 keywords:
 author: msmimart
 ms.author: mimart

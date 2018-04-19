@@ -66,6 +66,7 @@
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
+### [Enroll your Device Enrollment Program iOS device](enroll-your-device-dep-ios.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -127,7 +128,7 @@
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
-### [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)
+### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
 ### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)

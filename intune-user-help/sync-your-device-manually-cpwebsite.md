@@ -4,15 +4,17 @@
 title: Sync your device with the Company Portal website | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132bsearchScope: - User help
+ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+ - User help
 
 # optional metadata
 

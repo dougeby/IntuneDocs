@@ -2,10 +2,11 @@
 # required metadata
 
 title: Intune testing and validation
-description: The details you need to consider when you are testing and validating an Intune cloud-only solution in your environment.
+titlesuffix: Microsoft Intune
+description: How to test and validate in your Intune cloud-only solution in your environment.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -28,7 +29,7 @@ ms.suite: ems
 
 # Intune testing and validation
 
-The testing phase occurs both during and after the implementation phase. You need test accounts, groups, and devices for testing all required IT (admin) and end user (use case) scenarios you have previously identified.
+When testing the implementation of Microsoft Intune, consider functional validation and use-case validation. Functional validation consists of testing each component and configuration to determine if it is working correctly. Use-case validation involves testing to verify that the scenarios involving a series of tasks work as expected. 
 
 We recommend that you incorporate your IT support and helpdesk staff in the testing phase so that support documentation is created, and the IT support and helpdesk staff become comfortable supporting the product. If a component or scenario does not function based on the use cases, make sure to document the necessary changes, and include the reason a change was made.
 

@@ -2,12 +2,13 @@
 # required metadata
 
 title: Prepare Intune for mobile device management
-description: Evaluate your business and technical requirements before migrating to Intune.
+titlesuffix: Microsoft Intune
+description: Evaluate your business and technical requirements before migrating to Microsoft Intune.
 keywords:
-author: andredm7
-ms.author: andredm
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# Phase 1: Prepare Intune for mobile device management (MDM)
+# Phase 1: Prepare Microsoft Intune for mobile device management (MDM)
 
 Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization. It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups. Then you can begin addressing the questions in the [Assess MDM requirements ](migration-guide-prepare.md#assess-mdm-requirements) section.
 
@@ -61,23 +62,23 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 ### What is your device security policy?
 
--   Do you need device-level encryption?
+- Do you need device-level encryption?
 
--   What are your current device passcode/pin code lengths?
+- What are your current device passcode/pin code lengths?
 
--   Do you need to disable device features, or restrict certain device behaviors? You can control a variety of platform-specific settings with device configuration profiles, for example:
-      - Disable camera
-      - Lock to single-app mode<br/>
+- Do you need to disable device features, or restrict certain device behaviors? You can control a variety of platform-specific settings with device configuration profiles, for example:
+    - Disable camera
+    - Lock to single-app mode<br/>
 
--   What kinds of authentication must you support? If you need certificate-based authentication, what kinds of certificates must be provisioned?
+- What kinds of authentication must you support? If you need certificate-based authentication, what kinds of certificates must be provisioned?
   - Intune can provision certificates with resource access profiles for enrolled devices.
-    -   What kind of Public Key Infrastructure (PKI) infra do you need to support?
-<br></br>
--   Do you need to support Virtual Private Network (VPN) at the device or app level?
+  -   What kind of Public Key Infrastructure (PKI) infra do you need to support?
+  <br></br>
+- Do you need to support Virtual Private Network (VPN) at the device or app level?
 
-    -   Intune can provision VPN configurations for third-party VPN providers.
-<br/><br/>
--   Can temporary exceptions be made for certain requirements to avoid downtime? Or must devices with access always comply with all security requirements?
+  -   Intune can provision VPN configurations for third-party VPN providers.
+  <br/><br/>
+- Can temporary exceptions be made for certain requirements to avoid downtime? Or must devices with access always comply with all security requirements?
 
 ## Next steps
 Read these [case studies](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) from different industry sectors to see how organizations assessed their requirements for mobile device management.

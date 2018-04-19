@@ -6,7 +6,7 @@ description: Email profile settings can be used to configure email access settin
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Configure access to corporate email using email profiles with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Many mobile platforms include a native email client that ships as part of the operating system. Some of these clients can be set up by using email profiles, as described in this topic.
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Turn on iOS supervised mode with Intune 
-titlesuffix: "Azure portal"
+title: Turn on iOS supervised mode with Microsoft Intune 
+titleSuffix: 
 description: Learn how to turn on iOS supervised mode with Intune.
 keywords:
 author: ErikjeMS
@@ -30,9 +30,9 @@ ms.custom: intune-azure
 # Turn on iOS supervised mode
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Apple iOS supervised mode gives administrators more options when managing Apple devices, making it useful for corporate-owned devices deployed at scale. For example, you can restrict AirDrop or prevent users from changing the name of the device. For a list of settings which require supervised mode, see [iOS device restriciton settings in Intune](device-restrictions-ios.md).
+Apple iOS supervised mode gives administrators more options when managing Apple devices, making it useful for corporate-owned devices deployed at scale. For example, you can restrict AirDrop or prevent users from changing the name of the device. For a list of settings which require supervised mode, see [iOS device restriction settings in Intune](device-restrictions-ios.md).
 
 Intune supports supervised mode as part of the Apple [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
 

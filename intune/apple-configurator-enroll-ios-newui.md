@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll iOS devices- Apple Configurator-Setup Assistant
-titlesuffix: "Azure portal"
-description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant (new UI)."
+title: Enroll iOS devices - Apple Configurator-Setup Assistant
+titleSuffix: Microsoft Intune
+description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant (new UI).
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enroll iOS devices with Apple Configurator
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### Temporary user interface differences
@@ -121,7 +121,7 @@ After you create the profile and assign serial numbers, you must export the prof
 2. On the profile, select **Export Profile**.
 3. Copy the **Profile URL**. You can then add it in Apple Configurator to define the Intune profile used by iOS devices.
 
-  Next you import this profile to Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
+   Next you import this profile to Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 ### Enroll devices with Setup Assistant
 

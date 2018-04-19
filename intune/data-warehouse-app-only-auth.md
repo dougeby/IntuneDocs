@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intune Data Warehouse application-only authentication
-titlesuffix: "Azure portal"
-description: This topic describes Data Warehouse application-only authentication"
+titleSuffix: Microsoft Intune
+description: This topic describes Data Warehouse application-only authentication.
 keywords:
 author: Erikre
 ms.author: erikre

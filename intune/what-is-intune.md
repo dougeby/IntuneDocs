@@ -2,13 +2,13 @@
 # required metadata
 
 title: Introduction to Intune in the Azure portal
-titlesuffix: "Azure portal"
-description: Get the basics about Intune in the Azure portal, and how it can help you manage your devices."
+titlesuffix: 
+description: Microsoft Intune is available in the Azure portal. Get the basics about Intune in the Azure portal.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,14 +31,14 @@ ms.custom:
 # Introduction to Microsoft Intune in the Azure portal
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Similar to other Azure services, Microsoft Intune is available in the Azure portal. By selecting **Intune** within the Azure portal, you can manage your organization's mobile devices, PCs, and apps.
 
->[!NOTE] 
+> [!NOTE]
 > If you've used a previous version of Microsoft Intune, you may find the following information helpful:
-    * [Where did my features go in Azure?](ui-changes.md) is a reference to show you the specific workflows and UIs that have changed with the move to Azure.
-    * [Intune classic groups in the Azure portal](groups-get-started.md) explains the implications of the shift to Azure Active Directory security groups for group management.
+>     * [Where did my features go in Azure?](ui-changes.md) is a reference to show you the specific workflows and UIs that have changed with the move to Azure.
+>     * [Intune classic groups in the Azure portal](groups-get-started.md) explains the implications of the shift to Azure Active Directory security groups for group management.
 
 Highlights of the Microsoft Intune experience in the Azure portal include:
 

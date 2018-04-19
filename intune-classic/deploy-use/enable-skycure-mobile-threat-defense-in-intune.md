@@ -6,7 +6,7 @@ description: Enable Skycure Mobile Threat Defense in the Intune classic portal.
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -28,9 +28,9 @@ ms.custom: intune-classic
 
 # Enable Skycure Mobile Threat Defense in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-To enable the Skycure mobile threat defense, you should have already configured the [Intune Connector in the Skycure console] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
+To enable the Skycure mobile threat defense, you should have already configured the [Intune Connector in the Skycure console](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
 
 ## To enable the Skycure MTD connection in Intune
 

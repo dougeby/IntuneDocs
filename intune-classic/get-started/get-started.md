@@ -5,7 +5,7 @@ title: Get Started
 description: This topic provides guidance for administrators ready to deploy Microsoft Intune to the enterprise production environment they manage.
 keywords:
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/07/2017
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 # Get started with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic helps administrators who are ready to start using Microsoft Intune to manage devices and services for their users. If you aren't ready to buy Intune, you can [evaluate the service with an Intune trial account](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).
 

@@ -236,6 +236,9 @@
           href: store-apps-windows-phone-8-1.md
         - name: Microsoft Store apps
           href: store-apps-windows.md
+          items:
+          - name: Manually add Company Portal app
+            href: store-apps-company-portal-app.md
         - name: Android for Work apps
           href: apps-add-android-for-work.md
         - name: Office 365 apps for Windows 10
@@ -354,6 +357,13 @@
         href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
+    - name: Configure endpoint protection
+      href: endpoint-protection-configure.md
+      items:
+      - name: macOS
+        href: endpoint-protection-macos.md
+      - name: Windows 10
+        href: endpoint-protection-windows-10.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -395,8 +405,6 @@
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Windows 10 endpoint protection
-      href: endpoint-protection-windows-10.md
     - name: Configure Windows 10 education settings
       href: education-settings-configure.md
     - name: Configure iOS education settings
@@ -441,6 +449,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Evaluate policy
+      href: policy-evaluate.md
     - name: Actions for noncompliance
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
@@ -470,30 +480,6 @@
       href: conditional-access-assign-jamf.md
   - name: Protect device data
     items:
-    - name: Use app protection policies
-      href: app-protection-policy.md
-      items:
-      - name: Create app protection policies
-        href: app-protection-policies.md
-        items:
-        - name: Android settings
-          href: app-protection-policy-settings-android.md
-        - name: iOS settings
-          href: app-protection-policy-settings-ios.md
-        - name: Data transfer policy exceptions
-          href: app-protection-policies-exception.md          
-        - name: Review app protection logs in the Managed Browser
-          href: app-protection-policy-settings-log.md
-      - name: Validate app protection policies
-        href: app-protection-policies-validate.md
-      - name: Monitor app protection user status
-        href: app-protection-policies-monitor.md
-      - name: Get ready for WIP app protection policies
-        href: app-protection-policies-configure-windows-10.md
-      - name: Create & assign WIP app protection policies
-        href: windows-information-protection-policy-create.md
-      - name: Manage data transfer between iOS apps
-        href: data-transfer-between-apps-manage-ios.md
     - name: Mobile Threat Defense
       href: mobile-threat-defense.md
       items:
@@ -610,6 +596,8 @@
       href: data-intune-sends-to-apple.md
     - name: Data Intune sends to Google
       href: data-intune-sends-to-google.md
+    - name: Data Google sends to Intune
+      href: data-google-sends-to-intune.md
   - name: Monitor and troubleshoot
     items:
     - name: Help users troubleshoot problems

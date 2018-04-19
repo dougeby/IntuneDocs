@@ -28,28 +28,28 @@ ms.custom: intune-classic
 
 # Secure resource access with certificate profiles in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can secure the access by using a certificate that is installed on each user device. Here's how it works:
 
 1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) and [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
 
 2. Install a root certificate or an intermediate Certification Authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To do this, create and deploy a **Trusted Certificate Profile**. When you deploy this profile, the devices that you manage with Intune will request and receive the root certificate. You have to create a separate profile for each platform. The **Trusted Certificate Profile** is available for these platforms:
- -  iOS 8.0 and later
- -  Mac OS X 10.9 and later
- -  Android 4.0 and later
- -  Android for Work
- -  Windows 8.1 and later
- -  Windows Phone 8.1 and later
+   -  iOS 8.0 and later
+   -  Mac OS X 10.9 and later
+   -  Android 4.0 and later
+   -  Android for Work
+   -  Windows 8.1 and later
+   -  Windows Phone 8.1 and later
 
 3. Create certificate profiles so that devices request a certificate to be used for authentication of VPN, Wi-Fi, and email access, as described in [Configure Intune certificate profiles](configure-intune-certificate-profiles.md). You can create and deploy a **PKCS #12 (.PFX) Certificate Profile** *or* a **SCEP Certificate Profile** for devices running these platforms:
 
-  -  iOS 8.0 and later
-  -  Android 4.0 and later
-  -  Android for Work
-  -  Windows 10 (desktop and mobile) and later
+   -  iOS 8.0 and later
+   -  Android 4.0 and later
+   -  Android for Work
+   -  Windows 10 (desktop and mobile) and later
 
-  Use a **SCEP Certificate Profile** for devices running these platforms:
+   Use a **SCEP Certificate Profile** for devices running these platforms:
     -   Mac OS X 10.9 and later
     -   Windows Phone 8.1
 

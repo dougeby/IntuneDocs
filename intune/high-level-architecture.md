@@ -2,11 +2,12 @@
 # required metadata
 
 title: High-level architecture for Microsoft Intune
-description:
+description: This reference architecture shows options for integrating Microsoft Intune in your Azure environment with Azure Active Directory.
 keywords:
+ms.author: dougeby
 author: dougeby
 manager: dougeby
-ms.date: 08/04/2017
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

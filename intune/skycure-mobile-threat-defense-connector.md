@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Skycure connector with Intune
-titlesuffix: "Azure portal"
-description: "Skycure connector integration with Intune."
+title: Skycure connector with Microsoft Intune
+titlesuffix:
+description: Learn about integrating Intune with Skycure Mobile Threat Defense to control mobile device access to your corporate resources.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -75,7 +75,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Access granted on remediation:**
 
-![Malicious apps detected access granted](./media/skycure-arch-2.png)
+![Access granted on remediation after malicious apps detected](./media/skycure-arch-2.png)
 
 ### Control access based on threat to network
 

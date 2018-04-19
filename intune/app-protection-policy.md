@@ -2,9 +2,8 @@
 # required metadata
 
 title: What are app protection policies
-
-titleSuffix: "Azure portal"
-description: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
+titleSuffix: Microsoft Intune
+description: Learn how Microsoft Intune app protection policies help protect your company data and prevent data loss.
 keywords:
 author: erikre
 ms.author: erikre
@@ -31,7 +30,7 @@ ms.custom: intune-azure
 # What are app protection policies?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
@@ -44,12 +43,12 @@ App protection policies can be configured for app running on devices that are:
 
 - **Enrolled in Microsoft Intune:** The devices in this category are typically corporate owned devices.
 
--   **Enrolled in a third-party Mobile device management (MDM)  solution:**   The devices in this category are typically corporate owned devices.
+- **Enrolled in a third-party Mobile device management (MDM)  solution:**   The devices in this category are typically corporate owned devices.
 
   > [!NOTE]
   > Mobile app management policies should not be used with third party mobile app management  or secure container solutions.
 
--   **Not enrolled in any mobile device management solution:**  The devices in this category are typically employee owned devices that are not managed or enrolled in Intune or other MDM solutions.
+- **Not enrolled in any mobile device management solution:**  The devices in this category are typically employee owned devices that are not managed or enrolled in Intune or other MDM solutions.
 
 > [!IMPORTANT]
 > You can create mobile app management policies for Office mobile apps that connect to Office 365 services. App protection policies are not supported for apps that connect to on-premises Exchange or SharePoint services.

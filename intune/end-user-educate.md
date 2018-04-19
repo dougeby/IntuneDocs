@@ -4,8 +4,8 @@
 title: How to educate your end users about Microsoft Intune | Microsoft Intune
 description: Share information with your end users to make your Intune deployment successful.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # How to educate your end users about Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](app-sdk.md).
 

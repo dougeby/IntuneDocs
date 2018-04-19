@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Getting started with the Azure portal
-titlesuffix: "Azure portal"
-description: Learn about creating and sharing dashboards for Intune in the Azure portal.
+title: Getting started with Microsoft Intune in the Azure portal
+titlesuffix:
+description: Learn about creating, sharing, and navigating dashboards for Microsoft Intune in the Azure portal.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Getting started with Intune in the Azure portal
+# Getting started with Microsoft Intune in the Azure portal
 
 The Azure portal is where you can find the Microsoft Intune service. There are many services in Azure, many of which you may not use on a regular basis. Customizing your dashboard and sidebar within Azure can help you find the right information quickly every time you login to manage devices with Intune.
 
@@ -34,9 +34,9 @@ The Azure portal is where you can find the Microsoft Intune service. There are m
 
 The __sidebar__ on the left side of the Azure portal shows you a list of all available Azure services. This comprehensive list can be changed from the default view so that you can keep a persistent view of the services that matter most to you. The information below uses Intune as the example of a service to add to the top of the list.
 
-![A user searching for Microsoft Intune in the "More services" list.](./media/azure-add-intune1.png)
+![A user searching for Microsoft Intune in the 'More services' list.](./media/azure-add-intune1.png)
 
-1. Select **More services** from the bottom of the sidebar on the left side of the page.
+1. Select **All services** from the sidebar on the left side of the page.
 2. Search for **Intune** in the filter box.
 3. Select the **star** to add Intune to the bottom of the list of your favorite services.
 4. Hover over the Intune service. Select and drag Intune using the **three vertical dots** on the right side of the service name.
@@ -57,7 +57,7 @@ This capability will be more relevant after you've added more content, like grou
 
 ## Using services
 
-Whenever you open Intune or any other service in Azure, the service is displayed in a **blade**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen blade. When you select the workload, it opens that blade in the full page. Other blades slide out from the right side of the blade when they open, and collapse underneath the main blade that they came from.
+Whenever you open Intune or any other service in Azure, the service is displayed in a **pane**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen pane. When you select the workload, it opens that pane in the full page. Other panes slide out from the right side of the pane when they open, and collapse underneath the main pane that they came from.
 
 ## Next steps
 

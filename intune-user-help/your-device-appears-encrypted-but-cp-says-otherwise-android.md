@@ -4,8 +4,8 @@
 title: Your Android device seems to be encrypted | Microsoft Docs
 description: 
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article

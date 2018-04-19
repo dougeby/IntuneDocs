@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You can configure conditional access control email access to Exchange on-premises or to legacy Exchange Online Dedicated by using Microsoft Intune.
 To learn more about how conditional access works, read the [Protect access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
@@ -58,13 +58,13 @@ Make sure to verify the following:
 
 When you configure conditional access policies and target them to a user, before a user can connect to their email, the **device** they use must be:
 
--  Either a domain-joined PC or **enrolled** with Intune.
+- Either a domain-joined PC or **enrolled** with Intune.
 
--  **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
+- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 
   The Azure Active Directory Device Registration service is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
--   **Compliant** with any Intune compliance policies that are deployed to that device.
+- **Compliant** with any Intune compliance policies that are deployed to that device.
 
 ### How conditional access works with Exchange on-premises
 
@@ -96,36 +96,36 @@ The following is supported:
 
 ##  Configure a conditional access policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange on-premises policy**.
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange on-premises policy**.
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configure the policy with the settings that you require:
-![Screenshot of the Exchange on-premises policy page](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. Configure the policy with the settings that you require:
+   ![Screenshot of the Exchange on-premises policy page](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Block email apps from accessing Exchange on-premises if the device isn't compliant or isn't enrolled with Microsoft Intune**: When you select this option, devices that aren't managed by Intune or aren't compliant with a compliance policy are blocked from accessing Exchange services.
+   - **Block email apps from accessing Exchange on-premises if the device isn't compliant or isn't enrolled with Microsoft Intune**: When you select this option, devices that aren't managed by Intune or aren't compliant with a compliance policy are blocked from accessing Exchange services.
 
-  - **Default rule override - Always allow enrolled and compliant devices to access Exchange**: When you select this option, devices that are enrolled in Intune and are compliant with the compliance policies are allowed to access Exchange.
-  This rule overrides the **Default Rule**, which means that even if you set the **Default Rule** to quarantine or block access, enrolled and compliant devices are still able to access Exchange.
+   - **Default rule override - Always allow enrolled and compliant devices to access Exchange**: When you select this option, devices that are enrolled in Intune and are compliant with the compliance policies are allowed to access Exchange.
+     This rule overrides the **Default Rule**, which means that even if you set the **Default Rule** to quarantine or block access, enrolled and compliant devices are still able to access Exchange.
 
-  - **Targeted Groups**: Select the Intune user groups that must enroll their device with Intune before they can access Exchange.
+   - **Targeted Groups**: Select the Intune user groups that must enroll their device with Intune before they can access Exchange.
 
-  - **Exempted Groups**: Select the Intune user groups that are exempt from the conditional access policy. Users in this list are exempt even if they're also in the **Targeted Groups** list.
+   - **Exempted Groups**: Select the Intune user groups that are exempt from the conditional access policy. Users in this list are exempt even if they're also in the **Targeted Groups** list.
 
-  - **Platform Exceptions**: Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that aren't supported by Intune.
+   - **Platform Exceptions**: Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that aren't supported by Intune.
 
-  - **Default Rule**: For a device that isn't covered by any of the other rules, you can choose to allow it to access Exchange, block it, or quarantine it. When you set the rule to allow access, for devices that are enrolled and compliant, email access is granted automatically for iOS, Windows, and Samsung KNOX devices. The user doesn't have to go through any process to get their email.
-	  - On Android devices that don't run Samsung KNOX, users get a quarantine email, which includes a guided walkthrough to verify enrollment and compliance before they can access email. If you set the rule to block access or quarantine devices, all devices are blocked from getting access to Exchange, regardless of whether they're already enrolled in Intune or not. To prevent enrolled and compliant devices from being affected by this rule, check the **Default Rule Override** box.
->[!TIP]
->If your intention is to first block all devices before granting access to email, choose the Block access rule or the Quarantine rule. The default rule applies to all device types—so device types that you configure as platform exceptions that aren't supported by Intune are also affected.
+   - **Default Rule**: For a device that isn't covered by any of the other rules, you can choose to allow it to access Exchange, block it, or quarantine it. When you set the rule to allow access, for devices that are enrolled and compliant, email access is granted automatically for iOS, Windows, and Samsung KNOX devices. The user doesn't have to go through any process to get their email.
+     - On Android devices that don't run Samsung KNOX, users get a quarantine email, which includes a guided walkthrough to verify enrollment and compliance before they can access email. If you set the rule to block access or quarantine devices, all devices are blocked from getting access to Exchange, regardless of whether they're already enrolled in Intune or not. To prevent enrolled and compliant devices from being affected by this rule, check the **Default Rule Override** box.
+       >[!TIP]
+       >If your intention is to first block all devices before granting access to email, choose the Block access rule or the Quarantine rule. The default rule applies to all device types—so device types that you configure as platform exceptions that aren't supported by Intune are also affected.
 
-  - **User Notification**: In addition to the notification email that Exchange sends, Intune sends an email that contains steps to unblock the device. You can edit the default message to customize it to your needs. In the event that the user’s device is blocked before they receive the Intune notification email that contains remediation instructions (this email is delivered to the user’s Exchange mailbox), they can use an unblocked device or another method to access Exchange and view the message.
-	  - This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
-  > [!NOTE]
-  > In order for Exchange to be able to send the notification email, you must specify the account that is used to send the notification email.
-  >
-  > For details, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
+   - **User Notification**: In addition to the notification email that Exchange sends, Intune sends an email that contains steps to unblock the device. You can edit the default message to customize it to your needs. In the event that the user’s device is blocked before they receive the Intune notification email that contains remediation instructions (this email is delivered to the user’s Exchange mailbox), they can use an unblocked device or another method to access Exchange and view the message.
+     - This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+       > [!NOTE]
+       > In order for Exchange to be able to send the notification email, you must specify the account that is used to send the notification email.
+       >
+       > For details, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
-3.  When you're done, choose **Save**.
+3. When you're done, choose **Save**.
 
 -   You don't have to deploy the conditional access policy—it takes effect immediately.
 

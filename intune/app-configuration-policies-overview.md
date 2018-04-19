@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: App configuration policies for Intune | Microsoft Docs 
-titlesuffix: "Azure portal"
-description: Learn how to use app configuration policies for Intune.
+title: App configuration policies for Intune
+titlesuffix: Microsoft Intune
+description: Learn how to use app configuration policies on an iOS or Android device in Intune.
 keywords:
 author: erikre
 ms.author: erikre
