@@ -28,14 +28,14 @@ ms.custom:
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-By requesting an account move, you are requesting that your data center is changed to another location. After the move, your Data Warehouse will reset and begin recording data at the new location based on the specified the day your move begins. To back up your previous Data Warehouse data, please complete the following steps **prior** to your account move. Most Data Warehouse tables retain data for 30 days, so any data gap in these tables will no longer be available 30 days after your account move. To learn more about the retention periods for specific tables, see [User lifetime representation in the Microsoft Intune Data Warehouse](reports-ref-user-timeline.md). 
+By requesting an account move, you are requesting that your data center is changed to another location. After the move, your Data Warehouse will reset and begin recording data at the new location based on the specified the day your move begins. To back up your previous Data Warehouse data, please complete the following steps **prior** to your account move. Most Data Warehouse tables retain data for 30 days, so any data gap in these tables will no longer be available 30 days after your account move. To learn more about the retention periods for specific tables, see [Data Warehouse data model](reports-ref-data-model.md). 
 
 ## Back up your Data Warehouse data 
 
 To back up your Data Warehouse data, you must save your Data Warehouse data into a *.csv* file using the  Data Warehouse API:  
 
 1. If you are a first-time user of the Data Warehouse API, follow the one-time process provided in the following article, [Get data from the Intune Data Warehouse API with a REST client](reports-proc-data-rest.md).
-2. Use the PowerShell sample titled [Access the Intune Data Warehouse with PowerShell](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/PowerShell) fto download all your data into CSV files. 
+2. Use the PowerShell sample titled [Access the Intune Data Warehouse with PowerShell](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/PowerShell) to download all your data into CSV files. 
 
 ## Back up your trend charts from the Azure portal
 
@@ -51,7 +51,7 @@ Some trend charts in your view of the Azure portal will reset. You may back up t
 2. Click the download icon ( ⤓ ) to save each report.
 
 ### Device Configuration charts 
-1. In the Azure portal, naviate to **Microsoft Intuned** -> **DeviceConfiguration**.
+1. In the Azure portal, navigate to **Microsoft Intune** -> **DeviceConfiguration**.
 2. Using Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), download the data behind the charts. 
     - For deployment status of all device configuration profiles for all devices, see [Device deployment status](https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity/content).
 
@@ -63,10 +63,12 @@ Some trend charts in your view of the Azure portal will reset. You may back up t
     > You must have a valid authenticaltion token to access the device configuration and deployment status information.
 
 ## Device Enrollment charts
-1. In the Azure portal, naviate to **Microsoft Intuned** -> **DeviceEnrollment**.
+1. In the Azure portal, navigate to **Microsoft Intune** -> **DeviceEnrollment**.
 2. Using Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), download the data behind the charts.
-    - For ennrollment status, see [Enrollment status](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) 
-    - For top enrollment failures this week, see [Top enrollment failures](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content).
+    - For enrollment status, see 
+    - For top enrollment failures this week, 
+    - For enrollment status, copy this [enrollment status query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) and paste it into [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+    - For top enrollment failures this week, copy this [enrollment failures query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) and paste it into [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
     > [!NOTE]
     > You must have a valid authenticaltion token to access the device device enrollment data. 
