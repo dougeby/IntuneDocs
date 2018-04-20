@@ -42,7 +42,7 @@ This article shows you the email profile settings you can configure for your dev
 - **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
 - **S/MIME** - Send outgoing email using S/MIME signing.
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
-	- Valid Personal Information Exchange (PFX) certificates are installed on the device
+	- If you choose a SCEP certificate, then be sure a valid Personal Information Exchange (PFX) certificate is installed on the device.
 - **Amount of email to synchronize** - Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts** - This allows users to move email messages between different accounts they have configured on their device.
 - **Allow email to be sent from third-party applications** - Allow the user to select this profile as the default account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.
