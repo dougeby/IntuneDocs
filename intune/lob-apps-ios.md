@@ -54,7 +54,7 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.
-2. In the **App information** pane, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in:
+2. In the **App information** pane, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
 	- **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
 	- **Description**: Enter a description for the app. The description appears in the company portal.
 	- **Publisher**: Enter the name of the publisher of the app.
