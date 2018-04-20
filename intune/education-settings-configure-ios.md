@@ -47,12 +47,12 @@ To set up Classroom on your device, you will need to create and configure an Int
 
 Consider the following before you begin to configure these settings:
 
-- Both teachers and student iPads must be enrolled in Intune
+- Both teachers and student iPads must be enrolled in Intune.
 - Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either install the app manually, or use [Intune app management](app-management.md).
-- You must configure certificates to authenticate connections between teacher and student devices (see Step 2)
-- Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled
-- The Classroom app runs on supervised iPads running iOS 9.3 or later
-- In this release, Intune supports managing a 1:1 scenario where each student has their own dedicated iPad
+- You must configure certificates to authenticate connections between teacher and student devices (see Step 2, Create and assign an iOS Education profile in Intune).
+- Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled.
+- The Classroom app runs on supervised iPads running iOS 9.3 or later.
+- In this release, Intune supports managing a 1:1 scenario where each student has their own dedicated iPad.
 
 
 ## Step 1 - Import your school data into Azure Active Directory
