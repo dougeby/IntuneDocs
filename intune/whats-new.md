@@ -963,12 +963,6 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
-
-#### What do I need to do to prepare for this change?
-
-There is nothing you need to do to prepare for this change, since these are minor workflow UI updates.
-For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
-
 ### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
 We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
 
