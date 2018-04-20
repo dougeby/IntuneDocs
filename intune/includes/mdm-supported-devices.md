@@ -2,7 +2,7 @@
 
 ### Apple
 - Apple iOS 9.0 and later
-- Mac OS X 10.9 and later
+- Mac OS X 10.11 and later
 
 ### Google
 - Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
