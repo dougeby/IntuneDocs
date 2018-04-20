@@ -30,19 +30,19 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use the information in this article to help you add macOS line-of-business apps to Microsoft Intune. You must download an external tool to pre-process your .pkg files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your .pkg files must take place on a macOS device.
+Use the information in this article to help you add macOS line-of-business apps to Microsoft Intune. You must download an external tool to pre-process your *.pkg* files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your *.pkg* files must take place on a macOS device.
 
 >[!NOTE]
 >While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
 >
->Only .pkg files may be used to upload macOS LOB apps to Microsoft Intune. 
+>Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. 
 
 ## Step 1 - Pre-process your software setup file
 
 Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Microsoft Intune.
 
 1. Download and run the [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
-2. Use the `IntuneAppUtil` command within the **Intune App Wrapping Tool for Mac** to generate the .pkg line-of-business app file.<br>
+2. Use the `IntuneAppUtil` command within the **Intune App Wrapping Tool for Mac** to wrap *.pkg* LOB app file from a *.intunemac* file.<br>
 
     Sample commands to use for the Microsoft Intune App Wrapping Tool for macOS:
     
@@ -50,10 +50,10 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
     This command will show usage information for the tool.
     
     - `IntuneAppUtil -c <source_file> -o <output_file> [-v]`<br>
-    This command will generate the .intunemac file from the .pkg line-of-business app file.
+    This command will wrap *.pkg* LOB app file to a *.intunemac* file.
     
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
-    This command will extract the detected parameters and version for the created .intunemac file.
+    This command will extract the detected parameters and version for the created *.intunemac* file.
 
 ## Step 2 - Specify the software setup file
 
@@ -67,7 +67,7 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
 ## Step 3 - Configure the app package file
 
 1. On the **Add app** pane, choose **App package file**.
-2. On the **App package file** pane, choose the browse button, and select an macOS installation file with the extension **.pkg**.
+2. On the **App package file** pane, choose the browse button, and select an macOS installation file with the extension *.intunemac*.
 3. When you are finished, choose **OK**.
 
 
@@ -79,7 +79,6 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
 	- **Description** - Enter a description for the app to be displayed to users in the company portal.
 	- **Publisher** - Enter the name of the publisher of the app.
 	- **Minimum Operating System** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
-	- **Ignore app version** - Set to **Yes** if app is automatically updated by the app developer.
 	- **Category** - Select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
@@ -98,14 +97,14 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
 The app you have created appears in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
 > [!NOTE]
-> If the .pkg file contains multiple apps or app installers, then Microsoft Intune will only report that the *app* is successfully installed when all installed apps are detected on the device.
+> If the *.pkg* file contains multiple apps or app installers, then Microsoft Intune will only report that the *app* is successfully installed when all installed apps are detected on the device.
 
 ## Step 6 - Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
-> For the Intune service to successfully deploy a new .pkg file to the device you must increment the *CFBundleVersion* string in the *Info.plist* file in your .pkg package.
+> For the Intune service to successfully deploy a new *.pkg* file to the device you must increment the package `version` and `CFBundleVersion` string in the *packageinfo* file in your *.pkg* package.
 
 ## Next steps
 
