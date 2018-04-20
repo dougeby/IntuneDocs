@@ -17,7 +17,7 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX
 #audience:
 #ms.devlang:
 ms.reviewer: derriw
