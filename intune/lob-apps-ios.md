@@ -33,7 +33,7 @@ ms.custom: intune-azure
 Use the information in this article to help you add an iOS line-of-business (LOB) app to Microsoft Intune.
 
 >[!NOTE]
->Users of iOS devices can remove some of the built-in iOS apps, like Stocks and Maps. You cannot use Intune to redeploy those apps. If users delete these apps, they must go to the app store and manually reinstall them.
+>Users of iOS devices can remove some of the built-in iOS apps, like Stocks and Maps. You cannot use Intune to redeploy these apps. If users delete these apps, they must go to the app store and manually reinstall them.
 
 ## Step 1: Specify the software setup file
 
@@ -60,7 +60,7 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 	- **Publisher**: Enter the name of the publisher of the app.
 	- **Minimum Operating System**: From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
 	- **Ignore app version**: Set to **Yes** if the app developer automatically updates the app.
-	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Using categories makes it easier for users to find the app when they browse through the company portal.
+	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
@@ -88,6 +88,6 @@ The app that you created now appears in the list of apps. From the list, you can
 
 - The app that you created appears in the list of apps. You can now assign it to groups that you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
-- Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
+- Learn more about the ways in which you can monitor the properties and assignment of your app. See [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
+- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).

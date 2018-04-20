@@ -51,12 +51,12 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.
-2. In the **App information** pane, configure the following information. (Some of the values in this pane might be automatically filled in.)
+2. In the **App information** pane, configure the following information. Some of the values in this pane might be automatically filled in.
 	- **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
 	- **Description**: Enter a description for the app. The description appears in the company portal.
 	- **Publisher**: Enter the name of the publisher of the app.
 	- **Ignore app version**: Set to **Yes** if the app developer automatically updates the app.
-	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Using categories makes it easier for users to find the app when they browse through the company portal.
+	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about the app. The URL appears in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for the app. The URL appears in the company portal.
@@ -88,6 +88,6 @@ This capability is useful to avoid getting into a race condition. For instance, 
 
 - The app that you created appears in the list of apps. You can now assign it to groups that you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
-- Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
+- Learn more about the ways in which you can monitor the properties and assignment of your app. See [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
+- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
