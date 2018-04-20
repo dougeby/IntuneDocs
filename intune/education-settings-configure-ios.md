@@ -33,7 +33,7 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
-[Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, using the app, a teacher can:
+[Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, the app enables teachers to:
 
 - Open apps on student devices
 - Lock, and unlock the iPad screen
@@ -41,7 +41,7 @@ ms.custom: intune-azure
 - Navigate students iPads to a bookmark, or chapter in a book
 - Display the screen from a student iPad on an Apple TV
 
-Use the Intune iOS **Education** device profile, and the information in this topic to help you set up the Classroom app, and the devices on which you use it.
+To set up Classroom on your device, you will need to create and configure an Intune iOS **Education** device profile.
 
 ## Before you start
 
@@ -89,14 +89,14 @@ You can import information into SDS by using one of the following methods:
 9.	Choose **Settings** > **Configure**.
 
 
-Next, you need certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
+In the next section, you'll create certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
 
 >[!IMPORTANT]
 >The teacher and student certificates you use must be issued by different certification authorities (CAs). You must create two new subordinate CAs connected to your existing certificate infrastructure; one for teachers, and one for students.
 
 iOS education profiles support only PFX certificates. SCEP certificates are not supported.
 
-Certificates you create must support server authentication in addition to user authentication.
+Created certificates must support server authentication and user authentication.
 
 ### Configure teacher certificates
 
@@ -104,13 +104,15 @@ On the **Education** pane, choose **Teacher certificates**.
 
 #### Configure teacher root certificate
 
-Under **Teacher root certificate**, choose the browse button to select the teacher root certificate with the extension .cer (DER, or Base64 encoded), or .P7B (with or without full chain).
+Under **Teacher root certificate**, choose the browse button. Select the root certificate with either:
+- Extension .cer (DER, or Base64 encoded) 
+- Extension .P7B (with or without full chain)
 
 #### Configure teacher PKCS#12 certificate
 
 Under **Teacher PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** - Intune automatically prefixes the certificate common name with **leader**, for the teacher certificate, and **member**, for the student certificate.
+- **Subject name format** - Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 
@@ -118,7 +120,7 @@ Under **Teacher PKCS#12 certificate**, configure the following values:
 - **Certificate validity period** - Specify the amount of remaining time before the certificate expires.
 You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA certificate.
 
-When you have finished configuring certificates, choose **OK**.
+When you're finished configuring certificates, choose **OK**.
 
 ### Configure student certificates
 
@@ -127,13 +129,15 @@ When you have finished configuring certificates, choose **OK**.
 
 #### Configure student root certificate
 
-Under **Student root certificate**, choose the browse button to select the student root certificate with the extension .cer (DER, or Base64 encoded), or .P7B (with or without full chain).
+Under **Student root certificate**, choose the browse button. Select the root certificate with either:
+- Extension .cer (DER, or Base64 encoded) 
+- Extension .P7B (with or without full chain)
 
 #### Configure student PKCS#12 certificate
 
 Under **Student PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** - Intune automatically prefixes the certificate common name with **leader**, for the teacher certificate, and **member**, for the student certificate.
+- **Subject name format** -  Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 
@@ -141,7 +145,7 @@ Under **Student PKCS#12 certificate**, configure the following values:
 - **Certificate validity period** - Specify the amount of remaining time before the certificate expires.
 You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA certificate.
 
-When you are finished configuring certificates, choose **OK**.
+When you're finished configuring certificates, choose **OK**.
 
 ## Finish up
 
@@ -154,7 +158,7 @@ Assign the profile to student devices in the classroom groups that were created 
 
 ## Next steps
 
-Now, when a teacher uses the Classroom app, they will have full control over student devices.
+Now when teachers use the Classroom app, they'll have full control over student devices.
 
 For more information about the Classroom app, see [Classroom help](https://help.apple.com/classroom/ipad/2.0/), on the Apple web site.
 
