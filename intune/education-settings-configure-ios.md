@@ -41,7 +41,7 @@ ms.custom: intune-azure
 - Navigate students iPads to a bookmark, or chapter in a book
 - Display the screen from a student iPad on an Apple TV
 
-To set up Classroom on your device, you will need to create and configure an Intune iOS **Education** device profile.
+To set up Classroom on your device, you will need to create and configure an Intune iOS education device profile.
 
 ## Before you start
 
