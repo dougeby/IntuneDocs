@@ -4,8 +4,8 @@
 title: You need to install SandBlast Mobile Protect on your iOS device | Microsoft Docs
 description: Learn how to install SandBlast Mobile Protect on your iOS device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article

@@ -4,9 +4,9 @@
 title: Installing Office 365 on your Windows 10 device | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod:

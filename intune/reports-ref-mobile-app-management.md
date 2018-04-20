@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Mobile App Management (MAM) | Microsoft Docs 
+title: Mobile App Management (MAM)
+titlesuffix: Microsoft Intune
 description: Reference topic for the Mobile App Management category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,23 +54,24 @@ The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed
 
 The **MamApplicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
 
-| Property | Description | Example |
-|---------|------------|--------|
-| ApplicationInstanceKey |Unique identifier of the MAM app instance in the data warehouse - surrogate key. |123 |
-| UserId |User Id of the user who has this MAM app installed. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |Unique identifier of the MAM app instance - similar to ApplicationInstanceKey, but the identifier is a natural key. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |Application ID of this MAM app |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |Application version of this MAM app. |2 |
-| CreatedDate |Date when this record of the MAM app instance was created. Value can be null. |11/23/2016 12:00:00 AM |
-| Platform |Platform of the device on which this MAM app is installed. |2 |
-| PlatformVersion |Platform version of the device on which this MAM app is installed. |2.2 |
-| SdkVersion |The MAM SDK version that this MAM app was wrapped with. |3.2 |
-| DeviceId |Device ID of the device on which this MAM app is installed. |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |Device name of the device on which this MAM app is installed. |"MyDevice" |
-| IsDeleted |Indicates whether this MAM app instance record has been updated. <br>True- this MAM app instance has a new record with updated fields in this table. <br>False - the latest record for this MAM app instance. |True/False |
-| StartDateInclusiveUtc |Date and time in UTC when this MAM app instance was created in the data warehouse. |11/23/2016 12:00:00 AM |
-| DeletedDateUtc |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUtc |Date and time in UTC when this MAM app instance was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+
+|          Property          |                                                                                                  Description                                                                                                  |               Example                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Unique identifier of the MAM app instance in the data warehouse - surrogate key.                                                                |                 123                  |
+|           UserId           |                                                                              User Id of the user who has this MAM app installed.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Unique identifier of the MAM app instance - similar to ApplicationInstanceKey, but the identifier is a natural key.                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        Application ID of this MAM app                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     Application version of this MAM app.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Date when this record of the MAM app instance was created. Value can be null.                                                                 |        11/23/2016 12:00:00 AM        |
+|          Platform          |                                                                          Platform of the device on which this MAM app is installed.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Platform version of the device on which this MAM app is installed.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            The MAM SDK version that this MAM app was wrapped with.                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          Device ID of the device on which this MAM app is installed.                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         Device name of the device on which this MAM app is installed.                                                                         |              "MyDevice"              |
+|         IsDeleted          | Indicates whether this MAM app instance record has been updated. <br>True- this MAM app instance has a new record with updated fields in this table. <br>False - the latest record for this MAM app instance. |              True/False              |
+|   StartDateInclusiveUtc    |                                                              Date and time in UTC when this MAM app instance was created in the data warehouse.                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             Date and time in UTC when IsDeleted changed to True.                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           Date and time in UTC when this MAM app instance was last modified in the data warehouse.                                                            |        11/23/2016 12:00:00 AM        |
 
 ## MamCheckin
 
@@ -114,20 +116,23 @@ The **MamEffectivePolicy** entity lists all Mobile Application Management (MAM) 
 
 The **MamGlobalApplication** entity lists store apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
 
-| Property | Description | Example |
-|---------|------------|--------|
-| ApplicationKey |Unique identifier of the store app in the data warehouse, known as the surrogate key. |123 |
-| ApplicationId |Unique identifier of the store app. The identifier is similar to ApplicationKey, but is a natural key. |com.microsoft.skydrive.<ios> |
-| ApplicationName |MAM Global Application Name. |Skydrive |
-| RowLastModifiedDateTimeUtc |Date and time in UTC when this specific MAM Global Application was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+
+|          Property          |                                               Description                                               |           Example            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          Unique identifier of the store app in the data warehouse, known as the surrogate key.          |             123              |
+|       ApplicationId        | Unique identifier of the store app. The identifier is similar to ApplicationKey, but is a natural key.  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      MAM Global Application Name.                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | Date and time in UTC when this specific MAM Global Application was last modified in the data warehouse. |    11/23/2016 12:00:00 AM    |
 
 ## MamPlatform
 
 The **MamPlatform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
 
-| Property | Description | Example |
-|---------|------------|--------|
-| PlatformKey |Unique identifier of the platform in the data warehouse - surrogate key. |123 |
-| Platform |Unique identifier of the platform - similar to PlatformKey, but is a natural key. |123 |
-| PlatformName |Platform name |Not Available <br>None <br>Windows <br>IOS <br>Android. |
-| RowLastModifiedDateTimeUtc |Date and time in UTC when this platform was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+
+|          Property          |                                    Description                                    |                         Example                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Unique identifier of the platform in the data warehouse - surrogate key.      |                           123                           |
+|          Platform          | Unique identifier of the platform - similar to PlatformKey, but is a natural key. |                           123                           |
+|        PlatformName        |                                   Platform name                                   | Not Available <br>None <br>Windows <br>IOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Date and time in UTC when this platform was last modified in the data warehouse.  |                 11/23/2016 12:00:00 AM                  |
+

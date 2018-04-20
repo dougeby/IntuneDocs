@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: Intune Data Warehouse Change log | Microsoft Docs
+title: Intune Data Warehouse Change log 
+titlesuffix: Microsoft Intune
 description: A list of changes in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -25,7 +26,7 @@ ms.custom: intune-classic
 
 # Change log for the Intune Data Warehouse API
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
 

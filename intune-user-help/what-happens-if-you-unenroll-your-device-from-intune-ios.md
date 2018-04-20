@@ -4,14 +4,17 @@
 title: What happens if you unenroll your iOS or macOS device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3csearchScope: - User help
+ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
+searchScope:
+ - User help
 
 # optional metadata
 

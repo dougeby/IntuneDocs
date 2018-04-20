@@ -2,8 +2,8 @@
 # required metadata
 
 title: Get ready to configure app protection policies for Windows 10 
-titlesuffix: "Azure portal"
-description: "Setup mobile application management (MAM) provider in Azure AD"
+titleSuffix: Microsoft Intune
+description: Setup mobile application management (MAM) provider in Azure AD.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# Get ready to configure app protection policies for Windows 10
+# Get ready to configure app protection policies for Windows 10 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Enable mobile application management (MAM) for Windows 10 by setting the MAM provider in Azure AD. Setting a MAM provider in Azure AD allows you to define the enrollment state when creating a new Windows Information Protection (WIP) policy with Intune. The enrollment state can be either MAM or mobile device management (MDM).
 

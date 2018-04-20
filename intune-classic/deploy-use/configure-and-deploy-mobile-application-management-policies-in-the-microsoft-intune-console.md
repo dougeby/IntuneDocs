@@ -6,7 +6,7 @@ description: Mobile application management policies in Microsoft Intune let you 
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Configure and deploy mobile application management policies in the Microsoft Intune console
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mobile application management (MAM) policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies. For example, you can restrict cut, copy, and paste operations within a managed app, or configure an app to open all web links inside a managed browser.
 

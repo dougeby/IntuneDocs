@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: View Intune device inventory 
-titlesuffix: "Azure portal"
-description: Learn how to view the devices you manage with Intune, and understand their hardware and installed apps."
+title: View device details with Microsoft Intune - Azure | Microsoft Docs
+description: View your device details, including operating systems, storage space, manufacturer, and model. Get a list of installed apps, check compliance policies, and set up TeamViewer with Microsoft Intune in Azure. Similar to viewing inventory of the devices you manage.
 keywords:
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/10/2017
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,37 +19,40 @@ ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: angrobe
+#ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# How to view Intune device inventory
+# See device details in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+The **Devices** feature provides additional details into the devices you manage, including their hardware and the apps installed.
 
-The **Devices** workload gives you insights into the devices you manage, including their hardware capabilities, and the apps installed on them. 
+This article shows you how to view all your devices, and their properties in the Azure portal.
 
-To view device inventory:
+## View the device details
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Devices**.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
-Now, choose one of the following options:
+   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to also:
+     - Remove company data
+     - Delete the device
+     - Remote lock the device
+     - Erase
+     - Start a remote assistance session
+   - Use **Properties** to assign a [device category you create](device-group-mapping.md), and change ownership of the device to a personal device, or a corporate device.
+   - **Hardware** includes many details about the device, including the device ID, the operating system and version, storage space, the model and manufacturer, conditional access settings, and more details.
+   - **Discovered apps** lists all the apps that Intune found installed on the device, and the app versions. You can also **Export** the app list into a .csv file.
+   - **Device compliance** lists all assigned compliance policies, and if the device is compliant or not compliant.
+   - **Device configuration** shows all device configuration policies assigned to the device, and if the policy succeeded or failed.
 
-- **Overview** Get information about devices you've enrolled, and the operating systems each device runs.
-- **Manage** - Choose **All devices** to see a list of all the devices you manage.
-	Select one of those devices in the list to open the <*device name*> **Overview** blade where you can select one of:
-	- **Overview**  - See general information about the device including its name, owner, whether it is a BYOD device, when it checked-in, and more.
-	- **Hardware** - See more detailed information about the device including its free storage space, model and manufacturer, and more.
-	- **Discovered apps** - Displays a list of all apps that Intune found installed on the device.
-	- **Device compliance** - Displays the compliance state of all compliance policies that have been assigned to the device.
-	- **Device configuration** - Displays the compliance state of all device configuration policies that have been assigned to the device.
-- **Monitor** - Choose **Device actions** to see a list of device actions that have been performed on devices you manage and their current state.
-- **Setup** > **TeamViewer Connector** - Let's you configure remote administration on devices using the TeamViewer software. For details, see [Provide remote assistance for Intune managed Android devices](/intune/device-profile-android-teamviewer).
+Intune collects an app list only on corporate-owned devices. Apps aren't checked on personal devices. For Windows 10 PCs, only modern apps are listed for corporate-owned devices. Intune doesn't collect information about Win32 apps on the device. Depending on the carrier used by the devices, not all apps might be collected.
 
-Intune collects app inventory only on corporate-owned devices. Apps are not inventoried on personal devices. For Windows 10 PCs, only modern app inventory is collected on corporate-owned devices. Intune does not collect information about Win32 apps on the device. Depending on the carrier you use with devices, not all inventory items might be collected.
+## Next steps
+See what else you can do to [manage your devices](device-management.md) with Intune.

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Bypass iOS Activation Lock with Intune
-titlesuffix: "Azure portal"
-description: Learn how to use Intune to bypass iOS Activation Lock to access locked devices."
+titlesuffix: "Microsoft Intune"
+description: Learn how to use Intune to bypass iOS Activation Lock to access locked devices.
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/22/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Bypass Activation Lock on Supervised iOS devices with Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 8.0 and later devices. Activation Lock is enabled automatically when a user opens the Find My iPhone app on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can:
 

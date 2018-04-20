@@ -4,9 +4,9 @@
 title: Enrolled device management capabilities 
 description: Read this topic to find out how Intune can help you manage devices that you enroll.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 # Enrolled device management capabilities of Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune lets you manage a range of devices by *enrolling* them into the service. You can enroll some device types yourself, or users can enroll using the *company portal* app. This also lets them perform operations like browsing and installing apps, ensuring that their devices are compliant with company policies, and contacting their IT support.
 
@@ -70,6 +70,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 
 ## Inventory and reporting
 
-|Capability|Details|More information|
-|--------------|-----------|--------------------|
-|Inventory and reporting|Finds information about the devices that you manage and the software that the devices are using.|[Understand your devices with inventory in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       Capability        |                                             Details                                              |                                                                  More information                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inventory and reporting | Finds information about the devices that you manage and the software that the devices are using. | [Understand your devices with inventory in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

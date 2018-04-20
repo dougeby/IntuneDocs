@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Integrate Zimperium with Intune
-titleSuffix: Intune on Azure
-description: "Integrate Intune with Zimperium"
+title: Integrate Zimperium MTD with Microsoft Intune
+titleSuffix:
+description: How to set up the Zimperium Mobile Threat Defense (MTD) solution with Microsoft Intune to control mobile device access to your corporate resources.
 keywords:
 author: msmimart
 ms.author: mimart

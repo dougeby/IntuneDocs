@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Mobile Threat Defense with Intune
-titleSuffix: "Azure portal"
-description: "Protect access to company resources based on device risk"
+title: Mobile Threat Defense with Microsoft Intune
+titleSuffix:
+description: Use Intune Mobile Threat Defense (MTD) with your Mobile Threat Defense partner to protect access to company resources based on device risk.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Mobile Threat Defense integration with Intune
+# What is Mobile Threat Defense integration with Intune?
 
 
 Intune Mobile Threat Defense connectors allow you to leverage your chosen Mobile Threat Defense vendor as a source of information for your compliance policies and conditional access rules. This allows IT administrators to add a layer of protection to their corporate resources such as Exchange and Sharepoint, specifically from compromised mobile devices.
@@ -38,7 +38,7 @@ Companies need to protect sensitive data from emerging threats including physica
 
 Historically, companies have been proactive when protecting PCs from attack, while mobile devices go unmonitored and unprotected. Mobile platforms have built-in protection such as app isolation and vetted consumer app stores, but these platforms remain vulnerable to sophisticated attacks. Today, more employees use devices for work and need access to sensitive information. Devices must be protected from increasingly sophisticated attacks.
 
-## How the Intune Mobile Threat Defense connectors work?
+## How do the Intune Mobile Threat Defense connectors work?
 
 The connector protects company resources by creating a channel of communication between Intune and your chosen Mobile Threat Defense vendor. Intune Mobile Threat Defense partners offer intuitive, easy to deploy applications for mobile devices, which actively scan and analyze threat information to share with Intune, for either reporting or enforcement purposes. 
 
@@ -64,11 +64,11 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
 
 When a device is considered infected by the Mobile Threat Defense solution:
 
-![Mobile Threat Defense infected device](./media/MTD-image-1.png)
+![Image showing a Mobile Threat Defense infected device](./media/MTD-image-1.png)
 
 Access is granted when the device is remediated:
 
-![Mobile Threat Defense Access granted](./media/MTD-image-2.png)
+![Image showing a Mobile Threat Defense Access granted](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > Using multiple Mobile Threat Defense vendors with Intune is not supported. Having multiple MTD tools enabled will force all MTD apps to be installed and scan across devices for threats.

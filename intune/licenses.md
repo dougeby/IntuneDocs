@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Licenses that include Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 The following table shows which version of Intune is available in each license:
 

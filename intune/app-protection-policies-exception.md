@@ -1,14 +1,14 @@
-﻿---
+---
 # required metadata
 
 title: Data transfer policy exceptions for apps 
-titleSuffix: "Azure portal"
-description: "Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy."
+titleSuffix: Microsoft Intune
+description: Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,6 +18,7 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 # optional metadata
 
 #ROBOTS:
+
 #audience:
 #ms.devlang:
 ms.reviewer: joglocke
@@ -28,7 +29,7 @@ ms.custom: intune-azure
 
 # How to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. The unmanaged apps that you included in the exception list must be trusted by IT. 
 
@@ -44,6 +45,10 @@ For a policy targeting iOS, you can configure data transfer exceptions by URL pr
 
 ## Android data transfer exceptions
 For a policy targeting Android, you can configure data transfer exceptions by app package name. You can check the **Google Play** store page for the app you would like to add an exception for to find the app package name. For additional information about Android data transfer exceptions, see [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#data-transfer-exemptions).
+
+
+>[!TIP]
+> You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
 
 ### Example
 By adding the **Webex** package as an exception to the MAM data transfer policy, Webex links inside a managed Outlook email message are allowed to open directly in the Webex application. Data transfer is still restricted in other unmanaged apps.

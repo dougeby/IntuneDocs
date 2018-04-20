@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Add and assign MTD apps into Intune
-titleSuffix: Azure portal
-description: "Add MTD apps, Microsoft Authenticator app, and iOS configuration policy with Intune in the Azure portal"
+title: Add and assign MTD apps to Microsoft Intune
+titleSuffix:
+description: Use Intune to add Mobile Threat Defense (MTD) apps, Microsoft Authenticator app, and iOS configuration policy in the Azure portal.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -81,7 +81,7 @@ For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout
 Enable Azure Active Directory authentication for the iOS users by doing the following:
 
 1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
-  
+
 2. Add the **Lookout for Work iOS app** as a **native client application**.
 
 3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
@@ -90,8 +90,8 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 5.  Add **Delegated Permissions** to your app.
 
-	> [!NOTE] 
-	> See [configure a native client application with Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) for more details.
+    > [!NOTE] 
+    > See [configure a native client application with Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) for more details.
 
 ##### Add the Lookout for Work ipa file
 
@@ -138,41 +138,39 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 -   Use the same Azure AD account previously configured in the [Skycure Management console](https://aad.skycure.com), which should be the same account used to log in to the Intune classic portal.
 
 -   You need to **download** the iOS app configuration policy file: 
-	-   Go to [Skycure Management console](https://aad.skycure.com) and sign in with your admin credentials.
-	
-	-   Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.
-	
-	-   Click on the **Integration setup files** link and save the generated \*.zip file. The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in Intune.
-	
-	-   See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Skycure iOS app configuration policy.
-	
-	- On **step 8**, use the option **Enter XML data**, copy the content from the **skycure_configuration.plist** file and paste its content into the configuration policy body.
+    -   Go to [Skycure Management console](https://aad.skycure.com) and sign in with your admin credentials.
+
+    -   Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.
+
+    -   Click on the **Integration setup files** link and save the generated \*.zip file. The .zip file contains the **skycure\_configuration.plist** file, which will be used to create the iOS app configuration policy in Intune.
+
+    -   See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Skycure iOS app configuration policy.
+
+    - On **step 8**, use the option **Enter XML data**, copy the content from the **skycure_configuration.plist** file and paste its content into the configuration policy body.
 
 You can also copy the **skycure_configuration.plist** content from here:
 
 ```
 <dict>
-	<key>MdmType</key>
-	<string>Intune</string>
-	<key>UserEmail</key>
-	<string>{{userprincipalname}}</string>
+    <key>MdmType</key>
+    <string>Intune</string>
+    <key>UserEmail</key>
+    <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### For Check Point SandBlast Mobile
 
 - See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Check Point SandBlast Mobile iOS app configuration policy.
-	- On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
+    - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### For Zimperium
 
 - See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Zimperium iOS app configuration policy.
-	- On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
+    - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
 
 ```
 <dict>
@@ -185,7 +183,6 @@ You can also copy the **skycure_configuration.plist** content from here:
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## To assign apps (All MTD partners)

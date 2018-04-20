@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add built-in apps to mobile devices using Intune
-titlesuffix: "Azure portal"
-description: "Learn how you can use Intune to make it easier to install built-in apps mobile devices."
+title: Add built-in apps to mobile devices using Microsoft Intune
+titlesuffix: 
+description: Learn how you can use Intune to make it easier to install built-in apps mobile devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -73,4 +73,4 @@ You can modify information about the built-in app. This information helps you to
 
 ## Next steps
 
-You can now assign the apps the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+- You can now assign the apps the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).

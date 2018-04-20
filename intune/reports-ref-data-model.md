@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Data Warehouse data model | Microsoft Docs 
-description: The Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment.
+title: Data Warehouse data model
+titlesuffix: Microsoft Intune
+description: The Microsoft Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,9 +26,9 @@ ms.custom: intune-classic
 
 # Data Warehouse data model
 
-The Intune Data Warehouse samples data daily to provide a historical view of your continually changing environment of mobile devices. The view is composed of related things in time.
+The Intune Data Warehouse samples data daily to provide a historical view of your continually changing environment of mobile devices. The view is composed of related entities in time.
 
-## Things: Entity sets
+## Entities: Entity sets
 
 The warehouse exposes data in the following high-level areas:
 
@@ -36,7 +37,7 @@ The warehouse exposes data in the following high-level areas:
   -  Apps and software inventory
   -  Device configuration and compliance policies
 
-These areas contain the entities, or things, that are meaningful to your Intune environment. You find details about the entity sets in the following topics:
+These areas contain the entities that are meaningful to your Intune environment. You find details about the entity sets in the following topics:
 
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)

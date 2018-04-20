@@ -4,14 +4,17 @@
 title: Your Android version isn't yet supported | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2searchScope: - User help
+ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
+searchScope:
+ - User help
 
 # optional metadata
 

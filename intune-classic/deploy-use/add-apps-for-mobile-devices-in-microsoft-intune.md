@@ -6,7 +6,7 @@ description: Before you can deploy an app, you must add it to Intune. Then it’
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Add apps for enrolled devices to Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Before you can deploy or manage an app, you must add it to Microsoft Intune. This topic shows you how to add apps for enrolled devices.
 
@@ -39,32 +39,32 @@ Before you can deploy or manage an app, you must add it to Microsoft Intune. Thi
 ## Add the app
 You use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space. Use the following procedure:
 
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Apps** &gt; **Add Apps** to start the Intune Software Publisher.
+1. In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Apps** &gt; **Add Apps** to start the Intune Software Publisher.
 
-    > [!TIP]
-    > You might need to enter your Intune user name and password before the publisher starts.
+   > [!TIP]
+   > You might need to enter your Intune user name and password before the publisher starts.
 
-2.  On the **Software setup** page of the publisher, choose one of the following options for **Select how this software is made available to devices**:
-	- **Software installer**, for apps with the extension **.msi**:
-		- **Select the software installer file type**. This indicates the type of software that you want to deploy. For example, if you want to install an iOS app, choose **App Package for iOS (&#42;.ipa file)**.
-        - **Specify the location of the software setup files**. Enter the location of the installation files, or choose **Browse** to select the location from a list.
-        - **Include additional files and subfolders from the same folder**. This option is for the **Windows Installer** file type only.<br>Some software that uses Windows Installer requires supporting files that are typically found in the same folder as the installation files. Select this option if you also want to deploy these files.<br>This installation type uses some of your cloud storage space.
+2. On the **Software setup** page of the publisher, choose one of the following options for **Select how this software is made available to devices**:
+   - **Software installer**, for apps with the extension **.msi**:
+       - **Select the software installer file type**. This indicates the type of software that you want to deploy. For example, if you want to install an iOS app, choose **App Package for iOS (&#42;.ipa file)**.
+       - **Specify the location of the software setup files**. Enter the location of the installation files, or choose **Browse** to select the location from a list.
+       - **Include additional files and subfolders from the same folder**. This option is for the **Windows Installer** file type only.<br>Some software that uses Windows Installer requires supporting files that are typically found in the same folder as the installation files. Select this option if you also want to deploy these files.<br>This installation type uses some of your cloud storage space.
 
-  -   **External link**, for apps that you want to create by specifying a link to an app store:
+   -   **External link**, for apps that you want to create by specifying a link to an app store:
 
-		- **Specify the URL**. Specify the URL of one of the following:
-			- The app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Remote Desktop app for Android, specify **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>To find the URL of the app, use a search engine to find the store page that contains the app. For example, to find the Remote Desktop app, you can search for **Microsoft Remote Desktop Android**.
-			- A website. Intune will deploy a shortcut icon to the site on the device (known as a web clip).
-			- An app on the web. Intune will deploy a shortcut icon to the app on the device.
-        - **Require a managed browser to open this link (Android and iOS only)**. When you deploy a link to a website or web app to users, they will be able to open it only in the Intune managed browser. This browser must be installed on their device.<br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>This installation type does not use any of your cloud storage space.
+       - **Specify the URL**. Specify the URL of one of the following:
+           - The app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Remote Desktop app for Android, specify **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>To find the URL of the app, use a search engine to find the store page that contains the app. For example, to find the Remote Desktop app, you can search for **Microsoft Remote Desktop Android**.
+           - A website. Intune will deploy a shortcut icon to the site on the device (known as a web clip).
+           - An app on the web. Intune will deploy a shortcut icon to the app on the device.
+       - **Require a managed browser to open this link (Android and iOS only)**. When you deploy a link to a website or web app to users, they will be able to open it only in the Intune managed browser. This browser must be installed on their device.<br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>This installation type does not use any of your cloud storage space.
 
-  -   **Managed iOS app from the app store**, for free apps from the iTunes store that you want to manage with mobile application management (MAM) policies:
+   -   **Managed iOS app from the app store**, for free apps from the iTunes store that you want to manage with mobile application management (MAM) policies:
 
-		- **Specify the URL**. Enter the app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>This installation type does not use any of your cloud storage space.
+       - **Specify the URL**. Enter the app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>This installation type does not use any of your cloud storage space.
 
-		For example, if you want to deploy the Microsoft Word app from the iTunes store to devices, the page would look like this:
+       For example, if you want to deploy the Microsoft Word app from the iTunes store to devices, the page would look like this:
 
-		![Intune Software Publisher](./media/publisher-for-mobile.png)
+       ![Intune Software Publisher](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.

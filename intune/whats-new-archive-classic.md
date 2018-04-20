@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new archive 
+title: What's new in Microsoft Intune classic portal archive
 description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: brenduns
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 # What's new in the Intune classic portal - previous months
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 This page lists new features and notices previously announced on the [What's new page](whats-new.md) for the Intune classic portal.
 
@@ -286,7 +286,7 @@ The following articles have been updated:
 
 * [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Get started with the Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Intune App SDK for iOS developer guide](app-sdk-ios.md)
 
 The following articles are new additions to the docs library:
@@ -377,7 +377,7 @@ App developers can now use the Intune App SDK Xamarin component to enable MAM fu
 __Symantec signing certificate no longer requires signed Windows Phone 8 Company Portal for upload__
 Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
-###Deprecations
+### Deprecations
 
 __Support for the Windows Phone 8 Company Portal__
 Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.

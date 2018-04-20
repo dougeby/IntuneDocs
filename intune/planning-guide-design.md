@@ -2,12 +2,13 @@
 # required metadata
 
 title: Create a design
+titlesuffix: Microsoft Intune
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

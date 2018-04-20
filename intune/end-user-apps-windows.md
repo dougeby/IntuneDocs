@@ -4,8 +4,8 @@
 title: How your Windows users get their apps
 description: Methods for making Windows apps available to users
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How your Windows users get their apps
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use this information to understand how and where your users get the apps that you distribute through Microsoft Intune.
 

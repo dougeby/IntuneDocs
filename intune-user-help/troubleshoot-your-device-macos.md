@@ -4,8 +4,8 @@
 title: Fix common issues with your iOS device | Microsoft Docs
 description: Find out ways to solve common issues with your iOS device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article

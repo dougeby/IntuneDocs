@@ -2,11 +2,11 @@
 # required metadata
 
 title: Where did my Intune feature go in Azure?
-titlesuffix: "Azure portal"
-description: Helps you find Intune features in the Azure portal."
+titleSuffix: Microsoft Intune
+description: Helps you find Microsoft Intune features in the Azure portal.
 keywords:
-author: dagerrit
-ms.author: dagerrit
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
@@ -29,6 +29,7 @@ ms.custom: intune-azure
 # Where did my Intune feature go in Azure?
 We took the opportunity to organize some tasks more logically as we moved Intune into the Azure portal. But every improvement comes with the cost of learning the new organization. So, we created this reference guide for those of you who are thoroughly familiar with Intune in the classic portal and are wondering how to get something done in Intune in the Azure portal. If this article doesn’t cover a feature you’re trying to find, leave a comment at the end of the article so we can update it.
 ## Quick reference guide
+
 |Feature |Path in classic portal|Path in Intune in the Azure portal|
 |------------|---------------|---------------|
 |Device Enrollment Program (DEP) [iOS only]|Admin > Mobile Device Management > iOS > Device Enrollment Program|[Device enrollment > Apple Enrollment > Enrollment Program Token](#where-did-apple-dep-go) |
