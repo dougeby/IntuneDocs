@@ -42,6 +42,10 @@ Use the information in this article to help you add macOS line-of-business apps 
 Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Microsoft Intune.
 
 1. Download and run the [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
+
+    > [!NOTE]
+    > The **Intune App Wrapping Tool for Mac** must be run on a macOS machine.
+
 2. Use the `IntuneAppUtil` command within the **Intune App Wrapping Tool for Mac** to wrap *.pkg* LOB app file from a *.intunemac* file.<br>
 
     Sample commands to use for the Microsoft Intune App Wrapping Tool for macOS:
