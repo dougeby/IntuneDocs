@@ -105,7 +105,7 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in your `MAMApplication`'s `OnMAMCreate` function because, with Intune management, your application can be started while in the background.
+2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2 above. This is needed because with Intune management your application can be started while in the background.
 
 ## Support
 
