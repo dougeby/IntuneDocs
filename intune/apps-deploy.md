@@ -41,16 +41,17 @@ The following table lists  the various options for assigning apps to users and d
 |&nbsp;|**Devices enrolled with Intune**|**Devices not enrolled with Intune**|
 |Assign to users|Yes|Yes|
 |Assign to devices|Yes|No|
-|Assign wrapped apps, or apps that incorporate the Intune SDK (for app protection policies)|Yes|Yes|
-|Assign apps as Available|Yes|Yes|
-|Assign apps as Required|Yes|No|
+|Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies)|Yes|Yes|
+|Assign apps as **Available**|Yes|Yes|
+|Assign apps as **Required**|Yes|No|
 |Uninstall apps|Yes|No|
 |Receive app updates from Intune|Yes|No|
-|End users install available apps from Company Portal app|Yes|No|
-|End users install available apps from web-based Company Portal|Yes|Yes|
+|End users install available apps fromthe Company Portal app|Yes|No|
+|End users install available apps from the web-based Company Portal|Yes|Yes|
 
 > [!NOTE]
-> Currently, you can assign iOS and Android apps (line-of-business and store-purchased apps) to devices that aren't enrolled with Intune.<br><br>
+> Currently, you can assign iOS and Android apps (line-of-business and store-purchased apps) to devices that aren't enrolled with Intune.
+>
 > To receive app updates on devices that aren't enrolled with Intune, device users must go to their organization's Company Portal and manually install app updates.
 
 ## To assign an app
@@ -58,11 +59,11 @@ The following table lists  the various options for assigning apps to users and d
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. In the **Microsoft Intune** menu, select **Mobile apps**.
-4. In the menu, in the **Manage** section, select **Apps**.
-5. In **Apps**, select the app you want to assign.
-6. In the menu, in the **Manage** section, select **Assignments**.
-7. Select **Add Group** to open the **Add group** pane that's related to the app.
-8. For the specific app, select an **assignment type** for the app:
+4. In the **Manage** section of the menu, select **Apps**.
+5. In the **Apps** pane, select the app you want to assign.
+6. In the **Manage** section of the menu, select **Assignments**.
+7. Select **Add Group** to open the **Add group** pane that is related to the app.
+8. For the specific app, select an **assignment type**:
    - **Available for enrolled devices**: Users install the app from the Company Portal app or website.
    - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. The **Android for Work App** type doesn't support this option. 
    - **Required**: The app is installed on devices in the selected groups.
@@ -73,17 +74,17 @@ The following table lists  the various options for assigning apps to users and d
 
 9. To select the groups of users that are affected by this app assignment, select **Included Groups**.
 10. After you have selected one or more groups to include, select **Select**.
-11. In **Assign**, select **OK** to complete the included group selection.
+11. In the **Assign** pane, select **OK** to complete the included groups selection.
 12. If you want to exclude any groups of users from being affected by this app assignment, select **Exclude Groups**.
 13. If you have chosen to exclude any groups, in **Select groups**, select **Select**.
-14. In **Add group**, select **OK**.
+14. In the **Add group** pane, select **OK**.
 15. In the app **Assignments** pane, select **Save**.
 
 The app is now assigned to the groups that you selected. For more information about including and excluding app assignments, see [Include and exclude app assignments](apps-inc-exl-assignments.md).
 
 ## How conflicts between app intents are resolved
 
-Sometimes, the same app is assigned to multiple groups, but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
+Sometimes, the same app is assigned to multiple groups but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
 
 ||||
 |-|-|-|
@@ -97,7 +98,7 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Required|Device Required|Both exist, Gateway treats Required
 |User Required|Device Uninstall|Both exist, Gateway resolves Required
 |User Available|Device Required|Both exist, Gateway resolves Required (Required and Available)
-|User Available|Device Uninstall|Both exist, Gateway resolves Available.<br><br>App shows up in Company Portal.<br><br>If the app is already installed(as a required app with previous intent), the app is uninstalled.<br><br>If the user selects **Install from the Company Portal**, the app is installed, and the uninstall intent is not honored.|
+|User Available|Device Uninstall|Both exist, Gateway resolves Available.<br><br>App shows up in the Company Portal.<br><br>If the app is already installed (as a required app with previous intent), the app is uninstalled.<br><br>If the user selects **Install from the Company Portal**, the app is installed, and the uninstall intent is not honored.|
 |User Not Available|Device Required|Required|
 |User Not Available|Device Uninstall|Uninstall|
 |User Uninstall|Device Required|Both exist, Gateway resolves Required|
@@ -108,13 +109,13 @@ Sometimes, the same app is assigned to multiple groups, but with different inten
 |User Required and Available|User Not Available|Required and Available|
 |User Required and Available|Device Required|Both exist, Required and Available
 |User Required and Available|Device Not Available|Required and Available|
-|User Required and Available|Device Uninstall|Both exist, Gateway resolves Required. Required and Available
+|User Required and Available|Device Uninstall|Both exist, Gateway resolves Required (Required and Available)
 |User Not Available|Device Not Available|Not Available|
 |User Available|Device Not Available|Available|
 |User Required|Device Not Available|Required|
 |User Available without enrollment|User Required and Available|Required and Available
 |User Available without enrollment|User Required|Required
-|User Available without enrollment|User Not available|Not Available
+|User Available without enrollment|User Not Available|Not Available
 |User Available without enrollment|User Available|Available|
 |User Available without enrollment|Device Required|Required and Available without enrollment|
 |User Available without enrollment|Device Not Available|Available without enrollment|

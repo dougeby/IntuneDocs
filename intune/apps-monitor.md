@@ -30,12 +30,13 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune provides a number of ways to monitor the properties of apps you manage, and manage their assignment status.
+Intune provides a number of ways to monitor the properties of apps you manage, and manage app assignment status.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select **Mobile Apps**, then in the **Manage** section, select **Apps**.
-5. In the list of apps, choose an app to monitor. You'll then see the app pane, with an overview of the device status and the user status.
+3. In the **Microsoft Intune** menu, select **Mobile apps**.
+4. In the **Manage** section of the menu, select **Apps**.
+5. In the list of apps, select an app to monitor. You'll then see the app pane, with an overview of the device status and the user status.
 
 ## App overview pane
 
@@ -64,7 +65,7 @@ The graphs show the number of apps for the following status:
 
 ### Device install status
 
-A device status list is displayed when you select **Device install status** in the **MONITOR** section of the left menu. The details table includes the following columns:
+A device status list is shown when you select **Device install status** in the **Monitor** section of the menu. The details table includes the following columns:
 
 | **Device column**      | **Description**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,13 +74,13 @@ A device status list is displayed when you select **Device install status** in t
 | **Platform**         | The operating system of the device (Windows, iOS, Android, and so on)                                                                                                                                                                                           |
 | **Version**          | The version number of the app. For line-of-business apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). |
 | **Status**           | The status of the app.                                                                                                                                                                                                                                     |
-| **Status details**   | Details of the status.                                                                                                                                                                                                                                     |
-| **Last check-in**    | Date of the device's last sync with Intune.                                                                                                                                                                                                                  |
+| **Status details**   | The details of the status.                                                                                                                                                                                                                                     |
+| **Last check-in**    | The date of the device's last sync with Intune.                                                                                                                                                                                                                  |
 
 
 ### User install status
 
-A user status list is shown when you select **User install status** in the **MONITOR** section of the left menu. The details table includes the following columns:
+A user status list is shown when you select **User install status** in the **Monitor** section of the menu. The details table includes the following columns:
 
 | **User column**     | **Description**                           |
 |---------------------|-------------------------------------------|
@@ -87,7 +88,7 @@ A user status list is shown when you select **User install status** in the **MON
 | **User name**       | The unique name of the user.              |
 | **Installations**   | The number of apps installed by the user. |
 | **Failures**        | The number of failed app installations for the user.     |
-| **Not installed**   | The n umber of apps not installed by the user. |
+| **Not installed**   | The number of apps not installed by the user. |
 
 
 ## Next steps
