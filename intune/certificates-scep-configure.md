@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/19/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -371,11 +371,11 @@ To validate that the service is running, open a browser, and enter the following
        - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
        - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
-       - **CN={OnPremisesSamAccountName})**
+       - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
 
-          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `OnPremisesSamAccountName` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+          To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
        By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
 
