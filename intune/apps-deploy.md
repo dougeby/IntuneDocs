@@ -42,8 +42,8 @@ The following table lists  the various options for assigning apps to users and d
 |Assign to users|Yes|Yes|
 |Assign to devices|Yes|No|
 |Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies)|Yes|Yes|
-|Assign apps as **Available**|Yes|Yes|
-|Assign apps as **Required**|Yes|No|
+|Assign apps as Available|Yes|Yes|
+|Assign apps as Required|Yes|No|
 |Uninstall apps|Yes|No|
 |Receive app updates from Intune|Yes|No|
 |End users install available apps fromthe Company Portal app|Yes|No|
