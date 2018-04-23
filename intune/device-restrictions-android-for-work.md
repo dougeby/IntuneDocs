@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/17/2018
+ms.date: 4/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,9 +57,11 @@ This article lists the Microsoft Intune device restrictions settings that you ca
 
 - **Contact sharing via Bluetooth**: Enables access to work contacts from another device, such as a car, that is paired using Bluetooth. By default, this setting is not configured, and work profile contacts aren't shown. Select **Enable** to allow this sharing, and show work profile contacts. This setting applies to Android work profile devices on Android OS v6.0 and newer.
 
-- **Screen capture**: Blocks the screen capture on the device. It also prevents the content from being shown on display devices that don't have a secure video output.
+- **Screen capture**: Blocks the screen capture on the device in the work profile. It also prevents the content from being shown on display devices that don't have a secure video output.
 
 - **Display work contact caller-id in personal profile**: When enabled (Not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. Applies to Android OS v6.0 and newer versions.
+
+- **Camera**: Blocks the camera on the device in the work profile. This setting blocks access to all cameras on the device.
 
 ### Work profile password
 
