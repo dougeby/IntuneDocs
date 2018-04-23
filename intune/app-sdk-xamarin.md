@@ -87,11 +87,11 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 1. Add the latest version of the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project. This will provide you with the necessary references to Intune enable your application.
 
-2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to
-    a. The [entire class and method replacements section](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
-    b. The [MAMApplication section](app-sdk-android.md#mamapplication).
-    c. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
-    d. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
+2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to:
+    1. The [entire class and method replacements section](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
+    2. The [MAMApplication section](app-sdk-android.md#mamapplication).
+    3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+    4. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
 
 > [!NOTE]
 > When attempting to find equivalent APIs from the [Intune App SDK for Android Developers Guide](app-sdk-android.md) in the `Microsoft.Intune.MAM.Xamarin.Android` Bindings or when converting code snippets from the guide, be aware that Xamarin's bindings generator modifies the Android APIs in the following notable ways:
@@ -105,7 +105,7 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2b above. This is needed because with Intune management your application can be started while in the background.
+2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
 
 ## Support
 
