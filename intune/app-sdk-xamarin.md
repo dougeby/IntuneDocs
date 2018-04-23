@@ -81,35 +81,34 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
 
-## Enabling app protection policies in your Android mobile app
-Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
+## Enabling Intune app protection policies in your Android mobile app
 
-For Xamarin.Android apps, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md) fully, including replacing class, methods, and activities with their MAM equivalent based on the [table](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) included in the guide. 
+### Xamarin.Android integration
+
+1. Add the latest version of the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project. This will provide you with the necessary classes to Intune enable your application.
+
+2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to
+* The [entire class and method replacements section](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
+* The [MAMApplication section](app-sdk-android.md#mamapplication).
+* The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+* The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
 
 > [!NOTE]
-> If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`.
-
-> [!NOTE]
-> When attempting to find equivalent APIs from the [Intune App SDK for Android Developer Guide](app-sdk-android.md) in the `Microsoft.Intune.MAM.Xamarin.Android` Bindings or converting code snippets from the guide, be aware that Xamarin's bindings generator modifies the Android APIs in the following notable ways:
-> * All identifiers are converted to Pascale case (com.microsoft.foo -> Com.Microsoft.Foo)
+> When attempting to find equivalent APIs from the [Intune App SDK for Android Developers Guide](app-sdk-android.md) in the `Microsoft.Intune.MAM.Xamarin.Android` Bindings or converting code snippets from the guide, be aware that Xamarin's bindings generator modifies the Android APIs in the following notable ways:
+> * All identifiers are converted to Pascal case (com.microsoft.foo -> Com.Microsoft.Foo)
 > * All get/set opreations are converted to property operations (e.g. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
 > * All interfaces have the character 'I' prepended on the name (FooInterface -> IFooInterface)
 
-For apps utilizing Xamarin.Forms or other UI frameworks, we have provided a tool called `Microsoft.Intune.MAM.Remapper`. The tool accomplishes the class replacement for you. To use it, do the following:
+### Xamarin.Forms integration
 
-1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project.
+In addition to performing all of the steps above, for `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` tool. This tool accomplishes the class replacement for you by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes like `FormsAppCompatActivity` and `FormsApplicationActivity` so you can continue to use those classes but provide new overrides for the MAM equivalent functions like `OnMAMCreate` and `OnMAMResume`. To use it, do the following:
 
-2.  Set the build action of the `remapping-config.json` file that's included with the Nuget package to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper NuGet package.
+1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-3.  Add a call to Xamarin.Forms.Forms.Init(Context, Bundle) in your MAMApplication's OnMAMCreate function because, with Intune management, your application can be started while in the background.
+2.  Add a call to Xamarin.Forms.Forms.Init(Context, Bundle) in your `MAMApplication`'s `OnMAMCreate` function because, with Intune management, your application can be started while in the background.
 
-4.  Perform the rest of the steps in [Intune App SDK for Android Developer Guide](app-sdk-android.md) that are applicable to your app.
+3.  Perform the rest of the steps in [Intune App SDK for Android Developers Guide](app-sdk-android.md) that are applicable to your app.
 
-> [!NOTE]
-> The build action of remapping-config.json can sometimes be reset when updating the Microsoft.Intune.MAM.Remapper.Tasks package which would cause your builds to fail.
-
-## Next steps
-
-You have completed the basic steps of setting your app up for Intune management. Now you can follow the steps included in the integration guides for each of platforms listed above.
+## Support
 
 If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
