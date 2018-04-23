@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/18/2018
+ms.date: 4/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,18 +48,6 @@ Depending on the settings you choose, not all values may be configurable.
   - **Import**: Browse to a comma-separated file that contains a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
   - **Export**: Exports the list of servers to a comma-separated-values (csv) file
 
-- **Use this VPN profile for Windows AutoPilot**: When **Yes**, it turns this profile into an always-on VPN connection. Always On connects without user interaction, and uses machine certificates (which you add) for authentication. After the AutoPilot out-of-box experience completes, the VPN profile is removed from the device.
-
-  Always on VPN profiles automatically connect when:
-  - Users sign in to their devices
-  - The network on the device changes
-  - The screen on the device turns back on after being turned off
-
-  Always on VPN supports an IKEv2 connection type.
-
-    > [!IMPORTANT]
-    > To use Always On, the **Associate WIP or apps with this VPN** setting (Apps and Traffic Rules) must be set to **Not configured**.
-
 - **Connection type**: Select the VPN connection type from the following list of vendors:
 
   - **Pulse Secure**
@@ -72,10 +60,16 @@ Depending on the settings you choose, not all values may be configurable.
   - **L2TP**
   - **PPTP**
 
-  When you choose a VPN connection type, you may also be asked for the following settings:
-  - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced capabilities, such as zero-touch experience, on-demand VPN, and per-app VPN.
-  - **Remember credentials at each logon**: Choose to cache the authentication credentials.
-  - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
+  When you choose a VPN connection type, you may also be asked for the following settings:  
+    - **Always On**: Enable to automatically connect to the VPN connection when the following happens: 
+      - Users sign into their devices
+      - The network on the device changes
+      - The screen on the device turns back on after being turned off 
+
+    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced capabilities, such as zero-touch experience, on-demand VPN, and per-app VPN.
+    - **Remember credentials at each logon**: Choose to cache the authentication credentials.
+    - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
+    - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
 
 #### Pulse Secure example
 
