@@ -66,7 +66,7 @@ We've updated the help experience in the Company Portal app for Android to align
 - Upload diagnostic logs to Microsoft.
 - Send an email that describes the problem and incident ID to a company support person.  
 
-To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android).
 
 
 #### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
@@ -962,12 +962,6 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 
 ## Notices
-
-
-#### What do I need to do to prepare for this change?
-
-There is nothing you need to do to prepare for this change, since these are minor workflow UI updates.
-For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
 
 ### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
 We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.

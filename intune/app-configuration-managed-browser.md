@@ -161,10 +161,9 @@ Outlook must be configured with an app protection policy that enables the settin
 #### Step 2: Assign an app configuration policy assigned for the Managed Browser.
 This procedure configures the Managed Browser app to use app proxy redirection. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-|||
-|-|-|
-|Key|Value|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Key                                                             | Value    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 For more information about how the Managed Browser and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
@@ -172,10 +171,8 @@ For more information about how the Managed Browser and Azure AD Application Prox
 
 This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                |                                                           Value                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: <strong><https://www.bing.com></strong> |
 
 ## How to configure bookmarks for the Managed Browser
@@ -188,21 +185,17 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Key                                                                                                                                                                |                                                                                                                                                                                    Value                                                                                                                                                                                    |
-| Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Specify blocked URLs (all other sites can be accessed): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe <strong>&#124;</strong> character.<br><br>Examples:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Key|Value|
+|-|-|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
