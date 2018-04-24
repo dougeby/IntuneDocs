@@ -121,6 +121,16 @@ You can view an alert for Windows AutoPilot unassigned devices to see how many d
 3. Under **Intune**, choose **Device enrollment**.
 4. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
 
+## Delete AutoPilot devices
+
+You can delete Windows AutoPilot devices that are not enrolled. You can unenroll devices and then delete them.
+
+1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+
+2. Under **Windows AutoPilot devices**, choose the devices you want to delete, and then choose **Delete**.
+
+3. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
+
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
