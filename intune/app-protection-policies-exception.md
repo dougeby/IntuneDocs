@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,10 +54,21 @@ For a policy targeting Android, you can configure data transfer exceptions by ap
 By adding the **Webex** package as an exception to the MAM data transfer policy, Webex links inside a managed Outlook email message are allowed to open directly in the Webex application. Data transfer is still restricted in other unmanaged apps.
 
 - iOS **Webex** example:
-    To exempt the **Webex** app so that it is allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>wbx</code>.
+    To exempt the **Webex** app so that it is allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>wbx</code>
+    
+ - iOS **Maps** example:
+    To exempt the native **Maps** app so that it is allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>maps</code>
 
 - Android **Webex** example:
-    To exempt the **Webex** app so that it is allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>com.cisco.webex.meetings</code>. 
+    To exempt the **Webex** app so that it is allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>com.cisco.webex.meetings</code>
+    
+- Android **SMS** example:
+    To exempt the native **SMS** app so that it is allowed to be invoked by Intune managed apps across different messaging apps and Android devices, you must add data transfer exceptions for the following strings: 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## Next steps
 

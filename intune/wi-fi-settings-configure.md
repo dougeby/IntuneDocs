@@ -44,7 +44,7 @@ Wi-Fi profiles support the following device platforms:
 - Android 4 and later
 - Android for Work
 - iOS 8.0 and later
-- macOS (Mac OS X 10.9 and later)
+- macOS (Mac OS X 10.11 and later)
 
 For devices running Windows 8.1, Windows 10, Windows 10 Mobile, and Windows Holographic for Business, you can import a Wi-Fi configuration that was previously exported from another device.
 

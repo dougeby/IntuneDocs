@@ -46,7 +46,7 @@ When you enable MFA, end users must supply two forms of credentials to enroll a 
 
 To require MFA when a device is enrolled, follow these steps:
 
-[!Important]
+>[!Important]
 >You must have an Azure Active Directory Premium P1 or above assigned to your users to implement this policy.
 
 >[!Important]

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,6 +43,16 @@ This page is updated periodically. Check back for additional updates.
 ## Intune in the Azure portal
 
 <!-- 1804 start -->
+
+### Show caller ID in personal profile - Android for Work <!--1098984 -->
+When using a personal profile on a device, end-users may not see the caller ID details from a work contact. 
+
+With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+- Display work contact caller-id in personal profile
+
+When enabled (not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. 
+
+Applies to: Android work profile devices on Android OS v6.0 and newer
 
 ### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --><!--from 1802-->
 

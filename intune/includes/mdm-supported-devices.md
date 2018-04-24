@@ -2,7 +2,7 @@
 
 ### Apple
 - Apple iOS 9.0 and later
-- Mac OS X 10.9 and later
+- Mac OS X 10.11 and later
 
 ### Google
 - Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
@@ -14,6 +14,7 @@
 
 ### Microsoft
 
+- Surface Hub
 - Windows 10 (Home, S, Pro, Education, and Enterprise versions)
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
