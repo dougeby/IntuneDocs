@@ -4,10 +4,10 @@
 title: Activate iOS lost mode with Microsoft Intune - Azure | Microsoft Docs
 description: Turn on or start lost mode to customize a message that appears on the lock screen of a lost or stolen iOS device by using Microsoft Intune. And, get details on security and privacy information when you are using the lost mode action.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,14 @@ When you enable lost mode, all use of the device is blocked. The end user cannot
 - The data is stored for 24 hours, then removed. You cannot manually remove the location data.
 - Location data is encrypted, both while stored, and while being transmitted.
 - In the message you enter to show on the lock screen, be sure to include specific details to return the lost device.
+
+## Activate lost mode sound alert on an iOS device
+
+If someone has lost their iOS 9.3 or later device, you can remotely trigger the device to play an alert sound so the user can find it. The device must be in lost mode.
+
+In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices** > **All devices** > select an iOS device > **Overview** > **More** > **Play Lost mode sound (supervise only)**.
+
+The sound will continue to play until the user disables the sound on the device or the device is removed from lost mode.
 
 ## Next steps
 
