@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/19/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,9 @@ Use the information in this article to learn how to create endpoint protection p
 
 ## Windows Defender Application Guard
 
-Application Guard is only available for Windows 10 (64-bit) devices. Using this profile will install a Win32 component to activate Application Guard.
+While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that haven’t been defined as trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites are opened in a virtual browsing session in Hyper-V. Trusted sites are defined by a network boundary, which can be configured in Device Configuration. 
+
+Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
 
 - **Application Guard**: Open unapproved sites in a Hyper-V virtualized browsing container.
 - **Clipboard behavior**: Choose what copy/paste actions are allowed between the local PC and the Application Guard virtual browser.
@@ -93,7 +95,7 @@ These settings are applicable to specific network types, including **Domain (wor
 
 ### Windows Settings
 
-These settings apply to all versions of Windows 10.
+The following two settings apply to all versions of Windows 10:
 
 - **Encrypt devices**: If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable.
 - **Encrypt storage card**: Enable this setting to encrypt any removable storage cards used by the device.
@@ -226,7 +228,7 @@ To enable exploit protection, create an XML file representing the system and app
 
 Use **Application control code integrity policies** to choose additional apps that must be audited by, or can be trusted to run by Windows Defender Application Control. Windows components and all apps from Windows store are automatically trusted to run.
 
-Applications will not be blocked when running in **audit only** mode. **Audit only** mode logs all events in local client logs.
+Applications are not blocked when running in **audit only** mode. **Audit only** mode logs all events in local client logs.
 
 Once enabled, Application Control can only be disabled by changing the mode from **Enforce** to **Audit only**. Changing the mode from **Enforce** to **Not Configured** results in Application Control continuing to be enforced on assigned devices.
 
