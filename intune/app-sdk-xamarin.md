@@ -89,8 +89,8 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to:
     1. The [entire class and method replacements section](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent). 
-    2. The [MAMApplication section](app-sdk-android.md#mamapplication).
-    3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+    2. The [MAMApplication section](app-sdk-android.md#mamapplication). Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
+    3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) if your app performs authentication against AAD.
     4. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
 
 > [!NOTE]
@@ -101,11 +101,14 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 ### Xamarin.Forms integration
 
-**In addition to performing all of the steps above**, for `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package. This package accomplishes the class replacement for you by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes like `FormsAppCompatActivity` and `FormsApplicationActivity` so you can continue to use those classes and provide overrides for the MAM equivalent functions like `OnMAMCreate` and `OnMAMResume`. To use it, do the following:
+**In addition to performing all of the steps above**, for `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package. This package accomplishes class replacement for you by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes like `FormsAppCompatActivity` and `FormsApplicationActivity` so you can continue to use those classes by providing overrides for the MAM equivalent functions like `OnMAMCreate` and `OnMAMResume`. To use it, do the following:
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
 2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
+
+> [!NOTE]
+> Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
 
 ## Support
 
