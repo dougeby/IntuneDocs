@@ -179,7 +179,7 @@ Windows Holographic for Business uses the **Windows 10 and later** platform. Win
 To verify device encryption on the Microsoft HoloLens, see [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
 ## Surface Hub
-Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AD)) and target the Surface Hub devices as device groups.
+Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AAD)) and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure Active Directory joined for compliance and conditional access to function.
 
 See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 
