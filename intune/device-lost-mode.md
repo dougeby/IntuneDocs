@@ -60,14 +60,6 @@ When you enable lost mode, all use of the device is blocked. The end user cannot
 - Location data is encrypted, both while stored, and while being transmitted.
 - In the message you enter to show on the lock screen, be sure to include specific details to return the lost device.
 
-## Activate lost mode sound alert on an iOS device
-
-If someone has lost their iOS 9.3 or later device, you can remotely trigger the device to play an alert sound so the user can find it. The device must be in lost mode.
-
-In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices** > **All devices** > select an iOS device > **Overview** > **More** > **Play Lost mode sound (supervise only)**.
-
-The sound will continue to play until the user disables the sound on the device or the device is removed from lost mode.
-
 ## Next steps
 
 To see the status of enabling lost mode, open **Devices**, and select **Device actions**.
