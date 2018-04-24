@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Monitor device profiles in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can monitor the assignment progress of Intune device profiles in two ways.
 

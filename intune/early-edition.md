@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,16 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1804 start -->
 
+### Show caller ID in personal profile - Android for Work <!--1098984 -->
+When using a personal profile on a device, end-users may not see the caller ID details from a work contact. 
+
+With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+- Display work contact caller-id in personal profile
+
+When enabled (not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. 
+
+Applies to: Android work profile devices on Android OS v6.0 and newer
+
 ### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --><!--from 1802-->
 
 New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added:
@@ -62,6 +72,13 @@ New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/acces
 ### Passcode support for MAM PIN on Android<!-- 1438086 -->
 
 Intune admins will be able to set an application launch requirement to enforce a passcode instead of a numeric MAM PIN. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. Intune supports passcode in a similar way to the existing numeric PIN... being able to set a minimum length, allowing repeat characters and sequences through the admin console. This feature requires the latest version of Company Portal on Android. This feature is already available for iOS.
+
+###  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
+Two new properties will be available to block when you configure device restrictions for Android devices: 
+- Camera: Blocks access to all cameras on the device
+- Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
+
+Applies to Android for Work.
 
 ### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Microsoft Intune will provide the capability to install macOS LOB apps from the Azure portal. You will be able to add a macOS LOB app to Intune after it has been pre-processed by the tool available in GitHub. In the Azure portal, choose **Mobile apps** from the **Intune** blade. On the **Mobile apps** blade, choose **Apps** > **Add**. On the **Add App** blade, select **Line-of-business app**. 
@@ -83,9 +100,6 @@ You will be able to prevent the installation of consumer apps and experiences on
 
 ### Advanced Threat Protection integrated with Intune <!-- 1629303 -->
 [Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
-
-### Uninstall the latest from Windows 10 software updates <!-- 1732948 -->
-Should you discover a breaking issue on your Windows 10 machines, you will be able to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update will only be available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
 
 ### New enrollment steps for users on devices with macOS High Sierra 10.13.2+ <!--1734567 -->
 macOS high Sierra 10.13.2 introduced the concept of "User Approved" MDM enrollment. In the future, approved enrollments will allow Intune to manage some security-sensitive settings. For more information, see Apple's support documentation here: https://support.apple.com/HT208019.
@@ -111,7 +125,10 @@ Currently, AutoPilot deployment profiles can be assigned to selected devices. To
 - Assign desired profiles to an Azure AD group. The AutoPilot profile will now be assigned to AutoPilot devices in that group.
 
 ### Play sounds on iOS when in Lost mode <!-- 1629303 -->
-When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can play a sound. The sound continues to play until the device is removed from Lost mode, or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
+When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can play a sound (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode , or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
+
+### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
+If an end user uninstalls a required app, Intune will automatically reinstall the app within 24 hours rather than waiting for the 7 day re-evaluation cycle.
 
 ### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You'll be able to use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
@@ -125,7 +142,7 @@ The Company Portal app for macOS devices will be updated to improve how users re
 
 Currently, [Always On](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on) can be used on Windows 10 devices by using a custom virtual private network (VPN) profile created using OMA-URI.
 
-In a future update, admins will be to enable Always On for Windows 10 VPN profiles directly in Intune in the Azure portal. Always On VPN profiles will automatically connect when:
+With this update, admins will be to enable Always On for Windows 10 VPN profiles directly in Intune in the Azure portal. Always On VPN profiles will automatically connect when:
 
 - Users sign into their devices
 - The network on the device changes
@@ -134,6 +151,14 @@ In a future update, admins will be to enable Always On for Windows 10 VPN profil
 ### Improved error messaging for Apple MDM Push Certificate upload failure <!-- 2172331 -->
 
 The error message will explain that the same Apple ID must be used when renewing an existing MDM certificate.
+
+###  Device profile chart and status list show all devices in a group <!-- 1449153 eeready -->
+When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
+
+With this update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) will only show the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
+
+While this update is being made, the graphical user chart is temporarily removed. 
+
 
 <!-- 1803 start -->
 
@@ -168,10 +193,6 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 
 <!-- 1802 start -->
 
-### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
-
-On the Enrollment Overview page, you will be able to view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table, you will be able to drill into details to find troubleshooting advice and remediation suggestions.
-
 ### New printer settings for education profiles <!-- 1308900 -->
 
 For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
@@ -180,9 +201,6 @@ For education profiles, new settings will be available under the **Printers** ca
 
 ### App Protection Policies  <!-- 679615 -->
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
-
-### Configure an iOS app PIN <!-- 1586774 -->
-Soon you will be able to require a PIN for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.
 
 <!-- the following are present prior to 1711 -->
 

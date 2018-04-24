@@ -1,13 +1,13 @@
 ---
 # required metadata
-title: What's new in Microsoft Intune
+title: What's new in Microsoft Intune - Azure | Microsoft Docs
 titlesuffix:
 description: Find out what's new in the Intune Azure portal
 keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 04/17/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,12 +22,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+/ms.custom: intune-azure
 ---
 
 # What's new in Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
 
@@ -45,12 +44,51 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+## Week of April 16, 2018
+
+#### Use Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
+
+When you create a new VPN profile for iOS, there are now two options: **Cisco AnyConnect** and **Cisco Legacy AnyConnect**. Cisco AnyConnect profiles support 4.0.7x and newer versions. Existing iOS Cisco AnyConnect VPN profiles are labeled **Cisco Legacy AnyConnect**, and continue to work with Cisco AnyConnect 4.0.5x and older versions, as they do today.
+
+> [!NOTE]
+> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android for Work, and macOS platforms.
+
+#### Jamf-enrolled macOS devices can now register with Intune <!-- 2370684 -->
+
+Versions 1.3 and 1.4 of the macOS company portal did not successfully register Jamf devices with Intune. Version 1.4.2 of the macOS portal fixes this issue.
+
+
+## Week of April 9, 2018
+
+#### Updated help experience in Company Portal app for Android <!-- 1631531 -->
+
+We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
+- Upload diagnostic logs to Microsoft.
+- Send an email that describes the problem and incident ID to a company support person.  
+
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android).
+
+
+#### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
+
+On the Enrollment Overview page, you can view the trend of enrollment failures and the top five causes of failures. By clicking on the chart or table,you can drill into details to find troubleshooting advice and remediation suggestions.
+
+#### Update where to configure your app protection policies <!-- 2144597 -->
+
+In the Azure portal within the Microsoft Intune service, we’re going to temporarily redirect you from the **Intune App Protection** service blade to the **Mobile app** blade. Note that all of your app protection policies are already on the **Mobile app** blade in Intune under app configuration. Instead of going to Intune App Protection, you’ll just go to Intune. In April 2018, we will stop the redirection and fully remove the **Intune App Protection** service blade, so that there's only one location for app protection policies within Intune. 
+
+**How does this affect me?**
+This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration.
+
+**What do I need to do to prepare for this change?**
+Please tag **Intune** as a favorite instead of the **Intune App Protection** service blade and ensure you’re familiar with the App protection policy workflow in the **Mobile** app blade within Intune. We’ll redirect for a short period of time and then remove the **App Protection** blade. Remember, all app protection policies are already in Intune and you can modify any of your conditional access policies. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md) 
+
 
 ## Week of April 2, 2018
 
 ### Intune apps
 
-### User experience update for the Company Portal app for iOS <!--1412866 -->
+#### User experience update for the Company Portal app for iOS <!--1412866 -->
 We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
 
 You'll also see:
@@ -61,7 +99,7 @@ You'll also see:
 
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
-### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
+#### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
 You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Week of March 26, 2018
@@ -100,7 +138,7 @@ Note that although the default toggle status is displayed in the UI immediately 
 
 #### Enhanced jailbreak detection <!-- 846515 -->
 
-Enhanced jailbreak detection is a new compliance setting that improves how Intune evaluates jailbroken devices. The setting causes the device to check-in with Intune more frequently, which uses the device’s location services and impacts battery usage. This feature is temporarily hidden while we fix an issue.
+Enhanced jailbreak detection is a new compliance setting that improves how Intune evaluates jailbroken devices. The setting causes the device to check-in with Intune more frequently, which uses the device’s location services and impacts battery usage.
 
 #### Reset passwords for Android O devices <!-- 1238299 -->
 You'll be able to reset the passwords for enrolled Android 8.0 devices with Work profiles. When you send a "Reset password" request to an Android 8.0 device, it sets a new device unlock password or a managed profile challenge to the current user. The password or challenge is sent and immediately takes effect.
@@ -111,8 +149,8 @@ You can target compliance policies to users in user groups. With this update, yo
 
 #### New Management name column <!-- 1333586 -->
  A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula:
-- Default name for all devices: <username>_<devicetype>_<enrollmenttimestamp>
-- For bulk added devices: <PackageId/ProfileId>_<DeviceType>_<EnrollmentTime>
+- Default name for all devices: <username><em><devicetype></em><enrollmenttimestamp>
+- For bulk added devices: <PackageId/ProfileId><em><DeviceType></em><EnrollmentTime>
 
 This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
 
@@ -136,9 +174,6 @@ With this update, there is a new setting in **Android for Work** > **Device rest
 - Contact sharing via Bluetooth
 
 The Intune administrator can configure these settings to enable sharing. This is useful when pairing a device with a car-based Bluetooth device that displays caller ID for hands-free usage. When enabled, work profile contacts are displayed. When not enabled, work profile contacts won't display.
-
-#### Local device security option settings <!-- 1251887 -->
-You can now enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
 
 #### Configure Gatekeeper to control macOS app download source <!-- 1690459 -->
 
@@ -167,18 +202,18 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Block all incoming connections
 
    This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
-   - configd - implements DHCP and other network configuration services
-   - mDNSResponder - implements Bonjour
-   - racoon -  implements IPSec
+  - configd - implements DHCP and other network configuration services
+  - mDNSResponder - implements Bonjour
+  - racoon -  implements IPSec
 
-   To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
+    To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
 
 - Stealth mode
 
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
 
 #### Disable checks on device restart <!--1805490 -->
-Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the **Restart checks** property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select **Skip**.
+Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
 
 #### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
 You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
@@ -216,10 +251,10 @@ You can target MAM policies based on the management state of the device:
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
-#### Improvements to the language in the Company Portal app for Windows <!---1683758--->
+#### Improvements to the language in the Company Portal app for Windows <!-- 1683758 -->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company. To see some sample images of what we've done, see [what's new in app UI](whats-new-app-ui.md).
 
-#### New additions to our docs about user privacy <!---1440709--->
+#### New additions to our docs about user privacy <!-- 1440709 -->
 As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
 
 - **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
@@ -248,7 +283,7 @@ We've updated the Company Portal app for Android to follow Android's [Material D
 
 ### New Windows Defender Exploit Guard settings <!-- 1631893 -->
 
-Six new **Attack Surface Reduction** settings and expanded **Controlled folder access: Folder protection** capabilities are now available. These settings can be found at: Device configuration\Profiles\
+Six new <strong>Attack Surface Reduction</strong> settings and expanded <strong>Controlled folder access: Folder protection</strong> capabilities are now available. These settings can be found at: Device configuration\Profiles\
 Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 #### Attack Surface Reduction
@@ -263,9 +298,10 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard.
 
 #### Controlled folder access
 
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+|              Setting name               |                                                              Setting options                                                              | Description |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Folder protection (already implemented) | Not configured, Enable, Audit only (already implemented)<br><br> <strong>New</strong><br>Block disk modification, Audit disk modification |             |
+
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
@@ -355,9 +391,10 @@ of the parameters immediately after running the action to update the account/par
 
 ##### Controlled folder access
 
-|Setting name  |Setting options  |Description  |
-|---------|---------|---------|
-|Folder protection (already implemented)|Not configured, Enable, Audit only (already implemented)<br><br> **New**<br>Block disk modification, Audit disk modification|
+|              Setting name               |                                                              Setting options                                                              | Description |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Folder protection (already implemented) | Not configured, Enable, Audit only (already implemented)<br><br> <strong>New</strong><br>Block disk modification, Audit disk modification |             |
+
 Protect files and folders from unauthorized changes by unfriendly apps.<br><br>**Enable**: Prevent untrusted apps from modifying or deleting files in protected folders and from writing to disk sectors.<br><br>
 **Block disk modification only**:<br>Block untrusted apps from writing to disk sectors. Untrusted apps can still modify or delete files in protected folders.|
 
@@ -802,7 +839,7 @@ A new alert is available for Windows AutoPilot unassigned devices on the **Micro
 #### Refresh button for Devices list    <!-- 1333581 -->
 Because the Device list does not refresh automatically, you can use the new Refresh button to update the devices that display in the list.
 
-#### Support for Symantec Cloud Certification Authority (CA)  <!-- 1333638 -->    
+#### Support for Symantec Cloud Certification Authority (CA)  <!-- 1333638 -->    
 Intune now supports Symantec Cloud CA, which allows the Intune Certificate Connector to issue PKCS certificates from the Symantec Cloud CA to Intune managed devices. If you're already using the Intune Certificate Connector with Microsoft Certification Authority (CA), you can use the existing Intune Certificate Connector setup to add the Symantec CA support.
 
 #### New items added to device inventory   <!--1404455 -->
@@ -856,15 +893,15 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
-#### New device restriction settings for Windows 10      <!-- 1308850 -->
--    Messaging (mobile only) - disable testing or MMS messages
--    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
--    Display - settings to turn on or off GDI Scaling for legacy apps
+#### New device restriction settings for Windows 10      <!-- 1308850 -->
+-    Messaging (mobile only) - disable testing or MMS messages
+-    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
+-    Display - settings to turn on or off GDI Scaling for legacy apps
 
 #### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
-You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
+You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
 
-Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
+Kiosk mode supports two modes: **single app** (allows a user to run just one app) or **multi app** (permits access to a set of apps).  You define the user account and device name, which determines the supported apps).  When the user is logged in, they're limited to the defined apps.  To learn more, see [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). 
 
 Kiosk mode requires:
 
@@ -926,17 +963,14 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
+### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
+We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
 
-#### What do I need to do to prepare for this change?
+#### How does this affect me? 
+Our records indicate that you are using the Windows 10 > Device Restrictions > Kiosk (preview) setting. This will be renamed in May, to Windows 10 > Device Restrictions > Kiosk (obsolete) in the UI to indicate that it is no longer recommended for use. It will, however, continue to function until the July update to Intune. Then, it will be made obsolete in the backend and will no longer work. As an alternative, we’re releasing a new Device configuration profile in May: Windows 10 > Kiosk, containing the settings to configure Kiosks on Windows 10 RS4 and later.
 
-There is nothing you need to do to prepare for this change, since these are minor workflow UI updates.
-For more information on Microsoft’s GDPR compliance, please see the Trust Center accessible from the Additional Information link.
-
-
-
-### Plan for Change: Update where you Configure your App Protection Policies
-
-Starting in March of 2018, we’re going to temporarily redirect you from the Intune App Protection service blade in the Azure portal to the Mobile app blade within Intune in the Azure portal. Note that all of your App protection policies are already on the Mobile app blade in Intune under app configuration. Instead of going to Intune App Protection, you’ll just go to Intune. In April, we will stop the redirection and fully remove the Intune App Protection service blade, again it is duplicating what is now built into Intune.
+#### What do I need to do to prepare for this change?  
+When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
 #### How does this affect me?
 This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
@@ -948,14 +982,16 @@ Please tag Intune as a favorite instead of the Intune App Protection service bla
 
 ### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
-### How does this affect me?  
+
+#### How does this affect me?  
 If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
 - Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
 - Windows Phone 8.1 Company Portal app  
-  
+
 For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
-### What do I need to do to prepare for this change?  
-lease inform your end users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
+
+#### What do I need to do to prepare for this change?  
+Please inform your users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
 - Use the Feedback Hub app on Windows 10
 - Send an email to WinCPfeedback@microsoft.com  
 
@@ -976,21 +1012,24 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 
 ## What's coming
 
+### Local device security option settings <!-- 1251887 -->
+You'll be able to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
+
 ### New user experience update for the Company Portal website <!--2000968-->
 
 We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
--	UI improvements throughout the website
--	Ability to share direct links to apps
+-   UI improvements throughout the website
+-   Ability to share direct links to apps
 - Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
-Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
+Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
 
-We have made available a version of the Company Portal app for iOS through the Apple TestFlight program that enforces the new ATS requirements. If you would like to try it so you can test your ATS compliance, email <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a> with your first name, last name, email address, and company name. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
+
 
 ## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

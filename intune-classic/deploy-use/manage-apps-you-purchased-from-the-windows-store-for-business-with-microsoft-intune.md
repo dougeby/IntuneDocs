@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune console. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.
@@ -62,8 +62,8 @@ You can now continue, and set up synchronization in the Intune console.
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
 2. In the **Administration** workspace, expand **Mobile Device Management** > **Windows**, and then choose **Store for Business**.
 3. On the **Microsoft Store for Business** page, do the following:
- * If you haven't already done so, click the link to sign-up for the Microsoft Store for Business.
- * Once you are signed-up, choose **Configure Sync**.
+   * If you haven't already done so, click the link to sign-up for the Microsoft Store for Business.
+   * Once you are signed-up, choose **Configure Sync**.
 4. In the **Configure Microsoft Store for Business app sync** dialog box, select **Enable Microsoft Store for Business sync**.
 5. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business will be displayed in the Intune console. Regardless of the language in which they are displayed, they will be installed in the end user's language when available.
 6. Click **OK**.

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Use the SDK to enable apps for mobile application management
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the Microsoft Intune App SDK to let Intune manage certain features of your iOS or Android apps. After your app is enabled, you can deploy policies to the app. These policies use those features to help protect your corporate data. Examples of the types of protections that you can implement with the SDK are:
 

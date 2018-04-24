@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Email profile settings in Microsoft Intune for devices running iOS 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article shows you the email profile settings you can configure for your devices running iOS.
 
@@ -37,11 +37,12 @@ This article shows you the email profile settings you can configure for your dev
 - **Account name** - The display name for the email account as it appears to users on their devices.
 - **Username attribute from AAD** - This is the attribute in Active Directory (AD) or Azure AD, that is used to generate the username for this email profile. Select **Primary SMTP Address**, such as **user1@contoso.com** or **User Principal Name**, such as **user1** or **user1@contoso.com**.
 - **Email address attribute from AAD** - How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use **User Principal Name** to use the full principal name as the email address.
-- **Authentication method** - Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
+- **Authentication method** - Select either **Username and Password** or **Certificates** as the authentication method used by the email profile (**Note**: Azure Multi-factor authentication is not supported).
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
 - **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
 - **S/MIME** - Send outgoing email using S/MIME signing.
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
+	- If you choose a SCEP certificate, then be sure a valid Personal Information Exchange (PFX) certificate is installed on the device.
 - **Amount of email to synchronize** - Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts** - This allows users to move email messages between different accounts they have configured on their device.
 - **Allow email to be sent from third-party applications** - Allow the user to select this profile as the default account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.

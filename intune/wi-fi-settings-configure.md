@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # How to configure Wi-Fi settings in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users have access to your corporate Wi-Fi network without having to configure it themselves.
 
@@ -44,7 +44,7 @@ Wi-Fi profiles support the following device platforms:
 - Android 4 and later
 - Android for Work
 - iOS 8.0 and later
-- macOS (Mac OS X 10.9 and later)
+- macOS (Mac OS X 10.11 and later)
 
 For devices running Windows 8.1, Windows 10, Windows 10 Mobile, and Windows Holographic for Business, you can import a Wi-Fi configuration that was previously exported from another device.
 

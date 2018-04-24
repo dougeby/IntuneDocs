@@ -85,11 +85,11 @@ User affinity is required to support the following:
 
 5. After logging in, the user is prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device.
 
-  If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
+   If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
 
 6. On the next screen, the user must confirm the serial number of the new device. The user can tap the link **confirm the Serial Number** which will launch instructions to use the Settings app to verify the serial number. The user must then enter the last four characters of the serial number into the Company Portal app.
 
-  This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
+   This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
 
 7. After the serial number is verified, the Company Portal app redirects to the Company Portal website to finalize enrollment. Then the website prompts the user to return to the app.
 

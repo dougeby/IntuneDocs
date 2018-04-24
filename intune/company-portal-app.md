@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How to configure the Microsoft Intune Company Portal app
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.		
 
@@ -41,14 +41,14 @@ Customizing the Company Portal helps provide a familiar and helpful experience f
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the **Contact IT** screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.		
 
 
-|Field name|Max length|More information|		
-|-|-|-|		
-|**Company name**|40|This name is displayed as the title of the Company Portal.|		
-|**IT department contact name**|40|This name is displayed on the **Contact IT** page.|		
-|**IT department phone number**|20|This contact number is displayed on the **Contact IT** page.|		
-|**IT department email address**|40|This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format **alias@domainname.com**.|		
-|**Additional information**|120|Displayed on the **Contact IT** page.|		
-|**Company privacy statement URL**|79|You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format **https://www.contoso.com**.|		
+|                   Field name                   | Max length |                                                                                                 More information                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>Company name</strong>          |     40     |                                                                            This name is displayed as the title of the Company Portal.                                                                            |
+|  <strong>IT department contact name</strong>   |     40     |                                                                         This name is displayed on the <strong>Contact IT</strong> page.                                                                          |
+|  <strong>IT department phone number</strong>   |     20     |                                                                    This contact number is displayed on the <strong>Contact IT</strong> page.                                                                     |
+|  <strong>IT department email address</strong>  |     40     |                       This contact address is displayed on the <strong>Contact IT</strong> page. You must enter a valid email address in the format <strong>alias@domainname.com</strong>.                       |
+|    <strong>Additional information</strong>     |    120     |                                                                                Displayed on the <strong>Contact IT</strong> page.                                                                                |
+| <strong>Company privacy statement URL</strong> |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format <strong><https://www.contoso.com></strong>. |
 
 ## Support contacts		
 The support website is displayed to users in the Company Portal to enable them to access online support.		

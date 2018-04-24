@@ -4,14 +4,17 @@
 title: Use managed apps on your Android device | Microsoft Docs
 description:
 keywords:
-author: lenewsadms.author: lanewsad
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2searchScope: - User help
+ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -68,11 +71,7 @@ Some common apps that your IT department might manage are:
 
 -   Intune Managed Browser
 
--   Intune image Viewer
-
--   Intune PDF Viewer
-
--   Intune AV player
+-   Microsoft Azure Information Protection Viewer
 
 -   Microsoft Word, Excel, and PowerPoint
 

@@ -70,9 +70,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2. In the Application Configuration section, enter the following setting:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
+   The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |

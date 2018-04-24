@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up enrollment for Windows devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This topic helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
@@ -54,7 +54,7 @@ Organizations that can use automatic enrollment can also configure [bulk enroll 
 **Multi-user support**<br>
 Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. When standard users log on with their Azure AD credentials, they receive apps and policies assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## Simplify Windows enrollment without Azure AD Premium
 You can simplify enrollment for your users by creating a domain name server (DNS) alias (CNAME record type) that automatically redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.

@@ -40,7 +40,7 @@ Microsoft Intune helps you enable your workforce with mobile devices while keepi
 | Passwords to your personal accounts | Device name |
 | Calendar events | Manufacturer (for devices not made by Apple) |
 | Pictures, including what's in the photos app or camera roll | Phone number (for work devices, the whole number. For personal devices, just the last four digits.) |
-​
+
 ## How do I enroll a device?
 
 Enrolling a device is the first experience that many end users will have with accessing corporate resources. [Understanding that experience](end-user-educate.md) can help make a potentially unpleasant experience into a better one.

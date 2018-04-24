@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Automatically enroll iOS devices by using Apple's Device Enrollment Program
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### Temporary user interface differences
@@ -82,11 +82,11 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
 
-  ![Enrollment Program Token pane in Apple Certificates workspace](./media/enrollment-program-token-add.png)
+   ![Enrollment Program Token pane in Apple Certificates workspace](./media/enrollment-program-token-add.png)
 
 2. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
-  ![Enrollment Program Token pane in Apple Certificates workspace to download public key](./media/enrollment-program-token-download.png)
+   ![Enrollment Program Token pane in Apple Certificates workspace to download public key](./media/enrollment-program-token-download.png)
 
 **Step 2. Create and download an Apple DEP token.**<br>
 1. Choose **Create a token via Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
@@ -126,37 +126,37 @@ Now that you've installed your token, you can create an enrollment profile for D
 2. Under **Enrollment Program for Apple**, choose **Enrollment Program Profiles** > **Create**.
 3. On **Create Enrollment Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  For **User Affinity**, choose whether devices with this profile enroll with or without an assigned user.
+   For **User Affinity**, choose whether devices with this profile enroll with or without an assigned user.
 
- - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+   - **Enroll with user affinity** - Choose for devices that belong to users and that need to use the company portal for services like installing apps. User affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Enroll without user affinity** - Choose for device unaffiliated with a single user. Use for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
+   - **Enroll without user affinity** - Choose for device unaffiliated with a single user. Use for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
 4. Choose **Device Management Settings** to configure the following profile settings:
 
-  ![Choosing the management mode](./media/enrollment-program-profile-mode.png)
-  - **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
+   ![Choosing the management mode](./media/enrollment-program-profile-mode.png)
+   - **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
 
- > [!NOTE]
- > Configuring a device for supervised mode cannot be done using Intune after a device has been enrolled. After enrollment, the only way to enable supervised mode is to connect an iOS device to a Mac with a USB cable and use Apple Configurator. This will reset the device and configure it in supervised mode. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3). A supervised device will say that "This iPhone is managed by Contoso." on the lock screen, and "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." in **Settings** > **General** > **About**.
+   > [!NOTE]
+   > Configuring a device for supervised mode cannot be done using Intune after a device has been enrolled. After enrollment, the only way to enable supervised mode is to connect an iOS device to a Mac with a USB cable and use Apple Configurator. This will reset the device and configure it in supervised mode. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3). A supervised device will say that "This iPhone is managed by Contoso." on the lock screen, and "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." in **Settings** > **General** > **About**.
 
-  - **Locked enrollment** - (Requires Management Mode = supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
+   - **Locked enrollment** - (Requires Management Mode = supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. After device enrollment, you cannot change this setting without factory resetting the device.
 
-  - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
+   - **Enable Shared iPad** - Apple's Device Enrollment Program does not support shared iPad.
 
-  - **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+   - **Allow Pairing** - Specifies whether iOS devices can sync with computers. If you chose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-  - **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
+   - **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, choose an Apple Configurator Certificate to import.
 
-  Choose **Save**.
+   Choose **Save**.
 
 5. Choose **Setup Assistant Settings** to configure the following profile settings:
 
-  ![Choosing the configure settings with available settings for a new enrollment program profile](./media/enrollment-program-profile-settings.png)
-  - **Department Name** - Appears when users tap **About Configuration** during activation.
+   ![Choosing the configure settings with available settings for a new enrollment program profile](./media/enrollment-program-profile-settings.png)
+   - **Department Name** - Appears when users tap **About Configuration** during activation.
 
-  - **Department Phone** - Appears when the user clicks the **Need Help** button during activation.
-    - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
+   - **Department Phone** - Appears when the user clicks the **Need Help** button during activation.
+     - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
         - **Passcode**
         - **Location Services**
         - **Restore**
@@ -168,16 +168,19 @@ Now that you've installed your token, you can create an enrollment profile for D
         - **Siri**
         - **Diagnostic Data**
 
-    Choose **Save**.
+     Choose **Save**.
 
-9. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
+>[!NOTE]
+>Starting with iOS 11, if you want to enable restore from iCloud backup you must show both "Restore" and "Apple ID" under Setup Assistant Options.
+
+6. To save the profile settings, choose **Create** on the **Create Enrollment Profile** blade. The enrollment profile appears in the Apple Enrollment Program Enrollment Profiles list.
 
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment Program Devices** > **Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
-  ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
+   ![Enrollment Program Devices node selected and Sync link being chosen](./media/enrollment-program-device-sync.png)
 
 2. On the **Sync** blade, choose **Request Sync**. The progress bar shows the amount of time you must wait before requesting Sync again.
 
@@ -199,15 +202,15 @@ You must assign an enrollment program profile to devices before they can enroll.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment**, and then choose **Enrollment Program Profiles**.
 2. From the list of **Enrollment Program Profiles**, choose the profile you want to assign to devices and then choose **Assign devices**.
 
- ![Device Assignments with Assign selected](./media/enrollment-program-device-assign.png)
+   ![Device Assignments with Assign selected](./media/enrollment-program-device-assign.png)
 
 3. Choose **Assign** and then choose the devices you want to assign this profile. You can filter to view available devices:
-  - **unassigned**
-  - **any**
-  - **&lt;profile name&gt;**
+   - **unassigned**
+   - **any**
+   - **&lt;profile name&gt;**
 4. Choose the devices you want to assign. The checkbox above the column selects up to 1000 listed devices, and then click **Assign**. To enroll more than 1000 devices, repeat the assignment steps until all devices are assigned an enrollment profile.
 
-  ![Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
+   ![Assign button for assigning enrollment program profile in Intune](media/dep-profile-assignment.png)
 
 ## Distribute devices
 You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.

@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # How to configure Windows 10 education settings in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Education profiles let you specify details that configure the Windows Take a Test app including account details, and the test URL. When you configure this, the Take a Test app opens with the test you specify, and no other apps can be run on the device until the test is complete.
 

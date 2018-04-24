@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Add app configuration policies for managed apps without device enrollment
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can use app configuration policies with managed apps that support the Intune App SDK, even on devices that are not enrolled. 
 

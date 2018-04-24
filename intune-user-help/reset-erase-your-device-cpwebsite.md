@@ -40,17 +40,17 @@ If you reset your device, it will no longer be listed in the Company Portal, and
 
 To reset your device:
 
-1.	On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button, then select __My Devices__.
+1. On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button, then select __My Devices__.
 
 2. On the __My Devices__ page, select the name of the device you want to rename.
 
-  ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.	The device will open in a popup window. Tap the **Reset** button.
+3. The device will open in a popup window. Tap the **Reset** button.
 
-	![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
+   ![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
 
-4.  A warning message will appear to let you know that you are about to erase all content on your device by resetting it to the factory default settings. Tap **Reset** to confirm that this is what you want to do.
+4. A warning message will appear to let you know that you are about to erase all content on your device by resetting it to the factory default settings. Tap **Reset** to confirm that this is what you want to do.
 
 Your device has now been reset.
 

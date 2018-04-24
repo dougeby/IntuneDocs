@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot email profiles in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Listed here are some email profile issues and how to troubleshoot and resolve them.
 

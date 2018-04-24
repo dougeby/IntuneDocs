@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Choose how to manage devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 To take advantage of the many features that Intune offers, such as app deployment and control of device settings, your devices must be *managed*. How you manage devices depends on the Intune capabilities you want to use. This topic helps you choose the method that meets your needs.
 

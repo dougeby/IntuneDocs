@@ -26,7 +26,7 @@ ms.custom: intune-classic
 ---
 # What to expect when using an app with app-based CA
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 App-based CA verifies the identity of the approved application by means of a broker app that must be present on the device:
 *  On **iOS**, the **Azure Authenticator app** is the broker app.
@@ -43,8 +43,8 @@ The following is a list of properties that are directly derived from the device:
 
 > [!NOTE]
 > On Android devices:
-  * It is required that the Company Portal app is installed on the device, but end-user is not required to log in into app.
-  * Device registration must be done through the OneDrive or Outlook app.
+>   * It is required that the Company Portal app is installed on the device, but end-user is not required to log in into app.
+>   * Device registration must be done through the OneDrive or Outlook app.
 
 ## To remove a device from Azure AD registration.
 You can remove the device registration either through the Azure AD admin console which is typically done by the IT admin.  It can also be done by the end-user on the device itself.
@@ -55,7 +55,7 @@ You can remove the device registration either through the Azure AD admin console
 
 ## App-based CA with Device-based CA  
 
-You can configure [Conditional access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) on the [Intune administrator console](https://manage.microsoft.com) or the [Azure AD Premium management console] (https://manage.windowsazure.com). Device CA require users to connect to Exchange Online only through Intune-managed  devices that are compliant with the Intune device compliance policy or domain-joined PCs.  If a user belongs to one or more security groups that are targeted for both app-based CA and Device CA policies, the user must meet one of the two requirements:
+You can configure [Conditional access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>Device CA</strong>) on the [Intune administrator console](https://manage.microsoft.com) or the [Azure AD Premium management console](https://manage.windowsazure.com). Device CA require users to connect to Exchange Online only through Intune-managed  devices that are compliant with the Intune device compliance policy or domain-joined PCs.  If a user belongs to one or more security groups that are targeted for both app-based CA and Device CA policies, the user must meet one of the two requirements:
 * The app used to access the service is a mobile app that is supported by 
 * , and the device that the app is running on, has **iOS Authenticator (for iOS devices)**, or the **Company Portal app (for Android devices)** installed.
 * The device used to access the service is **Intune-managed and compliant** with the Intune device compliance policy, or it is a **domain-joined PC**.  Here are some examples to help illustrate this:

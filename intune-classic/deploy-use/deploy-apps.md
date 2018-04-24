@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Deploy apps with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic explains some of the concepts you need to understand before you start deploying apps with Microsoft Intune.
 
@@ -41,7 +41,7 @@ When you deploy apps, you can choose from one of the following deployment action
     > [!TIP]
     > For iOS devices that are not in supervised mode, and for all Android devices, the user must accept the app offer before it is installed.
     >
-	>  If a user uninstalls an app that you deployed as a required install, Intune automatically reinstalls the app after the next inventory cycle, which typically occurs every seven days.
+    >  If a user uninstalls an app that you deployed as a required install, Intune automatically reinstalls the app after the next inventory cycle, which typically occurs every seven days.
 
 -   **Available install** – The app is displayed in the company portal, and users can install it on demand.
 
@@ -51,18 +51,19 @@ When you deploy apps, you can choose from one of the following deployment action
 
 #### Understand which deployment actions are available for each installer type
 
-|Installer type|Required install|Available install|Uninstall|Not applicable|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Windows app package (deployed to a user group)|Yes|Yes|Yes|Yes|
-|Windows app package (deployed to a device group)|Yes|No|Yes|Yes|
-|App package for mobile devices (deployed to a user group)|Yes|Yes|Yes|Yes|
-|App package for mobile devices (deployed to a device group)|Yes|No|Yes|Yes|
-|Windows Installer (deployed to a user group)|No|Yes|No|Yes|
-|Windows Installer (deployed to a device group)|Yes|No|Yes|Yes|
-|External link (deployed to a user group)|No|Yes|No|Yes|
-|External link (deployed to a device group)|No|No|No|No|
-|Managed iOS app from the app store (deployed to a user group)|Yes|Yes|Yes|Yes|
-|Managed iOS app from the app store (deployed to a device group)|Yes|No|Yes|Yes|
+|                         Installer type                          | Required install | Available install | Uninstall | Not applicable |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Windows app package (deployed to a user group)          |       Yes        |        Yes        |    Yes    |      Yes       |
+|        Windows app package (deployed to a device group)         |       Yes        |        No         |    Yes    |      Yes       |
+|    App package for mobile devices (deployed to a user group)    |       Yes        |        Yes        |    Yes    |      Yes       |
+|   App package for mobile devices (deployed to a device group)   |       Yes        |        No         |    Yes    |      Yes       |
+|          Windows Installer (deployed to a user group)           |        No        |        Yes        |    No     |      Yes       |
+|         Windows Installer (deployed to a device group)          |       Yes        |        No         |    Yes    |      Yes       |
+|            External link (deployed to a user group)             |        No        |        Yes        |    No     |      Yes       |
+|           External link (deployed to a device group)            |        No        |        No         |    No     |       No       |
+|  Managed iOS app from the app store (deployed to a user group)  |       Yes        |        Yes        |    Yes    |      Yes       |
+| Managed iOS app from the app store (deployed to a device group) |       Yes        |        No         |    Yes    |      Yes       |
+
 > [!TIP]
 > When you deploy apps, if you select both user and device groups, you can only deploy the app as an **Available install**.
 

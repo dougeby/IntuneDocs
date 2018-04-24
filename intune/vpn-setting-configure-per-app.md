@@ -31,6 +31,14 @@ ms.custom: intune-azure
 
 You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
 
+Per-App VPN is currently available for the following providers: 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
+
 ## Prerequisites for the Per-App VPN
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
@@ -43,7 +51,7 @@ Export the certificate and add the CA.
 4. Add the name of the CA that issued the certificate for authentication to the VPN server.
     If the CA presented by the device matches one of the CAs in the Trusted CA list on the VPN server, then the VPN server successfully authenticates the device.
 
-## Create a  group for your VPN users
+## Create a group for your VPN users
 
 Create or choose an existing group in Azure Active Directory (Azure AD) to contain the members who have access to the per-App VPN.
 
@@ -73,7 +81,7 @@ Import the VPN server's root certificate issued by the CA into a profile created
 4. Click the folder icon and browse to your VPN certificate (.cer file) that you exported from your VPN administration console. Click **OK**.
 5. Click **Create**.
 
-    ![Create a trusted certificate profile](media\vpn-per-app-create-trusted-cert.png)
+    ![Create a trusted certificate profile](./media/vpn-per-app-create-trusted-cert.png)
 
 ## Create a SCEP certificate profile
 
@@ -100,7 +108,7 @@ The trusted root certificate profile allows the iOS to automatically trust the V
 14. Click **OK**.
 15. Click **Create**.
 
-    ![Create a SCEP certificate profile](media\vpn-per-app-create-scep-cert.png)
+    ![Create a SCEP certificate profile](./media/vpn-per-app-create-scep-cert.png)
 
 ## Create a Per-App VPN profile
 
@@ -129,7 +137,7 @@ The VPN profile contains the SCEP certificate carrying the client credentials, t
 6. Click **OK**.
 7. Click **Create**.
 
-    ![Create a Per-App VPN profile](media\vpn-per-app-create-vpn-profile.png)
+    ![Create a Per-App VPN profile](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## Associate an app with the VPN profile
@@ -152,7 +160,7 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 9. Click **OK** and click **Save**.
 
-    ![Associate an app with the VPN](media\vpn-per-app-app-to-vpn.png)
+    ![Associate an app with the VPN](./media/vpn-per-app-app-to-vpn.png)
 
 ## Verify the connection on the iOS device
 
