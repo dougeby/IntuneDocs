@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of April 23, 2018
+
+#### Advanced Threat Protection (ATP) and Intune are fully integrated <!-- EEready 1629303 -->
+
+In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) conditional access policy can then block access to different apps within your organization.
+
+This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
+
+See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
+
 ## Week of April 16, 2018
 
 #### Use Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
@@ -157,8 +168,6 @@ This is an optional column in the devices blade. It isn't available by default a
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
-
-
 #### Schedule your automatic updates <!--1805514 -->
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
 
@@ -196,6 +205,10 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Allow or block specific apps
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
+
+####  Detailed error codes and messages <!-- 1376342 -->
+
+In your Device Configuration, there is more detailed error codes and error messages available to see. This improved reporting shows the settings, the state of these settings, and details on troubleshooting.
 
 ##### More information
 
