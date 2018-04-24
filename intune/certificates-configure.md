@@ -46,7 +46,7 @@ Each of these certificate types has its own prerequisites and infrastructure req
 2. Install a root certificate or an intermediate Certification Authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To do this, create and assign a **trusted certificate profile**. When you assign this profile, the devices that you manage with Intune request and receive the root certificate. You must create a separate profile for each platform. Trusted certificate profiles are available for the following platforms:
 
 	- iOS 8.0 and later
-	- macOS 10.9 and later
+	- macOS 10.11 and later
 	- Android 4.0 and later
 	- Android for Work
 	- Windows 8.1 and later
