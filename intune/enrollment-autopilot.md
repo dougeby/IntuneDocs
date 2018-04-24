@@ -29,9 +29,11 @@ The Windows AutoPilot Deployment Program simplifies device provisioning. Buildin
 You can add Windows AutoPilot devices by importing a CSV file with their information.
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > **Import**.
+
     ![Screenshot of Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
 2. Under **Add Windows Autopilot devices**, browse to a CSV file containing the serial numbers, Windows product IDs, and hardware hashes of the devices you want to add.
+
     ![Screenshot of Adding Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
 3. Choose **Import** to start importing the device information. This can take several minutes.
