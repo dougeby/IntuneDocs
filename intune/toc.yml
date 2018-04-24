@@ -698,6 +698,8 @@
         href: reports-ref-user-device.md
       - name: Reference for user entity
         href: reports-ref-user.md
+    - name: Move your Intune Data Warehouse account data
+      href: data-warehouse-account-move.md
   - name: Use Azure AD to access Intune APIs in Microsoft Graph
     href: intune-graph-apis.md
     items:
