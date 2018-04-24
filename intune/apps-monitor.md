@@ -34,7 +34,7 @@ Intune provides a number of ways to monitor the properties of apps you manage, a
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Microsoft Intune** menu, select **Mobile apps**.
+3. In the **Intune** menu, select **Mobile apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the list of apps, select an app to monitor. You'll then see the app pane, with an overview of the device status and the user status.
 
