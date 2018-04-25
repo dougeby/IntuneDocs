@@ -158,7 +158,7 @@ Admins can now block web results from searches made on a device.
 
 The error message explains that the same Apple ID must be used when renewing an existing MDM certificate.
 
-#### Test the Company Portal for macOS on virtual machines <!---2216679--->
+#### Test the Company Portal for macOS on virtual machines <!-- 2216679 -->
 
 We've published guidance to help IT admins test the Company Portal app for macOS on virtual machines in Parallels Desktop and VMware Fusion. Find out more in [enroll virtual macOS machines for testing](macos-enroll.md#enroll-virtual-macos-machines-for-testing).
 
