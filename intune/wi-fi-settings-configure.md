@@ -5,8 +5,8 @@ title: How to configure Intune Wi-Fi settings
 titleSuffix: Microsoft Intune
 description: Learn how to use Microsoft Intune to configure Wi-Fi connections on devices you manage.
 keywords:
-author: mandia
-ms.author: MandiOhlinger
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article

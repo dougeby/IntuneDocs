@@ -5,8 +5,8 @@ title: Configure Microsoft Intune Wi-Fi settings for devices running iOS
 titleSuffix:
 description: Learn Intune Wi-Fi configuration settings on devices running iOS
 keywords:
-author: mandia
-ms.author: MandiOhlinger
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
