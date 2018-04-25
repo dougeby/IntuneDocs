@@ -5,8 +5,8 @@ title: Microsoft Intune email settings for iOS devices
 titleSuffix:
 description: Learn the Microsoft Intune settings you can use to configure email settings on devices running iOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
