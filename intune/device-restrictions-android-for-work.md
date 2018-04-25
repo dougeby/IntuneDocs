@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/23/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,7 +61,7 @@ This article lists the Microsoft Intune device restrictions settings that you ca
 
 - **Display work contact caller-id in personal profile**: When enabled (Not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. Applies to Android OS v6.0 and newer versions.
 
-- **Camera**: Blocks the camera on the device in the work profile. This setting blocks access to all cameras on the device.
+- **Camera**: Blocks the camera on the device in the work profile. The camera on the personal side is not affected by the setting.
 
 ### Work profile password
 
