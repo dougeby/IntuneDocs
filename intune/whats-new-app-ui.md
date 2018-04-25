@@ -35,7 +35,7 @@ Learn what updates have been made to the UI for apps that your end users will se
 #### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
 The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. 
 
-![Screenshot of the Company Portal app dashboard showing the Fluent Design navigation view](./media/1804_WindowsPC_Fluent_01.png)
+![Screenshot of the Company Portal app dashboard showing the Fluent Design navigation view](./media/1804_WindowsCP_Fluent_01.png)
 
 
 ## Week of April 2, 2018
