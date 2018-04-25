@@ -179,17 +179,17 @@ Windows Holographic for Business uses the **Windows 10 and later** platform. Win
 To verify device encryption on the Microsoft HoloLens, see [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
 ## Surface Hub
-Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AD)).
+Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AAD)) and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure Active Directory joined for compliance and conditional access to function.
 
 See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 
-## Assign user groups
+## Assign user or device groups
 
 1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
 2. Choose the policy, and choose **Assignments**. You can include or exclude Azure AD security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
+3. Choose **Selected groups** to see your Azure AD security groups. Select the user or device groups you want this policy to apply, and choose **Save** to deploy the policy.
 
-You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
+You have applied the policy. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
