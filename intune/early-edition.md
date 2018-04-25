@@ -46,12 +46,6 @@ This page is updated periodically. Check back for additional updates.
 
 
 
-###  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
-Two new properties will be available to block when you configure device restrictions for Android devices: 
-- Camera: Blocks access to all cameras on the device
-- Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
-
-Applies to Android for Work.
 
 ### Additions to Local Device Security Options settings <!-- 1403702 -->
 You will be able to configure additional Local Device Security Options settings for Windows 10 devices. Additional settings will be available in the areas of Microsoft Network Client, Microsoft Network Server, Network access and security, and Interactive logon. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
