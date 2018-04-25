@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 The endpoint protection profile lets you control security features on Windows 10 devices, like BitLocker and Windows Defender.
 
-Use the information in this article to learn how to create endpoint protection profiles. For information on how to configure Windows Defender Antivirus, see the Windows 10 Device Restrictions topic: https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus. 
+Use the information in this article to create endpoint protection profiles. To configure Windows Defender Antivirus, see [Windows 10 Device Restrictions](https://docs.microsoft.com/en-us/intune/device-restrictions-windows-10#windows-defender-antivirus). 
 
 > [!Note]
 > These settings are not supported on the Home and Professional editions of Windows 10.
