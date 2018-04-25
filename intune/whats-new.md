@@ -115,6 +115,12 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
+####  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
+Two new properties are available to block when you configure device restrictions for Android devices: 
+- Camera: Blocks access to all cameras on the device
+- Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
+
+Applies to Android for Work.
 
 
 ### Device enrollment
