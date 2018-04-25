@@ -5,8 +5,8 @@ title: Microsoft Intune custom settings for devices running Windows 10
 titlesuffix:
 description: Learn about the custom settings you can configure in a Windows 10 custom profile.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
