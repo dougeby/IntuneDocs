@@ -5,8 +5,8 @@ title: Monitor device compliance
 titlesuffix: "Microsoft Intune"
 description: Learn how to monitor device compliance."
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article

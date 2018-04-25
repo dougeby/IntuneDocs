@@ -99,6 +99,7 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 ## Apps and Traffic Rules
 
 **Restrict VPN connection to these apps**: Enable this setting if you only want some apps to use the VPN connection.
+
 **Associated Apps**: Enter a list of apps that automatically use the VPN connection. The type of app determines the app identifier. For a universal app, enter the package family name. For a desktop app, enter the file path of the app.
 
 >[!IMPORTANT]

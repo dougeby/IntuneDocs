@@ -5,8 +5,8 @@ title: Getting started with Microsoft Intune in the Azure portal
 titlesuffix:
 description: Learn about creating, sharing, and navigating dashboards for Microsoft Intune in the Azure portal.
 keywords:
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article

@@ -5,8 +5,8 @@ title: Microsoft Intune custom settings for devices running Windows Phone 8.1
 titleSuffix:
 description: Learn about the settings you can use in a Windows Phone 8.1 custom profile.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
