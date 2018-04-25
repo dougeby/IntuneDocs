@@ -175,6 +175,18 @@ We've published guidance to help IT admins test the Company Portal app for macOS
 
 The tiles have been updated to be more accessible to low-vision users and to perform better for screen reading tools.
 
+#### Send diagnostic reports in Company Portal app for macOS <!-- 2216677 -->
+The Company Portal app for macOS devices was updated to improve how users report Intune-related errors. From the Company Portal app, your employees can:
+
+- Upload diagnostic reports directly to the Microsoft developer team.
+- Email an incident ID to your company's IT support team.
+
+For more information see [Send errors for macOS](/intune-user-help/send-errors-macos.md).
+
+#### Intune adapts to Fluent Design System in the Company Portal app for Windows 10 <!-- 1195010 WNready -->
+The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
+
+
 
 
 ## Week of April 16, 2018

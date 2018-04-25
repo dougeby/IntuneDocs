@@ -59,11 +59,6 @@ New rules will be available that let you automatically remove devices that haven
 ### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
 You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows AutoPilot profiles** > **Create New** > **Enrollment settings**. 
 
-### Send diagnostic reports in Company Portal app for macOS <!-- 2216677 -->
-The Company Portal app for macOS devices will be updated to improve how users report Intune-related errors. From the Company Portal app, your employees will be able to:
-- Upload diagnostic reports directly to the Microsoft developer team.
-- Email an incident ID to your company's IT support team.
-
 
 <!-- 1803 start -->
 
