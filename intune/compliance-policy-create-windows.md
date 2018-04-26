@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -126,23 +126,23 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
 ### Device properties
 
-- **Minimum OS required**: Enter the major.minor.build.CU number. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
+- **Minimum OS version**: Enter the minimum allowed version, in the major.minor.build.CU number format. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
 
   When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
-- **Maximum OS version allowed**: Enter the major.minor.build.CU number. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
+- **Maximum OS version**: Enter the maximum allowed version, in the major.minor.build.CU number format. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-- **Minimum OS required for mobile devices**: Enter the major.minor.build number.
+- **Minimum OS required for mobile devices**: Enter the minimum allowed version, in the major.minor.build number format.
 
   When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
-- **Maximum OS required for mobile devices**: Enter the major.minor.build number.
+- **Maximum OS required for mobile devices**: Enter the maximum allowed version, in the major.minor.build number.
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum.
+- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum. You can also **Export** a comma separated values file list of these acceptable OS build numnbers.
 
 ### System security settings
 
