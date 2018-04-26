@@ -33,13 +33,14 @@ You can specify which managed apps can use your Virtual Private Network (VPN) on
 
 Per-App VPN is currently available for the following providers: 
 
- - Pulse Connect Secure
  - Checkpoint Remote Access VPN
+ - Cisco AnyConnect
  - F5
+ - Pulse Connect Secure
  - SonicWall
 
 
-## Prerequisites for the Per-App VPN
+## Prerequisites for Per-App VPN
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
