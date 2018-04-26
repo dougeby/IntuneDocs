@@ -89,6 +89,8 @@ To use device compliance policies, the following are required:
 
 - To report their compliance status, devices must be enrolled in Intune
 
+- Devices enrolled to one user or devices with no primary user are supported. Multiple user contexts are not supported.
+
 ## How Intune device compliance policies work with Azure AD
 
 When a device is enrolled in Intune, the Azure AD registration process starts, and updates the device attributes into Azure AD. One key piece of information is the device compliance status. This compliance status is used by conditional access policies to block or allow access to e-mail and other corporate resources.
