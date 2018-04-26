@@ -142,7 +142,7 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum. You can also **Export** a comma separated values file list of these acceptable OS build numnbers.
+- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum. You can also **Export** a comma separated values (CSV) file list of these acceptable OS build numbers.
 
 ### System security settings
 
