@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Skycure Mobile Threat Defense connector
+# Symantec Endpoint Protection Mobile connector
 
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Symantec Endpoint Protection Mobile (SEP Mobile), a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running SEP Mobile, including:
 
@@ -39,11 +39,11 @@ You can control mobile device access to corporate resources using conditional ac
 
 -   Vulnerabilities defense
 
-You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use conditional access policies to allow or block noncompliant devices' access to corporate resources based on detected threats.
+You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use conditional access policies to allow or block noncompliant device access to corporate resources based on detected threats.
 
 ## How do Intune and SEP Mobile help protect your company resources?
 
-SEP Mobile app for Android or iOS captures file system, network stack, device and application telemetry where available, then sends it to the SEP Mobile cloud service to assess the device's risk for mobile threats.
+SEP Mobile app for Android or iOS captures file system, network stack, device and application telemetry where available, then sends it to the Symantec cloud service to assess the device's risk for mobile threats.
 
 The Intune device compliance policy includes a rule for SEP Mobile, which is based on the SEP Mobile risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 

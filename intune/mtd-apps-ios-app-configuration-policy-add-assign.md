@@ -140,13 +140,13 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 -   You need to **download** the iOS app configuration policy file: 
     -   Go to [Symantec Endpoint Protection Management console](https://aad.skycure.com) and sign in with your admin credentials.
 
-    -   Go to **Settings**, and under **Integrations**, choose **EMM Integration Selection**. Choose **Microsoft Intune**, and then save your selection.
+    -   Go to **Settings**, and under **Integrations**, choose **Intune**. Choose **EMM Integration Selection**. Choose **Microsoft**, and then save your selection.
 
     -   Click the **Integration setup files** link and save the generated \*.zip file. The .zip file contains the ***.plist** file that will be used to create the iOS app configuration policy in Intune.
 
-    -   See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Skycure iOS app configuration policy.
+    -   See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the SEP Mobile iOS app configuration policy.
 
-    - On **step 8**, use the option **Enter XML data**, copy the content from the ***.plist** file and paste its content into the configuration policy body.
+    - On **step 8**, use the option **Enter XML data**, copy the content from the ***.plist** file, and paste its content into the configuration policy body.
 
 > [!NOTE]
 > If you are unable to retrieve the files, contact [Symantec Endpoint Protection Mobile Enterprise Support](https://support.symantec.com/en_US/contact-support.html).
