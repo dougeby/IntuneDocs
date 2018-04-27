@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,47 +44,8 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1804 start -->
 
-### Show caller ID in personal profile - Android for Work <!--1098984 -->
-When using a personal profile on a device, end-users may not see the caller ID details from a work contact. 
 
-With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
-- Display work contact caller-id in personal profile
 
-When enabled (not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. 
-
-Applies to: Android work profile devices on Android OS v6.0 and newer
-
-### New Windows Defender Credential Guard settings added to endpoint protection settings <!--1102252 --><!--from 1802-->
-
-New [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) settings will be added to **Device configuration** > **Profiles** > **Endpoint protection**. The following settings will be added:
-
-- Platform Security Level: specify whether Platform Security Level is enabled at the next reboot. Virtualization-based security requires Secure Boot. Virtualization-based security can optionally be enabled with the use of direct memory access (DMA) protections. DMA protections require hardware support and will only be enabled on correctly configured devices.
-- Virtualization Based Security: specify whether virtualization-based security is enabled at the next reboot.
-- Windows Defender Credential Guard: turn on Credential Guard with virtualization-based security to help protect credentials at the next reboot when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Options available include **Disabled**, **Enabled with UEFI lock**, **Enabled without lock**, and **Not configured**.
-  - The "Disabled" option turns off Credential Guard remotely if it was previously turned on with the "Enabled without lock" option.
-
-  - The "Enabled with UEFI lock" option ensures that Credential Guard cannot be disabled with registry key or by using Group Policy. To disable Credential Guard after using this setting, you must set the Group Policy to "Disabled" and remove the security functionality from each computer, with a physically present user, in order to clear configuration persisted in UEFI. As long as the UEFI configuration persists Credential Guard is enabled.
-
-  - The "Enabled without lock" option allows Credential Guard to be disabled remotely by using Group Policy. The devices that use this setting must be running at least Windows 10 (Version 1511).
-
-  - The "Not Configured" option leaves the policy setting undefined. Group Policy does not write the policy setting to the registry, and so it has no impact on computers or users. If there is a current setting in the registry it will not be modified.
-
-### Passcode support for MAM PIN on Android<!-- 1438086 -->
-
-Intune admins will be able to set an application launch requirement to enforce a passcode instead of a numeric MAM PIN. If configured, the user will be required to set and use a passcode when prompted before getting access to MAM-enlightened applications. A passcode is defined as a numeric PIN with at least one special character or upper/lowercase alphabet. Intune supports passcode in a similar way to the existing numeric PIN... being able to set a minimum length, allowing repeat characters and sequences through the admin console. This feature requires the latest version of Company Portal on Android. This feature is already available for iOS.
-
-###  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
-Two new properties will be available to block when you configure device restrictions for Android devices: 
-- Camera: Blocks access to all cameras on the device
-- Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
-
-Applies to Android for Work.
-
-### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
-Microsoft Intune will provide the capability to install macOS LOB apps from the Azure portal. You will be able to add a macOS LOB app to Intune after it has been pre-processed by the tool available in GitHub. In the Azure portal, choose **Mobile apps** from the **Intune** blade. On the **Mobile apps** blade, choose **Apps** > **Add**. On the **Add App** blade, select **Line-of-business app**. 
-
-### Support for user-less devices <!-- 1637553 -->
-Intune will support the ability to evaluate compliance on a user-less device, such as the Microsoft Surface Hub. Compliance policy can target specific devices. So compliance (and noncompliance) can be determined for devices that don't have an associated user.
 
 ### Additions to Local Device Security Options settings <!-- 1403702 -->
 You will be able to configure additional Local Device Security Options settings for Windows 10 devices. Additional settings will be available in the areas of Microsoft Network Client, Microsoft Network Server, Network access and security, and Interactive logon. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
@@ -97,67 +58,6 @@ New rules will be available that let you automatically remove devices that haven
 
 ### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
 You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows AutoPilot profiles** > **Create New** > **Enrollment settings**. 
-
-### Advanced Threat Protection integrated with Intune <!-- 1629303 -->
-[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
-
-### New enrollment steps for users on devices with macOS High Sierra 10.13.2+ <!--1734567 -->
-macOS high Sierra 10.13.2 introduced the concept of "User Approved" MDM enrollment. In the future, approved enrollments will allow Intune to manage some security-sensitive settings. For more information, see Apple's support documentation here: https://support.apple.com/HT208019.
-
-Devices enrolled using the macOS Company Portal will be considered "Not User Approved" unless the end user opens System Preferences and manually provides approval. To this end, the macOS Company Portal now directs users on macOS 10.13.2 and above to go and manually approve their enrollment at the end of the enrollment process. The Intune admin console will report on if an enrolled device is user approved.
-
-### Delete Autopilot devices <!-- 1713650 -->
-Intune admins will be able to delete Autopilot devices.
-
-### Built-in All Users and All Devices Group for Android for Work (AFW) app assignment <!-- 1813073 -->
-You will be able to leverage the built-in **All Users** and **All Devices** groups for AFW app assignment. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
-
-### Improved device deletion experience <!--1832333 -->
-You'll no longer be required to remove company data or factory reset a device before deleting a device from Intune.
-
-To see the new experience, sign in to Intune and select **Devices** > **All devices** > the name of the device > **Delete**.
-
- If you still want the wipe/retire confirmation, you can use the standard device lifecycle route by issuing a **Remove company data** and **Factory Reset** prior to **Delete**. 
-
-### Autopilot profiles moving to group targeting <!-- 1877935 -->
-Currently, AutoPilot deployment profiles can be assigned to selected devices. Towards the end of April, here’s how you’ll assign these profiles:
-- Create (Azure AD) groups containing AutoPilot devices
-- Assign desired profiles to an Azure AD group. The AutoPilot profile will now be assigned to AutoPilot devices in that group.
-
-### Play sounds on iOS when in Lost mode <!-- 1629303 -->
-When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can play a sound (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode , or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
-
-### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
-If an end user uninstalls a required app, Intune will automatically reinstall the app within 24 hours rather than waiting for the 7 day re-evaluation cycle.
-
-### Use a custom subject name on SCEP certificate <!-- 2064190 -->
-You'll be able to use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
-
-### Send diagnostic reports in Company Portal app for macOS <!-- 2216677 -->
-The Company Portal app for macOS devices will be updated to improve how users report Intune-related errors. From the Company Portal app, your employees will be able to:
-- Upload diagnostic reports directly to the Microsoft developer team.
-- Email an incident ID to your company's IT support team.
-
-### Always On VPN for Windows 10 <!--1333666 -->
-
-Currently, [Always On](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-auto-trigger-profile#always-on) can be used on Windows 10 devices by using a custom virtual private network (VPN) profile created using OMA-URI.
-
-With this update, admins will be to enable Always On for Windows 10 VPN profiles directly in Intune in the Azure portal. Always On VPN profiles will automatically connect when:
-
-- Users sign into their devices
-- The network on the device changes
-- The screen on the device turns back on after being turned off
-
-### Improved error messaging for Apple MDM Push Certificate upload failure <!-- 2172331 -->
-
-The error message will explain that the same Apple ID must be used when renewing an existing MDM certificate.
-
-###  Device profile chart and status list show all devices in a group <!-- 1449153 eeready -->
-When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
-
-With this update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) will only show the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
-
-While this update is being made, the graphical user chart is temporarily removed. 
 
 
 <!-- 1803 start -->
@@ -191,11 +91,6 @@ Users enrolling a device by using the Company Portal on Windows 10 build 1703 an
 
 We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
-<!-- 1802 start -->
-
-### New printer settings for education profiles <!-- 1308900 -->
-
-For education profiles, new settings will be available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
 
 <!-- the following are present prior to 1801 -->
 
