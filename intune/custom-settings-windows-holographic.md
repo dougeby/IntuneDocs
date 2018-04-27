@@ -56,17 +56,17 @@ The following settings are useful for devices running Windows Holographic for Bu
 
 ### [AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
-|||
-|-|-|
-|**OMA-URI**|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|
-|**Data type**|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
-|||
-|-|-|
-|**OMA-URI**|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|
-|**Data type**|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
+---
+|OMA-URI|Data type|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
