@@ -23,7 +23,6 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-
 # Custom device settings for devices running Windows Holographic for Business in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -33,6 +32,7 @@ ms.custom: intune-azure
 If you are looking for a particular setting, remember that the [Windows Holographic for Business device restriction profile](device-restrictions-windows-holographic.md) contains many built-in settings and do not require you to specify custom values.
 
 ## Create the custom OMA-URI profile
+
 1. Use the instructions in [Configure custom device settings in Microsoft Intune](custom-settings-configure.md) to get started.
 2. On **Create Profile**, choose **Settings** to add one or more OMA-URI settings.
 3. On **Custom OMA-URI Settings**, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.
@@ -56,17 +56,17 @@ The following settings are useful for devices running Windows Holographic for Bu
 
 ### [AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
+|||
+|-|-|
+|**OMA-URI**|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|
+|**Data type**|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
+|||
+|-|-|
+|**OMA-URI**|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|
+|**Data type**|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
