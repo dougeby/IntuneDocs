@@ -5,8 +5,8 @@ title: Configure iOS software update policies in Microsoft Intune
 titlesuffix:
 description: Configure update policies for iOS to force supervised iOS devices to automatically install the latest available software update.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/19/2018
 ms.topic: article

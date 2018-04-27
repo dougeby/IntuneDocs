@@ -5,8 +5,8 @@ title: Microsoft Intune Wi-Fi settings for devices running macOS
 titleSuffix:
 description: Learn the Intune settings you can use to configure Wi-Fi connections on devices running macOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

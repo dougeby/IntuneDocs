@@ -5,8 +5,8 @@ title: Microsoft Intune email settings for devices running Android and Android f
 titleSuffix:
 description: Learn about the Microsoft Intune settings you can use to configure email settings on devices running Android and Android for Work.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article

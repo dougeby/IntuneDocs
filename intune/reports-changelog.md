@@ -30,6 +30,14 @@ ms.custom: intune-classic
 
 Keep current on updates to the Intune Data Warehouse.
 
+## 1805
+_Released May 2018_
+
+### Correction to device count in **Devices** collection 
+
+A fix has been made to the **Devices** collection which may lower total device counts that filter by the attribute `isDeleted`. This drop is a result of the correction and is not an error. For more information regarding the **Devices** collection, see [Reference for device entities](reports-ref-devices.md). 
+
+
 ## 1801
 _Released January 2018_
 
