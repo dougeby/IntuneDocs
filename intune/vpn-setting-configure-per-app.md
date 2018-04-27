@@ -34,7 +34,6 @@ You can specify which managed apps can use your Virtual Private Network (VPN) on
 Per-App VPN is currently available for the following providers: 
 
  - Checkpoint Remote Access VPN
- - Cisco AnyConnect
  - F5
  - Pulse Connect Secure
  - SonicWall
