@@ -46,7 +46,7 @@ The following table lists  the various options for assigning apps to users and d
 |Assign apps as Required|Yes|No|
 |Uninstall apps|Yes|No|
 |Receive app updates from Intune|Yes|No|
-|End users install available apps fromthe Company Portal app|Yes|No|
+|End users install available apps from the Company Portal app|Yes|No|
 |End users install available apps from the web-based Company Portal|Yes|Yes|
 
 > [!NOTE]
