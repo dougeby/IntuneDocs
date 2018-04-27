@@ -63,45 +63,45 @@ The following settings are useful for devices running Windows Holographic for Bu
 
 ### [AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – Update service is not allowed <br/>1  – Update service is allowed (default).|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – Update service is not allowed <br/>1  – Update service is allowed (default).|
 
 ### [UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br/>URL - the device checks for updates from the WSUS server at the specified URL.<br/>Not configured - The device checks for updates from Microsoft Update.|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br/>URL - the device checks for updates from the WSUS server at the specified URL.<br/>Not configured - The device checks for updates from Microsoft Update.|
 
 ### [RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – Not configured. The device installs all applicable updates.<br/>1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – Not configured. The device installs all applicable updates.<br/>1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.|
 
 ### [ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
----
-|OMA-URI|Data type|
-|---|---|
-|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**Important**<br/>You must read and accept the update EULAs on behalf of your end users. Failure to do so is a breach of legal or contractual obligations.|Node for update approvals and EULA acceptance on behalf of the end user.<br/><br/>For more information, see [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp).|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**Important**<br/>You must read and accept the update EULAs on behalf of your end users. Failure to do so is a breach of legal or contractual obligations.|Node for update approvals and EULA acceptance on behalf of the end user.<br/><br/>For more information, see [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp).|
 
 ### [ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
----
-|OMA-URI|Data type|
-|----|---|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Important**<br/>The AppLocker CSP article uses escaped XML examples. To configure the settings with Intune custom profiles, you must use plain XML.|String<br/>For more information, see [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Important**<br/>The AppLocker CSP article uses escaped XML examples. To configure the settings with Intune custom profiles, you must use plain XML.|String<br/>For more information, see [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
 
 ## Find the policies you can configure
 
