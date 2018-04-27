@@ -101,7 +101,7 @@ We’ll be adding new features, based on feedback from customers, to the Company
 - Ability to share direct links to apps
 - Improved performance for large app catalogs
 
-### Device profile graphical user chart is back <-- 2160133 -->
+### Device profile graphical user chart is back <!-- 2160133 -->
 While improving the numeric counts shown on the device profile graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**), the graphical user chart was temporarily removed.
 
 With this update, the graphical user chart is back, and shown in the Azure portal.
@@ -109,7 +109,9 @@ With this update, the graphical user chart is back, and shown in the Azure porta
 ### Assign all users and all devices as scope groups <!-- 2196803 -->
 You will be able to assign all users, all devices, and all users and all devices in scope groups.
 
+### Management name field will be editable <!-- 1855980 -->
 
+You’ll be able to edit the management name field on a device’s **Properties** blade. To edit this field, choose **Devices** > **All devices** > choose the device > **Properties**. You can use the management name field to uniquely identify a device.
 
 <!-- 1804 start -->
 
@@ -133,13 +135,6 @@ You will be able to prevent the installation of consumer apps and experiences on
 You'll no longer be limited to one Microsoft Intune Exchange Connector per tenant. Intune will support multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
 
 With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
-
-### Support coming for new Cisco AnyConnect client for iOS <!-- 1333708 -->
-
-New VPN profiles created for Cisco AnyConnect for iOS will work with Cisco AnyConnect 4.0.7x and higher. Existing iOS Cisco AnyConnect VPN profiles will be labeled **Cisco Legacy AnyConnect** and will continue to work with Cisco AnyConnect 4.0.5x as they do today.
-
-> [!NOTE]
-> This change is only for iOS; there will continue to be only one Cisco AnyConnect option for Android, Android for Work, and macOS.
 
 #### More information
 
