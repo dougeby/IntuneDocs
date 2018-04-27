@@ -105,10 +105,16 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## Apps and Traffic Rules
 
+<<<<<<< HEAD
 - **Associate WIP or apps with this VPN**: Enable this setting if you only want some apps to use the VPN connection. Your options:
 
   - **Associate a WIP with this connection**: Enter a **WIP domain for this connection**
   - **Associate apps with this connection**: You can **Restrict VPN connection to these apps**, and then add **Associated Apps**. The apps you enter automatically use the VPN connection. The type of app determines the app identifier. For a universal app, enter the package family name. For a desktop app, enter the file path of the app.
+=======
+**Restrict VPN connection to these apps**: Enable this setting if you only want some apps to use the VPN connection.
+
+**Associated Apps**: Enter a list of apps that automatically use the VPN connection. The type of app determines the app identifier. For a universal app, enter the package family name. For a desktop app, enter the file path of the app.
+>>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
 
   >[!IMPORTANT]
   >We recommend that you secure all app lists created for per-app VPNs. If an unauthorized user changes this list, and you import it into the per-app VPN app list, then you potentially authorize VPN access to apps that shouldn't have access. One way you can secure app lists is using an access control list (ACL).

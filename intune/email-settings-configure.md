@@ -5,8 +5,8 @@ title: How to configure Microsoft Intune email settings
 titleSuffix:
 description: Learn how to configure Microsoft Intune to create connections to corporate email on devices you manage.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article

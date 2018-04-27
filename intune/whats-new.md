@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2018
+ms.date: 04/27/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
 ## Week of April 23, 2018
 
 ### App management
@@ -60,8 +61,6 @@ You can leverage the built-in **All Users** and **All Devices** groups for AFW a
 
 #### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
 If an end user uninstalls a required app, Intune automatically reinstalls the app within 24 hours rather than waiting for the 7 day re-evaluation cycle.
-
-
 
 ### Device configuration
 
@@ -134,8 +133,13 @@ Devices enrolled using the macOS Company Portal are considered "Not User Approve
 
 ### Device management
 
-#### Advanced Threat Protection integrated with Intune <!-- 1629303 -->
-[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. When Intune evaluates Windows 10 devices for compliance, the ATP risk score is included in this evaluation. You can use ATP with conditional access to help protect your network.
+#### Advanced Threat Protection (ATP) and Intune are fully integrated <!-- EEready 1629303 -->
+
+[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) conditional access policy can then block access to different apps within your organization.
+
+This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
+
+See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
 
 #### Support for user-less devices <!-- 1637553 -->
 Intune supports the ability to evaluate compliance on a user-less device, such as the Microsoft Surface Hub. Compliance policy can target specific devices. So compliance (and noncompliance) can be determined for devices that don't have an associated user.
@@ -186,9 +190,6 @@ For more information see [Send errors for macOS](/intune-user-help/send-errors-m
 #### Intune adapts to Fluent Design System in the Company Portal app for Windows 10 <!-- 1195010 WNready -->
 The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
-
-
-
 ## Week of April 16, 2018
 
 #### Use Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
@@ -211,7 +212,7 @@ We've updated the help experience in the Company Portal app for Android to align
 - Upload diagnostic logs to Microsoft.
 - Send an email that describes the problem and incident ID to a company support person.  
 
-To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android).
+To check out the updated help experience go to [Send logs using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md) and [Send errors to Microsoft](/intune-user-help/send-logs-to-microsoft-android.md).
 
 
 #### New enrollment failure trend chart and failure reasons table <!-- 1471783 -->
@@ -302,8 +303,6 @@ This is an optional column in the devices blade. It isn't available by default a
 #### iOS devices are prompted for a PIN every 15 minutes <!--1550837 -->
 After a compliance or configuration policy is applied to an iOS device, users are prompted to set a PIN every 15 minutes. Users are continually prompted until a PIN is set.
 
-
-
 #### Schedule your automatic updates <!--1805514 -->
 Intune gives you control on installing automatic updates using [Windows Update Ring settings](windows-update-for-business-configure.md). With this update, you can schedule reoccurring updates, including the week, the day, and the time.
 
@@ -341,6 +340,10 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 - Allow or block specific apps
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
+
+####  Detailed error codes and messages <!-- 1376342 -->
+
+In your Device Configuration, there is more detailed error codes and error messages available to see. This improved reporting shows the settings, the state of these settings, and details on troubleshooting.
 
 ##### More information
 

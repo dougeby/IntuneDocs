@@ -4,8 +4,8 @@ title: Upgrade Windows Holographic to Windows Holographic for Business
 titleSuffix: Microsoft Intune
 description: Learn how to ugrade devices running Windows Holographic to Window Holographic for Business
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
