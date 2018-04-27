@@ -66,15 +66,15 @@ SEP Mobile supports two modes of integration with Intune:
 
 1.  Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
 
-2.  Enter your **SEP Mobile admin credentials**, and then click **Continue**.
+2.  Enter your **SEP Mobile admin credentials**, and then choose **Continue**.
 
 3.  Go to **Settings**, and under **Intune Integration**, choose **Basic Setup**.
 
-4.  On the **iOS App** label, click on **Add to Active Directory**.
+4.  Next to **iOS App**, choose **Add to Active Directory**.
 
     ![Image of the iOS app on [Symantec Endpoint Protection Mobile Management Console]](./media/symantec-portal-basic-add.png)
 
-5.  When the login page opens, enter your Intune credentials, and then click **Accept**.
+5.  When the login page opens, enter your Intune credentials, and then choose **Accept**.
 
     ![Image of the iOS app Intune login prompt](./media/symantec-portal-basic-accept.png)
 
@@ -82,14 +82,15 @@ SEP Mobile supports two modes of integration with Intune:
 
     ![Image of the iOS app completion screen](./media/symantec-portal-basic-added.png)
 
-> [!NOTE]
-> Repeat the same process for the **SEP Mobile Android** and **Management** apps.
+7. Repeat these steps for the **SEP Mobile Android** and **Management** apps.
 
 ### Add an Azure AD Security group into SEP Mobile
 
 You need to add an Azure AD security group that contains all devices running SEP Mobile.
 
 -  Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
+
+    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
 
 SEP Mobile syncs the devices running its Mobile Threat Defense service with the Azure AD security groups.
 
@@ -105,7 +106,7 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
 3. Choose **Properties**.
 
-4. Next to the **Directory ID**, choose the copy icon, and then paste it to a safe location. You’ll need this identifier in the next section.
+4. Next to the **Directory ID**, choose the copy icon, and then paste it to a safe location. You’ll need this identifier in a later step.
 
     ![Image showing Directory ID in the Azure portal](./media/symantec-azure-portal-directory-ID.png)
 
@@ -122,7 +123,7 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
 1.  Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
 
-2.  Enter your **SEP Mobile admin credentials**, then click **Continue**.
+2.  Enter your **SEP Mobile admin credentials**, then choose **Continue**.
 
 3.  Go to the **Settings** > **Integrations** > **Intune** > **EMM Integration Selection** section.
 
@@ -148,7 +149,7 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
     ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
 
-11.  SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to **Settings**, choose **Full Integration** under **Intune Integration**.
+11.  SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
 
      ![Image showing SEP Mobile full integration completed](media/symantec-portal-basic-status.PNG)
 ## Next steps
