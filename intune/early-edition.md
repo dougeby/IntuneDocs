@@ -44,7 +44,7 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1805 start -->
 
-### Set compliance by device location <-- 851881 !  -->
+### Set compliance by device location <!-- 851881 ! -->
 In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You will be able to create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
 
 ### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
