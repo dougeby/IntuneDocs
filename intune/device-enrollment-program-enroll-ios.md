@@ -80,7 +80,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
+1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Token**.
 
    ![Enrollment Program Token pane in Apple Certificates workspace](./media/enrollment-program-token-add.png)
 
