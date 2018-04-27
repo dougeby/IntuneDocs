@@ -255,6 +255,8 @@
           href: lob-apps-windows-phone.md
         - name: Windows LOB apps
           href: lob-apps-windows.md
+        - name: macOS LOB apps
+          href: lob-apps-macos.md          
       - name: Web apps
         href: web-app.md
       - name: Built-in apps

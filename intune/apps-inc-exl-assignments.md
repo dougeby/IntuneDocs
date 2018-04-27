@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ When you exclude groups from an app assignment, you must exclude only user or on
 >
 >Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience. It is highly recommended that you use these groups to target all users and all devices instead of any ‘All users’ or ’All devices’ groups you may have created yourself.  
 >
->Android Enterprise (formerly known as Android for Work) supports including and excluding groups, but does not support the pre-created **All Users** and **All Devices** built-in groups.
+>Android Enterprise (formerly known as Android for Work) supports including and excluding groups. You can leverage the built-in **All Users** and **All Devices** groups for Android Enterprise app assignment. 
 
 ## Including and excluding groups when assigning apps 
 To assign an app to groups using the include and exclude assignment:
