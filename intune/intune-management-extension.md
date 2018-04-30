@@ -77,3 +77,6 @@ You can monitor the run status of PowerShell scripts for users and devices in th
 5. On the **PowerShell scripts** pane, select the script to monitor, and then choose **Monitor**, and then one of the following reports:
    - **Device status**
    - **User status**
+
+## Delete a PowerShell script
+You can delete the PowerShell scripts by using the right-click context menu and choose "Delete". There is no delete button in the menu bar like the Add button to add a PowerShell script.
