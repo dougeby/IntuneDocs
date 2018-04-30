@@ -75,10 +75,7 @@ For Windows devices, the following inventory information will be available per d
 - Battery
 - Domain name
 
-For more information on how this data is retrieved by the CSP, see the DeviceGuard entires in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
-
-### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) will supports Microsoft Intune app protection policies. Users who sign-in with their corporate Azure AD accounts in the Edge application will be protected by Intune, and the **Require managed browser for web content** policy will allow users to open links in Edge when it is managed.
+For more information on how this data is retrieved by the CSP, see the DeviceGuard entries in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
 
 ### Intune and the Microsoft Edge browser <!-- 1818969 -->
 The Microsoft Edge browser for mobile devices (iOS and Android) now supports Intune app protection policies. Users who sign-in with their corporate Azure AD accounts in the Edge browser application will be protected by Intune. 
