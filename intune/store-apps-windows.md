@@ -30,7 +30,10 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Before you can assign, monitor, configure, or protect apps, you must add them to Intune. You can add a Microsoft Store app to Intune by doing the following.
+Before you can assign, monitor, configure, or protect apps, you must add them to Intune. 
+
+## Add the app to Intune
+You can add a Microsoft Store app to Intune by doing the following:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
