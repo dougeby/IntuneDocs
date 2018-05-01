@@ -395,7 +395,7 @@ You can target MAM policies based on the management state of the device:
 - **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
 
     > [!NOTE]
-    > - iOS support for this functionality is rolling out throughout April 2018.
+    > iOS support for this functionality is dependent on app teams integrating the latest Intune MAM SDK. Most apps should be available during April/May 2018, however for apps that have not been updated, please ensure a policy targeted to **all app types** is assigned.
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
