@@ -395,7 +395,7 @@ You can target MAM policies based on the management state of the device:
 - **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
 
     > [!NOTE]
-    > - iOS support for this functionality is rolling out throughout April 2018.
+    > iOS support for this functionality is dependent on app teams integrating the latest Intune MAM SDK. Most apps should be available during April/May 2018. However, for apps that have not been updated, please ensure a policy targeted to **all app types** is assigned.
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
@@ -1120,14 +1120,6 @@ Our records indicate that you are using the Windows 10 > Device Restrictions > K
 #### What do I need to do to prepare for this change?  
 When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
-#### How does this affect me?
-This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
-
-#### What do I need to do to prepare for this change?
-Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
 ### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
 
@@ -1144,13 +1136,6 @@ Please inform your users of this change and update any user guidance if necessar
 - Send an email to WinCPfeedback@microsoft.com  
 
 Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
-
-### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
-Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
-- End users will be prompted for credentials to receive Intune policy on first launch.
-- Apps should be released to the app store targeted for Intune users, for example “Contoso App for Intune”.
-
-For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For any issues or questions, contact [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com).
 
 ### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).

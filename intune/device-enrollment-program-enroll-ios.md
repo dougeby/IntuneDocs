@@ -34,7 +34,7 @@ ms.custom: intune-azure
 > [!NOTE]
 > ### Temporary user interface differences
 >
->The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the end of April.
+>The user interfaces for the features described on this page are in the process of being updated. These updates are rolling out across all user accounts through the first week of May.
 >
 >If your **Device enrollment** page looks like the image below, your account has not yet been updated to the new user interface and you can use this help page.
 >
@@ -187,9 +187,8 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    ![Sync blade with Request sync link selected](./media/enrollment-program-device-request-sync.png)
 
    To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-     -  A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-     -  Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-     - Intune syncs new and removed devices with Apple every 24 hours.
+    - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. After an Enrollment Program device is deleted from Intune portal, it can't be re-imported until the full sync is run. 
+    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.
 
 3. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
@@ -216,3 +215,15 @@ You must assign an enrollment program profile to devices before they can enroll.
 You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
 See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
+
+## Renew a DEP token
+
+1. Go to deploy.apple.com.
+2. Under **Manage Servers**, choose your MDM server associated with the token file that you want to renew.
+3. Choose **Generate New Token**.
+4. Choose **Your Server Token**.
+5. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
+6. Choose the token and then choose **Renew token**.
+7. Enter the Apple ID used to to create the original token.
+8. Upload the newly downloaded token.
+9. Choose **Renew token**. You'll see the confirmation that the token was renewed. 
