@@ -1120,14 +1120,6 @@ Our records indicate that you are using the Windows 10 > Device Restrictions > K
 #### What do I need to do to prepare for this change?  
 When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
-#### How does this affect me?
-This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
-
-#### What do I need to do to prepare for this change?
-Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
 ### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
 
