@@ -61,13 +61,6 @@ The following settings are useful for devices running Windows Holographic for Bu
 > |---|---|
 > |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
-### [AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
-
-> [!div class="mx-tableFixed"]
-> |OMA-URI|Data type|
-> |---|---|
-> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
-
 ### [AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 > [!div class="mx-tableFixed"]
@@ -75,12 +68,12 @@ The following settings are useful for devices running Windows Holographic for Bu
 > |---|---|
 > |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0 – Update service is not allowed <br/>1  – Update service is allowed (default).|
 
-### [UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+### [AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Data type|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br/>URL - the device checks for updates from the WSUS server at the specified URL.<br/>Not configured - The device checks for updates from Microsoft Update.|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0 - not allowed<br/>1 - allowed (default)|
 
 ### [RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
@@ -88,6 +81,20 @@ The following settings are useful for devices running Windows Holographic for Bu
 > |OMA-URI|Data type|
 > |---|---|
 > |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0 – Not configured. The device installs all applicable updates.<br/>1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.|
+
+### [ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|Integer 0-23, where 0=12AM and 23=11PM<br/>Default value is 3.|
+
+### [UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br/>URL - the device checks for updates from the WSUS server at the specified URL.<br/>Not configured - The device checks for updates from Microsoft Update.|
 
 ### [ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
@@ -102,6 +109,42 @@ The following settings are useful for devices running Windows Holographic for Bu
 > |OMA-URI|Data type|
 > |----|---|
 > |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Important**<br/>The AppLocker CSP article uses escaped XML examples. To configure the settings with Intune custom profiles, you must use plain XML.|String<br/>For more information, see [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+
+### [DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - delete immediately when the device returns to a state with no currently active users<br/>1 - delete at storage capacity threshold (default)<br/>2 - delete at both storage capacity threshold and profile inactivity threshold|
+
+### [EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Boolean<br/>True - enable<br/>False - disable (default)|
+
+### [ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>Default value is 30.|
+
+
+### [StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Integer<br/>Default value is 25.|
+
+### [StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|Data type|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Integer<br/>Default value is 50.|
 
 ## Find the policies you can configure
 
