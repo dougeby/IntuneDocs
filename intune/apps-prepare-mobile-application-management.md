@@ -56,8 +56,8 @@ For more information about the App Wrapping Tool for app protection policies on 
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|Yes|
-|**Android**| In Preview |Yes|
+|**iOS** |Yes|No|
+|**Android**| In Preview |No|
 
 ## Intune App SDK
 The App SDK is designed mainly for customers who have apps in the Apple App Store or Google Play Store, and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even line-of-business apps.
@@ -76,8 +76,8 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
-|**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
+|**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
