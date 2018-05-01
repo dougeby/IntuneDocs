@@ -2924,7 +2924,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "/intune/app-sdk-cordova.md",
+			"source_path": "intune/app-sdk-cordova.md",
 			"redirect_url": "/intune/app-sdk",
 			"redirect_document_id": true
 		},
