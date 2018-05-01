@@ -215,3 +215,15 @@ You must assign an enrollment program profile to devices before they can enroll.
 You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
 
 See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
+
+## Renew a DEP token
+
+1. Go to deploy.apple.com.
+2. Under **Manage Servers**, choose your MDM server associated with the otken file that you want to renew.
+3. Choose **Generate New Token**.
+4. Choose **Your Server Token**.
+5. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
+6. Choose the token and then choose **Renew token**.
+7. Enter the Apple ID used to to create the enrollment program token.
+8. Upload the newly downloaded token.
+9. Choose **Renew token**. You'll see the confirmation that the token was renewed. 
