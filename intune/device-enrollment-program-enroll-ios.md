@@ -187,9 +187,8 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    ![Sync blade with Request sync link selected](./media/enrollment-program-device-request-sync.png)
 
    To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-     -  A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that are not already listed in Intune.
-     -  Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-     - Intune syncs new and removed devices with Apple every 24 hours.
+    - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. After an Enrollment Program device is deleted from Intune portal, it can't be re-imported until the full sync is run. 
+    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.
 
 3. In the Enrollment Program Devices workspace, choose **Refresh** to see your devices.
 
