@@ -80,7 +80,7 @@ You need to create a new iOS Cisco AnyConnect VPN profile to support the new app
 Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
-Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
+Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. In Microsoft Intune, select **Mobile apps** > **Apps** to add and view apps. For more information, see [Add apps to Microsoft Intune](apps-add.md).
 
 ### Company Portal enrollment improved <!-- 1874230-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
