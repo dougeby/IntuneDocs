@@ -65,4 +65,4 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
 
 ## Next steps
 
-- The app that you've created is displayed in the apps list, where you can assign it to the groups that you select. For help, see [Assign apps to groups](apps-deploy.md). 
+The app that you've created is displayed in the apps list, where you can assign it to the groups that you select. For help, see [Assign apps to groups](apps-deploy.md). 
