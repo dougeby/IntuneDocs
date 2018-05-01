@@ -80,7 +80,7 @@ You need to create a new iOS Cisco AnyConnect VPN profile to support the new app
 Network access control (NAC) integration will not work for the new AnyConnect client in the initial release. We are working with Cisco to provide NAC integration in a future Intune release.
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
-Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
+Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices. In Microsoft Intune, select **Mobile apps** > **Apps** to add and view apps. For more information, see [Add apps to Microsoft Intune](apps-add.md).
 
 ### Company Portal enrollment improved <!-- 1874230-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
@@ -90,9 +90,6 @@ Users enrolling a device by using the Company Portal on Windows 10 build 1703 an
 We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
 <!-- the following are present prior to 1801 -->
-
-### App Protection Policies  <!-- 679615 -->
-Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
 <!-- the following are present prior to 1711 -->
 

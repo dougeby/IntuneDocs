@@ -68,7 +68,7 @@ If your device is registered with Intune, but you no longer want to use your Win
 
 There are two kinds of data that the Company Portal stores on your Windows device:
 
--	**Diagnostic logs**: standard app activity data that Microsoft collects, like how long the app was open or if it's crashed, is automatically erased when you remove the device from the Company Portal.
+-	**Diagnostic logs**: standard app activity data that Microsoft collects, like how long the app was open or if it's crashed, is automatically erased when the Company Portal app is uninstalled.
 -	**Application cache**: storing of certain support files required for the app to work, like icons and settings.
 
 There are a few steps you need to take to completely delete this information.
