@@ -91,9 +91,6 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 
 <!-- the following are present prior to 1801 -->
 
-### App Protection Policies  <!-- 679615 -->
-Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
-
 <!-- the following are present prior to 1711 -->
 
 ### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
