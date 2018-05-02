@@ -1150,13 +1150,13 @@ You'll be able to enable security settings on Windows 10 devices using the new L
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
-A new Company Portal website experience, with UI updates, streamlined workflows, and accessibility improvements is coming soon. This update is customer-driven, and will bring improvements to the overall performance, and new features that improve existing functionality and usability. You'll experience:
+A new Company Portal website experience, with UI updates, streamlined workflows, and accessibility improvements is coming soon. This customer-driven update will bring improvements to the overall performance, and new features to improve existing functionality and usability. You'll experience:
 
 -   UI improvements and page redesigns throughout the entire website
 -   The ability to share direct links to apps
 -   Improved performance for large app catalogs
 
-You don't need to take any action to prepare for this change. We’re currently fixing some issues to ensure you have a great Company Portal website experience. We’ll let you know through the Message Center when the updated Company Portal website becomes available. You may need to update end user docs with updated screenshots. You may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. See a preview of the coming changes on the [what's new in app UI](https://docs.microsoft.com/en-us/intune/whats-new-app-ui#ui-iwp) page.
+You don't need to take any action to prepare for this change. We’re currently fixing some issues to ensure you have a great Company Portal website experience. We’ll let you know through the Message Center when the updated Company Portal website becomes available. You may need to update employee documentation with updated screenshots. You may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. See a preview of the coming changes on the [what's new in app UI](https://docs.microsoft.com/en-us/intune/whats-new-app-ui#ui-iwp) page.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
