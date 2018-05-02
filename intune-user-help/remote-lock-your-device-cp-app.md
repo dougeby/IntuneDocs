@@ -46,8 +46,7 @@ Remote lock is supported on:
 2. On the **Device details** page, select the **Remote lock** icon > **Remove**.  
    ![Screenshot of Company Portal app, Device details page, highlighting Remote lock icon.](/media/1804_remote_lock_Windows_CPapp_05.png)
 
-   ![Screenshot of Company Portal app, Device details page, highlighting Remove option.](/media/1804_remote_lock_Windows_CPapp_04.png)
-   ![Screenshot of Company Portal app, Device details page, highlighting Remove option.](/media/1804_remote_lock_Windows_CPapp_04.png)
+   ![Screenshot of Company Portal app, Device details page, highlighting Remove option.](/media/1804_remote_lock_Windows_CPapp_04.png)  
 3. Select **Lock** to confirm that you want to lock the device. 
 
    ![Screenshot of Company Portal app, Device details page, Remote lock confirmation prompt.](/media/1804_remote_lock_Windows_CPapp_06.png)
@@ -58,10 +57,7 @@ A “Remote lock pending” message will appear while the Company Portal app tri
    * The **Device details** page of the specific device.
    * The **Home** page, next to **My Devices** > device name.
 
-After your device has been succesfully locked, the message will change to "Remote lock successful."
-
-> [!Note]
-> If you receive a “Remote lock failed” notification, wait a few minutes, and then try to lock your device again. The status will change back to “Remote lock pending.” If the retry fails again, contact your company support person.
+After your device has been succesfully locked, the message will change to "Remote lock successful." If you receive a “Remote lock failed” notification, wait a few minutes, and then try to lock your device again. The status will change back to “Remote lock pending.” If the retry fails again, contact your company support person.
 
 Should you find your device, enter your passcode to unlock it.  
 
