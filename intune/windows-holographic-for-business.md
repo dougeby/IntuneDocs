@@ -1,5 +1,5 @@
 ---
-# required metadata[](holographic-upgrade.md)
+# required metadata
 title: Manage Windows Holographic devices with Microsoft Intune - Azure | Microsoft Docs
 description: Using Microsoft Intune, you can complete different tasks on devices running Windows Holographic for Business, including configure the Company Portal, create a compliance policy, customize OMA-URI settings, deploy apps, categorize devices in groups, create profiles, restrict devices, enable software updates, set terms and conditions, configure VPN and Wi-Fi settings, and use Hello for Business.
 keywords:
@@ -39,7 +39,7 @@ Azure Active Directory (AD) is a great resource to help manage and control your 
 
   [Introduction to device management in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more details.
 
-- **[Bulk enrollment for Windows devices](windows-bulk-enroll.md)**: You can join large numbers of new Windows devices to Azure Active Directory (AD) and Intune. This feature is called bulk enrollment, and uses provisionining packages. These packages join the devices running Windows Holographic for Business to your Azure AD tenant, and enrolls them in Intune.
+- **[Bulk enrollment for Windows devices](windows-bulk-enroll.md)**: You can join large numbers of new Windows devices to Azure Active Directory (AD) and Intune. This feature is called bulk enrollment, and uses provisioning packages. These packages join the devices running Windows Holographic for Business to your Azure AD tenant, and enrolls them in Intune.
 
 ## Company Portal
 **[Configure the Company Portal app](company-portal-app.md)**
@@ -72,11 +72,15 @@ Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices
 > HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
 
 ## Device actions
-Intune has some built-in actions that allow IT administrators to do different tasks, locally on the device, or remotely using Intune in the Azure portal. When using devices running Windows Holographic for Business, the following actions can be used: 
+Intune has some built-in actions that allow IT administrators to do different tasks, locally on the device, or remotely using Intune in the Azure portal. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
-- **[Remove devices or remove company data](devices-wipe.md#factory-reset)**: You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this using the **Factory reset** action. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
+When using devices running Windows Holographic for Business, the following actions can be used: 
 
-- **[Sync devices to get the latest policies and actions](device-sync.md)**: Forces the device to immediately check in with Intune. When a device checks in, the device immediately receives any pending actions or policies that have been assigned. This feature can help you validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+- **[Factory reset](devices-wipe.md#factory-reset)**: The **Factory reset** action removes the device from Intune, and restores the device back to its factory default settings. Use this action before giving the device to a new user, or when the device is lost or stolen.
+
+- **[Remove company data](devices-wipe.md#remove-company-data)**: The **Remove company data** action removes the device from Intune, and removes managed app data, settings, and email profiles that are assigned by Intune. The user's personal data stays on the device.
+
+- **[Sync devices to get the latest policies and actions](device-sync.md)**: The **Sync** action forces the device to immediately check in with Intune. When a device checks in, the device immediately receives any pending actions or policies that are assigned. This feature helps you validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
 **[What is Microsoft Intune device management?](device-management.md)** is a good resource to learn about managing devices using the Azure portal. 
 
