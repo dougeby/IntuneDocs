@@ -7,7 +7,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -182,4 +182,4 @@ Windows Holographic for Business supports the following settings:
 
 - **Automatic update behavior**
 - **Microsoft product updates**
-- **Servicing channel**
+- **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options
