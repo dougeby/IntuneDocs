@@ -42,10 +42,8 @@ Remote lock is supported on devices running:
 
 1. From the **Home** page of the Company Portal app, go to **My Devices** and select the device that you want to lock.
 
-2. On the **Device details** page, select the **Remote lock** icon > **Remove**.  
-   ![Screenshot of Company Portal app, Device details page, highlighting Remote lock icon.](/media/1804_remote_lock_Windows_CPapp_05.png)
-
-   ![Screenshot of Company Portal app, Device details page, highlighting Remove option.](/media/1804_remote_lock_Windows_CPapp_04.png)  
+2. On the **Device details** page, select the **Remote lock** icon.  
+   ![Screenshot of Company Portal app, Device details page, highlighting Remote lock icon.](/media/1804_remote_lock_Windows_CPapp_05.png)   
 3. Select **Lock** to confirm that you want to lock the device. The app will attempt to lock your device and redirect you to the Home page. 
    ![Screenshot of Company Portal app, Device details page, Remote lock confirmation prompt.](/media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Should you find your device, enter your passcode to unlock it.  
