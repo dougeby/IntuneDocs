@@ -139,7 +139,7 @@ Devices enrolled using the macOS Company Portal are considered "Not User Approve
 
 This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
 
-See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
+See [Enable ATP with conditional access in Intune](advanced-threat-protection).
 
 #### Support for user-less devices <!-- 1637553 -->
 Intune supports the ability to evaluate compliance on a user-less device, such as the Microsoft Surface Hub. Compliance policy can target specific devices. So compliance (and noncompliance) can be determined for devices that don't have an associated user.
