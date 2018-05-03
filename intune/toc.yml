@@ -511,7 +511,7 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
-    - name: Advanced Threat Protection
+    - name: Windows Defender ATP
       href: advanced-threat-protection.md        
     - name: Network access control
       href: network-access-control-integrate.md
