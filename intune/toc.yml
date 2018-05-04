@@ -173,7 +173,11 @@
       - name: Enrollment Status Screen
         href: windows-enrollment-status.md
     - name: Set up Android enrollment
-      href: android-enroll.md
+      items:
+      - name: Set up Android enrollment
+        href: android-enroll.md
+      - name: Samsung Knox Mobile Enrollment 
+        href: android-samsung-knox-mobile-enroll.md
     - name: Set up iOS enrollment
       href: ios-enroll.md
       items:
