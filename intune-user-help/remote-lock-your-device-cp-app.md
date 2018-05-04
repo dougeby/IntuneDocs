@@ -38,8 +38,6 @@ Remote lock is supported on devices running:
 * Windows 10 Mobile (if the device already had a passcode set)
 * Windows Phone 8.1 (if the device already had a passcode set)
 
-## Remotely lock your device
-
 1. From the **Home** page of the Company Portal app, go to **My Devices** and select the device that you want to lock.
 
 2. On the **Device details** page, select the **Remote lock** icon.  
