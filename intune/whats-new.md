@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/27/2018
+ms.date: 05/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -139,7 +139,7 @@ Devices enrolled using the macOS Company Portal are considered "Not User Approve
 
 This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
 
-See [Enable ATP with conditional access in Intune](https://docs.microsoft.com/en-us/intune/advanced-threat-protection).
+See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
 
 #### Support for user-less devices <!-- 1637553 -->
 Intune supports the ability to evaluate compliance on a user-less device, such as the Microsoft Surface Hub. Compliance policy can target specific devices. So compliance (and noncompliance) can be determined for devices that don't have an associated user.
@@ -153,9 +153,6 @@ You're no longer be required to remove company data or factory reset a device be
 To see the new experience, sign in to Intune and select **Devices** > **All devices** > the name of the device > **Delete**.
 
 If you still want the wipe/retire confirmation, you can use the standard device lifecycle route by issuing a **Remove company data** and **Factory Reset** prior to **Delete**. 
-
-#### Autopilot profiles moving to group targeting <!-- 1877935 -->
-AutoPilot deployment profiles can be assigned to Azure AD groups containing AutoPilot devices.
 
 #### Play sounds on iOS when in Lost mode <!-- 1947769 -->
 When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can [play a sound](device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device) (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode, or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
@@ -395,7 +392,7 @@ You can target MAM policies based on the management state of the device:
 - **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
 
     > [!NOTE]
-    > iOS support for this functionality is dependent on app teams integrating the latest Intune MAM SDK. Most apps should be available during April/May 2018. However, for apps that have not been updated, please ensure a policy targeted to **all app types** is assigned.
+    > - iOS support for this functionality is rolling out throughout April 2018.
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
@@ -1120,6 +1117,14 @@ Our records indicate that you are using the Windows 10 > Device Restrictions > K
 #### What do I need to do to prepare for this change?  
 When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
+#### How does this affect me?
+This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
+
+#### What do I need to do to prepare for this change?
+Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
+
+**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
+
 ### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
 The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
 
@@ -1137,6 +1142,13 @@ Please inform your users of this change and update any user guidance if necessar
 
 Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
 
+### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
+Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
+- End users will be prompted for credentials to receive Intune policy on first launch.
+- Apps should be released to the app store targeted for Intune users, for example “Contoso App for Intune”.
+
+For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For any issues or questions, contact [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com).
+
 ### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
 
@@ -1150,13 +1162,14 @@ You'll be able to enable security settings on Windows 10 devices using the new L
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
-A new Company Portal website experience, with UI updates, streamlined workflows, and accessibility improvements is coming soon. This customer-driven update will bring improvements to the overall performance, and new features to improve existing functionality and usability. You'll experience:
+We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
--   UI improvements and page redesigns throughout the entire website
--   The ability to share direct links to apps
--   Improved performance for large app catalogs
+-   UI improvements throughout the website
+-   Ability to share direct links to apps
+- Improved performance for large app catalogs
 
-You don't need to take any action to prepare for this change. We’re currently fixing some issues to ensure you have a great Company Portal website experience. We’ll let you know through the Message Center when the updated Company Portal website becomes available. You may need to update employee documentation with updated screenshots. You may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. See a preview of the coming changes on the [what's new in app UI](https://docs.microsoft.com/en-us/intune/whats-new-app-ui#ui-iwp) page.
+You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
