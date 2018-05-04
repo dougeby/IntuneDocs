@@ -104,6 +104,12 @@ With this update, the graphical user chart is back, and shown in the Azure porta
 ### Assign all users and all devices as scope groups <!-- 2196803 -->
 You will be able to assign all users, all devices, and all users and all devices in scope groups.
 
+### Autopilot profiles moving to group targeting <!-- 1877935 -->
+Currently, AutoPilot deployment profiles can be assigned to selected devices. After this feature releases, here's what you’ll do to assign these profiles:
+- Create (Azure AD) groups containing AutoPilot devices
+- Assign desired profiles to an Azure AD group. The AutoPilot profile will now be assigned to AutoPilot devices in that group.
+
+
 <!-- 1804 start -->
 
 
