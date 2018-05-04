@@ -4,7 +4,7 @@
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)]
 
 ## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
 
@@ -128,6 +128,7 @@
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
+### [Rename your device from Company Portal app](rename-your-device-cpapp.md)
 ### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
 ### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
@@ -152,3 +153,8 @@
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
+### [Rename your device](rename-your-device-cpwebsite.md)
+### [Remove your device](remove-your-device-cpwebsite.md)
+### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
+### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)
+### [Sync your device manually](sync-your-device-manually-cpwebsite.md)

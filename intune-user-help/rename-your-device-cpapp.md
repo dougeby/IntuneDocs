@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 ---
 
 # Rename device from the Company Portal app for Windows
-Rename your device to make it easier to recognize and distinguish from other devices. This action is done from the Company Portal app for Windows, and can be done to Windows 10, Microsoft HoloLens, iOS, and Android devices. 
+Rename a device to make it easier to recognize and distinguish from other devices. From the Company Portal app for Windows,you can rename connected Windows 10, Microsoft HoloLens, iOS, and Android devices. 
 
 To rename a device:
 1. Open the Company Portal app.
