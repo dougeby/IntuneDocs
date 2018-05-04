@@ -51,7 +51,7 @@ You can add a Microsoft Store app to Intune by doing the following:
     - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
     - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
     - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-    - **Developer** - Optionally, enter the name of the app developer.
+    - **Developer**: Optionally, enter the name of the app developer.
     - **Owner**: Optionally, enter a name for the owner of this app, for example, *HR department*.
     - **Notes**: Optionally, enter any notes that you want to associate with this app.
     - **Logo**: Optionally, upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
