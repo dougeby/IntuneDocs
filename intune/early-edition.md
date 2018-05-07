@@ -109,6 +109,8 @@ Currently, AutoPilot deployment profiles can be assigned to selected devices. Af
 - Create (Azure AD) groups containing AutoPilot devices
 - Assign desired profiles to an Azure AD group. The AutoPilot profile will now be assigned to AutoPilot devices in that group.
 
+### Management name field will be editable <!-- 1875989 -->
+You’ll be able to edit the management name field on a device’s **Properties** blade. To edit this field, choose **Devices** > **All devices** > choose the device > **Properties**. You can use the management name field to uniquely identify a device.
 
 <!-- 1804 start -->
 
