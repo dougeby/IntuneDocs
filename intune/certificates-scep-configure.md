@@ -308,6 +308,9 @@ In this task, you:
 6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
+    
+    > [!IMPORTANT]
+    > The Intune Certificate Connector cannot be enrolled on a machine with the Enhanced Internet Explorer enabled. In order for it to work disable the Enhanced IE option on the machine.
 
 7. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 
