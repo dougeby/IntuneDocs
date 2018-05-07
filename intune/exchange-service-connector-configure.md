@@ -71,3 +71,6 @@ The Service to Service Connector automatically configures and synchronizes your 
 After you have successfully configured the Exchange Service to Service Connector, validate the Exchange Connector Server information on the **Conditional access - Exchange service connector** page.
 
 You can also check the **Connection status** and the time and date of the last successful synchronization attempt.
+
+## Next steps
+[Monitor Exchange conditional access in Microsoft Intune](conditional-access-exchange-monitor.md)
