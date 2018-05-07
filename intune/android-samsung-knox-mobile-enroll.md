@@ -85,7 +85,7 @@ To assign MDM Profiles to devices, supported Samsung Knox devices must be added 
 You must assign an MDM profile to added devices in the Knox Portal before they can be enrolled. [Visit the Samsung Knox Enrollment User Guide to learn about device configuration](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
 ## Identify devices as corporate-owned
-You can identify devices enrolled using KME as corporate-owned. This lets you perform additional management tasks and collect additional information such as the full phone number and an inventory of apps.
+You can identify devices enrolled using KME as corporate-owned. This must be done before enrolling the devices. This lets you perform additional management tasks and collect additional information such as the full phone number and an inventory of apps.
 
 Follow these steps to identify devices as corporate-owned:
 
