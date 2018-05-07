@@ -153,6 +153,16 @@ When you add an app to Intune, you are given the option to select the category y
 
 Previously, Intune contained a number of built-in apps that you could quickly assign. Based on Intune customer feedback, we removed this list, and the built-in apps are no longer displayed. However, if you have already assigned any built-in apps, the apps remain visible in the list of apps. You can continue to assign the apps as required.
 
+## Installing, updating, or removing required apps
+
+Intune will automatically reinstall, update, or remove a required app within 24 hours, rather than waiting for the 7 day re-evaluation cycle.
+
+Intune will automatically reinstall, update, or remove a required app based on the following conditions:
+- If an end user uninstalls an app that you have required to be installed on the end user's device, Intune will automatically reinstall the app when this schedule elapses.
+- If a required app install fails or somehow the app is not present on the device, Intune evaluates compliance and reinstalls the app when this schedule elapses.  
+- An admin targets an app as available to a user group and an end user installs the app from the company portal on the device. Later, the admin updates the app from v1 to v2. Intune will update the app when this schedule elapses, provided that any previous version of the app is still present on the device.
+- If the admin deploys uninstall intent and the app is present on the device and failed to uninstall, Intune evaluates compliance and uninstalls the app when this schedule elapses.   
+
 ## Next steps
 
 To learn how to add apps for each platform to Intune, see:
