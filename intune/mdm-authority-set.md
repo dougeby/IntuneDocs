@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,6 +67,19 @@ Different platforms have the following requirements to enable or simplify enroll
 - **Windows** - (optional) Enable [Automatic enrollment](windows-enroll.md) or [bulk enrollment](windows-bulk-enroll.md)
 - **macOS** - (required) [Get an Apple MDM Push Certificate](apple-mdm-push-certificate-get.md).
 
+### Workflow of Intune Administration UI
+When Android or Apple device management is enabled, Intune sends device and user information to integrate with these 3rd party services to manage their respective devices.
+
+Scenarios that add a consent to share data are included when:
+- You enable Android for Work.
+- You enable and upload Apple MDM push certificates.
+- You Enable any of the Apple services, such as Device Enrollment Program, School Manager, or Volume Purchasing Program.
+
+In each case, the consent is strictly related to running a mobile device management service, such as confirming that an IT Admin has authorized Google or Apple devices to enroll. Documentation to address what information is shared when the new workflows go live is available from the following locations:
+- [Data Intune sends to Google](https://aka.ms/Data-intune-sends-to-google)
+- [Data Intune sends to Apple](https://aka.ms/data-intune-sends-to-apple)
+
+For more information on Microsoft’s GDPR compliance, see [Trust Center - Assess your GDPR compliance](https://aka.ms/trust_center_info).
 
 ## Mobile device cleanup after MDM certificate expiration
 
