@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Your users can install the Company Portal app from the Microsoft Store to manage devices and install apps. If, however, your business needs require that you assign the Company Portal app, you can manually assign the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Microsoft Store for Business.
+To manage devices and install apps, your users can install the Company Portal app themselves from the Microsoft Store. If your business needs require that you assign the Company Portal app to them, however, you can manually assign the Windows 10 Company Portal app directly from Intune. You can do so even if you haven’t integrated Intune with the Microsoft Store for Business.
 
  > [!NOTE]
  > The option described in this article requires that you assign manual updates each time an app update is released.
@@ -54,7 +54,7 @@ Your users can install the Company Portal app from the Microsoft Store to manage
 
 7. Download all the packages under “Required Frameworks” by selecting **Download**.  
     This action must be completed for x86, x64, and ARM architectures, a total of 12 packages.
-8. Before uploading the Company Portal app to Intune, create a folder (for example: C:\Company Portal) with the packages structured in the following way:
+8. Before you upload the Company Portal app to Intune, create a folder (for example: C:\Company Portal) with the packages structured in the following way:
    - Place the Company Portal package into C:\Company Portal. Create a *Dependencies* subfolder in this location as well.  
 
      ![Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
@@ -76,7 +76,7 @@ If your users have already installed the Windows 8.1 or Windows Phone 8.1 Compan
 ### How do I upgrade my sideloaded Windows 8.1 Company Portal app to the Windows 10 Company Portal app?
 Our recommended migration path is to delete the assignment for the Windows 8.1 Company Portal app by setting the assignment action to **Uninstall**. After you select this setting, you can assign the Windows 10 Company Portal app by using any of the previously discussed options.  
 
-If you need to sideload the app and you assigned the Windows 8.1 Company Portal without signing it with the Symantec Certificate, follow the steps in the Assign directly via Intune section above to complete the upgrade.
+If you need to sideload the app and you assigned the Windows 8.1 Company Portal without signing it with the Symantec Certificate, complete the upgrade by completing the steps in the preceding sections of this article.
 
 If you need to sideload the app and you signed and assigned the Windows 8.1 Company Portal with the Symantec code-signing certificate, follow the steps in the next section.  
 
@@ -89,8 +89,8 @@ If you sign and assign the Windows 10 Company Portal app in this way, you will n
 
 Here’s how you sign and assign the app in this way:
 
-1. Download the Microsoft Intune Windows 10 Company Portal App Signing Script from [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  
-    This script requires the Windows SDK for Windows 10 to be installed on the host computer. To download the Windows SDK for Windows 10, visit [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
+1. Download the [Microsoft Intune Windows 10 Company Portal App Signing Script](https://aka.ms/win10cpscript).  
+    This script requires the Windows SDK for Windows 10 to be installed on the host computer. [Download the Windows SDK for Windows 10](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Download the Windows 10 Company Portal app from the Microsoft Store for Business, as discussed previously.  
 3. To sign the Windows 10 Company Portal app, run the script with the input parameters detailed in the script header, as shown in the following table.  
     Dependencies do not need to be passed into the script. They are required only when the app is being uploaded to the Intune Admin Console.
