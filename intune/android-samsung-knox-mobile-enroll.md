@@ -31,7 +31,19 @@ ms.custom: intune-azure
 
 This topic helps you set up Intune for enrolling supported Android devices using Samsung Knox Mobile Enrollment (KME). Using Intune with Samsung KME, you can enroll large numbers of company-owned Android devices when end users turn on their devices for the first time and connect to a WiFi or cellular network. Also, devices can be enrolled using Bluetooth or NFC when using the Knox Deployment App.
 
-To enable Intune enrollment using Samsung KME, you use both the Intune and Samsung Knox Portals. A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
+To enable Intune enrollment using Samsung KME, you use both the Intune and Samsung Knox portals in this order:
+
+1. In the Knox portal:
+    1. [Create an MDM profile](#create-mdm-profile)
+    2. [Add devices](#add-devices)
+    3. [Assign an MDM profile to the devices](#assign-an-mdm-profile-to-devices)
+2. In the Azure portal, [identify devices as corporate-owned](#identify-devices-as-corporate-owned).
+3. In the Knox portal, [configure end user sign in](#configure-how-end-users-sign-in).
+4. [Distribute the devices](#distribute-devices).
+
+
+A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
+
 
 ## Prerequisites
 
