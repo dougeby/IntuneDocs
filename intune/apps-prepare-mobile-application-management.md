@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,8 +56,8 @@ For more information about the App Wrapping Tool for app protection policies on 
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|No|
-|**Android**| In Preview |No|
+|**iOS** |Yes|Yes|
+|**Android**| In Preview |Yes|
 
 ## Intune App SDK
 The App SDK is designed mainly for customers who have apps in the Apple App Store or Google Play Store, and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even line-of-business apps.
