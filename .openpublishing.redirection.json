@@ -3843,6 +3843,21 @@
 			"redirect_url": "/intune/company-portal-app",
 			"redirect_document_id": false
 		},
+        {
+            "source_path": "intune/apple-configurator-enroll-ios-newui.md",
+            "redirect_url": "/intune/apple-configurator-enroll-ios",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "intune/apple-school-manager-set-up-ios-newui.md",
+            "redirect_url": "/intune/apple-school-manager-set-up-ios",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "intune/device-enrollment-program-enroll-ios-newui.md",
+            "redirect_url": "/intune/device-enrollment-program-enroll-ios",
+            "redirect_document_id": false
+        },
 		{
 			"source_path": "intune/reports-ref-userdeviceassociations.md",
 			"redirect_url": "intune/reports-ref-devices",
