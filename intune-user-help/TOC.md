@@ -125,7 +125,7 @@
 #### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
 #### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
 #### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
-### [Install apps from Company Portal app for Windows](install-apps-cpapp-Windows.md)
+### [Install apps from Company Portal app for Windows](install-apps-cpapp-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
