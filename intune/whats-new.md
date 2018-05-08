@@ -47,10 +47,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of May 7, 2018
 
-### Samsung Knox mobile enrollment support <!--1112863-->
+### App management
+
+#### Samsung Knox mobile enrollment support <!--1112863-->
 
 When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
 
+#### Requesting help in the Company Portal for Windows 10 <!-- 1874137 -->
+
+The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
 ## Week of April 23, 2018
 
