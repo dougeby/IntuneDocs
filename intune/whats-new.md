@@ -392,7 +392,8 @@ Starting April 30, 2018, the **Send Feedback** option in the Company Portal app 
 - Windows 10, 1507 release
 - Windows 10, 1511 release
 - Windows Phone 8.1  
-If your device runs Windows 10 RS1 or later, you can download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels:  
+
+If your device runs Windows 10 RS1 or later, you can download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels:   
 - The Feedback Hub app on Windows 10
 - Email WinCPfeedback@microsoft.com  
 
