@@ -74,7 +74,7 @@ Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile
 
 	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
-#### Access work or school
+#### Access work or school steps
 
 1. Click **Access work or school**.
 
@@ -88,7 +88,7 @@ Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile
 
 4. Click **Sync**. 
 
-#### Work access
+#### Work access steps
 
 1.  Click **Work access**.
 
@@ -132,7 +132,7 @@ These instructions apply to HoloLens devices running the Windows 10 Anniversary 
 3.  Select your connected account > **Sync**.
     ![Screenshot HoloLens settings app, sync button highlighted](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
-## Windows Phone 8.1
+### Windows Phone 8.1
 
 1. Go to **All apps** > **Settings** > **workplace**.
 
