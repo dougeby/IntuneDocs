@@ -33,19 +33,17 @@ ms.custom: intune-enduser
 Install apps on your device from the Company Portal app for Windows.
 
 1. Open the Company Portal app and sign in with your work or school account.
-![The Company Portal app for Windows 10 home page.](./media/RS1_HoloLens_HomePage_03.png)
+![The Company Portal app for Windows 10 home page.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Find and install apps from any of the following sections of the Company Portal app:
-**Apps**: Select from a list of your organization's featured apps. 
-**Show all**: Within the same section of **Apps**, click **Show all** to view all available apps.
-**Search for apps**: A static search bar sits in the navigation menu on the left side of the app. Type in the name of an app to find out if it is available to you.
-**All apps**: View, sort, and filter all available apps.
+* **Apps**: Select from a list of your organization's featured apps. 
+* **Show all**: Within the same section of **Apps**, click **Show all** to view all available apps.
+* **Search for apps**: A static search bar sits in the navigation menu on the left side of the app. Type in the name of an app to find out if it is available to you.
+* **All apps**: View, sort, and filter all available apps.
 3. Select an app to install.
 4. On the Apps details page, click **Install**. After installation is done, the page will show an **Installed** status.
-![The Company Portal app for Windows 10, app details page.](./media/RS1_HoloLens_AppDetailsPage_02.png)  
-![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_HoloLens_AppDetailsPage_Installed_01.png)  
+![The Company Portal app for Windows 10, app details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
+![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
  Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal. For specific information about the Office suite for Windows devices see [Installing Office 365 on your Windows device](./install-office-windows.md).
-
-![The Company Portal app for Windows 10 showing 2 versions of Office side by side.](./media/multiple-office-installs-cp-win10.png)
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
