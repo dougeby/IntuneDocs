@@ -60,19 +60,17 @@ Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile
 ### Windows 10 desktop
 1. On your device, select **Start** > **Settings**.
 
-    ![The Start button](./media/win10pc-sync-1-start-button.png)  
-
 2. Select **Accounts**.
 
     ![Choosing Accounts on the Settings page](./media/win10pc-sync-2-settings-accounts.png)  
 
 3. Multiple versions of Windows 10 exist for desktops. Compare your screen to the screenshots below to determine which set of steps to follow. 
 
-	* If your screen reads "Access work or school," skip to the steps in [Access work or school](#access-work-or-school).
+	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school).
 
 	![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-	* If your screen reads "Work access," skip to the steps under [Work access](#work-access).  
+	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access).  
 
 	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
@@ -85,7 +83,6 @@ Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile
 2. Select the account that has a briefcase icon next to it. If you don't see this account at all, your company may have configured your settings a different way. Instead, click the account that has a Microsoft logo next to it.
 
      ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-info-button.png)
-     ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-button.png)
 
 3. Click **Info**. 
 
