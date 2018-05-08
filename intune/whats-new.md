@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,18 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of May 7, 2018
+
+### App management
+
+#### Samsung Knox mobile enrollment support <!--1112863-->
+
+When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
+
+#### Requesting help in the Company Portal for Windows 10 <!-- 1874137 -->
+
+The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
 ## Week of April 23, 2018
 
@@ -373,12 +385,21 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 #### Company Portal enrollment improved <!-- 1874230 eeready-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
-
 #### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
-You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).  
+
+#### Support changes for Company Portal app for Windows send feedback option <!-- 2070166 -->
+Starting April 30, 2018, the **Send Feedback** option in the Company Portal app for Windows will only work on devices running the Windows 10 Anniversary Update (1607) and later. The option to send feedback is no longer supported when using the Company Portal app for Windows with:  
+- Windows 10, 1507 release  
+- Windows 10, 1511 release  
+- Windows Phone 8.1 
+
+If your device is running on Windows 10 RS1 or later, download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels: 
+- The Feedback Hub app on Windows 10
+- Email WinCPfeedback@microsoft.com  
 
 #### New Windows Defender Application Guard settings <!-- 1631890 -->
 
@@ -1124,23 +1145,6 @@ This change will affect both Intune standalone customers and hybrid (Intune with
 Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
 
 **Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
-The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
-
-#### How does this affect me?  
-If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
-- Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
-- Windows Phone 8.1 Company Portal app  
-
-For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
-
-#### What do I need to do to prepare for this change?  
-Please inform your users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
-- Use the Feedback Hub app on Windows 10
-- Send an email to WinCPfeedback@microsoft.com  
-
-Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
 
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
