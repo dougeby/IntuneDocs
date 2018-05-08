@@ -4,7 +4,7 @@
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)]
+## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
 
 ## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
 
