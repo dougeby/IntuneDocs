@@ -74,7 +74,7 @@ You will soon be able to configure app protection policies to explicitly wipe, b
 
 ### New inventory information for Windows devices <!-- 1333569 eeready -->
 
-For Windows devices, the following inventory information will be available per device in the **Hardware** tab.
+For Windows devices, the following inventory information will be available per device in the **Hardware** tab (**Groups** > **All mobile devices** > **Devices** > choose the user's device > **View Properties** > **Hardware**):
 - TPM
 - Antivirus
 - Antispyware
