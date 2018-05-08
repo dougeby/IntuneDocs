@@ -380,7 +380,6 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 #### Company Portal enrollment improved <!-- 1874230 eeready-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
-
 #### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
@@ -389,11 +388,11 @@ You can create custom eBook categories and then assign VPP eBooks to those custo
 
 #### Support changes for Company Portal app for Windows send feedback option <!-- 2070166 -->
 Starting April 30, 2018, the **Send Feedback** option in the Company Portal app for Windows will only work on devices running the Windows 10 Anniversary Update (1607) and later. The option to send feedback is no longer supported when using the Company Portal app for Windows with:  
-- Windows 10, 1507 release
-- Windows 10, 1511 release
-- Windows Phone 8.1  
+- Windows 10, 1507 release  
+- Windows 10, 1511 release  
+- Windows Phone 8.1 
 
-If your device runs Windows 10 RS1 or later, you can download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels:   
+If your device is running on Windows 10 RS1 or later, download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels: 
 - The Feedback Hub app on Windows 10
 - Email WinCPfeedback@microsoft.com  
 
