@@ -40,6 +40,8 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (e.g., sending warning emails) to noncompliant users and groups.
 2. Search for your desired groups, then apply the policies to them.
 
+**Note** Intune requires full disk encryption to be compliant.
+
 ## Deploy the Company Portal app for macOS in Jamf Pro
 
 You should deploy the Company Portal app for macOS in Jamf Pro as a background installation following the procedure below:
