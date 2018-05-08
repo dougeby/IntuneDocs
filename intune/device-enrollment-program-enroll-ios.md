@@ -112,8 +112,11 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
+
     ![Create a profile screen shot.](./media/device-enrollment-program-enroll-ios/image04.png)
+
 3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
@@ -129,6 +132,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     > Multifactor authentication (MFA) doesn't work during DEP enrollment if you have profile properties set to **Enroll with User Affinity**. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
+
+    ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
 
     Users are notified that their devices are supervised in two ways:
