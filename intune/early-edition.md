@@ -47,6 +47,9 @@ This page is updated periodically. Check back for additional updates.
 ### Set compliance by device location <!-- 851881 ! -->
 In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You will be able to create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
 
+### Improved troubleshooting for app installation <!-- 928990 -->
+On Microsoft Intune MDM managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
+
 ### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
 The Intune IT admin will be able to enforce a specified list of Android manufacturers, and/or iOS models through Intune App Protection Policies. The IT admin can provide a semicolon separated list of manufacturers for Android policies and device models for iOS policies. Intune App Protection Policies are for Android and iOS only. There will be two separate actions that can be performed on this specified list:
 - A block from app access on devices that are not specified.
