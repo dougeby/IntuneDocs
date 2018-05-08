@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/27/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
   ### Role-based access control
 
 -->   
+
+## Week of May 7, 2018
+
+### Samsung Knox mobile enrollment support <!--1112863-->
+
+When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
+
 
 ## Week of April 23, 2018
 
@@ -153,9 +160,6 @@ You're no longer be required to remove company data or factory reset a device be
 To see the new experience, sign in to Intune and select **Devices** > **All devices** > the name of the device > **Delete**.
 
 If you still want the wipe/retire confirmation, you can use the standard device lifecycle route by issuing a **Remove company data** and **Factory Reset** prior to **Delete**. 
-
-#### Autopilot profiles moving to group targeting <!-- 1877935 -->
-AutoPilot deployment profiles can be assigned to Azure AD groups containing AutoPilot devices.
 
 #### Play sounds on iOS when in Lost mode <!-- 1947769 -->
 When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can [play a sound](device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device) (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode, or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
