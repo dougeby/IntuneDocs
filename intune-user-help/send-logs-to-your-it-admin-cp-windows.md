@@ -32,8 +32,8 @@ ms.custom: intune-enduser
 
 If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
-[!Note]		
-The Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
+> [!Note]		
+> The Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
 1. Open the **Company Portal** app.
 2. Select the **Settings** gear, then **Send Logs**.
