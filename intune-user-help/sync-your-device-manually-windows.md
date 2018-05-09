@@ -7,12 +7,12 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: 
 searchScope:
  - User help
 
@@ -30,109 +30,121 @@ ms.custom: intune-enduser
 
 # Sync your Windows device manually
 
-Sometimes trying to install an app on your Windows device may take longer than you think it should. If this happens, you can try to manually sync your Windows device. Syncing may help speed up the installation.
+When app installation speed is less than ideal, initiate a manual device sync. Manual syncs force your device to connect with Intune for the latest updates and communications. Installation speed may increase after the device sync is complete.
 
-> [!Note]
-> Apps could take awhile to install if you are on a network with slower speeds or higher amounts of devices downloading content at the same time.
+Intune supports manual sync from the Company Portal app and from the device Settings app. 
 
-The following versions of Windows can sync manually. Unfortunately, if your device is using a different version of Windows, you can't start a manual sync.
+Company Portal app functionality is supported on Windows 10 devices running the Creator's Update (1703) or later. 
+* [Sync from Company Portal app](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Sync Windows 10 desktop](#windows-10-desktop)
-* [Sync Windows 10 Mobile](#windows-10-mobile)
-* [Sync Windows Phone 8.1](#windows-phone-81)
+All Windows devices can be synced from the device Settings app, including:
 
-## Windows 10 desktop
-There is more than one version of Windows 10, so there are two sets of steps. To figure out which steps to use, look at the screenshots, and then follow the steps that look like what you see on your device.
+* [Windows 10 desktop](#windows-10-desktop)  
+* [Microsoft HoloLens](#Microsoft-Hololens)  
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. Choose the **Start** button, and then choose **Settings**.
+## Sync from Company Portal app for Windows
+Complete these steps to manually sync any Windows 10 device running Creator's Update (version 1703) or later.
 
-    ![The Start button](./media/win10pc-sync-1-start-button.png)
+1.  Open the Company Portal app on your device.
 
-2. On the **Settings** page, choose **Accounts**.
+2.  Select **Settings** > **Sync**.
 
-    ![Choosing Accounts on the Settings page](./media/win10pc-sync-2-settings-accounts.png)
+    ![Screenshot home page of Company Portal app, Settings highlighted](./media/RS1_homePage_settings_04.png)  
+    
+    ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)    
 
-3. Look at the next two screens, and find the one that looks like the one you see on your device. Follow the steps that go with the screen that you see on your device.
+## Sync from Settings App 
+Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.
 
-	If you see this screen, which shows "Access work or school," follow the instructions in [Steps to follow if you see Access work or school](#steps-to-follow-if-you-see-access-work-or-school).
+### Windows 10 desktop
+1. On your device, select **Start** > **Settings**.
 
-	![Sync steps to follow if you see Access work or school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Select **Accounts**.
 
-	If you see this screen, which shows "Work access," follow the steps in [Steps to follow if you see Work access](#steps-to-follow-if-you-see-work-access).
+    ![Choosing Accounts on the Settings page](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. Multiple versions of Windows 10 exist for desktops. Compare your screen to the screenshots below to determine which set of steps to follow. 
+
+	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school).
+
+	![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access).  
 
 	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
-### Steps to follow if you see Access work or school
+#### Access work or school steps
 
-1. On the **Accounts** page, choose **Access work or school**.
+1. Click **Access work or school**.
 
-    ![Choose Access work or school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Screenshot showing Access work or school option](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. Choose your work or school account. Depending on how your company support has set things up, you might see two accounts that look similar to the example shown below. One account has a briefcase next to it, and the other has the Microsoft logo next to it.
-
-   - If you see the account with the briefcase, select it, and look for an **Info** button under it.
-   - If you see only the account with the Microsoft logo, select the account, and look for an **Info** button under it.
+2. Select the account that has a briefcase icon next to it. If you don't see this account at all, your company may have configured your settings a different way. Instead, click the account that has a Microsoft logo next to it.
 
      ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-info-button.png)
 
-3. Choose the **Info** button. A dialog opens that looks similar to the example below.
+3. Click **Info**. 
 
-    ![Choose your account name next to the briefcase or Microsoft logo](./media/win10pc-rs1-sync-button.png)
+4. Click **Sync**. 
 
-4. Choose the **Sync** button. Your device will be synced with Intune.
+#### Work access steps
 
-### Steps to follow if you see Work access
-
-1. On the **Accounts** page, choose **Work access**.
+1.  Click **Work access**.
 
     ![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
-2. Under the section **Enroll in to device management**, choose the name of your company.
+2. Under **Enroll in to device management**, select the name of your company.
 
     ![Choosing the company name for device management](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Choose the **Sync** button.
+3. Click **Sync**. The button remains disabled until the sync is complete.
 
-    ![Choosing the Sync button](./media/win10pc-sync-5-tap-sync.png)
+    ![Choosing the Sync button](./media/win10pc-sync-5-tap-sync.png)  
 
-   The button becomes grayed out until the sync is finished.
 
 ### Windows 10 Mobile
-To manually sync your Windows 10 Mobile device to speed up a slow app installation:
 
-   1. Go to **All apps** > **Settings** > **Accounts**.
+   1. On your device, go to **All apps** > **Settings** > **Accounts**.
 
        ![Choosing Accounts on the Settings screen](./media/win10m-sync-1-settings-accounts.png)
 
-   2. Choose **Work access**.
+   2. Select **Work access**.
 
        ![Choosing work access as the account type](./media/win10m-sync-2-work-access.png)
 
-   3. Under **Enroll in to device management**, choose your company name.
+   3. Under **Enroll in to device management**, select your company name.
 
        ![Choosing the company name for device management](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. Choose the **Sync** icon.
+   4. Select the **Sync** icon. The button remains disabled until the sync is complete.
 
        ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)
 
-       The message “We’re synching your account” appears at the top of the screen. The **Sync** button is grayed out until your device finishes syncing.
 
-## Windows Phone 8.1
-To manually sync your Windows Phone 8.1 device to speed up a slow app installation:
+### Microsoft Hololens  
+These instructions apply to HoloLens devices running the Windows 10 Anniversary Update (also known as RS1). 
+1.  Open the Settings app on your device.  
+
+2.  Select **Accounts** > **Work Access**.  
+    ![Screenshot HoloLens settings app, accounts link highlighted](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
+
+3.  Select your connected account > **Sync**.
+    ![Screenshot HoloLens settings app, sync button highlighted](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### Windows Phone 8.1
 
 1. Go to **All apps** > **Settings** > **workplace**.
 
     ![List of settings](./media/wp81-1-sync-settings-workplace.png)
 
-2. Choose the name of your company.
+2. Select the name of your company.
 
     ![Choosing the company name for the workplace account](./media/wp81-2-sync-tap-compname.png)
 
-3. Choose the **Sync** icon.
+3. Select the **Sync** icon.
 
     ![Choosing the Sync icon](./media/wp81-3-sync-tap-sync-button.png)
-
-   The message “We’re synching your account” appears at the top of the screen until your device finishes syncing.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
