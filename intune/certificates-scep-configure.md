@@ -310,7 +310,7 @@ In this task, you:
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
     
     > [!IMPORTANT]
-    > The Intune Certificate Connector cannot be enrolled on a machine with the Enhanced Internet Explorer enabled. In order for it to work disable the Enhanced IE option on the machine.
+    > The Intune Certificate Connector can't be enrolled on a device with Internet Explorer Enhanced Security Configuration enabled. To use the Intune Certificate Connector, [disable IE Enhanced security configuration](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 7. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 
