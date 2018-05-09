@@ -35,7 +35,7 @@ When app installation speed is less than ideal, initiate a manual device sync. M
 Intune supports manual sync from the Company Portal app and from the device Settings app. 
 
 Company Portal app functionality is supported on Windows 10 devices running the Creator's Update (1703) or later. 
-* [Sync from Company Portal app](#Sync from Company Portal app for Windows)
+* [Sync from Company Portal app](#Sync-from-Company-Portal-app-for-Windows)  
 
 All Windows devices can be synced from the device Settings app, including:
 
