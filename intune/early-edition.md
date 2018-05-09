@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/24/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,7 +60,7 @@ The user will be unable to access the targeted application if the requirements t
 On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Mobile apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md).
 
 ### Enable kiosk mode on Windows 10 devices <!-- 1560072 ! -->
-On Windows 10 devices, you can create a configuration profile and enable kiosk mode (**Device Configuration** > **Profiles** > **Create profile** > **Windows 10** > **Device Restrictions** > **Kiosk**). In this update, **Kiosk (preview)** is renamed to **Kiosk (obsolete)**. **Kiosk (obsolete)** is no longer recommended for use, and will continue to function until the July update. *Kiosk (obsolete)** is replaced by **Kiosk**, which will contain the settings to configure Kiosks on Windows 10 RS4 and later.
+On Windows 10 devices, you can create a configuration profile and enable kiosk mode (**Device Configuration** > **Profiles** > **Create profile** > **Windows 10** > **Device Restrictions** > **Kiosk**). In this update, the **Kiosk (preview)** setting is renamed to **Kiosk (obsolete)**. **Kiosk (obsolete)** is no longer recommended for use, but will continue to function until the July update. **Kiosk (obsolete)** is replaced by the new **Kiosk** profile type (**Create profile** > **Windows 10** > **Kiosk (preview)**), which will contain the settings to configure Kiosks on Windows 10 RS4 and later.
 
 Applies to Windows 10 and later.
 
