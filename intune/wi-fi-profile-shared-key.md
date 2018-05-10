@@ -48,16 +48,16 @@ You can create a custom profile with a pre-shared key for Android, Windows, or a
 1. Enter a name and description of the profile.
 2. Add a new OMA-URI setting with the following properties: 
 
-   a. Enter a name for this Wi-Fi network setting
+   a. Enter a name for this Wi-Fi network setting.
 
-   b. (Optional) Enter a description of the OMA-URI setting, or leave it blank
+   b. (Optional) Enter a description of the OMA-URI setting, or leave it blank.
 
-   c. Set the **Data Type** to **String**
+   c. Set the **Data Type** to **String**.
 
    d. **OMA-URI**:
 
-   - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **For Android**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Be sure to include the dot character at the beginning.
