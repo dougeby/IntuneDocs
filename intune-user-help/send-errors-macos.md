@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Submit errors with your managed macOS device | Microsoft Docs
+title: Send errors from your Mac device to your company support | Microsoft Docs
 description:
 keywords:
 author: lenewsad
