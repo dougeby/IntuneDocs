@@ -40,7 +40,7 @@ Company Portal app functionality is supported on Windows 10 devices running the 
 All Windows devices can be synced from the device Settings app, including:
 
 * [Windows 10 desktop](#windows-10-desktop)  
-* [Microsoft HoloLens](#Microsoft-Hololens)  
+* [Microsoft HoloLens](#microsoft-hololens)   
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
@@ -120,10 +120,8 @@ Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile
 
    4. Select the **Sync** icon. The button remains disabled until the sync is complete.
 
-       ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)
-
-
-### Microsoft Hololens  
+       ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)  
+### Microsoft HoloLens  
 These instructions apply to HoloLens devices running the Windows 10 Anniversary Update (also known as RS1). 
 1.  Open the Settings app on your device.  
 
