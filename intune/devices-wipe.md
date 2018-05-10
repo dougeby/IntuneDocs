@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,23 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this by using the **Remove company data** or **Factory reset** actions. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
+By using the **Remove company data** or **Factory reset** actions, you can remove devices from Intune that are no longer needed, being repurposed, or missing. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
 > [!NOTE]
 > Before you remove a user from Azure Active Directory (Azure AD), use the **Factory reset** or **Remove company data** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer issue a factory reset or remove company data for those devices.
 
 ## Factory reset
 
-The **Factory reset** action restores a device to its factory default settings. A factory reset restores all company and user data and settings. The device is removed from Intune management. A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
+The **Factory reset** action restores a device to its factory default settings. The user data is kept or wiped depending on whether or not you choose the **Retain enrollment state and user account** checkbox.
+
+|Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
+|:-------------:|:------------:|:------------:|------------|
+|**Factory Reset**| Not checked | Yes | Wipes all user accounts, data, and settings. Resets the operating system to its default state and settings.|
+|**Factory Reset**| Checked | No | Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
+
+The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
+
+A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
 
 ### Factory reset a device
 
