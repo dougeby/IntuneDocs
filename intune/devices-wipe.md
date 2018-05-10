@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this by using the **Remove company data** or **Factory reset** actions. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
+By using the **Remove company data** or **Factory reset** actions, you can remove devices from Intune that are no longer needed, being repurposed, or missing. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
 > [!NOTE]
 > Before you remove a user from Azure Active Directory (Azure AD), use the **Factory reset** or **Remove company data** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer issue a factory reset or remove company data for those devices.
