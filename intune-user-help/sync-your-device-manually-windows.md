@@ -25,7 +25,6 @@ ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
 ---
 
 # Sync your Windows device manually
@@ -56,7 +55,7 @@ Complete these steps to manually sync any Windows 10 device running Creator's Up
     ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)    
 
 ## Sync from Settings App 
-Complete these steps to manually sync your Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.
+Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.
 
 ### Windows 10 desktop
 1. On your device, select **Start** > **Settings**.
