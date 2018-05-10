@@ -40,7 +40,7 @@ You can remove devices from Intune that are no longer needed, being repurposed, 
 The **Factory reset** action restores a device to its factory default settings. The user data is kept or wiped depending on whether or not you choose the **Retain enrollment state and user accout** checkbox.
 
 |Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
-| -------------|------------|------------|------------|
+|:-------------:|:------------:|:------------:|------------|
 |**Factory Reset**| Not checked | Yes | Wipes all user accounts, data, and settings. Resets the operating system to its default state and settings.|
 |**Factory Reset**| Checked | No | Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
 
