@@ -66,6 +66,8 @@ iOS volume-purchased apps are displayed, and can be assigned only for the same c
 ### Multiple copies of the same iOS volume-purchase program are uploaded
 Do not click the **Upload** button multiple times for the same VPP token. This will result in duplicate VPP tokens being uploaded, and apps syncing multiple times for the same VPP token.
 
+### Some Managed Browser traffic not routed through Azure App Proxy <!-- 2463492 -->
+There is a known issue with the Managed Browser and App Proxy integration where certain tertiary traffic (like javascript or AJAX calls) are not routed through the Azure App Proxy. This is a known issue in the current release.  
 
 <!-- ## Groups -->
 
