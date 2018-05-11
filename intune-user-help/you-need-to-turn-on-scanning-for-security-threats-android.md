@@ -30,12 +30,12 @@ ms.custom: intune-enduser
 ---
 
 # Enable security threat scans on your device 
-If you uknowingly install an unsafe app, your device data may be at risk. To protect the data on your device we recommend that you: 
+If you unknowingly install an unsafe app, your device data may be at risk. To protect the data on your device, we recommend that you: 
 
 * Only download apps from verified sources, such as the Google Play Store.  
 * Enable security threat scans on your device. These scans are performed by Google and verify that apps are safe to install.  
 
-To enable the scans on your device go to **Settings** > **Google** > **Security**. Turn on **Scan device for security threats**.  
+To enable the scans on your device, go to **Settings** > **Google** > **Security**. Turn on **Scan device for security threats**.  
 
 On some Samsung devices, you may find the setting in **Settings** > **Google** > **Security** > **Google Play Protect**.
 
