@@ -66,6 +66,8 @@ The Intune management extension has the following prerequisites:
 6. Choose **Select Groups** to list available Azure AD groups. 
 7. Select one or more groups that contain the users whose devices will receive the script, and then click **Select** to assign the policy to the selected groups.
 
+Note: PowerShell scripts can not be applied to computer groups
+
 The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script is run and the run results are reported. 
  
 ## Monitor run status for PowerShell scripts
