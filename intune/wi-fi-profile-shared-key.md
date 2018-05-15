@@ -41,6 +41,7 @@ Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks
 - For Android, you can also use the [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - You can add multiple networks and keys by adding more OMA-URI settings.
 - For iOS, use Apple Configurator on a Mac station to set up the profile. Or, use [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- PSK requires a string of 64 hexadecimal digits, or a passphrase of 8 to 63 printable ASCII characters. Some characters, such as asterisk ( * ), are not supported.
 
 ## Create a custom profile
 You can create a custom profile with a pre-shared key for Android, Windows, or an EAP-based Wi-Fi profile. To create the profile using the Azure portal, see [Create custom device settings](custom-settings-configure.md). When you create the device profile, choose **Custom** for your device platform. Don't select the Wi-Fi profile. When you choose custom, be sure to: 
