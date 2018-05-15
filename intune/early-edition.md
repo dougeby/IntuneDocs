@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/09/2018
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,8 @@ This page is updated periodically. Check back for additional updates.
 
 ### Set compliance by device location <!-- 851881 ! -->
 In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You will be able to create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
+
+Applies to: Android devices 6.0 and higher, with the updated Company Portal app
 
 ### Improved troubleshooting for app installation <!-- 928990 -->
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
@@ -167,10 +169,6 @@ We'll be updating the Help and Feedback experience on the Company Portal app for
 Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
 <!-- the following are present prior to 1711 -->
-
-### Azure Active Directory web sites can require the Intune Managed Browser App and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->   
-Using Azure Active Directory (Azure AD), you will be able to restrict access to web sites on mobile devices to the Intune Managed Browser app. In the managed browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
-
 
 ## Notices
 
