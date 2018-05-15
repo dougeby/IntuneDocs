@@ -38,7 +38,8 @@ Intune provides several ways to monitor the properties of apps that you manage a
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
-**Note:** Android Store apps that are deployed as **Available** do not report their installation status.
+> [!NOTE]
+> Android Store apps that are deployed as **Available** do not report their installation status.
 
 ## App overview pane
 
