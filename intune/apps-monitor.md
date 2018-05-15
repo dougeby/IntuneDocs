@@ -30,13 +30,16 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune provides a number of ways to monitor the properties of apps you manage, and manage app assignment status.
+Intune provides several ways to monitor the properties of apps that you manage and to manage app assignment status.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. In the **Intune** menu, select **Mobile apps**.
 4. In the **Manage** section of the menu, select **Apps**.
-5. In the list of apps, select an app to monitor. You'll then see the app pane, with an overview of the device status and the user status.
+5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
+
+> [!NOTE]
+> Android Store apps that are deployed as **Available** do not report their installation status.
 
 ## App overview pane
 
