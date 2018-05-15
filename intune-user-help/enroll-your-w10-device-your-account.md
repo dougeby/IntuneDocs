@@ -4,8 +4,8 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Enroll a Windows 10 1511 device into Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
@@ -33,10 +33,10 @@ ms.custom: intune-enduser
   > [!NOTE]
   > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
-1.  Go to **Start**.
+1. Go to **Start**.
 
-  - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
-  - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
+   - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
+   - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
 
 2. Open the Windows **Settings** app by searching for "settings" in the search bar.
 
@@ -56,7 +56,7 @@ ms.custom: intune-enduser
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)
 
-Still can't access your work or school email, files, or other data? Try to fix your access by [troubleshooting issues with your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). If it still doesn't work, you'll need to contact your company support for further help.
+Still can't access your work or school email, files, or other data? Try to fix your access by [troubleshooting issues with your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). If it still doesn't work, you need to contact your company support for further help.
 
 An easy way to get help from your company support is through the contact information available in the Company Portal app, which also lets you find and download recommended and required apps for your daily work. It's possible that you already have the Company Portal app installed on your device. A quick way to check is to look for __Company Portal__ in your __All apps__ list.
 

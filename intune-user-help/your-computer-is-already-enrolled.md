@@ -4,14 +4,17 @@
 title: Your computer is already enrolled | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704searchScope: - User help
+ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
+searchScope:
+ - User help
 
 # optional metadata
 

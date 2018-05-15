@@ -3,11 +3,11 @@
 
 
 title: How to get support for Microsoft Intune
-titlesuffix: "Azure portal"
-description: Support is available both online and by telephone for paid and trial subscriptions."
+titlesuffix: Microsoft Intune
+description: Get online and telephone support for Microsoft Intune paid and trial subscriptions.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -30,49 +30,55 @@ ms.custom: intune-classic
 
 # How to get support for Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 >[!IMPORTANT]
-> For technical support with products that work with Intune but not made by Microsoft, for example Saaswedo, Cisco, or Lookout, contact the supplier of that product first. Before you open a request with Intune support, ensure you configured the other product correctly.
+> For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
 
 ## Create an online support ticket
 
 As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
 
-1. Log on to the Azure portal (https://portal.azure.com) with your Intune admin credentials, choose the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank) page.
+1. Log on to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, choose the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
 2. On the Azure Help and support page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+
 3. On the **Basics** blade, for most Intune technical support issues, choose the following options:
-	- **Issue type**: **Technical**
-	- **Service**: **Microsoft Intune**
-	- **Support plan**: **Technical support - included**  (For Intune technical issues, support is complimentary.)
+   - **Issue type**: **Technical**
+   - **Service**: **Microsoft Intune**
+   - **Support plan**: **Technical support - included**  (for Intune technical issues, support is complimentary) or **Premier**
+    
+     >[!IMPORTANT]
+     >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
+     >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
 
-	>[!IMPORTANT]
-	>Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, please see the [Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx) documentation, section 5.3.3 "Advisory Services."
+     Choose **Next** to continue.
 
-	Choose **Next** to continue.
-4. On the **Problem** blade, to ensure your request is addressed by the right subject matter expert for your problem, select the following options:
-	- **Severity**
-	- **Problem type**
-	- **Category**
+4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
 
-	These details also lets us provide **Related help** that might solve your problem without filing a ticket.
+   - **Severity**
+   - **Problem type**
+   - **Category**
 
-	![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
+     These details also let us provide **Related help** that might solve your problem without filing a ticket.
 
-	To help us research and resolve your problem, enter the following information:
-	-	**Details**
-	- **Date**
-	- **Time**
-	- Supplemental data
+     ![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
 
-	Choose **Next**.
+     To help the support team research and resolve your problem, enter the following information:
+    
+   - **Details**
+   - **Date**
+   - **Time**
+   - **Supplemental data**
+
+     Choose **Next**.
+
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
@@ -81,6 +87,5 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
-- [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)

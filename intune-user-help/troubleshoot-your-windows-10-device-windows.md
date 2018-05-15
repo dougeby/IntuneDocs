@@ -4,15 +4,18 @@
 title: Troubleshoot your Windows 10 device enrollment | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7searchScope: - User help
+ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -41,15 +44,15 @@ If you followed the steps in [Enroll your Windows 10 Mobile or Windows 10 deskto
 
 ## Troubleshooting steps to follow if you see "Access work or school"
 
-1.  If you followed the steps above, but you still can’t access your work or school email and files, go back to **Access work or school**.
+1. If you followed the steps above, but you still can’t access your work or school email and files, go back to **Access work or school**.
 
 2. Do one of the following:
 
-	- If you see a connection that looks similar to the image below, tap it, and then check that you see the Manage, Info and Disconnect options. If you see these option, you’re now enrolled and connected.
+   - If you see a connection that looks similar to the image below, tap it, and then check that you see the Manage, Info and Disconnect options. If you see these option, you’re now enrolled and connected.
 
-	![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-	- If you don’t see the connection information shown above, or you do see it, but it’s missing some of the options, tap **Connect**, and then sign in with your work or school credentials. You should now be connected.
+   - If you don’t see the connection information shown above, or you do see it, but it’s missing some of the options, tap **Connect**, and then sign in with your work or school credentials. You should now be connected.
 
 ## Troubleshooting steps to follow if you see "Your account"
 
@@ -61,6 +64,6 @@ If you followed the steps above, but still can't access your work or school emai
 
 ## Troubleshooting steps to follow if you see "Set up a work or school account"
 
-If you see a message that says __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__, then you should try to re-enter your username and password. If it still doesn't work, you should check with your company support for the website that you need to provide in the **Management endpoint** text box. This is a website that probably looks like **www.yourcompany.onmicrosoft.com**.
+If you see a message that says <strong>We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.</strong>, then you should try to re-enter your username and password. If it still doesn't work, you should check with your company support for the website that you need to provide in the <strong>Management endpoint</strong> text box. This is a website that probably looks like <strong>www.yourcompany.onmicrosoft.com</strong>.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

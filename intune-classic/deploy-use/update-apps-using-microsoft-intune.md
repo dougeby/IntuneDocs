@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Update apps using Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can help you manage app updates. Use the information in this topic to understand how to update apps when a new version is required.
 
@@ -62,6 +62,6 @@ The app identifier is a property that uniquely identifies an app. You cannot ins
 4.  When you are finished, choose **Update**.
 
 When devices next check for available apps, the app will be automatically updated to the latest version.
-For apps installed from an app package (line of business apps), the app will be upgraded automatically for both required and available deployments, as long as the app has the same identifier.
+For apps installed from an app package (line-of-business apps), the app will be upgraded automatically for both required and available deployments, as long as the app has the same identifier.
 
 For apps deployed as a link to a store, the update is managed by the store from which the app originates.

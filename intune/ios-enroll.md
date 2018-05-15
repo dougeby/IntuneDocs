@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Choose how to enroll Windows devices in Intune
-titlesuffix: "Azure portal"
-description: Learn how to set up enrollment of Windows devices in Microsoft Intune."
+title: Choose how to enroll iOS devices in Intune
+titlesuffix: Microsoft Intune
+description: Set up enrollment of iOS devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Before you can enable iOS devices, complete the following steps:
 
 ## User-owned iOS devices (BYOD)
 
-You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the iOS Company Portal app from the App Store, and follow enrollment instructions in the app.
+You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
 
 ## Company-owned iOS devices
 For organizations that purchase devices for their users, Intune supports the following iOS company-owned device enrollment methods:
@@ -85,11 +85,11 @@ User affinity is required to support the following:
 
 5. After logging in, the user is prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device.
 
-  If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
+   If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
 
 6. On the next screen, the user must confirm the serial number of the new device. The user can tap the link **confirm the Serial Number** which will launch instructions to use the Settings app to verify the serial number. The user must then enter the last four characters of the serial number into the Company Portal app.
 
-  This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
+   This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
 
 7. After the serial number is verified, the Company Portal app redirects to the Company Portal website to finalize enrollment. Then the website prompts the user to return to the app.
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune settings for the iOS Classroom app 
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices."
+titleSuffix: Microsoft Intune
+description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 05/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +17,7 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX
 #audience:
 #ms.devlang:
 ms.reviewer: derriw
@@ -30,10 +30,12 @@ ms.custom: intune-azure
 
 # How to configure Intune settings for the iOS Classroom app
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+>[!NOTE]
+>Intune settings for the Classroom App have been made obsolete in Intune. This article is only applicable for users with existing education profiles in Intune.
 
 ## Introduction
-[Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, using the app, a teacher can:
+[Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, the app enables teachers to:
 
 - Open apps on student devices
 - Lock, and unlock the iPad screen
@@ -41,18 +43,18 @@ ms.custom: intune-azure
 - Navigate students iPads to a bookmark, or chapter in a book
 - Display the screen from a student iPad on an Apple TV
 
-Use the Intune iOS **Education** device profile, and the information in this topic to help you set up the Classroom app, and the devices on which you use it.
+To set up Classroom on your device, you will need to create and configure an Intune iOS education device profile.
 
 ## Before you start
 
 Consider the following before you begin to configure these settings:
 
-- Both teachers and student iPads must be enrolled in Intune
+- Both teachers and student iPads must be enrolled in Intune.
 - Ensure that you have installed the [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) app on the teacher’s device. You can either install the app manually, or use [Intune app management](app-management.md).
-- You must configure certificates to authenticate connections between teacher and student devices (see Step 2)
-- Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled
-- The Classroom app runs on supervised iPads running iOS 9.3 or later
-- In this release, Intune supports managing a 1:1 scenario where each student has their own dedicated iPad
+- You must configure certificates to authenticate connections between teacher and student devices (see Step 2, Create and assign an iOS Education profile in Intune).
+- Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled.
+- The Classroom app runs on supervised iPads running iOS 9.3 or later.
+- In this release, Intune supports managing a 1:1 scenario where each student has their own dedicated iPad.
 
 
 ## Step 1 - Import your school data into Azure Active Directory
@@ -66,7 +68,6 @@ You can import information into SDS by using one of the following methods:
 
 - [CSV files](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - Manually export and compile comma-separated value (.csv) files
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - An SIS provider that simplifies syncing with Azure AD
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - An identity management solution that syncs directly with Azure AD
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - A CSV format that you can export and convert to sync with Azure AD
 
 ### Find out more
@@ -79,39 +80,41 @@ You can import information into SDS by using one of the following methods:
 
 ### Configure general settings
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3.	On the **Intune** blade, choose **Configure devices**.
-4.	On the **Device Configuration** blade, choose **Manage** > **Profiles**.
-5.	On the profiles blade, choose **Create Profile**.
-6.	On the **Create Profile** blade, enter a **Name** and **Description** for the iOS education profile.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Device configuration**.
+2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
+5.	On the profiles pane, choose **Create profile**.
+6.	On the **Create profile** pane, enter a **Name** and **Description** for the iOS education profile.
 7.	From the **Platform** drop-down list, choose **iOS**.
 8.	From the **Profile type** drop-down list, choose **Education**.
 9.	Choose **Settings** > **Configure**.
 
 
-Next, you need certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
+In the next section, you'll create certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
 
 >[!IMPORTANT]
 >The teacher and student certificates you use must be issued by different certification authorities (CAs). You must create two new subordinate CAs connected to your existing certificate infrastructure; one for teachers, and one for students.
 
 iOS education profiles support only PFX certificates. SCEP certificates are not supported.
 
-Certificates you create must support server authentication in addition to user authentication.
+Created certificates must support server authentication and user authentication.
 
 ### Configure teacher certificates
 
-On the **Education** blade, choose **Teacher certificates**.
+On the **Education** pane, choose **Teacher certificates**.
 
 #### Configure teacher root certificate
 
-Under **Teacher root certificate**, choose the browse button to select the teacher root certificate with the extension .cer (DER, or Base64 encoded), or .P7B (with or without full chain).
+Under **Teacher root certificate**, choose the browse button. Select the root certificate with either:
+- Extension .cer (DER, or Base64 encoded) 
+- Extension .P7B (with or without full chain)
 
 #### Configure teacher PKCS#12 certificate
 
 Under **Teacher PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** - Intune automatically prefixes the certificate common name with **leader**, for the teacher certificate, and **member**, for the student certificate.
+- **Subject name format** - Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 
@@ -119,22 +122,24 @@ Under **Teacher PKCS#12 certificate**, configure the following values:
 - **Certificate validity period** - Specify the amount of remaining time before the certificate expires.
 You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA certificate.
 
-When you have finished configuring certificates, choose **OK**.
+When you're finished configuring certificates, choose **OK**.
 
 ### Configure student certificates
 
-1.	On the **Education** blade, choose **Student certificates**.
-2.	On the **Student certificates** blade, from the **Student device certificates** type list, choose **1:1**.
+1.	On the **Education** pane, choose **Student certificates**.
+2.	On the **Student certificates** pane, from the **Student device certificates** type list, choose **1:1**.
 
 #### Configure student root certificate
 
-Under **Student root certificate**, choose the browse button to select the student root certificate with the extension .cer (DER, or Base64 encoded), or .P7B (with or without full chain).
+Under **Student root certificate**, choose the browse button. Select the root certificate with either:
+- Extension .cer (DER, or Base64 encoded) 
+- Extension .P7B (with or without full chain)
 
 #### Configure student PKCS#12 certificate
 
 Under **Student PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** - Intune automatically prefixes the certificate common name with **leader**, for the teacher certificate, and **member**, for the student certificate.
+- **Subject name format** -  Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 
@@ -142,20 +147,20 @@ Under **Student PKCS#12 certificate**, configure the following values:
 - **Certificate validity period** - Specify the amount of remaining time before the certificate expires.
 You can specify a value that is lower than the validity period in the specified certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can specify a value of one year but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA certificate.
 
-When you are finished configuring certificates, choose **OK**.
+When you're finished configuring certificates, choose **OK**.
 
 ## Finish up
 
-1.	On the **Education** blade, choose OK.
-2.	On the **Create Profile** blade, choose **Create**.
+1.	On the **Education** pane, choose OK.
+2.	On the **Create profile** pane, choose **Create**.
 	
-The profile is created and appears on the profiles list blade.
+The profile is created and appears on the profiles list pane.
 
 Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](device-profile-assign.md).
 
 ## Next steps
 
-Now, when a teacher uses the Classroom app, they will have full control over student devices.
+Now when teachers use the Classroom app, they'll have full control over student devices.
 
 For more information about the Classroom app, see [Classroom help](https://help.apple.com/classroom/ipad/2.0/), on the Apple web site.
 

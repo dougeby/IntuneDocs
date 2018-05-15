@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Data Warehouse User Entity Timeline | Microsoft Docs 
-description: The Intune Data Warehouse represents Users in a timeline.
+title: Data Warehouse User Entity Timeline
+titlesuffix: Microsoft Intune 
+description: Learn how the Intune Data Warehouse represents Users in a timeline.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,15 +24,15 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# User lifetime representation in the Intune Data Warehouse
+# User lifetime representation in the Microsoft Intune Data Warehouse
 
 You can use the month of data snapshots stored in the Intune Data Warehouse to answer questions about time-based trends. For example, you can look at the number of users being added over a month. You might also ask about the number of users who have been removed from the system.
 
-To provide this insight, the data warehouse stores historical information. This means it can tracks the lifetime of an entity. The warehouse records when an entity was created when the state of the entity changes, and when an entity is deleted. With the history captured with daily snapshots of quantitative measurements, you can compare one day to the previous day, and so on.
+To provide this type insight, the data warehouse stores historical information. The data warehouse can track the lifetime of an entity. The warehouse records when an entity was created, when the state of the entity changes, and when an entity is deleted. With the history captured with daily snapshots of quantitative measurements, you can compare one day to the previous day, and so on.
 
 Working with entity lifetimes can be confusing since your entities are changing state. That means if you look at a snapshot on day 30, a user record may not exist in an active state in the data. On day 29-28 the entity record may exist as active. And then before day 28, the user did not exist at all.
 
-This may be clearer if we walk through the lifetime of an entity.
+This scenario may be clearer if you walk through the lifetime of an entity.
 
 Assume a user, **John Smith**, gets assigned a license on 06/01/2017, then the **User** table would have the following entry: 
  
@@ -78,5 +79,5 @@ Any person wanting to see only those dimension entities that currently exist wou
 
 ## Next steps
 
- - To learn more more about the **Current User** entity, see [Reference for current user entity](reports-ref-current-user.md).
- - To learn more more about the **User** entity, see [Reference for user entity](reports-ref-user.md).
+ - To learn more about the **Current User** entity, see [Reference for current user entity](reports-ref-current-user.md).
+ - To learn more about the **User** entity, see [Reference for user entity](reports-ref-user.md).

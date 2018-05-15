@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect app data using app protection policies with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks. While you're making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
@@ -62,9 +62,7 @@ There are additional benefits to using MDM with app protection policies, and com
 - **App protection policies make sure that the app-layer protections are in place.** For example, you can have a policy that requires a PIN to open an app in a work context, prevents data from being shared between apps, and prevents company app data from being saved to a personal storage location.
 
 ## Devices that support MAM
-App protection policies are currently supported on:
--   iOS 8.1 or later
--   Android 4 or later
+Intune app protection policies platform support is aligned with Office application platform support. For details, see [Office System Requirements](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Windows devices are not supported in the MAM without enrollment scenario. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

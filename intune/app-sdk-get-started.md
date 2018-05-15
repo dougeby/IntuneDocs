@@ -4,7 +4,7 @@
 title: Get started with the Microsoft Intune App SDK 
 description: Quickly enable your mobile app for mobile application management (MAM) with Microsoft Intune.
 keywords:
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
@@ -73,10 +73,9 @@ The Intune App SDKs for native iOS and Android are hosted on a Microsoft GitHub 
 * [Intune App SDK for iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Intune App SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-If your app is a Xamarin or Cordova app, please use these SDK variants:
+If your app is a Xamarin app, please use this SDK variant:
 
-* [Intune App SDK Xamarin Component](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Intune App SDK Cordova Plugin](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+* [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
 It's a good idea to sign up for a GitHub account that you can use to fork and pull from our repositories. GitHub lets developers communicate with our product team, open issues and receive quick responses, view release notes, and provide feedback to Microsoft. For questions on the Intune App SDK GitHub, contact msintuneappsdk@microsoft.com.
 
@@ -88,9 +87,7 @@ You will need one of the following developer guides to help you integrate the In
 
 * **[Intune App SDK for Android Developer Guide](app-sdk-android.md)**: This document will walk you step-by-step through enabling your native Android app with the Intune App SDK.
 
-* **[Intune App SDK Cordova Plugin guide](app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
-
-* **[Intune App SDK Xamarin Component guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune app protection policies.
+* **[Intune App SDK Xamarin Bindings guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Xamarin for Intune app protection policies.
 
 
 
@@ -98,9 +95,9 @@ You will need one of the following developer guides to help you integrate the In
  
  In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based conditional access:
  
- * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
+ * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
  
- * The [AAD Client ID](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
+ * The [AAD Client ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
  
 ## Configure Telemetry for your app
 
@@ -112,7 +109,7 @@ Microsoft Intune collects data on usage statistics for your app.
 
 * **Intune App SDK for Android**: The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs telemetry data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII). 
 
-	* If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+	* If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 
  iOS and Android line-of-business app version number is visible <!-- 1380712 -->
@@ -148,7 +145,7 @@ Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate
 
 - **CFBundleShortVersionString**  
     Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.​
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
 
 #### Android

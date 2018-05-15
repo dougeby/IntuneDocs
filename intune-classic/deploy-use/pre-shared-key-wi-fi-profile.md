@@ -28,21 +28,21 @@ ms.custom: intune-classic
 ---
 # Use a custom policy to create a Wi-Fi profile with a pre-shared key
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 
 > [!NOTE]
--	You might find it easier to copy the code from a computer that connects to that network, as described below.
-- For Android, you also have the option of using this [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) provided by Johnathon Biersack.
--	You can add multiple networks and keys by adding more OMA-URI settings.
--  For iOS, use Apple Configurator on a Mac station to set up the profile. Alternatively, use this [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) provided by Johnathon Biersack.
+> -   You might find it easier to copy the code from a computer that connects to that network, as described below.
+> - For Android, you also have the option of using this [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) provided by Johnathon Biersack.
+> -   You can add multiple networks and keys by adding more OMA-URI settings.
+> -  For iOS, use Apple Configurator on a Mac station to set up the profile. Alternatively, use this [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) provided by Johnathon Biersack.
 
 
-1.	To create a Wi-Fi profile with a pre-shared key for Android or Windows or an EAP-based Wi-Fi profile, when you create a policy choose **Custom Configuration** for that device platform rather than a Wi-Fi profile.
+1. To create a Wi-Fi profile with a pre-shared key for Android or Windows or an EAP-based Wi-Fi profile, when you create a policy choose **Custom Configuration** for that device platform rather than a Wi-Fi profile.
 
-2.	Provide a name and description.
-3.	Add a new OMA-URI setting:
+2. Provide a name and description.
+3. Add a new OMA-URI setting:
 
    a.	Enter a name for this Wi-Fi network setting.
 
@@ -52,16 +52,16 @@ Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile 
 
    d.	**OMA-URI**:
 
-    - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Be sure to include the dot character at the beginning.
+   > [!NOTE]
+   > Be sure to include the dot character at the beginning.
 
-    SSID is the SSID for which you’re creating the policy. For example,
-    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   SSID is the SSID for which you’re creating the policy. For example,
+   `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **Value Field** is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
+   e. **Value Field** is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
 4. Choose **OK**, save, and then deploy the policy.
 
     > [!NOTE]
@@ -208,8 +208,8 @@ You can also create an XML file from an existing Wi-Fi connection:
 1. On a computer that is connected to or has recently connected to the wireless network, open the following folder: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
     It’s best to use a computer that has not connected to many wireless networks, because you’ll have to search through each profile to find the right one.
-3.     Search through the XML files to locate the one with the right name.
-4.     After you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
+2. Search through the XML files to locate the one with the right name.
+3. After you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
 
 ## Deploy the policy
 

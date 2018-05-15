@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Devices  - Intune Data Warehouse | Microsoft Docs  
+title: Devices - Intune Data Warehouse
+titlesuffix: Microsoft Intune
 description: Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -146,7 +147,7 @@ The **MdmStatuses** entity indicates compliance state of the device.
 |---------|------------|--------|
 | 0 |Unknown |Device's compliance state is unknown. |
 | 1 |Compliant |The device is compliant. |
-| 2 |Noncompliant |The device is non-compliant. |
+| 2 |Noncompliant |The device is noncompliant. |
 | 3 |Conflict |The device's compliance resulted in s conflict. |
 | 4 |Error |There was error in readign the device's compliance state. |
 
@@ -268,6 +269,7 @@ The **Devices** entity lists all enrolled devices under management and their cor
 | LastPolicyUpdateUtc | Latest time when policy was updated on the device. |
 | LastExchangeStatusUtc | Last time the device synced with exchange. |
 | IsDeleted | Set to True if the device is not managed by Intune anymore. Preserves the last known state. |
+| AndroidSecurityPatchLevel |The date of the device's most recent security patch. |
 
 ## DevicePropertyHistory
 
@@ -415,10 +417,12 @@ The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory
 
 The **ApplicationInventory** entity lists the apps found on the device at the time of inventory collection.
 
-| Property  | Description |
-|---------|------------|
-| DeviceKey |A reference to devices table. |
-| ApplicationKey |? (copied from ExchangeDeviceService\DeviceApplication). |
-| ApplicationName |? (copied from ExchangeDeviceService\DeviceApplication). |
-| ApplicationVersion |? (copied from ExchangeDeviceService\DeviceApplication). |
-| BundleSize |? (copied from ExchangeDeviceService\DeviceApplication). |
+
+|      Property      |                       Description                        |
+|--------------------|----------------------------------------------------------|
+|     DeviceKey      |              A reference to devices table.               |
+|   ApplicationKey   | ? (copied from ExchangeDeviceService\DeviceApplication). |
+|  ApplicationName   | ? (copied from ExchangeDeviceService\DeviceApplication). |
+| ApplicationVersion | ? (copied from ExchangeDeviceService\DeviceApplication). |
+|     BundleSize     | ? (copied from ExchangeDeviceService\DeviceApplication). |
+

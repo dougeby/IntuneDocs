@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Windows 10
-titlesuffix: "Azure portal"
-description: Learn the Intune settings you can use to control device settings and functionality on Windows 10 devices."
+title: Device restriction settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
+description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,27 +18,25 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Windows 10 and later device restriction settings in Microsoft Intune
+# Device restriction for Windows 10 (and newer) settings in Intune
+This article shows you all the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
 - **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
+   - This policy setting is not applied if the computer is Azure Active Directory joined and auto-enrollment is enabled. 
+   - This policy setting does not apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
-- **Diagnostic data submission** - Possible values are:
-	- **None** - No data is sent to Microsoft
-	- **Basic** - Limited information is sent to Microsoft
-	- **Enhanced** - Enhanced diagnostic data is sent to Microsoft
-	- **Full** Sends the same data as Enhanced, plus additional data about the device state
+
 - **Camera** - Allow or block use of the camera on the device.
 - **OneDrive file sync** - Blocks the device from synchronizing files to OneDrive.
 - **Removable storage** - Specifies whether external storage devices, like SD cards can be used with the device.
@@ -56,8 +53,8 @@ ms.custom: intune-azure
 - **Device discovery** - Block a device from being discovered by other devices.
 - **Task Switcher (mobile only)** - Blocks the task switcher on the device.
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
+- **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
-
 
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
@@ -74,12 +71,14 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
+- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
 
 ## Privacy
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -135,13 +134,11 @@ You can add apps that should have a different privacy behavior from what you def
 ## Locked screen experience
 
 - **Action center notifications (mobile only)** – Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in PNG, JPG, or JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
+- **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
 -	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
 -	**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.
-
-
 
 ## App Store
 
@@ -156,8 +153,6 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.
 - 	**Apps from the store only** - Configures whether users can install apps from places other than the app store.
-
-
 
 ## Edge Browser
 
@@ -185,6 +180,8 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+-  **Favorites List** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
+-  **Restrict changes to Favorites** - Set this to **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 
@@ -194,6 +191,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Search
 - **Safe Search (mobile only)** - Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
+- **Display web results in search** - Block or allow web results to appear in searches made on the device.
 
 ## Cloud and Storage
 - 	**Microsoft account** - Lets the user associate a Microsoft account with the device.
@@ -217,7 +215,6 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Manual Wi-Fi configuration** - Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
 - 	**Wi-Fi scan interval** – Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
 -   **Bluetooth allowed services** – Specify as hex strings, a list of allowed Bluetooth services and profiles.
-
 
 ## Control Panel and Settings
 
@@ -260,41 +257,48 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Kiosk (Preview)
 
--   **Kiosk mode** - Identifies the type of [kiosk mode](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supported by the policy. Options include:
+A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
-      - **Not Configured** (default) - The policy does not enable a kiosk mode. 
-      - **Single app kiosk** - The profile enables the device as a single app kiosk.
-      - **Multi-app kiosk** - The profile enables the device as a multi-app kiosk.
+- **Kiosk mode** - Identifies the type of kiosk mode supported by the policy. Options include:
 
-    Single app kiosks require the following settings:
+  - **Not Configured** (default) - The policy does not enable a kiosk mode. 
+  - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
+  - **Multi-app kiosk** - The profile enables the device to run multiple apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need, and removing from their view the apps they don’t need.
 
-      - **User account** - Specifies the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, specify the account in the form of `domain\\username@tenant.org`.
+#### Single app kiosks
+Enter the following settings:
 
-         For devices in public environments, use accounts with minimal privileges to prevent authorized activity.  
+- **User account** - Enter the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, enter the account using the `domain\username@tenant.org` format. 
 
-      - **Application user model ID (AUMID) of app** - Specifies the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `AzureAD\user@contoso.com` format.
 
-    Multi-app kiosks require a kiosk configuration. Use the **Add** button to create a kiosk configuration or select an existing one.
+- **Application user model ID (AUMID) of app** - Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Multi-app kiosk configurations include the following settings:
+#### Multi-app kiosks
+[Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) use a kiosk configuration that lists the allowed apps, and other settings. 
 
-    - **Kiosk configuration name** - A friendly name used to identify a given configuration.
+Use the **Add** button to create a kiosk configuration (or select an existing configuration). Then, enter the following settings:
 
-    - One or more **kiosk apps** consisting of:
+- **Kiosk configuration name** - Enter a friendly name used to identify the configuration.
 
-        - **App Type** that specifies the type of the kiosk app.  Supported values include:   
+- **Kiosk apps** - Enter the apps that are available on the Start menu. The apps you add are the only apps the user can open.
 
-            - **Win32 App** - A traditional desktop app. (You need the fully qualified pathname of the executable, with respect to the device.)
+  - **App Type** - Choose the type of the kiosk app:
+    - **Win32 App** - A traditional desktop app. You need the fully qualified pathname of the executable, with respect to the device.
+    - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **UWP App** - A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identifier** - Enter the fully qualified pathname for the executable file (Win32 apps), or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 
-        - **App Identifier** - Specifies either the fully qualified pathname for the executable file (Win32 apps) or the [app's AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+- **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
 
-    - **Taskbar** indicates whether the taskbar is displayed (**Enabled**) or hidden (**Not configured**) on the kiosk.
+- **Start menu layout** - Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
 
-    - **Start menu layout** - Specifies an XML file that describes how the apps [appear on the Start menu](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Assigned users** - specifies one or more user accounts associated with the kiosk configuration. The account may be local to the device or an Azure AD account login associated with the kiosk app. Specify domain-joined accounts in the form of `domain\\username@tenant.org`.
+  [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
+
+- **Assigned users** - Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account login associated with the kiosk app.
+
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
 ## Windows Defender Antivirus
 
@@ -331,14 +335,11 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 	-	**User defined**
 	-	**Block**
 
-
-
 ### Windows Defender Antivirus Exclusions
 
 - 	**Files and folders to exclude from scans and real-time protection** - Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - 	**File extensions to exclude from scans and real-time protection** - Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions are not included in any real-time or scheduled scans.
 - 	**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes are not included in any real-time, or scheduled scans.
-
 
 ## Network proxy
 
@@ -351,9 +352,7 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 	- 	**Proxy exceptions** - Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
 	- 	**Bypass proxy server for local address** - If you don't want to use the proxy server for local addresses on your intranet, enable this option.
 
-
 ## Windows Spotlight
-
 
 - **Windows Spotlight** – Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings are not available.
 	- **Windows Spotlight on lock screen** – Stop Windows Spotlight from displaying information on the device lock screen.
@@ -363,7 +362,6 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 	- **Windows Spotlight in action center** – Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
 	- **Windows Spotlight personalization** – Stops Windows Spotlight from personalizing results based on the usage of a device.
 	- **Windows welcome experience** – Block the Windows welcome experience that shows the user information about new, or updated features.
-
 
 ## Projection
 
@@ -379,6 +377,11 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **Print service resource URI** - OAuth resource URI for print service as configured in Azure portal.
 - **Maximum printers to query (Mobile only)** - Maximum number of printers that should be queried from a discovery endpoint.
 - **Printer discovery service resource URI** - OAuth resource URI for printer discovery service as configured in the Azure portal.
+
+## Local Printer
+- **Printers** - List of local printers that have been added.
+- **Default printer** - Set the default printer.
+- **User access to add new printers** - Allow or block use of local printers.
 
 ## Reporting and Telemetry
 
@@ -398,15 +401,3 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **Message sync (mobile only)** - Disable Messaging Everywhere and text message backup and restore.
 - **MMS (mobile only)** - Disable the MMS send/receive functionality on the device.
 - **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
-
-
-
-
-
-
-
-
-
-
-
-

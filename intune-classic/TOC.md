@@ -207,7 +207,7 @@
 
 #### [Intune admin console for MAM policies](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
-### [Prepare line of business apps for MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
+### [Prepare line-of-business apps for MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
 #### [Wrap iOS apps](/intune/app-wrapper-prepare-ios?toc=/intune-classic/toc.json)
 #### [Wrap Android apps](/intune/app-wrapper-prepare-android?toc=/intune-classic/toc.json)
 #### [LOB apps on devices not managed by Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)

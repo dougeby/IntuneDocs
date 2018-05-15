@@ -6,7 +6,7 @@ description: Learn how to create an Intune certificate profile.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Configure Intune certificate profiles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 After you've configured your infrastructure and certificates as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md), you can create certificate profiles. Here's the process:
 
@@ -97,39 +97,39 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 
 -  Windows Phone 8.1 and later
 
-2.  Add a **SCEP Certificate Profile** policy
+2. Add a **SCEP Certificate Profile** policy
 
-    Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
-	> [!NOTE]
-	>
-	> Under **Subject name format**, select **Custom** to enter a custom subject name format (in iOS profiles, only).
-	>
-	> The two variables currently supported for the custom format are `Common Name (CN)` and `Email (E)`. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
+3. Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
+   > [!NOTE]
+   > 
+   > Under **Subject name format**, select **Custom** to enter a custom subject name format (in iOS profiles, only).
+   > 
+   > The two variables currently supported for the custom format are `Common Name (CN)` and `Email (E)`. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
+   > 
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
+   > 
+   > In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lists supported strings.
 
-	>     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-	> In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lists supported strings.
-
-4.  Choose **Save Policy**.
+4. Choose **Save Policy**.
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
 ### To create a .PFX certificate profile
 
-1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**, and choose a device platform. .PFX certificates are supported for:
-  - Android 4 and later
-  - Android for Work
-  - Windows 10 and later
-  - Windows Phone 10 and later
-  - iOS 8.0 and later)    
+1. In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**, and choose a device platform. .PFX certificates are supported for:
+   - Android 4 and later
+   - Android for Work
+   - Windows 10 and later
+   - Windows Phone 10 and later
+   - iOS 8.0 and later)    
 
 
-2.  Add a **.PFX Certificate Profile** policy.
-      Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Enter the information requested on the policy form.
-4.  Choose **Save Policy**.
+2. Add a **.PFX Certificate Profile** policy.
+     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Enter the information requested on the policy form.
+4. Choose **Save Policy**.
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Common ways to use Intune
-description: Lists six of the most common tasks that Intune helps with
+title: Common ways to use Microsoft Intune
+description: Learn about six of the most common tasks that Microsoft Intune can help you manage.
 keywords:
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,16 +19,16 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
 ---
 
-# Common ways to use Intune
+# Common ways to use Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you're brand new to enterprise mobility or migrating from another product.  
 
@@ -40,8 +40,8 @@ Following are short introductions to the six most common scenarios that rely on 
 >Do you want to know how Microsoft IT uses Intune to give Microsoft access to corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
 
 >[!IMPORTANT]
->We want to ensure that mobile devices are up to date
->In light of the recent "Trident" malware attacks on iOS devices. So we've published a blog post that's called [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). It provides information about the different ways that Intune can help keep your devices secure and up to date.
+>We want to ensure that mobile devices are up-to-date
+>In light of the recent "Trident" malware attacks on iOS devices. So we've published a blog post that's called [Ensuring mobile devices are up-to-date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). It provides information about the different ways that Intune can help keep your devices secure and up-to-date.
 
 ## Protecting your on-premises email and data so it can be safely accessed by mobile devices
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
@@ -51,7 +51,7 @@ Intune and Microsoft Enterprise Mobility + Security  (EMS) provide a uniquely in
 
 Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](certificates-configure.md) ([Classic portal](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. 
 
-In these cases, the only way to access corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line of business app, so that it can’t pass corporate data to consumer apps or services.
+In these cases, the only way to access corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line-of-business app, so that it can’t pass corporate data to consumer apps or services.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 

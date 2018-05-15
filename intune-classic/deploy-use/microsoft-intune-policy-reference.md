@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Microsoft Intune configuration policy reference
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you decide which Microsoft Intune configuration policy you need to use to manage your devices.
 
@@ -109,18 +109,19 @@ Applies to Windows Phone and enrolled Windows devices only.
 
 ## Common Mobile Device Settings
 
-|Policy name|Use when you want to|
-|---------------|------------------------|
-|**Exchange ActiveSync Policy**|Configure mobile device security and functional settings for devices that are managed by Exchange ActiveSync.<br /><br />For details, see [Exchange ActiveSync policy settings in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Mobile Device Security Policy**|<ul><li>Configures settings for mobile devices (all platforms) including:<br /><br /><ul><li>Security</li><li>Encryption</li><li>System</li><li>Email</li><li>Applications</li></ul></li></ul>
+|                  Policy name                   |                                                                                                                       Use when you want to                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync Policy</strong>   | Configure mobile device security and functional settings for devices that are managed by Exchange ActiveSync.<br /><br />For details, see [Exchange ActiveSync policy settings in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Mobile Device Security Policy</strong> |                                  <ul><li>Configures settings for mobile devices (all platforms) including:<br /><br /><ul><li>Security</li><li>Encryption</li><li>System</li><li>Email</li><li>Applications</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## Policies for Windows PCs managed by the Intune software client
 
 |Policy name|Use when you want to|
 |---------------|------------------------|
-|**Microsoft Intune Agent Settings**|Configure the Intune PC client on computers, including settings for:<br /><br />-   Endpoint Protection<br />-   Software updates<br />-   Policy check schedule<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />Intune clients download new and updated policy according to the **Update and application detection frequency** setting, which defaults to eight hours. However, you can force a refresh of policy on computers at any time.<br /><br />For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Microsoft Intune Agent Settings**|Configure the Intune PC client on computers, including settings for:<br /><br />-   Endpoint Protection<br />-   Software updates<br />-   Policy check schedule<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />Intune clients download new and updated policy according to the **Update and application detection frequency** setting, which defaults to eight hours. However, you can force a refresh of policy on computers at any time.<br /><br />For details, see [Keep Windows PCs up-to-date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Microsoft Intune Center Settings**|Configure details that appear in the Microsoft Intune Center on managed computers.<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows Firewall Settings**|Configures Windows Firewall settings and exceptions for common network communications on computers, including:<br /><br />-   BranchCache<br />-   Remote assistance<br />-   Media sharing<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 

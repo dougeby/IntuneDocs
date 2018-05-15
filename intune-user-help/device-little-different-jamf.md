@@ -4,8 +4,8 @@
 title: Errors you might see if you use Jamf Self Service | Microsoft Docs
 description: Learn more about your Intune-enabled macOS device managed by Jamf.
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article

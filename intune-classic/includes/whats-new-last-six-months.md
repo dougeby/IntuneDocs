@@ -111,7 +111,7 @@ You can now control mobile device access to corporate resources using conditiona
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block non-compliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 
@@ -344,7 +344,7 @@ App developers can now use the Intune App SDK Xamarin component to enable MAM fu
 __Symantec signing certificate no longer requires signed Windows Phone 8 Company Portal for upload__
 Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
-###Deprecations
+### Deprecations
 
 __Support for the Windows Phone 8 Company Portal__
 Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.

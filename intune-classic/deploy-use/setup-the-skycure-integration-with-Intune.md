@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Set up the Skycure integration with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You need to add Skycure apps into Azure AD to have Single Sign On capabilities.
 
@@ -44,7 +44,7 @@ Skycure supports two modes of integration with Intune:
 
 -   **Read-only integration (Basic setup):** Only inventories devices from Azure Active Directory and populates them in the Skycure console.
 <br>
-    -   If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Skycure Management console, the integration is read-only and therefore will never change a devices state (compliant or non-compliant) in Intune.
+    -   If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Skycure Management console, the integration is read-only and therefore will never change a devices state (compliant or noncompliant) in Intune.
 <br></br>
 -   **Full integration:** Allows Skycure to report devices on risk and security incident details to Intune, which creates a bi-directional communication between both cloud services.
 

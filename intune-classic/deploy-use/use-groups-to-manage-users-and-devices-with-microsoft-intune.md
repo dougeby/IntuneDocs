@@ -4,7 +4,7 @@
 title: Use groups to manage users and devices 
 description: Create and manage groups by using the Groups workspace.
 keywords:
-author: arob98
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 # Use groups to manage users and devices in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes how to create groups in Intune. It also provides information about how the management of groups is going to change over the coming months. 
 

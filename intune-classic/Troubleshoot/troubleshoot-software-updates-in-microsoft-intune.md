@@ -6,7 +6,7 @@ description: Solve software update problems in Microsoft Intune.
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot software updates in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this section to help you solve software update problems in Microsoft Intune.
 
@@ -256,7 +256,7 @@ The following table lists the Intune **Update Agent** error codes. If you cannot
 - They experience high CPU utilization.
 - Applications install slowly when they’re installed through the Intune portal.
 - The Microsoft Intune Center triggers the following error: *An error occurred while updating your computer. Error found: Code 0x800705b4*.
-- The status field under Intune Admin Console > Groups > All Devices displays: *One or more agents that are installed on this computer have errors. The information for this computer may not be accurate or up to date*.
+- The status field under Intune Admin Console > Groups > All Devices displays: *One or more agents that are installed on this computer have errors. The information for this computer may not be accurate or up-to-date*.
 
 This problem may occur if superseded updates (updates that have been replaced by another update) have not been declined for an extended period. During certain processes, such as installing an application, Windows checks all superseded updates in sequence so that the updates and their successors can be correctly mapped. If the list of superseded updates grows too large, this checking task may cause high CPU utilization because of the processing load and time required. This issue primarily affect clients that are running Windows 7 because of the large number of superseded updates that are available for Windows 7. Windows 8 and later operating systems do not have as many available superseded updates and therefore are not as susceptible to this issue.
 

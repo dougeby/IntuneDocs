@@ -6,7 +6,7 @@ description: Troubleshoot policy configuration issues.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot policies in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 If you are having problems deploying and managing Intune policies, start here. This topic contains some common problems you might encounter together with solutions.
 
