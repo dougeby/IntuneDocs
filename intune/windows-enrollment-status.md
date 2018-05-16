@@ -76,3 +76,5 @@ For account setup, the enrollment status page tracks the following items:
 - Certificates
     - Certificate profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 
+## Next steps
+After you set up Windows enrollment pages, learn how to manage Windows devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
