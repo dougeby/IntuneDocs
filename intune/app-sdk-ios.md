@@ -185,7 +185,7 @@ Follow the steps below to link your app to the ADAL binaries:
 
 
 
-### Share the ADAL token cache with other apps signed with the same provisioning profile?**
+### Share the ADAL token cache with other apps signed with the same provisioning profile?
 
 Follow the instructions below if you want to share ADAL tokens between apps signed with the same provisioning profile:
 
