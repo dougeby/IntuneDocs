@@ -44,7 +44,7 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1805 start -->
 
-### Support for Palo Alto Networks GlobalProtect VPN profiles <-- 1333680 eeready -->
+### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 eeready ! -->
 
 With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
 
