@@ -6,7 +6,8 @@ titleSuffix: Microsoft Intune
 description: Greet your users who are enrolling Windows 10 devices.
 keywords:
 author: ErikjeMS
-manager: erikje
+ms.author: erikje
+manager: dougeby
 ms.date: 5/17/2017
 ms.topic: article
 ms.prod:
