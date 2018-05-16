@@ -69,8 +69,8 @@ For account setup, the enrollment status page tracks the following items:
     - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
     - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
     - LoB store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member with installation context = User.
-    - Online store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User
-    - Offline store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User
+    - Online store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User.
+    - Offline store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User.
 - Connectivity profiles
     - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 - Certificates
