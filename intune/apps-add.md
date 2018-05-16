@@ -123,9 +123,7 @@ Before you begin to add and assign apps, consider the following points:
 - Some apps or items that you assign might depend on built-in iOS apps. For example, if you assign a book in the iOS store, the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
 
 ## Cloud storage space
-All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A full subscription includes 20 GB of storage space.
-
-You can purchase additional storage for Intune using your original purchase method. If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions). Otherwise, contact your partner or sales associate.
+All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A full subscription does not limit the total amount of storage space.
 
 Requirements for cloud storage space are as follows:
 
