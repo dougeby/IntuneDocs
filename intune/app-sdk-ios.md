@@ -122,14 +122,15 @@ To enable the Intune App SDK, follow these steps:
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
-	> [!NOTE]
-  > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
+	
+    > [!NOTE]
+    > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
 
 	You can view Info.plist in raw format (to see the key names) by right-clicking anywhere in the document body and changing the view type to **Show Raw Keys/Values**.
 
 6. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
-  > [!NOTE]
+    > [!NOTE]
 	> Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. For example:
 	```xml
 	<key>keychain-access-groups</key>
