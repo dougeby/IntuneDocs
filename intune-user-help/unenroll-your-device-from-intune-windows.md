@@ -79,7 +79,7 @@ There are two kinds of data that the Company Portal stores on your Windows devic
 -	**Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
 -	**Application cache**: Support files that are required for the app to work, such as icons and settings.
 
-To delete all log and cache data, complete one of the following steps. 
+To delete the stored logs and application data, complete one of the following steps. 
 
 * Uninstall the Company Portal app. [Uninstalling the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) will remove some of the app data stored on your device.  
 
