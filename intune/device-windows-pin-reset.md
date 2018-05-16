@@ -4,8 +4,8 @@
 title: Reset passcode on Windows devices with Microsoft Intune - Azure | Microsoft Docs
 description: To reset the passcode on Windows devices, install the Microsoft Pin Reset Service and Microsoft Pin Reset Client, create a device policy using your Azure Active Directory Directory ID, and then reset the passcode in the Azure portal using Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article

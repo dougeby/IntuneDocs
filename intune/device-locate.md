@@ -4,8 +4,8 @@
 title: Find lost iOS devices with Microsoft Intune - Azure | Microsoft Docs
 description: Locate lost or stolen iOS devices by using the locate device feature in Microsoft Intune. Get details on security and privacy information when using the locate device action.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -53,6 +53,15 @@ This feature is not supported for the following systems:
 
 >[!NOTE]
 >For privacy reasons, the distance you can zoom into the map is limited.
+
+## Activate lost mode sound alert on an iOS device
+
+If someone has lost their iOS 9.3 or later device, you can remotely trigger the device to play an alert sound so the user can find it. The device must be in [lost mode](device-lost-mode.md).
+
+In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices** > **All devices** > select an iOS device > **Overview** > **More** > **Play Lost mode sound (supervise only)**.
+
+The sound will continue to play until the user disables the sound on the device or the device is removed from lost mode.
+
 
 ## Security and privacy information for lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.

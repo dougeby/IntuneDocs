@@ -5,8 +5,8 @@ title: Getting started with Microsoft Intune
 titleSuffix: 
 description: Go through a series of short hands-on exercises to learn about Intune.
 keywords:
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: get-started-article

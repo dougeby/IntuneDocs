@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,7 +74,7 @@ The following device restriction settings are supported on devices running Windo
 
 - **System Time modification** - Prevents the end user from changing the device date and time.
 
-## Kiosk (Preview)
+## Kiosk
 
 A kiosk device typically runs a specific app. Users are prevented from accessing any features or functions on the device outside of the kiosk app.
 
@@ -82,6 +82,9 @@ A kiosk device typically runs a specific app. Users are prevented from accessing
 
   - **Not Configured** (default) - The policy does not enable a kiosk mode. 
   - **Single app kiosk** - The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
+  - **Multi-app kiosk** - The profile enables the device to run multiple apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need. And, removing the apps they don’t need from their view. 
+  
+    When you add apps for a multi-app kiosk experience, you also add a start menu layout file. [Start menu layout file](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) includes sample XML that can be used in Intune. 
 
 #### Single app kiosks
 Enter the following settings:

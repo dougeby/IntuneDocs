@@ -4,8 +4,8 @@
 title: Manage devices with Microsoft Intune - Azure | Microsoft Docs
 description: Review the devices you manage with Microsoft Intune, including exporting a devices list into csv format, view your Azure Active Directory-joined devices, review a change log of actions on the device, use TeamViewer Connector to allow IT admins remotely troubleshoot Android devices, and view all the actions you can run on your devices.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: get-started-article

@@ -5,8 +5,8 @@ title: iOS apps with app protection policies
 titlesuffix: Microsoft Intune
 description: Learn what to expect from an iOS app that has protection policies.
 keywords:
-author: erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
