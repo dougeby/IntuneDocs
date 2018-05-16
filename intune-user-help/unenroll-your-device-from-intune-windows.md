@@ -76,13 +76,13 @@ Complete the following steps to remove a Windows 8.1 mobile device from Intune.
 ## Removing your personal information after removing the Company Portal
 There are two kinds of data that the Company Portal stores on your Windows device:
 
--	**Diagnostic logs**: Standard app activity data that Microsoft collects is automatically erased when you remove the device from the Company Portal. App activity data is, for example, data about how long the app was open or if the app crashed.
+-	**Diagnostic logs**: Standard app activity data that Microsoft collects is automatically erased when the Company Portal app is uninstalled. App activity data is, for example, data about how long the app was open or if the app crashed.
 -	**Application cache**: Support files that are required for the app to work, such as icons and settings.
 
-There are a few steps you need to take to completely delete this information.
+To completely delete this information, do one of the following:
 
-1. Uninstall the Company Portal. [Uninstalling the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) will remove some of the app data stored on your device.  
+* Uninstall the Company Portal app. [Uninstalling the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) will remove some of the app data stored on your device.  
 
-2. Reset the Company Portal to reset the stored app data. Open the **Settings** app  and select > **Apps** > **Company Portal** > **Advanced options** > **Reset**. 
+* Reset the Company Portal to reset the stored app data. Open the **Settings** app  and select > **Apps** > **Company Portal** > **Advanced options** > **Reset**. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
