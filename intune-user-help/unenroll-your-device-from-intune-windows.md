@@ -81,8 +81,8 @@ There are two kinds of data that the Company Portal stores on your Windows devic
 
 To delete the stored logs and cache, complete one of the following steps:
 
-* Uninstall the Company Portal app. [Uninstalling the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) will remove some of the app data stored on your device.  
+* [Uninstall the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-* Reset the Company Portal to reset the stored app data. Open the **Settings** app  and select > **Apps** > **Company Portal** > **Advanced options** > **Reset**. 
+* Reset the Company Portal app. Open the **Settings** app and select > **Apps** > **Company Portal** > **Advanced options** > **Reset**. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
