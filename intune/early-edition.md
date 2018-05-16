@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,6 +43,13 @@ This page is updated periodically. Check back for additional updates.
 ## Intune in the Azure portal
 
 <!-- 1805 start -->
+
+### Support for Palo Alto Networks GlobalProtect VPN profiles <-- 1333680 eeready -->
+
+With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
+
+- iOS
+- Windows 10
 
 ### Set compliance by device location <!-- 851881 ! -->
 In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You will be able to create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
