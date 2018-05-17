@@ -4,8 +4,8 @@
 title: Reset device passcodes with Microsoft Intune - Azure | Microsoft Docs
 description: Remove or reset the passcode by using the remove passcode action on devices you manage or monitor with Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/29/2018
 ms.topic: article
@@ -54,7 +54,7 @@ To create a new passcode for a device, use the **Remove passcode** action.
 
 ## Resetting Android for Work passcodes
 
-Supported Android for Work devices receive a new device unlock password or a managed profile challenge for the end user. For devices on Android 7.0 or later with Work profiles, end users receive notifications to activate their reset passcode token immediately after enrollment is completed. The notification is displayed if a Work profile password is required and set. Once their passcode is entered, the notification is dismissed.
+Supported Android for Work devices receive a new managed profile unlock password or a managed profile challenge for the end user. For devices on Android 7.0 or later with Work profiles, end users receive notifications to activate their reset passcode token immediately after enrollment is completed. The notification is displayed if a Work profile password is required and set. Once their passcode is entered, the notification is dismissed.
 
 ## Resetting iOS passcodes
 

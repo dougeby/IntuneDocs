@@ -42,7 +42,7 @@ Prerequisites for device compliance policy with MTD:
 
 -   Set up MTD integration with Intune
 
-## To create a MTD device compliance policy
+## To create an MTD device compliance policy
 
 1.  Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
 
@@ -71,7 +71,7 @@ Prerequisites for device compliance policy with MTD:
 > [!IMPORTANT]
 > If you create conditional access policies for Office 365 or other services, the device compliance evaluation is assessed and noncompliant devices are blocked from accessing corporate resources until the threat is resolved in the device.
 
-## To assign a MTD device compliance policy
+## To assign an MTD device compliance policy
 
 To assign a device compliance policy to users, choose a policy that you have previously configured. Existing policies can be found in the **Device compliance – policies** pane.
 

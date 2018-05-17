@@ -7,10 +7,10 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 

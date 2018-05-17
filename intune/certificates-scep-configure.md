@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,13 +44,11 @@ The NDES server must be domain joined to the domain that hosts the CA, and not b
   -  Allows devices to receive certificates using an Internet connection.
   -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
 
-> [!NOTE]
-> - The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
-> - The WAP server must have an SSL certificate that matches the name being published to external clients, and trust the SSL certificate used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
-> 
->   For information about certificates for WAP, see the [Plan certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates).
-> 
->   For general information about WAP servers, see [Working with Web Application Proxy](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
+#### Additional
+- The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
+- The WAP server must have an SSL certificate that matches the name being published to external clients, and trust the SSL certificate used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
+
+For more information, see [Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) and [general information about WAP servers](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
 
 ### Network requirements
 
@@ -310,6 +308,9 @@ In this task, you:
 6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
+    
+    > [!IMPORTANT]
+    > The Intune Certificate Connector can't be enrolled on a device with Internet Explorer Enhanced Security Configuration enabled. To use the Intune Certificate Connector, [disable IE Enhanced security configuration](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 7. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 
@@ -373,13 +374,13 @@ To validate that the service is running, open a browser, and enter the following
        - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
        - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-       > [!TIP]
-       > To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
+       - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
+
+          To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
        By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
-
-
-
 
 - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate is used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
 - **Key usage**: Enter the key usage options for the certificate. Your options:

@@ -78,6 +78,6 @@ Access is granted when the device is remediated:
 Learn how to protect access to company resource based on device, network, and application risk with:
 
 - [Lookout](lookout-mobile-threat-defense-connector.md)
-- [Skycure](skycure-mobile-threat-defense-connector.md)
+- [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

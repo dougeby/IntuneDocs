@@ -5,8 +5,8 @@ title: Enable Google Play Protect compliance with Microsoft Intune
 titleSuffix: 
 description: Learn how to create a compliance policy for Android devices to enable Google Play Protect.
 keywords:
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article

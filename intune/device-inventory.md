@@ -4,10 +4,10 @@
 title: View device details with Microsoft Intune - Azure | Microsoft Docs
 description: View your device details, including operating systems, storage space, manufacturer, and model. Get a list of installed apps, check compliance policies, and set up TeamViewer with Microsoft Intune in Azure. Similar to viewing inventory of the devices you manage.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,6 +53,16 @@ This article shows you how to view all your devices, and their properties in the
    - **Device configuration** shows all device configuration policies assigned to the device, and if the policy succeeded or failed.
 
 Intune collects an app list only on corporate-owned devices. Apps aren't checked on personal devices. For Windows 10 PCs, only modern apps are listed for corporate-owned devices. Intune doesn't collect information about Win32 apps on the device. Depending on the carrier used by the devices, not all apps might be collected.
+
+|Platform|For Personal-owned Devices|For Company-owned devices|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (without the Configuration Manager client)|Only managed apps|Only managed apps|
+|Windows 8.1 (without the Configuration Manager client)|Only managed apps|Only managed apps|  
+|Windows Phone 8|Only managed apps|Only managed apps|  
+|Windows RT|Only managed apps|Only managed apps|  
+|iOS|Only managed apps|All apps installed on the device|
+|macOS|All apps installed on the device|All apps installed on the device|  
+|Android|Only managed apps|All apps installed on the device|  
 
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.

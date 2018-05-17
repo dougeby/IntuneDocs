@@ -5,8 +5,8 @@ title: Intune classic groups in the Azure portal
 titleSuffix: Microsoft Intune
 description: Learn what's new with groups in the Microsoft Intune Azure portal.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article

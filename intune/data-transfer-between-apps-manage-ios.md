@@ -5,8 +5,8 @@ title: Manage transferring data between iOS apps
 titlesuffix: Microsoft Intune
 description: Understand how to use mobile app management policies in Microsoft Intune to manage data transfers between apps.
 keywords:
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article

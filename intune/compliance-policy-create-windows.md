@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -99,7 +99,7 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
     - Symbols
     - Numbers
 
-    Setting a higher number requires the user to create a password that is more complex. For devices that run Windows and accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
+    Setting a higher number requires the user to create a password that is more complex. For devices that run Windows, and are accessed with a Microsoft account, the compliance policy fails to evaluate correctly if minimum password length is greater than eight characters, or if minimum number of character sets is more than two.
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
@@ -116,33 +116,28 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 - **Require BitLocker**: When BitLocker is on, the device can protect data stored on the drive from unauthorized access when the system is turned off, or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data. It also helps to ensure that a computer is not tampered with, even if it's left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
 - **Require Secure Boot to be enabled on the device**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies the signature before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
 - **Require code integrity**: Code integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. Or whether a system file has been modified by malicious software run by a user account with administrator privileges.
-- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from your defense threat services as a condition for compliance. Choose the maximum allowed threat level:
-  - **Secured**: This option is the most secure, as the device can't have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
-  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-  - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
 See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details on how the HAS service works.
 
 ### Device properties
 
-- **Minimum OS required**: Enter the major.minor.build.CU number. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
+- **Minimum OS version**: Enter the minimum allowed version, in the major.minor.build.revision number format. The build.revision number must correspond to the version returned by the `ver` or `winver` command.
 
   When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
-- **Maximum OS version allowed**: Enter the major.minor.build.CU number. The build.CU number must correspond to the version returned by the `ver` or `winver` command.
+- **Maximum OS version**: Enter the maximum allowed version, in the major.minor.build.revision number format. The build.revision number must correspond to the version returned by the `ver` or `winver` command.
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-- **Minimum OS required for mobile devices**: Enter the major.minor.build number.
+- **Minimum OS required for mobile devices**: Enter the minimum allowed version, in the major.minor.build number format.
 
   When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
-- **Maximum OS required for mobile devices**: Enter the major.minor.build number.
+- **Maximum OS required for mobile devices**: Enter the maximum allowed version, in the major.minor.build number.
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum.
+- **Valid operating system builds**: Enter a range for the acceptable operating systems versions, including a minimum and maximum. You can also **Export** a comma-separated values (CSV) file list of these acceptable OS build numbers.
 
 ### System security settings
 
@@ -152,7 +147,7 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
 - **Password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
 
-  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric** , this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
+  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
     - Lowercase letters
     - Uppercase letters
     - Symbols
@@ -166,9 +161,17 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
-### Encryption
+#### Encryption
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
+
+### Windows Defender ATP
+
+- **Require the device to be at or under the machine risk score**: Use this setting to take the risk assessment from your defense threat services as a condition for compliance. Choose the maximum allowed threat level:
+  - **Clear**: This option is the most secure, as the device can't have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
+  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
 ## Windows Holographic for Business
 
@@ -179,17 +182,17 @@ Windows Holographic for Business uses the **Windows 10 and later** platform. Win
 To verify device encryption on the Microsoft HoloLens, see [Verify device encryption](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
 ## Surface Hub
-Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AD)).
+Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (also requires Azure Active Directory (AAD)) and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure Active Directory joined for compliance and conditional access to function.
 
 See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 
-## Assign user groups
+## Assign user or device groups
 
 1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
 2. Choose the policy, and choose **Assignments**. You can include or exclude Azure AD security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
+3. Choose **Selected groups** to see your Azure AD security groups. Select the user or device groups you want this policy to apply, and choose **Save** to deploy the policy.
 
-You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
+You have applied the policy. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  

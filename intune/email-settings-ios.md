@@ -5,10 +5,10 @@ title: Microsoft Intune email settings for iOS devices
 titleSuffix:
 description: Learn the Microsoft Intune settings you can use to configure email settings on devices running iOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,7 +41,7 @@ This article shows you the email profile settings you can configure for your dev
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
 - **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
 - **S/MIME** - Send outgoing email using S/MIME signing.
-	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
+	- If you selected **Certificate**, select a PKCS certificate profile you previously created to authenticate the Exchange connection.
 - **Amount of email to synchronize** - Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts** - This allows users to move email messages between different accounts they have configured on their device.
 - **Allow email to be sent from third-party applications** - Allow the user to select this profile as the default account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.
