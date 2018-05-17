@@ -136,10 +136,10 @@ Perform the following steps to install the Intune on-premises Exchange connector
 
 During configuration, the Exchange connector stores your proxy settings to enable access to the Internet. If your proxy settings change, you will have to reconfigure the Exchange connector to apply the updated proxy settings to the Exchange connector.
 
-After the Exchange connector sets up the connection, mobile devices that are associated with users that are managed in Exchange Connector are automatically synchronized and added to the Exchange connector. This synchronization might take some time to complete.
+After the Exchange connector sets up the connection, mobile devices that are associated with users that are managed in Exchange are automatically synchronized and added to the Exchange connector. This synchronization might take some time to complete.
 
 > [!NOTE]
-> If you have installed the On-premises Exchange Connector, and if at some point you delete the Exchange connection, you must uninstall the on-premises Exchange connector from the computer onto which it was installed.
+> If you have installed the on-premises Exchange connector, and if at some point you delete the Exchange connection, you must uninstall the on-premises Exchange connector from the computer onto which it was installed.
 
 ## Install connectors for multiple Exchange organizations
 Intune supports multiple on-premises Exchange connectors per subscription. For a tenant with multiple Exchange organizations, you can set up one connector for each Exchange organization. Download the .zip folder once, and then for each Exchange organization, follow the steps in the previous section to extract and run the setup program on a server in the organization.
