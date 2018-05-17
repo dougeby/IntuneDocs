@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up the Intune on-premises Exchange connector in Microsoft Intune Azure
 
-In an on-premises Exchange Server environment, Intune conditional access can be used to allow or block access to Exchange on-premises mailboxes. Use an Exchange Active Sync on-premises connector to connect Intune to your Exchange organizations, and set up Intune conditional access along with device compliance policies. Then, when a device attempts to connect to Exchange, Intune determines if the device is enrolled in Intune and is compliant. To determine which devices are enrolled in Intune, the on-premises Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records. For more about how this works, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
+In an on-premises Exchange Server environment, Intune conditional access can be used to allow or block access to Exchange on-premises mailboxes. Use Exchange Active Sync on-premises connectors to connect Intune to your Exchange organizations, and set up Intune conditional access along with device compliance policies. Then, when a device attempts to connect to Exchange, Intune determines if the device is enrolled in Intune and is compliant. To determine which devices are enrolled in Intune, the on-premises Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records. For more about how this works, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Intune now supports multiple on-premises Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
@@ -155,10 +155,10 @@ After the Exchange connector creates a connection to Exchange using the specifie
 
 ## Monitor the Exchange connector activity
 
-After you have successfully configured the Exchange Connector, you can view the status of the connection and the last successful synchronization attempt. To validate the Exchange Connector connection:
+After you have successfully configured Exchange connectors, you can view the status of the connections and the last successful synchronization attempt. To validate the Exchange connector connections:
 
 1. On the Intune Dashboard, choose **On-premises access**.
-2. Under **Manage**, select **Exchange on-premises access** to verify the connection status.
+2. Under **Setup**, select **Exchange ActiveSync connectors** to verify the connection status for each Exchange connector.
 
 You can also check the time and date of the last successful synchronization attempt.
 
