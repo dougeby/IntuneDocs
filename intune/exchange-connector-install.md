@@ -144,7 +144,7 @@ After the Exchange connector sets up the connection, mobile devices that are ass
 ## Install connectors for multiple Exchange organizations
 Intune supports multiple on-premises Exchange connectors per subscription. For a tenant with multiple Exchange organizations, you can set up one connector for each Exchange organization. Download the .zip folder once, and then for each Exchange organization, follow the steps in the previous section to extract and run the setup program on a server in the organization.
 
-The manual sync, high availability, and monitoring features described in the following sections are supported for each Exchange organization connected to Intune.
+The high availability, monitoring, and manual sync features described in the following sections are supported for each Exchange organization connected to Intune.
 
 ## On-premises Exchange connector high availability support 
 After the Exchange connector creates a connection to Exchange using the specified CAS, the connector has the ability to discovery other CASs. If the primary CAS becomes unavailable, the connector will failover to another CAS, if available, until the primary CAS becomes available. This feature is on by default. You can turn this feature off by using the following procedure:
