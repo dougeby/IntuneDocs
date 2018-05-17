@@ -35,6 +35,13 @@ This article describes on how to set up app-based conditional access policies fo
 > [!IMPORTANT]
 > This article walks through the steps to add an app-based conditional access policy. Note that you can use the same steps when adding apps such as SharePoint Online, Microsoft Teams, and Microsoft Exchange Online from the list of approved apps.
 
+## Create app-based conditional access policies in Azure AD workload
+
+IT admins can create app-based conditional access policies from the Azure AD workload. This gives convenience so you don't need to switch between the Azure and the Intune workloads.
+
+> [!IMPORTANT]
+> You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
+
 ### To create an app-based conditional access policy
 
 > [!IMPORTANT]
