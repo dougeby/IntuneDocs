@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/23/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,6 +55,7 @@ Depending on the settings you choose, not all values may be configurable.
   - **SonicWALL Mobile Connect**
   - **Check Point Capsule VPN**
   - **Citrix**
+  - **Palo Alto GlobalProtect**
   - **Automatic**
   - **IKEv2**
   - **L2TP**
