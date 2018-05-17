@@ -33,7 +33,7 @@ ms.custom: intune-azure
 This article describes on how to set up app-based conditional access policies for apps that are part of the list of approved apps. The list of approved apps consists of apps that were tested by Microsoft.
 
 > [!IMPORTANT]
-> This article walks through the steps to add an app-based conditional access policy. Note that you can use the same steps when adding apps such as SharePoint Online, Microsoft Teams, and Microsoft Exchange from the list of approved apps.
+> This article walks through the steps to add an app-based conditional access policy. Note that you can use the same steps when adding apps such as SharePoint Online, Microsoft Teams, and Microsoft Exchange Online from the list of approved apps.
 
 ### To create an app-based conditional access policy
 
