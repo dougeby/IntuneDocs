@@ -52,7 +52,7 @@ You can create VPN profiles using the following connection types:
 |Cisco AnyConnect|Yes|Yes|Yes|No|No|No|
 |SonicWall Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
 |F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
-|Palo Alto GlobalProtect|No|No|Yes|No|No|Yes|
+|Palo Alto GlobalProtect|No|Yes|No|No|No|Yes|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
 |Citrix|Yes|Yes|No|No|No|Yes|

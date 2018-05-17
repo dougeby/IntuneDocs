@@ -176,6 +176,7 @@ With your Per-App VPN set-up and associated with your app, verify the connection
     - Cisco AnyConnect
     - F5
     - SonicWall
+    - Palo Alto GlobalProtect
 
 ### Connect using the Per-App VPN
 
