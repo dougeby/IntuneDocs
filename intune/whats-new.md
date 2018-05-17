@@ -45,6 +45,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+
+## Week of May 14, 2018
+
+### Require installation of policies, apps, certificate and network profiles <!-- 1553555 -->
+
+Admins can block end users from accessing the Windows 10 RS4 desktop until Intune installs  policies, apps, and certificate and network profiles during the provisioning of AutoPilot devices. For more info, see [Set up an enrollment status page](windows-enrollment-status.md).
+
 ## Week of May 7, 2018
 
 ### App management
