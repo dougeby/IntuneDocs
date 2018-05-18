@@ -30,6 +30,8 @@ ms.custom: intune-azure
 
 Intune admins can use audit logs to track activities surrounding personal data. Admins can also export and delete personal data.
 
+(azure-docs-pr\includes\gdpr-intro-sentence.md)
+
 ## Audit personal data
 
 Audit logs provide tenant admins with a record of activities that generate a change in Microsoft Intune. Audit logs are available for many manage activities and typically create, update (edit), delete, and assign actions. Remote tasks that generate audit events can also be reviewed. These audit logs may contain personal data from users whose devices are enrolled in Intune.  
