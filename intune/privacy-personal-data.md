@@ -33,7 +33,7 @@ End users can receive, transmit, and store data on devices managed by Intune. Th
 
 Microsoft Intune does not use any personal data collected as part of providing the service for profiling, advertising, or marketing purposes.
 
-If you are looking for information about Intune and the General Data Protection Regulation, see the [Service Trust Portal](https://servicetrust.microsoft.com/).
+(azure-docs-pr\includes\gdpr-dsr-and-stp-note.md)
 
 ## Your company terms and conditions
 
