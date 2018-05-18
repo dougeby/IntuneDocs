@@ -27,16 +27,15 @@ ms.suite: ems
 ms.custom: intune-enduser
 
 ---
-
 # Remove your device from the Company Portal
 
-If you decide you no longer want your device to be managed by your company or organization, you can remove it from the Company Portal by using the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled into management with your IT department. If you remove your device, it will no longer be listed in the Company Portal, and you might also lose access to company or school data, apps, and email.
+If you decide you no longer want your device to be managed by your company or organization, you can remove it from the Company Portal via the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). If you remove your device, it will no longer be listed in the Company Portal. You may also lose access to your organization's data, apps, and email.
 
 To remove your device:
 
 1. On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
 
-   ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
+   ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Sign out buttons.](/media/iwp-expanded-sidebar.png)
 
 2. On the __My Devices__ page, select the name of the device you want to remove.
 
