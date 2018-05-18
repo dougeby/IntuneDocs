@@ -56,7 +56,7 @@ When tenant admins turn on certain functionality (like the Apple Device Enrollme
 - Third parties acting as Microsoft’s agents.
 - Third parties not acting as Microsoft’s agents, but only when tenant admins explicitly grant Intune permission to do so.
 
-All third-parties acting as Microsoft agents are included in in the [Online Services Subcontractor list](https://aka.ms/Online_Serv_Subcontractor_List).
+All third-parties acting as Microsoft agents are included in the [Online Services Subcontractor list](https://aka.ms/Online_Serv_Subcontractor_List).
 
 Sharing data with such entities is done to aid customer and technical support, service maintenance, and other operations.
 
