@@ -529,7 +529,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!NOTE] The IntuneMAMConfigurator tool can be used to add the Intune types to the activation rule. If your existing activation rule uses the predefined string constants (e.g. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, etc.), the predicate syntax can get quite complex. The IntuneMAMConfigurator tool can also be used to convert the activation rule from the string constants to a predicate string while adding the Intune types. The IntuneMAMConfigurator is found in our GitHub repository. 
+> [!NOTE]
+> The IntuneMAMConfigurator tool can be used to add the Intune types to the activation rule. If your existing activation rule uses the predefined string constants (e.g. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, etc.), the predicate syntax can get quite complex. The IntuneMAMConfigurator tool can also be used to convert the activation rule from the string constants to a predicate string while adding the Intune types. The IntuneMAMConfigurator is found in our GitHub repository. 
 
 
 ## Enabling MAM targeted configuration for your iOS applications
