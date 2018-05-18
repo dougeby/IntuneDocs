@@ -144,4 +144,4 @@ Aggregated data collected by Intune may include, but is not limited to:
 
 ## Next steps
 
-Find out more about how Intune [stores and processes](privacy-data-storage-processing.md) and [shares](privacy-sharing-data.md) personal data. 
+Find out more about how Intune [stores and processes](privacy-data-store-process.md) and [shares](privacy-data-secure-share.md) personal data. 

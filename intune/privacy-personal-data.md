@@ -43,4 +43,4 @@ You can display your company’s terms and conditions in the Intune Company Port
 
 ## Next steps
 
-Find out more about how Intune [collects](privacy-data-collection.md), [stores and processes](privacy-data-storage-processing.md), and [shares](privacy-sharing-data.md) personal data. 
+Find out more about how Intune [collects](privacy-data-collect.md), [stores and processes](privacy-data-store-process.md), and [shares](privacy-data-secure-share.md) personal data. 

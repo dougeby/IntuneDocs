@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Data storage and processing in Intune
 
-After Intune [collects the data](privacy-data-collection.md), storage and processing of that data proceeds as detailed below.
+After Intune [collects the data](privacy-data-collect.md), storage and processing of that data proceeds as detailed below.
 
 ## Storing personal data
 
@@ -73,4 +73,4 @@ To restrict the processing of a user’s personal data, you can delete the users
 
 ## Next steps
 
-Find out more about how Intune [secures and shares](privacy-sharing-data.md) personal data. 
+Find out more about how Intune [secures and shares](privacy-data-secure-share.md) personal data. 
