@@ -131,7 +131,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Locations
 
-In your policy, choose from existing locations. Don't have a location yet? [Use Locations (network fence) in Intune](yse-network-locations.md) provides some guidance.
+In your policy, choose from existing locations. Don't have a location yet? [Use Locations (network fence) in Intune](use-network-locations.md) provides some guidance.
 
 1. Choose **Select locations**.
 2. From the list, check your location, and choose **Select**.
