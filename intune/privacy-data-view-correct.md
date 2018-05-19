@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 Intune admins can view some personal data based on their access permissions, but only end users can change their device's personal data.
 
-[!INCLUDE [GDPR-related guidance](../../includes/gdpr-dsr-and-stp-note.md)]
+[!INCLUDE [GDPR-related guidance](/includes/gdpr-dsr-and-stp-note.md)]
 
 
 ## View personal data

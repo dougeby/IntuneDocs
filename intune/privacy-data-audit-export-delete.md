@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 Intune admins can use audit logs to track activities surrounding personal data. Admins can also export and delete personal data.
 
-[!INCLUDE [GDPR-related guidance](../../includes/gdpr-intro-sentence.md)]
+[!INCLUDE [GDPR-related guidance](/includes/gdpr-intro-sentence.md)]
 
 ## Audit personal data
 
