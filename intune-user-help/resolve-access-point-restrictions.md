@@ -1,4 +1,4 @@
----
+ ---
 # required metadata
 
 title: Resolve access point restrictions
@@ -58,6 +58,6 @@ When you try to connect to an unrecognized or unapproved network, you may receiv
 
 | Company Portal message | What this message means | What you should do                                                                      
 |------------------------|-----------------------------------|--------------------------|
-| **Access point restrictions could not be enforced – Company Portal encountered an error.** | Intune cannot determine if you are connected to an approved network. This error could be a result of poor network connectivity, low battery, active battery saving mode, or a Company Portal error. | Verify that you have a strong network reception. Turn battery saver mode off and make sure your battery life has at least 30% remaining. Then tap **Resolve** to retry. 
+| **Access point restrictions could not be enforced – Company Portal encountered an error.** | Intune cannot determine if you are connected to an approved network. This error could be a result of poor network connectivity, low battery, battery saver mode, or a Company Portal error. | Verify that you have a strong network reception. Turn off battery saver mode and make sure your battery life has at least 30% remaining. Then tap **Resolve** to retry. 
 
 Still need help? We recommend that you contact your company support. For specific contact information, go to the [Company Portal website](https://portal.manage.microsoft.com/#HelpDeskDialog).
