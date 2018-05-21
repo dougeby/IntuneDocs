@@ -41,7 +41,7 @@ When you try to connect to an unrecognized or unapproved network, you may receiv
 * You are not connected to an approved network.
 * An error occurred and the access point restrictions couldn't be enforced.
 
- The tables below lists each message, what they mean, and how to access your work resources again.
+ The tables below list each message, what it means, and how to access your work resources again.
 
 ## Access point restrictions not set up  
 | Company Portal message | What this message means | What you should do                                                               
