@@ -37,7 +37,7 @@ Per-App VPN is currently available for the following providers:
  - F5
  - Pulse Connect Secure
  - SonicWall
- - Palo Alto GlobalProtect
+ - Palo Alto Networks GlobalProtect
 
 ## Prerequisites for Per-App VPN
 
@@ -176,7 +176,7 @@ With your Per-App VPN set-up and associated with your app, verify the connection
     - Cisco AnyConnect
     - F5
     - SonicWall
-    - Palo Alto GlobalProtect
+    - Palo Alto Networks GlobalProtect
 
 ### Connect using the Per-App VPN
 
