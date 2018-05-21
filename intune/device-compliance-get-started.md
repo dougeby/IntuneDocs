@@ -167,7 +167,7 @@ The **Compliance policy settings** (Azure portal > Device compliance) include:
   - **Compliant**: security feature off
   - **Not compliant** (default): security feature on
 
-  If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Not compliant**. If you use conditional access, we recommended you leave the default setting of **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
+  If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Compliant**. If you use conditional access, we recommended you change the  setting to **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
 
 - **Enhanced jailbreak detection**: When enabled, this setting causes iOS devices to check-in with Intune more frequently. Enabling this property uses the device’s location services, and impacts battery usage. The user location data is not stored by Intune.
 

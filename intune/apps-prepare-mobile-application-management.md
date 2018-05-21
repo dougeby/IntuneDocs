@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Prepare line-of-business apps for app protection policies
-titlesuffix: Microsoft Intune 
-description: Use the App wrapping tool and the App SDK to enable your custom line-of-business apps to use app protection policies in Microsoft Intune.
+title: Decide how to prepare apps for mobile application management with Microsoft Intune 
+description: The information in this topic helps you decide when you should use the App wrapping tool and the App SDK to enable your custom line-of-business apps to use the mobile app management policies.
 keywords:
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare line-of-business apps for app protection policies
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 You can enable your apps to use app protection policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 
@@ -76,8 +75,8 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
-|**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**Android**| Yes - use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
@@ -85,30 +84,31 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 > [!NOTE]
 > The App Wrapping Tool can be used with Intune standalone or Intune with Configuration Manager.
 
-|                                                         Feature                                                          | App SDK | App Wrapping Tool |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              Restrict web content to display in a corporate managed browser                              |    X    |         X         |
-|                                        Prevent Android, iTunes, or iCloud backups                                        |    X    |         X         |
-|                                         Allow app to transfer data to other apps                                         |    X    |         X         |
-|                                        Allow app to receive data from other apps                                         |    X    |         X         |
-|                                      Restrict cut, copy, and paste with other apps                                       |    X    |         X         |
-|                                              Require simple PIN for access                                               |    X    |         X         |
-|                                         Replace built-in app PIN with Intune PIN                                         |    X    |                   |
-|                                     Specify the number of attempts before PIN reset                                      |    X    |         X         |
-|                                             Allow fingerprint instead of PIN                                             |    X    |         X         |
-|                                         Require corporate credentials for access                                         |    X    |         X         |
-|                             Block managed apps from running on jailbroken or rooted devices                              |    X    |         X         |
-|                                                     Encrypt app data                                                     |    X    |         X         |
-|                           Recheck the access requirements after a specified number of minutes                            |    X    |         X         |
-|                                             Specify the offline grace period                                             |    X    |         X         |
-|                                           Block screen capture (Android only)                                            |    X    |         X         |
-|                                        Support for MAM without device enrollment                                         |    X    |         X         |
-|                                                        Full Wipe                                                         |    X    |         X         |
-| Selective Wipe <br></br><strong>Note:</strong> For iOS, when the management profile is removed, the app is also removed. |    X    |                   |
-|                                                    Prevent “Save as”                                                     |    X    |                   |
-|                                            Targeted Application Configuration                                            |    X    |                   |
-|                                                Support for Multi-Identity                                                |    X    |                   |
-|                                                    Customizable Style                                                    |    X    |                   |
+|Feature|App SDK|App Wrapping Tool|
+|-----------|---------------------|-----------|
+|Restrict web content to display in a corporate managed browser|X|X|
+|Prevent Android, iTunes, or iCloud backups|X|X|
+|Allow app to transfer data to other apps|X|X|
+|Allow app to receive data from other apps|X|X|
+|Restrict cut, copy, and paste with other apps|X|X|
+|Require simple PIN for access|X|X|
+|Replace built-in app PIN with Intune PIN|X||
+|Specify the number of attempts before PIN reset|X|X|
+|Allow fingerprint instead of PIN |X|X|
+|Require corporate credentials for access|X|X|
+|Block managed apps from running on jailbroken or rooted devices|X|X|
+|Encrypt app data|X|X|
+|Recheck the access requirements after a specified number of minutes|X|X|
+|Specify the offline grace period|X|X|
+|Block screen capture (Android only)|X|X|
+|Support for MAM without device enrollment|X|X|
+|Full Wipe|X|X|
+|Selective Wipe <br></br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Prevent “Save as” |X||
+|Targeted Application Configuration |X||
+|Support for Multi-Identity|X||
+|Customizable Style |X|||
+|On-demand application VPN connections with Citrix mVPN|X|X| 
 
 ## Next steps
 
@@ -117,3 +117,4 @@ To learn more about app protection policies and Intune, see the following topics
   -  [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
   - [iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
   - [Use the SDK to enable apps for mobile application management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  

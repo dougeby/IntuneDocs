@@ -170,8 +170,6 @@
         href: windows-bulk-enroll.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Enrollment Status Screen
-        href: windows-enrollment-status.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
@@ -310,6 +308,8 @@
             href: app-protection-policy-settings-android.md
           - name: iOS settings
             href: app-protection-policy-settings-ios.md
+          - name: Data transfer exceptions
+            href: app-protection-policies-exception.md
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
         - name: Monitor app protection user status

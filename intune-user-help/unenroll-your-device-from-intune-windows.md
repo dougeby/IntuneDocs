@@ -1,13 +1,11 @@
 ---
-# required metadata
-
-title: Remove your Windows device from Intune | Microsoft Docs
+title: Remove your Windows device from Intune
 description: Describes how to remove a Windows device from Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,56 +27,62 @@ ms.custom: intune-enduser
 
 ---
 
+# Remove your Windows device from Intune management
 
-# Remove your Windows device from Intune
+Remove a registered, Windows device from Intune when you no longer want or need to:  
+* Use your device for work or school. 
+* Access work or school email, apps, or other resources.
 
-If your device is registered with Intune, but you no longer want to use your Windows device to access work or school email, apps, or other resources, you need to remove your device from management. Once you remove your device from Intune, you will no longer be able to access these resources. For more about what happens when you remove your device from management, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+After it's removed, you'll be unable to access school or work resources from the device. Windows devices that can be removed from Intune include:  
+* Windows 10 devices 
+* Windows 8.1 computer
+* WIndows 8.1 mobile device
+ 
+For more information about what happens after you remove your device from Intune management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 ## Remove your Windows 10 device
+Complete the following steps to remove a Windows 10 device from Intune.
 
-1.  From your apps list, tap the **Company Portal** app.
+### Via the Company Portal app
 
-2.  Sign in using your work or school credentials.
+1. Open the Company Portal app.
+2. Sign in using your work or school credentials.
+3. In **My Devices**, select the device you want to remove.
+4. In the top, right-corner of the app, select the **See more** icon.
+5. Select **Remove**. 
+6. To confirm device removal, select **Remove device**.
 
-3.  In **My Devices**, select the device you want to unenroll.
-
-4.  Tap **Remove** &gt; **Remove**.
+### Via device Settings app
+1. Open the Settings app. 
+2. Go to **Accounts** > **Access work or school**.
+3. Select the connected account that you want to remove > **Disconnect**.
+4. To confirm device removal, select **Yes**.
 
 ## Remove your Windows 8.1 computer
+Complete the following steps to remove a Windows 8.1 computer from Intune.
 
-1.  Go to **PC Settings** &gt; **Network** &gt; **Workplace**.
-
+1.  Go to **PC Settings** > **Network** > **Workplace**.
 2.  Under **Workplace Join**, select **Leave**.
-
 3.  Under **Turn on device management,** select **Turn off**.
-
 4.  On the popup window that opens, select **Turn off**.
 
-## Remove your Windows Phone 8.1 mobile device
+## Remove your Windows 8.1 mobile device
+Complete the following steps to remove a Windows 8.1 mobile device from Intune.
 
-1.  Go to **Settings** &gt; **Workplace**.
-
+1.  Go to **Settings** > **Workplace**.
 2.  Tap the workplace account that you want to unenroll.
-
 3.  Tap **Delete** at the bottom of the screen.
-
-4.  On the **Delete account** dialog box, tap **Delete**.
-
+4.  On the **Delete account** dialog box, tap **Delete**.  
 ## Removing your personal information after removing the Company Portal
-
 There are two kinds of data that the Company Portal stores on your Windows device:
 
--	**Diagnostic logs**: standard app activity data that Microsoft collects, like how long the app was open or if it's crashed, is automatically erased when the Company Portal app is uninstalled.
--	**Application cache**: storing of certain support files required for the app to work, like icons and settings.
+-	**Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
+-	**Application cache**: Support files that are required for the app to work, such as icons and settings.
 
-There are a few steps you need to take to completely delete this information.
+To delete the stored logs and cache, complete one of the following steps:
 
-### Uninstall the Company Portal  
+* [Uninstall the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-[Uninstalling the Company Portal app](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) will remove some of the app data stored on your device.  
-
-### Reset the Company Portal
-
-You can reset the rest of the Company Portal's app data by resetting the app in Settings. Open **Settings** > **Apps & Features** > **Company Portal** > **Advanced options** > **Reset**.
+* Reset the Company Portal app. Open the **Settings** app and select > **Apps** > **Company Portal** > **Advanced options** > **Reset**. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

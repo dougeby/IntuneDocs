@@ -49,6 +49,10 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 > [!NOTE]
 > Users will appear in the Admin console only after they have enrolled a device. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.
 
+## Assign an Intune license by using Azure Active Directory
+
+You can also assign Intune licenses to users by using Azure Active Directory. For more information, see the [License users in Azure Active Directory article](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
+
 ## Use School Data Sync to assign licenses to users in Intune for Education
 If you are an educational organization, you can use School Data Sync (SDS) to assign Intune for Education licenses to synced users. Just choose the Intune for Education checkbox when you're setting up your SDS profile.  
 

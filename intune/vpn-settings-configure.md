@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,14 +47,15 @@ You can create VPN profiles using the following connection types:
 
 |Connection type|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
+|Automatic|No|No|No|No|No|Yes|
+|Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|
+|Cisco AnyConnect|Yes|Yes|Yes|No|No|No|
+|SonicWall Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
+|F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
+|Palo Alto GlobalProtect|No|Yes|No|No|No|Yes|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
 |Citrix|Yes|Yes|No|No|No|Yes|
-|F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
-|SonicWall Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
-|Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|
-|Cisco AnyConnect|Yes|Yes|Yes|No|No|No|
-|Automatic|No|No|No|No|No|Yes|
 |IKEv2|No|No|No|No|No|Yes|
 |L2TP|No|No|No|No|No|Yes|
 |PPTP|No|No|No|No|No|Yes|

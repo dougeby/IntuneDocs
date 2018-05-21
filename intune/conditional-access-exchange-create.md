@@ -44,9 +44,9 @@ Before you can configure conditional access, verify the following:
 - You must use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
 	>[!IMPORTANT]
-	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. You should also make sure the exchange connector for your tenant is installed **on only one machine**.
+	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. Intune now supports multiple on-premises Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
 
-- The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
+- The connector for an on-premises Exchange organization can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
 - The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it increases the load on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 
@@ -56,7 +56,7 @@ Before you can configure conditional access, verify the following:
 	- Either **enrolled** with Intune or is a domain joined PC.
 	- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 <br></br>
-- AAD DRS is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service do not see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
+- Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service do not see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 - **Compliant** with device compliance policies deployed to that device.
 
@@ -96,11 +96,11 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 1. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
 
   	> [!NOTE]
-  	> If you have not configured the Exchange Active Sync on-premises connector, this option is disabled.  You must first install and configure this connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)
+  	> If you have not configured an Exchange Active Sync on-premises connector, this option is disabled.  You must first install and configure at least one connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)
 
 1. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 
-1. If you want to exclude a certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
+1. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
 
 1. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device is not compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
 	> [!TIP]
