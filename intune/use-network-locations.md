@@ -53,18 +53,19 @@ To create a location-based compliance policy:
 ## Create a location
 
 1. In Intune, select **Device compliance** > **Locations** > **Create**.
-2. Enter the following properties:
 
-  - Required. Enter a **Name** for the location, such as **Manufacturer floor**, or **Building 44-secure**.
-  - Optional. Enter an **IPv4 Range** with CIDR (Classless Interdomain Routing) notation, such as `aaa.bbb.ccc.ddd/n`.
-  - Optional. Enter the **IPv4 Gateway** address, such as `aaa.bbb.ccc.ddd`.
-  - Optional. Enter the **IPv4 DHCP Server** address, such as `aaa.bbb.ccc.ddd`.
-  - Optional. Enter a list of **IPv4 DNS Servers** addresses. Be sure to enter one address per line, such as:  
-    `aaa.bbb.ccc.ddd`  
-    `aaa.bbb.ccc.ddd`
-  - Optional. Enter a list of **DNS Suffixes**, one domain name on each line, such as:  
-    `contoso.com`  
-    `contoso.org`
+2. Enter the following properties:  
+
+   - Required. Enter a **Name** for the location, such as **Manufacturer floor**, or **Building 44-secure**.
+   - Optional. Enter an **IPv4 Range** with CIDR (Classless Interdomain Routing) notation, such as `aaa.bbb.ccc.ddd/n`.
+   - Optional. Enter the **IPv4 Gateway** address, such as `aaa.bbb.ccc.ddd`.
+   - Optional. Enter the **IPv4 DHCP Server** address, such as `aaa.bbb.ccc.ddd`.
+   - Optional. Enter a list of **IPv4 DNS Servers** addresses. Be sure to enter one address per line, such as:  
+     `aaa.bbb.ccc.ddd`  
+     `aaa.bbb.ccc.ddd`
+   - Optional. Enter a list of **DNS Suffixes**, one domain name on each line, such as:  
+     `contoso.com`  
+     `contoso.org`
 
 3. **Save** your changes.
 
