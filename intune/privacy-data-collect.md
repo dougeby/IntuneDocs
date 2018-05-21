@@ -30,12 +30,12 @@ ms.custom: intune-azure
 
 When users enroll their corporate or personal devices using Intune, Intune collects and shares some personal data. Intune collects personal data from the following sources:
 
-- The admin’s use of the Intune Admin console.
-- End user devices (when they enroll for Intune management and during usage).
+- The admin’s use of the Intune in the Azure portal.
+- End-user devices (when they enroll for Intune management and during usage).
 - Customer accounts at third party services (per the admin’s instructions).
 - Diagnostic, performance, and usage information.
 
-From these sources, Intune collects information that falls into the following three categories: identified, pseudonymized, and aggregated.
+From these sources, Intune collects information that falls into the following three categories: [identified](#identified-data), [pseudonymized](#pseudonymized-data), and [aggregated](#aggregated-data).
 
 ## Identified data
 
