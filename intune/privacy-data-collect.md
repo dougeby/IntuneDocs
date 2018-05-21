@@ -131,17 +131,11 @@ Aggregated data collected by Intune may include, but is not limited to:
     - Number of devices or users enrolled
     - Number of identified device platforms  
     - Number of installed devices
-    - installedDeviceCount
-    - notApplicableDeviceCount
-    - notInstalledDeviceCount
-    - pendingInstallDeviceCount
-    - pendingInstallDeviceCount
-    - installedUserCount
-    - failedUserCount
-    - notApplicableUserCount
-    - notInstalledUserCount
-    - pendingInstallUserCount
-
+    - installedDeviceCount: The number of devices on which the application is installed.
+    - notApplicableDeviceCount: The number of devices for which the application is not applicable.
+    - notInstalledDeviceCount: The number of devices for which the application is applicable but not installed.
+    - pendingInstallDeviceCount: The numberr of devices for which the application is applicable and installation is pending.
+    
 ## Next steps
 
 Find out more about how Intune [stores and processes](privacy-data-store-process.md) and [shares](privacy-data-secure-share.md) personal data. 
