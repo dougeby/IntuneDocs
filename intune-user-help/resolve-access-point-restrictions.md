@@ -35,29 +35,29 @@ Organizations may restrict the locations from which devices access corporate dat
 To configure these *access point restrictions*, they specify and set approved
 network locations.  
 
-When access point restrictions are applied to your device, and you try to connect to an unrecognized or unapproved network, you may receive one or more of the following messages:
+When you try to connect to an unrecognized or unapproved network, you may receive one or more of the following messages:
 
-* Access point restrictions are not completely set up.
+* Access point restrictions are not set up.
 * You are not connected to an approved network.
-* An error occured and the access point restrictions couldn't be enforced.
+* An error occurred and the access point restrictions couldn't be enforced.
 
  The tables below lists each message, what they mean, and how to access your work resources again.
 
 ## Access point restrictions not set up  
-| Company Portal message | What this means | What you should do                                                               
+| Company Portal message | What this message means | What you should do                                                               
 |------------------------|--------------------------|--------------------------|
-| **Access point restrictions are not set up – Access point restrictions are active and must be set up.** | Your company applied access point restrictions on your device. This requires Company Portal to verify a few network settings on your device. | Tap **Resolve.** The Company Portal app will check to make sure you are connected to a company-approved network. |
+| **Access point restrictions are not set up – Access point restrictions are active and must be set up.** | Your company applied access point restrictions on your device. This setting requires the Company Portal app to verify a few network settings on your device. | Tap **Resolve.** The Company Portal app will check to make sure you are connected to a company-approved network. |
 
 ## Not connected to an approved network  
 
-| Company Portal message | What this means | What you should do                                                                   
+| Company Portal message | What this message means | What you should do                                                                   
 |------------------------|-----------------------------------|--------------------------|
-| **Device is not connected to an approved network – Connect to an approved wireless network.** | You're connected to a network that is not approved for work access. As long as you are connected to this network, you will be unable to access work email, apps, and other protected corporate resources. | Connect to a company-approved network. Then tap *Resolve*. |
+| **Device is not connected to an approved network – Connect to an approved wireless network.** | You're connected to a network that is not approved for work access. As long as you are connected to this network, you will be unable to access work email, apps, and other protected corporate resources. | Connect to a company-approved network. Then tap **Resolve** to retry. |
 
 ## Restrictions couldn’t be enforced  
 
-| Company Portal message | What this means | What you should do                                                                      
+| Company Portal message | What this message means | What you should do                                                                      
 |------------------------|-----------------------------------|--------------------------|
-| **Access point restrictions could not be enforced – Company Portal encountered an error.** | Intune cannot determine if you are connected to an approved network. This could be a result of poor network connectivity, low battery, active battery saving mode,or a Company Portal error. | Verify that you have a strong network reception, battery saver mode is turned off, and your battery life has at least 30% remaining. Then tap *Resolve* to retry. 
+| **Access point restrictions could not be enforced – Company Portal encountered an error.** | Intune cannot determine if you are connected to an approved network. This error could be a result of poor network connectivity, low battery, active battery saving mode, or a Company Portal error. | Verify that you have a strong network reception. Turn battery saver mode off and make sure your battery life has at least 30% remaining. Then tap **Resolve** to retry. 
 
 Still need help? We recommend that you contact your company support. For specific contact information, go to the [Company Portal website](https://portal.manage.microsoft.com/#HelpDeskDialog).
