@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resolve access point restrictions
+title: Resolve access point restrictions set in Intune
 description: Review the 3 common messages for Intune's access point restriction policies and learn how to resolve them
 keywords:
 author: lenewsad
