@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,10 +60,10 @@ To create a location-based compliance policy:
    - Optional. Enter an **IPv4 Range** with CIDR (Classless Interdomain Routing) notation, such as `aaa.bbb.ccc.ddd/n`.
    - Optional. Enter the **IPv4 Gateway** address, such as `aaa.bbb.ccc.ddd`.
    - Optional. Enter the **IPv4 DHCP Server** address, such as `aaa.bbb.ccc.ddd`.
-   - Optional. Enter a list of **IPv4 DNS Servers** addresses. Be sure to enter one address per line, such as:  
+   - Optional. Enter a list of **IPv4 DNS Servers** addresses. This setting uses **subset matching**. If the IPv4 DNS Servers on the device are subsets of the values defined, then the device is considered as IN the fence. Be sure to enter one address per line, such as:  
      `aaa.bbb.ccc.ddd`  
      `aaa.bbb.ccc.ddd`
-   - Optional. Enter a list of **DNS Suffixes**, one domain name on each line, such as:  
+   - Optional. Enter a list of **DNS Suffixes**. This setting uses **subset matching**. If the DNS Suffixes on the device are subsets of the values defined, then the device is considered as IN the fence. Be sure to enter one domain name on each line, such as:  
      `contoso.com`  
      `contoso.org`
 
