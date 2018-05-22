@@ -455,6 +455,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Location-based policy
+      href: use-network-locations.md
     - name: Evaluate policy
       href: policy-evaluate.md
     - name: Actions for noncompliance
