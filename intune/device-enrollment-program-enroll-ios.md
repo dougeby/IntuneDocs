@@ -215,6 +215,7 @@ See [Enroll your iOS device in Intune with the Device Enrollment Program](/intun
 1. Go to deploy.apple.com.  
 2. Under **Manage Servers**, choose your MDM server associated with the token file that you want to renew.
 3. Choose **Generate New Token**.
+
     ![Screenshot of generate new token.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. Choose **Your Server Token**.  
@@ -223,7 +224,7 @@ See [Enroll your iOS device in Intune with the Device Enrollment Program](/intun
 
 6. Choose **Renew token** andenter the Apple ID used to to create the original token.  
     ![Screenshot of generate new token.](./media/device-enrollment-program-enroll-ios/renewtoken.png)
-    
+
 8. Upload the newly downloaded token.  
 9. Choose **Renew token**. You'll see the confirmation that the token was renewed.   
     ![Screenshot of confirmation.](./media/device-enrollment-program-enroll-ios/confirmation.png)
