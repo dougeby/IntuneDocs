@@ -56,7 +56,7 @@ Audit logs are retained for up to one year.
 
 ## Processing personal data
 
-Intune processes personal data with ISO certified systems. For more information, see the [Service Trust Portal](https://servicetrust.microsoft.com/).
+Intune processes personal data with ISO certified systems. For more information, see the [Service Trust Portal](https://www.microsoft.com/en-us/TrustCenter/stp).
 
 ### Profiling and marketing
 

@@ -35,7 +35,7 @@ Microsoft Intune is a key component of the Microsoft Enterprise Mobility and Sec
 
 Microsoft Intune follows the same technical and organizational measures that the Microsoft Azure service teams take for securing against data breach processes.
 
-For more information, see the [Service Trust Portal](https://servicetrust.microsoft.com/).
+For more information, see the [Service Trust Portal](https://www.microsoft.com/en-us/TrustCenter/stp).
 
 Intune uses data minimization techniques, like
 
