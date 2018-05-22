@@ -7,7 +7,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 05/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,6 @@ You don't need the source code to use the tool, but you do need signing credenti
 
 The App Wrapping Tool does **not** support apps in the Apple App Store or Google Play Store. It also doesn't support certain features that require developer integration (see the following feature comparison table).
 
-
 For more information about the App Wrapping Tool for app protection policies on devices that are not enrolled in Intune, see [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
 
 ### Reasons to use the App Wrapping Tool
@@ -49,7 +48,6 @@ For more information about the App Wrapping Tool for app protection policies on 
 * You don't have access to the app's source code
 * You didn't develop the app
 * Your app has minimal user authentication experiences
-
 
 ### Supported app development platforms
 
@@ -75,8 +73,8 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
-|**Android**| Yes - use the [Intune App SDK Xamarin Component](app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](app-sdk-cordova.md).|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
+|**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
@@ -94,7 +92,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Require simple PIN for access|X|X|
 |Replace built-in app PIN with Intune PIN|X||
 |Specify the number of attempts before PIN reset|X|X|
-|Allow fingerprint instead of PIN |X|X|
+|Allow fingerprint instead of PIN|X|X|
+|Allow facial recognition instead of PIN (iOS only)|X|X|
 |Require corporate credentials for access|X|X|
 |Block managed apps from running on jailbroken or rooted devices|X|X|
 |Encrypt app data|X|X|
@@ -104,17 +103,22 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Support for MAM without device enrollment|X|X|
 |Full Wipe|X|X|
 |Selective Wipe <br></br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
-|Prevent “Save as” |X||
-|Targeted Application Configuration |X||
+|Prevent “Save as”|X||
+|Targeted Application Configuration|X||
 |Support for Multi-Identity|X||
 |Customizable Style |X|||
 |On-demand application VPN connections with Citrix mVPN|X|X| 
+|Disable contact sync|X|X|
+|Disable printing|X|X|
+|Require minimum app version|X|X|
+|Require minimum operating system (iOS and Android)|X|X|
+|Require minimum Android security patch version (Android only)|X|X|
+|Require minimum Intune SDK for iOS (iOS only)|X|X|
 
 ## Next steps
 
 To learn more about app protection policies and Intune, see the following topics:
 
-  -  [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
+  - [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
   - [iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
   - [Use the SDK to enable apps for mobile application management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
-  
