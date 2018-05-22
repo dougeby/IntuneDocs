@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect line-of-business apps and data on devices that are not enrolled in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mobile application management (MAM) policies help protect company data by restricting actions that could leak company data and by enforcing data access requirements, such as an app PIN. To apply MAM policies to iOS and Android line-of-business apps, you must first wrap the app with the Microsoft Intune App Wrapping Tool. App wrapping is the process of applying a management layer to a mobile app without requiring any changes to it and distribute it to your users.  
 
@@ -47,16 +47,16 @@ To associate your line-of-business app with MAM policies, you must add the app d
 
 1. In the [Azure portal](https://portal.azure.com/), go to **Intune mobile application management** > **Settings**, and choose **Line-of-business apps**.
 
-  ![Screenshot of the Settings blade with the line-of-business option](../media/mam-azure-portal-lob-on-settings.png)
+   ![Screenshot of the Settings blade with the line-of-business option](../media/mam-azure-portal-lob-on-settings.png)
 
 2. On the **Line-of-business-apps** blade, choose **Add a custom app**.
 
-  ![Screenshot of the line-of-business apps blade with the Add custom app button at the top](../media/mam-azure-portal-add-lob-app-action.png)
-3.	Provide a name for the app, the bundle identifier in the App Identifier field, and the platform (iOS or Android).
+   ![Screenshot of the line-of-business apps blade with the Add custom app button at the top](../media/mam-azure-portal-add-lob-app-action.png)
+3. Provide a name for the app, the bundle identifier in the App Identifier field, and the platform (iOS or Android).
 
-  ![Screenshot of the Add a custom app blade](../media/mam-azure-portal-add-app-details.png)
+   ![Screenshot of the Add a custom app blade](../media/mam-azure-portal-add-app-details.png)
 
-  This step helps create a unique listing of your app. The app will also be displayed in the list of Targeted apps for a MAM policy for your tenant, as described in the next step.
+   This step helps create a unique listing of your app. The app will also be displayed in the list of Targeted apps for a MAM policy for your tenant, as described in the next step.
 
 ## Step 3: Apply MAM policies
 After the app metadata is uploaded to the service, the app shows up in the list of apps. You can now [create a new policy or use an existing policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md), and apply it to the line-of-business app that you added in step 2.
@@ -77,12 +77,12 @@ If you need to change the app details, like the name of the app or the bundle id
 ##  Remove apps
 You can remove a line-of-business app from the app list. This will remove the app from the list and will remove the association with MAM policies, but will not remove or uninstall the app from the user’s device.  
 
-1.	In the [Azure portal](https://portal.azure.com/), go to **Intune mobile app management** > **Settings**. On the **Settings** blade, choose **Line-of-business** to open the list of existing apps.  
-2.	Choose the app that you want to remove, and choose the **(…) context** menu.
+1. In the [Azure portal](https://portal.azure.com/), go to **Intune mobile app management** > **Settings**. On the **Settings** blade, choose **Line-of-business** to open the list of existing apps.  
+2. Choose the app that you want to remove, and choose the **(…) context** menu.
 
-  ![Screenshot of the line-of-business apps blade with the ellipsis](../media/mam-azure-portal-lob-context-menu.png)
-3.	Choose **Delete Application** to delete the app.
+   ![Screenshot of the line-of-business apps blade with the ellipsis](../media/mam-azure-portal-lob-context-menu.png)
+3. Choose **Delete Application** to delete the app.
 
-  ![Screenshot of the line-of-business blade with the delete application option](../media/mam-azure-portal-delete-app.png)
+   ![Screenshot of the line-of-business blade with the delete application option](../media/mam-azure-portal-delete-app.png)
 
-  This will remove apps from the list of line-of-business apps and the Targeted list of apps in the MAM policy.
+   This will remove apps from the list of line-of-business apps and the Targeted list of apps in the MAM policy.

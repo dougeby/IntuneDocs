@@ -4,9 +4,9 @@
 title: Enroll your Windows device in Intune | Microsoft Docs
 description: Describes how to enroll a Windows device in Intune
 keywords:
-author: barlanmsft
+author: lenewsad
 
-ms.author: barlan
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article

@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect access to Skype for Business Online with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You can use a conditional access policy for **Skype for Business Online** to control access to Skype for Business Online.
 Conditional access has two components:
@@ -92,23 +92,23 @@ When you're ready, continue to **Step 3**.
 ### Step 3: Configure the Skype for Business Online policy
 Next, configure the policy to require that only managed and compliant devices can access Skype for Business Online. This policy will be stored in Azure Active Directory.
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Skype for Business Online Policy**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Skype for Business Online Policy**.
 
-  ![Screenshot of the Skype for Business Online conditional access policy page](./media/conditional_access_SFBPolicy.png)
+   ![Screenshot of the Skype for Business Online conditional access policy page](./media/conditional_access_SFBPolicy.png)
 
-2.  Choose **Enable conditional access policy**.
+2. Choose **Enable conditional access policy**.
 
-3.  Under **Application access**, you can choose to apply conditional access policy to:
+3. Under **Application access**, you can choose to apply conditional access policy to:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select group of users.
+4. Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select group of users.
 
-5.  Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
+5. Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
 
-6.  When you're done, choose **Save**.
+6. When you're done, choose **Save**.
 
 You have now configured conditional access for Skype for Business Online. You don't have to deploy the conditional access policy—it takes effect immediately.
 

@@ -2,12 +2,12 @@
 # required metadata
 
 title: Wrap Android apps with the Intune App Wrapping Tool 
-description: Use the information in this article to learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
+description: Learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare Android apps for app protection policies with the Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for Android to change the behavior of your in-house Android apps by restricting features of the app without changing the code of the app itself.
 
@@ -36,8 +36,6 @@ The tool is a Windows command-line application that runs in PowerShell and creat
 
 
 Before running the tool, review [Security considerations for running the App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, go to the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) on GitHub.
-
-
 
 ## Fulfill the prerequisites for using the App Wrapping Tool
 
@@ -58,6 +56,8 @@ Before running the tool, review [Security considerations for running the App Wra
 
 - Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
+- (Optional) Enable Multidex within the input app. Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX files are a part of the compilation of an Android app. In this scenario, best practice would be to enable Multidex within the app itself. In certain organizations, this may require working with whoever compiles the app (ie. the app build team). 
+
 ## Install the App Wrapping Tool
 
 1.  From the [GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), download the installation file InstallAWT.exe for the Intune App Wrapping Tool for Android to a Windows computer. Open the installation file.
@@ -68,21 +68,21 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 
 ## Run the App Wrapping Tool
 
-1.  On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window.
+1. On the Windows computer where you installed the App Wrapping Tool, open a PowerShell window.
 
-2.  From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:
+2. From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:
 
-    ```
-    Import-Module .\IntuneAppWrappingTool.psm1
-    ```
+   ```
+   Import-Module .\IntuneAppWrappingTool.psm1
+   ```
 
-3.  Run the tool by using the **invoke-AppWrappingTool** command, which has the following usage syntax:
-	```
-	Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
-    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
-	```
+3. Run the tool by using the **invoke-AppWrappingTool** command, which has the following usage syntax:
+   ```
+   Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
+   -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
+   ```
 
- The following table details the properties of the **invoke-AppWrappingTool** command:
+   The following table details the properties of the **invoke-AppWrappingTool** command:
 
 |Property|Information|Example|
 |-------------|--------------------|---------|
@@ -165,19 +165,20 @@ The following is guidance for requiring user prompt on app launch for an automat
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
 1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-> [!NOTE] 
+
+> [!NOTE]
 > The term "client id" tied to your app is the same as the term "application id" from the Azure Portal tied to your app. 
-* To enable SSO, "Common ADAL configuration" #2 is what is needed.
+> * To enable SSO, "Common ADAL configuration" #2 is what is needed.
 
 2. Enable default enrollment by putting the following value in the manifest:
-```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
+   ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+   > [!NOTE] 
+   > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
 
 3. Enable MAM policy required by putting the following value in the manifest:
-```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
+   ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+   > [!NOTE] 
+   > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)

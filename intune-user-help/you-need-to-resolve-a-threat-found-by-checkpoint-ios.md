@@ -4,8 +4,8 @@
 title: Resolving threats found by SandBlast Mobile Protect on iOS | Microsoft Docs
 description: Learn how to fix a threat found by Mobile Protect on iOS.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 08/03/2017
 ms.topic: article

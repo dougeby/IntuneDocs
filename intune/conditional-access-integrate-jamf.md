@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Integrate Jamf Pro with Intune for compliance
-titlesuffix: "Azure portal"
-description: "Use compliance to help secure Jamf-managed devices."
+title: Integrate Jamf Pro with Microsoft Intune for compliance
+titlesuffix:
+description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
@@ -61,20 +61,20 @@ You can connect Intune with Jamf Pro by:
 6. Click **Create application**.
 7. Save the newly-created **Application ID**, then open **Settings** and navigate to **API Access** > **Keys** to create a new Application Key. Enter a **Description**, how long to wait before it **Expires**, then save the Application Key.
 
-  > [!IMPORTANT]
-  > The Application Key is only shown once during this process. Be sure to save it somewhere where you can easily retrieve it.
+   > [!IMPORTANT]
+   > The Application Key is only shown once during this process. Be sure to save it somewhere where you can easily retrieve it.
 
 8. Open **Settings**, then navigate to **API Access** > **Required Permissions** and delete all permissions.
 
-  > [!NOTE]
-  > Add a new required permission. The application can have only work properly if it has the single required permission.
+   > [!NOTE]
+   > Add a new required permission. The application can have only work properly if it has the single required permission.
 
-9.  Select **Microsoft Intune API** and click **Select**.
+9. Select **Microsoft Intune API** and click **Select**.
 10. Choose **Send device attributes to Microsoft Intune** and click **Select**.
 11. Click the **Grant Permissions** button after saving the required permissions for the application.
 
-  > [!NOTE]
-  > If the Application Key expires, you must create a new Application Key in Microsoft Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old key and new key active to prevent service disruptions.
+    > [!NOTE]
+    > If the Application Key expires, you must create a new Application Key in Microsoft Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old key and new key active to prevent service disruptions.
 
 ## Enable Intune to integrate with Jamf Pro
 

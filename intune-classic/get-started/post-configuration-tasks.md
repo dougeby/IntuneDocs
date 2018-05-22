@@ -6,7 +6,7 @@ description: Complete optional configuration tasks to enhance mobile device mana
 keywords:
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Post-configuration tasks
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 After you complete the initial configuration steps for an Intune  paid subscription, you should consider enabling additional mobile device management functionality.
 

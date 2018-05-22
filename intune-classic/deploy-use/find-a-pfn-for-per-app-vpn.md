@@ -6,7 +6,7 @@ description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Find a package family name (PFN) for per-app VPN configuration
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 There are two ways to find a PFN so that you can set up a per-app VPN.
 
@@ -42,7 +42,7 @@ The syntax for Get-AppxPackage is:
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-You may have to run PowerShell as an admin to retrieve the PFN.
+> You may have to run PowerShell as an admin to retrieve the PFN.
 
 For example, to get info about all the universal apps installed on the computer, use `Get-AppxPackage`.
 

@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Remotely lock managed devices with Intune
-titlesuffix: "Azure portal"
-description: Learn how to use Intune to remotely lock devices you manage."
+title: Lock devices with Microsoft Intune - Azure | Microsoft Docs
+description: Use the Remote lock action in Microsoft Intune to lock a device that is protected by a PIN or password. 
 keywords:
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,37 +26,36 @@ ms.custom: intune-azure
 
 ---
 
-# Remotely lock managed devices with Intune
+# Remotely lock devices with Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-The **Remote lock** device locks the selected device. The device owner must use their passcode to unlock it. You can only remotely lock a device that has a PIN or password set.
+The **Remote lock** device action locks the device. To unlock the device, the device owner enters their passcode. You can remotely lock devices that have a PIN or password set. Devices that don't have a PIN or password can't be remotely locked.
 
 ## Supported platforms
 
-Remote lock is supported for the following platforms:
+**Remote lock** is supported for the following platforms:
 
-|Platform|Support status|
-|---|---|
-|Android|Yes|
-|iOS|Yes|
-|macOS|Yes|
-|Windows 10|Yes|
-|Windows 10 Mobile|Yes|
-|Windows Phone|Yes, for Windows Phone 8.1 and later|
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile
+- Windows Phone 8.1 and later
 
-> [!NOTE]  
-> For macOS devices, you set a 6-digit recovery PIN. When locked, the **Device overview** blade displays the PIN until another device action is sent.
+**Remote lock** is *not* supported for:
+- Windows 10 desktop
 
-## How to remote lock a device
+> [!NOTE]
+> For macOS devices, you set a 6-digit recovery PIN. When the device is locked, the **Device overview** displays the PIN until another device action is sent.
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices and groups** blade, choose **All devices**.
-5. From the list of devices you manage, choose a device, and then choose the **Remote lock** device remote action.
+## Remote lock a device
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
+3. Select **Devices** > **All devices**.
+4. In the list of devices, select a device, and then select the **Remote lock** action.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
+- To see the status of this action, select **Microsoft Intune** > **Devices** > **Device actions**. 
+- For more actions that can help you manage your devices, see [Available actions](device-management.md).

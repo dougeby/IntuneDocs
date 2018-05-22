@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Protect access to Dynamics CRM Online with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You can control access to Microsoft Dynamics CRM Online from iOS and Android devices by using Microsoft Intune conditional access.  Intune conditional access has two components:
 * A [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that the device must comply with in order to be considered compliant.
@@ -78,17 +78,17 @@ When you are ready, continue to Step 3.
 ### Step 3: Configure the Dynamics CRM policy
 Next, configure the policy to require that only managed and compliant devices can access Dynamics CRM. This policy will be stored in Azure Active Directory.
 
-1.  In the Intune administration console, choose **Policy > Conditional Access > Dynamics CRM Online Policy**.
+1. In the Intune administration console, choose **Policy > Conditional Access > Dynamics CRM Online Policy**.
 
-  ![Screenshot of the Dynamics CRM Online conditional access policy page](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Screenshot of the Dynamics CRM Online conditional access policy page](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Choose the **Enable conditional access** policy.
-3.  Under **Application access**, you can choose to apply conditional access policy to:
-  * **iOS**
-  * **Android**
-4.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select group of users.
-5.	Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
-6.	When you are done, choose **Save**.
+2. Choose the **Enable conditional access** policy.
+3. Under **Application access**, you can choose to apply conditional access policy to:
+   * **iOS**
+   * **Android**
+4. Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select group of users.
+5. Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
+6. When you are done, choose **Save**.
 
 You have now configured conditional access for Dynamics CRM. You do not have to deploy the conditional access policy—it takes effect immediately.
 ##  Monitor the compliance and conditional access policies

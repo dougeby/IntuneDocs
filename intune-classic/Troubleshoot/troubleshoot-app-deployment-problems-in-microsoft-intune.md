@@ -6,7 +6,7 @@ description: This topic helps you solve app deployment problems with Microsoft I
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 09/27/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot app deployment problems in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 If you are having problems deploying and managing apps with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 

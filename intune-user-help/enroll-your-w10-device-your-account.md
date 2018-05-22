@@ -4,8 +4,8 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Enroll a Windows 10 1511 device into Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
@@ -33,10 +33,10 @@ ms.custom: intune-enduser
   > [!NOTE]
   > Windows 10 works across all types of devices. Whether you're using a desktop, phone, or tablet, the steps you follow are the same - even if they look slightly different from the images on this page.
 
-1.  Go to **Start**.
+1. Go to **Start**.
 
-  - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
-  - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
+   - If you are on a **Windows 10 desktop** device, go to the **Start menu**.
+   - If you are on a **Windows 10 Mobile** device, go to the **Start screen**, then swipe to the **All Apps** list.
 
 2. Open the Windows **Settings** app by searching for "settings" in the search bar.
 

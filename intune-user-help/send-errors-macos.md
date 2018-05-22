@@ -1,19 +1,21 @@
 ---
 # required metadata
 
-title: Submit errors with your managed macOS device | Microsoft Docs
+title: Send errors from your Mac device to your company support | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+
+ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 5c2b65f4-0e0d-4a3c-81c2-af634718023d
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -29,22 +31,26 @@ ms.custom: intune-enduser
 
 # Submit errors to the right people for your managed macOS device
 
-If you get errors on your macOS device while using the Company Portal app, you can send information to help your company support troubleshoot the problem.
+Sometimes unexplained errors occur in the Company Portal app. When an error occurs, you can email the details of it to your company's support person. These details will provide the context needed to troubleshoot the problem for you.
 
 ## Send errors to your company support
 
- You can send error information to your company support in different ways:
+To send details about an error in the Company Portal app:
 
--   On error alert messages, click **Report**.
+-   On the error message you receive, click **Report**.
 
--   In the **Help** menu of the Company Portal app, click **Save Diagnostic Report**. Choose a location to save the file. You can email or upload this file to your company support, depending on your company.
+-   Click the **Help** menu > **Save Diagnostic Report**. Choose a location to save the file. Then email or upload this file to your company's support person.
 
-- If your email app is already configured, you can also send the diagnostic report by going to **Help** > **Send Diagnostic Report**.
+-   If your email app is configured, you can send the diagnostic report by going to **Help** > **Send Diagnostic Report**. After the logs are uploaded, click **Email details**.
 
 ## Send errors to the Company Portal developers for macOS devices
 
-Sometimes the Company Portal app may act unexpectedly. These issues are ones that the app developers want to hear about, as it can help us make it work better for you and prevent strange behavior from happening in the future. This information is kept on your device in a special document called a _diagnostic report_.
+At times, the Company Portal app may close unexpectedly. App developers want to hear from you when unexpected behavior occurs. They use the error details to find the root cause and prevent future occurrences. Such errors are detailed on your device in a special document called a _diagnostic log_. The Company Portal team needs the Company Portal-specific logs to diagnose the problem.
 
-If you need to send diagnostic reports to the Microsoft team that develops the Company Portal app, you need to provide some information to try and diagnose the root cause. Instead of sending it to your company support team, use <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">this email template</a> to send it to Microsoft.
+To send logs to Microsoft:
+
+1.  Open the Company Portal app.
+2.  Click the **Help** menu > **Send Diagnostic Report**.  After the logs are uploaded, you'll receive an incident ID. Copy and save the ID.
+3.  Email Microsoft using <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">this template</a>.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -4,7 +4,7 @@
 title: Migrating to Azure Active Directory groups
 description: How your groups will be migrated from Intune to Azure AD
 keywords:
-author: arob98
+author: dougeby
 ms.author: angrobe
 manager: angerobe
 ms.date: 12/22/2016
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # A new way of using groups in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 We've heard your feedback and are making some changes to how you work with groups in Microsoft Intune.
 We are in the process of migrating all of our customers Intune groups to Azure Active Directory security groups.

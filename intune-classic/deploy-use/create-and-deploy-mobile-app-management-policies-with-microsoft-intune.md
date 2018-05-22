@@ -6,7 +6,7 @@ description: Use the step-by-step instructions in this topic to create and deplo
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Create and deploy app protection policies with Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes the process of creating an app protection policy in the **Azure portal**. The Azure portal is the new admin console for creating app protection policies, and we recommend that you use this portal to create app protection policies. Azure portal supports the following MAM scenarios:
 
@@ -36,23 +36,23 @@ This topic describes the process of creating an app protection policy in the **A
 - Devices managed by a third-party MDM solution.
 - Devices that are not managed by any MDM solution (BYOD).
 
->[!IMPORTANT]
-Here are a few considerations if you're using the **Intune admin console** to manage your devices:
-
+> [!IMPORTANT]
+> Here are a few considerations if you're using the **Intune admin console** to manage your devices:
+> 
 > * You can create an app protection policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * App protection policies created in the Intune admin console cannot be imported into the Azure portal.  The app protection policies must be re-created in the Azure portal.
-
+> 
 > * You may not see all app protection policy settings in the Intune admin console. The Azure portal is the new admin console for creating app protection policies.
-
+> 
 > * To deploy managed apps, you must create a app protection policy in the Intune admin console. In this case, you may want to create app protection policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, and the Azure portal because it is the new admin console that has all the app protection policy settings.
-
+> 
 > * If you create app protection policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
 > [!div class="op_single_selector"]
-- [iOS policies](ios-mam-policy-settings.md)
-- [Android policies](android-mam-policy-settings.md)
+> - [iOS policies](ios-mam-policy-settings.md)
+> - [Android policies](android-mam-policy-settings.md)
 
 - For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [protect app data using app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -134,13 +134,13 @@ Beginning with Intune 1703 version, you have the option to generally add LOB app
 > [!IMPORTANT]
 > You need to select Windows 10 from the platform drop-down list when creating a new app protection policy.
 
-1.  On the Add a policy blade, choose **Allowed apps** or **Exempt apps** to open the Allowed or Exempt apps blade.
+1. On the Add a policy blade, choose **Allowed apps** or **Exempt apps** to open the Allowed or Exempt apps blade.
 
-	> [!NOTE]
-	>
-	- **Allowed apps**: These are the apps that need to adhere to this policy.
-	- **Exempt apps**: These apps are exempt from this policy and can access corporate data without restrictions.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Allowed apps**: These are the apps that need to adhere to this policy.
+   > - **Exempt apps**: These apps are exempt from this policy and can access corporate data without restrictions.
+   > <br></br>
 2. On Allowed or Exempt apps blade, click **Add apps**. You can add recommended Microsoft apps, add store or desktop apps.
 
     a.  **Recommended apps:** a pre-populated list of (mostly Office) apps that we let admins easily import into policy.
@@ -215,8 +215,8 @@ To see the effect of the changes immediately, the end user will have to log out 
 To see a full list of the policy settings for iOS and Android, select one of the following:
 
 > [!div class="op_single_selector"]
-- [iOS policies](ios-mam-policy-settings.md)
-- [Android policies](android-mam-policy-settings.md)
+> - [iOS policies](ios-mam-policy-settings.md)
+> - [Android policies](android-mam-policy-settings.md)
 
 ## Next steps
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)
