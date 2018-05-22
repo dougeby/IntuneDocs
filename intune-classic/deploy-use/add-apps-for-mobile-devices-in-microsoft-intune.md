@@ -60,7 +60,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 
    -   **Managed iOS app from the app store**, for free apps from the iTunes store that you want to manage with mobile application management (MAM) policies:
 
-       - **Specify the URL**. Enter the app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>This installation type does not use any of your cloud storage space.
+       - **Specify the URL**. Enter the app store URL of the app that you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **[https://itunes.apple.com/us/app/work-folders/id950878067?mt=8](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8)**.<br>This installation type does not use any of your cloud storage space.
 
        For example, if you want to deploy the Microsoft Word app from the iTunes store to devices, the page would look like this:
 
