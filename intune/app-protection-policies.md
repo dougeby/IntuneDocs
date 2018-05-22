@@ -5,8 +5,8 @@ title: Create and deploy app protection policies
 titleSuffix: Microsoft Intune
 description: Learn how to create and assign Microsoft Intune app protection policies.
 keywords:
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
@@ -28,8 +28,7 @@ ms.custom: intune-azure
 
 # How to create and assign app protection policies
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn how to create and assign Microsoft Intune app protection policies to your users. This topic also describes how to make changes to existing policies.
 
@@ -42,28 +41,28 @@ App protection policies can be applied to apps running on devices that may or ma
 If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  Create an app protection policy
-1.  In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+1. In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Choose **Add a policy**.
 
-  ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
+   ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
 
-3.  Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
+3. Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
-4.  Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating.
+4. Choose **Apps** to open the **Apps** blade, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you're creating.
 5. Once you've selected the apps, choose **Select** to save your selection.
 
     > [!IMPORTANT]
     > You must select at least one app to create a policy.
 
-6.  Choose **Configure required settings** on the **Add a policy** blade to open **Settings**.
+6. Choose **Configure required settings** on the **Add a policy** blade to open **Settings**.
 
-    There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps. The access polices determine how the end user accesses the apps in a work context.
-    To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes.
+   There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps. The access polices determine how the end user accesses the apps in a work context.
+   To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes.
 
-    > [!TIP]
-    > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
+   > [!TIP]
+   > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
 
-7.  Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
+7. Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
 8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade.
 9. Choose **Create** to create the policy and save your settings.
 
@@ -124,6 +123,16 @@ To see the effect of the changes immediately, the end user must log out of the a
 2.  Choose **Policy settings** to open the **Policy settings** pane.
 
 3.  Change the settings, and choose the **Save** icon to save your changes.
+
+## Target app protection policies based on device management state
+In many organizations it’s common to allow end users to use both Intune Mobile Device Management (MDM) managed devices, such as corporate owned devices, and un-managed devices protected with only Intune app protection policies, such as BYO devices.
+
+Because Intune app protection policies are targeted to a user’s identity, the protection settings for a user traditionally apply to both enrolled (MDM managed) and non-enrolled devices (no MDM). Therefore, you can target an Intune app protection policy to either Intune enrolled or un-enrolled iOS and Android devices. You can have one protection policy for un-managed devices in which strict data loss prevention (DLP) controls are in place, and a separate protection policy for MDM managed devices, where the DLP controls may be a little more relaxed. 
+
+To create these policies, browse to **Mobile apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
+
+> [!NOTE]
+> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:

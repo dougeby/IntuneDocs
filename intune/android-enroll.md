@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Enroll Android devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune administrator, you can manage Android devices, including Samsung Knox Standard devices. You can also manage the work profile [Android for Work devices](#enable-enrollment-of-android-for-work-devices).
 
@@ -53,6 +53,8 @@ To enable management of the work profile on devices that [support Android for Wo
 
 If you're enrolling Android for Work devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
+For more information, see [Data Intune sends to Google](data-intune-sends-to-google.md).
+
 ## Add Android for Work binding for Intune
 
 > [!NOTE]
@@ -61,15 +63,19 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 1. **Set up Intune MDM**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](mdm-authority-set.md) as **Microsoft Intune**.
 2. **Configure Android for Work binding**<br>
-    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
-
-   a. On the **Intune** pane, choose **Device enrollment** > **Android for Work Enrollment**, and choose **Managed Google Play – Configure** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+    
+   a. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal), select **Device enrollment** > **Android enrollment** > **Managed Google Play**.  If you are using a custom Intune admin role, access to this requires Organization Read and Update permissions.
+   
    ![Android for Work enrollment screen](./media/android-work-bind.png)
 
-   b. **Sign in to Google**<br>
+   b. Select **I agree** to grant Microsoft permission to [send user and device information to Google](data-intune-sends-to-google.md). 
+   
+   c. Select **Launch Google to connect now** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
+  
+   d. **Sign in to Google**<br>
    On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
 
-   c. **Provide organization details**<br>
+   e. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.
 
 ## Specify Android for Work enrollment settings
@@ -116,3 +122,14 @@ You can turn off Android for Work enrollment and management. Choosing **Unbind**
 
 2. **Agree to delete Android for Work binding**<br>
   Choose **Yes** to delete the binding and unenroll all Android for Work devices from Intune.
+
+## End user experience when enrolling a Samsung Knox device
+There are several considerations when enrolling Samsung Knox devices:
+-	Even if no policies require a PIN, the device must have at least a four digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
+-	There is no user interaction for Workplace Join Certificates (WPJ).
+-	The user is prompted with Service Enrollment info and what the app can do.
+-	The user is prompted with Knox Enrollment info and what Knox can do.
+-	If an Encryption Policy is enforced, users are required to set a six Character Complex password for the device passcode.
+-	There are no additional user prompts to install certificates pushed by a service for Company Resource Access.
+- Some older Knox devices will prompt the user for additional certificates used for Company Resource Access.
+- If a Samsung Mini device fails to install the WPJ with either the **Certificate Not Found** or **Unable to Register Device** errors, install the latest Samsung Firmware Updates.

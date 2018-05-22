@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 # How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company.
 
@@ -157,6 +157,17 @@ To revoke the license of all VPP apps for a given VPP token, you must first revo
 ## Further information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+
+## Frequently asked questions
+
+#### How long does the portal take to update the license count once an app is installed or removed from the device?
+The license should be updated within a few hours after installing or uninstalling an app. Note that if the end user removes the app from the device, the license is still assigned to that user or device.
+
+#### Is it possible to oversubscribe an app and, if so, in what circumstance?
+Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
+
+#### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
+Intune syncs app licenses every 15 hours with Apple.
 
 ## Next steps
 

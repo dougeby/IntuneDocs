@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare iOS apps for app protection policies with the Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
@@ -104,48 +104,48 @@ You will need the following to distribute apps wrapped by Intune:
 
 4. Click **Certificates, IDs & Profiles**.
 
-  ![Apple Developer portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer portal](./media/iOS-signing-cert-1.png)
 
 5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the top right corner to add an iOS certificate.
 
 6. Choose to create an **In-House and Ad Hoc** certificate under **Production**.
 
-  ![Select In-House and Ad Hoc certificate](./media/iOS-signing-cert-3.png)
+   ![Select In-House and Ad Hoc certificate](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
+   >[!NOTE]
+   >If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
 
 7. Click **Next** at the bottom of the page.
 
 8. Read the instructions on creating a **Certificate Signing Request (CSR)** using the Keychain Access application on your macOS computer.
 
-  ![Read instructions to create a CSR](./media/iOS-signing-cert-4.png)
+   ![Read instructions to create a CSR](./media/iOS-signing-cert-4.png)
 
 9. Follow the instructions above to create a Certificate Signing Request. On your macOS computer, launch the **Keychain Access** application.
 
 10. On the macOS menu at the top of the screen, go to  **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority**.  
 
-  ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-5.png)
+    ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-5.png)
 
 11. Follow the instructions from the Apple developer site above on how to create a CSR file. Save the CSR file to your macOS computer.
 
-  ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-6.png)
+    ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-6.png)
 
 12. Return to the Apple developer site. Click **Continue**. Then upload the CSR file.
 
 13. Apple generates your signing certificate. Download and save it to a memorable location on your macOS computer.
 
-  ![Download your signing certificate](./media/iOS-signing-cert-7.png)
+    ![Download your signing certificate](./media/iOS-signing-cert-7.png)
 
 14. Double-click the certificate file you just downloaded to add the certificate to a keychain.
 
 15. Open **Keychain Access** again. Locate your certificate by searching for its name in the top right search bar. Right-click on the item to bring up the menu and click **Get Info**. In the example screens, we are using a development certificate instead of a production certificate.
 
-  ![Add your certificate to a keychain](./media/iOS-signing-cert-8.png)
+    ![Add your certificate to a keychain](./media/iOS-signing-cert-8.png)
 
 16. An informational window appears. Scroll to the bottom and look under the **Fingerprints** label. Copy the **SHA1** string (blurred out) to use as the argument for "-c" for the App Wrapping Tool.
 
-  ![Add your certificate to a keychain](./media/iOS-signing-cert-9.png)
+    ![Add your certificate to a keychain](./media/iOS-signing-cert-9.png)
 
 
 
@@ -159,7 +159,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 4. Choose to create an **In House** provisioning profile under **Distribution**.
 
-  ![Select In House provisioning profile](./media/iOS-provisioning-profile-1.png)
+   ![Select In House provisioning profile](./media/iOS-provisioning-profile-1.png)
 
 5. Click **Continue**. Make sure to link the previously generated signing certificate to the provisioning profile.
 
@@ -420,8 +420,8 @@ Use the following steps to get logs for your wrapped applications during trouble
 4. Click on the "Get Started" link.
 5. You can now share logs through email or copying them to a OneDrive location.
 
->[!NOTE]
-The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
+> [!NOTE]
+> The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

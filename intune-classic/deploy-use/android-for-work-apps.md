@@ -6,7 +6,7 @@ description: Use this topic to synchronize, then deploy app to Android for Work 
 keywords:
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # How to deploy apps to Android for Work devices with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You deploy apps to Android for Work devices in a different way than you deploy them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log on to the store, browse for the apps you want, and approve them.
 The app then appears in the **Volume-Purchased Apps** node of the Intune console. From here, you can manage deployment of the app in the same way you would deploy any other app.
@@ -87,7 +87,7 @@ When an app developer publishes a new version of the app with updated permission
 
 Periodically visit the managed Google Play console to check for new permissions. You can configure Google Play to send you or others an e-mail when new permissions are required for an approved app. If you assign an app and observe it isn't installed on devices, check for new permissions with the following steps:
 
-1. Visit http://play.google.com/work
+1. Visit <http://play.google.com/work>
 2. Sign in with the Google account you used to publish and approve the apps.
 3. Visit the **Updates** tab to see if any apps require an update.  Any listed apps require new permissions and do not assign until they are applied.  
 

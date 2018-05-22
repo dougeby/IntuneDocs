@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up enrollment for Windows devices
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This topic helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
@@ -37,7 +37,6 @@ As an Intune admin, you can simplify enrollment in the following ways:
 - [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
 - [CNAME registration](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Enable bulk enrollment](windows-bulk-enroll.md) (Azure AD Premium and Windows Configuration Designer required)
-- [Add a custom message](windows-enrollment-status.md) to greet your users when they enroll and view the progress of policy settings as they're applied
 
 Two factors determine how you can simplify Windows device enrollment:
 
@@ -54,7 +53,7 @@ Organizations that can use automatic enrollment can also configure [bulk enroll 
 **Multi-user support**<br>
 Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. When standard users log on with their Azure AD credentials, they receive apps and policies assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## Simplify Windows enrollment without Azure AD Premium
 You can simplify enrollment for your users by creating a domain name server (DNS) alias (CNAME record type) that automatically redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users attempting to connect to Intune must enter the Intune server name during enrollment.

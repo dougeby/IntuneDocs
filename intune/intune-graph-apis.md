@@ -5,9 +5,9 @@ title: How to use Azure AD to access Intune APIs in Microsoft Graph
 titlesuffix: Microsoft Intune
 description: Describes steps needed for apps to use Azure AD to access the Intune APIs in Microsoft Graph.
 keywords: intune graphapi c# powershell permission roles
-author: vhorne
+author: dougeby
 manager: dougeby
-ms.author: victorh
+ms.author: dougeby
 ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
@@ -123,13 +123,13 @@ At this point, you may also:
 
     To do so:
 
-    1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
+  1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. Change the value of the `availableToOtherTenants` setting to `true`.
+  2. Change the value of the `availableToOtherTenants` setting to `true`.
 
-    3. Save your changes.
+  3. Save your changes.
 
 ## Intune permission scopes
 

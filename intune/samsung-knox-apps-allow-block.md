@@ -5,8 +5,8 @@ title: Microsoft Intune policy to allow/block apps for Samsung Knox
 titlesuffix:
 description: Create a custom profile to allow and block apps for Samsung Knox Standard devices.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 # Use custom policies in Microsoft Intune to allow and block apps for Samsung Knox Standard devices 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use the procedure in this article to create a Microsoft Intune custom policy that creates one of the following:
 

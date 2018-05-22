@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Configure Microsoft Intune device restriction settings
-titleSuffix:
-description: Learn how to use Microsoft Intune to configure settings and features on devices you manage.
+title: Configure device restriction settings in Microsoft Intune - Azure | Microsoft Docs
+description: Add a device profile to restrict features on Android, macOS, iOS, Windows Phone, and Windows 10 devices in Microsoft Intune
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,9 +24,9 @@ ms.custom: intune-azure
 
 ---
 
-# How to configure device restriction settings in Microsoft Intune
+# Configure device restriction settings in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Device restrictions let you control a wide range of settings and features you manage across a range of categories such as:
 - Security
@@ -41,12 +40,10 @@ Learn device restriction profile basics, and then read further articles for each
 
 ## Create a device profile containing device restriction settings
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** page, choose **Device configuration**.
-2. On the **Device configuration** page under the **Manage** section, choose **Profiles**.
-3. On the **Profiles** page, choose **Create profile**.
-4. On the **Create profile** page, enter a **Name** and **Description** for the device restriction profile.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Device configuration** > **Profiles** > **Create profile**.
+4. Enter a **Name** and **Description** for the device restriction profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
 	- **iOS**

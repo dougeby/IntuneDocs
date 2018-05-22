@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,8 +28,7 @@ ms.custom: intune-azure
 
 # How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.

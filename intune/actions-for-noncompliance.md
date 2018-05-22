@@ -60,14 +60,14 @@ There are two types of actions:
 3. Select **Device compliance**, then select **Notifications**. 
 4. Select **Create notification**, and then enter the following information:
 
-  - Name
-  - Subject
-  - Message
-  - Email header – Include company logo
-  - Email footer – Include company name
-  - Email footer – Include contact information
+   - Name
+   - Subject
+   - Message
+   - Email header – Include company logo
+   - Email footer – Include company name
+   - Email footer – Include contact information
 
-  ![Example of a compliant notification message in Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Example of a compliant notification message in Intune](./media/actionsfornoncompliance-1.PNG)
 
 Once you're done adding the information, choose **Create**. The Notification message template is ready to use.
 
@@ -84,6 +84,9 @@ You can add an action when you create a new compliance policy, or update an exis
 2. Select **Policies**, choose one of your policies, and then select **Properties**. 
 
   Don't have a policy yet? Create an [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), or other platform policy.
+  
+  > [!NOTE]
+  > JAMF devices and devices targeted with device groups cannot receive compliance actions at this time.
 
 3. Select **Actions for noncompliance**, and then select **Add** to enter the action parameters. You can choose the message template previously created, add additional recipients, and update the grace period schedule. You can enter the number of days (0 to 365) on the schedule, then you can enforce the conditional access policies. If you enter **0** number of days, then conditional access **immediately** blocks access to corporate resources.
 

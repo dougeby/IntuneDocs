@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll devices by using a device enrollment manager account
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
 
@@ -54,12 +54,12 @@ The DEM user can:
 Devices that are enrolled with a device enrollment manager account have the following limitations:
 
   - No per-user access. Because devices don't have an assigned user, the device has no email or company data access. VPN configurations, for example, could still be used to provide device apps with access to data.
-  - No conditional access because these scenarios are per-user.
   - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin can do unenroll.
   - Only the local device appears in the Company Portal app or website.
-  - Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
+  - Users can’t use Apple Volume Purchase Program (VPP) apps with user licenses because of per-user Apple ID requirements for app management.
   - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator, Apple Device Enrollment Program (DEP), or Apple School Manager (ASM) to enroll devices.
   - (Android only) There is a limit to the number of Android for Work devices that can be enrolled with a single DEM account. A maximum of 10 Android work profile devices may be enrolled per DEM account. This limitation does not apply to legacy Android enrollment.
+  - Devices can install VPP apps if they have device licenses.
   - Each device requires a device license. Learn more about [user and device licenses](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
@@ -78,9 +78,9 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Permissions for DEM
 
-Global or Intune Service Administrator Azure AD roles are required to perform DEM enrollment tasks. These roles are also required to see all DEM users despite RBAC permissions being listed and available under the custom User role. A user without Global administrator or Intune Service administrator role assigned, but who has read permissions for the Device Enrollment Managers role, can only see the DEM users they created. RBAC role support for these features will be announced in the future.
+Global or Intune Service Administrator Azure AD roles are required to perform tasks that are related to DEM enrollment in the Admin Portal. These roles are also required to see all DEM users despite RBAC permissions being listed and available under the custom User role. A user without the Global Administrator or Intune Service Administrator role assigned, but who has read permissions for the Device Enrollment Managers role, can see only the DEM users they created. RBAC role support for these features will be announced in the future.
 
-If a user does not have the Global administrator or Intune Service administrator role assigned to them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll only be able to see the DEM users they have created.
+If a user does not have the Global Administrator or Intune Service Administrator role assigned to them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll be able to see only the DEM users they have created.
 
 ## Remove a device enrollment manager
 

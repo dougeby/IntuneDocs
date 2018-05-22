@@ -4,8 +4,8 @@
 title: App-based conditional access with Intune
 description: Learn how app-based conditional access works with Intune.
 keywords:
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # App-based conditional access with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.
 
@@ -62,29 +62,29 @@ In this example, the admin has applied app protection policies to the Outlook ap
 
 ![App-based conditional access process illustrated in a flow-chart](./media/ca-intune-common-ways-3.png)
 
-1.  The user tries to authenticate to Azure AD from the Outlook app.
+1. The user tries to authenticate to Azure AD from the Outlook app.
 
-2.  The user gets redirected to the app store to install a broker app when trying to authenticate for the first time. The broker app can be either the Microsoft Authenticator for iOS, or the Microsoft Company portal for Android devices.
+2. The user gets redirected to the app store to install a broker app when trying to authenticate for the first time. The broker app can be either the Microsoft Authenticator for iOS, or the Microsoft Company portal for Android devices.
 
- If users try to use a native e-mail app, they’ll be redirected to the app store to then install the Outlook app.
+   If users try to use a native e-mail app, they’ll be redirected to the app store to then install the Outlook app.
 
-3.  The broker app gets installed on the device.
+3. The broker app gets installed on the device.
 
-4.  The broker app starts the Azure AD registration process which creates a device record in Azure AD. This is not the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
+4. The broker app starts the Azure AD registration process which creates a device record in Azure AD. This is not the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
 
-5.  The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized to be used by the user.
+5. The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized to be used by the user.
 
-6.  The broker app sends the App Client ID to Azure AD as part of the user authentication process to check if it’s in the policy approved list.
+6. The broker app sends the App Client ID to Azure AD as part of the user authentication process to check if it’s in the policy approved list.
 
-7.  Azure AD allows the user to authenticate and use the app based on the policy approved list. If the app is not on the list, Azure AD denies access to the app.
+7. Azure AD allows the user to authenticate and use the app based on the policy approved list. If the app is not on the list, Azure AD denies access to the app.
 
-8.  The Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.
+8. The Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.
 
-9.  Outlook Cloud Service communicates with Azure AD to retrieve Exchange Online service access token for the user.
+9. Outlook Cloud Service communicates with Azure AD to retrieve Exchange Online service access token for the user.
 
-10.  The Outlook app communicates with Exchange Online to retrieve the user's corporate e-mail.
+10. The Outlook app communicates with Exchange Online to retrieve the user's corporate e-mail.
 
-11.  Corporate e-mail is delivered to the user's mailbox.
+11. Corporate e-mail is delivered to the user's mailbox.
 
 ## Next steps
 [Create an app-based conditional access policy](app-based-conditional-access-intune-create.md)

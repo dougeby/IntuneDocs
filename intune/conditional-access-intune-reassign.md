@@ -189,8 +189,8 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 After you have reassigned your conditional access policies in the Azure portal, it's important to gradually disable the conditional access policies previously created in the Intune classic portal. Additionally, you might need to use the same security group to apply the conditional access policies created in the Azure portal.
 
-> [!NOTE] 
-	> Before disabling your conditional access policies in the Intune classic portal, see the [Before you begin](#before-you-begin) section at the beginning of this topic.
+> [!NOTE]
+> Before disabling your conditional access policies in the Intune classic portal, see the [Before you begin](#before-you-begin) section at the beginning of this topic.
 
 ### To disable the conditional access policies
 

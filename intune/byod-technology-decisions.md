@@ -4,8 +4,8 @@ title: Technology decisions for BYOD with EMS
 description: Key technology decisions to enable BYOD and protect corporate data with Microsoft Enterprise Mobility + Security.
 keywords:
 author: dougeby
-ms.author: pfetty
-manager: angrobe
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod:
@@ -85,6 +85,6 @@ Still, many organizations often have specific risks they’re concerned about.  
 |Accidental data sharing or saving to unsecured locations | Disable printing | n/a|
 
 ## Next steps
-Now it’s time to decide if you are going to enable BYOD in your organization by focusing on device management, app management, or a combination of the two. The implementation choice is yours, where you can rest assured that the identity and security features available with Azure AD will be available regardless.
+Now it’s time to decide if you are going to enable BYOD in your organization by focusing on device management, app management, or a combination of the two. The implementation choice is yours, where you can rest assured that the identity and security features available with Azure AD will be available regardless.  
 
 Use the Intune [Planning Guide](planning-guide.md) to map out your next level of planning.

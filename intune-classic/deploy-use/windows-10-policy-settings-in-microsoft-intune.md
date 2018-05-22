@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Intune policy settings for Windows 10 devices in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic contains information to help you to understand the Intune policy settings that you can use to manage Windows 10 devices. Read this topic alongside the procedures in [Manage settings and features on your-devices with Microsoft Intune policies](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 

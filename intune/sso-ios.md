@@ -5,8 +5,8 @@ title: Configure Microsoft Intune for iOS device single sign-on
 titlesuffix:
 description: Learn how to configure Microsoft Intune for iOS device single sign-on.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Configure Microsoft Intune for iOS device single sign-on
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases this requires the user to type the same credentials multiple times, which can be frustrating for users. To improve the user experience, developers can create apps that use single sign-on, reducing the number of times a user must provide credentials.
 
@@ -65,13 +65,13 @@ The following sections provide more details about each of the single sign-on fie
 
 ### Username attribute from AAD and Realm
 
-- If **User Principle Name** is selected for this field, it is parsed in the following way:
+- If **User Principal Name** is selected for this field, it is parsed in the following way:
 
    ![Username attribute](media/User-name-attribute.png)
 
    You also have the choice to overwrite the realm with the text you type in the **Realm** text box.
 
-   For example, Contoso might have several subregions such as Europe, Asia, and North America. They might want their users in Asia to use the SSO payload, and the app requires the UPN in the form *username@asia.contoso.com*. In this case, if you select **User Principle Name**, by default the realm for each user is taken from AAD that may be just *contoso.com*. So for users in Asia specially, you can create this payload and overwrite the realm with the value *asia.contoso.com*. Now the end user's UPN becomes *username@asia.contoso.com* and not *username@contoso.com*.
+   For example, Contoso might have several subregions such as Europe, Asia, and North America. They might want their users in Asia to use the SSO payload, and the app requires the UPN in the form *username@asia.contoso.com*. In this case, if you select **User Principal Name**, by default the realm for each user is taken from AAD that may be just *contoso.com*. So for users in Asia specially, you can create this payload and overwrite the realm with the value *asia.contoso.com*. Now the end user's UPN becomes *username@asia.contoso.com* and not *username@contoso.com*.
 
 - If you select **Device ID**, Intune automatically selects the Intune Device ID.
 
@@ -96,7 +96,7 @@ The patterns `http://.com` and `https://.com` match all HTTP and HTTPS URLs, res
 
 Indicate which apps on an end user’s device that can use the Single Sign on payload.
 
-The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the *\ wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
+The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches (for example: `com.contoso.myapp`) or may specify a prefix match on the bundle ID by using the \* wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string (for example: `com.contoso.*`). When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
 
 The **App Name** field is used to add a user-friendly name to help you identify the bundle ID.
 

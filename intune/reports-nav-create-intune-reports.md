@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 # Use the Intune Data Warehouse
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use the Intune Data Warehouse to build reports that provide insight into your enterprise mobile environment. For example, some of the reports include:
 -	Trend of users enrolling in Intune so you can optimize your license purchases

@@ -5,8 +5,8 @@ title: Microsoft Intune home screen layout settings for devices running iOS
 titleSuffix: 
 description: Learn about the settings in Microsoft Intune that you can use customize the home screen and dock on devices running iOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 # Microsoft Intune home screen layout settings for devices running iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use these settings to configure the app layout and folders on the dock and home screen of devices running iOS.
 

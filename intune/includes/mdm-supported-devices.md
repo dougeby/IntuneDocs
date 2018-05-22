@@ -2,7 +2,7 @@
 
 ### Apple
 - Apple iOS 9.0 and later
-- Mac OS X 10.9 and later
+- Mac OS X 10.11 and later
 
 ### Google
 - Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
@@ -10,10 +10,11 @@
   A full list of verified Samsung Knox Standard devices is available in the [Android and Samsung Knox Standard policy settings](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
 
 
-- Android for Work [(requirements)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
+- Android for Work [requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ### Microsoft
 
+- Surface Hub
 - Windows 10 (Home, S, Pro, Education, and Enterprise versions)
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)

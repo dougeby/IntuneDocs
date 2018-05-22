@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Help protect your data with full or selective wipe using Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
@@ -45,31 +45,31 @@ You can wipe apps and data from Intune-managed devices that are no longer needed
 
 ### Remotely wipe a device from the Intune administrator console
 
-1.  Select devices to be wiped. You can find them either by user or by device.
+1. Select devices to be wiped. You can find them either by user or by device.
 
-    -   **By user:**
+   - **By user:**
 
-        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Users**.
+     1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Users**.
 
-        2.  Choose the name of the user whose mobile device you want to wipe. Choose **View Properties**.
+     2.  Choose the name of the user whose mobile device you want to wipe. Choose **View Properties**.
 
-        3.  On the user's **Properties**  page, choose **Devices**, and then choose the name of the mobile device you want to wipe. To select multiple devices, use Ctrl+click.
+     3.  On the user's **Properties**  page, choose **Devices**, and then choose the name of the mobile device you want to wipe. To select multiple devices, use Ctrl+click.
 
-    -   **By device:**
+   - **By device:**
 
-        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
+     1. In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
 
-         ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
+        ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
 
-        2.  Choose **Devices**, and then choose the name of the mobile device you want to wipe. To select multiple devices, use Ctrl+click.
+     2. Choose **Devices**, and then choose the name of the mobile device you want to wipe. To select multiple devices, use Ctrl+click.
 
-2.  Choose **Retire/Wipe**.
+2. Choose **Retire/Wipe**.
 
-3.  A confirmation message appears, asking you whether you want to retire the device.
+3. A confirmation message appears, asking you whether you want to retire the device.
 
-    -   To perform a **Selective wipe** that only removes company apps and data, choose **Yes**.
+   -   To perform a **Selective wipe** that only removes company apps and data, choose **Yes**.
 
-    -   To perform a **Full wipe** that erases all apps and data and returns the device to factory default settings, choose **Wipe the device before retiring**. This action applies to all platforms except Windows 8.1. **You cannot recover data removed by a full wipe**.
+   -   To perform a **Full wipe** that erases all apps and data and returns the device to factory default settings, choose **Wipe the device before retiring**. This action applies to all platforms except Windows 8.1. **You cannot recover data removed by a full wipe**.
 
 If the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
 

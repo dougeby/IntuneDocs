@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Licenses that include Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 The following table shows which version of Intune is available in each license:
 
@@ -46,7 +46,7 @@ The following table shows which version of Intune is available in each license:
 | Microsoft 365 E5 | Intune | [Learn more](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Office 365 F1 | None | [Learn more](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | None | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
+| Microsoft 365 Business | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
 | Office 365 Business Premium | None | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
 | Azure Active Directory Free, Basic, Premium P1, Premium P2 | None | [Learn more](https://azure.microsoft.com/en-us/pricing/details/active-directory/) |
 

@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,9 +26,17 @@ ms.custom: intune-classic
 
 # Change log for the Intune Data Warehouse API
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
+
+## 1805
+_Released May 2018_
+
+### Correction to device count in **Devices** collection 
+
+A fix has been made to the **Devices** collection which may lower total device counts that filter by the attribute `isDeleted`. This drop is a result of the correction and is not an error. For more information regarding the **Devices** collection, see [Reference for device entities](reports-ref-devices.md). 
+
 
 ## 1801
 _Released January 2018_

@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 
 You can use the Intune Data Warehouse API with an account with specific role-based access controls and Azure AD credentials. You will then authorize your REST client with Azure AD using OAuth 2.0. And finally, you will form a meaningful URL to call a data warehouse resource.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## Authorization
 
@@ -40,7 +40,7 @@ For more information, see [Authorize access to web applications using OAuth 2.0 
 The Data Warehouse API endpoints read the entities for each set. The API supports a **GET** HTTP verb, and a subset of query options.
 
 The URL for Intune uses the following format:  
-https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}
+`https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}`
 
 The URL contains the following elements:
 

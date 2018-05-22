@@ -6,7 +6,7 @@ description: Download Skycure iOS app configuration policy to use with the Skycu
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
@@ -28,9 +28,9 @@ ms.custom: intune-classic
 
 # Download Skycure iOS app configuration policy
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-##Before you begin
+## Before you begin
 
 You need to log in to the Skycure Management Console to perform the next steps.
 

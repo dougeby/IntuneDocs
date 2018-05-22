@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,50 +27,51 @@ ms.custom: intune-azure
 
 ---
 
-# How to add built-in apps to Microsoft Intune
+# Add built-in apps to Microsoft Intune
 
-The **built-in** app type makes it easy for you to assign curated managed apps, such as Office 365 apps, to iOS and Android devices. You can assign specific apps for this app type, such as Excel, OneDrive, Outlook, Skype, and others. After adding an app, you'll see the app type as either **Built-in iOS app** or **Built-in Android app**. By using the built-in app type, you can choose which of these specific apps to publish to device users.
+The *built-in* app type makes it easy for you to assign curated managed apps, such as Office 365 apps, to iOS and Android devices. You can assign specific apps for this app type, such as Excel, OneDrive, Outlook, Skype, and others. After you add an app, the app type is displayed as either *Built-in iOS app* or *Built-in Android app*. By using the built-in app type, you can choose which of these apps to publish to device users.
 
- In earlier editions of the Intune console, Intune provided several default managed Office 365 apps, such as Outlook and OneDrive. The app type for these managed apps were tagged as 'Managed iOS Store App' or 'Managed Android App'. We recommend you use the built-in app type instead of 'Managed iOS Store' or 'Managed Android App'. The built-in app type provides additional flexibility to edit and delete office 365 apps.
+In earlier versions of the Intune console, Intune provided several default managed Office 365 apps, such as Outlook and OneDrive. The app types for these managed apps were tagged as *Managed iOS Store App* or *Managed Android App*. Instead of using these app types, we recommend that you use the built-in app type. By using the built-in app type, you have the additional flexibility to edit and delete Office 365 apps.
 
 >[!NOTE]
->Default Office 365 apps that are tagged as 'Managed iOS Store' and 'Managed Android App' are removed from the app list when all assignments are deleted.
+>Default Office 365 apps that are tagged as *Managed iOS Store* and *Managed Android App* are removed from the app list when all assignments are deleted.
 
-## Add built-in app
+## Add a built-in app
 
-The following steps allow you to add a built-in app to your available apps in Microsoft Intune.
-1.	Sign into the Azure portal.
-2.	Display the Microsoft Intune blade, by choosing **More Services** > **Monitoring + Management** > **Intune**.
-3.	On the **Intune** blade, choose **Mobile apps**.
-4.	On the **Mobile apps** blade, choose **Apps** in the **Manage** group.
-5.	Choose **Add** to add a new app.
-6.	On the **Add** app blade, choose **Built-In app** from the **App type** list.
-7.	Click **Select app** to choose the built-in apps to include.
-8.	On the Built-In app blade, select the apps to include.
-9.	On the **Add app** blade, click **Add** to include the apps.
+To add a built-in app to your available apps in Microsoft Intune, do the following:
+1. Sign in to the Azure portal.
+2. To display the Microsoft Intune pane, select **More Services** > **Monitoring + Management** > **Intune**.
+3. In the **Intune** pane, select **Mobile apps**.
+4. In the **Mobile apps** pane, under **Manage**, select **Apps**.
+5. Select **Add**.
+6. In the **Add** app pane, in the **App type** list, select **Built-In app**.
+7. Select **Select app**.
+8. In the **Built-In app** pane, select the apps that you want to include.
+9. In the **Add app** pane, select **Add**.
 
 
 ## Configure app information
 
-You can modify information about the built-in app. This information helps you to identify the app in Intune and also helps users find the app in the Company Portal app.
-1.	On the **Mobile apps - Apps** blade, choose the built-in app that you want to modify. A blade for the built-in app is displayed.
-2.	Select the **Properties** option from the **Manage** group.
-3.	Select the **Configure** option to modify the built-in app information.
-4.	On the **App information** blade, you can modify the following information:
-    -	**Name** - Enter the name of the built-in app as it is displayed in the company portal. Make sure all names that you use are unique. If the same app name exists twice, only one of the apps is displayed to users in the company portal.
-    -	**Description** - Enter a description for the app. 
-    -	**Publisher** - Enter the name of the publisher of the app.
-    -	**Category** - Optionally, select one or more of the built-in app categories. Setting this option makes it easier for users to find the app when they browse the company portal.
-    -	**Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-    -	**Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-    -	**Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-    -	**Developer** - Optionally, enter the name of the app developer.
-    -	**Owner** - Optionally, enter a name for the owner of this app, for example, HR department.
-    -	**Notes** - Enter any notes you would like to associate with this app.
-    -	**Upload Icon** - Upload an icon that is displayed with the app when users browse the company portal.
-3.	When you are done, click **OK** on the **App information** blade.
-4.	Click **Save** on the **Properties** blade.
+You can modify information about the built-in app. This information helps you to identify the app in Intune and helps users find the app in the company portal.
+1. In the **Mobile apps - Apps** pane, select the built-in app that you want to modify.  
+    A pane for the built-in app is displayed.
+2. Under **Manage**, select the **Properties** option.
+3. To modify the built-in app information, select the **Configure** option.
+4. In the **App information** pane, you can modify the following information:
+    - **Name**: Enter the name of the built-in app as it is displayed in the company portal. Make sure all names that you use are unique. If the same app name exists twice, only one of the apps is displayed to users in the company portal.
+    - **Description**: Enter a description for the app. 
+    - **Publisher**: Enter the name of the publisher of the app.
+    - **Category**: Optionally, select one or more of the built-in app categories. Setting this option makes it easier for users to find the app when they browse the company portal.
+    - **Display this as a featured app in the company portal**: Display the app prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
+    - **Developer**: Optionally, enter the name of the app developer.
+    - **Owner**: Optionally, enter a name for the owner of this app (for example, *HR department*).
+    - **Notes**: Enter any notes that you want to associate with this app.
+    - **Upload Icon**: Upload an icon that is displayed with the app when users browse the company portal.
+4. Select **OK**.
+5. In the **Properties** pane, select **Save**.
 
 ## Next steps
 
-- You can now assign the apps the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+- You can now assign the apps to the groups that you choose. For more information, see [Assign apps to groups](apps-deploy.md).

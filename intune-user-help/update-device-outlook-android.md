@@ -4,8 +4,8 @@ title: You need to update your Android device to install Outlook | Microsoft Doc
 titleSuffix: Microsoft Intune
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/29/2018
 ms.topic: article

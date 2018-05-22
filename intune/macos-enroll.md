@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up enrollment for macOS devices in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](custom-settings-macos.md). More capabilities are coming soon.
 
@@ -76,3 +76,11 @@ You can enroll macOS virtual machines for testing using either Parallels Desktop
 For Parallels Desktop, you need to set the hardware type and the serial number for the virtual machines so that Intune can recognize them. Follow Parallels' instructions for [setting hardware type](http://kb.parallels.com/123594) and [serial number](http://kb.parallels.com/123455) to set up the necessary settings for testing. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
 
 For VMware Fusion, you need to [edit the .vmx file](https://kb.vmware.com/s/article/1014782) to set the virtual machine's hardware model and serial number. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
+
+## User Approved enrollment
+
+User Approved MDM enrollment is a type of macOS enrollment that you can use to manage certain security-sensitive settings. For more information, see [Apple's support documentation](https://support.apple.com/HT208019).
+
+To be user approved, the end user must, after enrolling using the macOS Company Portal, manually provide approval by using System Preferences. Instructions to do this are provided by the macOS Company Portal for users on macOS 10.13.2 and later.
+
+To find out if a device is User Approved, go to the Intune portal and then choose **Devices** > **All devices**> choose the device > **Hardware**. Check the **User Approved** field.

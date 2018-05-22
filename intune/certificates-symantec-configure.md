@@ -3,8 +3,8 @@ title: Issue Symantec PKCS certificates with Microsoft Intune
 titlesuffix: 
 description: Install and configure Intune Certificate Connector to issue PKCS Certificates from Symantec PKI Manager Web Service to Intune-managed devices.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 # Set up Intune Certificate Connector for Symantec PKI Manager Web Service
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article show you how to install and configure Intune Certificate Connector to issue PKCS Certificates from a Symantec PKI Manager Web Service to Intune managed devices.
 

@@ -4,8 +4,8 @@
 title: You need to install SandBlast Mobile Protect on your Android device | Microsoft Docs
 description: Learn how to install SandBlast Mobile Protect on your Android device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
@@ -36,7 +36,7 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 **What you need to do:**
 
-1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
+1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install SandBlast Mobile Protect from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
 
 2. You are taken to the SandBlast Mobile Protect installation page in the Play Store. Install SandBlast Mobile Protect, and then tap **ACCEPT** to let SandBlast Mobile Protect access your device.
 

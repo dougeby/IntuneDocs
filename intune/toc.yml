@@ -168,12 +168,16 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Enrollment status page
+        href: windows-enrollment-status.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Enrollment Status Screen
-        href: windows-enrollment-status.md
     - name: Set up Android enrollment
-      href: android-enroll.md
+      items:
+      - name: Set up Android enrollment
+        href: android-enroll.md
+      - name: Samsung Knox Mobile Enrollment 
+        href: android-samsung-knox-mobile-enroll.md
     - name: Set up iOS enrollment
       href: ios-enroll.md
       items:
@@ -255,6 +259,8 @@
           href: lob-apps-windows-phone.md
         - name: Windows LOB apps
           href: lob-apps-windows.md
+        - name: macOS LOB apps
+          href: lob-apps-macos.md          
       - name: Web apps
         href: web-app.md
       - name: Built-in apps
@@ -304,6 +310,8 @@
             href: app-protection-policy-settings-android.md
           - name: iOS settings
             href: app-protection-policy-settings-ios.md
+          - name: Data transfer exceptions
+            href: app-protection-policies-exception.md
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
         - name: Monitor app protection user status
@@ -357,6 +365,13 @@
         href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
+    - name: Configure endpoint protection
+      href: endpoint-protection-configure.md
+      items:
+      - name: macOS
+        href: endpoint-protection-macos.md
+      - name: Windows 10
+        href: endpoint-protection-windows-10.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -398,12 +413,8 @@
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Windows 10 endpoint protection
-      href: endpoint-protection-windows-10.md
     - name: Configure Windows 10 education settings
       href: education-settings-configure.md
-    - name: Configure iOS education settings
-      href: education-settings-configure-ios.md
     - name: Configure iOS education shared devices
       href: education-settings-configure-ios-shared.md
     - name: Configure iOS update policies
@@ -457,6 +468,8 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal
@@ -483,10 +496,10 @@
         items:
         - name: Lookout and Intune integration
           href: lookout-mtd-connector-integration.md
-      - name: Set up Skycure
+      - name: Set up Symantec
         href: skycure-mobile-threat-defense-connector.md
         items:
-        - name: Skycure and Intune integration
+        - name: Symantec and Intune integration
           href: skycure-mtd-connector-integration.md
       - name: Set up Check Point
         href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
@@ -506,6 +519,8 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
+    - name: Windows Defender ATP
+      href: advanced-threat-protection.md        
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello
@@ -591,6 +606,10 @@
       href: data-intune-sends-to-apple.md
     - name: Data Intune sends to Google
       href: data-intune-sends-to-google.md
+    - name: Data Apple sends to Intune
+      href: data-apple-sends-to-intune.md
+    - name: Data Google sends to Intune
+      href: data-google-sends-to-intune.md
   - name: Monitor and troubleshoot
     items:
     - name: Help users troubleshoot problems
@@ -644,8 +663,6 @@
       href: app-wrapper-prepare-android.md
     - name: Intune App SDK for Android
       href: app-sdk-android.md
-    - name: Intune App SDK Cordova plugin
-      href: app-sdk-cordova.md
     - name: Intune App SDK Xamarin component
       href: app-sdk-xamarin.md
   - name: Use the Intune Data Warehouse
@@ -689,6 +706,8 @@
         href: reports-ref-user-device.md
       - name: Reference for user entity
         href: reports-ref-user.md
+    - name: Move your Intune Data Warehouse account data
+      href: data-warehouse-account-move.md
   - name: Use Azure AD to access Intune APIs in Microsoft Graph
     href: intune-graph-apis.md
     items:

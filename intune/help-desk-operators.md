@@ -3,8 +3,8 @@ title: Help desk troubleshooting portal
 titlesuffix: Microsoft Intune
 description: Help desk staff use the troubleshooting portal to solve users' technical problems.
 keywords:
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 ---
 # Use the troubleshooting portal to help users at your company
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** pane.
 

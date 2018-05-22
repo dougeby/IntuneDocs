@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -269,6 +269,7 @@ The **Devices** entity lists all enrolled devices under management and their cor
 | LastPolicyUpdateUtc | Latest time when policy was updated on the device. |
 | LastExchangeStatusUtc | Last time the device synced with exchange. |
 | IsDeleted | Set to True if the device is not managed by Intune anymore. Preserves the last known state. |
+| AndroidSecurityPatchLevel |The date of the device's most recent security patch. |
 
 ## DevicePropertyHistory
 
@@ -416,10 +417,12 @@ The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory
 
 The **ApplicationInventory** entity lists the apps found on the device at the time of inventory collection.
 
-| Property  | Description |
-|---------|------------|
-| DeviceKey |A reference to devices table. |
-| ApplicationKey |? (copied from ExchangeDeviceService\DeviceApplication). |
-| ApplicationName |? (copied from ExchangeDeviceService\DeviceApplication). |
-| ApplicationVersion |? (copied from ExchangeDeviceService\DeviceApplication). |
-| BundleSize |? (copied from ExchangeDeviceService\DeviceApplication). |
+
+|      Property      |                       Description                        |
+|--------------------|----------------------------------------------------------|
+|     DeviceKey      |              A reference to devices table.               |
+|   ApplicationKey   | ? (copied from ExchangeDeviceService\DeviceApplication). |
+|  ApplicationName   | ? (copied from ExchangeDeviceService\DeviceApplication). |
+| ApplicationVersion | ? (copied from ExchangeDeviceService\DeviceApplication). |
+|     BundleSize     | ? (copied from ExchangeDeviceService\DeviceApplication). |
+

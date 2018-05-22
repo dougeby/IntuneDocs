@@ -5,7 +5,7 @@ title: Understand operations by using reports
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:
-author: arob98
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 # Understand Microsoft Intune operations by using reports
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you create and manage Microsoft Intune reports that provide information about software, hardware, and software licenses in your organization.
 

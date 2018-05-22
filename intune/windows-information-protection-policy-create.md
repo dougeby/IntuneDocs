@@ -5,9 +5,9 @@ title: Create and deploy Windows Information Protection (WIP) app protection pol
 titlesuffix: Microsoft Intune
 description: Create and deploy Windows Information Protection (WIP) app protection policy with Microsoft Intune
 keywords:
-author: Erikre
-ms.author: erikre
-manager: doubeby
+author: msmimart
+ms.author: mimart
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Create and deploy Windows Information Protection (WIP) app protection policy with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can use app protection policies with Windows 10 apps to protect apps without device enrollment.
 
@@ -39,7 +39,7 @@ You must understand a few concepts when adding a WIP policy:
 
 ### List of allowed and exempt apps
 
--   **Allowed apps:** These apps are the apps that need to adhere to this policy.
+-   **Protected apps:** These apps are the apps that need to adhere to this policy.
 
 -   **Exempt apps:** These apps are exempt from this policy and can access corporate data without restrictions.
 
@@ -69,7 +69,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 2. Choose **All Services** > **Intune**.
 3. Select **Mobile apps** on the **Microsoft Intune** blade.
 4. Select **App protection policies** on the **Mobile apps** blade.
-5. Click **Add a policy** to display the **Add a policy** blade.
+5. Select **Add a policy** to display the **Add a policy** blade.
 6. Add the following values:
     - **Name:** Type a name (required) for your new policy.
     - **Description:** (Optional) Type a description.
@@ -77,7 +77,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
     - **Enrollment state:** Choose **Without enrollment** as the enrollment state for your policy.
 7.  Choose **Create**. The policy is created and appears in the table on the **App protection policies** blade.
 
-## To add recommended apps to your allowed apps list
+## To add recommended apps to your protected apps list
 
 1. Select **Mobile apps** on the **Microsoft Intune** blade.
 2. Select **App protection policies** on the **Mobile apps** blade.
@@ -88,7 +88,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 7. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
 8. Click **Save**.
 
-## Add a Store app to your allowed apps list
+## Add a Store app to your protected apps list
 
 **To add a Store app**
 1. Select **Mobile apps** on the **Microsoft Intune** blade.
@@ -101,7 +101,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 9. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
 10. Click **Save**.
 
-## Add a desktop app to your allowed apps list
+## Add a desktop app to your protected apps list
 
 **To add a desktop app**
 1. Select **Mobile apps** on the **Microsoft Intune** blade.
@@ -124,7 +124,7 @@ WIP Learning is a report that allows you to monitor your WIP-enabled apps and WI
 <!-- 1631908 -->
 In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
 
-When working with WIP-enabled apps and WIP-unknown apps, we recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your allowed apps list. After you're done, you can change to your final enforcement policy, **Block**.
+When working with WIP-enabled apps and WIP-unknown apps, we recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, **Block**.
 
 ### What are the protection modes?
 

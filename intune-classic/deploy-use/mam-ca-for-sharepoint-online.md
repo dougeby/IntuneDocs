@@ -6,7 +6,7 @@ description:
 keywords:
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 05/03/2017
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Set up app-based conditional access (CA) policies for SharePoint Online
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 This topic provides guidance on how to set up app-based conditional access policy for SharePoint Online. App-based CA helps admins to only allow mobile apps that have Intune app protection policies applied to.
 

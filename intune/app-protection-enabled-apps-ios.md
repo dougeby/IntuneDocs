@@ -5,8 +5,8 @@ title: iOS apps with app protection policies
 titlesuffix: Microsoft Intune
 description: Learn what to expect from an iOS app that has protection policies.
 keywords:
-author: erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # What to expect when your iOS app is managed by app protection policies
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Learn about the user experience for iOS apps with app protection policies. App protection polices are applied only when apps are used in the work context. For example, when you access an app with a work account, or when you access files stored in your company OneDrive location.
 ##  Accessing apps

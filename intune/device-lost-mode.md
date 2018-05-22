@@ -4,10 +4,10 @@
 title: Activate iOS lost mode with Microsoft Intune - Azure | Microsoft Docs
 description: Turn on or start lost mode to customize a message that appears on the lock screen of a lost or stolen iOS device by using Microsoft Intune. And, get details on security and privacy information when you are using the lost mode action.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enable lost mode on iOS devices with Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The **Lost mode** device action helps you enable lost mode on lost or stolen iOS devices. This mode lets you enter a message and a phone number that appears on the lock screen of the device. To use lost mode, the device must be a corporate-owned iOS device that is in supervised mode.
 

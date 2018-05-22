@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Set up the Skycure integration with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 You need to add Skycure apps into Azure AD to have Single Sign On capabilities.
 

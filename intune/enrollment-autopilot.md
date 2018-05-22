@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,9 +21,22 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 The Windows AutoPilot Deployment Program simplifies device provisioning. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## Prerequisites
-- [Devices must be registered to your organization](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## Add devices
+
+You can add Windows AutoPilot devices by importing a CSV file with their information.
+
+1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > **Import**.
+
+    ![Screenshot of Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. Under **Add Windows Autopilot devices**, browse to a CSV file containing the serial numbers, Windows product IDs, and hardware hashes of the devices you want to add.
+
+    ![Screenshot of Adding Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. Choose **Import** to start importing the device information. This can take several minutes.
 
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
@@ -107,6 +120,16 @@ You can view an alert for Windows AutoPilot unassigned devices to see how many d
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Under **Intune**, choose **Device enrollment**.
 4. To see the alert, choose **Overview**. Click the alert to see a list of AutoPilot devices.  
+
+## Delete AutoPilot devices
+
+You can delete Windows AutoPilot devices that are not enrolled. You can unenroll devices and then delete them.
+
+1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+
+2. Under **Windows AutoPilot devices**, choose the devices you want to delete, and then choose **Delete**.
+
+3. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 
 
 ## Next steps

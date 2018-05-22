@@ -6,7 +6,7 @@ description: This topic describes troubleshooting issues that commonly occur wit
 keywords:
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Troubleshoot Lookout Integration with Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 This topic describes some common issues you may encounter with your Lookout mobile threat protection (MTP) setup.
 
