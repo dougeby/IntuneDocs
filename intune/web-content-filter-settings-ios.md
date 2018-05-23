@@ -71,9 +71,9 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 > [!IMPORTANT]
 > The following URLs are permitted automatically by Intune.
-> - www.microsoft.com
-> - www.microsoft.net
-> - www.apple.com
+> - <www.microsoft.com>
+> - <www.microsoft.net>
+> - <www.apple.com>
 
 ## Finish up
 
