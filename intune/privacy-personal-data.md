@@ -35,8 +35,6 @@ Microsoft Intune does not use any personal data collected as part of providing t
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-dsr-and-stp-note.md)]
 
-gdpr-dsr-and-stp-note.md)
-
 ## Your company terms and conditions
 
 You can [include privacy statements in your company’s terms and conditions for end users](company-portal-app.md). Such privacy statements can include information about the usage and privacy of the end user’s personal data.
