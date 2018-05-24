@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Remove devices by using factory reset or remove company data
+# Remove devices by using factory reset, removing company data, or manually unenrolling the device
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
