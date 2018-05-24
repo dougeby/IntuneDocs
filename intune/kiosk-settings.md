@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Kiosk settings for Windows 10 (and later) in Intune
 
-A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
+Kiosk profiles can be used to configure Windows 10 devices to run one app, or run multiple apps. When you configure a kiosk profile, you also choose if there's a start menu shows, if a web browser is installed, and more options.
 
 ## Kiosk settings
 

@@ -79,6 +79,13 @@ To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft In
 This feature supports:
 - Windows 10 and later
 
+## Kiosk
+
+[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other featurs on your kiosk, including a start menu and a web browser.
+
+This feature supports:
+- Windows 10 and later
+
 ## Email
 [Email settings](email-settings-configure.md) profile creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help ensure consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
 
@@ -140,7 +147,6 @@ This feature supports:
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10
-
 
 ## Windows Information Protection profile
 [Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps to protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. It does this without requiring changes to your environment or other apps.

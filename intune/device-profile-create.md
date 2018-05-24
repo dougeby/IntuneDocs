@@ -55,6 +55,7 @@ ms.custom: intune-azure
        -  [Device features](device-features-configure.md)
        -  [Device restrictions](device-restrictions-configure.md)
        -  [Endpoint protection](endpoint-protection-configure.md)
+       -  [Kiosk](kiosk-settings.md)
        -  [Email](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)
        -  [Wi-Fi](wi-fi-settings-configure.md)
