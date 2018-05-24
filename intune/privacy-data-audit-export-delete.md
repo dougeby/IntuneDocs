@@ -48,7 +48,7 @@ These audit events are retained for one year. Tenant admins can request audit lo
 
 Admins can export end user personal data, including accounts, service data, and associated logs to comply with Data Subject Rights requests. It’s up to you and your organization to decide whether or not to provide the data subject with a copy of the personal data or if you have a legitimate business reason to withhold it. If you decide to provide it, you can provide them with a copy of the actual document, an appropriately redacted version, or a screenshot of the portions you have deemed appropriate to share.
 
-To export a user’s personal data, you can use:
+To export a user’s personal data, you can use: 
 - the Intune MDM Device blade to export a list of devices. You can also copy device data directly.
 - the [Export-IntuneData.ps1 script](https://aka.ms/intunedataexport).
 
