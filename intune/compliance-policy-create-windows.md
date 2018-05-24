@@ -122,7 +122,9 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
-See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details on how the HAS service works.
+See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
+
+To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access in Intune](https://docs.microsoft.com/en-us/intune/advanced-threat-protection).
 
 ### Device properties
 
