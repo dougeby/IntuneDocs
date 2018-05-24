@@ -32,7 +32,7 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
 
     ![Screenshot of Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file containing the serial numbers, Windows product IDs, and hardware hashes of the devices you want to add.
+2. Under **Add Windows Autopilot devices**, browse to a CSV file containing the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices you want to add.
 
     ![Screenshot of Adding Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
