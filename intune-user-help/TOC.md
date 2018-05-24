@@ -151,7 +151,7 @@
 #### [I need to enable UAC](you-need-to-enable-uac-windows.md)
 #### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
-## [Remotely lock device from Company Portal app for Windows](remote-lock-your-device-cp-app.md) 
+#### [Remotely lock device from Company Portal](remote-lock-your-device-cp-app.md) 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
 ### [Rename your device](rename-your-device-cpwebsite.md)
