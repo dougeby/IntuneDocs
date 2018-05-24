@@ -81,7 +81,7 @@ This feature supports:
 
 ## Kiosk
 
-[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other featurs on your kiosk, including a start menu and a web browser.
+[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other features on your kiosk, including a start menu and a web browser.
 
 This feature supports:
 - Windows 10 and later
