@@ -5,8 +5,8 @@ title: Manage PowerShell scripts in Microsoft Intune for Windows 10 devices
 titlesuffix: 
 description: Learn how to upload PowerShell scripts in Microsoft Intune to run on Windows 10 devices. 
 keywords:
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -41,6 +41,7 @@ The Intune management extension supplements the in-box Windows 10 MDM capabiliti
 The Intune management extension has the following prerequisites:
 - Devices must be joined to Azure AD. This does not include Hybrid AD joined devices.
 - Devices must run Windows 10, version 1607 or later.
+- Automatic MDM enrollment must be [enabled in Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), and devices must be auto-enrolled to Intune.
 
 ## Create a PowerShell script policy 
 1. Sign into the [Azure portal](https://portal.azure.com).
@@ -49,7 +50,7 @@ The Intune management extension has the following prerequisites:
 4. On the **Device configuration** pane, choose **Manage** > **PowerShell scripts**.
 5. On the **PowerShell scripts** pane, choose **Add**.
 6. On the **Add PowerShell Script** pane, enter a **Name** and **Description** for the PowerShell script.
-7. For **Script location**, browse for the PowerShell script. The script must be less than 10 KB (ASCII) or 5 KB (Unicode).
+7. For **Script location**, browse for the PowerShell script. The script must be less than 200KB in size.
 8. Choose **Configure**, and then choose whether to run the script with the user's credentials on the device (**Yes**) or system context(**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
   ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
 9. Choose whether the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 

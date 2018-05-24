@@ -41,7 +41,7 @@ Lookout MTP only allows users from a configured Azure AD group to access the ser
 
 * Email: enterprisesupport@lookout.com
 * Login to the  [MTP  Console](http://aad.lookout.com), and navigate to the **Support** module.
-* Go to: https://enterprise.support.lookout.com/hc/requests and make a support request.
+* Go to: <https://enterprise.support.lookout.com/hc/requests> and make a support request.
 
 ## Unable to sign in
 You see the following error when the Azure AD global admin user has not accepted the initial Lookout setup.
@@ -88,7 +88,7 @@ You can also go to the **Devices** module of the [Lookout console](http://aad.lo
 If the new user is in an  Lookout MTP enrollment group, the device will appear once Azure AD associates the device with the new user.
 
 ## Compliance remediation workflows
-- [You are prompted to install Lookout for Work on your Android device]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [You are prompted to install Lookout for Work on your Android device](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [You need to resolve a threat that Lookout for Work found on your Android device](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [You need to resolve a threat that Lookout for Work found on your iOS device](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 

@@ -4,8 +4,8 @@
 title: Create WiFi profile with pre-shared key - Microsoft Intune - Azure | Micrososft Docs
 description: Use a custom profile to create a Wi-Fi profile with a pre-shared key, and get sample XML code for Android, Windows, and EAP-based Wi-Fi profiles in Microsoft Intune
 keywords:
-author: mandia
-ms.author: MandiOhlinger
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -41,6 +41,7 @@ Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks
 - For Android, you can also use the [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - You can add multiple networks and keys by adding more OMA-URI settings.
 - For iOS, use Apple Configurator on a Mac station to set up the profile. Or, use [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- PSK requires a string of 64 hexadecimal digits, or a passphrase of 8 to 63 printable ASCII characters. Some characters, such as asterisk ( * ), are not supported.
 
 ## Create a custom profile
 You can create a custom profile with a pre-shared key for Android, Windows, or an EAP-based Wi-Fi profile. To create the profile using the Azure portal, see [Create custom device settings](custom-settings-configure.md). When you create the device profile, choose **Custom** for your device platform. Don't select the Wi-Fi profile. When you choose custom, be sure to: 
@@ -48,16 +49,16 @@ You can create a custom profile with a pre-shared key for Android, Windows, or a
 1. Enter a name and description of the profile.
 2. Add a new OMA-URI setting with the following properties: 
 
-   a. Enter a name for this Wi-Fi network setting
+   a. Enter a name for this Wi-Fi network setting.
 
-   b. (Optional) Enter a description of the OMA-URI setting, or leave it blank
+   b. (Optional) Enter a description of the OMA-URI setting, or leave it blank.
 
-   c. Set the **Data Type** to **String**
+   c. Set the **Data Type** to **String**.
 
    d. **OMA-URI**:
 
-   - **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **For Android**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **For Windows**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Be sure to include the dot character at the beginning.

@@ -5,8 +5,8 @@ title: Getting started with policies in Microsoft Intune
 titlesuffix:
 description: Create policies to help protect corporate data and manage the devices end users use to access company resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article

@@ -4,10 +4,10 @@
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
 description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,25 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can remove devices from Intune that are no longer needed, being repurposed, or missing. You can do this by using the **Remove company data** or **Factory reset** actions. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
+By using the **Remove company data** or **Factory reset** actions, you can remove devices from Intune that are no longer needed, being repurposed, or missing. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
 > [!NOTE]
 > Before you remove a user from Azure Active Directory (Azure AD), use the **Factory reset** or **Remove company data** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer issue a factory reset or remove company data for those devices.
 
 ## Factory reset
 
-The **Factory reset** action restores a device to its factory default settings. A factory reset restores all company and user data and settings. The device is removed from Intune management. A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
+The **Factory reset** action restores a device to its factory default settings. The user data is kept or wiped depending on whether or not you choose the **Retain enrollment state and user account** checkbox.
+
+|Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
+|:-------------:|:------------:|:------------:|------------|
+|**Factory Reset**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
+|**Factory Reset**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
+
+The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
+
+MDM policies will be reapplied the next time the device connects to Intune.
+
+A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
 
 ### Factory reset a device
 
@@ -65,7 +76,9 @@ If the device is on and connected, the **Factory reset** action propagates acros
 
 ## Remove company data
 
-The **Remove company data** action removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. **Remove company data** leaves the user's personal data on the device. The device is removed from Intune management. 
+The **Remove company data** action removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. The device is removed from Intune management. This happens the next time the device checks in and receives the remote **Remove company data** action.
+
+**Remove company data** leaves the user's personal data on the device.  
 
 The following tables describe what data is removed, and the effect of the **Remove company data** action on data that remains on the device after company data is removed.
 
@@ -130,13 +143,19 @@ Removing company data from an Android for Work device removes all data, apps, an
 
 ### Remove company data
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Devices** pane, select **All devices**.
-4. Select the name of the device from which you want to remove company data.
-5. In the pane that shows the device name, select **Remove company data**. To confirm, select **Yes**.
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. In the **Devices** pane, select **All devices**.
+3. Select the name of the device from which you want to remove company data.
+4. In the pane that shows the device name, select **Remove company data**. To confirm, select **Yes**.
 
 If the device is on and connected, the **Remove company data** action propagates across all device types in less than 15 minutes.
+
+## Delete devices from the Intune portal
+
+If you want to remove devices from the Intune portal, you can delete them from the specific device pane. The next time the device checks in, any company data on it will be removed.
+
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
 
 ## Delete devices from the Azure Active Directory portal
 

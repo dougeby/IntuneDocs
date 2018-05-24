@@ -3,8 +3,8 @@ title: Set up a telecom expense management service
 titleSuffix: Microsoft Intune
 description: Integrate Intune with the Saaswedo telecom expense management service.
 keywords: Saaswedo
-author: ErikjeMS  
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article

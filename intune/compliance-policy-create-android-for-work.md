@@ -97,7 +97,7 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
 
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
 - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
-- **Required password type**: Choose if a password should have only numeric characters, or if there should be a mix of numbers and other characters. Choose from:
+- **Required password type**: Choose whether a password should contain only numeric characters or a mix of numerals and other characters. Choose from:
   - **Device Default**
   - **Low security biometric**
   - **At least numeric**

@@ -5,8 +5,8 @@ title: Microsoft Intune web content filter settings for iOS devices
 titlesuffix:
 description: Learn the Microsoft Intune settings you can use to allow and block access to websites from devices running iOS.
 keywords:
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -71,9 +71,9 @@ If you do not specify any URLs, then end users cannot access any websites except
 
 > [!IMPORTANT]
 > The following URLs are permitted automatically by Intune.
-> - www.microsoft.com
-> - www.microsoft.net
-> - www.apple.com
+> - <www.microsoft.com>
+> - <www.microsoft.net>
+> - <www.apple.com>
 
 ## Finish up
 

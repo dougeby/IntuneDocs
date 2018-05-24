@@ -62,9 +62,11 @@ You can decide which MTD toggle options you need to enable according to your org
 - **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
 	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
+- **Enable App Sync for iOS Devices**: Allows this Mobile Threat Defense partner to request metadata of iOS applications from Intune to use for threat analysis purposes.
+
 - **Block unsupported OS versions**: Block if the device is running an operating system less than the minimum supported version.
 
-- **Number of days until partner is unresponsive**: Number of days of inactivity before Intune considers teh partner to be unresponsive because the connection is lost. Intune ignores compliance state for unresponsive MTD partners.
+- **Number of days until partner is unresponsive**: Number of days of inactivity before Intune considers the partner to be unresponsive because the connection is lost. Intune ignores compliance state for unresponsive MTD partners.
 
 > [!IMPORTANT] 
 > You must add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
