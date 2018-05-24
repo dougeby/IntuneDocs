@@ -418,7 +418,7 @@
       - name: iOS shared devices
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
-       href: education-settings-configure.md
+        href: education-settings-configure.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
     - name: Configure iOS update policies
