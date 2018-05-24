@@ -118,7 +118,7 @@ To see alerts for unassigned devices, in [Intune in the Azure portal](https://ak
 
 You can delete Windows AutoPilot devices that are not enrolled.
 
-1. If the devices are enrolled in Intune, you must first [delete them the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
 2. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
 
