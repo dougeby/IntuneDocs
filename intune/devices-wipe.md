@@ -1,4 +1,4 @@
-,---
+---
 # required metadata
 
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
