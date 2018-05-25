@@ -121,14 +121,14 @@ Use the following information to learn about the allowed formats and wildcards t
 
 |                  URL                  |                     Details                      |                                                Matches                                                |                                Does not match                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Matches a single page               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Matches a single page               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Matches all URLs that begin with www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Matches a single page               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Matches a single page               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | Matches all URLs that begin with <www.contoso.com>  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     Matches all subdomains under contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Matches a single folder              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Matches a single folder              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Matches a single page, by using a port number   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Matches a single, secure page           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Matches a single folder and all subfolders    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    Matches a single folder and all subfolders    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - The following are examples of some of the inputs that you cannot specify:
 
@@ -136,11 +136,11 @@ Use the following information to learn about the allowed formats and wildcards t
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - IP addresses
 

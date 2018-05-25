@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,19 +47,27 @@ After you create your device profile, Intune provides graphical charts. These ch
 1. Select an existing profile. For example, select a macOS profile.
 2. Select the **Overview** tab.
 
-    The graphical chart shows the number of devices assigned to the specific device profile. For example, if the configuration device profile applies to macOS devices, the chart lists the count of the macOS devices.
+    The top graphical chart shows the number of devices assigned to the specific device profile. For example, if the configuration device profile applies to macOS devices, the chart lists the count of the macOS devices.
 
     It also shows the number of devices for other platforms that are assigned the same device profile. For example, it shows the count of the non-macOS devices.
 
     ![View the number of devices assigned to the device profile](./media/device-configuration-profile-graphical-chart.png)
 
-3. Select the circle in the graphical chart. **Device status** opens.
+    The bottom graphical chart shows the number of users assigned to the specific device profile. For example, if the configuration device profile applies to macOS users, the chart lists the count of the macOS users.
+
+3. Select the circle in the top graphical chart. **Device status** opens.
 
     The devices assigned to the profile are listed, and it shows if the profile is successfully deployed. Also note that it only lists the devices with the specific platform (for example, macOS).
 
-    Close the device status details.
+    Close the **Device status** details.
 
-4. In the properties of the profile (**Profiles** > select a specific profile), you can also change existing properties:
+4. Select the circle in the bottom graphical chart. **User status** opens. 
+
+    The users assigned to the profile are listed, and it shows if the profile is successfully deployed. Also note that it only lists the users with the specific platform (for example, macOS).
+
+    Close the **User status** details.
+
+5. Back in the **Profiles** list, select a specific profile. You can also change existing properties:
   - **Properties**: Change the name, or update any existing settings.
   - **Assignments**: Include or exclude devices that the policy should apply. Choose **Selected Groups** to choose specific groups.
   - **Device status**: The devices assigned to the profile are listed, and it shows if the profile is successfully deployed. You can select a specific device to get even more details, including the installed apps.

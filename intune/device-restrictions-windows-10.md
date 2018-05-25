@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -255,7 +255,9 @@ You can add apps that should have a different privacy behavior from what you def
 
   GDI DPI Scaling lets apps that are not DPI aware to become per-monitor DPI aware. Specify the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to both turn on and turn off on an app, scaling is turned off for the app.
 
-## Kiosk (Preview)
+## Kiosk (Preview) - Obsolete
+
+These settings are moving, and are removed in an upcoming release. To use the new settings, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
 
 A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
