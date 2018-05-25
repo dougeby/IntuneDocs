@@ -41,6 +41,9 @@ Per-App VPN is currently available for the following providers:
 
 ## Prerequisites for Per-App VPN
 
+> [!IMPORTANT]
+> Your VPN vendor may have other specific requirements for per-app VPN, such as specific hardware or licensing. Be sure to check with their documentation, and meet those prerequisites before setting up per-app VPN in Intune.
+
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
 Export the certificate and add the CA.
