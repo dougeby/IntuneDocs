@@ -135,7 +135,7 @@
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
-### [Remotely lock devices from Company Portal](remote-lock-your-device-cp-app.md) 
+### [Remotely lock devices from your Windows 10 device](remote-lock-your-device-cp-app.md) 
 
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
 #### [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
