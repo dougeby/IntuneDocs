@@ -128,13 +128,13 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
 - **Minimum OS version**: Enter the minimum allowed version in the **major.minor.build.CU number** format. To get the correct value, open a command prompt, and type `ver`. The `ver` command returns the version in the following format:
 
-`Microsoft Windows [Version 10.0.17134.1]`
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   When a device has an earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
 - **Maximum OS version**: Enter the maximum allowed version, in the **major.minor.build.revision number** format. To get the correct value, open a command prompt, and type `ver`. The `ver` command returns the version in the following format:
 
-`Microsoft Windows [Version 10.0.17134.1]`
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
