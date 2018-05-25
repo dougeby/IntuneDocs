@@ -44,47 +44,43 @@ Synchronize your registered devices into Intune so that you can configure them.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
 2. Choose **Windows enrollment**, and in the **Windows AutoPilot** section, choose **Devices**.
 3. Click **Sync** to import your registered devices. A message displays that the synchronization is in progress.
-4. Refresh the view to see the new devices. The process might take a few minutes to complete, depending on how many devices are being synchronized.  
+4. Refresh the view to see the new devices. The process might take a few minutes to complete, depending on how many devices are being synchronized.
+
+## Create an AutoPilot device group
+
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+2. In the **Group** blade:
+    1. For **Group type**, choose **Security**.
+    2. Type a **Group name** and **Group description**.
+    3. For **Membership type**, choose either **Assigned** or **Dynamic Device**.
+3. If you chose **Assigned** for **Membership type** in the previous step, then in the **Group** blade, choose **Members** and add AutoPilot devices to the group.
+    AutoPilot devices that are not yet enrolled are devices where the name equals the serial number of the device.
+4. If you chose **Dynamic Devices** for **Membership type** above, then in the **Group** blade, choose **Dynamic device members** and type any of the following in the **Advanced rule** box.
+    - If you want to create a group that contains all of your AutoPilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - If you want to create a group that contains all fyour AutoPilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - If you want to create agroup that contains all ofyour AutoPilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+    After adding the **Advanced rule** code, choose **Save**.
+5. Choose **Create**.
+
+
 
 ## Create an AutoPilot deployment profile
 AutoPilot deployment profiles are used to configure the AutoPilot devices.
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
-4. Choose **Windows enrollment**, and in the **Windows AutoPilot** section, choose **Deployment Profiles**.
-3. Select **Create Profile**, and choose a name and optional description.
-4. For **User Affinity**, choose an option that determines whether users enrolling with this profile must enter credentials during device setup:
-    - **Enroll with User Affinity**: Choose this option for devices that belong to users. Users will have to enter their AAD credentials in order to set up the device.
-    - **Enroll without User Affinity**: Choose this option for device unaffiliated with a single user. AAD credentials are not required to set up the device
-5. If you chose **Enroll with User Affinity** above, choose **Azure AD joined** under **Join to Azure AD as**, set the following options, and then choose **Save**.
-   - **End-user license agreement (EULA)**: Choose whether to show the EULA to users.
-   - **Privacy settings**: Choose whether to show privacy settings to users.
-   - **User account type**: Choose whether the user's account type is an **Administrator** or **Standard** user.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
+2. Type a **Name** and optional **Description**.
+3. In the **Join to Azure AD as** box, choose **Azure AD joined**.
+4. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
+    - **End-user license agreement (EULA)**: Choose whether or not to show the EULA to users.
+    - **Privacy settings**: Choose whether or not to show privacy settings to users.
+    - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
+5. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
-     > [!Note]    
-     > This setting does not apply to Global Administrator or Company Administrator accounts. These accounts cannot be standard users because they have access to all administrative features in Azure AD.
 
-6. If you chose **Enroll without User Affinity** above, choose **Azure AD joined** under **Join to Azure AD as**, set the following options, and then choose **Save**.
-    - **Language (Region)**: Choose the language and region for the device.
-    - **Automatically configure keyboard**: Automatically configure the keyboard based on the **Language** selection above.
-    - **End-user license agreement (EULA)**, **Privacy settings**, **User account type**: As above.
+## Assign an AutoPilot deployment profile to a device group
 
-7. Click **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
-
-> [!Note]    
-> The following settings are configured with all AutoPilot deployment profiles:
-> - Skip Cortana, OneDrive, and OEM registration setup pages
-> - Automatically set up for work or school
-
-## Assign an AutoPilot deployment profile
-After you create AutoPilot deployment profiles, you can assign them to selected devices.
-
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
-2. Choose **Windows enrollment**, and in the **Windows AutoPilot** section, choose **Devices**.
-3. Select the devices to which you want to assign the deployment profile. You can filter on the **Profile Status** column to easily find devices without an assigned profile.
-4. Click **Assign profile**, select the AutoPilot deployment profile, and then click **Assign**. A message displays that the assignment is in progress.
-5. Refresh the view to see that the profile has been assigned to the devices. The process might take a few minutes to complete, depending on how many devices you selected.
-
-> [!Note]
-> The new profile is assigned to the device. For devices that have already enrolled in Intune, the profile is applied after the device is reset and reenrolled.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
+2. In the specific profile blade, choose **Assignments**. 
+3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assigne the profile to, then choose **Select**.
 
 ### Assign a different AutoPilot deployment profile
 After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
