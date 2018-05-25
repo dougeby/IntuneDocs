@@ -59,6 +59,7 @@ Synchronize your registered devices into Intune so that you can configure them.
     - If you want to create a group that contains all of your AutoPilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - If you want to create a group that contains all fyour AutoPilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
     - If you want to create agroup that contains all ofyour AutoPilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+    
     After adding the **Advanced rule** code, choose **Save**.
 5. Choose **Create**.
 
