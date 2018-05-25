@@ -31,15 +31,17 @@ ms.custom: intune-azure
 
 Microsoft Intune currently support a variety of apps types and deployment scenarios on Windows 10 devices. After you've added an app to Intune, you can assign the app to users and devices. The following information provides more details related to the supported Windows 10 scenarios. Additionally, the following information provides key details to note when deploying apps to Windows. 
 
-On Windows 10 devices, the following app types are supported:
+Line-of-business (LOB) apps and Microsoft Store for Business apps are the app types supported on Windows 10 devices.
 
-## Line-of-business (LOB) apps
+## Windows 10 Line-of-business apps
+
 Windows 10 LOB apps are signed and uploaded to the Intune admin console and can include both modern apps, such as Universal Windows Platform (UWP) apps and Windows App Packages (AppX), as well as Win 32 apps, such as simple Microsoft Installer package files (MSI). Updates of LOB apps must be manually uploaded and deployed each time by the admin. Updates that are deployed are automatically installed on end-user devices that have installed the app with no user intervention. The user has no control over the updates. 
 
-##Microsoft Store for Business apps
+## Microsoft Store for Business apps
+
 Microsoft Store for Business apps that are modern apps purchased from the Microsoft Store for Business admin portal and are then synced over to Microsoft Intune for management. The apps can either be **online licensed** or **offline licensed**. Updates of Microsoft Store for Business apps are managed directly by the Microsoft Store, with no additional action required by the admin. The admin can also prevent updates to specific apps using custom Uniform Resource Identifier (URI). For more information, see [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). On the device, the end user can also disable updates for all Microsoft Store for Business apps on the device. 
 
-## Installing an app on a Windows 10 device
+## Installing apps on Windows 10 devices
 Depending on the app type, the app can be installed on a Windows 10 device in one of two ways:
 
 - **User Context**: When an app is deployed in user context, the managed app will be installed for that user on the device when the user signs-in to the device. Note that the app installation will not succeed until the user signs-in to the device. 
