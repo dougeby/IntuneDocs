@@ -70,8 +70,8 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. Type a **Name** and optional **Description**.
 3. For **Deployment mode**, choose one of these two options:
-    - **User-driven**: Devices with this profile must be enrolled by a user.
-    - **Self-deploying**: Devices wtih this profile can be enrolled automatically with no user.
+    - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to provision the device.
+    - **Self-deploying**: Devices with this profile are not associated with the user enrolling the device. User credentials are not required to provision the device.
 4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
     - **End-user license agreement (EULA)**: Choose whether or not to show the EULA to users.
