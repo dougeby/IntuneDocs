@@ -69,22 +69,22 @@ Synchronize your registered devices into Intune so that you can configure them.
 AutoPilot deployment profiles are used to configure the AutoPilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. Type a **Name** and optional **Description**.
-3. In the **Join to Azure AD as** box, choose **Azure AD joined**.
-4. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
+3. For **Deployment mode**, choose one of these two options:
+    - **User-driven**: Devices with this profile must be enrolled by a user.
+    - **Self-deploying**: Devices wtih this profile can be enrolled automatically with no user.
+4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
+5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
     - **End-user license agreement (EULA)**: Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
     - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
-5. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
+6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
 
 ## Assign an AutoPilot deployment profile to a device group
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
 2. In the specific profile blade, choose **Assignments**. 
-3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assigne the profile to, then choose **Select**.
-
-### Assign a different AutoPilot deployment profile
-After you've assigned an AutoPilot deployment profile to a device, if you decide to assign a different profile, assign the new profile to the device.  
+3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
 
 ## Edit an AutoPilot deployment profile
 After you've created an AutoPilot deployment profile, you can edit certain parts of the deployment profile.   
@@ -97,14 +97,6 @@ After you've created an AutoPilot deployment profile, you can edit certain parts
 
 > [!NOTE]
 > Changes to the profile are applied to devices assigned to that profile. However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled.
-
-## Using AutoPilot in other portals
-If you are not interested in mobile device management, you have the ability to use AutoPilot in Microsoft Store for Business, for example. While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments. If you use Intune and another portal, Intune isn't able to:
-- Display changes to profiles created in Intune, but edited in another portal
-- Synchronize profiles created in another portal
-- Display changes to profile assignments done in another portal
-- Synchronize profile assignments done in another portal
-- Display changes to the device list that were made in another portal
 
 ## Alerts for Windows AutoPilot unassigned devices  <!-- 163236 -->
 You can view an alert for Windows AutoPilot unassigned devices to see how many devices from the AutoPilot program do not have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them.
@@ -123,6 +115,13 @@ You can delete Windows AutoPilot devices that are not enrolled.
 
 4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 
+## Using AutoPilot in other portals
+If you are not interested in mobile device management, you have the ability to use AutoPilot in Microsoft Store for Business, for example. While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments. If you use Intune and another portal, Intune isn't able to:
+- Display changes to profiles created in Intune, but edited in another portal
+- Synchronize profiles created in another portal
+- Display changes to profile assignments done in another portal
+- Synchronize profile assignments done in another portal
+- Display changes to the device list that were made in another portal
 
 ## Next steps
 After you configure Windows AutoPilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
