@@ -2116,7 +2116,7 @@
 		{
 			"source_path": "intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md",
 			"redirect_url": "/intune/apps-add",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md",
@@ -2161,7 +2161,7 @@
 		{
 			"source_path": "intune/deploy-use/android-for-work-apps.md",
 			"redirect_url": "/intune/apps-add-android-for-work",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/android-for-work-apps.md",
@@ -2311,7 +2311,7 @@
 		{
 			"source_path": "intune/deploy-use/deploy-apps-in-microsoft-intune.md",
 			"redirect_url": "/intune/apps-deploy",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/deploy-apps-in-microsoft-intune.md",
