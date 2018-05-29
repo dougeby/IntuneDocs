@@ -1289,7 +1289,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
+			"source_path": "intune-classic/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
 			"redirect_url": "/intune/data-transfer-between-apps-manage-ios",
 			"redirect_document_id": false
 		},		
