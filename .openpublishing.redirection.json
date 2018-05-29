@@ -2516,7 +2516,7 @@
 		{
 			"source_path": "intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md",
 			"redirect_url": "/intune/windows-store-for-business",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md",
@@ -2566,7 +2566,7 @@
 		{
 			"source_path": "intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md",
 			"redirect_url": "/intune/vpp-apps",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md",
@@ -2606,7 +2606,7 @@
 		{
 			"source_path": "intune/deploy-use/monitor-apps-in-microsoft-intune.md",
 			"redirect_url": "/intune/apps-monitor",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/monitor-apps-in-microsoft-intune.md",
@@ -2641,7 +2641,7 @@
 		{
 			"source_path": "intune/deploy-use/per-app-vpn-for-android-pulse-secure.md",
 			"redirect_url": "/intune/android-pulse-secure-per-app-vpn",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/per-app-vpn-for-android-pulse-secure.md",
@@ -2766,7 +2766,7 @@
 		{
 			"source_path": "intune/deploy-use/retire-apps-using-microsoft-intune.md",
 			"redirect_url": "/intune/apps-inc-exl-assignments",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/retire-apps-using-microsoft-intune.md",
