@@ -74,6 +74,8 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
     - **Self-deploying**: Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to provision the device.
 4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
+    - **Language (Region)**: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard**: If a **Language (Region)** is selected, skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
     - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
