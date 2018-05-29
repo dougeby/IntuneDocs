@@ -18,7 +18,7 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ---
 
 # Enroll Windows devices by using the Windows AutoPilot
-The Windows AutoPilot simplifies device provisioning. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, etc. on the devices after they are enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+The Windows AutoPilot simplifies device provisioning. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and AutoPilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage AutoPilot devices, you can manage policies, profiles, apps, and more on the devices after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## Prerequisites
 - [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
@@ -32,11 +32,11 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
 
     ![Screenshot of Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file containing the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices you want to add.
+2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The file should contain the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices.
 
     ![Screenshot of Adding Windows AutoPilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
-3. Choose **Import** to start importing the device information. This can take several minutes.
+3. Choose **Import** to start importing the device information. Importing can take several minutes.
 
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
@@ -54,11 +54,11 @@ Synchronize your registered devices into Intune so that you can configure them.
     2. Type a **Group name** and **Group description**.
     3. For **Membership type**, choose either **Assigned** or **Dynamic Device**.
 3. If you chose **Assigned** for **Membership type** in the previous step, then in the **Group** blade, choose **Members** and add AutoPilot devices to the group.
-    AutoPilot devices that are not yet enrolled are devices where the name equals the serial number of the device.
-4. If you chose **Dynamic Devices** for **Membership type** above, then in the **Group** blade, choose **Dynamic device members** and type any of the following in the **Advanced rule** box.
-    - If you want to create a group that contains all of your AutoPilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - If you want to create a group that contains all fyour AutoPilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
-    - If you want to create agroup that contains all ofyour AutoPilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+    AutoPilot devices that aren't yet enrolled are devices where the name equals the serial number of the device.
+4. If you chose **Dynamic Devices** for **Membership type** above, then in the **Group** blade, choose **Dynamic device members** and type any of the following code in the **Advanced rule** box.
+    - If you want to create a group that includes all of your AutoPilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - If you want to create a group that includes all of your AutoPilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - If you want to create a group that includes all of your AutoPilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     After adding the **Advanced rule** code, choose **Save**.
 5. Choose **Create**.
