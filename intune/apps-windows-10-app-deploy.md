@@ -33,6 +33,9 @@ Microsoft Intune currently support a variety of apps types and deployment scenar
 
 Line-of-business (LOB) apps and Microsoft Store for Business apps are the app types supported on Windows 10 devices.
 
+> [!Note]
+> The minimum needed Windows 10 update is [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
+
 ## Windows 10 Line-of-business apps
 
 Windows 10 LOB apps are signed and uploaded to the Intune admin console and can include both modern apps, such as Universal Windows Platform (UWP) apps and Windows App Packages (AppX), as well as Win 32 apps, such as simple Microsoft Installer package files (MSI). Updates of LOB apps must be manually uploaded and deployed each time by the admin. Updates that are deployed are automatically installed on end-user devices that have installed the app with no user intervention. The user has no control over the updates. 
@@ -48,6 +51,9 @@ Depending on the app type, the app can be installed on a Windows 10 device in on
     - Modern line-of-business apps and Microsoft store for business apps (both online and offline) can be deployed in user context and will support both the Required and Available intent.
 - **Device Context**: When an app is deployed in device context, the managed app will be installed directly to the device by Intune.
     - Only modern line-of-business apps and Online licensed Microsoft store for business apps can be deployed in device context and will only support the Required intent.
+
+> [!Note]
+> Win32 apps are not yet supported on Windows 10 devices.
 
 When an app is deployed in device context, the installation will only succeed when targeted to a device that supports device context. In addition, deploying in device context supports the following conditions:
 - If an app is deployed in device context and targeted to a user, the installation will fail with the following status and error displayed in the admin console:
