@@ -1,11 +1,11 @@
 ---
 title: Use SCEP certificates with Microsoft Intune - Azure | Microsoft Docs
-description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. 
+description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. Also, see the different event IDs and their descriptions, and the diagnostic codes for the Intune connector service.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -412,15 +412,14 @@ Consider the following before you assign certificate profiles to groups:
     
 For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).
 
+## Intune Connector events and diagnostic codes
 
-## Intune Connector Events and Diagnostic Codes
+The Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Intune Connector Service**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
 
-To assist with troubleshooting potential issues in the configuration of the Intune Connector, the Intune Connctor Service logs events in the Windows Event Viewer under Applications and Service Logs->Intune Connector Service. These events contain details on a success or a failure of an operation and do also contain diagnostic codes with messages to help the IT admin to troubleshoot an issue if a failure occurs.
-
-### Event ID Table
+### Event IDs and descriptions
 
 > [!NOTE]
-    > For details on the Related Diagnostic Codes for each event use the Diagnostic Codes Table below.
+> For details on the Related Diagnostic Codes for each event, use the **Diagnostic codes** table (in this article).
 
 | Event ID      | Event Name    | Event Description | Related Diagnostic Codes |
 | ------------- | ------------- | -------------     | -------------            |
@@ -444,7 +443,7 @@ To assist with troubleshooting potential issues in the configuration of the Intu
 | 20600 | CRPNotifyMetric_Success  | Certificate Registration Point successfully finished notify process and has sent the certificate to the client device. | 0x00000000, 0x0FFFFFFF |
 | 20602 | CRPNotifyMetric_Failure  | Certificate Registration Point failed to finish notify process. See the event message details for information on the request. Verify connection between the NDES server and the CA. | 0x00000000, 0x0FFFFFFF |
 
-### Diagnostic Code Table
+### Diagnostic codes
 
 | Diagnostic Code | Diagnostic Name | Diagnostic Message |
 | -------------   | -------------   | -------------      |
@@ -460,3 +459,6 @@ To assist with troubleshooting potential issues in the configuration of the Intu
 | 0x00000410 | CRPSCEPDeserialize_Failed  | Failed to deserialize SCEP challenge request. Verify the NDES and Intune Connector is setup correctly. |
 | 0x00000411 | CRPSCEPChallenge_Expired  | Request denied due to expired certificate challenge. The client device can retry after obtaining a new challenge from the management server. |
 | 0x0FFFFFFFF | Unknown_Error  | We are unable to complete your request because a server-side error occurred. Please try again. |
+
+## Next steps
+[Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md).
