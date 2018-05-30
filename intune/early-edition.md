@@ -46,7 +46,7 @@ This page is updated periodically. Check back for additional updates.
 
 ### Corporate-owned, single use (COSU) support for Android devices <!-- 1630973 -->
 
-Intune will support highly-managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device.
+Intune will support highly managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device.
 
 ### macOS support for Apple Device Enrollment Program <!-- 747651 -->
 
@@ -73,7 +73,7 @@ On iOS devices, Intune admins will be able to block the use of 3rd-party keyboar
 ### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
 When you create a new macOS compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: macOS** > **System security**), there will be some new **Firewall** settings available: 
 - **Firewall**: Configure how incoming connections are handled in your environment.
-- **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This settings also blocks all sharing services.
+- **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This setting also blocks all sharing services.
 - **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests. The device continues to answer incoming requests for authorized apps.
 
 Applies to: macOS 10.12 and later
@@ -84,7 +84,7 @@ You'll be able to use the on-premises **sAMAccountName** as the account username
 
 To use this feature, you must sync the `sAMAccountName` attribute from your on-premises Active Directory environment to Azure AD.
 
-Applies to: Andoid, iOS, Windows 10 and later
+Applies to: Android, iOS, Windows 10 and later
 
 ### Require non-biometric passcode on app launch and timeout <!-- 1506985 -->
 
@@ -94,7 +94,7 @@ By requiring a non-biometric passcode on app launch and after admin-specified ti
 Administrators will be able to configure a selective wipe of the organization's data as a new action when the conditions of Application Protection Policies (APP) Access settings are not met.  This feature helps administrators automatically protect and remove sensitive organization data from applications based on pre-configured criteria.
 
 ### Revoking an iOS app purchased through VPP <!-- 1777384 -->
-As the Microsoft Intune admin, you you'll be able to revoke the license for a selected iOS app purchased through the volume-purchase program (VPP). You can notify users when an app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload of Intune. For more information related to iOS VPP apps, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
+As the Microsoft Intune admin, you'll be able to revoke the license for a selected iOS app purchased through the volume-purchase program (VPP). You can notify users when an app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload of Intune. For more information related to iOS VPP apps, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
 
 ### Office 365 Pro Plus language packs <!-- 1833450 -->
 As the Intune admin, you will be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
@@ -175,7 +175,7 @@ Intune will be able to retrieve the app user model ids (AUMIDs) for Microsoft St
 For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
 
 ### Access actions for app protection policies <!-- 1483510 EEready -->
-You will soon be able to configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The newest action *wipe* removes your company’s corporate data from a device. If a wipe occurs, the device user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. Note that these actions are triggered when the app is launched.
+You will soon be able to configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The newest action *wipe* removes your company’s corporate data from a device. If a wipe occurs, the device user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. These actions are triggered when the app is launched.
 
 ### New inventory information for Windows devices <!-- 1333569 eeready -->
 
@@ -191,7 +191,7 @@ For Windows devices, the following inventory information will be available per d
 For more information on how this data is retrieved by the CSP, see the DeviceStatus entries in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
 
 ### Intune and the Microsoft Edge browser <!-- 1818969 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Intune app protection policies. Users who sign-in with their corporate Azure AD accounts in the Edge browser application will be protected by Intune. 
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Intune app protection policies. Users who sign in with their corporate Azure AD accounts in the Edge browser application will be protected by Intune. 
 
 ### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 -->
 A new configuration setting will be available to set the language and region for Autopilot profiles during the Out of Box Experience.
@@ -247,7 +247,7 @@ Users enrolling a device by using the Company Portal on Windows 10 build 1703 an
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
-We'll be updating the Help and Feedback experience on the Company Portal app for Android to align with best practices for Android apps. We'll be updating the Company Portal app for Android over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
+The Help and Feedback experience on the Company Portal app for Android will be updated to align with best practices for Android apps. The Company Portal app for Android will be updated over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
 <!-- the following are present prior to 1801 -->
 
