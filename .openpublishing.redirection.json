@@ -2199,6 +2199,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-classic/deploy-use/block-apps-with-no-modern-authentication.md",
+			"redirect_url": "/intune/app-modern-authentication-block",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune/deploy-use/bulk-enroll-windows.md",
 			"redirect_url": "/intune-classic/deploy-use/bulk-enroll-windows",
 			"redirect_document_id": true
