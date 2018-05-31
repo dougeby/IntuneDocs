@@ -501,12 +501,12 @@
 		{
 			"source_path": "intune/deploy-use/device-threat-protection-apps.md",
 			"redirect_url": "https://docs.microsoft.com/intune-classic/deploy-use/configure-deploy-lookout-for-work-app",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/device-threat-protection-enable.md",
 			"redirect_url": "https://docs.microsoft.com/intune-classic/deploy-use/enable-lookout-mtd-connection",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/device-threat-protection-policy.md",
@@ -2105,14 +2105,24 @@
 		},
 		{
 			"source_path": "intune/accessibility-for-people-with-disabilities.md",
-			"redirect_url": "/intune-classic/accessibility-for-people-with-disabilities",
-			"redirect_document_id": true
+			"redirect_url": "https://www.microsoft.com/accessibility",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/accessibility-products-and-services-from-microsoft.md",
-			"redirect_url": "/intune-classic/accessibility-products-and-services-from-microsoft",
+			"source_path": "intune-classic/accessibility-for-people-with-disabilities.md",
+			"redirect_url": "https://www.microsoft.com/accessibility",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/accessibility-products-and-services-from-microsoft.md",
+			"redirect_url": "https://www.microsoft.com/accessibility",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/accessibility-products-and-services-from-microsoft.md",
+			"redirect_url": "https://www.microsoft.com/accessibility",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md",
 			"redirect_url": "/intune/apps-add",
@@ -2135,9 +2145,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md",
-			"redirect_url": "/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy",
-			"redirect_document_id": true
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md",
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/afw-app-configuration-policy.md",
 			"redirect_url": "/intune-classic/deploy-use/afw-app-configuration-policy",
@@ -2240,9 +2255,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/configure-deploy-lookout-for-work-app.md",
-			"redirect_url": "/intune-classic/deploy-use/configure-deploy-lookout-for-work-app",
-			"redirect_document_id": true
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/configure-deploy-lookout-for-work-app.md",
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/Configure-Intune-certificate-profiles.md",
 			"redirect_url": "/intune-classic/deploy-use/Configure-Intune-certificate-profiles",
@@ -2285,14 +2305,24 @@
 		},
 		{
 			"source_path": "intune/deploy-use/create-lookout-device-compliance-policy.md",
-			"redirect_url": "/intune-classic/deploy-use/create-lookout-device-compliance-policy",
-			"redirect_document_id": true
+			"redirect_url": "/intune/mtd-device-compliance-policy-create",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md",
-			"redirect_url": "/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy",
+			"source_path": "intune-classic/deploy-use/create-lookout-device-compliance-policy.md",
+			"redirect_url": "/intune/mtd-device-compliance-policy-create",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md",
+			"redirect_url": "/intune/mtd-device-compliance-policy-create",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy.md",
+			"redirect_url": "/intune/mtd-device-compliance-policy-create",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/create-windows-information-protection-policy-with-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune",
@@ -2330,14 +2360,24 @@
 		},
 		{
 			"source_path": "intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md",
-			"redirect_url": "/intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy",
-			"redirect_document_id": true
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/download-skycure-ios-app-configuration-policy.md",
-			"redirect_url": "/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy",
+			"source_path": "intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md",
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/download-skycure-ios-app-configuration-policy.md",
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/download-skycure-ios-app-configuration-policy.md",
+			"redirect_url": "/intune/mtd-apps-ios-app-configuration-policy-add-assign",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/edition-upgrade-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/edition-upgrade-policy-settings-in-microsoft-intune",
@@ -2350,9 +2390,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/enable-lookout-mtd-connection.md",
-			"redirect_url": "/intune-classic/deploy-use/enable-lookout-mtd-connection",
-			"redirect_document_id": true
+			"redirect_url": "/intune/mtd-connector-enable",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/enable-lookout-mtd-connection.md",
+			"redirect_url": "/intune/mtd-connector-enable",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune",
@@ -2825,9 +2870,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/setup-the-skycure-integration-with-Intune.md",
-			"redirect_url": "/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/setup-the-skycure-integration-with-Intune.md",
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/setup-your-lookout-mtd-subscription.md",
 			"redirect_url": "/intune-classic/deploy-use/setup-your-lookout-mtd-subscription",
