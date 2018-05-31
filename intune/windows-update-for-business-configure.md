@@ -7,7 +7,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 5/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -175,6 +175,12 @@ You can pause a device from receiving Feature Updates or Quality Updates for a p
 > [!IMPORTANT]
 > When you issue a pause command, devices receive this command the next time they check into the service. It's possible that before they check in, they might install a scheduled update.
 > Additionally, if a targeted device is turned off when you issue the pause command, when you turn it on, it might download and install scheduled updates before it checks in with Intune.
+
+### Uninstall the latest from Windows 10 software updates 
+Should you discover a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
+
+> [!NOTE]
+> On Windows 10 machines, after the quality update has successfully been rolled back, end-users will still be able to see the successfully rolled back update by selecting **Windows settings** > **Updates** > **Update History**.
 
 ## Windows Holographic for Business Support
 

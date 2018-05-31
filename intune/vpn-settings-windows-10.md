@@ -55,7 +55,7 @@ Depending on the settings you choose, not all values may be configurable.
   - **SonicWALL Mobile Connect**
   - **Check Point Capsule VPN**
   - **Citrix**
-  - **Palo Alto GlobalProtect**
+  - **Palo Alto Networks GlobalProtect**
   - **Automatic**
   - **IKEv2**
   - **L2TP**

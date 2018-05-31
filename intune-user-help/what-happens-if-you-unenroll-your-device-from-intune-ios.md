@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your iOS or macOS device? | Microsoft Docs
-description:
+title: What happens if you unenroll your iOS or macOS device?
+description: Describes what happens after you remove your device from Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/03/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
