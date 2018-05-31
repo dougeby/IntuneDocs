@@ -74,7 +74,7 @@ You may need to add users or security groups in Active Directory or Azure Active
 
 
 -   Learn more about [how to add users/groups in Intune](users-permissions-add.md).
-<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
+<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
 
