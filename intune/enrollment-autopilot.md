@@ -82,7 +82,7 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
-*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (Windows Insider Build Number 17672 or later.)
+*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (Windows Insider Build Number 17672 or later).
 
 
 ## Assign an AutoPilot deployment profile to a device group
