@@ -81,8 +81,8 @@ Upload your company logo to make it visible throughout the Intune user experienc
 |Field name|More information|
 |---|---|
 |**Show company logo**|When you enable this option, you can upload your company logo to show in your Company Portal. You can upload two logos: one logo that is displayed when the Company Portal background is white, and one logo that is displayed when the Company Portal background uses your selected theme color. |
-|**Upload a logo to use on theme color backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size. |
-|**Upload logo to use on light backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size. |
+|**Upload a logo to use on theme color backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 400 pixels and be 750 KB or less in size. |
+|**Upload logo to use on light backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 400 pixels and be 750 KB or less in size. |
 |**Show company name next to logo**| Select this option to show the company name you entered next to the uploaded logo. |
 
 After you save your changes, you can choose **Preview your settings in the Intune Web Portal** at the top of the blade to see how your configurations will look.
