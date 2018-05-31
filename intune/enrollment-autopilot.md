@@ -71,15 +71,18 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 2. Type a **Name** and optional **Description**.
 3. For **Deployment mode**, choose one of these two options:
     - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to provision the device.
-    - **Self-deploying**: Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to provision the device.
+    - **Self-deploying (preview)**: (Windows Insider Build Number 17672 or later) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to provision the device.
 4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
-    - **Language (Region)**: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **Automatically configure keyboard**: If a **Language (Region)** is selected, skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **End-user license agreement (EULA)**: Choose whether or not to show the EULA to users.
+    - **Language (Region)***: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard***: If a **Language (Region)** is selected, skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
     - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
+
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
+
+*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (Windows Insider Build Number 17672 or later).
 
 
 ## Assign an AutoPilot deployment profile to a device group
