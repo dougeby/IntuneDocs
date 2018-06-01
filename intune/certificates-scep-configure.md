@@ -414,7 +414,7 @@ For information about how to assign profiles, see [How to assign device profiles
 
 ## Intune Connector events and diagnostic codes
 
-The Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Intune Connector Service**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
+As of version 6.1803.x.x The Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Microsoft Intune Connector**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
 
 ### Event IDs and descriptions
 
