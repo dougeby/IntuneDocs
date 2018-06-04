@@ -281,7 +281,16 @@ Block **User editing of the exploit protection interface** by uploading an XML f
 
 Supported on the following Windows editions:
 
-- NEED THIS INFO
+**Mobile Device Management (MDM)**: 
+- Professional
+- Business
+- Enterprise
+- Education
+- Mobile
+- Mobile Enterprise
+
+**Group policy management**: 
+- Enterprise
 
 Use **Application control code integrity policies** to choose additional apps that are audited, or are trusted to run by Windows Defender Application Control. Windows components and all apps from the Windows store are automatically trusted to run.
 
