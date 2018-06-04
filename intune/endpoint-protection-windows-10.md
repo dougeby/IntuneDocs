@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,14 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 
 ## Windows Defender Firewall
 
-Supported on all Windows 10 editions.
+Supported on the following Windows 10 editions:
+- Home
+- Professional
+- Business
+- Enterprise
+- Education
+- Mobile
+- Mobile Enterprise
 
 ### Global settings
 
@@ -96,7 +103,16 @@ These settings are applicable to specific network types, including **Domain (wor
 
 ## Windows Defender SmartScreen settings
 
-Supported on all Windows 10 editions with Edge installed.
+Supported on the following Windows 10 editions with Edge installed:
+- Home
+- Professional
+- Business
+- Enterprise
+- Education
+- Mobile
+- Mobile Enterprise
+
+**Settings**:
 
 - **SmartScreen for apps and files**: **Enable** Windows SmartScreen for file execution, and running apps. SmartScreen is a cloud-based anti-phishing and anti-malware component. **Not configured** (default) disables SmartScreen.
 - **Unverified files execution**: **Block** end users from running files that haven't been verified by Windows SmartScreen. **Not configured** (default) disables this feature, and allows end users to run files that haven't been verified.
@@ -113,6 +129,8 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+
+**Settings**:
 
 - **Encrypt devices**: **Require** to prompt users to enable device encryption. Users are asked if another encryption provider is enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable. **Not configured** (default) doesn't require device encryption, and doesn't prompt the user to turn it on.
 - **Encrypt storage card**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on.
@@ -178,6 +196,8 @@ Supported on the following Windows 10 editions:
 - Mobile
 - Mobile Enterprise
 
+**Settings**:
+
 - **Write access to fixed data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there is read and write access to data drives that aren't BitLocker-protected.
 - **Fixed drive recovery**: **Enable** this setting to control how BitLocker-protected fixed drives are recovered when the required start-up information isn't available. **Not configured** (default) disables this feature.
   - **Data recovery agent**: **Block** the use of data recovery agent with BitLocker-protected fixed drives Policy Editor. **Not configured** (default) enables using data recovery agents with BitLocker-protected fixed drives.
@@ -198,6 +218,8 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+
+**Settings**:
 
 - **Write access to removable data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there is read and write access to data drives that aren't BitLocker-protected.
   - **Write access to devices configured in another organization**: **Block** allows write access to devices configured in another organization. **Not configured** (default) denies write access.
