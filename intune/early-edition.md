@@ -156,6 +156,9 @@ The user will be unable to access the targeted application if the requirements t
 
 On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Mobile apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md).
 
+### Access actions for app protection policies <!-- 1483510 EEready -->
+You will soon be able to configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The newest action *wipe* removes your company’s corporate data from a device. If a wipe occurs, the device user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. These actions are triggered when the app is launched.
+
 ### New inventory information for Windows devices <!-- 1333569 eeready -->
 
 For Windows devices, the following inventory information will be available per device in the **Hardware** tab (**Groups** > **All mobile devices** > **Devices** > choose the user's device > **View Properties** > **Hardware**):
@@ -169,39 +172,12 @@ For Windows devices, the following inventory information will be available per d
 
 For more information on how this data is retrieved by the CSP, see the DeviceStatus entries in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
 
-### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
-Currently, you can use TeamViewer to remotely administer [Intune-managed Android and Windows devices](device-profile-android-teamviewer.md).
-
-Administrators will be able to connect to TeamViewer, and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
-
-### Device profile graphical user chart is back <!-- 2160133 -->
-While improving the numeric counts shown on the device profile graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**), the graphical user chart was temporarily removed.
-
-With this update, the graphical user chart is back, and shown in the Azure portal.
-
-### Assign all users and all devices as scope groups <!-- 2196803 -->
-You will be able to assign all users, all devices, and all users and all devices in scope groups. To do this, choose **Intune roles** > **All roles** > **Policy and profile manager** > **Assignments** > choose an assignment > **Scope (groups)**.
-
-### Autopilot profiles moving to group targeting <!-- 1877935 -->
-Currently, AutoPilot deployment profiles can be assigned to selected devices. After this feature releases, here's what you’ll do to assign these profiles:
-- Create (Azure AD) groups containing AutoPilot devices
-- Assign desired profiles to an Azure AD group. The AutoPilot profile will now be assigned to AutoPilot devices in that group.
-
-### Management name field will be editable <!-- 1875989 -->
-You’ll be able to edit the management name field on a device’s **Properties** blade. To edit this field, choose **Devices** > **All devices** > choose the device > **Properties**. You can use the management name field to uniquely identify a device.
-
 <!-- 1804 start -->
 
 ### Rules for removing devices <!-- 1609459 -->
 New rules will be available that let you automatically remove devices that haven't checked in for a number of days that you set. To see the new rule, go to the **Intune** pane, select **Devices**, and select **Device removal rules**.
 
 <!-- 1803 start -->
-
-#### Multiple Exchange Connector support <!-- 2070451 -->
-
-You'll no longer be limited to one Microsoft Intune Exchange Connector per tenant. Intune will support multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
-
-With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
 Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
