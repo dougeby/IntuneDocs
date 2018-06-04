@@ -140,18 +140,6 @@ Applies to: Windows 10 and later
 
 <!-- 1805 start -->
 
-### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 eeready ! -->
-
-With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
-
-- iOS
-- Windows 10
-
-### Set compliance by device location <!-- 851881 ! -->
-In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You will be able to create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
-
-Applies to: Android devices 6.0 and higher, with the updated Company Portal app
-
 ### Improved troubleshooting for app installation <!-- 928990 -->
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error.
 
@@ -168,19 +156,6 @@ The user will be unable to access the targeted application if the requirements t
 
 On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Mobile apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md).
 
-### Enable kiosk mode on Windows 10 devices <!-- 1560072 ! -->
-On Windows 10 devices, you can create a configuration profile and enable kiosk mode (**Device Configuration** > **Profiles** > **Create profile** > **Windows 10** > **Device Restrictions** > **Kiosk**). In this update, the **Kiosk (preview)** setting is renamed to **Kiosk (obsolete)**. **Kiosk (obsolete)** is no longer recommended for use, but will continue to function until the July update. **Kiosk (obsolete)** is replaced by the new **Kiosk** profile type (**Create profile** > **Windows 10** > **Kiosk (preview)**), which will contain the settings to configure Kiosks on Windows 10 RS4 and later.
-
-Applies to Windows 10 and later.
-
-### Retrieve the associated app user model ID (AUMID) for Microsoft Store for Business apps in kiosk mode <!-- 1560077 ! -->
-Intune will be able to retrieve the app user model ids (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
-
-For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
-
-### Access actions for app protection policies <!-- 1483510 EEready -->
-You will soon be able to configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The newest action *wipe* removes your company’s corporate data from a device. If a wipe occurs, the device user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. These actions are triggered when the app is launched.
-
 ### New inventory information for Windows devices <!-- 1333569 eeready -->
 
 For Windows devices, the following inventory information will be available per device in the **Hardware** tab (**Groups** > **All mobile devices** > **Devices** > choose the user's device > **View Properties** > **Hardware**):
@@ -193,15 +168,6 @@ For Windows devices, the following inventory information will be available per d
 - Domain name
 
 For more information on how this data is retrieved by the CSP, see the DeviceStatus entries in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
-
-### Intune and the Microsoft Edge browser <!-- 1818969 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Intune app protection policies. Users who sign in with their corporate Azure AD accounts in the Edge browser application will be protected by Intune. 
-
-### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 -->
-A new configuration setting will be available to set the language and region for Autopilot profiles during the Out of Box Experience.
-
-### New setting for configuring device keyboard <!-- 1821768 -->
-A new setting will be available to configure the keyboard for Autopilot profiles during the Out of Box Experience.
 
 ### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
 Currently, you can use TeamViewer to remotely administer [Intune-managed Android and Windows devices](device-profile-android-teamviewer.md).
@@ -226,14 +192,8 @@ You’ll be able to edit the management name field on a device’s **Properties*
 
 <!-- 1804 start -->
 
-### Additions to Local Device Security Options settings <!-- 1403702 -->
-You will be able to configure additional Local Device Security Options settings for Windows 10 devices. Additional settings will be available in the areas of Microsoft Network Client, Microsoft Network Server, Network access and security, and Interactive logon. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
-
 ### Rules for removing devices <!-- 1609459 -->
 New rules will be available that let you automatically remove devices that haven't checked in for a number of days that you set. To see the new rule, go to the **Intune** pane, select **Devices**, and select **Device removal rules**.
-
-### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
-You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows AutoPilot profiles** > **Create New** > **Enrollment settings**. 
 
 <!-- 1803 start -->
 
