@@ -268,12 +268,12 @@ A kiosk device typically runs one app, or a specific set of apps. Users are prev
 #### Single app kiosks
 Enter the following settings:
 
-- **User account** - Enter the local (to the device) user account, an AD or Azure AD account login associated with the kiosk app.
-Local account can be entered as machinename\account or .\account or just account.
-Domain account should be entered as domain\account.
-Azure AD account must be specified in this format: AzureAD\{email address}. AzureAD must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. AzureAD\someone@contoso.onmicrosoft.com.
+- **User account** - Enter the local (to the device) user account, an AD domain account, or an Azure AD account login associated with the kiosk app.
+  - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
+  - Domain account: Enter as `domain\accountname`
+  - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
 
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. 
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. If using an Azure AD account for kiosk mode, be sure to enter `AzureAD\user@yourorganization.com`.
 
 - **Application user model ID (AUMID) of app** - Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
