@@ -2,6 +2,11 @@
 	"redirections": [
 
 		{
+			"source_path": "intune-user-help/sync-your-device-manually-cpwebsite.md",
+			"redirect_url": "/intune-user-help/using-the-intune-company-portal-website",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/custom-vpn-profiles-create.md",
 			"redirect_url": "/intune/custom-settings-configure",
 			"redirect_document_id": true

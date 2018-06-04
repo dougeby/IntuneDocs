@@ -159,4 +159,3 @@
 ### [Remove your device](remove-your-device-cpwebsite.md)
 ### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 ### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)
-### [Sync your device manually](sync-your-device-manually-cpwebsite.md)
