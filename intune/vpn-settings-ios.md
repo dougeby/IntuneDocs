@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/17/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,7 @@ Depending on the settings you choose, not all values in the following list are c
   - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
+  - **Palo Alto Networks GlobalProtect**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**
