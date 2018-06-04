@@ -78,7 +78,7 @@ Our recommended migration path is to delete the assignment for the Windows 8.1 C
 
 If you need to sideload the app and you assigned the Windows 8.1 Company Portal without signing it with the Symantec Certificate, complete the upgrade by completing the steps in the preceding sections of this article.
 
-If you need to sideload the app and you signed and assigned the Windows 8.1 Company Portal with the Symantec code-signing certificate, follow the steps in the next section.  
+If you need to sideload the app and you signed and assigned the Windows 8.1 Company Portal app with the Symantec code-signing certificate, follow the steps in the next section.
 
 ### How do I upgrade my signed and sideloaded Windows Phone 8.1 Company Portal app or Windows 8.1 Company Portal app to the Windows 10 Company Portal app?
 Our recommended migration path is to delete the existing assignment for the Windows Phone 8.1 Company Portal app or the Windows 8.1 Company Portal app by setting the assignment action to **Uninstall**. After you select this setting, you can assign the Windows 10 Company Portal app normally.  

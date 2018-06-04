@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -306,15 +306,21 @@ Use these options to configure the local security settings on Windows 10 devices
 
 - **Minutes of lock screen inactivity until screen saver activates**: Define maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs.
 - **Require CTRL+ALT+DEL to log on**: Require CTRL+ALT+DEL to be pressed before a user can log on.
-- **Smart card removal behavior**: Determines what happens when the smart card for a logged-on user is removed from the smart card reader.
-[LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) provides more details.
+- **Smart card removal behavior**: Determines what happens when the smart card for a logged-on user is removed from the smart card reader. Your options:
+
+  - **Lock Workstation​**: The workstation is locked when the smart card is removed. This option allows users to leave the area, take their smart card with them, and still maintain a protected session.​
+  - **Force Logoff​**: The user is automatically logged off when the smart card is removed.​
+  - **Disconnect if a Remote Desktop Services session**: Removal of the smart card disconnects the session without logging the user off. This option allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to sign in again. If the session is local, this policy functions identically to Lock Workstation.
+
+    [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) provides more details.
 
 #### Display
 
 - **User information on lock screen**: Configure the user information that is displayed when the session is locked. If not configured, user display name, domain, and username are shown.
+  - **Not configured**: User display name, domain, and user name
+  - **User display name, domain and user name**
   - **User display name only**
   - **Do not display user information**
-  - **Not configured**: User display name, domain, and user name
 - **Hide last signed-in user**: Don't display the username of the last person who signed in on this device.
 - **Hide username at sign-in**: Don't display the username of the person signing in to this device after credentials are entered, and before the device’s desktop is shown.
 - **Logon message title**: Set message title for users attempting to log in.
@@ -322,13 +328,13 @@ Use these options to configure the local security settings on Windows 10 devices
 
 ### Network access and security
 
-- **Anonymous access to Named Pipes and Shares**: Restricts anonymous access to Share and Named Pipe settings. Applies to the settings that can be accessed anonymously.
-- **Anonymous enumeration of SAM accounts**: Allows anonymous users to enumerate the SAM accounts. Windows allows anonymous users enumerate the names of domain accounts and network shares.
-- **Anonymous enumeration of SAM accounts and shares**: Can block anonymous enumeration of SAM accounts and shares. Windows allows anonymous users to enumerate the names of domain accounts and network shares.
-- **LAN Manager hash value stored on password change**: At the next password change, choose if the LAN Manager (LM) hash value for the new password is stored. It’s not stored by default.
-- **PKU2U authentication requests**: Block PKU2U authentication requests to this device to use online identities.
-- **Restrict remote RPC connections to SAM**: Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.
-- **Security descriptor**
+- **Anonymous access to Named Pipes and Shares**: **Not configured** (default) restricts anonymous access to share and Named Pipe settings. Applies to the settings that can be accessed anonymously.
+- **Anonymous enumeration of SAM accounts**: **Allow** anonymous users to enumerate the SAM accounts. Windows allows anonymous users enumerate the names of domain accounts and network shares.
+- **Anonymous enumeration of SAM accounts and shares**: **Not configured** (default) means anonymous users can enumerate the names of domain accounts and network shares. To prevent anonymous enumeration of SAM accounts and shares, set to **Block**.
+- **LAN Manager hash value stored on password change**: At the next password change, choose to **Allow** the LAN Manager (LM) to store the hash value for the new password. When set to **Not configured** (default), the hash value is not stored.
+- **PKU2U authentication requests**: **Block** PKU2U authentication requests to the device to use online identities. **Not configured** (default) allows these requests.
+- **Restrict remote RPC connections to SAM**: **Allow** the default Security Descriptor Definition Language string to deny users and groups to make remote calls to the SAM. **Not configured** (default) the default Security Descriptor Definition Language string to allow users and groups to make remote calls to the SAM.
+  - **Security descriptor**
 
 ### Recovery console and shutdown
 
@@ -365,13 +371,13 @@ Use these options to configure the local security settings on Windows 10 devices
 
 ### Microsoft Network Client
 
-- **Digitally sign communications (if server agrees)**: Determines if the SMB client attempts to negotiate SMB packet signing. When enabled (default), the Microsoft network client asks the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing is negotiated. If this policy is disabled, the SMB client never negotiates SMB packet signing.
+- **Digitally sign communications (if server agrees)**: Determines if the SMB client attempts to negotiate SMB packet signing. When enabled (Not configured), the Microsoft network client asks the server to perform SMB packet signing upon session setup. If packet signing is enabled on the server, packet signing is negotiated. If this policy is disabled, the SMB client never negotiates SMB packet signing.
 - **Send unencrypted password to third-party SMB servers**: When enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication.
 
 ### Microsoft Network Server
 
-- **Digitally sign communications (if client agrees)**: Determines if the SMB server negotiates SMB packet signing with clients that request it. When enabled, the Microsoft network server negotiates SMB packet signing as requested by the client. That is, if packet signing is enabled on the client, packet signing is negotiated. When disabled (default), the SMB client never negotiates SMB packet signing.
-- **Digitally sign communications (always)**: Determines if packet signing is required by the SMB server component. When enabled, the Microsoft network server doesn't communicate with a Microsoft network client unless that client agrees to perform SMB packet signing. When disabled (Default), SMB packet signing is negotiated between the client and server.
+- **Digitally sign communications (if client agrees)**: Determines if the SMB server negotiates SMB packet signing with clients that request it. When enabled, the Microsoft network server negotiates SMB packet signing as requested by the client. That is, if packet signing is enabled on the client, packet signing is negotiated. When **Not configured** or disabled (default), the SMB client never negotiates SMB packet signing.
+- **Digitally sign communications (always)**: Determines if packet signing is required by the SMB server component. When enabled, the Microsoft network server doesn't communicate with a Microsoft network client unless that client agrees to perform SMB packet signing. When **Not configured** disabled (Default), SMB packet signing is negotiated between the client and server.
 
 ## Next steps
 

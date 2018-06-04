@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,16 +30,20 @@ ms.custom: intune-azure
 
 You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
 
-Per-App VPN is currently available for the following providers: 
+Per-App VPN is currently available for the following providers:
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## Prerequisites for Per-App VPN
+
+> [!IMPORTANT]
+> Your VPN vendor may have other specific requirements for per-app VPN, such as specific hardware or licensing. Be sure to check with their documentation, and meet those prerequisites before setting up per-app VPN in Intune.
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To ensure the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certificate Authority (CA). 
 
@@ -176,6 +180,7 @@ With your Per-App VPN set-up and associated with your app, verify the connection
     - Cisco AnyConnect
     - F5
     - SonicWall
+    - Palo Alto Networks GlobalProtect
 
 ### Connect using the Per-App VPN
 

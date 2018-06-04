@@ -33,7 +33,7 @@ ms.custom: intune-classic
 After you deploy Microsoft Intune, you might encounter problems with your configuration or with client devices. Use the following resources to help you discover what's causing the problem so you can resolve it.
 
 > [!NOTE]
-> To create a support request, or to view an existing request, [visit the Office 365 admin center](https://portal.office.com/admin/default.aspx). For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+> To create a support request, or to view an existing request, [visit the Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Define the problem
 

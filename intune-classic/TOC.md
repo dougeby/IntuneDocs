@@ -17,7 +17,6 @@
 ### [Organize users and devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Deploy policies and apps](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Customize Company Portal](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Enroll devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](get-started/post-configuration-tasks.md)
 ## Next steps
 ### [Prevent company data leaks from Office 365 mobile apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android and Samsung KNOX settings](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Use a custom policy to create a Wi-Fi profile with a pre-shared key](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Use a custom policy to create a per-app VPN profile for Android devices](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Use custom policies to allow and block apps for Samsung KNOX devices](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work settings](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 and Windows 8.1 settings](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Retire devices](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Add apps](deploy-use/add-apps.md)
-### [Add apps for enrolled devices](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Sideload Windows apps](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Deploy apps](deploy-use/deploy-apps.md)
-### [Deploy apps to devices and PCs](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Deploy apps to Android for Work devices](deploy-use/android-for-work-apps.md)
-### [Monitor apps](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Manage volume-purchased apps](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Manage volume-purchased iOS apps](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Manage volume-purchased Windows apps](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Configure apps
 ### [Update apps ](deploy-use/update-apps-using-microsoft-intune.md)
@@ -202,8 +193,6 @@
 #### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [Manage data transfer between iOS apps](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Intune admin console for MAM policies](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Prepare line-of-business apps for MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -215,7 +204,6 @@
 
 ## Retire apps and data
 ### [Use full or selective wipe](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Retire apps ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Change your MDM authority](deploy-use/change-mdm-authority.md)
