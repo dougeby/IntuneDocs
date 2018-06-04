@@ -395,8 +395,8 @@ Use these options to configure the local security settings on Windows 10 devices
 - **Require CTRL+ALT+DEL to log on**: Set to **Enable** so pressing CTRL+ALT+DEL isn't required for users to sign in. Set to **Not configured** (default) to require users to press CTRL+ALT+DEL before logging on to Windows.
 - **Smart card removal behavior**: Determines what happens when the smart card for a logged-on user is removed from the smart card reader. Your options:
 
-  - **Lock Workstation​**: The workstation is locked when the smart card is removed. This option allows users to leave the area, take their smart card with them, and still maintain a protected session.​
-  - **Force Logoff​**: The user is automatically logged off when the smart card is removed.​
+  - **Lock Workstation**: The workstation is locked when the smart card is removed. This option allows users to leave the area, take their smart card with them, and still maintain a protected session.​
+  - **Force Logoff**: The user is automatically logged off when the smart card is removed.
   - **Disconnect if a Remote Desktop Services session**: Removal of the smart card disconnects the session without logging off the user. This option allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to sign in again. If the session is local, this policy functions identically to Lock Workstation.
 
     [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) provides more details.

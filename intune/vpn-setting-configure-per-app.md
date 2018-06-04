@@ -172,15 +172,15 @@ With your Per-App VPN set-up and associated with your app, verify the connection
 
 ### Before you attempt to connect
 
- - Make sure you’re running iOS 7 or later.
+ - Make sure you’re running iOS 9 or later.
  - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the Per-App VPN experience.  
  - Makes sure you have the supported third-party VPN app installed. The following VPN apps are supported:
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
-    - Palo Alto Networks GlobalProtect
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### Connect using the Per-App VPN
 
