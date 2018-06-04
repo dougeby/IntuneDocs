@@ -45,7 +45,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
-## Week of May 30, 2018
+## Week of June 4, 2018
 
 ### App management
 
