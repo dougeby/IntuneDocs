@@ -1285,9 +1285,14 @@
 		},
 		{
 			"source_path": "intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
-			"redirect_url": "/intune/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune",
+			"redirect_url": "/intune/data-transfer-between-apps-manage-ios",
 			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md",
+			"redirect_url": "/intune/data-transfer-between-apps-manage-ios",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune.md",
 			"redirect_url": "/intune/manage-apps/monitor-app-protection-policies-with-microsoft-intune",
@@ -2110,9 +2115,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/apps-add",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md",
+			"redirect_url": "/intune/apps-add",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune",
@@ -2150,9 +2160,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/android-for-work-apps.md",
-			"redirect_url": "/intune-classic/deploy-use/android-for-work-apps",
-			"redirect_document_id": true
+			"redirect_url": "/intune/apps-add-android-for-work",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/android-for-work-apps.md",
+			"redirect_url": "/intune/apps-add-android-for-work",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune",
@@ -2183,6 +2198,11 @@
 			"redirect_url": "/intune-classic/deploy-use/block-apps-with-no-modern-authentication",
 			"redirect_document_id": true
 		},
+		{
+			"source_path": "intune-classic/deploy-use/block-apps-with-no-modern-authentication.md",
+			"redirect_url": "/intune/app-modern-authentication-block",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/bulk-enroll-windows.md",
 			"redirect_url": "/intune-classic/deploy-use/bulk-enroll-windows",
@@ -2295,9 +2315,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/deploy-apps-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/deploy-apps-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/apps-deploy",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/deploy-apps-in-microsoft-intune.md",
+			"redirect_url": "/intune/apps-deploy",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/deploy-apps.md",
 			"redirect_url": "/intune-classic/deploy-use/deploy-apps",
@@ -2495,9 +2520,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/windows-store-for-business",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md",
+			"redirect_url": "/intune/windows-store-for-business",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/manage-corporate-owned-devices.md",
 			"redirect_url": "/intune-classic/deploy-use/manage-corporate-owned-devices",
@@ -2515,9 +2545,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/vpp-apps-ios",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md",
+			"redirect_url": "/intune/vpp-apps-ios",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune",
@@ -2535,9 +2570,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/vpp-apps",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md",
+			"redirect_url": "/intune/vpp-apps",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/manage-windows-pcs-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune",
@@ -2570,9 +2610,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/monitor-apps-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/monitor-apps-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/apps-monitor",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/monitor-apps-in-microsoft-intune.md",
+			"redirect_url": "/intune/apps-monitor",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune",
@@ -2600,9 +2645,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/per-app-vpn-for-android-pulse-secure.md",
-			"redirect_url": "/intune-classic/deploy-use/per-app-vpn-for-android-pulse-secure",
-			"redirect_document_id": true
+			"redirect_url": "/intune/android-pulse-secure-per-app-vpn",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/per-app-vpn-for-android-pulse-secure.md",
+			"redirect_url": "/intune/android-pulse-secure-per-app-vpn",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/plan-your-user-and-device-groups.md",
 			"redirect_url": "/intune-classic/deploy-use/plan-your-user-and-device-groups",
@@ -2720,9 +2770,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/retire-apps-using-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/retire-apps-using-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/apps-inc-exl-assignments",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/retire-apps-using-microsoft-intune.md",
+			"redirect_url": "/intune/apps-inc-exl-assignments",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/deploy-use/retire-devices-from-microsoft-intune-management.md",
 			"redirect_url": "/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management",
@@ -3079,6 +3134,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md",
+			"redirect_url": "/intune/licenses-assign",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md",
 			"redirect_url": "/intune/licenses-assign",
 			"redirect_document_id": true
@@ -3103,6 +3163,11 @@
 			"redirect_url": "/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8",
 			"redirect_document_id": true
 		},
+		{
+			"source_path": "intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/get-started/start-with-a-paid-subscription-to-microsoft-intune.md",
 			"redirect_url": "/intune/setup-steps",
