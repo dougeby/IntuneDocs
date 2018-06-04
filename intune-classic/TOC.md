@@ -17,7 +17,6 @@
 ### [Organize users and devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Deploy policies and apps](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Customize Company Portal](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Enroll devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](get-started/post-configuration-tasks.md)
 ## Next steps
 ### [Prevent company data leaks from Office 365 mobile apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
