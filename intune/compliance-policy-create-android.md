@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -128,6 +128,17 @@ The following table describes how noncompliant settings are managed when a compl
 - **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
 - **Block USB debugging on device** (Android 4.2 or later): Choose to prevent deviceS from using the USB debugging feature.
 - **Minimum security patch level** (Android 6.0 or later): Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
+
+## Locations
+
+In your policy, choose from existing locations. Don't have a location yet? [Use Locations (network fence) in Intune](use-network-locations.md) provides some guidance.
+
+1. Choose **Select locations**.
+2. From the list, check your location, and choose **Select**.
+3. **Save** the policy.
+4. Select **Actions for noncompliance**. The default action marks the device as noncompliant immediately. This action applies when you select at least one location, and if the device isn't connected to the selected locations.
+
+  You can change this action to update the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device is no longer compliant with your locations.
 
 ## Assign user groups
 
