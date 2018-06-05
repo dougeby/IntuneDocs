@@ -2854,10 +2854,15 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "intune-classic/deploy-use/prerequisites-for-enrollment.md#step-2-set-mdm-authority",
+			"redirect_url": "/intune/setup-steps",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune-classic/deploy-use/prerequisites-for-enrollment.md",
 			"redirect_url": "/intune/setup-steps",
 			"redirect_document_id": true
-		},		
+		},				
 		{
 			"source_path": "intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md",
 			"redirect_url": " /intune/app-protection-policy",
