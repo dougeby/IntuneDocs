@@ -28,18 +28,18 @@ ms.custom: intune-azure
 
 # Get started with creating policies
 
-One of the main goals when getting started with Intune is enrolling devices to make sure they comply with corporate policies. Compliance policies help you manage specialized device types, such as corporate-owned kiosks, and personal (Bring Your Own) devices, tablets, and user-less devices.
+Intune policies are a great way to enroll devices, and make sure they comply with your corporate policies. Compliance policies help manage specialized device types, such as corporate-owned kiosks, and personal (Bring Your Own) devices, tablets, and user-less devices.
 
 ![Compliance dashboard with little data](/intune/media/generic-compliance-dashboard.png)
 
-Manage mobile devices in the following areas using compliance policies:
+Mobile devices can be managed using compliance policies, including:
 
-* Regulate numbers of devices each user enrolls
-* Manage device settings (for example, device-level encryption, password length, camera usage)
-* Deliver apps, email profiles, VPN profiles, etc.
+* Regulate the number of devices a user enrolls in Intune
+* Manage device settings, such as device-level encryption, password length, and camera usage
+* Deliver apps, email profiles, VPN profiles, and more
 * Evaluate device-level criteria for security compliance policies
 
-You create compliance policies for each platform separately. For this exercise, we’ll stick to iOS. The following policies are available for iOS devices:
+Compliance polidies are created for each platform, such as iOS, Android, Windows, and more. For this exercise, use iOS. The following policies are available for iOS devices:
 
 * PIN or password configuration
 * Device encryption
@@ -57,7 +57,10 @@ You create compliance policies for each platform separately. For this exercise, 
 5. For the **Platform**, select **iOS**.
 6. In **Settings**, select **System Security**, and then set **Require a password to unlock mobile devices** to **Require**. 
 
-    You can also set other rules, such as **Minimum password length**, **Required password type**, and **Number of non-alphanumeric characters in password**. 
+    You can also set other rules, such as: 
+    - **Minimum password length**
+    - **Required password type**
+    - **Number of non-alphanumeric characters in password**
     
     When finished setting up your policy, select **OK**.
   
@@ -65,7 +68,7 @@ You create compliance policies for each platform separately. For this exercise, 
 8. Select your new policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
 Choose Selected groups to see your existing Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
 
-To remain compliant with the new corporate policy, after a few minutes, your enrolled device prompts for an updated password. You can manually check for the update in the **Company Portal app for iOS**. Open the Company Portal app, select the device name, and then select **Sync**.
+To be compliant with the new corporate policy, after a few minutes, your enrolled device prompts for an updated password. You can manually check for the update in the **Company Portal app for iOS**. Open the Company Portal app, select the device name, and then select **Sync**.
 
 > [!NOTE]
 > New policies applied to a dynamic device group may take up to eight hours to apply to all devices in the group.
