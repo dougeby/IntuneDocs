@@ -133,7 +133,7 @@ Supported on the following Windows 10 editions:
 **Settings**:
 
 - **Encrypt devices**: **Require** to prompt users to enable device encryption. Users are asked if another encryption provider is enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable. **Not configured** (default) doesn't require device encryption, and doesn't prompt the user to turn it on.
-- **Encrypt storage card**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on.
+- **Encrypt storage card (mobile only)**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on. This setting only applies to Windows 10 mobile devices.
 
 ### BitLocker base settings
 
@@ -144,7 +144,7 @@ Supported on the following Windows 10 editions:
 - Mobile
 - Mobile Enterprise
 
-Base settings are universal BitLocker settings for all types of data drives. BitLocker Group Policy settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
+Base settings are universal BitLocker settings for all types of data drives. These settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
 
 - **Warning for other disk encryption**: Select **Block** to disable the warning prompt if another disk encryption service is on the device. **Not configured** (default) allows the warning to be shown.
 - **Configure encryption methods**: **Enable** this setting to configure encryption algorithms for operating system, data, and removable drives. When **Not configured** (default), BitLocker uses XTS-AES 128 bit as the default encryption method, or uses the encryption method specified by any setup script.
@@ -165,21 +165,21 @@ These settings apply specifically to operating system data drives.
 - **Additional authentication at startup**: Select **Require** to configure the authentication requirements for computer startup, including the use of Trusted Platform Module (TPM). Select **Not configured** (default) to configure only basic options on devices with a TPM.
   - **BitLocker with non-compatible TPM chip**: **Block** (disable) using BitLocker when a device doesn't have a compatible TPM chip. When **Not configured**, users can use BitLocker without a compatible TPM chip. BitLocker may require a password or a startup key.
   - **Compatible TPM startup**: Choose to allow, not allow, or require the TPM chip.
-  - **Compatible TPM startup PIN**: Choose to allow, not allow, or require using a startup PIN with the TPM chip.
-  - **Compatible TPM startup key**: Choose to allow, not allow, or require using a startup key with the TPM chip.
-  - **Compatible TPM startup key and PIN**: Choose to allow, not allow, or require using a startup key and PIN with the TPM chip.
+  - **Compatible TPM startup PIN**: Choose to allow, not allow, or require using a startup PIN with the TPM chip. Enabling a startup PIN will require interaction from the end user. 
+  - **Compatible TPM startup key**: Choose to allow, not allow, or require using a startup key with the TPM chip. Enabling a startup key will require interaction from the end user. 
+  - **Compatible TPM startup key and PIN**: Choose to allow, not allow, or require using a startup key and PIN with the TPM chip. Enabling startup key and PIN will require interaction from the end user.
 - **Minimum PIN Length**: **Enable** this setting to configure a minimum length for the TPM startup PIN. When **Not configured** (default), users can configure a startup PIN of any length between 6 and 20 digits.
   - **Minimum characters**: Enter the number of characters required for the startup PIN from **4**-**20**.
-- **OS drive recovery**: **Enable** this setting to control how BitLocker-protected operating system drives are recovered when the required start-up information isn't available. When **Not configured** (default), the default recovery options are supported for BitLocker recovery. By default, a DRA is allowed. The recovery options are specified by the user, including the recovery password and recovery key. And, recovery information isn't backed up to AD DS.
+- **OS drive recovery**: **Enable** this setting to control how BitLocker-protected operating system drives are recovered when the required start-up information isn't available. When **Not configured** (default), the default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are specified by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
   - **Certificate-based data recovery agent**: When set to **Block**, you can't use data recovery agent with BitLocker-protected OS drives. Set to **Not configured** (default) to enable this setting, which allows data recovery agents to be used with BitLocker-protected operating system drives.
   - **User creation of recovery password**: Choose if users are allowed, required, or not allowed to generate a 48-digit recovery password.
   - **User creation of recovery key**: Choose if users are allowed, required, or not allowed to generate a 256-bit recovery key.
-  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can see and change the recovery options. When set to **Not configured** (default), users can't see or change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information in Active Directory (AD). When **Not configured** (default), the recovery information isn't stored in AD.
-  - **BitLocker recovery Information stored to AD DS**: Configure what parts of BitLocker recovery information are stored in Active Directory. Choose from:
+  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can not see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
+  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information to Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
+  - **BitLocker recovery Information stored to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure Active Directory. Choose from:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information is successfully stored in Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if the device is not joined to a domain, or if BitLocker recovery details are not stored in AD.
+  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure Active Directory.
 - **Pre-boot recovery message and URL**: **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.
   - **Pre-boot recovery message**: Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**
@@ -203,12 +203,12 @@ Supported on the following Windows 10 editions:
   - **Data recovery agent**: **Block** the use of data recovery agent with BitLocker-protected fixed drives Policy Editor. **Not configured** (default) enables using data recovery agents with BitLocker-protected fixed drives.
   - **User creation of recovery password**: Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.  
   - **User creation of recovery key**: Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.
-  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can see and change the recovery options. When set to **Not configured** (default), users can't see or change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information in Active Directory (AD). When **Not configured** (default), the recovery information isn't stored in AD.
-  - **BitLocker recovery Information to AD DS**: Configure what parts of BitLocker recovery information are stored in Active Directory. Choose from:
+  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can not see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
+  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information in Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
+  - **BitLocker recovery Information to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure Active Directory. Choose from:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the device is domain-joined, and BitLocker recovery information is successfully stored in Azure Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if the device isn't joined to a domain, or if BitLocker recovery details aren't stored in Azure AD.
+  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure Active Directory.
 
 ### BitLocker removable data-drive settings
 
