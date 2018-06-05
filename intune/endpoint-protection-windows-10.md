@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Add endpoint protection on Windows 10 in Microsoft Intune - Azure | Microsoft Docs
 description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
@@ -301,7 +300,7 @@ Block **User editing of the exploit protection interface** by uploading an XML f
 
 ## Windows Defender Application Control
 
-Supported on the following Windows editions:
+Supported on the following Windows 10 editions:
 
 **Mobile Device Management (MDM)**: 
 - Professional
@@ -322,7 +321,7 @@ Once enabled, Application Control can only be disabled by changing the mode from
 
 ## Windows Defender Credential Guard
 
-Supported on the following Windows editions:
+Supported on the following Windows 10 editions:
 
 - Enterprise
 
@@ -346,7 +345,7 @@ When you enable Credential Guard, the following required features are also enabl
 
 ## Windows Defender Security Center
 
-Supported on the following Windows editions:
+Supported on the following Windows 10 editions:
 
 - Home
 - Professional
@@ -379,7 +378,7 @@ Provide IT contact information to appear in the Windows Defender Security Center
 
 ## Local device security options
 
-Supported on the following Windows editions:
+Supported on the following Windows 10 editions:
 
 - NEED THIS INFO
 
