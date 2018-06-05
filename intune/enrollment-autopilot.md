@@ -48,7 +48,7 @@ Synchronize your registered devices into Intune so that you can configure them.
 
 ## Create an AutoPilot device group
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups**.
 2. In the **Group** blade:
     1. For **Group type**, choose **Security**.
     2. Type a **Group name** and **Group description**.
