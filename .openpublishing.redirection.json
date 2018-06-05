@@ -2854,11 +2854,6 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune-classic/deploy-use/prerequisites-for-enrollment.md#step-2-set-mdm-authority",
-			"redirect_url": "/intune/setup-steps",
-			"redirect_document_id": false
-		},		
-		{
 			"source_path": "intune-classic/deploy-use/prerequisites-for-enrollment.md",
 			"redirect_url": "/intune/setup-steps",
 			"redirect_document_id": true
