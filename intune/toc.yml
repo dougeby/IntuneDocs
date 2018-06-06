@@ -270,6 +270,8 @@
       items:
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
+      - name: Deploy Windows 10 apps
+        href: apps-windows-10-app-deploy.md            
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
