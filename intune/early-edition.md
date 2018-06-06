@@ -44,6 +44,15 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1806 start -->
 
+### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
+
+When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates doesn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
+
+This update also includes:
+
+- The NDES Certificate connector requires .NET 4.5 Framework, which is automatically included with Windows Server 2016 and Windows Server 2012 R2. Currently, .NET 3.5 Framework is the minimum required version.
+- TLS 1.2 support is included with the NDES Certificate connector. So if the server with NDES Certificate connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
+
 ### Corporate-owned, single use (COSU) support for Android devices <!-- 1630973 -->
 
 Intune will support highly managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device.
