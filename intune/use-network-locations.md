@@ -40,7 +40,7 @@ In your manufacturing facility, some employees use Android devices. An employee 
 2. Create a compliance policy that requires these devices to be connected to your corporate network, and assign this policy.
 3. If the device goes outside the manufacturing plant, then the device is considered not compliant, and doesn't have access to corporate resources.
 
-Using Intune policies, you can send a non-compliant notification, and also lock the device. When the device is back on-premises, and in the network location, then the device can be unlocked, and regain access to corporate resources.
+Additionally, you can add [actions for non-compliance](#configure-the-actions-for-noncompliance). When the device is back on-premises and in the network location, it will regain access to corporate resources.
 
 ## Prerequisites
 
