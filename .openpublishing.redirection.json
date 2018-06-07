@@ -2285,9 +2285,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md",
-			"redirect_url": "/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-protection-policies",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md",
+			"redirect_url": "/intune/app-protection-policies",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/Configure-certificate-infrastructure-for-pfx.md",
 			"redirect_url": "/intune/certficates-pfx-configure",
@@ -2330,9 +2335,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-configuration-policies-use-ios",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md",
+			"redirect_url": "/intune/app-configuration-policies-use-ios",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on.md",
 			"redirect_url": "/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on",
@@ -3240,9 +3250,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/windows-10-policy-settings-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/custom-settings-windows-10",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune.md",
+			"redirect_url": "/intune/custom-settings-windows-10",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune/compliance-policy-create-windows",
