@@ -270,6 +270,8 @@
       items:
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
+      - name: Deploy Windows 10 apps
+        href: apps-windows-10-app-deploy.md            
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -372,6 +374,8 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
+    - name: Configure Kiosk settings
+      href: kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -411,12 +415,14 @@
         href: wi-fi-settings-macos.md
       - name: Windows 8.1 & Windows 10
         href: wi-fi-settings-import-windows-8-1.md
+    - name: Education
+      items:
+      - name: iOS shared devices
+        href: education-settings-configure-ios-shared.md
+      - name: Windows 10
+        href: education-settings-configure.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Configure Windows 10 education settings
-      href: education-settings-configure.md
-    - name: Configure iOS education shared devices
-      href: education-settings-configure-ios-shared.md
     - name: Configure iOS update policies
       href: software-updates-ios.md
     - name: Configure certificates
@@ -455,6 +461,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Location-based policy
+      href: use-network-locations.md
     - name: Evaluate policy
       href: policy-evaluate.md
     - name: Actions for noncompliance

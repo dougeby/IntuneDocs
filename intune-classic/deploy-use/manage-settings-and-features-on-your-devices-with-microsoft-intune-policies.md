@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage device settings with policies 
+title: Manage device settings with Intune policies - Azure | Microsoft Docs
 description: Use Intune to create and deploy policies that control settings and features on enrolled devices that you manage.
 keywords:
 author: dougeby
-ms.author: angrobe
+ms.author: mandia
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Manage settings and features on your devices with Microsoft Intune policies
+# Manage settings and features on your devices with Intune policies
 
 [!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
@@ -118,19 +118,26 @@ When you select a deployed policy, you can view further information about the de
 ### How long does it take for mobile devices to get a policy or apps after they have been deployed?
 When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
 
-If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
+If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device gets the policy on its next scheduled check-in with the Intune service, as follows:
 
-- iOS and Mac OS X: Every 6 hours.
-- Android: Every 8 hours.
-- Windows Phone: Every 8 hours.
-- Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
+| Platform | Check-in frequency |
+| --- | --- |
+| iOS | Every 6 hours | 
+| Mac OS X | Every 6 hours |
+| Android | Every 8 hours | 
+| Windows Phone | Every 8 hours | 
+| Windows 8.1  | Every 8 hours |  
+| Windows 10 PCs enrolled as devices | Every 8 hours | 
 
-If the device has just enrolled, the check-in frequency will be more frequent, as follows:
+If the device has just enrolled, the check-in frequency is more frequent, as follows:
 
-- iOS and Mac OS X: Every 15 minutes for 6 hours, and then every 6 hours.
-- Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
-- Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
-- Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.
+| Platform | Frequency |
+| --- | --- |
+| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
+| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
+| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 

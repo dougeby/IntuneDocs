@@ -137,6 +137,7 @@
 ### [Sync your device manually](sync-your-device-manually-windows.md)
 
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
+### [Resolve access point restrictions](resolve-access-point-restrictions.md)
 #### [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
 #### [Updating your Windows device](you-need-to-update-your-windows-device.md)
 #### [Send logs to from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Remove your device](remove-your-device-cpwebsite.md)
 ### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 ### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)
-### [Sync your device manually](sync-your-device-manually-cpwebsite.md)

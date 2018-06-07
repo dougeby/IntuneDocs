@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-After you've added an app to Microsoft Intune, you can assign the app to users and devices.
+After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the app to users and devices. It is important to note that you can assign an app to a device whether or not the device is managed by Intune. 
 
-You can assign an app to a device whether or not the device is managed by Intune. 
-
-The following table lists  the various options for assigning apps to users and devices:
+The following table lists the various options for assigning apps to users and devices:
 
 ||||
 |-|-|-|-|

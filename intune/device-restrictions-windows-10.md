@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -255,7 +255,9 @@ You can add apps that should have a different privacy behavior from what you def
 
   GDI DPI Scaling lets apps that are not DPI aware to become per-monitor DPI aware. Specify the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to both turn on and turn off on an app, scaling is turned off for the app.
 
-## Kiosk (Preview)
+## Kiosk (Preview) - Obsolete
+
+These settings are moving, and are removed in an upcoming release. To use the new settings, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
 
 A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
@@ -268,9 +270,12 @@ A kiosk device typically runs one app, or a specific set of apps. Users are prev
 #### Single app kiosks
 Enter the following settings:
 
-- **User account** - Enter the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, enter the account using the `domain\username@tenant.org` format. 
+- **User account** - Enter the local (to the device) user account, an AD domain account, or an Azure AD account login associated with the kiosk app.
+  - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
+  - Domain account: Enter as `domain\accountname`
+  - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
 
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `AzureAD\user@contoso.com` format.
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. If using an Azure AD account for kiosk mode, be sure to enter `AzureAD\user@yourorganization.com`.
 
 - **Application user model ID (AUMID) of app** - Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
