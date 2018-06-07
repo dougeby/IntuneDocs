@@ -41,7 +41,7 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
 >[!NOTE]
->You must be an Intune Service Administrator or Global Administrator to create an online support ticket.
+>You must be an Intune Service Administrator or Global Administrator to create an online support ticket. For details, see [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 1. Log on to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, choose the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
