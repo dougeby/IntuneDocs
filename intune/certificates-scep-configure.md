@@ -414,7 +414,7 @@ For information about how to assign profiles, see [How to assign device profiles
 
 ## Intune Connector events and diagnostic codes
 
-Starting with version 6.1803.x.x, the Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Microsoft Intune Connector**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
+Starting with version 6.1806.x.x, the Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Microsoft Intune Connector**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
 
 ### Event IDs and descriptions
 
@@ -433,10 +433,10 @@ Starting with version 6.1803.x.x, the Intune Connector Service logs events in th
 | 20102 | PkcsCertIssue_Failure  | Failed to issue a PKCS certificate. Review event details for the device ID, user ID, CA name, certificate template name, and certificate thumbprint related to this event. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | Successfully revoked the certificate. Review event details for the device ID, user ID, CA name, and certificate serial number related to this event. | 0x00000000, 0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | Failed to revoke the certificate. Review event details for the device ID, user ID, CA name, and certificate serial number related to this event. For additional information, see the NDES SVC Logs.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Download_Success | Successfully downloaded request to sign a certificate, download a client certificate, or revoke a certificate. Review the event details for the download details.  | 0x00000000, 0x0FFFFFFF |
-| 20302 | Download_Failure | Failed to download request to sign a certificate, download client certificate, or revoke a certificate. Review the event details for the download details. | 0x00000000, 0x0FFFFFFF |
-| 20400 | Upload_Success | Successfully uploaded the certificate’s request or revocation data. Review the event details for the upload details. | 0x00000000, 0x0FFFFFFF |
-| 20402 | Upload_Failure | Failed to upload the certificate’s request or revocation data. Review the event details > Upload State to determine the point of failure.| 0x00000000, 0x0FFFFFFF |
+| 20300 | Upload_Success | Successfully uploaded the certificate’s request or revocation data. Review the event details for the upload details. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Failed to upload the certificate’s request or revocation data. Review the event details > Upload State to determine the point of failure.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Successfully downloaded request to sign a certificate, download a client certificate, or revoke a certificate. Review the event details for the download details.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Failed to download request to sign a certificate, download client certificate, or revoke a certificate. Review the event details for the download details. | 0x00000000, 0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | Certificate Registration Point successfully verified a client challenge | 0x00000000, 0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | Certificate Registration Point completed but rejected the request. See diagnostic code and message for more details. | 0x00000000, 0x00000411, 0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | Certificate Registration Point failed to verify a client challenge. See diagnostic code and message for more details. See event message details for the Device ID corresponding to the challenge. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
