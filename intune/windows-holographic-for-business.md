@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/6/2018
+ms.date: 6/7/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ Azure Active Directory (AD) is a great resource to help manage and control your 
 ## Company Portal
 **[Configure the Company Portal app](company-portal-app.md)**
 
-Intune includes the Company Portal app, which is where users access company data, enroll devices, install apps, contact their IT department, and more. You can customize the Company Portal app for your devices running Windows Holographic for Business.
+Intune provides the Company Portal app for users to access company data, enroll devices, install apps, contact their IT department, and more. You can customize the Company Portal app for your devices running Windows Holographic for Business.
 
 Using the Company Portal app, you can also run the following actions:
 
