@@ -223,7 +223,7 @@
 ## [Intune App SDK for iOS Developer Guide](/intune/app-sdk-ios?toc=/intune-classic/toc.json)
 ## [Intune App SDK for Android Developer Guide](/intune/app-sdk-android?toc=/intune-classic/toc.json)
 ## [Intune App SDK Cordova Plugin](/intune/app-sdk-cordova?toc=/intune-classic/toc.json)
-## [Intune App SDK Xamarin Component](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
+## [Intune App SDK Xamarin Bindings](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [Troubleshoot](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](/intune/get-support?toc=/intune-classic/toc.json)
