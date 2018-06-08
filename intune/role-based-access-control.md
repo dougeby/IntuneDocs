@@ -4,8 +4,8 @@
 title: RBAC with Microsoft Intune
 description: Learn how Role-Based Access Control (RBAC) lets you control who can perform actions and make changes in Microsoft Intune.
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
@@ -32,7 +32,7 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 - **Role definition**: The name of a role, the resources it manages, and the permissions granted for each resource.
 - **Members**: The user groups that are granted the permissions.
-- **Scope**: The user or device groups that the members can target for app or policy deployment, or perform remote tasks.
+- **Scope**: The user or device groups that the members can manage.
 - **Assignment**: When the definition, members, and scope have been configured, the role is assigned.
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
@@ -65,7 +65,8 @@ The following roles are built into Intune and you can assign them to groups with
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Cannot make changes to Intune.
-- **Application Manager**: Manages mobile and managed applications, and can read device information.
+- **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
+- **Intune Role Administrator**: Manages custom Intune roles and add assignments for built-in Intune roles. It is the only Intune role that can assign permissions to Administrators.
 - **School Administrator**: Manages Windows 10 devices in [Intune for Education](introduction-intune-education.md), and can take the following actions: 
 
 |Permission|Operation|

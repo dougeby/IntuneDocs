@@ -78,9 +78,9 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Permissions for DEM
 
-Global or Intune Service Administrator Azure AD roles are required to perform DEM enrollment tasks. These roles are also required to see all DEM users despite RBAC permissions being listed and available under the custom User role. A user without Global administrator or Intune Service administrator role assigned, but who has read permissions for the Device Enrollment Managers role, can only see the DEM users they created. RBAC role support for these features will be announced in the future.
+Global or Intune Service Administrator Azure AD roles are required to perform tasks that are related to DEM enrollment in the Admin Portal. These roles are also required to see all DEM users despite RBAC permissions being listed and available under the custom User role. A user without the Global Administrator or Intune Service Administrator role assigned, but who has read permissions for the Device Enrollment Managers role, can see only the DEM users they created. RBAC role support for these features will be announced in the future.
 
-If a user does not have the Global administrator or Intune Service administrator role assigned to them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll only be able to see the DEM users they have created.
+If a user does not have the Global Administrator or Intune Service Administrator role assigned to them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll be able to see only the DEM users they have created.
 
 ## Remove a device enrollment manager
 

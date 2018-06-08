@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -93,7 +93,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Device property settings
 
-- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade is shown. The end user can choose to upgrade their device, and then get access to company resources.
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information about how to upgrade is shown. The end user can choose to upgrade their device, and then get access to company resources.
 - **Maximum OS version**: When a device is using an OS version later than the version specified in the rule, access to company resources is blocked. The user is asked to contact their IT admin. Until there is a rule change to allow the OS version, this device can't access company resources.
 
 ## System security settings
@@ -102,16 +102,16 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
 - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
-- **Required password type**: Choose if a password should have only numeric characters, or if there should be a mix of numbers and other characters. Choose from:
+- **Required password type**: Select whether a password should have only numeric characters, or there should be a mix of numbers and other characters. Choose from:
   - **Device Default**
   - **Low security biometric**
   - **At least numeric**
-  - **Numeric complex**
+  - **Numeric complex**: Repeated or consecutive numerals (such as "1111" or "1234") are not allowed.
   - **At least alphabetic**
   - **At least alphanumeric**
   - **At least alphanumeric with symbols**
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Password expiration (days)**: Select the number of days before the password expires and the user must create a new password.
 - **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
 ### Encryption
@@ -128,6 +128,17 @@ The following table describes how noncompliant settings are managed when a compl
 - **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
 - **Block USB debugging on device** (Android 4.2 or later): Choose to prevent deviceS from using the USB debugging feature.
 - **Minimum security patch level** (Android 6.0 or later): Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
+
+## Locations
+
+In your policy, choose from existing locations. Don't have a location yet? [Use Locations (network fence) in Intune](use-network-locations.md) provides some guidance.
+
+1. Choose **Select locations**.
+2. From the list, check your location, and choose **Select**.
+3. **Save** the policy.
+4. Select **Actions for noncompliance**. The default action marks the device as noncompliant immediately. This action applies when you select at least one location, and if the device isn't connected to the selected locations.
+
+  You can change this action to update the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device is no longer compliant with your locations.
 
 ## Assign user groups
 

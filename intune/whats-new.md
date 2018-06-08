@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/27/2018
+ms.date: 06/04/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,15 +35,134 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 
 <!-- Common categories:  
-  ### App management
-  ### Device enrollment
-  ### Device management
-  ### Device configuration
-  ### Intune apps
-  ### Monitor and troubleshoot
-  ### Role-based access control
+### App management
+### Device enrollment
+### Device management
+### Device configuration
+### Intune apps
+### Monitor and troubleshoot
+### Role-based access control
 
 -->   
+
+## Week of June 4, 2018
+
+### App management
+
+#### Retrieve the associated app user model ID (AUMID) for Microsoft Store for Business apps in kiosk mode <!-- 1560077 ! -->
+Intune can now retrieve the app user model ids (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
+
+For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
+
+#### New Company Portal branding page <!-- 1916370 -->
+The Company Portal branding page has a new layout, messages, and tooltips.
+
+
+### Device configuration
+
+#### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 eeready ! -->
+With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
+
+- iOS
+- Windows 10
+
+#### Additions to Local Device Security Options settings <!-- 1403702 -->
+You can now configure additional Local Device Security Options settings for Windows 10 devices. Additional settings are available in the areas of Microsoft Network Client, Microsoft Network Server, Network access and security, and Interactive logon. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
+
+#### Enable kiosk mode on Windows 10 devices <!-- 1560072 ! -->
+On Windows 10 devices, you can create a configuration profile and enable kiosk mode (**Device Configuration** > **Profiles** > **Create profile** > **Windows 10** > **Device Restrictions** > **Kiosk**). In this update, the **Kiosk (preview)** setting is renamed to **Kiosk (obsolete)**. **Kiosk (obsolete)** is no longer recommended for use, but will continue to function until the July update. **Kiosk (obsolete)** is replaced by the new **Kiosk** profile type (**Create profile** > **Windows 10** > **Kiosk (preview)**), which will contain the settings to configure Kiosks on Windows 10 RS4 and later.
+
+Applies to Windows 10 and later.
+
+#### Device profile graphical user chart is back <!-- 2160133 -->
+While improving the numeric counts shown on the device profile graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**), the graphical user chart was temporarily removed.
+
+With this update, the graphical user chart is back, and shown in the Azure portal.
+
+### Device enrollment
+
+#### Support for Windows Autopilot enrollment without user authentication <!-- 1165118 wnready -->
+Intune now supports Windows Autopilot enrollment without user authentication. This is a new option in the Windows Autopilot deployment profile "Autopilot Deployment mode" set to "Self-Deploying".  The device must be running Windows 10 build 1803 or later and possess a TPM 2.0 to authorize this type of enrollment. Since no user authentication is required, you should only assign this option to devices that you have physical control over.
+
+#### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 eeready -->
+A new configuration setting is available to set the language and region for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.
+
+#### New setting for configuring device keyboard <!-- 1821768 -->
+A new setting will be available to configure the keyboard for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.
+
+#### Autopilot profiles moving to group targeting <!-- 1877935 -->
+AutoPilot deployment profiles can be assigned to Azure AD groups containing AutoPilot devices.
+
+### Device management
+
+#### Set compliance by device location <!-- 851881 ! -->
+In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You can now create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
+
+Applies to: Android devices 6.0 and higher, with the updated Company Portal app
+
+#### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
+You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device configuration** > **Profiles** > **Create profile** > **Platform** = **Windows 10 or later** > **Profile type** = **Device restrictions** > **Configure** > **Windows Spotlight** > **Consumer features**. 
+
+#### Uninstall the latest from Windows 10 software updates <!-- 1732948 eeready -->
+Should you discover a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
+
+#### Search all devices for IMEI and serial number <!-- 1793685 -->
+You can now search for IMEI and serial numbers on the All devices blade (email, UPN, device name, and management name are still available). In Intune, choose **Devices** > **All devices** > enter your search in the search box.
+
+#### Management name field will be editable <!-- 1875989 -->
+You can now edit the management name field on a device’s **Properties** blade. To edit this field, choose **Devices** > **All devices** > choose the device > **Properties**. You can use the management name field to uniquely identify a device.
+
+#### New All devices filter: Device category <!-- 1878520 -->
+You can now filter the **All devices** list by device category. To do so, choose **Devices** > **All devices** > **Filter** > **Device category**.
+
+#### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
+Administrators can now connect to [TeamViewer](device-profile-android-teamviewer.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
+
+#### Multiple Exchange Connector support <!-- 2070451 -->
+You're no longer limited to one Microsoft Intune Exchange Connector per tenant. Intune now supports multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
+
+With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
+
+#### New device hardware detail: CCID <!-- 2156657 -->
+The Chip Card Interface Device (CCID) information is now included for each device. To see it, choose **Devices** > **All devices** > choose a device > **Hardware**> check under **Network details**>
+
+#### Assign all users and all devices as scope groups <!-- 2196803 -->
+You can now assign all users, all devices, and all users and all devices in scope groups. To do this, choose **Intune roles** > **All roles** > **Policy and profile manager** > **Assignments** > choose an assignment > **Scope (groups)**.
+
+#### UDID information now included for iOS and macOS devices <!-- 2219806 wnready-->
+To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **Devices** > **All devices** > choose a device > **Hardware**. UDID is only available for corporate devices (as set under **Devices** > **All devices** > choose a device > **Properties** > **Device ownership**.
+
+### Intune apps
+
+#### Improved troubleshooting for app installation <!-- 928990 -->
+On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
+
+#### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign-in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Edge when it is managed.
+
+## Week of May 14, 2018
+
+### App management
+
+#### Require installation of policies, apps, certificate and network profiles <!-- 1553555 -->
+
+Admins can block end users from accessing the Windows 10 RS4 desktop until Intune installs  policies, apps, and certificate and network profiles during the provisioning of AutoPilot devices. For more info, see [Set up an enrollment status page](windows-enrollment-status.md).
+
+#### Configuring your app protection policies <!-- 2144597 Part 2 -->
+
+In the Azure portal, instead of going to the Intune App Protection service blade, you now just go to Intune. There is now only one location for app protection policies within Intune. Note that all of your app protection policies are on the **Mobile app** blade in Intune under **App protection policies**. This integration helps to simplify your cloud management administration. Remember, all app protection policies are already in Intune and you can modify any of your previously configured policies. Intune App Policy Protection (APP) and Conditional Access (CA) policies are now under **Conditional access**, which can be found under the **Manage** section in the **Microsoft Intune** blade or under the **Security** section in the **Azure Active Directory** blade. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md)
+
+## Week of May 7, 2018
+
+### App management
+
+#### Samsung Knox mobile enrollment support <!--1112863-->
+
+When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
+
+#### Requesting help in the Company Portal for Windows 10 <!-- 1874137 -->
+
+The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
 ## Week of April 23, 2018
 
@@ -153,9 +272,6 @@ You're no longer be required to remove company data or factory reset a device be
 To see the new experience, sign in to Intune and select **Devices** > **All devices** > the name of the device > **Delete**.
 
 If you still want the wipe/retire confirmation, you can use the standard device lifecycle route by issuing a **Remove company data** and **Factory Reset** prior to **Delete**. 
-
-#### Autopilot profiles moving to group targeting <!-- 1877935 -->
-AutoPilot deployment profiles can be assigned to Azure AD groups containing AutoPilot devices.
 
 #### Play sounds on iOS when in Lost mode <!-- 1947769 -->
 When supervised iOS devices are in Mobile Device Management (MDM) [Lost mode](device-lost-mode.md), you can [play a sound](device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device) (**Devices** > **All devices** > select an iOS device > **Overview** > **More**). The sound continues to play until the device is removed from Lost mode, or a user disables sound on the device. Applies to iOS devices 9.3 and newer.
@@ -376,12 +492,21 @@ For more information about creating deployment channels in Intune, see [Manage s
 
 #### Company Portal enrollment improved <!-- 1874230 eeready-->
 Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up are now able to complete the first step of enrollment without leaving the app.
-
 #### HoloLens and Surface Hub now appear in device lists <!--1725868 -->
 We added support for showing Intune-enrolled HoloLens and Surface Hub devices to the Company Portal app for Android.
 
 #### Custom Book categories for volume-purchase progream (VPP) eBooks <!-- 1488911 -->
-You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+You can create custom eBook categories and then assign VPP eBooks to those custom eBook categories. End users can then see the newly created eBook categories and books assigned to the categories. For more information, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).  
+
+#### Support changes for Company Portal app for Windows send feedback option <!-- 2070166 -->
+Starting April 30, 2018, the **Send Feedback** option in the Company Portal app for Windows will only work on devices running the Windows 10 Anniversary Update (1607) and later. The option to send feedback is no longer supported when using the Company Portal app for Windows with:  
+- Windows 10, 1507 release  
+- Windows 10, 1511 release  
+- Windows Phone 8.1 
+
+If your device is running on Windows 10 RS1 or later, download the latest version of the Windows Company Portal app from the Store. If you are running an unsupported version, please continue to send feedback through the following channels: 
+- The Feedback Hub app on Windows 10
+- Email WinCPfeedback@microsoft.com  
 
 #### New Windows Defender Application Guard settings <!-- 1631890 -->
 
@@ -395,7 +520,7 @@ You can target MAM policies based on the management state of the device:
 - **iOS devices** - You can target unmanaged devices (MAM only) or Intune managed devices.
 
     > [!NOTE]
-    > iOS support for this functionality is dependent on app teams integrating the latest Intune MAM SDK. Most apps should be available during April/May 2018. However, for apps that have not been updated, please ensure a policy targeted to **all app types** is assigned.
+    > - iOS support for this functionality is rolling out throughout April 2018.
 
 For more information, see [Target app protection policies based on device management state](app-protection-policies.md).
 
@@ -423,7 +548,7 @@ Edge and Chrome users with >30,000 devices can successfully export their devices
 
 ### Azure Active Directory web sites can require the Intune Managed Browser app and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->
 
-Using Azure Active Directory (Azure AD), you can now restrict access to web sites on mobile devices to the Intune Managed Browser app. In the Managed Browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy.
+Using Azure Active Directory (Azure AD), you can now restrict access to web sites on mobile devices to the Intune Managed Browser app. In the Managed Browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy. For additional information, see [Access controls in Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls).
 
 #### Company Portal app for Android visual updates <!--976944 -->
 
@@ -1111,6 +1236,19 @@ The first version of the Intune Data Warehouse data model only contained recent,
 
 ## Notices
 
+### Plan for Change: Intune moving to TLS 1.2
+Starting on October 31, 2018, Intune will support Transport Layer Security (TLS) protocol version 1.2 to provide best-in-class encryption, to ensure our service is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. Office communicated this change in MC128929.
+
+#### How does this affect me?
+As of October 31, 2018, Intune will no longer support TLS protocol versions 1.0 or 1.1. All client-server and browser-server combinations should use TLS version 1.2 to ensure connection without issues to Intune. Note that this change will impact end-user devices that are no longer supported by Intune but are still receiving policy through Intune, and that cannot use TLS version 1.2. This includes devices such as those running Android 4.3 and earlier. For a list of affected devices and browsers, see Additional Information below.
+
+After October 31, 2018, if you experience an issue related to the use of an old TLS version, you will be required to update to TLS 1.2 or to a device that supports TLS 1.2 as part of the resolution.
+
+#### What do I need to do to prepare for this change?
+We recommend that you proactively remove TLS 1.0 and 1.1 dependencies in your environments and disable TLS 1.0 and 1.1 at the operating system level where possible. Begin planning your migration to TLS 1.2 today. Check the support blog post below for the list of devices that are not supported by Intune today but might still be receiving policy, and that will not be able to communicate using TLS version 1.2. You might need to notify those end users that they’ll lose access to corporate resources.
+
+**Additional Information**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
+
 ### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
 We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
 
@@ -1120,22 +1258,20 @@ Our records indicate that you are using the Windows 10 > Device Restrictions > K
 #### What do I need to do to prepare for this change?  
 When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
 
-### Plan for Change: Windows Company Portal Send Feedback option may no longer work  
-The Windows Company Portal app has a **Send Feedback** option allowing users to send feedback about the app to Microsoft. From April 30, 2018, this option will continue to be supported only on the Windows 10 Company Portal app running on Windows 10 1607 (Anniversary Update) and later.  
+#### How does this affect me?
+This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
 
-#### How does this affect me?  
-If you do not have the Windows Company Portal app installed for end users, please disregard this message. If any of your end users have the Company Portal app, note that starting April 30, the **Send Feedback** button will no longer work for the app in the following scenarios:  
-- Windows 10 Company Portal app when used on Windows 10 1507 and 1511 releases  
-- Windows Phone 8.1 Company Portal app  
+#### What do I need to do to prepare for this change?
+Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
 
-For impacted devices, the **Send Feedback** option will fail and will not succeed even on retrying. To send feedback to Microsoft about experiences on these platforms, see the alternate feedback channels that are listed further below.  
+**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
-#### What do I need to do to prepare for this change?  
-Please inform your users of this change and update any user guidance if necessary. Inform end users on Windows Phone 8.1, Windows 10 1507 and Windows 10 1511 using the Company Portal that they have two alternate feedback channels available. They can:  
-- Use the Feedback Hub app on Windows 10
-- Send an email to WinCPfeedback@microsoft.com  
+### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
+Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
+- End users will be prompted for credentials to receive Intune policy on first launch.
+- Apps should be released to the app store targeted for Intune users, for example “Contoso App for Intune”.
 
-Ask end users on Windows 10 RS1 or later to update to the latest version of the Windows Company Portal available in the Store.
+For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For any issues or questions, contact [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com).
 
 ### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).

@@ -53,6 +53,10 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 ## Password
 
 - **Password** - Require the end user to enter a password to access the device.|Yes|Yes|
+
+    > [!NOTE]
+    > Samsung Knox devices automatically require a 4-digit PIN during MDM enrollment. Native Android devices may automatically require a PIN to become compliant with conditional access.
+
 - **Minimum password length** - Enter the minimum length of password a user must configure (between 4 and 16 characters).
 - **Maximum minutes of inactivity until screen locks** - Specifies the number of minutes of inactivity before the device automatically locks.
 - **Number of sign-in failures before wiping device** - Specifies the number of sign-in failures to allow before the device is wiped.
@@ -61,7 +65,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 	- **Device default**
 	- **Low security biometric**
 	- **At least numeric**
-	- **Numeric complex** - Repeating, or consecutive numbers like '1111' or '1234' are not allowed<sup>1</sup>
+	- **Numeric complex** - Repeated or consecutive numbers (such as "1111" or "1234") are not allowed.<sup>1</sup>
 	- **At least alphabetic**
 	- **At least alphanumeric**
 	- **At least alphanumeric with symbols**
@@ -69,6 +73,9 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Fingerprint unlock (Samsung Knox only)** - Allows the use of a fingerprint to unlock supported devices.
 - **Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible Android devices (Samsung Knox Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location. For example, this could be used when the device is connected to a specific Bluetooth device, or when it's close to an NFC tag. You can use this setting to prevent users from configuring Smart Lock.
 - **Encryption** - Requires that files on the device are encrypted.
+
+    > [!NOTE]
+    > If an encryption policy is enforced, Samsung Knox devices require users to set a 6-character complex password as the device passcode.
 
 <sup>1</sup> Before you assign this setting to devices, ensure to update the Company Portal app to the latest version on those devices.
 

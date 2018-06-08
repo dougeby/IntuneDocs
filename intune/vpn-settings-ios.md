@@ -2,12 +2,12 @@
 # required metadata
 
 title: VPN settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: View the avialable virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
+description: View the available virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/17/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,14 +37,19 @@ Depending on the settings you choose, not all values in the following list are c
 - **Connection name**: Enter a name for this connection. End users see this name when they browse their device for a list of available VPN connections.
 - **IP address or FQDN**: Enter the IP address or fully qualified domain name (FQDN) of the VPN server that devices connect. For example, enter **192.168.1.1** or **vpn.contoso.com**.
 - **Authentication method**: Choose how devices authenticate to the VPN server from:
-  - **Certificates**: Under **Authentication certificate**, choose an existing SCEP or PKCS certificate profile to authenticate the connection. [Configure certificates](certificates-configure.md) provides some guidance on certificate profiles.
+  - **Certificates**: Under **Authentication certificate**, select an existing SCEP or PKCS certificate profile to authenticate the connection. [Configure certificates](certificates-configure.md) provides some guidance about certificate profiles.
   - **Username and password**: End users must enter a username and password to sign in to the VPN server.
+
+    > [!NOTE]
+    > If username and password are used as the authentication method for Cisco IPsec VPN, they must deliver the SharedSecret through a custom Apple Configurator profile.
+  
 - **Connection type**: Select the VPN connection type from the following list of vendors:
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
   - **Cisco Legacy AnyConnect**
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
+  - **Palo Alto Networks GlobalProtect**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**

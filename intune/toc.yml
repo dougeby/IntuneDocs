@@ -168,12 +168,16 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Enrollment status page
+        href: windows-enrollment-status.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Enrollment Status Screen
-        href: windows-enrollment-status.md
     - name: Set up Android enrollment
-      href: android-enroll.md
+      items:
+      - name: Set up Android enrollment
+        href: android-enroll.md
+      - name: Samsung Knox Mobile Enrollment 
+        href: android-samsung-knox-mobile-enroll.md
     - name: Set up iOS enrollment
       href: ios-enroll.md
       items:
@@ -266,6 +270,8 @@
       items:
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
+      - name: Deploy Windows 10 apps
+        href: apps-windows-10-app-deploy.md            
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -306,6 +312,8 @@
             href: app-protection-policy-settings-android.md
           - name: iOS settings
             href: app-protection-policy-settings-ios.md
+          - name: Data transfer exceptions
+            href: app-protection-policies-exception.md
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
         - name: Monitor app protection user status
@@ -366,6 +374,8 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
+    - name: Configure Kiosk settings
+      href: kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -405,12 +415,14 @@
         href: wi-fi-settings-macos.md
       - name: Windows 8.1 & Windows 10
         href: wi-fi-settings-import-windows-8-1.md
+    - name: Education
+      items:
+      - name: iOS shared devices
+        href: education-settings-configure-ios-shared.md
+      - name: Windows 10
+        href: education-settings-configure.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Configure Windows 10 education settings
-      href: education-settings-configure.md
-    - name: Configure iOS education shared devices
-      href: education-settings-configure-ios-shared.md
     - name: Configure iOS update policies
       href: software-updates-ios.md
     - name: Configure certificates
@@ -449,6 +461,8 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Location-based policy
+      href: use-network-locations.md
     - name: Evaluate policy
       href: policy-evaluate.md
     - name: Actions for noncompliance
@@ -462,6 +476,8 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal
@@ -480,6 +496,30 @@
       href: conditional-access-assign-jamf.md
   - name: Protect device data
     items:
+    - name: Privacy and personal data
+      href: privacy-personal-data.md
+      items:
+      - name: Data collection
+        href: privacy-data-collect.md
+      - name: Data storage and processing
+        href: privacy-data-store-process.md
+      - name: Data security and sharing
+        href: privacy-data-secure-share.md
+        items:
+        - name: Data Apple sends to Intune
+          href: data-apple-sends-to-intune.md
+        - name: Data Google sends to Intune
+          href: data-google-sends-to-intune.md
+        - name: Data Intune sends to Apple
+          href: data-intune-sends-to-apple.md
+        - name: Data Intune sends to Google
+          href: data-intune-sends-to-google.md
+        - name: Information shared from Jamf Pro to Intune
+          href: conditional-access-integrate-jamf.md
+      - name: View and correct personal data
+        href: privacy-data-view-correct.md
+      - name: Audit, export, delete
+        href: privacy-data-audit-export-delete.md
     - name: Mobile Threat Defense
       href: mobile-threat-defense.md
       items:
@@ -511,7 +551,7 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
-    - name: Advanced threat protection
+    - name: Windows Defender ATP
       href: advanced-threat-protection.md        
     - name: Network access control
       href: network-access-control-integrate.md

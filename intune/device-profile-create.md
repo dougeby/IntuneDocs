@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,16 +52,19 @@ ms.custom: intune-azure
    - **Profile type**: Select the type you want to create. The list depends on the platform you choose.
    - **Settings**: The following topics describe the settings for each profile type:
 
-       -  [Device feature settings](device-features-configure.md)
-       -  [Device restriction settings](device-restrictions-configure.md)
-       -  [Email settings](email-settings-configure.md)
-       -  [VPN settings](vpn-settings-configure.md)
-       -  [Wi-Fi settings](wi-fi-settings-configure.md)
-       -  [Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md)
-       -  [Certificate settings](certificates-configure.md)
-       -  [Windows Information Protection settings](windows-information-protection-configure.md)
-       -  [Education settings](education-settings-configure.md)
-       -  [Custom settings](custom-settings-configure.md)
+       -  [Device features](device-features-configure.md)
+       -  [Device restrictions](device-restrictions-configure.md)
+       -  [Endpoint protection](endpoint-protection-configure.md)
+       -  [Kiosk](kiosk-settings.md)
+       -  [Email](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  Education for [Windows 10](education-settings-configure.md) and [iOS](wi-fi-settings-ios.md)
+       -  [Windows 10 edition upgrade](edition-upgrade-configure-windows-10.md)
+       -  [iOS update policies](software-updates-ios.md)
+       -  [Certificates](certificates-configure.md)
+       -  [Windows Information Protection](windows-information-protection-configure.md)
+       -  [Custom](custom-settings-configure.md)
 
      ![Screenshot of Create profile](./media/create-device-profile.png)
 
@@ -69,6 +72,5 @@ ms.custom: intune-azure
 
 The profile is created, and appears in the list.
 
-
 ## Next steps
-To assign device profiles, see [How to assign device profiles with Microsoft Intune](device-profile-assign.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

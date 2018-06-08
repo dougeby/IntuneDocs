@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,9 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-After you've added an app to Microsoft Intune, you can assign the app to users and devices.
+After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the app to users and devices. It is important to note that you can assign an app to a device whether or not the device is managed by Intune. 
 
-You can assign an app to a device whether or not the device is managed by Intune. 
-
-The following table lists  the various options for assigning apps to users and devices:
+The following table lists the various options for assigning apps to users and devices:
 
 ||||
 |-|-|-|-|
@@ -122,7 +120,8 @@ Sometimes, the same app is assigned to multiple groups but with different intent
 |User Available without enrollment|Device Uninstall|Uninstall and Available without enrollment.<br><br>If the user didn’t install the app from the Company Portal, the uninstall is honored.<br><br>If the user installs the app from the Company Portal, the install is prioritized over the uninstall.|
 
 > [!NOTE]
-> For managed iOS store apps only, when you add these apps to Microsoft Intune and assign them as **Required**, the apps are automatically created with both **Required** and **Available** intents.
+> For managed iOS store apps only, when you add these apps to Microsoft Intune and assign them as **Required**, the apps are automatically created with both **Required** and **Available** intents.<br><br>
+> iOS Store apps (not iOS VPP apps) that are targeted with required intent will be enforced on the device at the time of the device check-in and will also show in the Company Portal app.
 
 ## Next steps
 
