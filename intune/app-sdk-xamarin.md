@@ -7,7 +7,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/19/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -80,6 +80,9 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      
+> [!NOTE] 
+> There is no remapper for iOS. Integrating into a Xamarin.Forms app should be the same as for a regular Xamarin.iOS project. 
 
 ## Enabling Intune app protection policies in your Android mobile app
 
@@ -109,6 +112,7 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 > [!NOTE]
 > Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
+
 
 ## Support
 
