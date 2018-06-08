@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -154,6 +154,9 @@ Intune app protection depends on the identity of the user to be consistent betwe
 
 **Is there a secure way to open web links from managed apps?**<br></br>
 Yes! The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](app-configuration-managed-browser.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-managed apps to be opened using the Managed Browser app.
+
+**Does the Intune APP SDK support Microsoft Authentication Library (MSAL), or social accounts?**
+The Intune APP SDK uses some advanced ADAL capabilities for both the 1st party and the 3rd party versions of the SDK. As such, MSAL does not work well with many of our core scenarios such as authentication into the Intune App Protection service and conditional launch. There are no plans today to support it.
 
 ## App experience on Android
 
