@@ -62,7 +62,7 @@ Depending on the settings you choose, not all values in the following list are c
 - **Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features.
 - **Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses.
 
-- **DNS suffix search list** - **Add** one or more DNS suffices. Each DNS suffix that you specify is searched when connecting to a website by using a short name. For example, specify the DNS suffixes **domain1.contoso.com** and **domain2.contoso.com**, visit the URL **http://mywebsite**, and the URLs **http://mywebsite.domain1.contoso.com** and **http://mywebsite.domain2.contoso.com is searched**.
+- **DNS suffix search list** - **Add** one or more DNS suffices. Each DNS suffix that you specify is searched when connecting to a website by using a short name. For example, specify the DNS suffixes **domain1.contoso.com** and **domain2.contoso.com**, visit the URL `http://mywebsite`, and the URLs `http://mywebsite.domain1.contoso.com` and `http://mywebsite.domain2.contoso.com` is searched.
 
 - **Custom XML** - Specify any custom XML commands that configure the VPN connection.
 
