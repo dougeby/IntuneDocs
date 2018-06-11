@@ -65,14 +65,12 @@ See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-
 
 ## Configure MTD applications
 
-Follow the section that corresponds to your MTD provider.
+Choose the section that corresponds to your MTD provider:
 
-| #        |MTD Provider  |
-| ------------- |:-------------|
-| a | [Lookout for Work](#configure-lookout-for-work-apps) |
-| b | [Symantec SEP Mobile](#configure-symantec-endpoint-protection-mobile-apps) |
-| c | [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps) |
-| d | [Zimperium](#configure-zimperium-apps) |
+  - [Lookout for Work](#configure-lookout-for-work-apps)
+  - [Symantec Endpoint Protection Mobile (SEP Mobile)](#configure-symantec-endpoint-protection-mobile-apps)
+  - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
+  - [Zimperium](#configure-zimperium-apps)
 
 ### Configure Lookout for Work apps
 
