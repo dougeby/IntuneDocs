@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -167,7 +167,7 @@ The license should be updated within a few hours after installing or uninstallin
 Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
 
 #### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
-Intune syncs app licenses every 15 hours with Apple.
+Intune syncs app licenses twice a day with Apple.
 
 ## Next steps
 

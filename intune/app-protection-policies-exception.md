@@ -31,14 +31,15 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. The unmanaged apps that you included in the exception list must be trusted by IT. 
+As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. The unmanaged apps that you include in the exception list must be trusted by IT. 
 
 >[!WARNING] 
 > You are responsible for making changes to the data transfer exception policy. Additions to this policy allow unmanaged apps (apps that are not managed by Intune) to access data protected by managed apps. This access to protected data may result in data security leaks. Only add data transfer exceptions for apps that your organization must use, but that do not support Intune APP (Application Protection Policies). Additionally, only add exceptions for apps that you do not consider to be data leak risks.
 
-This feature applies when you create an Intune Application Protection Policy with data transfer set to **Managed apps only**. Other than the exceptions you create, when your data transfer policy is set to **Managed apps only**, data transfer is still restricted to apps that are managed by Intune. You can create the restrictions by using protocols (iOS) or packages (Android).
+Within an Intune Application Protection Policy, setting **Allow app to transfer data to other apps** to **Policy managed apps** means that the app can transfer data only to apps that are managed by Intune. If you need to allow data transfer to specific apps that don't support Intune APP, you can create exceptions to this policy by using **Select apps to exempt**. Exemptions allow applications managed by Intune to invoke unmanaged applications based on URL protocol (iOS) or package name (Android). By default, Intune adds vital native applications to this list of exceptions. 
 
-You can configure this feature to enable exceptions to the Intune MAM App Protection policy **restrict data transfer**. This policy is only required if you want to allow data to be transferred to an app that does not support Intune APP. This policy allows applications managed by Intune, with data transfer settings set to **Managed apps only**, to invoke unmanaged applications based on URL protocol (iOS) or package name (Android). Intune adds vital native applications to the default list of exceptions. 
+> [!NOTE]
+> Modifying or adding to the data transfer policy exceptions doesn't impact other App Protection Policies, such as cut, copy, and paste restrictions. 
 
 ## iOS data transfer exceptions
 For a policy targeting iOS, you can configure data transfer exceptions by URL protocol. To add an exception, check the documentation provided by the developer of the app to find information about supported URL protocols. For additional information about iOS data transfer exceptions, see [iOS app protection policy settings - Data transfer exemptions](app-protection-policy-settings-ios.md#data-transfer-exemptions).

@@ -45,7 +45,7 @@ For devices that are **enrolled for management in Intune**, the user will see a 
 
 ##  Using apps with multi-identity support
 
-App protection policies only take effect when a user tries to access work-related data.  You may see different behaviors if the user accesses the app for personal use. 
+App protection policies take effect only when a user tries to access work-related data. You may see different behavior if the user tries to access the app for personal use. The policies also do not apply to new content that is not yet saved. New content is considered corporate information only after it is saved to a corporate location, such as SharePoint or OneDrive for Business.
 
 For apps that support multi-identity, Intune only applies app protection policies if a user accesses work data.  For example, a user may get a PIN prompt.  In the **Outlook app**, a prompt occurs when a user launches the app. In the **OneDrive app**, a prompt occurs when a user types in the work account.  In Microsoft **Word**, **PowerPoint**, and **Excel**, a prompt occurs when a user accesses company OneDrive documents.
 ##  Managing user accounts on the device
