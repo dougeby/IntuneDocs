@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 06/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,34 +34,47 @@ ms.custom: intune-azure
 
 You can use Intune to add and deploy MTD apps so end-users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
-For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need the iOS app configuration policy which signals the MTD iOS app to use with Intune.
+
+
+| #        |Step  |
+| ------------- |:-------------|
+| 1 | [Before you begin](#before-you-begin) |
+| 2 | [Configure Microsoft Authenticator for iOS](#configure-microsoft-authenticator-for-ios)
+| 3 | [Configure MTD applications](#configure-mtd-applications) |
+| 4 | [Configure your MTDs app with an iOS app configuration policy](#configure-your-mtd-apps-with-an-ios-app-configuration-policy) |
+
+## Before you begin
+
+The below steps need to be completed in the [Azure portal](https://portal.azure.com/). Make sure you’re familiar with the process of:
+
+  -   [Adding an app into Intune](apps-add.md).
+
+  -   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+
+  -   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+
+  -   [ Adding an iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
 > The Intune company portal works as the broker on Android devices so users can have their identities checked by Azure AD.
 
-## Before you begin
+## Configure Microsoft Authenticator for iOS
+For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need the iOS app configuration policy which signals the MTD iOS app to use with Intune.
 
--   The below steps need to be completed in the [Azure portal](https://portal.azure.com/).
+See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Microsoft Authenticator app store URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) on **step 12** under the **Configure app information** section.
 
--   Make sure you’re familiar with the process of:
+## Configure MTD applications
 
-    -   [Adding an app into Intune](apps-add.md).
+Follow the section that corresponds to your MTD provider.
 
-    -   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+| #        |MTD Provider  |
+| ------------- |:-------------|
+| a | [Lookout for Work](#configure-lookout-for-work-apps) |
+| b | [Symantec SEP Mobile](#configure-symantec-endpoint-protection-mobile-apps) |
+| c | [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps) |
+| d | [Zimperium](#configure-zimperium-apps) |
 
-    -   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-
-    -   [ Adding an iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-
-## To add apps
-
-### All MTD partners
-
-#### Microsoft Authenticator app for iOS
-
-- See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Microsoft Authenticator app store URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) on **step 12** under the **Configure app information** section.
-
-### Lookout
+### Configure Lookout for Work apps
 
 #### Android
 - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Lookout for work Google app store URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise) on **step 7**.
@@ -97,7 +110,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 - Upload the re-signed .ipa file as described in the [Add iOS LOB apps with Intune](lob-apps-ios.md) topic. You also need to set the minimum OS version to iOS 8.0 or later.
 
-### Symantec Endpoint Protection Mobile (SEP Mobile)
+### Configure Symantec Endpoint Protection Mobile apps
 
 #### Android
 
@@ -107,7 +120,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). In **step 12**, use this [SEP Mobile app store URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) under the **Configure app information** section.
 
-### Check Point SandBlast Mobile
+### Configure Check Point SandBlast Mobile apps
 
 #### Android
 
@@ -117,7 +130,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 - Contact [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) to get the iOS app. See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md), then use the Apple store URL in **step 12** under the **Configure app information** section.
 
-### Zimperium
+### Configure Zimperium apps
 
 #### Android
 
@@ -127,13 +140,13 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 
 - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Zimperium app store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) in **step 12** under the **Configure app information** section.
 
-## To associate the MTD app with an iOS app configuration policy
+## Configure your MTD apps with an iOS app configuration policy
 
-### For Lookout
+### Lookout for Work app configuration policy
 
 - Create the iOS app configuration policy as described in the [using iOS app configuration policy](app-configuration-policies-use-ios.md) topic.
 
-### For SEP Mobile
+### SEP Mobile app configuration policy
 
 -   Use the same Azure AD account previously configured in the [Symantec Endpoint Protection Management console](https://aad.skycure.com), which should be the same account used to log in to the Intune classic portal.
 
@@ -151,7 +164,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 > [!NOTE]
 > If you are unable to retrieve the files, contact [Symantec Endpoint Protection Mobile Enterprise Support](https://support.symantec.com/en_US/contact-support.html).
 
-### For Check Point SandBlast Mobile
+### Check Point SandBlast Mobile app configuration policy
 
 - See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Check Point SandBlast Mobile iOS app configuration policy.
     - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
@@ -160,7 +173,7 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 <dict><key>MDM</key><string>INTUNE</string></dict>
 ```
 
-### For Zimperium
+### Zimperium app configuration policy
 
 - See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Zimperium iOS app configuration policy.
     - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
@@ -178,10 +191,10 @@ Enable Azure Active Directory authentication for the iOS users by doing the foll
 </dict>
 ```
 
-## To assign apps (All MTD partners)
+## Assign apps
 
-- See instructions for [assigning apps to groups with Intune](apps-deploy.md).
+- This step applies to all MTD partners. See instructions for [assigning apps to groups with Intune](apps-deploy.md).
 
 ## Next steps
 
-- [Add device compliance policy for MTD](mtd-device-compliance-policy-create.md)
+- [Configure the device compliance policy for MTD](mtd-device-compliance-policy-create.md)
