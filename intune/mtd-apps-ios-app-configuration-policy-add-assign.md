@@ -41,7 +41,7 @@ You can use Intune to add and deploy MTD apps so end-users can receive notificat
 | 1 | [Before you begin](#before-you-begin) |
 | 2 | [Configure Microsoft Authenticator for iOS](#configure-microsoft-authenticator-for-ios)
 | 3 | [Configure MTD applications](#configure-mtd-applications) |
-| 4 | [Configure your MTDs app with an iOS app configuration policy](#configure-your-mtd-apps-with-an-ios-app-configuration-policy) |
+| 4 | [Configure your MTD apps with an iOS app configuration policy](#configure-your-mtd-apps-with-an-ios-app-configuration-policy) |
 | 5 | [Assign apps to groups](#assign-apps-to-groups) |
 
 ## Before you begin
