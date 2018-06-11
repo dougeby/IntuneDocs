@@ -32,7 +32,7 @@ ms.custom: intune-azure
 > [!NOTE] 
 > This topic applies to all Mobile Threat Defense partners.
 
-You can use Intune to add and deploy MTD apps so end-users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
+You can use Intune to add and deploy MTD apps so end users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
 
 
