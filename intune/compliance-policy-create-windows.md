@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -124,7 +124,7 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
 
-To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access in Intune](https://docs.microsoft.com/en-us/intune/advanced-threat-protection).
+To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
 
 ### Device properties
 
