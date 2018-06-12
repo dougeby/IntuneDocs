@@ -146,7 +146,7 @@ From the [Windows Phone Apps+Games](http://www.windowsphone.com/store/overview) 
 
 Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the allowed or blocked apps list.
 
-**Example:** Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Example:** Search the store for the Skype app. The URL you use will be `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 ## Custom policy settings
 Use the Microsoft Intune **Windows Phone custom configuration policy** to deploy OMA-URI settings that can be used to control features on **Windows Phone 8.1 devices**. These are standard settings that many mobile device manufacturers use to control device features.
