@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ After the connector is configured, you're ready to remotely administer a device.
 When you start a remote session, users see a notification flag on the Company Portal app icon on their device. A notification also appears when the app opens. Users can then accept the remote assistance request.
 
 > [!NOTE]
-> Windows devices that are enrolled by using "userless" methods such as DEM and WCD do not show the TeamViewer notification in the Company Portal. We recommend that you use the TeamViewer portal to generate the session in these scenarios.
+> Windows devices that are enrolled using "userless" methods, such as DEM and WCD, don't show the TeamViewer notification in the Company Portal app. In these scenarios, it's recommended to use the TeamViewer portal to generate the session.
 
 In TeamViewer, you can complete a range of actions on the device, including taking control of the device. For full details of what you can do, see the [TeamViewer guidance](https://www.teamviewer.com/support/documents/).
 
