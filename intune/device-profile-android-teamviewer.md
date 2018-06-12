@@ -62,7 +62,10 @@ After the connector is configured, you're ready to remotely administer a device.
 
 ![Use TeamViewer to remotely administer Android device - example](./media/android-teamviewer.png)
 
-When you start a remote session, an end user sees a notification flag on the Company Portal app icon on their device. A notification also displays when the app opens. The user can then accept the remote assistance request.
+When you start a remote session, users see a notification flag on the Company Portal app icon on their device. A notification also appears when the app opens. Users can then accept the remote assistance request.
+
+> [!NOTE]
+> Windows devices that are enrolled by using "userless" methods such as DEM and WCD do not show the TeamViewer notification in the Company Portal. We recommend that you use the TeamViewer portal to generate the session in these scenarios.
 
 In TeamViewer, you can complete a range of actions on the device, including taking control of the device. For full details of what you can do, see the [TeamViewer guidance](https://www.teamviewer.com/support/documents/).
 
