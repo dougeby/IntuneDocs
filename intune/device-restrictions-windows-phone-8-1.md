@@ -76,7 +76,7 @@ From the [Windows Phone Store](https://www.microsoft.com/store/apps/windows-phon
 
 Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the allowed or blocked apps list.
 
-Example: Search the store for the Skype app. The URL you use is **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Example: Search the store for the Skype app. The URL you use is `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 
