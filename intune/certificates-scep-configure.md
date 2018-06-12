@@ -412,6 +412,10 @@ Consider the following before you assign certificate profiles to groups:
     
 For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).
 
+## Intune Connector setup verification and troubleshooting
+
+To troubleshoot issues and verify the Intune Connector setup, see [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript)
+
 ## Intune Connector events and diagnostic codes
 
 Starting with version 6.1806.x.x, the Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Microsoft Intune Connector**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
