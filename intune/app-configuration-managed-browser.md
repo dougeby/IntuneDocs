@@ -147,7 +147,7 @@ The Intune Managed Browser and [Azure AD Application Proxy]( https://docs.micros
 ### Before you start
 
 - Set up your internal applications through the Azure AD Application Proxy.
-    - To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
 - Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
 
@@ -173,7 +173,7 @@ This setting allows you to configure the homepage that users see when they start
 
 |                                Key                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: ´´´<https://www.bing.com>´´´ |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: `<https://www.bing.com>` |
 
 ## How to configure bookmarks for the Managed Browser
 
@@ -187,7 +187,7 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 
 |                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> ´Microsoft Bing|https://www.bing.com´<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> ´Bing&#124|https://www.bing.com||Contoso|https://www.contoso.com´ |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
