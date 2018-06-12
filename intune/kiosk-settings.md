@@ -2,12 +2,12 @@
 # required metadata
 
 title: Kiosk settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Learn the Microsoft Intune settings you can use to control device settings and functionality on devices running Windows 10.
+description: Configure your Windows 10 (and later) devices as single-app and multi-app kiosks, including customizing the Start menu, adding apps, the task bar, and configuring a web browser. Also configure Windows Holographic for Business devices as multip-app kiosks in Microsoft Intune. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/24/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -90,6 +90,31 @@ These settings control a web browser app on the kiosk. Be sure you deployed a we
     You can also **Import** a .csv file that contains a list. Or, create a .csv file (**Export**) that contains the sites you add.
 
 2. Select **OK** to save your changes.
+
+## Windows Holographic for Business
+
+On Windows Holographic for Business devices, you can configure these devices to run in single-app kiosk mode, or multi-app in kiosk mode.
+
+#### Single full-screen app kiosks
+Enter the following settings:
+
+- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Mobile Apps](apps-add.md).
+
+    See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+- **User account type**: Select **HoloLens visitor**. The vistior account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+
+#### Multi-app kiosks
+Apps in this mode are available on the Start menu. These apps are the only apps the user can open.
+
+Enter the following settings:
+
+- **Add managed apps**: Select an existing managed app you added using [Mobile Apps in Intune](apps-add.md).
+- **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export Start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
+- **User account type**: Select **HoloLens visitor**. The vistior account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+
+    When the account signs in, only the apps defined in the configuration are available.
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
