@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/06/2018
+ms.date: 06/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,6 +43,11 @@ This page is updated periodically. Check back for additional updates.
 ## Intune in the Azure portal
 
 <!-- 1806 start -->
+
+### See device configuration profiles in conflict <!-- 1556983 -->
+In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
+
+More on [device configuration profiles](device-profiles.md).
 
 ### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
 
