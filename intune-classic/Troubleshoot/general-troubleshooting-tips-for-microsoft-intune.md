@@ -89,7 +89,7 @@ The following topics have troubleshooting help for specific issues. If that info
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
-[Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+[Troubleshoot company resource access problems with Microsoft Intune](/intune/troubleshoot-company-resource-access-problems)
 
 [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
 
