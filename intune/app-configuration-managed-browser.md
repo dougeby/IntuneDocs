@@ -41,7 +41,7 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 - Preventing screen captures
 - Ensuring that links to content that users select open only in other managed apps.
 
-For details, see [What are app protection policies?](/intune/app-protection-policy.md)
+For details, see [What are app protection policies?](app-protection-policy.md)
 
 You can apply these settings to:
 
@@ -92,7 +92,7 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 8. In the **Assignments** section, select **Users and groups** and then choose the users or groups you would like to assign this policy. 
 
     > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md).
+    > Users must also be targeted with Intune App Protection policy. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
 
 9. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
 
@@ -173,7 +173,7 @@ This setting allows you to configure the homepage that users see when they start
 
 |                                Key                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: <strong><https://www.bing.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: ´´´<https://www.bing.com>´´´ |
 
 ## How to configure bookmarks for the Managed Browser
 
@@ -187,7 +187,7 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 
 |                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> ´Microsoft Bing|https://www.bing.com´<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> ´Bing&#124|https://www.bing.com||Contoso|https://www.contoso.com´ |
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
@@ -195,7 +195,7 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 
 |Key|Value|
 |-|-|
-|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>`URL1\|URL2\|URL3`<br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
@@ -214,42 +214,42 @@ Use the following information to learn about the allowed formats and wildcards t
 
   -   Port 443 for https
 
-  Using wildcards for the port number is not supported. For example, <strong>http&colon;//www&period;contoso&period;com:*;</strong> and <strong>http&colon;//www&period;contoso&period;com: /*;</strong> are not supported.
+  Using wildcards for the port number is not supported. For example, `http://www.contoso.com:;` and `http://www.contoso.com: /;` are not supported.
 
 - Use the following table to learn about the permitted patterns that you can use when you specify URLs:
 
 |                  URL                  |                     Details                      |                                                Matches                                                |                                Does not match                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Matches a single page               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Matches a single page               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Matches all URLs that begin with www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
-|    http://&#42;.contoso.com/&#42;     |     Matches all subdomains under contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Matches a single folder              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
-|       http://www.contoso.com:80       |  Matches a single page, by using a port number   |                                       http://www.contoso.com:80                                       |                                                                               |
-|        https://www.contoso.com        |          Matches a single, secure page           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Matches a single folder and all subfolders    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+|        `http://www.contoso.com`         |              Matches a single page               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              Matches a single page               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | Matches all URLs that begin with `www.contoso.com` |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     Matches all subdomains under contoso.com     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             Matches a single folder              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  Matches a single page, by using a port number   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          Matches a single, secure page           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    Matches a single folder and all subfolders    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
 - The following are examples of some of the inputs that you cannot specify:
 
-  - &#42;.com
+  - `*.com`
 
-  - &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-  - www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-  - www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
   - IP addresses
 
-  - https://&#42;
+  - `https://*`
 
-  - http://&#42;
+  - `http://*`
 
-  - http://www.contoso.com:&#42;
+  - `http://www.contoso.com:*`
 
-  - http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## How to access to managed app logs using the Managed Browser on iOS
 
@@ -297,4 +297,4 @@ Microsoft automatically collects anonymous data about the performance and use of
 
 ## Next steps
 
-- [What are app protection policies?](app-protection-policy.md)
+- [What are app protection policies?](app-protection-policy.md) 
