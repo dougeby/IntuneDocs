@@ -93,16 +93,16 @@ These settings control a web browser app on the kiosk. Be sure you deployed a we
 
 ## Windows Holographic for Business
 
-On Windows Holographic for Business devices, you can configure these devices to run in single-app kiosk mode, or multi-app in kiosk mode.
+On Windows Holographic for Business devices, you can configure these devices to run in single-app kiosk mode, or multi-app kiosk mode.
 
 #### Single full-screen app kiosks
 Enter the following settings:
 
 - **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Mobile Apps](apps-add.md).
 
-    See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) to get the ID.
 
-- **User account type**: Select **HoloLens visitor**. The vistior account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+- **User account type**: Select **HoloLens visitor**. The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 #### Multi-app kiosks
 Apps in this mode are available on the Start menu. These apps are the only apps the user can open.
@@ -111,8 +111,8 @@ Enter the following settings:
 
 - **Add managed apps**: Select an existing managed app you added using [Mobile Apps in Intune](apps-add.md).
 - **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
-- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export Start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
-- **User account type**: Select **HoloLens visitor**. The vistior account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
+- **User account type**: Select **HoloLens visitor**. The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
     When the account signs in, only the apps defined in the configuration are available.
 
