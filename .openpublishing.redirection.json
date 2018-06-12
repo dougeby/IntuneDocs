@@ -3155,9 +3155,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/troubleshoot-company-resource-access-problems-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/troubleshoot-company-resource-access-problems-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/troubleshoot-company-resource-access-problems",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/troubleshoot-company-resource-access-problems-with-microsoft-intune.md",
+			"redirect_url": "/intune/troubleshoot-company-resource-access-problems",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/understand-microsoft-intune-operations-by-using-reports.md",
 			"redirect_url": "/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports",
@@ -3835,8 +3840,8 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/troubleshoot-company-resource-access-problems",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-conditional-access.md",
