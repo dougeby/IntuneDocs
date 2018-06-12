@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -117,7 +117,9 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 - **Require Secure Boot to be enabled on the device**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies the signature before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
 - **Require code integrity**: Code integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. Or whether a system file has been modified by malicious software run by a user account with administrator privileges.
 
-See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details on how the HAS service works.
+See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
+
+To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
 
 ### Device properties
 
