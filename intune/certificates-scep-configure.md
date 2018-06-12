@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -411,6 +411,10 @@ Consider the following before you assign certificate profiles to groups:
     > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
     
 For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).
+
+## Intune Connector setup verification and troubleshooting
+
+To troubleshoot issues and verify the Intune Connector setup, see [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript)
 
 ## Intune Connector events and diagnostic codes
 
