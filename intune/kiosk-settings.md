@@ -48,7 +48,7 @@ Enter the following settings:
 - **User account type**: Your options:
 
   - **Autologon**: For kiosks in public-facing environments with autologon enabled, a user with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `AzureAD\user@contoso.com` format.
-  - **Local user account**: Enter the local (to the device) user account or the Azure AD account log in associated with the kiosk app. For accounts joined to Azure AD domains, enter the account using the `domain\username@tenant.org` format.
+  - **Local user account**: Enter the local (to the device) user account or the Azure AD account login associated with the kiosk app. For accounts joined to Azure AD domains, enter the account using the `domain\username@tenant.org` format.
 
 #### Multi-app kiosks
 Apps in this mode are available on the Start menu. These apps are the only apps the user can open. 
@@ -65,7 +65,7 @@ Enter the following settings:
 
   [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
 
-- **User account type**: Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account log in associated with the kiosk app.
+- **User account type**: Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account login associated with the kiosk app.
 
     For kiosks in public-facing environments with autologon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
