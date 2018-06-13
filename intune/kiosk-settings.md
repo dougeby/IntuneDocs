@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 6/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -102,7 +102,7 @@ Enter the following settings:
 
     See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) to get the ID.
 
-- **User account type**: Select **Local user account** to enter the local (to the device) user account or an Microsoft Account (MSA) account login associated with the kiosk app. **Autologon** user account types are not supported on Windows Holographic for Business.
+- **User account type**: Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account login associated with the kiosk app. **Autologon** user account types are not supported on Windows Holographic for Business.
 
 #### Multi-app kiosks
 Apps in this mode are available on the Start menu. These apps are the only apps the user can open.
@@ -112,11 +112,12 @@ Enter the following settings:
 - **Add managed apps**: Select an existing managed app you added using [Mobile Apps in Intune](apps-add.md).
 - **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 - **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
-- **User account type**: Select **HoloLens visitor**. The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+- **User account type**: Add one or more user accounts that can use the apps you add. The supported options include: 
+  - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Azure AD users**: Requires user credentials to sign-in to the device. Use the `domain\user@tenant.com` format.
+  - **Local User Accounts**: Requires user credentials to sign-in to the device. 
 
-Windows Holographic for Business also supports **Azure AD users** and **Local User Accounts** but these will require user credentials to sign-in to the device. 
-
-    When the account signs in, only the apps defined in the configuration are available.
+When the account signs in, only the apps defined in the configuration are available.
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
