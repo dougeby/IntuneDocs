@@ -45,7 +45,7 @@ All methods, except those in which users install the Intune client software them
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**.
 
-   ![Download the Intune PC client](../media/https://docs.microsoft.com/en-us/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Download the Intune PC client](./media/https://docs.microsoft.com/en-us/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 
@@ -127,41 +127,41 @@ If users have been assigned an Intune license, and the organization's MDM Autho
 
 The following table summarizes the options.
 
-  ![Default enrollment options per platform](../media/install-the-windows-pc-client/default-enrollment-options-table.png)
+  ![Default enrollment options per platform](./media/install-the-windows-pc-client/default-enrollment-options-table.png)
 
 The following screenshots show what users see as they enroll their devices using the software client.
 
 Users are first prompted to identify or to enroll their device.
 
-  ![identify or enroll device](../media/install-the-windows-pc-client/identify-device-or-enroll.png)
+  ![identify or enroll device](./media/install-the-windows-pc-client/identify-device-or-enroll.png)
 
 To have your users install the PC client software, you'll need to tell them to select the **Click here to download it** link, which enables users to download the PC client software and takes them through the installation process. The **Find out how to enroll** button takes users to documentation about how to enroll using MDM enrollment, which is not relevant to these software client instructions.
 
-  ![choose Click here to download it link](../media/install-the-windows-pc-client/enroll-your-windows-device.png)
+  ![choose Click here to download it link](./media/install-the-windows-pc-client/enroll-your-windows-device.png)
 
 When users click the link, they see a **Download Software** button, which they select to start the PC client software installation.
 
-  ![choose Download Software button](../media/install-the-windows-pc-client/download-pc-client-software.png)
+  ![choose Download Software button](./media/install-the-windows-pc-client/download-pc-client-software.png)
 
 Users are then asked to sign in with their corporate credentials.
 
-  ![Sign in with your credentials](../media/install-the-windows-pc-client/sign-in-to-intune.png)
+  ![Sign in with your credentials](./media/install-the-windows-pc-client/sign-in-to-intune.png)
 
 Users are taken to the Welcome page for the installation.
 
-  ![Welcome page for PC client installation](../media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
+  ![Welcome page for PC client installation](./media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
 
 Users choose **Next**, and the installation starts.
 
-  ![Welcome page for PC client installation](../media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
+  ![Welcome page for PC client installation](./media/install-the-windows-pc-client/welcome-to-pc-agent-install-wizard.png)
 
 When the installation completes, users choose **Finish**.
 
-  ![Finish the PC client installation](../media/install-the-windows-pc-client/completed-the-setup-wizard.png)
+  ![Finish the PC client installation](./media/install-the-windows-pc-client/completed-the-setup-wizard.png)
 
 If users try to enroll their PC as a mobile device after having already enrolled using the Intune PC client software, they see the following error screen.
 
-  ![Screen shown if PC already enrolled](../media/install-the-windows-pc-client/page-shown-if-pc-already-enrolled.png)
+  ![Screen shown if PC already enrolled](./media/install-the-windows-pc-client/page-shown-if-pc-already-enrolled.png)
 
 ## Monitor and validate successful client deployment
 Use one of the following procedures to help you monitor and validate successful client deployment.
