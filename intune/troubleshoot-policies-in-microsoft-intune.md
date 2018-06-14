@@ -28,20 +28,20 @@ ms.custom: intune-classic
 
 # Troubleshoot policies in Intune
 
-If you're having problems deploying and managing Intune policies, start here. This topic contains some common problems you might encounter, and possible solutions.
+If you're having problems deploying and managing Intune policies, start here. This article describes some common problems you might experience, and possible solutions.
 
 ## General Issues
 
 ### Was a deployed policy applied to the device?
-**Issue:** You are unsure if a policy is correctly applied.
+**Issue:** You're unsure if a policy is correctly applied.
 
-In Intune > **Devices** > **All devices** > select the device > **Device configuration**, every device lists its policies. Each policy has a **Status**. The status is what is actually applied when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together. Possible statuses are:
+In Intune > **Devices** > **All devices** > select the device > **Device configuration**, every device lists its policies. Each policy has a **Status**. The status is applied when all of the policies that apply to the device, including the restrictions and requirements of the hardware and the operating system, are considered together. Possible statuses are:
 
-- **Conforms**: Tthe device has received the policy and reports to the service that it conforms to the setting.
+- **Conforms**: The device has received the policy and reports to the service that it conforms to the setting.
 
-- **Not applicable**: The policy setting is not applicable. For example, email settings for iOS devices would not apply to an Android device.
+- **Not applicable**: The policy setting isn't applicable. For example, email settings for iOS devices would not apply to an Android device.
 
-- **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android requires the user to enable encryption and might therefore be pending.
+- **Pending**: The policy is sent to the device, but hasn't reported the status to the service. For example, encryption on Android requires the user to enable encryption, and might show as pending.
 
 > [!NOTE]
 > When two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies.
@@ -51,16 +51,16 @@ In Intune > **Devices** > **All devices** > select the device > **Device configu
 ### Alert: Saving of Access Rules to Exchange has Failed
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
 
-If you  created policies in the Exchange On-Premises Policy workspace under the Admin Console but are using O365, the configured policy settings are not enforced by Intune. Note the policy source from the alert.  Under the Exchange On-premises Policy workspace delete the legacy rules, as these are Global Exchange rules within Intune for on-premises Exchange, and are not relevant to O365. Then, create new policy for O365.
+If you  created policies in the Exchange On-Premises Policy workspace under the Admin Console but are using O365, then the configured policy settings aren't enforced by Intune. Note the policy source from the alert.  Under the Exchange On-premises Policy workspace delete the legacy rules. The legacy rules are Global Exchange rules within Intune for on-premises Exchange, and aren't relevant to O365. Then, create new policy for O365.
 
 ### Cannot change security policy for various enrolled devices
-Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
+Windows Phone devices don't allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
 
 Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
 
-For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** > **Control Panel**.  Select the **User Accounts** applet.
-In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
-Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive policy.
+For example, in Windows, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel**, and select **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
+
+Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled into the service to apply a less restrictive policy.
 
 ## Issues with PCs that run the Intune software client
 
@@ -76,14 +76,14 @@ For Windows PCs managed with the Intune software client, policy errors in the po
 2. Wait 20 minutes for the client software to be removed.
 
     > [!NOTE]
-    > Do not attempt to remove the client from Programs and Features.
+    > Don't attempt to remove the client from Programs and Features.
 
 3. On the start menu type **UAC** to open the User Account Control settings.
 
 4. Move  the notification slider to the default setting.
 
 ### ERROR: Cannot obtain the value from the computer, 0x80041013
-This can occur if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions will fail because the time stamps will be invalid.
+Occurs if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions will fail because the time stamps will be invalid.
 
 To resolve this issue, set the local system time as close as possible to Internet time, or to the time set on the domain controllers on the network.
 
