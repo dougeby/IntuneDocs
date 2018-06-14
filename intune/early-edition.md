@@ -143,6 +143,7 @@ In **Device configuration** > **Overview**, the following new states will be add
 - conflict
 - pending
 - not-applicable
+
 An image that shows the device count of a different platform is also shown. For example, if you're looking at an iOS profile, the new tile shows the count of non-iOS devices that are also assigned to this profile. 
 
 ### Device compliance supports 3rd party anti-virus solutions <!-- 2325484 -->
