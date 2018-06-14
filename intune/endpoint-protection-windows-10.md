@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -97,9 +97,12 @@ These settings are applicable to specific network types, including **Domain (wor
 
 The following two settings apply to all versions of Windows 10:
 
-- **Encrypt devices**: If enabled, users are prompted to enable device encryption. Additionally, they are asked to confirm that encryption from another provider has not been enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable.
+- **Encrypt devices**: If this setting is enabled, users are prompted to enable device encryption. Additionally, depending on their Windows edition and system configuration, users may be asked one of the following: 
+  - Confirm that encryption from another provider isn't enabled
+  - Be required to turn off Bitlocker Drive Encryption, and turn Bitlocker back on
+  
+  If Windows encryption is turned on while another encryption method is active, the device might become unstable.
 - **Encrypt storage card**: Enable this setting to encrypt any removable storage cards used by the device.
-
 
 ### BitLocker base settings
 
