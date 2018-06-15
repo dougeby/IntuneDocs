@@ -115,7 +115,7 @@ The next time devices connect to the service, it synchronizes and receives the n
 
 To activate Office 365 MDM in addition to your existing Intune Service, go to [https://protection.office.com](https://protection.office.com), choose **Data Loss Prevention** > **Device Security Policies** > **View list of Managed Devices** > **Let's get started**.
 
-For more information, see [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+For more information, see [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).
 
 If you want the end users to only be managed by Office 365 MDM, then remove any assigned Intune and/or EMS licenses after activating Office 365 MDM.
 
