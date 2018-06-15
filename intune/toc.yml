@@ -200,6 +200,8 @@
   - name: Manage devices
     href: device-management.md
     items:
+    - name: Device management capabilities
+      href: device-management-capabilities.md
     - name: Bypass activation lock
       href: device-activation-lock-bypass.md
     - name: Manage Windows Fresh Start
