@@ -43,7 +43,7 @@ Before enrolling Android for Work devices, you must complete some onboarding ste
 
 When you manage an Android for Work device with Intune, you don’t manage the entire device. Management capabilities only affect the work profile that is created on the device during enrollment. Any apps deployed to the device with Intune get installed in the work profile. App icons in the work profile are differentiated from personal apps on the device. All Android apps and data outside the Android for Work portion of the device remain personal and under the control of the end user. Users can install any app they choose to the personal side of the device, while administrators can manage and monitor apps and actions scoped to the work profile.
 
-Intune supplies a range of built-in general settings that you can configure on Android for Work devices. For more information, see [Android for Work policy settings](compliance-policy-create-android-for-work.md)
+Intune supplies a range of built-in general settings that you can configure on Android for Work devices. For more information, see [Android for Work policy settings](compliance-policy-create-android-for-work.md).
 
 ## App publishing and distribution
 
@@ -65,7 +65,7 @@ If you are using Exchange ActiveSync conditional access for an Android for Work 
 
 ## App protection policies
 
-App protection policies applied are fully supported in the work profile and in the personal profile. You can publish line-of-business apps in the Android app publishing console at https://play.google.com/apps/publish. This console includes an option to make apps private to your organization. For more information, see [Add a device compliance policy for Android for Work devices in Intune](compliance-policy-create-android-for-work.md). For general information about app protection policies, see [What are app protection policies?](app-protection-policy.md).
+App protection policies applied are fully supported in the work profile and in the personal profile. You can publish line-of-business apps in the Android app publishing console at https://play.google.com/apps/publish. This console includes an option to make apps private to your organization. For more information, see [Add a device compliance policy for Android for Work devices in Intune](compliance-policy-create-android-for-work.md). For general information about app protection policies, see [What are app protection policies?](app-protection-policy.md)
 
 ## VPN profiles
 
