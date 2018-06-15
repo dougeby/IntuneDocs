@@ -666,8 +666,10 @@
       href: troubleshoot-software-updates-in-microsoft-intune.md
     - name: Troubleshoot endpoint protection
       href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Troubelshoot policies
+    - name: Troubleshoot policies
       href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Troubleshoot conditional access
+      href: troubleshoot-conditional-access.md
   - name: Automate and customize
     items:
     - name: Configure custom device settings
