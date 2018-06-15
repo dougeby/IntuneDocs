@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ Microsoft Intune currently support a variety of apps types and deployment scenar
 Line-of-business (LOB) apps and Microsoft Store for Business apps are the app types supported on Windows 10 devices.
 
 > [!Note]
-> The minimum needed Windows 10 update is [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
+> The minimum needed Windows 10 update to deploy apps in device context is [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
 
 ## Windows 10 Line-of-business apps
 

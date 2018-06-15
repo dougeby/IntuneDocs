@@ -90,7 +90,7 @@ To enable the Intune App SDK, follow these steps:
    > [!NOTE]
    > If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See [Submit your app to the App Store](#Submit-your-app-to-the-App-Store) for more details.
 
-2. **Option 2**: Link to the `libIntuneMAM.a` library. Drag the `libIntuneMAM.a` library to the **Linked Frameworks and Libraries** list of the project target.
+   **Option 2**: Link to the `libIntuneMAM.a` library. Drag the `libIntuneMAM.a` library to the **Linked Frameworks and Libraries** list of the project target.
 
     ![Intune App SDK iOS: linked frameworks and libraries](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -105,7 +105,7 @@ To enable the Intune App SDK, follow these steps:
 
      ![Intune App SDK iOS: copy bundle resources](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-     Add these iOS frameworks to the project:  
+2. Add these iOS frameworks to the project:  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
