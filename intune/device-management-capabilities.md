@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device management capabilities 
+title: Device management capabilities in Microsoft Intune 
 description: Read this topic to find out how Intune can help you manage devices that you enroll.
 keywords:
 author: ErikjeMS
@@ -41,9 +41,9 @@ Users gain access to the company portal, which enables them to install apps, enr
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
-|Configuration policies<br><br>Custom policies| Lets you manage many settings and features on mobile devices in your organization. For example, you can  require a password, limit the number of failed attempts, limit the amount of time before the screen locks, set password expiration, and prevent previously used passwords. You can also control the use of hardware and software features such as the device camera or the web browser.<br><br>Use custom policies when configuration policies do not contain the settings that you require. For iOS devices, you can import settings that you exported from the Apple Configurator tool. For other devices, you can use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure settings and features on the device.|[Manage settings and features on your devices with Microsoft Intune policies](device-compliance-get-started.md|
+|Configuration policies<br><br>Custom policies| Lets you manage many settings and features on mobile devices in your organization. For example, you can  require a password, limit the number of failed attempts, limit the amount of time before the screen locks, set password expiration, and prevent previously used passwords. You can also control the use of hardware and software features such as the device camera or the web browser.<br><br>Use custom policies when configuration policies do not contain the settings that you require. For iOS devices, you can import settings that you exported from the Apple Configurator tool. For other devices, you can use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure settings and features on the device.|[Manage settings and features on your devices with Microsoft Intune policies](device-compliance-get-started.md)|
 |Remote Wipe, Remote Lock, and Passcode Reset|Erases sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br><br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|Help protect your devices with [remote lock](device-remote-lock.md) and [passcode reset](device-passcode-reset.md)|
-|Kiosk mode|Lets you lock down certain features of mobile devices such as screen captures and power switches. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](device-restrictions-ios.md|
+|Kiosk mode|Lets you lock down certain features of mobile devices such as screen captures and power switches. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](device-restrictions-ios.md)|
 
 ## App management
 
@@ -67,3 +67,7 @@ Users gain access to the company portal, which enables them to install apps, enr
 |Email profiles|Creates and deploys email settings to devices so that users can access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](email-settings-configure.md)|
 |VPN profiles|Deploys VPN settings to users and devices in your organization. By deploying these settings, you minimize the user effort that's required to connect to resources on the company network.|[VPN connections in Microsoft Intune](device-profiles.md#vpn)|
 |Conditional access policies|Manages access to Microsoft Exchange email and SharePoint Online from devices that are not managed by Intune.|[Restrict access to email and SharePoint with Microsoft Intune](app-based-conditional-access-intune.md)|
+
+## Next steps
+
+[See a list of devices that you can manage](device-management.md).
