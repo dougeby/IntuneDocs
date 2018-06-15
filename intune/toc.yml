@@ -69,7 +69,9 @@
   - name: Common scenarios
     href: common-scenarios.md
   - name: MAM FAQ
-    href: mam-faq.md    
+    href: mam-faq.md
+  - name: Policy & profile FAQ
+    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Plan deployment
   items:
   - name: Planning guide
@@ -658,6 +660,14 @@
       href: monitor-audit-logs.md
     - name: Review app protection logs
       href: app-protection-policy-settings-log.md
+    - name: Troubleshoot email profiles
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Troubleshoot software updates
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Troubleshoot endpoint protection
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Troubelshoot policies
+      href: troubleshoot-policies-in-microsoft-intune.md
   - name: Automate and customize
     items:
     - name: Configure custom device settings
