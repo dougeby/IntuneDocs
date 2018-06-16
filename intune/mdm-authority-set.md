@@ -69,8 +69,6 @@ In each case, the consent is strictly related to running a mobile device managem
 - [Data Intune sends to Google](https://aka.ms/Data-intune-sends-to-google)
 - [Data Intune sends to Apple](https://aka.ms/data-intune-sends-to-apple)
 
-For more information on Microsoft’s GDPR compliance, see [Trust Center - Assess your GDPR compliance](https://aka.ms/trust_center_info).
-
 ## Key Considerations
 After you switch to the new MDM authority, there will likely be transition time (up to eight hours) before the device checks in and synchronizes with the service. You are required to configure settings in the new MDM authority (hybrid) to ensure that enrolled devices will continue to be managed and protected after the change. 
 - Devices must connect with the service after the change so that the settings from the new MDM authority (Intune standalone) replace the existing settings on the device.
