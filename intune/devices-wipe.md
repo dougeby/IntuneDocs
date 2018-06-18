@@ -157,6 +157,15 @@ If you want to remove devices from the Intune portal, you can delete them from t
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
 
+### Automatically delete devices with cleanup rules
+You can configure Intune to automatically delete devices that appear to be inactive, stale, or unresponsive. These cleanup rules continuously monitor your device inventory so that your device records stay current. Devices deleted in this way are removed from Intune management.
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **Device cleanup rules** > **Yes**.
+3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 90 and 270.
+4. Choose **Save**.
+
+
+
 ## Delete devices from the Azure Active Directory portal
 
 You might need to delete devices from Azure AD due to communication issues or missing devices. You can use the **Delete** action to remove device records from the Azure portal for devices that you know are unreachable and unlikely to communicate with Azure again. The **Delete** action doesn't remove a device from management.
