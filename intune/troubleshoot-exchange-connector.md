@@ -27,8 +27,6 @@ ms.custom: intune-azure
 
 # Troubleshoot the Intune on-premises Exchange connector
 
-[!INCLUDE [classic-portal](../includes/classic-portal.md)]
-
 This article describes how to troubleshoot issues related to the Intune on-premises Exchange connector.
 
 ## Steps for checking the connector configuration 
