@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 
 # optional metadata
 

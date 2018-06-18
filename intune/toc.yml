@@ -670,6 +670,8 @@
       href: troubleshoot-policies-in-microsoft-intune.md
     - name: Troubleshoot conditional access
       href: troubleshoot-conditional-access.md
+    - name: Troubleshoot Exchange connectors
+      href: troubleshoot-exchange-connector.md
   - name: Automate and customize
     items:
     - name: Configure custom device settings
