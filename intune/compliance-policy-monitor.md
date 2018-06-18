@@ -165,6 +165,6 @@ When you click on the Setting compliance tile, then click on one of the device c
 ## How Intune resolves policy conflicts
 Policy conflicts can occur when multiple Intune policies are applied to a device. If the policy settings overlap, Intune resolves any conflicts by using the following rules:
 
-- If the conflicting settings are from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy. This happens even if the settings in the configuration policy are more secure.
+- If the conflicting settings are from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy. This happens even if the settings in the configuration policy are more secure.
 
-- If you have deployed multiple compliance policies, Intune will use the most secure of these policies.
+- If you have deployed multiple compliance policies, Intune will use the most secure of these policies.
