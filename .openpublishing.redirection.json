@@ -655,8 +655,8 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshooting-lookout-integration.md",
-			"redirect_url": "https://docs.microsoft.com/intune-classic/device-threat-protection-troubleshooting",
-			"redirect_document_id": true
+			"redirect_url": "/intune/lookout-mtd-connector-integration",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/enable-mfa-secure-authentication.md",
@@ -1260,7 +1260,7 @@
 		},
 		{
 			"source_path": "intune-azure/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md",
-			"redirect_url": "/intune/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10",
+			"redirect_url": "/intune/app-protection-policies-configure-windows-10",
 			"redirect_document_id": false
 		},
 		{
@@ -1941,7 +1941,7 @@
 		{
 			"source_path": "intune/manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md",
 			"redirect_url": "/intune/app-protection-policies-configure-windows-10",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/manage-apps/ios-app-protection-policy-settings.md",
@@ -2365,9 +2365,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on.md",
-			"redirect_url": "/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on",
-			"redirect_document_id": true
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on.md",
+			"redirect_url": "/intune/skycure-mtd-connector-integration",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md",
 			"redirect_url": "/intune/windows-hello",
@@ -2395,9 +2400,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-protection-policies",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-protection-policies",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/create-custom-vpn-profiles.md",
 			"redirect_url": "/intune-classic/deploy-use/create-custom-vpn-profiles",
@@ -2550,14 +2560,24 @@
 		},
 		{
 			"source_path": "intune/deploy-use/exchange-access-rules-for-mobile-devices.md",
-			"redirect_url": "/intune-classic/deploy-use/exchange-access-rules-for-mobile-devices",
-			"redirect_document_id": true
+			"redirect_url": "/intune/exchange-connector-install",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/exchange-activesync-policy-settings-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/exchange-activesync-policy-settings-in-microsoft-intune",
+			"source_path": "intune-classic/deploy-use/exchange-access-rules-for-mobile-devices.md",
+			"redirect_url": "/intune/exchange-connector-install",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/exchange-activesync-policy-settings-in-microsoft-intune.md",
+			"redirect_url": "/intune/conditional-access-exchange-create",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/exchange-activesync-policy-settings-in-microsoft-intune.md",
+			"redirect_url": "/intune/conditional-access-exchange-create",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/find-a-pfn-for-per-app-vpn.md",
 			"redirect_url": "/intune/vpn-settings-windows-10",
@@ -2570,14 +2590,24 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md",
-			"redirect_url": "/intune-classic/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-protection-policies-configure-windows-10",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune",
+			"source_path": "intune-classic/deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md",
+			"redirect_url": "/intune/app-protection-policies-configure-windows-10",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-protection-policy",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-protection-policy",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/help-end-users-understand-company-portal-app-messages.md",
 			"redirect_url": "/intune-classic/deploy-use/help-end-users-understand-company-portal-app-messages",
@@ -2645,9 +2675,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/intune-service-to-service-exchange-connector.md",
-			"redirect_url": "/intune-classic/deploy-use/intune-service-to-service-exchange-connector",
-			"redirect_document_id": true
+			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/intune-service-to-service-exchange-connector.md",
+			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune/compliance-policy-create-ios",
@@ -2850,9 +2885,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/conditional-access-intune-common-ways-use",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md",
+			"redirect_url": "/intune/conditional-access-intune-common-ways-use",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/mobile-device-security-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/mobile-device-security-policy-settings-in-microsoft-intune",
@@ -2880,9 +2920,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-protection-policies-monitor",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-protection-policies-monitor",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/multi-factor-authentication-azure-active-directory.md",
 			"redirect_url": "/intune-classic/deploy-use/multi-factor-authentication-azure-active-directory",
@@ -2965,14 +3010,24 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/protect-apps-and-data-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-protection-policy",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune",
+			"source_path": "intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md",
+			"redirect_url": "/intune/apps-add",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md",
+			"redirect_url": "/intune/apps-add",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/protect-your-devices-with-microsoft-intune.md",
 			"redirect_url": "/intune/device-compliance-get-started",
@@ -3050,9 +3105,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune",
@@ -3060,9 +3120,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/restrict-email-access-example-scenarios.md",
-			"redirect_url": "/intune-classic/deploy-use/restrict-email-access-example-scenarios",
-			"redirect_document_id": true
+			"redirect_url": "/intune/common-scenarios",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/restrict-email-access-example-scenarios.md",
+			"redirect_url": "/intune/common-scenarios",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/retire-a-windows-pc-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune",
@@ -3260,9 +3325,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/use-apps-with-mam-ca.md",
-			"redirect_url": "/intune-classic/deploy-use/use-apps-with-mam-ca",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/use-apps-with-mam-ca.md",
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md",
 			"redirect_url": "/intune/groups-add",
@@ -3300,9 +3370,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md",
-			"redirect_url": "/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-sdk",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md",
+			"redirect_url": "/intune/app-sdk",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune",
@@ -3375,9 +3450,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-profiles",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-profiles",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-profiles",
@@ -3390,9 +3470,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/wipe-for-exchange-managed-mobile-devices.md",
-			"redirect_url": "/intune-classic/deploy-use/wipe-for-exchange-managed-mobile-devices",
-			"redirect_document_id": true
+			"redirect_url": "/intune/conditional-access-intune-common-ways-use",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/wipe-for-exchange-managed-mobile-devices.md",
+			"redirect_url": "/intune/conditional-access-intune-common-ways-use",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md",
 			"redirect_url": "/intune/apps-selective-wipe",
@@ -3945,9 +4030,14 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/device-threat-protection-troubleshooting.md",
-			"redirect_url": "/intune-classic/Troubleshoot/device-threat-protection-troubleshooting",
-			"redirect_document_id": true
+			"redirect_url": "/intune/lookout-mtd-connector-integration",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md",
+			"redirect_url": "/intune/lookout-mtd-connector-integration",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md",
 			"redirect_url": "/intune-classic/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune",
@@ -3980,9 +4070,14 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-conditional-access.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-conditional-access",
-			"redirect_document_id": true
+			"redirect_url": "/intune/troubleshoot-conditional-access",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-conditional-access.md",
+			"redirect_url": "/intune/troubleshoot-conditional-access",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-device-enrollment-in-intune.md",
 			"redirect_url": "/intune/troubleshoot-device-enrollment-in-intune",
@@ -4005,9 +4100,14 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-exchange-connector.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-exchange-connector",
-			"redirect_document_id": true
+			"redirect_url": "/intune/troubleshoot-exchange-connector",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-exchange-connector.md",
+			"redirect_url": "/intune/troubleshoot-exchange-connector",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-mam.md",
 			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-mam",
