@@ -52,8 +52,8 @@ The following table lists the specific app types and how you can add them in the
 | Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
 | Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
 | iOS LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an iOS installation file with the extension **.ipa**.  |
-| Windows Phone LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter a Windows Phone installation file with the extension **.xap**.  |
-| Windows LOB apps | LOB app | Select **Line-of-business** app as the app type, select the **App package file**, and then enter a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**. |
+| Windows Phone LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Windows Phone installation file with the extension **.xap**.  |
+| Windows LOB apps | LOB app | Select **Line-of-business** app as the app type, select the **App package file**, and then enter an Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**. |
 | Built-in iOS app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |

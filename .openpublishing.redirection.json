@@ -177,7 +177,7 @@
 		},
 		{
 			"source_path": "intune-user-help/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md",
-			"redirect_url": "https://docs.microsoft.com/intune/troubleshoot/troubleshoot-device-enrollment-in-intune",
+			"redirect_url": "/intune/troubleshoot-device-enrollment-in-intune",
 			"redirect_document_id": false
 		},
 		{
@@ -2620,9 +2620,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/install-the-windows-pc-client-with-microsoft-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune.md",
+			"redirect_url": "/intune/install-the-windows-pc-client-with-microsoft-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune",
@@ -2995,9 +3000,14 @@
 		},
 		{
 			"source_path": "intune/deploy-use/restore-managed-ios-devices-from-backup.md",
-			"redirect_url": "/intune-classic/deploy-use/restore-managed-ios-devices-from-backup",
-			"redirect_document_id": true
+			"redirect_url": "/intune/ios-enroll",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/restore-managed-ios-devices-from-backup.md",
+			"redirect_url": "/intune/ios-enroll",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md",
 			"redirect_url": "/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune",
@@ -3215,14 +3225,29 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/understand-microsoft-intune-operations-by-using-reports.md",
-			"redirect_url": "/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports",
-			"redirect_document_id": true
+			"redirect_url": "/intune/reports-nav-create-intune-reports",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune",
+			"source_path": "intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports.md",
+			"redirect_url": "/intune/reports-nav-create-intune-reports",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-inventory",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/intune-on-azure.md",
+			"redirect_url": "/intune/intune-legacy-pc-client",
+			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-inventory",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/update-apps-using-microsoft-intune.md",
 			"redirect_url": "/intune/apps-add",
@@ -3465,9 +3490,14 @@
 		},		
 		{
 			"source_path": "intune/get-started/choose-how-to-enroll-devices3.md",
-			"redirect_url": "/intune-classic/get-started/choose-how-to-enroll-devices3",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/get-started/choose-how-to-enroll-devices3.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/get-started/choose-how-to-enroll-devices4.md",
 			"redirect_url": "/intune/device-enrollment",
@@ -3500,9 +3530,14 @@
 		},		
 		{
 			"source_path": "intune/get-started/choose-how-to-manage-devices.md",
-			"redirect_url": "/intune-classic/get-started/choose-how-to-manage-devices",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/get-started/choose-how-to-manage-devices.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/get-started/get-started.md",
 			"redirect_url": "/intune/introduction-intune",
@@ -3515,9 +3550,14 @@
 		},		
 		{
 			"source_path": "intune/get-started/mobile-device-management-capabilities-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-management-capabilities",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-management-capabilities",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/get-started/network-bandwidth-use.md",
 			"redirect_url": "/intune/network-bandwidth-use",
@@ -3925,9 +3965,14 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md",
 			"redirect_url": "/intune/troubleshoot-company-resource-access-problems",
@@ -3940,9 +3985,14 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-device-enrollment-in-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-device-enrollment-in-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/troubleshoot-device-enrollment-in-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-device-enrollment-in-intune.md",
+			"redirect_url": "/intune/troubleshoot-device-enrollment-in-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune.md",
 			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-email-profiles-in-microsoft-intune",
