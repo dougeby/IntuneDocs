@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
-description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
+description: Remove company data on a device or do a factory reset on an Android, Android work profile, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -114,9 +114,9 @@ The following tables describe what data is removed, and the effect of the **Remo
 |Azure AD unjoin|The Azure AD record is removed.|The Azure AD record is removed.|
 |Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.|Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 
-### Android for Work
+### Android work profile
 
-Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android for Work.
+Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
 
 
 ### macOS
