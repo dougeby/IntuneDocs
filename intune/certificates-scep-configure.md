@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ This article shows how to configure your infrastructure, then create and assign 
 - **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
 The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector.
+- **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**NDESConnectorSetup.exe**). Then you can run **NDESConnectorSetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector.
 
   - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS is not required, but you can issue and revoke certificates when it's enabled.
 
@@ -297,7 +297,7 @@ In this task, you:
 5. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
 
     1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
-    2. Run the installer (**ndesconnectorssetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
+    2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
 
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
