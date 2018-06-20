@@ -602,10 +602,10 @@
       items:
       - name: Software updates
         href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-        - name: Windows Firewall
-          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-        - name: Endpoint Protection
-          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Windows Firewall
+        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+      - name: Endpoint Protection
+        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
     - name: Add apps for Intune client PCs
       href: add-apps-for-windows-pcs-in-microsoft-intune.md
     - name: Manage license agreements
