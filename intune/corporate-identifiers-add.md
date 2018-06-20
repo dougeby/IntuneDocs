@@ -74,15 +74,29 @@ This .csv file when viewed in a text editor appears as:
 >Android Serial numbers are not guaranteed to be unique or present. Check with your device supplier to understand if serial number is a reliable device ID.
 >Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device. Verify the type of serial number reported by the device manufacturer.
 
-### Add a .csv list of corporate identifiers
+### Upload a .csv list of corporate identifiers
 
-1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**, and then click **Add**.
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers** > **Add** > **Upload CSV file**.
 
    ![Corporate device identifier workspace with the Add button highlighted](./media/add-corp-id.png)
 
-2. In the **Add Identifiers** blade, specify the identifier type: **IMEI** or **Serial**. You can specify whether previously imported numbers should **Overwrite details for existing identifiers**.
+2. In the **Add identifiers** blade, specify the identifier type: **IMEI** or **Serial**.
 
-3. Click the folder icon and specify the path to the list you want to import. Navigate to the .csv file, and select **Add**. You can click **Refresh** to see new device identifiers.
+3. Click the folder icon and specify the path to the list you want to import. Navigate to the .csv file, and choose **Add**. 
+
+4. If the .csv file contains corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
+
+### Manually enter corporate identifiers
+
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers** > **Add** > **Enter manually**.
+
+2. In the **Add identifiers** blade, specify the identifier type: **IMEI** or **Serial**.
+
+3. Enter the **Identifer** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
+
+5. If you entered corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
+
+You can click **Refresh** to see new device identifiers.
 
 Imported devices are not necessarily enrolled. Devices can have a state of either **Enrolled** or **Not contacted**. **Not contacted** means that the device has never communicated in with the Intune service.
 

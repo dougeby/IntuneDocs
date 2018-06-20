@@ -77,7 +77,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    c. Select **Launch Google to connect now** to open Google Play's Android for Work website. The website opens on a new tab in your browser.
   
    d. **Sign in to Google**<br>
-   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
+   On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Google Play console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
     
     > [!Note]
     > If you are using the Microsoft Edge browser, click **Sign-In** in the upper right corner to sign-in to your Google account.

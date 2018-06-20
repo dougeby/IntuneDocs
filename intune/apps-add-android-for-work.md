@@ -3,7 +3,7 @@
 
 title: Assign apps to Android for Work devices 
 titlesuffix: Microsoft Intune
-description: Understand how to synchronize and assign apps to Android for Work devices from the Google Play for Work store.
+description: Understand how to synchronize and assign apps to Android for Work devices from the Managed Google Play store.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work is a program for Android devices. Specifically, Android for Work is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android for Work provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device. All apps you install on Android for Work devices come from the Google Play for Work store. How you assign apps to Android for Work devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
+Android for Work is a program for Android devices. Specifically, Android for Work is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android for Work provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device. All apps you install on Android for Work devices come from the Managed Google Play store. How you assign apps to Android for Work devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 
 Additionally, if you have created your own line-of-business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.
@@ -41,14 +41,14 @@ Additionally, if you have created your own line-of-business (LOB) apps, you can 
 
 Make sure you have configured Intune and Android for Work to work together in the **Device enrollment** workload of the Azure portal. For more information, see [Enroll Android devices](android-enroll.md#enable-enrollment-of-android-for-work-devices).
 
-## Synchronize an app from the Google Play for Work store
+## Synchronize an app from the Managed Google Play store
 
-1. Go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work.
+1. Go to the [Managed Google Play store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work.
 2. Search the store and select the app you want to assign by using Intune.
 3. On the page that displays the app, select **Approve**.  
     In the following example, the Microsoft Excel app has been chosen.
 
-    ![The Approve button in the Google Play for Work store](media/approve.png)
+    ![The Approve button in the Managed Google Play store](media/approve.png)
     
    A window for the app opens asking you to give permissions for the app to perform various operations. 
 
@@ -95,7 +95,7 @@ Periodically visit the managed Google Play console to check for new permissions.
 
 Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis. 
 
-## Working with a line-of-business app from the Google Play for Work store
+## Working with a line-of-business app from the Managed Google Play store
 
 1. Sign in to the [Google Play Developer Console](https://play.google.com/apps/publish) with the same account you used to configure the connection between Intune and Android for Work.  
     If you are signing in for the first time, you must register and pay a fee to become a member of the Google Developer program.
@@ -107,7 +107,7 @@ Alternatively, you can configure Google Play to automatically reapprove app perm
     This operation ensures that the app is available only to your organization, and it is not available on the public Google Play store.
 
     For more information about uploading and publishing Android apps, see [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469).
-4. After you've published your app, sign in to the [Google Play for Work store](https://play.google.com/work) with the same account that you used to configure the connection between Intune and Android for Work.
+4. After you've published your app, sign in to the [Managed Google Play store](https://play.google.com/work) with the same account that you used to configure the connection between Intune and Android for Work.
 5. In the **Apps** node of the store, verify that the app you've published is displayed.  
     The app is automatically approved to be synchronized with Intune.
 
