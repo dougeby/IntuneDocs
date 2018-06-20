@@ -36,7 +36,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 --------------------------
 
-|**policy setting**| **Android work profileAndroi** |
+|**policy setting**| **Android work profile** |
 | --- | --- |
 | **PIN or password configuration** |  Quarantined |
 | **Device encryption** |  Quarantined |
