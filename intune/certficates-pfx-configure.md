@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,8 +78,8 @@ To authenticate with VPN, WiFi, and other resources, a root, or intermediate CA 
 3. Locate the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
 4. On the **Compatibility** tab:
 
-- Set **Certification Authority** to **Windows Server 2008 R2**
-- Set **Certificate recipient** to **Windows 7 / Server 2008 R2**
+  - Set **Certification Authority** to **Windows Server 2008 R2**
+  - Set **Certificate recipient** to **Windows 7 / Server 2008 R2**
 
 5. On the **General** tab, set **Template display name** to something meaningful to you.
 
@@ -135,10 +135,10 @@ To authenticate with VPN, WiFi, and other resources, a root, or intermediate CA 
 
 3. Enter the following properties:
 
-- **Name** for the profile
-- Optionally set a description
-- **Platform** to deploy the profile to
-- Set **Profile type** to **Trusted certificate**
+  - **Name** for the profile
+  - Optionally set a description
+  - **Platform** to deploy the profile to
+  - Set **Profile type** to **Trusted certificate**
 
 4. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
@@ -156,25 +156,25 @@ To authenticate with VPN, WiFi, and other resources, a root, or intermediate CA 
 2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-- **Name** for the profile
-- Optionally set a description
-- **Platform** to deploy the profile to
-- Set **Profile type** to **PKCS Certificate**
+  - **Name** for the profile
+  - Optionally set a description
+  - **Platform** to deploy the profile to
+  - Set **Profile type** to **PKCS Certificate**
 
 4. Go to **Settings**, and enter the following properties:
 
-- **Renewal threshold (%)** - Recommended is 20%.
-- **Certificate validity period** - If you didn't change the certificate template, this option may be set to one year.
-- **Certification authority** - Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.
-- **Certification authority name** - Lists the name of your Enterprise CA, and it may be different than the previous item.
-- **Certificate template name** - The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
-- **Subject name format** - Set this option to **Common name** unless otherwise required.
-- **Subject alternative name** - Set this option to **User principal name (UPN)** unless otherwise required.
-- **Extended key usage** - As long as you used the default settings in Step 10 in the [Configure certificate templates on the certification authority](#configure-certificate-templates-on-the-certification-authority) section (in this article), add the following **Predefined values** from the selection:
-  - **Any Purpose**
-  - **Client Authentication**
-  - **Secure Email**
-- **Root Certificate** - (For Android Profiles) Lists the .cer file exported in Step 3 in the [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca) section (in this article).
+  - **Renewal threshold (%)** - Recommended is 20%.
+  - **Certificate validity period** - If you didn't change the certificate template, this option may be set to one year.
+  - **Certification authority** - Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.
+  - **Certification authority name** - Lists the name of your Enterprise CA, and it may be different than the previous item.
+  - **Certificate template name** - The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
+  - **Subject name format** - Set this option to **Common name** unless otherwise required.
+  - **Subject alternative name** - Set this option to **User principal name (UPN)** unless otherwise required.
+  - **Extended key usage** - As long as you used the default settings in Step 10 in the [Configure certificate templates on the certification authority](#configure-certificate-templates-on-the-certification-authority) section (in this article), add the following **Predefined values** from the selection:
+    - **Any Purpose**
+    - **Client Authentication**
+    - **Secure Email**
+  - **Root Certificate** - (For Android Profiles) Lists the .cer file exported in Step 3 in the [Export the root certificate from the Enterprise CA](#export-the-root-certificate-from-the-enterprise-ca) section (in this article).
 
 5. Select **OK**, then **Create** to save your profile.
 6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
