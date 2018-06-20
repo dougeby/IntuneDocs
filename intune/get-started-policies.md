@@ -39,7 +39,7 @@ Mobile devices can be managed using compliance policies, including:
 * Deliver apps, email profiles, VPN profiles, and more
 * Evaluate device-level criteria for security compliance policies
 
-Compliance polidies are created for each platform, such as iOS, Android, Windows, and more. For this exercise, use iOS. The following policies are available for iOS devices:
+Compliance policies are created for each platform, such as iOS, Android, Windows, and more. For this exercise, use iOS. The following policies are available for iOS devices:
 
 * PIN or password configuration
 * Device encryption
