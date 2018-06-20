@@ -84,7 +84,7 @@ This .csv file when viewed in a text editor appears as:
 
 3. Click the folder icon and specify the path to the list you want to import. Navigate to the .csv file, and choose **Add**. 
 
-4. If the .csv file contains corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers.
+4. If the .csv file contains corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
 
 ### Manually enter corporate identifiers
 
@@ -94,8 +94,7 @@ This .csv file when viewed in a text editor appears as:
 
 3. Enter the **Identifer** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
 
-5. If you entered corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers.
-
+5. If you entered corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
 
 You can click **Refresh** to see new device identifiers.
 
