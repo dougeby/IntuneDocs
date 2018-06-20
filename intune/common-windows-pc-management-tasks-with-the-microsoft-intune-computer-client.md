@@ -2,12 +2,13 @@
 # required metadata
 
 title: Common Windows PC management tasks 
+titlesuffix: Microsoft Intune
 description: Learn ways that you can manage Windows PCs that run the Intune software client.
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 12/15/2016
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 

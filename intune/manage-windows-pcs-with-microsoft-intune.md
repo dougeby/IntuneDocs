@@ -2,12 +2,13 @@
 # required metadata
 
 title: Manage PCs with client software 
+titlesuffix: Microsoft Intune
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 03/28/2017
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
@@ -30,7 +31,7 @@ ms.custom: intune-classic
 [!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
-> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](https://docs.microsoft.com/intune/windows-enroll) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](https://docs.microsoft.com/intune/windows-enroll) whenever possible.
+> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible.
 
 Intune provides a comprehensive solution for organizations to manage mobile devices. Intune can manage Windows PCs as mobile devices using the modern device management capabilities built in to the Windows 10 operating system. To meet your organization’s management needs, Intune can also manage Windows PCs as computers with the Intune software client. This management method uses traditional computer management capabilities in the legacy Windows operating system.
 
@@ -69,16 +70,16 @@ As an Intune admin, you can make the Intune software client available to users i
 ## Computer management capabilities with the Intune client software
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
--   **[Software update management](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - You can keep PCs up-to-date and decide when updates are applied.
+-   **[Software update management](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - You can keep PCs up-to-date and decide when updates are applied.
 
--   **[Windows Firewall policy](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
+-   **[Windows Firewall policy](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
 
--   **[Anti-malware protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
+-   **[Anti-malware protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **[Remote assistance](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
+-   **[Remote assistance](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
--   **[Software license management](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - Track how many software licenses are available, and how many available licenses are being used.
--   **[App deployment](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
+-   **[Software license management](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Track how many software licenses are available, and how many available licenses are being used.
+-   **[App deployment](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -88,13 +89,13 @@ While the Intune client software supports [management capabilities that help pro
 
 When you use the Intune client software to manage Windows PCs, you can use only the policies shown under the **Computer Management** section.
 
-Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you manage Active Directory domain-joined computers with Intune, [ensure that Intune policies do not conflict with other GPOs](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
+Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you manage Active Directory domain-joined computers with Intune, [ensure that Intune policies do not conflict with other GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
 
 When deploying apps, you can use only the Windows Installer (.exe, .msi).
 
-  ![Select platform and location for PC client software files](../media/select-platform-of-software-files-for-pc-agent.png)
+  ![Select platform and location for PC client software files](media/select-platform-of-software-files-for-pc-agent.png)
 
 ## Common tasks for Windows PCs
 
@@ -117,10 +118,10 @@ Some management options, which can be used to manage PCs as mobile devices, cann
 
 Also note that in the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
 
-  ![Admin console items that appear only for PC client](../media/admin-console-settings-only-for-pc-agent.png)
+  ![Admin console items that appear only for PC client](media/admin-console-settings-only-for-pc-agent.png)
 
 ## Help with troubleshooting
 
 The Intune client software usually runs quietly in the background without the need for much user interaction or troubleshooting. If you need to resolve PC management issues, you can check the logs. The Intune client software and corresponding logs are installed under the %Program Files%\Microsoft\OnlineManagement directory.
 
-You can also review [Troubleshoot client setup in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) to check for issues that might occur, and any resolutions or workarounds.
+You can also review [device enrollment](device-enrollment.md) for more information about enrolling devices with Microsoft Intune.

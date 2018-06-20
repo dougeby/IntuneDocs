@@ -2,12 +2,13 @@
 # required metadata
 
 title: Retire a Windows PC 
+titlesuffix: Microsoft Intune
 description: How to retire an Intune-managed Windows PC.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 12/15/2016
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
@@ -58,7 +59,7 @@ When you retire a PC:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the Group Policy Object (GPO) before you can remove the client software to prevent the software from being reinstalled.
 
-    If the Endpoint Protection client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
+    If the Endpoint Protection client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
 ### See also
 

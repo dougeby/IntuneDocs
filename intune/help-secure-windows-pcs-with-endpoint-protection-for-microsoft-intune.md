@@ -2,12 +2,13 @@
 # required metadata
 
 title: Endpoint Protection for Windows PCs
+titlesuffix: Microsoft Intune
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
-author: nathbarn
-ms.author: nathbarn
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 03/06/2017
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
@@ -53,7 +54,7 @@ To switch from your current endpoint protection application to Microsoft Intune 
 
 3.  Remove the third-party endpoint protection software by:
 
-    -   Using Intune software distribution to deploy a software removal tool that's provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy apps with Microsoft Intune](deploy-apps.md).
+    -   Using Intune software distribution to deploy a software removal tool that's provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy apps with Microsoft Intune](apps-deploy.md).
 
     -   Removing the third-party endpoint protection application manually.
 
@@ -69,7 +70,7 @@ Use the following steps to help you configure Endpoint Protection for Microsoft 
 
 You can use the recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the topic [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
-  ![Endpoint Protection settings](./media/pol-sa-pc-endpoint-policy.png)
+  ![Endpoint Protection settings](media/pol-sa-pc-endpoint-policy.png)
 
 You can view the deployed Endpoint Protection policy on the **All Policies** page of the **Policy** workspace.
 
@@ -100,7 +101,7 @@ If you have set the policy values for the settings **Install Endpoint Protection
 |**Enable behavior monitoring**|Enables Microsoft Intune Endpoint Protection to check for certain patterns of suspicious activity on client computers.<br /><br />Recommended value: **Yes**|
 |**Enable Network Inspection System**|Enables Network Inspection System (NIS) on client computers. NIS uses signatures of known vulnerabilities from the [Microsoft Malware Protection Center](https://go.microsoft.com/fwlink/?LinkId=234249) to help detect and block malicious network traffic.<br /><br />Recommended value: **Yes**|
 
-  ![Real-time settings for Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
+  ![Real-time settings for Endpoint Protection](media/pol-sa-pc-policy-realtime.png)
 
 ### Specify scan schedule settings
 
@@ -176,7 +177,7 @@ You monitor the status of malware on your computers by using the **Protection** 
 > [!IMPORTANT]
 > The **Protection** workspace is not displayed in the administration console until you have installed the client and are managing at least one computer client.
 
-  ![Monitor Endpoint Protection](./media/pol-sa-ep-monitor.png)
+  ![Monitor Endpoint Protection](media/pol-sa-ep-monitor.png)
 
 ### How to view Recent Detection Paths for malware on computers
 Intune can display the paths of up to 10 of the most recently detected instances of malware on a device. The **Recent Detection Path** is disabled by default. To enable this view:
@@ -185,7 +186,7 @@ Intune can display the paths of up to 10 of the most recently detected instances
 2. Right-click the computer whose recent detection paths you want to see and select **Properties**.
 3. Select **Malware** from the tabs across the top.
 
-   ![Select the Malware tab and then click the Recent Detection Paths checkbox](../media/malware-path-column.png)
+   ![Select the Malware tab and then click the Recent Detection Paths checkbox](media/malware-path-column.png)
 4. Right-click the column header. A list of available columns appears. Select the **Recent Detection Paths** check box in the list. The **Recent Detection Paths** column appears and displays up to 10 of the most recently monitored malware instances on the device.
 
 ## Run a malware scan or update malware definitions on a computer
@@ -196,7 +197,7 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 2. Choose the **Remote Tasks** drop-down list, and then select the task to run on the remote computer.
 
 ## Need more help?
-For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
+For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
 ### See Also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

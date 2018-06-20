@@ -2,12 +2,13 @@
 # required metadata
 
 title: View hardware and software inventory for Windows PCs 
+titlesuffix: Microsoft Intune
 description: How to view hardware and software information about Windows desktops that you manage as PCs with the Intune software client.
 keywords:
 author: dougeby
-ms.author: angrobe
-manager: angrobe
-ms.date: 12/15/2016
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 

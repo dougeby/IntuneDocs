@@ -2,12 +2,13 @@
 # required metadata
 
 title: Request and provide remote assistance for Windows PCs 
-description: Describes end-user and IT admin steps for providing remote assistance for Windows desktops that are being managed as PCs and for remotely starting a PC.
+titlesuffix: Microsoft Intune
+description: Describes end-user and IT admin steps needed for remote assistance for Windows desktops that are being managed as PCs, and steps for remotely starting a PC.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 12/15/2016
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
@@ -64,7 +65,7 @@ Before you begin to establish and to respond to remote assistance requests, ensu
 ## Respond to a remote assistance request
 
 1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
-   > ![Screenshot of a remote assistance request](./media/team-viewer.png)
+   > ![Screenshot of a remote assistance request](/intune/media/team-viewer.png)
 
 <br>If a request goes unanswered for more than 4 hours, it is removed.
 2. To accept the request, choose **Approve request and launch Remote Assistance**.
