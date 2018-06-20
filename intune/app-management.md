@@ -119,8 +119,8 @@ For more information about this section, see [Monitor apps](apps-monitor.md).
 - **Company Portal branding**: Customize the Company Portal to give it your company branding. For more information, see:
     - [Company Portal configuration](company-portal-app.md).
 - **App categories**: Add, pin, and delete app category names.
-- **Android for Work**: Approve and sync the apps that you have approved for your enterprise. For more information, see:
-    - [Android for Work apps](apps-add-android-for-work.md).
+- **Android work profile**: Approve and sync the apps that you have approved for your enterprise. For more information, see:
+    - [Android work profile apps](apps-add-android-for-work.md).
 
 ### Help and support
 - **Help and support**: Troubleshoot, request support, or view Intune status. For more information, see:
