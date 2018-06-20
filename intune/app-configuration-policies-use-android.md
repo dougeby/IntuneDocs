@@ -3,7 +3,7 @@
 
 title: Add app configuration policies for managed Android devices
 titlesuffix: Microsoft Intune
-description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android for Work app.
+description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android work profile app.
 keywords:
 author: Erikre
 ms.author: erikre
