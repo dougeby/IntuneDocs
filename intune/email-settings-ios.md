@@ -47,7 +47,7 @@ Use the email profile settings to configure your devices running iOS.
       - **Custom domain name to use**: Enter a value that Intune uses for the domain name, such as `contoso.com` or `contoso`
 
 - **Email address attribute from AAD**: Choose how the email address for the user is generated. Select **User principal name** (`user1@contoso.com` or `user1`) to use the full principal name as the email address, or **Primary SMTP address** (`user1@contoso.com`) to use the primary SMTP address to sign in to Exchange.
-- **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile (**Note**: Azure Multi-factor authentication is not supported).
+- **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile. Azure multi-factor authentication is not supported.
   - If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
 - **SSL**: Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
 - **S/MIME**: Send outgoing email using S/MIME signing.
