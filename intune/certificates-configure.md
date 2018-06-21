@@ -100,7 +100,7 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for certificate settings:
 
 	- **Android**
-	- **Android for Work**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
