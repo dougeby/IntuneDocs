@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Email settings for iOS devices in Microsoft Intune: Azure | Microsoft Docs
+title: Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
 description: Create a device configuration email profile that that uses Exchange servers, and retrieves attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using Microsoft Intune.
 keywords:
 author: MandiOhlinger

@@ -74,7 +74,7 @@ As an Intune administrator, you can create and assign email settings to the foll
   - **Calendar**
   - **Tasks**
 
-## Android Enterprise email settings
+## Android Enterprise
 
 - **Email app**: Select either **Gmail** or **Nine Work**
 - **Email server**: The host name of your Exchange server.
