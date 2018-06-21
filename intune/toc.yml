@@ -578,56 +578,40 @@
   - name: Manage software updates
     href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
-    href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
-    maintainContext: true
+    href: manage-windows-pcs-with-microsoft-intune.md
     items:
     - name: Compare PC management
-      href: /intune-classic/deploy-use/pc-management-comparison
-      maintainContext: true
+      href: pc-management-comparison.md
     - name: Install the PC client
-      href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
-      maintainContext: true
+      href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Common PC management tasks
-      href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
-      maintainContext: true
+      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
       items:
       - name: PC policies
-        href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
-        maintainContext: true
+        href: use-policies-to-simplify-windows-pc-management.md
       - name: View inventory
-        href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
-        maintainContext: true
+        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
       - name: Retire PCs
-        href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
-        maintainContext: true
+        href: retire-a-windows-pc-with-microsoft-intune.md
       - name: Link PCs to users
-        href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
-        maintainContext: true
+        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
       - name: Remote assistance
-        href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
-        maintainContext: true
+        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
     - name: Policies to protect Windows PCs
-      href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-      maintainContext: true
+      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
       items:
       - name: Software updates
-        href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
-        maintainContext: true
+        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
       - name: Windows Firewall
-        href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
-        maintainContext: true
+        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
       - name: Endpoint Protection
-        href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
-        maintainContext: true
+        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
     - name: Add apps for Intune client PCs
-      href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
-      maintainContext: true
+      href: add-apps-for-windows-pcs-in-microsoft-intune.md
     - name: Manage license agreements
-      href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
-      maintainContext: true
+      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
     - name: Resolve policy conflicts
-      href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
-      maintainContext: true
+      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Manage Windows Holographic
     href: windows-holographic-for-business.md
     items:
