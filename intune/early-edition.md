@@ -133,6 +133,7 @@ The update is currently in preview. You can register to join the preview at http
 We're revising the messages that device users see when a device is out-of-compliance. Messages will retain their original meanings but will be updated with friendlier language and less technical jargon. We're also refreshing links to documentation and remediation steps to keep them up-to-date.  
 
 The following before and after text is one example of the improvements in messaging you'll see:  
+
 Before: *This device hasn’t contacted the Intune service in the specified time period required by your IT admin. To resolve this issue, please open the company portal app on your device and click on the Check Compliance button.*  
 
 After: *Your device has not checked in with your organization in a while. To reestablish a connection, open the Company Portal app on your device and tap Check Settings for your device*.  
