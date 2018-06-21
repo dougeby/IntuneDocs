@@ -116,8 +116,8 @@ As the Intune admin, you will be able to deploy additional languages for Office 
 ### Revoke iOS VPP app license <!-- 1863797 -->
 As the admin, you'll be able to reclaim an iOS VPP app license assigned to a user or device. Uninstalling an iOS VPP app will also allow you to reclaim the app license. Then, you can choose to assign the app license to another user or device. For more information about iOS VPP app licenses, see [Manage iOS volume-purchased apps in Microsoft Intune](vpp-apps-ios.md).
 
-### New user experience update for the Company Portal website <!--2000968 -->
-We’re adding new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
+### Preview a new user experience update for the Company Portal website <!--2000968 -->
+We’re adding new features, based on feedback from customers, to the Company Portal website/iOS app catalog. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
 
 - Streamlined workflows across all device platforms
 - Improved device identification and enrollment flows
@@ -126,6 +126,8 @@ We’re adding new features, based on feedback from customers, to the Company Po
 - Ability to share direct links to apps
 - Improved performance for large app catalogs
 - Increased accessibility for all users
+
+The update is currently in preview. You can register to join the preview at http://aka.ms/webcpflighting
 
 ### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
 As the Microsoft Intune admin, you will have greater ability to edit your Office 365 Pro Plus app deployments. In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  

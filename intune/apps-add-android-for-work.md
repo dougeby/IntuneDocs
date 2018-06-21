@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work is a program for Android devices. All apps you install on Android for Work devices come from the Managed Google Play store. How you assign apps to Android for Work devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
+Android for Work is a program for Android devices. Specifically, Android for Work is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android for Work provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device. All apps you install on Android for Work devices come from the Managed Google Play store. How you assign apps to Android for Work devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 
 Additionally, if you have created your own line-of-business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.
@@ -39,7 +39,7 @@ Additionally, if you have created your own line-of-business (LOB) apps, you can 
 
 ## Before you start
 
-Make sure you have configured Intune and Android for Work to work together in the **Device enrollment** workload of the Azure portal.
+Make sure you have configured Intune and Android for Work to work together in the **Device enrollment** workload of the Azure portal. For more information, see [Enroll Android devices](android-enroll.md#enable-enrollment-of-android-for-work-devices).
 
 ## Synchronize an app from the Managed Google Play store
 
