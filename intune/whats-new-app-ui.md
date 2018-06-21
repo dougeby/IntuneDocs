@@ -90,7 +90,7 @@ If you've enabled [device group mapping](device-group-mapping.md), the Company P
 
 ## Week of November 13, 2017
 
-### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!---1417174--->
+### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!-- 1417174 -->
 
 We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text.
 
@@ -149,7 +149,7 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-Additional steps have been improved on Android for Work devices.
+Additional steps have been improved on Android work profile devices.
 
 |Before|After|
 |---|---|

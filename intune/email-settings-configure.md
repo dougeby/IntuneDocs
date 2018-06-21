@@ -36,7 +36,7 @@ The built-in mail client is supported for most platforms. Most third-party email
 You can use email profiles to configure the native email client on the following device types:
 
 - Android Samsung Knox Standard 4.0 and later
-- Android for Work
+- Android work profile devices
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 - Windows 10 (desktop) and Windows 10 Mobile

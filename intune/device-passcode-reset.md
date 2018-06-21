@@ -52,9 +52,9 @@ To create a new passcode for a device, use the **Remove passcode** action.
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, select a device, and choose **...More**. Then choose the **Remove passcode** device remote action.
 
-## Resetting Android for Work passcodes
+## Resetting Android work profile passcodes
 
-Supported Android for Work devices receive a new managed profile unlock password or a managed profile challenge for the end user. For devices on Android 7.0 or later with Work profiles, end users receive notifications to activate their reset passcode token immediately after enrollment is completed. The notification is displayed if a Work profile password is required and set. Once their passcode is entered, the notification is dismissed.
+Supported Android work profile devices receive a new managed profile unlock password or a managed profile challenge for the end user. For devices on Android 7.0 or later with Work profiles, end users receive notifications to activate their reset passcode token immediately after enrollment is completed. The notification is displayed if a Work profile password is required and set. Once their passcode is entered, the notification is dismissed.
 
 ## Resetting iOS passcodes
 
