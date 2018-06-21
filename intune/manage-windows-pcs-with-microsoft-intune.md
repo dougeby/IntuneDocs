@@ -76,7 +76,7 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 
 -   **[Anti-malware protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **[Remote assistance](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
+-   **[Remote assistance](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
 -   **[Software license management](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Track how many software licenses are available, and how many available licenses are being used.
 -   **[App deployment](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
@@ -91,7 +91,7 @@ When you use the Intune client software to manage Windows PCs, you can use only 
 
 Intune manages Windows PCs using policies, similar to how Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you manage Active Directory domain-joined computers with Intune, [ensure that Intune policies do not conflict with other GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) used in your organization. To read more, see [Group Policy for beginners](https://technet.microsoft.com/library/hh147307.aspx).
 
-  ![Select template for new Windows PC policy](../media/select-template-for-pc-policy.png)
+  ![Select template for new Windows PC policy](media/select-template-for-pc-policy.png)
 
 When deploying apps, you can use only the Windows Installer (.exe, .msi).
 
