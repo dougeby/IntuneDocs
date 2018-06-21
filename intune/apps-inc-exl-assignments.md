@@ -42,7 +42,7 @@ Intune doesn't consider user-to-device association when it excludes groups. Incl
 >
 > Intune provides pre-created **All Users** and **All Devices** groups in the console. The groups have built-in optimizations for your convenience. It's highly recommended that you use these groups to target all users and all devices instead of any "all users" or "all devices" groups that you might create yourself.  
 >
-> Android Enterprise (formerly known as Android for Work) supports including and excluding groups. You can leverage the built-in **All Users** and **All Devices** groups for Android Enterprise app assignment. 
+> Android enterprise supports including and excluding groups. You can leverage the built-in **All Users** and **All Devices** groups for Android enterprise app assignment. 
 
 
 ## Include and exclude groups when assigning apps 

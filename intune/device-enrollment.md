@@ -68,7 +68,7 @@ As you can see in the following tables, there are several methods to enroll your
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](./device-enrollment-manager-enroll.md)|
-|**Android for Work**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Android work profiles**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## Bring your own device

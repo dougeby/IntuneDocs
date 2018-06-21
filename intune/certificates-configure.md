@@ -48,7 +48,7 @@ Each of these certificate types has its own prerequisites and infrastructure req
 	- iOS 8.0 and later
 	- macOS 10.11 and later
 	- Android 4.0 and later
-	- Android for Work
+	- Android work profile
 	- Windows 8.1 and later
 	- Windows Phone 8.1 and later
 	- Windows 10 and later
@@ -57,7 +57,7 @@ Each of these certificate types has its own prerequisites and infrastructure req
 
    - iOS 8.0 and later
    - Android 4.0 and later
-   - Android for Work
+   - Android work profile
    - Windows 10 (desktop and mobile) and later
 
    You can only use a **SCEP** certificate profile for devices running the following platforms:

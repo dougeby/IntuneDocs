@@ -209,7 +209,7 @@ To use the device compliance-related features in the Azure portal, you must crea
 - Create a device compliance policy for the following platforms:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for work](compliance-policy-create-android-for-work.md)
+  - [Android work profile](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
