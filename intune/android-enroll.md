@@ -118,17 +118,17 @@ For information about other user tasks, see these articles:
 - [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
 - [Using your Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
-## Unbind your Android enterprise administrative account
+## Disconnect your Android enterprise administrative account
 
-You can turn off Android enterprise enrollment and management. Choosing **Unbind** in the Intune administration console removes all enrolled Android work profile devices from enrollment. It also removes the relationship between the Android enterprise account and Intune.
+You can turn off Android enterprise enrollment and management. Choosing **Disconnect** in the Intune administration console removes all enrolled Android work profile devices from enrollment. It also removes the relationship between the Android enterprise account and Intune.
 
-### To unbind an Android enterprise account
+### To disconnect an Android enterprise account
 
-1. **Unbind Android enterprise binding**<br>
-    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.  On the **Intune** pane, choose **Device enrollment**, > **Android for Work Enrollment**, and then choose **Unbind**.
+1. **Disconnect Android enterprise binding**<br>
+    As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.  On the **Intune** pane, choose **Device enrollment** > **Android enrollment** > **Managed Google Play** > **Disconnect**.
 
-2. **Agree to delete Android for Work binding**<br>
-  Choose **Yes** to delete the binding and unenroll all Android work profile devices from Intune.
+2. **Agree to delete Android enterprise binding**<br>
+  Choose **Yes** to disconnect and unenroll all Android work profile devices from Intune.
 
 ## End user experience when enrolling a Samsung Knox device
 There are several considerations when enrolling Samsung Knox devices:
