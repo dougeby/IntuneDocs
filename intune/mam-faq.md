@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -119,6 +119,9 @@ The Personal Identification Number (PIN) is a passcode used to verify that the c
 
       >[!NOTE] 
       > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+
+- **How does the Intune PIN work with built-in app PINs for Outlook and OneDrive?**<br></br>
+The Intune PIN works based on an inactivity based timer (aka the value of 'Recheck the access requirements after (minutes)'). As such, Intune PIN prompts show up independently from the built-in app PIN prompts for Outlook and OneDrive which often are tied to app launch by default. If the user recieves both PIN prompts at the same time, the expected behaviour should be that the Intune PIN takes precedence. 
 
 - **Is the PIN secure?**<br></br> The PIN serves to allow only the correct user to access their organization's data in the app. Therefore, an end user must sign in with their work or school account before they can set or reset their Intune app PIN. This authentication is handled by Azure Active Directory via secure token exchange and is not transparent to the Intune App SDK. From a security perspective, the best way to protect work or school data is to encrypt it. Encryption is not related to the app PIN, but is its own app protection policy.
 
