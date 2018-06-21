@@ -67,7 +67,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 14 |MacMDM |Mac OS X device managed with the built-in MDM agent |
 | 15 |HoloLens |Holo Lens device |
 | 16 |SurfaceHub |Surface Hub device |
-| 17 |AndroidForWork |Android device-managed using Android for Work Profile Owner |
+| 17 |AndroidForWork |Android device-managed using Android Profile Owner |
 | 100 |Blackberry |Blackberry Device |
 | 101 |Palm |Palm device |
 | 255 |Unknown |Unknown device type |

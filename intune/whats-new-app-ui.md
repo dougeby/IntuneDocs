@@ -149,7 +149,7 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-Additional steps have been improved on Android for Work devices.
+Additional steps have been improved on Android work profile devices.
 
 |Before|After|
 |---|---|
