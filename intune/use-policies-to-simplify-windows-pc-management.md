@@ -2,12 +2,13 @@
 # required metadata
 
 title: Use policies to simplify Windows PC management 
+titlesuffix: Microsoft Intune
 description: Describes the Windows PC management policies and the settings for the Microsoft Intune Center.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 12/15/2016
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,17 +22,17 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
 # Use policies to simplify Windows PC management
 
-[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 To manage Windows desktops as PCs, by running the Intune software client on them, you can use only the policies that are under **Computer Management** policies in the Intune admin console. All of the other policies listed in the admin console are for mobile devices only. Using the **Computer Management** policies, you can configure the settings in the Microsoft Intune Center, control updates to PCs, and configure Windows Firewall for PCs.
 
-![Policies template for Windows PCs](../media/pc_policy_template.png)
+![Policies template for Windows PCs](media/pc_policy_template.png)
 
 ### Manage the Microsoft Intune Center
 Users see the Intune software client as the **Microsoft Intune Center**. The Microsoft Intune Center lets users:

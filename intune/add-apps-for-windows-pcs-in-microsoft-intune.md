@@ -2,12 +2,13 @@
 # required metadata
 
 title: Add apps for Windows PCs that run the Intune software client
+titlesuffix: Microsoft Intune
 description: Use the information in this topic to learn how to add apps for Windows PCs to Intune before you deploy them.
 keywords:
-author: mattbriggs
-ms.author: mabrigg
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 02/16/2017
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,18 +22,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
 # Add apps for Windows PCs that run the Intune software client
 
-[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
 
 > [!IMPORTANT]
-> The information in this topic helps you add apps for Windows PCs that you manage by using the Intune software client. If you want to add apps for enrolled Windows PCs and other mobile devices, see [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> The information in this topic helps you add apps for Windows PCs that you manage by using the Intune software client. If you want to add apps for enrolled Windows PCs and other mobile devices, see [Add apps to Microsoft Intune](apps-add.md).
 
 To install apps to PCs, they must be capable of being installed silently, with no user interaction. If this is not the case, the installation will fail.
 
@@ -52,7 +53,7 @@ You use the Intune Software Publisher to configure the properties of the app and
    - **Include additional files and subfolders from the same folder**. Some software that uses Windows Installer requires supporting files. These must be located in the same folder as the installation file. Select this option if you also want to deploy these supporting files.
 
    For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
-   ![Software setup page of the publisher](./media/publisher-for-pc.png)
+   ![Software setup page of the publisher](media/publisher-for-pc.png)
 
    This installation type uses some of your cloud storage space.
 
@@ -101,6 +102,6 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 
 ## Next steps
 
-After you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune](deploy-apps.md).
+After you've created an app, the next step is to deploy it. To find out more, see [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 If you want to read more information about tips and tricks to deploy software to Windows PCs, see the blog post [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
