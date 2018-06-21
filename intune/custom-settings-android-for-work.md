@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 Use the Intune Android work profile custom configuration policy to assign OMA-URI settings that can be used to control features on Android work profile devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to assign Android settings that are not configurable with Intune policies. Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
+This capability is intended to allow you to assign Android settings that are not configurable with Intune policies. Intune supports a limited number of Android custom policies at present. See the examples in this article to find out which policies you can configure.
 
 ## Create a custom profile
 
@@ -50,7 +50,7 @@ This capability is intended to allow you to assign Android settings that are not
 
 In this example, you'll create a custom profile that can be used to restrict whether copy and paste actions between work and personal apps are allowed on Android work profile devices.
 
-1. Use the procedure in this topic to create a custom profile for Android work profile devices using the following values:
+1. Use the procedure in this article to create a custom profile for Android work profile devices using the following values:
 	- **Name** - Enter "Block copy and paste" or text of your own choosing.
 	- **Description** - Enter "Blocks copy/paste between work and personal apps" or text of your own choosing.
 	- **OMA-URI** - Enter **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**.

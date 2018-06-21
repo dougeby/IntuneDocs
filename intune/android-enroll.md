@@ -77,7 +77,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    c. Select **Launch Google to connect now** to open the Managed Google Play website. The website opens on a new tab in your browser.
   
    d. **Sign in to Google**<br>
-   On Google's sign-in page, enter the Google account that will be associated with all Android enterprise management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Google Play console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
+   On Google's sign in page, enter the Google account that will be associated with all Android enterprise management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Google Play console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
     
     > [!Note]
     > If you are using the Microsoft Edge browser, click **Sign-In** in the upper right corner to sign-in to your Google account.
@@ -132,7 +132,7 @@ You can turn off Android enterprise enrollment and management. Choosing **Unbind
 
 ## End user experience when enrolling a Samsung Knox device
 There are several considerations when enrolling Samsung Knox devices:
--	Even if no policies require a PIN, the device must have at least a four digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
+-	Even if no policies require a PIN, the device must have at least a four-digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
 -	There is no user interaction for Workplace Join Certificates (WPJ).
 -	The user is prompted with Service Enrollment info and what the app can do.
 -	The user is prompted with Knox Enrollment info and what Knox can do.
