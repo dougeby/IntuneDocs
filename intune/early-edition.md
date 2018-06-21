@@ -129,6 +129,13 @@ We’re adding new features, based on feedback from customers, to the Company Po
 
 The update is currently in preview. You can register to join the preview at http://aka.ms/webcpflighting
 
+### Updates to out-of-compliance messages in Company Portal app <!-- 1832222 -->
+We're revising the messages that device users see when a device is out-of-compliance. Messages will retain their original meanings but will be updated with friendlier language and less technical jargon. We're also refreshing links to documentation and remediation steps to keep them up-to-date.  
+
+The following before and after text is one example of the improvements in messaging you'll see:
+Before: *This device hasn’t contacted the Intune service in the specified time period required by your IT admin. To resolve this issue, please open the company portal app on your device and click on the Check Compliance button.*
+After: *Your device has not checked in with your organization in a while. To reestablish a connection, open the Company Portal app on your device and tap Check Settings for your device*.  
+
 ### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
 As the Microsoft Intune admin, you will have greater ability to edit your Office 365 Pro Plus app deployments. In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  
 
