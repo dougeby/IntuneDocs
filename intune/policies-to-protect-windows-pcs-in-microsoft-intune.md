@@ -2,12 +2,13 @@
 # required metadata
 
 title: Policies to protect Windows PCs
+titlesuffix: Microsoft Intune
 description: Use these policies to help you ensure the security of Windows PCs when they are managed by the Intune client software.
 keywords:
-author: vhorne
-ms.author: victorh
-manager: angrobe
-ms.date: 12/27/2016
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 01/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,13 +22,13 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic-keep
 
 ---
 
 # Use policies to help protect Windows PCs that run the Intune client software
 
-[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs that the [Intune client software](manage-windows-pcs-with-microsoft-intune.md) manages.
 
