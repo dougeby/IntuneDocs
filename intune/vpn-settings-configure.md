@@ -32,7 +32,7 @@ Virtual private networks (VPNs) give your users secure remote access to your com
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings to connect to the corporate network. Then you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks, and can connect with minimal effort.
 
-You can use Intune custom configuration polices to create VPN profiles for the following platforms:
+You can use Intune custom configuration policies to create VPN profiles for the following platforms:
 
 * Android 4 and later
 * Enrolled devices that run Windows 8.1 and later
