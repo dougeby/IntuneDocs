@@ -39,7 +39,7 @@ Additionally, if you have created your own line-of-business (LOB) apps, you can 
 
 ## Before you start
 
-Make sure you have configured Intune and Android for Work to work together in the **Device enrollment** workload of the Azure portal. For more information, see [Enroll Android devices](android-enroll.md#enable-enrollment-of-android-for-work-devices).
+Make sure you have configured Intune and Android for Work to work together in the **Device enrollment** workload of the Azure portal. For more information, see [Enroll Android devices](android-enroll.md#enable-enrollment-of-android-work-profile-devices).
 
 ## Synchronize an app from the Managed Google Play store
 

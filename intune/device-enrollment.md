@@ -70,7 +70,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](./device-enrollment-manager-enroll.md)|
-|**Android work profiles**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Android work profiles**| No | Yes | No| [More information](./android-enroll.md#enable-enrollment-of-android-work-profile-devices) |
 
 
 ## Bring your own device
