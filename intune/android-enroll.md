@@ -51,7 +51,7 @@ To enable device management, your users must enroll their devices by downloading
 
 Android enterprise is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android enterprise provides additional management capabilities and privacy when people use their Android work profile devices for work. Intune helps you deploy apps and company resources to Android work profile devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
-To enable management of the work profile on devices that [support Android work profiles](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), you must add an Android enterprise binding to Intune. If you want to enroll devices in Android work profiles, but those devices were already enrolled as regular Android devices, you must unenroll the devices and then re-enroll them.
+To enable management of the work profile on devices that [support Android work profiles](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), you must add an Android  binding to Intune. If you want to enroll devices in Android work profiles, but those devices were already enrolled as regular Android devices, you must unenroll the devices and then re-enroll them.
 
 If you're enrolling Android work profile devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
@@ -122,7 +122,7 @@ For information about other user tasks, see these articles:
 
 You can turn off Android enterprise enrollment and management. Choosing **Unbind** in the Intune administration console removes all enrolled Android work profile devices from enrollment. It also removes the relationship between the Android enterprise account and Intune.
 
-### To disconnect an Android enterprise account
+### To unbind an Android enterprise account
 
 1. **Unbind Android enterprise binding**<br>
     As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.  On the **Intune** pane, choose **Device enrollment**, > **Android for Work Enrollment**, and then choose **Unbind**.
