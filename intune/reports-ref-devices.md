@@ -149,7 +149,7 @@ The **MdmStatuses** entity indicates compliance state of the device.
 | 1 |Compliant |The device is compliant. |
 | 2 |Noncompliant |The device is noncompliant. |
 | 3 |Conflict |The device's compliance resulted in s conflict. |
-| 4 |Error |There was error in readign the device's compliance state. |
+| 4 |Error |There was error in reading the device's compliance state. |
 
 
 ## ManagementStates

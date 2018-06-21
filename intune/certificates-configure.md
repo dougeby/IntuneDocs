@@ -89,7 +89,7 @@ Export the Trusted Root Certification Authorities (CA) certificate as a public c
 You import this certificate when you set up a trusted certificate profile.
 
 ## Step 3: Create trusted certificate profiles
-Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates is similar for each device platform.
+Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates are similar for each device platform.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
