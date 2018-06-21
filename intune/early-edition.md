@@ -138,7 +138,7 @@ When uploading corporate IDs, Intune will provide a list of any duplicates and g
 ### Manually add corporate device identifiers <!-- 2203803 -->
 You'll be able to manually add corporate device IDs. Choose **Device enrollment** > **Corporate Device Identifiers** > **Add**.
 
-### New status for devices in device configuration <!-- 2308882 -->
+### New status for devices in device compliance <!-- 2308882 -->
 In **Device compliance** > **Policies** > select a policy > **Overview**, the following new states will be added:
 - succeeded
 - error
