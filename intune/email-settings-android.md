@@ -30,8 +30,8 @@ Use the email profile settings to configure your devices running Android.
 
 As an Intune administrator, you can create and assign email settings to the following Android devices:
 
-- [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
-- [Android Enterprise](#android-for-work-email-settings)
+- Android Samsung Knox Standard
+- Android Enterprise
 
 ## Android (Samsung Knox)
 
