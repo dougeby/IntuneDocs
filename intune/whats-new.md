@@ -45,6 +45,12 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of June 18, 2018
+
+### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+
+The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
+
 ## Week of June 11, 2018
 
 ### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
