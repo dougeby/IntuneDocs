@@ -180,7 +180,13 @@
       items:
       - name: Set up Android enrollment
         href: android-enroll.md
-      - name: Manage Android for Work devices
+      - name: Connect Intune to Android enterprise
+        href: connect-intune-android-enterprise.md
+      - name: Set up Android work profile enrollment
+        href: android-work-profile-enroll.md
+      - name: Set up Android kiosk enrollment
+        href: android-kiosk-enroll.md
+      - name: Manage Android work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 
         href: android-samsung-knox-mobile-enroll.md
