@@ -35,25 +35,13 @@ ms.custom: intune-azure
 You can use Intune to add and deploy MTD apps so end users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
 
-
-| #        |Step  |
-| ------------- |:-------------|
-| 1 | [Before you begin](#before-you-begin) |
-| 2 | [Configure Microsoft Authenticator for iOS](#configure-microsoft-authenticator-for-ios)
-| 3 | [Configure MTD applications](#configure-mtd-applications) |
-| 4 | [Configure your MTD apps with an iOS app configuration policy](#configure-your-mtd-apps-with-an-ios-app-configuration-policy) |
-| 5 | [Assign apps to groups](#assign-apps-to-groups) |
-
 ## Before you begin
 
 The below steps need to be completed in the [Azure portal](https://portal.azure.com/). Make sure you’re familiar with the process of:
 
   -   [Adding an app into Intune](apps-add.md).
-
   -   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-
   -   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-
   -   [ Adding an iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
@@ -75,69 +63,67 @@ Choose the section that corresponds to your MTD provider:
 
 ### Configure Lookout for Work apps
 
-#### Android
-- See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Lookout for work Google app store URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise) on **step 7**.
+- **Android**
+  - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Lookout for work Google app store URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise) on **step 7**.
 
-#### iOS
+- **iOS**
 
-- See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Lookout for Work iOS app store URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) on **step 12** under the **Configure app information** section.
+  - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Lookout for Work iOS app store URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) on **step 12** under the **Configure app information** section.
 
-#### Lookout for Work app outside the Apple store
+-   **Lookout for Work app outside the Apple store**
+    - You need to re-sign the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. Before distributing the app, you must re-sign the app with your iOS Enterprise Developer Certificate.
+    - For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) on the Lookout website.
 
-You need to re-sign the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. Before distributing the app, you must re-sign the app with your iOS Enterprise Developer Certificate.
+- **Enable Azure AD authentication for Lookout for Work iOS app**
 
-For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) on the Lookout website.
+  Enable Azure Active Directory authentication for the iOS users by doing the following:
 
-##### Enable Azure AD authentication for Lookout for Work iOS app
+    1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
 
-Enable Azure Active Directory authentication for the iOS users by doing the following:
+    2. Add the **Lookout for Work iOS app** as a **native client application**.
 
-1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
+    3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
 
-2. Add the **Lookout for Work iOS app** as a **native client application**.
+    4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URL encoded version of your original redirect URI.
 
-3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
-
-4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URL encoded version of your original redirect URI.
-
-5.  Add **Delegated Permissions** to your app.
+    5.  Add **Delegated Permissions** to your app.
 
     > [!NOTE] 
     > See [configure a native client application with Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) for more details.
 
-##### Add the Lookout for Work ipa file
+ - **Add the Lookout for Work ipa file**
 
-- Upload the re-signed .ipa file as described in the [Add iOS LOB apps with Intune](lob-apps-ios.md) topic. You also need to set the minimum OS version to iOS 8.0 or later.
+    - Upload the re-signed .ipa file as described in the [Add iOS LOB apps with Intune](lob-apps-ios.md) topic. You also need to set the minimum OS version to iOS 8.0 or later.
 
 ### Configure Symantec Endpoint Protection Mobile apps
 
-#### Android
+ - **Android**
 
-- See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). In **step 7**, use this [SEP Mobile app store URL](https://play.google.com/store/apps/details?id=com.skycure.skycure).  For **Minimum operating system**, select **Android 4.0 (Ice Cream Sandwich)**.
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). In **step 7**, use this [SEP Mobile app store URL](https://play.google.com/store/apps/details?id=com.skycure.skycure).  For **Minimum operating system**, select **Android 4.0 (Ice Cream Sandwich)**.
 
-#### iOS
+ - **iOS**
 
-- See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). In **step 12**, use this [SEP Mobile app store URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) under the **Configure app information** section.
+    - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). In **step 12**, use this [SEP Mobile app store URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) under the **Configure app information** section.
 
 ### Configure Check Point SandBlast Mobile apps
 
-#### Android
+ - **Android**
 
-- See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Check Point SandBlast Mobile app store URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) on **step 7**.
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Check Point SandBlast Mobile app store URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) on **step 7**.
 
-#### iOS
+ - **iOS**
 
-- Contact [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) to get the iOS app. See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md), then use the Apple store URL in **step 12** under the **Configure app information** section.
+    - Contact [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) to get the iOS app. See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md), then use the Apple store URL in **step 12** under the **Configure app information** section.
 
 ### Configure Zimperium apps
 
-#### Android
+ - **Android**
 
-- See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Zimperium app store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) on **step 7**.
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Zimperium app store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) on **step 7**.
 
-#### iOS
+ - **iOS**
 
-- See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Zimperium app store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) in **step 12** under the **Configure app information** section.
+    - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Zimperium app store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) in **step 12** under the **Configure app information** section.
 
 ## Configure your MTD apps with an iOS app configuration policy
 
