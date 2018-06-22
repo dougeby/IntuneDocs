@@ -239,7 +239,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ## Collect available data from mobile device
 
-The following resources can help you learn how to collect device logs:
+The following resources can help you learn more about collecting device data:
   - [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
   - [Help your company support fix device issues with verbose logging](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
   - [Send Android logs to your company support using a USB cable](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
