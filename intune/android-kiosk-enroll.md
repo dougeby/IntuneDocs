@@ -31,11 +31,11 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. This lets admins lock down the usage of a device for a limited set of apps. It also prevents users from adding other apps or taking other actions on the device.
+Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps. It also prevents users from adding other apps or taking other actions on the device.
 
 Intune helps you deploy apps and company resources to Android kiosk devices. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
-Devices that you manage in this way are enrolled in Intune wihout a user account. They have no association with any end user. They aren't intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
+Devices that you manage in this way are enrolled in Intune without a user account. They have no association with any end user. They aren't intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
 
 ## Prerequisites
 
@@ -56,11 +56,11 @@ To set up Android kiosk management, follow these steps:
 
 ### Create an enrollment profile
 
-You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created it provides you with an enrollment token (random string) and a QR code. You can user either of these (depending on the Android OS version of the device) to enroll the kiosk device.
+You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. You can use either of these (depending on the Android OS version of the device) to enroll the kiosk device.
 
 1. Go to the [Intune portal]() and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
-    - **Name**: Type a name that you'll use when assigngin the profile to the dynamic device group.
+    - **Name**: Type a name that you'll use when assigning the profile to the dynamic device group.
     - **Token expiration date**: The date when the token expires. Google enforces a maximum of 30 days.
 3. Choose **Create** to save the profile.
 
@@ -71,7 +71,7 @@ You must create an enrollment profile so that you can enroll your kiosk devices.
     - **Group type**: Security
     - **Group name**: Type an intuitive name (like Factory 1 devices)
     - **Membership type**: Dynamic device
-3. Chooose **Add dynamic query**.
+3. Choose **Add dynamic query**.
 4. In the **Dynamic membership rules** blade, fill out the fields as follows:
     - **Add dynamic membership rule**: Simple rule
     - **Add devices where**: enrollmentProfileName
@@ -117,7 +117,7 @@ For Android 6 and later devices, you can use the token to enroll the device.
 2. On the **Welcome** screen, select your language.
 3. Connect to your **Wifi** and then choose **NEXT**.
 4. Accept the Google Terms and conditions and then choose **NEXT**.
-5. On the Google Sign in screen, enter **afw#setup** instead of a Gmail account and then choose **NEXT**.
+5. On the Google sign-in screen, enter **afw#setup** instead of a Gmail account, and then choose **NEXT**.
 6. Choose **INSTALL** for the **Android Device Policy** app.
 7. Continue installation of this policy.  Some devices may require additional terms acceptance. 
 8. On the **Enroll this device** screen, allow your device to scan the QR code or choose to enter the token manually.
@@ -133,7 +133,7 @@ On Android 7 and later devices, you can scan the QR code from the enrollment pro
 
 ### Enroll by using Google Zero Touch
 
-To use Google's Zero Touch system depends upon having a device that supports it and be affiliated with a supplier that is part of the service.  Refer to [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/) for further details. 
+To use Google's Zero Touch system requires a device that supports it and is affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
 
 
 1. Create a new Configuration in the Zero Touch console.
