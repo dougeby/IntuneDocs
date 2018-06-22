@@ -36,7 +36,7 @@ Intune helps you deploy apps and company resources to Android kiosk devices. Whe
 To set up Android kiosk management, follow these steps:
 
 1. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
-2. [Tell your users how to enroll their devices](enroll-your-device-in-intune-android.md).
+2. [Tell your users how to enroll their devices](../intune-user-help/enroll-your-device-in-intune-android.md).
 
 ## Approve the Company Portal app in the managed Google Play store
 

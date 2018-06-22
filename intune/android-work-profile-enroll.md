@@ -39,7 +39,7 @@ To set up Android work profile management, follow these steps:
 2. Specify Android work profile enrollment settings. Android work profiles are [supported on only certain Android devices](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android work profiles also supports conventional Android management. Intune lets you specify how devices that support Android work profiles should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
     - **Block (set by default)**:  All Android devices, including devices that support Android work profiles, will be enrolled as conventional Android devices.
     - **Allow**: All devices that support Android work profiles are enrolled as Android work profile devices. Any Android device that does not support Android work profiles is enrolled as a conventional Android device.
-3. [Tell your users how to enroll their devices](enroll-your-device-in-intune-android.md).
+3. [Tell your users how to enroll their devices](../intune-user-help/enroll-your-device-in-intune-android.md).
 
 
 If you want to enroll devices in Android work profiles, but those devices were already enrolled as regular Android devices, those devices must first unenroll and then re-enroll.
@@ -61,5 +61,5 @@ Follow these steps to approve the Intune Company Portal:
 5.  Select **Keep approved when app requests new permissions**, then click **Save.**
 
 ## Next steps for Android work profiles
-- [Deploy Android work profile apps](android-for-work-apps.md)
-- [Add Android work profile configuration policies](android-for-work-policy-settings-in-microsoft-intune.md)
+- [Deploy Android work profile apps](store-apps-android.md)
+- [Add Android work profile configuration policies](device profiles.md)

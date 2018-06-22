@@ -37,7 +37,7 @@ Android for Work management capabilities rely upon features that are part of mor
 
 ## Onboarding
 
-Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. For more information, see [Enable enrollment of Android for Work devices](android-enroll.md#enable-enrollment-of-android-work-profile-devices).
+Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. For more information, see [Enable enrollment of Android work profile devices](android-work-profile-enroll.md).
 
 ## Work profile management
 
