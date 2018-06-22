@@ -237,14 +237,14 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## Collect available data
+## Collect available data from mobile device
 
 - The following resources can help you learn how to collect device logs:
-  - [Send iOS enrollment errors to your IT administrator](intune-user-help/send-errors-to-your-it-admin-ios.md)
-  - [Help your company support fix device issues with verbose logging](intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-  - [Send Android logs to your company support using a USB cable](intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-  - [Send Android diagnostic data logs to your IT administrator using email](intune-user-help/send-logs-to-your-it-admin-by-email-android.md)
-  - [Send Android enrollment errors to your IT administrator](intune-user-help/send-enrollment-errors-to-your-it-administrator-android.md)
+  - [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Help your company support fix device issues with verbose logging](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Send Android logs to your company support using a USB cable](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Send Android diagnostic data logs to your IT administrator using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Send Android enrollment errors to your IT administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## Next steps
 
