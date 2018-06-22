@@ -62,4 +62,4 @@ Follow these steps to approve the Intune Company Portal:
 
 ## Next steps for Android work profiles
 - [Deploy Android work profile apps](store-apps-android.md)
-- [Add Android work profile configuration policies](device profiles.md)
+- [Add Android work profile configuration policies](device-profiles.md)

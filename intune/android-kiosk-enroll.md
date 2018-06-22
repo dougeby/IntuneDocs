@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Set up enrollment of Android work profile devices
+# Set up enrollment of Android kiosk devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
