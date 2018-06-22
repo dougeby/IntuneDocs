@@ -74,26 +74,24 @@ Choose the section that corresponds to your MTD provider:
     - You need to re-sign the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. Before distributing the app, you must re-sign the app with your iOS Enterprise Developer Certificate.
     - For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714) on the Lookout website.
 
-- **Enable Azure AD authentication for Lookout for Work iOS app**
+    - **Enable Azure AD authentication for Lookout for Work iOS app users.**
 
-  Enable Azure Active Directory authentication for the iOS users by doing the following:
+        1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
 
-    1. Go to the [Azure portal](https://portal.azure.com), sign in with your credentials, then navigate to the application page.
+        2. Add the **Lookout for Work iOS app** as a **native client application**.
 
-    2. Add the **Lookout for Work iOS app** as a **native client application**.
+        3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
 
-    3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
+        4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URL encoded version of your original redirect URI.
 
-    4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URL encoded version of your original redirect URI.
+        5.  Add **Delegated Permissions** to your app.
 
-    5.  Add **Delegated Permissions** to your app.
+        > [!NOTE] 
+        > See [configure a native client application with Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) for more details.
 
-    > [!NOTE] 
-    > See [configure a native client application with Azure AD](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application) for more details.
+     - **Add the Lookout for Work ipa file.**
 
- - **Add the Lookout for Work ipa file**
-
-    - Upload the re-signed .ipa file as described in the [Add iOS LOB apps with Intune](lob-apps-ios.md) topic. You also need to set the minimum OS version to iOS 8.0 or later.
+        - Upload the re-signed .ipa file as described in the [Add iOS LOB apps with Intune](lob-apps-ios.md) topic. You also need to set the minimum OS version to iOS 8.0 or later.
 
 ### Configure Symantec Endpoint Protection Mobile apps
 
