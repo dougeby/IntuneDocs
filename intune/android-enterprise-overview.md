@@ -47,7 +47,7 @@ Intune supplies a range of built-in general settings that you can configure on A
 
 ## App publishing and distribution
 
-The Google Play for Work service is an integral part of Android enterprise app distribution and management. All apps deployed to Android work profile devices in the work profile come from Play for Work service. To manage and deploy apps in the Play Store, you log in to the Google Play website with your company's administrator credentials for Google management. You can approve apps for Android enterprise deployment to have them appear in devices' work profiles. These apps then sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line-of-business apps must be configured in the Android app publishing console to restrict access to your organization.
+The Google Play for Work service is an integral part of Android enterprise app distribution and management. All apps deployed to Android work profile devices in the work profile come from Play for Work service. To manage and deploy apps in the Play Store, you sign in to the Google Play website with your company's administrator credentials for Google management. You can approve apps for Android enterprise deployment to have them appear in devices' work profiles. These apps then sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line-of-business apps must be configured in the Android app publishing console to restrict access to your organization.
 
 Apps can be installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play for Work store on their device. For more information, see [Assign apps to Android work profile devices with Intune](apps-add-android-for-work.md).
 
@@ -59,9 +59,9 @@ Android enterprise provides infrastructure for deploying app configuration value
 
 Android enterprise doesn’t provide a default email app or native email profile object like that which is provided by iOS. Instead, email configurations can be set by applying app configuration settings to email apps that support them. Gmail and Nine Work are two Exchange ActiveSync (EAS) client apps in the Play Store that support configuration with Android enterprise app configuration.
 
-Intune provides configuration templates for Gmail and Nine Work apps when managed as work apps. Other email apps that supports app configuration profiles can be configured with mobile app configuration policies.
+Intune provides configuration templates for Gmail and Nine Work apps when managed as work apps. Other email apps that support app configuration profiles can be configured with mobile app configuration policies.
 
-If you are using Exchange ActiveSync conditional access for an Android work profile devices, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
+If you are using Exchange ActiveSync conditional access for an Android work profile device, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
 
 ## App protection policies
 
@@ -73,7 +73,7 @@ VPN support is similar to Android VPN profiles. The same VPN providers and basic
 
 -  **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android enterprise VPN settings](vpn-settings-android.md#android-work-profile-device-vpn-settings).
 
--  **App-specific VPN** – If a VPN provider supports configuration for app-specific VPN and provides the capability to configure per-app VPN via the Android enterprise app configuration profile, then a app-specific VPN can be configured in Intune. Check with the VPN provider to see if they support this capability. For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
+-  **App-specific VPN** – If a VPN provider supports configuration for app-specific VPN and provides the capability to configure per-app VPN via the Android enterprise app configuration profile, then an app-specific VPN can be configured in Intune. Check with the VPN provider to see if they support this capability. For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
 
 ## Certificate profiles
 

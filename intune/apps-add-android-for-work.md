@@ -62,7 +62,7 @@ Make sure you have configured Intune and Android work profiles to work together 
 
     The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
 
-## Sync an Managed Google Play app with Intune
+## Sync a Managed Google Play app with Intune
 
 If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Mobile apps** workload, force an immediate sync as follows:
 
