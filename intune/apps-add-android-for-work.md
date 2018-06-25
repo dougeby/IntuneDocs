@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android enterprise is a program for Android work profile devices and kiosk devices. For Android work profile devices, Android enterprise is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android enterprise provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android work profile devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. All apps you install on Android work profile devices come from the Managed Google Play store. How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
+Android enterprise is a program for Android work profile devices and kiosk devices. For Android work profile devices, Android enterprise is a set of features and services that separate personal apps and data from wrok apps and data. Android enterprise provides additional management options and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android work profile devices to make sure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. All apps you install on Android work profile devices come from the Managed Google Play store. How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 
 Additionally, if you have created your own line-of-business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.
@@ -80,13 +80,13 @@ When the app is displayed in the **App licenses** node of the **Mobile apps** wo
 After you assign the app, it is installed on the devices that you've targeted. The user of the device is not asked to approve the installation.
 
 ## Manage Android enterprise app permissions
-Android enterprise requires you to approve apps in the managed Google Play web console before you sync them with Intune and assign them to your users. Because Android enterprise allows you to silently and automatically push the apps to users' devices, you must accept the app permissions on behalf of all your users. Users do not see any app permissions when they install the apps, so it's important that you read and understand the permissions.
+Android enterprise requires you to approve apps in the managed Google Play web console before you sync them with Intune and assign them to your users. Because Android enterprise allows you to silently and automatically push the apps to users' devices, you must accept the app permissions on behalf of all your users. Users don't see any app permissions when they install the apps, so it's important that you understand the permissions.
 
-When an app developer publishes a new version of the app with updated permissions, the permissions are not automatically accepted, even if you've approved the previous permissions. Devices that run the previous version of the app can still use it. However, the app is not upgraded until the new permissions are approved. Devices without the app installed do not install the app until you approve the app's new permissions.
+When an app developer updates permissions with a new version of the app, the permissions are not automatically accepted even if you approved the previous permissions. Devices that run the previous version of the app can still use it. However, the app is not upgraded until the new permissions are approved. Devices without the app installed do not install the app until you approve the app's new permissions.
 
 ### Update app permissions
 
-Periodically visit the managed Google Play console to check for new permissions. You can configure Google Play to send you or others an email when new permissions are required for an approved app. If you assign an app and observe that it isn't installed on devices, check for new permissions by doing the following:
+Periodically visit the managed Google Play console to check for new permissions. You can configure Google Play to send you or others an email when new permissions are required for an approved app. If you assign an app and observe that it isn't installed on devices, check for new permissions following these steps:
 
 1. Go to [Google Play](http://play.google.com/work).
 2. Sign in with the Google account that you used to publish and approve the apps.
@@ -104,7 +104,7 @@ Alternatively, you can configure Google Play to automatically reapprove app perm
 
     ![Make the app available only to your organization](media/restrict.png)
 
-    This operation ensures that the app is available only to your organization, and it is not available on the public Google Play store.
+    This operation makes the app available only to your organization. It won't be available on the public Google Play store.
 
     For more information about uploading and publishing Android apps, see [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469).
 4. After you've published your app, sign in to the [Managed Google Play store](https://play.google.com/work) with the same account that you used to configure the connection between Intune and Android enterprise.
