@@ -94,7 +94,7 @@ Replacing or revoking a token/QR code won't have any effect on devices that are 
 4. To replace the token, choose **Replace token**.
 5. To revoke the token, choose **Revoke token**.
 
-### Enroll the kiosk devices
+## Enroll the kiosk devices
 
 After you've created the enrollment profile and dynamic device group, you can enroll your kiosk devices. How you enroll your Android devices depends on the operating system.
 
@@ -105,11 +105,11 @@ After you've created the enrollment profile and dynamic device group, you can en
 | QR code | 7.0 |
 | Zero Touch | 8.0 |
 
-#### Enroll by using Near Field Communication (NFC)
+### Enroll by using Near Field Communication (NFC)
 
 For Android 5.1 and later devices that support NFC, you can provision your devices by creating a specially formatted NFC tag. You can use your own app or any NFC tag creator tool. For more information, see [Google's Android Management API documentation](https://developers.google.com/android/management/provision-device#nfc_method).
 
-#### Enroll by using a token
+### Enroll by using a token
 
 For Android 6 and later devices, you can use the token to enroll the device.
 
@@ -123,7 +123,7 @@ For Android 6 and later devices, you can use the token to enroll the device.
 8. On the **Enroll this device** screen, allow your device to scan the QR code or choose to enter the token manually.
 9. Follow the on-screen prompts to complete enrollment. 
 
-#### Enroll by using a QR code
+### Enroll by using a QR code
 
 On Android 7 and later devices, you can scan the QR code from the enrollment profile to enroll the device.
 
@@ -131,7 +131,7 @@ On Android 7 and later devices, you can scan the QR code from the enrollment pro
 2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.
 3. Use the QR reader to scan the enrollment profile QR code and then follow the on-screen prompts to enroll.
 
-#### Enroll by using Google Zero Touch
+### Enroll by using Google Zero Touch
 
 To use Google's Zero Touch system requires a device that supports it and is affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
 
