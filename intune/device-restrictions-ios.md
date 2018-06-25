@@ -103,7 +103,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
     -   **Required password type** - Specify the type of password that is required, such as numeric only or alphanumeric.
     -   **Number of non-alphanumeric characters in password** - Specify the number of symbol characters (like **#** or **@**) that must be included in the password.
     -   **Minimum password length** - Specify the minimum number of characters in the password.
-    -   **Number of sign-in failures before wiping device** - Specify the number of failed login attempts before this setting wipes the device.
+    -   **Number of sign-in failures before wiping device** - Specify the number of unique bad password attempts before this setting wipes the device.
     -   **Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must reenter their password.
     -   **Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the number of minutes before the device display is turned off.
     -   **Password expiration (days)** - Specify the number of days before the device password must be changed.

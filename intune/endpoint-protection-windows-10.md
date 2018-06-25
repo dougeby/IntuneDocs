@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -131,7 +131,11 @@ Supported on the following Windows 10 editions:
 
 **Settings**:
 
-- **Encrypt devices**: **Require** to prompt users to enable device encryption. Users are asked if another encryption provider is enabled. If Windows encryption is turned on while another encryption method is active, the device might become unstable. **Not configured** (default) doesn't require device encryption, and doesn't prompt the user to turn it on.
+- **Encrypt devices**: **Require** to prompt users to enable device encryption. Depending on the Windows edition and system configuration, users may be asked:  
+  - To confirm that encryption from another provider isn't enabled
+  - Be required to turn off Bitlocker Drive Encryption, and then turn Bitlocker back on
+    
+    If Windows encryption is turned on while another encryption method is active, the device might become unstable. 
 - **Encrypt storage card (mobile only)**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on. This setting only applies to Windows 10 mobile devices.
 
 ### BitLocker base settings
