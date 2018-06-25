@@ -2,12 +2,12 @@
 # required metadata
 
 title: See device profiles with Microsoft Intune - Azure | Microsoft Docs
-description: View and manage the device configuration profile details in Microsoft Intune, and see a graphical chart of the number of devices assigned to a profile, and see which devices have profiles assigned or deployed.
+description: View and manage the device configuration profile details in Microsoft Intune, see a graphical chart of the number of devices assigned to a profile, and see which devices have profiles assigned or deployed. Can also troubleshoot profiles that have conflict settings. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ Intune includes some features in the Azure portal to help monitor and manage you
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Device configuration** > **Profiles**.
 
-All of your existing profiles are listed, and include details such as the platform, and if the profile is assigned to any devices.
+All of your existing profiles are listed, includes details such as the platform, and shows if the profile is assigned to any devices.
 
 ## View details on a profile
 
@@ -73,6 +73,16 @@ After you create your device profile, Intune provides graphical charts. These ch
   - **Device status**: The devices assigned to the profile are listed, and it shows if the profile is successfully deployed. You can select a specific device to get even more details, including the installed apps.
   - **User status**: Lists the user names with devices impacted by this profile, and if the profile successfully deployed. You can select a specific user to get even more details.
   - **Per-setting status**: Filters the output by showing the individual settings within the profile, and shows if the setting is successfully applied.
+
+## Troubleshoot conflicts
+
+In **Devices** > **All devices**, you can see any settings that are causing a conflict. When there's a conflict, you are also shown all the configuration profiles that contain this setting. Administrators can use this feature to help troubleshoot, and fix any discrepancies with the profiles.
+
+1. In Intune, select **Devices** > **All Devices** > select an existing device in the list. An end user can get the device name from their Company Portal app.
+2. Select **Device configuration**. All configuration policies that apply to the device are listed.
+3. Select the policy. It shows you all the settings in that policy that apply to the device. If a device has a **Conflict** state, select that row. In the new window, you see all the profiles, and the profile names that have the setting causing the conflict.
+
+Now that you know the conflicting setting, and the policies that include that setting, it should be easier to resolve the conflict. 
 
 ## Next steps
 [Assign user and device profiles](device-profile-assign.md)  
