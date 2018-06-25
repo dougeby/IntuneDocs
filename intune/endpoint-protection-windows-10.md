@@ -379,8 +379,12 @@ Provide IT contact information to appear in the Windows Defender Security Center
 ## Local device security options
 
 Supported on the following Windows 10 editions:
-
-- NEED THIS INFO
+ 
+- Home
+- Professional
+- Business
+- Enterprise
+- Education
 
 Use these options to configure the local security settings on Windows 10 devices.
 
