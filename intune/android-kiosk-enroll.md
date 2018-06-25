@@ -138,9 +138,6 @@ To use Google's Zero Touch system requires a device that supports it and is affi
 
 1. Create a new Configuration in the Zero Touch console.
 2. Choose **Android Device Policy** from the EMM DPC dropdown.
-
-    ![Screenshot of Zero Touch screen](media/android-kiosk-enroll/zerotouch.png)
-
 3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile.
 
 ```
