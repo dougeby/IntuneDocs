@@ -74,7 +74,7 @@ After you create your device profile, Intune provides graphical charts. These ch
   - **User status**: Lists the user names with devices impacted by this profile, and if the profile successfully deployed. You can select a specific user to get even more details.
   - **Per-setting status**: Filters the output by showing the individual settings within the profile, and shows if the setting is successfully applied.
 
-## Troubleshoot conflicts
+## View conflicts
 
 In **Devices** > **All devices**, you can see any settings that are causing a conflict. When there's a conflict, you are also shown all the configuration profiles that contain this setting. Administrators can use this feature to help troubleshoot, and fix any discrepancies with the profiles.
 
