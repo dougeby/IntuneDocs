@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/11/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,11 @@ ms.custom: intune-classic
 
 # The early edition for Microsoft Intune - June 2018
 
-The **early edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
+> [!Note]
+> NDA notification: The following changes are under development for Intune. This information is shared under NDA on a very limited basis. Do not post any of this information on social media or public websites such as Twitter, UserVoice, Reddit, and so on. 
+
+
+The **early edition** provides a list of features, shared under NDA, that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not tweet, post on UserVoice, or otherwise share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
 This page is updated periodically. Check back for additional updates.
 
@@ -116,8 +120,8 @@ As the Intune admin, you will be able to deploy additional languages for Office 
 ### Revoke iOS VPP app license <!-- 1863797 -->
 As the admin, you'll be able to reclaim an iOS VPP app license assigned to a user or device. Uninstalling an iOS VPP app will also allow you to reclaim the app license. Then, you can choose to assign the app license to another user or device. For more information about iOS VPP app licenses, see [Manage iOS volume-purchased apps in Microsoft Intune](vpp-apps-ios.md).
 
-### New user experience update for the Company Portal website <!--2000968 -->
-We’re adding new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
+### Preview a new user experience update for the Company Portal website <!--2000968 -->
+We’re adding new features, based on feedback from customers, to the Company Portal website/iOS app catalog. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
 
 - Streamlined workflows across all device platforms
 - Improved device identification and enrollment flows
@@ -126,6 +130,17 @@ We’re adding new features, based on feedback from customers, to the Company Po
 - Ability to share direct links to apps
 - Improved performance for large app catalogs
 - Increased accessibility for all users
+
+The update is currently in preview. You can register to join the preview at http://aka.ms/webcpflighting
+
+### Updates to out-of-compliance messages in Company Portal app <!-- 1832222 -->
+We're revising the messages that device users see when a device is out-of-compliance. Messages will retain their original meanings but will be updated with friendlier language and less technical jargon. We're also refreshing links to documentation and remediation steps to keep them up-to-date.  
+
+The following before and after text is one example of the improvements in messaging you'll see:  
+
+Before: *This device hasn’t contacted the Intune service in the specified time period required by your IT admin. To resolve this issue, please open the company portal app on your device and click on the Check Compliance button.*  
+
+After: *Your device has not checked in with your organization in a while. To reestablish a connection, open the Company Portal app on your device and tap Check Settings for your device*.  
 
 ### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
 As the Microsoft Intune admin, you will have greater ability to edit your Office 365 Pro Plus app deployments. In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  
@@ -136,13 +151,14 @@ When uploading corporate IDs, Intune will provide a list of any duplicates and g
 ### Manually add corporate device identifiers <!-- 2203803 -->
 You'll be able to manually add corporate device IDs. Choose **Device enrollment** > **Corporate Device Identifiers** > **Add**.
 
-### New status for devices in device configuration <!-- 2308882 -->
-In **Device configuration** > **Overview**, the following new states will be added:
+### New status for devices in device compliance <!-- 2308882 -->
+In **Device compliance** > **Policies** > select a policy > **Overview**, the following new states will be added:
 - succeeded
 - error
 - conflict
 - pending
 - not-applicable
+
 An image that shows the device count of a different platform is also shown. For example, if you're looking at an iOS profile, the new tile shows the count of non-iOS devices that are also assigned to this profile. 
 
 ### Device compliance supports 3rd party anti-virus solutions <!-- 2325484 -->

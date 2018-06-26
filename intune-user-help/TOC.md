@@ -135,6 +135,7 @@
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
+### [Remotely lock devices from your Windows 10 device](remote-lock-your-device-cp-app.md) 
 
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
 ### [Resolve access point restrictions](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [I need to enable UAC](you-need-to-enable-uac-windows.md)
 #### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
-## [Remotely lock device from Company Portal app for Windows](remote-lock-your-device-cp-app.md) 
+
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
 ### [Rename your device](rename-your-device-cpwebsite.md)
