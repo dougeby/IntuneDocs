@@ -51,7 +51,7 @@ As an Intune admin, you can create and import a comma-separated value (.csv) fil
 [Learn how to find an Apple device serial number](https://support.apple.com/HT204308).<br>
 [Learn how to find your Android device serial number](https://support.google.com/store/answer/3333000).
 
-## Add corporate identifiers
+## Add corporate identifiers by using a .csv file
 To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI or serial numbers in the left column, and the details in the right column. Only one type of ID, IMEI or serial number, can be imported in a single .csv file. Details are limited to 128 characters and are for administrative use only. Details aren't displayed on the device. The current limit is 5,000 rows per .csv file.
 
 **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file.
@@ -86,7 +86,7 @@ This .csv file when viewed in a text editor appears as:
 
 4. If the .csv file contains corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
 
-### Manually enter corporate identifiers
+## Manually enter corporate identifiers
 
 1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers** > **Add** > **Enter manually**.
 
@@ -100,7 +100,7 @@ You can click **Refresh** to see new device identifiers.
 
 Imported devices are not necessarily enrolled. Devices can have a state of either **Enrolled** or **Not contacted**. **Not contacted** means that the device has never communicated in with the Intune service.
 
-### Delete corporate identifiers
+## Delete corporate identifiers
 
 1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**.
 2. Select the device identifiers you want to delete, and choose **Delete**.
@@ -108,7 +108,7 @@ Imported devices are not necessarily enrolled. Devices can have a state of eithe
 
 Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices**, select the device, choose **Properties**, and change **Device ownership**.
 
-### IMEI specifications
+## IMEI specifications
 For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 
 ## Change device ownership
