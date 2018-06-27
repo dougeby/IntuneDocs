@@ -1,11 +1,11 @@
 ---
 title: Use SCEP certificates with Microsoft Intune - Azure | Microsoft Docs
-description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. 
+description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. Also, see the different event IDs and their descriptions, and the diagnostic codes for the Intune connector service.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,12 +39,16 @@ This article shows how to configure your infrastructure, then create and assign 
 - **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
 The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector. 
+- **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**NDESConnectorSetup.exe**). Then you can run **NDESConnectorSetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector.
+
+  - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS is not required, but you can issue and revoke certificates when it's enabled.
+
 - **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
-  -  Allows devices to receive certificates using an Internet connection.
-  -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
+  - Allows devices to receive certificates using an Internet connection.
+  - Is a security recommendation when devices connect through the Internet to receive and renew certificates.
 
 #### Additional
+
 - The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
 - The WAP server must have an SSL certificate that matches the name being published to external clients, and trust the SSL certificate used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
 
@@ -74,17 +78,7 @@ We recommend publishing the NDES server through a proxy, such as the [Azure AD a
 |**NDES service account**|Enter a domain user account to use as the NDES Service account.|
 
 ## Configure your infrastructure
-Before you can configure certificate profiles, complete the following tasks. These tasks require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
-
-**Step 1**: Create an NDES service account
-
-**Step 2**: Configure certificate templates on the certification authority
-
-**Step 3**: Configure prerequisites on the NDES server
-
-**Step 4**: Configure NDES for use with Intune
-
-**Step 5**: Enable, install, and configure the Intune Certificate Connector
+Before you can configure certificate profiles, complete the following steps. These steps require knowledge of Windows Server 2012 R2 and later, and Active Directory Certificate Services (ADCS):
 
 #### Step 1 - Create an NDES service account
 
@@ -229,7 +223,6 @@ In this task, you:
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
 
-
 4. In IIS manager, select **Default Web Site** > **Request Filtering** > **Edit Feature Setting**. Change the **Maximum URL length** and **Maximum query string** to *65534*, as shown:
 
     ![IIS max URL and query length](./media/SCEP_IIS_max_URL.png)
@@ -294,13 +287,17 @@ In this task, you:
 - Download, install, and configure the Certificate Connector on the server hosting the Network Device Enrollment Service (NDES) role a server in your environment. To increase the scale of the NDES implementation in your organization, you can install multiple NDES servers with a Microsoft Intune Certificate Connector on each NDES server.
 
 ##### Download, install, and configure the certificate connector
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Device configuration**, and then select **Certification Authority**.
 4. Select **Add**, and **Download the connector file**. Save the download to a location where you can access it from the server where you're going to install it.
-5. After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on the server hosting the Network Device Enrollment Service (NDES) role. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
+5. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
+
+    1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
+    2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
 
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
@@ -308,7 +305,7 @@ In this task, you:
 6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
-    
+
     > [!IMPORTANT]
     > The Intune Certificate Connector can't be enrolled on a device with Internet Explorer Enhanced Security Configuration enabled. To use the Intune Certificate Connector, [disable IE Enhanced security configuration](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
@@ -338,10 +335,13 @@ To validate that the service is running, open a browser, and enter the following
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> TLS 1.2 support is included with the NDES Certificate connector. So if the server with NDES Certificate connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
+
 ## Create a SCEP certificate profile
 
 1. In the Azure portal, open Microsoft Intune.
-2. Select **Device configuration**, select **Profiles**, and select **Create profile**.
+2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the SCEP certificate profile.
 4. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can select one of the following platforms for device restriction settings:
    - **Android**
@@ -409,5 +409,60 @@ Consider the following before you assign certificate profiles to groups:
 
     > [!NOTE]
     > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
-    
-For information about how to assign profiles, see [How to assign device profiles](device-profile-assign.md).
+
+For information about how to assign profiles, see [assign device profiles](device-profile-assign.md).
+
+## Intune Connector setup verification and troubleshooting
+
+To troubleshoot issues and verify the Intune Connector setup, see [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript)
+
+## Intune Connector events and diagnostic codes
+
+Starting with version 6.1806.x.x, the Intune Connector Service logs events in the **Event Viewer** (**Applications and Services Logs** > **Microsoft Intune Connector**). Use these events to help troubleshoot potential issues in the configuration of the Intune Connector. These events log successes and failures of an operation, and also contain diagnostic codes with messages to help the IT admin troubleshoot.
+
+### Event IDs and descriptions
+
+> [!NOTE]
+> For details on the Related Diagnostic Codes for each event, use the **Diagnostic codes** table (in this article).
+
+| Event ID      | Event Name    | Event Description | Related Diagnostic Codes |
+| ------------- | ------------- | -------------     | -------------            |
+| 10010 | StartedConnectorService  | Connector service started | 0x00000000, 0x0FFFFFFF |
+| 10020 | StoppedConnectorService  | Connector service stopped | 0x00000000, 0x0FFFFFFF |
+| 10100 | CertificateRenewal_Success  | Connector enrollment certificate successfully renewed | 0x00000000, 0x0FFFFFFF |
+| 10102 | CertificateRenewal_Failure  | Connector enrollment certificate failed to renew. Reinstall the connector. | 0x00000000, 0x00000405, 0x0FFFFFFF |
+| 10302 | RetrieveCertificate_Error  | Failed to retrieve the connector enrollment certificate from the registry. Review event details for the certificate thumbprint related to this event. | 0x00000000, 0x00000404, 0x0FFFFFFF |
+| 10301 | RetrieveCertificate_Warning  | Check diagnostic information in event details. | 0x00000000, 0x00000403, 0x0FFFFFFF |
+| 20100 | PkcsCertIssue_Success  | Successfully issued a PKCS certificate. Review event details for the device ID, user ID, CA name, certificate template name, and certificate thumbprint related to this event. | 0x00000000, 0x0FFFFFFF |
+| 20102 | PkcsCertIssue_Failure  | Failed to issue a PKCS certificate. Review event details for the device ID, user ID, CA name, certificate template name, and certificate thumbprint related to this event. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
+| 20200 | RevokeCert_Success  | Successfully revoked the certificate. Review event details for the device ID, user ID, CA name, and certificate serial number related to this event. | 0x00000000, 0x0FFFFFFF |
+| 20202 | RevokeCert_Failure | Failed to revoke the certificate. Review event details for the device ID, user ID, CA name, and certificate serial number related to this event. For additional information, see the NDES SVC Logs.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
+| 20300 | Upload_Success | Successfully uploaded the certificate’s request or revocation data. Review the event details for the upload details. | 0x00000000, 0x0FFFFFFF |
+| 20302 | Upload_Failure | Failed to upload the certificate’s request or revocation data. Review the event details > Upload State to determine the point of failure.| 0x00000000, 0x0FFFFFFF |
+| 20400 | Download_Success | Successfully downloaded request to sign a certificate, download a client certificate, or revoke a certificate. Review the event details for the download details.  | 0x00000000, 0x0FFFFFFF |
+| 20402 | Download_Failure | Failed to download request to sign a certificate, download client certificate, or revoke a certificate. Review the event details for the download details. | 0x00000000, 0x0FFFFFFF |
+| 20500 | CRPVerifyMetric_Success  | Certificate Registration Point successfully verified a client challenge | 0x00000000, 0x0FFFFFFF |
+| 20501 | CRPVerifyMetric_Warning  | Certificate Registration Point completed but rejected the request. See diagnostic code and message for more details. | 0x00000000, 0x00000411, 0x0FFFFFFF |
+| 20502 | CRPVerifyMetric_Failure  | Certificate Registration Point failed to verify a client challenge. See diagnostic code and message for more details. See event message details for the Device ID corresponding to the challenge. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
+| 20600 | CRPNotifyMetric_Success  | Certificate Registration Point successfully finished notify process and has sent the certificate to the client device. | 0x00000000, 0x0FFFFFFF |
+| 20602 | CRPNotifyMetric_Failure  | Certificate Registration Point failed to finish notify process. See the event message details for information on the request. Verify connection between the NDES server and the CA. | 0x00000000, 0x0FFFFFFF |
+
+### Diagnostic codes
+
+| Diagnostic Code | Diagnostic Name | Diagnostic Message |
+| -------------   | -------------   | -------------      |
+| 0x00000000 | Success  | Success |
+| 0x00000400 | PKCS_Issue_CA_Unavailable  | Certification authority is not valid or is unreachable. Verify that the certification authority is available, and that your server can communicate with it. |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec Client Auth certificate was not found in the local cert store. See the article [Install the Symantec registration authorization certificate](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) for more information.  |
+| 0x00000402 | RevokeCert_AccessDenied  | The specified account does not have permissions to revoke a certificate from CA. See CA Name field in the event message details to determine the issuing CA.  |
+| 0x00000403 | CertThumbprint_NotFound  | Could not find a certificate that matched your input. Enroll the certificate connector and try again. |
+| 0x00000404 | Certificate_NotFound  | Could not find a certificate that matched the input supplied. Re-enroll the certificate connector and try again. |
+| 0x00000405 | Certificate_Expired  | A certificate expired. Re-enroll the certificate connector to renew the certificate and try again. |
+| 0x00000408 | CRPSCEPCert_NotFound  | CRP Encryption certificate could not be found. Verify that NDES and the Intune Connector is setup correctly. |
+| 0x00000409 | CRPSCEPSigningCert_NotFound  | Signing certificate could not be retrieved. Verify the Intune Connector Service is configured correctly, and the Intune Connector Service is running. Verify also that the certificate download events were successful. |
+| 0x00000410 | CRPSCEPDeserialize_Failed  | Failed to deserialize SCEP challenge request. Verify the NDES and Intune Connector is setup correctly. |
+| 0x00000411 | CRPSCEPChallenge_Expired  | Request denied due to expired certificate challenge. The client device can retry after obtaining a new challenge from the management server. |
+| 0x0FFFFFFFF | Unknown_Error  | We are unable to complete your request because a server-side error occurred. Please try again. |
+
+## Next steps
+[Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md).

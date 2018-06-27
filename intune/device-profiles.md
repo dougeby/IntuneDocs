@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 05/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Microsoft Intune includes settings and features that you can enable or disable o
 - A WiFi profile that gives different devices access to your corporate WiFi
 - A VPN profile that gives different devices access to your VPN server within your corporate network
 
-This topic provides an overview of the different profiles you can create for your devices. Use these profiles to allow and or prevent some features on the devices.
+This article provides an overview of the different profiles you can create for your devices. Use these profiles to allow and or prevent some features on the devices.
 
 ## Before you begin
 To see the available features, open the [Azure portal](https://portal.azure.com), and open your Intune resource. 
@@ -52,18 +52,18 @@ To see the available features, open the [Azure portal](https://portal.azure.com)
 
 [Create device profiles](device-profile-create.md) provides step-by-step guidance to create a profile. 
 
-## Device features profile
+## Device features - iOS and macOS
 
 [Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and shared device configurations.
 
-This feature supports:  
+This feature supports:
 - iOS 
 - macOS
 
-## Device restrictions profile
+## Device restrictions
 [Device restrictions](device-restrictions-configure.md) controls security, hardware, data sharing, and more settings on the devices. For example, create a device restriction profile that prevents iOS device users from using the device camera. 
 
-This feature supports: 
+This feature supports:
 
 - Android
 - iOS
@@ -71,7 +71,22 @@ This feature supports:
 - Windows 10
 - Windows 10 Team
 
-## Email profile
+## Endpoint protection
+[Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) configures BitLocker and Windows Defender settings for Windows 10 devices.
+
+To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
+This feature supports:
+- Windows 10 and later
+
+## Kiosk
+
+[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other features on your kiosk, including a start menu and a web browser.
+
+This feature supports:
+- Windows 10 and later
+
+## Email
 [Email settings](email-settings-configure.md) profile creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help ensure consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
 
 This feature supports: 
@@ -81,20 +96,10 @@ This feature supports:
 - Windows Phone 8.1
 - Windows 10
 
-## Wi-Fi profile
-[Wi-Fi settings](wi-fi-settings-configure.md) assigns wireless network settings to users and devices. When you assign a WiFi profile, users get access to your corporate WiFi without having to configure it themselves. 
-
-This feature supports: 
-
-- Android
-- iOS
-- macOS
-- Windows 8.1 (import only)
-
-## VPN profile
+## VPN
 [VPN settings](vpn-settings-configure.md) assigns VPN profiles to users and devices in your organization, so they can easily and securely connect to the network. 
 
-Virtual private networks (VPNs) give users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. 
+Virtual private networks (VPNs) give users secure remote access to your company network. Devices use a VPN connection profile to start a connection with your VPN server. 
 
 This feature supports: 
 
@@ -105,10 +110,34 @@ This feature supports:
 - Windows 8.1
 - Windows 10
 
-## Education profile
-[Education settings](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
+## Wi-Fi
+[Wi-Fi settings](wi-fi-settings-configure.md) assigns wireless network settings to users and devices. When you assign a WiFi profile, users get access to your corporate WiFi without having to configure it themselves. 
 
-## Certificates profile
+This feature supports: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (import only)
+
+## Education
+[Education settings - Windows 10](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
+
+[Education settings - iOS](education-settings-configure-ios-shared.md) uses the iOS Classroom app to guide learning, and control student devices in the classroom. You can configure iPad devices to multiple students can share a single device.
+
+## Edition upgrade
+[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
+
+This feature supports: 
+- Windows 10 and later
+
+## Update policies
+[iOS update policies](software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
+
+This feature supports:
+- iOS
+
+## Certificates
 [Certificates](certificates-configure.md) configures trusted, SCEP, and PKCS certificates that can be assigned to devices, and used to authenticate WiFi, VPN, and email profiles.
 
 This feature supports: 
@@ -119,22 +148,11 @@ This feature supports:
 - Windows 8.1
 - Windows 10
 
-## Edition upgrade profile
-[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
-
-This feature supports: Windows 10 only
-
-## Endpoint protection profile
-[Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) configures BitLocker and Windows Defender settings for Windows 10 devices.
-
-To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
-
-This feature supports: Windows 10 only
-
 ## Windows Information Protection profile
 [Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps to protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. It does this without requiring changes to your environment or other apps.
 
-This feature supports: Windows 10 only
+This feature supports:
+- Windows 10 and later
 
 ## Custom profile
 [Custom settings](custom-settings-configure.md) includes the ability to assign device settings that are not built-into Intune. For example, on Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator. 

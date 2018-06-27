@@ -32,10 +32,10 @@ You can reset the passcode for Windows devices. The reset passcode feature uses 
 
 ## Supported platforms
 
-- Windows 10 Creators Update and later (Azure AD joined)
+- Windows 10 Mobile running Creators Update and later (Azure AD joined).
 
 The following platforms are **not** supported:
-- Windows Phone
+- Windows
 - iOS
 - macOS
 - Android
