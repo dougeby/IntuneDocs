@@ -103,7 +103,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 ## Next steps
 
-- [Integrate Pradeo with Intune](pradeo_mtd-connector-integration.md)
+- [Integrate Pradeo with Intune](pradeo-mtd-connector-integration.md)
 
 - [Set up Pradeo apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
