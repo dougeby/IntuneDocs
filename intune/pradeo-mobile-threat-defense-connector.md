@@ -87,9 +87,9 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 ## Supported platforms
 
--   **Android 4.1 and later**
+-   **Android 4.0.3 and later**
 
--   **iOS 8 and later**
+-   **iOS 7 and later**
 
 ## Prerequisites
 
