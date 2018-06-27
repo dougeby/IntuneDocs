@@ -44,7 +44,7 @@ There are two types of actions:
 - To set up actions for non-compliance, you need at least one device compliance policy. To create a device compliance policy, see the following platforms:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android work profiles](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
-description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
+description: Remove company data on a device or do a factory reset on an Android, Android work profile, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -114,9 +114,9 @@ The following tables describe what data is removed, and the effect of the **Remo
 |Azure AD unjoin|The Azure AD record is removed.|The Azure AD record is removed.|
 |Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.|Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 
-### Android for Work
+### Android work profile
 
-Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android for Work.
+Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
 
 
 ### macOS
@@ -156,6 +156,15 @@ If you want to remove devices from the Intune portal, you can delete them from t
 
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
+
+### Automatically delete devices with cleanup rules
+You can configure Intune to automatically delete devices that appear to be inactive, stale, or unresponsive. These cleanup rules continuously monitor your device inventory so that your device records stay current. Devices deleted in this way are removed from Intune management.
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **Device cleanup rules** > **Yes**.
+3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 90 and 270.
+4. Choose **Save**.
+
+
 
 ## Delete devices from the Azure Active Directory portal
 
