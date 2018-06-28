@@ -41,10 +41,9 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 - **Wi-Fi name (SSID)**: Enter the correct service set identifier name of the existing wireless network. When users connect, users see the **Connection name** on the devices.
 - **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
 - **Connect automatically when in range​**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
+  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-​  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
-
-  For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
 ​
 - **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
@@ -55,7 +54,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
-  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter **http://proxy.contoso.com/proxy.pac**.
+  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
 - **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Validates against the FIPS 140-2 standard. The FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems. This standard helps protect sensitive but unclassified information stored digitally.
 
@@ -64,10 +63,9 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 - **Wi-Fi name (SSID)**: Enter the correct service set identifier name of the existing wireless network. When users connect, users see the **Connection name** on the devices.
 - **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
 - **Connect automatically when in range​**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
+  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-​  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
-
-  For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
 ​
 - **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
@@ -94,7 +92,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
-  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter **http://proxy.contoso.com/proxy.pac**.
+  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
 ## Use an imported settings file
 
