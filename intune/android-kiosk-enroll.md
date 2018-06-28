@@ -35,7 +35,7 @@ Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU)
 
 Intune helps you deploy apps and settings to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
-Devices that you manage in this way are enrolled in Intune without a user account. They have no association with any end user. They aren't intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
+Devices that you manage in this way are enrolled in Intune without a user account and aren't associated with any end user. They're not intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
 
 ## Device requirements
 
@@ -48,7 +48,7 @@ Devices must meet these requirements to be managed as an Android enterprise kios
 
 To set up Android kiosk management, follow these steps:
 
-1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
+1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](mdm-authority-set.md) for instructions. You set this item only once, when you're first setting up Intune for mobile device management.
 2. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
 3. [Create an enrollment profile.](#create-an-enrollment-profile)
 4. [Create a device group](#create-a-device-group).
@@ -56,7 +56,7 @@ To set up Android kiosk management, follow these steps:
 
 ### Create an enrollment profile
 
-You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. You can use either of these (depending on the Android OS version of the device) to enroll the kiosk device.
+You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS adn version of the device, you can use either the token or QR code to [enroll the kiosk device](#enroll-the-kiosk-devices).
 
 1. Go to the [Intune portal]() and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
@@ -86,7 +86,9 @@ You can target apps and policies to either assigned or dynamic device groups. Yo
 You can replace or remove tokens and QR codes.
 
 - **Replace token**: You can generate a new token/QR code when one nears expiration by using Replace Token.
-- **Revoke token**: You can immediately expire the token/QR code. From this point on, the token/QR code is no longer usable. You might use this option if you inadvertently share the token/QR code with an unauthorized party or if you complete all enrollments and no longer need the token/QR code.
+- **Revoke token**: You can immediately expire the token/QR code. From this point on, the token/QR code is no longer usable. You might use this option if you:
+    - accidentally share the token/QR code with an unauthorized party
+    - complete all enrollments and no longer need the token/QR code
 
 Replacing or revoking a token/QR code won't have any effect on devices that are already enrolled.
 
@@ -135,12 +137,12 @@ On Android 7 and later devices, you can scan the QR code from the enrollment pro
 
 ### Enroll by using Google Zero Touch
 
-To use Google's Zero Touch system requires a device that supports it and is affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
+To use Google's Zero Touch system, the device must support it and be affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
 
 
 1. Create a new Configuration in the Zero Touch console.
 2. Choose **Microsoft Intune** from the EMM DPC dropdown.
-3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile. Be sure to surround hte enrollment token with double quotes.
+3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile. Be sure to surround the enrollment token with double quotes.
 
 ```
 { 
