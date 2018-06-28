@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll Android kiosk devices in Intune
+title: Enroll Android enterprise kiosk devices in Intune
 titlesuffix: "Microsoft Intune"
-description: Learn how to enroll Android kiosk devices in Intune.
+description: Learn how to enroll Android enterprise kiosk devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -27,32 +27,32 @@ ms.custom: intune-azure
 
 ---
 
-# Set up enrollment of Android kiosk devices
+# Set up enrollment of Android enterprise kiosk devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps. It also prevents users from adding other apps or taking other actions on the device.
+Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
 
-Intune helps you deploy apps and company resources to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and settings to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Devices that you manage in this way are enrolled in Intune without a user account. They have no association with any end user. They aren't intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
 
-## Prerequisites
+## Device requirements
 
-To prepare to manage mobile devices, you must set the mobile device management (MDM) authority to **Microsoft Intune**. See [Set the MDM authority](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
+Devices must meet these requirements to be managed as an Android enterprise kiosk device:
 
-Android OS version 6.0 and above.
-
-Devices must run a distribution of Android that has Google Mobile Services (GMS) connectivity. Devices must have GMS available and must be able to connect to GMS.
+- Android OS version 5.1 and above.
+- Devices must run a distribution of Android that has Google Mobile Services (GMS) connectivity. Devices must have GMS available and must be able to connect to GMS.
 
 ## Set up Android kiosk management
 
 To set up Android kiosk management, follow these steps:
 
-1. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
-2. [Create an enrollment profile.](#create-an-enrollment-profile)
-3. [Create a device group](#create-a-device-group).
-4. [Enroll the kiosk devices](#enroll-the-kiosk-devices).
+1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
+2. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
+3. [Create an enrollment profile.](#create-an-enrollment-profile)
+4. [Create a device group](#create-a-device-group).
+5. [Enroll the kiosk devices](#enroll-the-kiosk-devices).
 
 ### Create an enrollment profile
 
@@ -65,6 +65,8 @@ You must create an enrollment profile so that you can enroll your kiosk devices.
 3. Choose **Create** to save the profile.
 
 ### Create a device group
+
+You can target apps and policies to either assigned or dynamic device groups. You can configure dynamic AAD device groups to automatically populate devices that are enrolled with a particular enrollment profile by following these steps:
 
 1. Go to the [Intune portal]() and choose **Groups** > **All groups** > **New group**.
 2. In the **Group** blade, fill out the required fields as follows:
@@ -137,8 +139,8 @@ To use Google's Zero Touch system requires a device that supports it and is affi
 
 
 1. Create a new Configuration in the Zero Touch console.
-2. Choose **Android Device Policy** from the EMM DPC dropdown.
-3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile.
+2. Choose **Microsoft Intune** from the EMM DPC dropdown.
+3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile. Be sure to surround hte enrollment token with double quotes.
 
 ```
 { 
@@ -156,6 +158,6 @@ To use Google's Zero Touch system requires a device that supports it and is affi
 4. Choose **Apply**.
 
 
-## Next steps for Android work profiles
+## Next steps
 - [Deploy Android kiosk apps](apps-deploy.md)
 - [Add Android kiosk configuration policies](device-profiles.md)
