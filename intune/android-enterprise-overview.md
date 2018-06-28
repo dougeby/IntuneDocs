@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Manage Android work profile devices with Intune
 
-Android enterprise is a set of features and services that separate personal apps and data from a work apps and data. Android enterprise provides additional management capabilities and privacy when people use their Android devices for work. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device.
+Android enterprise is a set of features and services that separate personal apps and data from a work apps and data. Android enterprise provides additional management capabilities and privacy when people use their Android devices for work. 
 
 ## Supported devices
 

@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune helps you deploy apps and company resources to Android work profile devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and company resources to Android work profile devices to ensure work and personal information is separate. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 To set up Android work profile management, follow these steps:
 

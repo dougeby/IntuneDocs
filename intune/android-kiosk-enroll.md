@@ -33,7 +33,7 @@ ms.custom: intune-azure
 
 Android supports kiosk-style devices with its Corporate-Owned, Single-Use (COSU) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps. It also prevents users from adding other apps or taking other actions on the device.
 
-Intune helps you deploy apps and company resources to Android kiosk devices. When successfully deployed, apps and the data they access remain exclusively within the Android enterprise environment on the device. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and company resources to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Devices that you manage in this way are enrolled in Intune without a user account. They have no association with any end user. They aren't intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
 
@@ -103,7 +103,7 @@ After you've created the enrollment profile and dynamic device group, you can en
 | Near Field Communication | 5.1 |
 | Token entry | 6.0 |
 | QR code | 7.0 |
-| Zero Touch | 8.0 |
+| Zero Touch | 8.0, on participating manufacturers |
 
 ### Enroll by using Near Field Communication (NFC)
 
@@ -157,5 +157,5 @@ To use Google's Zero Touch system requires a device that supports it and is affi
 
 
 ## Next steps for Android work profiles
-- [Deploy Android kiosk apps](android-kiosk-enroll.md)
+- [Deploy Android kiosk apps](apps-deploy.md)
 - [Add Android kiosk configuration policies](device-profiles.md)
