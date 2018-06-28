@@ -66,14 +66,6 @@ This update also includes:
 
 Intune will support highly managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device.
 
-### macOS support for Apple Device Enrollment Program <!-- 747651 -->
-
-Intune will support enrolling macOS devices into the Apple Device Enrollment Program (DEP). To do so:
-
-1. At deploy.apple.com, assign macOS serial numbers to an MDM server.
-2. Import the serial numbers into Intune.
-3. Create an enrollment program profile specific to macOS devices.
-
 ### Google name changes for Android for Work and Play for Work <!--842873 -->
 Intune will update "Android for Work" terminology to reflect Google branding changes.  The terms "Android for Work" and "Play for Work" will no longer be used. Different terminology will be used depending on the context:
 
