@@ -35,9 +35,6 @@ The **early edition** provides a list of features, shared under NDA, that are co
 
 This page is updated periodically. Check back for additional updates.
 
-> [!Note]
->The following changes are under development for Intune. For more information about new hybrid features, check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
-
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
@@ -52,15 +49,6 @@ This page is updated periodically. Check back for additional updates.
 In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
 
 More on [device configuration profiles](device-profiles.md).
-
-### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
-
-When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates doesn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
-
-This update also includes:
-
-- The NDES Certificate connector requires .NET 4.5 Framework, which is automatically included with Windows Server 2016 and Windows Server 2012 R2. Currently, .NET 3.5 Framework is the minimum required version.
-- TLS 1.2 support is included with the NDES Certificate connector. So if the server with NDES Certificate connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
 
 ### Corporate-owned, single use (COSU) support for Android devices <!-- 1630973 -->
 
@@ -203,9 +191,6 @@ New rules will be available that let you automatically remove devices that haven
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
 Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
-
-### Company Portal enrollment improved <!-- 1874230-->
-Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
