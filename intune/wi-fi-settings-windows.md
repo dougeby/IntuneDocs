@@ -44,7 +44,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 ​  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
+  For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
 ​
 - **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
@@ -67,7 +67,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 ​  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
+  For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
 ​
 - **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
