@@ -427,7 +427,9 @@
         href: wi-fi-settings-ios.md
       - name: macOS
         href: wi-fi-settings-macos.md
-      - name: Windows 8.1 & Windows 10
+      - name: Windows 10
+        href: wi-fi-settings-windows.md
+      - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
     - name: Education
       items:
@@ -557,6 +559,11 @@
         items:
         - name: Zimperium and Intune integration
           href: zimperium-mtd-connector-integration.md
+      - name: Set up Pradeo
+        href: pradeo-mobile-threat-defense-connector.md
+        items:
+        - name: Pradeo and Intune integration
+          href: pradeo-mtd-connector-integration.md
       - name: Set up Intune for MTD
         items:
         - name: Add MTD apps
