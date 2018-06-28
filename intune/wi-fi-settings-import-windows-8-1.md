@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Import Wi-Fi settings for Windows 8.1 and later
-titleSuffix: Microsoft Intune
-description: How to import Wi-Fi settings from Windows into an Intune Wi-Fi profile.
+title: Import Wi-Fi settings for Windows devices in Microsoft Intune - Azure | Microsoft Docs
+description: Export Wi-Fi settings from a Windows device as an XML file using netsh wlan. Then, import this file in Intune to create a Wi-Fi profile for devices running Windows 8.1, Windows 10, and Windows Holographic for Business.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,11 +24,17 @@ ms.custom: intune-azure
 
 ---
 
-# Import Wi-Fi settings for Windows 8.1 and later devices in Microsoft Intune
+# Import Wi-Fi settings for Windows devices in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-For devices that run Windows 8.1, Windows 10 desktop or mobile, or Windows Holographic for Business, you can import a Wi-Fi configuration profile that was previously exported to a file.
+For devices that run Windows, you can import a Wi-Fi configuration profile that was previously exported to a file. For Windows 10 and later devices, you can [create a Wi-Fi profile](wi-fi-settings-windows.md) directly in Intune.
+
+Applies to:  
+- Windows 8.1 and later
+- Windows 10 and later
+- Windows 10 desktop or mobile
+- Windows Holographic for Business
 
 ## Export Wi-Fi settings from a Windows device
 
