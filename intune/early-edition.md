@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2018
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,18 +25,14 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - June 2018
+# The early edition for Microsoft Intune - July 2018
 
 > [!Note]
 > NDA notification: The following changes are under development for Intune. This information is shared under NDA on a very limited basis. Do not post any of this information on social media or public websites such as Twitter, UserVoice, Reddit, and so on. 
 
-
 The **early edition** provides a list of features, shared under NDA, that are coming in upcoming releases of Microsoft Intune. This information is provided on a limited basis and is subject to change. Do not tweet, post on UserVoice, or otherwise share this information outside of your company. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Reach out to your Microsoft product group contact if you have any questions or concerns.
 
 This page is updated periodically. Check back for additional updates.
-
-> [!Note]
->The following changes are under development for Intune. For more information about new hybrid features, check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 <!--
 ## What's coming to Intune in the Azure portal  
@@ -46,21 +42,90 @@ This page is updated periodically. Check back for additional updates.
  
 ## Intune in the Azure portal
 
+<!-- 1807 start -->
+
+### Reset device passcodes from Company Portal app for Windows 10 <!-- 2101282 --> 
+Your employees will soon be able to reset their device's PIN or passcode directly from the Company Portal app for Windows 10. This functionality will be available on both remote and local Intune-managed devices that support passcode resets. Depending on the type of device, a request made for a remote device will either remove the device's current passcode or create a temporary passcode. Users that request a reset for a local device will be redirected to the device's Settings app.
+
+### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
+A future update will include an S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
+
+- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
+- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
+- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
+- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
+- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
+
+Supported on: Windows, Windows Phone 10, macOS, iOS, Android
+
+### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
+You'll be able to use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you create or edit an enrollment profile, specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
+
+### Bulk delete devices on devices blade <!-- 1793693 -->
+You'll be able to delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
+
+### New Wi-Fi device configuration profile for Windows 10 and later <!-- 1879077 -->
+Currently, you can import and export Wi-Fi profiles using XML files. You'll be able to create a Wi-Fi device configuration profile directly in Intune, just like some other platforms.
+
+To create the profile, open **Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Wi-Fi**. 
+
+Applies to Windows 10 and later.
+
+###  Windows line-of-business (LOB) apps file extension rename <!-- 1884873 -->
+The file extensions for Windows LOB apps will be renamed from *.appx* and *.appxbundle* to *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+
+### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
+When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you currently download a configuration package, and add it to your configuration profile. In a future update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
+
+Applies to Windows 10 and later.
+
+### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
+The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) will be obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). The **Kiosk - Obsolete** feature will be grayed out, and the user interface can't be changed or updated. 
+
+To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
+
+Applies to Windows 10 and later, Windows Holographic for Business
+
+### APIs to use 3rd party certification authorities <!-- 2184013 -->
+There will be a Java API that enables third-party certificate authorities to integrate with Intune and SCEP. Then, users can add the SCEP certificate to a profile, and apply it to devices using MDM.
+
+Currently, Intune supports [SCEP requests using Active Directory Certificate Services](certificates-scep-configure.md).
+
+### Check for SCCM compliance <!-- 2192052 -->
+A future update will include a new System Center Configuration Manager (SCCM) compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). SCCM sends signals to Intune compliance. Using the Intune setting, you can require all SCCM signals to return "compliant".
+
+For example, you require all software updates to be installed on devices. In SCCM, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device will be non-compliant in Intune.
+
+Applies to Windows 10 and later
+
+### Alerts for expiring VPP token or Company Portal license running low <!-- 2237572 -->
+If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal during DEP enrollment, Intune will alert you when the VPP token is about to expire and when the licenses for the Company Portal are running low.
+
+### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
+A confirmation will be required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
+
+### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate" <!-- 2404851 -->
+By default, Android devices enrolled using Samsung Knox Mobile Enrollment will be marked as **corporate** under **Device Ownership**. You won't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
+
+### Toggle to show or not show the End Session button on a Kiosk browser <!-- 2455253 -->
+You'll be able to configure whether or not Kiosk browsers show the End Session button. You can see the control at **Device configuration** > **Kiosk (preview)** > **Kiosk Web Browser**. If turned on, when a user clicks the button, the app prompts for confirmation to end the session. When confirmed, the browser clears all browsing data and navigates back to the default URL.
+
+### Create an eSIM cellular configuration profile <!-- 2564077 -->
+In **Device configuration**, you'll be able to create an eSIM cellular profile. You can import a file that contains cellular activation codes provided by your mobile operator. You can then deploy these profiles to your eSIM LTE enabled Windows 10 devices, such as the Surface Pro LTE and other eSIM capable devices.
+
+Check to see if your [devices support eSIM profiles](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
+
+Applies to Windows 10 and later. 
+
+
+
+
 <!-- 1806 start -->
 
 ### See device configuration profiles in conflict <!-- 1556983 -->
 In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
 
 More on [device configuration profiles](device-profiles.md).
-
-### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
-
-When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates doesn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
-
-This update also includes:
-
-- The NDES Certificate connector requires .NET 4.5 Framework, which is automatically included with Windows Server 2016 and Windows Server 2012 R2. Currently, .NET 3.5 Framework is the minimum required version.
-- TLS 1.2 support is included with the NDES Certificate connector. So if the server with NDES Certificate connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
 
 ### Corporate-owned, single use (COSU) support for Android devices <!-- 1630973 -->
 
@@ -189,19 +254,6 @@ On end-user devices, the Intune client would take action based on a simple match
 ### Access actions for app protection policies <!-- 1483510 EEready -->
 You will soon be able to configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The newest action *wipe* removes your company’s corporate data from a device. If a wipe occurs, the device user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. These actions are triggered when the app is launched.
 
-### New inventory information for Windows devices <!-- 1333569 eeready -->
-
-For Windows devices, the following inventory information will be available per device in the **Hardware** tab (**Groups** > **All mobile devices** > **Devices** > choose the user's device > **View Properties** > **Hardware**):
-- TPM
-- Antivirus
-- Antispyware
-- Firewall
-- UAC
-- Battery
-- Domain name
-
-For more information on how this data is retrieved by the CSP, see the DeviceStatus entries in the [DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp) article.
-
 <!-- 1804 start -->
 
 ### Rules for removing devices <!-- 1609459 -->
@@ -211,9 +263,6 @@ New rules will be available that let you automatically remove devices that haven
 
 ### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
 Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
-
-### Company Portal enrollment improved <!-- 1874230-->
-Users enrolling a device by using the Company Portal on Windows 10 build 1703 and up will be able to complete the first step of enrollment without leaving the app.
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
@@ -232,6 +281,3 @@ There are no active notices at this time.
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
-
-
-
