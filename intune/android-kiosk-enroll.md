@@ -159,6 +159,16 @@ To use Google's Zero Touch system, the device must support it and be affiliated 
 ```
 4. Choose **Apply**.
 
+## Managing apps on Android kiosk devices
+
+Only apps that have Assignment type [set to Required](apps-deploy.md#to-assign-an-app) can be installed on Android kiosk devices. Apps are installed from the managed Google Play store in the same manner as Android work profile devices.
+
+Apps are automatically updated on managed devices when the app developer publishes an update to Google Play.
+
+To remove an app from Android kiosk devices, you can do either of the following:
+-	Delete the Required app deployment.
+-	Create an uninstall deployment for the app.
+
 
 ## Next steps
 - [Deploy Android kiosk apps](apps-deploy.md)
