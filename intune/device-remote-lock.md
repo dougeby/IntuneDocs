@@ -37,6 +37,7 @@ The **Remote lock** device action locks the device. To unlock the device, the de
 **Remote lock** is supported for the following platforms:
 
 - Android
+- Android enterprise
 - iOS
 - macOS
 - Windows 10 Mobile
