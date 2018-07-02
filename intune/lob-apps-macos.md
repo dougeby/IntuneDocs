@@ -37,7 +37,7 @@ Use the information in this article to help you add macOS line-of-business apps 
 >
 >Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. 
 
-Microsoft Intune provides the capability to install macOS LOB apps available to end-users from the Company Portal website. 
+Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
 
 ## Step 1 - Pre-process your software setup file
 
