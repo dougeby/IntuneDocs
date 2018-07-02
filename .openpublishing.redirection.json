@@ -4802,6 +4802,11 @@
 			"source_path": "intune/reports-ref-userdeviceassociations.md",
 			"redirect_url": "intune/reports-ref-devices",
 			"redirect_document_id": true
-		}
+		},
+		{
+		   "source_path": "intune/early-edition.md",
+		   "redirect_url": "intune/introduction-intune",
+		   "redirect_document_id": true
+	   }
 	]
 }
