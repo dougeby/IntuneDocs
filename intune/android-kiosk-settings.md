@@ -39,14 +39,14 @@ If a kiosk device's restriction profile is set to **Kiosk mode** = **single app 
      - **Platform**: Android enterprise
      - **Profile type**: Device restrictions
 4. Choose **Settings** > **Kiosk**.
-5. For **Kiosk mode**. choose **Single app kiosk**.
+5. For **Kiosk mode**, choose **Single app kiosk**.
 6. Choose **Select a managed app** and then select the managed app that you want to be the only app available for devices using this profile.
 7. Choose **OK** > **OK** > **OK** > **Create**.
 8. Choose the profile you just created > **Assignments**.
 9. Under **Assign to**, choose **Selected groups**.
 10. Choose **Select groups to include** > choose the device group that you created for your kiosk devices > **Select**.
 
-## Restrict an Android kiosk device to a specified set of apps and/or web links
+## Restrict a kiosk device to a set of apps or web links
 
 If a kiosk device's restriction profile is set to **Kiosk mode** = **multi-app kiosk**, users can only access the limited number of apps that you configure. You can also define a set of web links that users can visit. When users sign in, they see icons for the permissible apps on the home screen.
 
