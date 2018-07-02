@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,8 @@ Use the information in this article to help you add macOS line-of-business apps 
 >While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
 >
 >Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. 
+
+Microsoft Intune provides the capability to install macOS LOB apps available to end-users from the Company Portal website. 
 
 ## Step 1 - Pre-process your software setup file
 
