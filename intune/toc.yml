@@ -396,6 +396,8 @@
         href: endpoint-protection-windows-10.md
     - name: Configure Kiosk settings
       href: kiosk-settings.md
+    - name: Configure Android kiosk settings
+      href: android-kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
