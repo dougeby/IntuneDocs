@@ -56,7 +56,7 @@ To set up Android kiosk management, follow these steps:
 
 ### Create an enrollment profile
 
-You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS adn version of the device, you can use either the token or QR code to [enroll the kiosk device](#enroll-the-kiosk-devices).
+You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS and version of the device, you can use either the token or QR code to [enroll the kiosk device](#enroll-the-kiosk-devices).
 
 1. Go to the [Intune portal](https://portal.azure.com) and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
