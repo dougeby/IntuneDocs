@@ -43,7 +43,7 @@ The **Remote lock** device action locks the device. To unlock the device, the de
 - Windows 10 Mobile
 - Windows Phone 8.1 and later
 
-**Remote lock** is *not* supported for:
+**Remote lock** isn't supported for:
 - Windows 10 desktop
 
 > [!NOTE]
