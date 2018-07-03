@@ -45,7 +45,15 @@ This page is updated periodically. Check back for additional updates.
 <!-- 1807 start -->
 
 ### Reset device passcodes from Company Portal app for Windows 10 <!-- 2101282 --> 
-Your employees will soon be able to reset their device's PIN or passcode directly from the Company Portal app for Windows 10. This functionality will be available on both remote and local Intune-managed devices that support passcode resets. Depending on the type of device, a request made for a remote device will either remove the device's current passcode or create a temporary passcode. Users that request a reset for a local device will be redirected to the device's Settings app.
+Your employees will soon be able to reset their device's PIN or passcode directly from the Company Portal app for Windows 10. This functionality will be available on both remote and local Intune-managed devices that support passcode resets. Depending on the type of device, a request made for a remote device will either remove the device's current passcode or create a temporary passcode. Users that request a reset for a local device will be redirected to the device's Settings app.  
+
+### New browsing experiences in the Company portal app for Windows <!-- 2317227 -->  
+When browsing or searching for apps in the Company Portal app for Windows, you'll be able to toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date, and installation status.  
+
+The **Apps** page will introduce an **Installed** view that lets you see details about completed and in-progress app installations. Want to share feedback or thoughts on the new changes? Send us your feedback in the Company Portal app.
+
+### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
+When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
 
 ### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
 A future update will include an S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
