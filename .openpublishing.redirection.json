@@ -4805,7 +4805,7 @@
 		},
 		{
 		   "source_path": "intune/early-edition.md",
-		   "redirect_url": "intune/introduction-intune",
+		   "redirect_url": "/intune/whats-new",
 		   "redirect_document_id": false
 	   }
 	]
