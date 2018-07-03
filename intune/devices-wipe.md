@@ -118,6 +118,10 @@ The following tables describe what data is removed, and the effect of the **Remo
 
 Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
 
+### Android enterprise kiosk devices
+
+You can only factory reset Android kiosk devices. You can't remove company data from Android kiosk devices.
+
 
 ### macOS
 
