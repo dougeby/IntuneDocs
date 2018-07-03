@@ -52,6 +52,9 @@ When browsing or searching for apps in the Company Portal app for Windows, you'l
 
 The **Apps** page will introduce an **Installed** view that lets you see details about completed and in-progress app installations. Want to share feedback or thoughts on the new changes? Send us your feedback in the Company Portal app.
 
+### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
+When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
+
 ### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
 A future update will include an S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 
