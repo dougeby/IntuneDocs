@@ -28,9 +28,9 @@ ms.custom: intune-azure
 
 # Selectively wipe data using app protection policy access actions in Intune
 
-Using Intune app protection policies, you can configure settings to block end users from accessing a corporate app or account. These settings target data relocation and access requirements set by your organization for things like jail-broken devices and minimum OS versions.
+Using Intune app protection policies, you can configure settings to block end-users from accessing a corporate app or account. These settings target data relocation and access requirements set by your organization for things like jail-broken devices and minimum OS versions.
  
-You can explicitly choose to wipe your company’s corporate data from the end user’s device as the action to take on non-compliance for these settings. For some settings, you will be able to configure multiple actions, such as block access and wipe data based on different specified values.
+You can explicitly choose to wipe your company’s corporate data from the end-user’s device as an action to take for non-compliance by using these settings. For some settings, you will be able to configure multiple actions, such as block access and wipe data based on different specified values.
 
 ## Create an app protection policy using access actions
 
@@ -38,7 +38,7 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
 3. In the **Intune** blade, select **Mobile apps** > **App protection Policies**.
-4. Click **Add a policy** (or you can edit an existing policy). 
+4. Click **Add a policy** (You can also edit an existing policy). 
 5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
 6. By scrolling down in the **Settings** blade you will see a section titled **Access Actions** with an editable table.
 
@@ -74,12 +74,12 @@ For Android, you will be able to configure actions for the following settings us
 
 By default, the table will have populated rows as settings configured for **Offline grace period**, and **Max PIN attempts**, if the **Require PIN for access** setting is set to **Yes**.
  
-To configure a setting, select one from the dropdown under the **Setting** column. Once a setting is selected, the editable text box will become enabled under the **Value** column in the same row, if a value is required to be set. Also, the dropdown will become enabled under the **Action** column with the set of conditional launch actions applicable to the setting. 
+To configure a setting, select a setting from the dropdown under the **Setting** column. Once a setting is selected, the editable text box will become enabled under the **Value** column in the same row, if a value is required to be set. Also, the dropdown will become enabled under the **Action** column with the set of conditional launch actions applicable to the setting. 
 
-The common list of actions in the dropdown are as follows:
--  **Block access** – Block the end user from accessing the corporate app.
--  **Wipe data** – Wipe the corporate data from the end user’s device.
--  **Warn** – Provide dialog to end user as a warning message.
+The common list of actions in the dropdown are the following:
+-  **Block access** – Block the end-user from accessing the corporate app.
+-  **Wipe data** – Wipe the corporate data from the end-user’s device.
+-  **Warn** – Provide dialog to end-user as a warning message.
 
 ### Additional settings and actions 
 
@@ -87,7 +87,7 @@ In some cases, such as the **Min OS version** setting, you can configure the set
 
 ![Screenshot of the Intune app protection access actions - Min OS version](./media/apps-selective-wipe-access-actions05.png)
 
-Once a setting is fully configured, the row will appear in a read-only view and be available to be edited at any time. In addition, the following row will appear to have a dropdown available for selection in the **Setting** column. Settings that have already been configured and do not allow multiple actions will not be available for selection in the dropdown.
+Once a setting is fully configured, the row will appear in a read-only view and be available to be edited at any time. In addition, the row will appear to have a dropdown available for selection in the **Setting** column. Settings that have already been configured and do not allow multiple actions will not be available for selection in the dropdown.
 
 ## Next steps
 
