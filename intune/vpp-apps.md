@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Manage volume-purchased apps and books with Intune
-titlesuffix: "Azure portal"
-description:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps and books from stores."
+title: Manage volume-purchased apps and books with Microsoft Intune
+titlesuffix: 
+description:  Learn about how you can use Microsoft Intune to manage and monitor your use of volume-purchased apps and books from stores."
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Manage volume-purchased apps and books with Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Introduction
 

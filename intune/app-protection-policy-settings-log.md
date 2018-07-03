@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: App protection policy logs
-titlesuffix: "Azure portal"
-description: This topic describes the record of app protection policy settings stored in the app logs.
+title: Review app protection policy logs
+titlesuffix: Microsoft Intune
+description: Learn about the settings you can review in the app protection logs.
 keywords:
-author: erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Review client app protection logs
 
-You can access the logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
+Learn about the settings you can review in the app protection logs. Access logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
 
 ## App protection policy settings
 

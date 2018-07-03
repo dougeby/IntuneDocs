@@ -2,12 +2,13 @@
 # required metadata
 
 title: How to use Azure AD to access Intune APIs in Microsoft Graph
+titlesuffix: Microsoft Intune
 description: Describes steps needed for apps to use Azure AD to access the Intune APIs in Microsoft Graph.
 keywords: intune graphapi c# powershell permission roles
-author: vhorne
+author: dougeby
 manager: dougeby
-ms.author: victorh
-ms.date: 06/20/2017
+ms.author: dougeby
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +50,7 @@ This article:
 
 - Provides Intune API authentication examples for C# and PowerShell.
 
-- Describes how to support multiple tenants
+- Describes how to support multiple tenants.
 
 To learn more, see:
 
@@ -102,7 +103,7 @@ To register an app to use Microsoft Graph API:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#user-content-intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     For best results, choose the fewest roles needed to implement your application.
 
@@ -122,13 +123,13 @@ At this point, you may also:
 
     To do so:
 
-    1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
+  1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. Change the value of the `availableToOtherTenants` setting to `true`.
+  2. Change the value of the `availableToOtherTenants` setting to `true`.
 
-    3. Save your changes.
+  3. Save your changes.
 
 ## Intune permission scopes
 
@@ -145,7 +146,7 @@ The following table summarizes the Intune API permission scopes.  The first colu
 
 _Enable Access_ setting | Scope name
 :--|:--
-__Perform user-impacting remote actions on Microsoft Intune devices__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Perform user-impacting remote actions on Microsoft Intune devices__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Read and write Microsoft Intune devices__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Read Microsoft Intune devices__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Read and write Microsoft Intune RBAC settings__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -440,7 +441,7 @@ namespace IntuneGraphExample
 
 ### Authenticate Azure AD (PowerShell)
 
-The following PowerShell script uses the AzureAD PowerShell module for authentication.  To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
+The following PowerShell script uses the AzureAD PowerShell module for authentication.  To learn more, see [Azure Active Directory PowerShell Version 2](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
 
 In this example, update the value of `$clientID` to match a valid application ID.
 
@@ -591,7 +592,7 @@ Remember to add the user to other roles as needed. For example, to allow the use
 
 Also:
 
-- Use http://portal.office.com to assign an Intune license to your user account.
+- Use https://portal.office.com to assign an Intune license to your user account.
 
 - Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 

@@ -4,8 +4,8 @@
 title: Turn on Windows Defender | Microsoft Docs
 description: Learn how to turn on Windows Defender to access company resources.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
@@ -53,6 +53,6 @@ Check to make sure that Real-time Protection is turned on by going to **Start** 
 
 ## Update your antivirus definitions
 
-Check to make sure that your antivirus definitions are up to date by going to **Start** and searching for **Windows Defender Security Center**. Select **Protection updates** and **Check for updates** to make sure that your device has current protection against viruses. If this option doesn't appear, follow the steps in [Turn on Real-time Protection](turn-on-defender-windows.md#turn-on-real-time-protection)
+Check to make sure that your antivirus definitions are up-to-date by going to **Start** and searching for **Windows Defender Security Center**. Select **Protection updates** and **Check for updates** to make sure that your device has current protection against viruses. If this option doesn't appear, follow the steps in [Turn on Real-time Protection](turn-on-defender-windows.md#turn-on-real-time-protection)
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).

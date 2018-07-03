@@ -2,13 +2,13 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titlesuffix: "Azure portal"
+titlesuffix: "Microsoft Intune"
 description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 06/13/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,11 +28,13 @@ ms.custom: intune-azure
 ---
 
 # What is device enrollment?
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune lets you manage your workforce’s devices and apps and how they access your company data. To use this mobile device management (MDM), the devices must first be enrolled in the Intune service. When a device is enrolled, it is issued an MDM certificate. This certificate is used to communicate with the Intune service.
 
 As you can see in the following tables, there are several methods to enroll your workforce’s devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking).
+
+By default, devices for all platforms are allowed to enroll in Intune. However, you can [restrict devices by platform](enrollment-restrictions-set.md#set-device-type-restrictions).
 
 ## iOS enrollment methods
 
@@ -44,6 +46,14 @@ As you can see in the following tables, there are several methods to enroll your
 |**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
+
+## macOS enrollment methods
+
+| **Method** |  **Reset Required** |  **User Affinity** | **Locked** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| No |No |No  | [More information](./device-enrollment-manager-enroll.md)|
+
 
 ## Windows enrollment methods
 
@@ -67,10 +77,10 @@ As you can see in the following tables, there are several methods to enroll your
 Bring your own devices (BYOD) include personal phones, tables, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
 
 ## Corporate-owned device
-Corporate-owned devices (COD) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as company-owned.
+[Corporate-owned devices (COD)](corporate-identifiers-add.md) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as company-owned.
 
 ### Device enrollment manager
-Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](./device-enrollment-manager-enroll.md).
+Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. These types of devices are good for point-of-sale or utility apps, for example, but not for users who need to access email or company resources.Learn more about [DEM](./device-enrollment-manager-enroll.md). 
 
 ### Apple Device Enrollment Program
 Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports iOS supervised mode, which enables a device to be configured with specific functionality.

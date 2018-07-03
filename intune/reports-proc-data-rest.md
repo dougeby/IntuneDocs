@@ -1,12 +1,13 @@
 ---
 # required metadata
-title: Get data from the Data Warehouse API with a REST client 
+title: Get data from the Data Warehouse API with a REST client
+titlesuffix: Microsoft Intune
 description: Retrieve data from the Intune Data Warehouse using a RESTful API.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,18 +39,18 @@ Use the following steps to learn how to authorize and access the API with a REST
 ## Create a client app as a native app in Azure
 
 Create a native app in Azure. This native app is the client app. The client
-running on your local machine references the Intune Data Warehouse API when the local client requests credentials. 
+running on your local machine references the Intune Data Warehouse API when the local client requests credentials.
 
-1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** blade.
+1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** pane.
 2. Select **New app registration**.
 3. Type the app details.
     1.  Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
     2.  Select **Native** for the **Application type**.
-    3.  Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type 
+    3.  Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type
      `https://www.getpostman.com/oauth2/callback`. You will use the callback for client authentication step when authenticating to Azure AD.
 4.  Select **Create**.
 
-     ![Intune Data Warehouse API](media\reports-get_rest_data_client_overview.png)
+     ![Intune Data Warehouse API](./media/reports-get_rest_data_client_overview.png)
 
 5. Note the **Application ID** of this app. You will use the ID in the next section.
 
@@ -58,19 +59,19 @@ running on your local machine references the Intune Data Warehouse API when the 
 You now have an app defined in Azure. Grant access from the native app to the Microsoft Intune API.
 
 1.  Select the native app. You named the app something such as **Intune Data Warehouse Client**.
-2.  Select **Required permissions** from the **Settings** blade
-3.  Select **Add** in the **Required permissions** blade.
+2.  Select **Required permissions** from the **Settings** pane
+3.  Select **Add** in the **Required permissions** pane.
 4.  Select **Select an API**.
 5.  Search for the web app name. It is named **Microsoft Intune API**.
 6.  Select the app in the list.
 7.  Select **Select**.
 8.  Check the **Delegated Permissions** box to add **Get data warehouse information from Microsoft Intune**.
 
-    ![Enable access](media\reports-get_rest_data_client_access.png)
+    ![Enable access - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
 9.  Select **Select**.
 10.  Select **Done**.
-11.  Optionally, Select **Grant Permissions** in the Required permissions blade. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+11.  Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Select **Yes**.
 
 ## Get data from the Microsoft Intune API with Postman
@@ -93,15 +94,15 @@ You need the following information to make a REST call using Postman:
 
 ### OData endpoint
 
-You also need the endpoint. To get your Data Warehouse endpoint, you will need the custom feed URL. You can get the OData endpoint from the Data Warehouse blade.
+You also need the endpoint. To get your Data Warehouse endpoint, you will need the custom feed URL. You can get the OData endpoint from the Data Warehouse pane.
 
-1. Sign in to the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** + **Intune**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Set up Intune Data Warehouse** under **Other tasks**.
 4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
 The endpoint follows the following format:
-`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
 
 For example, the **dates** entity looks like:
 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
@@ -138,7 +139,7 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 
 12. Select **Request Token**.
 
-    ![Information for the token](media\reports-postman_getnewtoken.png)
+    ![Information for the token](./media/reports-postman_getnewtoken.png)
 
 13. Type your credentials in the Active AD authorization page. The list of tokens in Postman now contains the token named `Bearer`.
 14. Select **Use Token**. The list of headers contains the new key value of Authorization and the value `Bearer <your-authorization-token>`.
@@ -148,7 +149,7 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 1.	Select **Send**.
 2.	The return data appears in the Postman response body.
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## Create a REST client (C#) to get data from the Intune Data Warehouse
 
@@ -157,45 +158,45 @@ The following sample contains a simple REST client. The code uses the **httpClie
 > [!Note]  
 > You can access the following code [sample on GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Refer to the GitHub repo for the latest changes and updates to the sample.
 
-1.  Open **Microsoft Visual Studio**.
-2.  Choose **File** > **New Project**. Expand **Visual C#**, and choose **Console App (.Net Framework)**. 
-3.  Name the project ` IntuneDataWarehouseSamples`, browse to where you would like to save the project, and then select **OK**.
-4.  Right-click the name of the solution in the Solution Explorer, and then select **Manage NuGet Packages for Solution**. Select **Browse**, and then type `Microsoft.IdentityModel.Clients.ActiveDirectory` in the search box.
-5. Choose the package, select the **IntuneDataWarehouseSamples** project under Manage Packages for Your Solution, and then select **Install**. 
+1. Open **Microsoft Visual Studio**.
+2. Choose **File** > **New Project**. Expand **Visual C#**, and choose **Console App (.Net Framework)**.
+3. Name the project ` IntuneDataWarehouseSamples`, browse to where you would like to save the project, and then select **OK**.
+4. Right-click the name of the solution in the Solution Explorer, and then select **Manage NuGet Packages for Solution**. Select **Browse**, and then type `Microsoft.IdentityModel.Clients.ActiveDirectory` in the search box.
+5. Choose the package, select the **IntuneDataWarehouseSamples** project under Manage Packages for Your Solution, and then select **Install**.
 6. Select **I Accept** to accept the NuGet package license.
 7. Open `Program.cs` from the Solution Explorer.
 
-    ![Project in Visual Studio](media\reports-get_rest_data_in.png)
+    ![Project in Visual Studio](./media/reports-get_rest_data_in.png)
 
-8.  Replace the code in Program.cs with the following code:  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. Replace the code in Program.cs with the following code:  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not 
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in 
-    *      the Azure portal.
-    * 
-    * collectionName - The name of the warehouse entity collection you would like to 
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -204,9 +205,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -218,19 +219,19 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  Update the `TODO`s in the code sample.
-10.  Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
+9. Update the `TODO`s in the code sample.
+10. Press **Ctrl + F5** to build and execute the Intune.DataWarehouseAPIClient client in Debug mode.
 
-    ![Date entity retrieved in JSON format.](media\reports-get_rest_data_output.png)
+    ![Date entity retrieved in JSON format.](./media/reports-get_rest_data_output.png)
 
-11.  Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
+11. Review the console output. The output contains data in a JSON format pulled from the **dates** entity in your Intune tenant.
 
 ## Next steps
 
-You can find details on authorization, the API URL structure, and OData endpoints in [Use the Intune Data Warehouse API](reports-api-url.md). 
+You can find details on authorization, the API URL structure, and OData endpoints in [Use the Intune Data Warehouse API](reports-api-url.md).
 
 You can also refer to the Intune Data Warehouse Data Model to find the data entities contained in the API. For more information, see [Intune Data Warehouse API Data Model](reports-ref-data-model.md)

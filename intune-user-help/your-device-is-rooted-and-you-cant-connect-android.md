@@ -4,15 +4,17 @@
 title: Your Android device is rooted and can't connect
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8casearchScope: - User help
+ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -36,6 +38,6 @@ There are a couple of common ways that your device could have become rooted:
 
 - You might have installed an app on your device that the root detection software thinks is a security risk. If you see this message immediately after you install an app, try uninstalling that app.
 
-- Your device manufacturer installed software on your device that the root detection software thinks is a security risk. In this case, you'll need to contact your company support for help. For contact information, head to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+- Your device manufacturer installed software on your device that the root detection software thinks is a security risk. In this case, you need to contact your company support for help. For contact information, head to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 If you have rooted your device yourself, you will need to reverse the process and restore the device back to its unrooted state.

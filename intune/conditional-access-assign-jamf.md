@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Enforce compliance policies to Jamf-managed devices
-titlesuffix: "Azure portal"
-description: "Use compliance to help secure Jamf-managed devices."
+title: Device compliance policy for Jamf devices
+titlesuffix: Microsoft Intune
+description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,9 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 
 1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (e.g., sending warning emails) to noncompliant users and groups.
 2. Search for your desired groups, then apply the policies to them.
+
+> [!Note]
+> Intune requires full disk encryption to be compliant.
 
 ## Deploy the Company Portal app for macOS in Jamf Pro
 
@@ -71,6 +74,12 @@ End users need to launch the Company Portal app through Jamf Self Service to reg
 2. Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency.
 3. Click the **Scope** tab, and scope the policy to all targeted devices.
 4. Click the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
+
+## Removing a Jamf-managed device from Intune
+
+You can't remove a Jamf-managed device from Intune. You have to remove Jamf-managed devices from Jamf Pro, which will then remove it from Intune. 
+
+Learn how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
 
 ## Next steps
 

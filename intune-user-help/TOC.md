@@ -30,8 +30,9 @@
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
+#### [Update your device to install Outlook](update-device-outlook-android.md)
 
-#### Using logs to fix issues
+#### Using logs to help fix issues
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
@@ -65,6 +66,7 @@
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
+### [Enroll your Device Enrollment Program iOS device](enroll-your-device-dep-ios.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -85,6 +87,7 @@
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [Updating your iOS device](you-need-to-update-your-ios-device.md)
+#### [Update your device to install Outlook](update-device-outlook-ios.md)
 #### [My version of iOS isn't yet supported](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense
@@ -102,7 +105,6 @@
 ## [Using your macOS device](using-your-macos-device-with-intune.md)
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
-### [Enroll your legacy macOS device](enroll-your-device-in-intune-macos-legacy.md)
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
 
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
@@ -123,21 +125,26 @@
 #### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
 #### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
 #### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
+### [Install apps from Company Portal app for Windows](install-apps-cpapp-windows.md)
 ### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change your password](set-or-change-your-password-windows.md)
-### [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)
+### [Rename your device from Company Portal app](rename-your-device-cpapp.md)
+### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
 ### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
+### [Remotely lock devices from your Windows 10 device](remote-lock-your-device-cp-app.md) 
 
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
+### [Resolve access point restrictions](resolve-access-point-restrictions.md)
 #### [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
 #### [Updating your Windows device](you-need-to-update-your-windows-device.md)
 #### [Send logs to from the Company Portal app](send-logs-to-your-it-admin-cp-windows.md)
 #### [Send logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md)
 #### [My Windows version isn't yet supported](your-windows-version-isnt-yet-supported.md)
+#### [Installing Office 365 on your Windows 10 device](install-office-windows.md)
 #### [Enable Windows encryption](you-need-to-enable-windows-encryption.md)
 #### [My device needs antimalware software](your-device-needs-antimalware-software.md)
 #### [Enable Secure Boot](you-need-to-enable-secure-boot-windows.md)
@@ -148,3 +155,8 @@
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
+### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
+### [Rename your device](rename-your-device-cpwebsite.md)
+### [Remove your device](remove-your-device-cpwebsite.md)
+### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
+### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)

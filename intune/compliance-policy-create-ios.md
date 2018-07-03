@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOStitleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for iOS devices."
+title: Create iOS device compliance policy in Microsoft Intune - Azure | Microsoft Docs
+description: Create or configure a Microsoft Intune device compliance policy for iOS devices to enter an email account, check jailbroken devices, check the minimum and maximum operating system, and set the password restrictions, including password length and device inactivity.
 keywords:
-author: andredm7
-ms.author: andredm
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,110 +19,107 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# How to create a device compliance policy for iOS devices in Intune
+# Add a device compliance policy for iOS devices in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+An Intune iOS device compliance policy determines the rules and settings that iOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [what is a device compliance](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
+The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
-The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
-
--------------------------------
-
+---------------------------
 
 | **Policy setting** | **iOS 8.0 and later** |
 | --- | --- |
-| **PIN or password configuration** | Remediated |   
+| **PIN or password configuration** | Remediated |
 | **Device encryption** | Remediated (by setting PIN) |
 | **Jailbroken or rooted device** | Quarantined (not a setting)
 | **Email profile** | Quarantined |
 |**Minimum OS version** | Quarantined |
-| **Maximum OS version** | Quarantined |  
-| **Windows health attestation** | Not applicable |  
-----------------------------
+| **Maximum OS version** | Quarantined |
+| **Windows health attestation** | Not applicable |
 
+---------------------------
 
 **Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:
+**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
 
 - The device is blocked if a conditional access policy applies to the user.
 - The company portal notifies the user about any compliance problems.
 
-## Create a compliance policy in the Azure portal
+## Create a device compliance policy
 
-1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies** and choose **Create**.
-2. Type a name, description and choose the platform that you want this policy to apply to.
-3. Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings here, When you are done, choose **Ok**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. For **Platform**, select **iOS**. Choose **Settings Configure**, and enter the **Email**, **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## Assign user groups
+## Email
 
-To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policies** blade.
+- **Require mobile devices to have a managed email profile**: If you set this to Require, then devices that don't have an email profile managed by Intune are considered not-compliant. A device may not have a managed email profile when it's not correctly targeted, or if the user manually setup the email account on the device.
 
-1. Choose the policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
-
-You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
-
-<!---## Compliance policy settings--->
-
-## System security settings
-
-### Password
-
-- **Require a password to unlock mobile devices** : Set this to **Yes** to require the user to enter a password before they can access their device. iOS devices that use a password are encrypted.
-- **Allow simple passwords** : Set this to **Yes** to let the user create a simple password like **1234** or **1111**.
-- **Minimum password length** : Specify the minimum number of digits or characters that the password must have.
-- **Required password type** : Specify whether the user must create an **Alphanumeric** password or a **Numeric** password.
-- **Minimum number of character sets** : If you set **Required password type** to **Alphanumeric** , use this setting to specify the minimum number of character sets that the password must have. The four character sets are:
-  - Lowercase letters
-  - Uppercase letters
-  - Symbols
-  - Numbers
-
-Setting a higher number will require the user to create a password that is more complex.
-
-For iOS devices, this setting refers to the number of special characters (for example, **!** , **#** , **&amp;** ) that must be included in the password.
-
-- **Minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
-- **Remember password history** : Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
-- **Prevent reuse of previous passwords** : If you selected **Remember password history** , specify the number of previously used passwords that cannot be reused.
-- **Require a password when the device returns from an idle state** : Use this setting together with the in the **Minutes of inactivity before password is required** setting. The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
-
-### Email profile
-
-- **Email account must be managed by Intune** : When this option is set to **Yes** , the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
+  The device is considered noncompliant in the following situations:
   - The email profile is deployed to a user group other than the user group that the compliance policy targets.
   - The user has already set up an email account on the device that matches the Intune email profile deployed to the device. Intune cannot overwrite the user-provisioned profile, and therefore cannot manage it. To ensure compliance, the user must remove the existing email settings. Then, Intune can install the managed email profile.
-- **Select the email profile that must be managed by Intune** : If the **Email account must be managed by Intune** setting is selected, choose **Select** to specify the Intune email profile. The email profile must be present on the device.
+
+- **Select the email profile that must be managed by Intune**: If the **Email account must be managed by Intune** setting is selected, choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
 For details about email profile, see [Configure access to corporate email using email profiles with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## Device health settings
+## Device health
 
-- **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will not be compliant.
+- **Jailbroken devices**: If you enable this setting, jailbroken devices are not compliant.
+- **Require the device to be at or under the Device Threat Level** (iOS 8.0 and newer): Choose the maximum threat level to mark devices as noncompliant. Devices that exceed this threat level get marked as noncompliant:
+  - **Secured**: This option is the most secure, as the device can't have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
+  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
 ## Device properties
 
-- **Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade appears. The user can choose to upgrade their device. After that, they can access company resources.
-- **Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Minimum OS required**: When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device. After that, they can access company resources.
+- **Maximum OS version allowed**: When a device uses an OS version later than the version specified in the rule, access to company resources is blocked. The user is then asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot access company resources.
 
-<!--- ## Next steps
+## System security
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+### Password
+
+> [!NOTE]
+> After a compliance or configuration policy is applied to an iOS device, users are prompted to set a passcode every 15 minutes. Users are continually prompted until a passcode is set.
+
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. iOS devices that use a password are encrypted.
+- **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
+- **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
+- **Required password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
+- **Number of non-alphanumeric characters in password**: Enter the minimum number of special characters (&, #, %, !, and so on) that must included in the password.
+
+    Setting a higher number requires the user to create a password that is more complex.
+
+- **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
+- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
+
+## Assign user groups
+
+1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
+2. Choose the policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
+3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
+
+You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
+
+## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
+[Monitor Intune Device compliance policies](compliance-policy-monitor.md)

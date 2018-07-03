@@ -2,13 +2,13 @@
 # required metadata
 
 title: Add corporate identifiers to Intune
-titlesuffix: "Azure portal"
-description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune. "
+titlesuffix: "Microsoft Intune"
+description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Identify devices as corporate-owned
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune admin, you can identify devices as corporate-owned to refine management and identification. Intune can perform additional management tasks and collect additional information such as the full phone number and an inventory of apps from corporate-owned devices. You can also set device restrictions to block enrollment by devices that aren't corporate-owned.
 
@@ -73,12 +73,13 @@ This .csv file when viewed in a text editor appears as:
 >Also note:
 >Android Serial numbers are not guaranteed to be unique or present. Check with your device supplier to understand if serial number is a reliable device ID.
 >Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device. Verify the type of serial number reported by the device manufacturer.
+>Attempting to upload a file with serial numbers containing dots (.) will cause the upload to fail. Serial numbers with dots are not supported.
 
 ### Add a .csv list of corporate identifiers
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**, and then click **Add**.
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**, and then click **Add**.
 
- ![Screenshot of the corporate device identifier workspace with the Add button highlighted.](./media/add-corp-id.png)
+   ![Corporate device identifier workspace with the Add button highlighted](./media/add-corp-id.png)
 
 2. In the **Add Identifiers** blade, specify the identifier type: **IMEI** or **Serial**. You can specify whether previously imported numbers should **Overwrite details for existing identifiers**.
 
@@ -88,11 +89,11 @@ Imported devices are not necessarily enrolled. Devices can have a state of eithe
 
 ### Delete corporate identifiers
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Corporate Device Identifiers**.
+1. In [Intune in the Azure portal](https://portal.azure.com), choose **Device enrollment** > **Corporate device identifiers**.
 2. Select the device identifiers you want to delete, and choose **Delete**.
 3. Confirm the deletion.
 
-Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices** > **All devices**, select the device, choose **Properties**, and change **Device ownership**.
+Deleting a corporate identifier for an enrolled device does not change the device's ownership. To change a device's ownership, go **Devices**, select the device, choose **Properties**, and change **Device ownership**.
 
 ### IMEI specifications
 For detailed specifications about International Mobile Equipment Identifiers, see [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -102,8 +103,8 @@ For detailed specifications about International Mobile Equipment Identifiers, se
 Devices properties display **Ownership** for each device records in Intune. As an admin, you can specify devices as **Personal** or **Corporate**.
 
 **To change device ownership:**
-1. In Intune in the Azure portal, go **Devices** > **All devices**, and choose the device.
-3. Choose **Properties**.
-4. Specify **Device ownership** as **Personal** or **Corporate**.
+1. In [Intune in the Azure portal](https://portal.azure.com), go to **Devices** and choose the device.
+2. Choose **Properties**.
+3. Specify **Device ownership** as **Personal** or **Corporate**.
 
-  ![Screenshot of device properties showing Device category and Device ownership options.](./media/device-properties.png)
+   ![Device properties showing Device category and Device ownership options](./media/device-properties.png)

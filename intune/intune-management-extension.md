@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage PowerShell scripts in Intune for Windows 10 devices
-titlesuffix: "Azure portal"
-description: Learn how to upload PowerShell scripts in Intune to run on Windows 10 devices. 
+title: Add PowerShell scripts in Microsoft Intune for Windows 10 devices - Azure | Microsoft Docs
+description: Add PowerShell scripts, assign the script policy to Azure Active Directory groups, use reports to monitor the scripts, and see the steps to delete scripts you add on Windows 10 devices in Microsoft Intune. 
 keywords:
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,41 +38,39 @@ The Intune management extension supplements the in-box Windows 10 MDM capabiliti
 
 ## Prerequisites
 The Intune management extension has the following prerequisites:
-- Devices must be joined to Azure AD
-- Devices must run Windows 10, version 1607 or later
+- Devices must be joined to Azure AD. This does not include Hybrid AD joined devices.
+- Devices must run Windows 10, version 1607 or later.
+- Automatic MDM enrollment must be [enabled in Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), and devices must be auto-enrolled to Intune.
 
 ## Create a PowerShell script policy 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, choose **Add script**.
-6. On the **Add PowerShell Script** blade, enter a **Name** and **Description** for the PowerShell script.
-7. For **Script location**, browse for the PowerShell script. The script must be less than 10 KB (ASCII) or 5 KB (Unicode).
-8. Choose **Configure**, and then choose whether to run the script with the user's credentials on the device (**Yes**) or system context(**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
-  ![Add PowerShell script blade](./media/mgmt-extension-add-script.png)
-9. Choose whether the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 
-10. Click **OK** and then click **Create** to save the script.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Device configuration** > **PowerShell scripts** > **Add**.
+4. Enter a **Name** and **Description** for the PowerShell script. For **Script location**, browse to the PowerShell script. The script must be less than 200KB (ASCII) or 100KB (Unicode) in size.
+5. Choose **Configure**. Then choose to run the script with the user's credentials on the device (**Yes**), or system context (**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
+  ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
+6. Choose if the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 
+7. Select **OK**, and then **Create** to save the script.
 
 ## Assign a PowerShell script policy
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, select the script to assign, and then choose **Manage** > **Assignments**.
-  ![Add PowerShell script blade](./media/mgmt-extension-assignments.png)
+1. In **PowerShell scripts**, select the script to assign, and then choose **Manage** > **Assignments**.
+  ![Add PowerShell script pane](./media/mgmt-extension-assignments.png)
  
-6. Choose **Select Groups** to list available Azure AD groups. 
-7. Select one or more groups that contain the users whose devices will receive the script, and then click **Select** to assign the policy to the selected groups.
+2. Choose **Select Groups** to list available Azure AD groups. 
+3. Select one or more groups that contain the users whose devices receive the script. **Select** to assign the policy to the selected groups.
 
-The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script is run and the run results are reported. 
+> [!NOTE]
+> - PowerShell scripts can't be applied to computer groups.
+> - PowerShell scripts are executed on devices only when an Azure Active Directory (AD) user is signed in to the device.
+
+The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported. 
  
 ## Monitor run status for PowerShell scripts
 You can monitor the run status of PowerShell scripts for users and devices in the Azure portal.
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Device configuration**.
-4. On the **Device Configuration** blade, choose **Manage** > **PowerShell scripts**.
-5. On the **PowerShell scripts** blade, select the script to monitor, and then choose **Monitor**, and then one of the following reports:
+
+In **PowerShell scripts**, select the script to monitor, choose **Monitor**, and then choose one of the following reports:
    - **Device status**
    - **User status**
+
+## Delete a PowerShell script
+In **PowerShell scripts**, right-click the script, and select **Delete**.

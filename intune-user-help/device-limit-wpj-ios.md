@@ -5,8 +5,8 @@ title: Registered device limit has been reached | Microsoft Docs
 titlesuffix: Intune Company Portal
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article

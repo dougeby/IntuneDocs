@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new archive 
+title: What's new in Microsoft Intune classic portal archive
 description: Archived What's New announcements for Microsoft Intune
 keywords:
-author: brenduns
-ms.author: brenduns
+author: ErikjeMS  
+ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 # What's new in the Intune classic portal - previous months
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 This page lists new features and notices previously announced on the [What's new page](whats-new.md) for the Intune classic portal.
 
@@ -144,7 +144,7 @@ You can now control mobile device access to corporate resources using conditiona
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block non-compliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 
@@ -286,7 +286,7 @@ The following articles have been updated:
 
 * [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Get started with the Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Intune App SDK for iOS developer guide](app-sdk-ios.md)
 
 The following articles are new additions to the docs library:
@@ -377,7 +377,7 @@ App developers can now use the Intune App SDK Xamarin component to enable MAM fu
 __Symantec signing certificate no longer requires signed Windows Phone 8 Company Portal for upload__
 Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
-###Deprecations
+### Deprecations
 
 __Support for the Windows Phone 8 Company Portal__
 Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.

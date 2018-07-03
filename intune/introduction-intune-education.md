@@ -4,10 +4,10 @@
 title: What is Intune for Education?
 description: Learn how Intune for Education differs from the full Intune management experience.
 keywords: what is Intune
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # How is Intune for Education different from the full device management experience in Intune?
 
-Intune for Education is designed to enable your teachers and students to be productive while keeping school data protected. Intune is a cloud-based enterprise mobility management (EMM) service that is the foundation for Intune for Education.
+Intune for Education enables your teachers and students to be productive while protecting your school's data. Intune is a cloud-based enterprise mobility management (EMM) service that is the foundation for Intune for Education.
 
 ![Intune for Education console compared against Intune console.](./media/intune-azure-vs-intuneEDU.png)
 

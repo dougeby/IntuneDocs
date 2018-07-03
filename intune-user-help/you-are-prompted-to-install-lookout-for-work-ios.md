@@ -4,11 +4,11 @@
 title: You need to install Lookout for Work on your iOS device | Microsoft Docs
 description: Learn how to install Lookout for Work for iOS.
 keywords:
-author: barlanmsft
+author: lenewsad
 
-ms.author: barlan
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,22 +33,22 @@ ms.custom: intune-enduser
 # Install Lookout for Work on your iOS device
 
 
-Before you can access your work, your company needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
+Before you can access your work, your company needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device,depending on how your IT admin set up Lookout for Work.
 
 
 ## What you need to do
 
 1.	If you see the following prompt, tap **Install** to allow Lookout for Work to be installed on your device.
 
-  ![Tap install to install Lookout for Work](./media/ios-mtd-install-app-request.png)
+      ![Screenshot of App Installation prompt with a Cancel and Install buttons.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
 2. When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.
 
-  ![Tap Settings and then Location Services](./media/ios-lfw-allow-location-services.png)
+      ![Tap Settings and then Location Services](./media/ios-lfw-allow-location-services.png)
 
 3. Review the permissions that Lookout for Work needs, and tap **Continue**.
 
-  ![you are now connected to Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+      ![you are now connected to Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. At the prompt asking you to allow Lookout for Work to send you notifications, tap **Allow**.
 

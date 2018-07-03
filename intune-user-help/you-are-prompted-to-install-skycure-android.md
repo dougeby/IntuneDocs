@@ -4,8 +4,8 @@
 title: You need to install Symantec Endpoint Protection Mobile on your Android device | Microsoft Docs
 description: Learn how to install SEP Mobile on your Android device.
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
@@ -52,13 +52,13 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. SEP Mobile starts to check right away for security threats on your device.
 
-  * If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
+   * If SEP Mobile finds a security threat on your device, you will see instructions about how to fix the issue.
 
-  * If no threats are found, all three threat types will appear green.
+   * If no threats are found, all three threat types will appear green.
 
-	* The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+     * The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
+     ![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
 ## If the installation doesn't work
 

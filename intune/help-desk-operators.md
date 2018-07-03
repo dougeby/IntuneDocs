@@ -1,12 +1,12 @@
 ---
-title: Help desk troubleshooting portal| Microsoft Docs
-titlesuffix: "Azure portal"
-description: Help desk staff use the troubleshooting portal to solve users' technical problems  
+title: Help desk troubleshooting portal
+titlesuffix: Microsoft Intune
+description: Help desk staff use the troubleshooting portal to solve users' technical problems.
 keywords:
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,13 +23,13 @@ ms.reviewer: sumitp
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
-# Use the troubleshooting portal to help users
+# Use the troubleshooting portal to help users at your company
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** blade.
+The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests. Organizations that include a help desk can assign the **Help desk operator** to a group of users. The help desk operator role can use the **Troubleshoot** pane.
 
-The **Troubleshoot** blade also shows user enrollment issues. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions. 
+The **Troubleshoot** pane also shows user enrollment issues. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. Certain enrollment issues aren't captured and some errors might not have remediation suggestions.
 
 For steps on adding a help desk operator role, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control)
 
@@ -44,20 +44,20 @@ When a user contacts support with a technical issue with Intune, the help desk o
 
 ## To review troubleshooting details
 
-In the troubleshooting blade, choose **Select user** to view user information. User information can help you understand the current state of users and their devices.  
+In the troubleshooting pane, choose **Select user** to view user information. User information can help you understand the current state of users and their devices.  
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Troubleshoot**.
-4. Click **Select user**.
-5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting blade. The following tables explains the information.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, choose **Troubleshoot**.
+4. Click **Select** to select a user to troubleshoot.
+5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting pane. The following tables explains the information.
 
 > [!Note]  
-> You can also access the **troubleshooting** blade by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+> You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## Areas of troubleshooting dashboard
 
-You can use the **Troubleshoot** blade to review user information. 
+You can use the **Troubleshoot** pane to review user information.
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -66,7 +66,7 @@ You can use the **Troubleshoot** blade to review user information.
 | 1.   | Account status  | Shows the status of the current Intune tenant as **Active** or **Inactive**.       |
 | 2.   | User selection  | The name of the currently selected user. Click **Change user** to choose a new user.       |
 | 3.   | User status  | Displays the status of the user's Intune license, number of devices, each device compliance, number of apps, and app compliance.       |
-| 4.   | User information  | Use the list to select the details to review in the blade. <br>You can select: <ul><li>Mobile apps<li>App protection policies<li>Compliance policies<li> Configuration policies</ul>      |
+| 4.   | User information  | Use the list to select the details to review in the pane. <br>You can select: <ul><li>Mobile apps<li>App protection policies<li>Compliance policies<li> Configuration policies</ul>      |
 | 5.   | Group membership  | Yadda       |
 
 ## Mobile apps reference
@@ -236,6 +236,15 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Device type | The name of the type of device.                                                       |
 | Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+## Collect available data from mobile device
+
+Use the following resources to help collect device data when troubleshooting user's device issues:
+  - [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Help your company support fix device issues with verbose logging](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Send Android logs to your company support using a USB cable](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Send Android diagnostic data logs to your IT administrator using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Send Android enrollment errors to your IT administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## Next steps
 

@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Enrollment options for Intune
-description:
+title: Enrollment options for devices managed by Microsoft Intune
+titleSuffix: 
+description: A list of enrollment options that admins can set for devices managed by Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -26,7 +27,7 @@ ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 
 ---
 
-# Enrollment options for Intune
+# Enrollment options for devices managed by Intune
 
 As an Intune admin, you can configure device enrollment to help users and enable Intune capabilities.  Intune includes the following enrollment options:
 

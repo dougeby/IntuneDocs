@@ -2,13 +2,13 @@
 # required metadata
 
 title: Manage web access with the Managed Browser app 
-titlesuffix: "Azure portal"
-description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps."
+titlesuffix: Microsoft Intune
+description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Manage Internet access using Managed Browser policies with Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The Managed Browser is a web browsing app that you can download from public app stores for use in your organization. When configured with Intune, the Managed Browser can be:
 - Used to access corporate sites and SaaS apps with Single Sign-On via the MyApps service, while keeping web data protected.
@@ -41,7 +41,7 @@ Because this app has integration with the Intune SDK, you can also apply app pro
 - Preventing screen captures
 - Ensuring that links to content that users select open only in other managed apps.
 
-For details, see [What are app protection policies?](/intune/app-protection-policy)
+For details, see [What are app protection policies?](app-protection-policy.md)
 
 You can apply these settings to:
 
@@ -65,22 +65,64 @@ You can create Managed Browser policies for the following device types:
 >Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
 
 
-The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+## Conditional Access for the Intune Managed Browser
+
+The Managed Browser is now an approved client app for Conditional Access. This means that you can restrict mobile browser access to Azure AD-connected web apps where users can only use the Managed Browser, blocking access from any other unprotected browsers such as Safari or Chrome. This protection can be applied to Azure resources like Exchange Online and SharePoint Online, the Office portal, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+
+To restrict Azure AD-connected web apps to use the Intune Managed Browser on mobile platforms, you can create an Azure AD Conditional Access policy requiring approved client applications. 
+
+1. In the Azure portal, select **Azure Active Directory** > **Enterprise applications** > **Conditional access** > **New policy**. 
+2. Next, select **Grant** from the **Access controls** section of the blade. 
+3. Click **Require approved client app**. 
+4. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
+
+    ![Azure AD - Managed Browser conditional access policy](./media/managed-browser-conditional-access-01.png)
+
+5. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** blade is displayed.
+6. Click **Yes** under **Configure** to apply the policy to specific client apps.
+7. Verify that **Browser** is select as a client app.
+
+    ![Azure AD - Managed Browser - Select client apps](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > If you want to restrict which native apps (non-browser apps) can access these cloud applications, you can also select **Mobile apps and desktop clients**.
+
+8. In the **Assignments** section, select **Users and groups** and then choose the users or groups you would like to assign this policy. 
+
+    > [!NOTE]
+    > Users must also be targeted with Intune App Protection policy. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
+
+9. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
+
+Once the above policy is configured, users will be forced to use the Intune Managed Browser to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they will see a notice that the Intune Managed Browser must be used instead.
+
+The Managed Browser does not support classic Conditional Access policies. For more information, see [Migrate classic policies in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
+
+##  Single Sign-on to Azure AD-connected web apps in the Intune Managed Browser
+
+The Intune Managed Browser application on iOS and Android can now take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of the Intune Managed Browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
+
+SSO in the Intune Managed Browser requires your device to be registered by the Microsoft Authenticator app on iOS or the Intune Company Portal on Android. Users with the Authenticator app or Intune Company Portal will be prompted to register their device when they navigate to an Azure AD-connected web app in the Intune Managed Browser, if their device has not already been registered by another application. Once the device is registered with the account managed by Intune, that account will have SSO enabled for Azure AD-connected web apps. 
+
+> [!NOTE]
+> Device registration is a simple check-in with the Azure AD service. It does not require full device enrollment and does not give IT any additional privileges on the device.
 
 ## Create a Managed Browser app configuration
 
-1.	Sign into the Azure portal.
-2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
-3.	On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
-4.	On the **App Configuration policies** blade, choose **Add**.
-5.	On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-6.	For **Device enrollment** type, choose **Managed apps**.
-7.	Choose **Select the required apps** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
-8.	Choose **OK** to return to the **Add app configuration** blade.
-9.	Choose **Configuration Settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
-10.	When you are done, choose **OK**.
-11.	On the **Add app configuration** blade, choose **Create**.
-12.	The new configuration is created, and displayed on the **App configuration** blade.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3.  On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
+4.  On the **App configuration policies** blade, choose **Add**.
+5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
+6.  For **Device enrollment** type, choose **Managed apps**.
+7.  Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** for iOS, for Android, or for both.
+8.  Choose **OK** to return to the **Add configuration policy** blade.
+9.  Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
+10. When you are done, choose **OK**.
+11. On the **Add configuration policy** blade, choose **Add**.
+12. The new configuration is created, and displayed on the **App configuration** blade.
 
 >[!IMPORTANT]
 >Currently, the Managed Browser relies on auto-enrollment. For app configurations to apply, another application on the device must already be managed by Intune app protection policies.
@@ -89,10 +131,10 @@ The Intune Managed Browser supports opening web content from [Microsoft Intune a
 
 You assign the settings to Azure AD groups of users. If that user has the Managed Browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Settings** blade of the Intune mobile application management dashboard, choose **App configuration**.
+1. On the **Mobile apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
-3. On the next blade, choose **User Groups**.
-4. On the **User groups** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+3. On the next blade, choose **Assignments**.
+4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
 
 ## How to configure Application Proxy settings for the Managed Browser
@@ -105,10 +147,13 @@ The Intune Managed Browser and [Azure AD Application Proxy]( https://docs.micros
 ### Before you start
 
 - Set up your internal applications through the Azure AD Application Proxy.
-	- To configure Application Proxy and publish applications, see the [setup documentation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
+    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
 - Users of the Managed Browser app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
-Note: Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser.
+
+    > [!NOTE]
+    > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser.
+
 
 #### Step 1: Enable automatic redirection to the Managed Browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
@@ -116,21 +161,19 @@ Outlook must be configured with an app protection policy that enables the settin
 #### Step 2: Assign an app configuration policy assigned for the Managed Browser.
 This procedure configures the Managed Browser app to use app proxy redirection. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-|||
-|-|-|
-|Key|Value|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Key                                                             | Value    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
+For more information about how the Managed Browser and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
 ## How to configure the homepage for the Managed Browser
 
 This setting allows you to configure the homepage that users see when they start the Managed Browser or create a new tab. Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-|||
-|-|-|
-|Key|Value|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: **https://www.bing.com**|
-
+|                                Key                                |                                                           Value                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: `<https://www.bing.com>` |
 
 ## How to configure bookmarks for the Managed Browser
 
@@ -142,19 +185,17 @@ This setting allows you to configure a set of bookmarks that is available to use
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-|||
-|-|-|
-|Key|Value|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the **&#124;** character.<br><br>Example: **Microsoft Bing&#124;https://www.bing.com**<br><br>To configure multiple bookmarks, separate each pair with the double character, **&#124;&#124;**<br><br>Example: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+|                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## How to specify allowed and blocked URLs for the Managed Browser
 
 Using the procedure to create a Managed Browser app configuration, supply the following key and value pair:
 
-|||
-|-|-|
 |Key|Value|
-|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|-|-|
+|Choose from:<br><br>- Specify allowed URLs (only these URLs are allowed; no other sites can be accessed): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specify blocked URLs (all other sites can be accessed): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>`URL1\|URL2\|URL3`<br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.
@@ -163,52 +204,52 @@ Using the procedure to create a Managed Browser app configuration, supply the fo
 ### URL format for allowed and blocked URLs
 Use the following information to learn about the allowed formats and wildcards that you can use when specifying URLs in the allowed and blocked lists:
 
--   You can use the wildcard symbol (**&#42;**) according to the rules in the following permitted patterns list:
+- You can use the wildcard symbol (**&#42;**) according to the rules in the following permitted patterns list:
 
--   Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
+- Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
 
--   You can specify port numbers in the address. If you do not specify a port number, the values used are:
+- You can specify port numbers in the address. If you do not specify a port number, the values used are:
 
-    -   Port 80 for http
+  -   Port 80 for http
 
-    -   Port 443 for https
+  -   Port 443 for https
 
-    Using wildcards for the port number is not supported. For example, **http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** are not supported.
+  Using wildcards for the port number is not supported. For example, `http://www.contoso.com:;` and `http://www.contoso.com: /;` are not supported.
 
--   Use the following table to learn about the permitted patterns that you can use when you specify URLs:
+- Use the following table to learn about the permitted patterns that you can use when you specify URLs:
 
-|URL|Details|Matches|Does not match|
-|-------|---------------|-----------|------------------|
-|http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-|http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|Matches all URLs that begin with www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-|http://&#42;.contoso.com/&#42;|Matches all subdomains under contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-|http://www.contoso.com/images|Matches a single folder|www.contoso.com/images|www.contoso.com/images/dogs|
-|http://www.contoso.com:80|Matches a single page, by using a port number|http://www.contoso.com:80|
-|https://www.contoso.com|Matches a single, secure page|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Matches a single folder and all subfolders|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Details                      |                                                Matches                                                |                                Does not match                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        `http://www.contoso.com`         |              Matches a single page               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              Matches a single page               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | Matches all URLs that begin with `www.contoso.com` |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     Matches all subdomains under contoso.com     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             Matches a single folder              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  Matches a single page, by using a port number   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          Matches a single, secure page           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    Matches a single folder and all subfolders    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
--   The following are examples of some of the inputs that you cannot specify:
+- The following are examples of some of the inputs that you cannot specify:
 
-    -   &#42;.com
+  - `*.com`
 
-    -   &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-    -   www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-    -   www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
-    -   IP addresses
+  - IP addresses
 
-    -   https://&#42;
+  - `https://*`
 
-    -   http://&#42;
+  - `http://*`
 
-    -   http://www.contoso.com:&#42;
+  - `http://www.contoso.com:*`
 
-    -   http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## How to access to managed app logs using the Managed Browser on iOS
 
@@ -253,3 +294,7 @@ Microsoft automatically collects anonymous data about the performance and use of
 
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
+
+## Next steps
+
+- [What are app protection policies?](app-protection-policy.md) 
