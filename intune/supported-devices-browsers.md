@@ -109,7 +109,7 @@ The following browsers are supported for these portals:
 - Microsoft Internet Explorer 11
 - Safari (latest version, Mac only)
 - Chrome (latest version)
-- Mozilla Firefox with Silverlight enabled [Learn more (versions prior to version 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (latest version)
 
 
 
