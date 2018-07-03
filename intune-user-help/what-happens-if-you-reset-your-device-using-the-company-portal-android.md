@@ -4,14 +4,17 @@
 title: What happens if you reset your Android device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03searchScope: - User help
+ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+searchScope:
+ - User help
 
 # optional metadata
 

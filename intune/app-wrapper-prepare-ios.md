@@ -2,12 +2,12 @@
 # required metadata
 
 title: Wrap iOS apps with the Intune App Wrapping Tool 
-description: Use the information in this topic to learn how to wrap your iOS apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
+description: Learn how to wrap your iOS apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 12/12/2017
+manager: dougeby
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 # Prepare iOS apps for app protection policies with the Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
@@ -59,7 +59,6 @@ Before you run the App Wrapping Tool, you need to fulfill some general prerequis
   * The input app must have entitlements set before being processed by the Intune App Wrapping Tool. [Entitlements](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) give the app additional permissions and capabilities beyond those typically granted. See [Setting app entitlements](#setting-app-entitlements) for instructions.
 
 ## Apple Developer prerequisites for the App Wrapping Tool
-
 
 To distribute wrapped apps exclusively to your organization's users, you need an account with the [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) and several entities for app signing that are linked to your Apple Developer account.
 
@@ -105,48 +104,48 @@ You will need the following to distribute apps wrapped by Intune:
 
 4. Click **Certificates, IDs & Profiles**.
 
-  ![Apple Developer portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer portal](./media/iOS-signing-cert-1.png)
 
 5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the top right corner to add an iOS certificate.
 
 6. Choose to create an **In-House and Ad Hoc** certificate under **Production**.
 
-  ![Select In-House and Ad Hoc certificate](./media/iOS-signing-cert-3.png)
+   ![Select In-House and Ad Hoc certificate](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
+   >[!NOTE]
+   >If do not plan to distribute the app, and only want to test it internally, you can use an iOS App Development certificate instead of a certificate for Production. If you use a development certificate, make sure the mobile provisioning profile references the devices on which the app will be installed.
 
 7. Click **Next** at the bottom of the page.
 
 8. Read the instructions on creating a **Certificate Signing Request (CSR)** using the Keychain Access application on your macOS computer.
 
-  ![Read instructions to create a CSR](./media/iOS-signing-cert-4.png)
+   ![Read instructions to create a CSR](./media/iOS-signing-cert-4.png)
 
 9. Follow the instructions above to create a Certificate Signing Request. On your macOS computer, launch the **Keychain Access** application.
 
 10. On the macOS menu at the top of the screen, go to  **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority**.  
 
-  ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-5.png)
+    ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-5.png)
 
 11. Follow the instructions from the Apple developer site above on how to create a CSR file. Save the CSR file to your macOS computer.
 
-  ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-6.png)
+    ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-6.png)
 
 12. Return to the Apple developer site. Click **Continue**. Then upload the CSR file.
 
 13. Apple generates your signing certificate. Download and save it to a memorable location on your macOS computer.
 
-  ![Download your signing certificate](./media/iOS-signing-cert-7.png)
+    ![Download your signing certificate](./media/iOS-signing-cert-7.png)
 
 14. Double-click the certificate file you just downloaded to add the certificate to a keychain.
 
 15. Open **Keychain Access** again. Locate your certificate by searching for its name in the top right search bar. Right-click on the item to bring up the menu and click **Get Info**. In the example screens, we are using a development certificate instead of a production certificate.
 
-  ![Add your certificate to a keychain](./media/iOS-signing-cert-8.png)
+    ![Add your certificate to a keychain](./media/iOS-signing-cert-8.png)
 
 16. An informational window appears. Scroll to the bottom and look under the **Fingerprints** label. Copy the **SHA1** string (blurred out) to use as the argument for "-c" for the App Wrapping Tool.
 
-  ![Add your certificate to a keychain](./media/iOS-signing-cert-9.png)
+    ![Add your certificate to a keychain](./media/iOS-signing-cert-9.png)
 
 
 
@@ -160,7 +159,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 4. Choose to create an **In House** provisioning profile under **Distribution**.
 
-  ![Select In House provisioning profile](./media/iOS-provisioning-profile-1.png)
+   ![Select In House provisioning profile](./media/iOS-provisioning-profile-1.png)
 
 5. Click **Continue**. Make sure to link the previously generated signing certificate to the provisioning profile.
 
@@ -179,6 +178,9 @@ You will need the following to distribute apps wrapped by Intune:
 3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
 4.  Open the **IntuneMAMPackager** folder and save its contents to your macOS computer. You are now ready to run the App Wrapping Tool.
+
+> [!NOTE]
+> The Intune MAM Packager may get mounted separately on your macOS computer and may result in a "file not found" error when running the wrapping commands. As such, moving the contents of the IntuneMAMPackager folder will allow for the path to the packager to be found during wrapping.
 
 ## Run the App Wrapping Tool
 
@@ -210,8 +212,8 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
 |**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
-|**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See Setting app entitlements for more details.|
-|**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See Setting app entitlements for more details. |
+|**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See [Setting app entitlements](#setting-app-entitlements) for more details.|
+|**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See  [Setting app entitlements](#setting-app-entitlements) for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
 |**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
 |**-b**|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, it's a good idea to increment the native app’s CFBundleVersion by the least significant component, like 1.0.0 -> 1.0.1. |
@@ -250,6 +252,16 @@ The wrapped app is saved in the output folder you specified previously. You can 
 > When uploading a wrapped app, you can try to update an older version of the app if an older (wrapped or native) version was already deployed to Intune. If you experience an error, upload the app as a new app and delete the older version.
 
 You can now deploy the app to your user groups and target app protection policies to the app. The app will run on the device using the app protection policies you specified.
+
+## How often should I rewrap my iOS application with the Intune App Wrapping Tool?
+The main scenarios in which you would need to rewrap your applications are as follows:
+* The application itself has released a new version. The previous version of the app was wrapped and uploaded to the Intune console.
+* The Intune App Wrapping Tool for iOS has released a new version that enables key bug fixes, or new, specific Intune application protection policy features. This happens after 6-8 weeks through GitHub repo for the [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+For iOS, while it is possible to wrap with different cert/provisioning profile than the original used to sign the app, if the entitlements specified in the app are not included in the new provisioning profile, wrapping will fail. Using the “-e” command-line option, which removes any missing entitlements from the app, to force wrapping to not fail in this scenario can cause broken functionality in the app.
+
+Some best practices for rewrapping include:
+* Ensuring that a different provisioning profile has all the required entitlements as any previous provisioning profile. 
 
 ## Error messages and log files
 Use the following information to troubleshoot issues you have with the app wrapping tool.
@@ -408,8 +420,8 @@ Use the following steps to get logs for your wrapped applications during trouble
 4. Click on the "Get Started" link.
 5. You can now share logs through email or copying them to a OneDrive location.
 
->[!NOTE]
-The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
+> [!NOTE]
+> The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

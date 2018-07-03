@@ -4,14 +4,17 @@
 title: You need to update your Company Portal app | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6searchScope: - User help
+ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
+searchScope:
+ - User help
 
 # optional metadata
 

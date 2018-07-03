@@ -3,9 +3,9 @@
 title: Technology decisions for BYOD with EMS
 description: Key technology decisions to enable BYOD and protect corporate data with Microsoft Enterprise Mobility + Security.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+#ms.reviewer: pfetty
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -45,7 +45,7 @@ You can easily drive users to enroll their devices into device management by dep
 **Compliance** – Some organizations need to comply with regulatory or other policies that call out specific MDM controls. For example, you need MDM to encrypt the entire device or to produce a report of all apps on the device.
 
 ## Common reasons to only manage the apps (MAM)
-MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a conditional access policy om Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
+MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a conditional access policy on Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
 
 **User experience** – MDM enrollment includes many warning prompts (enforced by the platform) that often result in the user deciding they would rather not access their email on their personal device after all. MAM is much less alarming to users, as they simply get a pop-up one time to let them know MAM protections are in place.
 
@@ -85,6 +85,6 @@ Still, many organizations often have specific risks they’re concerned about.  
 |Accidental data sharing or saving to unsecured locations | Disable printing | n/a|
 
 ## Next steps
-Now it’s time to decide if you are going to enable BYOD in your organization by focusing on device management, app management, or a combination of the two. The implementation choice is yours, where you can rest assured that the identity and security features available with Azure AD will be available regardless.
+Now it’s time to decide if you are going to enable BYOD in your organization by focusing on device management, app management, or a combination of the two. The implementation choice is yours, where you can rest assured that the identity and security features available with Azure AD will be available regardless.  
 
 Use the Intune [Planning Guide](planning-guide.md) to map out your next level of planning.

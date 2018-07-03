@@ -4,9 +4,9 @@
 title: Resolving threats found by Zimperium zIPS on iOS | Microsoft Docs
 description: Learn how to fix threats found on your iOS device.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:

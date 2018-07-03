@@ -4,9 +4,9 @@
 title: What happens if you reset your Windows device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:

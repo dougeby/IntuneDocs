@@ -4,16 +4,19 @@
 title: Installing the Company Portal app for macOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: c1601bb7-5397-44af-a2e2-9c370f23976f
-searchScope: - User help
+
+searchScope:
+ - User help
 
 # optional metadata
 

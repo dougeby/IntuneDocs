@@ -4,14 +4,17 @@
 title: Your password does not meet your company support's requirements | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 02/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7searchScope: - User help
+ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+searchScope:
+ - User help
 
 
 # optional metadata

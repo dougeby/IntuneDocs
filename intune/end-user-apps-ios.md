@@ -4,9 +4,9 @@
 title: How your iOS users get their apps 
 description: Methods for making iOS apps available to end users
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/28/2016
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 # How your iOS users get their apps
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune.
 
@@ -54,7 +54,7 @@ Enrolled users get their apps by tapping on the following tiles on the Apps scre
 
 ![iOS Company Portal apps screen](./media/ios-cp-app-main-apps-screen.png)
 
-For information on how to add apps and put them in these tiles, see [Add apps for enrolled devices to Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
+For information on how to add apps, see [How to add an app to Microsoft Intune](apps-add.md).
 
 ### See also
 [How your Android users get their apps](end-user-apps-android.md)

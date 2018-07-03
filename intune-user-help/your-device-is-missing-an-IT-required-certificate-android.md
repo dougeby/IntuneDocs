@@ -4,15 +4,17 @@
 title: Your device is missing a certificate | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2searchScope: - User help
+ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -31,7 +33,7 @@ If your device isn’t enrolled in Intune, and it’s missing a certain certific
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-To fix this issue and get the required certificate, there are two main steps that you'll need to do:
+To fix this issue and get the required certificate, there are two main steps that you need to do:
 
 - Identify the missing certificate by looking on a company or school PC.
 - Use your device to download the missing certificate from the Internet.

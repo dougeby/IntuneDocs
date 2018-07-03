@@ -16,7 +16,7 @@
     "resource": [
       {
         "files": [
-          "**/media/**", 
+          "**/media/**",
           "**/*.png",
           "**/*.gif",
           "**/*.jpg"
@@ -30,14 +30,18 @@
     ],
     "overwrite": [],
     "externalReference": [],
-"globalMetadata": {
+    "globalMetadata": {
       "breadcrumb_path": "/enterprise-mobility-security/toc.json",
-      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/Intunedocs",
+      "feedback_product_url": "https://microsoftintune.uservoice.com/",  
       "searchScope": ["Intune"]
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "intune-azure"
+    "dest": "intune-azure",
+    "markdownEngineName": "markdig"
   }
 }

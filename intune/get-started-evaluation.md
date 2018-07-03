@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Getting started with Intune
-titlesuffix: "Azure portal"
+title: Getting started with Microsoft Intune
+titleSuffix: 
 description: Go through a series of short hands-on exercises to learn about Intune.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
-ms.topic: article
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 02/23/2018
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

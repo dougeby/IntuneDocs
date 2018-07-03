@@ -3,9 +3,9 @@
 title: Use managed devices to get work done | Microsoft Docs
 description: Understand what it means to enroll your device into management with Intune.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:

@@ -4,15 +4,18 @@
 title: You need to identify your iOS device when trying to enroll | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6searchScope: - User help
+ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -4,14 +4,17 @@
 title: Your device is missing a required certificate | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213searchScope: - User help
+ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
+searchScope:
+ - User help
 
 # optional metadata
 

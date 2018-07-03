@@ -4,9 +4,9 @@
 title: Send iOS logs to Microsoft developers | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
 ms.prod:

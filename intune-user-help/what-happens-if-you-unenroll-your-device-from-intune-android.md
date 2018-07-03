@@ -4,15 +4,18 @@
 title: What happens if you unenroll your Android device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481searchScope: - User help
+ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
+searchScope:
+ - User help
 
 # optional metadata
 

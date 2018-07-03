@@ -4,16 +4,18 @@
 title: Your iOS version isn't yet supported | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 18a459be-43ce-42f7-8614-fb3f2c33b304
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 

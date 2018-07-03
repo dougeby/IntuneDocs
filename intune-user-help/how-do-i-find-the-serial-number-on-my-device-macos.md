@@ -4,16 +4,18 @@
 title: How do I find the serial number on my iOS device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 528f2b32-6802-42f7-af30-b3d1397f689a
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 

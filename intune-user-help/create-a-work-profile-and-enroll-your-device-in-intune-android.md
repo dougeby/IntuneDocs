@@ -4,9 +4,9 @@
 title: Enroll your device using a work profile | Microsoft Docs
 description: How to make Android devices safer with work profiles.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod:

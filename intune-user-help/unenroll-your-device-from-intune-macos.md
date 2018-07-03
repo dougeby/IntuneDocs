@@ -4,9 +4,9 @@
 title: Unenroll your macOS device from Intune | Microsoft Docs
 description: "Describes how to unenroll a macOS device from Intune"
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod:

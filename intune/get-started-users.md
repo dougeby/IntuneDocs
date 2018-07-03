@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Get started with users
-titlesuffix: "Azure portal"
-description: Add a user to Intune to allow them to access company resources on mobile devices.
+title: Get started managing users
+titlesuffix: Microsoft Intune
+description: Add a user to Intune and assign them a license so they can access company resources on mobile devices.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,19 +27,19 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Get started with managing users
+# Get started managing users
 
 Think about all the different people in your organization. Every one of them that uses company data will need a user to manage access to it in Intune.
 
 ## How do I create a user?
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Using **Search resources**, search for **Intune**.
-3. Once you've opened the **Microsoft Intune** blade, select **Users**. On the **All Users** page, select **+ New user**.
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. Once you've opened the **Microsoft Intune** pane, select **Users**. On the **All Users** page, select **+ New user**.
 4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
 5. Under **Groups**, choose the test group to add the user to.
 6. Save the automatically generated user password so that you can use it to log in to a test device. You must give this password to users so that they can change it to a normal password that they can remember.
-7. On the **User** blade, select **Create**.
+7. On the **User** pane, select **Create**.
 
 ## Assigning licenses to users
 
@@ -50,8 +50,8 @@ After you've created a user, you need to use the [Office 365 portal](http://go.m
 3. You may need to wait a moment for all of the user's information to load. Once it loads, select **Edit** for the user's **Product licenses**.
 4. Assign the user a **Location**, then switch Intune to **on**.
 
- > [!NOTE]
- > This uses one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
+   > [!NOTE]
+   > This uses one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
 
 5. Select **Save**.
 

@@ -4,9 +4,9 @@
 title: Using the Intune Company Portal website | Microsoft Docs
 description: Describes the Company Portal website and provides links to steps for tasks that end users can do on the website
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod:
@@ -42,8 +42,6 @@ Users can do the following tasks from the Company Portal website:
 -   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
 -   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
-
--	[Sync your device manually to get apps to install more quickly](sync-your-device-manually-cpwebsite.md)
 
 -   Find the company support's contact information, if you configured it
 

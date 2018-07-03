@@ -6,11 +6,11 @@ metadata:
   title: Microsoft Intune documentation
   description: Get started quickly with Microsoft Intune. Use the cloud-based enterprise mobility management (EMM) service to enable your workforce to be productive while keeping your corporate data protected.
   keywords: protect, company, data, Azure, Intune, EMM, device, app, management
-  author: arob98
-  ms.author: angrobe
-  manager: angrobe
+  author: dougeby
+  ms.author: dougeby
+  manager: dougeby
   ms.date: 10/31/2017
-  ms.topic: article
+  ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
 sections:
@@ -133,7 +133,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="https://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a>
+    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a>
     - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Read the Enterprise Mobility and Security blog</a>
     - html: <a href="https://blogs.technet.microsoft.com/intunesupport/"> Get help on the Intune support blog</a>
     - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Give feedback on Intune at UserVoice</a>

@@ -4,16 +4,19 @@
 title: You need to identify your macOS device when trying to enroll | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: fc21444f-65d6-4693-915e-47cc44ff880c
-searchScope: - User help
+
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -4,14 +4,17 @@
 title: You need to enable Code Integrity | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028searchScope: - User help
+ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -4,16 +4,18 @@
 title: How to enable User Account Control | Microsoft Docs
 description: Learn how to enable UAC to access company resources.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: e3ebea03-bd06-4b5e-8709-0a504c5d7bf7
-searchScope: - User help
+searchScope:
+ - User help
 
 # optional metadata
 

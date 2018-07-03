@@ -4,10 +4,10 @@
 title: Resolving threats found by Symantec Endpoint Protection Mobile for Android | Microsoft Docs
 description: Learn how to fix threats found on your Android device.
 keywords:
-author: barlanmsft
+author: lenewsad
 
-ms.author: barlan
-manager: angrobe
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:

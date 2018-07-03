@@ -4,14 +4,17 @@
 title: You need to turn off Unknown sources | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7searchScope: - User help
+ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
+searchScope:
+ - User help
 
 # optional metadata
 

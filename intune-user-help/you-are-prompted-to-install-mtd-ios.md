@@ -4,9 +4,9 @@
 title: You need to install Mobile Threat Defense on your iOS device | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 10/17/2017
 ms.topic: article
 ms.prod:

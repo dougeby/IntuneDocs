@@ -11,6 +11,8 @@
     items:
     - name: Changes to groups
       href: groups-get-started.md
+    - name: Legacy Intune PC client
+      href: intune-legacy-pc-client.md
   - name: Sign up for a free trial
     href: free-trial-sign-up.md
   - name: What's new
@@ -68,6 +70,10 @@
       href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
+  - name: MAM FAQ
+    href: mam-faq.md
+  - name: Policy & profile FAQ
+    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Plan deployment
   items:
   - name: Planning guide
@@ -124,7 +130,7 @@
     - name: Supported configurations
       href: supported-devices-browsers.md
       items:
-      - name: Network bandwidth usage
+      - name: Network configuration
         href: network-bandwidth-use.md
     - name: Sign in to Intune
       href: account-sign-up.md
@@ -136,6 +142,8 @@
       href: groups-add.md
     - name: Assign licenses
       href: licenses-assign.md
+    - name: Intune licenses
+      href: licenses.md
     - name: Set the MDM authority
       href: mdm-authority-set.md
   - name: Enroll devices
@@ -164,10 +172,18 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
+      - name: Enrollment status page
+        href: windows-enrollment-status.md
       - name: Windows AutoPilot Deployment Program
         href: enrollment-autopilot.md
     - name: Set up Android enrollment
-      href: android-enroll.md
+      items:
+      - name: Set up Android enrollment
+        href: android-enroll.md
+      - name: Manage Android for Work devices
+        href: android-enterprise-overview.md        
+      - name: Samsung Knox Mobile Enrollment 
+        href: android-samsung-knox-mobile-enroll.md
     - name: Set up iOS enrollment
       href: ios-enroll.md
       items:
@@ -179,9 +195,15 @@
         href: apple-configurator-enroll-ios.md
     - name: Set up macOS enrollment
       href: macos-enroll.md
+    - name: Install Intune software client on Windows PCs
+      href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Troubleshoot device enrollment
+      href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
     href: device-management.md
     items:
+    - name: Device management capabilities
+      href: device-management-capabilities.md
     - name: Bypass activation lock
       href: device-activation-lock-bypass.md
     - name: Manage Windows Fresh Start
@@ -190,6 +212,8 @@
       href: device-locate.md
     - name: Enable iOS lost mode
       href: device-lost-mode.md
+    - name: Turn on iOS supervised mode
+      href: device-supervised-mode.md
     - name: Lock device
       href: device-remote-lock.md
     - name: Reset passcode
@@ -200,6 +224,8 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Erase device
+      href: device-erase.md
     - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
@@ -226,6 +252,9 @@
           href: store-apps-windows-phone-8-1.md
         - name: Microsoft Store apps
           href: store-apps-windows.md
+          items:
+          - name: Manually add Company Portal app
+            href: store-apps-company-portal-app.md
         - name: Android for Work apps
           href: apps-add-android-for-work.md
         - name: Office 365 apps for Windows 10
@@ -242,10 +271,21 @@
           href: lob-apps-windows-phone.md
         - name: Windows LOB apps
           href: lob-apps-windows.md
+        - name: Sideload Windows LOB apps
+          href: app-sideload-windows.md          
+        - name: macOS LOB apps
+          href: lob-apps-macos.md          
       - name: Web apps
         href: web-app.md
+      - name: Built-in apps
+        href: apps-add-built-in.md        
     - name: Deploy apps
       href: apps-deploy.md
+      items:
+      - name: Include and exclude apps
+        href: apps-inc-exl-assignments.md      
+      - name: Deploy Windows 10 apps
+        href: apps-windows-10-app-deploy.md            
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -276,6 +316,28 @@
       items:
       - name: Selectively wipe apps
         href: apps-selective-wipe.md
+      - name: Use app protection policies
+        href: app-protection-policy.md
+        items:
+        - name: Create app protection policies
+          href: app-protection-policies.md
+          items:
+          - name: Android settings
+            href: app-protection-policy-settings-android.md
+          - name: iOS settings
+            href: app-protection-policy-settings-ios.md
+          - name: Data transfer exceptions
+            href: app-protection-policies-exception.md
+        - name: Validate app protection policies
+          href: app-protection-policies-validate.md
+        - name: Monitor app protection user status
+          href: app-protection-policies-monitor.md
+        - name: Get ready for WIP app protection policies
+          href: app-protection-policies-configure-windows-10.md
+        - name: Create & assign WIP app protection policies
+          href: windows-information-protection-policy-create.md
+        - name: Manage data transfer between iOS apps
+          href: data-transfer-between-apps-manage-ios.md
   - name: Configure devices
     href: device-profiles.md
     items:
@@ -315,8 +377,19 @@
         href: device-restrictions-windows-10.md
       - name: Windows 10 Team
         href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
       - name: Android for Work
         href: device-restrictions-android-for-work.md
+    - name: Configure endpoint protection
+      href: endpoint-protection-configure.md
+      items:
+      - name: macOS
+        href: endpoint-protection-macos.md
+      - name: Windows 10
+        href: endpoint-protection-windows-10.md
+    - name: Configure Kiosk settings
+      href: kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -356,16 +429,14 @@
         href: wi-fi-settings-macos.md
       - name: Windows 8.1 & Windows 10
         href: wi-fi-settings-import-windows-8-1.md
+    - name: Education
+      items:
+      - name: iOS shared devices
+        href: education-settings-configure-ios-shared.md
+      - name: Windows 10
+        href: education-settings-configure.md
     - name: Configure Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Windows 10 endpoint protection
-      href: endpoint-protection-windows-10.md
-    - name: Configure Windows 10 education settings
-      href: education-settings-configure.md
-    - name: Configure iOS education settings
-      href: education-settings-configure-ios.md
-    - name: Configure iOS education shared devices
-      href: education-settings-configure-ios-shared.md
     - name: Configure iOS update policies
       href: software-updates-ios.md
     - name: Configure certificates
@@ -404,6 +475,10 @@
       href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
+    - name: Location-based policy
+      href: use-network-locations.md
+    - name: Evaluate policy
+      href: policy-evaluate.md
     - name: Actions for noncompliance
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
@@ -415,6 +490,8 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal
@@ -431,28 +508,32 @@
       href: conditional-access-integrate-jamf.md
     - name: Enforce compliance on Macs managed with Jamf Pro
       href: conditional-access-assign-jamf.md
-  - name: Protect app and device data
+  - name: Protect device data
     items:
-    - name: Use app protection policies
-      href: app-protection-policy.md
+    - name: Privacy and personal data
+      href: privacy-personal-data.md
       items:
-      - name: Create app protection policies
-        href: app-protection-policies.md
+      - name: Data collection
+        href: privacy-data-collect.md
+      - name: Data storage and processing
+        href: privacy-data-store-process.md
+      - name: Data security and sharing
+        href: privacy-data-secure-share.md
         items:
-        - name: Android settings
-          href: app-protection-policy-settings-android.md
-        - name: iOS settings
-          href: app-protection-policy-settings-ios.md
-      - name: Validate app protection policies
-        href: app-protection-policies-validate.md
-      - name: Monitor app protection user status
-        href: app-protection-policies-monitor.md
-      - name: Get ready for WIP app protection policies
-        href: app-protection-policies-configure-windows-10.md
-      - name: Create & assign WIP app protection policies
-        href: windows-information-protection-policy-create.md
-      - name: Manage data transfer between iOS apps
-        href: data-transfer-between-apps-manage-ios.md
+        - name: Data Apple sends to Intune
+          href: data-apple-sends-to-intune.md
+        - name: Data Google sends to Intune
+          href: data-google-sends-to-intune.md
+        - name: Data Intune sends to Apple
+          href: data-intune-sends-to-apple.md
+        - name: Data Intune sends to Google
+          href: data-intune-sends-to-google.md
+        - name: Information shared from Jamf Pro to Intune
+          href: conditional-access-integrate-jamf.md
+      - name: View and correct personal data
+        href: privacy-data-view-correct.md
+      - name: Audit, export, delete
+        href: privacy-data-audit-export-delete.md
     - name: Mobile Threat Defense
       href: mobile-threat-defense.md
       items:
@@ -461,10 +542,10 @@
         items:
         - name: Lookout and Intune integration
           href: lookout-mtd-connector-integration.md
-      - name: Set up Skycure
+      - name: Set up Symantec
         href: skycure-mobile-threat-defense-connector.md
         items:
-        - name: Skycure and Intune integration
+        - name: Symantec and Intune integration
           href: skycure-mtd-connector-integration.md
       - name: Set up Check Point
         href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
@@ -476,6 +557,11 @@
         items:
         - name: Zimperium and Intune integration
           href: zimperium-mtd-connector-integration.md
+      - name: Set up Pradeo
+        href: pradeo-mobile-threat-defense-connector.md
+        items:
+        - name: Pradeo and Intune integration
+          href: pradeo-mtd-connector-integration.md
       - name: Set up Intune for MTD
         items:
         - name: Add MTD apps
@@ -484,6 +570,8 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
+    - name: Windows Defender ATP
+      href: advanced-threat-protection.md        
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Set up Windows Hello
@@ -495,56 +583,45 @@
   - name: Manage software updates
     href: windows-update-for-business-configure.md
   - name: Manage PCs with software agent
-    href: /intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune
-    maintainContext: true
+    href: manage-windows-pcs-with-microsoft-intune.md
     items:
     - name: Compare PC management
-      href: /intune-classic/deploy-use/pc-management-comparison
-      maintainContext: true
+      href: pc-management-comparison.md
     - name: Install the PC client
-      href: /intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune
-      maintainContext: true
+      href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Common PC management tasks
-      href: /intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client
-      maintainContext: true
+      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
       items:
       - name: PC policies
-        href: /intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management
-        maintainContext: true
+        href: use-policies-to-simplify-windows-pc-management.md
       - name: View inventory
-        href: /intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune
-        maintainContext: true
+        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
       - name: Retire PCs
-        href: /intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune
-        maintainContext: true
+        href: retire-a-windows-pc-with-microsoft-intune.md
       - name: Link PCs to users
-        href: /intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune
-        maintainContext: true
+        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
       - name: Remote assistance
-        href: /intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune
-        maintainContext: true
+        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
     - name: Policies to protect Windows PCs
-      href: /intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune
-      maintainContext: true
+      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
       items:
       - name: Software updates
-        href: /intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune
-        maintainContext: true
+        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
       - name: Windows Firewall
-        href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
-        maintainContext: true
+        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
       - name: Endpoint Protection
-        href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
-        maintainContext: true
+        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
     - name: Add apps for Intune client PCs
-      href: /intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune
-      maintainContext: true
+      href: add-apps-for-windows-pcs-in-microsoft-intune.md
     - name: Manage license agreements
-      href: /intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune
-      maintainContext: true
+      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
     - name: Resolve policy conflicts
-      href: /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts
-      maintainContext: true
+      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+  - name: Manage Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: Upgrade Windows Holographic
+      href: holographic-upgrade.md
   - name: Educate users
     href: end-user-educate.md
     items:
@@ -560,14 +637,36 @@
       href: end-user-apps-ios.md
     - name: How to get Windows apps
       href: end-user-apps-windows.md
+    - name: Data Intune sends to Apple
+      href: data-intune-sends-to-apple.md
+    - name: Data Intune sends to Google
+      href: data-intune-sends-to-google.md
+    - name: Data Apple sends to Intune
+      href: data-apple-sends-to-intune.md
+    - name: Data Google sends to Intune
+      href: data-google-sends-to-intune.md
   - name: Monitor and troubleshoot
     items:
     - name: Help users troubleshoot problems
       href: help-desk-operators.md
+    - name: Troubleshoot company resource access problems
+      href: troubleshoot-company-resource-access-problems.md      
     - name: Audit logs for Intune activities
       href: monitor-audit-logs.md
     - name: Review app protection logs
       href: app-protection-policy-settings-log.md
+    - name: Troubleshoot email profiles
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Troubleshoot software updates
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Troubleshoot endpoint protection
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Troubleshoot policies
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Troubleshoot conditional access
+      href: troubleshoot-conditional-access.md
+    - name: Troubleshoot Exchange connectors
+      href: troubleshoot-exchange-connector.md
   - name: Automate and customize
     items:
     - name: Configure custom device settings
@@ -590,10 +689,10 @@
         href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
+      - name: Windows Holographic for Business
+        href: custom-settings-windows-holographic.md
       - name: Android for Work
         href: custom-settings-android-for-work.md
-    - name: Sideload Windows line-of-business apps
-      href: app-sideload-windows.md
 - name: Developer guidance
   items:
   - name: Protect apps with Intune App SDK
@@ -613,7 +712,7 @@
       href: app-sdk-android.md
     - name: Intune App SDK Cordova plugin
       href: app-sdk-cordova.md
-    - name: Intune App SDK Xamarin component
+    - name: Intune App SDK Xamarin Bindings
       href: app-sdk-xamarin.md
   - name: Use the Intune Data Warehouse
     href: reports-nav-create-intune-reports.md
@@ -631,6 +730,8 @@
       href: reports-proc-data-rest.md
     - name: Data Warehouse API endpoint
       href: reports-api-url.md
+    - name: Data Warehouse application-only authentication
+      href: data-warehouse-app-only-auth.md      
     - name: Data Warehouse data model
       href: reports-ref-data-model.md
       items:
@@ -654,6 +755,8 @@
         href: reports-ref-user-device.md
       - name: Reference for user entity
         href: reports-ref-user.md
+    - name: Move your Intune Data Warehouse account data
+      href: data-warehouse-account-move.md
   - name: Use Azure AD to access Intune APIs in Microsoft Graph
     href: intune-graph-apis.md
     items:

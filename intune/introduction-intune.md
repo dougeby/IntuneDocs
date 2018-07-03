@@ -2,12 +2,12 @@
 # required metadata
 
 title: What is Microsoft Intune
-description: Learn how Intune is the mobile device management(MDM) and mobile app management (MAM) component of the Enterprise Mobility + Security solution and how it helps you protect company data.
+description: Learn how Intune is the mobile device management (MDM) and mobile app management (MAM) component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
-author: Lindavr
-ms.author: lindavr
-manager: angrobe
-ms.date: 07/28/2017
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom:
 
 # What is Intune?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune is a cloud-based service in the enterprise mobility management (EMM) space that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.
@@ -87,7 +87,7 @@ When we talk about app configuration and Intune, we are referring specifically t
 When you use Intune with the other services in EMS, you can provide your organization mobile app security over and above what is provided by the mobile operating system and the mobile apps themselves through app configuration. An app that is managed with EMS has access to a broader set of mobile app and data protections that includes:
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*	[Multi-factor authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+*	[Multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [App conditional access - allow access if the mobile app contains corporate data](app-based-conditional-access-intune.md)
 * [Isolating corporate data from personal data inside the same app](app-protection-policy.md)
 * [App protection policy (PIN, encryption, save-as, clipboard, etc.)](app-protection-policies.md)

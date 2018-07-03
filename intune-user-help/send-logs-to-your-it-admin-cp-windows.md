@@ -4,9 +4,9 @@
 title: Send logs to your company support for Windows 10 devices | Microsoft Docs
 description: Enroll a Windows 10 1511+ device into Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
@@ -32,11 +32,14 @@ ms.custom: intune-enduser
 
 If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
-1.	Open the **Company Portal** app.
-2.	Select the **Settings** gear, then **Send Logs**.
-3.	**Share** will open. Select **Mail**. This will create an email message with the Company Portal logs attached that can be sent to your company support.
+> [!Note]		
+> The Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
-  ![The Send Logs dialog from the Company Portal app's Settings page. The link to click says "Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal."](./media/w10-share-logs-after-1711.png)
+1. Open the **Company Portal** app.
+2. Select the **Settings** gear, then **Send Logs**.
+3. **Share** will open. Select **Mail**. This will create an email message with the Company Portal logs attached that can be sent to your company support.
+
+   ![The Send Logs dialog from the Company Portal app's Settings page. The link to click says "Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal."](./media/w10-share-logs-after-1711.png)
 
 You may also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md) to give your company support more help in trying to troubleshoot any issues they may find.
 

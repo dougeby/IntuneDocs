@@ -4,9 +4,9 @@
 title: Fix common issues with your managed Samsung Knox device | Microsoft Docs
 description: Find out ways to solve common issues with your Samsung Knox device.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
 ms.prod:

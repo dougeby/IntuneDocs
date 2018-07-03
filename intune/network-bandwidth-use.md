@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use
-description: intune network bandwidth usage
+title: Network requirements and bandwidth details for Microsoft Intune
+titlesuffix: 
+description: Review network configuration requirements and bandwidth details for Intune.
 keywords:
-author: nathbarn
-ms.author: nathbarn
-manager: angrobe
-ms.date: 01/16/2018
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,9 +27,9 @@ ms.custom: intune-classic
 
 ---
 
-# Intune network bandwidth use
+# Intune network configuration requirements and bandwidth
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 This guidance helps Intune admins understand the network requirements for the Intune service. You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.
 
@@ -40,15 +41,15 @@ This table lists the approximate size and frequency of common content that trave
 
 |Content type|Approximate size|Frequency and details|
 |----------------|--------------------|-------------------------|
-|Intune client installation<br /><br />**The following requirements are in addition to the Intune client installation**|125 MB|**One time**<br /><br />The size of the client download varies depending on the operating system of the client computer.|
-|Client enrollment package|15 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
-|Endpoint Protection agent|65 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
-|Operations Manager agent|11 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
-|Policy agent|3 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
-|Remote Assistance via Microsoft Easy Assist agent|6 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
-|Daily client operations|6 MB|**Daily**<br /><br />The Intune client regularly communicates with the Intune service to check for updates and policies, and to report the client’s status to the service.|
-|Endpoint Protection malware definition updates|Varies<br /><br />Typically 40 KB to 2 MB|**Daily**<br /><br />Up to three times a day.|
-|Endpoint Protection engine update|5 MB|**Monthly**|
+|Intune client installation<br /><br />**The following requirements are in addition to the Intune client installation**|125 MB|**One time**<br /><br />The size of the client download varies depending on the operating system of the client computer.|
+|Client enrollment package|15 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
+|Endpoint Protection agent|65 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
+|Operations Manager agent|11 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
+|Policy agent|3 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
+|Remote Assistance via Microsoft Easy Assist agent|6 MB|**One time**<br /><br />Additional downloads are possible when there are updates for this content type.|
+|Daily client operations|6 MB|**Daily**<br /><br />The Intune client regularly communicates with the Intune service to check for updates and policies, and to report the client’s status to the service.|
+|Endpoint Protection malware definition updates|Varies<br /><br />Typically 40 KB to 2 MB|**Daily**<br /><br />Up to three times a day.|
+|Endpoint Protection engine update|5 MB|**Monthly**|
 |Software updates|Varies<br /><br />The size depends on the updates you deploy.|**Monthly**<br /><br />Typically, software updates release on the second Tuesday of each month.<br /><br />A newly enrolled or deployed computer can use more network bandwidth while downloading the full set of previously released updates.|
 |Service packs|Varies<br /><br />The size varies for each service pack you deploy.|**Varies**<br /><br />Depends on when you deploy service packs.|
 |Software distribution|Varies<br /><br />The size depends on the software you deploy.|**Varies**<br /><br />Depends on when you deploy software.|
@@ -63,11 +64,13 @@ A caching proxy server that receives content requests from clients can retrieve 
 
 The following are typical settings to use for a proxy server that caches content for Intune clients.
 
-|Setting|Recommended value|Details|
-|-----------|---------------------|-----------|
-|Cache size|5 GB to 30 GB|The value varies based on the number of client computers in your network and the configurations you use. To prevent files from being deleted too soon, adjust the size of the cache for your environment.|
-|Individual cache file size|950 MB|This setting might not be available in all caching proxy servers.|
-|Object types to cache|HTTP<br /><br />HTTPS<br /><br />BITS|Intune packages are CAB files retrieved by Background Intelligent Transfer Service (BITS) download over HTTP.|
+
+|          Setting           |           Recommended value           |                                                                                                  Details                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Cache size         |             5 GB to 30 GB             | The value varies based on the number of client computers in your network and the configurations you use. To prevent files from being deleted too soon, adjust the size of the cache for your environment. |
+| Individual cache file size |                950 MB                 |                                                                     This setting might not be available in all caching proxy servers.                                                                     |
+|   Object types to cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune packages are CAB files retrieved by Background Intelligent Transfer Service (BITS) download over HTTP.                                               |
+
 For information about using a proxy server to cache content, see the documentation for your proxy server solution.
 
 ### Use Background Intelligent Transfer Service on computers
@@ -119,7 +122,7 @@ The following tables list the ports and services that the Intune client accesses
 |portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com |13.64.196.170|
 |fei.msua01.manage.microsoft.com<br> portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com |40.71.34.120 |
 |fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com |13.64.198.190|
-|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br> m.fei.msua02.manage.microsoft.com |	13.64.198.190|
+|fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br> m.fei.msua02.manage.microsoft.com |  13.64.198.190|
 |fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |13.64.188.173|
 |fei.msua04.manage.microsoft.com<br> portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com |40.71.32.174|
 |fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com |13.64.197.181 |
@@ -164,14 +167,16 @@ The following tables list the ports and services that the Intune client accesses
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### Apple device network information
-| Hostname  | URL (IP address/subnet) | Protocol | Port | Device |
-| --- | --- | --- | --- | --- |
-|  Admin Console  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS and macOS |
-| Admin Console  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS and macOS |
-| Admin Console  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS and macOS  |
-| PI Server  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | For Apple iOS and macOS cloud messaging. |
-| Device Services  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Device Services  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Device Services  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Devices (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 and 443 | Apple only. &#39;#&#39; is a random number from 0 to 200. |
-| Devices (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 or 443 | Apple only |
+
+|         Hostname         |                                        URL (IP address/subnet)                                        |  Protocol  |     Port     |                          Device                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Admin Console       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS and macOS                    |
+|      Admin Console       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS and macOS                    |
+|      Admin Console       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS and macOS                    |
+|        PI Server         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         For Apple iOS and macOS cloud messaging.          |
+|     Device Services      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Device Services      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Device Services      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Devices (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 and 443 | Apple only. &#39;#&#39; is a random number from 0 to 200. |
+| Devices (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 or 443   |                        Apple only                         |
+

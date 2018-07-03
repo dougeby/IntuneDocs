@@ -4,14 +4,17 @@
 title: Set or change your password | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437csearchScope: - User help
+ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+searchScope:
+ - User help
 
 # optional metadata
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Install Office 365 to macOS devices using Intune
-titlesuffix: "Azure portal"
-description: "Learn how you can use Intune to make it easier to install Office 365 apps on macOS devices."
+title: Install Office 365 to macOS devices using Microsoft Intune
+titlesuffix: 
+description: Learn how you can use Microsoft Intune to install Office 365 apps on macOS devices.
 keywords:
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 12/13/2017
+manager: dougeby
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,59 +27,65 @@ ms.custom: intune-azure
 
 ---
 
-# How to assign Office 365 to macOS devices with Microsoft Intune
+# Assign Office 365 to macOS devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 apps to macOS devices. This new app type allows you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep the apps more secure and up-to-date. The apps you want appear as one app in the list of apps in the Intune console.
+The *Store app* type makes it easy for you to assign Office 365 apps to macOS devices. By using this app type, you can install Word, Excel, PowerPoint, Outlook, and OneNote. To help keep the apps more secure and up to date, the apps come with Microsoft AutoUpdate (MAU). The apps that you want are displayed as one app in the list of apps in the Intune console.
 
 
 ## Before you start
 
+Before you begin adding Office 365 to macOS devices, understand the following details:
+
 - Devices to which you deploy these apps must be running macOS 10.10 or later.
-- Intune only supports adding Office apps included with Office 2016 for Mac suite.
-- If any Office apps are opened when Intune installs the app suite, end users might lose data from unsaved files.
+- Intune supports adding the Office apps that are included with Office 2016 for Mac suite only.
+- If any Office apps are open when Intune installs the app suite, users might lose data from unsaved files.
 
+## Create and configure the app suite
 
-## Get started
-Add Office 365 using the **Apps** blade.
-1.	Sign into the Azure portal.
-2.	Choose **More Services** > **Monitoring + Management** > **Intune**.
-3.	On the **Intune** blade, choose **Mobile apps**.
-4.	In the **Mobile apps** workload, choose **Apps** in the **Manage** group. Choose **Add**.
-5.	On the **Add App** blade, choose **Office 365** > **macOS**.
-6.  Select **Add**.
-
-## Configure the app suite
-
-Provide information about the app suite. This information helps you to identify it in Intune, and also helps users to find it in the Company Portal app.
-
-1.	On the **Add App** blade, choose **App Suite Information**.
-2.  Specify the following information:
-	- **Suite Name** - Enter the name of the app suite as it is displayed in the company portal. Make sure all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
-	- **Suite Description** - Enter a description for the app suite.
-	- **Publisher** - Microsoft appears as the publisher.
-	- **Category** - Optionally, select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app suite when they browse the company portal.
-	- **Display this as a featured app in the Company Portal** - This will display the app suite prominently on the main page of the company portal when users browse for apps.
-	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-	- **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-	- **Developer** - Microsoft appears as the developer.
-	- **Owner** - Microsoft appears as the owner.
-	- **Notes** - Enter any notes you would like to associate with this app.
-	- **Upload Icon** - Upload an icon that is displayed with the app when users browse the company portal.
-3.	Select **OK**. The suite appears in the list of apps as a single entry.
+Add Office 365 from the **Apps** pane.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All Services** > **Monitoring + Management** > **Intune**.
+3. In the **Intune** pane, select **Mobile apps**.
+4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**. 
+5. Select **Add**.
+6. In the **App type** list, in the **Office 365 Suite** group, select **macOS**.
+7. To get information about the app suite, select **App Suite Information**.  
+    This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
+8. Enter the following information:
+	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
+	- **Suite Description**: Enter a description for the app suite.
+	- **Publisher**: Microsoft appears as the publisher.
+	- **Category**: Select one or more of the built-in app categories, or a category you created. This setting makes it easier for users to find the app suite when they browse the company portal.
+	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
+	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
+	- **Developer**: Microsoft appears as the developer.
+	- **Owner**: Microsoft appears as the owner.
+	- **Notes**: Optionally, enter any notes that you want to associate with this app.
+	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
+9. Select **OK**.
+10. On the **Add app** pane, select **Add**.  
+	The suite appears in the list of apps as a single entry.
 
 ## Configure app assignments
 
-In this step, configure the assignments for the app suite. Note that the available app type is coming soon.
+In this step, configure the assignments for the app suite. 
 
-1.	Select the app suite in the list of apps, and select **Assignments**.
-2.	Choose **Select groups**.
-3.	Assign the suite to the groups you choose. For more information, see [How to assign apps to groups with Microsoft Intune](/intune/apps-deploy).
-4.	For each group, you select **Require Install**.
-		>[!Note]
-		> You cannot uninstall Office 365 through Intune.
+1. In the list of apps, select the **Office 365** app suite to display the **Office 365** overview pane.
+2. In the **Office 365** pane, select **Assignments**.
+3. To add a group that will use the app suite, select **Add group**.  
+    The **Add group** pane is displayed.
+4. Set the **Assignment type** to **Required**.
+5. Assign the suite to the groups that you select. For more information, see [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
-5. Select **Save** to commit your assignments.
+    >[!Note]
+    > You cannot uninstall the Office 365 app suite through Intune.
+
+5. In the **Assign** pane, select **OK**.
+6. In the **Add group** pane, select **OK**.
+7. To commit your assignments, select **Save**.
 
 ## Next steps
 
-To learn about adding Office 365 apps to Windows 10 device, see [How to assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
+- To learn about adding Office 365 apps to Windows 10 devices, see [Assign Office 365 ProPlus 2016 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
+- To learn about including and excluding app assignments from groups of users, see [Include and exclude app assignments](apps-inc-exl-assignments.md).

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Manage transferring data between iOS apps
-titlesuffix: "Azure portal"
-description: Use this topic to understand how you can use the iOS Open-in feature and mobile app management policies to manage data transfers between apps."
+titlesuffix: Microsoft Intune
+description: Understand how to use mobile app management policies in Microsoft Intune to manage data transfers between apps.
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 11/06/2017
+author: msmimart
+ms.author: mimart
+manager: dougeby
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,11 +28,11 @@ ms.custom: intune-azure
 
 ---
 
-# How to manage data transfer between iOS apps
+# How to manage data transfer between iOS apps in Microsoft Intune
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
 
--   Prevent company data loss  by configuring an app protection policy for the apps, which we will refer to as **policy-managed**  apps. See [all the Intune-enlightened apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+-   Prevent company data loss  by configuring an app protection policy for the apps, which we will refer to as **policy-managed**  apps. See [all the Intune-managed apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 
@@ -70,9 +70,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2. In the Application Configuration section, enter the following setting:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
+   The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |

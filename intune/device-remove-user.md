@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Remove a user from an iOS device with Intune 
-titlesuffix: "Azure portal"
-description: Learn how to remove a user from a shared iOS device with Intune."
+title: Remove a user from an iOS device with Microsoft Intune 
+titlesuffix:
+description: Learn how to remove a user from a shared iOS device with Intune.
 keywords:
-author: arob98
-ms.author: angrobe
-manager: angrobe
-ms.date: 08/09/2017
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,12 +27,12 @@ ms.custom: intune-azure
 
 ---
 
-# Remove a user from a shared iOS device with Intune
+# Remove a user from a shared iOS device
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The **Remove user** action deletes a user you choose from the local cache on a shared iPad device that has been configured to manage the iOS Classroom app with an [iOS education profile](education-settings-configure-ios.md). 
+The **Remove user** action deletes a user that you select from the local cache on a shared iPad device. The iPad device must be set up to manage the iOS Classroom app by using an [iOS education profile](education-settings-configure-ios.md). 
 
 ## Supported platforms
 
@@ -42,16 +42,16 @@ The **Remove user** action deletes a user you choose from the local cache on a s
 - macOS - Not supported
 - Android - Not supported
 
-## How to remove a user
+## Remove a user
 
-1. Sign into the Azure portal.
-2. Choose **More Services** > **Monitoring + Management** > **Intune**.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. From the list of devices you manage, choose an iOS device.
-6. On the blade for that device, choose **Users**.
-7. From the list, right-click the user you want to remove, and then choose **Remove user**.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. In the **Intune** pane, select **Devices**.
+4. In the **Devices** pane, select **All devices**.
+5. In the list of devices that you manage, select an iOS device.
+6. In the pane for the device, select **Users**.
+7. In the list, right-click the user that you want to remove, and then select **Remove user**.
 
 ## Next steps
 
-To see the status of the action you just took, on the **Devices and groups** blade, choose **Device Actions**.
+- To see the status of the **Remove user** action, select **Devices** > **Device actions**.

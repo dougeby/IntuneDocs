@@ -4,14 +4,17 @@
 title: Help your company support fix device issues with verbose logging | Microsoft Docs
 description: Help your company support fix device issues by using verbose logging
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aasearchScope: - User help
+ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+searchScope:
+ - User help
 
 # optional metadata
 

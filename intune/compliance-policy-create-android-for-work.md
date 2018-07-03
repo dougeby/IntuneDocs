@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for WorktitleSuffix: "Azure portal"
-description: Learn how to create a compliance policy for Android for Work devices."
+title: Create Android for Work compliance policy in Microsoft Intune - Azure | Microsoft Docs
+description: Create or configure a Microsoft Intune device compliance policy for Android for Work devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
 keywords:
-author: andredm7
-ms.author: andredm
-manager: angrobe
-ms.date: 12/07/2016
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,14 +26,13 @@ ms.custom: intune-azure
 
 ---
 
-# How to create a device compliance policy for Android for Work devices in Intune
+# Add a device compliance policy for Android for Work devices in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+An Intune device compliance policy for Android for Work specifies the rules and settings that these devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources. You can also get device reports, and take actions for non-compliance. You create device compliance policies for different platforms in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
 
-Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is  device compliance ](device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](device-compliance-get-started.md) topic.
-
-The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
+The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
 --------------------------
 
@@ -49,79 +48,86 @@ The table below describes how noncompliant settings are managed when a complianc
 
 **Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
 
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:
+**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
 
-- The device is blocked if a conditional access policy applies to the user.
+- If a conditional access policy applies to the user, the device is blocked.
 - The company portal notifies the user about any compliance problems.
 
-## Create a compliance policy in the Azure portal
+## Create a device compliance policy
 
-1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies** and choose **Create**.
-2. Type a name, description and choose the platform that you want this policy to apply to.
-3. Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings here, When you are done, choose **Ok**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. For **Platform**, select **Android for Work**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## Assign user groups
+## Device health
 
-To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policy** blade.
+- **Rooted devices**: If you enable this setting, jailbroken devices are evaluated as noncompliant.
+- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Choose the maximum allowed threat level:
+  - **Secured**: This option is the most secure, and means that the device cannot have any threats. If the device is detected as having any level of threats, it is evaluated as noncompliant.
+  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
+  - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+- **Google Play Services is configured**: Require that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices.
+- **Up-to-date security provider**: Require that an up-to-date security provider can protect a device from known vulnerabilities.
+- **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
+  - **Not configured**
+  - **Check basic integrity**
+  - **Check basic integrity & certified devices**
 
-1. Choose the policy you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
+#### Threat scan on apps
 
-You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
+On devices with work profiles (Android for Work), the **Threat scan on apps** setting can be found as a configuration policy setting. Administrators can enable the setting for a device.
 
-<!--- ##  Compliance policy settings--->
+If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android for Work device restriction settings in Intune](device-restrictions-android-for-work.md).
+
+## Device property settings
+
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device, and then access company resources.
+- **Maximum OS version**: When a device is using an OS version later than the version in the rule, access to company resources is blocked. And, the user is asked to contact their IT admin. Until there is a rule change to allow the OS version, the device cannot access company resources.
 
 ## System security settings
 
 ### Password
 
-- **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.
-- **Minimum password length:** Specify the minimum number of digits or characters that the password must contain.
-- **Password quality:** This setting detects if the password requirements you specify is configured on the device. Enable this setting to require that users configure certain password requirements for Android devices. Choose from:
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
+- **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
+- **Required password type**: Choose whether a password should contain only numeric characters or a mix of numerals and other characters. Choose from:
+  - **Device Default**
   - **Low security biometric**
-  - **Required**
   - **At least numeric**
+  - **Numeric complex**
   - **At least alphabetic**
   - **At least alphanumeric**
-  - **Alphanumeric with symbols**
-- **Minutes of inactivity before password is required:** Specifies the idle time before the user must re-enter their password.
-- **Password expiration (days):** Select the number of days before the user&#39;s password expires and they must create a new one.
-- **Remember password history:** Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
-- **Prevent reuse of previous passwords:** If **Remember password history** is selected, specify the number of previously used passwords that cannot be re-used.
-- **Require a password when the device returns from an idle state:** This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
-
+  - **At least alphanumeric with symbols**
+- **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
+- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
 ### Encryption
 
-- **Require encryption on mobile device:** You don't have to configure this setting since Android for Work devices enforce encryption.
+- **Require encryption on mobile device**: You don't have to configure this setting because Android for Work devices enforce encryption.
 
+### Device Security
 
-## Device health and security settings
+- **Block apps from unknown sources**: You don't have to configure this setting as Android for Work devices always restrict installation from unknown sources.
+- **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
+- **Block USB debugging on device**: You don't have to configure this setting because USB debugging is already disabled on Android for Work devices.
+- **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
 
-- **Device must not be jailbroken or rooted:** If you enable this setting, jailbroken devices will be evaluated as noncompliant.
-- **Require that devices prevent installation of apps from unknown sources:** You do not have to configure this setting as Android for Work devices always restrict installation from unknown sources. .
-- **Require that USB debugging is disabled** : You do not have to configure this settings as USB debugging is already disabled on Android for Work devices.
-- **Minimum Android security patch level**: Use this setting to specify the minimum Android patch level. Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
-- **Require device threat protection to be enabled** : Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
-  - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as non-compliant.
-  - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
-  - **Medium:** Device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high level threats, it is determined as non-compliant.
-  - **High:** This is the least secure. Essentially, this allows all threat levels, and perhaps only useful if you using this solution only for reporting purposes.
+## Assign user groups
 
-For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
+2. Choose the policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
+3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
 
-## Device property settings
+You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
-- **Minimum OS required:** When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they can access company resources.
-- **Maximum OS version allowed:** When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-
-<!--- ## Next steps
-
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## Next steps
+[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
+[Monitor Intune Device compliance policies](compliance-policy-monitor.md)

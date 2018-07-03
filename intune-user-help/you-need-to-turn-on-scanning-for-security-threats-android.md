@@ -1,17 +1,20 @@
 ---
 # required metadata
 
-title: You need to turn on security threat scanning | Microsoft Docs
-description:
+title: You need to turn on security threat scanning 
+description: Learn how to enable security threat scans on your device
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504dsearchScope: - User help
+ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+ - User help
 
 
 # optional metadata
@@ -26,10 +29,14 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to make your device able to scan for security threats
+# Enable security threat scans on your device 
+If you unknowingly install an unsafe app, your device data may be at risk. To protect the data on your device, we recommend that you: 
 
-Your Android device is able to download and install apps that can accomplish a wide variety of tasks. Not all apps are equal, though, and some apps may cause issues. A general recommendation is to download apps only from verified sources, such as the Google Play Store. One way your company support has decided to additionally protect the data on your device is by having Google scan the apps you're installing to make sure they're safe.
+* Only download apps from verified sources, such as the Google Play Store.  
+* Enable security threat scans on your device. These scans are performed by Google and verify that apps are safe to install.  
 
-You can turn on this scanning by going to **Settings** > **Google** > **Security**, and turn on **Scan device for security threats**.
+To enable the scans on your device, go to **Settings** > **Google** > **Security**. Turn on **Scan device for security threats**.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+On some Samsung devices, you may find the setting in **Settings** > **Google** > **Security** > **Google Play Protect**.
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). 

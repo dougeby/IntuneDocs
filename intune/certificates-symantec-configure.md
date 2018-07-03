@@ -1,12 +1,12 @@
 ---
-title: Issue Symantec PKCS certificates with Intune
-titlesuffix: "Azure portal"
-description: Install and configure Intune Certificate Connector to issue PKCS Certificates from Symantec PKI Manager Web Service to Intune-managed devices
+title: Issue Symantec PKCS certificates with Microsoft Intune
+titlesuffix: 
+description: Install and configure Intune Certificate Connector to issue PKCS Certificates from Symantec PKI Manager Web Service to Intune-managed devices.
 keywords:
-author: MicrosoftGuyJFlo
-ms.author: joflore
-manager: angrobe
-ms.date: 11/17/2017
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 ---
 # Set up Intune Certificate Connector for Symantec PKI Manager Web Service
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article show you how to install and configure Intune Certificate Connector to issue PKCS Certificates from a Symantec PKI Manager Web Service to Intune managed devices.
 
@@ -37,7 +37,7 @@ The Symantec PKI Manager Web Service is referred as Symantec CA throughout this 
 * SCEP Certificates from a Microsoft CA
 * PKCS Certificates from a Symantec CA
 
-If you want to use Intune Certificate Connector for Microsoft CA and Symantec CA, you must complete the Intune Certificate Connector confuration for the Microsoft CA first then follow these steps to configure it for the Symantec CA.  For more details about configuring Intune Certificate Connector for a Microsoft CA, see [How to configure certificates in Microsoft Intune](certificates-configure.md).
+If you want to use Intune Certificate Connector for Microsoft CA and Symantec CA, you must complete the Intune Certificate Connector configuration for the Microsoft CA first then follow these steps to configure it for the Symantec CA.  For more details about configuring Intune Certificate Connector for a Microsoft CA, see [How to configure certificates in Microsoft Intune](certificates-configure.md).
 
 ## Prepare to install Intune Certificate Connector
 
@@ -170,8 +170,11 @@ Use the following steps to get the Registration Authorization (RA) certificate f
 
 If you are already using the latest Intune Certificate Connector for an existing Microsoft CA and want to add Symantec CA support, skip this step. Otherwise, download the latest Intune Certificate Connector from the Intune admininstration portal and follow these instructions.
 
-1. Sign in to https://portal.azure.com using your Intune tenant admin credentials and search for Intune resources.
-2. Download NDESConnectorSetup.exe from**Microsoft Intune** > **Device Configuration** > **Certification Authority** > **Download the certificate connector link**
+1. Sign into the [Azure portal](https://portal.azure.com).
+2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+3. On the **Intune** pane, select **Device configuration**.
+4. On the **Device configuration** pane, select **Certification Authority**.
+5. Click **Add** and select **Download the connector file**. Save the download to a location where you can access it from the server where you are going to install it. 
 3. Run NDESConnectorSetup.exe with elevated privileges.
 
     a. On the **Installation Options** screen, select **PFX Distribution** as shown in the following screen shot.  Complete the remaining setup with the default selections.
@@ -237,7 +240,7 @@ The PKCS Certificates deployed for Intune managed devices must be chained with a
 
     a. Sign in to the [Azure portal](https://portal.azure.com) using Intune tenant admin credentials and search for Intune resources.
 
-    b. Create a Trusted Certificate profile from **Microsoft Intune** > **Device Configuration** - **Profiles** > **Create profile**
+    b. Create a Trusted Certificate profile from **Microsoft Intune** > **Device configuration** > **Profiles** > **Create profile**.
 
     c. Provide the required information in **Name** and **Description** fields then select the target platform. 
 
@@ -268,7 +271,7 @@ The Certificate Profile OID is associated with a Certificate Profile template in
 ## Create a PKCS Certificate Profile
 
 1. Sign in to the [Azure portal](https://portal.azure.com) using your Intune tenant administrator credentials and search for Intune resources.
-2. Create a PKCS Certificate profile from **Microsoft Intune** > **Device Configuration – Profiles** > **Create profile** > **PKCS Certificate**.
+2. Create a PKCS Certificate profile from **Microsoft Intune** > **Device configuration > Profiles** > **Create profile**.
 
     a. Provide the required information in the **Name** and **Description** fields then select the target platform.
 

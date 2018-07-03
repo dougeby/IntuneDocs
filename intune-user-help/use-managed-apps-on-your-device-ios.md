@@ -4,14 +4,17 @@
 title: Use managed apps on your iOS device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 07/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533esearchScope: - User help
+ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+searchScope:
+ - User help
 
 # optional metadata
 

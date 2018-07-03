@@ -4,9 +4,9 @@
 title: You need to install Zimperium zIPS on your iOS device | Microsoft Docs
 description: Learn how to install Zimperium zIPS on your iOS device.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod:

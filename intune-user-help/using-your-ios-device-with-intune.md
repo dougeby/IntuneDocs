@@ -4,9 +4,9 @@
 title: Using your iOS device with Intune | Microsoft Docs
 description: List of links to tasks that you can do on your iOS device when the device is enrolled in Intune.
 keywords:
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
@@ -46,7 +46,7 @@ Intune currently supports iOS 9.0 and later.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md)

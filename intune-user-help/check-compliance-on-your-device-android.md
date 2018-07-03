@@ -4,14 +4,17 @@
 title: Check compliance on your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: angrobe
+author: lenewsad
+ms.author: lanewsad
+manager: dougeby
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4searchScope: - User help
+ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
+searchScope:
+ - User help
 
 # optional metadata
 
