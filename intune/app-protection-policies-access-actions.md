@@ -42,9 +42,8 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
 6. By scrolling down in the **Settings** blade you will see a section titled **Access Actions** with an editable table.
 
-![Screenshot of the Intune app protection access actions](./media/apps-selective-wipe-access-actions01.png)
+    ![Screenshot of the Intune app protection access actions](./media/apps-selective-wipe-access-actions01.png)
 
-    You can set the sign-in security requirements for your access protection policy. 
 7. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. 
 8. Select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. For more information, see [How to create and assign app protection policies](app-protection-policies.md).
 
