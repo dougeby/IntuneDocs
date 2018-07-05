@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/29/2018
+ms.date: 07/05/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,98 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->   
+--> 
+
+
+What’s new
+
+## Week of July 2, 2018
+
+### App management
+
+#### Monitor iOS  app configuration status per device <!-- 880037 -->
+As the Microsoft Intune admin, you can monitor iOS app configuration status for each managed device. From **Microsoft Intune** in the Azure portal, select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a blade for the device. On the device blade, select **App configuration**.
+
+#### Access actions for app protection policies <!-- 1483510 -->
+You can configure app protection policies to explicitly wipe, block, or warn non-compliant devices. The *wipe* action removes your company’s corporate data from a device. If a wipe occurs, the device's user is notified of both the reason for the wipe and remediation steps. For some settings, like minimum OS version, you will be able to apply multiple actions, such as block and wipe. Note that these actions are triggered when the app is launched.
+
+#### Selective wipe of organization's app data <!-- 1507030 -->
+Administrators can now configure a selective wipe of the organization's data as a new action when the conditions of Application Protection Policies (APP) Access settings are not met.  This feature helps administrators automatically protect and remove sensitive organization data from applications based on pre-configured criteria.
+
+#### Revoking an iOS app purchased through VPP <!-- 1777384 -->
+As the Microsoft Intune admin, you can revoke all the licenses for a selected iOS app purchased through the volume-purchase program (VPP). You can notify users when a user licensed app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload of Intune. For more information related to iOS VPP apps, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
+
+#### Updates to out-of-compliance messages in Company Portal app <-- 1832222 -->
+We revised the messages that device users see when a device is out-of-compliance. Messages  retain their original meanings but have been updated with friendlier language and less technical jargon. We also refreeshed links to documentation and remediation steps to keep them up-to-date.
+The following before and after text is one example of the improvements in messaging you'll see:
+- **Before**: *This device hasn’t contacted the Intune service in the specified time period required by your IT admin. To resolve this issue, please open the company portal app on your device and click on the Check Compliance button.*
+- **After**: *Your device has not checked in with your organization in a while. To reestablish a connection, open the Company Portal app on your device and tap Check Settings for your device.*
+
+#### Revoke iOS VPP app license <!-- 1863797 -->
+As the admin, you can reclaim an iOS VPP app license assigned to a user or device. Uninstalling an iOS VPP app will also allow you to reclaim the app license. Before uninstalling the app, the user or the device needs to be removed from the group to which the app is targeted. Removing the user or the device from the group avoids a reinstall of the app. Once these steps are complete, you can choose to assign the app license to another user or device. For more information about iOS VPP app licenses, see [Manage iOS volume-purchased apps in Microsoft Intune](vpp-apps-ios.md).
+
+#### Line-of-business (LOB) app support for macOS <-- 1895847 -->
+Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
+
+### Device configuration
+
+#### Select device categories by using the Access Work or School settings <!-- 1058963 eenotready --> 
+If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune/device-group-mapping), users on Windows 10 will now be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school**. 
+
+#### Use sAMAccountName as the account username for email profiles <!-- 1500307 -->
+You can use the on-premises **sAMAccountName** as the account username for email profiles for Android, iOS, and Windows 10. You can also get the domain from the `domain` or `ntdomain` attribute in Azure Active Directory (Azure AD). Or, enter a custom static domain.
+
+To use this feature, you must sync the `sAMAccountName` attribute from your on-premises Active Directory environment to Azure AD.
+
+Applies to [Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
+
+#### See device configuration profiles in conflict <!-- 1556983 -->
+In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
+
+More on [manage configuration profiles](device-profile-monitor.md#view-conflicts).
+
+#### New status for devices in device compliance <!-- 2308882 -->
+In **Device compliance** > **Policies** > select a policy > **Overview**, the following new states are added:
+- succeeded
+- error
+- conflict
+- pending
+- not-applicable
+An image that shows the device count of a different platform is also shown. For example, if you're looking at an iOS profile, the new tile shows the count of non-iOS devices that are also assigned to this profile. See [Device compliance policies](compliance-policy-monitor.md#view-status-of-device-policies).
+
+#### Device compliance supports 3rd party anti-virus solutions <!-- 2325484 -->
+When you create a device compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: Windows 10 and later** > **Settings** > **System Security**), there are new **[Device Security](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** options: 
+- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
+- **AntiSpyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
+
+Applies to: Windows 10 and later 
+
+### Device enrollment
+
+####  Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
+In the enrollment program tokens list, there is a new column showing the number of devices without a profile assigned. This helps admins assign profiles to these devices before handing them out to users. To see the new column, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens**.
+
+### Device management
+
+#### Google name changes for Android for Work and Play for Work <!--842873 -->
+Intune has updated "Android for Work" terminology to reflect Google branding changes. The terms "Android for Work" and "Play for Work" are no longer be used. Different terminology are used depending on the context:
+- "Android enterprise" refers to the overall modern Android management stack.
+- "Work profile" or "Profile Owner" refers to BYOD devices managed with work profiles.
+- "Managed Google Play" refers to the Google app store.
+
+#### Rules for removing devices <!-- 1609459 -->
+New rules are available that let you automatically remove devices that haven't checked in for a number of days that you set. To see the new rule, go to the **Intune** pane, select **Devices**, and select **Device cleanup rules**.
+
+#### Corporate-owned, single (COSU) use support for Android devices <!-- 1630973 -->
+
+Intune now supports highly-managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device. To set up Android kiosk, go to Intune > **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**. For more information, see [Set up enrollment of Android enterprise kiosk devices](android-kiosk-enroll.md).
+
+#### Per-row review of duplicate corporate device identifiers uploaded <!-- 2203794-->
+When uploading corporate IDs, Intune now provides a list of any duplicates and gives you the option to replace or keep the existing information. The report will appear if there are duplicates after you choose **Device enrollment** > **Corporate Device Identifiers** > **Add Identifiers**. 
+
+#### Manually add corporate device identifiers <!-- 2203803 -->
+You can now manually add corporate device IDs. Choose **Device enrollment** > **Corporate Device Identifiers** > **Add**. 
+
 ## Week of June 25, 2018
 
 ### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
