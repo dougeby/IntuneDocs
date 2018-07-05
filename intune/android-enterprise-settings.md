@@ -24,7 +24,7 @@ ms.custom: intune-azure
 
 ---
 
-# Android kiosk settings in Intune
+# Android enterprise kiosk settings in Intune
 
 Android kiosk profiles support the following configuration settings. When creating a profile, these settings appear when you choose **Profile type** > **Device Owner Only** > **Device restrictions**. To see these settings, choose **Properties** from an Android enterprise device restriction profile and then choose **Configure**.
 
