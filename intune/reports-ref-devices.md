@@ -67,7 +67,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 14 |MacMDM |Mac OS X device managed with the built-in MDM agent |
 | 15 |HoloLens |Holo Lens device |
 | 16 |SurfaceHub |Surface Hub device |
-| 17 |AndroidForWork |Android device-managed using Android for Work Profile Owner |
+| 17 |AndroidForWork |Android device-managed using Android Profile Owner |
 | 100 |Blackberry |Blackberry Device |
 | 101 |Palm |Palm device |
 | 255 |Unknown |Unknown device type |
@@ -149,7 +149,7 @@ The **MdmStatuses** entity indicates compliance state of the device.
 | 1 |Compliant |The device is compliant. |
 | 2 |Noncompliant |The device is noncompliant. |
 | 3 |Conflict |The device's compliance resulted in s conflict. |
-| 4 |Error |There was error in readign the device's compliance state. |
+| 4 |Error |There was error in reading the device's compliance state. |
 
 
 ## ManagementStates

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create Android for Work compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for Android for Work devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
+title: Create Android work profile compliance policy in Microsoft Intune - Azure | Microsoft Docs
+description: Create or configure a Microsoft Intune device compliance policy for Android work profile devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -26,17 +26,17 @@ ms.custom: intune-azure
 
 ---
 
-# Add a device compliance policy for Android for Work devices in Intune
+# Add a device compliance policy for Android work profile devices in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-An Intune device compliance policy for Android for Work specifies the rules and settings that these devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources. You can also get device reports, and take actions for non-compliance. You create device compliance policies for different platforms in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
+An Intune device compliance policy for Android work profile devices specifies the rules and settings that these devices must meet to be considered compliant. You can use these policies with conditional access to allow or block access to company resources. You can also get device reports, and take actions for non-compliance. You create device compliance policies for different platforms in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
 
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
 --------------------------
 
-|**policy setting**| **Android for Work** |
+|**policy setting**| **Android work profile** |
 | --- | --- |
 | **PIN or password configuration** |  Quarantined |
 | **Device encryption** |  Quarantined |
@@ -56,7 +56,7 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. For **Platform**, select **Android for Work**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When done, select **OK**, and **Create**.
+5. For **Platform**, select **Android enterprise**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -82,9 +82,9 @@ The following table describes how noncompliant settings are managed when a compl
 
 #### Threat scan on apps
 
-On devices with work profiles (Android for Work), the **Threat scan on apps** setting can be found as a configuration policy setting. Administrators can enable the setting for a device.
+On devices with Android work profiles, the **Threat scan on apps** setting can be found as a configuration policy setting. Administrators can enable the setting for a device.
 
-If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android for Work device restriction settings in Intune](device-restrictions-android-for-work.md).
+If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Work device restriction settings in Intune](device-restrictions-android-for-work.md).
 
 ## Device property settings
 
@@ -111,13 +111,13 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
 
 ### Encryption
 
-- **Require encryption on mobile device**: You don't have to configure this setting because Android for Work devices enforce encryption.
+- **Require encryption on mobile device**: You don't have to configure this setting because Android work profile devices enforce encryption.
 
 ### Device Security
 
-- **Block apps from unknown sources**: You don't have to configure this setting as Android for Work devices always restrict installation from unknown sources.
+- **Block apps from unknown sources**: You don't have to configure this setting as Android work profile devices always restrict installation from unknown sources.
 - **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
-- **Block USB debugging on device**: You don't have to configure this setting because USB debugging is already disabled on Android for Work devices.
+- **Block USB debugging on device**: You don't have to configure this setting because USB debugging is already disabled on Android work profile devices.
 - **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
 
 ## Assign user groups
